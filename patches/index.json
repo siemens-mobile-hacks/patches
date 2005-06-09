@@ -61256,6 +61256,16 @@
 				"en": "To make foto with any digital key"
 			}
 		},
+		"117": {
+			"id": 117,
+			"model": "CX70v50",
+			"file": "CX70v50/117-Enlarge_incoming_call_photo.vkp",
+			"mtime": 1118347200000,
+			"title": {
+				"ru": "Увеличить размер фото при входящем звонке",
+				"en": "Enlarge incoming call photo"
+			}
+		},
 		"118": {
 			"id": 118,
 			"model": "CX70v50",
