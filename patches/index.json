@@ -61456,6 +61456,16 @@
 				"en": "Vibra logo on MainScreen"
 			}
 		},
+		"154": {
+			"id": 154,
+			"model": "CX70v50",
+			"file": "CX70v50/154-Calendar_on_the_mainscreen.vkp",
+			"mtime": 1118520000000,
+			"title": {
+				"ru": "Картинки для патча * Календарь на главном экране*",
+				"en": "Calendar on the mainscreen"
+			}
+		},
 		"155": {
 			"id": 155,
 			"model": "CX70v50",
