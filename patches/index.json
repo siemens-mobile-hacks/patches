@@ -46819,6 +46819,16 @@
 				"en": "Disk A 14.74Mb"
 			}
 		},
+		"186": {
+			"id": 186,
+			"model": "CX65v50",
+			"file": "CX65v50/186-keypad_light_trigger.vkp",
+			"mtime": 1119297600000,
+			"title": {
+				"ru": "Переключатель режима подсветки клавиатуры",
+				"en": "Keypadlight trigger"
+			}
+		},
 		"191": {
 			"id": 191,
 			"model": "CX65v50",

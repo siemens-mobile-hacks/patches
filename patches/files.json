@@ -509,7 +509,9 @@
 	[
 		"M65v50/185-keypad_light_trigger.vkp"
 	],
-	null,
+	[
+		"CX65v50/186-keypad_light_trigger.vkp"
+	],
 	[
 		"S45iv4/187-MP3I.vkp"
 	],
