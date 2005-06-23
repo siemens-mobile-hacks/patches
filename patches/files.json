@@ -538,7 +538,9 @@
 	[
 		"CX65v50/196-dynrep_opname_v7.vkp"
 	],
-	null,
+	[
+		"CX65v50/197-keypad_light_trigger.vkp"
+	],
 	null,
 	[
 		"M65v50/199-video_rec_1min.vkp"
