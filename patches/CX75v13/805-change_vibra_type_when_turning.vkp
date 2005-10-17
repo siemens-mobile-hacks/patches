@@ -13,13 +13,12 @@ ENG: Change of type of a vibrocall at installation виброзвонка on a h
 
 */
 
-00 - Стандарт (Standard)
+;00 - Стандарт (Standard)
 ;01 - Вертолет (Helicopter)
 ;02 - НЛО (UFO)
 ;03 - Удар (Shock)
 ;04 - Москит (Mosquito)
 ;05 - Поезд (Train)
-03266FA: 00 03 ;
-
+03266FA: 00 03
 ;------------------------- end -------------------------
 
