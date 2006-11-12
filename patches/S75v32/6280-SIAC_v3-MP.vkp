@@ -16,3 +16,54 @@
 095FCD2: 02980D061404240C2D0E C046004FB847014C06A0
 ;------------------------- end -------------------------
 
+;Ниже прикреплено тело патча
+;X75v100
+;Почасовой контроль яркости
+;Screen Illumination Auto Control v3.0
+;(c) starfriend
+;(r) ~Jhellico
+;Version: 3-BASE
+;PatchID: 6276
+;Details: https://patches.kibab.com/patches/details.php5?id=6276
+/*
+
+*/
+
+#pragma enable old_equal_ff
+0x064C00: 7FB51048C4DF0FD0061C40B484B06846
+0x064C10: 011C0831B4DF6F4604B040BC3F7A0137
+0x064C20: F25DD7DF071C3A707FBC03980D061404
+0x064C30: 240C2D0E00F000E80040BDE804E08EE2
+0x064C40: 1EFF2FE100DD0000
+
+0x064C50: 0xB1C2D3E4,0x0000DD00,00000000,00000000,\
+"{patch `Screen Illumination Auto Control` id=DD00 cp=starfriend ver=3.0}","\
+{info `The phone auto control the screen illumination by hour`}","\
+{1 sl 0 r=0..100 v=60}","\
+{2 sl 1 r=0..100 v=40}","\
+{3 sl 2 r=0..100 v=20}","\
+{4 sl 3 r=0..100 v=20}","\
+{5 sl 4 r=0..100 v=20}","\
+{6 sl 5 r=0..100 v=20}","\
+{7 sl 6 r=0..100 v=30}","\
+{8 sl 7 r=0..100 v=30}","\
+{9 sl 8 r=0..100 v=34}","\
+{10 sl 9 r=0..100 v=34}","\
+{11 sl 10 r=0..100 v=34}","\
+{12 sl 11 r=0..100 v=34}","\
+{13 sl 12 r=0..100 v=34}","\
+{14 sl 13 r=0..100 v=34}","\
+{15 sl 14 r=0..100 v=34}","\
+{16 sl 15 r=0..100 v=34}","\
+{17 sl 16 r=0..100 v=34}","\
+{18 sl 17 r=0..100 v=40}","\
+{19 sl 18 r=0..100 v=44}","\
+{20 sl 19 r=0..100 v=50}","\
+{21 sl 20 r=0..100 v=60}","\
+{22 sl 21 r=0..100 v=70}","\
+{23 sl 22 r=0..100 v=80}","\
+{24 sl 23 r=0..100 v=80}","\
+{endsm}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+
