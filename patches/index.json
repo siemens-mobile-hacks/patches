@@ -98751,5 +98751,18 @@
 				"en": "New devicecheckman icons in tabs"
 			}
 		}
+	},
+	"X85v100": {
+		"7250": {
+			"id": 7250,
+			"model": "X85v100",
+			"file": "X85v100/7250-aclock.vkp",
+			"additionalFile": "X85v100/7250-aclock.zip",
+			"mtime": 1175776122000,
+			"title": {
+				"ru": "Аналоговые часы на главном экране",
+				"en": "aclock"
+			}
+		}
 	}
 }
