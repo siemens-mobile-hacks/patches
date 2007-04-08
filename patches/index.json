@@ -98763,6 +98763,17 @@
 				"ru": "Аналоговые часы на главном экране",
 				"en": "aclock"
 			}
+		},
+		"7260": {
+			"id": 7260,
+			"model": "X85v100",
+			"file": "X85v100/7260-CfgEdit.vkp",
+			"additionalFile": "X85v100/7260-CfgEdit.zip",
+			"mtime": 1176023636000,
+			"title": {
+				"ru": "Конфигуратор эльфов CfgEdit",
+				"en": "CfgEdit elf"
+			}
 		}
 	}
 }

@@ -20637,7 +20637,10 @@
 	],
 	null,
 	null,
-	null,
+	[
+		"X85v100/7260-CfgEdit.vkp",
+		"X85v100/7260-CfgEdit.zip"
+	],
 	[
 		"X75v100/7261-Smiles_for_NatICQ.vkp",
 		"X75v100/7261-Smiles_for_NatICQ.rar"
