@@ -98774,6 +98774,17 @@
 				"ru": "Конфигуратор эльфов CfgEdit",
 				"en": "CfgEdit elf"
 			}
+		},
+		"7276": {
+			"id": 7276,
+			"model": "X85v100",
+			"file": "X85v100/7276-smenu_dummy.vkp",
+			"additionalFile": "X85v100/7276-smenu_dummy.rar",
+			"mtime": 1176579390000,
+			"title": {
+				"ru": "Многоуровневое Меню `Пуск`",
+				"en": "Multilevel `Start` Menu"
+			}
 		}
 	}
 }
