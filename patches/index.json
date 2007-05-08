@@ -98785,6 +98785,16 @@
 				"ru": "Многоуровневое Меню `Пуск`",
 				"en": "Multilevel `Start` Menu"
 			}
+		},
+		"7409": {
+			"id": 7409,
+			"model": "X85v100",
+			"file": "X85v100/7409-Change_speed_of_FF_and_REW_v2-BASE.vkp",
+			"mtime": 1178619066000,
+			"title": {
+				"ru": "Изменение скорости перемотки плеера",
+				"en": "Change speed of fast forward and rewind"
+			}
 		}
 	}
 }
