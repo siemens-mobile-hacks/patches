@@ -98806,6 +98806,16 @@
 				"ru": "Строка mp3 Тега на главном экране",
 				"en": "MP3 Tag String on MS"
 			}
+		},
+		"7515": {
+			"id": 7515,
+			"model": "X85v100",
+			"file": "X85v100/7515-Pictures_add-on_v5.vkp",
+			"mtime": 1179375556000,
+			"title": {
+				"ru": "Расширение для картинок",
+				"en": "Pictures add-on"
+			}
 		}
 	}
 }
