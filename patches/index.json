@@ -98816,6 +98816,16 @@
 				"ru": "Расширение для картинок",
 				"en": "Pictures add-on"
 			}
+		},
+		"7530": {
+			"id": 7530,
+			"model": "X85v100",
+			"file": "X85v100/7530-Mainscreen_Dispatcher_v6-BASE.vkp",
+			"mtime": 1179509272000,
+			"title": {
+				"ru": "Диспатчер главного экрана",
+				"en": "Mainscreen Dispatcher"
+			}
 		}
 	}
 }
