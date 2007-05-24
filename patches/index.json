@@ -98826,6 +98826,17 @@
 				"ru": "Диспатчер главного экрана",
 				"en": "Mainscreen Dispatcher"
 			}
+		},
+		"7562": {
+			"id": 7562,
+			"model": "X85v100",
+			"file": "X85v100/7562-Additional_icons_on_MS.vkp",
+			"additionalFile": "X85v100/7562-Additional_icons_on_MS.zip",
+			"mtime": 1179998456000,
+			"title": {
+				"ru": "Дополнительные иконки на главном экране",
+				"en": "Additional icons on MS"
+			}
 		}
 	}
 }

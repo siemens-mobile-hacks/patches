@@ -21524,7 +21524,10 @@
 	[
 		"S65v58/7561-Enable_Developer_Menu.vkp"
 	],
-	null,
+	[
+		"X85v100/7562-Additional_icons_on_MS.vkp",
+		"X85v100/7562-Additional_icons_on_MS.zip"
+	],
 	[
 		"SL75v47/7563-Change_SW_Version.vkp"
 	],
