@@ -98847,6 +98847,16 @@
 				"ru": "Секвенсер клавиш",
 				"en": "Key Sequencer"
 			}
+		},
+		"7570": {
+			"id": 7570,
+			"model": "X85v100",
+			"file": "X85v100/7570-Mainscreen_icon_changer_1-BASE.vkp",
+			"mtime": 1180199768000,
+			"title": {
+				"ru": "Изменение иконок на ГЭ",
+				"en": "Mainscreen icon changer"
+			}
 		}
 	}
 }
