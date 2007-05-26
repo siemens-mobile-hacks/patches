@@ -98837,6 +98837,16 @@
 				"ru": "Дополнительные иконки на главном экране",
 				"en": "Additional icons on MS"
 			}
+		},
+		"7568": {
+			"id": 7568,
+			"model": "X85v100",
+			"file": "X85v100/7568-Key_Sequencer_2_2-BASE.vkp",
+			"mtime": 1180199370000,
+			"title": {
+				"ru": "Секвенсер клавиш",
+				"en": "Key Sequencer"
+			}
 		}
 	}
 }
