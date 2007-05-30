@@ -98786,6 +98786,16 @@
 				"en": "Multilevel `Start` Menu"
 			}
 		},
+		"7407": {
+			"id": 7407,
+			"model": "X85v100",
+			"file": "X85v100/7407-Dynamic_Provider_v17.vkp",
+			"mtime": 1180547308000,
+			"title": {
+				"ru": "Динамическая замена имени оператора",
+				"en": "Dynamic Provider"
+			}
+		},
 		"7409": {
 			"id": 7409,
 			"model": "X85v100",

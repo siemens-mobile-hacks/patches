@@ -21064,7 +21064,9 @@
 		"EL71v45/7405-Unlock_vibra_when_cable.vkp"
 	],
 	null,
-	null,
+	[
+		"X85v100/7407-Dynamic_Provider_v17.vkp"
+	],
 	[
 		"EL71v45/7408-Dynamic_Provider_v17-MP.vkp"
 	],
