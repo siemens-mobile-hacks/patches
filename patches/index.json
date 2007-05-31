@@ -98868,6 +98868,17 @@
 				"en": "Mainscreen icon changer"
 			}
 		},
+		"7572": {
+			"id": 7572,
+			"model": "X85v100",
+			"file": "X85v100/7572-Mediaplayer_status_in_iconbar.vkp",
+			"additionalFile": "X85v100/7572-Mediaplayer_status_in_iconbar.zip",
+			"mtime": 1180621744000,
+			"title": {
+				"ru": "Статус медиаплеера на панели иконок",
+				"en": "Mediaplayer status in iconbar"
+			}
+		},
 		"7588": {
 			"id": 7588,
 			"model": "X85v100",

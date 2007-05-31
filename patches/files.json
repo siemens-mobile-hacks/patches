@@ -21556,7 +21556,10 @@
 	[
 		"EL71v45/7571-Mainscreen_icon_changer_v1-MP.vkp"
 	],
-	null,
+	[
+		"X85v100/7572-Mediaplayer_status_in_iconbar.vkp",
+		"X85v100/7572-Mediaplayer_status_in_iconbar.zip"
+	],
 	[
 		"EL71v45/7573-Mediaplayer_status_in_iconbar.vkp"
 	],
