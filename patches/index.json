@@ -98878,6 +98878,17 @@
 				"ru": "Вибра при потере-нахождении сети",
 				"en": "Vibra at net lost-found"
 			}
+		},
+		"7589": {
+			"id": 7589,
+			"model": "X85v100",
+			"file": "X85v100/7589-Switch_Profile_when_battery_low.vkp",
+			"additionalFile": "X85v100/7589-Switch_Profile_when_battery_low.zip",
+			"mtime": 1180598092000,
+			"title": {
+				"ru": "Переключатель профилей при разряде аккумулятора",
+				"en": "Switch Profile when battery low"
+			}
 		}
 	}
 }

@@ -21602,7 +21602,10 @@
 		"X85v100/7588-Vibra_at_net_lost-found.vkp",
 		"X85v100/7588-Vibra_at_net_lost-found.zip"
 	],
-	null,
+	[
+		"X85v100/7589-Switch_Profile_when_battery_low.vkp",
+		"X85v100/7589-Switch_Profile_when_battery_low.zip"
+	],
 	null,
 	[
 		"M65v50/7591-Some_Netmonitor_data_for_Java14.vkp"
