@@ -98867,6 +98867,17 @@
 				"ru": "Изменение иконок на ГЭ",
 				"en": "Mainscreen icon changer"
 			}
+		},
+		"7588": {
+			"id": 7588,
+			"model": "X85v100",
+			"file": "X85v100/7588-Vibra_at_net_lost-found.vkp",
+			"additionalFile": "X85v100/7588-Vibra_at_net_lost-found.zip",
+			"mtime": 1180597958000,
+			"title": {
+				"ru": "Вибра при потере-нахождении сети",
+				"en": "Vibra at net lost-found"
+			}
 		}
 	}
 }
