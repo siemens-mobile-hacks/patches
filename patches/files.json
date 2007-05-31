@@ -21606,7 +21606,10 @@
 		"X85v100/7589-Switch_Profile_when_battery_low.vkp",
 		"X85v100/7589-Switch_Profile_when_battery_low.zip"
 	],
-	null,
+	[
+		"X85v100/7590-Add-on_Illumination.vkp",
+		"X85v100/7590-Add-on_Illumination.zip"
+	],
 	[
 		"M65v50/7591-Some_Netmonitor_data_for_Java14.vkp"
 	],

@@ -98889,6 +98889,17 @@
 				"ru": "Переключатель профилей при разряде аккумулятора",
 				"en": "Switch Profile when battery low"
 			}
+		},
+		"7590": {
+			"id": 7590,
+			"model": "X85v100",
+			"file": "X85v100/7590-Add-on_Illumination.vkp",
+			"additionalFile": "X85v100/7590-Add-on_Illumination.zip",
+			"mtime": 1180598528000,
+			"title": {
+				"ru": "Дополнительная подсветка",
+				"en": "Add-on Illumination"
+			}
 		}
 	}
 }
