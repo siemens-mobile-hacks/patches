@@ -98911,6 +98911,17 @@
 				"ru": "Дополнительная подсветка",
 				"en": "Add-on Illumination"
 			}
+		},
+		"7618": {
+			"id": 7618,
+			"model": "X85v100",
+			"file": "X85v100/7618-Vibra_at_net_lost_or_found.vkp",
+			"additionalFile": "X85v100/7618-Vibra_at_net_lost_or_found.zip",
+			"mtime": 1181161252000,
+			"title": {
+				"ru": "Вибра при потери или нахождении сети",
+				"en": "Vibra at net lost or found"
+			}
 		}
 	}
 }
