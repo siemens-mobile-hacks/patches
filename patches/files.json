@@ -21786,7 +21786,10 @@
 	[
 		"SL75v52/7651-Cut_heap.vkp"
 	],
-	null,
+	[
+		"X85v100/7652-Menu_icons_from_E71.vkp",
+		"X85v100/7652-Menu_icons_from_E71.zip"
+	],
 	[
 		"M75v25/7653-help_cardexp.vkp"
 	],

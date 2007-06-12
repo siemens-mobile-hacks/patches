@@ -98922,6 +98922,17 @@
 				"ru": "Вибра при потери или нахождении сети",
 				"en": "Vibra at net lost or found"
 			}
+		},
+		"7652": {
+			"id": 7652,
+			"model": "X85v100",
+			"file": "X85v100/7652-Menu_icons_from_E71.vkp",
+			"additionalFile": "X85v100/7652-Menu_icons_from_E71.zip",
+			"mtime": 1181665558000,
+			"title": {
+				"ru": "Иконки меню от E71",
+				"en": "Menu icons from E71"
+			}
 		}
 	}
 }
