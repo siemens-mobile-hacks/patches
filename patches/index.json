@@ -21488,8 +21488,7 @@
 			"id": 4535,
 			"model": "SL75v52",
 			"file": "SL75v52/4535-Add_MFI_format.vkp",
-			"additionalFile": "SL75v52/4535-media_mfi.rar",
-			"mtime": 1181639986000,
+			"mtime": 1181636386000,
 			"title": {
 				"ru": "Добавление формата MFI",
 				"en": "Add MFI format"
