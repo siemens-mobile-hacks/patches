@@ -21809,7 +21809,9 @@
 	[
 		"EL71v45/7659-Sound_on_data_transfer_req_v2-MP.vkp"
 	],
-	null,
+	[
+		"X85v100/7660-ColorSkin_v1_1-BASE.vkp"
+	],
 	[
 		"EL71v45/7661-Color_skin_v1_1-MP.vkp"
 	],

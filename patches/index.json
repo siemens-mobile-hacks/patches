@@ -98933,6 +98933,16 @@
 				"ru": "Иконки меню от E71",
 				"en": "Menu icons from E71"
 			}
+		},
+		"7660": {
+			"id": 7660,
+			"model": "X85v100",
+			"file": "X85v100/7660-ColorSkin_v1_1-BASE.vkp",
+			"mtime": 1181786964000,
+			"title": {
+				"ru": "Цветовая схема",
+				"en": "Color skin"
+			}
 		}
 	}
 }
