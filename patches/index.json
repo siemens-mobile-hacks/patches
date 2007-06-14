@@ -98943,6 +98943,16 @@
 				"ru": "Цветовая схема",
 				"en": "Color skin"
 			}
+		},
+		"7662": {
+			"id": 7662,
+			"model": "X85v100",
+			"file": "X85v100/7662-Accu_empty_shutdown_off.vkp",
+			"mtime": 1181787578000,
+			"title": {
+				"ru": "Не выключаться при разряженном аккумуляторе",
+				"en": "Accu empty shutdown off"
+			}
 		}
 	}
 }
