@@ -21945,7 +21945,10 @@
 	[
 		"CX75v12/7707-Reboot_instead_of_9th_profile.vkp"
 	],
-	null,
+	[
+		"X85v100/7708-Extra_info_on_the_main_screen_72i.vkp",
+		"X85v100/7708-Extra_info_on_the_main_screen_72i.zip"
+	],
 	[
 		"EL71v45/7709-Disable_camera_sound.vkp"
 	],

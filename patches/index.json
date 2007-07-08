@@ -98953,6 +98953,17 @@
 				"ru": "Не выключаться при разряженном аккумуляторе",
 				"en": "Accu empty shutdown off"
 			}
+		},
+		"7708": {
+			"id": 7708,
+			"model": "X85v100",
+			"file": "X85v100/7708-Extra_info_on_the_main_screen_72i.vkp",
+			"additionalFile": "X85v100/7708-Extra_info_on_the_main_screen_72i.zip",
+			"mtime": 1183921938000,
+			"title": {
+				"ru": "Дополнительная информация на главном экране",
+				"en": "Extra info on the main screen"
+			}
 		}
 	}
 }
