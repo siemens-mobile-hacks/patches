@@ -98964,6 +98964,17 @@
 				"ru": "Дополнительная информация на главном экране",
 				"en": "Extra info on the main screen"
 			}
+		},
+		"7716": {
+			"id": 7716,
+			"model": "X85v100",
+			"file": "X85v100/7716-Accu_Temp_Indicator.vkp",
+			"additionalFile": "X85v100/7716-Accu_Temp_Indicator.zip",
+			"mtime": 1184186640000,
+			"title": {
+				"ru": "Графический индикатор температуры аккумулятора",
+				"en": "Accu Temperature As Graphic Indicator"
+			}
 		}
 	}
 }
