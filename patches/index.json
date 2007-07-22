@@ -98975,6 +98975,16 @@
 				"ru": "Графический индикатор температуры аккумулятора",
 				"en": "Accu Temperature As Graphic Indicator"
 			}
+		},
+		"7730": {
+			"id": 7730,
+			"model": "X85v100",
+			"file": "X85v100/7730-Mega-loudness_v2-BASE_.vkp",
+			"mtime": 1185124860000,
+			"title": {
+				"ru": "Мега-громкость",
+				"en": "Mega-loudness"
+			}
 		}
 	}
 }
