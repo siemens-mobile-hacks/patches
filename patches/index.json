@@ -98985,6 +98985,17 @@
 				"ru": "Мега-громкость",
 				"en": "Mega-loudness"
 			}
+		},
+		"7735": {
+			"id": 7735,
+			"model": "X85v100",
+			"file": "X85v100/7735-Set_profile_at_player_v2.vkp",
+			"additionalFile": "X85v100/7735-Set_profile_at_player_v2.zip",
+			"mtime": 1185200772000,
+			"title": {
+				"ru": "Установить профиль при включении плеера",
+				"en": "Set profile at player"
+			}
 		}
 	}
 }
