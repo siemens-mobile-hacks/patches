@@ -21805,7 +21805,9 @@
 	[
 		"X75v100/7657-Master-patch_v14.vkp"
 	],
-	null,
+	[
+		"X85v100/7658-Sound_on_data_transfer_req_v2-BASE.vkp"
+	],
 	[
 		"EL71v45/7659-Sound_on_data_transfer_req_v2-MP.vkp"
 	],

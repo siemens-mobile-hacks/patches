@@ -98934,6 +98934,16 @@
 				"en": "Menu icons from E71"
 			}
 		},
+		"7658": {
+			"id": 7658,
+			"model": "X85v100",
+			"file": "X85v100/7658-Sound_on_data_transfer_req_v2-BASE.vkp",
+			"mtime": 1186321136000,
+			"title": {
+				"ru": "Звук при запросе на передачу данных",
+				"en": "Sound on data transfer request"
+			}
+		},
 		"7660": {
 			"id": 7660,
 			"model": "X85v100",
