@@ -22198,7 +22198,10 @@
 	[
 		"SL75v52/7793-Disable_Please_Wait_on_USSD.vkp"
 	],
-	null,
+	[
+		"X85v100/7794-aclock2_0.vkp",
+		"X85v100/7794-aclock2_0.rar"
+	],
 	[
 		"X75v100/7795-aclock2_0.vkp",
 		"X75v100/7795-aclock2_0.rar"
