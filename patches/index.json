@@ -99027,6 +99027,16 @@
 				"ru": "Задержка подсветки",
 				"en": "illumination Fader"
 			}
+		},
+		"7893": {
+			"id": 7893,
+			"model": "X85v100",
+			"file": "X85v100/7893-Key_Sequencer_2_3-BASE.vkp",
+			"mtime": 1189621264000,
+			"title": {
+				"ru": "Секвенсер клавиш",
+				"en": "Key Sequencer"
+			}
 		}
 	}
 }
