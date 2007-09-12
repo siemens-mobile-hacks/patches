@@ -99017,6 +99017,16 @@
 				"ru": "Аналоговые часы на главном экране",
 				"en": "aclock"
 			}
+		},
+		"7892": {
+			"id": 7892,
+			"model": "X85v100",
+			"file": "X85v100/7892-illumination_Fader-BASE.vkp",
+			"mtime": 1189620770000,
+			"title": {
+				"ru": "Задержка подсветки",
+				"en": "illumination Fader"
+			}
 		}
 	}
 }

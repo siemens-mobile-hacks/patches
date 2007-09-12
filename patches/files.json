@@ -22486,7 +22486,9 @@
 	[
 		"E71v45/7891-illumination_Fader-MP.vkp"
 	],
-	null,
+	[
+		"X85v100/7892-illumination_Fader-BASE.vkp"
+	],
 	null,
 	[
 		"E71v45/7894-Key_Sequencer_2_3-MP.vkp"
