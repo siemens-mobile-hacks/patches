@@ -22767,7 +22767,9 @@
 	[
 		"EL71v45/7987-Don_t_lock_keyboard_while_playing.vkp"
 	],
-	null,
+	[
+		"X85v100/7988-Spell_current_time_v6_1-BASE.vkp"
+	],
 	[
 		"EL71v45/7989-Spell_current_time.vkp"
 	],

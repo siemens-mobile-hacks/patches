@@ -99047,6 +99047,16 @@
 				"ru": "Отключение камеры",
 				"en": "Disable camera"
 			}
+		},
+		"7988": {
+			"id": 7988,
+			"model": "X85v100",
+			"file": "X85v100/7988-Spell_current_time_v6_1-BASE.vkp",
+			"mtime": 1190881708000,
+			"title": {
+				"ru": "Проговаривание текущего времени",
+				"en": "Spell current time"
+			}
 		}
 	}
 }
