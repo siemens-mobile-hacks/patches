@@ -99067,6 +99067,16 @@
 				"ru": "Уничтожитель всплывающих сообщений",
 				"en": "Popup Killer"
 			}
+		},
+		"7994": {
+			"id": 7994,
+			"model": "X85v100",
+			"file": "X85v100/7994-Illumination_Fader.vkp",
+			"mtime": 1190886008000,
+			"title": {
+				"ru": "Illumination Fader",
+				"en": "Illumination Fader"
+			}
 		}
 	}
 }
