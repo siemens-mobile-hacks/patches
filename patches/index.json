@@ -99107,6 +99107,16 @@
 				"ru": "Мигалка",
 				"en": "Blinker"
 			}
+		},
+		"8002": {
+			"id": 8002,
+			"model": "X85v100",
+			"file": "X85v100/8002-Regular_email_polling-BASE.vkp",
+			"mtime": 1190891500000,
+			"title": {
+				"ru": "Периодическая проверка почты",
+				"en": "Regular email polling"
+			}
 		}
 	}
 }

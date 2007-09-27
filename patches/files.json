@@ -22809,7 +22809,9 @@
 	[
 		"EL71v45/8001-Blinker_v4-MP.vkp"
 	],
-	null,
+	[
+		"X85v100/8002-Regular_email_polling-BASE.vkp"
+	],
 	[
 		"EL71v45/8003-Regular_email_polling-MP.vkp"
 	],
