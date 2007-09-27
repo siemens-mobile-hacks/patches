@@ -99087,6 +99087,16 @@
 				"ru": "Дополнение к панели иконок",
 				"en": "Iconbar Additions"
 			}
+		},
+		"7998": {
+			"id": 7998,
+			"model": "X85v100",
+			"file": "X85v100/7998-Extended_Calls_dialed_list_v5-BASE.vkp",
+			"mtime": 1190889200000,
+			"title": {
+				"ru": "Расширенный список вызовов",
+				"en": "Extended Calls dialed list"
+			}
 		}
 	}
 }
