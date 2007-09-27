@@ -99037,6 +99037,16 @@
 				"ru": "Секвенсер клавиш",
 				"en": "Key Sequencer"
 			}
+		},
+		"7985": {
+			"id": 7985,
+			"model": "X85v100",
+			"file": "X85v100/7985-Disable_camera-BASE.vkp",
+			"mtime": 1190880602000,
+			"title": {
+				"ru": "Отключение камеры",
+				"en": "Disable camera"
+			}
 		}
 	}
 }

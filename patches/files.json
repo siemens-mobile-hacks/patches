@@ -22758,7 +22758,9 @@
 	[
 		"EL71v45/7984-backlight_duration_adjustment.vkp"
 	],
-	null,
+	[
+		"X85v100/7985-Disable_camera-BASE.vkp"
+	],
 	[
 		"EL71v45/7986-Disable_camera-MP.vkp"
 	],
