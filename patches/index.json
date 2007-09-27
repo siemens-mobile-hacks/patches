@@ -99097,6 +99097,16 @@
 				"ru": "Расширенный список вызовов",
 				"en": "Extended Calls dialed list"
 			}
+		},
+		"8000": {
+			"id": 8000,
+			"model": "X85v100",
+			"file": "X85v100/8000-Blinker_v4-BASE.vkp",
+			"mtime": 1190889930000,
+			"title": {
+				"ru": "Мигалка",
+				"en": "Blinker"
+			}
 		}
 	}
 }
