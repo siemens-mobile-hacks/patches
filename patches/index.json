@@ -99117,6 +99117,16 @@
 				"ru": "Периодическая проверка почты",
 				"en": "Regular email polling"
 			}
+		},
+		"8056": {
+			"id": 8056,
+			"model": "X85v100",
+			"file": "X85v100/8056-Mega-loudness.vkp",
+			"mtime": 1191258452000,
+			"title": {
+				"ru": "Мега-громкость",
+				"en": "Mega-loudness"
+			}
 		}
 	}
 }
