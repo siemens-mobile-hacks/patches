@@ -99127,6 +99127,16 @@
 				"ru": "Мега-громкость",
 				"en": "Mega-loudness"
 			}
+		},
+		"8063": {
+			"id": 8063,
+			"model": "X85v100",
+			"file": "X85v100/8063-Change_java_heap_size.vkp",
+			"mtime": 1191772866000,
+			"title": {
+				"ru": "Изменение размера java heap",
+				"en": "Change java heap size"
+			}
 		}
 	}
 }
