@@ -99137,6 +99137,16 @@
 				"ru": "Изменение размера java heap",
 				"en": "Change java heap size"
 			}
+		},
+		"8065": {
+			"id": 8065,
+			"model": "X85v100",
+			"file": "X85v100/8065-Jump_to_custom_folders.vkp",
+			"mtime": 1191839676000,
+			"title": {
+				"ru": "Jump to custom folders",
+				"en": "Jump to custom folders"
+			}
 		}
 	}
 }
