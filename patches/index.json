@@ -99147,6 +99147,16 @@
 				"ru": "Jump to custom folders",
 				"en": "Jump to custom folders"
 			}
+		},
+		"8066": {
+			"id": 8066,
+			"model": "X85v100",
+			"file": "X85v100/8066-Launch_SPLayer_by_mediaplayer_key-B.vkp",
+			"mtime": 1192182614000,
+			"title": {
+				"ru": "Запуск SPLayer по клавише плеера",
+				"en": "Launch_SPLayer by mediaplayer key"
+			}
 		}
 	}
 }
