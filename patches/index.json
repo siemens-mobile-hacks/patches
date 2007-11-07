@@ -99038,6 +99038,16 @@
 				"en": "Key Sequencer"
 			}
 		},
+		"7916": {
+			"id": 7916,
+			"model": "X85v100",
+			"file": "X85v100/7916-Mediaplayer_changer_v101-MP_BASE.vkp",
+			"mtime": 1194464642000,
+			"title": {
+				"ru": "Управление элементами медиаплеера",
+				"en": "Mediaplayer changer"
+			}
+		},
 		"7985": {
 			"id": 7985,
 			"model": "X85v100",
