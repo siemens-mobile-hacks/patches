@@ -99167,6 +99167,16 @@
 				"ru": "Запуск SPLayer по клавише плеера",
 				"en": "Launch_SPLayer by mediaplayer key"
 			}
+		},
+		"8222": {
+			"id": 8222,
+			"model": "X85v100",
+			"file": "X85v100/8222-SMS_Count_v3_4.vkp",
+			"mtime": 1198426674000,
+			"title": {
+				"ru": "Счетчик СМС",
+				"en": "SMS Count"
+			}
 		}
 	}
 }
