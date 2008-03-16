@@ -99177,6 +99177,16 @@
 				"ru": "Счетчик СМС",
 				"en": "SMS Count"
 			}
+		},
+		"8441": {
+			"id": 8441,
+			"model": "X85v100",
+			"file": "X85v100/8441-Elfs_can_add_icons_to_iconbar.vkp",
+			"mtime": 1205703560000,
+			"title": {
+				"ru": "Добавление иконок в иконбар из эльфов",
+				"en": "Elfs can add icons to iconbar"
+			}
 		}
 	}
 }

@@ -24086,7 +24086,9 @@
 	[
 		"EL71v45/8440-Elfs_can_add_icons_to_iconbar.vkp"
 	],
-	null,
+	[
+		"X85v100/8441-Elfs_can_add_icons_to_iconbar.vkp"
+	],
 	[
 		"EL71v45/8442-Don_t_idle_while_closing_slider.vkp"
 	],
