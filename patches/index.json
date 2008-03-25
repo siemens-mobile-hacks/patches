@@ -99187,6 +99187,16 @@
 				"ru": "Добавление иконок в иконбар из эльфов",
 				"en": "Elfs can add icons to iconbar"
 			}
+		},
+		"8447": {
+			"id": 8447,
+			"model": "X85v100",
+			"file": "X85v100/8447-Iconbar_enhancement-BASE.vkp",
+			"mtime": 1206442576000,
+			"title": {
+				"ru": "Расширение иконбара",
+				"en": "Iconbar enhancement"
+			}
 		}
 	}
 }
