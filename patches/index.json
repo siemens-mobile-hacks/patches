@@ -99197,6 +99197,16 @@
 				"ru": "Расширение иконбара",
 				"en": "Iconbar enhancement"
 			}
+		},
+		"8463": {
+			"id": 8463,
+			"model": "X85v100",
+			"file": "X85v100/8463-Iconbar_enhancement_v1_2-BASE.vkp",
+			"mtime": 1206446356000,
+			"title": {
+				"ru": "Расширение иконбара",
+				"en": "Iconbar enhancement"
+			}
 		}
 	}
 }
