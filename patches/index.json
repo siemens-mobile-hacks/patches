@@ -90555,10 +90555,10 @@
 			"id": 8745,
 			"model": "E71v45",
 			"file": "E71v45/8745-Remove_incons_white.vkp",
-			"mtime": 1214608924000,
+			"mtime": 1214605324000,
 			"title": {
-				"ru": "Убрать белый фону иконок в NativeMenu",
-				"en": "Remove incons white background in NativeMenu"
+				"ru": "Убрать белый фон у иконок в Native Menu",
+				"en": "Remove icons white background in Native Menu"
 			}
 		},
 		"8746": {
