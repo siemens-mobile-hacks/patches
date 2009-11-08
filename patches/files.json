@@ -27547,7 +27547,10 @@
 	[
 		"CX75v25/9645-cx75v25_extram_v1.vkp"
 	],
-	null,
+	[
+		"X85v100/9646-pricel_v_kamere.vkp",
+		"X85v100/9646-pricel_v_kamere.zip"
+	],
 	[
 		"CX75v13/9647-Cut_heap.vkp"
 	],

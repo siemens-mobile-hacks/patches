@@ -99207,6 +99207,17 @@
 				"ru": "Расширение иконбара",
 				"en": "Iconbar enhancement"
 			}
+		},
+		"9646": {
+			"id": 9646,
+			"model": "X85v100",
+			"file": "X85v100/9646-pricel_v_kamere.vkp",
+			"additionalFile": "X85v100/9646-pricel_v_kamere.zip",
+			"mtime": 1257712882000,
+			"title": {
+				"ru": "Прицел в камере",
+				"en": "Sight in the chamber"
+			}
 		}
 	}
 }
