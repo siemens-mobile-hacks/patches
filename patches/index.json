@@ -99218,6 +99218,16 @@
 				"ru": "Прицел в камере",
 				"en": "Sight in the chamber"
 			}
+		},
+		"9768": {
+			"id": 9768,
+			"model": "X85v100",
+			"file": "X85v100/9768-BlackList_v3_2_BASE.vkp",
+			"mtime": 1269194638000,
+			"title": {
+				"ru": "Черный список",
+				"en": "BlackList"
+			}
 		}
 	}
 }
