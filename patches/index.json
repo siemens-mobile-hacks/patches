@@ -99228,6 +99228,16 @@
 				"ru": "Черный список",
 				"en": "BlackList"
 			}
+		},
+		"10152": {
+			"id": 10152,
+			"model": "X85v100",
+			"file": "X85v100/10152-x85_SMSblacklist.vkp",
+			"mtime": 1303754058000,
+			"title": {
+				"ru": "SMSblacklist",
+				"en": "SMSblacklist"
+			}
 		}
 	}
 }
