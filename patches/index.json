@@ -14268,7 +14268,7 @@
 			"id": 10243,
 			"model": "S75v47",
 			"file": "S75v47/10243-S75v47_alarm_clockMS_fix.vkp",
-			"mtime": 1319288372000,
+			"mtime": 1319291972000,
 			"title": {
 				"ru": "Показывать время будильника вместо часов на главном экране и экране заблокированной клавиатуры",
 				"en": "Show alarm clock instead of clock on mainscreen and keylock screen"
