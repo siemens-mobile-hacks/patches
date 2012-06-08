@@ -99238,6 +99238,16 @@
 				"ru": "SMSblacklist",
 				"en": "SMSblacklist"
 			}
+		},
+		"10503": {
+			"id": 10503,
+			"model": "X85v100",
+			"file": "X85v100/10503-Receive_all_files_option_x85v100.vkp",
+			"mtime": 1339127956000,
+			"title": {
+				"ru": "Прием всех файлов на диск Data или карту памяти по выбору",
+				"en": "Receive all files to Data or memory card as option"
+			}
 		}
 	}
 }
