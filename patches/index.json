@@ -99248,6 +99248,16 @@
 				"ru": "Прием всех файлов на диск Data или карту памяти по выбору",
 				"en": "Receive all files to Data or memory card as option"
 			}
+		},
+		"10512": {
+			"id": 10512,
+			"model": "X85v100",
+			"file": "X85v100/10512-BASE_x85_Write_dict_to_Data_or_MMC.vkp",
+			"mtime": 1340347200000,
+			"title": {
+				"ru": "Диктофон и Запись звука пишут на диск Data или карту памяти по выбору",
+				"en": "Dictaphone and Sound recorder write to Data or memory card as option"
+			}
 		}
 	}
 }
