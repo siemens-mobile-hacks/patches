@@ -16,8 +16,11 @@ git stash
 git pull
 git stash pop
 git add patches
-git commit -m "sync"
-git push
+
+git diff --cached --exit-code || {
+	git commit -m "sync"
+	git push
+}
 
 git config --local --unset user.email
 git config --local --unset user.name

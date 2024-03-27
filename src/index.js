@@ -60,6 +60,10 @@ async function downloadPatches(api, all_patches_ids, force_all) {
 		index_data = JSON.parse(fs.readFileSync(`${OUT_DIR}/index.json`));
 	
 	let chunks = getChunks(all_patches_ids, 10);
+	
+	if (chunks.length > 0)
+		chunks.unshift([chunks[0].shift()]);
+	
 	while (chunks.length > 0) {
 		let chunk = chunks.shift();
 		
@@ -176,8 +180,8 @@ async function downloadPatches(api, all_patches_ids, force_all) {
 			}
 		}
 		
-		if (unchnaged_patches >= 10 && !force_all) {
-			console.log(`STOP: unchnaged_patches=${unchnaged_patches}`);
+		if (unchnaged_patches >= 1 && !force_all) {
+			// console.log(`STOP: unchnaged_patches=${unchnaged_patches}`);
 			break;
 		}
 		
