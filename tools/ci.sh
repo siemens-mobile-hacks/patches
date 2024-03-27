@@ -4,11 +4,12 @@ set -x
 
 cd $(dirname $0)/../
 
-export TZ=
+# patches.kibab.com timezone
+export TZ=Europe/Moscow
 export LC_ALL=C
 
 npm install
 node .
 git add patches
-git commit -m "sync" --author="github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
-git push
+git commit -m "sync"
+git commit --amend --author="github-actions[bot] <github-actions[bot]@users.noreply.github.com>" --no-edit

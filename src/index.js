@@ -6,6 +6,9 @@ import path from 'path';
 import child_process from 'child_process';
 import { KibabAPI } from './KibabAPI.js';
 
+// patches.kibab.com timezone
+process.env.TZ = 'Europe/Moscow';
+
 let TMP_DIR = `${import.meta.dirname}/../tmp`;
 let OUT_DIR = `${import.meta.dirname}/../patches`;
 
