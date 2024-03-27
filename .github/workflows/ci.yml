@@ -1,0 +1,18 @@
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Install nodejs
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18
+    - name: Sync patches
+      run: tools/ci.sh
+      env:
+        KIBAB_TEST_USER: ${{ secrets.KIBAB_TEST_USER }}
