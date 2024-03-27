@@ -1,0 +1,25 @@
+;S75v47
+;Загрузчик эльфов
+;Elf-loader
+;(c) Rst7/CBSIE, BoBa
+;Version: 1.8++
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=6889
+;PatchID: 6459
+;Details: https://patches.kibab.com/patches/details.php5?id=6459
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v47&f=Elf-loader_v18.zip
+
+/*
+Качаем также и тело патча. Это только врезка. Описание - читаем в описании тела
+*/
+;S75v47
+0079000: FFFFFFFFFFFFFFFFFFFFFFFF fbed2fa0e5eb2fa0237297A0 ;RET_ADRS
+042df10: e5eb2fa0 208707A0         ;PATCH_ONCREATE
+042df24: fbed2fa0 5C8607A0         ;PATCH_ONCLOSE
+054B726: 0830 3030                 ;PATCH_NO_BROWSE_TXT
+065d9C8: 237297A0 058807A0         ;PATCH_SHOWMSG_BLF
+090637c: c88701fa 08F09FE5         ;PATCH_ESI1
+090638c: 7C25647C 048107A0         ;PATCH_ESI2
+#pragma enable old_equal_ff
+
+;------------------------- end -------------------------
+

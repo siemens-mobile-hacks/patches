@@ -1,0 +1,28 @@
+;SL75v52
+;Изменить размер шрифта на Главном экране
+;Change font size on MainScreen
+;(c) SiNgle, BuG, KiRiK, [crazy]misha
+;(r) AlexADA
+;(p) ferro
+;Version: 
+;PatchID: 7642
+;Details: https://patches.kibab.com/patches/details.php5?id=7642
+/*
+
+*/
++618
+;fonts with Provider-Logo
+04326D4: 0B ff ; Date/Time 
+04326E4: 05 0b ; Provider
+04326F4: 05 0b ; Sub-Provider
+0432704: 04 ff ; Flash-SMS/CB-News
+0432714: 0C ff ; Timer when Stopwatch running
+0432724: 0C ff ; Stopwatch/Timer
+
+;fonts on Skin Application Image
+0430FB0: 0B ff ; Date/Time
+0430FCC: 0C ff ; Hotkey Info
++0
+
+;------------------------- end -------------------------
+

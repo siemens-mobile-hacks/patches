@@ -1,0 +1,20 @@
+;M55v91
+;Напряжение аккума в вольтах и температура вместо названия оператора
+;Accu voltage and temperature instead of ProvName
+;(c) avkiev
+;(p) ZZ_ToP
+;Version: 
+;PatchID: 840
+;Details: https://patches.kibab.com/patches/details.php5?id=840
+/*
+Ставится поверх патча 838 (Время и температура вместо названия оператора)
+
+Формат: 4,123 - 24,8'C
+*/
+309814: 0D00F3FEFE63F0C7BB6ED7400300F7FE 1100F2FC1C21F6FC0EFEE6FD64005BDD
+309824: 20C1F078D7400300F7FE21C1E7FE3A00 F2FC0EFEF2FD0CFEBB66D7400300F7FE
+309834: D7400300F7FE22C1D7400D00F3FEFC63 20C1E7FE2C00D7500300F7FE21C1F078
+309844: F0C7BB59D7400300F7FE23C1F078D740 F7FE22C1F0CDBB57D7500300F7FE23C1
+309854: 0300 F078
+;------------------------- end -------------------------
+

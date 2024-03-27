@@ -1,0 +1,32 @@
+;X65v100
+;Majoring
+;Majoring
+;(c) cbn
+;Version: 0.4
+;PatchID: 6497
+;Details: https://patches.kibab.com/patches/details.php5?id=6497
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=Majoring_04.zip
+
+/*
+Majoring логическая игра elf 
+Собираем одинаковые фишки попарно.
+Распаковать в 0:\Zbin\Maj
+Запускать .maj файлы.
+Зеленая кнопка - рестарт.
+
+В extension.cfg добавить строку:
+maj:0:\ZBin\Maj\Majoring.elf
+
+*/
+Majoring логическая игра elf 
+Собираем одинаковые фишки попарно.
+Распаковать в 0:\Zbin\Maj
+Запускать .maj файлы.
+Зеленая кнопка - рестарт.
+
+В extension.cfg добавить строку:
+maj:0:\ZBin\Maj\Majoring.elf
+
+Скачайте приложеный файл
+;------------------------- end -------------------------
+

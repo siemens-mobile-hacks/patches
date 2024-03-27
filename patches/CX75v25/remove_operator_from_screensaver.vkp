@@ -1,0 +1,16 @@
+;CX75v25
+;Удаление оператора с экрана скринсейвера
+;Remove operator from screensaver
+;(c) TAPAKAH
+;(p) MihaSoft
+;Version: 
+;PatchID: 3546
+;Details: https://patches.kibab.com/patches/details.php5?id=3546
+/*
+
+*/
+04ACA8C: 00 01
+04ACAFC: 00 01
+
+;------------------------- end -------------------------
+

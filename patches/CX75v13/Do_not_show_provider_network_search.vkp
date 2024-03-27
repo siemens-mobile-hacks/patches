@@ -1,0 +1,14 @@
+;CX75v13
+;Не показывать провайдер и поиск сети на главном экране
+;Do not show provider and network search message on main screen
+;(c) ?
+;(p) letopisec
+;Version: 
+;PatchID: 9437
+;Details: https://patches.kibab.com/patches/details.php5?id=9437
+/*
+
+*/
+04AA930: 08 A5
+;------------------------- end -------------------------
+

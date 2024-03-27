@@ -1,0 +1,16 @@
+;CX75v23
+;Чёрнобелый режим камеры
+;Black and white camera
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1820
+;Details: https://patches.kibab.com/patches/details.php5?id=1820
+/*
+
+*/
+0D13CBF: 3F163F 801680 ; не подходит для C65 и S65
+
+;------------------------- end -------------------------
+

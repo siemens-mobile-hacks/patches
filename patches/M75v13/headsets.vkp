@@ -1,0 +1,15 @@
+;M75v13
+;Выбор профиля при подсоединении гарнитуры
+;Choice of a prolife at connection headsets
+;(c) ThE TrIFoN
+;(p) Grizzzzly
+;Version: 
+;PatchID: 1318
+;Details: https://patches.kibab.com/patches/details.php5?id=1318
+/*
+Для тех кого обламывает отсутствие вибры в профиле "Гарнитура"
+
+*/
+0345136: 201C 0n20 ; n-номер профиля / profile number
+;------------------------- end -------------------------
+

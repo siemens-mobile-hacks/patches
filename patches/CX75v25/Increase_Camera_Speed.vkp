@@ -1,0 +1,21 @@
+;CX75v25
+;Ускоритель видеокамеры
+;Increase Camera Speed
+;(c) SiNgle
+;(r) Meg@FON
+;Version: 
+;PatchID: 4726
+;Details: https://patches.kibab.com/patches/details.php5?id=4726
+/*
+
+*/
+; Увеличить скорость камеры (выключает Nightmode)
+; Turnoff nightmode 
+0D11723: 40 00
+; Настройка яркости камеры 
+; Camera brightness tuning 
+0D11731: 80 C0 ;можно выставить и больше до FF (can be changed up to FF)
+
+
+;------------------------- end -------------------------
+

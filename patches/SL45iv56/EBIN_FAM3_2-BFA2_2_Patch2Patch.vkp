@@ -1,0 +1,21 @@
+;SL45iv56
+;EBIN FAM3.2/BFA2.2 Patch2Patch
+;EBIN FAM3.2/BFA2.2 Patch2Patch
+;(c) Rst7/CBSIE
+;Version: 
+;PatchID: 2094
+;Details: https://patches.kibab.com/patches/details.php5?id=2094
+/*
+По просьбам трудящихся доработанный EBIN. 
+Накатить поверх EBIN, следить за версией BFA2.2!
+
+
+English: Need FAM3.2 and BFA2.2 (or BFA2.2b) patches
+Apply after EBIN, don't undo EBIN! 
+*/
+; For original BFA2.2 
+0x447388: E085E004FAE4F87F F0ECF0FDFAE49849 
+; For BFA2.2b - readressed to 0x4F3640 
+;0x447388: E085E004FAE4F87F F0ECF0FDFAEF4836 
+;------------------------- end -------------------------
+

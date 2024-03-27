@@ -1,0 +1,14 @@
+;S45iv4
+;Стрелка влево -> куча ссылок
+;Arrow Left -> links
+;(c) ?
+;Version: 
+;PatchID: 643
+;Details: https://patches.kibab.com/patches/details.php5?id=643
+/*
+Заменяет это нажатие на любую из ссылок. Список ссылок см. в патче №640
+EN: Replaces this press with any of links in patch #640
+*/
+560933: F55846 F6285E ;органайзер
+;------------------------- end -------------------------
+

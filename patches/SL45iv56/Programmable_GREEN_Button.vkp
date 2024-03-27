@@ -1,0 +1,29 @@
+;SL45iv56
+;Програмируемая Зеленая кнопка
+;Programmable GREEN Button
+;(c) charlielao
+;Version: 
+;PatchID: 2078
+;Details: https://patches.kibab.com/patches/details.php5?id=2078
+/*
+Menu item is programmable through [Internet][Favorites] [URL] from the FIFTH entry.
+
+Adapted from Prof Lalo's CLST2. Call List via GREEN button aka Extended Call List v2 
+UNDO CLST2 1st!!! 
+
+
+Release: April 15, 2005
+*/
+0x3ABF6C: DADE3656 DABF48D9 ; call list during a call 
+0x3B0502: DADE3656 DABF48D9 ; call list in idle mode 
+
+1FD948: FFFFFFFF E6F4EE13 
+1FD94C: FFFFFFFF DAE4F074 
+1FD950: FFFF DB00 
+
+;ID и точки входа: 
+;122.DB3E74 - набранные номера 
+;0E6.DB3E78 - пропущенные вызовы 
+;805.DBF284 - принятые вызовы
+;------------------------- end -------------------------
+

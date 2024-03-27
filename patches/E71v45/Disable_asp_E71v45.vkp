@@ -1,0 +1,16 @@
+;E71v45
+;Отключение нарастания громкости
+;Disable ASP
+;(c) caine
+;(p) alfinant
+;Version: 2
+;PatchID: 10056
+;Details: https://patches.kibab.com/patches/details.php5?id=10056
+/*
+
+*/
+
+04AD362: E388 0123
+04AD8C0: 6389 0123
+;------------------------- end -------------------------
+

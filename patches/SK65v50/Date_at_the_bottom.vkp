@@ -1,0 +1,30 @@
+;SK65v50
+;Дата внизу (на главном экране) в виде "Ср, 11 Май" v6
+;Date at the bottom of maincsreen as "We, 11 May" v6
+;(c) avkiev
+;(p) 1nvisible
+;Version: 
+;PatchID: 2477
+;Details: https://patches.kibab.com/patches/details.php5?id=2477
+/*
+
+*/
+0718DCE: FFF7E0FF 5AF5B7FF
+#pragma enable old_equal_ff
+0473D40: 4FB522488047013007280FBC02D1A5F2
+0473D50: 20F840BD0C1C194F381C391C0831A3F2
+0473D60: F8FF381C164B98470D3000F01FF89523
+0473D70: A178002900D1A370E3702C2323712023
+0473D80: 6371237279790A200F4B98473030A071
+0473D90: 3031E1710934387900F008F801BC093C
+0473DA0: 211C01220023F9F016EF00BD00B50849
+0473DB0: 4018211C034B984700BDC046C05162A8
+0473DC0: 137F20A09D54BAA02CB221A069D12BA0
+0473DD0: 97120000
+#pragma disable old_equal_ff
+;0473D7A: 2C 95 ;убрать запятую
+;0473D48: 07 NP ;Profile "No patches"
+
+
+;------------------------- end -------------------------
+

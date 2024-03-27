@@ -1,0 +1,34 @@
+;EL71v45
+;Прием всех файлов на диск Data или карту памяти по выбору 
+;Receive all files to Data or memory card as option
+;(c) 1nvisible, Evgr 
+;(r) Rst7  
+;Version: 1
+;PatchID: 10505
+;Details: https://patches.kibab.com/patches/details.php5?id=10505
+/*
+
+*/
+0508044: 10402DE90140A0E1DCFFFFEB000054E3 00402DE90200A0E30FE0A0E18CF19FE5
+0508054: 000050130900D015 0080BDE8,0xA00733F1
+
+05081D0: 10402DE90140A0E1000050E300005413 00402DE90100A0E30FE0A0E100F09FE5
+05081E0: 1080BD082DFFFFEB 0080BDE8,0xA00733F1
+
+;08325CA: 30 34 
+;08325D6: 30 34
+
+071BAB0: 8020A0E3 6C5EE5FA
+
+068C424: 00 04 ;free space patch
+
+0507A80: 142003EB 85AEEDFA
+
+#pragma enable old_equal_ff
+00734C0: 0xA0831300,0xA05CFAD8
+00734D8: 0xA08325B2
+00734E0: 0xA08325C8,0xA08325D4
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

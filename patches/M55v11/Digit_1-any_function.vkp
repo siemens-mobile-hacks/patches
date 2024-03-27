@@ -1,0 +1,17 @@
+;M55v11
+;Цифра 1 -> куча ссылок
+;Digit 1 -> any function from the list
+;(c) SiNgle
+;(p) Jazzy$
+;Version: 
+;PatchID: 5186
+;Details: https://patches.kibab.com/patches/details.php5?id=5186
+/*
+Список ссылок 5176
+English: Functions list 5176
+*/
+0DC691: 209036 6BD6EF ;Калькулятор (или любая ссылка из списка )
+0DC694: 48423D02 EA0030C7
+
+;------------------------- end -------------------------
+

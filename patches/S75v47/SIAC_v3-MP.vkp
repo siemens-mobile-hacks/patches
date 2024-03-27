@@ -1,0 +1,14 @@
+;S75v47
+;Почасовой контроль яркости
+;Screen Illumination Auto Control
+;(c) starfriend
+;(r) ~Jhellico
+;Version: 3-MP
+;PatchID: 6277
+;Details: https://patches.kibab.com/patches/details.php5?id=6277
+/*
+
+*/
+0x0961A86: 02980D061404240C2D0E C046004FB847014C06A0
+;------------------------- end -------------------------
+

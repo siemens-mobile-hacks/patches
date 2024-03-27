@@ -1,0 +1,17 @@
+;SL75v47
+;SWI-хук
+;SWI-hook
+;(c) avkiev, Rst7/CBSIE, BoBa
+;(r) KonstanT
+;(p) ferro
+;Version: 
+;PatchID: 6110
+;Details: https://patches.kibab.com/patches/details.php5?id=6110
+/*
+
+*/
+13a2adc: 2C0000EA 80F19FE5          ;/ SL75v47
+13a2c63: A100FFFFFF 00,0xA0078001   ;\ SL75v47
+
+;------------------------- end -------------------------
+

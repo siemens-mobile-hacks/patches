@@ -1,0 +1,26 @@
+;S75v47
+;Приём Всех Файлов на Флешку
+;Receive All Files to MMCard
+;(c) 1nvisible
+;(r) Rst7
+;(p) Evgr
+;Version: 
+;PatchID: 10500
+;Details: https://patches.kibab.com/patches/details.php5?id=10500
+/*
+
+*/
+140AA6A: 30 34 ;move Inbox folder to MicroSD 
+0670862: 30 34 ;move Misc folder to MicroSD 
+0670872: 30 34 
+067087E: 30 34 
+0595CE4: 8022B349C9F006ED 00498847,0xA140AA90
+051F686: 00 04 ;free space patch
+
+#pragma enable old_equal_ff
+140AA90: 04E08EE200402DE9062DA0E304109FE5 ; 062D ;permissions patch
+140AAA0: 1453C9EB0080BDE802830000 ; 02 ;mode patch
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

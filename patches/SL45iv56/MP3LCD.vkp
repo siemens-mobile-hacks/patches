@@ -1,0 +1,26 @@
+;SL45iv56
+;MP3LCD
+;MP3LCD
+;(c) Charger
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=3435
+;PatchID: 2914
+;Details: https://patches.kibab.com/patches/details.php5?id=2914
+/*
+Патч отрубает экран при блокировании МП3 и врубает обратно при разблокировании 
+экран отрубается полностью! (в отличии от патча blank screen, где показывается пустой экран).
+Есесно это токо пример использования, можно и на блок поставить и т.п., если у кого желание будет. 
+
+!!! Не выходите из мп3 по долгому red, если заблокировано, а то вслепую будете тыркаться !!!
+
+
+English: Blocking keyboard in mp3 causes LCD to turn off with this patch, and unlocking to turn back on
+LCD really turns off, it doesn't only clear screen buffer!
+
+!!! Don't close locked mp3 by red button long pressing :) Your screen doesn't turn on !!!
+*/
+3BA1D0: F0C8F0D9 DAC7C0D5
+0x27D5C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DADB22ED48413D05DAC00ECCF0C8F0D9 
+0x27D5D0: FFFFFFFFFFFFFFFFFFFFFFFF DB00DAC008CCF0C8F0D9DB00
+;------------------------- end -------------------------
+

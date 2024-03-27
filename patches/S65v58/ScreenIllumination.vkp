@@ -1,0 +1,17 @@
+;S65v58
+;Почасовой контроль яркости
+;Screen Illumination Auto Control
+;(c) starfriend
+;(r) (i) ~Jhellico
+;(p) Strike66
+;Version: 2.1
+;PatchID: 3310
+;Details: https://patches.kibab.com/patches/details.php5?id=3310
+/*
+С помощью этого патча вы сможете указать время изменения подсветки.
+Требует v15: RamScreenBrightness. 
+*/
+0C57064: 04980E1C141CC707101C 004FB847,0xA0FC4C01,C046
+
+;------------------------- end -------------------------
+

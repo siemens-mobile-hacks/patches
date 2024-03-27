@@ -1,0 +1,14 @@
+;E71v42
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c)  SiNgle
+;(p) $TA$
+;Version: 
+;PatchID: 6740
+;Details: https://patches.kibab.com/patches/details.php5?id=6740
+/*
+
+*/
+08D29C0: 011C 1621
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;EL71v45
+;Работа телефона без сим-карты
+;Work without SIM-card
+;(c) ThE TrIFoN
+;(p) den11111
+;Version: 
+;PatchID: 7143
+;Details: https://patches.kibab.com/patches/details.php5?id=7143
+/*
+При нажатии кнопки Демо тел запускается в нормальный режим и работает без Сим карты.
+*/
+05C8030: 0000A0E3C9FFFFEA 04F01FE5,0xA0CECB3D
+;------------------------- end -------------------------
+

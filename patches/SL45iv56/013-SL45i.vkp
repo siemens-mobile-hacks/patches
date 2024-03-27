@@ -1,0 +1,83 @@
+;SL45iv56
+;Нажатие "*", "0" или "#" и "Зеленой трубки" как ярлыки
+;Use [STAR] [0] and [#] followed by [GREEN] button as shortcuts
+;(c) RizaPN
+;Version: 
+;PatchID: 1522
+;Details: https://patches.kibab.com/patches/details.php5?id=1522
+/*
+Нажатие "*", "0" или "#" и "Зеленой трубки" как ярлыки:
+"#" и "Зеленая трубка" как ярлык "Java"; 
+"*" и "Зеленая трубка" как ярлык "Переключение подсветки"; 
+"0" и "Зеленая трубка" как ярлык "Новое сообщение" ...
+
+Патч №013 с http://patch.oslik.ru/SL45_RU
+*/
+;Обязательно сделайте откат патча №007 (Нажатие "*" и "Зеленой 
+;трубки" как ярлык "Переключение Подсветки")! 
+
+3AD7A4: E6FC0A00E6FD3600 E6003600F3FC0A00 
+3AD7B2: 2D19 2D12 
+3B3000: F0ED70EC2D0BDC4D E01427FC23003D03 
+3B3008: A92C47F2 DAD9F80A ;([#] см.таблицу) 
+3B300C: 30002D0647F2 0D0929C73D03 
+3B3012: 2A002D03 DAD9EE0A ;([*] см.таблицу) 
+3B3016: 47F223003D02 0D0429C63D03 
+3B301C: E004DB00 DAD9620A ;([0] см.таблицу) 
+3B3020: E014 E004 
+
+;------------------------------------------------------------------------------------ 
+;Сноска "см.таблицу" означает, что вы можете изменить значения на 
+;точки входа из таблицы если хотите поменять функцию ярлыка. 
+;Сноска "***" означает, что вы должны также изменить текст функции 
+;(если вы поменяли функцию) на новый текст. 
+;============================================= 
+;Точка входа : Текст : Описание функции 
+;============================================= 
+;DA D8 B4 E1 : B0 0D : Java 
+;DA D8 B8 E1 : 53 03 : Internet 
+;DA D8 C4 E1 : B8 01 : MP3Player 
+;DA D8 CA E1 : 81 05 : Card-Explorer 
+;DA D8 CE E1 : B0 0D : Chronometer 
+;DA D8 D6 E1 : D7 02 : Currency 
+;DA D8 DA E1 : 59 02 : Games 
+;DA DB 3C EF : 16 00 : Addressbook 
+;DA DB 46 EF : 33 02 : SIM-Location 
+;DA DB 50 EF : 58 01 : Calendar 
+;DA DB 5C EF : 9D 02 : Appointments 
+;DA DB 68 EF : B7 00 : Dictaphone 
+;DA DB 6C EF : 56 00 : Answer-Message 
+;DA DB 70 EF : D2 02 : BussinessCard 
+;DA DB 7C EF : 8A 02 : Calculator 
+;DA DB 80 EF : 80 03 : VoiceControl 
+;DA DB 80 F2 : E7 00 : Call-Missed 
+;DA DB 84 F2 : 44 00 : Call-Received 
+;DA DB 88 F2 : 22 01 : Call-Dialed 
+;DA DB 8C F2 : E8 00 : Alarm-Missed 
+;DA DC 16 06 : 9C 01 : Compose-Melody 
+;DA DC 04 79 : BE 04 : Game-SuperMind 
+;DA DC 10 79 : C0 04 : Game-MoveTheBox 
+;DA DC 14 79 : 87 05 : Game-Wacko 
+;DA DC 08 79 : C2 04 : Game-HomeRun 
+;DA DC FC 78 : 99 04 : Game-Reversi 
+;DA DC 00 79 : 9B 04 : Game-Quattropoli 
+;DA DC 0C 79 : C4 04 : Game-TheMaze 
+;DA D9 62 0A : 3C 02 : Write-Message 
+;DA D9 EE 0A : D3 00 : Incoming-Message 
+;DA D9 F8 0A : 69 00 : Outgoing-Message 
+;DA D9 02 0B : DE 03 : Archive 
+;DA DC 12 42 : 6C 04 : Contrast 
+;DA D5 5A F2 : 5B 02 : Language 
+;DA D5 6A F2 : 5F 00 : Display 
+;DA D5 82 F2 : 7E 02 : T9-Input 
+;============================================= 
+
+;Пример: 
+
+;См. патч №11... 
+;Если вы хотите назначить игру "Game-SuperMind" вместо "Архив", то 
+;вы должны исправить патч таким образом: 
+
+;3B30C4: 7B03 BE04 ;(Текст: Game-Supermind) 
+;------------------------- end -------------------------
+

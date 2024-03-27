@@ -1,0 +1,36 @@
+;X65v100
+;Раздельные настройки вибры
+;Vibra separate settings
+;(c) Evgr
+;Version: 1
+;PatchID: 10631
+;Details: https://patches.kibab.com/patches/details.php5?id=10631
+/*
+Раздельные настройки вибры для сообщений, смс, будильника
+
+English:
+Vibra separate settings for messages, SMS, alarmclock
+
+*/
+
+; Раздельные настройки вибры для сообщений, смс, будильника
+; Vibra separate settings for messages, SMS, alarmclock
+
+#pragma enable old_equal_ff
+0FC99A0: 00B50F498847FF2800D100BD61460229
+0FC99B0: 04D00D2902D00F2900D000BD03B40D48
+0FC99C0: C4DF01D103BC00BD034603BC022905D0
+0FC99D0: 0D2901D0D87800BD987800BD587800BD
+
+0FC99F0: 0xB1C2D3E4,0x00180614,0000000000000000,"\
+{p=VibraSettings id=180614 cp=Evgr ver=1}","\
+{info `Vibra separate settings`}","\
+{c typ `Выкл`=0xFF `Стандарт`=0x0 `Вертолет`=0x1 `НЛО`=0x2 `Удар`=0x3 `Москит`=0x4 `Поезд`=0x5}","\
+{1 o `Вызовы` c=typ v=0x1}","\
+{2 o `Сообщения` c=typ v=0x1}","\
+{3 o `Будильник` c=typ v=0x1}","\
+",00
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

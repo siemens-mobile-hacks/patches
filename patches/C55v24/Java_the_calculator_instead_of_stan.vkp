@@ -1,0 +1,16 @@
+;C55v24
+;Java калькулятор вместо стандартного
+;Java the calculator instead of standard
+;(c) Eltaron
+;Version: 
+;PatchID: 4303
+;Details: https://patches.kibab.com/patches/details.php5?id=4303
+/*
+замена стандартного калькулятора на запуск мидлета a:\java\Util\calc.jar
+в качестве замены рекомендую http://l-nord-l.narod.ru/java/RPNCalc.zip - чуток переделанный мною RPNCalc, теперь всё влазит на экран c55-го
+*/
+17A7A8: 8890888088708860 E6FCB827E6FD5E02
+17A7B0: 26F05400E6FCF48DE6FDCA00E6FEAE8E E01EDAAD9049DB00613A5C6A6176615C
+17A7C0: E6FFCA00DAD946B4F064F075E6F81A00 5574696C5C63616C632E6A6172000000
+;------------------------- end -------------------------
+

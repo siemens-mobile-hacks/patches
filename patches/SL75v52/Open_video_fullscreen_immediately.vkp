@@ -1,0 +1,17 @@
+;SL75v52
+;Открывать видео сразу во весь экран
+;Open video fullscreen immediately
+;(c) Ganster41
+;(p) SimaFish
+;Version: 
+;PatchID: 9580
+;Details: https://patches.kibab.com/patches/details.php5?id=9580
+/*
+
+*/
++309C
+05A80C0: 00 01
+05A80FC: 00 01
++0
+;------------------------- end -------------------------
+

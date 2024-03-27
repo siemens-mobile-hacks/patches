@@ -1,0 +1,14 @@
+;S75v47
+;Изменение размера java heap
+;Change java heap size
+;(c) Miha_r
+;(p) @ndreS/PRM, dimonp25
+;Version: 1-MP
+;PatchID: 8093
+;Details: https://patches.kibab.com/patches/details.php5?id=8093
+/*
+
+*/
+00B9B84: 002090E5 5DBEFEEB
+;------------------------- end -------------------------
+

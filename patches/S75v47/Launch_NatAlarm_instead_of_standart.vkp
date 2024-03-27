@@ -1,0 +1,25 @@
+;S75v47
+;Запуск NatAlarm вместо стандартного будильника
+;Launch NatAlarm instead of standart alarm
+;(c) Kibab
+;(r) RainMaker, den11111, Den
+;(p) Виктор89
+;Version: 
+;PatchID: 8875
+;Details: https://patches.kibab.com/patches/details.php5?id=8875
+/*
+
+*/
+;Закомментируйте ненужные строки
+0041EE78: E3DD32A0 0xA00610A1 ;шорткат и флекс меню
+004375BC: 373433A0 0xA00610A1 ;натив меню
++00610A0 
+#pragma enable old_equal_ff
+00: FFB58020C7DF2501061C06A18022C7DF
+10: 6C0100220021301C94DF301CC7DF2901
+20: FFBD
+24: "4:\\ZBin\\utilities\\NatAlarm_NSG.elf",00 ;путь до эльфа (вместо одного "\" ставьте "\\"!)
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

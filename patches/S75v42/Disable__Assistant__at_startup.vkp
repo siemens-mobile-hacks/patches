@@ -1,0 +1,14 @@
+;S75v42
+;Отключить помощника при загрузке
+;Disable "Assistant" at startup
+;(c) SiNgle
+;(p) Belarus
+;Version: 
+;PatchID: 5003
+;Details: https://patches.kibab.com/patches/details.php5?id=5003
+/*
+Cлетают настройки интернета!!!!
+*/
+02FB589: D1 D0
+;------------------------- end -------------------------
+

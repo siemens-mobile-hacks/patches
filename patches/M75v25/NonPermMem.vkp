@@ -1,0 +1,14 @@
+;M75v25
+;изменение размера NonPermMem
+;Change NonPermMem
+;(c) Jellico
+;(p) VoVkA
+;Version: 1
+;PatchID: 8594
+;Details: https://patches.kibab.com/patches/details.php5?id=8594
+/*
+патч добавляет примерно 470 кб.у кого пикает попробуйте поменять значения.у меня свободной оперативы около 1960
+*/
+97957C: 0x0047A120 0x004EA120
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;C65v56
+;Сжатие jpeg с максимальным кач-вом (100% вместо 75%)
+;Jpeg-compression with maximal quality (100% instead of 75%)
+;(c) SiNgle
+;Version: 
+;PatchID: 3839
+;Details: https://patches.kibab.com/patches/details.php5?id=3839
+/*
+
+*/
+09D8228: 4B 64
+;------------------------- end -------------------------
+

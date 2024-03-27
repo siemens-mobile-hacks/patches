@@ -1,0 +1,15 @@
+;MC60v10
+;Убрать польский из меню выбора языков ввода
+;Remove Polish from language choose menu
+;(c) AlexSid
+;(p) ahab
+;Version: 
+;PatchID: 3161
+;Details: https://patches.kibab.com/patches/details.php5?id=3161
+/*
+
+*/
+680080: 3C90 0000
+3FF92C: 0000 1501
+;------------------------- end -------------------------
+

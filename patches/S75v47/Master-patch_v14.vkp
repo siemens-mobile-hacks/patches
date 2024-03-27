@@ -1,0 +1,18 @@
+;S75v47
+;Мастер-патч
+;Master-patch
+;(c)  avkiev
+;(r) 1nvisible, chaos
+;Version: 14
+;PatchID: 5559
+;Details: https://patches.kibab.com/patches/details.php5?id=5559
+/*
+Обновление! Совместимость с загрузчиком эльфов 2.2
+*/
+;Run Scaner on startup
+02FCEAE: 0021 BEDF ;  S75v47
+
+;Run Scaner instead of REMOTE_SYNCHRONIZATION
+0424EF8: 0xA032DD95 0xA0060C91   ; S75v47
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;A60v27
+;Не показывать вторую анимацию при загрузке
+;Dont show second animation on start
+;(c) .
+;Version: 
+;PatchID: 10472
+;Details: https://patches.kibab.com/patches/details.php5?id=10472
+/*
+
+*/
+6DB336: 3D 0D
+;------------------------- end -------------------------
+

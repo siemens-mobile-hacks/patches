@@ -1,0 +1,18 @@
+;EL71v45
+;Мега-громкость для гарнитуры
+;Mega-loudness for handsfree
+;(c) Akot
+;(r) (i) -=PaScaL=-
+;(p) -=PaScaL=-
+;Version: 
+;PatchID: 8017
+;Details: https://patches.kibab.com/patches/details.php5?id=8017
+/*
+Мега-громкость теперь и для гарнитуры.
+*/
+04FBEA4: 0600000A020000EF6C3DA0E3 050040E22E00C4E53C0000EA
+04FBF9C: 000000EA C0FFFFEA
+
+04FBEA4: 05 0C
+;------------------------- end -------------------------
+

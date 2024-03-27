@@ -1,0 +1,27 @@
+;EL71v45
+;Исправление кнопок *,0,#,кнопка вызова в Native Menu
+;Fix key *,0,#,greenkey in Native Menu
+;(c) BingK(binghelingxi)
+;(p) snoopyhzy
+;Version: 
+;PatchID: 8866
+;Details: https://patches.kibab.com/patches/details.php5?id=8866
+/*
+rus:*-Прочее 0-Мои файлы #-Настройки Кнопка вызова-Разработчик
+eng:*-Extra 0-Mystuff #-Setup GreenKey-Dev.Menu
+*/
+;NMNU_FIX_KEY_HOOK3 
+0x006FB390: 1529 0529 
+;NMNU_FIX_KEY_HOOK1 
+0x00A2E304: 162869D171688868 004A904701CD35A1 
+;NMNU_FIX_KEY_HOOK2 
+0x00A2E310: 3928 3C28 
+;NMNU_FIX_KEY_BODY 
+#pragma enable old_equal_ff 
+0x0135CD00: 162807D0142803D015280FD13C2006E0 
+0x0135CD10: 3A2004E071688868302802D13B207168 
+0x0135CD20: 8860716888687246121D10477246D432 
+0x0135CD30: 1047 
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

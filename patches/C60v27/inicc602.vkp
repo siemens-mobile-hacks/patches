@@ -1,0 +1,28 @@
+;C60v27
+;Инициализация_при_старте
+;inicc602
+;(c) KOPAY
+;Version: 2
+;PatchID: 697
+;Details: https://patches.kibab.com/patches/details.php5?id=697
+/*
+Для урезанного ленгпака
+Этот патч ничего не делает! Просто он необходим для некоторых будущих патчей
+*/
+
+;---------------------------------------------------------------------------------------
+;*** www.Инициализация_при_старте *** © KOPAY
+;Firmware: C60v27
+;Author: KOPAY
+;Для урезанного ленгпака
+;Этот патч ничего не делает! Просто он необходим для некоторых будущих патчей
+
+64b04d: 845CFB 834020
+632040: FFFFFFFF DA845CFB
+632044: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC
+63205F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00
+63207A: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00
+632090: FFFF DB00
+
+;------------------------- end -------------------------
+

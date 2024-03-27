@@ -1,0 +1,15 @@
+;CX75v12
+;Неограниченная запись видео
+;Unlimited video recording
+;(c) SiNgle
+;Version: 1
+;PatchID: 1786
+;Details: https://patches.kibab.com/patches/details.php5?id=1786
+/*
+Неограниченная запись видео
+*/
+34E558: 3300000A 920052E3
+2D93D7: 00 FF
+
+;------------------------- end -------------------------
+

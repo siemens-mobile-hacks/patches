@@ -1,0 +1,64 @@
+;CX65v50
+;Диск A 14.74Мб
+;Disk A 14.74Mb
+;(c) SiNgle, empeka, Hynix
+;(r) AsteriX
+;Version: 2.2
+;PatchID: 142
+;Details: https://patches.kibab.com/patches/details.php5?id=142
+/*
+Увеличивает ёмкость диска А до 14,74 МБ!
+!!!Патч требует заливки файлов! файлы можно взять в патче на 12,71МБ.
+
+ВНИМАТЕЛЬНО читайте инструкцию внутри!!!
+
+Ставится поверх патча №140 "Увеличение диска до 12,71МБ" и №141 
+"Увеличение диска до 13,66МБ"
+FFS_C урезается до 641 КБ, поэтому, если Вы привыкли хранить файлы и на диске C (Config) тоже, этот патч для Вас будет мало полезен.
+(респект pr0p0lis за найденный скриншот)
+*/
+/*
+Этот патч увеличивает FFS_A до 14.74Mb, но урезает FFS_C до 641кб
+Ставится после патча * CX65v5003 * Диска A 13.66Мб v2.1 * !!!
+Делаем Fullflash Backup!!!
+1. Сливаем все с диска С на комп и выбираем ~630кб самого важного
+2. Ставим патч и после нажатия красной кнопки ждем 10-15 секунд, пока отформатируется новый диск
+3. Заливаем файлы на диск С (если не лезут, перенесите папку System обратно на Диск A)
+4. Перезагружаем телефон, радуемся и не ставим патчи туда где новая FFS!
+This patch increases FFS_A up to 14.74Mb, but cuts FFS_C down to 641kb
+To be installed after * CX65v5003 * Disk A 13.66Mb v2.1 * !!!
+Make the Fullflash Backup!
+1. Make the backup of all the files on Disk C and choose the most valuable files (their common capacity shouldn't exceed 630kb)
+2. Apply the following patch. Then press the red button and wait 10-15 second until the phone has finished formatting the increased disk
+3. Put the most valuable files back to Disk C (if the reduced space isn't enough, move System folder back to Disk A)
+4. Reboot your cell phone. Be pleased and don't install patches to the new FFS space!
+*/
+083A764: 75 7E
+083A7BC: 10 07
+#pragma enable old_equal_ff
+00B03A8: 00003CA00000020000003EA000000200
+00B03B8: 000040A000000200000042A000000200
+00B03C8: 000044A000000200000046A000000200
+00B03D8: 000048A00000020000004AA000000200
+00B03E8: 00004CA000000200
+#pragma disable old_equal_ff
+#pragma disable warn_no_old_on_apply
+02E0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0300000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0320000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0340000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0360000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0380000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+03A0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+03C0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+03E0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0400000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0420000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0440000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0460000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0480000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+04A0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+04C0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+#pragma enable warn_no_old_on_apply
+;------------------------- end -------------------------
+

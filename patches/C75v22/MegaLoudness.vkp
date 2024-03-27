@@ -1,0 +1,17 @@
+;C75v22
+;МегаГромкость
+;MegaLoudness
+;(c) SiNgle
+;(r) NForce
+;(p) Sergei123
+;Version: 
+;PatchID: 3907
+;Details: https://patches.kibab.com/patches/details.php5?id=3907
+/*
+
+*/
+07DFFF8: 2600C4E5 D3FFFFEA
+07DFF52: 00EF6C2DA0E30100A0E3 40E22600C4E5290000EA
+
+;------------------------- end -------------------------
+

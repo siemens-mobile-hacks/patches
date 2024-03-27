@@ -1,0 +1,18 @@
+;E71v45
+;Мега громкость
+;Mega-loudness
+;(c) SiNgle
+;(p) Evgr
+;Version: 
+;PatchID: 7696
+;Details: https://patches.kibab.com/patches/details.php5?id=7696
+/*
+
+*/
+04F67C8: 2B00C4E5 D3FFFFEA
+04F671C: 030000EF6C3DA0E30320A0E3 030040E22B00C4E52A0000EA
+
+04F671C: 03 04 ; Громкость (00-07) | Loudness (00-07)
+
+;------------------------- end -------------------------
+

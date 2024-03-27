@@ -1,0 +1,14 @@
+;S75v47
+;Настройка звука флеш СМС
+;Flash SMS Sound control 
+;(c) -=(Kad)=-, Evgr
+;(p) Evgr
+;Version: 
+;PatchID: 10122
+;Details: https://patches.kibab.com/patches/details.php5?id=10122
+/*
+
+*/
+029C860: 0F20DCF70EEF0024 00488047,0xA0072301 
+;------------------------- end -------------------------
+

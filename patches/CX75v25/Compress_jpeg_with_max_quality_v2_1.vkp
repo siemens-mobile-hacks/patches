@@ -1,0 +1,19 @@
+;CX75v25
+;Сжатие JPEG с максимальным качеством
+;Compress jpeg with max quality
+;(c) Izzzwerg & eon
+;(r) SiNgle
+;(p) ChrOmeB
+;Version: 2.1
+;PatchID: 7918
+;Details: https://patches.kibab.com/patches/details.php5?id=7918
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v25&f=Compress_jpeg_with_max_quality_v2_1.rar
+
+/*
+Порт патча:5601
+Размер картинок увеличивается, небольшой выигрышь в качестве картинки. Приложен файл с примером улучшения качества.
+*/
+A8BAB8: 32 DC
+ABE760: 186D02 000003
+;------------------------- end -------------------------
+

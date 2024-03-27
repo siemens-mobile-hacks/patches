@@ -1,0 +1,13 @@
+;ME75v22
+;Отменить звук всплывающих сообщений
+;Disable a sound of popup message
+;(c) Andrey_ua
+;Version: 
+;PatchID: 5777
+;Details: https://patches.kibab.com/patches/details.php5?id=5777
+/*
+
+*/
+02C11AD: D0 E0
+;------------------------- end -------------------------
+

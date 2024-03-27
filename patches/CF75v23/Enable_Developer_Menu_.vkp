@@ -1,0 +1,13 @@
+;CF75v23
+;Включение Инженерного меню
+;Enable Developer Menu
+;(c) Phantom
+;Version: 
+;PatchID: 4859
+;Details: https://patches.kibab.com/patches/details.php5?id=4859
+/*
+
+*/
+07E4F84: 040090E5 0000A0E3
+;------------------------- end -------------------------
+

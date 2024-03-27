@@ -1,0 +1,23 @@
+;X75v100
+;Вибра при потере-нахождении сети
+;Vibra at net lost-found
+;(c) -=(Kad)=-
+;Version: 2
+;PatchID: 7229
+;Details: https://patches.kibab.com/patches/details.php5?id=7229
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Vibra_at_net_lost-found_v2.zip
+
+/*
+
++2 Не вибрит при включении телефона
+
++1.1 Зависимость от состояния клавы
+
++1 первая версия...
+
+Вибрит кода телефон теряет или находит сеть
+
+*/
+;
+;------------------------- end -------------------------
+

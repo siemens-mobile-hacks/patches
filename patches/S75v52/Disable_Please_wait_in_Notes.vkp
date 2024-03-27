@@ -1,0 +1,14 @@
+;S75v52
+;Отключить "Подождите" в Заметки -> Нов.запись
+;Disable "Please wait" in Notes -> New entry
+;(c) Evgr
+;(p) Виктор89
+;Version: 
+;PatchID: 9235
+;Details: https://patches.kibab.com/patches/details.php5?id=9235
+/*
+
+*/
+05E6AF4: 77F054ED C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,35 @@
+;CX75v12
+;Улыбающийся индикатор сети
+;Funny Network Indicator
+;(c) Nuclear
+;(r) arsh0r
+;Version: 1.0
+;PatchID: 963
+;Details: https://patches.kibab.com/patches/details.php5?id=963
+/*
+RUS: Показывает синие рожицы (картинки №740-747). Чем лучше прием - тем больше улыбка
+
+ENG: Shows blue faces (picture №740-747). The better reception - the more smile
+*/
+019B100: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00280028FFB5
+019B106: FF 02 ; x pos (hex)
+019B107: FF 20
+019B108: FF 14 ; y pos (hex)
+019B109: FFFFFFFFFFFFFF 210C4CA579682D
+019B110: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0C4A10DA612D0C4A0DDA5A2D0B4A0ADA
+019B120: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 532D0B4A07DA4C2D0A4A04DA452D0A4A
+019B130: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 01DA3E2D094A024B9847FFBD84A951A8
+019B140: FFFFFFFF CF922AA0
+
+019B144: FFFFFFFF EB020000  ; 02EBh (474) Picture 1 minimum level 
+019B148: FFFFFFFF EA020000  ; 02EAh (476) Picture 2 
+019B14C: FFFFFFFF E9020000  ; 02E9h (475) Picture 3
+019B150: FFFFFFFF E4020000  ; 02E4h (440) Picture 4
+019B154: FFFFFFFF E5020000  ; 02E5h (441) Picture 5 
+019B158: FFFFFFFF E6020000  ; 02E6h (442) Picture 6 
+019B15C: FFFFFFFF E7020000  ; 02E7h (443) Picture 7 maximum level 
+
+02A8DA6: 002809D0 F2F6ABF9   ; Если  НЕ установлен патч /Картинка вибры на главном экране/© SiNgle/§ BuG * If not the patch "Picture vibra on the main screen" is established
+;02A8DA6: 00280028 F2F6ABF9  ; Если установлен патч /Картинка вибры на главном экране/© SiNgle/§ BuG * If the patch "Picture vibra on the main screen" is established
+;------------------------- end -------------------------
+

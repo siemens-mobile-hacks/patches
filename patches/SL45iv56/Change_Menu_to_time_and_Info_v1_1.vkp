@@ -1,0 +1,23 @@
+;SL45iv56
+;Заменит "Меню" на время и "Инфо" на день недели
+;Change "Menu" to time and "Info" to day of week
+;(c) greenteas, rc-flitzer
+;Version: 1.1
+;PatchID: 2645
+;Details: https://patches.kibab.com/patches/details.php5?id=2645
+/*
+English: Update v1.1: No need anymore to change weekday strings in language pack.
+*/
+0x46547A: DAE67E53 DAC760E9
+
+0x27E960: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46FCA0012D1146FC2A013D0CD7400D00
+0x27E970: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2FCE6253D0108C75C1C88C05C1C08CC
+0x27E980: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 06FC1703FAE67E5388E088D0E6F49500
+0x27E990: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DC4EB98DE6FC063AE6FD3700DAA47CAC
+0x27E9A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 98E008E198F0E00C88C0E6FC180088C0
+0x27E9B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC063AE6FD3700DAA4E4BA0804DB00
+
+;27E962: A001;MENU string index, display time, can change it as you like
+;27E968: 2A01;INFO string index, display week, can change it as you like
+;------------------------- end -------------------------
+

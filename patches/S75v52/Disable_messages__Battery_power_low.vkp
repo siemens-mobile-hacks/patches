@@ -1,0 +1,16 @@
+;S75v52
+;Отключить сообщения "Аккумулятор почти разряжен, Зарядите!" и "Аккумулятор разряжен! Зарядите!"
+;Disable messages "Battery power low. Please recharge!" and "Battery empty. Please recharge!"
+;(c) Evgr
+;(p) dimonp25
+;Version: 
+;PatchID: 8671
+;Details: https://patches.kibab.com/patches/details.php5?id=8671
+/*
+
+*/
+029B902: 51F17CE9 C046C046 ; окошки
+029B8F4: DDF76CEF C046C046 ; звук
+029B90A: 50F1FAED C046C046 ; подсветка
+;------------------------- end -------------------------
+

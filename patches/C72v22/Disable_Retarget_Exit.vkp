@@ -1,0 +1,13 @@
+;C72v22
+;Отключить Retarget Exit
+;Disable Retarget Exit
+;(c) 1nvisible
+;Version: 
+;PatchID: 5838
+;Details: https://patches.kibab.com/patches/details.php5?id=5838
+/*
+
+*/
+1219C24: 70402DE9 1EFF2FE1 ; For those who have Retarget Exit when using java
+;------------------------- end -------------------------
+

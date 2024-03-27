@@ -1,0 +1,15 @@
+;EL71v45
+;Big Time in Keylock Screen instead of "Keypad Locked"
+;Big Time in Keylock Screen instead of "Keypad Locked"
+;(c) benj9
+;Version: 
+;PatchID: 8059
+;Details: https://patches.kibab.com/patches/details.php5?id=8059
+/*
+
+*/
+066B9F9: 9993F12AEB 9859F7BBFD
+08533E8: 05 01 ; font
+066BB90: 4901 0901 ; duration of dialog 2 seconds
+;------------------------- end -------------------------
+

@@ -1,0 +1,33 @@
+;S65v50
+;Удаление папки "Jam" из "Java"
+;Remove "Jam" folder from "Java"
+;(c) majsky
+;(p) KiRiK
+;Version: 1
+;PatchID: 409
+;Details: https://patches.kibab.com/patches/details.php5?id=409
+/*
+Перед применением патча папки "Applications" и "Games" переместить из "0:/Java/jam/" в "0:/Java/", опустевшую папку "jam" удалить..
+
+Совместим с патчем "APPZ AND GAMES ON MMC"
+
+Даёшь кофе без джема! (с) Kibab :)
+*/
+/* 
+Перед применением патча папки "Applications" и "Games" переместить
+из "0:\Java\jam\" в "0:\Java\", опустевшую папку "jam" удалить
+Совместим с патчем "APPZ AND GAMES ON MMC" (4:\ в этом случае)
+Before applying the patch move folders "Applications" and "Games"
+from "0:\Java\jam\" to "0:\Java\", then delete the empty folder "jam"
+Compatible with patch "APPZ AND GAMES ON MMC" (4:\ in this case)
+*/
+
+0A24306: 0B 07
+0A24316: 5C006A0061006D 00000000000000
+0A2435A: 18 14
+0A2436C: 6A0061006D005C004100700070006C00 4100700070006C006900630061007400
+0A2437E: 63006100740069006F006E0073 6F006E00730000000000000000
+0A243E0: 11 0D
+0A243F2: 6A0061006D005C00470061006D00650073 470061006D006500730000000000000000
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;C81v51
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found" (3*beep);
+;(c) avkiev
+;Version: 
+;PatchID: 7204
+;Details: https://patches.kibab.com/patches/details.php5?id=7204
+/*
+
+*/
+106B330: 5C03 FFFF
+
+;------------------------- end -------------------------
+

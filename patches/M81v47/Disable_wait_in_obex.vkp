@@ -1,0 +1,14 @@
+;M81v47
+;Отключить "Подождите" при ОВЕХ-соединении
+;Disable "Wait" in OBEX
+;(c) DJ, dimonp25
+;(p) Barracuda
+;Version: 
+;PatchID: 9031
+;Details: https://patches.kibab.com/patches/details.php5?id=9031
+/*
+
+*/
+096CE5E: F8B5 7047
+;------------------------- end -------------------------
+

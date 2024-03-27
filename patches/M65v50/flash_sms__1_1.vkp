@@ -1,0 +1,20 @@
+;M65v50
+;Отправка Flash SMS
+;DSFS Directly Send Flash SMS
+;(c) Bennie
+;(p) BuG
+;Version: 1.1
+;PatchID: 299
+;Details: https://patches.kibab.com/patches/details.php5?id=299
+/*
+Начните текст сообщения с пробела
+Формат текста-> Размер шрифта-> Средний шрифт, иначе будет обычное СМС.
+*/
+135A42C: 201CB168 06F368F8
+#pragma enable old_equal_ff
+1660500: 201CB8380178082906D000290CD1417B
+1660510: 7F221140F02204E0437B817B1B02C918
+1660520: 1822202900D10270201CB1687047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

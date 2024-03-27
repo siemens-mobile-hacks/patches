@@ -1,0 +1,14 @@
+;M81v51
+;Повышенный приоритет для MMI задач
+;Higher MMI Prio
+;(c) benj9
+;(p) const
+;Version: 
+;PatchID: 7910
+;Details: https://patches.kibab.com/patches/details.php5?id=7910
+/*
+
+*/
+0287D48: 10 02
+;------------------------- end -------------------------
+

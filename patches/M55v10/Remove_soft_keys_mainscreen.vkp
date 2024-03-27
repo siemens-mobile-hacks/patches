@@ -1,0 +1,20 @@
+;M55v10
+;Убрать софт-кнопки с главного экрана
+;Remove soft keys from main screen
+;(c) SiNgle
+;(r) ValeraVi
+;Version: 3
+;PatchID: 1387
+;Details: https://patches.kibab.com/patches/details.php5?id=1387
+/*
+
+*/
+0D493E: 2D 0D ;опустить часы в низ экрана
+0D4A1C: 3D05 CC00 ;удалить кнопку меню
+0D4C06: 3D02 CC00
+0D4C74: 0E 04
+0D4C8A: DA2DCC8D FA2D284E
+0D5884: 3D0D CC00
+0D588E: 3D08 CC00
+;------------------------- end -------------------------
+

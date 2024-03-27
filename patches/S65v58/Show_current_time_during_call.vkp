@@ -1,0 +1,20 @@
+;S65v58
+;Показ текущего времени во время звонка
+;Show current time during call
+;(c) Bennie
+;(p) птичка
+;Version: 
+;PatchID: 6587
+;Details: https://patches.kibab.com/patches/details.php5?id=6587
+/*
+должен быть включено авт.индикация (меню 2-5-5-4)
+*/
+#pragma enable old_equal_ff
+1690200: 30B5041C0A4B984782B000206946094B
+1690210: 9847201C084988472D21215401302118
+1690220: 68460322054DA84702B0201C30BDFFFF
+1690230: 0xA16B56C4,0xA16B6684,0xA166AE81,0xA082BC71
+#pragma disable old_equal_ff
+169D8AA: 04A80B2117F00AEF 68461B21F2F7A7FC;
+;------------------------- end -------------------------
+

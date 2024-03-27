@@ -1,0 +1,13 @@
+;CX70v56
+;Удалять Файлы Только-для-Чтения из Card-Explorer'а
+;Delete Read-Only Files from Card-Explore
+;(c) 1nvisible
+;Version: 
+;PatchID: 4488
+;Details: https://patches.kibab.com/patches/details.php5?id=4488
+/*
+
+*/
+08E4787: 0A EA
+;------------------------- end -------------------------
+

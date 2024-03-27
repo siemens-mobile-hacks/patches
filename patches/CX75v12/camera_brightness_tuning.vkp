@@ -1,0 +1,14 @@
+;CX75v12
+;Настройка яркости камеры
+;Camera brightness tuning
+;(c) SiNgle
+;(p) mana9er
+;Version: 1.0
+;PatchID: 650
+;Details: https://patches.kibab.com/patches/details.php5?id=650
+/*
+Настройка максимальной яркости камеры.
+*/
+0D0F8A1: 80 C0 ;можно выставить и больше до FF (can be changed up to FF)
+;------------------------- end -------------------------
+

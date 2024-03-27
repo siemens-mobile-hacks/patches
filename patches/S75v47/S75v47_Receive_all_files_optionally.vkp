@@ -1,0 +1,33 @@
+;S75v47
+;Прием всех файлов на диск Data или карту памяти по выбору 
+;Receive all files to Data or memory card as option
+;(c) 1nvisible, Evgr 
+;(r) Rst7  
+;Version: 1
+;PatchID: 10502
+;Details: https://patches.kibab.com/patches/details.php5?id=10502
+/*
+
+*/
+
+04D3F66: 10B50C1CFFF7D4FF002C 00B50220024AFE469047
+04D3F70: 06D0002804D0407A 00BDC046,0xA00733F1
+
+04D4080: 10B50C1C002806D0002C04D0FFF7E0FE 00B50120014AFE46904700BD,0xA00733F1
+
+;0670872: 30 34 
+;067087E: 30 34 
+0595CE4: 8022B349C9F006ED 00498847,0xA0073469
+051F686: 00 04 ;free space patch
+
+04D3BAC: 311C48F0FDFB0120 00498847,0xA007349D
+
+#pragma enable old_equal_ff
+0073498: 0xA0252774
+00734C0: 0xA066F618,0xA051C3AD
+00734D8: 0xA067085A
+00734E0: 0xA0670870,0xA067087C
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

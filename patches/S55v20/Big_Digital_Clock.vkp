@@ -1,0 +1,64 @@
+;S55v20
+;Большие цифровые часы
+;Big Digital Clock
+;(c) ACidmrp,RizaPN,Matr!x
+;(r) (i) avkiev
+;(p) KiRiK
+;Version: 5
+;PatchID: 5071
+;Details: https://patches.kibab.com/patches/details.php5?id=5071
+/*
+Часы обновляются один раз в 2-3 секунды 
+Новое в v5: Правильное отображение секунд
+Новое в v4: В режиме "Заставка":
+- Разделить всегда есть 
+- Секунды не показываются  
+- Циферблат аналоговых часов не показывается 
+- Обновление - раз в минуту  
+English:Time is updated once at 2-3 seconds
+New in v5: Seconds show correctly
+New in v4: In screensaver mode:
+- Separator always exist
+- Seconds aren't show
+- Dial of analog clock doesn't show
+- Update - once at 1 minute
+*/
+32C750: E6FC8C01 DA6140A4 ; Показывать часы при заблокированной клавиатуре
+                          ; Show Clock in keylock mode
+
+3332E4: 88908880 FA6140A4 ; Использовать часы как заставку
+                          ; Show Clock in screensaver mode
+;(кроме этого еще нужно выбрать "Заставка - Стиль - Аналог.часы")
+;(you should also choose "Screensaver - Style - Analog clock")
+
+8F9EE6: C0D4E01D 60EAE00D ; Idle Time Out = 60 sec. (c) RizaPN, (p) Giro
+
+129B52: C3 00 ; Не выводить циферблат аналоговых часов в заставке
+              ; Don't show dial of analog clock in screensaver
+
+
+21A420: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 44696769436C6F636B36202869292061
+21A430: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 766B6965762032392E30392E32303034
+21A440: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC1A01E03DDA9212BAD7500300F2F1
+21A450: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1A01F2F31C01F143E103E105E1078830
+21A460: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8820E00CBB29DA73403ED7400900F2FE
+21A470: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 6C39584160E406FE0A00BB2126FC0900
+21A480: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 9810BB1A9830DA73403E3D09F013BB0A
+21A490: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC2C00BB1E98E0E6FC3200BB1AE6FC
+21A4A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8C01DB00F6F10EFEE0A25B22F2F10CFE
+21A4B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8810F2FE0EFECB00BBF5BB0198E088C0
+21A4C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FD120006FE2701BB0898C006FC1600
+21A4D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF CB00E6FD360006FE3402DA7216C3CB00
+
+
+;21A474: 60E4 68E0 ; Разделитель не мигает         | Separator doesn't blink
+
+;21A48A: 3D 0D     ; Не показывать секунды         | Don't show seconds
+
+;21A48A: 3D09 CC00 ; Показывать секунды в заставке | Show seconds in screensaver
+ 
+;21A4C2: 12 YY     ; Ордината картинок часов       | Clock's ordinate
+
+;21A4D4: 36 YY     ; Ордината картинок секунд      | Second's ordinate
+;------------------------- end -------------------------
+

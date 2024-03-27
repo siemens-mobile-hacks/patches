@@ -1,0 +1,14 @@
+;S65v58
+;Disable More Nasty Debug
+;Disable More Nasty Debug
+;(c) benj9
+;Version: 
+;PatchID: 3424
+;Details: https://patches.kibab.com/patches/details.php5?id=3424
+/*
+Очередной патч из анти-дебажной темы 
+English: Patch disables some nasty debug. 
+*/
+0A3E1AC: FFB5 7047
+;------------------------- end -------------------------
+

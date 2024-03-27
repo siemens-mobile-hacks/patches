@@ -1,0 +1,14 @@
+;S75v52
+;Убрать сообщение "Сохранить в:" после съёмки
+;Disable message "Saved to:" after you take a foto
+;(c) SiNgle
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8308
+;Details: https://patches.kibab.com/patches/details.php5?id=8308
+/*
+
+*/
+0591FBC: CEF080EA C046C046
+;------------------------- end -------------------------
+

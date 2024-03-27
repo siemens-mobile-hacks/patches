@@ -1,0 +1,19 @@
+;S65v58
+;Фотографирование любой цифровой кнопкой
+;Take Foto With Any Digital Key
+;(c) SiNgle
+;(r) (i)KreN
+;(p) KiRiK
+;Version: 2.0
+;PatchID: 3440
+;Details: https://patches.kibab.com/patches/details.php5?id=3440
+/*
+Normal exit from camera mode
+Обычный выход из режима камеры
+*/
+097E0CC: 010050E3 FBA70EFA
+#pragma enable old_equal_ff
+0D280C0: 162801D0012870470048004768E197A0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

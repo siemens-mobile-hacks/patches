@@ -1,0 +1,26 @@
+;E71v42
+;Увеличение Аудио-Буфера v1.1
+;Audio-Buffer Increase v1.1
+;(c) 1nvisible
+;(p) $TA$
+;Version: 
+;PatchID: 6769
+;Details: https://patches.kibab.com/patches/details.php5?id=6769
+/*
+Disables sound lags when surfing file system
+Go to Dev.Menu->Configuration->Audio_Buf_Cfg
+Press 5 there to increase buffer size to 200 Kb
+Press 4 to decrease number of buffers
+Press 6 to increase number of buffers
+
+1nvisible:  
+на EL71 врубаешь плеер, а затем лазишь по файлам - и музыка тормозит
+увеличение буфера соответственно лечит
+эта фича предусмотрена самими бенками, тока там максимальный размер был недостаточен для избавления от лагов
+ну я его чутка увеличил
+*/
+0CD3DD0: 05 14
+0CD3DC8: 0410A0E3 120000EA
+0CD3DD8: 0610A0E3 070000EA
+;------------------------- end -------------------------
+

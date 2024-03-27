@@ -1,0 +1,15 @@
+;EL71v45
+;Открывать картинки сразу во весь экран
+;Open images fullscreen immediately
+;(c) Evgr
+;(r) Ganster41
+;Version: 
+;PatchID: 9567
+;Details: https://patches.kibab.com/patches/details.php5?id=9567
+/*
+
+*/
+073979C: 00 01
+07397AC: 00 01
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;SL75v47
+;Удаление софт кнопок с экрана
+;Remove Softkeys from Mainscreen
+;(c) BuG
+;(p) bertgrin
+;Version: 
+;PatchID: 10077
+;Details: https://patches.kibab.com/patches/details.php5?id=10077
+/*
+
+*/
+0A23814: 99B0051C0BA8102210A9 0049884711AF06A0C046
+
+#pragma enable old_equal_ff
+006AF00: 52656D536F66746B6579732C20427547
+006AF10: FFB5C5DF002801D00BB0F0BDFFBC10BC
+006AF20: 99B0051C0BA8102210A904342047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+;------------------------- end -------------------------
+

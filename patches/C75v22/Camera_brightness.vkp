@@ -1,0 +1,13 @@
+;C75v22
+;Настройка яркости камеры
+;Camera brightness
+;(c) SiNgle
+;Version: 
+;PatchID: 3913
+;Details: https://patches.kibab.com/patches/details.php5?id=3913
+/*
+
+*/
+0C60201: 80 C0 ; up to FFh except S65
+;------------------------- end -------------------------
+

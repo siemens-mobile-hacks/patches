@@ -1,0 +1,34 @@
+;S75v47
+;Запрет использования каналов (ELFPack 3.0 by Z.Vova & Ganster)
+;Channel Banner Patch (ELFPack 3.0 by Z.Vova & Ganster)
+;(c) Rst7/CBSIE
+;(p) Vitll
+;Version: 
+;PatchID: 10210
+;Details: https://patches.kibab.com/patches/details.php5?id=10210
+/*
+Патч перенесён на новое место для ELFPack 3.0 by Z.Vova & Ganster Это каторый для нового elf loadera,т.к. загрузчик стал больше по размеру перенесен на новое место, кто не в курсе ниже ссылка
+http://team-sc.ru/viewtopic.php?t=7252&postdays=0&postorder=asc&start=0
+(c) Rst7/CBSIE
+Details original Patch: http://patches.kibab.com/patches/details.php5?id=8468
+
+*/
+;PATCH_GLOBAL_SCAN,PATCH_J
+0x00AEA8DE: C14A 034A
+0x00AEA8E0: 914207D0C44A1268904203D80231C34A 104701B502488047262F01BD6CE007A0
+0x00AEA8F0: 89081154 98E007A0
+;PATCH_WORK_SCAN
+0x00AEAF1A: 262FD154 FFF7E2FC
+;CODE
+#pragma enable old_equal_ff
+0x0007E020: 70402DE90040A0E10150A0E1BB8100EF
+0x0007E030: 006090E5000056E30700000A042096E5
+0x0007E040: 0510A0E10400A0E132FF2FE1006096E5
+0x0007E050: 0050A0E1000056E3F7FFFF1A04009FE5
+0x0007E060: 0050C4E77080BDE8CE58E5A800402DE9
+0x0007E070: FF20A0E3FF2C82E3020051E10080BD08
+0x0007E080: F30F50E30080BDA8021081E22111A0E1
+0x0007E090: E2FFFFEB0080BDE80300A0E1DFFFFFEA
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

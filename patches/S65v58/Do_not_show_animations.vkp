@@ -1,0 +1,21 @@
+;S65v58
+;Не показывать анимацию при включении, выключении и поиске сети
+;Do not show startup, shutdown and netsearch animations
+;(c) sempai
+;(p) Виктор89
+;Version: 0.2
+;PatchID: 9895
+;Details: https://patches.kibab.com/patches/details.php5?id=9895
+/*
+Ускорение загрузки телефона, выключение за секунду
+*/
+;PATCH_DISABLE_TIMER_OF_NETSEARCH_ANIMATION
+16978BA: 7049 0121
+;PATCH_DISABLE_TIMER_OF_STARTUP_ANIMATION1
+1697E62: 5149 0121
+;PATCH_DISABLE_TIMER_OF_STARTUP_ANIMATION2_1,PATCH_DISABLE_TIMER_OF_STARTUP_ANIMATION2_2
+1697EAE: FF214631 0121C046
+;PATCH_DISABLE_TIMER_OF_SHUTDOWN_ANIMATION
+169812A: 011C 0121
+;------------------------- end -------------------------
+

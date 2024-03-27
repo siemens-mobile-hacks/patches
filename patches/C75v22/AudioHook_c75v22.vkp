@@ -1,0 +1,31 @@
+;C75v22
+;AudioHook
+;AudioHook
+;(c) ILYA_ZX
+;Version: 3.0
+;PatchID: 6921
+;Details: https://patches.kibab.com/patches/details.php5?id=6921
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=c75v22&f=AudioHook_c75v22.zip
+
+/*
+Нужен для воспроизведения на телефоне мп3 с помощья эльфа.
+Это генерировалось на чистый фф,если будут ошибки в теле патча,а не в функциях,то генерируем сами + добовляем функции библы из этого патча,потому что функция ChangeVolume не генерируется автоматически,а тут она првильная. 
+приложил прогу для генерации.
+
+*/
+;AudioHook
+008EF844: 3880BDE8 0x17E6BA,0xEA
+00EE9334: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 18309FE5003093E5000053E30000001A
+00EE9344: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3880BDE80030A0E3503084E5FBFFFFEA
+00EE9354: FFFFFFFF 0xA874AFD0
+
+; Function Library
+
++10E4000 ;C75,ME75
+0264: FFFFFFFF 0xA02F73A8   ; 99: ;__arm int PlayMelodyInMem(char Unk_0x11,void *MelAddr,int MelSize,int unk2_0xFFFF,int Unk3_0,int Unk4_0)
+0268: FFFFFFFF 0xA07D6060   ; 9A: ;__arm int ChangeVolume(unsigned char Volume)
+026C: FFFFFFFF 0xA874B040   ; 9B: Audio params addr
++0
+
+;------------------------- end -------------------------
+

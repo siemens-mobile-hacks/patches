@@ -1,0 +1,136 @@
+;X65v100
+;Меню "Пуск" на главном экране
+;StartMenu on MainScreen
+;(c) KreN
+;(r) 1nvisible, benj9
+;Version: 2.1
+;PatchID: 3088
+;Details: https://patches.kibab.com/patches/details.php5?id=3088
+/*
+Изменения:
+- добавлена возможность выбора действия при нажатии джойстика, длительного нажатия джойстика, горячей клавиши (в моём случае ELSE_STOP_WATCH), и красной кнопки
+- исправлен баг с флэш смс - при его наличии и нажатии красной кнопки, сначала закрывается флэш смс а потом уже выбранное действие.
+
+
+*/
+; FL: f36, f71, f75, f77, f100, f103, f116, f117, f118, f119, f121, f122
+
++0FC0000
+#pragma enable old_equal_ff
+C000: 00B500F07EF807D0B078002804D0F4F7
+C010: 43FB3868002800D100BD326900207179
+C020: F4F77EF801277279013230208019317A
+C030: B57973781424BB4200D1083433191C1D
+C040: 00F096F8082FE7D052191A300137F0E7
+C050: FCB5012818D1F4F76FF9002814D100F0
+C060: 50F810D0B1780222A85EF2783271F070
+C070: 002828D02E2826D0002904D071782528
+C080: 0BD026280ED08942FCBC02F0D2EF0D21
+C090: 002800D10131081C1FE0082900D10939
+C0A0: 013103E0002900D10931013971702436
+C0B0: 301D31680FA20132F4F7D6F80020F4F7
+C0C0: 2FF907B0B0BD292AE1D03D2ADFD0012A
+C0D0: D9D1F4F7B1F8D6D10C2000F017F8D2D0
+C0E0: ECE7FFB500F00DF802D00B2000F00EF8
+C0F0: FFBDC046FFB500F004F801D00020B070
+C100: FFBDBFB55348F4F77BFDBFBD00B5B278
+C110: 315C01238F44C046894202E00023B370
+C120: 002E00BD5340FAE7002AF8D0002AF8D0
+C130: 00F001F8F4E700B57178002915D00139
+C140: 8801FF300530801902789744C04606E0
+C150: 03E00830F4F780F807E0406804E00901
+C160: 1BA04018F4F71CF980470020B07000BD
+C170: FFB590B00CA80095F379F4F715F910AB
+C180: 186800F016F8C022707A0090B07A0190
+C190: 0CA902A8F4F70CF91399149A02A8F4F7
+C1A0: 0BF902A8F4F710F902A8F4F711F910B0
+C1B0: FFBD00210231425A002AFBD102394908
+C1C0: 01807047
+
+C1D0: "ELSE_ALARMCLOCK",00\
+"FLSH_MYOWNSTUFF",00\
+"JAVA_GAMES_MENU",00\
+"JAVA_APPLI_MENU",00\
+"FLSH_FLEXSOUNDS",00\
+"MESG_NEWEMS_VFO",00\
+"ELSE_CALCULATOR",00\
+"ELSE_REMOTESYNC",00
+
+C250: E4D3C2B1,0x0100cd0b,0xA0FCC001,00000000,"\
+{patch=MenuPusk id=0100cd0b ver=2.1 cp=KreN}","\
+{tp mp}","\
+{0 o action standart=0 adress=2 midlet=4}","\
+{4 a adress}","\
+{8 sf midlet mask=*.jar ml=55}","\
+{endtp}","\
+{c key nothing=0 open=6 close=4 `open&close`=12 `open&select`=16 select=20}","\
+{sm `Pic&FontsSetup`}","\
+{5 sl `Y position` range=0..70 v=45}","\
+{6 sl HeightPoint  range=12..18 v=14}","\
+{7 sl WidthPoint v=67}","\
+{8 b `space left` range=0..30 v=26}","\
+{16 i `pic background` v=1412}","\
+{20 h FontColor ml=4 v=00000064}","\
+{24 h BackColor ml=4 v=00000000}","\
+{28 h SFontColor ml=4 v=FFFFFF64}","\
+{32 h SBackColor ml=4 v=0000FF64}","\
+{9 b FontSize v=7}","\
+{10 o FontType normal=0 accented=8}","\
+{endsm}","\
+\
+{sm PointsSetup}\
+{sm `1st item`}","\
+{260 usetp mp}","\
+{50 u string ml=11 v=`Будильник`}","\
+{endsm}","\
+\
+{sm `2nd item`}","\
+{324 usetp mp}","\
+{76 u string ml=11 v=`Мои Файлы`}","\
+{endsm}","\
+\
+{sm `3rd item`}","\
+{388 usetp mp}","\
+{102 u string ml=11 v=`Игрушки`}","\
+{endsm}","\
+\
+{sm `4th item`}","\
+{452 usetp mp}","\
+{128 u string ml=11 v=`Программы`}","\
+{endsm}","\
+\
+{sm `5th item`}","\
+{516 usetp mp}","\
+{154 u string ml=11 v=`Мелодии`}","\
+{endsm}","\
+\
+{sm `6th item`}","\
+{580 usetp mp}","\
+{180 u string ml=11 v=`Новое SMS`}","\
+{endsm}","\
+\
+{sm `7th item`}","\
+{644 usetp mp}","\
+{206 u string ml=11 v=`Калькулятор`}","\
+{endsm}","\
+\
+{sm `8th item`}","\
+{708 usetp mp}","\
+{232 u string ml=11 v=`Мастер`}","\
+{endsm}","\
+{endsm}\
+\
+{sm KeySetup}","\
+{11 o HotKey c=key v=16}","\
+{12 o RedButton c=key v=4}","\
+{13 o JoyHoldPress c=key v=12}","\
+{14 o JoyPress c=key v=20}","\
+{endsm}","\
+{36 ms timeclosemenu v=1100}",00
+#pragma disable old_equal_ff
+
+; If you have x75 and patch shutdown phone, uncomment this line:
+; C0C4: B0 F8
++0
+;------------------------- end -------------------------
+

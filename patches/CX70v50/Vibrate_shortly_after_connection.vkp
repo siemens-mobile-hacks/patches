@@ -1,0 +1,23 @@
+;CX70v50
+;Вибра в момент начала разговора
+;Vibrate shortly after connection
+;(c) SiNgle
+;(p)  AsteriX
+;Version: 1.2
+;PatchID: 76
+;Details: https://patches.kibab.com/patches/details.php5?id=76
+/*
+Режим включается одновременно с галкой в Меню-2-5-5-4 или 2-5-4-3 (Авт.Индикац.)  >>> При входящих не вибрирует <<<
+*/
+1716DDE: 18F08AE90028 002821F00EEC
+#pragma enable old_equal_ff
+1738600: 00402DE9FF3F2DE90FE0A0E144F09FE5
+1738610: 000050E30900001A0100A0E30FE0A0E1
+1738620: 34F09FE5020050E30400001A2F00A0E3
+1738630: 0210A0E30120A0E30FE0A0E11CF09FE5
+1738640: 0FE0A0E118F09FE5000050E3FF3FBDE8
+1738650: 0040BDE80CF09FE5A3BEB9A06B8B25A1
+1738660: 8C9695A0CFA6B7A0E56D71A1FF
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

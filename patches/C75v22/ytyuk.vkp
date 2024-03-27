@@ -1,0 +1,15 @@
+;C75v22
+;Сжатие jpeg с максимальным кач-вом (100% вместо 75%)
+;Compression jpeg with the maximum quality (100% instead of 75%)
+;(c) SiNgle
+;(r) AsteriX
+;Version: 
+;PatchID: 1142
+;Details: https://patches.kibab.com/patches/details.php5?id=1142
+/*
+
+*/
+03D1770: 4B 64
+
+;------------------------- end -------------------------
+

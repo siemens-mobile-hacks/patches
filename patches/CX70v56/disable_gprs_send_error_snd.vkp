@@ -1,0 +1,13 @@
+;CX70v56
+;Убрать звук при ошибке передачи GPRS в Java
+;Disable GPRS send data error in Java
+;(c) vGamBIT
+;Version: 
+;PatchID: 8783
+;Details: https://patches.kibab.com/patches/details.php5?id=8783
+/*
+Убирает звук при ошибке передачи GPRS в Java. Часто бывает при плохой связи в Opera Mini и Bombus
+*/
+009599E4: E95200EB 0410A0E1
+;------------------------- end -------------------------
+

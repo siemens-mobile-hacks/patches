@@ -1,0 +1,19 @@
+;C55v24
+;Мидлет в качестве скринсейвера
+;Application as screensaver
+;(c) alex_itd
+;Version: 
+;PatchID: 2523
+;Details: https://patches.kibab.com/patches/details.php5?id=2523
+/*
+Использование мидлета в качестве скринсейвера
+При таймауте запускается a:\java\s\x.jar
+*/
+0051D28A: DAD972D0 DA8B8064
+
+000B6480: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FCB024E6FD2D02E01EDAAD9049DAD2
+000B6490: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA27F0D4F0E5F0FE70FD2D09DC4EA92D
+000B64A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C02FE6FCEFFF60FCF01FDC4EB92DDB00
+000B64B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 613A5C6A6176615C735C782E6A617200
+;------------------------- end -------------------------
+

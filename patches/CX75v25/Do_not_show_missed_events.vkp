@@ -1,0 +1,16 @@
+;CX75v25
+;Не показывать пропущенные события
+;Do not show missed events
+;(c) 1nvisible
+;(r) benj9
+;(p) Виктор89
+;Version: 
+;PatchID: 10391
+;Details: https://patches.kibab.com/patches/details.php5?id=10391
+/*
+
+*/
+02A92B4: B7F8 0028 
+02A92DA: B7F8 0028
+;------------------------- end -------------------------
+

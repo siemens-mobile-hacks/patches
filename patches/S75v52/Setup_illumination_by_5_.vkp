@@ -1,0 +1,15 @@
+;S75v52
+;Настройка подсветки шагом в 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8274
+;Details: https://patches.kibab.com/patches/details.php5?id=8274
+/*
+
+*/
+03357F4: 0A 05
+03357FA: 0A 05
+;------------------------- end -------------------------
+

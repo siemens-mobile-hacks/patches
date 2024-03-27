@@ -1,0 +1,13 @@
+;C65v56
+;Отключить подсветку кнопок
+;Disable keypad light
+;(c) SiNgle
+;Version: 
+;PatchID: 3761
+;Details: https://patches.kibab.com/patches/details.php5?id=3761
+/*
+
+*/
+0B7796B: D5 24
+;------------------------- end -------------------------
+

@@ -1,0 +1,23 @@
+;C65v50
+;Красивый вид. Убрать иконки с главного экрана
+;Bellevue. Disable icons on mainscreen
+;(c) benj9
+;(r) KiRiK
+;(p) TiCK
+;Version: 
+;PatchID: 569
+;Details: https://patches.kibab.com/patches/details.php5?id=569
+/*
+
+*/
+17070B8: EDBAC8A0 01206EA1
+#pragma enable old_equal_ff
+16E2000: FFB5084880472027C74001200740012F
+16E2010: 03D105488047002803D1FFBCFFB4034F
+16E2020: B847FFBD69CC8CA0CF3AC9A0EDBAC8A0
+#pragma disable old_equal_ff
+16E2006: 20 0n0100101 ; profile key | ключ профилей
+;16E2012: 0548 06E0 ; 0548: disengaged icons only when keylock is off. 06E0: disengaged icons always
+; 0548: убрать иконки только при разблокированной клаве, 06E0: всегда
+;------------------------- end -------------------------
+

@@ -1,0 +1,23 @@
+;SL45iv56
+;Screensaver Binary Clock
+;Screensaver Binary Clock
+;(c) VVS
+;Version: 0.3
+;PatchID: 5917
+;Details: https://patches.kibab.com/patches/details.php5?id=5917
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=Binary_Clock__v0_3.zip
+
+/*
+Клавиши:
+Короткий "+" - Показать/убрать нормальное время;
+Длинный "#" - Выход;
+
+
+English:
+Keys:
+Short "+" - show/hide sane time;
+Long "#" - exit;
+*/
+; see in attach
+;------------------------- end -------------------------
+

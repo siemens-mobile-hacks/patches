@@ -1,0 +1,31 @@
+;CX70v56
+;МиниGPS с логгингом БС
+;MiniGPS with GSM Data Logger
+;(c) KreN, ACiD[mrp], arsh0r
+;(r) BuG, benj9, bennie, SiNgle
+;(p) SiamiX
+;Version: 1.02
+;PatchID: 4627
+;Details: https://patches.kibab.com/patches/details.php5?id=4627
+/*
++ добавили настройку писать лог по дням в отдельный файл (при этом дата не пишется, только время)
++ lastnet.tmp теперь не нужен, вместо него используется рама
++ проверка на RamNetOnline и RamIsShutdown
++ Теперь поддерживает unicode, т.е. можно использовать кириллицу
++ Регистрация сети и смены БС будут фиксироваться в файле указанном в мастер мидлете
+
+- Опция "DontCreateNewTmo" позволяет не создавать новые файлы,а лишь только использовать существующие, если их нету то 
+выводится имя оператора.
+Например можно создать только два файла - институт и дом, в остальных случаях будет выводится оператор,
+- Можно указать стандартную команду и стандартный текст, который будет использоваться при создании новых файлов. Первая 
+переменная - CID, вторая - LAC.
+- С помощью "VibraDuration" можно указать сколько раз будет вибрировать тел при использовании команды "v"
+
+English:
+- Check "DontCreateNewTmo" to disable creation of new tmo files, only existing files will be used, but if there is no file then provider name will be shown.
+Example: you can create only two files - at work and at home, in other cases provider name will be shown.
+- You can also specify default action and default text, which will be used for the new files creation. First variable - CID, the other one - LAC.
+*/
+173313C: 0xA0BA49A3 0xA0FC7601
+;------------------------- end -------------------------
+

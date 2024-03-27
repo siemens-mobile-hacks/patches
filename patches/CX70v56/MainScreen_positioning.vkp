@@ -1,0 +1,53 @@
+;CX70v56
+;Позиционирование главного экрана
+;MainScreen positioning
+;(c) SiNgle, BuG
+;(r) KiRiK, arsh0r
+;(p) Smelter
+;Version: 
+;PatchID: 665
+;Details: https://patches.kibab.com/patches/details.php5?id=665
+/*
+Позиционирование главного экрана v2. Например изменяется место расположение батарии и т.д.
+*/
+;Charge Indicator (Switched-Off Mode)
+17155E8: 10 5E ; background end Y для С65 заменить на 4A
+17155EE: 02 50 ; background start Y для С65 заменить на 3C
+17155F0: 63 33 ; background start X
+17155F2: 80 50 ; background end X для С65 заменить на 49
+17155F7: F044FB 280028 ; no background
+1715600: 02 50 ; Y 
+1715602: 63 33 ; X
+
+;Net
+17156A0: 10 5E ; background end Y 
+17156A4: 02 01 ; background start Y
+17156A6: 21 1F ; background end X 
+17156A8: 03 01 ; background start X
+17156AD: F0E9FA 280028 ; no background
+17156B6: 02 01 ; Y
+17156B8: 03 01 ; X
+
+;Iconbar
+17159B6: 10 0F ; background end Y 
+17159BA: 02 01 ; background start Y
+17159BC: 23 37 ; background start X 
+17159BE: 61 75 ; background end X  
+17159C5: F05DF9 280028 ; no background
+17159F0: 21 35 ; X 
+1715A0A: 02 01 ; Y
+
+;Battery
+1715AA4: 10 1B ; background end Y
+1715AA8: 02 0D ; background start Y
+1715AAA: 80 1E ; background end X 
+1715AAC: 63 01 ; background start X
+1715AB1: F0E7F8 280028 ; no background
+1715ABA: 02 0D ; Y
+1715ABC: 63 01 ; X
+1736038: 08 12 ; Y - Provider name
+1736048: 1A 24 ; Y - Sub provider name
+171C8DA: A1 A0 ; Y - Time & Date 
+
+;------------------------- end -------------------------
+

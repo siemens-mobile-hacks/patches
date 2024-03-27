@@ -1,0 +1,16 @@
+;C72v22
+;Автоматический показ флеш сообщений на весь экран
+;Auto whole screen view of flash messages
+;(c) Evgr
+;(r) VoVkA
+;Version: 0.2
+;PatchID: 10609
+;Details: https://patches.kibab.com/patches/details.php5?id=10609
+/*
+
+*/
+
+08DE8AA: FFF7ADF8 FEF732FB ; с выключенным логотипом
+08DE88A: FFF7BDF8 FEF742FB ; с включенным логотипом
+;------------------------- end -------------------------
+

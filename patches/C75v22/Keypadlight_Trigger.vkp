@@ -1,0 +1,45 @@
+;C75v22
+;Переключатель режима подсветки клавиатуры
+;Keypadlight Trigger
+;(c) benj9
+;(r) empeka
+;Version: 2.2
+;PatchID: 2420
+;Details: https://patches.kibab.com/patches/details.php5?id=2420
+/*
+Меняет режим подсветки клавы в соответствии с выбранным профилем. Пользователь может определять профили и задержку
+English:Changes keypadlight mode according to chosen profile. User can setup profiles and delay
+*/
+;Entrypoint. Must be aligned to word (4 bytes). If no - add 2
+0803FCC: 2A1C01210120C7F742E9 00488047,0xA10D3401,0000 ; C75v22
+
++110000
+#pragma enable old_equal_ff
+0FC3400: 231C2A1C0CB50F48FDF7FAFB01D11CBC
+0FC3410: 0AE0FCF7FDFD36181CBC002A00D07278
+0FC3420: 317AFF2900D08B0101200121FCF708FE
+0FC3430: 04342047
+
+0FC3440: 0xB1C2D3E4,0x0000EA01,0000000000000000,\
+"{patch=`Keypad Light` ver=2.2 cp=benj9 id=EA01}\
+{sm Brightness}\
+{1 sl `Profile 1` r=0..100}\
+{2 sl `Profile 2` r=0..100}\
+{3 sl `Profile 3` r=0..100}\
+{4 sl `Profile 4` r=0..100}\
+{5 sl `Profile 5` r=0..100}\
+{6 sl `Profile 6` r=0..100}\
+{7 sl `Profile 7` r=0..100}","{endsm}\
+{sm Delay}\
+{8 sl `Profile 1` r=0..255}\
+{9 sl `Profile 2` r=0..255}\
+{10 sl `Profile 3` r=0..255}\
+{11 sl `Profile 4` r=0..255}\
+{12 sl `Profile 5` r=0..255}\
+{13 sl `Profile 6` r=0..255}\
+{14 sl `Profile 7` r=0..255}\
+{endsm}",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

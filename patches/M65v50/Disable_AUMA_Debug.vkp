@@ -1,0 +1,15 @@
+;M65v50
+;Отключить AUMA отладчик
+;Disable AUMA Debug
+;(c) benj9
+;Version: 
+;PatchID: 3354
+;Details: https://patches.kibab.com/patches/details.php5?id=3354
+/*
+Ускоряет телефон, отсекая ненужный код
+English:Speed up phone by stripping needless code
+*/
+0B1E50C: 10B5 7047
+0B1E580: 0FB4 7047
+;------------------------- end -------------------------
+

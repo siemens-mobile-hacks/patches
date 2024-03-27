@@ -1,0 +1,23 @@
+;SL45iv56
+;Убрать писк диктафона при разговоре
+;Remove Dictaphone beep while talk
+;(c) abomin
+;Version: 
+;PatchID: 1983
+;Details: https://patches.kibab.com/patches/details.php5?id=1983
+/*
+Патч не даёт диктафону пищать в ухо (т.е. при разговоре по телефону). 
+В остальных режимах диктафон работает как обычно. 
+Патч сделан на основе "DDB. Disable Dictaphone Beep" от RizaPN.
+
+
+Release: 13 ноября 2004 
+*/
+35113A: DAC3B600 DADAEEFF 
+35140A: DAC3B600 DADAEEFF 
+351990: DAC3B600 DADAEEFF 
+351CC6: DAC3B600 DADAEEFF 
+3C2838: DAC31400 DADAEEFF 
+3AFFEE: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88C0DACC4CC698C048403D02FAC3B600DB00 
+;------------------------- end -------------------------
+

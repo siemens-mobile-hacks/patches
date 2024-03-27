@@ -1,0 +1,14 @@
+;A52v9
+;Отключить сообщение "Блокировка клавиатуры включена"
+;Disable messages "Keypad locked"
+;(c) avkiev
+;(p) Matr!x
+;Version: 
+;PatchID: 4359
+;Details: https://patches.kibab.com/patches/details.php5?id=4359
+/*
+
+*/
+1E043A: DA9E 0D01
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;SL75v52
+;Отключить загрузку FlexMenu при включении телефона
+;Disable flexmenu load on startup
+;(c) Miha_r
+;(p) ad
+;Version: 
+;PatchID: 8219
+;Details: https://patches.kibab.com/patches/details.php5?id=8219
+/*
+Он отключает загрузку флекс меню и двуджавость сразу работает
+*/
+A011E8: 04 00
+;------------------------- end -------------------------
+

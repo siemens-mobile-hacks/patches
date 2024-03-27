@@ -1,0 +1,23 @@
+;CX75v25
+;Говорящий телефон
+;Talking Phone
+;(c) avkiev
+;(p) Geka
+;Version: 3
+;PatchID: 5454
+;Details: https://patches.kibab.com/patches/details.php5?id=5454
+/*
+Пока что "заикается" - многократно повторяет последнее сказанное слово
+*/
+;1. Shortcut
+4B1AD0: "ELSE_COUNT_DOWN",00,256232A0 "ELSE_COUNT_DOWN",00,0xA0FC3001
+;4B1EAC: "ELSE_REMOTESYNC",00,256232A0 "ELSE_REMOTESYNC",00,0xA0FC3001 
+;4B1E44: "ELSE_PUSHTOTALK",00,256232A0 "ELSE_PUSHTOTALK",00,0xA0FC3001 
+
+
+;2. Alarm
+;Говорить время вместо мелодии будильника (не работает если телефон выключен)
+;Spell time instead of Alarm (doesn't work if phone is off)
+58A968: 0F209cF050E92080 00488047,0xA0FC30A7   ; cx75sw25  00488047A730FCA0
+;------------------------- end -------------------------
+

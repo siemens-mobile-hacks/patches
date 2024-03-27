@@ -1,0 +1,16 @@
+;CX75v25
+;Отключение логгинга событий
+;Disable logging
+;(c) SiNgle
+;(p) TAPAKAH
+;Version: 
+;PatchID: 10063
+;Details: https://patches.kibab.com/patches/details.php5?id=10063
+/*
+RUS: Отключение логгинга событий, происходящих в телефоне. 100% работает, но эффекта нет...
+
+ENG: Switching-off logging the events occuring in phone. 100 % work, but the effect is not present...
+*/
+2A0536: 041C 70BD
+;------------------------- end -------------------------
+

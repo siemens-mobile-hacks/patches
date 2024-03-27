@@ -1,0 +1,14 @@
+;M55v10
+;Время показа сообщения "Время разговора"
+;Time to show "Talk time"
+;(c) klaster
+;(p) Nikolas535
+;Version: 
+;PatchID: 9610
+;Details: https://patches.kibab.com/patches/details.php5?id=9610
+/*
+B8h = 3000 мс, 64h = 100 мс (меньше никак)
+*/
+385934: B80B E803 ; время в мс, E803=1000 мс; 6400=100 мс
+;------------------------- end -------------------------
+

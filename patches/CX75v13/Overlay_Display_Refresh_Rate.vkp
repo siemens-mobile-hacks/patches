@@ -1,0 +1,14 @@
+;CX75v13
+;Изменить частоту обновления OverLay
+;Change DevMenu Overlay Display Refresh Rate
+;(c) benj9
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 7160
+;Details: https://patches.kibab.com/patches/details.php5?id=7160
+/*
+
+*/
+06173FA: 36 6C ; internal timer ~ miliseconds * 216.7 / 1000
+;------------------------- end -------------------------
+

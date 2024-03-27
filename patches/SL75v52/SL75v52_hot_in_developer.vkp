@@ -1,0 +1,21 @@
+;SL75v52
+;Открывать пункт по нажатию "горячей" клавиши в меню Разработчика
+;Open item by hot key in Developer menu
+;(c) Evgr
+;Version: 
+;PatchID: 10666
+;Details: https://patches.kibab.com/patches/details.php5?id=10666
+/*
+
+*/
+; SWI 0x1E6
+
+02873F8: 311C201C68F156EE 00488047,0xA13D2C71
+
+#pragma enable old_equal_ff
+13D2C70: FEB5311C201CC7DFE601FEBC01BC4438
+13D2C80: 0047
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

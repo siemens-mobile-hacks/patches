@@ -1,0 +1,17 @@
+;EL71v45
+;Менять зум в фото-видео-камере боковыми клавишами изменения громкости
+;Enable Zoom in Camera by Volume Up and Volume Down Buttons
+;(c) Evgr
+;Version: 
+;PatchID: 8651
+;Details: https://patches.kibab.com/patches/details.php5?id=8651
+/*
+
+*/
+0715370: F210D4E1 22AB33EA
+#pragma enable old_equal_ff
+1400000: F210D4E10F0051E32610A003D854CC0A
+1400010: 0E0051E32510A003D554CCEA
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

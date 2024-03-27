@@ -1,0 +1,16 @@
+;SL75v47
+;Моргать клавиатурой при коротком нажатии красной кнопки при выключенном телефоне
+;Flash KPL When Pressing Red While Phone Off
+;(c) benj9
+;(r) BuG
+;(p) bertgrin
+;Version: 
+;PatchID: 10571
+;Details: https://patches.kibab.com/patches/details.php5?id=10571
+/*
+
+*/
+01A6DBC: 0500000A020000EF0030A0E30220A0E30000A0E314109FE5F89F00EB 0100A0E30110A0E36420A0E30030A0E3963D00EB0000A0E10000A0E1
+01A6DE8: FA F3
+;------------------------- end -------------------------
+

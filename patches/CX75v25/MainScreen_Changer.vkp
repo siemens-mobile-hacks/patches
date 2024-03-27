@@ -1,0 +1,110 @@
+;CX75v25
+;MainScreen Changer
+;MainScreen Changer
+;(c) BuG
+;(r) KreN, SiNgle, KiRiK, [crazy]misha
+;(p) Geka
+;Version: 1.1
+;PatchID: 5483
+;Details: https://patches.kibab.com/patches/details.php5?id=5483
+/*
+
+*/
+; net icons
+2A8DB0: 39FB C046 ; clear old canvas call
+2A8DB6: 321C0221032000F045FB C046,00488047,0xA0FCA001
+ 
+; iconbar
+2A9176: 56F9 C046 ; clear old canvas call
+2A919A: 00040014039021300704 C046,00488047,0xA0FCA03B
+2A91B8: 825B0221381C00F044F9 00498847,0xA0FCA09D,C046
+ 
+; accu icons
+2A9262: E0F8 C046 ; clear old canvas call
+2A9280: 221C0221632000F0E0F8 00488047,0xA0FCA01B,C046
+ 
+; date and time with removed softkeys
+2CCB7E: 3869A1220106090E201C C046,004DA847,0xA0FCA0BF
+ 
+; standard fonts, see line 0FCA100!
+2CCE2C: D0F10EEf664C022803D1 00488047,0xA0FCA0DD,C046
+ 
+; fonts with provider logo
+2CCE68: 0220686157482E613830 C046,00488047,0xA0FCA113
+ 
+#pragma enable old_equal_ff
+ 
+0FCA000: 321CFFB50320022100F09DF802D0F036
+0FCA010: 707DB17D00F09CF80BE0221CFFB56320
+0FCA020: 022100F090F802D0F036F07D317E00F0
+0FCA030: 8FF8FFBC01BC0430004700AB188B0E23
+0FCA040: 584300AB10B5EDB420240222422100F0
+0FCA050: 7AF806D0F036747EB27EF17E337F002B
+0FCA060: 0DD102B482B0012001900D2080180090
+0FCA070: 6318211C1098F6F757F802B002BCEDBC
+0FCA080: 091A188B0130F5F7CBFF000400140590
+0FCA090: 001910BC070420BC04352847825B40B5
+0FCA0A0: 022100F050F801D0F036B17E40BC381C
+0FCA0B0: 80B4F6F731F880BC01BC043000473869
+0FCA0C0: 40B5A12200F03FF801D0F036327D40BC
+0FCA0D0: 0106090E201C20BC04352847EEB5F6F7
+0FCA0E0: 1FFB002F0BD03A4C00F02DF807D0301D
+0FCA0F0: 0768002F01D100F047F80436341CEEBC
+0FCA100: 3448804702BC0431022800D10847,08,31 ; use 0A if standard fonts entry is word-aligned, otherwise 08
+0FCA110: 084702206861FEB5F6F702FB002F0BD0
+0FCA120: 00F011F82A4C07D0301D0768002F01D1
+0FCA130: 00F02AF80436341C201CFEBC2E613830
+0FCA140: 02BC04310847BFB52648F6F759FDBFBD
+0FCA150: 07B5101CF5F7DCFF041C101CF5F7D4FF
+0FCA160: 0138013C06BC84B0367F002E07D10B19
+0FCA170: 80180090012001901498F5F7D5FF02B0
+0FCA180: 07BCF5F7C9FF00BD00B5114D01272968
+0FCA190: 01600435043001371D2FF8D1301C7430
+0FCA1A0: 70625030F065301C7C30094DA96D0A68
+0FCA1B0: 82644A68C264296A01278A680260CA68
+0FCA1C0: 42601030103101370A2FF6D100BD0000
+0FCA1D0: 0xa04AB478,0xA0AEE109 ;A5CDAEA0
+ 
+0FCA1E0: 0xB1C2D3E4,0x0000BB02,00000000,00000000,\
+"{patch=`Mainscreen Changer` ver=1.1 cp=BuG id=BB02}","\
+{offset +0x70}","\
+{sm=Texts}","\
+{sm=standard}","\
+Y positions:","\
+{0x4 i `provider name` r=0..200 v=8}","\
+{0x14 i `sub provider name` r=0..200 v=0x1A}","\
+{0x24 i `CB/flash messages` r=0..200 v=0x58}","\
+{0x34 i `stopwatch/timer` r=0..200 v=0x72}","\
+{0x44 i `date/time` r=0..200 v=0x81}","\
+font sizes: (0-10)","\
+{0x8 i `provider name` r=0..10 v=3}","\
+{0x18 i `sub provider name` r=0..10 v=3}","\
+{0x28 i `CB/flash messages` r=0..10 v=7}","\
+{0x38 i `v_stopwatch/timer` r=0..10 v=7}","\
+{0x48 i `date/time` r=0..10 v=8}","\
+{endsm}","\
+{sm `with provider logo`}","\
+Y positions:","\
+{0x64 i `sub provider name/CB/flash msg` r=0..200 v=0x58}","\
+{0x74 i `stopwatch/timer` r=0..200 v=0x72}","\
+{0x84 i `date/time` r=0..200 v=0x81}","\
+font sizes: (0-10)","\
+{0x68 i `sub provider name/CB/flash msg` r=0..10 v=7}","\
+{0x78 i `stopwatch/timer` r=0..10 v=7}","\
+{0x88 i `date/time` r=0..10 v=8}","\
+{endsm}","\
+{0x94 b `date/time no softkeys` r=0..200 v=0xA1}","\
+{endsm}","\
+{sm=Icons}","\
+{0x95 xy `net icons` x=3 y=2}","\
+{0x97 xy `battery icons` x=0x63 y=2}","\
+{0x99 xy `icon bar` x=0x21 y=2}","\
+{0x9B b `icon bar width` v=0x42}","\
+{0x9C cb `disable canvases` v=0}","\
+{endsm}","\
+"00
+ 
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

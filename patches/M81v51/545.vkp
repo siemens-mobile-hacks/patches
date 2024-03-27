@@ -1,0 +1,14 @@
+;M81v51
+;Моментальный запуск скринсейвера после блокировки клавиатуры
+;ScreenSaver after KeyBoard Lock
+;(c) funMarkus
+;(p) dimonp25
+;Version: 2
+;PatchID: 9146
+;Details: https://patches.kibab.com/patches/details.php5?id=9146
+/*
+Теперь запускается действительно скринсейвер, а не просмотр заставки
+*/
+034ca00: aaf08aef b7f7b7fe
+;------------------------- end -------------------------
+

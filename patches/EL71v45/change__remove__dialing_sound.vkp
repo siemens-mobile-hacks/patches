@@ -1,0 +1,15 @@
+;EL71v45
+;Изменение (удаление) звука дозвона
+;Change (remove) dialing sound
+;(c) AlexSid
+;(p) Benlux
+;Version: 
+;PatchID: 7178
+;Details: https://patches.kibab.com/patches/details.php5?id=7178
+/*
+
+*/
+021699C: 3400F6FF0200FAFF00000000FFFF0000DC05BA04BC0264003805BC026400C605BC026400BA04BC026400FFFF0000DC05F8FF00000000 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+;------------------------- end -------------------------
+

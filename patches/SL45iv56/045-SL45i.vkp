@@ -1,0 +1,17 @@
+;SL45iv56
+;Убрать SIM-меню и абонентскую группу
+;Hide SIM-menu and User Group
+;(c) Yurgen
+;Version: 
+;PatchID: 1608
+;Details: https://patches.kibab.com/patches/details.php5?id=1608
+/*
+Есть возможность выбрать на горячих кнопках.
+
+Патч №045 с http://patch.oslik.ru/SL45_RU
+*/
+18F604: 4505 0402 
+18F616: 4505 0402 
+18D5D4: FF01 0402
+;------------------------- end -------------------------
+

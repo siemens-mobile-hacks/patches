@@ -1,0 +1,36 @@
+;SL45iv56
+;Archer
+;Archer
+;(c) sc0ty
+;Version: 1.07
+;PatchID: 5905
+;Details: https://patches.kibab.com/patches/details.php5?id=5905
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=Archer__v1_07.zip
+
+/*
+English:
+INSTRUCTION 
+
+* check info.jpg 
+
+Shoot down all of the white balloons (6) (using left or right SoftKey).
+For (6) you collect 2 pts, for (7) you lose 5 pts, and for (8) you
+collect 20 pts. and extra life. If you shoot down more than one balloon
+(6) or (8) using one arrow, score for every next baloons will be doubled
+
+Indicators:
+   (1) - lives 
+   (2) - points 
+   (3) - remaining time 
+   (4) - stage number 
+   (5) - the strength and direction of wind 
+   (9) - remaining arrows 
+
+Good luck!
+
+
+Relased: May 15, 2005
+*/
+;See in attach
+;------------------------- end -------------------------
+

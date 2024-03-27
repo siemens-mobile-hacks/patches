@@ -1,0 +1,19 @@
+;S65v58
+;DSE Mobile Edition
+;DSE Mobile Edition
+;(c) 1nvisible
+;(r) ACiD[mrp], KreN, ~Jhellico
+;(p) ~Jhellico
+;Version: 1.2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=6401
+;PatchID: 4762
+;Details: https://patches.kibab.com/patches/details.php5?id=4762
+/*
+English:Allows keys to be rebound from the mobile phone.
+If you want the standart function to be used - put "STDF" as a string.
+v1.2: + Added support for QWERTY-open
+*/
+08DDB64: 2C3A381CA16B49F07AEE 00488047,0xA0FC9001,C046
+0FC9050: FFFFFFFF 0xA122D23C
+;------------------------- end -------------------------
+

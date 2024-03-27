@@ -1,0 +1,17 @@
+;S65v58
+;Изменить позицию анимации звонка
+;Change Calling Animation Pos
+;(c) vmaxy202
+;(p) -=(Kad)=-
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=10658
+;PatchID: 3301
+;Details: https://patches.kibab.com/patches/details.php5?id=3301
+/*
+Опускает аниму чить ниже обычного. получается что анимация прижимается к номеру.
+
+*/
+1181400: 4118 3221
+1181572: 4118 3221
+;------------------------- end -------------------------
+

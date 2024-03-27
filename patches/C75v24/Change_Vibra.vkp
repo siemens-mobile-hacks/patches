@@ -1,0 +1,14 @@
+;C75v24
+;Изменение типа вибры при ее включении через горячую клавишу
+;Change Vibra Type When Turning It On With HotKey
+;(c) 1nvisible
+;Version: 
+;PatchID: 2943
+;Details: https://patches.kibab.com/patches/details.php5?id=2943
+/*
+
+*/
+0329108: 00 NN ; 00 - Стандарт (Standard),01 - Вертолет (Helicopter),02 - НЛО (UFO),03 - Удар (Shock),04 - Москит (Mosquito),05 - Поезд (Train)
+
+;------------------------- end -------------------------
+

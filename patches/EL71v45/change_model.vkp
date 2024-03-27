@@ -1,0 +1,14 @@
+;EL71v45
+;Замена имени в *#06#
+;change model in *#06#
+;(c) avkiev
+;(p) funMarkus
+;Version: 
+;PatchID: 7925
+;Details: https://patches.kibab.com/patches/details.php5?id=7925
+/*
+
+*/
+008108C: 454C373100310030 4358383500310030; CX85
+;------------------------- end -------------------------
+

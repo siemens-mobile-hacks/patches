@@ -1,0 +1,17 @@
+;S75v52
+;Запись Диктофоном на MMC
+;Dictating Machine Writes to MMC
+;(c) 1nvisible
+;(p) den11111
+;Version: 
+;PatchID: 8327
+;Details: https://patches.kibab.com/patches/details.php5?id=8327
+/*
+
+*/
+027F098: 08009DE5 0400A0E3
+0671326: 30 34
+0671350: 30 34
+067135E: 30 34
+;------------------------- end -------------------------
+

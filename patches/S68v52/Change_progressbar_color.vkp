@@ -1,0 +1,16 @@
+;S68v52
+;Change progressbar color
+;Change progressbar color
+;(c) -=(Kad)=-
+;(p) Hotter
+;Version: 
+;PatchID: 10261
+;Details: https://patches.kibab.com/patches/details.php5?id=10261
+/*
+
+*/
+0415D28: BEE6FA64 F0F0E864 ; background
+0415D2C: 1EBEE664 00000064 ; contour
+0415D30: 001E8264 FFFFFF64 ; stripe
+;------------------------- end -------------------------
+

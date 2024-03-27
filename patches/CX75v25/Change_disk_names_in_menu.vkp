@@ -1,0 +1,15 @@
+;CX75v25
+;Изменение названия дисков в меню выбора
+;Change disk names in menu
+;(c) DeHuCoH
+;Version: 
+;PatchID: 3492
+;Details: https://patches.kibab.com/patches/details.php5?id=3492
+/*
+
+*/
+009C877: 726976652030 617461000000 ; Drive 0 -> Data
+009C894: 44726976652031 43616368650000 ; Drive 1 -> Cache
+009C8B2: 44726976652032 436F6E66696700 ; Drive 2 -> Config
+;------------------------- end -------------------------
+

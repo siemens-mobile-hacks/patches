@@ -1,0 +1,17 @@
+;CF75v22
+;Неограниченная запись видео
+;Video no limit time
+;(c) SiNgle
+;(p) m.ksy
+;Version: 1.1
+;PatchID: 9717
+;Details: https://patches.kibab.com/patches/details.php5?id=9717
+/*
+
+*/
+2DFAE7: 00 FF
+2E3B4C: 3300000A 920052E3
+34E08D: 640000 303364
+130F41: 13770D8A770D0D7528770D8A770D0DE3357C7B 13F78a770D0D7528F78a770D0DE3357C7B0B0B
+;------------------------- end -------------------------
+

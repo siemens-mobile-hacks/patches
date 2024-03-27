@@ -1,0 +1,15 @@
+;EL71v41
+;Включение выбора диапазона GSM
+;Enable Band Selection
+;(c) Bennie
+;(p) Siemann
+;Version: 
+;PatchID: 7127
+;Details: https://patches.kibab.com/patches/details.php5?id=7127
+/*
+
+*/
+0840B0C: 0502 F901
+
+;------------------------- end -------------------------
+

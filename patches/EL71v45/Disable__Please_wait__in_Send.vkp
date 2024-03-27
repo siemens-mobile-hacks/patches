@@ -1,0 +1,14 @@
+;EL71v45
+;Отключить "Подождите" в Передача...-Как MMS и Как E-mail в Мои файлы
+;Disable "Please wait" in Send...-Via MMS and Via e-mail in My stuff
+;(c) Evgr
+;(p) den11111
+;Version: 
+;PatchID: 8088
+;Details: https://patches.kibab.com/patches/details.php5?id=8088
+/*
+
+*/
+069337C: 42160BFB 0000A0E1
+;------------------------- end -------------------------
+

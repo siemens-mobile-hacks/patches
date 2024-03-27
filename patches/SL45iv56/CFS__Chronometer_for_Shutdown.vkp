@@ -1,0 +1,32 @@
+;SL45iv56
+;CFS. Хронометр на выключение телефона
+;CFS. Chronometer for Shutdown
+;(c) RizaPN
+;Version: 1.1
+;PatchID: 1967
+;Details: https://patches.kibab.com/patches/details.php5?id=1967
+/*
+Дает возможность автоматически выключать телефон при завершении
+отсчета хронометра.
+Телефон автоматически выключится только если часть секунды непарная (1, 3, 5 и т.д.)
+
+English: Give a possibility to automatically shutdown the phone after the Chronometer stopped.
+The phone will only shutdown if the second part is odd (1, 3, 5, etc.)
+
+
+Released: June 14, 2004 (updated v1.1)
+*/
+0x35CA5C: E6FF3300 DAC73EE2
+0x35CD0C: E6FCC034 DAC730E2
+0x35CD16: E03F F0F4
+
+0x27E230: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB0C2D11E6FCA034E056E024DB00E6FF
+0x27E240: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3300BB032D01E00FDB00D7403400F2F4
+0x27E250: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 4C386841CB00E6FCC034E6F40300DB00
+
+;value 33 (address 0x27E240) is the sound ID for 3 beep in the last count
+;in the normal "Chrono" mode. Value 0F (single digit xF) is the ID
+;when it is in the "Shutdown" mode.
+;value 03 (addr.0x27E25C) is the sound ID when the count is zero.
+;------------------------- end -------------------------
+

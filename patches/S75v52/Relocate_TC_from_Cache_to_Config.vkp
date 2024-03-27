@@ -1,0 +1,14 @@
+;S75v52
+;Перенос папки "ThemeCache" на диск Config
+;Relocate the folder "ThemeCache" from Cache to Config
+;(c) funMarkus
+;(p) Vados
+;Version: 
+;PatchID: 8461
+;Details: https://patches.kibab.com/patches/details.php5?id=8461
+/*
+
+*/
+0691020: 31 32
+;------------------------- end -------------------------
+

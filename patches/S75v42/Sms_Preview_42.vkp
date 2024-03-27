@@ -1,0 +1,13 @@
+;S75v42
+;Предпросмотр Смс
+;Sms Preview
+;(c) Zl0d
+;Version: 
+;PatchID: 6001
+;Details: https://patches.kibab.com/patches/details.php5?id=6001
+/*
+
+*/
+01326E05: 66616C736527 747275652720
+;------------------------- end -------------------------
+

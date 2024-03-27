@@ -1,0 +1,40 @@
+;A65v17
+;Редактор главного экрана
+;Mainscreen redactor
+;(c) pavel18
+;Version: 1.0
+;PatchID: 6635
+;Details: https://patches.kibab.com/patches/details.php5?id=6635
+/*
+Изменение координат расположения индикаторов аккумулятора и сигнала сети,а также иконок GPRS и т.д.
+Совместим с патчем на память.
+*/
+;Иконка заряда батареи
+2C1B24: E6FC4A00 FA830011
+631100: FFFFFFFF E6FC0100 ;01 - X
+631104: FFFFFFFF E6FD1200 ;12 - Y
+631108: FFFFFFFF FA4C2A1B
+;Иконка сети
+2C168A: E00CE00D FA830C11
+63110C: FFFFFFFF E6FC0100 ;01 - X
+631110: FFFFFFFF E6FD0100 ;01 - Y
+631114: FFFFFFFF FA4C8E16
+;При одной иконке на экране вверху
+;Иконка 1
+2C1A7C: E6FC1E00 FA831811
+631118: FFFFFFFF E6FC4F00 ;4F - X
+63111C: FFFFFFFF E6FD2E00 ;2E - Y
+631120: FFFFFFFF FA4C821A
+;При двух иконках на экране вверху
+;Иконка 1
+2C1A96: E6FC3400 FA832411
+631124: FFFFFFFF E6FC4F00 ;4F - X
+631128: FFFFFFFF E6FD2200 ;22 - Y
+63112C: FFFFFFFF FA4C9C1A
+;Иконка 2
+2C1A76: E6FC2A00 FA833011
+631130: FFFFFFFF E6FC4F00 ;4F - X
+631134: FFFFFFFF E6FD2E00 ;2E - Y
+631138: FFFFFFFF FA4C821A
+;------------------------- end -------------------------
+

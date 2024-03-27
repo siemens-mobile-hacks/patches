@@ -1,0 +1,15 @@
+;S75v52
+;Изменение названия bluetooth в разработчике
+;Change bluetooth name in developer
+;(c) KIBER-DEMON
+;(p) SimaFish
+;Version: 
+;PatchID: 8414
+;Details: https://patches.kibab.com/patches/details.php5?id=8414
+/*
+Mini Monitor=>Bluetooth Mon.=>*=>Speed...
+*/
+0A74C40: 53657420746F20322E3536 "Speed 1000 "
+0A74C50: 53657420746F20312E3238 "Speed  800 "
+;------------------------- end -------------------------
+

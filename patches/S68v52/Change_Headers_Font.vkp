@@ -1,0 +1,14 @@
+;S68v52
+;Change Headers Font
+;Change Headers Font
+;(c) Evgr
+;(p) Hotter
+;Version: 
+;PatchID: 10283
+;Details: https://patches.kibab.com/patches/details.php5?id=10283
+/*
+
+*/
+0A154BC: 05 0B
+;------------------------- end -------------------------
+

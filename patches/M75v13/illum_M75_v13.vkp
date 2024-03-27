@@ -1,0 +1,15 @@
+;M75v13
+;Подсветка с шагом 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;Version: 
+;PatchID: 1290
+;Details: https://patches.kibab.com/patches/details.php5?id=1290
+/*
+Подсветка с шагом 5%
+*/
+03B7A54: 0A 05 ; 05 или любая цифра в HEX
+03B7A64: 0A 05 ; 05 или любая цифра в HEX
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;CX70v50
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) Gnida
+;Version: 
+;PatchID: 145
+;Details: https://patches.kibab.com/patches/details.php5?id=145
+/*
+Ускоритель явы. Игры, помойму, пошустрей становяться.
+*/
+0CE3FDC: 02 01
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;M81v51
+;Мега-громкость
+;Megaloudness
+;(c) SiNgle
+;(p) Cypok
+;Version: 
+;PatchID: 6710
+;Details: https://patches.kibab.com/patches/details.php5?id=6710
+/*
+Мега-громкость
+*/
+01F2C04: 2600C4E5 D3FFFFEA
+01F2B58: 030000EF6C3DA0E30320A0E3 030040E22600C4E52A0000EA
+
+01F2B58: 03 05 ; уровень громкости (00-07) | Loudness (00-07)
+;------------------------- end -------------------------
+

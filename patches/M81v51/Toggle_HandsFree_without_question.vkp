@@ -1,0 +1,15 @@
+;M81v51
+;Громкая связь без подтверждения
+;Toggle HandsFree without question
+;(c) SiNgle
+;(p) den11111
+;Version: 
+;PatchID: 8090
+;Details: https://patches.kibab.com/patches/details.php5?id=8090
+/*
+
+*/
+02F8ADE: 002201206B49 012201200021
+02F8AE4: 00F12AEC 8AF72CED
+;------------------------- end -------------------------
+

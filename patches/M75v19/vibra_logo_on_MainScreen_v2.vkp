@@ -1,0 +1,17 @@
+;M75v19
+;Значок Вибры на главном экране
+;vibra logo on MainScreen
+;(c) SiNgle
+;(r) 1nvisible, BuG
+;Version: 2
+;PatchID: 2361
+;Details: https://patches.kibab.com/patches/details.php5?id=2361
+/*
+
+*/
+02BF696: 01D1 C046
+02A8F24: 09D0 0028
+;02A8E1A: 00 01 ; show logo when vibra is disabled
+049DABC: B56F83 876932
+;------------------------- end -------------------------
+

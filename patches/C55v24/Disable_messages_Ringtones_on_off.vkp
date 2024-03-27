@@ -1,0 +1,14 @@
+;C55v24
+;Отключить сообщение при Включении/Выключении сигналов
+;Disable messages Ringtones on/Ringtones off
+;(c) Matr!x
+;Version: 
+;PatchID: 2408
+;Details: https://patches.kibab.com/patches/details.php5?id=2408
+/*
+Работает с урезанным ленгпаком
+*/
+4D9E4E: DAD27624 CC00CC00
+4D9E64: DAD27624 CC00CC00
+;------------------------- end -------------------------
+

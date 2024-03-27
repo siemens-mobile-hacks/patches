@@ -1,0 +1,16 @@
+;SL45iv56
+;Предварительный просмотр анимации включения
+;Preview of power-on Animation
+;(c) Dingol
+;(p) Seklth
+;Version: 
+;PatchID: 2106
+;Details: https://patches.kibab.com/patches/details.php5?id=2106
+/*
+Remark: 
+Go to "Setup"->"Device"->"Display"->"Screen Style", select a desired animation, 
+you can preview the animation right away
+*/
+3C5974: DAE6F854 DADB3624
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;CX65v50
+;Дата внизу (на главном экране) в виде "Ср, 11 Май"
+;Date at the bottom of maincsreen as "We, 11 May"
+;(c) avkiev
+;(p) empeka
+;Version: 8 MP
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=3037
+;PatchID: 1124
+;Details: https://patches.kibab.com/patches/details.php5?id=1124
+/*
+Данный патч основан на концепции "Мастер-патч + Библиотека Функций". Он является лишь точкой входа для патча 1034, и не должен устанавливаться без него.
+*/
+0B21D80: 041C081C111C1A1C 004DA847,0xA0FC3501   ; CX65v50
+;------------------------- end -------------------------
+

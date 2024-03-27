@@ -1,0 +1,14 @@
+;C72v22
+;Отключить ввод 112 на Экране Блокировки
+;Disable 112 Input In Locked Screen
+;(c) 1nvisible
+;(p) Geka
+;Version: 
+;PatchID: 6089
+;Details: https://patches.kibab.com/patches/details.php5?id=6089
+/*
+
+*/
+9028E9: D0 22
+;------------------------- end -------------------------
+

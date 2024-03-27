@@ -1,0 +1,17 @@
+;SL45iv56
+;TAA. Тип добавляемого в адресную книгу телефона
+;TAA. Type of Add to Addrbook
+;(c) Seklth
+;Version: 
+;PatchID: 5798
+;Details: https://patches.kibab.com/patches/details.php5?id=5798
+/*
+Изменение типа телефона на мобильный при добавлении номера в адресную книгу.
+
+English:
+Change type of phone to mobile on add number to addrbook.
+*/
+3AD870: E0AE E0CE
+3E5468: E0AE E0CE
+;------------------------- end -------------------------
+

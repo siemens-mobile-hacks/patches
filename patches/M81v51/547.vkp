@@ -1,0 +1,16 @@
+;M81v51
+;Отключить окошко "Сообщение отправлено!"
+;Disable "Message sent!" window
+;(c) BingK
+;(r) Виктор89
+;(p) dimonp25
+;Version: 
+;PatchID: 9148
+;Details: https://patches.kibab.com/patches/details.php5?id=9148
+/*
+Отключает окошко, появляющееся при успешном отправлении СМС.
+*/
+05cbc38: abf026ea C0460020
+
+;------------------------- end -------------------------
+

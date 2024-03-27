@@ -1,0 +1,14 @@
+;EL71v45
+;Исправляем ошибки нативного меню: архив сообщений
+;Fix Native menu:message archive
+;(c) Miha_r
+;(p) funMarkus
+;Version: 
+;PatchID: 7785
+;Details: https://patches.kibab.com/patches/details.php5?id=7785
+/*
+
+*/
+0898A9C: 4DEB7BA0 3B566FA0
+;------------------------- end -------------------------
+

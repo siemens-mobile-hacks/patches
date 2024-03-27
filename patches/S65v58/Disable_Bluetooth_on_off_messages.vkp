@@ -1,0 +1,14 @@
+;S65v58
+;Отключение сообщений Bluetooth вкл/выкл
+;Disable Bluetooth on/off messages
+;(c) SiNgle
+;(p) Виктор89
+;Version: 
+;PatchID: 9388
+;Details: https://patches.kibab.com/patches/details.php5?id=9388
+/*
+
+*/
+08DA536: 4DF0 80BD
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;SL45iv56
+;TMI. Время в MP3 на кнопке Инфо
+;TMI. Time instead of MP3's Info
+;(c) RizaPN
+;Version: 
+;PatchID: 1636
+;Details: https://patches.kibab.com/patches/details.php5?id=1636
+/*
+Отображает время на кнопке Инфо в mp3Player.
+
+Для работы нужен патч №180 (patchID 1637) или №182 (patchID 1638)!
+
+Created: July 11, 2004
+
+Патч №188 с http://patch.oslik.ru/SL45_RU
+*/
+0x1A0420: 2A01 A001
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;CF75v23
+;Скорость мигания курсора
+;Cursor blinking speed
+;(c) SiNgle
+;Version: 
+;PatchID: 4854
+;Details: https://patches.kibab.com/patches/details.php5?id=4854
+/*
+
+*/
+04945E0: 2C01 8003
+;------------------------- end -------------------------
+

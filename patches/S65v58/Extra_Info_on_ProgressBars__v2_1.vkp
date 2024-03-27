@@ -1,0 +1,20 @@
+;S65v58
+;Дополнительная Информация на Прогрессбарах
+;Extra Info on ProgressBars
+;(c) 1nvisible
+;(p) Micron
+;Version: 2.1
+;PatchID: 6865
+;Details: https://patches.kibab.com/patches/details.php5?id=6865
+/*
+
+*/
+0A25F00: 6C7795A000000000 0xA0FC7D35,0xA0FC7D25
+0A29DB0: 0000000000000000 0xA0FC7D11,0xA0FC7D01
+1182400: 216B000C4143E06A88F008E9 004FB847,0xA0FC7D51,C046C046
+11824B8: 0C20185E231CCCF7AAFF05B0 004FB847,0xA0FC7DDD,C046
+
+0FC7D4C: FFFFFFFFFF 0x0xA86DB894
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;S55v91
+;S55 to S55i
+;Change Product name from S55 to S55i
+;(c) Mich3L & Athlonfreak
+;Version: 
+;PatchID: 1286
+;Details: https://patches.kibab.com/patches/details.php5?id=1286
+/*
+ИОНИЗАЦИЯ 
+*/
+47FF73: 00 69
+;------------------------- end -------------------------
+

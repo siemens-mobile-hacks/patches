@@ -1,0 +1,30 @@
+;SL45iv56
+;Напряжение батареи при нажатии зелёной кнопки в МР3-плейере
+;Battery Charge on GREEN button in MP3Player
+;(c) abomin
+;(r) cool_lang
+;Version: 
+;PatchID: 1975
+;Details: https://patches.kibab.com/patches/details.php5?id=1975
+/*
+Патч переделан из патча показа времени (автор - cool_lang), 
+и поэтому несовместим с ним (надо откатить). Используйте для времени патч Ризы. 
+Также требуется установить патч "Реальные вольты" от DeadMan'a. 
+
+
+Release: 10 апреля 2004 
+Update: 4 november 2004 (abomin)
+*/
+;for rx-bat-level v1 (by DeadManS) uncomment: 
+;3BA08E: EA0066A1 FAC7D0DA 
+
+;27DAD0: FFFFFFFFFFFFFFFF 46F605003D02DAE0 
+;27DAD8: FFFFFFFFFFFFFFFF CECAFADB66A1FFFF 
+
+;for RBL. Rx Battery level in dB and real volts v2.1 (by DeadManS): 
+3BA08E: EA0066A1 FAC7D0DA 
+27DAD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46F605003D02DAE0C8CAFADB66A1FFFF 
+
+;PS: Вместо DAE0C8CA можно подставить вызов любой функции,вместо показа напряжения 
+;------------------------- end -------------------------
+

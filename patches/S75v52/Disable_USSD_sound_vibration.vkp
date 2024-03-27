@@ -1,0 +1,15 @@
+;S75v52
+;Отключить звук\вибру USSD сообщения
+;Disable USSD sound\vibration
+;(c) ThE TrIFoN
+;(r) (i) -=(Kad)=-
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8275
+;Details: https://patches.kibab.com/patches/details.php5?id=8275
+/*
+
+*/
+029C8E6: 0F 21
+;------------------------- end -------------------------
+

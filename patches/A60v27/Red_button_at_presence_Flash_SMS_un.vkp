@@ -1,0 +1,17 @@
+;A60v27
+;Красная кнопка при наличии Flash SMS разворачивает его на весь экран
+;Red button at presence Flash SMS unwinds him(it) on whole screen
+;(c) .
+;(p) Rasp
+;Version: 
+;PatchID: 4258
+;Details: https://patches.kibab.com/patches/details.php5?id=4258
+/*
+
+*/
+6CAC38: DAB352EBDA8C0AE5 E6FC0100DA8CE07D 
+;6CAC3A: 01 00 ;Раскоментировать,если не хотите чтобы сообщение удалялось после прочтения.
+
+
+;------------------------- end -------------------------
+

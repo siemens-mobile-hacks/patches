@@ -1,0 +1,15 @@
+;M75v5
+;Фото на весь экран при входящем звонке
+;Enlarge incoming call photo
+;(c) SiNgle
+;(p) Gurza
+;Version: 2
+;PatchID: 545
+;Details: https://patches.kibab.com/patches/details.php5?id=545
+/*
+Для наилучшего отображения размер фото должен быть 132х176
+*/
+0516D14: 04 00
+02A6098: 19 00
+;------------------------- end -------------------------
+

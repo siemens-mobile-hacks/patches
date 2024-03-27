@@ -1,0 +1,32 @@
+;CX75v13
+;Сброс звонка в определенное время
+;Drop Call On Certain Time
+;(c) 1nvisible
+;(p) SMeeTBB
+;Version: 1.0
+;PatchID: 1002
+;Details: https://patches.kibab.com/patches/details.php5?id=1002
+/*
+RUS: Телефон сбрасывает вызов через NN секунд после его начала (5 секунд по умолчанию) 
+Включение/отключение через выбранные вами профили.
+
+ENG: The phone hangs up after NN seconds from the call start (5 secs by default)
+On/Off in chosen profiles.
+*/
+552B40: 00F028FD 4EF716FE
++4A1770
+#pragma enable old_equal_ff
+00:FFB5084880479927C74001200740012F
+10:03D1052C01D191F355FCFFBCB1F002FF
+20:00BDC04691F32BA0
+#pragma disable old_equal_ff
+06: 99 0n1000001 ; ключ профилей | profile key
+;12: 05 NN ; № секунды сброса | hang-up sec #
++0
+; Конфигурация профилей
+; Каждый бит в ключе определяет профиль
+; Крайний левый - профиль 7, крайний правый - профиль 1
+; Для активации патча в определённом профиле нужный бит будет равен 1
+; Например: 0n0100101 - патч активен в профилях 1, 3 и 6
+;------------------------- end -------------------------
+

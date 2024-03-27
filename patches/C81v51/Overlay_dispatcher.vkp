@@ -1,0 +1,27 @@
+;C81v51
+;Оверлей диспатчер
+;Overlay dispatcher
+;(c) -=(Kad)=-
+;(p) den11111
+;Version: 
+;PatchID: 7550
+;Details: https://patches.kibab.com/patches/details.php5?id=7550
+/*
+
+*/
+0A55D72: 2D68011C2B1CFF333133 C0460048804701E806A0
+;------------------------- end -------------------------
+;Ниже прикреплено тело патча
+;X75v100
+;Оверлей диспатчер
+;Overlay dispatcher
+;(c) -=(Kad)=-
+#pragma enable old_equal_ff
+006E800: 2D68011C2B1CFF333133FFB50548C4DF
+006E810: 01D00420C1DFFFBC01BC04300047
+
+006E820: E4D3C2B115AD00000000000000000000,"\
+{p=Overlay-Dispatcher id=ad15 cp=`-=(Kad)=-` ver=1}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

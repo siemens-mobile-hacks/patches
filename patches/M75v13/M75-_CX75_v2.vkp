@@ -1,0 +1,19 @@
+;M75v13
+;Переделка М75 в СХ75
+;Convert M75 into CX75
+;(c) mana9er
+;(r) N1K
+;(p) Grizzzzly
+;Version: 2
+;PatchID: 2105
+;Details: https://patches.kibab.com/patches/details.php5?id=2105
+/*
+Теперь к телефону подходят все патчи для СХ75 23-й прошивки.
+
+
+*/
+831BFC: 01 02
+8DA114: 05 02
+
+;------------------------- end -------------------------
+

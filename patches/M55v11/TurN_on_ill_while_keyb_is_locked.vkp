@@ -1,0 +1,14 @@
+;M55v11
+;Включение подсветки при двойном нажатии на любую цифровую кнопку
+;Illumination turns on when any digital key is pressed twice while keyboard is locked
+;(c) Matr!x
+;(p) =NeoSpb=
+;Version: 
+;PatchID: 5214
+;Details: https://patches.kibab.com/patches/details.php5?id=5214
+/*
+
+*/
+79C5E4: F0CEF0DF08C4DC5DD4FC0200 E03CE6FDFF7FDAA036D20D27
+;------------------------- end -------------------------
+

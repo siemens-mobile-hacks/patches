@@ -1,0 +1,15 @@
+;S75v52
+;Удалить дату и время с главного экрана
+;Disable date and time on MainScreen
+;(c) benj9
+;(p) SimaFish
+;Version: 
+;PatchID: 8405
+;Details: https://patches.kibab.com/patches/details.php5?id=8405
+/*
+
+*/
+029E28E: FFF7CCFF C046C046
+029E2A8: FFF7E2FF C046C046
+;------------------------- end -------------------------
+

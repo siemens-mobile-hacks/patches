@@ -1,0 +1,14 @@
+;M65v50
+;Менеджер Графических патчей
+;GraphPatchManager
+;(c) KreN
+;(p) Mifodiy
+;Version: 3.1
+;PatchID: 3887
+;Details: https://patches.kibab.com/patches/details.php5?id=3887
+/*
+Нужен под мастер 1nvisible
+*/
+1633BE0: 261C002D05900490 004FB847,0xA0FC3E01
+;------------------------- end -------------------------
+

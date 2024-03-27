@@ -1,0 +1,14 @@
+;S75v52
+;Предпросмотр SMS
+;SMS preview
+;(c) Zl0d
+;(p) SimaFish
+;Version: 
+;PatchID: 8418
+;Details: https://patches.kibab.com/patches/details.php5?id=8418
+/*
+
+*/
+013292E9: 66616C736527 747275652720
+;------------------------- end -------------------------
+

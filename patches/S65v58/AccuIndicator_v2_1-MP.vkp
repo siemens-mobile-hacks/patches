@@ -1,0 +1,18 @@
+;S65v58
+;Графический индикатор температуры АКБ
+;Accu Temperature As Graphic Indicator
+;(c) benj9
+;(r) ACiD[mrp], avkiev, BuG
+;Version: 2.1
+;PatchID: 2630
+;Details: https://patches.kibab.com/patches/details.php5?id=2630
+/*
+Если поставить координаты иконки 102,11 (будет как на скриншоте, ваккурат под батареей, очень даже уместно, ИМХО) 1 иконку 1268 (устанавливал при +28,2, может, это имеет какое-то значение (?)), андерран -1272,оверфлоу -1256, установку 1й иконки на 102, дельту между холодным и горячим 38.4 гр, калибрация 23, тогда боле-менее корректно будет работать индикатор. Успел проверить от +15.2 до +34.1. Картинки меняются, лишние не выползали. Крайних (cold и hot) не видел при этих температурах.
+*/
+; there are 14 pictures. 1 pic below temp_min, 1 pic over temp_max, 12 pics in the range of temp_min to temp_max
+; in masterpatch you can set temp_min and the range between temp_min and temp_max (19.2 or 38.4°C)
+
+1698F6A: 584300AB091A188B0130 C046004FB84711E3FDA0 ; s65v58
+
+;------------------------- end -------------------------
+

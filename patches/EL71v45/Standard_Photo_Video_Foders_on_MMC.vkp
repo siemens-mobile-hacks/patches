@@ -1,0 +1,16 @@
+;EL71v45
+;Замена стандартных папок для фото и видео с камеры на MMC
+;Standard Photo&Video Foders on MMC Change
+;(c) RainMaker AKA Shadow®
+;(r) All from S-C.org
+;(p) Canon
+;Version: 
+;PatchID: 7924
+;Details: https://patches.kibab.com/patches/details.php5?id=7924
+/*
+
+*/
+0833A86: 0B00,'4:\\Pictures' 0B00,'4:\\_C\\Photo'
+0833AC2: 0900,'4:\\Videos' 0900,'4:\\_C\\Vid'
+;------------------------- end -------------------------
+

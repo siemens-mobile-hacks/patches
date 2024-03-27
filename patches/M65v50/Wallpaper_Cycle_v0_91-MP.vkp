@@ -1,0 +1,14 @@
+;M65v50
+;Переключатель фона главного экрана
+;Wallpaper Cycle
+;(c) benj9
+;(r) 1nvisible, LazyCODEr
+;Version: 0.91-MP
+;PatchID: 3975
+;Details: https://patches.kibab.com/patches/details.php5?id=3975
+/*
+
+*/
+163746A: 2421614312688A182132 C046004FB8472F93FDA0
+;------------------------- end -------------------------
+

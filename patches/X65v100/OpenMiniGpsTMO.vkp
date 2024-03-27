@@ -1,0 +1,28 @@
+;X65v100
+;Открыть файл TMO
+;OpenMiniGpsTMO
+;(c) benj9
+;Version: 
+;PatchID: 2588
+;Details: https://patches.kibab.com/patches/details.php5?id=2588
+/*
+Позволяет открыть файл TMO базы miniGPS, который используется в настоящее время. Полезно, если найдена новая неопознанная сота, можно быстро отредактировать файл.
+Вешаем его на "Запуск функций с помощью #*" или через Key Sequencer, без разницы.
+
+(!) funclib func v02 f022 f063
+(!) firmware independent
+English: open current MiniGPS-TMO by calling "A0FDDE91"
+by any address launcher like * Key Sequencer *
+
+*/
+#pragma enable old_equal_ff
+0FDDE80: 4F70656E477073544D4F2C62656E6A39
+0FDDE90: FEB5A2B0E2F7DCFB7B88BA88009201A8
+0FDDEA0: 0BA1E2F705F901A90CAA00F007F86846
+0FDDEB0: 0CAA0260E2F798F922B0FEBD10800232
+0FDDEC0: 0B781380013102320138F9D170470000
+0FDDED0: 303A5C4D6973635C6770735C25695C25
+0FDDEE0: 692D25692E746D6F00000000
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

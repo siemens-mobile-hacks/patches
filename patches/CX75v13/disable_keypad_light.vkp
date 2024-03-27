@@ -1,0 +1,18 @@
+;CX75v13
+;Отключить подсветку кнопок
+;Disable keypad light
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 791
+;Details: https://patches.kibab.com/patches/details.php5?id=791
+/*
+RUS: Отключает подсветку кнопок, порой полезно, особенно когда "вслепую" уже топчешь :)
+
+ENG: Disconnects illumination of buttons, at times it is useful, especially when typing "blindly":)
+*/
+07D5BBF: D5 24
+
+;------------------------- end -------------------------
+

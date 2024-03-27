@@ -1,0 +1,18 @@
+;SL75v52
+;Перезагрузка вместо «Выкл. звуки» в меню красной кнопки
+;Reboot instead of «Ringtones off» in Red button menu
+;(c) ThE TrIFoN
+;(p) Виктор89
+;Version: 
+;PatchID: 9931
+;Details: https://patches.kibab.com/patches/details.php5?id=9931
+/*
+
+*/
+034559C: FFF7A0FF EFF636E9
+0345608: B620 1603
+
+17A2FAA: D09FD0B5D180D0B5D0B3D180D183D0B7D0BAD0B020D181D0B5D182D0B800 D09FD0B5D180D0B5D0B7D0B0D0B3D180D183D0B7D0BAD0B0FFFFFFFFFF00
+17E8846: D0A2D0B5D0BBD0B5D184D0BED0BD20D0B2D18BD0BAD0BB00 D092D18BD0BAD0BBD18ED187D0B5D0BDD0B8D0B5FFFFFF00
+;------------------------- end -------------------------
+

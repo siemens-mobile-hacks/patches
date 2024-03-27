@@ -1,0 +1,19 @@
+;CX75v12
+;Настройка аналоговых часов
+;Analog сlock tuning
+;(c) SiNgle
+;(p) BuG
+;Version: 1.0
+;PatchID: 528
+;Details: https://patches.kibab.com/patches/details.php5?id=528
+/*
+Настройка параметров аналоговых часов на заставке.
+*/
+02CF8FA: 9E 80 ; Hands length
+02CF96E: 01 02 ; Center-point
+02CF9BC: 01 06 ; Minute hand color
+02CFA6C: 01 04 ; Hour hand second line color (bold)
+02CFACC: 01 04 ; Hour hand color
+
+;------------------------- end -------------------------
+

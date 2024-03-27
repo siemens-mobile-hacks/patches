@@ -1,0 +1,27 @@
+;M75v19
+;Убрать сообщения
+;Disable some messages
+;(c) SiNgle
+;(p) Grizzzzly
+;Version: 
+;PatchID: 2307
+;Details: https://patches.kibab.com/patches/details.php5?id=2307
+/*
+Убирание "Подождите" при запуске камеры вызывает пропадание сообщения "теперь можно вынуть мультимедийную карту"
+
+English:
+("Please wait" before using camera removal also removes message "Multimedia card now can be removed!")
+
+*/
+02CE1BA: 0021 10BD ; "Все сигналы вкл" (All ringtones on)
+02CE1D6: 0021 10BD ; "Все сигналы выкл" (All ringtones off)
+02CE226: 0021 10BD ; "Блокировка клавиатуры включена" (Keypad locked)
+0326A6A: 77F1 80BD ; IrDA вкл\выкл (IrDA on\off)
+0326A9A: 77F1 80BD ; GPRS вкл\выкл (GPRS on\off)
+0326AE6: 77F1 80BD ; Bluetooth on\off  
+07C3070: 2B210901 80B580BD ; "Подождите" при запуске камеры ("Please wait" before using camera)
+034E6C0: 3D0A02EB 0100A0E3 ; "Сохранить в:" после съёмки ("Saved to:" after you take a foto)
+0352FD8: 05C011FA 0100A0E3 ; "Подождите" в эксплорере ("Please wait" in Card-Explorer)
+0520CF6: 01 00 ; "Копировать SIM" при смене SIM ("Copy SIM" at SIM change)
+;------------------------- end -------------------------
+

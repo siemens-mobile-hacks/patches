@@ -1,0 +1,15 @@
+;CX75v13
+;Убрать "Пожалуйста, подождите" во всех ява приложениях
+;Disable "Please, wait" in all java-midlets
+;(c) Evgr
+;(r) dimonp25
+;(p) Nikolas535
+;Version: 
+;PatchID: 9466
+;Details: https://patches.kibab.com/patches/details.php5?id=9466
+/*
+
+*/
+08A3DF2: 1EF7C0FB C046C046
+;------------------------- end -------------------------
+

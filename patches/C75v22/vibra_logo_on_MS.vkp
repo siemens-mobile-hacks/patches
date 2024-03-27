@@ -1,0 +1,16 @@
+;C75v22
+;Значок Вибры на главном экране
+;Vibra logo on MainScreen
+;(c) SiNgle
+;(p) SMeeTBB
+;Version: 
+;PatchID: 1175
+;Details: https://patches.kibab.com/patches/details.php5?id=1175
+/*
+Используется значок *!* как значок вибры, можете нарисовать что хотите сами
+*/
+02A89A6: 08D0 0028
+;2A89AC: 00 01 ;* Значок ОТСУТСТВИЯ Вибры ** Vibra DISABLED logo * © 1nvisible
+048BB6C: F5F87E 899032
+;------------------------- end -------------------------
+

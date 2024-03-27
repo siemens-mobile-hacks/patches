@@ -1,0 +1,14 @@
+;EL71v45
+;Отключить Logal-лог
+;Disable Logal Logging
+;(c) benj9
+;Version: 
+;PatchID: 8004
+;Details: https://patches.kibab.com/patches/details.php5?id=8004
+/*
+
+*/
+08D5A92: 10B5 7047 ; file
+0A0FAC8: 0F002DE9 1EFF2FE1 ; project
+;------------------------- end -------------------------
+

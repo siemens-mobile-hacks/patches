@@ -1,0 +1,14 @@
+;S75v52
+;Громкая связь без подтверждения
+;Toggle HandsFree without question
+;(c) SiNgle
+;(p) -=(Kad)=-
+;Version: 
+;PatchID: 8844
+;Details: https://patches.kibab.com/patches/details.php5?id=8844
+/*
+
+*/
+02F7F5E: 002201206B49F6F0E6EA 0122012000218CF71CE9
+;------------------------- end -------------------------
+

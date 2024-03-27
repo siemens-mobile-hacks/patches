@@ -1,0 +1,32 @@
+;E71v42
+;Перенос папок
+;Folders Relocation
+;(c) 1nvisible
+;(p) a1ex
+;Version: 
+;PatchID: 6733
+;Details: https://patches.kibab.com/patches/details.php5?id=6733
+/*
+
+*/
+;Conversations
+;0->1
+;082AFAA: 30 31
+;082AFCA: 30 31
+;082AFD8: 30 31
+;
+;Tmp
+;0->2
+;082AF68: 30 32 
+;
+;Themes
+;0->4
+082A9FC: 30 34 
+082AA10: 30 34
+082AA1C: 30 34
+;
+;Active Theme
+;0->2
+;082AA32: 30 32
+;------------------------- end -------------------------
+

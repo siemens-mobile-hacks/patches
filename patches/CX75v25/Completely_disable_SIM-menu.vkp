@@ -1,0 +1,15 @@
+;CX75v25
+;Полностью отключить SIM-меню
+;Completely disable SIM-menu
+;(c) BingK(binghelingxi)
+;(r) dimonp25
+;(p) tender
+;Version: 
+;PatchID: 9059
+;Details: https://patches.kibab.com/patches/details.php5?id=9059
+/*
+Убирает пункт SIM-меню отовсюду
+*/
+02B851D: D1 E0
+;------------------------- end -------------------------
+

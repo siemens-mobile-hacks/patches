@@ -1,0 +1,14 @@
+;S75v47
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found"
+;(c) avkiev
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7582
+;PatchID: 5614
+;Details: https://patches.kibab.com/patches/details.php5?id=5614
+/*
+
+*/
+10338D0: 5C03 FFFF
+;------------------------- end -------------------------
+

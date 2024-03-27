@@ -1,0 +1,14 @@
+;EL71v41
+;CRB - Классическая функция красной кнопки
+;CRB - Classic Red Button
+;(c) Rst7/CBSIE
+;(p) 1nvisible
+;Version: 
+;PatchID: 6679
+;Details: https://patches.kibab.com/patches/details.php5?id=6679
+/*
+
+*/
+0956130: 94 96
+;------------------------- end -------------------------
+

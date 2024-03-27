@@ -1,0 +1,20 @@
+;CX75v13
+;Замена меню на супербыстрое
+;Change mainmenu on superfaster
+;(c) SiNgle
+;(p) ThE TrIFoN
+;Version: 1.0
+;PatchID: 817
+;Details: https://patches.kibab.com/patches/details.php5?id=817
+/*
+RUS: Замена главного меню на супербыстрое.
+Пункт меню "Спис. Вызовов" - "Время/Стоимость" вырубает телефон
+
+
+English: Replacement of the main menu on superfast.
+The item of the menu " the List of Calls " - "Time/cost" cuts down phone
+
+*/
+004B09D4: 434B4C4B5F434B5F4D41494E4D4E5500EB6832A0 "CKLK_CK_MAINMNU",00,0xA02BE8FD
+;------------------------- end -------------------------
+

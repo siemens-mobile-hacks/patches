@@ -1,0 +1,13 @@
+;S75v22
+;Изменить папку для фотографий
+;Change photos folder
+;(c) avkiev
+;Version: 
+;PatchID: 1763
+;Details: https://patches.kibab.com/patches/details.php5?id=1763
+/*
+Фотографии сохраняются в папке 0:\My_Photo вместо стандартной
+*/
+06732DE: 0B00,'0:\\Pictures' 0B00,'0:\\_MyPhoto'
+;------------------------- end -------------------------
+

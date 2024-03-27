@@ -1,0 +1,23 @@
+;C75v22
+;АудиоХук
+;AudioHook
+;(c) ILYA_ZX
+;(p) pHara0n
+;Version: 
+;PatchID: 7741
+;Details: https://patches.kibab.com/patches/details.php5?id=7741
+/*
+В связи с тем, что очень часто поступают просьбы выложить работающий АудиоХук для C75sw22, выкладываю.
+Функция "ChangeVolume" найдена и отлично работает, адреса прописаны с 0x000C0000.
+*/
+008EF844: 3880BDE8 0xDF41ED,0xEA
+000C0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 18309FE5003093E5000053E30000001A
+000C0010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3880BDE80030A0E3503084E5FBFFFFEA
+000C0020: FFFFFFFF 0xA874AFD0
+;Function Library
++10E4000
+0264: FFFFFFFF 0xA02F73A8 ;99: __arm int PlayMelodyInMem(char Unk_0x11,void *MelAddr,int MelSize,int unk2_0xFFFF,int Unk3_0,int Unk4_0)
+0268: FFFFFFFF 0xA07D6060 ;9A: __arm int ChangeVolume(unsigned char Volume)
+026C: FFFFFFFF 0xA874B040 ;9B: Audio params addr
+;------------------------- end -------------------------
+

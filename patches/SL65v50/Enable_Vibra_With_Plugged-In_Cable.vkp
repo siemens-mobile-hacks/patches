@@ -1,0 +1,13 @@
+;SL65v50
+;Включить вибру при подключенном кабеле
+;Enable Vibra With Plugged-In Cable
+;(c) 1nvisible
+;Version: 
+;PatchID: 5135
+;Details: https://patches.kibab.com/patches/details.php5?id=5135
+/*
+
+*/
+119DF14: F081BD18 0000A0E3
+;------------------------- end -------------------------
+

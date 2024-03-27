@@ -1,0 +1,13 @@
+;S55v20
+;Отключить сообщение "Блокировка клавиатуры включена"
+;Disable "Keypad Locked" message
+;(c) avkiev
+;Version: 
+;PatchID: 4776
+;Details: https://patches.kibab.com/patches/details.php5?id=4776
+/*
+
+*/
+321EDE: DA72 0D01
+;------------------------- end -------------------------
+

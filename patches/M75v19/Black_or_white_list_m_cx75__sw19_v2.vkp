@@ -1,0 +1,71 @@
+;M75v19
+;Черный или белый список
+;Black or white list
+;(c) SiNgle
+;Version: 2
+;PatchID: 2866
+;Details: https://patches.kibab.com/patches/details.php5?id=2866
+/*
+Группа выбранная в "Фильтре" (Меню>9>5>4)станобится Черным (Белым)списком.
+Черный список означает, что телефон испускает сигнал "Занято", когда кто - то от этой группы звонит.
+Белый список означает, что телефон испускает сигнал "Занято", когда кто-то НЕ от этой группы звонит.
+Звонок не отображается в Пропущенных вызовах.
+(!) Включен патч "Убрать иконку фильтра"
+
+English:
+The group chosen in Call Screening becomes Black or White list (Menu-9-5-4)
+BlackList means the phone emits busy signal when somebody from this group is calling.
+WhiteList means the phone emits busy signal when somebody NOT from this group is calling.
+The call is NOT shown in the missed calls screen.
+(!) It is included patch " To remove an icon of the filter "
+
+*/
+;* Black or white list v2 * + * Убрать иконку фильтра *
+; (c) SiNgle
+; CX(M)75 SW19
+
+;Группа выбранная в "Фильтре" (Меню>9>5>4)станобится Черным (Белым)списком.
+;Черный список означает, что телефон испускает сигнал "Занято", когда кто - то от этой группы звонит.
+;Белый список означает, что телефон испускает сигнал "Занято", когда кто-то НЕ от этой группы звонит.
+;Звонок не отображается в Пропущенных вызовах.
+;(!) Включен патч "Убрать иконку фильтра"
+
+
+;English:
+;The group chosen in Call Screening becomes Black or White list (Menu-9-5-4)
+;BlackList means the phone emits busy signal when somebody from this group is calling.
+;WhiteList means the phone emits busy signal when somebody NOT from this group is calling.
+;The call is NOT shown in the missed calls screen.
+;(!)There is patch "To remove an icon of the filter" included
+
+05092EA: 061C281C 99F71AE8 
+0509FE0: 0006000E 98F7D8E9 
+050A44A: B0420ED1 97F786EF 
+#pragma enable old_equal_ff
+04A2320: 00402DE9FF012DE9FF0050E30500000A
+04A2330: 0100A0E30FE0A0E184F09FE5000050E3
+04A2340: 0000001A0D0000EBFF01BDE80060A0E1
+04A2350: 0500A0E10080BDE800402DE9FF012DE9
+04A2360: 060050E10300001A040000EBFF01BDE8
+04A2370: 0040BDE84CF09FE5FF01BDE80080BDE8
+04A2380: FF412DE90000A0E30FE0A0E138F09FE5
+04A2390: FF81BDE8FF412DE9FF0057E30200000A
+04A23A0: 180096E5000057E10300001AFF01BDE8
+04A23B0: 000CA0E1200CA0E10080BDE8EFFFFFEB
+04A23C0: F9FFFFEADDE7AAA06DA450A097C97CA0
+#pragma disable old_equal_ff
+0AE57F7: D5 E0
+
+;04A2367: 1A 0A ; WhiteList
+
+;------------------------------------------------------------------------------------------
+
+; "Убрать иконку фильтра"
+; "To remove an icon of the filter"
+; CX(M)75 SW19
+; (c)?
+; (p) D_K_
+
+2A9098: FFF738FE 00280028
+;------------------------- end -------------------------
+

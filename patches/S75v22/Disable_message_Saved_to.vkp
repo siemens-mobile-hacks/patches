@@ -1,0 +1,13 @@
+;S75v22
+;Убрать сообщение "Сохранить в:" после съёмки
+;Disable message "Saved to:" after you take a foto
+;(c) SiNgle
+;Version: 
+;PatchID: 1775
+;Details: https://patches.kibab.com/patches/details.php5?id=1775
+/*
+Отключение сообщения "Сохранить в:" при сохранении фотографии.
+*/
+0340544: A8F092EC C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;EL71v45
+;Настройка подсветки шагом в 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(p) 1allen
+;Version: 
+;PatchID: 7937
+;Details: https://patches.kibab.com/patches/details.php5?id=7937
+/*
+
+*/
+064204C: 0A 05
+0642052: 0A 05
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;S75v47
+;Изменить время ожидания заставки
+;Change Screensaver Timeout Interpretation
+;(c) benj9
+;(p) den11111
+;Version: 1
+;PatchID: 7693
+;Details: https://patches.kibab.com/patches/details.php5?id=7693
+/*
+
+*/
+;029DF28: 3C 01 ; treat minutes as seconds
+029DF28: 3C 0i10 ; treat minutes as sixth part of seconds
+;029DF28: 3C 0i15 ; treat minutes as quarter seconds
+;------------------------- end -------------------------
+

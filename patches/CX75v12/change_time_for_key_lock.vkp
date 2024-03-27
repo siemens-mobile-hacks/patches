@@ -1,0 +1,15 @@
+;CX75v12
+;Изменение времени автоблокировки клавиш
+;Change time for key lock
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 507
+;Details: https://patches.kibab.com/patches/details.php5?id=507
+/*
+Изменяет время автоблокировки клавиатуры.
+*/
+02CCE44: C832 7017
+;------------------------- end -------------------------
+

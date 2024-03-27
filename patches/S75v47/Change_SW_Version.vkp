@@ -1,0 +1,13 @@
+;S75v47
+;Изменение версии ПО
+;Change SW Version
+;(c) DOMr
+;Version: 
+;PatchID: 7528
+;Details: https://patches.kibab.com/patches/details.php5?id=7528
+/*
+
+*/
+81083: 3437 "SC"
+;------------------------- end -------------------------
+

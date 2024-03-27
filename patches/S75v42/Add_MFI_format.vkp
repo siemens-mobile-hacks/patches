@@ -1,0 +1,18 @@
+;S75v42
+;Добавление формата MFI
+;Add MFI format
+;(c) GrosserS
+;(p) Belarus
+;Version: 
+;PatchID: 4965
+;Details: https://patches.kibab.com/patches/details.php5?id=4965
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v42&f=Add_MFI_format.rar
+
+/*
+Данный патч добавит поддержку формата mfi(mld), который является неким аналогом midi но может иметь в себе различную информацию. Мелодию можно сконвертировать в PSM плейере.
+По указанному адресу находятся зарезервированные типы файлов, которые можно заменить на любые другие.
+English:After applying this patch phone can open mfi(mld) files, that are analogue of midi, but may have additional info inside. You can convert files in PSM player.
+*/
+06709E3: 6C64 6669
+;------------------------- end -------------------------
+

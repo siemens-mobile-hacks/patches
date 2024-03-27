@@ -1,0 +1,34 @@
+;CX65v50
+;Индикатор зарядки на главном экране
+;Charging icon on mainscreen
+;(c) empeka
+;Version: 
+;PatchID: 1049
+;Details: https://patches.kibab.com/patches/details.php5?id=1049
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx65v50&f=Charging_icon_on_mainscreen.rar
+
+/*
+Этот вроде точно рабочий... на предыдущий жаловались...
+Патч отображает иконку при зарядке батареи. Когда батарея будет заряжена, отображается другая иконка.
+Предназначен, в первую очередь, для тех, кто снёс индикатор батареи с главного экрана и использует только патчи Дополнительной информации на главном экране.
+
+См. прикреплённый файл с иконками.
+
+English:
+patch adds an icon to iconbar at the top of the screen durring charging battery.
+when battery is full, different icon is used.
+dedicated to all who removed battery icon from mainscreen and uses only extrainfo;)
+To get icons as pn screenshot, see attached file.
+*/
+16342F2: 1BF08AEF 27F085FC
+165BC00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00B507480078002807D00649022800DD
+165BC10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 013107AA281CD9F79AF80348804700BD
+165BC20: FFFFFFFFFFFFFFFFFFFFFFFF 7EEC66A8,51050000,080265A1
+
+;165BC24: 5105 0i1361 ;picture #
+;when battery is full, patch uses next bitmap (picture# + 1)
+
+;165BC0C: 0228 01E0 ;use first icon only
+;165BC0E: 00DD 04D8 ;don't display any icon when charging is finished
+;------------------------- end -------------------------
+

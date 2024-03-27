@@ -1,0 +1,14 @@
+;SL75v52
+;Ускоритель вывода на дисплей
+;Mainscreen accelerator
+;(c) SiNgle
+;(p) velesiK
+;Version: 
+;PatchID: 7714
+;Details: https://patches.kibab.com/patches/details.php5?id=7714
+/*
+
+*/
+D90DA4: 48F262EC A861C046
+;------------------------- end -------------------------
+

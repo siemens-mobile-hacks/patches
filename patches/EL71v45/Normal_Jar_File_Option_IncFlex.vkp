@@ -1,0 +1,21 @@
+;EL71v45
+;Нормальные опции jar файлов(IncFlex27 совместимый)
+;Normal Jar File Option Menu(IncFlex27 compatible)
+;(c) BingK(binghelingxi)
+;Version: 
+;PatchID: 9653
+;Details: https://patches.kibab.com/patches/details.php5?id=9653
+/*
+
+*/
+;JAR_FILE_OPTION_MENU_HOOK
+094A080: 01A8CFF208EC15B0 004FB847A1A32FA1
+;JAR_FILE_OPTION_MENU_BODY
+#pragma enable old_equal_ff
+012FA3A0: 01AFFFB5381C0830FF210170381C0A30
+012FA3B0: 04490180381C044EB047FFBC80BC3F1D
+012FA3C0: 15B03847A2050000888250A0
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

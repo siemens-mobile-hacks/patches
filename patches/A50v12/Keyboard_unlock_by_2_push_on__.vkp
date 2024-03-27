@@ -1,0 +1,14 @@
+;A50v12
+;Разблокировка клавиатуры при двойном нажатии #
+;Keyboard unlock by 2 push on #
+;(c) =NeoSpb=
+;(r) Matr!x
+;Version: 
+;PatchID: 2694
+;Details: https://patches.kibab.com/patches/details.php5?id=2694
+/*
+Либо двойное нажатие #, либо комбинация любой клавиши и #
+*/
+35725E: 3D42 CC00 
+;------------------------- end -------------------------
+

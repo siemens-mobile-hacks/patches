@@ -1,0 +1,14 @@
+;S75v47
+;Плавное включение подсветки
+;Smooth keypad light
+;(c) SiNgle
+;(p) den11111
+;Version: 
+;PatchID: 5956
+;Details: https://patches.kibab.com/patches/details.php5?id=5956
+/*
+
+*/
+0961D50: 0022 FF22
+;------------------------- end -------------------------
+

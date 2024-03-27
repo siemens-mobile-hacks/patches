@@ -1,0 +1,15 @@
+;S75v32
+;Изменение цвета прогрессбара
+;Change progressbar color
+;(c) -=(Kad)=-
+;Version: 
+;PatchID: 6240
+;Details: https://patches.kibab.com/patches/details.php5?id=6240
+/*
+Прогрессбар, например, после сворачивания, плавненько включается...
+*/
+08C2C08: BEE6FA64 BEE6FA0A ; background
+08C2C0C: 1EBEE664 00000034 ; contour
+08C2C10: 001E8264 FFFFFF24 ; stripe
+;------------------------- end -------------------------
+

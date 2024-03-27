@@ -1,0 +1,15 @@
+;CX75v25
+;Красивый вид. Убрать иконки с главного экрана
+;Bellevue. Disable icons on mainscreen
+;(c) benj9
+;(r) (i) KreN
+;(p) sempai
+;Version: 2.1-MP
+;PatchID: 6152
+;Details: https://patches.kibab.com/patches/details.php5?id=6152
+/*
+
+*/
+49DD14: 29847FA0 0139FCA0
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;SL65v53
+;Показывать Время Последнего Разговора Вместо Пункта "Послед. разг."
+;Show Last Call Duration Instead of "Last Call" Item
+;(c) 1nvisible
+;(p) Виктор89
+;Version: 
+;PatchID: 9992
+;Details: https://patches.kibab.com/patches/details.php5?id=9992
+/*
+
+*/
+1667024: C5000000 2CDD68A8
+;------------------------- end -------------------------
+

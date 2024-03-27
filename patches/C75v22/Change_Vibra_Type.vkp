@@ -1,0 +1,19 @@
+;C75v22
+;Изменение типа вибры при ее включении через хоткей или Моё меню
+;Change Vibra Type When Turning It On With HotKey or My Menu
+;(c) 1nvisible
+;Version: 
+;PatchID: 6855
+;Details: https://patches.kibab.com/patches/details.php5?id=6855
+/*
+
+*/
+; 00 - Стандарт (Standard)
+; 01 - Вертолет (Helicopter)
+; 02 - НЛО (UFO),
+; 03 - Удар (Shock)
+; 04 - Москит (Mosquito)
+; 05 - Поезд (Train)
+03290B8: 00 NN 
+;------------------------- end -------------------------
+

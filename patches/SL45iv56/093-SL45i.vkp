@@ -1,0 +1,15 @@
+;SL45iv56
+;Отключает год в индикации времени
+;Modify date on standby screen to be DD,dd.mm (No year)
+;(c) dspmobile
+;Version: 
+;PatchID: 1686
+;Details: https://patches.kibab.com/patches/details.php5?id=1686
+/*
+Заменяет дату только на основном экране (в режиме ожидания). 
+
+Патч №093 с http://patch.oslik.ru/SL45_RU
+*/
+3B0065: 7D 3D
+;------------------------- end -------------------------
+

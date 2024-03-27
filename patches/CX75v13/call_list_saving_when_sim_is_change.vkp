@@ -1,0 +1,16 @@
+;CX75v13
+;Сохранение списка вызовов при смене SIM-карты
+;Call list saving when SIM is changed
+;(c) SiNgle
+;(p) BuG
+;Version: 1.0
+;PatchID: 804
+;Details: https://patches.kibab.com/patches/details.php5?id=804
+/*
+RUS: Сохранение списков вызовов при смене SIM-карты.
+
+ENG: Preservation of lists of calls at change of a SIM-card.
+*/
+02A742C: F5F13AEC 00200020
+;------------------------- end -------------------------
+

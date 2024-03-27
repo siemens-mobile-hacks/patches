@@ -1,0 +1,15 @@
+;EL71v45
+;Убрать сообщение "Сохранено на:" после снимка камерой
+;Disable message "Saved to:" after you take a photo
+;(c) Single
+;(r) Evgr
+;(p) funMarkus
+;Version: 
+;PatchID: 7971
+;Details: https://patches.kibab.com/patches/details.php5?id=7971
+/*
+
+*/
+0715BB0: 01 02
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;E71v45
+;Увеличивать громкость на 1 деление, а не уменьшать, при однократном нажатии во время звонка на кнопку "громкость вверх" 
+;Increase volume in 1 step instead of decrease at once press of "Volume Up" button during call  
+;(c) Evgr
+;Version: 
+;PatchID: 9738
+;Details: https://patches.kibab.com/patches/details.php5?id=9738
+/*
+
+*/
+066D070: 6A3091F6CFFA8CF106EA 004CA047,0xA1410261,C046
+
+#pragma enable old_equal_ff
+1410260: 6A3010B5064CA047064CA04710BC10BC
+1410270: 032801D10A342047012112342047C046
+1410280: 0xA04FE615,0xA0CD9E11
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

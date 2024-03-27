@@ -1,0 +1,43 @@
+;CX70v50
+;Расширенная панель иконок
+;Extended IconBar
+;(c) 1nvisible
+;(p) KreN
+;Version: 0.5
+;PatchID: 1444
+;Details: https://patches.kibab.com/patches/details.php5?id=1444
+/*
+Расширяет Панель до 8 иконок
+Отмените предыдущие патчи координат панели иконок
+
+English:
+Undo earlier IconBar coordinates patches
+Extends IconBar up to 8 Icons
+
+*/
+1711DBC: 04 08 ;disable 1st check
+1711DC0: 04 08
+
+1711DCA: 42 50 ;extend iconbar length
+
+1711DE0: 21 10 ;starting X coordinate
+
+1711A02: 85 45 ;disable 2nd check
+1711A04: AD 6D
+
+1711E1A: 05 00 ;disable 3rd check
+
+1711F68: 74 D4 ;move 1st RAM
+
+1711DF2: 08 10 ;fix to support 8 icons
+
+1711DFA: 02 02 ;change Y coordinate
+
+1711A22: F00024 00208C ;another fix to support 8 icons
+  
+1711DA6: 10 10 ;canvas end Y coordinate
+1711DAA: 02 02 ;canvas start Y coordinate
+
+1711E42: 1C 7C ;fix accu bug
+;------------------------- end -------------------------
+

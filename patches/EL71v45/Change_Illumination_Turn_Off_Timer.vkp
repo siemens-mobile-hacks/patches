@@ -1,0 +1,14 @@
+;EL71v45
+;Изменение длительности горения подсветки
+;Change Illumination Turn Off Timer
+;(c) benj9
+;(p) SSVS (Exceeded)
+;Version: 
+;PatchID: 9884
+;Details: https://patches.kibab.com/patches/details.php5?id=9884
+/*
+Sometimes the settings made by backlight duration adjustment patch are overwritten. You can set a default value here.
+*/
+12E26B7: 0F 0i40 ; (seconds)
+;------------------------- end -------------------------
+

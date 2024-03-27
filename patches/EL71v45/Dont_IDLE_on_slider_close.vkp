@@ -1,0 +1,24 @@
+;EL71v45
+;Не выходить на ГЭ при закрытии слайдера
+;Don`t IDLE on slider close
+;(c) -=(Kad)=-
+;Version: 2
+;PatchID: 7576
+;Details: https://patches.kibab.com/patches/details.php5?id=7576
+/*
+
++2 Теперь не задаёт вопрос "Продолжить?"
+
+При закрытии слайдера приложения не закрываются
+
+English:
+
++2 Now dont ask "Continue?"
+
+When slider closes the phone dont goes to IDLE
+
+*/
+05C10E4: 3FF2B2E8 C046C046
+070F778: EFF056ED C046C046
+;------------------------- end -------------------------
+

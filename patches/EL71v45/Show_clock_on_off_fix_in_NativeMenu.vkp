@@ -1,0 +1,21 @@
+;EL71v45
+;Фикс Настройки-Часы-Показ. часы-Вкл./Выкл в NativeMenu
+;Show clock on/off fix in NativeMenu
+;(c) BingK(binghelingxi)
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8929
+;Details: https://patches.kibab.com/patches/details.php5?id=8929
+/*
+Теперь включается и выключается из меню
+*/
+;NMNU_SHOW_TIME_FIX_HOOK1,NMNU_SHOW_TIME_FIX_HOOK2
+08B2E50: FFAE7DA007AF7DA0 411606A0511606A0
+;NMNU_SHOW_TIME_FIX_BODY
+#pragma enable old_equal_ff
+0061640: F0B5071C064EB047381C064EB047F0BD
+0061650: F0B50F1C044EB047391C044EB047F0BD
+0061660: B9565CA043F76FA08B565CA057F76FA0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

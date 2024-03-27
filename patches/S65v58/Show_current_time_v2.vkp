@@ -1,0 +1,23 @@
+;S65v58
+;Показ текущего времени при срабатывании отложенного будильника
+;Show current time during postponed alarm
+;(c) avkiev
+;(p) KiRiK
+;Version: 2
+;PatchID: 746
+;Details: https://patches.kibab.com/patches/details.php5?id=746
+/*
+
+*/
+0A58274: 42780178 A8F5F4FA
+#pragma enable old_equal_ff
+0800840: 506F7374706F6E656420416C61726D20
+0800850: A961766B696576202870294B6952694B
+0800860: 01B5C9F053F9411C01BC0838072905D0
+0800870: 044A0548011C083190470348017A427A
+0800880: 00BDC046BB6BC3A0002368A8
+#pragma disable old_equal_ff
+
+;080086C: 07 NP ; Profile "No Patches
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S75v47
+;Индикатор сети (красно-зелёный)
+;Network indicator (red-green)
+;(c) klaster
+;Version: 
+;PatchID: 6759
+;Details: https://patches.kibab.com/patches/details.php5?id=6759
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v47&f=net_indicator.zip
+
+/*
+
+*/
+Замена стандартного индикатора сети в стиле продвинутого индикатора сети
+;------------------------- end -------------------------
+

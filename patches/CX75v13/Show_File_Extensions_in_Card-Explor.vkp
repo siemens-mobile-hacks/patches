@@ -1,0 +1,14 @@
+;CX75v13
+;Показ Расширений Файлов в Card-Explorer'е
+;Show File Extensions in Card-Explorer
+;(c) 1nvisible
+;(p) 1ac3124
+;Version: 
+;PatchID: 6801
+;Details: https://patches.kibab.com/patches/details.php5?id=6801
+/*
+
+*/
+03DA600: 2E 1E
+;------------------------- end -------------------------
+

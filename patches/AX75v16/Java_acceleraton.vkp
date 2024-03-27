@@ -1,0 +1,14 @@
+;AX75v16
+;Отключить верификацию JAVA-классов
+;Disable Java-classes vertificaton
+;(c) SiNgle, Chaos
+;(p) dkBrazz
+;Version: 1
+;PatchID: 5856
+;Details: https://patches.kibab.com/patches/details.php5?id=5856
+/*
+Ускоряет запуск мидлетов на 30-70%
+*/
+537238: 3D 0D
+;------------------------- end -------------------------
+

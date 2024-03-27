@@ -1,0 +1,14 @@
+;C75v22
+;Показывать Время Последнего Разговора Вместо Пункта "Послед. разг."
+;Show Last Call Duration Instead of "Last Call" Item
+;(c) 1nvisible
+;(p) NevAtse
+;Version: 
+;PatchID: 9991
+;Details: https://patches.kibab.com/patches/details.php5?id=9991
+/*
+
+*/
+04B14A4: D5000000 CC184CA8
+;------------------------- end -------------------------
+

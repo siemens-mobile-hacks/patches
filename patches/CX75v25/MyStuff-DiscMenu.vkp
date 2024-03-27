@@ -1,0 +1,19 @@
+;CX75v25
+;MyStuff = Disk Menu
+;MyStuff = Disk Menu
+;(c) LinuXrULz
+;Version: 1
+;PatchID: 6091
+;Details: https://patches.kibab.com/patches/details.php5?id=6091
+/*
+--- Для доступа к дискам Cache и Config из MyStuff (MyStuff Creator)
+
+--- Enables access to Cache and Config discs from MyStuff (MyStuff Creator)
+*/
+04A6542: 0C 04
+04A6544: 32 31
+04A654A: 43 00
+04A656C: 0C 04
+04A6574: 43 00
+;------------------------- end -------------------------
+

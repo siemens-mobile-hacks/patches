@@ -1,0 +1,20 @@
+;S75v47
+;Картинка при запуске камеры
+;Picture when starting camera
+;(c) den11111
+;(r) funMarkus, ILYA_ZX
+;Version: 
+;PatchID: 8578
+;Details: https://patches.kibab.com/patches/details.php5?id=8578
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v47&f=Java_picture_when_starting_camera.zip
+
+/*
+Кидать картинку с разрешением 132х176 в Zbin/img под номером 182.
+Картинка в архиве.
+B622 - номер картинки в проше (В6=182, можно др. номер в хексе)
+
+
+*/
+0516052: 041C806B002803D1 00200021B62223DF
+;------------------------- end -------------------------
+

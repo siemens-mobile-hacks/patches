@@ -1,0 +1,16 @@
+;M65v50
+;Счётчик траффика вместо логотипа GPRS
+;Traffic indicator instead of GPRS logo
+;(c) Sinclair
+;(r) ~Jhellico
+;(p) Mifodiy
+;Version: 1.4-MP
+;PatchID: 2953
+;Details: https://patches.kibab.com/patches/details.php5?id=2953
+/*
+
+
+*/
+0C73F70: 10708DE50210A0E3020044E2 00109FE531FF2FE1,0xA0FC5601
+;------------------------- end -------------------------
+

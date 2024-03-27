@@ -1,0 +1,14 @@
+;CF75v23
+;Change DevMenu Overlay Display Refresh Rate
+;Change DevMenu Overlay Display Refresh Rate
+;(c) benj9
+;Version: 
+;PatchID: 4877
+;Details: https://patches.kibab.com/patches/details.php5?id=4877
+/*
+
+*/
+02C286A: 36 6C ; internal timer ~ miliseconds * 216.7 / 1000
+
+;------------------------- end -------------------------
+

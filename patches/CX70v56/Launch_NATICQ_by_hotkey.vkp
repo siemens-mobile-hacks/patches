@@ -1,0 +1,28 @@
+;CX70v56
+;Запуск NATICQ по горячей клавише
+;Launch NATICQ by hotkey
+;(c) Kibab
+;(r) RainMaker, den11111, Дэн
+;(p) Geka
+;Version: 1.0
+;PatchID: 6482
+;Details: https://patches.kibab.com/patches/details.php5?id=6482
+/*
+Экспериментальный патч запуска.
+
+Вешаем на горячую клавишу "визитную карточку" и срабатывает NATICQ.
+
+При желании можно назначить для запуска любой эльф изменив путь в теле патча.
+*/
+943390: C5F88EA0 0xa0FBA151 ;CNCT_BUSINESSCD
+
++0FBA150 
+#pragma enable old_equal_ff
+00: FFB58020C7DF2501061C05A18022C7DF
+10: 6C010021301C94DF301CC7DF2901FFBD
+20: "0:\\ZBin\\NATICQ\\NATICQ.elf",00
+#pragma disable old_equal_ff
++0
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;CX65v50
+;Цветовая схема
+;ColorSkin
+;(c) benj9
+;(p) Kibab
+;Version: MP
+;PatchID: 1798
+;Details: https://patches.kibab.com/patches/details.php5?id=1798
+/*
+Настройки цвета (замена цветовым схемам  )
+Данные записаны в виде RRGGBBTT. область значений RR, GG,BB: 0-0xFF, TT=прозрачность : 0-0x64
+
+*/
+1145D52: 8000 0847
+11460DC: 0xA86923A2 0xA0FDAE11
+0FDAE34: 0xFFFFFFFF 0xA86923A2
+;------------------------- end -------------------------
+

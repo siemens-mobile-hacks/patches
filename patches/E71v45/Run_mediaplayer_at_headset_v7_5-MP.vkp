@@ -1,0 +1,20 @@
+;E71v45
+;Запуск медиаплеера при подключении гарнитуры
+;Run mediaplayer at headset connection
+;(c) -=(Kad)=-, Kibab
+;(r) ~Jhellico, ThE TrIFoN
+;(p) titron
+;Version: 7.5-MP
+;PatchID: 9591
+;Details: https://patches.kibab.com/patches/details.php5?id=9591
+/*
+врезка для 7352
+не нашёл для E71, портировал.
+*/
+06F25EA: 201CBBF641FAA7F670EB 014FB847C04601DB06A0 ; ( E71v45 )
+006DBB0: 0xFFFFFFFF 0xA0599CD4 ; 2nd BLX\BL instruction after entrypoint ( E71v45 )
+
+
+
+;------------------------- end -------------------------
+

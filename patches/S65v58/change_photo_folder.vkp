@@ -1,0 +1,17 @@
+;S65v58
+;Изменить папку для фотографий
+;Change folder for photos
+;(c) avkiev
+;(r) (i)vitchek
+;Version: 1
+;PatchID: 2438
+;Details: https://patches.kibab.com/patches/details.php5?id=2438
+/*
+
+*/
+0A24548: 0B00,'0:\\Pictures' 0B00,'0:\\_MyPhoto'
+
+;если в настройках "Сохранять на ММС"
+;0A2565E: 0B00,'4:\\Pictures' 0B00,'4:\\_MyPhoto'
+;------------------------- end -------------------------
+

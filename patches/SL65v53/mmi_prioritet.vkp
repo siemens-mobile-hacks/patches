@@ -1,0 +1,14 @@
+;SL65v53
+;Повышенный приоритет mmi задач
+;Higher MMI Prio
+;(c) benj9
+;(p) dimonp25
+;Version: 
+;PatchID: 9169
+;Details: https://patches.kibab.com/patches/details.php5?id=9169
+/*
+
+*/
+08be8d0: 0D 02
+;------------------------- end -------------------------
+

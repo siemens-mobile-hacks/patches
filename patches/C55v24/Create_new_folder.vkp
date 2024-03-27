@@ -1,0 +1,15 @@
+;C55v24
+;Создание нового каталога
+;Create new folder
+;(c) Joenka
+;Version: 1.0
+;PatchID: 5327
+;Details: https://patches.kibab.com/patches/details.php5?id=5327
+/*
+Что делает патч догадайтесь сами.. Или спросите у Joenka :-)) Наверное для общего развития
+*/
+;30C0DF00 ; точка входа для любого пункта меню (ссылка на 5FC030)
+5FC030: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E00CE00D88D088C0E6FE5C00E6FF7F0388F088E0E0018810E02CE6FDFFFFE00EE00FDACA6A5D06F00A00DB00
+5FC05C: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF "Sms2",00
+;------------------------- end -------------------------
+

@@ -1,0 +1,34 @@
+;C75v22
+;Дата внизу (на главном экране) в виде "Ср, 11 Май"
+;Date at the bottom of maincsreen as "We, 11 May"
+;(c) avkiev
+;(p) alex_itd
+;Version: 8
+;PatchID: 1537
+;Details: https://patches.kibab.com/patches/details.php5?id=1537
+/*
+На главном экране показывает дату вместе с днём недели вместо года, что значительно удобней - вряд ли Вы забудете, какой сейчас год :) Хотя всякое бывает... :)
+
+Это тело патча, ему нужна еще врезка и MP+FL от соответствующей прошивки!
+
+от 1034 отличаеться только +110000 в начале
+*/
++110000
+#pragma enable old_equal_ff
+0FC1000: 0FB50425002F2ED11E48FFF7F9FD2AD0
+0FC1010: 6C461434301D011C0831FEF7F1FF301D
+0FC1020: FEF7F2FF0D3000F023F89523A1780029
+0FC1030: 00D1A370E3702C237078002800D19523
+0FC1040: 2371202363712372717A0A20FEF7E8FF
+0FC1050: 3030A0713031E171307A093400F008F8
+0FC1060: 002302930C2510BC87BC0B1C7F193847
+0FC1070: 00B5FFF759FBC019211CFEF7DDFF00BD
+
+0FC1080: 0xB1C2D3E4,0x0000AB01,0000000000000000,"\
+{patch=BottomDate ver=8 cp=avkiev id=AB01 mem=20}\
+{1 cb ShowComma v=1}\
+",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

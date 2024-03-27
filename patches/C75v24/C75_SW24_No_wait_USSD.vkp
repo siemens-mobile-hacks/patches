@@ -1,0 +1,14 @@
+;C75v24
+;Отключить "Подождите" при USSD Запросе
+;Disable "Please Wait" on USSD Request
+;(c) 1nvisible
+;(p) Святослав (Sweetaslove)
+;Version: 
+;PatchID: 10080
+;Details: https://patches.kibab.com/patches/details.php5?id=10080
+/*
+
+*/
+02CFEDA: 2B21 7047
+;------------------------- end -------------------------
+

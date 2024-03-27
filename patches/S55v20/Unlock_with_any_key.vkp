@@ -1,0 +1,14 @@
+;S55v20
+;Разблокировка клавиатуры любой кнопкой (0-9,#)
+;Unlock keyboard with any key (0-9,#)
+;(c) Matr!x
+;(p) Giro
+;Version: 
+;PatchID: 5404
+;Details: https://patches.kibab.com/patches/details.php5?id=5404
+/*
+
+*/
+5E8F63: 3B 27
+;------------------------- end -------------------------
+

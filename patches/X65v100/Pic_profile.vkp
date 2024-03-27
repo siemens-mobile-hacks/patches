@@ -1,0 +1,17 @@
+;X65v100
+;Картинка профиля на главном экране
+;Picture profile on the main screen
+;(c) Geka
+;(r) RainMaker
+;Version: 0.2
+;PatchID: 6524
+;Details: https://patches.kibab.com/patches/details.php5?id=6524
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=Pic_profile.zip
+
+/*
+показывает картинку текущего профиля
+номера картинок и их координаты меняем в конфиге
+*/
+;качаем приложенный файл
+;------------------------- end -------------------------
+

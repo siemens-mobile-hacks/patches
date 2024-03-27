@@ -1,0 +1,13 @@
+;E71v45
+;Отключить анимацию в окошке "Подождите"
+;Disable animation in "Wait" window
+;(c) Evgr
+;Version: 
+;PatchID: 10334
+;Details: https://patches.kibab.com/patches/details.php5?id=10334
+/*
+
+*/
+094EDF6: BDF25EEE C046C046
+;------------------------- end -------------------------
+

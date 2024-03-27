@@ -1,0 +1,15 @@
+;S75v42
+;Отключить MMI-logging
+;Disable MMI-logging
+;(c) SiNgle
+;(p) GrosserS
+;Version: 
+;PatchID: 4986
+;Details: https://patches.kibab.com/patches/details.php5?id=4986
+/*
+Патч отменяет логгинг MMI, что немного увеличивает скорость работы.
+English:Patch disables MMI logging, that increases phone operation speed.
+*/
+01F8F7A: 041C 70BD
+;------------------------- end -------------------------
+

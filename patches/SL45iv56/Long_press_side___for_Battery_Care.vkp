@@ -1,0 +1,16 @@
+;SL45iv56
+;Долгое нажатие на "+" выводит "Уход за аккум." из Netmonitor
+;Long press side "+" for "Battery Care" from Netmonitor
+;(c) Froster
+;Version: 
+;PatchID: 2064
+;Details: https://patches.kibab.com/patches/details.php5?id=2064
+/*
+Откатить все патчи для "+"!
+*/
+3B04A4: DAA2184C4840EA20 DC5998C8A8D8DC4D 
+3B04AC: F607DC59 D48C0400 
+3B04B0: 98C8A8D8DC4D 46F8EB002D03 
+3B04B6: D48C0400 DADADAA3
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;C75v22
+;Работа телефона без сим-карты
+;No SIM Card Phone Operation
+;(c) SiNgle
+;(p) SuDex
+;Version: 
+;PatchID: 6898
+;Details: https://patches.kibab.com/patches/details.php5?id=6898
+/*
+Жмем *#06# потом заходим в тест и жмём тест звука 1, ничего не происходит, жмем кратко красную кнопку
+[
+EN]:Press *#06#, goto Device Check, press Soundcheck 1 (nothing happens), and press the red button shortly[
+*/
+05AE538: 00F0E8F8 05F0DAED
+03AA050: 10B55A495A48E0F0F0EF041C59485A49 FF7F2DE910109FE510009FE50120A0E3
+03AA060: 0068FF300130C460201CE0F0ECEF5748 0FE0A0E111FF2FE1FFBFBDE8E81A16A1
+0A7B75C: 86F0A3FC 00200BA8
+;------------------------- end -------------------------
+

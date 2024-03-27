@@ -1,0 +1,13 @@
+;C75v24
+;Открыть заблокированные блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;Version: 
+;PatchID: 2938
+;Details: https://patches.kibab.com/patches/details.php5?id=2938
+/*
+
+*/
+086BE00: 00 01
+;------------------------- end -------------------------
+

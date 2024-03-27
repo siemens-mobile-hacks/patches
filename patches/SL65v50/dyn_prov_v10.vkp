@@ -1,0 +1,16 @@
+;SL65v50
+;Динамическая замена имени оператора
+;Dynamic replacing  of Provider name
+;(c) avkiev
+;(r) Bennie, arsh0r, Acid
+;Version: 10
+;PatchID: 1314
+;Details: https://patches.kibab.com/patches/details.php5?id=1314
+/*
+Имя оператора заменяется на строку, меняющуюся с течением времени.
+Частота обновления является частотой опроса сети телефоном.
+*/
+165F9C4: 0xA0B4B96F 0xA0FC1B01 ; SL65v50
+
+;------------------------- end -------------------------
+

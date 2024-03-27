@@ -1,0 +1,15 @@
+;S65v58
+;Уменьшить задержку для долгого нажатия клавиш
+;Decrease Keypad Long Press Delay
+;(c) 1nvisible
+;(r) benj9
+;(p) KiRiK
+;Version: 
+;PatchID: 2594
+;Details: https://patches.kibab.com/patches/details.php5?id=2594
+/*
+
+*/
+115851E: 82 41
+;------------------------- end -------------------------
+

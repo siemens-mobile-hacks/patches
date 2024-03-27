@@ -1,0 +1,15 @@
+;S75v52
+;Передача Java, да и вообще любых файлов через Bluetooth
+;Send Java and Any Files via Bluetooth
+;(c) 1nvisible
+;(p) den11111
+;Version: 
+;PatchID: 8321
+;Details: https://patches.kibab.com/patches/details.php5?id=8321
+/*
+Идем в Опции->Справка и передаем файл
+Options->Help will now work as Send Menu
+*/
+059EDBA: 11 02
+;------------------------- end -------------------------
+

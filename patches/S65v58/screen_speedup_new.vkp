@@ -1,0 +1,14 @@
+;S65v58
+;Ускоритель вывода на экран
+;Screen Speed-Up patch
+;(c) SiNgle
+;(p) dimonp25
+;Version: 0.1
+;PatchID: 9082
+;Details: https://patches.kibab.com/patches/details.php5?id=9082
+/*
+Как на нсг - экран не глючит терь
+*/
+0135ebc6: 68f056ef A861C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;C75v22
+;Отключить подсветку кнопок
+;Disable keypad ligh
+;(c) SiNgle
+;Version: 
+;PatchID: 3910
+;Details: https://patches.kibab.com/patches/details.php5?id=3910
+/*
+
+*/
+078695B: D5 24
+
+;------------------------- end -------------------------
+

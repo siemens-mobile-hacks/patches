@@ -1,0 +1,14 @@
+;M75v19
+;Расширенный список вызовов
+;Extended Calls list
+;(c) BoBa
+;(p) Kibab
+;Version: 3
+;PatchID: 3950
+;Details: https://patches.kibab.com/patches/details.php5?id=3950
+/*
+
+*/
+049EB70: 7FAF58A0 0xA0FC8001
+;------------------------- end -------------------------
+

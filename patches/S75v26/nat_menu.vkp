@@ -1,0 +1,14 @@
+;S75v26
+;Native Menu при нажатии кнопки медиаплеера слева
+;Jump to main menu by Media Key on Left Side
+;(c) truhlik 2006
+;Version: 
+;PatchID: 2633
+;Details: https://patches.kibab.com/patches/details.php5?id=2633
+/*
+Не проверен!
+*/
+0df78c8: 7e7edfa0 227edfa0 ;short key press 
+;0df790c: 957edfa0 227edfa0 ;long key press
+;------------------------- end -------------------------
+

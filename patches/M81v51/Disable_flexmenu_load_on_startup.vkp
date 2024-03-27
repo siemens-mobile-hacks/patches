@@ -1,0 +1,14 @@
+;M81v51
+;Отключить загрузку FlexMenu при включении телефона
+;Disable flexmenu load on startup
+;(c) Miha_r
+;(p) Виктор89
+;Version: 
+;PatchID: 9263
+;Details: https://patches.kibab.com/patches/details.php5?id=9263
+/*
+
+*/
+09FA674: 04 00
+;------------------------- end -------------------------
+

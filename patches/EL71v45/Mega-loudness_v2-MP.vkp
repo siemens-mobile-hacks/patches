@@ -1,0 +1,15 @@
+;EL71v45
+;Мега-громкость
+;Mega-loudness
+;(c) SiNgle,-=(Kad)=-
+;Version: 2-MP
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=8057
+;PatchID: 7733
+;Details: https://patches.kibab.com/patches/details.php5?id=7733
+/*
+Всем извесный патч увеличивающий громкость динамика под мастера, когда не нужен можно отключить, также вы можете настривать уровень усиления громкости в мастер-мидлете
+*/
+04FBF70: 2B00C4E5 D3FFFFEA
+04FBEC4: 030000EF6C3DA0E30320A0E30410A0E1 00709FE537FF2FE101EB06A0290000EA
+;------------------------- end -------------------------
+

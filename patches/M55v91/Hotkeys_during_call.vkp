@@ -1,0 +1,14 @@
+;M55v91
+;Ноtkeys во время разговора
+;Ноtkeys during call
+;(c) Ramil_
+;Version: 
+;PatchID: 4289
+;Details: https://patches.kibab.com/patches/details.php5?id=4289
+/*
+
+*/
+0D2DF6: EA30 0D01 ;кнопка 1
+0D2E12: EA30 0D01 ;кнопки 2-9
+;------------------------- end -------------------------
+

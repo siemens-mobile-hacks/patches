@@ -1,0 +1,14 @@
+;EL71v45
+;Значок Выключенной Вибры на Главном Экране
+;Disabled Vibra Icon on Main Screen
+;(c) 1nvisible
+;(r) SiNgle
+;Version: 
+;PatchID: 8043
+;Details: https://patches.kibab.com/patches/details.php5?id=8043
+/*
+
+*/
+05C27BA: 012148429BF06FFD002804D0FF20E730 EDF7E0F9002806D1FF20FF305A30C046
+;------------------------- end -------------------------
+

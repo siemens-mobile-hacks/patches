@@ -1,0 +1,15 @@
+;C75v22
+;Отключить доступ к интернет-браузеру
+;Disable Access To Internet Browser
+;(c) Kirik
+;Version: 
+;PatchID: 4709
+;Details: https://patches.kibab.com/patches/details.php5?id=4709
+/*
+
+*/
+04A1B14: 998832A0 00000000
+04A1AAC: B38832A0 00000000
+04A13F8: B19232A0 00000000
+;------------------------- end -------------------------
+

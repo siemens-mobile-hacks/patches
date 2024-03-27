@@ -1,0 +1,13 @@
+;M55v91
+;Кнопка гарнитуры во время разговора -> положить трубку
+;Handsfree key during call -> end call
+;(c) Rascal
+;Version: 
+;PatchID: 5902
+;Details: https://patches.kibab.com/patches/details.php5?id=5902
+/*
+
+*/
+D1A3E: DA2196B4 DA215EDE
+;------------------------- end -------------------------
+

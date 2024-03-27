@@ -1,0 +1,16 @@
+;SXG75v22
+;Замена иконок групп и закладок в адресной книге
+;Icons'  and bokmarks' change in adressbook
+;(c) Unknown
+;Version: 
+;PatchID: 6168
+;Details: https://patches.kibab.com/patches/details.php5?id=6168
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sxg75v22&f=Adressbook.zip
+
+/*
+Патч применям с помощью Bit Pim.
+Ложим по адресу brew\mod\adressbook\res\common
+*/
+    
+;------------------------- end -------------------------
+

@@ -1,0 +1,20 @@
+;C60v27
+;Сменить версию прошивки
+;Change firmware version
+;(c) Christ
+;Version: 
+;PatchID: 4363
+;Details: https://patches.kibab.com/patches/details.php5?id=4363
+/*
+English:Please don't be an asshole and throw your FF's
+with changed version here and there on the Net.
+Change 29 to desired version. It's WYSIWYG here, no conversion.
+
+Пожалуйста, не будьте придурками, и не распространяйте
+по сети свои якобы "супер новые" версии прошивок.
+Замените 29 на требуемый номер версии.
+Что напишете, то и будет в телефоне, без преобразований dec-hex.
+*/
+67FF50: 27 29
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;C65v56
+;Шрифт меню и софт кнопок
+;Font menu and soft buttons
+;(c) SiNgle
+;Version: 
+;PatchID: 3808
+;Details: https://patches.kibab.com/patches/details.php5?id=3808
+/*
+
+*/
+0939CF0: 03 02 ; Шрифт софт-кнопок
+0939D38: 03 08 ; Выбраная позиция меню
+0939D3C: 02 08 ; Список меню
+;------------------------- end -------------------------
+

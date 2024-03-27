@@ -1,0 +1,27 @@
+;CX70v56
+;SVS, шорткат просмотра SMS
+;SVS, SMS view shortcut
+;(c) Bennie
+;(p) Lost
+;Version: 
+;PatchID: 2391
+;Details: https://patches.kibab.com/patches/details.php5?id=2391
+/*
+Стрелка вправо для просмотра следующего SMS, влево для просмотра предыдущего
+English:Use Right Arrow as a "View Next Message" shortcut and
+Left Arrow key as a "View Previous Message" shortcut
+
+*/
+0AAFF8C: 69688160 E6F28EFD
+0AB0508: 013290422AD9 B368E6F2C1FA
+0AB0514: 0130 101C
+0AB0578: 3B1CAA68 6B892A89
+0AFB906: 201C9CF172F90C23 8A2008E0012729E0
+0AFB934: 18D0 E9D0
+#pragma enable old_equal_ff
+0D96A90: 012B01D0013200E0013A002A02DB8242
+0D96AA0: 02DA7047421E704700227047A9880181
+0D96AB0: 298941817047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;X75v100
+;Постоянная подсветка в профилях
+;Permanent illum (NSD)
+;(c) SimaFish
+;Version: 1.0
+;PatchID: 8908
+;Details: https://patches.kibab.com/patches/details.php5?id=8908
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Permanent_illum.zip
+
+/*
+
+Эльф написан как полноценный аналог патча "Unending light the screen illumination" - http://patches.siemens-club.org/patches/details.php5?id=6301.
+*/
+Permanent illum (NSD)
+;------------------------- end -------------------------
+

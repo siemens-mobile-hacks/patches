@@ -1,0 +1,17 @@
+;SK65v50
+;Меню выбора языка ввода при нажатии Help (Инф. Т9)
+;Input language menu on Help key (Т9 info)
+;(c) SiNgle
+;(p) ~Jhellico
+;Version: 
+;PatchID: 1513
+;Details: https://patches.kibab.com/patches/details.php5?id=1513
+/*
+
+*/
+03D7D9E: 784900227848 AFF7BBF880BD ;в MMS
+0491BA6: FFF777FF F5F6B7F9 ;в SMS
+04F356C: 7AF0F4EB 93F6D4FC ;в заметках
+05182E2: 79F7D9FB 6EF619FE ;в e-mail
+;------------------------- end -------------------------
+

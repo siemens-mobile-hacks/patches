@@ -1,0 +1,13 @@
+;M75v19
+;Изменение прогрессбара при проигрывании музыки
+;Change progressbar in music play
+;(c) SiNgle
+;Version: 
+;PatchID: 2327
+;Details: https://patches.kibab.com/patches/details.php5?id=2327
+/*
+
+*/
+04D9908: 1000660073 0500700080
+;------------------------- end -------------------------
+

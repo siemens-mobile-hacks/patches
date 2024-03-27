@@ -1,0 +1,13 @@
+;A52v9
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) avkiev
+;Version: 
+;PatchID: 4352
+;Details: https://patches.kibab.com/patches/details.php5?id=4352
+/*
+
+*/
+2033B8: 3D 0D
+;------------------------- end -------------------------
+

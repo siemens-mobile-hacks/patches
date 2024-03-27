@@ -1,0 +1,18 @@
+;S75v52
+;Показывать наличие EDGE в яве
+;Enable EDGE indication in java
+;(c) Evgr, Feyman
+;(r) Lost
+;Version: 1.1
+;PatchID: 9303
+;Details: https://patches.kibab.com/patches/details.php5?id=9303
+/*
+При наличии EDGE показывет его значек вместо GPRS, в ява-приложениях.
+*/
+0ABD06C: 020080E2 7C5605EB ;
+0C12A64: FFFFFFFFFFFFFFFF 020080E210509FE5              
+0C12A6C: FFFFFFFFFFFFFFFF 0050D5E5011055E3                
+0C12A74: FFFFFFFFFFFFFFFF 7DA9FA1A7820A0E3                 
+0C12A7C: FFFFFFFFFFFFFFFF 7BA9FAEB78C7E2A8 
+;------------------------- end -------------------------
+

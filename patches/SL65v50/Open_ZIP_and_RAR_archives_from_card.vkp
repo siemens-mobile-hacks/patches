@@ -1,0 +1,17 @@
+;SL65v50
+;Открыть ZIP и RAR архивы с кард експлорера
+;Open ZIP and RAR archives from card explorer
+;(c) The_Hunter
+;(r) ZlOd
+;Version: 
+;PatchID: 4658
+;Details: https://patches.kibab.com/patches/details.php5?id=4658
+/*
+!к патчу прикреплён файл, http://patches.kibab.com/cnt.php5?d=s65v50&f=archives.rar
+*/
+A0A2E1: 446F63 524152
+A0A320: 646F63 726172
+A0A2F9: 506466 5A4950
+A0A360: 706466 7A6970
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v52
+;Отключить "Подождите" в "Неотв.выз."/"Прин.вызовы"/"Набр.номера"->"Опции"->"Удалить"
+;Disable "Please wait" in "Calls missed"/"Calls received"/"Calls dialled"->"Options"->"Delete"
+;(c) Evgr
+;(p) Виктор89
+;Version: 
+;PatchID: 9209
+;Details: https://patches.kibab.com/patches/details.php5?id=9209
+/*
+
+*/
+058BD50: D2F026EC C046C046
+;------------------------- end -------------------------
+

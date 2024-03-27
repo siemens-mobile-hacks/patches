@@ -1,0 +1,58 @@
+;SL75v47
+;Screen Illumination Auto Control v3.0a
+;Screen Illumination Auto Control v3.0a
+;(c) starfriend
+;(r) ~Jhellico, a1ex
+;(p) loquat
+;Version: 3.0a
+;PatchID: 9842
+;Details: https://patches.kibab.com/patches/details.php5?id=9842
+/*
+English:Change "sl" to "b"
+*/
+;SL75v47
+;Screen Illumination Auto Control
+;Screen Illumination Auto Control
+;(c) starfriend
+;(r) ~Jhellico
+;(p) loquat
+;(!) Master
+
+096450E: 02980D061404240C2D0E C046004FB847014C06A0
+
+#pragma enable old_equal_ff
+0x064C00: 7FB50F48C4DF10D0061C40B484B06846
+0x064C10: 011C0831B4DF6F4604B040BC3F7A0137
+0x064C20: F25DC7DFD780071C3A707FBC039820BC
+0x064C30: 0435AE460D061404240C2D0E7047C046
+0x064C40: 00DD0000
+0x064C50: 0xB1C2D3E4,0x0000DD00,00000000,00000000,\
+"{p=`Screen Illu Auto Control` id=DD00 cp=starfriend ver=3.0}","\
+{1 b 0 r=0..100 v=60}","\
+{2 b 1 r=0..100 v=40}","\
+{3 b 2 r=0..100 v=20}","\
+{4 b 3 r=0..100 v=20}","\
+{5 b 4 r=0..100 v=20}","\
+{6 b 5 r=0..100 v=20}","\
+{7 b 6 r=0..100 v=30}","\
+{8 b 7 r=0..100 v=30}","\
+{9 b 8 r=0..100 v=34}","\
+{10 b 9 r=0..100 v=34}","\
+{11 b 10 r=0..100 v=34}","\
+{12 b 11 r=0..100 v=34}","\
+{13 b 12 r=0..100 v=34}","\
+{14 b 13 r=0..100 v=34}","\
+{15 b 14 r=0..100 v=34}","\
+{16 b 15 r=0..100 v=34}","\
+{17 b 16 r=0..100 v=34}","\
+{18 b 17 r=0..100 v=40}","\
+{19 b 18 r=0..100 v=44}","\
+{20 b 19 r=0..100 v=50}","\
+{21 b 20 r=0..100 v=60}","\
+{22 b 21 r=0..100 v=70}","\
+{23 b 22 r=0..100 v=80}","\
+{24 b 23 r=0..100 v=80}","\
+{endsm}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

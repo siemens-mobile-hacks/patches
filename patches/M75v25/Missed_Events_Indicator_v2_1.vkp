@@ -1,0 +1,30 @@
+;M75v25
+;Индикатор пропущенных событий
+;Missed Events Indicator
+;(c) BuG
+;(p) Grizzzzly
+;Version: 2.1-MP
+;PatchID: 4690
+;Details: https://patches.kibab.com/patches/details.php5?id=4690
+/*
+Очень полный индикатор пропущенных событий, гораздо более полный и продвинутый, нежели стандартный.
+English:
+Very good indicator with lots of opportunities, much better then built-in one!
+
+Total = 969
+Calls = 904
+SMS = 1035
+MMS = 993
+Alarm = 1048
+Tasks = 1049
+BT/IrDA = 465
+Emails = 876
+WAP Push = 898
+UnknownX = 535
+
+*/
+02A92B2: 059800F0B7F80C206043  C046,00488047,0xA0FCA851
+02A92CE: 8A4202D12988C90703D53858A02100F0B6F80136 00F002E805E000C09FE51CFF2FE1,0xA0FCA811,C046
+
+;------------------------- end -------------------------
+

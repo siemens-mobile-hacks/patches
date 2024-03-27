@@ -1,0 +1,14 @@
+;C65v50
+;Включение Инженерного меню
+;Activate Develop menu
+;(c) Phantom
+;Version: 
+;PatchID: 3341
+;Details: https://patches.kibab.com/patches/details.php5?id=3341
+/*
+Необходимо выключить пункт (S)Exit
+Dev. Menu нужно повесить на горячую кнопку
+*/
+11516B0: 040090E5 0000A0E3
+;------------------------- end -------------------------
+

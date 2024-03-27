@@ -1,0 +1,14 @@
+;M75v25
+;Подсветка с шагом 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;Version: 
+;PatchID: 4099
+;Details: https://patches.kibab.com/patches/details.php5?id=4099
+/*
+
+*/
+03B7DB0: 0A 05
+03B7DC0: 0A 05
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;M75v25
+;Папка ZBin вместо Text в моих файлах
+;Folder_ZBin_instead_of_Text_in_my_stuff
+;(c) Crazy_heead
+;Version: 1.0
+;PatchID: 6449
+;Details: https://patches.kibab.com/patches/details.php5?id=6449
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=m75v25&f=ZBin_instead_of_Text_in_my_stuff.zip
+
+/*
+Сделал патчик для удобного доступа к эльфам через мои файлы а не через дебри кард-эксплорера.
+В проге mscx65 при создании файлов mystuff выбираем путь 0:\Text
+Файлы mystuff, и скриншот результатов прилагаются
+*/
+4a57dc: 54006500780074 5a00420069006e
+;------------------------- end -------------------------
+

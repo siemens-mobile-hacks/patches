@@ -1,0 +1,14 @@
+;M55v11
+;Краткое нажатие на красную кнопку -> куча ссылок
+;Shortly press red key -> any function from the list
+;(c) Matr!x
+;(p) ZZToP, «Serg°H»
+;Version: 
+;PatchID: 5141
+;Details: https://patches.kibab.com/patches/details.php5?id=5141
+/*
+
+*/
+0D5ACD: 2DA49B 25D06B;Developer Menu (или любая ссылка из списка)
+;------------------------- end -------------------------
+

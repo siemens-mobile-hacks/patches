@@ -1,0 +1,15 @@
+;S65v58
+;Показ Расширений Файлов в Card-Explorer'е
+;Show File Extensions in Card-Explorer
+;(c) 1nvisible
+;(r) SiNgle
+;(p) KiRiK
+;Version: 
+;PatchID: 3311
+;Details: https://patches.kibab.com/patches/details.php5?id=3311
+/*
+
+*/
+03AE58C: 2E 1E
+;------------------------- end -------------------------
+

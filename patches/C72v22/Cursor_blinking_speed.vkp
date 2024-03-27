@@ -1,0 +1,15 @@
+;C72v22
+;Скорость мигания курсора
+;Cursor blinking speed
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 5845
+;Details: https://patches.kibab.com/patches/details.php5?id=5845
+/*
+
+*/
+;* Скорость мигания курсора ** Cursor blinking speed * © SiNgle
+093DFC8: 2C01 8003
+;------------------------- end -------------------------
+

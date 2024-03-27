@@ -1,0 +1,40 @@
+;SL45iv56
+;BFA. Доступ к бинарникам
+;BFA. Binary File Access
+;(c) rizapn
+;Version: 
+;PatchID: 1896
+;Details: https://patches.kibab.com/patches/details.php5?id=1896
+/*
+Позволяет запускть .bin файлы (типа .exe или .com на компе).
+
+
+Created: July 28, 2004 (v0.9)
+Updated: July 29, 2004 (v1.0)
+
+Патч №199 с http://patch.oslik.ru/SL45_RU
+*/
+0x189E6E: 656D6C 62696E
+0x189E96: 656D6C 62696E
+0x18A22A: 1876 0E75
+
+0x38750C: E6FFE202DAD712D9 0D7CDAE490490DEC
+
+;Раскомментируйте, если не нужен диалог "Пожайлуста, подождите"
+;0x387513: EC F2
+
+0x444990: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FE0040E6FD2000E00CE085D7703600
+0x4449A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 885E88CE88DE88CEE6F61C00DC49C468
+0x4449B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2C00DB00FFFFFFFFFFFFFFFFFFFFFFFF
+
+;Меняет расширение и иконки ".eml" на ".bin"
+;Картинка файла - ID 0x00E8
+
+;Пример иконок:
+0x4AE473: 8014 8394
+0x4AE476: 12BA 928F
+0x4AE478: FEAA DE94
+0x4AE47B: BAE2800295 A292AA92AA
+0x4AE480: D2955295D2 12A212BFF2
+;------------------------- end -------------------------
+

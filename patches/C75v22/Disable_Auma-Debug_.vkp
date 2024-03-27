@@ -1,0 +1,15 @@
+;C75v22
+;Отключить AUMA отладчик
+;Disable Auma-Debug
+;(c) benj9
+;Version: 
+;PatchID: 3353
+;Details: https://patches.kibab.com/patches/details.php5?id=3353
+/*
+ English:speed up phone by stripping needless code
+
+*/
+0786574: 10B5 7047
+07865E8: 0FB4 7047
+;------------------------- end -------------------------
+

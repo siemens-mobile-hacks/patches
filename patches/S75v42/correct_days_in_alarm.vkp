@@ -1,0 +1,17 @@
+;S75v42
+;Правильное название дней в будильнике
+;Correct names of days in alarm clock
+;(c) Belarus
+;Version: 
+;PatchID: 5648
+;Details: https://patches.kibab.com/patches/details.php5?id=5648
+/*
+
+*/
+017FB3E5: BE BD
+017FB3F3: D0B5 D182
+017FB3F9: 8F 82
+017FB3FD: D183 D0B1
+017FB402: D0BE D181
+;------------------------- end -------------------------
+

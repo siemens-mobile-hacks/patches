@@ -1,0 +1,14 @@
+;EL71v45
+;Не выключать вибру при подключенных шнурках
+;Unlock vibra when data cable or charger is connected
+;(c) Miha_r
+;(p) 1allen
+;Version: 
+;PatchID: 7405
+;Details: https://patches.kibab.com/patches/details.php5?id=7405
+/*
+
+*/
+081F833: 0C0D0E0F101211 08080808080808
+;------------------------- end -------------------------
+

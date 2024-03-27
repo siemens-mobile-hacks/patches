@@ -1,0 +1,29 @@
+;EL71v45
+;offline charge indicator
+;offline charge indicator
+;(c) BuG
+;(p) -=PaScaL=-
+;Version: 
+;PatchID: 8029
+;Details: https://patches.kibab.com/patches/details.php5?id=8029
+/*
+
+*/
++162C
+05C0CF0: 13 yy ; bg bottom
+
+05C0CF6: 00 cc ; overall bg color
+05C0D02: 04 yy ; overall bg top
+05C0D08: E9 xx ; overall bg right
+05C0D0A: B6 xx ; overall bg left
+
+05C0D0E: 00 cc ; indicator's bg color
+05C0D1A: 04 yy ; indicator's bg top
+05C0D20: F0 xx ; indicator's bg right
+05C0D22: 00 xx ; indicator's bg left
+
+05C0D2E: 04 yy ; indicator top
+05C0D30: B6 xx ; indicator left
++0
+;------------------------- end -------------------------
+

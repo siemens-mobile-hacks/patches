@@ -1,0 +1,35 @@
+;CX70v50
+;Opera Mini вместо Download Assistant и Bombus вместо Emoty
+;Replace Download Assistant with OperaMini and Emoty with Bombus
+;(c) empeka
+;(p) KreN
+;Version: 
+;PatchID: 1073
+;Details: https://patches.kibab.com/patches/details.php5?id=1073
+/*
+Мидлет должен лежать в 
+0:/java/jam/applications/OperaMini
+и
+0:/java/jam/applications/Bombus 
+или если установлен патч "удалить jam из java" то и здесь jam не нужен..
+Вы можете изменить строку лэнгпака #1246 для изменения имени "Opera Mini".
+Патч изменяет строку Emoty->Bombus автоматически !Только для Native Menu
+Можете изменить пути к мидлетам в патче..
+*/
+08EFE2A: 22A1 1EA1
+08EFE99: 446F776E6C6F6164204173 "OperaMini",00
+08EFEA4: 73697374616E7400 5C,"Bombus",00
+
+08FB264: 13A1 11A1
+08FB2A1: 446F776E6C6F6164204173 "OperaMini",00
+08FB2AC: 73697374616E7400 5C,"Bombus",00
+
+0B8B0D2: 22A1 20A1
+0B8B149: 446F776E6C6F6164204173 "OperaMini",00
+0B8B154: 73697374616E7400 5C,"Bombus",00
+
+;bombus_str
+09482C8: EE1E0000EE1E0000 ED1E0000ED1E0000
+01E9482: 48616E647920416E6479 426F6D62757395959595
+;------------------------- end -------------------------
+

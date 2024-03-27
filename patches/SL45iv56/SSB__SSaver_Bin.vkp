@@ -1,0 +1,32 @@
+;SL45iv56
+;SSB. SSaver.Bin
+;SSB. SSaver.Bin
+;(c) Seklth
+;Version: 1.2
+;PatchID: 2091
+;Details: https://patches.kibab.com/patches/details.php5?id=2091
+/*
+Создан по *** Мидлет как скринсейвер при заблокированной клавиатуре *** 
+
+Добавил: если файл отсутствует/не может быть прочитан - лочется клава 
+
+Используя этот патч имеете возможность назначить бинарник a:\zbin\ssaver.bin 
+как скринсейрер, который будет запускаться автоматически 
+через некоторое время. Для этого режим АВТОБЛОКИРОВКИ клавиатуры 
+должен быть включен. 
+*/
+0x3B02B2: DAA37440 DAEF0037 
+
+;Если вы также хотите запускать скринсейвер по долгому нажатию на '#' 
+;(обычно для блокировки клавиатуры), пропишите в телефон эти данные: 
+0x3AD2B8: DAA37440 DAEF0037 
+
+0x4F3700: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC0E37E6FDEF00DAE4FC7FDB00E6FC 
+0x4F3710: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 5837E6FDBC03E6FE0000E6FF0000DADF 
+0x4F3720: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3EA7F08446F8FFFFEA204C37F0C8E00D 
+0x4F3730: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FE2000E6FF0040DADFAEABF0C8DADF 
+0x4F3740: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 70C5DAC1B6FBDA080000DB002F00DAC1 
+0x4F3750: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FAFBDAEEAC1CDB00613A5C7A62696E5C 
+0x4F3760: FFFFFFFFFFFFFFFFFFFFFF 7373617665722E62696E00
+;------------------------- end -------------------------
+

@@ -1,0 +1,23 @@
+;CX75v13
+;Увеличить фото звонящего на весь экран
+;Enlarge incoming Call Photo
+;(c) SiNgle
+;(r) Mikel
+;(p) Cold Zero
+;Version: 2
+;PatchID: 5998
+;Details: https://patches.kibab.com/patches/details.php5?id=5998
+/*
+Нормальное отображение фото (без 11 пикселей фона)
+English:
+normal display photo without 11 pixels of background
+
+*/
+517c24: 04 00 
+2A6654: 19 00
+2A8be9: F094FB 280028
+2A8c9F: F039FB 280028
+2A9065: F056F9 280028
+2A9151: F0E0F8 280028
+;------------------------- end -------------------------
+

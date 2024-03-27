@@ -1,0 +1,30 @@
+;EL71v45
+;Черный список
+;BlackList
+;(c) SiNgle, ThE TrIFoN, Evgr
+;(r) KreN
+;Version: 3.2-MP
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9805
+;PatchID: 9770
+;Details: https://patches.kibab.com/patches/details.php5?id=9770
+/*
+гибрид из патчей SiNgle и ThE TrIFoN 
+*/
+070BDF4: 321C281C 04F1BCEE
+070BDFE: 321C281C 04F1BEEE
+
+#pragma enable old_equal_ff
+0810B70: 00C09FE51CFF2FE1,0xA0066821
+0810B7C: 00C09FE51CFF2FE1,0xA0066849
+00668DC: 0xA09C01C3                  ; answer call
+#pragma disable old_equal_ff
+
+;EL71v45
++0074000
+#pragma enable old_equal_ff
+0194: 0xA09C154B                     ; 065: EndCall
+#pragma disable old_equal_ff
++0
+
+;------------------------- end -------------------------
+

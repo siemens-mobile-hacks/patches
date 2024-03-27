@@ -1,0 +1,16 @@
+;CX70v50
+;Большие цифровые часы на главном экране при залоченной клавиатуре
+;Big digital clock on mainscreen when keylocked
+;(c) avkiev
+;(r) arsh0r
+;Version: 4-MP
+;PatchID: 1087
+;Details: https://patches.kibab.com/patches/details.php5?id=1087
+/*
+Концепция MP+FL
+Установите этот патч и врезку для своего телефона.
+*/
+1730D7C: 0xA1711F81 0xA0FC1401 ; /CX70v50
+0FC14C0: 0xFFFFFFFF 0xA1711F81 ; \CX70v50
+;------------------------- end -------------------------
+

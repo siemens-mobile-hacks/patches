@@ -1,0 +1,14 @@
+;S75v42
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) ATI
+;Version: 
+;PatchID: 4934
+;Details: https://patches.kibab.com/patches/details.php5?id=4934
+/*
+
+*/
+0970480: 6549 0121
+;------------------------- end -------------------------
+

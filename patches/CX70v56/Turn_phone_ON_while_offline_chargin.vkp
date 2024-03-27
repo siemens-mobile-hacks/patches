@@ -1,0 +1,15 @@
+;CX70v56
+;Включить телефон при оффлайн зарядке
+;Turn phone ON while offline charging
+;(c) tick
+;(r) 1nvisible
+;(p) SiamiX
+;Version: 1.0
+;PatchID: 6849
+;Details: https://patches.kibab.com/patches/details.php5?id=6849
+/*
+
+*/
+08BEADE: 0120 93DF
+;------------------------- end -------------------------
+

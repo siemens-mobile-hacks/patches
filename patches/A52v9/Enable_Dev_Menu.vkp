@@ -1,0 +1,13 @@
+;A52v9
+;Включить инженерное меню
+;Enable Dev Menu
+;(c) avkiev
+;Version: 
+;PatchID: 4351
+;Details: https://patches.kibab.com/patches/details.php5?id=4351
+/*
+
+*/
+0A9FCE: 2D 0D
+;------------------------- end -------------------------
+

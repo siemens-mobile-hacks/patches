@@ -1,0 +1,14 @@
+;SL75v47
+;Не спрашивать подтверждения включения по будильнику
+;Power on by Alarm clock without confirmation
+;(c) ThE TrIFoN
+;(p) a1ex
+;Version: 
+;PatchID: 6805
+;Details: https://patches.kibab.com/patches/details.php5?id=6805
+/*
+
+*/
+0302148: 4BDE19FB 44C9FCEB
+;------------------------- end -------------------------
+

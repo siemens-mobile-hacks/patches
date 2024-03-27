@@ -1,0 +1,65 @@
+;SL45iv56
+;Код города или оператора вместо кода страны
+;City or Provider Code Instead Country Code
+;(c) Fox_
+;(r) avkiev
+;Version: 
+;PatchID: 1920
+;Details: https://patches.kibab.com/patches/details.php5?id=1920
+/*
+Теперь вместо кода страны мы можем прописать код города или провайдера. 
+Страну переименовываем Смелтером 
+Пример code Algeria +213 => d5, меняем +7863 => 1eb7 
+
+
+Released: October 5, 2004
+
+Патч №223 с http://patch.oslik.ru/SL45_RU
+*/
+;Rostov - 7863 
+18e9b0: d500 b71e 
+;MTS - 7918 
+18e9b4: 7801 ee1e 
+; Bee Line - 7903 
+18e9b8: 3600 df1e 
+; Bee Line - 7905 
+18e9bc: 3d00 e11e 
+;TELE 2 - 7904 
+18e9c0: 2b00 e01e 
+; Name of provider 
+;18e9c4: cd03 xxxx 
+;.. 
+;.. 
+;.. 
+;MegaFon 7928 v 
+18ead0: 5400 f81e 
+
+;Chahge of langpack 
+; 0D8F "Vietnam" => "MegaFon" 
+
+1AE524: 95566965746E616D00 954D656761466F6E00 
+
+; 0D33 "Algeria" => "POCTOB" 
+
+1AE1A4: 95416C676572696100 95504F43544F429500 
+
+; 0D34 "Andorra" => "MTS" 
+
+1AE1AD: 95416E646F72726100 954D54539595959500 
+
+; 0D36 "Argentina" => "Bee Line" 
+
+1AE1BF: 95417267656E74696E6100 95426565204C696E659500 
+
+; 0D37 "Australia" => "Bee Line" 
+
+1AE1CA: 954175737472616C696100 95426565204C696E659500 
+
+; 0D38 "Austria" => "TELE 2" 
+
+1AE1D5: 954175737472696100 9554454C4520329500 
+
+; Smelter you can take here: 
+;http://avkiev.kiev.ua/Siemens/Smelter/Smelter.rar 
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;S75v26
+;Переименование файлов с расширением
+;Rename files
+;(c) SiNgle
+;(p) mvmx
+;Version: 
+;PatchID: 2425
+;Details: https://patches.kibab.com/patches/details.php5?id=2425
+/*
+
+*/
+04F044C: 2E22 0022
+048309C: 2E22 0022
+04830D0: 2E22 0022
+;------------------------- end -------------------------
+

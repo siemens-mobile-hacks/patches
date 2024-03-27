@@ -1,0 +1,270 @@
+;X65v100
+;Секвенсер Клавиш
+;Key Sequencer
+;(c) benj9
+;(r) chaos, bug, avkiev, 1nvisible
+;(p) -=[LCW]=-ExXtReMe
+;Version: 2
+;PatchID: 3583
+;Details: https://patches.kibab.com/patches/details.php5?id=3583
+/*
+(!) Masterpatch, API & Function Library: uses function libr. no. v13, v18, v19, z00,
+(!) funcs: 3, 9, 20, 23, 26, 31, 52, 61, 68, 75, 77, 80, 88, 90, 91, 104, 160
+(!) Говорящий телефон v3
+(!) Блинкер 3.2
+(!) API 8.1
+если используете функцию "Blinker Sign" Блинкер 3.2 должен быть установлен.
+ML=меню,списки,мидлеты. MS=главный экран. SS=сринсейвер.
+KL=залоченная клава. !=не, +=и
+проиграть звук (00=выкл)
+примеры: нажмите "*#" чтобы заблокировать клаву, "*sidekey up" для выключения тела. "*08" для проговаривания 
+времени
+Есть 2 способа использовать секвенсер: глобально или после нажатия горячей клавиши
+Это урезанная но рабочая версия (по крайней мере у меня) оригинал можно найти на forum.modopo.com
+Вы можете добавлять/удалять секвенсии из CCC5 как угодно, но оставляйте дистанцию 0x10 {offset}!!!
+Здесь урезан только конфиг, тело я не трогал.
+*/
+#pragma enable old_equal_ff
+0FDF000: 4B6579537132302C62656E6A3900FFB5
+0FDF010: 86B0051CE1F760FB3F88002F34D0E1F7
+0FDF020: 57FB386801282FD0534C24682468012C
+0FDF030: 2AD0E1F775FB3F68013725D5CC200002
+0FDF040: C530E1F7DDFD1FD0002C01D5266028E0
+0FDF050: 10300024474A0368934204D0402C04DA
+0FDF060: 10300134F7E7201C01D10C2006E01430
+0FDF070: E1F716F8271C041C0AD1002000F0E9F9
+0FDF080: 3D49096801200860281C01066DD454E0
+0FDF090: FE490C602660E77300F053F9012700F0
+0FDF0A0: 91F928064FD400F064F90490E1F7FCFA
+0FDF0B0: 38780190281CE27C2668B778B8420CD1
+0FDF0C0: 012A32DA0222E274A274002262740027
+0FDF0D0: 00F078F900F08BF949E0F778B8421FD0
+0FDF0E0: 002A08D10021029100F048F8FF2924D0
+0FDF0F0: 00F027F921E00121029100F03FF8627C
+0FDF100: 01326274A27C012A03D0022700F05AF9
+0FDF110: 03E0FF292BD000F014F90122E27426E0
+0FDF120: A17C002909D0002A02D0022700F04AF9
+0FDF130: 00F007F90021E174FFE7E1F7C9F80698
+0FDF140: D34FB84713E0E1F7C7FA3F88CD488742
+0FDF150: 02D10320E1F764F8281CE27C002A04D0
+0FDF160: 012A04D10022E27401E0E1F7B5F806B0
+0FDF170: FFBD0000F0E0F0E08CF4FDA0DDB50027
+0FDF180: A77423681033E07BB84259DD14200019
+0FDF190: C15D3E019A199079002838D0FF200790
+0FDF1A0: 099ED379012018400A9002D1012E2ED0
+0FDF1B0: 06E0002E2BD0607C002801D0002926D0
+0FDF1C0: 537BFC20184013D00898802600F0AEF8
+0FDF1D0: 10D00B98202600F0A9F80BD008980B9E
+0FDF1E0: 00F0D6F801263040082600F09FF801D0
+0FDF1F0: 012000E000200AD00A98012801D05018
+0FDF200: 01E0607C101808300678B54204D00021
+0FDF210: 14200019C15511E00126A6744678002E
+0FDF220: 15D00A9B012B02D0042910DA02E0637C
+0FDF230: 042B0CDA0131201C1430C1550137A0E7
+0FDF240: A07C002801D000F0D2F80799DDBD161C
+0FDF250: E1F742FA8B4A3A80B7790796082F61DC
+0FDF260: 7F00043FBF443CE02AE025E013E02DE0
+0FDF270: 33E006E0089A01218A1AE1F715FA3A70
+0FDF280: 3BE0E1F725FA01213970E0F7DDFE0320
+0FDF290: E0F7C6FF31E000F0C9F843D0051C9DB0
+0FDF2A0: 6846011D016078A12A1CE1F729F96846
+0FDF2B0: E0F79AFF1DB020E0FF2000F052F81CE0
+0FDF2C0: 102000F04EF8E0F717FF16E000F0AEF8
+0FDF2D0: 28D00121E0F7C0FF0FE0B088E0F79CFE
+0FDF2E0: 0BE00B98FF2802D0102000F03AF83768
+0FDF2F0: B088002100220023B847B07BF27B8118
+0FDF300: 01D000F05AF8F77902231F4203D000F0
+0FDF310: 20F800F01EF804231F4296D004205D4F
+0FDF320: B84792E7022700F04DF88EE71E4206D0
+0FDF330: 760870431E40B04201D0002070470120
+0FDF340: 704783B5E17B0431201C1030E0F7B8FF
+0FDF350: 83BD80B50C20E0F7BBFF8C20E0F7BCFF
+0FDF360: 80BD82B5011CE0F7EBFF002800D00170
+0FDF370: 82BD80B5E0F7E4FF002801D1002006E0
+0FDF380: 007819270740192F01D00127384080BD
+0FDF390: 8CB5E1F7A1F97B78FF2B0CD13A78002A
+0FDF3A0: 01D1022008E0FF2A03D1012E03D00128
+0FDF3B0: 01D0002000E001208CBD8AB50221E0F7
+0FDF3C0: EFFE8ABD8FB52368012F0ADB06D05878
+0FDF3D0: 0121084207D0987ADA7A04E02F200122
+0FDF3E0: 01E0187A5A7A0221E0F7DAFE8FBD8FB5
+0FDF3F0: 01202074201C043021684968D92900DC
+0FDF400: D92102A20132E0F72FFF8FBDFFB51F4C
+0FDF410: 2468257C002D08D0201C1030E17B0131
+0FDF420: E0F74EFF0327FFF7CDFFFFBDEEB5B088
+0FDF430: 051CCC200002C630E1F7E2FB04D03820
+0FDF440: 684380190430EEBD242000F002F80020
+0FDF450: EEBD16B514A10C188CB068460EA1E0F7
+0FDF460: 37FE6846211CE0F727FE041C011C0020
+0FDF470: 0022E0F705FF211C01200022E0F700FF
+0FDF480: 0CB016BD00FF000025730000,0xA8000204 ; free ram 4 bytes
+0FDF490: 0xA0FDF341,1DC8FDA0 ; patch duplex (gets keypress_on in R0), BlinkerSign (dont change)
+0FDF498: "KeySeq2 error: ",00,"got no mem!",00,"vklay config data error",00,"enable string conf in master midlet",00
+#pragma disable old_equal_ff
+
+; Здесь разместите свои мидлеты и тмо
+; номер строки поместите в поле param
+
+#pragma enable old_equal_ff
+0FDF4F0: E4D3C2B1,0x0000CCC6,0000000000000000,"\
+{patch=_KeySeq_Strings ver=2 cp=benj9 id=CCC6}","\
+{info `String DB for KeySequencer. Put the string number (1st is 0) ","\
+into the param field of a key sequence for MIDlet  or tmo launch.`}","\
+\
+{4 sf 0 ml=55 v=`0:\\Java\\jam\\Applications\\MP\\Master.jad`}","\
+{60 sf 1 ml=55 v=`0:\\Java\\jam\\Applications\\FM\\Filemanager.jad`}","\
+{116 sf 2 ml=55 v=`0:\\Misc\\stuff.tmo`}",00
+#pragma disable old_equal_ff
+
+;---===---===---===---===---===---===---===---===---===---===---===---===---===---===---===---===---===---===---===---
+;===---===---===---===---===---===---===---===---===---===---===---===---===---===---===---===---===---===---===---===
+
+; поместите конфиг в любом свободном месте в трубке.
+; {offset} должен быть с интервалом 0x10!!!!!
+
+#pragma enable old_equal_ff
+FD01A0: E4D3C2B1,0x0000CCC5,0000000000000000,"\
+{patch=`Key Sequencer` ver=2 cp=benj9 id=CCC5}","\
+\
+{c key `off`=0 `0`=0x30 `1`=0x31 `2`=0x32 `3`=0x33 `4`=0x34 `5`=0x35 ","\
+`6`=0x36 `7`=0x37 `8`=0x38 `9`=0x39 `*`=0x2a `#`=0x23 `left sk`=1 ","\
+`right sk`=4 `red key`=0xC `green key`=0xB `joy up`=0x3B ","\
+`joy dn`=0x3C `joy left`=0x3D `joy right`=0x3E `joy click`=0x1A ","\
+`provkey`=0x11 `side up`=0xD `side dn`=0xE `dicta`=6}","\
+\
+{c con `always`=0 `!ML`=12 `ML`=8 `MS`=44 `SS`=48 `!SS`=32 `KL`=192 ","\
+`!KL`=128 `!ML+KL`=204 `ML+KL`=200 `!ML+!KL`=140 `ML+!KL`=136 `MS+KL`=236 ","\
+`MS+!KL`=172 `SS+KL`=240 `SS+!KL`=176 `!SS+KL`=224 `!SS+!KL`=160}","\
+\
+{c exe off=0 `launch function`=1 `launch midlet`=5 `set profile`=6 ","\
+`shutdown`=7 `keylock`=8 `open tmo`=4 `unlock`=2 `lock`=3}","\
+\
+{sm Preferences}","\
+{sm keys}{2 o hotkey c=key v=0x2A}{3 o escapekey c=key v=0xC}{endsm}","\
+{sm sounds}{8 h hotkey v=3A}{9 b len v=1}{10 h `failed sound` v=3F}","\
+{11 b len v=2}{1.0 cb `timeout sound` v=1}{endsm}","\
+{4 ms `sequence timeout (ms)` v=5003}","\
+{endsm}","\
+\
+Key Sequences","\
+\
+{offset=0x10}{sm Keylock}","\
+{6 o action c=exe v=8}","\
+{7.0 cb hotkey v=1}","\
+{sm Keys}","\
+{8 o c=key v=0x23}","\
+{9 o c=key v=0}","\
+{10 o c=key v=0}","\
+{11 o c=key v=0}","\
+{12 o c=key v=0}","\
+{endsm}","\
+{13 o `only if` c=con v=12}","\
+{7.1 cb `send red key` v=1}","\
+{7.2 cb `blinker sign` v=1}","\
+{14 h sound ml=1 v=3A}","\
+{15 sl len r=1..10 v=2}{endsm}","\
+\
+{sm `Profile Sequences`}","\
+{offset=0x20}{sm 1}","\
+{6 o action c=exe v=6}","\
+{4 h param ml=2 v=00}","\
+{7.0 cb hotkey v=1}","\
+{sm Keys}","\
+{8 o 1 c=key v=0x31}","\
+{9 o 2 c=key v=0}","\
+{10 o 3 c=key v=0}","\
+{11 o 4 c=key v=0}","\
+{12 o 5 c=key}{endsm}","\
+{13 o `only if` c=con}","\
+{7.2 cb `blinker sign` v=1}","\
+{14 h sound ml=1 v=3b}","\
+{15 sl len r=1..10 v=3}{endsm}","\
+\
+{offset=0x30}{sm 2}","\
+{6 o action c=exe v=6}","\
+{4 h param ml=2 v=01}","\
+{7.0 cb hotkey v=1}","\
+{sm Keys}","\
+{8 o 1 c=key v=0x32}","\
+{9 o 2 c=key v=0}","\
+{10 o 3 c=key v=0}","\
+{11 o 4 c=key v=0}","\
+{12 o 5 c=key v=0}{endsm}","\
+{13 o `only if` c=con}","\
+{7.2 cb `blinker sign` v=1}","\
+{14 h sound ml=1 v=3b}","\
+{15 sl len r=1..10 v=3}{endsm}","\
+\
+{offset=0x40}{sm 3}","\
+{6 o action c=exe v=6}","\
+{4 h param ml=2 v=02}","\
+{7.0 cb hotkey v=1}","\
+{sm Keys}","\
+{8 o 1 c=key v=0x33}","\
+{9 o 2 c=key v=0}","\
+{10 o 3 c=key v=0}","\
+{11 o 4 c=key v=0}","\
+{12 o 5 c=key v=0}{endsm}","\
+{13 o `only if` c=con}","\
+{7.2 cb `blinker sign` v=1}","\
+{14 h sound ml=1 v=3b}","\
+{15 sl len r=1..10 v=3}{endsm}","\
+{endsm}","\
+\
+{offset=0x50}{sm `Spell time`}","\
+{6 o action c=exe v=1}","\
+{4 h param ml=2}","\
+{0 a address v=A0FC3001}","\
+{7.0 cb hotkey v=1}","\
+{sm Keys}","\
+{8 o c=key v=0x30}","\
+{9 o c=key v=0x38}","\
+{10 o c=key v=0}","\
+{11 o c=key v=0}","\
+{12 o c=key v=0}{endsm}","\
+{13 o `only if` c=con}","\
+{7.1 cb `send red key` v=0}","\
+{7.2 cb `blinker sign` v=1}","\
+{14 h sound ml=1}","\
+{15 sl len r=1..10}{endsm}","\
+\
+{offset=0x60}{sm `User define`}","\
+{6 o action c=exe v=0}","\
+{4 h param ml=2 v=0}","\
+{0 a address v=0}","\
+{7.0 cb hotkey v=0}","\
+{sm Keys}","\
+{8 o c=key v=0}","\
+{9 o c=key v=0}","\
+{10 o c=key v=0}","\
+{11 o c=key v=0}","\
+{12 o c=key v=0}{endsm}","\
+{13 o `only if` c=con}","\
+{7.1 cb `send red key` v=0}","\
+{7.2 cb `blinker sign` v=0}","\
+{14 h sound ml=1 v=0}","\
+{15 sl len r=1..10 v=0}{endsm}","\
+\
+{offset=0x70}{sm Shutdown}","\
+{6 o action c=exe v=7}","\
+{4 h param ml=2}","\
+{0 a address}","\
+{7.0 cb hotkey v=1}","\
+{sm Keys}","\
+{8 o c=key v=0xD}","\
+{9 o c=key v=0}","\
+{10 o c=key v=0}","\
+{11 o c=key v=0}","\
+{12 o c=key v=0}{endsm}","\
+{13 o `only if` c=con v=12}","\
+{7.1 cb `send red key` v=0}","\
+{7.2 cb `blinker sign` v=1}","\
+{14 h sound ml=1 v=3E}","\
+{15 sl len r=1..10 v=5}{endsm}","\
+\
+*add/remove sequences in vklay*","\
+{0x10 const size=4 v=0xE0F0E0F0}",00,\
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

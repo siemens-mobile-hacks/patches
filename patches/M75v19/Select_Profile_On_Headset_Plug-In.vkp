@@ -1,0 +1,15 @@
+;M75v19
+;Выбор профиля при подключении гарнитуры
+;Select Profile On Headset Plug-In
+;(c) ThE TrIFoN
+;(p) Grizzzzly
+;Version: 
+;PatchID: 4010
+;Details: https://patches.kibab.com/patches/details.php5?id=4010
+/*
+Используется для сохранения вибры при подключенной гарнитуре
+English:useful to keep vibra on
+*/
+03453DE: 04 NN ; NN = № профиля - 1
+;------------------------- end -------------------------
+

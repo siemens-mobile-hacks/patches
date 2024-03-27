@@ -1,0 +1,14 @@
+;S75v31
+;Плавное включение подсветки
+;Smooth keypad light
+;(c) SiNgle
+;(p) StrikerVoo
+;Version: 
+;PatchID: 2757
+;Details: https://patches.kibab.com/patches/details.php5?id=2757
+/*
+
+*/
+95F19C: 0022 FF22
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;C81v51
+;Перенос папки Licenses на диск Config
+;Reallocate Licenses folder to Config disk
+;(c) SimaFish
+;Version: 
+;PatchID: 9214
+;Details: https://patches.kibab.com/patches/details.php5?id=9214
+/*
+
+*/
+0D31590: 31 32
+0D3159C: 31 32
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M65v50
+;Графический индикатор температуры аккумулятора
+;Accu Temperature As Graphic Indicator
+;(c) benj9
+;(r) ACiDmrp, avkiev, BuG
+;Version: 2.1-MP
+;PatchID: 1648
+;Details: https://patches.kibab.com/patches/details.php5?id=1648
+/*
+
+*/
+1633EEE: 584300AB091A188B0130 C046004FB84711E3FDA0
+;------------------------- end -------------------------
+

@@ -1,0 +1,20 @@
+;X65v100
+;Включение/выключение вибры при блокировке/разблокировке клавиатуры
+;Turn vibra on/off on keypad lock/unlock
+;(c) ~Jhellico
+;(r) empeka
+;Version: 0.3
+;PatchID: 3207
+;Details: https://patches.kibab.com/patches/details.php5?id=3207
+/*
+
+*/
+#pragma enable old_equal_ff
+0FC7000: 002200E0012278B5F9F74EFB3A600948
+0FC7010: F9F7F6FD07D004B4F9F7F2F804BC9042
+0FC7020: 01D0F9F741F978BC0121032008F000E8 
+0FC7030: 0xB1C2D3E4,0x00003101,0000000000000000,\
+"{patch=VibraOnKeyLock id=3101 cp=`~Jhellico` ver=0.3}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

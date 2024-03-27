@@ -1,0 +1,16 @@
+;CX75v13
+;Включение инженерного меню
+;Enable developer menu
+;(c) Phantom
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 759
+;Details: https://patches.kibab.com/patches/details.php5?id=759
+/*
+Включает возможность входа в инженерное меню. Есть небольшая тонкость: вход в меню не по нажатию "#" или "*" и находясь в главномменю,  как было раньше, а придётся повесить вызов на горячую кнопку доступа (1..9 и софт-кнопки), при изменении назначаемого действия, одним из предлагаемых вариантов будет Develop. menu. Ну и как всегда, предупреждаю, что изменения параметров в инженерном меню могут плохо повлиять на стабильность работы телефона.
+
+EN: Includes an opportunity of an input in the Developer menu. There is a small subtlety: entrance in the menu is not on pressing "#" or "*" and being in MainMenu as was earlier - you will have to set up call on the hotkey (1..9 or soft-keys): when you change its action, one of offered variants will be Develop. menu. Well and as always, I warn, that changes of parameters in the Developer menu can badly affect stability of work of phone.
+*/
+0830A10: 040090E5 0000A0E3
+;------------------------- end -------------------------
+

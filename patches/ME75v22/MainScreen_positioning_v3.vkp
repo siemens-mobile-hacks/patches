@@ -1,0 +1,57 @@
+;ME75v22
+;Позиционирование элементов главного экрана
+;MainScreen positioning
+;(c) SiNgle, BuG, KiRiK, [crazy]misha
+;(r) arsh0r
+;Version: 3
+;PatchID: 5041
+;Details: https://patches.kibab.com/patches/details.php5?id=5041
+/*
+
+*/
+;Charge Indicator (Switched-Off Mode)
+02A87AA: 10 YY ; background end Y
+02A87B0: 02 YY ; background start Y
+02A87B2: 63 XX ; background start X
+02A87B4: 80 XX ; background end X
+02A87B9: F047FB 280028 ; no background
+02A87C2: 02 YY ; Y
+02A87C4: 63 XX ; X
+
+;Net
+02A8862: 10 YY ; background end Y
+02A8866: 02 YY ; background start Y
+02A8868: 21 XX ; background end X
+02A886A: 03 XX ; background start X
+;02A886F: F0ECFA 280028 ; no background
+02A8878: 02 YY ; Y
+02A887A: 03 XX ; X
+
+;Iconbar
+02A8B7E: 10 YY ; background end Y
+02A8B82: 02 YY ; background start Y
+02A8B84: 23 XX ; background start X
+02A8B86: 61 XX ; background end X
+;02A8B8D: F05DF9 280028 ; no background
+02A8BB8: 21 XX ; X
+02A8BD2: 02 YY ; Y
+
+;Battery
+02A8C6C: 10 YY ; background end Y
+02A8C70: 02 YY ; background start Y
+02A8C72: 80 XX ; background end X
+02A8C74: 63 XX ; background start X
+;02A8C79: F0E7F8 280028 ; no background
+02A8C82: 02 YY ; Y
+02A8C84: 63 XX ; X
+
+049ADBC: 08 YY ; Y - Provider name
+049ADCC: 1A YY ; Y - Sub provider name
+049ADEC: 72 YY ; Y - Flash-SMS - x75
+049ADEC: 72 YY ; Y - Stopwatch/Timer
+049AE1C: 58 YY ; Y - Sub provider name/Flash SMS with provider logo
+049AE2C: 72 YY ; Y - Flash SMS with provider logo - x75
+049AE2C: 72 YY ; Y - Stopwatch/Timer with provider logo
+02CF948: A1 YY ; Y - Time & Date
+;------------------------- end -------------------------
+

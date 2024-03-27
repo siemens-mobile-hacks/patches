@@ -1,0 +1,33 @@
+;S65v58
+;Перенос папок Sms archive и Text Module на Config
+;Move folders Sms archive and Text Module to disk Config
+;(c) TAPAKAH
+;(p) -=(Kad)=-
+;Version: 1.0
+;PatchID: 2575
+;Details: https://patches.kibab.com/patches/details.php5?id=2575
+/*
+RUS: Переносит папки Sms archive и Text Module на диск Config. Видимо для любителей скрывать свой обмен сообщениями.
+
+ENG: Transfers folders Sms archive and Text Module on disk Config. Probably for fans to hide the exchange of messages.
+
+*/
+A252C0: 30 32
+A252DE: 30 32
+A252EE: 30 32
+A25310: 30 32
+A2533A: 30 32
+A25352: 30 32
+A2537A: 30 32
+A253A2: 30 32
+A253BA: 30 32
+A253E4: 30 32
+A25410: 30 32
+A25428: 30 32
+A25452: 30 32
+A2547C: 30 32
+A25492: 30 32
+A2560C: 30 32 ;Text Module
+
+;------------------------- end -------------------------
+

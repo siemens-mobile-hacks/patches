@@ -1,0 +1,13 @@
+;S75v32
+;Отключить подсветку при смене профиля
+;Disable Illumination in SetProfile
+;(c) BoBa
+;Version: 
+;PatchID: 3710
+;Details: https://patches.kibab.com/patches/details.php5?id=3710
+/*
+
+*/
+02CE3F6: 1DF188EA C046C046
+;------------------------- end -------------------------
+

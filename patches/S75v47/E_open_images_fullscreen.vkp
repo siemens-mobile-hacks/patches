@@ -1,0 +1,17 @@
+;S75v47
+;Открывать картинки сразу во весь экран
+;Open images fullscreen immediately
+;(c) Evgr
+;(r) Ganster41
+;(p) dimonp25
+;Version: 
+;PatchID: 9566
+;Details: https://patches.kibab.com/patches/details.php5?id=9566
+/*
+
+*/
+05a7988: 00 01
+05a7992: 00 01
+
+;------------------------- end -------------------------
+

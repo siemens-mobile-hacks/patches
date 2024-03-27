@@ -1,0 +1,21 @@
+;SL75v52
+;PIML_EP(3.0)SL7Cv52
+;PIML_EP(3.0)SL7Cv52
+;(c) Rst7/CBSIE
+;(p) bertgrin
+;Version: 
+;PatchID: 10259
+;Details: https://patches.kibab.com/patches/details.php5?id=10259
+/*
+Новое место + измененные данные
+*/
+#pragma enable old_equal_ff
+0x0155EC10: 0400A0E1CCBD11FA0400A0E1996500EB
+0x0155EC20: 0500A0E1FE80BDE8
+;PATCH
+#pragma disable old_equal_ff
+0x004F111C: 201CFFF7 00480047
+0x004F1120: 21FB281C 10EC55A1
+
+;------------------------- end -------------------------
+

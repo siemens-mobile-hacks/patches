@@ -1,0 +1,16 @@
+;CX75v25
+;Разрешить Разблокировку Клавиатуры Двойным Нажатием #
+;Allow KeyBoard Unlock by Double-Press of #
+;(c) 1nvisible
+;(p) Geka
+;Version: 
+;PatchID: 5490
+;Details: https://patches.kibab.com/patches/details.php5?id=5490
+/*
+Долгое нажатие также работает.
+English:
+Long-Press also works.
+*/
+348044: 36D1 C046
+;------------------------- end -------------------------
+

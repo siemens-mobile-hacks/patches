@@ -1,0 +1,14 @@
+;E71v42
+;Ускорение длинного нажатия
+;Long Press Acceleration
+;(c) 1nvisible
+;(p) $TA$
+;Version: 
+;PatchID: 6742
+;Details: https://patches.kibab.com/patches/details.php5?id=6742
+/*
+
+*/
+08D2A40: 011C 4021
+;------------------------- end -------------------------
+

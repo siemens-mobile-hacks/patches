@@ -1,0 +1,16 @@
+;M75v25
+;Разрешить Разблокировку Клавиатуры Двойным Нажатием #
+;Allow KeyBoard Unlock by Double-Press of #
+;(c) 1nvisible
+;(p) VoVka
+;Version: 
+;PatchID: 5488
+;Details: https://patches.kibab.com/patches/details.php5?id=5488
+/*
+Долгое нажатие также работает.
+English:
+Long-Press also works.
+*/
+0348048: 36D1 C046
+;------------------------- end -------------------------
+

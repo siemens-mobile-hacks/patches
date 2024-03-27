@@ -1,0 +1,21 @@
+;EL71v38
+;Отправка Flash SMS
+;Send Flash SMS
+;(c) Bennie
+;(r) MEGA РЕСПЕКT 1nvisible, avkiev за помощь по Keil
+;(p) -=PaScaL=-
+;Version: 
+;PatchID: 6853
+;Details: https://patches.kibab.com/patches/details.php5?id=6853
+/*
+Для отправки Flash SMS необходимо поставить пробел в начале сообщения. Если пробел не ставить сообщение отправится как обычно.
+*/
+0E211A4: 201CB168 BFF19CFE
+
+#pragma enable old_equal_ff
+0FE0EE0: 201CB8380178082906D000290CD1417B
+0FE0EF0: 7F221140F02204E0437B817B1B02C918
+0FE0F00: 1822202900D10270201CB1687047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,23 @@
+;CX70v56
+;Убрать звук GPRS
+;Remove GPRS sound
+;(c) AlexeyZ
+;(p) Kaldirj
+;Version: 0.1
+;PatchID: 1408
+;Details: https://patches.kibab.com/patches/details.php5?id=1408
+/*
+
+*/
+;CX70v56
+;Убрать звук GPRS
+;Remove GPRS sound
+;(c) AlexeyZ
+;Version: 0.1
+;PatchID: 1405
+;Details: http://patches.kibab.com/patches/details.php5?id=1405
+0152416C: 5352544600000400C409D200 000000000000000000000000
+
+;------------------------- end -------------------------
+;------------------------- end -------------------------
+

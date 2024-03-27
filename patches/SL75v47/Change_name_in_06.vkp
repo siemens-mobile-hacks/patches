@@ -1,0 +1,16 @@
+;SL75v47
+;Замена имени в *#06#
+;Change name in *#06#
+;(c) avkiev
+;(p) Apo4emu
+;Version: 
+;PatchID: 6821
+;Details: https://patches.kibab.com/patches/details.php5?id=6821
+/*
+Заменяем имя тела SL75 на любое другое, в этом случае на звучное Siemens SL91
+:)
+*/
+008108E: 534C37350033003000000000 "Siemens SL91"
+
+;------------------------- end -------------------------
+

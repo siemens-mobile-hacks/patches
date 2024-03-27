@@ -1,0 +1,19 @@
+;S65v58
+;Дополнение к мастер патчу
+;masterpatch shutdown crash fix
+;(c) benj9
+;(p) -=(Kad)=-
+;Version: 2
+;PatchID: 3603
+;Details: https://patches.kibab.com/patches/details.php5?id=3603
+/*
+use only if you have shutdown crashs
+Использовать только если телефон с писком отрубается при выключении
+Помогает при установке Секвенсера клавиш, исправляет
+*/
+0A445D4: 03DF C046
+0A445DC: E2F6AAEF C046C046
+125AF28: 030000EF 0000A0E1 
+125AF38: B852FFEB 0000A0E1
+;------------------------- end -------------------------
+

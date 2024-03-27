@@ -1,0 +1,29 @@
+;X65v100
+;Tetris
+;Tetris
+;(c) cbn
+;Version: 0.6
+;PatchID: 6668
+;Details: https://patches.kibab.com/patches/details.php5?id=6668
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=Tetris_06.zip
+
+/*
+Tetris игра elf
+Множество настроек, редактор уровней.
+Идет на SGOLD, NEWSGOLD
+Положить в папку 0:\ZBin\Tetris
+Запускать .tet файлы.
+В extension.cfg добавить строку:
+tet:0:\ZBin\Tetris\Tetris.elf
+
+*/
+Tetris игра elf
+Множество настроек, редактор уровней.
+Идет на SGOLD, NEWSGOLD
+Положить в папку 0:\ZBin\Tetris
+Запускать .tet файлы.
+В extension.cfg добавить строку:
+tet:0:\ZBin\Tetris\Tetris.elf
+
+;------------------------- end -------------------------
+

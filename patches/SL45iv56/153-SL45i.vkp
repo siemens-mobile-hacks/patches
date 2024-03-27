@@ -1,0 +1,24 @@
+;SL45iv56
+;SVL. Просмотр SMS по левому софту
+;SVL. SMS View LeftKey
+;(c) RizaPN
+;Version: 
+;PatchID: 1760
+;Details: https://patches.kibab.com/patches/details.php5?id=1760
+/*
+Левая стрелка - просмотр предыдущего SMS.
+
+
+Released: June 16, 2004
+
+Патч №153 с http://patch.oslik.ru/SL45_RU
+*/
+0x39EA24: 7CED A4EC 
+0x39ECA4: F0C8F0D9 DAC7E0E2 
+0x39ECF2: DC4FB87E DAC7E8E2 
+0x39ED48: DC4FB87E DAC7E8E2 
+
+0x27E2E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F02CF0C8F0D9DB0046F214003D032872 
+0x27E2F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DD010076DC4FB87EDB00FFFFFFFFFFFF
+;------------------------- end -------------------------
+

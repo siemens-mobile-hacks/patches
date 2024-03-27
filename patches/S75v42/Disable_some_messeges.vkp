@@ -1,0 +1,18 @@
+;S75v42
+;Отключение сообщений
+;Disable some messeges
+;(c) SiNgle
+;(r) StrikerVoo
+;(p) ferro
+;Version: 
+;PatchID: 5008
+;Details: https://patches.kibab.com/patches/details.php5?id=5008
+/*
+
+*/
+0527e12: 03D1 03E0 ;Убрать сообщение "Пожалуйста подождите" в эксплорере
+
+058f864: cdf0a0ef C046C046 ;Убрать сообщение "Сохранить в:" после съёмки
+
+;------------------------- end -------------------------
+

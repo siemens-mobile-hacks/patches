@@ -1,0 +1,15 @@
+;SL65v53
+;Отключить "Подождите" при включении телефона до StartAssistant ;Отключить "Подождите" при увеличении картинки в МайСтафф
+;Disable "Wait" in StartUp before StartAssistant;Disable "Wait" while zooming a picture in MyStuff  
+;(c) funMarkus
+;(p) dimonp25
+;Version: 
+;PatchID: 9165
+;Details: https://patches.kibab.com/patches/details.php5?id=9165
+/*
+Кроме отключения "Подождите" при включении телефона до StartAssistant,также ускоряет запуск демонов
+Внимание!! нужно отключить в настойках анимацию при включении, иначе телефон зависнет
+*/
+0113c12e: fff7a7ff c046c046
+;------------------------- end -------------------------
+

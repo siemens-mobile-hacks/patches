@@ -1,0 +1,14 @@
+;S75v47
+;Повышенный приоритет для MMI задач
+;Higher MMI Prio
+;(c) benj9
+;(p) den11111
+;Version: 
+;PatchID: 7908
+;Details: https://patches.kibab.com/patches/details.php5?id=7908
+/*
+
+*/
+02887D0: 10 02
+;------------------------- end -------------------------
+

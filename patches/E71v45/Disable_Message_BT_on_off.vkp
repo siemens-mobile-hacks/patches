@@ -1,0 +1,13 @@
+;E71v45
+;Отключить сообщения Bluetooth: Вкл./Выкл.
+;Disable messages Bluetooth: On/Off
+;(c) Evgr
+;Version: 
+;PatchID: 10340
+;Details: https://patches.kibab.com/patches/details.php5?id=10340
+/*
+
+*/
+06EBB3E: FFF713FB C046C046
+;------------------------- end -------------------------
+

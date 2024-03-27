@@ -1,0 +1,15 @@
+;S75v47
+;Расширенные свойства MP3 и AAC файлов
+;Extended attributes of MP3 and AAC files
+;(c) @ndres/PRM
+;(p) KIBER-DEMON
+;Version: 2.0
+;PatchID: 8723
+;Details: https://patches.kibab.com/patches/details.php5?id=8723
+/*
+Патч нужен для корректной работы функции GetFileProp.
+*/
+09861B8: 2437EDFA 0010A013
+09861D7: E3 03
+;------------------------- end -------------------------
+

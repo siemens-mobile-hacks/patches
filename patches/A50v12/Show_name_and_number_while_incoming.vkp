@@ -1,0 +1,42 @@
+;A50v12
+;Показывать имя и номер при исходящих/входящих звонках
+;Show name and number while incoming/outgoing call
+;(c) Lalo
+;(r) Sinclair, Ramil_
+;(p) Delirium
+;Version: 
+;PatchID: 3137
+;Details: https://patches.kibab.com/patches/details.php5?id=3137
+/*
+Этот патч добавляет новую строку с номером при входящих звонках и/или исходящих звонках 
+Номер будет высвечиваться только в том случае, если он доступен и если он не показан в строке имени
+*/
+; координата по Y для анимаций входящих и исходящих звонков:
+23DA00: 13 09 ; анимация при исходящем вызове (соединение, дозвон и т.д.)
+23DA38: 13 09 ; анимация при исходящем вызове (конференция)
+23EB58: 0C 00 ; координата анимации при входящем вызове
+; координата Y и тип шрифта для строк имени и номера:
+23D9C3: 2907 1F07 ; строка имени при исходящем звонке
+23D9CF: 0906 2906 ; строка номера при исходящем звонке
+23EB1B: 2702 1D07 ; строка имени при входящем звонке
+23EB27: 0007 2706 ; строка номера при входящем звонке
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+; показать номер при исходящих звонках (закомментируйте, если не нужно):
+3144A8: DACAC2BF DAF700F4
+3144AC: E6FEFE3FE6FF8D03 E6FE000DE6FF0E00
+;------------------------
+; показать номер при входящих звонках (закомментируйте, если не нужно):
+31ACF2: DACAB4F1 DAF706F4
+31ACF6: E6FEDA2BE6FF8F03 E6FE000DE6FF0E00
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+37F400: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DACAC2BF0D02DACAB4F1DACA1C5BE6F6
+37F410: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 040BE6F74305E6F8000DE6F90E00E600
+37F420: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0E00CC00A98649813D11E6F63E05A986
+37F430: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 47F891003D03E7F22B00BB249927F041
+37F440: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB092D04F0147C41BB053DF8E102BB1A
+37F450: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FAC522F3E1F3612341232D1747F20A00
+37F460: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3D0307F220000D0E47F20B003D0307F2
+37F470: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 18000D0847F20C003D0307F21F000D02
+37F480: FFFFFFFFFFFFFFFFFFFFFFFF 07F23000DC49B9280881CB00
+;------------------------- end -------------------------
+

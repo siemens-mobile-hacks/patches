@@ -1,0 +1,18 @@
+;CX75v13
+;Изменение прогрессбара при проигрывании музыки
+;Change progressbar in music play
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 776
+;Details: https://patches.kibab.com/patches/details.php5?id=776
+/*
+RUS: Изменение вида прогрессбара при проигрывании музыкальных файлов.
+
+ENG: Change of a kind прогрессбара at playing musical files.
+*/
+04D8DD8: 1000660073 0500700080
+
+;------------------------- end -------------------------
+

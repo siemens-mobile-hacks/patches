@@ -1,0 +1,14 @@
+;S65v58
+;Не выключаться при разряженном аккуме
+;Don't Turn Off When Battery Is Low
+;(c) benj9
+;(p) -=(Kad)=-
+;Version: 2-MP
+;PatchID: 3032
+;Details: https://patches.kibab.com/patches/details.php5?id=3032
+/*
+Замена выключения на звук. Может убить аккумулятор
+*/
+127C138: 18009FE50C0090E5BC9EFFEA 00009FE510FF2FE101DFFDA0
+;------------------------- end -------------------------
+

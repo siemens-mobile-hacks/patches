@@ -1,0 +1,23 @@
+;SL45iv56
+;Узкая полоса прокрутки
+;Slim scroll bar
+;(c) abomin
+;Version: 
+;PatchID: 1914
+;Details: https://patches.kibab.com/patches/details.php5?id=1914
+/*
+Меняет scroll на такой, как в C55.
+
+
+Release: 6 sep 2004
+
+Патч №217 с http://patch.oslik.ru/SL45_RU
+*/
+4BE223: E1 E2 
+4BE2EA: DAC1F47C DAEB3AE3 
+4BE336: D4C02200D4D02400DC4D FAEB42E408E1FAC1F47C 
+516872: D4E00400 DAF14469 
+51697A: D4E00400 DAF14469 
+516942: E08C00C066FCFF3FF2FD02FEDAC10A40 0D07D4E0040008E1DB00CC00CC00CC00
+;------------------------- end -------------------------
+

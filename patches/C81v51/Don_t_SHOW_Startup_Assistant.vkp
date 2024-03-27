@@ -1,0 +1,14 @@
+;C81v51
+;Не показывать помощника при загрузке
+;Don't SHOW Startup Assistant
+;(c) benj9
+;(p) den11111
+;Version: 
+;PatchID: 7826
+;Details: https://patches.kibab.com/patches/details.php5?id=7826
+/*
+
+*/
+34E068: A9F054E8 C046C046
+;------------------------- end -------------------------
+

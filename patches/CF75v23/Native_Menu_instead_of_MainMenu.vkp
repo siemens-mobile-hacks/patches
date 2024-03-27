@@ -1,0 +1,22 @@
+;CF75v23
+;Native Menu вместо главного меню
+;Native Menu instead of MainMenu
+;(c) SiNgle
+;(r) Bennie
+;(p) bertgrin
+;Version: 2.2
+;PatchID: 10081
+;Details: https://patches.kibab.com/patches/details.php5?id=10081
+/*
+-запуск при свернутой яве
+-не вырубается по Списки вызов.-Время\стоим.
+*/
+04A4E7C: 0xA032F1AB 0xA0339F7F ; CKLK_CK_MAIN_MNU: центр джойстика
+04A54FC: 0xA032F1AB 0xA0339F7F ; ELSE_MMENU_OPEN: для DSE
+
+02B87F8: 434B4C4B5F434B5F4D41494E4D4E55 434E43545F425553494E4553534344
+02B8808: 454C53455F4D4D454E555F4F50454E 434E43545F425553494E4553534344
+
+049CF28: 6F2A2CA0 0xA032E78F ; NativeMenu-Списки вызов.-Время\стоим.
+;------------------------- end -------------------------
+

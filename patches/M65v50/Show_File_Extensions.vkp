@@ -1,0 +1,14 @@
+;M65v50
+;Показ Расширений Файлов в Card-Explorer'е
+;Show File Extensions in Card-Explorer
+;(c) 1nvisible
+;(r) SiNgle
+;Version: 
+;PatchID: 3315
+;Details: https://patches.kibab.com/patches/details.php5?id=3315
+/*
+
+*/
+099BF80: 2E 1E
+;------------------------- end -------------------------
+

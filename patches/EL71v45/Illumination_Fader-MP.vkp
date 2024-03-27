@@ -1,0 +1,20 @@
+;EL71v45
+;Illumination Fader
+;Illumination Fader
+;(c) BuG
+;Version: 
+;PatchID: 7995
+;Details: https://patches.kibab.com/patches/details.php5?id=7995
+/*
+(!) Masterpatch, library B6, BC, C4, D7
+*/
+; fade on
+093FEAE: 6C4D0022243D2978201C C046004B984711B006A0 ;EL71v45
+
+; fade off
+093FF0A: 7F4941436420D9F2F6E9 C046004988473FB006A0 ;EL71v45
+
+; default fading time address
+006B06C: FFFFFFFF 0xA0940108
+;------------------------- end -------------------------
+

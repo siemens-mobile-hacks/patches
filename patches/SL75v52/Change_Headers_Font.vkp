@@ -1,0 +1,14 @@
+;SL75v52
+;Изменение шрифта заголовков
+;Change Headers Font
+;(c) Evgr
+;(p) SimaFish
+;Version: 
+;PatchID: 9359
+;Details: https://patches.kibab.com/patches/details.php5?id=9359
+/*
+
+*/
+0C07E1C: 05 0C ;мелкий жирный
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S68v47
+;Диктофон в меню во время разговора
+;Dictaphone in conversation menu
+;(c) Miha_r
+;(p) klaud
+;Version: 
+;PatchID: 7876
+;Details: https://patches.kibab.com/patches/details.php5?id=7876
+/*
+поправил :)
+*/
+407498:  F98132A0 FB5F31A0
+407614: B604 6100
+;------------------------- end -------------------------
+

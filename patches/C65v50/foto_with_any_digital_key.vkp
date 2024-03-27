@@ -1,0 +1,14 @@
+;C65v50
+;Фотографирование любой цифровой кнопкой
+;To make foto with any digital key
+;(c) SiNgle
+;Version: 1
+;PatchID: 3342
+;Details: https://patches.kibab.com/patches/details.php5?id=3342
+/*
+!Выход из камеры по длинному нажатию красной кнопки
+*/
+08FAA68: 01 16
+08FAA70: 45 23
+;------------------------- end -------------------------
+

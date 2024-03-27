@@ -1,0 +1,14 @@
+;M55v10
+;Отключить потверждение включения
+;Disable Aircraft check
+;(c) ACiD[mrp]
+;(p) Matr!x
+;Version: 
+;PatchID: 1361
+;Details: https://patches.kibab.com/patches/details.php5?id=1361
+/*
+
+*/
+0EA3CE: 3D 0D
+;------------------------- end -------------------------
+

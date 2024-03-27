@@ -1,0 +1,17 @@
+;C81v51
+;Убрать Запятую в Адреске
+;Remove Comma in AddressBook
+;(c) 1nvisible
+;(r) KiRik
+;(p) den11111
+;Version: 
+;PatchID: 7336
+;Details: https://patches.kibab.com/patches/details.php5?id=7336
+/*
+
+*/
+06555A8: 2C 00
+0952502: 69F04FFE C046C046 
+
+;------------------------- end -------------------------
+

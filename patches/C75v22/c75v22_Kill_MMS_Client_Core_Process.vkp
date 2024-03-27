@@ -1,0 +1,14 @@
+;C75v22
+;Отключение загрузки ядра MMS клиента
+;Kill MMS client core process
+;(c) PICAS
+;(p) NevAtse
+;Version: 
+;PatchID: 9955
+;Details: https://patches.kibab.com/patches/details.php5?id=9955
+/*
+Добавляет 120020 байт в permmem
+*/
+04C8EE6: 22F112EC c046c046
+;------------------------- end -------------------------
+

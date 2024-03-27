@@ -1,0 +1,19 @@
+;S75v47
+;Выбор языка ввода по долгому нажатию #
+;Input language select on long '#' press
+;(c) Rainmaker
+;(r) real_X-ray - идея, Rst7/CBSIE - наводка на цель
+;Version: 1.0
+;PatchID: 7220
+;Details: https://patches.kibab.com/patches/details.php5?id=7220
+/*
+При вводе по долгому нажанию решётки появляется
+меню выбора языка ввода
+	
+В SMS и e-mail клиенте не изменяется!
+*/
+
+0A0A37C: 0621201CFEF7ABFF00280CD0 0149884702E0C046,0xA032E6BD ;- LANGUAGE_INPUT
+
+;------------------------- end -------------------------
+

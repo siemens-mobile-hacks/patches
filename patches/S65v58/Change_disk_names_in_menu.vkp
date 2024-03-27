@@ -1,0 +1,24 @@
+;S65v58
+;Изменение названия дисков в меню выбора
+;Change disk names in menu
+;(c) DeHuCoH, USV
+;Version: 
+;PatchID: 9074
+;Details: https://patches.kibab.com/patches/details.php5?id=9074
+/*
+Изменение названия дисков в меню выбора: 
+Drive 0 -> 0:\Data
+Drive 1 -> 1:\Cache
+Drive 2 -> 2:\Config
+*/
+/*
+Изменение названия дисков в меню выбора: 
+Drive 0 -> 0:\Data
+Drive 1 -> 1:\Cache
+Drive 2 -> 2:\Config
+*/
+009B303: 726976652030 617461000000 ; Drive 0 -> Data
+009B320: 44726976652031 43616368650000 ; Drive 1 -> Cache
+009B33E: 44726976652032 436F6E66696700 ; Drive 2 -> Config
+;------------------------- end -------------------------
+

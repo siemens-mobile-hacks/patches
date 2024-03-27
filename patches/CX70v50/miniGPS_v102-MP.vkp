@@ -1,0 +1,14 @@
+;CX70v50
+;МиниGPS с логгингом БС
+;MiniGPS with GSM Data Logger
+;(c) ACiD[mrp], arsh0r
+;(r) bennie, SiNgle, (i) KreN
+;Version: 1.02
+;PatchID: 4918
+;Details: https://patches.kibab.com/patches/details.php5?id=4918
+/*
+
+*/
+172F4A0: AB39BAA0 0176FCA0
+;------------------------- end -------------------------
+

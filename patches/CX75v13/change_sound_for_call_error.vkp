@@ -1,0 +1,18 @@
+;CX75v13
+;Замена звука ошибка соединения при дозвоне
+;Change sound for call error
+;(c) B-727
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 779
+;Details: https://patches.kibab.com/patches/details.php5?id=779
+/*
+RUS: Изменяет звук при ошибке соединения при дозвоне.
+
+ENG: Changes a sound at a mistake of connection at dialing.
+*/
+04CE3F6: 1800FAFF0000B6034A0178054A0108074A01FFFFE803F9FF0300 0C00B8073200FFFF3200400C1A00FFFFFFFFFFFFFFFFFFFFFFFF
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;E71v42
+;Отключить помошника при загрузке
+;Disable "Assistant" at startup
+;(c) SiNgle
+;(p) $TA$
+;Version: 
+;PatchID: 6741
+;Details: https://patches.kibab.com/patches/details.php5?id=6741
+/*
+
+*/
+066B497: D1 D0
+;------------------------- end -------------------------
+

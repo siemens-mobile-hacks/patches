@@ -1,0 +1,13 @@
+;A52v9
+;Ширина софт-кнопок
+;Width a software-buttons
+;(c) Delirium
+;Version: 
+;PatchID: 4369
+;Details: https://patches.kibab.com/patches/details.php5?id=4369
+/*
+
+*/
+0DF76A: 2F xx ; 02Fh = 47 пикселей
+;------------------------- end -------------------------
+

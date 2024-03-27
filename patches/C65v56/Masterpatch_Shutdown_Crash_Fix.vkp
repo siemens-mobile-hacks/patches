@@ -1,0 +1,15 @@
+;C65v56
+;Masterpatch Shutdown Crash Fix
+;Masterpatch Shutdown Crash Fix
+;(c) benj9
+;Version: 
+;PatchID: 5343
+;Details: https://patches.kibab.com/patches/details.php5?id=5343
+/*
+
+*/
+098BA28: 03DF C046
+098BA30: ACF7C8E9 C046C046
+
+;------------------------- end -------------------------
+

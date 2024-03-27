@@ -1,0 +1,15 @@
+;M55v11
+;Отключить сообщение "Осталось XX снимков"
+;Disable "XX shots least" message
+;(c) Creat0r
+;(r) SiNgle, ValeraVi
+;(p) AlexSid
+;Version: 
+;PatchID: 5230
+;Details: https://patches.kibab.com/patches/details.php5?id=5230
+/*
+
+*/
+1073FA: 3D03 CC00
+;------------------------- end -------------------------
+

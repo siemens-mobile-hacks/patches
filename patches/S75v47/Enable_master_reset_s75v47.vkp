@@ -1,0 +1,22 @@
+;S75v47
+;Сброс настроек без извлечения сим-карты
+;Enable master reset all the time
+;(c) Saifaye 
+;(r) Evgr
+;(p) Diman3452
+;Version: 1
+;PatchID: 10232
+;Details: https://patches.kibab.com/patches/details.php5?id=10232
+/*
+In x75/x85 system, master reset only should be used in NO SIM CARD MODE,now it can be use all the time
+Теперь не надо извлекать сим-карту для общего сброса настроек телефона по *#9999#
+*/
+;63BC47: D0 E0 ; e71v45
+;63D877: D0 E0 ; el71v45
+;2A649B: D0 E0 ; s68v52
+02CE9EB: D0 E0 ; s75v47
+;2CEC63: D0 E0 ; s75v52
+;2D1C6B: D0 E0 ; c81v51
+;2D1C8F: D0 E0 ; m81v51
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;EL71v45
+;Отключить сообщения "Громкая связь включена" и "Громкая связь выключена"
+;Disable messages "Handsfree activated" and "Handsfree deactivated"
+;(c) Evgr
+;Version: 
+;PatchID: 9687
+;Details: https://patches.kibab.com/patches/details.php5?id=9687
+/*
+
+*/
+06677B2: 98F15CEB C046C046
+;------------------------- end -------------------------
+

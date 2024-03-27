@@ -1,0 +1,20 @@
+;EL71v45
+;Отправка Flash SMS
+;Send Flash SMS
+;(c) Bennie
+;(p) -=PaScaL=-
+;Version: 
+;PatchID: 7939
+;Details: https://patches.kibab.com/patches/details.php5?id=7939
+/*
+
+*/
+0E2EAA8: 201CB168 07F682FC
+
+#pragma enable old_equal_ff
+0C363B0: 201CB8380178082906D000290CD1417B
+0C363C0: 7F221140F02204E0437B817B1B02C918
+0C363D0: 1822202900D10270201CB1687047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

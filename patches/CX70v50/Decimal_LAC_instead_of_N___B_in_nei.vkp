@@ -1,0 +1,23 @@
+;CX70v50
+;Десятичный LAC вместо N и B в списке соседних сот вместо ENIP монитора
+;Decimal LAC instead of N & B in neighbour list instead of ENIP monitor
+;(c) слава Богу
+;(r) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 80
+;Details: https://patches.kibab.com/patches/details.php5?id=80
+/*
+Комбинируется с "Десятичный CID вместо C1 и C2 в списке соседних сот"
+Combined with "Decimal CID instead of C1 & C2 in neighbour list"
+Переключаться в режим CID ко клавишам 2 <-> 0 (switch to CID mode with keys 0 <-> 2)
+
+*/
+08FAC0C: 0E 0D
+08FACE4: 1622281C 0E26AAE7
+093B570: D7CE27 45C829
+129C99E: 002908D1 0E2E08D0
+129C9FA: 0122211C0B31F0787CF0BEEE0122211C0D313079 203EF08B20360522002800280522211C0B310028
+1329C75: 4E2042 4C4143
+;------------------------- end -------------------------
+

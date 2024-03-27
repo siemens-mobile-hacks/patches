@@ -1,0 +1,15 @@
+;SK65v50
+;Не выключаться при разряженном аккуме
+;Don't Turn Off When Battery Is Low
+;(c) benj9
+;(r) ThE TrIFoN
+;(p) ~Jhellico
+;Version: 2-MP
+;PatchID: 3226
+;Details: https://patches.kibab.com/patches/details.php5?id=3226
+/*
+
+*/
+09B42CC: 18009FE50C0090E5652DFFEA 00009FE510FF2FE1,0xA0FDDF01
+;------------------------- end -------------------------
+

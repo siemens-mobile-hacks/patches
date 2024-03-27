@@ -1,0 +1,17 @@
+;M65v50
+;Запуск явы отовсюду
+;Run Java from Everywhere
+;(c) 1nvisible
+;(r) Zl0d, Kamikadze!
+;(p) Mifodiy
+;Version: 3
+;PatchID: 3676
+;Details: https://patches.kibab.com/patches/details.php5?id=3676
+/*
+Ниче переименовывать не надо. 
+No additional actions needed. 
+
+*/
+0BF7038: 2500000A 000050E3
+;------------------------- end -------------------------
+

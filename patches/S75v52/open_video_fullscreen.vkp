@@ -1,0 +1,15 @@
+;S75v52
+;Открывать видео сразу во весь экран
+;Open video fullscreen immediately
+;(c) Ganster41
+;(p) Vados
+;Version: 
+;PatchID: 9571
+;Details: https://patches.kibab.com/patches/details.php5?id=9571
+/*
+
+*/
+05A80C0: 00 01
+05A80FC: 00 01
+;------------------------- end -------------------------
+

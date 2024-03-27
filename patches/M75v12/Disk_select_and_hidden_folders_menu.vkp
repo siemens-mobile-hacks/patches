@@ -1,0 +1,16 @@
+;M75v12
+;Меню выбора дисков и отображение скрытых файлов и папок
+;Disk selection menu and show hidden files & folders
+;(c) SiNgle
+;Version: 
+;PatchID: 576
+;Details: https://patches.kibab.com/patches/details.php5?id=576
+/*
+В CardExplorer жмем кнопку "1" и через полсекунды попадаем в меню выбора дисков, где также есть пункт "Show all" для отображения скрытых файлов и папок.
+EN:
+In CardExplorer press "1"  - disk selection menu, where you also can choose "Show all" to view hidden files & folders.
+*/
+03D8878: 0900000A 000055E3
+03D88D4: 3534 2000
+;------------------------- end -------------------------
+

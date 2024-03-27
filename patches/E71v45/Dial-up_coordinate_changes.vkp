@@ -1,0 +1,24 @@
+;E71v45
+;Изменить позицию номера при наборе
+;Dial-up coordinate changes
+;(c) cwx88cwx
+;(p) Danil_e71
+;Version: 
+;PatchID: 9530
+;Details: https://patches.kibab.com/patches/details.php5?id=9530
+/*
+
+*/
+; x coordinate 
+084A090: 0E 05 
+084A098: 0E 05 
+084A0A0: 0E 05 
+084A0A8: 0E 05 
+; y coordinates 
+084A092: 96 1E 
+084A09A: 7F 1E 
+084A0A2: 68 1E 
+084A0AA: 51 1E
+
+;------------------------- end -------------------------
+

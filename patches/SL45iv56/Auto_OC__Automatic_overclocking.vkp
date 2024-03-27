@@ -1,0 +1,50 @@
+;SL45iv56
+;Auto OC. Automatic overclocking patch READDRESSED
+;Auto OC. Automatic overclocking patch READDRESSED
+;(c) sc0ty
+;(r) Rst7
+;Version: 
+;PatchID: 2155
+;Details: https://patches.kibab.com/patches/details.php5?id=2155
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=Auto_OC__Automatic_overclocking.rar
+
+/*
+После разблокировки клавиш процессор телефона переходит в режим 26 МГц.
+При блоке клавиш процессор работает на частоте 13 МГц (для сохранения энергии).
+
+Нужны бинарники от Rst7.
+
+
+English: After unlock keybord set CPU to 26 MHz 
+When the keylocked set CPU to 13 MHz (to save energy)
+
+
+Relased: 2006-02-14
+*/
+;If you don't need some functions comment it: 
+
+; After unlock keybord set cpu to 26 MHz 
+0x3AF6E2: DAA37A40 DAE200D4 
+
+; When the keylocked set cpu to 13 MHz 
+0x3B37FA: F0C85C1C DAE208D4 
+
+; After start set cpu to 26 MHz 
+0x44EB98: DAA43A4D DAE216D4 
+
+0x42D400: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC1AAD2FAA37A40ECFCDAC196D2FCFC 
+0x42D410: FFFFFFFFFFFFFFFFFFFFFFFFFFFF F0C85C1CDB00DAC1AAD2FAA43A4D 
+
+
+
+; disable auto set13mhz func: 
+
+0x280B12: DAC196D2 CC00CC00 
+0x26B02A: DAC196D2 CC00CC00 
+
+; disable auto set26mhz func: 
+
+0x280A56: DAC1AAD2 CC00CC00 
+0x26AFA4: DAC1AAD2 CC00CC00
+;------------------------- end -------------------------
+

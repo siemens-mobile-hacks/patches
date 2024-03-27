@@ -1,0 +1,13 @@
+;C65v56
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found"
+;(c) Avkiev
+;Version: 
+;PatchID: 3762
+;Details: https://patches.kibab.com/patches/details.php5?id=3762
+/*
+
+*/
+1500C40: 5C03 FFFF
+;------------------------- end -------------------------
+

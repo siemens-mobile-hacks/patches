@@ -1,0 +1,26 @@
+;S75v52
+;Позиционирование будильника и органайзера
+;Alarm clock & appointment positioning
+;(c) BuG
+;(p) SimaFish
+;Version: 
+;PatchID: 8554
+;Details: https://patches.kibab.com/patches/details.php5?id=8554
+/*
+
+*/
+;Remove alarm clock icon from date/time
+301312: 1298 0020
+
+;Remove appointment icon from date/time
+30133C: 1898 0020
+
+;Alarmclock icon
+30133A: 013C 73,24
+301400: 281c 68,26
+
+;Appointment icon
+30135A: 0136 E0,26 ;xx,26 if alarmclock off
+301366: 261A E0,26 ;xx,26 if alarmclock on
+;------------------------- end -------------------------
+

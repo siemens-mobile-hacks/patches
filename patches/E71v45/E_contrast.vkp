@@ -1,0 +1,75 @@
+;E71v45
+;Воссоздать функцию "Контраст" для дисплея PHILIPS_TOSHIBA_JBT6K71 (DisplayID(1,65): Sharp Sharp LHH9168 в Papuautils) 
+;Recreate "Contrast" function for PHILIPS_TOSHIBA_JBT6K71 (DisplayID(1,65): Sharp Sharp LHH9168 in Papuautils) display
+;(c) Evgr
+;Version: 
+;PatchID: 10444
+;Details: https://patches.kibab.com/patches/details.php5?id=10444
+/*
+RU: Патч позволяет проводить подстройку гаммы дисплея с помощью имеющихся шести настроечных регистров. 
+    Каждому уровню контраста задаётся отдельная комбинация значений регистров. 
+    Выбранные значения служат для демонстрации работы патча и необязательно являются оптимальными.
+    Уровню 30% соответствуют исходные данные прошивки.
+
+EN: Patch enables to make Gamma adjustment with the help of six adjustment registers.
+    Each contrast level has a given preset of registers data.
+    Data choosen are given just to demonstrate gamma correction possibility and may not be optimal.
+    30% contrast level corresponds to initial firmware settings.
+
+*/
+
+/*
+RU: Патч позволяет проводить подстройку гаммы дисплея с помощью имеющихся шести настроечных регистров. 
+    Каждому уровню контраста задаётся отдельная комбинация значений регистров. 
+    Выбранные значения служат для демонстрации работы патча и необязательно являются оптимальными.
+    Уровню 30% соответствуют исходные данные прошивки.
+
+EN: Patch enables to make Gamma adjustment with the help of six adjustment registers.
+    Each contrast level has a given preset of registers data.
+    Data choosen are given just to demonstrate gamma correction possibility and may not be optimal.
+    30% contrast level corresponds to initial firmware settings.
+*/
+
+08A8E94: 7405 F803 ; enable "Contrast" item in Native menu
+
+08819B4: 00000000000000000000000000000000 840000007A0000007D00000001000000 ; set max, min and default "contrast" levels
+
+08677C4: 4CB676A0 D0293DA1 ; set "contrast" function
+
+076AC68: C00FA0E3 150000EA
+076ACC4: 680200EB 419F31EB ; set 300h-305h registers
+
+#pragma enable old_equal_ff
+13D29D0: FF402DE960509FE50000D5E5840050E3
+13D29E0: 0100008A7A0050E30100002A7D00A0E3
+13D29F0: 0000C5E50000D5E57A0040E22010A0E3
+13D2A00: 900101E034008FE2017080E00040A0E3
+13D2A10: C05FA0E30500A0E10C63CEEBB40097E1
+13D2A20: 1163CEEB044084E2015085E2C06F45E2
+13D2A30: 050056E3F6FFFFDAFF80BDE8,0xA8E0B5A1
+13D2A40: 00000000000000000000000000070000 ; preset for 0% contrast 300h-303h registers
+13D2A50: 0007000070000000                 ; 304h-305h registers
+13D2A60: 00010000010000000000000000070000 ; preset for 10% contrast 300h-303h registers
+13D2A70: 0007000070000000                 ; 304h-305h registers
+13D2A80: 00020000020000000000000000070000 ; preset for 20% contrast 300h-303h registers
+13D2A90: 0007000070000000                 ; 304h-305h registers
+13D2AA0: 00020000020000000000000000030000 ; preset for 30% contrast 300h-303h registers
+13D2AB0: 0007000070000000                 ; 304h-305h registers
+13D2AC0: 00020000020000000000000000030000 ; preset for 40% contrast 300h-303h registers
+13D2AD0: 0006000070000000                 ; 304h-305h registers
+13D2AE0: 00020000020000000000000000030000 ; preset for 50% contrast 300h-303h registers
+13D2AF0: 0005000070000000                 ; 304h-305h registers
+13D2B00: 00020000020000000000000000030000 ; preset for 60% contrast 300h-303h registers
+13D2B10: 0004000070000000                 ; 304h-305h registers
+13D2B20: 00020000020000000000000000030000 ; preset for 70% contrast 300h-303h registers
+13D2B30: 0003000070000000                 ; 304h-305h registers
+13D2B40: 00020000020000000000000000020000 ; preset for 80% contrast 300h-303h registers
+13D2B50: 0002000070000000                 ; 304h-305h registers
+13D2B60: 00020000020000000000000000010000 ; preset for 90% contrast 300h-303h registers
+13D2B70: 0001000070000000                 ; 304h-305h registers
+13D2B80: 00020000020000000000000000000000 ; preset for 100% contrast 300h-303h registers
+13D2B90: 0000000070000000                 ; 304h-305h registers
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

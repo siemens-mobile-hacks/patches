@@ -1,0 +1,18 @@
+;S65v58
+;Разблокировать пункт "Сохранить в Мульт. карту" в настройках видео
+;Unlock item "Save to MultiMediaCard" in video settings
+;(c) Evgr
+;Version: 1
+;PatchID: 10636
+;Details: https://patches.kibab.com/patches/details.php5?id=10636
+/*
+
+*/
+
+097DE85: 60 00
+0911B74: 0800CD15 59BDFBEB
+08010E0: FFFFFFFFFFFFFFFFFFFFFFFF 0800CD15D000C4151EFF2FE1
+09B4F5C: 00 01
+
+;------------------------- end -------------------------
+

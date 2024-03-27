@@ -1,0 +1,22 @@
+;CX75v13
+;Подрезка кучи
+;Cut heap
+;(c) Rst7
+;(r) (i) BoBa, Kibab, avkiev
+;(p) Geka
+;Version: 
+;PatchID: 9647
+;Details: https://patches.kibab.com/patches/details.php5?id=9647
+/*
+!SWI
+*/
+;cut heap
+#pragma enable old_equal_ff
+0FC0830: 00B51060012292020868801A0860981A
+0FC0840: 111C58DF00BD
+#pragma disable old_equal_ff
+
+977EF4: 000082E51EFF2FE1000000A8 04F01FE5,0xA0FC0831,0xA8000400
+
+;------------------------- end -------------------------
+

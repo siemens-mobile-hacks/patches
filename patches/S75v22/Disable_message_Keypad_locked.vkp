@@ -1,0 +1,17 @@
+;S75v22
+;Убрать сообщение "Блокировка клавиатуры включена"
+;Disable message "Keypad locked"
+;(c) SiNgle
+;Version: 
+;PatchID: 1774
+;Details: https://patches.kibab.com/patches/details.php5?id=1774
+/*
+Отключение сообщения "Блокировка клавиатуры включена" при соответствующем действии.
+*/
+;S75v22 - Убрать сообщение "Блокировка клавиатуры включена"
+;S75v22 - Disable message "Keypad locked"
+;(c) SiNgle
+
+33A116: AEF07EED C046C046
+;------------------------- end -------------------------
+

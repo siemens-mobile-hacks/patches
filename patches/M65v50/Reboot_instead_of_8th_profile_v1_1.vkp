@@ -1,0 +1,16 @@
+;M65v50
+;Перезагрузка вместо 8го профиля
+;Reboot instead of 8th profile
+;(c) -=(Kad)=-
+;(p) Mifodiy
+;Version: 1.1
+;PatchID: 6303
+;Details: https://patches.kibab.com/patches/details.php5?id=6303
+/*
+Тот самый патч только подправил текстовые сообщения на более уместные.
+*/
+91980C: 0xA1240938 0xA1240944
+F9D89: 09AAEA3A29D634A12E 09B6A32EA6F130880A
+101673: 15AA44FBEDF6898D3DDBEA31F62BBCEAAB2C369338 15AA448FAFEDEA38A32EA6F130DEEA2938BE87B2B8
+;------------------------- end -------------------------
+

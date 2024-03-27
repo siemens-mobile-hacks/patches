@@ -1,0 +1,16 @@
+;S68v47
+;Настройка подсветки шагом в 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(r)  -=(Kad)=-
+;(p) klaud
+;Version: 
+;PatchID: 7765
+;Details: https://patches.kibab.com/patches/details.php5?id=7765
+/*
+
+*/
+0031D656: 0A 05
+0031D650: 0A 05
+;------------------------- end -------------------------
+

@@ -1,0 +1,43 @@
+;S75v47
+;Позиционирование элементов медиаплеера
+;Mediaplayer positioning
+;(c) @ndres/PRM
+;(r) DPEHA
+;(p) KIBER-DEMON
+;Version: 0.4
+;PatchID: 8431
+;Details: https://patches.kibab.com/patches/details.php5?id=8431
+/*
+Позиционирование таких элементов медиаплеера как: animation, volume, play mode, headset, status.
+*/
+; animation
+05FDA00: 401A 0420
+05FDA1A: 2437 2427
+;05FDA00: 04 0i004 ; x
+;05FDA1A: 24 0i036 ; y
+
+; volume
+05FE04C: 1631 1621
+;05FE040: 0420 0020 
+;05FE040: 04 0i004 ; x
+;05FE04C: 16 0i022 ; y
+
+; play mode
+05FE108: 0236 2226
+05FE106: 1631 1621
+;05FE108: 22 0i034 ; x
+;05FE106: 16 0i022 ; y
+
+; headset
+05FE130: B01C 3220
+05FE13C: 1631 1621
+;05FE130: 32 0i050 ; x
+;05FE13C: 16 0i022 ; y
+
+; status
+05FE17C: 8931 8921
+;05FE182: 0120 0020
+;05FE182: 01 0i001 ; x
+;05FE17C: 89 0i137 ; y
+;------------------------- end -------------------------
+

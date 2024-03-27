@@ -1,0 +1,19 @@
+;CX75v25
+;Bearer killer
+;Bearer killer
+;(c) Zhek@
+;(p) Angervip
+;Version: 
+;PatchID: 9229
+;Details: https://patches.kibab.com/patches/details.php5?id=9229
+/*
+отключает загрузку браузера и ява-машины
+после установки этого патча Browser killer в принципе не нужен :)
+*/
+;отключает загрузку браузера и ява-машины
+;после установки этого патча Browser killer в принципе не нужен
+
+7F6380: 3DF26CED c046c046 ;rap bearer 0 (browser)
+7F6398: 3DF260ED c046c046 ;rap bearer 1 (java)
+;------------------------- end -------------------------
+

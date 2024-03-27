@@ -1,0 +1,17 @@
+;SL75v47
+;Убрать Украинский, Литовский и Латвийский из меню языков ввода
+;Remove Ukrainian, Lithuanian and Latvian from input languages menu
+;(c) AlexSid
+;(p) Apo4emu
+;Version: 
+;PatchID: 6845
+;Details: https://patches.kibab.com/patches/details.php5?id=6845
+/*
+Ещё три языка в минус. Остаётся "всего" 7 лишних :)
+*/
+0C1B2E6: 00 01 ; Украинский
+0C1B2E2: 00 01 ; Литовский
+0C1B2DE: 00 01 ; Латвийский
+
+;------------------------- end -------------------------
+

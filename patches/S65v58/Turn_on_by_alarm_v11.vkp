@@ -1,0 +1,33 @@
+;S65v58
+;Включение телефона по будильнику
+;Turn on by Alarm clock
+;(c) SiNgle
+;(p) KiRiK
+;Version: 1.1
+;PatchID: 1319
+;Details: https://patches.kibab.com/patches/details.php5?id=1319
+/*
+При срабатывании будильника телефон включается и коротко вибрирует.
+v1.1: исправлен баг: перезагрузка уже включенного телефона
+English:When alarm clock triggers phone switches on and vibrates shortly.
+v1.1: bug fixed: reboot of switched on phone
+*/
+
+0BB3546: AEF5 C046
+
+0BB3548: 1AEA0020 74F12AED
+
+#pragma enable old_equal_ff
+
+0D27FA0: 0FE0A0E124F09FE524009FE5B600D0E1
+
+0D27FB0: 200050E3030000AA1200A0E30010A0E3
+
+0D27FC0: 0FE0A0E10CF09FE50000A0E308F09FE5
+
+0D27FD0: 7C1996A084EF6CA86C3E25A14D35BBA0 
+
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

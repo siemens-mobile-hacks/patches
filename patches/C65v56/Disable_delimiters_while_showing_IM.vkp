@@ -1,0 +1,14 @@
+;C65v56
+;Убрать черточки-разделители при показе IMEI
+;Disable delimiters while showing IMEI
+;(c) 1nvisible
+;(r) Bennie
+;Version: 
+;PatchID: 3853
+;Details: https://patches.kibab.com/patches/details.php5?id=3853
+/*
+
+*/
+08F1878: 05D0 0AE0
+;------------------------- end -------------------------
+

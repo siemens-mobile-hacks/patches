@@ -1,0 +1,16 @@
+;E71v45
+;Не сворачивать MP3 плеер
+;Don't hide MP3 player to background
+;(c) ThE TrIFoN
+;(p) @ndreS aka PRM
+;Version: 
+;PatchID: 10360
+;Details: https://patches.kibab.com/patches/details.php5?id=10360
+/*
+Плейр автоматически несворачивается, пока вы его не свернете или не выйдете из него.
+*/
+05BF9AA: 39F202E8 56F239FC
+0816220: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 09B5044B9847002801D1014B984709BD
+0816230: FFFFFFFFFFFFFFFF 0xA0946A3B,0xA069F7F8
+;------------------------- end -------------------------
+

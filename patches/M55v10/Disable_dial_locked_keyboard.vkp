@@ -1,0 +1,15 @@
+;M55v10
+;Запрет любого набора (112, 08, 911) при залоченной клавиатуре
+;Disable any number(112, 08, 911) dial while keyboard is locked
+;(c) Matr!x
+;Version: 
+;PatchID: 1548
+;Details: https://patches.kibab.com/patches/details.php5?id=1548
+/*
+
+*/
+0215EA: DABF5CA8 CC00CC00 ;запрет набора 112
+02160E: EA20 0D0F
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,54 @@
+;CX70v56
+;Продвинутый индикатор сети + Лого профиля
+;ImprovedNetIndicator + ProfileLogo
+;(c) ACiD[mrp], arsh0r
+;(r) benj9
+;(p) Fuchs
+;Version: 1
+;PatchID: 6188
+;Details: https://patches.kibab.com/patches/details.php5?id=6188
+/*
+Версия без МП.
+Сначала отмените одноименные патчи
+Должен быть установлен патч *Дополнение к PIT таблице*
+*/
+17156BA: 00F0F5FA 89F0A9F8
+#pragma enable old_equal_ff
+179E810: 2F48F8B5008800252C4C0606360E05D0
+179E820: 022E03D0042E01D0062E04D1294F5521
+179E830: 7B6844209847012E05D0022E03D0052E
+179E840: 01D0062E08D1234F386880477B682249
+179E850: 4218992188209847033E032E34D80426
+179E860: 1D4FF64315372088FF2802D21A4A0732
+179E870: 01E0194A0E32A079322819D33E2801D2
+179E880: 063216E0452801D2053212E04C2801D2
+179E890: 04320EE0532801D203320AE05A2801D2
+179E8A0: 023206E0612801D2013202E0682800D3
+179E8B0: 3A1C084B0536301C77215B6866309847
+179E8C0: 0C340135062DCEDBF8BD0000D4D26CA8
+179E8D0: E4E879A1DCE879A13205000099198DA0
+179E8E0: A95C71A1
+
+;Настройки (Settings)
+179E8E4: 06 ;режим (mode)
+
+;0 NetNormal
+;1 ProfileLogo
+;2 NetNormal + ProfileLogo
+;3 NetImproved
+;4 NetNormal + NetImproved
+;5 NetImproved + ProfileLogo
+;6 NetNormal + NetImproved + ProfileLogo
+
+#pragma disable old_equal_ff
+179E832: 44 00 ;X - NetIndicatorNormal
+179E82E: 55 03 ;Y - NetIndicatorNormal
+179E8BC: 66 01 ;X - NetIndicatorImproved
+179E8B8: 77 8E ;Y - NetIndicatorImproved
+179E854: 88 74 ;X - ProfileLogo
+179E852: 99 8E ;Y - ProfileLogo
+;179E8B4: 05 04 ; space between indicators (r) AlexSid
+179E8C4: 06 07 ;add 7th indicator (r) avkiev
+
+;------------------------- end -------------------------
+

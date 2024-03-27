@@ -1,0 +1,14 @@
+;M65v50
+;Показывать Время Последнего Разговора Вместо Пункта "Послед. разг."
+;Show Last Call Duration Instead of "Last Call" Item
+;(c) 1nvisible
+;(p) Mifodiy
+;Version: 
+;PatchID: 3823
+;Details: https://patches.kibab.com/patches/details.php5?id=3823
+/*
+(!) MPv3 or GetLP Patch
+*/
+1657B6C: C5000000 A0BE63A8
+;------------------------- end -------------------------
+

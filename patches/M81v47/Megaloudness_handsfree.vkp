@@ -1,0 +1,16 @@
+;M81v47
+;Мега-громкость для гарнитуры
+;Mega-loudness for handsfree
+;(c) Akot
+;(p) Barracuda
+;Version: 
+;PatchID: 9047
+;Details: https://patches.kibab.com/patches/details.php5?id=9047
+/*
+Мега-громкость теперь и для гарнитуры.
+*/
+01F2A30: 0600000A020000EF6C3DA0E3 050040E22900C4E53C0000EA
+01F2B28: 000000EA C0FFFFEA
+01F2A30: 05 07 ;Ставить можно много, но больше 09 я не советую
+;------------------------- end -------------------------
+

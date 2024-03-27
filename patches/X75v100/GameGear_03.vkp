@@ -1,0 +1,41 @@
+;X75v100
+;GameGear
+;GameGear
+;(c) cbn
+;(r) Pavel
+;Version: 0.3
+;PatchID: 6658
+;Details: https://patches.kibab.com/patches/details.php5?id=6658
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=GameGear_03.zip
+
+/*
+Game Gear - Sega Master System (не Genesis!) эмулятор
+Эмулятор популярной приставки.
+Т.к. версия для x65-75 едина смотрим след. версию в x65!!!
+Открывает ромы из zip, rar, 7z архивов 
+(ром должен целиком помещаться в памяти, по одному рому в архиве, 
+расширение архива переименовать в .gg)
+Демо игра Sonic приложена.
+
+Положить в 4:\ZBin\GameGear
+В extension.cfg добавить строки:
+gg:4:\ZBin\GameGear\GameGear.elf
+sms:4:\ZBin\GameGear\GameGear.elf
+
+*/
+Game Gear - Sega Master System (не Genesis!) эмулятор
+Эмулятор популярной приставки.
+Т.к. версия для x65-75 едина смотрим след. версию в x65!!!
+Открывает ромы из zip, rar, 7z архивов 
+(ром должен целиком помещаться в памяти, по одному рому в архиве, 
+расширение архива переименовать в .gg)
+Демо игра Sonic приложена.
+
+Положить в 4:\ZBin\GameGear
+В extension.cfg добавить строки:
+gg:4:\ZBin\GameGear\GameGear.elf
+sms:4:\ZBin\GameGear\GameGear.elf
+
+Скачайте приложенный файл
+;------------------------- end -------------------------
+

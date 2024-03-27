@@ -1,0 +1,13 @@
+;A52v9
+;Дебаг во время звонка
+;Dеbug during a call
+;(c) Delirium
+;Version: 
+;PatchID: 4374
+;Details: https://patches.kibab.com/patches/details.php5?id=4374
+/*
+Откл. все "ненужные" кнопки при вход. звонке, если откл ответ любой клавишей
+*/
+1E6AA6: 3D 0D
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;CX70v50
+;Изменить частоту обновления Overlay
+;Change DevMen Overlay Display Refresh Rate
+;(c) benj9
+;(p) Smelter
+;Version: 
+;PatchID: 2786
+;Details: https://patches.kibab.com/patches/details.php5?id=2786
+/*
+ 
+*/
+008CF9F6: 36 6B
+;------------------------- end -------------------------
+

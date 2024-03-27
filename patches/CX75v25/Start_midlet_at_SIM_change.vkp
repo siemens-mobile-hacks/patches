@@ -1,0 +1,47 @@
+;CX75v25
+;Запуск мидлета при смене SIM-карты
+;Start midlet at SIM change
+;(c) Fuchs
+;(r) Mikel, SiNgle, avkiev, 1nvisible, Stitch
+;(p) Fedor
+;Version: 2
+;PatchID: 5774
+;Details: https://patches.kibab.com/patches/details.php5?id=5774
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v25&f=Start_midlet_at_SIM_change.rar
+
+/*
+При работе телефона в обычном режиме патч себя никак не проявляет. Однако, если вставить сим-карту в телефон впервые, то он отсылает СМС хозяину (и/или друзьям), с текстом что телефон украли. При этом на экране телефона лишь появится заставка "пожалуйста, подождите" на несколько секунд.
+*/
+;CX75v25
+;Запуск мидлета при смене SIM-карты
+;Start midlet at SIM change
+;(c) Fuchs
+;(r) Mikel, SiNgle, avkiev, 1nvisible, Stitch
+;(p) Fedor
+;Version: 2
+;Details: Не совместим с патчем "Сохранение списков при смене SIM карты" 
+;!к патчу прикреплён файл
+
+/*
+Описание и мидлет лежат в прикреплённом файле.
+Эта версия умеет сохранять списки вызовов при замене карты.
+
+English:
+MIDlet & description are in the attached file.
+This version also saves calls list when changing SIM.
+*/
+02A755E: F6F118EA FBF11EE8
+
++04A259C
+#pragma enable old_equal_ff
+00: 0000A0E3FF7F2DE9
+08: 18008FE20030A0E3
+10: 0020A0E308409FE5
+18: 0FE0A0E114FF2FE1
+20: FFBFBDE8,0xA088F438 ; -, StartMIDlet
+28: "2:\\gsm.jar",0000 ;путь к мидлету, его можно поменять на любой другой. !Слэшей должно быть по два!
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+;------------------------- end -------------------------
+

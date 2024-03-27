@@ -1,0 +1,21 @@
+;E71v45
+;Выключение вместо факс/данные по горячей кнопке
+;Shutdown instead of Fax/Data on hotkey
+;(c) Barracuda
+;(r) Feyman
+;Version: 
+;PatchID: 10593
+;Details: https://patches.kibab.com/patches/details.php5?id=10593
+/*
+По-быстрому накатал замену энтрика+опционально текста. Очень удобно, когда на красной кнопке висит ХТаск
+*/
+;Fax/data -> SwitchPhoneOff
+0840794: 63896EA0 0xA0543CE4
+
+;Редактирование сообщения  9 : 0207E  "Факс/данные" => "Выключение"
+;E71 lg1
+;17F95C4: D0A4D0B0D0BAD1812FD0B4D0B0D0BDD0BDD18BD0B500 D092D18BD0BAD0BBD18ED187D0B5D0BDD0B8D0B5FF00
+08407C4: 7E2000007E200000 1122000011220000
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M75v5
+;Плавный скроллинг длинных названий и имен
+;Smooth scrolling of long names
+;(c) SiNgle
+;Version: 
+;PatchID: 417
+;Details: https://patches.kibab.com/patches/details.php5?id=417
+/*
+Плавный скроллинг длинных названий и имен.
+*/
+04A6EE0: D007 1202 ; задержка перед скролом (delay before start)
+04A6EE4: 2C01 2A00 ; скорость скрола (scrolling speed)
+;------------------------- end -------------------------
+

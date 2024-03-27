@@ -1,0 +1,13 @@
+;C65v56
+;Сохранение списков при смене SIM карты
+;Call list saving when SIM is changed
+;(c) SiNgle
+;Version: 
+;PatchID: 3835
+;Details: https://patches.kibab.com/patches/details.php5?id=3835
+/*
+
+*/
+16E7314: 1DF0ECEC 00200020
+;------------------------- end -------------------------
+

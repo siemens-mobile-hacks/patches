@@ -1,0 +1,79 @@
+;M75v25
+;Перенос папки System на диск Config
+;Move System folder to disk Config
+;(c) TAPAKAH
+;(p) kiREALlov
+;Version: 1.0
+;PatchID: 7057
+;Details: https://patches.kibab.com/patches/details.php5?id=7057
+/*
+Освобождаем место на Data под PNG графику, эльфы и т.д. 
+
+RUS: Переносит папку System на диск Config, что выглядит вполне логично, ибо в этой папке хранятся настройке пользователя и нет понятно, почему разработчики изначально не поместили эту папку там, где ей по логике следует быть.
+применять отдельно от других (а то вычитание адреса подействует)
+
+ENG: Transfers folder System on disk Config that looks quite logically for in this folder are stored to adjustment of the user and is not present clearly why developers initially have not placed this folder there where it on logic should be. 
+To apply separately from others (and that subtraction of the address will work)
+*/
+4A5962: 30 32
+4A5976: 30 32
+4A5982: 30 32
+4A599A: 30 32
+4A59B6: 30 32
+4A59CA: 30 32
+4A59EC: 30 32
+4A5A0C: 30 32
+4A5A24: 30 32
+4A5A4A: 30 32
+4A5A6A: 30 32
+4A5A82: 30 32
+4A5AA6: 30 32
+4A5AC2: 30 32
+4A5AD6: 30 32
+4A5AF6: 30 32
+4A5B12: 30 32
+4A5B26: 30 32
+4A5B48: 30 32
+4A5B6A: 30 32
+4A5B84: 30 32
+4A5BAA: 30 32
+4A5BC6: 30 32
+4A5BDA: 30 32
+4A5BFC: 30 32
+4A5C1C: 30 32
+4A5C34: 30 32
+4A5C56: 30 32
+4A5C70: 30 32
+4A5C82: 30 32
+4A5CA4: 30 32
+4A5CCC: 30 32
+4A5CEC: 30 32
+4A5D18: 30 32
+4A5D34: 30 32
+4A5D48: 30 32
+4A5D68: 30 32
+4A5D84: 30 32
+4A5D98: 30 32
+4A5DB8: 30 32
+4A5DD6: 30 32
+4A5DEC: 30 32
+4A5E0E: 30 32
+4A5E2C: 30 32
+4A5E42: 30 32
+4A5E7E: 30 32
+4A5E9A: 30 32
+4A5EAE: 30 32
+4A5ECE: 30 32
+4A5EEA: 30 32
+4A5EFE: 30 32
+4A5F22: 30 32
+4A5F48: 30 32
+4A5F66: 30 32
+4A5F94: 30 32
+4A5FBA: 30 32
+4A5FD8: 30 32
+4A6002: 30 32
+4A6020: 30 32
+4A6036: 30 32
+;------------------------- end -------------------------
+

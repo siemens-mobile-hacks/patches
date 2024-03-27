@@ -1,0 +1,14 @@
+;M65v50
+;Чернобелый режим камеры
+;Black and white camera
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 1757
+;Details: https://patches.kibab.com/patches/details.php5?id=1757
+/*
+Чернобелый режим камеры.
+*/
+12EE1CF: 3F163F 801680
+;------------------------- end -------------------------
+

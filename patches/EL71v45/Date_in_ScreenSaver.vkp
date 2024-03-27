@@ -1,0 +1,14 @@
+;EL71v45
+;Дата вместо имени оператора в заставке
+;Date instead of provider name in ScreenSaver
+;(c) Evgr
+;(p) ahk
+;Version: 
+;PatchID: 9195
+;Details: https://patches.kibab.com/patches/details.php5?id=9195
+/*
+
+*/
+07100CA: FFF737FE B5F630FA
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;SL75v52
+;Добавить пункт "Длит.подсвет." в Native Menu
+;Add NativeMenu item “Backlight duration”
+;(c) loquat
+;(r) BuG
+;(p) kostett
+;Version: 
+;PatchID: 9915
+;Details: https://patches.kibab.com/patches/details.php5?id=9915
+/*
+Добавление в Native Menu => Настройки => Индикация пункта "Длит.подсвет.", который позволяет регулировать длительность горения подсветки четырьмя значениями - 5, 10, 15 и 20 секунд.
+*/
+449944: 93 9B
+;------------------------- end -------------------------
+

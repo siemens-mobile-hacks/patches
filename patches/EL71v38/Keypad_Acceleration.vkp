@@ -1,0 +1,14 @@
+;EL71v38
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) 1nvisible
+;Version: 
+;PatchID: 5542
+;Details: https://patches.kibab.com/patches/details.php5?id=5542
+/*
+
+*/
+08D4230: 011C 1621
+;------------------------- end -------------------------
+

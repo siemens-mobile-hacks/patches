@@ -1,0 +1,14 @@
+;CX75v12
+;Удаление оператора с экрана скринсейвера
+;Remove operator from screensaver
+;(c) TAPAKAH
+;Version: 1.0
+;PatchID: 526
+;Details: https://patches.kibab.com/patches/details.php5?id=526
+/*
+Патч удаляет надпись с именем оператора с экрана скринсейвера.
+*/
+04AC598: 00 01
+04AC608: 00 01
+;------------------------- end -------------------------
+

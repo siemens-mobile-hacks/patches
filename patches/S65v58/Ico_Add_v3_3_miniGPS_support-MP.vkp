@@ -1,0 +1,32 @@
+;S65v58
+;Дополнительная панель иконок с поддержкой miniGPS v3.3-MP
+;IconbarAdditions v3.3 miniGPS support-MP
+;(c) benj
+;(r) BuG, empeka
+;(p) -=[LCW]=-ExXtReMe
+;Version: 
+;PatchID: 2348
+;Details: https://patches.kibab.com/patches/details.php5?id=2348
+/*
+featuring: charging icons, profile icons, vibra on/off, animation, netmode, minigps, universal engines
+
+*/
+; * IconbarAdditions v3.3 miniGPS support*
+; (c) benj (r) BuG, empeka
+; (p) -=[LCW]=-ExXtReMe 
+; S65v58
+; (!) masterpatch
+; (!) funclib: f2,f17,f22,f33,f34,f35,f37,f39,f58,f64,f81,f105,f106,v 1,v2,v14
+; featuring: charging icons, profile icons, vibra on/off, animation, netmode, minigps, universal engines
+
+; entrypoint with icons left in iconbar:
+1698C58: 1CF0C6E81CF054EB0028 0048804711B8FDA0C046 ; 
+0FDBA88: FFFFFFFFFFFFFFFF E84D6BA1,08536BA1 ; 
+
+; entrypoint with icons right in iconbar:
+;1698EFC: 1CF0E4E81CF02EEAFF28 C0460048804711B8FDA0 ; 
+;0FDBA88: FFFFFFFFFFFFFFFF 0xA16B50C8,0xA16B5360 ; 
+;0FDB856: 00 FF ; put this line BEHIND patch 
+
+;------------------------- end -------------------------
+

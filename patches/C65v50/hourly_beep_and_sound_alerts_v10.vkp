@@ -1,0 +1,138 @@
+;C65v50
+;Ежечасный сигнал и звуковые напоминания о пропущенных событиях и полном аккумуляторе
+;Hourly beep and sound alerts after missed events and full battery
+;(c) avkiev
+;(r) SiNgle
+;(p) AsteriX
+;Version: 10
+;PatchID: 235
+;Details: https://patches.kibab.com/patches/details.php5?id=235
+/*
+Телефон выполняет раз в час некоторые задания.
+Кроме того, если упущено какое-либо событие, то телефон проигрывает
+один раз в N минут соответствующую мелодию.
+Напоминания играют только с H1 до H2 часов, смотри настройки.
+Напоминания играют не чаще, чем один раз в N минут.
+Напоминания не играют при выключенном звуке.
+Если задана мелодия 7F, то она звучать не будет.
+Если номер мелодии больше, чем 80h, то играет мелодия (R-80h) и сопровождается виброй.
+Например, если задана мелодия DF, то звучит мелодия 5F и телефон вибрирует.
+Патч не работает в 7-м профиле.
+
+EN
+Phone executes every hour some tasks.
+Besides, if you miss some event - mobile plays each N minutes according ringtone.
+Alerts plays only from H1 to H2 hour, see options.
+Alerts plays not often, than once per N minutes.
+Alerts aren't play if sound is off.
+Ringtone 7F doesn't play.
+If ringtone more than 80h, than ringtone (R-80h) plays and phone are vibrate.
+For example, if you set ringtone DF, than ringtone 5F plays and phone is vibrate.
+If current profile is 7 - patch doesn't work.
+
+*/
+/*
+Телефон выполняет раз в час некоторые задания.
+Кроме того, если упущено какое-либо событие, то телефон проигрывает
+один раз в N минут соответствующую мелодию.
+Напоминания играют только с H1 до H2 часов, смотри настройки.
+Напоминания играют не чаще, чем один раз в N минут.
+Напоминания не играют при выключенном звуке.
+Если задана мелодия 7F, то она звучать не будет.
+Если номер мелодии больше, чем 80h, то играет мелодия (R-80h) и сопровождается виброй.
+Например, если задана мелодия DF, то звучит мелодия 5F и телефон вибрирует.
+Патч не работает в 7-м профиле.
+Phone executes every hour some tasks.
+Besides, if you miss some event - mobile plays each N minutes according ringtone.
+Alerts plays only from H1 to H2 hour, see options.
+Alerts plays not often, than once per N minutes.
+Alerts aren't play if sound is off.
+Ringtone 7F doesn't play.
+If ringtone more than 80h, than ringtone (R-80h) plays and phone are vibrate.
+For example, if you set ringtone DF, than ringtone 5F plays and phone is vibrate.
+If current profile is 7 - patch doesn't work.
+------------------------------
+Буфер настройки ежечасных событий содержит 24 байта, которые определяют задания,
+которые будут выполняться при наступлении соответствующего часа.
+Если соответствующий байт равен 00 - то при наступлении этого часа выполняться ничего не будет.
+Биты каждого из этих байт определены так:
+-0 (1) - Проиграть мелодию ежечасного сигнала
+-1 (2) - Зарезервировано
+-2 (4) - Запустить мидлет
+-3 (8) - Выключить телефон
+-4    \
+-5     > Установить профиль
+-6    /
+-7     - Зарезервировано
+Пример 1. Если в буфере по смещению 09 находится байт 31 (=30+1),
+то в 9:00 телефон переключится в 3-й профиль и проиграет ежечасную мелодию.
+Пример 2. Если в буфере по смещению 18 находится байт 25 (=20+1+4),
+то в 18:00 телефон переключится во 2-й профиль, проиграет ежечасную мелодию и запустит мидлет.
+Пример 2. Если в буфере по смещению 23 находится байт 08, то в 23:00 телефон выключится
+Buffer of Hourly Events Tuning contains 24 bytes, which defines tasks,
+which will execute when according hour comes.
+If according byte equal to 00 - then no tasks will execute.
+Bits of these bytes define in such manner:
+-0 (1) - Play HourlyBeep
+-1 (2) - Reserved
+-2 (4) - Run midlet
+-3 (8) - Switch mobile off
+-4    \
+-5     > Set Profile
+-6    /
+-7     - Reserved
+Example 1. If in this buffer byte 09 equals to 31 (=30+1),
+then at 9:00 mobile switches to 3rd profile and plays HourlyBeep.
+Example 2. If in this buffer byte 18 equals to 25 (=20+1+4),
+then at 18:00 mobile switches to 2nd profile, plays HourlyBeep and run midlet.
+Example 2. If in this buffer byte 23 equals to 08, then at 23:00 mobile switches off
+*/
+16F1832: 16F0B8EA 1FF00FFE ;Mainscreen
+16F4582: C0F764ED 1CF06BFF ;Screensaver
+#pragma enable old_equal_ff
+1711400: 536F756E6420416C6572747320763130
+1711410: A961766B6965762032352E30362E3035
+1711420: 01B57F21084081B0031C102042210902
+1711430: 093100220092E9F674E801B001BC8028
+1711440: 07D33B48804704D02F2001210322394B
+1711450: 984700BD00B5F6F7A6EC02E000B5A3F7
+1711460: F6EDFFB4F5F79AEC013007285ED0344C
+1711470: 384DA288A78ABF08BF18182F00D3183F
+1711480: 618800291DD12868B8421AD02F6032A0
+1711490: C65D002E15D0300902D0013826498847
+17114A0: 0120304202D03320FFF7BAFF04203042
+17114B0: 02D02FA0F6F782ED0820304201D01F48
+17114C0: 804708200021884202D3B84204D901E0
+17114D0: B8422BD88F4229D8DF201A4A11780222
+17114E0: 114014D1F6F7DEEB011CDC2000290ED1
+17114F0: D620154A1188002909D1144A11880329
+1711500: 14D3134A11680A79FF2A0FD83920FF28
+1711510: 0CD0696862888A4200D23C32521A012A
+1711520: 04D362886A6001D1FFF77AFFFFBDC046
+1711530: 31B28EA0081A95A037CB8CA0CCE615A1
+1711540: C8E663A8400268A8302438A8668766A8
+1711550: 08E16AA8300475A8
+;Буфер настройки ежечасных событий (Buffer of Hourly Events Tuning)
+;        00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+1711558: 01,00,00,00,00,00,00,00,01,01,01,01,01,01,01,01,01,01,01,01,01,01,01,01
+;В этом примере - Просто тилибомкать каждый час с 8 часов до полуночи
+;In this example - Just play HourlyBeep from 8:00 till midnight
+1711570: "0:\\Java\\jam\\Applications\\HourlyEvent\\HourlyEvent.jar",00 ;Midlet
+#pragma disable old_equal_ff
+;Все напоминания звучат только с H1 до H2 часов (All alerts play only from H1 to H2 hours)
+;17114C2: 08 0i0H1
+;17114C4: 00 0i0H2
+;(07,23) - 07:00-23:00, (08,00) - 08:00-00:00, (00,00) - always, (24,25) - never
+17114A6: 33 BA ;Мелодия для ежечасного сигнала (Ringtone for Hourly Beep)
+;17114D8: DF Ra ;Мелодия при пропущенном будильнике (Ringtone for Missed Alarm)
+;17114EA: DC Rc ;Мелодия при пропущенном звонке (Ringtone for Missed Call)
+;17114F0: D6 Rs ;Мелодия для остальных событий (Ringtone for Another Missed Event)
+171150C: 39 38 ;Мелодия при заряженном аккумуляторе (Ringtone for Full Battery)
+;171151E: 01 NN ;Период напоминания - NN минут (Play alerts each NN minutes)
+;1711446: 04D0 C046 ;Вибрировать даже если вибра отключенна (Vibrate even if vibra off)
+171144C: 03 01 ;Длительность вибры (Vibra duration)
+1711508: FF 0C ;Не играть мелодию при заряженном аккумуляторе при зарядке кабелем (Don't play Ringtone for Full Battery after charging via cable)
+;171146A: 07 NP ;Profile "No patches"
+
+;------------------------- end -------------------------
+

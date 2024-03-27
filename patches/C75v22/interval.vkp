@@ -1,0 +1,15 @@
+;C75v22
+;Увеличение интервала между сообщениями "Аккумулятор разряжен! Зарядите"
+;An increase in the interval between the communications "storage battery is discharged! You will load "
+;(c) ?
+;(p) Sinclair
+;Version: 
+;PatchID: 2624
+;Details: https://patches.kibab.com/patches/details.php5?id=2624
+/*
+Позволяет продлить работу телефона с разряженым аккумулятором
+с 20 секунд до 5 минут
+*/
+07C8E20: ED100000 E8FD0000
+;------------------------- end -------------------------
+

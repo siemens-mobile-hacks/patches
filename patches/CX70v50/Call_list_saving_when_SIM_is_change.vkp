@@ -1,0 +1,14 @@
+;CX70v50
+;Сохранение списков при смене SIM карты
+;Call list saving when SIM is changed
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 85
+;Details: https://patches.kibab.com/patches/details.php5?id=85
+/*
+Сохраняются списки при смене SIM карты.
+*/
+171039C: 1DF0A6EF 00200020
+;------------------------- end -------------------------
+

@@ -1,0 +1,42 @@
+;EL71v45
+;Изменить текст в окне запроса на передачу данных
+;Change the text in the data transfer request
+;(c) Danil_e71, Ganster41
+;(r) Dimadze
+;Version: 2
+;PatchID: 10185
+;Details: https://patches.kibab.com/patches/details.php5?id=10185
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=el71v45&f=Change_the_text_v2.zip
+
+/*
+Замена текста в диалоге приема файла на:
+
+Принять файл?
+%имя_файла%
+
+* Немного оптимизировал;
+* Правильно отображаются русские названия;
+- Лишний перенос. Только место занимает;
+
+(!)SWI: 0x114, 0x117, 0x11E, 0x127, 0x1E3, 0x8256, 0x2AA
+
+исходник приложен
+*/
+;FIX_COMMAND
+0x0071D4D0: 00
+;VREZKA
+0x0071D4D4: E9CA2FEB
+;CODE,DATA_C
+0x01310080: F0402DE9C5DF4DE20040A0E10150A0E1
+0x01310090: 0260A0E1568200EF2F10A0E3170100EF
+0x013100A0: 58109FE5017080E21B20A0E3850F8DE2
+0x013100B0: 1E0100EFE520A0E30710A0E1850F8DE2
+0x013100C0: 140100EF402FA0E314108DE20D00A0E1
+0x013100D0: 270100EF402FA0E3851F8DE20D00A0E1
+0x013100E0: E30100EF0D30A0E10620A0E10510A0E1
+0x013100F0: 0400A0E1AA0200EFC5DF8DE2F080BDE8
+0x01310100: 040131A1D09FD180D0B8D0BDD18FD182
+0x01310110: D18C20D184D0B0D0B9D0BB3F0A000000
+
+;------------------------- end -------------------------
+

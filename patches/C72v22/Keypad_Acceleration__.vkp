@@ -1,0 +1,14 @@
+;C72v22
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) Virusmater
+;Version: 
+;PatchID: 6404
+;Details: https://patches.kibab.com/patches/details.php5?id=6404
+/*
+
+*/
+CC8A08: 56 20
+;------------------------- end -------------------------
+

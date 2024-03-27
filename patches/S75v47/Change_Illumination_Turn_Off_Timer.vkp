@@ -1,0 +1,22 @@
+;S75v47
+;Изменение длительности горения подсветки
+;Change Illumination Turn Off Timer
+;(c) benj9
+;(p) -=(Kad)=-
+;Version: 
+;PatchID: 6426
+;Details: https://patches.kibab.com/patches/details.php5?id=6426
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v47&f=Change_Illumination_Turn_Off_Timer.zip
+
+/*
+Устанавливать только при оригинальном set_display.fs, если нет оного берём из архива и кладём в 
+Config:\japp\FlexMenu
+
+ВНИМАНИЕ! ЕСЛИ ЭТОГО НЕ СДЕЛАТЬ, ТО ПОЯВЯТСЯ ГЛЮКИ ОПИСАННЫЕ by Pavel81
+*/
+;Главный экран (в секундах) \ mainscreen (in seconds)
+0BE84BD: 0F 0i60 
+;Меню, списки и т.д. (в секундах) \ menues, lists etc. (in seconds)
+0BE84C1: 3C 0i255 
+;------------------------- end -------------------------
+

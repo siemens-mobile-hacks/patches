@@ -1,0 +1,19 @@
+;M81v47
+;Перезагрузка вместо Клав. Заблок. в меню красной кнопки
+;Reload instead of keylock in RedButtonMenu
+;(c) ThE TrIFoN
+;(r) siepatchdb@conference.jabber.ru
+;(p) Barracuda
+;Version: 
+;PatchID: 9049
+;Details: https://patches.kibab.com/patches/details.php5?id=9049
+/*
+
+*/
+034EE8C: A8F06EEF E4F6F2ED
+139AC34: 0x21cc 0x054b ;редакт сообщения
+139AC38: 0x21cc 0x054b ;редакт сообщения
+02FDA4C: 1fd1 0028 ;запуск помошника, чтоб не стирались настройки инета
+034EE88: fdf7bdfb c046c046 ;не показывать экран "клава залочена"
+;------------------------- end -------------------------
+

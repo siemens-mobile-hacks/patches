@@ -1,0 +1,14 @@
+;S75v52
+;Отключить сообщение "Язык ввода:." при выборе языка в SMS/MMS/E-mail/Browser
+;Disable message "Input language:." at a language choice in SMS/MMS/E-mail/Browser
+;(c) Evgr
+;(p) den11111
+;Version: 
+;PatchID: 8319
+;Details: https://patches.kibab.com/patches/details.php5?id=8319
+/*
+
+*/
+00B537A: FAB0 B0BD
+;------------------------- end -------------------------
+

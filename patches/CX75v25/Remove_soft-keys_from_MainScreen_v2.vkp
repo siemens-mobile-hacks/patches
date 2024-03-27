@@ -1,0 +1,17 @@
+;CX75v25
+;Убрать софт-кнопки с главного экрана и опустить дату с часами вниз
+;Remove soft-keys from MainScreen
+;(c) SiNgle
+;Version: 2
+;PatchID: 3481
+;Details: https://patches.kibab.com/patches/details.php5?id=3481
+/*
+
+*/
+02CBFC9: D0 E0
+02CC086: 05D1 0028
+03473B4: 07D1 0028
+02CCB6E: 0DD1 0028 ; чтоб часы не скакали вверх при SMS и т.п.
+02CCB74: 0AD1 0028
+;------------------------- end -------------------------
+

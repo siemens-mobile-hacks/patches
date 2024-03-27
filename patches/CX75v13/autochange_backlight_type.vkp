@@ -1,0 +1,29 @@
+;CX75v13
+;Переключение типов подсветки на лету
+;Autochange backlight type
+;(c) ThE TrIFoN
+;Version: 1.1
+;PatchID: 842
+;Details: https://patches.kibab.com/patches/details.php5?id=842
+/*
+RUS: Изменяет тип подсветки в зависимости от выбранного профиля. 
+Теперь не глючит с профилями с номерами больше 3.
+Стандартный - горит только экран
+Тихое место - горит только клавиатура
+Шумное место - горит всё вместе
+Остальные профили - патч ведет себя так как будто его нет.
+
+ENG: Changes type of illumination depending on the chosen profile. 
+Now no игп with profiles with numbers it is more 3.
+Standard - light only the screen
+Silent place - keyboard light only
+Noisy place - light all together
+Other profiles - the patch behaves as as if it is not present.
+*/
+0859DDA: B0B5684D041C 00B50AE000BD
+0859DF6: 624D041C 05F2EDF9
+0A5F1D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 4952412098B5031C0648008801300328
+0A5F1E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02D300F000F8181C004D98BDD02F53A8
+0A5F1F0: FFFFFFFFFFFFFFFF F49D85005CBC51A8
+;------------------------- end -------------------------
+

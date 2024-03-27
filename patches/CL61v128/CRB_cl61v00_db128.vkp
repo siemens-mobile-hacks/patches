@@ -1,0 +1,14 @@
+;CL61v128
+;Классическая функция красной кнопки
+;Classic Red Button
+;(c) Rst7/CBSIE
+;(p) Marie
+;Version: 
+;PatchID: 10411
+;Details: https://patches.kibab.com/patches/details.php5?id=10411
+/*
+
+*/
+012519C: 94 96
+;------------------------- end -------------------------
+

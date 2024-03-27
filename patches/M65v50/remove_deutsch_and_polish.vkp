@@ -1,0 +1,15 @@
+;M65v50
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;(p) AsteriX
+;Version: 
+;PatchID: 92
+;Details: https://patches.kibab.com/patches/details.php5?id=92
+/*
+Убирает немецкий и польский языки из меню языков ввода, так что найти нужный язык (русский или английский) становится гораздо проще
+*/
+11FA0C2: 00 01
+11FA0F2: 00 01
+;------------------------- end -------------------------
+

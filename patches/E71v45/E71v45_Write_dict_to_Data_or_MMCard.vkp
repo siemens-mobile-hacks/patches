@@ -1,0 +1,61 @@
+;E71v45
+;Диктофон и Запись звука пишут на диск Data или карту памяти по выбору 
+;Dictaphone and Sound recorder write to Data or memory card as option 
+;(c) 1nvisible, Evgr 
+;Version: 1
+;PatchID: 10513
+;Details: https://patches.kibab.com/patches/details.php5?id=10513
+/*
+
+*/
+
+05022D4: 0610A0E1 F1C4EDFB
+#pragma enable old_equal_ff
+00735DC: 0xA082A42E
+007364C: 0xA082A28E
+00736D4: 0xA08291B0,0xA0829194
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+
+;Ниже прикреплено тело патча
+;X85v100
+;Диктофон и Запись звука пишут на диск Data или карту памяти по выбору 
+;Dictaphone and Sound recorder write to Data or memory card as option 
+;(c) 1nvisible, Evgr 
+;Version: 1
+;PatchID: 10512
+;Details: http://patches.kibab.com/patches/details.php5?id=10512
+
+
+#pragma enable old_equal_ff
+00735D0: 0600000000000000A2050000
+00735E0: 083607A0EC3507A0FA3507A006003400
+00735F0: 3A005C000493F3976856060034003A00
+0073600: 5C00555FF39768561400,'4:\\Dictating machine'
+0073640: 0100000001000000A2050000
+0073650: 743607A05C3607A0683607A005003400
+0073660: 3A005C007280F397050034003A005C00
+0073670: F39748650900,'4:\\Sounds'
+00736A2: 00B50B49884207D100F01BF80ED0
+00736B0: 517800290BD0094809E00749884206D1
+00736C0: 00F010F803D09178002900D00448311C
+00736D0: 00BDC046
+00736DC: D03507A0
+00736E0: 403607A0FBB50348C4DF00D0021CFBBD
+
+00736F0: 0xB1C2D3E4,0x00210612,0000000000000000,"\
+{p=Dictaphone_writes_to id=210612 cp=1nvisible,Evgr ver=1}","\
+{info `Dictaphone write option`}","\
+{c typ `Data`=0 `MMCard`=1}","\
+{sm `Dictaphone`}","\
+{1 o `Save to:` c=typ v=1}\
+{endsm}","\
+{sm `Sound recorder`}","\
+{2 o `Save to:` c=typ v=1}\
+{endsm}","\
+",00
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,23 @@
+;S55v20
+;Правая софт кнопка -> Java или другое + текст на экране
+;Change right softkey function
+;(c) ValeraVi
+;Version: 
+;PatchID: 4878
+;Details: https://patches.kibab.com/patches/details.php5?id=4878
+/*
+
+*/
+;Работает только если не установлен патч убирания подписей софт кнопок.
+
+3247DC: EA200C49 FAAB3200
+6B0032: FFFFFFFFFFFFFFFF 2D02FA72E047E00E
+6B003A: FFFFFF E00FDA
+6B0040: FFFFFFFF FA72A44E
+
+127534: 1601 A109 ;text id (lo byte first)
+6B003D: FFFFFF 740C0C ;entry point.
+;В пред. 2 строки вписывайте нужную точку входа и ИД текста из списка:
+;http://www.vi-soft.com.ua/siemens/patches/s55/_entrypoints_.vkpkp
+;------------------------- end -------------------------
+

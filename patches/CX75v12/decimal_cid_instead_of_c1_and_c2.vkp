@@ -1,0 +1,21 @@
+;CX75v12
+;Десятичный CID вместо C1 и C2 в списке соседних сот
+;Decimal CID instead of C1 and C2 in neighbour list
+;(c) слава Богу
+;(r) AsteriX
+;(p) SiNgle
+;Version: 1.0
+;PatchID: 497
+;Details: https://patches.kibab.com/patches/details.php5?id=497
+/*
+Десятичный CID вместо C1 и C2 в списке соседних сот. Желателен патч включения инженерного меню для лицезрения сего.
+
+*/
+0B3A73E: 0123F856002802DA 203FB88B203702E0
+0B3A74C: 2B 20
+0B3A750: 02 05
+0B3A75A: 0223 0CE0
+0D079D4: 31204332 656C4944
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;CX70v56
+;Настройка подсветки
+;Illumination adjustment
+;(c) avkiev
+;(r) benj9
+;(p) SiamiX
+;Version: 
+;PatchID: 5631
+;Details: https://patches.kibab.com/patches/details.php5?id=5631
+/*
+
+*/
+1151144: 08D04DE20010D1E502B0A0E3 04E08FE204F01FE5,0xA0FC6701
+;------------------------- end -------------------------
+

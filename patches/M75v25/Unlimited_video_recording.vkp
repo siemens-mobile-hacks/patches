@@ -1,0 +1,16 @@
+;M75v25
+;Неограниченная запись видео
+;Unlimited video recording
+;(c) SiNgle
+;Version: 
+;PatchID: 4143
+;Details: https://patches.kibab.com/patches/details.php5?id=4143
+/*
+
+*/
+2D96B3: 00 FF
+34EF68: 3300000A 920052E3
+3CF071: 640000 303364
+130F9D: 13770D8A770D0D7528770D8A770D0DE3357C7B 13F78a770D0D7528F78a770D0DE3357C7B0B0B
+;------------------------- end -------------------------
+

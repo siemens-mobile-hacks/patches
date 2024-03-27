@@ -1,0 +1,32 @@
+;M75v25
+;Говорящий телефон
+;Talking Phone
+;(c) avkiev
+;(p) mAhmud
+;Version: 
+;PatchID: 5869
+;Details: https://patches.kibab.com/patches/details.php5?id=5869
+/*
+Патч заменяет выбранный шорткат на функцию проговаривания текущего времени.
+Сажаем этот шорткат с помощью DSE на любую кнопку, при ее нажатии будет проговариваться время.
+Эти файлы необходимо положить в 0:\Sounds\Time: http://avkiev.kiev.ua/Siemens/Patches/time.rar
+DSE: http://www.gsm-multifund.com/mod/DSE.rar
+
+English:
+Patch replaces shoosen shortcut with spelling current time function.
+Set this shortcut by help DSE to any key, if you press this key - current time will be spelled.
+You should download those files to 0:\Sounds\Time: http://avkiev.kiev.ua/Siemens/Patches/time.rarDSE: http://www.gsm-multifund.com/mod/DSE.rar
+
+*/
+;1. Shortcut
+4B19B8: "ELSE_COUNT_DOWN",00,296232A0 "ELSE_COUNT_DOWN",00,0xA0FC3001
+;4B1D2C: "ELSE_PUSHTOTALK",00,C16C32A0 "ELSE_PUSHTOTALK",00,0xA0FC3001 
+
+
+;2. Alarm
+;Говорить время вместо мелодии будильника (не работает если телефон выключен)
+;Spell time instead of Alarm (doesn't work if phone is off)
+58A830: 0F209BF0F6EB2080 00488047,0xA0FC30A7
+
+;------------------------- end -------------------------
+

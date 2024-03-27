@@ -1,0 +1,15 @@
+;M81v51
+;Несколько небольших размеров шрифта номера при наборе
+;Some small dial number font sizes
+;(c) Evgr
+;(p) SimaFish
+;Version: 
+;PatchID: 9423
+;Details: https://patches.kibab.com/patches/details.php5?id=9423
+/*
+
+*/
+02F6D7C: 05 01 ; при значениях от 1 до 4 меняется на какой-то мелкий шрифт
+0438A1C: 01 0A ; размер курсора
+;------------------------- end -------------------------
+

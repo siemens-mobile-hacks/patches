@@ -1,0 +1,13 @@
+;M75v12
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found"
+;(c) avkiev
+;Version: 
+;PatchID: 5357
+;Details: https://patches.kibab.com/patches/details.php5?id=5357
+/*
+
+*/
+04CD7E4: 5C03 FFFF
+;------------------------- end -------------------------
+

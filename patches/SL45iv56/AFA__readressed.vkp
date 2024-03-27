@@ -1,0 +1,42 @@
+;SL45iv56
+;AFA. Добавление функций для "Встречи" (readressed)
+;AFA. Another Function of Appointment (readressed)
+;(c) RizaPN
+;(r) alexta
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=2669
+;PatchID: 2079
+;Details: https://patches.kibab.com/patches/details.php5?id=2079
+/*
+Была проблемма совместимости с каким-то патчем (то ли MP3Buttons, то ли MP3Indicators)
+
+После применения патча становится доступной функция применения 
+любой "простой" функции в "Встречи" (Appointment). Задача 
+вписывается в текстовую позицию кодом, начиная с 2-х пробелов. 
+Например: для запуска MP3 плейера в нужный день и час нужно 
+создать "Встречу" на это время и в текстовой позиции вписать 
+"__DADBF886" (_=пробел, т.е. два пробела и код). DB86F8 - адрес 
+функции auto-play MP3Player'а, такой же как и у кнопки PLAY) 
+
+
+Release: November 21, 2003 
+Readdressed: July 09, 2005 by alexta
+*/
+3CAD7E: 06FE5E00 FAC778D4 
+
+27D478: FFFFFFFFFFFFFFFF DC49D418860046F1 
+27D480: FFFFFFFFFFFFFFFF 20202D0406FE5E00 
+27D488: FFFFFFFFFFFFFFFF FADC82ADE6FE8800 
+27D490: FFFFFFFFFFFFFFFF 00E8E6FF0038DC49 
+27D498: FFFFFFFFFFFFFFFF A92EBD0ABB125C41 
+27D4A0: FFFFFFFFFFFFFFFF F132BB0F7123D740 
+27D4A8: FFFFFFFFFFFFFFFF 3700B92F08F10DF3 
+27D4B0: FFFFFFFFFFFFFFFF E6F1DB00D7403700 
+27D4B8: FFFFFFFFFFFFFFFF B81FDA0D00F8FADC 
+27D4C0: FFFFFFFFFFFFFFFF EAABDC49992E27F2 
+27D4C8: FFFFFFFFFFFFFFFF 300047F20A008D03 
+27D4D0: FFFFFFFFFFFFFFFF 67F2DF002927CB00 
+
+;Главное найти правильную точку входа функции.
+;------------------------- end -------------------------
+

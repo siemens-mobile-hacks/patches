@@ -1,0 +1,15 @@
+;C75v22
+;Отключение SIM меню
+;Completely disable SIM-menu
+;(c) BingK(binghelingxi)
+;(r) dimonp25
+;(p) m.ksy
+;Version: 
+;PatchID: 9727
+;Details: https://patches.kibab.com/patches/details.php5?id=9727
+/*
+Патч убирает ВСЕ части SIM-menu из телефона
+*/
+02B8049: D1 E0
+;------------------------- end -------------------------
+

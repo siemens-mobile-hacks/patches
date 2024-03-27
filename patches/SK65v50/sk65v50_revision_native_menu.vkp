@@ -1,0 +1,14 @@
+;SK65v50
+;Не вырубаться при NativeMenu-Списки выз.-Время\стоимость
+;Revision Native Menu
+;(c) Bennie
+;(p) Marie
+;Version: 
+;PatchID: 10615
+;Details: https://patches.kibab.com/patches/details.php5?id=10615
+/*
+Теперь не вырубается при NativeMenu-Списки выз.-Время\стоимость
+*/
+0456C88: 0xA02BC56B 0xA0318897
+;------------------------- end -------------------------
+

@@ -1,0 +1,26 @@
+;SL45iv56
+;MTT. Обрезание имени трека
+;MTT. MP3 Trackname Truncate
+;(c) Seklth
+;Version: 
+;PatchID: 2037
+;Details: https://patches.kibab.com/patches/details.php5?id=2037
+/*
+Против заикания на высоких битрейтах
+*/
+0x3BA4C0: DAC71685 DAECF2FF 
+
+0x4CFFF2: FFFFFFFFFFFFFFFFFFFFFFFFFFFF E004DC7FE48E1100DAC71685DB00 
+
+0x3BA4F0: DAC7A684 CC00CC00 
+0x3BA50A: DAC7A684 CC00CC00 
+0x3BA534: DAC7A684 CC00CC00 
+0x3BA54E: DAC7 CC00 
+0x3BA550: A684 CC00 
+0x3BA588: DAC7A684 CC00CC00 
+0x3BA59E: DAC7 CC00 
+0x3BA5A0: A684 CC00 
+
+0x1A04FA: 20 00
+;------------------------- end -------------------------
+

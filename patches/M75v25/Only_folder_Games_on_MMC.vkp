@@ -1,0 +1,16 @@
+;M75v25
+;Только папка Games на MMC
+;Only folder Games on MMC
+;(c) ThE TrIFoN
+;(p) kiREALlov
+;Version: 
+;PatchID: 4513
+;Details: https://patches.kibab.com/patches/details.php5?id=4513
+/*
+Патч сделан из-за необходимости работы Мастер-мидлета с диска Data:\
+*/
+4A589E: 30 34
+4A58C0: 30 34
+4A58F2: 30 34
+;------------------------- end -------------------------
+

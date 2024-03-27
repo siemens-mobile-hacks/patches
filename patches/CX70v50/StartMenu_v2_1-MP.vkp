@@ -1,0 +1,15 @@
+;CX70v50
+;Меню пуск на главном экране
+;StartMenu on MainScreen
+;(c) KreN
+;(r) 1nvisible, benj9
+;Version: 2.1
+;PatchID: 3089
+;Details: https://patches.kibab.com/patches/details.php5?id=3089
+/*
+
+*/
+09435B0: EDF38EA0 0xA0FCC0E3
+1718400: 002861D0F9F720F80028 00498847,0xA0FCC051,C046
+;------------------------- end -------------------------
+

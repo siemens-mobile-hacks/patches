@@ -1,0 +1,16 @@
+;A65v17
+;Ускорение автоповтора клавиатуры
+;Increase keyboard speed
+;(c) ?
+;(p) Rasp
+;Version: 
+;PatchID: 6386
+;Details: https://patches.kibab.com/patches/details.php5?id=6386
+/*
+
+*/
+;Ускорение автоповтора клавиатуры. 
+;Портировано: Rasp
+9917F4: 56 20
+;------------------------- end -------------------------
+

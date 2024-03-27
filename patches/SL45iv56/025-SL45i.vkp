@@ -1,0 +1,58 @@
+;SL45iv56
+;Использование других функций при проигрывании MP3
+;Doing something else while playing MP3
+;(c) RizaPN
+;Version: 2
+;PatchID: 1569
+;Details: https://patches.kibab.com/patches/details.php5?id=1569
+/*
+Открывает доступ к некоторым функциям во время проигрывании MP3 плеера после нажатия "*". 
+
+Некоторые команды могут привести к выключению телефона! 
+
+Патч №025 с http://patch.oslik.ru/SL45_RU
+*/
+;Release Date: March 15, 2003 
+
+3BA07A: EA2008A146F62000 2D4646F620002D5A 
+3BA082: EA2036A146F62100 46F621002D6346F6 
+3BA08A: EA204EA1 13002D32 
+3BA0EE: DC49A9C8 08610D19 
+3BA0F2: C0C60861E0A7F6F6 D7403400F6F61E3E 
+3BA0FA: 0EFE4B77F2F60CFE DADBDC42EA00C2A3 
+
+;Для использования другой клавиши, замените значение по адресу 
+;3BA08A вместо 13 00 на необходимое в соответствии с таблицей: 
+
+;Код клавиши: описание клавиши 
+
+;5C: UPPER LEFT 
+;05: GREEN 
+;01: RED 
+;03: UPPER RIGHT 
+
+;22: RIGHT ARROW 
+;20: DOWN ARROW 
+;21: UP ARROW 
+;23: LEFT ARROW 
+
+;13: * 
+;14: # 
+;15: DIGIT 0-9 
+;1F: LONG # 
+
+;0E: LEFT SIDE + 
+;0D: LEFT SIDE - 
+;62: LEFT SIDE PLAY 
+
+;Для использования Памяти-SIM для отправки СМС при прослушивании MP3 плеера, 
+;добавьте: 
+
+341E56: 4860EA30 FAC7C0D3 
+
+27D3C0: FFFFFFFFFFFFFFFF E6FC1300D7403400 
+27D3C8: FFFFFFFFFFFFFFFF 42FC1E3E3D02FAD4 
+27D3D0: FFFFFFFFFFFFFFFF CE1E48603D02FAD4 
+
+;------------------------- end -------------------------
+

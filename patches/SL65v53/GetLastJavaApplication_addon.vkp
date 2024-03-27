@@ -1,0 +1,29 @@
+;SL65v53
+;GetLastJavaApplication аддон
+;GetLastJavaApplication addon
+;(c) geka
+;(p) Виктор89
+;Version: 
+;PatchID: 9981
+;Details: https://patches.kibab.com/patches/details.php5?id=9981
+/*
+Позволяет пользоваться функцией GetLastJavaApplication, которая есть только в SGold75.
+Поставить XTask от SGold75.
+В CSMlist.txt адрес ява должен быть обозначен как Java.
+*/
+;PATCH_ENTER
+0x00C3BBD8: 000090E504008DE5BC2A14FB 00109FE531FF2FE10005D0A0
+;PATCH_UPDATE
+#pragma enable old_equal_ff
+0x00D00500: 000090E504008DE504E08EE200402DE9
+0x00D00510: 03002DE9001094E5E48000EF7C1080E5
+0x00D00520: 0300BDE810609FE536FF2FE10080BDE8
+0x00D00530: E48000EF7C0090E51EFF2FE1DB6614A1
+0x00D00540: 000000A8
+#pragma disable old_equal_ff
+;PATCH_LIB
+#pragma disable warn_no_old_on_apply
+0x00FD479C: 3005D0A0
+#pragma enable warn_no_old_on_apply
+;------------------------- end -------------------------
+

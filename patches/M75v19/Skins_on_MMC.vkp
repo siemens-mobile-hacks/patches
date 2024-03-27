@@ -1,0 +1,14 @@
+;M75v19
+;Скины на MMC
+;Skins on MMC
+;(c) unknown
+;(p) Geka
+;Version: 1
+;PatchID: 4719
+;Details: https://patches.kibab.com/patches/details.php5?id=4719
+/*
+
+*/
+4A52C8: 30 34
+;------------------------- end -------------------------
+

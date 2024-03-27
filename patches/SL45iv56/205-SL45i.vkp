@@ -1,0 +1,77 @@
+;SL45iv56
+;ANM. Автоотчетчик
+;ANM. Answering Machine
+;(c) rizapn
+;Version: 2
+;PatchID: 1902
+;Details: https://patches.kibab.com/patches/details.php5?id=1902
+/*
+Добавляет автоответчик. 
+Выбирается через Приложение->Профиль 2->Пункт 3 
+Файл ответа в файле A:\Voice memo\am.vmo 
+
+
+Если не установлен последний патч ICF (№099 (обновление 2) - patchID 1692), 
+то запуск автответчика произойдет 
+только через некорое время, если не ответить на звонок. 
+
+v2->добавлено setMicOFF() --> но не работает
+v2->combine with "Record All Calls" patch 
+
+
+Created: August 13, 2004 
+Updated: Aug 24, 2004 
+
+Патч №205 (обновление 1) с http://patch.oslik.ru/SL45_RU
+*/
+;Отключение ANM для исходящих звонков: 
+0x3AC4D4: DAF09AC3 DAE4144D 
+
+;Влючение ANM для входящих звонков из патча №174(Обновление 1): 
+0x445850: CC00CC00 DAE4E84C 
+
+0x3AFDBE: F0C9 DAE4 
+0x3AFDC0: F0D6 DC4C 
+
+;Вызов в главную функцию ANM: 
+0x3AC528: DAF09AC3 DAE4604C 
+
+0x444C50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2A2A2A2A20414E4D207632202A2A2A2A 
+0x444C60: FFFFFFFFFFFF DAF09AC3BB23 
+
+;Поменяйте значение 20 для выбора другого профиля меню Приложение: 
+0x444C66: FFFFFFFF 9AF10D20 
+
+0x444C6A: FFFFFFFFFFFF BB2E2D164981 
+0x444C70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D0647F80A002D1F47F8E0002D4AE7F8 
+0x444C80: FFFFFFFFFFFFFFFFFFFFFFFF FF00BB27D7400E00F2F1423A 
+
+;If you also want to have Record All Calls function, 
+;APP default menu item is Profile1-Func14 (value=D0): 
+0x444C8C: FFFFFFFF 9AF141D0 
+
+;If you don't want to have Record All Calls function: 
+;0x444C8C: FFFFFFFF EA00124D 
+
+0x444C90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB1B47F8FF003D3D0D12E118BB1AE6FC 
+0x444CA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1E0DE6FD9103DAD5B2360D33D7403600 
+0x444CB0: FFFFFFFFFFFF F2F16C09CB00 
+
+;Гудок между проигрыванием и записью (в оригинале 13)
+0x444CB6: FFFFFFFF E6FC1300 
+
+0x444CBA: FFFFFFFFFFFF DAC31400E7F8 
+0x444CC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E000BB07FAD414F3D7400C00F3F81E10 
+0x444CD0: FFFFFFFFFFFFFFFFFFFFFFFF CB00D7400C00F7F81E10CB00 
+
+;Счётчик для автоотчета (~800ms each, I use 40): 
+0x444CDC: FFFFFFFF E7F84000 
+
+0x444CE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BBF8F0C9F0D6DB00BBE19AF11220BBEC 
+0x444CF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D102981BBEE3D0DE6FCC834E0EDE6FE 
+0x444D00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1800DAC164B1D7500C00F68E7C2BF68E 
+0x444D10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BE2CDB00E7F8FF00BBDCFAF09AC3413A 
+0x444D20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 5C566F696365206D656D6F5C616D2E76 
+0x444D30: FFFFFFFF 6D6F0000 
+;------------------------- end -------------------------
+

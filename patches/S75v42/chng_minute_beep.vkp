@@ -1,0 +1,14 @@
+;S75v42
+;Изменение времени подачи ежеминутного сигнала
+;Change minute beep during call
+;(c) SiNgle
+;(p) weclnt
+;Version: 
+;PatchID: 5477
+;Details: https://patches.kibab.com/patches/details.php5?id=5477
+/*
+
+*/
+09AAAB0: 00 0i055 ; 55 сек
+;------------------------- end -------------------------
+

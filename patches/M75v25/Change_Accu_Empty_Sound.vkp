@@ -1,0 +1,14 @@
+;M75v25
+;Изменить звук разряженного аккума
+;Change Accu Empty Sound
+;(c) benj9
+;Version: 
+;PatchID: 4123
+;Details: https://patches.kibab.com/patches/details.php5?id=4123
+/*
+
+*/
+; 00 = no sound. 2F = vibrate. e.g.: 3A, 3B 3E, 3F, 5A, 5E
+085E37C: 03 NN
+;------------------------- end -------------------------
+

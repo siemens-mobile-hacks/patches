@@ -1,0 +1,14 @@
+;S55v91
+;Включение громкой связи без подтверждения
+;Disable message turn on loudspeaker
+;(c) SiNgle
+;(p) avkiev, Mich3L
+;Version: 
+;PatchID: 4799
+;Details: https://patches.kibab.com/patches/details.php5?id=4799
+/*
+
+*/
+320B5E: E01CE6FD4807E00E DAA2AAFEFA72720B
+;------------------------- end -------------------------
+

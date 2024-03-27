@@ -1,0 +1,25 @@
+;C75v22
+;Черный или белый список
+;Black or white list
+;(c) SiNgle
+;(p) SMeeTBB
+;Version: 1.3
+;PatchID: 1160
+;Details: https://patches.kibab.com/patches/details.php5?id=1160
+/*
+Чёрной становится выбранная группа в фильтре (Меню-9-6-4)
+Черный список - при звонке кого то из этой группы телефон кладет трубку
+Белый список - при звонке кого то НЕ из этой группы телефон кладет трубку
+*/
+04D592C: 06D1 0028
+04D5930: 04D1 0028
+04D5D7E: B0420ED1 C9F798EB 
+#pragma enable old_equal_ff
+049F4B0: 00402DE9060050E10500001AFF3F2DE9
+049F4C0: 0FE0A0E10CF09FE5FF3FBDE80040BDE8
+049F4D0: 04F09FE50080BDE8A5C67EA08F5D4DA0
+#pragma disable old_equal_ff
+0A49507: D5 E0
+;049F4BB: 1A 0A ;белый список (white list)
+;------------------------- end -------------------------
+

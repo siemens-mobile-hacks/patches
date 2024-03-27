@@ -1,0 +1,54 @@
+;CX75v23
+;Позиционирование главного экрана
+;MainScreen positioning
+;(c) SiNgle, BuG
+;(r) KiRiK, arsh0r AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1812
+;Details: https://patches.kibab.com/patches/details.php5?id=1812
+/*
+
+*/
+;Charge Indicator (Switched-Off Mode)
+02A8CEA: 10 5E ; background end Y для С65 заменить на 4A
+02A8CF0: 02 50 ; background start Y для С65 заменить на 3C
+02A8CF2: 63 33 ; background start X
+02A8CF4: 80 50 ; background end X для С65 заменить на 49
+02A8CF9: F094FB 280028 ; no background
+02A8D02: 02 50 ; Y для С65 заменить на 3C
+02A8D04: 63 33 ; X
+
+;Net
+;? ; background end Y для С65 заменить на 0E
+;? ; background start Y
+;? ; background end X для С65 заменить на 1E
+;? ; background start X
+;? ; no background
+;? ; Y
+;? ; X
+
+;Iconbar
+02A9166: 10 0F ; background end Y для С65 заменить на 0E
+02A916A: 02 01 ; background start Y
+02A916C: 23 37 ; background start X для С65 заменить на 36
+02A916E: 61 75 ; background end X для С65 заменить на 74
+02A9175: F056F9 280028 ; no background
+02A91A0: 21 35 ; X для С65 заменить на 34
+02A91BA: 02 01 ; Y
+
+;Battery
+;? ; background end Y
+;? ; background start Y
+;? ; background end X для С65 заменить на 1D
+;? ; background start X
+;? ; no background
+02A9282: 02 0D ; Y
+02A9284: 63 01 ; X
+04AB61C: 08 12 ; Y - Provider name
+04AB62C: 1A 24 ; Y - Sub provider name
+02CCB80: A1 A0 ; Y - Time & Date для С65 заменить на 72
+
+
+;------------------------- end -------------------------
+

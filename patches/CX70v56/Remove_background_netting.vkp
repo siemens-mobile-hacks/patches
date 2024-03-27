@@ -1,0 +1,14 @@
+;CX70v56
+;Убрать сетку с бэкграунда при прорисовке окошек
+;Remove background netting while showing MsgBoxes
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 611
+;Details: https://patches.kibab.com/patches/details.php5?id=611
+/*
+Убрать сетку с бэкграунда при прорисовке окошек, например "Please Wait" и тп и тд.
+*/
+0CAD0B0: 55 00
+;------------------------- end -------------------------
+

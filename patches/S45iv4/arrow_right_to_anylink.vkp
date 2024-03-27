@@ -1,0 +1,22 @@
+;S45iv4
+;Стрелка вправо -> куча ссылок
+;Arrow Right-> links
+;(c) ?
+;Version: 
+;PatchID: 644
+;Details: https://patches.kibab.com/patches/details.php5?id=644
+/*
+Заменяет это нажатие на любую из ссылок. Список ссылок см. в патче №640
+Нет обычного меню при использовании графического меню!EN: Replaces this press with any of links in patch #640
+
+No ordinary menu when using graphmenu!
+*/
+5607E0: 46FC2300 FAFDCCFF
+5E7340: FFFFFFFF 46FC2300
+5E7344: FFFF 2D02
+5E7346: FFFFFFFF FAF6E807
+5E734A: FF DA
+5E734B: FFFFFF F63660 ;избранное (заменить на нужное из списка ссылок)
+5E734E: FFFFFFFF FAF6620D
+;------------------------- end -------------------------
+

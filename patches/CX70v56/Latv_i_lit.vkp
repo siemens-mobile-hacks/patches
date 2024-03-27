@@ -1,0 +1,15 @@
+;CX70v56
+;Убрать Латвийский и Литовский из меню языков ввода
+;Remove Latvian and Lithuanian from input languages menu
+;(c) 0xFEDF
+;(p) Smelter
+;Version: 
+;PatchID: 1112
+;Details: https://patches.kibab.com/patches/details.php5?id=1112
+/*
+
+*/
+0D7F7DE: 00 01
+0D7F7E2: 00 01
+;------------------------- end -------------------------
+

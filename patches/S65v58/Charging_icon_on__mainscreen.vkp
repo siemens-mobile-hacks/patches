@@ -1,0 +1,28 @@
+;S65v58
+;Иконка зарядки на главном экране
+;Charging Icon On Mainscreen
+;(c) empeka
+;(p) KiRiK
+;Version: 
+;PatchID: 4530
+;Details: https://patches.kibab.com/patches/details.php5?id=4530
+/*
+Патч добавляет иконку в панель иконок вверху экрана во время зарядки. По завершении зарядки используется другая иконка
+English: Patch adds an icon to iconbar at the top of the screen during charging battery. When battery is full, different icon is used
+*/
+1698DBA: 1BF048EF 27F001FA
+#pragma enable old_equal_ff
+16C01C0: 00B507480078002807D00649022800DD
+16C01D0: 013107AA281CD8F7D9FC0348804700BD
+16C01E0: 7A266CA8430100004C4C6BA1
+#pragma disable old_equal_ff
+
+;16C01E4: 4301 4501 ; picture # | № картинки Номер картинки - перевернутый в HEX (323->143->4301) 
+// when battery is full, patch uses next bitmap (picture# + 1)
+// когда зарядка завершена, используется следующий по порядку битмап. (№ картинки + 1) 
+
+;16C01CC: 0228 01E0 ; use first icon only | использовать только первую иконку
+;16C01CE: 00DD 04D8 ; don't display any icon when charging is finished | не показывать иконку по завершении зарядки 
+
+;------------------------- end -------------------------
+

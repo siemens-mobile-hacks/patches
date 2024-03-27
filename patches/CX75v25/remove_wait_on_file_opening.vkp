@@ -1,0 +1,14 @@
+;CX75v25
+;Отключить «Подождите» при открытии файла
+;Remove «Please wait» when opening a file
+;(c) sempai
+;Version: 
+;PatchID: 9939
+;Details: https://patches.kibab.com/patches/details.php5?id=9939
+/*
+
+*/
+035DD14: DB9711FA 0000A0E3
+035E918: DA9411FA 0000A0E3
+;------------------------- end -------------------------
+

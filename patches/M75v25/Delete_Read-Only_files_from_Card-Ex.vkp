@@ -1,0 +1,14 @@
+;M75v25
+;Удалять Файлы Только-для-Чтения из Card-Explorer
+;Delete Read-Only files from Card-Explorer
+;(c) 1nvisible
+;(p) kiREALlov
+;Version: 
+;PatchID: 4544
+;Details: https://patches.kibab.com/patches/details.php5?id=4544
+/*
+
+*/
+2DE0EB: 0A EA
+;------------------------- end -------------------------
+

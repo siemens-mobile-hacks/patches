@@ -1,0 +1,15 @@
+;SL65v50
+;Отключение ASP
+;Disable ASP
+;(c) caine
+;(p) Smelter
+;Version: 
+;PatchID: 5421
+;Details: https://patches.kibab.com/patches/details.php5?id=5421
+/*
+отключение нарастания громкости. за Ваши уши в ответе только Вы!!!
+*/
+129478C: 00 01
+1294790: 02 01
+;------------------------- end -------------------------
+

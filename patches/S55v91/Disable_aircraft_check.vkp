@@ -1,0 +1,14 @@
+;S55v91
+;Отключить проверку самолёта
+;Disable aircraft check
+;(c) &&&
+;(p) Mich3L
+;Version: 
+;PatchID: 4803
+;Details: https://patches.kibab.com/patches/details.php5?id=4803
+/*
+
+*/
+337EB4: 3D 0D
+;------------------------- end -------------------------
+

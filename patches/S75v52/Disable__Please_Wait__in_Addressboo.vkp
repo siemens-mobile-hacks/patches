@@ -1,0 +1,15 @@
+;S75v52
+;Отключить "Подождите" в Адреске
+;Disable "Please Wait" in Addressbook
+;(c) 1nvisible
+;(p) den11111
+;Version: 
+;PatchID: 8293
+;Details: https://patches.kibab.com/patches/details.php5?id=8293
+/*
+
+*/
+05EECB0: 38250EFB 0000A0E1
+
+;------------------------- end -------------------------
+

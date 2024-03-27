@@ -1,0 +1,17 @@
+;CX75v13
+;Отключение нарастания громкости
+;Disable ASP
+;(c) caine
+;(r) Dimadze
+;(p) Виктор89
+;Version: 
+;PatchID: 10053
+;Details: https://patches.kibab.com/patches/details.php5?id=10053
+/*
+Отключает нарастание громкости, теперь и для SGold с MP3/ACC
+*/
+970E44: 00 01
+970E48: 02 01
+82669F: 0A EA ;Disable Pick Off
+;------------------------- end -------------------------
+

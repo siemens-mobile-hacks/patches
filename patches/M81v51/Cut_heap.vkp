@@ -1,0 +1,25 @@
+;M81v51
+;Подрезка кучи
+;Cut heap
+;(c) Rst7
+;(r) (i) BoBa, Kibab, avkiev
+;(p) Cypok
+;Version: 
+;PatchID: 7540
+;Details: https://patches.kibab.com/patches/details.php5?id=7540
+/*
+Теперь можно не думать про ФриРам. Он равен AC000000
+Всего отрезано 256 байт от начала кучи.
+
+Можно поставить ELFPack 2.2 или выше, тогда SWI-хук ставить необязательно!!!
+*/
+026FFC8: 000081E51EFF2FE1 04F01FE5,0xA0060801    ; M81v51
+
+#pragma enable old_equal_ff
+0060800: 00B501231B02C01A0860101C191CD218
+0060810: 03AB1A6058DF00BD
+#pragma disable old_equal_ff
+
+;0074390: 0xA8A80000 0xAC000000   ;  E4: FreeRAM
+;------------------------- end -------------------------
+

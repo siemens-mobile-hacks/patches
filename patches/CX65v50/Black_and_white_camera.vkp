@@ -1,0 +1,14 @@
+;CX65v50
+;Чёрнобелый режим камеры
+;Black and white camera
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 2988
+;Details: https://patches.kibab.com/patches/details.php5?id=2988
+/*
+
+*/
+12EE787: 3F163F 801680
+;------------------------- end -------------------------
+

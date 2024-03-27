@@ -1,0 +1,15 @@
+;SK65v50
+;Изменить последовательность ввода символов по кнопке "."
+;Change the sequence of input on the button "."
+;(c) Лесной
+;Version: 
+;PatchID: 10013
+;Details: https://patches.kibab.com/patches/details.php5?id=10013
+/*
+
+*/
+936442: 2E003F0021002C003A003B 2E002C003A003F0021003B ; .,:?!;
+
+;936442: 2E003F0021002C003A003B 2E002C003A002F00B90022 ; .,:/№"
+;------------------------- end -------------------------
+

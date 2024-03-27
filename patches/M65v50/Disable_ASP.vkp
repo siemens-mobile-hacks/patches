@@ -1,0 +1,15 @@
+;M65v50
+;Отключение ASP
+;Disable ASP
+;(c) caine
+;(p) Smelter
+;Version: 
+;PatchID: 5417
+;Details: https://patches.kibab.com/patches/details.php5?id=5417
+/*
+отключение нарастания громкости. за Ваши уши в ответе только Вы!!!
+*/
+11A0B48: 00 01
+11A0B4C: 02 01
+;------------------------- end -------------------------
+

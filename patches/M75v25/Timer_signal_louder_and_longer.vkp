@@ -1,0 +1,14 @@
+;M75v25
+;Изменить сигнал таймера на более громкий и длинный
+;Timer signal louder and longer
+;(c) StrikerX
+;(p) Grizzzzly
+;Version: 
+;PatchID: 5524
+;Details: https://patches.kibab.com/patches/details.php5?id=5524
+/*
+
+*/
+04BA044: 24F4 4CEC
+;------------------------- end -------------------------
+

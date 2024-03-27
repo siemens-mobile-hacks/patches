@@ -1,0 +1,40 @@
+;SX1v15
+;Дополнение к патчу Мультисим БЕЗ СИМ карты
+;Addendum for Sim_emu_dev_menu
+;(c) Rascal
+;(r) Nick0las, Sinclair, Konca Fung, Seklth, Vovan888
+;Version: 
+;PatchID: 8449
+;Details: https://patches.kibab.com/patches/details.php5?id=8449
+/*
+Дополнение к патчу Мультисим   © Rascal 
+SX1v15 
+Патч в формате V-Klay для Egold !!! 
+Необходим установленый мастер патч и Мультисим БЕЗ СИМ карты v.2.4.2 (C) Nick0las, Sinclair, Konca Fung SX1 ver: Seklth, Vovan888  
+Переключение симок 
+3*номер симки 
+0 - физическая, 1-9 виртуальные. 
+*/
+; Дополнение к патчу Мультисим   © Rascal 
+; SX1v15 
+; Патч в формате V-Klay для Egold !!! 
+; Необходим установленый мастер патч и 
+; Мультисим БЕЗ СИМ карты v.2.4.2 (C) Nick0las, Sinclair, Konca Fung SX1 ver: Seklth, Vovan888  
+; Переключение симок 
+;  3*номер симки 
+;  0 - физическая, 1-9 виртуальные. 
+
+713082: 6E30F100 D030F100 
+7130D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E109DC4DA98C27F83000F0C488C0E04C 
+7130E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA8B3EDD98C0FAFD4600FFFFFFFFFFFF 
+
+; Отключаем управление через Dev меню 
+014ADB0: DAFD0000 DA84E6B6 
+014ADC6: DAFD0A00 DA843EBB 
+014AE12: DAFD1400 DAB2544E 
+014AE26: DAFD1E00 DAB2A441 
+014AE3C: DAFD2800 DA8A7E14 
+014AE50: DAFD3200 DAB2A441 
+014AEB2: DAFD3C00 DAB27E41
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;EL71v45
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) 1allen
+;Version: 
+;PatchID: 7949
+;Details: https://patches.kibab.com/patches/details.php5?id=7949
+/*
+
+*/
+08DC890: 011C 1621
+;------------------------- end -------------------------
+

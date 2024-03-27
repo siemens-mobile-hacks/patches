@@ -1,0 +1,23 @@
+;S68v47
+;Дата вверху на главном экране в виде "Чт, 20 Апр"
+;Date at the top of mainscreen as "Thu, 20 Apr"
+;(c) avkiev
+;Version: 11-MP
+;PatchID: 7862
+;Details: https://patches.kibab.com/patches/details.php5?id=7862
+/*
+Обновление! Совместимость с загрузчиком эльфов 2.2
+*/
+;S68v47
+;Дата вверху на главном экране в виде "Чт, 20 Апр"
+;Date at the top of mainscreen as "Thu, 20 Apr"
+;(c) avkiev
+;Version: 11-MP
+/*
+Обновление! Совместимость с загрузчиком эльфов 2.2
+*/
+07A4CB4: FEF7A5FC231C2A1C 004B9847,0xA0063A01   ; S68v47
+;------------------------- end -------------------------
+
+;------------------------- end -------------------------
+

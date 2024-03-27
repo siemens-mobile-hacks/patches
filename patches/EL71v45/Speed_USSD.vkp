@@ -1,0 +1,15 @@
+;EL71v45
+;Увеличить скорость просмотра USSD сообщений
+;Speed USSD
+;(c) SiNgle
+;(p) -=PaScaL=-
+;Version: 
+;PatchID: 7932
+;Details: https://patches.kibab.com/patches/details.php5?id=7932
+/*
+
+*/
+5C167C: D007 0003
+5C1699: 0B 03
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;M75v5
+;Замена меню на супербыстрое
+;Press joystick goto SuperFast main menu
+;(c) SiNgle
+;Version: 
+;PatchID: 435
+;Details: https://patches.kibab.com/patches/details.php5?id=435
+/*
+Замена меню на супербыстрое.
+
+Пункт меню "Спис. Вызовов" -"Время/Стоимость" вырубает телефон.
+*/
+04AFB88: 695432 5DE02B
+;------------------------- end -------------------------
+

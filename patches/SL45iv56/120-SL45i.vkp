@@ -1,0 +1,22 @@
+;SL45iv56
+;VDL. Свет при голосовом наборе/команде
+;VDL. Voice Dial-Command Light
+;(c) RizaPN
+;Version: 
+;PatchID: 1714
+;Details: https://patches.kibab.com/patches/details.php5?id=1714
+/*
+Патч корректно работает с подсветкой при голосовом наборе/команде. 
+Если используете патч "Пустой экран", то патч так же подправляет 
+работу подсветки.
+
+
+Release: January 16, 2004
+
+Патч №120 с http://patch.oslik.ru/SL45_RU
+*/
+46AB86: E00C DAC1 
+46AB88: E00DC4C02E00C4D0 A8FBE00CCAC42E00 
+46AB90: 3000E00EE00FC4E0 CAC03000E00FC4F0 
+;------------------------- end -------------------------
+

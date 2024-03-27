@@ -1,0 +1,14 @@
+;SL45iv56
+;Отключить звуки во время дозвона
+;Disable sounds when call
+;(c) ACiD [mrp], Ramil
+;Version: 2
+;PatchID: 2650
+;Details: https://patches.kibab.com/patches/details.php5?id=2650
+/*
+
+*/
+02E72A: 2A 00 ;Звук начала дозвона (тралала) || Dialing ound
+02E782: 13 00 ;Звук соединения (пип) || Connecting sound
+;------------------------- end -------------------------
+

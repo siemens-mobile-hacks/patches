@@ -1,0 +1,15 @@
+;CX75v23
+;Дата внизу (на главном экране) в виде "Ср, 11 Май"
+;Date at the bottom of maincsreen as "We, 11 May"
+;(c) avkiev
+;(p) Mikel
+;Version: v8-MP
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=2664
+;PatchID: 2603
+;Details: https://patches.kibab.com/patches/details.php5?id=2603
+/*
+
+*/
+7D9E08: 041C081C111C1A1C 004DA847,0xA0FC3501 ;CX75v23 
+;------------------------- end -------------------------
+

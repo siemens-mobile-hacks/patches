@@ -1,0 +1,17 @@
+;S75v47
+;Динамическая замена имени оператора и субоператора
+;Dynamic replacing of Provider and Subprovider name
+;(c) avkiev
+;(r) Bennie, arsh0r
+;Version: 16-MP
+;PatchID: 6245
+;Details: https://patches.kibab.com/patches/details.php5?id=6245
+/*
+Обновление! Совместимость с загрузчиком эльфов 2.2
++ Корректное отображение в тегах буквы Ё и украинских букв.
+*/
+03ECD3C: 0xA08FC087 0xA0061601                           ; - Provider
+030236C: 301CFFF750FDEA79311C 004B9847,0xA0061611,C046   ; - Subprovider
+0302354: 00 FF                                           ; - Subprovider in Profile0
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;SL45iv56
+;Улучшенное управление через AT+GSN
+;Advanced debugging with AT+GSN
+;(c) mamaich
+;Version: 
+;PatchID: 1724
+;Details: https://patches.kibab.com/patches/details.php5?id=1724
+/*
+Release: December 11, 2003
+
+Патч взято из
+*** Сборник патчей (c) mamaich. Версия 0.71 beta ***
+*/
+10F100: 26C1D2 0000EF
+;------------------------- end -------------------------
+

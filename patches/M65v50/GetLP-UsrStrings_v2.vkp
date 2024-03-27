@@ -1,0 +1,19 @@
+;M65v50
+;GetLP-UsrStrings
+;GetLP-UsrStrings
+;(c) benj9
+;(r) BuG
+;Version: 2
+;PatchID: 3421
+;Details: https://patches.kibab.com/patches/details.php5?id=3421
+/*
+Необходим для правильной работы патча: 
+*Uptime Stats v2* (c) benj9
+*/
+13CFB72: 041C0D1C 8AF285FB
+#pragma enable old_equal_ff
+165A280: 00B5041C0D1C002800D400BD081C211C
+165A290: 024FB847002001B0F8BD0000D100FCA0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

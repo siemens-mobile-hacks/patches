@@ -1,0 +1,14 @@
+;SL75v52
+;Убрать сообщение 'Блокировка клавиатуры включена/выключена'
+;Disable message 'Keylock/unlock'
+;(c) SiNgle
+;(p) kiREALlov
+;Version: 
+;PatchID: 8080
+;Details: https://patches.kibab.com/patches/details.php5?id=8080
+/*
+
+*/
+02F9700: F7F0D6E804 C046C046
+;------------------------- end -------------------------
+

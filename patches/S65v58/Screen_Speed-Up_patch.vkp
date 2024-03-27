@@ -1,0 +1,14 @@
+;S65v58
+;Ускоритель вывода на экран
+;Screen Speed-Up patch
+;(c) SiNgle
+;(p) -=(Kad)=-
+;Version: 
+;PatchID: 2590
+;Details: https://patches.kibab.com/patches/details.php5?id=2590
+/*
+
+*/
+1151F12: B8F0DEE9 A861C046
+;------------------------- end -------------------------
+

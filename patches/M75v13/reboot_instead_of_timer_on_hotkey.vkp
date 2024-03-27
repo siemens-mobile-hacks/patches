@@ -1,0 +1,14 @@
+;M75v13
+;Перезагрузка вместо таймера на горячей кнопке
+;Reboot instead of timer on hotkey
+;(c) ThE TrIFoN
+;(p) Gurza
+;Version: 
+;PatchID: 1012
+;Details: https://patches.kibab.com/patches/details.php5?id=1012
+/*
+
+*/
+04B0CDC: 6D5F32A0 1871A9A0 
+;------------------------- end -------------------------
+

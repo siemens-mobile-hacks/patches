@@ -1,0 +1,15 @@
+;S75v47
+;Скорость камеры
+;Camera speed
+;(c) SiNgle
+;(r) KIBER-DEMON
+;(p) SimaFish
+;Version: 
+;PatchID: 8679
+;Details: https://patches.kibab.com/patches/details.php5?id=8679
+/*
+
+*/
+09FBB24: 14 00
+;------------------------- end -------------------------
+

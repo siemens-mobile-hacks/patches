@@ -1,0 +1,13 @@
+;ME75v22
+;Отключить подсветку клавиатуры
+;Disable keypad light
+;(c) SiNgle
+;Version: 
+;PatchID: 3267
+;Details: https://patches.kibab.com/patches/details.php5?id=3267
+/*
+
+*/
+07867D3: D5 24
+;------------------------- end -------------------------
+

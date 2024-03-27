@@ -1,0 +1,32 @@
+;EL71v45
+;Релокация папок на microSD с подвидом MyStuff
+;Folder relocation to microSD with MyStuff-view
+;(c) funMarkus
+;Version: 1
+;PatchID: 8136
+;Details: https://patches.kibab.com/patches/details.php5?id=8136
+/*
+!Перед установкой обязательно должен стоять патч "Приём данных в одну папку"!
+!Before installing this patch must be installed patch "Recive all files to the same folder"!
+!Если у вас стоит патч на приём всех данных на флешку, то строку с комментарием Misc нужно удалить из патча, иначе в-клей будет ругаться!
+!If you have installed patch "Recive all files to MicroSD" you must delete line with comment "Misc"!
+*/
+08323D0: 30 34; Sounds
+083263C: 30 34; Pictures
+0833340: 30 34; Themes
+08325BA: 30 34; Misc
+0832A8C: 30 34; Applications
+0832ADC: 30 34; Games
+0832958: 30 34; Videos
+
+083239C: 30 34; ROOT
+08323AE: 30 34; ROOT_SLASH
+08323BC: 30 34; NONE
+
+0833A5C: 34 30; MMC1_ROOT
+0833A72: 34 30; MMC1_ROOT_SLASH
+
+083267A: 500069006300740075007200650073005C0043006C00690070002000470061006C006C006500720079 5F00430000000000000000000000000000000000000000000000000000000000000000000000000000; Pictures\Clip Gallery=>_C
+0832674: 30 34; Camera=>4:\
+;------------------------- end -------------------------
+

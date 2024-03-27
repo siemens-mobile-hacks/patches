@@ -1,0 +1,13 @@
+;CX70v56
+;Перенаправление ДС
+;Route DL
+;(c) empeka
+;Version: 2-MP
+;PatchID: 1168
+;Details: https://patches.kibab.com/patches/details.php5?id=1168
+/*
+Врезка для патча 1165
+*/
+115113C: 0160A0E1 6FC8F9FA ; CX70v56 (SetIllumination + 4)
+;------------------------- end -------------------------
+

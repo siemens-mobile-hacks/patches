@@ -1,0 +1,16 @@
+;CX75v23
+;* Отключить доступ к интернет-браузеру*
+;* Disable Access To Internet Browser *
+;(c) KiRiK
+;(p) Smelter
+;Version: 
+;PatchID: 1801
+;Details: https://patches.kibab.com/patches/details.php5?id=1801
+/*
+
+*/
+04B2264: A56132A0 00000000
+04B21FC: BF6132A0 00000000
+04B1B14: EB6B32A0 00000000
+;------------------------- end -------------------------
+

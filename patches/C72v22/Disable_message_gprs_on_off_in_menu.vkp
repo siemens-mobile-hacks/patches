@@ -1,0 +1,14 @@
+;C72v22
+;Убрать сообщение gprs on/off в меню
+;Disable message gprs on/off in menu
+;(c) SiNgle
+;(p) Virusmater
+;Version: 
+;PatchID: 6962
+;Details: https://patches.kibab.com/patches/details.php5?id=6962
+/*
+
+*/
+8DB87E: 60F01CEE 9047C046; GPRS вкл\выкл (GPRS on\off)
+;------------------------- end -------------------------
+

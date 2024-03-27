@@ -1,0 +1,15 @@
+;SL75v52
+;Показ Расширений Файлов в Card-Explorer'е
+;Show File Extensions in Card-Explorer
+;(c) BingK(binghelingxi)
+;(r) SiNgle,1nvisible
+;(p) Виктор89
+;Version: 
+;PatchID: 9378
+;Details: https://patches.kibab.com/patches/details.php5?id=9378
+/*
+
+*/
+05A47DA: 291C 12E0
+;------------------------- end -------------------------
+

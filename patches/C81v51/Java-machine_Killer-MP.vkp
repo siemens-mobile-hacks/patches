@@ -1,0 +1,40 @@
+;C81v51
+;Снос ява-машины
+;Java-machine Killer
+;(c) @ndreS/PRM
+;(r) NForce
+;(p) dimonp25/PRM
+;Version: 1-MP
+;PatchID: 8137
+;Details: https://patches.kibab.com/patches/details.php5?id=8137
+/*
+Благодаря сносу ява-машины свободной оперативки становится ~8 мб (иногда много оперативки бывает полезным). 
+Чтоб выключить этот патч (в мастер-мидлете это сделать невозможно, т.к. без явы он не запустится) есть 3 варианта: 
+1.Зажимаем # при старте телефона и спокойно запускаем мастер-мидлет. 
+2.Выбираем профиль, в котором этот патч выключен. 
+3.Удаляем файл конфигурации 0:/Misc/patches/ptc/00002705.ptc и перезагружаемся.
+*/
+;C81v51
+;* Снос ява-машины *
+;* Java-machine Killer *
+;(c) @ndreS/PRM
+;(r) NForce
+;(p) dimonp25/PRM 
+;Version: 1-MP
+
+09FCB3C: 300F03EB 8FD4D9FA
+
+#pragma enable old_equal_ff
+006F900: 11B50848C4DF01D0002801D1014CA047
+006F910: 11BDFFFF,0xA0ABE384,0000000000000000
+006F920: 0xB1C2D3E4,0x00002705,0000000000000000,"\
+{p=Java-machine_Killer cp=`@ndreS/PRM` ver=1 id=2705}","\
+{info `(r) NForce`}","\
+",00
+#pragma disable old_equal_ff
+
+;locale=Russian_Russia.1251
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

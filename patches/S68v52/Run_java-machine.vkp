@@ -1,0 +1,21 @@
+;S68v52
+;Запуск ява-машины при старте 1го мидлета
+;Run java-machine with the start of 1st midlet
+;(c) @ndreS/PRM
+;(r) Miha_r, DronSPB
+;(p) sim_emrom
+;Version: 
+;PatchID: 9277
+;Details: https://patches.kibab.com/patches/details.php5?id=9277
+/*
+
+*/
+08768B8: 7E4802EB 10E4DFFA
+086D1D8: B9BFFFEB C046C046
+
+#pragma enable old_equal_ff
+006F900: 01B506480478FB2C03D101BC024CA047
+006F910: 00BDFB24047001BD,0xA0908ab8,0xA8D80100
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

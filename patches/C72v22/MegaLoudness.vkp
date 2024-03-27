@@ -1,0 +1,16 @@
+;C72v22
+;Мегагромкость
+;MegaLoudness
+;(c) SiNgle
+;(p) Geka
+;Version: 
+;PatchID: 5805
+;Details: https://patches.kibab.com/patches/details.php5?id=5805
+/*
+
+*/
+115D82C: 2600C4E5 D3FFFFEA
+115D784: 030000EF 030040E2
+115D788: 6C2DA0E30100A0E3 2600C4E5290000EA
+;------------------------- end -------------------------
+

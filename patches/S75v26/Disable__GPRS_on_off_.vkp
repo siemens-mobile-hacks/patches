@@ -1,0 +1,14 @@
+;S75v26
+;Убрать сообщение "GPRS вкл/выкл
+;Disable "GPRS on/off"
+;(c) Single
+;(p) Striker Voo
+;Version: 
+;PatchID: 2440
+;Details: https://patches.kibab.com/patches/details.php5?id=2440
+/*
+
+*/
+0B07934: C0109F15 02F0A0E1
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;CF75v23
+;Отключить "Подождите" при USSD Запросе
+;Disable "Please Wait" on USSD Request
+;(c) 1nvisible
+;(p) Виктор89
+;Version: 
+;PatchID: 9870
+;Details: https://patches.kibab.com/patches/details.php5?id=9870
+/*
+
+*/
+02A5EAE: 2DF07CF9 C046C046
+;------------------------- end -------------------------
+

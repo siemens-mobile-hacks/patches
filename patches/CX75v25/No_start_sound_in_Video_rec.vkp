@@ -1,0 +1,13 @@
+;CX75v25
+;Отключить звук в начале записи видео
+;No start sound in Video rec
+;(c) SiNgle
+;Version: 
+;PatchID: 3488
+;Details: https://patches.kibab.com/patches/details.php5?id=3488
+/*
+
+*/
+02D982C: 1A 1D
+;------------------------- end -------------------------
+

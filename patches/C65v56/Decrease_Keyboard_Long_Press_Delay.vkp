@@ -1,0 +1,14 @@
+;C65v56
+;Уменьшить задержку для долгого нажатия клавиш
+;Decrease Keyboard Long Press Delay
+;(c) 1nvisible
+;(r) benj9
+;Version: 
+;PatchID: 3854
+;Details: https://patches.kibab.com/patches/details.php5?id=3854
+/*
+
+*/
+0C96622: 82 41 ; x65
+;------------------------- end -------------------------
+

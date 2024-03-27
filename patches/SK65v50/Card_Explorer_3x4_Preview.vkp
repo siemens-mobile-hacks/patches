@@ -1,0 +1,16 @@
+;SK65v50
+;3x4 иконки при предварительном просмотре в Card-Explorer
+;3x4 icons in the preview of Card-Explorer
+;(c) green
+;(p) Лесной
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=10620
+;PatchID: 10368
+;Details: https://patches.kibab.com/patches/details.php5?id=10368
+/*
+
+*/
+04650DC: 200020002000200003000300 200020002000200001000100
+04650E8: 06000600 02000200
+;------------------------- end -------------------------
+

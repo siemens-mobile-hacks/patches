@@ -1,0 +1,41 @@
+;S75v47
+;Настройка позиции,номера шрифта, цвета шрифта и фона оверлея инфо
+;Change position, number font, color of font and background of overlay info
+;(c) Evgr
+;(r) KIBER-DEMON
+;(p) SimaFish
+;Version: 1.2
+;PatchID: 8701
+;Details: https://patches.kibab.com/patches/details.php5?id=8701
+/*
+FF000064 - красный
+00FF0064 - зеленый 
+0000FF64 - синий
+FFFF0064 - желтый
+FF00FF64 - розовый
+00FFFF64 - морской волны
+FF000032 - красный полупрозрачный
+00FF0016 - 25% прозрачный зеленый
+0000FF2E - 46 процентов синий
+Остальное смотрим в любом графическом редакторе.
+
++ цвета шрифта и фона часов скринсейвера теперь независимы, т.к. настраиваются по разным адресам
++ font color and screensaver clock background color are now independent
+
+47 прошивка не забыта!
+*/
+;0A03066: 00 XX ; положение по оси X
+;0A03064: 00 XX ; положение по оси Y
+;0A0306E: 08 09 ; номер шрифта
+
+0A0308E: 011C02A82A1C6DF71DFF 02A8004B9847,0xA1410201
+#pragma enable old_equal_ff
+1410200: 0549064A08B5034B984708BC08BC0433
+1410210: 1847C046,0xA0970ED3,0xA1410220,0xA1410224
+1410220: 00000064FFFFFF64
+#pragma disable old_equal_ff
+
+1410224: FFFFFF64 00FF0016 ; цвет фона
+1410220: 00000064 0000FF2E ; цвет шрифта
+;------------------------- end -------------------------
+

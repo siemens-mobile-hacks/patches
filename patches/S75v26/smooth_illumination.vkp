@@ -1,0 +1,14 @@
+;S75v26
+;Плавное включение подсветки
+;Smooth inclusion of illumination
+;(c) Single
+;(p) Striker Voo
+;Version: 
+;PatchID: 2463
+;Details: https://patches.kibab.com/patches/details.php5?id=2463
+/*
+
+*/
+044F558: 0022 FF22
+;------------------------- end -------------------------
+

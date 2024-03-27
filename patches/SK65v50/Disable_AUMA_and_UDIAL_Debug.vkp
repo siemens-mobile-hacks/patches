@@ -1,0 +1,14 @@
+;SK65v50
+;Disable AUMA and UDIAL Debug
+;Disable AUMA and UDIAL Debug
+;(c) 1nvisible
+;Version: 
+;PatchID: 4152
+;Details: https://patches.kibab.com/patches/details.php5?id=4152
+/*
+
+*/
+0334110: F0412DE9 1EFF2FE1 ;AUMA Debug
+07A8464: 0FB4 7047 ;UDIAL Debug
+;------------------------- end -------------------------
+

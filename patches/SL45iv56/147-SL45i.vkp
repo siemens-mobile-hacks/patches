@@ -1,0 +1,19 @@
+;SL45iv56
+;Убирает сигнал о начале записи
+;No sound on start of recording
+;(c) vBart, Swiebodzice
+;Version: 
+;PatchID: 1751
+;Details: https://patches.kibab.com/patches/details.php5?id=1751
+/*
+Release: 11.05.2004
+
+Патч №147 с http://patch.oslik.ru/SL45_RU
+*/
+1AAEF0: 00 08 
+
+;Или 
+
+;1AAEF2: 122AEA02 CC00CC00 ;убирает звук о начале записи и начале разговора
+;------------------------- end -------------------------
+

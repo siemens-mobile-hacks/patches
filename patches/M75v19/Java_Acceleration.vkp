@@ -1,0 +1,13 @@
+;M75v19
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 2337
+;Details: https://patches.kibab.com/patches/details.php5?id=2337
+/*
+
+*/
+089ABB8: 02 01
+;------------------------- end -------------------------
+

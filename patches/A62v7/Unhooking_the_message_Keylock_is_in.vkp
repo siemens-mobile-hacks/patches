@@ -1,0 +1,14 @@
+;A62v7
+;Отключение сообщения "Блокировка клавиатуры включена"
+;Unhooking the message Keylock is included
+;(c) Rasp
+;(p) Weron
+;Version: 
+;PatchID: 8201
+;Details: https://patches.kibab.com/patches/details.php5?id=8201
+/*
+
+*/
+6C8022: DA8C 0D01
+;------------------------- end -------------------------
+

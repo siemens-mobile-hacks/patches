@@ -1,0 +1,13 @@
+;E71v45
+;Убрать конфликт XTask с "Тест устр. --> Клавиатура"
+;Fix XTask Conflict with "Device check --> Keys"
+;(c) BingK(binghelingxi)
+;Version: 
+;PatchID: 9524
+;Details: https://patches.kibab.com/patches/details.php5?id=9524
+/*
+
+*/
+077DAD4: 7EF064EB0028FAD1 7BF03CEDFBE7C046 ;AddKeybMsgHook_end==>AddKeybMsgHook
+;------------------------- end -------------------------
+

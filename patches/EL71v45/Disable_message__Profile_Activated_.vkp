@@ -1,0 +1,13 @@
+;EL71v45
+;Убрать сообщение "Профиль активирован"
+;Disable message "Profile Activated"
+;(c) funMarkus
+;Version: 2
+;PatchID: 8433
+;Details: https://patches.kibab.com/patches/details.php5?id=8433
+/*
+Патчик будет попроще, чем от -=(Kad)=-, но стабильнее, т.к. использует нативные функции тела.
+*/
+06FFC32: 01F144EF FFF0F4EA
+;------------------------- end -------------------------
+

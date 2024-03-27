@@ -1,0 +1,19 @@
+;CX70v56
+;change phone name
+;change phone name
+;(c) NForce / ~_x-X-x_~™
+;(p) Killercompany
+;Version: 2.0
+;PatchID: 4584
+;Details: https://patches.kibab.com/patches/details.php5?id=4584
+/*
+English:Changes phone name in fw (*#06#) and in bootcore version 22. max lenght of name - 5 simbols.
+*/
+;Имя телефона CX70 -> CXV70
+90184: 4358373000330030 0000000000000000 ;delete model from firmware
+90184: 0000000000000000 "CXV70" ;write model in firmware
+
+210: 4358373000 0000000000 ;delete model from bootcore v22
+210: 0000000000 4358563730 ;write model in bootcore v22
+;------------------------- end -------------------------
+

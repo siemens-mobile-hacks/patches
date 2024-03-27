@@ -1,0 +1,14 @@
+;M75v25
+;Disable MMS Debug
+;Disable MMS Debug
+;(c) 1nvisible
+;Version: 
+;PatchID: 4133
+;Details: https://patches.kibab.com/patches/details.php5?id=4133
+/*
+
+*/
+031DD14: 0FB4 7047 
+031DE04: F0B5 7047
+;------------------------- end -------------------------
+

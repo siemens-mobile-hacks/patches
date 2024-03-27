@@ -1,0 +1,29 @@
+;S65v58
+;Позиционирование иконок будильника и напоминания
+;Alarm & Appointment Icons Positioning
+;(c) benj9
+;(r) TiCK
+;(p) KiRIK
+;Version: 1.0
+;PatchID: 3683
+;Details: https://patches.kibab.com/patches/details.php5?id=3683
+/*
+fix y-pos forever (dont weird y-moving at net lost)
+find x around ;)
+
+накрепко фиксирует ординату (не скачет вверх-вниз при потере сети)
+поищите рядышком абсциссу ;)
+
+Логотип к патчу не относится. Просто патч был во время ЧМ 2006 сделан . Просто себе его забросьте на заставку.
+Apo4emu
+*/
+16A517A: 0139 0i161,21 ; y-pos alarm
+16A5166: 0139 0i161,21 ; y-pos appointment
+
+// =*Alarm & Appointment Icons Positioning* © benj9 x65, CX75
+// 3A1C0139281C10F0=3A1C,0i161,39281C10F0 ; Y-Pos Alarm(fix y-pos forever (dont weird y-moving at net lost)
+// 3A1C0139281C10F0=3A1C0121281C10F0
+// 595E0139321C10F0=595E,0i161,39321C10F0 ; Y-Pos Appointment
+// 595E0139321C10F0=595E0121321C10F0
+;------------------------- end -------------------------
+

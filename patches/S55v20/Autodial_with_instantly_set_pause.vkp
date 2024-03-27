@@ -1,0 +1,15 @@
+;S55v20
+;Автодозвон постоянно, с заданной паузой
+;Autodial with instantly set pause
+;(c) SiNgle
+;(p) ValeraVi
+;Version: 1
+;PatchID: 4786
+;Details: https://patches.kibab.com/patches/details.php5?id=4786
+/*
+
+*/
+23A88E: 08C1 CC00
+101B72: 05 0A ;0A - пауза 10 секунд
+;------------------------- end -------------------------
+

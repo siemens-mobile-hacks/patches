@@ -1,0 +1,15 @@
+;CX70v56
+;Увеличить размер фото при входящем звонке
+;Enlarge incoming call photo
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 674
+;Details: https://patches.kibab.com/patches/details.php5?id=674
+/*
+Увеличить размер фото при входящем звонке.
+*/
+0A79F7E: 052104 002100
+0A79F86: 502280 842278 
+;------------------------- end -------------------------
+

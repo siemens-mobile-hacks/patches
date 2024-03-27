@@ -1,0 +1,23 @@
+;SL65v53
+;Из любого места  попадаем в  меню
+;Goto menu anywhere
+;(c) Single
+;(p) andrey_ua
+;Version: 2
+;PatchID: 3600
+;Details: https://patches.kibab.com/patches/details.php5?id=3600
+/*
+
+*/
+;*Goto menu anywhere*
+;(c) Single
+;(i) Andrey_ua
+;(r) KreN
+;(!) MP+FL 
+
+0B24604: 224D321C893D6868 004988470137FCA0 ;SL65 sw 53
+
+0B246AA: 801969680138884202D1 C046004FB8473737FCA0 ;SL65 sw 53
+
+;------------------------- end -------------------------
+

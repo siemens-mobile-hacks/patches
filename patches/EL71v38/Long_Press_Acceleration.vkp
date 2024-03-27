@@ -1,0 +1,13 @@
+;EL71v38
+;Ускорение длинного нажатия
+;Long Press Acceleration
+;(c) 1nvisible
+;Version: 
+;PatchID: 5543
+;Details: https://patches.kibab.com/patches/details.php5?id=5543
+/*
+
+*/
+08D42B0: 011C 4021
+;------------------------- end -------------------------
+

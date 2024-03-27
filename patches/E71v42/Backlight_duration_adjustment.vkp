@@ -1,0 +1,17 @@
+;E71v42
+;Изменение длительности горения подсветки
+;Backlight duration adjustment
+;(c) BuG
+;(p) $TA$
+;Version: 
+;PatchID: 6819
+;Details: https://patches.kibab.com/patches/details.php5?id=6819
+/*
+
+*/
+08893A4: 05 0i10 ; 1st menu item
+08893B8: 0A 0i30 ; 2nd menu item
+08893CC: 0F 0i60 ; 3rd menu item
+08893E0: 14 0i120 ; 4th menu item
+;------------------------- end -------------------------
+

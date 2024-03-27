@@ -1,0 +1,21 @@
+;M65v50
+;Запуск мидлета при вставке новой SIM
+;Midlet start when SIM is changed
+;(c) SiNgle,  Maestro
+;(p) AsteriX
+;Version: 
+;PatchID: 6319
+;Details: https://patches.kibab.com/patches/details.php5?id=6319
+/*
+
+*/
+;!Необходимо отменить патч *Убрать вопрос "Копировать SIM" при смене SIM*
+0B22B92: E6F767FF BBF1B6EF
+#pragma enable old_equal_ff
+0CDEB00: FF7F2DE918008FE20030A0E30020A0E3
+0CDEB10: 08409FE50FE0A0E114FF2FE1FFBFBDE8
+0CDEB20: A849C3A0
+0CDEB24: "2:\\gsm.jar",0000 ;путь к мидлету, его можно поменять на любой другой. !Слэшей должно быть по два!
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

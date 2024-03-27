@@ -1,0 +1,18 @@
+;CX75v13
+;Изменение времени подачи ежеминутного сигнала во время разговора
+;Сhange minute beep during call
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 772
+;Details: https://patches.kibab.com/patches/details.php5?id=772
+/*
+RUS: Изменяет время подачи минутного сигнала во время разговора. 
+
+ENG: Changes time of submission of a minute signal during conversation.
+*/
+0552B62: 00 37
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v52
+;NativeMenu вместо Главного в опциях разговора
+;NativeMenu instead of FlexMenu in conversation menu
+;(c) Zhek@
+;(p) SimaFish
+;Version: 
+;PatchID: 8789
+;Details: https://patches.kibab.com/patches/details.php5?id=8789
+/*
+
+*/
+043939C: 011134A0 9BE12CA0
+;------------------------- end -------------------------
+

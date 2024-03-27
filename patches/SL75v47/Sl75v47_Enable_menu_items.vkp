@@ -1,0 +1,20 @@
+;SL75v47
+;Включить пункты меню "гашение подсветки" и "контраст"
+;Enable menu items "backlight duration" and "contrast"
+;(c) Bueffel, Bug
+;(p) bertgrin
+;Version: 
+;PatchID: 10440
+;Details: https://patches.kibab.com/patches/details.php5?id=10440
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl75v47&f=Sl75v47_Enable_menu_items.rar
+
+/*
+Активирует пункты "задержка гашения подсветки" и "контраст"
+ в меню настроек индикация. Нужно заменить
+файл set_display.fs в Config/japp/FlexMenu на приложенный
+запускаем разработчик -java-flex menu- индикация- продолжительность
+*/
+0423894: 93 9B ; backlight_duration
+;0424694: 7405 F809 ; contrast
+;------------------------- end -------------------------
+

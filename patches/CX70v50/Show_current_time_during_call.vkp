@@ -1,0 +1,20 @@
+;CX70v50
+;Показ текущего времени при разговоре
+;Show current time during call
+;(c) Bennie
+;(p) KreN
+;Version: 
+;PatchID: 3288
+;Details: https://patches.kibab.com/patches/details.php5?id=3288
+/*
+
+*/
+1716768: 04A80B2118F078E9 68461B2123F0C8FB
+#pragma enable old_equal_ff
+1739F00: 30B5041CF4F7ACED82B0002000A9E5F4
+1739F10: 96EB201C064988472D21215401302118
+1739F20: 00A80322034DA84702B0201C30BDC046
+1739F30: 25E560A171BC82A0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

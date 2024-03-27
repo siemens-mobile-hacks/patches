@@ -1,0 +1,17 @@
+;SL45iv56
+;Изменение процента яркости основы подсветки
+;Modify the bright degree of the background light foundation
+;(c) greentea
+;Version: 
+;PatchID: 6590
+;Details: https://patches.kibab.com/patches/details.php5?id=6590
+/*
+English:
+Can reduce or increase the bright degree of the foundation of the background light.
+
+*/
+0x20B2CC: 7F 50
+
+;Notice: The 50 value can from the 00-7E or 80-FF, the suggestion increases the 9F all right, then lead big probably will cause the electric current big damage or reduce the service life of the lamp bulb.
+;------------------------- end -------------------------
+

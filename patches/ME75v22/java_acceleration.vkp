@@ -1,0 +1,13 @@
+;ME75v22
+;Ускорение Java
+;Java Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 3252
+;Details: https://patches.kibab.com/patches/details.php5?id=3252
+/*
+Ускорение Явы
+*/
+0840198: 02 01
+;------------------------- end -------------------------
+

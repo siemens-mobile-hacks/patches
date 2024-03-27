@@ -1,0 +1,28 @@
+;S65v58
+;Изменение баланса белого в камере кнопками */# и зум боковыми +/-
+;Change white balance in camera with */# and zoom with +/- sidekeys
+;(c) Evgr
+;Version: 
+;PatchID: 9964
+;Details: https://patches.kibab.com/patches/details.php5?id=9964
+/*
+
+*/
+097DE90: 250050E3 068DDBEA
+097DE98: 260050E3 078DDBEA
+097E0C0: 260050E3 808CDBEA
+09B3E20: F210D4E1 737E33EA
+
+#pragma enable old_equal_ff
+00612B0: 250050E314005013F57224EA260050E3
+00612C0: 15005013F47224EA140050E30300000A
+00612D0: 150050E30100000A260050E3787324EA
+00612E0: 7900D4E5FF0050E3BC08DD11B006C411
+00612F0: 7C009415800080137C0084150810A0E3
+16937F4: F210D4E10F0051E32610A0030E0051E3
+1693804: 2510A0038581CCEA
+0061300: 680094E58E7324EA
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

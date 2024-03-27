@@ -1,0 +1,23 @@
+;S75v47
+;Не выключать телефон после полной зарядки в оффлайне
+;Do not switch off phone after full charge in offline
+;(c) Evgr
+;Version: 
+;PatchID: 10554
+;Details: https://patches.kibab.com/patches/details.php5?id=10554
+/*
+
+*/
+
+;не выключаться при выдёргивании зарядки
+;01C7ADC: 0100000A 010000EA
+
+;убрать автовыключение
+01C7B3C: E9FFFF0A E9FFFFEA 
+01C7CA4: 84FDFF0A 84FDFFEA 
+01FD178: 2200000A 220000EA 
+
+01FCE58: 67 66 ; обновлять экран за счёт индикатора зарядки
+
+;------------------------- end -------------------------
+

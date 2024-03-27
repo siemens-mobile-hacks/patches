@@ -1,0 +1,15 @@
+;ME75v22
+;Авто набор с постоянно задано паузой
+;AutoRedial forever with selected pause
+;(c) SiNgle
+;Version: 
+;PatchID: 5035
+;Details: https://patches.kibab.com/patches/details.php5?id=5035
+/*
+
+*/
+0511E3A: A068 0020
+0511E63: 30 20
+09E6681: 05 0A ; pause (0A=10 sec.) - x75
+;------------------------- end -------------------------
+

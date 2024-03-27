@@ -1,0 +1,15 @@
+;SL65v50
+;Отключение AUMA and UDIAL Дебагеров
+;Disable AUMA and UDIAL Debug
+;(c) 1nvisible
+;(p) Strike66, Волк
+;Version: 
+;PatchID: 3531
+;Details: https://patches.kibab.com/patches/details.php5?id=3531
+/*
+
+*/
+08F269C: F0412DE9 1EFF2FE1
+0C2D09C: 0FB4 7047
+;------------------------- end -------------------------
+

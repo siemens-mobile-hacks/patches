@@ -1,0 +1,19 @@
+;C60v27
+;Запрос кода телефона при просмотре черновика SMS
+;Demand of the code of telephone with the survey of rough copy SMS
+;(c) Snowm@n
+;Version: 
+;PatchID: 4356
+;Details: https://patches.kibab.com/patches/details.php5?id=4356
+/*
+
+*/
+0028F8AC: E02CFA485CF8 FA83E006CC00
+#pragma enable old_equal_ff
+006306E0: E6FCF206E6FD0C02FA4C86C0E02CFA48
+006306F0: 5CF800000000060048804C00F80062FD
+00630700: 4A002C3A0900EC068300
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

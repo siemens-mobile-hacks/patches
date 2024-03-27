@@ -1,0 +1,25 @@
+;SL45iv56
+;BSIS. Чувствительная версия индикатора батареи и сигнала
+;BSIS. (Yet Another) Battery and Signal Indicator sensitive version
+;(c) arsh0r
+;(r) rizapn
+;Version: 
+;PatchID: 2165
+;Details: https://patches.kibab.com/patches/details.php5?id=2165
+/*
+Патч вляется дополнением к патчу BSI от RizaPN.
+Показывает настоящий значение rx вместо функции getsignallvl.
+Значения сигнала теперь более точные.
+
+English: This is an addon to the BSI patch created by RizaPN. 
+It the real rx value instead of the getsignallvl function.
+The signal values are now more sesitve and match those from my supernet patch.
+
+
+Release: August 4, 2004
+*/
+27EA24: DACF1616 DAC72EEA
+27EA2E: FFFF D740
+27EA30: FFFFFFFFFFFFFFFFFFFF 0E00F2F48E1DE109DB00
+;------------------------- end -------------------------
+

@@ -1,0 +1,43 @@
+;X65v100
+;Чёрный Список
+;Black List
+;(c) SiNgle
+;(r) (i) KreN
+;Version: 3
+;PatchID: 1486
+;Details: https://patches.kibab.com/patches/details.php5?id=1486
+/*
+Для работы патча необходимо, чтобы был включен фильтр на любую группу, неважно на какую (кроме сим), все настройки берутся с мастер патча.
+
+English: For this patch to work, the filter must be switched on for any group except SIM-card. It's equal what group will be chosen, all settings are taken from Master-Patch.
+*/
+#pragma enable old_equal_ff
+0FC6C00: 3048F9F7FDFF09D000980130325C002A
+0FC6C10: 0AD000F03EF8FFBC01B003E0FFBC08BC
+0FC6C20: B04200D0224B1847FFBD2648F9F7E8FF
+0FC6C30: 11D00098FF280ED0012040B41B4CA047
+0FC6C40: 002840BC07D1F27A002A08D000F021F8
+0FC6C50: FFBC012601E0FFBC061C281C00BDFFBC
+0FC6C60: FD26FAE71748F9F7CBFF0CD0079FFF2F
+0FC6C70: 09D0069EB1698F4205D0827A002A06D0
+0FC6C80: 00F007F801277FBC0006000E00BDFD27
+0FC6C90: F9E7FFB5012A05D0032A05D00020F9F7
+0FC6CA0: 47FB01E0F9F740FBFFBD
+
+0FC6CC0: 0xB1C2D3E4,0x0000CD09,0000000000000000,"\
+{patch=BlackList id=CD09}\
+{c type Normal=0 Drap=1 Busy=2 Quiet=3}\
+{1 o `No group` c=type v=0}\
+{2 o VIP c=type v=0}\
+{3 o Office c=type v=0}\
+{4 o Family c=type v=0}\
+{5 o Individual c=type v=0}","\
+{6 o Leisure c=type v=0}\
+{7 o Private c=type v=0}\
+{8 o Business c=type v=0}\
+{9 o Received c=type v=0}\
+{10 o `Non adressbook` c=type v=0}\
+{11 o `Hidden-ID` c=type v=0}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

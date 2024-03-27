@@ -1,0 +1,14 @@
+;ME75v22
+;ME75 ->C75 v24
+;ME75 ->C75 v24
+;(c) Radmir
+;Version: 
+;PatchID: 6937
+;Details: https://patches.kibab.com/patches/details.php5?id=6937
+/*
+Переделка ME75 В C75 SW 24
+*/
+07 CAA28: 0E 00 
+0875 F08: 05 02
+;------------------------- end -------------------------
+

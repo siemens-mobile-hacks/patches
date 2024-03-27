@@ -1,0 +1,14 @@
+;EL71v45
+;Открывать видео сразу во весь экран
+;Open video fullscreen immediately
+;(c) Ganster41
+;Version: 
+;PatchID: 9562
+;Details: https://patches.kibab.com/patches/details.php5?id=9562
+/*
+
+*/
+0739834: 00 01
+0739844: 00 01
+;------------------------- end -------------------------
+

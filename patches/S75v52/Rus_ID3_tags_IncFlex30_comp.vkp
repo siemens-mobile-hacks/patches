@@ -1,0 +1,39 @@
+;S75v52
+;Русские ID3 теги (IncFlex30 совместимый)
+;Russian ID3 tags (IncFlex30 compatible)
+;(c) Shadows
+;(r) Rst7, SimaFish
+;(p) Feyman
+;Version: 
+;PatchID: 9337
+;Details: https://patches.kibab.com/patches/details.php5?id=9337
+/*
+В отличии от существующего патча, не трогает шрифт, а просто преобразует символы в юникод. 
+Таким образом должен заработать поиск по плейлисту русских названий и нормальная их сортировка там. 
+Из минуса наверное то, что в e-mail данный патч ничего не патчит.
+*/
+;PATCHV2
+05FD11C: 201C63F038EEEBE7 0048004724F83BA1
+
+;PATCHV1
+05FD3EC: 120C291C201C63F0 0048004700F83BA1
+
+;CODE
+#pragma enable old_equal_ff
+013BF800: 2228A0E1001085E2000084E25F85CAEB
+013BF810: 0400A0E1090000EB0000A0E30000C6E5
+013BF820: F880BDE8000084E25885CAEB01002DE9
+013BF830: 0400A0E1010000EB0100BDE8FE80BDE8
+013BF840: 000090E50110A0E3022080E2050000EA
+013BF850: C00053E3010000BA400F53E3D43F83B2
+013BF860: B230C2E0011081E2B030D0E1010053E1
+013BF870: 1EFF2FB1B030D2E1A80053E30200001A
+013BF880: 0130A0E3403E83E3F4FFFFEAAA0053E3
+013BF890: 0430A003FAFFFF0AAF0053E30100001A
+013BF8A0: 0730A0E3F6FFFFEAB80053E35130A003
+013BF8B0: F3FFFF0ABA0053E35430A003F0FFFF0A
+013BF8C0: BF0053E3E1FFFF1A5730A0E3ECFFFFEA
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

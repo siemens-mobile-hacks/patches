@@ -1,0 +1,14 @@
+;EL71v45
+;Активировать выбор диапазона
+;Enable Band Selection
+;(c) Bennie
+;(p) 1allen
+;Version: 
+;PatchID: 8061
+;Details: https://patches.kibab.com/patches/details.php5?id=8061
+/*
+
+*/
+0842FD4: 0502 F901
+;------------------------- end -------------------------
+

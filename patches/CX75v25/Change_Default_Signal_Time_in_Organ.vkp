@@ -1,0 +1,24 @@
+;CX75v25
+;Изменить Дефолтное Время Сигнала в Органайзере
+;Change Default Signal Time in Organizer
+;(c) 1nvisible
+;(r) Grizzzzly
+;(p) johnshadow
+;Version: 
+;PatchID: 7883
+;Details: https://patches.kibab.com/patches/details.php5?id=7883
+/*
+Меняет время сигнала: 15 мин -> 0 мин
+Все записи, у которых стоит 15 мин, при просмотре будут иметь 0 мин
+English:
+All entries with 15 min will have 0 min when viewing
+Changes signal time: 15 min -> 0 min
+
+*/
+057EA84: 311C201C 23F7FAFC
+#pragma enable old_equal_ff
+04A247C: 08B5B37D1F2B01D10123B375311C201C
+04A248C: 08BD
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

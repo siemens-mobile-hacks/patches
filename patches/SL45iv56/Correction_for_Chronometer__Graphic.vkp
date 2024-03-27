@@ -1,0 +1,24 @@
+;SL45iv56
+;Исправление в хронометре (для графического меню)
+;Correction for Chronometer (Graphical Menu)
+;(c) RizaPN
+;Version: 
+;PatchID: 1938
+;Details: https://patches.kibab.com/patches/details.php5?id=1938
+/*
+Если вы используете патч графического меню для входа в пункт
+меню хронометра, то телефон выключается. Установите патч,
+чтобы исправить этот баг.
+
+
+English: If you are using Graphical Menu patch to enter to Chronometer menu item,
+that will turn the phone off. Add this patch to correct that 'bugs'.
+
+
+Release: April 8, 2003
+*/
+0x38E1CE: F0CEF0DF E6FDA102
+
+0x3BF1D0: DC4DC4EC0400 E6FCF22ACC00
+;------------------------- end -------------------------
+

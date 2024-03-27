@@ -1,0 +1,28 @@
+;S75v47
+;Постоянная подсветка дисплея
+;Unending light the screen illumination
+;(c) benj9
+;(r) (i) StarFriend
+;Version: 0.01
+;PatchID: 6301
+;Details: https://patches.kibab.com/patches/details.php5?id=6301
+/*
+
+Патч задаёт постоянную подсветку в выбраном профиле
+
+*/
+01B6430: 0080A0E1740D9FE5 785D9FE57137FBEB
+
+#pragma enable old_equal_ff
+0084200: 3F402DE928009FE530FF2FE10060A0E1
+0084210: 3F00BDE8FF0056E30200001A000050E3
+0084220: 0000001AFF20A0E30080A0E10500A0E1
+0084230: 0080BDE8E7AE28A0
+#pragma disable old_equal_ff
+
+
+0084214: FF 05 ; profile 6 в каком профиле держать подсветку
+
+0084224: FF 0i002 ; яркость
+;------------------------- end -------------------------
+

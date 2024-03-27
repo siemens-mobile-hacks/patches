@@ -1,0 +1,14 @@
+;S75v52
+;Отключить "Подождите" в Списке вызовов
+;Disable "Please Wait" in Call list
+;(c) 1nvisible
+;(p) SimaFish
+;Version: 
+;PatchID: 8826
+;Details: https://patches.kibab.com/patches/details.php5?id=8826
+/*
+
+*/
+05E9B3A: 0120 10BD
+;------------------------- end -------------------------
+

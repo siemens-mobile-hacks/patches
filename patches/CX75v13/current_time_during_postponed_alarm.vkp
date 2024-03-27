@@ -1,0 +1,25 @@
+;CX75v13
+;Показ текущего времени при срабатывании отложенного будильника
+;Show current time during postponed alarm
+;(c) avkiev
+;(p) SMeeTBB
+;Version: 2.0
+;PatchID: 928
+;Details: https://patches.kibab.com/patches/details.php5?id=928
+/*
+RUS: Показывает текущее время при срабатывании отложенного будильника.
+
+ENG: Shows current time at operation of the postponed alarm clock.
+*/
+051E0C4: 42780178 E1F4ACFD
+#pragma enable old_equal_ff
+1FFC00: 506F7374706F6E656420416C61726D20
+1FFC10: A961766B6965762031332E30362E3035
+1FFC20: 01B5BFF0B5FB411C01BC0838072905D0
+1FFC30: 044A0548011C083190470348017A427A
+1FFC40: 00BDC0461B807DA050B751A8
+#pragma disable old_equal_ff
+;1FFC2C: 07 NP ;Profile "No patches"
+
+;------------------------- end -------------------------
+

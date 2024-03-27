@@ -1,0 +1,14 @@
+;A70v34
+;Открыть скрытые блоки EEPROM
+;Open hidden EEPROM
+;(c) avkiev
+;(p) Дмитрий Рудновский
+;Version: 
+;PatchID: 9123
+;Details: https://patches.kibab.com/patches/details.php5?id=9123
+/*
+
+*/
+1E852A: 01149013D513911302140314 000000000000000000000000
+;------------------------- end -------------------------
+

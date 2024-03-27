@@ -1,0 +1,14 @@
+;A75v35
+;ПЕРЕЗАГРУЗКА ТЕЛЕФОНА ПРИ ОШИБКЕ СИМ-КАРТЫ
+;Reboot When Card Error
+;(c) BoBa
+;(p) Nikolas535
+;Version: 
+;PatchID: 9362
+;Details: https://patches.kibab.com/patches/details.php5?id=9362
+/*
+
+*/
+D7990: E6FC9C02B8C0 8880DA8E7AEC
+;------------------------- end -------------------------
+

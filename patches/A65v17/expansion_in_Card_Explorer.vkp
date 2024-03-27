@@ -1,0 +1,14 @@
+;A65v17
+;Отключение запрета редактирования расширения в Card Explorer
+;Turning off of the prohibition of the editing of expansion in Card Explorer
+;(c) Sinclair
+;(p) Joenka
+;Version: 
+;PatchID: 3869
+;Details: https://patches.kibab.com/patches/details.php5?id=3869
+/*
+
+*/
+33057C: DACE96A9 50445055
+;------------------------- end -------------------------
+

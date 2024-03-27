@@ -1,0 +1,15 @@
+;A60v27
+;Отображение инвертированных софт-кнопок
+;Displaying inverted soft-keys
+;(c) .
+;(p) Rasp
+;Version: 
+;PatchID: 10471
+;Details: https://patches.kibab.com/patches/details.php5?id=10471
+/*
+
+*/
+11A8DE: 60 00 
+11A999: 97 07 ;Убираем серые кнопки
+;------------------------- end -------------------------
+

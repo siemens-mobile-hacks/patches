@@ -1,0 +1,56 @@
+;C75v22
+;API
+;API
+;(c) 1nvisible, avkiev, ~Jhellico
+;Version: 8
+;PatchID: 3419
+;Details: https://patches.kibab.com/patches/details.php5?id=3419
+/*
+Поскольку на C75v22 отличаются адреса, API из X65v100 ставить нельзя. Поэтому ставим этот.
+*/
++110000
+#pragma enable old_equal_ff
+;----------------------------------------
+;OpenWriteCloseFile
+;v1.1
+;(c) 1nvisible
+;Writes Buffer to a File
+;R0 - File Name
+;R1 - Buffer Pointer
+;R2 - Bytes to Write
+
+0FCF000: FFB50D1C161C0849FF2201326B46F1F7
+0FCF010: 1FF8291C321C061C6B46F1F721F8301C
+0FCF020: 6946F1F721F8FFBD01030000
+;----------------------------------------
+;ReturnProcedure
+;v1.0
+;(c) 1nvisible
+;Returns from ldr/blx patches by adding 4 to LR
+
+0FCF030: 0040BDE804E08EE21EFF2FE1
+;----------------------------------------
+;Hex2Int
+;v1.0
+;(c) empeka
+;This function converts numerical string containing hexadecimal value to 32bit integer
+;Parameters:
+;R0: pointer to string
+;R1: address for pointer containing last processed byte from input string (optional)
+;Output:
+;R0: received value (32bit)
+;R1: pointer to last processed character
+;Notes:
+;Function automatically skips blanks (0x20) and new lines (0x13) in given string, so "123 4" is possible in input
+;If function encounters character, which is one of above, nor hexadecimal digit, it breaks execution.
+
+0FCF050: 10B5002302780130141C093C042CF9D9
+0FCF060: 202AF7D0302A15D3662A13D8392A09DD
+0FCF070: 412A0FDB462A03DD612A0BDB573A02E0
+0FCF080: 373A00E0303A1C1C102363439B180278
+0FCF090: 0130E7E7002901D001380860181C10BD
+;----------------------------------------
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

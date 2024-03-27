@@ -1,0 +1,15 @@
+;C72v22
+;Изменить продолжительность сигнала
+;Change Ring Time
+;(c) Along
+;(p) Virusmater
+;Version: 
+;PatchID: 6964
+;Details: https://patches.kibab.com/patches/details.php5?id=6964
+/*
+
+*/
+0B6BB24: C8AF00 C0D401 ; Alarmclock 2 minutes
+0ABEEFC: C8AF00 C0D401 ; Appointment (2 minutes -> 120 secs -> 120000 Msecs -> 0001D4C0 -> C0D40100)
+;------------------------- end -------------------------
+

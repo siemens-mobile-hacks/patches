@@ -1,0 +1,14 @@
+;M65v50
+;Убрать запятую между именем и фамилией в списке адресной
+;Remove comma between last name and first name
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 563
+;Details: https://patches.kibab.com/patches/details.php5?id=563
+/*
+
+*/
+0AB5A9C: 3FF14AFE 00280028
+;------------------------- end -------------------------
+

@@ -1,0 +1,20 @@
+;C75v22
+;Активировать выбор диапазона
+;Enable Band Selection
+;(c) Bennie
+;(p) BPSNSK
+;Version: 
+;PatchID: 6990
+;Details: https://patches.kibab.com/patches/details.php5?id=6990
+/*
+
+*/
+04B0E64: 0502 FA01
+
+;------------------------- end -------------------------
+
+
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

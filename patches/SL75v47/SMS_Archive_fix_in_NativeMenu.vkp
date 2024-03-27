@@ -1,0 +1,14 @@
+;SL75v47
+;Корректная работа пункта "Архив сообщений" в NativeMenu
+;SMS Archive fix in NativeMenu
+;(c) Miha_r
+;(p) bertgrin
+;Version: 
+;PatchID: 9485
+;Details: https://patches.kibab.com/patches/details.php5?id=9485
+/*
+
+*/
+08CE2A0: E99C60A0 7FD932A0
+;------------------------- end -------------------------
+

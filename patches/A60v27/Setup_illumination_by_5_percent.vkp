@@ -1,0 +1,16 @@
+;A60v27
+;Шаг подсветки в 5%
+;Setup illumination by 5%
+;(c) Rasp
+;Version: 
+;PatchID: 10453
+;Details: https://patches.kibab.com/patches/details.php5?id=10453
+/*
+
+*/
+65F5E4: 0A 05
+65F61A: 0A 05
+7C513C: 0A 05
+7C5178: 0A 05
+;------------------------- end -------------------------
+

@@ -1,0 +1,22 @@
+;CX70v56
+;Включение/выключение вибры при блокировке/разблокировке клавиатуры
+;Turn vibra on/off when keypad locked/unlocked
+;(c) ~Jhellico
+;(r) empeka
+;(p) Lost
+;Version: 
+;PatchID: 2432
+;Details: https://patches.kibab.com/patches/details.php5?id=2432
+/*
+
+*/
+0CB6A04: 01210320 5AF266F8
+0CB6D8C: 01210320 59F2A0FE
+
+#pragma enable old_equal_ff
+0F10AD0: 012100E0002101480047C046,0xA0F10AE1
+0F10AE0: FCB50F1C04498847B84201D003498847
+0F10AF0: FCBC0121032000BD,0xA08F00FF,0xA08F0115 ; GetVibraStatus, SwitchVibraOnOff
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

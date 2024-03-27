@@ -1,0 +1,16 @@
+;S75v47
+;Отключить звук\вибру USSD сообщения
+;Disable USSD sound\vibration
+;(c) ThE TrIFoN
+;(r) (i) -=(Kad)=-
+;Version: 
+;PatchID: 6354
+;Details: https://patches.kibab.com/patches/details.php5?id=6354
+/*
+Наконец-то получилось! 
+Тестируйте
+
+*/
+029C702: 0F 21
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;C65v56
+;Фотографирование любой цифровой кнопкой
+;To make foto with amy key
+;(c) SiNgle
+;Version: 
+;PatchID: 3793
+;Details: https://patches.kibab.com/patches/details.php5?id=3793
+/*
+
+*/
+08FB014: 01 16
+08FB01C: 45 23
+;ВЫХОД ИЗ КАМЕРЫ ПО ДЛИННОМУ НАЖАТИЮ КРАСНОЙ КНОПКИ!
+;------------------------- end -------------------------
+

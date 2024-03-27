@@ -1,0 +1,28 @@
+;CX75v25
+;Blinker
+;Blinker
+;(c) benj9
+;(r) 1nvisible, avkiev, BuG, Chaos
+;(p) sempai
+;Version: 3.2-MP
+;PatchID: 5505
+;Details: https://patches.kibab.com/patches/details.php5?id=5505
+/*
+теперь полностью рабочая версия ~_^
+English:
+completely working version
+*/
+81C47C: 0070A0E1 E3001FEB ; Y
+#pragma enable old_equal_ff
+0FDCCD0: 40000000,300200A8,0xA84CB538,0xA84CFC64 ; -RBC
+#pragma disable old_equal_ff
+
+/* ~~~~~ port info desk ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+(Y) entrypoint: SetIllumination + 0x34 (->MOV R7, R0). FF4D2DE90160A0E180179FE508D04DE20010D1E502B0A0E300A0A0 E3000051E30200E0030050A0E30240A0E10A00000A + 0x34
+(B) ram_mainscreen_accu_icon: (7047B0B5????????0068????0028)+0xA, there you find an address loaded by LDR. add 4 to address.
+(C) ram_net_online: (70B5????????00680028) + 2, there you find an address loaded by LDR.
+(R) patch needs 0x24 bytes static free ram. area around A8000230 should be ok for x65/75. check with armdebugger.
+*/
+
+;------------------------- end -------------------------
+

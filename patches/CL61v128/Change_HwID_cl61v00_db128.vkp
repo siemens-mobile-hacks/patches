@@ -1,0 +1,14 @@
+;CL61v128
+;Изменить хвид CL61 на хвид E71
+;Change HwID for E71
+;(c) Marie
+;Version: 
+;PatchID: 10401
+;Details: https://patches.kibab.com/patches/details.php5?id=10401
+/*
+Ещё один из способов включить E71 с прошивкой CL61. Конфликтует с "Отключить проверку хвид" ID 10393
+English:Change HwID. Conflict with "HwID Check Remover" ID10393
+*/
+0AB8CC8: 27 2D ;CL61 -> E71
+;------------------------- end -------------------------
+

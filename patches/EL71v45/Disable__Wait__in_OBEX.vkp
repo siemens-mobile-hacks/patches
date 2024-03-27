@@ -1,0 +1,13 @@
+;EL71v45
+;Отключить "Подождите" при OBEX-подключении
+;Disable "Wait" in OBEX
+;(c) DJ
+;Version: 
+;PatchID: 8020
+;Details: https://patches.kibab.com/patches/details.php5?id=8020
+/*
+
+*/
+0680CF8: 115E0BFB 0000A0E1
+;------------------------- end -------------------------
+

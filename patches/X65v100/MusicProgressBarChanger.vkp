@@ -1,0 +1,27 @@
+;X65v100
+;Изменение прогрессбара
+;MusicProgressBarChanger
+;(c) KreN
+;(r) SiNgle, -=(Kad)=-
+;Version: 1.0
+;PatchID: 4280
+;Details: https://patches.kibab.com/patches/details.php5?id=4280
+/*
+
+*/
+#pragma enable old_equal_ff
+0FC7100: 1FB51048C4DF01D0043000901FBC151C
+0FC7110: 02681F1C00BDFFB50A48C4DF01D01030
+0FC7120: 0190FFBC8160C3607847000028C080E5
+0FC7130: 0080BDE8
+
+0FC7140: 0xB1C2D3E4,0x0000CD10,0x00000000,0x00000000,"\
+{p=ChangeProgressBar cp=KreN id=cd10 ver=1.0}","\
+{4 co BGColor v=0x14F85656}","\
+{8 co BorderColor v=0x34000000}","\
+{12 co StripeColor v=0x24FFFFFF}","\
+{16 xy2 XYPosStart x=0 y=112}","\
+{20 xy2 XYPosEnd x=132 y=118}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;M75v12
+;Убрать подтверждение самолёта
+;Disable aircraft check
+;(c) Bennie
+;Version: 
+;PatchID: 580
+;Details: https://patches.kibab.com/patches/details.php5?id=580
+/*
+
+*/
+02C66D3: D1 E0
+;------------------------- end -------------------------
+

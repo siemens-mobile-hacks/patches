@@ -1,0 +1,14 @@
+;M55v10
+;Отключить вопрос "Копировать адресную книгу?" и "Справочник по умолчанию" при замене SIM-карты
+;Disable "Copy adress book?" and "Default phonebook" messages
+;(c) ACiD[mrp]
+;(p) AlexSid
+;Version: 
+;PatchID: 1369
+;Details: https://patches.kibab.com/patches/details.php5?id=1369
+/*
+
+*/
+4F0F2C: DA8C6E7A48403D04DA8CF6B0 E6FC1000DA2E34ABFA6F580F
+;------------------------- end -------------------------
+

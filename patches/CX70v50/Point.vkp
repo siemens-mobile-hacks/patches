@@ -1,0 +1,14 @@
+;CX70v50
+;Убрать запятую между именем и фамилией в списке адресной книги
+;To clean a point between a name and a surname in the list of a directory
+;(c)  SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 65
+;Details: https://patches.kibab.com/patches/details.php5?id=65
+/*
+Патч убирает запятую между именем и фамилией в списке адресной книги.
+*/
+0B0709E: 84F17DF9 00280028
+;------------------------- end -------------------------
+

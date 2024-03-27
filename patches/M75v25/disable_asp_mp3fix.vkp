@@ -1,0 +1,17 @@
+;M75v25
+;Отключение нарастания громкости
+;Disable ASPfix
+;(c) caine
+;(r) Dimadze
+;(p) Виктор89
+;Version: 
+;PatchID: 10054
+;Details: https://patches.kibab.com/patches/details.php5?id=10054
+/*
+Отключает нарастание громкости, теперь и для SGold с MP3/ACC
+*/
+0972910: 00 01
+0972914: 02 01
+08275CB: 0A EA ;Disable Pick Off
+;------------------------- end -------------------------
+

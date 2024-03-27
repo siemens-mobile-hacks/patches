@@ -1,0 +1,14 @@
+;C75v22
+;Не показывать анимацию при выключении
+;Do not show Shutdown Animation
+;(c) 88421409
+;(r) sempai, NevAtse
+;Version: 
+;PatchID: 9592
+;Details: https://patches.kibab.com/patches/details.php5?id=9592
+/*
+
+*/
+02A7D8E: 21F02FFD C046C046
+;------------------------- end -------------------------
+

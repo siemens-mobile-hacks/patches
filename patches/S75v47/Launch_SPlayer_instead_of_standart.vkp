@@ -1,0 +1,26 @@
+;S75v47
+;Запуск SPlayer вместо стандартного медиаплеера
+;Launch SPlayer instead of standart mediaplayer
+;(c) Kibab
+;(r) RainMaker, den11111, Den
+;(p) Виктор89
+;Version: 
+;PatchID: 8874
+;Details: https://patches.kibab.com/patches/details.php5?id=8874
+/*
+
+*/
+;Закомментируйте ненужные строки
+00422378: DBDD32A0 0xA0061001 ;кнопка плеера (сбоку)
+004222F8: D3DD32A0 0xA0061001 ;кнопка с ноткой и флекс меню
+004375AC: 413433A0 0xA0061001 ;натив меню
++0061000 
+#pragma enable old_equal_ff
+00: FFB58020C7DF2501061C06A18022C7DF
+10: 6C0100220021301C94DF301CC7DF2901
+20: FFBD
+24: "4:\\ZBin\\utilities\\SPlayer\\SPlayer_NSG.elf",00 ;путь до эльфа (вместо одного "\" ставьте "\\"!)
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;C65v56
+;Разрешить Разблокировку Клавиатуры Двойным Нажатием #
+;Allow KeyBoard Unlock by Double-Press of #
+;(c) 1nvisible
+;Version: 
+;PatchID: 3858
+;Details: https://patches.kibab.com/patches/details.php5?id=3858
+/*
+
+*/
+16F5652: 21D1 C046 ; x65, CX75
+;------------------------- end -------------------------
+

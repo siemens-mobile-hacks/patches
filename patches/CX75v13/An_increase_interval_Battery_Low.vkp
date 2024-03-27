@@ -1,0 +1,19 @@
+;CX75v13
+;Увеличение интервала между сообщениями "Аккумулятор разряжен! Зарядите"
+;An increase in the interval between the communications "Storage battery is discharged! You will load"
+;(c) 1nvisible
+;(r) benj9
+;(p) IzZzwerg
+;Version: 1
+;PatchID: 6097
+;Details: https://patches.kibab.com/patches/details.php5?id=6097
+/*
+В патче раскомментируйте нужную сторку: 1 мин, 2 мин, 2.5мин или 5мин.
+*/
+;Раскомментируйте нужную:
+;818604: ED1000 32С70000 - 1 минуты
+;818604: ED1000 658E0000 - 2 минуты
+;818604: ED1000 F17E0000 - 2.5 минуты
+;818604: ED1000 3FCE0000 - 5 минут
+;------------------------- end -------------------------
+

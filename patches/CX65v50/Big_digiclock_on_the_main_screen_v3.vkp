@@ -1,0 +1,33 @@
+;CX65v50
+;Большие цифровые часы на главном экране при залоченной клавиатуре
+; Big digital clock on the main screen when keylocked
+;(c) avkiev
+;(r) arsh0r
+;(p) AsteriX
+;Version: 3
+;PatchID: 400
+;Details: https://patches.kibab.com/patches/details.php5?id=400
+/*
+Не совместим с патчем №9 * Календарь на главном экране с вкл/выкл v1.3 *
+*/
+;!Не совместим с патчем * Календарь на главном экране с вкл/выкл v1.3 *
+1634634: FFF7A8FD 26F074FB
+#pragma enable old_equal_ff
+165AD00: 4469676974616C20436C6F636B207633
+165AD10: A961766B6965762031372E30362E3035
+165AD20: F1B5F5F7C8EC0130072823D01C488047
+165AD30: 20D10F24492504263602D036194F381C
+165AD40: 391C0831F6F7ACEF397A00F017F80120
+165AD50: B96B01310140B96300D10B2000F015F8
+165AD60: 0D3C797A00F00AF83A241C35833EB97A
+165AD70: 00F004F8F1BCD9F707FA00BD01B50A20
+165AD80: E2F6E0EC00F001F800E002B53218201C
+165AD90: 291CF5F7F4ED18345A2D00D30F3C01BD
+165ADA0: A7D014A100AA75A8
+#pragma disable old_equal_ff
+;165AD30: 20D1 C046 ;Показывать часы даже при разлоченной клавиатуре (Show clock even keyboard unlocked)
+;165AD34: 49 YY ;Координата по Y (Y-coordinate)
+;165AD5C: 00F015F80D3C C046C0460D34 ;Без мигающего двоеточия (Without blinking colon)
+;165AD28: 07 NP ;Profile "No patches"
+;------------------------- end -------------------------
+

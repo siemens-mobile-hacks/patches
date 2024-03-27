@@ -1,0 +1,58 @@
+;CX70v50
+;Увеличение Диска A до 14.14 Мб
+;IncFex 14.14 Mb TEST
+;(c) SiNgle, empeka, Hynix
+;Version: 1.0
+;PatchID: 1081
+;Details: https://patches.kibab.com/patches/details.php5?id=1081
+/*
+Этот патч увеличивает FFS_A до 14.14 Mb, но урезает FFS_C до 289 Kb, ставить на IncFlex v1.0 Part 1 !!!!
+После установки v1.0 Part 1 НАДО ВРУБИТЬ МОБИЛУ, ТОЛЬКО ПОТОМ СТАВИТЬ ЭТОТ ПАТЧ
+СДЕЛАТЬ БЭКАП!!!!!!!!!!!!!!!!!
+1. Сливаем все с диска С на комп(Open Disks Forever ©Single), и выбираем ~280Kb самого важного.
+2. Ставим патч и после нажатия красной кнопки ждем 10-15 секунд
+3. После форматирования заливаем файлы на диск С
+4. Перезагружаем телефон, радуемся и не ставим патчи туда где FFS!!!
+
+English:
+This patch increases FFS_A up to 14.14 Mb, but cuts FFS_C down to 289 Kb and is to be istalled only after IncFlex v1.0 Part 1 !!!
+Before applying this patch do the Fullflash Backup!
+1. Make the backup of all the files on Disk C (apply Open Disks Forever ©Single), and choose the most valuable files (their common capacity shouldn't exceed 280 Kb)
+2. Apply the following patch. Then press the red button and wait 10-15 second until the phone has finished formatting the increased disk. 
+3. Put the most valuable files back to Disk C
+4. Reboot your cell phone. Be pleased and don't install patches to the new FFS space.
+*/
+083A764: 6D 79
+083A7BC: 10 04
+00B0368: FFFFFFFFFFFFFFFF 000036A000000200
+00B0370: FFFFFFFFFFFFFFFF 000038A000000200
+00B0378: FFFFFFFFFFFFFFFF 00003AA000000200
+00B0380: FFFFFFFFFFFFFFFF 00003CA000000200
+00B0388: FFFFFFFFFFFFFFFF 00003EA000000200
+00B0390: FFFFFFFFFFFFFFFF 000040A000000200
+00B0398: FFFFFFFFFFFFFFFF 000042A000000200
+00B03A0: FFFFFFFFFFFFFFFF 000044A000000200
+00B03A8: FFFFFFFFFFFFFFFF 000046A000000200
+00B03B0: FFFFFFFFFFFFFFFF 000048A000000200
+00B03B8: FFFFFFFFFFFFFFFF 00004AA000000200
+00B03C0: FFFFFFFFFFFFFFFF 00004CA000000200 
+#pragma disable warn_no_old_on_apply
+0360000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0380000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+03A0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+03C0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+03E0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0400000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0420000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0440000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0460000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0480000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+04A0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+04C0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+02E0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0300000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0320000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0340000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+#pragma enable warn_no_old_on_apply
+;------------------------- end -------------------------
+

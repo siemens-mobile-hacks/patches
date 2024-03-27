@@ -1,0 +1,14 @@
+;S75v31
+;Выход в главное меню нажатием Медиа Клавиши
+;Jump to main menu by Media Key
+;(c) truhlik, wosuk
+;Version: 
+;PatchID: 2863
+;Details: https://patches.kibab.com/patches/details.php5?id=2863
+/*
+press media on left side everywhere, make jump directly to main menu (for example jump from running java) 
+*/
+0041445c: 124A41A0 B64941A0 ;shot key press 
+;004144A0: 294A41A0 B64941A0 ;long key press
+;------------------------- end -------------------------
+

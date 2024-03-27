@@ -1,0 +1,24 @@
+;S75v47
+;Показывать информацию о числе устройств в списках устройств в подстроке "Спис.устройств" (Перед.данн.->Наст.  Bluetooth)
+;Display the number of devices in device lists in substring "Device lists" (Setup->Connectivity->Bluetooth settings)
+;(c) Evgr
+;Version: 
+;PatchID: 10591
+;Details: https://patches.kibab.com/patches/details.php5?id=10591
+/*
+
+*/
+
+0B8AC28: 0400001A A822211A
+
+#pragma enable old_equal_ff
+13D36D0: 010056E359DDDE1A0200A0E3F4FEBBFB
+13D36E0: 0030A0E10100A0E3F1FEBBFB0020A0E1
+13D36F0: 0C008DE80400A0E3EDFEBBFB0030A0E1
+13D3700: 0000A0E3EAFEBBFB0020A0E10400A0E1
+13D3710: 04108FE2E252D6FA48DDDEEA2564207C
+13D3720: 202564207C202564207C20256400
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

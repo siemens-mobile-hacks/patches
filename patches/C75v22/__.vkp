@@ -1,0 +1,17 @@
+;C75v22
+;Меню выбора языка ввода при нажатии Help (Инф. Т9)
+;Input language menu on Help key (Т9 info)
+;(c) SiNgle
+;(p) SMeeTBB
+;Version: 
+;PatchID: 1163
+;Details: https://patches.kibab.com/patches/details.php5?id=1163
+/*
+
+*/
+03FDBFA: 794900227948 B1F7C1FA80BD ;в MMS
+0416E56: 78F05EED 98F793F9 ;в e-mail
+04DE996: FFF777FF D0F6F3FB ;в SMS
+0536D6E: A7F78BFD 78F607FA ;в Текст.модулях
+;------------------------- end -------------------------
+

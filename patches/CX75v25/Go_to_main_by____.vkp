@@ -1,0 +1,31 @@
+;CX75v25
+;Из любого места жмем ### и попадаем в главное меню
+;Go to mainmenu from anywhere by pressing ###
+;(c) SiNgle
+;(r) maximkml
+;(p)  ThE TrIFoN, 1nvisible,maximkml
+;Version: 
+;PatchID: 3631
+;Details: https://patches.kibab.com/patches/details.php5?id=3631
+/*
+Для того чтобы активировать данную функцию, нужно поставить в Developer Menu галочку в
+;под меню "LOCAL/Default/Enable ###". Там же можно и отключить.
+
+
+Теперь сворачивает MP3-плеер во время проигрывания. Делаем так - запускаем MP3-плеер, блокируем клавиатуру (долгое нажатие #), давим ### и мы в native-меню с разблокированной клавой и подсветкой! Пункт меню "Спис. Вызовов" - "Время/Стоимость" вырубает телефон
+
+English:Now turns off MP3-player during playing. We do so - we start MP3-player, we block the keyboard (long pressing #), we press ### and we in the native-menu with unblocked keyboard and illumination! The item of the menu " the List of Calls " - "Time/cost" crashes mobile
+
+To enable this function, you should select "Enable ###" in Options menu. (Developer->LOGAL, then Options, Enable ###".
+*/
+07D701C: 84F0F9FD 07F583FE
+#pragma enable old_equal_ff
+04DED26: FFB5134B98470130072818D021F35AFF
+04DED36: 002807D103207DF364F97FB40B490023
+04DED46: 0B707FBC0B4B98470130082803D1054B
+04DED56: 984700F006F8DFF55CFE00F002F8034B
+04DED66: 9847FFBDC046A76B32A0ECF84FA813BC
+04DED76: 85A0ADF42BA0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,29 @@
+;SL75v52
+;Отключение анимации в Native Menu
+;Stop Native Menu Animation
+;(c) sim_emrom
+;(p) Виктор89
+;Version: 
+;PatchID: 9620
+;Details: https://patches.kibab.com/patches/details.php5?id=9620
+/*
+Патч выключает анимацию пунктов Native Menu:
+- проще заменять картинки меню
+- выше скорость работы меню
+*/
++361B0
+040611C: 7603 0000 ; Address Book
+0406158: 6303 0000 ; Calls
+040617C: 9A03 0000 ; Internet
+0406258: 6B03 0000 ; Camera
+0406224: AC03 0000 ; Messages
+04061FC: C103 0000 ; Organiser
+0406288: 8E03 0000 ; Games
+04061A0: A203 0000 ; Media Player
+04061CC: 5803 0000 ; Alarm Clock
+04062BC: 8203 0000 ; Others
+04062F0: B803 0000 ; MyStuff
+0406318: CD03 0000 ; Settings
++0
+;------------------------- end -------------------------
+

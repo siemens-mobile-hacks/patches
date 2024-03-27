@@ -1,0 +1,14 @@
+;S75v32
+;Замена обычного меню на нативное (быстрое)
+;NativeMenu instead of MainMenu
+;(c) SiNgle
+;(p) avkiev
+;Version: 
+;PatchID: 3663
+;Details: https://patches.kibab.com/patches/details.php5?id=3663
+/*
+
+*/
+043165C: 0xA03777ED 0xA02CAC27
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;S65v58
+;Плавное включение подсветки
+;Smooth keypad light
+;(c) SiNgle
+;Version: 
+;PatchID: 9093
+;Details: https://patches.kibab.com/patches/details.php5?id=9093
+/*
+
+*/
+0C571BA: 0022 664A
+;------------------------- end -------------------------
+

@@ -1,0 +1,28 @@
+;S45iv4
+;Звуковое предупреждение о неотправленном сообщении
+;Sound alert about not-sent message
+;(c) LaLo
+;Version: 2.1
+;PatchID: 632
+;Details: https://patches.kibab.com/patches/details.php5?id=632
+/*
+v2 - включено больше ситуаций
+
+Патч заменяет предупреждающий гудок "Сообщение не отправлено" на любой звук из списка звуков, если сообщение не отправлено (или отправлена только часть составного SMS)
+
+*/
+4A3496: DACA4E9A DA8770F1
+4A38A8: DAFAD84C DA8776F1
+4A4070: DACC5C1A DA877CF1
+4A437A: DACA5EA0 DA8782F1
+07F170: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DACA4E9A0D08DAFAD84C0D05DACC5C1A
+07F180: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0D02DACA5EA0DACAB89CE6FC6700DACD
+07F190: FFFFFFFFFFFF 3EDBFACA629C
+;Настройка:
+;Изменить тип звукового сигнала (раскомментировать):
+;07F18C: 67 xx ;замена звука на любой из списка звуков
+;07F18C: 67 66 ;замена звука на Звук проиграной битвы BattleMail
+;Вибра вне зависимости от системных настроек. © KirX
+;07F192: FACA629CFFFFFFFFFFFF 2D02DACDFADEFACA629C
+;------------------------- end -------------------------
+

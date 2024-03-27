@@ -1,0 +1,19 @@
+;M75v13
+;Неограниченная запись видео
+;Video Unlimited
+;(c) SiNgle
+;(p) TAPAKAH to m75 Mikel
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=778
+;PatchID: 735
+;Details: https://patches.kibab.com/patches/details.php5?id=735
+/*
+Неограниченная запись видео. Врет индикатор времени. После записи видео необходимо выйти из камеры по нажатию красной кнопики, иначе тело зависнет.
+*/
+
+2D952F: 00 FF
+34ECC0: 3300000A 920052E3
+
+
+;------------------------- end -------------------------
+

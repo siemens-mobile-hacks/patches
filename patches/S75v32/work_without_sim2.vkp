@@ -1,0 +1,16 @@
+;S75v32
+;Работа телефона без SIM-карты
+;Work without SIM-card
+;(c) ThE TrIFoN, SiNgle
+;(r) avkiev
+;(p) GrosserS
+;Version: 2
+;PatchID: 4556
+;Details: https://patches.kibab.com/patches/details.php5?id=4556
+/*
+Жмем Демо и телефон включается как обычно
+English:Press Demo and mobile works as usually
+*/
+029D78C: 0000A0E3C9FFFFEA 04F01FE5,0xA0D0C8A1 ;S75sw32
+;------------------------- end -------------------------
+

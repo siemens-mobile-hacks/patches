@@ -1,0 +1,14 @@
+;M75v23
+;Изменение длительности горения подсветки
+;Change Illumination Turn Off Timer
+;(c) benj9
+;Version: 2
+;PatchID: 2830
+;Details: https://patches.kibab.com/patches/details.php5?id=2830
+/*
+
+*/
+0A42C24: 0F MS ; MS=0i30 MainScreen (seconds)
+0A42C28: 3C ML ; ML=0i30 Menus, Lists (seconds)
+;------------------------- end -------------------------
+

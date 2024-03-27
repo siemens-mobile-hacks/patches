@@ -1,0 +1,15 @@
+;S75v40
+;SWI-хук
+;SWI-hook
+;(c) avkiev, Rst7/CBSIE, BoBa
+;(r) KonstanT
+;Version: 
+;PatchID: 3726
+;Details: https://patches.kibab.com/patches/details.php5?id=3726
+/*
+
+*/
+13A1374: 2C0000EA 80F19FE5          ;/ S75v40
+13A14FB: A100FFFFFF 00,0xA0078001   ;\ S75v40
+;------------------------- end -------------------------
+

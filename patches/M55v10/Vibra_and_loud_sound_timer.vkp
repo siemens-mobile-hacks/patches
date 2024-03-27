@@ -1,0 +1,21 @@
+;M55v10
+;Вибрация и громкий звук в таймере
+;Vibra and loud sound in timer
+;(c) Matr!x
+;Version: 
+;PatchID: 1563
+;Details: https://patches.kibab.com/patches/details.php5?id=1563
+/*
+
+*/
+35D150: FFFFFFFFFFFFFFFF E6FC2F00FAA2B629
+35D160: FFFFFFFFFFFFFFFF E6FC0000FAA2B629
+35D170: FFFF E6FC
+35D172: FF 3E ;замена звука (любой из списка)
+35D173: FFFFFFFFFF 00FAA2B629
+4C77CD: 6C3878 5560D1
+4C77E4: E6FC3500 DA5570D1
+4C77E9: 6C3878 5550D1
+
+;------------------------- end -------------------------
+

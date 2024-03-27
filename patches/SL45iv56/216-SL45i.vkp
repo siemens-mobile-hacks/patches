@@ -1,0 +1,18 @@
+;SL45iv56
+;Без 'сообщение удалено'
+;Without 'message deleted'
+;(c) Charger
+;Version: 
+;PatchID: 1913
+;Details: https://patches.kibab.com/patches/details.php5?id=1913
+/*
+Патч убирает "сообщение удалено" при удалении SMS.
+
+
+Created: June xx, 2004
+
+Патч №216 с http://patch.oslik.ru/SL45_RU
+*/
+39a55a: dae528de cc00cc00
+;------------------------- end -------------------------
+

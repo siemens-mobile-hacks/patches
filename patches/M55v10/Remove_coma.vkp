@@ -1,0 +1,26 @@
+;M55v10
+;Убрать запятую между фамилией и именем
+;Remove coma between first and last name
+;(c) SiNgle
+;Version: 
+;PatchID: 1388
+;Details: https://patches.kibab.com/patches/details.php5?id=1388
+/*
+Запятые пропадают в SMS!
+
+*/
+3FF0E6: 2C 20 ;при входящем звонке
+49EF9A: DA90044E CC00CC00 ;в заголовке записи при выборе зеленой кнопкой
+4A73F4: DA90044E CC00CC00
+4A7BF8: DA90044E CC00CC00 ;при исходящем звонке
+4A7D36: DA90044E CC00CC00 ;в адресной книге
+4A7DEE: DA90044E CC00CC00
+4ADC52: DA90044E CC00CC00
+4BBD98: DA90044E CC00CC00 ;в заголовке записи при просмотре
+4BBEBA: DA90044E CC00CC00
+4BCFC4: DA90044E CC00CC00 ;в записи при просмотре
+4DF88C: DA90044E CC00CC00
+4F24E8: DA90044E CC00CC00
+
+;------------------------- end -------------------------
+

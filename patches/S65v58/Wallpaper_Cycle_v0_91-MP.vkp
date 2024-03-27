@@ -1,0 +1,21 @@
+;S65v58
+;Переключатель фона главного экрана
+;Wallpaper Cycle
+;(c) benj9
+;(p) -=(Kad)=-
+;Version: 0.91-MP
+;PatchID: 3974
+;Details: https://patches.kibab.com/patches/details.php5?id=3974
+/*
+ставим кусок библиотеки:
++0FC0000
+#pragma enable old_equal_ff
+3F0: 004F3847,0xA1344F79 ; f126: rand
+6C8: 004FF746,0xA86CB934 ; v17: ram_ShutdownMode(hword)
+6E0: 004FF746,0xA8772B44 ; v20: ram_random_seed
+#pragma disable old_equal_ff
++0
+*/
+169C4F2: 2421614312688A182132 C046004FB8472F93FDA0
+;------------------------- end -------------------------
+

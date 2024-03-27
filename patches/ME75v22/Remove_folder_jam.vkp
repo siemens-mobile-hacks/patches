@@ -1,0 +1,21 @@
+;ME75v22
+;Удалить папку "jam" из папки "Java"
+;Remove folder "jam" from "Java"
+;(c) majsky
+;Version: 
+;PatchID: 2674
+;Details: https://patches.kibab.com/patches/details.php5?id=2674
+/*
+
+English:Before applying the patch move folders "Applications" and "Games" from "0:\Java\jam\" to "0:\Java\", then delete the empty folder "jam"
+Compatible with patch "appz and games on MMC" (4:\ in this case) - S65
+*/
+0493CF6: 0B 07
+0493D06: 5C006A0061006D 00000000000000
+0493D4A: 18 14
+0493D5C: 6A0061006D005C004100700070006C 4100700070006C0069006300610074
+0493D6E: 63006100740069006F006E0073 6F006E00730000000000000000
+0493DD0: 11 0D
+0493DE2: 6A0061006D005C00470061006D00650073 470061006D006500730000000000000000
+;------------------------- end -------------------------
+

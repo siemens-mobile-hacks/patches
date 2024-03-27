@@ -1,0 +1,30 @@
+;SL45iv56
+;AFA with APS - Auto Profile Swapping with sound
+;AFA with APS - Auto Profile Swapping with sound
+;(c) GoLL@B
+;Version: 
+;PatchID: 2670
+;Details: https://patches.kibab.com/patches/details.php5?id=2670
+/*
+English: Release: March 18th, 2006
+*/
+;when AFA changes profile, we hear "beep"
+;E6FC4200 ; -> 42 is a melody code (in each line)
+
+;In Appointments we use epoints (sp-space):
+;spspDAE100D1 - swap to normal
+;spspDAE100D2 - swap to quiet
+;spspDAE100D3 - swap to loudly
+;spspDAE100D4 - swap to profile 1
+;spspDAE100D5 - swap to profile 2
+
+;!!! Patch contains holes, I did it in this way because I wanted to have:
+;the last digit as a profile number
+
+0x41D100: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC4200DAC3B600E6FC0000D7400D00F6FC8824FAA44A98 ; normal 
+0x41D200: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC4200DAC3B600E6FC0101D7400D00F6FC8824FAA44A98 ; quiet 
+0x41D300: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC4200DAC3B600E6FC0202D7400D00F6FC8824FAA44A98 ; noisy 
+0x41D400: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC4200DAC3B600E6FC0303D7400D00F6FC8824FAA44A98 ; profile 1 
+0x41D500: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC4200DAC3B600E6FC0404D7400D00F6FC8824FAA44A98 ; profile 2
+;------------------------- end -------------------------
+

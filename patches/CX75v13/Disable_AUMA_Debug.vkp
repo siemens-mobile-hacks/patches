@@ -1,0 +1,17 @@
+;CX75v13
+;Отключить AUMA отладчик
+;Disable AUMA Debug
+;(c) benj9
+;(p) Luke
+;Version: 
+;PatchID: 3351
+;Details: https://patches.kibab.com/patches/details.php5?id=3351
+/*
+Ускоряет телефон, отсекая ненужный код
+English:Speed up phone by stripping needless code
+*/
+07D57D8: 10B5 7047
+07D584C: 0FB4 7047
+
+;------------------------- end -------------------------
+

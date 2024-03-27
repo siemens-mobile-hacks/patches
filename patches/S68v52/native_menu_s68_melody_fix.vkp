@@ -1,0 +1,14 @@
+;S68v52
+;Исправление Native Menu: Камера -> Мелодии
+;Melodies settings instead of Camera in NativeMenu
+;(c) sim_emrom
+;Version: 
+;PatchID: 9279
+;Details: https://patches.kibab.com/patches/details.php5?id=9279
+/*
+Заменяет неработающий пункт Камера на настройку мелодий (что соответствует значку).
+*/
+406038: 5907 D606 ;caption
+40603C: F3BB31A0 39FF36A0 ;shortcut
+;------------------------- end -------------------------
+

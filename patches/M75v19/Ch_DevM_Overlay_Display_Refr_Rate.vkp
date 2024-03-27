@@ -1,0 +1,13 @@
+;M75v19
+;Изменить частоту обновления Оverlaу
+;Change DevMenu Overlay Display Refresh Rate
+;(c) benj9
+;Version: 
+;PatchID: 2744
+;Details: https://patches.kibab.com/patches/details.php5?id=2744
+/*
+изменяет частоцу обновления Оvеrleу. 
+*/
+2BE68E: 36 6C
+;------------------------- end -------------------------
+

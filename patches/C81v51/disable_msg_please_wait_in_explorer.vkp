@@ -1,0 +1,14 @@
+;C81v51
+;Убрать сообщение "Пожалуйста подождите" в эксплорере
+;Disable message "Please wait" in explorer
+;(c) SiNgle
+;(p) dimonp25
+;Version: 0.2
+;PatchID: 7265
+;Details: https://patches.kibab.com/patches/details.php5?id=7265
+/*
+
+*/
+0548C8B: D1 E0
+;------------------------- end -------------------------
+

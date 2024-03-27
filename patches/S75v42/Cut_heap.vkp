@@ -1,0 +1,19 @@
+;S75v42
+;Подрезка кучи
+;Cut heap
+;(c) Rst7
+;(r) (i) BoBa, Kibab, avkiev
+;Version: 
+;PatchID: 6829
+;Details: https://patches.kibab.com/patches/details.php5?id=6829
+/*
+Теперь можно не думать про ФриРам. Он равен A8000000
+*/
+026F174: 000081E51EFF2FE1 04F01FE5,0xA0060801   ; S75v42
+
+#pragma enable old_equal_ff
+0060800: 00B501231B02C01A0860101C191CD218
+0060810: 03AB1A6058DF00BD
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

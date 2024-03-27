@@ -1,0 +1,15 @@
+;S75v47
+;Моментальный запуск скринсейвера после блокировки клавиатуры
+;ScreenSaver after KeyBoard Lock
+;(c) funMarkus
+;(p) dimonp25
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9129
+;PatchID: 8534
+;Details: https://patches.kibab.com/patches/details.php5?id=8534
+/*
+Работающая версия
+*/
+0342D04: a9f0ceec 03f0e7f9
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;CX70v56
+;Громкость щелчков клавиатуры
+;Key Click Volume
+;(c) Metall
+;Version: 1.0
+;PatchID: 6840
+;Details: https://patches.kibab.com/patches/details.php5?id=6840
+/*
+Увеличивает громкость щелчков клавиатуры(на много) :)
+*/
+00FE09C8: 22 02
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;CX70v50
+;Замена звука при дозвоне "ошибка соединения"
+;Replacement of a sound at dialing " a mistake of connection "
+;(c) B-727
+;(p) AsteriX
+;Version: 
+;PatchID: 123
+;Details: https://patches.kibab.com/patches/details.php5?id=123
+/*
+Замена звука при дозвоне "ошибка соединения" на более приятный.
+*/
+1527A72: 1800FAFF0000B6034A0178054A0108074A01FFFFE803F9FF0300 0C00B8073200FFFF3200400C1A00FFFFFFFFFFFFFFFFFFFFFFFF
+;------------------------- end -------------------------
+

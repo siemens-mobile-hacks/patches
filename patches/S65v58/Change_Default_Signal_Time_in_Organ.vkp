@@ -1,0 +1,22 @@
+;S65v58
+;Изменить Дефолтное Время Сигнала в Органайзере
+;Change Default Signal Time in Organizer
+;(c) 1nvisible
+;(p) KiRiK
+;Version: 
+;PatchID: 4755
+;Details: https://patches.kibab.com/patches/details.php5?id=4755
+/*
+Меняет время сигнала: 15 мин -> 0 мин
+!Все записи, у которых стоит 15 мин, при просмотре будут иметь 0 мин
+English:Changes signal time: 15 min -> 0 min
+!All entries with 15 min will have 0 min when viewing
+
+*/
+0A9B146: 311C201C 8BF2C3F8
+#pragma enable old_equal_ff
+0D262D0: 08B5B37D1F2B01D10123B375311C201C
+0D262E0: 08BD
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

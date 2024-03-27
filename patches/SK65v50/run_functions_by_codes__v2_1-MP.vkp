@@ -1,0 +1,14 @@
+;SK65v50
+;Запуск функций с помощью *# кодов
+;Running functions with *# codes
+;(c) empeka
+;(r) 1nvisible, avkiev
+;Version: 2.1-MP
+;PatchID: 4239
+;Details: https://patches.kibab.com/patches/details.php5?id=4239
+/*
+
+*/
+02C8630: 0655021951700522 004B9847,0xA0FC4701
+;------------------------- end -------------------------
+

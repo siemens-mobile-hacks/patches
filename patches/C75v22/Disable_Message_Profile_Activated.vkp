@@ -1,0 +1,13 @@
+;C75v22
+;Отключить сообщение "Профиль активирован"
+;Disable message "Profile activated"
+;(c) SiNgle
+;Version: 
+;PatchID: 6030
+;Details: https://patches.kibab.com/patches/details.php5?id=6030
+/*
+
+*/
+03AF6F4: 2B1C 04E0
+;------------------------- end -------------------------
+

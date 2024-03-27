@@ -1,0 +1,15 @@
+;S75v42
+;SWI-хук
+;SWI-hook
+;(c) avkiev, Rst7/CBSIE, BoBa
+;(r) KonstanT
+;Version: 
+;PatchID: 4931
+;Details: https://patches.kibab.com/patches/details.php5?id=4931
+/*
+
+*/
+13A3110: 2C0000EA 80F19FE5          ;/ S75v42
+13A3297: A100FFFFFF 00,0xA0078001   ;\ S75v42
+;------------------------- end -------------------------
+

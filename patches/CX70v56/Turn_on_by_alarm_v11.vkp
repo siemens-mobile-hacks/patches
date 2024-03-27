@@ -1,0 +1,24 @@
+;CX70v56
+;Включение телефона по будильнику
+;Turn on by Alarm clock
+;(c) SiNgle
+;(r) (I) ThE TrIFoN
+;(p) Lost
+;Version: 1.1
+;PatchID: 3067
+;Details: https://patches.kibab.com/patches/details.php5?id=3067
+/*
+При срабатывании будильника телефон включается и коротко вибрирует.
+v1.1: исправлен баг: перезагрузка уже включенного телефона
+English:When alarm clock triggers phone switches on and vibrates shortly.
+v1.1: bug fixed: reboot of switched on phone
+*/
+0ACC470: 9AF6BCEE7560 35F546E9,C046
+#pragma enable old_equal_ff
+0801700: 0FE0A0E124F09FE524009FE5B600D0E1
+0801710: 140050E3030000AA1200A0E30010A0E3
+0801720: 0FE0A0E10CF09FE50000A0E308F09FE5
+0801730: 0xA09671EC,0xA86CD2CE,0xA1163440,0xA0ACC477
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

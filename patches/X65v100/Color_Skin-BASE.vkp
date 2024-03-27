@@ -1,0 +1,84 @@
+;X65v100
+;Цветовая Схема
+;ColorSkin
+;(c) benj9
+;Version: 1-MP
+;PatchID: 1654
+;Details: https://patches.kibab.com/patches/details.php5?id=1654
+/*
+Настройки цвета (замена цветовым схемам :) )
+Данные записаны в виде RRGGBBTT. область значений RR, GG, BB: 0-0xFF, TT=прозрачность : 0-0x64
+English:
+overlay color settings. 
+data=RRGGBBTT. RR, GG, BB range: 0-0xFF, TT=transparency range: 0-0x64
+*/
+#pragma enable old_equal_ff
+0FDAE00: 436F6C6F72536B696E2C62656E6A3900
+0FDAE10: DDB5E5F785FC3F68013706D50948E5F7
+0FDAE20: EFFE02D00436311C00E0024901BC8000
+0FDAE30: 4018DCBD
+0FDAE40: E4D3C2B1CFCC00000000000000000000,"\
+{patch=ColorSkin ver=1 cp=benj9 id=CCCF}","\
+{04 h 001Mains ml=4 v=E0000064}","\
+{08 h 002MainBG ml=4 v=00000000}","\
+{12 h 003TitleTxt ml=4 v=0000C864}","\
+{16 h 004TitleBG ml=4 v=00000000}","\
+{20 h 005TitleMenuLevel ml=4 v=00000064}","\
+{24 h 006SoftkeyTxt ml=4 v=0000C864}","\
+{28 h 007SoftkeyBG ml=4 v=00000000}","\
+{32 h 008InactiveTxt ml=4 v=00FC0064}","\
+{36 h 009InactiveBG ml=4 v=E0E0C064}","\
+{40 h 010Txt1Desc ml=4 v=A0000064}","\
+{44 h 011Txt1Entry ml=4 v=00000064}","\
+{48 h 012Txt2Desc ml=4 v=20A0C064}","\
+{52 h 013Txt2Entry ml=4 v=00000064}","\
+{56 h 014Txt3Desc ml=4 v=E0A00064}","\
+{60 h 015Txt3Entry ml=4 v=00000064}","\
+{64 h 016SelectionTxt ml=4 v=E0000064}","\
+{68 h 017SelectionBG ml=4 v=3C3CFF00}","\
+{72 h 018SelectionDialog ml=4 v=0000C864}","\
+{76 h 019SelectionDialogShade ml=4 v=00005064}","\
+{80 h 020ListTxt ml=4 v=1014F864}","\
+{84 h 021ListBG ml=4 v=00000064}","\
+{88 h 022ListSeparator ml=4 v=00005064}","\
+{92 h 023ProviderTxt ml=4 v=0000F864}","\
+{96 h 024ProviderBG ml=4 v=0000A064}","\
+{100 h 025HilightedTxt ml=4 v=6064F864}","\
+{104 h 026HilightedBG ml=4 v=00006064}","\
+{108 h 027Cursor ml=4 v=0098F864}","\
+{112 h 028ScrollbarHandle ml=4 v=0098F864}","\
+{116 h 029Scrollbar ml=4 v=0000F864}","\
+{120 h 030PopupTxt ml=4 v=1014F864}","\
+{124 h 031PopupBG ml=4 v=00000064}","\
+{128 h 032PopupTitleTxt ml=4 v=00000064}","\
+{132 h 033PopupTitleBG ml=4 v=0000B864}","\
+{136 h 034PopupDialog ml=4 v=00000064}","\
+{140 h 035PopupDialogShade ml=4 v=00007064}","\
+{144 h 036PopupSelectionTxt ml=4 v=1000D764}","\
+{148 h 037PopupSelectionBG ml=4 v=0000E800}","\
+{152 h 038PopupSeparator ml=4 v=00000064}","\
+{156 h 039StatusbarBG ml=4 v=0000A064}","\
+{160 h 040StatusbarFill ml=4 v=1014F864}","\
+{164 h 041StatusbarFrame ml=4 v=00000064}","\
+{168 h 042PictogramFrame ml=4 v=00006064}","\
+{172 h 043PictogramFill ml=4 v=95000064}","\
+{176 h 044PictogramShade ml=4 v=0000FF64}","\
+{180 h 045PictogramBG ml=4 v=00000064}","\
+{184 h 046OrganizerNormalEventBG ml=4 v=00006064}","\
+{188 h 047OrganizerSpecialEventBG ml=4 v=95000064}","\
+{192 h 048OrganizerBirthdayBG ml=4 v=0000FF64}","\
+{196 h 049OrganizerBG ml=4 v=C8CCC800}","\
+{200 h 050OrganizerSeparator ml=4 v=F86C0064}","\
+{204 h 051OrganizerOverlappingBG ml=4 v=98CCF864}","\
+{208 h 052OrganizerWeekdayTxt ml=4 v=98CCF864}","\
+{212 h 053OrganizerCurrentDayTxt ml=4 v=F8FCF864}","\
+{216 h 054BrowserLink ml=4 v=6064F864}","\
+{220 h 055BrowserVisitedLink ml=4 v=3060F864}","\
+{224 h 056EditorPromptTxt ml=4 v=0000F864}","\
+{228 h 057EditorInputTxt ml=4 v=6098F864}","\
+{232 h 058IconMenuBG ml=4 v=00000000}","\
+{236 h 059unk1 ml=4 v=00000064}","\
+{240 h 060unk2 ml=4 v=00FC0064}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

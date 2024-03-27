@@ -1,0 +1,30 @@
+;M55v11
+;Вспышка светодиодов и звук при нажатии кнопок
+;Dynamic light flashes when key is pressed
+;(c) Matr!x
+;(r) SiNgle
+;(p) Spool
+;Version: 
+;PatchID: 5153
+;Details: https://patches.kibab.com/patches/details.php5?id=5153
+/*
+Необходимо поставить сигнал нажатия клавиш - "Щелчок"
+*/
+823F30: E048EA00A43F DA5570D2CC00
+#pragma enable old_equal_ff
+35D270: DA55B0D2E03CE6FD6400E00EDA9F7475
+35D280: E03CE00DE6FE0004DA9F7475E01CE02C
+35D290: E6FD6400E00EDA9F7475E02CE00DE6FE
+35D2A0: 0004FA9F7475E01C
+35D2B0: E6FC0400 ;#0004h = tone
+35D2B4: FAA2AA39
+#pragma disable old_equal_ff
+;35D2B2: 04 18  ;замена звука (любой из списка)
+;35D2B4: FA DA
+;#pragma enable old_equal_ff
+;35D2B8: E6FC1300FAA2AA39
+;#pragma disable old_equal_ff
+;35D270: DA55B0D2 CC00CC00 ;отключить звуковой сигнал
+;35D274: E03C DB00 ;отключить вспышку диодов
+;------------------------- end -------------------------
+

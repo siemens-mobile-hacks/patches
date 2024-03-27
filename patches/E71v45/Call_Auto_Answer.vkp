@@ -1,0 +1,24 @@
+;E71v45
+;Автоматический прием вызова
+;Call Auto answer
+;(c) ThE TrIFoN, SiNgle
+;(p) Miha_r
+;Version: 
+;PatchID: 10364
+;Details: https://patches.kibab.com/patches/details.php5?id=10364
+/*
+
+*/
+06FE78E: 96F66CEF 0BF16DFC 
+
+#pragma enable old_equal_ff 
+080A06C: FFB50B2803D10020034B984703E0FFBC 
+080A07C: 8BF5F4EA00BDFFBD3F649BA0 
+#pragma disable old_equal_ff 
+
+; 0810B72: 0B 0N ; N-группа автоматического приема вызова 00- Нет группы, 03-Семья, 04-Друзья и так далее по возрастающей 
+; По умолчанию в патче группа автоматического приема вызова - последняя группа
+; N means Auto answer Group, 00-No group, 03-Family, 04-Friends and so on
+; By default the Auto answer Group is the last group
+;------------------------- end -------------------------
+

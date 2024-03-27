@@ -1,0 +1,14 @@
+;CX70v56
+;Изменить сигнал таймера на более громкий и длинный
+;Timer signal louder and longer
+;(c) StrikerX
+;(p) Lost
+;Version: 
+;PatchID: 3230
+;Details: https://patches.kibab.com/patches/details.php5?id=3230
+/*
+Изменить сигнал таймера на более громкий и длинный.
+*/
+150F194: 7445 9C3D
+;------------------------- end -------------------------
+

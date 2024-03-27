@@ -1,0 +1,16 @@
+;X75v100
+;Большие цифровые часы на главном экране
+;Big digital clock on the main screen
+;(c) avkiev
+;Version: 11
+;PatchID: 4941
+;Details: https://patches.kibab.com/patches/details.php5?id=4941
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Big_digital_clock_on_the_ms.zip
+
+/*
+Обновление! Совместимость с загрузчиком эльфов 2.2
+Патч добавляет большие цифровые часы на главный экран
+*/
+;
+;------------------------- end -------------------------
+

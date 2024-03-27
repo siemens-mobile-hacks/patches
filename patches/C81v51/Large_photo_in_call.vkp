@@ -1,0 +1,30 @@
+;C81v51
+;Увеличение фото при звонке
+;Large photo in call
+;(c) SiNgle
+;(p) den11111
+;Version: 
+;PatchID: 7356
+;Details: https://patches.kibab.com/patches/details.php5?id=7356
+/*
+
+*/
+029DCEC: 33 57 ;photo size
+
+;042d14c: 08 00 ; disable name and phone incall x displacements
+0438D78: 08 00
+
+0438D80: 63 6d ;7a ; outcall_y_name
+0438D9C: 75 7a ;8a ; outcall_y_phonenum
+0438DD4: 1B 00 ; outcall_y_blankarea1
+;0438DB8: 87 00 ; ??? outcall_y_blankarea2 ; отключает показ времени разговора при исходящем звонке
+0438E22: 2d 16 ; incall_photo_y
+0438BD6: 2d 16 ; outcall_photo_y
+
+0438F8C: 63 6d ;7a ; incall_y_name
+0438FA8: 75 7a ;8A ; incall_y_phonenum
+0438F70: 1B 00 ; incall_y_blankarea1
+;0438FC4: 87 00 ; incall_y_blankarea2 ; отключает показ времени разговора при входящем звонке
+
+;------------------------- end -------------------------
+

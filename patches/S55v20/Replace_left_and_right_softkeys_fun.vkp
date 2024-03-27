@@ -1,0 +1,15 @@
+;S55v20
+;Обмен функций левой софт-клавиши при коротком/долгом нажатии
+;Replace left and right softkeys functions
+;(c) Skylord
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=4823
+;PatchID: 4782
+;Details: https://patches.kibab.com/patches/details.php5?id=4782
+/*
+Теперь при коротком нажатии на левую софт-клавишу сразу вызывается назначенная на нее функция и наоборот - при долгом нажатии появляется окошко конфигурации.
+*/
+3248A8: C64B 5C47
+324736: 2D1248D22D1046FD0C002D1EEA00A44E EA20C64B48D22D0E46FD0C002D1E0D03
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;X65v100
+;Edit
+;Edit
+;(c) cbn
+;Version: 0.74
+;PatchID: 6032
+;Details: https://patches.kibab.com/patches/details.php5?id=6032
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=edit_074.zip
+
+/*
+Edit читалка/редактор 
+Версия для SGOLD, NEWSGOLD, SGOLD3.
+*/
+Edit читалка/редактор elf
+Файлы должны целиком помещаться в памяти (до 1,7 мб)
+Минимум возможностей :)
+Распаковать в 0:\Zbin\edit
+
+В extension.cfg добавить строку типа:
+txt:0:\ZBin\edit\edit.elf
+
+Скачайте приложенный файл
+;------------------------- end -------------------------
+

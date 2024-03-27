@@ -1,0 +1,14 @@
+;E71v45
+;Убрать сообщение "Запись сохранена"/"Сохранено в: Мои файлы\Звуки" после записи Диктофоном/Запись звука
+;Disable message "Recording saved"/"Saved to: My stuff/Sounds" in Dictat.machine/Sound recorder
+;(c) Evgr
+;Version: 
+;PatchID: 10339
+;Details: https://patches.kibab.com/patches/details.php5?id=10339
+/*
+
+*/
+07AA77C: 01 00
+07AA780: 609006FB 0000A0E1
+;------------------------- end -------------------------
+

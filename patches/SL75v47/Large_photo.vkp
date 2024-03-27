@@ -1,0 +1,32 @@
+;SL75v47
+;Фото на весь экран
+;Large photo
+;(c) SiNgle
+;(r) Orastar
+;(p) ferro
+;Version: 
+;PatchID: 6103
+;Details: https://patches.kibab.com/patches/details.php5?id=6103
+/*
+В патче установлены, понравившиеся мне настройки. Настройки авторов - за коментариями
+*/
+029eb4c: 33 57 ;photo size
+
+04315b0: 08 00 ; disable name and phone incall x displacements
+04315cc: 08 00
+
+04313a8: 63 6d ;7a ; outcall_y_name
+04313c4: 75 7a ;8a ; outcall_y_phonenum
+04313fc: 1B 00 ; outcall_y_blankarea1
+04313e0: 87 00 ; outcall_y_blankarea2
+
+043144a: 2d 16 ; incall_photo_y
+04311fe: 2d 16 ; outcall_photo_y
+
+04315b4: 63 6d ;7a ; incall_y_name
+04315d0: 75 7a ;8A ; incall_y_phonenum
+0431598: 1B 00 ; incall_y_blankarea1
+04315ec: 87 00 ; incall_y_blankarea2
+
+;------------------------- end -------------------------
+

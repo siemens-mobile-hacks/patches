@@ -1,0 +1,16 @@
+;CX75v23
+;Автодозвон постоянно с заданной паузой
+;AutoRedial forever with selected pause
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1819
+;Details: https://patches.kibab.com/patches/details.php5?id=1819
+/*
+
+*/
+0558517: 30 20
+
+;------------------------- end -------------------------
+

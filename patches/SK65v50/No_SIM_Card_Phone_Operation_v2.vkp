@@ -1,0 +1,21 @@
+;SK65v50
+;Работа с Телефоном без Сим-Карты
+;No SIM Card Phone Operation
+;(c) SiNgle
+;(r) (i)1nvisible
+;Version: 2
+;PatchID: 4164
+;Details: https://patches.kibab.com/patches/details.php5?id=4164
+/*
+Нажмите на джойстик, чтобы начать начать работу.
+English:
+Press joystick to start working.
+*/
+02C3A34: 152870D1 1CF7E4FA
+#pragma enable old_equal_ff
+01E0000: FEB5152800D1FEBD292802D104480349
+01E0010: 8847281CFEBC06B0F0BDC046981397A0
+01E0020: 0020E3A8
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

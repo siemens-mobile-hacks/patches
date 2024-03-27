@@ -1,0 +1,30 @@
+;C75v22
+;Аська вместо встроенного WV-клиента
+;ICQ instead of Built-In WV Client
+;(c) Fuchs, T!ck
+;(r) SiNgle, avkiev, 1nvisible, Stitch, klaud
+;Version: 1.0
+;PatchID: 5433
+;Details: https://patches.kibab.com/patches/details.php5?id=5433
+/*
+
+
+*/
+;Редактирование сообщения   "Inst. Message" => "ICQ"
+
+123EE9: 0F75426468692719465B6868575D5B 0F75423C4A0B0B0B0B0B0B0B0B0B0B
+133658: 0F75426468692719465B6868575D5B 0F75423C4A0B0B0B0B0B0B0B0B0B0B
+14C1C8: 0F75426468692719465B6868575D5B 0F75423C4A0B0B0B0B0B0B0B0B0B0B
+
+0603F48: C5B552A0 0xA01FFBB2
++10
+#pragma enable old_equal_ff 
+
+01FFBA0: 0000A0E3FF7F2DE918008FE20030A0E3 
+01FFBB0: 0020A0E308409FE50FE0A0E114FF2FE1 
+01FFBC0: FFBFBDE80C3483A0 
+01FFBC8: "0:\\Java\\jam\\Applications\\jimm\\jimm.jar",0000 ;путь к мидлету, его можно поменять на любой другой. !Слэшей должно быть по два! 
++0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

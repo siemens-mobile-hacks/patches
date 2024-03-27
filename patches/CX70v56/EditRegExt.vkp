@@ -1,0 +1,28 @@
+;CX70v56
+;Редактирование регистрации расширений
+;Editing registration extensions
+;(c) PICAS
+;Version: 
+;PatchID: 9952
+;Details: https://patches.kibab.com/patches/details.php5?id=9952
+/*
+Отключение "понимания" телефоном различных расширений
+*/
+;8C4878: 806602EB c046c046 ; disable ALL reg ext 
+95E294: 2cbd0cfa c046c046 ; disable bmx reg ext 
+95E2D4: 1cbd0cfa c046c046 ; disable bmp reg ext 
+95E310: 0dbd0cfa c046c046 ; disable wbmp reg ext 
+95E34C: febc0cfa c046c046 ; disable jpg reg ext 
+95E38C: eebc0cfa c046c046 ; disable jpeg reg ext 
+95E3C8: dfbc0cfa c046c046 ; disable png reg ext 
+95E404: d0bc0cfa c046c046 ; disable gif reg ext 
+95E440: c1bc0cfa c046c046 ; disable svg reg ext 
+95E47C: b2bc0cfa c046c046 ; disable wav reg ext 
+95E4B8: a3bc0cfa c046c046 ; disable amr reg ext 
+95E4F4: 94bc0cfa c046c046 ; disable mid reg ext 
+95E530: 85bc0cfa c046c046 ; disable srt reg ext 
+95E56C: 76bc0cfa c046c046 ; disable imy reg ext 
+95E5A8: 67bc0cfa c046c046 ; disable 3gp reg ext 
+95E5E4: 58bc0cfa c046c046 ; disable mp4 reg ext
+;------------------------- end -------------------------
+

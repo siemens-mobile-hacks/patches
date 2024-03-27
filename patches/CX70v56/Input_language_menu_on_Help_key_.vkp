@@ -1,0 +1,23 @@
+;CX70v56
+;Меню выбора языка ввода при нажатии Help (Инф. Т9)
+;Input language menu on Help key (Т9 info)
+;(c) SiNgle
+;(r) (I) KiRiK
+;(p) Lost
+;Version: 2
+;PatchID: 2384
+;Details: https://patches.kibab.com/patches/details.php5?id=2384
+/*
+Меню выбора языка ввода при нажатии Help(Инф. Т9).
+*/
+09FF726: 784900227848 1BF70FFE80BD ; MMS
+0A700D6: FFF777FF ABF637F9 ; E-mail
+0AF2DE6: 7DF7EFF8 28F6AFFA ; SMS
+0ACBBC4: C6F197FC 4FF6C0FB ; Notes (заметки)
+; Изменить левую софт-клавишу Справка->Язык
+0A60588: 75 46 ; MMS
+0B61BF0: 75 46 ; SMS
+0B57FCC: 75 46 ; E-mail
+0B5EBB4: 75 46 ; Notes (заметки)
+;------------------------- end -------------------------
+

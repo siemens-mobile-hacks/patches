@@ -1,0 +1,16 @@
+;X75v100
+;Громкость в медиа-плеере цифрами
+;Loudness in media-player in figures
+;(c) Ushastiy™
+;Version: 1
+;PatchID: 4268
+;Details: https://patches.kibab.com/patches/details.php5?id=4268
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Loudness_in_media-player_in_figures.zip
+
+/*
+Патч в GPF, так что качаем прикрепленный архив.
+*/
+Патч в GPF, так что качаем прикрепленный архив по ссылке
+http://patches.kibab.com/cnt.php5?d=s75v40&f=Loudness_in_media-player_in_figures.zip
+;------------------------- end -------------------------
+

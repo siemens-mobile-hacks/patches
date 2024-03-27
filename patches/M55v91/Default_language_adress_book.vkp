@@ -1,0 +1,22 @@
+;M55v91
+;Смена языка на русский при входе в адресную книгу
+;Default Language at entry to Standard Book
+;(c) Matr!x
+;(p) ZH-Soft
+;Version: 
+;PatchID: 1848
+;Details: https://patches.kibab.com/patches/details.php5?id=1848
+/*
+
+*/
+; Место вставки
+; patched point
+004AB266: 26F04600 DA5560B1
+
+; Код патча
+; patch code
+0035B160: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 26F04600E6FC1100FA86C8FB444C4142
+;0035B166: 11 00 ; russian -> english
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,22 @@
+;SL45iv56
+;VIP-мелодия для известных номеров
+;VIP-melody for known numbers
+;(c) abomin
+;Version: 
+;PatchID: 3877
+;Details: https://patches.kibab.com/patches/details.php5?id=3877
+/*
+Если звонит номер из адресной или с СИМ, то играет мелодия VIP.
+
+English:
+If a number from an addressbook or SIM location is calling, then VIP-melody is ringing.
+
+Release: 26.06.06
+*/
+30F72: F0D8 E01D
+; Change the strings "VIP" to "Addressbook" in Audio-menu:
+; Изменить название пунктов "VIP" на "Адресная книга" в меню Аудио:
+1A0F28: CB02CC02 14001600
+1A1128: CB02CC02 14001600
+;------------------------- end -------------------------
+

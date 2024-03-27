@@ -1,0 +1,13 @@
+;M75v25
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 4116
+;Details: https://patches.kibab.com/patches/details.php5?id=4116
+/*
+
+*/
+089AF7C: 02 01
+;------------------------- end -------------------------
+

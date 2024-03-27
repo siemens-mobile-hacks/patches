@@ -1,0 +1,14 @@
+;M55v10
+;Камера без SIM-карты
+;Camera without SIM
+;(c) marcoaq
+;Version: 
+;PatchID: 1479
+;Details: https://patches.kibab.com/patches/details.php5?id=1479
+/*
+
+*/
+368900: 020DAF01 94088C08
+36896E: 60A7 2C96
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;SL75v31
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(r) Cypok
+;Version: 
+;PatchID: 4261
+;Details: https://patches.kibab.com/patches/details.php5?id=4261
+/*
+
+*/
+090261A: 011C 2021
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;M65v58
+;Включение Инженерного меню
+;Enable Developer Menu
+;(c) Phantom
+;Version: 
+;PatchID: 937
+;Details: https://patches.kibab.com/patches/details.php5?id=937
+/*
+Необходимо выключить пункт (S)Exit.
+Dev. Menu нужно повесить на горячую кнопку.
+Или поставить его как пункт в MyMenu.
+
+EN:
+It's nessasary to turm off (S)Exit.
+Dev. Menu should be set on hotkey or MyMenu.
+
+
+*/
+1234784: 040090E5 0000A0E3
+;------------------------- end -------------------------
+

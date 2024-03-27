@@ -1,0 +1,13 @@
+;C55v24
+;Включение телефона при подключении зарядки
+;Start of telephone with the connection of the charging
+;(c) Ramil_
+;Version: 
+;PatchID: 4232
+;Details: https://patches.kibab.com/patches/details.php5?id=4232
+/*
+
+*/
+5279AF: 9548C2 92C4E3
+;------------------------- end -------------------------
+

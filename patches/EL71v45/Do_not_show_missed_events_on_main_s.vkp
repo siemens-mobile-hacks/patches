@@ -1,0 +1,15 @@
+;EL71v45
+;Не показывать пропущенные события на главном экране
+;Do not show missed events on main screen
+;(c) Miha_r
+;Version: 
+;PatchID: 8007
+;Details: https://patches.kibab.com/patches/details.php5?id=8007
+/*
+
+*/
+05C35E0: FFF79CFC C046C046 ;Other events
+05C364C: FFF766FC C046C046 ;Sms
+05C36E6: FFF719FC C046C046 ;Calls
+;------------------------- end -------------------------
+

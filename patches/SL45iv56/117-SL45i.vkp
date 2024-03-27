@@ -1,0 +1,43 @@
+;SL45iv56
+;MSM. Больше ярлыков для доступа к мидлетам
+;MSM. More Shortcut for Midlet Access
+;(c) RizaPN
+;Version: 2
+;PatchID: 1711
+;Details: https://patches.kibab.com/patches/details.php5?id=1711
+/*
+Доступ к мидлетам используя 2 клавиши от 0 до 9, *,+, и #, а затем 
+стрелка вправо на джойстике. 
+
+JAD файл мидлета должен находиться в директории a:\java\s 
+где имя файла - название кнопки (например: a:\java\s\0.jad будет
+вызываться по нажатию кнопки 0). 
+
+Для кнопки * имя файла должно быть x.jad 
+
+Не нужно копировать мидлет целиком (JAD и JAR), копируйте только 
+JAD файл. Не забудьте внутри файла указать полный путь к мидлету. 
+
+
+Release: March 23, 2003 
+Update: December 26, 2003 (v2)
+
+Патч №117 с http://patch.oslik.ru/SL45_RU
+*/
+3AD9D0: 46F429003D1FE600 48413D04DAC720D4 
+3AD9D8: 3600CC00F2FC0000 0D15CC00E6003600 
+3AD9E4: DAF1EC1046F42900 F2FC0000DAF1EC10 
+3AD9EC: 3D 0D 
+
+27D420: FFFFFFFFFFFFFFFF E6F110008810E6FC 
+27D428: FFFFFFFFFFFFFFFF 4038E6FD1100E6FE 
+27D430: FFFFFFFFFFFFFFFF 5E14E6FF1F03DAC7 
+27D438: FFFFFFFFFFFFFFFF 9E850802D7403600 
+27D440: FFFFFFFFFFFFFFFF C2F10A00E6FD1100 
+27D448: FFFFFFFFFFFFFFFF 46F12A002D03DC4D 
+27D450: FFFFFFFFFFFFFFFF F7F24A38E6FC4038 
+27D458: FFFFFFFFFFFFFFFF E01EFAC8DE0B613A 
+27D460: FFFFFFFFFFFFFFFF 2F6A6176612F732F 
+27D468: FFFFFFFFFFFFFFFF 782E6A616400FFFF 
+;------------------------- end -------------------------
+

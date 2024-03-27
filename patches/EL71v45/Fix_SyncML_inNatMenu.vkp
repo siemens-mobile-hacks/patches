@@ -1,0 +1,15 @@
+;EL71v45
+;Активировать "Синхронизация" в нативном меню
+;Activate the "SyncML" in the native menu
+;(c) Feyman
+;Version: 
+;PatchID: 9828
+;Details: https://patches.kibab.com/patches/details.php5?id=9828
+/*
+В связи с тем, что SyncML оказывается очень удобная штука и прекрасно работает, починил её в нативном меню
+*/
+08053A8: A7 A3
+0805FAC: A3 A7
+0AB7FA2: 00207047 0F20ECE7
+;------------------------- end -------------------------
+

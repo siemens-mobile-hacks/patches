@@ -1,0 +1,15 @@
+;M65v50
+;Красивый вид. Убрать иконки с главного экрана
+;Bellevue. Disable icons on mainscreen
+;(c) benj9
+;(r) (i) KreN
+;(p) Mifodiy
+;Version: 2.1-MP
+;PatchID: 2730
+;Details: https://patches.kibab.com/patches/details.php5?id=2730
+/*
+
+*/
+16503CC: D55014A1 0xA0FC3901
+;------------------------- end -------------------------
+

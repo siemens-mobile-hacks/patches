@@ -1,0 +1,18 @@
+;CX75v23
+;Отключение некоторых сообщений
+;Disable some messages
+;(c) Не сказано
+;(p) Smelter
+;Version: 
+;PatchID: 1800
+;Details: https://patches.kibab.com/patches/details.php5?id=1800
+/*
+
+*/
+058DB56: 98F0 80BD ; GPRS вкл\выкл (GPRS on\off)
+0352FD8: 80C011FA 0100A0E3 ; "Подождите" в эксплорере ("Please wait" in Card-Explorer)
+0520F1E: 01 00 ; "Копировать SIM" при смене SIM ("Copy SIM" at SIM change)
+
+
+;------------------------- end -------------------------
+

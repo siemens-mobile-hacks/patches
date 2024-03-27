@@ -1,0 +1,14 @@
+;M75v12
+;Открыть заблокированные блоки EEPROM
+;Open closed EEPROM blocks
+;(c) Skylord
+;Version: 
+;PatchID: 574
+;Details: https://patches.kibab.com/patches/details.php5?id=574
+/*
+Становятся доступны 6 скрытых блока
+
+*/
+08CC4AC: 00 01
+;------------------------- end -------------------------
+

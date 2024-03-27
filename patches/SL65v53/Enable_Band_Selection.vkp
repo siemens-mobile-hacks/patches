@@ -1,0 +1,13 @@
+;SL65v53
+;Включить выбор диапазона
+;Enable Band Selection
+;(c) Bennie
+;Version: 
+;PatchID: 5269
+;Details: https://patches.kibab.com/patches/details.php5?id=5269
+/*
+
+*/
+16669E4: 0502 FA01
+;------------------------- end -------------------------
+

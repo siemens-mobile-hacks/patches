@@ -1,0 +1,13 @@
+;AX75v16
+;Enable DevMenu
+;EnableDevMenu
+;(c) avkiev
+;Version: 
+;PatchID: 4331
+;Details: https://patches.kibab.com/patches/details.php5?id=4331
+/*
+
+*/
+67B97E: 2D 0D 
+;------------------------- end -------------------------
+

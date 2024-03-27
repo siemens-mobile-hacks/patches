@@ -1,0 +1,14 @@
+;S75v52
+;Отключить разблокировку клавиатуры при отправке SMS
+;Disable KbdUnlock if Sending SMS
+;(c) BingK(binghelingxi)
+;(p) Виктор89
+;Version: 
+;PatchID: 8978
+;Details: https://patches.kibab.com/patches/details.php5?id=8978
+/*
+
+*/
+0D8EFEC: 3DF258EB C046C046
+;------------------------- end -------------------------
+

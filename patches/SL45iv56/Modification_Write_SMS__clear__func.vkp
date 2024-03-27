@@ -1,0 +1,19 @@
+;SL45iv56
+;Изменить функцию создания SMS "стереть"
+;Modification Write SMS "clear" function
+;(c) greenteas
+;Version: 
+;PatchID: 3129
+;Details: https://patches.kibab.com/patches/details.php5?id=3129
+/*
+English: Modification longpress left softkey all Clear the TEXT became Consecution clear Single of TEXT in write SMS 
+Seem Calculator "<C" function
+
+Release: April 22th, 2006
+*/
+0x18CF7A: 0C 0B
+
+;0x18CF76: F601 ;"Options" string
+;0x18CF7C: 8101 ;"clear" string
+;------------------------- end -------------------------
+

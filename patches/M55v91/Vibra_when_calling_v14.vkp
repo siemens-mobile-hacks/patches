@@ -1,0 +1,22 @@
+;M55v91
+;Вибросигнал в момент соединения
+;Vibra when calling
+;(c) Matr!x
+;(p) Spool
+;Version: 1.4
+;PatchID: 2014
+;Details: https://patches.kibab.com/patches/details.php5?id=2014
+/*
+
+*/
+01B6DE: DAA2CE41 CC00CC00
+01F1B0: DA2116F7 DA5522DB
+35DB00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400D00F2FF202348F02D01DB00E01F
+35DB10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400D00F6FF2023E6FC2F00FAA2CE41
+35DB22: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E00CD7400D00F6FC2023E6FC2F00FAA2
+35DB32: FFFF AA39
+768E7E: F2FD02FE DA5500DB
+;35DB23: 0C 1C ;звук вместо вибры
+;35DB2E: 2F 01 ;замена звука (любой из списка)
+;------------------------- end -------------------------
+

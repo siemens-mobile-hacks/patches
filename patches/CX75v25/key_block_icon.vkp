@@ -1,0 +1,44 @@
+;CX75v25
+;замена картинки блокировки клавиатуры
+;Replacement of a picture of blocking of the keyboard
+;(c) Lolo
+;Version: 
+;PatchID: 4464
+;Details: https://patches.kibab.com/patches/details.php5?id=4464
+/*
+замена картинки блокировки клавиатуры
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 28.07.2006  -  Time: 10:19:05                             ###
+; ### Patch for: SIEMENS CX75 v25                                     ###
+; #######################################################################
+
+
+; ##### Picture 785 #####
+010C18AC: 0E0E8500885917A1 0E0E8500E7ABFBA0
+
+00FBABE7: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFC00CFFFFC002FF040E02FFFE294902
+00FBABF7: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 4D03FFFF0E04DFF9FF29BBDBDFFF4D02
+00FBAC07: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFFF0E02DBFCBBC0FF2902BBFDDBFF4D
+00FBAC17: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02FFFA0EDBBBC096FF0229FDBBDB2903
+00FBAC27: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFFB0DBBC0969203FFF729BB29FFC0FF
+00FBAC37: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0DC0960292FF0D02FFF929BB29FFC0FF
+00FBAC47: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0D02BF029BFD09FF2902BBFC29FFC0FF
+00FBAC57: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 020DFA9B099B09FF2902BBF829FFC0FF
+00FBAC67: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 099B097B020902FFFA29BB29FFC0FF02
+00FBAC77: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 09FA7B097B09FF2902BBF829FFC0FF09
+00FBAC87: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 7B095B020902FFFB29BB29FFC002FF04
+00FBAC97: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0904FF0229FFFF02C006FF02C004FFFF
+00FBACA7: FF C0
+
+
+
+;------------------------- end -------------------------
+

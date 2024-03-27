@@ -1,0 +1,23 @@
+;C75v22
+;Отключить сообщения
+;Otkl sobsheniya
+;(c) SiNgle
+;Version: 
+;PatchID: 3616
+;Details: https://patches.kibab.com/patches/details.php5?id=3616
+/*
+;c75 SW22
+;* Отключить сообщения *
+
+*/
+02D0FC6: 0021 10BD ; All ringtones on
+02D0FE2: 0021 10BD ; All ringtones off
+02D1032: 0021 10BD ; Keypad locked
+03290D2: 63F1 80BD ; Vibra alert on/off
+0329166: 63F1 80BD ; IrDA on/off
+0329196: 63F1 80BD ; GPRS on/off
+0345274: C5D801EB 0100A0E3 ; "Saved to:" after you take a foto
+03499EC: 29B910FA 0100A0E3 ; "Please wait" in Card-Explorer
+04F0C32: 01 00 ; "Copy SIM" at SIM change
+;------------------------- end -------------------------
+

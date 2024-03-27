@@ -1,0 +1,22 @@
+;EL71v45
+;Изменить позицию номера при наборе
+;Dial-up coordinate changes
+;(c) cwx88cwx
+;Version: 
+;PatchID: 9529
+;Details: https://patches.kibab.com/patches/details.php5?id=9529
+/*
+
+*/
+; x coordinate 
+08527B4: 0E 05 
+08527BC: 0E 05 
+08527C4: 0E 05 
+08527CC: 0E 05 
+; y coordinates 
+08527B6: 96 1E 
+08527BE: 7F 1E 
+08527C6: 68 1E 
+08527CE: 51 1E
+;------------------------- end -------------------------
+

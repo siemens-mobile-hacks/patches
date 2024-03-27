@@ -1,0 +1,14 @@
+;E71v45
+;Ускорить загрузку overlay info при старте телефона
+;Speed up overlay info load on startup
+;(c) FIL
+;Version: 
+;PatchID: 10729
+;Details: https://patches.kibab.com/patches/details.php5?id=10729
+/*
+Ускоряет загрузку overlay info при старте телефона.
+*/
+066B3D4: 9448 A020
+
+;------------------------- end -------------------------
+

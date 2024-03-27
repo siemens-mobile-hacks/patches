@@ -1,0 +1,48 @@
+;S75v47
+;Автоматически заполнять поле "Номер" при сохранении нового номера в адресную книгу
+;Auto fill item "Number" when saving new number to addressbook 
+;(c) Evgr
+;Version: 
+;PatchID: 10528
+;Details: https://patches.kibab.com/patches/details.php5?id=10528
+/*
+RU: 
+при сохранении с созданием Новой записи вставляется в поле, заданное в патче
+при сохранении в существующую запись вставляется в первое свободное поле для номера
+EN: 
+when saving to New entry, number is put in configured field
+when saving to existing entry, number is put in first unoccupied field for phone number
+
+*/
+/*
+RU: 
+при сохранении с созданием Новой записи вставляется в поле, заданное в патче
+при сохранении в существующую запись вставляется в первое свободное поле для номера
+EN: 
+when saving to New entry, number is put in configured field
+when saving to existing entry, number is put in first unoccupied field for phone number
+*/
+
+06210F8: 0010D0E5 C87836FA
+06210EC: 0850A001 D97836EB
+062296C: 0800A0E1 C97236FA
+
+#pragma enable old_equal_ff
+13BF420: 017802B5062904D1622C02D1406800F0
+13BF430: 01F802BD10B5041CC7DFD302002809D0
+13BF440: 0021201CC7DFB502011C0022201CC7DF
+13BF450: B602051C10BDC0460850A00100402DE9
+13BF460: B0009AE5000000FA0080BDE800B54068
+13BF470: 0C4F397800290DD1622C05D0632C03D0
+13BF480: 642C01D0652C05D1FFF7D4FF002D01D0
+13BF490: 0120387000BDC04600B5002001490870
+13BF4A0: 404600BD,0xA8A7F04E              ; 0xA8A7F04E freeRAM  1 byte
+#pragma disable old_equal_ff
+
+13BF428: 62 62 ; 0x62 Телефон личный
+               ; 0x63 Телефон рабочий
+               ; 0x64 Мобильный личный
+               ; 0x65 Мобильный рабочий
+
+;------------------------- end -------------------------
+

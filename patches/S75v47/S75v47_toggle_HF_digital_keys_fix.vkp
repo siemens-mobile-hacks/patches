@@ -1,0 +1,21 @@
+;S75v47
+;Переключать громкую связь во время разговора по долгому нажатию цифровых клавиш 1-9
+;Toggle handsfree during call by long press 1-9 digital keys
+;(c) Evgr
+;Version: 
+;PatchID: 10011
+;Details: https://patches.kibab.com/patches/details.php5?id=10011
+/*
+
+*/
+02F6034: 80680006000E3028 00488047,0xA1470681
+
+#pragma enable old_equal_ff
+1470680: 00B5686880680006000E302802D120BC
+1470690: 06352847074DA847012802D020BC8E35
+14706A0: 2847054800780128F8DD044DA8470224
+14706B0: F4E7C046,0xA0958205,0xA8E2B508,0xA0340D51
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

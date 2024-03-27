@@ -1,0 +1,13 @@
+;C65v56
+;Открыть заблокированные блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;Version: 
+;PatchID: 3845
+;Details: https://patches.kibab.com/patches/details.php5?id=3845
+/*
+
+*/
+1178764: 00 01
+;------------------------- end -------------------------
+

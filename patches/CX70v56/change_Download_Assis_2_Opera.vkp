@@ -1,0 +1,25 @@
+;CX70v56
+;Замена Download assistant na Opera Mini
+;Change  Download Assistent to Opera Mini
+;(c) Jhellico
+;(p) ***SpY***
+;Version: 
+;PatchID: 1109
+;Details: https://patches.kibab.com/patches/details.php5?id=1109
+/*
+Меню-3-3 и ярлык "ELSE_DOWN_ASSIS" будут вызывать OperaMini.
+Мидлет должен располагаться в 0:\Java\jam\Applications\OperaMini.
+Можете изменить строку $1246 на OperaMini.
+
+English:
+Menu-3-3 and shortcut ELSE_DOWN_ASSIS will call OperaMini
+!Midlet must locate in folder "0:\Java\jam\Applications\OperaMini\"
+You can also change langpack string $1246 to "OperaMini" (will show in menu)
+*/
+08F0445: 446F776E6C6F61642041 "OperaMini",00
+08FB84D: 446F776E6C6F61642041 "OperaMini",00
+0B8BEA1: 446F776E6C6F61642041 "OperaMini",00
+17588C: 0CAE586057551974BA5D835D 0CE2599678389E5267676767
+
+;------------------------- end -------------------------
+

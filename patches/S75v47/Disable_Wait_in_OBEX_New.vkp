@@ -1,0 +1,14 @@
+;S75v47
+;Отключить "Подождите" при OBEX-подключении
+;Disable "Wait" in OBEX
+;(c) DJ,dimonp25
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9156
+;PatchID: 8498
+;Details: https://patches.kibab.com/patches/details.php5?id=8498
+/*
+
+*/
+0976FD2:F8B5 7047
+;------------------------- end -------------------------
+

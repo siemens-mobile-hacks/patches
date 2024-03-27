@@ -1,0 +1,44 @@
+;CF75v22
+;Графический индикатор температуры аккумулятора
+;Accu Temperature As Graphic Indicator
+;(c) benj9
+;(r) ACiDmrp, avkiev, BuG
+;Version: 2.25
+;PatchID: 4245
+;Details: https://patches.kibab.com/patches/details.php5?id=4245
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cf75v22&f=Accu_Temperature_As_Graphic_Indicat.rar
+
+/*
+(!) MP (+ Library functions f006, f033, f034, f036, f037, f066, v11)
+(!) GraphPatchManager v3
+*/
++F00000
+#pragma enable old_equal_ff
+6400: 00B52848FAF7FCFB47D0FAF745F93868
+6410: 002842D0F9F7FCFE3FD101200321F9F7
+6420: 07FE0A210902AA31401A112571574018
+6430: 00D54042C021357C002D03D0C0311B23
+6440: 052501E01C230425F778C01B01D5B468
+6450: 09E0884201DBF46805E0C117D9404018
+6460: 71682841441882B0201CF9F74DFEB178
+6470: 091801200190091A0091201CF9F748FE
+6480: 71784318013BB2780498F9F74DFE02B0
+6490: B1787078221CF9F743FE00BD
+
+64A0: 0xB1C2D3E4,0x0100CCCD,0xA0F06401,00000000,"\
+{patch=AccuTempIndicator ver=2.25 cp=benj9 id=0100CCCD}","\
+{sm `Icon/Canvas Setup`}","\
+{1 xy `icon pos` x=102 y=14}","\
+{4 i `1st icon pit` v=737}","\
+{8 i `underrun icon pit` v=750}","\
+{12 i `overflow icon pit` v=749}","\
+{endsm}","\
+{sm `Thermometer Setup`}","\
+{3 b `1st icon temperature (0..25.5°C x 10)` v=150}","\
+{16 o `range cold to hot` `19.2°C`=0 `38.4°C`=1}","\
+{17 b `temperature calibration (-3..3°C x 10)` r=-30..30}","\
+{endsm}",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

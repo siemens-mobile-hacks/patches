@@ -1,0 +1,14 @@
+;S68v47
+;Плавное включение подсветки
+;Smooth keypad light
+;(c) SiNgle
+;(p) klaud
+;Version: 
+;PatchID: 6577
+;Details: https://patches.kibab.com/patches/details.php5?id=6577
+/*
+
+*/
+07E7AF4: 0022 FF22
+;------------------------- end -------------------------
+

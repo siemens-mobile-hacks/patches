@@ -1,0 +1,13 @@
+;S75v40
+;Диспатчер заставки и главного экрана
+;Screensaver&Mainscreen dispatcher
+;(c) avkiev
+;Version: 
+;PatchID: 4003
+;Details: https://patches.kibab.com/patches/details.php5?id=4003
+/*
+
+*/
+034546A: 26229D44090169446844 C046,004A9047,0xA0063F01   ; S75v40
+;------------------------- end -------------------------
+

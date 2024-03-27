@@ -1,0 +1,22 @@
+;S75v42
+;Диспатчер главного экрана
+;Mainscreen-dispatcher
+;(c) avkiev
+;(r)  KreN
+;(p) ferro
+;Version: 2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=4938
+;PatchID: 5101
+;Details: https://patches.kibab.com/patches/details.php5?id=5101
+/*
+Мне кажется- этот диспатчер лучше, т.к. цифры на экране обновляются чаще!!!
+*/
+;(!) Master
+
+
+0416704: 0xA029bbcd 0xA0063E01   ; /S75v42
+0063E10: 0xFFFFFFFF 0xA029bbcd   ; \S75v42 
+
+
+;------------------------- end -------------------------
+

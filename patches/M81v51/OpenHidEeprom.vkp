@@ -1,0 +1,13 @@
+;M81v51
+;Открыть заблокированные блоки EEPROM
+;OpenHiddenEEPROM (OpenClosedEEPROM)
+;(c) Skylord
+;Version: 
+;PatchID: 6218
+;Details: https://patches.kibab.com/patches/details.php5?id=6218
+/*
+
+*/
+262098: 00 01
+;------------------------- end -------------------------
+

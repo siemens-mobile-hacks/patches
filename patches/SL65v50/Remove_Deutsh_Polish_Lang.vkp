@@ -1,0 +1,16 @@
+;SL65v50
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;(p) AsteriX
+;Version: 
+;PatchID: 176
+;Details: https://patches.kibab.com/patches/details.php5?id=176
+/*
+
+*/
+;* Убрать Немецкий и Польский из меню языков ввода ** Remove Deutsch and Polish from input languages menu * © AlexSid, § AsteriX
+1201CEE: 00 01
+1201D1E: 00 01
+;------------------------- end -------------------------
+

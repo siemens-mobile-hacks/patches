@@ -1,0 +1,16 @@
+;M81v51
+;Удалить дату и время с главного экрана
+;Disable Date and Time on Mainscreen
+;(c) benj9
+;(p) RaiF-03
+;Version: 
+;PatchID: 9495
+;Details: https://patches.kibab.com/patches/details.php5?id=9495
+/*
+
+*/
+29D22E: FFF7CCFF C046C046
+29D248: FFF7E2FF C046C046
+
+;------------------------- end -------------------------
+

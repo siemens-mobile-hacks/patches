@@ -1,0 +1,16 @@
+;X75v100
+;Обработчик блокировки клавиатуры
+;Keylock handler
+;(c) avkiev
+;(p) ~Jhellico
+;Version: 
+;PatchID: 4953
+;Details: https://patches.kibab.com/patches/details.php5?id=4953
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Keylock_handler.zip
+
+/*
+
+*/
+Качаем приложенный файл
+;------------------------- end -------------------------
+

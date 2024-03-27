@@ -1,0 +1,16 @@
+;C81v51
+;Не показывать имя оператора и поиск сети в заставке
+;Do not show provider name and network search in ScreenSaver
+;(c)  Evgr
+;(p) dimonp25
+;Version: 
+;PatchID: 8729
+;Details: https://patches.kibab.com/patches/details.php5?id=8729
+/*
+
+*/
+034fc00: 40F052FA C046C046
+034fb2c: 03D0 C046
+
+;------------------------- end -------------------------
+

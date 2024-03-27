@@ -1,0 +1,13 @@
+;C65v56
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) Bennie
+;Version: 
+;PatchID: 3759
+;Details: https://patches.kibab.com/patches/details.php5?id=3759
+/*
+
+*/
+16E9CE7: D1 E0
+;------------------------- end -------------------------
+

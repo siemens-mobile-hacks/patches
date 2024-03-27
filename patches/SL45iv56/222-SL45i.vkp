@@ -1,0 +1,54 @@
+;SL45iv56
+;День недели и месяц по-русски. Вариант 2
+;Day of week and mounth in Russian. Variant 2
+;(c) abomin
+;Version: 
+;PatchID: 1919
+;Details: https://patches.kibab.com/patches/details.php5?id=1919
+/*
+Дата на главном экране в виде "Вторник, 28 Сент." 
+Названия дней недели и месяцев, а также разделители (пробелы и т.п.) 
+теперь задаются в лэнгпаке. 
+
+Release: 28 Сентября 2004
+
+Патч №222 с http://patch.oslik.ru/SL45_RU
+*/
+3B0082: DAA4A2B9 DAE0E0C8 
+
+40C8E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8890888088708860F09FF08E88C088D0 
+40C8F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAA410B306F4F608F0C4F0D8F0E9DAE6 
+40C900: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 7E53F0C8EC00F6F900FEDA014C02FC00 
+40C910: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 28C1F08C98D098C0DC4DA8ECE7F23000 
+40C920: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DC49B92888C088D0F0ECDC4DD4CE0400 
+40C930: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F0D8F0E9E02FDAC7368498D098C00882 
+40C940: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F0ECDC4DD44E0200284106F4FD0888C0 
+40C950: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88D0F0C4F0D8F0E9DAE67E5398D098C0 
+40C960: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 9860987098809890DB00FFFFFFFFFFFF 
+
+;/* 
+;В лэнгпаке: 
+;1. в начале прописать MaxMsgId 2312 
+;2. в конце добавить строчки (правьте, как хотите): 
+;
+;String $8F6, "<9B>Понед<95>. " 
+;String $8F7, "<9B>Вторник<95> " 
+;String $8F8, "<9B>Среда<95> " 
+;String $8F9, "<9B>Четверг<95> " 
+;String $8FA, "<9B>Пятница<95> " 
+;String $8FB, "<9B>Суббота<95> " 
+;String $8FC, "<9B>Воскр<95>. " 
+;String $8FD, "<95> <9B>Января" 
+;String $8FE, "<95> <9B>Февр<95>." 
+;String $8FF, "<95> <9B>Марта" 
+;String $900, "<95> <9B>Апреля" 
+;String $901, "<95> <9B>Мая" 
+;String $902, "<95> <9B>Июня" 
+;String $903, "<95> <9B>Июля" 
+;String $904, "<95> <9B>Авг<95>." 
+;String $905, "<95> <9B>Сент<95>." 
+;String $906, "<95> <9B>Октяб<95>." 
+;String $907, "<95> <9B>Ноября" 
+;String $908, "<95> <9B>Декаб<95>." 
+;------------------------- end -------------------------
+

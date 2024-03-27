@@ -1,0 +1,14 @@
+;M55v91
+;Изменение звука при съемке камерой
+;Change Camera sound
+;(c) avkiev
+;(p) AlexSid
+;Version: 
+;PatchID: 2140
+;Details: https://patches.kibab.com/patches/details.php5?id=2140
+/*
+
+*/
+0F6014: 25 3E ;или любой звук из списока звуков в Smelter
+;------------------------- end -------------------------
+

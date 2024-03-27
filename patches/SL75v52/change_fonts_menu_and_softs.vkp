@@ -1,0 +1,16 @@
+;SL75v52
+;Измененить отображение иконки GPRS в яве
+;Change GPRS icon in java
+;(c) BingK(binghelingxi), Evgr
+;(p) dimonp25
+;Version: 
+;PatchID: 9781
+;Details: https://patches.kibab.com/patches/details.php5?id=9781
+/*
+
+*/
+0ac33a8: fa0afdfb 0000A0E1 ;отключает окантовку иконки, сама иконка остается
+0ac33c0: 890cfdFB 0000A0E1 ;отключает иконку совсем (без первой строки выводится только окантовка)
+
+;------------------------- end -------------------------
+

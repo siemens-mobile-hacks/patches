@@ -1,0 +1,19 @@
+;CX70v56
+;Разблокировать клавиатуру только по конфигу эльфа DPU
+;Unlock keyboard only by DPU.elf settings
+;(c) Evgr
+;(r) (i) windes
+;(p) Diman3452
+;Version: 
+;PatchID: 8717
+;Details: https://patches.kibab.com/patches/details.php5?id=8717
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx70v56&f=Unlock_keyboard_only_by_elf_DPU.zip
+
+/*
+По длинному нажатию решетки клава не разблокируется
+*/
+17226E1: D1 E0 ; после 112 (или 911) и длинного нажатия решетки клава не разблокируется 
+1722775: D1 E0 ; по 1 (или 9) и длинному нажатию решетки клава не разблокируется 
+1722877: D1 E0
+;------------------------- end -------------------------
+

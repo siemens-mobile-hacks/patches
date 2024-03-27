@@ -1,0 +1,15 @@
+;CX75v5
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found"
+;(c) avkiev
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 464
+;Details: https://patches.kibab.com/patches/details.php5?id=464
+/*
+Отключить звук при нахождении сети.
+*/
+04CD5A4: 5C03 FFFF
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;S75v47
+;Не лочить клаву при MP3
+;Don't lock keyboard while playing MP3
+;(c) ThE TrIFoN
+;(r) (i) RainMaker AKA Shadow®
+;(p) -=(Kad)=-
+;Version: 2-MP
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7768
+;PatchID: 5744
+;Details: https://patches.kibab.com/patches/details.php5?id=5744
+/*
+Теперь патч можно включать/отключать через Мастер-мидлет
+Баг - решеткой при мп3 тоже не лочится
+
+Now this patch can be turned on/off in Master-midlet
+Small bug: it's also impossible to lock keyboard manually by long #
+
+*/
+03ECCF4: 0xA09047CB 0xA0066C11
+;------------------------- end -------------------------
+

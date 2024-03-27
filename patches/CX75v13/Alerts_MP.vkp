@@ -1,0 +1,19 @@
+;CX75v13
+;Ежечасное событие и звуковые напоминания о пропущенных событиях и состоянии аккумулятора
+;Hourly event and sound alerts after missed events and state of battery
+;(c) avkiev
+;(r) SiNgle
+;(p) Cold Zero
+;Version: 
+;PatchID: 6035
+;Details: https://patches.kibab.com/patches/details.php5?id=6035
+/*
+Телефон выполняет раз в час некоторые задания.
+Кроме того, если упущено какое-либо событие, то телефон проигрывает
+один раз в N минут соответствующую мелодию.
+
+*/
+2CC680: 0E1CD7B03BA936A8 004A9047,0xA0FC4039
+
+;------------------------- end -------------------------
+

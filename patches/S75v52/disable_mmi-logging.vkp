@@ -1,0 +1,14 @@
+;S75v52
+;Отключить логгинг MMI
+;Disable MMI-logging
+;(c) SiNgle
+;(p) Vados
+;Version: 
+;PatchID: 8436
+;Details: https://patches.kibab.com/patches/details.php5?id=8436
+/*
+
+*/
+01FA85A: 041C 70BD
+;------------------------- end -------------------------
+

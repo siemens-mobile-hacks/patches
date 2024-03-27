@@ -1,0 +1,15 @@
+;A75v20
+;Включить BFB
+;Open BFB
+;(c) RizaPN, Girosavo, Sinclair . . .
+;(r) Smelter v5.67
+;(p) Joenka
+;Version: 
+;PatchID: 9336
+;Details: https://patches.kibab.com/patches/details.php5?id=9336
+/*
+
+*/
+2DF3DE: 32 1E ; Open BFB
+;------------------------- end -------------------------
+

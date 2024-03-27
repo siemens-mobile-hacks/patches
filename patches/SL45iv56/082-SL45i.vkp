@@ -1,0 +1,13 @@
+;SL45iv56
+;При выборе пункта "Сообщения" в меню преходит сразу в меню "SMS"
+;On click on messages directly goto SMS menu
+;(c) ACiD [mrp]
+;Version: 
+;PatchID: 1644
+;Details: https://patches.kibab.com/patches/details.php5?id=1644
+/*
+Патч №082 с http://patch.oslik.ru/SL45_RU
+*/
+3B4000: E04CDC4F FAD95A0D
+;------------------------- end -------------------------
+

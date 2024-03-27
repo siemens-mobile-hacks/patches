@@ -1,0 +1,43 @@
+;CX70v50
+;Замена папки стандартной на папку хр
+;Change folder icon to XP-like style
+;(c) ~†~^$!k!®B@shk@^~†~
+;Version: 2
+;PatchID: 5496
+;Details: https://patches.kibab.com/patches/details.php5?id=5496
+/*
+Замена стандартной папки на папку как в винде(хр)v2
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 29.08.2006  -  Time: 18:41:45                             ###
+; ### Patch for: SIEMENS CX70 v50                                     ###
+; #######################################################################
+
+
+; ##### Picture 471 #####
+00DA0EDC: 0E0E850078EBE3A0 10108500C78AD9A0
+
+00D98AC7: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FE926D0491027202920272028D0272FE
+00D98AD7: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 926D04B1027202920272028D0272FE91
+00D98AE7: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B104FEFFB107910292FFB106FE05B102
+00D98AF7: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 910292FEB1FE04FD06FEFEB08C028DFD
+00D98B07: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B1F9D503B006B102B0FA8D91B0F9B1D5
+00D98B17: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 08FEFEFAFE028DFCB0F9B1F908FEFEDA
+00D98B27: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FE028DFDB0D5B509FE02D5028DFCB0D0
+00D98B37: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D5FE03FA04FEFBFAD58C918D02B0FEF9
+00D98B47: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FE08F9FCD58C6D9202B0FFFE09F9FCB0
+00D98B57: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8C926D02910AB0FE8D91029202910A8C
+00D98B67: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FE918D0592FF6E04720392FF6D029202
+00D98B77: FFFFFFFFFFFFFFFFFFFFFF 8E0492FF7103720692028E
+
+
+
+;------------------------- end -------------------------
+

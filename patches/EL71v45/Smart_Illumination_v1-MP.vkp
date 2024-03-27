@@ -1,0 +1,14 @@
+;EL71v45
+;Ушлая подсветка
+;Smart Illumination
+;(c) BoBa
+;(r) (i) StarFriend
+;Version: 1-MP
+;PatchID: 7420
+;Details: https://patches.kibab.com/patches/details.php5?id=7420
+/*
+
+*/
+0C1AAC4: 1CD64BA0 318006A0
+;------------------------- end -------------------------
+

@@ -1,0 +1,25 @@
+;M65v58
+;Вибра в момент начала разговора
+;Vibrate shortly after connection
+;(c) SiNgle
+;(p) DoGraf
+;Version: 1.2
+;PatchID: 926
+;Details: https://patches.kibab.com/patches/details.php5?id=926
+/*
+Режим включается одновременно с галкой в Меню-2-5-5-4 или 2-5-4-3 (Авт.Индикац.).
+При входящих не вибрирует.
+*/
+163A366: 17F096EF0028 00284CF04AEE
+
+#pragma enable old_equal_ff
+1687000: 00402DE9FF3F2DE90FE0A0E144F09FE5
+1687010: 000050E30900001A0100A0E30FE0A0E1
+1687020: 34F09FE5020050E30400001A2F00A0E3
+1687030: 0210A0E30120A0E30FE0A0E11CF09FE5
+1687040: 0FE0A0E118F09FE5000050E3FF3FBDE8
+1687050: 0040BDE80CF09FE527F2B3A0430E30A1
+1687060: 946293A00BD9B0A06DA363A1
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

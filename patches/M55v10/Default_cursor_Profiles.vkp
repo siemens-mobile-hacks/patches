@@ -1,0 +1,14 @@
+;M55v10
+;Выбор стандартного положения курсора в профилях
+;Change Default Cursor Position in Profiles
+;(c) Matr!x
+;Version: 
+;PatchID: 1545
+;Details: https://patches.kibab.com/patches/details.php5?id=1545
+/*
+
+*/
+0E49AE: 3D02 CC00
+0E49B1: 0C 5C ;заменить 5 на 0-7 для выбора стандартной позиции курсора
+;------------------------- end -------------------------
+

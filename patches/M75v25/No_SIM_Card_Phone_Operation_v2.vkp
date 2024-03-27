@@ -1,0 +1,22 @@
+;M75v25
+;Работа с Телефоном без Сим-Карты
+;No SIM Card Phone Operation
+;(c) SiNgle
+;(r) (i)1nvisible
+;(p) Grizzzzly
+;Version: 2
+;PatchID: 4402
+;Details: https://patches.kibab.com/patches/details.php5?id=4402
+/*
+Нажмите на джойстик, чтобы начать работу.
+English:
+Press joystick to start working.
+*/
+02C6B9C: 152871D1 DBF1E8FB
+#pragma enable old_equal_ff
+04A2370: FEB5152800D1FEBD292802D104480349
+04A2380: 8847281CFEBC06B0F0BDC046CC0983A0
+04A2390: 00200BA8
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

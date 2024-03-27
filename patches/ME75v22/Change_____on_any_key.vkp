@@ -1,0 +1,29 @@
+;ME75v22
+;Смена ### на другие клавиши
+;Change ### on any key
+;(c) Andrey_ua, kraze1984
+;(p) BPSNSK
+;Version: 
+;PatchID: 6986
+;Details: https://patches.kibab.com/patches/details.php5?id=6986
+/*
+
+*/
+07863B4: 23232300 nnNNnnNN ;можно добавить комбинацию максимум из 4 клавиш
+
+;07863B4: 23232300 2A2A2A00 ;вход в Native меню по ***
+
+;*-2A, 23, SK left-01, SK right-04, joy up-3B, down-3c, left-3d, right-3e, joy center-1A
+; callkey-0b on/off-0c, 0...9 - 30...39
+; Vol+ -?, Vol
+
+/*
+Port info
+search for 00000023232300, then add 03h to the found address
+*/
+;------------------------- end -------------------------
+
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

@@ -1,0 +1,39 @@
+;S75v47
+;Запуск TMO Editor по горячей клавише
+;Launch TMO Editor by hotkey
+;(c) Kibab
+;(r) RainMaker, den11111, Дэн
+;(p) _caine
+;Version: 1.2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7080
+;PatchID: 6042
+;Details: https://patches.kibab.com/patches/details.php5?id=6042
+/*
+Экспериментальный патч запуска.
+
+Вешаем на горячую клавишу "Прием факса", секундомер или "Мгновенные сообщения" (по выбору) и срабатывает TMOEditor.
+
+P.S. не забываем обновить библиотеку
+
+При желании можно назначить для запуска любой эльф изменив путь в теле патча.
+07.01 - должно работать у тех, у кого не работало.
+*/
++0067490 
+#pragma enable old_equal_ff
+00: FFB58020C7DF2501061C06A18022C7DF
+10: 6C0100220021301C94DF301CC7DF2901
+20: FFBD
+24: "4:\\ZBin\\Kibab\\tmo.elf",00
+#pragma disable old_equal_ff
++0
+
+;Вешаем на горячую клавишу Inst.Message
+0421A78: 91DB32A0 0xA0067491 ;instant_message @ S75v47
+
+; ИЛИ на горячую клавишу FAX_RECEIVE
+;0420EF8: 43E532A0 0xA0067491 ; FAX_RECEIVE @ S75v47
+
+; ИЛИ на горячую клавишу "Секундомер" (STOPWATCH)
+;04257F8: 65C432A0 0xA0067491 ; STOPWATCH @ S75v47
+;------------------------- end -------------------------
+

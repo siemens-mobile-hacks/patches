@@ -1,0 +1,13 @@
+;S75v52
+;Замена контраста
+;Change contrast
+;(c) bertgrins
+;Version: 
+;PatchID: 10419
+;Details: https://patches.kibab.com/patches/details.php5?id=10419
+/*
+Интервал от 0 до 255 ед. в hex
+*/
+3FD8C52: 0000FFFF 2828FFFF;  (0000 - контраст ноль, 0707 контраст 127 ,FFFF контраст 255ед)
+;------------------------- end -------------------------
+

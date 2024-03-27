@@ -1,0 +1,13 @@
+;S75v47
+;Убрать сообщение 'Блокировка клавиатуры включена/выключена'
+;Disable message 'Keylock/unlock'
+;(c) SiNgle
+;Version: 
+;PatchID: 8073
+;Details: https://patches.kibab.com/patches/details.php5?id=8073
+/*
+
+*/
+0342D04: A9F0CEEC C046C046
+;------------------------- end -------------------------
+

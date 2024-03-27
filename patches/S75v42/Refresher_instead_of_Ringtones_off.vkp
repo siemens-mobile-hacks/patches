@@ -1,0 +1,18 @@
+;S75v42
+;Рефрешер вместо "Выкл. звуки" в меню красной кнопки
+;Refresher instead of RingtonesOff in RedButtonMenu
+;(c) Lans, ThE TrIFoN
+;(r) avkiev
+;(p) KiRiK
+;Version: 
+;PatchID: 5994
+;Details: https://patches.kibab.com/patches/details.php5?id=5994
+/*
+Рефрешер вместо "Выкл. звуки" в меню красной кнопки
+*/
+03439D4: FFF792FF 1DF55CF9
+
+0343A40: 0x20B6 0x1C6C ; Ringtones off => Refresh 
+0343A44: 0x2210 0x1C6C ; Ringtones on => Refresh
+;------------------------- end -------------------------
+

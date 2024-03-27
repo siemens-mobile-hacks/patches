@@ -1,0 +1,16 @@
+;CX70v56
+;Добавить Эльфы в меню Файлы
+;Add Elfs to MyStuff
+;(c) ZoZoLe
+;(p) Zeus
+;Version: 
+;PatchID: 6906
+;Details: https://patches.kibab.com/patches/details.php5?id=6906
+/*
+Заменяется адрес у SYSTEM_LNDMARKS - "0:\SYSTEM\LANDMARKS" на "0:\Zbin"
+*/
+0A4F1A4: 30003A005C0053007900730074006500 30003A005C005A00620069006E000000
+0A4F1B4: 6D005C004C0061006E0064006D006100 00000000000000000000000000000000 
+0A4F1C4: 72006B0073 0000000000
+;------------------------- end -------------------------
+

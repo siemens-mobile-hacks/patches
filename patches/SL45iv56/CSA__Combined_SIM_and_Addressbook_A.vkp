@@ -1,0 +1,39 @@
+;SL45iv56
+;CSA. Комбинированый доступ к SIM и Адресной книге
+;CSA. Combined SIM and Addressbook Access
+;(c) rizapn
+;Version: 
+;PatchID: 2040
+;Details: https://patches.kibab.com/patches/details.php5?id=2040
+/*
+Переключение между SIM и Адресной используя 
+незадействованную Левую Софт-клавишу ... 
+
+Известные баги: 
+- SMS Sent to: screen is also impacted but with wrong function 
+ (when Addressbook is selected from SIM Location) 
+
+
+Created: March 12, 2005 
+Edited: March 13, 2005 (change SK image)
+*/
+;Адресная ... 
+0x116E44: 00000000FEFF 72000000260E 
+
+0x340884: 46F22600 FAE4E073 
+
+;Телефонная ... 
+0x1A40BC: 00000000 73000000 
+0x1A40C0: FEFF CE0D 
+0x1AE990: 954E6F 932400 
+
+0x3E2DAC: 46F11B00 FAE4FA73 
+
+;Основная программа: 
+0x4473D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2A2A2053494D2D416363657373202A2A 
+0x4473E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46F272003D06DAEEAC1CDADB46EFFAD4 
+0x4473F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 480E46F22600FAD4880846F173003D06 
+0x447400: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAEEAC1CDADB3CEFFADE002E46F11B00 
+0x447410: FFFFFFFF FADEB02D 
+;------------------------- end -------------------------
+

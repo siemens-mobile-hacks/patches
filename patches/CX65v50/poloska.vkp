@@ -1,0 +1,15 @@
+;CX65v50
+;Толщина прогрессбара при проигрований .wav
+;Thickness of the strip at play .wav
+;(c) Deface
+;(p) Deface
+;Version: 1.0
+;PatchID: 312
+;Details: https://patches.kibab.com/patches/details.php5?id=312
+/*
+Толщина прогрессбара при проигрований .wav
+*/
+0A0F7F2: 66 70 ;Тоньше обычной
+0A0F7F2: 66 60 ;Толше обычной
+;------------------------- end -------------------------
+

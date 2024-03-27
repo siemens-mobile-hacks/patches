@@ -1,0 +1,15 @@
+;CF75v23
+;Отключить доступ к интернет-браузеру
+;Disable Access To Internet Browser
+;(c) KiRiK
+;Version: 
+;PatchID: 4826
+;Details: https://patches.kibab.com/patches/details.php5?id=4826
+/*
+
+*/
+04A59DC: CDE732A0 00000000
+04A5974: E7E732A0 00000000
+04A52C0: EFF132A0 00000000
+;------------------------- end -------------------------
+

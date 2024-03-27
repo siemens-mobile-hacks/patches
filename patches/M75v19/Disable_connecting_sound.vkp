@@ -1,0 +1,13 @@
+;M75v19
+;Убрать звук дозвона
+;Disable connecting sound
+;(c) AlexSid
+;Version: 
+;PatchID: 2314
+;Details: https://patches.kibab.com/patches/details.php5?id=2314
+/*
+
+*/
+04B9DF0: 40F44CA0 00000000
+;------------------------- end -------------------------
+

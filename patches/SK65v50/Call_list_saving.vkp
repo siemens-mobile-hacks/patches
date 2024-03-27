@@ -1,0 +1,15 @@
+;SK65v50
+;Сохранение списков при смене SIM карты
+;Call list saving when SIM is changed
+;(c) SiNgle
+;(p) 1nvisible
+;Version: 
+;PatchID: 2513
+;Details: https://patches.kibab.com/patches/details.php5?id=2513
+/*
+
+*/
+02A5672: A4F1DAEF 00200020
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,27 @@
+;S75v52
+;Изменить разницу времен по умолчанию начала и окончания события в органайзере
+;Change default difference between End Time and Start Time in Organiser
+;(c) Evgr
+;(r) 1nvisible
+;(p) SimaFish
+;Version: 
+;PatchID: 9002
+;Details: https://patches.kibab.com/patches/details.php5?id=9002
+/*
+
+*/
+057E9F0: 0721890288432061 00498847,0xA00616A0
+
+#pragma enable old_equal_ff
+00616A0: 04E08EE21C1CA0E30100C0E1100084E5
+00616B0: 18402DE92930D5E53C3083E23C0053E3 
+00616C0: 010000AA0040A0E3100000EA780053E3
+00616D0: 020000AA0140A0E33C3043E20B0000EA 
+00616E0: B40053E3020000AA0240A0E3783043E2 
+00616F0: 060000EAF00053E3020000AA0340A0E3
+0061700: B43043E2010000EA0440A0E3F03043E2
+0061710: 3930C5E52830D5E5043083E03830C5E5
+0061720: 1880BDE8
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

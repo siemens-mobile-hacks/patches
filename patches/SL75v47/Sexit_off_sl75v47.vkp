@@ -1,0 +1,14 @@
+;SL75v47
+;Блокировать включение DevMenu->Exits->Sexit
+;Disable turn on of DevMenu->Exits->Sexit
+;(c) Evgr
+;(p) bertgrin
+;Version: 
+;PatchID: 10249
+;Details: https://patches.kibab.com/patches/details.php5?id=10249
+/*
+
+*/
+02421AF: 0A EA ; s75v47
+;------------------------- end -------------------------
+

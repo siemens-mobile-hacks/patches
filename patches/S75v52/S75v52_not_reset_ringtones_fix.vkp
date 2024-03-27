@@ -1,0 +1,22 @@
+;S75v52
+;Не менять мелодии звонка вызовов и сообщений при установке пользовательской темы
+;Do not reset calls and messages ringtones when user theme is set
+;(c) Evgr
+;(p) Serega65
+;Version: 
+;PatchID: 9752
+;Details: https://patches.kibab.com/patches/details.php5?id=9752
+/*
+
+*/
+05328AE: 05F0C9F9 A5F340EE
+
+#pragma enable old_equal_ff
+08D8530: C90050E31C409FE514FF2F01D50050E3
+08D8540: 10409FE514FF2F010C409FE534FF2FE1
+08D8550: 08409FE514FF2FE1692A53A0457C53A0
+08D8560: B32853A0
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

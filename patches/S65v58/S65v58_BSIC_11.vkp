@@ -1,0 +1,34 @@
+;S65v58
+;Always show BSIC (NCC BCC)
+;Always show BSIC (NCC BCC)
+;(c) Evgr
+;(r) слава Богу, SiNgle
+;Version: 1.1
+;PatchID: 10490
+;Details: https://patches.kibab.com/patches/details.php5?id=10490
+/*
+
+*/
+/*
+конфликтует с: Десятичный CID вместо C1 и C2 в списке соседних сот
+conflicted with: Decimal CID instead of C1 & C2 in neighbour list
+*/
+
+136AA6C: 42496031C97B002908D13F4912229C39 414914229C39FFF28CEF201C00F012F8 
+136AA7C: FFF286EF201C00F039F807E03A491222 00209234207010BD203EB08B20362021
+136AA8C: 8A39FFF27EEF201C00F004F800207034 A1720522211C0B31014B9847012219E0
+136AA9C: E07110BD 0xA0825D17
+136AACE: 0122 D9E7
+136AAD2: 0B 11
+136AADE: 0D 13
+136AAE8: 2074 C046
+136AAEA: 11 15
+
+13EE100: 2020434820202052584C204331204332 2020434820202052584C2043656C4944
+13EE110: 0D0020204348 204E20420D00
+
+;136AAEA: 15 16 ; for the case of smaller font size (for example, 0x8)
+;136AA7E: 92 98 ; for the case of smaller font size (for example, 0x8)
+
+;------------------------- end -------------------------
+

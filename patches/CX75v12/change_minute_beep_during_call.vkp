@@ -1,0 +1,15 @@
+;CX75v12
+;Изменение времени подачи ежеминутного сигнала во время разговора
+;Сhange minute beep during call
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 498
+;Details: https://patches.kibab.com/patches/details.php5?id=498
+/*
+Изменяет время подачи минутного сигнала во время разговора. 
+*/
+05530C2: 00 37
+;------------------------- end -------------------------
+

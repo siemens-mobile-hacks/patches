@@ -1,0 +1,32 @@
+;S75v47
+;Открыть входящие при заблокированной клавиатуре
+;Open Inbox When the Keyboard is Locked
+;(c) BingK(binghelingxi), Evgr
+;Version: 2
+;PatchID: 10443
+;Details: https://patches.kibab.com/patches/details.php5?id=10443
+/*
+При заблокированной клавиатуре можно открыть ВХОДЯЩИЕ по левой софт-кнопке.
+скринсейвер не обновлялся, и для себя подправил патч, чтобы при открывании входящих скринсейвер закрывался
+When the keyboard is locked you can open DEVICE_INBOX by pressing Left-Soft-Button. 
+added quit screensaver when open Inbox kbdlock
+*/
+;OPEN_INBOX_KBDLOCKED_HOOK
+0x043955C: 192C34A0 872456A1
+;OPEN_INBOX_KBDLOCKED_BODY
+#pragma enable old_equal_ff
+0x01562430: FFB52A480068002802D0C068284FB847
+0x01562440: FFBDFFB5204FB847FFBDFFB503201F49
+0x01562450: 1F4FB847FFBDFEB50020002100220023
+0x01562460: 00241C4FB847FEBDFEB500261A488047
+0x01562470: 002806D0CA300688351C4688AD198688
+0x01562480: AE19301CFEBDFEB5061C0F1C4D68002D
+0x01562490: 18D068681349884205D01349884211D1
+0x015624A0: FFF7D3FF0EE0A86801280BD1FFF7D3FF
+0x015624B0: FFF7DAFF002805D0FFF7C7FFFFF7C1FF
+0x015624C0: FFF7B6FF0020FEBD,0xA032DF83,FF7F0000
+0x015624D0: 0xA08FE105,0xA02FE4A9,0xA02FE4A3,0xA8DD358C
+0x015624E0: 0xA096F4D7,9301000095010000
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

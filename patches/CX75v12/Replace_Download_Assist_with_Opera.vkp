@@ -1,0 +1,19 @@
+;CX75v12
+;Замена Помощника загрузки на OperaMini
+;Replace Download Assistant with OperaMini
+;(c) ~Jhellico
+;(p) crash
+;Version: 
+;PatchID: 4551
+;Details: https://patches.kibab.com/patches/details.php5?id=4551
+/*
+Заменяет в меню-3-3 "Помощника загрузки" на Opera Mini. Мидлет должен быть в папке "\Applications\OperaMini\"
+*/
+0326385: 446F776E6C6F61642041 "OperaMini",00
+032AE41: 446F776E6C6F61642041 "OperaMini",00
+07D27ED: 446F776E6C6F61642041 "OperaMini",00
+
+;Редактирование сообщения  "Помощн.загр." => "Opera Mini"
+14BEEB: 0C878C384337920CA92D3A92 0C7649675C68581A47606560
+;------------------------- end -------------------------
+

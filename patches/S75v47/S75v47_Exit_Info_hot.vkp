@@ -1,0 +1,37 @@
+;S75v47
+;Открывать пункт "Exit Info" "Разработчика" по горячей клавише или из "Моё меню" 
+;Open "Exit Info" item of "Developer menu" by hot key or from "My menu" 
+;(c) Evgr 
+;Version: 
+;PatchID: 10246
+;Details: https://patches.kibab.com/patches/details.php5?id=10246
+/*
+для lg91 и lg3
+перед установкой раскоментировать строчку своего лэнга
+*/
+0420578: 97E732A0 0xA14712E0 ; change shortcut "DEVICE_MANAGER"
+04205AC: 2C11 B122 ; change lanpack string ID
+
+#pragma enable old_equal_ff
+14712E0: 80402DE904009FE51372B9FA8080BDE8
+14712F0: 0xA0406180
+#pragma disable old_equal_ff
+
+; S75 v47 - Patch made by "Smelter" © avkiev
+; http://avkiev.kiev.ua/Siemens/Smelter/Smelter.htm
+;********************************************************************************
+
+;"Device management" => "Exit Info"
+166770C: 446576696365206D616E6167656D656E7400 4578697420496E666FFFFFFFFFFFFFFFFF00
+
+;"Управление устройством" => "Exit Info"
+; lg91
+;1868872: D0A3D0BFD180D0B0D0B2D0BBD0B5D0BDD0B8D0B520D183D181D182D180D0BED0B9D181D182D0B2D0BED0BC00 4578697420496E666FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+; lg3
+;17E970E: D0A3D0BFD180D0B0D0B2D0BBD0B5D0BDD0B8D0B520D183D181D182D180D0BED0B9D181D182D0B2D0BED0BC00 4578697420496E666FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+
+
+;------------------------- end -------------------------
+
+;------------------------- end -------------------------
+

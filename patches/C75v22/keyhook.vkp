@@ -1,0 +1,34 @@
+;C75v22
+;КейХук
+;keyhook
+;(c) MasterMind
+;Version: 1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=6326
+;PatchID: 6298
+;Details: https://patches.kibab.com/patches/details.php5?id=6298
+/*
+Дополнительные функции для большой библиотеки
+Близки по функциональности AddKeybMsgHook_end и RemoveKeybMsgHook NewSGold-ов
+only for test
+Не совместим с Key Sequencer.......
+(-) Не обрабатывает LONG_PRESS
+*/
+07AFB8A: 010602D5FFF7A3FF10BD 014CA04710BD01F50DA1
+
+#pragma enable old_equal_ff
+10E44AC: 0xA0002070 ;xxx; 12B: AddKeybMsgHook(void *proc)
+10E44B0: 0xA10DF537 ; 12C: SetKeybHook(void *proc)
+10E44B4: 0xA10DF54B ; 12D: ClrKeybHook()
+
+10DF500: FFB5051C144E3768002F0CD0EA09FF21
+10DF510: 943189184006400EB847002803D0C046
+10DF520: 0E49201C05E0281C010601D40C4900E0
+10DF530: 0C498847FFBDF0B5074F3C68002C02D1
+10DF540: 38600120F0BD0020F0BD80B5024F0020
+10DF550: 3860012080BD0000,0xA8000280,0xA09C44D8
+10DF560: 0xA07AF9AB,0xA07AFAD9
+#pragma disable old_equal_ff
+
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;SL75v52
+;Отключить логгинг MMI
+;Disable logging MMI
+;(c) SiNgle
+;(p) dimonp25
+;Version: 
+;PatchID: 9790
+;Details: https://patches.kibab.com/patches/details.php5?id=9790
+/*
+
+*/
+01fa85a: 041C 70BD
+;------------------------- end -------------------------
+

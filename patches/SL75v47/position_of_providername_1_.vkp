@@ -1,0 +1,57 @@
+;SL75v47
+;Изменить позицию и шрифт имени провайдера в заставке
+;Change position and font of providername in ScreenSaver
+;(c) arsh0r
+;(r) SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 6155
+;Details: https://patches.kibab.com/patches/details.php5?id=6155
+/*
+Это мои, лично мне понравившиеся настройки! Для CX75, S75 и SL75
+*/
++4640
+;Analog Clock
+;043a44c: 00 xx ; x-start
+;043a44e: A1 yy ; y-start
+;043a450: 84 xx ; x-stop
+;043a452: AF yy ; y-stop
+;043a454: 05 03 ; font size
+
+;Digital Clock
+;043a468: 00 xx ; x-start
+043a46a: A1 70 ;yy ; Y-start
+;043a46c: 84 xx ;x-stop
+;043a46e: AF yy ; y-stop
+043a470: 05 01 ;font size
+
+;Picture
+;043a430: 00 xx ; x-start
+;043a432: 9f yy ; y-start
+;043a436: 84 xx ; x-stop
+;043a438: AF yy ; y-stop
+;043a43a: 05 03 ; font size
+
++0
+;font size
+;03-меньше курсив, курсив без рус
+;06-тонкий курсив,
+;00-норм,
+;01-крупнее ниже,
+;07-меньше,
+;02-рек,
+;04-тонкий мал,
+;05-по умолчанию,
+;08-очень мал,
+;09-очень мал,
+;0а-совсем мал,
+;0b-мал,
+;0с-мал толст,
+;0d-мал курсив, 
+;0e-мал толст курсив,
+;0f-узкий вытянутый,
+;10-мал цифры
+;11-нет
+
+;------------------------- end -------------------------
+

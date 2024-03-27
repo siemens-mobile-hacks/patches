@@ -1,0 +1,14 @@
+;M75v19
+;Убрать Латвийский и Литовский из меню языков ввода
+;Remove Latvian and Lithuanian from input languages menu
+;(c) 0xFEDF
+;Version: 
+;PatchID: 2714
+;Details: https://patches.kibab.com/patches/details.php5?id=2714
+/*
+скриншот с применённым этим и 2713 :)
+*/
+0A407B6: 00 01
+0A407BA: 00 01
+;------------------------- end -------------------------
+

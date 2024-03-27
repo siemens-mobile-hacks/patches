@@ -1,0 +1,18 @@
+;M75v25
+;Меню выбора языка ввода при нажатии Help (Инф. Т9)
+;Input language menu on Help key (Т9 info)
+;(c) SiNgle
+;(r) Gurza
+;(p) VoVkA
+;Version: 
+;PatchID: 4909
+;Details: https://patches.kibab.com/patches/details.php5?id=4909
+/*
+
+*/
+04193A6: 794900227948 9EF7CDFB80BD ;в MMS
+05B824E: 56F71FFC FFF579FC ;в e-mail
+050EBA2: FFF775FF A8F6CFFF ;в SMS
+057262A: 9CF731FA 45F68BFA ;в Текст.модулях
+;------------------------- end -------------------------
+

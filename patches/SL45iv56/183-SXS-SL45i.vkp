@@ -1,0 +1,41 @@
+;SL45iv56
+;SXS. Разные стили текста
+;SXS. Some Text Style
+;(c) RizaPN
+;Version: 
+;PatchID: 1635
+;Details: https://patches.kibab.com/patches/details.php5?id=1635
+/*
+Меняет текстовые стили для окон.
+
+Founded: July 11, 2004
+
+Патч №183 с http://patch.oslik.ru/SL45_RU
+*/
+;Текст приветствия + некторые сообщения + просмотр SMS + ??? 
+0x117B54: 03 00 ;[i] смотреть код шрифта в списке 
+
+;Текст софт кнопок 
+0x117B70: 03 03 
+
+;Выбранный пункт меню 
+0x117B78: 03 03 
+
+;Пункт меню 
+0x117B7A: 02 02 
+
+;Код шрифта ... 
+;00 = Very small 
+;01 = Big 
+;02 = Thin 
+;03 = Normal 
+;04 = Small for limited chars, numbers etc 
+;05 = Very small, limited chars, numbers etc 
+;06 = Very-very small, numbers only 
+;07 = Small 
+;08 = Small Bold 
+;09 = WAP 
+;0A = Big Phone Numbers 
+;0B = Thin (reduced height/space)
+;------------------------- end -------------------------
+

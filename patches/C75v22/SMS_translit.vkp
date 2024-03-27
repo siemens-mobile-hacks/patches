@@ -1,0 +1,45 @@
+;C75v22
+;SMS транслит
+;SMS translit
+;(c) ~Jhellico
+;(r) empeka
+;(p) SMeeTBB
+;Version: 0.3
+;PatchID: 2203
+;Details: https://patches.kibab.com/patches/details.php5?id=2203
+/*
+
+*/
+0536668: B8F0D6EE 74F70AFD ; пункт Опции - Удалить текст
+0771A58: 061C081C 39F51AFB
+
+04AB080: FFFFFFFFFFFFFFFFFFFFFFFF 08B5014B984708BD15F11FA0
+04AB090: FFFFFFFFFFFFFFFFFFFFFFFF 08B5014B984708BD01F11FA0  
+060522C: CC02 660A; замена строки меню на "Транс"
+0605230: CC02 660A
+
++1FF100
+#pragma enable old_equal_ff
+00: FFB5012D02D11D4900680860FFBC061C
+10: 081C00BDFFB5194F3F683B8818A50120
+20: 8002002B28D05900CA5B121A012A00D1
+30: 1522512A00D13522102A1BDB4F2A19DC
+40: 103A5200525BFF2A01D8CA5312E004B4
+50: 120ACA533E8801363E8076008E4205D3
+60: 023EBA5B0236BA53023EF7E704BC1206
+70: 120ECA53013BD4E7FFBDFFFF001057A8
+
+; Таблица транслитерации:
+80: "A",00,"B",00,"V",00,"G",00,"D",00,"E",00,"ZH","Z",00
+90: "I",00,"J",00,"K",00,"L",00,"M",00,"N",00,"O",00,"P",00
+A0: "R",00,"S",00,"T",00,"U",00,"F",00,"H",00,"TS","CH"
+B0: "SH","SC","\'",00,"Y",00,"\'",00,"E",00,"JU","JA"
+
+C0: "a",00,"b",00,"v",00,"g",00,"d",00,"e",00,"zh","z",00
+D0: "i",00,"j",00,"k",00,"l",00,"m",00,"n",00,"o",00,"p",00
+E0: "r",00,"s",00,"t",00,"u",00,"f",00,"h",00,"ts","ch"
+F0: "sh","sc","\'",00,"y",00,"\'",00,"e",00,"ju","ja"
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

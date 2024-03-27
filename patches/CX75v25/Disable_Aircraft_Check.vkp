@@ -1,0 +1,14 @@
+;CX75v25
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) Bennie
+;Version: 
+;PatchID: 3491
+;Details: https://patches.kibab.com/patches/details.php5?id=3491
+/*
+
+*/
+02C68A5: D1 E0
+
+;------------------------- end -------------------------
+

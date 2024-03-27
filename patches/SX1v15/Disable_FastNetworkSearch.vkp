@@ -1,0 +1,23 @@
+;SX1v15
+;Отключить быстрый поиск сети
+;Disable FastNetworkSearch
+;(c) Vovan888
+;Version: 0.1
+;PatchID: 6140
+;Details: https://patches.kibab.com/patches/details.php5?id=6140
+/*
+Патч в формате V-Klay для Egold !!!
+Патч для обладателей S-key или порезанных тестпоинтов.
+
+В СС мониторе изменений не будет, там отображается константа
+Egold fw15 only !
+
+*/
+5D7C8: 1EF1 1FF1
+5D7A2: E004 E014
+
+; эти 2 строчки - для отображения реального значения Setup вместо General
+4AD94: E04E E06E
+4ADB0: E06E E04E
+;------------------------- end -------------------------
+

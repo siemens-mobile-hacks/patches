@@ -1,0 +1,16 @@
+;S65v58
+;Скрин-шутер
+;Screen Shooter
+;(c) avkiev
+;(p) птичка
+;Version: 2
+;PatchID: 6372
+;Details: https://patches.kibab.com/patches/details.php5?id=6372
+/*
+Run ScreenShooter instead of STUP_BABYSITTER 
+для MP14
+*/
+092FA98: 3DA58DA0 0xA0FC7301 
+0FC73E8: 0xFFFFFFFF 0xA08DA53D 
+;------------------------- end -------------------------
+

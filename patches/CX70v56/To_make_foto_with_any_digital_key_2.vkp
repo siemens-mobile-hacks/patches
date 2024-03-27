@@ -1,0 +1,18 @@
+;CX70v56
+;Фотографирование любой цифровой кнопкой
+;To make foto with any digital key
+;(c) SiNgle
+;(r) (i) KreN
+;(p) Lost
+;Version: 2
+;PatchID: 3229
+;Details: https://patches.kibab.com/patches/details.php5?id=3229
+/*
+Нормальный выход из камеры
+*/
+0906754: 010050E3 D9D638FA
+#pragma enable old_equal_ff
+173C2C0: 162801D00128704700480047,0xA09067F0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

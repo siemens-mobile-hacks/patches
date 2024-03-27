@@ -1,0 +1,13 @@
+;ME75v22
+;сохранение списков вызова при смени сим карты
+;Call list saving when SIM is changed
+;(c) SiNgle
+;Version: 
+;PatchID: 3893
+;Details: https://patches.kibab.com/patches/details.php5?id=3893
+/*
+
+*/
+02A704E: E4F174EB 00200020
+;------------------------- end -------------------------
+

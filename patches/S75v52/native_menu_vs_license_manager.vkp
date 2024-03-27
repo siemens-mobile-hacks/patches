@@ -1,0 +1,23 @@
+;S75v52
+;NativeMenu с названием вместо Управ. лиценз. (NAT_LICENSE_MANAGER)
+;NativeMenu+Name instead of Licence mgr. (NAT_LICENSE_MANAGER)
+;(c) SiNgle
+;(r) weclnt
+;Version: 
+;PatchID: 8380
+;Details: https://patches.kibab.com/patches/details.php5?id=8380
+/*
+Вместо Управ. лиценз. -> NativeMenu с именем (пункта меню) "NativeMenu" в [ru, ua, en];
+для горячей кнопки => NAT_LICENSE_MANAGER
+*/
+422540: 0xA032EBB1 0xA02CE19B ; NativeMenu вместо "Управ. лиценз."
+
+;Редактирование сообщения  7 : 020F6  "Управ. лиценз." => "Native Menu"
+17E7147: D0A3D0BFD180D0B0D0B22E20D0BBD0B8D186D0B5D0BDD0B72E00 4E6174697665204D656E75FFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+;Редактирование сообщения  1 : 020F6  "Licence mgr." => "Native Menu"
+16661AD: 4C6963656E6365206D67722E00 4E6174697665204D656E75FF00
+;Редактирование сообщения  9 : 020F6  "Управл. ліценз." => "Native Menu"
+1884AE3: D0A3D0BFD180D0B0D0B2D0BB2E20D0BBD196D186D0B5D0BDD0B72E00 4E6174697665204D656E75FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+
+;------------------------- end -------------------------
+

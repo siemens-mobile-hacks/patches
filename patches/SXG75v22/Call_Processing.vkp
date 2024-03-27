@@ -1,0 +1,15 @@
+;SXG75v22
+;Замена рисунка телефона при звонке
+;Change of phone's picture while calling
+;(c) Unknown
+;Version: 
+;PatchID: 6169
+;Details: https://patches.kibab.com/patches/details.php5?id=6169
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sxg75v22&f=Call_Processing.zip
+
+/*
+Ложим по адресу brew\mod\callprocessing\res\common
+*/
+    
+;------------------------- end -------------------------
+

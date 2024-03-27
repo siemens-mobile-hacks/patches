@@ -1,0 +1,24 @@
+;X75v100
+;Не лочить клаву при MP3
+;Don't lock keyboard while playing MP3
+;(c) ThE TrIFoN
+;(r) (i) RainMaker AKA Shadow®
+;(p) -=(Kad)=-
+;Version: 2-BASE
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7767
+;PatchID: 5743
+;Details: https://patches.kibab.com/patches/details.php5?id=5743
+/*
+
+
+*/
+#pragma enable old_equal_ff
+0066C10: 09B50848C4DF02D07FDF002801D1014B
+0066C20: 984709BD,0xA09047CB,536861646F77AE00
+0066C30: 0xB1C2D3E4,0x0000BB81,0000000000000000,"\
+{p=DontLockKBwhilePlaying ver=2 cp=`ThE TrIFoN` id=BB81}","\
+{info `(i) RainMaker`}","\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

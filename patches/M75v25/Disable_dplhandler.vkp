@@ -1,0 +1,14 @@
+;M75v25
+;Отключение ошибки dplhandler
+;Disable DPLHANDLER in java aplications
+;(c) Ivanhoe
+;(p) Grizzzzly
+;Version: 0.1
+;PatchID: 6455
+;Details: https://patches.kibab.com/patches/details.php5?id=6455
+/*
+Для тех, у кого телефон в ява-приложениях зависает и с пиком выключается через 5 минут. Патч отключает эту ошибку.
+*/
+0AC4228: 02 00
+;------------------------- end -------------------------
+

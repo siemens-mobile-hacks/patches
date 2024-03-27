@@ -1,0 +1,34 @@
+;X75v100
+;1-минутный Диспатчер
+;1-minute dispatcher
+;(c) avkiev
+;Version: 
+;PatchID: 5747
+;Details: https://patches.kibab.com/patches/details.php5?id=5747
+/*
+Создайте папку 0:\Misc\Log\
+Установите патч, установите Интервал = 60000 (=1мин)
+Один раз в минуту Диспатчер дергает все свои патчи и передает им аргументы через r1-r7:
+LogDir, Day, Month, Year, Hour, Minute, Second
+Врезка не требуется
+
+Create folder 0:\Misc\Log\
+Apply patch and set Interval = 60000 (=1min)
+Every minute dispatcher calls all their own patches and pass them arguments via r1-r7:
+LogDir, Day, Month, Year, Hour, Minute, Second
+
+*/
+#pragma enable old_equal_ff
+0066900: F0B51048C4DF14D0043081697A460F3A
+0066910: 01B44DDF00980830011C0831B4DF02BC
+0066920: 4A7B0B7B0C890D7C4E7C8F7C1C310320
+0066930: C1DFF0BD
+
+0066940: 0xB1C2D3E4,0x0000AB17,0x00000040,00000000,"\
+{p=1min-Dispatcher cp=avkiev id=AB17}\
+{28 ms Interval v=60000}\
+{32 sd LogDir v=`0:\\Misc\\Log\\`}\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

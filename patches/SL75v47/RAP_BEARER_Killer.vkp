@@ -1,0 +1,19 @@
+;SL75v47
+;RAP_BEARER Killer
+;RAP_BEARER Killer
+;(c) Marie
+;(p) bertgrin
+;Version: 
+;PatchID: 10573
+;Details: https://patches.kibab.com/patches/details.php5?id=10573
+/*
+значиться отрубает смс меню , ни с флекс , ни с нативного меню не запускаеться ток через MySMSYS или альтернативный эльф
+в смысле новое смс не создаеться
+*/
+09718D0: 6FF272EB C046C046 ; RAP_BEARER_0 (Browser)
+;09718E8: 6FF266EB C046C046 ; RAP_BEARER_1 (Java)
+;0971900: 6FF25AEB C046C046 ; RAP_BEARER_2
+;0971918: 6FF24EEB C046C046 ; RAP_BEARER_3
+;0971930: 6FF242EB C046C046 ; RAP_BEARER_4
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;E71v45
+;Сохранение списков при смене SIM карты
+;Call list saving when SIM is changed
+;(c) starfriend
+;(r) Evgr
+;(p) SiNgLe
+;Version: 
+;PatchID: 10306
+;Details: https://patches.kibab.com/patches/details.php5?id=10306
+/*
+Сохранение списков вызовов при смене SIM карты
+*/
+066D96E: 8EF1ECEA c046c046
+;------------------------- end -------------------------
+

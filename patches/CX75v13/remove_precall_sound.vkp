@@ -1,0 +1,18 @@
+;CX75v13
+;Убрать звук при дозвоне
+;Remove precall sound
+;(c) AlexSid
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 794
+;Details: https://patches.kibab.com/patches/details.php5?id=794
+/*
+RUS: Убрать звук при дозвоне.
+
+ENG: To clean a sound at dialing.
+
+*/
+04B92C0: 10E94CA0 00000000
+;------------------------- end -------------------------
+

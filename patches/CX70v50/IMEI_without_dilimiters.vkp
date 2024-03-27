@@ -1,0 +1,15 @@
+;CX70v50
+;Убрать черточки-разделители при показе IMEI
+;Disable delimiters while showing IMEI
+;(c) 1nvisible
+;(r) Bennie
+;(p) AlexeyZ
+;Version: 
+;PatchID: 2543
+;Details: https://patches.kibab.com/patches/details.php5?id=2543
+/*
+
+*/
+08FBAEC: 05D0 0AE0
+;------------------------- end -------------------------
+

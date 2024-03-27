@@ -1,0 +1,13 @@
+;ME75v22
+;Отключение ASP
+;Disable ASP
+;(c) caine
+;Version: 
+;PatchID: 5778
+;Details: https://patches.kibab.com/patches/details.php5?id=5778
+/*
+
+*/
+08F5C14: 0000A01302 0100A01301
+;------------------------- end -------------------------
+

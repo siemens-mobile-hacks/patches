@@ -1,0 +1,162 @@
+;S65v50
+;Ежечасный сигнал и звуковые напоминания о пропущенных событиях и полном аккумуляторе
+;Hourly beep and sound alerts after missed events and full battery
+;(c) avkiev
+;(r) SiNgle
+;(p) AsteriX
+;Version: 11
+;PatchID: 338
+;Details: https://patches.kibab.com/patches/details.php5?id=338
+/*
+Телефон выполняет раз в час некоторые задания.
+Кроме того, если упущено какое-либо событие, то телефон проигрывает
+один раз в N минут соответствующую мелодию.
+Напоминания играют только с H1 до H2 часов, смотри настройки.
+Напоминания играют не чаще, чем один раз в N минут.
+Напоминания не играют при выключенном звуке.
+Если задана мелодия 7F, то она звучать не будет.
+Если номер мелодии больше, чем 80h, то играет мелодия (R-80h) и сопровождается виброй.
+Например, если задана мелодия DF, то звучит мелодия 5F и телефон вибрирует.
+Патч не работает в 7-м профиле.
+
+EN:
+Phone executes every hour some tasks.
+Besides, if you miss some event - mobile plays each N minutes according ringtone.
+Alerts plays only from H1 to H2 hour, see options.
+Alerts plays not often, than once per N minutes.
+Alerts aren't play if sound is off.
+Ringtone 7F doesn't play.
+If ringtone more than 80h, than ringtone (R-80h) plays and phone are vibrate.
+For example, if you set ringtone DF, than ringtone 5F plays and phone is vibrate.
+If current profile is 7 - patch doesn't work.
+
+Звуки для ежечасного сигнала (респект AsteriXXX): http://patches.kibab.com/cnt.php5?d=_common&f=hours.rar
+
+New:
+- Буфер настройки ежечасных событий расширен с суточного до недельного
+- Добавлено ежечасное событие "Проговаривание наступившего часа"
+*/
+
+
+/*
+Буфер настройки ежечасных событий содержит 7*24 байта, которые определяют задания,
+которые будут выполняться при наступлении соответствующего часа.
+Если соответствующий байт равен 00 - то при наступлении этого часа выполняться ничего не будет.
+Биты каждого из этих байт определены так:
+-0 (1) - Проиграть мелодию ежечасного сигнала
+-1 (2) - Проиграть файл 0:\Sounds\Hours\HH.wav, где HH - наступивший час
+-2 (4) - Запустить мидлет
+-3 (8) - Выключить телефон
+-4    \
+-5     > Установить профиль
+-6    /
+-7     - Зарезервировано
+Пример 1. Если в буфере по смещению 09 находится байт 31 (=30+1),
+то в 9:00 телефон переключится в 3-й профиль и проиграет ежечасную мелодию.
+Пример 2. Если в буфере по смещению 18 находится байт 25 (=20+1+4),
+то в 18:00 телефон переключится во 2-й профиль, проиграет ежечасную мелодию и запустит мидлет.
+Пример 2. Если в буфере по смещению 23 находится байт 08, то в 23:00 телефон выключится
+WAV-файлы для проговаривания часов можно взять здесь:
+http://avkiev.kiev.ua/Siemens/Patches/hours.rar
+*/
+
+/*
+Buffer of Hourly Events Tuning contains 7*24 bytes, which defines tasks,
+which will execute when according hour comes.
+If according byte equal to 00 - then no tasks will execute.
+Bits of these bytes define in such manner:
+-0 (1) - Play HourlyBeep
+-1 (2) - Play file 0:\Sounds\Hours\HH.wav, where HH - current hour
+-2 (4) - Run midlet
+-3 (8) - Switch mobile off
+-4    \
+-5     > Set Profile
+-6    /
+-7     - Reserved
+Example 1. If in this buffer byte 09 equals to 31 (=30+1),
+then at 9:00 mobile switches to 3rd profile and plays HourlyBeep.
+Example 2. If in this buffer byte 18 equals to 25 (=20+1+4),
+then at 18:00 mobile switches to 2nd profile, plays HourlyBeep and run midlet.
+Example 2. If in this buffer byte 23 equals to 08, then at 23:00 mobile switches off
+WAV-files for spelling current hour:
+http://avkiev.kiev.ua/Siemens/Patches/hours.rar
+*/
+
+
+
+169B84E: 16F0A8EA 1FF021FF ; mainscreen
+
+169E59E: 12F0B4E9 1DF07DF8 ; screensaver
+
+#pragma enable old_equal_ff
+16BB600: 536F756E6420416C6572747320763131
+16BB610: A961766B6965762031332E30372E3035
+16BB620: 01B57F21084081B0031C102042210902
+16BB630: 093100220092F5F77AE901B001BC8028
+16BB640: 07D35B48804704D02F2001210322594B
+16BB650: 984700BD00B50A20ABF7C2EF85B06A46
+16BB660: 131D1360062393803030D08030311181
+16BB670: 2E235381772393816123D38176231382
+16BB680: 494848A103B40C2045A1484BF6F752EF
+16BB690: 07B000BD00B5F6F784EB02E000B5F5F7
+16BB6A0: 34E9FFB4F5F784EB0130072866D0494F
+16BB6B0: 381C391C0831F6F75AEE3C7A7D7A002D
+16BB6C0: 28D1386BA04225D03C63381C3C4B9847
+16BB6D0: C10041A0401840184018065D300902D0
+16BB6E0: 0138354988470120304202D03320FFF7
+16BB6F0: 97FF0220304202D0211CFFF7ABFF0420
+16BB700: 304202D05EA0F6F7A6EC0820304201D0
+16BB710: 2A48804708200021884202D3A04204D9
+16BB720: 01E0A0422AD88C4228D8DF20254A1178
+16BB730: 0222114014D1F6F7AEEA011CDC200029
+16BB740: 0ED1D620204A1188002909D11F4A1188
+16BB750: 032913D31E4A11680A79FF2A0ED83920
+16BB760: FF280BD0796B7A7A8A4200D23C32521A
+16BB770: 012A03D37A7A7A63FFF752FFFFBD1000
+16BB780: '0:\\Sounds\\Hours\\'
+16BB7A0: 7EB76BA101000000A700000000000000
+16BB7B0: 2B9E8DA0645E94A027948CA0903D26A1
+16BB7C0: CF5782A02C8368A83CF63FA86E0667A8
+16BB7D0: 08A66BA8000077A8
+
+;Буфер настройки ежечасных событий
+;Buffer of Hourly Events Tuning
+;        00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+16BB7D8: 03,00,00,00,00,00,00,00,01,01,01,01,01,01,01,01,01,01,01,03,03,03,03,03 ; Пн - Mo
+16BB7F0: 03,00,00,00,00,00,00,00,01,01,01,01,01,01,01,01,01,01,01,03,03,03,03,03 ; Вт - Tu
+16BB808: 03,00,00,00,00,00,00,00,01,01,01,01,01,01,01,01,01,01,01,03,03,03,03,03 ; Ср - We
+16BB820: 03,00,00,00,00,00,00,00,01,01,01,01,01,01,01,01,01,01,01,03,03,03,03,03 ; Чт - Th
+16BB838: 03,00,00,00,00,00,00,00,01,01,01,01,01,01,01,01,01,01,01,03,03,03,03,03 ; Пт - Fr
+16BB850: 03,00,00,00,00,00,00,00,03,03,03,03,03,03,03,03,03,03,03,03,03,03,03,03 ; Сб - Sa
+16BB868: 03,00,00,00,00,00,00,00,03,03,03,03,03,03,03,03,03,03,03,03,03,03,03,03 ; Вс - Su
+;В этом примере  - Просто тилибомкать каждый час с 8 часов до полуночи всю неделю.
+;По вечерам и на выходные - с проговариванием наступившего часа
+;In this example - Just play HourlyBeep from 8:00 till midnight all week.
+;At evenings and at the weekends - with hour's spelling
+
+16BB880: "0:\\Java\\jam\\Applications\\HourlyEvent\\HourlyEvent.jar",00         ; Midlet
+#pragma disable old_equal_ff
+
+
+
+;16BB714: 08 0i0H1 ;Все напоминания звучат только с H1 до H2 часов
+;16BB716: 00 0i0H2 ;All alerts play only from H1 to H2 hours
+;(07,23) - 07:00-23:00, (08,00) - 08:00-00:00, (00,00) - always, (24,25) - never
+;
+;16BB6EC: 33 Rh ;Мелодия для ежечасного сигнала      | Ringtone for Hourly Beep
+;16BB72A: DF Ra ;Мелодия при пропущенном будильнике  | Ringtone for Missed Alarm
+;16BB73C: DC Rc ;Мелодия при пропущенном звонке      | Ringtone for Missed Call
+;16BB742: D6 Rs ;Мелодия для остальных событий       | Ringtone for Another Missed Events
+;16BB75E: 39 Rb ;Мелодия при заряженном аккумуляторе | Ringtone for Full Battery
+;16BB770: 01 NN ;Период напоминания - NN минут       | Play alerts each NN minutes
+;
+;16BB646: 04D0 C046 ;Вибрировать даже если вибра отключенна | Vibrate even if vibra off
+;16BB64C: 03 VV     ;Длительность вибры                     | Vibra duration
+;
+;Не играть мелодию при заряженном аккумуляторе при зарядке кабелем
+;Don't play Ringtone for Full Battery if charging via cable
+;16BB75A: FF 0C
+;
+;16BB6AA: 07 NP ; Profile "No patches"
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;SL75v47
+;Мастер-патч v14
+;Master-patch v14
+;(c) avkiev
+;(r) 1nvisible, chaos
+;(p) ferro
+;Version: 
+;PatchID: 6111
+;Details: https://patches.kibab.com/patches/details.php5?id=6111
+/*
+
+*/
+;Run Scaner on startup
+
+02Fac14: 0021 BEDF ;  SL75v47
+
+;Run Scaner instead of REMOTE_SYNCHRONIZATION
+0429308: 0xA032db3d 0xA0060C91   ; SL75v47
+
+;------------------------- end -------------------------
+

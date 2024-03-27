@@ -1,0 +1,13 @@
+;C65v56
+;Задержка гашения подсветки
+;Illumination fade time
+;(c) BuG
+;Version: 
+;PatchID: 3842
+;Details: https://patches.kibab.com/patches/details.php5?id=3842
+/*
+
+*/
+0BBB16C: B80B E803 ; 1 sec
+;------------------------- end -------------------------
+

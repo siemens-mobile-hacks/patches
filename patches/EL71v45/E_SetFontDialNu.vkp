@@ -1,0 +1,21 @@
+;EL71v45
+;Установить размер шрифта номера при наборе
+;Set dial number font size
+;(c) Evgr
+;(p) Faust
+;Version: 
+;PatchID: 9445
+;Details: https://patches.kibab.com/patches/details.php5?id=9445
+/*
+
+*/
+0954814: 231C019200220095 00498847,0xA14106C1
+
+#pragma enable old_equal_ff
+14106C0: 231C01920022012D00D10125009500B5
+14106D0: 02BC04310847
+#pragma disable old_equal_ff
+
+14106CA: 01 02 ; font size
+;------------------------- end -------------------------
+

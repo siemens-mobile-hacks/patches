@@ -1,0 +1,14 @@
+;S75v47
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) Frezzz
+;Version: 
+;PatchID: 5538
+;Details: https://patches.kibab.com/patches/details.php5?id=5538
+/*
+
+*/
+0972B70: 6549 0121
+;------------------------- end -------------------------
+

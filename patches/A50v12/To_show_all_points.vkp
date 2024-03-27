@@ -1,0 +1,17 @@
+;A50v12
+;Показывать все пункты в меню Настройка/Абон.группы
+;To show all points in the menu tuning/Abon.gruppy
+;(c) Delirium
+;Version: 
+;PatchID: 2191
+;Details: https://patches.kibab.com/patches/details.php5?id=2191
+/*
+
+*/
+237922: 0102 0100
+237934: 0202 0200
+237946: 0302 0300
+237958: 0402 0400
+
+;------------------------- end -------------------------
+

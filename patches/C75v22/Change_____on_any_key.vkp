@@ -1,0 +1,27 @@
+;C75v22
+;Изменение ### на любые клавиши
+;Change ### on any key
+;(c) Andrey_ua, kraze1984
+;(r) Andrey_ua, kraze1984
+;(p) klaud
+;Version: 
+;PatchID: 5690
+;Details: https://patches.kibab.com/patches/details.php5?id=5690
+/*
+отличие от оригинального патча - назначение комбинации до 4 клавиш. Можно назначить даже одну клавишу - тогда все остальное забить нулями.
+English:on the difference of original patch a combination of upto 4 keys can be assigned. But you can also assign only one key - then you should fill the end of string with zeroes.
+
+*/
+078653C: 23232300 nnNNnnNNnn
+;*-2A, 23, SK left-01, SK right-04, joy up-3B, down-3c, left-3d, right-3e, joy center-1A
+; callkey-0b on/off-0c, 0...9 - 30...39
+; Vol+ -?, Vol
+
+/*
+Port info
+search for 00000023232300, then add 03h to the found address
+*/
+;------------------------- end -------------------------
+
+;------------------------- end -------------------------
+

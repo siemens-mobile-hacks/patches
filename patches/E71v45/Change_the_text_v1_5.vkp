@@ -1,0 +1,43 @@
+;E71v45
+;Изменить текст в окне запроса на передачу данных
+;Change the text in the data transfer request
+;(c) Danil_e71
+;(r) Dimadze
+;Version: 1.5
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=10184
+;PatchID: 10182
+;Details: https://patches.kibab.com/patches/details.php5?id=10182
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=e71v45&f=Change_the_text_v1_5.zip
+
+/*
+Меняем текст в окне
+Вид:
+
+Принять файл?
+
+%файл%
+
+исходник приложен
+*/
+;VREZKA
+0x0070FE84: 58319FE5 7F0030EB
+;FIX_COMMAND
+0x0070FE90: 01 00 ;01 - окно, 00 - во весь экран
+0x0070FE94: 89FA08FA 790030EB
+;PATCH_BODY,CODE,INITTAB,DATA_C
+#pragma enable old_equal_ff
+0x01310080: 0EFAD8FA180000EBF75F2DE9010000EB
+0x01310090: 0030A0E1F79FBDE830402DE96C509FE5
+0x013100A0: 568200EF0040A0E12F10A0E3170100EF
+0x013100B0: 010080E21B0000EF100080E2140000EF
+0x013100C0: 000085E52F10A0E30400A0E1170100EF
+0x013100D0: 10109FE5012080E2000095E5160000EF
+0x013100E0: 000095E53080BDE8200131A110402DE9
+0x013100F0: 18409FE5000094E5000050E30100000A
+0x01310100: 150000EF0000A0E3000084E51080BDE8
+0x01310110: 0005F0A8040000000005F0A80005F0A8
+0x01310120: CFF0E8EDFFF2FC20F4E0E9EB3F0D0A25
+0x01310130: 73000000
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

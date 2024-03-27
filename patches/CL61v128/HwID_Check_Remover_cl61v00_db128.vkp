@@ -1,0 +1,15 @@
+;CL61v128
+;Отключить проверку хвид
+;HwID Check Remover
+;(c) Dimadze
+;(p) Evgr
+;Version: 
+;PatchID: 10393
+;Details: https://patches.kibab.com/patches/details.php5?id=10393
+/*
+Патч на включение E71 перепрошитого в CL61
+English:PowerUP patch
+*/
+0AB8CC8: 270050E3 000050E1 ; CL61v00_db128 -> ALL x85
+;------------------------- end -------------------------
+

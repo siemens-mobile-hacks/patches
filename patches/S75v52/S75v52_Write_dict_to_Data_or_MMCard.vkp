@@ -1,0 +1,19 @@
+;S75v52
+;Диктофон и Запись звука пишут на диск Data или карту памяти по выбору 
+;Dictaphone and Sound recorder write to Data or memory card as option 
+;(c) 1nvisible, Evgr 
+;Version: 1
+;PatchID: 10511
+;Details: https://patches.kibab.com/patches/details.php5?id=10511
+/*
+
+*/
+04D41B0: 07D11C2359430818 004B9847,0xA0073693
+#pragma enable old_equal_ff
+00735DC: 0xA067131A
+007364C: 0xA067117A
+00736D4: 0xA067010C,0xA06700F0
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

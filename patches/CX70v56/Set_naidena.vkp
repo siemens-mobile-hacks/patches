@@ -1,0 +1,15 @@
+;CX70v56
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found" (3*beep)
+;(c) avkiev
+;(p) Smelter
+;Version: 
+;PatchID: 707
+;Details: https://patches.kibab.com/patches/details.php5?id=707
+/*
+Патч Отключает звук "Сеть найдена"
+*/
+1524160: 5C03 FFFF
+
+;------------------------- end -------------------------
+

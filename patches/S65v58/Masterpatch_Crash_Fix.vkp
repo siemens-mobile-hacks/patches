@@ -1,0 +1,15 @@
+;S65v58
+;Дополнение к Мастер-Патчу
+;Masterpatch Shutdown Crash Fix
+;(c) benj9
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=3603
+;PatchID: 3190
+;Details: https://patches.kibab.com/patches/details.php5?id=3190
+/*
+Генерируется новым смелтером. Я его чуть не проглядел. Но судя по названию штука полезная :)
+*/
+0A445D4: 03DF C046
+0A445DC: E2F6AAEF C046C046
+;------------------------- end -------------------------
+

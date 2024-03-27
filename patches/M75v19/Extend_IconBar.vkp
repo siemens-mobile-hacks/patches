@@ -1,0 +1,39 @@
+;M75v19
+;Расширенная панель иконок
+;Extended IconBar
+;(c) 1nvisible
+;(p) Geka
+;Version: 1
+;PatchID: 4722
+;Details: https://patches.kibab.com/patches/details.php5?id=4722
+/*
+Расширяет Панель до 8 иконок
+Отмените предыдущие патчи координат панели иконок
+*/
+2A917C: 04 08 ;disable 1st check отключить первую проверку
+2A9180: 04 08
+
+2A918A: 42 50 ;extend iconbar length расширеная длина панели иконок
+
+2A91A0: 21 21 ;starting X coordinate начальная координата x
+
+2A8D14: 85 45 ;disable 2nd check отключить вторую проверку
+2A8D16: AD 6D
+
+2A91DA: 05 00 ;disable 3rd check отключить третью проверку
+
+2A9274: a8b4 5CC5 ;move 1st RAM передвинуть первую RAM
+
+2A91B2: 08 10 ;fix to support 8 icons исправление для поддержки 8 иконок
+
+2A91BA: 02 50 ;change Y coordinate изменить координату Y
+
+2A8D34: F00024 00208C ;another fix to support 8 icons другое исправление для поддержки 8 иконок
+  
+2A9166: 10 60 ;canvas end Y coordinate конечная координата Y холста
+2A916A: 02 50 ;canvas end Y coordinate конечная координата Y холста
+
+2A9202: 1C 7C ;fix accu bug исправить ошибку с аккумом
+
+;------------------------- end -------------------------
+

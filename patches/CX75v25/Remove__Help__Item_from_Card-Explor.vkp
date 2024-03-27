@@ -1,0 +1,13 @@
+;CX75v25
+;Убрать Пункт "Справка" в Card-Explorer'е
+;Remove "Help" Item from Card-Explorer
+;(c) 1nvisible
+;Version: 
+;PatchID: 5459
+;Details: https://patches.kibab.com/patches/details.php5?id=5459
+/*
+
+*/
+4D91E8: 17 16
+;------------------------- end -------------------------
+

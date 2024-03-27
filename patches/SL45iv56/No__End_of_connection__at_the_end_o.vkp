@@ -1,0 +1,20 @@
+;SL45iv56
+;Без "Соединение завершено" при окончании разговора
+;No "End of connection" at the end of talk
+;(c) Charger
+;Version: 
+;PatchID: 2036
+;Details: https://patches.kibab.com/patches/details.php5?id=2036
+/*
+Сразу показывается длительность соединения/автонабор. 
+*/
+18EC96: D007 0100 
+
+3AF8D2: 302C 3023 
+18E330: FFFFFFFFFFFF FFFFFFFFFF7F 
+
+
+;можно просто изменить длительность сообщения 
+;18EC96: D007 ;2000 мс
+;------------------------- end -------------------------
+

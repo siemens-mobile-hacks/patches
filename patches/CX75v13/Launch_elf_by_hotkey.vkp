@@ -1,0 +1,37 @@
+;CX75v13
+;Запуск эльфа по горячей клавише
+;Launch elf by hotkey
+;(c) Kibab, Geka
+;Version: 2
+;PatchID: 6479
+;Details: https://patches.kibab.com/patches/details.php5?id=6479
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v13&f=Launch_elf_by_hotkey.rar
+
+/*
+Поставить на горячую клавишу "Запуск эльфа" и будет
+конфиг берем из приаттаченого файла
+стартовать эльф, прописанный в 0:\\ZBin\\etc\\start_elf.bcfg
+*/
+;PATCH_START_ELF
+0x004B0A80: 815E32A0 01E0FCA0 ;CNCT_BUSINESSCD
+;CODE,DATA_C
+#pragma enable old_equal_ff
+0x00FCE000: 70B51E4C88B001A81C22121FA1588150
+0x00FCE010: FBD1402014DF05006B468022110201A8
+0x00FCE020: 0ADF06000020C043864206D1280015DF
+0x00FCE030: 1C34210001204FDF1DE0684601B401AB
+0x00FCE040: 00222C2130000FDF01AB402229003000
+0x00FCE050: 0BDF01A930000DDF8020A4DF04002A00
+0x00FCE060: 07A1A0DF00220021200094DF2000A5DF
+0x00FCE070: 280015DF01B008B070BDC04684E0FCA0
+0x00FCE080: 25740000303A5C5A42696E5C6574635C
+0x00FCE090: 73746172745F656C662E626366670000
+0x00FCE0A0: 63616E2774206F70656E20636F6E6669
+0x00FCE0B0: 672066696C652100
+#pragma disable old_equal_ff
+
+;Редактирование сообщения  3 : 001A4  "<9B>Визит<95>. <9B>карта" => "Запуск эльфа"
+
+ED8DD: 0AA4C0313B917C33CFBD 0AE5783A33E146BF3D29
+;------------------------- end -------------------------
+

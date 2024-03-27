@@ -1,0 +1,13 @@
+;SL65v53
+;Убрать звук дозвона
+;Disable connecting sound
+;(c) AlexSid
+;Version: 
+;PatchID: 5215
+;Details: https://patches.kibab.com/patches/details.php5?id=5215
+/*
+
+*/
+13A3790: E08D3BA1 00000000
+;------------------------- end -------------------------
+

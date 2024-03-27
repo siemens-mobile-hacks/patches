@@ -1,0 +1,24 @@
+;S75v52
+;Исправление ошибок Native Menu
+;Fix mistakes in NativeMenu
+;(c) caine
+;(r) ThE TrIFoN, Belarus, Kibab
+;(p) ferro
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=8532
+;PatchID: 8353
+;Details: https://patches.kibab.com/patches/details.php5?id=8353
+/*
+По сравнению с предыдущей версией - добавил присвоение собственного CSM NativeMenu, чтобы можно было переключаться в X-Task на него. Пока не делал ничего с Сообщениями и Таймером. Доделайте кто-нибудь плз :)
+English: Now Native Menu has its own CSM. Didn't fix Timer & Messages errors, please somebody do it :)
+
+*/
+; CreateGUIWithDummyCSM call & other stuff
+033399a: B8F040ed 00210AE0
+03339ae: 00210020C5F6ebFa002802D0 BBF07AE880BDB8F040EEFEBD
+
+; Fix Internet (from v2)
+043F66c: 08 00
+
+;------------------------- end -------------------------
+

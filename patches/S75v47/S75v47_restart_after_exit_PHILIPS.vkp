@@ -1,0 +1,28 @@
+;S75v47
+;Перезагрузка при пикоффе для дисплея PHILIPS_PHILIPS_PCF8882
+;Restart after exit for PHILIPS_PHILIPS_PCF8882 display
+;(c) Evgr
+;Version: 1.0
+;PatchID: 10614
+;Details: https://patches.kibab.com/patches/details.php5?id=10614
+/*
+Это доработанная версия Патча №10171 для дисплея PHILIPS_PHILIPS_PCF8882. Эффект достигнут за счёт задержки инициализации дисплея после рестарта.
+
+*/
+0245904: 1D00001A 160000EA
+0245974: 0100000A 010000EA
+
+02BA214: 0040A0E3 6D6544EA
+
+#pragma enable old_equal_ff
+13D37D0: 24409FE50400D4E5120050E30400001A
+13D37E0: 0700D4E5080050E3010000CA1A00A0E3
+13D37F0: D93BB3EB0040A0E3869ABBEA,0xA8D6CD04
+#pragma disable old_equal_ff
+
+;13D37EC: 1A 13 ; 119,6 мсек -> 87,4 мсек
+               ; 1Ah=26d тиков; 1 тик=4,6 мсек; 26*4,6 мсек=119,6 мсек
+               ; 13h=19d тиков; 1 тик=4,6 мсек; 19*4,6 мсек=87,4 мсек
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,41 @@
+;S65v50
+;Перенос папок Java
+;Java Folders relocation
+;(c) kraze1984
+;Version: 
+;PatchID: 281
+;Details: https://patches.kibab.com/patches/details.php5?id=281
+/*
+;ВНИМАНИЕ! ПЕРЕД ТЕМ, КАК ПРИМЕНИТЬ ПАТЧ СОЗДАЙТЕ СООТВЕТСТВУЮЩИЕ ПАПКИ НА КАРТОЧКЕ!
+;Иначе при включении любой функции с файловой системой, телефон будет с писком выключаться!
+;Еще: Приложение и Игры после применения соответствующей части 
+;патча можно будет переписывать только вручную. При установке - вышеуказанный симптом...
+EN: 
+
+WARNING! BEFORE APPLYING THIS PATCH, PLEASE CREATE APPROPRIATE FOLDERS ON MMC CARD!
+Otherwise when attempting any function concerning file system the phone will turn off with a short beep!
+Else: Games and Apps can be only written manually to the 
+folders. If installing normally the phone beeps and reboots.
+*/
+;ВНИМАНИЕ! ПЕРЕД ТЕМ, КАК ПРИМЕНИТЬ ПАТЧ СОЗДАЙТЕ СООТВЕТСТВУЮЩИЕ ПАПКИ НА КАРТОЧКЕ!
+;Иначе при включении любой функции с файловой системой, телефон будет с писком выключаться!
+;Еще: Приложение и Игры после применения соответствующей части 
+;патча можно будет переписывать только вручную. При установке - вышеуказанный симптом...
+
+;WARNING! BEFORE APPLYING THIS PATCH, PLEASE CREATE APPROPRIATE FOLDERS ON MMC CARD!
+;Otherwise when attempting any function concerning file system the phone will turn off with a short beep!
+;Else: Games and Apps can be only written manually to the 
+;folders. If installing normally the phone beeps and reboots.
+
+0A242E2: 30 34 ;0/Java->MMC/Java
+0A242F4: 30 34 ;0/Java/jam->MMC/Java/jam
+0A24308: 30 34 ;0/Java/jam/SMS->MMC/Java/jam/SMS *Эту можно не создавать*
+0A2432E: 30 34 ;0/Java/jam/Applications->MMC/Java/jam/Applications
+0A2435C: 30 34
+0A2438E: 30 34
+0A243B0: 30 34 ;0/Java/jam/Games->MMC/Java/jam/Games
+0A243E2: 30 34
+0A24424: 30 34
+
+;------------------------- end -------------------------
+

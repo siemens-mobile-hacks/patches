@@ -1,0 +1,28 @@
+;SL45iv56
+;Быстрая прокрутка текста (и имен файлов на MMC)
+;Fast movetext (and name of Document in MMC)
+;(c) greenteas, DONG
+;(p) Walek
+;Version: 
+;PatchID: 4660
+;Details: https://patches.kibab.com/patches/details.php5?id=4660
+/*
+
+*/
+;text in mp3playing 
+3be062: 2c01 9600
+3be654: 2c01 9600
+;2c01 -> 12c -> 300ms
+;9600 -> 96 > 150ms
+
+;time of Circulation
+3be076: b80b e803
+3be668: b80b e803
+;b80b -> bb8 -> 3000ms
+;e803 -> 3e8 -> 1000ms
+
+;in MMC
+47b75a: 2c01 9600
+47b768: b80b e803
+;------------------------- end -------------------------
+

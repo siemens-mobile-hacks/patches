@@ -1,0 +1,21 @@
+;CX65v50
+;Включение/выключение вибры при блокировке/разблокировке клавиатуры
+;Turn vibra on/off when keypad locked/unlocked
+;(c) ~Jhellico
+;(r) empeka
+;Version: 0.1
+;PatchID: 2434
+;Details: https://patches.kibab.com/patches/details.php5?id=2434
+/*
+
+*/
+114D330: 01210320 C3F568F8
+114D6B8: 01210320 C2F5A2FE
+
+#pragma enable old_equal_ff
+0F10400: 012100E0002101480047C046,0xA0F10411
+0F10410: FCB50F1C04498847B84201D003498847
+0F10420: FCBC0121032000BD,0xA08E2143,0xA08E2159
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

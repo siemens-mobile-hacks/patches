@@ -1,0 +1,14 @@
+;SL65v53
+;Goto mainmenu from anywhere by pressing ###
+;Goto mainmenu from anywhere by pressing ###
+;(c) SiNgle
+;(p) Geka
+;Version: 
+;PatchID: 6148
+;Details: https://patches.kibab.com/patches/details.php5?id=6148
+/*
+
+*/
+B246B4: 4BF0CFF8 C4F5E3FD ;native menu
+;------------------------- end -------------------------
+

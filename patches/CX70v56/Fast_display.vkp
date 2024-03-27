@@ -1,0 +1,14 @@
+;CX70v56
+;Быстрый показ окна "Язык ввода:" при выборе языка
+;Fast display of a window " Language of input: " at a choice of language
+;(c) SiNgle
+;(p) DeviceMan
+;Version: 
+;PatchID: 660
+;Details: https://patches.kibab.com/patches/details.php5?id=660
+/*
+Быстрый показ окна "Язык ввода:" при выборе языка.
+*/
+0D7F004: B80B 0100
+;------------------------- end -------------------------
+

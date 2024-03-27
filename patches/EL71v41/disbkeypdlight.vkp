@@ -1,0 +1,14 @@
+;EL71v41
+;Отключить подсветку клавиатуры
+;Disable keypad light
+;(c) SiNgle
+;(p) Siemann
+;Version: 
+;PatchID: 7105
+;Details: https://patches.kibab.com/patches/details.php5?id=7105
+/*
+
+*/
+08D3769: D5 24
+;------------------------- end -------------------------
+

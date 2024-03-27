@@ -1,0 +1,16 @@
+;EL71v45
+;Не сворачивать MP3 плеер
+;Don't hide MP3 player to background
+;(c) ThE TrIFoN
+;(p) @ndreS aka PRM
+;Version: 
+;PatchID: 7959
+;Details: https://patches.kibab.com/patches/details.php5?id=7959
+/*
+
+*/
+05C0FD6: 3EF222E9 4FF2CBFD
+0810B70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 09B5044B9847002801D1014B984709BD
+0810B80: FFFFFFFFFFFFFFFF BF0795A078206AA0
+;------------------------- end -------------------------
+

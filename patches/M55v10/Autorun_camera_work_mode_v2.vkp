@@ -1,0 +1,19 @@
+;M55v10
+;Автозапуск режима работы с камерой
+;Autorun camera work mode
+;(c) ValeraVi
+;(r) AlexSid
+;(p) Creat0r, AsteriX
+;Version: 2
+;PatchID: 1552
+;Details: https://patches.kibab.com/patches/details.php5?id=1552
+/*
+
+*/
+0DC74E: E00CE00D DA9F8801
+7F0188: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA2EAAFFE600030048413D0EF3F83000
+7F0198: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3D0DF78F3000DA984080DA2D225EDAA0
+7F01A8: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 76C3DA252C960D02F78E3000E00CE00D
+7F01B8: FFFF DB00
+;------------------------- end -------------------------
+

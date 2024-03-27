@@ -1,0 +1,19 @@
+;EL71v45
+;Большие часы при закрытом слайдере и нажатии красной кнопки
+;Big Time instead of "press ok" when Slider closed and Red pressed
+;(c) benj9
+;Version: 
+;PatchID: 8060
+;Details: https://patches.kibab.com/patches/details.php5?id=8060
+/*
+; left softkey to release slider lock still works
+; левая софт-кнопка для разблокировки слайдера работает нормально
+
+; if applied, undo patch "normal keylock dialog instead of 'press ok' when slider closed and red pressed"
+; отменить патч "normal keylock dialog instead of 'press ok' when slider closed and red pressed"
+*/
+0960A84: 7EF7D6EC 0FF651FB
+0770128: 07D002DF2B1C311C0322022063F532E806E003DF2B1C311C03220220 0EE00CB5044A904203D1081C55F61EFA0CBD6FF10EE90CBD0D030000
+0853530: 05 01 ; font
+;------------------------- end -------------------------
+

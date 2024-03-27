@@ -1,0 +1,14 @@
+;S68v52
+;Моментальный запуск скринсейвера после блокировки клавиатуры
+;ScreenSaver after KeyBoard Lock
+;(c) funMarkus
+;(p) nikinet1
+;Version: 
+;PatchID: 10268
+;Details: https://patches.kibab.com/patches/details.php5?id=10268
+/*
+Теперь запускается действительно скринсейвер, а не просмотр заставки
+*/
+032A7C0: 88F048E9 ADF773F8
+;------------------------- end -------------------------
+

@@ -1,0 +1,46 @@
+;S68v47
+;Диспатчер главного экрана
+;Mainscreen Dispatcher
+;(c) avkiev
+;(r) KreN (i) -=(Kad)=-
+;Version: 6-MP
+;PatchID: 7859
+;Details: https://patches.kibab.com/patches/details.php5?id=7859
+/*
+Тело качать не надо,оно уже включено
+*/
+;S68v47
+;Диспатчер главного экрана
+;Mainscreen Dispatcher
+;(c) avkiev
+;(r) KreN (i) -=(Kad)=-
+;Version: 6-MP
+/*
+
++6 Экономим аккумулятор ;) при выключенной подсветке диспатчер обновляется раз в 20-40 секунд
+
+*/
+02D488C: 00201B92F860391C0861 00488047,0xA0063E01,C046
+02674C8: 00211E8399820027 004FB847,0xA0063E31
+
+#pragma enable old_equal_ff
+; Disp v3 - for correct icons showing
+0063E00: 00B50848C4DF01D00120C1DF02BC1B92
+0063E10: 0020F860386104310847
+0063E20: E4D3C2B111AB00000000000000000000
+; Disp v2i - for fast update
+0063E30: 00211E83998200277FB50E48C4DF0FD0
+0063E40: 071C7878002804D0C7DF5280C0780028
+0063E50: 06D0C7DFDB800078002801D10120C1DF
+0063E60: FFBC04373847
+
+0063E70: 0xB1C2D3E4,0x0000AB11,0000000000000000,"\
+{p=MS-Dispatcher ver=6 cp=avkiev id=AB11}\
+{1 cb `Disable if illu off`}\
+",00
+#pragma disable old_equal_ff
+
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;SL75v47
+;Большой видеоискатель
+;Large viewfinder
+;(c) SiNgle
+;(r) StrikerVoo
+;(p) ferro
+;Version: 
+;PatchID: 6104
+;Details: https://patches.kibab.com/patches/details.php5?id=6104
+/*
+
+*/
+0207088: 7C809DE5 9C80A0E3
+0338aaa: 132D42D0 C046C046
+05f53ba: 9E5F122114229A5E595E 9C26122114229A5E0021
+05f53d6: C2891692038AC91801391591408A 00221692038ACB18013B15939C20
+05f57f6: C089 1620
+
+
+;------------------------- end -------------------------
+

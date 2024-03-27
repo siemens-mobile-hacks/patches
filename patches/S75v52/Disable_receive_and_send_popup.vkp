@@ -1,0 +1,17 @@
+;S75v52
+;Отменить окошко попап при получении и отправке через BT и IrDa
+;Disable receive and send popup via BT and IrDa
+;(c) funMarkus
+;Version: 
+;PatchID: 8834
+;Details: https://patches.kibab.com/patches/details.php5?id=8834
+/*
+Убивает показ стандартных окошек при приеме \ передачи файлов через BT \ IrDa
+
+Для замены прогрессбара юзаем эльф 
+ExioPB - Extended Information On ProgressBar (C) Vedan
+*/
+0522500: 0121 C046 ; Disable send popup
+05975AC: 0121 C046 ; Disable receive popup
+;------------------------- end -------------------------
+

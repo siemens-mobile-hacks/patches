@@ -1,0 +1,55 @@
+;CX75v25
+;Изменить позицию и шрифт имени провайдера в заставке
+;Change position and font of providername in ScreenSaver
+;(c) arsh0r
+;(r) SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 5852
+;Details: https://patches.kibab.com/patches/details.php5?id=5852
+/*
+
+*/
+;Analog Clock
+;04aca64: 00 xx ; x-start
+;04aca66: 9f yy ; y-start
+;04aca68: 84 xx ; x-stop
+;04aca6a: AF yy ; y-stop
+;04aca6c: 03 01 ; font size
+
+;Digital Clock
+;04aca80: 00 xx ; x-start
+04aca82: 9f 70 ;yy ; Y-start
+;04aca84: 84 xx ;x-stop
+;04aca86: AF yy ; y-stop
+4aca88: 03 01 ;font size
+
+;Picture
+;04aca48: 00 xx ; x-start
+;04aca4a: 9f yy ; y-start
+;04aca4c: 84 xx ; x-stop
+;04aca4e: AF yy ; y-stop
+;04aca50: 03 01 ; font size
+
+;font size от S75 - для CX75 - другие - по умолчанию 03
+;03-меньше курсив, курсив без рус
+;06-тонкий курсив,
+;00-норм,
+;01-крупнее ниже,
+;07-меньше,
+;02-рек,
+;04-тонкий мал,
+;05-по умолчанию,
+;08-очень мал,
+;09-очень мал,
+;0а-совсем мал,
+;0b-мал,
+;0с-мал толст,
+;0d-мал курсив, 
+;0e-мал толст курсив,
+;0f-узкий вытянутый,
+;10-мал цифры
+;11-нет
+
+;------------------------- end -------------------------
+

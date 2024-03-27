@@ -1,0 +1,18 @@
+;CX65v50
+;Изменение длительности горения подсветки
+;Change Illumination Turn Off Time
+;(c) benj9
+;(p) Kibab
+;Version: 3-MP
+;PatchID: 3039
+;Details: https://patches.kibab.com/patches/details.php5?id=3039
+/*
+; (!) masterpatch
+; use "Change Illumination Turn Off Timer 2" to set standard / patch_off values
+; use midlet to overlay your values 
+; to have new midlet values activated, let turn off illu one time and press any key else than red key
+
+*/
+0B1E942: 5349A000411868460422 C046,00498847,0xA0FDE60B ; CX65v50
+;------------------------- end -------------------------
+

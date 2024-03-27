@@ -1,0 +1,21 @@
+;C72v22
+;Убрать папку "jam" из "Java"
+;Remove folder "jam" from "Java"
+;(c) majsky
+;(p) Smelter
+;Version: 
+;PatchID: 5835
+;Details: https://patches.kibab.com/patches/details.php5?id=5835
+/*
+
+*/
+;* Убрать папку "jam" из "Java" ** Remove folder "jam" from "Java" * © majsky
+0A59FC6: 0B 07
+0A59FD6: 5C006A0061006D 00000000000000
+0A5A01A: 18 14
+0A5A02C: 6A0061006D005C004100700070006C 4100700070006C0069006300610074
+0A5A03E: 63006100740069006F006E0073 6F006E00730000000000000000
+0A5A0A0: 11 0D
+0A5A0B2: 6A0061006D005C00470061006D00650073 470061006D006500730000000000000000
+;------------------------- end -------------------------
+

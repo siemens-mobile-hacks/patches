@@ -1,0 +1,16 @@
+;M55v11
+;Изменение времени подачи ежеминутного сигнала
+;Change every minute signaling time
+;(c) SiNgle, RizaPN
+;(p) AlexSid
+;Version: 
+;PatchID: 5188
+;Details: https://patches.kibab.com/patches/details.php5?id=5188
+/*
+
+*/
+00413C: F2F40CFE DA9F8601
+7F0186: FFFFFFFFFFFFFFFFFFFF F2F40CFE46F43200DB00  ;50-я секунда
+;7F018C: 32 XX  ;XX - на какой секунде бикать
+;------------------------- end -------------------------
+

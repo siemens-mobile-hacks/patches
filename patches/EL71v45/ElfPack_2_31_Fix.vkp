@@ -1,0 +1,14 @@
+;EL71v45
+;Фикс Эльфпака 2.31
+;ElfPack 2.31 Fix
+;(c) ?
+;(r) (f) benj9
+;Version: 
+;PatchID: 8016
+;Details: https://patches.kibab.com/patches/details.php5?id=8016
+/*
+let swi hook "no function in lib" s-exit code work
+*/
+00780D5: 20 C0
+;------------------------- end -------------------------
+

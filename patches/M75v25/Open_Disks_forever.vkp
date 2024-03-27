@@ -1,0 +1,13 @@
+;M75v25
+;Открыть диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;Version: 
+;PatchID: 4115
+;Details: https://patches.kibab.com/patches/details.php5?id=4115
+/*
+
+*/
+08D030C: 02 03
+;------------------------- end -------------------------
+

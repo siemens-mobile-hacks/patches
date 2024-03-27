@@ -1,0 +1,25 @@
+;S65v58
+;SVS, шорткат просмотра SMS
+;SVS, SMS view shortcut
+;(c) Bennie
+;(p) KiRiK
+;Version: 
+;PatchID: 1308
+;Details: https://patches.kibab.com/patches/details.php5?id=1308
+/*
+Стрелка вправо для просмотра следующего SMS, влево для просмотра предыдущего
+*/
+0A8AEDC: 69688160 9BF2EEF9 
+0A8B458: 013290422AD9 B3689AF221FF 
+0A8B464: 0130 101C
+0A8B4C8: 3B1CAA68 6B892A89
+0ACF032: 201C51F0DAE90C23 8A2008E0012729E0
+0ACF060: 18D0 E9D0
+
+#pragma enable old_equal_ff
+0D262A0: 012B01D0013200E0013A002A02DB8242 
+0D262B0: 02DA7047421E704700227047A9880181
+0D262C0: 298941817047
+#pragma enable old_equal_ff
+;------------------------- end -------------------------
+

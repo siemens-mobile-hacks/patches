@@ -1,0 +1,17 @@
+;S75v32
+;Черный список
+;Black list
+;(c) ThE TrIFoN, SiNgle
+;Version: 
+;PatchID: 4024
+;Details: https://patches.kibab.com/patches/details.php5?id=4024
+/*
+
+*/
+008FFD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFB50B2804D10020044B984700F004F8
+008FFE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFBCE6F194EB00BDFFBDC046B7399BA0
+033EC4A: 37F760ED 51F5C1F9
+
+;008FFD2 0B 0N ;n-черная группа 00- Нет групыы, 03-Семья 04 друзья и так далее по возрастающей. по умолчанию в патче черная группа - Хобби 2
+;------------------------- end -------------------------
+

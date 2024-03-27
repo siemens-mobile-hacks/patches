@@ -1,0 +1,17 @@
+;SL45iv56
+;Мелодия на анимацию выключения
+;Ringtone for shutdown
+;(c) abomin
+;Version: 
+;PatchID: 1720
+;Details: https://patches.kibab.com/patches/details.php5?id=1720
+/*
+Release: March 2, 2004
+
+Патч №125 с http://patch.oslik.ru/SL45_RU
+*/
+;Вместо 28 ставьте номер звука как в "change call active sound" 
+
+452554: 2D03E02C E6FC2800
+;------------------------- end -------------------------
+

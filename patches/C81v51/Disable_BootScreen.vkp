@@ -1,0 +1,14 @@
+;C81v51
+;Disable BootScreen
+;Disable BootScreen
+;(c) benj9
+;(p) den11111
+;Version: 
+;PatchID: 7822
+;Details: https://patches.kibab.com/patches/details.php5?id=7822
+/*
+
+*/
+01A68AC: 6C3E000B 0000A0E1
+;------------------------- end -------------------------
+

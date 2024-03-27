@@ -1,0 +1,15 @@
+;SL75v47
+;Показ Расширений Файлов в Card-Explorer'е
+;Show File Extensions in Card-Explorer
+;(c) BingK
+;(r) SiNgle,1nvisible
+;(p) loquat
+;Version: 
+;PatchID: 10579
+;Details: https://patches.kibab.com/patches/details.php5?id=10579
+/*
+
+*/
+5A408E: 291C 12E0
+;------------------------- end -------------------------
+

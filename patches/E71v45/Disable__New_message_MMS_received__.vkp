@@ -1,0 +1,17 @@
+;E71v45
+;Disable "New message/MMS received!"
+;Disable "New message/MMS received!"
+;(c) Evgr
+;Version: 0.11
+;PatchID: 10551
+;Details: https://patches.kibab.com/patches/details.php5?id=10551
+/*
+No English doc at the moment! :(
+звук есть
+Баг: входящая смс не включает подсветку экрана 
+http://e71.ru/forum/21-25-6321-16-1194460739
+*/
+06FEC6A: FCF0C2EA c046c046
+;A06FEBA0: 061C FFBD
+;------------------------- end -------------------------
+

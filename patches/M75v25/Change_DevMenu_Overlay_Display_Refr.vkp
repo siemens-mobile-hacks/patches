@@ -1,0 +1,13 @@
+;M75v25
+;Change DevMenu Overlay Display Refresh Rate
+;Change DevMenu Overlay Display Refresh Rate
+;(c) benj9
+;Version: 
+;PatchID: 4130
+;Details: https://patches.kibab.com/patches/details.php5?id=4130
+/*
+
+*/
+02BE68E: 36 6C ; internal timer ~ miliseconds * 216.7 / 1000
+;------------------------- end -------------------------
+

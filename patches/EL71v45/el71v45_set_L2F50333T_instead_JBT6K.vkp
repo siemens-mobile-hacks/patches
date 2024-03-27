@@ -1,0 +1,27 @@
+;EL71v45
+;Установить L2F50333T вместо JBT6K71 по умолчанию чтобы дисплей работал на S68
+;Set L2F50333T instead JBT6K71 by default to make display work on S68
+;(c) Azq2
+;(r) Marie
+;Version: 1.0
+;PatchID: 10702
+;Details: https://patches.kibab.com/patches/details.php5?id=10702
+/*
+Нужен чтобы S68 с прошивкой EL71 показывал дисплеем, а не просто светил подсветкой на черном фоне
+Является аддоном к "Не читать хвид по ногам гпио"
+English:Needed on S68 with EL71 firmware for display to work, and not just turn on the backlight on a black background.
+
+Is an addon for "Do not read HWID from GPIO to enable running EL71 firmware on S68"
+*/
+060BFD0: 0020C7E5 0040C7E5 ; strb       r2,[r7,#0x0]=>disp_0_type = 02h
+
+;Просто меняем r2 на r4 к примеру, вот и всё
+
+;A8EA921C: disp_id 00280001 -> 00280002 from 0xA060BFD0
+;PSR 00000000
+;R0  00000028  R1  00000003 R2  00000002 R3  5441534B
+;R4  00000000  R5  00000000 R6  00000000 R7  A8EA921C
+;R8  00000001  R9  A08200EC R10 00000000 R11 00000000
+;R12 A8D95B7C  SP  AD26E880 LR  A060A480 PC  A060BFD0
+;------------------------- end -------------------------
+

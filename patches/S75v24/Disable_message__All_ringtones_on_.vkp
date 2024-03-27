@@ -1,0 +1,14 @@
+;S75v24
+;Убрать сообщение "Все сигналы вкл"
+;Disable message "All ringtones on"
+;(c) SiNgle
+;Version: 
+;PatchID: 2171
+;Details: https://patches.kibab.com/patches/details.php5?id=2171
+/*
+
+*/
+033CAC6: ADF07EEC C046C046
+033CAE4: ADF06EEC C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;S75v42
+;Громкая связь без подтверждения
+;Toggle HandsFree without question
+;(c) SiNgle
+;(p) weclnt
+;Version: 
+;PatchID: 5030
+;Details: https://patches.kibab.com/patches/details.php5?id=5030
+/*
+
+*/
+02F62A2: 002201206B49 012201200021
+02F62A8: F6F06CEB 8CF7D4E9
+
+;------------------------- end -------------------------
+

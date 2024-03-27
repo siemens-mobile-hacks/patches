@@ -1,0 +1,19 @@
+;M81v51
+;Мега-громкость
+;Mega-loudnes
+;(c) SiNgle,-=(Kad)=-,Akot
+;(p) Виктор89
+;Version: 3.1
+;PatchID: 9492
+;Details: https://patches.kibab.com/patches/details.php5?id=9492
+/*
+
+*/
++54
+01F2BDC: 000000EA C0FFFFEA                                                 ; Headset M81v51
+01F2AE4: 0600000A020000EF6C3DA0E30320A0E3 00709FE537FF2FE141EB06A03B0000EA ; Headset M81v51
+01F2BB0: 2600C4E5 D3FFFFEA                                                 ; Speaker M81v51
+01F2B04: 030000EF6C3DA0E30320A0E30410A0E1 00709FE537FF2FE101EB06A0290000EA ; Speaker M81v51
++0
+;------------------------- end -------------------------
+

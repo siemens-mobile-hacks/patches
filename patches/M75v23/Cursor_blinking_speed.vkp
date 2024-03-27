@@ -1,0 +1,13 @@
+;M75v23
+;Скорость мигания курсора
+;Cursor blinking speed
+;(c) SiNgle
+;Version: 
+;PatchID: 2809
+;Details: https://patches.kibab.com/patches/details.php5?id=2809
+/*
+
+*/
+04A22E8: 2C01 8003
+;------------------------- end -------------------------
+

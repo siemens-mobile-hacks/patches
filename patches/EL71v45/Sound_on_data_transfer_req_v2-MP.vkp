@@ -1,0 +1,19 @@
+;EL71v45
+;Звук при запросе на передачу данных
+;Sound on data transfer request
+;(c) -=(Kad)=-
+;Version: 2-MP
+;PatchID: 7659
+;Details: https://patches.kibab.com/patches/details.php5?id=7659
+/*
+
++2 Воспроизводит звук на окошке "Приём данных завершён!"
+
+Воспроизводит звук при запросе на передачу данных и после приёма файла.
+
+*/
+071D4B0: 0530A0E30020A0E360119FE5 00301FE533FF2FE101E806A0 ; Request sound
+071D470: 000084E5A0119FE50300A0E3 00101FE531FF2FE131E806A0 ; Recieved data sound
+
+;------------------------- end -------------------------
+

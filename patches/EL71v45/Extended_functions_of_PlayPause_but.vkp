@@ -1,0 +1,17 @@
+;EL71v45
+;Расширенные функции кнопки PlayPause
+;Extended functions of PlayPause button
+;(c) funMarkus
+;Version: 
+;PatchID: 8559
+;Details: https://patches.kibab.com/patches/details.php5?id=8559
+/*
+По желанию можно изменить функционал кнопки 
+(след./предыдущий трэк, первый трэк, начать снова трэк)..
+*/
+06A2758: 11 01 ; next track
+;06A2758: 11 02 ; previous track
+;06A2758: 11 1D ; play first track
+;06A2758: 11 08 ; restart playback
+;------------------------- end -------------------------
+

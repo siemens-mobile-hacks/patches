@@ -1,0 +1,14 @@
+;S75v42
+;Не выходить в режим ожидания при нажатии кнопки браузера
+;Don't do idle when pressing Browser button
+;(c) Rst7, ThE TrIFoN
+;(p) RainMaker
+;Version: 
+;PatchID: 4981
+;Details: https://patches.kibab.com/patches/details.php5?id=4981
+/*
+
+*/
+0343696: A7F012EC C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,31 @@
+;S55v20
+;Изменить * + правый софт
+;Modify * + Right SoftKey
+;(c) Girosavo
+;Version: 
+;PatchID: 4889
+;Details: https://patches.kibab.com/patches/details.php5?id=4889
+/*
+
+*/
+32B208: 5601 FB07 ; see another text
+32B61B: 732023 722EF0 ;see another Entry Point
+32B620: DA7378AB CC00CC00
+
+;*** 0 + Right SoftKey to "Internet" ***
+;Firm: S55v20
+;Adapted by Girosavo
+;В оригинале этот патч был*** Modify 0 + Right SoftKey from "Select Line" to "Calendar" ***
+32B172: 4840 E014
+32B198: 5202 040D ; надпись Интернет
+32B57F: 621822 726EEF; Точка входа в Интернет
+32B582: 4840 E004
+
+;*** Modify # + Right SoftKey from View CB to Calendar***
+;Firm: S55v20
+;21/01/2004
+;by Girosavo
+32B288: 5402 FD0C ; also another Text....
+32B615: 6ED818 67F4AE ; also another Entry..
+;------------------------- end -------------------------
+

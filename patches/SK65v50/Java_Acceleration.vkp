@@ -1,0 +1,14 @@
+;SK65v50
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) Gnida
+;Version: 
+;PatchID: 258
+;Details: https://patches.kibab.com/patches/details.php5?id=258
+/*
+Ускоритель явы. Игры, помойму, пошустрей становяться.
+*/
+07C81FC: 02 01
+;------------------------- end -------------------------
+

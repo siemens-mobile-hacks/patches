@@ -1,0 +1,18 @@
+;S75v52
+;Задать начальную дату после сброса
+;Set initial date after power off reset
+;(c) Evgr
+;(p) Feyman
+;Version: 1
+;PatchID: 10562
+;Details: https://patches.kibab.com/patches/details.php5?id=10562
+/*
+
+
+*/
+01F1A6C: 01 04 ; месяц
+01F1A8C: 1F 14 ; число
+01F1D0C: 0x000007D6 0x000007DD ; 0x7DD=2013 год
+
+;------------------------- end -------------------------
+

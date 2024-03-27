@@ -1,0 +1,14 @@
+;M55v10
+;Скорость автоповтора клавиатуры
+;Autoretry speed
+;(c) SiNgle
+;(p) ZH-Soft, trufanov
+;Version: 
+;PatchID: 1461
+;Details: https://patches.kibab.com/patches/details.php5?id=1461
+/*
+
+*/
+787CCA: 56 20
+;------------------------- end -------------------------
+

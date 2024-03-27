@@ -1,0 +1,22 @@
+;CF75v22
+;Замена помощника загрузки на Opera Mini
+;Replacement of the assistant of loading on Opera Mini
+;(c) ~Jhellico
+;(r) dent
+;(p) The Nameless
+;Version: 
+;PatchID: 1527
+;Details: https://patches.kibab.com/patches/details.php5?id=1527
+/*
+Замена помощника загрузки на Opera Mini. OperaMini будет вызываться через Меню-3-3 и шорткат ELSE_DOWN_ASSIS
+Мидлет должен быть в папке "\Applications\OperaMini\
+
+The replacement of the assistant of loading on Opera Mini. OperaMini will be caused through the Menu - 3-3 and шорткат ELSE_DOWN_ASSIS
+Мидлет should be in a folder " \Applications\OperaMini \ "
+*/
+032F2F5: 446F776E6C6F61642041 "OperaMini",00
+033A665: 446F776E6C6F61642041 "OperaMini",00
+078BB9D: 446F776E6C6F61642041 "OperaMini",00
+13C281: 0CB4B2364135780C8D2B3878 0C7547655A675618455E635E
+;------------------------- end -------------------------
+

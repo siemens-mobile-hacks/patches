@@ -1,0 +1,16 @@
+;M75v5
+;Включение Инженерного меню
+;Enable Developer Menu
+;(c) Phantom
+;(p) Smelter
+;Version: 
+;PatchID: 414
+;Details: https://patches.kibab.com/patches/details.php5?id=414
+/*
+Необходимо выключить пункт (S)Exit.
+Dev. Menu нужно повесить на горячую кнопку.
+Или поставить его как пункт в MyMenu.
+*/
+082E168: 040090E5 0000A0E3
+;------------------------- end -------------------------
+

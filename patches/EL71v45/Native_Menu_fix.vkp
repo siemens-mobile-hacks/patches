@@ -1,0 +1,30 @@
+;EL71v45
+;Исправление положения иконок и бэкграунда в Native Menu
+;Fix icon position and backgroud position in Native Menu
+;(c) BingK(binghelingxi)
+;(p) snoopyhzy
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9651
+;PatchID: 8865
+;Details: https://patches.kibab.com/patches/details.php5?id=8865
+/*
+
+*/
+;TRA_NMENU_ICON_PBG_HOOK 
+0x00A2C20C: 616A80000E58201C 0049884741CC35A1 
+;TRA_NMENU_ICON_PBG_BODY 
+#pragma enable old_equal_ff 
+0x0135CC40: 616A80000E58201C25498E4244D34D31 
+0x0135CC50: 8E4241D81FB42368002B37D018880428 
+0x0135CC60: 01D1012106E0512801D14E2102E09E28 
+0x0135CC70: 2CD19A2119805431042299520222985A 
+0x0135CC80: 3F2801D139211BE0762801D1642117E0 
+0x0135CC90: AD2801D19E2113E0E42801D1CC210FE0 
+0x0135CCA0: 412801D13C2110E0782801D176210CE0 
+0x0135CCB0: AF2801D1B02108E0E62807D1EA2104E0 
+0x0135CCC0: 99525431121D995200E0995220699D28 
+0x0135CCD0: 01D1172020611FBC7146091D08470000 
+0x0135CCE0: 69030000 
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

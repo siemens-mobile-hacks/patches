@@ -1,0 +1,54 @@
+;CX65v50
+;Индикатор пропущенных событий
+;Missed Events Indicator
+;(c) empeka
+;(r) BuG, (i)KiRiK, (i)(f)BuG
+;Version: 1.4
+;PatchID: 946
+;Details: https://patches.kibab.com/patches/details.php5?id=946
+/*
+Обладает большими возможностями по настройке, нежели старая версия.
+Пофиксен баг с более чем девятью событиями.
+
+English:
+Has more setup parameters than previos version.
+fixed bug with more than 9 missed events
+*/
+16345D6: 3858A021 27F093FA
++165BB00
+00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFB51C4F1A4E1C4D0024174800780028
+10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 08D0421938787978B047194AB878F978
+20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B04701340F48007800280CD04219A300
+30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DB1918785978B047104AA300DB199878
+40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D978B04701340F4A08480078F32805D1
+50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF A300DB1918785978B0470134FFBC3858
+60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF A02100BD,54F43FA8,60F43FA8,AC6668A8
+70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 714763A1,88BB65A1,4D040000,53010000
+80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 52010000,84040000,707F767C7071766E
+90: FFFF 7660
+
+;do not include calls from hidden IDs
+;68: 60F43F A08868
+
+;78: 4D04 0i01101 ; digit pic#
+;7C: 5301 0i339   ; missed msg icon#
+;80: 5201 0i338   ; missed call icon#
+;84: 8404 0i1156  ; missed alarm icon#
+
+;Image position array
+;here you can specify exact position of every digit and icon
+;DX - digit X position
+;DY - digit Y position
+;IX - icon X position
+;IY - icon Y position
+
+;   |  event 1  |  event 2  | msd alarm
+;    DX,DY,IX,IY,DX,DY,IX,IY, X, Y
+;88: 70,7F,76,7C,70,71,76,6E,76,60
+
++0
+;16345B4: CAF8 0028 ; remove background of standard missed events icons (the date will be visible)
+;16345DC: C9F8 0028 ; remove standard icons completely (including missed alarm etc.)
+
+;------------------------- end -------------------------
+

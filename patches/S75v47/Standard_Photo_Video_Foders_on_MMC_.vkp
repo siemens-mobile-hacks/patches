@@ -1,0 +1,15 @@
+;S75v47
+;Замена стандартных папок для фото и видео с камеры на MMC
+;Standard Photo&Video Foders on MMC Change
+;(c) RainMaker AKA Shadow®
+;(p) All from S-C.org
+;Version: 
+;PatchID: 5547
+;Details: https://patches.kibab.com/patches/details.php5?id=5547
+/*
+Замена стандартных папок для фото и видео с камеры на MMC.
+*/
+0671D2E: 0B00,'4:\\Pictures' 0B00,'4:\\_C\\Photo'
+0671D6A: 0900,'4:\\Videos' 0900,'4:\\_C\\Vid'
+;------------------------- end -------------------------
+

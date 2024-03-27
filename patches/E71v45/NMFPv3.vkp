@@ -1,0 +1,243 @@
+;E71v45
+;Пакет исправлений Native Menu
+;NMFP Native Menu Fix Pack
+;(c) caine, DJ, Zhek@, Miha_r, BingK(binghelingxi), SiN
+;(r) ThE TrIFoN, DJ, weclnt
+;(p) Grizzzzly, sempai, sim_emrom, snoopyhzy
+;Version: 3
+;PatchID: 9682
+;Details: https://patches.kibab.com/patches/details.php5?id=9682
+/*
+; Version 15.11.2008
+; Вроде сделано всё, чтобы Native Menu заменило Flex-Menu :) Подробности в патче. Ненужное можно закомментировать. Пак состоит из 14 патчей.
+*/
+; Version 15.11.2008
+; Вроде сделано всё, чтобы Native Menu заменило Flex-Menu :)
+
+; -No1-
+; Исправление ошибок Native Menu
+; Fix mistakes in Native Menu
+;(c) caine 
+;(r) ThE TrIFoN
+;(p) Grizzzzly 
+
+;Присвоение собственного CSM, чтобы можно было переключаться в X-Task на него.
+;CreateGUIWithDummyCSM call & other stuff
+06EDDD2: 0BF1C0E8 00210AE0
+06EDDE6: 002100200EF611FF002802D0 0EF1C2E880BD0BF1EEE9FEBD
+
+;Fix Internet / Исправление меню Интернет
+0883604: 08 00
+
+; -No2-
+; Исправление анимации в Native Menu
+; Fix animation in Native Menu
+;(c) DJ
+-A3F8
+873CFC: 01 00
+873D38: 01 00
+873D5C: 01 00
+873D80: 01 00
+873DAC: 01 00
+873DDC: 01 00
+873E04: 01 00
+873E38: 01 00
+873E68: 01 00
+873E9C: 01 00
+873ED0: 01 00
+873EF8: 01 00
++0
+
+; -No3-
+; Радио вместо будильника в Native Menu
+; Radio instead alarmclock in Native Menu
+;(c) Zhek@
+;(r) DJ
+;Внимание! Это важно:
+869864: 9BDC6EA0 F78F6EA0; если не установлен патч "Запуск альтернативного радиомидлета вместо стандартного"
+;869864: 9BDC6EA0 317506A0; если установлен, раскомментировать эту и закомментировать предыдущую
+
+869B3C: 6903 6E03
+8699A0: 7603000077030000780300007903 8F03000090030000910300009203
+8699B0: 7A03 9303
+869860: 850100 D31401
+
+; -No4-
+; Исправление ошибок Native Menu: архив сообщений
+; Fix native menu: enable msg archive
+;(c) Miha_r
+
+88F808: E9D87AA0 D77F6EA0
+
+; -No5-
+; Исправление в нативном меню Сообщения-Настройки
+; Fix SMS setting Menu in Native Menu
+;(c) BingK(binghelingxi)
+;(p) sempai
+
+088F9A4: 91 10
+07AE1FE: 30 18
+07AE100: D6 F2
+
+; -No6-
+; Исправить запуск Таймера в Native Menu
+; Fix timer in Native Menu
+;(c) caine
+;(r) ThE TrIFoN
+;(p) sim_emrom
+
+08833B0: 674D77 39836E
+
+; -No7-
+; Исправление кнопок
+; Native Menu Key Fix
+;(c) BingK(binghelingxi)
+;(p) snoopyhzy
+
+; Кнопки: 0 - Мои файлы, * - Другие функции, # - Настройки
+; Кнопка звонка - меню Разработчика
+;*-Extra 0-Mystuff #-Setup GreenKey-Dev.Menu
+
+;NMNU_FIX_KEY_HOOK3
+0x006EDD2C: 1529 0529
+;NMNU_FIX_KEY_HOOK1
+0x00A24558: 162869D171688868 004A904701CD35A1
+;NMNU_FIX_KEY_HOOK2
+0x00A24564: 3928 3C28
+;NMNU_FIX_KEY_BODY
+#pragma enable old_equal_ff
+0x0135CD00: 162807D0142803D015280FD13C2006E0
+0x0135CD10: 3A2004E071688868302802D13B207168
+0x0135CD20: 8860716888687246121D10477246D432
+0x0135CD30: 1047
+#pragma disable old_equal_ff
+
+; -No8-
+; Исправление позиции иконок и фона
+; Native Menu fix. Fix icon position and backgroud position
+;(c) BingK(binghelingxi)
+;(p) snoopyhzy
+
+;TRA_NMENU_ICON_PBG_HOOK
+0x00A22460: 616A80000E58201C 0049884741CC35A1
+;TRA_NMENU_ICON_PBG_BODY
+#pragma enable old_equal_ff
+0x0135CC40: 616A80000E58201C25498E4244D34D31
+0x0135CC50: 8E4241D81FB42368002B37D018880428
+0x0135CC60: 01D1012106E0512801D14E2102E09E28
+0x0135CC70: 2CD19A2119805431042299520222985A
+0x0135CC80: 3F2801D139211BE0762801D1642117E0
+0x0135CC90: AD2801D19E2113E0E42801D1CC210FE0
+0x0135CCA0: 412801D13C2110E0782801D176210CE0
+0x0135CCB0: AF2801D1B02108E0E62807D1EA2104E0
+0x0135CCC0: 99525431121D995200E0995220699D28
+0x0135CCD0: 01D1172020611FBC7146091D08470000
+0x0135CCE0: 69030000
+#pragma disable old_equal_ff
+
+; -No9-
+; Исправление в нативном меню Настройки-Часы-Показ. часы-Вкл./Выкл.
+; Show clock on/off fix in Native Menu
+;(c) BingK(binghelingxi)
+;(p) sempai
+
+;NMNU_SHOW_TIME_FIX_HOOK1,NMNU_SHOW_TIME_FIX_HOOK2
+08A8C90: EF347CA0F7347CA0 411606A0511606A0
+;NMNU_SHOW_TIME_FIX_BODY
+#pragma enable old_equal_ff
+0061640: F0B5071C064EB047381C064EB047F0BD
+0061650: F0B50F1C044EB047391C044EB047F0BD
+0061660: 65405CA0DF206FA037405CA0F3206FA0
+#pragma disable old_equal_ff
+
+; -No10-
+; Добавить будильник в органайзер Native Menu
+; Add alarm in Organiser in Native Menu
+;(c) BingK(binghelingxi)
+;(p) sempai
+
+;If you use Change alarmclock to radio in native menu, you will find no alarm in NativeMenu.
+;If use this,you can find it in native menu. Also Fix Remote mync. in the patch.
+
+-24850
+08A7FC4: 07 08
+08A7F6C: 314F77A0 0x00000000
+08A7F70: 394F77A0 04080000
+08A7F74: 4F4F77A0 04080000
+08A7F78: 654F77A0 0x7FFFFFFF
+08A7F7C: 6F4F77A0 0x00000000
+08A7F80: 914F77A0 0x00000003
+08A7F84: 9B4F77A0 0x0000059D
+08A7FC0: 1C3788A0 0xA135FFE0
+-0
+
++135FFE0
+00: FFFFFFFF 314F77A0
+04: FFFFFFFF 0xA06E81E5
+08: FFFFFFFF 394F77A0
+0C: FFFFFFFF 4F4F77A0
+10: FFFFFFFF 654F77A0
+14: FFFFFFFF 6F4F77A0
+18: FFFFFFFF 914F77A0
+1C: FFFFFFFF 0xA06E8195
++0
+
+-24850
+;lgp
+;008A7EAC:9F0E0000 9F0E0000
+008A7EC8:F5170000 61080000
+008A7EE4:6F030000 F5170000
+008A7F00:D8030000 6F030000
+008A7F1C:E90B0000 D8030000
+008A7F38: AE030000 E90B0000
+008A7F54: 04080000 AE030000
+-0
+
+; -No11-
+; Убрать белый фон у иконок в Native Menu
+; Remove Icons White Background in Native Menu
+;(c) SiNgle
+;(p) sempai
+
+0A24462: 00 FF
+0A24506: E7F7DEFE 00280028
+
+; -No12-
+; Native Menu вместо Главного в опциях разговора
+; Native Menu instead of Flex-Menu in conversation options
+;(c) Zhek@
+
+86C8B8: FDDE6FA0 7BB063A0
+
+; -No13-
+; Native Menu с названием вместо Управ. лиценз. (NAT_LICENSE_MANAGER)
+; Native Menu+Name instead of Licence mgr.(NAT_LICENSE_MANAGER)
+;(c) SiNgle 
+;(r) weclnt
+;(p) Grizzzzly
+
+;НЕ ОБЯЗАТЕЛЕН, если ставить патч No14
+;NO MORE NEEDED due to No14
+;083D494: 818B6EA0 7BB063A0 ; вместо "Управ. лиценз."
+
+; -No14-
+; Native Menu вместо FlexMenu
+; Native Menu instead of FlexMenu
+;(c) 42Gzb
+;(p) sim_emrom
+
++83D694
+00: A5836EA0 0xA063B07B
+0C: A2 72
+;2C: 7C 80 ;icon for MS: 7C - MainMenu icon, 80 - icon for change
+30: A200 0D14
+34: A200 0D14
+40: 3205 8923
+44: 3205 8923 
+5C: 3B 1F
+60: 02 00
+64: 987DA0A0B07DA0A0 0000000000000000
++0
+
+;------------------------- end -------------------------
+

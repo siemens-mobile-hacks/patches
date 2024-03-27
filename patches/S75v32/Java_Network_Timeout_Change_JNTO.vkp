@@ -1,0 +1,14 @@
+;S75v32
+;Изменить таймаут пинга в Java
+;Java Network Timeout Change JNTO
+;(c) Rst7/CBSIE
+;(p) caine
+;Version: 1.0
+;PatchID: 5526
+;Details: https://patches.kibab.com/patches/details.php5?id=5526
+/*
+После этого патча в Джиме работает таймаут пинга 250, соответственно, экономим траффик...
+*/
+09F1660: 0010A0E1 401AA0E3
+;------------------------- end -------------------------
+

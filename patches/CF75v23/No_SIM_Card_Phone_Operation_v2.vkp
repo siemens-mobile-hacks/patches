@@ -1,0 +1,21 @@
+;CF75v23
+;Работа с Телефоном без Сим-Карты
+;No SIM Card Phone Operation
+;(c) SiNgle
+;(p) Виктор89
+;Version: 2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9857
+;PatchID: 9865
+;Details: https://patches.kibab.com/patches/details.php5?id=9865
+/*
+Нажмите на джойстик, чтобы начать начать работу.
+По многочисленным просьбам трудящихся.
+*/
+02CB12C: 15283FD1 D0F6B8FC
+#pragma enable old_equal_ff
+019BAA0: FEB5152800D1FEBD292802D104480349
+019BAB0: 8847281CFEBC06B0F0BDC046,0xA07E3FEC 
+019BAC0: 0xA80B2000
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

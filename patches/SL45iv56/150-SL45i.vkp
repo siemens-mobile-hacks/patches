@@ -1,0 +1,55 @@
+;SL45iv56
+;SVS. Ярлык на чтение SMS
+;SVS. SMS View Shortcut
+;(c) RizaPN
+;Version: 1.5
+;PatchID: 1754
+;Details: https://patches.kibab.com/patches/details.php5?id=1754
+/*
+Пожалуйста отмените старые патчи "SDS" и "SVS"!!! 
+
+Изменить ярлык "Отправить в архив" (правый софт) на ярлык "Удалить". 
+Стрелка вправо - как ярлык "Смотреть следующее сообщение" 
+Изменяет ярлык "Печать через IrDA" на "Сохранить сообщение" (отправить в архив). 
+
+
+Release: June 13, 2004 (v1.0)
+Release: June 19, 2004 (v1.5)
+
+Более новая версия патча №150 с http://patch.oslik.ru/SL45_RU
+
+
+English: ;Modify "Move to Archive" shortcut (RightSoft button) to become "Delete"
+;Modify "Print via IrDA" option to become "Save Message" (move to archive!)
+;If you do not want these modification, just comment them ...
+*/
+0x18AE8E: 6F 25			; modify "Move to Archive" function -> "Delete"
+0x18AE92: 4B4E 7E01		; modify "Move to Archive" text button -> "Delete"
+0x18D2E6: C807C807 7B057B05	; modify "Print via IrDA" text -> "Save Message"
+
+0x39E490: 88908880 DAC7D0E1
+0x3A8822: F081E009 FAC7E2E1
+
+0x27E1D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6F4143AD750370088D488C488908880
+0x27E1E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DB00ECF006F008008870886026F05804
+0x27E1F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6F4103AD75037009884989446F93500
+0x27E200: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3D07DC49D448420040493D02DAD942EA
+0x27E210: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FCF0FADA0889FFFFFFFFFFFFFFFFFFFF
+
+;Use Right Arrow as a "View Next Message" shortcut and
+;Left Arrow key as a "View Previous Message" shortcut
+
+0x39EA40: DAEE A4EC
+0x39EA24: 7CED A4EC
+0x39ECA4: F0C8F0D9 DAC7E0E2
+0x39ECF2: DC4FB87E DAC7E8E2
+0x39ED48: DC4FB87E DAC7E8E2
+
+0x27E2E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F02CF0C8F0D9DB0046F214003D032872
+0x27E2F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DD010076DC4FB87EDB00FFFFFFFFFFFF
+
+;if you want to swap Left and Right Arrow function, uncomment this:
+
+;0x27E2EA: FF 17
+;------------------------- end -------------------------
+

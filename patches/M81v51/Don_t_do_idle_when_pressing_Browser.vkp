@@ -1,0 +1,21 @@
+;M81v51
+;Не выходить в режим ожидания и не спрашивать при нажатии кнопки браузера
+;Don't do idle and ask when pressing Browser button
+;(c) Rst7, ThE TrIFoN, weclnt
+;(p) Cypok
+;Version: 
+;PatchID: 6711
+;Details: https://patches.kibab.com/patches/details.php5?id=6711
+/*
+Не спрашивает: "Запустить броузер?"
+*/
+034EED2: A8F07CEC C046C046
+;Не спрашивать при нажати кнопки браузера
+;Don't ask when pressing Browser button
+;(c) weclnt
+
+034EEBA: 0098 381C
+
+034EEC2: B0F746FA002813D0 C046C046C046C046
+;------------------------- end -------------------------
+

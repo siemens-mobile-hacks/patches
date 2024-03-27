@@ -1,0 +1,14 @@
+;S7Cv47
+;Don't Cut Numbers in Addressbook
+;Don't Cut Numbers in Addressbook
+;(c) BingK(binghelingxi), 1nvisible
+;Version: 
+;PatchID: 9289
+;Details: https://patches.kibab.com/patches/details.php5?id=9289
+/*
+
+*/
+069FCF8: 1500009A 150000EA ;Phonebook,(c)BingK(binghelingxi)
+06840D0: 1700009A 170000EA ;Addressbook,(c)1nvisible
+;------------------------- end -------------------------
+

@@ -1,0 +1,22 @@
+;SK65v50
+;Вызов Различных Функций при Залоченной Клавиатуре
+;Running Some Functions While Keyboard is Locked
+;(c) 1nvisible
+;(r) Bennie, avkiev, AsteriX, KiRiK, SiNgle
+;Version: 10.5
+;PatchID: 4217
+;Details: https://patches.kibab.com/patches/details.php5?id=4217
+/*
+Телефон выполняет различные функции при нажатии клавиш при залоченной клавиатуре.
+Функция может быть вызвана как при одиночном нажатии клавиши, так и при двойном (для защиты от случайного нажатия).
+English:
+The phone runs some functions while keyboard is locked.
+The function may be called either on short press or on double press (to prevent casual pressing).
+*/
+#pragma enable old_equal_ff
+01FF100: 014B1847014B1847A120FCA0C120FCA0 ;loader
+02C93E2: DDF7E7FB 35F78DFE                ;entry for idle
+02CCB26: 0223E05E 32F7EDFA                ;entry for screensaver
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

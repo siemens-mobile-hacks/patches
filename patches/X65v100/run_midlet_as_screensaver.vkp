@@ -1,0 +1,17 @@
+;X65v100
+;Запуск мидлета как скринсейвера
+;Run Midlet As Screensaver
+;(c) Geka
+;(r) ~Jhellico
+;Version: 0.2
+;PatchID: 6526
+;Details: https://patches.kibab.com/patches/details.php5?id=6526
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=run_midlet_as_screensaver.zip
+
+/*
+Позволяет запустить мидлет как скринсейвер.
+путь к мидлету в конфиге
+*/
+;качаем приложенный файл
+;------------------------- end -------------------------
+

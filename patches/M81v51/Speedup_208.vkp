@@ -1,0 +1,21 @@
+;M81v51
+;Разгон телефона до 208 МГц
+;Speedup of mobile till 208 MHz
+;(c) SiNgle
+;(r) (i) avkiev
+;(p) Cypok
+;Version: 
+;PatchID: 6720
+;Details: https://patches.kibab.com/patches/details.php5?id=6720
+/*
+Разгон процессора телефона до 208 МГц.
+English:Speedup of mobile till 208 MHz
+*/
+0234128: 7008C0E3 B43FF9EB
+
+#pragma enable old_equal_ff
+0084000: 10209FE50020D2E5010052E388F08E02
+0084010: 0706C0E30EF0A0E1C4020800
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

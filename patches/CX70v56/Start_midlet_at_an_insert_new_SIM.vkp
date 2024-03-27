@@ -1,0 +1,27 @@
+;CX70v56
+;Запуск мидлета при вставке новой SIM
+;Start midlet at an insert new SIM
+;(c) SiNgle
+;(p) me-at
+;Version: 
+;PatchID: 693
+;Details: https://patches.kibab.com/patches/details.php5?id=693
+/*
+Описание и мидлет лежат в файле, прикреплённом к патчу #209  - для 50й прошивки.
+
+Необходимо отменить патч *Убрать вопрос "Копировать SIM" при смене SIM*
+
+
+*/
+;http://patches.kibab.com/cnt.php5?d=cx70v50&f=Start_midlet_at_an_insert_new_SIM.rar - описание и сам мидлет
+0A82322: F5F091FE 7FF56EE9
+#pragma enable old_equal_ff
+0801600: FF7F2DE918008FE20030A0E30020A0E3
+0801610: 08409FE50FE0A0E114FF2FE1FFBFBDE8
+0801620: A494CDA0
+0801624: "2:\\gsm.jar",0000 ;путь к мидлету, его можно поменять на любой другой. !Слэшей должно быть по два!
+#pragma disable old_equal_ff
+
+
+;------------------------- end -------------------------
+

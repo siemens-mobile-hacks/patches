@@ -1,0 +1,28 @@
+;SL45iv56
+;Долгое нажатие PTT при блокирований клавиатуре для запуска mp3
+;Long press PTT while keyboard locked to start MP3Player
+;(c) Charger
+;Version: 
+;PatchID: 1984
+;Details: https://patches.kibab.com/patches/details.php5?id=1984
+/*
+!!! Необходим патч EKS (убрать сообщение о том, что клава 
+заблокирована при нажатии любой кнопки) !!! 
+
+Патч добавляет функцию долгого нажатия PTT при блокированной 
+клавиатуре для включения mp3, короткое нажатие - как и раньше voicedial.
+*/
+27d980: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff f08ef09f0884dc5998c8a8d8dc4dd4ec040046feeb002d0546feea002d0afadbdc07dc4dd4ec060046fe3a003d0afadba606dc4dd4ec060046fe3a003d02fadbce07fadbdc07 
+
+
+;если стоит патч чтения пропущенных вызовов\новых SMS при блоке (by sl45\6688i), если нет закомментировать 
+27D880: 2D0F46F84C002D1046F81F00FADBCC07 2D0F46F84C002D10FAC780D9CC00CC00 
+
+;если патч не стоит раскомментируйте 
+;3b07c8: 46f81f00 FAC780D9 
+
+;если вы пользуетесь разблокированием коротким нажатием с 
+;подтверждением, закомментируйте строчку: 
+3b07c2: 46f81e002d03 46f814002d0a 
+;------------------------- end -------------------------
+

@@ -1,0 +1,51 @@
+;SL45iv56
+;BFL. Список бинарников
+;BFL. Binary File List
+;(c) rizapn
+;Version: 2
+;PatchID: 2065
+;Details: https://patches.kibab.com/patches/details.php5?id=2065
+/*
+Ярлык на Список bin файлов с помощью Меню-# 
+который раньше использовался для Меню Разработчика... 
+
+Папка с bin файлами используемая для патча A:/zbin/Utilities 
+Если вы хотите использовать другое имя для папки, измените 
+на A:/dirname ... 
+
+v1.1 -> добавлен ярлык для bin Игр 
+v2 -> Добавлен ярлык "Запустить последний BIN файл" ([Меню][ЗЕЛЕНАЯ]) 
+ Если ен было загружено ни одного BIN файла, [Меню][ЗЕЛЕНАЯ] сработает как [Меню][#]
+
+
+Created: March 12, 2005 
+Modified: March 15, 2005 (v2)
+*/
+0x3ABCC8: 46FC1400 FAE43074 
+
+0x3B40B0: 46FC1400 FAE43074 
+
+0x447420: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2A2A2A2042464C2076312E30202A2A2A 
+0x447430: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46FC14002D0B48C53D07D7402000F2F4 
+0x447440: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00002D04FA080000FADBB440E6FE8634 
+0x447450: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FF910326F02C02F0C066FCFF3FF2FD 
+0x447460: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02FE88F088E088C0DAD860E098C006FC 
+0x447470: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3100F2FD02FE98E098F0DAC71685DAEE 
+0x447480: FFFFFFFFFFFF AC1CFAD892E1 
+
+;Папка с BIN файлами: 
+0x447486: FFFFFFFFFFFFFFFFFFFF 413A2F7A62696E2F5574 
+0x447490: FFFFFFFFFFFFFFFF 696C697469657300 
+
+;This routines is for Games BFL 
+;Меняет ---Помощь--- на "Другое", ярлык в BIN Игры 
+0x1A274A: 2801AB02 40024002 
+0x1A2774: DEFFEB00 A074E400 
+
+0x4474A0: FFFFFFFFFFFFFFFFFFFF E6FEAA34E6FF91030DD5 
+
+;Папка: A:/zbin/Games ... 
+0x4474AA: FFFFFFFFFFFF 413A2F7A6269 
+0x4474B0: FFFFFFFFFFFFFFFF 6E2F47616D657300
+;------------------------- end -------------------------
+

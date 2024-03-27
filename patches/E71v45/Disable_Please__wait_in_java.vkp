@@ -1,0 +1,17 @@
+;E71v45
+;Убрать "Пожалуйста, подождите" в ява приложениях
+;Disable "Please, wait" in java
+;(c) Evgr
+;Version: 1.0
+;PatchID: 8760
+;Details: https://patches.kibab.com/patches/details.php5?id=8760
+/*
+Убираем в калькуляторе, конвертере величин, онлайн статусе, секундомере, радио, мидлетах.
+Баг: черный экран вместо сообщения "Подождите".
+
+Disable in Calculator, Unit coverter, Online status, Stopwatch, Radio, Midlets.
+BUG: black screen instead of wait.
+*/
+0A1CD42: 32F7E4F8 C046C046
+;------------------------- end -------------------------
+

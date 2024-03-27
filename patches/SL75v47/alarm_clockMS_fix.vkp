@@ -1,0 +1,15 @@
+;SL75v47
+;Показывать время будильника вместо часов на главном экране и экране заблокированной клавиатуры
+;Show alarm clock instead of clock on mainscreen and keylock screen
+;(c) Evgr
+;(p) bertgrin
+;Version: 2
+;PatchID: 10569
+;Details: https://patches.kibab.com/patches/details.php5?id=10569
+/*
+;(idea) St. Hunter
+; SWI 0xCF
+*/
+0903AAA: 6846FDF794FD2A1C201C6946 C7DFCF800C30011C201C2A1C
+;------------------------- end -------------------------
+

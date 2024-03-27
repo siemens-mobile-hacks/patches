@@ -1,0 +1,18 @@
+;M55v91
+;Отключение верификации Java-классов
+;Disable Java classes verification
+;(c) SiNgle, avkiev
+;(r) chaos
+;(p) ZZToP
+;Version: 
+;PatchID: 897
+;Details: https://patches.kibab.com/patches/details.php5?id=897
+/*
+Ускоряет запуск мидлетов на 30-70%
+
+English:
+Decreaes MIDlet launchtime up to 30-70%
+*/
+75849C: 3D 0D
+;------------------------- end -------------------------
+

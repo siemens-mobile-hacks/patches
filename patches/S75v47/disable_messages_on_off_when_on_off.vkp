@@ -1,0 +1,14 @@
+;S75v47
+;Отключение сообщение вкл\выкл при вкл\выкл irda или bluetooth
+;disable messages on\off when on\off irda or bluetooth
+;(c) Evgr
+;(p) den11111
+;Version: 
+;PatchID: 8580
+;Details: https://patches.kibab.com/patches/details.php5?id=8580
+/*
+
+*/
+0331668: FFF728FB C046C046
+;------------------------- end -------------------------
+

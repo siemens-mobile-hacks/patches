@@ -1,0 +1,18 @@
+;SL45iv56
+;Directory
+;Directory
+;(c) ???
+;Version: 
+;PatchID: 5910
+;Details: https://patches.kibab.com/patches/details.php5?id=5910
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=Directory.zip
+
+/*
+Запустите bin-файл для перехода в соответствующую папку или же укажите их точки входа (используя Ebin) для назначения ярлыка.
+
+English:
+Click bin-file to go to specified directory directly, or put its EP (using Ebin) on certain key for shortcut.
+*/
+; See in attach
+;------------------------- end -------------------------
+

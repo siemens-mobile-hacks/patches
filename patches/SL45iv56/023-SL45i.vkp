@@ -1,0 +1,15 @@
+;SL45iv56
+;Воспроизводит в наушниках туже мелодию, что и "громкий" динамик
+;Make melody for earphone same with the normal speaker
+;(c) RizaPN
+;Version: 
+;PatchID: 1565
+;Details: https://patches.kibab.com/patches/details.php5?id=1565
+/*
+Для тех, кто менял оригинальные мелодии на собственные (например ffmod'ом). 
+
+Патч №023 с http://patch.oslik.ru/SL45_RU
+*/
+46478C: 3D 0D
+;------------------------- end -------------------------
+

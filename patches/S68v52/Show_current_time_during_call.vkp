@@ -1,0 +1,20 @@
+;S68v52
+;Show current time during call
+;Show current time during call
+;(c) Bennie
+;(p) sempai
+;Version: 
+;PatchID: 10167
+;Details: https://patches.kibab.com/patches/details.php5?id=10167
+/*
+
+*/
+02C8996: 04A80B21EBF024EC 68461B21BAF531FB ; Y
+#pragma enable old_equal_ff
+0083000: 30B5041C0A4B984782B000206946094B
+0083010: 9847201C084988472D21215401302118
+0083020: 68460322054DA84702B0201C30BDFFFF
+0083030: 0xA0827349,0xA07A3E33,0xA0FC117D,0xA023A2F5 ; A, B, C, D
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

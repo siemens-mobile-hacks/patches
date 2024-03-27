@@ -1,0 +1,20 @@
+;SL75v47
+;Сброс звонка по достижении определенного времени-MP
+;Drop Call On Certain Time-MP
+;(c) 1nvisible
+;(r) ~Jhellico,Apo4emu,-=(Kad)=-
+;(p) bertgrin
+;Version: 1.2
+;PatchID: 10576
+;Details: https://patches.kibab.com/patches/details.php5?id=10576
+/*
+тестим врезка 
+копирайтам просьба отделять сразу тело патча
+*/
+09B0CEA: 4CF7EBFF01300004000C C046,0049D6AB,0xA0070001
+;привязка
+00700E0: FFFFFFFFFFFFFFFF 004F8F5B,0xA08FDCC5  ; 072: SetCurrentSecondOfCall
+00700E8: FFFFFFFFFFFFFFFF 004F8F5B,0xA0D0E90B  ; 073: GetTypeOfCall
+00700F0: FFFFFFFFFFFFFFFF 004F8F5B,0xA09BA509  ; 065: EndCall
+;------------------------- end -------------------------
+

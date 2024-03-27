@@ -1,0 +1,22 @@
+;EL71v45
+;Автопоказ полей Получатель, Тема и др при создании сообщений
+;Show_TO_and_etc_on_create_messages
+;(c) Feyman
+;Version: 
+;PatchID: 9655
+;Details: https://patches.kibab.com/patches/details.php5?id=9655
+/*
+
+*/
+; create SMS&MMS
+;0024274b: 6e6f6e656d70747927 747275652720202020 ;show subjekt
+00242764: 66616c736527 747275652720 ;show to
+
+; Create email
+0022bf8f: 6e6f6e656d70747927 747275652720202020 ;show subjekt
+0022bfa8: 66616c736527 747275652720 ;show to
+;0022bfbe: 66616c736527 747275652720 ;show CC
+;0022bfd5: 66616c736527 747275652720 ;show BCC
+
+;------------------------- end -------------------------
+

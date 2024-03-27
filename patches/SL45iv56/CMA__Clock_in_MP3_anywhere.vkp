@@ -1,0 +1,48 @@
+;SL45iv56
+;CMA. Часы в MP3 везде
+;CMA. Clock in MP3 anywhere
+;(c) alexta
+;(r) sc0ty
+;Version: 
+;PatchID: 2082
+;Details: https://patches.kibab.com/patches/details.php5?id=2082
+/*
+Патч для отображения часов в произвольном месте экрана при проигрывании MP3. Очень удобно использовать с настройкой вида экрана MP3 от Charger (у меня время отображается на месте длительности, а длительность на месте времени в JAD). 
+
+
+Released: July 18, 2005
+*/
+3BE8A4: DAC7EEAB DAC780D0 
+3BD966: DAC7EEAB DAC780D0 
+
+27D080: FFFFFFFFFFFFFFFF DAC7EEABD7403200 
+27D088: FFFFFFFFFFFFFFFF C2FEB62FDAC1EC22 
+27D090: FFFFFFFFFFFFFFFF D7403200C2FEB52F 
+27D098: FFFFFFFFFFFFFFFF DAC1EC22D7403200 
+27D0A0: FFFFFFFFFFFFFFFF C2FEB42FDAC1EC22 
+
+27D0A8: FFFFFFFFFFFFFFFF E6FC4600D7500D00 
+27D0B0: FFFFFFFFFFFFFFFF F2F1DE25F2F2DC25 
+27D0B8: FFFFFFFFFFFFFFFF 8820BB05E0AEBB10 
+27D0C0: FFFFFFFFFFFFFFFF 9810BB01DB00E0A2 
+27D0C8: FFFFFFFFFFFFFFFF F6F10EFE5B22F2F1 
+27D0D0: FFFFFFFFFFFFFFFF 0CFE8810F2FE0EFE 
+27D0D8: FFFFFFFFFFFFFFFF BB0398E0BB01CB00 
+27D0E0: FFFFFFFFFFFFFFFF 88C006FE0102E6FD 
+27D0E8: FFFFFFFFFFFFFFFF 1100DAC1EC2298C0 
+27D0F0: FFFFFFFF         08C6CB00 
+
+; Customize 
+;27D0AA: 46 xx ;xx - clock distance from left display edger 
+;27D0E8: 11 xx ;xx - clock distance from top display edger 
+
+;27D0E4: 0102 xxyy ;xxyy - digit number zero (next pictures is: 1 - 9 and ':' (*) 
+;------------------------------------------------------------------- 
+; (*) - Number of image is number with exchanged bytes e.g. image 
+; No. 318 = 13Eh after exchanging bytes we have 01 3E then 3E01 
+;------------------------------------------------------------------- 
+
+; ##### Picture 523 - Colon for clock ##### 
+4B3FAE: 010100030301030103 030333330303333303 
+;------------------------- end -------------------------
+

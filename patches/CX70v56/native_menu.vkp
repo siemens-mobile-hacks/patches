@@ -1,0 +1,17 @@
+;CX70v56
+;Замена меню на супербыстрое
+;Press joystick goto SuperFast main menu
+;(c) SiNgle
+;(p) TheKING
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9206
+;PatchID: 1115
+;Details: https://patches.kibab.com/patches/details.php5?id=1115
+/*
+
+*/
+;* Замена меню на супербыстрое ** Press joystick goto SuperFast main menu * © SiNgle, § TheKING
+;!Пункт меню "Спис. Вызовов" - "Время/Стоимость" вырубает телефон
+09432F4: BB028F 39038D
+;------------------------- end -------------------------
+

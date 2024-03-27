@@ -1,0 +1,14 @@
+;CX70v56
+;Отключить вопрос о вкл/выкл GPRS через меню
+;Disable GPRS on/off question in menu
+;(c) 1nvisible
+;(p) SiamiX
+;Version: 
+;PatchID: 5724
+;Details: https://patches.kibab.com/patches/details.php5?id=5724
+/*
+
+*/
+1719C8E: 18F070EF 9047C046
+;------------------------- end -------------------------
+

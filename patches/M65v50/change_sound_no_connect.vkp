@@ -1,0 +1,14 @@
+;M65v50
+;Замена звука "Нет соединения"
+;change sound "no connection"
+;(c) B-727
+;(p) AsteriX
+;Version: 
+;PatchID: 6307
+;Details: https://patches.kibab.com/patches/details.php5?id=6307
+/*
+Замена.
+*/
+13B0606: 1800FAFF0000B6034A0178054A0108074A01FFFFE803F9FF0300 0C00B8073200FFFF3200400C1A00FFFFFFFFFFFFFFFFFFFFFFFF
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;CX70v56
+;Отключить Вопрос при Редактировании Интернет-Профилей
+;Disable Internet Profiles Edit Query
+;(c) 1nvisible
+;(p) Lost
+;Version: 
+;PatchID: 3393
+;Details: https://patches.kibab.com/patches/details.php5?id=3393
+/*
+Пункт "Добавить Из:" не работает
+English:"Add From:" item doesn't work 
+
+*/
+0916488: 00F088F8 FFF7EAFD
+;------------------------- end -------------------------
+

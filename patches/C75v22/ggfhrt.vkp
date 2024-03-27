@@ -1,0 +1,14 @@
+;C75v22
+;Открыть диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;Version: 
+;PatchID: 1146
+;Details: https://patches.kibab.com/patches/details.php5?id=1146
+/*
+
+*/
+086C8D0: 02 03
+
+;------------------------- end -------------------------
+

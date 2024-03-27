@@ -1,0 +1,16 @@
+;M75v25
+;Изменение прогрессбара
+;MusicProgressBarChanger
+;(c) KreN
+;(r) SiNgle, Kad
+;(p) Grizzzzly, VoVkA
+;Version: 1.0-MP
+;PatchID: 5437
+;Details: https://patches.kibab.com/patches/details.php5?id=5437
+/*
+
+*/
+03E10C4: 081080E50C3080E5 04F01FE5,0xA0FC7117
+03E1A6C: 500A9FE50250A0E1002090E5 04E08FE204F01FE5,0xA0FC7101
+;------------------------- end -------------------------
+

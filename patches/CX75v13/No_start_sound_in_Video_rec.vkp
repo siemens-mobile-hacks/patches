@@ -1,0 +1,14 @@
+;CX75v13
+;Отключить звук в начале записи видео
+;No start sound in Video rec
+;(c) SiNgle
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 7159
+;Details: https://patches.kibab.com/patches/details.php5?id=7159
+/*
+
+*/
+021E454: 1A 1D
+;------------------------- end -------------------------
+

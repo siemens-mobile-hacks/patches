@@ -1,0 +1,27 @@
+;SL45iv56
+;FFF. Папка для имени файла
+;FFF. Folder For Filename
+;(c) RizaPN
+;Version: 2
+;PatchID: 1937
+;Details: https://patches.kibab.com/patches/details.php5?id=1937
+/*
+Дает возможность использовать '\' и '/' как имя файла.
+Символы вводимые клавишей "0" заменяют 'ї' и 'Ў'.
+
+English: It will give a possibility to use '\' and '/' as a filename.
+The characters is putted under button '0' overwriting 'ї' and 'Ў'.
+Remark: It can be putted under another button, just see 
+the data around that address, and you will get the feeling.
+
+
+Release: March 26, 2003
+Updated: May 19, 2004
+*/
+;For SMS Archive and MP3 Playlist:
+0x186110: BF00A1 2F005C
+
+;For Dictaphone:
+0x185BE4: BF00A1 2F005C
+;------------------------- end -------------------------
+

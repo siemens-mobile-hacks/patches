@@ -1,0 +1,14 @@
+;M55v10
+;Не показывать надписи в заставке
+;Remove any text in screensaver
+;(c) Matr!x
+;Version: 
+;PatchID: 1469
+;Details: https://patches.kibab.com/patches/details.php5?id=1469
+/*
+
+*/
+0E56B8: DA2EF477 CC00CC00
+0E56D6: DA22B83E CC00CC00
+;------------------------- end -------------------------
+

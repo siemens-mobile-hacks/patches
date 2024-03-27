@@ -1,0 +1,17 @@
+;C55v24
+;Замена шрифта в строке даты
+;Replacement of a font in a line of date
+;(c) mcbobo
+;Version: 
+;PatchID: 2524
+;Details: https://patches.kibab.com/patches/details.php5?id=2524
+/*
+Замена шрифта в строке даты на жирный (можно и на тонкий :)
+*/
+4DC582: 06 07
+4DC5AA: 06 07
+4DC5CA: 06 07
+4DC5C2: 06 07
+4DC5DA: 06 07
+;------------------------- end -------------------------
+

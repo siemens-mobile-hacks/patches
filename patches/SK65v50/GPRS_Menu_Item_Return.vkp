@@ -1,0 +1,16 @@
+;SK65v50
+;Возвращение пункта меню GPRS
+;GPRS Menu Item Return
+;(c) 1nvisible
+;Version: 
+;PatchID: 4175
+;Details: https://patches.kibab.com/patches/details.php5?id=4175
+/*
+Для тех, у кого в меню пропал пункт GPRS и невозможно настроить опции GPRS в профилях соединений.
+English:
+For those who don't have GPRS item in menu and who cannot set up GPRS options in connection profiles.
+*/
+0381DF4: 00 FF
+03865F6: 00 FF
+;------------------------- end -------------------------
+

@@ -1,0 +1,20 @@
+;S55v20
+;Изменить действие кнопки СтрелкаВверх
+;Change Up Arrow Action
+;(c) ValeraVi
+;Version: 1
+;PatchID: 4790
+;Details: https://patches.kibab.com/patches/details.php5?id=4790
+/*
+Изменить действие кнопки СтрелкаВверх на
+"Информация о длительности последнего звонка" или другоe
+*/
+6B0006: FFFFFFFF DA72F2E2 ;Durat./Charge Last call.
+;DA72F2E2 - измените на любое другое действие (исп. call)
+
+32472E: 46FD0E00 FAAB0000
+6B0000: FFFFFFFFFFFF 46FD3B003D04
+6B000A: FFFFFFFFFFFF FA72A44E46FD
+6B0010: FFFFFFFFFFFF 0E00FA723247
+;------------------------- end -------------------------
+

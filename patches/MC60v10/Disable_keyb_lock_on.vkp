@@ -1,0 +1,14 @@
+;MC60v10
+;Отключить сообщение "Блокировка клавиатуры включена"
+;Disable message "Keypad locked on"
+;(c) Rasp
+;(r) Single,Sinclair,BoBa,Papuas и др.
+;Version: 
+;PatchID: 157
+;Details: https://patches.kibab.com/patches/details.php5?id=157
+/*
+Патч отключает сообщение "Блокировка клавиатуры включена".
+*/
+0D3ED4: DA2D 0D01
+;------------------------- end -------------------------
+

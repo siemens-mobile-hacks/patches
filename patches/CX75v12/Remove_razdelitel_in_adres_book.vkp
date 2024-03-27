@@ -1,0 +1,14 @@
+;CX75v12
+;Убрать запятую между именем и фамилией в списке адресной
+;Remove "," between last name and first name
+;(c) SiNgle
+;(p) TAPAKAH
+;Version: 1.0
+;PatchID: 559
+;Details: https://patches.kibab.com/patches/details.php5?id=559
+/*
+Убирает запятую между именем и фамилией в алресной книге.
+*/
+05CC7EE: 58F0A6E8 00280028
+;------------------------- end -------------------------
+

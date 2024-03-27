@@ -1,0 +1,13 @@
+;CX75v25
+;Убрать звук дозвона
+;Disable connecting sound
+;(c) AlexSid
+;Version: 
+;PatchID: 3486
+;Details: https://patches.kibab.com/patches/details.php5?id=3486
+/*
+
+*/
+04B9FAC: FCF54CA0 00000000
+;------------------------- end -------------------------
+

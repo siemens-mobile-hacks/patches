@@ -1,0 +1,13 @@
+;SL75v39
+;Убрать Эстонский язык из меню ввода.
+;Remove Estonian language from input languages menu
+;(c) Ziklop
+;Version: 
+;PatchID: 5348
+;Details: https://patches.kibab.com/patches/details.php5?id=5348
+/*
+
+*/
+0C15DAA: 00 01
+;------------------------- end -------------------------
+

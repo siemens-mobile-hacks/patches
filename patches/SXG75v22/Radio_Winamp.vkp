@@ -1,0 +1,15 @@
+;SXG75v22
+;Замена графики радио на похожий от Winamp
+;Graphic's change in Radio into Winamp-like one
+;(c) Unknown
+;Version: 
+;PatchID: 6171
+;Details: https://patches.kibab.com/patches/details.php5?id=6171
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sxg75v22&f=Radio_Winamp.zip
+
+/*
+brew\mod\fmradio\res\common
+*/
+       
+;------------------------- end -------------------------
+

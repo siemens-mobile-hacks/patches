@@ -1,0 +1,14 @@
+;M81v51
+;Сохранение списков при смене SIM-карты
+;Call list saving when SIM is changed
+;(c) starfriend
+;(p) Frezzz
+;Version: 
+;PatchID: 7124
+;Details: https://patches.kibab.com/patches/details.php5?id=7124
+/*
+
+*/
+03002BE: F9F078EB C046C046
+;------------------------- end -------------------------
+

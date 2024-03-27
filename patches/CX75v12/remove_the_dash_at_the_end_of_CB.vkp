@@ -1,0 +1,16 @@
+;CX75v12
+;Удалить дефис в конце CB-сообщения
+;Remove the dash at the end of CB news
+;(c) rreezzoo, Bo$s
+;(r) empeka, g-e-l-o
+;(p) BuG
+;Version: 1.0
+;PatchID: 529
+;Details: https://patches.kibab.com/patches/details.php5?id=529
+/*
+Удаляет прочерк в конце СВ-сообщения, также можно добавить фразу пользователя.
+*/
+01F1B29: 2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D "Any NameYou Want\0" ;maximum 24 ascii characters
+
+;------------------------- end -------------------------
+

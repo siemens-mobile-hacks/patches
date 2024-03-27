@@ -1,0 +1,19 @@
+;X75v100
+;Контроль звука в профилях
+;Mute controller (NSD)
+;(c) SimaFish
+;(r) Vedan,Vados,Evilfox
+;(p) -
+;Version: 1.0
+;PatchID: 8901
+;Details: https://patches.kibab.com/patches/details.php5?id=8901
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Mute_controller.zip
+
+/*
+
+Эльф является полноценной заменой мастер-патча "Mute per profile" - http://patches.kibab.com/patches/details.php5?id=7681
+В конфиге необходимо указать энтрипоинт вкл/выкл звука для своей модели и прошивки телефона.
+*/
+Mute controller (NSD)
+;------------------------- end -------------------------
+

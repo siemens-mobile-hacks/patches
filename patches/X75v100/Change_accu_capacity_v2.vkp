@@ -1,0 +1,19 @@
+;X75v100
+;Изменение ёмкости аккумулятора
+;Change accu capacity
+;(c) Geka
+;(r) (i) -=(Kad)=-
+;Version: 2
+;PatchID: 7055
+;Details: https://patches.kibab.com/patches/details.php5?id=7055
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Change_accu_capacity_v2.zip
+
+/*
+
+Не судите особо, первый опыт с эльфом..
+Добавлены сообщения что мол изменена емкость
+
+*/
+;
+;------------------------- end -------------------------
+

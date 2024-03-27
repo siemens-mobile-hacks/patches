@@ -1,0 +1,18 @@
+;CX75v23
+;Увеличить размер фото при входящем звонке
+;Enlarge incoming call photo
+;(c) SiNgle
+;(r) AsteriX, KiRiK
+;(p) Smelter
+;Version: 
+;PatchID: 1821
+;Details: https://patches.kibab.com/patches/details.php5?id=1821
+/*
+
+*/
+0518B46: 052104 002100
+0518B4E: 502280 842278 ; для SL65, C65 нужна только эта строка
+
+
+;------------------------- end -------------------------
+

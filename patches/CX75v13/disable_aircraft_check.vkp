@@ -1,0 +1,18 @@
+;CX75v13
+;Убрать подтверждение самолёта
+;Disable aircraft check
+;(c) Bennie
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 762
+;Details: https://patches.kibab.com/patches/details.php5?id=762
+/*
+RUS: Убирает навязчивое подтверждение включения телефона при использовании сим-карты с отключенной проверкой ПИН-кода.
+
+ENG: Removes annoying confirmation of switching phone on when using SIM-card with disabled PIN control.
+*/
+02C678D: D1 E0
+
+;------------------------- end -------------------------
+

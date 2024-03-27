@@ -1,0 +1,15 @@
+;M75v19
+;Менеджер Графических патчей
+;GraphPatchManager
+;(c) KreN
+;(r) avkiev
+;(p) Kibab
+;Version: 3.1avMP
+;PatchID: 2599
+;Details: https://patches.kibab.com/patches/details.php5?id=2599
+/*
+Обеспечивает работу нескольких других патчей, модифицирующих Главный Экран.
+*/
+02A8D54: 261C002D05900490 004FB847013EFCA0 ;M75v19
+;------------------------- end -------------------------
+

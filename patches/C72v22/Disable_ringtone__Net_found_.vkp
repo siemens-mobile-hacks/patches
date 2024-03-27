@@ -1,0 +1,13 @@
+;C72v22
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found"
+;(c) avkiev
+;Version: 
+;PatchID: 5807
+;Details: https://patches.kibab.com/patches/details.php5?id=5807
+/*
+
+*/
+15267C8: 5C03 FFFF
+;------------------------- end -------------------------
+

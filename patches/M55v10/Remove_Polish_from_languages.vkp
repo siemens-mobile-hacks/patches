@@ -1,0 +1,14 @@
+;M55v10
+;Убрать польский из меню выбора языков ввода
+;Remove Polish from language choose menu
+;(c) AlexSid
+;Version: 
+;PatchID: 1385
+;Details: https://patches.kibab.com/patches/details.php5?id=1385
+/*
+
+*/
+;41AC76: 0000 1501
+680018: D4C301 000000 ;отключение англ. Т9
+;------------------------- end -------------------------
+

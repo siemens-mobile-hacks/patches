@@ -1,0 +1,24 @@
+;S75v52
+;Выключаться при разряженном аккумуляторе
+;Switch off when akku is empty
+;(c) ThE TrIFoN
+;(p) Vados
+;Version: 
+;PatchID: 8438
+;Details: https://patches.kibab.com/patches/details.php5?id=8438
+/*
+Патч выключен - телефон не будет выключаться при пустой батарее
+Патч включен - телефон будет выключаться при пустой батарее
+Нормальное состояние патча - включен
+Для работы на пустой батарее - выключите патч, но не забудьте потом его включить
+Для включения телефона с посаженной батареей можно использовать safe-mode (удерживание # при включении)
+English:
+Patch disabled - phone won't switch off if battery is empty
+Patch enabled - phone will switch off if battery is empty
+Usually patch should be enabled
+For working with empty battery - disable patch, but don't forget enable it later
+For switching on mobile with empty battery - use safe-mode (press and hold # during start of mobile)
+*/
+01A9720: 7C021FE5100090E5772C02EA 00009FE510FF2FE1,0xA0066301 ; S75v52
+;------------------------- end -------------------------
+

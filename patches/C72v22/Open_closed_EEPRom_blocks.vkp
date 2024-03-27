@@ -1,0 +1,15 @@
+;C72v22
+;Открыть заблокированные блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;(p) Smelter
+;Version: 
+;PatchID: 5849
+;Details: https://patches.kibab.com/patches/details.php5?id=5849
+/*
+
+*/
+;* Открыть заблокированные блоки EEPRom ** Open closed EEPRom blocks *  © Skylord
+1186488: 00 01
+;------------------------- end -------------------------
+

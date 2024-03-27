@@ -1,0 +1,13 @@
+;M75v19
+;Открыть заблокированные блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;Version: 
+;PatchID: 2334
+;Details: https://patches.kibab.com/patches/details.php5?id=2334
+/*
+
+*/
+08CF264: 00 01
+;------------------------- end -------------------------
+

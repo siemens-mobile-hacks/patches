@@ -1,0 +1,52 @@
+;CX75v13
+;Инвертирование цифровых часов в заставке
+;Invert digiclock ScreenSaver
+;(c) SiNgle
+;(p) SMeeTBB
+;Version: 
+;PatchID: 1791
+;Details: https://patches.kibab.com/patches/details.php5?id=1791
+/*
+Инвертирование цифровых часов.
+*/
+02CFE08: 01 00 ;1h back
+02CFE10: 00 01 ;1h font
+02CFE52: 01 00 ;2h back
+02CFE5A: 00 01 ;2h font
+02CFE94: 01 00 ;":" back
+02CFE9C: 00 01 ;":" font
+02CFED0: 01 00 ;1m back
+02CFED8: 00 01 ;1m font
+02CFF18: 01 00 ;2m back
+02CFF20: 00 01 ;2m font
+02CFF6A: 01 00
+02CFF72: 00 01
+04ABDA0: 00 01 ;ProvName font
+04ABDA4: 01 00 ;background
+04ABE10: 00 01 ;ProvFon with Arrow
+04ABE14: 01 00 ;background with Arrow
+
+;color table (0..17h) R G B
+;00 - белый (white)
+;01 - чёрный (black)
+;02 - красный (red base)
+;03 - синий (navy base)
+;04 - зелёный (green base)
+;05 - малиновый (magenta base)
+;06 - голубой (aqua base)
+;07 - жёлтый (yellow base)
+;08 - светло-красный (red light)
+;09 - светло-синий (navy light)
+;0A - светло-зелёный (green light)
+;0B - светло-малиновый (magenta light)
+;0C - бледно-голубой (aqua light)
+;0D - бледно-желтый (уellow light)
+;0E - тёмно-красный (red dark)
+;0F - тёмно-синий (navy dark)
+;10 - тёмно-зелёный (green dark)
+;11 - тёмно-малиновый (magenta dark)
+;12 - тёмно-голубой aqua (dark)
+;13 - тёмно-жёлтый yellow (dark)
+
+;------------------------- end -------------------------
+

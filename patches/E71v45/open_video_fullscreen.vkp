@@ -1,0 +1,14 @@
+;E71v45
+;Открывать видео сразу во весь экран
+;Open video fullscreen immediately
+;(c) Ganster41
+;Version: 
+;PatchID: 9561
+;Details: https://patches.kibab.com/patches/details.php5?id=9561
+/*
+
+*/
+072B240: 00 01
+072B250: 00 01
+;------------------------- end -------------------------
+

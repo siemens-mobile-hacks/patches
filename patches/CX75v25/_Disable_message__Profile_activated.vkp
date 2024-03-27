@@ -1,0 +1,13 @@
+;CX75v25
+;Отключить сообщение "Профиль активирован"
+;*Disable message "Profile activated"
+;(c) 13.beta2
+;Version: 
+;PatchID: 3514
+;Details: https://patches.kibab.com/patches/details.php5?id=3514
+/*
+
+*/
+03B80B4: 2B1C 04E0
+;------------------------- end -------------------------
+

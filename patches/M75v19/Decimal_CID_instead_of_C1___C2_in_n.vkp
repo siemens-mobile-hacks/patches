@@ -1,0 +1,18 @@
+;M75v19
+;Десятичный CID вместо C1 и C2 в списке соседних сот
+;Decimal CID instead of C1 & C2 in neighbour list
+;(c) слава Богу
+;(r) SiNgle
+;Version: 
+;PatchID: 2331
+;Details: https://patches.kibab.com/patches/details.php5?id=2331
+/*
+
+*/
+0B3D8C2: 0123F856002802DA 203FB88B203702E0
+0B3D8D0: 2B 20
+0B3D8D4: 02 05
+0B3D8DE: 0223 0CE0
+0D0973C: 31204332 656C4944
+;------------------------- end -------------------------
+

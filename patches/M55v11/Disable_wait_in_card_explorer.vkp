@@ -1,0 +1,15 @@
+;M55v11
+;Отключить сообщение "Пожалуйста, подождите" в Card-Explorer
+;Disable "Please wait" message in Card Explorer
+;(c) Matr!x
+;(p) AlexSid
+;Version: 
+;PatchID: 5228
+;Details: https://patches.kibab.com/patches/details.php5?id=5228
+/*
+
+*/
+15D9B8: DA9978BA CC00CC00
+165B7E: DA9978BA CC00CC00
+;------------------------- end -------------------------
+

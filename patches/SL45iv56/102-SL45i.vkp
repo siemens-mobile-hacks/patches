@@ -1,0 +1,19 @@
+;SL45iv56
+;ISK. Инвертирование надписей софтклавиш
+;ISK. Invert Soft Key Text
+;(c) RizaPN
+;Version: 
+;PatchID: 1695
+;Details: https://patches.kibab.com/patches/details.php5?id=1695
+/*
+Инвертирует надписи софтклавиш, черный текст на белом фоне.
+
+
+Release: November 8, 2003
+
+Патч №102 с http://patch.oslik.ru/SL45_RU
+*/
+20E000: 60 00 
+20E109: 97 07 
+;------------------------- end -------------------------
+

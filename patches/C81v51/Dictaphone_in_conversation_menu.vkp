@@ -1,0 +1,15 @@
+;C81v51
+;Диктофон в меню во время разговора
+;Dictaphone in conversation menu
+;(c) Miha_r
+;(p) klaud
+;Version: 
+;PatchID: 7877
+;Details: https://patches.kibab.com/patches/details.php5?id=7877
+/*
+
+*/
+445100: 45AA34A0 677C33A0
+44527C: B604 6100
+;------------------------- end -------------------------
+

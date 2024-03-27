@@ -1,0 +1,19 @@
+;EL71v45
+;Включение телефона по напоминанию
+;The phone turns on by appointment
+;(c) 1nvisible
+;(p) Evgr
+;Version: 
+;PatchID: 8182
+;Details: https://patches.kibab.com/patches/details.php5?id=8182
+/*
+Включается по Дню рождения, набрать телефон, и, вроде, не включается по памятке
+*/
+09A3DD6: B86A0028 7EF299FF
+#pragma enable old_equal_ff
+0C22D0C: 3FB5074B1B78152B05DC064B98473FBC
+0C22D1C: 01B0054B18473FBCB86A002800BDC046
+0C22D2C: 74A5EFA8,389F54A0,133E9AA0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

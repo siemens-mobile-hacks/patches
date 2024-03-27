@@ -1,0 +1,14 @@
+;SL65v53
+;Меню выбора дисков и отображение скрытых файлов и папок
+;Disk selection menu
+;(c) SiNgle
+;Version: 
+;PatchID: 5263
+;Details: https://patches.kibab.com/patches/details.php5?id=5263
+/*
+
+*/
+099C7F4: 0900000A 000055E3
+099C850: 3534 2000
+;------------------------- end -------------------------
+

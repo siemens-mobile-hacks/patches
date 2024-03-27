@@ -1,0 +1,21 @@
+;EL71v45
+;Прием Всех Файлов на Флешку
+;Receive All Files to MicroSD
+;(c) 1nvisible
+;(r) Rst7
+;Version: 
+;PatchID: 8011
+;Details: https://patches.kibab.com/patches/details.php5?id=8011
+/*
+;! Аддон к * Приему Всех Файлов в Одну Папку * v0.91
+;! Addon to * Receive All Files to the Same Folder * v0.91
+*/
+1310052: 30 34 ;move Inbox folder to MicroSD
+08325BA: 30 34 ;move Misc folder to MicroSD
+08325CA: 30 34 
+08325D6: 30 34
+071BAB0: 8020 062D ;permissions patch
+071BB4C: 01 02 ;mode patch
+068C424: 00 04 ;free space patch
+;------------------------- end -------------------------
+

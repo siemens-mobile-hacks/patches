@@ -1,0 +1,18 @@
+;SL45iv56
+;Сменить плейлист на проигрывание по ярлыку
+;Change Playlist to autoplay in shortcuts
+;(c) GoLL@B
+;Version: 
+;PatchID: 2654
+;Details: https://patches.kibab.com/patches/details.php5?id=2654
+/*
+English: Patch changes function of playlist to autoplay in shortcuts 
+f.e when we press button 2 and we have set play mp3 shortcut, we have 
+autoplay not mp3 list.
+
+
+Release: 13 July 2006 
+*/
+3AE3F4: DADBFE86 DADBF886
+;------------------------- end -------------------------
+

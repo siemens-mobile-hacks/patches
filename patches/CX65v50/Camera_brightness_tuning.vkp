@@ -1,0 +1,15 @@
+;CX65v50
+;Настройка яркости камеры
+;Camera brightness tuning
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 2977
+;Details: https://patches.kibab.com/patches/details.php5?id=2977
+/*
+
+*/
+12EE781: 80 C0 ;можно выставить и больше до FF (can be changed up to FFh)
+
+;------------------------- end -------------------------
+

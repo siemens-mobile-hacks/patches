@@ -1,0 +1,15 @@
+;CF75v23
+;Включить выбор диапазона
+;Enable band selection
+;(c) Bennie
+;(p) yavadim
+;Version: 
+;PatchID: 6430
+;Details: https://patches.kibab.com/patches/details.php5?id=6430
+/*
+
+*/
+04B6728: 0502 FA01
+
+;------------------------- end -------------------------
+

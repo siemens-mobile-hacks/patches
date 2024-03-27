@@ -1,0 +1,25 @@
+;C75v24
+;Вибра в момент начала разговора
+;Vibrate shortly after connection
+;(c) SiNgle
+;(p) Fuchs
+;Version: 1,2
+;PatchID: 3890
+;Details: https://patches.kibab.com/patches/details.php5?id=3890
+/*
+!Режим включается одновременно с галкой в Меню-2-5-5-4 или 2-5-4-3 (Авт.Индикац.)
+!При входящих не вибрирует
+*/
+02CD854: BFF142EB0028 002832F7CCE9
+#pragma enable old_equal_ff
+01FFBF0: 00402DE9FF3F2DE90FE0A0E144F09FE5
+01FFC00: 000050E30900001A0100A0E30FE0A0E1
+01FFC10: 34F09FE5020050E30400001A2F00A0E3
+01FFC20: 0210A0E30120A0E30FE0A0E11CF09FE5
+01FFC30: 0FE0A0E118F09FE5000050E3FF3FBDE8
+01FFC40: 0040BDE80CF09FE5BFE150A007F1A2A0
+01FFC50: 0C442BA047F14CA05BD82CA0
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

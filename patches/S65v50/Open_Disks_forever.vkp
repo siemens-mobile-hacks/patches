@@ -1,0 +1,13 @@
+;S65v50
+;Открыть диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;Version: 
+;PatchID: 35
+;Details: https://patches.kibab.com/patches/details.php5?id=35
+/*
+Открыть скрытые диски навсегда
+*/
+1287654: 02 03
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;S75v47
+;Отключение камеры
+;Disable camera
+;(c) -=(Kad)=-
+;Version: 
+;PatchID: 7148
+;Details: https://patches.kibab.com/patches/details.php5?id=7148
+/*
+
+*/
+41F9F8: 0xA032D8AB 0xA006DA81
+;------------------------- end -------------------------
+

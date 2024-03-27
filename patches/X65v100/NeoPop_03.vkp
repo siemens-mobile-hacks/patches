@@ -1,0 +1,27 @@
+;X65v100
+;NeoPop
+;NeoPop
+;(c) cbn
+;Version: 0.3
+;PatchID: 6764
+;Details: https://patches.kibab.com/patches/details.php5?id=6764
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=NeoPop_03.zip
+
+/*
+NeoGeoPocket эмулятор elf
+
+Распаковать в папку 0:\ZBin\NeoGeo
+В extension.cfg добавить строку:
+ngc:0:\ZBin\NeoGeo\NeoPop.elf
+
+*/
+NeoGeoPocket эмулятор elf
+Продолжаем эмуляцию игровых приставок :)
+
+Распаковать в папку 0:\ZBin\NeoGeo
+В extension.cfg добавить строку:
+ngc:0:\ZBin\NeoGeo\NeoPop.elf
+
+Скачайте приложенный файл
+;------------------------- end -------------------------
+

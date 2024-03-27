@@ -1,0 +1,13 @@
+;S75v47
+;Дата вверху на главном экране в виде "Чт, 20 Апр"
+;Date at the top of mainscreen as "Thu, 20 Apr"
+;(c) avkiev
+;Version: 11-MP
+;PatchID: 5621
+;Details: https://patches.kibab.com/patches/details.php5?id=5621
+/*
+Обновление! Совместимость с загрузчиком эльфов 2.2
+*/
+0901C50: FEF7A5FC231C2A1C 004B9847,0xA0063A01   ; S75v47
+;------------------------- end -------------------------
+

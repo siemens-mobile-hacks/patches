@@ -1,0 +1,87 @@
+;SL45iv56
+;HBP. Ежечасный сигнал
+;HBP. Hourly Beep
+;(c) RizaPN, Lalo, rc-flitzer, lbuczko
+;Version: 4
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=3611
+;PatchID: 3320
+;Details: https://patches.kibab.com/patches/details.php5?id=3320
+/*
+Патч издает звуковой сигнал (пип) через установленные промежутки
+ времени (чаще всего - каждый час). Патч выбирается в меню "Приложения" в Функции 7.
+
+# Возможности: #
+- не пикает если осуществляется звонок;
+- звук пиканья можна выбирать прямо в телефоне (по желанию);
+- возможна единичная вибра вместо звука (новое в v3);
+- включается подсветка (по желанию);
+- появляется сообщение (по желанию);
+- часы пикают каждые ХХ минут (стандартно: 60);
+- (новое в v4) пиканье если есть непрочтенные SMS или пропущенные звонки (баг если есть только 1 анонимный звонок - напоминание о звонке не сработает).
+
+Отмените все старые версии патча!
+
+
+English:
+This patch gives a beeping sound in configurable time period 
+ (commonly every hour). Patch is selectable through application 
+ menu (v1 is enough) with function no. 7 
+
+ # Features: # 
+- no beep sound if call is in progress 
+- choosable beeping sound via phone (if wished) 
+- (new in v3) also possible vibra once as "sound" 
+- illumination turns on (if wished) 
+- message box pops up (if wished) 
+- clock beeps after each XX minutes (standard: 60) 
+- (new in v4) version beep if you have unreaded SMS or lost call (bug if you have only call with hidden id, the call reminder will not run).
+
+Please undo any older version of hourly beep.
+
+Release: May 7th, 2006 
+*/
+0x3B36BC: 26F00C00 DAE040CE 
+ 
+ 
+0x40CE40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400E00F3F8423A9AF43A60DAA3B200 
+0x40CE50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 48403D36E6FD3C00BB363D12BB4A9AF4 
+0x40CE60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1200DAC024AFE6FC3800DAC3B600E01C 
+0x40CE70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FDAE04DAE698F1BB3C0EF4BB350D20 
+0x40CE80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB380FF4BB31E6FD0A00BB1D3D15BB31 
+0x40CE90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 9AF41610D7400C00F2F4082D3D05D740 
+0x40CEA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0D00F2F4D8292D0CE6FC0100DAC3B600 
+0x40CEB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB201EF4BB190D04BB1C1FF4BB150D00 
+0x40CEC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 26F00C00DB00D7500D00F2F2DC25F2F4 
+0x40CED0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DE25F0C45C2C5C64204C0042F6F40EFE 
+0x40CEE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 4BDDF2F40CFECB00D7401100F7F84038 
+0x40CEF0: FFFFFFFFFFFFFFFFFFFFFFFF CB00D7401100F3F84038CB00 
+ 
+ 
+;----------HOUR BEEP----------- 
+;40CE56: 3C xx ;change period in minutes, standard is 60 = 003Ch 
+ 
+;40CE68: 38 xx  
+; sound number = 38h for changes look into Rizapn sound list 
+; sound no. 36h = CB-sound, then it's configurable in phone menu 
+; sound no. 00h = no sound 
+ 
+ 
+;40CE62: DAC024AF cc00cc00 ;if no light wanted 
+ 
+;string ID = 04AEh (=AE04 in firmware) 
+;40CE72: AE04 XXXX 
+ 
+; if no messagebox wanted 
+;40CE74: DAE698F1 CC00CC00 
+ 
+;40CE6A: DAC3B600 DAC36C02 ;vibra instead if sound 
+ 
+;-----------SMS OR CALL REMINDER--------- 
+ 
+;40CE88: 0A XX ;change period in minutes, standard is 10 
+ 
+;40CEAA: 01 XX ;to change sound number  
+ 
+;40CEAC: DAC3B600 DAC36C02 ;vibra instead if sound
+;------------------------- end -------------------------
+

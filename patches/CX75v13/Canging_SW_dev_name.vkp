@@ -1,0 +1,14 @@
+;CX75v13
+;Изменение имени производителя прошивки
+;Canging SW developer name
+;(c) -=(Kad)=-
+;Version: 1.0
+;PatchID: 3119
+;Details: https://patches.kibab.com/patches/details.php5?id=3119
+/*
+Это показывается в dev menu=>project info of exit там где раньше было OFFICIAL
+*/
+9014F: 4F4646494349414C 0000000000000000
+9014F: 0000000000000000 "DJ Kad"
+;------------------------- end -------------------------
+

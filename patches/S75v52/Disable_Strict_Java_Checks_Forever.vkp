@@ -1,0 +1,14 @@
+;S75v52
+;Убрать Проверку Java
+;Disable Strict Java Checks Forever
+;(c) 1nvisible
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8267
+;Details: https://patches.kibab.com/patches/details.php5?id=8267
+/*
+
+*/
+096CCCC: 48071FE5000090E5 0000A0E31EFF2FE1
+;------------------------- end -------------------------
+

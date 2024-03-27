@@ -1,0 +1,14 @@
+;CF75v23
+;Изменение разделителя в меню
+;Change delimiter in menu
+;(c) *S*h*a*D*o*W*
+;(r) ILL!
+;Version: 
+;PatchID: 4845
+;Details: https://patches.kibab.com/patches/details.php5?id=4845
+/*
+
+*/
+10362C8: 55555555555555555555555F FFFFFFFFFFFFFFFFFFFFFFFF
+;------------------------- end -------------------------
+

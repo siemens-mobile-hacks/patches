@@ -1,0 +1,17 @@
+;SL75v52
+;Открывать картинки сразу во весь экран
+;Open images fullscreen immediately
+;(c) Evgr
+;(p) SimaFish
+;Version: 
+;PatchID: 9579
+;Details: https://patches.kibab.com/patches/details.php5?id=9579
+/*
+
+*/
++309C
+05A80C0: 00 01
+05A80CA: 00 01
++0
+;------------------------- end -------------------------
+

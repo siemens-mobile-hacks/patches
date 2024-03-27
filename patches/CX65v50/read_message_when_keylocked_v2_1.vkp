@@ -1,0 +1,31 @@
+;CX65v50
+;Чтение SMS при залоченной клаве
+;RMWKL Read Message when Key Locked
+;(c) Bennie
+;(r) avkiev
+;(p) AsteriX
+;Version: 2.1
+;PatchID: 385
+;Details: https://patches.kibab.com/patches/details.php5?id=385
+/*
+Чтение флэш СМС и нового сообщения при залоченной клавиатуре с временной подсветкой.
+Чтобы прочитать сообщение, нажмите ЗЕЛЁНУЮ кнопку.
+
+EN:
+Read flash sms and new message when keyboard locked, and Light on temporarily.
+Press the GREEN button to read message.
+*/
+163AFEA: F8F7D7FD 1FF0A4FF
+163E032: 0223E05E 1CF08DFF
+#pragma enable old_equal_ff
+165AF00: 40B50026052814D1E1F7FCFF01280AD0
+165AF10: E2F718FF01280CD10320154B98471548
+165AF20: 8047022605E00320114B9847DEF713FE
+165AF30: 0126301C40BD0223E85E00B5FFF7E0FF
+165AF40: 002802D1D8F72AFE00BD01B00A490847
+165AF50: 0223E05E01B5FFF7D3FF002800D101BD
+165AF60: 02B0022802D10020E3F791FC03490847
+165AF70: 7D97B6A0901665A14DAF63A11FE163A1
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

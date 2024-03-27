@@ -1,0 +1,19 @@
+;CX70v56
+;Native Menu вместо главного меню
+;Native Menu instead of MainMenu
+;(c) SiNgle
+;(p) Zeus
+;Version: 2.1
+;PatchID: 9206
+;Details: https://patches.kibab.com/patches/details.php5?id=9206
+/*
++запуск при свернутой яве
+!Пункт меню "Спис. Вызовов" - "Время/Стоимость" вырубает телефон!
+*/
+09432F4: 0xA08F02BB 0xA08D0339 ; CKLK_CK_MAIN_MNU: центр джойстика
+0943940: 0xA08F02BB 0xA08D0339 ; ELSE_MMENU_OPEN: для DSE
+
+08C6374: 434B4C4B5F434B5F4D41494E4D4E55 434E43545F425553494E4553534344
+08C6384: 454C53455F4D4D454E555F4F50454E 434E43545F425553494E4553534344
+;------------------------- end -------------------------
+

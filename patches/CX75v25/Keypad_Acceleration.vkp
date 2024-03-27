@@ -1,0 +1,13 @@
+;CX75v25
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 3503
+;Details: https://patches.kibab.com/patches/details.php5?id=3503
+/*
+
+*/
+8008DE: 56 20
+;------------------------- end -------------------------
+

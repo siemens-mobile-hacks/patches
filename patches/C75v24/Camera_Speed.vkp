@@ -1,0 +1,13 @@
+;C75v24
+;Скорость камеры
+;Camera Speed
+;(c) SiNgle
+;Version: 
+;PatchID: 2927
+;Details: https://patches.kibab.com/patches/details.php5?id=2927
+/*
+
+*/
+0AF8374: 32 00
+;------------------------- end -------------------------
+

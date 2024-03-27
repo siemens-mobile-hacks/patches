@@ -1,0 +1,14 @@
+;SL75v52
+;Не cбрасывать состояние звука при переключении профилей
+;Don't reset ringtone status in profiles
+;(c) dimonp25
+;(p) SimaFish
+;Version: 
+;PatchID: 9511
+;Details: https://patches.kibab.com/patches/details.php5?id=9511
+/*
+
+*/
+03361D0: 002046F7BAEC C046C046C046
+;------------------------- end -------------------------
+

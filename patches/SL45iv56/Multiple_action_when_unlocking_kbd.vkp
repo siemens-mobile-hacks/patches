@@ -1,0 +1,30 @@
+;SL45iv56
+;Действия при разблокировке клавиш
+;Multiple action when unlocking keyboard
+;(c) rc-flitzer
+;Version: 
+;PatchID: 2656
+;Details: https://patches.kibab.com/patches/details.php5?id=2656
+/*
+Calls multiple entrypoints, then unlocks keyboard.
+Useful when using patches that need to be called at unlocking state like
+"auto overclocking" or "invert display hotkey".
+
+The named patches call themselves "unlock keyboard" before quitting - so I
+don't know if the phone is able to handle multiple unlocking calls.
+Just test it!
+
+This patch cannot applied without changes, at least one called EP
+has to activate key unlock.
+
+
+Release: February 18th, 2006
+*/
+0x3AF6E2: DAA37A40 DAC7A0DF
+
+0x27DFA0: FFFFFFFF CC00CC00 ; replace with call to entrypoint (DA......)
+0x27DFA4: FFFFFFFF CC00CC00 ; same
+0x27DFA8: FFFFFFFF CC00CC00 ; same
+0x27DFAC: FFFFFFFF CC00DB00 ; to save bytes: last EP must be jumped (FA......)
+;------------------------- end -------------------------
+

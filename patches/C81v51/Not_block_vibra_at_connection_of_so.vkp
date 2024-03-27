@@ -1,0 +1,23 @@
+;C81v51
+;Не блокировать вибросигнал при подключении некоторых аксессуаров
+;Not block vibra at connection of some accessories
+;(c) =NeoSpb=
+;(r) avkiev
+;(p) den11111
+;Version: 
+;PatchID: 7520
+;Details: https://patches.kibab.com/patches/details.php5?id=7520
+/*
+
+*/
+00411078: 0D 00 ;Стандартное зарядное устройство
+                ;Standard Charger
+00411079: 0E 00 ;Data-кабель
+                ;Data Cable
+0041107A: 0F 00 ;USB Data-кабель
+                ;USB Data Cable
+0041107B: 10 00 ;Data Кабель USB-USB
+                ;Data Cable USB-USB
+
+;------------------------- end -------------------------
+

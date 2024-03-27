@@ -1,0 +1,16 @@
+;S75v47
+;Перенос папки для рамок
+;Replace folder for frames
+;(c) KIBER-DEMON
+;(r) SimaFish
+;Version: 
+;PatchID: 8156
+;Details: https://patches.kibab.com/patches/details.php5?id=8156
+/*
+
+Папку можно менять только на телефоне, допустим переносисм в папку System: "System\ Frames".
+
+*/
+166CAEB: 50696374757265735C204672616D6573 "System\ Frames"
+;------------------------- end -------------------------
+

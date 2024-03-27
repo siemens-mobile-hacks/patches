@@ -1,0 +1,14 @@
+;S75v26
+;Убрать сообщение "Сохранить в:" после съёмки
+;Disable "Saved to" message in camera
+;(c) Single
+;(p) Striker Voo
+;Version: 
+;PatchID: 2443
+;Details: https://patches.kibab.com/patches/details.php5?id=2443
+/*
+
+*/
+065DF62: A9F06AE9 C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,31 @@
+;S45iv4
+;Любую мелодию любой записи адресной книги
+;any melody to any address book record
+;(c) ntcn
+;Version: 0.32
+;PatchID: 641
+;Details: https://patches.kibab.com/patches/details.php5?id=641
+/*
+Работает с адресной книгой.
+
+2 первых символа индекса - порядковый номер мелодии начиная с 01, возможные значения: 01..42 или S - не проигрывать звук
+*/
+07C900: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 48C62D0646FC2E002D0346FC43003D36
+07C910: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7403C00F2F13E278AF10900D7404200
+07C920: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2F13C3F8AF10DE08AF10BF00D27D740
+07C930: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3C00F2F1262B47F241002D0347F25300
+07C940: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3D03DAC4F09E0D1A27F230008D1727F3
+07C950: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 30008D1447F20900ED1147F30900ED0E
+07C960: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C032C021002100215C310021282146F2
+07C970: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2900ED04D7404300F6F2441AE6FC421A
+07C980: FFFF DB00
+2DCC4E: E6FC421A DA8700C9
+;Если для звонка нет записи в адресной книге - работа патча определяется
+;включенным пунктом (последний в списке) "без звука" в доп. меню Application
+;если патча "добавить новый пункт меню" не установлено, раскомментируйте:
+07C91C: D740 0D2F
+; и закомментируйте замену "пусто" на "без звука" для Application:
+;07CAE2: 2203 9A02
+
+;------------------------- end -------------------------
+

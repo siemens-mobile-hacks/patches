@@ -1,0 +1,13 @@
+;SL65v53
+;Убрать Пункт "Справка" в Card-Explorer'е
+;Remove "Help" Item from Card-Explorer
+;(c) 1nvisible
+;Version: 
+;PatchID: 5309
+;Details: https://patches.kibab.com/patches/details.php5?id=5309
+/*
+
+*/
+0A113C4: 17 16
+;------------------------- end -------------------------
+

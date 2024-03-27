@@ -1,0 +1,21 @@
+;CX70v56
+;Вызов эльфа по горячей клавише
+;Start elf on a shortcut
+;(c) Kibab
+;Version: 1.1
+;PatchID: 7522
+;Details: https://patches.kibab.com/patches/details.php5?id=7522
+/*
+Start elf on key shortcut. With DSE set selected key on RECD_DELETERECD and edit path to elf on patch.
+*/
+009445A4: 25F98EA0 0xA00B9001 ;RECD_DELETERECD -> 0xA00B9001 = Mp3 Player
+
++00B0000 
+#pragma enable old_equal_ff
+9000: FFB58020C7DF2501061C05A18022C7DF
+9010: 6C010021301C94DF301CC7DF2901FFBD
+9020: "0:\\ZBin\\Mp3Player\\mp3player.elf",00 
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

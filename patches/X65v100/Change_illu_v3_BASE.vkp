@@ -1,0 +1,29 @@
+;X65v100
+;Изменение длительности горения подсветки
+;Change Illumination Turn Off Time
+;(c) benj9
+;(p) Lasky
+;Version: 3
+;PatchID: 2027
+;Details: https://patches.kibab.com/patches/details.php5?id=2027
+/*
+; (!) masterpatch
+; use "Change Illumination Turn Off Timer 2" to set standard / patch_off values
+; use midlet to overlay your values 
+; to have new midlet values activated, let turn off illu one time and press any key else than red key
+
+*/
+#pragma enable old_equal_ff
+0FDE600: 496C6C75542C62656E6A41B50948E2F7
+0FDE610: F7FA02D0311C023100E0044941BC08BC
+0FDE620: A00009186846042204331847,0xA0BD2C0A ; LDR R1,addr at entry
+0FDE630: E4D3C2B1CECC00000000000000000000
+0FDE640: "{patch=`ChangeIlluOffTimer` ver=3 cp=benj9 id=CCCE}","\
+{5 b `idle (sec)` r=1..255 v=1}","\
+{9 b `else (sec)` r=1..255 v=1}",00
+#pragma disable old_equal_ff
+
+
+
+;------------------------- end -------------------------
+

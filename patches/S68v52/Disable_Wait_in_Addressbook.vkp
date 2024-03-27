@@ -1,0 +1,14 @@
+;S68v52
+;Disable "Wait" in Addressbook
+;Disable "Wait" in Addressbook
+;(c) 1nvisible
+;(p) Hotter
+;Version: 
+;PatchID: 10264
+;Details: https://patches.kibab.com/patches/details.php5?id=10264
+/*
+
+*/
+04CFF5C: 2AB70CFB 0000A0E1
+;------------------------- end -------------------------
+

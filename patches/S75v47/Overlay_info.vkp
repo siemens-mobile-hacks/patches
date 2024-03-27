@@ -1,0 +1,30 @@
+;S75v47
+;Настройка позиции, номера шрифта, цвета шрифта и фона оверлея инфо
+;Change position, number font, color of font and background of overlay info
+;(c) Evgr
+;(r) KIBER-DEMON
+;(p) SimaFish
+;Version: 1.1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=8701
+;PatchID: 8687
+;Details: https://patches.kibab.com/patches/details.php5?id=8687
+/*
+FF000064 - красный
+00FF0064 - зеленый 
+0000FF64 - синий
+FFFF0064 - желтый
+FF00FF64 - розовый
+00FFFF64 - морской волны
+FF000032 - красный полупрозрачный
+00FF0016 - 25% прозрачный зеленый
+0000FF2E - 46 процентов синий
+Остальное смотрим в любом графическом редакторе.
+*/
+;0A03066: 00 XX ; положение по оси X
+;0A03064: 00 XX ; положение по оси Y
+;0A0306E: 08 XX ; номер шрифта
+
+0C12E20: FFFFFF64 FFFFFF00 ; цвет фона
+0C12E40: 00000064 FF000064 ; цвет шрифта
+;------------------------- end -------------------------
+

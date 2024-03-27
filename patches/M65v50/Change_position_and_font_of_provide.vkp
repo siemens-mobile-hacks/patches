@@ -1,0 +1,37 @@
+;M65v50
+;Изменить позицию и шрифт имени провайдера в заставке
+;Change position and font of providername in ScreenSaver
+;(c) arsh0r, SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 6316
+;Details: https://patches.kibab.com/patches/details.php5?id=6316
+/*
+;!Значения различаются, если показана стрелка (например, при получении сообщения (there are different settings if the arrow is shown (f.ex. when you got a message))
+*/
+;Цифровые часы (digiclock)
+1655484: 00 xx ;x-start
+1655486: 9F yy ;y-start
+1655488: 84 xx ;x-stop
+165548A: AF yy ;y-stop
+165548C: 03 ff ;font size
+;Аналоговые часы (analogclock)
+1655468: 00 xx ;x-start
+165546A: 9F yy ;y-start
+165546C: 84 xx ;x-stop
+165546E: AF yy ;y-stop
+1655470: 03 ff ;font size
+;Картинка (picture)
+165544C: 00 xx ;x-start
+165544E: 9F yy ;y-start
+1655450: 84 xx ;x-stop
+1655452: AF yy ;y-stop
+1655454: 03 ff ;font size
+;Экономия энергии (energysaving)
+16554A0: 00 xx ;x-start
+16554A2: 52 yy ;y-start
+16554A4: 84 xx ;x-stop
+16554A6: 61 yy ;y-stop
+16554A8: 03 ff ;font size
+;------------------------- end -------------------------
+

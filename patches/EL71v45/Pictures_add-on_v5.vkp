@@ -1,0 +1,16 @@
+;EL71v45
+;Расширение для картинок
+;Pictures add-on
+;(c) avkiev
+;(r) 1nvisible
+;(p) BuG
+;Version: 5
+;PatchID: 7403
+;Details: https://patches.kibab.com/patches/details.php5?id=7403
+/*
+
+*/
+0A3C030: 54009FE51EFF2FE1 04F01FE5,0xA0063691 ; EL71v45
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M81v51
+;Подсветка при смене профиля
+;Illumination in SetProfile
+;(c) BoBa
+;(p) ManOfWar
+;Version: 
+;PatchID: 6715
+;Details: https://patches.kibab.com/patches/details.php5?id=6715
+/*
+Отключает подсветку при смене профиля
+*/
+02D21E4: 24F1C8EE C046C046
+;------------------------- end -------------------------
+

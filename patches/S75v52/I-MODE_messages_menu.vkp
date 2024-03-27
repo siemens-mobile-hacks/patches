@@ -1,0 +1,24 @@
+;S75v52
+;I-MODE меню сообщений
+;I-MODE messages menu
+;(c) Zhek@
+;(p) SimaFish
+;Version: 
+;PatchID: 8792
+;Details: https://patches.kibab.com/patches/details.php5?id=8792
+/*
+
+*/
+0437B80: 593833A0 2DEF32A0
+04218CC: F5 78
+042194C: F5 78
+04219CC: F5 78
+0421A4C: F5 78
+0421ACC: F5 78
+0421B4C: F5 78
+0421BCC: F5 78
+0421C4C: F5 78
+0421CCC: F5 78
+0421D4C: F5 78
+;------------------------- end -------------------------
+

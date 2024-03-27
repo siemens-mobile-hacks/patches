@@ -1,0 +1,24 @@
+;M75v25
+;Дополнительная панель иконок с поддержкой miniGPS
+;IconbarAdditions v3.3 miniGPS support
+;(c) benj9
+;(r) BuG, empeka
+;(p) Grizzzzly
+;Version: 3.3-MP
+;PatchID: 4687
+;Details: https://patches.kibab.com/patches/details.php5?id=4687
+/*
+featuring: charging icons, profile icons, vibra on/off, animation, netmode, minigps, universal engines
+
+*/
+; Если хотим иконки слева от стандартных
+02A8DD8: F4F1AEECF4F1B6EE0028 00488047,0xA0FDB811,C046 
+0FDBA88: FFFFFFFFFFFFFFFF 0xA049D738,0xA049DB4C
+
+; Если хотим справа от стандартных
+;02A907C: 16F018FA16F038FDFF28 00488047,0xA0FDB811,C046
+;0FDBA88: FFFFFFFFFFFFFFFF 0xA02BF4B1,0xA02BFAF5
+;0FDB856: 00 FF ; put this line BEHIND patch
+
+;------------------------- end -------------------------
+

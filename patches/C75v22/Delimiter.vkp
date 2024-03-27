@@ -1,0 +1,14 @@
+;C75v22
+;Изменение разделителя в меню
+;Change delimiter in menu
+;(c) SiNgle
+;Version: 
+;PatchID: 7187
+;Details: https://patches.kibab.com/patches/details.php5?id=7187
+/*
+
+*/
+103db18: 55555555555555555555555F 8F11E23C4788F11E23C4788F 
+
+;------------------------- end -------------------------
+

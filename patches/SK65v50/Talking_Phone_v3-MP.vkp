@@ -1,0 +1,30 @@
+;SK65v50
+;Говорящий телефон
+;Talking Phone
+;(c) avkiev
+;(r) SiNgle
+;Version: 3-MP
+;PatchID: 4222
+;Details: https://patches.kibab.com/patches/details.php5?id=4222
+/*
+Патч заменяет шорткат ELSE_COUNT_DOWN (Таймер) на функцию проговаривания текущего времени.
+Сажаем этот шорткат с помощью DSE на любую кнопку, при ее нажатии будет проговариваться время.
+Эти файлы необходимо положить в 0:\Sounds\Time: http://avkiev.kiev.ua/Siemens/Patches/time.rar
+DSE: http://www.gsm-multifund.com/mod/DSE.rar
+English:
+Patch replaces shortcut ELSE_COUNT_DOWN (Timer) with spelling current time function.
+Set this shortcut by help DSE to any key, if you press this key - current time will be spelled.
+You should download those files to 0:\Sounds\Time: http://avkiev.kiev.ua/Siemens/Patches/time.rar
+DSE: http://www.gsm-multifund.com/mod/DSE.r
+*/
+;1. Shortcut
+045E9CC: "ELSE_COUNT_DOWN",00,4B8931A0 "ELSE_COUNT_DOWN",00,0xA0FC3001 ; SK65v50 - ELSE_COUNT_DOWN
+;045ED0C: "ELSE_REMOTESYNC",00,838931A0 "ELSE_REMOTESYNC",00,0xA0FC3001 ; SK65v50 - ELSE_REMOTESYNC
+;045ECA4: "ELSE_PUSHTOTALK",00,839331A0 "ELSE_PUSHTOTALK",00,0xA0FC3001 ; SK65v50 - ELSE_PUSHTOTALK
+
+;2. Alarm
+;Говорить время вместо мелодии будильника (не работает если телефон выключен)
+;Spell time instead of Alarm (doesn't work if phone is off)
+04F3E3C: 0F207BF014EB2080 00488047,0xA0FC30A7   ; SK65v50
+;------------------------- end -------------------------
+

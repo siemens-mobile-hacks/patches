@@ -1,0 +1,16 @@
+;C72v22
+;Увеличение интервала между сообщениями "Аккумулятор разряжен! Зарядите"
+;An increase in the interval between the communications "Storage battery is discharged! You will load"
+;(c) 1nvisible
+;(r) benj9
+;(p) Virusmater
+;Version: 
+;PatchID: 5988
+;Details: https://patches.kibab.com/patches/details.php5?id=5988
+/*
+
+*/
+;1146670: ED100000 F17E0000 ; 7EF1 ~= 150сек = 2,5минуты
+1146670: ED100000 658E0000 ; 2 минуты
+;------------------------- end -------------------------
+

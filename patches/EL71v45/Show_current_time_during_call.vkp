@@ -1,0 +1,25 @@
+;EL71v45
+;Показывать текущее время при разговоре
+;Show current time during call
+;(c) Bennie
+;(r) Evgr
+;(p) thiagom
+;Version: 
+;PatchID: 8166
+;Details: https://patches.kibab.com/patches/details.php5?id=8166
+/*
+Патч не работает с патчем "Увеличение фото абонента при входящем и исходящем вызовах"
+Patch dont works correctly with "Large Photo on calls"
+For patch work, must be activated "Autom. Show" on Calls Rate
+*/
+#pragma enable old_equal_ff
+0C5CC24: 30B5041C0A4B984782B000206946094B
+0C5CC34: 9847201C084988472D21215401302118
+0C5CC44: 68460322054DA84702B0201C30BDFFFF
+0C5CC54: 0xA09B7591,0xA08D8823,0xA0FBCD89,0xA058B981 ; EL71v45
+#pragma disable old_equal_ff
+
+0666966: 04A80B219BF1D8EB 68461B21AAF154EB ; EL71v45
+0811014: FFFFFFFFFFFFFFFFFFFFFFFF 00C09FE51CFF2FE125CCC5A0 ; EL71v45
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;CX75v23
+;Неограниченная запись видео
+;Unlimited video recording
+;(c) SiNgle
+;(p) Mikel
+;Version: 1.1
+;PatchID: 2550
+;Details: https://patches.kibab.com/patches/details.php5?id=2550
+/*
+
+*/
+130F9D: 13770D8A770D0D7528770D8A770D0DE3357C7B 13F78a770D0D7528F78a770D0DE3357C7B0B0B
+
+;------------------------- end -------------------------
+

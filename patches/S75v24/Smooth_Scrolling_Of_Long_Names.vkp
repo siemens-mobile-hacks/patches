@@ -1,0 +1,14 @@
+;S75v24
+;Плавный скроллинг длинных названий и имен
+;Smooth Scrolling Of Long Names
+;(c) SiNgle
+;Version: 
+;PatchID: 2180
+;Details: https://patches.kibab.com/patches/details.php5?id=2180
+/*
+
+*/
+068F410: D00700002C01 120200002A00
+0C00E34: D00700002C01 120200002A00
+;------------------------- end -------------------------
+

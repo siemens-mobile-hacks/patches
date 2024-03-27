@@ -1,0 +1,26 @@
+;S75v47
+;Автопоказ полей Получатель, Тема и др при создании сообщений
+;Show_TO_and_etc_on_create_messages.vkp
+;(c) Feyman
+;Version: 1
+;PatchID: 8228
+;Details: https://patches.kibab.com/patches/details.php5?id=8228
+/*
+
+*/
+; create SMS&MMS
+013305d4: 66616c736527 747275652720 ;show to
+;013305bb: 6e6f6e656d70747927 747275652720202020 ;show subjekt
+
+; Create email
+0131a317: 6e6f6e656d70747927 747275652720202020 ;show subjekt
+0131a330: 66616c736527 747275652720 ;show to
+0131a346: 66616c736527 747275652720 ;show CC
+;0131a35d: 66616c736527 747275652720 ;show BCC
+0131a428: 36 33 ; left header
+0131a44d: 36 33 ; right header
+0131a498: 32 30 ; top header
+
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,69 @@
+;S75v42
+;Уничтожитель всплывающих сообщений
+;Popup Killer
+;(c) avkiev
+;(p) RainMaker
+;Version: 2
+;PatchID: 5435
+;Details: https://patches.kibab.com/patches/details.php5?id=5435
+/*
+Работает нормально
+Works
+638 - All ringtones switched off
+639 - All ringtones switched on
+1241 - Switch EGPRS off ?
+1242 - Switch EGPRS on ?
+2766 - Keypad locked
+566 - Language is set to...
+3403 - Saved to ...
+70388 - Add tracks to add (после сохранения нового плейлиста)
+6326 - Entry renamed (при переименовании профилей Context 0x в Connectivity - Online settings)
+3520 - Choose insert in ampty line to insert (после выбора незнакомого номера для сохранения в адресной книге)
+1254 - Reset volume level (удаление информации о трафике в EGPRS info)
+7536 - Move not possible (при попытке переноса файла/папки в ту же папку)
+2207 - Copy not possible (при попытке копирования файла/папки в ту же папку)
+70307 - This folder cannot be selected (при попытке скопировать/перенести файл в ту папку, которая не поддерживает формат выбранного файла)
+
+Работает, но ответ на вопрос - "Нет"
+Works, but answer is No
+3938 - Delete Entry ?
+
+Работает, но само окно - остается
+Works, but window remains
+107 - On
+2996 - Off
+69794 - Profile activated
+
+Работает, надо раскомментировать строку 02C9152 (Complex)
+Works, uncomment line 02C9152 (Complex)
+86 - Bluetooth on/off
+
+Не тестировалось
+Not tested
+3885 - Updated (выборе графического файла ->contact и выборе абонента, на который нужно этот файл установить)
+7639 - Delete folder? (y/n)
+3938 - Delete entry? (при удалении файла)
+995 - Delete entry? (при удалении аудио-записи в рекордере)
+1504 - delete all entries (при удалении всех аудио-записей в рекордере)
+
+
+Пример. Отключаем сообщение "Установлен язык Русский".
+1. Заходим мидлетом в настройки патча, включаем в галку "ShowID", сохраняем, запускаем Рефрешер.
+2. Меняем в меню язык телефона, видим, что сообщение теперь начинается с "566 = 0x".
+3. Заходим мидлетом в настройки патча, снимаем галку "ShowID", один из нулей заменяем на 566.
+4. Сохраняем, обновляем, проверяем, наслаждаемся.
+ЗЫ. Так можно отключить далеко не все сообщения...
+*/
+09749B8: 041C011C281C8FF7B2E9 004A9047,0xA0066A71,C046   ; Ok, YesNo
+;041C011C281C3F3F3F3F201C3F3F3F3F3F3F3F3F051C211C3F3F3F3F1323DB01
+
+058F62A: 9863996C301CCCF02AE8 C046,004A9047,0xA0066A81   ; SavedTo...
+;9863996C301C3F3F3F3F3F3F3F3F143A103969446A44019200911323DB01A66A
+
+09658D6: 1160019002999EF722EA C046,004B9847,0xA0066A91   ; OnOff
+;1160019002993F3F3F3F02983F3F3F3F36905028
+
+;02C97A2: 211C301C21F16EE9201C C046,004A9047,0xA0066AA1  ; Complex
+;211C301C3F3F3F3F201C3F3F3F3F061C3FD0321C3F493F483F3F3F3F051C3FD0
+;------------------------- end -------------------------
+

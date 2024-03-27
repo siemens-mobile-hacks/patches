@@ -1,0 +1,16 @@
+;E71v45
+;Повышенный приоритет для MMI задач
+;Higher MMI Prio
+;(c) benj9
+;(r) den11111
+;(p) Danil_e71
+;Version: 1
+;PatchID: 9532
+;Details: https://patches.kibab.com/patches/details.php5?id=9532
+/*
+Перевыложил!!!Была ошибка
+AA6CC0-был не тот адрес!!!
+*/
+5AAC58: 10 02
+;------------------------- end -------------------------
+

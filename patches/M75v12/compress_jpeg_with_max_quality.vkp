@@ -1,0 +1,13 @@
+;M75v12
+;Сжатие JPEG с максимальным качеством
+;Compress JPEG with max quality
+;(c) SiNgle
+;Version: 
+;PatchID: 597
+;Details: https://patches.kibab.com/patches/details.php5?id=597
+/*
+Сжимает сделанные камерой телефона фотографии с качеством 100% вместо 75%. 
+*/
+03EBC9C: 4B 64
+;------------------------- end -------------------------
+

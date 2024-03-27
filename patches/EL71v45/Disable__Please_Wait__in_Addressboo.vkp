@@ -1,0 +1,13 @@
+;EL71v45
+;Отключить "Подождите" в Адреске
+;Disable "Please Wait" in Addressbook
+;(c) 1nvisible
+;Version: 
+;PatchID: 8025
+;Details: https://patches.kibab.com/patches/details.php5?id=8025
+/*
+
+*/
+06007DE: FEF12AED C046C046
+;------------------------- end -------------------------
+

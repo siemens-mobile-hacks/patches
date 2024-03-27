@@ -1,0 +1,13 @@
+;M75v12
+;Отключить Сообщение "Список Пуст!"
+;Disable "List Empty!" Message
+;(c) 1nvisible
+;Version: 
+;PatchID: 5374
+;Details: https://patches.kibab.com/patches/details.php5?id=5374
+/*
+
+*/
+0589626: 9F49 03E0
+;------------------------- end -------------------------
+

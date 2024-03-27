@@ -1,0 +1,14 @@
+;S75v47
+;Отключить "Получено новое сообщение!" при входящем SMS
+;Disable popup "New message received"
+;(c) Еvgr
+;(p) dimonp25
+;Version: 
+;PatchID: 8181
+;Details: https://patches.kibab.com/patches/details.php5?id=8181
+/*
+
+*/
+0341A2A: ABF07AEE c046c046
+;------------------------- end -------------------------
+

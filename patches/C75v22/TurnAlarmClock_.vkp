@@ -1,0 +1,21 @@
+;C75v22
+;Включение по будильнику
+;Turn On By AlarmClock
+;(c) SiNgle
+;(p) SMeeTBB
+;Version: 2
+;PatchID: 1306
+;Details: https://patches.kibab.com/patches/details.php5?id=1306
+/*
+
+*/
+054EFC4: 9DF020EB7560 C04641F7D4ED
+#pragma enable old_equal_ff
+0490B70: 0FE0A0E114F09FE51200A0E30010A0E3
+0490B80: 0FE0A0E108F09FE50000A0E304F09FE5
+0490B90: 80782FA0C8E37DA0CBEF54A0
+#pragma disable old_equal_ff
+
+
+;------------------------- end -------------------------
+

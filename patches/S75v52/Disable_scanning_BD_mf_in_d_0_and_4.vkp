@@ -1,0 +1,17 @@
+;S75v52
+;Отключить сканированние БД медиа-файлов на дисках Data и MMCard
+;Disable scanning DB of media-files in disks Data and MMCard
+;(c) funMarkus
+;(r) KIBER-DEMON
+;(p) Vados
+;Version: 3
+;PatchID: 8426
+;Details: https://patches.kibab.com/patches/details.php5?id=8426
+/*
+
+*/
+05A637C: 0000 "~"2A; "~" пометка папок, которые будут сканироватся (можно менять на ',^# и.т.д.)
+05A6380: 30 FF; Отключить сканирование диска 0:\ (Data)
+;05A6378: 34 FF; Отключить сканирование диска 4:\ (MMCard) (Может кому-то не надо сканировать)
+;------------------------- end -------------------------
+

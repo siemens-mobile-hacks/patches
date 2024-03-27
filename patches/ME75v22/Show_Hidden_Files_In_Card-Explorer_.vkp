@@ -1,0 +1,14 @@
+;ME75v22
+;Показывать Скрытые Файлы в Card-Explorer'е по умолчанию
+;Show Hidden Files In Card-Explorer By Default
+;(c) 1nvisible
+;Version: 
+;PatchID: 3931
+;Details: https://patches.kibab.com/patches/details.php5?id=3931
+/*
+
+*/
+02E02B0: 00 FF
+02E0360: 00 FF
+;------------------------- end -------------------------
+

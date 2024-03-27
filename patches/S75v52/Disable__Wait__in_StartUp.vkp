@@ -1,0 +1,14 @@
+;S75v52
+;Отключить "Подождите" в помощнике;Отключить "Подождите" в зуме
+;Disable "Wait" in StartUp before StartAssistant;Disable "Wait" while zooming a picture in MyStuff
+;(c) funMarkus
+;(p) Vedan
+;Version: 
+;PatchID: 8364
+;Details: https://patches.kibab.com/patches/details.php5?id=8364
+/*
+
+*/
+0978152: 131C 08BD
+;------------------------- end -------------------------
+

@@ -1,0 +1,34 @@
+;S65v58
+;Master-patch
+;Master-patch
+;(c) avkiev
+;(r) Merzotnuk
+;(p) 1nvisible, chaos, NForce
+;Version: 11
+;PatchID: 5584
+;Details: https://patches.kibab.com/patches/details.php5?id=5584
+/*
+FunctionLibrary_v060708.vkp 
+BigFunctionLibrary.vkp
+____________
+Затем ставим Мастера и АПИ:
+____________
+API-patch-BASE.vkp
+Master-patch_v11_S65v58.vkp
+____________
+После этого ставим Pictures add-on и Swi hook
+____________
+Pictures_add_on.vkp
+SWI-hook.vkp
+*/
+;Run Scaner on startup
+16977D2: FF20 BEDF
+
+;Run Scaner instead of REMOTE_SYNCHRONIZATION
+092EC60: D39C8DA0 810CFCA0
+
+;------------------------- end -------------------------
+
+
+;------------------------- end -------------------------
+

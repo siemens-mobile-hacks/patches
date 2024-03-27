@@ -1,0 +1,20 @@
+;SK65v50
+;Native Menu вместо главного меню
+;Native Menu instead of MainMenu
+;(c) SiNgle
+;(p) Лесной
+;Version: 2.1
+;PatchID: 10127
+;Details: https://patches.kibab.com/patches/details.php5?id=10127
+/*
++запуск при свернутой яве
+!Пункт меню "Спис. Вызовов" - "Время/Стоимость" вырубает телефон!
+*/
+045E624: 0xA0319289 0xA031E0F3 ; CKLK_CK_MAIN_MNU: центр джойстика
+045EC3C: 0xA0319289 0xA031E0F3 ; ELSE_MMENU_OPEN: для DSE
+
+02B5F18: 434B4C4B5F434B5F4D41494E4D4E55 434E43545F425553494E4553534344
+02B5F28: 454C53455F4D4D454E555F4F50454E 434E43545F425553494E4553534344
+
+;------------------------- end -------------------------
+

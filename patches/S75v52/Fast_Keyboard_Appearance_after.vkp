@@ -1,0 +1,15 @@
+;S75v52
+;Моментальный запуск скринсейвера после заблок. клавиатуры
+;Fast Keyboard Appearance after KeyBoard Lock
+;(c) funMarkus
+;(p) KIBER-DEMON
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9130
+;PatchID: 8524
+;Details: https://patches.kibab.com/patches/details.php5?id=8524
+/*
+
+*/
+034313C: A9F05EED 02F0CBFF
+;------------------------- end -------------------------
+

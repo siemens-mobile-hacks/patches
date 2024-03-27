@@ -1,0 +1,14 @@
+;SL75v47
+;Отключить загрузку FlexMenu при включении телефона
+;Disable flexmenu load on startup
+;(c) Miha_r
+;(p) bertgrin
+;Version: 
+;PatchID: 9489
+;Details: https://patches.kibab.com/patches/details.php5?id=9489
+/*
+
+*/
+0A0064C: 04 00
+;------------------------- end -------------------------
+

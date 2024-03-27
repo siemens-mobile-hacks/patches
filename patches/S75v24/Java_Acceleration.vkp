@@ -1,0 +1,13 @@
+;S75v24
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 2177
+;Details: https://patches.kibab.com/patches/details.php5?id=2177
+/*
+
+*/
+0965D20: 6549 0121
+;------------------------- end -------------------------
+

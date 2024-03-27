@@ -1,0 +1,23 @@
+;CX70v56
+;Убрать сообщения
+;Disable some messages
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 609
+;Details: https://patches.kibab.com/patches/details.php5?id=609
+/*
+Патч убирает сообшения например: GPRS вкл\выкл (GPRS on\off) и т.д
+*/
+171E232: 0021 10BD ; "Все сигналы вкл" (All ringtones on) © arsh0r
+171E252: 0021 10BD ; "Все сигналы выкл" (All ringtones off)
+171E2A8: 0021 10BD ; "Блокировка клавиатуры включена" (Keypad locked)
+08F0148: 4BF0 80BD ; Вибра вкл\выкл (Vibra alert on\off)
+08F01DA: 4BF0 80BD ; IrDA вкл\выкл (IrDA on\off)
+08F020A: 4BF0 80BD ; GPRS вкл\выкл (GPRS on\off)
+0905C90: E6320EFA 000050E3 ; "Подождите" при запуске камеры ("Please wait" before using camera)
+0906E94: 9F6A00EB 0100A0E3 ; "Сохранить в:" после съёмки ("Saved to:" after you take a foto)
+098ED2C: A00E0CFA 0100A0E3 ; "Подождите" в эксплорере ("Please wait" in Card-Explorer)
+0A822A6: 01 00 ; "Копировать SIM" при смене SIM ("Copy SIM" at SIM change)
+;------------------------- end -------------------------
+

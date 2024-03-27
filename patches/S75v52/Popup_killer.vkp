@@ -1,0 +1,20 @@
+;S75v52
+;Уничтожитель всплывающих сообщений
+;Popup killer
+;(c) avkiev
+;(r) SiNgle
+;(p) den11111
+;Version: 2
+;PatchID: 8340
+;Details: https://patches.kibab.com/patches/details.php5?id=8340
+/*
+
+*/
+;S75v52
+0977B78: 041C011C281C8FF772E9 004A9047,0xA0066A71,C046   ; Ok, YesNo
+0591D82: 9863996C301CCCF028EB C046,004A9047,0xA0066A81   ; SavedTo...
+;0968A8E: 1160019002999EF7E6E9 C046,004B9847,0xA0066A91   ; OnOff
+;02CB30E: 211C301C21F1ACE9201C C046,004A9047,0xA0066AA1   ; Complex
+
+;------------------------- end -------------------------
+

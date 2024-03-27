@@ -1,0 +1,16 @@
+;SL65v53
+;Изменить прошивку по *#06#
+;Change phone's FW's number
+;(c) Nikola Inc and Angervip  
+;(p) SouthNetAlexx
+;Version: 
+;PatchID: 9461
+;Details: https://patches.kibab.com/patches/details.php5?id=9461
+/*
+подставить любые 10 символов (цифру и/или латинскую букву) вместо Linux OS, 
+ноль не трогать, он не будет отображаться
+*/
+90177: 003533005349454D454E53  0000000000000000000000
+90177: 0000000000000000000000  "0Linux OS" 
+;------------------------- end -------------------------
+

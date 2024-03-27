@@ -1,0 +1,20 @@
+;SL45iv56
+;ACLI. Метод ввода - все буквы заглавные
+;ACLI. All Capital Letter Input method
+;(c) Greentea
+;Version: 
+;PatchID: 7395
+;Details: https://patches.kibab.com/patches/details.php5?id=7395
+/*
+Патч "открывает" спрятаный метод ввода.
+
+
+English:
+The patch reveals a hidden input method, all capital letters.
+*/
+0x366068: 3D 0D
+
+0x1AFB92: D1 D5;modify the display icon of the input method 
+0x1AFB96: D3 D6;modify the display icon of the input method
+;------------------------- end -------------------------
+

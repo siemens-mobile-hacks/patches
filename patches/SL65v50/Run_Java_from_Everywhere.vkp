@@ -1,0 +1,13 @@
+;SL65v50
+;Запуск Явы Отовсюду
+;Run Java from Everywhere
+;(c) 1nvisible
+;Version: 3
+;PatchID: 4148
+;Details: https://patches.kibab.com/patches/details.php5?id=4148
+/*
+
+*/
+0BFDD28: 2500000A 000050E3
+;------------------------- end -------------------------
+

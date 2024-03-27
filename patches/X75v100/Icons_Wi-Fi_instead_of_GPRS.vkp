@@ -1,0 +1,15 @@
+;X75v100
+;Иконки Wi-Fi вместо GPRS
+;Icons Wi-Fi instead of GPRS
+;(c) Ushastiy™
+;Version: 
+;PatchID: 5032
+;Details: https://patches.kibab.com/patches/details.php5?id=5032
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Icons_Wi-Fi_instead_of_GPRS.zip
+
+/*
+GPF, сделано под S75, качаем приложенный файл
+*/
+Качаем приложенный файл
+;------------------------- end -------------------------
+

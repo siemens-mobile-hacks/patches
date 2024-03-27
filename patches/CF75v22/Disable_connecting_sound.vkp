@@ -1,0 +1,15 @@
+;CF75v22
+;Disable connecting sound
+;Disable connecting sound
+;(c) AlexSid
+;Version: 
+;PatchID: 4706
+;Details: https://patches.kibab.com/patches/details.php5?id=4706
+/*
+
+*/
+;* &#211;&#225;&#240;&#224;&#242;&#252; &#231;&#226;&#243;&#234; &#228;&#238;&#231;&#226;&#238;&#237;&#224; ** Disable connecting sound * © AlexSid
+; Enviado por Bruno Oz
+0E77EE4: 34D5E8A0 00000000
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;CX75v25
+;Иконки всех звуковых файлов как в WinVista
+;Icons of sound files by WinVista
+;(c) b00s
+;Version: 1
+;PatchID: 7185
+;Details: https://patches.kibab.com/patches/details.php5?id=7185
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v25&f=vista_sound_icons.zip
+
+/*
+Заменяет иконки всех звуковых файлов (mp3,aac,amr,wav,mid,m3u) на иконки из Windows Vista
+
+Внимание! Сам патч находится в прилагаемом архиве
+*/
+;Данный патч находится в прилагаемом архиве
+
+
+;------------------------- end -------------------------
+

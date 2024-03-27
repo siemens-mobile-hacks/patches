@@ -1,0 +1,24 @@
+;CX65v50
+;Убрать некоторые сообщения
+;Disable some messages
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 22
+;Details: https://patches.kibab.com/patches/details.php5?id=22
+/*
+Убирает надоедливые сообщения
+*/
+163C91E: 0021 10BD ;"Все сигналы вкл" (All ringtones on)
+163C93E: 0021 10BD ;"Все сигналы выкл" (All ringtones off)
+163C994: 0021 10BD ;"Блокировка клавиатуры включена" (Keypad locked)
+08E218C: 38F0 80BD ;Вибра вкл\выкл (Vibra alert on\off)
+08E221E: 37F0 80BD ;IrDA вкл\выкл (IrDA on\off)
+08E224E: 37F0 80BD ;GPRS вкл\выкл (GPRS on\off)
+08F1750: A72A21FA 000050E3 ;"Подождите" при запуске камеры ("Please wait" before using camera)
+08F2954: EF6600EB 0100A0E3 ;"Сохранить в:" после съёмки ("Saved to:" after you take a foto)
+096683C: 4D561FFA 0100A0E3 ;"Подождите" в эксплорере ("Please wait" in Card-Explorer)
+0B22B1A: 01 00 ;"Копировать SIM" при смене SIM ("Copy SIM" at SIM change)
+
+;------------------------- end -------------------------
+

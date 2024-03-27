@@ -1,0 +1,23 @@
+;CX70v56
+;Мастер-патч
+;Master-patch
+;(c) avkiev
+;(r) 1nvisible, chaos
+;Version: 14
+;PatchID: 5502
+;Details: https://patches.kibab.com/patches/details.php5?id=5502
+/*
+Служит для управления настройками патчей непосредственно с телефона.
+English:
+This patch is made to control other patches settings from mobile without connecting it to the computer.
+!Перед запуском нужно создать папку 0:\Misc\Patches\PTC\
+
+*/
+;Run Scaner on startup
+1714244: FF20 BEDF
+
+;Run Scaner instead of ELSE_REMOTE_SYNC
+0943A78: DBF98EA0 0xA0FC0C91
+
+;------------------------- end -------------------------
+

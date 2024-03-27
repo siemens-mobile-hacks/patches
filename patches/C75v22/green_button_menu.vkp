@@ -1,0 +1,17 @@
+;C75v22
+;Расширеное меню зеленой трубки в режиме ожидания
+;Extended green button menu on main screen
+;(c) flexonight
+;(p) Виктор89
+;Version: 
+;PatchID: 9989
+;Details: https://patches.kibab.com/patches/details.php5?id=9989
+/*
+Расширеное меню зеленой трубки. Теперь в режиме ожидания при нажатии на нее, переход не в набранные звонки, а в корень меню списка вызовов.
+*/
+02CF3A2: BDF10EED 20F73EEA
+#pragma enable old_equal_ff
+01EF820: 00C09FE51CFF2FE1,0xA032885B
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

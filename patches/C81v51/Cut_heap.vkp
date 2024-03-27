@@ -1,0 +1,25 @@
+;C81v51
+;Подрезка кучи
+;Cut heap
+;(c) Rst7
+;(r) BoBa, Kibab, avkiev
+;(p) den11111,NForce
+;Version: 
+;PatchID: 7328
+;Details: https://patches.kibab.com/patches/details.php5?id=7328
+/*
+После применения патча можно ставить FreeRAM = 0xAC000000 и не опасаться конфликтов в памяти.
+оборатите внимание, именно 0xAC000000, не 0xA8000000
+*/
+026FFA0: 000081E51EFF2FE1 04F01FE5,0xA0060801   ; C81v51
+
+#pragma enable old_equal_ff
+0060800: 00B501231B02C01A0860101C191CD218
+0060810: 03AB1A6058DF00BD
+#pragma disable old_equal_ff
+
+;0074390: 0xA8A80000 0xAC000000   ;  E4: FreeRAM
+
+
+;------------------------- end -------------------------
+

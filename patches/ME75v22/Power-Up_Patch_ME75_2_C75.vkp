@@ -1,0 +1,17 @@
+;ME75v22
+;Power-Up Патч ME75=>C75
+;Power-Up Patch ME75=>C75
+;(c) N1K
+;(p) Radmir
+;Version: 
+;PatchID: 1857
+;Details: https://patches.kibab.com/patches/details.php5?id=1857
+/*
+1.Переименовываем x65flasher'ом МE75 в С75
+2.Прошиваем прошивкой С75 SW 22
+3.Ставим патч 
+*/
+07CA8A4: 0E 00
+0875D28: 05 02
+;------------------------- end -------------------------
+

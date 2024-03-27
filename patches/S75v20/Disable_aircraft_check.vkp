@@ -1,0 +1,13 @@
+;S75v20
+;Отключить потверждение включения
+;Disable Aircraft check
+;(c) SiNgle
+;Version: 
+;PatchID: 1671
+;Details: https://patches.kibab.com/patches/details.php5?id=1671
+/*
+Отключить потверждение включения, если отключен PIN-код
+*/
+0292789: d0 e0
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;EL71v45
+;Автоматический выход на ГЭ после вкл/выкл bluetooth
+;Automatically do idle after bluetooth on/off
+;(c) funMarkus
+;Version: 
+;PatchID: 8434
+;Details: https://patches.kibab.com/patches/details.php5?id=8434
+/*
+
+*/
+06F91A2: FFF713FB 06F13AE8
+;------------------------- end -------------------------
+

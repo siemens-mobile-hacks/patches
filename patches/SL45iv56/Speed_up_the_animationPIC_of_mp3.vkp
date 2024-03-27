@@ -1,0 +1,18 @@
+;SL45iv56
+;Ускорение анимации в MP3-плеере
+;Speed up the animationPIC of the mp3play
+;(c) greenteas
+;Version: 
+;PatchID: 3239
+;Details: https://patches.kibab.com/patches/details.php5?id=3239
+/*
+English: Release: April 28th, 2006
+*/
+3BE0B8: F401 FA00
+3BE0CC: F401 FA00
+
+;01F4=500=1000/2 
+;00FA=250=1000/4 
+;Display four Pictures in 1s
+;------------------------- end -------------------------
+

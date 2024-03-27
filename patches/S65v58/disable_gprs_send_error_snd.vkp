@@ -1,0 +1,14 @@
+;S65v58
+;Убрать звук при ошибке передачи GPRS в Java
+;Disable GPRS send data error in Java
+;(c) vGamBIT
+;Version: 
+;PatchID: 8782
+;Details: https://patches.kibab.com/patches/details.php5?id=8782
+/*
+Убирает звук при ошибке передачи GPRS в Java. Часто бывает при плохой связи в Opera Mini и Bombus
+*/
+009461C0: D68A00EB 0410A0E1
+
+;------------------------- end -------------------------
+

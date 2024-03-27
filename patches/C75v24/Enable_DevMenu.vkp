@@ -1,0 +1,13 @@
+;C75v24
+;Включение Инженерного меню
+;Enable Developer Menu
+;(c) Phantom
+;Version: 
+;PatchID: 2937
+;Details: https://patches.kibab.com/patches/details.php5?id=2937
+/*
+
+*/
+07DDA58: 040090E5 0000A0E3
+;------------------------- end -------------------------
+

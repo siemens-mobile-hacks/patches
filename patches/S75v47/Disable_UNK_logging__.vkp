@@ -1,0 +1,15 @@
+;S75v47
+;Отключить UNK логгинг
+;Disable UNK logging
+;(c) benj9
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8107
+;Details: https://patches.kibab.com/patches/details.php5?id=8107
+/*
+
+Отключает UNK логгинг
+*/
+09FBA24: 0F002DE9 1EFF2FE1
+;------------------------- end -------------------------
+

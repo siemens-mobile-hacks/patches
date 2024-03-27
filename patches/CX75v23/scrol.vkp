@@ -1,0 +1,17 @@
+;CX75v23
+;Плавный скроллинг длинных названий и имен
+;Smooth scrolling of long names
+;(c) SiNgle
+;(r) AsteriX, KiRiK
+;(p) Smelter
+;Version: 
+;PatchID: 1826
+;Details: https://patches.kibab.com/patches/details.php5?id=1826
+/*
+
+*/
+04A89B0: D007 1202 ; задержка перед скролом (delay before start)
+04A89B4: 2C01 2A00 ; скорость скрола (scrolling speed)
+
+;------------------------- end -------------------------
+

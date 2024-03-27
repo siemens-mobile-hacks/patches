@@ -1,0 +1,20 @@
+;CX70v56
+;Настройка аналоговых часов
+;Analog Clock Tuning
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 668
+;Details: https://patches.kibab.com/patches/details.php5?id=668
+/*
+Настройка аналоговых часов.
+*/
+171FC3A: 9E 80 ; Длина стрелок (Hands length)
+171FCAE: 01 02 ; Центральная точка (Center-point)
+171FCFC: 01 06 ; Цвет минутной стрелки (Minute hand color)
+171FDAC: 01 04 ; Цвет часовой стрелки вторая линия(для жирности)(Hour hand second line color (bold))
+171FE0C: 01 04 ; Цвет часовой стрелки (Hour hand color)
+
+
+;------------------------- end -------------------------
+

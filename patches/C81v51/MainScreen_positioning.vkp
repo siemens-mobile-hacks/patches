@@ -1,0 +1,73 @@
+;C81v51
+;Позиционирование элементов главного экрана
+;MainScreen positioning
+;(c) SiNgle, BuG, KiRiK, [crazy]misha
+;(r) arsh0r
+;(p) den11111
+;Version: 3
+;PatchID: 7559
+;Details: https://patches.kibab.com/patches/details.php5?id=7559
+/*
+
+*/
+;Net-Icons
+029C1B2: 03 xx ;canvas start x
+029C1B0: 02 yy ;canvas start y
+029C1B4: 21 xx ;canvas end x
+029C1AA: 0F yy ;canvas end y
+;029C1B8: FFF76FFE 00280028 ; no canvas
+029C1C4: 03 xx ;x
+029C1C2: 02 yy ;y
+
+;Iconbar
+029C5B8: 23 xx ;canvas1(icons in iconbar?) start x
+029C5B6: 02 yy ;canvas1(icons in iconbar?) stat y
+029C5BA: 63 xx ;canvas1(icons in iconbar?) end x
+029C5B0: 0F yy ;canvas1(icons in iconbar?) end y
+029C61E: 02 yy ;canvas2(iconbar) start y
+029C614: 0F yy ;canvas2(iconbar) end y
+;029C5BE: FFF76CFC 00280028 ;no canvas1
+;029C624: FFF739FC 00280028 ;no canvas2
+029D7C0: 9F xx ;x with canvas2 iconbar
+029C638: 02 yy ;y
+
+;Battery-Icons
+029C6F0: 65 xx ;canvas start x
+029C6EE: 02 yy ;canvas start y
+029C6F2: 80 xx ;canvas end x
+029C6E8: 0F yy ;canvas end y
+;029C6F6: FFF7D0FB 00280028 ; no canvas
+029C702: 65 xx ;x
+029C700: 02 yy ;y
+
+;missed Events
+0301DEA: 78 yy ;y
+
+;without Provider-Logo:
+0439F7C: 0B yy ;Date/Time ;don't works on skin application image
+0439F8C: 1E yy ;Provider
+0439F9C: 30 yy ;Sub-Provider
+0439FAC: 40 yy ;Flash-SMS/CB-News
+0439FBC: 66 yy ;Timer when Stopwatch running
+0439FCC: 78 yy ;Stopwatch/Timer
+
+;with Provider-Logo:
+0439FDC: 0B yy ;Date/Time ;don't works on skin application image
+0439FFC: 40 yy ;Flash-SMS/CB-News
+043A00C: 66 yy ;Timer when Stopwatch running
+043A01C: 78 yy ;Stopwatch/Timer
+
+;Date/Time on Skin Application Image
+0438980: 06 xx ;start x
+0438982: 1A yy ;start y
+0438984: 7D xx ;stop x
+0438986: 26 yy ;stop y
+
+;Hotkey Info on Skin Application Image
+043899C: 06 xx ;start x
+043899E: 8A yy ;start y
+04389A0: 83 xx ;stop x
+04389A2: 99 yy ;stop y
+
+;------------------------- end -------------------------
+

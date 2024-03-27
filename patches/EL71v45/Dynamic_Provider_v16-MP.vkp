@@ -1,0 +1,15 @@
+;EL71v45
+;Динамическая замена имени оператора и субоператора
+;Dynamic replacing of Provider and Subprovider name
+;(c) avkiev
+;Version: 16-MP
+;PatchID: 7509
+;Details: https://patches.kibab.com/patches/details.php5?id=7509
+/*
+
+*/
+08006EC: 17338DA0 0xA0061601                           ; EL71v45 - Provider
+05C46DA: 301CFFF720FDEA79311C C046,004B9847,0xA0061611 ; EL71v45 - Subprovider
+05C46D2: 00 FF                                         ; EL71v45 - Subprovider in Profile0 
+;------------------------- end -------------------------
+

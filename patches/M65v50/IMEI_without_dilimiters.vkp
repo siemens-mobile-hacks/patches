@@ -1,0 +1,15 @@
+;M65v50
+;Убрать черточки-разделители при показе IMEI
+;Disable delimiters while showing IMEI
+;(c) 1nvisible
+;(r) Bennie
+;(p) Smelter
+;Version: 
+;PatchID: 2539
+;Details: https://patches.kibab.com/patches/details.php5?id=2539
+/*
+
+*/
+08E8070: 05D0 0AE0
+;------------------------- end -------------------------
+

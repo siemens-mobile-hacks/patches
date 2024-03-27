@@ -1,0 +1,13 @@
+;S75v52
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) Bennie
+;Version: 
+;PatchID: 8331
+;Details: https://patches.kibab.com/patches/details.php5?id=8331
+/*
+
+*/
+029B579: D1 E0
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;EL71v38
+;Прозрачность в Нативном Меню
+;Transparency in Native Menu
+;(c) SiNgle
+;(p) 1allen
+;Version: 1
+;PatchID: 7045
+;Details: https://patches.kibab.com/patches/details.php5?id=7045
+/*
+Убирает белый фон иконок натив меню, теперь фон задается цветовой схемой.
+*/
+00C53290: FFFFFF64 FFFFFF00 ;rgbt in hex
+;------------------------- end -------------------------
+

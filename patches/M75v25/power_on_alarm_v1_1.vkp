@@ -1,0 +1,27 @@
+;M75v25
+;Включение по будильнику
+;Turn On By AlarmClock
+;(c) SiNgle
+;(r) (i) ThE TrIFoN
+;(p) sempai
+;Version: 1.1
+;PatchID: 6470
+;Details: https://patches.kibab.com/patches/details.php5?id=6470
+/*
+
+*/
+#pragma enable old_equal_ff
+01FEA00: 10B5054CA0470648C088202803DA1220
+01FEA10: 0021024A904710BD,0xA02F5230,0xA0832430 ; -, A, B
+01FEA20: 0xA851A92C ; C
+#pragma disable old_equal_ff
+058A80A: 9BF0E8EC 74F4F9F8
+
+/*
+Port info:
+A - StopPlaying (10402DE90040A0E1????????010050E30800000A)
+B - Reload (04E02DE514D04DE20020A0E3)
+C - RamNet
+*/
+;------------------------- end -------------------------
+

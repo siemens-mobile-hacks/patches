@@ -1,0 +1,13 @@
+;C55v24
+;Отключение_запрета_редактирования_расширения_в_Card_Explorer
+;Turning off of the prohibition of the editing of expansion in Card Explorer
+;(c) Sinclair
+;Version: 
+;PatchID: 1203
+;Details: https://patches.kibab.com/patches/details.php5?id=1203
+/*
+Работает с урезанным ленгпаком
+*/
+4A140A: DADCFA3B 50445055
+;------------------------- end -------------------------
+

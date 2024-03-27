@@ -1,0 +1,21 @@
+;SL45iv56
+;MP3 при заблокированной клавиатуре
+;MP3 while keylocked
+;(c) solnica
+;Version: 
+;PatchID: 1743
+;Details: https://patches.kibab.com/patches/details.php5?id=1743
+/*
+Для запуска при заблокированной клавиатуре нажать ОДИН раз
+Не включается подстветка
+
+Патч №139 с http://patch.oslik.ru/SL45_RU
+*/
+3B07C4: 1E 62 
+3B07C7: 03 04 
+3B07CA: 1F 1E 
+3AF6F4: DAD66C2C DADAE2F6 
+3B06E0: DC45 0D06 
+3B07CE: DAA2184C48402D10 0D03DADBF8860D0F
+;------------------------- end -------------------------
+

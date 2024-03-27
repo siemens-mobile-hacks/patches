@@ -1,0 +1,15 @@
+;A52v9
+;Отключить "Принято новое текстовое сообщение"
+;Disable "Accept the new text message"
+;(c) Delirium
+;Version: 
+;PatchID: 4370
+;Details: https://patches.kibab.com/patches/details.php5?id=4370
+/*
+
+*/
+205992: E6FC3200 EA00785A
+;или
+;205992: E6FC 0D72
+;------------------------- end -------------------------
+

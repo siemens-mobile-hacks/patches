@@ -1,0 +1,23 @@
+;C81v51
+;Отключить сообщения "Аккумулятор почти разряжен, Зарядите!" и "Аккумулятор разряжен! Зарядите!"
+;Disable messages "Battery power low. Please recharge!" and "Battery empty. Please recharge!"
+;(c) Evgr
+;(p) dimonp25
+;Version: 
+;PatchID: 8177
+;Details: https://patches.kibab.com/patches/details.php5?id=8177
+/*
+Этот патч убирает окошко,звук и подсветку при сообщении "Аккумулятор почти разряжен, Зарядите!" и "Аккумулятор разряжен! Зарядите!"
+*/
+; Отключить сообщения "Аккумулятор почти разряжен, Зарядите!" и "Аккумулятор разряжен! Зарядите!"
+; Disable messages "Battery power low. Please recharge!" and "Battery empty. Please recharge!"
+; C81v51
+; (c) Evgr
+
+029A8E6: 5DF106E8 C046C046 ; окошки
+029A8D8: DEF736E9 C046C046 ; звук
+029A8EE: 5CF1A2EC C046C046 ; подсветка 
+
+
+;------------------------- end -------------------------
+

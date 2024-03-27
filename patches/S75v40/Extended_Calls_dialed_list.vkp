@@ -1,0 +1,13 @@
+;S75v40
+;Расширенный список вызовов
+;Extended Calls dialed list
+;(c) BoBa
+;Version: 3-MP
+;PatchID: 5074
+;Details: https://patches.kibab.com/patches/details.php5?id=5074
+/*
+
+*/
+03EE624: 0xA05E2171 0xA006FE01 ; S75v40
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;M65v50
+;Почасовой контроль яркости
+;Screen Illumination Auto Control
+;(c) starfriend
+;(r) (i) ~Jhellico
+;(p) ~Jhellico
+;Version: 2.1
+;PatchID: 3355
+;Details: https://patches.kibab.com/patches/details.php5?id=3355
+/*
+С помощью этого патча вы сможете указать время изменения подсветки.
+
+*/
+0B6962C: 04980E1C141CC707101C 004FB847,0xA0FC4C01,C046
+;------------------------- end -------------------------
+

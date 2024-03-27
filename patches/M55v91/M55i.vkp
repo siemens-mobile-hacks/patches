@@ -1,0 +1,16 @@
+;M55v91
+;M55i
+;M55i
+;(c) -SKB-
+;(r) MihaSoft
+;(p) Asterix
+;Version: 
+;PatchID: 2137
+;Details: https://patches.kibab.com/patches/details.php5?id=2137
+/*
+В информации от телефоне к "M55" добавляет "i" - "Product: M55i"
+English: Adds "i" to "M55" in phone info - "Product: M55i"
+*/
+67FF73: 00 69 ;можно добавить ещё до 12 символов (возможны проблемы) (R) MihaSoft
+;------------------------- end -------------------------
+

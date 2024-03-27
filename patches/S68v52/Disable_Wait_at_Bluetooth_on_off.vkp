@@ -1,0 +1,13 @@
+;S68v52
+;Disable "Wait" at Bluetooth on/off
+;Disable "Wait" at Bluetooth on/off
+;(c) Evgr
+;Version: 
+;PatchID: 10263
+;Details: https://patches.kibab.com/patches/details.php5?id=10263
+/*
+
+*/
+09B206C: EC2EF9FA 0000A0E1
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;M81v51
+;Отключить "Подождите" при OBEX-подключении
+;Disable "Wait" in OBEX
+;(c) dimonp25
+;Version: 
+;PatchID: 8496
+;Details: https://patches.kibab.com/patches/details.php5?id=8496
+/*
+
+*/
+096D39A:F8B5 7047
+;------------------------- end -------------------------
+

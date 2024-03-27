@@ -1,0 +1,19 @@
+;X75v100
+;Продвинутый индикатор сети
+;Advanced Net Indicator
+;(c) arsh0r
+;(r) BuG (i) avkiev, ~Jhellico
+;(p) -=(Kad)=-
+;Version: 2.0
+;PatchID: 6534
+;Details: https://patches.kibab.com/patches/details.php5?id=6534
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Advanced_Net_Indicator_v20.zip
+
+/*
+Неоходимо поставить картинки из архива
+
+Отдельный индикатор, для тех кто пользуется Extrainfo v7.2
+*/
+Качаем аттач
+;------------------------- end -------------------------
+

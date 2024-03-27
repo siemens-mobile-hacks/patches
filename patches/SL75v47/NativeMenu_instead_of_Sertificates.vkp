@@ -1,0 +1,17 @@
+;SL75v47
+;NativeMenu вместо "Сертификаты"
+;NativeMenu instead of "Sertificates"
+;(c) SiNgle
+;(r) Belarus
+;(p) IliaKompGS
+;Version: 
+;PatchID: 6950
+;Details: https://patches.kibab.com/patches/details.php5?id=6950
+/*
+Вешаем на горячую клавишу "Сертификаты" (NAT_SERTIFICATES) и напрямую получаем доступ в NativeMenu
+После установки патча телефон работает. У меня DSE зависает и я не смог потестить патч. Потестите плиз и отпишитесь в комментариях.
+*/
+0424188: 0xA032E751 0xA02CDF23 ; вместо "сертификаты"
+
+;------------------------- end -------------------------
+

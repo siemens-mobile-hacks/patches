@@ -1,0 +1,16 @@
+;CX75v12
+;Запуск явы отовсюду
+;Run Java from Everywhere
+;(c) 1nvisible
+;(r) Zl0d, Kamikadze!
+;(p) crash
+;Version: 3.0
+;PatchID: 4548
+;Details: https://patches.kibab.com/patches/details.php5?id=4548
+/*
+Запуск явы из любой директории и на любом диске.
+*/
+07BCF40: 2500000A 000050E3
+
+;------------------------- end -------------------------
+

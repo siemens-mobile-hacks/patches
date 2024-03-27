@@ -1,0 +1,39 @@
+;SL45iv56
+;AFA. Добавление функций для "Встречи"
+;AFA. Another Function of Appointment
+;(c) RizaPN
+;Version: 
+;PatchID: 1700
+;Details: https://patches.kibab.com/patches/details.php5?id=1700
+/*
+После применения патча становится доступной функция применения 
+любой "простой" функции в "Встречи" (Appointment). Задача 
+вписывается в текстовую позицию кодом, начиная с 2-х пробелов. 
+Например: для запуска MP3 плейера в нужный день и час нужно 
+создать "Встречу" на это время и в текстовой позиции вписать 
+"__DADBF886" (_=пробел, т.е. два пробела и код). DB86F8 - адрес 
+функции auto-play MP3Player'а, такой же как и у кнопки PLAY) 
+
+Главное найти правильную точку входа функции. 
+
+
+Release: November 21, 2003
+
+Патч №107 с http://patch.oslik.ru/SL45_RU
+*/
+3CAD7E: 06FE5E00 FAC730DD 
+
+27DD30: FFFFFFFFFFFFFFFF DC49D418860046F1 
+27DD38: FFFFFFFFFFFFFFFF 20202D0406FE5E00 
+27DD40: FFFFFFFFFFFFFFFF FADC82ADE6FE8800 
+27DD48: FFFFFFFFFFFFFFFF 00E8E6FF0038DC49 
+27DD50: FFFFFFFFFFFFFFFF A92EBD0ABB125C41 
+27DD58: FFFFFFFFFFFFFFFF F132BB0F7123D740 
+27DD60: FFFFFFFFFFFFFFFF 3700B92F08F10DF3 
+27DD68: FFFFFFFFFFFFFFFF E6F1DB00D7403700 
+27DD70: FFFFFFFFFFFFFFFF B81FDA0D00F8FADC 
+27DD78: FFFFFFFFFFFFFFFF EAABDC49992E27F2 
+27DD80: FFFFFFFFFFFFFFFF 300047F20A008D03 
+27DD88: FFFFFFFFFFFFFFFF 67F2DF002927CB00 
+;------------------------- end -------------------------
+

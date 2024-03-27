@@ -1,0 +1,17 @@
+;EL71v45
+;Изменить длительность рингтона в будильнике
+;Change alarmclock ringtime
+;(c) Evgr
+;(p) Cieniu
+;Version: 
+;PatchID: 8510
+;Details: https://patches.kibab.com/patches/details.php5?id=8510
+/*
+Некоторые глюки с отображением входящих событий при включенном автоповторе (Автом. пауза)
+*/
+0710D3C: E0CC50E2A6CE5C22 1CCA50E2CFCE5C22 ; 1C000+CF0=1CCF0 -> 118000 ms -> 118 sec 
+;0710D3C: E0CC50E2A6CE5C22 15CA50E2F9CE5C22 ; 15000+F90=15F90 -> 90000 ms -> 90 sec 
+;0710D3C: E0CC50E2A6CE5C22 AFCC50E2C8C05C22 ; AF00+C8=AFC8 -> 45000 ms -> 45 sec 
+;0710D3C: E0CC50E2A6CE5C22 75CC50E230C05C22 ; 7500+30=7530 -> 30000 ms -> 30 sec
+;------------------------- end -------------------------
+

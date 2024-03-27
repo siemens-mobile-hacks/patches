@@ -1,0 +1,21 @@
+;CX65v50
+;Включение телефона по будильнику
+;Turn on by Alarm clock
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 1315
+;Details: https://patches.kibab.com/patches/details.php5?id=1315
+/*
+При срабатывании будильника телефон включается и коротко вибрирует.
+English:When alarm clock triggers phone switches on and vibrates shortly.
+*/
+0B6D452: DBF5 C046
+0B6D454: 00EF0020 70F17CEE
+#pragma enable old_equal_ff
+0CDE150: 0FE0A0E114F09FE51200A0E30010A0E3
+0CDE160: 0FE0A0E108F09FE50000A0E304F09FE5
+0CDE170: 549294A0,744923A1,59D4B6A0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

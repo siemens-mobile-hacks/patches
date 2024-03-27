@@ -1,0 +1,14 @@
+;EL71v45
+;Плавное включение подсветки
+;Smooth keypad light on
+;(c) SiNgle
+;(p) Cieniu
+;Version: 
+;PatchID: 8509
+;Details: https://patches.kibab.com/patches/details.php5?id=8509
+/*
+
+*/
+093FEB0: 0022 FF22
+;------------------------- end -------------------------
+

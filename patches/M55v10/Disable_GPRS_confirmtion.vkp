@@ -1,0 +1,13 @@
+;M55v10
+;Cброс счетчика GPRS-инфо без подтверждения
+;Disable confirmation when GPRS info reset
+;(c) Matr!x
+;Version: 
+;PatchID: 1482
+;Details: https://patches.kibab.com/patches/details.php5?id=1482
+/*
+
+*/
+0CC1A4: 84C1 4EC7
+;------------------------- end -------------------------
+

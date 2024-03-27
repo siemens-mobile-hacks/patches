@@ -1,0 +1,14 @@
+;EL71v45
+;В меню разработчика поставить для AV Sync по умолчанию "5000"
+;AV Synchro Fix
+;(c) dimonp25
+;(r) 1nvisible
+;Version: 
+;PatchID: 9086
+;Details: https://patches.kibab.com/patches/details.php5?id=9086
+/*
+Ускоряет вывод на экран.Если есть лучшие значения-пишите.
+*/
+012e33f4: 07 10
+;------------------------- end -------------------------
+

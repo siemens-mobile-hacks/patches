@@ -1,0 +1,17 @@
+;SL45iv56
+;Доступ к графическому меню (вместо обычного) в момент звонка
+;Graphical Menu during a call
+;(c) Gurgy
+;Version: 
+;PatchID: 1612
+;Details: https://patches.kibab.com/patches/details.php5?id=1612
+/*
+Доступ к графическому меню в момент звонка (при нажатии Menu > Main menu)
+
+Release: May 15, 2003
+
+Патч №049 (обновление 1) с http://patch.oslik.ru/SL45_RU
+*/
+18DF64: 6CBCDA C0D5C7 
+;------------------------- end -------------------------
+

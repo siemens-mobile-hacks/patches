@@ -1,0 +1,25 @@
+;EL71v45
+;Отключить сканирование ДатаБазы медиа-файлов с диска "0:/"
+;Disable scanning and refreshing DataBase of Media-files of "0:/"
+;(c) funMarkus
+;Version: 1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7980
+;PatchID: 7979
+;Details: https://patches.kibab.com/patches/details.php5?id=7979
+/*
+;Отключить сканирование ДатаБазы медиа-файлов с диска "0:/"
+;Сканировать ТОЛЬКО папку "MP3" на флешке
+;Создал этот патч, чтобы убрать ненужное и долгое сканирование (для меня) картинок и видеофайлов
+;Теперь сканируется только то, что лежит в папке "MP3" на флешке (а там только музыка у меня - мп3, аас и т.д.), 
+;Теперь не нужно ждать вечно, сканирование пролетает мнгновенно (в зависимости от колличества содержимого в этой папке)
+
+;Disable scanning and refreshing DataBase of Media-files of "0:/"
+;Scanning ONLY the folder "MP3" on "4:/"
+;I've created this patch for disabling unneccesary and too long scanning (to me) of pictures and video-files
+;Now it scans only those files, which are located in "4:/MP3" (I have only songs on my memory-card there - mp3, aac and so on),
+;The scanning runs really fast (depends on the number of files in this folder)
+*/
+07353C8: 30 FF; Disable checking and refreshing database of "0:/"
+07353C4: 000000 4D5033; check and refresh database of a folder "4:/MP3"
+;------------------------- end -------------------------
+

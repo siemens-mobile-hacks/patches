@@ -1,0 +1,14 @@
+;C75v22
+;Отключить «Подождите» при открытии файла
+;Remove «Please wait» when opening a file
+;(c) sempai
+;(p) NevAtse
+;Version: 
+;PatchID: 9934
+;Details: https://patches.kibab.com/patches/details.php5?id=9934
+/*
+
+*/
+0354668: 0A8E10FA 0000A0E3
+;------------------------- end -------------------------
+

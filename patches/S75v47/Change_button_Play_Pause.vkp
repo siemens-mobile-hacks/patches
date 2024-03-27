@@ -1,0 +1,18 @@
+;S75v47
+;Расширенные функции кнопки PlayPause
+;Extended functions of PlayPause button
+;(c) funMarkus
+;(p) dimonp25
+;Version: 
+;PatchID: 8623
+;Details: https://patches.kibab.com/patches/details.php5?id=8623
+/*
+По желанию можно изменить функционал кнопки(след./предыдущий трэк, первый трэк, начать снова трэк)..
+*/
+052D322: 11 01 ; next track
+;052d322: 11 02 ; previous track
+;052d322: 11 1D ; play first track
+;052d322: 11 08 ; restart playback
+
+;------------------------- end -------------------------
+

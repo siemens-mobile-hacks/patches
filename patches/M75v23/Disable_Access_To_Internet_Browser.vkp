@@ -1,0 +1,15 @@
+;M75v23
+;Отключить доступ к интернет-браузеру
+;Disable Access To Internet Browser
+;(c) KiRiK
+;Version: 
+;PatchID: 2788
+;Details: https://patches.kibab.com/patches/details.php5?id=2788
+/*
+
+*/
+04B214C: A96132A0 00000000 ; disable Internet INTR_STRTBROWSR
+04B20E4: C36132A0 00000000 ; disable Bookmarks INTR_BBOOKMARKS
+04B19FC: EF6B32A0 00000000 ; disable DevMenu ELSE_DEVELP_MNU
+;------------------------- end -------------------------
+

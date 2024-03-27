@@ -1,0 +1,15 @@
+;S75v52
+;Не отображать иконки центральной навигационной клавиши
+;Don't display central navigation key icon
+;(c) avkiev
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8367
+;Details: https://patches.kibab.com/patches/details.php5?id=8367
+/*
+
+*/
+19A402C: 0C0E8800 00000000
+19A4034: 0C0E8800 00000000
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;SK65v50
+;Перезагрузка вместо 8-го профиля
+;Reboot instead of 8th profile
+;(c) -=(Kad)=-
+;(p) ~Jhellico
+;Version: 
+;PatchID: 4168
+;Details: https://patches.kibab.com/patches/details.php5?id=4168
+/*
+Перезагрузка вместо активации режима "В самолёте"
+*/
+02BD058: 8CF1C0EF 8CF19AEF
+;------------------------- end -------------------------
+

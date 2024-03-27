@@ -1,0 +1,15 @@
+;CX75v25
+;Перемещение папки Misc на MMC
+;Move Misc folder on MMC
+;(c) .::L:A:V::.
+;Version: 1
+;PatchID: 6175
+;Details: https://patches.kibab.com/patches/details.php5?id=6175
+/*
+А работает ли патч?
+*/
+04A5430: 30 34
+04A545E: 30 34
+
+;------------------------- end -------------------------
+

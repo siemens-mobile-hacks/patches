@@ -1,0 +1,19 @@
+;C55v24
+;Счётчик оставшихся символов
+;The counter of the remained symbols
+;(c) Sinclair
+;Version: 1.0
+;PatchID: 2515
+;Details: https://patches.kibab.com/patches/details.php5?id=2515
+/*
+Этот патч изменяет выводимое при наборе СМС число оставшихся символов:
+вместо счетчика от 760 до 0 (от 330 до 0 для юникода) выводится число символов, оставшееся до конца текущей SMS.
+*/
+4AE1EC: DADC0A4F DADFE0F0
+4AE207: C8 CA
+5FF0E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8840DADC0A4FF6F80EFEF0A898E02D09
+5FF0F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46FA04018D0326FA04010D0EE6FE4200
+5FF100: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0D0846FA58028D0326FA58020D05E6FE
+5FF110: FFFFFFFFFFFFFFFFFFFF 98005BEEF2FA0CFEDB00
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;M65v50
+;Перезагрузка вместо 8го профиля
+;Reboot instead of 8th profile
+;(c) -=(Kad)=-
+;(p) Mifodiy
+;Version: 1.0
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=6303
+;PatchID: 3189
+;Details: https://patches.kibab.com/patches/details.php5?id=3189
+/*
+Перезагружается вместо активации режима "В самолёте"
+
+*/
+91980C: 0xA1240938 0xA1240944
+;------------------------- end -------------------------
+

@@ -1,0 +1,32 @@
+;S75v47
+;Увеличение фото при звонке
+;Large photo in call
+;(c) SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 5562
+;Details: https://patches.kibab.com/patches/details.php5?id=5562
+/*
+Предыдущие значения в патче от Belarus -  кому нравится
+*/
+
+029eba8: 33 57 ;photo size
+
+;042d14c: 08 00 ; disable name and phone incall x displacements
+042d168: 08 00
+
+042cf44: 63 6d ;7a ; outcall_y_name
+042cf60: 75 7a ;8a ; outcall_y_phonenum
+042cf98: 1B 00 ; outcall_y_blankarea1
+;042cf7c: 87 00 ; ??? outcall_y_blankarea2 ; отключает показ времени разговора при исходящем звонке
+042cfe6: 2d 16 ; incall_photo_y
+042cd9a: 2d 16 ; outcall_photo_y
+
+042d150: 63 6d ;7a ; incall_y_name
+042d16c: 75 7a ;8A ; incall_y_phonenum
+042d134: 1B 00 ; incall_y_blankarea1
+;042d188: 87 00 ; incall_y_blankarea2 ; отключает показ времени разговора при входящем звонке
+ 
+
+;------------------------- end -------------------------
+

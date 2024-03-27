@@ -1,0 +1,28 @@
+;MC60v10
+;Открывает опцию cохранение голосовых заметок(from m55)
+;Unhide voice memo option (from m55)
+;(c) Kanibaals
+;Version: 
+;PatchID: 3332
+;Details: https://patches.kibab.com/patches/details.php5?id=3332
+/*
+English:Unhide voice memo(dictaphone) option under extras like in M55. Records vmo files (DES converts them to wav). Recorder placed instead of countdown util(Countdown->voice memo). Maximum time ~30 min (3.5 MB) 
+
+Would be great if could be added as extra option not instead countdown, no idea...
+*/
+;Countdown - voice memo, can be used while call in progress for wiretap
+00358CD8: 4D065E02 7E007F00
+0005CFF4: F0CEF0DF FA2CFE4D
+
+;Instead Handsfree->Dictaphone
+;0005CFF4: F0CEF0DF DA2D781C
+
+;Allow wav record while call in progress (maybe useful, doesn't record conversation only mic.)
+00358CF6: 6400 6105
+
+;add/Unhide empty unknown menu - not working, no idea why
+;00358C5A: 39273A27 7E007F00
+;358c2a: f4cf25 6ad625
+
+;------------------------- end -------------------------
+

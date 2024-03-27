@@ -1,0 +1,14 @@
+;S75v47
+;Disable BootScreen
+;Disable BootScreen
+;(c) benj9
+;(p) den11111
+;Version: 
+;PatchID: 7821
+;Details: https://patches.kibab.com/patches/details.php5?id=7821
+/*
+
+*/
+01A681C: 683E000B 0000A0E1
+;------------------------- end -------------------------
+

@@ -1,0 +1,26 @@
+;C75v22
+;Исправление ошибки в автоимени файла с камеры (2010 год)
+;Camera filename fix (2010 year)
+;(c) DebriZ
+;(p) NevAtse
+;Version: 
+;PatchID: 9925
+;Details: https://patches.kibab.com/patches/details.php5?id=9925
+/*
+Исправление ошибки в автоимени файла.
+При сохранении снимка с камеры с 2010 года файлы именовались как в 2000 году.
+
+*/
+2DBB64: F04D2DE9 F04F2DE9
+2DBBB0: 50008DE2 55A0DDE5
+2DBBB4: 1BB3FCFA 54B0DDE5
+2DBBB8: 00A0A0E1 50009DE5
+2DBBBC: 50008DE2 E0CE2DEB
+2DBBC0: 17B3FCFA 0190A0E1
+2DBBC4: 00B0A0E1 DECE2DEB
+2DBBC8: 50008DE2 0A30A0E3
+2DBBCC: 13B3FCFA 910303E0
+2DBBD0: DBCE2DEB 091083E0
+2DBCA8: F08DBDE8 F08FBDE8
+;------------------------- end -------------------------
+

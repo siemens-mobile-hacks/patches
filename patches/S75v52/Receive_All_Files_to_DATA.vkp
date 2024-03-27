@@ -1,0 +1,25 @@
+;S75v52
+;Прием всех файлов в 0:/
+;Receive All Files to 0:/
+;(c) 1nvisible
+;(p) funMarkus
+;Version: 0.91b
+;PatchID: 8953
+;Details: https://patches.kibab.com/patches/details.php5?id=8953
+/*
+Все файлы будут приниматься в корень диска Data
+*/
+;Install patch * Unlock Folders in Card-Explorer * before installing this patch!
+
+04D4572: 10B50C1CFFF7D4FF002C06D00028 00B50220FE46004900BD19AA40A1
+04D468C: 10B50C1C002806D0002C04D0FFF7E0FE 00B50120FE46004900BDFFFF19AA40A1
+
+#pragma enable old_equal_ff
+140AA18: 30B5051C0868012D04D109A1122200F0
+140AA28: 06F830BD0EA1,12,2200F001F830BDF0B5 ;change 0x12 to (lentgth*2 + 2)
+140AA38: 141C00254B5D43550135A542FAD1F0BD
+140AA48: 0800,'4:\\Inbox'                   ;folder for OBEX mode, may use MicroSD
+140AA68: 0800,'0:\\Inbox'                   ;folder for Phone mode, don't use MicroSD!
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

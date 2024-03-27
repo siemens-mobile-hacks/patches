@@ -1,0 +1,29 @@
+;EL71v45
+;Расширенный список вызовов
+;Extended Calls dialed list
+;(c) DJ, sempai
+;Version: 5.2
+;PatchID: 9685
+;Details: https://patches.kibab.com/patches/details.php5?id=9685
+/*
+"немного переделал патч "Расширенный список вызовов" пятой версии
+[+] сделал под swilib
+[*] списки листаются по долгому нажатию, чтобы вкладка не переключалась во входящих"
+sempai
+*/
+;PATCH_ENTRYPOINT
+0C4288C: 0xA0961303 0xA006FE01
+;CODE
+#pragma enable old_equal_ff
+006FE00: F0B5041C0D1C49684B68174A9A4210D1
+006FE10: 8B68C7DFAE02466B3D2B0FD03E2B08D1
+006FE20: 124AB24216D0124AB24215D0114AB242
+006FE30: 0ED0114A201C291C9047F0BD0B4AB242
+006FE40: 0AD00B4AB24203D00A4AB24202D0F0E7
+006FE50: 022702E0012700E000270120C7DF3B01
+006FE60: 0021381C80DFF0BD95010000E5170000
+006FE70: E4170000F9170000031396A0
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

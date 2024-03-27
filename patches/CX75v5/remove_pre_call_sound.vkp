@@ -1,0 +1,16 @@
+;CX75v5
+;Убрать_звук_дозвона
+;Remove_pre_call_sound
+;(c) AlexSid
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 465
+;Details: https://patches.kibab.com/patches/details.php5?id=465
+/*
+Убрать звук дозвона.
+
+*/
+04B8428: 78DA4CA0 00000000
+;------------------------- end -------------------------
+

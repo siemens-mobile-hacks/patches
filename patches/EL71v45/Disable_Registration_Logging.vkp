@@ -1,0 +1,21 @@
+;EL71v45
+;Disable Registration Logging
+;Disable Registration Logging
+;(c) benj9
+;Version: 
+;PatchID: 8042
+;Details: https://patches.kibab.com/patches/details.php5?id=8042
+/*
+
+*/
+06A6A54: 0F002DE9 1EFF2FE1 ; call
+06A6C64: 70402DE9 1EFF2FE1 ; project
+06A6AD8: 0F002DE9 1EFF2FE1 ; return
+06A694C: 0F002DE9 1EFF2FE1 ; warning
+06A69D0: 0F002DE9 1EFF2FE1 ; critical
+06A6B5C: 0F002DE9 1EFF2FE1 ; alloc
+06A6840: 0F002DE9 1EFF2FE1 ; info
+06A68C8: 0F002DE9 1EFF2FE1 ; verbose
+06A6BE0: 0F002DE9 1EFF2FE1 ; free
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;SL75v52
+;Нормальная анимация при записи в диктофоне
+;Normal_animation_in_sound_recorder
+;(c) SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 7640
+;Details: https://patches.kibab.com/patches/details.php5?id=7640
+/*
+
+*/
+0657a18: FA 64
+
+;------------------------- end -------------------------
+

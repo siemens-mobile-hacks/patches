@@ -1,0 +1,27 @@
+;C72v22
+;Перезагрузка при пикоффе
+;Do Restart After Exit
+;(c) Evgr
+;Version: 
+;PatchID: 10598
+;Details: https://patches.kibab.com/patches/details.php5?id=10598
+/*
+Идём в Developer Menu, в Configuration ставим галочку в REXIT. 
+Если просто активировать процедуру рестарта, то рестарт не всегда проходит успешно. Выяснить, где происходит сбой, пока не получается, а время идёт. Поэтому пока просто дополнил её ещё одной проверкой.
+*/
+1130AB8: 080091E5 50F5F1EB
+1130AE0: 0080A0E1 0000A0E1
+1130B30: 010058E3 3DF5F1EB ; set mark in RAM, that restart is needed
+119EB64: 0400001A 343DF01B ; check RAM for restart requirement
+
+#pragma enable old_equal_ff 
+0DAE000: 080091E5FF402DE90400A0E386B40EEB
+0DAE010: 0110A0E3010020E0010050E30480A003
+0DAE020: 0180CB050080A0E1FF80BDE8010058E3
+0DAE030: 1C009F05008080051EFF2FE110009FE5
+0DAE040: 000090E5010050E31EFF2F0114E08EE2
+0DAE050: 1EFF2FE1,0x000882E0
+#pragma disable old_equal_ff 
+
+;------------------------- end -------------------------
+

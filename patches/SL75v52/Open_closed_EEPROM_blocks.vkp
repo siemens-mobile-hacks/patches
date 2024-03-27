@@ -1,0 +1,14 @@
+;SL75v52
+;Открыть заблокированные блоки EEPROM
+;Open closed EEPROM blocks
+;(c) Skylord
+;(p) kostett
+;Version: 
+;PatchID: 9916
+;Details: https://patches.kibab.com/patches/details.php5?id=9916
+/*
+
+*/
+262C9C: 00 01
+;------------------------- end -------------------------
+

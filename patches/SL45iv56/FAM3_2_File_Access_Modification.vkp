@@ -1,0 +1,40 @@
+;SL45iv56
+;FAM3.2 Модификация доступа к файлам
+;FAM3.2 File Access Modification
+;(c) Rst7/CBSIE
+;Version: 3.2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=2142
+;PatchID: 2086
+;Details: https://patches.kibab.com/patches/details.php5?id=2086
+/*
+Создает функцию непосредственного вызова процедуры в контексте 
+файловой системы (не через эксплорера) 
+void FilesysICall(void huge * proc, void far *param) at 0xE47FFC, 
+где proc - сегментный адрес процедуры 
+с описанием void foo(void far *param), 
+которую надо вызвать в контексте файловой системы 
+----------------------------------------------------------- 
+Для писателей на асме - при вызове FilesysICall 
+указатель процедуры в R12/R13, данные в R14/R15. 
+При вызове процедуры в R12/R13 - данные 
+ 
+_НЕ_МЕШАЕТ_ предыдущей версии (FAM2) для совместимости. 
+_НЕ_ИСПОЛЬЗУЕТ_ абсолютные переменные, все официально, через SendMessage 
+ОТКАТИТЬ ПРЕДЫДУЩУЮ ВЕРСИЮ! 
+Исходник на [url]www.cbsie.narod.ru[/url]
+*/
+; Переход на проверку доп. функций. 
+0x449EDA: 46F82200 FAE4707E 
+; Код патча 
+0x447E60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2A2A2A2046414D2076332E32202A2A2A 
+; Добавление функции 
+0x447E70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46F840002D0446F82200FAE4DE9ED440 
+0x447E80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0A00D4500C00D4C00E00D4D01000DAC7 
+0x447E90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88EEFAE448AB88F088E088D088C0E6FC 
+0x447EA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 7038E0EDE6FE4000E00FDAC130AA06F0 
+0x447EB0: FFFFFFFF 0800DB00 
+; Точка входа FilesysICall 
+; Вызов функции R12/R13 в контексте MMC_FILE_SYSTEM 
+0x447FFC: FFFFFFFF FAE4967E
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v52
+;Изменить папку для рамок
+;Change path for frames
+;(c) KIBER-DEMON
+;(p) SimaFish
+;Version: 
+;PatchID: 8413
+;Details: https://patches.kibab.com/patches/details.php5?id=8413
+/*
+Папку можно менять только на телефоне, допустим в System куда...
+*/
+166CB10: 50696374757265735C204672616D6573 "System\ Frames"
+;------------------------- end -------------------------
+

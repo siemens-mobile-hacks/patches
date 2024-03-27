@@ -1,0 +1,44 @@
+;M55v91
+;Большие цифровые часы при залоченной клавиатуре
+;Big Digital Clock When Keyboard Is Locked
+;(c) SiNgle, ACiD[mrp], RizaPN
+;(r) (I) zzt121
+;(p) AlexSid
+;Version: 0.3b
+;PatchID: 9635
+;Details: https://patches.kibab.com/patches/details.php5?id=9635
+/*
+;Чуть подвинутые "Большие цифровые часы при залоченной клавиатуре v0.3b" 
+;для избежания конфликта с DNN_CallsLog2+
+;двоеточие не мигает (в v3.1 мигает на мой взгляд глючно) 
+;Картинки 332..341 - цифры 0..9, 342 - ":", 343 - фон 
+;Патч с картинками http://alexsid.antex.ru/dn.php?file=files/gpatches/Clock_Digits.rar 
+;Там же (http://alexsid.antex.ru/gpatches.php) есть еще кучка вариантов циферок
+*/
+;Чуть подвинутые "Большие цифровые часы при залоченной клавиатуре v0.3b" 
+;для избежания конфликта с DNN_CallsLog2+
+;двоеточие не мигает (в v3.1 мигает на мой взгляд глючно) 
+;Картинки 332..341 - цифры 0..9, 342 - ":", 343 - фон 
+;Патч с картинками http://alexsid.antex.ru/dn.php?file=files/gpatches/Clock_Digits.rar 
+;Там же (http://alexsid.antex.ru/gpatches.php) есть еще кучка вариантов циферок 
+; 
+0DD650: E6FCB101 DA5500B8 
+;35B400 
+35B800: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E00CD7500D00F2F1FE63F2F2FC638820 
+35B810: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB09E0AEBB1426FC09009810BB03E6FC 
+35B820: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B101DB00E0A2F6F10EFE5B22F2F10CFE 
+35B830: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8810F2FE0EFEBB0398E0BB01CB0088C0 
+35B840: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 06FE4C01E6FD1200DA2DB2D298C006FC 
+35B850: FFFFFFFF 1600CB00
+; 
+;Если хотите, чтобы картинки рисовались на другой высоте, строка 
+;35B846: 12 XX 
+;Где ХХ - координата картинок по Y (0 - самый верх экрана) 
+; 
+;Если хотите часы на весь экран, то раскомментируйте следующую строчку 
+;35B846: 12 00 
+;И поставьте картинки с цифрами 
+;http://alexsid.antex.ru/dn.php?file=files/gpatches/digits.rar
+
+;------------------------- end -------------------------
+

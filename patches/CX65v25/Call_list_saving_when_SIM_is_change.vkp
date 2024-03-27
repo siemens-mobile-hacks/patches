@@ -1,0 +1,13 @@
+;CX65v25
+;Сохранение списков при смене SIM карты
+; Call list saving when SIM is changed
+;(c) SiNgle
+;Version: 
+;PatchID: 97
+;Details: https://patches.kibab.com/patches/details.php5?id=97
+/*
+сохраняет списки принятых, пропушенных вызовов и набранных номеров при смене sim-карты
+*/
+083DC9C: 6AF217F9 00200020
+;------------------------- end -------------------------
+

@@ -1,0 +1,35 @@
+;S75v35
+;Расширенный список вызовов
+;Extended "Calls dialed" list
+;(c) BoBa
+;(r) avkiev
+;(p) ferro
+;Version: 
+;PatchID: 3558
+;Details: https://patches.kibab.com/patches/details.php5?id=3558
+/*
+
+*/
+;S75v35 - Расширенный список вызовов 
+;S75v35 - Extended "Calls dialed" list 
+;(c) BoBa
+;(i) avkiev
+
+;Жмем зеленую кнопку -> попадаем в "Набранные номера"
+;Жмем "Назад"        -> попадаем в "Принятые номера"
+;Жмем "Назад"        -> попадаем в "Неотвеченные номера"
+;Жмем "Назад"        -> попадаем в "Журнал"
+;Жмем "Назад"        -> выход в режим готовности.
+
+;Green button -> "Calls dialed"
+;Back         -> "Calls received"
+;Back         -> "Calls missed"
+;Back         -> "History"
+;Back         -> Ready.
+
+
+05DBC78: 00210220DAE700210020D7E700210120D4E700210320D1E7 80B57F46493F0220B8470120B8470020B8470320B84780BD
+
+
+;------------------------- end -------------------------
+

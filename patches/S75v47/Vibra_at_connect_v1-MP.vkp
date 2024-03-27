@@ -1,0 +1,14 @@
+;S75v47
+;Вибра в момент соединения
+;Vibra at connect
+;(c) SiNgle
+;(r) (i) avkiev
+;Version: 1-MP
+;PatchID: 5903
+;Details: https://patches.kibab.com/patches/details.php5?id=5903
+/*
+
+*/
+0DAA4F0: 2A1C2B1C09211730 00498847,0xA0063801
+;------------------------- end -------------------------
+

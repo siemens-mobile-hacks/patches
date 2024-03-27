@@ -1,0 +1,146 @@
+;X65v100
+;Вызов Различных Функций при Залоченной Клавиатуре
+;Running Some Functions While Keyboard is Locked
+;(c) 1nvisible
+;(r) Bennie, avkiev, AsteriX, KiRiK, SiNgle
+;(p) ~Jhellico
+;Version: 11
+;PatchID: 5757
+;Details: https://patches.kibab.com/patches/details.php5?id=5757
+/*
+Телефон выполняет различные функции при нажатии клавиш при залоченной клавиатуре.
+Функция может быть вызвана как при одиночном нажатии клавиши, так и при двойном (для защиты от случайного нажатия).
+English:The phone runs some functions while keyboard is locked.
+The function may be called either on short press or on double press (to prevent casual pressing).
+*/
+#pragma enable old_equal_ff
+0FC2100: 00B50223E85E00F016F8002801D167DF
+0FC2110: 00BD01B0012064DF201CB0BD0223E05E
+0FC2120: 01B500F008F8002800D101BD02B00120
+0FC2130: 64DF301C70BDFFB5C7DFE4801030071C
+0FC2140: 6848C4DF061C04BC61D042DF012802D1
+0FC2150: 717889085BD3101C53281AD000281AD0
+0FC2160: 01281AD005281AD00E281AD00F281AD0
+0FC2170: 25281AD026281AD027281AD028281AD0
+0FC2180: 29281AD014281AD0152852D0162840D0
+0FC2190: 37E0042414E0062412E0082410E00A24
+0FC21A0: 0EE00C240CE00E240AE0102408E01224
+0FC21B0: 06E0142404E0162402E0182400E01A24
+0FC21C0: 335D0134325D0121114203D000F067F8
+0FC21D0: 002916D00221114201D000F068F80421
+0FC21E0: 114201D000F067F83870FF2B09D0012B
+0FC21F0: 2DD0022B2DD0E02B45D2D02B39D2902B
+0FC2200: 31DC00F05EF80120FEBD00F05AF80020
+0FC2210: FEBDB178002901D13870F6E7012901D1
+0FC2220: 3870EEE700F03BF80129EAD100F03FF8
+0FC2230: E7E77178490801D23870E6E700F02FF8
+0FC2240: 0029DED000F033F800F035F8D9E7BFDF
+0FC2250: D7E747DF012804D046DF0128D1D148DF
+0FC2260: CFE749DFCDE7982BCBDC913B181CB7DF
+0FC2270: C7E7DF2BC5DCD03B5C203C2159430918
+0FC2280: 88194BDFBDE7EF2BBBDCE03B9B001C33
+0FC2290: F358002BB5D0FFB49847FFBCB1E704B5
+0FC22A0: 00213A789042387000D1012104BDFFB5
+0FC22B0: 032044DFFFBD0FB5B9DF68DF10230370
+0FC22C0: 0FBDFFB5381D02A20132F1784DDFFFBD
+0FC22D0: 03B5C7DFE4801030FF21017003BD
+0FC22E0: 0xB1C2D3E4,0x00001E00,00000000,00000000,\
+"{p RSFWKL id=1E00 cp=1nvisible ver=11.0}","\
+{info `The phone runs some functions while keyboard is locked.\n","\
+Functions: 01 - Speak time, 02 - read SMS, 91-98 - set profile,\n","\
+D0-DF - run midlet, E0-EF - run function, FF - no action.\n","\
+Options: 01 - double press, 02 - temp light, 04 - kbd unlock.`}","\
+{1.0 cb `Unlock by # double press` v=1}","\
+{1.1 cb `Work in screensaver`}","\
+{2 o Numbers `Show locked screen`=0 `Do not show`=1 `Light on by double press`=2 v=2}","\
+{3 b `Delay for double press` v=200}","\
+{of +4}","\
+{sm `Key Bindings`}","\
+{sm `Left SoftKey`}","\
+{0 h Function ml=1 v=02}","\
+{1 h Option ml=1 v=06}","\
+{endsm}","\
+{sm `Right SoftKey`}","\
+{2 h Function ml=1 v=FF}","\
+{3 h Option ml=1 v=07}","\
+{endsm}","\
+{sm `Red Button`}","\
+{4 h Function ml=1 v=FF}","\
+{5 h Option ml=1 v=02}","\
+{endsm}","\
+{sm `Green Button`}","\
+{6 h Function ml=1 v=02}","\
+{7 h Option ml=1 v=02}","\
+{endsm}","\
+{sm `Volume Down`}","\
+{8 h Function ml=1 v=E0}","\
+{9 h Option ml=1 v=07}","\
+{endsm}","\
+{sm `Volume Up`}","\
+{10 h Function ml=1 v=01}","\
+{11 h Option ml=1 v=00}","\
+{endsm}","\
+{sm `Joy Down`}","\
+{12 h Function ml=1 v=92}","\
+{13 h Option ml=1 v=03}","\
+{endsm}","\
+{sm `Joy Up`}","\
+{14 h Function ml=1 v=91}","\
+{15 h Option ml=1 v=03}","\
+{endsm}","\
+{sm `Joy Right`}","\
+{16 h Function ml=1 v=D0}","\
+{17 h Option ml=1 v=07}","\
+{endsm}","\
+{sm `Joy Left`}","\
+{18 h Function ml=1 v=D1}","\
+{19 h Option ml=1 v=07}","\
+{endsm}","\
+{sm `Joy Press`}","\
+{20 h Function ml=1 v=E1}","\
+{21 h Option ml=1 v=07}","\
+{endsm}","\
+{sm Asterisk}","\
+{22 h Function ml=1 v=E2}","\
+{23 h Option ml=1 v=07}","\
+{endsm}","\
+{endsm}","\
+{sm Functions}","\
+{24 a 0 v=A0318941}","\
+{28 a 1 v=A031894B}","\
+{32 a 2 v=A0319119}","\
+{36 a 3 v=A0319363}","\
+{40 a 4 v=A0319363}","\
+{44 a 5 v=A0319363}","\
+{48 a 6 v=A0319363}","\
+{52 a 7 v=A0319363}","\
+{56 a 8 v=A0319363}","\
+{60 a 9 v=A0319363}","\
+{64 a A v=A0319363}","\
+{68 a B v=A0319363}","\
+{72 a C v=A0319363}","\
+{76 a D v=A0319363}","\
+{80 a E v=A0319363}","\
+{84 a F v=A0319363}","\
+{endsm}","\
+{sm Midlets}","\
+{88 sf 0 mask=`*.jar` ml=59}","\
+{148 sf 1 mask=`*.jar` ml=59}","\
+{208 sf 2 mask=`*.jar` ml=59}","\
+{268 sf 3 mask=`*.jar` ml=59}","\
+{328 sf 4 mask=`*.jar` ml=59}","\
+{388 sf 5 mask=`*.jar` ml=59}","\
+{448 sf 6 mask=`*.jar` ml=59}","\
+{508 sf 7 mask=`*.jar` ml=59}","\
+{568 sf 8 mask=`*.jar` ml=59}","\
+{628 sf 9 mask=`*.jar` ml=59}","\
+{688 sf A mask=`*.jar` ml=59}","\
+{748 sf B mask=`*.jar` ml=59}","\
+{808 sf C mask=`*.jar` ml=59}","\
+{868 sf D mask=`*.jar` ml=59}","\
+{928 sf E mask=`*.jar` ml=59}","\
+{988 sf F mask=`*.jar` ml=59}","\
+{endsm}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

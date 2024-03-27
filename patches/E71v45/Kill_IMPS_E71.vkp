@@ -1,0 +1,14 @@
+;E71v45
+;Грохнуть InstantMessenger
+;Kill InstantMessenger
+;(c) Feyman
+;Version: 
+;PatchID: 10721
+;Details: https://patches.kibab.com/patches/details.php5?id=10721
+/*
+Не запускаются резидентные процессы IMPS, экономим память и процессорное время
+*/
+08B34A6: 23F001F8 06F0D6E9 ; don't create process
+083CFA0: 5F05 8405 ;Delete from FlexMenu
+;------------------------- end -------------------------
+

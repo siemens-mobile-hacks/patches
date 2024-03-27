@@ -1,0 +1,14 @@
+;S65v58
+;Изменение имени производителя прошивки
+;Canging SW developer name
+;(c) -=(Kad)=-
+;Version: 1
+;PatchID: 3122
+;Details: https://patches.kibab.com/patches/details.php5?id=3122
+/*
+Это показывается в dev menu=>project info of exit там где раньше было OFFICIAL
+*/
+90144: 4F4646494349414C 0000000000000000
+90144: 0000000000000000 "DJ Kad"
+;------------------------- end -------------------------
+

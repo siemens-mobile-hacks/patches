@@ -1,0 +1,21 @@
+;S65v58
+;Изменение длительности горения подсветки
+;Change Illumination Turn Off Timer
+;(c) benj9
+;(p) Lasky
+;Version: 3-MP
+;PatchID: 2028
+;Details: https://patches.kibab.com/patches/details.php5?id=2028
+/*
+; (!) masterpatch
+; use "Change Illumination Turn Off Timer 2" to set standard / patch_off values
+; use midlet to overlay your values 
+; to have new midlet values activated, let turn off illu one time and press any key else than red key
+
+Этот патч - врезка к патчу 2027
+*/
+0C347BE: 5349A000411868460422 C046004988470BE6FDA0
+
+
+;------------------------- end -------------------------
+

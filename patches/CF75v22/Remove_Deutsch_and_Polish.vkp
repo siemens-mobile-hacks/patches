@@ -1,0 +1,18 @@
+;CF75v22
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;(r) AsteriX
+;Version: 
+;PatchID: 3003
+;Details: https://patches.kibab.com/patches/details.php5?id=3003
+/*
+
+*/
+;* Убрать Немецкий и Польский из меню языков ввода ** Remove Deutsch and Polish from input languages menu * © AlexSid, § Smelter, ® AsteriX
+09D85B6: 00 01
+09D85EE: 00 01
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

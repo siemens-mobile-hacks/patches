@@ -1,0 +1,77 @@
+;S68v47
+;Позиционирование элементов главного экрана v3
+;MainScreen positioning v3
+;(c)  SiNgle, BuG, KiRiK, [crazy]misha
+;(r) Tolsi(S68)
+;(p) arsh0r
+;Version: 
+;PatchID: 7388
+;Details: https://patches.kibab.com/patches/details.php5?id=7388
+/*
+
+*/
++2010 
+;Net-Icons
+;026556A: 03 xx ;canvas start x;
+;0265568: 02 yy ;canvas start y
+;026556C: 21 xx ;canvas end x
+;0265548: 0F yy ;canvas end y ;29B62A
+0265570: FFF76FFE 00280028 ; no canvas
+026557C: 03 00 ;xx ;x
+;26557A: 02 00 ;yy ;y
+
+;Iconbar
+;0265970: 23 xx ;canvas1(icons in iconbar?) start x
+;026596E: 02 yy ;canvas1(icons in iconbar?) stat y
+;0265972: 63 xx ;canvas1(icons in iconbar?) end x
+;0265968: 0F yy ;canvas1(icons in iconbar?) end y
+02659D6: 02 00 ;yy ;canvas2(iconbar) start y
+;02659CC: 0F 00yy ;canvas2(iconbar) end y
+;0265976: FFF76CFC 00280028 ;no canvas1 (!!!)
+0265A3C: FFF71EFC 00280028 ;no canvas2 (!!!)
+;026593C: 21 00 ;xx ;x with canvas2 iconbar
+02659F0: 02 00 ;yy ;y
+
+;Battery-Icons
+;0265AA8: 65 xx ;canvas start x
+;0265AA6: 02 yy ;canvas start y
+;0265AAA: 80 xx ;canvas end x
+;0265AA0: 0F yy ;canvas end y
+0265AAE: FFF7D0FB 00280028 ; no canvas
+0265ABA: 65 69 ;xx ;x
+0265AB8: 02 00 ;yy ;y
++0
+
+;missed Events
+;02D4676: 78 74
+
+;without Provider-Logo:
+03F77FC: 0B 14 ;yy ;Date/Time ;don't works on skin application image
+03F780C: 1E 22 ;yy ;Provider
+03F781C: 30 30 ;yy ;Sub-Provider
+;03F782C: 40 yy ;Flash-SMS/CB-News
+;03F783C: 66 yy ;Timer when Stopwatch running
+;03F784C: 78 yy ;Stopwatch/Timer
+
+;with Provider-Logo:
+03F785C: 0B 14 ;yy ;Date/Time ;don't works on skin application image
+;03F787C: 40 yy ;Flash-SMS/CB-News
+;03F788C: 66 yy ;Timer when Stopwatch running
+;03F789C: 78 yy ;Stopwatch/Timer
+
+;Date/Time on Skin Application Image
+;03F5F18: 06 xx ;start x
+;03F5F1A: 1A yy ;start y
+03F5F1C: 7D 20 ;xx ;stop x
+03F5F1E: 26 2c ;yy ;stop y
+
+;Hotkey Info on Skin Application Image
+;03F5F34: 06 xx ;start x
+;03F5F36: 8A yy ;start y
+;03F5F38: 83 xx ;stop x
+;03F5F3A: 99 yy ;stop y
+
+;------------------------- end -------------------------
+
+;------------------------- end -------------------------
+

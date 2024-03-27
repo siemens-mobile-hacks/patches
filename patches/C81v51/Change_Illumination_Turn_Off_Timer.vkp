@@ -1,0 +1,17 @@
+;C81v51
+;Изменение длительности горения подсветки
+;Change Illumination Turn Off Timer
+;(c) benj9
+;(p) Виктор89
+;Version: 
+;PatchID: 9100
+;Details: https://patches.kibab.com/patches/details.php5?id=9100
+/*
+
+*/
+;Главный экран (в секундах) \ mainscreen (in seconds)
+0C0ED41: 0F 0i90
+;Меню, списки и т.д. (в секундах) \ menues, lists etc. (in seconds)
+0C0ED45: 3C 0i90
+;------------------------- end -------------------------
+

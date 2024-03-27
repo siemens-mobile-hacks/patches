@@ -1,0 +1,32 @@
+;S75v47
+;Перенос папок
+;Folders Relocation
+;(c) 1nvisible
+;(p) KiRiK
+;Version: 
+;PatchID: 6005
+;Details: https://patches.kibab.com/patches/details.php5?id=6005
+/*
+
+*/
+# Conversations
+# 0->1                          
+0671B96: 30 31 ;\      
+0671BB8: 30 31 ;- v47
+0671BC4: 30 31 ;/
+
+# Tmp
+# 0->2
+0671B54: 30 32 ;- v47 
+
+# Themes
+# 0->4
+06715E8: 30 34 ;\ 
+06715FC: 30 34 ;- v47 
+0671608: 30 34 ;/
+
+# Active Theme
+# 0->2
+067161E: 30 32 ;- v47
+;------------------------- end -------------------------
+

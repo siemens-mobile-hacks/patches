@@ -1,0 +1,17 @@
+;M75v23
+;Настройка аналоговых часов
+;Analog Clock Tuning
+;(c) SiNgle
+;Version: 
+;PatchID: 2796
+;Details: https://patches.kibab.com/patches/details.php5?id=2796
+/*
+
+*/
+02CFB82: 9E 80 ; Hands length
+02CFBF6: 01 02 ; Center-point
+02CFC44: 01 06 ; Minute hand color
+02CFCF4: 01 04 ; Hour hand second line color (bold)
+02CFD54: 01 04 ; Hour hand color
+;------------------------- end -------------------------
+

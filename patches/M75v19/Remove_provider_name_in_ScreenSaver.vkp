@@ -1,0 +1,13 @@
+;M75v19
+;Убрать имя оператора в заставке
+;Remove provider name in ScreenSaver
+;(c) KiRiK
+;Version: 
+;PatchID: 2311
+;Details: https://patches.kibab.com/patches/details.php5?id=2311
+/*
+
+*/
+02CF890: 6AEB 0028
+;------------------------- end -------------------------
+

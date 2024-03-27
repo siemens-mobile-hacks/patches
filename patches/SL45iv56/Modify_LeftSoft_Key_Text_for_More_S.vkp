@@ -1,0 +1,35 @@
+;SL45iv56
+;Изменить текст левой софт-клавиши для патча "Больше ярлыков"
+;Modify LeftSoft Key Text for More Shortcut Patch
+;(c) RizaPN
+;Version: 
+;PatchID: 1940
+;Details: https://patches.kibab.com/patches/details.php5?id=1940
+/*
+После установки патча отображается текст на левой софт-клавише
+(заменяет стандартный "чистый" текст).
+
+English: This patch will put shortcut text in the Left Soft Key position (overwrite
+the normal 'Clear' text).
+
+
+Release: April 20, 2003
+*/
+0x367E0E: EA00F67E FAC71AD9
+0x3B0538: EA00F607 FAC700D9
+
+0x27D900: FFFFFFFFFFFFFFFF E004D7403600F7F8
+0x27D908: FFFFFFFFFFFFFFFF 0B00E6F43412D740
+0x27D910: FFFFFFFFFFFFFFFF 3400F6F42039FADB
+0x27D918: FFFFFFFFFFFFFFFF F607E6F23612D740 
+0x27D920: FFFFFFFFFFFFFFFF 3600F2F40A00D740
+0x27D928: FFFFFFFFFFFFFFFF 3400F2F3203926F3
+0x27D930: FFFFFFFFFFFFFFFF 34122D0448313D13
+0x27D938: FFFFFFFFFFFFFFFF 49802D1149903D0B
+0x27D940: FFFFFFFFFFFFFFFF 8860DAC728D3DC49
+0x27D948: FFFFFFFFFFFFFFFF C468040098604980
+0x27D950: FFFFFFFFFFFFFFFF 2D06E6F23512D740
+0x27D958: FFFFFFFFFFFFFFFF 3400F6F22039FAD6
+0x27D960: FFFF F67E 
+;------------------------- end -------------------------
+

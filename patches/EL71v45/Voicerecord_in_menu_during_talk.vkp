@@ -1,0 +1,15 @@
+;EL71v45
+;Диктофон в меню во время разговора
+;Voicerecord in menu during talk
+;(c) Miha_r
+;(p) funMarkus
+;Version: 
+;PatchID: 7789
+;Details: https://patches.kibab.com/patches/details.php5?id=7789
+/*
+
+*/
+0876CB8: 05B670A0 CF576FA0
+0876E34: B604 6100
+;------------------------- end -------------------------
+

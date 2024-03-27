@@ -1,0 +1,30 @@
+;C75v22
+;Мегагромкость для гарнитуры
+;MegaLoudnes for Headset
+;(c) ILYA_ZX
+;(r) allsiemens.com
+;(p) Hoper777
+;Version: 
+;PatchID: 10685
+;Details: https://patches.kibab.com/patches/details.php5?id=10685
+/*
+
+*/
+;MegaLoudnes for Headset
+;c75v22
+;(c)ILYA_ZX
+;(p)Hoper777
+;(r)allsiemens.com
+
+07DFFA0: 1E0000EA EDFFFFEA
+07DFF5C: BC161FE50585FEEB 080040E22E0000EA
+
+;WARNING! 16 - very aloud! May damage ears, headset or maybe Power Amplifier of mobile!
+;Осторожно! 16 - очень громко! Может повредить слух, гарнитуру и возможно усилитель мощности телефона!
+
+;Patch option, remove comment:
+;07DFF5C: 08 XX
+;XX - HEX from 00(no changes) to 16(max)
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,45 @@
+;X65v100
+;GameGear
+;GameGear
+;(c) cbn
+;(r) Pavel
+;Version: 0.5
+;PatchID: 6657
+;Details: https://patches.kibab.com/patches/details.php5?id=6657
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=GameGear_05.zip
+
+/*
+Game Gear - Sega Master System (не Genesis!) эмулятор elf
+Эмулятор популярной приставки.
+Идет на SGOLD, NEWSGOLD, SGOLD3 (EL71)
+Открывает ромы из zip, rar, 7z архивов 
+(ром должен целиком помещаться в памяти, по одному рому в архиве, 
+расширение архива переименовать в .gg)
+
+Положить в 0:\ZBin\GameGear
+В extension.cfg добавить строки:
+gg:0:\ZBin\GameGear\GameGear.elf
+sms:0:\ZBin\GameGear\GameGear.elf
+
+ВНИМАНИЕ!
+Если не запускается игра, перезагрузить телефон.
+
+*/
+Game Gear - Sega Master System (не Genesis!) эмулятор elf
+Эмулятор популярной приставки.
+Идет на SGOLD, NEWSGOLD, SGOLD3 (EL71)
+Открывает ромы из zip, rar, 7z архивов 
+(ром должен целиком помещаться в памяти, по одному рому в архиве, 
+расширение архива переименовать в .gg)
+
+Положить в 0:\ZBin\GameGear
+В extension.cfg добавить строки:
+gg:0:\ZBin\GameGear\GameGear.elf
+sms:0:\ZBin\GameGear\GameGear.elf
+
+ВНИМАНИЕ!
+Если не запускается игра, перезагрузить телефон.
+
+Скачайте приложенный файл
+;------------------------- end -------------------------
+

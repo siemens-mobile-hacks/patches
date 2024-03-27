@@ -1,0 +1,46 @@
+;S65v50
+;Иконка видео файлов от Windows Media Player
+;Ikonka video files from Windows Media Player
+;(c) SBoY
+;(p) SBoY
+;Version: 1
+;PatchID: 6641
+;Details: https://patches.kibab.com/patches/details.php5?id=6641
+/*
+
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 27.12.2006  -  Time: 21:11:49                             ###
+; ### Patch for: SIEMENS S65 v50                                      ###
+; #######################################################################
+
+
+; ##### Picture 375 #####
+00DA0BDC: 0E0E85004432E2A0 0F0F85000000D7A0
+
+00D70000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 05C0FBCDE994749508C0FECDC902E8FB
+00D70010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 947470509105C0FECDE903EDFAB99874
+00D70020: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 704C9103C0FBCDE9EDF6DA02DBFADAB9
+00D70030: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 74704C9202C0F9C9EDF6FF6DC0DB02FF
+00D70040: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FE9570024CF9C0D1E8EDDAFF49026DF4
+00D70050: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C0FFDF74704892D1E8EDDBFF0249E024
+00D70060: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 006DDB95704892723357DBFF49240024
+00D70070: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DADBF9D5D491722F33BBFF2400C0DA02
+00D70080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFF5D9D5D46D962A2F53DF92C003FFF5
+00D70090: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F9D5D4B092C04E2A2E53BB02FFFEFEF9
+00D700A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02D5FBD46D96C092022AFF2E024E02F9
+00D700B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02D5FDD48C9203C0FB924A062A4A02F4
+00D700C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02D4FE6C9205C0FE926E022602B4FD90
+00D700D0: FFFFFFFFFFFFFFFFFFFFFFFF 6D9208C0FF92036D029204C0
+
+
+
+;------------------------- end -------------------------
+

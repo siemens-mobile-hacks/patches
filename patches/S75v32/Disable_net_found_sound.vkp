@@ -1,0 +1,14 @@
+;S75v32
+;Отключить звук "Сеть найдена"
+;Disable sound "Net found" (3*beep)
+;(c) avkiev
+;(p) StrikerVoo
+;Version: 
+;PatchID: 3052
+;Details: https://patches.kibab.com/patches/details.php5?id=3052
+/*
+
+*/
+1032E24: 5C03 FFFF
+;------------------------- end -------------------------
+

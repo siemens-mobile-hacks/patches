@@ -1,0 +1,29 @@
+;SL65v50
+;Отключить разблокировку клавиатуры при закрытии слайдера
+;disable keypad unlock when slider is closed
+;(c) BuG
+;(r) benj9
+;Version: 
+;PatchID: 708
+;Details: https://patches.kibab.com/patches/details.php5?id=708
+/*
+
+*/
+164909C: 00F098FD 25F030FA
+164C374: FDF72CFC 22F0D5F8
+#pragma enable old_equal_ff
+166E500: FFB410488047104FC74001200740012F
+166E510: 02D1FFBCDAF7C6FDFFBCDBF759FBDAF7
+166E520: BFFDFFB407488047074FC74001200740
+166E530: 012F02D1FFBCDDF72AFFFFBCDBF748FB
+166E540: DDF71AFF4DBB8CA020000000
+#pragma disable old_equal_ff
+
+; profile configuration
+; every single bit of the profile key represents a profile, 
+; the most left one is profile no. 7, the most right one profile no. 1
+; to activate patch in a certain profile, set the according bit to 1
+; example: 0n0100101 - patch is active in profiles no. 1, 3 and 6
+;166E548: 20 0n0100101
+;------------------------- end -------------------------
+

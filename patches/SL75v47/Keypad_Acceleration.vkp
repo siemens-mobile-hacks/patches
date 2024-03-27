@@ -1,0 +1,14 @@
+;SL75v47
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) kiREALlov
+;Version: 
+;PatchID: 7302
+;Details: https://patches.kibab.com/patches/details.php5?id=7302
+/*
+
+*/
+090565E: 011C 2021
+;------------------------- end -------------------------
+

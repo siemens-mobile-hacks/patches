@@ -1,0 +1,15 @@
+;M65v50
+;Менеджер Графических патчей v3.1 av
+;GraphPatchManager v3.1 av
+;(c) KreN
+;(r) avkiev
+;(p) Mifodiy
+;Version: 
+;PatchID: 2724
+;Details: https://patches.kibab.com/patches/details.php5?id=2724
+/*
+
+*/
+1633BE0: 261C002D05900490 004FB847,0xA0FC3E01
+;------------------------- end -------------------------
+

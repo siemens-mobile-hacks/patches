@@ -1,0 +1,15 @@
+;SL75v52
+;Автоматическое открытие USSD сообщений
+;Auto Show USSD
+;(c) Evgr
+;(r) VoVkA
+;(p) dimonp25
+;Version: 0.1
+;PatchID: 9779
+;Details: https://patches.kibab.com/patches/details.php5?id=9779
+/*
+
+*/
+0300872: 44f0e8f8 fbf723fe
+;------------------------- end -------------------------
+

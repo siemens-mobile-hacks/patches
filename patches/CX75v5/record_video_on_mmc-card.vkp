@@ -1,0 +1,14 @@
+;CX75v5
+;Запись_видео_на_MMC-карту
+;Record_video_on_MMC-card
+;(c) TAPAKAH
+;Version: 1.0
+;PatchID: 476
+;Details: https://patches.kibab.com/patches/details.php5?id=476
+/*
+Запись видео сразу на ММС-карту. Без ММС-карты камера не работает!
+
+*/
+04A3CFC: 30 34
+;------------------------- end -------------------------
+

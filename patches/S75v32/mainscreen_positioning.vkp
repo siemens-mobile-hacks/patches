@@ -1,0 +1,73 @@
+;S75v32
+;Позиционирование главного экрана
+;MainScreen positioning
+;(c) SiNgle, BuG, KiRiK, [crazy]misha
+;(r) arsh0r
+;(p) Buffel
+;Version: 
+;PatchID: 3664
+;Details: https://patches.kibab.com/patches/details.php5?id=3664
+/*
+Патч позволяет изменять положение различных элементов на главном экране
+English: Patch allows to change position of different elements of main screen
+*/
+;Net-Icons
+0299DEE: 0F yy ;canvas end y
+0299DF4: 02 yy ;canvas start y
+0299DF6: 03 xx ;canvas start x
+0299DF8: 21 xx ;canvas end x
+;0299DFC: FFF76FFE 00280028 ; no canvas
+0299E06: 02 yy ;y
+0299E08: 03 xx ;x
+
+;Iconbar
+029A238: 23 xx ;canvas1(icons in iconbar?) start x
+029A23A: 63 xx ;canvas1(icons in iconbar?) end x
+029A230: 0F yy ;canvas1(icons in iconbar?) end y
+029A236: 02 yy ;canvas1(icons in iconbar?) stat y
+029A294: 0F yy ;canvas2(iconbar) end y
+029A29E: 02 yy ;canvas2(iconbar) start y
+;029A23E: FFF74EFC 00280028 ;no canvas1
+;029A2A4: FFF71BFC 00280028 ;no canvas2
+029A2B8: 02 yy ;y
+029A204: 21 xx ;x with canvas2 iconbar
+
+;Battery-Icons
+029A368: 0F yy ;canvas end y
+029A36E: 02 yy ;canvas start y
+029A370: 65 xx ;canvas start x
+029A372: 80 xx ;canvas end x
+;029A376: FFF7B2FB 00280028 ; no canvas
+029A380: 02 14 ;y
+029A382: 65 51 ;x
+
+;missed Events
+02FDCAE: 78 yy ;y
+
+without Provider-Logo:
+0425720: 0B yy ;Date/Time ;don't works on skin application image
+0425730: 1E yy ;Provider 
+0425740: 30 yy ;Sub-Provider
+0425750: 40 yy ;Flash-SMS/CB-News
+0425760: 66 yy ;Timer when Stopwatch running
+0425770: 78 yy ;Stopwatch/Timer
+
+;with Provider-Logo:
+0425780: 0B yy ;Date/Time ;don't works on skin application image
+04257A0: 40 yy ;Flash-SMS/CB-News
+04257B0: 66 yy ;Timer when Stopwatch running
+04257C0: 78 yy ;Stopwatch/Timer
+
+;Date/Time on Skin Application Image
+0424124: 06 xx ;start x
+0424128: 7D xx ;stop x
+0424126: 1A yy ;start y
+042412A: 26 yy ;stop y
+
+;Shortcut Info on Skin Application Image
+0424140: 06 xx ;start x
+0424144: 83 xx ;stop x
+0424142: 8A yy ;start y
+0424146: 99 yy ;stop y
+;------------------------- end -------------------------
+

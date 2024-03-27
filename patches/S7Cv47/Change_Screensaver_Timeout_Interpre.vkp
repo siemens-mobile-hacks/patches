@@ -1,0 +1,20 @@
+;S7Cv47
+;Change Screensaver Timeout Interpretation
+;Change Screensaver Timeout Interpretation
+;(c) benj9
+;(p) Zach
+;Version: 1a
+;PatchID: 9766
+;Details: https://patches.kibab.com/patches/details.php5?id=9766
+/*
+word minutes to seconds too
+*/
+; * Change Screensaver Timeout Interpretation *
+; (c) benj9
+; (p) Zach
+; S7Cv47
+
+029E8E8: 3C 01 ; treat minutes as seconds
+184c349: E58886 E7A792 ;word minutes to seconds too (c)loquat
+;------------------------- end -------------------------
+

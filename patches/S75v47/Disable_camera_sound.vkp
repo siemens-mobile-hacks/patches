@@ -1,0 +1,13 @@
+;S75v47
+;Отключить звук камеры
+;Disable camera sound
+;(c) -=(Kad)=-
+;Version: 
+;PatchID: 7425
+;Details: https://patches.kibab.com/patches/details.php5?id=7425
+/*
+Убирает стандартный звук затвора камеры
+*/
+0307190: 72F776EA C046C046
+;------------------------- end -------------------------
+

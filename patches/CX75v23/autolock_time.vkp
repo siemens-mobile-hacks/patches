@@ -1,0 +1,15 @@
+;CX75v23
+;Изменение времени автоблокировки клавиш
+;Change time of automatical keypad lock
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1822
+;Details: https://patches.kibab.com/patches/details.php5?id=1822
+/*
+
+*/
+02CD09C: C832 7017 ; изменение времени автоблокировки клавиш
+;------------------------- end -------------------------
+

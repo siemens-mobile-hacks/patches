@@ -1,0 +1,13 @@
+;SL65v53
+;Включение Инженерного меню
+;Enable Developer Menu
+;(c) Phantom
+;Version: 
+;PatchID: 5265
+;Details: https://patches.kibab.com/patches/details.php5?id=5265
+/*
+
+*/
+123CD7C: 040090E5 0000A0E3
+;------------------------- end -------------------------
+

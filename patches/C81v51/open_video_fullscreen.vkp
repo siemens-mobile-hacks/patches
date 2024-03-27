@@ -1,0 +1,16 @@
+;C81v51
+;Открывать видео сразу во весь экран
+;Open video fullscreen immediately
+;(c) Ganster41
+;(p) dimonp25
+;Version: 
+;PatchID: 9578
+;Details: https://patches.kibab.com/patches/details.php5?id=9578
+/*
+
+*/
+05be620: 00 01
+05be62a: 00 01
+
+;------------------------- end -------------------------
+

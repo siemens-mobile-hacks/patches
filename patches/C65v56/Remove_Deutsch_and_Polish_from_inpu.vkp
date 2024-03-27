@@ -1,0 +1,14 @@
+;C65v56
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;Version: 
+;PatchID: 3766
+;Details: https://patches.kibab.com/patches/details.php5?id=3766
+/*
+
+*/
+0D5C1D2: 00 01
+0D5C20A: 00 01
+;------------------------- end -------------------------
+

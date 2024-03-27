@@ -1,0 +1,19 @@
+;MC60v10
+;Яркость подсветки с шагом 5%
+;Setup backlight by 5%
+;(c) SiNgle
+;(p) Kanibaals
+;Version: 
+;PatchID: 3810
+;Details: https://patches.kibab.com/patches/details.php5?id=3810
+/*
+
+*/
+007BF5CE:e0a1 e051
+007BF5E4:77 6C
+007BF5F2:e0a1 e051
+0005FC3A:0a 05
+0005FC70:0a 05
+00407E6D:0c1824303c4854606c7f000c1824303c4854606c 0103081012161e242b3034384044485054586064
+;------------------------- end -------------------------
+

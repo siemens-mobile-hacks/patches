@@ -1,0 +1,15 @@
+;SL65v53
+;Illumination adjustment
+;Illumination adjustment
+;(c) avkiev
+;(r) benj9
+;(p) Benlux
+;Version: 
+;PatchID: 6984
+;Details: https://patches.kibab.com/patches/details.php5?id=6984
+/*
+
+*/
+122DBC4: 08D04DE20010D1E502B0A0E3 04E08FE204F01FE5,0xA0FC6701   ;SL65v53
+;------------------------- end -------------------------
+

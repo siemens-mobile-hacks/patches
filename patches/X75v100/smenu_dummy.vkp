@@ -1,0 +1,30 @@
+;X75v100
+;Многоуровневое меню Пуск
+;Multilevel `Start` Menu
+;(c) captain_SISka
+;(r) Rst7,   cbnn, avkiev
+;Version: 0.90
+;PatchID: 6604
+;Details: https://patches.kibab.com/patches/details.php5?id=6604
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=smenu_dummy.rar
+
+/*
+МЕНЮ `ПУСК`
+
+подробности в README.txt
+
+English:
+Windows-like `Start` menu 
+
+see README.txt for details
+*/
+МЕНЮ `ПУСК`
+
+подробности в README.txt
+
+[EN]:
+Windows-like `Start` menu 
+
+see README.txt for details
+;------------------------- end -------------------------
+

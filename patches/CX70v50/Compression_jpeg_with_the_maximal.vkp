@@ -1,0 +1,14 @@
+;CX70v50
+;Сжатие jpeg с максимальным кач-вом (100% вместо 75%)
+;Compression jpeg with the maximal quality (100 % instead of 75 %)
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 144
+;Details: https://patches.kibab.com/patches/details.php5?id=144
+/*
+Сжатие jpeg с максимальным кач-вом. Фотки становятся гораздо лучшего качества.
+*/
+09E2170: 4B 64
+;------------------------- end -------------------------
+

@@ -1,0 +1,25 @@
+;S75v52
+;Отключить сеть (без SIM)
+;Disable network (without SIM)
+;(c) Feyman
+;(r) Azq2
+;Version: 
+;PatchID: 10723
+;Details: https://patches.kibab.com/patches/details.php5?id=10723
+/*
+При загрузке без СИМ карты будет автоматически гаситься сеть (режим only SOS) для экономии заряда. Рекомендуется для употребления с патчем 8926, хотя это не принципиально. Также добавлено некое подобие API:
+A0076F11 выключить сеть
+A0076F31 включить сеть
+Можно использовать в шорткатах и добавить в библу
+
+
+*/
+0076F00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02480078002803D070470000787FD7A8 ; Check SIM
+0076F10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1CB5052103480022002300241BF0BAED ; On/Off_GBSMsg
+0076F20: FFFFFFFFFFFFFFFF 1CBD00003D400000
+0076F30: FFFFFFFFFFFF 1CB50621EEE7
+00C8F7E: ADF0B8EA C046C046
+01764F8: 91B9ECA0 016F07A0
+05372F0: F7F7C7F8 3FF4FEE8 ; GetOperatorPLMN_Code
+;------------------------- end -------------------------
+

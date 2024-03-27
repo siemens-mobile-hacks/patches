@@ -1,0 +1,16 @@
+;X75v100
+;Стилизация Медиаплеера под WMP11
+;MediaPlayer in style WMP11
+;(c) Ushastiy™
+;Version: 
+;PatchID: 5440
+;Details: https://patches.kibab.com/patches/details.php5?id=5440
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=MediaPlayer_in_style_WMP11.zip
+
+/*
+Сделал что-то боле-менее похожее на Windows media Player 11. Заменены иконки, касающиеся всего плеера (46 штук). Хорошо смотрится с темой Windows Vista.
+В архиве GPN и GPF ("на всякий случай").
+*/
+Качаем прикрепленный файл!!!
+;------------------------- end -------------------------
+

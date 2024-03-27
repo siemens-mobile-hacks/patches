@@ -1,0 +1,16 @@
+;M65v50
+;Меню "Пуск" на главном экране
+;StartMenu on MainScreen
+;(c) KreN
+;(r) 1nvisible, benj9
+;(p) Mifodiy
+;Version: 2.1
+;PatchID: 3101
+;Details: https://patches.kibab.com/patches/details.php5?id=3101
+/*
+
+*/
+0920974: FB198EA0 0xA0FCC0E3
+163a608: 002861D0F8F7EAFF0028 00498847,0xA0FCC051,C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;CX65v50
+;Увеличение интервала между сообщениями "Аккумулятор разряжен! Зарядите"
+;An increase in the interval between the communications "storage battery is discharged! You will load "
+;(c) ?
+;(p) Sinclair, _Sandra_
+;Version: 
+;PatchID: 2971
+;Details: https://patches.kibab.com/patches/details.php5?id=2971
+/*
+Позволяет продлить работу телефона с разряженым аккумулятором
+с 20 секунд до 5 минут
+*/
+115952C: ED100000 F17E0000
+
+;------------------------- end -------------------------
+

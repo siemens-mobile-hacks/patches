@@ -1,0 +1,14 @@
+;EL71v38
+;Открыть заблокированные блоки EEPROM
+;OpenHiddenEEPROM (OpenClosedEEPROM)
+;(c) Skylord
+;(p) -=PaScaL=-
+;Version: 
+;PatchID: 6796
+;Details: https://patches.kibab.com/patches/details.php5?id=6796
+/*
+
+*/
+578DBC: 00 01
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;CX75v25
+;Отключить доступ к интернет-браузеру
+;Disable Access To Internet Browser
+;(c) KiRiK
+;Version: 
+;PatchID: 3480
+;Details: https://patches.kibab.com/patches/details.php5?id=3480
+/*
+
+*/
+04B2264: A56132A0 00000000
+04B21FC: BF6132A0 00000000
+04B1B14: EB6B32A0 00000000
+;------------------------- end -------------------------
+

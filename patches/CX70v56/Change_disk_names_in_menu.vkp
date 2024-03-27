@@ -1,0 +1,19 @@
+;CX70v56
+;Изменение названия дисков в меню выбора
+;Change disk names in menu
+;(c) DeHuCoH, USV
+;(p) Smelter
+;Version: 
+;PatchID: 607
+;Details: https://patches.kibab.com/patches/details.php5?id=607
+/*
+Изменение названия дисков в меню выбора: 
+Drive 0 -> 0:\Data
+Drive 1 -> 1:\Cache
+Drive 2 -> 2:\Config
+*/
+009BF62: 44726976652030 303A5C44617461 
+009BF80: 4472697665203100 313A5C4361636865 
+009BF9E: 447269766520320000 323A5C436F6E666967 
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;C81v51
+;Убрать Проверку Java
+;Disable Strict Java Checks Forever
+;(c) 1nvisible
+;(p) den11111
+;Version: 
+;PatchID: 8052
+;Details: https://patches.kibab.com/patches/details.php5?id=8052
+/*
+
+*/
+09625A0: 48071FE5000090E5 0000A0E31EFF2FE1
+;------------------------- end -------------------------
+

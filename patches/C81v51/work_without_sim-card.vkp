@@ -1,0 +1,14 @@
+;C81v51
+;Работа телефона без SIM-карты
+;Work without SIM-card
+;(c) ThE TrIFoN, SiNgle
+;(p) Turbid
+;Version: 
+;PatchID: 7208
+;Details: https://patches.kibab.com/patches/details.php5?id=7208
+/*
+
+*/
+029FB60: 0000A0E3C9FFFFEA 04F01FE5,0xA0D2F7BD
+;------------------------- end -------------------------
+

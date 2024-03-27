@@ -1,0 +1,14 @@
+;S65v58
+;Не показывать провайдер и поиск сети на главном экране
+;Do not show provider and network search message on main screen
+;(c) ?
+;(p) Виктор89
+;Version: 
+;PatchID: 9432
+;Details: https://patches.kibab.com/patches/details.php5?id=9432
+/*
+
+*/
+16B9018: 08 A5
+;------------------------- end -------------------------
+

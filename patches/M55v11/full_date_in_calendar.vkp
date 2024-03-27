@@ -1,0 +1,14 @@
+;M55v11
+;Выводить в календаре дату полностью
+;Show the full date in calendar
+;(c) Matr!x
+;(p) AlexSid
+;Version: 
+;PatchID: 5195
+;Details: https://patches.kibab.com/patches/details.php5?id=5195
+/*
+
+*/
+4D835C: FA84 8A71
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;A62v7
+;Открыть скрытые блоки EEPROM
+;Open Hidden EEPROM
+;(c) avkiev
+;Version: 
+;PatchID: 8199
+;Details: https://patches.kibab.com/patches/details.php5?id=8199
+/*
+
+*/
+0E804E: 01149013D513911302140314 000000000000000000000000
+;------------------------- end -------------------------
+

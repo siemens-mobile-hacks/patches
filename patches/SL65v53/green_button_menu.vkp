@@ -1,0 +1,19 @@
+;SL65v53
+;Расширеное меню зеленой трубки в режиме ожидания
+;Extended green button menu on main screen
+;(c) flexonight
+;(r) Evgr
+;(p) Виктор89
+;Version: 
+;PatchID: 9710
+;Details: https://patches.kibab.com/patches/details.php5?id=9710
+/*
+Расширеное меню зеленой трубки. Теперь в режиме ожидания при нажатии на нее, переход не в набранные звонки, а в корень меню списка вызовов.
+*/
+16497DE: 16F098EB 4AF020E8
+
+#pragma enable old_equal_ff
+1693820: 00C09FE51CFF2FE1,0xA08E3A77
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

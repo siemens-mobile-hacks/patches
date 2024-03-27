@@ -1,0 +1,24 @@
+;E71v45
+;Исправить SLI-индикатор на E71 с другим типом Dialog
+;Fix SLI indicator on E71 with different type of Dialog
+;(c) Azq2
+;(r) MAXIM, FIL, Виктор89
+;Version: 
+;PatchID: 10719
+;Details: https://patches.kibab.com/patches/details.php5?id=10719
+/*
+На некоторых E71 с China установлен другой тип Dialog и с ним некорректно работает определение типа SLI индикатора.
+Из-за этого он может рандомно не работать.
+Патч исправляет все проверки связанные с новым типом Dialog.
+
+-------
+
+Some E71 from China have a different Dialog type and the detection of the SLI indicator type does not work correctly.
+And the SLI indicator doesn't work.
+The patch fixes all checks associated with the new Dialog type.
+*/
+051BC34: 0050C1E5 F9FFFFEA ; B #0xA051BC20
+051BC2C: 0040C1E5 FBFFFFEA ; B #0xA051BC20
+04F5CCC: 05 02 ; Allow pasic_type=2 for SLI
+;------------------------- end -------------------------
+

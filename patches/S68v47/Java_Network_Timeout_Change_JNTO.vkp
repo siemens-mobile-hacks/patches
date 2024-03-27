@@ -1,0 +1,14 @@
+;S68v47
+;Изменить таймаут пинга в Java
+;Java Network Timeout Change JNTO
+;(c) Rst7/CBSIE
+;(p) klaud
+;Version: 
+;PatchID: 6571
+;Details: https://patches.kibab.com/patches/details.php5?id=6571
+/*
+Теперь можно в Джиме или бомбусе ставить тайм аут пинга 200сек, будет держать конект
+*/
+0086D96C: 0010A0E1 401AA0E3
+;------------------------- end -------------------------
+

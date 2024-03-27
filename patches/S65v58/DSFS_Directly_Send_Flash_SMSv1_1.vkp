@@ -1,0 +1,25 @@
+;S65v58
+;Отправка Flash SMS v1.1
+;DSFS Directly Send Flash SMS v1.1
+;(c) Bennie
+;(r) Клименс
+;(p) BuG
+;Version: 
+;PatchID: 1240
+;Details: https://patches.kibab.com/patches/details.php5?id=1240
+/*
+Отправка флэш смс для владельцев сименсов (сообщение приходит на экран телефона)
+!Начните текст сообщения с пробела Формат текста -> Размер шрифта -> Средний шрифт, иначе будет обычное SMS
+English: Remark: Add a whitespace when start sms typing. Patch works only if you have normal font size/
+*/
+;* Отправка Flash SMS v1.1 ** DSFS Directly Send Flash SMS v1.1 * © Bennie, § BuG
+;!Начните текст сообщения с пробела Формат текста -> Размер шрифта -> Средний шрифт, иначе будет обычное SMS
+1424918: 201CB168 A1F272FB
+#pragma enable old_equal_ff
+16C6000: 201CB8380178082906D000290CD1417B
+16C6010: 7F221140F02204E0437B817B1B02C918
+16C6020: 1822202900D10270201CB1687047
+#pragma disable old_equal_ff 
+
+;------------------------- end -------------------------
+

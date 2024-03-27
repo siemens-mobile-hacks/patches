@@ -1,0 +1,17 @@
+;SL75v47
+;Дополнение к панели иконок
+;Iconbar Additions
+;(c) benj9
+;(r) bertgrins
+;(p) (i) BuG
+;Version: 
+;PatchID: 8478
+;Details: https://patches.kibab.com/patches/details.php5?id=8478
+/*
+Добавляет в iconbar иконки
+
+Для отображения иконки плеера ставим плагин... 7089
+*/
+029CF68: 341C0028049102D0 004FB847,0xA007B81B
+;------------------------- end -------------------------
+

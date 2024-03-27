@@ -1,0 +1,45 @@
+;C75v22
+;Расширенная панель иконок
+;Extended IconBar
+;(c) 1nvisible
+;(p) SuDex
+;Version: 0.5
+;PatchID: 6913
+;Details: https://patches.kibab.com/patches/details.php5?id=6913
+/*
+Расширяет Панель до 8 иконок
+
+Отмените предыдущие патчи координат панели иконок
+English:Undo earlier IconBar coordinates patches
+Extends IconBar up to 8 Icons
+
+*/
+02A8BDC: 04 08 ;disable 1st check
+02A8BE0: 04 08
+
+02A8BEA: 42 50 ;extend iconbar length
+
+02A8C00: 21 10 ;starting X coordinate
+
+02A881C: 85 45 ;disable 2nd check
+02A881E: AD 6D
+
+02A8C3A: 05 00 ;disable 3rd check
+
+
+1FB46A2: FC D4 ;move 1st RAM
+
+
+02A8C12: 08 10 ;fix to support 8 icons
+
+02A8C1A: 02 02 ;change Y coordinate
+
+02A883C: F00024 00208C ;another fix to support 8 icons
+  
+02A8BC6: 10 10 ;canvas end Y coordinate
+02A8BCA: 02 02 ;canvas start Y coordinate
+
+02A8C62: 1C 7C ;fix accu bug
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;SL75v47
+;Диспатчер главного экрана v2
+;Mainscreen-dispatcher v2
+;(c) avkiev
+;(p) ferro
+;Version: 
+;PatchID: 6108
+;Details: https://patches.kibab.com/patches/details.php5?id=6108
+/*
+;(!) Master
+*/
+041c174: 0xA029d571 0xA0063E01   ; /SL75v47
+0063E10: 0xFFFFFFFF 0xA029d571   ; \SL75v47
+
+
+#pragma enable old_equal_ff
+0063E00: 01B5011C0120C1DF01BC0149884700BD
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

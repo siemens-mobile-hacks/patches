@@ -1,0 +1,16 @@
+;CX75v13
+;Включить выбор диапазона
+;Enable band selection
+;(c) Bennie
+;(p) mana9er
+;Version: 1.0
+;PatchID: 812
+;Details: https://patches.kibab.com/patches/details.php5?id=812
+/*
+RUS: Активирует меню ручного выбора диапазона (900 МГц, 1800 МГц, 1900 МГц). Пункт в меню 9-10-5.
+
+ENG: Activates the menu of a manual choice of a range (900 MHz, 1800 MHz, 1900 MHz). Item in the menu 9-10-5.
+*/
+04D6DEC: 0502 FA01
+;------------------------- end -------------------------
+

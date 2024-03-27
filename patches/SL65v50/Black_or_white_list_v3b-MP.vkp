@@ -1,0 +1,26 @@
+;SL65v50
+;Чёрный Список
+;Black List
+;(c) SiNgle
+;(r) (i) KreN
+;Version: 3
+;PatchID: 1488
+;Details: https://patches.kibab.com/patches/details.php5?id=1488
+/*
+Для работы патча необходимо, чтобы был включен фильтр на любую группу, неважно на какую (кроме сим), все настройки берутся с мастер патча.
+
+English: For this patch to work, the filter must be switched on for any group except SIM-card. It's equal what group will be chosen, all settings are taken from Master-Patch.
+*/
+0B18148: 061C281C FEF6EAF9
+0B18E44: 0006000E FDF674FB
+0B192C6: B0420ED1 FDF63BF9
+ 
+#pragma enable old_equal_ff 
+0A16520: FFB501490847C046,0xA0FC6C2B ; Лоадер | Loader
+0A16530: 7FB501490847C046,0xA0FC6C65 
+0A16540: FFB501490847C046,0xA0FC6C01
+
+0FC6CAC: 0xA1306B4D,0xA0B192E9
+#pragma disable old_equal_ff 
+;------------------------- end -------------------------
+

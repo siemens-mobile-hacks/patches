@@ -1,0 +1,14 @@
+;S75v52
+;Отключить "Подождите" при OBEX-подключении
+;Disable "Wait" in OBEX
+;(c) dimonp25
+;(p) SimaFish
+;Version: 2
+;PatchID: 9159
+;Details: https://patches.kibab.com/patches/details.php5?id=9159
+/*
+Теперь работает как на E\EL71
+*/
+051863E: 47F132EC C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;S68v52
+;Flash KPL When Pressing Red While Phone Off
+;Flash KPL When Pressing Red While Phone Off
+;(c) benj9
+;(r) BuG
+;(p) Hotter
+;Version: 
+;PatchID: 10380
+;Details: https://patches.kibab.com/patches/details.php5?id=10380
+/*
+
+*/
+001689A4: 0500000A020000EF0030A0E30220A0E30000A0E314109FE51B9B00EB 0100A0E30110A0E36420A0E30030A0E3574500EB0000A0E10000A0E1
+001689D0: FA F3
+001689AC: 64 20 ; light
+;------------------------- end -------------------------
+

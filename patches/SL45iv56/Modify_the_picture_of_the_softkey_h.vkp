@@ -1,0 +1,22 @@
+;SL45iv56
+;Изменить вид софтов без функции
+;Modify the picture of the softkey having no function
+;(c) 486255xu
+;(p) trustkill
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=3128
+;PatchID: 3127
+;Details: https://patches.kibab.com/patches/details.php5?id=3127
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=Modify_the_picture_of_the_softkey_h.rar
+
+/*
+Подборка видов софт-клавиш без функции. Патч не влияет на инвертированные софты.
+Патч и остальные снимки в дополнительном архиве.
+
+English: No effect of display when using invert softkey.
+Patch and more screenshots is in attached archive.
+*/
+; Patch and more screenshots is in attached archive.
+; Патч и остальные снимки в дополнительном архиве.
+;------------------------- end -------------------------
+

@@ -1,0 +1,20 @@
+;SL75v52
+;Отправка Flash SMS
+;DSFS Directly Send Flash SMS
+;(c) Bennie
+;(p) kiREALlov
+;Version: 1.1
+;PatchID: 8150
+;Details: https://patches.kibab.com/patches/details.php5?id=8150
+/*
+Начните текст сообщения с пробела
+Add a whitespace to begin, It should be a FlashSMS
+*/
+0E3B02C: 201CB168 69F6F0FF
+#pragma enable old_equal_ff
+0CA5010: 201CB8380178082906D000290CD1417B
+0CA5020: 7F221140F02204E0437B817B1B02C918
+0CA5030: 1822202900D10270201CB1687047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

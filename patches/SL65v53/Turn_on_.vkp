@@ -1,0 +1,29 @@
+;SL65v53
+;Включение по будильнику
+; turn on by alarm clock
+;(c) Single
+;Version: 
+;PatchID: 7417
+;Details: https://patches.kibab.com/patches/details.php5?id=7417
+/*
+
+*/
+;*** Включение по будильнику v1.1***
+;*** Turn On By AlarmClock v1.1***
+;© SiNgle
+;(i)ThE TrIFoN
+;SL65v53 (p)tick
+
+# Исправлено: перезагрузка телефона во вкл.состоянии
+# Fixed: phone reboot in switched-on mode
+
+0B75A5A: D5F5 C046
+0B75A5C: 0EEA0020 2AF2D0E8
+#pragma enable old_equal_ff
+0D9FC00: 0FE0A0E124F09FE524009FE5B600D0E1
+0D9FC10: 200050E3030000AA1200A0E30010A0E3
+0D9FC20: 0FE0A0E10CF09FE50000A0E308F09FE5
+0D9FC30: 78AE94A0586C6CA81CD823A1615AB7A0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

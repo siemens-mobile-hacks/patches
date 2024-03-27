@@ -1,0 +1,16 @@
+;MC60v10
+;Входящее Flash SMS - сразу на полный экран
+;Incoming Flash SMS - immediatly in full screen
+;(c) Roxxy. Lalo
+;(r) Lznoother
+;(p) Kanibaals
+;Version: 
+;PatchID: 3339
+;Details: https://patches.kibab.com/patches/details.php5?id=3339
+/*
+
+*/
+EC2D8: 3d 2d 
+EC2EF: 0c 1c
+;------------------------- end -------------------------
+

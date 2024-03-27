@@ -1,0 +1,13 @@
+;SL65v50
+;Переключатель режима подсветки клавиатуры
+;Keypadlight Trigger
+;(c) benj9
+;Version: 2.2-MP
+;PatchID: 2563
+;Details: https://patches.kibab.com/patches/details.php5?id=2563
+/*
+
+*/
+0B6F1B8: 2A1C01210120,5FF02AEC 00488047,0xA0FC3401,0000
+;------------------------- end -------------------------
+

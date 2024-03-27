@@ -1,0 +1,16 @@
+;S75v52
+;Изменение цвета прогрессбара
+;Change progressbar color
+;(c) -=(Kad)=-
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8269
+;Details: https://patches.kibab.com/patches/details.php5?id=8269
+/*
+Плавненько включается...
+*/
+08CAA28: BEE6FA64 BEE6FA0A ; background
+08CAA2C: 1EBEE664 00000034 ; contour
+08CAA30: 001E8264 FFFFFF24 ; stripe
+;------------------------- end -------------------------
+

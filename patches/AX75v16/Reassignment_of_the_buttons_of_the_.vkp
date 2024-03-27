@@ -1,0 +1,20 @@
+;AX75v16
+;Переназначение кнопок курсора
+;Reassignment of the buttons of the cursor
+;(c) SiNgle (remake by WASP)
+;Version: 
+;PatchID: 4335
+;Details: https://patches.kibab.com/patches/details.php5?id=4335
+/*
+
+*/
+02C7B4A: 50 5A
+002C7C57: 20 00
+
+; Стрелка вправо -> куча ссылок
+002C7C50: DAB89674 DA25E001 ; Калькулятор
+
+; Стрелка влево -> куча ссылок
+002C7C96: DA40CAF0 DA25E40A ; Будильник
+;------------------------- end -------------------------
+

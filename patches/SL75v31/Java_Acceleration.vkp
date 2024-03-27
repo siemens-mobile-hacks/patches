@@ -1,0 +1,14 @@
+;SL75v31
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) StrikerVoo
+;Version: 
+;PatchID: 3257
+;Details: https://patches.kibab.com/patches/details.php5?id=3257
+/*
+без патча-2900 очей,С патчем-3252 очей
+*/
+96ED10: 6549 0121
+;------------------------- end -------------------------
+

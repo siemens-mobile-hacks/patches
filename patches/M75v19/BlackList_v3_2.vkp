@@ -1,0 +1,18 @@
+;M75v19
+;Черный список
+;BlackList
+;(c) SiNgle
+;(r) (i) KreN
+;(p) Grizzzzly
+;Version: 3.2
+;PatchID: 4278
+;Details: https://patches.kibab.com/patches/details.php5?id=4278
+/*
++ Настрока действия для каждого профиля
++ Работает и при выключенном фильтре
+*/
+05092E2: 1CF1D8EE1CF1DCEE061C C04600488047216CFCA0
+0509FE0: 0006000EFF2F0AD0FD2F 004A9047416CFCA0C046
+050A42C: 1BF132EE1BF136EE061C 00488047016CFCA0C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,41 @@
+;C75v22
+;Большой продвинутый индикатор сети v3.1
+;Large Advanced Network Indicator v3.1
+;(c) Alex Unknown, KiRiK
+;(p) Art
+;Version: 
+;PatchID: 4679
+;Details: https://patches.kibab.com/patches/details.php5?id=4679
+/*
+По желанию координаты выставляйте сами
+Картинки для патча брать здесь-http://www.sugardas.lt/~tick/c75v22_patches/lani_pic.vkp
+*/
+;(!) GraphPatchManager v3
++110000
+#pragma enable old_equal_ff
+0FC5300: 00B52448FBF77CFC3BD0FBF7C5F93868
+0FC5310: 002836D0FAF780FF0130F178C14030D3
+0FC5320: 82B000218323B2782A20801800900120
+0FC5330: 019000200498FAF7F7FE02B000207178
+0FC5340: F268FAF7EDFE0025FBF782F93C1CB178
+0FC5350: A81E2388FF2B01D2726800E0B268A379
+0FC5360: 002B07D0801C3FB4FAF7DAFE3FBC0133
+0FC5370: 692BF7D30C340631002002380135072D
+0FC5380: E7DB00BD
+
+0FC5390: 0xB1C2D3E4,0x0100CD05,0xA10D5301,00000000,"\
+{patch=`LANI` ver=3.1 id=0100CD05}\
+{1 sl `background Y` range=67..107 v=77}\
+{2 sl `upper stripe Y` range=76..116 v=76}\
+{3.0 cb `Show in lock`}\
+{3.1 cb `Show in unlock`}\
+{sm PicSetup}","\
+{4 i `pic 900` v=66}\
+{8 i `pic 1800` v=67}\
+{12 i `background pic` v=65}\
+{endsm}\
+",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

@@ -1,0 +1,22 @@
+;SL65v53
+;Изменить Дефолтное Время Сигнала в Органайзере
+;Change Default Signal Time in Organizer
+;(c) 1nvisible
+;(p) t1ck
+;Version: 
+;PatchID: 4648
+;Details: https://patches.kibab.com/patches/details.php5?id=4648
+/*
+Меняет время сигнала: 15 мин -> 0 мин
+Все записи, у которых стоит 15 мин, при просмотре будут иметь 0 мин
+
+English:Changes signal time: 15 min -> 0 min
+All entries with 15 min will have 0 min when viewing
+*/
+0A7D1D6: 311C201C 6BF213FD
+#pragma enable old_equal_ff
+0CE8C00: 08B5B37D1F2B01D10123B375311C201C
+0CE8C10: 08BD
+#pragma disable old_equal_f
+;------------------------- end -------------------------
+

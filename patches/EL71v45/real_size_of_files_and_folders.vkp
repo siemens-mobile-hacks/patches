@@ -1,0 +1,17 @@
+;EL71v45
+;Истинные размеры файлов и папок в эксплорере
+;Real size of files and folders
+;(c) caine
+;(r) mitrandir1989 aka Faust666
+;(p) @ndreS aka PRM
+;Version: 
+;PatchID: 7710
+;Details: https://patches.kibab.com/patches/details.php5?id=7710
+/*
+
+*/
+05D27C8: FA1F 401E ;Kbytes
+05D2844: 4042 FFFF ;Mbytes
+05D2848: 00CA9A3B FFFFFFF3 ;Gbytes
+;------------------------- end -------------------------
+

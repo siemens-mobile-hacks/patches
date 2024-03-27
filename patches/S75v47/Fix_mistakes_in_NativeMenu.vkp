@@ -1,0 +1,26 @@
+;S75v47
+;Исправление ошибок Native Menu
+;Fix mistakes in NativeMenu
+;(c) caine
+;(r) ThE TrIFoN
+;(p) Belarus, Kibab, KIBER-DEMON
+;Version: 2.3
+;PatchID: 7873
+;Details: https://patches.kibab.com/patches/details.php5?id=7873
+/*
+;В пункте "Интернет" работает меню. Исправлены ошибки в меню "Сообщения". Исправлен пункт "Таймер"
+;Присвоение NativeMenu собственного CSM (теперь на него можно переключаться в XTask).
+;In menu item "Internet" submenu works. Errors in menu item "Messages" fixed. Item "Timer" fixed.
+;Proper CSM assigned to Native Menu (one can now switch to and from in XTask).
+
+*/
+;CreateGUIWithDummyCSM call & other stuff
+033356E: B8F0AAEC 00210AE0
+0333582: 00210020C5F67DFC002802D0 BBF07AE880BDB8F040EEFEBD
+; Fix Internet (from v2)
+043F068: 08 00
+; Fix Taimer & SMS
+043757C: 2D3433 DBD832
+043EE14: 4F9537 39DF32
+;------------------------- end -------------------------
+

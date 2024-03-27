@@ -1,0 +1,19 @@
+;S65v58
+;Выбор профиля при подключении гарнитуры
+;Select Profile On Headset Plug-In
+;(c) ThE TrIFoN
+;(p) KiRiK
+;Version: 
+;PatchID: 1326
+;Details: https://patches.kibab.com/patches/details.php5?id=1326
+/*
+Удобно, чтобы вибра не выключалась
+Заменить N на номер профиля + 1
+English:
+Useful to keep vibra on
+N = profile# + 1
+
+*/
+16A379E: 201C 0N20
+;------------------------- end -------------------------
+

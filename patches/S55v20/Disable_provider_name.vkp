@@ -1,0 +1,14 @@
+;S55v20
+;Не показывать название оператора
+;Disable provider name
+;(c) Matr!x
+;(p) KiRiK
+;Version: 
+;PatchID: 5088
+;Details: https://patches.kibab.com/patches/details.php5?id=5088
+/*
+
+*/
+31A9CC: 8890 DB00
+;------------------------- end -------------------------
+

@@ -1,0 +1,31 @@
+;X65v100
+;PPoint
+;PPoint
+;(c) cbn
+;Version: 0.3
+;PatchID: 6549
+;Details: https://patches.kibab.com/patches/details.php5?id=6549
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=PPoint_03.rar
+
+/*
+PPoint Презентации 
+Помните PowerPoint из офиса?
+Теперь и на мобильнике!
+Примеры включены в архив.
+Запускать .ppt файлы.
+
+Распаковать в папку 0:\ZBin\PPoint
+Добавить в extension.cfg строку:
+ppt:0:\ZBin\PPoint\PPoint.elf
+*/
+PPoint Презентации
+Помните PowerPoint из офиса?
+Теперь и на мобильнике!
+Примеры включены в архив.
+Запускать .ppt файлы.
+
+Распаковать в папку 0:\ZBin\PPoint
+Добавить в extension.cfg строку:
+ppt:0:\ZBin\PPoint\PPoint.elf
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;C75v22
+;Изменение времени подачи ежеминутного сигнала во время разговора
+;Change minute beep during call
+;(c) SiNgle
+;Version: 
+;PatchID: 4525
+;Details: https://patches.kibab.com/patches/details.php5?id=4525
+/*
+
+*/
+050D6CA: 00 37
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v47
+;Отключение MMI-logging
+;Disable MMI-logging
+;(c) SiNgle
+;(p) Frezzz
+;Version: 
+;PatchID: 5533
+;Details: https://patches.kibab.com/patches/details.php5?id=5533
+/*
+
+*/
+01FA752: 041C 70BD
+;------------------------- end -------------------------
+

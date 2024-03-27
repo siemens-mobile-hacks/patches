@@ -1,0 +1,17 @@
+;S75v31
+;Замена звука при дозвоне "ошибка соединения"
+;Change dialing ringtone "No connection"
+;(c) B-727
+;(p) Cypok
+;Version: 
+;PatchID: 2750
+;Details: https://patches.kibab.com/patches/details.php5?id=2750
+/*
+
+*/
+10312C2: 1800FAFF0000B6034A0178054A0108074A01FFFFE803F9FF0300  
+0C00B8073200FFFF3200400C1A00FFFFFFFFFFFFFFFFFFFFFFFF
+
+
+;------------------------- end -------------------------
+

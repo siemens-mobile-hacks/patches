@@ -1,0 +1,17 @@
+;C72v22
+;Позиция будильника и напоминания
+;Alarm & Appointment Icons Positioning
+;(c) benj9
+;(p) Virusmater
+;Version: 
+;PatchID: 6920
+;Details: https://patches.kibab.com/patches/details.php5?id=6920
+/*
+
+*/
+902188: 01 0i161 ; Y-Pos Alarm(fix y-pos forever (dont weird y-moving at net lost)
+902189: 39 21
+902174: 01 0i161 ; Y-Pos Appointment
+902175: 39 21
+;------------------------- end -------------------------
+

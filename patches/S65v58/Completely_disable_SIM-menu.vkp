@@ -1,0 +1,15 @@
+;S65v58
+;Полностью отключить SIM-меню
+;Completely disable SIM-menu
+;(c) BingK(binghelingxi)
+;(r) dimonp25
+;(p) Виктор89
+;Version: 
+;PatchID: 9058
+;Details: https://patches.kibab.com/patches/details.php5?id=9058
+/*
+Убирает пункт SIM-меню отовсюду
+*/
+08C2F99: D1 E0
+;------------------------- end -------------------------
+

@@ -1,0 +1,43 @@
+;X75v100
+;Диктофон и Запись звука пишут на диск Data или карту памяти по выбору 
+;Dictaphone and Sound recorder write to Data or memory card as option 
+;(c) 1nvisible, Evgr 
+;Version: 1
+;PatchID: 10509
+;Details: https://patches.kibab.com/patches/details.php5?id=10509
+/*
+
+*/
+
+#pragma enable old_equal_ff
+00735D0: 06000000000000009D050000
+00735E0: 083607A0EC3507A0FA3507A006003400
+00735F0: 3A005C000493F3976856060034003A00
+0073600: 5C00555FF39768561400,'4:\\Dictating machine'
+0073640: 01000000010000009D050000
+0073650: 743607A05C3607A0683607A005003400
+0073660: 3A005C007280F397050034003A005C00
+0073670: F39748650900,'4:\\Sounds'
+0073690: FFFF00B5AA4202D004BC0E3210471C23
+00736A0: 594308180B49884207D100F01BF80ED0
+00736B0: 517800290BD0094809E00749884206D1
+00736C0: 00F010F803D09178002900D0044810BC
+00736D0: 04342047
+00736DC: D03507A0
+00736E0: 403607A0FBB50348C4DF00D0021CFBBD
+
+00736F0: 0xB1C2D3E4,0x00210612,0000000000000000,"\
+{p=Dictaphone_writes_to id=210612 cp=1nvisible,Evgr ver=1}","\
+{info `Dictaphone write option`}","\
+{c typ `Data`=0 `MMCard`=1}","\
+{sm `Dictaphone`}","\
+{1 o `Save to:` c=typ v=1}\
+{endsm}","\
+{sm `Sound recorder`}","\
+{2 o `Save to:` c=typ v=1}\
+{endsm}","\
+",00
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

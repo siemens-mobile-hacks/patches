@@ -1,0 +1,18 @@
+;SL75v52
+;Изменение шрифта меню и софт кнопок
+;Change font menu and soft keys
+;(c) SiNgle
+;(p) SimaFish
+;Version: 
+;PatchID: 9248
+;Details: https://patches.kibab.com/patches/details.php5?id=9248
+/*
+
+*/
++773C
+0C17098: 05 04 ; Шрифт софт-кнопок
+0C170E0: 05 02 ; Выбранная позиция меню
+0C170E4: 04 02 ; позиция меню
++0
+;------------------------- end -------------------------
+

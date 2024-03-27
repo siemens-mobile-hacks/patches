@@ -1,0 +1,16 @@
+;E71v45
+;Отключение Иконбара
+;Disable Iconbar
+;(c) Serega65
+;(r) Evgr
+;(p) Виктор89
+;Version: 
+;PatchID: 10713
+;Details: https://patches.kibab.com/patches/details.php5?id=10713
+/*
+
+*/
+05C14F0: 00F068F9 C046C046
+05C146E: FFF796FB C046C046
+;------------------------- end -------------------------
+

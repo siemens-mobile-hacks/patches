@@ -1,0 +1,16 @@
+;M75v25
+;Мегагромкость
+;MegaLoudness
+;(c) SiNgle
+;(p) Grizzzzly
+;Version: 
+;PatchID: 4141
+;Details: https://patches.kibab.com/patches/details.php5?id=4141
+/*
+
+*/
+0A8E7D4: 2600C4E5 D3FFFFEA
+0A8E72C: 030000EF 030040E2
+0A8E730: 6C2DA0E30100A0E3 2600C4E5290000EA
+;------------------------- end -------------------------
+

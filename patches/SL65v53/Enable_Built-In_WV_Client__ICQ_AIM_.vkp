@@ -1,0 +1,13 @@
+;SL65v53
+;Активизация (ICQ AIM) встроенного WV-клиента
+;Enable Built-In WV Client (ICQ AIM)
+;(c) SiNgle
+;Version: 
+;PatchID: 5271
+;Details: https://patches.kibab.com/patches/details.php5?id=5271
+/*
+
+*/
+0AFEA4C: 66 78
+;------------------------- end -------------------------
+

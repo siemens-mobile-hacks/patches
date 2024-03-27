@@ -1,0 +1,23 @@
+;CX75v25
+;Расширенный список вызовов
+;Extended "Calls dialed" list
+;(c) BoBa
+;(p) sempai
+;Version: 3-MP
+;PatchID: 4969
+;Details: https://patches.kibab.com/patches/details.php5?id=4969
+/*
+Жмем зеленую кнопку -> попадаем в меню "Набранные номера"
+Жмем красную кнопку -> попадаем в меню "Принятые номера"
+Жмем красную кнопку -> попадаем в меню "Неотвеченные номера"
+Жмем красную кнопку -> выход в режим готовности
+English:
+Green button -> "Calls dialed"
+Red -> "Calls missed"
+Red -> "Calls received"
+Red -> Ready
+
+*/
+049ED2C: 2FB258A0 0xA0FC8001
+;------------------------- end -------------------------
+

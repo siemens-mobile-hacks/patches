@@ -1,0 +1,22 @@
+;E71v45
+;Убрать "Пожалуйста, подождите" во всех ява приложениях
+;Disable "Please, wait" in all java-midlets
+;(c) Evgr
+;Version: 
+;PatchID: 9674
+;Details: https://patches.kibab.com/patches/details.php5?id=9674
+/*
+;Убрать "Пожалуйста, подождите" при запуске всех ява приложений 
+(калькулятор, конвертер величин, онлайн статус, секундомер, будильник, часовые пояса, радио, мидлеты)
+;Disable "Please, wait" in all java (Calculator, Unit coverter, Online status, 
+Stopwatch, Alarm clock, Time zones, Radio, midlets)
+
+;alpha version
+
+;BUG: black screen instead of wait
+;баг: вместо фона заставки во время запуска явы - черный экран
+
+*/
+0A1CD42: 32F7E4F8 C046C046
+;------------------------- end -------------------------
+

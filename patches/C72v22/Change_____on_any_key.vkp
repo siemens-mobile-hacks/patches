@@ -1,0 +1,20 @@
+;C72v22
+;Изменение ### на любые клавиши
+;Change ### on any key
+;(c) (c) Andrey_ua, kraze1984
+;(p) Virusmater
+;Version: 
+;PatchID: 5940
+;Details: https://patches.kibab.com/patches/details.php5?id=5940
+/*
+Таблица:
+; *-2A, #-23, SK left-01, SK right-04, joy up-3B, down-3c, left-3d, right-3e, joy center-1A
+; callkey-0b on/off-0c, 0...9 - 30...39
+; Vol+ -?, Vol
+*/
+b9b1f8: 23232300 NnNnNnNn
+; *-2A, #-23, SK left-01, SK right-04, joy up-3B, down-3c, left-3d, right-3e, joy center-1A
+; callkey-0b on/off-0c, 0...9 - 30...39
+; Vol+ -?, Vol
+;------------------------- end -------------------------
+

@@ -1,0 +1,25 @@
+;CX70v50
+;SVS, шорткат просмотра SMS
+;SVS, SMS view shortcut
+;(c) Bennie
+;(p) KreN
+;Version: 
+;PatchID: 1316
+;Details: https://patches.kibab.com/patches/details.php5?id=1316
+/*
+Стрелка вправо для просмотра следующего SMS, влево для просмотра предыдущего
+*/
+0AAF710: 69688160 51F584FF
+0AAFC8C: 013290422AD9 B36851F5B7FC
+0AAFC98: 0130 101C
+0AAFCFC: 3B1CAA68 6B892A89
+0AFA55E: 201C9BF1F2FB0C23 8A2008E0012729E0
+0AFA58C: 18D0 E9D0
+
+#pragma enable old_equal_ff
+0801600: 012B01D0013200E0013A002A02DB8242
+0801610: 02DA7047421E704700227047A9880181
+0801620: 298941817047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

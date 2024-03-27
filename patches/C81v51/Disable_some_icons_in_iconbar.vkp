@@ -1,0 +1,24 @@
+;C81v51
+;Отключить некоторые иконки иконбара
+;Disable some icons in iconbar
+;(c) funMarkus
+;(p) dimonp25
+;Version: 
+;PatchID: 8529
+;Details: https://patches.kibab.com/patches/details.php5?id=8529
+/*
+Патч нужен для формирования структурированного иконбара, управляемого эльфами.
+Насчет некоторых ? неуверен.Если это не то - пишите
+*/
+029C2EE:FFF7E7FE C046C046 ; HandsFree
+029C296:FFF713FF C046C046 ; BlueTooth
+029C310:FFF7D6FE C046C046 ; KeyLock
+029C386:FFF79BFE C046C046 ; SoundsOff
+029c212:FFF755FF C046C046 ; DownloadInBrowser(?)
+029C516:FFF7D3FD C046C046 ; TurnOff
+029C48A:FFF719FE C046C046 ; IsCalling(?)
+029C1DC:FFF770FF C046C046 ; HasNewMessage(?)
+029C4F6:FFF7E3FD C046C046 ; SendingMessage(?)
+
+;------------------------- end -------------------------
+

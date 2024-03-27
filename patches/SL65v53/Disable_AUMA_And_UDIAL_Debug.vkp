@@ -1,0 +1,14 @@
+;SL65v53
+;Disable AUMA And UDIAL Debug
+;Disable AUMA And UDIAL Debug
+;(c) 1nvisible
+;Version: 
+;PatchID: 5304
+;Details: https://patches.kibab.com/patches/details.php5?id=5304
+/*
+
+*/
+08F2C64: F0412DE9 1EFF2FE1 ; AUMA Debug
+0C2DCF4: 0FB4 7047 ; UDIAL Debug
+;------------------------- end -------------------------
+

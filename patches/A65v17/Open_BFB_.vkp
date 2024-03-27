@@ -1,0 +1,15 @@
+;A65v17
+;Включить BFB
+;Open BFB
+;(c) RizaPN, Girosavo, Sinclair . . .
+;(p) Joenka
+;Version: 
+;PatchID: 3867
+;Details: https://patches.kibab.com/patches/details.php5?id=3867
+/*
+
+*/
+
+6215AC: 0016 EC15
+;------------------------- end -------------------------
+

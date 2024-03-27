@@ -1,0 +1,32 @@
+;M75v19
+;Увеличение диска Cache до 641кб
+;Cache_641kb
+;(c) unknown
+;(p) Geka
+;Version: 1
+;PatchID: 4895
+;Details: https://patches.kibab.com/patches/details.php5?id=4895
+/*
+Патч изменения размеров дисков сгенерирован программой
+ IncFlex x65-x75 Creator by Alonefox
+
+1) перед установкой патча сделайте FullFlash BackUp 
+и BackUp файловой системы, адресной книги. Короче
+ все, что возможно - делайте, притом неоднократно.. 
+Часто спасает только он
+
+2) Установка патча делается стандартным путем, программой V-Klay.
+
+3)Клей будет ругатся, не обращайте внимания
+*/
+;Данные таблицы диска FFS_B
+0021D560: 0xA1F00000,0x00020000,0xA1F20000,0x00020000 0xA1380000,0x00040000,0xA13C0000,0x00040000
+0021D570: 0xA1F40000,0x00020000,0xA1F60000,0x00020000 0xA1F00000,0x00040000,0xA1F40000,0x00040000
+;Стирание для новых юлоков под диск FFS_B
+01380000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+013C0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+01F00000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+01F40000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+;------------------------- end -------------------------
+

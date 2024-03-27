@@ -1,0 +1,14 @@
+;M75v19
+;Меню выбора дисков и отображение скрытых файлов и папок
+;Disk selection menu
+;(c) SiNgle
+;Version: 
+;PatchID: 2333
+;Details: https://patches.kibab.com/patches/details.php5?id=2333
+/*
+
+*/
+03D9704: 0900000A 000055E3
+03D9760: 3534 2000
+;------------------------- end -------------------------
+

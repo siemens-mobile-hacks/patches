@@ -1,0 +1,18 @@
+;CF75v22
+;Disable More Nasty Debug
+;Disable More Nasty Debug
+;(c) benj9
+;Version: 
+;PatchID: 4507
+;Details: https://patches.kibab.com/patches/details.php5?id=4507
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cf75v22&f=Disable_More_Nasty_Debug.zip
+
+/*
+
+
+*/
+; CF75 V22 - *Disable More Nasty Debug* © benj9 § Smelter 
+;Enviado por Bruno Oz
+03258E8: FFB5 7047 ; x65, CX75
+;------------------------- end -------------------------
+

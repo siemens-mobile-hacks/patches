@@ -1,0 +1,27 @@
+;M75v13
+;Вибра в момент начала разговора
+;Vibrate shortly after connection
+;(c) SiNgle
+;(p) Gurza
+;Version: 
+;PatchID: 727
+;Details: https://patches.kibab.com/patches/details.php5?id=727
+/*
+
+*/
+
+02CA8FC: D3F17CEB0028 0028DBF5C8EB 
+#pragma enable old_equal_ff
+00A6090: 00402DE9FF3F2DE90FE0A0E144F09FE5
+00A60A0: 000050E30900001A0100A0E30FE0A0E1
+00A60B0: 34F09FE5020050E30400001A2F00A0E3 
+00A60C0: 0210A0E30120A0E30FE0A0E11CF09FE5
+00A60D0: 0FE0A0E118F09FE5000050E3FF3FBDE8 
+00A60E0: 0040BDE80CF09FE5333455A05BDAAAA0 
+00A60F0: C0492BA0932950A003A92CA0 
+#pragma disable old_equal_ff
+
+
+
+;------------------------- end -------------------------
+

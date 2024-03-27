@@ -1,0 +1,18 @@
+;M55v11
+;Убрать софт-кнопки при входящем звонке
+;Remove soft keys during incoming call
+;(c) Matr!x,  Skylord
+;Version: 2
+;PatchID: 5240
+;Details: https://patches.kibab.com/patches/details.php5?id=5240
+/*
+
+*/
+3830C4: 05 00
+3830C8: 3600 FFFF
+3830CA: 3E 00
+3830CE: 2C02 FFFF
+3830E2: 5C 00
+3830E6: 5C02 FFFF
+;------------------------- end -------------------------
+

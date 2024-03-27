@@ -1,0 +1,14 @@
+;E71v42
+;Разрешить выбор Диапазона
+;Enable Band Selection
+;(c) Bennie
+;(p) $TA$
+;Version: 
+;PatchID: 6737
+;Details: https://patches.kibab.com/patches/details.php5?id=6737
+/*
+
+*/
+083A110: 0502 F901
+;------------------------- end -------------------------
+

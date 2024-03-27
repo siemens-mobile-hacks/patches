@@ -1,0 +1,16 @@
+;EL71v45
+;Изменить имя для фото и видео
+;Change name of media-files
+;(c) avkiev
+;(p) ?
+;Version: 
+;PatchID: 7982
+;Details: https://patches.kibab.com/patches/details.php5?id=7982
+/*
+Теперь фотки можно именовать не img123.jpg, а 060608_121345.jpg
+*/
+067AAAC: 146003EB 13A4E7FA        ; /EL71v45
+067AACC: 0C6003EB 0BA4E7FA        ; |EL71v45
+0063B48: FFFFFFFF 0xA0752B04      ; \EL71v45
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S75v52
+;Ушлая подсветка
+;Smart Illumination
+;(c) BoBa
+;(r) (i) StarFriend
+;Version: 
+;PatchID: 8485
+;Details: https://patches.kibab.com/patches/details.php5?id=8485
+/*
+
+*/
+0BDCD28: 0xA01B64C0 318006A0
+
+;------------------------- end -------------------------
+

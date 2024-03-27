@@ -1,0 +1,32 @@
+;SL45iv56
+;BLR. Моргающий свет при входящем звонке
+;BLR. Blinking Light when Ringing
+;(c) RizaPN
+;Version: 
+;PatchID: 1876
+;Details: https://patches.kibab.com/patches/details.php5?id=1876
+/*
+Моргающий свет при входящем звонке 
+Выбирается через меню Приложения "Function 9"
+
+Created: July 3, 2004
+
+Патч №174 с http://patch.oslik.ru/SL45_RU
+*/
+0x3AFC5A: E6FC2003 FAC7B0E8 
+
+0x27E8B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400E00F2F4423A9AF40D80DAC1B6FB 
+0x27E8C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC8000E00DE6FED2E8E6FFC700FADA 
+0x27E8D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 68FCDAC0C0AFE6FC0001FADA5EFCFFFF 
+
+;время Light ON: 
+;0x27E8C2: 8000 yyxx ; xxyy значение в ms
+
+;время OFF time: 
+;0x27E8D8: 0001 yyxx ; xxyy значение в ms
+
+;Функция 9 для включения.
+;Поменяйте на нужное
+;0x27E8BB: 80 x0
+;------------------------- end -------------------------
+

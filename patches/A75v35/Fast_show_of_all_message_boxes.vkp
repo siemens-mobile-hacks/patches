@@ -1,0 +1,51 @@
+;A75v35
+;Быстрый показ почти ВСЕХ окон с сообщениями
+;Fast show of all message boxes in phone
+;(c) SiNgle & Nikolas535
+;(p) Smelter by avkiev & Nikolas535
+;Version: 
+;PatchID: 9560
+;Details: https://patches.kibab.com/patches/details.php5?id=9560
+/*
+Патч уменьшает время показа окошек практически во всех меню с 3 до 1 сек. Время можно поставить любое. Глюков не обнаружено.
+*/
+ABF20: B80B E803
+B2E02: B80B E803
+B2E30: B80B E803
+B9B64: B80B E803
+CC694: B80B E803
+CC6C2: B80B E803
+CC6F0: B80B E803
+D26BC: B80B E803
+D26EA: B80B E803
+D6648: B80B E803
+D6676: B80B E803
+D68B8: B80B E803
+D691C: B80B E803
+;DBCCE: B80B D007 ; "Время_разговора" (c) Ramil_
+DBCFC: B80B E803
+EE140: B80B E803
+EF9A0: B80B E803
+1CFBE6: B80B E803
+1BC374: B80B E803
+1BC3A0: B80B E803
+20684A: B80B E803
+20850E: B80B E803
+23FE36: B80B E803
+2A3330: B80B E803
+2A335E: B80B E803
+2A33F8: B80B E803
+2A3426: B80B E803
+2A3454: B80B E803
+2A3482: B80B E803
+2A34B0: B80B E803
+2A34DE: B80B E803
+2A350C: B80B E803
+2A353A: B80B E803
+2A3568: B80B E803
+2A365E: B80B E803
+2A368C: B80B E803
+2A3868: B80B E803
+
+;------------------------- end -------------------------
+

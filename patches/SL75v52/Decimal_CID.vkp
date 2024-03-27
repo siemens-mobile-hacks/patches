@@ -1,0 +1,20 @@
+;SL75v52
+;Десятичный CID вместо C1 и C2 в списке соседних сот
+;Decimal CID instead of C1 & C2 in neighbour list
+;(c) слава Богу
+;(r) SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 7643
+;Details: https://patches.kibab.com/patches/details.php5?id=7643
+/*
+
+*/
+0D51b2e: 0123F856002802DA 203FB88B203702E0
+0D51b3C: 2B 20
+0D51b40: 02 05
+0D51b4A: 0223 0CE0
+1007374: 31204332 656C4944
+
+;------------------------- end -------------------------
+

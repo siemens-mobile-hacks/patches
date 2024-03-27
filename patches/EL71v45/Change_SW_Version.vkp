@@ -1,0 +1,14 @@
+;EL71v45
+;Изменение версии ПО
+;Change SW Version
+;(c) DOMr
+;(p) funMarkus
+;Version: 
+;PatchID: 7927
+;Details: https://patches.kibab.com/patches/details.php5?id=7927
+/*
+
+*/
+81081: 3435 "SC"
+;------------------------- end -------------------------
+

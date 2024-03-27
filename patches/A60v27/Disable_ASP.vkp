@@ -1,0 +1,31 @@
+;A60v27
+;Отключение нарастания звука
+;Disable ASP
+;(c) Rasp
+;Version: 
+;PatchID: 10452
+;Details: https://patches.kibab.com/patches/details.php5?id=10452
+/*
+
+*/
+7F3BEC: 2E 2D
+7F3BF2: 45 44
+7F3BF8: 47 46
+7F3BFE: 49 48
+7F3C04: 4B 4A
+7F3C0A: 4D 4C
+7F3C10: 4F 4E
+7F3C16: 51 50
+7F3C1C: 53 52
+7F3C22: 55 54
+7F3C28: 32 31
+7F3C2E: 34 33
+7F3C3A: 28 27
+7F3C46: 39 38
+7F3C4C: 57 56
+7F3C52: 59 58
+7F3C58: 7E 7D
+7F3C5E: 80 7F
+7F3C64: 7D 7C
+;------------------------- end -------------------------
+

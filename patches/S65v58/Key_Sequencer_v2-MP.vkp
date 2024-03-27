@@ -1,0 +1,15 @@
+;S65v58
+;Секвенсер Клавиш
+;Key Sequencer
+;(c) benj9
+;(r) chaos, bug, avkiev, 1nvisible
+;(p)  -=[LCW]=-ExXtReMe
+;Version: 2
+;PatchID: 3584
+;Details: https://patches.kibab.com/patches/details.php5?id=3584
+/*
+Всё описание смотрите в теле
+*/
+1158642: 010602D5FFF793FF10BD 014CA04710BD0FF0FDA0
+;------------------------- end -------------------------
+

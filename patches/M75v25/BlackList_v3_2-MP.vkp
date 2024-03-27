@@ -1,0 +1,20 @@
+;M75v25
+;Черный список
+;BlackList
+;(c) SiNgle
+;(r) (i) KreN, s_chechel, kiREALlov
+;(p) mAhmud
+;Version: 3.2
+;PatchID: 5881
+;Details: https://patches.kibab.com/patches/details.php5?id=5881
+/*
++ Настрока действия для каждого профиля
++ Работает и при выключенном фильтре
+
+*/
+05093A2: 1CF164EE1CF168EE061C C04600488047216CFCA0
+050A0F2: 0006000EFF2F0AD0FD2F C046004A9047416CFCA0
+050A54A: 1BF190ED1BF194ED061C C04600488047016CFCA0
+
+;------------------------- end -------------------------
+

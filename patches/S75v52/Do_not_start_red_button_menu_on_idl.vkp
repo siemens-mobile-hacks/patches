@@ -1,0 +1,15 @@
+;S75v52
+;Не запускать меню красной кнопки на ГЭ
+;Do not start red button menu on idle
+;(c) Visad
+;(r) (i)1nvisible
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8632
+;Details: https://patches.kibab.com/patches/details.php5?id=8632
+/*
+
+*/
+03458A2: A6F022EF C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,38 @@
+;SL45iv56
+;Дополнительная русификация
+;Additional russification
+;(c) Rst7/CBSIE
+;Version: 1.1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=2300
+;PatchID: 2107
+;Details: https://patches.kibab.com/patches/details.php5?id=2107
+/*
+Теперь ПРАВИЛЬНЫЕ русские имена на диске: 
+при использовании кардридера можно заливать файлы с русскими именами! 
+
+Через DES пока не правильно работает, там UTF8 
+
+====================================================== 
+Переходы из функций переделки строк ASCII<->UNICODE
+
+
+Release: 2006
+*/
+;Русификация вывода текста для DrawString 
+0x27D020: B83C08C2 FAE4107F 
+
+;Русификация получения имени из LFN 
+0x44B562: DC4AA925 DAE4247F 
+;Русификация записи имени в LFN 
+0x44B5CC: DC45B9C4 DAE4487F 
+0x44B5D0: E10C CC00 
+;Тело патча 
+0x447F00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2A2A2A205255532076312E31202A2A2A 
+0x447F10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46F3C0008D0206F35003B83CE10708C2 
+0x447F20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FAC724D0DC4AA925DC4AF435010046F1 
+0x447F30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 80008D0846F110048D0546F150049D02 
+0x447F40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 26F150034920DB0047FCC0008D0627FC 
+0x447F50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B000DC45B9C4E14CDB00DC45B9C4E10C 
+0x447F60: FFFF DB00 
+;------------------------- end -------------------------
+

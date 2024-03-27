@@ -1,0 +1,14 @@
+;SK65v50
+;Change java heap size
+;Change java heap size
+;(c) Miha_r
+;(p) ~Jhellico
+;Version: 1MP
+;PatchID: 9837
+;Details: https://patches.kibab.com/patches/details.php5?id=9837
+/*
+Изменения размера Java-хипа
+*/
+0828B04: 000093E5002091E5020050E1 00402DE9BC821EFA0040BDE8
+;------------------------- end -------------------------
+

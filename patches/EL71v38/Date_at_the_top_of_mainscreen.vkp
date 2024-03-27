@@ -1,0 +1,13 @@
+;EL71v38
+;Дата вверху на главном экране в виде "Чт, 20 Апр"
+;Date at the top of mainscreen as "Thu, 20 Apr"
+;(c) avkiev
+;Version: 11
+;PatchID: 5949
+;Details: https://patches.kibab.com/patches/details.php5?id=5949
+/*
+
+*/
+08D1928: 4AFC231C2A1C301C 004B9847,0xA0063A01 ; EL71v38 (p)Bueffel
+;------------------------- end -------------------------
+

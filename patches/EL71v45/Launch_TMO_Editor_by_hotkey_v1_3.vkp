@@ -1,0 +1,25 @@
+;EL71v45
+;Запуск TMO Editor по горячей клавише
+;Launch TMO Editor by hotkey
+;(c) Kibab
+;(r) RainMaker, den11111, Дэн
+;(p) Benlux
+;Version: 1.3
+;PatchID: 7993
+;Details: https://patches.kibab.com/patches/details.php5?id=7993
+/*
+
+*/
+; below some key is needs set function: "BUSINESS_CARD" 
+08432C8: 29526FA0 0xA0067581 ;BUSINESS_CARD
+
++0067580 
+#pragma enable old_equal_ff
+00: FFB58020C7DF2501061C06A18022C7DF
+10: 6C0100220021301C94DF301CC7DF2901
+20: FFBD
+24: "4:\\ZBin\\utilities\\tmo.elf",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

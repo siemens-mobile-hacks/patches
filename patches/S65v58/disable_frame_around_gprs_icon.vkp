@@ -1,0 +1,13 @@
+;S65v58
+;Убрать рамку вокруг иконки GPRS в Java
+;Disable frame around GPRS icon in java
+;(c) vGamBIT
+;Version: 
+;PatchID: 8780
+;Details: https://patches.kibab.com/patches/details.php5?id=8780
+/*
+Убирает рамку вокруг иконки GPRS в Java как показано на скрине.
+*/
+01196EF0:  94E1FEFB  0C20A0E1
+;------------------------- end -------------------------
+

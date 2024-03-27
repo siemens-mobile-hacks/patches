@@ -1,0 +1,13 @@
+;M75v23
+;Изменение времени автоблокировки клавиш
+;Change time of automatical keypad lock
+;(c) SiNgle
+;Version: 
+;PatchID: 2803
+;Details: https://patches.kibab.com/patches/details.php5?id=2803
+/*
+
+*/
+02CD0A0: C832 7017
+;------------------------- end -------------------------
+

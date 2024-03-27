@@ -1,0 +1,110 @@
+;SK65v50
+;Мастер-Патч
+;Master-Patch
+;(c) 1nvisible
+;(r) avkiev, chaos, KiRiK, ~Jhellico
+;Version: 2.01
+;PatchID: 1065
+;Details: https://patches.kibab.com/patches/details.php5?id=1065
+/*
+Мастер-Патч используется для управления другими патчами непосредственно с телефона.
+Для этого используется мидлет, написанный chaos'ом (http://chaos.allsiemens.com/download/Master.rar).
+К каждому патчу, совместимому с МП, прикладывается специальная конфиг-секция. Ее изменять не надо. Все настройки меняются только с телефона.
+Перед установкой патча создайте папку 0:\Misc\Patches и установите мидлет.
+
+Master-Patch is used to take control over other patches from the phone without connecting it to a computer.
+It uses the Master-Midlet written by chaos (http://chaos.allsiemens.com/download/Master.rar).
+Every patch compatible with Master-Patch has its own config-section. You don't need to edit it. All settings are changed only from the mobile phone.
+[url]Before installing the patch create the folder 0:\Misc\Patches and install the midlet.[/url]
+*/
+;* Мастер-Патч ** Master-Patch * © 1nvisible, ® avkiev, chaos, KiRiK, ~Jhellico
+;Phone:	SK65 SW50
+;Version:	2.01
+;Build:	#55 (25.11.2005 19:00:46)
+/*
+Мастер-Патч используется для управления другими патчами непосредственно с телефона.
+Для этого используется мидлет, написанный chaos'ом (http://chaos.allsiemens.com/download/Master.rar).
+К каждому патчу, совместимому с МП, прикладывается специальная конфиг-секция. Ее изменять не надо. Все настройки меняются только с телефона.
+!Перед установкой патча создайте папку 0:\Misc\Patches и установите мидлет.
+
+Master-Patch is used to take control over other patches from the phone without connecting it to a computer.
+It uses the Master-Midlet written by chaos (http://chaos.allsiemens.com/download/Master.rar).
+Every patch compatible with Master-Patch has its own config-section. You don't need to edit it. All settings are changed only from the mobile phone.
+!Before installing the patch create the folder 0:\Misc\Patches and install the midlet.
+*/
+#pragma enable old_equal_ff
+02BCD1C: 64D2 02B4
+02BCD20: 600045188035688A 004B9847710EFCA0
+
+02C36D8: 00261660071C0D1C 004B9847E10EFCA0
+
+045ED0C: 838931A0 510CFCA0
+045ED24: B9 BD
+
+0711FA4: 08221D21201C0093 004B9847C10EFCA0
+
+0FC0C00: BCB5FFF78DFD3F683E68094B9E420AD0
+0FC0C10: 864201D01037F7E77968002903D07868
+0FC0C20: 061CB968BCBD002000210026BCBDC046
+0FC0C30: FFFFFFFF
+
+0FC0C50: FFB5FFF765FD3D1C2D682A68294B9A42
+0FC0C60: 4ED0FFB46868002801D0FFF71DFAFFBC
+0FC0C70: 25A1FFF755FD381C0C30E0B4FFF718FA
+0FC0C80: FFF74EFD381C0C30FFF74AFD391C0831
+0FC0C90: FFF7FAF9E0BC002822DBFFF741FD0837
+0FC0CA0: 39680B7880241C4007D0EFB4FFF7B0F9
+0FC0CB0: 01248440EFBC1C4002D10026002211E0
+0FC0CC0: 001F4A88BFB48018FFF7EAF9061CBFBC
+0FC0CD0: 00230431CC5CF45401338342FAD101E0
+0FC0CE0: 002600226E60002A00D08219AA60EB68
+0FC0CF0: 002B03D0EB60FFB49847FFBC1035ACE7
+0FC0D00: FFBDC046FFFFFFFF303A5C4D6973635C
+0FC0D10: 506174636865735C7074635C25303878
+0FC0D20: 2E70746300
+
+0FC0D50: FFB53348FFF7A4F9FFF7E2FC3860061C
+0FC0D60: 3048FFF79DF9051CFFF7DAFC78602E4F
+0FC0D70: 3A68324B9A4223D02F4B9A4220D02C4B
+0FC0D80: 9A421DD02B4B9A421AD02D4B9A421AD0
+0FC0D90: 204B9A4201D100F01BF81037234B9F42
+0FC0DA0: E6DB1B4B336027A0FFF7BAFC79686A1A
+0FC0DB0: FFF7B6FAFFF7B4FC7868FFF775F9FFBD
+0FC0DC0: 154BFF18EAE7154BFF18E7E7
+
+0FC0DD0: 9FB57B683360BB681348834205DB1348
+0FC0DE0: 834202DCFFB49847FFBCFB68F3600023
+0FC0DF0: B3607360103700203B5C002B02D02B54
+0FC0E00: 0130F9E70A232B542D1810369FBD
+0FC0E10: FFFFFFFFE4D3C2B10000100000000A00
+0FC0E20: 0010000000400000000000A0000000A2
+0FC0E30: 45454C49454546554646535F46465300
+0FC0E40: BBBB0000303A5C4D6973635C50617463
+0FC0E50: 6865735C7074635C636F6E666967732E
+0FC0E60: 74787400
+
+0FC0E70: 012302D208BC002300E002BCF7B5FFF7
+0FC0E80: 4FFC7F68002F01D0FFF7E2FEF7BC012B
+0FC0E90: 0FD063089842A32301D0600000E0F323
+0FC0EA0: 45188035688AF32B00D1410708BC0433
+0FC0EB0: 9F46B8BD
+
+0FC0EC0: 002308221D21201C009381B5FFF728FC
+0FC0ED0: 0020786081BC08BC04339F46
+
+0FC0EE0: 00261660071C0D1C141CFFB505A70437
+0FC0EF0: 3E68044DAE4201D0B047F8E7FFBC10BC
+0FC0F00: 0434A746FFFFFFFF510DFCA0510CFCA0
+0FC0F10: FFFFFFFF
+
+0FCF000: 46756E6374696F6E7300
+0FCF010: 4F70656E5772697465436C6F73654669
+0FCF020: 6C652076312E3100
+
+0FCF030: FFB50D1C161C0849FF2201326B46F1F7
+0FCF040: 07F8291C321C061C6B46F1F709F8301C
+0FCF050: 6946F1F709F8FFBD01030000
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

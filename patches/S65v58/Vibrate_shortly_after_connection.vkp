@@ -1,0 +1,25 @@
+;S65v58
+;Вибра в момент начала разговора
+;Vibrate shortly after connection
+;(c) SiNgle
+;(p) KiRiK
+;Version: 1.2
+;PatchID: 741
+;Details: https://patches.kibab.com/patches/details.php5?id=741
+/*
+Режим включается одновременно с галкой в Меню-2-5-5-4 или 2-5-4-3 (Авт.Индикац.)  
+
+При входящих не вибрирует
+*/
+169DF26: 17F0E0EE0028 002822F06AE8
+#pragma enable old_equal_ff
+16C0000: 00402DE9FF3F2DE90FE0A0E144F09FE5
+16C0010: 000050E30900001A0100A0E30FE0A0E1
+16C0020: 34F09FE5020050E30400001A2F00A0E3
+16C0030: 0210A0E30120A0E30FE0A0E11CF09FE5
+16C0040: 0FE0A0E118F09FE5000050E3FF3FBDE8
+16C0050: 0040BDE80CF09FE52FA0B8A083FA32A1
+16C0060: 006494A0BF6BB4A02DDF69A1
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

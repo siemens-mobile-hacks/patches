@@ -1,0 +1,15 @@
+;CX75v12
+;Открыть заблокированные блоки EEPROM
+;Open closed EEPROM blocks
+;(c) Skylord
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 496
+;Details: https://patches.kibab.com/patches/details.php5?id=496
+/*
+Открывает скрытые блоки EEPROM. Для тех, кто знает, зачем ему это. Например, для дефрагментации EEPROM.
+*/
+08CDB2C: 00 01
+;------------------------- end -------------------------
+

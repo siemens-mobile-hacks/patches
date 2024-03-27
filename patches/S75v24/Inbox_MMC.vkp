@@ -1,0 +1,15 @@
+;S75v24
+;Все принятые файлы идут на флешку в папку Misc
+;All received files are saved on MMC in Misc folder
+;(c) SiNgle
+;Version: 
+;PatchID: 3269
+;Details: https://patches.kibab.com/patches/details.php5?id=3269
+/*
+Не принимаются визитки и заметки
+English: Visit cards and notices are not received
+*/
+04D2434: FFF7E0FE C0464920
+0677DFA: 30 34
+;------------------------- end -------------------------
+

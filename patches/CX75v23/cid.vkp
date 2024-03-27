@@ -1,0 +1,19 @@
+;CX75v23
+;Десятичный CID вместо C1 и C2 в списке соседних сот
+;Decimal CID instead of C1 & C2 in neighbour list
+;(c) слава Богу
+;(r) SiNgle, AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1833
+;Details: https://patches.kibab.com/patches/details.php5?id=1833
+/*
+
+*/
+0B3E2EA: 0123F856002802DA 203FB88B203702E0
+0B3E2F8: 2B 20
+0B3E2FC: 02 05
+0B3E306: 0223 0CE0
+0D0BD84: 31204332 656C4944
+;------------------------- end -------------------------
+

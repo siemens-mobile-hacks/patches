@@ -1,0 +1,13 @@
+;AX75v16
+;Открыть скрытые блоки EEPROM
+;Open Hidden EEPROM
+;(c) avkiev
+;Version: 
+;PatchID: 4333
+;Details: https://patches.kibab.com/patches/details.php5?id=4333
+/*
+
+*/
+200000: 01149013D513911302140314 000000000000000000000000
+;------------------------- end -------------------------
+

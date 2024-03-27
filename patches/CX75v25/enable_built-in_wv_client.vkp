@@ -1,0 +1,14 @@
+;CX75v25
+;Активизация (ICQ AIM) встроенного WV-клиента
+;Enable built-In WV-client (ICQ AIM)
+;(c) SiNgle
+;(p) Druid
+;Version: 1.0
+;PatchID: 5797
+;Details: https://patches.kibab.com/patches/details.php5?id=5797
+/*
+
+*/
+643AD4: 66 78
+;------------------------- end -------------------------
+

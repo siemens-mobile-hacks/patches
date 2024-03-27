@@ -1,0 +1,30 @@
+;SL75v47
+;Remote control via flash SMS
+;Remote control via flash SMS
+;(c) Evgr
+;(p) loquat
+;Version: 1
+;PatchID: 10578
+;Details: https://patches.kibab.com/patches/details.php5?id=10578
+/*
+English: If you send FlashSMS " 0" to a phone flashed this patch, the phone will switch off.
+*/
+29C85A: FFF748FD 5CF123EC
+
+#pragma enable old_equal_ff
+3F90A4: 00C09FE51CFF2FE1,0xA155EC13
+155EC00: CFB535780435715D0220BCDF44180334
+155EC10: CFBD00B502488047FFB4024E04E0C046
+155EC20: 0xA029C2EF,0xA8E7018D,35780335735D0324 ; 0xA8E7018D SMS-DELIVER PDU (from SC to MS)
+155EC30: 2340002B22D1FFF7E3FF2F19F35DF02B
+155EC40: 1CD10837F35D022B18D10137F35D7F24
+155EC50: 2340202B12D1F35D203BDB090137F45D
+155EC60: 64001B19303B092B08DC06A704246343
+155EC70: FF183F68024EB74200D0B847FFBDC046
+;These are just examples, you may configure yourself
+155EC84: 0xA0234654 ; 0 / 009: __arm void SwitchPhoneOff() 
+155EC88: 0xA0234660 ; 1 / 093: RebootPhone 
+155EC8C: 0xA032DB13 ; 2 / DICT_MACHINE 
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

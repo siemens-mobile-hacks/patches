@@ -1,0 +1,18 @@
+;SL45iv56
+;МР3 и голосовой набор в стакане и в Carkit
+;Enable MP3 and VoiceDialing in Carkit and in Dockstation
+;(c) abomin
+;(r) trustkill
+;Version: 
+;PatchID: 1994
+;Details: https://patches.kibab.com/patches/details.php5?id=1994
+/*
+Release: 23.02.2005
+*/
+; Enable MP3 in Carkit and in Dockstation 
+3B85A1: 21 2D 
+; 
+; Enable VoiceDialing in Carkit 
+46A820: 9A0A 0D14 
+;------------------------- end -------------------------
+

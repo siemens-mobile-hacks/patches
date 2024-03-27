@@ -1,0 +1,27 @@
+;CX75v12
+;Чтение SMS при залоченом экране
+;Read message when key locked
+;(c) Bennie
+;(r) avkiev
+;(p) B&#252;ffel
+;Version: 2.1
+;PatchID: 690
+;Details: https://patches.kibab.com/patches/details.php5?id=690
+/*
+Чтение СМС и Флеш-СМС при залоченой клаве + включение подсветки.
+При приходе СМС- жмем зеленую пимпу;-)
+*/
+02CC504: DCF76CF8 33F77FFC
+02CF688: 0223E05E 30F742FB
+#pragma enable old_equal_ff
+01FFDD0: 40B50026052814D1CEF0AAFB01280AD0
+01FFDE0: CFF008FB01280CD10320154B98471548
+01FFDF0: 8047022605E00320114B9847DEF735FF
+01FFE00: 0126301C40BD0223E85E00B5FFF7E0FF
+01FFE10: 002802D1A8F0E4FB00BD01B00A490847
+01FFE20: 0223E05E01B5FFF7D3FF002800D101BD
+01FFE30: 02B0022802D10020D0F049F803490847
+01FFE40: DD9585A03CEC49A051C42CA075F72CA0 
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

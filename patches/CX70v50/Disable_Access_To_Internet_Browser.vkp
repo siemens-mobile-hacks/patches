@@ -1,0 +1,15 @@
+;CX70v50
+;Отключить доступ к интернет-браузеру
+;Disable Access To Internet Browser
+;(c) KiRiK
+;Version: 
+;PatchID: 63
+;Details: https://patches.kibab.com/patches/details.php5?id=63
+/*
+Патч отключает доступ к интернет-браузеру например: к закладкам и.д
+*/
+0943854: 81F38EA0 00000000 ;disable Internet INTR_STRTBROWSR
+0943820: 9BF38EA0 00000000 ;disable Bookmarks INTR_BBOOKMARKS
+094316C: 53FD8EA0 00000000 ;disable DevMenu ELSE_DEVELP_MNU
+;------------------------- end -------------------------
+

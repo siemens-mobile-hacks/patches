@@ -1,0 +1,228 @@
+;A50v12
+;Сборник индикаторов
+;Set of indicators
+;(c) Delirium, ZH-Soft, Sinclair, Baloo, Ramil_, REDKIN
+;(r) Broken Brain
+;Version: 
+;PatchID: 2777
+;Details: https://patches.kibab.com/patches/details.php5?id=2777
+/*
+Содержит патчи:
+*** Логотип профиля на экране в верхней строке v4 ***
+*** Индикатор статуса вибры в верхней строке v5.2 ***
+*** Счётчик непрочтённых sms и неотвеченных вызывов v1.1 ***
+*** Стандартные индикаторы в стиле Nokia v2 ***
+*** Мульти-индикатор состояния аккумулятора ***
+*** Расширенный индикатор сети и dB ведущего канала v2 ***
+*/
+; Подключение патчей
+3A1AAE: CC00CC00 DAF7B0FF ; "Индикатор заряда в стиле Nokia"
+3A1AB2: CC00CC00 DAFA501C ; "Мульти-индикатор accu"
+3A1AD0: CC00CC00 DAF7D4FF ; "Индикатор сети в стиле Nokia"
+3A1AD4: CC00CC00 DAFA801D ; "Мульти-индикатор сети"
+;************************************************************************
+
+;************************************************************************
+;*** www.Логотип_профиля_на_экране_в_верхней_строке_v4 *** © REDKIN
+; A50v12 ® Delirium
+; Отрабатывает, как стандартный индикатор
+;(при большом колличестве индикаторов перемещается и перемигивается с другими)
+; Вкл.\Выкл. индикатора через меню "Индикаторы" -> "Лого профиля"
+;========================================================================
+210088: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAFADA1248403D08DAC56CCDC08C06FC
+210098: FFFFFFFFFFFFFFFFFFFFFFFFFFFF B602DACBC6130881DAD96C58DB00
+31C9F0: DAD96C58 DAE18800
+;************************************************************************
+
+;************************************************************************
+;*** www.Индикатор_статуса_вибры_в_верхней_строке_v5.2 *** © Ramil_
+; A50v12 ® Delirium
+; Отображает, как активный, так и неактивный статус вибры
+; Отрабатывает, как стандартный индикатор (вместо IrDA)
+;(при большом колличестве индикаторов перемещается и перемигивается с другими)
+; Вкл.\Выкл. индикатора через меню "Индикаторы" -> "Индик.вибры"
+;========================================================================
+22DC20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAFAA01248402D02FAD3E6FFFAF2B4F2
+;--------------------------------
+31C9CC: DAD3E6FF4841 DAE220DC4840
+31C9DE: DAD3E6FF4840 DAE220DC4841
+;************************************************************************
+
+;************************************************************************
+;*** www.Счётчик_непрочтённых_sms_и_неотвеченных_вызывов_v1.1 *** © RizaPN
+; A50v12 ® Delirium
+; Требует патч *** www.Centre_of_management_patchs ***
+; Вкл./Выкл. через CoMP -> "Индикаторы" -> "счётчик SMS"
+; отображает слева от иконки "входящего SMS"/"пропущенного вызова" 
+; кол-во пришедших (непрочитанных) сообщений или неовеченных вызывов
+; Отображается только при одном уникальном пропущенном событие (либо SMS, либо вызовах)
+; Если пропущенных событий больше (+будильник, и т.п.), то счётчик, увы, не работает
+;------------------------------------------------------------------------
+06E9C6: CB00 DB00
+06EAA2: CA0092E8 DAE54C8A
+2589E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC692E8D4D00200D4C00400DC4DD44C
+2589F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3A008840E6FC020046F4264E2D0846F4
+258A00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 254E3D16D7400E00F2F4F6060D04D740
+258A10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0F00F2F43A22E0A2F6F40EFE5B22F2F1
+258A20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0CFE8810F2FE0EFE2D01BB0498E0BB02
+258A30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 9840DB0006FEEA02E6FD370088C088D0
+258A40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC6B8F598D098C008C6CB00DAFA3614
+258A50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 48402D03DAC692E8DB00FAE5E089FFFF
+;------------------------------------------------------------------------      
+; Настройки:
+258A29: 01 00 ; рисовать лидирующий ноль
+;2589F6: 02 xx ; координата по X
+;258A3A: 37 yy ; координата по Y
+;258A49: C6 Cx ; ширина картинок
+;258A36: EA02 zzzz ; 2EAh - номер первой картинки
+;************************************************************************
+
+;************************************************************************
+;*** www.Стандартные_индикаторы_в_стиле_Nokia_v2 ***
+; A50v12 © Delirium
+; Thx Broken Brain
+; Возможно отображение как стиле Nokia, так и в стандартном виде
+; Вкл.\Выкл. через меню "Индикаторы" -> "Nokia style"
+31C962: E00CF0ED FAFA1C1B
+31CBFC: 26FC1A00 FAFA001B
+3492FA: 26FC1A00 FAFA241C
+348F92: E6F93E3FE6F69003 DAFA3A1BCC00CC00
+348FEE: E6F94A3F DAFA561B
+348FFA: E6F9563F DAFA641B
+348F6A: D7409003F2FC283F DAFA761BCC00CC00
+348F7C: D7409003D4CD263F DAFA921BCC00CC00
+348ED8: E6F48401 DAFAAE1B
+348F50: E6FC8601 DAFAC21B
+348F56: E6FC8701 DAFAD61B
+348F5C: E6FC8501 DAFAEA1B
+;------------------------------------------------------------------------
+3A1B00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAFA141348402D0426FC1A00E00D0D04
+3A1B10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 26FC0700E6FD0F00FAF102CCDAFA1413
+3A1B20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 48402D04E00CF0EDE00D0D05E6FC0100
+3A1B30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F0EDE6FD0F00FAF168C9DAFA14134840
+3A1B40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D05E6F93E3FE6F69003DB00E6F9181C
+3A1B50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6F6E803DB00DAFA141348402D09E6F9
+3A1B60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 4A3FDB00DAFA14132D03E6F9563FDB00
+3A1B70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6F9181CDB00DAFA141348402D05D740
+3A1B80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 9003F2FC283FDB00D740E803F2FC021C
+3A1B90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DB00DAFA141348402D05D7409003D4CD
+3A1BA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 263FDB00D740E803D4CD001CDB00DAFA
+3A1BB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 141348402D03E6F48401DB00E6F4DE03
+3A1BC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DB00DAFA141348402D03E6FC8601DB00
+3A1BD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FCE003DB00DAFA141348402D03E6FC
+3A1BE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8701DB00E6FCE103DB00DAFA14134840
+3A1BF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D03E6FC8501DB00E6FCDF03DB00FFFF
+3A1C00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D403D403D503D703D803D903DA03DB03
+3A1C10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DC03DD03D603D603E203E303E403E503
+3A1C20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E603E703DAFA141348402D0426FC1A00
+3A1C30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E00D0D0426FC0700E6FD0F00FAF40093
+;------------------------------------------------------------------------
+37FFB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAFA141348403D078A090B30DAF4DA27
+37FFC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 48402D070D04DAFA4E1348402D02DAC6
+37FFD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B8F5DB00DAFA141348403D078A090B30
+37FFE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAF4DA2748402D070D04DAFA70144840
+37FFF0: FFFFFFFFFFFFFFFF 2D02DAC6B8F5DB00
+;************************************************************************
+
+;************************************************************************
+;*** www.Мульти-индикатор_состояния_аккумулятора *** © ZH-Soft, Sinclair, Baloo
+; A50v12 ® Delirium
+; Значения берутся из ACCU-Monitor и Charge Monitor, переменные CAP,VB,LS,TE
+;************************************************************************
+3A1C50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7402D00F2F4A03AB8409AF40260BB0E
+3A1C60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF A8409AF40230BB16A8409AF40240BB2F
+3A1C70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF A8409AF40250BB49A840DB00E6FC4600
+3A1C80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FD0300D7401100F2FE4A3C3D01E0CE
+3A1C90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB64CB00E6FC4A00E6FD0000D7400F00
+3A1CA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2FE6A3EE6FF6400BB4D88F048E02D01
+3A1CB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB5198E0E0AFBB4688F008C6BB4B98E0
+3A1CC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 08C6BB4808C7E6FE0403BB4BCB00E6FC
+3A1CD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 5400E6FD0900D7400F00F2FE683EE6FF
+3A1CE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E803BB3088F0BB3908C4E6FEF303BB39
+3A1CF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 98E0E6FF6400BB2608C388F0BB2E98E0
+3A1D00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E0AFBB2008C5BB29CB00E6FC3E00E6FD
+3A1D10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0900D7401200F2FE123726FEAA0AE6FF
+3A1D20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 6400BB1088F0BB1998E0E0AFBB0B08C5
+3A1D30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88F0BB1308C4E6FEF303BB1398E008C3
+3A1D40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB0CCB00F6FE0EFE5BFFF2FE0EFEF2FF
+3A1D50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0CFECB0006FEEA020D0206FEE803BB01
+3A1D60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF CB0088C088D0DAC6B8F598D098C0CB00
+;************************************************************************ 
+; Настройки координат:
+;========================
+;3A1C7C: 46 xx ; LS по X
+;3A1C82: 03 yy ; LS по Y 
+;------------------------
+;3A1C96: 4A xx ; CAP по X
+;3A1C9A: 00 yy ; CAP по Y
+;3A1CC8: 0403 qqqq ; номер картинки процента
+;3A1D56: EA02 zzzz ; номер первой картинки цифр для CAP
+;------------------------
+;3A1CD0: 54 xx ; VBat по X
+;3A1CD4: 09 yy ; VBat по Y
+;3A1CEC: F303 qqqq ; номер картинки запятой
+;------------------------
+;3A1D0С: 3E xx ; TE по X
+;3A1D10: 09 yy ; TE по Y
+;3A1D38: F303 qqqq ; номер картинки запятой
+;------------------------
+;3A1D5C: E803 zzzz ; номер первой картинки цифр для всех индикаторов, кроме CAP
+;------------------------------------------------------------------------
+; Настройки для смены индикаторов местами, для тех, кто привык к проценту заряда akku под стандартным индикатором:
+; см. в папке "__"/Accu_indicators_set.vkp
+;************************************************************************
+
+
+;************************************************************************
+;*** www.Расширенный_индикатор_сети_и_dB_ведущего_канала_v2 ***
+; A50v12 ® Delirium
+;************************************************************************
+3A1D80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7402D00F2F4A03AB8409AF40280BB06
+3A1D90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF A8409AF40290BB44A840DB00E6FF3630
+3A1DA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC0000D7402D00D41F0200E1034920
+3A1DB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D1C47F2FF002D19E11347F26900ED15
+3A1DC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E12347F25F00ED11E13347F25500ED0D
+3A1DD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E14347F24B00ED09E15347F24100ED05
+3A1DE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E16347F23700ED01E173D7402D00A85F
+3A1DF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46F57D008D0207F30800C03E06FEBD02
+3A1E00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FD000088C088F0DAC6B8F598F098C0
+3A1E10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 48C008C406FF0A0046FF7230FDC3CB00
+3A1E20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC0000E6FD0900E6FEE402BB23D740
+3A1E30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D00F2FE3830E6FF6400BB0D88F008C5
+3A1E40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB1598E0E0AFBB0788F008C5BB0F98E0
+3A1E50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 08C5BB0CCB00F6FE0EFE5BFFF2FE0EFE
+3A1E60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2FF0CFECB0006FEEA020D0206FEE803
+3A1E70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB01CB0088C088D0DAC6B8F598D098C0
+3A1E80: FFFF CB00
+;************************************************************************
+; настройки продвинутого индикатора сети:
+;3A1DA2: 00 xx ; координата по X
+;3A1E00: 00 yy ; координата по Y
+;3A1DFС: BD02 zzzz ; номер первой картинки
+;=============================================
+
+; Смена порогов, для альтернативной индикации:
+;!!!требует смены картинок!!!
+;3A1DBC: 69 63 ; 105dB->99dB
+;3A1DC4: 5F 59 ;  95dB->89dB
+;3A1DCC: 55 4F ;  85dB->79dB
+;3A1DD4: 4B 45 ;  75dB->69dB
+;3A1DDC: 41 3B ;  65dB->59dB
+;3A1DE4: 37 31 ;  55dB->49dB
+;--------------------------------------------
+; Уровень приема при альтернативной индикации отображается следующим образом:
+; больше -100db -   цифра "0"
+; от -90db до -99db цифра "9"
+; от -80db до -89db цифра "8"
+; от -70db до -79db цифра "7"
+; от -60db до -69db цифра "6"
+; от -50db до -59db цифра "5"
+; меньше -50db - "антенка"
+;_____________________________________________
+; настройки индикатора dB:
+;3A1E22: 00 xx ; координата по X
+;3A1E26: 09 yy ; координата по Y
+;3A1E6E: E803 zzzz ; номер первой картинки
+;************************************************************************
+;------------------------- end -------------------------
+

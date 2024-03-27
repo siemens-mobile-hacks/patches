@@ -1,0 +1,17 @@
+;M81v51
+;Плавный скроллинг длинных названий и имен
+;Smooth Scrolling Of Long Names
+;(c) SiNgle
+;(p) Siemann
+;Version: 
+;PatchID: 6215
+;Details: https://patches.kibab.com/patches/details.php5?id=6215
+/*
+
+*/
+6A53B4: D00700002C01 120200002A00
+C22D3C: D00700002C01 120200002A00
+
+
+;------------------------- end -------------------------
+

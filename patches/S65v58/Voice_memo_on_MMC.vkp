@@ -1,0 +1,15 @@
+;S65v58
+;Сохранение голосовых заметок на ММС-карте
+; Save Voice Memo on the MMC-card
+;(c) KiRiK
+;(r) avkiev
+;Version: 
+;PatchID: 1217
+;Details: https://patches.kibab.com/patches/details.php5?id=1217
+/*
+Патч переносит папку Voice Memo на MMC-карту.
+Оставшееся время записи отображается для места на диске 0: .
+*/
+0A24450: 30 34
+;------------------------- end -------------------------
+

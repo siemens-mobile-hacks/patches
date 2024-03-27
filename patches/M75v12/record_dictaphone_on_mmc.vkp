@@ -1,0 +1,19 @@
+;M75v12
+;Запись диктофона на MMC
+;Record dictaphone on MMC
+;(c) KiRiK
+;(p) Gurza
+;Version: 
+;PatchID: 586
+;Details: https://patches.kibab.com/patches/details.php5?id=586
+/*
+Максимальное время записи определяется свободным местом на А:\
+Но запись можно повторить столько раз, сколько позволит место на ММС.
+
+EN:
+Record time depends on free space on disk A:.
+But you can repeat recording as many times as free space on MMC allows.
+*/
+04A3AE0: 30 34
+;------------------------- end -------------------------
+

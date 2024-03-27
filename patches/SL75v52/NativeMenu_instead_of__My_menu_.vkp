@@ -1,0 +1,14 @@
+;SL75v52
+;NativeMenu вместо "Мое меню"
+;NativeMenu instead of "My menu"
+;(c) AlexeyZ
+;(p) kiREALlov
+;Version: 
+;PatchID: 8246
+;Details: https://patches.kibab.com/patches/details.php5?id=8246
+/*
+
+*/
+04286E4: 2FE132A0 0xA02CDEF3
+;------------------------- end -------------------------
+

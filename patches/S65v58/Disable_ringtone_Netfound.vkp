@@ -1,0 +1,13 @@
+;S65v58
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found"
+;(c) avkiev
+;Version: 
+;PatchID: 9087
+;Details: https://patches.kibab.com/patches/details.php5?id=9087
+/*
+
+*/
+13DFC08: 5C03 FFFF
+;------------------------- end -------------------------
+

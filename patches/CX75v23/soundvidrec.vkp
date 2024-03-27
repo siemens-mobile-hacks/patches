@@ -1,0 +1,15 @@
+;CX75v23
+;Отключить звук в начале записи видео
+;No start sound in Video rec
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1808
+;Details: https://patches.kibab.com/patches/details.php5?id=1808
+/*
+
+*/
+02D982C: 1A 1D
+;------------------------- end -------------------------
+

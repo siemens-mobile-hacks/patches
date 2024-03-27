@@ -1,0 +1,14 @@
+;C72v22
+;Включение по будильнику
+;Turn on by alarm clock
+;(c) Single
+;(p) Reviser
+;Version: 1.1
+;PatchID: 8643
+;Details: https://patches.kibab.com/patches/details.php5?id=8643
+/*
+
+*/
+0BA8D48: D5F5 C046
+;------------------------- end -------------------------
+

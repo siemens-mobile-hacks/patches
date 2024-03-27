@@ -1,0 +1,29 @@
+;S75v42
+;Увеличение фото при звонке
+;Large photo in call
+;(c) SiNgle
+;(p) Belarus
+;Version: 
+;PatchID: 5081
+;Details: https://patches.kibab.com/patches/details.php5?id=5081
+/*
+
+*/
+029D1A4: 33 63 ;photo size
+
+042BB74: 08 00 ; disable name and phone incall x displacements
+042BB90: 08 00
+
+042B96C: 63 7a ; outcall_y_name
+042B988: 75 8a ; outcall_y_phonenum
+042B9C0: 1B 00 ; outcall_y_blankarea1
+;042B974: 87 00 ; outcall_y_blankarea2 ; отключает показ времени разговора при исходящем звонке
+042BA0E: 2d 16 ; incall_photo_y
+042B7C2: 2d 16 ; outcall_photo_y
+
+042BB78: 63 7a ; incall_y_name
+042BB94: 75 8A ; incall_y_phonenum
+042BB5C: 1B 00 ; incall_y_blankarea1
+042BBB0: 87 00 ; incall_y_blankarea2 ; отключает показ времени разговора при входящем звонке
+;------------------------- end -------------------------
+

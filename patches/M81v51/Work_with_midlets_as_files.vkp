@@ -1,0 +1,15 @@
+;M81v51
+;Работа с мидлетами как с файлами
+;Work with midlets as files
+;(c) SiNgle
+;(r) Avkiev
+;(p) Frezzz
+;Version: 
+;PatchID: 6221
+;Details: https://patches.kibab.com/patches/details.php5?id=6221
+/*
+
+*/
+0549D3C: 28F180EE00 FEF748FE01
+;------------------------- end -------------------------
+

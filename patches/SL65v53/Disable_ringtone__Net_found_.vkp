@@ -1,0 +1,13 @@
+;SL65v53
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found"
+;(c) avkiev
+;Version: 
+;PatchID: 5216
+;Details: https://patches.kibab.com/patches/details.php5?id=5216
+/*
+
+*/
+13B890C: 5C03 FFFF
+;------------------------- end -------------------------
+

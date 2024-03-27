@@ -1,0 +1,14 @@
+;S75v52
+;Убрать сообщение "Блокировка клавиатуры включена/выключена"
+;Disable message "Keylock/unlock"
+;(c) SiNgle
+;(p) Vedan
+;Version: 
+;PatchID: 8429
+;Details: https://patches.kibab.com/patches/details.php5?id=8429
+/*
+
+*/
+034313C: A9F05EED C046C046
+;------------------------- end -------------------------
+

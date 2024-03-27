@@ -1,0 +1,24 @@
+;X75v100
+;Edit
+;Edit
+;(c) cbn
+;Version: 0.66
+;PatchID: 6031
+;Details: https://patches.kibab.com/patches/details.php5?id=6031
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=edit_066.zip
+
+/*
+Edit читалка/редактор 
+
+*/
+Edit читалка/редактор elf
+Файлы должны целиком помещаться в памяти (до 4 мб)
+Минимум возможностей :)
+Распаковать в 4:\Zbin\edit
+
+В extension.cfg добавить строку типа:
+txt:4:\ZBin\edit\edit.elf
+
+Скачайте приложенный файл
+;------------------------- end -------------------------
+

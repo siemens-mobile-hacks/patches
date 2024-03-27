@@ -1,0 +1,13 @@
+;M75v12
+;Отключить Логгинг MMI
+;Disable MMI Logging
+;(c) SiNgle
+;Version: 
+;PatchID: 5377
+;Details: https://patches.kibab.com/patches/details.php5?id=5377
+/*
+
+*/
+02A044D: B5 47 ; speeds up phone operation
+;------------------------- end -------------------------
+

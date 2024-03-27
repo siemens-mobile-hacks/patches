@@ -1,0 +1,28 @@
+;X75v100
+;Настройка подсветки
+;Illumination adjustment
+;(c) avkiev
+;(r) benj9
+;Version: 
+;PatchID: 3987
+;Details: https://patches.kibab.com/patches/details.php5?id=3987
+/*
+Позволяет настраивать мощность подсветки клавиатуры и дисплея в каждом профиле, а также скорость ее включения и выключения.
+*/
+#pragma enable old_equal_ff
+0066700: 82B00078192424024234A34603B54446
+0066710: 022C13D20B48C4DF10D0051C04B4B6DF
+0066720: 04BC69788C43E40000190430285CEB78
+0066730: 002A01D0AB78021C4343089303BD
+
+0066740: 0xB1C2D3E4,0x0000AB12,0000000000000000,"\
+{p=Illumination cp=avkiev id=AB12}\
+{4 b(8) Display v=100,100,100,100,100,100,100,100}\
+{12 b(8) Keyboard v=100,100,100,100,100,100,100,100}\
+{1 cb `Keyboard=Display`}\
+{2 b FactorOn v=5}\
+{3 b FactorOff v=30}\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

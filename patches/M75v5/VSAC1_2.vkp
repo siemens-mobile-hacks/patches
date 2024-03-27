@@ -1,0 +1,26 @@
+;M75v5
+;Вибра в момент начала разговора
+;Vibrate shortly after connection
+;(c) SiNgle
+;(r) 1nvisible
+;(p) AsteriX & Gurza
+;Version: 1.2
+;PatchID: 537
+;Details: https://patches.kibab.com/patches/details.php5?id=537
+/*
+Режим включается одновременно с галкой в Меню-2-5-5-4 или 2-5-4-3 (Авт.Индикац.)
+При входящих не вибрирует
+*/
+02C9F84: D3F13AEA0028 0028B7F604E9
+#pragma enable old_equal_ff
+0181190: 00402DE9FF3F2DE90FE0A0E144F09FE5
+01811A0: 000050E30900001A0100A0E30FE0A0E1
+01811B0: 34F09FE5020050E30400001A2F00A0E3
+01811C0: 0210A0E30120A0E30FE0A0E11CF09FE5
+01811D0: 0FE0A0E118F09FE5000050E3FF3FBDE8
+01811E0: 0040BDE80CF09FE5732155A0B392AAA0
+01811F0: 8C412BA0D31B50A08B9F2CA0
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

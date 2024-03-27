@@ -1,0 +1,14 @@
+;A60v27
+;Стрелка влево - калькулятор
+;Arrow to the left - a calculator
+;(c) .
+;(p) Rasp
+;Version: 
+;PatchID: 4255
+;Details: https://patches.kibab.com/patches/details.php5?id=4255
+/*
+
+*/
+6CADD3: 8C262E 85EEBC
+;------------------------- end -------------------------
+

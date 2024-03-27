@@ -1,0 +1,15 @@
+;SK65v50
+;Активизация (ICQ AIM) встроенного WV-клиента
+;Enable Built-In WV Client (ICQ AIM)
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 254
+;Details: https://patches.kibab.com/patches/details.php5?id=254
+/*
+Активируется (ICQ AIM) встроенного WV-клиента
+Появляется в Меню - 5-2 (Menu - 5-2)
+*/
+057CEB8: 66 78
+;------------------------- end -------------------------
+

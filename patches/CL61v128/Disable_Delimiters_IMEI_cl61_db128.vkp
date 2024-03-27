@@ -1,0 +1,15 @@
+;CL61v128
+;Убрать черточки-разделители при показе IMEI
+;Disable delimiters while showing IMEI
+;(c) 1nvisible
+;(r) Bennie
+;(p) Marie
+;Version: 
+;PatchID: 10400
+;Details: https://patches.kibab.com/patches/details.php5?id=10400
+/*
+
+*/
+0BA2E98: "00-0000-00-00000" "0000000000000000"
+;------------------------- end -------------------------
+

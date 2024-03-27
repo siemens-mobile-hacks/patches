@@ -1,0 +1,50 @@
+;SL45iv56
+;BSA. Черный экран для сохранения заряда батареи
+;BSA. Blank Screen for Battery Saving
+;(c) RizaPN
+;Version: 2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=3433
+;PatchID: 1963
+;Details: https://patches.kibab.com/patches/details.php5?id=1963
+/*
+Экран будет "чистым" при блокировании клавиатуры или если 
+клавиши разблокируются длинным нажатием "#".
+Экран будет обычным когда: клавиатура разблокирована, при
+входящем звонке, при длинном нажатии "Красной кнопки" (нужен patchID 1678) и при сигнале напоминания.
+
+Патч вкл./выкл. через меню Установки -> Приложение.
+
+
+English: Screen will be blanked when auto-keylock is executed,
+or keypad is unlocked by long-pressing # button.
+Screen will be normal when : keypad is unlocked, incoming call,
+RED button long pressed (need patch "No Temporary Light
+After Key Unlocked" - patchID 1678), and appointment alarm.
+
+Patch could be turn ON/OFF through the new Setup -> Application menu.
+
+
+Release: November 5, 2003
+Modified: November 8, 2003
+*/
+0x3E1710: E6003600 DAC7EADC
+
+0x27DCC0: FFFFFFFFFFFFFFFF BB0A2D079AF405B0
+0x27DCC8: FFFFFFFFFFFFFFFF F7F80039E00CDAC0
+0x27DCD0: FFFFFFFFFFFFFFFF CACAFAA38040D740
+0x27DCD8: FFFFFFFFFFFFFFFF 0E00F3F9423ADAC0
+0x27DCE0: FFFFFFFFFFFFFFFF BCCBE60035004980
+0x27DCE8: FFFFFFFFFFFFFFFF CB00BBF53D069AF4
+0x27DCF0: FFFFFFFFFFFFFFFF 04B0C2FC0039DAC0
+0x27DCF8: FFFFFFFFFFFFFFFF CACAE6003600DB00
+
+;if you want to activate this blank screen patch when
+;the keypad is locked using # button long-press, enter this:
+
+;0x3AD2A8: DAA38040 DAC7C0DC
+
+;if you also want to use it when the keypad is autolocked, add this:
+
+;0x3B02AA: DAA38040 DAC7C0DC
+;------------------------- end -------------------------
+

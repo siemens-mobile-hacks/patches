@@ -1,0 +1,17 @@
+;SL45iv56
+;Заменить "Help" в главном меню на NetMonitor
+;Change "Help" in main menu to "Net Monitor"
+;(c) C@MPER
+;Version: 
+;PatchID: 1745
+;Details: https://patches.kibab.com/patches/details.php5?id=1745
+/*
+Release: May 4, 2004
+
+Патч №141 с http://patch.oslik.ru/SL45_RU
+*/
+18F54A: DEFFEB F2A3DA 
+18F6BE: AC02 A306 
+18F6BE: AB02 A306
+;------------------------- end -------------------------
+

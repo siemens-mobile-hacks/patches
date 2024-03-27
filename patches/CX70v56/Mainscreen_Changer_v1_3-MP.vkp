@@ -1,0 +1,49 @@
+;CX70v56
+;Управление Гл. Экраном
+;Mainscreen Changer
+;(c) BuG
+;(r) KreN, SiNgle, KiRiK, [crazy]misha
+;(p) Lost
+;Version: 1.3-MP
+;PatchID: 7749
+;Details: https://patches.kibab.com/patches/details.php5?id=7749
+/*
+Патч заменяет * Позиционирование главного экрана v2 * , * Изменение размеров шрифта на главном экране * , * Bellevue *
+совместим с * Расширенная панель иконок *
+Версия 1.3: адаптировано под swi, исправлен canvas
+
+English:
+Replaces the patches * Mainscreen Positioning * , * change font size on mainscreen * , * Bellevue *
+compatible to * Extended IconBar *
+Version 1.3: swi adaptation, fixed canvas
+*/
+; net icons
+17156AC: 00F0E9FA C046C046 ; clear old canvas call
+17156B4: 321C0221032000F0F5FA 0048804701A0FCA0C046
+
+; iconbar
+17159C4: 00F05DF9 C046C046 ; clear old canvas call
+17159EA: 00040014039021300704 C0460048804785A0FCA0
+1715A08: 825B0221381C00F04BF9 00498847E3A0FCA0C046
+
+; accu icons
+1715AB0: 00F0E7F8 C046C046 ; clear old canvas call
+1715AB8: 221C0221632000F0F3F8 004880470BA0FCA0C046
+
+; date and time with removed softkeys
+171C8D8: 2869A1220106090E201C 004EB04705A1FCA0C046
+
+; standard fonts
+171CF12: 15F01AEA0D4C022803D1 C046004FB84723A1FCA0
+
+; fonts with provider logo
+171CF74: 022068612E616B48 004FB8474DA1FCA0
+
+;Appointment
+1722164: 595E0139321C10F06EE9 004A90475BA0FCA0C046
+
+;Alarm
+1722178: 3A1C0139281C10F064E9 004A904765A0FCA0C046
+
+;------------------------- end -------------------------
+

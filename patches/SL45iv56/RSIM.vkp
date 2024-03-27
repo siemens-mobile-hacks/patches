@@ -1,0 +1,26 @@
+;SL45iv56
+;RSIM. Правый софт для создания новой записи на SIM
+;RSIM. Right Soft Key for SIM-Location new Entry
+;(c) RizaPN
+;Version: 
+;PatchID: 1936
+;Details: https://patches.kibab.com/patches/details.php5?id=1936
+/*
+Изменяет функцию правой софт-клавиши на <Новая запись> в SIM-карте.
+
+English: It will permanently change the Right Soft Key function. 
+If you want to save any number to Addressbook, just use <New Entry> function 
+inside the Addressbook (such as : DOWN Arrow key)
+
+
+Release: March 26, 2003
+*/
+0x3AD694: FE FC
+
+0x3AD7F7: 18B880EA0018DA 14EA001ADAD740
+0x3AD7FE: DAD7902F48402D 0C00F78E521A0D
+
+0x346F78: DC4DD4FC980246FF D7400C00F78F521A
+0x346F80: 1E00 0D01
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;EL71v45
+;Убрать подтверждение о вкл/выкл GPRS в меню
+;Disable GPRS on/off question in menu
+;(c) 1nvisible
+;(r) sempai
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8645
+;Details: https://patches.kibab.com/patches/details.php5?id=8645
+/*
+
+*/
+092CFE6: 2BF06DFC 9047C046
+;------------------------- end -------------------------
+

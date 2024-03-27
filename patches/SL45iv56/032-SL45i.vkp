@@ -1,0 +1,16 @@
+;SL45iv56
+;Изменение "Быстрой перемотки вперед" в MP3 плеере на "Выход"
+;Modify MP3 Player Fast Forward to become Quit Function
+;(c) RizaPN
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1595
+;PatchID: 1594
+;Details: https://patches.kibab.com/patches/details.php5?id=1594
+/*
+Выход из MP3 плеера в список композиций долгим нажатием "Правого софта", "Джойстик вправо", кнопки "Воспроизведения" (с левой стороны телефона) и кнопки PTT (на наушниках).
+
+Патч №032 с http://patch.oslik.ru/SL45_RU
+*/
+3BA2CC: F0C8F0D9DADB DADAB0CF0D1F 
+;------------------------- end -------------------------
+

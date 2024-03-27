@@ -1,0 +1,16 @@
+;S75v47
+;Исправить отображение числа символов в заметках
+;Fix the number of symbols display in notes
+;(c) Evgr
+;(p) Vitll
+;Version: 
+;PatchID: 10065
+;Details: https://patches.kibab.com/patches/details.php5?id=10065
+/*
+
+*/
+0BFF870: 04 02
+069A79C: BD BE
+
+;------------------------- end -------------------------
+

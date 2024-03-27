@@ -1,0 +1,17 @@
+;M55v10
+;Во время разговора стрелка влево -> Диктофон
+;Left arrow during talk -> sound record
+;(c) SiNgle
+;Version: 
+;PatchID: 1549
+;Details: https://patches.kibab.com/patches/details.php5?id=1549
+/*
+
+*/
+0D0B2C: 26 27
+0D0B30: DE0B 080C
+0D0C09: C4928F 2C5215
+0D0C0F: 20 00
+
+;------------------------- end -------------------------
+

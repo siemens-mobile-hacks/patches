@@ -1,0 +1,13 @@
+;CF75v23
+;Изменение прогрессбара при проигрывании музыки
+;Change progressbar in music play
+;(c) SiNgle
+;Version: 
+;PatchID: 4852
+;Details: https://patches.kibab.com/patches/details.php5?id=4852
+/*
+
+*/
+04B7E20: 100056006F 0500700080
+;------------------------- end -------------------------
+

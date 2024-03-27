@@ -1,0 +1,20 @@
+;M75v25
+;Фотографирование любой цифровой клавишей
+;To make foto with any digital key
+;(c) SiNgle
+;(r) KreN
+;(p) VoVkA
+;Version: 2
+;PatchID: 5568
+;Details: https://patches.kibab.com/patches/details.php5?id=5568
+/*
+
+*/
+034D770: 010050E3 E27131FA
+034D77C: 4E01000A 0000A0E1
+
+#pragma enable old_equal_ff
+0FA9F00: 162801D00128704700480047,0xA034DCBC
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

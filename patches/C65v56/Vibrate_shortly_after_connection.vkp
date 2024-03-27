@@ -1,0 +1,24 @@
+;C65v56
+;Вибра в момент начала разговора
+;Vibrate shortly after connection
+;(c) SiNgle
+;(p) TiCK
+;Version: 1.2
+;PatchID: 4346
+;Details: https://patches.kibab.com/patches/details.php5?id=4346
+/*
+!Режим включается одновременно с галкой в Меню-2-5-5-4 или 2-5-4-3 (Авт.Индикац.)
+!При входящих не вибрирует
+*/
+16EDCE8: 17F000EF0028 0028,23F00AE9
+#pragma enable old_equal_ff
+1710F00: 00402DE9FF3F2DE90FE0A0E144F09FE5
+1710F10: 000050E30900001A0100A0E30FE0A0E1
+1710F20: 34F09FE5020050E30400001A2F00A0E3
+1710F30: 0210A0E30120A0E30FE0A0E11CF09FE5
+1710F40: 0FE0A0E118F09FE5000050E3FF3FBDE8
+1710F50: 0040BDE80CF09FE5,0xA0B866B3,0xA1244A8B
+1710F60: 0xA0954570,0xA0B64BA3,0xA16EDCEF,FF
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

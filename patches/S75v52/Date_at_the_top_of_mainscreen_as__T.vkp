@@ -1,0 +1,14 @@
+;S75v52
+;Дата вверху на главном экране в виде "Чт, 20 Апр"
+;Date at the top of mainscreen as "Thu, 20 Apr"
+;(c) avkiev
+;(p) den11111
+;Version: 11-MP
+;PatchID: 8325
+;Details: https://patches.kibab.com/patches/details.php5?id=8325
+/*
+
+*/
+0902714: FEF7A5FC231C2A1C 004B9847,0xA0063A01
+;------------------------- end -------------------------
+

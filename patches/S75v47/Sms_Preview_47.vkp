@@ -1,0 +1,13 @@
+;S75v47
+;Предпросмотр Смс
+;Sms Preview
+;(c) Zl0d
+;Version: 
+;PatchID: 6000
+;Details: https://patches.kibab.com/patches/details.php5?id=6000
+/*
+
+*/
+01328745: 66616C736527 747275652720
+;------------------------- end -------------------------
+

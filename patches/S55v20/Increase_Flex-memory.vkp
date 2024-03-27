@@ -1,0 +1,207 @@
+;S55v20
+;Увеличение флекс-памяти до 1,71Mb
+;Increase Flex-memory up to 1.71Mb
+;(c) avkiev
+;Version: 3 Final
+;PatchID: 5066
+;Details: https://patches.kibab.com/patches/details.php5?id=5066
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s55v20&f=Increase_Flex-memory.rar
+
+/*
+1. Бекап
+  1.1. Используем V_Klay 2.6 или новее - http://www.vi-soft.com.ua/
+  1.2. Сливаем свой фф.
+  1.3. Сливаем все файлы с помощью DES.
+2. Отмена старых патчей
+  2.1. Если ставились предыдущие версии патча - отмените их.
+  2.2. Если ставился патч "Перенос Т9" - отмените его.
+3. Перенос Т9
+  3.1. Запускаем V_Klay, переходим на вкладку "Флешер".
+  3.2. Открываем свой фф, сохраненный ДО увеличения флекс-памяти.
+  3.3. Выставляем: Адрес=3C0000, Размер=040000, ИспСоСмещения=480000.
+  3.4. Нажимаем "Запись памяти", нажимаем "Да".
+4. Урезание и перенос ленгпака
+  4.1. Урезаем ленгпак до 1-3 языков (размер ленгпака должен быть не больше, чем 192K).
+       Или просто берем приложенный архив
+  4.2. Открываем бинарный файл ленгпака в V_Klay-Флешер.
+  4.3. Выставляем: Адрес=0D0000, размер не меняем, ИспСоСмещения=0.
+  4.4. Нажимаем "Запись памяти", нажимаем "Да".
+5. Перенос EELITE
+  5.1. Открываем свой фф (пункт 1.2) с помощью WinHex.
+  5.2. Сохраняем область памяти BE0000-BEFFFF как новый файл. Его размер должен быть 65536 байт.
+  5.3. Открываем этот файл с помощью WinHex.
+  5.4. Нажимаем Ctrl-Alt-H (Замена HEX-значений).
+  5.5. Включаем "Замена всех вхождений", "Использовать маску", "3F", "Везде".
+  5.6. Ставим Искать=F03F3F3F3F3FFE3F3F3F3FF0, ЗаменитьНа=F03F3F3F3F3FF63F3F3F3FF0. Нажимаем Ок. Нажимаем Ок.
+  5.7. Нажимаем Ctrl-Alt-H (Замена HEX-значений).
+  5.8. Ставим Искать=FC3F3F3F3F3FFE3F3F3F3FFC, ЗаменитьНа=FC3F3F3F3F3FF63F3F3F3FFC. Нажимаем Ок. Нажимаем Ок.
+  5.9. Сохраняем полученный файл под новым именем.
+  5.10.Открываем этот файл в V_Klay-Флешер.
+  5.11. Выставляем: Адрес=B60000, размер не меняем, ИспСоСмещения=0.
+  5.12. Нажимаем "Запись памяти", нажимаем "Да".
+6. Применяем патч ниже.
+7. Включаем телефон, ждем пока отформатируется память.
+8. Заливаем на телефон все свои файлы, сохраненные в пункте 1.3.
+9. Наслаждаемся диском в 1,71М.
+ЗЫ. Это финальная версия, больше я не вижу возможности увеличить память.
+ЗЗЫ. Если что-то пошло не так - восстанавливаемся из бекапа из пункт
+*/
+/*
+1. Backup
+  1.1. Use V_Klay 2.6 - http://www.vi-soft.com.ua/index_e.htm
+  1.2. Download your fubu.
+  1.3. Download all files by help DES.
+2. Undo old patches
+  2.1. Undo previous versions of this parch.
+  2.2. Undo patch "Moving T9".
+3. Moving T9
+  3.1. Run V_Klay, choose "Flasher".
+  3.2. Open your fubu, which was saved BEFORE increasing flex-memory.
+  3.3. Set: FromAddress=3C0000, Size=040000, UseFromOffset=480000.
+  3.4. Press "Write Memory", press "Yes".
+4. Cutting and transfer langpack.
+  4.1. Cut langpack to 1 or 2 or 3 languages (it's size should be not more than 192K).
+       Or use this archive http://avkiev.siemens-club.ru/Siemens/Patches/IncFlex/S55lg91-EnRu.rar
+  4.2. Open binary langpack-file in V_Klay-Flasher.
+  4.3. Set: Address=0D0000, size don't change, UseFromOffset=0.
+  4.4. Press "Write Memory", press "Yes".
+5. Transfer EELITE
+  5.1. Open your fubu (point 1.2) by help WinHex.
+  5.2. Save area BE0000-BEFFFF as new file. Its size must be 65536 bytes.
+  5.3. Open this file by help WinHex.
+  5.4. Press Ctrl-Alt-H (Replace Hex Values).
+  5.5. Check on "Replace all", "Use as wildcard", "3F", "All".
+  5.6. Set SearchFor=F03F3F3F3F3FFE3F3F3F3FF0, ReplaceWith=F03F3F3F3F3FF63F3F3F3FF0. Press Ok. Press Ok.
+  5.7. Press Ctrl-Alt-H (Replace Hex Values).
+  5.8. Set SearchFor=FC3F3F3F3F3FFE3F3F3F3FFC, ReplaceWith=FC3F3F3F3F3FF63F3F3F3FFC. Press Ok. Press Ok.
+  5.9. Save this file with new name.
+  5.10.Open this file in V_Klay-Flasher.
+  5.11. Set: Address=B60000, size don't change, UseFromOffset=0.
+  5.12. Press "Write Memory", press "Yes".
+6. Apply patch below.
+7. Turn on the phone, wait while memory will formatted.
+8. Upload to the phone all files, which were downloaded in point 1.3.
+9. Enjoy disk 1.71М.
+PS. It is final release, I don't see any chances increase flex-memory more.
+PPS. If something wrong - just restore your phone from backup (point 1.2).
+PPPS. New addresses: langpack: 0D0000-0FFFFF, T9: 3C0000-3FFFFF, EEPROM: B60000-B6FFFF and BF0000-BFFFFF.
+*/
+1AFEFA: 1000000001009A3E6B01 0F000000020000308601
+1B3E74: 03 01
+
+#pragma enable old_equal_ff
+21B000: 0200,60,308601
+21B006: 0200,6C,308601
+21B00C: 0200,78,308601
+21B012: 0200,84,308601
+21B018: 0200,90,308601
+21B01E: 0200,9C,308601
+21B024: 0200,A8,308601
+21B02A: 0200,B4,308601
+21B030: 0200,C0,308601
+21B036: 0200,CC,308601
+21B03C: 0200,D8,308601
+21B042: 0200,E4,308601
+21B048: 0200,F0,308601
+21B04E: 0200,FC,308601
+21B054: 0200,08,318601
+
+21B060: 0000,AC,004000
+21B066: 0000,AD,004000
+21B06C: 0000,AE,004000
+21B072: 0000,AF,004000
+21B078: 0000,B0,004000
+21B07E: 0000,B1,004000
+21B084: 0000,B2,004000
+21B08A: 0000,B3,004000
+21B090: 0000,B4,004000
+21B096: 0000,B5,004000
+21B09C: 0000,B6,004000
+21B0A2: 0000,B7,004000
+21B0A8: 0000,B8,004000
+21B0AE: 0000,B9,004000
+21B0B4: 0000,BA,004000
+21B0BA: 0000,BB,004000
+21B0C0: 0000,88,004000
+21B0C6: 0000,89,004000
+21B0CC: 0000,8A,004000
+21B0D2: 0000,8B,004000
+21B0D8: 0000,F0,004000
+21B0DE: 0000,F1,004000
+21B0E4: 0000,F2,004000
+21B0EA: 0000,F3,004000
+21B0F0: 0000,F4,004000
+21B0F6: 0000,F5,004000
+21B0FC: 0000,FD,004000
+21B102: 0000,FE,004000
+21B108: 0000,BD,004000
+21B10E: 0000,BE,004000
+#pragma disable old_equal_ff
+
+#pragma disable warn_no_old_on_apply
+6C0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+6D0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+6E0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+6F0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+700080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+710080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+720080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+730080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+740080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+750080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+760080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+770080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+780080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+790080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+7A0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+7B0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+480080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+490080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+4A0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+4B0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+B00080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+B10080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+B20080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+B30080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+B40080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+B50080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+BD0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+BE0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+7D0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+7E0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+#pragma enable warn_no_old_on_apply
+
+
+5E00A0: 8800 7C00 ; Transfer T9 from 480000 to 3C0000
+5E001C: 2002 F001
+5E002A: 2002 F001
+5E004A: 2002 F001
+5E005A: 2002 F001
+5E034E: 2002 F001
+5E035C: 2002 F001
+
+
+27F5DA: C003 3401 ; Transfer Langpack from B00000 to 0D0000
+27F5F2: C003 3401
+27F90E: C003 3401
+27F91E: C003 3401
+27F92E: C003 3401
+27F97C: C003 3401
+27F984: C003 3401
+27F9B6: C003 3401
+27F9D2: C003 3401
+27F9DA: C003 3401
+27F9EC: C003 3401
+27F9F0: C003 3401
+27FA26: C003 3401
+27FA4C: C003 3401
+27FA54: C003 3401
+27FAAC: C003 3401
+27FC26: C003 3401
+27FC34: C003 3401
+27FC82: C003 3401
+
+
+1B3F28: FE F6 ; Transfer EELITE from BE0000 to B60000
+;------------------------- end -------------------------
+

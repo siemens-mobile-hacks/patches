@@ -1,0 +1,21 @@
+;C75v22
+;Почасовой контроль яркости
+;Screen Illumination Auto Control
+;(c) starfriend
+;(r) (i) ~Jhellico
+;(p) SuDex
+;Version: 2.1-MP
+;PatchID: 7015
+;Details: https://patches.kibab.com/patches/details.php5?id=7015
+/*
+С помощью этого патча вы сможете указать время изменения подсветки.
+!) MP (+ Library functions f000, v15)
+(!) API
+Яркость подсветки дисплея меняется в зависимости от времени (на каждый час можно установить свое значение)
+English:
+Brightness of illumination of the display depending on time (at each o'clock it is possible to establish the value)
+*/
+0803F0C: 04980E1C141CC707101C 004FB847,0xA10D4C01,C046
++110000
+;------------------------- end -------------------------
+

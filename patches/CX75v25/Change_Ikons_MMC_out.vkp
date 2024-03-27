@@ -1,0 +1,42 @@
+;CX75v25
+;Замена значка ММС
+;Change Ikons MMC
+;(c) DM101
+;Version: 
+;PatchID: 6255
+;Details: https://patches.kibab.com/patches/details.php5?id=6255
+/*
+Заменяет маленький значёк флеш карты, на VCD. Чёрных точек в видео быть не должно, если же есть то VKPResolver.
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 08.11.2006  -  Time: 19:58:19                             ###
+; ### Patch for: SIEMENS CX75 v25                                     ###
+; #######################################################################
+
+
+; ##### Picture 509 #####
+010C100C: 0E0E8500F0F715A1 0E0E8500CF57FAA0
+
+00FA57CF: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02C0FB6D1451926D07C0FA4D55B93879
+00FA57DF: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DB026D06C0F82953726D91AE8E6D06C0
+00FA57EF: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FF290272FE696D0272026DEF292C496D
+00FA57FF: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C02D369D5479DB92499094187503C0F3
+00FA580F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8DB51855C06D2D3A795096D69202C0F3
+00FA581F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 4D082849C0498F6E496E8E6EC0026DF8
+00FA582F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 14758E6D2D3A76710296E2924D55BD58
+00FA583F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 7EFF714D95B9189AD6C02953767196B2
+00FA584F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AE6D8D4D104D92C0490272FE496D0272
+00FA585F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FF6D06C0F84D369D5479DA926D07C0FA
+00FA586F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8DB53855D66D09C0FC6D0C2C6908C0
+
+
+
+;------------------------- end -------------------------
+

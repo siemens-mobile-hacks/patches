@@ -1,0 +1,30 @@
+;X65v100
+;SNES
+;SNES
+;(c) cbn
+;Version: 0.2
+;PatchID: 7179
+;Details: https://patches.kibab.com/patches/details.php5?id=7179
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=SNES_02.zip
+
+/*
+SNES эмулятор :)
+Эмулятор популярной приставки.
+ПЕРЕД ЗАПУСКОМ ПЕРЕЗАГРУЗИТЬСЯ!!!
+
+Распаковать в 0:\ZBin\SNES
+В extension.cfg добавить строку:
+smc:0:\ZBin\SNES\SNES.elf
+
+*/
+SNES эмулятор :)
+Эмулятор популярной приставки.
+ПЕРЕД ЗАПУСКОМ ПЕРЕЗАГРУЗИТЬСЯ!!!
+
+Распаковать в 0:\ZBin\SNES
+В extension.cfg добавить строку:
+smc:0:\ZBin\SNES\SNES.elf
+
+Скачайте приложенный файл
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;X75v100
+;Запрашивать отчет о доставке SMS
+;Request SMS status report
+;(c) Evgr
+;Version: 
+;PatchID: 10143
+;Details: https://patches.kibab.com/patches/details.php5?id=10143
+/*
+
+*/
+#pragma enable old_equal_ff
+0072520: 20335974FFB50748C4DF02D0061C7178
+0072530: 1974FFBD
+
+0072540: 0xB1C2D3E4,0x00300311,0000000000000000,"\
+{p=`SMS status report` id=300311 cp=`Evgr` ver=1}","\
+{01 cb `Report ON` v=1}","\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

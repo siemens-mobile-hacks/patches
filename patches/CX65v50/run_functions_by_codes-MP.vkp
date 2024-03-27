@@ -1,0 +1,13 @@
+;CX65v50
+;Запуск функций с помощью *# кодов
+;Running functions with *# codes
+;(c) empeka
+;Version: 
+;PatchID: 1196
+;Details: https://patches.kibab.com/patches/details.php5?id=1196
+/*
+Врезка к патчу 1194
+*/
+163A078: 0655021951700522 004B9847,0xA0FC3501 ; CX65v50
+;------------------------- end -------------------------
+

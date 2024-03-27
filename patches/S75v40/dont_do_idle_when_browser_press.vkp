@@ -1,0 +1,14 @@
+;S75v40
+;Не выходить в режим ожидания при нажатии кнопки браузера
+;Don't do idle when pressing browser button
+;(c) (C)Rst7, ThE TrIFoN
+;(p) RainMaker
+;Version: 
+;PatchID: 4018
+;Details: https://patches.kibab.com/patches/details.php5?id=4018
+/*
+Наконец-то нажатие кнопки браузера запускает его, не убивая запущенные приложения!
+*/
+03449AE: A8F0E4E8 C046C046
+;------------------------- end -------------------------
+

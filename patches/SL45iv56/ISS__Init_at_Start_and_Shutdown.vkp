@@ -1,0 +1,42 @@
+;SL45iv56
+;ISS. Инициализация при старте и выключении
+;ISS. Init at Start & Shutdown
+;(c) Sinclair, Seklth
+;Version: 
+;PatchID: 2114
+;Details: https://patches.kibab.com/patches/details.php5?id=2114
+/*
+
+*/
+;Init when start 
+;for UNI2: 
+0x4EFFC0: FFFFFFFF CC00CC00 
+;for SIM_EMU: 
+0x4EFFC4: FFFFFFFF CC00CC00 
+;free 
+0x4EFFC8: FFFFFFFF CC00CC00 
+0x4EFFCC: FFFFFFFF CC00CC00 
+0x4EFFD0: FFFFFFFF CC00CC00 
+0x4EFFD4: FFFFFFFF CC00CC00 
+0x4EFFD8: FFFFFFFF CC00CC00 
+;return: 
+0x4EFFDC: FFFFFFFF FAC0C47F 
+
+;When shutdown 
+;for UNI2: 
+0x4EFFE0: FFFFFFFF CC00CC00 
+;for SIM_EMU: 
+0x4EFFE4: FFFFFFFF CC00CC00 
+;free 
+0x4EFFE8: FFFFFFFF CC00CC00 
+0x4EFFEC: FFFFFFFF CC00CC00 
+0x4EFFF0: FFFFFFFF CC00CC00 
+0x4EFFF4: FFFFFFFF CC00CC00 
+0x4EFFF8: FFFFFFFF CC00CC00 
+;return: 
+0x4EFFFC: FFFFFFFF FAE52C25 
+
+0x2304B2: DAC0C47F DAEEC0FF 
+0x44F156: DAE52C25 DAEEE0FF
+;------------------------- end -------------------------
+

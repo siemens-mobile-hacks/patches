@@ -1,0 +1,14 @@
+;CX70v56
+;Открыть заблокированные блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;(p) Smelter
+;Version: 
+;PatchID: 618
+;Details: https://patches.kibab.com/patches/details.php5?id=618
+/*
+Становятся доступны 6 скрытых блока
+*/
+118CA18: 00 01
+;------------------------- end -------------------------
+

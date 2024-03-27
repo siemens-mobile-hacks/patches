@@ -1,0 +1,22 @@
+;CX75v13
+;Увеличить скорости камеры
+;Increase Camera Speed
+;(c) SiNgle
+;(p) BrOoM
+;Version: 
+;PatchID: 2992
+;Details: https://patches.kibab.com/patches/details.php5?id=2992
+/*
+
+*/
+; Siemens CX75 SW13
+; Увеличить скорость камеры (выключает Nightmode)
+; Turnoff nightmode 
+; © SiNgle, § BrOoM
+0D11723: 40 00
+; Настройка яркости камеры 
+; Camera brightness tuning 
+; © SiNgle, § BrOoM
+0D11731: 80 C0 ;можно выставить и больше до FF (can be changed up to FF)
+;------------------------- end -------------------------
+

@@ -1,0 +1,57 @@
+;S75v52
+;Инвертировать цифровые часы
+;Invert digiclock ScreenSaver
+;(c) SiNgle
+;(p) Diman3452
+;Version: 
+;PatchID: 8551
+;Details: https://patches.kibab.com/patches/details.php5?id=8551
+/*
+
+*/
++3484
+0343516: 00 01 ;1h back
+034351E: 01 00 ;1h font
+0343564: 00 01 ;2h back
+034356C: 01 00 ;2h font
+03435AA: 00 01 ;":" back
+03435B2: 01 00 ;":" font
+03435E6: 00 01 ;1m back
+03435EE: 01 00 ;1m font
+0343632: 00 01 ;2m back
+034363A: 01 00 ;2m font
+03436B2: 00 01
+03436BA: 01 00
++0
+
++C10
+0439E68: 01 00 ;ProvName font
+0439E6C: 00 01 ;background
+0439EBC: 01 00 ;ProvFon with Icon
+0439EC0: 00 01 ;background with Icon
++0
+
+;color table (0..17h) R G B
+;00 - white
+;01 - black
+;02 - red (base)
+;03 - navy (base)
+;04 - green (base)
+;05 - magenta (base)
+;06 - aqua (base)
+;07 - yellow (base)
+;08 - red (light)
+;09 - navy (light)
+;0A - green (light)
+;0B - magenta (light)
+;0C - aqua (light)
+;0D - yellow (light)
+;0E - red (dark)
+;0F - navy (dark)
+;10 - green (dark)
+;11 - magenta (dark)
+;12 - aqua (dark)
+;13 - yellow (dark)
+;14-17 - clean
+;------------------------- end -------------------------
+

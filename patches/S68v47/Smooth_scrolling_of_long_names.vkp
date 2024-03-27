@@ -1,0 +1,15 @@
+;S68v47
+;Плавная прокрутка длинных названий иимен
+;Smooth scrolling of long names
+;(c) SiNgle
+;(p) klaud
+;Version: 
+;PatchID: 6575
+;Details: https://patches.kibab.com/patches/details.php5?id=6575
+/*
+
+*/
+0053B314: D00700002C01 120200002A00
+00A14A78: D00700002C01 120200002A00
+;------------------------- end -------------------------
+

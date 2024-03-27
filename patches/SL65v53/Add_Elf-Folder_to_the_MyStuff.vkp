@@ -1,0 +1,15 @@
+;SL65v53
+;Add Elf-Folder to the MyStuff
+;Add Elf-Folder to the MyStuff
+;(c) ZoZoLe
+;(r) Crazy_heead
+;(p) Benlux
+;Version: 
+;PatchID: 6968
+;Details: https://patches.kibab.com/patches/details.php5?id=6968
+/*
+0:\ZBin - > 0:\Text 
+*/
+00A0960E: 30003A005C0054006500780074 30003A005C005A00420069006E 
+;------------------------- end -------------------------
+

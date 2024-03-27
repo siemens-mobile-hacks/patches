@@ -1,0 +1,14 @@
+;CF75v23
+;Отключить «Подождите» при открытии файла
+;Remove «Please wait» when opening a file
+;(c) sempai
+;(p) Виктор89
+;Version: 
+;PatchID: 9937
+;Details: https://patches.kibab.com/patches/details.php5?id=9937
+/*
+
+*/
+035F094: 307B10FA 0000A0E3
+;------------------------- end -------------------------
+

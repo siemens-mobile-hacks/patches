@@ -1,0 +1,20 @@
+;SK65v50
+;Убрать софт-кнопки с главного экрана и опустить дату с часами вниз
+;Remove soft-keys from MainScreen
+;(c) SiNgle
+;(r) (f) ~Jhellico
+;(p) AsteriX
+;Version: 2
+;PatchID: 1418
+;Details: https://patches.kibab.com/patches/details.php5?id=1418
+/*
+Патч убирает софт-кнопки с главного экрана и опускает дату с часами вниз.
+*/
+02C8D1B: D0 E0
+02C8DDA: 04D1 0028
+032E962: 07D1 0028
+02C988A: 0DD1 0028
+02C9890: 0AD1 0028
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;SL75v52
+;Запуск ява-машины при старте 1го мидлета
+;Run java-machine with the start of 1st midlet
+;(c) @ndreS/PRM
+;(r) Miha_r, DronSPB
+;(p) Виктор89
+;Version: 
+;PatchID: 9623
+;Details: https://patches.kibab.com/patches/details.php5?id=9623
+/*
+
+*/
+0A01254: B1B302EB A9B9D9FA
+09F7B2C: 4A6217EB C046C046
+
+#pragma enable old_equal_ff
+006F900: 01B506480478FB2C03D101BC024CA047
+006F910: 00BDFB24047001BD,0xA0AAE120,0xA8000080
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

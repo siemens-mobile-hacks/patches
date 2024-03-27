@@ -1,0 +1,36 @@
+;C75v22
+;Диспатчер главного экрана
+;Mainscreen-dispatcher
+;(c) avkiev
+;(r) tick
+;(p) tick, inquis
+;Version: 
+;PatchID: 5975
+;Details: https://patches.kibab.com/patches/details.php5?id=5975
+/*
+Сам по себе патч рабочий. А бэта потому что не все дисы работают из-за отсутствия каких то функций в библиотеке.
+*/
+2A885C: 261C002D05900490 004FB847,0xA10D3E01
+;------------------------- end -------------------------
+
+;X65v100
+;Mainscreen-dispatcher
+;Mainscreen-dispatcher
+;(c) avkiev
+;(r) KreN
+;Version: 3.1
+;PatchID: 5482
+;Details: http://patches.kibab.com/patches/details.php5?id=5482
++10D0000
+#pragma enable old_equal_ff
+3E00: 9861261C059004907FB5C7DFE4801C30
+3E10: 696901600B48C4DF01D00120C1DFFFBC
+3E20: 0437002D3847C04600B5C7DFE4801C30
+3E30: 006800BD                        
+3E40: 0xB1C2D3E4,0x0000AB11,0000000000000000,\
+"{p=MS-Dispatcher ver=3.1 cp=avkiev id=AB11}",00
+#pragma disable old_equal_ff
++0
+
+;------------------------- end -------------------------
+

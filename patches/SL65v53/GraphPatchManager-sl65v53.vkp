@@ -1,0 +1,15 @@
+;SL65v53
+;Менеджер Графических патчей
+;GraphPatchManager
+;(c) KreN
+;(p) Andrey_ua
+;Version: 3.1
+;PatchID: 3824
+;Details: https://patches.kibab.com/patches/details.php5?id=3824
+/*
+
+*/
+1642884: 1883261C002D0590 004FB847013EFCA0 ;sl65v53
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;S68v47
+;Разгон телефона до 208 МГц
+;Speedup of mobile till 208 MHz
+;(c) SiNgle
+;(p) Shadow_ru
+;Version: 
+;PatchID: 6566
+;Details: https://patches.kibab.com/patches/details.php5?id=6566
+/*
+
+*/
+1FF564: 08402DE9 971147EA 
+
+#pragma enable old_equal_ff 
+13C3BC8: 01002DE914009FE50000D0E5010050E3 
+13C3BD8: 0100BDE808402D1904F09F1504F09FE5 
+13C3BE8: C402080068F51FA0F8F51FA0 
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

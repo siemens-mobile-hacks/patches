@@ -1,0 +1,15 @@
+;EL71v45
+;Автоматическая прокрутка в MediaPlayer
+;Automatic advancing in MediaPlayer
+;(c) funMarkus
+;Version: 
+;PatchID: 8809
+;Details: https://patches.kibab.com/patches/details.php5?id=8809
+/*
+Rus:Используйте центральную кнопку, чтобы продолжать наблюдать/слушание
+Eng:Use central button to continue watching/listening
+*/
+079E990: 3D 1A
+079E994: 3E 1A
+;------------------------- end -------------------------
+

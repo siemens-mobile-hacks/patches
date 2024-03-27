@@ -1,0 +1,16 @@
+;M81v51
+;Не менять профиль при подключении гарнитуры
+;Do not change profile at headset connection
+;(c)  binghelingxi, BingK
+;(p) dimonp25
+;Version: 
+;PatchID: 8505
+;Details: https://patches.kibab.com/patches/details.php5?id=8505
+/*
+
+*/
+;DONOT_CHANGEPROFILE_AT_HEADSET_CONNECTION_HOOK
+033FF08: 01 04
+
+;------------------------- end -------------------------
+

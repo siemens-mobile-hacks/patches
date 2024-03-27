@@ -1,0 +1,17 @@
+;CX75v13
+;Индикатор трафика вместо гпрс лого
+;Traffic indicator instead of GPRS logo
+;(c) Sinclair
+;(r) NForce
+;(p) Cold Zero
+;Version: 1.4
+;PatchID: 6036
+;Details: https://patches.kibab.com/patches/details.php5?id=6036
+/*
+
+*/
+094f83c: 10708DE50210A0E3020044E2 00109FE531FF2FE1,0xA0FC5601
+
+
+;------------------------- end -------------------------
+

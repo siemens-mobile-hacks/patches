@@ -1,0 +1,25 @@
+;X65v100
+;Сброс звонка по достижении определенного времени
+;Drop Call On Certain Time
+;(c) 1nvisible
+;(r) (i) ~Jhellico
+;Version: 1.2
+;PatchID: 2848
+;Details: https://patches.kibab.com/patches/details.php5?id=2848
+/*
+Позволяет обрывать разговор на определенной секунде. Полезно для, у кого есть несколько первых нетарифицируемых секунд ;)
+Перенес на новый адрес, пожалуйста, обновите врезки!
+*/
+#pragma enable old_equal_ff
+0FC4B00: FEB5FBF745FC041C0E48FCF779F810D0
+0FC4B10: 0120FBF741FC022803D0032809D1B078
+0FC4B20: 00E07078012804D17268A24201D1FBF7
+0FC4B30: FBFB601CFEBC0004000C0AF07AEA
+0FC4B40: 0xB1C2D3E4,0x00001E01,0000000000000000,"\
+{patch DropCallOnCertainTime cp=1nvisible id=1E01 ver=1.2}","\
+{1 cb DropOutgoing v=1}","\
+{2 cb DropIncoming}","\
+{4 int Second r=0..1000 v=5}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

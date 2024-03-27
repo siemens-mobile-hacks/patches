@@ -1,0 +1,14 @@
+;SL65v53
+;Отключить logal отладку
+;Disable LOGAL Logging 
+;(c) benj9
+;(p) dimonp25
+;Version: 
+;PatchID: 9166
+;Details: https://patches.kibab.com/patches/details.php5?id=9166
+/*
+### doesn't work anymore
+*/
+0b6ee88: F0B5 7047
+;------------------------- end -------------------------
+

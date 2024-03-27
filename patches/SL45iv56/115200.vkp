@@ -1,0 +1,27 @@
+;SL45iv56
+;Увеличить скорость COM порта до 115200
+;Increase COM port speed up to 115200
+;(c) mamaich
+;Version: 
+;PatchID: 1925
+;Details: https://patches.kibab.com/patches/details.php5?id=1925
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=115200.rar
+
+/*
+Установите патч 115200.vkp 
+Скопируйте файл DESserver.exe в папку C:\Program Files\Common Files\Siemens AG Shared. 
+Установите заново драйвер модема используя файл Драйвер модема Siemens SL45i до 115200.inf. 
+
+
+Release: August 31, 2003
+*/
+;Make 19200 speed to become 115200 (used in Hyperterminal/modem settings and alike) 
+;достаточно закомментить первую часть (терминальную) и service mode проги (например, Siemens EEPROM Tool) будут находить телефон на привычных 19200
+0b7d96: 09 01
+0b7d9a: 79 91
+
+;Make mobile explorer transfer files at 115200 instead of 57600
+0b7dbe: 06 01
+0b7dc2: fe 91
+;------------------------- end -------------------------
+

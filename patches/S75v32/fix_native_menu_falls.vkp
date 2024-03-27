@@ -1,0 +1,14 @@
+;S75v32
+;Исправление ошибок Native Menu
+;Fix Native Menu falls
+;(c) ThE TrIFoN
+;Version: 1
+;PatchID: 4731
+;Details: https://patches.kibab.com/patches/details.php5?id=4731
+/*
+Теперь работают и календарь и браузер.
+*/
+043EB10: 418B37 05555D
+04368D0: C90633 BB7037
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;CX70v50
+;Автодозвон постоянно с заданной паузой
+;AutoRedial forever with selected pause
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 114
+;Details: https://patches.kibab.com/patches/details.php5?id=114
+/*
+Автодозвон постоянно с заданной паузой.
+*/
+0B9FD7C: A068 0020
+0B9FDA5: 30 20
+0C643C0: 05 0A ;пауза (0A=10 секунд)
+;------------------------- end -------------------------
+

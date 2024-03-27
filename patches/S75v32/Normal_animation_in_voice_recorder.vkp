@@ -1,0 +1,13 @@
+;S75v32
+;Нормальная анимация при записи в диктофоне
+;Normal animation in sound recorder
+;(c) SiNgle
+;Version: 
+;PatchID: 3323
+;Details: https://patches.kibab.com/patches/details.php5?id=3323
+/*
+
+*/
+06502E0: FA 64
+;------------------------- end -------------------------
+

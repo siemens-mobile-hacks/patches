@@ -1,0 +1,15 @@
+;CX75v5
+;Замена_звука_при_дозвоне_ошибка_соединения
+;Change_sound_for_call_erorr
+;(c) B-727
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 450
+;Details: https://patches.kibab.com/patches/details.php5?id=450
+/*
+Изменяет звук при ошибке соединения при дозвоне.
+*/
+04CD55E: 1800FAFF0000B6034A0178054A0108074A01FFFFE803F9FF0300 0C00B8073200FFFF3200400C1A00FFFFFFFFFFFFFFFFFFFFFFFF
+;------------------------- end -------------------------
+

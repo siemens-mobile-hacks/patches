@@ -1,0 +1,15 @@
+;EL71v41
+;Отключить Retarget Exit
+;Disable Retarget Exit
+;(c) 1nvisible
+;Version: 
+;PatchID: 6678
+;Details: https://patches.kibab.com/patches/details.php5?id=6678
+/*
+Для тех, у кого вылетает из явы с Retarget Exit'ом.
+English: For those who have Retarget Exit when using java.
+
+*/
+07F91DC: 70402DE9 1EFF2FE1 ; For those who have Retarget Exit when using java
+;------------------------- end -------------------------
+

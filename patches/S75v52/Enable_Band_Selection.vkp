@@ -1,0 +1,14 @@
+;S75v52
+;Разрешить выбор Диапазона
+;Enable Band Selection
+;(c) Bennie
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8344
+;Details: https://patches.kibab.com/patches/details.php5?id=8344
+/*
+
+*/
+041F9CC: 0502 F901
+;------------------------- end -------------------------
+

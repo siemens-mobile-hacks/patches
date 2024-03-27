@@ -1,0 +1,22 @@
+;A50v12
+;Замена названия OPSOS'а с Sim-карты на произвольную надпись
+;Replacement of name OPSOS'a from Sim- map to the arbitrary inscription
+;(c) Delirium
+;Version: 
+;PatchID: 2192
+;Details: https://patches.kibab.com/patches/details.php5?id=2192
+/*
+
+*/
+223686: D23B2900 E03FA503
+;----------------------------------------------------------
+; Формат записи GSM (ISO-8859-1 + Greek), 
+; вписать свой вариант в ASCII-string: 
+; если 00+текст, пишет только то, что впишете;
+; если FF+текст - пишет в первой строке имя из прошивки, а во второй то, что впишете;
+; если FF00, 00FF или FFFF, то пишет только имя из прошивки;
+; если 0000, то ничего не пишет.
+;297FE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00FF657374204F70536F53FFFFFFFFFF ;-> test OpSoS
+
+;------------------------- end -------------------------
+

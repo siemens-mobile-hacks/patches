@@ -1,0 +1,21 @@
+;SL45iv56
+;Использовать 86 мелодий звонка
+;Use total 86 ringtones
+;(c) RizaPN
+;Version: 
+;PatchID: 1933
+;Details: https://patches.kibab.com/patches/details.php5?id=1933
+/*
+
+*/
+0x3C24F6: F6FC0C03E6FD2700 E6FD2700E02EF6FC
+0x3C24FE: F6FD0E03E02E 0C03F6FD0E03
+
+0x3C2528: E05CF6FC0C03F68E E6FC5200E00DE6FE
+0x3C2530: 0E03E04D 51000DE4
+
+0x464786: 29 52
+0x46478A: 48E13D0FE6FCE62B 47FC2900FD0E27FC
+0x464792: E6F1EA02C0C65C36 2900E6FCE62B0D0B
+;------------------------- end -------------------------
+

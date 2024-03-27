@@ -1,0 +1,13 @@
+;S68v52
+;Remove tray icons
+;Remove tray icons
+;(c) Hotter
+;Version: 0.1
+;PatchID: 10381
+;Details: https://patches.kibab.com/patches/details.php5?id=10381
+/*
+Removes tray icons from everywhere except java.
+*/
+0896AD0: A868 0020
+;------------------------- end -------------------------
+

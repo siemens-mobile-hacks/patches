@@ -1,0 +1,35 @@
+;M65v50
+;Убрать некоторые  сообщения
+;Disable some messages
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 25
+;Details: https://patches.kibab.com/patches/details.php5?id=25
+/*
+Название говорит само за себя :)
+Убирает сообщения:
+"Все сигналы вкл" (All ringtones on)
+"Все сигналы выкл" (All ringtones off)
+"Блокировка клавиатуры включена" (Keypad locked)
+Вибра вкл\выкл (Vibra alert on\off)
+IrDA вкл\выкл (IrDA on\off)
+GPRS вкл\выкл (GPRS on\off)
+"Подождите" при запуске камеры ("Please wait" before using camera)
+"Сохранить в:" после съёмки ("Saved to:" after you take a foto)
+"Подождите" в эксплорере ("Please wait" in Card-Explorer)
+"Копировать SIM" при смене SIM ("Copy SIM" at SIM change)
+
+*/
+163C36A: 0021 10BD ;"Все сигналы вкл" (All ringtones on)
+163C38A: 0021 10BD ;"Все сигналы выкл" (All ringtones off)
+163C3E0: 0021 10BD ;"Блокировка клавиатуры включена" (Keypad locked)
+08E218C: 38F0 80BD ;Вибра вкл\выкл (Vibra alert on\off)
+08E221E: 37F0 80BD ;IrDA вкл\выкл (IrDA on\off)
+08E224E: 37F0 80BD ;GPRS вкл\выкл (GPRS on\off)
+08F1750: A72A21FA 000050E3 ;"Подождите" при запуске камеры ("Please wait" before using camera)
+08F2954: F06600EB 0100A0E3 ;"Сохранить в:" после съёмки ("Saved to:" after you take a foto)
+0966840: 4C561FFA 0100A0E3 ;"Подождите" в эксплорере ("Please wait" in Card-Explorer)
+0B22B16: 01 00 ;"Копировать SIM" при смене SIM ("Copy SIM" at SIM change)
+;------------------------- end -------------------------
+

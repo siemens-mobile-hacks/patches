@@ -1,0 +1,16 @@
+;CX75v13
+;Разрешить Разблокировку Клавиатуры Двойным Нажатием #
+;Allow KeyBoard Unlock by Double-Press of #
+;(c) 1nvisible
+;(p) Nikolas535
+;Version: 
+;PatchID: 9450
+;Details: https://patches.kibab.com/patches/details.php5?id=9450
+/*
+Долгое нажатие также работает.
+English:
+Long-Press also works.
+*/
+347DA8: 36D1 C046
+;------------------------- end -------------------------
+

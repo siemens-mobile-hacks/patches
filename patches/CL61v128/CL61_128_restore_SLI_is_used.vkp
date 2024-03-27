@@ -1,0 +1,29 @@
+;CL61v128
+;Восстановить пункт "6: SLI is used as" в Powersaver в MobileCoreSys в меню Разработчика
+;Restore item "6: SLI is used as" in Powersaver in MobileCoreSys in Developer menu
+;(c) Evgr
+;Version: 1
+;PatchID: 10408
+;Details: https://patches.kibab.com/patches/details.php5?id=10408
+/*
+как и на E71v45, не хочет нормально работать в режиме Activity indicator
+*/
+
+03FD744: 0400A0E1 2D0A3DEA
+03FDE88: 040085E5EA301AEB 68083DEA10402DE9
+03FDEE0: B5FFFFEA 1080BDE8
+03FDD44: 090000EA BD083DEA
+
+;009CEFC: 0500002A 050000EA ; cut pickoff bsp_timer
+;009CE48: 0500002A 050000EA ; cut pickoff bsp_timer
+
+#pragma enable old_equal_ff
+1340000: 14108FE20400A0E19DACCEFA0400A0E1
+1340010: A1C3DBFA040080E0CAF5C2EA363A2053
+1340020: 4C49204C65642075736167650A000000
+1340030: 040085E58028DDEB93F7C2EB5EF7C2EA
+1340040: 0400A0E190F7C2EB0600A0E359F7C2EA
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

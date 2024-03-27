@@ -1,0 +1,24 @@
+;M55v91
+;Запуск мидлета при вставке новой SIM-карты
+;Run midlet when insert new SIM
+;(c) SiNgle
+;Version: 
+;PatchID: 1845
+;Details: https://patches.kibab.com/patches/details.php5?id=1845
+/*
+Мидлет SecureSMS, отправляющий IMEI на номер, указанный в файле storage\number для SMS.jar или на несколько номеров разные сообщения,
+записаные внутри последней версии GSM.jar
+Запуск происходит при выборе "Справ. по умолч."
+Программа должна иметь путь и имя: A:\apo\gsm\gsm.jar
+Лучший мидлет: http://trigukvv.at.tut.by/gsm.zip, отправка СМС абсолютно незаметна или www.asterix.com.ru/M55/gsm.rar
+есть скрытая возможность её прервать. Настройка усложнена, подробности внутри.
+Папку можно сделать скрытой, чтобы не было видно в card-explorer'е
+*/
+0D876C: 98809890 FA9FB008
+4EFA7A: DAB89E0C FA6E96FA
+7F0880: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC8E08E6FD7C02E01EFA9122F8413A ;"A:"
+7F0890: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 5C61706F5C67736D5C67736D3E6A6172 ;"\apo\gsm\gsm.jar"
+7F08A0: FFFFFFFFFFFFFF 47534D2E6A6172 ;"gsm.jar"
+7F08B0: FFFFFFFFFFFFFFFFFFFF DA9F800898809890DB00
+;------------------------- end -------------------------
+

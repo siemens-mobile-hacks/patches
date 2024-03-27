@@ -1,0 +1,21 @@
+;C75v22
+;Показ текущего времени при разговоре
+;Show current time during call
+;(c) Bennie
+;(p) ahk
+;Version: 
+;PatchID: 7061
+;Details: https://patches.kibab.com/patches/details.php5?id=7061
+/*
+Должен быть включен пункт "Автоматическая индикация" (Меню-2-5-5-4).
+English:"Auto display" (Мenu-2-5-5-4) have to be turned on.
+*/
+02CD0F0: 04A80B21BFF164EC 68461B21F2F59CFF
+#pragma enable old_equal_ff
+00C0030: 30B5041C0A4B984782B000206946094B
+00C0040: 9847201C084988472F21215401302118
+00C0050: 68460322054DA84702B0201C30BDFFFF
+00C0060: C0C948A0B78D78A075FDE4A0E9E920A0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

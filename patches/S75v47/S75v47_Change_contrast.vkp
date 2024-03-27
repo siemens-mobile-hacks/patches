@@ -1,0 +1,13 @@
+;S75v47
+;Замена контраста
+;Change contrast
+;(c) bertgrins
+;Version: 
+;PatchID: 10386
+;Details: https://patches.kibab.com/patches/details.php5?id=10386
+/*
+
+*/
+3FD8526: 007FFFFF 2828FFFF ; (0000 - контраст ноль, 0707 контраст 127 ,FFFF контраст 255ед)
+;------------------------- end -------------------------
+

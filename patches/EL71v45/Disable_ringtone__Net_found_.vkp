@@ -1,0 +1,14 @@
+;EL71v45
+;Отключить звучок "Сеть найдена"
+;Disable ringtone "Net found" (3*beep)
+;(c) avkiev
+;(p) Estar
+;Version: 
+;PatchID: 7977
+;Details: https://patches.kibab.com/patches/details.php5?id=7977
+/*
+
+*/
+0216758: 5C03 FFFF
+;------------------------- end -------------------------
+

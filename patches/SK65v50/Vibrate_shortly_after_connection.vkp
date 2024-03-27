@@ -1,0 +1,25 @@
+;SK65v50
+;Вибра в момент начала разговора
+; Vibrate shortly after connection
+;(c)  SiNgle
+;(p) 1nvisible
+;Version: 1.2
+;PatchID: 377
+;Details: https://patches.kibab.com/patches/details.php5?id=377
+/*
+!Режим включается одновременно с галкой в Меню-2-5-5-4 или 2-5-4-3 (Авт.Индикац.)
+!При входящих не вибрирует
+
+*/
+02C79DA: 84F174E80028 002888F1C8E9
+#pragma enable old_equal_ff
+044FD70: 00402DE9FF3F2DE90FE0A0E144F09FE5
+044FD80: 000050E30900001A0100A0E30FE0A0E1
+044FD90: 34F09FE5020050E30400001A2F00A0E3
+044FDA0: 0210A0E30120A0E30FE0A0E11CF09FE5
+044FDB0: 0FE0A0E118F09FE5000050E3FF3FBDE8
+044FDC0: 0040BDE80CF09FE5BB8275A06B5899A0
+044FDD0: AC2B2BA0972770A0E5792CA0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

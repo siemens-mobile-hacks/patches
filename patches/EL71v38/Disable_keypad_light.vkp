@@ -1,0 +1,21 @@
+;EL71v38
+;Отключить подсветку клавиатуры
+;Disable keypad light
+;(c) SiNgle
+;(p) -=PaScaL=-
+;Version: 
+;PatchID: 6586
+;Details: https://patches.kibab.com/patches/details.php5?id=6586
+/*
+
+*/
+;El71v38
+;Отключить подсветку клавиатуры
+;Disable keypad light
+;(c) SiNgle
+;(p) -=PaScaL=-
+;Version: 
+8CD901: D5 24
+;------------------------- end -------------------------
+;------------------------- end -------------------------
+

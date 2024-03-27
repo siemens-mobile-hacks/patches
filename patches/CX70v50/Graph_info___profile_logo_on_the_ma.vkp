@@ -1,0 +1,120 @@
+;CX70v50
+;Графическая информация + лого профиля на главном экране
+;Graph info + profile logo on the main screen
+;(c) KonstanT (v5.x), avkiev
+;Version: 5.1
+;PatchID: 3223
+;Details: https://patches.kibab.com/patches/details.php5?id=3223
+/*
+Патч является развитием патча Extra Info on the mainscreen
+Для того, чтобы скрыть какой-либо элемент - установите его y-координату больше 176 (например C0)
+При дефолтовых настройках патча нужно сместить строку "Provider name" вниз, ниже 65й строки, с пом. патча "MainScreen positioning v2.vkp"
+!Для нормального функционирования патча необходимо установить патчu "Graph info + profile logo on the main screen v5.1 Pictures.vkp" и ExtraInfoCanvas_v3_1.vkp
+!For correct work of this patch you must apply patches "Graph info v5.1 Pictures.vkp" and "ExtraInfoCanvas_v3_1.vkp"
+*/
+1711A36: 051C0020 27F0ABFD
+#pragma enable old_equal_ff
+1738800: 00B500F0C5FE00BD
+
+; Номера картинок для каждого профиля. Ставьте, какие захотите.  (Pictures numbers for each profile. Set any, which you want)
+1738808: 0i00884,0i00395,0i00757,0i00752,0i00758,0i00883
+;         1      2        3       4        5       6  
+
+; Параметры вывода графика напряжения:   (Voltage graph parameters:)
+1738814: 02,3A,7E,14                 ; Xstart, Ystart, Width, Height   
+1738818: 0i04200,0i00025,0i00028     ; MaxParamValue (top), delta_on_pixel, &#185;_Point_Picture (-654)
+
+; Параметры вывода графика уровня приёма:   (Receive level graph parameters:)
+173881E: 02,26,7E,14                 ; same, as above
+1738822: 0i00050,0i00002,0i00095
+
+; Параметры вывода графика температуры:   (Temperature graph parameters:)
+1738828: 02,3A,7E,14                  ; same, as above
+173882C: 0i03080,0i00010,0i00096
+
+1738832: C8007E0050003200200014000D00
+1738840: 080005004001C8008200500032001E00
+1738850: 14000D000800050003000A0077028E01
+1738860: FB009E0064003F002800190010000A00
+1738870: 06000400030002000100
+
+1739590: 01B5F4F782EF062801D1002020BD4000
+17395A0: B849085A0027B64E00248E25B0470227
+17395B0: 3F028E3700241225AF4A107AB7498831
+17395C0: 00F0F5F8917900F0DAF80B20B0471A24
+17395D0: 122501200321A64A9047B04988318831
+17395E0: 00F0E5F80A210902AA31401A1E210A06
+17395F0: 1116091802B400F02AF90D20B04702BC
+1739600: 37241225CA0089180520D4F608EC0121
+1739610: 09024031091800F01AF9C420B0475824
+1739620: 122500200921924A90479C4900F0BFF8
+1739630: 011C03200002E830D4F6F0EBB0470C20
+1739640: B047023C6420D4F6EAEBB0470A20D4F6
+1739650: E6EBB0471320B0477224122585480188
+1739660: 00F08DF81420B0478C4A111C0F2300F0
+1739670: A7F805E08949844B00F0D8F800F0CEF8
+1739680: 814B00F0ADF8854A8832111C012300F0
+1739690: 97F806E0814988317C4B00F0C7F800F0
+17396A0: BDF87A4B00F09CF87C4A88328832111C
+17396B0: 0F2300F085F807E0784988318831744B
+17396C0: 00F0B4F800F0AAF8714B00F089F86B49
+17396D0: 087800284ED100241C251620B0470334
+17396E0: 6F4B597800F04BF8023401311720B047
+17396F0: 013448008A0080184A0180184A028018
+1739700: 011C03200002E830D4F688EBB0470C20
+1739710: B047023C6420D4F682EBB0470A20D4F6
+1739720: 7EEBB0471820B04742241C251920B047
+1739730: 03345B4B08B4197800F021F808BC2022
+1739740: D87F9A5C4B000334904204D15149C95A
+1739750: 122B0AD303E05049C95A002B05D000F0
+1739760: 0EF80134C620B04704E000F070F80134
+1739770: C520B047002020BD02B5011C00E002B5
+1739780: 0A20D4F64CEB002805D00A2802D3FFF7
+1739790: F3FF00E0B047081CB04702BD2FB53A18
+17397A0: 21060816291CF5F702E805342FBD0EB5
+17397B0: 04394A880B78121801334A800B700EBD
+17397C0: 00B5043A1078984209D3518800251570
+17397D0: 5580D4F624EB041C01BC023001B400BD
+17397E0: 3FB51C785D781A8904B49A78DB78013A
+17397F0: 087807E03FB41B20B047053C0135013B
+1739800: F9D53FBC2D1801BC01B4B047043C0878
+1739810: 01312D1A013AEBD504BC3FBD07B54878
+1739820: 08700131013DFAD50C7007BD0FB59988
+1739830: D888DA789D78013D013A04B48C4203D5
+1739840: 091A013AFAD5002210BCA41A0FBD00B5
+1739850: 002902D50A20B04749420A20D4F6DEEA
+1739860: FFF78AFF0C20B047023C081CB04700BD
+1739870: 0xA115030C,0xA866ED24,0xA867B2C8,0xA867B2AE               ;GetAccu, RAMCap, RAMNetCH, RAMPhnStat
+1739880: 9D9773A1088873A1148873A11E8873A1
+1739890: 288873A1328873A15A8873A16C3E0000
+17398A0: B0B267A8
+#pragma disable old_equal_ff
+
+;расположение: (placement:) XX,24,YY
+;17395A8: 00,24,8E 00,24,84 ;Profile
+;17395B4: 00,24,12 00,24,96 ;Net
+;17395CE: 1A,24,12 1A,24,96 ;Temperature in oC
+;1739600: 37,24,12 37,24,96 ;Temperature in oF
+;173961E: 58,24,12 58,24,96 ;Voltage
+;1739658: 72,24,12 72,24,96 ;Capacity
+;в режиме разговора: (in a call mode:)
+;17396D6: 00,24,1C 72,24,8E ;TA value, distance to BTS
+;1739728: 42,24,1C 72,24,8E ;PL value, power of BTS
+
+
+;17395EC: 1E 0i015 ;Подстройка температуры в десятых долях градуса (Adjust temperature by 0.1'C): 000 - TBA, 030 - TEN, 015 - (TBA+TEN)/2, -010 - TBA-1
+;1739596: 06 NP ;Profile "No patches"
+
+
+;173966C: 0F 05  ;Изменить прескалер для графика напряжения (скорость прокрутки) (Change prescaler for voltage graph, change graph refresh)
+;173968C: 01 02  ;Изменить прескалер для графика уровня приёма (Change prescaler for net level graph, change graph refresh)
+;17396B0: 0F 05  ;Изменить прескалер для графика температуры (Change prescaler for temperature graph, change graph refresh)
+
+;17397F2: 07E0 C046  ;Рисовать графики на чёрном фоне (заметно тормозит аппарат!) (Draw graph on the black background, slow down the phone!)
+
+;17397F2: 07E03FB41B20B047053C0135013BF9D5 C0463FB41B20B047C046C046C046C046   ;Рисовать графики на пользовательском фоне 
+;                                                                            (картинку фона нужно залить самому с пом. SPC на номер 681) 
+;                                                                            (Draw graph on the custom background, set desired picture #681 with SPC )
+
+;------------------------- end -------------------------
+

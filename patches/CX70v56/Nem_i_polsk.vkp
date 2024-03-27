@@ -1,0 +1,15 @@
+;CX70v56
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;(p) Smelter
+;Version: 
+;PatchID: 626
+;Details: https://patches.kibab.com/patches/details.php5?id=626
+/*
+Патч убирает Немецкий и Польский из меню языков ввода.
+*/
+0D7F7AE: 00 01
+0D7F7E6: 00 01
+;------------------------- end -------------------------
+

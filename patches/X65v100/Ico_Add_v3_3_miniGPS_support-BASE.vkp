@@ -1,0 +1,191 @@
+;X65v100
+;Дополнительная панель иконок с поддержкой miniGPS
+;IconbarAdditions miniGPS support
+;(c) benj9
+;(r) BuG, empeka
+;Version: 3.3
+;PatchID: 2347
+;Details: https://patches.kibab.com/patches/details.php5?id=2347
+/*
+featuring: charging icons, profile icons, vibra on/off, animation, netmode, minigps, universal engines
+
+*/
+#pragma enable old_equal_ff
+0FDB800: 49636F6E6241646433332C62656E6A39
+0FDB810: 58B5E4F799FD9F48E5F7F2F905D00024
+0FDB820: 00F01BF80134052CFADD9A4B00240134
+0FDB830: 042C08DC181918B4E5F7E2F918BCF6D0
+0FDB840: 00F0D8F8F3E7E4F783FD8F4FB8478F4F
+0FDB850: B847D8BC04370028384710B5B178E140
+0FDB860: 0122114001D06400A74410BD14E003E0
+0FDB870: 0CE016E023E035E0E4F7E6FE38780028
+0FDB880: F3D0013840088000083003E0E4F7B8FC
+0FDB890: 8000103000247CE0E4F7BAFBB1690918
+0FDB8A0: 83E0E4F7F1FC002173A275A3545CA042
+0FDB8B0: 02DD01310829F9DB585C342469E0E4F7
+0FDB8C0: A7FB3179C1400120014072D07378F06B
+0FDB8D0: 326CC118914201DD011C002301337370
+0FDB8E0: 382459E0E4F7E4FE3F78002F61D08CB0
+0FDB8F0: FF22F270E4F7ACFE7B88BA88009201A8
+0FDB900: 311C5231E4F7D4FB01A8311C4431E4F7
+0FDB910: BBFB31D4706C018800292DD002300139
+0FDB920: 490000228A4227DC835C02320A2BF9D1
+0FDB930: 835C0A2B20D1341C4834271C0232131C
+0FDB940: 0E338B4200DA191C835C3B7001370232
+0FDB950: 8A42F9DD012000230A22013F39783039
+0FDB960: 41435B185043A742F7DC706CE4F730FC
+0FDB970: 0CB0191C50240FE0F378FF2B04D0706C
+0FDB980: E4F726FC0CB014E00023F370E4F760FE
+0FDB990: B3E7315800290CD0002C06D0325D0134
+0FDB9A0: 335DFF2A06D1FF2B04D10CAA281CE4F7
+0FDB9B0: C3FB10BD83B00291081CE4F7A5FB335D
+0FDB9C0: 1B1801200190013B00930298E4F7A0FB
+0FDB9D0: 013C335D1B18013B111C0134325D0E98
+0FDB9E0: E4F7A2FB315D013C305D029AE4F794FB
+0FDB9F0: 03B0DEE710B5A400B768002FD9D53079
+0FDBA00: 002804D03F68002FD3D570793F187178
+0FDBA10: 012904DB01D03F6802E03F8800E03F78
+0FDBA20: F07900241C2C09D00121014003D0B179
+0FDBA30: 00F00FF809D040080434F3E701210140
+0FDBA40: B7D0002100F005F8B3D02C2000190224
+0FDBA50: 9FE70C221219B258012902D004DC9742
+0FDBA60: 7047974204DD01E0974201DA002200E0
+0FDBA70: 0122012A70470000050608090F1213FF
+0FDBA80: 1C202428242C3024
+0FDBA90: E4D3C2B1001C00000000000000000000
+0FDBAA0: "{patch=IconbarAdditions ver=33 cp=benj9 id=1c00}","\
+\
+{sm ProfileIcons}","\
+{2.0 cb engage v=1}","\
+{24 i `first icon` v=225}","\
+{endsm}","\
+\
+{sm ChargingIcons}","\
+{2.1 cb engage v=1}","\
+0 = icon off","\
+{8 i `charge icon` v=329}","\
+{12 i `full icon` v=330}","\
+{endsm}","\
+\
+{sm VibraIcons}","\
+{2.2 cb engage v=1}","\
+{20 i `vibra icon` v=742}","\
+{16 i `no-vibra icon` v=0}","\
+(0=icon off)","\
+{endsm}","\
+\
+{sm NetModeIcons v=1}","\
+{2.3 cb engage v=1}","\
+{52 xy position x=132 y=33}(off=iconbar, on=static)","\
+{28 i iconSearchingLo v=333}","\
+{32 i iconPhoneTraffic v=326}","\
+{36 i iconSearchingHi v=335}","\
+{40 i iconSmsTraffic v=332}","\
+{44 i iconSemiIdle v=331}","\
+{48 i iconIdle}","\
+(0=icon off)","\
+{endsm}","\
+\
+{sm AnimationIcons}","\
+{2.4 cb engage v=1}","\
+{sm Profiles}","\
+{4.0 cb 1 v=1}{4.1 cb 2 v=1}{4.2 cb 3 v=1}{4.3 cb 4 v=1}","\
+{4.4 cb 5 v=1}{4.5 cb 6 v=1}{4.6 cb 7 v=1}","\
+{endsm}","\
+{56 xy position x=2 y=142}(off=iconbar, on=static)","\
+{60 i `first icon` v=919}","\
+{64 i `last icon` v=929}","\
+{endsm}","\
+\
+{sm miniGpsIcons}","\
+Enter icons in 3rd line of minigps files","\
+{2.5 cb engage v=1}","\
+{80 xy position x=85 y=142}(off=iconbar, on=static)","\
+{82 s miniGPS maxlen=31 ","\
+value=`0:\\Misc\\gps\\%i\\%i-%i.tmo`}","\
+{endsm}",00
+
+0FDC340: E4D3C2B1,0x00001C01,0000000000000000,"\
+{patch=Icon-Netmode2 ver=33 cp=benj9 id=1C01}","\
+{02 xy position x=59 y=120}(off=iconbar, on=static)","\
+{sm focus}","\
+\
+{08 a address v=A8752560}","\
+{04 cb `use as pointer` v=0}","\
+{05 b offset v=0}","\
+{01 o `load type` `byte (1b)`=0 `hword (2b)`=1 `dword (4b)`=2 v=0}{endsm}","\
+{06 o `val1-val7 condition` `=`=0 `<=`=1 `>=`=2 v=0}","\
+\
+{sm v1}{7.0 cb 1 v=1}","\
+{12 i val1 v=0}","\
+{44 i icon v=890}{endsm}","\
+\
+{sm v2}{7.1 cb 2 v=1}","\
+{16 i val2 v=1}","\
+{48 i icon v=855}{endsm}","\
+\
+{sm v3}{7.2 cb 3 v=1}","\
+{20 i val3 v=2}","\
+{52 i icon v=868}{endsm}","\
+\
+{sm v4}{7.3 cb 4 v=1}","\
+{24 i val4 v=3}","\
+{56 i icon v=891}{endsm}","\
+\
+{sm v5}{7.4 cb 5 v=1}","\
+{28 i val5 v=8}","\
+{60 i icon v=892}{endsm}","\
+\
+{sm v6}{7.5 cb 6 v=0}","\
+{32 i val6 v=16}","\
+{64 i icon v=394}{endsm}","\
+\
+{sm v7}{7.6 cb 7 v=0}","\
+{36 i val7 v=19}","\
+{68 i icon v=395}{endsm}","\
+\
+{sm vElse}{7.7 cb Else v=1}","\
+{40 i `exclude val` v=27}","\
+{72 i icon v=406}{endsm}",00
+
+#pragma disable old_equal_ff
+
+0FDB830: 04 02 ; universal icon ptc's are from 1C01.ptc to 1C0?.ptc.
+
+/* general usage:
+- after some icons is written (0 = off), means: if you enter 0, icon is supressed
+- some icons have a position-xy-button. on=static position, canvas. off=iconbar
+
+MiniGPS usage:
+The subfolders of Misc/gps are named: LAC. the files in the subfolders are named: CID-LAC.tmo
+open e.g. file of your current cell, e.g. "13746-16394.tmo". Enter in the 3rd line an icon number.
+if no file for current cell exists, or no icon number in file, you can define a fallback icon for
+the whole LAC subfolder. store a file 0-lac.tmo (e.g. "0-16394.tmo"). Enter in the 3rd line the icon.
+"Enter in 3rd line" means: enter 2 "line feeds" after the minigps string (key "1", second position),
+then enter icon number ("1234")
+
+Universal Icons usage:
+>to remove one set: just remove section from patch
+>to add one set: just copy&paste another set, fix the ptc-number (twice), set your values
+
+- engage: whole icon set engine (dis)engaged
+- submenue `focus`: load a byte/halfword/word from ram. val1-val7 are compared with it.
+--- `address`: an address
+--- `use as pointer`:
+----- if no, load content byte of `address` directly.
+----- if yes, use `address` as pointer to another ram address. add `offset` to that ram address. load its content byte
+--- `offset`: see `use as pointer`
+--- `load type`: byte/halfword/dword (1/2/4 bytes). it's YOUR responsibility to ALIGN address!
+-`val1-val7 condition`: comparison of val1-val7 with content of `focus` is in mode "=", "<=" or ">=". For mode "<=" and ">" think about the order of the content of val1-val7! val1 is first checked, val7 last, vElse very last.
+- sub-menues `values`:
+--- checkbox `on/off`: enable/disable this check.
+---`val`: enter value for comparison with focus content. is evaluated according `val1-val7 condition.
+---`icon`: add this icon to bar if condition true.
+- sub-menues `Else`: if no condition val1-7 is true, display Icon
+--- checkbox `on/off`: enable/disable this check.
+---`exclude val`: don't display `else` icon for this value :)
+---`icon`: add this icon to bar if none of condition val1-7 are true and if focus content != `exclude val`
+*/ 
+
+;------------------------- end -------------------------
+

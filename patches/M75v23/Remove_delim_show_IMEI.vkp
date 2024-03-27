@@ -1,0 +1,14 @@
+;M75v23
+;Убрать черточки-разделители при показе IMEI
+;Disable delimiters while showing IMEI
+;(c) 1nvisible
+;(r) Bennie
+;Version: 
+;PatchID: 2862
+;Details: https://patches.kibab.com/patches/details.php5?id=2862
+/*
+
+*/
+032C008: 05D0 0AE0
+;------------------------- end -------------------------
+

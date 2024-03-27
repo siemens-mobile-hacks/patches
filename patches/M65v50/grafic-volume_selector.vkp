@@ -1,0 +1,18 @@
+;M65v50
+;Изменение регулятора громкости
+;Replacing standard volume selector
+;(c) cest84
+;Version: 3.0
+;PatchID: 935
+;Details: https://patches.kibab.com/patches/details.php5?id=935
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=m65v50&f=grafic-volume_selector.rar
+
+/*
+Изменяет стандартную анимацию громкости во всех регуляторах громкости - например, при регулировки громкости мелодий.
+
+EN:
+Changes volume control in all places, for example in melody volume adjustment
+*/
+; Пожалуйста, скачайте прикреплённый файл.
+;------------------------- end -------------------------
+

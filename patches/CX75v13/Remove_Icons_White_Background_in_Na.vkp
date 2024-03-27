@@ -1,0 +1,15 @@
+;CX75v13
+;Убрать белый фон у иконок в Native menu
+;Remove Icons White Background in Native Menu
+;(c) SiNgle
+;(p) Smelter 9.62
+;Version: 
+;PatchID: 9449
+;Details: https://patches.kibab.com/patches/details.php5?id=9449
+/*
+
+*/
+0956494: 00 FF
+0956538: 9EF645FF 00280028
+;------------------------- end -------------------------
+

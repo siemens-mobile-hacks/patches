@@ -1,0 +1,15 @@
+;E71v45
+;Отключение AUMA и UDIAL Дебагеров
+;Disable AUMA And UDIAL Debug
+;(c) benj9
+;(p) Grizzzzly
+;Version: 
+;PatchID: 9664
+;Details: https://patches.kibab.com/patches/details.php5?id=9664
+/*
+
+*/
+08CC836: 0FB4 7047 ; Disable AuMa Logging
+05DFB74: 0FB4 7047 ; Disable UDIAL Logging
+;------------------------- end -------------------------
+

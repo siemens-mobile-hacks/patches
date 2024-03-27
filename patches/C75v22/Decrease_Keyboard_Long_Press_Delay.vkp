@@ -1,0 +1,15 @@
+;C75v22
+;Уменьшить задержку для долгого нажатия клавиш
+;Decrease Keyboard Long Press Delay
+;(c) 1nvisible
+;(r) benj9
+;(p) Igrik
+;Version: 
+;PatchID: 6220
+;Details: https://patches.kibab.com/patches/details.php5?id=6220
+/*
+
+*/
+07AF8D2: 82 41
+;------------------------- end -------------------------
+

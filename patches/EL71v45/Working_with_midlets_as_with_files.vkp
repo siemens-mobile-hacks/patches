@@ -1,0 +1,14 @@
+;EL71v45
+;Работа с мидлетами, как с файлами
+;Working with midlets as with files
+;(c) SiNgle
+;(p) DuKu
+;Version: 
+;PatchID: 7931
+;Details: https://patches.kibab.com/patches/details.php5?id=7931
+/*
+
+*/
+069B2E4: 00 01
+;------------------------- end -------------------------
+

@@ -1,0 +1,66 @@
+;C75v22
+;Большие цифровые часы с изменением цвета
+;Big Digital Clock With Color Change
+;(c) Lisugar
+;(p) Art
+;Version: 1.3
+;PatchID: 4711
+;Details: https://patches.kibab.com/patches/details.php5?id=4711
+/*
+
+
+*/
+;Большие цифровые часы с изменением цвета
+;(p) Art
+
+[EN]:Auto Change Time Format
+Set BackGroundColor and FontColor
+Set X when 12hours or 24hours format
+Set Gap Between Degital
+fix Bug When Dial Numbers While 'Show in unlock' on
+fix Bug In ScreenSaver While 'Show in unlock' on
+Use "xy" To Replace "sl" in Setting Digital Clock Location
+Add Canvas Control to solve the problem of getting stronger when use transparent color for fcolor or bcolor
+
+
+[color:red](!) MasterPatch V3 RC2 #114
+(!) FunctionLibrary (f067, f000, z02, f120, f004, f037, f038, f033, f034)
+(!) GraphPatchManager 3.x[/color]
+
+
++110000
+#pragma enable old_equal_ff
+0xFC13E0: 02B54448FFF70CFC40D0FFF755F93868
+0xFC13F0: 00283BD0FEF70CFF38D1FEF70DFF0130
+0xFC1400: 317FC14032D30098B0610020311D0431
+0xFC1410: FEF7F6FDFFF78CF9F760FEF7D1FF071C
+0xFC1420: 317A012F03D075793479B3790DE0B578
+0xFC1430: 7478F378002901D10C2106E00C2900DA
+0xFC1440: 03E002270C2900D00C3900F010F80B20
+0xFC1450: 00F016F8717A00F00AF8002F06D0012F
+0xFC1460: 01D00C2000E00A2000F00AF802BDC9B5
+0xFC1470: 0A2058B4FEF7D4FD58BC00F001F800E0
+0xFC1480: CAB5F268121800F011F81EB4201C341C
+0xFC1490: 1034231D291C0094FEF74AFE02BC01BC
+0xFC14A0: FEF736FE18BC2418E418C9BDFFB5F079
+0xFC14B0: 012804D0201C291CB36900F001F8FFBD
+0xFC14C0: 1FB5101CFEF724FE041C101CFEF71CFE
+0xFC14D0: 0138013C06BC84B00B19801800900120
+0xFC14E0: 01900598FEF720FE02B01FBD
+
+0xFC14F0: 0xB1C2D3E4,0x0100AB02,0xA10D13E1,00000000,"\
+{patch=`Big Digital Clock` ver=5.5 id=0100AB02}","\
+{1 xy T12 y=73}\
+{3 sl Gap12 r=0..6 v=3}","\
+{4 xy T24 y=73}\
+{6 sl Gap24 r=0..6 v=6}","\
+{16 color `BColor` v=00000000}","\
+{20 color `FColor` v=64000000}","\
+{28.0 cb `Show in lock`}","\
+{28.1 cb `Show in unlock`}","\
+{7 cb `DisableCanvas`}","\
+",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

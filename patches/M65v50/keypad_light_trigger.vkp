@@ -1,0 +1,43 @@
+;M65v50
+;Переключатель режима подсветки клавиатуры
+;Keypadlight trigger
+;(c) benj9
+;(p) AsteriX
+;Version: 0.9
+;PatchID: 185
+;Details: https://patches.kibab.com/patches/details.php5?id=185
+/*
+Меняет режим подсветки клавы в соответствии с выбранным профилем; пользователь может определять профили и задержку.
+
+
+(changes keypadlight mode according to chosen profile; user can setup profiles and delay)
+*/
+;Меняет режим подсветки клавы в соответствии с выбранным профилем (changes keypadlight mode according to chosen profile)
+;Пользователь может определять профили и задержку (User can setup profiles and delay)
+0B696F2: 5EF0E2E8 75F185F9
+#pragma enable old_equal_ff
+0CDEA00: 00B5FCB40D48006880470006000E0D49
+0CDEA10: 43181978FCBC022904D0012904D00329
+0CDEA20: 04D005E0002203E02D2201E055231B02
+0CDEA30: 01200121E8F640EF00BD999940EACDA0
+0CDEA40: E59F8CA048EACDA0
+;определить режим (Set Keypadlight mode)
+0CDEA48: 03 ;for Profile 1
+0CDEA49: 02 ;for Profile 2
+0CDEA4A: 01 ;for Profile 3
+0CDEA4B: 00 ;for Profile 4
+0CDEA4C: 03 ;for Profile 5
+0CDEA4D: 03 ;for Profile 6
+0CDEA4E: 03 ;for Profile 7
+#pragma disable old_equal_ff
+;Режимы подсветки (Keypad light modes are):
+;00 = обычный (normal)
+;01 = подсветка всегда включена (keypadlight always on)
+;02 = подсветка всегда выключена (keypadlight always off)
+;03 = задержка гашения подсветки (keypadlight delayed afterburner)
+0CDEA2C: 55 1A ;определить задержку для режима 3 (Set delay for mode 3)
+;00 = обычный без задержки (normal/no_delay)
+;1A = несколько секунд (some seconds)
+;FF = несколько минут (some minutes delay)
+;------------------------- end -------------------------
+

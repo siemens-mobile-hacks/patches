@@ -1,0 +1,15 @@
+;M65v50
+;Power-Up Патч M65=>CX70
+;Power-Up Patch M65=>CX70
+;(c) N1K
+;Version: 
+;PatchID: 948
+;Details: https://patches.kibab.com/patches/details.php5?id=948
+/*
+Нужен для переделки телефона из M65 в CX70.
+Обсуждение методов и проблем тут: http://forum.allsiemens.com/viewtopic.php?t=18038&start=16
+*/
+11507EC: 0E 00 
+119524C: 000053E1 030053E1
+;------------------------- end -------------------------
+

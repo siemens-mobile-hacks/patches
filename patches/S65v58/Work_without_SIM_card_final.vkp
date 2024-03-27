@@ -1,0 +1,22 @@
+;S65v58
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle
+;(r) NevAtse
+;(p) Виктор89
+;Version: 3
+;PatchID: 9063
+;Details: https://patches.kibab.com/patches/details.php5?id=9063
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+169A31C: 10B5D049D0480BF04CFC041CCF49 08B5014B984708BD,0xA04909C0,C046
++04909C0
+#pragma enable old_equal_ff
+00: FF7F2DE910109FE510009FE50120A0E3
+10: 0FE0A0E111FF2FE1FFBFBDE8,0xA12524AC
+20: 00200BA8
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

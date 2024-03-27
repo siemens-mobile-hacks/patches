@@ -1,0 +1,85 @@
+;C72v22
+;Перенос папки System с Data на Config
+;Move System folder from Data to Config
+;(c) Serega_1
+;(r) SMeeTBB
+;(p) Reviser
+;Version: 
+;PatchID: 8653
+;Details: https://patches.kibab.com/patches/details.php5?id=8653
+/*
+
+*/
+/*
+Патч переносит папку System с Data на Config. 
+[color:red]Надо перенести папку System на Config перед применением патча[/color].
+Патч освобождает немного места на диске Data.
+
+[b]EN[/b]:
+This patch changes location of System folder from \Data to \Config. 
+[color:red]Note that you should move System by your own to Config before applying this patch![/color]
+*/
+
+A5A112: 30 32
+A5A126: 30 32
+A5A132: 30 32
+A5A14A: 30 32
+A5A166: 30 32
+A5A17A: 30 32
+A5A19C: 30 32
+A5A1BC: 30 32
+A5A1D4: 30 32
+A5A1FA: 30 32
+A5A21A: 30 32
+A5A232: 30 32
+A5A256: 30 32
+A5A272: 30 32
+A5A286: 30 32
+A5A2A6: 30 32
+A5A2C2: 30 32
+A5A2D6: 30 32
+A5A2F8: 30 32
+A5A31A: 30 32
+A5A334: 30 32
+A5A35A: 30 32
+A5A376: 30 32
+A5A38a: 30 32
+A5A3Ac: 30 32
+A5A3Cc: 30 32
+A5A3E4: 30 32
+A5A406: 30 32
+A5A420: 30 32
+A5A432: 30 32
+A5A454: 30 32
+A5A47c: 30 32
+A5A49c: 30 32
+A5A4C8: 30 32
+A5A4E4: 30 32
+A5A4F8: 30 32
+A5A518: 30 32
+A5A534: 30 32
+A5A548: 30 32
+A5A568: 30 32
+A5A586: 30 32
+A5A59c: 30 32
+A5A5Be: 30 32
+A5A5Dc: 30 32
+A5A5F2: 30 32
+A5A67e: 30 32
+A5A69A: 30 32
+A5A6AE: 30 32
+A5A6D2: 30 32
+A5A6F8: 30 32
+A5A716: 30 32
+A5A744: 30 32
+A5A76A: 30 32
+A5A788: 30 32
+A5A7B2: 30 32
+A5A7D0: 30 32
+A5A7E6: 30 32
+;A5A62e: 30 32 ;Ети строски переносят ММС на диск Конфиг, расскоментируйти их, если пользуетесь редко ММС
+;A5A64a: 30 32
+;A5A65e: 30 32
+
+;------------------------- end -------------------------
+

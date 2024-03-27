@@ -1,0 +1,18 @@
+;M55v11
+;Стрелка вверх -> Ссылки
+;Up arrow -> any function
+;(c) SiNgle
+;(p) AlexSid
+;Version: 
+;PatchID: 5185
+;Details: https://patches.kibab.com/patches/details.php5?id=5185
+/*
+Список ссылок 5176.
+English: Functions list 5176.
+*/
+0D5C68: E6 DA
+0D5C69: FCE600 29D4F4 ;Новое SMS (или любая ссылка из списка)
+0D5C6C: DA8556D04840 CC00CC00CC00
+0D5C73: 30 00
+;------------------------- end -------------------------
+

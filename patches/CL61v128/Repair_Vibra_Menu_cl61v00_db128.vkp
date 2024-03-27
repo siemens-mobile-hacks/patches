@@ -1,0 +1,43 @@
+;CL61v128
+;Починить пункты "Включение" и "Выключение" в меню вибры
+;Repair "Shutdown" and "Startup" items in vibra menu
+;(c) Evgr
+;(p) Marie
+;Version: 
+;PatchID: 10405
+;Details: https://patches.kibab.com/patches/details.php5?id=10405
+/*
+Чиним пункты "Включение" и "Выключение" в "Настройки"->"Вибросигнал"->"Боль.свет.эфф." Не забываем установить патч More items in vibration menu ID10404
+English:Repair "Shutdown" and "Startup" items in "Setup"->"Vibration"->"More light effe." Install patch * More items in vibration menu * to enable "More light effe." item! ID10404
+*/
+;set effect for "SHUTDOWN" event 
+
+0E36270: 00 02
+0E36274: 00 01
+0E36278: 09 05
+0E3627C: 00 74
+0E36280: 00 01
+
+;disable shutdown event dependence on "Setup"->"Ringtones" settings
+
+04A9945: D1 E0
+04A9966: 06D0 C046
+
+;disable shutdown event dependence on low level charge of accu (AUDIO_ALARM_MODE_SILENT)
+
+04A995C: 0BD1 C046
+
+;set effect for "STARTUP" event 
+
+0E36254: 00 02
+0E36258: 00 01
+0E3625C: 09 05
+0E36260: 00 74
+0E36264: 00 01
+
+;disable startup event dependence on "Setup"->"Ringtones" settings
+
+04A9E98: 5DD0 C046
+04A9EAA: 06D0 C046
+;------------------------- end -------------------------
+

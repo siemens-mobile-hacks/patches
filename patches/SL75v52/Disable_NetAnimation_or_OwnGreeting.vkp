@@ -1,0 +1,15 @@
+;SL75v52
+;Отключить анимацию поиска сети или приветствие
+;Disable NetAnimation or OwnGreeting
+;(c) benj9
+;(p) kiREALlov
+;Version: 2
+;PatchID: 7828
+;Details: https://patches.kibab.com/patches/details.php5?id=7828
+/*
+
+*/
+02FAF43: 1C 21
+02FB089: 1C 21
+;------------------------- end -------------------------
+

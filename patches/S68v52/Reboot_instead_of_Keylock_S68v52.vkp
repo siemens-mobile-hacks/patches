@@ -1,0 +1,23 @@
+;S68v52
+;Перезагрузка вместо Клав. Заблок. в меню красной кнопки
+;Reboot instead of Keylock in RedButtonMenu
+;(c) ThE TrIFoN
+;(r) Rainmaker
+;(p) nikinet1
+;Version: 
+;PatchID: 9972
+;Details: https://patches.kibab.com/patches/details.php5?id=9972
+/*
+перезагружает телефон из меню красной кнопки
+*/
+
+032F564: 83F0C8ED CDF638EA ; Вызов перезагрузки вместо лока 
+
+1084748: 0x21CC 0x054B ; Keylock => Reload
+108474C: 0x21CC 0x054B ; Keylock => Reload
+
+2CE2B8: 1FD1 0028     ; принудительный запуск помощника, чтобы не стирались настроики интернета
+
+032F560: FBF729F9 C046C046 ; Не отображать окно "Клава залочена"
+;------------------------- end -------------------------
+

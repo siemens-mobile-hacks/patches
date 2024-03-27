@@ -1,0 +1,37 @@
+;SL45iv56
+;FAM. Модификация доступа к файлам
+;FAM. File Access Modification
+;(c) Rst7/CBSIE, JunFeng
+;(p) lbuczko
+;Version: 3.31
+;PatchID: 3382
+;Details: https://patches.kibab.com/patches/details.php5?id=3382
+/*
+Добавляет паузу mp3 при обращении к диску. 
+v3.31 добавляет паузу mp3 при приеме звонка, тоесть исправлен баг.
+
+Работает вместе с FAM3.2 (не сносить)!
+Перед установкой FAM3.31 откатить FAM3.3!
+
+
+English:
+Adds pause MP3 at the reference to a MMC
+v3.31 add pause MP3 in receiving a call, so that a bug is removed.
+
+Use only with FAM3.2!
+Uninstall FAM3.3!
+
+Release: 08.02.2006 (v3.3 by Rst7/CBSIE)
+Update: 13.05.2006 (v3.31 ported by lbuczko)
+*/
+0x449EDA: FAE4707E FAE4907F
+
+
+0x447F90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAD0825E48402D18E01CDACC4AC44843
+0x447FA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D06E6FCCC7FE6FDE400ECFDECFCE6FC
+0x447FB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E835E0EDE6FEAC00E6FF2400DAC130AA
+0x447FC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAD0825E48403DFCFAE4707EE6FCE835
+0x447FD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E0EDE6FEAC00E6FF2600DAC130AADAD0
+0x447FE0: FFFFFFFFFFFFFFFF 825E48402DFCDB00
+;------------------------- end -------------------------
+

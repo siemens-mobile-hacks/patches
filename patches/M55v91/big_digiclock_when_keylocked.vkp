@@ -1,0 +1,28 @@
+;M55v91
+;Большие цифровые часы при залоченной клавиатуре
+;Big digital clock when keylocked
+;(c) SiNgle, ACiD[mrp],RizaPN
+;(p) AlexSid
+;Version: 3.1
+;PatchID: 915
+;Details: https://patches.kibab.com/patches/details.php5?id=915
+/*
+Собственно, см. скриншот :)
+
+Однако сам патч цифирок не содержит, ставим отдельно. Можно поставить патч 913 или 914, или другие цифры, найти можно тут: http://alexsid.antex.ru/index.php?main=gpatches.php
+*/
+0DD650: E6FCB101 DA5500B8
+;35B600
+35B800: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E00CD7500D00F2F1FE63F2F2FC638820
+35B810: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB10D7401100F2FE8014BB23CC00CC00
+35B820: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF CC00BB1426FC09009810BB03E6FCB101
+35B830: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DB00E0A2F6F10EFE5B22F2F10CFE8810
+35B840: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2FE0EFEBB0398E0BB01CB0088C006FE
+35B850: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 4C01E6FD1200DA2DB2D298C006FC1600
+35B860: FFFFFFFFFFFFFFFFFFFFFFFFFFFF CB0066FE00017C7E06FE0A00CB00
+;
+;Если хотите, что-бы картинки рисовались на другой высоте, строка
+;35B854: 12 XX
+;Где ХХ - координата картинок по Y (0 - самый верх экрана)
+;------------------------- end -------------------------
+

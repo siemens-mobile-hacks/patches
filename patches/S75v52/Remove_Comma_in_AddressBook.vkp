@@ -1,0 +1,16 @@
+;S75v52
+;Убрать Запятую в Адреске
+;Remove Comma in AddressBook
+;(c) 1nvisible
+;(r) KiRik
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8283
+;Details: https://patches.kibab.com/patches/details.php5?id=8283
+/*
+
+*/
+0640F68: 2C 00
+095CB92: 62F00BFB C046C046
+;------------------------- end -------------------------
+

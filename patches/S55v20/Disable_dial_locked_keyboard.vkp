@@ -1,0 +1,16 @@
+;S55v20
+;Запрет набора при залоченной клавиатуре
+;Disable dial while keyboard is locked
+;(c) ACiD [mrp]
+;Version: 
+;PatchID: 4779
+;Details: https://patches.kibab.com/patches/details.php5?id=4779
+/*
+
+*/
+; allow only "112" in keylocked mod (not 98 and 911):
+2400DE: EA20 0D0F
+; allow no keypress in keylock mode:
+2400C2: EA20 0D1D
+;------------------------- end -------------------------
+

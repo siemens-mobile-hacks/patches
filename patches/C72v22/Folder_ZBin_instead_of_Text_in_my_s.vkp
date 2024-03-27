@@ -1,0 +1,15 @@
+;C72v22
+;Папка ZBin вместо Text в моих файлах
+;Folder ZBin instead of Text in my_stuff
+;(c) ZoZoLe
+;(p) Virusmater
+;Version: 
+;PatchID: 6453
+;Details: https://patches.kibab.com/patches/details.php5?id=6453
+/*
+Патчик для удобного доступа к эльфам через мои файлы а не через дебри кард-эксплорера.
+В проге mscx65 при создании файлов mystuff выбираем путь 0:\Text
+*/
+a59f8c: 54006500780074 5a00420069006e
+;------------------------- end -------------------------
+

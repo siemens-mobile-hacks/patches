@@ -1,0 +1,15 @@
+;SL45iv56
+;Disable Message "New SMS Receaved"
+;Отключить сообщение "Получено новое SMS"
+;(c) abomin
+;Version: 
+;PatchID: 1744
+;Details: https://patches.kibab.com/patches/details.php5?id=1744
+/*
+Release: 1 Мая 2004
+
+Патч №140 с http://patch.oslik.ru/SL45_RU
+*/
+45260A: E6FC DB00
+;------------------------- end -------------------------
+

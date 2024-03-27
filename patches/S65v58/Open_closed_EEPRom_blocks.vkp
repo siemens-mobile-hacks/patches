@@ -1,0 +1,13 @@
+;S65v58
+;Открыть заблокированные блоки EEPROM
+;OpenHiddenEEPROM (OpenClosedEEPROM)
+;(c) Skylord
+;Version: 
+;PatchID: 9090
+;Details: https://patches.kibab.com/patches/details.php5?id=9090
+/*
+Становятся доступны 6 скрытых блока 5008, 5009, 5077, 5121, 5122, 5123
+*/
+128626C: 00 01
+;------------------------- end -------------------------
+

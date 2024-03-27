@@ -1,0 +1,17 @@
+;CX70v50
+;Изменить звук разряженного аккума
+;Change Accu Empty Sound
+;(c) benj9
+;(p) AlexeyZ
+;Version: 
+;PatchID: 1652
+;Details: https://patches.kibab.com/patches/details.php5?id=1652
+/*
+Играть звук номер: 00 = без звука. 2f=вибрировать. также: 3a, 3b 3e, 3f, 5a, 5e
+
+PlaySound number: 00 = no sound. 2f=vibrate. e.g.: 3a, 3b 3e, 3f, 5a, 5e
+
+*/
+0BD3EA8: 03 3A
+;------------------------- end -------------------------
+

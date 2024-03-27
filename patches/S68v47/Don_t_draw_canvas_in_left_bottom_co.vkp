@@ -1,0 +1,14 @@
+;S68v47
+;Не рисовать чей-то канвас в левом нижнем углу
+;Don't draw canvas in left bottom corner
+;(c) avkiev
+;(p) den11111
+;Version: 
+;PatchID: 7851
+;Details: https://patches.kibab.com/patches/details.php5?id=7851
+/*
+
+*/
+02D4543: 30 20
+;------------------------- end -------------------------
+

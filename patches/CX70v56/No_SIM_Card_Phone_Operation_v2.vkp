@@ -1,0 +1,23 @@
+;CX70v56
+;Работа с Телефоном без Сим-Карты
+;No SIM Card Phone Operation
+;(c) SiNgle
+;(r) (i) 1nvisible
+;(p) SiamiX
+;Version: 2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9205
+;PatchID: 5727
+;Details: https://patches.kibab.com/patches/details.php5?id=5727
+/*
+Нажмите на джойстик, чтобы начать начать работу.
+English:
+Press joystick to start working.
+*/
+1716D10: 15283FD1 25F0DEFA
+#pragma enable old_equal_ff
+173C2D0: FEB5152800D1FEBD292802D104480349
+173C2E0: 8847281CFEBC06B0F0BDC046,0xA1161AC0 
+173C2F0: 0xA80B2000
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

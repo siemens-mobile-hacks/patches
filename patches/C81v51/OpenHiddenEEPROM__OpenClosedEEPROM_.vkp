@@ -1,0 +1,13 @@
+;C81v51
+;Открыть заблокированные блоки EEPROM
+;OpenHiddenEEPROM (OpenClosedEEPROM)
+;(c) Skylord
+;Version: 
+;PatchID: 7330
+;Details: https://patches.kibab.com/patches/details.php5?id=7330
+/*
+Думаю многим пригодится))))
+*/
+0262074: 00 01
+;------------------------- end -------------------------
+

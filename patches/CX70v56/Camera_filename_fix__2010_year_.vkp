@@ -1,0 +1,24 @@
+;CX70v56
+;Исправление автоимени фотографий с камеры (2010 год)
+;Camera filename fix (2010 year)
+;(c) DebriZ
+;(p) LourenS65
+;Version: 
+;PatchID: 9744
+;Details: https://patches.kibab.com/patches/details.php5?id=9744
+/*
+
+*/
+8DFD7C: F04D2DE9 F04F2DE9
+8DFDC8: 50008DE2 55A0DDE5
+8DFDCC: 7217FdFA 54B0DDE5
+8DFDD0: 00A0A0E1 50009DE5
+8DFDD4: 50008DE2 333C38EB
+8DFDD8: 6E17fdFA 0190A0E1
+8DFDDC: 00B0A0E1 313C38EB
+8DFDE0: 50008DE2 0A30A0E3
+8DFDE4: 6A17fdFA 910303E0
+8DFDE8: 2E3C38EB 091083E0
+8DFEC0: F08DBDE8 F08FBDE8
+;------------------------- end -------------------------
+

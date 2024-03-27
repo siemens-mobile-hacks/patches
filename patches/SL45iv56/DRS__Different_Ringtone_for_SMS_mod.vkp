@@ -1,0 +1,45 @@
+;SL45iv56
+;DRS. Разные мелодии для SMS и отчета
+;DRS. Different Ringtone for SMS and Report
+;(c) RainMoon
+;(p) Walek, GoLL@B
+;Version: 0.2
+;PatchID: 2649
+;Details: https://patches.kibab.com/patches/details.php5?id=2649
+/*
+Делает разные мелодии для нормальных SMS и для отчёта.
+
+Модифицированная версия работает с CDR 2.3 и FAM 3.2/3.3.
+
+
+English: Modified version: now it works with CDR 2.3 and FAM 3.2/3.3.
+
+
+Updated: GoLL@B, 12 July 2006 (rearranged)
+*/
+;1) Setup different SMS types 
+;Setup two SMS types for recognition in some programmes: normal SMS and Flash SMS 
+;updated: GoLL@B, 12 July 2006 
+
+;main:
+0x42E19C: FFFFFFFF DAC1B6FB
+0x42E1A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DADC5CD2D7403200F3F8F00267F84000
+0x42E1B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3D06E004D7403400F6F4AA22DB00E014
+0x42E1C0: FFFFFFFFFFFFFFFFFFFF D7403400F6F4AA22DB00
+0x42E1D0: FFFFFFFFFFFFFFFFFFFF D7403400F2F4AA22DB00
+
+;Disable the reminder when a new SMS is received:
+0x42E1A0: DADC5CD2 CC00CC00
+0x44E704: DAC1B6FB DAE29CE1
+
+;2) Different Ringtones for normal SMS and Flash SMS (or status report, CB message)
+;Author: RainMoon
+;Ported to v56: Walek and GoLL@B (little help).
+
+0x23022A: E6FC3500 DAE2E0E1
+0x42E1E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAE2D0E148402D03E6FC37000D02E6FC
+0x42E1F0: FFFFFFFF 3500DB00
+
+;0x42E1EA: 37 XX ;XX, can change to other sounds
+;------------------------- end -------------------------
+

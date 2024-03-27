@@ -1,0 +1,15 @@
+;M75v12
+;Значок Вибры на главном экране
+;Vibra logo on MainScreen
+;(c) SiNgle
+;(p) AsteriX, BuG
+;Version: 
+;PatchID: 588
+;Details: https://patches.kibab.com/patches/details.php5?id=588
+/*
+
+*/
+02A8DAC: 09D0 0028
+049C3B8: F94383 2F6032
+;------------------------- end -------------------------
+

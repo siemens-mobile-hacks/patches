@@ -1,0 +1,39 @@
+;SL45iv56
+;HBP. Ежечасный сигнал
+;HBP. Hourly Beep
+;(c) Lalo
+;(r) RizaPN
+;Version: 2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=3320
+;PatchID: 1749
+;Details: https://patches.kibab.com/patches/details.php5?id=1749
+/*
+Этот патч будет издавать ежечасный сигнал в ЧЧ:00 
+
+Сигнал можно включать и выключать через 6-1 профиль, используя 
+параметр "Вибросигнал". Включение параметра "Вибросигнал" 
+выключит ежечасный сигнал.
+
+
+Release: November 8, 2003 (by RizaPN)
+Modified: May 25, 2004 (by Lalo)
+
+Патч №145 с http://patch.oslik.ru/SL45_RU
+*/
+;Настройки: 
+;Смена типа писка. 
+;0x27DC66: FF 36 ;= (звук "Информ.Услуг" из профиля. Из профиля берется как тип звука, так и ГРОМКОСТЬ!) 
+;если же угодно, можете вместо 36 подставить любое значение из списка на forum.gsmhosting.com.
+
+0x3B36BC: 26F00C00 DAC740DC 
+
+0x27DC40: FFFFFFFFFFFFFFFF D7400E00F3F8423A 
+0x27DC48: FFFFFFFFFFFFFFFF D7400D00F2F2DC25 
+0x27DC50: FFFFFFFFFFFFFFFF 9AF4126048203D0C 
+0x27DC58: FFFFFFFFFFFFFFFF D7401100F3F84038 
+0x27DC60: FFFFFFFFFFFFFFFF 49813D0BE6FC3600 
+0x27DC68: FFFFFFFFFFFFFFFF DAC3B600E0040D01 
+0x27DC70: FFFFFFFFFFFFFFFF E014D7401100F7F8 
+0x27DC78: FFFFFFFFFFFFFFFF 403826F00C00DB00 
+;------------------------- end -------------------------
+

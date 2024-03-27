@@ -1,0 +1,22 @@
+;S75v52
+;Отключить иконки сети и аккума
+;Disable net and accum icons
+;(c) sempai
+;(p) SimaFish
+;Version: 
+;PatchID: 9011
+;Details: https://patches.kibab.com/patches/details.php5?id=9011
+/*
+
+*/
++1CC
+;Сеть
+029CFF7: D0 E0 ; канвас иконок сети
+029D00F: D0 E0 ; иконки сети
+
+;Аккум
+029D571: D0 E0 ; канвас иконок аккума
+029D589: D0 E0 ; иконки аккума
++0
+;------------------------- end -------------------------
+

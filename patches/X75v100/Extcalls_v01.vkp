@@ -1,0 +1,17 @@
+;X75v100
+;Расширенный список вызовов (журнал-набранные-принятые-пропущенные)
+;Extended calls list (history-dialed-accepted-missed)
+;(c) alex_itd
+;(p) -=(Kad)=-
+;Version: 0.1
+;PatchID: 6274
+;Details: https://patches.kibab.com/patches/details.php5?id=6274
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Extcalls_v01.zip
+
+/*
+Переделал теперь открывает так:
+Журнал > набраные > принятые > неотвеченные > IDLE
+*/
+качаем архив
+;------------------------- end -------------------------
+

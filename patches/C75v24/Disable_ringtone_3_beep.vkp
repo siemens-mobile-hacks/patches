@@ -1,0 +1,13 @@
+;C75v24
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found" (3*beep)
+;(c) avkiev
+;Version: 
+;PatchID: 2921
+;Details: https://patches.kibab.com/patches/details.php5?id=2921
+/*
+
+*/
+0E82530: 5C03 FFFF
+;------------------------- end -------------------------
+

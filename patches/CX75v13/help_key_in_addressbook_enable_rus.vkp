@@ -1,0 +1,19 @@
+;CX75v13
+; Выбор "Русского" языка при нажатии Help в Адрессбуке
+;Help key in Addressbook enable Russian lang
+;(c) SiNgle
+;(p) SMeeTBB
+;Version: 
+;PatchID: 919
+;Details: https://patches.kibab.com/patches/details.php5?id=919
+/*
+RUS: При нажатии на левую софт-кнопку (Help), находясь в адресной книге, выбирает язык ввода русский.
+!Язык должен быть не на "Автомате".
+
+ENG: By pressing on left the software-button (Help), being in a directory, chooses language of input Russian.
+!Language should be not on "Automatic".
+*/
+14C201: 68ACBCB6D7C62EE1D6B3CDF3C5363BDDBDE12BE1D3413CF3BE9E3A367EE133C62C3C9172C4372FD6E13AE9A548ADF3D03AC5BFC59CA688FD36A23E9CA6D6DE39C9D87CBE9E3AC9903E26F5257C33CF9B36D9D8A62D8945E1A02F81C6489CA631E13B917C2D917272 68A4442AB036E1193C3A3ADF32E148304433990B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B
+0606B06: 0948013801E00748FB30 1120B4F1E8F807480138
+;------------------------- end -------------------------
+

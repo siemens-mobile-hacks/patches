@@ -1,0 +1,46 @@
+;CX75v25
+;разноцветный индикатор батареи
+;colored indicator-batt
+;(c) Sheps
+;Version: 2
+;PatchID: 5514
+;Details: https://patches.kibab.com/patches/details.php5?id=5514
+/*
+Это дополнение к v1. Изменён цвет 100%, так как он был прозрачным. Теперь он будет белым.
+Скрина к сожалению пока нету. =(
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 13.09.2006  -  Time: 14:57:36                             ###
+; ### Patch for: SIEMENS CX75 v25                                     ###
+; #######################################################################
+; Designed By Sheps
+
+; ##### Picture 615 #####
+010C135C: 1F0E8800ACE116A1 1F0E8500688B9CA0
+
+009C8B68: 0A00000A0D10A0E10400A0E10C9DE8EB 43C0170007C0FF0017FFFF0006C0FF00
+009C8B78: 000050E30500001AB230DDE11C208FE2 0536FF0002360200033602000836FF00
+009C8B88: 0610A0E10300A0E37EB3F8EBB250DDE1 04C0030004360200FE36000236FD0036
+009C8B98: 0500A0E171DE8DE27080BDE8F8DFA7A0 000236FD0036000236FF000236FF0004
+009C8BA8: 56503A4F62735F4D4D5F476574436C69 C0FF000736FD0036000236FD00360002
+009C8BB8: 70496E666F2072657475726E733A2564 36FF000336FF000336FF0004C0FF0007
+009C8BC8: 0A00000070402DE971DE4DE20050E0E3 36FD0036000236FD0036000236FF0003
+009C8BD8: 0100A0E3A7CEFAEB00F5FFEB6C6A1FE5 36FF000336FF0004C0FF000736FD0036
+009C8BE8: 0040A0E10300A0E344208FE20610A0E1 000236FD0036000236FF000236FF0004
+009C8BF8: 64B3F8EB000054E30A00000A0D10A0E1 36FF0004C003000536FD0036000236FD
+009C8C08: 0400A0E1E69CE8EB000050E30500001A 0036000236FF000236FF000436FF0006
+009C8C18: B030DDE158208FE20610A0E10300A0E3 C0FF000536FF00023602000336020002
+009C8C28: 58B3F8EBB050DDE10500A0E171DE8DE2 36FF000236FF000236FF0006C0FF0017
+009C8C38: 7080BDE856503A204A 36FF0007C0170022C0
+
+
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;X65v100
+;Графический индикатор температуры аккумулятора
+;Accu Temperature As Graphic Indicator
+;(c) benj9
+;(r) ACiDmrp, avkiev, BuG (i) ~Jhellico
+;Version: 3.0
+;PatchID: 6510
+;Details: https://patches.kibab.com/patches/details.php5?id=6510
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=Accu_Temperature_As_Graphic_Indicat.rar
+
+/*
+
+*/
+Качаем приложенный файл
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;M55v10
+;Включение/выключение громкой связи без подтверждения
+;Hadsfree on/off without confirmation
+;(c) SiNgle
+;Version: 
+;PatchID: 1478
+;Details: https://patches.kibab.com/patches/details.php5?id=1478
+/*
+
+*/
+0D0CCE: 9A010320DA22B453 CC00CC00DA2CB0FC
+;------------------------- end -------------------------
+

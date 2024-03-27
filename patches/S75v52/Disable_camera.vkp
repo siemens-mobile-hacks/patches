@@ -1,0 +1,23 @@
+;S75v52
+;Отключение камеры-MP
+;Disable camera-MP
+;(c) -=(Kad)=-
+;(p) SimaFish
+;Version: 
+;PatchID: 8796
+;Details: https://patches.kibab.com/patches/details.php5?id=8796
+/*
+Патч отключает камеру. Она не запускается через быструю клавишу и ГлавноеМеню, но срабатывает из NativeMenu.
+
+На вопрос, почему я не запостил этот патч в MP+FL, отвечу что тело "Disable camera Х75v100" зависит от врезки в конкретную прошивку, поэтому для 52 прошивки 006DA90: 0xA032D8AB в теле патча, должно быть заменено на 006DA90: 0xA032DCD7 (или D7DC32A0).
+*/
+041FF40: D7DC32A0 81DA06A0
+
+#pragma enable old_equal_ff
+006DA80: FFB50848C4DF01D101498847FFBDC046
+006DA90: D7DC32A0
+006DAA0: E4D3C2B1FFA00C000000000000000000,"\
+{p=`Disable camera` id=CA0FF}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

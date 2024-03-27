@@ -1,0 +1,15 @@
+;S75v52
+;Изменить имя для фото и видео
+;Change name of media-files
+;(c) avkiev
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8369
+;Details: https://patches.kibab.com/patches/details.php5?id=8369
+/*
+Теперь фотки можно именовать не img123.jpg, а 060608_121345.jpg
+*/
+03EEFB4: 0xA05B5155 0xA0063B01
+0063B48: 0xFFFFFFFF 0xA05B5155
+;------------------------- end -------------------------
+

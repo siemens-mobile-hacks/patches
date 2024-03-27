@@ -1,0 +1,13 @@
+;SL45iv56
+;Всегда показывать длительность в mp3
+;Always show song time in mp3
+;(c) Charger
+;Version: 
+;PatchID: 2120
+;Details: https://patches.kibab.com/patches/details.php5?id=2120
+/*
+
+*/
+3be402: 3d 0d
+;------------------------- end -------------------------
+

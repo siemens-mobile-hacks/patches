@@ -1,0 +1,30 @@
+;S75v47
+;Увеличение размера заметок
+;Upsize of notes
+;(c) alfinant
+;(r) Evgr
+;(p) Vitll
+;Version: 
+;PatchID: 10064
+;Details: https://patches.kibab.com/patches/details.php5?id=10064
+/*
+Размер увеличен до 1024 символов
+*/
+050647C: E6FEFFEB D2C2FBFA
+0589F4E: A0220E19 6DF643F8
+0589FF0: A022291C 6CF6F5FF
+0589FFA: A022291C 6CF6F0FF
+05D8134: B8B7FCEB A47BF8FA
+05E7E56: A022381C 0FF6C5F8
+05E7E68: A0220092 0FF6BFF8
+05E7FEE: A0210E1A 0EF6FFFF
+
+#pragma enable old_equal_ff
+03F6FCC:0D2801D1 
+03F6FD0:0A48704708490847084A0E197047074A 
+03F6FE0:291C7047054A381C7047044A00927047 
+03F6FF0:02490E1A70470000,0xA050601C,00040000 
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

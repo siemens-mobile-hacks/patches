@@ -1,0 +1,14 @@
+;CX75v25
+;Отключение браузера
+;Browser killer
+;(c) Zhek@
+;(p) sempai
+;Version: 
+;PatchID: 8582
+;Details: https://patches.kibab.com/patches/details.php5?id=8582
+/*
+отключение браузера добавляет ~1Mb свободной оперативной памяти
+*/
+0538BA0: FEF74BFB C046C046
+;------------------------- end -------------------------
+

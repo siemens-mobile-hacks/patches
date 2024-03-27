@@ -1,0 +1,19 @@
+;M55v11
+;Уменьшение размера шрифта даты и времени на главном экране
+;Reduce font size on mainscreen
+;(c) !Freeman!, SiNgle
+;(p) Asterix
+;Version: 
+;PatchID: 5191
+;Details: https://patches.kibab.com/patches/details.php5?id=5191
+/*
+based on patch Small Fonts © SiNgle
+*/
+3821B0: 06 08
+3821B8: 02 08
+3821C0: 02 08
+3821C8: 06 08
+3821D0: 06 08
+3821D8: 06 08
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;CF75v22
+;Из любого места жмем ### и попадаем в главное меню
+;Goto mainmenu from anywhere by pressing ###
+;(c) SiNgle
+;(p) ~Jhellico
+;Version: 
+;PatchID: 1505
+;Details: https://patches.kibab.com/patches/details.php5?id=1505
+/*
+Должен быть включен DevMenu и в пункте LOGAL\options - нажать Enable ###
+
+*/
+078DB38: 7FF0EBF8 06F5E2FD
+0494700: FFFFFFFFFFFFFFFF 004F38477F9F33A0 ;native menu
+;0494700: FFFFFFFFFFFFFFFF 004F3847ABF132A0 ;main menu
+
+;------------------------- end -------------------------
+

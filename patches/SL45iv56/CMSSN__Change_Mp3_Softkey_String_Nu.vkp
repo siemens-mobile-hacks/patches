@@ -1,0 +1,21 @@
+;SL45iv56
+;CMSSN. Изменить номера строк софт-клавиш Mp3
+;CMSSN. Change Mp3 Softkey String Number
+;(c) GoLL@B
+;Version: 
+;PatchID: 2663
+;Details: https://patches.kibab.com/patches/details.php5?id=2663
+/*
+English: This patch removes strings with pause and info from mp3 
+It's practical if we use sc0ty's indicators in mp3 v2 or v1 and we have 
+something at the bottom. Then softkeys are always covered. 
+It works also if we don't use Invert Softkeys and you can choose which string you want which not.
+
+
+Release: February 24, 2006
+*/
+0x1A0426: EF01 FFFF ;remove pause string
+0x1A0420: 2A01 FFFF ;remove info string
+0x1A042C: 1000 FFFF ;remove play string
+;------------------------- end -------------------------
+

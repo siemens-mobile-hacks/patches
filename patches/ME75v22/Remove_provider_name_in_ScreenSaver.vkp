@@ -1,0 +1,13 @@
+;ME75v22
+;Удалить имя опсоса из заставки
+;Remove provider name in ScreenSaver
+;(c) KiRiK
+;Version: 
+;PatchID: 5042
+;Details: https://patches.kibab.com/patches/details.php5?id=5042
+/*
+
+*/
+02D2684: E4EC 0028
+;------------------------- end -------------------------
+

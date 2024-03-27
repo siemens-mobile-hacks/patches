@@ -1,0 +1,14 @@
+;EL71v45
+;Классическая функция красной кнопки
+;Classic Red Button
+;(c) Rst7/CBSIE
+;(p) 1allen
+;Version: 
+;PatchID: 7929
+;Details: https://patches.kibab.com/patches/details.php5?id=7929
+/*
+
+*/
+095941C: 94 96
+;------------------------- end -------------------------
+

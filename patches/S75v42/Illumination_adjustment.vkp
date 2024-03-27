@@ -1,0 +1,15 @@
+;S75v42
+;Настройка подсветки
+;Illumination adjustment
+;(c) avkiev
+;(r) avkiev
+;(p) RainMaker AKA Shadow®
+;Version: 
+;PatchID: 4948
+;Details: https://patches.kibab.com/patches/details.php5?id=4948
+/*
+
+*/
+01B4C60: 08D04DE20000D0E564BD9FE5 04E08FE204F01FE5,0xA0066701   ; S75v42
+;------------------------- end -------------------------
+

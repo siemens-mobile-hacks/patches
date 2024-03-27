@@ -1,0 +1,23 @@
+;SL75v52
+;Исправление ошибок Native Menu
+;Fix mistakes in NativeMenu
+;(c) caine
+;(r) ThE TrIFoN
+;(p) Виктор89
+;Version: 
+;PatchID: 9309
+;Details: https://patches.kibab.com/patches/details.php5?id=9309
+/*
+В пункте "Интернет" работает меню. Исправлены пункты "Таймер" и "Архив сообщ."
+Присвоения NativeMenu собственного CSM НЕТ!
+---
+In menu item "Internet" submenu works. "Timer" & "Msg.archive" fixed.
+Has NO own CSM assignation to Native Menu!
+*/
+; Fix Internet (from v2)
+04444E4: 08 00
+; Fix Timer & SMS
+0444290: 9FD837A0 0DE132A0
+08CED60: FDA560A0 ABDD32A0
+;------------------------- end -------------------------
+

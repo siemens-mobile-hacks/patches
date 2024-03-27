@@ -1,0 +1,14 @@
+;S75v47
+;Отключить "Подождите" в Wap Push
+;Disable "Wait" in Wap Push
+;(c) Evgr
+;(p) Diman3452
+;Version: 
+;PatchID: 8604
+;Details: https://patches.kibab.com/patches/details.php5?id=8604
+/*
+В главном меню -> "Сообщения" -> "Wap Push" (8 пункт)
+*/
+053BE4E: 01F04DFA C046C046
+;------------------------- end -------------------------
+

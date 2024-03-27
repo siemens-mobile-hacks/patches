@@ -1,0 +1,18 @@
+;E71v45
+;Не выключаться при разряженном аккумуляторе
+;Don't switch off when akku is empty
+;(c) ThE TrIFoN
+;(p) Evgr
+;Version: 
+;PatchID: 10307
+;Details: https://patches.kibab.com/patches/details.php5?id=10307
+/*
+Частое использование патча может повредить аккумулятор! This patch can damage battery!
+Еще один патч для тех, кто готов ради одного-двух звонков рискнуть аккумулятором
+*/
+;Частое использование патча может повредить аккумулятор!
+;This patch can damage battery!
+
+01A464C: A47D0EEA 00210021
+;------------------------- end -------------------------
+

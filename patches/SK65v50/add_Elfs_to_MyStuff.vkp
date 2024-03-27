@@ -1,0 +1,18 @@
+;SK65v50
+;Добавить Эльфы в меню Файлы
+;Add Elfs to MyStuff
+;(c) ZoZoLe
+;(p) Лесной
+;Version: 
+;PatchID: 10125
+;Details: https://patches.kibab.com/patches/details.php5?id=10125
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sk65v50&f=add_Elfs_to_MyStuff.zip
+
+/*
+Заменяется адрес у SYSTEM_LNDMARKS - "0:\SYSTEM\LANDMARKS" на "0:\Zbin"
+*/
+04534BC: 30003A005C0053007900730074006500 30003A005C005A00620069006E000000
+04534CC: 6D005C004C0061006E0064006D006100 00000000000000000000000000000000 
+04534DC: 72006B0073 0000000000
+;------------------------- end -------------------------
+

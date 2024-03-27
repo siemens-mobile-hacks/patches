@@ -1,0 +1,17 @@
+;S75v47
+;Переименование файлов с расширением
+;Rename files with extensions
+;(c) SiNgle
+;(p) Zl0d
+;Version: 
+;PatchID: 5650
+;Details: https://patches.kibab.com/patches/details.php5?id=5650
+/*
+
+*/
+004D5AC8: 2E22 0022
+004D5ADA: 2E22 0022
+0059A754: 2E22 0022
+
+;------------------------- end -------------------------
+

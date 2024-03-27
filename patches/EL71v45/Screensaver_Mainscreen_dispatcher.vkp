@@ -1,0 +1,13 @@
+;EL71v45
+;Диспатчер заставки и главного экрана
+;Screensaver&Mainscreen dispatcher
+;(c) avkiev
+;Version: 
+;PatchID: 7507
+;Details: https://patches.kibab.com/patches/details.php5?id=7507
+/*
+
+*/
+070FE4E: 26229D44090169446844 C046,004A9047,0xA0063F01
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;SK65v50
+;Выделение Файлов Левой Софт-Кнопкой в Card-Explorer'е
+;Mark Files by Left Soft-Key in Card-Explorer
+;(c) 1nvisible
+;Version: 
+;PatchID: 4166
+;Details: https://patches.kibab.com/patches/details.php5?id=4166
+/*
+
+*/
+033BCE0: 02 08
+033BC6C: 360050E3 E30C32FA
+#pragma enable old_equal_ff
+0FBF000: 362800D1704703B449680979012903BC
+0FBF010: 01D036287047842036287047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

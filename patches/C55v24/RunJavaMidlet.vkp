@@ -1,0 +1,23 @@
+;C55v24
+;Запуск мидлетов по горячим клавишам
+;RunJavaMidlet
+;(c) Chaos, Single
+;(p) Sinclair
+;Version: 
+;PatchID: 4302
+;Details: https://patches.kibab.com/patches/details.php5?id=4302
+/*
+Копируете мидлет в папку a:\java\keys\N\, где N=2..9 - номер
+быстрой клавиши. Затем на выбранную клавишу устанавливаете "Запуск"
+*/
+4DB696: 1E05 0205
+4DB6D6: 8A07 0205
+4DB7FC: 1E051E05 02050205
+4DAE49: D0C057 E15437
+613740: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 613A5C6A6176615C6B6579735C305C2E
+613750: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 6A617200E6FE4037E6FF0D1ED7408403
+613760: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 992E08F1D7405800B92F3DF8D7505800
+613770: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F3F20C1EF7F21B1EE6FC0E1EE6FD5800
+613780: FFFFFFFFFFFF E01EFAAD9049
+;------------------------- end -------------------------
+

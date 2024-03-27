@@ -1,0 +1,19 @@
+;S75v47
+;Устранение утечки памяти при отображении IdleScreen
+;PIML (Patch Idle Memory Leak)
+;(c) Rst7/CBSIE
+;Version: 
+;PatchID: 7816
+;Details: https://patches.kibab.com/patches/details.php5?id=7816
+/*
+Теперь устранена неприятная утечка, из-за которой телефон начинал тормозить после длительного использования
+*/
+04EB3C4: 201CFFF721FB281C 0048004700A007A0
+
+#pragma enable old_equal_ff
+007A000: 0400A0E180C211FA0400A0E14D6A00EB
+007A010: 0500A0E1FE80BDE8
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

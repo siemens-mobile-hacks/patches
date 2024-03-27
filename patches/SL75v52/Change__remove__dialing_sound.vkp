@@ -1,0 +1,15 @@
+;SL75v52
+;Изменение (удаление) звука дозвона
+;Change (remove) dialing sound
+;(c) AlexSid
+;(p) SimaFish
+;Version: 
+;PatchID: 9348
+;Details: https://patches.kibab.com/patches/details.php5?id=9348
+/*
+
+*/
+1041664: 3400F6FF0200FAFF00000000FFFF0000DC05BA04BC0264003805BC026400C605BC026400BA04BC026400FFFF0000DC05F8FF00000000 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+;------------------------- end -------------------------
+

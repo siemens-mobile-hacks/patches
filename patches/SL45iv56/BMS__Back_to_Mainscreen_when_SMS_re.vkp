@@ -1,0 +1,18 @@
+;SL45iv56
+;BMS. Возврат на главный экран после прочтения SMS
+;BMS. Back to Mainscreen when SMS reading
+;(c) GoLL@B
+;(r) greenteas
+;Version: 
+;PatchID: 2671
+;Details: https://patches.kibab.com/patches/details.php5?id=2671
+/*
+English: Thanks to this patch we can go back to mainscreen immediately when we
+press red button while sms reading, we don`t go back to Inbox/Outbox
+
+
+Release: March, 25th, 2006
+*/
+0x39EA06: 46FC0A00 DAEEAC1C
+;------------------------- end -------------------------
+

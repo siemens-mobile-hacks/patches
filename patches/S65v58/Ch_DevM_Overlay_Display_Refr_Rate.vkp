@@ -1,0 +1,14 @@
+;S65v58
+;Изменить  частоту обновления Оverlaу
+;Change DevMenu Overlay Display Refresh Rate
+;(c) benj9
+;Version: 
+;PatchID: 2726
+;Details: https://patches.kibab.com/patches/details.php5?id=2726
+/*
+Изменяет частоту обновления Оverlay.
+А скрин - это так, повеселей чтоб было, это из патча 2746 на анимацию музыки как s75, реклама патча, что чуть выше.
+*/
+08C8D12: 36 6C ; internal timer ~ miliseconds * 216.7 / 1000
+;------------------------- end -------------------------
+

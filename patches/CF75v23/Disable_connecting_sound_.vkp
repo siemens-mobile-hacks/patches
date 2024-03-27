@@ -1,0 +1,14 @@
+;CF75v23
+;Убрать звук дозвона
+;Disable connecting sound
+;(c) AlexSid
+;Version: 
+;PatchID: 4830
+;Details: https://patches.kibab.com/patches/details.php5?id=4830
+/*
+
+*/
+0E7806C: BCD6E8A0 00000000
+
+;------------------------- end -------------------------
+

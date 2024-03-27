@@ -1,0 +1,36 @@
+;X75v100
+;NeoGeo
+;NeoGeo
+;(c) cbn
+;Version: 0.11
+;PatchID: 6765
+;Details: https://patches.kibab.com/patches/details.php5?id=6765
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=NeoGeo_011.zip
+
+/*
+NeoGeoPocket эмулятор elf
+Продолжаем эмуляцию игровых приставок :)
+Поддерживаются сжатые 7z ромы, переименованные в .ngc
+Зеленая кнопка и число задают frameskip (пропуск кадров).
+Демо вложено.
+Версия для SGOLD, NEWSGOLD.
+
+Распаковать в папку 4:\ZBin\NeoGeo
+В extension.cfg добавить строку:
+ngc:4:\ZBin\NeoGeo\NeoPop.elf
+
+
+*/
+Продолжаем эмуляцию игровых приставок :)
+Поддерживаются сжатые 7z ромы, переименованные в .ngc
+Зеленая кнопка и число задают frameskip (пропуск кадров).
+Демо вложено.
+Версия для SGOLD, NEWSGOLD.
+
+Распаковать в папку 4:\ZBin\NeoGeo
+В extension.cfg добавить строку:
+ngc:4:\ZBin\NeoGeo\NeoPop.elf
+
+Скачайте приложенный файл
+;------------------------- end -------------------------
+

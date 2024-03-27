@@ -1,0 +1,20 @@
+;CX70v50
+;Перенос файлов Пилота на диск Config
+;Carry of files of the Pilot on disk Config
+;(c) Basile
+;(p) Ambidexterous
+;Version: 
+;PatchID: 98
+;Details: https://patches.kibab.com/patches/details.php5?id=98
+/*
+Патч переносит файлы Пилота на диск Config.
+Т.к. на диске Config места мало желательно вручную распаковать файл-архив Пилота(*.sda) и разместить по папочкам.
+Ну и конечно папку с Phone Pilot нужно скопировать на конфиг и убрать в конце букву "s"
+
+*/
+0A4EF88: 0E00,'0:\\PhonePilots' 0D00,'2:\\PhonePilot',0000
+0A4EFB2: 1300,'0:\\PhonePilots\\List' 1200,'2:\\PhonePilot\\List',0000
+0A4EFE6: 1200,'0:\\PhonePilots\\Res' 1100,'2:\\PhonePilot\\Res',0000
+0A4F018: 1200,'0:\\PhonePilots\\Tmp' 1100,'2:\\PhonePilot\\Tmp',0000
+;------------------------- end -------------------------
+

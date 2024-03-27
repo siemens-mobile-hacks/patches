@@ -1,0 +1,15 @@
+;CX70v56
+;Отключение ASP
+;Disable ASP
+;(c) caine
+;(p) Grizzzzly
+;Version: 
+;PatchID: 5412
+;Details: https://patches.kibab.com/patches/details.php5?id=5412
+/*
+отключение нарастания громкости. за Ваши уши в ответе только Вы!!!
+*/
+11BE010: 00 01
+11BE014: 02 01
+;------------------------- end -------------------------
+

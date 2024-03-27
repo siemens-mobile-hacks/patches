@@ -1,0 +1,31 @@
+;M75v25
+;Замена ### на любое сочетание
+;Change ### on any key
+;(c) Andrey_ua, kraze1984
+;(p) Grizzzzly
+;Version: 1.1
+;PatchID: 5767
+;Details: https://patches.kibab.com/patches/details.php5?id=5767
+/*
+Патч для замены комбинации ### на любую другую( до 4 клавиш )
+*/
+7D6480: 23232300 nnNNnnNN
+
+; * : 2A
+; # : 23
+; SK left : 01
+; SK right : 04;
+; joy up : 3B
+; down : 3c;
+; left : 3d;
+; right : 3e
+; joy center : 1A
+; callkey : 0b
+; on/off : 0c
+; 0...9 : 30...39
+; Camera key( Vol+ ) : 14
+; PTT key( Vol- ) : 15
+
+; Например: 7D6480: 23232300 15151500 означает открытие не по ###, а по трем нажатиям кнопки PTT
+;------------------------- end -------------------------
+

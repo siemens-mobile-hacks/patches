@@ -1,0 +1,15 @@
+;S75v52
+;Убрать сообщение "Все сигналы вкл/выкл"
+;Disable message "All ringtones on/off"
+;(c) SiNgle
+;(p) Vedan
+;Version: 
+;PatchID: 8395
+;Details: https://patches.kibab.com/patches/details.php5?id=8395
+/*
+
+*/
+03451CA: A7F018ED C046C046
+03451E8: A7F008ED C046C046
+;------------------------- end -------------------------
+

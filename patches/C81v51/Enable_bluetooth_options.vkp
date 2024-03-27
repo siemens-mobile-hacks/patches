@@ -1,0 +1,20 @@
+;C81v51
+;Использовать экстра-опции bluetooth-монитора
+;Enable extra options of the bluetooth monitor
+;(c) funMarkus
+;(p) BalakinUser
+;Version: 
+;PatchID: 8661
+;Details: https://patches.kibab.com/patches/details.php5?id=8661
+/*
+
+*/
+0A8B1BC: 00 01 ; Enable bluetooth power saving
+0A8B13C: 40 20 ; Set to 2.56ms
+0A8B1A4: 00 01 ; Start RSSI mea.
+0A8B2E4: 00 01 ; Start AFH mea.
+0A8B2FC: 00 01 ; Start PowerLev mea.
+0A8B15C: 00 01 ; Block AFH chnl
+0A8B128: 00 01 ; Java sec. low
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;SL45iv56
+;Не включать подсветку после разблокировки клавиатуры
+;No Temporary Light After Key Unlocked
+;(c) RainMoon
+;Version: 3
+;PatchID: 1678
+;Details: https://patches.kibab.com/patches/details.php5?id=1678
+/*
+Исправлены ошибки 1-й и 2-й версии, когда "Красная Трубка" не 
+могла включить подсветку. Теперь при залоченной клаве включает 
+не на долго подсветку.
+
+Release: Sep 4, 2003
+
+Патч №084 с http://patch.oslik.ru/SL45_RU
+*/
+362AFC: DAC1C8FB CC00CC00
+;------------------------- end -------------------------
+

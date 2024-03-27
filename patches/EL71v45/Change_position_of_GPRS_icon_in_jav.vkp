@@ -1,0 +1,15 @@
+;EL71v45
+;Изменить позицию картинки GPRS в джаве
+;Change position of GPRS icon in java
+;(c) Visad
+;(r) BingK(binghelingxi)
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8618
+;Details: https://patches.kibab.com/patches/details.php5?id=8618
+/*
+Иконка будет отображаться в верхнем левом углу(как в Nokia)
+*/
+0AEDD5C: 010080E2 050081E2
+;------------------------- end -------------------------
+

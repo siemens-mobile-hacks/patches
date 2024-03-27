@@ -1,0 +1,25 @@
+;SL65v53
+;Launch start_elf (c)Geka by hotkey
+;Launch start_elf (c)Geka by hotkey
+;(c) Kibab
+;(r) RainMaker, den11111, Дэн, Geka
+;(p) Benlux
+;Version: 
+;PatchID: 6983
+;Details: https://patches.kibab.com/patches/details.php5?id=6983
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl65v53&f=Launch_start_elf__c_Geka_by_hotkey.rar
+
+/*
+by DSE is needs set function: "CNCT_BUSINESSCD" below some key 
+*/
+0922560: 4D3A8EA0 0xa0FBA151 ;CNCT_BUSINESSCD
+
++0FBA150 
+#pragma enable old_equal_ff
+00: FFB58020C7DF2501061C05A18022C7DF
+10: 6C010021301C94DF301CC7DF2901FFBD
+20: "0:\\ZBin\\utilities\\start_elf.elf",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

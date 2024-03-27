@@ -1,0 +1,22 @@
+;C81v51
+;Отключить "Получено новое сообщение!" при входящем SMS
+;Disable "New message received!" at incoming SMS
+;(c) Evgr
+;(p) dimonp25
+;Version: 0.11
+;PatchID: 8175
+;Details: https://patches.kibab.com/patches/details.php5?id=8175
+/*
+Баг: входящая смс не включает подсветку экрана
+*/
+; Отключить "Получено новое сообщение!" при входящем SMS 
+; Disable "New message received!" at incoming SMS 
+; C81v51
+; (c) Evgr
+; v0.11
+; Баг: входящая смс не включает подсветку экрана
+
+034B6F6: ADF0F8E9 c046c046
+
+;------------------------- end -------------------------
+

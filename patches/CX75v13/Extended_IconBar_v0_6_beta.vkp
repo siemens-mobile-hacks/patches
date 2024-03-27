@@ -1,0 +1,39 @@
+;CX75v13
+;Расширенный Иконбар
+;Extended IconBar
+;(c) 1nvisible
+;(r) BuG
+;(p) KIBER-DEMON
+;Version: 0.6
+;PatchID: 7161
+;Details: https://patches.kibab.com/patches/details.php5?id=7161
+/*
+
+*/
+; Extends IconBar up to 8 Icons
+; fixed in v0.6: switched-off display of charging icon works now
+
+0229F65: 69 6F
+02212B5: 68 6E
+02A8C04: 85 45 ;disable 1st check
+02A8C06: AD 6D
+02A8C24: F00024 00208C ;another fix to support 8 icons
+
+;02A8BDA: 10 1E ;canvas end Y coordinate - see * Mainscreen Positioning *
+;02A8BDE: 01 10 ;canvas start Y coordinate - see * Mainscreen Positioning *
+
+02A906C: 04 08 ;disable 2nd check
+02A9070: 04 08
+
+;02A907A: 42 50 ;extend iconbar length - see * Mainscreen Positioning *
+;02A9090: 21 00 ;starting X coordinate - see * Mainscreen Positioning *
+
+02A90A2: 08 10 ;fix to support 8 icons
+
+;02A90AA: 02 10 ;change Y coordinate - see * Mainscreen Positioning *
+
+02973E6: 05 00 ;disable 3rd check
+02A90F2: 1C 7C ;fix accu bug
+0069FE0: 74 D4 ;move 1st RAM
+;------------------------- end -------------------------
+

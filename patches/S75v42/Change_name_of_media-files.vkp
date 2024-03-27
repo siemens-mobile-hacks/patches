@@ -1,0 +1,15 @@
+;S75v42
+;Изменить имя для фото и видео
+;Change name of media-files
+;(c) avkiev
+;(p) RainMaker AKA Shadow®
+;Version: 
+;PatchID: 4952
+;Details: https://patches.kibab.com/patches/details.php5?id=4952
+/*
+
+*/
+03ED404: 0xA05B2935 0xA0063B01   ; /S75v42
+0063B48: 0xFFFFFFFF 0xA05B2935   ; \S75v42
+;------------------------- end -------------------------
+

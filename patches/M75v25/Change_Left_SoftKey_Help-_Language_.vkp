@@ -1,0 +1,18 @@
+;M75v25
+;Изменить левую софт-клавишу Справка->Язык
+;Change Left SoftKey Help->Language (Text ID)
+;(c) KiRiK
+;(p) VoVkA
+;Version: 
+;PatchID: 4910
+;Details: https://patches.kibab.com/patches/details.php5?id=4910
+/*
+
+*/
+04E85E8: 92 5B ;в MMS
+0632E44: 92 5B ;в SMS
+06448C4: 92 5B ;в Текст.модулях
+078EBB0: 92 5B ;в e-mail
+07A4738: 92 5B ;в адрессбуке
+;------------------------- end -------------------------
+

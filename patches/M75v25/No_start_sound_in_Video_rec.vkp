@@ -1,0 +1,13 @@
+;M75v25
+;Отключить звук в начале записи видео
+;No start sound in Video rec
+;(c) SiNgle
+;Version: 
+;PatchID: 4088
+;Details: https://patches.kibab.com/patches/details.php5?id=4088
+/*
+
+*/
+02D9830: 1A 1D
+;------------------------- end -------------------------
+

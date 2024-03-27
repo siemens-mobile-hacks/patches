@@ -1,0 +1,14 @@
+;SL65v53
+;Отключение ошибки dplhandler
+;Disable dplhandler error
+;(c) Ivanhoe
+;(p) dimonp25
+;Version: 0.1
+;PatchID: 9078
+;Details: https://patches.kibab.com/patches/details.php5?id=9078
+/*
+Для тех, у кого телефон зависает и с пиком выключается через 4-5 минут. Патч отключает эту ошибку.
+*/
+1279aac: 02 00
+;------------------------- end -------------------------
+

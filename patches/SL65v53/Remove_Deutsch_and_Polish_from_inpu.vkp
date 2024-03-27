@@ -1,0 +1,14 @@
+;SL65v53
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;Version: 
+;PatchID: 5210
+;Details: https://patches.kibab.com/patches/details.php5?id=5210
+/*
+
+*/
+1201DEA: 00 01
+1201E22: 00 01
+;------------------------- end -------------------------
+

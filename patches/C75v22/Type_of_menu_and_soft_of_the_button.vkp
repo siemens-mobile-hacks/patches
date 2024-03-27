@@ -1,0 +1,15 @@
+;C75v22
+;Шрифт меню и софт кнопок
+;Type of menu and soft of the buttons
+;(c) SiNgle
+;Version: 
+;PatchID: 4203
+;Details: https://patches.kibab.com/patches/details.php5?id=4203
+/*
+
+*/
+0490CAC: 03 02 ; Шрифт софт-кнопок
+0490CF4: 03 08 ; Выбраная позиция меню
+0490CF8: 02 08 ; Список меню
+;------------------------- end -------------------------
+

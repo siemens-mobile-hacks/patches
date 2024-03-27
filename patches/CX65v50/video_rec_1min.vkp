@@ -1,0 +1,14 @@
+;CX65v50
+;Запись видео 1 минуту
+;Video recording 1 minute
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 222
+;Details: https://patches.kibab.com/patches/details.php5?id=222
+/*
+В настройках видео поставить "Время записи: максимум"
+*/
+08D8D12: 0300C8C003 2000C8C020
+;------------------------- end -------------------------
+

@@ -1,0 +1,103 @@
+;CF75v22
+;API
+;API
+;(c) avkiev, empeka, 1nvisible
+;(r) PatcherZ Community
+;Version: 060512
+;PatchID: 3346
+;Details: https://patches.kibab.com/patches/details.php5?id=3346
+/*
+Патч содержит несколько функций, которые переопределяют либо расширяют стандартные функции прошивки.
+В этой редакции содержится:
+HexToInt - конвертация строки с шестнадцатеричным значением в 32-битное число.
+Return - армовская процедура возврата.
+StrAnsi2Uni, StrUni2Ansi, CharAnsi2Unicode, CharUnicode2Ansi - функции перевода строк и символов из ANSI в Unicode и обратно (с поддержкой русского языка).
+English:
+Patch contanins several functions that overload or expand standard FW functions.
+*/
++F00000
+;HexToInt
+; (c) empeka
+/*
+this function converts numerical string containing hexadecimal value to 32bit integer.
+Parameters:
+R0: pointer to string
+R1: address for pointer containing last processed byte from input string (optional)
+Output:
+R0: received value (32bit)
+R1: pointer to last processed character.
+
+Notes:
+Function automatically skips blanks (0x20) and new lines (0x13) in given string, so "123 4" is possible in input.
+if function encounter character, which is one of above, nor hexadecimal digit, it breaks execution.
+*/
+
+#pragma enable old_equal_ff
+F050: 10B5002302780130141C093C042CF9D9
+F060: 202AF7D0302A15D3662A13D8392A09DD
+F070: 412A0FDB462A03DD612A0BDB573A02E0
+F080: 373A00E0303A1C1C102363439B180278
+F090: 0130E7E7002901D001380860181C10BD
+#pragma disable old_equal_ff
+
+;Return Procedure
+;v1.0
+;(c) 1nvisible
+;Returns from ldr/blx patches by adding 4 to LR
+#pragma enable old_equal_ff
+F030: 0040BDE804E08EE21EFF2FE1
+#pragma disable old_equal_ff
+
+;OpenWriteCloseFile
+;v1.1
+; (c) 1nvisible
+;Writes Buffer to a File
+;R0 - File Name
+;R1 - Buffer Pointer
+;R2 - Bytes to Write
+#pragma enable old_equal_ff
+F000: FFB50D1C161C0849FF2201326B46F1F7
+F010: 1FF8291C321C061C6B46F1F721F8301C
+F020: 6946F1F721F8FFBD01030000
+#pragma disable old_equal_ff
+
+; ADDED 10.05.2006
+; ANSI-to-Unicode and Unicode-to-ANSI conversion routines (Cyrillic support)
+
+#pragma enable old_equal_ff
+
+; StrAnsi2Uni
+; in: R0 = pointer to ANSI string (0-term),
+; R1 = pointer to Unicode string buffer (1st word - len)
+F0A0: FFB5021C00230024D05C002805D000F0
+F0B0: 17F8085301330234F6E70B80FFBD
+
+; StrUni2Ansi
+; in: R0 = pointer to Unicode string (1st word - len),
+; R1 = pointer to ANSI string buffer
+F0C0: FFB50388821C108800F03AF808700131
+F0D0: 0232013B002BF6D10B70FFBD
+
+; CharAnsi2Unicode
+; in: R0 = ANSI char
+; out: R0 = Unicode char
+F0E0: 02B5A821884228DB15D0401A182803DB
+F0F0: 572822DC08381DE002280ED007280ED0
+F100: 0A280ED00B280ED010280ED012280ED0
+F110: 17280ED011E001200CE004200AE00720
+F120: 08E0062006E0562004E0512002E05420
+F130: 00E0572004210902401802BD
+
+; CharUnicode2Ansi
+; in: R0 = Unicode char
+; out: R0 = ANSI char
+F140: 02B504210902884228DB401A102803DB
+F150: 4F280ADC083020E001280FD004280FD0
+F160: 06280FD007280FD018E051280ED05428
+F170: 0ED056280ED057280ED00FE000200CE0
+F180: 02200AE00A2008E0072006E0102004E0
+F190: 122002E00B2000E01720A83002BD
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

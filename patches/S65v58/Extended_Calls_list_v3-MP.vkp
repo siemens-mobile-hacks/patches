@@ -1,0 +1,14 @@
+;S65v58
+;Расширенный список вызовов
+;Extended Calls list
+;(c) BoBa
+;(p) -=(Kad)=-
+;Version: 3-MP
+;PatchID: 3701
+;Details: https://patches.kibab.com/patches/details.php5?id=3701
+/*
+
+*/
+16B5C18: 0B77AAA0 0xA0FC8001
+;------------------------- end -------------------------
+

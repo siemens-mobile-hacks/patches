@@ -1,0 +1,14 @@
+;EL71v45
+;Расширенный список вызовов
+;Extended Calls dialed list
+;(c) DJ
+;Version: 5
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9685
+;PatchID: 7999
+;Details: https://patches.kibab.com/patches/details.php5?id=7999
+/*
+
+*/
+C4288C: 0xA0961303 0xA006FE01
+;------------------------- end -------------------------
+

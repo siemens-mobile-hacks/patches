@@ -1,0 +1,15 @@
+;CF75v23
+;Показывать только последние 2 цифры года
+;Show only last 2 digits of year
+;(c) ?
+;(p) Виктор89
+;Version: 
+;PatchID: 9868
+;Details: https://patches.kibab.com/patches/details.php5?id=9868
+/*
+Вместо допустим 2010 будет отображаться 10
+*/
+02D208E: 1F 17
+02D2092: 0F 07
+;------------------------- end -------------------------
+

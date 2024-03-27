@@ -1,0 +1,21 @@
+;M65v50
+;Значок Вибры на главном экране
+;Vibra logo on MainScreen
+;(c) SiNgle
+;(r) (i) BuG  (i) 1nvisible
+;(p) AsteriX
+;Version: 2
+;PatchID: 1767
+;Details: https://patches.kibab.com/patches/details.php5?id=1767
+/*
+На гланом экране будет отображаться значок вибры.
+Используется значок *!* как значок вибры, можете нарисовать что хотите сами.
+
+(i) BuG: works from start-up now, without clicking some menus
+*/
+08CA1C0: 01D1 C046
+1633D2A: 08D0 0028
+;1633D30: 00 01 ; show logo when vibra is disabled
+1650370: 216BB4 43218E
+;------------------------- end -------------------------
+

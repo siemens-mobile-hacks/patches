@@ -1,0 +1,19 @@
+;C81v51
+;Устранение утечки памяти при отображении IdleScreen_1
+;Disable memory leak
+;(c) Rst7/CBSIE
+;(p) dimonp25
+;Version: 
+;PatchID: 10214
+;Details: https://patches.kibab.com/patches/details.php5?id=10214
+/*
+Патч перенесён на новое место для ELFPack 3.0 by Z.Vova & Ganster Это каторый для нового elf loadera,т.к. загрузчик стал больше по размеру перенесен на новое место.
+
+*/
+04FC340: 201CFFF721FB281C 00480047d0b207A0
+#pragma enable old_equal_ff
+007b2d0: 0400A0E180C211FA0400A0E14D6A00EB
+007b2e0: 0500A0E1FE80BDE8
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

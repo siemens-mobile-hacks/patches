@@ -1,0 +1,30 @@
+;SL45iv56
+;Стиль некоторых цифр в MP3-плеере
+;Some Digital Style in mp3 display
+;(c) greenteas
+;Version: 
+;PatchID: 3238
+;Details: https://patches.kibab.com/patches/details.php5?id=3238
+/*
+English: Release: April 28th, 2006
+*/
+0x3BE0EF: 8E 3E ; playtime (время проигрывания)
+0x3BDFAF: 7E 3E ; xx khz 
+0x3BDFE1: 7E 3E ; Total time (время дорожки)
+
+;?E 
+;Font code (коды шрифтов для замены)
+;00 = Very small
+;01 = Big
+;02 = Thin
+;03 = Normal
+;04 = Small for limited chars, numbers etc
+;05 = Very small, limited chars, numbers etc
+;06 = Very-very small, numbers only
+;07 = Small
+;08 = Small Bold
+;09 = WAP
+;0A = Big Phone Numbers
+;0B = Thin (reduced height/space)
+;------------------------- end -------------------------
+

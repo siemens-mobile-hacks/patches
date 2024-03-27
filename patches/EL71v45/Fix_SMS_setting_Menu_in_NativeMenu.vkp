@@ -1,0 +1,16 @@
+;EL71v45
+;Фикс меню Сообщения-Настройки в NativeMenu
+;Fix SMS setting Menu in NativeMenu
+;(c) BingK(binghelingxi)
+;(p) ahk
+;Version: 
+;PatchID: 8960
+;Details: https://patches.kibab.com/patches/details.php5?id=8960
+/*
+Нормальное отображение меню, строки больше не съезжают вправо
+*/
+0898C38: 91 10
+07BF462: 30 18
+07BF364: D6 F2
+;------------------------- end -------------------------
+

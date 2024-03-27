@@ -1,0 +1,47 @@
+;SL45iv56
+;Просто индикатор громкости в MP3
+;Volume indicator in MP3
+;(c) Charger
+;Version: 
+;PatchID: 2035
+;Details: https://patches.kibab.com/patches/details.php5?id=2035
+/*
+Правильно работает в паузе, не влияет на производительность при больших 
+битрейтах, т.к. не обновляется постоянно; очень быстро реагирует на нажатия 
+кнопок громкости  
+один минус - если заходить в меню, индикатор исчезает, но появляется на 
+следующем треке, или по нажатию клавиш громкости.
+*/
+3BDBB2: 88D088C0 DAC700D5 
+3BA12E: DAD0585C DAC71ED5 
+
+0x27D500: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88D088C0D7403200C2FEB42F06FE1903 
+0x27D510: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC4700E6FD0300DAC1EC22DB00DAD0 
+0x27D520: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 585CC0CE06FE1903E6FC4700E6FD0300 
+0x27D530: FFFFFFFFFFFF DAC1EC22DB00 
+
+
+;27D50E: 1903; 793 (319h) - первая картинка громкости 
+;27D526: 1903 
+
+;27D512: 47 ; xpos 
+;27D52A: 47 
+
+;27D516: 03 ; ypos 
+;27D52E: 03 
+
+;добавляет 10 картинок в конец, если не стоит добавление 100 
+4BBD7E: 010101000000FC02 1E0701001224FF02 ;picture 793 
+4BBD86: 010101000000FC02 1E0701002E24FF02 ;picture 794 
+4BBD8E: 010101000000FC02 1E0701004A24FF02 ;picture 795 
+4BBD96: 010101000000FC02 1E0701006624FF02 ;picture 796 
+4BBD9E: 010101000000FC02 1E0701008224FF02 ;picture 797 
+4BBDA6: 010101000000FC02 1E0701009E24FF02 ;picture 798 
+4BBDAE: 010101000000FC02 1E070100BA24FF02 ;picture 799 
+4BBDB6: 010101000000FC02 1E070100D624FF02 ;picture 800 
+4BBDBE: 010101000000FC02 1E070100F224FF02 ;picture 801 
+4BBDC6: 010101000000FC02 1E0701000E25FF02 ;picture 802 
+
+;картинки ставьте сами 
+;------------------------- end -------------------------
+

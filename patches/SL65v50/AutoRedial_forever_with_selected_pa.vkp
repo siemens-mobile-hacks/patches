@@ -1,0 +1,15 @@
+;SL65v50
+;Автодозвон постоянно с заданной паузоЙ
+;AutoRedial forever with selected pause
+;(c) SiNgle
+;Version: 
+;PatchID: 5167
+;Details: https://patches.kibab.com/patches/details.php5?id=5167
+/*
+
+*/
+0B47FBC: A068 0020
+0B47FE5: 30 20
+0BE299C: 05 0A ; пауза (0A=10 секунд)
+;------------------------- end -------------------------
+

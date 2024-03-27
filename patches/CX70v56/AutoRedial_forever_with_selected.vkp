@@ -1,0 +1,16 @@
+;CX70v56
+;Автодозвон постоянно с заданной паузой
+;AutoRedial forever with selected pause
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 671
+;Details: https://patches.kibab.com/patches/details.php5?id=671
+/*
+Автодозвон постоянно с заданной паузой.
+*/
+0BA0D74: A068 0020
+0BA0D9D: 30 20
+0C65C3C: 05 0A ; пауза (0A=10 секунд)
+;------------------------- end -------------------------
+

@@ -1,0 +1,32 @@
+;SL45iv56
+;MP3BSA. Пустой экран в mp3 для экономии батареи (mp3lcd v2a)
+;MP3BSA. Blank Screen for Battery Saving in mp3 (mp3lcd v2a)
+;(c) Charger
+;Version: 
+;PatchID: 5754
+;Details: https://patches.kibab.com/patches/details.php5?id=5754
+/*
+Please undo any previous version.
+
+Turns off LCD when locking keys during mp3 playing. Display will be
+shut off completely and saves power.
+
+v2 - selectable through 4th item of app menu (same no. like "blank screen")
+ - turn on lcd on incoming call, incoming sms, etc
+v2a (rc-flitzer):
+ - Moved patch from 0x27D5C0 to 0x27D6F0, overwriting deprecated patch
+"collection of mainscreen patches". If you still have it in use,
+please switch to "base of mainscreen patches" from Goll@B.
+
+
+Modified: May 12, 2006
+September 24th, 2006 (v2a: moved patch)
+*/
+3BA1D0: F0C8F0D9 DAC7F0D6
+
+0x27D6F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400E00F3F9423A9AF40CB0DADB22ED
+0x27D700: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 48413D0BDAC00ECCE7F80000D7403500
+0x27D710: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F7F80039F0C8F0D9DB00DAC008CCE118
+0x27D720: FFFFFFFFFFFFFFFFFFFFFFFFFFFF D7403500F7F80039F0C8F0D9DB00
+;------------------------- end -------------------------
+

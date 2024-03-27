@@ -1,0 +1,27 @@
+;CX75v13
+;Перемещение некоторых папок
+;Some folders relocation
+;(c) Athlonfreak, avkiev, kraze1984, KiRiK
+;(p) deoide
+;Version: 1.0
+;PatchID: 813
+;Details: https://patches.kibab.com/patches/details.php5?id=813
+/*
+RUS: Переназначает расположение папок.
+
+ENG: Renominates an arrangement of folders.
+*/
+;Mediapool/Sounds->MMC/Sounds
+04A4598: 30 34
+
+;misc on MMC
+04A4744: 30 34
+04A4772: 30 34
+
+;save videos and photos on MMC
+04A4AF4: 30 34
+
+;skins on MMC
+04A4BCE: 30 34
+;------------------------- end -------------------------
+

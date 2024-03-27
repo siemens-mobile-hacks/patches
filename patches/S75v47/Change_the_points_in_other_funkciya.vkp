@@ -1,0 +1,38 @@
+;S75v47
+;Замена пунктов в друг.функциях на эльфы
+;Change the points in other funkciyah on elfs
+;(c) KIBER-DEMON
+;(r) Kibab
+;(p) den11111
+;Version: 1
+;PatchID: 8570
+;Details: https://patches.kibab.com/patches/details.php5?id=8570
+/*
+Патч заменяет такие пункты в меню\друг.функции Калькулятор, Таймер и Секундомер на эльфы, можно взять такие как SCalca, eTimer и StopWatch соответственно.
+Кинуть в 2:\\MenuContent\\, или прописать самому путь к эльфам.
+В патч входит замена двух типов:main menu\shortcat и emenu\native menu.Что не надо можно закаментировать.
+*/
+;----------------------main menu\shortcat-----------------------------------
+041F7F8: 09DE32A0 717506A0 ;Калькулятор=>SCalca
+0420278: 39DF32A0 B17506A0 ;Таймер=>eTimer
+04257F8: 29DF32A0 F17506A0 ;Секундомер=>StopWatch
+;----------------------emenu\native menu------------------------------------
+043EE00: F99437A0 717506A0 ;Калькулятор=>SCalca
+043EE14: 4F9537A0 B17506A0 ;Таймер=>eTimer
+043EE10: 459537A0 F17506A0 ;Секундомер=>StopWatch
+;---------------------------------------------------------------------------
++0067530
+#pragma enable old_equal_ff
+40: FFB58020C7DF2501061C05A18022C7DF
+50: 6C010021301C94DF301CC7DF2901FFBD
+60: "2:\\MenuContent\\SCalka.elf",00
+80: FFB58020C7DF2501061C05A18022C7DF
+90: 6C010021301C94DF301CC7DF2901FFBD
+A0: "2:\\MenuContent\\eTimer.elf",00
+C0: FFB58020C7DF2501061C05A18022C7DF
+D0: 6C010021301C94DF301CC7DF2901FFBD
+E0: "2:\\MenuContent\\StopWatch.elf",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

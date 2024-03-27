@@ -1,0 +1,18 @@
+;C72v22
+;Идем в Native menu по нажатию ###
+;Go to Native Menu by pressing ###
+;(c) SiNgle
+;(p) птичка
+;Version: 
+;PatchID: 5938
+;Details: https://patches.kibab.com/patches/details.php5?id=5938
+/*
+Из любого места жмем ### и попадаем в главное меню.
+
+Должен быть включен DevMenu и в пункте LOGAL\options - нажать Enable ### 
+
+Goto DevMenu\LOGAL\options and press Enable ###
+*/
+0B9B220: 51F0A7F9 5CF57FFA 
+;------------------------- end -------------------------
+

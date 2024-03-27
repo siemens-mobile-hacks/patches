@@ -1,0 +1,27 @@
+;CX70v56
+;Blinker
+;Blinker
+;(c) benj9
+;(r) 1nvisible, avkiev, BuG, Chaos
+;(p) Lost
+;Version: 3.2-MP
+;PatchID: 6207
+;Details: https://patches.kibab.com/patches/details.php5?id=6207
+/*
+Врезка для Blinker Version: 3.2 ID:1587
+
+*/
+;CX70v56
+;Blinker
+;(c) benj9
+;(r) 1nvisible, avkiev, BuG, Chaos
+;(p) Lost
+;Version: 3.2-MP
+
+115116C: 0070A0E1 A72DFAEB
+
+#pragma enable old_equal_ff
+0FDCCD0: 40000000,300200A8,0xA8004CF4,0xA868F33C ; -RBC  - x65 (?)
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

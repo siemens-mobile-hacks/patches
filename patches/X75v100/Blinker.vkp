@@ -1,0 +1,17 @@
+;X75v100
+;Blinker
+;Blinker
+;(c) alex_itd
+;(p) -=(Kad)=-
+;Version: 
+;PatchID: 6552
+;Details: https://patches.kibab.com/patches/details.php5?id=6552
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Blinker.zip
+
+/*
+Добавлена конфигурация, параметры вибры, выбор чем моргать, воспроизведение звука
+
+*/
+качаем аттач
+;------------------------- end -------------------------
+

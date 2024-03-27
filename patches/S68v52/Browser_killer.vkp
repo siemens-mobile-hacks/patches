@@ -1,0 +1,14 @@
+;S68v52
+;Отключение браузера
+;Browser killer
+;(c) Zhek@
+;(p) Hotter
+;Version: 
+;PatchID: 10260
+;Details: https://patches.kibab.com/patches/details.php5?id=10260
+/*
+
+*/
+044101A: FEF72BFF C046C046
+;------------------------- end -------------------------
+

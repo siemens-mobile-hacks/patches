@@ -1,0 +1,19 @@
+;EL71v45
+;Statusbar Dispatcher
+;Statusbar Dispatcher
+;(c) benj9
+;Version: 1.01
+;PatchID: 8028
+;Details: https://patches.kibab.com/patches/details.php5?id=8028
+/*
+for dis files with id 5
+only change: disable master with "#" while booting works again
+*/
+0830638: 212C5CA0 0xA1380011
+#pragma enable old_equal_ff
+1380000: 5374426172447370312C62656E6A3900
+1380010: 80B5054FB847C7DFE4800068002801D0
+1380020: 0520C1DF80BD0000,0xA05C253F
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

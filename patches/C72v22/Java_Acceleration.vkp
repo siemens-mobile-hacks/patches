@@ -1,0 +1,15 @@
+;C72v22
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 5850
+;Details: https://patches.kibab.com/patches/details.php5?id=5850
+/*
+
+*/
+;* Ускоритель явы ** Java Acceleration *  © SiNgle
+0CFF794: 02 01
+;------------------------- end -------------------------
+

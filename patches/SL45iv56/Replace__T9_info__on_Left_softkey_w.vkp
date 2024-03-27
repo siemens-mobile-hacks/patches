@@ -1,0 +1,15 @@
+;SL45iv56
+;Заменяет Т9-инфо на левом софте при написании SMS на подсветку.
+;Replace "T9 info" on Left softkey while writing SMS to illumination
+;(c) Charger
+;Version: 
+;PatchID: 1980
+;Details: https://patches.kibab.com/patches/details.php5?id=1980
+/*
+Заменяет Т9-инфо на левом софте при написании SMS на подсветку.
+*/
+3a7c30: daec50fb DADC8046 
+
+18cf82: 8302 8200 ;замена подписи
+;------------------------- end -------------------------
+

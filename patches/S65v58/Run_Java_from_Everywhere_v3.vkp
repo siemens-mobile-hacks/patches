@@ -1,0 +1,19 @@
+;S65v58
+;Запуск явы отовсюду
+;Run Java from Everywhere
+;(c) 1nvisible
+;(r) Zl0d, Kamikadze!
+;(p) NForce
+;Version: 3
+;PatchID: 3684
+;Details: https://patches.kibab.com/patches/details.php5?id=3684
+/*
+English:No additional actions needed.
+no bugs
+
+Логотип к патчу не относится. Просто патч был во время ЧМ 2006 сделан . Просто себе его забросьте на заставку.
+Apo4emu
+*/
+0C327F8: 2500000A 000050E3
+;------------------------- end -------------------------
+

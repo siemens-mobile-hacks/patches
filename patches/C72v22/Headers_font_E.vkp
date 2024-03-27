@@ -1,0 +1,14 @@
+;C72v22
+;Изменение шрифта заголовков 
+;Change Headers Font 
+;(c) Evgr
+;Version: 
+;PatchID: 10155
+;Details: https://patches.kibab.com/patches/details.php5?id=10155
+/*
+
+*/
+0941A54: 03 07 
+
+;------------------------- end -------------------------
+

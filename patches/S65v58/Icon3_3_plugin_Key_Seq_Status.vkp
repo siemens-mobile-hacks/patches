@@ -1,0 +1,44 @@
+;S65v58
+;Плагин для дополнения к панели иконок Статус секвенсера клавиш
+;Iconbar3.3 Plugin: KeySequencer Status
+;(c) benj9
+;Version: 
+;PatchID: 3650
+;Details: https://patches.kibab.com/patches/details.php5?id=3650
+/*
+Если используете как иконку Icon Bar`а отключите vElse!
+if use as iconbar icon, disable vElse!
+
+Проверьте стоит ли строка
+0FDB830: 04 02 ; universal icon ptc's are from 1C01.ptc to 1C0?.ptc.
+*/
+#pragma enable old_equal_ff
+0FDC000: E4D3C2B1,0x00001C02,0000000000000000,"\
+{patch=Icon-KeySeq ver=3.3 cp=benj9 id=1C02}","\
+{02 xy position x=116 y=32}(off=iconbar, on=static)","\
+{sm focus}","\
+\
+{08 a address v=A8000204}","\
+{04 cb `use as pointer` v=1}","\
+{05 b offset v=18}","\
+{01 o `load type` `byte (1b)`=0 `hword (2b)`=1 `dword (4b)`=2 v=1}{endsm}","\
+{06 o `val1-val7 condition` `=`=0 `<=`=1 `>=`=2 v=0}","\
+\
+{sm v1}{7.0 cb 1 v=1}","\
+{12 i val1 v=514}","\
+{44 i icon v=907}{endsm}","\
+\
+{sm v2}{7.1 cb 2 v=1}","\
+{16 i val2 v=513}","\
+{48 i icon v=905}{endsm}","\
+\
+{sm v3}{7.2 cb 3 v=1}","\
+{20 i val3 v=1}","\
+{52 i icon v=911}{endsm}","\
+\
+{sm vElse}{7.7 cb Else v=1}","\
+{40 i `exclude val` v=255}","\
+{72 i icon v=446}{endsm}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;MC60v10
+;Открыть заблокированные блоки EEPROM
+;Open closed EEPROM blocks
+;(c) Skylord
+;(p) Smelter
+;Version: 
+;PatchID: 3338
+;Details: https://patches.kibab.com/patches/details.php5?id=3338
+/*
+Становятся доступны 6 скрытых блока (5008,5009,5077,5121,5122,5123)
+EN:
+6 hidden blocks (5008,5009,5077,5121,5122,5123) become active.
+*/
+;OpenHiddenEEPROM
+4079BC: 01149013D513911302140314 000000000000000000000000
+;------------------------- end -------------------------
+

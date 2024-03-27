@@ -1,0 +1,14 @@
+;SL45iv56
+;Показывать только фамилию при входящем вызове и в адресной
+;Show only surname while incoming call and in Addressbook
+;(c) Charger
+;Version: 
+;PatchID: 2032
+;Details: https://patches.kibab.com/patches/details.php5?id=2032
+/*
+В списках не будет обрезанных имен 
+*/
+36ad2: 3d 0d 
+343550: 2d 0d
+;------------------------- end -------------------------
+

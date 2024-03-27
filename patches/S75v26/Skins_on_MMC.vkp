@@ -1,0 +1,13 @@
+;S75v26
+;Скины на ММС
+;Skins on MMC
+;(c) ?
+;Version: 
+;PatchID: 2459
+;Details: https://patches.kibab.com/patches/details.php5?id=2459
+/*
+
+*/
+0E26C64: 30 34
+;------------------------- end -------------------------
+

@@ -1,0 +1,26 @@
+;S75v47
+;Большая дата и часы в экране заблокированной клавиатуры
+;Big Date & Time in Keylock Screen instead of "Press & hold # to release" & "Keypad Locked"
+;(c) benj9
+;(p) Evgr
+;Version: 
+;PatchID: 10242
+;Details: https://patches.kibab.com/patches/details.php5?id=10242
+/*
+
+*/
+;Date
+0342AF1: 99A9F010EB 985BF7B4FA
+0BFF59C: 04 01 ; font
+0BFF596: 62 74 ; 0x74=116 - отступ сверху в пикселях 
+;084AC88: 83 83 ; 0x83=131 - отступ слева в пикселях правого края даты 
+
+;Time
+0342AAD: 99A9F032EB 985BF7F9FA
+0BFF580: 05 01 ; font
+0342C64: 4901 0901 ; duration of dialog 2 seconds
+
+0342B6C: 5BF777FA C046C046 ; убрать дату в трее
+0342BB0: 5BF778FA C046C046 ; убрать часы в трее
+;------------------------- end -------------------------
+

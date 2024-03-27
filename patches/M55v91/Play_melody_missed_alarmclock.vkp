@@ -1,0 +1,26 @@
+;M55v91
+;Мелодия при упущенном будильнике
+;Play Melody If Alarm Clok is Missed
+;(c) Matr!x
+;(p) !Freeman!
+;Version: 1.1
+;PatchID: 2015
+;Details: https://patches.kibab.com/patches/details.php5?id=2015
+/*
+Правая софт-кнопка "Пауза" или любая кнопка - повтор будильника каждые 5 минут
+Левая софт-кнопка "Выкл" - отключить повтор и будильник
+
+*/
+35DC20: FFFFFFFFFFFFFFFF DA29DEFFFAA2CE41
+35DC30: FFFFFFFFFFFFFFFF DAA0D660FAA2CE41
+3BDB4A: 4E01 4800
+3BDB50: 4800 4E01
+4C75BF: 0F 1C
+4C75DD: 0D 00
+4C75ED: A0D660 5530DC
+4C760D: A0D660 5530DC
+4C7624: 3D04 CC00
+4C762E: FAA2CE41 CC00CC00
+4C7FB9: 29DEFF 5520DC
+;------------------------- end -------------------------
+

@@ -1,0 +1,30 @@
+;S68v52
+;Исправление кнопок *, 0, #, кнопка вызова в Native Menu
+;Fix key *, 0, #, greenkey in Native Menu
+;(c) BingK(binghelingxi)
+;(p) sim_emrom
+;Version: 
+;PatchID: 9280
+;Details: https://patches.kibab.com/patches/details.php5?id=9280
+/*
+Исправляет порядок вызова пунктов по нажатию *,0,# в Native Menu, а также по зеленой кнопке запускает меню разработчика.
+*/
+; Кнопки: 0 - Мои файлы, * - Другие функции, # - Настройки
+; Кнопка звонка - меню Разработчика
+;*-Extra 0-Mystuff #-Setup GreenKey-Dev.Menu
+
+;NMNU_FIX_KEY_HOOK3
+031BC68: 1529 0529
+;NMNU_FIX_KEY_HOOK1
+0893508: 162869D171688868 004A904701CD35A1
+;NMNU_FIX_KEY_HOOK2
+0893514: 3928 3C28
+;NMNU_FIX_KEY_BODY
+#pragma enable old_equal_ff
+0x0135CD00: 162807D0142803D015280FD13C2006E0
+0x0135CD10: 3A2004E071688868302802D13B207168
+0x0135CD20: 8860716888687246121D10477246D432
+0x0135CD30: 1047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

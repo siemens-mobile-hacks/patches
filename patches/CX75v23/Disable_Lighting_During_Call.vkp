@@ -1,0 +1,19 @@
+;CX75v23
+;Выключение подсветки во время разговора
+;Disable_Lighting_During_Call
+;(c) ThE TrIFoN, Serega_1
+;(p) Mikel
+;Version: 
+;PatchID: 2704
+;Details: https://patches.kibab.com/patches/details.php5?id=2704
+/*
+Применять вместе с патчем ";* Вибрация в момент соеденения v1.2 * © SiNgle"
+Должна стоять галка "врямя/стоимость-Настр.тариф.-Авт.Индикац.!!!
+
+*/
+01FFf08: 1fAa2CA0 0xa01FFf11
+#pragma enable old_equal_ff
+01FFf10: 08B5014B984708BD,0xa085B0AB
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

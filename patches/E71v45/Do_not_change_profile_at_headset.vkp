@@ -1,0 +1,15 @@
+;E71v45
+;Убрать сообщения и смену профиля при подключении гарнитуры
+;Cancel when plugin / Remove the headset switch profile and tips
+;(c) BingK (binghelingxi)
+;(p) tender
+;Version: 
+;PatchID: 10156
+;Details: https://patches.kibab.com/patches/details.php5?id=10156
+/*
+В отличии от предыдущей версии нет глюка с невозможность сменить профиль
+*/
+0066A7CA: 87F02BFF C046C046; pull out the headphones
+0066A51C: 88F082F8 C046C046; plug in your headphones 
+;------------------------- end -------------------------
+

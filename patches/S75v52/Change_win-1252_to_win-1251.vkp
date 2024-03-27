@@ -1,0 +1,15 @@
+;S75v52
+;Замена win-1252 на win-1251 для показа кириллицы во встр. браузере
+;Change win-1252 to win-1251 for Cyrillic in native browser
+;(c) mixbb, AlexSid
+;(r) Kamikadze!
+;(p) SimaFish
+;Version: 
+;PatchID: 8771
+;Details: https://patches.kibab.com/patches/details.php5?id=8771
+/*
+
+*/
+0686462: 32 31
+;------------------------- end -------------------------
+

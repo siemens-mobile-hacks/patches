@@ -1,0 +1,20 @@
+;M65v50
+;Включение телефона по напоминанию
+;The phone turns on by appointment
+;(c) 1nvisible
+;(p) Mifodiy
+;Version: 
+;PatchID: 3212
+;Details: https://patches.kibab.com/patches/details.php5?id=3212
+/*
+Телефон включается по напоминанию. При этом звук напоминания не проигрывается.
+English: The phone turns on by appointment. The appointment sound is not played.
+*/
+0ABB840: EB4F0028 6AF2DEFC
+#pragma enable old_equal_ff
+0D26200: 3FB5074B1B78152B05DC064B98473FBC
+0D26210: 01B0054B18473FBCA06E002800BDC046
+0D26220: 0xA867B0A6,0xA1240944,0xA0ABB871
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

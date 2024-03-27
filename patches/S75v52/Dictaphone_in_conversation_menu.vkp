@@ -1,0 +1,15 @@
+;S75v52
+;Диктофон в меню во время разговора
+;Dictaphone in conversation menu
+;(c) Miha_r
+;(p) SimaFish
+;Version: 
+;PatchID: 8793
+;Details: https://patches.kibab.com/patches/details.php5?id=8793
+/*
+
+*/
+04393A4: A51134A0 97E132A0
+0439520: B604 6100
+;------------------------- end -------------------------
+

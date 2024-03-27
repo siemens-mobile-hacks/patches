@@ -1,0 +1,13 @@
+;S75v20
+;Убрать "Пожалуйста подождите" в Card-Explorer
+;Disable "Please wait" in Card Explorer
+;(c) SiNgle
+;Version: 
+;PatchID: 1670
+;Details: https://patches.kibab.com/patches/details.php5?id=1670
+/*
+
+*/
+052BEB2: 03D1 03E0
+;------------------------- end -------------------------
+

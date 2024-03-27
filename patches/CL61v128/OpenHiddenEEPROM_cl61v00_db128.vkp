@@ -1,0 +1,14 @@
+;CL61v128
+;Открыть скрытые блоки EEPROM
+;OpenHiddenEEPROM
+;(c) LazyC0DEr
+;(p) Marie
+;Version: 
+;PatchID: 10413
+;Details: https://patches.kibab.com/patches/details.php5?id=10413
+/*
+
+*/
+077622C: 00 01
+;------------------------- end -------------------------
+

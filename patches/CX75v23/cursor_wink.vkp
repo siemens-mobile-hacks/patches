@@ -1,0 +1,15 @@
+;CX75v23
+;Скорость мигания курсора
+;Speed of pointer blinking
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1828
+;Details: https://patches.kibab.com/patches/details.php5?id=1828
+/*
+
+*/
+04A2400: 2C01 8003
+;------------------------- end -------------------------
+

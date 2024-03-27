@@ -1,0 +1,17 @@
+;E71v41
+;Плавная прокрутка длинных названий иимен
+;Smooth scrolling of long names
+;(c) SiNgle
+;(p) BuG
+;Version: 
+;PatchID: 6756
+;Details: https://patches.kibab.com/patches/details.php5?id=6756
+/*
+
+*/
+0C37220: D007 1202 ; delay before start
+0C37224: 2C01 2A00 ; scrolling speed
+0C43598: D007 1202 ; delay before start
+0C4359C: 2C01 2A00 ; scrolling speed
+;------------------------- end -------------------------
+

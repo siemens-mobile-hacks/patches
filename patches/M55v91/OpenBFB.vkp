@@ -1,0 +1,17 @@
+;M55v91
+;OpenBFB
+;OpenBFB
+;(c) ACiD [mrp]
+;(p) HighHunter
+;Version: 
+;PatchID: 889
+;Details: https://patches.kibab.com/patches/details.php5?id=889
+/*
+Разрешает использование режима OpenBFB. Нужен для многих сервисных программ, в частности, для SieScreenshot.
+
+EN:
+Enables use of BFB protocol. It's nessesary for many programs, for example, for SieScreenShot.
+*/
+7E6970: C6 B0
+;------------------------- end -------------------------
+

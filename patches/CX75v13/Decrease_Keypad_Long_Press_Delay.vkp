@@ -1,0 +1,14 @@
+;CX75v13
+;Уменьшить задержку зажатия кнопок
+;Decrease Keypad Long Press Delay
+;(c) 1nvisible
+;(p) .::L:A:V::.
+;Version: 
+;PatchID: 6202
+;Details: https://patches.kibab.com/patches/details.php5?id=6202
+/*
+
+*/
+007FE996: 82 50 ;где 50 - любое число, чем меньше, тем короче задержка
+;------------------------- end -------------------------
+

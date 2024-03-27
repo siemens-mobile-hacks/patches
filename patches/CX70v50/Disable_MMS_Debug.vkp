@@ -1,0 +1,15 @@
+;CX70v50
+;Disable MMS Debug
+;Disable MMS Debug
+;(c) 1nvisible
+;(p) Smelter
+;Version: 
+;PatchID: 3417
+;Details: https://patches.kibab.com/patches/details.php5?id=3417
+/*
+Продолжение анти-дебажной темы
+*/
+098D9BC: 0FB4 7047
+098DAAC: F0B5 7047
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;S65v58
+;Исправление автоимени фотографий с камеры (2010 год)
+;Camera filename fix (2010 year)
+;(c) DebriZ
+;(p) LourenS65
+;Version: 
+;PatchID: 9743
+;Details: https://patches.kibab.com/patches/details.php5?id=9743
+/*
+
+*/
+8d7a74: F04D2DE9 F04F2DE9
+8d7ac0: 50008DE2 55A0DDE5
+8d7ac4: 3438FdFA 54B0DDE5
+8d7ac8: 00A0A0E1 50009DE5
+8d7acc: 50008DE2 414C36EB
+8d7ad0: 3038fdFA 0190A0E1
+8d7ad4: 00B0A0E1 3F4C36EB
+8d7ad8: 50008DE2 0A30A0E3
+8d7adc: 2c38fdFA 910303E0
+8d7ae0: 3c4c36EB 091083E0
+8d7bb8: F08DBDE8 F08FBDE8
+;------------------------- end -------------------------
+

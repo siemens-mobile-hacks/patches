@@ -1,0 +1,17 @@
+;SL45iv56
+;Не показывать метод ввода
+;Don't show input method
+;(c) Greentea
+;Version: 
+;PatchID: 7396
+;Details: https://patches.kibab.com/patches/details.php5?id=7396
+/*
+Не показывать метод ввода при долгом нажатии клавиши звездочки (*). Быстро изменяет метод ввода, может быть удобным для ввода букв.
+
+
+English:
+Don't show input method when long pressing '*' key. Change input methods quickly, maybe more convenient for inputting letters.
+*/
+0x366010: 2A 00
+;------------------------- end -------------------------
+

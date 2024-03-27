@@ -1,0 +1,15 @@
+;SL45iv56
+;Убрать нарастание звука в начале рингтонов
+;Remove increasing volume at ringtones start
+;(c) abomin
+;Version: 
+;PatchID: 2075
+;Details: https://patches.kibab.com/patches/details.php5?id=2075
+/*
+11.08.05 
+*/
+22EE5A: F68EE806 CC00CC00 ; после долгой паузы посреди мелодии 
+22EF24: F68EE806 CC00CC00 ; при событии 
+22EDE8: F68EE806 CC00CC00 ; при настройке 
+;------------------------- end -------------------------
+

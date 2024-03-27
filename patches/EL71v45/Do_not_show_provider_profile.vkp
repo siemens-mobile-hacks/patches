@@ -1,0 +1,15 @@
+;EL71v45
+;Не показывать провайдер, профайл и поиск сети на главном экране
+;Do not show provider, profile and network search message on main screen
+;(c) Miha_r
+;Version: 
+;PatchID: 7960
+;Details: https://patches.kibab.com/patches/details.php5?id=7960
+/*
+
+*/
+05C44DE: ACF0BEFD C046C046 ;network search
+05C45E6: ACF086FD C046C046 ;provider
+05C46E8: ACF005FD C046C046 ;profile
+;------------------------- end -------------------------
+

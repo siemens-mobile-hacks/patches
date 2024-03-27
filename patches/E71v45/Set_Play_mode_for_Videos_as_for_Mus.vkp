@@ -1,0 +1,17 @@
+;E71v45
+;Установить Режим воспроизведения для Видео как для Музыки
+;Set Play mode for Videos as for Music
+;(c) Evgr
+;Version: 
+;PatchID: 9586
+;Details: https://patches.kibab.com/patches/details.php5?id=9586
+/*
+В режиме "Перемешать" видео воспроизводится в режиме "Повторить все" 
+In "Shuffle" mode videos play in "Repeat all" mode
+*/
+078F3EF: 01 E1
+078F3F3: 02 E2
+078F3F7: 02 E2
+078F3FB: 0B EB
+;------------------------- end -------------------------
+

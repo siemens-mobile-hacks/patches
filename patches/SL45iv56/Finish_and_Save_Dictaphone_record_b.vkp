@@ -1,0 +1,16 @@
+;SL45iv56
+;Завершение и сохранение записи в диктофоне коротким нажатием на Красную трубку
+;Finish and Save Dictaphone record by short press on RED button
+;(c) Charger
+;Version: 
+;PatchID: 1987
+;Details: https://patches.kibab.com/patches/details.php5?id=1987
+/*
+Возможны несовместимости с патчем rbd (красная труба в диктофоне).
+Если не хотите сохранять запись, нажмите паузу, потом red
+
+Created: November 27, 2004
+*/
+350114: 2d38 2d0a 
+;------------------------- end -------------------------
+

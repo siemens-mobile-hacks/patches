@@ -1,0 +1,22 @@
+;SL45iv56
+;Thermomether
+;Thermomether
+;(c) rizapn, sc0ty
+;Version: 1.1
+;PatchID: 5914
+;Details: https://patches.kibab.com/patches/details.php5?id=5914
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=Thermomether__v1_1.zip
+
+/*
+Скринсейвер с термометром.
+
+
+English:
+It's simply thermometer display telephon and battery temperature.
+The thermomether on right side indicate the telephon (not the battery) temperature.
+
+Version 1.1 isn't switched off thermomether after 2 minuts like v1.0
+*/
+; see in attach
+;------------------------- end -------------------------
+

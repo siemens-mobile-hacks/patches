@@ -1,0 +1,21 @@
+;C81v51
+;Не показывать пропущенные события на главном экране
+;Do not show missed events on main screen
+;(c) Miha_r
+;Version: 
+;PatchID: 7887
+;Details: https://patches.kibab.com/patches/details.php5?id=7887
+/*
+
+*/
+;C81v51
+;Do not show missed events on main screen
+;(c) Miha_r
+
+03021E4: FFF7CEFC C046C046 ;Other events
+0302250: FFF798FC C046C046 ;Sms
+03022F2: FFF747FC C046C046 ;Calls
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

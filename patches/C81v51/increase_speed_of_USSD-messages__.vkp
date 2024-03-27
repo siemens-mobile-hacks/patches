@@ -1,0 +1,14 @@
+;C81v51
+;Увеличить скорость просмотра USSD сообщений
+;Increase speed of USSD-messages
+;(c) SiNgle
+;Version: 
+;PatchID: 7213
+;Details: https://patches.kibab.com/patches/details.php5?id=7213
+/*
+
+*/
+029B388: D007 0003
+029B3A5: 0B 03
+;------------------------- end -------------------------
+

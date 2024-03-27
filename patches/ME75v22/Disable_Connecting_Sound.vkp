@@ -1,0 +1,20 @@
+;ME75v22
+;Disable Connecting Sound
+;Disable Connecting Sound
+;(c) AlexSid
+;(p) Aule
+;Version: A001
+;PatchID: 6951
+;Details: https://patches.kibab.com/patches/details.php5?id=6951
+/*
+No English doc at the moment! :(
+No English doc at the moment! :(
+Disables the multitone connecting sound before starting a call.
+
+Идея: AlexSid
+Если там ошыбки или проблеми, тогда я виноват, а не AlexSid. Aule.
+
+*/
+0E6B984: D40FE8A0 00000000
+;------------------------- end -------------------------
+

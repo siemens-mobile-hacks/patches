@@ -1,0 +1,18 @@
+;S75v32
+;Отключить подсветку клавиатуры
+;Disable Keypad Light
+;(c) SiNgle
+;(p) Kibab
+;Version: 
+;PatchID: 3902
+;Details: https://patches.kibab.com/patches/details.php5?id=3902
+/*
+Экономим электроэнергию :)
+
+P.S. что-то настроение хорошее %) здорово делать патч и разговаривать с хорошим человеком :)
+
+English: +1 patch for Power Saving :)
+*/
+08F8713: D5 24
+;------------------------- end -------------------------
+

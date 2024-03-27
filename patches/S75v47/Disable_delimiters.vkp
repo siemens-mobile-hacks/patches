@@ -1,0 +1,14 @@
+;S75v47
+;Убрать черточки-разделители при показе IMEI
+;Disable delimiters while showing IMEI
+;(c) 1nvisible
+;(r) Bennie
+;Version: 
+;PatchID: 7770
+;Details: https://patches.kibab.com/patches/details.php5?id=7770
+/*
+
+*/
+0334894: "00-0000-00-00000" "0000000000000000"
+;------------------------- end -------------------------
+

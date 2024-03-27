@@ -1,0 +1,16 @@
+;CX75v12
+;Убрать сетку с бэкграунда при прорисовке окошек
+;Remove background netting while showing MsgBoxes
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 515
+;Details: https://patches.kibab.com/patches/details.php5?id=515
+/*
+Убирает сетку с бэкграунда при прорисовке окошек, например "Please Wait" и т.п. и т.д. ВНИМАНИЕ!!! Вызывает шлюк прорисовки экрана в ява-приложениях.
+
+*/
+07F45B0: 55 00
+;------------------------- end -------------------------
+

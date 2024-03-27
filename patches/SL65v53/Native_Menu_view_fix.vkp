@@ -1,0 +1,15 @@
+;SL65v53
+;Исправление отображения Native Menu
+;Native Menu view fix
+;(c) green
+;Version: 
+;PatchID: 10483
+;Details: https://patches.kibab.com/patches/details.php5?id=10483
+/*
+
+*/
+921236: 1E 28
+921242: 08 01
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,22 @@
+;SL45iv56
+;Изменить позицию текста софт-клавиш
+;Move softkey text Position
+;(c) sOLO, greenteas
+;Version: 1.1
+;PatchID: 2099
+;Details: https://patches.kibab.com/patches/details.php5?id=2099
+/*
+Moved to free (i hope) area by trustkill 
+(does not collide with "Midlets through entrypoints") 
+
+
+Created: 2005-11-28
+*/
+0x20DFDC: E016 CC00 
+0x20DFB0: 26F01C00 DAE070C9 
+0x40C970: FFFFFFFFFFFFFFFF D7400E00F2F1423A 
+0X40C978: FFFFFFFFFFFFFFFF 9AF10470E0068018;70-function 8 
+0x40C980: FFFFFFFFFFFFFFFF CD01E02626F01C00 
+0x40C988: FFFF DB00
+;------------------------- end -------------------------
+

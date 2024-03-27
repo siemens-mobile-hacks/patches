@@ -1,0 +1,14 @@
+;M81v47
+;Корректная работа пункта "Архив сообщений" в Native Menu
+;Sms Archive fix in Native menu
+;(c) Miha_r
+;(p) Barracuda
+;Version: 
+;PatchID: 9039
+;Details: https://patches.kibab.com/patches/details.php5?id=9039
+/*
+
+*/
+08E3C40: 0xA061BA89 0xA0337712
+;------------------------- end -------------------------
+

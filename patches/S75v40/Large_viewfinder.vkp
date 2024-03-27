@@ -1,0 +1,20 @@
+;S75v40
+;Большой видоискатель
+;Large viewfinder
+;(c) SiNgle
+;(r) StrikerVoo
+;(p) ferro
+;Version: 
+;PatchID: 3733
+;Details: https://patches.kibab.com/patches/details.php5?id=3733
+/*
+
+*/
+02052e4: 7C809DE5 9C80A0E3
+0338562: 132D42D0 C046C046
+05Eb8bA: 9E5F122114229A5E595E 9C26122114229A5E0021
+05Eb8d6: C2891692038AC91801391591408A 00221692038ACB18013B15939C20
+05Ebcf6: C089 1620
+
+;------------------------- end -------------------------
+

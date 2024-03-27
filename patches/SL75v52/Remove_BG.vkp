@@ -1,0 +1,15 @@
+;SL75v52
+;Убрать белый фон у иконок в Native menu
+;Remove Icons White Background in Native Menu
+;(c) SiNgle
+;(p) kiREALlov
+;Version: 
+;PatchID: 8247
+;Details: https://patches.kibab.com/patches/details.php5?id=8247
+/*
+Тоолько вот какого-то хрена фон темнее, но всё равно остаётся..
+*/
+0A1DDAE: 00 FF
+0A1DE52: E8F7A2F8 00280028
+;------------------------- end -------------------------
+

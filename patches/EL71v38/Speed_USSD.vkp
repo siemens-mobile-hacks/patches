@@ -1,0 +1,25 @@
+;EL71v38
+;Увеличить скорость просмотра USSD сообщений
+;Speed USSD
+;(c) SiNgle
+;(r) StrikerVoo
+;(p) -=PaScaL=-
+;Version: 
+;PatchID: 6557
+;Details: https://patches.kibab.com/patches/details.php5?id=6557
+/*
+
+*/
+;EL71v38
+;Увеличить скорость просмотра USSD сообщений
+;Speed USSD
+;(c) SiNgle
+;(r) StrikerVoo
+;(p) -=PaScaL=-
+;Version
+5BD09C: D007 0003
+5BD0B9: 0B 03
+
+;------------------------- end -------------------------
+;------------------------- end -------------------------
+

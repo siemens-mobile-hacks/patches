@@ -1,0 +1,14 @@
+;SL75v52
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 7631
+;Details: https://patches.kibab.com/patches/details.php5?id=7631
+/*
+
+*/
+0906136: 011C 2021
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M55v11
+;Разблокировка клавиатуры любой кнопкой (0-9,#)
+;Unlock keyboard with any key (0-9,#)
+;(c) Matr!x
+;(p) =NeoSpb=
+;Version: 
+;PatchID: 5205
+;Details: https://patches.kibab.com/patches/details.php5?id=5205
+/*
+
+*/
+79C56D: 3B 27
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;M55v11
+;Отключить сообщение при Включении/Выключении сигналов
+;Disable ringer on/off message
+;(c) Matr!x
+;(p) AlexSid
+;Version: 
+;PatchID: 5224
+;Details: https://patches.kibab.com/patches/details.php5?id=5224
+/*
+
+*/
+0D2D5A:  DA2E56B6 CC00CC00 ;убрать сообщение "Все сигналы выключены"
+0D2D70:  DA2E56B6 CC00CC00 ;убрать сообщение "Все сигналы включены"
+;------------------------- end -------------------------
+

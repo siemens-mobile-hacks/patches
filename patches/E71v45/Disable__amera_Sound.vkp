@@ -1,0 +1,14 @@
+;E71v45
+;Отключить звук камеры
+;Disable camera sound
+;(c) -=(Kad)=-
+;(p) Evgr
+;Version: 
+;PatchID: 10357
+;Details: https://patches.kibab.com/patches/details.php5?id=10357
+/*
+Убирает стандартный звук затвора камеры
+*/
+067773C: C977FCEA 1EFF2FE1
+;------------------------- end -------------------------
+

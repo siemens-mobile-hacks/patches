@@ -1,0 +1,18 @@
+;M75v19
+;Динамическая замена имени оператора
+;Dynamic replacing  of Provider name
+;(c) avkiev
+;(r) Bennie, arsh0r, Acid
+;(p) Kibab
+;Version: 10-MP
+;PatchID: 2568
+;Details: https://patches.kibab.com/patches/details.php5?id=2568
+/*
+MP+FL!
+См. описание в патче для X65v100.
+
+English:
+*/
+049EF6C: 0xA08362F7 0xA0FC1B01  ; M75v19
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M75v25
+;Сохранение голосовых заметок на ММС-карте
+;Save Voice Memo on the MMC-card
+;(c) KiRiK
+;(r) avkiev
+;Version: 
+;PatchID: 4120
+;Details: https://patches.kibab.com/patches/details.php5?id=4120
+/*
+
+*/
+04A52AC: 30 34
+;------------------------- end -------------------------
+

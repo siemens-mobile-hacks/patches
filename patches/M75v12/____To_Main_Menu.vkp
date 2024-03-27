@@ -1,0 +1,18 @@
+;M75v12
+;Из любого места жмем ### и попадаем в главное меню
+;Goto mainmenu from anywhere by pressing ###
+;(c) SiNgle
+;(p) to x75 family ThE TrIFoN, 1nvisible  M75v12 Gurza
+;Version: 
+;PatchID: 700
+;Details: https://patches.kibab.com/patches/details.php5?id=700
+/*
+Должен быть включен DevMenu и в пункте LOGAL\options - нажать Enable ### 
+*/
+
+07D3A34: 84F099F8 CDF4E4F8 
+;04A0C00: FFFFFFFFFFFFFFFF 00B589F6ACFD00BD ;native menu 
+04A0C00: FFFFFFFFFFFFFFFF 00B585F624FB00BD ;main menu § Gurza
+
+;------------------------- end -------------------------
+

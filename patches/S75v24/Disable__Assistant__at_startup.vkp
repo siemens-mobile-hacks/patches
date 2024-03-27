@@ -1,0 +1,14 @@
+;S75v24
+;Отключить появление окна "Помощника" при старте телефона
+;Disable "Assistant" at startup
+;(c) SiNgle
+;Version: 
+;PatchID: 2167
+;Details: https://patches.kibab.com/patches/details.php5?id=2167
+/*
+;Внимание ! Могут быть проблемы с передачей данных !
+;Attention ! There can be the problems with communications !
+*/
+;02F410F: D1 D0
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;C65v56
+;Увеличить фото при входящем звонке
+;Enlarge Incoming Call Photo
+;(c) SiNgle
+;Version: 1
+;PatchID: 3806
+;Details: https://patches.kibab.com/patches/details.php5?id=3806
+/*
+
+*/
+0A6DCBE: 502280 842278 ; SL65, C65
+;------------------------- end -------------------------
+

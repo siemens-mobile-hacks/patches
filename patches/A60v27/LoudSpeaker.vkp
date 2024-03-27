@@ -1,0 +1,19 @@
+;A60v27
+;Громкая связь без подтверждения
+;Toggle HandsFree without question
+;(c) Rasp
+;(r) FFNevil
+;Version: 
+;PatchID: 295
+;Details: https://patches.kibab.com/patches/details.php5?id=295
+/*
+
+*/
+;A60v27
+;Громкая связь без подтверждения.
+;Портировано: Rasp
+
+6C70FA: 9A010320 CC00CC00 
+6C70FE: DA831800 DA8C5E60
+;------------------------- end -------------------------
+

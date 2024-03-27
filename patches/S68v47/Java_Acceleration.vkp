@@ -1,0 +1,14 @@
+;S68v47
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) klaud
+;Version: 
+;PatchID: 6570
+;Details: https://patches.kibab.com/patches/details.php5?id=6570
+/*
+
+*/
+07F8878: 6549 0121
+;------------------------- end -------------------------
+

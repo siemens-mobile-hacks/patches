@@ -1,0 +1,18 @@
+;CX70v56
+;Показать расширения Файлов в Card Explorer
+;Show File Extensions In Card Explorer
+;(c) 1nvisible
+;(r) Single
+;(p) NForce
+;Version: 
+;PatchID: 3635
+;Details: https://patches.kibab.com/patches/details.php5?id=3635
+/*
+
+*/
+09D74B0: 2E 1E
+;------------------------- end -------------------------
+
+
+;------------------------- end -------------------------
+

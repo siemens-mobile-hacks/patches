@@ -1,0 +1,15 @@
+;CF75v23
+;Убрать Латвийский и Литовский из меню языков ввода
+;Remove Latvian and Lithuanian from input languages menu
+;(c) 0xFEDF
+;Version: 
+;PatchID: 4829
+;Details: https://patches.kibab.com/patches/details.php5?id=4829
+/*
+
+*/
+09D86D2: 00 01 
+09D86D6: 00 01
+
+;------------------------- end -------------------------
+

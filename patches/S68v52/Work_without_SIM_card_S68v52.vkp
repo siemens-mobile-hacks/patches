@@ -1,0 +1,15 @@
+;S68v52
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle
+;(r) Виктор89
+;(p) nikinet1
+;Version: 
+;PatchID: 9969
+;Details: https://patches.kibab.com/patches/details.php5?id=9969
+/*
+
+*/
+2CE7AC: 97F740F8 E3F0BCEA
+;------------------------- end -------------------------
+

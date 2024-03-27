@@ -1,0 +1,14 @@
+;M81v51
+;Плавное включение подсветки
+;Smooth keypad light
+;(c) SiNgle
+;(p) RaiF-03
+;Version: 
+;PatchID: 9508
+;Details: https://patches.kibab.com/patches/details.php5?id=9508
+/*
+
+*/
+9581B4: 0022 FF22
+;------------------------- end -------------------------
+

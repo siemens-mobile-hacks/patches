@@ -1,0 +1,49 @@
+;S65v58
+;Автоматически заполнять поле "Номер" при сохранении нового номера в адресную книгу
+;Auto fill item "Number" when saving new number to addressbook 
+;(c) Evgr
+;Version: 
+;PatchID: 10646
+;Details: https://patches.kibab.com/patches/details.php5?id=10646
+/*
+RU: 
+при сохранении с созданием Новой записи вставляется в поле, заданное в патче
+при сохранении в существующую запись вставляется в первое свободное поле для номера
+EN: 
+when saving to New entry, number is put in configured field
+when saving to existing entry, number is put in first unoccupied field for phone number
+
+*/
+
+/*
+RU: 
+при сохранении с созданием Новой записи вставляется в поле, заданное в патче
+при сохранении в существующую запись вставляется в первое свободное поле для номера
+EN: 
+when saving to New entry, number is put in configured field
+when saving to existing entry, number is put in first unoccupied field for phone number
+*/
+
+0AFE858: A06E251C00788035 00488047,0xA0801387
+0B00208: 007B002800D00027 00498847,0xA0801351
+0B0021C: 201CFFF77BFF021C 00498847,0xA0801311
+
+#pragma enable old_equal_ff 
+0801310: 00B51798006E0178062904D12D2C02D1
+0801320: 406800F003F802BC1039084750B5041C
+0801330: 1B4EB047002809D00021201C194EB047
+0801340: 0022011C201C184EB047071C50BDC046
+0801350: 00B5007B002813D000271798006E4068
+0801360: 0E4E317800290BD12D2C03D02A2C01D0
+0801370: 2C2C05D1FFF7DAFF002F01D001203070
+0801380: 02BC0431084700B50020044D2870A06E
+0801390: 251C0078803540BC04363047,0xA877006F ; 0xA877006F freeRAM  1 byte
+08013A0: 0xA0A51A0F,0xA0A514BB,0xA0A51857 
+#pragma disable old_equal_ff 
+
+080131C: 2D 2D ; 0x2D Номер телефона
+               ; 0x2A Тел. раб.
+               ; 0x2C Тел.мобильн.
+
+;------------------------- end -------------------------
+

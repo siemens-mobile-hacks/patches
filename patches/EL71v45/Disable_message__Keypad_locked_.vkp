@@ -1,0 +1,14 @@
+;EL71v45
+;Убрать сообщение "Блокировка клавиатуры включена"
+;Disable message "Keypad locked"
+;(c) SiNgle
+;(p) 1allen
+;Version: 
+;PatchID: 7974
+;Details: https://patches.kibab.com/patches/details.php5?id=7974
+/*
+
+*/
+066BCE8: 93F19EEA C046C046
+;------------------------- end -------------------------
+

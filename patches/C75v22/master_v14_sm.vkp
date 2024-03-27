@@ -1,0 +1,84 @@
+;C75v22
+;Мастер-патч + Безопасный режим
+;Master-patch + Safe Mode
+;(c) avkiev
+;(r) 1nvisible, chaos
+;(p) inquis
+;Version: 14
+;PatchID: 6975
+;Details: https://patches.kibab.com/patches/details.php5?id=6975
+/*
+Мастер-патч v14 с безопасным режимом обеспечивает новые технологии патчей и высокую стабильность работы телефона. А вовремя нажатая решетка # при загрузке телефона позволит вам избавиться от глючного Dis или GPP патча.
+Служит для управления настройками патчей непосредственно с телефона.
+!Перед запуском нужно создать папку 0:\Misc\Patches\PTC\
+
+English:
+This patch is made to control other patches settings from mobile without connecting it to the computer.
+!You must create the folder 0:\Misc\Patches\PTC\ before installing it
+
+*/
+;Run Scaner on startup
+02A7334: FF20 BEDF
+
+;Run Scaner instead of ELSE_REMOTESYNC
+04A176C: 518932A0 0xA10D0C91
+
++10D0000
+#pragma enable old_equal_ff
+;Bufferizator
+0C00: 9EB5071CC7DFE4800468002C1CD0103C
+0C10: 10342668002E18D0BE42F9D16668002E
+0C20: 09D189B03A1C684685A116DF6846211D
+0C30: 11DF09B0666834788020204004D0B6DF
+0C40: 01218140214000D10026301C9EBD
+
+;Dispatcher
+0C50: FEB5061CC7DFE4800568103D10352868
+0C60: 00280FD0E878B042F8D1A86860B40299
+0C70: 039A049B059C069D079E089F804760BC
+0C80: 0028EBD0FEBD
+
+;Scaner
+0C90: FEB5C7DFE480051C0468002C1CD0103C
+0CA0: 1034216800290DD0E06800F097F8090E
+0CB0: 05D0010EA82902D10321884315DF6068
+0CC0: 15DFEDE7286815DF0020286000210022
+0CD0: 032304B432DF04BCC7DFDF8000782328
+0CE0: 48D00124A00214DF061C2E60E00314DF
+0CF0: 051C60B410214A03474C464FA41AA418
+0D00: 2068424B9842FAD03F4B9842F7D03C4B
+0D10: 9842F4D03B4B9842F1D0A3182068B842
+0D20: 05D100F037F800F04CF80F2084436418
+0D30: 9C42F3D1394B9C42E1D149A010A10131
+0D40: C3DF4FA01BA10131C3DF00203060009E
+0D50: 33A00A010321090201316B460ADF041C
+0D60: 311CAA1B6B460CDF201C69460DDF301C
+0D70: 15DF02B0FF20FEBD
+
+;Auxiliary
+0D80: 00B5041C2349043422688A42FBD100F0
+0D90: 01F817E002B56168316000207060A068
+0DA0: 00F01CF8B060E06800F021F8F0601034
+0DB0: 103602BD01B5041C00F003F801BC15DF
+0DC0: 00BD00B520782870013401350028F9D1
+0DD0: 013D0A2028706870023500BDFEB500F0
+0DE0: 06F801B402D0090E00D18047FFBD02B5
+0DF0: 002803D0010E01D1201A013002BD    
+;Data
+0E00: "EELI","EEFU","FFS_","FFS",00                ; Skip 128K
+0E10: 0x0000BBBB,0xB1C2D3E4,0xA0000000,0xA2000000  ; LGP (skip 640K), Magic, From, To 
+0E20: "0:\\Misc\\Patches\\ptc\\configs.txt",00 
+0E40: "0:\\Misc\\Patches\\ptc\\%08x.ptc",00 
+0E60: "0:\\Misc\\Patches\\Dis\\*.dis",00
+0E80: "0:\\Misc\\Patches\\Dis\\*.cfg",00
+#pragma disable old_equal_ff
+
+0CDA: DF E2                  ; Fix hotkey for Safe-mode
+0CD0: 03 01                  ; Ringtone after Refresher
+;0CD0: 03 32                  ; Ringtone after Refresher
+0E18: 0xA0000000 0xA10D0000  ; From
+0E1C: 0xA2000000 0xA10F0000  ; To
++0
+
+;------------------------- end -------------------------
+

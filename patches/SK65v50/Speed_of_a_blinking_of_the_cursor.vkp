@@ -1,0 +1,14 @@
+;SK65v50
+;Скорость мигания курсора
+;Speed of a blinking of the cursor
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 261
+;Details: https://patches.kibab.com/patches/details.php5?id=261
+/*
+Скорость мигания курсора.
+*/
+044FD24: 2C01 8003
+;------------------------- end -------------------------
+

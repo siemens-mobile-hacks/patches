@@ -1,0 +1,14 @@
+;S65v58
+;Отключить ВСЕ подождите
+;disable ALL wait
+;(c) benj9
+;(p) dimonp25
+;Version: 
+;PatchID: 9081
+;Details: https://patches.kibab.com/patches/details.php5?id=9081
+/*
+
+*/
+011441f8: FFB5 7047
+;------------------------- end -------------------------
+

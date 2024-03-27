@@ -1,0 +1,19 @@
+;CX75v13
+;Подсветка с шагом 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 781
+;Details: https://patches.kibab.com/patches/details.php5?id=781
+/*
+RUS: Позволяет задать произвольный шаг регулировки подсветки. Полезно, например, для установки уровня подсветки в 2-5 процентов для комфортного чтения в полной темноте.
+
+ENG: Allows to set an any step of adjustment of illumination. It is useful, for example, for installation of a level of illumination in 2-5 percent for comfortable reading in full darkness.
+*/
+03B7A50: 0A 05 ; 05 или любая цифра в HEX
+03B7A60: 0A 05 ; 05 или любая цифра в HEX
+
+;------------------------- end -------------------------
+

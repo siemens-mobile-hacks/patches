@@ -1,0 +1,28 @@
+;CX75v13
+;Изменение некоторых названий в системе
+;Changing to some system strings
+;(c) -=(Kad)=-
+;Version: 1
+;PatchID: 3121
+;Details: https://patches.kibab.com/patches/details.php5?id=3121
+/*
+
+*/
+;Developer menu (S)Exit
+;Exit-No:=>ErrorNo:
+3B5372: 457869742D4E6F3A 4572726F724E6F3A
+
+;SW-Ver:=>FW-Ver:
+3B564A: 53572D5665723A 46572D5665723A
+
+;Инфа по *#05#
+
+;Operating Time:=>Fone operation:
+2C6B04: 4F7065726174696E672054696D653A 000000000000000000000000000000
+2C6B04: 000000000000000000000000000000 "Fone operation:"
+
+;Talk Time :=>You Talked:
+2C6B18: 54616C6B2054696D65203A 0000000000000000000000
+2C6B18: 0000000000000000000000 "You Talked:"
+;------------------------- end -------------------------
+

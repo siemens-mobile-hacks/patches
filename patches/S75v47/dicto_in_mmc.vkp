@@ -1,0 +1,17 @@
+;S75v47
+;Запись Диктофоном на MMC
+;Dictating Machine Writes to MMC
+;(c) 1nvisible
+;(p) inquis
+;Version: 
+;PatchID: 7351
+;Details: https://patches.kibab.com/patches/details.php5?id=7351
+/*
+
+*/
+27EEC0: 08009DE5 0400A0E3
+670816: 30 34
+670840: 30 34
+67084E: 30 34
+;------------------------- end -------------------------
+

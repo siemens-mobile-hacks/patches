@@ -1,0 +1,15 @@
+;S75v35
+;все принятые файлы идут на флешку в папку Misc
+;All incoming files to Misc folder on MMC
+;(c) SiNgle
+;(p) StikerVoo
+;Version: 
+;PatchID: 3374
+;Details: https://patches.kibab.com/patches/details.php5?id=3374
+/*
+
+*/
+04D4754: FFF7E0FE C0464920 
+066C636: 30 34
+;------------------------- end -------------------------
+

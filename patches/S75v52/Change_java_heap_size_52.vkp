@@ -1,0 +1,14 @@
+;S75v52
+;Изменение размера java heap
+;Change java heap size
+;(c) Miha_r
+;(p) dimonp25
+;Version: 1-MP
+;PatchID: 8798
+;Details: https://patches.kibab.com/patches/details.php5?id=8798
+/*
+
+*/
+00B9BA0: 002090E5 56BEFEEB
+;------------------------- end -------------------------
+

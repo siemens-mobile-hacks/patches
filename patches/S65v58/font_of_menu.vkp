@@ -1,0 +1,16 @@
+;S65v58
+;Шрифт меню и софт-кнопок
+;Font of menu and softkeys
+;(c) SiNgle
+;Version: 
+;PatchID: 2332
+;Details: https://patches.kibab.com/patches/details.php5?id=2332
+/*
+
+*/
+0929BFC: 03 02 ; Softkeys
+0929C44: 03 08 ; Selected item Menu
+0929C48: 02 08 ; Menu
+
+;------------------------- end -------------------------
+

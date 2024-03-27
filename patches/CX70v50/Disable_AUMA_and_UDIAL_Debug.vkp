@@ -1,0 +1,15 @@
+;CX70v50
+;Отключить AUMA и UDIAL Дебагеры
+;Disable AUMA and UDIAL Debug
+;(c) 1nvisible
+;(p) Strike66
+;Version: 
+;PatchID: 3534
+;Details: https://patches.kibab.com/patches/details.php5?id=3534
+/*
+
+*/
+09054CC: F0412DE9 1EFF2FE1
+0CC467C: 0FB4 7047
+;------------------------- end -------------------------
+

@@ -1,0 +1,27 @@
+;S75v52
+;Расширенное меню красной нкопки
+;Extended red button menu
+;(c) -=(Kad)=-
+;Version: 5.0
+;PatchID: 8860
+;Details: https://patches.kibab.com/patches/details.php5?id=8860
+/*
+
++5.0 Патч переписан с нуля, добавлены новые пункты, все пофиксил, если смогу сделаю на все 4 пункта
+
+*/
+;Редактирование сообщения  7 : 021CC  "Клав. заблок." => "Второй"
+17E82FC: D09AD0BBD0B0D0B22E20D0B7D0B0D0B1D0BBD0BED0BA2E00 D092D182D0BED180D0BED0B9FFFFFFFFFFFFFFFFFFFFFF00
+
+;Редактирование сообщения  7 : 020B6  "Выкл. звуки" => "Третий"
+17E6BDD: D092D18BD0BAD0BB2E20D0B7D0B2D183D0BAD0B800 D0A2D180D0B5D182D0B8D0B9FFFFFFFFFFFFFFFF00
+
+; Second item
+03459C8: A7F03CEC 28F51AFC  ; Entry
+03459C4: FDF7B5FB C046C046  ; Не отображать окно "Клава залочена"
+02FD24C: 1FD1 0028          ; принудительный запуск помощника, чтобы не стирались настроики интернета
+
+;Third item
+03459CE: FFF787FF 28F546FC  ; Entry
+;------------------------- end -------------------------
+

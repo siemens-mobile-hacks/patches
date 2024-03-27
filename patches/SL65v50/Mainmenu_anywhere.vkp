@@ -1,0 +1,21 @@
+;SL65v50
+;Из любого места жмем ### и попадаем в главное меню
+;Goto mainmenu from anywhere by pressing ###
+;(c) SiNgle
+;(p) KiRiK
+;Version: 
+;PatchID: 179
+;Details: https://patches.kibab.com/patches/details.php5?id=179
+/*
+Из любого места жмем ### и попадаем в главное меню.
+
+Должен быть включен DevMenu и в пункте LOGAL\options - нажать Enable ### 
+
+Goto DevMenu\LOGAL\options and press Enable ###
+*/
+;* Из любого места жмем ### и попадаем в главное меню ** Goto mainmenu from anywhere by pressing ### * © SiNgle, § KiRiK
+;!Должен быть включен DevMenu и в пункте LOGAL\options - нажать Enable ### (Goto DevMenu\LOGAL\options and press Enable ###)
+0B23D54: 4BF025F9 C4F5AFFF ;native menu (меню "зашитое" в прошивку - очень быстрое)
+;0B23D54: 4BF025F9 C0F589F8 ;main menu (меню считываемое телефоном из файла Main.fs - обычно отображаемое)
+;------------------------- end -------------------------
+

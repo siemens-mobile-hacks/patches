@@ -1,0 +1,16 @@
+;M55v91
+;Убрать сообщение "... Для выкл. нажм. и удержив. '#'" при заставке
+;Disable message "...To unlock the keyboard..." during screensaver
+;(c) Ramil_
+;Version: 
+;PatchID: 4300
+;Details: https://patches.kibab.com/patches/details.php5?id=4300
+/*
+
+*/
+0E6556: 2D 0D
+0E6566: 3D17 CC00
+0E65AE: DC57D4C60400D4D60600 46F814003D28DAC8EEFF
+A8FFEE: FFFFFFFFFFFFFFFFFFFFFFFF DC57D4C60400D4D60600DB00
+;------------------------- end -------------------------
+

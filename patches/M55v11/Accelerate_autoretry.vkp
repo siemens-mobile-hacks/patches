@@ -1,0 +1,14 @@
+;M55v11
+;Скорость автоповтора клавиатуры
+;Autoretry speed
+;(c) SiNgle
+;(p) ZH-Soft, trufanov
+;Version: 
+;PatchID: 5192
+;Details: https://patches.kibab.com/patches/details.php5?id=5192
+/*
+
+*/
+7887c8: 56 20
+;------------------------- end -------------------------
+

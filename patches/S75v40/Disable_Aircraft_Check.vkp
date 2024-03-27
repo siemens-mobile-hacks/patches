@@ -1,0 +1,13 @@
+;S75v40
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) Bennie
+;Version: 
+;PatchID: 3754
+;Details: https://patches.kibab.com/patches/details.php5?id=3754
+/*
+
+*/
+02993A5: D1 E0
+;------------------------- end -------------------------
+

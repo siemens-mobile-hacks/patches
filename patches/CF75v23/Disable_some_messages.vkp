@@ -1,0 +1,23 @@
+;CF75v23
+;Убрать некоторые сообщения
+;Disable some messages
+;(c) SiNgle
+;(p) Виктор89
+;Version: 
+;PatchID: 9875
+;Details: https://patches.kibab.com/patches/details.php5?id=9875
+/*
+
+*/
+02D445E: 0021 10BD ; All ringtones on
+02D447A: 0021 10BD ; All ringtones off 
+02D44CA: 0021 10BD ; Keypad locked
+032F010: 61F1 80BD ; Vibra alert on\off
+032F0A4: 61F1 80BD ; IrDA on\off
+032F0D4: 61F1 80BD ; GPRS on\off
+02E30E4: C8B301EB 0100A0E3 ; "Saved to:" after you take a foto
+0354284: B4A610FA 0100A0E3 ; "Please wait" in Card-Explorer
+077DDD8: 2B210901 80B580BD ; "Подождите" при запуске камеры ("Please wait" before using camera)
+04F435A: 01 00 ; "Copy SIM" at SIM change
+;------------------------- end -------------------------
+

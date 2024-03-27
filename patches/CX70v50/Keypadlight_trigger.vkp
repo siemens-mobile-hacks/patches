@@ -1,0 +1,38 @@
+;CX70v50
+;Переключатель режима подсветки клавиатуры
+;Keypadlight trigger
+;(c) benj9
+;(p) AsteriX
+;Version: 0.9
+;PatchID: 213
+;Details: https://patches.kibab.com/patches/details.php5?id=213
+/*
+Меняет режим подсветки клавы в соответствии с выбранным профилем.Пользователь может определять профили и задержку.
+*/
+0BD098E: 7EF086EA 3EF3B7FD
+#pragma enable old_equal_ff
+0F0F500: 00B5FCB40D48006880470006000E0D49
+0F0F510: 43181978FCBC022904D0012904D00329
+0F0F520: 04D005E0002203E02D2201E055231B02
+0F0F530: 012001213FF5B2EC00BD999940F5F0A0
+0F0F540: E5138DA048F5F0A0
+;определить режим (Set Keypadlight mode)
+0F0F548: 03 ;for Profile 1
+0F0F549: 02 ;for Profile 2
+0F0F54A: 01 ;for Profile 3
+0F0F54B: 00 ;for Profile 4
+0F0F54C: 03 ;for Profile 5
+0F0F54D: 03 ;for Profile 6
+0F0F54E: 03 ;for Profile 7
+#pragma disable old_equal_ff
+;Режимы подсветки (Keypad light modes are):
+;00 = обычный (normal)
+;01 = подсветка всегда включена (keypadlight always on)
+;02 = подсветка всегда выключена (keypadlight always off)
+;03 = задержка гашения подсветки (keypadlight delayed afterburner)
+0F0F52C: 55 1A ;определить задержку для режима 3 (Set delay for mode 3)
+;00 = обычный без задержки (normal/no_delay)
+;1A = несколько секунд (some seconds)
+;FF = несколько минут (some minutes delay)
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;CX75v25
+;Звуковой сигнал по окончании приёма данных
+;Sound after data recieve complete
+;(c) SiNgle
+;(p) Mikel
+;Version: 
+;PatchID: 4758
+;Details: https://patches.kibab.com/patches/details.php5?id=4758
+/*
+
+*/
+035AFFC: 0010A0E3 A666FDEB
+;------------------------- end -------------------------
+

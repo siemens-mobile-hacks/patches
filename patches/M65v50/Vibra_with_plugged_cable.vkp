@@ -1,0 +1,15 @@
+;M65v50
+;Включить вибру при подключенном кабеле
+;Enable Vibra With Plugged-In Cable
+;(c) 1nvisible
+;(p) Smelter
+;Version: 
+;PatchID: 2538
+;Details: https://patches.kibab.com/patches/details.php5?id=2538
+/*
+Для тестирования патчей, задействующих вибру
+English:For testing patches affecting vibra
+*/
+119E748: F081BD18 0000A0E3
+;------------------------- end -------------------------
+

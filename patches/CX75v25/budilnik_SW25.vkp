@@ -1,0 +1,47 @@
+;CX75v25
+;Красная иконка - будильник включён
+;Red Icon alarm clock on
+;(c) Demo
+;(r) Demo
+;(p) killer128
+;Version: 	2.1
+;PatchID: 8074
+;Details: https://patches.kibab.com/patches/details.php5?id=8074
+/*
+Красивая иконка будильника.Переделка от 13 версии http://patches.siemens-club.org/patches/details.php5?id=3571
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 14.10.2007  -  Time: 16:14:19                             ###
+; ### Patch for: SIEMENS CX75 v25                                     ###
+; #######################################################################
+
+
+; ##### Picture 767 #####
+010C181C: 0E0C8500B04F17A1 0E0E88009C07FBA0
+
+00FB079C: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1300E00400000600E00C0000FF00E002
+00FB07AC: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00000518FE05B2FC0300000418FE07B2
+00FB07BC: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FCFFEBFA0200000218FE02000002B2FC
+00FB07CC: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FF000002B2FCFDEBFA0000EBFA020000
+00FB07DC: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FEB2FC000002B2FCFB0000B2FC0000B2
+00FB07EC: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FCEBFA020000FFEBFA020000FEB2FC00
+00FB07FC: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0002B2FCF80000B2FC0000EBFA0000EB
+00FB080C: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FA000000F0020000FEB2FC000002B2FC
+00FB081C: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F80000EBFA0000EBFA0000EBFA000000
+00FB082C: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F8020000FEB2FC000002B2FCFE0000EB
+00FB083C: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FA020000FCEBFA00F8000000F8020000
+00FB084C: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02B2FC02000002EBFAFE0000EBFA0200
+00FB085C: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F8FE000000F802000006EBFA0600F80F
+00FB086C: FFFFFFFFFF 00000E00E0
+
+
+
+;------------------------- end -------------------------
+

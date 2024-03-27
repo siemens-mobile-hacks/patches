@@ -1,0 +1,14 @@
+;C72v22
+;Разрешить Разблокировку Клавиатуры Двойным Нажатием #
+;Allow KeyBoard Unlock by Double-Press of #
+;(c) 1nvisible
+;(p) Virusmater
+;Version: 
+;PatchID: 6965
+;Details: https://patches.kibab.com/patches/details.php5?id=6965
+/*
+
+*/
+902858: 36D1 C046
+;------------------------- end -------------------------
+

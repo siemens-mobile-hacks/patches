@@ -1,0 +1,58 @@
+;M75v25
+;ZIPViewer
+;ZIPViewer
+;(c) MaX6, const
+;(r) NForce, DJ, cbn
+;(p) const
+;Version: 2.2
+;PatchID: 5442
+;Details: https://patches.kibab.com/patches/details.php5?id=5442
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=m75v25&f=ZIPViewer_v2_2.zip
+
+/*
+Заменяет форматы PDF, DOC или XLS на ZIP, RAR и 7Z и позволяет открывать их сразу из Card-Explorer! Чтобы патч работал нужно создать папку X://java/jam/Applications/ZipViewer/ (X://java/jam/Applications/RarViewer/)поместить любой разархиватор Zip (Rar, 7Z) и переименовать в ZipViewer.jar (RarViewer)!
+В аттаче исходники для графики + выполненные в едином стиле MobilZip-x75 (adapted by DJ) и MobilRar-0.7c (© cbn)
+*/
+;http://djfromredsys.wen.ru/Other/MobileZip-x75.jar - Открывает Zip-архивы сразу из кард-эксплорера.
+;http://www.mobilerar.narod.ru/MobileRar.jar - Открывает Zip/Rar/7z-архивы сразу из кард-эксплорера (с версии 0.7c).
+; Для использования разных программ для zip и rar закомментировать соответствующие строки.
+; Архивы 7zip (впрочем как и rar) распаковываются ТОЛЬКО MobileRar, поэтому для их открывания используем RarViewer.
+; В данном примере следующая комбинация:
+;        PdfViewer (*.pdf) заменён на ZipViewer (*.zip)
+;        DocViewer (*.doc) заменён на RarViewer (*.rar)
+;        XlsViewer (*.xls) заменён на RarViewer (*.7z)
+
+4AD6ED: 446F63 526172 ; DocViewer -> RarViewer
+4AD6F9: 586C73 526172 ; XlsViewer -> RarViewer
+;4AD705: 506466 526172 ; PdfViewer -> RarViewer
+
+;4AD6ED: 446F63 5A4950 ; DocViewer -> ZipViewer
+;4AD6F9: 586C73 5A4950 ; XlsViewer -> ZipViewer
+4AD705: 506466 5A4950 ; PdfViewer -> ZipViewer
+
+;Собственно замена расширений
+; doc -> rar
+4AD72C: 646F63 726172
+; doc -> zip
+;4AD72C: 646F63 7A6970
+; doc -> 7z
+;4AD72C: 646F63 377A00
+
+
+; xls -> rar
+;4AD74C: 786C73 726172
+; xls -> zip
+;4AD74C: 786C73 7A6970
+; xls -> 7z
+4AD74C: 786C73 377A00
+
+
+; pdf -> rar
+;4AD76C: 706466 726172
+; pdf -> zip
+4AD76C: 706466 7A6970
+; pdf -> 7z
+;4AD76C: 706466 377A00
+
+;------------------------- end -------------------------
+

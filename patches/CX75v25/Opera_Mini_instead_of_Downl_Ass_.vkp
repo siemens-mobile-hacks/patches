@@ -1,0 +1,26 @@
+;CX75v25
+;Opera Mini вместо Помощника загрузок
+;Opera Mini instead of Download Assistant
+;(c) © ~Jhellico
+;(p) Nikola Inc
+;Version: 
+;PatchID: 3692
+;Details: https://patches.kibab.com/patches/details.php5?id=3692
+/*
+OperaMini будет вызываться через Меню-3-3 и шорткат ELSE_DOWN_ASSIS
+!Мидлет должен быть в папке "\Applications\OperaMini\"
+*/
+0326CE5: 446F776E6C6F61642041 "OperaMini",00
+032B7B9: 446F776E6C6F61642041 "OperaMini",00
+07D4BC1: 446F776E6C6F61642041 "OperaMini",00
+
+;Редактирование сообщения "Помощн.загр." => "Opera Mini"
+14C332: 0C87B93742367B0B8F2C397B 0C7548665B675719465F645F
+
+;Редактирование сообщения "Downl. assist." => "Opera Mini"
+14C31D: 0AA6F3559EDD5CCA5D19 0AC559AE6D38B2526767
+
+;Редактирование сообщения "Зладув.асист." => "OperaMini"
+14C35C: 0B7BAC2B7EB97427D386B9 0B724663586454445C615C
+;------------------------- end -------------------------
+

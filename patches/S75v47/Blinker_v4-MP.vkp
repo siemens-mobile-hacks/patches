@@ -1,0 +1,14 @@
+;S75v47
+;Blinker
+;Blinker
+;(c) benj9
+;(p) starfriend
+;Version: 4
+;PatchID: 7280
+;Details: https://patches.kibab.com/patches/details.php5?id=7280
+/*
+
+*/
+01B6430: 0080A0E1 F7AEFAEB
+;------------------------- end -------------------------
+

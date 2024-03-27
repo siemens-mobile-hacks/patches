@@ -1,0 +1,15 @@
+;SK65v50
+;Просмотр Входящего СМС
+;View Incoming SMS
+;(c) 1nvisible
+;Version: 
+;PatchID: 4161
+;Details: https://patches.kibab.com/patches/details.php5?id=4161
+/*
+Чтобы просмотреть СМС, во время появления экрана "Входящее СМС" нажмите на правую софт-клавишу.
+English:
+To view SMS press right soft-key during "Incoming SMS" screen.
+*/
+02C3C28: 01D001208847 C046CFF184FE
+;------------------------- end -------------------------
+

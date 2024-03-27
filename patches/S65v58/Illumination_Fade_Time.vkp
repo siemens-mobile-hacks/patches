@@ -1,0 +1,15 @@
+;S65v58
+;Задержка гашения подсветки
+;Illumination Fade Time
+;(c) BuG
+;Version: 
+;PatchID: 3653
+;Details: https://patches.kibab.com/patches/details.php5?id=3653
+/*
+Логотип к патчу не относится. Просто патч был во время ЧМ 2006 сделан . Просто себе его забросьте на заставку.
+Apo4emu
+*/
+0C57354: B80B 0i01000 ; 3 sec => 1 sec
+;0000 leads to instant fade-in and fade-out
+;------------------------- end -------------------------
+

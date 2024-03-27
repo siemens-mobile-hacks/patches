@@ -1,0 +1,20 @@
+;S75v47
+;Блокировать включение DevMenu->Exits->Sexit
+;Disable turn on of DevMenu->Exits->Sexit
+;(c) Evgr
+;(p) Diman3452
+;Version: 
+;PatchID: 10231
+;Details: https://patches.kibab.com/patches/details.php5?id=10231
+/*
+
+*/
+;5564BF: 0A EA ; e71v45
+;55C707: 0A EA ; el71v45
+;20CE1B: 0A EA ; s68v52
+02422BB: 0A EA ; s75v47
+;242467: 0A EA ; s75v52
+;24174B: 0A EA ; c81v51
+;24176F: 0A EA ; m81v51
+;------------------------- end -------------------------
+

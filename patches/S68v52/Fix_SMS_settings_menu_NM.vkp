@@ -1,0 +1,16 @@
+;S68v52
+;Фикс меню Сообщения-Настройки в NativeMenu
+;Fix SMS setting Menu in NativeMenu
+;(c) BingK(binghelingxi)
+;(p) sim_emrom
+;Version: 
+;PatchID: 9285
+;Details: https://patches.kibab.com/patches/details.php5?id=9285
+/*
+Нормальное отображение меню, строки больше не съезжают вправо
+*/
+7748A0: 91 10
+4D4BEA: 30 18
+4D4AEC: D6 F2
+;------------------------- end -------------------------
+

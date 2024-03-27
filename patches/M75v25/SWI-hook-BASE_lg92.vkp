@@ -1,0 +1,21 @@
+;M75v25
+;SWI-хук (lg92)
+;SWI-hook (lg92)
+;(c) avkiev, Rst7/CBSIE, BoBa
+;(r) Grizzzzly
+;(p) KonstanT, mAhmud
+;Version: 
+;PatchID: 5858
+;Details: https://patches.kibab.com/patches/details.php5?id=5858
+/*
+Необходим для вызова библиотечных функций из перемещаемых патчей
+Версия патча для телефонов с lg92
+
+Оригинал: 4675
+
+*/
+0092BE4: 1A0000EA DCF09FE5
+0092CC7: A100000000 000080FDA0
+
+;------------------------- end -------------------------
+

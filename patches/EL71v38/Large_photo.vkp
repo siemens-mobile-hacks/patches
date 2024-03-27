@@ -1,0 +1,38 @@
+;EL71v38
+;Увеличение фото абонента при входящем и исходящем вызовах
+;Large photo
+;(c) SiNgle
+;(p) Estar
+;Version: 
+;PatchID: 6998
+;Details: https://patches.kibab.com/patches/details.php5?id=6998
+/*
+
+*/
+;Необходимы аватары размером 240x220
+
+5C19E8: 5A B5 ;photo size
+
+84B1C0: BF EA ; outcall_y_name
+84B1DC: DF FF ; outcall_y_phonenum
+84B1F8: FF 00 ; outcall_y_blankarea2 (раскомментировано => нет показа времени разговора)
+84B214: 3F 00 ; outcall_y_blankarea1
+
+84AFCE: 5F 3C ; outcall_photo_y
+84B262: 5F 3C ; incall_photo_y
+
+84B3CC: 3F 00 ; incall_y_blankarea1
+84B420: FF 00 ; incall_y_blankarea2 (раскомментировано => нет показа времени разговора)
+84B3E8: BF EA ; incall_y_name
+84B404: DF FF ; incall_y_phonenum
+
+; fontsize
+
+84B1C4: 05 0B ; Имя при исход.звонке, чем больше значение, тем меньше шрифт.
+84B3EC: 05 08 ; Имя при вход.звонке, чем больше значение, тем меньше шрифт.
+
+;84B1E0: 04 0B ; Номер при исход.звонке, чем больше значение, тем меньше шрифт
+;84B408: 04 08 ; Номер при вход.звонке, чем больше значение, тем меньше шрифт.
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v47
+;Убрать подождите в эксплорере
+;Disable please wait in explorer
+;(c) SiNgle
+;(p) Zl0d
+;Version: 
+;PatchID: 5651
+;Details: https://patches.kibab.com/patches/details.php5?id=5651
+/*
+Пожалуйста на русском уже убрали, осталось убрать подождите:)
+*/
+05297EE: 03D1 03E0
+;------------------------- end -------------------------
+

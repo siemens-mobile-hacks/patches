@@ -1,0 +1,18 @@
+;A62v7
+;Отключить сообщение при Включении/Выключении сигналов
+;Deactiwate "Ring on-off" message
+;(c) Rasp
+;(p) Weron
+;Version: 
+;PatchID: 9404
+;Details: https://patches.kibab.com/patches/details.php5?id=9404
+/*
+
+*/
+;Отключить сообщение при Включении/Выключении сигналов.
+;(c) Rasp
+;(p) Weron
+6C8060: DA8DAC90 CC00CC00
+6C8076: DA8DAC90 CC00CC00
+;------------------------- end -------------------------
+

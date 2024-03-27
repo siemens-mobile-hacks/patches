@@ -1,0 +1,24 @@
+;S65v58
+;Неограниченная запись видео
+;Unlimited Video Recording
+;(c) SiNgle
+;(p) KiRiK
+;Version: 1.0
+;PatchID: 1429
+;Details: https://patches.kibab.com/patches/details.php5?id=1429
+/*
+После нажатия стоп и записи, выйдите из камеры красной кнопкой 
+Не совместим с Фотографирование любой цифровой кнопкой v1 
+Работает совместно с переносом Видео на MMC
+Запись больше 16 минут 40 секунд - не стабильно!
+Счетчик нормально показывает отснятое время лишь до 9 мин 59 сек, а затем вместо 10:00 он показывает 1:00; вместо 10:01 -> 1:01 и т.д.
+English:
+After pressing Stop and saving, exit camera mode with the red button 
+Not compatible with To make foto with any digital key v1 
+Max rec time indicator shows shit, ignore it
+Tested with Save videos and photos on the MMC-card
+*/
+08D83E7: 00 FF
+097EF64: 3300000A 920052E3
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;E71v45
+;Отключить "Получено новое сообщение!" при входящем SMS
+;Disable "New message received!" at incoming SMS
+;(c) Evgr
+;Version: 0.1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=10551
+;PatchID: 10324
+;Details: https://patches.kibab.com/patches/details.php5?id=10324
+/*
+
+*/
+066BCB8: 20 00
+;------------------------- end -------------------------
+

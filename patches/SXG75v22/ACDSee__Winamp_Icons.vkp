@@ -1,0 +1,15 @@
+;SXG75v22
+;Иконки файлов как в ACDSee и Winamp
+;ACDSee and Winamp's Icons
+;(c) Unknown
+;Version: 
+;PatchID: 6172
+;Details: https://patches.kibab.com/patches/details.php5?id=6172
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sxg75v22&f=ACDSee__Winamp_Icons.zip
+
+/*
+brew\mod\CoreDaemonApp\common_res\common
+*/
+      
+;------------------------- end -------------------------
+

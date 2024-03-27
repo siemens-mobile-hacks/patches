@@ -1,0 +1,15 @@
+;C81v51
+;Не запускать меню красной кнопки на ГЭ
+;Do not start red button menu on idle
+;(c) Visad
+;(r) (i)1nvisible
+;(p) Виктор89
+;Version: 
+;PatchID: 9114
+;Details: https://patches.kibab.com/patches/details.php5?id=9114
+/*
+
+*/
+34F142: A8F06CE9 C046C046
+;------------------------- end -------------------------
+

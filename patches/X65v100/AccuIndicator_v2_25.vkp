@@ -1,0 +1,45 @@
+;X65v100
+;Графический индикатор температуры аккумулятора
+;Accu Temperature As Graphic Indicator
+;(c) benj9
+;(r) ACiDmrp, avkiev, BuG, (i) ~Jhellico
+;Version: 2.25
+;PatchID: 3322
+;Details: https://patches.kibab.com/patches/details.php5?id=3322
+/*
+Для патча нужны 14 картинок. Одна для температуры меньше минимальной, одна для температуры больше максимальной, 12 для промежутка между максимальной и минимальной температурой. В мастер патче вы можете установить минимальную температуру и промежуток между максимальной и минимальной температурой (19.2 or 38.4°C)
+Пофиксино от v2.1 - 1) другая предустановка картинок (Скорее  всего под sk65v50).2)Главное - теперь не нужна врезка, т.к. работает менеджер граф.патчей.
+
+English:there are 14 pictures. 1 pic below temp_min, 1 pic over temp_max, 12 pics in the range of temp_min to temp_max
+in masterpatch you can set temp_min and the range between temp_min and temp_max (19.2 or 38.4°C)
+No entrypoint needed, because of Graphpatch manager
+2.2 -> 2.25 - check for RamStby and screensaver
+*/
+#pragma enable old_equal_ff
+0FC6400: 00B52848FAF7FCFB47D0FAF745F93868
+0FC6410: 002842D0F9F7FCFE3FD101200321F9F7
+0FC6420: 07FE0A210902AA31401A112571574018
+0FC6430: 00D54042C021357C002D03D0C0311B23
+0FC6440: 052501E01C230425F778C01B01D5B468
+0FC6450: 09E0884201DBF46805E0C117D9404018
+0FC6460: 71682841441882B0201CF9F74DFEB178
+0FC6470: 091801200190091A0091201CF9F748FE
+0FC6480: 71784318013BB2780498F9F74DFE02B0
+0FC6490: B1787078221CF9F743FE00BD
+
+0FC64A0: 0xB1C2D3E4,0x0100CCCD,0xA0FC6401,00000000,"\
+{patch=AccuTempIndicator ver=2.25 cp=benj9 id=0100CCCD}","\
+{sm `Icon/Canvas Setup`}","\
+{1 xy `icon pos` x=102 y=14}","\
+{4 i `1st icon pit` v=1328}","\
+{8 i `underrun icon pit` v=1341}","\
+{12 i `overflow icon pit` v=1340}","\
+{endsm}","\
+{sm `Thermometer Setup`}","\
+{3 b `1st icon temperature (0..25.5°C x 10)` v=150}","\
+{16 o `range cold to hot` `19.2°C`=0 `38.4°C`=1}","\
+{17 b `temperature calibration (-3..3°C x 10)` r=-30..30}","\
+{endsm}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;CX75v25
+;Работа телефона без СИМ-карты
+;No SIM Card Phone Operation
+;(c) SiNgle
+;(r) N1K
+;(p) Serega_1
+;Version: 3
+;PatchID: 5746
+;Details: https://patches.kibab.com/patches/details.php5?id=5746
+/*
+Я поменял врезку, теперь вместо сообщения "Вставьте Сим" телефон грузится:)
+*/
+02C6CAE: 10B5CE49CF4881F07FFB041CCE49 08B5014B984708BDC04650244AA0
++04A2450
+#pragma enable old_equal_ff
+00: FF7F2DE910109FE510009FE50120A0E3
+10: 0FE0A0E111FF2FE1FFBFBDE8,0xA0831AEC ; ---A
+20: 00200BA8 ; B
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

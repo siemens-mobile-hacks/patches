@@ -1,0 +1,118 @@
+;MC60v10
+;Звуковой сигнал каждый час
+;Hourly sound alert
+;(c) Unknown
+;(p) Kanibaals
+;Version: 
+;PatchID: 3606
+;Details: https://patches.kibab.com/patches/details.php5?id=3606
+/*
+Этот патч будет издавать ежечасный сигнал в ЧЧ:00 каждый час или каждый час толька от 8-23. Пока неработает. Кто может поправте неправылнии адрес функции GetSystemTime. Есть оригиналнии код с описанием. 
+
+English:This patch gives a beeping sound in every hour or every hour in time period from 8-23. Not working yet. 
+*/
+################################
+
+;With original code, that can be easily changed by using SFE.
+
+2. Time period 8-23 hourly signal
+000CF584:98809890 DA750033
+0x553300: ffffffffffffffffffffffffffffffff 9880989088C0D7401500F2FC680F48C0
+0x553310: ffffffffffffffffffffffffffffffff 3D16D7400C00F2FC020948C12D2DD740
+0x553320: ffffffffffffffffffffffffffffffff 1500F2FC6A0F46FC08008D0746FC1700
+0x553330: ffffffffffffffffffffffffffffffff ED04E6FC3D00DA9F9C4FE01C9D1946FC
+0x553340: ffffffffffffffffffffffffffffffff 1E003D15D7400C00F2FC020948C12D14
+0x553350: ffffffffffffffffffffffffffffffff D7401500F2FC6A0F46FC08008DEE46FC
+0x553360: ffffffffffffffffffffffffffffffff 1700EDEBE6FC3E00DA9F9C4F9DE6E00C
+0x553370: ffffffffffffffffffffffff D7400C00F6FC020998C0DB00
+
+;1. Hourly signal
+; First undo original version.
+;
+;000CF584:98809890 DA750033
+;0x553300: ffffffffffffffffffffffffffffffff 9880989088C0D7401500F2FC680F48C0
+;0x553310: ffffffffffffffffffffffffffffffff 3D0CD7400C00F2FC020948C12D19E6FC
+;0x553320: ffffffffffffffffffffffffffffffff 3D00DA9F9C4FE01C9D0F46FC1E003D0B
+;0x553330: ffffffffffffffffffffffffffffffff D7400C00F2FC020948C12D0AE6FC3e00
+;0x553340: ffffffffffffffffffffffffffffffff DA9F9C4F9DF0E00CD7400C00F6FC0209
+;0x553350: ffffffff 98C0DB00
+
+*****
+Following is the original code.
+; Hourly signal+
+;MC60 V07
+; 8-23
+; Entrance : 0d3bc0:98809890 DA750033
+
+#define Patch_org_addr 553300h; Patch start address
+#define Dididi 0a1ec94h; Ringtone signal call
+
+Org Patch_org_addr
+Mov r8, [r0+]; share position.
+Mov r9, [r0+]
+
+Mov [-r0], r12
+Extp #15h, #1
+Mov r12, 0f68h; 54F68 next two sentences from the minutes time system
+Cmp r12, #0
+Jmpr cc_NZ,AArets
+
+Extp #0Ch, #1
+Mov r12, 0902h; Signs spaces. The value of C*4000+0920 read R12.
+Cmp r12, #1
+Jmpr cc_Z, DDrets
+;-------------------------
+Extp #15h, #1
+Mov r12, 0f6ah ;54F6A first obtain the system time hours.
+Cmp r12, #8
+Jmpr cc_C, lable1
+Cmp r12, #17h
+Jmpr cc_UGT,lable1
+;-------------------------
+Mov r12, #3Dh; Controls the type of ringtone
+Calls Dididi
+
+Lable1 :
+Mov r12, #1
+Jmpr cc_Nc BBrets
+
+AArets :
+;<------ to 30 hours of processing.
+
+Cmp r12,#1eh ;30 hours?
+Jmpr cc_NZ,CCrets
+
+Extp #0Ch, #1; Whether there are signs in the 30902?
+Mov r12, 0902h
+Cmp r12, #1
+Jmpr cc_Z, DDrets
+
+;-------------------------
+Extp #15h, #1
+Mov r12, 0f6ah
+Cmp r12, #8
+Jmpr cc_C, lable1
+Cmp r12, #17h
+Jmpr cc_UGT,lable1
+;-------------------------
+
+Mov r12,#3eh; Another type of signal
+Calls Dididi
+Jmpr cc_Nc,lable1
+;<------
+
+CCrets :
+
+Mov r12, #0
+BBrets :
+Extp #0Ch, #1; To 30,902 in the value of R12.
+Mov 0902h, r12
+DDrets :
+Mov r12, [r0+]; Restore the original R12.
+Rets
+
+#################################
+
+
+;------------------------- end -------------------------
+

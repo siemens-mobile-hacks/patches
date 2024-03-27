@@ -1,0 +1,15 @@
+;S75v52
+;Не лочить клаву при проигрывании Mp3
+;Don't lock keyboard while playing Mp3
+;(c) ThE TrIFoN
+;(r) (i) RainMaker,  -=(Kad)=-
+;(p) SimaFish
+;Version: 3-MP
+;PatchID: 8797
+;Details: https://patches.kibab.com/patches/details.php5?id=8797
+/*
++3 Исправлен баг с невозможности заблокировать клаву в ручную когда плеер включен.
+*/
+03ED24C: 9B5290A0 116C06A0
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;CX70v56
+;Убрать черточки-разделители при показе IMEI
+;Disable delimiters while showing IMEI
+;(c) 1nvisible
+;(r) Bennie
+;Version: 
+;PatchID: 9385
+;Details: https://patches.kibab.com/patches/details.php5?id=9385
+/*
+
+*/
+08FC098: 05D0 0AE0
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;S75v52
+;Мега-громкость без МП
+;Mega-loudness free MP
+;(c) SiNgle,-=(Kad)=-,Akot
+;(p) Feyman
+;Version: 
+;PatchID: 8445
+;Details: https://patches.kibab.com/patches/details.php5?id=8445
+/*
+
+*/
+01F355c: 030000EF6C3DA0E30320A0E3 030040E22600C4E52A0000EA
+01F3608: 2600C4E5 D3FFFFEA
+
+;01F355c: 03 02 ; Громкость (00-07) | Loudness (00-07)
+;------------------------- end -------------------------
+
+;------------------------- end -------------------------
+

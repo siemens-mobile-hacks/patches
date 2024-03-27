@@ -1,0 +1,17 @@
+;M75v19
+;Показ Расширений Файлов в Card-Explorer'е
+;Show File Extensions in Card-Explorer
+;(c) 1nvisible
+;(r) SiNgle
+;(p) Stitch
+;Version: 
+;PatchID: 3316
+;Details: https://patches.kibab.com/patches/details.php5?id=3316
+/*
+У файлов в Card-Explorer'е отображаются расширения.
+
+Спасибо за помощь в портирывании Mikel'ю
+*/
+3DAB9C: 2E 1E
+;------------------------- end -------------------------
+

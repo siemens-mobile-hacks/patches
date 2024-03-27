@@ -1,0 +1,16 @@
+;S75v47
+;Истинные размеры файлов, папок и т.п. в Card-Explorer
+;Real sizes of files, folders etc in Card-Explorer
+;(c) _caine
+;(p) ManOfWar | RainMaker AKA Shadow
+;Version: 
+;PatchID: 5687
+;Details: https://patches.kibab.com/patches/details.php5?id=5687
+/*
+Заставляет телефон понять, что 1 Кб = 1024б и так далее...
+English: Forces phone to treat 1Kb as 1024b and so far
+*/
+04D5F7C: 7D 80
+04D6090: 4042 FFFF
+;------------------------- end -------------------------
+

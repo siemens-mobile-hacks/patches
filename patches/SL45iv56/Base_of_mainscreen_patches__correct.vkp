@@ -1,0 +1,13 @@
+;SL45iv56
+;Base of mainscreen patches (correction)
+;Base of mainscreen patches (correction)
+;(c) rc-flitzer
+;Version: 
+;PatchID: 5750
+;Details: https://patches.kibab.com/patches/details.php5?id=5750
+/*
+If already installed "Base of mainscreen patches" patch
+*/
+40DBAC: CC00CC00 46F8FFFF
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;SL75v47
+;Использовать клавиши громкости при кейлоке если играет музыка в медиаплеере
+;Enable use volume key then keyboard locked if playing music in mediaplayer
+;(c) BingK(binghelingxi)
+;(r) BuG, snoopyhzy
+;(p) bertgrin
+;Version: 
+;PatchID: 9479
+;Details: https://patches.kibab.com/patches/details.php5?id=9479
+/*
+Если играет музыка в медиаплеере вы сможете изменять громкость боковыми клавишами +/- и при заблокированной клавиатуре
+*/
+05FD186: 02D1 C046
+;------------------------- end -------------------------
+

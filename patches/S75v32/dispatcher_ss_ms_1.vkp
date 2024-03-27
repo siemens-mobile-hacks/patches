@@ -1,0 +1,16 @@
+;S75v32
+;Диспатчер заставки и главного экрана
+;Screensaver&Mainscreen dispatcher
+;(c) avkiev
+;(p) ferro
+;Version: 
+;PatchID: 4009
+;Details: https://patches.kibab.com/patches/details.php5?id=4009
+/*
+
+*/
+0342d46: 26229D44090169446844 C046,004A9047,0xA0063F01   ; S75v32
+
+
+;------------------------- end -------------------------
+

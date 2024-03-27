@@ -1,0 +1,25 @@
+;S75v42
+;Не сворачивать автоматически MP3-плеер
+;Don't Hide MP3-Player To Background
+;(c) ThE TrIFoN
+;(p) KiRiK
+;Version: 
+;PatchID: 6003
+;Details: https://patches.kibab.com/patches/details.php5?id=6003
+/*
+После установки патча плеер не будет автоматически сворачиваться если долго работает.
+Также не будет автоматически блокироваться клавиатура.
+
+
+English:
+Player won't go to background automatically
+Besides, keypad won't be automatically locked
+*/
+029A19C: 50F18EEE CCF538FD
+
+#pragma enable old_equal_ff
+0066C10: 09B5044B9847002801D1014B984709BD
+0066C20: ADCD96A0B1B752A0 
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

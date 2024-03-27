@@ -1,0 +1,18 @@
+;S65v53
+;Сохранение голосовых заметок на MMC
+;Save Voice Memo on the MMC-card
+;(c) KiRiK
+;(r) avkiev
+;(p) Athlon
+;Version: 
+;PatchID: 340
+;Details: https://patches.kibab.com/patches/details.php5?id=340
+/*
+Максимальное время записи определяется свободным местом на диске А, однако повторять запись можно, пока не кончится MMC :)
+
+Max rec time of a file is determined by free space on A:\
+But it can be repeated as many times as the MMC allows
+*/
+0A24454: 30 34
+;------------------------- end -------------------------
+

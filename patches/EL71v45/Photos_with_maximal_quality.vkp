@@ -1,0 +1,14 @@
+;EL71v45
+;Фотографии с максимальным качеством
+;Photos with maximal quality
+;(c) SiNgle
+;Version: 
+;PatchID: 7945
+;Details: https://patches.kibab.com/patches/details.php5?id=7945
+/*
+
+*/
+0547148: 0000DDE5 0200A0E3
+0474F8A: 0000DD05 0200A0E3
+;------------------------- end -------------------------
+

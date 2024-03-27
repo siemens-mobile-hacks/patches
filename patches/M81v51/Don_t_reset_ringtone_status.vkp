@@ -1,0 +1,14 @@
+;M81v51
+;Не cбрасывать состояние звука при переключении профилей
+;Don't reset ringtone status in profiles
+;(c) dimonp25
+;(p) SimaFish
+;Version: 
+;PatchID: 9513
+;Details: https://patches.kibab.com/patches/details.php5?id=9513
+/*
+
+*/
+033FF1C: 00203CF768E8 C046C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;S75v52
+;Отключить UNK логгинг
+;Disable UNK logging
+;(c) benj9
+;(r) KIBER-DEMON
+;(p) ferro
+;Version: 
+;PatchID: 8351
+;Details: https://patches.kibab.com/patches/details.php5?id=8351
+/*
+Отключает UNK логгинг
+
+*/
+09Fc5ac: 0F002DE9 1EFF2FE1
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;C75v13
+; Убрать запятую между именем и фамилией в списке адресной книги
+;To remove the comma between the name and the surname in the list of the directory
+;(c) SiNgle
+;(r) _Bald
+;Version: 
+;PatchID: 1090
+;Details: https://patches.kibab.com/patches/details.php5?id=1090
+/*
+
+*/
+05e12ce: 09f040eb 00280028
+
+
+;------------------------- end -------------------------
+

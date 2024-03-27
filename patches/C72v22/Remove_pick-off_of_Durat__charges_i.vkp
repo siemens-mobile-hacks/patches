@@ -1,0 +1,19 @@
+;C72v22
+;Remove pick-off of Durat./charges item in Native Menu
+;Remove pick-off of Durat./charges item in Native Menu
+;(c) Saifaye
+;(r) Evgr
+;Version: 2
+;PatchID: 10601
+;Details: https://patches.kibab.com/patches/details.php5?id=10601
+/*
+
+*/
+;Remove pick-off of Durat./charges item in Native Menu v2
+;(c)Saifaye
+;(r)Evgr
+;C72v22
+
+08D0BA4: 081C 0020
+;------------------------- end -------------------------
+

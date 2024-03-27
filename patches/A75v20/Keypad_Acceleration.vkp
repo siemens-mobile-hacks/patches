@@ -1,0 +1,14 @@
+;A75v20
+;Скорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) Nikolas535
+;Version: 
+;PatchID: 9328
+;Details: https://patches.kibab.com/patches/details.php5?id=9328
+/*
+Если кто-то хочет еще быстрее, то можно заменить 30 на 20.
+*/
+329574: 56 30
+;------------------------- end -------------------------
+

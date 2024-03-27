@@ -1,0 +1,20 @@
+;CX75v13
+;Убрать белый фон иконок в native-меню
+;Remove icons white background in native menu
+;(c) SiNgle
+;(p) B&#252;ffel
+;Version: 1.0
+;PatchID: 811
+;Details: https://patches.kibab.com/patches/details.php5?id=811
+/*
+RUS: Убирает белый фон из под выбранной иконки в native-меню, смотрится при этом гораздо приятнее.
+Но остаётся грязно-серый цвет подложек иконок, вот от него бы избавиться...
+
+ENG: Cleans a white background from under the chosen icon in the native-menu, it is looked thus much more pleasantly. 
+But there is a is dirty-grey color of substrates icons, here of it to get rid...
+*/
+0956494: 00 FF
+0956538: 9EF645FF 00280028
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;C72v22
+;Десятичный CID вместо C1 и C2 в списке соседних сот
+;Decimal CID instead of C1 & C2 in neighbour list
+;(c) слава Богу
+;(r) SiNgle
+;Version: 
+;PatchID: 5828
+;Details: https://patches.kibab.com/patches/details.php5?id=5828
+/*
+
+*/
+129D496: 0123F856002802DA 203FB88B203702E0
+129D4A4: 2B 20
+129D4A8: 02 05
+129D4B2: 0223 0CE0
+132B1F0: 31204332 656C4944
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;S55v20
+;Отключение верификации Java-классов
+;Disable Java classes verification
+;(c) avkiev, SiNgle
+;(r) chaos
+;Version: 
+;PatchID: 4761
+;Details: https://patches.kibab.com/patches/details.php5?id=4761
+/*
+Ускоряет запуск мидлетов на 30-70%
+
+English:
+Decreaes MIDlet launchtime up to 30-70%
+*/
+5B4826: 3D 0D
+;------------------------- end -------------------------
+

@@ -1,0 +1,22 @@
+;MC60v10
+;Время "звучания" будильника
+;Extend alarm clock signal time
+;(c) Unknown
+;(p) Kanibaals
+;Version: 
+;PatchID: 3607
+;Details: https://patches.kibab.com/patches/details.php5?id=3607
+/*
+было 45000 мс (HEX - AFC8)
+стало 120000 мс (HEX - 1D4C0)
+
+*/
+3A9A3A: C8AF0000 C0D40100
+
+;----------------------------------------------------------------------------------------
+; original 45,000 milliseconds (hexadecimal system-AFC8)
+; Now 120,000 milliseconds (hexadecimal system-1D4C0)
+;65000  >> E8FD0000 1 minute
+;325000 >> 88f50100 five minutes 
+;------------------------- end -------------------------
+

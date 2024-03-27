@@ -1,0 +1,21 @@
+;S75v52
+;Быстрый показ окна "Соединение завершено"
+;Fast show call ended window
+;(c) Evgr
+;(p) Vitll
+;Version: 
+;PatchID: 9851
+;Details: https://patches.kibab.com/patches/details.php5?id=9851
+/*
+
+*/
+; Быстрый показ окна "Соединение завершено"
+; Fast show call ended window
+; S75v52
+; (c) Evgr
+; (p) Vitll
+
+042CEF4: D007 0001
+
+;------------------------- end -------------------------
+

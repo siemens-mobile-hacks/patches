@@ -1,0 +1,14 @@
+;C75v24
+;Увеличить фото при входящем звонке
+;Enlarge Incoming Call Photo
+;(c) SiNgle
+;Version: 2
+;PatchID: 2930
+;Details: https://patches.kibab.com/patches/details.php5?id=2930
+/*
+
+*/
+04E8924: 04 00 ; except SL65
+02A622E: 19 11
+;------------------------- end -------------------------
+

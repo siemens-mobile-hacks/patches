@@ -1,0 +1,36 @@
+;S55v20
+;Авто-поднятие трубки с не-Siemens BT гарнитурой
+;Auto-Answer with (no Siemens) BT Headset
+;(c) lalo & Giro
+;Version: 
+;PatchID: 5402
+;Details: https://patches.kibab.com/patches/details.php5?id=5402
+/*
+Патч делает возможным автоподнятие трубки на не-Siemens BT гарнитурах, которое срабатывает через 7 сек.
+Установите галочку автоподнятия в Setup->Accessories->Headset.
+ Нет необходимости устанавливать профиль гарнитуры - просто спарьте гарнитуру и телефон.
+
+English:This patch allow the auto-answer, with no Siemens BlueTooth Headset, after 7 seconds.
+Need flag for auto-answer in Setup->Accessories->Headset.
+No need to set Headset profile, only connect and pair your BT Headset to phone.
+*/
+329984: E6F88806 DA7B6098
+
+3B9860: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E01CDA82D0EE48443D1BE01CDA701850
+3B9870: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 48443D16DA92B06148402D12E6FCA698
+3B9880: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FD7B0088D088C0E00E88E0E6FC9E04
+3B9890: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FD0D00E6FED606E00FDAD16CF10806
+3B98A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6F88806DB00DA63B29DDA7180F5DB00
+
+;Настройка
+;Customization
+;change XXYY if you want auto-answer after: 
+;A60E = 15sec.
+;C409 = 10sec.
+;D606 = 7sec.
+;E204 = 5sec.
+
+;3B9896: D606 XXYY ;XXYY = time delay in ms/0,25 swapped byte(s)
+                   ;XXYY = задержка в ms/0,25 (байты поменять местами)
+;------------------------- end -------------------------
+

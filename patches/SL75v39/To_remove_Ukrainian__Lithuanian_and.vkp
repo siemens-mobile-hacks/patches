@@ -1,0 +1,15 @@
+;SL75v39
+;Убрать украинский, литовский и латвийский языки из меню ввода
+;Remove Ukrainian, Lithuanian and Latvian languages from input languages menu
+;(c) Ziklop
+;Version: 
+;PatchID: 5405
+;Details: https://patches.kibab.com/patches/details.php5?id=5405
+/*
+
+*/
+0C15DA6: 00 01       
+0C15DA2: 00 01        
+0C15D9E: 00 01 
+;------------------------- end -------------------------
+

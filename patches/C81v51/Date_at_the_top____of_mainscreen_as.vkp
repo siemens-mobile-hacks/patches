@@ -1,0 +1,30 @@
+;C81v51
+;Дата вверху ;) (на главном экране) в виде "Чт, 20 Апр" v11
+;Date at the top ;) of mainscreen as "Thu, 20 Apr" v11
+;(c) avkiev
+;(p) Kibab
+;Version: 
+;PatchID: 7553
+;Details: https://patches.kibab.com/patches/details.php5?id=7553
+/*
+
+*/
+0911DFC: FEF7A5FC231C2A1C 004B9847,0xA0063A01   ; C81v51
+
+#pragma enable old_equal_ff
+0063A00: 01B52048C4DF23D045783468023409BC
+0063A10: 01B4B4DFB5DF0D3000F022F8002D02D0
+0063A20: 2C232380023420BC69790A20B8DF3030
+0063A30: 3031202323806080A180E38008342879
+0063A40: 00F00EF83368E41A6408013C1C807FBD
+0063A50: 01BCB4DF231C2A1C301C02BC04310847
+0063A60: 00B5011CC7DFE5804018211C07DFA418
+0063A70: 00BD
+
+0063A80: 0xB1C2D3E4,0x0000AB01,0000000000000000,"\
+{p=`Bottom date` ver=11 cp=avkiev id=AB01}\
+{1 cb ShowComma v=1}\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

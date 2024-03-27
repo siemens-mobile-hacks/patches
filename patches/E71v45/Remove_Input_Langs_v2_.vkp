@@ -1,0 +1,24 @@
+;E71v45
+;Удалить лишние языки из меню языков ввода версия 2 расширеный
+;Remove unusable languages from input languages menu v2+
+;(c) AlexSid
+;(p) Evgr
+;Version: 2.0+
+;PatchID: 10333
+;Details: https://patches.kibab.com/patches/details.php5?id=10333
+/*
+Можно удалить English, Deutsch, Francais, Italiano, Espanol, Dansk, Nederlands, Polski, Slovakia, Romana, Русский
+*/
+;0C52E7B: 00 01 ; Английский/English
+0C52E7F: 00 01 ; Немецкий/Deutsch
+0C52E83: 00 01 ; Французский/Francais
+0C52E87: 01 00 ; Итальянский/Italiano
+0C52EA3: 01 00 ; Испанский/Espanol
+0C52E8B: 01 00 ; Датский/Dansk
+0C52EA7: 01 00 ; Голландский/Nederlands
+0C52EC3: 01 00 ; Польский/Polski
+0C52ECB: 01 00 ; Словацкий/Slovakia
+0C52ECF: 01 00 ; Румынский/Romana
+;0C52ED3: 01 00 ; Русский
+;------------------------- end -------------------------
+

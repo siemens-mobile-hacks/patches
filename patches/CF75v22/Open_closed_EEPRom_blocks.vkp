@@ -1,0 +1,17 @@
+;CF75v22
+;Открыть заблокированные блоки EEPRom.vkp
+;Open closed EEPRom blocks
+;(c) Skylord
+;(r) AsteriX
+;Version: 
+;PatchID: 2999
+;Details: https://patches.kibab.com/patches/details.php5?id=2999
+/*
+
+*/
+;* Открыть заблокированные блоки EEPRom ** Open closed EEPRom blocks *  © Skylord, § Smelter, ® AsteriX
+0874D0C: 00 01
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

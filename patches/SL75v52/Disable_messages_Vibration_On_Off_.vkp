@@ -1,0 +1,14 @@
+;SL75v52
+;Отключить сообщения Вибрация: Вкл./Выкл.  
+;Disable messages Vibration: On/Off   
+;(c) Evgr
+;(p) Diman3452
+;Version: 
+;PatchID: 10004
+;Details: https://patches.kibab.com/patches/details.php5?id=10004
+/*
+
+*/
+033155C: FFF794FC C046C046
+;------------------------- end -------------------------
+

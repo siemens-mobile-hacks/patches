@@ -1,0 +1,75 @@
+;SL45iv56
+;APS+ALF. Автоматическая смена профилей и подсветки
+;APS+ALF. Automatic Profile Swapping and Auto Backlight Function
+;(c) A_Alex
+;Version: 
+;PatchID: 1702
+;Details: https://patches.kibab.com/patches/details.php5?id=1702
+/*
+Патч добавляет два пункта в Application Menu. 
+
+Патч добавляет две новых функции: 
+1. Автоматическая смена профилей (Automatic Profile Swapping) - эта 
+функция автоматически переключает профили Normal Evinronment и 
+Profile 1 в указанное время. 
+Время по умолчанию для профиля Normal Evinronment с 07:00 до 
+20:00 и для профиля Profile 1 с 20:00 до 07:00. 
+Автоматическая смена подсветки работает по тому же принципу. 
+Подсветка включена с 17:00 до 08:00 
+После применения данного патча в меню Setup->Application пункт 
+Function 8 будет отвечать за Auto Backlight, а функция Function 9 - за 
+Auto Profiles. 
+Патч без проблем работает на английском языке. 
+Если вы используете другой языковой пакет - подправьте языковой 
+пакет, используя Siemens Language Editor от Skylord'а. 
+
+
+Release: November 26, 2003
+
+Патч №109 с http://patch.oslik.ru/SL45_RU
+*/
+3B36C6: 46FCFFFF DAE000C7 
+
+40C700: FFFFFFFFFFFFFFFF 88C088D088908840 
+40C708: FFFFFFFFFFFFFFFF D7400E00F2F9423A 
+40C710: FFFFFFFFFFFFFFFF D7400D00F2FDDE25 
+40C718: FFFFFFFFFFFFFFFF 9AF90180BB0A9AF9 
+40C720: FFFFFFFFFFFFFFFF 0170BB1C98409890 
+40C728: FFFFFFFFFFFFFFFF 98D098C046FCFFFF 
+40C730: FFFFFFFFFFFFFFFF DB00E6FC030346FD 
+40C738: FFFFFFFFFFFFFFFF 14009D0446FD0700 
+40C740: FFFFFFFFFFFFFFFF 8D0150CCD7400D00 
+40C748: FFFFFFFFFFFFFFFF 42FC88242D06D740 
+40C750: FFFFFFFFFFFFFFFF 0D00F6FC8824DAA4 
+40C758: FFFFFFFFFFFFFFFF 4A98CB00E6003600 
+40C760: FFFFFFFFFFFFFFFF CC00F3F8F90A46FD 
+40C768: FFFFFFFFFFFFFFFF 11008D0666F40400 
+40C770: FFFFFFFFFFFFFFFF 3D02DADE2617CB00 
+40C778: FFFFFFFFFFFFFFFF 46FD08008DF766F4 
+40C780: FFFFFFFFFFFFFFFF 04002D02DADE3817 
+40C788: FFFFFFFFFFFFFFFF CB00FFFFFFFFFFFF 
+
+;Если вам не нужна функция автоматической смены профилей, 
+;раскоментируйте эти строки: 
+;40C71С: FFFF СС00 
+
+;Если вам не нужна функция автоматической смены подсветки, 
+;раскоментируйте эти строки: 
+;40C722: FFFF CC00 
+
+;Примечание: В не сможете сменить профиль, если включена функция 
+;автоматической смены профилей. В так же не сможете 
+;включить/выключить подсветку, если включена функция 
+;автоматической смены подсветки. 
+
+;Для продвинутых юзеров: 
+;Смена времени: 
+;40C738 - Время активации Profile 1. По умолчанию #14h (20:00) 
+;40C73E - Время активации Normal Profile. По умолчанию #07h (7-00) 
+;40C768 - Время включения подсветки. По умолчанию #11h (17-00) 
+;40C77A - Время выключения подсветки. По умолчанию #08h (8-00) 
+;Так же запомните, что время для Profile 1 ДОЛЖНО БЫТЬ БОЛЬШЕ, 
+;чем время для Normal profile, иначе работать не будет! 
+;Тоже самое касается подсветки. 
+;------------------------- end -------------------------
+

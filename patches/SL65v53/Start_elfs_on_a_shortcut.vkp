@@ -1,0 +1,33 @@
+;SL65v53
+;Start elfs on a shortcut
+;Start elfs on a shortcut
+;(c) SuDex
+;(r) Kibab, Artemka, Mobyman, (-=Nemo=-)
+;(p) Benlux
+;Version: 
+;PatchID: 7012
+;Details: https://patches.kibab.com/patches/details.php5?id=7012
+/*
+RECD_DURCHARGES -> A0FBA191 = Alarm_cfg_editor 
+RECD_DURCHSETUP -> A0FBA1E1 = IWatch 
+RECD_DELETERECD -> A0FBA221 = Mp3 Player
+*/
+0923740: 913A8EA0 0xa0FBA191   ;RECD_DURCHARGES -> A0FBA191 = Alarm_cfg_editor
+0923774: 9B3A8EA0 0xa0FBA1E1   ;RECD_DURCHSETUP -> A0FBA1E1 = IWatch
+09236D8: AD3A8EA0 0xa0FBA221   ;RECD_DELETERECD -> A0FBA221 = Mp3 Player
+
++0FBA150 ;x65
+#pragma enable old_equal_ff
+40: FFB58020C7DF2501061C05A18022C7DF
+50: 6C010021301C94DF301CC7DF2901FFBD
+60: "0:\\ZBin\\utilities\\alarm_cfg_editor.elf",00   ;Alarm Cfg Editor
+90: FFB58020C7DF2501061C05A18022C7DF
+A0: 6C010021301C94DF301CC7DF2901FFBD
+B0: "0:\\ZBin\\utilities\\iwatch.elf",00             ;IWatch
+D0: FFB58020C7DF2501061C05A18022C7DF
+E0: 6C010021301C94DF301CC7DF2901FFBD
+F0: "0:\\ZBin\\mp3.elf",00                           ;Mp3 Player
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

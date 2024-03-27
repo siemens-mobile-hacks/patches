@@ -1,0 +1,14 @@
+;C81v51
+;Расширенный список вызовов
+;Extended Calls dialed list
+;(c) BoBa
+;(p) BalakinUser
+;Version: 3-MP
+;PatchID: 8662
+;Details: https://patches.kibab.com/patches/details.php5?id=8662
+/*
+
+*/
+03F9314: 0xA05FE7BD 0xA006FE01
+;------------------------- end -------------------------
+

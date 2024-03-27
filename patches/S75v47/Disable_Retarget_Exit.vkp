@@ -1,0 +1,16 @@
+;S75v47
+;Отключить Retarget Exit
+;Disable Retarget Exit
+;(c) 1nvisible
+;(r) SimaFish
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8109
+;Details: https://patches.kibab.com/patches/details.php5?id=8109
+/*
+Для тех, у кого в яве падает по Retarget Exit
+English:For those who have Retarget Exit when using java
+*/
+03E9248: 70402DE9 1EFF2FE1
+;------------------------- end -------------------------
+

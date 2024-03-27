@@ -1,0 +1,16 @@
+;M55v91
+;Цифра 1 -> куча ссылок
+;Digit 1 -> any function from the list
+;(c) SiNgle
+;(p) Jazzy$
+;Version: 
+;PatchID: 2006
+;Details: https://patches.kibab.com/patches/details.php5?id=2006
+/*
+Список ссылок 1998
+English: Functions list 1998
+*/
+0DC691: 209036 6D4E47 ;меню часов © *S*h*a*D*o*W*
+0DC694: 48423d02 EA0030C7
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;CX75v13
+;Меню от siemens cf75
+;Menu siemens cf75
+;(c) One
+;Version: 
+;PatchID: 7103
+;Details: https://patches.kibab.com/patches/details.php5?id=7103
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v13&f=Menu_cf75.rar
+
+/*
+Меняет меню от сх75 на cf75
+*/
+сам патч http://patches.kibab.com/cnt.php5?d=cx75v13&f=Menu_cf75.rar
+;------------------------- end -------------------------
+

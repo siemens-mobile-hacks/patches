@@ -1,0 +1,14 @@
+;CX70v56
+;Расширение для картинок
+;Pictures add-on
+;(c) 1nvisible
+;(r) avkiev
+;Version: 5.1
+;PatchID: 4633
+;Details: https://patches.kibab.com/patches/details.php5?id=4633
+/*
+Описание смотрите в теле патча.
+*/
+0CB75A8: 192189014018C068 004908471137FCA0
+;------------------------- end -------------------------
+

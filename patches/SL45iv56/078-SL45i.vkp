@@ -1,0 +1,43 @@
+;SL45iv56
+;Индивидуальные мелодии для входящих звонков + "чёрный список"
+;Assign any ringtone to any number + blacklist
+;(c) chaos
+;(r) RizaPN
+;Version: 3a
+;PatchID: 1556
+;Details: https://patches.kibab.com/patches/details.php5?id=1556
+/*
+Патч позволяет присваивать индивидуальную мелодию любому абоненту. 
+Для этого используется первые 2 символа поля "почтовый индекс": 1-й - 
+тип мелодии, 2-й - её номер: 
+ S1 - S5: Standart 1-5 
+ C1 - C9: Classic 1-9 
+ K0 - K8: Classic 10-18 
+ T1 - T4: Traditional 1-4 
+ D1 - D6: Discrete 1-6 
+ P1 - P6: Pop 1-6 
+ I1 - I3: Individual 1-3 
+
+ Если же первым символом поставить "Х", звонок будет отклонен. 
+ Баг с исходящими звонками исправлен, с чёрным списком при отключенных звонках - пока нет. 
+
+Патч №078 с http://patch.oslik.ru/SL45_RU
+*/
+22FD6D: E6B245 C7E0E9 
+27E9D0: FFFFFFFFFFFFFFFF E06DDAE6B2458840 
+27E9D8: FFFFFFFFFFFFFFFF DAA248DE9840DB00 
+27E9E0: FFFFFFFFFFFFFFFF D7500C00F2F26C32 
+27E9E8: FFFFFFFFFFFFFFFF F2F1942E2D1846FD 
+27E9F0: FFFFFFFFFFFFFFFF 2900ED1547F45800 
+27E9F8: FFFFFFFFFFFFFFFF 2DEB47F578002DE8 
+27EA00: FFFFFFFFFFFFFFFF 27F5300047F46000 
+27EA08: FFFFFFFFFFFFFFFF ED09E6F1302AD740 
+27EA10: FFFFFFFFFFFFFFFF 1F0398312D044146 
+27EA18: FFFFFFFFFFFFFFFF 3DFA0157C05DFAE6 
+27EA20: FFFFFFFFFFFFFFFF B245CC00CC00CC00 
+27EA28: FFFFFFFFFFFFFFFF CC00CC00CC00CC00 
+27EA30: FFFFFFFFFFFFFFFF 53FF43044B0E5416 
+27EA38: FFFFFFFFFFFFFFFF 441A502049260000 
+
+;------------------------- end -------------------------
+

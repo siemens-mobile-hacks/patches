@@ -1,0 +1,15 @@
+;S55v91
+;Ускорение опроса клавиатуры
+;Acceleration of the interrogation of the keyboard
+;(c) SiNgle
+;(r) ZH-Soft
+;(p) Mich3L
+;Version: 
+;PatchID: 4800
+;Details: https://patches.kibab.com/patches/details.php5?id=4800
+/*
+
+*/
+8EE3D8: 56 20
+;------------------------- end -------------------------
+

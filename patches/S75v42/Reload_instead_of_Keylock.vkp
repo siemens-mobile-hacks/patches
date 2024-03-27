@@ -1,0 +1,21 @@
+;S75v42
+;Перезагрузка вместо Клав. Заблок. в меню красной кнопки
+;Reload instead of Keylock in RedButtonMenu
+;(c) ThE TrIFoN
+;(p) weclnt
+;Version: 
+;PatchID: 5001
+;Details: https://patches.kibab.com/patches/details.php5?id=5001
+/*
+Настроики интернета не слетают.
+
+*/
+03439CE: A7F046EE EFF6D4EA
+
+13AD834: 0x21CC 0x054B   ; Keylock => Reload
+13AD838: 0x21CC 0x054B   ; Keylock => Reload
+
+02FB588: 1FD1 0028       ;принудительный запуск помощника, чтобы не стирались настроики интернета
+
+;------------------------- end -------------------------
+

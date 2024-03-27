@@ -1,0 +1,44 @@
+;S45iv4
+;Мигание_подсветки_при_входящем_звонке
+;Miganiye_podsvetki_pri_vkhodyashchem_zvonke
+;(c) Lalo
+;Version: v2
+;PatchID: 835
+;Details: https://patches.kibab.com/patches/details.php5?id=835
+/*
+Патч включает мигающую подсветку при входящих звонках, когда звук отключен или выставлен cигнал "гудок"
+Исправлено затухание подсветки при входящих звонках, когда все сигналы включены
+;Новое в v2:
+одна вспышка в секунду (=скорость х2)
+прерывание мигания при нажатии на кнопку
+добавлены дополнительные настройки
+Тип Flash: C289, CE20
+*/
+5631E6: FACAD69A FA87E0DF
+563316: DACBF02C DA8780E0
+07DFE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAF71AD448402D27DACD0CDD48402D0D
+07DFF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAE50E11E6004400CC0048432D03F68E
+07E000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 20370D03C2F120372D03DACC08DF0D13
+07E010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F3F421370821F7F4213747F40600FD0B
+07E020: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA873AE0E6F42437E6F5FA00E6FD3AE0
+07E030: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FE8700BB17FACAD69AD7404400C2F1
+07E040: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 20373D0FDAE50E1148433D0BDACCD0DF
+07E050: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6F42837E6F53200E6FDDCDEE6FECC00
+07E060: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB01DB0088E088D0F0C4E6FD4400F0E5
+07E070: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E00FDACCE2960804CB00A9204C616C6F
+07E080: FFFFFFFFFFFFFFFFFFFFFFFFFFFF E014D7404400F7F82037FACBF02C
+;Настройки:
+;Включать мигающую подсветку независимо от настроек
+;07DFE0: DAF7 0D03
+;Включать мигающую подсветку всегда (в т.ч. когда включены все сигналы)
+;07DFE8: DACD 0D03
+;Увеличить задержку включения подсветки
+;07E01C: 06 xx
+;где хх в HEX>06, каждая единица равняется приблизительно 2 сек задержки
+;Изменение времени выключения подсветки:
+;07E056: 32 xx
+;где хх - время в миллисекундах/0.25 в HEX (байты поменять местами)
+;по умолчанию= 32hex = 50dec : 0,25 =200 мс
+
+;------------------------- end -------------------------
+

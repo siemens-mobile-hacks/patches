@@ -1,0 +1,17 @@
+;ME75v22
+;Настрока аналоговых часов
+;Analog Clock Tuning
+;(c) SiNgle
+;Version: 
+;PatchID: 5040
+;Details: https://patches.kibab.com/patches/details.php5?id=5040
+/*
+
+*/
+02D29AE: 9E 80 ; Hands length
+02D2A22: 01 02 ; Center-point
+02D2A70: 01 06 ; Minute hand color
+02D2B20: 01 04 ; Hour hand second line color (bold)
+02D2B80: 01 04 ; Hour hand color
+;------------------------- end -------------------------
+

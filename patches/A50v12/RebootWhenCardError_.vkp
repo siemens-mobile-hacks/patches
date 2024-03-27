@@ -1,0 +1,14 @@
+;A50v12
+;Перезагрузка телефона при ошибке сим карты
+;RebootWhenCardError
+;(c) BoBa!
+;(p) Ramil_
+;Version: 
+;PatchID: 2187
+;Details: https://patches.kibab.com/patches/details.php5?id=2187
+/*
+
+*/
+345012: E6FC2303B8C0 DACD5C8ECC00
+;------------------------- end -------------------------
+

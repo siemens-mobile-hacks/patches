@@ -1,0 +1,14 @@
+;SL75v52
+;Показывать меню красной кнопки при закрытом слайдере
+;Show red button menu when slider closed & red key pressed
+;(c) -=(Kad)=-
+;(p) dimonp25
+;Version: 
+;PatchID: 9776
+;Details: https://patches.kibab.com/patches/details.php5?id=9776
+/*
+
+*/
+03456ac: 0128 C046
+;------------------------- end -------------------------
+

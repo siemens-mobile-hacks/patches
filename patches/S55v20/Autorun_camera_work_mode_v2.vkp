@@ -1,0 +1,26 @@
+;S55v20
+;Автозапуск режима работы с камерой
+;Autorun camera work mode
+;(c) ValeraVi
+;(r) AlexSid
+;(p) Creat0r, AsteriX
+;Version: 2
+;PatchID: 4892
+;Details: https://patches.kibab.com/patches/details.php5?id=4892
+/*
+Замечание: Если клавиатура была заблокирована, то после выхода из режима работы с камерой клавиатура остается разблокированной и вы должны ее заблокировать вручную, если нужно!
+*/
+31AAFC: 98609870 DAAA70FF
+6AFF98: FFFFFFFF 98609870
+6AFF9C: FFFF     DB00
+
+6AFF70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA8196FEE600030048413D0CF3F83000
+6AFF80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3D0BF78F3000DA64DA4FDA724C59DA67
+6AFF90: FFFFFFFFFFFFFFFF                 48AA0D02F78E3000
+
+;Чтобы клавиатура оставалась заболкированной после выхода, уберите
+; символ комментария со следующих 2-х строк патча: (при этом подсветка
+; будет включена только ~ 1 мин не зависимо от того что вы нажимаете кнопки)
+;6AFF87: 64DA4F A1AA74
+;------------------------- end -------------------------
+

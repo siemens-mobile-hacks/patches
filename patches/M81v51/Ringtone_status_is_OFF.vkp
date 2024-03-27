@@ -1,0 +1,14 @@
+;M81v51
+;Звук звонка отключен по умолчанию
+;Ringtone status is OFF
+;(c) dimonp25
+;(p) SimaFish
+;Version: 
+;PatchID: 9516
+;Details: https://patches.kibab.com/patches/details.php5?id=9516
+/*
+
+*/
+01F7FFC: 00 01
+;------------------------- end -------------------------
+

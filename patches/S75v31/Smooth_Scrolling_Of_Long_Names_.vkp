@@ -1,0 +1,15 @@
+;S75v31
+;Плавный скроллинг длинных названий и имени
+;Smooth Scrolling Of Long Names
+;(c) SiNgle
+;(p) StrikerVoo
+;Version: 
+;PatchID: 2759
+;Details: https://patches.kibab.com/patches/details.php5?id=2759
+/*
+
+*/
+685A84: D00700002C01 120200002A00
+BFC748: D00700002C01 120200002A00
+;------------------------- end -------------------------
+

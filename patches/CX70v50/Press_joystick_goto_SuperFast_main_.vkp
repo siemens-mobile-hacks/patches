@@ -1,0 +1,16 @@
+;CX70v50
+;Замена меню на супербыстрое
+;Press joystick goto SuperFast main menu
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 126
+;Details: https://patches.kibab.com/patches/details.php5?id=126
+/*
+Замена меню на супербыстрое.
+
+Пункт меню "Спис. Вызовов" -"Время/Стоимость" вырубает телефон.
+*/
+0942D5C: 0FFD8E 85FD8C
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v52
+;Классическая функция красной кнопки
+;Classic Red Button
+;(c) Rst7/CBSIE
+;(p) Vedan
+;Version: 
+;PatchID: 8361
+;Details: https://patches.kibab.com/patches/details.php5?id=8361
+/*
+
+*/
+0978924: 94 96
+;------------------------- end -------------------------
+

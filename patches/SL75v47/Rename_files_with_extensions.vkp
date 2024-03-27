@@ -1,0 +1,17 @@
+;SL75v47
+;Переименование файлов с расширением
+;Rename_files_with_extensions
+;(c) SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 6226
+;Details: https://patches.kibab.com/patches/details.php5?id=6226
+/*
+
+*/
+04Db37c: 2E22 0022 
+04Db38e: 2E22 0022 
+059d7dc: 2E22 0022 
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;CX75v12
+;Убрать немецкий и польский из меню выбора языков ввода
+;Remove deutsch and polish from input languages menu
+;(c) AlexSid
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 520
+;Details: https://patches.kibab.com/patches/details.php5?id=520
+/*
+Убрать немецкий и польский из меню выбора языков. Патч стал рабочим, благодаря замене лэнгпака в телефоне на lg3.
+*/
+0A3E562: 00 01
+0A3E59A: 00 01
+;------------------------- end -------------------------
+

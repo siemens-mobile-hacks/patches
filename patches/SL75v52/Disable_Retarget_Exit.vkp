@@ -1,0 +1,14 @@
+;SL75v52
+;Отключить Retarget Exit
+;Disable Retarget Exit
+;(c) 1nvisible
+;(p) kiREALlov
+;Version: 
+;PatchID: 8207
+;Details: https://patches.kibab.com/patches/details.php5?id=8207
+/*
+
+*/
+03ED40C: 70402DE9 1EFF2FE1
+;------------------------- end -------------------------
+

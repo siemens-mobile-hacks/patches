@@ -1,0 +1,40 @@
+;S65v58
+;Отключение некоторых иконок в иконбаре
+;Disable some icons in iconbar
+;(c) sempai
+;(p) dimonp25
+;Version: 
+;PatchID: 9008
+;Details: https://patches.kibab.com/patches/details.php5?id=9008
+/*
+;Отключение некоторых элементов на главном экране при использовании позиционирования, 
+;патчей, эльфов. . . например, можно убрать индикатор сети, заменив на продвинутый (dis патч) и т.п.
++ отключение иконки бт для S65
+*/
+; net
+;01698c1d: D0 E0 ; net background
+;01698c35: D0 E0 ; net
+
+; battery
+;0169902d: D0 E0 ; battery background
+;01699045: D0 E0 ; battery
+
+; iconbar 
+;01698f52: 00F05aF9 C046C046 ; iconbar background
+;01698f9c: 00F048F9 C046C046 ; iconbar
+
+; iconbar icons
+01698d7c: FFF706FF C046C046 ; irda on
+01698db6: FFF7e9Fe C046C046 ; headset
+01698dd2: FFF7dbfe C046C046 ; keylock
+01698e36: FFF7a9fe C046C046 ; all ringtones off
+01698ef8: FFF748fe C046C046 ; gprs
+01698d46: fff721ff c046c046 ; bluetooth
+
+; events
+;0169907a: 00F0C6F8 C046C046 ; background of missed events icons
+;016990a2: 00F0C5F8 C046C046 ; missed events icons
+
+
+;------------------------- end -------------------------
+

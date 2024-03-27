@@ -1,0 +1,15 @@
+;SL65v50
+;Графический индикатор температуры аккумулятора
+;Accu Temperature As Graphic Indicator
+;(c) benj9
+;(r) ACiDmrp, avkiev, BuG
+;Version: 2.1
+;PatchID: 1504
+;Details: https://patches.kibab.com/patches/details.php5?id=1504
+/*
+
+*/
+1642262: 584300AB091A188B0130 C046004FB84711E3FDA0 
+
+;------------------------- end -------------------------
+

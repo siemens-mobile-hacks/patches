@@ -1,0 +1,33 @@
+;CX75v25
+;Показ текущего времени при разговоре
+;Show current time during call
+;(c) Bennie
+;(p) sempai
+;Version: 
+;PatchID: 6142
+;Details: https://patches.kibab.com/patches/details.php5?id=6142
+/*
+Должен быть включен пункт "Автоматическая индикация" Меню - 2 - 5 - 5 - 4
+English:
+Turn on "Auto display": Мenu - 2 - 5 - 5 - 4
+
+*/
+#pragma enable old_equal_ff
+01FEC00: 30B5041C0A4B984782B000206946094B
+01FEC10: 9847201C084988472D21215401302118
+01FEC20: 68460322054DA84702B0201C30BDFFFF
+01FEC30: 0xA05A40B1,0xA07D986F,0xA0EF52E1,0xA020E9E9 ; A, B, C, D
+#pragma disable old_equal_ff
+02CA2D8: 04A80B21D4F116EB 68461B2134F790FC; Y
+
+/*
+Port info:
+Y = 04A80B21????????0027
+A = function called from Y
+B = GetDateTime
+C = strlen
+D = F8B5071C0C1C151C3A26 + 1
+*/
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,20 @@
+;CX75v12
+;Из любого места жмем ### и попадаем в главное меню
+;Goto mainmenu from anywhere by pressing ###
+;(c) ThE TrIFoN
+;(r) SiNgle
+;Version: 2.0
+;PatchID: 701
+;Details: https://patches.kibab.com/patches/details.php5?id=701
+/*
+Теперь сворачивает MP3-плеер во время проигрывания. Делаем так - запускаем MP3-плеер, блокируем клавиатуру (долгое нажатие #), давим ### и  мы в native-меню с разблокированной клавой и подсветкой!
+
+Пункт меню "Спис. Вызовов" - "Время/Стоимость" вырубает телефон
+
+*/
+04DE920: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFB51FF38AFD002807D103207AF356FE
+04DE930: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 7FB4034900230B707FBCDFF581FFFFBD
+04DE940: FFFFFFFF A0F84FA8
+07D4B08: 84F06FFB 09F50AFF
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;SL45iv56
+;Разрешить вибру при зарядке
+;Allow vibra while chargin
+;(c) abomin
+;Version: 
+;PatchID: 2070
+;Details: https://patches.kibab.com/patches/details.php5?id=2070
+/*
+Release: 09.05.2005
+*/
+22E660: 8A880960 CC00CC00
+;------------------------- end -------------------------
+

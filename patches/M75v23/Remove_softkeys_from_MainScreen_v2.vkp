@@ -1,0 +1,17 @@
+;M75v23
+;Убрать софт-кнопки с главного экрана
+;Remove softkeys from MainScreen
+;(c) SiNgle
+;Version: 2
+;PatchID: 2789
+;Details: https://patches.kibab.com/patches/details.php5?id=2789
+/*
+
+*/
+02CBFCD: D0 E0
+02CC08A: 05D1 0028
+03473B8: 07D1 0028
+02CCB72: 0DD1 0028
+02CCB78: 0AD1 0028
+;------------------------- end -------------------------
+

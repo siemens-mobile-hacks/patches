@@ -1,0 +1,16 @@
+;M55v91
+;Отключить звук "Нет соединения" если выключены звуки
+;Disable "No connection" sound, if ringtones are off
+;(c) Ramil_
+;Version: 
+;PatchID: 4296
+;Details: https://patches.kibab.com/patches/details.php5?id=4296
+/*
+
+*/
+01E3E6: E0DCF0D9 DACEEEFF
+01E5C2: E0DCF0D9 DACEEEFF
+01E60C: E0DCF0D9 DACEEEFF
+AEFFEE: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAA20A3F48402D02E00C0D01E0DCF0D9DB00
+;------------------------- end -------------------------
+

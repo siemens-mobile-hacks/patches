@@ -1,0 +1,13 @@
+;C65v56
+;Выбор профиля при подключении гарнитуры
+;Select Profile On Headset Plug-In
+;(c) ThE TrIFoN
+;Version: 
+;PatchID: 3841
+;Details: https://patches.kibab.com/patches/details.php5?id=3841
+/*
+
+*/
+16F354A: 04 0N ; N = profile# - 1
+;------------------------- end -------------------------
+

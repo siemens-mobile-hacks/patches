@@ -1,0 +1,17 @@
+;CX75v13
+;Изменение длительности горения подсветки
+;Change Illumination Turn Off Timer
+;(c) benj9
+;(r) sempai
+;(p) Cold Zero
+;Version: 3-MP
+;PatchID: 6037
+;Details: https://patches.kibab.com/patches/details.php5?id=6037
+/*
+Изменяет длительность горения подсветки главного экрана и меню, при отсутствии нажатия клавиш.
+English:
+Changes Illumination Turn Off Timer in menu & main screen if don't press any key
+*/
+07D5c0e: 5349A000411868460422 C046004988470BE6FDA0
+;------------------------- end -------------------------
+

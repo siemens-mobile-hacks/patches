@@ -1,0 +1,16 @@
+;M65v50
+;Расширение для картинок
+;Pictures add-on
+;(c) 1nvisible
+;(r) avkiev
+;(p) Mifodiy
+;Version: 5.1
+;PatchID: 5447
+;Details: https://patches.kibab.com/patches/details.php5?id=5447
+/*
+Описание смотрите в теле патча.
+*/
+114DED4: 192189014018C068 004908471137FCA0
+
+;------------------------- end -------------------------
+

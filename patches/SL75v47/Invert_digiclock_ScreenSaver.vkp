@@ -1,0 +1,53 @@
+;SL75v47
+;Инвертировать цифровые часы на заставке
+;Invert digiclock ScreenSaver
+;(c) SiNgle
+;(p) kiREALlov
+;Version: 
+;PatchID: 7289
+;Details: https://patches.kibab.com/patches/details.php5?id=7289
+/*
+
+*/
+34622A: 00 01 ;1h back
+346232: 01 00 ;1h font
+346278: 00 01 ;2h back
+346280: 01 00 ;2h font
+3462BE: 00 01 ;":" back
+3462C6: 01 00 ;":" font
+3462FA: 00 01 ;1m back
+346302: 01 00 ;1m font
+346346: 00 01 ;2m back
+34634E: 01 00 ;2m font
+3463C6: 00 01
+3463CE: 01 00
+
+43EAB4: 01 00 ;ProvName font
+43EAB8: 00 01 ;background
+43EB08: 01 00 ;ProvFon with Icon
+43EB0C: 00 01 ;background with Icon
+
+;color table (0..17h) R G B
+;00 - white
+;01 - black
+;02 - red (base)
+;03 - navy (base)
+;04 - green (base)
+;05 - magenta (base)
+;06 - aqua (base)
+;07 - yellow (base)
+;08 - red (light)
+;09 - navy (light)
+;0A - green (light)
+;0B - magenta (light)
+;0C - aqua (light)
+;0D - yellow (light)
+;0E - red (dark)
+;0F - navy (dark)
+;10 - green (dark)
+;11 - magenta (dark)
+;12 - aqua (dark)
+;13 - yellow (dark)
+;14-17 - clean
+;------------------------- end -------------------------
+

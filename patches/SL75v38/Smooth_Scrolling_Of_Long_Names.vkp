@@ -1,0 +1,15 @@
+;SL75v38
+;Плавный скроллинг длинных названий и имен
+;Smooth Scrolling Of Long Names
+;(c) SiNgle
+;(p) Orastar
+;Version: 
+;PatchID: 5018
+;Details: https://patches.kibab.com/patches/details.php5?id=5018
+/*
+
+*/
+068FA64: D00700002C01 120200002A00
+0C081A4: D00700002C01 120200002A00
+;------------------------- end -------------------------
+

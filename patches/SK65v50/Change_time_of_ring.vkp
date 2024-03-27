@@ -1,0 +1,17 @@
+;SK65v50
+;Изменить продолжительность сигнала
+;Change time of ring
+;(c) Along
+;(p) qtazure
+;Version: 
+;PatchID: 4177
+;Details: https://patches.kibab.com/patches/details.php5?id=4177
+/*
+
+*/
+04E9BC4: C8AF0000 C0D40100 ; Appointment (2 minutes)
+0581314: C8AF0000 C0D40100 ; Alarm clock (2 minutes)
+
+;2 minutes -> 120 sec. -> 120000 MSEL -> 0001D4C0 -> C0D40100
+;------------------------- end -------------------------
+

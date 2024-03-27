@@ -1,0 +1,19 @@
+;M65v50
+;Перенаправление ДС
+;RouteDL
+;(c) benj9
+;Version: 0.1
+;PatchID: 719
+;Details: https://patches.kibab.com/patches/details.php5?id=719
+/*
+Перенаправляет динамический свет на подсветку клавиатуры или гл.экрана.
+
+EN:
+Routes the dynamic lights signals to keypadlight or mainscreen.
+*/
+1225E84: 00A0A0E3 59D210EB
+165A7F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 020050E30000A00300A0A0E31EFF2FE1
+
+165A7F4: 00 01 ; 00:dl->mainscreenlight | гл.экран 01:dl->keypadlight | клавиатура
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;E71v45
+;Не показывать сабпровайдер на главном экране
+;Do not show subprovider on main screen
+;(c) Miha_r
+;Version: 
+;PatchID: 9153
+;Details: https://patches.kibab.com/patches/details.php5?id=9153
+/*
+
+*/
+05C2FB0: ABF0D1FE C046C046
+;------------------------- end -------------------------
+

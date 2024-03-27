@@ -1,0 +1,14 @@
+;S75v52
+;Не спрашивать подтверждения включения по будильнику
+;Power on by Alarm clock without confirmation
+;(c) ThE TrIFoN
+;(p) Vitll
+;Version: 
+;PatchID: 9859
+;Details: https://patches.kibab.com/patches/details.php5?id=9859
+/*
+
+*/
+03041C8: 64CE19FB D2C1FCEB
+;------------------------- end -------------------------
+

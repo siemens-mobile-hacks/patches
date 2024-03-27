@@ -1,0 +1,15 @@
+;S75v40
+;Замена звука при дозвоне "ошибка соединения"
+;Replacement of a sound at dialing " a mistake of connection "
+;(c) B-727
+;(p) Belarus
+;Version: 
+;PatchID: 4559
+;Details: https://patches.kibab.com/patches/details.php5?id=4559
+/*
+Замена звука при дозвоне "ошибка соединения" на более приятный.
+English:Replacement of a sound at dialing " a mistake of connection " on more pleasant.
+*/
+01035C7A: 1800FAFF0000B6034A0178054A0108074A01FFFFE803F9FF0300 0C00B8073200FFFF3200400C1A00FFFFFFFFFFFFFFFFFFFFFFFF
+;------------------------- end -------------------------
+

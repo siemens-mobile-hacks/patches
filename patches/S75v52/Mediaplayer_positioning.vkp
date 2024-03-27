@@ -1,0 +1,42 @@
+;S75v52
+;Позиционирование элементов медиаплеера
+;Mediaplayer positioning
+;(c) @ndres/PRM
+;(p) SimaFish
+;Version: 0.4
+;PatchID: 8432
+;Details: https://patches.kibab.com/patches/details.php5?id=8432
+/*
+Позиционирование таких элементов медиаплеера как: animation, volume, play mode, headset, status.
+*/
+; animation
+05FE308: 401A 0420
+05FE322: 2437 2427
+;05FE308: 04 0i004 ; x
+;05FE322: 24 0i036 ; y
+
+; volume
+05FE954: 1631 1621
+05FE948: 0420 0020 
+05FE948: 00 0i004 ; x
+05FE954: 16 0i022 ; y
+
+; play mode
+05FEA10: 0236 2226
+05FEA0E: 1631 1621
+;05FEA10: 22 0i034 ; x
+;05FEA0E: 16 0i022 ; y
+
+; headset
+05FEA38: B01C 3220
+05FEA44: 1631 1621
+;05FEA38: 32 0i050 ; x
+;05FEA44: 16 0i022 ; y
+
+; status
+05FEA84: 8931 8921
+05FEA8A: 0120 0020
+;05FEA8A: 00 0i001 ; x
+;05FEA84: 89 0i137 ; y
+;------------------------- end -------------------------
+

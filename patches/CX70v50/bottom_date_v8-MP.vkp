@@ -1,0 +1,16 @@
+;CX70v50
+;Дата внизу (на главном экране) в виде "Ср, 11 Май"
+;Date at the bottom of maincsreen as "We, 11 May"
+;(c) avkiev
+;(r) avkiev
+;(p) KreN
+;Version: 8 MP
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=2659
+;PatchID: 1057
+;Details: https://patches.kibab.com/patches/details.php5?id=1057
+/*
+Данный патч основан на концепции "Мастер-патч + Библиотека Функций". Он является лишь точкой входа для патча 1034, и не должен устанавливаться без него.
+*/
+0B90924: 041C081C111C1A1C 004DA847,0xA0FC3501   ; CX70v50
+;------------------------- end -------------------------
+

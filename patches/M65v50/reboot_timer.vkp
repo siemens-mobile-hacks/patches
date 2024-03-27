@@ -1,0 +1,18 @@
+;M65v50
+;Перезагрузка вместо таймера
+;Reboot Instead Of Timer
+;(c) ThE TrIFoN
+;(p) Mifodiy
+;Version: 
+;PatchID: 2021
+;Details: https://patches.kibab.com/patches/details.php5?id=2021
+/*
+Можно выбрать любой другой шорткат.
+Можно не ставить патч, а просто использовать функцию (A1240944) в патче  * Запуск функций с помощью *# кодов *
+
+[EN]
+Choose any appropriate shortcut
+*/
+0920974: FB198EA0 440924A1 
+;------------------------- end -------------------------
+

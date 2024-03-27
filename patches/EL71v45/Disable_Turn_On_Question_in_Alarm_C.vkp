@@ -1,0 +1,15 @@
+;EL71v45
+;Отключить вопрос "Включить" при срабатывании будильника
+;Disable "Turn On?" Question in Alarm Clock
+;(c) ThE TrIFoN
+;(r) Miha_r
+;(p) funMarkus
+;Version: 
+;PatchID: 7965
+;Details: https://patches.kibab.com/patches/details.php5?id=7965
+/*
+
+*/
+0673A6C: D7920BFB 470000EA
+;------------------------- end -------------------------
+

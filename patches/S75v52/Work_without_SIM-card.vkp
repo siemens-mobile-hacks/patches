@@ -1,0 +1,14 @@
+;S75v52
+;Работа телефона без SIM-карты
+;Work without SIM-card
+;(c) ThE TrIFoN, SiNgle
+;(p) den11111
+;Version: 
+;PatchID: 8294
+;Details: https://patches.kibab.com/patches/details.php5?id=8294
+/*
+
+*/
+02A0BE8: 0000A0E3C9FFFFEA 04F01FE5,0xA0D13AB1
+;------------------------- end -------------------------
+

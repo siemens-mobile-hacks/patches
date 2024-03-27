@@ -1,0 +1,19 @@
+;CX65v50
+;Перенаправление ДС
+;RouteDL
+;(c) benj9
+;Version: 0.1
+;PatchID: 722
+;Details: https://patches.kibab.com/patches/details.php5?id=722
+/*
+Перенаправляет динамический свет на подсветку клавиатуры или гл.экрана.
+
+English:
+Routes the dynamic lights signals to keypadlight or mainscreen.
+*/
+122643C: 00A0A0E3 2BD110EB
+165A8F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 020050E30000A00300A0A0E31EFF2FE1
+
+165A8F4: 00 01; 00:dl->mainscreenlight | гл.экран 01:dl->keypadlight | клавиатура
+;------------------------- end -------------------------
+

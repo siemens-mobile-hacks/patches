@@ -1,0 +1,20 @@
+;S75v31
+;Разгон телефона до 208 МГц
+;Speedup of mobile till 208 MHz
+;(c) SiNgle
+;Version: 
+;PatchID: 2767
+;Details: https://patches.kibab.com/patches/details.php5?id=2767
+/*
+Патч реально работает. Это не шутка!
+*/
+0231AF4: 08402DE9 2D6745EA
+
+#pragma enable old_equal_ff
+138B7B0: 01002DE914009FE50000D0E5010050E3
+138B7C0: 0100BDE808402D1904F09F1504F09FE5
+138B7D0: 84F20800F81A23A0881B23A0
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

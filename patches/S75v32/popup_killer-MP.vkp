@@ -1,0 +1,14 @@
+;S75v32
+;Уничтожитель всплывающих сообщений
+;Popup Killer
+;(c) avkiev
+;(p) ferro
+;Version: 
+;PatchID: 4022
+;Details: https://patches.kibab.com/patches/details.php5?id=4022
+/*
+
+*/
+09752ac: 041C011C281C8BF72Eeb 004A9047,0xA0066A01,C046   ; S75v32
+;------------------------- end -------------------------
+

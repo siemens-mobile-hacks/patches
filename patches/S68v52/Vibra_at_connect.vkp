@@ -1,0 +1,21 @@
+;S68v52
+;Vibra at connect
+;Vibra at connect
+;(c) SiNgle
+;(r) avkiev, &#256;&#299;&#257;&#261;, den11111
+;(p) Evgr
+;Version: 
+;PatchID: 10266
+;Details: https://patches.kibab.com/patches/details.php5?id=10266
+/*
+
+*/
+0BFC5EC: 2A1C2B1C09211730 00498847,0xA0063801 
+#pragma enable old_equal_ff
+0063800: 71460431173003B4C046C046C04601B4
+0063810: 0748642104A201324DDF01BC1E207CDF
+0063820: 2A1C2B1C092101BD00B500207CDF00BD
+0063830: 0xA8D80530 
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

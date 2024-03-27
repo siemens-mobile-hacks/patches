@@ -1,0 +1,13 @@
+;ME75v22
+;Убрать подтверждение включения
+;Disable Aircraft Check
+;(c) Bennie
+;Version: 
+;PatchID: 5034
+;Details: https://patches.kibab.com/patches/details.php5?id=5034
+/*
+
+*/
+02C9635: D1 E0
+;------------------------- end -------------------------
+

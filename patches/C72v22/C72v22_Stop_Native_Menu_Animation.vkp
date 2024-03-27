@@ -1,0 +1,23 @@
+;C72v22
+;Отключение анимации в Native Menu 
+;Stop Native Menu Animation 
+;(c) sim_emrom 
+;(p) Evgr 
+;Version: 
+;PatchID: 10149
+;Details: https://patches.kibab.com/patches/details.php5?id=10149
+/*
+
+*/
+0942704: 84 00 ;Address Book
+0942728: 92 00 ;Calls
+0942744: AE 00 ;Internet
+0942760: 76 00 ;Organiser 
+0942780: 63 00 ;Messages
+09427B8: 2C 00 ;Camera
+09427D4: 4E 00 ;Extras
+09427F8: 40 00 ;My stuff
+094281C: A3 00 ;Setup
+
+;------------------------- end -------------------------
+

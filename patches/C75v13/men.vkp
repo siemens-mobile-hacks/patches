@@ -1,0 +1,13 @@
+;C75v13
+;Включение Инженерного меню
+;Enable Developer Menu
+;(c) Phantom
+;Version: 
+;PatchID: 984
+;Details: https://patches.kibab.com/patches/details.php5?id=984
+/*
+
+*/
+07DC0B4: 040090E5 0000A0E3
+;------------------------- end -------------------------
+

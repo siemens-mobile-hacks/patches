@@ -1,0 +1,16 @@
+;S75v52
+;Переименование файлов с расширением
+;Rename files with extensions
+;(c) SiNgle
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8272
+;Details: https://patches.kibab.com/patches/details.php5?id=8272
+/*
+
+*/
+04D60D4: 2E22 0022
+04D60E6: 2E22 0022
+059AE8C: 2E22 0022
+;------------------------- end -------------------------
+

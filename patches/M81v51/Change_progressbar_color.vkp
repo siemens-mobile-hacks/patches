@@ -1,0 +1,16 @@
+;M81v51
+;Изменение цвета прогрессбара
+;Change progressbar color
+;(c) -=(Kad)=-
+;(p) Сурок
+;Version: 
+;PatchID: 6708
+;Details: https://patches.kibab.com/patches/details.php5?id=6708
+/*
+Плавненько включается...
+*/
+08E2888: BEE6FA64 BEE6FA0A ; background
+08E288C: 1EBEE664 00000034 ; contour
+08E2890: 001E8264 FFFFFF24 ; stripe
+;------------------------- end -------------------------
+

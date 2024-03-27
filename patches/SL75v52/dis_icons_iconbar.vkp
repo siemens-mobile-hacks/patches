@@ -1,0 +1,22 @@
+;SL75v52
+;Отключить некоторые иконки иконбара
+;Disable some icons in iconbar
+;(c) funMarkus
+;(p) dimonp25
+;Version: 
+;PatchID: 9786
+;Details: https://patches.kibab.com/patches/details.php5?id=9786
+/*
+Патч нужен для формирования структурированного иконбара, управляемого эльфами
+*/
+029d31e: FFF7E7FE C046C046 ; HandsFree
+029d2c6: FFF713FF C046C046 ; BlueTooth
+029d340: FFF7D6FE C046C046 ; KeyLock 
+;029d3b6: FFF79BFE C046C046 ; SoundsOff 
+029d242: FFF755FF C046C046 ; DownloadInBrowser
+029d546: FFF7D3FD C046C046 ; TurnOff 
+029d4ba: FFF719FE C046C046 ; IsCalling
+;029d498: FFF72AFE C046C046 ; GPRS 
+029d526: FFF7E3FD C046C046 ; SendingMessage
+;------------------------- end -------------------------
+

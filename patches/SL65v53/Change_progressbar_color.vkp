@@ -1,0 +1,15 @@
+;SL65v53
+;Изменение цвета прогрессбара
+;Change progressbar color
+;(c) -=(Kad)=-
+;Version: 
+;PatchID: 5308
+;Details: https://patches.kibab.com/patches/details.php5?id=5308
+/*
+
+*/
+0A11B08: BEE6FA64 5656F814 ; background
+0A11B0C: 1EBEE664 00000034 ; contour
+0A11B10: 001E8264 FFFFFF24 ; stripe
+;------------------------- end -------------------------
+

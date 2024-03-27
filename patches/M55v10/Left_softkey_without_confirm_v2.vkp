@@ -1,0 +1,16 @@
+;M55v10
+;Левая софт-кнопка без подтверждения
+;Left softkey without confirmation
+;(c) Skylord
+;(p) AlexSid, SiNgle
+;Version: 2
+;PatchID: 1559
+;Details: https://patches.kibab.com/patches/details.php5?id=1559
+/*
+Если установлен патч Удалить софт-кнопки с главного экрана v3, то переопределить функцию левой софт-кнопки можно нажав коротко стрелку вверх
+*/
+0D4C7A: 2D1248D22D1046FD0C002D1EEA00B053 EA20165148D22D0E46FD0C002D1C0D0B
+0D4CB4: EA304A51 CC00CC00
+0D4DDC: 1651 A04C
+;------------------------- end -------------------------
+

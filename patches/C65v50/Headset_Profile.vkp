@@ -1,0 +1,24 @@
+;C65v50
+;Выбор профиля при подключении гарнитуры
+;Select Profile On Headset Plug-In
+;(c) ThE TrIFoN
+;(p) KiRiK
+;Version: 
+;PatchID: 1859
+;Details: https://patches.kibab.com/patches/details.php5?id=1859
+/*
+Удобно, чтобы вибра не выключалась
+Заменить N на номер профиля - 1
+English:
+Useful to keep vibra on
+N = profile# - 1
+
+
+
+
+*/
+
+;Патч для C65v50
+16F5488: 04 0N ;Заменить N на номер профиля - 1
+;------------------------- end -------------------------
+

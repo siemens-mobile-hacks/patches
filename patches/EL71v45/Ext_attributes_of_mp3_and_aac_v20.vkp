@@ -1,0 +1,14 @@
+;EL71v45
+;Расширенные свойства MP3 и AAC-файлов
+;Extended attributes of MP3 and AAC-files
+;(c) @ndres/PRM
+;Version: 2.0
+;PatchID: 7809
+;Details: https://patches.kibab.com/patches/details.php5?id=7809
+/*
+
+*/
+07203A4: 1D00001A 0010A013
+07203C3: E3 03
+;------------------------- end -------------------------
+

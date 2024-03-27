@@ -1,0 +1,27 @@
+;X75v100
+;Расширенное меню красной нкопки
+;Extended red button menu
+;(c) -=(Kad)=-
+;(r)  ThE TrIFoN
+;Version: 2-BASE
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7263
+;PatchID: 7192
+;Details: https://patches.kibab.com/patches/details.php5?id=7192
+/*
+
+*/
+#pragma enable old_equal_ff
+006E200: 7FB51048C4DF002813D0061C70780028
+006E210: 04D0012807D0022807D00BE071680029
+006E220: 08D0884706E093DF04E0301C08304BDF
+006E230: 00E0A9DFFFBC04373847
+
+006E240: E4D3C2B107AD00000000000000000000,"\
+{p=`Extended red button menu` id=ad07 cp=`-=(Kad)=-` ver=2}","\
+{c wtd `User function`=0 `Reboot`=1 `Start midlet`=2}\
+{1 o `Who to do` c=wtd}\
+{4 a `User function`}\
+{8 sf `Midlet` mask=`*.jar`}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

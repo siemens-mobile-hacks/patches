@@ -1,0 +1,13 @@
+;CX70v56
+;Сохранение списков при смене SIM карты
+;Call list saving when SIM is changed
+;(c) SiNgle
+;Version: 
+;PatchID: 659
+;Details: https://patches.kibab.com/patches/details.php5?id=659
+/*
+Сохраняются списки при смене SIM карты.
+*/
+1713FA2: 1DF0F2EF 00200020
+;------------------------- end -------------------------
+

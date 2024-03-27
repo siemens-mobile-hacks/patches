@@ -1,0 +1,14 @@
+;C81v51
+;Удалять USSD сообщения без подтверждения
+;Delete USSD without question
+;(c) Evgr
+;(p) den11111
+;Version: 
+;PatchID: 8251
+;Details: https://patches.kibab.com/patches/details.php5?id=8251
+/*
+
+*/
+02FEC18: FAF008EE 00209047
+;------------------------- end -------------------------
+

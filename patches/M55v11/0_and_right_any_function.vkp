@@ -1,0 +1,18 @@
+;M55v11
+;0 + правая софт-кнопка -> куча ссылок
+;0+ right soft key any function from the list
+;(c) Matr!x
+;(p) ZZToP
+;Version: 
+;PatchID: 5148
+;Details: https://patches.kibab.com/patches/details.php5?id=5148
+/*
+
+*/
+0DC260: 4840 CC00
+0DC286: 5302 0E06 ;замена подписи "Линия 2" на "Будильн"
+0DC659: 206C36 6CFE78 ;вызвать будильник
+0DC65F: 20 00
+
+;------------------------- end -------------------------
+

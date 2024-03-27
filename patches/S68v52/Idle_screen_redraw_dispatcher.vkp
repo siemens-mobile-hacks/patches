@@ -1,0 +1,25 @@
+;S68v52
+;Idle screen redraw dispatcher 
+;Idle screen redraw dispatcher 
+;(c) Miha_r 
+;(p) sempai
+;Version: 
+;PatchID: 10166
+;Details: https://patches.kibab.com/patches/details.php5?id=10166
+/*
+;Send IPC message on idle screen redraw
+;IPC message parameters:
+;name_to = "IdleUpd"
+;name_from = "IdleUpd" 
+*/
+02D5B9C: FFB0ACB0041C8BA8 00498847019E06A0
+#pragma enable old_equal_ff
+0069E00: 7146FFB400F008E8FFBCFFB0ACB0041C
+0069E10: 8BA804318F46C0461C309FE500402DE9
+0069E20: 0020A0E3B010A0E3DE1C81E30900A0E3
+0069E30: 420C80E3000100EF0080BDE8509E06A0
+0069E40: 49646C655570640049646C6555706400
+0069E50: 409E06A0489E06A000000000
+#pragma disable old_equal_ff 
+;------------------------- end -------------------------
+

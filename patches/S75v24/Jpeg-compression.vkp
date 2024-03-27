@@ -1,0 +1,13 @@
+;S75v24
+;Сжатие JPEG с максимальным качеством (100% вместо 75%)
+;Jpeg-compression with maximal quality (100% instead of 75%)
+;(c) SiNgle
+;Version: 
+;PatchID: 2200
+;Details: https://patches.kibab.com/patches/details.php5?id=2200
+/*
+
+*/
+0AF93C0: 4B 64
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M75v19
+;Звуковой сигнал по окончании приёма данных
+;Sound after data recieve complete
+;(c) SiNgle
+;(p) Mikel
+;Version: 
+;PatchID: 3243
+;Details: https://patches.kibab.com/patches/details.php5?id=3243
+/*
+
+*/
+35AFFC: 0010A0E3 A666FDEB
+;------------------------- end -------------------------
+

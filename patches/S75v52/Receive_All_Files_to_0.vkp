@@ -1,0 +1,23 @@
+;S75v52
+;Прием всех файлов в 0:/ (IncFlex30 совместимый)
+;Receive All Files to 0:/ (IncFlex30 compatible)
+;(c) 1nvisible
+;(p) funMarkus
+;Version: 0.91b
+;PatchID: 9341
+;Details: https://patches.kibab.com/patches/details.php5?id=9341
+/*
+
+*/
+04D4572: 10B50C1CFFF7D4FF002C06D00028 00B50220FE46004900BD919606A0
+04D468C: 10B50C1C002806D0002C04D0FFF7E0FE 00B50120FE46004900BDFFFF919606A0
+
+#pragma enable old_equal_ff
+0069690: 30B5051C0868012D04D109A1122200F0
+00696A0: 06F830BD0EA1,12,2200F001F830BDF0B5 ;change 0x12 to (lentgth*2 + 2)
+00696B0: 141C00254B5D43550135A542FAD1F0BD
+00696C0: 0800,'4:\\Inbox'                   ;folder for OBEX mode, may use MicroSD
+00696E0: 0800,'0:\\Inbox'                   ;folder for Phone mode, don't use MicroSD!
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

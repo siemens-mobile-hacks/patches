@@ -1,0 +1,19 @@
+;EL71v38
+;Ушлая подсветка (SWI)
+;Smart Illumination (SWI)
+;(c) BoBa
+;(r) NForce
+;(p) 1allen
+;Version: 1
+;PatchID: 7032
+;Details: https://patches.kibab.com/patches/details.php5?id=7032
+/*
+Отключение подсветки клавиатуры днем.
+
+//мой первый портированный патч, будьте осторожны :)
+
+upd: убрал статус беты.
+*/
+0C10380: 0xA04B9724 318006A0 ; EL71v38
+;------------------------- end -------------------------
+

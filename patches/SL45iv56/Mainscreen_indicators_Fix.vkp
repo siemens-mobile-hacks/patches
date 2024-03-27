@@ -1,0 +1,26 @@
+;SL45iv56
+;Исправление для патча Индикаторы главного экрана
+;Fix for Mainscreen indicators by lbuczko
+;(c) lalo.lerry
+;Version: 
+;PatchID: 3426
+;Details: https://patches.kibab.com/patches/details.php5?id=3426
+/*
+Патч исправляет баг с номером недоступного или анонимного звонка в пропущенных звонках.
+
+Сперва нужно установить патч "Индикаторы главного экрана"
+
+
+English:
+This patch add fix for number of not available or hidden ID in missed calls.
+
+Install first 'Mainscreen indicators by lbuczko'
+
+
+Release: May 16th, 2006
+*/
+0x444812: D7400C00F2F4082D2D0D D7600C00F2F4082D0D47 
+0x4448AA: FFFFFFFFFFFF 02F4042D02F4
+0x4448B0: FFFFFFFFFFFF 062D2DC10DB3 
+;------------------------- end -------------------------
+

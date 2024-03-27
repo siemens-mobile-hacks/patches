@@ -1,0 +1,16 @@
+;M55v10
+;Зелёная кнопка -> расширенный список вызовов
+;Green key ->  Extented calls list
+;(c) Matr!x
+;Version: 
+;PatchID: 1557
+;Details: https://patches.kibab.com/patches/details.php5?id=1557
+/*
+
+*/
+0D4F73: 6FA2AA 5500D0
+35D000: FFFFFFFF DA6FA2AA
+35D004: FFFFFFFF FA6FA6AA ;1-набранные, 2-принятые
+;35D004: FA6FA6AAFFFFFFFF DA6FA6AAFA6F42AA ;1-набранные, 2-принятые, 3-неотвеченные
+;------------------------- end -------------------------
+

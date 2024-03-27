@@ -1,0 +1,16 @@
+;CX75v25
+;Убрать сообщения (дополнение)
+;Disable some messages (addon)
+;(c) SiNgle
+;(p) sempai
+;Version: 
+;PatchID: 5506
+;Details: https://patches.kibab.com/patches/details.php5?id=5506
+/*
+GPRS вкл\выкл (GPRS on\off)
+Вибра вкл\выкл (Vibra alert on\off) 
+*/
+02C9B26: D4F15CED 9047C046 ; GPRS вкл\выкл (GPRS on\off)
+03269D0: 78F1 80BD         ; Вибра вкл\выкл (Vibra alert on\off) 
+;------------------------- end -------------------------
+

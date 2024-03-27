@@ -1,0 +1,22 @@
+;S55v20
+;Убрать софт-кнопки с главного экрана
+;Remove soft keys from main screen
+;(c) SiNgle
+;(r) ValeraVi
+;Version: 3
+;PatchID: 4789
+;Details: https://patches.kibab.com/patches/details.php5?id=4789
+/*
+BUG: Не работает долгое нажатие на левую и короткое на правую софт кнопки на главном экране.
+*/
+3244C6: 3D07 CC00 ;remove menu soft key
+3243B0: 2D 0D ;remove the left soft key and shift down the time string
+; as in keylock mode.
+
+; Запретить строке времени смещаться вверх при появлении иконок
+;на левой софт кнопке (SMS, пропущ. звонок).
+; Иконка будет накладываться поверх строки времени.
+32538E: 3D0D cc00
+325398: 3D08 cc00
+;------------------------- end -------------------------
+

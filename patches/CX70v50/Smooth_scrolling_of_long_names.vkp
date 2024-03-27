@@ -1,0 +1,15 @@
+;CX70v50
+;Плавный скроллинг длинных названий и имен
+;Smooth scrolling of long names
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 124
+;Details: https://patches.kibab.com/patches/details.php5?id=124
+/*
+Плавный скроллинг длинных названий и имен.
+*/
+094072C: D007 1202 ;задержка перед скролом (delay before start)
+0940730: 2C01 2A00 ;скорость скрола (scrolling speed)
+;------------------------- end -------------------------
+

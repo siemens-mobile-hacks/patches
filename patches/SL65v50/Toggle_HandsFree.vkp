@@ -1,0 +1,16 @@
+;SL65v50
+;Убрать подтверждения при включении громкой связи
+;Toggle HandsFree without question
+;(c) SiNgle
+;(p) KiRiK
+;Version: 
+;PatchID: 173
+;Details: https://patches.kibab.com/patches/details.php5?id=173
+/*
+Включение-выключение громкой связи во время разговора одним нажатием (без подтверждения)
+*/
+;* Убрать подтверждения при включении громкой связи ** Toggle HandsFree without question * © SiNgle, § KiRiK
+1647030: CB21C90000 0021002101
+1647038: 18F07EEA 17F098EA
+;------------------------- end -------------------------
+

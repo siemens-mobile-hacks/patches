@@ -1,0 +1,15 @@
+;C81v51
+;Отключить загрузку FlexMenu
+;Disconnect loading FlexMenu
+;(c) DDM
+;(p) den11111
+;Version: 
+;PatchID: 8193
+;Details: https://patches.kibab.com/patches/details.php5?id=8193
+/*
+Патч отключает загрузку FlexMenu при старте телефона следовательно нет ошибки Internal Error, но к сожалению пока нет второй явы
+(нужно в ручную запустить FlexMenu из разроботчика(Разроботчик->Java->StartFlexMenu, тогда можно будет юзать 2 явы(папка FlexMenu должна быть переименованна)))
+*/
+09F0FDC: B9BFFFEB  C046C046
+;------------------------- end -------------------------
+

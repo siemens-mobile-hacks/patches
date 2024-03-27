@@ -1,0 +1,19 @@
+;M75v13
+;Убрать Немецкий, Польский, Латвийский и (Lithuania) из меню языков ввода
+;Remove other Languages
+;(c) AlexSid,Pavel81
+;(p) Mikel
+;Version: 
+;PatchID: 799
+;Details: https://patches.kibab.com/patches/details.php5?id=799
+/*
+
+*/
+
+0A3EC1E: 00 01
+0A3EC56: 00 01
+0A3EC4E: 00 01
+0A3EC52: 00 01
+
+;------------------------- end -------------------------
+

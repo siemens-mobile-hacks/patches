@@ -1,0 +1,14 @@
+;M75v13
+;Disable AUMA And UDIAL Debug
+;Disable AUMA And UDIAL Debug
+;(c) 1nvisible
+;Version: 
+;PatchID: 5344
+;Details: https://patches.kibab.com/patches/details.php5?id=5344
+/*
+
+*/
+034C9C4: F0412DE9 1EFF2FE1 ; AUMA Debug
+0872BB4: 0FB4 7047 ; UDIAL Debug
+;------------------------- end -------------------------
+

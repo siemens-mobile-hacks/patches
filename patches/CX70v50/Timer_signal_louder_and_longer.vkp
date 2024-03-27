@@ -1,0 +1,14 @@
+;CX70v50
+;Изменить сигнал таймера на более громкий и длинный
+;Timer signal louder and longer
+;(c) StrikerX
+;(p) AsteriX
+;Version: 
+;PatchID: 128
+;Details: https://patches.kibab.com/patches/details.php5?id=128
+/*
+Изменить сигнал таймера на более громкий и длинный.
+*/
+1512AEC: CC7E F476
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;M75v25
+;Открыть заблокированные блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;Version: 
+;PatchID: 4114
+;Details: https://patches.kibab.com/patches/details.php5?id=4114
+/*
+
+*/
+08CF65C: 00 01
+;------------------------- end -------------------------
+

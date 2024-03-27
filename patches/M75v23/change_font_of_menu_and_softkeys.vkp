@@ -1,0 +1,15 @@
+;M75v23
+;Шрифт меню и софт кнопок
+;Сhange font of menu and softkeys
+;(c) SiNgle
+;Version: 
+;PatchID: 2799
+;Details: https://patches.kibab.com/patches/details.php5?id=2799
+/*
+
+*/
+04A2624: 03 02 ; softkey font
+04A266C: 03 08 ; chosen item in menu
+04A2670: 02 08 ; menu list
+;------------------------- end -------------------------
+

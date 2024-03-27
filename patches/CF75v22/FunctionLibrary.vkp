@@ -1,0 +1,306 @@
+;CF75v22
+;Библиотека Функций
+;Function Library
+;(c) avkiev
+;(p) ~Jhellico
+;Version: 60601
+;PatchID: 3345
+;Details: https://patches.kibab.com/patches/details.php5?id=3345
+/*
+Версия патча записана в формате "ГММДД". Индицирует дату обновления патча.
+Этот патч сам по себе ничего не делает. Он предназначен для облегчения создания и портирования других патчей.
+Требуется для многих патчей, написанных с использованием концепции "Мастер-Патч + Библиотека функций" (c) 1nvisible, avkiev
+
+Patch version is in "YMMDD" format. It indicates its update date.
+
+It is auxiliary patch. It consists of 200 most useable function, 28 variables and 28 constants.
+ It is needed for many other patches, whitch are written using "Master-Patch+Functon Library" concept (c) 1nvisible, avkiev
+*/
++0F00000
+#pragma enable old_equal_ff
+000: 004F3847,0xA079038B   ; f000: GetDateTime
+008: 004F3847,0xA020845B   ; f001: GetWeek
+010: 004F3847,0xA02C366D   ; f002: GetProfile
+018: 004F3847,0xA02C353B   ; f003: SetProfile
+020: 004F3847,0xA0E5A4A4   ; f004: dwMODdw
+028: 004F3847,0xA020EB99   ; f005: DecToHex
+030: 004F3847,0xA07D19B4   ; f006: GetAkku
+038: 004F3847,0xA0A1CBD9   ; f007: GetLP
+040: 004F3847,0xA07D2848   ; f008: SetIllumination
+048: 004F3847,0xA07F2104   ; f009: SwitchPhoneOff
+;
+050: 004F3847,0xA0786564   ; f010: fopen
+058: 004F3847,0xA07865A4   ; f011: fread
+060: 004F3847,0xA078668C   ; f012: fwrite
+068: 004F3847,0xA07864B8   ; f013: fclose
+070: 004F3847,0xA07864E8   ; f014: fflush
+078: 004F3847,0xA0786518   ; f015: lseek
+080: 004F3847,0xA087F960   ; f016: mkdir
+088: 004F3847,0xA05CACCB   ; f017: OpenReadCloseFile
+090: 004F3847,0xA087FE54   ; f018: GetFileAttrib
+;098: 004F3847,0xA087F960   ; f019: SetFileAttrib
+;
+0A0: 004F3847,0xA0203C24   ; f020: malloc
+0A8: 004F3847,0xA0203C8C   ; f021: mfree
+0B0: 004F3847,0xA0E59165   ; f022: sPrintf
+0B8: 004F3847,0xA0E5AA4D   ; f023: strcat
+0C0: 004F3847,0xA0E5AA6D   ; f024: strchr
+0C8: 004F3847,0xA0E5AA90   ; f025: strcmp
+0D0: 004F3847,0xA0E5AB2D   ; f026: strcopy
+0D8: 004F3847,0xA0E5ABAD   ; f027: StrLen
+0E0: 004F3847,0xA0777891   ; f028: wsAppendChar
+0E8: 004F3847,0xA0777845   ; f029: wsInsertChar
+;
+0F0: 004F3847,0xA07B8579   ; f030: GetPITaddr
+0F8: 004F3847,0xA02D2EF5   ; f031: DrawMainScreen
+100: 004F3847,0xA0348ED5   ; f032: DrawScreenSaver
+108: 004F3847,0xA07B86BF   ; f033: GetImgHeight
+110: 004F3847,0xA07B86CF   ; f034: GetImgWidth
+118: 004F3847,0xA02A9D3D   ; f035: DrawImg
+120: 004F3847,0xA07AEF41   ; f036: DrawImage2
+128: 004F3847,0xA02A9D17   ; f037: DrawCanvas
+130: 004F3847,0xA07AEE81   ; f038: DrawImgBW
+138: 004F3847,0xA02A9699   ; f039: AddIconToIconbar
+;
+140: 004F3847,0xA07D3A6C   ; f040: getEELiteMaxID
+148: 004F3847,0xA0784F78   ; f041: getEEFullMaxID
+150: 004F3847,0xA07D3928   ; f042: GetEELiteBlockAddress
+158: 004F3847,0xA07D3A10   ; f043: getEELiteBlockSizeVersion
+160: 004F3847,0xA0784BBC   ; f044: getEEFullBlockSizeVersion
+168: 004F3847,0xA07D3AA0   ; f045: StartWriteEELiteBlock
+170: 004F3847,0xA07D3B1C   ; f046: FinishWriteEELiteBlock
+178: 004F3847,0xA07D3A78   ; f047: DeleteEELiteBlock
+180: 004F3847,0xA07D3AD8   ; f048: WriteEELiteBlock
+;188: 004F3847,0x   ; f049: 
+;
+190: 004F3847,0xA03044B8   ; f050: PlaySound
+198: 004F3847,0xA02FA1EC   ; f051: PlaySound2
+1A0: 004F3847,0xA02B5288   ; f052: PlaySoundLoop
+1A8: 004F3847,0xA04F23EB   ; f053: AlarmClockRing
+1B0: 004F3847,0xA04D100D   ; f054: GetATCmdString
+1B8: 004F3847,0xA055DB17   ; f055: OriginalATCGSN
+1C0: 004F3847,0xA04D09A9   ; f056: PostAtCommand
+1C8: 004F3847,0xA04D20DF   ; f057: SendATAnswerStr
+1D0: 004F3847,0xA05CE2AD   ; f058: mfree_high
+1D8: 004F3847,0xA0E59E41   ; f059: MemChr
+;
+1E0: 004F3847,0xA07865E4   ; f060: SetFileSize
+1E8: 004F3847,0xA04E15BF   ; f061: editOrNewTXTModule
+1F0: 004F3847,0xA04CD3BD   ; f062: LoadProcesses
+1F8: 004F3847,0xA07AFBA9   ; f063: SelectColor
+200: 004F3847,0xA032EFC7   ; f064: GetVibraStatus
+208: 004F3847,0xA07F6227   ; f065: GetProvider
+210: 004F3847,0xA02D659D   ; f066: IsScreenSaver
+218: 004F3847,0xA07B7703   ; f067: IsUnlocked
+220: 004F3847,0xA080D11F   ; f068: TempLightOn
+228: 004F3847,0xA0352D4C   ; f069: GetWavLen
+;
+230: 004F3847,0xA0348A81   ; f070: HasNewSMS
+238: 004F3847,0xA02D4A2D   ; f071: HasFlashSMS
+240: 004F3847,0xA058FE37   ; f072: ReadNewSMS
+248: 004F3847,0xA02D10DD   ; f073: ReadFlashSMS
+250: 004F3847,0xA02FD0C8   ; f074: PlayFile
+258: 004F3847,0xA083C4F8   ; f075: StartMidlet
+260: 004F3847,0xA0515D29   ; f076: GetMissedCallsCount
+268: 004F3847,0xA020AF00   ; f077: CallAfterTimer
+270: 004F3847,0xA077D8EB   ; f078: ShowMsgInR1_3
+278: 004F3847,0xA077D8FB   ; f079: ShowMsgInR1_4
+;
+280: 004F3847,0xA077D963   ; f080: ShowMsgInR1_7
+288: 004F3847,0xA0AA8219   ; f081: GetNetMode
+290: 004F3847,0xA07D2EF4   ; f082: GetIlluminationDataTable
+298: 004F3847,0xA0E59E65   ; f083: memcmp
+2A0: 004F3847,0xA020EBD5   ; f084: StrToInt
+2A8: 004F3847,0xA032EFDD   ; f085: SwitchVibraOnOff
+;2B0: 004F3847,0x   ; f086: 
+2B8: 004F3847,0xA020B00C   ; f087: IsCallAfterTimerStillRunning
+2C0: 004F3847,0xA0219F1C   ; f088: ClearMemory
+2C8: 004F3847,0xA0E5A330   ; f089: MemCopy
+;
+2D0: 004F3847,0xA07B6F7F   ; f090: Keypress_On
+2D8: 004F3847,0xA07B70AD   ; f091: Keypress_Off
+2E0: 004F3847,0xA03B72E5   ; f092: GetCPUClock
+2E8: 004F3847,0xA03B731F   ; f093: GetCPULoad
+2F0: 004F3847,0xA03B72ED   ; f094: GetMMIMemUsed
+2F8: 004F3847,0xA03B72F7   ; f095: GetNonPermMemAvail
+;300: 004F3847,0x   ; f096: 
+;308: 004F3847,0x   ; f097: 
+;310: 004F3847,0x   ; f098: 
+318: 004F3847,0xA02CF2EB   ; f099: Screen_Wallpaper_Flush
+;
+320: 004F3847,0xA077E365   ; f100: EndUpdateScreen
+328: 004F3847,0xA07F3C95   ; f101: EndCall
+330: 004F3847,0xA078790F   ; f102: EndCallBusy
+338: 004F3847,0xA02A90E5   ; f103: IsDirectCallActive
+340: 004F3847,0xA02A5D37   ; f104: GetScreenSaverRam
+348: 004F3847,0xA020C108   ; f105: LockShed
+350: 004F3847,0xA020C190   ; f106: UnLockShed
+358: 004F3847,0xA078629C   ; f107: FindFirstFile
+360: 004F3847,0xA07862D8   ; f108: FindNextFile
+368: 004F3847,0xA0786224   ; f109: FindClose
+;
+370: 004F3847,0xA0A36A67   ; f110: IsCalling
+378: 004F3847,0xA02CFB93   ; f111: RefreshGPRSTraffic
+380: 004F3847,0xA02CFBB1   ; f112: GetGPRSTraffic
+388: 004F3847,0xA07AD8D7   ; f113: DrawFrame
+390: 004F3847,0xA0511EE3   ; f114: GetCurrentSecondOfCall
+398: 004F3847,0xA0A3727F   ; f115: GetTypeOfCall
+3A0: 004F3847,0xA032F767   ; f116: GetFunctionPointer
+3A8: 004F3847,0xA07B4815   ; f117: SetWindowMetrics
+3B0: 004F3847,0xA0849FB9   ; f118: SetWindowText
+3B8: 004F3847,0xA0847797   ; f119: SetWindowColor
+;
+3C0: 004F3847,0xA0791207   ; f120: GetTimeFormat
+3C8: 004F3847,0xA07B3B6B   ; f121: PushWindowBuffer
+3D0: 004F3847,0xA084782D   ; f122: ClearWindowBuffer
+;3D8: 004F3847,0x   ; f123: 
+;3E0: 004F3847,0x   ; f124: 
+;3E8: 004F3847,0x   ; f125: 
+;3F0: 004F3847,0x   ; f126: 
+;3F8: 004F3847,0x   ; f127: 
+;400: 004F3847,0x   ; f128: GetCallsList
+;408: 004F3847,0x   ; f129: 
+;
+;410: 004F3847,0x   ; f130: 
+;418: 004F3847,0x   ; f131: 
+;420: 004F3847,0x   ; f132: 
+;428: 004F3847,0x   ; f133: 
+;430: 004F3847,0x   ; f134: 
+;438: 004F3847,0x   ; f135: 
+;440: 004F3847,0x   ; f136: 
+;448: 004F3847,0x   ; f137: 
+;450: 004F3847,0x   ; f138: 
+;458: 004F3847,0x   ; f139: 
+;
+;460: 004F3847,0x   ; f140: 
+;468: 004F3847,0x   ; f141: 
+;470: 004F3847,0x   ; f142: 
+;478: 004F3847,0x   ; f143: 
+;480: 004F3847,0x   ; f144: 
+;488: 004F3847,0x   ; f145: 
+;490: 004F3847,0x   ; f146: 
+;498: 004F3847,0x   ; f147: 
+;4A0: 004F3847,0x   ; f148: 
+;4A8: 004F3847,0x   ; f149: 
+;
+;4B0: 004F3847,0x   ; f150: 
+;4B8: 004F3847,0x   ; f151: 
+;4C0: 004F3847,0x   ; f152: 
+;4C8: 004F3847,0x   ; f153: 
+;4D0: 004F3847,0x   ; f154: 
+;4D8: 004F3847,0x   ; f155: 
+;4E0: 004F3847,0x   ; f156: 
+;4E8: 004F3847,0x   ; f157: 
+;4F0: 004F3847,0x   ; f158: 
+;4F8: 004F3847,0x   ; f159: 
+;
+500: 004F3847,0xA0776DF3   ; f160: Unicode_sprintf
+508: 004F3847,0xA0208AE5   ; f161: Unicode_CopyStr2Str
+510: 004F3847,0xA0777383   ; f162: Unicode_GetCharByPosition
+518: 004F3847,0xA0785A04   ; f163: ws_2str
+;520: 004F3847,0x   ; f164: 
+;528: 004F3847,0x   ; f165: 
+;530: 004F3847,0x   ; f166: 
+;538: 004F3847,0x   ; f167: 
+;540: 004F3847,0x   ; f168: 
+;548: 004F3847,0x   ; f169: 
+;
+550: 004F3847,0xA0F0F001   ; f170: OpenWriteCloseFile
+558: 004F3847,0xA0F0F051   ; f171: Hex2Int
+;560: 004F3847,0x   ; f172: 
+;568: 004F3847,0x   ; f173: 
+;570: 004F3847,0x   ; f174: 
+;578: 004F3847,0x   ; f175: 
+;580: 004F3847,0x   ; f176: 
+;588: 004F3847,0x   ; f177: 
+;590: 004F3847,0x   ; f178: 
+;598: 004F3847,0x   ; f179: 
+;
+;5A0: 004F3847,0x   ; f180: 
+;5A8: 004F3847,0x   ; f181: 
+;5B0: 004F3847,0x   ; f182: 
+;5B8: 004F3847,0x   ; f183: 
+;5C0: 004F3847,0x   ; f184: 
+;5C8: 004F3847,0x   ; f185: 
+;5D0: 004F3847,0x   ; f186: 
+;5D8: 004F3847,0x   ; f187: 
+;5E0: 004F3847,0x   ; f188: 
+;5E8: 004F3847,0x   ; f189: 
+;
+5F0: 004F3847,0xA0F00F01   ; f190: RunScaner
+5F8: 004F3847,0xA0F03001   ; f191: TalkTime
+600: 004F3847,0xA0F07601   ; f192: MiniGPS
+;608: 004F3847,0x   ; f193:
+610: 004F3847,0xA0F012A1   ; f194: GetAllPatchesByInject
+;618: 004F3847,0x   ; f195: 
+;620: 004F3847,0x   ; f196: 
+;628: 004F3847,0x   ; f197: 
+;630: 004F3847,0x   ; f198:
+;638: 004F3847,0x   ; f199:
+;
+640: 004FF746,0xA84E8878   ; v00: RamCap
+648: 004FF746,0xA84E887A   ; v01: RamLS
+650: 004FF746,0xA84F5294   ; v02: RamNet
+;658: 004FF746,0x   ; v03: 
+660: 004FF746,0xA850D840   ; v04: RamMissedCalls
+;668: 004FF746,0x   ; v05: RamMissedSMS
+;670: 004FF746,0x   ; v06: RamDateTime
+678: 004FF746,0xA850B090   ; v07: RamAlarm
+;680: 004FF746,0x   ; v08: RamAccPoint
+688: 004FF746,0xA84C1BC0   ; v09: RamScreensaver
+;
+;690: 004FF746,0x   ; v10: RamAutoTime
+698: 004FF746,0xA84C1BD4   ; v11: RamStby
+;6A0: 004FF746,0x   ; v12: RamMissedMes
+6A8: 004FF746,0xA84DAE90   ; v13: RamIsLocked
+6B0: 004FF746,0xA84C4808   ; v14: RamNetOnline
+6B8: 004FF746,0xA8515BAE   ; v15: RamScreenBrightness
+;6C0: 004FF746,0x   ; v16: 
+;6C8: 004FF746,0x   ; v17: 
+6D0: 004FF746,0xA8539944   ; v18: RamIsShutdown
+6D8: 004FF746,0xA84C1C14   ; v19: RamMainscreenAccuIcon
+;
+;6E0: 004FF746,0x   ; v20: 
+;6E8: 004FF746,0x   ; v21: 
+;6F0: 004FF746,0x   ; v22: 
+;6F8: 004FF746,0x   ; v23: 
+;700: 004FF746,0x   ; v24: 
+;708: 004FF746,0x   ; v25: 
+;710: 004FF746,0x   ; v26: 
+718: 004FF746,0xA8500C24   ; v27: RamProfileNum
+;
+;720: 004FF746,0xA832F000   ; z00: FreeRAM
+720: 004FF746,0xA8223100   ; z00: FreeRAM
+728: 004FF746,0x0000130D   ; z01: LP_MonthsShort
+730: 004FF746,0x00000529   ; z02: Pic_Big0
+738: 004FF746,0x000004A7   ; z03: Pic_Little0
+740: 004FF746,0x000000D4   ; z04: Pic_Extra
+748: 004FF746,0x000000DD   ; z05: Pic_Profiles
+;750: 004FF746,0x   ; z06: Pic_Vibra
+;758: 004FF746,0x   ; z07: Pic_Call
+760: 004FF746,0x000000BD   ; z08: Pic_AdvNet
+768: 004FF746,0x000011FB   ; z09: LP_MonthsLong
+;
+770: 004FF746,0x00001319   ; z10: LP_Weekdays
+778: 004FF746,0x000000CC   ; z11: Pic_Calendar
+780: 004FF746,0x000002E1   ; z12: Pic_AccuGraph
+;788: 004FF746,0x   ; z13: 
+;790: 004FF746,0x   ; z14: 
+;798: 004FF746,0x   ; z15: 
+;7A0: 004FF746,0x   ; z16: 
+;7A8: 004FF746,0x   ; z17: 
+;7B0: 004FF746,0x   ; z18: 
+;7B8: 004FF746,0x   ; z19: 
+;
+7C0: 004FF746,0xA0F20000   ; z20: Additional PIT address
+7C8: 004FF746,0x00000584   ; z21: Additional PIT start num
+7D0: 004FF746,0x000005E5   ; z22: Additional PIT end num
+;7D8: 004FF746,0x   ; z23: 
+;7E0: 004FF746,0x   ; z24: 
+;7E8: 004FF746,0x   ; z25: 
+;7F0: 004FF746,0x   ; z26: 
+;7F8: 004FF746,0x   ; z27: 
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

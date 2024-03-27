@@ -1,0 +1,15 @@
+;M65v58
+;Изменение цвета прогрессбара
+;Change progressbar color
+;(c) -=(Kad)=-
+;Version: 
+;PatchID: 4163
+;Details: https://patches.kibab.com/patches/details.php5?id=4163
+/*
+
+*/
+0A0FE10: BEE6FA64 5656F814 ; background
+0A0FE14: 1EBEE664 00000034 ; contour
+0A0FE18: 001E8264 FFFFFF24 ; stripe
+;------------------------- end -------------------------
+

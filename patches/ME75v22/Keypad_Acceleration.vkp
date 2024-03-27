@@ -1,0 +1,13 @@
+;ME75v22
+;Ускорение опроса клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 2679
+;Details: https://patches.kibab.com/patches/details.php5?id=2679
+/*
+
+*/
+07AFC9A: 56 20
+;------------------------- end -------------------------
+

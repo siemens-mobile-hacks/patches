@@ -1,0 +1,14 @@
+;M55v11
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) ACiD[mrp]
+;(p) Matr!x
+;Version: 
+;PatchID: 5218
+;Details: https://patches.kibab.com/patches/details.php5?id=5218
+/*
+
+*/
+0EB13E: 3D 0D
+;------------------------- end -------------------------
+

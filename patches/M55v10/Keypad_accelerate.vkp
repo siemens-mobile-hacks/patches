@@ -1,0 +1,13 @@
+;M55v10
+;Ускорение опроса клавиатуры
+;Keypad accelerate
+;(c) !Freeman!
+;Version: 
+;PatchID: 1413
+;Details: https://patches.kibab.com/patches/details.php5?id=1413
+/*
+
+*/
+7CB958: 56 20
+;------------------------- end -------------------------
+

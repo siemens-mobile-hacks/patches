@@ -1,0 +1,14 @@
+;S75v47
+;NativeMenu вместо "Сертификаты"
+;NativeMenu instead of "Sertificates"
+;(c) SiNgle
+;(r) Belarus
+;Version: 
+;PatchID: 5951
+;Details: https://patches.kibab.com/patches/details.php5?id=5951
+/*
+Вешаем на горячую клавишу "Сертификаты" (NAT_SERTIFICATES) и напрямую получаем доступ в NativeMenu
+*/
+041FCF8: 0xA032E9B1 0xA02CDF23 ; вместо "сертификаты"
+;------------------------- end -------------------------
+

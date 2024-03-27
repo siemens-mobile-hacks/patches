@@ -1,0 +1,41 @@
+;SL45iv56
+;Показывать текущее время по нажатию "Зеленой трубки" в MP3 плеере
+;View time by green key on playing MP3
+;(c) cool_lang(my chinese ID)
+;Version: 1.1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1636
+;PatchID: 1641
+;Details: https://patches.kibab.com/patches/details.php5?id=1641
+/*
+Юзаем патчи №183 (patchID 1635) и №188 (patchID 1636)
+
+Показывает текущее время по нажатию "Зеленой трубки" в MP3 
+плеере. Есть маленький баг: время не обновляется, т.е. вы 
+должны нажать "Зеленую трубку" еще раз, чтобы обновить. 
+
+Теперь из-под выводимых часов не виднеется название группы(исполнителя)
+
+Патч №075 и №081 с http://patch.oslik.ru/SL45_RU
+*/
+3BA08E: EA0066A1 FAC7D0DA 
+27DAD0: FFFFFFFFFFFFFFFF 46F605003D04DAC7 
+27DAD8: FFFFFFFFFFFFFFFF E8DAFADBC2A3FADB 
+27DAE0: FFFFFFFFFFFFFFFF 66A1FFFFFFFFFFFF 
+27DAE8: FFFF E6FC 
+27DAEA: FF 45 
+27DAEB: FFFFFFFFFF 00D7500D00 
+27DAF0: FFFFFFFFFFFFFFFF F2F1DE25F2F2DC25 
+27DAF8: FFFFFFFFFFFFFFFF 8820BB05E0AEBB10 
+27DB00: FFFFFFFFFFFFFFFF 9810BB01DB00E0A2 
+27DB08: FFFFFFFFFFFFFFFF F6F10EFE5B22F2F1 
+27DB10: FFFFFFFFFFFFFFFF 0CFE8810F2FE0EFE 
+27DB18: FFFFFFFFFFFFFFFF BB0398E0BB01CB00 
+27DB20: FFFFFFFFFFFFFF 88C006FE0102E0 
+27DB27: FF 2D 
+27DB28: FFFFFFFFFFFFFFFF DAC1EC2298C008C6 
+27DB30: FFFFFFFFFFFFFFFF CB00FFFFFFFFFFFF 
+
+27DAEA: 45 45 ; = left coord of clock - горизонтальная координата 
+27DB27: 2D 0D ;xD, x = top coord of clock - вертикальная координата 
+;------------------------- end -------------------------
+

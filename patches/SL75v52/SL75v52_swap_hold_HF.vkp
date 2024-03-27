@@ -1,0 +1,25 @@
+;SL75v52
+;Поменять местами пункты Громкая связь и Удержание/Назад в меню Опций при установившемся соединении
+;Swap items Handsfree and Hold/Return in Options menu when call established
+;(c) Evgr
+;Version: 
+;PatchID: 10667
+;Details: https://patches.kibab.com/patches/details.php5?id=10667
+/*
+При звонке включать гр.связь очень неудобно. 
+Если поменять местами гр.связь и удержание, было бы неплохо. Два раза нажал на центр, и включилось. Нажал два раза - выключилось.
+*/
+
+0980384: EB698B4200D92B62 004B9847,0xA13D2CA1
+098039C: 0028EEDA002C01D1 004DA847,0xA13D2CC3
+
+#pragma enable old_equal_ff
+13D2CA0: 00B5C046EB698B4208D9012901D00229
+13D2CB0: 03D1062B01D1296200E02B6220BC0435
+13D2CC0: 284700B500280DDA002C08D1012901D0
+13D2CD0: 022900D10621C04620BC0435284720BC
+13D2CE0: 0835284720BC223D2847
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

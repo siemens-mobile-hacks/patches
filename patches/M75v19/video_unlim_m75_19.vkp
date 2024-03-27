@@ -1,0 +1,19 @@
+;M75v19
+;Неограниченная запись видео
+;Video unlimited
+;(c) SiNgle
+;(p) Mikel
+;Version: 1.1
+;PatchID: 2984
+;Details: https://patches.kibab.com/patches/details.php5?id=2984
+/*
+
+*/
+;m75 sw19
+;/Неограниченная запись видео v1.1/© SiNgle/§ TAPAKAH to m75 Mikel
+2D96B3: 00 FF
+34EF64: 3300000A 920052E3
+3CF03D: 640000 303364
+130EAD: 13770DB8770D0D7528770DB8770D0DE335AE92 13F6b8770D0D7528F6b8770D0DE335AE920B0B
+;------------------------- end -------------------------
+

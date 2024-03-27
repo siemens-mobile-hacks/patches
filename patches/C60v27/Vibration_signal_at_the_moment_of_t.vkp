@@ -1,0 +1,20 @@
+;C60v27
+;Вибросигнал в момент соединения
+;Vibration signal at the moment of the connection
+;(c) Matr!x
+;(p) Snowm@n
+;Version: 1.4
+;PatchID: 4353
+;Details: https://patches.kibab.com/patches/details.php5?id=4353
+/*
+
+*/
+21b766: DA4142CE DA839040 
+634090: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA8fa6c5E6FC2F00DA85a4f3E6FCC240 
+6340A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FD830088D088C0E00E88E0E6FCF403 
+6340B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E00DE6FE3600E00FDA8f4edf0806FA8F 
+6340C0: FFFFFFFFFFFFFFFFFFFFFFFF B0C5E6FC0000DA85a4f3DB00 
+;6340B4: 36 XX ; Время работы вибры, 1B = 1/8 секунды, 36 = 1/4 секунды, C6 = 1/2 секунды, D8 = 1 секунда 
+;634096: 2F XX ; Звук вместо вибры (из списка звуков) 
+;------------------------- end -------------------------
+

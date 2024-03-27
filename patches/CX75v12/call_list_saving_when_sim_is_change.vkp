@@ -1,0 +1,15 @@
+;CX75v12
+;Сохранение списка вызовов при смене SIM-карты
+;Call list saving when SIM is changed
+;(c) SiNgle
+;(p) BuG
+;Version: 1.0
+;PatchID: 530
+;Details: https://patches.kibab.com/patches/details.php5?id=530
+/*
+Сохранение списков вызовов при смене SIM-карты.
+*/
+02A73F6: F5F196E8 00200020
+
+;------------------------- end -------------------------
+

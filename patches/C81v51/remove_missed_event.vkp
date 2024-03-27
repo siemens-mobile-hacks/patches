@@ -1,0 +1,18 @@
+;C81v51
+;Убрать иконку пропущенных событий
+;remove missed event softkey image
+;(c) dimonp25
+;(p) dimonp25
+;Version: 
+;PatchID: 8176
+;Details: https://patches.kibab.com/patches/details.php5?id=8176
+/*
+Другой вариант этого патчига,старый вроде не работал.Этот должен вообще убирать иконку.Тестируйте
+*/
+;C81v51
+
+0302BAD: D0 E0 ; remove missed event softkey image
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

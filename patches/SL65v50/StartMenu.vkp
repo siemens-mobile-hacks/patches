@@ -1,0 +1,33 @@
+;SL65v50
+;Меню "Пуск" на главном экране
+;StartMenu on MainScreen
+;(c) KreN
+;(r) 1nvisible, benj9
+;(p) Mifodiy
+;Version: _2.1
+;PatchID: 6275
+;Details: https://patches.kibab.com/patches/details.php5?id=6275
+/*
+Этот патч является врезкой для патча 3088
+*/
+;SL65V50
+;Меню "Пуск" на главном экране
+;StartMenu on MainScreen
+;(c) KreN
+;(r) 1nvisible, benj9
+;(p) Mifodiy
+;Version: 2.1
+;PatchID: 3101
+;Details: http://patches.kibab.com/patches/details.php5?id=3101
+
+;09222AC: "ELSE_COUNT_DOWN",00,63358EA0 "ELSE_COUNT_DOWN",00,0xA0FCC0E3 
+;09225EC: "ELSE_REMOTESYNC",00,9B358EA0 "ELSE_REMOTESYNC",00,0xA0FCC0E3
+0922584: "ELSE_PUSHTOTALK",00,653F8EA0 "ELSE_PUSHTOTALK",00,0xA0FCC0E3
+;092278C: "ELSE_VIDEO_RECO",00,FF3E8EA0 "ELSE_VIDEO_RECO",00,0xA0FCC0E3
+
+
+1648BDA: 00286CD0F8F7BDFE0028 C04600498847,0xA0FCC051 ;SL65V50
+
+;------------------------- end ---------------------
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;EL71v45
+;Увеличение размера Аудиобуффера
+;Audio-Buffer Increasing
+;(c) 1nvisible
+;(p) NForce
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9660
+;PatchID: 7399
+;Details: https://patches.kibab.com/patches/details.php5?id=7399
+/*
+
+*/
+;Press 5 to increase to 200 Kb
+;Press 4 to decrease number of buffers
+;Press 6 to increase number of buffers
+
+0CE157C: 05 14
+0CE1574: 0410A0E3 120000EA
+0CE1584: 0610A0E3 070000EA
+;------------------------- end -------------------------
+

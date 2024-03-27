@@ -1,0 +1,17 @@
+;M55v91
+;Включение инженерного меню
+;Enable developer menu
+;(c) avkiev
+;Version: 
+;PatchID: 891
+;Details: https://patches.kibab.com/patches/details.php5?id=891
+/*
+Необходимо отключить в конфигурации инженерного меню опцию (S)Exit
+
+EN:
+
+Switch off (S)Exit option!
+*/
+80177A: 2D 0D
+;------------------------- end -------------------------
+

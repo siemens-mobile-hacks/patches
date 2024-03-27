@@ -1,0 +1,18 @@
+;SL45iv56
+;Не включать подсветку после разбокирования клавиатуры
+;Do not use illumination after keylock
+;(c) RizaPN
+;Version: 2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1678
+;PatchID: 1617
+;Details: https://patches.kibab.com/patches/details.php5?id=1617
+/*
+Патч отключает автоматическое включение подсветки после разбокирования клавиатуры.
+
+Release: May 26, 2003
+
+Патч №054 с http://patch.oslik.ru/SL45_RU
+*/
+21FBC8: DAC15AFB9A0402D0 DADE101748402D02
+;------------------------- end -------------------------
+

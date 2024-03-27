@@ -1,0 +1,15 @@
+;C81v51
+;Показывать только последние 2 цифры года
+;Show only last 2 digits of year
+;(c) ?
+;(p) Виктор89
+;Version: 
+;PatchID: 9102
+;Details: https://patches.kibab.com/patches/details.php5?id=9102
+/*
+Вместо допустим 2008 будет отображаться 08
+*/
+029D1BC: 1F 17
+029D1C0: 0F 07
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;S75v47
+;Отключение картинок на пропущенные события
+;Disable icons of missed events
+;(c) dimonp25
+;Version: 
+;PatchID: 8180
+;Details: https://patches.kibab.com/patches/details.php5?id=8180
+/*
+
+*/
+0301CA5: D0 E0
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;ME75v22
+;Чёрно-белый режим камеры
+;camera black and white mode
+;(c) SiNgle
+;Version: 
+;PatchID: 5037
+;Details: https://patches.kibab.com/patches/details.php5?id=5037
+/*
+
+*/
+0C5EADF: 3F163F 801680
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;CX70v50
+;Отключить Сообщение "Список Пуст!"
+;Disable "List Empty!" Message
+;(c) 1nvisible
+;(r) kirik64
+;(p) Smelter
+;Version: 
+;PatchID: 1436
+;Details: https://patches.kibab.com/patches/details.php5?id=1436
+/*
+Отключает сообщение "Список Пуст!" в списках набранных/принятых/пропущенных звонков.
+*/
+0ACBF5A: 9F49 03E0
+;------------------------- end -------------------------
+

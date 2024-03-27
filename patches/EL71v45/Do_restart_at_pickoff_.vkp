@@ -1,0 +1,22 @@
+;EL71v45
+;Перезагрузка при пикоффе 
+;Do restart at pickoff 
+;(c) Evgr, Feyman
+;(r) Dimadze, Маришка
+;(p) Виктор89
+;Version: 
+;PatchID: 10169
+;Details: https://patches.kibab.com/patches/details.php5?id=10169
+/*
+В Меню разработчика/Exits появится пункт Restart
+Exit RAM Dump должен быть выключен
+*/
++6248
+055A9E8: 1D 16 
+055A9EB: 1A EA 
+055AA5B: 0A EA
+05564D4: 00 01 ; RestartEnable 
+0556518: 00 01 ; Exit_RAM_Dump_Enable 
++0
+;------------------------- end -------------------------
+

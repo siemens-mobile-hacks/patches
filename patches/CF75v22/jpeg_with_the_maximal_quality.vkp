@@ -1,0 +1,17 @@
+;CF75v22
+;Сжатие jpeg с максимальным кач-вом (100% вместо 75%)
+;Compression jpeg with the maximal quality (100 % instead of 75 %)
+;(c) SiNgle
+;(r) AsteriX
+;Version: 
+;PatchID: 3002
+;Details: https://patches.kibab.com/patches/details.php5?id=3002
+/*
+
+*/
+;* Сжатие jpeg с максимальным кач-вом (100% вместо 75%) * © SiNgle, § Smelter, ® AsteriX
+03D92B8: 4B 64
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

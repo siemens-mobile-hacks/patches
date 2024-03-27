@@ -1,0 +1,53 @@
+;X65v100
+;DSE Mobile Edition
+;DSE Mobile Edition
+;(c) 1nvisible
+;(r) ACiD[mrp], KreN, ~Jhellico
+;Version: 2
+;PatchID: 5669
+;Details: https://patches.kibab.com/patches/details.php5?id=5669
+/*
+English:Allows keys to be rebound from the mobile phone.
+If you want the standart function to be used - put "STDF" as a string.
+v2: for MP v14
+*/
++FC0000
+#pragma enable old_equal_ff
+9000: 2C3A381CA16BFFB51E48C4DF019908D0
+9010: 0FA6002533889A4207D002360135172D
+9020: F8D1FFBC86DF06F004E82D0140190430
+9030: 0468064BA342F4D00026F64301273CC8
+9040: FCC1002001B0FEBC05F0F2EF53544446
+9050: 000016002C00420058006E0084009A00
+9060: B000C600260234014A01DC0008013C02
+9070: 60018C017601A2015202C002AA02
+9080: 0xB1C2D3E4,0x00001E03,0000000000000000,"\
+{p DSE id=1E03 cp=1nvisible ver=2.0}","\
+{of +4}","\
+{0 s `Digit 2` ml=15 v=`STDF`}","\
+{16 s `Digit 3` ml=15 v=`STDF`}","\
+{32 s `Digit 4` ml=15 v=`STDF`}","\
+{48 s `Digit 5` ml=15 v=`STDF`}","\
+{64 s `Digit 6` ml=15 v=`STDF`}","\
+{80 s `Digit 7` ml=15 v=`STDF`}","\
+{96 s `Digit 8` ml=15 v=`STDF`}","\
+{112 s `Digit 9` ml=15 v=`STDF`}","\
+{128 s `Left SK` ml=15 v=`FLSH_FLEXPLORER`}","\
+{144 s `Right SK` ml=15 v=`ELSE_STR_MYMENU`}","\
+{160 s `Middle SK` ml=15 v=`CKLK_CK_MAINMNU`}","\
+{176 s `Joy Left` ml=15 v=`XTRA_NO_APPLICA`}","\
+{192 s `Joy Right` ml=15 v=`ELSE_DEVELP_MNU`}","\
+{208 s `Joy Up` ml=15 v=`RECD_DURCHARGES`}","\
+{224 s `Joy Down` ml=15 v=`CNCT_DEFAU_BOOK`}","\
+{240 s `Joy Hold` ml=15 v=`STUP_SILENTALER`}","\
+{256 s `Volume +` ml=15 v=`ORGZ_CALENDERMV`}","\
+{272 s `Volume -` ml=15 v=`ELSE_DICTA_SAVE`}","\
+{288 s `Volume + Hold` ml=15 v=`ELSE_CALCULATOR`}","\
+{304 s `Volume - Hold` ml=15 v=`ELSE_ALARMCLOCK`}","\
+{320 s `Provider Key` ml=15 v=`STDF`}","\
+{336 s `Provider Key Hold` ml=15 v=`STDF`}","\
+{352 s `Qwerty Open` ml=15 v=`STDF`}",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;CX75v25
+;Включение Инженерного меню
+;Enable Developer Menu
+;(c) Phantom
+;Version: 
+;PatchID: 3506
+;Details: https://patches.kibab.com/patches/details.php5?id=3506
+/*
+
+*/
+0832A5C: 040090E5 0000A0E3
+
+;------------------------- end -------------------------
+

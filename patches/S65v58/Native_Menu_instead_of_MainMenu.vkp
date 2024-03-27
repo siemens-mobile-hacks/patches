@@ -1,0 +1,18 @@
+;S65v58
+;Native Menu вместо главного меню
+;Native Menu instead of MainMenu
+;(c) SiNgle
+;(p) Виктор89
+;Version: 2.1
+;PatchID: 9006
+;Details: https://patches.kibab.com/patches/details.php5?id=9006
+/*
+-запуск при свернутой яве
+*/
+0092E578: 0xA08DA5D1 0xA08DF43B ; CKLK_CK_MAIN_MNU: центр джойстика
+0092EB90: 0xA08DA5D1 0xA08DF43B ; ELSE_MMENU_OPEN: для DSE
+
+08C28BC: 434B4C4B5F434B5F4D41494E4D4E55 434E43545F425553494E4553534344
+08C28CC: 454C53455F4D4D454E555F4F50454E 434E43545F425553494E4553534344
+;------------------------- end -------------------------
+

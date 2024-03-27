@@ -1,0 +1,17 @@
+;S55v20
+;Включение инженерного меню
+;Enable developer menu
+;(c) avkiev
+;Version: 
+;PatchID: 4768
+;Details: https://patches.kibab.com/patches/details.php5?id=4768
+/*
+Необходимо отключить в конфигурации инженерного меню опцию (S)Exit
+
+English:
+
+Switch off (S)Exit option!
+*/
+61FC62: 2D 0D
+;------------------------- end -------------------------
+

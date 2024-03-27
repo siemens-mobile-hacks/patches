@@ -1,0 +1,30 @@
+;S75v32
+;Скрин-шутер
+;Screen-shooter
+;(c) avkiev
+;(p) GrosserS
+;Version: 
+;PatchID: 5703
+;Details: https://patches.kibab.com/patches/details.php5?id=5703
+/*
+Создайте папку 0:\Misc\Shots
+Установите с помощью FakEditor или ShotKeyEd на любую кнопку функцию, 
+выбранную вами: "Идентификация телефона"(DEFAULT), "Фонарик" или "Крупный шрифт".
+Установите патч
+Нажали кнопку - получили скриншот
+
+English:Create folder 0:\Misc\Shots
+Set by help FakEditor or ShotKeyEd on some button function "PHONE_IDENTITY"
+Apply patch
+Press button - screenshot appears
+
+FakEditor: http://patches.kibab.com/utils/fakeditor.rar
+ShotKeyEd: http://s75.siemens-club.org/files/soft/shotkeyed.rar
+*/
+;Run ScreenShooter instead of:
+
+04339DC: 0xA0377FDB 0xA0067301   ; S75v32 - PHONE_IDENTITY
+;0433C5C: 0xA0378403 0xA0067301   ; S75v32 - POCKET_LAMP
+;042E9DC: 0xA0377BF3 0xA0067301   ; S75v32 - BIG_LETTERS
+;------------------------- end -------------------------
+

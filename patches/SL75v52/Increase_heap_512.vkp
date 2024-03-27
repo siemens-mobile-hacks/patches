@@ -1,0 +1,16 @@
+;SL75v52
+;Увеличить хип на 512кБ
+;Increase heap 512kB
+;(c) Feyman
+;(r) DebriZ
+;(p) Виктор89
+;Version: 
+;PatchID: 10055
+;Details: https://patches.kibab.com/patches/details.php5?id=10055
+/*
+Увеличивает доступную системную память на 512 килобайт
+*/
+0421DDA: C8 D0
+0270B1C: C8 D0
+;------------------------- end -------------------------
+

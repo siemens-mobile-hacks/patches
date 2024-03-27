@@ -1,0 +1,17 @@
+;CX70v56
+;Вызов Различных Функций при Залоченной Клавиатуре-MP
+;Running Some Functions While Keyboard is Locked-MP
+;(c) 1nvisible
+;(r) Bennie, avkiev, AsteriX, KiRiK, SiNgle
+;(p) Lost
+;Version: 10.5
+;PatchID: 2387
+;Details: https://patches.kibab.com/patches/details.php5?id=2387
+/*
+
+*/
+171C46C: F8F7F4FD 1FF000FF
+171F98A: 0223E05E 1CF073FC
+173C270: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 014B1847014B1847A120FCA0C120FCA0
+;------------------------- end -------------------------
+

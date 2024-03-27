@@ -1,0 +1,58 @@
+;SL45iv56
+;DVM. Разные режимы вибры
+;DVM. Different Vibra Modes
+;(c) abomin, Chaos
+;(r) NeoSpb
+;Version: 
+;PatchID: 3632
+;Details: https://patches.kibab.com/patches/details.php5?id=3632
+/*
+Патч позволяет назначить любому абоненту из адресной один из 8 
+типов динамической вибрации. Для этого в поле "Почтов. индекс" 
+надо записать букву V и цифру от 1 до 8 на 1-м и 2-м либо (для 
+совместимости с патчем индивидуальных мелодий) на 
+3-м и 4-м знакоместах. Напр.: V1, К3V5, и т.п. 
+
+
+English:
+This patch allows to assign 8 different vibra modes to any address book contact.
+Just write letter "V" and digit from 1 to 8 in 1st & 2nd or 3rd & 4th places 
+in the postcode field. For ex.: V1, K3V5 etc.
+
+
+Release: 06.06.2006
+*/
+0x4647CE: F042F053 FAE000D9 
+#pragma enable old_equal_ff 
+
+0x40D900: 2A2A2A2A2044564D207631202A2A2A2A 
+0x40D910: CC00CC0046F72F003D1AD7500C00F2F5 
+0x40D920: 6C32F2F4942E2D1347FA56002D07D740 
+0x40D930: 0C00F2F56E3247FA56003D09F1AB2851 
+0x40D940: 6857E6F25619E6F383035C350025F042 
+0x40D950: F053FAE6D2472F000000961983032F00 
+0x40D960: 0000A21983032F000000AE1983032F00 
+0x40D970: 0000BA1983032F000000C61983032F00 
+0x40D980: 0000D21983032F000000DE1983032F00 
+0x40D990: 0000EA1983030200F401FFFFF401FCFF 
+0x40D9A0: 00000200EE02FFFFFA00FCFF00000200 
+0x40D9B0: 4B00FFFF3200FCFF00000200C800FFFF 
+0x40D9C0: 6400FCFF00000200EE02FFFFF401FCFF 
+0x40D9D0: 000002006400FFFF0A00FCFF00000200 
+0x40D9E0: 6400FFFF4E00FCFF000002006400FFFF 
+0x40D9F0: 640002006400FFFF640002006400FFFF 
+0x40DA00: F4010200F401FFFFF401FCFF0000 
+;
+;Russian: 
+;Можете изменить "ноты" 8-й вибры на свои: 
+;0x40D9EA: 02006400FFFF640002006400FFFF640002006400FFFFF4010200F401FFFFF401FCFF0000 
+;где 0200-вкл. мотор, 6400-на сколько миллисекунд, FFFF-отключить мотор, 6400-пауза 
+;выкл. состояния, дальше идут ещё ноты, и всё это должно заканчиваться FCFF0000.
+;
+;English
+;You can change the 8th type of vibra for your own:
+;0x40D9EA: 02006400FFFF640002006400FFFF640002006400FFFFF40102 00F401FFFFF401FCFF0000
+;here 0200-motor on, 6400-duration, FFFF-motor off, 6400-duration of the pause,
+; ...other "notes"... and FCFF0000 is necessery in the end.
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;M75v25
+;Не выключаться при разряженном аккуме
+;Don't Turn Off When Battery Is Low
+;(c) benj9
+;(r) ThE TrIFoN
+;(p) s_chechel
+;Version: 2-MP
+;PatchID: 4680
+;Details: https://patches.kibab.com/patches/details.php5?id=4680
+/*
+Не используйте слишком часто, это может повредить ваш аккумулятор!
+Don't use it too often. It can damage your battery!
+
+*/
+08C5914: 18009FE50C0090E5734E07EA 00009FE510FF2FE101DFFDA0
+;------------------------- end -------------------------
+

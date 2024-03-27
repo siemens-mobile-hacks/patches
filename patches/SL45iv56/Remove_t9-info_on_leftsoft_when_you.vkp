@@ -1,0 +1,18 @@
+;SL45iv56
+;Убрать Т9-инфо с левого софта в самом начале набора SMS
+;Remove t9-info on leftsoft when you've just started SMS typing
+;(c) Froster
+;(r) Charger
+;Version: 
+;PatchID: 2042
+;Details: https://patches.kibab.com/patches/details.php5?id=2042
+/*
+Удаление t9-инфо на левой софт, когда Вы только начали писать.
+
+
+Date: 14.03.2005
+*/
+3a7c30: DAEC50FB CC00CC00 
+18cf82: 8302 FFFF
+;------------------------- end -------------------------
+

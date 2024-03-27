@@ -1,0 +1,17 @@
+;X75v100
+;Диспатчер иконбара
+;IconBar dispatcher
+;(c) Miha_r
+;Version: 1.0
+;PatchID: 8854
+;Details: https://patches.kibab.com/patches/details.php5?id=8854
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=IconBar_dispatcher.rar
+
+/*
+Эльф - диспатчер) Id 0x0400XXZZ
+необходим для отрисовки иконок в иконбар дис патчами.
+Передает дисам один параметр в r1 если кому надо все вопросы мне
+*/
+;
+;------------------------- end -------------------------
+

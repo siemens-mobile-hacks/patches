@@ -1,0 +1,20 @@
+;M75v12
+;Размер шрифта и позиция flash-SMS
+;Flash-SMS position and font size
+;(c) [crazy]misha
+;(p) Gurza
+;Version: 1.0
+;PatchID: 592
+;Details: https://patches.kibab.com/patches/details.php5?id=592
+/*
+Изменение параметров вывода на экран flash-sms.
+*/
+04A9D68: 72 90
+04A9DA8: 72 90
+;изменить шрифт Flash-SMS — 02-08 (Change Flash-SMS font)
+04A9D5C: 07 08
+04A9D6C: 07 08
+04A9D9C: 07 08
+04A9DAC: 07 08
+;------------------------- end -------------------------
+

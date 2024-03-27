@@ -1,0 +1,15 @@
+;S75v47
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle
+;(p) Виктор89
+;Version: 3
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=10198
+;PatchID: 8913
+;Details: https://patches.kibab.com/patches/details.php5?id=8913
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+2FD3B8: 9EF77CF8 EEF0D4E8
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;S75v52
+;Отключить Logal логгинг
+;Disable Logal logging
+;(c) benj9
+;(p) SimaFish
+;Version: 2
+;PatchID: 8784
+;Details: https://patches.kibab.com/patches/details.php5?id=8784
+/*
+Интегрировано отключение UNK логгинга. У кого уже установлен аналогичный патч - комментируем строчку project(to unk loging).
+*/
+08E940A: 10B5 7047 ; file
+09FC5AC: 0F002DE9 1EFF2FE1 ; project(to unk loging)
+0FB888C: B0B5 7047 ;to v.1
+;------------------------- end -------------------------
+

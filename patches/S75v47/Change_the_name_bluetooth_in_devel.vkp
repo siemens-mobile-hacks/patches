@@ -1,0 +1,15 @@
+;S75v47
+;Изменение названия bluetooth в разработчике
+;Change the name bluetooth in developer
+;(c) KIBER-DEMON
+;(r) SimaFish
+;Version: 
+;PatchID: 8110
+;Details: https://patches.kibab.com/patches/details.php5?id=8110
+/*
+
+*/
+0A7403C: 53657420746F20322E3536 "Speed 1000 "
+0A7404C: 53657420746F20312E3238 "Speed  800 "
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;CX75v25
+;Увеличение ОЗУ до 16МБ. ВНИМАНИЕ! Только для телефонов с флэш Intel!
+;Increase RAM to 16MB. WARNING! For phones with Intel's flash only!
+;(c) DebriZ
+;(r) Feyman
+;Version: 1
+;PatchID: 9645
+;Details: https://patches.kibab.com/patches/details.php5?id=9645
+/*
+Разблокирован доступ к 8МБ ОЗУ в чипе памяти Intel.
+Хип увеличен до 8МБ, остальные 8МБ отданы системе.
+*/
+97A528: 000000A8 000080A8 
+97A52C: 20A14700 00008000 
+A814CC: 00100000 00108000
+A814D4: C0000000 F0000000
+
+;------------------------- end -------------------------
+

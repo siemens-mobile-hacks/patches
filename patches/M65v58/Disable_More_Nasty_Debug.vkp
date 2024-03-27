@@ -1,0 +1,13 @@
+;M65v58
+;Disable More Nasty Debug
+;Disable More Nasty Debug
+;(c) benj9
+;Version: 
+;PatchID: 4155
+;Details: https://patches.kibab.com/patches/details.php5?id=4155
+/*
+
+*/
+0A20BD0: FFB5 7047
+;------------------------- end -------------------------
+

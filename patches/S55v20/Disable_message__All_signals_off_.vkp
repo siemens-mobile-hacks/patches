@@ -1,0 +1,15 @@
+;S55v20
+;Отключить сообщение "Все сигналы включены"
+;Disable message "All signals off"
+;(c) SiNgle
+;(p) Girosavo
+;Version: 
+;PatchID: 4893
+;Details: https://patches.kibab.com/patches/details.php5?id=4893
+/*
+
+*/
+321F1C: DA731E84 CC00CC00
+321F32: DA731E84 CC00CC00
+;------------------------- end -------------------------
+

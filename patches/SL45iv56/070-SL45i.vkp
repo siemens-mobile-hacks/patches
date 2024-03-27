@@ -1,0 +1,15 @@
+;SL45iv56
+;Отображать календарь в меню во время звонка
+;Unhide Calendar Menu while Call in progress
+;(c) RizaPN
+;Version: 
+;PatchID: 1633
+;Details: https://patches.kibab.com/patches/details.php5?id=1633
+/*
+Входить через Call Menu - Main Menu - Organiser ...
+
+Патч №070 с http://patch.oslik.ru/SL45_RU
+*/
+1A0814: 1E 1C
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;M75v25
+;Включение Инженерного меню
+;Enable Developer Menu
+;(c) Phantom
+;Version: 
+;PatchID: 4111
+;Details: https://patches.kibab.com/patches/details.php5?id=4111
+/*
+
+*/
+083193C: 040090E5 0000A0E3
+;------------------------- end -------------------------
+

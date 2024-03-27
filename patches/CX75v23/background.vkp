@@ -1,0 +1,15 @@
+;CX75v23
+;Убрать сетку с бэкграунда при прорисовке окошек
+;Remove background netting while showing MsgBoxes
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1810
+;Details: https://patches.kibab.com/patches/details.php5?id=1810
+/*
+
+*/
+07F6288: 55 00
+;------------------------- end -------------------------
+

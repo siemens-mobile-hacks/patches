@@ -1,0 +1,15 @@
+;SL75v47
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) 1nvisible
+;(r) funMarkus
+;(p) bertgrin
+;Version: 
+;PatchID: 9487
+;Details: https://patches.kibab.com/patches/details.php5?id=9487
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+2FB162: A0F7AFF9 EEF0D4E8
+;------------------------- end -------------------------
+

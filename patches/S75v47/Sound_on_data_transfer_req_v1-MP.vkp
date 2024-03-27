@@ -1,0 +1,15 @@
+;S75v47
+;Звук при запросе на передачу данных
+;Sound on data transfer request
+;(c) -=(Kad)=-
+;Version: 1-MP
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7753
+;PatchID: 7627
+;Details: https://patches.kibab.com/patches/details.php5?id=7627
+/*
+Воспроизводит звук при запросе на передачу данных
+*/
+0596F5C: 0523252000923B49 004B984701E806A0
+
+;------------------------- end -------------------------
+

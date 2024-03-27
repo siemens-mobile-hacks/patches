@@ -1,0 +1,15 @@
+;CX75v5
+;Изменение_разделителя_в_меню
+;Change_delimiter_in_menu
+;(c) *S*h*a*D*o*W*
+;(r) ILL!, AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 456
+;Details: https://patches.kibab.com/patches/details.php5?id=456
+/*
+Изменение вида разделителя меню.
+*/
+1180D7C: 55555555555555555555555F FFFFFFFFFFFFFFFFFFFFFFFF
+;------------------------- end -------------------------
+

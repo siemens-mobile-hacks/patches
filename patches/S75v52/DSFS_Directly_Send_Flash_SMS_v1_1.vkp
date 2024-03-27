@@ -1,0 +1,19 @@
+;S75v52
+;Отправка Flash SMS v1.1
+;DSFS Directly Send Flash SMS v1.1
+;(c) Bennie
+;(p) den11111
+;Version: 
+;PatchID: 8295
+;Details: https://patches.kibab.com/patches/details.php5?id=8295
+/*
+Начните текст сообщения с пробела
+*/
+0E3A834: 201CB168 63F67CFF
+#pragma enable old_equal_ff
+0C9E730: 201CB8380178082906D000290CD1417B
+0C9E740: 7F221140F02204E0437B817B1B02C918
+0C9E750: 1822202900D10270201CB1687047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

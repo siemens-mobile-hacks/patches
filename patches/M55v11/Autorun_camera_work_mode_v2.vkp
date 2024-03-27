@@ -1,0 +1,19 @@
+;M55v11
+;Автозапуск режима работы с камерой
+;Autorun camera work mode
+;(c) ValeraVi
+;(r) AlexSid
+;(p) Creat0r, AsteriX, AlexSid
+;Version: 2
+;PatchID: 1844
+;Details: https://patches.kibab.com/patches/details.php5?id=1844
+/*
+
+*/
+0DD534: E00CE00D DA9F0004
+7F0400: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA2EBAFFE600030048413D0EF3F83000
+7F0410: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3D0DF78F3000DA98AA8FDA2D2A6CDAA0
+7F0420: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 36D2DA257E9C0D02F78E3000E00CE00D
+7F0430: FFFF DB00
+;------------------------- end -------------------------
+

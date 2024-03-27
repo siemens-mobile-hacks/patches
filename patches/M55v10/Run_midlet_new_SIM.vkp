@@ -1,0 +1,20 @@
+;M55v10
+;Запуск мидлета при вставке новой SIM-карты
+;Run midlet when insert new SIM
+;(c) SiNgle
+;Version: 
+;PatchID: 1564
+;Details: https://patches.kibab.com/patches/details.php5?id=1564
+/*
+Запуск происходит при выборе "Справ. по умолч."
+Программа должна иметь путь и имя: A:\Java\Jam\Prog\Prog.jar
+
+*/
+0D7994: 98809890 FA9F2006
+4F0F3C: DAB718F8 FA6F580F
+7F05F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FCFE05E6FD7C02E01EFA9178EA
+7F05FE: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 413A5C4A6176615C6A616D5C50726F67
+7F060E: FFFFFFFFFFFFFFFFFFFF 5C50726F672E6A617200
+7F0620: FFFFFFFFFFFFFFFFFFFF DA9FF00598809890DB00
+;------------------------- end -------------------------
+

@@ -1,0 +1,59 @@
+;EL71v45
+;Изменить позицию и шрифт имени провайдера в заставке
+;Change position and font of providername in ScreenSaver
+;(c) arsh0r
+;(r) SiNgle
+;Version: 2
+;PatchID: 9202
+;Details: https://patches.kibab.com/patches/details.php5?id=9202
+/*
+
+*/
+
+;Without missed events:
+;Analog Clock
+0878508: 00 xx ; x-start
+087850A: 2301 yyyy ; y-start
+087850C: F0 xx ; x-stop
+087850E: 3F01 yyyy ; y-stop
+0878510: 05 ff ; font size
+
+;Digital Clock
+0878524: 00 xx ; x-start
+0878526: 2301 yyyy ; Y-start
+0878528: F0 xx ;x-stop
+087852A: 3F01 yy ; y-stop
+087852C: 05 ff ; font size
+
+;Picture
+0878540: 00 xx ; x-start
+0878542: 2301 yyyy ; y-start
+0878544: F0 xx ; x-stop
+0878546: 3F01 yyyy ; y-stop
+0878548: 05 ff ; font size
+
+
+;With missed events:
+;Analog Clock
+087855C: 10 xx ; x-start
+087855E: 2301 yyyy ; y-start
+0878560: F0 xx ; x-stop
+0878562: 3F01 yyyy ; y-stop
+0878564: 05 ff ; font size
+
+;Digital Clock
+0878578: 10 xx ; x-start
+087857A: 2301 yyyy ; Y-start
+087857C: F0 xx ;x-stop
+087857E: 3F01 yy ; y-stop
+0878580: 05 ff ; font size
+
+;Picture
+0878594: 10 xx ; x-start
+0878596: 2301 yyyy ; y-start
+0878598: F0 xx ; x-stop
+087859A: 3F01 yyyy ; y-stop
+087859C: 05 ff ; font size
+
+;------------------------- end -------------------------
+

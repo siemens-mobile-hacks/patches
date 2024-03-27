@@ -1,0 +1,14 @@
+;EL71v45
+;Add MFI format
+;Add MFI format
+;(c) GrosserS
+;(p) -=PaScaL=-
+;Version: 
+;PatchID: 7164
+;Details: https://patches.kibab.com/patches/details.php5?id=7164
+/*
+
+*/
+855C67: 6C64 6669
+;------------------------- end -------------------------
+

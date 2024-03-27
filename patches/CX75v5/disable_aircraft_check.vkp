@@ -1,0 +1,15 @@
+;CX75v5
+;Убрать_подтверждение_самолёта
+;Disable_aircraft_check
+;(c) Bennie
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 432
+;Details: https://patches.kibab.com/patches/details.php5?id=432
+/*
+Убирает навязчивое подтверждение включения телефона при использовании сим-карты с отключенной проверкой ПИН-кода.
+*/
+02C5E8B: D1 E0
+;------------------------- end -------------------------
+

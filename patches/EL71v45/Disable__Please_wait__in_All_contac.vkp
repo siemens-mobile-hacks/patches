@@ -1,0 +1,14 @@
+;EL71v45
+;Отключить "Подождите" в Все контакты-Нов.запись
+;Disable "Please wait" in All contacts-New enry
+;(c) Evgr
+;(p) den11111
+;Version: 
+;PatchID: 8086
+;Details: https://patches.kibab.com/patches/details.php5?id=8086
+/*
+
+*/
+0771FEC: 8DF022E9 C046C046
+;------------------------- end -------------------------
+

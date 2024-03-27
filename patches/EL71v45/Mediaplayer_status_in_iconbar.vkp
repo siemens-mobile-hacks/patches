@@ -1,0 +1,14 @@
+;EL71v45
+;Статус медиаплеера на панели иконок
+;Mediaplayer status in iconbar
+;(c) BuG
+;Version: 
+;PatchID: 7573
+;Details: https://patches.kibab.com/patches/details.php5?id=7573
+/*
++Картинки прикрепил телу патча
+*/
+05C26C2: 544805A97538FFF79EFE C046,00488047,0xA007B719
+07B4654: 00308DE50150A0E10040A0E1 00509FE535FF2FE1,0xA007B731
+;------------------------- end -------------------------
+

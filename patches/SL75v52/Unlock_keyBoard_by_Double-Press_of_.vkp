@@ -1,0 +1,14 @@
+;SL75v52
+;Разблокировать клавиатуру двойным нажатием #
+;Unlock keyBoard by Double-Press of #
+;(c) 1nvisible
+;(p) kiREALlov
+;Version: 
+;PatchID: 8118
+;Details: https://patches.kibab.com/patches/details.php5?id=8118
+/*
+
+*/
+034286E: 96 94
+;------------------------- end -------------------------
+

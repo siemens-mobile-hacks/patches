@@ -1,0 +1,19 @@
+;SL45iv56
+;Заменяет ярлык "Голосовой набор" на ярлык "Переключение Подсветки"
+;Overwrite VoiceDialling shortcut with Illumination Toggle
+;(c) RizaPN
+;Version: 
+;PatchID: 1511
+;Details: https://patches.kibab.com/patches/details.php5?id=1511
+/*
+Дает возможность быстрого отключения/включения подсветки (пункт меню вместо "Голосовой набор"). 
+Используйте "Левый +" для доступа к голосовому набору.
+
+Патч №005 с http://patch.oslik.ru/SL45_RU
+*/
+18E3A0: 4E02 8200 
+18E3D4: 4F02 8200 
+18E4A6: 4E024E02 82008200 
+3AE3B2: DAE6F8A9 DADC8046
+;------------------------- end -------------------------
+

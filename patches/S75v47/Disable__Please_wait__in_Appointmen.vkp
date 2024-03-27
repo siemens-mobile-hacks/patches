@@ -1,0 +1,14 @@
+;S75v47
+;Отключить_Подождите_в_Напоминания->Задачи->Нов.запись
+;Disable "Please wait" in Appointments/Tasks-New enry
+;(c) Evgr
+;(p) Diman3452
+;Version: 
+;PatchID: 8944
+;Details: https://patches.kibab.com/patches/details.php5?id=8944
+/*
+
+*/
+0585FFE: D7F04AED C046C046
+;------------------------- end -------------------------
+

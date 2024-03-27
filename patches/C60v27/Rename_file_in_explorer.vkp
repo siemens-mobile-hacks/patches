@@ -1,0 +1,15 @@
+;C60v27
+;Отключение_запрета_редактирования_расширения_в_Explorer
+;Rename file in explorer
+;(c) Sinclair
+;(p) dimon_quaker
+;Version: 
+;PatchID: 2053
+;Details: https://patches.kibab.com/patches/details.php5?id=2053
+/*
+Отключение_запрета_редактирования_расширения_в_Explorer
+*/
+32FBAE: DACE96A9 50445055
+
+;------------------------- end -------------------------
+

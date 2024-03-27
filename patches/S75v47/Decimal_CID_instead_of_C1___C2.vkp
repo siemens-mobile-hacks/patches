@@ -1,0 +1,20 @@
+;S75v47
+;Десятичный CID вместо C1 и C2 в списке соседних сот
+;Decimal CID instead of C1 & C2 in neighbour list
+;(c) слава Богу
+;(r) SiNgle
+;(p) RainMaker AKA Shadow®
+;Version: 
+;PatchID: 5578
+;Details: https://patches.kibab.com/patches/details.php5?id=5578
+/*
+
+*/
+0D5089A: 0123F856002802DA 203FB88B203702E0
+0D508A8: 2B 20
+0D508AC: 02 05
+0D508B6: 0223 0CE0
+
+0FF9824: 31204332 656C4944
+;------------------------- end -------------------------
+

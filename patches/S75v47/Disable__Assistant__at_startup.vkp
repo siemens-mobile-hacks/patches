@@ -1,0 +1,14 @@
+;S75v47
+;Отключить помощника при загрузке
+;Disable "Assistant" at startup
+;(c) SiNgle
+;(p) Frezzz
+;Version: 
+;PatchID: 5534
+;Details: https://patches.kibab.com/patches/details.php5?id=5534
+/*
+
+*/
+02FCEC5: D1 D0
+;------------------------- end -------------------------
+

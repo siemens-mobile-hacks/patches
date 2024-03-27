@@ -1,0 +1,13 @@
+;M75v12
+;Отключить Retarget Exit
+;Disable Retarget Exit
+;(c) 1nvisible
+;Version: 
+;PatchID: 5388
+;Details: https://patches.kibab.com/patches/details.php5?id=5388
+/*
+For those who have Retarget Exit when using java
+*/
+0A2ED04: 70402DE9 1EFF2FE1
+;------------------------- end -------------------------
+

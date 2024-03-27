@@ -1,0 +1,25 @@
+;S75v52
+;Один отчёт о доставке СМС для составного СМС
+;Single SMS status report for concatenated SMS 
+;(c) Evgr
+;Version: 2
+;PatchID: 10648
+;Details: https://patches.kibab.com/patches/details.php5?id=10648
+/*
+запрашивается отчёт о доставке СМС только для последнего сегмента составного СМС
+SMS status report is requested only for last segment of concatenated SMS
++ поддержка 16-битного идентификационного номера
++ support of 16-bit reference number
+*/
+
+0E3A972: 20339974 02F2CEE8
+
+#pragma enable old_equal_ff
+103CB10: 00C09FE51CFF2FE1,0xA13D1701
+13D1700: 20339974D97B00290ED03224195D0029
+13D1710: 02D0082908D101340334195D0134185D
+13D1720: 884201D0002119747047
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

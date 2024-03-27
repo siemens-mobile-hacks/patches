@@ -1,0 +1,17 @@
+;SL75v47
+;Ускоренный показ длинных названий
+;Smooth scrolling of long names
+;(c) SiNgle
+;(p) a1ex
+;Version: 
+;PatchID: 6086
+;Details: https://patches.kibab.com/patches/details.php5?id=6086
+/*
+
+*/
+68EB0C: D00700002C01 120200002A00
+C06748: D00700002C01 120200002A00
+
+
+;------------------------- end -------------------------
+

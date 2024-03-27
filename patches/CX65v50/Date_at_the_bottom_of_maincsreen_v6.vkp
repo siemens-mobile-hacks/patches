@@ -1,0 +1,33 @@
+;CX65v50
+;Дата внизу (на главном экране) в виде "Ср, 11 Май"
+;Date at the bottom of maincsreen as "We, 11 May"
+;(c) avkiev
+;(p) AsteriX
+;Version: 6
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1124
+;PatchID: 270
+;Details: https://patches.kibab.com/patches/details.php5?id=270
+/*
+На главном экране отображается дата в виде Ср, 11 Май.
+
+Поддерживается концепция "Профиль без патчей"
+*/
+0B21DBA: FFF7E0FF BCF1B1FA
+#pragma enable old_equal_ff
+0CDE300: 426F74746F6D20446174652076362020
+0CDE310: A961766B6965762031302E30362E3035
+0CDE320: 4FB522488047013007280FBC02D143F6
+0CDE330: 26FD40BD0C1C194F381C391C083142F6
+0CDE340: FEFC381C164B98470D3000F01FF89523
+0CDE350: A178002900D1A370E3702C2323712023
+0CDE360: 6371237279790A200F4B98473030A071
+0CDE370: 3031E1710934387900F008F801BC093C
+0CDE380: 211C01220023EAF784EC00BD00B50849
+0CDE390: 4018211C034B984700BDC04600AA75A8
+0CDE3A0: CF5782A01DF13CA1F08A83A0E59F8CA0
+0CDE3B0: 97120000
+#pragma disable old_equal_ff
+;0CDE35A: 2C 95 ;убрать запятую
+;0CDE328: 07 NP ;Profile "No patches"
+;------------------------- end -------------------------
+

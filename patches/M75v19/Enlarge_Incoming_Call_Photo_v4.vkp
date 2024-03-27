@@ -1,0 +1,30 @@
+;M75v19
+;Увеличить фото при входящем звонке
+;Enlarge Incoming Call Photo
+;(c) Mikel
+;(r) (i) Kibab
+;(p) Mikel
+;Version: 4
+;PatchID: 3304
+;Details: https://patches.kibab.com/patches/details.php5?id=3304
+/*
+Устранен глюк с появлением 19 пикселей фона!
+Также патч лишён недостатков предыдущего - и фон отрисовывается нормально, и картинка отображается без паразитных 19 пикс.
+кроме 132х176 прочие картинки становятся вообще не видны 
+*/
+0518920: 04 00
+02A66F6: 19 00
+
+02A8CF8: 00F095FB F9F162FB
+02A8DAE: 00F03AFB F9F107FB
+02A9174: 00F057F9 F9F124F9
+02A9260: 00F0E1F8 F9F1AEF8
+
++04A23C0
+#pragma enable old_equal_ff
+00: 00B580BCFFB405488047012803D0FFBC
+10: 07F629F800E0FFBC80B400BDC3EDAAA0
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

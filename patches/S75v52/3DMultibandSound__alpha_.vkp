@@ -1,0 +1,18 @@
+;S75v52
+;3DMultibandSound (alpha)
+;3DMultibandSound (alpha)
+;(c) funMarkus
+;(p) Vados
+;Version: 
+;PatchID: 8799
+;Details: https://patches.kibab.com/patches/details.php5?id=8799
+/*
+Работа патча не доказана, но может послышаться... xD
+*/
+020695A: 32 03 ; AudioVis (Multiband)
+;020695A: 32 06 ; AudioVis (1band)
+020697A: 0DD2 06D1 ; Equalizer (3DSet1)
+020698E: A3 A1 ; EqSet1->3DSet1
+020627C: 04D2 0ED1 ; TestMode (Speaker)
+;------------------------- end -------------------------
+

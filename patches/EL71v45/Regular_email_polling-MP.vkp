@@ -1,0 +1,13 @@
+;EL71v45
+;Периодическая проверка почты
+;Regular email polling
+;(c) benj9
+;Version: 
+;PatchID: 8003
+;Details: https://patches.kibab.com/patches/details.php5?id=8003
+/*
+(!) Master, uses FreeRAM+0x28
+*/
+0EF1A66: 081C 7047 ; remove "no new messages". if using elf, you MUST apply
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;SL65v50
+;Alarm & Appointment Icons Positioning
+;Alarm & Appointment Icons Positioning
+;(c) benj9
+;(r) TiCK
+;Version: 
+;PatchID: 4149
+;Details: https://patches.kibab.com/patches/details.php5?id=4149
+/*
+
+*/
+164EAA2: 01 0i161 ; Y-Pos Alarm(fix y-pos forever (dont weird y-moving at net lost)
+164EAA3: 39 21
+164EA8E: 01 0i161 ; Y-Pos Appointment
+164EA8F: 39 21
+;------------------------- end -------------------------
+

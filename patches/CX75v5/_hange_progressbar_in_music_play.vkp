@@ -1,0 +1,15 @@
+;CX75v5
+;Изменение_прогрессбара_при_проигрывании_музыки
+;Change_progressbar_in_music_play
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 448
+;Details: https://patches.kibab.com/patches/details.php5?id=448
+/*
+Изменение прогрессбара при проигрывании музыки. Скриншот выложу позже, как появится такая возможность.
+*/
+04D7F40: 1000660073 0500700080
+;------------------------- end -------------------------
+

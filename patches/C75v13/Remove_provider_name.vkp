@@ -1,0 +1,14 @@
+;C75v13
+;убрать имя провайдера из заставки
+;Remove provider name in ScreenSaver
+;(c) KiRiK
+;Version: 
+;PatchID: 1452
+;Details: https://patches.kibab.com/patches/details.php5?id=1452
+/*
+
+*/
+02D255A: 6CEC 0028
+
+;------------------------- end -------------------------
+

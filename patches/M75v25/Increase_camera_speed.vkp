@@ -1,0 +1,19 @@
+;M75v25
+;Увеличить скорость камеры
+;Increase camera speed
+;(c) SiNgle
+;(p) Grizzzzly
+;Version: 
+;PatchID: 4209
+;Details: https://patches.kibab.com/patches/details.php5?id=4209
+/*
+ 
+*/
+; Увеличить скорость камеры (выключает Nightmode)
+; Turnoff nightmode 
+0D120C0: 40 00
+; Настройка яркости камеры 
+; Camera brightness tuning 
+0D120D1: 80 C0 ;можно выставить и больше до FF (can be changed up to FF)
+;------------------------- end -------------------------
+

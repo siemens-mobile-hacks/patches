@@ -1,0 +1,16 @@
+;EL71v45
+;Refresh Fix for Master v14
+;Refresh Fix for Master v14
+;(c) ?
+;(r) (f) BuG, benj9
+;Version: 2
+;PatchID: 8032
+;Details: https://patches.kibab.com/patches/details.php5?id=8032
+/*
+; in case you have crashes while refreshing buffers after master midlet.
+; append to master vkp, or, if master already installed, just apply.
+; you can remove Refresh Fix Master v14 and apply only this one
+*/
+0060CD2: 04B432DF04BC 009032DF0022
+;------------------------- end -------------------------
+

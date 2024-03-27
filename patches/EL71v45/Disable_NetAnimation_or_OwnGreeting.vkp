@@ -1,0 +1,14 @@
+;EL71v45
+;Disable NetAnimation or OwnGreeting
+;Disable NetAnimation or OwnGreeting
+;(c) benj9
+;Version: 2
+;PatchID: 8023
+;Details: https://patches.kibab.com/patches/details.php5?id=8023
+/*
+
+*/
+066D4C1: 1C 21
+066D607: 1C 21
+;------------------------- end -------------------------
+

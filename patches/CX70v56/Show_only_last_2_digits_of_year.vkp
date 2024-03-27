@@ -1,0 +1,15 @@
+;CX70v56
+;Показывать только последние 2 цифры года
+;Show only last 2 digits of year
+;(c) ?
+;(p) Виктор89
+;Version: 
+;PatchID: 9431
+;Details: https://patches.kibab.com/patches/details.php5?id=9431
+/*
+Вместо допустим 2009 будет отображаться 09
+*/
+171BF06: 1F 17
+171BF0A: 0F 07
+;------------------------- end -------------------------
+

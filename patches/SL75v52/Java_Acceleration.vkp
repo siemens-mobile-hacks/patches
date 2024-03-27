@@ -1,0 +1,15 @@
+;SL75v52
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 7629
+;Details: https://patches.kibab.com/patches/details.php5?id=7629
+/*
+
+*/
+0976040: 6549 0121
+
+;------------------------- end -------------------------
+

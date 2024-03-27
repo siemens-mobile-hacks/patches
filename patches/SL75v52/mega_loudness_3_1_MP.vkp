@@ -1,0 +1,18 @@
+;SL75v52
+;Мега-громкость
+;Mega-loudness
+;(c) SiNgle,-=(Kad)=-,Akot
+;(p) dimonp25
+;Version: 3.1-MP
+;PatchID: 9789
+;Details: https://patches.kibab.com/patches/details.php5?id=9789
+/*
+
+*/
+01f353c: 0600000A020000EF6C3DA0E30320A0E3 00709FE537FF2FE141EB06A0310000EA
+01f355C: 030000EF6C3DA0E30320A0E30410A0E1 00709FE537FF2FE101EB06A0290000EA
+01f3608: 2600C4E5 D3FFFFEA
+01f3634: 000000EA C0FFFFEA
+
+;------------------------- end -------------------------
+

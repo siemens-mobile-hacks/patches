@@ -1,0 +1,21 @@
+;M55v91
+;Убрать вопрос "Всегда разрешать сетевые подключения" Да/Нет?
+;Remove "Always permit network connections?" question
+;(c) SiNgle
+;(p) ZZToP
+;Version: 
+;PatchID: 892
+;Details: https://patches.kibab.com/patches/details.php5?id=892
+/*
+После применения патча телефон больше не будет спрашивать, разрешить ли сетевые подключения для этого приложения.
+
+ОСТОРОЖНО! Некоторые программы могут несанкционированно ломиться в сеть!
+
+EN:
+After applying this patch phone won't ask about Alowing network connections when starting Java midlet.
+
+BE CAREFUL! Some midlets can access network without notifying you about it!
+*/
+742CF6: 2D04 CC00
+;------------------------- end -------------------------
+

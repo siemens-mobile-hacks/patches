@@ -1,0 +1,13 @@
+;EL71v45
+;Изменение скорости перемотки плеера
+;Change speed of fast forward and rewind
+;(c) Miha_r
+;Version: 2-MP
+;PatchID: 7410
+;Details: https://patches.kibab.com/patches/details.php5?id=7410
+/*
+
+*/
+07B69D0: 4CC39FE5 52C1E2EB
+;------------------------- end -------------------------
+

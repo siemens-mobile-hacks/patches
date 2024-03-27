@@ -1,0 +1,43 @@
+;S65v58
+;Сброс звонка в определённое время
+;Drop call on certain time
+;(c) 1nvisible
+;(r) 1nvisible
+;(p) KiRiK
+;Version: 1
+;PatchID: 970
+;Details: https://patches.kibab.com/patches/details.php5?id=970
+/*
+Телефон сбрасывает вызов через NN секунд после его начала (5 секунд по умолчанию) 
+Включение/отключение через выбранные вами профили.
+
+English:The phone hangs up after NN seconds from the call start (5 secs by default).
+On/Off in chosen profiles.
+*/
+0B89604: 00F028FD 9EF17CFB
++0D27D00
+#pragma enable old_equal_ff
+00: FFB5084880479927C74001200740012F
+10: 03D1052C01D167F6D3F9FFBC62F69CF9
+20: 00BDC0460D9B8CA0
+#pragma disable old_equal_ff
+
+# Настройки | Settings #
+
+06: 99 0n1000001 ; ключ профилей | profile key
+;12: 05 NN ; № секунды сброса | hang-up sec #
+
++0
+; profile configuration
+; every single bit of the profile key represents a profile, 
+; the most left one is profile no. 7, the most right one profile no. 1
+; to activate patch in a certain profile, set the according bit to 1
+; example: 0n0100101 - patch is active in profiles no. 1, 3 and 6
+#
+; Конфигурация профилей
+; Каждый бит в ключе определяет профиль
+; Крайний левый - профиль 7, крайний правый - профиль 1
+; Для активации патча в определённом профиле нужный бит будет равен 1
+; Например: 0n0100101 - патч активен в профилях 1, 3 и 6
+;------------------------- end -------------------------
+

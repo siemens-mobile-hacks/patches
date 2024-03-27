@@ -1,0 +1,18 @@
+;SL65v50
+;Размер шрифта и позиция Flash-SMS и т.п.
+;Flash-SMS Position & Font Size
+;(c)  [crazy]misha
+;Version: 
+;PatchID: 5114
+;Details: https://patches.kibab.com/patches/details.php5?id=5114
+/*
+
+*/
+16629EC: 46 92 ; Y позиция Flash-SMS для С65 заменить на 66
+1662A2C: 46 92 ; для С65 заменить на 66
+16629F0: 07 08 ; изменить шрифт Flash-SMS - 02-08 (Change Flash-SMS font)
+1662A00: 07 08
+1662A30: 07 08
+1662A40: 07 08
+;------------------------- end -------------------------
+

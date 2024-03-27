@@ -1,0 +1,14 @@
+;S65v58
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) Bennie
+;Version: 
+;PatchID: 1221
+;Details: https://patches.kibab.com/patches/details.php5?id=1221
+/*
+Патч убирает потверждение при включении телефона, если отключена проверка PIN-кода.
+English: Patch disables confirmation when switching phone on if PIN check is disabled.
+*/
+1699F1B: D1 E0
+;------------------------- end -------------------------
+

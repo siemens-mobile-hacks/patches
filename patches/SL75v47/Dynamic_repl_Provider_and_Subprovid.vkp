@@ -1,0 +1,22 @@
+;SL75v47
+;Динамическая замена имени оператора и субоператора
+;Dynamic replacing of Provider and Subprovider name
+;(c) avkiev
+;(r) Bennie, arsh0r
+;(p) a1ex
+;Version: 16
+;PatchID: 6790
+;Details: https://patches.kibab.com/patches/details.php5?id=6790
+/*
+UseIfNoMP3=0F
+UseIfNoTMO=08 - ставить нельзя! Будет виснуть телефон, ибо в некоторых случаях получается замкнутый круг.
+
+
+
+*/
+03F09C4: 0xA08FDF1B 0xA0061601				  ;- Provider
+030058A: 301CFFF72fFDEA79311C  C046004B9847,0xA0061611    ;- Subprovider
+0300572: 00 FF						  ;- Subprovider in Profile0
+
+;------------------------- end -------------------------
+

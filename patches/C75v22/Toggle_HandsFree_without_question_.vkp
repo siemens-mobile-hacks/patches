@@ -1,0 +1,14 @@
+;C75v22
+;Убрать подтверждения при включении громкой связи
+;Toggle HandsFree without question
+;(c) ThE TrIFoN
+;(p) SMeeTBB
+;Version: 
+;PatchID: 1187
+;Details: https://patches.kibab.com/patches/details.php5?id=1187
+/*
+
+*/
+02CD3A2: 002201205349BFF104EDDAF75AF9 012232F006EF02E0C046C046C046
+;------------------------- end -------------------------
+

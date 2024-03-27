@@ -1,0 +1,13 @@
+;S75v24
+;Убрать сообщение "Блокировка клавиатуры включена"
+;Disable message "Keypad locked"
+;(c) SiNgle
+;Version: 
+;PatchID: 2170
+;Details: https://patches.kibab.com/patches/details.php5?id=2170
+/*
+
+*/
+033ADA6: AFF00EEB C046C046
+;------------------------- end -------------------------
+

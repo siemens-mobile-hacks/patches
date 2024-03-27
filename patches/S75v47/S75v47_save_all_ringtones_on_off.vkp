@@ -1,0 +1,26 @@
+;S75v47
+;Сохранять состояние Все сигналы вкл/выкл в еепром в момент переключения
+;Save All ringertones on/off state to EEPROM at the moment of the change
+;(c) Evgr
+;Version: 
+;PatchID: 10600
+;Details: https://patches.kibab.com/patches/details.php5?id=10600
+/*
+
+*/
+
+01F88F8: 0000A0E3 996B47FB
+01F898C: 0000A0E3 746B47FB
+027CAF4: 7C80BDE8 115B45EA
+
+#pragma enable old_equal_ff 
+13D3740: 000000FA7C80BDE8FFB5104880470324
+13D3750: 114B1C70002800D102241C700E490320
+13D3760: 0B4A9047FFBDFEB569460320094A9047
+13D3770: 00AB1978022904D01978032901D00020
+13D3780: FEBD0020022900D00120F9E7,0xA027BE18
+13D3790: 0xA01A8535,0xA01A854F,0xA8A7F050   ; 0xA8A7F050 freeRAM  
+#pragma disable old_equal_ff 
+
+;------------------------- end -------------------------
+

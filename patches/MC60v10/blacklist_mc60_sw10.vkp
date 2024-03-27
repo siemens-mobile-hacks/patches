@@ -1,0 +1,53 @@
+;MC60v10
+;Черный список
+;Blacklist group
+;(c) Pluto, Pilsen CZ 
+;(r) SiNgle & AlexSid
+;Version: 1.0
+;PatchID: 9724
+;Details: https://patches.kibab.com/patches/details.php5?id=9724
+/*
+Патч,по заранее выбранной в тексте патча группе,отклоняет нежелательные звонки,отображая на экране абонентов "вызов завершен".Группы,на которые телефон не будет реагирывать, можно менять,02 = Нет группы, 03 = Семья, 04 = Друзья, 05 = Офис,и т.д-подробная информация в патче.По дефолту установелено в значение 0A=Прочие.
+*/
+; #######################################################################
+; ###                                                                 ###
+; ###                      Siemens MC60, FW v10                       ###
+; ###                                                                 ###
+; ###            Patch description: create blacklist group            ###
+; ###                     version 1.0 [31.3.2005]                     ###
+; ###      inspired by a M55 original (thnx to SiNgle & AlexSid)      ###
+; ###                                                                 ###
+; ###                                                                 ###
+; ###                    (c)2005, Pluto, Pilsen CZ                    ###
+; ###                       pluton821@seznam.cz                       ###
+; ###                       http://mc60.unas.cz                       ###
+; ###                                                                 ###
+; ###                                                                 ###
+; ###        Patch muze byt libovolne siren, menen a pouzivan         ###
+; ###       s vyjimkou zahlavi - z nej nesmi byt nic vypusteno        ###
+; ###     Patch can be distributed, used and modified arbitrarily     ###
+; ###      with one exception - nothing in header can be removed      ###
+; #######################################################################
+
+
+; skupinu lze zmenit:
+;   02 = Zadna skupina, 03 = Rodina, 04 = Pratele, 05 = Kancelar, 
+;   06 = VIP, 07 = Volny cas, 08 = Hobby, 09 = Soukrome, 0A= Ostatni)
+; you can change group:
+;   02 = No group, 03 = Family, 04 = Friends, 05 = Office, 
+;   06 = VIP, 07 = Leisure, 08 = Hobby, 09 = Private, 0A= Others)
+7C0C02: FF 0A
+
+; odmitne volajiciho zpravou 'Hovor ukoncen'
+; reject caller with message 'Call ended'
+7C0C10: FFFFFFFF DA2104F5
+
+; nebo nehraje melodii/nevibruje
+; or doesn't play any sound/vibra
+;7C0C10: FFFFFFFF DB00FFFF
+
+7F56AC: F08CE00D  FA9C000C
+7C0C00: FFFF 46FC
+7C0C03: FFFFFFFFFFFFFFFFFFFFFFFFFF 002D04F08CE00DFA9FB0569880
+;------------------------- end -------------------------
+

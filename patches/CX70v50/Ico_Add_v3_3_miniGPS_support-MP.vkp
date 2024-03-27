@@ -1,0 +1,127 @@
+;CX70v50
+;Дополнительная панель иконок с поддержкой miniGPS
+;IconbarAdditions v3.3 miniGPS support
+;(c) benj9
+;(r) BuG, empeka
+;(p) ~Jhellico
+;Version: 3.3-MP
+;PatchID: 3308
+;Details: https://patches.kibab.com/patches/details.php5?id=3308
+/*
+featuring: charging icons, profile icons, vibra on/off, animation, netmode, minigps, universal engines
+
+Полное описание внутри патча тела на английском.
+*/
+; entrypoint with icons left in iconbar:
+1711AC6: 1CF08CEB1CF0FCED0028 C046,00488047,0xA0FDB811 ; CX70v50
+0FDBA88: FFFFFFFFFFFFFFFF 0xA172E1E0,0xA172E6C4 ; CX70v50
+
+
+; entrypoint with icons right in iconbar:
+;1711CE4: 1CF0D8EB1CF02AEDFF28 00488047,0xA0FDB811,C046 ; CX70v50
+;0FDBA88: FFFFFFFFFFFFFFFF 0xA172E498,0xA172E740 ; CX70v50
+;0FDB856: 00 FF ; put this line BEHIND patch
+
+
+; config for CX70v50 (icon numbers)
+
+#pragma enable old_equal_ff
+0FDBAA0: "{patch=IconbarAdditions ver=33 cp=benj9 id=1c00}","\
+\
+{sm ProfileIcons}","\
+{2.0 cb engage v=1}","\
+{24 i `first icon` v=1330}","\
+{endsm}","\
+\
+{sm ChargingIcons}","\
+{2.1 cb engage v=1}","\
+0 = icon off","\
+{8 i `charge icon` v=187}","\
+{12 i `full icon` v=186}","\
+{endsm}","\
+\
+{sm VibraIcons}","\
+{2.2 cb engage v=1}","\
+{20 i `vibra icon` v=763}","\
+{16 i `no-vibra icon` v=0}","\
+(0=icon off)","\
+{endsm}","\
+\
+{sm NetModeIcons v=1}","\
+{2.3 cb engage v=1}","\
+{52 xy position x=132 y=33}(off=iconbar, on=static)","\
+{28 i iconSearchingLo v=354}","\
+{32 i iconPhoneTraffic v=347}","\
+{36 i iconSearchingHi v=356}","\
+{40 i iconSmsTraffic v=353}","\
+{44 i iconSemiIdle v=352}","\
+{48 i iconIdle}","\
+(0=icon off)","\
+{endsm}","\
+\
+{sm AnimationIcons}","\
+{2.4 cb engage v=1}","\
+{sm Profiles}","\
+{4.0 cb 1 v=1}{4.1 cb 2 v=1}{4.2 cb 3 v=1}{4.3 cb 4 v=1}","\
+{4.4 cb 5 v=1}{4.5 cb 6 v=1}{4.6 cb 7 v=1}","\
+{endsm}","\
+{56 xy position x=2 y=142}(off=iconbar, on=static)","\
+{60 i `first icon` v=31}","\
+{64 i `last icon` v=36}","\
+{endsm}","\
+\
+{sm miniGpsIcons}","\
+Enter icons in 3rd line of minigps files","\
+{2.5 cb engage v=1}","\
+{80 xy position x=85 y=142}(off=iconbar, on=static)","\
+{82 s miniGPS maxlen=31 ","\
+value=`0:\\Misc\\gps\\%i\\%i-%i.tmo`}","\
+{endsm}",00
+
+
+0FDC340: E4D3C2B1,0x00001C01,0000000000000000,"\
+{patch=Icon-Netmode2 ver=33 cp=benj9 id=1C01}","\
+{02 xy position x=59 y=120}(off=iconbar, on=static)","\
+{sm focus}","\
+\
+{08 a address v=A8752560}","\
+{04 cb `use as pointer` v=0}","\
+{05 b offset v=0}","\
+{01 o `load type` `byte (1b)`=0 `hword (2b)`=1 `dword (4b)`=2 v=0}{endsm}","\
+{06 o `val1-val7 condition` `=`=0 `<=`=1 `>=`=2 v=0}","\
+\
+{sm v1}{7.0 cb 1 v=1}","\
+{12 i val1 v=0}","\
+{44 i icon v=890}{endsm}","\
+\
+{sm v2}{7.1 cb 2 v=1}","\
+{16 i val2 v=1}","\
+{48 i icon v=855}{endsm}","\
+\
+{sm v3}{7.2 cb 3 v=1}","\
+{20 i val3 v=2}","\
+{52 i icon v=868}{endsm}","\
+\
+{sm v4}{7.3 cb 4 v=1}","\
+{24 i val4 v=3}","\
+{56 i icon v=891}{endsm}","\
+\
+{sm v5}{7.4 cb 5 v=1}","\
+{28 i val5 v=8}","\
+{60 i icon v=892}{endsm}","\
+\
+{sm v6}{7.5 cb 6 v=0}","\
+{32 i val6 v=16}","\
+{64 i icon v=394}{endsm}","\
+\
+{sm v7}{7.6 cb 7 v=0}","\
+{36 i val7 v=19}","\
+{68 i icon v=395}{endsm}","\
+\
+{sm vElse}{7.7 cb Else v=1}","\
+{40 i `exclude val` v=27}","\
+{72 i icon v=406}{endsm}",00
+
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

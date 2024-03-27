@@ -1,0 +1,13 @@
+;EL71v36
+;Уменьшить задержку для долгого нажатия клавиш
+;Decrease Keypad Long Press Delay
+;(c) 1nvisible
+;Version: 
+;PatchID: 5529
+;Details: https://patches.kibab.com/patches/details.php5?id=5529
+/*
+
+*/
+08D6E00: 011C 4021
+;------------------------- end -------------------------
+

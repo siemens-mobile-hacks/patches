@@ -1,0 +1,35 @@
+;SX1v15
+;Вибра в момент соединения ver2
+;vibra when connected ver2
+;(c) Rascal
+;Version: 2
+;PatchID: 8458
+;Details: https://patches.kibab.com/patches/details.php5?id=8458
+/*
+вибра в момент соединения v2 © Rascal
+vibra when connected v2
+SX1v15
+Патч в формате V-Klay для Egold !!!
+Патч для обладателей S-key или порезанных тестпоинтов.
+Egold fw15 only !
+Вибра только при исходящих
+*/
+; вибра в момент соединения v2 © Rascal
+; vibra when connected v2
+; SX1v15
+; Патч в формате V-Klay для Egold !!!
+; Патч для обладателей S-key или порезанных тестпоинтов.
+; Egold fw15 only !
+; Вибра только при исходящих
+
+00028AC4: DA8264A8 DAFD0010
+007D1000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA01FE8AD7400500F2FC4E1548C68D17
+007D1010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA8AB2FDE6FC2F00DA8B3EDDE6FC4610
+007D1020: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FDFD00E00E88D088C088E0E6FC00E0
+007D1030: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E01DE6FE1B00E00FDAB832DC0806DA01
+007D1040: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 088BFA8264A8E00CDA8B3EDDFA8AC2FD
+
+;007D1034: 1B 10 ;длительность вибры
+;07D100E: 8D17 CC00  ; на входящие тоже вибрировать
+;------------------------- end -------------------------
+

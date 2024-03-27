@@ -1,0 +1,20 @@
+;CX70v56
+;Дополнительная Информация на Прогрессбарах
+;Extra Info on ProgressBars
+;(c) 1nvisible
+;Version: 2.1
+;PatchID: 6848
+;Details: https://patches.kibab.com/patches/details.php5?id=6848
+/*
+Показывает проценты на прогрессбарах, а также данные о принимаемых и передаваемых файлах.
+English:
+Shows percents on progressbars and info on files being sent/received.
+
+*/
+0942BE8: 28E78EA000000000 0xA0FC7D35,0xA0FC7D25
+094A390: 0000000000000000 0xA0FC7D11,0xA0FC7D01
+11709B0: 216B000C4143E06AAEF0D8ED 004FB847,0xA0FC7D51,C046C046
+1170A68: 0C20185E231CAEF006ED 004FB847,0xA0FC7DDD,C046
+0FC7D4C: FFFFFFFF 0xA86DB894
+;------------------------- end -------------------------
+

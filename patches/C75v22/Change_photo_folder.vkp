@@ -1,0 +1,21 @@
+;C75v22
+;Изменить папку для фотографий
+;Change photo folder
+;(c) avkiev
+;(p) inquis
+;Version: 
+;PatchID: 5675
+;Details: https://patches.kibab.com/patches/details.php5?id=5675
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=c75v22&f=Change_photo_folder.rar
+
+/*
+Теперь по умолчанию фотографии сохраняются в папку 0:\Photo
+Для отображения в Моих Файлах пункта Фото положите прикрепленный файл в папку Config\Default\MyStuff\
+(!) При создании нового MyStuff, пункт Картинки находится по адресу 0:\Pictures\Clip Gallery, пункт Фото по адресу 0:\Pictures 
+
+*/
+493A94: 18 0B
+4939E8: 0B 08
+4939EA: '0:\\Pictures' '0:\\Photo'
+;------------------------- end -------------------------
+

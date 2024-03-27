@@ -1,0 +1,22 @@
+;C75v22
+;Включение по Напоминанию
+; Turn On by Appointment
+;(c) 1nvisible
+;(p) TiCK
+;Version: 1
+;PatchID: 1586
+;Details: https://patches.kibab.com/patches/details.php5?id=1586
+/*
+Телефон включается по напоминанию. При этом звук напоминания не проигрывается.
+
+English:The phone turns on by appointment. The appointment sound is not played.
+*/
+059B62C: A06E0028 1CF7A0FC
+
+#pragma enable old_equal_ff
+04B7F70: 3FB5074B1B78152B05DC064B98473FBC
+04B7F80: 01B0054B18473FBCA06E002800BDC046
+04B7F90: E2604FA8,20AB7EA0,A5B659A0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;X75v100
+;Зелено-голубые иконки для продвинутого индикатора сети
+;Green-blue icons for advanced net indicator
+;(c) Quant
+;(r) Дэн-S75
+;Version: 
+;PatchID: 6795
+;Details: https://patches.kibab.com/patches/details.php5?id=6795
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=green-blue_icons_ani.zip
+
+/*
+Немного подправленые зеленые и синие столбики. Убраны серые "хвосты".
+*/
+Немного подправленые зеленые и синие столбики. Убраны серые "хвосты". качаем архив.
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;C55v24
+;Замена пути к папке "Архив"
+;Change path to archive folder
+;(c) Joenka
+;Version: 1.0
+;PatchID: 5326
+;Details: https://patches.kibab.com/patches/details.php5?id=5326
+/*
+Замена пути к папке "Архив" (по умолчанию в телефоне архив расположен a:\SMS)
+*/
+4BE160: 0002F80200FF613A5C534D53000000 0002F80200FF"a:\\SM1",00
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v52
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) den11111
+;Version: 
+;PatchID: 8290
+;Details: https://patches.kibab.com/patches/details.php5?id=8290
+/*
+
+*/
+0904286: 011C 2021
+;------------------------- end -------------------------
+

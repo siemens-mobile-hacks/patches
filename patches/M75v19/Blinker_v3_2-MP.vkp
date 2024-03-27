@@ -1,0 +1,19 @@
+;M75v19
+;Blinker
+;Blinker
+;(c) benj9
+;(r) 1nvisible, avkiev, BuG, Chaos
+;(p) Kibab
+;Version: 3.2-MP
+;PatchID: 2534
+;Details: https://patches.kibab.com/patches/details.php5?id=2534
+/*
+Необходима библиотека 60319-2 или новее!
+*/
+081B70C: 0070A0E1 3F041FEB
+
+#pragma enable old_equal_ff
+0FDCCD0: 40000000,300200A8,0xA84CB490,0xA84CFBBC ; -RBC - M75v19
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

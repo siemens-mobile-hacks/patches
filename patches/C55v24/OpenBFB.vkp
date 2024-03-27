@@ -1,0 +1,13 @@
+;C55v24
+;OpenBFB
+;OpenBFB
+;(c) Chaos
+;Version: 1.0
+;PatchID: 5329
+;Details: https://patches.kibab.com/patches/details.php5?id=5329
+/*
+Патч "открывающий BFB" - возможность работать с включенным телефоном по протоколу BFB.
+*/
+105EF6: 50 3A
+;------------------------- end -------------------------
+

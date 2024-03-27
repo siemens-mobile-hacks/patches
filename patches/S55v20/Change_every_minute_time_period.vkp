@@ -1,0 +1,19 @@
+;S55v20
+;Изменение периода и времени подачи ежеминутного сигнала
+;Change every minute signaling time and period
+;(c) SiNgle, RizaPN
+;(r) alex_itd
+;(p) avkiev
+;Version: 
+;PatchID: 4775
+;Details: https://patches.kibab.com/patches/details.php5?id=4775
+/*
+
+*/
+222D08: 3C 1E ; Период повтора. Здесь - 30 секунд
+222D14: F2F40CFE DA6100A0
+21A000: FFFFFFFFFFFF F2F40CFE46F4
+21A006: FF 19 ; Секунда, на которой подается первый сигнал. Здесь - 25
+21A007: FFFFFF 00DB00
+;------------------------- end -------------------------
+

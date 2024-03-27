@@ -1,0 +1,14 @@
+;S75v40
+;Разрешить выбор Диапазона
+;Enable Band Selection
+;(c) Bennie
+;(p) Bueffel
+;Version: 
+;PatchID: 3787
+;Details: https://patches.kibab.com/patches/details.php5?id=3787
+/*
+
+*/
+041FCCC: 0502 F901
+;------------------------- end -------------------------
+

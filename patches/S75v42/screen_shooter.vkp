@@ -1,0 +1,18 @@
+;S75v42
+;Скрин-шутер
+;Screen Shooter
+;(c) avkiev
+;(p) Belarus
+;Version: 
+;PatchID: 5701
+;Details: https://patches.kibab.com/patches/details.php5?id=5701
+/*
+Создайте папку 0:\Misc\Shots
+Установите с помощью FakEditor или ShotKeyEd на любую кнопку функцию "Идентификация телефона"
+Установите патч
+Нажали кнопку - получили скриншот
+*/
+0423030: 0xA032CCCB 0xA0067301 ; S75v42
+
+;------------------------- end -------------------------
+

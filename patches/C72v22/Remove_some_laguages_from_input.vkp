@@ -1,0 +1,19 @@
+;C72v22
+;Убрать Немецкий, Польский, Латвийский и Литовский из меню языков ввода
+;Remove Deutsch, Polish, Latvian and Lithuanian from input
+;(c) AlexSid, 0xFEDF
+;Version: 
+;PatchID: 7585
+;Details: https://patches.kibab.com/patches/details.php5?id=7585
+/*
+
+*/
+0D90936: 00 01
+0D9096E: 00 01
+
+0D90966: 00 01 
+0D9096A: 00 01
+
+
+;------------------------- end -------------------------
+

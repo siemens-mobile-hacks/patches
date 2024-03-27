@@ -1,0 +1,27 @@
+;CF75v22
+;Десятичный CID вместо C1 и C2 в списке соседних сот
+;Decimal CID instead of C1 & C2 in neighbour list
+;(c) слава Богу
+;(p) Dikobraz
+;Version: 
+;PatchID: 9369
+;Details: https://patches.kibab.com/patches/details.php5?id=9369
+/*
+
+*/
+;CF75v22
+; Десятичный CID вместо C1 и C2 в списке соседних сот
+;Decimal CID instead of C1 & C2 in neighbour list
+;(c) слава Богу
+;(p) Dikobraz
+;Version: 
+;PatchID: 
+;Details: 
+0AA4D3A: 0123F856002802DA 203FB88B203702E0
+0AA4D48: 2B 20
+0AA4D4C: 02 05
+0AA4D56: 0223 0CE0
+0C63D6C: 31204332 656C4944
+;------------------------- end -------------------------
+;------------------------- end -------------------------
+

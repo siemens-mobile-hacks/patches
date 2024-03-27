@@ -1,0 +1,61 @@
+;S55v91
+;Автоматическое изменения профиля + Черный список
+;Automatic profile switching + BlackList
+;(c) amsik
+;(p) Mich3L
+;Version: 0.1c
+;PatchID: 4795
+;Details: https://patches.kibab.com/patches/details.php5?id=4795
+/*
+Apointment Location field syntax:
+; .pn - n new profile number
+example: 
+to turn 'Quiet environ.' every day 22:00, set
+new apointment on 22:00 with daily reoccurence
+and Location: .p2 
+
++BlackList original by SiNgle (M55)
+2004 by ACiD [mrp]
+S55 v20 by by ACiD [mrp]
+improved by amsik (reject caller from blacklist)
+GSM Development Crew www.gsm-dev.com <http://www.gsm-dev.com>
+join us at <http://www.handyhacking.com/>
+
+
+this patch conflicts with older blacklist versions!
+
+*/
+64B21A: 8880F08C FA7B009A
+3B9A00: FFFFFFFF 8880F08C
+3B9A04: FFFF 46F8
+3B9A06: FF 07 ;blacklist group number+2 (5group+2=07)
+3B9A07: FFFFFF 002D05
+3B9A0A: FFFFFFFFFFFFFFFFFFFF 46F80C002D09FAA41EB2
+
+;reject with 'busy':
+;3B9A14: FFFFFFFF DA63C69D
+;3B9A18: FFFFFFFF 9880DB00
+
+;or reject with message 'call ended'
+3B9A14: FFFFFFFF DA630E9E
+3B9A18: FFFFFFFF 9880DB00
+
+;or don't play any sound/vibra
+;3B9A14: FFFFFFFF 9880DB00
+
+3B9A1C: FFFFFFFFFFFFFFFF 9810FAA41EB28810
+3B9A24: FFFFFFFFFFFFFFFF D7400B00F3F2A82A
+3B9A2C: FFFFFFFFFFFFFFFF 47F22E003DF5D740
+3B9A34: FFFFFFFFFFFFFFFF 0B00F3F2AA2A47F2
+3B9A3C: FFFFFFFFFFFFFFFF 70002D1C98109880
+3B9A44: FFFF DB00
+3B9A78: FFFFFFFFFFFFFFFF D7400B00F2FCAC2A
+3B9A80: FFFFFFFFFFFFFFFF 28C166FC0700DA92
+3B9A88: FFFFFFFFFFFFFFFF 40A598109880DB00
+
+; Теперь событие не попадает в список пропущенных событий. 
+; Придумал как сделать dnn. Адаптировал vvrom :)
+3B9A8E: DB00ffffffff DAC9C4F6DB00
+
+;------------------------- end -------------------------
+

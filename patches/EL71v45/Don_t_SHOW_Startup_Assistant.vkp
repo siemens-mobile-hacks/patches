@@ -1,0 +1,14 @@
+;EL71v45
+;Не показывать Startup Assistant
+;Don't SHOW Startup Assistant
+;(c) benj9
+;Version: 
+;PatchID: 8022
+;Details: https://patches.kibab.com/patches/details.php5?id=8022
+/*
+but let it work. good together with "* Always Do Startup Assistant
+
+*/
+070EFC0: F0F0E4EB C046C046
+;------------------------- end -------------------------
+

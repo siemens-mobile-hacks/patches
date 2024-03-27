@@ -1,0 +1,15 @@
+;CF75v23
+;Изменение номера SW-версии
+;Change SW-Version
+;(c) Pashen
+;(p) NeverGone
+;Version: 
+;PatchID: 9963
+;Details: https://patches.kibab.com/patches/details.php5?id=9963
+/*
+Всё ясно из названия, в примере чётко показано как ставить свой номер, можно 4х-значный
+
+*/
+90180: 00323300 00393900 ; change hex-code to anything you want (example: 3939 = 99,3X3X = XX,3131 = 11,31313131 = 1111,32353731 = 2571 etc) 
+;------------------------- end -------------------------
+

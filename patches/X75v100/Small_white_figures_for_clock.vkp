@@ -1,0 +1,15 @@
+;X75v100
+;Белые мелкие цифры для часов
+;Small white figures for clock
+;(c) Ushastiy™
+;Version: 
+;PatchID: 6800
+;Details: https://patches.kibab.com/patches/details.php5?id=6800
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Small_white_clock.rar
+
+/*
+Цифры для часов на главном экране. Номера от 900 по HEX. (В библе меняем в Pic_Big0 значение на 900, что б заставкой не путался=)
+*/
+качаем аттач
+;------------------------- end -------------------------
+

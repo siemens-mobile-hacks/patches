@@ -1,0 +1,14 @@
+;SL75v38
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) Orastar
+;Version: 
+;PatchID: 5016
+;Details: https://patches.kibab.com/patches/details.php5?id=5016
+/*
+
+*/
+097120C: 6549 0121
+;------------------------- end -------------------------
+

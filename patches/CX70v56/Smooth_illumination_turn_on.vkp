@@ -1,0 +1,14 @@
+;CX70v56
+;Плавное включение подсветки
+;Smooth illumination turn-on
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 680
+;Details: https://patches.kibab.com/patches/details.php5?id=680
+/*
+Плавное включение подсветки.
+*/
+0BD1A16: 0022 664A
+;------------------------- end -------------------------
+

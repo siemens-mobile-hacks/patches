@@ -1,0 +1,46 @@
+;S65v58
+;Иконка Outlook для SMS
+;Outlook icon for sms
+;(c) SPC3
+;(p) Apo4emu
+;Version: 
+;PatchID: 1051
+;Details: https://patches.kibab.com/patches/details.php5?id=1051
+/*
+Иконка в стиле outlook в меню смс
+
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ### Apo4emu                                                         ###
+; ### Date: 18.11.2005  -  Time: 18:59:05                             ###
+; ### Patch for: SIEMENS S65 v58                                      ###
+; #######################################################################
+
+
+; ##### Picture 735 #####
+00DA171C: 1A0E8500141BE4A0 101085008A2F06A0
+
+00062F8A: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 07C0FD92966E0CC0FF9702BBFE974E0A
+00062F9A: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C0FF97029BFC534A2F4E05C002B70297
+00062FAA: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FC7757539202960292FEC09602C0FFDB
+00062FBA: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0277FF37023305FF02FBFFB702C0FAFF
+00062FCA: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 5713332FDF05FFFDADF1B702C0FAFF77
+00062FDA: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2F2B2A9603FF02DFFDB2C0B702C0FDFF
+00062FEA: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DB9702B705DBFFDF02DBFFB702C004FF
+00062FFA: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 06DB02BBFEDBB702C004FF03DBF99733
+0006300A: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 135777DB9702C0FFDF02FFFFDF04DBFA
+0006301A: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 77337797BB9702C0FFDB04DF02DBF99B
+0006302A: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1357979B969702C0FEDBDF04DBFF9B02
+0006303A: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 33FB7772BB969702C00349024EFB4A33
+0006304A: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 13574E044905C0FF2E022FFD13334E0B
+0006305A: FFFFFFFFFFFFFFFF C0FC4E2F2E4907C0
+
+
+;------------------------- end -------------------------
+

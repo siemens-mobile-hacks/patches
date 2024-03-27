@@ -1,0 +1,23 @@
+;CX75v25
+;Убрать сообщения
+;Disable some messages
+;(c) SiNgle
+;Version: 
+;PatchID: 3479
+;Details: https://patches.kibab.com/patches/details.php5?id=3479
+/*
+
+*/
+02CE1B6: 0021 10BD ; "Все сигналы вкл" (All ringtones on)\
+02CE1D2: 0021 10BD ; "Все сигналы выкл" (All ringtones off)/ © arsh0r
+02CE222: 0021 10BD  ; "Блокировка клавиатуры включена" (Keypad locked)
+0326A6A: 78F1 80BD ; IrDA вкл\выкл (IrDA on\off)
+0326A9A: 78F1 80BD ; GPRS вкл\выкл (GPRS on\off)
+0326AE6: 78F1 80BD ; Bluetooth on\off S65, SK65 © arsh0r
+07C3D04: 2B210901 80B580BD ; "Подождите" при запуске камеры ("Please wait" before using camera)
+034E6C0: 490A02EB 0100A0E3 ; "Сохранить в:" после съёмки ("Saved to:" after you take a foto)
+0352FD8: 2AC311FA 0100A0E3 ; "Подождите" в эксплорере ("Please wait" in Card-Explorer)
+0520F82: 01 00 ; "Копировать SIM" при смене SIM ("Copy SIM" at SIM change)
+
+;------------------------- end -------------------------
+

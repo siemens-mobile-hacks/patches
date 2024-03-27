@@ -1,0 +1,51 @@
+;M75v25
+;Инвертировать цифровые часы
+;Invert digiclock ScreenSaver
+;(c) SiNgle
+;(p) Grizzzzly
+;Version: 
+;PatchID: 4140
+;Details: https://patches.kibab.com/patches/details.php5?id=4140
+/*
+
+*/
+02CFF90: 01 00 ;1h back
+02CFF98: 00 01 ;1h font
+02CFFDA: 01 00 ;2h back
+02CFFE2: 00 01 ;2h font
+02D001C: 01 00 ;":" back
+02D0024: 00 01 ;":" font
+02D0058: 01 00 ;1m back
+02D0060: 00 01 ;1m font
+02D00A0: 01 00 ;2m back
+02D00A8: 00 01 ;2m font
+02D00F2: 01 00
+02D00FA: 00 01
+04AC974: 00 01 ;ProvName font
+04AC978: 01 00 ;background
+04AC9E5: 00 01 ;ProvFon with Arrow
+04AC9E8: 01 00 ;background with Arrow
+;color table (0..17h) R G B
+;00 - white
+;01 - black
+;02 - red (base)
+;03 - navy (base)
+;04 - green (base)
+;05 - magenta (base)
+;06 - aqua (base)
+;07 - yellow (base)
+;08 - red (light)
+;09 - navy (light)
+;0A - green (light)
+;0B - magenta (light)
+;0C - aqua (light)
+;0D - yellow (light)
+;0E - red (dark)
+;0F - navy (dark)
+;10 - green (dark)
+;11 - magenta (dark)
+;12 - aqua (dark)
+;13 - yellow (dark)
+;14-17 - clean
+;------------------------- end -------------------------
+

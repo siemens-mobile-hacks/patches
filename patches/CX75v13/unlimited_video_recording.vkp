@@ -1,0 +1,22 @@
+;CX75v13
+;Неограниченная запись видео
+;Unlimited video recording
+;(c) SiNgle
+;(p) TAPAKAH
+;Version: 1.1
+;PatchID: 814
+;Details: https://patches.kibab.com/patches/details.php5?id=814
+/*
+RUS: Неограниченная по времени запись видео. Исправлены показания времени.
+После нажатия стоп, и записи, сразу выйдите из камеры красной кнопкой!
+
+ENG: Unlimited on time record of video. Indications of time are corrected.
+After pressing stop, and records, at once leave the chamber the red button!
+*/
+2D952B: 00 FF
+34ECBC: 3300000A 920052E3
+03CEB45: 640000 303364
+130CA1: 13770D97770D0D7528770D97770D0DE1358391 13F697770D0D7528F697770D0DE13583910B0B
+
+;------------------------- end -------------------------
+

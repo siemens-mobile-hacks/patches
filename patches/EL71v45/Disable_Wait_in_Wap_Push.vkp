@@ -1,0 +1,14 @@
+;EL71v45
+;Отключить "Подождите" в Wap Push
+;Disable "Wait" in Wap Push
+;(c) Evgr
+;(p) funMarkus
+;Version: 
+;PatchID: 7961
+;Details: https://patches.kibab.com/patches/details.php5?id=7961
+/*
+
+*/
+06BC896: 01F04DFA C046C046
+;------------------------- end -------------------------
+

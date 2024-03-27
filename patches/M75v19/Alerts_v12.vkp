@@ -1,0 +1,18 @@
+;M75v19
+;Ежечасное событие и звуковые напоминания о пропущенных событиях и состоянии аккумулятора
+;Hourly event and sound alerts after missed events and state of battery
+;(c) avkiev
+;(r) SiNgle
+;(p) Geka
+;Version: 12-MP
+;PatchID: 4916
+;Details: https://patches.kibab.com/patches/details.php5?id=4916
+/*
+Играет мелодии при пропущенных событиях.
+Работает только если телефон находится в режиме Главного экрана, на заставке НЕ РАБОТАЕТ!
+
+*/
+2CC81C: 0E1CD7B03BA936A8 004A9047,0xA0FC4039
+
+;------------------------- end -------------------------
+

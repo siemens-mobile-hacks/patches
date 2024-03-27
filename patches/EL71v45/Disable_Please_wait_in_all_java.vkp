@@ -1,0 +1,16 @@
+;EL71v45
+;Убрать "Пожалуйста, подождите" во всех ява приложениях
+;Disable "Please, wait" in all java-midlets
+;(c) Evgr
+;(p) funMarkus
+;Version: 
+;PatchID: 7966
+;Details: https://patches.kibab.com/patches/details.php5?id=7966
+/*
+;alpha version
+;BUG: black screen instead of wait
+;added by funMarkus: "I have a white screen instead of "wait screen", I don't know the reason why it's white but not black"
+*/
+0A26AEE: 32F7D0F8 C046C046
+;------------------------- end -------------------------
+

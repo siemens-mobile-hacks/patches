@@ -1,0 +1,17 @@
+;S55v20
+;Длинное нажатие кнопки 1 -> запуск мидлета
+;1 long press -> midlet run
+;(c) SiNgle, Chaos
+;(p) ValeraVi
+;Version: 
+;PatchID: 4853
+;Details: https://patches.kibab.com/patches/details.php5?id=4853
+/*
+Мидлет должен иметь путь и имя: A:\Java\Jam\Prog\Prog.jar
+*/
+32B5B6: DA623C2248423D02 DAABE000EA006AB6
+6B00E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FCEE00E6FDAC02E01EFA97ACAF
+6B00EE: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 413A5C4A6176615C6A616D5C50726F67
+6B00FE: FFFFFFFFFFFFFFFFFFFF 5C50726F672E6A617200
+;------------------------- end -------------------------
+

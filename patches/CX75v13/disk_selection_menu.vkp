@@ -1,0 +1,19 @@
+;CX75v13
+;Меню выбора дисков и отображение скрытых файлов и папок
+; Disk selection menu
+;(c) SiNgle
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 760
+;Details: https://patches.kibab.com/patches/details.php5?id=760
+/*
+Позволяет смотреть файлы на скрытых файлах и дисках. Это делается из меню Ещё->Card Explorer, при входе туда для попадания в меню выбора дисков необходимо кратко нажать "1" (при использовании пароля после нажатия "*" необходимо ввести пароль).
+
+EN: Allows to look files on the hidden files and disks. It is done from Other->Card Explorer. When you enter there, it is necessary to press briefly "1" (at use of the password after pressing "*" it is necessary to enter the password) to enter the disk selection menu.
+*/
+03D9168: 0900000A 000055E3
+03D91C4: 3534 2000
+;03D91C4: 20003631 "1234" ;пароль (Password) 1234
+
+;------------------------- end -------------------------
+

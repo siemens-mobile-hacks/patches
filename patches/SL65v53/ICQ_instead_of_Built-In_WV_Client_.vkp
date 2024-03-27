@@ -1,0 +1,27 @@
+;SL65v53
+;Аська вместо встроенного WV-клиента
+;ICQ instead of Built-In WV Client
+;(c) Fuchs, T!ck
+;(r) SiNgle, avkiev, 1nvisible, Stitch
+;Version: 1.0
+;PatchID: 5434
+;Details: https://patches.kibab.com/patches/details.php5?id=5434
+/*
+
+*/
+;* Активизация (ICQ AIM) встроенного WV-клиента ** Enable Built-In WV Client (ICQ AIM) * © SiNgle, § AsteriX
+0AFEA4C: 66 78 ;Появляется в Меню - 5-2 (Menu - 5-2)
+
+;* Аська вместо встроенного WV-клиента ** ICQ instead of Built-In WV Client *
+; (c) Fuchs
+; (i) T!ck 
+; (r) SiNgle, avkiev, 1nvisible, Stitch
+0AFEA50: D153A6A0 0xA0CE9002
+#pragma enable old_equal_ff 
+0CE9000: 0000A0E3FF7F2DE918008FE20030A0E3 
+0CE9010: 0020A0E308409FE50FE0A0E114FF2FE1 
+0CE9020: FFBFBDE8,0xA0C3C5A8 
+0CE9028: "2:\\jimm.jar",0000 ;путь к мидлету, его можно поменять на любой другой. !Слэшей должно быть по два! 
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

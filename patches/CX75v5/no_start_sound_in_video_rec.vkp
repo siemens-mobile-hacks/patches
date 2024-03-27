@@ -1,0 +1,15 @@
+;CX75v5
+;Отключить_звук_в_начале_записи_видео
+;No_start_sound_in_Video_rec
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 463
+;Details: https://patches.kibab.com/patches/details.php5?id=463
+/*
+Отключает звук в начале записи видео.
+*/
+02D8BAC: 1A 1D
+;------------------------- end -------------------------
+

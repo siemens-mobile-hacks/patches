@@ -1,0 +1,26 @@
+;S75v52
+;Прозрачность в Native Menu
+;Transparency in Native Menu
+;(c) SiNgle
+;(p) SimaFish
+;Version: 
+;PatchID: 8404
+;Details: https://patches.kibab.com/patches/details.php5?id=8404
+/*
+
+*/
+;FF000064 - красный
+;00FF0064 - зеленый 
+;0000FF64 - синий
+
+;FFFF0064 - желтый
+;FF00FF64 - розовый
+;00FFFF64 - морской волны
+
+;FF000032 - красный полупрозрачный
+;00FF0016 -  25% прозрачный зеленый
+;0000FF2E - 46 процентов синий
+
+00C13D6C: FFFFFF64 00FF0016 ;rgbt in hex
+;------------------------- end -------------------------
+

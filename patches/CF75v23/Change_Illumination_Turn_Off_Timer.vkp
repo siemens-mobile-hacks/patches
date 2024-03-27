@@ -1,0 +1,15 @@
+;CF75v23
+;Изменение длительности горения подсветки
+;Change Illumination Turn Off Timer
+;(c) benj9
+;Version: 2
+;PatchID: 4873
+;Details: https://patches.kibab.com/patches/details.php5?id=4873
+/*
+
+*/
+09DA768: 0F MS ; MS=0i30 MainScreen (seconds)
+09DA76C: 3C ML ; ML=0i30 Menus, Lists (seconds)
+
+;------------------------- end -------------------------
+

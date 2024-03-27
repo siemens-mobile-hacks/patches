@@ -1,0 +1,14 @@
+;C75v24
+;Отключить Логгинг MMI
+;Disable MMI Logging
+;(c) SiNgle
+;Version: 
+;PatchID: 2948
+;Details: https://patches.kibab.com/patches/details.php5?id=2948
+/*
+Ускоряет действия телефона
+English:speeds up phone operation
+*/
+02A03DD: B5 47 
+;------------------------- end -------------------------
+

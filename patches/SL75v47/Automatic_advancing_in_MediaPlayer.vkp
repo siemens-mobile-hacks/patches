@@ -1,0 +1,16 @@
+;SL75v47
+;Автоматическая прокрутка в MediaPlayer
+;Auto Advancing in MediaPlayer
+;(c) funMarkus
+;(p) loquat
+;Version: 0.2
+;PatchID: 10582
+;Details: https://patches.kibab.com/patches/details.php5?id=10582
+/*
+SL75 has no MMC card, this patch seems not that necessary.
+*/
+5F8994: 3D 1A
+5F8998: 3E 1A
+
+;------------------------- end -------------------------
+

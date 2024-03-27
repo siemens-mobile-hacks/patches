@@ -1,0 +1,15 @@
+;S68v47
+;Сохранение списков при смене SIM-карты
+;Call list saving when SIM is changed
+;(c) starfriend
+;(r) SiNgle
+;(p) klaud
+;Version: 
+;PatchID: 7071
+;Details: https://patches.kibab.com/patches/details.php5?id=7071
+/*
+
+*/
+002D2AD8: E1F0A6EE C046C046
+;------------------------- end -------------------------
+

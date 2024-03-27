@@ -1,0 +1,15 @@
+;SL75v47
+;Ускоритель вывода на дисплей
+;Mainscreen accelerator
+;(c) SiNgle
+;(p) a1ex
+;Version: 
+;PatchID: 6784
+;Details: https://patches.kibab.com/patches/details.php5?id=6784
+/*
+
+*/
+0D902A0: 47F2CAEB A861C046 
+
+;------------------------- end -------------------------
+

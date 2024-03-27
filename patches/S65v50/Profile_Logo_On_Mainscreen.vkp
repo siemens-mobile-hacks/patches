@@ -1,0 +1,27 @@
+;S65v50
+;Лого профиля на главном экране
+;Profile Logo On Mainscreen
+;(c) ACiD[mrp]
+;(p)  BuG,  AsteriX
+;Version: 
+;PatchID: 285
+;Details: https://patches.kibab.com/patches/details.php5?id=285
+/*
+Лого профиля на главном экране . Отображается картинка профиля. на главом экране.
+
+*/
+;Раскомментировать если НЕ установлен патч "Продвинутый индикатор сети v0.13"
+;Uncomment if don't install "Improved net Indicator v0.13"
+;16949C4: 00F0F8FA 4BF024FB
+
+#pragma enable old_equal_ff
+16E0010: 10B5064C636898472068804763680449
+16E0020: 421882210220984710BD000034006EA1
+16E0030: 9504000059958CA0B94F69A1 
+#pragma disable old_equal_ff
+
+;16E0022: 82 A2 ;Y
+;16E0024: 02 3B ;X
+
+;------------------------- end -------------------------
+

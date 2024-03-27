@@ -1,0 +1,14 @@
+;SL75v47
+;Green Button Call Records
+;Green Button Call Dialled to Call Records
+;(c) Evgr
+;(p) loquat
+;Version: 
+;PatchID: 10585
+;Details: https://patches.kibab.com/patches/details.php5?id=10585
+/*
+English:Thanks Evgr
+*/
+345456: ACF0CEEB 00F025F9
+;------------------------- end -------------------------
+

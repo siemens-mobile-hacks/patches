@@ -1,0 +1,23 @@
+;E71v45
+;Отключить разную отладку
+;Disable Registration Logging
+;(c) benj9
+;(p) Grizzzzly
+;Version: 
+;PatchID: 9665
+;Details: https://patches.kibab.com/patches/details.php5?id=9665
+/*
+
+*/
+06A1394: 0F002DE9 1EFF2FE1 ; call
+06A15A4: 70402DE9 1EFF2FE1 ; project
+06A1418: 0F002DE9 1EFF2FE1 ; return
+06A128C: 0F002DE9 1EFF2FE1 ; warning
+06A1310: 0F002DE9 1EFF2FE1 ; critical
+06A149C: 0F002DE9 1EFF2FE1 ; alloc
+06A1180: 0F002DE9 1EFF2FE1 ; info
+06A1208: 0F002DE9 1EFF2FE1 ; verbose
+06A1520: 0F002DE9 1EFF2FE1 ; free
+
+;------------------------- end -------------------------
+

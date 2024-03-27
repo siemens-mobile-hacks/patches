@@ -1,0 +1,14 @@
+;E71v45
+;Блокировка клавиатуры при коротком нажатии на красную кнопку
+;Keypad lock when press red button 
+;(c) Saifaye 
+;(r) Evgr
+;Version: 
+;PatchID: 10229
+;Details: https://patches.kibab.com/patches/details.php5?id=10229
+/*
+Отлично смотрится с 8742
+*/
+0702456: F6F08CEE E5F78CFF
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;C72v22
+;Изменение шрифта окошек в Разработчике 
+;Change font in Developer windows
+;(c) Evgr
+;Version: 
+;PatchID: 10485
+;Details: https://patches.kibab.com/patches/details.php5?id=10485
+/*
+
+*/
+0949820: 03 08 
+
+;------------------------- end -------------------------
+

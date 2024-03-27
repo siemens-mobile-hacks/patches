@@ -1,0 +1,14 @@
+;C75v24
+;Увеличить фото при входящем звонке
+;Enlarge Incoming Call Photo
+;(c) SiNgle
+;Version: 1
+;PatchID: 2929
+;Details: https://patches.kibab.com/patches/details.php5?id=2929
+/*
+
+*/
+04E8922: 0521042001910090502280 00210020019100908422A8 ; CX65, M65, S65, SK65
+04E892A: 502280 842278 ; SL65, C65
+;------------------------- end -------------------------
+

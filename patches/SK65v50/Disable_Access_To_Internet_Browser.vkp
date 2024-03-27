@@ -1,0 +1,16 @@
+;SK65v50
+;Отключить доступ к интернет-браузеру
+;Disable Access To Internet Browser
+;(c) KiRiK
+;Version: 
+;PatchID: 2482
+;Details: https://patches.kibab.com/patches/details.php5?id=2482
+/*
+
+*/
+045F080: D58831A0 00000000 ;disable Internet INTR_STRTBROWSR
+045F04C: EF8831A0 00000000 ;disable Bookmarks INTR_BBOOKMARKS
+045EA00: CD9231A0 00000000 ;disable DevMenu ELSE_DEVELP_MNU
+
+;------------------------- end -------------------------
+

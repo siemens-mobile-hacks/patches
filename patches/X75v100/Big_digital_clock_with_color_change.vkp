@@ -1,0 +1,22 @@
+;X75v100
+;Большие цифровые часы с изменением цвета
+;Big digital clock with color change
+;(c) avkiev
+;(r) (i) Lisugar, ~Jhellico
+;(p) -=(Kad)=-
+;Version: 2.0
+;PatchID: 6659
+;Details: https://patches.kibab.com/patches/details.php5?id=6659
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Big_digital_clock_with_color_change.zip
+
+/*
+Обновление! Совместимость с загрузчиком эльфов 2.2
+Патч обновлён для совместимостью с подрезкой кучи
+
+Всем известный патч с изменением цвета и расстояниея между цифрами
+
+Для получения маленьких часиков как на скрине ставим gpn 6660
+*/
+;
+;------------------------- end -------------------------
+

@@ -1,0 +1,20 @@
+;MC60v10
+;Инверсия нажатия правой soft-кнопки
+;Inversion of pressing right soft-button
+;(c) Baloo
+;(p) Kanibaals
+;Version: 
+;PatchID: 3628
+;Details: https://patches.kibab.com/patches/details.php5?id=3628
+/*
+Этот патч исправляет неприятнося при использовании правой софт-кнопки, когда вам приходилось удерживать ее в течении нескольких секунд, чтобы задействовать пункт, и коротко нажимать, чтобы переназначить его. Теперь все будет наоборот.
+
+English:Short press of right softkey -> execute
+Long press to change softkey function
+
+*/
+000D3EA4: CE3F 0243
+000D4112: 0243 CE3F
+
+;------------------------- end -------------------------
+

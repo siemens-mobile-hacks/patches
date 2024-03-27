@@ -1,0 +1,45 @@
+;EL71v45
+;Звук при начале и завершении разговора
+;Sound at connect and end of call
+;(c) -=(Kad)=-, SiNgle, avkiev
+;(p) Visad
+;Version: 0.2-MP
+;PatchID: 9120
+;Details: https://patches.kibab.com/patches/details.php5?id=9120
+/*
+Воспроизводит звук в момент соединения и после завершения звонка на окошке "Соедин. завершено!"
+*/
+
+D9DE28: 2A1C2B1C09211730 004B9847,0xA007010B ; At connect
+663CF0: 444A2B1C70320021 00498847,0xA0070133 ; At end of call
+663CF8: 0120 424A
+
+#pragma enable old_equal_ff
+007010A: 2A1C2B1C0921
+0070110: 1730FFB51348C4DF05D0071C7878B978
+0070120: 7A68FB7898DFFFBC08BC04331847C046
+0070132: 2B1C703200210120FFB50948C4DF
+0070140: 09D0071C787AB97AFA68FB7A98DF387C
+0070150: FF2800D033DFFFBC02BC04310847
+
+0070160: 0xB1C2D3E4,0x00110408,0000000000000000,"\
+{p=`End of call sound` id=110408 ver=0.2}","\
+{info `Play sound at connect and end of call`}","\
+{c typ `SMS sound+vibra`=0x10 `Accu low pow`=0x1F `Video sound`=0x1E `Cam sound`=0x1D `Phone On sound`=0x17 `Phone Off sound`=0x18 `No sound`=0xFF}\
+{sm `Connection sound`}\
+{1 h `Sound №` v=90}","\
+{2 b Freq v=10}","\
+{4 ms Duration v=45}","\
+{3 cb `Play if vibra off` v=1}","\
+{endsm}\
+{sm `End of call sound`}\
+{9 h `Sound №` v=90}","\
+{10 b Freq v=10}","\
+{12 ms Duration v=45}","\
+{11 cb `Play if vibra off` v=1}","\
+{16 o `Second sound` c=typ v=0xFF}","\
+{endsm}\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v52
+;Отключить Подождите в Inbox
+;Remove Wait before Unified Inbox
+;(c) benj9
+;(p) Виктор89
+;Version: 
+;PatchID: 9012
+;Details: https://patches.kibab.com/patches/details.php5?id=9012
+/*
+
+*/
+04CB542: 93F12EE8 C046C046
+;------------------------- end -------------------------
+

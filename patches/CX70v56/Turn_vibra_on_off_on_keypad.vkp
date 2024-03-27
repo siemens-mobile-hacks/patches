@@ -1,0 +1,16 @@
+;CX70v56
+;Включение/выключение вибры при блокировке/разблокировке клавиатуры
+;Turn vibra on/off on keypad lock/unlock
+;(c) ~Jhellico
+;(r) empeka
+;(p) SiamiX
+;Version: 0.3
+;PatchID: 4624
+;Details: https://patches.kibab.com/patches/details.php5?id=4624
+/*
+
+*/
+0CB6A00: 1039886001210320 004FB847,0xA0FC7001
+0CB6D88: 0120886001210320 004FB847,0xA0FC7005
+;------------------------- end -------------------------
+

@@ -1,0 +1,29 @@
+;SL45iv56
+;Прямой доступ к памяти из Java
+;Direct memory access from Java
+;(c) mamaich
+;Version: 
+;PatchID: 1725
+;Details: https://patches.kibab.com/patches/details.php5?id=1725
+/*
+Release: December 11, 2003
+
+Взято из
+*** Сборник патчей (c) mamaich. Версия 0.71 beta ***
+*/
+10cba8: ee4401 0200Ef
+241fe4: 8d24 CC00
+241ff2: 9d20 cc00
+242006: 9d19 cc00
+24200c: 8d16 cc00
+241f28: 9d1e cc00
+241f44: 9d13 cc00
+20C20A: ED07 CC00
+22B9DA: 3d   0D
+22D116: ED   0D
+2B0A9E: 9BFE cc00
+215e12: E64734B79BFE E0FCC4C09203
+2DCA7F: 30 00
+2b0bf4: 9bfe cc00
+;------------------------- end -------------------------
+

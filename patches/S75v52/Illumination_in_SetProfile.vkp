@@ -1,0 +1,14 @@
+;S75v52
+;Подсветка при смене профиля
+;Illumination in SetProfile
+;(c) BoBa
+;(p) SimaFish
+;Version: 
+;PatchID: 8791
+;Details: https://patches.kibab.com/patches/details.php5?id=8791
+/*
+
+*/
+02CF522: 1CF1D8EA C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,31 @@
+;M75v19
+;Extra Info on ProgressBars
+;Extra Info on ProgressBars
+;(c) 1nvisible
+;(p) Geka
+;Version: 2 av
+;PatchID: 4697
+;Details: https://patches.kibab.com/patches/details.php5?id=4697
+/*
+от Мастер-патча v5 ничего не зависит
+*/
+04AD20c: 28A12EA000000000 0xA0FC7D35,0xA0FC7D25
+04B87e4: 0000000000000000 0xA0FC7D35,0xA0FC7D25
+
+08AA5f0: 216B000C4143E06A87F18cEE 004FB847,0xA0FC7D51,C046C046
+08AA6a8: 0C20185E231C4BF7 004FB847,0xA0FC7DD9
+
+0FC7D4C: FFFFFFFF 0xA851D898
+
+;Обновление библиотеки:
+
++0FD4000
+#pragma enable old_equal_ff
+27C: 0xA07F5F1B ; f159: DrawRect
+290: 0xA07BC86F ; f164: wsAlloc
+294: 0xA07BC8AB ; f165: wsFree
+#pragma disable old_equal_ff
++0
+
+;------------------------- end -------------------------
+

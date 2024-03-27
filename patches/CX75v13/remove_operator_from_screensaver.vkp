@@ -1,0 +1,17 @@
+;CX75v13
+;Удаление оператора с экрана скринсейвера
+;Remove operator from screensaver
+;(c) TAPAKAH
+;Version: 1.0
+;PatchID: 800
+;Details: https://patches.kibab.com/patches/details.php5?id=800
+/*
+RUS: Патч удаляет надпись с именем оператора с экрана скринсейвера.
+
+ENG: The patch deletes an inscription with a name of the operator from the screen of a screensaver.
+*/
+04ABDA0: 00 01
+04ABE10: 00 01
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;M75v19
+;Включение Выбора диапозона
+;Enable Band Selection
+;(c) Bennie
+;Version: 
+;PatchID: 2343
+;Details: https://patches.kibab.com/patches/details.php5?id=2343
+/*
+
+*/
+04D791C: 0502 FA01
+;------------------------- end -------------------------
+

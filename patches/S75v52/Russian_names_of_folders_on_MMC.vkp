@@ -1,0 +1,17 @@
+;S75v52
+;Русификация папок на MMC
+;Russian names of folders on MMC
+;(c) RainMaker AKA Shadow® , .::L:A:V::. 
+;(r) Zl0d
+;(p) Serega65
+;Version: 
+;PatchID: 9327
+;Details: https://patches.kibab.com/patches/details.php5?id=9327
+/*
+
+*/
+0672846: 50006900630074007500720065007300 1A0430044004420438043D043A043804 ; Pictures=>Рисунки
+0672882: 56006900640065006F007300 12043804340435043E040000 ; Videos=>Видео
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;EL71v45
+;Выключение звука отдельно для каждого профиля
+;Mute per profile
+;(c) BuG
+;Version: 1
+;PatchID: 7992
+;Details: https://patches.kibab.com/patches/details.php5?id=7992
+/*
+В мастер мидлете выбираем профиль..и при включении этого профиля отрубаются звуки....вроде так:-D 
+*/
+06FFC54: 9AF6 05E0 ; don't reset ringtone state on profile change
+05AE9EC: FFF7C9FF051C0120 004FB84711B706A0
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v52
+;Удалить нет новых сообщений при проверке email
+;Remove "No new messages" on "Retrieve email
+;(c) benj9
+;(p) den11111
+;Version: 
+;PatchID: 8292
+;Details: https://patches.kibab.com/patches/details.php5?id=8292
+/*
+
+*/
+0EFAF4E: 081C 7047
+;------------------------- end -------------------------
+

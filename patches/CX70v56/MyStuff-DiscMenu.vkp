@@ -1,0 +1,24 @@
+;CX70v56
+;Моё Меню = Диск Меню
+;MyStuff = Disk Menu
+;(c) LinuXrULz
+;(p) MiumiX
+;Version: 
+;PatchID: 4702
+;Details: https://patches.kibab.com/patches/details.php5?id=4702
+/*
+--- Для доступа к дискам Cache и Config из MyStuff (MyStuff Creator)
+
+--- Enables access to Cache and Config discs from MyStuff (MyStuff Creator)
+*/
+0A4F92A: 0C 04
+
+0A4F92C: 32 31
+
+0A4F932: 43 00
+
+0A4F954: 0C 04
+
+0A4F95C: 43 00
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;SL45iv56
+;Изменить софт-клавиши "Выкл/Пауза" при сигнале напоминания
+;Change Softkeys "OFF/PAUSE" on Appointment ringing
+;(c) greenteas
+;Version: 
+;PatchID: 2112
+;Details: https://patches.kibab.com/patches/details.php5?id=2112
+/*
+
+*/
+3CA9D2: 12 13 
+3CA9D8: 13 12 
+1A2F16: EF01 6800;6800-off 
+1A2F1C: 6800 EF01;EF01-pause
+;------------------------- end -------------------------
+

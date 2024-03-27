@@ -1,0 +1,16 @@
+;EL71v41
+;Увеличение скорости просмотра USSD сообщений
+;Speed USSD
+;(c) SiNgle
+;(r) StrikerVoo
+;(p) Siemann
+;Version: 
+;PatchID: 7123
+;Details: https://patches.kibab.com/patches/details.php5?id=7123
+/*
+
+*/
+05C07E8: D007 0003
+05C0805: 0B 03
+;------------------------- end -------------------------
+

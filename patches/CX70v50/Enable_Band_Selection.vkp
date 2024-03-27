@@ -1,0 +1,15 @@
+;CX70v50
+;Включить выбор диапазона
+;Enable Band Selection
+;(c) Bennie
+;(p) AsteriX
+;Version: 
+;PatchID: 88
+;Details: https://patches.kibab.com/patches/details.php5?id=88
+/*
+Включается выбор диапазона, появляется в меню (9-12-5).
+*/
+1735848: 0502 FA01
+
+;------------------------- end -------------------------
+

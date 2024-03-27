@@ -1,0 +1,14 @@
+;S75v52
+;Не показывать помощника при загрузке
+;Don't SHOW Startup Assistant
+;(c) benj9
+;(p) Feyman
+;Version: 
+;PatchID: 8515
+;Details: https://patches.kibab.com/patches/details.php5?id=8515
+/*
+
+*/
+3447C8: A7F00AEE C046C046
+;------------------------- end -------------------------
+

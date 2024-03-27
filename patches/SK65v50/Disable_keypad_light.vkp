@@ -1,0 +1,15 @@
+;SK65v50
+;Отключить подсветку кнопок
+;Disable keypad light
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 2489
+;Details: https://patches.kibab.com/patches/details.php5?id=2489
+/*
+
+*/
+0715907: D5 24
+
+;------------------------- end -------------------------
+

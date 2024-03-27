@@ -1,0 +1,20 @@
+;X75v100
+;Unzip
+;Unzip
+;(c) cbn
+;(r) Rst7
+;Version: 0.4
+;PatchID: 5963
+;Details: https://patches.kibab.com/patches/details.php5?id=5963
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Unzip_04.zip
+
+/*
+Распаковщик Zip архивов
+*/
+Распаковщик Zip архивов
+Добавить в extension.cfg:
+zip:4:\ZBin\Unzip.elf
+После запуска выходим и заходим назад в папку
+Качаем приложенный файл
+;------------------------- end -------------------------
+

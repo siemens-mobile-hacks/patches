@@ -1,0 +1,16 @@
+;S65v58
+;Сброс звонка по достижении определенного времени
+;Drop Call On Certain Time
+;(c) 1nvisible
+;(p) ~Jhellico,Apo4emu
+;Version: 1.2
+;PatchID: 2898
+;Details: https://patches.kibab.com/patches/details.php5?id=2898
+/*
+Подправлены адреса тела
+*/
+0B895D8: 00F029FD01300004000C 004CA047,0x0FC4B01,C046
+
+
+;------------------------- end -------------------------
+

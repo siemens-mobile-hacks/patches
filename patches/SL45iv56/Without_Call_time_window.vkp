@@ -1,0 +1,23 @@
+;SL45iv56
+;Без окна "Время разговора" когда пикают минуты при разговоре
+;Without "Call time" window when Call Minutes Beep during conversation
+;(c) lzuzyy, abomin
+;(r) Xinshou
+;Version: 
+;PatchID: 3879
+;Details: https://patches.kibab.com/patches/details.php5?id=3879
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=Without_Call_time_window.zip
+
+/*
+В прикрепленном архиве лежит бинарник "Время послоеднего разговора". Он работает только через ярлыки (см. патч EBIN - id2038); НЕ работает через card-explorer.
+
+
+English:
+In attached archive there is little bin-file "Last call duration". Works only by shortcut (see EBIN patch), not from the explorer!
+
+
+Release: 24.06.06
+*/
+1F32: DAC164B1 DAC35402
+;------------------------- end -------------------------
+

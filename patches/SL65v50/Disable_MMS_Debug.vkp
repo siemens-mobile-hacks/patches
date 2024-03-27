@@ -1,0 +1,15 @@
+;SL65v50
+;Disable MMS Debug
+;Disable MMS Debug
+;(c) 1nvisible
+;(p) Strike66, Волк
+;Version: 
+;PatchID: 3446
+;Details: https://patches.kibab.com/patches/details.php5?id=3446
+/*
+Ускоряет работу телефона.
+*/
+0A22634: 0FB4 7047
+0A22724: F0B5 7047
+;------------------------- end -------------------------
+

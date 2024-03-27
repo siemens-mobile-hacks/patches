@@ -1,0 +1,13 @@
+;S55v20
+;Отключить сообщение "Получено новое сообщение
+;Disable Message "new SMS"
+;(c) $Lava
+;Version: 
+;PatchID: 5054
+;Details: https://patches.kibab.com/patches/details.php5?id=5054
+/*
+
+*/
+3384B6: E6FC3600 EA009485
+;------------------------- end -------------------------
+

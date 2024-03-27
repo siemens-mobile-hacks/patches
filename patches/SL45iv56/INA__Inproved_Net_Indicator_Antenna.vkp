@@ -1,0 +1,41 @@
+;SL45iv56
+;INA. Улучшеная антенна индикатора сети
+;INA. Inproved Net Indicator Antenna Symbol Addon
+;(c) thE prEtEndEr
+;Version: 
+;PatchID: 2640
+;Details: https://patches.kibab.com/patches/details.php5?id=2640
+/*
+Патч добавляет маленький символ антенны рядом с полями улучшеного индикатора сети.
+
+Нужны патчи Улучшеного индикатора уровня сигнала и A1P (только при использовании картинки №817)
+
+English: This patch adds a small antenna symbol right before the Improved Net Indicator bars.
+
+You will need Improved Net Indicator patch and A1P patch (only when using image #817)
+
+Release: November 29th, 2005
+Update: December 1st, 2005
+*/
+; change hooks of Net Indicator to new location
+0x454BD0: DAE010CA DAE004CA
+0x3B36EA: DAE010CA DAE004CA
+
+; adjust position of first indicator bar
+; to have free space for antenna symbol
+0x40CA15: 0C 6C ; xC -> x-position
+0x40CA81: C0 C6 ; Cx -> x-position (need to change both values)
+
+; draw antenna symbol
+0x40CA04: FFFF E6FE
+0x40CA06: FFFF 3103 ; 331h = image #817 (need A1P)
+0x40CA08: FFFF E01C ; xC -> x-position
+0x40CA0A: FFFF E00D ; yD -> y-position
+0x40CA0C: FFFF DAC1
+0x40CA0E: FFFF EC22
+
+; ##### Picture 817 (Antenna Symbol) #####
+4BBE3E: 010101000000FC02 06090100E600EC02
+1B00E6: FFFFFFFFFFFFFFFFFF 038BAB73232373FB03
+;------------------------- end -------------------------
+

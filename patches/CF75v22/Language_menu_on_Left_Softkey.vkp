@@ -1,0 +1,18 @@
+;CF75v22
+;Меню выбора языка ввода при нажатии Help (Инф. Т9)
+;Input language menu on Help key (Т9 info)
+;(c) SiNgle
+;(p) ~Jhellico
+;Version: 
+;PatchID: 1512
+;Details: https://patches.kibab.com/patches/details.php5?id=1512
+/*
+
+*/
+0405742: 794900227948 B4F7A1F980BD ;в MMS
+041E5A6: 75F040E9 9BF76FFA ;в e-mail
+04E18C6: FFF777FF D8F6DFF8 ;в SMS
+0552714: 9FF03CE8 67F6B8F9 ;в заметках
+
+;------------------------- end -------------------------
+

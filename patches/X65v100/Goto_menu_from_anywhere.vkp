@@ -1,0 +1,29 @@
+;X65v100
+;Из любого места попадаем в меню
+;Goto menu anywhere
+;(c) Single
+;(r) KreN
+;(p) andrey_ua
+;Version: 2
+;PatchID: 3601
+;Details: https://patches.kibab.com/patches/details.php5?id=3601
+/*
+Патч позволяет выходить в меню ОТОВСЮДУ, в том числе из ява-приложений.
+Должен быть включен DevMenu и в пункте LOGAL\options - нажать Enable ###. 
+English: Patch allows to reach main menu from EVERYWHERE, including Java-applications.  Must be enabled Developer menu. Goto DevMenu\LOGAL\options and press Enable ###
+*/
+#pragma enable old_equal_ff
+0FC3700: FFB51848FDF77CFA0AD0B11CFCF7D8FF
+0FC3710: 002508783870013101370135032DF8D1
+0FC3720: 7FBCFCF7CDFF3D1C80BC321C893D6868
+0FC3730: 02BC04318F46FFB50A48FDF761FA07D0
+0FC3740: 7078002802D1FCF7DBFD01E0FCF7DCFD
+0FC3750: FFBC8019884200D100BD08BC08339F46
+0FC3760: 0xB1C2D3E4,0xff03,00000000000000000000,"\
+{patch=`Goto menu anywhere` version=2.0 cp=andrey_ua id=ff03 }","\
+{1 o Mode `Main Menu`=0 `Native Menu`=1}","\
+{2 s Str maxlen=3 v=`***`}",00
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

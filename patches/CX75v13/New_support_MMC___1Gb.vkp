@@ -1,0 +1,20 @@
+;CX75v13
+;Поддержка MMC карт больше 1 Гб
+;New support MMC > 1Gb
+;(c) DebriZ
+;Version: 
+;PatchID: 9322
+;Details: https://patches.kibab.com/patches/details.php5?id=9322
+/*
+
+*/
+02E0DE8: 07 08
+02E0E6E: 302E303000 20302E3030
+
+0A8AB84: 32 C8
+0A8B618: 32 C8
+0A8A9F8: 0C209DE5000052E3 2230DDE5A220A0E1
+0A8AA00: 30209D1500005213 013083E22230CDE5
+0A8AA08: 0000001A5C1080E5 F6FFFFEA5C1080E5
+;------------------------- end -------------------------
+

@@ -1,0 +1,52 @@
+;SX1v15
+;Ежеминутная вибра ver2
+;Every minute vibration ver2
+;(c) Rascal
+;Version: 2
+;PatchID: 8455
+;Details: https://patches.kibab.com/patches/details.php5?id=8455
+/*
+Ежеминутная вибра v2 © Rascal
+SX1v15 
+Патч в формате V-Klay для Egold !!!
+Патч для обладателей S-key или порезанных тестпоинтов.
+Egold fw15 only !
+
+необходим установленный 'Мастер патч v1'
+
+Выбор времени срабатывания - 1*время в секундах
+Например после звонка на номер 1*50 вибра будет срабатывать на 50 секунде
+*/
+; Ежеминутная вибра v2 © Rascal
+; SX1v15 
+; Патч в формате V-Klay для Egold !!!
+; Патч для обладателей S-key или порезанных тестпоинтов.
+; Egold fw15 only !
+
+; необходим установленный 'Мастер патч v1'
+
+; Выбор времени срабатывания - 1*время в секундах
+; Например после звонка на номер 1*50 вибра будет срабатывать на 50 секунде
+
+013990: DA85DAA3 CC00CC00
+013994: 4841 CC00 
+013996: 3D13 CC00
+0139AE: E6FC0C04 DAFDA010 
+0139B2: E6FD1300 CC00CC00
+0139B6: E6FE5A00 CC00CC00
+0139BA: DA01AC95 CC00CC00
+0139A8: F2F40CFE DAFDE010
+7D10A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA01FE8ADA8AB2FDE6FC2F00DA8B3EDD
+7D10B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FCD610E6FDFD00E00E88D088C088E0
+7D10C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FCF008E00DE6FE1000E00FDAB832DC
+7D10D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0806FA01088BE00CDA8B3EDDFA8AC2FD
+7D10E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400000F2F50009F2F40CFE4045DB00
+7D10F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E005DC4DA84C49902D1927F9300047F9
+7D1100: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0900ED1327F8300047F80900ED0E4980
+7D1110: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D0407FA0A0029810DFA01A9D7400000
+7D1120: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F6F50009E04CDA8B3EDDDB0027F83000
+7D1130: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 47F80900EDFAF1A80DF1
+71307A: 6E30F100 F010FD00
+7D10C8: 10 08 ;длительность вибры 
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v52
+;Открыть заблокированные блоки EEPROM
+;OpenHiddenEEPROM (OpenClosedEEPROM)
+;(c) Skylord
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8314
+;Details: https://patches.kibab.com/patches/details.php5?id=8314
+/*
+
+*/
+0262DA8: 00 01
+;------------------------- end -------------------------
+

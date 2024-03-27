@@ -1,0 +1,14 @@
+;CF75v23
+;Отключение браузера
+;Browser killer
+;(c) Zhek@
+;(p) Dimadze
+;Version: 
+;PatchID: 9712
+;Details: https://patches.kibab.com/patches/details.php5?id=9712
+/*
+
+*/
+050B8DC: FEF74BFB C046C046
+;------------------------- end -------------------------
+

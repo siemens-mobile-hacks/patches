@@ -1,0 +1,19 @@
+;C81v51
+;Отправка Flash SMS
+;DSFS Directly Send Flash SMS
+;(c) Bennie
+;(p) den11111
+;Version: 
+;PatchID: 8215
+;Details: https://patches.kibab.com/patches/details.php5?id=8215
+/*
+в начале сообщения поставьте пробел и пишите с маленькой буквы..иначе будет обычное смс
+*/
+0E2E4B0: 201CB168 92F6BEF8
+#pragma enable old_equal_ff
+0CC0630: 201CB8380178082906D000290CD1417B
+0CC0640: 7F221140F02204E0437B817B1B02C918
+0CC0640: 1822202900D10270201CB1687047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

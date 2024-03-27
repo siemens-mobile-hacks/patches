@@ -1,0 +1,14 @@
+;S75v52
+;Отключить окно и подсветку при извлечении MMC
+;Disable window&light when eject the MMC
+;(c) dimonp25
+;(p) Feyman
+;Version: 
+;PatchID: 9474
+;Details: https://patches.kibab.com/patches/details.php5?id=9474
+/*
+
+*/
+029CBD4: 0320 12E0
+;------------------------- end -------------------------
+

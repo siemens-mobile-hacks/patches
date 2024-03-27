@@ -1,0 +1,13 @@
+;M75v25
+;Отключить подсветку кнопок
+;Disable keypad light
+;(c) SiNgle
+;Version: 
+;PatchID: 4089
+;Details: https://patches.kibab.com/patches/details.php5?id=4089
+/*
+
+*/
+07D689F: D5 24
+;------------------------- end -------------------------
+

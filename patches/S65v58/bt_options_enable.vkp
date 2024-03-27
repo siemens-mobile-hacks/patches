@@ -1,0 +1,24 @@
+;S65v58
+;Использовать экстра-опции bluetooth-монитора
+;Enable extra options of the bluetooth monitor
+;(c) funMarkus
+;(p) dimonp25
+;Version: 
+;PatchID: 9007
+;Details: https://patches.kibab.com/patches/details.php5?id=9007
+/*
+Добавил тока 4 необходимые включалки:
+1)Enable bluetooth power saving;
+2)Set to 2.56ms
+3)Block AFH chnl
+4)Java sec. low
+
+
+*/
+08e71e6: 00 01 ; Enable bluetooth power saving
+08e71f6: 01210903 08210902 ; Set to 2.56ms
+08e7258: 00 01 ; Block AFH chnl
+08e7210: 00 01 ; Java sec. low
+
+;------------------------- end -------------------------
+

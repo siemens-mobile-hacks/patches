@@ -1,0 +1,20 @@
+;EL71v45
+;Не читать хвид по ногам гпио для запуска прошивки EL71 на S68
+;Do not read HWID from GPIO to enable running EL71 firmware on S68
+;(c) Marie
+;(r) Azq2
+;Version: 1.0
+;PatchID: 10701
+;Details: https://patches.kibab.com/patches/details.php5?id=10701
+/*
+Пропускаем весь код, который рассчитывает хвид из состояния ног гпио, сразу переходим к делу
+Не имеет ничего общего с патчами "HWID Changer", "HWID Remover (Skip check)" и дополнением "Add interpreter fix"
+Нужен чтобы полноценно запускать прошивку EL71 на S68 (и не только!)
+English:Skip all the code that calculates the HWID from the state of the GPIO legs and get straight to the point.
+Has nothing to do with the patches "HWID Changer", "HWID Remover (Skip check)" and the addition "Add interpreter fix"
+Needed to fully run the EL71 firmware on the S68 (and not only!)
+*/
+0561240: 0060A0E3 0860A0E3 ; mov r6, 0	->	mov r6, 8
+0561244: 850085E0 130000EB ; bl 0xa0561298
+;------------------------- end -------------------------
+

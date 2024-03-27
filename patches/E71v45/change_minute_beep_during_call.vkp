@@ -1,0 +1,16 @@
+;E71v45
+;Изменение времени подачи ежеминутного сигнала во время разговора
+;Сhange minute beep during call
+;(c) SiNgle
+;(p) sempai
+;Version: 
+;PatchID: 9661
+;Details: https://patches.kibab.com/patches/details.php5?id=9661
+/*
+RUS: Изменяет время подачи минутного сигнала во время разговора. 
+
+ENG: Changes time of submission of a minute signal during conversation.
+*/
+09AD3BE: 00 0i055 ; 55 сек
+;------------------------- end -------------------------
+

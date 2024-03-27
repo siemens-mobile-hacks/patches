@@ -1,0 +1,18 @@
+;CX75v25
+;Меню выбора языка ввода при нажатии Help (Инф. Т9)
+;Input language menu on Help key (Т9 info)
+;(c) SiNgle
+;(r) Gurza
+;(p) Geka
+;Version: 1
+;PatchID: 5463
+;Details: https://patches.kibab.com/patches/details.php5?id=5463
+/*
+
+*/
+4193A2: 794900227948 9EF7CDFB80BD ;в MMS
+5B8E36: 55F7c7Fe FEF583FE ;в e-mail
+58A098: 9CF0f0Ef 2DF652FD ;в заметках
+50ECDA: FFF775FF  A8F631FF ;в SMS
+;------------------------- end -------------------------
+

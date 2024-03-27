@@ -1,0 +1,18 @@
+;A52v9
+;Индикатор статуса вибры
+;The indicator of the status vibra
+;(c) Ramil_
+;Version: 5
+;PatchID: 4381
+;Details: https://patches.kibab.com/patches/details.php5?id=4381
+/*
+
+*/
+1E8A6A: DA9158B5 DA860C78
+06780C: FFFFFFFFFFFFFFFFFFFFFFFF DAA014E547F8FF002D07E6FC
+067818: FFFFFFFFFFFFFFFFFFFFFFFF 4101DAA46EE80881FA9158B5
+;Картинка 321
+2F4A08: 13078100 0B078100
+2F13BF: 0E8F69120332240D49103624415224078D 271444542A3E2A551114720F0F0F0F0F0F
+;------------------------- end -------------------------
+

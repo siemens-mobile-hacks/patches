@@ -1,0 +1,16 @@
+;S75v47
+;Открывать видео сразу во весь экран
+;Open video fullscreen immediately
+;(c) Ganster41
+;(p) dimonp25
+;Version: 
+;PatchID: 9563
+;Details: https://patches.kibab.com/patches/details.php5?id=9563
+/*
+
+*/
+05a79c4: 00 01
+05a79ce: 00 01
+
+;------------------------- end -------------------------
+

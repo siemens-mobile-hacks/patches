@@ -1,0 +1,23 @@
+;CF75v22
+;Диспетчер графических патчей
+;GraphPatchManager
+;(c) KreN
+;(r) 1nvisible
+;(p) ~Jhellico
+;Version: 3.1
+;PatchID: 4244
+;Details: https://patches.kibab.com/patches/details.php5?id=4244
+/*
+
+*/
+02A96DE: 1883261C002D05900490 C046,004FB847,0xA0F03E01
+
++0F00000
+#pragma enable old_equal_ff
+3E00: 1883261C05900490FFB50120FCF700FC
+3E10: 696904300268002A03D003B4904703BC
+3E20: F7E7FFBC002D0BF004E9
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

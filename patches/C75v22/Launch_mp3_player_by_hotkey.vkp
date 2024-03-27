@@ -1,0 +1,27 @@
+;C75v22
+;Запуск проигрывателя мп3 по горячей клавише
+;Start of a player mp3 on a shortcut
+;(c) SuDex
+;(r) Kibab
+;Version: 0.1
+;PatchID: 6934
+;Details: https://patches.kibab.com/patches/details.php5?id=6934
+/*
+Запускает плеер при нажптии на горячую клавишу.
+*/
+/*
+Вешаем на горячую клавишу "Буддийский год" и срабатывает эльф mp3.
+;20: "0:\\ZBin\\mp3.elf",00 - эльф должен иметь имя mp3 и расширение elf т.е. mp3.elf :))
+*/
+04A2710: 418C32A0 0xA10CA18B ;Буддийский год (посчитал, что мало кому нужен :))
+
++10CA18A ;C75
+#pragma enable old_equal_ff
+00: FFB58020C7DF2501061C05A18022C7DF
+10: 6C010021301C94DF301CC7DF2901FFBD
+20: "0:\\ZBin\\mp3.elf",00
+#pragma disable old_equal_ff
++0
+
+;------------------------- end -------------------------
+

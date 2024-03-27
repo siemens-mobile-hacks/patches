@@ -1,0 +1,15 @@
+;C65v50
+;Сжатие jpeg с максимальным кач-вом (100% вместо 75%)
+;Maximum Jpeg compression (100% instead of 75%)
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 242
+;Details: https://patches.kibab.com/patches/details.php5?id=242
+/*
+Сжатие jpeg с максимальным кач-вом (100% вместо 75%)
+
+*/
+09D4284: 4B 64
+;------------------------- end -------------------------
+

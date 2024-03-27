@@ -1,0 +1,13 @@
+;SL75v47
+;фикс смс меню в native menu
+;Fix sms menu v native menu
+;(c) bertgrin
+;Version: 
+;PatchID: 9481
+;Details: https://patches.kibab.com/patches/details.php5?id=9481
+/*
+Теперь запускаеться
+*/
+43BBE4: 83D632 A1E832
+;------------------------- end -------------------------
+

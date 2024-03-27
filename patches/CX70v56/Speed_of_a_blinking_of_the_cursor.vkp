@@ -1,0 +1,14 @@
+;CX70v56
+;Скорость мигания курсора
+;Speed of a blinking of the cursor
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 679
+;Details: https://patches.kibab.com/patches/details.php5?id=679
+/*
+Скорость мигания курсора.
+*/
+093C740: 2C01 8003
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;C72v22
+;Диспатчер главного экрана
+;Mainscreen-dispatcher
+;(c) avkiev
+;(r) KreN
+;(p) Virusmater
+;Version: 3.1
+;PatchID: 7599
+;Details: https://patches.kibab.com/patches/details.php5?id=7599
+/*
+
+*/
+08C4C3C: 261C002D05900490 004FB847,0xA0FC3E01
+;------------------------- end -------------------------
+

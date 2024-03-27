@@ -1,0 +1,25 @@
+;SL45iv56
+;DMM. Модификация монитора диктофона
+;DMM. Dictaphone Monitor Modification
+;(c) rizapn
+;Version: 1.1
+;PatchID: 1901
+;Details: https://patches.kibab.com/patches/details.php5?id=1901
+/*
+Модифицирует в диктофоне play и finish методы, для помещения дополнительного флага 
+для проверки проигрывания диктофона.
+
+
+Created: August 14, 2004 
+Updated: Aug 24, 2004 (v1.1)
+
+Патч №204 (обновление 1) с http://patch.oslik.ru/SL45_RU
+*/
+0x352776: 46F60900 FAE4104C 
+
+0x444C00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2A2A2A20444D4D2076312E31202A2A2A 
+0x444C10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7700C00F3F81E10F7FC1E1046F60900 
+0x444C20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D02FAD57A274981CD044987AD02FAD5 
+0x444C30: FFFFFFFFFFFF AE28FAD51228
+;------------------------- end -------------------------
+

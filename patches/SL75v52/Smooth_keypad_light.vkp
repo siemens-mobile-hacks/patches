@@ -1,0 +1,14 @@
+;SL75v52
+;Плавное включение подсветки
+;Smooth keypad light
+;(c) SiNgle
+;(p) kiREALlov
+;Version: 
+;PatchID: 7667
+;Details: https://patches.kibab.com/patches/details.php5?id=7667
+/*
+
+*/
+09652BC: 0022 FF22
+;------------------------- end -------------------------
+

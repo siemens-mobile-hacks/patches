@@ -1,0 +1,16 @@
+;S75v52
+;Расширенные свойства MP3 и AAC-файлов
+;Extended attributes of MP3 and AAC-files
+;(c) @ndres/PRM
+;(p) funMarkus
+;Version: 2.0
+;PatchID: 8722
+;Details: https://patches.kibab.com/patches/details.php5?id=8722
+/*
+В атрибутах музыкальных файлов появляются 
+скорость дискретизации(kHz) и скорость(kbps)
+*/
+0986C88: F335EDFA 0010A013
+0986CA7: E3 03
+;------------------------- end -------------------------
+

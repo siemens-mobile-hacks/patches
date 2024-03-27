@@ -1,0 +1,17 @@
+;S75v47
+;Перенос \ZBin\ на диск [Config] для ElfPack 2.2
+;Transfer \ZBin\ to [Config] for ElfPack 2.2
+;(c) DOMr
+;Version: 
+;PatchID: 7612
+;Details: https://patches.kibab.com/patches/details.php5?id=7612
+/*
+В некоторых эльфах нужно будет отредактировать путь HEX-редактором
+*/
+791AC: 34 32 ;swi.blib
+791C0: 34 32 ;Daemons/
+791FC: 34 32 ;elf_small.png
+79218: 34 32 ;elf_big.png
+793FC: 34 32 ;img/
+;------------------------- end -------------------------
+

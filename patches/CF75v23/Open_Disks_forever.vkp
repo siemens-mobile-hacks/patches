@@ -1,0 +1,13 @@
+;CF75v23
+;Открыть диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;Version: 
+;PatchID: 4861
+;Details: https://patches.kibab.com/patches/details.php5?id=4861
+/*
+
+*/
+0875AA8: 02 03
+;------------------------- end -------------------------
+

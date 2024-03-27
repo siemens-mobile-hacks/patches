@@ -1,0 +1,21 @@
+;S75v52
+;Удалить лишние языки из меню языков ввода
+;Remove unusable languages from input languages menu
+;(c) AlexSid
+;(p) KIBER-DEMON,RainMaker
+;Version: 
+;PatchID: 8370
+;Details: https://patches.kibab.com/patches/details.php5?id=8370
+/*
+Удалить лишние языки из меню языков ввода.
+*/
++C1504E
+;04: 00 01 ; Немецкий
+38: 00 01 ; Латвийский
+3C: 00 01 ; Литовский
+;40: 00 01 ; Украинский
+44: 00 01 ; Эстонский
+48: 00 01 ; Польский
++0
+;------------------------- end -------------------------
+

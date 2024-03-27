@@ -1,0 +1,14 @@
+;S75v52
+;Расширенный список вызовов
+;Extended Calls dialed list
+;(c) BoBa
+;(p) ferro
+;Version: 3-MP
+;PatchID: 8352
+;Details: https://patches.kibab.com/patches/details.php5?id=8352
+/*
+
+*/
+03Ee530: 1d945ea0 0xA006FE01 ; S75v52
+;------------------------- end -------------------------
+

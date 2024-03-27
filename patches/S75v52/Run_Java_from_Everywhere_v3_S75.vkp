@@ -1,0 +1,14 @@
+;S75v52
+;Запуск Java Отовсюду
+;Run Java from Everywhere
+;(c) 1nvisible
+;(p) Feyman
+;Version: 3
+;PatchID: 10007
+;Details: https://patches.kibab.com/patches/details.php5?id=10007
+/*
+Пункт "Игры" в меню работает и после патча.
+*/
+9E41FB: 0A EA
+;------------------------- end -------------------------
+

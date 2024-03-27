@@ -1,0 +1,101 @@
+;M75v23
+;Индикация пропущеных событий
+;Missed Events Indicator
+;(c) BuG
+;(r) empeka
+;Version: 2
+;PatchID: 2846
+;Details: https://patches.kibab.com/patches/details.php5?id=2846
+/*
+Необходим мастер-патч. Здесь тело+врезка.
+*/
+;* Missed Events Indicator v2.0 *
+; (c) BuG
+; (r) empeka
+
+; (!) MasterPatch (+ Library functions f004, f033, f034, f035, f037, v12, z03)
+
+02A92CE: 8A4202D12988C90703D53858A02100F0B6F80136 00F002E805E000C09FE51CFF2FE1,11A8FCA0,C046
+
+#pragma enable old_equal_ff
+0FCA800: 4D69737365644576656E74732C427547
+0FCA810: 08B5F7B437480023F6F7F2F908D00124
+0FCA820: 002500F015F801340C2CFADD3D363378
+0FCA830: F7BC8A4202D12988C90707D5002B05D1
+0FCA840: 3858A02180B4F5F767FC80BC013608BD
+0FCA850: 50B5345DA400F5F723FF395B002927D0
+0FCA860: 20B40D3675190A20F5F7DAFBF5F764FF
+0FCA870: 00280BD092B4C219101CF5F749FC159B
+0FCA880: 2C78201A697800F014F892BCCA19042C
+0FCA890: 00D1093228786978129B00F00AF8A878
+0FCA8A0: E97833363259129B00F003F820BC0435
+0FCA8B0: 50BD3FB51D1C101CF5F72AFC041C101C
+0FCA8C0: F5F722FC0138013C06BC84B00B198018
+0FCA8D0: 009001200190281CF5F726FC02B03FBC
+0FCA8E0: F5F71AFC00BD0000
+
+0FCA8F0: 0xB1C2D3E4,0x0000BB03,0000000000000000,"\
+{patch `Missed Events` ver=2.0 cp=BuG id=BB03}","\
+{c `arr`","\
+`total`=0","\
+`calls`=7","\
+`SMS`=4","\
+`MMS`=8","\
+`alarm`=1","\
+`tasks`=6","\
+`BT/IrDA Data`=2","\
+`e-mails`=3","\
+`WAP push`=10","\
+`unknown1`=5","\
+`unknown2`=9","\
+`unknown3`=11","\
+}","\
+{sm arrangement}","\
+{1 o `` c=`arr` v=0}","\
+{2 o `` c=`arr` v=7}","\
+{3 o `` c=`arr` v=4}","\
+{4 o `` c=`arr` v=8}","\
+{5 o `` c=`arr` v=1}","\
+{6 o `` c=`arr` v=6}","\
+{7 o `` c=`arr` v=2}","\
+{8 o `` c=`arr` v=3}","\
+{9 o `` c=`arr` v=10}","\
+{10 o `` c=`arr` v=5}","\
+{11 o `` c=`arr` v=9}","\
+{12 o `` c=`arr` v=11}","\
+{endsm}","\
+{sm icons}","\
+{64 i `total` v=1202}","\
+{92 i `\ncalls` v=1144}","\
+{80 i `\nSMS` v=1035}","\
+{96 i `\nMMS` v=993}","\
+{68 i `\nalarm` v=1048}","\
+{88 i `\ntasks` v=1049}","\
+{72 i `\nBT/IrDA Data` v=465}","\
+{76 i `\ne-mails` v=895}","\
+{104 i `\nWAP push` v=934}","\
+{84 i `\nunknown1` v=535}","\
+{100 i `\nunknown2` v=535}","\
+{108 i `\nunknown3` v=535}","\
+{endsm}","\
+{sm positions}","\
+event 1{13 xy `digit` x=7 y=119}{15 xy `icon` x=14 y=115}","\
+event 2{17 xy `digit` x=7 y=104}{19 xy `icon` x=14 y=101}","\
+event 3{21 xy `digit` x=7 y=90}{23 xy `icon` x=14 y=87}","\
+event 4{25 xy `digit` x=7 y=76}{27 xy `icon` x=14 y=73}","\
+event 5{29 xy `digit` x=7 y=62}{31 xy `icon` x=14 y=59}","\
+event 6{33 xy `digit` x=7 y=48}{35 xy `icon` x=14 y=45}","\
+event 7{37 xy `digit` x=7 y=34}{39 xy `icon` x=14 y=31}","\
+event 8{41 xy `digit` x=7 y=20}{43 xy `icon` x=14 y=17}","\
+event 9{45 xy `digit` x=36 y=118}{47 xy `icon` x=43 y=115}","\
+event 10{49 xy `digit` x=36 y=104}{51 xy `icon` x=43 y=101}","\
+event 11{53 xy `digit` x=36 y=90}{55 xy `icon` x=43 y=87}","\
+event 12{57 xy `digit` x=36 y=76}{59 xy `icon` x=43 y=73}","\
+{endsm}","\
+{61 cb `disable standard icons` v=1}",00
+#pragma disable old_equal_ff
+
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

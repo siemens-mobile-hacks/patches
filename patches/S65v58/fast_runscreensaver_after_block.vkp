@@ -1,0 +1,14 @@
+;S65v58
+;Моментальный запуск скринсейвера после заблок. клавиатуры
+;Fast Keyboard Appearance after KeyBoard Lock
+;(c) funMarkus
+;(p) dimonp25
+;Version: 
+;PatchID: 9010
+;Details: https://patches.kibab.com/patches/details.php5?id=9010
+/*
+
+*/
+016a13fc: 14f046e8 01f0b2fb
+;------------------------- end -------------------------
+

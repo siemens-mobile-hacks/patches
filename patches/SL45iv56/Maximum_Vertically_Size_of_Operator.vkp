@@ -1,0 +1,13 @@
+;SL45iv56
+;Максимальный размер лого оператора по вертикали
+;Maximum Vertically Size of Operator Logo
+;(c) Charger
+;Version: 
+;PatchID: 1979
+;Details: https://patches.kibab.com/patches/details.php5?id=1979
+/*
+Лого ставьте стандартной функцией (можно с патчем BFP), logoviewer обрезает до 46
+*/
+11782d: 2e 31 ;здесь 46 => 49
+;------------------------- end -------------------------
+

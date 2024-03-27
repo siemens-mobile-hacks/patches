@@ -1,0 +1,14 @@
+;M75v12
+;Disable Some Debug
+;Disable Some Debug
+;(c) benj9
+;Version: 
+;PatchID: 5384
+;Details: https://patches.kibab.com/patches/details.php5?id=5384
+/*
+
+*/
+07D3A44: 10B5 7047
+07D3AB8: 0FB4 7047
+;------------------------- end -------------------------
+

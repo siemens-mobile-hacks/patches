@@ -1,0 +1,18 @@
+;S75v32
+;Значок ИК-порта
+;IrDA icon
+;(c) Apo4emu
+;(p) perk11
+;Version: 
+;PatchID: 3398
+;Details: https://patches.kibab.com/patches/details.php5?id=3398
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v32&f=pic_irda.rar
+
+/*
+Замена значка ИК-порта
+English: Replace IrDA icon
+*/
+Качаем приложенный файл
+http://patches.kibab.com/cnt.php5?d=s75v32&f=pic_irda.rar
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;S55v20
+;Не выводить циферблат аналоговых часов в заставке
+;Don't show analogue clocks' dial in screensaver
+;(c) avkiev
+;Version: 
+;PatchID: 5087
+;Details: https://patches.kibab.com/patches/details.php5?id=5087
+/*
+Полезно, если на заставку установлены Большие Цифровые Часы
+*/
+129B52: C3 00
+;------------------------- end -------------------------
+

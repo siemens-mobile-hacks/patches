@@ -1,0 +1,15 @@
+;SL75v52
+;Отключить сканирование ДатаБазы медиа-файлов с диска "0:/"
+;Disable scanning and refreshing DataBase of Media-files on "0:/"
+;(c) funMarkus
+;(p) kiREALlov
+;Version: 2
+;PatchID: 8227
+;Details: https://patches.kibab.com/patches/details.php5?id=8227
+/*
+Отключить сканирование ДатаБазы медиа-файлов с диска "0:/"
+!Не должно сканироваться ничего! 
+*/
+05A941C: 30 34
+;------------------------- end -------------------------
+

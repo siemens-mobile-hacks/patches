@@ -1,0 +1,17 @@
+;CX75v23
+;Убрать меню с главного экрана
+;Remove menu from main screen
+;(c) Неизвестен. Выложил Sor(ereR.
+;Version: 
+;PatchID: 1799
+;Details: https://patches.kibab.com/patches/details.php5?id=1799
+/*
+
+*/
+02CBFC9: D0 E0
+02CC086: 05D1 0028
+03473B4: 07D1 0028
+02CCB6E: 0DD1 0028 ; чтоб часы не скакали вверх при SMS и т.п.
+02CCB74: 0AD1 0028
+;------------------------- end -------------------------
+

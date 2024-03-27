@@ -1,0 +1,17 @@
+;M75v19
+;Запуск явы отовсюду
+;Run Java from Everywhere
+;(c) 1nvisible
+;(r) Zl0d, Kamikadze!
+;(p) Grizzzzly
+;Version: 3
+;PatchID: 3678
+;Details: https://patches.kibab.com/patches/details.php5?id=3678
+/*
+Ниче переименовывать не надо. 
+No additional actions needed. 
+
+*/
+07BE680: 2500000A 000050E3
+;------------------------- end -------------------------
+

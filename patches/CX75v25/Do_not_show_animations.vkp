@@ -1,0 +1,25 @@
+;CX75v25
+;Не показывать анимацию при включении, выключении и поиске сети
+;Do not show startup, shutdown and netsearch animations
+;(c) sempai
+;(p) green
+;Version: 0.2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=10365
+;PatchID: 10365
+;Details: https://patches.kibab.com/patches/details.php5?id=10365
+/*
+"Ускорение" загрузки/выключения телефона.
+
+sempai: ускорения никакого нет, на деле, патч устанавливает минимальное время, показывающее анимацию. если в телефоне присутствует карта памяти, то загрузка происходит дольше, без карты все пучкарусом, шустрее.
+*/
+;PATCH_DISABLE_TIMER_OF_NETSEARCH_ANIMATION
+02A79B0: E349 0121
+;PATCH_DISABLE_TIMER_OF_STARTUP_ANIMATION1
+02A7FE2:  5149 0121
+;PATCH_DISABLE_TIMER_OF_STARTUP_ANIMATION2_1,PATCH_DISABLE_TIMER_OF_STARTUP_ANIMATION2_2
+02A802E: FF214631 0121C046
+;PATCH_DISABLE_TIMER_OF_SHUTDOWN_ANIMATION
+02A82AA: 011C 0121
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,25 @@
+;X65v100
+;SWI-хук
+;SWI-hook
+;(c) avkiev, Rst7/CBSIE, BoBa
+;(r) KonstanT
+;Version: 
+;PatchID: 4061
+;Details: https://patches.kibab.com/patches/details.php5?id=4061
+/*
+Необходим для вызова библиотечных функций из перемещаемых патчей
+English:
+It is needed for calling Library functions from dis-patches
+*/
+#pragma enable old_equal_ff
+0FD8000: C70050E30500001AB000DEE100109DE5
+0FD8010: 200011E302E08E1204E08E0214E08DE5
+0FD8020: 0219C0E3010A51E30E00002A40C09FE5
+0FD8030: 01C19CE7A007B0E104C08D150900001A
+0FD8040: 01007CE30700000A00009DE5200010E3
+0FD8050: 01E08E1221108F1218108F0214108DE5
+0FD8060: 00402DE90040FDE80100BDE800F069E1
+0FD8070: 0F80FDE80040FDA01CFF2FE16047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

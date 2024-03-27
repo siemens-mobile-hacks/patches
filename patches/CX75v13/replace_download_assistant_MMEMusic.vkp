@@ -1,0 +1,20 @@
+;CX75v13
+;Замена Помощника загрузки на MME Music
+;Replace Download Assistant with MME Music
+;(c) ~Jhellico
+;(p) Smelter
+;Version: 
+;PatchID: 3094
+;Details: https://patches.kibab.com/patches/details.php5?id=3094
+/*
+Мидлет должен быть в папке "\Applications\MME Music\"
+MihaSoft переделал, чтобы заменяла не на OperaMini, а на плеер MEE Music
+RUS: MME Music будет вызываться через Меню-3-3 и шорткат ELSE_DOWN_ASSIS
+*/
+326A29: 446F776E6C6F61642041 "MME Music",00
+32B4F9: 446F776E6C6F61642041 "MME Music",00
+7D34AD: 446F776E6C6F61642041 "MME Music",00
+;Редактирование сообщения  "Помощн.загр." => "MME Music"
+14BF87: 0C9887374236910BA82C3991 0C7546463E19466A685F590B
+;------------------------- end -------------------------
+

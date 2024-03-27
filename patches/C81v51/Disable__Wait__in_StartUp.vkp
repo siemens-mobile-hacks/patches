@@ -1,0 +1,30 @@
+;C81v51
+;Отключить "Подождите" при включении телефона до StartAssistant ;Отключить "Подождите" при увеличении картинки в МайСтафф
+;Disable "Wait" in StartUp before StartAssistant;Disable "Wait" while zooming a picture in MyStuff
+;(c) funMarkus
+;(p) dimonp25
+;Version: 
+;PatchID: 7839
+;Details: https://patches.kibab.com/patches/details.php5?id=7839
+/*
+Кроме отключения "Подождите" при включении телефона до StartAssistant,также ускоряет запуск демонов
+*/
+;Disable "Wait" in StartUp before StartAssistant
+;Disable "Wait" while zooming a picture in MyStuff
+;Отключить "Подождите" при включении телефона до StartAssistant
+;Отключить "Подождите" при увеличении картинки в МайСтаффе
+;(c)funMarkus
+;(p)dimonp25
+;C81v51
+;Баги: должна быть выключена анимация на включение, то же после смены темы, иначе телефон при включении зависнет на Помощнике!
+;Баги: при увеличении картинки приходится жать на джой вверх или 2, чтобы отобразилась приближённая картинка
+;BUGs: StartupAnimation must be off, the same after a Theme was changed, else phone can not exit from StartupAssistant!
+;BUGs: you should press joyUp or 2 while zooming a picture to see a zoomed area of it
+;Наблюдаю на своём телефоне акселерацию демонов
+;Elfs are accelerated from "Deamons"
+
+096DA26: 131C 08BD
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

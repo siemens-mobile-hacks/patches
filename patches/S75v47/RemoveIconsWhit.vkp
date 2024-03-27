@@ -1,0 +1,15 @@
+;S75v47
+;Убрать белый фон у иконок в Native menu
+;Remove Icons White Background in Native Menu
+;(c) SiNgle
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8189
+;Details: https://patches.kibab.com/patches/details.php5?id=8189
+/*
+
+*/
+0A19672: 00 FF
+0A19716: E8F7B4F8 00280028
+;------------------------- end -------------------------
+

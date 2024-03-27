@@ -1,0 +1,14 @@
+;CX75v25
+;Показывать Скрытые Файлы в Card-Explorer'е по умолчанию
+;Show Hidden Files In Card-Explorer By Default
+;(c) 1nvisible
+;Version: 
+;PatchID: 3516
+;Details: https://patches.kibab.com/patches/details.php5?id=3516
+/*
+
+*/
+02DD4C4: 00 FF
+02DD574: 00 FF
+;------------------------- end -------------------------
+

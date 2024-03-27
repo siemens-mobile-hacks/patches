@@ -1,0 +1,14 @@
+;CX70v50
+;Активизация (ICQ AIM) встроенного WV-клиента
+;Enable Built-In WV Client (ICQ AIM)
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 89
+;Details: https://patches.kibab.com/patches/details.php5?id=89
+/*
+Активируется (ICQ AIM) встроенного WV-клиентП оявляется в Меню - 5-2 (Menu - 5-2)
+*/
+0B59E30: 66 78
+;------------------------- end -------------------------
+

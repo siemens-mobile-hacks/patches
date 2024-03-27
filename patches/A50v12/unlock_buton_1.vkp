@@ -1,0 +1,21 @@
+;A50v12
+;Разблокировка кнопки 1
+;unlock buton 1
+;(c) Ramil_
+;(p) Broken Brain
+;Version: 
+;PatchID: 2199
+;Details: https://patches.kibab.com/patches/details.php5?id=2199
+/*
+
+*/
+31B98E: 3D 0D
+31B9F0: 3D 0D
+31BBDC: 3D 0D
+31BDAE: 2D2C CC00
+31C108: 2D1A CC00
+31C1E1: 82 81
+31BEFE: 32 31
+
+;------------------------- end -------------------------
+

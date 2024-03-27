@@ -1,0 +1,16 @@
+;SL75v52
+;Удалить дату и время с главного экрана
+;Disable Date and Time on Mainscreen
+;(c) benj9
+;(r) starfriend
+;(p) kiREALlov
+;Version: 
+;PatchID: 7702
+;Details: https://patches.kibab.com/patches/details.php5?id=7702
+/*
+
+*/
+029E236: FFF7CCFF C046C046
+029E250: FFF7E2FF C046C046
+;------------------------- end -------------------------
+

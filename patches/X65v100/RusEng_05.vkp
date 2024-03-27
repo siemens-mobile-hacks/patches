@@ -1,0 +1,19 @@
+;X65v100
+;Rus-Eng
+;Rus-Eng
+;(c) cbn
+;Version: 0.5
+;PatchID: 6632
+;Details: https://patches.kibab.com/patches/details.php5?id=6632
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=RusEng_05.zip
+
+/*
+Русско-английский словарь
+Словарная база: "Socrat for Unix" by Bortek, 50000 слов
+Тут же версия под s75
+*/
+Русско-английский словарь
+Словарная база: "Socrat for Unix" by Bortek, 50000 слов
+Тут же версия под s75
+;------------------------- end -------------------------
+

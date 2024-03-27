@@ -1,0 +1,14 @@
+;EL71v41
+;Показ Расширений Файлов в Card-Explorer'е
+;Show File Extensions in Card-Explorer
+;(c) 1nvisible
+;(r) SiNgle
+;Version: 
+;PatchID: 6677
+;Details: https://patches.kibab.com/patches/details.php5?id=6677
+/*
+
+*/
+072A49C: 2E 1E ;
+;------------------------- end -------------------------
+

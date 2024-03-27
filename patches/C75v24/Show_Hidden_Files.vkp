@@ -1,0 +1,14 @@
+;C75v24
+;Показывать Скрытые Файлы в Card-Explorer'е по умолчанию
+;Show Hidden Files In Card-Explorer By Default
+;(c) 1nvisible
+;Version: 
+;PatchID: 2949
+;Details: https://patches.kibab.com/patches/details.php5?id=2949
+/*
+
+*/
+02E0348: 00 FF
+02E03F8: 00 FF
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S68v47
+;Disable BootScreen
+;Disable BootScreen
+;(c) benj9
+;(p) den11111
+;Version: 
+;PatchID: 7852
+;Details: https://patches.kibab.com/patches/details.php5?id=7852
+/*
+
+*/
+016848C: CB45000B 0000A0E1
+;------------------------- end -------------------------
+

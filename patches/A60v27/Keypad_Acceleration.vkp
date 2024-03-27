@@ -1,0 +1,14 @@
+;A60v27
+;Скорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) Rasp
+;Version: 
+;PatchID: 10466
+;Details: https://patches.kibab.com/patches/details.php5?id=10466
+/*
+
+*/
+377708: 56 20
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;C55v24
+;Отключение_верификации_JAVA-классов
+;Disable Java classes verification
+;(c) avkiev & SiNgle
+;Version: 
+;PatchID: 4301
+;Details: https://patches.kibab.com/patches/details.php5?id=4301
+/*
+Реально ускоряет запуск мидлетов на 30-70% (сильно зависит от мидлета)
+*/
+306A84: 3D 0D
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;S75v24
+;Убрать сообщение "Пожалуйста подождите" в эксплорере
+;Disable message "Please wait" in explorer
+;(c) SiNgle
+;Version: 
+;PatchID: 2174
+;Details: https://patches.kibab.com/patches/details.php5?id=2174
+/*
+
+*/
+0531282: 03D1 03E0
+;------------------------- end -------------------------
+

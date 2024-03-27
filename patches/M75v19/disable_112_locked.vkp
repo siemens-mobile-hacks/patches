@@ -1,0 +1,15 @@
+;M75v19
+;Отключить ввод 112 на Экране Блокировки
+;Disable 112 Input In Locked Screen
+;(c) 1nvisible
+;(p) Geka
+;Version: 1
+;PatchID: 4720
+;Details: https://patches.kibab.com/patches/details.php5?id=4720
+/*
+отключает также и 911
+*/
+3480D5: D0 22
+
+;------------------------- end -------------------------
+

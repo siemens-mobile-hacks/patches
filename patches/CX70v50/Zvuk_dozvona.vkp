@@ -1,0 +1,15 @@
+;CX70v50
+;Убирать звук дозвона
+;To clean a sound of dialing
+;(c) AlexSid
+;(p) AsteriX
+;Version: 
+;PatchID: 67
+;Details: https://patches.kibab.com/patches/details.php5?id=67
+/*
+Патч убирает звук дозвона.
+*/
+151293C: 8C7F52A1 00000000
+
+;------------------------- end -------------------------
+

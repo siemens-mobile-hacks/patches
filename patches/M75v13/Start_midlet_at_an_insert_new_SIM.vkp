@@ -1,0 +1,26 @@
+;M75v13
+;Запуск мидлета при вставке новой SIM
+;Start midlet at an insert new SIM
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 1014
+;Details: https://patches.kibab.com/patches/details.php5?id=1014
+/*
+Описание и мидлет лежат в 
+http://patches.kibab.com/patches/bin/_common/start_midlet_at_an_insert_new_sim.rar
+Отмените патч отмены вопроса о копировании СИМ!
+
+English:Description and MIDlet are in http://patches.kibab.com/patches/bin/_common/start_midlet_at_an_insert_new_sim.rar
+
+Remove patch of disabling "Copy SIM?" message!!!
+*/
+051FEFA: 04F1D2EA 81F7DAEB  
+#pragma enable old_equal_ff 
+04A16B0: FF7F2DE918008FE20030A0E30020A0E3 
+04A16C0: 08409FE50FE0A0E114FF2FE1FFBFBDE8 
+04A16D0: A0C688A0  
+04A16D4: "2:\\gsm.jar" 
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

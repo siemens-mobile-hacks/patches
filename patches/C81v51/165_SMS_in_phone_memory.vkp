@@ -1,0 +1,28 @@
+;C81v51
+;165 SMS в памяти телефона
+;165 SMS in phone memory
+;(c) ILYA_ZX
+;(r) LazyC0DEr, Vados
+;(p) BalakinUser
+;Version: 
+;PatchID: 8674
+;Details: https://patches.kibab.com/patches/details.php5?id=8674
+/*
+Внимание! Все SMS с памяти телефона будут удалены.
+
+1. Переименуйте SMS.dat, EMS_Admin.dat и WB.dat в SMS.da_, EMS_Admin.da_, WB.da_.
+2. Примените патч
+3. Удалите SMS.da_, EMS_Admin.da_, WB.da_.
+
+P.S. При первом включении телефона, после установки этого патча, возникает пикофф
+*/
+0959B58: 8A45 148B
+0959F54: 4C1F 3E4E
+09C6D38: F0B5 2C4C
+103093A: 64 A5
+0AA18BA: 64 A5
+0AA1928: 64 A5
+0AA17EC: 64 A5
+0AA1854: 64 A5
+;------------------------- end -------------------------
+

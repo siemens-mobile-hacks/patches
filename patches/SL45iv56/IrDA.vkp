@@ -1,0 +1,18 @@
+;SL45iv56
+;IrDA
+;IrDA
+;(c) macgyver91
+;Version: 
+;PatchID: 5908
+;Details: https://patches.kibab.com/patches/details.php5?id=5908
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=IrDA.zip
+
+/*
+Вкл/выкл IrDA без SIM-карты.
+
+English:
+Switch on/off IrDA without SIM-card.
+*/
+; See in attach
+;------------------------- end -------------------------
+

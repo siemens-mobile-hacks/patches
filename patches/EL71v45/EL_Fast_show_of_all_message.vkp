@@ -1,0 +1,29 @@
+;EL71v45
+;Быстрый показ почти ВСЕХ окон с сообщениями
+;Fast show of all message boxes in phone
+;(c) SiNgle & Nikolas535
+;(p) Serega65
+;Version: 
+;PatchID: 9757
+;Details: https://patches.kibab.com/patches/details.php5?id=9757
+/*
+
+*/
+00C417CC: D007 F401  ;1/2 секунды
+00C41804: D007 F401
+00C418AC: D007 F401
+00C418E4: D007 F401  
+00C4191C: D007 F401 
+00C41954: D007 F401  
+00C4198C: D007 F401 
+00C419C4: D007 F401  
+00C419FC: D007 F401  
+00C41A34: D007 F401 
+00C41BC0: D007 F401 
+00C41BF8: D007 F401  
+00C41FC8: D007 F401  
+00C4201C: D007 F401 
+00C42054: D007 F401
+00C4208C: D007 F401
+;------------------------- end -------------------------
+

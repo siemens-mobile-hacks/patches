@@ -1,0 +1,23 @@
+;M75v13
+;Отправка Flash SMS
+;Directly Send Flash SMS
+;(c) Bennie
+;(p) Gurza
+;Version: 
+;PatchID: 728
+;Details: https://patches.kibab.com/patches/details.php5?id=728
+/*
+Начните текст сообщения с пробела Формат текста -> Размер шрифта -> Средний шрифт, иначе будет обычное SMS
+*/
+
+0BD3628: 201CB168 8AF662FF  
+#pragma enable old_equal_ff
+0A5E4F0: 201CB8380178082906D000290CD1417B
+0A5E500: 7F221140F02204E0437B817B1B02C918
+0A5E510: 1822202900D10270201CB1687047
+#pragma disable old_equal_ff
+ 
+
+
+;------------------------- end -------------------------
+

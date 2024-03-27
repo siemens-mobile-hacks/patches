@@ -1,0 +1,16 @@
+;C75v13
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;(r) AsteriX
+;Version: 
+;PatchID: 977
+;Details: https://patches.kibab.com/patches/details.php5?id=977
+/*
+
+*/
+09D087E: 00 01
+09D08B6: 00 01
+
+;------------------------- end -------------------------
+

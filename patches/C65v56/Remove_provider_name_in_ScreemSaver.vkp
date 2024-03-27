@@ -1,0 +1,13 @@
+;C65v56
+;Убрать имя оператора в заставке
+;Remove provider name in ScreemSaver
+;(c) KiRiK
+;Version: 
+;PatchID: 3767
+;Details: https://patches.kibab.com/patches/details.php5?id=3767
+/*
+
+*/
+16F27A4: 74EB 0028
+;------------------------- end -------------------------
+

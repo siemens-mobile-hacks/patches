@@ -1,0 +1,25 @@
+;CX70v50
+;Изменить Pictures на Pic и отдельная папка для Foto
+;Changes to standart Picture folders
+;(c) Vanoleo
+;(p) AsteriX
+;Version: 
+;PatchID: 106
+;Details: https://patches.kibab.com/patches/details.php5?id=106
+/*
+Изменить Pictures на Pic и отдельная папка для Foto.
+!!!После применения патча необходимо папки "EMS","MMS","Logos","Wallpapers",
+"Frames","Icons" переместить в "0:\Pic\Stuf\".
+!!!Что бы попасть из папки Foto в папку Pic нужно в папке Foto нажать красную кнопку.
+
+*/
+0A4E2E2: 740075007200650073 5C0046006F0074006F ;Pictures => Pic\Foto
+0A4E31A: 740075007200650073 5C0053007400750066 ;Pictures\Clip Gallery => Pic\Stuf\Clip Gallery
+0A4E37E: 740075007200650073 5C0053007400750066 ;Pictures\EMS => Pic\Stuf\EMS
+0A4E3DC: 740075007200650073 5C0053007400750066 ;Pictures\Logos => Pic\Stuf\Logos
+0A4E438: 740075007200650073 5C0053007400750066 ;Pictures\Walpaper => Pic\Stuf\Wallpaper
+0A4E496: 740075007200650073 5C0053007400750066 ;Pictures\MMS => Pic\Stuf\MMS
+0A4E4EC: 740075007200650073 5C0053007400750066 ;Pictures\Icons => Pic\Stuf\Icons
+0A4E540: 740075007200650073 5C0053007400750066 ;Pictures\Frames => Pic\Stuf\Frames
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;EL71v45
+;Отключить "Подождите" в Напоминания/Задачи-Нов.запись
+;Disable "Please wait" in Appointments/Tasks-New enry
+;(c) Evgr
+;(p) (p)den11111
+;Version: 
+;PatchID: 8084
+;Details: https://patches.kibab.com/patches/details.php5?id=8084
+/*
+
+*/
+09A6FE2: B1F754FE C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;C65v56
+;Отключить Сообщение "Список Пуст!"
+;Disable "List Empty!"
+;(c) 1nvisible
+;Version: 
+;PatchID: 3850
+;Details: https://patches.kibab.com/patches/details.php5?id=3850
+/*
+
+*/
+0ABE096: 9F49 03E0
+;------------------------- end -------------------------
+

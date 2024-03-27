@@ -1,0 +1,29 @@
+;M75v5
+;Убрать некоторые  сообщения
+;Disable some messages
+;(c) SiNgle
+;(p) BuG
+;Version: 
+;PatchID: 418
+;Details: https://patches.kibab.com/patches/details.php5?id=418
+/*
+Название говорит само за себя :)
+Убирает сообщения:
+Вибра вкл./выкл (IRDA вкл\выкл)
+"Подождите" перед использованием камеры ("Please wait" before using camera)
+GPRS вкл\выкл (GPRS on\off)
+Bluetooth вкл./выкл (Bluetooth on\off)
+"Подождите" в эксплорере ("Please wait" in Card-Explorer)
+"Копировать SIM" при смене SIM ("Copy SIM" at SIM change)
+"Сохранить в" после фотографирования ("Save to" after taking picture)
+
+*/
+03252B8: 77F1 80BD ;"Вибра вкл./выкл."
+0325352: 77F1 80BD ;"IrDA вкл./выкл."
+03253CE: 77F1 80BD ;"Bluetooth вкл./выкл."
+034B5FC: 9ED111FA 0100A0E3 ;"Подождите" перед использованием камеры
+034CDE0: B40802EB 0100A0E3 ;"Сохранить в" после фотографирования
+03516E8: 44B911FA 0100A0E3 ;"Подождите" в эксплорере
+051F092: 01 00 ; "Копировать SIM" при смене SIM ("Copy SIM" at SIM change)
+;------------------------- end -------------------------
+

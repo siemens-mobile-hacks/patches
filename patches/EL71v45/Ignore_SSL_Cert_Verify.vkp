@@ -1,0 +1,14 @@
+;EL71v45
+;Игнорировать результат проверки SSL сертификата в браузере
+;Ignore the result of the verification of the SSL certificate in the browser
+;(c) alfinant
+;Version: 
+;PatchID: 10688
+;Details: https://patches.kibab.com/patches/details.php5?id=10688
+/*
+Дает возможность переходить по ссылкам типа https://
+Отключает проверку сертификата сервера.
+*/
+0F3E79A: 03 00
+;------------------------- end -------------------------
+

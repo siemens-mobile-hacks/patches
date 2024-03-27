@@ -1,0 +1,15 @@
+;C81v51
+;Изменить имя для фото и видео
+;Change name of media-files
+;(c) avkiev
+;(p) Виктор89
+;Version: 
+;PatchID: 9116
+;Details: https://patches.kibab.com/patches/details.php5?id=9116
+/*
+Теперь фотки можно именовать не img123.jpg, а 060608_121345.jpg
+*/
+03F9D7C: 0xA05CA551 0xA0063B01   ; /C81v51
+0063B48: 0xFFFFFFFF 0xA05CA551   ; \C81v51
+;------------------------- end -------------------------
+

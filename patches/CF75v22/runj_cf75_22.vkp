@@ -1,0 +1,15 @@
+;CF75v22
+;Запуск явы отовсюду
+;Run Java from Everywhere
+;(c) 1nvisible
+;(r) Beetles "1"
+;(p) m.ksy
+;Version: 3
+;PatchID: 9716
+;Details: https://patches.kibab.com/patches/details.php5?id=9716
+/*
+Позволяет запускать яву из любой папки
+*/
+0x00779414: 2500000A 000050E3
+;------------------------- end -------------------------
+

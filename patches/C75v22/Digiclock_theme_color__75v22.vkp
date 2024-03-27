@@ -1,0 +1,32 @@
+;C75v22
+;Цифровые Часы на Заставке в Тон Активной Темы Телефона
+;Active Theme Color Scheme for Digiclock ScreenSaver
+;(c) SiNgle, tick
+;(r) titron
+;Version: 1.1
+;PatchID: 10044
+;Details: https://patches.kibab.com/patches/details.php5?id=10044
+/*
+Патч динамически меняет цвета на заставке цифровых часов в зависимости от активной темы (или скина) телефона.
+*/
+02D2E02: 01 82 ;1h back
+02D2E0A: 00 77 ;1h font
+02D2E4C: 01 82 ;2h back
+02D2E54: 00 77 ;2h font
+02D2E8E: 01 82 ;":" back
+02D2E96: 00 77 ;":" font
+02D2ECA: 01 82 ;1m back
+02D2ED2: 00 77 ;1m font
+02D2F12: 01 82 ;2m back
+02D2F1A: 00 77 ;2m font
+02D2F64: 01 00
+02D2F6C: 00 01
+02D2F8E: 01 82 ;AM/PM back
+02D2F96: 00 77 ;AM/PM font
+049C338: 01 82 ;Arrow back
+049C390: 00 82 ;ProvName font
+049C394: 01 77 ;background
+049C400: 00 82 ;ProvFon with Arrow
+049C404: 01 77 ;background with Arrow
+;------------------------- end -------------------------
+

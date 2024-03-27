@@ -1,0 +1,40 @@
+;E71v45
+;Один отчёт о доставке СМС для составного СМС
+;Single SMS status report for concatenated SMS 
+;(c) Evgr
+;Version: 2
+;PatchID: 10139
+;Details: https://patches.kibab.com/patches/details.php5?id=10139
+/*
+Запрашивается отчёт о доставке СМС только для последнего сегмента составного СМС 
+SMS status report is requested only for last segment of concatenated SMS
+
++ поддержка 16-битного идентификационного номера 
++ support of 16-bit reference number
+*/
+;Один отчёт о доставке СМС для составного СМС
+;Single SMS status report for concatenated SMS
+;E71v45
+;(c) Evgr
+;version 2
+
+/*
+запрашивается отчёт о доставке СМС только для последнего сегмента составного СМС
+SMS status report is requested only for last segment of concatenated SMS
+*/
+
+; + поддержка 16-битного идентификационного номера
+; + support of 16-bit reference number
+
+0E22442: 20339974 C9F124E9
+
+#pragma enable old_equal_ff
+0FEB68C: 00C09FE51CFF2FE1,0xA13D1BD1
+13D1BD0: 20339974D97B00290ED03224195D0029
+13D1BE0: 02D0082908D101340334195D0134185D
+13D1BF0: 884201D0002119747047
+#pragma disable old_equal_ff
+
+
+;------------------------- end -------------------------
+

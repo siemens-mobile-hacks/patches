@@ -1,0 +1,24 @@
+;C81v51
+;Дополнение к панели иконок
+;Iconbar Additions
+;(c) benj9
+;(r) (i) BuG
+;(p) den11111
+;Version: 3.4
+;PatchID: 7751
+;Details: https://patches.kibab.com/patches/details.php5?id=7751
+/*
+Может конфликтовать с этим http://patches.siemens-club.org/patches/details.php5?id=7703 патчем! (а может и не конфликтовать)
+
+
+Добавляет в iconbar икончки, например иконки профиля 
+
+Всем известный патч от 65ой серии.
+BuG его полностью переделал, и сделал работоспособным на NewSGold 
+Спасибо ему за подсказки.
+
+Для отображения иконки плеера ставим плагин... http://patches.siemens-club.org/patches/details.php5?id=7089]
+*/
+029C108: 341C0028049102D0 004FB847,0xA007B81B
+;------------------------- end -------------------------
+

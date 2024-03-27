@@ -1,0 +1,16 @@
+;S75v32
+;SWI-хук
+;SWI-hook
+;(c) avkiev, Rst7/CBSIE, BoBa
+;(r) KonstanT
+;Version: 
+;PatchID: 3574
+;Details: https://patches.kibab.com/patches/details.php5?id=3574
+/*
+
+*/
+13A52D4: 2C0000EA 80F19FE5
+13A545B: A100FFFFFF 00,0xA0078001
+
+;------------------------- end -------------------------
+

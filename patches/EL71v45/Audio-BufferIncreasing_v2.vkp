@@ -1,0 +1,28 @@
+;EL71v45
+;Увеличение размера Аудиобуффера
+;Audio-Buffer Increasing
+;(c) 1nvisible
+;(p) Feyman
+;Version: 2
+;PatchID: 9660
+;Details: https://patches.kibab.com/patches/details.php5?id=9660
+/*
+;Disables sound lags when surfing file system
+;Go to Dev.Menu->Configuration->Audio_Buf_Cfg
+;v2 +Auto-Loading
+;v1.5 +Change Number of Buffers
+;v1 Initial
+
+;Press 5 to increase to 200 Kb
+;Press 4 to decrease number of buffers
+;Press 6 to increase number of buffers
+
+*/
+0CE157C: 05 14
+0CE1574: 0410A0E3 120000EA
+0CE1584: 0610A0E3 070000EA
+; Значения по умолчанию - 480 кБ
+12E33F8: 04 0C ; х10 кБ - Размер одного буфера (120 Kb)
+;12E33F9: 04 04 ; Количество буферов (4)
+;------------------------- end -------------------------
+

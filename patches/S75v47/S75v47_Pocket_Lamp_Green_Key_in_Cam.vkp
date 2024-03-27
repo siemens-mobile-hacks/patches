@@ -1,0 +1,22 @@
+;S75v47
+;Фонарь в камере на зеленой кнопке
+;Pocket Lamp on Green Button in Camera
+;(c) Evgr
+;Version: 
+;PatchID: 10292
+;Details: https://patches.kibab.com/patches/details.php5?id=10292
+/*
+
+*/
+
+0516A1C: 01277F03392820D0 004FB847,0xA1400051
+059125A: 14 05
+
+#pragma enable old_equal_ff
+1400050: 00B501277F03052801D100F00AF802BC
+1400060: 392804D001DC06310847363108474631
+1400070: 0847FFB5014B9847FFBDC046,0xA032EBB7 ; POCKET_LAMP
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

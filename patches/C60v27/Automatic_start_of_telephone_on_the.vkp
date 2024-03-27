@@ -1,0 +1,14 @@
+;C60v27
+;Автоматическое включение телефона по будильнику
+;Automatic start of telephone on the alarm clock
+;(c) SiNgle, !Freeman!
+;(r) Snowm@n
+;Version: 
+;PatchID: 4349
+;Details: https://patches.kibab.com/patches/details.php5?id=4349
+/*
+
+*/
+246186: 0d42 0d27
+;------------------------- end -------------------------
+

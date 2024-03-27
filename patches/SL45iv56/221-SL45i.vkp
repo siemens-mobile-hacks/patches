@@ -1,0 +1,18 @@
+;SL45iv56
+;FNS. Отображение полного имени файла
+;FNS. Full Name Show
+;(c) Viraptor
+;Version: 
+;PatchID: 1918
+;Details: https://patches.kibab.com/patches/details.php5?id=1918
+/*
+Патч включает отображение расширения файлов в CardExplorer.
+
+
+Created: 22.09.2004
+
+Патч №221 с http://patch.oslik.ru/SL45_RU
+*/
+0x386E78: DAC7CC85 DAC7EA85 
+;------------------------- end -------------------------
+

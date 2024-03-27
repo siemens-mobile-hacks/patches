@@ -1,0 +1,13 @@
+;S65v58
+;Изменение времени подачи ежеминутного сигнала во время разговора
+;Change minute beep during call
+;(c) Bakhti
+;Version: 
+;PatchID: 8435
+;Details: https://patches.kibab.com/patches/details.php5?id=8435
+/*
+
+*/
+0B89626: 00 0i055 ; 55 секунд
+;------------------------- end -------------------------
+

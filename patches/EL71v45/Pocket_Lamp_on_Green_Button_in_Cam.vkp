@@ -1,0 +1,20 @@
+;EL71v45
+;Фонарь в камере на зеленой кнопке
+;Pocket Lamp on Green Button in Camera
+;(c) Evgr
+;Version: 
+;PatchID: 8656
+;Details: https://patches.kibab.com/patches/details.php5?id=8656
+/*
+
+*/
+067EBF0: 390050E3 160536EA 
+071539C: 14 05
+
+#pragma enable old_equal_ff
+1400050: 050050E30000001A010000FA390050E3 
+1400060: E3FAC9EA 
+1400064: 08B5014B984708BD,0xA06F6617 ; POCKET_LAMP
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

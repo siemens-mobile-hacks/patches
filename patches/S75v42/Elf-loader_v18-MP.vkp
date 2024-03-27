@@ -1,0 +1,31 @@
+;S75v42
+;Загрузчик эльфов
+;Elf-loader
+;(c) Rst7/CBSIE, BoBa
+;(p) Pavel81
+;Version: 1.8++
+;PatchID: 6463
+;Details: https://patches.kibab.com/patches/details.php5?id=6463
+/*
+Не забываем скачать тело патча, если не прикрепилось автоматом!
+*/
+#pragma enable old_equal_ff
+;RET_ADRS
+0x00079000: 61D42FA037D22FA0334B97A0
+#pragma disable old_equal_ff
+
+;PATCH_ONCREATE
+0x0042C938: 37D22FA0 208707A0
+;PATCH_ONCLOSE
+0x0042C94C: 61D42FA0 5C8607A0
+;PATCH_NO_BROWSE_TXT
+0x00549D0A: 0830 3030
+;PATCH_SHOWMSG_BLF
+0x0065B778: 334B97A0 058807A0
+;PATCH_ESI1
+0x00903D0C: AA8701FA 08F09FE5
+;PATCH_ESI2
+0x00903D1C: 7C25647C 048107A0
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;S75v26
+;Разгон телефона
+;Speed phone
+;(c) Single
+;Version: 
+;PatchID: 2585
+;Details: https://patches.kibab.com/patches/details.php5?id=2585
+/*
+Разгон телефона. 
+Я за последствия не отвечаю !!!
+Ускоряется ВСЁ вообще ! Наглядный пример ява.
+JB1
+Siemens S75 - 4174 - У меня + патч явы
+SonyEricsson K750i 4059 
+Motorola MPx200 4133
+JB2 - 269
+JB3D HQ-213 LQ-287
+*/
+0007FFC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 01002DE914009FE50000D0E5010050E3
+0007FFD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0100BDE808402D1904F09F1504F09FE5
+0007FFE0: FFFFFFFFFFFFFFFFFFFFFFFF 84F20800E48C76A0748D76A0
+00768CE0: 7C5981A0 B65CE4EA
+;------------------------- end -------------------------
+

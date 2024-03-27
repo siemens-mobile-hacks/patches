@@ -1,0 +1,19 @@
+;S45iv4
+;Увеличение FlexMemory до 393,51 Кб
+;Enlarge FlexMemory up to 393,51 Kb
+;(c) ?
+;Version: 
+;PatchID: 629
+;Details: https://patches.kibab.com/patches/details.php5?id=629
+/*
+После патча форматнуть FlexMemory!
+*/
+02BBF6: 0002 8000
+3A5526: 66 E6
+3A5528: FF 0C
+3A554E: D4E00A00 E6FE2003
+3A5771: 2C 1C
+3A5796: D4C00200 E6FC2003
+3A58D9: 2060 005A
+;------------------------- end -------------------------
+

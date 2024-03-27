@@ -1,0 +1,15 @@
+;S75v52
+;Истинные размеры файлов и папок в эксплорере
+;Real size of files and folders
+;(c) caine
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8268
+;Details: https://patches.kibab.com/patches/details.php5?id=8268
+/*
+
+*/
+04D6588: 7D 80
+04D669C: 4042 FFFF
+;------------------------- end -------------------------
+

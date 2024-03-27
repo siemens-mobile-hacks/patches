@@ -1,0 +1,23 @@
+;SL65v53
+;Отключение анимации в Native Menu 
+;Stop Native Menu Animation 
+;(c) sim_emrom 
+;(r) Evgr
+;(p) Виктор89
+;Version: 
+;PatchID: 10150
+;Details: https://patches.kibab.com/patches/details.php5?id=10150
+/*
+
+*/
+092127C: 6C 00 ;Address Book
+09212A0: 7A 00 ;Calls
+09212BC: 96 00 ;Internet
+09212D8: 5E 00 ;Organiser 
+09212F8: 51 00 ;Messages
+0921330: 26 00 ;Camera
+092134C: 42 00 ;Extras
+0921370: 34 00 ;My stuff
+0921394: 8B 00 ;Setup
+;------------------------- end -------------------------
+

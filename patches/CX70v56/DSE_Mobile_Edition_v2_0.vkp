@@ -1,0 +1,17 @@
+;CX70v56
+;DSE Mobile Edition
+;DSE Mobile Edition
+;(c) 1nvisible
+;(r) ACiD[mrp], KreN, ~Jhellico
+;(p) SiamiX
+;Version: 2.0
+;PatchID: 5680
+;Details: https://patches.kibab.com/patches/details.php5?id=5680
+/*
+English:
+Allows keys to be rebound from the mobile phone.If you want the standart function to be used - put "STDF" as a string.
+v2: for MP v14
+*/
+08F9840: 2C3A381CA16B41F03AE9 00488047,0xA0FC9001,C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,22 @@
+;EL71v45
+;Отключить сканирование ДатаБазы медиа-файлов с диска "0:/"
+;Disable scanning and refreshing DataBase of Media-files of "0:/"
+;(c) funMarkus
+;Version: 3
+;PatchID: 8015
+;Details: https://patches.kibab.com/patches/details.php5?id=8015
+/*
+;Disable scanning and refreshing DataBase of Media-files of "0:/".
+;Scanning all folders with "~" in the name of them (the location of "~" has no matter (example: Music~ )).
+
+1) Go to System/apo, delete next folders there:
+idx, mal, mmalb, mmart, mmgen, mulmed
+2) Turn the phone off. Apply the patch.
+3) Turn the mobile on, open MediaPlayer. Wait till it refreshes the DB for the 1st time (it takes a while).
+4) That's it, no more long and exhausting refreshing of the DB! 
+
+*/
+07353C8: 30 FF
+07353C4: 0000 "~"2A
+;------------------------- end -------------------------
+

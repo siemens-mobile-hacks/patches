@@ -1,0 +1,109 @@
+;SK65v50
+;Управление Гл. Экраном
+;Mainscreen Changer
+;(c) BuG
+;(r) KreN, SiNgle, KiRiK, [crazy]misha
+;Version: 1.1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=4327
+;PatchID: 4220
+;Details: https://patches.kibab.com/patches/details.php5?id=4220
+/*
+Патч заменяет * Позиционирование главного экрана v2 * и * Изменение размеров шрифта на главном экране * совместим с * Расширенная панель иконок v0.5 beta *
+
+English:
+Replaces the patches * Mainscreen Positioning * and * change font size on mainscreen * compatible to * Extended IconBar v0.5 beta *
+*/
+; net icons
+02A7208: 00F0EBFA C046C046
+02A7210: 321C0221032000F0F7FA 00488047,0xA0FCA001,C046
+
+; iconbar
+02A752A: 00F05AF9 C046C046
+02A7550: 00040014039021300704 00488047,0xA0FCA03B,C046
+02A756E: 825B0221381C00F048F9 C046,00498847,0xA0FCA09D
+
+; accu icons
+02A7616: 00F0E4F8 C046C046
+02A761E: 221C0221632000F0F0F8 C046,00488047,0xA0FCA01B
+
+; date and time with removed softkeys
+02C989A: 6869A1220106090E201C C046,004B9847,0xA0FCA0BF
+
+; standard fonts, see line 0FCA100!
+02C9ED4: 80F112ED224C022803D1 004FB847,0xA0FCA0DD,C046
+
+; fonts with provider logo
+02C9F10: 0220A86113486E613830 004FB847,0xA0FCA111,C046
+
+#pragma enable old_equal_ff
+0FCA000: 321CFFB50320022100F09BF802D0F036
+0FCA010: 707DB17D00F09AF80BE0221CFFB56320
+0FCA020: 022100F08EF802D0F036F07D317E00F0
+0FCA030: 8DF8FFBC01BC0430004700AB188B0E23
+0FCA040: 584300AB10B5EDB420240222422100F0
+0FCA050: 78F806D0F036747EB27EF17E337F002B
+0FCA060: 0DD102B482B0012001900D2080180090
+0FCA070: 6318211C1098F6F757F802B002BCEDBC
+0FCA080: 091A188B0130F5F7CBFF000400140590
+0FCA090: 001910BC070420BC04352847825B40B5
+0FCA0A0: 022100F04EF801D0F036B17E40BC381C
+0FCA0B0: 80B4F6F731F880BC01BC043000476869
+0FCA0C0: 40B5732200F03DF801D0F036327D40BC
+0FCA0D0: 0106090E201C08BC043318476EB5F6F7
+0FCA0E0: 1FFB002F0BD0394C00F02BF807D0301D
+0FCA0F0: 0768002F01D100F045F80436341CEEBC
+0FCA100: 334880470437022800D138470A373847
+0FCA110: 0220A8617EB5F6F703FB002F0BD000F0
+0FCA120: 10F82A4C07D0301D0768002F01D100F0
+0FCA130: 29F80436341C201CFEBC6E6138300437
+0FCA140: 3847BFB52748F6F75BFDBFBD07B5101C
+0FCA150: F5F7DEFF041C101CF5F7D6FF0138013C
+0FCA160: 06BC84B0367F002E07D10B1980180090
+0FCA170: 012001901498F5F7D7FF02B007BCF5F7
+0FCA180: CBFF00BD00B5114D0127296801600435
+0FCA190: 043001371D2FF8D1301C743070625030
+0FCA1A0: F065301C7C30094DA96D0A6882644A68
+0FCA1B0: C264296A01278A680260CA6842601030
+0FCA1C0: 103101370A2FF6D100BD0000,0xA0458954
+0FCA1D0: 0xA0A00129
+
+0FCA1E0: 0xB1C2D3E4,0x0000BB02,00000000,00000000,\
+"{patch=`Mainscreen Changer` ver=1.1 cp=BuG id=BB02}","\
+{offset +0x70}","\
+{sm=Texts}","\
+{sm=standard}","\
+Y positions:","\
+{0x4 i `provider name` r=0..170 v=23}","\
+{0x14 i `sub provider name` r=0..170 v=37}","\
+{0x24 i `CB/flash messages` r=0..170 v=70}","\
+{0x34 i `stopwatch/timer` r=0..170 v=90}","\
+{0x44 i `date/time` r=0..170 v=88}","\
+font sizes: (0-10)","\
+{0x8 i `provider name` r=0..10 v=8}","\
+{0x18 i `sub provider name` r=0..10 v=7}","\
+{0x28 i `CB/flash messages` r=0..10 v=7}","\
+{0x38 i `v_stopwatch/timer` r=0..10 v=7}","\
+{0x48 i `date/time` r=0..10 v=10}","\
+{endsm}","\
+{sm `with provider logo`}","\
+Y positions:","\
+{0x64 i `sub provider name/CB/flash msg` r=0..170 v=27}","\
+{0x74 i `stopwatch/timer` r=0..170 v=90}","\
+{0x84 i `date/time` r=0..170 v=88}","\
+font sizes: (0-10)","\
+{0x68 i `sub provider name/CB/flash msg` r=0..10 v=7}","\
+{0x78 i `stopwatch/timer` r=0..10 v=7}","\
+{0x88 i `date/time` r=0..10 v=8}","\
+{endsm}","\
+{0x94 b `date/time no softkeys` r=0..170 v=118}","\
+{endsm}","\
+{sm=Icons}","\
+{0x95 xy `net icons` x=10 y=1}","\
+{0x97 xy `battery icons` x=1 y=1}","\
+{0x99 xy `icon bar` x=58 y=1}","\
+{0x9B b `icon bar width` v=59}","\
+{0x9C cb `disable canvases` v=0}","\
+{endsm}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;SL65v50
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found" (3*beep)
+;(c) avkiev
+;Version: 
+;PatchID: 5154
+;Details: https://patches.kibab.com/patches/details.php5?id=5154
+/*
+
+*/
+13B8354: 5C03 FFFF
+;------------------------- end -------------------------
+

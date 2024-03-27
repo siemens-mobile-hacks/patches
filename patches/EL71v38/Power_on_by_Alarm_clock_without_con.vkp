@@ -1,0 +1,13 @@
+;EL71v38
+;Не спрашивать подтверждения включения по будильнику
+;Power on by Alarm clock without confirmation
+;(c) ThE TrIFoN
+;Version: 
+;PatchID: 6516
+;Details: https://patches.kibab.com/patches/details.php5?id=6516
+/*
+
+*/
+066F7E8: 567C0BFB D5F636F8
+;------------------------- end -------------------------
+

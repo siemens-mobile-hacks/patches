@@ -1,0 +1,42 @@
+;CX75v13
+;Красная иконка - будильник включон
+;Red Icon alarm clock on
+;(c) Demo
+;Version: 2.0
+;PatchID: 3571
+;Details: https://patches.kibab.com/patches/details.php5?id=3571
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v13&f=Red_Icon_alarm_clock_on_2.rar
+
+/*
+Изменена картинка
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ### Avtor: Demo                                                     ###
+; ### Date: 02.06.2005  -  Time: 17:58:47                             ###
+; ### Patch for: SIEMENS CX75 v13                                     ###
+; #######################################################################
+
+
+; ##### Picture 767 #####
+010C181C: 0E0C8500B04F17A1 0E0E8500B04F17A1
+
+01174FB0: 05C004FF07C004FF020E04FF03C002FF 13C0040006C00C00FFC0020005F605F2
+01174FC0: 020E04FF020E02FF02C0E4FF0E0EFFFF 030004F607F2FFED020002F6020002F2
+01174FD0: 0E0EFFFF0E0EFFC0C0FF0EFF0E0EBFBF FF0002F2FDED00ED0200FEF20002F2FB
+01174FE0: 0D0DFF0EFFC0C003FFFA0EDF09BFBF0D 00F200F2ED0200FFED0200FEF20002F2
+01174FF0: 03FF03C0F6FF0EBFBF0909BF9B09FF04 F800F200ED00ED00E00200FEF20002F2
+01175000: C0FEFF0E03BF0209FD9B09FF04C002FF F800ED00ED00ED00E00200FEF20002F2
+01175010: FE0DBF039BFD09FFFF04C002FF020DFA FE00ED0200FCEDE000E0020002F20200
+01175020: 9B7B0909FFFF04C0F6FF0DFFFF0909FF 02EDFE00ED02E0FE00E0020006ED06E0
+01175030: FF0DFF04C00AFF02C0 0F000EC00F0F0F0F0F
+
+
+
+;------------------------- end -------------------------
+

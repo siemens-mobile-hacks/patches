@@ -1,0 +1,13 @@
+;M55v10
+;Отключить вопрос "Всегда разрешать сетевые подключения?"
+;Disable "Always allow network connections?" question
+;(c) SiNgle
+;Version: 
+;PatchID: 1368
+;Details: https://patches.kibab.com/patches/details.php5?id=1368
+/*
+
+*/
+73FA28: 2D04 CC00
+;------------------------- end -------------------------
+

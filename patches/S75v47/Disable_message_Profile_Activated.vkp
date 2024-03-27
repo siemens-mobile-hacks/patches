@@ -1,0 +1,18 @@
+;S75v47
+;Убрать сообщение "Профиль активирован"
+;Disable message "Profile Activated"
+;(c) -=(Kad)=-
+;(r) shadows, SiNgle
+;Version: 
+;PatchID: 7834
+;Details: https://patches.kibab.com/patches/details.php5?id=7834
+/*
+
+*/
+0335FDA: B7F0A2EB BFF062F9
+03F52A2: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFB5074C88DF2178884206D0207088DF
+03F52B2: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 132804D0C5DF002801D0C7DF0901FFBD
+03F52C2: FFFF,0xFFFFFFFF C046,0xA8A80000 ; FreeRam
+
+;------------------------- end -------------------------
+

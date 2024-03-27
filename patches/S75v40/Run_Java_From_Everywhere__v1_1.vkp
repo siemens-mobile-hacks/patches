@@ -1,0 +1,46 @@
+;S75v40
+;Запуск Явы отовсюду
+;Run Java From Everywhere
+;(c) uckycuTeJIb
+;Version: 1.1
+;PatchID: 4698
+;Details: https://patches.kibab.com/patches/details.php5?id=4698
+/*
+Воспользовался советом от Zlod'а на сайте s75.siemens-club.org. В отличие от патча perk11'а,не "слетает" папка Games в Моем Меню,отлично работает с прежним mystuff.xml.
+*/
+66DDE0: 30 00
+66DDE2: 3A 00
+66DDE4: 5C 00
+66DDE6: 47 00
+66DDE8: 61 00
+66DDEA: 6D 00
+66DDEC: 65 00
+66DDEE: 73 00
+
+66DDDE: 08 00
+
+66DA9C: 50 47
+66DA9E: 69 61
+66DAA0: 63 6D
+66DAA2: 74 65
+66DAA4: 75 73
+66DAA6: 72 00
+66DAA8: 65 00
+66DAAA: 73 00
+66DAAC: 5C 00
+66DAAE: 57 00
+66DAB0: 61 00
+66DAB2: 6C 00
+66DAB4: 6C 00
+66DAB6: 70 00
+66DAB8: 61 00
+66DABA: 70 00
+66DABC: 65 00
+66DABE: 72 00
+
+66DA94: 15 08
+
+66DA84: 504943535F57414C4C5041504552 4A4156415F4A414D5F47414D4553
+66DDCE: 4A 00
+;------------------------- end -------------------------
+

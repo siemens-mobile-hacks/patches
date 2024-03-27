@@ -1,0 +1,17 @@
+;S75v52
+;Позиционирование элементов ГЭ
+;MS position
+;(c) Kibab, Z80
+;(p) Vados
+;Version: 
+;PatchID: 8425
+;Details: https://patches.kibab.com/patches/details.php5?id=8425
+/*
+
+*/
+029D1CE: 03212123381CFFF76FFE C04600498847117606A0
+029D1DC: 221C0221032000F0EBFB 004988474D7606A0C046
+029D748: 65218023381CFFF7B2FB 004988476F7606A0C046
+029D756: 321C0221652000F02EF9 C04600498847AB7606A0
+;------------------------- end -------------------------
+

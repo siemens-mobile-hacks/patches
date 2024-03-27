@@ -1,0 +1,15 @@
+;S75v52
+;Несколько небольших размеров шрифта номера при наборе
+;Some small dial number font sizes
+;(c) Evgr
+;(p) Vados
+;Version: 
+;PatchID: 9424
+;Details: https://patches.kibab.com/patches/details.php5?id=9424
+/*
+
+*/
+02F61FC: 05 01 ; при значениях от 1 до 4 меняется на какой-то мелкий шрифт
+042D1C0: 01 0A ; размер курсора
+;------------------------- end -------------------------
+

@@ -1,0 +1,28 @@
+;SK65v50
+;SMS View Shortcut
+;SMS View Shortcut
+;(c) Bennie
+;(p) ~Jhellico
+;Version: 
+;PatchID: 4188
+;Details: https://patches.kibab.com/patches/details.php5?id=4188
+/*
+Переход к следующему/предыдущему SMS по джойстику вправо/влево
+English:
+Use Right Arrow as a "View Next Message" shortcut and
+Left Arrow key as a "View Previous Message" shortcut
+*/
+04D8468: 69688160 26F558FB
+04D89E4: 013290422AD9 B368,26F58BF8
+04D89F0: 0130 101C
+04D8A54: 3B1CAA68 6B892A89
+0520DFE: 201C51F0CEEF0C23 8A2008E0012729E0
+0520E2C: 18D0 E9D0
+
+#pragma enable old_equal_ff
+01FEB00: 012B01D0013200E0013A002A02DB8242
+01FEB10: 02DA7047421E704700227047,A9880181
+01FEB20: 298941817047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

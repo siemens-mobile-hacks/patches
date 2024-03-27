@@ -1,0 +1,28 @@
+;S68v47
+;Мега-громкость
+;Mega-loudness
+;(c) SiNgle,-=(Kad)=-,Akot
+;Version: 3-MP
+;PatchID: 7856
+;Details: https://patches.kibab.com/patches/details.php5?id=7856
+/*
+Как и обещал, объединил эти патчи в один под МП
+*/
+;S68v47
+;Мега-громкость
+;Mega-loudness
+;(c) SiNgle,-=(Kad)=-,Akot
+;Version: 3-MP
+/*
+Как и обещал, объединил эти патчи в один под МП
+*/
+01B5D04: 000000EA C0FFFFEA                                                 ; Headset S68v47
+01B5C0C: 0600000A020000EF6C3DA0E30320A0E3 00709FE537FF2FE131EB06A03B0000EA ; Headset S68v47
+01B5CD8: 2600C4E5 D3FFFFEA                                                 ; Speaker S68v47
+01B5C2C: 030000EF6C3DA0E30320A0E30410A0E1 00709FE537FF2FE101EB06A0290000EA ; Speaker S68v47
+
+;------------------------- end -------------------------
+
+
+;------------------------- end -------------------------
+

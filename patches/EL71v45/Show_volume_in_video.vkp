@@ -1,0 +1,14 @@
+;EL71v45
+;Показывать громкость в видео
+;Show volume in video
+;(c) @ndres/PRM
+;Version: 
+;PatchID: 7936
+;Details: https://patches.kibab.com/patches/details.php5?id=7936
+/*
+
+*/
+07B468B: 0A EA ; disable mute-icon
+07B3934: 45 32 ; show volume
+;------------------------- end -------------------------
+

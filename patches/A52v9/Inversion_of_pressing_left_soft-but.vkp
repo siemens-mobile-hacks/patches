@@ -1,0 +1,14 @@
+;A52v9
+;Инверсия нажатия левой soft-кнопки
+;Inversion of pressing left soft-button
+;(c) Baloo
+;Version: 
+;PatchID: 4354
+;Details: https://patches.kibab.com/patches/details.php5?id=4354
+/*
+При коротком нажатии выполняется действие, при длинном - смена действия
+*/
+1E231E: 4812 2612
+1E2640: 2612 4812
+;------------------------- end -------------------------
+

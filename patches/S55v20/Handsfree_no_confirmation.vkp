@@ -1,0 +1,14 @@
+;S55v20
+;Включение/выключение громкой связи без подтверждения
+;Hadsfree on/off without confirmation
+;(c) SiNgle
+;(p) avkiev
+;Version: 
+;PatchID: 4774
+;Details: https://patches.kibab.com/patches/details.php5?id=4774
+/*
+
+*/
+320B5E: E01CE6FD4807E00E DAA242FEFA72720B
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;A52v9
+;Разблокировка кнопки 1
+;Unlock key 1
+;(c) Delirium
+;Version: 
+;PatchID: 4368
+;Details: https://patches.kibab.com/patches/details.php5?id=4368
+/*
+Позволяет использовать кнопку 1, как обычный hot-key
+*/
+1E7ABE: 3D 0D
+1E7B1C: 3D 0D
+1E7D84: 3D 0D
+1E7F50: 2D2B CC00
+1E8096: 32 31
+1E819E: 2D1A CC00
+1E827D: 82 81
+;------------------------- end -------------------------
+

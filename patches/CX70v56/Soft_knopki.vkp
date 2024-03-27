@@ -1,0 +1,17 @@
+;CX70v56
+;Убрать софт-кнопки с главного экрана и опустить дату с часами вниз
+;Remove soft-keys from MainScreen
+;(c) SiNgle
+;(p) Smelter
+;Version: 2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1113
+;PatchID: 623
+;Details: https://patches.kibab.com/patches/details.php5?id=623
+/*
+Патч убрает софт-кнопки с главного экрана и опускает дату с часами вниз.
+*/
+171BD9D: D0 E0
+171BE5C: 04D1 0028
+
+;------------------------- end -------------------------
+

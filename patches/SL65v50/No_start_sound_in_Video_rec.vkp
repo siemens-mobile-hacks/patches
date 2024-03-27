@@ -1,0 +1,13 @@
+;SL65v50
+;Отключить звук в начале записи видео
+;No start sound in Video rec
+;(c) SiNgle
+;Version: 
+;PatchID: 5156
+;Details: https://patches.kibab.com/patches/details.php5?id=5156
+/*
+
+*/
+08DAA0C: 1A 1D
+;------------------------- end -------------------------
+

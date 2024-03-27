@@ -1,0 +1,15 @@
+;EL71v45
+;Предпросмотр Смс
+;Sms Preview
+;(c) Zl0d
+;(p) Benlux
+;Version: 
+;PatchID: 7394
+;Details: https://patches.kibab.com/patches/details.php5?id=7394
+/*
+
+*/
+023A699: 66616C736527 747275652720
+
+;------------------------- end -------------------------
+

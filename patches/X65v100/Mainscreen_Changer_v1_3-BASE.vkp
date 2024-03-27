@@ -1,0 +1,103 @@
+;X65v100
+;Управление Гл. Экраном
+;Mainscreen Changer
+;(c) BuG
+;(r) KreN,SiNgle,KiRiK,[crazy]misha (i) Lisugar,Lost
+;Version: 1.3
+;PatchID: 7748
+;Details: https://patches.kibab.com/patches/details.php5?id=7748
+/*
+Патч заменяет * Позиционирование главного экрана v2 * , * Изменение размеров шрифта на главном экране * , * Bellevue *
+совместим с * Расширенная панель иконок *
+Версия 1.3: адаптировано под swi, исправлен canvas
+
+English:
+Replaces the patches * Mainscreen Positioning * , * change font size on mainscreen * , * Bellevue *
+compatible to * Extended IconBar *
+Version 1.3: swi adaptation, fixed canvas
+*/
+#pragma enable old_equal_ff
+0FCA000: FFB5341C0320152502E0FFB563201725
+0FCA010: 022100F0B0F806D0F03600F0D3F818D3
+0FCA020: AD192878697813B4201C22DF451E201C
+0FCA030: 21DF013806BC84B0367F002E06D14B19
+0FCA040: 8018009001200190139825DF02B007BC
+0FCA050: 23DFFFBC01BC04300047321CFFB5595E
+0FCA060: 022303E03A1CFFB5281C0023013900F0
+0FCA070: 82F8EDD0F03600F0A5F8EAD3F618707F
+0FCA080: B17FE5E76B46188B0E2358436B4610B5
+0FCA090: EDB420240222422100F06DF806D0F036
+0FCA0A0: 747EB27EF17E337F002B0CD102B482B0
+0FCA0B0: 012001900D20801800906318211C1098
+0FCA0C0: 25DF02B002BCEDBC091A188B0130B8DF
+0FCA0D0: 000400140590001910BC070420BC0435
+0FCA0E0: 2847825B40B5022100F045F804D0F036
+0FCA0F0: 00F068F802D3B17E381C23DF40BC01BC
+0FCA100: 04300047286920B5A12200F034F801D0
+0FCA110: F036327D20BC0106090E201C40BC0436
+0FCA120: 30476EB5324C00F026F807D0301D0768
+0FCA130: 002F01D100F023F80436341CEEBC2D48
+0FCA140: 80470437022800D00837384702206861
+0FCA150: 7EB500F010F8264C07D0301D0768002F
+0FCA160: 01D100F00CF80436341C201CFEBC2E61
+0FCA170: 383004373847BFB52248C4DFBFBD00B5
+0FCA180: 1B4D0127296801600435043001371D2F
+0FCA190: F8D1301C743070625030F065301C7C30
+0FCA1A0: 134DA96D0A6882644A68C264296A0127
+0FCA1B0: 8A680260CA6842601030103101370A2F
+0FCA1C0: F6D100BD4FB5203643DF01307178C140
+0FCA1D0: 0CD36EDF002802D07178C90806E0C7DF
+0FCA1E0: D3800068002801D1717809094FBDC046
+0FCA1F0: A45E73A111B927A1
+
+;0FCA148: 08 0A ; use 0A if standard fonts entry is word-aligned, otherwise 08
+
+0xFCA200: 0xB1C2D3E4,0x0000BB02,00000000,00000000,\
+"{patch=`Mainscreen Changer` cp=BuG ver=1.3 id=BB02}","\
+{offset +0x70}","\
+{sm=Texts}","\
+{sm=standard}","\
+Y positions:","\
+{0x4 i `provider name` r=0..200 v=8}","\
+{0x14 i `sub provider name` r=0..200 v=0x1A}","\
+{0x24 i `CB/flash messages` r=0..200 v=0x64}","\
+{0x34 i `stopwatch/timer` r=0..200 v=0x72}","\
+{0x44 i `date/time` r=0..200 v=0x81}","\
+font sizes: (0-10)","\
+{0x8 i `provider name` r=0..10 v=3}","\
+{0x18 i `sub provider name` r=0..10 v=3}","\
+{0x28 i `CB/flash messages` r=0..10 v=7}","\
+{0x38 i `v_stopwatch/timer` r=0..10 v=7}","\
+{0x48 i `date/time` r=0..10 v=8}","\
+{endsm}","\
+{sm `with provider logo`}","\
+Y positions:","\
+{0x64 i `sub provider name/CB/flash msg` r=0..200 v=0x64}","\
+{0x74 i `stopwatch/timer` r=0..200 v=0x72}","\
+{0x84 i `date/time` r=0..200 v=0x81}","\
+font sizes: (0-10)","\
+{0x68 i `sub provider name/CB/flash msg` r=0..10 v=7}","\
+{0x78 i `stopwatch/timer` r=0..10 v=7}","\
+{0x88 i `date/time` r=0..10 v=8}","\
+{endsm}","\
+{0x94 b `date/time no softkeys` r=0..200 v=0xA1}","\
+{endsm}","\
+{sm=Icons}","\
+{sm `Show in`}","\
+{0xA1.0 cb lock}","\
+{0xA1.1 cb unlock v=1}","\
+{0xA1.2 cb call}","\
+{0xA1.3 cb stby}","\
+{endsm}","\
+{0x95 xy `net icons` x=3 y=2}","\
+{0x97 xy `battery icons` x=0x63 y=2}","\
+{0x99 xy `icon bar` x=0x21 y=2}","\
+{0x9B b `icon bar width` v=0x42}","\
+{0x9D xy `alarm` x=0x57 y=160}","\
+{0x9F xy `appointment` x=0x47 y=160}","\
+{0x9C cb `disable canvases` v=0}","\
+{endsm}","\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

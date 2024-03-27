@@ -1,0 +1,18 @@
+;S75v47
+;Убрать Сетку на Фоне при Прорисовке Окошек
+;Disable Background Net on Drawing Windows
+;(c) 1nvisible
+;(r) SiNgle
+;(p) -=(Kad)=-
+;Version: 0.4 b1
+;PatchID: 7754
+;Details: https://patches.kibab.com/patches/details.php5?id=7754
+/*
+
+*/
+0A1601C: EBF797FB C046C046
+0A155CA: ECF7C0F8 C046C046
+0A12998: EEF7D9FE C046C046
+0A161AA: EBF7D0FA C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;X75v100
+;Кэширование *.png при старте телефона
+;Png cacher (NSD)
+;(c) SimaFish, Vedan
+;Version: 1.3
+;PatchID: 8904
+;Details: https://patches.kibab.com/patches/details.php5?id=8904
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Png_cacher.zip
+
+/*
+
+Кэширует *.png графику при запуске из папок, указанных в конфиге.
+*/
+Png cacher (NSD)
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;SL75v52
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle
+;(p) Виктор89
+;Version: 3
+;PatchID: 9236
+;Details: https://patches.kibab.com/patches/details.php5?id=9236
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE. Рабочая версия!
+2SimaFish: проверяй хоть то что выкладываешь!
+*/
+02FB4EE: A0F7DDF8 F4F01CE9
+;------------------------- end -------------------------
+

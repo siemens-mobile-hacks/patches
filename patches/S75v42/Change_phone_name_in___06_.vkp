@@ -1,0 +1,14 @@
+;S75v42
+;Изменение имени тел. в *#06#
+;Change phone name in *#06#
+;(c) avkiev
+;Version: 
+;PatchID: 5475
+;Details: https://patches.kibab.com/patches/details.php5?id=5475
+/*
+
+*/
+008108E: 53373500330030000000000000 "Siemens S75"
+
+;------------------------- end -------------------------
+

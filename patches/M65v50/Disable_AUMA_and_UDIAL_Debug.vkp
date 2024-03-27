@@ -1,0 +1,15 @@
+;M65v50
+;Отключение АUМА и UDIАL Дебагеров
+;Disable AUMA and UDIAL Debug
+;(c) 1nvisible
+;(p) Strike66
+;Version: 
+;PatchID: 3533
+;Details: https://patches.kibab.com/patches/details.php5?id=3533
+/*
+
+*/
+08F1538: F0412DE9 1EFF2FE1
+0C2521C: 0FB4 7047
+;------------------------- end -------------------------
+

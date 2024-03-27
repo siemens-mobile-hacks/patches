@@ -1,0 +1,45 @@
+;M65v50
+;Время непрерывной работы телефона
+;Uptime Stats
+;(c) benj9
+;Version: 2
+;PatchID: 2540
+;Details: https://patches.kibab.com/patches/details.php5?id=2540
+/*
+При нажатии на красную кнопку появляется кратковременное сообщение о длительности работы телефона от времени последнего включения.  
+
+Также можно посмотреть время непрерывной работы телефона при вводе функции "A0800C3D" через любой патч запускающий функции. Например через * Key Sequencer * или * Запуск функций с помощью *# кодов *
+
+Обязательно установите "GetLP_UsrString" или "API". Использует функции: #2, 4, 22, 79.  
+
+
+Shows a short message with session duration at shutdown.
+Will be also launchable directly by keysequencer by call thumb: A0800C3D
+
+Needs Function Library to run and: "GetLP_UsrString" or "API". Function library #2, 4, 22, 79 functions used, if missing, patch shuts down phone.
+
+*/
+0B1F7B0: 00220092 E1F42EFA
+1240938: 0010A0E30000A0E3 04F01FE5250C80A0
+#pragma enable old_equal_ff
+0800C3C: FFB5022700F031F899280FD008ACA4B0
+0800C4C: 00F03FF8244D2E68811B00F008F80090
+0800C5C: 019125A110A800F012F824B0FFBD60B5
+0800C6C: 2848042700F019F8061C274800F015F8
+0800C7C: 051C3C2000F011F8321C2B1C60BD051C
+0800C8C: 7646162700F00EF8C046B8470120291C
+0800C9C: 00224F2700F001F8B74680B500F002F8
+0800CAC: B84780BD60B5FF000C4EBF197F687D1C
+0800CBC: 002D00D560BDA54600200021054FB847
+0800CCC: 00BD0EB584B0064A68469047181C04B0
+0800CDC: 0EBD0000BC4323A1080200A80000FCA0
+0800CEC: 2CC922A1E8030000757074696D652025
+0800CFC: 69640D253032693A253032693A253032
+0800D0C: 6900000080510100100E0000
+0800C10: 344A1068002801D11360FFE700220092
+0800C20: 70470000
+0800C24: 00B500F009F800210020024F3F68B847
+0800C34: 00BD0000E00C80A0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

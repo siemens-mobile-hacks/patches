@@ -1,0 +1,22 @@
+;S68v52
+;Перезагрузка при пикоффе 
+;Do restart at pickoff 
+;(c) Evgr, Feyman
+;(r) Dimadze, Маришка
+;(p) Виктор89
+;Version: 
+;PatchID: 10173
+;Details: https://patches.kibab.com/patches/details.php5?id=10173
+/*
+В Меню разработчика/Exits появится пункт Restart
+Exit RAM Dump должен быть выключен
+*/
+-3564C
+0245AB0: 1D 16 
+0245AB3: 1A EA 
+0245B23: 0A EA
+024247C: 00 01 ; RestartEnable 
+02424C0: 00 01 ; Exit_RAM_Dump_Enable
++0
+;------------------------- end -------------------------
+

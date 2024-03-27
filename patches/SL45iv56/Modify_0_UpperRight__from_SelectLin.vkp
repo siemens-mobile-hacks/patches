@@ -1,0 +1,60 @@
+;SL45iv56
+;Изменить 0[UpperRight] c "Select Line" а Внешняя программа
+;Modify 0[UpperRight] from "Select Line" to External Program
+;(c) RizaPN
+;Version: 
+;PatchID: 1931
+;Details: https://patches.kibab.com/patches/details.php5?id=1931
+/*
+
+*/
+0x3B309E: 4840 E014
+0x3B30C4: 7B03 8600 ... 
+0x3B3322: DAA0AC15 DAF70004 ... ;(see table)
+0x3B3326: 4840 E004
+
+/*
+=============================================
+Entry-Point : Text  : Functions
+=============================================
+DA D8 B4 E1 : B0 0D : Java
+DA D8 B8 E1 : 53 03 : Internet
+DA D8 C4 E1 : B8 01 : MP3Player
+DA D8 CA E1 : 81 05 : Card-Explorer
+DA D8 CE E1 : 85 03 : Chronometer
+DA D8 D6 E1 : D7 02 : Currency
+DA D8 DA E1 : 59 02 : Games
+DA DB 3C EF : 16 00 : Addressbook
+DA DB 46 EF : 33 02 : SIM-Location
+DA DB 50 EF : 58 01 : Calendar
+DA DB 5C EF : 9D 02 : Appointments
+DA DB 68 EF : B7 00 : Dictaphone
+DA DB 6C EF : 56 00 : Answer-Message
+DA DB 70 EF : D2 02 : BussinessCard
+DA DB 7C EF : 8A 02 : Calculator
+DA DB 80 EF : 80 03 : VoiceControl
+DA DB 80 F2 : E7 00 : Call-Missed
+DA DB 84 F2 : 44 00 : Call-Received
+DA DB 88 F2 : 22 01 : Call-Dialed
+DA DB 8C F2 : E8 00 : Alarm-Missed
+DA DC 16 06 : 9C 01 : Compose-Melody
+DA DC 04 79 : BE 04 : Game-SuperMind
+DA DC 10 79 : C0 04 : Game-MoveTheBox
+DA DC 14 79 : 87 05 : Game-Wacko
+DA DC 08 79 : C2 04 : Game-HomeRun
+DA DC FC 78 : 99 04 : Game-Reversi
+DA DC 00 79 : 9B 04 : Game-Quattropoli
+DA DC 0C 79 : C4 04 : Game-TheMaze
+DA D9 62 0A : 3C 02 : Write-Message
+DA D9 EE 0A : D3 00 : Incoming-Message
+DA D9 F8 0A : 69 00 : Outgoing-Message
+DA D9 02 0B : DE 03 : Archive
+DA DC 12 42 : 6C 04 : Contrast
+DA D5 5A F2 : 5B 02 : Language
+DA D5 6A F2 : 5F 00 : Display
+DA D5 82 F2 : 7E 02 : T9-Input 
+DA DC 80 46 : 82 00 : Illumination
+=============================================
+*/
+;------------------------- end -------------------------
+

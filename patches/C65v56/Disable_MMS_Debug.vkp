@@ -1,0 +1,14 @@
+;C65v56
+;Disable MMS Debug
+;Disable MMS Debug
+;(c) 1nvisible
+;Version: 
+;PatchID: 4187
+;Details: https://patches.kibab.com/patches/details.php5?id=4187
+/*
+
+*/
+0988340: 0FB4 7047 
+0988430: F0B5 7047
+;------------------------- end -------------------------
+

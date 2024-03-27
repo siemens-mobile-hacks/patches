@@ -1,0 +1,29 @@
+;MC60v10
+;Запрет или замена любого набора (112, 08, 911) при залоченной клавиатуре
+;Disable or change number(112, 08, 911) dial while keyboard is locked
+;(c) Matr!x
+;(p) Kanibaals
+;Version: 
+;PatchID: 3627
+;Details: https://patches.kibab.com/patches/details.php5?id=3627
+/*
+*** Не дает набрать с телефона номер 112 (экстренные службы: 
+милиция, пожарные, скорая) при залоченной клаве - 
+НАСТОЯТЕЛЬНО НЕ РЕКОМЕНДУЮ СТАВИТЬ! 
+В жизни случается всякое...*** 
+http://www.mabila.com/magazine/?file=2001.05.25.2338
+
+С другой стороны дети любит  играть с телефоном и случайна набрать номер...
+
+
+English:Could be used for babysitting no more prank calls to sos center...use with caution
+*/
+00351F68: 31313200 00000000 ;disable 112
+00351F6C: 39313100 00000000 ;disable 911
+00351F70: 303800 393900 ;Original 08, change to 99
+;08 not possible to change to 000000
+;Enters the main menu according to the right soft key
+;00767B3C: DA96B66B DA750040 ;A card multi- numbers menu function, may replace 
+
+;------------------------- end -------------------------
+

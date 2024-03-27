@@ -1,0 +1,15 @@
+;S65v58
+;Отключить некий отладчик
+;Disable Some Debug
+;(c) benj9
+;Version: 
+;PatchID: 3349
+;Details: https://patches.kibab.com/patches/details.php5?id=3349
+/*
+Ускоряет телефон, отсекая ненужный код
+English:Speed up phone by stripping needless code
+*/
+0B57CB0: 10B5 7047
+0B57D24: 0FB4 7047
+;------------------------- end -------------------------
+

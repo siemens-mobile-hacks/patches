@@ -1,0 +1,51 @@
+;S65v50
+;Индикатор пропущенных событий
+;Missed Events Indicator
+;(c) empeka
+;(p) KiRiK
+;Version: 
+;PatchID: 911
+;Details: https://patches.kibab.com/patches/details.php5?id=911
+/*
+По некоторым причинам старые данные в точке входа могут отличаться
+В этом случае сохраните *.vkp Файл Восстановления.
+
+EN:
+For some reason old data at the entrypoint may be different
+Save *.vkp Repair File in this case
+
+*/
+1698C38: 02210320 28F0C2F9 ; entrypoint 
+
++16C0FA0
+#pragma enable old_equal_ff
+00: 4D69737365644576656E74496E646963
+10: A9656D70656B61202870294B6952694B
+20: 7CB50F4E0F4D104C10480068002807D0
+30: 421971217020B047221C6E217620B047
+40: 0B480078002807D042197F217020B047
+50: 621C7C217620B047022103207CBDC046
+60: 319269A105040000C103000044DF6DA8
+70: 441B45A8
+#pragma disable old_equal_ff
+
+;calls digit | число звонков
+;32: 71 0i113 ;Y
+;34: 70 0i112 ;X
+;calls ico | иконка звонков
+;3A: 6E 0i110 ;Y
+;3C: 76 0i118 ;X
+
+;sms digit | число СМС
+;4A: 7F 0i127 ;Y
+;4C: 70 0i112 ;X
+;sms icon | иконка СМС
+;52: 7C 0i124 ;Y
+;54: 76 0i118 ;X
+
+;64: 0504 0i01029 ;digit pic# | № картинки числа
+;68: С103 0i961 ; missed call icon# | № картинки пропущенного звонка
+
++0
+;------------------------- end -------------------------
+

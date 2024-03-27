@@ -1,0 +1,13 @@
+;C81v51
+;Отключение подсветки клавиатуры
+;Disable keypad light
+;(c) SiNgle
+;Version: 
+;PatchID: 7211
+;Details: https://patches.kibab.com/patches/details.php5?id=7211
+/*
+
+*/
+090E2BB: D5 24
+;------------------------- end -------------------------
+

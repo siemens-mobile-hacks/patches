@@ -1,0 +1,14 @@
+;M55v11
+;Изменение звука при съемке камерой
+;Change Camera sound
+;(c) avkiev
+;(p) AlexSid
+;Version: 
+;PatchID: 5189
+;Details: https://patches.kibab.com/patches/details.php5?id=5189
+/*
+
+*/
+0F6014: 25 3A ;или любой звук из списка
+;------------------------- end -------------------------
+

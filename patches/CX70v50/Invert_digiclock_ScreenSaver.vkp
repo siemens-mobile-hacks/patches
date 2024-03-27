@@ -1,0 +1,53 @@
+;CX70v50
+;Инвертировать Цифровые часы
+;Invert digiclock ScreenSaver
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 103
+;Details: https://patches.kibab.com/patches/details.php5?id=103
+/*
+Инвертировать Цифровые часы.
+!!!Можно поменять цвет цифр на любой из таблици RGB.
+color table (0..17h) R G B
+00 - белый (white)
+01 - чёрный (black)
+02 - красный (red base)
+03 - синий (navy base)
+04 - зелёный (green base)
+05 - малиновый (magenta base)
+06 - голубой (aqua base)
+07 - жёлтый (yellow base)
+08 - светло-красный (red light)
+09 - светло-синий (navy light)
+0A - светло-зелёный (green light)
+0B - светло-малиновый (magenta light)
+0C - бледно-голубой (aqua light)
+0D - бледно-желтый (уellow light)
+0E - тёмно-красный (red dark)
+0F - тёмно-синий (navy dark)
+10 - тёмно-зелёный (green dark)
+11 - тёмно-малиновый (magenta dark)
+12 - тёмно-голубой aqua (dark)
+13 - тёмно-жёлтый yellow (dark)
+14-17 - прозрачный (clean)
+*/
+;0D8E36D: FFFFFF64 A9ABA900 ;set "0" color to transparent
+171C3DE: 01 00 ;1h back
+171C3E6: 00 01 ;1h font
+171C428: 01 00 ;2h back
+171C430: 00 01 ;2h font
+171C46A: 01 00 ;":" back
+171C472: 00 01 ;":" font
+171C4A6: 01 00 ;1m back
+171C4AE: 00 01 ;1m font
+171C4EE: 01 00 ;2m back
+171C4F6: 00 01 ;2m font
+171C540: 01 00
+171C548: 00 01
+17337AC: 00 01 ;ProvName font
+17337B0: 01 00 ;background
+173381C: 00 01 ;ProvFon with Arrow
+1733820: 01 00 ;background with Arrow
+;------------------------- end -------------------------
+

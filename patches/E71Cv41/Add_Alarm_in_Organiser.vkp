@@ -1,0 +1,46 @@
+;E71Cv41
+;Add alarm in Organiser in Native Menu
+;Add alarm in Organiser in Native Menu
+;(c) BingK(binghelingxi)
+;Version: 
+;PatchID: 8959
+;Details: https://patches.kibab.com/patches/details.php5?id=8959
+/*
+English:If you use Change alarmclock to radio in native menu ,you will find no alarm in NativeMenu.If use this,you can find it in naive menu.
+Also Fix Remote mync. in the patch
+*/
+08A7FC4: 07 08
+
+08A7F6C: 854779A0 0x00000000
+08A7F70: 8D4779A0 04080000
+08A7F74: A34779A0 04080000
+08A7F78: B94779A0 0x7FFFFFFF
+08A7F7C: C34779A0 0x00000000
+08A7F80: E54779A0 0x00000003
+08A7F84: EF4779A0 0x0000059D
+
+08A7FC0: 6C7F8AA0 0xA135FFE0
+
+
++135FFE0
+00: FFFFFFFF 854779A0
+04: FFFFFFFF 0xA070D16F
+08: FFFFFFFF 8D4779A0
+0C: FFFFFFFF A34779A0
+10: FFFFFFFF B94779A0
+14: FFFFFFFF C34779A0
+18: FFFFFFFF E54779A0
+1C: FFFFFFFF 0xA070764D
++0
+
+
+;lgp
+;008A7EAC:9F0E0000 9F0E0000 
+008A7EC8:F5170000 61080000 
+008A7EE4:6F030000 F5170000 
+008A7F00:D8030000 6F030000 
+008A7F1C:E90B0000 D8030000 
+008A7F38: AE030000 E90B0000
+008A7F54: 04080000 AE030000 
+;------------------------- end -------------------------
+

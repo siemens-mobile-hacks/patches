@@ -1,0 +1,15 @@
+;EL71v45
+;Вибра в момент соединения
+;Vibra at connect
+;(c) SiNgle
+;(r) (i) avkiev
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9120
+;PatchID: 7505
+;Details: https://patches.kibab.com/patches/details.php5?id=7505
+/*
+
+*/
+0D9DE28: 2A1C2B1C09211730 00498847,0xA0063801
+;------------------------- end -------------------------
+

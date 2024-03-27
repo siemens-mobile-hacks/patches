@@ -1,0 +1,13 @@
+;E71v45
+;Изменение шрифта заголовков 
+;Change Headers Font 
+;(c) Evgr
+;Version: 
+;PatchID: 9795
+;Details: https://patches.kibab.com/patches/details.php5?id=9795
+/*
+
+*/
+0C36664: 04 05
+;------------------------- end -------------------------
+

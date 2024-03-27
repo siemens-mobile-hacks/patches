@@ -1,0 +1,21 @@
+;C75v22
+;Не показывать анимацию при включении, выключении и поиске сети
+;Do not show startup, shutdown and netsearch animations
+;(c) sempai
+;(p) NevAtse
+;Version: 0.2
+;PatchID: 9988
+;Details: https://patches.kibab.com/patches/details.php5?id=9988
+/*
+Ускорение загрузки телефона, выключение за секунду
+*/
+;PATCH_DISABLE_TIMER_OF_NETSEARCH_ANIMATION
+002A7436: 2449 0121
+;PATCH_DISABLE_TIMER_OF_STARTUP_ANIMATION1
+002A7AEA: 5149 0121
+;PATCH_DISABLE_TIMER_OF_STARTUP_ANIMATION2_1,PATCH_DISABLE_TIMER_OF_STARTUP_ANIMATION2_2
+002A7B36: FF214631 0121C046
+;PATCH_DISABLE_TIMER_OF_SHUTDOWN_ANIMATION
+002A7DB2: 011C 0121
+;------------------------- end -------------------------
+

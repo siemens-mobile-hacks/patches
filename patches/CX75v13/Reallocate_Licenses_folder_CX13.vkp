@@ -1,0 +1,14 @@
+;CX75v13
+;Перенос папки Licenses на диск Config
+;Reallocate Licenses folder to Config disk
+;(c) SimaFish
+;Version: 
+;PatchID: 8736
+;Details: https://patches.kibab.com/patches/details.php5?id=8736
+/*
+
+*/
+070190: 31 32
+070374: 31 32
+;------------------------- end -------------------------
+

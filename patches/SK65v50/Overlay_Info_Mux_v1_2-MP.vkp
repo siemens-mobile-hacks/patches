@@ -1,0 +1,18 @@
+;SK65v50
+;Оверлей инфо мультиплексер
+;Overlay Info Mux
+;(c) benj9
+;(p) ~Jhellico
+;Version: 1.2-MP
+;PatchID: 3976
+;Details: https://patches.kibab.com/patches/details.php5?id=3976
+/*
+дополнительно можете поставить:
+02BC320: 011C 2121 ; * запуск оверлея немедленно * (SK65v50)
+*/
+02BC360: 00F019F8201C8EF1CEEE 004F3847,0xA0FD99CD,C046
+0FD9B90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0xA02BC337,0xA02BC397,0xA07349D3,0xA0734A61
+
+0731730: 62680BA80092002200212368 0149884719E0,C046,0xA0FD9917
+;------------------------- end -------------------------
+

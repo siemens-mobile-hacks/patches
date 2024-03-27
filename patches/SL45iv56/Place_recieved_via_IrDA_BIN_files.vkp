@@ -1,0 +1,13 @@
+;SL45iv56
+;Принимает бинарники по ИК в папку ZBIN, вместо папки Email In
+;Place recieved via IrDA.BIN files to ZBIN folder instead of EMAIL In
+;(c) Ocean
+;Version: 
+;PatchID: 2108
+;Details: https://patches.kibab.com/patches/details.php5?id=2108
+/*
+
+*/
+0189D7B: 454D41494C20696E 5A42494E00000000
+;------------------------- end -------------------------
+

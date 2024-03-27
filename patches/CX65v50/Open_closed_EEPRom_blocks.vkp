@@ -1,0 +1,16 @@
+;CX65v50
+;Открыть заблокированные блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;(p) AsteriX
+;Version: 
+;PatchID: 29
+;Details: https://patches.kibab.com/patches/details.php5?id=29
+/*
+Становятся доступны 6 скрытых блока
+
+*/
+125F738: 00 01
+
+;------------------------- end -------------------------
+

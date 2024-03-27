@@ -1,0 +1,19 @@
+;CX70v56
+;Выделение Файлов Левой Софт Кнопкой в Card-Explorer'е
+;Mark Files by Left SoftKey in Card-Explorer
+;(c) 1nvisible
+;(p) Lost
+;Version: 1
+;PatchID: 3993
+;Details: https://patches.kibab.com/patches/details.php5?id=3993
+/*
+
+*/
+09912C4: 02 08
+0991250: 360050E3 6AADFEFA
+#pragma enable old_equal_ff
+093C800: 362800D1704703B449680979012903BC
+093C810: 01D036287047842036287047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

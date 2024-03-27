@@ -1,0 +1,15 @@
+;EL71v45
+;Изменить цвет фона иконбара при зарядке выключенного телефона 
+;Change statusbar background color in offline charge
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10764
+;Details: https://patches.kibab.com/patches/details.php5?id=10764
+/*
+
+*/
+05C233A: 00 01; statusbar pallete index
+05C2322: 00 01; battery bg pallete index
+;------------------------- end -------------------------
+

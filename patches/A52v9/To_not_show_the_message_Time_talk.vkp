@@ -1,0 +1,13 @@
+;A52v9
+;Не показывать сообщение "Время разговора"
+;To not show the message "Time talk"
+;(c) Sinclair
+;Version: 
+;PatchID: 4358
+;Details: https://patches.kibab.com/patches/details.php5?id=4358
+/*
+
+*/
+20A902: 2D 0D
+;------------------------- end -------------------------
+

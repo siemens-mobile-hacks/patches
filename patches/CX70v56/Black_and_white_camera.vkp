@@ -1,0 +1,14 @@
+;CX70v56
+;Чернобелый режим камеры
+;Black and white camera
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 672
+;Details: https://patches.kibab.com/patches/details.php5?id=672
+/*
+Чернобелый режим камеры.
+*/
+132A08B: 3F163F 801680 
+;------------------------- end -------------------------
+

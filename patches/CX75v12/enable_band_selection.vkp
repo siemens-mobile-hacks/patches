@@ -1,0 +1,14 @@
+;CX75v12
+;Включить выбор диапазона
+;Enable band selection
+;(c) Bennie
+;(p) mana9er
+;Version: 1.0
+;PatchID: 702
+;Details: https://patches.kibab.com/patches/details.php5?id=702
+/*
+Активирует меню ручного выбора диапазона (900 МГц, 1800 МГц, 1900 МГц). Пункт в меню 9-10-5.
+*/
+04D7584: 0502 FA01
+;------------------------- end -------------------------
+

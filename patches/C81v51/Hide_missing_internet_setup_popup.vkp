@@ -1,0 +1,21 @@
+;C81v51
+;Не показывать окошко "Отсутствуют настройки интернет" при включении телефона
+;Don't show popup "Missing internet setup" at phone startup
+;(c) Azq2
+;(r) FIL, Виктор89
+;Version: 
+;PatchID: 10777
+;Details: https://patches.kibab.com/patches/details.php5?id=10777
+/*
+Патч скрывает надоедливое сообщение "Отсутствуют настройки интернет" которое вылазит каждый раз:
+- Когда вставили новую симку.
+- В случае multi-IMSI SIM вроде Yota или TELE2 rSIM, вылазит на каждое включение + на каждый поиск сети.
+
+English:
+The patch hides the annoying “Missing internet setup” message that pops up every time:
+- When you insert a new SIM card.
+- In the case of multi-IMSI SIMs like Yota or TELE2 rSIM, popups are shown every time you turn on the phone and every network search.
+*/
+05632D4: A3F791FF CBE7C046
+;------------------------- end -------------------------
+

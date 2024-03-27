@@ -1,0 +1,16 @@
+;M81v47
+;Не выходить в режим ожидания и не спрашивать при нажатии кнопки браузера
+;Don't do idle and ask when pressing Browser button
+;(c) Rst7, ThE TrIFoN, weclnt
+;(p) Barracuda
+;Version: 
+;PatchID: 9029
+;Details: https://patches.kibab.com/patches/details.php5?id=9029
+/*
+
+*/
+034EADE: a8f082ed c046c046
+034EAC6: 0098 381c
+034EACE: B0F780FA002813d0 c046c046c046c046
+;------------------------- end -------------------------
+

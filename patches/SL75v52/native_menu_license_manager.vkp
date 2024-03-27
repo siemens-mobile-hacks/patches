@@ -1,0 +1,45 @@
+;SL75v52
+;NativeMenu с названием вместо Управ. лиценз. (NAT_LICENSE_MANAGER)
+;NativeMenu+Name instead of Licence mgr. (NAT_LICENSE_MANAGER)
+;(c) SiNgle
+;(r) weclnt
+;(p) velesiK
+;Version: 
+;PatchID: 8058
+;Details: https://patches.kibab.com/patches/details.php5?id=8058
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl75v52&f=native_menu_license_manager.rar
+
+/*
+Вместо Управ. лиценз. -> NativeMenu с именем (пункта меню) "Native Menu" в [ru, ua, en];
+для горячей кнопки => NAT_LICENSE_MANAGER
+
+Приминимо к:
+Меню->Настройки->Настр. телеф.->Управ. лиценз.
+NAT_LICENSE_MANAGER
+
+Остаётся не изменно:
+Меню->Мои файлы->~Опции->Управл.лиценз.
+Native Menu->Настройки->Настр. телеф.->Управ. лиценз.
+
+
+Для замены ява меню добавить строки cache/default/fak.pd
+
+000059:T:FAK_KEY_CENTERKEY_SHORT.APP_ID=NAT_LICENSE_MANAGER
+000052:T:FAK_KEY_CENTERKEY_LONG.APP_ID=NAT_MAIN_MENU
+
+Дальше только "\\\Siemens Obex File System\Data\ZBin\img\" заливаем пинг графику на меню и радуемся :)
+
+Иконки от висты для исправления фона, положить все в одну кучу ;)
+скачал не помню где, если автор будет против убиру или допишу в респект ;)
+*/
+0426964: 0xA032E951  0xA02CDEF3 ; вместо "Управ. лиценз."
+
+;Редактирование сообщения  7 : 20F6  "Управ. лиценз." => "Native Menu"
+17E70F6: D0A3D0BFD180D0B0D0B22E20D0BBD0B8D186D0B5D0BDD0B72E00 4E6174697665204D656E75FFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+;Редактирование сообщения  1 : 20F6  "Licence mgr." => "Native Menu"
+1666193: 4C6963656E6365206D67722E00 4E6174697665204D656E75FF00
+;Редактирование сообщения  9 : 20F6  "Управл. ліценз." => "Native Menu"
+1884ACA: D0A3D0BFD180D0B0D0B2D0BB2E20D0BBD196D186D0B5D0BDD0B72E00 4E6174697665204D656E75FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+
+;------------------------- end -------------------------
+

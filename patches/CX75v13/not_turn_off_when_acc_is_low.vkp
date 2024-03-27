@@ -1,0 +1,16 @@
+;CX75v13
+;Не выключаться когда аккумулятор разряжен
+;Don't turn off when accumulator is low
+;(c) ThE TrIFoN
+;Version: 
+;PatchID: 999
+;Details: https://patches.kibab.com/patches/details.php5?id=999
+/*
+Телефон 3 раза скажет что акк разряжен и больше не будет пищать и показывать сообщения.
+Лучше не увлекаться, ато Ли Ион не любит когда его разряжают. 
+*/
+08EC828: 77AD06EB 881B10EB
+0A97E0C: 0010A0E30000A0E3BA65F6EA 08402DE90030A0E30880BDE8
+0CF3650: FFFFFFFFFFFFFFFFFFFFFFFF 0010A0E30000A0E3A9F7ECEA
+;------------------------- end -------------------------
+

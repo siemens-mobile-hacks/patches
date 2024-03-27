@@ -1,0 +1,13 @@
+;C60v27
+;Убрать звук при ошибке соединения
+;To remove sound with the error of the connection
+;(c) Zwitter
+;Version: 
+;PatchID: 4366
+;Details: https://patches.kibab.com/patches/details.php5?id=4366
+/*
+
+*/
+342356: B6034A0178054A01 C409D200FEFF0000
+;------------------------- end -------------------------
+

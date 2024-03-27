@@ -1,0 +1,34 @@
+;X75v100
+;Блокировка телефона
+;Lock the phone
+;(c) -=(Kad)=-
+;(r) avkiev, ~Jhellico, Kibab
+;Version: 5
+;PatchID: 6501
+;Details: https://patches.kibab.com/patches/details.php5?id=6501
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Lock_the_phone_v5.zip
+
+/*
+Обновление! Совместимость с загрузчиком эльфов 2.2
+
++v5 Кнопка вынесена в конфиг
+
++v4.5 Отдельное отключение патча при старте
+
++v4 Добавлен звучок при выключении
+
++v3 Диспатчер больше не нужен
+
+Теперь у патча выгрузка отдельная от мастер-патча, если при старте держать нажатой кнопку выбранную
+в мастер-мидлете то патч не загружается, удобно, чтобы не трогать другие патчи.
+Патч блокирует телефон при старте или при запуске рефрешера,
+сделан только для безопасности.
+
+This is the security patch only.
+In midlet you see a disable key - this is the key that disable patch
+hold it on the startup and patch will not load
+You can setup shutdown sound in midlet too.
+*/
+;
+;------------------------- end -------------------------
+

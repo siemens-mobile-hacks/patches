@@ -1,0 +1,21 @@
+;M75v19
+;Моё Меню = Диск Меню
+;MyStuff = Disk Menu
+;(c) LinuXrULz
+;(p) Geka
+;Version: 1
+;PatchID: 4703
+;Details: https://patches.kibab.com/patches/details.php5?id=4703
+/*
+--- Для доступа к дискам Cache и Config из MyStuff (MyStuff Creator)
+
+--- Enables access to Cache and Config discs from MyStuff (MyStuff Creator)
+
+*/
+04a6386: 0C 04
+04a6388: 32 31
+04a638e: 43 00
+04a63b0: 0C 04
+04a63b8: 43 00
+;------------------------- end -------------------------
+

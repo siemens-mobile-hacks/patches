@@ -1,0 +1,26 @@
+;SL75v47
+;Расширенный список вызовов v3
+;Extended Calls dialed list v3
+;(c)  BoBa
+;(r) avkiev, RainMaker
+;(p) ferro
+;Version: 
+;PatchID: 6130
+;Details: https://patches.kibab.com/patches/details.php5?id=6130
+/*
+Жмем зеленую кнопку -> попадаем в "Набранные номера"
+Жмем "Назад"        -> попадаем в "Принятые номера"
+Жмем "Назад"        -> попадаем в "Неотвеченные номера"
+Жмем "Назад"        -> попадаем в "Журнал"
+Жмем "Назад"        -> выход в режим готовности.
+
+Green button -> "Calls dialed"
+Back         -> "Calls received"
+Back         -> "Calls missed"
+Back         -> "History"
+Back         -> Ready.
+
+*/
+03f1bfc: 0xA05Ebbf9 0xA006FE01   ; SL75v47
+;------------------------- end -------------------------
+

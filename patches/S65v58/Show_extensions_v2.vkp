@@ -1,0 +1,15 @@
+;S65v58
+;Показ Расширений Файлов в Card-Explorer'е
+;Show File Extensions in Card-Explorer
+;(c) 1nvisible
+;(r) SiNgle, Zl0d, V!rus
+;(p) KiRiK
+;Version: 2
+;PatchID: 3475
+;Details: https://patches.kibab.com/patches/details.php5?id=3475
+/*
+Для тех, у кого не работает этот патч -http://patches.kibab.com/patches/details.php5?id=3311
+*/
+09BE5CC: 2E 1E
+;------------------------- end -------------------------
+

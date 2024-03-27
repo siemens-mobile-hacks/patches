@@ -1,0 +1,25 @@
+;M65v50
+;Дополнительная панель иконок с поддержкой miniGPS
+;IconbarAdditions miniGPS support
+;(c) benj, m65v50
+;(r) BuG, empeka
+;Version: 3.3-MP
+;PatchID: 2351
+;Details: https://patches.kibab.com/patches/details.php5?id=2351
+/*
+featuring: charging icons, profile icons, vibra on/off, animation, netmode, minigps, universal engines
+
+(!) funclib: f2,f17,f22,f33,f34,f35,f37,f39,f58,f64,f81,f105,f106,v 1,v2,v14
+
+*/
+; entrypoint with icons left in iconbar:
+1633C66: 1CF0C8E81CF068EB0028 C0460048804711B8FDA0 ; m65v50
+0FDBA88: FFFFFFFFFFFFFFFF F8FD64A1,3C0365A1 ; m65v50
+
+; entrypoint with icons right in iconbar:
+;1633E80: 1CF03CE91CF086EAFF28 0048804711B8FDA0C046 ; m65v50
+;0FDBA88: FFFFFFFFFFFFFFFF 0xA16500FC,0xA1650394 ; m65v50
+;0FDB856: 00 FF ; put this line BEHIND patch 
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M75v25
+;Карта неисправна или неотформатирована
+;Card defect or not fotmatted
+;(c) ThE TrIFoN
+;(p) Grizzzzly
+;Version: 
+;PatchID: 4138
+;Details: https://patches.kibab.com/patches/details.php5?id=4138
+/*
+
+*/
+02C6F1E: D7F130E9 00210021
+;------------------------- end -------------------------
+

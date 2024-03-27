@@ -1,0 +1,18 @@
+;CX75v13
+;Отключить "Подождите" в Адреске
+;Disable "Please Wait" in Addressbook
+;(c) 1nvisible
+;(r) s3mpa1
+;(p) Nikolas535
+;Version: 
+;PatchID: 9394
+;Details: https://patches.kibab.com/patches/details.php5?id=9394
+/*
+
+*/
+; groups
+515CDC: 10F198E8 C046C046
+; show entries 
+5CAF36: 5AF06CEF C046C046
+;------------------------- end -------------------------
+

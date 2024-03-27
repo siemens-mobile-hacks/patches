@@ -1,0 +1,23 @@
+;S75v47
+;Отключить Анимацию при включении и выключении
+;Disable Startup and Shutdown Animation
+;(c) Evgr
+;(r) benj9
+;(p) Виктор89
+;Version: 
+;PatchID: 8592
+;Details: https://patches.kibab.com/patches/details.php5?id=8592
+/*
+не проигрывается мелодия при включении и выключении телефона. 
+теперь телефон нормально грузится с патчем "Отключить "Подождите" в Помощнике при включении" 
+независимо от вариантов выбора в Настройки-Индикация-Аним. при вкл. 
+melodies are not played at phone switching on and off. 
+now phone correctly works with installed patch "Disable "Wait" in StartupAssistant" 
+independently from choice in Settings-Display-Startup anim.
+*/
+2fd041: D1 E0 ; disable Startup animation
+;2fd159: 1C 21 ; do not show Startup animation
+2fcb41: D1 E0 ; disable Shutdown animation
+;2fcc33: 1C 21 ; do not show Shutdown Animation
+;------------------------- end -------------------------
+

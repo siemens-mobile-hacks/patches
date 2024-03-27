@@ -1,0 +1,18 @@
+;S75v52
+;Правильное название дней в будильнике
+;Correct names of days in alarm clock
+;(c) Belarus
+;(p) Vados
+;Version: 
+;PatchID: 8430
+;Details: https://patches.kibab.com/patches/details.php5?id=8430
+/*
+
+*/
+017FC574: BE BD
+017FC582: D0B5 D182
+017FC588: 8F 82
+017FC58C: D183 D0B1
+017FC591: D0BE D181
+;------------------------- end -------------------------
+

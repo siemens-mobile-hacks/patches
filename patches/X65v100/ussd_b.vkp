@@ -1,0 +1,15 @@
+;X65v100
+;USSD баланс
+;USSD balance
+;(c) captain_SISka
+;Version: 0.1
+;PatchID: 6603
+;Details: https://patches.kibab.com/patches/details.php5?id=6603
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=ussd_b.zip
+
+/*
+USSD запрос баланса
+*/
+USSD запрос баланса
+;------------------------- end -------------------------
+

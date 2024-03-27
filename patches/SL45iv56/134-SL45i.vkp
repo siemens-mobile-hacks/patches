@@ -1,0 +1,21 @@
+;SL45iv56
+;Доступ к MMC из мидлетов
+;Access to MMC from Midlets
+;(c) chaos
+;Version: 
+;PatchID: 1738
+;Details: https://patches.kibab.com/patches/details.php5?id=1738
+/*
+К примеру есть програмка id3tageditor, которая нуждается в патче. То же касается MicroReader+1.2 for SL45.
+
+Патч №134 с http://patch.oslik.ru/SL45_RU
+*/
+0F28E8: 08 0A 
+0F29F4: BB001E59 2A4C2A12 
+0F29F8: B7001FB80020B600 08B6000902A00018 
+0F2A00: 212AB60021B60022 BB001E59B7001FB8 
+0F2A08: 4C2BC7000DBB0002 0020B600212AB600 
+0F2A10: 591223B70004BF2B 21B600224C2BB000 
+0F2A18: B0 00
+;------------------------- end -------------------------
+

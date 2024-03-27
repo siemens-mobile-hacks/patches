@@ -1,0 +1,23 @@
+;CX70v50
+;Включение по Напоминанию
+;Turn On by Appointment
+;(c) 1nvisible
+;(p) KreN
+;Version: 1
+;PatchID: 3287
+;Details: https://patches.kibab.com/patches/details.php5?id=3287
+/*
+Телефон включается по напоминанию. При этом звук напоминания не проигрывается.
+English:
+The phone turns on by appointment. The appointment sound is not played
+
+
+*/
+0B0E8E4: A06E0028 F3F48CF8
+#pragma enable old_equal_ff
+0801A00: 3FB5074B1B78152B05DC064B98473FBC
+0801A10: 01B0054B18473FBCA06E002800BDC046
+0801A20: CEB267A8DCD216A10BE9B0A0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

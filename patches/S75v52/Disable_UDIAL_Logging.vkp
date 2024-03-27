@@ -1,0 +1,17 @@
+;S75v52
+;Отключить UDIAL логгинг
+;Disable UDIAL Logging
+;(c) benj9
+;(r) KIBER-DEMON
+;(p) ferro
+;Version: 
+;PatchID: 8350
+;Details: https://patches.kibab.com/patches/details.php5?id=8350
+/*
+Отключает UDIAL логгинг
+
+*/
+04E1398: 0FB4 7047
+
+;------------------------- end -------------------------
+

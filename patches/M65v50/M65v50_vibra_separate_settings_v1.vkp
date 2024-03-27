@@ -1,0 +1,21 @@
+;M65v50
+;Раздельные настройки вибры
+;Vibra separate settings
+;(c) Evgr
+;Version: 1
+;PatchID: 10634
+;Details: https://patches.kibab.com/patches/details.php5?id=10634
+/*
+Раздельные настройки вибры для сообщений, смс, будильника
+
+English:
+Vibra separate settings for messages, SMS, alarmclock
+
+*/
+
+0973D10: 7E5AFDFA 225719FA
+0973B7C: E35AFDFA 875719FA
+0FC99E0: FFFFFFFF 0xA08CA711
+
+;------------------------- end -------------------------
+

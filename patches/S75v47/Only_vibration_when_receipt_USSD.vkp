@@ -1,0 +1,13 @@
+;S75v47
+;Только вибра при USSD
+;Only vibration when receipt USSD
+;(c) ThE TrIFoN
+;Version: 
+;PatchID: 5795
+;Details: https://patches.kibab.com/patches/details.php5?id=5795
+/*
+При получении USSD-сообщения (например, состояние баланса счета) не будет играть мелодия, как для SMS.
+*/
+029C702: 0F 10
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;M75v19
+;Убрать подтверждения при включении громкой связи
+;Remove confirmation at inclusion of loud connection
+;(c) ThE Trifon
+;(r) SiNgle
+;(p) kiREALlov ; (r) D_k_
+;Version: 
+;PatchID: 4405
+;Details: https://patches.kibab.com/patches/details.php5?id=4405
+/*
+
+*/
+02CA57C: 002201205249D4F1ECEADDF7E6FA 012233F0DAEB02E0C046C046C046
+;------------------------- end -------------------------
+

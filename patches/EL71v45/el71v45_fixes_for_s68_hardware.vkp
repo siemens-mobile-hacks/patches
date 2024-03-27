@@ -1,0 +1,27 @@
+;EL71v45
+;Фиксы для железа S68
+;Fixes for S68 hardware
+;(c) Evgr, Marie
+;(r) Dimadze, Azq2, Allsiemens
+;(p) Marie
+;Version: 0.3
+;PatchID: 10703
+;Details: https://patches.kibab.com/patches/details.php5?id=10703
+/*
+Вправить размер экрана в яваменю, самой яве. Убрать пик при проигрывании mp3 в медиаплеере
+Только для S68!
+English:Fix screen resolution in JMenu, JVM. Remove data abort in mediaplayer while playing mp3.
+Only for S68!
+*/
+063D73A: 4132F021 B0228421 ; EL71v45 лечим размер экрана везде кроме явы (нет цветной каши)
+094FF38: FF224132 B0220032 ;FIX_JAVA_MENU H
+094FF3C: F021 8421 ;FIX_JAVA_MENU W 
+0A19204: 8369 7047 ; убрать пикофф по адресу A0A1920E (в медиаплеере)
+
+;063D74C MMI
+;08DC0B6 OPWV
+;094FF4E JAVA
+
+;How to find: search xref with create layer, recalc screen w & h, enjoy!
+;------------------------- end -------------------------
+

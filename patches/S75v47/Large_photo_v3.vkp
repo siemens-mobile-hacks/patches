@@ -1,0 +1,36 @@
+;S75v47
+;Увеличение фото
+;Large photo
+;(c) SiNgle
+;(p) ManOfWar
+;Version: 3
+;PatchID: 6278
+;Details: https://patches.kibab.com/patches/details.php5?id=6278
+/*
+Увеличение фото при входящем\исходящем.
+Без пункта номер.
+*/
++2058
+029CB50: 33 76 ;photo size
++0
+
+-838
+042D984: 08 00 ;disable name and phone incall x displacements
+042D9A0: 08 00
+042D77C: 63 8d ;outcall_y_name
+042D798: 75 00 ;outcall_y_phonenum - disabled
+042D7B4: 87 00 ;outcall_y_blankarea2 - disabled
+042D7D0: 1B 00 ;outcall_y_blankarea1 - disabled
+042D5D2: 2d 16 ;outcall_photo_y
+042D81E: 2d 16 ;incall_photo_y
+042D96C: 1B 00 ;incall_y_blankarea1
+042D988: 63 8d ;incall_y_name
+042D9A4: 75 00 ; incall_y_phonenum
+042D9C0: 87 00 ;incall_y_blankarea2
+042D79C: 04 0c ;fontsize
+042D9A8: 04 0c
++0
+
+
+;------------------------- end -------------------------
+

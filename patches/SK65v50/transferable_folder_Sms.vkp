@@ -1,0 +1,30 @@
+;SK65v50
+;Переносим папку Sms archive с Data на Config
+;It is transferable folder Sms archive with Data on Config
+;(c) USV
+;(p) 1nvisible
+;Version: 
+;PatchID: 2492
+;Details: https://patches.kibab.com/patches/details.php5?id=2492
+/*
+!Убираем мусор на диске Data
+*/
+04539A8: 30 32
+04539C6: 30 32
+04539D6: 30 32
+04539F8: 30 32
+0453A22: 30 32
+0453A3A: 30 32
+0453A62: 30 32
+0453A8A: 30 32
+0453AA2: 30 32
+0453ACC: 30 32
+0453AF8: 30 32
+0453B10: 30 32
+0453B3A: 30 32
+0453B64: 30 32
+0453B7A: 30 32
+0453CF4: 30 32 ;Переносим папку Text module с Data на Config
+
+;------------------------- end -------------------------
+

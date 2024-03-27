@@ -1,0 +1,14 @@
+;S75v31
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) StrikerVoo
+;Version: 
+;PatchID: 2755
+;Details: https://patches.kibab.com/patches/details.php5?id=2755
+/*
+
+*/
+8FCF3E: 011C 2021
+;------------------------- end -------------------------
+

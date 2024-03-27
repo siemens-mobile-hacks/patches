@@ -1,0 +1,31 @@
+;SL45iv56
+;Разная вибра для SMS и отчета
+;Different vibra for SMS and Report
+;(c) Charlielao, Lbuczko
+;Version: 
+;PatchID: 2653
+;Details: https://patches.kibab.com/patches/details.php5?id=2653
+/*
+English: Changes different wibra for flash SMS.
+
+
+Upadate by Lbuczko 29.01.2006 
+*/
+0x230268: 48403D0E FAC7C0FE 
+0x27FEC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 48402D01DB008840D7403200F3F8F082 
+0x27FED0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 67F840002D069840CC00E6FC1800FAC7 
+0x27FEE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF ECFE9840E6FC2000FAC7ECFEFAC36E02 
+
+
+;27FEDC: 18 XX ; ilosc wibracji przy flash sms'ach (numbers of vibra when 
+;we get Flash sms (report)
+;27FEE6: 20 XX ; ilosc wibracji przy sms'ach (numbers of vibra when we get normal sms)
+; gdzie xx - 01 - jedna wibra, ;10 - 2 wibry; 18 - 3 wibry itd. (x*8)h 
+; xx - 01 - one vibra, 10 - two vibra , 18 - 3 vibra 
+
+;(uncomment line below if you don`t want to have vibra when flash sms)
+;27FED8: CC00 DB00 ; jesli nie chcesz wibry przy flash sms'ach 
+;(uncomment line below if you don`t want to have vibra when normal sms)
+;27FEE4: E6FC DB00 ; jesli nie chcesz wibry przy SMS'ach
+;------------------------- end -------------------------
+

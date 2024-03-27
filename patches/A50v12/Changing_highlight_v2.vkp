@@ -1,0 +1,49 @@
+;A50v12
+;Регулировка яркости подсветки
+;Changing highlight
+;(c) Ramil_
+;(p) =NeoSpb=, Broken Brain
+;Version: 2
+;PatchID: 3139
+;Details: https://patches.kibab.com/patches/details.php5?id=3139
+/*
+!Требует патч *** www.Инициализация_при_старте *** (уже установлен, если ставили СоМ).
+Яркость регулируется в меню Настройки -> Телефон -> Индикация -> Контраст кнопками "*" (-) и "#" (+)
+При нажатии кнопки 'OK' настройки сохраняются в EEPROM.
+При нажатии красной кнопки настройки восстанавливаются до максимума, но не сохраняются.
+*/
+;врезка патча в диалог установки контрастности
+31F728: E024DB00 FAE5468D
+31F742: DACA6647 DAE5528D
+31F74A: E004DB00 FAE5228D
+
+;врезка в патч инициализации
+258D04: CC00CC00 DAE5628D
+
+;тело патча
+258D22: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46FC13002D0546FC14002D07E004DB00
+258D32: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DACAAE08E6F4FFFFDB00DACA6C08E6F4
+258D42: FFFFFFFFFFFFFFFFFFFFFFFF FFFFDB00DACA0809E024DB00
+258D52: FFFFFFFFFFFFFFFFFFFF DAE55C8DDACA6647DB00
+258D5C: FFFF 8840
+258D5E: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E0140D028840E004885088C088D088E0
+258D6E: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88F0E01CE6FD0429E6FE1000E09F88C0
+258D7E: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E00C88C088C088C0D4C0060088C0E6FC
+258D8E: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8F139AF40300DACD56730D02DACD1873
+258D9E: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 06F00A0098F098E098D098C098509840
+258DAE: FFFF DB00
+
+;Настройка шага регулировки:
+;Шаг регулировки - чем меньше значение, тем меньше шаг:
+; 01 ~1,7%=(±60 нажатий)/ 02 ~3,3%(±30 нажатий)/ 03 =5%(±20 нажатий)
+; 04 ~6.7%(±15 нажатий)/ 05 ~8,3%(±12 нажатий)/ 06 =10%(±10 нажатий)
+; 07 = 08 =12,5%=(±8 нажатий и не до конца тухнет)
+;PS. Это не значит, что надо нажимать столько раз - 
+;кнопки достаточно удерживать для быстрого понижения или повышения интенсивности
+; - это я так проценты шага вычислял. замените все четыре значения на нужный вам шаг
+0A0878: 08 02
+0A089A: 08 02
+0A08BA: 08 02
+0A08D8: 08 02
+;------------------------- end -------------------------
+

@@ -1,0 +1,23 @@
+;M75v13
+;Показ текущего времени при срабатывании отложенного будильника
+;Show current time during postponed alarm
+;(c) avkiev
+;(p) Gurza
+;Version: 2.0
+;PatchID: 1015
+;Details: https://patches.kibab.com/patches/details.php5?id=1015
+/*
+Показывает текущее время при срабатывании отложенного будильника.
+
+ENG: Shows current time at operation of the postponed alarm clock.
+*/
+051DF8C: 42780178 7DF498F9  
+#pragma enable old_equal_ff 
+019B2A0: 506F7374706F6E656420416C61726D20 
+019B2B0: A961766B6965762031332E30362E3035 
+019B2C0: 01B524F167F8411C01BC0838072905D0  
+019B2D0: 044A0548011C083190470348017A427A 
+019B2E0: 00BDC046A7747DA0F0B551A8  
+#pragma disable old_equal_ff 
+;------------------------- end -------------------------
+

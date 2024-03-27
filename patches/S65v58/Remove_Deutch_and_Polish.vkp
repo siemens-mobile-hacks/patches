@@ -1,0 +1,16 @@
+;S65v58
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;(p) Smelter
+;Version: 
+;PatchID: 751
+;Details: https://patches.kibab.com/patches/details.php5?id=751
+/*
+Патч убирает Немецкий и Польский из меню языков ввода.
+*/
+1213ED6: 00 01
+1213F0E: 00 01
+
+;------------------------- end -------------------------
+

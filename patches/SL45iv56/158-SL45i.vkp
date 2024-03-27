@@ -1,0 +1,27 @@
+;SL45iv56
+;PTC. Проиграть сигнал при звонке
+;PTC. Play Tone while Calling
+;(c) RizaPN
+;Version: 
+;PatchID: 1862
+;Details: https://patches.kibab.com/patches/details.php5?id=1862
+/*
+Нажать 'Left Side PLAY' для проигрываения звука.
+
+Баг: Если кнопка нажата, пока идёт дозвон, иногда вырубается телефон.
+
+
+Created: June 24, 2004
+
+Патч №158 с http://patch.oslik.ru/SL45_RU
+*/
+0x3ABE82: EA00B0BF FAC720E3 
+
+0x27E320: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46FC62003D04E6FC0300DAC3B600FADA 
+0x27E330: FFFF B0BF                                       ;^^
+
+;Если хотите использовать другой сигнал, поменяйте        '03'  
+;по адресу 0x27E328 на номер сигнала (xx). 
+;0x27E328: FF xx 
+;------------------------- end -------------------------
+

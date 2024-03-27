@@ -1,0 +1,16 @@
+;C60v27
+;Выбор диапазона
+;Band selection
+;(c) SergSK
+;Version: 
+;PatchID: 876
+;Details: https://patches.kibab.com/patches/details.php5?id=876
+/*
+
+*/
+2B4518: 97039603 A700A600
+2B4524: A4 F4
+2B4580: F0434B 00474B
+
+;------------------------- end -------------------------
+

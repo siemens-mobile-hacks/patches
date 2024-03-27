@@ -1,0 +1,14 @@
+;C75v24
+;Отключить звук в начале записи видео
+;No start sound in Video rec
+;(c) SiNgle
+;Version: 
+;PatchID: 4211
+;Details: https://patches.kibab.com/patches/details.php5?id=4211
+/*
+
+*/
+02DC6B0: 1A 1D
+
+;------------------------- end -------------------------
+

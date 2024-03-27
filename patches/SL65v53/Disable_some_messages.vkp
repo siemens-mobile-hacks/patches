@@ -1,0 +1,23 @@
+;SL65v53
+;Убрать сообщения
+;Disable some messages
+;(c) SiNgle
+;Version: 
+;PatchID: 5206
+;Details: https://patches.kibab.com/patches/details.php5?id=5206
+/*
+
+*/
+164B446: 0021 10BD ; "Все сигналы вкл" (All ringtones on)\
+164B466: 0021 10BD ; "Все сигналы выкл" (All ringtones off)/ © arsh0r
+164B4BC: 0021 10BD ; "Блокировка клавиатуры включена" (Keypad locked)
+08E42C0: 37F0 80BD ; Вибра вкл\выкл (Vibra alert on\off)
+08E4352: 37F0 80BD ; IrDA вкл\выкл (IrDA on\off)
+08E4382: 37F0 80BD ; GPRS вкл\выкл (GPRS on\off)
+08F2E7C: E32421FA 000050E3 ; "Подождите" при запуске камеры ("Please wait" before using camera)
+113C210: 4049C239 80B580BD ; "Подождите" при запуске камеры ("Please wait" before using camera) © ACiD[mrp]
+08F4080: AD6700EB 0100A0E3 ; "Сохранить в:" после съёмки ("Saved to:" after you take a foto)
+0968460: 4B4F1FFA 0100A0E3 ; "Подождите" в эксплорере ("Please wait" in Card-Explorer)
+0B28D7A: 01 00 ; "Копировать SIM" при смене SIM ("Copy SIM" at SIM change)
+;------------------------- end -------------------------
+

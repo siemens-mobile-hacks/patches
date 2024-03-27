@@ -1,0 +1,13 @@
+;EL71v45
+;Duration of "locked" screen in keylock
+;Duration of "locked" screen in keylock
+;(c) benj9
+;Version: 
+;PatchID: 8039
+;Details: https://patches.kibab.com/patches/details.php5?id=8039
+/*
+
+*/
+066BB90: 4901 C900 ; 1 second ; with less releasing keylock doesnt work anymore
+;------------------------- end -------------------------
+

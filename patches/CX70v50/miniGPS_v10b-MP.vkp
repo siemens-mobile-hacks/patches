@@ -1,0 +1,20 @@
+;CX70v50
+;МиниGPS с логгингом БС
+;MiniGPS with GSM Data Logger
+;(c) ACiD[mrp], arsh0r
+;(r) bennie, SiNgle, (i) KreN
+;Version: 1.0b
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=4918
+;PatchID: 2556
+;Details: https://patches.kibab.com/patches/details.php5?id=2556
+/*
+Можно использовать его вместе с динамическим провайдером в10, для этого надо закомментировать первую строчку в патче и прописать новый адрес в библиотеке. Вот так: 
+
++0FC0000
+600: 004F3847,0xA0FC7601 ; f192: MiniGPS
++0
+
+*/
+172F4A0: AB39BAA0 0176FCA0
+;------------------------- end -------------------------
+

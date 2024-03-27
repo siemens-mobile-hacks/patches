@@ -1,0 +1,17 @@
+;C55v24
+;Владелец телефона
+;The owner of phone
+;(c) mcbobo
+;Version: 
+;PatchID: 2522
+;Details: https://patches.kibab.com/patches/details.php5?id=2522
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=c55v24&f=The_owner_of_phone.rar
+
+/*
+Замена надписи AudioPara (*#06#) на какую угодно (макс 17 символов !!!)
+ВНИМАНИЕ: длина не больше 17 знаков, если меньше то остаток заменить на пробел 0A!
+*/
+4EBF92: 417564696F506172613A204E6656253264 43405052694B30524E73206D6F62696C65 ;замена надписи AudioPara на 'C@PRiK0RNs mobile'
+
+;------------------------- end -------------------------
+

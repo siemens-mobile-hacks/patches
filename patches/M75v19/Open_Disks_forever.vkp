@@ -1,0 +1,13 @@
+;M75v19
+;Открыть диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;Version: 
+;PatchID: 2335
+;Details: https://patches.kibab.com/patches/details.php5?id=2335
+/*
+
+*/
+08CFF14: 02 03
+;------------------------- end -------------------------
+

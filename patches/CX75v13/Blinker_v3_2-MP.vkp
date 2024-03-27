@@ -1,0 +1,20 @@
+;CX75v13
+;Blinker
+;Blinker
+;(c) benj9 ® 1nvisible, avkiev, BuG, Chaos
+;(p) SMeeTBB
+;Version: 3.2-MP
+;PatchID: 2194
+;Details: https://patches.kibab.com/patches/details.php5?id=2194
+/*
+(!)Необходим Мастер мидлет 0.9 или новее!
+
+Мигание клавиатуры и (или) дисплея при наличии пропущенных вызовов,непрочитаных сообщений и т.д.
+*/
+081AA70: 0070A0E1 66071FEB
+
+#pragma enable old_equal_ff
+0FDCCD0: 40000000300200A834B54CA860FC4CA8 ; -RBC
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v52
+;Скорость камеры
+;Camera Speed
+;(c) SiNgle
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8677
+;Details: https://patches.kibab.com/patches/details.php5?id=8677
+/*
+
+*/
+09FC6AC: 14 00
+;------------------------- end -------------------------
+

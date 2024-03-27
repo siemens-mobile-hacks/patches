@@ -1,0 +1,13 @@
+;EL71v38
+;Сжатие jpeg с максимальным кач-вом (100% вместо 75%)
+;Jpeg-compression with maximal quality (100% instead of 75%)
+;(c) SiNgle
+;Version: 
+;PatchID: 6261
+;Details: https://patches.kibab.com/patches/details.php5?id=6261
+/*
+
+*/
+0D4D568: 4B 64
+;------------------------- end -------------------------
+

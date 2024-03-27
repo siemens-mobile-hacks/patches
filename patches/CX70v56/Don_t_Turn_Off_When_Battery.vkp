@@ -1,0 +1,17 @@
+;CX70v56
+;Не выключаться при разряженном аккуме
+;Don't Turn Off When Battery Is Low
+;(c) benj9
+;(r) ThE TrIFoN
+;(p) SiamiX
+;Version: 2
+;PatchID: 4629
+;Details: https://patches.kibab.com/patches/details.php5?id=4629
+/*
+! Не используйте слишком часто, это может повредить ваш аккумулятор!
+English:
+! Don't use it too often. It can damage your battery!
+*/
+11828E4: 18009FE50C0090E5A5A8FFEA 00009FE510FF2FE101DFFDA0
+;------------------------- end -------------------------
+

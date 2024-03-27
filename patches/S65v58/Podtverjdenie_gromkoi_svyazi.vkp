@@ -1,0 +1,15 @@
+;S65v58
+;Убрать подтверждения при включении громкой связи
+;Toggle HandsFree without question
+;(c) SiNgle
+;(p) KiRiK
+;Version: 
+;PatchID: 745
+;Details: https://patches.kibab.com/patches/details.php5?id=745
+/*
+Патч убирает подтверждение при включении громкой связи.
+*/
+169DB52: CB21C90000 0021002101
+169DB5A: 18F050E8 17F0C8E8
+;------------------------- end -------------------------
+

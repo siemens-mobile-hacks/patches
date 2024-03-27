@@ -1,0 +1,16 @@
+;X75v100
+;Вибра при блок./разблок. клавиатуры
+;Vibralocker (NSD)
+;(c) SimaFish
+;Version: 1.5
+;PatchID: 8902
+;Details: https://patches.kibab.com/patches/details.php5?id=8902
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Vibralocker.zip
+
+/*
+
+Эльф вибрирует виброй при блокировке и разблокировке клавиатуры.
+*/
+Vibralocker (NSD)
+;------------------------- end -------------------------
+

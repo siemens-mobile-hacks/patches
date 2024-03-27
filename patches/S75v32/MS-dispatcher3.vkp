@@ -1,0 +1,14 @@
+;S75v32
+;Диспатчер главного экрана
+;Mainscreen-dispatcher
+;(c) avkiev
+;(p) ThE TrIFoN
+;Version: 3
+;PatchID: 4729
+;Details: https://patches.kibab.com/patches/details.php5?id=4729
+/*
+
+*/
+02FDEC6: 00201B92F860391C0861 01488047C046013E06A0
+;------------------------- end -------------------------
+

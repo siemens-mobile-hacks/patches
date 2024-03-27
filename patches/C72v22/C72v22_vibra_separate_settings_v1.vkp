@@ -1,0 +1,21 @@
+;C72v22
+;Раздельные настройки вибры
+;Vibra separate settings
+;(c) Evgr
+;Version: 1
+;PatchID: 10632
+;Details: https://patches.kibab.com/patches/details.php5?id=10632
+/*
+Раздельные настройки вибры для сообщений, смс, будильника
+
+English:
+Vibra separate settings for messages, SMS, alarmclock
+
+*/
+
+09AA7B8: C39DFCFA 787C18FA
+09AA624: 289EFCFA DD7C18FA
+0FC99E0: FFFFFFFF 0xA08D1ECD
+
+;------------------------- end -------------------------
+

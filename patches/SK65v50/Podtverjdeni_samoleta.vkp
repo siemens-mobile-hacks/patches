@@ -1,0 +1,14 @@
+;SK65v50
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) Bennie
+;(p) AsteriX
+;Version: 
+;PatchID: 268
+;Details: https://patches.kibab.com/patches/details.php5?id=268
+/*
+Патч убирает подтверждение самолёта.
+*/
+02C3747: D1 E0
+;------------------------- end -------------------------
+

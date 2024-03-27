@@ -1,0 +1,52 @@
+;E71v42
+;Инвертировать цифровые часы на заставке
+;Invert digiclock ScreenSaver
+;(c) SiNgle
+;(p) $TA$
+;Version: 
+;PatchID: 6766
+;Details: https://patches.kibab.com/patches/details.php5?id=6766
+/*
+
+*/
+070278E: 01 00 ;1h back   
+0702796: 00 01 ;1h font      
+07027DC: 01 00 ;2h back  
+07027E4: 00 01 ;2h font   
+0702822: 01 00 ;":" back 
+070282A: 00 01 ;":" font  
+070285E: 01 00 ;1m back 
+0702866: 00 01 ;1m font  
+07028AA: 01 00 ;2m back  
+07028B2: 00 01 ;2m font  
+0702900: 01 00
+0702908: 00 01  
+086D924: 01 00 ;Icon background
+086D96C: 00 01 ;ProvName font
+086D970: 01 00 ;background
+086D9C0: 00 01 ;ProvFont with Icon
+086BD9C: 01 00 ;background with Icon
+;color table (0..17h) R G B
+;00 - white
+;01 - black
+;02 - red (base)
+;03 - navy (base)
+;04 - green (base)
+;05 - magenta (base)
+;06 - aqua (base)
+;07 - yellow (base)
+;08 - red (light)
+;09 - navy (light)
+;0A - green (light)
+;0B - magenta (light)
+;0C - aqua (light)
+;0D - yellow (light)
+;0E - red (dark)
+;0F - navy (dark)
+;10 - green (dark)
+;11 - magenta (dark)
+;12 - aqua (dark)
+;13 - yellow (dark)
+;14-17 - clean
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;SL75v47
+;Ускорение длинного нажатия
+;Long Press Acceleration
+;(c) 1nvisible
+;(r) KiRiK
+;(p) ferro
+;Version: 
+;PatchID: 6194
+;Details: https://patches.kibab.com/patches/details.php5?id=6194
+/*
+
+*/
+09056DE: 011C 4021
+
+;------------------------- end -------------------------
+

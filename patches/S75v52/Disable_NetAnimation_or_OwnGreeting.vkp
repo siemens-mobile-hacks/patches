@@ -1,0 +1,15 @@
+;S75v52
+;Отключить анимацию поиска сети или приветствие
+;Disable NetAnimation or OwnGreeting
+;(c) benj9
+;(p) Vados
+;Version: 2
+;PatchID: 8423
+;Details: https://patches.kibab.com/patches/details.php5?id=8423
+/*
+
+*/
+02FD1E1: 1C 21
+02FD2E7: 1C 21
+;------------------------- end -------------------------
+

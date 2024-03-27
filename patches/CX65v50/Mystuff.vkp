@@ -1,0 +1,21 @@
+;CX65v50
+;Мое меню=Диск меню
+;My stuff = Disk Menu
+;(c) Linuxrulz
+;(r) kombaat
+;Version: 0.1
+;PatchID: 1070
+;Details: https://patches.kibab.com/patches/details.php5?id=1070
+/*
+
+*/
+	
+;MyStuff = Disk Menu v0.1
+;CX65/M65 SW50
+0A07F2A: 0C 04
+0A07F2C: 32 31
+0A07F32: 43 00
+0A07F54: 0C 04
+0A07F5C: 43 00
+;------------------------- end -------------------------
+

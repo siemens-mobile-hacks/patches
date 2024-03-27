@@ -1,0 +1,15 @@
+;A50v12
+;Нормальное меню без SIM-карты
+;Normal menu without SIM
+;(c) RizaPN
+;(p) Broken Brain
+;Version: 
+;PatchID: 2697
+;Details: https://patches.kibab.com/patches/details.php5?id=2697
+/*
+
+*/
+03A73A: F048 E014
+347428: DAF47651 DAF76075
+;------------------------- end -------------------------
+

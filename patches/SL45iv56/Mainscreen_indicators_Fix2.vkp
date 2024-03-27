@@ -1,0 +1,47 @@
+;SL45iv56
+;Исправление 2 для патча Индикаторы главного экрана
+;Fix 2 for Mainscreen indicators by lbuczko
+;(c) lbuczko
+;Version: 
+;PatchID: 3610
+;Details: https://patches.kibab.com/patches/details.php5?id=3610
+/*
+Сперва нужно установить патч "Индикаторы главного экрана"
+
+
+English:
+Install first 'Mainscreen indicators by lbuczko'
+
+
+Release: 02.06.2006 
+*/
+;If you want to have app for mainscreen unmark this 
+;APP for mainscreen by lbuczko (profil 3, f.7) 
+0x3B3808: FAE41047 FAE4B648 
+0x4448B6: FFFFFFFFFFFFFFFFFFFF 8840D7403600F2F46E09 
+0x4448C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 9AF403609840FAE410479840FAE4B647 
+ 
+;unmark this if you want profil 1 
+;0X4448BA: 36 0E 
+ 
+;change and unmark this if you want profile 1 or 2. 
+;0X4448BE: 6E09 xxxx ;xxxx = profil 1 423A, profil 2 6C09,  
+ 
+ 
+;unmark this and change if want different nummber of function default 7 
+;0x4448C3: 6 X ;  
+ 
+ 
+;--------------------------------- 
+; 
+;DISABLE KEYBOARD ICON 
+0x3B37F6: E6F95501 E0A40D05 
+ 
+;poprawka dla sola, jesli masz zainstalowany odznacz to(fix bug) 
+;SOL fix if you have instaled unmark this 
+;0x27D168: 46F95501 46F40A00 
+ 
+;if you have instaled previous patch for keyboard icon unmark this: 
+;0X3B37E6: E014CC00 DAA39240 
+;------------------------- end -------------------------
+

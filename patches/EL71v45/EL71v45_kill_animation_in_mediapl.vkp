@@ -1,0 +1,14 @@
+;EL71v45
+;Прибить анимацию в медиаплеере
+;Kill animation in mediaplayer
+;(c) Marie
+;Version: 
+;PatchID: 10706
+;Details: https://patches.kibab.com/patches/details.php5?id=10706
+/*
+Меня очень раздражала анимация в плеере. Пришлось её полностью прибить. Совсем.
+English:I hate blue waves in MP. Now no it isnt
+*/
+07B2540: FC4D2DE9 1EFF2FE1
+;------------------------- end -------------------------
+

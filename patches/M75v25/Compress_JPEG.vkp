@@ -1,0 +1,16 @@
+;M75v25
+;Сжатие JPEG с максимальным качеством
+;Compress JPEG with max quality
+;(c) SiNgle
+;(r) Izzzwerg
+;(p) kiREALlov
+;Version: 2.1
+;PatchID: 5654
+;Details: https://patches.kibab.com/patches/details.php5?id=5654
+/*
+
+*/
+A8AC74: 32 00
+ABDE0C: 186D02 000505
+;------------------------- end -------------------------
+

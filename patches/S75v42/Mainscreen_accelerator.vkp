@@ -1,0 +1,14 @@
+;S75v42
+;Ускоритель вывода на дисплей
+;Mainscreen accelerator
+;(c) SiNgle
+;(p) SimaFish
+;Version: 
+;PatchID: 5508
+;Details: https://patches.kibab.com/patches/details.php5?id=5508
+/*
+
+*/
+0D8D978: 3AF206E9 A861C046
+;------------------------- end -------------------------
+

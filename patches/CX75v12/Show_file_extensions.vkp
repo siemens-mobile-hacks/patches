@@ -1,0 +1,14 @@
+;CX75v12
+;Показ расширений файлов в Кард-Эксплорере
+;Show File Extensions in Card-Explorer
+;(c) 1nvisible
+;(p) PRM
+;Version: 
+;PatchID: 6253
+;Details: https://patches.kibab.com/patches/details.php5?id=6253
+/*
+
+*/
+03D9D04: 2E 1E
+;------------------------- end -------------------------
+

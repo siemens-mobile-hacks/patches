@@ -1,0 +1,13 @@
+;C65v56
+;Активизация (ICQ AIM) встроенного WV-клиента
+;Enable Built-In WV Client (ICQ AIM)
+;(c) SiNgle
+;Version: 
+;PatchID: 3837
+;Details: https://patches.kibab.com/patches/details.php5?id=3837
+/*
+
+*/
+0B487EC: 66 78
+;------------------------- end -------------------------
+

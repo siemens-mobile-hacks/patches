@@ -1,0 +1,13 @@
+;E71v45
+;Отключить "Подождите" в Wap Push
+;Disable "Wait" in Wap Push
+;(c) Evgr
+;Version: 
+;PatchID: 9676
+;Details: https://patches.kibab.com/patches/details.php5?id=9676
+/*
+В главном меню -> "Сообщения" -> "Wap Push" (8 пункт)
+*/
+06B71D6: 01F04DFA C046C046
+;------------------------- end -------------------------
+

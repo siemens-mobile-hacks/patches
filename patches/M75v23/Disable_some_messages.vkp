@@ -1,0 +1,23 @@
+;M75v23
+;Убрать некоторые сообщения
+;Disable some messages
+;(c) SiNgle
+;Version: 
+;PatchID: 2787
+;Details: https://patches.kibab.com/patches/details.php5?id=2787
+/*
+
+*/
+02CE1BA: 0021 10BD ; All ringtones on
+02CE1D6: 0021 10BD ; All ringtones off
+02CE226: 0021 10BD ; Keypad locked
+03269D4: 78F1 80BD ; Vibra alert on/off
+0326A6E: 78F1 80BD ; IrDA on/off
+0326A9E: 77F1 80BD ; GPRS on/off
+0326AEA: 77F1 80BD ; Bluetooth on/off
+034E6C4: 490A02EB 0100A0E3 ; "Saved to:" after you take a foto
+0352FDC: 30C011FA 0100A0E3 ; "Please wait" in Card-Explorer
+03B80B8: 2B1C 04E0 ; "Profile activated" (c) 13.beta2
+0520DE6: 01 00 ; "Copy SIM" at SIM change
+;------------------------- end -------------------------
+

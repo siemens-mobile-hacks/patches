@@ -1,0 +1,14 @@
+;SL65v50
+;Отключить надпись "Поиск сети"
+;Disable displaying "netsearch"
+;(c) arsh0r
+;Version: 
+;PatchID: 5107
+;Details: https://patches.kibab.com/patches/details.php5?id=5107
+/*
+
+*/
+164C232: 7349 04E0 ; screensaver
+16492EE: 15F030EA 07E00028 ; mainscreen
+;------------------------- end -------------------------
+

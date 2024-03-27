@@ -1,0 +1,14 @@
+;S75v52
+;Отключение ошибки dplhandler
+;Disable dplhandler in java aplications
+;(c) Ivanhoe
+;(p) KIBER-DEMON
+;Version: 0.1
+;PatchID: 8538
+;Details: https://patches.kibab.com/patches/details.php5?id=8538
+/*
+Для тех, у кого телефон в ява-приложениях зависает и с пиком выключается через 5 минут. Патч отключает эту ошибку.
+*/
+12B854C: 02 00
+;------------------------- end -------------------------
+

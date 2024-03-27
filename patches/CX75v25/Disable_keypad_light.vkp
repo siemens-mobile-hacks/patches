@@ -1,0 +1,14 @@
+;CX75v25
+;Отключить подсветку кнопок
+;Disable keypad light
+;(c) SiNgle
+;Version: 
+;PatchID: 3489
+;Details: https://patches.kibab.com/patches/details.php5?id=3489
+/*
+
+*/
+07D7413: D5 24
+
+;------------------------- end -------------------------
+

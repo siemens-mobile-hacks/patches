@@ -1,0 +1,14 @@
+;C72v22
+;Убрать запятую между именем и фамилией в списке адресной книги
+;Remove comma between name and surname in Addressbook
+;(c) akiev
+;(r) SiNgle
+;Version: 
+;PatchID: 7543
+;Details: https://patches.kibab.com/patches/details.php5?id=7543
+/*
+
+*/
+0B01F3B: F1 28
+;------------------------- end -------------------------
+

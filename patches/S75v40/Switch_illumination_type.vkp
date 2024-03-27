@@ -1,0 +1,21 @@
+;S75v40
+;Переключение типа подсветки на лету
+;Switch illumination type dyrectly on the phone
+;(c) ThE TrIFoN
+;Version: 
+;PatchID: 3935
+;Details: https://patches.kibab.com/patches/details.php5?id=3935
+/*
+1 профиль - горит экран
+2 профиль - горит клавиатура
+3 профиль - горит и то и то.
+English:
+Profile 1: - illuminates display
+Profile 2: - keypad
+Profile 3: - both
+*/
+09623CE: 041C243D 92F267FF
+0BF52A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 98B5041C044B98470130032800D3201C
+0BF52B0: FFFFFFFFFFFFFFFFFFFFFFFF 98BC041C243D00BD278F28A0
+;------------------------- end -------------------------
+

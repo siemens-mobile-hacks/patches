@@ -1,0 +1,31 @@
+;CX75v13
+;Замена циферок номера пункта в Native Menu
+;Change a  character of numbers in Native Menu
+;(c) DeviceMan
+;(r) Siemens CE
+;(p) Nikolas535
+;Version: 
+;PatchID: 9582
+;Details: https://patches.kibab.com/patches/details.php5?id=9582
+/*
+Несущественная вещь, но приятно. Увеличиваем цифры, соответствующие значкам нативного меню.
+*/
+;SIEMENS CE 5.4 build 230 vkp export, 23.09.2009 at 20:00:00
+;(c) 2002-2006, V!per - dspmobile 
+;SIEMENS CX75, lg3, fw:13
+
+011FFA13: 007C444444 FC84848484
+011FFA18: 7C06000C04040404 FC04307030303030
+011FFA21: 007C047C407C FC04FC8080FC
+011FFA28: 007C047C FC04FC04
+011FFA2D: 7C FC
+011FFA2F: 001828487C 18284888FC
+011FFA36: 007C407C FC80FC04
+011FFA3B: 7C FC
+011FFA3D: 007C407C447C FC80FC8484FC
+011FFA44: 007C04081020 FC0C183060C0
+011FFA4B: 007C447C447C FC84FC8484FC
+011FFA52: 007C447C FC84FC04
+011FFA57: 7C04 FC02
+;------------------------- end -------------------------
+

@@ -1,0 +1,38 @@
+;S75v47
+;Открывать пункт "Exits" "Разработчика" по горячей клавише или из "Моё меню" 
+;Open "Exits" item of "Developer menu" by hot key or from "My menu" 
+;(c) Evgr 
+;Version: 
+;PatchID: 10245
+;Details: https://patches.kibab.com/patches/details.php5?id=10245
+/*
+
+*/
+; (idea) St. Hunter
+
+0425778: 1FE832A0 0xA1471270 ; change shortcut "Start of week"
+04442B4: 2122 6823 ; change lanpack string ID
+
+#pragma enable old_equal_ff
+1471270: 80402DE904008FE2C957B8FA8080BDE8
+1471280: "Exits",00
+#pragma disable old_equal_ff
+
+; S75 v47 lg3 - Patch made by "Smelter" © avkiev
+; http://avkiev.kiev.ua/Siemens/Smelter/Smelter.htm
+;********************************************************************************
+
+;Редактирование сообщения  9 : 02221  "Начало недели" => "Exits"
+
+17E897A: D09DD0B0D187D0B0D0BBD0BE20D0BDD0B5D0B4D0B5D0BBD0B800 4578697473FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+
+;********************************************************************************
+
+;Редактирование сообщения  1 : 02221  "Start of week" => "Exits"
+
+1666F88: 5374617274206F66207765656B00 4578697473FFFFFFFFFFFFFFFF00
+
+;********************************************************************************
+
+;------------------------- end -------------------------
+

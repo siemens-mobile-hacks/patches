@@ -1,0 +1,15 @@
+;M75v25
+;убрать справку в card explorer
+;delete help in card explorer
+;(c) 1nvisible
+;(p) Kovkir
+;Version: 1.0
+;PatchID: 7653
+;Details: https://patches.kibab.com/patches/details.php5?id=7653
+/*
+
+*/
+4D90D0: 17 16
+
+;------------------------- end -------------------------
+

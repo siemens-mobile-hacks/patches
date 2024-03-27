@@ -1,0 +1,16 @@
+;SL65v53
+;Turn vibra on/off on keypad lock/unlock
+;Turn vibra on/off on keypad lock/unlock
+;(c) ~Jhellico
+;(r) empeka
+;(p) Benlux
+;Version: 0.3
+;PatchID: 6969
+;Details: https://patches.kibab.com/patches/details.php5?id=6969
+/*
+
+*/
+1150CB4: 1039886001210320 004FB847,0xA0FC7001
+115103C: 0120886001210320 004FB847,0xA0FC7005 
+;------------------------- end -------------------------
+

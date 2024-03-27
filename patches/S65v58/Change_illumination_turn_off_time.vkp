@@ -1,0 +1,15 @@
+;S65v58
+;Изменение длительности горения подсветки
+;Change Illumination Turn Off Timer
+;(c) benj9
+;(p) KiRiK
+;Version: 2
+;PatchID: 1489
+;Details: https://patches.kibab.com/patches/details.php5?id=1489
+/*
+
+*/
+0D0C114: 0F 0i30 ; mainscreen (seconds)
+0D0C118: 3C 0i30 ; menues, lists etc. (seconds)
+;------------------------- end -------------------------
+

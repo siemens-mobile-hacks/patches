@@ -1,0 +1,14 @@
+;A50v12
+;Активация вибросигнализации в режиме заряда
+;Activation of vibrosignalizatsii in the regime of the charge
+;(c) Delirium
+;Version: 
+;PatchID: 2189
+;Details: https://patches.kibab.com/patches/details.php5?id=2189
+/*
+По дефолту, при подключенном зарядном устройстве вибра не пашет, независимо от настроек.
+Данный патч это багу фиксит - теперь вибра работает и при подзарядке  Sinclair
+*/
+0E0DF8: 8A88 0D01
+;------------------------- end -------------------------
+

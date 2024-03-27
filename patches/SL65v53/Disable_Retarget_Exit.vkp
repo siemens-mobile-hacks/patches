@@ -1,0 +1,13 @@
+;SL65v53
+;Отключить Retarget Exit
+;Disable Retarget Exit
+;(c) 1nvisible
+;Version: 
+;PatchID: 5307
+;Details: https://patches.kibab.com/patches/details.php5?id=5307
+/*
+
+*/
+12E4784: 70402DE9 1EFF2FE1 ; For those who have Retarget Exit when using java
+;------------------------- end -------------------------
+

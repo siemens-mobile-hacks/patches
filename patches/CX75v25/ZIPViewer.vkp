@@ -1,0 +1,54 @@
+;CX75v25
+;ZIPViewer
+;ZIPViewer
+;(c) MaX6, const
+;(r) NForce, DJ, cbn
+;(p) Geka
+;Version: 2.2
+;PatchID: 5466
+;Details: https://patches.kibab.com/patches/details.php5?id=5466
+/*
+Заменяет форматы PDF, DOC или XLS на ZIP, RAR и 7Z и позволяет открывать их сразу из Card-Explorer! Чтобы патч работал нужно создать папку X://java/jam/Applications/ZipViewer/ (X://java/jam/Applications/RarViewer/)поместить любой разархиватор Zip (Rar, 7Z) и переименовать в ZipViewer.jar (RarViewer)!
+*/
+;http://djfromredsys.wen.ru/Other/MobileZip-x75.jar - Открывает Zip-архивы сразу из кард-эксплорера
+;http://www.mobilerar.narod.ru/MobileRar.jar - Пока открывается только сам и из него уже можно выбрать Rar- или Zip-архив.
+; Для использования разных программ для zip и rar закомментировать соответствующие строки.
+; Архивы 7zip (впрочем как и rar) распаковываются ТОЛЬКО MobileRar, поэтому для их открывания используем RarViewer.
+; В данном примере следующая комбинация:
+;        PdfViewer (*.pdf) заменён на ZipViewer (*.zip)
+;        DocViewer (*.doc) заменён на RarViewer (*.rar)
+;        XlsViewer (*.xls) заменён на RarViewer (*.7z)
+
+4AD805: 446F63 526172 ; DocViewer -> RarViewer
+4AD811: 586C73 526172 ; XlsViewer -> RarViewer
+;4AD81D: 506466 526172 ; PdfViewer -> RarViewer
+
+;4AD805: 446F63 5A4950 ; DocViewer -> ZipViewer
+;4AD811: 586C73 5A4950 ; XlsViewer -> ZipViewer
+4AD81D: 506466 5A4950 ; PdfViewer -> ZipViewer
+
+;Собственно замена расширений
+; doc -> rar
+4AD844: 646F63 726172
+; doc -> zip
+;4AD844: 646F63 7A6970
+; doc -> 7z
+;4AD844: 646F63 377A00
+
+
+; xls -> rar
+;4AD864: 786C73 726172
+; xls -> zip
+;4AD864: 786C73 7A6970
+; xls -> 7z
+4AD864: 786C73 377A00
+
+
+; pdf -> rar
+;4AD884: 706466 726172
+; pdf -> zip
+4AD884: 706466 7A6970
+; pdf -> 7z
+;4AD884: 706466 377A00
+;------------------------- end -------------------------
+

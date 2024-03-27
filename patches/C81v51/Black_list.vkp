@@ -1,0 +1,23 @@
+;C81v51
+;Черный список
+;Black list
+;(c) ThE TrIFoN, SiNgle
+;(p) klaud,den11111
+;Version: 
+;PatchID: 7393
+;Details: https://patches.kibab.com/patches/details.php5?id=7393
+/*
+Черная группа по умолчанию - Хобби 2
+На черную группу и абонента не должно стоять никаких мелодий!!!
+008FFD2 0B 0N ; N-черная группа 00- Нет группы, 03-Семья, 04-Друзья и так далее по возрастающей 
+По умолчанию в патче черная группа - Хобби 2
+N means Black Group, 00-No group, 03-Family, 04-Friends and so on
+By default the Black Group is Hobby 2 номерами
+
+*/
+034B21A: 2DF796EC 44F5D9FE
+008FFD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFB50B2803D10020034B984703E0FFBC
+008FFE0: FFFFFFFFFFFFFFFFFFFFFFFF E8F1B2ED00BDFFBD1B349BA0
+09B10E4: 201C51F254EE 002002F098F9;отклонять вызовы с подавленными номерами
+;------------------------- end -------------------------
+

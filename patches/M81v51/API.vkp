@@ -1,0 +1,19 @@
+;M81v51
+;Добавление API
+;API-Addon
+;(c) avkiev
+;Version: 070603
+;PatchID: 7608
+;Details: https://patches.kibab.com/patches/details.php5?id=7608
+/*
+Необходимо для вызова GetAccessoryType
+*/
+#pragma enable old_equal_ff
+;GetAccessoryType 
+;Out: R0 - accesory type
+006EF00: D08000EF080090E5000050E31EFF2F01
+006EF10: 0400D0E51EFF2FE1
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

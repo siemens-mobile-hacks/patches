@@ -1,0 +1,17 @@
+;CX75v13
+;Disable More Nasty Debug
+;Disable More Nasty Debug
+;(c) benj9
+;(p) Luke
+;Version: 
+;PatchID: 3451
+;Details: https://patches.kibab.com/patches/details.php5?id=3451
+/*
+Очередной патч из анти-дебажной темы 
+Если стоит патч Disable MMS Debug, то закоментируем 1 строку
+*/
+031DA54: 0FB4 7047
+031D8c0: FFB5 7047
+
+;------------------------- end -------------------------
+

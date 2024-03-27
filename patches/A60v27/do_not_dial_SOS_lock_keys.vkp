@@ -1,0 +1,14 @@
+;A60v27
+;Запретить набор SOS при заблокированной клавиатуре
+;To forbid collection SOS with the blocked keyboard
+;(c) Acid[mpr], Sinclair
+;(p) Rasp
+;Version: 
+;PatchID: 10461
+;Details: https://patches.kibab.com/patches/details.php5?id=10461
+/*
+
+*/
+62C012: FA82 DB00
+;------------------------- end -------------------------
+

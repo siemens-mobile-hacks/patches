@@ -1,0 +1,14 @@
+;EL71v38
+;Идем в NativeMenu по Нажатию ###
+;GoTo NativeMenu by Pressing ###
+;(c) SiNgle
+;(p) 1nvisible
+;Version: 
+;PatchID: 5646
+;Details: https://patches.kibab.com/patches/details.php5?id=5646
+/*
+! Dev.Menu->LOGAL->Enable '###'
+*/
+08CD426: 68F0E4FA 6BF54EFB
+;------------------------- end -------------------------
+

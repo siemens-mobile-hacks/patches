@@ -1,0 +1,28 @@
+;MC60v10
+;Убрать название оператора
+;Hide operator name
+;(c) ZihwA
+;(p) Kanibaals
+;Version: 
+;PatchID: 3389
+;Details: https://patches.kibab.com/patches/details.php5?id=3389
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=mc60v10&f=Hide_operator_name.rar
+
+/*
+Убираем надпись названия оператора на главном экране и в заставке с патчам или убираем надпись названия оператора без патча если no_opsos.gif установлен как логотип...установленый фон не пропадёт.
+
+English:Hide operator name by setting  transparent 1x1 picture no_opsos.gif as logo from attached archive. Wallpaper remains. 
+
+OR
+
+New: use VKP patch
+
+*/
+000CF450: 8890 DB00
+
+;Remove service provider, no more need for 1*1 transparent map! ^_^
+;problem: Service provider name removed in digital clock too, 
+;so no personalized custom operator name can be used
+
+;------------------------- end -------------------------
+

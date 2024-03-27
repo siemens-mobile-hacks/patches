@@ -1,0 +1,14 @@
+;S75v24
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) Xman12
+;Version: 
+;PatchID: 2202
+;Details: https://patches.kibab.com/patches/details.php5?id=2202
+/*
+
+*/
+0C16D76: 00 01
+0C16DBA: 00 01
+;------------------------- end -------------------------
+

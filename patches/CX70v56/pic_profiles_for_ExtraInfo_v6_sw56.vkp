@@ -1,0 +1,21 @@
+;CX70v56
+;Картинки профилей для "Дополнительная информация на главном экране" v6
+;Profile pictures for "Extra info on the main screen" v6
+;(c) Kibab
+;(p) Lost
+;Version: 
+;PatchID: 2394
+;Details: https://patches.kibab.com/patches/details.php5?id=2394
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx70v56&f=pic_profiles_for_ExtraInfo_v6_sw56.rar
+
+/*
+
+*/
+0DA16DC: 1A0E8500386BE5A0 0E0E850004ECE5A0
+0DA16E4: 1A0E8500E86BE5A0 0E0E850058EBE5A0
+0DA16EC: 1A0E8500986CE5A0 0E0E8500047EE5A0
+0DA16F4: 1A0E85003C6DE5A0 0E0E8500247BE5A0
+0DA16FC: 1A0E8500E86DE5A0 0E0E8500907EE5A0
+0DA1704: 1A0E8500A06EE5A0 0E0E85003482E5A0
+;------------------------- end -------------------------
+

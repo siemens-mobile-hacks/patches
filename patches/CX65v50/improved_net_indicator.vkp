@@ -1,0 +1,50 @@
+;CX65v50
+;Продвинутый индикатор сети
+;Improved net Indicator
+;(c) arsh0r
+;(r) BuG
+;(p) AsteriX
+;Version: 0.13
+;PatchID: 276
+;Details: https://patches.kibab.com/patches/details.php5?id=276
+/*
+Этот патч заменяет стандартный индикатор сети на 6 мини-индикаторов соседних сот.
+
+Внимательно читайте инструкцию внутри патча! Есть строки, которые в некоторых случаях надо раскомментировать!
+
+Обсуждение патча: http://forum.siemens-club.org/viewtopic.php?TopicID=54915
+
+Патч требует установки картинок!
+См. зависимости патча.
+*/
+/*
+Этот патч заменяет стандартный индикатор сети на 6 мини-индикаторов соседних сот.
+Используются следующие картинки:
+0x33D - 0x343 ;1-7 GSM900
+0x344 - 0x34A ;1-7 GSM1800
+0x34B - Слабый уровень сигнала
+Размеры картинок - 5x14
+this patch displays 6 bars meaning the next 6 available GSM channels instead 
+of the normal net indicator. the bar images are still a bit crappy, because
+i don't know how to make them transparent, for any help i'll be pleased. here
+is a table of the used images:
+0x33D - 0x343 ;1-7 GSM900
+0x344 - 0x34A ;1-7 GSM1800
+0x34B low signal
+the image size is 5x14 px
+*/
+16341FE: 00F0B7FA 26F0FFFD
+#pragma enable old_equal_ff
+165AE00: F8B50F1C0025194C461F2088FF2801D2
+165AE10: 174A01E0164A0732A079222819D33E28
+165AE20: 01D2063217E0452801D2053213E04C28
+165AE30: 01D204320FE0532801D203320BE05A28
+165AE40: 01D2023207E0612801D2013203E06828
+165AE50: 01D3074A0E32074B0536391C1B68301C
+165AE60: 98470C340135062DCFDBF8BD20B267A8
+165AE70: 3D03000078AE65A1714763A1
+#pragma disable old_equal_ff
+;165AE58: 05 04 ;другое расстояние между индикаторами © AlexSid
+
+;------------------------- end -------------------------
+

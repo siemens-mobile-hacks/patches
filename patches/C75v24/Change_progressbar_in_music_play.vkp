@@ -1,0 +1,14 @@
+;C75v24
+;Изменение прогрессбара при проигрывании музыки
+;Change progressbar in music play
+;(c) SiNgle
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=2961
+;PatchID: 2933
+;Details: https://patches.kibab.com/patches/details.php5?id=2933
+/*
+
+*/
+04B2D28: 1000660073 0500700080
+;------------------------- end -------------------------
+

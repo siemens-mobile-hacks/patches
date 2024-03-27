@@ -1,0 +1,16 @@
+;MC60v10
+;анимация при запуске (Rally)
+;Start animation (Rally-theme)
+;(c) Kanibaals
+;(r) Unknown
+;Version: 
+;PatchID: 3390
+;Details: https://patches.kibab.com/patches/details.php5?id=3390
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=mc60v10&f=SBA_startup.rar
+
+/*
+SBA анимация при запуске. Ставить на диск C
+*/
+http://patches.kibab.com/cnt.php5?d=mc60v10&f=SBA_startup.rar
+;------------------------- end -------------------------
+

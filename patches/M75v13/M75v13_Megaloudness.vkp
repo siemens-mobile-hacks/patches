@@ -1,0 +1,19 @@
+;M75v13
+;MegaLoudness
+;MegaLoudness
+;(c) SiNgle
+;(p) jenda.69
+;Version: 1.0
+;PatchID: 3939
+;Details: https://patches.kibab.com/patches/details.php5?id=3939
+/*
+Увеличение громкости динамика, в патче установлен уровень 03 из 07, уровень регулируется в строке 030040E2.
+На 07 у меня уже динамик задыхается и играет даже тише :( 
+
+English: Increase volume level. Patch is set on value 03 from 07. Volume adjusting is in line 030040E2.
+*/
+0A8C5F0: 2600C4E5 D3FFFFEA 
+0A8C548: 030000EF 030040E2 
+0A8C54C: 6C2DA0E30100A0E3 2600C4E5290000EA 
+;------------------------- end -------------------------
+

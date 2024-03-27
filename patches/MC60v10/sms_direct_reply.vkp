@@ -1,0 +1,18 @@
+;MC60v10
+;Прямой ответ SMS
+;Direct reply to SMS
+;(c) Unknown
+;(p) Kanibaals
+;Version: 
+;PatchID: 3629
+;Details: https://patches.kibab.com/patches/details.php5?id=3629
+/*
+English:Direct reply with left softkey to SMS
+
+Was:Left softkey->reply->write message
+Now:Left softkey->write message
+
+*/
+000BDF98: 14 0C
+;------------------------- end -------------------------
+

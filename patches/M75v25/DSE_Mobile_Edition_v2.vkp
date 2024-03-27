@@ -1,0 +1,19 @@
+;M75v25
+;DSE Mobile Edition
+;DSE Mobile Edition
+;(c) 1nvisible
+;(r) ACiD[mrp], KreN, ~Jhellico
+;(p) Grizzzzly
+;Version: 2
+;PatchID: 5670
+;Details: https://patches.kibab.com/patches/details.php5?id=5670
+/*
+Позволяет назначить функции кнопок прямо с телефона. 
+Если вы хотите использовать стандартное значение - напишите STDF в нужной строке.
+English:Allows keys to be rebound from the mobile phone.
+If you want the standart function to be used - put "STDF" as a string.
+v2: for MP v14
+*/
+03297E8: 2C3A381CA16B73F126EC 00488047,0xA0FC9001,C046
+;------------------------- end -------------------------
+

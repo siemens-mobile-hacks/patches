@@ -1,0 +1,28 @@
+;SK65v50
+;Защита паролем важных функций телефона
+;Password protection some functions
+;(c) avkiev
+;(p) 1nvisible
+;Version: 3
+;PatchID: 376
+;Details: https://patches.kibab.com/patches/details.php5?id=376
+/*
+Защита некоторых функций телефона кодом. Можно выбрать PIN, PIN2 либо код телефона для защиты. Настройка защищаемых функций - в теле патча.
+*/
+#pragma enable old_equal_ff
+01FFF00: 50726F746563743320A961766B696576
+01FFF10: 00B50A48002202600021416005498160
+01FFF20: F821C1600261044A42618361EFF1B9FC
+01FFF30: 00BDC046EF2E2CA06864F7A830364DA8
+#pragma disable old_equal_ff
+01FFF18: 00 06 ;ProtectType: 00-PIN, 08-PIN2, 06-Phonecode
+045F2BC: 619031A0 41FF1FA0
+01FFF40: FFFFFFFFFFFFFFFF 004B,E5,E7,619031A0 ;MESG_INBOX_DIRC
+057CECC: 510E4DA0 49FF1FA0
+01FFF48: FFFFFFFFFFFFFFFF 004B,E1,E7,510E4DA0 ;INBOX
+045F3F4: E19231A0 51FF1FA0
+01FFF50: FFFFFFFFFFFFFFFF 004B,DD,E7,E19231A0 ;MESG_SENTITMBOX
+057CEFC: 950F4DA0 59FF1FA0
+01FFF58: FFFFFFFFFFFFFFFF 004B,D9,E7,950F4DA0 ;SENT
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;M65v50
+;Отключить Retarget Exit
+;Disable Retarget Exit
+;(c) 1nvisible
+;Version: 
+;PatchID: 3715
+;Details: https://patches.kibab.com/patches/details.php5?id=3715
+/*
+Для тех, у кого вылетает из явы с Retarget Exit'ом.
+English: For those who have Retarget Exit when using java.
+
+*/
+12DDAF4: 70402DE9 1EFF2FE1
+;------------------------- end -------------------------
+

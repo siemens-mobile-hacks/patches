@@ -1,0 +1,19 @@
+;EL71v38
+;Мастер-патч v14
+;Master-patch v14
+;(c)  avkiev
+;(r) 1nvisible, chaos
+;Version: 
+;PatchID: 5948
+;Details: https://patches.kibab.com/patches/details.php5?id=5948
+/*
+
+*/
+;Run Scaner on startup
+06693EA: 0021 BEDF ; EL71v38
+
+
+;Run Scaner instead of REMOTE_SYNCHRONIZATION
+08410CC: 0xA06EE40D 0xA0060C91 ; EL71v38
+;------------------------- end -------------------------
+

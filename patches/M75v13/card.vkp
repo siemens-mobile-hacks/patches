@@ -1,0 +1,14 @@
+;M75v13
+;Карта неисправна или неотформатирована
+;Card defect or not fotmatted
+;(c) ThE TrIFoN
+;(p) Grizzzzly
+;Version: 
+;PatchID: 1291
+;Details: https://patches.kibab.com/patches/details.php5?id=1291
+/*
+Выключает сообщение "Карта неисправна или неотформатирована" при включении телефона
+*/
+02C6E04: D6F14CEB 00210021
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;CX75v13
+;Показывать Скрытые Файлы в Card-Explorerе по умолчанию
+;Show Hidden Files In Card-Explorer By Default
+;(c) AlexSid
+;(r) Geka
+;(p) Smelter by avkiev
+;Version: 1
+;PatchID: 3947
+;Details: https://patches.kibab.com/patches/details.php5?id=3947
+/*
+
+*/
+02DD340: 00 FF
+02DD3F0: 00 FF
+
+;------------------------- end -------------------------
+

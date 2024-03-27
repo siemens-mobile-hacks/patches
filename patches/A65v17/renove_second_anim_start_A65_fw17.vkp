@@ -1,0 +1,16 @@
+;A65v17
+;Не показывать вторую анимацию при загрузке
+;Dont show second animation on start
+;(c) ?
+;(p) Rasp
+;Version: 
+;PatchID: 6387
+;Details: https://patches.kibab.com/patches/details.php5?id=6387
+/*
+
+*/
+;Не показывать вторую анимацию при загрузке.
+;Портировано: Rasp
+2CB392: 3D 0D
+;------------------------- end -------------------------
+

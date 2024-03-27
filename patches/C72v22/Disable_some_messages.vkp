@@ -1,0 +1,24 @@
+;C72v22
+;Убрать сообщения
+;Disable some messages
+;(c) SiNgle
+;(p) Smelter, Geka,Virusmater
+;Version: 
+;PatchID: 5822
+;Details: https://patches.kibab.com/patches/details.php5?id=5822
+/*
+
+*/
+08DFF82: 0021 10BD ; "Все сигналы выкл" (All ringtones off)
+08DFF66: 0021 10BD ; "Все сигналы вкл" (All ringtones off)
+08dffd2: 0021 10BD ; Keypad locked
+08F30B0: 78F1 80BD ; Vibra alert on\off
+08F3144: 78F1 80BD ; IrDA on\off
+08F3174: 77F1 80BD ; GPRS on\off
+0908E34: 490A02EB 0100A0E3; "Saved to:" after you take a foto
+099DAEC: 4CC011FA 0100A0E3 ; "Please wait" in Card-Explorer
+091D668: 2B1C 04E0 ; "Profile activated" (c) 13.beta2
+0A8DC82: 01 00 ; "Copy SIM" at SIM change
+0AC9FB2: 9F49 03E0 ; "List Empty!" © 1nvisible
+;------------------------- end -------------------------
+

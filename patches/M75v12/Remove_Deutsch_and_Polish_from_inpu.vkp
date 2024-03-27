@@ -1,0 +1,14 @@
+;M75v12
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;Version: 
+;PatchID: 5354
+;Details: https://patches.kibab.com/patches/details.php5?id=5354
+/*
+
+*/
+0A3D4B6: 00 01
+0A3D4EE: 00 01
+;------------------------- end -------------------------
+

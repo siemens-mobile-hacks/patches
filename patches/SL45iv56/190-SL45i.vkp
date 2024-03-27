@@ -1,0 +1,24 @@
+;SL45iv56
+;RBF. Красная кнопка при Flash SMS
+;RBF. Red Button when Flash SMS exists
+;(c) rizapn
+;Version: 
+;PatchID: 1888
+;Details: https://patches.kibab.com/patches/details.php5?id=1888
+/*
+Красная кнопка не будет автоматически удалять Flash SMS, вылезет диалог да/нет.
+
+
+Created: July 17, 2004
+
+Патч №190 с http://patch.oslik.ru/SL45_RU
+*/
+0x3B0698: A8D8DAD69809DADB E01CDAF05083DAE4
+0x3B06A0: 8219 C046
+
+0x4446C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FCE006E6FD9103E6FEE606F0FDFAE5
+0x4446D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF CEDDF04E46FE23003D02FADB8219DB00
+0x4446E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0000000002007C017302FF7F00000000
+0x4446F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D246E400000000005A2CE202264E0200
+;------------------------- end -------------------------
+

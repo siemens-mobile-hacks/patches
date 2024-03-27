@@ -1,0 +1,14 @@
+;S75v47
+;Ушлая подсветка (SWI)
+;Smart Illumination (SWI)
+;(c) BoBa
+;(r) (i) StarFriend
+;Version: 1-MP
+;PatchID: 6367
+;Details: https://patches.kibab.com/patches/details.php5?id=6367
+/*
+
+*/
+0BDBE10: 0xA01B642C 318006A0
+;------------------------- end -------------------------
+

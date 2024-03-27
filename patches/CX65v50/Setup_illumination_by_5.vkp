@@ -1,0 +1,16 @@
+;CX65v50
+; Подсветка с шагом 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 2980
+;Details: https://patches.kibab.com/patches/details.php5?id=2980
+/*
+
+*/
+09061B4: 0A 05 ; 05 или любая цифра в HEX
+09061C4: 0A 05 ; 05 или любая цифра в HEX
+
+;------------------------- end -------------------------
+

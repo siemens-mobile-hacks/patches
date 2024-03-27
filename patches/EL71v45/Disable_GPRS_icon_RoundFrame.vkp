@@ -1,0 +1,14 @@
+;EL71v45
+;Убрать канвас иконки GPRS в яве
+;Disable GPRS icon RoundFrame
+;(c) BingK(binghelingxi)
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8613
+;Details: https://patches.kibab.com/patches/details.php5?id=8613
+/*
+
+*/
+0AEDD4C: C7A0FCFB 0000A0E1
+;------------------------- end -------------------------
+

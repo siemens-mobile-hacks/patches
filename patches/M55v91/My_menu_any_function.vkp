@@ -1,0 +1,16 @@
+;M55v91
+;Мое меню (в главном меню) -> куча ссылок
+;My menu (in main menu) -> any function from the list
+;(c) Matr!x
+;(p) ZZToP
+;Version: 
+;PatchID: 2125
+;Details: https://patches.kibab.com/patches/details.php5?id=2125
+/*
+Список ссылок 1998
+English: Functions list 1998
+*/
+05A056: DA2E2A41 DA25D06B ;Developer Menu (или любая ссылка из списка)
+
+;------------------------- end -------------------------
+

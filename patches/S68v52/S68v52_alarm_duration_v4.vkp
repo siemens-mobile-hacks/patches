@@ -1,0 +1,21 @@
+;S68v52
+;Изменить продолжительность рингтона в будильнике
+;Change alarmclock ringtone duration 
+;(c) Evgr
+;Version: 4
+;PatchID: 10378
+;Details: https://patches.kibab.com/patches/details.php5?id=10378
+/*
++ любая продолжительность 
+
+*/
+
+0330528: 2300A0E3 6F3713FB
+03306A0: E0CC50E2 48C11FE5
+03306A4: A6CE5C22 0CC050E0
+
+0330560: 040000EA E0930400 ; 0x493E0(hex)=300000(dec)msec=300sec=5min
+03E7930: C0D40100 E0930400 ; 0x493E0(hex)=300000(dec)msec=300sec=5min
+03E7F3C: C0D40100 E0930400 ; 0x493E0(hex)=300000(dec)msec=300sec=5min
+;------------------------- end -------------------------
+

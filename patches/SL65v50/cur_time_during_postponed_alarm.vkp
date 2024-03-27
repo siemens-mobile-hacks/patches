@@ -1,0 +1,19 @@
+;SL65v50
+;Показ текущего времени при срабатывании отложенного будильника
+;Show current time during postponed alarm
+;(c) avkiev
+;(p) KiRiK
+;Version: 
+;PatchID: 184
+;Details: https://patches.kibab.com/patches/details.php5?id=184
+/*
+При срабатывании отложенного будильника показывает текущее время, а не то, на которое стоял будильник.
+
+*/
+0A3C828: 42780178 C4F504F8
+
+0800820: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 506F7374706F6E416C61726D20A96176
+0800830: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 6B69657600B5044A0448011C08319047
+0800840: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0248017A427A00BD9365B2A0D00177A8
+;------------------------- end -------------------------
+

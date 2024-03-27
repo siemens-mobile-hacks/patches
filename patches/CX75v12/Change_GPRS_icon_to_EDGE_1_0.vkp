@@ -1,0 +1,17 @@
+;CX75v12
+;Замена иконок GPRS на EDGE
+;Change GPRS icon to EDGE
+;(c) crash
+;Version: 1.0
+;PatchID: 4579
+;Details: https://patches.kibab.com/patches/details.php5?id=4579
+/*
+Шуточный патч. Заменяет все иконки GPRS на иконки EDGE. Хороший прикол над друзьями :)
+*/
+10C1374: 1A0E850048BE16A1 1A0E850078BD16A1
+10C1844: 0E0E8500342B17A1 0E0E8500142A17A1
+10C18A4: 0E0E8500B03117A1 0E0E8500142A17A1
+10C18AC: 0E0E8500483217A1 0E0E8500142A17A1
+10C18B4: 0E0E8500CC3217A1 0E0E8500142A17A1
+;------------------------- end -------------------------
+

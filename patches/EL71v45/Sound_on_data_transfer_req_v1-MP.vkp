@@ -1,0 +1,15 @@
+;EL71v45
+;Звук при запросе на передачу данных
+;Sound on data transfer request
+;(c) -=(Kad)=-
+;Version: 1-MP
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7659
+;PatchID: 7626
+;Details: https://patches.kibab.com/patches/details.php5?id=7626
+/*
+Воспроизводит звук при запросе на передачу данных
+*/
+071D4B0: 0530A0E30020A0E360119FE52500A0E3 04309FE533FF2FE10000A0E101E806A0
+
+;------------------------- end -------------------------
+

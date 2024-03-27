@@ -1,0 +1,15 @@
+;SL75v52
+;Вибра в момент соединения
+;Vibra at connect
+;(c) SiNgle
+;(r) avkiev
+;(p) kiREALlov
+;Version: 
+;PatchID: 7672
+;Details: https://patches.kibab.com/patches/details.php5?id=7672
+/*
+
+*/
+0DAA788: 2A1C2B1C09211730 00498847,0xA0063801
+;------------------------- end -------------------------
+

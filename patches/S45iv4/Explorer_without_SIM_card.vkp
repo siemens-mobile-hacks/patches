@@ -1,0 +1,14 @@
+;S45iv4
+;Проводник_без_SIM-карты
+;Provodnik bez SIM
+;(c) ?
+;Version: 
+;PatchID: 836
+;Details: https://patches.kibab.com/patches/details.php5?id=836
+/*
+
+*/
+05A656: C504 5905
+
+;------------------------- end -------------------------
+

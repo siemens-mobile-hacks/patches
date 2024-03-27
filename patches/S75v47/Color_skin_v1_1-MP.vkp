@@ -1,0 +1,16 @@
+;S75v47
+;Цветовая схема
+;Color skin
+;(c) benj9
+;(p) Diman3452
+;Version: 1.1-MP
+;PatchID: 8608
+;Details: https://patches.kibab.com/patches/details.php5?id=8608
+/*
+Замена цветовым схемам
+*/
+0970A36: 8000 0847
+0970DC0: 0xA8DF0356 0xA007D311
+007D334: 0xFFFFFFFF 0xA8DF0356
+;------------------------- end -------------------------
+

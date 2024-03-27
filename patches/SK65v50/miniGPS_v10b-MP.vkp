@@ -1,0 +1,15 @@
+;SK65v50
+;МиниGPS с логгингом БС
+;MiniGPS with GSM Data Logger
+;(c) ACiD[mrp], arsh0r
+;(r) bennie, SiNgle, (i) KreN
+;(p) ~Jhellico
+;Version: 1.02
+;PatchID: 3153
+;Details: https://patches.kibab.com/patches/details.php5?id=3153
+/*
+
+*/
+044BDE4: 0xA075FDC3 0xA0FC7601
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;SK65v50
+;Отключить Инкогнито при Смене SIM-Карты + Установить Срок Доставки СМС на "Ручной"
+;Disable Hide-ID on SIM Change + Set SMS Validity Period to "Manual"
+;(c) 1nvisible
+;Version: 
+;PatchID: 4156
+;Details: https://patches.kibab.com/patches/details.php5?id=4156
+/*
+
+*/
+02A5664: A4F186EE 3AF7F4FC
+#pragma enable old_equal_ff
+01E0050: FFB50120034B9847044B054A1A80024B
+01E0060: 9847FFBD715876A0836E70A09010E9A8
+01E0070: 4C040000
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

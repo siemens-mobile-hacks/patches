@@ -1,0 +1,13 @@
+;SL65v53
+;Изменение времени автоблокировки клавиш
+;Auto keylock time
+;(c) SiNgle
+;Version: 
+;PatchID: 5244
+;Details: https://patches.kibab.com/patches/details.php5?id=5244
+/*
+
+*/
+164A2D4: C832 7017
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;A60v27
+;Изменение звука при установке соединения
+;Change sound when dialing
+;(c) .
+;(p) Rasp
+;Version: 
+;PatchID: 10459
+;Details: https://patches.kibab.com/patches/details.php5?id=10459
+/*
+
+*/
+62A746: 13 3D
+;варианты 3A, 3B, 3C, 3D, 3E, 01, 5A
+;------------------------- end -------------------------
+

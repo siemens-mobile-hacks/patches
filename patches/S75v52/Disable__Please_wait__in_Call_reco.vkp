@@ -1,0 +1,14 @@
+;S75v52
+;Отключить "Подождите" в "Спис.вызовов"->"Удал. списки"
+;Disable "Please wait" in "Call records"->"Delete records"
+;(c) Evgr
+;(p) Виктор89
+;Version: 
+;PatchID: 8927
+;Details: https://patches.kibab.com/patches/details.php5?id=8927
+/*
+
+*/
+58BD92: D2F006EC C046C046
+;------------------------- end -------------------------
+

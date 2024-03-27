@@ -1,0 +1,19 @@
+;S65v58
+;Цветовая_схема
+;ColorSkin
+;(c) benj9
+;(p) -=[LCW]=-ExXtReMe
+;Version: 
+;PatchID: 1765
+;Details: https://patches.kibab.com/patches/details.php5?id=1765
+/*
+Настройки цвета (замена цветовым схемам  )
+Данные записаны в виде RRGGBBTT. область значений RR, GG,BB: 0-0xFF, TT=прозрачность : 0-0x64
+
+*/
+1151832: 8000 0847
+1151BBC: 0xA86E8C4A 0xA0FDAE11
+0FDAE34: 0xFFFFFFFF 0xA86E8C4A
+
+;------------------------- end -------------------------
+

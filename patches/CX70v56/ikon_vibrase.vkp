@@ -1,0 +1,15 @@
+;CX70v56
+;иконка вибрации
+;ikon vibrase
+;(c) SiNgle
+;(r) ***SpY***
+;Version: 
+;PatchID: 1110
+;Details: https://patches.kibab.com/patches/details.php5?id=1110
+/*
+иконка вибрации 
+*/
+171579E: 08D0 0028
+1732394: 0D56BAA0 FF008FA0
+;------------------------- end -------------------------
+

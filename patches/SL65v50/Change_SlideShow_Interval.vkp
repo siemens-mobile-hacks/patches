@@ -1,0 +1,13 @@
+;SL65v50
+;Изменить интервал в слайдшоу
+;Change SlideShow Interval
+;(c) benj9
+;Version: 
+;PatchID: 3360
+;Details: https://patches.kibab.com/patches/details.php5?id=3360
+/*
+
+*/
+096C104: 1D02 3B04
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;EL71v45
+;Задать положение софт кнопок по вертикали
+;Set soft keys vertical position
+;(c) Evgr
+;Version: 
+;PatchID: 9589
+;Details: https://patches.kibab.com/patches/details.php5?id=9589
+/*
+good for soft keys fonts 8 or 9 
+для более точного позиционирования софтов со шрифтами 8 или 9
+*/
+0A34A48: 01923A1C331C0091 00488047,0xA1410791
+
+#pragma enable old_equal_ff 
+1410790: 0192034A331C009100B502BC04310847
+14107A0: 27010000 ; y position, 127hex=295dec, good for soft keys fonts 8 or 9 
+#pragma disable old_equal_ff 
+;------------------------- end -------------------------
+

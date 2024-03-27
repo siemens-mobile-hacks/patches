@@ -1,0 +1,15 @@
+;EL71v41
+;Работа телефона без SIM-карты
+;Work without SIM-card
+;(c) ThE TrIFoN, SiNgle
+;(p) Siemann
+;Version: 
+;PatchID: 7116
+;Details: https://patches.kibab.com/patches/details.php5?id=7116
+/*
+При нажатии кнопки Демо, телефон запускается в нормальный режим и работает без Сим карты.
+English: Press Demo and mobile works as usually.
+*/
+05C7194: 0000A0E3C9FFFFEA 04F01FE5,0xA0CE9601
+;------------------------- end -------------------------
+

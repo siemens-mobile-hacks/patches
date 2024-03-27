@@ -1,0 +1,17 @@
+;SL75v47
+;Картинка при запуске камеры
+;Picture when starting camera
+;(c) den11111
+;(r) funMarkus, ILYA_ZX
+;(p) bertgrin
+;Version: 
+;PatchID: 10189
+;Details: https://patches.kibab.com/patches/details.php5?id=10189
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl75v47&f=Picture_when_starting_camera.zip
+
+/*
+
+*/
+03071C2: 041C806B002803D1 00200021B62223DF
+;------------------------- end -------------------------
+

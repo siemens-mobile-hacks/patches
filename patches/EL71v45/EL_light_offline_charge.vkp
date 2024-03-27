@@ -1,0 +1,23 @@
+;EL71v45
+;Включать подсветку при зарядке выключенного телефона по заданной кнопке 
+;Switch on light in offline charge by custom key 
+;(c) Evgr
+;Version: 
+;PatchID: 10291
+;Details: https://patches.kibab.com/patches/details.php5?id=10291
+/*
+
+*/
+
+05AB572: FF23963398426DD0CF4B C046004B9847,0xA13D27E1
+
+#pragma enable old_equal_ff
+13D27E0: FF239633984202D17046DE300047FF23
+13D27F0: 9433984208D0034B7847000004E08EE2
+13D2800: 1EFF2FE16056000006980C2802D17146
+13D2810: AE3108477446E0342047
+#pragma disable old_equal_ff
+
+13D280A: 0C 0C ; 0xC красная кнопка / red button
+;------------------------- end -------------------------
+

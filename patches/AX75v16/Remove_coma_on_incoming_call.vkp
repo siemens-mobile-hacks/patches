@@ -1,0 +1,14 @@
+;AX75v16
+;Убрать запятую между фамилией и именем при входящем звонке
+;Remove coma between first and last name on incoming call
+;(c) SiNgle
+;(p) dkBrazz
+;Version: 
+;PatchID: 6246
+;Details: https://patches.kibab.com/patches/details.php5?id=6246
+/*
+
+*/
+5B575E: 2C 20
+;------------------------- end -------------------------
+

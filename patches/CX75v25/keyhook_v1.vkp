@@ -1,0 +1,25 @@
+;CX75v25
+;KeyHook
+;KeyHook
+;(c) MasterMind
+;Version: 1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=6336
+;PatchID: 6332
+;Details: https://patches.kibab.com/patches/details.php5?id=6332
+/*
+Дополнительные функции для большой библиотеки
+Близки по функциональности AddKeybMsgHook_end и RemoveKeybMsgHook NewSGold-ов. Не совместим с Key Sequencer. Не обрабатывает LONG_PRESS. 
+*/
+0800646: 010602D5FFF7A3FF10BD 014CA04710BD01F0FDA0
+
+#pragma enable old_equal_ff
+0FDF000: FFB5051C144E3768002F0CD0EA09FF21
+0FDF010: 943189184006400EB847002803D0C046
+0FDF020: 0E49201C05E0281C010601D40C4900E0
+0FDF030: 0C498847FFBDF0B5074F3C68002C02D1
+0FDF040: 38600120F0BD0020F0BD80B5024F0020
+0FDF050: 3860012080BD0000,0xA8000280,0xA0A34228
+0FDF060: 0xA0800467,0xA0800595
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

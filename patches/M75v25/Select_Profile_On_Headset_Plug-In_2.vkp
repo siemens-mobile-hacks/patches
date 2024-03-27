@@ -1,0 +1,16 @@
+;M75v25
+;Выбор профиля при подключении гарнитуры
+;Select Profile On Headset Plug-In
+;(c) ThE TrIFoN
+;(r) (i) Grizzzzly
+;Version: 2
+;PatchID: 4592
+;Details: https://patches.kibab.com/patches/details.php5?id=4592
+/*
+Используется для сохранения вибры при подключении стандартной гарнитуры, а также гарнитуры на основе IMS-700
+English:useful to keep vibra on
+*/
+03453E2: 04 NN ; NN = № профиля - 1 standart headset
+034542C: 05 NN ; NN = № профиля - 1 IMS-700
+;------------------------- end -------------------------
+

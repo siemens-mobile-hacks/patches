@@ -1,0 +1,13 @@
+;M55v11
+;Отключить верификацию JAVA-классов
+;Disable Java-classes vertificaton
+;(c) ACiD[mrp], SiNgle, Chaos
+;Version: 
+;PatchID: 5245
+;Details: https://patches.kibab.com/patches/details.php5?id=5245
+/*
+Ускоряет запуск мидлетов на 30-70%
+*/
+7584A8: 3D 0D
+;------------------------- end -------------------------
+

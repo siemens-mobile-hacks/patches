@@ -1,0 +1,13 @@
+;EL71v45
+;Отключить BootScreen
+;Disable BootScreen
+;(c) benj9
+;Version: 
+;PatchID: 8021
+;Details: https://patches.kibab.com/patches/details.php5?id=8021
+/*
+
+*/
+04AE6B4: 273B000B 0000A0E1
+;------------------------- end -------------------------
+

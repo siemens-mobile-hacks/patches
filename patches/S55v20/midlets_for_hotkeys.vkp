@@ -1,0 +1,28 @@
+;S55v20
+;Запуск мидлетов по горячим клавишам
+;Run midlets for hotkeys
+;(c) Chaos, Single
+;Version: 
+;PatchID: 4881
+;Details: https://patches.kibab.com/patches/details.php5?id=4881
+/*
+Копируете мидлет в папку A:\java\keys\N\, где N=2..9 - номер быстрой клавиши Затем на выбранную клавишу устанавливаете "Запуск"
+*/
+;Если НЕ хотите использовать кнопку 1 для запуска мидлетов,
+; закомментируйте следующую одну строку патча (адрес 32B5B6).
+32B5B6: DA623C2248423D02 DAAB4001EA006AB6
+322D92: DA67A6DA DAAB4001
+12733A: 9A01AF0AAE0A DC04DC04DC04
+6B0120: FFFFFFFFFFFFFFFF 613A5C6A6176615C
+6B0128: FFFFFFFFFFFFFFFF 6B6579735C305C2E
+6B0130: FFFFFFFFFFFFFFFF 6A61720000000000
+6B0138: FFFFFFFFFFFFFFFF 0000000000000000
+6B0140: FFFFFFFFFFFFFFFF E6FE2001E6FF3E38
+6B0148: FFFFFFFFFFFFFFFF D740AC02992E08F1
+6B0150: FFFFFFFFFFFFFFFF D7400900B92F3DF8
+6B0158: FFFFFFFFFFFFFFFF D7500900F3F23D38
+6B0160: FFFFFFFFFFFFFFFF F7F24C38E6FC4B01
+6B0168: FFFFFFFFFFFFFFFF DA672E2BE6FC3F38
+6B0170: FFFFFFFFFFFFFFFF E09DE01EFA97ACAF
+;------------------------- end -------------------------
+

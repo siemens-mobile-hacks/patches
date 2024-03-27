@@ -1,0 +1,15 @@
+;M65v50
+;Из любого места жмем ### и попадаем в главное меню
+;Goto mainmenu from anywhere by pressing ###
+;(c) Single
+;(p) AsteriX
+;Version: 1
+;PatchID: 6305
+;Details: https://patches.kibab.com/patches/details.php5?id=6305
+/*
+Тот самый патч ###.
+*/
+0B1E4FC: 4AF0EBFF C8F525FE
+;0B1E4FC: 4AF0EBFF C3F5FFFE ;main menu
+;------------------------- end -------------------------
+

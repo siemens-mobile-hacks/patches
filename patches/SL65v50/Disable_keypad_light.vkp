@@ -1,0 +1,14 @@
+;SL65v50
+;Отключить подсветку кнопок
+;Disable keypad light
+;(c) SiNgle
+;Version: 
+;PatchID: 5158
+;Details: https://patches.kibab.com/patches/details.php5?id=5158
+/*
+
+*/
+0B24147: D5 24
+
+;------------------------- end -------------------------
+

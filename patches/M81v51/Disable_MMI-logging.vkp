@@ -1,0 +1,14 @@
+;M81v51
+;Отключение MMI-logging
+;Disable MMI-logging
+;(c) SiNgle
+;(p) Cypok
+;Version: 
+;PatchID: 6717
+;Details: https://patches.kibab.com/patches/details.php5?id=6717
+/*
+
+*/
+01F9E56: 041C 70BD
+;------------------------- end -------------------------
+

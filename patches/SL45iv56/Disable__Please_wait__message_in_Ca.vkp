@@ -1,0 +1,17 @@
+;SL45iv56
+;Отключить "Пожалуйста Подождите" в Card Explorer
+;Disable "Please wait" message in Card-Explorer
+;(c) Ocean
+;Version: 
+;PatchID: 2147
+;Details: https://patches.kibab.com/patches/details.php5?id=2147
+/*
+
+*/
+;при хождении по папкам 
+38D5E8: DAE6FAF4 CC00CC00 
+
+;при запуске (раскомментировать если нужно) 
+;38CB4C: DAE6FAF4 CC00CC00
+;------------------------- end -------------------------
+

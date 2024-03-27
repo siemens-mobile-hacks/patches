@@ -1,0 +1,13 @@
+;CX75v25
+;Включить выбор диапазона
+;Enable Band Selection
+;(c) Bennie
+;Version: 
+;PatchID: 3507
+;Details: https://patches.kibab.com/patches/details.php5?id=3507
+/*
+
+*/
+4D7AD8: 0502 FA01
+;------------------------- end -------------------------
+

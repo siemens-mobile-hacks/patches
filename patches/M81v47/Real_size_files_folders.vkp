@@ -1,0 +1,15 @@
+;M81v47
+;Реальные размеры папок и файлов в Card-Explorer
+;Real sizes of files, folders in Card-Explorer
+;(c) _caine
+;(p) Barracuda
+;Version: 
+;PatchID: 9025
+;Details: https://patches.kibab.com/patches/details.php5?id=9025
+/*
+
+*/
+02A567C: 7D 80
+02A5790: 4042 FFFF
+;------------------------- end -------------------------
+

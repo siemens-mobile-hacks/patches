@@ -1,0 +1,191 @@
+;M75v19
+;Вызов различных функций при залоченной клавиатуре
+;Running some functions while keyboard locked
+;(c) 1nvisible
+;(r) Bennie, avkiev, AsteriX, KiRiK
+;(p) Geka
+;Version: 8.5
+;PatchID: 4806
+;Details: https://patches.kibab.com/patches/details.php5?id=4806
+/*
+Телефон выполняет различные функции при нажатии клавиш при залоченной клавиатуре.
+Функция может быть вызвана как при одиночном нажатии клавиши, так и при двойном (для защиты от случайного нажатия) - см. Настройки.
+Известные глюки:
+- При отсутствии пропущенных СМС/вызовов/напоминаний левая софт-клавиша работает как правая
+- Если есть пропущенные СМС/вызовы/напоминания, она не работает
+
+EN:
+The phone runs some functions while keyboard is locked.
+The function may be called either on short press or on double press (to prevent casual pressing) - see Settings
+Known bugs:
+- If there are no missed SMS/calls/appointments the left SoftKey will function like the right one.
+- If there are missed SMS/calls/appointments the key won't function
+
+*/
+23C6DC: F8F7C2FD 20F056FF ; заблокированная клавиатура (Locked Keypad)
+2CF910: 0223E05E 1DF074FF ; скринсейвер (ScreenSaver)
+
++1005000
+#pragma enable old_equal_ff
+8E0: 525346574B4C2076382E3520A9316E76
+8F0: 697369626C6520202870294B6952694B
+900: 0223E85E00B500F018F8002802D1D7F7 
+910: 63FE00BD01B05D4908470223E05E01B5
+920: 00F00BF8002800D101BD02B0022802D1
+930: 0020E2F79DFC564908471FB500265A4B 
+940: 98470130072801BC1ED053281ED00028
+950: 1ED001281ED005281ED00E281ED00F28
+960: 1ED025281ED026281ED027281ED02828
+970: 1ED029281ED014281ED0152869D04849  
+980: FF20087001201EBD00201EBD002414E0
+990: 012412E0022410E003240EE004240CE0
+9A0: 05240AE0062408E0072406E0082404E0
+9B0: 092402E00A2400E00B2401B44CA04FA1
+9C0: 035D0A5D01BC061C0120104245D10220
+9D0: 10424BD1042010424FD1301C30490870     
+9E0: FF2BCCD0012B08D0022B09D0E02B27D2
+9F0: D02B1BD2902B12DCC1E72C4B9847BEE7   
+A00: E0F7ACFF012807D0E1F7C7FE012800D0 
+A10: B5E7F5F730EBB2E7DDF719FEAFE7982B 
+A20: ADDC913B181C1D498847A8E7DF2BA6DC    
+A30: D03B40214B4334A0C018174B98479EE7   
+A40: EF2B9CDCE03BDB18DB1819A2D2589047
+A50: 95E70021002997D0061C7FB410490A78  
+A60: 96420E707FBC8DD1152EB0D17FB40320
+A70: 084B98477FBC152EACD17FB409490023 
+A80: 0B707FBC152EA8D179E7C046B3F969A1
+A90: 4D2A6AA1B171C5A0F4E9C7A0DB998CA0 
+AA0: 202368A8C8996AA80D9B8CA0210980A0 
+
+;Настройки | Settings
+;944: 07 NP ;Профиль "No Patches"
+
+;Настройки действий при нажатии кнопок (Key bindings)
+;Разблокировать клавиатуру при ДВОЙНОМ нажатии '#'. Длительное нажатие работать не будет!
+;Unlock keyboard with DOUBLE press of '#'. Long press won't work!
+;A52: 00 01
+
+;Список процедур (Procedure List)
+;По умолчанию в каждой строке стоит ссылка на 'XTRA_NO_APPLI' (ABA68DA0 - нет действия), 
+;вы можете переставить ее на любую другую функцию.
+;By default in every line there's a link to 'XTRA_NO_APPLI' (ABA68DA0 - no action), you can change it to any other.
+;Вот некоторые процедуры (Here are some procedures)
+;ELSE_SOUND_RECO - 37A48DA0 
+;ELSE_STOP_WATCH - 919C8DA0
+;ELSE_STR_MYMENU - CDA38DA0
+;FLSH_FLEXPLORER - DB9C8DA0
+;ELSE_COUNT_DOWN - 9B9C8DA0
+;MAIN MENU       - D1A58DA0
+AB0: D1A58DA0 ;Procedure 0
+AB4: 9B9C8DA0 ;Procedure 1
+AB8: 37A48DA0 ;Procedure 2
+ABC: DB9C8DA0 ;Procedure 3
+AC0: CDA38DA0 ;Procedure 4
+AC4: ABA68DA0 ;Procedure 5
+AC8: ABA68DA0 ;Procedure 6
+ACC: ABA68DA0 ;Procedure 7
+AD0: ABA68DA0 ;Procedure 8
+AD4: ABA68DA0 ;Procedure 9
+AD8: ABA68DA0 ;Procedure A
+ADC: ABA68DA0 ;Procedure B
+AE0: ABA68DA0 ;Procedure C
+AE4: ABA68DA0 ;Procedure D
+AE8: ABA68DA0 ;Procedure E
+AEC: ABA68DA0 ;Procedure F
+
+;В первой строке настраивается функция, вызываемая при нажатиии клавиши, а во второй опции 
+;(In the first line the function is set up while in the second you set up options.)
+;Функции (Functions) 
+;00 - временно включить подсветку (temporarily light on)
+;01 (© avkiev) - проговаривание текущего времени. !Должен быть установлен патч "Говорящий Телефон v2" 
+;(spelling current time. !The patch "Talking Phone v2" must be installed)
+;02 (© Bennie) - просмотр пропущенных SMS/вызовов/напоминаний (view missed SMS/calls/appointments)
+;9x - переключиться в профиль (где 'x' - номер профиля - от 1 до 8) 
+;(switch to profile (where 'x' is the profile number - from 1 to 8))
+;Dx - запустить мидлет (где 'x' - номер мидлета в списке мидлетов - см. ниже) 
+;(run midlet (where 'x' is the midlet number in midlet list - see below))
+;Ex - запустить процедуру (где 'x' - номер процедуры в списке процедур - см. ниже) 
+;(run procedure (where 'x' is the procedure number in procedure list - see below))
+;Опции (Options)
+;00 - никаких дополнительных действий (no additional actions)
+;01 - проверка на ДВОЙНОЕ нажатие клавиши (для защиты от случайных нажатий) 
+;(check DOUBLE pressing of the button (to prevent casual pressing))
+;02 - включить временную подсветку (light on temporarily)
+;04 - разблокировать клавиатуру (рекомендуется при запуске мидлетов и других задач, где нужна подсветка) 
+;(unlock keyboard (recommended when running midlets or other functions requiring lighting on))
+;Например, чтобы разблокировать клавиатуру при двойном нажатии клавиши, введите 05 (4+1).
+;Just summarize the numbers of the required functions. 
+;For instance, to unlock keyboard after double pressing the button, put 05 (4+1).
+
+;Левая софт-клавиша (Left SoftKey)
+AF0: 02
+AFC: 02
+;Правая софт-клавиша (Right SoftKey)
+AF1: FF
+AFD: 02
+;Красная кнопка (Red Button)
+AF2: FF
+AFE: 02
+;Зеленая кнопка (Green Button)
+AF3: 02
+AFF: 07
+;Громкость вниз (Volume Down)
+AF4: E0
+B00: 07
+;Громкость вверх (Volume Up)
+AF5: 01
+B01: 00
+;Джойстик вниз (Joystick Down)
+AF6: FF
+B02: 02
+;Джойстик вверх (Joystick Up)
+AF7: FF
+B03: 02
+;Джойстик вправо (Joystick Right)
+AF8: FF
+B04: 02
+;Джойстик влево (Joystick Left)
+AF9: FF
+B05: 02
+;Нажатие на джойстик (Joystick Press)
+AFA: FF
+B06: 02
+;Звездочка (Asterisk)
+AFB: D0
+B07: 03
+
+;Список мидлетов (Midlet List)
+;Сюда вы можете занести до 16 мидлетов. На путь к каждому мидлету отводится 40 байт  
+;В конце адреса необходимо поставить '00'.
+;Мидлет может запускаться с ММС-карты при наличии соответствующего патча
+;В этом случае строка выглядит так: "4:\\Java\\jam\\Applications\\Lighter\\Lighter.jar",00
+;Если убрана папка "jam" (см.соотв.патч), то строка выглядит так: "0:\\Java\\Applications\\Lighter\\Lighter.jar",00
+;Если с ММС-карты, то: "4:\\Java\\Applications\\Lighter\\Lighter.jar",00
+;Here you can store up to 16 midlets. On every midlet path you have 40 bytes  
+;In the end of every path you must put '00'. 
+;Midlets may be run from MMC-card with appropriate patch installed
+;In this case the path goes like this: "4:\\Java\\jam\\Applications\\Lighter\\Lighter.jar",00
+;If "jam" folder is removed (see appr.patch), the path is: "0:\\Java\\Applications\\Lighter\\Lighter.jar",00
+;Or starting from MMC-card: "4:\\Java\\Applications\\Lighter\\Lighter.jar",00
+
+B08: "4:\\Java\\Applications\\Lighter\\Lighter.jar",00 ; Midlet 0
+B48: "0:\\Java\\jam\\Applications\\DocViewer\\DocViewer.jar",00 ; Midlet 1
+;B88: ; Midlet 2
+;BC8: ; Midlet 3
+;C08: ; Midlet 4
+;C48: ; Midlet 5
+;C88: ; Midlet 6
+;CC8: ; Midlet 7
+;D08: ; Midlet 8
+;D48: ; Midlet 9
+;D88: ; Midlet A
+;DC8: ; Midlet B
+;E08: ; Midlet C
+;E48: ; Midlet D
+;E88: ; Midlet E
+;E48: ; Midlet F
+
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

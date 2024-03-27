@@ -1,0 +1,33 @@
+;C60v27
+;Пароль для входящих и исходящих SMS
+;Inbox and send SMS password
+;(c) Snowm@n
+;Version: 
+;PatchID: 2059
+;Details: https://patches.kibab.com/patches/details.php5?id=2059
+/*
+Запрос кода телефона при просмотре входящих и исходящих SMS
+*/
+; Запрос кода телефона при просмотре исходящих SMS
+; C60, SW27
+; (c) Snowm@n zews_snowman@list.ru, 2 октября 2005
+
+0028F8B8: E04CFA485CF8 FA83B006CC00
+#pragma enable old_equal_ff
+006306B0: E6FCC206E6FD0C02FA4C86C0E04CFA48
+006306C0: 5CF800000000060048804C00F80062FD
+006306D0: 4A002C3A0900BC068300
+#pragma disable old_equal_ff
+
+; Запрос кода телефона при просмотре входящих SMS
+; C60, SW27
+; (c) Snowm@n zews_snowman@list.ru, 2 октября 2005
+
+0028F8A0: E00CFA485CF8 FA838006CC00
+#pragma enable old_equal_ff
+00630680: E6FC9206E6FD0C02FA4C86C0E00CFA48
+00630690: 5CF800000000060048804C00F80062FD
+006306A0: 4A002C3A09008C068300
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

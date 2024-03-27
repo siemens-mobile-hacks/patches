@@ -1,0 +1,16 @@
+;CX75v13
+;Быстрый показ окна "Язык ввода:" при выборе языка
+;Fast show "Input language" msgbox
+;(c) SiNgle
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 899
+;Details: https://patches.kibab.com/patches/details.php5?id=899
+/*
+RUS: Быстрый показ окна выбора языка ввода текста.
+
+ENG: Fast display of a window of a choice of language of input of the text.
+*/
+0A3E56C: B80B 0100
+;------------------------- end -------------------------
+

@@ -1,0 +1,78 @@
+;CX70v56
+;Уровень сигнала в децибелах,напряжение,температура
+;Extra info + profile logo on the main screen
+;(c) avkiev
+;(r) (I) AsteriX
+;(p) vmaxy202
+;Version: 4.1
+;PatchID: 737
+;Details: https://patches.kibab.com/patches/details.php5?id=737
+/*
+Патч добавляет уровень сигнала в децибелах,напряжение,температуру
+*/
+;* Extra info + profile logo on the main screen v4.1 *
+; © avkiev, (I) AsteriX, § AsteriX
+; profile logo pics not ported yet, 
+; please use * ImprovedNetIndicator + ProfileLogo *
+; (p) CX70V56 vmaxy202
+
+1715646: 051C0020 27F05BF8
+
++173C700
+#pragma enable old_equal_ff
+00: 01B5,F5F716ED,0130072856D03B4E0427 ;jump to getProfile
+10: 3F02533700248025B047002414253649
+20: 897900F04FF89320B0479420B0470A20
+30: B0471E241425012003212D4A90470A21
+40: 0902AA31401A0F210A061116091802D5
+50: 9120B04749420A20,B2F73AEB,00F02FF8 ;dwMODdw
+60: 9520B047081CB0479620B0479720B047
+70: 0A20B04748241425002009211C4A9047
+80: 011C03200002E830,B2F722EB,B0479520 ;dwMODdw
+90: B0476420,B2F71CEB,B04700F013F89820 ;dwMODdw
+A0: B0470A20B047722414251248018800F0
+B0: 09F89920B0470A20B047002020BD02B5
+C0: 011C00E002B50A20,B2F702EB,0A2802D3 ;dwMODdw
+D0: FFF7F5FF00E0B047081CB04702BD02B5
+E0: 3A1821060816291C,F5F72EEE,063402BD
+F0: A40215A1,300D6CA8,D4D26CA8,DFC773A1
+#pragma disable old_equal_ff
+
+;To hide an element you have to define its y-coordinate to more than 176 (for example C0)
+14: 00,24,80 00,24,74 ;Profile
+1A: 00,24,14 00,24,12 ;Net
+32: 1E,24,14 60,24,6A ;Temperature
+74: 48,24,14 60,24,74 ;Voltage
+A6: 72,24,14 6C,24,12 ;Capacity
+
+;46: 0F 0i030 ;Adjust temperature by 0.1°C: 000 - TBA, 030 - TEN, 015 - (TBA+TEN)/2, -010 - TBA-1
+;Don't show space after
+;30: B047 C046 ;Net
+;72: B047 C046 ;Temperature
+;A4: B047 C046 ;Voltage
+;B8: B047 C046 ;Capacity
+;08: 07 NP ;Profile &quot;No patches&quot;
+;06: 013007 9A30A0 ;profile logo instead of the profile number (logo pics not ported !)
+;08: A0 NP ;Profile &quot;No patches&quot; (with profile logo) in HEX NP=99+profile number
++0
+
+0DA2744: 3214 0609
+0DA274C: 3113 0609
+0DA2754: 3113 0609
+0DA275C: 3214 0609
+0DA2764: 3113 0609
+0DA276C: 3113 0609
+0DA2774: 3113 0609
+0DA277C: 3113 0609
+0DA2784: 3113 0609
+0E900E8: 7FFFE403FFF7FF6EBF 0303037F7F03030303 ;4E4 - &quot;-&quot;
+0E90174: 00000E3800007F0000 037F7F03037F7F0303 ;4E5 - &quot;=&quot;
+0E901FC: C701C300E0007F5FC7 0F0F0F0F3F6F6F3F03 ;4E6 - &quot;d&quot;
+0E90284: 00008002403D3F3C01 7B6F6F7B7B6F6F7B03 ;4E7 - &quot;B&quot;
+0E90310: FFFFFFFFFFFFFF8FFF 0303030303031B1B33 ;4E8 - &quot;,&quot;
+0E90398: 0000000000007F07FF 1B27271B0303030303 ;4E9 - &quot;'&quot;
+0E90420: 0100102000007F01C0 3B6F676363676F3B03 ;4EA - &quot;C&quot;
+0E904A8: 0001F0F0C8107F0001 6F6F6F6F6F7F3B1303 ;4EB - &quot;V&quot;
+0E90530: 0000400080007F0007 676F0F1B33236F4F03 ;4EC - &quot;%&quot;
+;------------------------- end -------------------------
+

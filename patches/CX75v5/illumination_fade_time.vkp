@@ -1,0 +1,16 @@
+;CX75v5
+;Задержка_гашения_подсветки
+;Illumination_fade_time
+;(c) BuG
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 451
+;Details: https://patches.kibab.com/patches/details.php5?id=451
+/*
+
+*/
+0857AEC: B80B E803 ; 1 sec
+
+;------------------------- end -------------------------
+

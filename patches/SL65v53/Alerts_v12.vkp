@@ -1,0 +1,16 @@
+;SL65v53
+;Ежечасное событие и звуковые напоминания о пропущенных событиях и состоянии аккумулятора
+;Hourly event and sound alerts after missed events and state of battery
+;(c) avkiev
+;(r) SiNgle
+;(p) TicK
+;Version: 12-MP
+;PatchID: 5092
+;Details: https://patches.kibab.com/patches/details.php5?id=5092
+/*
+
+*/
+1649A70: 0E1CD7B03BA936A8 004A9047,0xA0FC4039   ; SL65v53 - Mainscreen
+164CA68: 0E1C9AB007A902A8 004A9047,0xA0FC404B   ; SL65v53 - Screensaver
+;------------------------- end -------------------------
+

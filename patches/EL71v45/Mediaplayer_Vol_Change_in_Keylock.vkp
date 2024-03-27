@@ -1,0 +1,13 @@
+;EL71v45
+;Изменение громкости плеера при залоченной клаве
+;Mediaplayer Volume Change in Keylock
+;(c) BuG
+;Version: 
+;PatchID: 7402
+;Details: https://patches.kibab.com/patches/details.php5?id=7402
+/*
+
+*/
+07AAB4E: 90E5 A0E3 ;EL71v45
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;C55v24
+;Время "звучания" будильника
+;Time of "sounding" of the alarm clock
+;(c) Ramil_
+;Version: 
+;PatchID: 1209
+;Details: https://patches.kibab.com/patches/details.php5?id=1209
+/*
+сколько телефону "пищать"
+*/
+45E6D0: C8AF0000 C0D40100
+
+;было 45000 мс (HEX - AFC8)
+;стало 120000 мс (HEX - 1D4C0)
+;------------------------- end -------------------------
+

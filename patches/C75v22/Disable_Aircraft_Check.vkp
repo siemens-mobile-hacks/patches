@@ -1,0 +1,19 @@
+;C75v22
+;Убрать подтверждение включения
+;Disable Aircraft Check
+;(c) Bennie
+;(p) BPSNSK
+;Version: 
+;PatchID: 6989
+;Details: https://patches.kibab.com/patches/details.php5?id=6989
+/*
+
+*/
+02C967D: D1 E0
+;------------------------- end -------------------------
+
+
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

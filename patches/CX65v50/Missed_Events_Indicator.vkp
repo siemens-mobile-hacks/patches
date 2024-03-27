@@ -1,0 +1,41 @@
+;CX65v50
+;Индикатор пропущенных событий
+;Missed Events Indicator
+;(c) empeka
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=946
+;PatchID: 901
+;Details: https://patches.kibab.com/patches/details.php5?id=901
+/*
+
+*/
+16341FA: 02210320 26F0D1FB
+
++165A9A0
+00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 7CB5114E114D124C0E480068002807D0
+10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 421971217020B047221C6E217620B047
+20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 07480078002807D042197F217020B047
+30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 621C7C217620B047022103207CBDC046
+40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 54F43FA8,A08868A8,714763A1,4D040000 ; RamMissedSMS, RamMissedCalls, DrawImg, digits pic#
+50: FFFFFFFF 52010000 ; ico pic#
+
+;calls digit
+;12: 71 0i113 ;Y
+;14: 70 0i112 ;X
+;calls ico
+;1A: 6E 0i110 ;Y
+;1C: 76 0i118 ;X
+
+;sms digit
+;2A: 7F 0i127 ;Y
+;2C: 70 0i112 ;X
+;sms icon
+;32: 7C 0i124 ;Y
+;34: 76 0i118 ;X
+
+;4C: 4D04 0i01101 ;digit pic#
+;50: 5201 0i338 ; missed call icon#
+
++0
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;E71v42
+;Подсветка с шагом 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(p) $TA$
+;Version: 
+;PatchID: 6738
+;Details: https://patches.kibab.com/patches/details.php5?id=6738
+/*
+
+*/
+06405A4: 0A 05
+06405AA: 0A 05
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;CX75v23
+;Изменение разделителя в меню
+;Change delimiter in menu
+;(c) *S*h*a*D*o*W*,
+;(r) AsteriX, ILL
+;(p) Smelter
+;Version: 
+;PatchID: 1818
+;Details: https://patches.kibab.com/patches/details.php5?id=1818
+/*
+
+*/
+1183878: 55555555555555555555555F FFFFFFFFFFFFFFFFFFFFFFFF
+
+;------------------------- end -------------------------
+

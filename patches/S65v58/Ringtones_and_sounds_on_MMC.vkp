@@ -1,0 +1,17 @@
+;S65v58
+;Рингтоны и звуки на MMC
+;Ringtones and sounds on MMC
+;(c) Athlonfreak
+;(r) BuG
+;(p) kraze1984
+;Version: 
+;PatchID: 4756
+;Details: https://patches.kibab.com/patches/details.php5?id=4756
+/*
+При назначении рингтонов, звуков на функции звонка, будильника и т.д., они копируюются на MMС, а не в память телефона
+English:When assigning sounds to ringtones, signals, etc. they are copied on MMC card and not in phones' memory
+*/
+00A24310: 30 34 ; 0:\Sounds -> 4:\Sounds
+00A24348: 30 34 ; 0:\Sounds\EMS -> 4:\Sounds\EMS
+;------------------------- end -------------------------
+

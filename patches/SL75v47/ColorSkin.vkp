@@ -1,0 +1,83 @@
+;SL75v47
+;ColorSkin
+;ColorSkin
+;(c) benj9
+;(p) loquat
+;Version: 1.2MP
+;PatchID: 10584
+;Details: https://patches.kibab.com/patches/details.php5?id=10584
+/*
+MasterPatch
+*/
+973422: 8000 0847
+099F550: 0xA8DF02EE 0xA007D301
+#pragma enable old_equal_ff
+007D300: 0DB5C7DFE4800068002806D0CC200002
+007D310: CF30C4DF01D0011D00E0024901BC8000
+007D320: 40180CBD,0xA8DF042E
+007D330: E4D3C2B1CFCC00000000000000000000,"\
+{p=ColorSkin ver=1 cp=benj9 id=CCCF}","\
+{04 co 01Mains ml=4 v=E0000064}","\
+{08 co 02MainBG ml=4 v=00000000}","\
+{12 co 03TitleTxt ml=4 v=0000C864}","\
+{16 co 04TitleBG ml=4 v=00000000}","\
+{20 co 05TitleMenuLevel ml=4 v=00000064}","\
+{24 co 06SoftkeyTxt ml=4 v=0000C864}","\
+{28 co 07SoftkeyBG ml=4 v=00000000}","\
+{32 co 08InactiveTxt ml=4 v=00FC0064}","\
+{36 co 09InactiveBG ml=4 v=E0E0C064}","\
+{40 co 10Txt1Desc ml=4 v=A0000064}","\
+{44 co 11Txt1Entry ml=4 v=00000064}","\
+{48 co 12Txt2Desc ml=4 v=20A0C064}","\
+{52 co 13Txt2Entry ml=4 v=00000064}","\
+{56 co 14Txt3Desc ml=4 v=E0A00064}","\
+{60 co 15Txt3Entry ml=4 v=00000064}","\
+{64 co 16SelectionTxt ml=4 v=E0000064}","\
+{68 co 17SelectionBG ml=4 v=3C3CFF00}","\
+{72 co 18SelectionDialog ml=4 v=0000C864}","\
+{76 co 19SelectionDialogShade ml=4 v=00005064}","\
+{80 co 20ListTxt ml=4 v=1014F864}","\
+{84 co 21ListBG ml=4 v=00000064}","\
+{88 co 22ListSeparator ml=4 v=00005064}","\
+{92 co 23ProviderTxt ml=4 v=0000F864}","\
+{96 co 24ProviderBG ml=4 v=0000A064}","\
+{100 co 25HilightedTxt ml=4 v=6064F864}","\
+{104 co 26HilightedBG ml=4 v=00006064}","\
+{108 co 27Cursor ml=4 v=0098F864}","\
+{112 co 28ScrollbarHandle ml=4 v=0098F864}","\
+{116 co 29Scrollbar ml=4 v=0000F864}","\
+{120 co 30PopupTxt ml=4 v=1014F864}","\
+{124 co 31PopupBG ml=4 v=00000064}","\
+{128 co 32PopupTitleTxt ml=4 v=00000064}","\
+{132 co 33PopupTitleBG ml=4 v=0000B864}","\
+{136 co 34PopupDialog ml=4 v=00000064}","\
+{140 co 35PopupDialogShade ml=4 v=00007064}","\
+{144 co 36PopupSelectionTxt ml=4 v=1000D764}","\
+{148 co 37PopupSelectionBG ml=4 v=0000E800}","\
+{152 co 38PopupSeparator ml=4 v=00000064}","\
+{156 co 39StatusbarBG ml=4 v=0000A064}","\
+{160 co 40StatusbarFill ml=4 v=1014F864}","\
+{164 co 41StatusbarFrame ml=4 v=00000064}","\
+{168 co 42PictogramFrame ml=4 v=00006064}","\
+{172 co 43PictogramFill ml=4 v=95000064}","\
+{176 co 44PictogramShade ml=4 v=0000FF64}","\
+{180 co 45PictogramBG ml=4 v=00000064}","\
+{184 co 46OrganizerNormalEventBG ml=4 v=00006064}","\
+{188 co 47OrganizerSpecialEventBG ml=4 v=95000064}","\
+{192 co 48OrganizerBirthdayBG ml=4 v=0000FF64}","\
+{196 co 49OrganizerBG ml=4 v=C8CCC800}","\
+{200 co 50OrganizerSeparator ml=4 v=F86C0064}","\
+{204 co 51OrganizerOverlappingBG ml=4 v=98CCF864}","\
+{208 co 52OrganizerWeekdayTxt ml=4 v=98CCF864}","\
+{212 co 53OrganizerCurrentDayTxt ml=4 v=F8FCF864}","\
+{216 co 54BrowserLink ml=4 v=6064F864}","\
+{220 co 55BrowserVisitedLink ml=4 v=3060F864}","\
+{224 co 56EditorPromptTxt ml=4 v=0000F864}","\
+{228 co 57EditorInputTxt ml=4 v=6098F864}","\
+{232 co 58IconMenuBG ml=4 v=00000000}","\
+{236 co 59unk1 ml=4 v=00000064}","\
+{240 co 60unk2 ml=4 v=00FC0064}",00
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

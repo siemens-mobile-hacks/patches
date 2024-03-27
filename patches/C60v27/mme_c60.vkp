@@ -1,0 +1,42 @@
+;C60v27
+;Главное меню отовсюду
+;Main Menu Everywhere
+;(c) Seklth
+;(p) Snowm@n
+;Version: 
+;PatchID: 6466
+;Details: https://patches.kibab.com/patches/details.php5?id=6466
+/*
+Внимание: 1. Патч вызывает главное меню, но оно глючит (Иконка сообщений может
+;              появлятся в произвольном месте, для выхода из меню приходиться нажимать
+;              красную кнопку несколько раз). Помните, что это только тестовая версия.
+;           2. При разблокированной клавиатуре при нажатии ### вы получите строку ###
+;              в поле набора номера
+;           3. Блокировака, разблоктровка и блокировака клавиатуры вызовут главное меню,
+;              не пугайтесь :) 
+
+
+Warning: 1. Patch call Menu, but behaviour is buggy (Message icon
+;             is travelling, for normal exit you must press redkey several times)
+;             Assume that it's test version. 
+;          2. In unlocked mode you'll get ### in "dial field".
+;          3. LockBy#, UnlockBy#, LockBy# cause patch activisation ;), 
+;             don't panic.
+
+*/
+;Место вставки
+;patched point
+0055693A: DA847856 DA836045
+
+;Код патча
+;patch code
+#pragma enable old_equal_ff 
+00634560: DA847856F3F2F3A78AF123008840E103
+00634570: E032E6F323A32812DD0206F11400D740
+00634580: 8000D4C1A43D40C33D1328213DF4E6FC
+00634590: B445E6FD8300E00E88D088C088E0E6FC
+006345A0: F603E00DE6FEAA00E00FDA8F4EDF0806
+006345B0: 9840DB00FA4452DEFA2F42344D4D4531
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,23 @@
+;CX70v56
+;Отключить надпись "Поиск сети" [!]
+;Disable displaying "netsearch" [!]
+;(c) arsh0r
+;(r) (f),(i) KiRiK
+;(p) SiamiX
+;Version: 
+;PatchID: 5723
+;Details: https://patches.kibab.com/patches/details.php5?id=5723
+/*
+Отображается инвертированный "!" вместо Поиск сети 
+English:
+Instead of Netsearch there is an inverted "!" in front of providername
+*/
+; заставка | screensaver
+171F91A: 6B49 04E0
+;171F92C: 04EC 0028 ;  только значок [!] | only [!] symbol
+
+; главный экран | mainscreen
+171C74A: 15F0FAEB 06E00028
+;171C75E: B7FE 0028 ;  только значок [!] | only [!] symbol
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;CX70v56
+;Не вырубаться при NativeMenu-Списки выз.-Время\стоимость
+;Revision Native Menu
+;(c) Bennie
+;(p) DeviceMan
+;Version: 1
+;PatchID: 6190
+;Details: https://patches.kibab.com/patches/details.php5?id=6190
+/*
+Теперь не вырубается при NativeMenu-Списки выз.-Время\стоимость
+*/
+0941B00: AF018DA0 EFF88EA0
+
+
+;------------------------- end -------------------------
+

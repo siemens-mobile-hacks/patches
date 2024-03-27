@@ -1,0 +1,15 @@
+;S55v20
+;Показ текущего времени при срабатывании отложенного будильника
+;Show current time during postponed alarm
+;(c) avkiev
+;Version: 
+;PatchID: 5069
+;Details: https://patches.kibab.com/patches/details.php5?id=5069
+/*
+
+*/
+88D79E: 0A 0D
+88D7A6: BC3F BE04
+88D7AA: BD3F BC04
+;------------------------- end -------------------------
+

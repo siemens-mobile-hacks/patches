@@ -1,0 +1,21 @@
+;X75v100
+;ZX Spectrum эмулятор
+;ZX Spectrum emulator
+;(c) cbn
+;(r) Dimens+
+;Version: 0.77
+;PatchID: 5966
+;Details: https://patches.kibab.com/patches/details.php5?id=5966
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=z80_077.rar
+
+/*
+Z80 ZX Spectrum эмулятор 
+*/
+Z80 ZX Spectrum эмулятор
+Скачать приложенный архив и распаковать его в папку 4:\ZBin\Z80
+В extension.cfg добавить строки:
+z80:4:\ZBin\z80\z80.elf
+sna:4:\ZBin\z80\z80.elf
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;CX75v25
+;Меню выбора дисков и отображение скрытых файлов и папок
+;Disk selection menu
+;(c) SiNgle
+;Version: 
+;PatchID: 3505
+;Details: https://patches.kibab.com/patches/details.php5?id=3505
+/*
+
+*/
+03D9738: 0900000A 000055E3
+03D9794: 3534 2000
+;------------------------- end -------------------------
+

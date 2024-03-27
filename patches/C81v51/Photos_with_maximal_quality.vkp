@@ -1,0 +1,16 @@
+;C81v51
+;Фотографии с максимальным качеством
+;Photos with maximal quality
+;(c) SiNgle
+;(p) den11111
+;Version: 
+;PatchID: 7333
+;Details: https://patches.kibab.com/patches/details.php5?id=7333
+/*
+
+*/
+0206A88: 0000DDE5 0200A0E3
+0206A98: 0000DD05 0200A0E3
+
+;------------------------- end -------------------------
+

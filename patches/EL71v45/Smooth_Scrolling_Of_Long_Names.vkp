@@ -1,0 +1,15 @@
+;EL71v45
+;Плавный скроллинг длинных названий и имен
+;Smooth Scrolling Of Long Names
+;(c) SiNgle
+;(p) 1allen
+;Version: 
+;PatchID: 7934
+;Details: https://patches.kibab.com/patches/details.php5?id=7934
+/*
+
+*/
+0C4297C: D00700002C01 120200002A00
+0C4ECF4: D00700002C01 120200002A00
+;------------------------- end -------------------------
+

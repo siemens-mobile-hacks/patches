@@ -1,0 +1,15 @@
+;S65v58
+;Запуск функций с помощью *# кодов
+;Running functions with *# codes
+;(c) empeka
+;Version: 2.1
+;PatchID: 1274
+;Details: https://patches.kibab.com/patches/details.php5?id=1274
+/*
+Врезка к патчу 1270
+
+Необходимо ставить API-патч и его врезку.
+*/
+169EB80: 0655021951700522 004B9847,0xA0FC4701 ; S65v58
+;------------------------- end -------------------------
+

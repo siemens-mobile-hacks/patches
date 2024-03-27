@@ -1,0 +1,28 @@
+;S45iv4
+;Изменить FR/EFR/HR в *#06# на ваш текст 
+;Change FR/EFR/HR to your text
+;(c) PawelW
+;(p) trustkill
+;Version: 
+;PatchID: 10691
+;Details: https://patches.kibab.com/patches/details.php5?id=10691
+/*
+Бесполезный патч, но приятно в этом месте видеть свое имя.
+*/
+; Firmware: S-ME45i v04
+; Author: trustkill
+; Release: 31.12.2005 by PawelW for SL45i v56
+; Ported to S-ME45i v04: 27.04.2006
+
+; Press *#06# and left softkey. You see FR/EFR/HR. With this patch
+; you can change FR/EFR/HR to any 9 ASCII character text
+
+; This example changes "FR/EFR/HR" to "TRUSTKILL"
+
+5BB77: 4652 5452 ; FR -> TR
+5BB72: 2F454652 5553544B ; /EFR -> USTK
+5BB6E: 2F4852 494C4C ; /HR -> ILL
+
+; ASCII table is here http://www.asciitable.com/
+;------------------------- end -------------------------
+

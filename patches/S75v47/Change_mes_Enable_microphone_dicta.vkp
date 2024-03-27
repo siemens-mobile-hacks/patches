@@ -1,0 +1,29 @@
+;S75v47
+;Редактирование сообщения "Включить микрофон? в диктофоне
+;Change message "Enable microphone?" in dictaphone
+;(c) Patch made by "Smelter" © avkiev
+;(r) johnnyz
+;Version: 
+;PatchID: 10293
+;Details: https://patches.kibab.com/patches/details.php5?id=10293
+/*
+Редактирование сообщения  "Включить микрофон?" => "Вкл. 
+матюгальник?"
+
+Заметил, что при запуске записей всегда спрашивает  "Включить микрофон?". Долго не мог понять, что бы это значило... Всегда жал "нет". А теперь вдруг понял, что это телефон спрашивает, тихонечко воспроизводить или в режиме громкой связи... Места для нормальной фразы оказалось мало, пришлось писать такую. Кому не нравится, может сам ручками поменять. Но зато хоть какой-то смысл появился в этом вопросе.
+
+English: In english and other languages, as is easy to see, this question is right "Use loudspeaker?", so this patch can not be useful for you, dear foreign colleagues.
+*/
+; S75 v47 lg3 - Patch made by "Smelter" © avkiev
+; http://avkiev.kiev.ua/Siemens/Smelter/Smelter.htm
+;********************************************************************************
+
+;Редактирование сообщения  7 : 0063D  "Включить^микрофон?" => "Вкл.^матюгальник?"
+
+17A8F2E: D092D0BAD0BBD18ED187D0B8D182D18C0AD0BCD0B8D0BAD180D0BED184D0BED0BD3F00 D092D0BAD0BB2E0DD0BCD0B0D182D18ED0B3D0B0D0BBD18CD0BDD0B8D0BA3FFFFFFF00
+
+;********************************************************************************
+
+
+;------------------------- end -------------------------
+

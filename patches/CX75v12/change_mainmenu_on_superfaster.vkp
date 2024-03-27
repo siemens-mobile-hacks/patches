@@ -1,0 +1,17 @@
+;CX75v12
+;Замена меню на супербыстрое
+;Change mainmenu on superfaster
+;(c) SiNgle
+;(p) 1nvisible
+;Version: 1.0
+;PatchID: 613
+;Details: https://patches.kibab.com/patches/details.php5?id=613
+/*
+Замена главного меню на супербыстрое.
+
+Пункт меню "Спис. Вызовов" - "Время/Стоимость" вырубает телефон
+
+*/
+04B1184: 476232A0 41E82BA0
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;M55v11
+;Стрелка вправо -> Ссылки
+;Right arrow -> any function
+;(c) SiNgle
+;(p) AlexSid
+;Version: 
+;PatchID: 5184
+;Details: https://patches.kibab.com/patches/details.php5?id=5184
+/*
+Список ссылок 5176.
+English: Functions list 5176.
+*/
+0D5A9D: 2DE69B 6CFE78 ;Будильник (или любая ссылка из списка)
+0D5AA3: 20 00
+0D5B24: 305C 9C5A
+
+;------------------------- end -------------------------
+

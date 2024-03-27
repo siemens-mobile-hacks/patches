@@ -1,0 +1,26 @@
+;CX75v13
+;Blinker
+;Blinker
+;(c) benj9
+;(r) 1nvisible, avkiev, BuG, Chaos
+;(p) Simensovod
+;Version: 3-MP
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=2194
+;PatchID: 1398
+;Details: https://patches.kibab.com/patches/details.php5?id=1398
+/*
+Данный патч является врезкой к патчу 1396
+Blinker on missed events*, net traffic speed, net lost & boot sfx to keypad and/or screen
+Blinks: 1x by 1 missed event, 2by2 events, 3by3 events, dynamic sweep blinker if more events.
+* missed events are understood as the number of uncommitted elements of the new message inbox
+(!) masterpatch required. function lib numbers: 2, 8, 77, 81, 228 required
+Официальный канал обсуждения патчей на jabber.ru патчи@conference.jabber.ru
+*/
+081AA70: 0070A0E1 66071FEB
+
+#pragma enable old_equal_ff
+0FDCCDC: 300200A8                    ; ---A
+0FDCCE0: 5C1741A834B54CA860FC4CA8    ; BCD
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,20 @@
+;SL75v52
+;Удалить софт-кнопки с экрана
+;Remove soft keys from MainScreen
+;(c) SiNgle, AsteriX
+;(r) BuG
+;(p) kiREALlov
+;Version: 2
+;PatchID: 8153
+;Details: https://patches.kibab.com/patches/details.php5?id=8153
+/*
+(i) BuG: corrected left soft key functionality on missed event and timer/stopwatch positioning.
+*/
+02FFA14: 2DD1 0028 ; always shift down timer/stopwatch
+02FFAEC: 1AD1 0028 ; always shift down timer/stopwatch
+;02FFA14: D1 E0 ; or never shift down timer/stopwatch
+;02FFAEE: D1 E0 ; or never shift down timer/stopwatch
+030016A: F0F02AEB002806D117203064F063 1720786438649EDF002804D11720
+0300215: D0 E0 ; remove missed event softkey image
+;------------------------- end -------------------------
+

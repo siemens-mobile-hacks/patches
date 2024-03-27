@@ -1,0 +1,16 @@
+;S75v52
+;Проговаривание текущего времени
+;Spell current time
+;(c) avkiev
+;(r) den11111
+;(p) SiNgle, _caine (i) -=(Kad)=-
+;Version: 6.1
+;PatchID: 8317
+;Details: https://patches.kibab.com/patches/details.php5?id=8317
+/*
+
+*/
+0426CB0: "VOICE_MSGCHANGE",00,0xA032DFEF "VOICE_MSGCHANGE",00,0xA0063001
+0346DF0: 76CAFCEBB000C4E1 BF0000EF0000A0E1
+;------------------------- end -------------------------
+

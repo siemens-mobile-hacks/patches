@@ -1,0 +1,14 @@
+;C55v24
+;Включение Инженерного меню
+;Enable Developer Menu
+;(c) avkiev
+;Version: 
+;PatchID: 2401
+;Details: https://patches.kibab.com/patches/details.php5?id=2401
+/*
+Не требует код на SIM-карте. 
+Чтобы зайти в инженерное меню необходимо нажать # в главном меню.
+*/
+11CAD4: 2D 0D
+;------------------------- end -------------------------
+

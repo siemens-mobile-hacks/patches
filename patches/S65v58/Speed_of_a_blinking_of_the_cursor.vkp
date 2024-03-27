@@ -1,0 +1,13 @@
+;S65v58
+;Скорость мигания курсора
+;Speed of a blinking of the cursor
+;(c) SiNgle
+;Version: 
+;PatchID: 9072
+;Details: https://patches.kibab.com/patches/details.php5?id=9072
+/*
+
+*/
+09298C0: 2C01 8003
+;------------------------- end -------------------------
+

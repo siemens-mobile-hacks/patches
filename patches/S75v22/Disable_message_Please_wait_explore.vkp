@@ -1,0 +1,13 @@
+;S75v22
+;Убрать сообщение "Пожалуйста подождите" в эксплорере
+;Disable message "Please wait" in explorer
+;(c) SiNgle
+;Version: 
+;PatchID: 1777
+;Details: https://patches.kibab.com/patches/details.php5?id=1777
+/*
+Отключение сообщения "Пожалуйста подождите" при открытии папок в эксплорере.
+*/
+052BEEA: 03D1 03E0
+;------------------------- end -------------------------
+

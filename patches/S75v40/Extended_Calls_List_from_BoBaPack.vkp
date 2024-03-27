@@ -1,0 +1,15 @@
+;S75v40
+;Расширенный список вызовов из BoBaPack
+;Extended Calls List from BoBaPack
+;(c) BoBa
+;(r) RainMaker AKA Shadow®
+;Version: 
+;PatchID: 4496
+;Details: https://patches.kibab.com/patches/details.php5?id=4496
+/*
+Врезка для патча sw40: http://patches.kibab.com/patches/details.php5?id=4495
+*/
+03EE624: 71215EA0 01FE06A0 ;sw40
+
+;------------------------- end -------------------------
+

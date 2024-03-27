@@ -1,0 +1,22 @@
+;CX70v56
+;Вибра в момент начала разговора
+;Vibrate shortly after connection
+;(c) SiNgle
+;(p) starter48
+;Version: 1.21
+;PatchID: 8099
+;Details: https://patches.kibab.com/patches/details.php5?id=8099
+/*
+Режим включается одновременно с галкой в Меню-2-5-5-4 или 2-5-4-3 (Авт.Индикац.).
+При входящих не вибрирует.
+Подпрограмма переведена в режим thumb.
+*/
+0171AA0E: 18F0C0E9 83F077FF
+#pragma enable old_equal_ff
+0179E900: 00B5084B9847002809D1074B01209847
+0179E910: 022804D1054B2F2002210122984794F7
+0179E920: 38EA00BD9BCEB9A06B9D25A1249C95A0
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

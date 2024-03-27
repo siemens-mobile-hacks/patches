@@ -1,0 +1,17 @@
+;S75v47
+;Изменение прогрессбара в медиаплеере
+;Change progressbar in mediaplayer
+;(c) SiNgle
+;(p) SimaFish
+;Version: 
+;PatchID: 8420
+;Details: https://patches.kibab.com/patches/details.php5?id=8420
+/*
+Формат: x1,y1,x2,y2
+Format: x1,y1,x2,y2
+*/
+08CA12C: 30008B0053009500 1200960072009A00 ; полоса
+08CA134: 30008B0053009000 1200960072009A00 ; фон
+08CA13C: 3000910053009600 1200960072009A00 ; контур
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M81v47
+;Отключить загрузку FlexMenu при включении телефона
+;Disable FlexMenu load on startup
+;(c) Miha_r
+;(p) Barracuda
+;Version: 
+;PatchID: 9044
+;Details: https://patches.kibab.com/patches/details.php5?id=9044
+/*
+
+*/
+09F9FDC: 04 00
+;------------------------- end -------------------------
+

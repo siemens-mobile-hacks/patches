@@ -1,0 +1,26 @@
+;M75v13
+;Фото на весь экран при входящем звонке v2
+;Enlarge incoming call photo v2
+;(c) SiNgle
+;(p) Gurza
+;Version: 
+;PatchID: 726
+;Details: https://patches.kibab.com/patches/details.php5?id=726
+/*
+Фото на весь экран при входящем звонке
+*/
+
+;!Для наилучшего отображения размер фото должен быть 132х176
+0517AEC: 04 00
+02A6654: 19 00
+
+;* Убрать фон из под иконок - наилучшее отображение фотки * 
+02A8C9F: F03AFB 280028 ;Net
+02A9065: F057F9 280028 ;Iconbar
+02A9151: F0E1F8 280028 ;Battery
+02A8BE9: F095FB 280028 ;Charge Indicator (Switched-Off Mode) 
+
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

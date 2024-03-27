@@ -1,0 +1,54 @@
+;E71v45
+;200 смс в памяти телефона 
+;200 SMS in phone memory 
+;(c) ILYA_ZX 
+;(r)  Evgr, funMarkus
+;(p) LazyC0DEr 
+;Version: 
+;PatchID: 10692
+;Details: https://patches.kibab.com/patches/details.php5?id=10692
+/*
+
+*/
+;200 SMS in phone memory
+;(c) ILYA_ZX
+;(r) LazyC0DEr
+;(p) Evgr, funMarkus
+;E71v45
+
+;!!! Warning! All SMS in phone memory will be deleted! !!!
+
+;1. Rename SMS.dat, EMS_Admin.dat and WB.dat in SMS.da_, EMS_Admin.da_, WB.da_
+;2. Apply patch
+;3. Delete SMS.da_, EMS_Admin.da_, WB.da_
+/*
+
+Внимание! Все SMS с памяти телефона будут удалены.
+
+
+BETA ВЕРСИЯ 
+Устанавливать четко по инструкции!!! Все имеющиеся смс после установки патча будут удалены!!! 
+1. Переименовать файлы в каталоге 0:/system/sms/ SMS.dat, EMS_Admin.dat and WB.dat в SMS.da_, EMS_Admin.da_, WB.da_ 
+2. Установть патч 
+3. Удалить SMS.da_, EMS_Admin.da_, WB.da_
+
+
+*/
+
+
+
+
+
+
+0937D20: 8A45 148B
+093811C: 4C1F 3E4E
+09CB424: F0B5 2C4C
+0FE268E: 64 C8
+0AAC33A: 64 C8
+0AAC3A8: 64 C8
+0AAC26C: 64 C8
+0AAC2D4: 64 C8
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

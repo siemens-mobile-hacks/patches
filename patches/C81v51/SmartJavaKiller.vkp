@@ -1,0 +1,23 @@
+;C81v51
+;Запуск ява-машины при старте 1го мидлета
+;Run java-machine with the start of 1st midlet
+;(c) @ndreS/PRM
+;(r) Miha_r, DronSPB
+;(p) dimonp25
+;Version: 
+;PatchID: 9110
+;Details: https://patches.kibab.com/patches/details.php5?id=9110
+/*
+
+*/
+09FA6BC: 300F03EB 8FD4D9FA 
+09F0F94: F02018EB C046C046
+
+;09FA650: 04 00 ; если нужна двуявность, то расскоментируйте (отключение загрузки FlexMenu)
+
+#pragma enable old_equal_ff 
+006F900: 01B506480478FB2C03D101BC024CA047 
+006F910: 00BDFB24047001BD,0xA0ABE384,0xAC000080 
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

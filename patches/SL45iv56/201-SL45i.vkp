@@ -1,0 +1,41 @@
+;SL45iv56
+;SAC. Выбираемые аналоговые часы
+;SAC. Selectable Analog Clock
+;(c) Naransula
+;Version: 
+;PatchID: 1898
+;Details: https://patches.kibab.com/patches/details.php5?id=1898
+/*
+Делает выбираемым аналоговые часы.
+
+
+Created: August 8, 2004
+
+Патч №201 с http://patch.oslik.ru/SL45_RU
+*/
+212364: DAEF0E00 DAE066BD
+
+0x40BD66: FFFFFFFF 88C0D740
+0x40BD6A: FFFFFFFFFFFFFFFF 3600F2FC6E099AFC
+0x40BD72: FFFFFFFFFFFFFFFF 030098C0FAE086BD
+0x40BD7A: FFFFFFFFFFFF 98C0FAE080BD
+0x40BD80: FFFFFFFF DAC16E29
+0x40BD84: FFFF DB00
+0x40BD86: FFFFFFFF DAEF0E00
+0x40BD8A: FFFF DB00
+
+
+;Выбираются через Приложение - Профиль 3 - 1 пункт (функция 33)
+
+;для Профиля 1 раскоментировать:
+;0x40BD6A:36 0E
+;0x40BD6E:6E09 423A
+
+;для Профиля 2 раскоментировать:
+;0x40BD6A:36 36
+;0x40BD6E:6E09 6C09
+
+;Номер пункта;
+;0x40BD73: 00 ; номер_пункта - 1
+;------------------------- end -------------------------
+

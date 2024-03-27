@@ -1,0 +1,15 @@
+;M81v51
+;Настройка подсветки шагом в 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(p) RaiF-03
+;Version: 
+;PatchID: 9509
+;Details: https://patches.kibab.com/patches/details.php5?id=9509
+/*
+
+*/
+33F2E0: 0A 05
+33F2E6: 0A 05
+;------------------------- end -------------------------
+

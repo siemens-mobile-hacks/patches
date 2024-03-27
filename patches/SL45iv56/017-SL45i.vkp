@@ -1,0 +1,15 @@
+;SL45iv56
+;Отключение запроса "Самолёт"
+;Turn off Aeroplane Check
+;(c) RizaPN
+;Version: 
+;PatchID: 1547
+;Details: https://patches.kibab.com/patches/details.php5?id=1547
+/*
+Отключает запрос на подтверждение "Самолёт" при включении телефона.
+
+Патч №017 с http://patch.oslik.ru/SL45_RU
+*/
+4522F2: 3D 0D
+;------------------------- end -------------------------
+

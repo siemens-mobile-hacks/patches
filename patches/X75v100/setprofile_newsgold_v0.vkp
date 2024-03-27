@@ -1,0 +1,45 @@
+;X75v100
+;SetProfile - смена профиля при запуске эльфа
+;SetProfile - elfs for profiles changing
+;(c) gaa
+;Version: 0
+;PatchID: 6761
+;Details: https://patches.kibab.com/patches/details.php5?id=6761
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=setprofile_newsgold_v0.zip
+
+/*
+Russian:
+Предлагаю вашему вниманию несколько тупых по коду(вызывается всего одна функция - SetProfile()) :) , но вполне юзабельных эльфов.
+
+Порядок действий:
+1. Распаковываем архив в 0:\ZBin\Profiles\ (или 4:\ZBin\Profiles\)
+2. Для смены профиля запускаем соответствующий эльф из этого каталога.
+3. Если хочется автоматизировать процесс - ставим TimeMan и меняем его конфиг:
+;утро. шестой профиль - жужжалка
+7:01 0:\ZBin\profile\6.elf
+;после работы - нормальный режим
+18:00 0:\ZBin\profile\1.elf
+;ночь - тихий режим
+22:00 0:\ZBin\profile\2.elf
+
+Таким образом получается хорошая замена патча с автоматической сменой профиля, которого мне так не хватало в 75 серии :)
+
+English:
+There are some stupid elfs for changing profiles.
+
+1. Unpack archive to 0:\ZBin\Profiles\ (or 4:\ZBin\Profiles\)
+2. Run corresponding elf to change profile.
+3. To automate profile changing install TimeMan and correct its profile.
+Example:
+;before work. six profile(vibration)
+7:01 0:\ZBin\profile\6.elf
+;after work - normal mode
+18:00 0:\ZBin\profile\1.elf
+;night. more silent mode
+22:00 0:\ZBin\profile\2.elf
+
+PS. There are full-functional replacement for patch "automatic change profile" in x55-series
+*/
+;never mind to download attachment :)
+;------------------------- end -------------------------
+

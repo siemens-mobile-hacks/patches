@@ -1,0 +1,29 @@
+;X75v100
+;Звук при запросе на передачу данных
+;Sound on data transfer request
+;(c) -=(Kad)=-
+;Version: 1-BASE
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7752
+;PatchID: 7625
+;Details: https://patches.kibab.com/patches/details.php5?id=7625
+/*
+Воспроизводит звук при запросе на передачу данных
+*/
+#pragma enable old_equal_ff
+006E800: 05230022FF210902FF312520FFB50948
+006E810: C4DF09D0071C7878B9787A68FB7898DF
+006E820: 387AFF2800D033DFFFBC08BC04331847
+
+006E830: E4D3C2B115AD00000000000000000000,"\
+{p=`Sound on data transfer request` id=ad15 ver=1}\
+{c typ `SMS sound+vibration`=0x0F `SMS only sound`=0x15 `Accu low power`=0x1E `Camera sound`=0x1C `No sound`=0xFF}\
+First sound settings\
+{1 h `Sound №` v=90}","\
+{2 b Frequency v=10}","\
+{4 ms Duration v=45}","\
+{3 cb `Play if vibra off` v=1}","\
+{8 o `Second sound` c=typ v=0x0F}","\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

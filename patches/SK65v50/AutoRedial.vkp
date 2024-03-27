@@ -1,0 +1,17 @@
+;SK65v50
+;Автодозвон постоянно с заданной паузой
+;AutoRedial forever with selected pause
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 2498
+;Details: https://patches.kibab.com/patches/details.php5?id=2498
+/*
+
+*/
+075C194: A068 0020
+075C1BD: 30 20
+09224B8: 05 0A ;пауза (0A=10 секунд)
+
+;------------------------- end -------------------------
+

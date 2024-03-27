@@ -1,0 +1,28 @@
+;S68v47
+;Увеличение фото при звонке
+;Large photo in call
+;(c)  SiNgle
+;(p)  klaud
+;Version: 
+;PatchID: 6573
+;Details: https://patches.kibab.com/patches/details.php5?id=6573
+/*
+Предыдущие значения в патче от Belarus -  кому нравится
+*/
+002690B4: 33 57 ;photo size
+
+
+003F653C: 08 00
+
+003F6318: 63 6d ;7a ; outcall_y_name
+003F6334: 75 7a ;8a ; outcall_y_phonenum
+003F636C: 1B 00 ; outcall_y_blankarea1
+003F63BA: 2d 16 ; incall_photo_y
+003F616E: 2d 16 ; outcall_photo_y
+
+003F6524: 63 6d ;7a ; incall_y_name
+003F6540: 75 7a ;8A ; incall_y_phonenum
+003F6508: 1B 00 ; incall_y_blankarea1
+
+;------------------------- end -------------------------
+

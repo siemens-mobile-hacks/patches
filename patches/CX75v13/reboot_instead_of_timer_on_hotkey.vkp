@@ -1,0 +1,13 @@
+;CX75v13
+;Перезагрузка вместо таймера на горячей кнопке
+;Reboot instead of timer on hotkey
+;(c) ThE TrIFoN
+;Version: 
+;PatchID: 1000
+;Details: https://patches.kibab.com/patches/details.php5?id=1000
+/*
+
+*/
+04B0DF4: 695F32A0 187EA9A0
+;------------------------- end -------------------------
+

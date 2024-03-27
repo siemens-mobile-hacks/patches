@@ -1,0 +1,14 @@
+;EL71v41
+;Отключение звука "Сеть найдена"
+;Disable ringtone "Net found" (3*beep)
+;(c) avkiev
+;(p) Siemann
+;Version: 
+;PatchID: 7125
+;Details: https://patches.kibab.com/patches/details.php5?id=7125
+/*
+
+*/
+0215A24: 5C03 FFFF
+;------------------------- end -------------------------
+

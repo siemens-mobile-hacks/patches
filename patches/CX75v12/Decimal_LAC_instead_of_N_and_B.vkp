@@ -1,0 +1,21 @@
+;CX75v12
+;Десятичный LAC вместо N и B в списке соседних сот вместо ENIP монитора
+;Decimal LAC instead of N and B in neighbour list instead of ENIP monitor
+;(c) слава Богу
+;(r) SiNgle
+;(p) Golomeen
+;Version: 1.0
+;PatchID: 536
+;Details: https://patches.kibab.com/patches/details.php5?id=536
+/*
+Десятичный LAC вместо N и B в списке соседних сот вместо ENIP монитора, комбинируется с "Десятичный CID вместо C1 и C2 в списке соседних сот". Переключаться в режим CID ко клавишам 2 <-> 0.
+*/
+0D079E5: 4E2042 4C4143
+
+032A7B0: 0E 0D
+032A88A: 1622281C 0E26A9E7
+049F7AC: E35EB1A0 81A6B3A0
+0B3A68A: 002908D1 0E2E08D0
+0B3A6E6: 0122211C0B31F0789DF1D0E90122211C0D313079 203EF08B20360522002800280522211C0B310028
+;------------------------- end -------------------------
+

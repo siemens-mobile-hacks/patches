@@ -1,0 +1,15 @@
+;C75v24
+;Отключение AUMA и UDIAL Дебагеров
+;Disable AUMA And UDIAL Debug
+;(c) 1nvisible
+;Version: 
+;PatchID: 3526
+;Details: https://patches.kibab.com/patches/details.php5?id=3526
+/*
+
+*/
+0343864: F0412DE9 1EFF2FE1 ; AUMA Debug
+081DB48: 0FB4 7047 ; UDIAL Debug
+
+;------------------------- end -------------------------
+

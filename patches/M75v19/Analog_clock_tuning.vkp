@@ -1,0 +1,20 @@
+;M75v19
+;Настройка аналоговых часов
+;Analog clock tuning
+;(c) SiNgle
+;(p) Geka
+;Version: 1
+;PatchID: 4783
+;Details: https://patches.kibab.com/patches/details.php5?id=4783
+/*
+Настраивается цвет часовой и минутной стрелки и их длина.
+English:You can adjust color and length of hour and minute arrows
+
+*/
+2CFD54: 01 04 ; Цвет часовой стрелки (Hour hand color)
+2CFCF4: 01 04 ; Цвет часовой стрелки вторая линия(для жирности)(Hour hand second line color (bold))
+2CFC44: 01 06 ; Цвет минутной стрелки (Minute hand color)
+2CFB82: 9E 80 ; Длина стрелок (Hands length)
+
+;------------------------- end -------------------------
+

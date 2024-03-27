@@ -1,0 +1,13 @@
+;S75v31
+;Отключить MMI-logging
+;Disable MMI-logging
+;(c) SiNgle
+;Version: 
+;PatchID: 2752
+;Details: https://patches.kibab.com/patches/details.php5?id=2752
+/*
+
+*/
+001F7DE2: 041C 70BD
+;------------------------- end -------------------------
+

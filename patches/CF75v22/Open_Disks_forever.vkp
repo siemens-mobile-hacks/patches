@@ -1,0 +1,16 @@
+;CF75v22
+;Открыть диски навсегда.vkp
+;Open Disks forever
+;(c) SiNgle
+;Version: 
+;PatchID: 2998
+;Details: https://patches.kibab.com/patches/details.php5?id=2998
+/*
+
+*/
+;* Открыть диски навсегда ** Open Disks forever * © SiNgle, § Smelter
+08759BC: 02 03
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

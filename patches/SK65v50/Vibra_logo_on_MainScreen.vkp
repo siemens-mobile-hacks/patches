@@ -1,0 +1,17 @@
+;SK65v50
+;Значёк Вибры на главном экране
+;Vibra logo on MainScreen
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 2479
+;Details: https://patches.kibab.com/patches/details.php5?id=2479
+/*
+!Используется значок *!* как значек вибры, можете нарисовать что хотите сами
+
+*/
+02A737C: 09D0 0028
+044A928: 2D0A76 979031
+
+;------------------------- end -------------------------
+

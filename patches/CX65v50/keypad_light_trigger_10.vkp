@@ -1,0 +1,39 @@
+;CX65v50
+;Переключатель режима подсветки клавиатуры
+;Keypadlight trigger
+;(c) benj9
+;(p) AsteriX
+;Version: 1.0
+;PatchID: 602
+;Details: https://patches.kibab.com/patches/details.php5?id=602
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx65v50&f=keypad_light_trigger_10.rar
+
+/*
+Патч обновлён, исправлены ошибки порта.
+Меняет режим подсветки клавы в соответствии с выбранным профилем; пользователь может определять профили и задержку.
+!Необходимо установить патч * Мастер-Патч + АвтоЗагрузчик ** Master-Patch + AutoLoader * (601).
+Настройка патча - файл "keylight.ini" (прикреплён к патчу).
+*/
+0B696F6: 5EF0E2E8 74F183FE
+#pragma enable old_equal_ff
+0CDE400: 00B5FCB4022011498847012801D00020
+0CDE410: 07E002B40E48804702BC0006000E4018
+0CDE420: 0078FCBC022804D0012804D0032804D0
+0CDE430: 06E0002204E02D2202E001390B781B02
+0CDE440: 01200121E9F63AEA00BDFFFF41B865A1
+0CDE450: E59F8CA0
+#pragma disable old_equal_ff
+
+;Режимы подсветки (Keypad light modes):
+;00 = обычный (normal)
+;01 = подсветка всегда включена (keypadlight always on)
+;02 = подсветка всегда выключена (keypadlight always off)
+;03 = задержка гашения подсветки (keypadlight delayed afterburner)
+; Задержка для режима 3 (Delay for mode 3)
+;00 = обычный без задержки (normal/no_delay)
+;1A = несколько секунд (some seconds)
+;FF = несколько минут (some minutes delay)
+
+
+;------------------------- end -------------------------
+

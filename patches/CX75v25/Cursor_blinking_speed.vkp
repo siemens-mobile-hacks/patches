@@ -1,0 +1,13 @@
+;CX75v25
+;Скорость мигания курсора
+;Cursor blinking speed
+;(c) SiNgle
+;Version: 
+;PatchID: 3500
+;Details: https://patches.kibab.com/patches/details.php5?id=3500
+/*
+
+*/
+04A2400: 2C01 8003
+;------------------------- end -------------------------
+

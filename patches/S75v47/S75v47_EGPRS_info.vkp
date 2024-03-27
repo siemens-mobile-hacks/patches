@@ -1,0 +1,26 @@
+;S75v47
+;Показывать информацию об объеме данных, переданных через  EGPRS, в подстроке "Информ. EGPRS" (Настройки->Перед.данн.)
+;Display the amount of data that has been transferred via EGPRS in substring "EGPRS info" (Settings->Connectivity)
+;(c) Evgr
+;Version: 
+;PatchID: 10590
+;Details: https://patches.kibab.com/patches/details.php5?id=10590
+/*
+
+*/
+;SWI!
+
+04210FC: 00000000 0xA13D3650 ; main menu
+0441038: 00000000 0xA13D3650 ; native menu
+
+#pragma enable old_equal_ff
+13D3650: 70402DE920D04DE20140A0E16F0000EF
+13D3660: 700000EF000090E514108DE298F7D5EB 
+13D3670: 0010A0E30400A0E1260100EF14308DE2
+13D3680: 10209FE510108FE20400A0E1240100EF
+13D3690: 20D08DE27080BDE815E0000025632573
+13D36A0: 00
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,22 @@
+;C81v51
+;Перезагрузка вместо Клав. Заблок. в меню красной кнопки
+;Reload instead of Keylock in RedButtonMenu
+;(c) ThE TrIFoN
+;(p) dimonp25
+;Version: 
+;PatchID: 7519
+;Details: https://patches.kibab.com/patches/details.php5?id=7519
+/*
+
+*/
+;034F264: FDF7B5FB 17F72EEC ; Не отображать окно "Клава залочена"
+
+034F268: A8F062EE E4F6C8EC
+
+139B12C: 0x21CC 0x054B ; Keylock => Reload
+139B130: 0x21CC 0x054B ; Keylock => Reload
+
+02FDDA8: 1FD1 0028     ; принудительный запуск помощника, чтобы не стирались настроики интернета
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;CX75v13
+;Сжатие JPEG с максимальным качеством
+;Compress JPEG with max quality
+;(c) SiNgle
+;Version: 2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=5601
+;PatchID: 1280
+;Details: https://patches.kibab.com/patches/details.php5?id=1280
+/*
+Фотки в среднем по 300кб, максимально получилась фотка 499кб
+Возможны глюки!
+
+*/
+A897B0: 32 DC
+ABC520: 186D02 000003
+;------------------------- end -------------------------
+

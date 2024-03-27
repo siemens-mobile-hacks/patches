@@ -1,0 +1,17 @@
+;M65v58
+;Жирный шрифт меню
+;Bolt Font Menu
+;(c) SiNgle
+;Version: 
+;PatchID: 4446
+;Details: https://patches.kibab.com/patches/details.php5?id=4446
+/*
+По моему лучше смотрится......
+*/
+;(с)SiNgle
+;Жирный шрифт в меню
+;Bolt Font Menu
+
+091BCA4: 02 03 ; Список меню
+;------------------------- end -------------------------
+

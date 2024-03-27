@@ -1,0 +1,15 @@
+;C72v22
+;Не выключаться при разряженном аккум
+;Don't Turn Off When Battery Is Low
+;(c) benj9
+;(r) ThE TrIFoN
+;(p) Virusmater
+;Version: 2
+;PatchID: 7603
+;Details: https://patches.kibab.com/patches/details.php5?id=7603
+/*
+
+*/
+117C740: 18009FE50C0090E5DAA4FFEA 00009FE510FF2FE101DFFDA0
+;------------------------- end -------------------------
+

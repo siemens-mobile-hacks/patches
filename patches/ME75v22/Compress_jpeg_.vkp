@@ -1,0 +1,13 @@
+;ME75v22
+;Сжатие jpeg с максимальным качеством(100% instead of 75%)
+;Compress jpeg with maximum quality (100% вместо 75%)
+;(c) SiNgle
+;Version: 
+;PatchID: 2681
+;Details: https://patches.kibab.com/patches/details.php5?id=2681
+/*
+
+*/
+03D1728: 4B 64
+;------------------------- end -------------------------
+

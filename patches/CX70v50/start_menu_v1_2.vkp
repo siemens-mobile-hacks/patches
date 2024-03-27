@@ -1,0 +1,25 @@
+;CX70v50
+;Меню "Пуск"
+;"Start" menu
+;(c) KreN
+;(r) 1nvisible
+;Version: 1.2
+;PatchID: 2553
+;Details: https://patches.kibab.com/patches/details.php5?id=2553
+/*
+
+*/
+09435B0: EDF38EA0 AB71FCA0
+171840C: 696848888205920DFF3A 00498847,0xA0FC7141,C046
+
+#pragma enable old_equal_ff
+0FC7230: 0xA08EF3DB  
+0FC7234: 0xA08EF483
+0FC7238: 0xA08EFC95
+0FC723C: 0xA08EFCC3
+0FC7240: 0xA08EF441  
+0FC7244: 0xA08EF3C5 
+0FC7248: 0xA08EF3E5 
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;C60v27
+;Отсчёт количества оставшихся символов в текущем сегменте смс
+;Counting of a quantity of remained symbols in the current segment of sms
+;(c) Lalo
+;(r) Broken Brain, (§) =NeoSpb=, (m)ThE TrIFoN
+;(p) Snowm@n
+;Version: 
+;PatchID: 4348
+;Details: https://patches.kibab.com/patches/details.php5?id=4348
+/*
+вместо счетчика от 760/330(для юникода) до 0 выводится число символов,оставшееся до конца текущей SMS - 160/70(для юникода).
+*/
+291523: CEC4B8 836007
+291537: B84878 839A07
+
+630760: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8840DACEC4B8F6F80EFEF0A898E02D09
+630770: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46FA04018D0326FA04010D0EE6FE4200
+630780: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0D0846FA58028D0326FA58020D05E6FE
+630790: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 98005BEEF2FA0CFEDB00F0CAFAB84A78
+;------------------------- end -------------------------
+

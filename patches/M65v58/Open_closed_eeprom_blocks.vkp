@@ -1,0 +1,16 @@
+;M65v58
+;Открыть заблокированные блоки EEPROM
+;Open closed EEPROM blocks
+;(c) Skylord
+;Version: 
+;PatchID: 939
+;Details: https://patches.kibab.com/patches/details.php5?id=939
+/*
+Становятся доступны 6 скрытых блока (5008,5009,5077,5121,5122,5123)
+EN:
+6 hidden blocks (5008,5009,5077,5121,5122,5123) become active.
+*/
+125FFE8: 00 01
+
+;------------------------- end -------------------------
+

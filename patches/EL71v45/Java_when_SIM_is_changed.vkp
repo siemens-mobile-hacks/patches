@@ -1,0 +1,34 @@
+;EL71v45
+;Запуск мидлета при cмене SIM
+;Java when SIM is changed
+;(c) Fuchs
+;(r) SiNgle, avkiev, 1nvisible, Stitch, starfriend
+;(p) Zhek@, funMarkus
+;Version: 
+;PatchID: 8069
+;Details: https://patches.kibab.com/patches/details.php5?id=8069
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=el71v45&f=Java_when_SIM_is_changed.zip
+
+/*
+
+*/
+;066FD04: C046C046 92F19CED ; Раскоментировать, если установлен патч Сохранение списков при смене SIM 
+066FD04: 92F19CED 22F2D0EA
+
+08991A4: 3C3F786D6C2076657273696F6E3D2231 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+08991B4: 2E302220656E636F64696E673D224953 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+08991C4: 4F2D383835392D3122207374616E6461 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+08991D4: 6C6F6E653D226E6F223F3E0D0A3C2144 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+08991E4: 4F435459504520737667205055424C49 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+08991F4: 4320222D2F2F5733432F2F4454442053 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+#pragma enable old_equal_ff 
+
+08991A4: 0000A0E3FF7F2DE918008FE20030A0E3 
+08991B4: 0020A0E308409FE50FE0A0E114FF2FE1 
+08991C4: FFBFBDE8,0xA0ACB520
+08991CC: "2:\\smsalarm\\smsalarm.jar",0000 ;путь к мидлету, его можно поменять на любой другой. !Слэшей должно быть по два! 
+
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

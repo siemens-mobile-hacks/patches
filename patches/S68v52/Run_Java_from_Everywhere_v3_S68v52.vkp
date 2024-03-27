@@ -1,0 +1,15 @@
+;S68v52
+;Запуск Java Отовсюду v3
+;Run Java from Everywhere v3
+;(c) 1nvisible
+;(r) Feyman
+;(p) nikinet1
+;Version: 
+;PatchID: 10009
+;Details: https://patches.kibab.com/patches/details.php5?id=10009
+/*
+Пункт "Игры" в меню работает и после патча.
+*/
+85D3EF: 0A EA
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;EL71v45
+;Изменение времени подачи ежеминутного сигнала во время разговора
+;Change minute beep during call
+;(c) SiNgle
+;Version: 
+;PatchID: 7514
+;Details: https://patches.kibab.com/patches/details.php5?id=7514
+/*
+
+*/
+09B7142: 00 0i055 ; 55 sec
+;------------------------- end -------------------------
+

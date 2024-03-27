@@ -1,0 +1,15 @@
+;S65v58
+;Отключить "Подождите" при USSD Запросе
+;Disable "Please Wait" on USSD Request
+;(c) 1nvisible
+;(r) dimonp25
+;(p) Виктор89
+;Version: 
+;PatchID: 9180
+;Details: https://patches.kibab.com/patches/details.php5?id=9180
+/*
+
+*/
+016961DE: 0AF0CEF8 C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;SL75v52
+;Настройка подсветки шагом в 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(p) Dikobraz
+;Version: 
+;PatchID: 9201
+;Details: https://patches.kibab.com/patches/details.php5?id=9201
+/*
+Настройка подсветки шагом в 5%(или любая цифра в hex)
+*/
+0335594: 0A 05
+033559A: 0A 05
+;------------------------- end -------------------------
+

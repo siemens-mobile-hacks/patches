@@ -1,0 +1,42 @@
+;C72v22
+;Вибра в момент включения телефона
+;Vibra at the moment of turn on the phone 
+;(c) Evgr
+;Version: 
+;PatchID: 10627
+;Details: https://patches.kibab.com/patches/details.php5?id=10627
+/*
+срабатывает при включении, ребуте, рестарте телефона
+works when turn on, reboot, restart the phone 
+
+требует функций SWI 0x7C, 0x11D, 0x35C, 0x35D
+you need functions SWI 0x7C, 0x11D, 0x35C, 0x35D
+*/
+; SWI 0x7C, 0x11D, 0x35C, 0x35D
+
+/*
+срабатывает при включении, ребуте, рестарте телефона
+works when turn on, reboot, restart the phone 
+*/
+
+119EBEC: 0400A0E3 BB3FF0EB
+
+#pragma enable old_equal_ff
+0DAEAE0: 0E402DE91E10A0E30530A0E30020A0E3
+0DAEAF0: 0E008DE80030A0E35C209FE55C108FE2
+0DAEB00: 50009FE55C0300EF000050E30400000A ; 4 SWI_0x35C
+0DAEB10: 020000EF0A00A0E34C109FE544209FE5
+0DAEB20: A0070EEB0A00A0E37C0000EF0400A0E3 ; 0 BL A11309A8, ; 8 SWI_0x7C
+0DAEB30: 0E80BDE8FF402DE90000A0E37C0000EF ; C SWI_0x7C
+0DAEB40: 10009FE55D0300EF4410A0E304009FE5 ; 4 SWI_0x35D
+0DAEB50: 1D0100EFFF80BDE8,0xA8215070,0xA0DAEB34 ; 0 SWI_0x11D, 0xA8215070 freeRAM 0x44 bytes, will be zeroed
+0DAEB60: 564942524100000050670000,0xA0DAEB70
+0DAEB70: 952D76696272615F6FF3
+#pragma disable old_equal_ff
+
+0DAEAE4: 1E 1E ; vibra duration (1Eh ticks=30d ticks=30*4,6 msec=138 msec)
+0DAEB24: 0A 0A ; vibra power
+
+
+;------------------------- end -------------------------
+

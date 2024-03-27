@@ -1,0 +1,24 @@
+;A60v27
+;Удалить софт-кнопки с экрана
+; Remove soft-keys from MainScreen
+;(c) Rasp
+;(r) FFNevil
+;Version: 
+;PatchID: 293
+;Details: https://patches.kibab.com/patches/details.php5?id=293
+/*
+
+*/
+;A60v27
+;Удалить софт-кнопки с экрана
+;Портировано: Rasp
+ 
+6CA96C: 2D 0D 
+6CAA2A: 3D05 CC00 
+6CAB5C: 3D02 CC00 
+6CABA4: 0E 04 
+6CABBA: DA8C80E4 FA8C4CAD 
+6CB4A0: 3D0D CC00 
+6CB4AA: 3D08 CC00
+;------------------------- end -------------------------
+

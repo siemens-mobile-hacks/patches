@@ -1,0 +1,14 @@
+;S68v47
+;Открыть заблокированные блоки EEPROM
+;OpenHiddenEEPROM
+;(c) Skylord
+;(p) Frezzz
+;Version: 
+;PatchID: 6691
+;Details: https://patches.kibab.com/patches/details.php5?id=6691
+/*
+
+*/
+022D404: 00 01
+;------------------------- end -------------------------
+

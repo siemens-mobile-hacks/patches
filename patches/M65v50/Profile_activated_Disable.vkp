@@ -1,0 +1,14 @@
+;M65v50
+;Отключить Сообщение "Профиль Активизирован"
+; Disable message "Profile activated"
+;(c) 13.beta2
+;(p) Smelter
+;Version: 
+;PatchID: 1647
+;Details: https://patches.kibab.com/patches/details.php5?id=1647
+/*
+Отключает сообщение "Профиль Активизирован" при выборе профиля.
+*/
+09064C0: 2B1C 04E0
+;------------------------- end -------------------------
+

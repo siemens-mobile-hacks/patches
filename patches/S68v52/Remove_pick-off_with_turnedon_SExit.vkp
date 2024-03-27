@@ -1,0 +1,18 @@
+;S68v52
+;Убрать pick-off при включенном DevMenu->Exits->SExit патченного телефона
+;Remove pick-off of patched phone with turned on DevMenu->Exits->SExit
+;(c) Evgr
+;Version: 
+;PatchID: 10550
+;Details: https://patches.kibab.com/patches/details.php5?id=10550
+/*
+Remove pick-off of patched phone with turned on DevMenu->Exits->SExit
+*/
+; Убрать pick-off при включенном DevMenu->Exits->SExit патченного телефона
+; Remove pick-off of patched phone with turned on DevMenu->Exits->SExit
+; S68v52
+; © Evgr
+
+018F887: 0A EA 
+;------------------------- end -------------------------
+

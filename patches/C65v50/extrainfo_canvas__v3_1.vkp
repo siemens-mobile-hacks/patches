@@ -1,0 +1,73 @@
+;C65v50
+;Холст для Дополнительной Информации
+;Extra Info Canvas
+;(c) benj9
+;(r) avkiev, BuG
+;(p) KiRiK
+;Version: 3.1
+;PatchID: 845
+;Details: https://patches.kibab.com/patches/details.php5?id=845
+/*
+Патч является дополнением для патча "Дополнительная информация на главном экране v3 или v4" (см. зависимости).
+Перед выполнением патча "Доп.инфо" перерисовывает любое кол-во участков холста (очищает фон)
+- Определяет профили, в которых будет активен патч "Доп.инфо"
+- Имеет сквозной канал для вызова ещё одного патча продолжения
+ЗЫ. Всё это имеет смысл при прозрачном фоне либо главного экрана, либо картинок к "Доп.Инфо"
+
+EN:
+Draws as many as you like canvas regions (clears the background) before executing ExtraInfo-Patch
+- Configure in which profiles ExtraInfo-Patch is active
+- Have one more pass-thru call for another follow-up patch
+PS. There is sense to install this patch if you have either transparent mainscreen background or transparent ExtraInfo pictures.
+*/
+1) Установите патч * Дополнительная информация на главном экране v3\v4 *
+2) Определитесь с ключом профилей - в каких профилях вызывать "Доп.инфо"
+3) Выберите сколь угодно много участков холста (они будут затираться обычным содержанием главного
+экрана (обоями), чтобы предотвратить наложение цифр в "Доп.Инфо")
+Запись имеет вид "лев.Х, прав.Х, верх.У, ниж.У
+Можно сделать любое количество записей
+За последней записью поставьте FF, чтобы патч прекратил перерисовку холста
+4) Если не нужен запуск Третьего Патча, то на этом всё
+5) Установите тело Третьего Патча. Он будет запущен независимо от ключа профилей
+6) В строку Третий Патч занесите адрес тела, переставив байты в обратном порядке, и раскомментируйте её
+7) Раскомментируйте строку "активировать Третий Патч"
+ЗЫ. Всё это имеет смысл при прозрачном фоне либо главного экрана, либо картинок к "Доп.Инфо"
+*/
+16EA952: 26F055FB 051C0020 ; undo ExtraInfo-EntryPoint | отмена энтрипойнта "Доп.Инфо"
+16EA982: 1CF016EB F7F75DFB
+
+#pragma enable old_equal_ff
+16E2040: FFB5124880470327C74001200740012F
+16E2050: 14D10D4E3778FF2F0DD0F1780122009D
+16E2060: 00910192B278391C73780E98084CA047
+16E2070: 00950436EEE707488047C046C046C046
+16E2080: FFBC49F731F800BD,A0206EA1,69CC8CA0 ; -,-,Data,GetProfile
+16E2090: 8FAF6EA1,011071A1 ; DrawCanvas,ExtraInfo
+16E209C: FFFFFFFF ; Third Patch | Третий Патч
+
+;Data | Данные - настройте под себя
+16E20A0: 00,19,00,0A ; erase-region on the mainscreen: x-start, x-end, y-start, y-end
+; область стирания на гл.экране
+16E20A4: 64,84,00,10 ; more erase-regions ... | ещё область
+16E20A8: 32,52,99,A1 ; more erase-regions ... | ещё область
+16E20AC: 6F,74,99,A1 ; more erase-regions ... | ещё область
+16E20B0: FF ; after last erase-region place this END mark
+; за последней областью поставьте этот знак КОНЦА (FF)
+162B0E8: 004B1847,0xA125D831   ; Temporary link | Временный переход
+#pragma disable old_equal_ff
+
+16E2046: 03 0n0011111 ; profile key | ключ профилей
+; Here you can determine in which profile the ExtraInfo (and the Canvas function) will be active.
+; the "0" most left (next to the "n") says that ExtraInfo is NOT active in Profile 7
+; the "1" most right says that ExtraInfo is active in Profile 1
+; the in-between digits stand for Profile 6 - 2
+; so example "0n1010110" means, that Extrainfo is active in profiles 2,3,5,7
+; Здесь вы определяете, в каких профилях будет активен патч "Доп.Инфо" (и функция Холста)
+; Крайний слева ноль (справа от "n") означает, что "Доп.Инфо" НЕактивен в профиле 7
+; Крайняя справа единица означает, что "Доп.Инфо" активен в профиле 1
+; Цифры между ними относятся к профилям 6 - 2
+; К примеру "0n1010110" означает, что "Доп.Инфо" активен в профилях 2,3,5,7
+
+;16E207C: C046C046 06488047 ; activate ThirdPatch | активировать Третий Патч
+;------------------------- end -------------------------
+

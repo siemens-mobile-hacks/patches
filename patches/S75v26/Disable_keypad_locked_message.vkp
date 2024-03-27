@@ -1,0 +1,14 @@
+;S75v26
+;Убрать сообщение "Блокировка клавиатуры включена
+;Disable keypad locked message
+;(c) SiNgle
+;(p) Avkiev
+;Version: 
+;PatchID: 2451
+;Details: https://patches.kibab.com/patches/details.php5?id=2451
+/*
+
+*/
+01C3B94: F4F14AED C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;M75v19
+;Убрать Пункт "Справка" в Card-Explorer'е
+;Remove "Help" Item from Card-Explorer
+;(c) 1nvisible
+;(p) Geka
+;Version: 
+;PatchID: 4666
+;Details: https://patches.kibab.com/patches/details.php5?id=4666
+/*
+Smelter auto-patch
+=*Убрать Пункт "Справка" в Card-Explorer'е* *Remove "Help" Item from Card-Explorer* © 1nvisible
+170000000500000006=160000000500000006
+
+подправил
+*/
+04D902C: 17 16
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;CX70v56
+;Из любого места жмем ### и попадаем в главное меню
+;Goto mainmenu from anywhere by pressing ###
+;(c) SiNgle
+;(p) vmaxy202
+;Version: 
+;PatchID: 705
+;Details: https://patches.kibab.com/patches/details.php5?id=705
+/*
+Из любого места жмем ### и попадаем в главное меню.
+!!!Должен быть включен DevMenu и в пункте LOGAL\options - нажать Enable ### (Goto DevMenu\LOGAL\options and press Enable ###).
+ 
+*/
+0B8DDFC: 43F00DFC 6DF5AFF9 ;native menu
+;0B8DDFC: 43F00DFC 62F55DFA ;main menu 
+
+;------------------------- end -------------------------
+

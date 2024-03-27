@@ -1,0 +1,32 @@
+;SL45iv56
+;CLST1. Список звонков по зеленой кнопке
+;CLST1. Call List via GREEN button
+;(c) RizaPN
+;Version: 2
+;PatchID: 1708
+;Details: https://patches.kibab.com/patches/details.php5?id=1708
+/*
+Используется красная кнопка для доступа ко всем спискам. 
+Патч сначала идет в "набранные звонки", если пустой - идет 
+в "полученные звонки". 
+
+
+Release: December 18, 2003 (v1) 
+Update: December 20, 2003 (v2)
+
+Патч №115 с http://patch.oslik.ru/SL45_RU
+*/
+3B0502: DADE3656 DAC760DF 
+
+3E2DCA: DAE7AE61 DAC78EDF 
+
+27DF60: FFFFFFFFFFFFFFFF D7503700F3F2003A 
+27DF68: FFFFFFFFFFFFFFFF F7F2FF3909214923 
+27DF70: FFFFFFFFFFFFFFFF 8D01E102D7403700 
+27DF78: FFFFFFFFFFFFFFFF F7F2003A3D02FADE 
+27DF80: FFFFFFFFFFFFFFFF 045749213D02FADE 
+27DF88: FFFFFFFFFFFFFFFF 1656FADE3E56D750 
+27DF90: FFFFFFFFFFFFFFFF 3700F3F2FF39F7F2 
+27DF98: FFFFFFFFFFFFFFFF 003AFAE7AE61FFFF 
+;------------------------- end -------------------------
+

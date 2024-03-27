@@ -1,0 +1,17 @@
+;M55v10
+;Цифра 1 -> Java игра
+;Set Java application for 1 number
+;(c) SiNgle, Chaos
+;Version: 
+;PatchID: 1561
+;Details: https://patches.kibab.com/patches/details.php5?id=1561
+/*
+Игра или программа должна иметь путь и имя: A:\Java\Jam\Prog\Prog.jar
+
+*/
+0DB8AB: 20903648423D02 9FF005EA004AB9
+7F05F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FCFE05E6FD7C02E01EFA9178EA
+7F05FE: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 413A5C4A6176615C6A616D5C50726F67
+7F060E: FFFFFFFFFFFFFFFFFFFF 5C50726F672E6A617200
+;------------------------- end -------------------------
+

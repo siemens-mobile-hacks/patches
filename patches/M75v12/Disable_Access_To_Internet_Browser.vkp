@@ -1,0 +1,15 @@
+;M75v12
+;Отключить доступ к интернет-браузеру
+;Disable Access To Internet Browser
+;(c) KiRiK
+;Version: 
+;PatchID: 5352
+;Details: https://patches.kibab.com/patches/details.php5?id=5352
+/*
+
+*/
+04B0928: 4D5832A0 00000000
+04B08C0: 675832A0 00000000
+04B01D8: 936232A0 00000000
+;------------------------- end -------------------------
+

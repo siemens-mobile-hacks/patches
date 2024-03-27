@@ -1,0 +1,14 @@
+;C55v24
+;Разблокировка клавиатуры, дважды нажмите #
+;Unlock keyboard by double press #
+;(c) Delirium
+;(p) #LG#
+;Version: 
+;PatchID: 10626
+;Details: https://patches.kibab.com/patches/details.php5?id=10626
+/*
+
+*/
+565D7C: EA30245E EA30805D
+;------------------------- end -------------------------
+

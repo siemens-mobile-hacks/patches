@@ -1,0 +1,15 @@
+;C55v24
+;В_Flex_memory_полноценное_переименование_файлов_и_папок
+;valuable renaming it is file and the folders
+;(c) Joenka
+;Version: 
+;PatchID: 1204
+;Details: https://patches.kibab.com/patches/details.php5?id=1204
+/*
+Для урезанного ленгпака
+*/
+4A14E6: 00CE CC00          ; - выводим путь целиком
+4A10BC: 00C4 CC00          ; - сохраняем всю строку целиком
+59B1DC: DADB6EA1 E014CC00  ; - при редактировании все символы при нажатии '*' или '0'
+;------------------------- end -------------------------
+

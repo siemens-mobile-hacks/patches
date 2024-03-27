@@ -1,0 +1,30 @@
+;A50v12
+;Мигающая подсветка при входящем звонке
+;Blinker
+;(c) Delirium
+;Version: 
+;PatchID: 2188
+;Details: https://patches.kibab.com/patches/details.php5?id=2188
+/*
+подсветка мигает, когда все сигналы отключены или для всех сигналов задан "гудок"
+
+*/
+31AD0E: FACA2A5D FAF790F4
+37F490: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAF228F248402D2EDACE422448403D03
+37F4A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DACD00570D27DAD9AC5548432D06E600
+37F4B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2C00CC00F68E94332D1DE6002C00CC00
+37F4C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F3F294330811F7F2943347F20600FD12
+37F4D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DACAF807E6FD0057E6FECD0088E088D0
+37F4E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC9033E6FD2C00E6FE3200E00FDACD
+37F4F0: FFFFFFFFFFFFFFFF 62170804FACA2A5D
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+; Настройки:
+;37F49E: 3D 0D ; мигающая подсветка всегда, независимо от установок сигналов
+;37F4CC: 06 xx ; задержка включения подсветки
+; где хх в HEX>06, каждая единица равняется приблизительно одному гудку вызова
+;37F4EA: 3200 xxxx ; таймер выключения подсветки
+; где ххxx - время в миллисекундах/0.25 в HEX (байты поменять местами)
+; default 200ms => 200*0,25=50d=032h
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;CX70v50
+;Меню выбора языка ввода при нажатии Help (Инф. Т9)
+;Input language menu on Help key (Т9 info)
+;(c) SiNgle
+;(p)  AsteriX
+;Version: 
+;PatchID: 112
+;Details: https://patches.kibab.com/patches/details.php5?id=112
+/*
+Меню выбора языка ввода при нажатии Help(Инф. Т9).
+*/
+09FF17A: 784900227848 1BF70FFE80BD ;в MMS
+0AF1A42: 7DF797FF 29F6ABF9 ;в e-mail
+0A6FA82: FFF777FF ABF68BF9 ;в SMS
+
+;(i) KreN
+;Изменить левую софт-клавишу Справка->Язык
+;Change Left SoftKey Help->Language
+
+A5FF34: 75 46
+B57284: 75 46
+B60EA8: 75 46
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;EL71v45
+;Всегда запрашивать отчет о доставке SMS
+;Always request SMS status report
+;(c) Evgr
+;Version: 
+;PatchID: 10083
+;Details: https://patches.kibab.com/patches/details.php5?id=10083
+/*
+
+*/
+0E2EBDA: 20335974 CDF139FD
+
+#pragma enable old_equal_ff
+0FFC650: 20335974012119747047
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

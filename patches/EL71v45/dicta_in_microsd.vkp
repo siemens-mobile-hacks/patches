@@ -1,0 +1,16 @@
+;EL71v45
+;Запись Диктофоном на MicroSD
+;Dictating Machine Writes to MicroSD
+;(c) 1nvisible
+;Version: 
+;PatchID: 7350
+;Details: https://patches.kibab.com/patches/details.php5?id=7350
+/*
+
+*/
+059F5F0: 08009DE5 0400A0E3
+083256E: 30 34
+0832598: 30 34
+08325A6: 30 34
+;------------------------- end -------------------------
+

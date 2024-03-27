@@ -1,0 +1,14 @@
+;AX75v16
+;Отключить вопрос "Всегда разрешать сетевые подключения?"
+;Disable "Always allow network connections?" question
+;(c) SiNgle
+;(p) dkBrazz
+;Version: 
+;PatchID: 5857
+;Details: https://patches.kibab.com/patches/details.php5?id=5857
+/*
+
+*/
+525246: 2D04 CC00
+;------------------------- end -------------------------
+

@@ -1,0 +1,239 @@
+;CX75v13
+;Запуск функций с помощью различных кодов
+;Key Sequencer
+;(c) benj9
+;(r) BuG, chaos
+;(p) SMeeTBB
+;Version: 1.2
+;PatchID: 1373
+;Details: https://patches.kibab.com/patches/details.php5?id=1373
+/*
+Патч пердназначен для вызова различных функции при помощи различных комбинаций нажатия клавиш.
+*/
+; assign actions to key sequences
+; examples: press "*08" to enter phone setup, "*00" for native menu
+; "*5" to change to profile 5, "##" for doubleclick keylock
+; "LeftSoftkey+JoystickRight" to shutdown, "12345" to start a midlet.
+
+; there are 2 ways to use key sequences: directly or after hotkey
+; directly: keys leave key prints at user interface
+; after hotkey: the key prints are invisible for user interface
+; (define in MM byte, see Key Sequences Structure)
+
+; hotkey is "*" (asterisk). Press * once: you are in hotkey mode.
+; all hotkey key sequences are accepted now.
+; Press * twice: normal * sign for user interface
+; for long press function of *: press * short, then press * long.
+
+; known probs: after shutdown started, avoid keypresses.
+; port the "native menu" and otherr functions addresses yourself
+
+07FEC4E: 010602D5FFF7A3FF10BD 014CA04710BD0FF0FDA0
+
+#pragma enable old_equal_ff
+0FDF000: 4B6579536571312C62656E6A3900FFB5
+0FDF010: 89B0051CE248006801281FD0E4490988
+0FDF020: 00291BD000F0B8F9002817D000F07DF9
+0FDF030: 069000F09DF901900896E24EB14205D1
+0FDF040: 012803D14426032000F046F9022600F0
+0FDF050: 43F93F26C6400120064203D1281C0106
+0FDF060: 5AD450E03A270297CD480468002C18D1
+0FDF070: B81D142600F030F9041CC948002C02D1
+0FDF080: 01210160EAE704600020002104902060
+0FDF090: B84202D021540130FAE76846206000F0
+0FDF0A0: 42F8281C227901062FD42A280AD1012A
+0FDF0B0: 23DA02222271002262717820012200F0
+0FDF0C0: 5FF92BE00C2818D0002A04D100210391
+0FDF0D0: 00F02EF817E00121039100F029F86279
+0FDF0E0: 01326271049A012A02D000F019F801E0
+0FDF0F0: FF2913D00122227110E0002A01D000F0
+0FDF100: 0FF800222271A74907E0002A04D0012A
+0FDF110: 04D10022227101E0A349884709B0FFBD
+0FDF120: 05B57B2001E005B52F2000F024F905BD
+0FDF130: FCB5051C099F9A4C2468063400270B97
+0FDF140: A14B0998B8423BDDE15D3E019A19FF20
+0FDF150: 0790537B012018400A9E0C90012802D0
+0FDF160: 012E18D007E0002E15D0601E00780028
+0FDF170: 01D000290FD000F074F801280BD10C98
+0FDF180: 012801D0501802E0601E007810180830
+0FDF190: 0678B54202D00021E1555DE001260B96
+0FDF1A0: 4678002E0FD00C9B012B02D004290ADA
+0FDF1B0: 03E0631E1B78042B05DA0131E1554BE0
+0FDF1C0: 0799281CFCBD171C79487E4A02800794
+0FDF1D0: 09980022111C824202D0A1540132FAE7
+0FDF1E0: B87BFA7B8618002E02D0022100F0C8F8
+0FDF1F0: 089A0F9B3E68043623D4002E12D0012E
+0FDF200: 0CD0022E06D0032E13D000F058F800F0
+0FDF210: 63F819E001218A1A1A7015E0FF2000F0
+0FDF220: 7CF811E0102000F078F81F2600F054F8
+0FDF230: 0AE0387900F0AAF801214B2600F04CF8
+0FDF240: 02E000F03CF8B0477E7B02231E4203D0
+0FDF250: 00F05BF800F059F80798FF28B0D10137
+0FDF260: 6EE706B5517BFC200840002816D00B98
+0FDF270: 802600F017F8012812D11098202600F0
+0FDF280: 11F801280CD10B98109E00F05DF80126
+0FDF290: 3040082600F006F8012801D1012000E0
+0FDF2A0: 002006BD321C0A40002A06D076087043
+0FDF2B0: 0E40B04201D0002000E00120704700B5
+0FDF2C0: 0E98FF2802D0102000F027F8043E3879
+0FDF2D0: 7979BA79FB7900BD90B5374FF600BF19
+0FDF2E0: 7F687C1C002C01D0B84790BD2C4C2068
+0FDF2F0: 012806D0012120682160002801D00168
+0FDF300: 01E069460C318D46A8E640B50C20254E
+0FDF310: B0478C20244EB04740BD02B5011C2548
+0FDF320: 8047002800D0017002BD02B521488047
+0FDF330: 002801D1002006E00078192101401929
+0FDF340: 01D00121084002BD0EB519494B78FF2B
+0FDF350: 0CD10A78002A01D1022008E0FF2A03D1
+0FDF360: 012E03D0012801D0002000E001200EBD
+0FDF370: 0E4E3078704704B5012200F001F804BD
+0FDF380: 42B502213426FFF7A7FF42BD02B53021
+0FDF390: 48430B49401802BD00B5084FB84700BD
+0FDF3A0: 040200A86FEA7FA09DEB7FA0F0F84FA8
+0FDF3B0: 34B54CA8935D2AA00000FCA0A5F6B3A0
+0FDF3C0: 00F5FDA000FF000000F6FDA0
+
+0FDF052: 3F  0n0111111 ; profile key (right bit: profile 1, second right bit profile 2, ...)
+0FDF064: 3A 06 ; number of key sequences
+
+; ===== Sample KeySequences ====================
+; can be anywhere in Flash - set "address of Key Sequences"
+#pragma enable old_equal_ff
+
+; Sample Key Sequences FW dependent
+
+; Phone-Setup,registers=0, key-sequence=HOTKEY+"08". Mode=by hotkey. no sound.
+; 0FDF600: 0xA08E1AF1,00,00,00,00,"08",00,00,00,01,00,00 ; M65v50 address!
+
+; NativeMenu,registers=0, key-sequence=HOTKEY+"00". Mode=by hotkey. no sound.
+; 0FDF610: 0xA08E714B,00,00,00,00,"00",00,00,00,01,00,00 ; M65v50 address!!!
+
+; Sample Key Sequences FW independent
+
+; toggle Keylock, registers=0, key-sequence "#","#", Mode=0E=direct+only at mainscreen+send red key after, sound: 0x23, sound-len: 3
+0FDF600: 0xFFFFFFFE,00,00,00,00,"##",00,00,00,0E,23,03
+
+; SwitchOffPhone (func lib), registers=0, key-sequence=softkey_left+joystick_right, sound: 0x7b, sound-len: 5
+0FDF610: 0x00000009,00,00,00,00,01,3E,00,00,00,00,00,00
+
+; SetProfile 5 (func lib), R0=(profile-1), key-sequence: "5". mode=01=by hotkey. no sound
+0FDF620: 0x00000003,04,00,00,00,"5",00,00,00,00,01,00,00
+
+; Midlet (filename is in string_number 1), R0=(string_number), key-sequence= "12345", direct+always, no sound
+0FDF630: 0xFFFFFFFF,01,00,00,00,"12345",00,00,00
+
+; Lock device, registers=0, key-sequence: "99#", Mode=22=direct+send red key after+only if keylock off, sound: 0x22, len:1
+0FDF640: 0xFFFFFFFD,00,00,00,00,"99#",00,00,22,22,01
+
+; Unlock device, registers=0, key-sequence: "9999#", Mode=02=direct+send red key after, sound: 0x22, len:1
+0FDF650: 0xFFFFFFFC,00,00,00,00,"9999#",02,22,01
+
+; ===== Midlet filename strings ====================
+; can be anywhere in Flash - set "address of Midlet filename strings"
+; End string with zero. String len incl. "0": 48 bytes. if longer is ok, but eats next 48-bytes-string-slot
+0FDF500: "2:\\amark.jar",00 ; string no. 0
+0FDF530: "0:\\Java\\jam\\Applications\\QuotD\\Qotd.jad",00 ; string no. 1
+#pragma disable old_equal_ff
+
+/*
+
+structure of a sequence record: 
+lenght 16 bytes. configure key sequences well minded.  
+
+0  1  2  3  4  5  6  7  8 9 A B C  D  E  F
+action      R0 R1 R2 R3 KKKKKKKKKK MM SS DD
+
+action can be
+- call of a function by an address (e.g. 0xA1234567)
+- call of a function by function library number (e.g. 77)
+- call of a midlet (0xFFFFFFFF) by giving the midlet filename string no. in R0
+- toggle keylock  (0xFFFFFFFE), please use the sample keylock key sequence
+- lock device (0xFFFFFFFD) - unlock device (0xFFFFFFFC)
+
+R0 - R3:
+- if called as function: registers R0-R3 as bytes.
+- if called as midlet: R0=string number of midlet filenames
+
+KK: elements of key sequences. 
+length is 5 keys, fill up unused with zero.
+possible keys: 0-9=0x30-0x39. *=0x2A. #=0x23
+left softkey=0x01. right softkey=0x04. red button=0x0C. green button=0x0B.
+joystick: up=0x3B. down=0x3C. left=0x3D. right=0x3E. click=0x1A.
+providerkey=0x11. sidekey: up=0xD. down=0xE. dictaphone=0x6
+
+SS,DD: sound.
+SS=sound number, DD=duration. no sound: SS+DD=0
+
+MM: mode byte: 
+choose numbers from the 3 groups and add them.
+
+choose ONE of these 2 numbers
+1 hotkey mode. key sequence accepted after hotkey (no keyprints on ui)
+0 direct mode. key sequence accepted directly (leaves keyprints on user interface)
+
+choose ONE of these 2 numbers
+2 send red key after action
+0 dont send red key
+
+choose one number from the list below to make the key sequence conditional:
+0always
+8(menus or lists or midlets etc.)
+12(mainscreen or screensaver or keylock-dialogs)
+32(screensaver off)
+40(screensaver off) and (menus, lists, midlets etc.)
+44(screensaver off) and (mainscreen or screensaver or keylock-dialogs)
+48(screensaver)
+56(screensaver) and (menus, lists, midlets etc.)
+60(screensaver) and (mainscreen or screensaver or keylock-dialogs)
+128(keylock off)
+136(keylock off) and (menus or lists or midlets etc.)
+140(keylock off) and (mainscreen or screensaver or keylock-dialogs)
+160(keylock off) and (screensaver off)
+168(keylock off) and (screensaver off) and (menus or lists or midlets etc.)
+172(keylock off) and (screensaver off) and (mainscreen or screensaver or keylock-dialogs)
+176(keylock off) and (screensaver)
+184(keylock off) and (screensaver) and (menus or lists or midlets etc.)
+188(keylock off) and (screensaver) and (mainscreen or screensaver or keylock-dialogs)
+192 (keylock) 
+200 (keylock) and (screensaver) and (menus or lists or midlets etc.)
+204 (keylock) and (mainscreen or screensaver or keylock-dialogs)
+224 (keylock)
+232 (keylock) and (screensaver off) and (menus or lists or midlets etc.)
+236 (keylock) and (screensaver off) and (mainscreen or screensaver or keylock-dialogs)
+240(keylock) 
+248 (keylock) and (screensaver) and (menus or lists or midlets etc.)
+252(keylock) and (screensaver) and (mainscreen or screensaver or keylock-dialogs)
+
+Add the 3 chosen numbers. The result is the MM byte.
+
+Examples of MM byte:
+e.g. 129 = 1 + 128 : key sequence by hotkey + only if keylock off
+e.g.  51 = 1 + 2 + 48: key sequence by hotkey + send red key after + only if screensaver on
+e.g.  0: always.*/
+
+; plug-in function Adresses
+
+DevM_NativeMenu EQU 0xA032AE0F
+DevM_Sexit EQU 0xA03B5815
+DevM_Configuration EQU 0xA03B5B35
+Usr_Setup EQU 0xA032606D
+Usr_FlashExplorer EQU 0xA0325FB1
+Usr_MediaPool EQU 0xA0326001
+Usr_AlarmClock EQU 0x0325F4D
+Usr_Messages EQU 0xA0325F2B
+Usr_New_Messages EQU 0xA050FB27
+Usr_Organizer EQU 0xA0325F17
+Usr_Camera EQU 0xA0325F73
+Usr_SMS_new EQU 0xA0325F37
+Usr_BandSelection EQU 0xA03CB00D
+Usr_SoundRecorder EQU 0xA0326723
+Usr_StopWatch EQU 0xA032B531
+Usr_MyMenu EQU 0xA03266B9
+Usr_CountDown EQU 0xA0325F69
+Usr_Pictures EQU 0xA0326007
+Usr_Ringtones EQU 0xA0326127
+Usr_ClockSetup_TimeDate EQU 0xA03261F3
+Usr_Calc EQU 0xA0325F57
+
+;------------------------- end -------------------------
+

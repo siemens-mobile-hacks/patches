@@ -1,0 +1,33 @@
+;M55v91
+;Динамическая вибрация и мигание подсветки в такт динамического света
+;Dynamic vibratiom and flash such as dynamic light
+;(c) Matr!X
+;(r) Jazzy$
+;(p) KoTsK
+;Version: 
+;PatchID: 2004
+;Details: https://patches.kibab.com/patches/details.php5?id=2004
+/*
+
+*/
+;*** speed *** 
+81312C: F6FD3A34,EA007C33 DA259640,DAA074D2 
+8134A4: F6FD3E34,EA00F436 DA259640,DAA054D6 
+;*** lighthouse *** 
+81315A: F6FD3A34,EA007C33 DA259640,DAA074D2 
+8134D2: F6FD3E34,EA00F436 DA259640,DAA054D6 
+;*** wave *** 
+813188: F6FD3A34,EA007C33 DA259640,DAA074D2 
+813500: F6FD3E34,EA00F436 DA259640,DAA054D6 
+;*** beat *** 
+8131B6: F6FD3A34,EA007C33 DA259640,DAA074D2 
+81352E: F6FD3E34,EA00F436 DA259640,DAA054D6 
+;*** runway *** 
+8131E4: F6FD3A34,EA007C33 DA259640,DAA074D2 
+81355C: F6FD3E34,EA00F436 DA259640,DAA054D6 
+;*** trance *** 
+813212: F6FD3A34,EA007C33 DA259640,DAA074D2 
+81358A: F6FD3E34,EA00F436 DA259640,DAA054D6 
+
+;------------------------- end -------------------------
+

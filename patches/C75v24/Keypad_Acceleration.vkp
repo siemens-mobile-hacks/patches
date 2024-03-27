@@ -1,0 +1,13 @@
+;C75v24
+;Ускорение опроса клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 3006
+;Details: https://patches.kibab.com/patches/details.php5?id=3006
+/*
+
+*/
+07AFFA6: 56 20
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;CF75v23
+;Отключить Логгинг MMI
+;Disable MMI Logging
+;(c) SiNgle
+;Version: 
+;PatchID: 4874
+;Details: https://patches.kibab.com/patches/details.php5?id=4874
+/*
+
+*/
+02A03FD: B5 47 ; speeds up phone operation
+
+;------------------------- end -------------------------
+

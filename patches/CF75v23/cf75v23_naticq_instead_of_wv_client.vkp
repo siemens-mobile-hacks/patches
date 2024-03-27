@@ -1,0 +1,33 @@
+;CF75v23
+;NatICQ вместо встроенного WV-клиента
+;NatICQ instead of built-in WV client
+;(c) Fuchs, T!ck
+;(r) SiNgle, avkiev, 1nvisible, Stitch, klaud
+;(p) m.ksy
+;Version: 
+;PatchID: 9929
+;Details: https://patches.kibab.com/patches/details.php5?id=9929
+/*
+
+*/
+0608F34: 29E152A0 0xA01FFBA1 ;перенаправление функции
+
+#pragma enable old_equal_ff
+01FFBA0: FFB58020C7DF2501061C05A18022C7DF
+01FFBB0: 6C010021301C94DF301CC7DF2901FFBD
+01FFBC0: "0:\\ZBin\\NatICQ\\NatICQ_SGOLD_X75.elf",00 ;путь к запускаемому эльфу
+#pragma disable old_equal_ff
+
+; строки ниже меняют надпись «Inst. Message» на «ICQ» (меняют лэнгпак). 
+; если нужно — раскомментируйте их!
+/*
+122CE0: 0F75426468692719465B6868575D5B 0F75473A4D423C4A0B0B0B0B0B0B0B
+123F22: 0F75426468692719465B6868575D5B 0F75473A4D423C4A0B0B0B0B0B0B0B
+1336B6: 0F75426468692719465B6868575D5B 0F75473A4D423C4A0B0B0B0B0B0B0B
+14C22C: 0F75426468692719465B6868575D5B 0F75473A4D423C4A0B0B0B0B0B0B0B
+122CCD: 08F0719E3889F74E 08BA2C3F342E3C67
+123F0F: 08F0719E3889F74E 08BA2C3F342E3C67
+1336A6: 08F0719E3889F74E 08BA2C3F342E3C67
+*/
+;------------------------- end -------------------------
+

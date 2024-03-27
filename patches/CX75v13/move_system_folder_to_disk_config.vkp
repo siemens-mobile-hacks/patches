@@ -1,0 +1,78 @@
+;CX75v13
+;Перенос папки System на диск Config
+;Move System folder to disk Config
+;(c) TAPAKAH
+;Version: 1.0
+;PatchID: 768
+;Details: https://patches.kibab.com/patches/details.php5?id=768
+/*
+RUS: Переносит папку System на диск Config, что выглядит вполне логично, ибо в этой папке хранятся настройке пользователя и нет понятно, почему разработчики изначально не поместили эту папку там, где ей по логике следует быть.
+применять отдельно от других (а то вычитание адреса подействует)
+
+ENG: Transfers folder System on disk Config that looks quite logically for in this folder are stored to adjustment of the user and is not present clearly why developers initially have not placed this folder there where it on logic should be. 
+To apply separately from others (and that subtraction of the address will work)
+*/
+-7F8
+004A5586: 30 32
+004A559A: 30 32
+004A55A6: 30 32
+004A55BE: 30 32
+004A55DA: 30 32
+004A55EE: 30 32
+004A5610: 30 32
+004A5630: 30 32
+004A5648: 30 32
+004A566E: 30 32
+004A568E: 30 32
+004A56A6: 30 32
+004A56CA: 30 32
+004A56E6: 30 32
+004A56FA: 30 32
+004A571A: 30 32
+004A5736: 30 32
+004A574A: 30 32
+004A576C: 30 32
+004A578E: 30 32
+004A57A8: 30 32
+004A57CE: 30 32
+004A57EA: 30 32
+004A57FE: 30 32
+004A5820: 30 32
+004A5840: 30 32
+004A5858: 30 32
+004A587A: 30 32
+004A5894: 30 32
+004A58A6: 30 32
+004A58C8: 30 32
+004A58F0: 30 32
+004A5910: 30 32
+004A593C: 30 32
+004A5958: 30 32
+004A596C: 30 32
+004A598C: 30 32
+004A59A8: 30 32
+004A59BC: 30 32
+004A59DC: 30 32
+004A59FA: 30 32
+004A5A10: 30 32
+004A5A32: 30 32
+004A5A50: 30 32
+004A5A66: 30 32
+004A5AA2: 30 32
+004A5ABE: 30 32
+004A5AD2: 30 32
+004A5AF2: 30 32
+004A5B0E: 30 32
+004A5B22: 30 32
+004A5B46: 30 32
+004A5B6C: 30 32
+004A5B8A: 30 32
+004A5BB8: 30 32
+004A5BDE: 30 32
+004A5BFC: 30 32
+004A5C26: 30 32
+004A5C44: 30 32
+004A5C5A: 30 32
+
+;------------------------- end -------------------------
+

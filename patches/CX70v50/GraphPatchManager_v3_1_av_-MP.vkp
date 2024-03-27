@@ -1,0 +1,14 @@
+;CX70v50
+;Менеджер Графических патчей av -MP
+;GraphPatchManager av -MP
+;(c) KreN
+;(r) avkiev
+;Version: 3.1
+;PatchID: 2551
+;Details: https://patches.kibab.com/patches/details.php5?id=2551
+/*
+
+*/
+1711A40: 1883261C002D0590 004FB847013EFCA0 ;CX70 sw50
+;------------------------- end -------------------------
+

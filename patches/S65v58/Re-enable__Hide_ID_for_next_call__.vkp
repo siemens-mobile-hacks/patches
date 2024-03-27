@@ -1,0 +1,13 @@
+;S65v58
+;Возобновить "Инкогнито для след.вызова
+;Re-enable "Hide ID for next call"
+;(c) BuG
+;Version: 
+;PatchID: 9076
+;Details: https://patches.kibab.com/patches/details.php5?id=9076
+/*
+
+*/
+16A435E: 04 00 ; fw 53+
+;------------------------- end -------------------------
+

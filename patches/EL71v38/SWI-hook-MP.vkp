@@ -1,0 +1,33 @@
+;EL71v38
+;SWIхук
+;SWI-hook
+;(c) avkiev, Rst7/CBSIE, BoBa
+;(r) KonstanT,(i) BuG
+;(p) Bueffel
+;Version: 1.1
+;PatchID: 6290
+;Details: https://patches.kibab.com/patches/details.php5?id=6290
+/*
+;Необходим для вызова библиотечных функций из перемещаемых патчей
+;It needs for calling Library-function from dis-patches
+
+;(i) BuG: works with new 0xACxxxxxx and 0xADxxxxxx RAM addresses now
+*/
+12D006C: 2C0000EA 80F19FE5
+12D01F3: A100FFFFFF 00,0xA0078001
+
++0078000
+#pragma enable old_equal_ff
+00: C72807D171460888009A920900D20231
+10: 02310591011C03239B0399430B09FF2B
+20: 09D8154B8A00D2181368400B87446047
+30: 03E009E001930CA31847180EFF28FAD0
+40: A828F7DA0028F5D09C460AA1059A0098
+50: 800901D3013246390591C0467B461847
+60: 04002DE90040FDE80100BDE800F069E1
+70: 0F80FDE81CFF2FE1,0xA0074000
+#pragma disable old_equal_ff
++0
+
+;------------------------- end -------------------------
+

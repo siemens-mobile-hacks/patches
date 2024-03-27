@@ -1,0 +1,15 @@
+;S75v47
+;Отключить окно " Потеря данных ..." и подсветку при извлечении карты памяти
+;Disable window&light when eject the card
+;(c) dimonp25
+;Version: 
+;PatchID: 9470
+;Details: https://patches.kibab.com/patches/details.php5?id=9470
+/*
+
+*/
+029ca0a: 4ff1ceea c046c046
+029ca10: 0be0 c046
+
+;------------------------- end -------------------------
+

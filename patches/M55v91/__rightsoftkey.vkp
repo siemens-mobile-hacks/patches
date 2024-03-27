@@ -1,0 +1,15 @@
+;M55v91
+;# + правая софт-кнопка -> куча ссылок
+;# + right softkey -> any function from the list
+;(c) Matr!x
+;(p) ZZToP, «Serg°H»
+;Version: 
+;PatchID: 2001
+;Details: https://patches.kibab.com/patches/details.php5?id=2001
+/*
+Список ссылок 1998
+Functions list 1998
+*/
+0DC6ED: 29A435 9FF817 ;SIM-Menu (или любая ссылка из списка
+;------------------------- end -------------------------
+

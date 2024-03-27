@@ -1,0 +1,27 @@
+;M75v19
+;Дополнителная инфа на прогрессбарах для х75
+;Extra Info on ProgressBars x75 edition
+;(c) 1nvisible
+;(r) ~Jhellico
+;(p) Geka
+;Version: 2 av
+;PatchID: 6425
+;Details: https://patches.kibab.com/patches/details.php5?id=6425
+/*
+Показывает проценты на прогрессбарах, а также данные о принимаемых и передаваемых файлах.
+Для х75 (SGold)!
+English:
+No English doc at the moment! :(
+Shows percents on progressbars and info on files being sent/received
+For x75(SGold)! 
+
+*/
+04AD20c: 28A12EA000000000 0xA0FC7D35,0xA0FC7D25
+04B87e4: 0000000000000000 0xA0FC7D11,0xA0FC7D01
+
+08AA5f0: 216B000C4143E06A87F18cEE 004FB847,0xA0FC7D51,C046C046
+08AA6a8: 0C20185E231C4BF7 004FB847,0xA0FC7DD9
+
+0FC7D4C: FFFFFFFF 0xA851D898
+;------------------------- end -------------------------
+

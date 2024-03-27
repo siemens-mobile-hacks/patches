@@ -1,0 +1,19 @@
+;SL45iv56
+;RFR. Читать Flash SMS нажатием "Красной кнопки"
+;RFR. Read Flash by RED Button
+;(c) RizaPN
+;Version: 
+;PatchID: 1969
+;Details: https://patches.kibab.com/patches/details.php5?id=1969
+/*
+Читать существующие Flash SMS нажатием "Красной кнопки".
+
+
+English: Read existing Flash SMS by pressing RED Button.
+
+
+Release: July 19, 2004
+*/
+0x3B0698: A8D8DAD69809DADB E01CDAF05083DADA9ECF
+;------------------------- end -------------------------
+

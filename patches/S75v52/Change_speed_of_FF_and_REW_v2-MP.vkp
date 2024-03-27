@@ -1,0 +1,17 @@
+;S75v52
+;Изменение скорости перемотки плеера
+;Change speed of fast forward and rewind
+;(c) Miha_r
+;(p) Evgr
+;Version: 2-MP
+;PatchID: 9810
+;Details: https://patches.kibab.com/patches/details.php5?id=9810
+/*
+
+*/
+;original mediaplayer speed = 12 
+
+0600180: EC4B7D22D200B034 004B9847,0xA0066F20
+
+;------------------------- end -------------------------
+

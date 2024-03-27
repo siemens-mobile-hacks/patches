@@ -1,0 +1,35 @@
+;E71v45
+;Запрашивать отчет о доставке SMS (MP)
+;Request SMS status report (MP)
+;(c) Evgr
+;Version: 
+;PatchID: 10140
+;Details: https://patches.kibab.com/patches/details.php5?id=10140
+/*
+
+*/
+; Запрашивать отчет о доставке SMS
+; Request SMS status report
+; E71v45
+; (c) Evgr
+; Version: Master-patch
+
+0E22436: 20335974 C9F11CE9
+
+#pragma enable old_equal_ff
+0FEB670: 00C09FE51CFF2FE1,0xA0072521
+#pragma disable old_equal_ff
+
+
+#pragma enable old_equal_ff
+0072520: 20335974FFB50748C4DF02D0061C7178
+0072530: 1974FFBD
+
+0072540: 0xB1C2D3E4,0x00300311,0000000000000000,"\
+{p=`SMS status report` id=300311 cp=`Evgr` ver=1}","\
+{01 cb `Report ON` v=1}","\
+",00
+#pragma disable old_equal_ff 
+
+;------------------------- end -------------------------
+

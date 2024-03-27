@@ -1,0 +1,18 @@
+;S65v58
+;Десятичный CID вместо C1 и C2 в списке соседних сот
+;Decimal CID instead of C1 & C2 in neighbour list
+;(c) слава Богу
+;(r) SiNgle
+;Version: 
+;PatchID: 7560
+;Details: https://patches.kibab.com/patches/details.php5?id=7560
+/*
+
+*/
+136AB26: 0123F856002802DA 203FB88B203702E0
+136AB34: 2B 20
+136AB38: 02 05
+136AB42: 0223 0CE0
+13EE10C: 31204332 656C4944
+;------------------------- end -------------------------
+

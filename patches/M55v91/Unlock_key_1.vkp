@@ -1,0 +1,19 @@
+;M55v91
+;Разблокировка кнопки 1
+;Unlock key 1
+;(c) Ramil_
+;Version: 
+;PatchID: 4291
+;Details: https://patches.kibab.com/patches/details.php5?id=4291
+/*
+
+*/
+0DBBFE: 3D 0D
+0DBC6A: 3D 0D
+0DBF9C: 3D 0D
+0DC23E: 2D30 CC00
+0DC642: 2D26 CC00
+0DC3A6: 32 31
+0DC6FF: C2 C1
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M81v51
+;Нормальная анимация при записи в диктофоне
+;Normal animation in sound recorder
+;(c) SiNgle
+;(p) Cypok
+;Version: 
+;PatchID: 6714
+;Details: https://patches.kibab.com/patches/details.php5?id=6714
+/*
+
+*/
+0668FCC: FA 64
+;------------------------- end -------------------------
+

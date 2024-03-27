@@ -1,0 +1,26 @@
+;C55v24
+;Отправка_Flash_SMS_с_телефона
+;Sending Flash SMS from the telephone
+;(c) Sinclair
+;(p)  Vlog
+;Version: 
+;PatchID: 1210
+;Details: https://patches.kibab.com/patches/details.php5?id=1210
+/*
+Для урезанного ленгпака
+Чтобы отправлять Flash-SMS надо в текущем SMS-профиле поставить срок действия "Неделя" в любом другом случае шлётся обычное SMS
+Должен стоять только один патч для Flash SMS!
+
+Если в "1м" профиле SMS стоит срок действия "максимум", во "2м" профиле - "1 неделя" (для отправки Flash-SMS) и "1й" профиль выбран по умолчанию, то если отправить SMS с помощью "Передача с.." и указать "2й" профиль - то сбивается срок действия в "1м" профиле, устанавливается в "1 неделя" и все последующие SMS шлются уже как Flash-SMS, пока не сменишь срок доставки вручную
+*/
+067D04: E6FE8C30 FAE152FF
+
+61FF52: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8880E6F8E42FD7400700F448010047F4AD003D10
+61FF66: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400700A94847F408002D08E7F4F00006F8B600
+61FF7A: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400700B9480D184FF20DF8D7400700F4480200
+61FF8E: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 47F4AD003D0FD7400700F448010047F408002D0D
+61FFA2: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E7F4F00006F8B600D7400700E44801009880E6FE
+61FFB6: FFFFFFFFFFFFFFFFFFFF 8C30FA86087D4FF20DF3
+
+;------------------------- end -------------------------
+

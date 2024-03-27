@@ -1,0 +1,16 @@
+;EL71v45
+;Мега-громкость
+;Mega-loudness
+;(c) SiNgle,-=(Kad)=-,Akot
+;Version: 3-MP
+;PatchID: 8057
+;Details: https://patches.kibab.com/patches/details.php5?id=8057
+/*
+
+*/
+04FBF9C: 000000EA C0FFFFEA                                                 ; Headset EL71v45
+04FBEA4: 0600000A020000EF6C3DA0E30320A0E3 00709FE537FF2FE131EB06A03B0000EA ; Headset EL71v45
+04FBF70: 2B00C4E5 D3FFFFEA                                                 ; Speaker EL71v45
+04FBEC4: 030000EF6C3DA0E30320A0E30410A0E1 00709FE537FF2FE101EB06A0290000EA ; Speaker EL71v45
+;------------------------- end -------------------------
+

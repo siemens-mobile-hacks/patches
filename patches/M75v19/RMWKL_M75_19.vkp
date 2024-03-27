@@ -1,0 +1,35 @@
+;M75v19
+;Чтение SMS при залоченной клаве
+;Read message when key locked
+;(c) Bennie
+;(r) avkiev
+;(p) Mikel
+;Version: 2.1
+;PatchID: 2985
+;Details: https://patches.kibab.com/patches/details.php5?id=2985
+/*
+
+*/
+;M75v19
+;Чтение SMS при залоченом экране
+;Read message when key locked
+;(c) Bennie
+;(r) avkiev
+;(p) SMeeTBB
+;Version: 2.1
+;PatchID: 924
+;Details: http://patches.kibab.com/patches/details.php5?id=924
+2CC774: DBF7F0FF 33F7C7FA
+2CF910: 0223E05E 30F706FA
+#pragma enable old_equal_ff
+01FFcD0: 40B50026052814D1CEF056FD01280AD0
+01FFcE0: CFF0B4FC01280CD10320154B98471548
+01FFcF0: 8047022605E00320114B9847CBF033FA
+01FFd00: 0126301C40BD0223E85E00B5FFF7E0FF
+01FFd10: 002802D1A8F020FD00BD01B00A490847
+01FFd20: 0223E05E01B5FFF7D3FF002800D101BD
+01FFd30: 02B0022802D10020D0F013FA03490847
+01FFd40: 0xa085AB25,0xa049EF50,0xa02CC603,0xa02CF9FD  
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

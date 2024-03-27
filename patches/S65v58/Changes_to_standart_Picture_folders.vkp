@@ -1,0 +1,30 @@
+;S65v58
+;Изменить Pictures на Pic и отдельная папка для фотографий
+;Changes to standart Picture folders
+;(c) Vanoleo
+;(p) -={Kad)=-
+;Version: 1.0
+;PatchID: 2592
+;Details: https://patches.kibab.com/patches/details.php5?id=2592
+/*
+RUS: Изменяет папку Pictures на Pic и позволяет добавлять фотографии в отдельную папку для фото(папка Foto). 
+После применения патча необходимо папки "EMS","MMS","Logos","Frames","Icons" переместить в "0:\Pic\Stuf\" 
+При переименовании не забывайте: Обязаловкой ставить двойной // и еше: Старые данные меньше или равны новым
+ENG:  Changes folder Pictures on Pic and allows to add photos in a separate folder for a photo (folder Foto).
+After application of a patch it is necessary folders "EMS", "MMS", "Logos", "Frames", "Icons" 
+move in "0: \Pic \Stuf \". If you want to rename don`t forget some things: You need to put double \\ !necessary!
+And this one: new data must be shourter than old!
+
+*/
+0A24548: 0B00,'0:\\Pictures' 0B00,'0:\\Pic\\Foto'
+;если в настройках "Сохранять на ММС"
+0A2565E: 0B00,'4:\\Pictures' 0B00,'4:\\MyPhoto'
+0A24580: 1800,'0:\\Pictures\\Clip Gallery' 1800,'0:\\Pic\\Stuf\\Clip Gallery'
+0A245E4: 0F00,'0:\\Pictures\\EMS' 0F00,'0:\\Pic\\Stuf\\EMS' 
+A24642: 1100,'0:\\Pictures\\Logos' 1100,'0:\\Pic\\Stuf\\Logos'
+A246FC: 0F00,'0:\\Pictures\\MMS' 0F00,'0:\\Pic\\Stuf\\MMS'
+A24752: 1100,'0:\\Pictures\\Icons' 1100,'0:\\Pic\\Stuf\\Icons'
+A247A6: 1200,'0:\\Pictures\\Frames' 1200,'0:\\Pic\\Stuf\\Frames'
+
+;------------------------- end -------------------------
+

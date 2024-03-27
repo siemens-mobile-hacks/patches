@@ -1,0 +1,13 @@
+;C75v24
+;Запись видео 1 минуту
+;1 minute video rec
+;(c) SiNgle
+;Version: 
+;PatchID: 2942
+;Details: https://patches.kibab.com/patches/details.php5?id=2942
+/*
+
+*/
+02DC532: 0300C8C003 2000C8C020
+;------------------------- end -------------------------
+

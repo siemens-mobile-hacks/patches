@@ -1,0 +1,13 @@
+;S65v58
+;Отключить звук в начале записи видео
+;No start sound in Video rec
+;(c) SiNgle
+;Version: 
+;PatchID: 9070
+;Details: https://patches.kibab.com/patches/details.php5?id=9070
+/*
+
+*/
+08D8578: 1A 1D
+;------------------------- end -------------------------
+

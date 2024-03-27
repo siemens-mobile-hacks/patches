@@ -1,0 +1,17 @@
+;SL65v53
+;Черный список
+;Black list
+;(c) SiNgle
+;(r) KreN
+;Version: 3.2
+;PatchID: 7084
+;Details: https://patches.kibab.com/patches/details.php5?id=7084
+/*
+Все настройки в Мастере-мидлете, фильтр на группу устанавливать не надо.
+*/
+
+0B18AA0: B3F538FBB3F554FE061C 00488047216CFCA0C046
+0B197A4: 0006000EFF2F0AD0FD2F 004A9047416CFCA0C046
+0B19C08: B2F584FAB2F5A0FD061C 00488047016CFCA0C046
+;------------------------- end -------------------------
+

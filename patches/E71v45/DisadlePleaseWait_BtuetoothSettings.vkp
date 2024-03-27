@@ -1,0 +1,14 @@
+;E71v45
+;Отключить "Подождите" в Настройки Bluetooth->Все "подождишки"(с) в этом меню
+;Disable "Please wait" Bluetooth Settings->All "waits"(с) are removed in this menu
+;(c) Visad
+;(p) benj9
+;Version: 
+;PatchID: 10338
+;Details: https://patches.kibab.com/patches/details.php5?id=10338
+/*
+
+*/
+94EF1A: FFF788FF C046C046
+;------------------------- end -------------------------
+

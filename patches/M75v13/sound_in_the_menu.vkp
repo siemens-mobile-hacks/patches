@@ -1,0 +1,14 @@
+;M75v13
+;Выключение звука в конце меню
+;Turn off sound in the end of the menu
+;(c) ThE TrIFoN
+;(p) Grizzzzly
+;Version: 
+;PatchID: 1321
+;Details: https://patches.kibab.com/patches/details.php5?id=1321
+/*
+Следует из названия :)
+*/
+02BDDCE: 3EF098EA 00220022
+;------------------------- end -------------------------
+

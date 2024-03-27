@@ -1,0 +1,14 @@
+;CX70v50
+;Отключить звук в начале записи видео
+;No start sound in Video rec
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 69
+;Details: https://patches.kibab.com/patches/details.php5?id=69
+/*
+Патч отключает звук в начале записи видео.
+*/
+08E02CC: 1A 1D
+;------------------------- end -------------------------
+

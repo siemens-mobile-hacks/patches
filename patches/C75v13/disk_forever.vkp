@@ -1,0 +1,13 @@
+;C75v13
+;Открыть диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;Version: 
+;PatchID: 986
+;Details: https://patches.kibab.com/patches/details.php5?id=986
+/*
+
+*/
+086AD34: 02 03
+;------------------------- end -------------------------
+

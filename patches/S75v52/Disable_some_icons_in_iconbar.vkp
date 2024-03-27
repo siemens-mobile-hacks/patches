@@ -1,0 +1,23 @@
+;S75v52
+;Отключить некоторые иконки иконбара
+;Disable some icons in iconbar
+;(c) funMarkus
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8531
+;Details: https://patches.kibab.com/patches/details.php5?id=8531
+/*
+Нужен для скрытия ненужных иконок в иконбаре
+(?)-не точно
+*/
+029D1F8:FFF770FF C046C046 ; HasNewMessage(?)
+029D22E:FFF755FF C046C046 ; DownloadInBrowser(?)
+029D2B2:FFF713FF C046C046 ; BlueTooth
+029D346:FFF7C9FE C046C046 ; HandsFree
+029D368:FFF7B8FE C046C046 ; KeyLock
+029D3DE:FFF77DFE C046C046 ; SoundsOff
+029D4FC:FFF7EEFD C046C046 ; IsCalling(?)
+029D54C:FFF7C6FD C046C046 ; SendingMessage(?)
+029D56E:FFF7B5FD C046C046 ; TurnOff
+;------------------------- end -------------------------
+

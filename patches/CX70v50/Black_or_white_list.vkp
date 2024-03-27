@@ -1,0 +1,26 @@
+;CX70v50
+;Черный или белый список
+;Black or white list
+;(c) SiNgle
+;(p) AsteriX
+;Version: 1.3
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1282
+;PatchID: 75
+;Details: https://patches.kibab.com/patches/details.php5?id=75
+/*
+Чёрной становится выбранная группа в фильтре (Меню-9-6-4)
+ЧЕРНЫЙ СПИСОК - при звонке кого то из этой группы телефон кладет трубку
+БЕЛЫЙ СПИСОК - при звонке кого то НЕ из этой группы телефон кладет трубку
+*/
+0B80EDC: 06D1 0028
+0B80EE0: 04D1 0028
+0B8132E: B0420ED1 8DF368EF
+#pragma enable old_equal_ff
+0F0F200: 00402DE9060050E10500001AFF3F2DE9
+0F0F210: 0FE0A0E10CF09FE5FF3FBDE80040BDE8
+0F0F220: 04F09FE50080BDE81114BAA05113B8A0
+#pragma disable old_equal_ff
+12728A3: D5 E0
+;0F0F20B: 1A 0A ;белый список (white list) (если нужен именно он раскоментируйте)
+;------------------------- end -------------------------
+

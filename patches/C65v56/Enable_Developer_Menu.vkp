@@ -1,0 +1,13 @@
+;C65v56
+;Включение Инженерного меню
+;Enable Developer Menu
+;(c) Phantom
+;Version: 
+;PatchID: 3830
+;Details: https://patches.kibab.com/patches/details.php5?id=3830
+/*
+
+*/
+1151718: 040090E5 0000A0E3
+;------------------------- end -------------------------
+

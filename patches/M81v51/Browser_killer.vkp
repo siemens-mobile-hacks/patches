@@ -1,0 +1,21 @@
+;M81v51
+;Отключение браузера
+;Browser killer
+;(c) Zhek@
+;(p) dimonp25
+;Version: 
+;PatchID: 8494
+;Details: https://patches.kibab.com/patches/details.php5?id=8494
+/*
+Патч отключает браузер за счёт чего увеличевается оперативная память.
+*/
+;M81v51
+;Отключение браузера
+;Browser killer
+;(c) Zhek@
+;(p) dimonp25 
+
+050D58A: FEF72BFF C046C046
+
+;------------------------- end -------------------------
+

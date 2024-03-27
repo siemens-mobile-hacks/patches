@@ -1,0 +1,31 @@
+;S65v50
+;Дополнение к PIT-таблице
+;Addition to PIT-table
+;(c) 1nvisible
+;(r) avkiev
+;(p) KiRiK
+;Version: 
+;PatchID: 469
+;Details: https://patches.kibab.com/patches/details.php5?id=469
+/*
+Теперь PIT-адреса картинок с номерами #1242(0x4DA)-#1341(0x53D) можно разместить в свободной памяти (0xA0FD0050)
+
+Пока что нельзя смотреть или редактировать эти картинки с помощью SPC3 © ACiD[mrp]\b@iLLi или Smelter © avkiev
+
+EN: 
+Now you can assign PIT addresses to pics #1242(0x4DA)-#1341(0x53D) in free memory (0xA0FD0050)
+
+You can't yet view or edit these pics by means of SPC3 © ACiD[mrp]\b@iLLi or Smelter © avkiev
+
+
+*/
+1159890: FFF7F5FF 76F6B6FB
+#pragma enable old_equal_ff
+0FD0000: 0A4B984207DC084B984204DBC01AC000
+0FD0010: 034BC01810BD89F132FC024B1847C046
+0FD0020: 5000FDA0959815A1DA0400003D050000
+#pragma disable old_equal_ff
+
+0929010: D904 3D05 ; MaxPitNumber 1241->1341 (just for reference)
+;------------------------- end -------------------------
+

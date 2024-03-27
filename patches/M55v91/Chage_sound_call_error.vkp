@@ -1,0 +1,14 @@
+;M55v91
+;Замена звука при дозвоне "ошибка соединения"
+;Replace sound when calling to "call error"
+;(c) B-727
+;Version: 
+;PatchID: 2013
+;Details: https://patches.kibab.com/patches/details.php5?id=2013
+/*
+
+*/
+39A41A: B6034A017805 14051800E803
+39A420: 4A0108074A01 1800FDFF0200
+;------------------------- end -------------------------
+

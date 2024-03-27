@@ -1,0 +1,18 @@
+;CX70v50
+;Динамическая замена имени оператора
+;Dynamic replacing  of Provider name
+;(c) avkiev
+;(r) Bennie, arsh0r, Acid
+;Version: 10-MP
+;PatchID: 1062
+;Details: https://patches.kibab.com/patches/details.php5?id=1062
+/*
+MP+FL!
+См. описание в патче для X65v100.
+
+miniGPS лучше поставить, чтобы не было неожиданностей при случайно заданной функции 08. Не забываем комментировать точку входа miniGPS.
+
+*/
+172F4A0: 0xA0BA39AB 0xA0FC1B01  ; CX70v50
+;------------------------- end -------------------------
+

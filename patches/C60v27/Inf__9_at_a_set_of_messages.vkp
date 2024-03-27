@@ -1,0 +1,18 @@
+;C60v27
+;Инф.Т9 при наборе сообщений => выбор языка
+;Inf Т9 at a set of messages
+;(c) SiNgle
+;(r) WASP, djStealth
+;(p) dimon_quaker
+;Version: 
+;PatchID: 878
+;Details: https://patches.kibab.com/patches/details.php5?id=878
+/*
+
+*/
+29F3E3: 763C4D 459A0D ; в теле SMS
+39EE1D: 763C4D 459A0D ; в теле MMS
+39F5AB: 763C4D 459A0D ; в теме MMS
+
+;------------------------- end -------------------------
+

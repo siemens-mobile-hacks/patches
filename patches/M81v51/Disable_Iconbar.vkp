@@ -1,0 +1,19 @@
+;M81v51
+;Отключение Иконбара
+;Disable Iconbar
+;(c) Serega65
+;(r) Evgr
+;Version: 
+;PatchID: 9745
+;Details: https://patches.kibab.com/patches/details.php5?id=9745
+/*
+
+*/
+029C5E6: FFF76CFC C046C046
+029C664: 00F07CF9 C046C046
+;Вдруг не работает - роскоментировать.
+;029C60C: FFF71FFD C046C046 
+;029C630: FFF706FC C046C046 
+;029C64C: FFF739FC C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;SL65v53
+;Счётчик траффика вместо логотипа GPRS
+;Traffic indicator instead of GPRS logo
+;(c) Sinclair
+;(r) (i) ~Jhellico
+;(p) TicK
+;Version: 1.4-MP
+;PatchID: 5096
+;Details: https://patches.kibab.com/patches/details.php5?id=5096
+/*
+
+*/
+1189AD4: 10708DE50210A0E3020044E2 00109FE531FF2FE1,0xA0FC5601
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S65v58
+;Не cбрасывать состояние звука при переключении профилей
+;Don't reset ringtone status in profiles
+;(c) dimonp25
+;Version: 
+;PatchID: 9556
+;Details: https://patches.kibab.com/patches/details.php5?id=9556
+/*
+
+*/
+08c96ea: 98f082ea C046C046
+
+;------------------------- end -------------------------
+

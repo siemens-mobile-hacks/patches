@@ -1,0 +1,14 @@
+;S65v58
+;Включение Инженерного меню
+;Enable Developer Menu
+;(c) Phantom
+;Version: 
+;PatchID: 7561
+;Details: https://patches.kibab.com/patches/details.php5?id=7561
+/*
+Необходимо выключить пункт (S)Exit
+Developer Menu нужно повесить на горячую кнопку
+*/
+12533CC: 040090E5 0000A0E3
+;------------------------- end -------------------------
+

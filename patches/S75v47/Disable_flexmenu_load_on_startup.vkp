@@ -1,0 +1,14 @@
+;S75v47
+;Отключить загрузку FlexMenu при включении телефона
+;Disable flexmenu load on startup
+;(c) Miha_r
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8213
+;Details: https://patches.kibab.com/patches/details.php5?id=8213
+/*
+
+*/
+09FCAD0: 04 00
+;------------------------- end -------------------------
+

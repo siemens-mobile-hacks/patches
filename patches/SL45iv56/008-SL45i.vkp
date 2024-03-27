@@ -1,0 +1,15 @@
+;SL45iv56
+;Отключение запроса "Копировать содержимое SIM в Адресную книгу" при установке другой SIM-карты
+;Disable Do you want to copy all SIM Card content to the phonebook message when change SIM Card
+;(c) RizaPN
+;Version: 
+;PatchID: 1517
+;Details: https://patches.kibab.com/patches/details.php5?id=1517
+/*
+Отключает запрос "Копировать содержимое SIM в Адресную книгу" при установке другой SIM-карты.
+
+Патч №008 с http://patch.oslik.ru/SL45_RU
+*/
+44EB9E: 3D 0D
+;------------------------- end -------------------------
+

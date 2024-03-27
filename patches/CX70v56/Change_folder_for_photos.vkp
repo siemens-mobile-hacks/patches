@@ -1,0 +1,15 @@
+;CX70v56
+;Изменить папку для фотографий
+;Change folder for photos
+;(c) avkiev
+;(p) SiamiX
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=5677
+;PatchID: 4622
+;Details: https://patches.kibab.com/patches/details.php5?id=4622
+/*
+0:\Pictures => 0:\_MyPhoto
+*/
+0A4E918: 0B00,'0:\\Pictures' 0B00,'0:\\_MyPhoto'
+;------------------------- end -------------------------
+

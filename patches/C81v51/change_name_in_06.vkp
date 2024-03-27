@@ -1,0 +1,14 @@
+;C81v51
+;Замена имени в *#06#
+;Change name in *#06#
+;(c) avkiev
+;(p) den11111
+;Version: 
+;PatchID: 7338
+;Details: https://patches.kibab.com/patches/details.php5?id=7338
+/*
+
+*/
+008108D: 433831 533735
+;------------------------- end -------------------------
+

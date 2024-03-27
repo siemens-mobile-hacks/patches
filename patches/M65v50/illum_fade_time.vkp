@@ -1,0 +1,14 @@
+;M65v50
+;Задержка гашения подсветки
+;Illumination fade time
+;(c) BuG
+;(p) AsteriX
+;Version: 
+;PatchID: 6308
+;Details: https://patches.kibab.com/patches/details.php5?id=6308
+/*
+Задержка гашения подсветки.
+*/
+0B6991C: B80B E803 ; 1 sec
+;------------------------- end -------------------------
+

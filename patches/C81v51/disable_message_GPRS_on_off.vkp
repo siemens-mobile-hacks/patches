@@ -1,0 +1,14 @@
+;C81v51
+;Убрать сообщение "GPRS вкл/выкл"
+;Disable message "GPRS on/off"
+;(c) SiNgle
+;(p) dimonp25
+;Version: 
+;PatchID: 7215
+;Details: https://patches.kibab.com/patches/details.php5?id=7215
+/*
+Disable message "GPRS on/off"
+*/
+094790C: C0109F15 02F0A0E1
+;------------------------- end -------------------------
+

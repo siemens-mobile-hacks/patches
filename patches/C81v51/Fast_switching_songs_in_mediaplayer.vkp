@@ -1,0 +1,17 @@
+;C81v51
+;Быстрое переключение мелодий в медиаплеере
+;Fast switching melody in mediaplayer
+;(c) alfinant
+;(p) (NSG) dimonp25
+;Version: 
+;PatchID: 10295
+;Details: https://patches.kibab.com/patches/details.php5?id=10295
+/*
+
+*/
+0060b642: 3bd1 c046
+0060b82e: 3dd1 c046
+0060e248: 04 03
+0060d61c: 02 03
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;S75v47
+;Выбор языка ввода по долгому нажатию # в SMS, E-mail и браузере  
+;Input language select on long '#' press in SMS, E-mail and Browser
+;(c) Evgr
+;(p) Vitll
+;Version: 
+;PatchID: 9956
+;Details: https://patches.kibab.com/patches/details.php5?id=9956
+/*
+
+*/
+05CB03E: 201C E068
+0661E84: 914D 0951
+00B3B38: 0F9B01F029F9 E86801F0E5FA
+
+;------------------------- end -------------------------
+

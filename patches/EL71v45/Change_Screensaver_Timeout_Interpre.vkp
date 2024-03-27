@@ -1,0 +1,15 @@
+;EL71v45
+;Change Screensaver Timeout Interpretation
+;Change Screensaver Timeout Interpretation
+;(c) benj9
+;Version: 
+;PatchID: 8037
+;Details: https://patches.kibab.com/patches/details.php5?id=8037
+/*
+
+*/
+;05C53E4: 3C 01 ; treat minutes as seconds
+05C53E4: 3C 0i10 ; treat minutes as sixth part of seconds
+;05C53E4: 3C 0i15 ; treat minutes as quarter seconds
+;------------------------- end -------------------------
+

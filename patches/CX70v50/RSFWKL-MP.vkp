@@ -1,0 +1,18 @@
+;CX70v50
+;Вызов Различных Функций при Залоченной Клавиатуре
+;Running Some Functions While Keyboard is Locked
+;(c) 1nvisible
+;(r) Bennie, avkiev, AsteriX, KiRiK, SiNgle
+;Version: 10.5
+;PatchID: 1400
+;Details: https://patches.kibab.com/patches/details.php5?id=1400
+/*
+
+*/
+#pragma enable old_equal_ff
+1739B00: 014B1847014B1847A120FCA0C120FCA0 ; patch loader
+171881A: F8F715FE 21F071F9                ; entry fore idle mode
+171BD32: 0223E05E 1DF0E7FE                ; entry for screensaver mode
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

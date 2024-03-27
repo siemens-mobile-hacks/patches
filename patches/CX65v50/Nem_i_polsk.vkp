@@ -1,0 +1,15 @@
+;CX65v50
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;(p) AsteriX
+;Version: 
+;PatchID: 274
+;Details: https://patches.kibab.com/patches/details.php5?id=274
+/*
+Патч убирает Немецкий и Польский из меню языков ввода.
+*/
+11FA67A: 00 01
+11FA6AA: 00 01
+;------------------------- end -------------------------
+

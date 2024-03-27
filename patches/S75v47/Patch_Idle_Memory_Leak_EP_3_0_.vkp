@@ -1,0 +1,19 @@
+;S75v47
+;Устранение утечки памяти при отображении IdleScreen EP(3.0)
+;PIML (Patch Idle Memory Leak)EP(3.0)
+;(c) Rst7/CBSIE
+;(p) bertgrin
+;Version: 
+;PatchID: 10216
+;Details: https://patches.kibab.com/patches/details.php5?id=10216
+/*
+
+*/
+04EB3C4: 201CFFF721FB281C 00480047d0b207A0
+#pragma enable old_equal_ff
+007b2d0: 0400A0E180C211FA0400A0E14D6A00EB
+007b2e0: 0500A0E1FE80BDE8
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

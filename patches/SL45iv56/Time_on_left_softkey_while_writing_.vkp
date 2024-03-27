@@ -1,0 +1,22 @@
+;SL45iv56
+;Время на левом софте во время написания SMS
+;Time on left softkey while writing SMS
+;(c) vBart, FROSTER
+;Version: 1.2
+;PatchID: 2030
+;Details: https://patches.kibab.com/patches/details.php5?id=2030
+/*
+Патч убирает информацию о Т9 с левого софта и показывает там текущее время.
+
+English: Patch removes t9-info (also disables running this dialog) and delete texts 
+while writing sms. Instaead it dispalys the current time.
+
+
+Created: 17.07.04 (by vBart)
+Updated: 14.03.2005 (v1.2 by FROSTER)
+*/
+18CF82: 8302 A001 
+18CF7C: 8101 A001 
+3a7c30: DAEC50FB CC00CC00 
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;MC60v10
+;Любая кнопка - отложить будильник
+;Suspend alarm by any key
+;(c) Unknown
+;(p) Kanibaals
+;Version: 
+;PatchID: 3608
+;Details: https://patches.kibab.com/patches/details.php5?id=3608
+/*
+Правая софт-кнопка "Выкл" или любая кнопка - повтор будильника каждые 5 минут
+*/
+1BFEB0: 35 1a
+1BFEB3: 0f 1c
+1BFEB8: 2d16 0D0C 
+;------------------------- end -------------------------
+

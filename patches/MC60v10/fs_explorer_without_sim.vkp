@@ -1,0 +1,15 @@
+;MC60v10
+;Проводник без SIM-карты
+;Card Explorer without SIM-card
+;(c) SiNgle
+;(p) Hannibal
+;Version: 
+;PatchID: 3154
+;Details: https://patches.kibab.com/patches/details.php5?id=3154
+/*
+English:;unhide filesystem menu when phone switched on with no sim inserted
+*/
+35934A:c404 6105
+;359370: 6ae125 b6e125 ;replace demonstration menu with filesystem menu
+;------------------------- end -------------------------
+

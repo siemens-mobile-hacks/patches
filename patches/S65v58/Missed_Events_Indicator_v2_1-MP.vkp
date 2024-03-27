@@ -1,0 +1,29 @@
+;S65v58
+;ИндикаторПропущенных Событий
+;Missed Events Indicator
+;(c) BuG
+;(r) empeka
+;(p) -=[LCW]=-ExXtReMe
+;Version: 2.1
+;PatchID: 2657
+;Details: https://patches.kibab.com/patches/details.php5?id=2657
+/*
+Кое-что добавлено
+new in v2.1: control standard canvas, too
+Внимание! Тело патча тоже изменилось, но я просто поправил его по старому номеру патча.
+*/
+;* Missed Events Indicator v2.1 *
+; (c) BuG
+; (r) empeka
+; (p) -=[LCW]=-ExXtReMe
+; new in v2.1: control standard canvas, too
+
+; (!) MasterPatch (+ Library functions f004, f033, f034, f035, f037, v12, z03)
+
+1699078: 059800F0C6F80C206043 00488047,51A8FCA0,C046
+
+1699094: 8A4202D12988C90703D53858A02100F0C5F80136 C046,00F002E805E000C09FE51CFF2FE1,11A8FCA0
+
+
+;------------------------- end -------------------------
+

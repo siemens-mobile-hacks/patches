@@ -1,0 +1,21 @@
+;S65v58
+;Выделение Файлов Левой Софт Кнопкой в Card-Explorer'е
+;Mark Files by Left SoftKey in Card-Explorer
+;(c) 1nvisible
+;(p) KiRiK
+;Version: 1
+;PatchID: 3386
+;Details: https://patches.kibab.com/patches/details.php5?id=3386
+/*
+
+*/
+0984FC0: 02 08
+0984F4C: 360050E3 038C0EFA
+#pragma enable old_equal_ff
+0D27F60: 362800D1704703B449680979012903BC
+0D27F70: 01D036287047842036287047
+#pragma disable old_equal_ff
+
+
+;------------------------- end -------------------------
+

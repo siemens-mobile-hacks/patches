@@ -1,0 +1,19 @@
+;M55v11
+;Отключить сигналы в диктофоне
+;Disable voice record signals
+;(c) Matr!x
+;(p) ZH-Soft
+;Version: 2
+;PatchID: 5222
+;Details: https://patches.kibab.com/patches/details.php5?id=5222
+/*
+
+*/
+0C3ED2: DAA23A3B CC00CC00
+0C4156: DAA23A3B CC00CC00
+0C47EC: DAA23A3B CC00CC00
+0C4828: DAA23A3B CC00CC00
+6FE1D8: DAA23A3B CC00CC00
+701890: DAA23A3B CC00CC00
+;------------------------- end -------------------------
+

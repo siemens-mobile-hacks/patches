@@ -1,0 +1,24 @@
+;SL65v53
+;Запуск функций с помощью *# кодов
+;Running functions with *# codes
+;(c) empeka
+;(r) 1nvisible, avkiev
+;(p) andrey_ua
+;Version: 2.1
+;PatchID: 3602
+;Details: https://patches.kibab.com/patches/details.php5?id=3602
+/*
+
+*/
+;x65 - Запуск функций с помощью *# кодов v2.1
+;x65 - Running functions with *# codes v2.1
+;(c) empeka
+;(r) 1nvisible, avkiev
+;(p) andrey_ua
+;(!) Master
+;(!) API
+
+
+1648A4C: 0655021951700522 004B9847,0xA0FC4701 ; SL65v53
+;------------------------- end -------------------------
+

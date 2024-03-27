@@ -1,0 +1,15 @@
+;M55v10
+;Убрать софт-кнопки при входящем звонке
+;Remove soft keys during incoming call
+;(c) Matr!x
+;Version: 2
+;PatchID: 1384
+;Details: https://patches.kibab.com/patches/details.php5?id=1384
+/*
+
+*/
+382D58: 3600 FFFF
+382D5E: 2B02 FFFF
+382D76: 5B02 FFFF
+;------------------------- end -------------------------
+

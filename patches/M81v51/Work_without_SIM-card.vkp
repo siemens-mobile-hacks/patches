@@ -1,0 +1,20 @@
+;M81v51
+;Работа телефона без SIM-карты
+;Work without SIM-card
+;(c) ThE TrIFoN
+;(r) SiNgle
+;(p) Siemann
+;Version: 2
+;PatchID: 6214
+;Details: https://patches.kibab.com/patches/details.php5?id=6214
+/*
+;Жмем Демо и телефон включается как обычно
+;Press Demo and mobile works as usually
+
+*/
+29FB88: 0000A0E3C9FFFFEA 04F01FE5,0xA0D2F7E1
+
+
+
+;------------------------- end -------------------------
+

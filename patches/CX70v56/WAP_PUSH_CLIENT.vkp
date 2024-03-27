@@ -1,0 +1,13 @@
+;CX70v56
+;Отключение клиента WAP PUSH
+;Kill WAP PUSH Client
+;(c) PICAS
+;Version: 
+;PatchID: 9949
+;Details: https://patches.kibab.com/patches/details.php5?id=9949
+/*
+Отключает клиент WAP PUSH
+*/
+B77452: ECF69BFB c046c046;
+;------------------------- end -------------------------
+

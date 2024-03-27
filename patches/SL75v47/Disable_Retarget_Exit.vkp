@@ -1,0 +1,15 @@
+;SL75v47
+;Отключить Retarget Exit
+;Disable Retarget Exit
+;(c) 1nvisible
+;Version: 
+;PatchID: 6700
+;Details: https://patches.kibab.com/patches/details.php5?id=6700
+/*
+Для тех, у кого бывают вылеты в пик при работе в Яве
+For those who have Retarget Exit when using java
+
+*/
+03ECEAC: 70402DE9 1EFF2FE1
+;------------------------- end -------------------------
+

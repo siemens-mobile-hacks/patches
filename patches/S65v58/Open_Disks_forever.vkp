@@ -1,0 +1,13 @@
+;S65v58
+;Открыть диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;Version: 
+;PatchID: 6957
+;Details: https://patches.kibab.com/patches/details.php5?id=6957
+/*
+
+*/
+1286F1C: 02 03
+;------------------------- end -------------------------
+

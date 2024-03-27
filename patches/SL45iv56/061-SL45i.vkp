@@ -1,0 +1,37 @@
+;SL45iv56
+;Изменить Индикатор МультиЛиния на Индикатор Вибры
+;Modify MultiLine Indicator to become Vibra Indicator
+;(c) RizaPN, ValeraVi
+;Version: 3
+;PatchID: 1624
+;Details: https://patches.kibab.com/patches/details.php5?id=1624
+/*
+Этот патч позволяет отображать катринку № 339 из флеш в верху экрана 
+для отображения состояния вибры. Измените эту картинку (в оригинале там 
+картинка в виде стрелки вверх) на любую какую захотите. 
+
+Release: April 10, 2003 
+Revision: Jun 15, 2003
+
+Патч №061 с http://patch.oslik.ru/SL45_RU
+
+
+English: This patch will provide an ability to display firmware image no. 339 in the top screen 
+if the Vibra is active. Please modify the image (original image is like up-arrow) 
+as you like.
+*/
+;Вы можете указать когда показывать иконку: когда вибра включена или 
+;когда выключена. Это определяется байтом по адресу 3B3728: 
+; - если байт по адресу [3B3720] = 00 - иконка будет отображаться когда 
+;вибра включена. 
+; - если байт по адресу [3B3720] = 10 - иконка будет отображаться когда 
+;вибра выключена. 
+
+3B3708: DAA0AC1548402D08 D7400D00C2FD8924 
+3B3710: DAA0CA15F0C4DACB 5C1DD7400D00D4ED 
+3B3718: 38CA48402D0D0D05 9A2466FE100056FE 
+3B3720: E0 00 ;Показывать иконку когда вибра ВКЛ. 
+;3B3720: E0 10 ;Показывать иконку когда вибра ВЫКЛ. 
+3B3721: 1CDACB38CA4840 00CC00CC00CC00
+;------------------------- end -------------------------
+

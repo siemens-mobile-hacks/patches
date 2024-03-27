@@ -1,0 +1,14 @@
+;C72v22
+;Перенос скинов на Config
+;Carrying skins on Config
+;(c) Strike66, Волк
+;(p) Virusmater
+;Version: 
+;PatchID: 6395
+;Details: https://patches.kibab.com/patches/details.php5?id=6395
+/*
+
+*/
+A59F52: 30 32
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;C81v51
+;Моментальный запуск скринсейвера после блокировки клавиатуры
+;ScreenSaver after KeyBoard Lock
+;(c) funMarkus
+;(p) dimonp25
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9131
+;PatchID: 8542
+;Details: https://patches.kibab.com/patches/details.php5?id=8542
+/*
+
+*/
+034c9dc:aaf08aef 03f0eff9
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,56 @@
+;E71v45
+;Убрать "Пожалуйста, подождите" в органайзер->напоминания->
+;Disable "Please, wait" in organaiser->remind->
+;(c) Visad
+;(p) Evgr
+;Version: 2.0
+;PatchID: 10337
+;Details: https://patches.kibab.com/patches/details.php5?id=10337
+/*
+
+*/
+;замечание: и ещё при изменить напоминание :) До кучи к патчам Evgr'a
+
+099CDD0: B2F79BF8 C046C046 ;открыть напоминание
+099D4A4: B1F731FD C046C046 ;назад
+099D36A: B1F7CEFD C046C046 ;Изменить напоминание
+08F4898: 5AF037FB C046C046 ;Назад
+08F49C6: 5AF0A0FA C046C046 ;Импорт
+
+;E71v45
+;Убрать "Пожалуйста, подождите" в органайзер->задачи->удалить
+;Disable "Please, wait" in organaiser->tasks->delete
+;(c) Visad
+
+0A7F128: CFF6EFFE C046C046
+
+;E71v45
+;Убрать "Пожалуйста, подождите" в органайзер->задачи->импорт
+;Disable "Please, wait" in organaiser->tasks->import
+;(c) Visad
+
+099D7C6:  B1F7A0FB C046C046
+
+;E71v45
+;Убрать "Пожалуйста, подождите" в органайзер->задачи->фильтр->любой выбор фильтра
+;Disable "Please, wait" in organaiser->tasks->filter->any choose
+;(c) Visad
+
+08F49C6: 5AF0A0FA C046C046
+
+;E71v45
+;Убрать "Пожалуйста, подождите" в органайзер->календарь->выбираем день, на котором есть памятка->удалить
+;Disable "Please, wait" in organaiser->calendar->choose any day, which contain remind->delete
+;(c) Visad
+
+0A7F128: CFF6EFFE C046C046
+
+;E71v45
+;Убрать "Пожалуйста, подождите" в органайзер->календарь->импорт
+;Disable "Please, wait" in organaiser->calendar->import
+;(c) Visad
+
+099D7C6: B1F7A0FB C046C046
+
+;------------------------- end -------------------------
+

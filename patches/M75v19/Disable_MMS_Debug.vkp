@@ -1,0 +1,14 @@
+;M75v19
+;Disable MMS Debug
+;Disable MMS Debug
+;(c) 1nvisible
+;Version: 
+;PatchID: 3409
+;Details: https://patches.kibab.com/patches/details.php5?id=3409
+/*
+Продолжение анти-дебажной темы
+*/
+031DD14: 0FB4 7047
+031DE04: F0B5 7047
+;------------------------- end -------------------------
+

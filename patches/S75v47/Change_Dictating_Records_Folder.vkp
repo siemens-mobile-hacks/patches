@@ -1,0 +1,16 @@
+;S75v47
+;Замена папки для хранения диктофонных записей
+;Change Dictating Records Folder
+;(c) RainMaker AKA Shadow®
+;(r) All from S-C.org
+;Version: 
+;PatchID: 5548
+;Details: https://patches.kibab.com/patches/details.php5?id=5548
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v47&f=Change_Dictating_Records_Folder.rar
+
+/*
+Замена папки для хранения диктофонных записей.
+*/
+0670814: 1400,'0:\\Dictating machine' 0F00,'0:\\Sounds\\Voice',00,00,00,00,00,00
+;------------------------- end -------------------------
+

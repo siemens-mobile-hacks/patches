@@ -1,0 +1,14 @@
+;CX70v50
+;Изменение времени подачи ежеминутного сигнала во время разговора
+;Change minute beep during call
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 146
+;Details: https://patches.kibab.com/patches/details.php5?id=146
+/*
+Изменяется времени подачи ежеминутного сигнала во время разговора.
+*/
+0B9B49A: 00 37 ;в HEX (37h=55 секунд)
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;C55v24
+;Ускорение затухания подсветки
+;Acceleration of attenuation of illumination
+;(c) ?
+;Version: 
+;PatchID: 4292
+;Details: https://patches.kibab.com/patches/details.php5?id=4292
+/*
+; Скорость "затухания" подсветки. Можно ставить - быстро =>1E,...,медленно =>FE
+*/
+128743: 8E 1E
+;------------------------- end -------------------------
+

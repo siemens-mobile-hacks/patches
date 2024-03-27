@@ -1,0 +1,17 @@
+;SL65v53
+;Меню "Пуск" на главном экране
+;StartMenu on MainScreen
+;(c) KreN
+;(r) 1nvisible, benj9
+;(p) andrey_ua
+;Version: 2.1
+;PatchID: 3825
+;Details: https://patches.kibab.com/patches/details.php5?id=3825
+/*
+
+*/
+092286C: 2B3B8EA0 0xA0FCC0E3
+164954A: 00286CD0F8F79DFE0028 C04600498847,0xA0FCC051 ;SL65V53
+
+;------------------------- end -------------------------
+

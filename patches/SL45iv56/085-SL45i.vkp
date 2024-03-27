@@ -1,0 +1,20 @@
+;SL45iv56
+;Предотвращение отключения телефона при приеме SMS
+;Prevent phone switching off on receiving SMS
+;(c) mamaich
+;Version: 
+;PatchID: 1679
+;Details: https://patches.kibab.com/patches/details.php5?id=1679
+/*
+Патч исправляет самопроизвольное отключение телефона (с включенным (S)Exit
+code 55B0) когда вы играете во встроенные игры или печатаете что-либо, а
+телефон в этот момент получает SMS.
+
+
+Release: September 14, 2003
+
+Патч №085 с http://patch.oslik.ru/SL45_RU
+*/
+2DCA7F: 30 00
+;------------------------- end -------------------------
+

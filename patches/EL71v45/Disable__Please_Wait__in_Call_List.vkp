@@ -1,0 +1,13 @@
+;EL71v45
+;Отключить "Подождите" в Списке Вызовов
+;Disable "Please Wait" in Call List
+;(c) 1nvisible
+;Version: 
+;PatchID: 8024
+;Details: https://patches.kibab.com/patches/details.php5?id=8024
+/*
+
+*/
+0A8CADA: 0120 10BD
+;------------------------- end -------------------------
+

@@ -1,0 +1,42 @@
+;CX75v13
+;Разгон процессора до 208 МГц
+;CPU OverClock to 208 MHz
+;(c) Dimadze
+;(p) Marie
+;Version: 1.02
+;PatchID: 10680
+;Details: https://patches.kibab.com/patches/details.php5?id=10680
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v13&f=arm_core_oc_cx75v13_206_vkp.zip
+
+/*
+Прошлая версия в архиве
+*/
+;CX75v13
+;v1.02_fix
+;Разгон процессора до 208 МГц
+;CPU OverClock to 208 MHz
+;(c) Dimadze
+;(p) Marie
+;Отмените старую версию обязательно! Она глючна и больше не актуальна)))
+;PATCH_BODY
+#pragma enable old_equal_ff
+0x001FFF00: FF1CC1E3801E81E3A4108EE5544200EA
+0x001FFF10: 4C009FE5A80090E5200AA0E10F0000E2
+0x001FFF20: 040050E3D000A0036800A0130880BDE8
+0x001FFF30: 4221A0E11F402DE9F004A0E3101090E5
+0x001FFF40: 4016C1E3101080E5601090E52010A0E3
+0x001FFF50: 601080E5681090E52010A0E3681080E5
+0x001FFF60: 1F80BDE8000050F4
+;PLL_A4_FIX
+#pragma disable old_equal_ff
+0x00210860: A4108EE5 A6BDFFEA
+;PLL_A8_HIGHFREQ
+0x00210CC0: 800980E3 400880E3
+;EBU_PLL_SETTINGS
+0x0021AE64: 4221A0E1 3194FFEB
+;CPU_OC_OVERLAY
+0x008EC41C: 6800A0E3 BB4EE4EA
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

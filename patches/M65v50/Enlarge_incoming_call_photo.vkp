@@ -1,0 +1,15 @@
+;M65v50
+;Увеличить размер фото при входящем звонке
+;Enlarge incoming call photo
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 366
+;Details: https://patches.kibab.com/patches/details.php5?id=366
+/*
+
+*/
+0A3410A: 052104 002100
+0A34112: 502280 8422A8
+;------------------------- end -------------------------
+

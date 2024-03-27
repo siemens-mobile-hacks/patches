@@ -1,0 +1,37 @@
+;M75v25
+;Передача некоторых данных Netmonitor мидлетам
+;Some Netmonitor data for Java
+;(c) ~Jhellico
+;(r) 1nvisible
+;(p) Grizzzzly
+;Version: 1.1
+;PatchID: 4749
+;Details: https://patches.kibab.com/patches/details.php5?id=4749
+/*
+Развитие * CIDs and LACs for Java * - Some Netmonitor data for Java v1.1 (свойство MPJCRXLS - значения RX level для текущей и соседних сот)
+
+return current CID and LAC values in Java properties MPJC_CID and MPJC_LAC
+return current+6 neighbours CID and LAC values in Java properties MPJCCIDS and MPJCLACS
+return current+6 neighbours RX values in Java property MPJCRXLS
+
+*/
+0895A68: 0080A0E30080C1E50140A0E1 04E08FE204F01FE5,0xA00D4005
+
+#pragma enable old_equal_ff
+00D4000: F081BDE8FEB50268274B9A4239D10D1C
+00D4010: 2B4C264B4068984210D0254B98420CD0
+00D4020: 244B984216D0244B984212D0234B9842
+00D4030: 1DD000200870081C07E0023402342288
+00D4040: 281C18A11F4FB847281CFEBC7FB0FFF7
+00D4050: D8EF02340234072120B4228800F016F8
+00D4060: 01390029F9D1013D297001BCEDE70634
+00D4070: 072120B4227800F009F801390029F9D1
+00D4080: F1E7FEBC00240C700C1C00BD02B505A1
+00D4090: 281C0C4FB8472D182C21297001350C34
+00D40A0: 02BDFFFF256900FF4D504A435F434944
+00D40B0: 5F4C4143434944534C41435352584C53
+00D40C0: 0xA851A92C,0xA0EF1B55
+#pragma disable old_equal_ff 
+
+;------------------------- end -------------------------
+

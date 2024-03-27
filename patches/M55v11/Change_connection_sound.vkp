@@ -1,0 +1,14 @@
+;M55v11
+;Изменение звука при установке соединения
+;Change connection sound
+;(c) SiNgle
+;(p) AlexSid
+;Version: 
+;PatchID: 5200
+;Details: https://patches.kibab.com/patches/details.php5?id=5200
+/*
+
+*/
+01F18A: 13 3A  ;Вместо 3A можно ставить 3A 3B 3C 3D 3E 01 5A
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;C75v22
+;Идем в Native menu по тройному нажатию ###
+;Go to Native Menu by pressing ###
+;(c) SiNgle
+;(r) ThE TrIFoN,1nvisible
+;(p)  SMeeTBB
+;Version: 
+;PatchID: 1159
+;Details: https://patches.kibab.com/patches/details.php5?id=1159
+/*
+Нужен патч на открытие dev menu
+*/
+0786564: 7DF07DFB 0AF51CFB
+0490BA0: FFFFFFFFFFFFFFFF FFB531F6DBF8FFBD
+;------------------------- end -------------------------
+

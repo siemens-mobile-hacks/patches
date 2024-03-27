@@ -1,0 +1,18 @@
+;SL45iv56
+;Показывать уровень цифрами во время регулировки громкости
+;Display number on adjust volume
+;(c) cool_lang(my chinese ID)
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1642
+;PatchID: 1639
+;Details: https://patches.kibab.com/patches/details.php5?id=1639
+/*
+Патч №073 с http://patch.oslik.ru/SL45_RU
+*/
+3BA12E:DAD0585C DAC740DB 
+
+27DB40:FFFFFFFFFFFFFFFF DAD0585CC0CEE6FC 
+27DB48:FFFFFFFFFFFFFFFF 3C0006FE0102E02D 
+27DB50:FFFFFFFFFFFFFFFF DAC1EC22DB00FFFF
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;S65v58
+;Сохранение видео и фото на ММС-карте
+;Save videos and photos on the MMC-card
+;(c) avkiev
+;Version: 
+;PatchID: 1218
+;Details: https://patches.kibab.com/patches/details.php5?id=1218
+/*
+Видео и фотографии сохраняются на MMC, независимо от настроек
+*/
+0A247F8: 30 34
+;------------------------- end -------------------------
+

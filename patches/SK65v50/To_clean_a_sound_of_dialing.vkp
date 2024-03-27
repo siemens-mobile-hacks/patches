@@ -1,0 +1,14 @@
+;SK65v50
+;Убирать звук дозвона
+;To clean a sound of dialing
+;(c) AlexSid
+;(p) AsteriX
+;Version: 
+;PatchID: 2487
+;Details: https://patches.kibab.com/patches/details.php5?id=2487
+/*
+
+*/
+0D48180: D0D7D5A0 00000000
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;C65v56
+;Отключить звук в начале записи видео
+;No start sound in Video rec
+;(c) SiNgle
+;Version: 
+;PatchID: 5340
+;Details: https://patches.kibab.com/patches/details.php5?id=5340
+/*
+
+*/
+08DC0E4: 1A 1D
+
+;------------------------- end -------------------------
+

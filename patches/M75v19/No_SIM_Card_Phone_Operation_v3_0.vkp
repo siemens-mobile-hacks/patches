@@ -1,0 +1,22 @@
+;M75v19
+;Работа телефона без СИМ-карты
+;No SIM Card Phone Operation
+;(c) SiNgle
+;(r) Serega_1
+;(p) Kibab
+;Version: 3.0
+;PatchID: 4653
+;Details: https://patches.kibab.com/patches/details.php5?id=4653
+/*
+Теперь вместо сообщения "Вставьте Сим" телефон грузится:)
+
+*/
+02C6CB2: 10B5CE49CF4881F07DFB041CCE49 08B5014B984708BDC04630244AA0
++04A2430
+#pragma enable old_equal_ff
+00: FF7F2DE910109FE510009FE50120A0E3
+10: 0FE0A0E111FF2FE1FFBFBDE8,0xA08307D0 ; ---A
+20: 00200BA8 ; B
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;M50v19
+;Изменение времени автоблокировки клавиш и заставки
+;Chage automatic keypad lock time
+;(c) SiNgle
+;Version: 
+;PatchID: 5318
+;Details: https://patches.kibab.com/patches/details.php5?id=5318
+/*
+Задайте задержку перед автоблокировкой в милисекундах
+*/
+4f8be2:60EA 8813
+;------------------------- end -------------------------
+

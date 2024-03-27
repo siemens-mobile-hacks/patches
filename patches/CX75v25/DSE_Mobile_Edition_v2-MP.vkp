@@ -1,0 +1,19 @@
+;CX75v25
+;DSE Mobile Edition
+;DSE Mobile Edition
+;(c) 1nvisible
+;(r) ACiD[mrp], KreN, ~Jhellico
+;(p) sempai
+;Version: 2-MP
+;PatchID: 5673
+;Details: https://patches.kibab.com/patches/details.php5?id=5673
+/*
+v2: for MP v14
+переназначение клавиш с мобилы.
+для использования стандартной функции, в строке написать STDF 
+English:Allows keys to be rebound from the mobile phone.
+If you want the standart function to be used - put "STDF" as a string.
+*/
+03297E4: 2C3A381CA16B73F1B4EC 00488047,0xA0FC9001,C046
+;------------------------- end -------------------------
+

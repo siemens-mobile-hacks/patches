@@ -1,0 +1,18 @@
+;SL75v52
+;Не показывать провайдер, сабпровайдер, профиль и поиск сети на главном экране
+;Do not show provider, subprovider, profile and network search message on main screen
+;(c) Miha_r
+;(r) dimonp25
+;(p) Виктор89
+;Version: 
+;PatchID: 9639
+;Details: https://patches.kibab.com/patches/details.php5?id=9639
+/*
+
+*/
+030073A: FEF7B1F8 C046C046 ;network search
+0300846: FEF777F8 C046C046 ;provider
+0300864: FEF768F8 C046C046 ;subprovider
+0300944: FDF7F8FF C046C046 ;profile
+;------------------------- end -------------------------
+

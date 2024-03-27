@@ -1,0 +1,19 @@
+;S75v52
+;Запуск медиаплеера при подключении гарнитуры
+;Run mediaplayer at headset connection
+;(c) -=(Kad)=-, Kibab
+;(r) ~Jhellico, ThE TrIFoN
+;Version: 7.5
+;PatchID: 8482
+;Details: https://patches.kibab.com/patches/details.php5?id=8482
+/*
++7.5 Универсализация под EL71
+
++7 Теперь точно финал, исправил глюки, теперь грамотно работает остановка\воспроизведение при подключении\отключении гарнитуры
+
+*/
+0336422: 201C54F7A5FF45F70CEF 014FB847C04601DB06A0
+006DBB0: 0xFFFFFFFF 0xA027BFF0 ; 2nd BLX\BL instruction after entrypoint
+
+;------------------------- end -------------------------
+

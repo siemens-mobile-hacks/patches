@@ -1,0 +1,36 @@
+;S65v58
+;Замена иконки вав на иконку с винампа
+;Winamp icon for wav files
+;(c) boberr
+;Version: 
+;PatchID: 3188
+;Details: https://patches.kibab.com/patches/details.php5?id=3188
+/*
+Этот Патч заменяет иконку wav на иконку winamp-а!
+*/
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 25.04.2006  -  Time: 18:40:38                             ###
+; ### Patch for: SIEMENS S65 v58                                      ###
+; #######################################################################
+
+
+; ##### Picture 487 #####
+00DA0F5C: 0E0E8500002CE3A0 0E0E85000063D2A0
+
+00D26300: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0CC0FF8D07C0FE6D9202C0FDB1E8A806
+00D26310: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C0FF6D0200FCB2D5ECC806C0FF6D0200
+00D26320: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FCA8F9F1CC06C0FB6D0064F0F802CCFF
+00D26330: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 9105C0FA6D20CCF8F9F402F0FEC89203
+00D26340: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C0FD6D008402F8F9FCF4CCC8EC249202
+00D26350: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C0F4920460C8F9F0A8CCF064006D03C0
+00D26360: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F69624F9D0A8F0A820006D05C0FFF402
+00D26370: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF CCFEF0400200FF6D05C0FCCCC8ECA803
+00D26380: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00FF6D05C0FFA802CCFBB2C024006D06
+00D26390: FFFFFFFFFFFFFFFFFFFF C0FEA8B104C0FF6D14C0
+;------------------------- end -------------------------
+

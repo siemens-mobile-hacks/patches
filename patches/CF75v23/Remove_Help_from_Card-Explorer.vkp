@@ -1,0 +1,14 @@
+;CF75v23
+;Убрать пункт "Справка" в Card-Explorer'e
+;Remove "Help" item from Card-Explorer
+;(c) 1nvisible
+;(p) NeverGone
+;Version: 
+;PatchID: 9860
+;Details: https://patches.kibab.com/patches/details.php5?id=9860
+/*
+
+*/
+4b76bc: 17 16
+;------------------------- end -------------------------
+

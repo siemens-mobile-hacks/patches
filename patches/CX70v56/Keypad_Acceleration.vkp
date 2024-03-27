@@ -1,0 +1,14 @@
+;CX70v56
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 683
+;Details: https://patches.kibab.com/patches/details.php5?id=683
+/*
+Изменяется скорость автоповтора клавиатуры.
+*/
+0CB64CA: 56 20
+;------------------------- end -------------------------
+

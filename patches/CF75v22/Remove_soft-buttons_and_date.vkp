@@ -1,0 +1,19 @@
+;CF75v22
+;Убрать софт-кнопки с главного экрана и !!!УБРАТЬ!!! дату
+;To remove soft-buttons from the main screen and!!! TO REMOVE!!! Date
+;(c) SiNgle
+;(r) AsteriX, The Nameless
+;Version: 
+;PatchID: 1529
+;Details: https://patches.kibab.com/patches/details.php5?id=1529
+/*
+Убрать софт-кнопки с главного экрана и !!!УБРАТЬ!!! дату. Патч немного подредактирован The Nameless, т.к. он считает, что часы можно посмотеть и на внешнем экране.
+
+To remove soft-buttons from the main screen and to remove date. The pathc there is some edited The Nameless, since it considers, that hours it is possible look and on the external screen.
+*/
+02D1F45: D0 E0
+02D2002: 05D1 0028
+02D2C80: 0DD1 0028
+02D2C86: 0AD1 0028
+;------------------------- end -------------------------
+

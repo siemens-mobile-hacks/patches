@@ -1,0 +1,51 @@
+;M75v12
+;Инвертирование цифровых часов на заставке
+;Invert Digatal Clock on Screensaver
+;(c) SiNgle
+;(r) AsteriX
+;Version: 
+;PatchID: 603
+;Details: https://patches.kibab.com/patches/details.php5?id=603
+/*
+Инвертрует цифровые часы на заставке. Можно выбрать цвета.
+*/
+02CFD02: 01 00 ;1h back
+02CFD0A: 00 01 ;1h font
+02CFD4C: 01 00 ;2h back
+02CFD54: 00 01 ;2h font
+02CFD8E: 01 00 ;":" back
+02CFD96: 00 01 ;":" font
+02CFDCA: 01 00 ;1m back
+02CFDD2: 00 01 ;1m font
+02CFE12: 01 00 ;2m back
+02CFE1A: 00 01 ;2m font
+02CFE64: 01 00
+02CFE6C: 00 01
+04AB1A8: 00 01 ;ProvName font
+04AB1AC: 01 00 ;background
+04AB218: 00 01 ;ProvFon with Arrow
+04AB21C: 01 00 ;background with Arrow
+;color table (0..17h) R G B
+;00 - white
+;01 - black
+;02 - red (base)
+;03 - navy (base)
+;04 - green (base)
+;05 - magenta (base)
+;06 - aqua (base)
+;07 - yellow (base)
+;08 - red (light)
+;09 - navy (light)
+;0A - green (light)
+;0B - magenta (light)
+;0C - aqua (light)
+;0D - yellow (light)
+;0E - red (dark)
+;0F - navy (dark)
+;10 - green (dark)
+;11 - magenta (dark)
+;12 - aqua (dark)
+;13 - yellow (dark)
+;14-17 - clean 
+;------------------------- end -------------------------
+

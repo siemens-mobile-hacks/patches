@@ -1,0 +1,13 @@
+;S75v40
+;Подсветка при смене профиля
+;Illumination in SetProfile
+;(c) BoBa
+;Version: 
+;PatchID: 6250
+;Details: https://patches.kibab.com/patches/details.php5?id=6250
+/*
+Отключает подсветку при смене профиля
+*/
+02CF822: 1CF1D8EE C046C046
+;------------------------- end -------------------------
+

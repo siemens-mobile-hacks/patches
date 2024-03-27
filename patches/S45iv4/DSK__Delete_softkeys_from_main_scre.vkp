@@ -1,0 +1,35 @@
+;S45iv4
+;Убрать софт-кнопки с главного экрана
+;DSK. Delete softkeys from main screen
+;(c) Charger, Danila_Master_, Nick0las, Lalo, belwer
+;Version: 00
+;PatchID: 10690
+;Details: https://patches.kibab.com/patches/details.php5?id=10690
+/*
+С трудом нашел этот патч. Почему-то в базе Астерикса и на сименс клубе не было его. Нашел на иностранном сайте, установил работает.
+Убирает софты только на главном экране. В остальных менюхах кнопки остаются. Маленькие дату и время сдвигает вниз на место софт кнопок. Также хорош тем, что теперь флеш смс не налазит на цифровые часы, если их используете на главном экране.
+
+Только один баг нашел: если вы выводите иконку вкл/выкл. вибросигнала в момент разговора через APM, то она теперь не светится независимо от того включен этот режим или нет в Моем меню.
+*/
+;Firmware: S/ME45i v04
+;Authors: Charger, Danila_Master_, Nick0las, Lalo, belwer
+;Release: 07.02.2006
+
+; (missed and other events remain)
+
+058F34: 4201 FFFF ; right softkey
+058F94: D113 FFFF ; left softkey
+
+; move date/time down
+05900E: 31 3E ;date/time if CB message or Flash SMS are on screen
+059026: 31 3E ;date/time in network search
+05904E: 31 3E ;date and time only
+; date/time with logo
+05906E: 31 3E ;date/time only
+05907E: 31 3E ;date/time and CB messages
+
+; Change CB message position and font type (works with Flash SMS too):
+59016:250002 3E0002 ; use with displayed date/time string and operator name
+59066:2E0002 3E0002 ; use with undisplayed date/time string and operator name
+;------------------------- end -------------------------
+

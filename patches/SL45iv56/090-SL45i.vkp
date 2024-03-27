@@ -1,0 +1,26 @@
+;SL45iv56
+;Отправка Flash SMS напрямую с телефона
+;Flash SMS Directly from the Phone
+;(c) RizaPN
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1736
+;PatchID: 1683
+;Details: https://patches.kibab.com/patches/details.php5?id=1683
+/*
+Позволяет отправлять Flash SMS напрямую с телефона. 
+Достаточно перед текстом SMS'ки поставить пробел.
+
+Release: October 17, 2003
+
+Патч №090 с http://patch.oslik.ru/SL45_RU
+*/
+39B3F6: F2FF02FE DAC700DC 
+
+27DC00: FFFFFFFFFFFFFFFF 88C0DC69D4C82C00 
+27DC08: FFFFFFFFFFFFFFFF A8CCF42C2F003D0B 
+27DC10: FFFFFFFFFFFFFFFF DC49F42C3D0067F2 
+27DC18: FFFFFFFFFFFFFFFF 5F003D05E7F2F000 
+27DC20: FFFFFFFFFFFFFFFF DC49E42C2F0098C0 
+27DC28: FFFFFFFFFFFFFFFF F2FF02FEDB00FFFF 
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;SL45iv56
+;LSF. Функции левого софта
+;LSF. Left Softkey Function
+;(c) RizaPN
+;Version: 
+;PatchID: 1872
+;Details: https://patches.kibab.com/patches/details.php5?id=1872
+/*
+Меняет местами длинное и котортое нажатия на левый софт.
+
+
+Published: July 04, 2004
+
+Патч №170 с http://patch.oslik.ru/SL45_RU
+*/
+0x3B034C: 62 40
+0x3B06F8: 40 62
+;------------------------- end -------------------------
+

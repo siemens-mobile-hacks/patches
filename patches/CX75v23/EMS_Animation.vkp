@@ -1,0 +1,17 @@
+;CX75v23
+;Смайлики вместо стандартных анимаций в смс
+;EMS Animation smiles
+;(c) booblik
+;(r) booblik
+;Version: 
+;PatchID: 3105
+;Details: https://patches.kibab.com/patches/details.php5?id=3105
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v23&f=EMS_Animation.rar
+
+/*
+Меняет уродливые рожицы в смс=>Рис.и звуки=>Станд.аним. на более симпатичные небольшие смайлики.
+
+*/
+;Патч прикреплён как вспомогательный файл.
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;CX75v13
+;Отключить Сообщение "Список Пуст!"
+;Disable "List Empty!" Message
+;(c) 1nvisible
+;Version: 
+;PatchID: 6435
+;Details: https://patches.kibab.com/patches/details.php5?id=6435
+/*
+
+*/
+58A572: 9F49 03E0
+;------------------------- end -------------------------
+

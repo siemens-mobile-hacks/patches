@@ -1,0 +1,23 @@
+;C75v24
+;Работа телефона без СИМ-карты
+;No SIM Card Phone Operation
+;(c) SiNgle
+;(r) N1K
+;(p) green
+;Version: 3
+;PatchID: 10524
+;Details: https://patches.kibab.com/patches/details.php5?id=10524
+/*
+
+*/
+02C9AB8: 10B5BB49BB4875F0 08B5014B014B9847
+02C9AC0: CCFA041CBE4975F0 08BDC046100A49A0
++0490A10
+#pragma enable old_equal_ff
+00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FF7F2DE910109FE510009FE50120A0E3
+10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0FE0A0E111FF2FE1FFBFBDE8,0xA07DCAC0
+20: FFFFFFFF 00200BA8
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

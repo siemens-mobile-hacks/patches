@@ -1,0 +1,15 @@
+;SL45iv56
+;Отключение верификации JAVA-классов
+;No Java class verification
+;(c) Chaos
+;Version: 
+;PatchID: 1619
+;Details: https://patches.kibab.com/patches/details.php5?id=1619
+/*
+Реально ускоряет запуск мидлетов на 30-70% (сильно зависит от мидлета, особенно хорошо заметно на Словарике и Prince of Persia).
+
+Патч №056 с http://patch.oslik.ru/SL45_RU
+*/
+2A63A4: 3D 0D
+;------------------------- end -------------------------
+

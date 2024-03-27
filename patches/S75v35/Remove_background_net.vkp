@@ -1,0 +1,14 @@
+;S75v35
+;Убрать сетку с бэкграунда при прорисовке окошек, например "Please Wait" и тп и тд
+;Remove background netting while showing MsgBoxes, "Please Wait", e.g.
+;(c) SiNgle
+;(p) StrikerVoo
+;Version: 
+;PatchID: 3377
+;Details: https://patches.kibab.com/patches/details.php5?id=3377
+/*
+Патч убирает наложение белого цвета с фона при прорисовке окон. Таким образом, можно без искажений видеть предыдущую картинку.
+*/
+09FF4A8: 55 00
+;------------------------- end -------------------------
+

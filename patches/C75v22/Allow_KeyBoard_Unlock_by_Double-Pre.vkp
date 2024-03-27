@@ -1,0 +1,16 @@
+;C75v22
+;Разрешить Разблокировку Клавиатуры Двойным Нажатием #
+;Allow KeyBoard Unlock by Double-Press of #
+;(c) 1nvisible
+;(p) klaud
+;Version: 
+;PatchID: 5647
+;Details: https://patches.kibab.com/patches/details.php5?id=5647
+/*
+Долгое нажатие также работает.
+
+*/
+33EC98: 36D1 C046
+
+;------------------------- end -------------------------
+

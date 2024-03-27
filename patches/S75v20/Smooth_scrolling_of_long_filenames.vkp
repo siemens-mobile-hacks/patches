@@ -1,0 +1,14 @@
+;S75v20
+;Плавная прокрутка длинных имен файлов
+;Smooth scrolling of long filenames
+;(c) SiNgle
+;Version: 
+;PatchID: 1672
+;Details: https://patches.kibab.com/patches/details.php5?id=1672
+/*
+
+*/
+068A784: d00700002C01 120200002A00
+0BFAE48: D00700002C01 120200002A00
+;------------------------- end -------------------------
+

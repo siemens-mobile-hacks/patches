@@ -1,0 +1,14 @@
+;EL71v45
+;Перезагрузка вместо выключения при долгом нажатии красной кнопки
+;Reboot instead of power off by long holding of red button
+;(c) Visad
+;(p) Виктор89
+;Version: 
+;PatchID: 9272
+;Details: https://patches.kibab.com/patches/details.php5?id=9272
+/*
+
+*/
+0940732: D8F23CEF 09F402EC
+;------------------------- end -------------------------
+

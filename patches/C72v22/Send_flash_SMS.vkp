@@ -1,0 +1,20 @@
+;C72v22
+;Отпрака flash SMS
+;Send flash SMS
+;(c) mihan28
+;(r) avkiev
+;Version: 
+;PatchID: 7712
+;Details: https://patches.kibab.com/patches/details.php5?id=7712
+/*
+
+*/
+13BEAB0: 201CB168 7AF3A6F9
+
+#pragma enable old_equal_ff
+1738E00: 201CB8380178082906D000290CD1417B
+1738E10: 7F221140F02204E0437B817B1B02C918
+1738E20: 1822202900D10270201CB1687047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

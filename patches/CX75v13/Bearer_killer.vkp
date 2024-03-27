@@ -1,0 +1,17 @@
+;CX75v13
+;Bearer killer
+;Bearer killer
+;(c) Zhek@
+;(p) Nikolas535
+;Version: 
+;PatchID: 9426
+;Details: https://patches.kibab.com/patches/details.php5?id=9426
+/*
+отключает загрузку браузера и ява-машины
+после установки этого патча Browser killer в принципе не нужен :)
+*/
+
+7F4988: 3CF228EF c046c046 ;rap bearer 0 (browser)
+7F49A0: 3CF21CEF c046c046 ;rap bearer 1 (java)
+;------------------------- end -------------------------
+

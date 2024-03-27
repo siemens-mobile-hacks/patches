@@ -1,0 +1,15 @@
+;SL45iv56
+;Открывает опцию "Передать через ИК" для JAR-файлов
+;Unhide Send Via IrDA Options for JAR file
+;(c) RizaPN
+;Version: 
+;PatchID: 1562
+;Details: https://patches.kibab.com/patches/details.php5?id=1562
+/*
+В Card-Explorer открывает опцию "Передать через ИК" для JAR-файлов.
+
+Патч №022 с http://patch.oslik.ru/SL45_RU
+*/
+388624: F0C8 0D11 
+;------------------------- end -------------------------
+

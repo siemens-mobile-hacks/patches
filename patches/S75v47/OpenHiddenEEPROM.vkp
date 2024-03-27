@@ -1,0 +1,13 @@
+;S75v47
+;Открыть заблокированные блоки EEPROM
+;OpenHiddenEEPROM (OpenClosedEEPROM)
+;(c) Skylord
+;Version: 
+;PatchID: 5875
+;Details: https://patches.kibab.com/patches/details.php5?id=5875
+/*
+
+*/
+0262BFC: 00 01
+;------------------------- end -------------------------
+

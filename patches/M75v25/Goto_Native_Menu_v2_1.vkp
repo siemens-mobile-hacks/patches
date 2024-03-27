@@ -1,0 +1,27 @@
+;M75v25
+;Переход в Главное меню по нажатию ###
+;Goto Native Menu by pressing ###
+;(c) ThE TrIFoN
+;(r) SiNgle
+;(p) Grizzzzly
+;Version: 2.1
+;PatchID: 4401
+;Details: https://patches.kibab.com/patches/details.php5?id=4401
+/*
+Позволяет выйти в Главное меню по нажатию ### практически из любого места.
+
+Должен быть включён пункт "Ebable ###" в Developer Menu -  LOGAL - Options
+English:
+; Now it works with playing Mp3
+; Start Mp3-Player, then choose "options->edit"
+; Now you can choose Native Menu with ###
+; Or you set Keylock and then press ###
+*/
+07D64A8: 84F023FB CBF44AFF
+#pragma enable old_equal_ff 
+04A2340: FFB55DF398FE002807D10320B8F3CCFD
+04A2350: 7FB4034900230B707FBC1CF65FFBFFBD
+04A2360: 44F84FA8
+#pragma disable old_equal_ff 
+;------------------------- end -------------------------
+

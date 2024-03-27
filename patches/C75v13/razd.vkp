@@ -1,0 +1,18 @@
+;C75v13
+;Изменение разделителя в меню
+;Change delimiter in menu
+;(c) *S*h*a*D*o*W
+;(r) AsteriX
+;Version: 
+;PatchID: 979
+;Details: https://patches.kibab.com/patches/details.php5?id=979
+/*
+
+*/
+103DB18: 55555555555555555555555F FFFFFFFFFFFFFFFFFFFFFFFF
+
+;FFFFFFFFFFFFFFFFFFFFFFFF ; "_____________"
+;8F11E23C4788F11E23C4788F ; "._._._._._._." 
+;22222222222222222222222F ; ". . . . ."  
+;------------------------- end -------------------------
+

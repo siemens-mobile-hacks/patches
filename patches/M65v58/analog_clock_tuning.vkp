@@ -1,0 +1,19 @@
+;M65v58
+;Изменения аналоговых часов
+;Analog Clock Tuning
+;(c) SiNgle
+;Version: 3.0
+;PatchID: 936
+;Details: https://patches.kibab.com/patches/details.php5?id=936
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=m65v58&f=analog_clock_tuning.rar
+
+/*
+
+*/
+163F212: 9E 80 ; Hands length
+;163F286: 01 02 ; Center-point
+163F2D4: 01 00 ; Minute hand color
+163F384: 01 00 ; Hour hand second line color (bold)
+163F3E4: 01 00 ; Hour hand color
+;------------------------- end -------------------------
+

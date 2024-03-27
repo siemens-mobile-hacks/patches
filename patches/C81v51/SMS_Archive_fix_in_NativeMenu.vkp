@@ -1,0 +1,14 @@
+;C81v51
+;Корректная работа пункта "Архив сообщений" в NativeMenu
+;SMS Archive fix in NativeMenu
+;(c) Miha_r
+;(p) BalakinUser
+;Version: 
+;PatchID: 8622
+;Details: https://patches.kibab.com/patches/details.php5?id=8622
+/*
+
+*/
+08E414C: 0xA061BF1D 0xA0337AD3
+;------------------------- end -------------------------
+

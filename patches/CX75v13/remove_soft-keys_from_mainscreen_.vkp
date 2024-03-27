@@ -1,0 +1,22 @@
+;CX75v13
+;Убрать софт-кнопки с главного экрана и опустить дату с часами вниз
+;Remove soft-keys from MainScreen
+;(c) SiNgle
+;(r) TAPAKAH
+;(p) Smelter by avkiev
+;Version: 2.0
+;PatchID: 765
+;Details: https://patches.kibab.com/patches/details.php5?id=765
+/*
+RUS: Убирает софт кнопки с главного экрана (экрана режима ожидания) и опускает дату и время на их место. При этом функции, назначенные на софт кнопки остаются в силе при нажатии на кнопки.
+
+ENG: Cleans a software of the button from the main screen (the screen of a mode of expectation) and lowers date and time for their place. Thus the functions appointed to a software of the button will hold good by pressing buttons.
+*/
+02CBEA5: D0 E0
+02CBF62: 05D1 0028
+0347118: 07D1 0028 ;чтоб часы не скакали вверх при SMS и т.п.
+02CC9F2: 0DD1 0028
+02CC9F8: 0AD1 0028
+
+;------------------------- end -------------------------
+

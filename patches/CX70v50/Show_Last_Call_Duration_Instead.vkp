@@ -1,0 +1,16 @@
+;CX70v50
+;Показывать Время Последнего Разговора Вместо Пункта "Послед. разг."
+;Show Last Call Duration Instead of "Last Call" Item
+;(c) 1nvisible
+;(p) SiamiX
+;Version: 
+;PatchID: 3822
+;Details: https://patches.kibab.com/patches/details.php5?id=3822
+/*
+
+*/
+// Durat/charges menu// Меню Время/стоим.
+;(!) MP v3 or GetLP Patch
+1735E88: C5000000 B8C063A8
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;M55v10
+;Плавное включение подсветки
+;Smooth illumination turn on
+;(c) SiNgle
+;Version: 
+;PatchID: 1554
+;Details: https://patches.kibab.com/patches/details.php5?id=1554
+/*
+
+*/
+35B040: FFFFFFFFFFFFFFFFFFFF E6FE0004DAA0E8C6DB00
+80C735: A0E8C6 5540B0
+80C81F: 9EEEF3 5540B0
+
+;------------------------- end -------------------------
+

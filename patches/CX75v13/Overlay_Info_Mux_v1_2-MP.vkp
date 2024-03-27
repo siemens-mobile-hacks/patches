@@ -1,0 +1,16 @@
+;CX75v13
+;Оверлей инфо мультиплексер
+;Overlay Info Mux
+;(c) benj9
+;(p) Geka
+;Version: 1.2-MP
+;PatchID: 7256
+;Details: https://patches.kibab.com/patches/details.php5?id=7256
+/*
+
+*/
+02BE560: 00F019F8201CDFF15AE9 004F3847,0xA0FD99CD,C046
+0FD9B90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0xA02BE537,0xA02BE597,0xA07FB5EF,0xA07FB67B
+07F7D6A: 62680BA80092002200212368 0149884719E0,0xA0FD9917,C046
+;------------------------- end -------------------------
+

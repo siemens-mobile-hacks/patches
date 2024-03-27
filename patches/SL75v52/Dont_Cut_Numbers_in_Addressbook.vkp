@@ -1,0 +1,16 @@
+;SL75v52
+;Не Резать Номера в Адреске
+;Don't Cut Numbers in Addressbook
+;(c) BingK(binghelingxi), 1nvisible
+;(p) SimaFish
+;Version: 
+;PatchID: 9301
+;Details: https://patches.kibab.com/patches/details.php5?id=9301
+/*
+
+Актуально только при использовании стандартного гигантского шрифта, с другими шрифтами и так не обрезается.
+*/
+0643683: 9A EA ; Addressbook,(c)1nvisible
+065FB47: 9A EA ; Phonebook,(c)BingK(binghelingxi)
+;------------------------- end -------------------------
+

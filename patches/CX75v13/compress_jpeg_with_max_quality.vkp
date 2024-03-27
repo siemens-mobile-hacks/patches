@@ -1,0 +1,20 @@
+;CX75v13
+;Сжатие JPEG с максимальным качеством
+;Compress JPEG with max quality
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1280
+;PatchID: 773
+;Details: https://patches.kibab.com/patches/details.php5?id=773
+/*
+RUS: Сжимает сделанные камерой телефона фотографии с качеством 100% вместо 75%. ВНИМАНИЕ!!! Я ставил этот патч, но не заметил изменения размера файлов (а они по идее увеличится должны), так что он, похоже пока не работает. Ждём исправления...
+
+ENG: Compresses made by the chamber of phone of a photo with quality of 100 % instead of 75 %. ATTENTION!!! I put this patch, but have not noticed change of the size of files (and they on idea will increase should) so it, similar yet does not work. We wait for correction...
+
+*/
+03EC58C: 4B 64
+
+;------------------------- end -------------------------
+

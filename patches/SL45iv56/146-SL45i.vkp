@@ -1,0 +1,20 @@
+;SL45iv56
+;Убирает сообщение "Аккумулятор разряжен. Зарядите"
+;Remove Message "Battarylow. Charge, please"
+;(c) нет
+;Version: 
+;PatchID: 1750
+;Details: https://patches.kibab.com/patches/details.php5?id=1750
+/*
+Убирает назойливое "Аккумулятор разряжен. Зарядите". 
+Остальное как обычно, т.е. сигнал разряда и мигание индикатора 
+остаются. 
+
+
+Release: June, 3th 04
+
+Патч №146http://patch.oslik.ru/SL45_RU
+*/
+4525fe: E6FC DB00
+;------------------------- end -------------------------
+

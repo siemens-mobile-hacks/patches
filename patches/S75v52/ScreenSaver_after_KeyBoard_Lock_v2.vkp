@@ -1,0 +1,15 @@
+;S75v52
+;Моментальный запуск скринсейвера после блокировки клавиатуры
+;ScreenSaver after KeyBoard Lock
+;(c) funMarkus
+;(r) dimonp25, sim_emrom
+;(p) Виктор89
+;Version: 2
+;PatchID: 9130
+;Details: https://patches.kibab.com/patches/details.php5?id=9130
+/*
+Теперь запускается действительно скринсейвер, а не просмотр заставки
+*/
+034313C: A9F05EED C0F759FD
+;------------------------- end -------------------------
+

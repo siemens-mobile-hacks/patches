@@ -1,0 +1,14 @@
+;SK65v50
+;Звуковой сигнал по окончании приёма данных
+;Sound Signal On Data Transfer End
+;(c) SiNgle
+;(p) 1nvisible
+;Version: 
+;PatchID: 4184
+;Details: https://patches.kibab.com/patches/details.php5?id=4184
+/*
+
+*/
+0341760: 0100A0E3 71F706FA
+;------------------------- end -------------------------
+

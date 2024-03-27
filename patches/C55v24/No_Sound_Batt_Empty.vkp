@@ -1,0 +1,21 @@
+;C55v24
+;Отключить звук пустой батареи
+;Disable empty battery sound
+;(c) RizaPN
+;(p) Sinclair
+;Version: 
+;PatchID: 10603
+;Details: https://patches.kibab.com/patches/details.php5?id=10603
+/*
+English:Disable empty battery sound
+*/
+;*** www.Изменение_звука_разряженного_аккумулятора *** © ACiD[mrp], RizaPN
+;Patch: Empty Battarey Tone
+;Firmware: C55 V24 LG91
+;Author: RizaPN 
+;Adaptation: Sinclair
+;Release: 12.02.2004
+
+001052bf: 3C 0C ; выключение сигнала
+;------------------------- end -------------------------
+

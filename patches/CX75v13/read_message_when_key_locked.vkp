@@ -1,0 +1,29 @@
+;CX75v13
+;Чтение SMS при залоченом экране
+;Read message when key locked
+;(c) Bennie
+;(r) avkiev
+;(p) SMeeTBB
+;Version: 2.1
+;PatchID: 924
+;Details: https://patches.kibab.com/patches/details.php5?id=924
+/*
+RUS: Чтение flash-SMS и нового сообщения при залоченной клавиатуре с временной подсветкой
+При приходе SMS - жмем зеленую пимпу;-)
+
+ENG: Reading flash-SMS and the new message when the key locked with time illumination At new SMS - we press green button ;-)
+*/
+02CC5D8: DCF736F8 32F715FC
+02CF78E: 0223E05E 2FF747FB
+#pragma enable old_equal_ff
+01FEDD0: 40B50026052814D1CFF014FC01280AD0
+01FEDE0: D0F072FB01280CD10320154B98471548
+01FEDF0: 8047022605E00320114B9847CCF027F9
+01FEE00: 0126301C40BD0223E85E00B5FFF7E0FF
+01FEE10: 002802D1A9F018FC00BD01B00A490847
+01FEE20: 0223E05E01B5FFF7D3FF002800D101BD
+01FEE30: 02B0022802D10020D1F0CFF803490847
+01FEE40: F59D85A02CE449A025C52CA07BF82CA0    
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;SL45iv56
+;MVE56. Звук в Mp3 от 0 до 56
+;MVE56. Mp3 Volume Ext56
+;(c) Seklth
+;Version: 
+;PatchID: 2109
+;Details: https://patches.kibab.com/patches/details.php5?id=2109
+/*
+English: Volume from 00 to 56.
+ v0.1
+*/
+0x3BA0E6: 47FC0900 47FC3800 
+
+0x305BF8: F7F4B42F CC00CC00 
+0x305C58: F01C47F20900FD01 F01C47F23800FD02 
+0x305C60: E192E6003200CC00F7F2B42FDAD0DA5C E7F23800D7403200F7F2B42FF132F0C1 
+0x305C70: F0C4E00DE00EFAC01C3E CC00E00DE00EFAC01C3E 
+;------------------------- end -------------------------
+

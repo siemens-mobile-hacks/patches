@@ -1,0 +1,14 @@
+;CX75v12
+;Отключить камеру
+;Disable camera
+;(c) ACiD[mrp]
+;(p) mana9er
+;Version: 1.0
+;PatchID: 648
+;Details: https://patches.kibab.com/patches/details.php5?id=648
+/*
+Отключает камеру (но её можно вызвать из native menu).
+*/
+03258D0: 86B0 80BD
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;EL71v45
+;Отключение времени на главном экране
+;Disable Time on Mainscreen
+;(c) benj9
+;Version: 
+;PatchID: 8036
+;Details: https://patches.kibab.com/patches/details.php5?id=8036
+/*
+
+*/
+05C55AC: FFF7E2FF C046C046
+;------------------------- end -------------------------
+

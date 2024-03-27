@@ -1,0 +1,14 @@
+;M65v50
+;Скорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 131
+;Details: https://patches.kibab.com/patches/details.php5?id=131
+/*
+Увеличивает скорость автоповтора клавиатуры
+*/
+114CDF6: 56 20
+;------------------------- end -------------------------
+

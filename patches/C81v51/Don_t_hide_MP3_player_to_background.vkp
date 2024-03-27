@@ -1,0 +1,18 @@
+;C81v51
+;Не сворачивать MP3 плеер
+;Don't hide MP3 player to background
+;(c) ThE TrIFoN
+;(p) klaud
+;Version: 
+;PatchID: 7500
+;Details: https://patches.kibab.com/patches/details.php5?id=7500
+/*
+После установки патча плеер не будет автоматически сворачиватся если долго работает. Также не будет автоматически блокироватся клавиатура.
+
+P.S. Ходят слухи, что при заблокированнй клавиатуре плеер использует больше энергии аккумулятора.
+*/
+029AD14: 5CF148ED CBF57CFF
+0066C10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 09B5044B9847002801D1014B984709BD
+0066C20: FFFFFFFFFFFFFFFF 415896A029C654A0
+;------------------------- end -------------------------
+

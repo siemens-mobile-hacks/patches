@@ -1,0 +1,180 @@
+;EL71v45
+;Мощная релокация папок
+;Power Folder Relocation
+;(c) Vados
+;(p) Виктор89
+;Version: 0.3
+;PatchID: 9179
+;Details: https://patches.kibab.com/patches/details.php5?id=9179
+/*
+
+*/
++1C1248
+;"Звуки" и её подпапки
+0671186: 0i9,00,'0:\\Sounds'			0i9,00,'0:\\Sounds'
+ 06711BE: 0i13,00,'0:\\Sounds\\EMS'		0i13,00,'0:\\Sounds\\EMS'
+ 067121A: 0i16,00,'0:\\Sounds\\On Off' 		0i16,00,'0:\\Sounds\\On Off'
+ 0671272: 0i18,00,'0:\\Sounds\\ProSlide' 		0i18,00,'0:\\Sounds\\ProSlide' ;Представьте на S75 слайдер :-D
+ 06712CE: 0i19,00,'0:\\Sounds\\Ringtones'		0i19,00,'0:\\Sounds\\Ringtones'
+
+;"Картинки" и её подпапки"
+06713F2: 0i11,00,'0:\\Pictures' 			0i11,00,'0:\\Pictures'
+ 067142A: 0i24,00,'0:\\Pictures\\Clip Gallery' 	0i24,00,'0:\\Pictures\\Clip Gallery'
+ 067148E: 0i15,00,'0:\\Pictures\\EMS' 		0i15,00,'0:\\Pictures\\EMS'
+ 06714EC: 0i17,00,'0:\\Pictures\\Logos'		0i17,00,'0:\\Pictures\\Logos'
+ 0671548: 0i21,00,'0:\\Pictures\\Wallpaper'	0i21,00,'0:\\Pictures\\Wallpaper'
+ 06715A6: 0i15,00,'0:\\Pictures\\MMS' 		0i15,00,'0:\\Pictures\\MMS'
+ 06715FC: 0i17,00,'0:\\Pictures\\Icons' 		0i17,00,'0:\\Pictures\\Icons'
+ 0671650: 0i18,00,'0:\\Pictures\\Frames' 		0i18,00,'0:\\Pictures\\Frames'
+ 06716AA: 0i23,00,'0:\\Pictures\\Screensaver' 	0i23,00,'0:\\Pictures\\Screensaver'
+
+;"Система" и её подпапки
+06718EC: 0i9,00,'0:\\System'			0i9,00,'0:\\System'
+ 0671924: 0i13,00,'0:\\System\\apo'		0i13,00,'0:\\System\\apo'
+ 06713A4: 0i13,00,'0:\\System\\Dex'		0i13,00,'0:\\System\\Dex'
+ 0671976: 0i15,00,'0:\\System\\Debug' 		0i15,00,'0:\\System\\Debug'
+ 06719D4: 0i15,00,'0:\\System\\email' 		0i15,00,'0:\\System\\email'
+ 0671A80: 0i13,00,'0:\\System\\SMS'		0i13,00,'0:\\System\\SMS'
+ 06726EA: 0i14,00,'0:\\System\\IMPS'		0i14,00,'0:\\System\\IMPS'
+ 0671AD2: 0i16,00,'0:\\System\\SyncML' 		0i16,00,'0:\\System\\SyncML'
+ 0671B34: 0i13,00,'0:\\System\\ava'		0i13,00,'0:\\System\\ava'
+ 0671B86: 0i15,00,'0:\\System\\LogAL'		0i15,00,'0:\\System\\LogAL'
+ 0671BE0: 0i12,00,'0:\\System\\T9'			0i12,00,'0:\\System\\T9'
+ 0671C2E: 0i19,00,'0:\\System\\Landmarks'		0i19,00,'0:\\System\\Landmarks'
+ 0671CA2: 0i13,00,'0:\\System\\wap'		0i13,00,'0:\\System\\wap'
+ 0671CF2: 0i13,00,'0:\\System\\coc'		0i13,00,'0:\\System\\coc'
+ 0671D42: 0i14,00,'0:\\System\\IrMC'		0i14,00,'0:\\System\\IrMC'
+ 0671E58: 0i13,00,'0:\\System\\ima'		0i13,00,'0:\\System\\ima'
+ 0671EAC: 0i18,00,'0:\\System\\postcard' 		0i18,00,'0:\\System\\postcard'
+ 0671F1E: 0i18,00,'0:\\System\\FwUpdate' 		0i18,00,'0:\\System\\FwUpdate'
+ 0671F92: 0i41,00,'0:\\System\\java\\SIEMENS AG\\MemoryAssistant' 0i41,00,'0:\\System\\java\\SIEMENS AG\\MemoryAssistant'
+ 067208A: 0i14,00,'0:\\System\\japp'		0i14,00,'0:\\System\\japp'
+
+;"Архив СМС" и её подпапки
+06721F8: 0i14,00,'0:\\Sms archive'			0i14,00,'0:\\Sms archive'
+ 0672248: 0i20,00,'0:\\Sms archive\\Inbox'	0i20,00,'0:\\Sms archive\\Inbox'
+ 06722B2: 0i19,00,'0:\\Sms archive\\Sent'		0i19,00,'0:\\Sms archive\\Sent'
+ 067231C: 0i21,00,'0:\\Sms archive\\Unsent'	0i21,00,'0:\\Sms archive\\Unsent'
+ 067238A: 0i20,00,'0:\\Sms archive\\Draft'	0i20,00,'0:\\Sms archive\\Draft'
+
+;"Диктофонные записи"
+0671324: 0i20,00,'0:\\Dictating machine'		0i20,00,'0:\\Dictating machine'
+
+;"Разное"
+0671370: 0i7,00,'0:\\Misc'				0i7,00,'0:\\Misc'
+
+;"Видео"
+067170E: 0i9,00,'0:\\Videos'			0i9,00,'0:\\Videos'
+
+;"Анимация"
+0671744: 0i11,00,'0:\\Pictures' 			0i11,00,'0:\\Pictures'
+
+;"Скины" / какие Скины?
+06717BE: 0i8,00,'0:\\Skins'				0i8,00,'0:\\Skins'
+
+;"Текст" / какой Текст?
+06717F2: 0i7,00,'0:\\Text' 				0i7,00,'0:\\Text'
+
+;"Приложения"
+0671842: 0i15,00,'0:\\Applications'		0i15,00,'0:\\Applications'
+
+;"Игры"
+0671892: 0i8,00,'0:\\Games'				0i8,00,'0:\\Games'
+
+;"Темп"
+0672662: 0i6,00,'0:\\Tmp' 				0i6,00,'0:\\Tmp'
+
+;"Текстовые модули" / SGold'ом пахнет))
+067267C: 0i14,00,'0:\\Text module'			0i14,00,'0:\\Text module'
+
+;"Конверсации"
+06726A4: 0i16,00,'0:\\Conversations'		0i16,00,'0:\\Conversations'
+
+;"Сертификаты"
+0672742: 0i15,00,'0:\\Certificates'		0i15,00,'0:\\Certificates'
+
+;"Голосовые данные" / вообще непонятно что)
+0672782: 0i12,00,'0:\\VoiceData' 			0i12,00,'0:\\VoiceData'
+
+;"Темы"
+06720F6: 0i9,00,'0:\\Themes'			0i9,00,'0:\\Themes'
+
+;"Активная тема"
+067212C: 0i14,00,'0:\\ActiveTheme'			0i14,00,'0:\\ActiveTheme'
+
+;"Телефонные пилоты" / CX70 попахивает))
+067217E: 0i14,00,'0:\\PhonePilots'			0i14,00,'0:\\PhonePilots'
+
+;"Активный телефонный пилот" / бред
+06721C4: 0i19,00,'0:\\ActivePhonePilot' 		0i19,00,'0:\\ActivePhonePilot'
+
+/**************************************************************Диск 1:\***************************************************************/
+;"Система" и её подпапки
+06728B0: 0i9,00,'1:\\system'			0i9,00,'1:\\system'
+ 0671A30: 0i13,00,'1:\\System\\HMI'		0i13,00,'1:\\System\\HMI'
+ 0671D98: 0i14,00,'1:\\System\\Push'		0i14,00,'1:\\System\\Push'
+ 06728D2: 0i13,00,'1:\\system\\hmi'		0i13,00,'1:\\system\\hmi'
+ 06728FE: 0i15,00,'1:\\system\\night' 		0i15,00,'1:\\system\\night'
+ 067292E: 0i17,00,'1:\\system\\pimnmmi' 		0i17,00,'1:\\system\\pimnmmi'
+ 067299E: 0i18,00,'1:\\System\\opwv_msg' 		0i18,00,'1:\\System\\opwv_msg'
+
+;"Скины" (:
+0671DF2: 0i8,00,'1:\\Skins'				0i8,00,'1:\\Skins'
+
+;Без коментариев
+067214E: 0i6,00,'1:\\mmb' 				0i6,00,'1:\\mmb'
+0672960: 0i10,00,'1:\\default' 			0i10,00,'1:\\default'
+06727F2: 0i10,00,'1:\\ctxwork' 			0i10,00,'1:\\ctxwork'
+
++0
++1ECF1C
+;Кэш темы оформления
+0691020: "1:\\ThemeCache" "1:\\ThemeCache"
+
+/**************************************************************Диск 2:\***************************************************************/
++0
++1C1248
+;"Дефолт" и её подпапки
+06723F0: 0i10,00,'2:\\Default' 			0i10,00,'2:\\Default'
+ 006725E4: 0i13,00,'2:\\Default\\pd'		0i13,00,'2:\\Default\\pd'
+
+;Без комментариев
+067260C: 0i10,00,'2:\\Default' 			0i10,00,'2:\\Default' ;Это второй дэфолт, не так важно
+06720DE: 0i7,00,'2:\\japp' 				0i7,00,'2:\\japp'
+0672168: 0i6,00,'2:\\mmb' 				0i6,00,'2:\\mmb'
+06727D8: 0i10,00,'2:\\ctxinit' 			0i10,00,'2:\\ctxinit'
+
+;Никому ненужные кастомеры
+0672416: 0i12,00,'2:\\Customer1' 			0i12,00,'2:\\Customer1'
+0672440: 0i12,00,'2:\\Customer2' 			0i12,00,'2:\\Customer2'
+067246A: 0i12,00,'2:\\Customer3' 			0i12,00,'2:\\Customer3'
+0672494: 0i12,00,'2:\\Customer4' 			0i12,00,'2:\\Customer4'
+06724BE: 0i12,00,'2:\\Customer5' 			0i12,00,'2:\\Customer5'
+06724E8: 0i12,00,'2:\\Customer6' 			0i12,00,'2:\\Customer6'
+0672512: 0i12,00,'2:\\Customer7' 			0i12,00,'2:\\Customer7'
+067253C: 0i12,00,'2:\\Customer8' 			0i12,00,'2:\\Customer8'
+0672566: 0i12,00,'2:\\Customer9' 			0i12,00,'2:\\Customer9'
+0672590: 0i13,00,'2:\\Customer10' 			0i13,00,'2:\\Customer10'
+
+;Опять бред, папка "Телефонные пилоты"
+06725BC: 0i13,00,'2:\\PhonePilot' 			0i13,00,'2:\\PhonePilot'
+
+;Схемы вибрации
+067262E: 0i23,00,'2:\\Vibra&Light\\Patterns' 	0i23,00,'2:\\Vibra&Light\\Patterns'
+
+;Голосовое управление, которое так и не реализовали (а жаль...)
+06727AC: 0i15,00,'2:\\VoiceControl'		0i15,00,'2:\\VoiceControl'
+
+/***************************************************************Диск 4:\**************************************************************/
+;Фотки
+067283E: 0i11,00,'4:\\Pictures' 			0i11,00,'4:\\Pictures'
+;Снятые видео
+067287A: 0i9,00,'4:\\Videos'			0i9,00,'4:\\Videos'
+
+/****************************************************Различные примеры/полезности*****************************************************/
+;067283E: 0i11,00,'4:\\Pictures' 			0i9,00,'4:\\Photos' //Изменение названия папкпи для фоток
+;0671324: 0i20,00,'0:\\Dictating machine' 	0i11,00,'0:\\Диктофон' //Запись диктофоном на карту
+;0691020: "1:\\ThemeCache" "я:\\ThemeCache"	//Убийство папки кэша темы (-2 секунды при старте телефона, но это не существенно)
++0
+;------------------------- end -------------------------
+

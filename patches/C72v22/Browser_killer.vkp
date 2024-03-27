@@ -1,0 +1,14 @@
+;C72v22
+;Отключение браузера
+;Browser killer
+;(c) Zhek@
+;(p) Виктор89
+;Version: 
+;PatchID: 8609
+;Details: https://patches.kibab.com/patches/details.php5?id=8609
+/*
+отключение браузера добавляет ~1Mb свободной оперативной памяти
+*/
+bb64a8: FEF74FFB C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;S55v20
+;Съемка камерой при разряженном аккумуляторе
+;Make photos with low battery
+;(c) Skylord, ValeraVi
+;Version: 
+;PatchID: 4780
+;Details: https://patches.kibab.com/patches/details.php5?id=4780
+/*
+Даже если заряд батареи меньше 30% - окно "Аккумулятор сильно разряжен!" не появляется.
+*/
+34E65C: 4863FD1C CC00CC00
+;------------------------- end -------------------------
+

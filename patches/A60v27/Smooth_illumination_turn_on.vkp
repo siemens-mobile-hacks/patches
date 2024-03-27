@@ -1,0 +1,16 @@
+;A60v27
+;Плавное включение подсветки
+;Smooth illumination turn on
+;(c) .
+;(p) Rasp
+;Version: 
+;PatchID: 10467
+;Details: https://patches.kibab.com/patches/details.php5?id=10467
+/*
+
+*/
+19B709: B9C0B6 7F00D4
+19B7F1: B738EC 7F00D4
+5FD400: FFFFFFFFFFFFFFFFFFFF E6FE0004DAB9C0B6DB00
+;------------------------- end -------------------------
+

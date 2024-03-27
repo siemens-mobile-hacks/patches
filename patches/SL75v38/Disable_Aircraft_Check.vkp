@@ -1,0 +1,13 @@
+;SL75v38
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) Bennie
+;Version: 
+;PatchID: 5013
+;Details: https://patches.kibab.com/patches/details.php5?id=5013
+/*
+
+*/
+0298E49: D1 E0
+;------------------------- end -------------------------
+

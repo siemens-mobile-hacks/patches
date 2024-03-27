@@ -1,0 +1,43 @@
+;C72v22
+;Изменить позицию и шрифт имени провайдера в застав
+;Change position/font of providername in screensaver
+;(c) arsh0r, ® SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 5839
+;Details: https://patches.kibab.com/patches/details.php5?id=5839
+/*
+
+*/
+;* Изменить позицию и шрифт имени провайдера в заставке ** Change position/font of providername in screensaver * © arsh0r, ® SiNgle
+
+;Digital Clock
+0945794: 00 xx ; x-start
+0945796: 71 yy ; y-start
+0945798: 82 xx ; x-stop
+094579A: 81 yy ; y-stop
+094579C: 03 ff ; font size
+
+;Analog Clock
+0945778: 00 xx ; x-start
+094577A: 71 yy ; y-start
+094577C: 82 xx ; x-stop
+094577E: 81 yy ; y-stop
+0945780: 03 ff ; font size
+
+;Picture
+094575C: 00 xx ; x-start
+094575E: 71 yy ; y-start
+0945760: 82 xx ; x-stop
+0945762: 81 yy ; y-stop
+0945764: 03 ff ; font size
+
+;Energysaving
+09457B0: 00 xx ; x-start
+09457B2: 36 yy ; y-start
+09457B4: 82 xx ; x-stop
+09457B6: 45 yy ; y-stop
+09457B8: 03 ff ; font size
+
+;------------------------- end -------------------------
+

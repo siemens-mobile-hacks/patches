@@ -1,0 +1,13 @@
+;C65v56
+;Включить вибру при подключенном кабеле
+;Enable Vibra With Plugged-In Cable
+;(c) 1nvisible
+;Version: 
+;PatchID: 3856
+;Details: https://patches.kibab.com/patches/details.php5?id=3856
+/*
+
+*/
+11ADF9C: F081BD18 0000A0E3
+;------------------------- end -------------------------
+

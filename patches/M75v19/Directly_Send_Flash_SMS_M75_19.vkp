@@ -1,0 +1,19 @@
+;M75v19
+;Отправка Flash SMS
+;Directly Send Flash SMS
+;(c) Bennie
+;Version: 1.1
+;PatchID: 4034
+;Details: https://patches.kibab.com/patches/details.php5?id=4034
+/*
+
+*/
+0BD51CC: 201CB168 8AF650FF
+#pragma enable old_equal_ff
+0A60070: 201CB8380178082906D000290CD1417B
+0A60080: 7F221140F02204E0437B817B1B02C918
+0A60090: 1822202900D10270201CB1687047
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

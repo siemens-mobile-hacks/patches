@@ -1,0 +1,21 @@
+;S65v58
+;Отключить сообщение "Профиль активирован"
+;Disable message "Profile activated"
+;(c) 13.beta2
+;(p) KiRiK
+;Version: 
+;PatchID: 1509
+;Details: https://patches.kibab.com/patches/details.php5?id=1509
+/*
+Отключает сообщения об активации профиля
+*/
+;*** Disable message "Profile activated" ***
+;*** Отключить сообщение "Профиль активирован" ***
+; © 13.beta2
+; S65v58 (p)KiRiK
+
+08FBD3A: 2B1C 04E0
+
+
+;------------------------- end -------------------------
+

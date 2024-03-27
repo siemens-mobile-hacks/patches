@@ -1,0 +1,84 @@
+;CX75v23
+;Мастер Патч
+;Master Patch
+;(c) avkiev
+;(r) 1nvisible, chaos
+;(p) Mikel
+;Version: 5
+;PatchID: 2600
+;Details: https://patches.kibab.com/patches/details.php5?id=2600
+/*
+Мастер-патч. Необходим для работы патчей, ориентированных на работу с ним.
+Тел никаких не ставим, он тут целиком.
+*/
+;Run Scanner on startup
+;Entrypoint must be aligned to word (4 bytes). If no - add or subtract 2
+2A7838: A562E56225636563 00498847,0xA0FC0C81 ; CX75v23
+
+;Run Refresher instead ELSE_REMOVE_SYNC
+4B1EBC: 5D6232A0 0xA0FC0C51 ; CX75v23
+
+
+#pragma enable old_equal_ff
+;Bufferizator
+0FC0C00: 90B5FFF78DFD3C6810222668864203D0
+0FC0C10: A418002EF9D11AE06668002E0DD188B0
+0FC0C20: 021C684666A1FFF743FA6846211DFFF7
+0FC0C30: 2BFA08B06668002E09D0347880202040
+0FC0C40: 05D0FFF7E5F901218140301C214090BD
+
+;Refresher
+0FC0C50: F0B5FFF765FD3C6800261025641B6419
+0FC0C60: 2068002806D060680028F8D0FFF71CFA
+0FC0C70: 6660F4E7F0BD
+
+;Scanner
+0FC0C80: F1B50124A002FFF70BFA061CFFF748FD
+0FC0C90: 3E602004FFF704FA071C41B410214A03
+0FC0CA0: 3D4C3C4D2068394B98423BD0364B9842
+0FC0CB0: 38D0334B984235D0324B984232D0344B
+0FC0CC0: 98422DD0A3182068A8422DD064189C42
+0FC0CD0: F9D1324B9C42E5D100203060009D3E1C
+0FC0CE0: 2FA00A010321090201316B46FFF7B0F9
+0FC0CF0: 041C291C721BFFF7B3F9201C6946FFF7
+0FC0D00: B3F9281CFFF7D0F9F7BC01BCFF2A06D1
+0FC0D10: E56225636563A563E563256404300047
+0FC0D20: 9300E418A418D4E7A068002802D0FEB4
+0FC0D30: 8047FEBC6068306000207060A068B060
+0FC0D40: E068F060641876182078387001340137
+0FC0D50: 002807D07D28F7D10D2038700A207870
+0FC0D60: 0237F1E70A203870013F0D2038700237
+0FC0D70: 0F208443A7E7
+
+;Data
+0FC0D80: "EELI","EEFU","FFS_","FFS",00 ; Skip 128K
+0FC0D90: 0x0000BBBB,0xB1C2D3E4,0xA0000000,0xA2000000 ; LGP (skip 640K), Magic, From, To
+0FC0DA0: "0:\\Misc\\Patches\\ptc\\configs.txt",00
+0FC0DC0: "0:\\Misc\\Patches\\ptc\\%08x.ptc",00
+#pragma disable old_equal_ff
+
+0FC0D98: 0xA0000000 0xA0FC0000 ; From
+0FC0D9C: 0xA2000000 0xA0FE0000 ; To
+
+;Bufferizator. PatchTable must exists before calling.
+;All patches call Bufferizator for getting own options and buffer.
+;Input: R0 - PatchId
+;If buffer already was allocated - return it in R0 and R6 (Z=0).
+;If else - tryes allocate buffer by reading according ptc-file (0:\Misc\Patches\%08x.ptc).
+;If success - return it in R0 and R6 (Z=0), and write it in PatchTable.
+;If no - return 0 in R0 and R6 (Z=1).
+;If patch was disabled globally or in current profile - set Z=1.
+;Example of calling Bufferizator from patch:
+; LoadReg 0, config+4 ; r0-PatchId
+; bl Bufferizator
+; beq NoPatch
+
+;Refresher. You should assign it by help DSE to any button.
+;It need for hot-refreshing patches options after running MasterMidlet.
+;After calling Bufferizator - memory will allocate again, by help reading according ptc-file.
+
+;Scanner. Scans whole flash, searchs configs, merge theirs in file (max=16K), runs theirs startups,
+;creates PatchTable (max=1K=64 patches), address of PatchTable writes in RAM.
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S75v52
+;Сохранение списков при смене SIM-карты
+;Call list saving when SIM is changed
+;(c) starfriend
+;(r) SiNgle
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8315
+;Details: https://patches.kibab.com/patches/details.php5?id=8315
+/*
+
+*/
+02FF73E: EFF03AEA C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,23 @@
+;EL71v45
+;Черный список
+;Black list
+;(c) © ThE TrIFoN, SiNgle
+;(p) SMeeTBB
+;Version: 
+;PatchID: 7133
+;Details: https://patches.kibab.com/patches/details.php5?id=7133
+/*
+; N-черная группа 00- Нет группы, 03-Семья, 04-Друзья и так далее по возрастающей 
+; По умолчанию в патче черная группа - последняя группа
+; N means Black Group, 00-No group, 03-Family, 04-Friends and so on
+; By default the Black Group is the last group
+*/
+070BE02: 8AF6EAEB 04F1B5FE
+
+#pragma enable old_equal_ff
+0810B70: FFB50B2803D10020034B984703E0FFBC
+0810B80: 85F52AED00BDFFBD,0xA09C020F 
+#pragma disable old_equal_ff
+; 0810B72: 0B 0N 
+;------------------------- end -------------------------
+

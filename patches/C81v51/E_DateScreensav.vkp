@@ -1,0 +1,15 @@
+;C81v51
+;Дата вместо имени оператора в заставке
+;Date instead of provider name in ScreenSaver
+;(c) Evgr
+;(r)  benj9
+;(p) dimonp25
+;Version: 
+;PatchID: 8731
+;Details: https://patches.kibab.com/patches/details.php5?id=8731
+/*
+
+*/
+034FBF6: FFF74BFE 4DF7D4FA
+;------------------------- end -------------------------
+

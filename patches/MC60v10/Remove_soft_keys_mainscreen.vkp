@@ -1,0 +1,22 @@
+;MC60v10
+;Убрать софт-кнопки с главного экрана
+;Remove soft keys from main screen
+;(c) SiNgle
+;(r) ValeraVi
+;(p) ahab
+;Version: 
+;PatchID: 3165
+;Details: https://patches.kibab.com/patches/details.php5?id=3165
+/*
+
+*/
+0d6b50: 2D 0D 
+0D6C0E: 3D05 CC00
+0D6DDC: 3D02 CC00
+0D6E4A: 0e 04
+0D6E60: DA2D72AA FA2DEE6F
+0D7A00: 3D0D CC00
+0D7A0A: 3D08 CC00
+
+;------------------------- end -------------------------
+

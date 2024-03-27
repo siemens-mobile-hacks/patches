@@ -1,0 +1,59 @@
+;S68v47
+;Изменить позицию и шрифт имени провайдера в заставке
+;Change position and font of providername in ScreenSaver
+;(c) arsh0r
+;(r)  ferro
+;(p) Tolsi(S68)
+;Version: 
+;PatchID: 7389
+;Details: https://patches.kibab.com/patches/details.php5?id=7389
+/*
+
+*/
+;Analog Clock
+;040902c: 00 xx ; x-start
+;040902e: A1 yy ; y-start
+;0409030: 84 xx ; x-stop
+;0409032: AF yy ; y-stop
+;0409034: 05 03 ; font size
+
+;Digital Clock
+;0409048: 00 xx ; x-start
+040904a: A1 70 ;yy ; Y-start
+;040904c: 84 xx ;x-stop
+;040904e: AF yy ; y-stop
+0409050: 05 01 ;font size
+
+;Picture
+;0409010: 00 xx ; x-start
+;0409012: 9f yy ; y-start
+;0409016: 84 xx ; x-stop
+;0409018: AF yy ; y-stop
+;040901a: 05 03 ; font size
+
+
+;font size
+;03-меньше курсив, курсив без рус
+;06-тонкий курсив,
+;00-норм,
+;01-крупнее ниже,
+;07-меньше,
+;02-рек,
+;04-тонкий мал,
+;05-по умолчанию,
+;08-очень мал,
+;09-очень мал,
+;0а-совсем мал,
+;0b-мал,
+;0с-мал толст,
+;0d-мал курсив, 
+;0e-мал толст курсив,
+;0f-узкий вытянутый,
+;10-мал цифры
+;11-нет
+
+;------------------------- end -------------------------
+
+
+;------------------------- end -------------------------
+

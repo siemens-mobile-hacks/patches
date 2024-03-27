@@ -1,0 +1,13 @@
+;EL71v45
+;Отключить "Подождите" при зумировании картинки
+;Disable "Wait" at Zooming of Picture
+;(c) Evgr
+;Version: 
+;PatchID: 7963
+;Details: https://patches.kibab.com/patches/details.php5?id=7963
+/*
+
+*/
+07E675F: 1A 0A
+;------------------------- end -------------------------
+

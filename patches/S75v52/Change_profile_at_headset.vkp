@@ -1,0 +1,15 @@
+;S75v52
+;Не менять профиль при подключении гарнитуры
+;Do not change profile at headset connection
+;(c) binghelingxi, BingK
+;(p) SimaFish
+;Version: 
+;PatchID: 8552
+;Details: https://patches.kibab.com/patches/details.php5?id=8552
+/*
+
+*/
+033641C: 01 04
+
+;------------------------- end -------------------------
+

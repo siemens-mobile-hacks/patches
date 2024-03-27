@@ -1,0 +1,14 @@
+;S65v58
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 9071
+;Details: https://patches.kibab.com/patches/details.php5?id=9071
+/*
+
+*/
+11588D6: 56 20
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;SL65v53
+;Keypad light trigger
+;Keypad light trigger
+;(c) benj9
+;(r) empeka, BuG
+;(p) Benlux
+;Version: 2.2
+;PatchID: 7186
+;Details: https://patches.kibab.com/patches/details.php5?id=7186
+/*
+
+*/
+0B6FA6C: 2A1C01210120,5FF098EC 00488047,0xA0FC3401,0000
+;------------------------- end -------------------------
+

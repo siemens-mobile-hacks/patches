@@ -1,0 +1,14 @@
+;CX75v12
+;Активизация встроенного WV-клиента
+;Enable built-in WV-client
+;(c) SiNgle
+;(p) TAPAKAH
+;Version: 1.0
+;PatchID: 523
+;Details: https://patches.kibab.com/patches/details.php5?id=523
+/*
+Активирует встроенный ICQ-AIM клиент. Появляется в Меню - 5-2.
+*/
+0641EB0: 66 78 ;Появляется в Меню - 5-2 (Menu - 5-2)
+;------------------------- end -------------------------
+

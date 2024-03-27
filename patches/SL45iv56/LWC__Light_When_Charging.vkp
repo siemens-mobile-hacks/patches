@@ -1,0 +1,16 @@
+;SL45iv56
+;LWC. Свет при зарядке
+;LWC. Light When Charging
+;(c) RizaPN
+;Version: 
+;PatchID: 1976
+;Details: https://patches.kibab.com/patches/details.php5?id=1976
+/*
+
+*/
+0x3B3A4C: 26FC1A00 DAC78CDF 
+0x27DF8C: FFFFFFFF 26FC1A00 
+0x27DF90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46F846012D0846F847012D0546F84801 
+0x27DFA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D02FAC7AEDF88C0DAC1B6FB98C0DB00
+;------------------------- end -------------------------
+

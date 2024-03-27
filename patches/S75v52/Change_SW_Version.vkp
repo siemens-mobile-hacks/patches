@@ -1,0 +1,14 @@
+;S75v52
+;Изменение версии ПО
+;Change SW Version
+;(c) DOMr
+;(p) den11111
+;Version: 
+;PatchID: 8278
+;Details: https://patches.kibab.com/patches/details.php5?id=8278
+/*
+
+*/
+81083: 3532 "SC"
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;CX70v56
+;Игры и приложения на Config
+;Appz And Games On Config
+;(c) DeviceMan
+;(r) kraze1984, Smelter
+;Version: 01
+;PatchID: 5742
+;Details: https://patches.kibab.com/patches/details.php5?id=5742
+/*
+Переносим игры и приложения на Config, в папку Java/Jam/Applications(Games), запускаем из Меню-Интернет/игры
+*/
+;Игры и приложения на Config
+;Appz And Games On Config
+0A4ED04: 30 32
+0A4ED18: 30 32
+0A4ED3E: 30 32
+0A4ED6C: 30 32
+0A4ED9E: 30 32
+0A4EDC0: 30 32
+0A4EDF2: 30 32
+0A4EE16: 30 32
+0A4EE34: 30 32
+;------------------------- end -------------------------
+

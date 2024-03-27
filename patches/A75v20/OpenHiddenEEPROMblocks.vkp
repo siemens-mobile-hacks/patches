@@ -1,0 +1,14 @@
+;A75v20
+;Открыть скрытые блоки EEPROM
+;OpenHiddenEEPROM
+;(c) avkiev
+;(p) Smelter v5.67
+;Version: 
+;PatchID: 9334
+;Details: https://patches.kibab.com/patches/details.php5?id=9334
+/*
+
+*/
+2E2662: 01149013D513911302140314 000000000000000000000000 ; OpenHiddenEEPROM
+;------------------------- end -------------------------
+

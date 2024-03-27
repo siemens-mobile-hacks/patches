@@ -1,0 +1,14 @@
+;C75v13
+;Disable Some Debug
+;Disable Some Debug
+;(c) benj9
+;Version: 
+;PatchID: 3959
+;Details: https://patches.kibab.com/patches/details.php5?id=3959
+/*
+English:speed up phone by stripping needless code
+*/
+0784F48: 10B5 7047 
+0784FBC: 0FB4 7047 
+;------------------------- end -------------------------
+

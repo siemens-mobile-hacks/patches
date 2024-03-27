@@ -1,0 +1,16 @@
+;CX75v23
+;Ежечасное событие и звуковые напоминания о пропущенных_событиях и состоянии_аккумулятора
+;Hourly event and sound alerts after missed_events and state_of_battery
+;(c) avkiev
+;(r) SiNgle
+;(p) Mikel
+;Version: 12
+;PatchID: 2605
+;Details: https://patches.kibab.com/patches/details.php5?id=2605
+/*
+Играет мелодии при пропущенных событиях.Является врезкой к патчу 1188 http://patches.kibab.com/patches/details.php5?id=1188
+Работает только если телефон находится в режиме Главного экрана, на заставке НЕ РАБОТАЕТ!
+*/
+2CC818: 0E1CD7B03BA936A8 004A9047,0xA0FC4039   ; CX75v23 - Mainscreen
+;------------------------- end -------------------------
+

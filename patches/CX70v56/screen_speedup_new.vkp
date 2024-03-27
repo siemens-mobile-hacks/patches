@@ -1,0 +1,14 @@
+;CX70v56
+;Ускоритель вывода на экран
+;Screen Speed-Up patch
+;(c) SiNgle
+;(p) Zeus
+;Version: 0.1
+;PatchID: 9204
+;Details: https://patches.kibab.com/patches/details.php5?id=9204
+/*
+Как на нсг - экран не глючит теперь
+*/
+1293B82: 84F0E0E9 A861C046
+;------------------------- end -------------------------
+

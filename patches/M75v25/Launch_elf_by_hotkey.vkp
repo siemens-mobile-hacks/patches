@@ -1,0 +1,34 @@
+;M75v25
+;Запуск эльфа по горячей клавише
+;Launch elf by hotkey
+;(c) Kibab, Geka
+;(p) kiREALlov
+;Version: 1.5
+;PatchID: 7222
+;Details: https://patches.kibab.com/patches/details.php5?id=7222
+/*
+Поставить на горячую клавишу "Запуск эльфа" и будет стартовать эльф, прописанный в 0:\\ZBin\\etc\\start_elf.cfg
+*/
+4B1654: 416132A0 0xa0FCE001 ;CNCT_BUSINESSCD
+#pragma enable old_equal_ff
+0x00FCE000: FFB58020C7DF2501061C071C07A000F0
+0x00FCE010: 1FF8011C381C8022C7DF6C010021301C
+0x00FCE020: 94DF301CC7DF2901FFBD0000303A5C5A
+0x00FCE030: 42696E5C6574635C73746172745F656C
+0x00FCE040: 662E63666700000000000000
+0x00FCE050: 30B58BB004006A4601A984DF6B468022
+0x00FCE060: 110220000ADF04000020C043844201D1
+0x00FCE070: 00200FE00298401C14DF029A05006B46
+0x00FCE080: 290020000BDF02980021295469462000
+0x00FCE090: 0DDF28000BB030BD
+#pragma disable old_equal_ff
+
+;Редактирование сообщения  3 : 001A8  "<9B>Визит<95>. <9B>карта" => "Запуск эльфа"
+
+EDA05: 0AA4C0313B7BAC33CEBC 0AE6AA3A33E346BF3D29
+
+;Редактирование сообщения  3 : 00E4C  "<9B>Визит<95>. <9B>карта" => "Запуск эльфа"
+
+133D11: 0AA4C0313B7BAC33CEBC 0AE6AA3A33E346BF3D29
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;C55v24
+;Убрать (заменить) звук во время дозвона
+;Disable connecting sound
+;(c) Ramil_
+;Version: 
+;PatchID: 4311
+;Details: https://patches.kibab.com/patches/details.php5?id=4311
+/*
+
+*/
+03AC1C: 2A 00 ;00 - можно заменить на любой другой звук
+;------------------------- end -------------------------
+

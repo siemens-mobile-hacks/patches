@@ -1,0 +1,13 @@
+;M75v12
+;Отключить подсветку кнопок
+;Disable keypad light
+;(c) SiNgle
+;Version: 
+;PatchID: 5359
+;Details: https://patches.kibab.com/patches/details.php5?id=5359
+/*
+
+*/
+07D3E27: D5 24
+;------------------------- end -------------------------
+

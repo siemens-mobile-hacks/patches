@@ -1,0 +1,15 @@
+;CX75v25
+;Настройка подсветки
+;Illumination adjustment
+;(c) avkiev
+;(r) benj9
+;(p) NightElf
+;Version: 
+;PatchID: 5625
+;Details: https://patches.kibab.com/patches/details.php5?id=5625
+/*
+
+*/
+081C454: 08D04DE20010D1E502B0A0E3 04E08FE204F01FE5,0xA0FC6701
+;------------------------- end -------------------------
+

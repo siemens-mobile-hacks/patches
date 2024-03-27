@@ -1,0 +1,15 @@
+;M81v51
+;Отключение подсветки клавиатуры
+;Disable keypad light
+;(c) SiNgle
+;(r) Avkiev
+;(p) Frezzz
+;Version: 
+;PatchID: 6596
+;Details: https://patches.kibab.com/patches/details.php5?id=6596
+/*
+
+*/
+090E2DF: D5 24
+;------------------------- end -------------------------
+

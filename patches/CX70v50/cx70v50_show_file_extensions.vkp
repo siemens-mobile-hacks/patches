@@ -1,0 +1,15 @@
+;CX70v50
+;Показывать расширения файлов в кард эксплорере
+;Show File Extensions in Card-Explorer
+;(c) 1nvisible
+;(r) Single
+;(p) ThiagoM
+;Version: 
+;PatchID: 3638
+;Details: https://patches.kibab.com/patches/details.php5?id=3638
+/*
+
+*/
+09D6F18: 2E 1E
+;------------------------- end -------------------------
+

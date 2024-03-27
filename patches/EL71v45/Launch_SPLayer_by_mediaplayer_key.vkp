@@ -1,0 +1,15 @@
+;EL71v45
+;Запуск SPLayer по клавише плеера
+;Launch_SPLayer by mediaplayer key
+;(c) Kibab
+;(r) RainMaker, den11111, Дэн
+;(p) funMarkus
+;Version: 
+;PatchID: 8067
+;Details: https://patches.kibab.com/patches/details.php5?id=8067
+/*
+
+*/
+845E48: 39586FA0 0xA0067581
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;S75v42
+;Расширенный список вызовов
+;Extended Calls dialed list
+;(c) BoBa
+;Version: 3-MP
+;PatchID: 7511
+;Details: https://patches.kibab.com/patches/details.php5?id=7511
+/*
+
+*/
+03EC980: 0xA05E6A31 0xA006FE01 ; S75v42
+;------------------------- end -------------------------
+

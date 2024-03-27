@@ -1,0 +1,15 @@
+;M75v19
+;Показывать Скрытые Файлы в Card-Explorer'е по умолчанию
+;Show Hidden Files in Card-Explorer by default
+;(c) 1nvisible
+;(p) Grizzzzly
+;Version: 
+;PatchID: 2369
+;Details: https://patches.kibab.com/patches/details.php5?id=2369
+/*
+
+*/
+02DD4C8: 00 FF
+02DD578: 00 FF
+;------------------------- end -------------------------
+

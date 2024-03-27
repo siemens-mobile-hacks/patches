@@ -1,0 +1,26 @@
+;CX65v50
+;Чёрный список v3-MP
+;Black List v3
+;(c) SiNgle
+;(r) (i) KreN -=[LCW]=-ExXtReMe
+;(p) Mifodiy
+;Version: 
+;PatchID: 2635
+;Details: https://patches.kibab.com/patches/details.php5?id=2635
+/*
+Для работы патча необходимо, чтобы был включен фильтр на любую группу (по стандартным иконкам путь 9-5-4) хотя бы в одном профиле, неважно на какую (кроме сим), все настройки берутся с мастер патча.
+
+*/
+;cx65v50
+0B12AB6: 061C281C FCF423FD
+0B137A8: 0006000E FBF4B2FE
+0B13C12: B0420ED1 FBF485FC
+
+#pragma enable old_equal_ff
+080F500: FFB501490847C046,0xA0FC6C2B
+080F510: 7FB501490847C046,0xA0FC6C65
+080F520: FFB501490847C046,0xA0FC6C01
+0FC6CAC: 0xA1300321,0xA0B13C35
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

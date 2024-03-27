@@ -1,0 +1,14 @@
+;S75v52
+;Отключить звук камеры
+;Disable camera sound
+;(c) -=(Kad)=-
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8365
+;Details: https://patches.kibab.com/patches/details.php5?id=8365
+/*
+Убирает стандартный звук затвора камеры
+*/
+03075E4: 72F7F4E8 C046C046
+;------------------------- end -------------------------
+

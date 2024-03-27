@@ -1,0 +1,14 @@
+;C72v22
+;Замена меню на супербыстрое
+;Change mainmenu on superfaster
+;(c) SiNgle
+;(p) Virusmater
+;Version: 
+;PatchID: 7083
+;Details: https://patches.kibab.com/patches/details.php5?id=7083
+/*
+
+*/
+945FFC: 434B4C4B5F434B5F4D41494E4D4E55004B328FA0 "CKLK_CK_MAINMNU",00,0xA08F7723
+;------------------------- end -------------------------
+

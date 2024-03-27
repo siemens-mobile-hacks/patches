@@ -1,0 +1,38 @@
+;SL45iv56
+;Показ дополнительной информации при проигрывании MP3
+;Just Another Additional Display for MP3Player
+;(c) RizaPN, abomin
+;Version: 2
+;PatchID: 2130
+;Details: https://patches.kibab.com/patches/details.php5?id=2130
+/*
+Патч показывает проигранное время композиции, 
+уровень громкости и текущее время. 
+v2 - отображение громкости двумя цифрами (для патчей на 
+ увеличение числа ступеней регулировки громкости). 
+
+
+(Playing time - volume - real time)
+
+
+Release: 06.02.06
+*/
+3BD968: EEAB 10DB 
+3BE0FC: 4B 64 
+3BE10C: 23 07 
+3BE8A6: EEAB 10DB 
+#pragma enable old_equal_ff 
+0x27DB10: DAC7EEABE09E00E0F2FF00FEE0A5E6F4 
+0x27DB20: 283DBB20D7403200C2F4B42FBB12E6F4 
+0x27DB30: 3D29BB18E6F4DE25BB09E6F4003ADC4F 
+0x27DB40: B99E08E1E6F4DC25BB01DB00D7400D00 
+0x27DB50: A844F6F40EFE5B55F3F80CFEF3F90EFE 
+0x27DB60: 06F43030DC6FB99EE48E0100E4BE0200 
+0x27DB70: 08E2CB00 
+;Настройка: 
+;3BE10C: 07 07 ; - Х-координата строки 
+;27DB20: 283D 283D ; - символы слева 
+;27DB30: 3D29 3D29 ; - и справа от цифр громкости 
+;"("-28; ")"-29; "<"-3C; ">"-3E; "-"-2D; "="-3D; "["-5B; "]"-5D
+;------------------------- end -------------------------
+

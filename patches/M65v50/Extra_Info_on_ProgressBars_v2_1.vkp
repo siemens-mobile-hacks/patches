@@ -1,0 +1,21 @@
+;M65v50
+;Дополнительная Информация на Прогрессбарах
+;Extra Info on ProgressBars
+;(c) 1nvisible
+;(p) Micron
+;Version: 2.1
+;PatchID: 6866
+;Details: https://patches.kibab.com/patches/details.php5?id=6866
+/*
+
+*/
+091FF0C: 80128EA000000000 0xA0FC7D35,0xA0FC7D25
+0925C8C: 0000000000000000 0xA0FC7D11,0xA0FC7D01
+
+11751BC: 216B000C4143E06A7BF0AEEB 004FB847,0xA0FC7D51,C046C046
+1175274: 0C20185E231CCEF75CFB 004FB847,0xA0FC7DDD,C046
+
+0FC7D4C: FFFFFFFF 0xA86DB894
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;A75v35
+;Любая функция вместо Чит.СВ на #
+;Modify # + Right SoftKey from View CB to any function
+;(c) Girosavo
+;(p) Nikolas535
+;Version: 
+;PatchID: 9613
+;Details: https://patches.kibab.com/patches/details.php5?id=9613
+/*
+подробности по замене функций в хелпе к смелтер
+*/
+;подпись софт-кнопки брать из смелтер->лэнгпак->столбец HEX (байты поменять местами)
+;функции брать из смелтер->меню->столбец Entry (поменять местами последний и предпоследний байты)
+;подробности в хелпе к смелтер
+
+0CEF8E: 1502 0C06 ; подпись софт-кнопки "стоим.", also another Text from Smelter
+0CF274: DA8918D9 DA8D5C17 ; "Послед.разг.", also another Entry from Smelter
+;------------------------- end -------------------------
+

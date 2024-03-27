@@ -1,0 +1,14 @@
+;SL65v53
+;Отключить «Подождите» при открытии файла
+;Remove «Please wait» when opening a file
+;(c) sempai
+;(p) Виктор89
+;Version: 
+;PatchID: 9935
+;Details: https://patches.kibab.com/patches/details.php5?id=9935
+/*
+
+*/
+096D6C4: B23A1FFA 0000A0E3
+;------------------------- end -------------------------
+

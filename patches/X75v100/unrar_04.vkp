@@ -1,0 +1,20 @@
+;X75v100
+;Unrar
+;Unrar
+;(c) cbn
+;(r) Rst7
+;Version: 0.4
+;PatchID: 5964
+;Details: https://patches.kibab.com/patches/details.php5?id=5964
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=unrar_04.zip
+
+/*
+Распаковщик Rar архивов
+Внимание! Архивы с максимальным сжатием не распаковываются!
+Добавить в extension.cfg:
+rar:4:\ZBin\Unrar.elf
+После запуска выходим и заходим назад в папку
+*/
+Скачиваем приложенный файл
+;------------------------- end -------------------------
+

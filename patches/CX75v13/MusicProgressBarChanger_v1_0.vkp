@@ -1,0 +1,16 @@
+;CX75v13
+;Изменение прогрессбара
+;MusicProgressBarChanger
+;(c) KreN
+;(r) SiNgle, Kad
+;(p) Geka
+;Version: 1.0-MP
+;PatchID: 6293
+;Details: https://patches.kibab.com/patches/details.php5?id=6293
+/*
+
+*/
+03E0A00: 081080E50C3080E5 04F01FE5,0xA0FC7117
+03E13A8: 500A9FE50250A0E1002090E5 04E08FE204F01FE5,0xA0FC7101
+;------------------------- end -------------------------
+

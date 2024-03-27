@@ -1,0 +1,14 @@
+;S75v47
+;Отключить сообщение "В пустой строке нажмите "Вставить" при копировании неизвестного номера в запись адресной книги
+;Disable message "Choose 'Insert' in an empty line to insert" at copying unknown number to new entry of addressbook
+;(c) unknow
+;Version: 
+;PatchID: 10531
+;Details: https://patches.kibab.com/patches/details.php5?id=10531
+/*
+
+*/
+061E75C: 740094E5 040000EA 
+
+;------------------------- end -------------------------
+

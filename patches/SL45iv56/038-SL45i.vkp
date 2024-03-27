@@ -1,0 +1,30 @@
+;SL45iv56
+;Управление тембром при воспроизведении MP3 плеера
+;Insert Timbre Options for MP3Player
+;(c) RizaPN
+;Version: 
+;PatchID: 1602
+;Details: https://patches.kibab.com/patches/details.php5?id=1602
+/*
+Патч позволяет менять тембр во время воспроизведения МР3. 
+Все просто: 8 - басы, 0 - высокие.
+
+Release: March 29, 2003 
+
+Патч №038 с http://patch.oslik.ru/SL45_RU
+*/
+3BA196: EA00C8A3 FAC780D4 
+
+27D480: FFFFFFFFFFFFFFFF 46F130003D15DAD0 
+27D488: FFFFFFFFFFFFFFFF CE5C2D02E00C0D01 
+27D490: FFFFFFFFFFFFFFFF E01CDAD0985CDAD0 
+27D498: FFFFFFFFFFFFFFFF CE5C2D03E6FDFE03 
+27D4A0: FFFFFFFFFFFFFFFF 0D02E6FD8306E01C 
+27D4A8: FFFFFFFFFFFFFFFF DAE698F1FADBC8A3 
+27D4B0: FFFFFFFFFFFFFFFF 46F138003DFBDAD0 
+27D4B8: FFFFFFFFFFFFFFFF C25C2D02E00C0D01 
+27D4C0: FFFFFFFFFFFFFFFF E01CDAD07A5CDAD0 
+27D4C8: FFFFFFFFFFFFFFFF C25C2DEBE6FDFD03 
+27D4D0: FFFF 0DEA
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S75v32
+;Плавный скроллинг длинных названий и имени
+;Smooth Scrolling Of Long Names
+;(c) SiNgle
+;Version: 
+;PatchID: 3028
+;Details: https://patches.kibab.com/patches/details.php5?id=3028
+/*
+Патч уменьшает задержку между началом прокрутки длинных надписей и увеличивает скорость прокрутки.
+English: Patch reduces time which phone waits before starting to scroll long names. Also it increases scrolling speed.
+*/
+0686818: D00700002C01 120200002A00
+0BFD5E4: D00700002C01 120200002A00
+;------------------------- end -------------------------
+

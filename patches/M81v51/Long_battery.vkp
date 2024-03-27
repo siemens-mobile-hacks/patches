@@ -1,0 +1,14 @@
+;M81v51
+;Не выключаться при разряженном аккуме
+;Long battery
+;(c) ThE TrIFoN
+;(p) Frezzz
+;Version: 
+;PatchID: 6227
+;Details: https://patches.kibab.com/patches/details.php5?id=6227
+/*
+
+*/
+01A9734: 362902EA 00210021
+;------------------------- end -------------------------
+

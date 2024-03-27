@@ -1,0 +1,13 @@
+;M75v23
+;Убрать сетку с бэкграунда при прорисовке окошек
+;Remove background netting while showing MsgBoxes, "Please Wait", e.g.
+;(c) SiNgle
+;Version: 
+;PatchID: 2794
+;Details: https://patches.kibab.com/patches/details.php5?id=2794
+/*
+
+*/
+07F614C: 55 00
+;------------------------- end -------------------------
+

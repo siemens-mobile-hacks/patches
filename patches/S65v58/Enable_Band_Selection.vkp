@@ -1,0 +1,15 @@
+;S65v58
+;Включить выбор диапазона
+;Enable Band Selection
+;(c) Bennie
+;Version: 
+;PatchID: 1233
+;Details: https://patches.kibab.com/patches/details.php5?id=1233
+/*
+В пункте Сеть появляется строка "Выбор диапазона": 1.Авто, 2.900,3.1800,4.1900.Apo4emu
+*/
+;* Включить выбор диапазона ** Enable Band Selection * © Bennie
+16BC4FC: 0502 FA01
+
+;------------------------- end -------------------------
+

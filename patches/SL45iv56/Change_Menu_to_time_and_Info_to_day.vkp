@@ -1,0 +1,36 @@
+;SL45iv56
+;Заменит "Меню" на время и "Инфо" на день недели
+;Change "Menu" to time and "Info" to day of week
+;(c) greenteas
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=2645
+;PatchID: 2113
+;Details: https://patches.kibab.com/patches/details.php5?id=2113
+/*
+
+*/
+0x46547A: DAE67E53 DAC780E9 
+
+0x27E980: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46FC2A012D0446FCA0012D090D06D740 
+0x27E990: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0D00F2FCE62506FCBC08FAE67E5388E0 
+0x27E9A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88D0E6F49500DC4EB98DE6FC063AE6FD 
+0x27E9B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3700DAA47CAC98E008E198F0E00C88C0 
+0x27E9C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC180088C0E6FC063AE6FD3700DAA4 
+0x27E9D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E4BA0804DB00FFFFFFFFFFFFFFFFFFFF 
+
+; 27E982: 2A01;INFO string,display week,can change it as you like 
+; 27E988: A001;MENU string,display time,can change it as you like 
+
+; 27E998: XXXX; first string (Sunday) 
+
+; I use 27E998: XXXX - BC08 (13-16 symbols from end in 3rd patch string) first string 8BC 
+
+; String $8BC, "<95>Sonntag" 
+; String $8BD, "<95>Montag" 
+; String $8BE, "<95>Dienstag" 
+; String $8BF, "<95>Mittwoch" 
+; String $8C0, "<95>Donnerstag" 
+; String $8C1, "<95>Freitag" 
+; String $8C2, "<95>Samstag"
+;------------------------- end -------------------------
+

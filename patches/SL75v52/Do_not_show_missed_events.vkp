@@ -1,0 +1,16 @@
+;SL75v52
+;Не показывать пропущенные события на главном экране
+;Do not show missed events on main screen
+;(c) Miha_r
+;(p) kiREALlov
+;Version: 
+;PatchID: 7898
+;Details: https://patches.kibab.com/patches/details.php5?id=7898
+/*
+
+*/
+02FF858: FFF7CEFC C046C046 ;Other events
+02FF8C4: FFF798FC C046C046 ;Sms
+02FF966: FFF747FC C046C046 ;Calls
+;------------------------- end -------------------------
+

@@ -1,0 +1,79 @@
+;S75v47
+;Изменить позицию и шрифт имени провайдера в заставке
+;Change position and font of providername in ScreenSaver
+;(c) arsh0r
+;(r) ferro
+;(p) SiNgle, Diman3452
+;Version: 2
+;PatchID: 8690
+;Details: https://patches.kibab.com/patches/details.php5?id=8690
+/*
+Поправил один адрес в первой версии
+Добавил настройки позиции и шрифта имени провайдера в заставке при имеющейся картинке пропущенных событий
+*/
+;without missed events
+;Picture
+043a430: 00 05 ; x-start
+043a432: 9f a4 ; y-start
+;043a434: 84 xx ; x-stop
+;043a436: AF yy ; y-stop
+043a438: 05 0c ; font size
+
+;Analog Clock
+043a44c: 00 05 ; x-start
+043a44e: A1 a4 ; y-start
+;043a450: 84 xx ; x-stop
+;043a452: AF yy ; y-stop
+043a454: 05 0c ; font size
+
+;Digital Clock
+043a468: 00 05 ; x-start
+043a46a: A1 a4 ; y-start
+;043a46c: 84 xx ; x-stop
+;043a46e: AF yy ; y-stop
+043a470: 05 0c ;font size
+
+;with missed events
+;Picture
+043a484: 10 05 ; x-start
+043a486: A1 a4 ; y-start
+;043a488: 84 xx ; x-stop
+;043a48a: AF yy ; y-stop
+043a48c: 05 0c ; font size
+
+;Analog Clock
+043a4a0: 10 05 ; x-start
+043a4a2: A1 a4 ; y-start
+;043a4a4: 84 xx ; x-stop
+;043a4a6: AF yy ; y-stop
+043a4a8: 05 0c ; font size
+
+;Digital Clock
+043a4bc: 10 05 ; x-start
+043a4be: A1 a4 ; y-start
+;043a4c0: 84 xx ; x-stop
+;043a4c2: AF yy ; y-stop
+043a4c4: 05 0c ; font size
+
+
+;font size
+;03-меньше курсив, курсив без рус
+;06-тонкий курсив,
+;00-норм,
+;01-крупнее ниже,
+;07-меньше,
+;02-рек,
+;04-тонкий мал,
+;05-по умолчанию,
+;08-очень мал,
+;09-очень мал,
+;0а-совсем мал,
+;0b-мал,
+;0с-мал толст,
+;0d-мал курсив, 
+;0e-мал толст курсив,
+;0f-узкий вытянутый,
+;10-мал цифры
+;11-нет
+;------------------------- end -------------------------
+

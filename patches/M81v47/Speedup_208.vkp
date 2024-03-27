@@ -1,0 +1,18 @@
+;M81v47
+;Разгон телефона до 208 Мгц
+;Speedup of mobile till 208 Mhz
+;(c) SiNgle
+;(p) Barracuda
+;Version: 
+;PatchID: 9024
+;Details: https://patches.kibab.com/patches/details.php5?id=9024
+/*
+
+*/
+0233F7C: 7008C0E3 1940F9EB
+#pragma enable old_equal_ff
+0083FE8: 10209FE50020D2E5010052E388F08E02
+0083FF8: 0706C0E30EF0A0E1C4020800
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

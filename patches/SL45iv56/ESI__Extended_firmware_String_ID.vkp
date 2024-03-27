@@ -1,0 +1,32 @@
+;SL45iv56
+;ESI. Разширенные String ID прошивки
+;ESI. Extended firmware String ID
+;(c) RizaPN
+;Version: 
+;PatchID: 2096
+;Details: https://patches.kibab.com/patches/details.php5?id=2096
+/*
+Extend the firmware string ID to be used in any other routines 
+By default, the firmware string ID is 0x0000 - 0x0E26. 
+After applying this patch, we can assign any string to ID 0x0E27 
+up to our needed (not higher than 1388) with 'more easy' 
+
+Assign new SID Table: 
+ mov r5, #pag(extIDTable) 
+ mov r4, #pof(extIDTable) 
+ calls setExtSIDTable ; 0e47ec0h 
+
+extTableID is an pof:pag table for extended SID (starting from 0x0E27) 
+String must be in Siemens ASCIIZ format.
+
+
+Created: March 22, 2005 
+*/
+0x46541A: 46FC270E9D1A FAE4CE7ECC00 
+
+0x447EC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7502F00F6F41435F6F51635DB0046FC 
+0x447ED0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 270E9D02FAE62054D7502F00F2F41435 
+0x447EE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2F5163526FC270E5C2C004CDC5598E4 
+0x447EF0: FFFFFFFFFFFFFFFFFFFF A8F4F0C8F0D9FAE63A54
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;S7Cv47
+;Disable LightOff When Message Incoming
+;Disable LightOff When Message Incoming
+;(c) BingK(binghelingxi)
+;Version: 
+;PatchID: 9005
+;Details: https://patches.kibab.com/patches/details.php5?id=9005
+/*
+Disable LightOff if you press cancel in Message Incoming Winodw !
+*/
+0359B20: CAF0F2EF  C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,31 @@
+;M75v23
+;Чтение SMS при залоченной клаве
+;RMWKL Read Message when Key Locked
+;(c) Bennie
+;(r) avkiev
+;(p) B&#252;ffel
+;Version: 2.1
+;PatchID: 2833
+;Details: https://patches.kibab.com/patches/details.php5?id=2833
+/*
+Чтение флэш СМС и нового сообщения при залоченной клавиатуре с временной подсветкой.
+Чтобы прочитать сообщение, нажмите ЗЕЛЁНУЮ кнопку.
+
+EN:
+Read flash sms and new message when keyboard locked, and Light on temporarily.
+Press the GREEN button to read message.
+*/
+02CC774: DBF7F0FF D9F597FE
+02CF910: 0223E05E D6F5D6FD
+#pragma enable old_equal_ff
+00A6470: 40B50026052814D128F286F901280AD0
+00A6480: 29F2E4F801280CD10320154B98471548
+00A6490: 8047022605E00320114B984724F263FE
+00A64A0: 0126301C40BD0223E85E00B5FFF7E0FF
+00A64B0: 002802D102F250F900BD01B00A490847
+00A64C0: 0223E05E01B5FFF7D3FF002800D101BD
+00A64D0: 02B0022802D1002029F243FE03490847
+00A64E0: 49AE85A0F4EF49A003C62CA0FDF92CA0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

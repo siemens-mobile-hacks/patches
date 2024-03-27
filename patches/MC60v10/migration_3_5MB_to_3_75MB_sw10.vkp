@@ -1,0 +1,75 @@
+;MC60v10
+;Увеличение объема диска с 3,5MB до 3,75MB с урезанием T9
+;Migration from enlarged disk 3.5 MB to capacity 3.75 MB without T9
+;(c) Pluto, Pilsen CZ
+;Version: 1.0
+;PatchID: 9722
+;Details: https://patches.kibab.com/patches/details.php5?id=9722
+/*
+Патч,увеличивающий диск а: с 3,5МБ до 3,75МБ(с урезанием Т9)
+!!!Не забывайте делать бекапы перед применением!!!
+!!!Не применяйте патч,если у вас 1,87МБ(по дефолту),для увелечния диска с 1,87МБ до 3,75МБ используйте соответствующий патч!
+*/
+; #######################################################################
+; ###                                                                 ###
+; ###                       Siemens MC60, FW 10                       ###
+; ###                                                                 ###
+; ###     Patch description: migration from enlarged disk 3.5 MB      ###
+; ###                        to capacity 3.75 MB without T9           ###
+; ###                                                                 ###
+; ###                     version 1.0  [9.8.2004]                     ###
+; ###                                                                 ###
+; ###                    (c)2004, Pluto, Pilsen CZ                    ###
+; ###                       pluton821@seznam.cz                       ###
+; ###                       http://mc60.unas.cz                       ###
+; ###                                                                 ###
+; ###                                                                 ###
+; ###        Patch muze byt libovolne siren, menen a pouzivan         ###
+; ###       s vyjimkou zahlavi - z nej nesmi byt nic vypusteno        ###
+; ###     Patch can be distributed, used and modified arbitrarily     ###
+; ###      with one exception - nothing in header can be removed      ###
+; #######################################################################
+
+
+; !!! tento patch muze byt pouzit pouze pokud byl pretim aplikovan patch enlarge_disk_350_fw10.vkp !!!
+
+; patch - odstrani slovnik T9 a zvetsi velikost disku A z 3.5 na 3.75MB
+;       - telefon bude presne ve stejnem stavu jako po aplikovani patche enlarge_disk_fw10.vkp
+;
+; 1. vypnete telefon a udelejte si V_Klayem kopii pameti telefonu (kdyby neco..)
+; 2. pouzijte patch
+; 3. zapnete telefon - mel by byt ve stavu jako po aplikovani patche enlarge_disk_fw10.vkp
+
+
+; !!! this patch can by used only on phone with applied patch enlarge_disk_350_fw10.vkp !!!
+
+; patch - remove T9 dictionary and enlarge disk A capacity from 3.5 to 3.75MB
+;       - phone will be in the same state as after using patch enlarge_disk_fw10.vkp
+;
+; 1. switch off phone and make full backup of phone memory by V_Klay (for case of troubles)
+; 2. apply patch
+; 3. switch on phone - he should be in the same status as after applying patch enlarge_disk_fw10.vkp
+
+
+40B1F2: 1E000000020000067002 20000000020000067002
+
+#pragma enable old_equal_ff 
+7C06B4: 0200,68087002
+7C06BA: 0200,74087002
+
+7C0868: 0x00880000,0x0040
+7C086E: 0x00890000,0x0040
+7C0874: 0x008A0000,0x0040
+7C087A: 0x008B0000,0x0040
+#pragma disable old_equal_ff 
+
+#pragma disable warn_no_old_on_apply
+680080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+690080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+6A0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+6B0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+#pragma enable warn_no_old_on_apply 
+
+
+;------------------------- end -------------------------
+

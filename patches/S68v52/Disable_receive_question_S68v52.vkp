@@ -1,0 +1,17 @@
+;S68v52
+;Отключение запроса приёма файлов по Bluetooth
+;Disable receive question
+;(c) Sinclair
+;(p) nikinet1
+;Version: 
+;PatchID: 9968
+;Details: https://patches.kibab.com/patches/details.php5?id=9968
+/*
+
+*/
+033511E: 12D0 12E0
+033512E: F05E1A2803D0 0020E4F11AEB
+0335134: 1C2801D01B28 27E00025F2E7
+033514E: 1AD1 F2D1
+;------------------------- end -------------------------
+

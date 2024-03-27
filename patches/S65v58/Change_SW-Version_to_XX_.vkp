@@ -1,0 +1,18 @@
+;S65v58
+;Изменение номера SW-версии
+;Change SW-Version to XX
+;(c) ?
+;(p) Pashen
+;Version: 
+;PatchID: 2132
+;Details: https://patches.kibab.com/patches/details.php5?id=2132
+/*
+
+*/
+;* Change SW-Version to XX *
+;S65v58
+90177: 3538 3939 ; change hex-code to anything you want (example: 3939 = 99 ) 
+
+
+;------------------------- end -------------------------
+

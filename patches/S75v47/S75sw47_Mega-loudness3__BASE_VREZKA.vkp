@@ -1,0 +1,55 @@
+;S75v47
+;Мега-громкость_MP
+;Mega-loudness_MP
+;(c) SiNgle,-=(Kad)=-,Akot
+;Version: 3.0
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9453
+;PatchID: 10195
+;Details: https://patches.kibab.com/patches/details.php5?id=10195
+/*
+версия 3.1 работает не корректно.
+выкладываю эту. Разницы не заметил.
+
+*профиксили 3.1
+*/
+;Version: 3-MP
+01F352C: 000000EA C0FFFFEA                                                 ; Headset S75v47
+01F3434: 0600000A020000EF6C3DA0E30320A0E3 00709FE537FF2FE131EB06A03B0000EA ; Headset S75v47
+01F3500: 2600C4E5 D3FFFFEA                                                 ; Speaker S75v47
+01F3454: 030000EF6C3DA0E30320A0E30410A0E1 00709FE537FF2FE101EB06A0290000EA ; Speaker S75v47
+
+;------------------------- end -------------------------
+;X75v100
+;Mega-loudness
+;Version: 3-BASE
+; body x75
+#pragma enable old_equal_ff
+006EB00: E0B51FB41748C4DF0BD0071C7FDF0130
+006EB10: B978C14005D31FBC7D78401B2626A055
+006EB20: 02E01FBC2626A055E0BC80BC04373847
+006EB30: E0B51FB40B48C4DF0BD0071C7FDF0130
+006EB40: F978C14005D31FBC3D79401B2926A055
+006EB50: 02E01FBC2926A055E0BC80BC04373847
+
+006EB60: E4D3C2B116AD00000000000000000000,"\
+{p=`Mega loudness` cp=`SiNgle,-=(Kad)=-,Akot` id=ad16 ver=3}\
+{sm `Speaker`}\
+{sm `Work in`}\
+{2.0 cb `Player off`}\
+{2.1 cb `Player on`}\
+{endsm}\
+{1 sl Loudness r=0..7}","\
+{endsm}\
+{sm `Headset`}\
+{sm `Work in`}\
+{3.0 cb `Player off`}\
+{3.1 cb `Player on`}\
+{endsm}\
+{4 sl Loudness r=0..20}\
+{endsm}\
+,"00
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+;------------------------- end -------------------------
+

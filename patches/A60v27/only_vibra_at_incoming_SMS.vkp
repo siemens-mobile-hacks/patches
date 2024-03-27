@@ -1,0 +1,14 @@
+;A60v27
+;Только вибра при входящем SMS,мелодия не воспроизводится
+;Only vibra at incoming SMS, melody does not play
+;(c) .
+;(p) Rasp
+;Version: 
+;PatchID: 10462
+;Details: https://patches.kibab.com/patches/details.php5?id=10462
+/*
+
+*/
+1B31BE: 3D 0D
+;------------------------- end -------------------------
+

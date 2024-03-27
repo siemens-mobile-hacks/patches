@@ -1,0 +1,14 @@
+;CX70v56
+;Отключить Вопрос о Включении Профиля "В Самолете"
+;Disable Profile "Aircraft" Question
+;(c) 1nvisible
+;(p) SiamiX
+;Version: 
+;PatchID: 5726
+;Details: https://patches.kibab.com/patches/details.php5?id=5726
+/*
+
+*/
+17299B8: 46490120 904780BD
+;------------------------- end -------------------------
+

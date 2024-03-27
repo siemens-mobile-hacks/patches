@@ -1,0 +1,15 @@
+;S55v91
+;Изменение недоступных кнопок
+;Change in the inaccessible buttons
+;(c) Matr!x
+;(r) Kernel
+;(p) FreeKer
+;Version: 
+;PatchID: 4798
+;Details: https://patches.kibab.com/patches/details.php5?id=4798
+/*
+
+*/
+5CB034: AA DD ;FF - светло-бежевые, 00 - заполнены цветом, C0, F0 - волны, DD - рябь 
+;------------------------- end -------------------------
+

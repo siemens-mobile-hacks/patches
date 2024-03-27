@@ -1,0 +1,22 @@
+;C75v22
+;Инфа Windows XP
+;info winXP
+;(c) -=(Kad)=-
+;(r) Strike66
+;(p) WerewolF BlacK
+;Version: 
+;PatchID: 3418
+;Details: https://patches.kibab.com/patches/details.php5?id=3418
+/*
+Инфармация по *#05#
+
+*/
+;Operating Time:=>Fone operation:
+2C99C0: 4F7065726174696E672054696D653A 00000000000000000000000000
+2C99C0: 00000000000000000000000000 "Windows XP"
+;
+;Talk Time :=>You Talked:
+2C99D4: 54616C6B2054696D65 000000000000000000
+2C99D4: 000000000000000000 "SP 2"
+;------------------------- end -------------------------
+

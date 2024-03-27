@@ -1,0 +1,15 @@
+;CX70v50
+;Графический индикатор температуры аккумулятора
+;Accu Temperature As Graphic Indicator
+;(c) benj9
+;(r) ACiDmrp, avkiev, BuG
+;Version: 2.1-MP
+;PatchID: 1503
+;Details: https://patches.kibab.com/patches/details.php5?id=1503
+/*
+Врезка к патчу 1502
+*/
+1711DCC: 584300AB091A188B0130 004FB84711E3FDA0C046
+
+;------------------------- end -------------------------
+

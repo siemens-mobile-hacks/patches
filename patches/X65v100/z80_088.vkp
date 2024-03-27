@@ -1,0 +1,18 @@
+;X65v100
+;Эмулятор ZX Spectrum
+;ZX Spectrum emulator
+;(c) cbn
+;Version: 0.88
+;PatchID: 5961
+;Details: https://patches.kibab.com/patches/details.php5?id=5961
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=z80_088.rar
+
+/*
+Эмулятор ZX Spectrum
+Работает на SGOLD, NEWSGOLD, SGOLD3
+*/
+Эмулятор ZX Spectrum
+
+Скачайте приложенный файл
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;C55v24
+;Отключить сообщение "Аккумулятор разряжен"
+;Disable messages "Accu is unloaded"
+;(c) Sinclair
+;Version: 
+;PatchID: 2410
+;Details: https://patches.kibab.com/patches/details.php5?id=2410
+/*
+Работает с урезанным ленгпаком
+Внимание, пропадёт только сообщение! Звук останется!
+*/
+51FEAE: 24 25
+;------------------------- end -------------------------
+

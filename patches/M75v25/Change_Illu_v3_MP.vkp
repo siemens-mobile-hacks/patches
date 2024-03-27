@@ -1,0 +1,15 @@
+;M75v25
+;Изменение длительности горения подсветки
+;Change Illumination Turn Off Timer
+;(c) benj9
+;(p) Grizzzzly
+;Version: 3-MP
+;PatchID: 4684
+;Details: https://patches.kibab.com/patches/details.php5?id=4684
+/*
+Изменяет длительность горения подсветки главного экрана и меню, при отсутствии нажатия клавиш.
+
+*/
+07D68EE: 5349A000411868460422 C046004988470BE6FDA0
+;------------------------- end -------------------------
+

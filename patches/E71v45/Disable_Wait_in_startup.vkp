@@ -1,0 +1,19 @@
+;E71v45
+;Отключить "Подождите" при включении телефона до StartAssistant ;Отключить "Подождите" при увеличении картинки в МайСтафф
+;Disable "Wait" in StartUp before StartAssistant;Disable "Wait" while zooming a picture in MyStuff
+;(c) funMarkus
+;(p) Evgr
+;Version: 
+;PatchID: 9675
+;Details: https://patches.kibab.com/patches/details.php5?id=9675
+/*
+Кроме отключения "Подождите" при включении телефона до StartAssistant,также ускоряет запуск демонов
+Внимание!! нужно отключить в настойках анимацию при включении, иначе телефон зависнет ;Баги: при увеличении картинки приходится жать на джой вверх, 
+чтобы отобразилась приблежённая картинка
+;BUGs: you should press joyUp while zooming a picture to see a zoomed area of it
+;Elfs are accelerated from "Deamons"
+
+*/
+094EEC2: 131C 08BD
+;------------------------- end -------------------------
+

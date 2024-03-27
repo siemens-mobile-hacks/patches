@@ -1,0 +1,14 @@
+;M65v50
+;Не выключаться при разряженном аккуме
+;Don't Turn Off When Battery Is Low
+;(c) benj9
+;(r) ThE TrIFoN
+;Version: 2-MP
+;PatchID: 3034
+;Details: https://patches.kibab.com/patches/details.php5?id=3034
+/*
+
+*/
+125504C: 18009FE50C0090E537AEFFEA 00009FE510FF2FE101DFFDA0
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;M55v11
+;Яркость подсветки с шагом 5%
+;Changing illumination by 5%
+;(c) SiNgle
+;(p) AlexSid
+;Version: 0.1b
+;PatchID: 5196
+;Details: https://patches.kibab.com/patches/details.php5?id=5196
+/*
+
+*/
+7F75DA: E0AE E05E
+7F7640: E0AE E05E
+7F75EE: 81 76
+05CFB6: 26FC0A00 26FC0500
+05CF80: 06FC0A00 06FC0500
+41F676: 0003080C121E2B3844517F0003080C121E2B384451 000103081012161e242b3034384044485054586064
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;S68v47
+;Отключение ASP (нарастания громкости) v1.2
+;ASP v1.2
+;(c) caine
+;(p) Shadow_ru
+;Version: 
+;PatchID: 6576
+;Details: https://patches.kibab.com/patches/details.php5?id=6576
+/*
+
+*/
+#000027D1C8 
+#00002A2AB0 
+-258E8 
+02A2ABA: 00 01 
+02A2AB6: 02 01 
+;00001CA3EC 
+;00001FFF9E 
++0 
+-35BB2 
+01FFF9E: 8171 8173 
+01FFFAA: 41738173 01218171
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;M55v10
+;Просмотр пропущенных звонков при залоченной клаве
+;View missed calls while keyboard is locked
+;(c) ValeraVi
+;(p) AlexSid, totenkopf
+;Version: 
+;PatchID: 1473
+;Details: https://patches.kibab.com/patches/details.php5?id=1473
+/*
+
+*/
+35B254: CC00CC00CC00CC00 DA2510A070453D04
+;35B265: 984080 A076C3 ;автоблокировка клавы после просмотра
+;------------------------- end -------------------------
+

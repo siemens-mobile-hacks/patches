@@ -1,0 +1,72 @@
+;S75v52
+;BlackList
+;BlackList
+;(c) SiNgle ThE TrIFoN Evgr
+;(r) (i) KreN
+;(p) loquat(tangqinghua)
+;Version: 3.2MP
+;PatchID: 9801
+;Details: https://patches.kibab.com/patches/details.php5?id=9801
+/*
+No English doc at the moment! :(
+
+*/
+;BlackList v3.2-MP
+;(c) SiNgle&#12289;ThE TrIFoN&#12289;Evgr
+;(r) (i) KreN
+;(p) loquat
+;Version: 3.2
+;S75v52
+
+;HOOK1
+0x0034196C: 321C281C B3F04AEF
+;HOOK2
+0x00341976: 321C281C B3F04CEF
+#pragma enable old_equal_ff
+03F5804: 00C09FE51CFF2FE1,0xA0066361
+03F5810: 00C09FE51CFF2FE1,0xA0066389
+#pragma disable old_equal_ff
+
++0066360
+#pragma enable old_equal_ff
+00: 321C281CFFB500F051F809D0002D04D0
+10: 0B2D05DC032D03D9023D00F01EF800D0
+20: FFBDFFBC3AE0C046321C281CFFB500F0
+30: 3DF80FD0002D05D00B2D0BDC032D09D9
+40: 023D04E001207DDF002800D10A2500F0
+50: 04F800D0FFBDFFBC20E0FEB5AC1C7178
+60: 002901D0002000E0B6DF0B2148438019
+70: FF25025D52009744C0460CE006E001E0
+80: 08E005E00020002166DF03E065DF01E0
+90: 0A4DA8470025281CFEBDC04678470000
+A0: 0040BDE804E08EE21EFF2FE1BFB5CD20
+B0: 00020930C4DF00D0061CBFBD,0xA09B63D7   ; answer call
+C0: 0xB1C2D3E4,0x0000CD09,00000000,00000000,"\
+{p=BlackListv3.2 id=cd09 ver=3.2 cp=SiNgle}","\
+{c type Normal=0 Drop=1 Busy=2 Quiet=3 AutoAnswer=4}","\
+{tp call}","\
+{0 o `No group` c=type}","\
+{1 o Family c=type}","\
+{2 o Friends c=type}","\
+{3 o Business c=type}","\
+{4 o VIP c=type}","\
+{5 o Office c=type}","\
+{6 o Leisure c=type}","\
+{7 o Private c=type}","\
+{8 o `Hobby 1` c=type}","\
+{9 o `Hobby 2` c=type}","\
+{10 o Incognito c=type}","\
+{endtp}","\
+{1 cb UseOnlyFirstProfile}","\
+{sm Prof1}{2 usetp call}{endsm}","\
+{sm Prof2}{13 usetp call}{endsm}","\
+{sm Prof3}{24 usetp call}{endsm}","\
+{sm Prof4}{35 usetp call}{endsm}","\
+{sm Prof5}{46 usetp call}{endsm}","\
+{sm Prof6}{57 usetp call}{endsm}","\
+{sm Prof7}{68 usetp call}{endsm}","\
+{sm Prof8}{79 usetp call}{endsm}",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

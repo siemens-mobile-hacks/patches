@@ -1,0 +1,13 @@
+;SL45iv56
+;Установка максимальной громкости звонка
+;Set maximum ringer volume
+;(c) Rst7, se7h
+;Version: 
+;PatchID: 2689
+;Details: https://patches.kibab.com/patches/details.php5?id=2689
+/*
+Не сильно, но все же громкость увеличивается.
+*/
+0x09B9F4: A00F1C171106 000017110600 
+;------------------------- end -------------------------
+

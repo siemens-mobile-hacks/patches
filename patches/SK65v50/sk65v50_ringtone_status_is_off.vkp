@@ -1,0 +1,14 @@
+;SK65v50
+;Звук звонка отключен по умолчанию
+;Ringtone status is OFF
+;(c) dimonp25
+;(p) Marie
+;Version: 
+;PatchID: 10621
+;Details: https://patches.kibab.com/patches/details.php5?id=10621
+/*
+
+*/
+02B2278: 00 01
+;------------------------- end -------------------------
+

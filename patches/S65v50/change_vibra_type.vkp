@@ -1,0 +1,15 @@
+;S65v50
+;Изменение типа вибры при ее включении через хоткей или Моё меню
+;Change Vibra Type When Turning It On With HotKey or My Menu
+;(c) 1nvisible
+;Version: 
+;PatchID: 482
+;Details: https://patches.kibab.com/patches/details.php5?id=482
+/*
+
+*/
+08D9E5A: 00 NN 
+; 00 - Стандарт (Standard),01 - Вертолет (Helicopter),02 - НЛО (UFO),
+; 03 - Удар (Shock),04 - Москит (Mosquito),05 - Поезд (Train)
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;M81v47
+;Отключить сообщение "Язык ввода:" при выборе языка
+;Disable message "Input language:" at a language choice
+;(c) Evgr
+;(p) Barracuda
+;Version: 
+;PatchID: 9030
+;Details: https://patches.kibab.com/patches/details.php5?id=9030
+/*
+
+*/
+096C5D9: D1 D0
+096C6C0: 00F049FF C046C046 ; disable "please wait"
+;------------------------- end -------------------------
+

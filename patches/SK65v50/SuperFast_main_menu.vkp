@@ -1,0 +1,16 @@
+;SK65v50
+;Замена меню на супербыстрое
+;Press joystick goto SuperFast main menu
+;(c) SiNgle
+;(p) 1nvisible
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=10127
+;PatchID: 2500
+;Details: https://patches.kibab.com/patches/details.php5?id=2500
+/*
+!Пункт меню "Спис. Вызовов" - "Время/Стоимость" вырубает телефон
+*/
+045E624: 899231 F3E031
+
+;------------------------- end -------------------------
+

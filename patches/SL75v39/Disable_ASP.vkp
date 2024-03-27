@@ -1,0 +1,14 @@
+;SL75v39
+;Отключение ASP (нарастания громкости)
+;Disable ASP
+;(c) caine
+;(p) Orastar
+;Version: 
+;PatchID: 5528
+;Details: https://patches.kibab.com/patches/details.php5?id=5528
+/*
+
+*/
+02A38B2: 00 01
+;------------------------- end -------------------------
+

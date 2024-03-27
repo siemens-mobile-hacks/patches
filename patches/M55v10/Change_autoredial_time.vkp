@@ -1,0 +1,14 @@
+;M55v10
+;Автонабор через заданные промежутки времени
+;Chage Autoredial Time
+;(c) SiNgle
+;Version: 
+;PatchID: 1544
+;Details: https://patches.kibab.com/patches/details.php5?id=1544
+/*
+
+*/
+01B92E: 08C1 CC00
+361B82: 05 0A ;0A - пауза 10 секунд
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;M81v47
+;Устранение утечки памяти при отображении IdleScreen
+;Patch Idle Memory Leak
+;(c) Rst7/CBSIE
+;(p) Barracuda
+;Version: 
+;PatchID: 9027
+;Details: https://patches.kibab.com/patches/details.php5?id=9027
+/*
+
+*/
+04FC0D0: 201CFFF721FB281C 0048004700A007A0
+
+#pragma enable old_equal_ff
+007A000: 0400A0E1 0C399FE533FF2FE10400A0E1
+007A010: 4C6A00EBFE00BDE818B74FA0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

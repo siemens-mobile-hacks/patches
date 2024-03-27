@@ -1,0 +1,32 @@
+;EL71v45
+;Позиционирование элементов медиаплеера
+;Mediaplayer positioning
+;(c) @ndres/PRM
+;Version: 0.4
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7917
+;PatchID: 7843
+;Details: https://patches.kibab.com/patches/details.php5?id=7843
+/*
+
+*/
+; animation
+07B25B0: F00068E2 0ixxx,00A0E3
+07B25C8: 527080E2 0iyyy,70A0E3
+
+; volume
+07B3090: 0E00A0E3 0ixxx,00A0E3
+07B30A0: 381081E2 0iyyy,10A0E3
+
+; play mode
+07B3220: 046086E2 0ixxx,60A0E3
+07B3230: 381080E2 0iyyy,10A0E3
+
+; headset
+07B328C: 040086E2 0ixxx,00A0E3
+07B3288: 381081E2 0iyyy,10A0E3
+
+; status
+07B32F0: 0A00A0E3 0ixxx,00A0E3
+07B32E8: FC1081E2 0iyyy,10A0E3
+;------------------------- end -------------------------
+

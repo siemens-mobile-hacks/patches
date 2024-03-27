@@ -1,0 +1,20 @@
+;EL71v45
+;Диктофон и Запись звука пишут на диск Data или карту памяти по выбору 
+;Dictaphone and Sound recorder write to Data or memory card as option 
+;(c) 1nvisible, Evgr 
+;Version: 1
+;PatchID: 10514
+;Details: https://patches.kibab.com/patches/details.php5?id=10514
+/*
+
+*/
+
+0507A7C: 0610A0E1 07AFEDFB
+#pragma enable old_equal_ff
+00735DC: 0xA0832562
+007364C: 0xA08323C2
+00736D4: 0xA08312E4,0xA08312C8
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

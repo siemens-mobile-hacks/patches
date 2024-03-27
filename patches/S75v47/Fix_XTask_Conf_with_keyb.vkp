@@ -1,0 +1,15 @@
+;S75v47
+;Убрать конфликт XTask с "Тест устр. --> Клавиатура"
+;Fix XTask Conflict with "Device check --> Keys"
+;(c) BingK(binghelingxi)
+;(r) Feyman
+;(p) Diman3452
+;Version: 
+;PatchID: 9848
+;Details: https://patches.kibab.com/patches/details.php5?id=9848
+/*
+
+*/
+037D708: 72F08EE80028FAD1 6EF008EFFBE7C046 ;AddKeybMsgHook_end==>AddKeybMsgHook
+;------------------------- end -------------------------
+

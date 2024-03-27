@@ -1,0 +1,24 @@
+;X65v100
+;Эмулятор Nintendo (Денди)
+;Nintendo (Dandy) emulator
+;(c) cbn
+;(r) Dimens+
+;Version: 0.7
+;PatchID: 5962
+;Details: https://patches.kibab.com/patches/details.php5?id=5962
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=nes_07.zip
+
+/*
+Эмулятор Nintendo (Денди)
+
+*/
+Nintendo (Денди) эмулятор elf
+Положить в папку 0:\ZBin\NES
+Зеленая кнопка - листание экрана.
+
+В extention.cfg добавить строку:
+nes:0:\ZBin\NES\NES.elf
+
+Скачайте приложенный файл
+;------------------------- end -------------------------
+

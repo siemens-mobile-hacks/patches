@@ -1,0 +1,15 @@
+;A62v7
+;Громкая связь без подтверждения
+;Toggle HandsFree without question
+;(c) Rasp
+;(p) Weron
+;Version: 
+;PatchID: 8202
+;Details: https://patches.kibab.com/patches/details.php5?id=8202
+/*
+
+*/
+6C6F6A: 9A010320 CC00CC00
+6C6F6E: DA8294FE DA8CCE5E
+;------------------------- end -------------------------
+

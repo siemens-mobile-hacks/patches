@@ -1,0 +1,44 @@
+;X65v100
+;Переключатель режима подсветки клавиатуры
+;Keypad light trigger
+;(c) benj9
+;(r) (i) empeka  (f) BuG
+;Version: 2.2
+;PatchID: 1674
+;Details: https://patches.kibab.com/patches/details.php5?id=1674
+/*
+Переключатель режимов подсветки клавиатуры, в зависимости от профилей, регулируется с помощью МП
+
+Это исправление версии 2.1, теперь работает корректно, если патч отключить полностью или в профиле.
+English:
+Patch allows to setup Keypad light parameters. Built on MP+FL conception.
+This is a fixed v2.1, now it works correctly, if you disable it in general or in profile.
+*/
+#pragma enable old_equal_ff
+0FC3400: 231C2A1C0CB50F48FDF7FAFB01D11CBC
+0FC3410: 0AE0FCF7FDFD36181CBC002A00D07278
+0FC3420: 317AFF2900D08B0101200121FCF708FE
+0FC3430: 04342047
+
+0FC3440: 0xB1C2D3E4,0x0000EA01,0000000000000000,\
+"{patch=`Keypad Light` ver=2.2 cp=benj9 id=EA01}\
+{sm Brightness}\
+{1 sl Prof1 r=0..100}\
+{2 sl Prof2 r=0..100}\
+{3 sl Prof3 r=0..100}\
+{4 sl Prof4 r=0..100}\
+{5 sl Prof5 r=0..100}\
+{6 sl Prof6 r=0..100}\
+{7 sl Prof7 r=0..100}","{endsm}\
+{sm Delay}\
+{8 sl Prof1 r=0..255}\
+{9 sl Prof2 r=0..255}\
+{10 sl Prof3 r=0..255}\
+{11 sl Prof4 r=0..255}\
+{12 sl Prof5 r=0..255}\
+{13 sl Prof6 r=0..255}\
+{14 sl Prof7 r=0..255}\
+{endsm}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

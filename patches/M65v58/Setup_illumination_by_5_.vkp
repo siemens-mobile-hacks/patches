@@ -1,0 +1,17 @@
+;M65v58
+;Подсветка с шагом 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 871
+;Details: https://patches.kibab.com/patches/details.php5?id=871
+/*
+
+*/
+0906768: 0A 05 ; 05 или любая цифра в HEX
+0906778: 0A 05 ; 05 или любая цифра в HEX
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S75v47
+;Сохранение списков при смене SIM-карты
+;Call list saving when SIM is changed
+;(c) starfriend
+;(r) SiNgle
+;Version: 
+;PatchID: 7069
+;Details: https://patches.kibab.com/patches/details.php5?id=7069
+/*
+Долгожданный патч... :)
+Между прочим, даёт основания полагать, что появится и противоугон.
+*/
+02FF392:EFF060E9 C046C046
+;------------------------- end -------------------------
+

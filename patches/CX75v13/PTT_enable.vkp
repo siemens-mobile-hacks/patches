@@ -1,0 +1,15 @@
+;CX75v13
+;Активация PTT
+;PTT enable
+;(c) mana9er
+;(r) sergei1975
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1085
+;PatchID: 1029
+;Details: https://patches.kibab.com/patches/details.php5?id=1029
+/*
+Активирует пункт меню PTT. В России пока услуга не доступна.
+*/
+024C37: FFFF 3DFC
+;------------------------- end -------------------------
+

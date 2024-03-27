@@ -1,0 +1,14 @@
+;SL45iv56
+;Блокирование/разблоирование в МП3 коротким нажатием на #
+;Lock/Unlock keyboard in MP3 by short push #
+;(c) Charger
+;Version: 
+;PatchID: 1978
+;Details: https://patches.kibab.com/patches/details.php5?id=1978
+/*
+
+*/
+3ba1b0: 46feeb00 46feea00 
+3ba1b6: 46feea00 46feeb00
+;------------------------- end -------------------------
+

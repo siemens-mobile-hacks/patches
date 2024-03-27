@@ -1,0 +1,21 @@
+;CX70v56
+;Аська вместо встроенного WV-клиента
+;ICQ instead of Built-In WV Client
+;(c) Fuchs, T!ck
+;(r) SiNgle, avkiev, 1nvisible, Stitch
+;(p) kostett
+;Version: 
+;PatchID: 9990
+;Details: https://patches.kibab.com/patches/details.php5?id=9990
+/*
+
+*/
+B5AB7C: C183AAA0 0xA0D968F0
+#pragma enable old_equal_ff 
+0D968F0: 0000A0E3FF7F2DE918008FE20030A0E3 
+0D96900: 0020A0E308409FE50FE0A0E114FF2FE1 
+0D96910: FFBFBDE8,0xA0CD94A4 
+0D96918: "2:\\jimm.jar",0000 ;путь к мидлету, его можно поменять на любой другой. !Слэшей должно быть по два! 
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;SL65v53
+;Отключить разную отладку
+; Disable Registration Logging
+;(c) benj9
+;(p) dimonp25
+;Version: 
+;PatchID: 9168
+;Details: https://patches.kibab.com/patches/details.php5?id=9168
+/*
+
+*/
+09a2648: 0F002DE9 1EFF2FE1 
+09a25b0: 0F002DE9 1EFF2FE1 
+09a251c: 0F002DE9 1EFF2FE1 
+09a24c8: 0F002DE9 1EFF2FE1 
+09a2474: 0F002DE9 1EFF2FE1 
+09a2420: 0F002DE9 1EFF2FE1 
+09C2DEC: 70402DE9 1EFF2FE1 
+09a2570: 70402de9 1eff2fe1
+;------------------------- end -------------------------
+

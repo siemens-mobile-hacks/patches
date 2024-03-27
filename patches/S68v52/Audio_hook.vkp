@@ -1,0 +1,23 @@
+;S68v52
+;Audio hook
+;Audio hook
+;(c) ILYA_ZX, Dimadze
+;(p) Hotter
+;Version: 
+;PatchID: 10366
+;Details: https://patches.kibab.com/patches/details.php5?id=10366
+/*
+
+*/
+0305C70: AB221201F8B5724B 004A1047A97330A0
+03073A8: 76616C6964206461 044A1268002A00D0
+03073B0: 7461206275666665727320666F756E64 1047034AF8B5034B034E30470000E3A8
+03073C0: 20617420436F707942756666 800A0000F40BE3A8795C30A0
+
++0074000
+#pragma enable  old_equal_ff
+0E28: 0000E3A8 ; 38A: unsigned int *RamAudioHookProc();
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

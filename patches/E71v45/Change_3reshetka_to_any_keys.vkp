@@ -1,0 +1,33 @@
+;E71v45
+;Замена ### на любое сочетание v1.1
+;Change ### on any key v1.1
+;(c) Andrey_ua, kraze1984
+;(p) sempai
+;Version: 1.1
+;PatchID: 10319
+;Details: https://patches.kibab.com/patches/details.php5?id=10319
+/*
+перед установкой прочти коментарии к патчу
+Патч для замены комбинации ### на любую другую( до 4 клавиш )
+
+*/
+08CC7E4: 23232300 nnNNnnNN
+
+; * : 2A
+; # : 23
+; SK left : 01
+; SK right : 04;
+; joy up : 3B
+; down : 3c;
+; left : 3d;
+; right : 3e
+; joy center : 1A
+; callkey : 0b
+; on/off : 0c
+; 0...9 : 30...39
+; VOL_UP_BUTTON : 0D
+; VOL_DOWN_BUTTON : 0E
+
+; Например: 08CC7E4: 23232300 232A0000 означает открытие не по ###, а по нажатияю кнопки решетка затем звездочка 
+;------------------------- end -------------------------
+

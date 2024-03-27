@@ -1,0 +1,23 @@
+;S75v40
+;Мега-громкость
+;Mega-loudness
+;(c) SiNgle
+;(p) RainMaker & bank!
+;Version: 
+;PatchID: 3819
+;Details: https://patches.kibab.com/patches/details.php5?id=3819
+/*
+
+*/
+;S75v40 - Мега-громкость
+;S75v40 - Mega-loudness
+;(c) SiNgle
+;(p) RainMaker & bank!
+
+01F19DC: 2600C4E5 D3FFFFEA
+01F1930: 030000EF 030040E2
+01F1934: 6C3DA0E30320A0E3 2600C4E52A0000EA
+
+01F1930: 03 03 ; Громкость (00-07) | Loudness (00-07)
+;------------------------- end -------------------------
+

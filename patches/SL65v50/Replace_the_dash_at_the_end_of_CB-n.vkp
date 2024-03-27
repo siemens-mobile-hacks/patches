@@ -1,0 +1,14 @@
+;SL65v50
+;Удалить черточки в конце CB-сообщения
+;Replace the dash at the end of CB-news
+;(c)  rreezzoo,
+;(r) Bo$s, empeka, g-e-l-o
+;Version: 2
+;PatchID: 5109
+;Details: https://patches.kibab.com/patches/details.php5?id=5109
+/*
+
+*/
+01EA00F: 2D 00
+;------------------------- end -------------------------
+

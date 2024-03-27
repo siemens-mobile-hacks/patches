@@ -1,0 +1,15 @@
+;M75v19
+;Отключить Вопрос при Редактировании Интернет-Профилей
+;Disable Internet Profiles Edit Query
+;(c) 	1nvisible
+;(p) Geka
+;Version: 
+;PatchID: 4724
+;Details: https://patches.kibab.com/patches/details.php5?id=4724
+/*
+
+*/
+3B1E34: 00F088F8 FFF7EAFD
+
+;------------------------- end -------------------------
+

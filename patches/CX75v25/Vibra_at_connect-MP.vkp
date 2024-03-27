@@ -1,0 +1,14 @@
+;CX75v25
+;Вибра в момент соединения
+;Vibra at connect
+;(c) SiNgle
+;(r) (i) avkiev
+;Version: 
+;PatchID: 5802
+;Details: https://patches.kibab.com/patches/details.php5?id=5802
+/*
+
+*/
+0B3877C: 2A1C2B1C09211730 00498847,0xA0FC3801
+;------------------------- end -------------------------
+

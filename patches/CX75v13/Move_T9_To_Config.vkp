@@ -1,0 +1,14 @@
+;CX75v13
+;T9 на диске Config
+;Move T9 To Config
+;(c) .::L:A:V::.
+;Version: 
+;PatchID: 6203
+;Details: https://patches.kibab.com/patches/details.php5?id=6203
+/*
+ВНИМАНИЕ!
+Сначала создайте папку System\T9 на Config и переместите туда *.ldb файлы с Data\System\T9. Затем ставьте патч.
+*/
+04A5082: 30 32
+;------------------------- end -------------------------
+

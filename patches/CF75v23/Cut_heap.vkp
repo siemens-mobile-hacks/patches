@@ -1,0 +1,20 @@
+;CF75v23
+;Подрезка кучи
+;Cut heap
+;(c) Rst7
+;(r) (i) BoBa, Kibab, avkiev
+;(p) Dimadze
+;Version: 
+;PatchID: 9826
+;Details: https://patches.kibab.com/patches/details.php5?id=9826
+/*
+
+*/
+#pragma enable old_equal_ff
+10D9700: 00B51060012292020868801A0860981A
+10D9710: 111C58DF00BD
+#pragma disable old_equal_ff
+
+0903FC8: 000082E51EFF2FE1000000A8 04F01FE5,0xA10D9701,0xA8000400
+;------------------------- end -------------------------
+

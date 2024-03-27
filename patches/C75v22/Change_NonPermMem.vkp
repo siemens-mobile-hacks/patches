@@ -1,0 +1,15 @@
+;C75v22
+;изменение размера NonPermMem
+;Change NonPermMem
+;(c) ~Jhellico
+;(r) ~V1ruS~, Shur
+;(p) Hoper777
+;Version: 
+;PatchID: 8694
+;Details: https://patches.kibab.com/patches/details.php5?id=8694
+/*
+Добавляет ~900 оперативки, иногда пикает при выключении и включение порта
+*/
+08FD70C: 40 4D
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;E71v42
+;Удалить лишние языки из меню языков ввода
+;Remove unusable languages from input languages menu
+;(c) AlexSid
+;Version: 
+;PatchID: 6813
+;Details: https://patches.kibab.com/patches/details.php5?id=6813
+/*
+
+*/
+0C53A86: 00 01 ; Немецкий
+0C53ABB: 00 01 ; Латвийский
+0C53ABF: 00 01 ; Литовский
+0C53AC3: 00 01 ; Украинский
+0C53AC7: 00 01 ; Эстонский  
+0C53ACA: 00 01 ; Польский
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;C60v27
+;Убрать вторую анимацию при запуске
+;Remove Second Startup animation
+;(c) SiNgle
+;(p) dimon_quaker
+;Version: 
+;PatchID: 2046
+;Details: https://patches.kibab.com/patches/details.php5?id=2046
+/*
+Убрать вторую анимацию при запуске
+*/
+2CAD72: 3D 0D
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;S75v47
+;Просмотр Явы в Моих Файлах
+;Java view in my staff
+;(c) Shadow®, Inc. AKA RainMaker
+;(p) -=(Kad)=-
+;Version: 1.0
+;PatchID: 6022
+;Details: https://patches.kibab.com/patches/details.php5?id=6022
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v47&f=Java_view_in_my_staff_v1.rar
+
+/*
+Для работы патча необходимо в 2:\Config\Default\ положить Mystuff
+*/
+671930: 0C00,'2:\\Customer2' 0800,'0:\\Games',00000000 ; Новый линк для игр
+67195A: 0C00,'2:\\Customer3' 0B00,'0:\\Applicat',00 ; Новый линк для приложений
+;------------------------- end -------------------------
+

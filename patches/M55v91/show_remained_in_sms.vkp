@@ -1,0 +1,20 @@
+;M55v91
+;Отсчёт количества оставшихся символов в текущем сегменте SMS
+;Show number of remained symbols in sms instead of entered
+;(c) Lalo
+;(r) =NeoSpb=
+;(p) Broken Brain
+;Version: 
+;PatchID: 1851
+;Details: https://patches.kibab.com/patches/details.php5?id=1851
+/*
+Вместо счетчика от 760/330(для юникода) до 0 выводится число символов, оставшееся до конца текущей SMS - 160/70(для юникода)
+*/
+0A1C03: BFC4BA 9FC00F
+0A1C1D: C8 CA
+7F0FC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8840DABFC4BAF6F80EFEF0A898E02D09
+7F0FD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46FA04018D0326FA04010D0EE6FE4200
+7F0FE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0D0846FA58028D0326FA58020D05E6FE
+7F0FF0: FFFFFFFFFFFFFFFFFFFF 98005BEEF2FA0CFEDB00 
+;------------------------- end -------------------------
+

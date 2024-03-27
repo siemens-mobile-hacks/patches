@@ -1,0 +1,14 @@
+;S75v47
+;Убрать пункты "Как MMS" и "Как E-mail" из меню "Передача..."
+;Remove items "Via MMS" and "Via e-mail" from "Send..." menu
+;(c) Evgr
+;Version: 
+;PatchID: 9910
+;Details: https://patches.kibab.com/patches/details.php5?id=9910
+/*
+
+*/
+068D00C: 9D 9C ; Как MMS
+068D044: 9D 9C ; Как E-mail
+;------------------------- end -------------------------
+

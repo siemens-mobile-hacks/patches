@@ -1,0 +1,16 @@
+;M65v58
+;Увеличить ширину фото при входящем звонке
+;Increase width of incoming call photo
+;(c) starter48
+;(r) SiNgle
+;Version: 1
+;PatchID: 2734
+;Details: https://patches.kibab.com/patches/details.php5?id=2734
+/*
+Этот патч устанавливает ширину фотографии по ширине экрана при входящем звонке.
+English:
+This patch forces photo width same as screen width on incoming call.
+*/
+0A347FE: 50 64
+;------------------------- end -------------------------
+

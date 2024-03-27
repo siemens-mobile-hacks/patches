@@ -1,0 +1,15 @@
+;CX70v50
+;Счётчик траффика вместо логотипа GPRS
+;Traffic indicator instead of GPRS logo
+;(c) Sinclair
+;(r) (i) ~Jhellico
+;(p) ~Jhellico
+;Version: 1.4
+;PatchID: 3293
+;Details: https://patches.kibab.com/patches/details.php5?id=3293
+/*
+
+*/
+0D1F2B8: 10708DE50210A0E3020044E2 00109FE531FF2FE1,0xA0FC5601
+;------------------------- end -------------------------
+

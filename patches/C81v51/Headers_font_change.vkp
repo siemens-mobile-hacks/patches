@@ -1,0 +1,14 @@
+;C81v51
+;Изменение шрифта заголовков
+;Change Headers Font
+;(c) Evgr
+;(p) dimonp25
+;Version: 
+;PatchID: 9355
+;Details: https://patches.kibab.com/patches/details.php5?id=9355
+/*
+
+*/
+0C22f30: 05 0C ; мелкий жирный
+;------------------------- end -------------------------
+

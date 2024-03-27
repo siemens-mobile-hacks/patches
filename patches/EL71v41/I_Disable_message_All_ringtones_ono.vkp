@@ -1,0 +1,16 @@
+;EL71v41
+;Отключение сообщения "Все сигналы вкл.\выкл."
+;Disable message "All ringtones on\off"
+;(c) SiNgle
+;(p) Siemann
+;Version: 
+;PatchID: 7129
+;Details: https://patches.kibab.com/patches/details.php5?id=7129
+/*
+
+*/
+070DADE: EFF060E9 C046C046
+070DAFC: EFF050E9 C046C046
+
+;------------------------- end -------------------------
+

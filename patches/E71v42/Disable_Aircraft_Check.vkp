@@ -1,0 +1,13 @@
+;E71v42
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) Bennie
+;Version: 
+;PatchID: 6814
+;Details: https://patches.kibab.com/patches/details.php5?id=6814
+/*
+
+*/
+05BF3EB: D1 E0
+;------------------------- end -------------------------
+

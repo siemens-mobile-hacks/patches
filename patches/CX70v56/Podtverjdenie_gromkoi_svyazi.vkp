@@ -1,0 +1,15 @@
+;CX70v56
+;Убрать подтверждения при включении громкой связи
+;Toggle HandsFree without question
+;(c) SiNgle
+;(p) me-at
+;Version: 
+;PatchID: 686
+;Details: https://patches.kibab.com/patches/details.php5?id=686
+/*
+Патч убирает подтверждение при включении громкой связи.
+*/
+171A638:  CB21C9000022 002100210122
+171A640: 18F02AEB 17f092EB
+;------------------------- end -------------------------
+

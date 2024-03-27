@@ -1,0 +1,17 @@
+;SL75v52
+;Отключение ASP
+;Disable ASP
+;(c) caine
+;(p) kiREALlov
+;Version: 1.2
+;PatchID: 7666
+;Details: https://patches.kibab.com/patches/details.php5?id=7666
+/*
+Отключает нарастание громкости.
+*/
+2A5C32: 00 01
+2A5C2E: 02 01
+20302F: 71 73
+20303A: 41738173 01218171
+;------------------------- end -------------------------
+

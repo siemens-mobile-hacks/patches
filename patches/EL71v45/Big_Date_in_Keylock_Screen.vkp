@@ -1,0 +1,27 @@
+;EL71v45
+;Большая дата в экране заблокированной клавиатуры
+;Big Date in Keylock Screen
+;(c) benj9, Evgr
+;(p) ahk
+;Version: 
+;PatchID: 9171
+;Details: https://patches.kibab.com/patches/details.php5?id=9171
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=el71v45&f=Big_Date_in_Keylock_Screen.rar
+
+/*
+В дополнение к патчу benj9 "Большие часы в экране заблокированной клавиатуры" (ID8059). 
+Патч заменяет сообщения  „Для разблокирования нажмите (|) или откройте слайдер” и "Для выключения нажмите и удерживайте #". Сообщения можно добавит в картинку номер 640.
+
+In addition to benj9's patch "Big Time in Keylock Screen"(ID8059).
+Patch replaces messages “Press (|) or open slider to release” and “Press & hold ‘#’ to release”. They can be added to picture number 640. 
+
+*/
+066BA4B: 9993F100EB 9859F76FFD
+0853404: 04 00 ; font
+08533FE: AD00 6E00 ; отступ сверху, y
+0853400: EF00 2C01 ; отступ слева, x
+;0853540: 8002 8002 ; картинка, 280[Hex]=640[Dec]
+;066BA8A: 59F750FD C046C046 ; убрать дату в трее
+;066BAA6: 59F765FD C046C046 ; убрать часы в трее
+;------------------------- end -------------------------
+

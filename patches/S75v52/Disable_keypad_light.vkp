@@ -1,0 +1,14 @@
+;S75v52
+;Отключить подсветку клавиатуры
+;Disable keypad light
+;(c) SiNgle
+;(p) den11111
+;Version: 
+;PatchID: 8328
+;Details: https://patches.kibab.com/patches/details.php5?id=8328
+/*
+
+*/
+08FEBD3: D5 24
+;------------------------- end -------------------------
+

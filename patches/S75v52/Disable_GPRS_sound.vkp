@@ -1,0 +1,14 @@
+;S75v52
+;Убрать звук GPRS
+;Disable GPRS sound
+;(c) AlexeyZ
+;(p) SimaFish
+;Version: 0.1
+;PatchID: 8805
+;Details: https://patches.kibab.com/patches/details.php5?id=8805
+/*
+
+*/
+1034318: 5352544600000400C409D200 000000000000000000000000
+;------------------------- end -------------------------
+

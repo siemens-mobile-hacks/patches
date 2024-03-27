@@ -1,0 +1,15 @@
+;EL71v45
+;Скорость мигания курсора
+;Cursor blink speed
+;(c) SiNgle
+;(r) AsteriX
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8546
+;Details: https://patches.kibab.com/patches/details.php5?id=8546
+/*
+
+*/
+03EAAF8: 2C01 8003
+;------------------------- end -------------------------
+

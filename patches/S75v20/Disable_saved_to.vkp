@@ -1,0 +1,14 @@
+;S75v20
+;Убрать сообщение "Saved to:" при фотографировании
+;Disable "Saved to" message in camera
+;(c) SiNgle
+;Version: 
+;PatchID: 1663
+;Details: https://patches.kibab.com/patches/details.php5?id=1663
+/*
+
+*/
+034050C: A8F092EC C046C046
+
+;------------------------- end -------------------------
+

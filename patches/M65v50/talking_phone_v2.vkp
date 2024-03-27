@@ -1,0 +1,51 @@
+;M65v50
+;Говорящий телефон
+;Talking phone
+;(c) avkiev
+;(r) SiNgle
+;(p) AsteriX
+;Version: 2
+;PatchID: 403
+;Details: https://patches.kibab.com/patches/details.php5?id=403
+/*
+Патч заменяет шорткат ELSE_COUNT_DOWN (Таймер) на функцию проговаривания текущего времени.
+Сажаем этот шорткат с помощью DSE на любую кнопку, при ее нажатии будет проговариваться время.
+Эти файлы необходимо положить в 0:\Sounds\Time: http://www.asterix.com.ru/download.php?X65/time.rar
+EN:
+Patch replaces shortcut ELSE_COUNT_DOWN (Timer) with spelling current time function.
+Set this shortcut by help DSE to any key, if you press this key - current time will be spelled.
+You should download those files to 0:\Sounds\Time: http://www.asterix.com.ru/download.php?X65/time.rar
+===
+DSE: http://allsiemens.com/soft/download.php?p=other&file=DSE.rar
+*/
+0920964: "ELSE_COUNT_DOWN",00,FB198EA0 "ELSE_COUNT_DOWN",00,0xA0800921 ;Entry for SpellTime
+0B6D476: D9F5B4E9 93F453FA ;Говорить время вместо мелодии будильника (Talk time instead of Alarm)
+#pragma enable old_equal_ff
+0800900: 54616C6B696E6750686F6E6520207632
+0800910: A961766B6965762032362E30372E3035
+0800920: FFB5474C0025271C5C3F381C391C0831
+0800930: 424B9847632000F02EF8397A3C2600F0
+0800940: 05F8797A462600F001F8FFBD00B51429
+0800950: 0AD30A2038F0CCE84200C000801800F0
+0800960: 1AF80520002912D0081C01290AD00229
+0800970: 08D000F010F80520002908D0052906D2
+0800980: 022004E08019143000F005F8081C8019
+0800990: 00F001F800BD82B52060201D291C294A
+08009A0: 27F078EC21682CA0B037142302683A60
+08009B0: 04300437013BF9D11520503F38840A20
+08009C0: 38F096E830303031090440183864381C
+08009D0: 64F19EEEB96988000918091809183C20
+08009E0: 38F086E82D180C3482BD00B5FF20144F
+08009F0: 0C3F0C3739688142FBD038600A2038F0
+0800A00: 78E885B06A46131D1360062393803030
+0800A10: D080303111812E235381772393816123
+0800A20: D381762313820A4808A103B40C2006A1
+0800A30: 084B48F112E907B000BDC0463B0DB2A0
+0800A40: 5CAE75A8EB0980A0780A80A001000000
+0800A50: A70000000000000000200000B8AE75A8
+0800A60: D0AE75A80000000000000000CCAE75A8
+0800A70: 0000000000AF75A80F00
+0800A7A: '0:\\Sounds\\Time\\xx.wav'
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

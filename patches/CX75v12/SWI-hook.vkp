@@ -1,0 +1,21 @@
+;CX75v12
+;SWI-хук
+;SWI-hook
+;(c) avkiev, Rst7/CBSIE, BoBa
+;(r) KonstanT
+;(p) Geka
+;Version: 
+;PatchID: 6606
+;Details: https://patches.kibab.com/patches/details.php5?id=6606
+/*
+Необходим для вызова библиотечных функций из перемещаемых патчей
+English:
+It is needed for calling Library functions from dis-patches
+
+
+*/
+0092BE4: 1A0000EA DCF09FE5
+0092CC7: A100000000 000080FDA0
+
+;------------------------- end -------------------------
+

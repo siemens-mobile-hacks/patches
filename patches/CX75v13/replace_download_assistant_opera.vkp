@@ -1,0 +1,26 @@
+;CX75v13
+;Замена Помощника загрузки на OperaMini
+;Replace Download Assistant with OperaMini
+;(c) ~Jhellico
+;(p) Smelter
+;Version: 
+;PatchID: 1003
+;Details: https://patches.kibab.com/patches/details.php5?id=1003
+/*
+RUS: OperaMini будет вызываться через Меню-3-3 и шорткат ELSE_DOWN_ASSIS
+Мидлет должен быть в папке "\Applications\OperaMini\"
+Можете также поменять строку ленгпака $12AA на "OperaMini" (будет отображаться в меню)
+
+ENG: Menu-3-3 and shortcut ELSE_DOWN_ASSIS will call OperaMini
+Midlet must locate in folder "\Applications\OperaMini\"
+You can also change langpack string $12AA to "OperaMini" (will show in menu)
+*/
+326A29: 446F776E6C6F61642041 "OperaMini",00
+32B4F9: 446F776E6C6F61642041 "OperaMini",00
+7D34AD: 446F776E6C6F61642041 "OperaMini",00
+
+;Редактирование сообщения  "Помощн.загр." => "Opera Mini"
+
+14BF87: 0C9887374236910BA82C3991 0C7548665B675719465F645F
+;------------------------- end -------------------------
+

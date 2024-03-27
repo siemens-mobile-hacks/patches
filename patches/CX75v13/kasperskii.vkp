@@ -1,0 +1,47 @@
+;CX75v13
+;Касперский вместо буд.
+;Kasperskii vmesto bud.
+;(c) MEGAFON
+;(r) SPC3
+;(p) LilKoRn
+;Version: 1
+;PatchID: 5921
+;Details: https://patches.kibab.com/patches/details.php5?id=5921
+/*
+Портировал с 25 !
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 09.10.2006  -  Time: 17:31:56                             ###
+; ### Patch for: SIEMENS CX75 v13                                     ###
+; #######################################################################
+
+
+; ##### Picture 767 #####
+010C181C: 0E0C8500B04F17A1 0E0C880058E1FCA0
+
+00FCE158: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FF15B805FFFF0215B805FFFF0215B8FF
+00FCE168: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFFF0300F8FDFFFF15B8FFFF0400F8FF
+00FCE178: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFFF0215B8FFFFFF0300F802FFFF0400
+00FCE188: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F8FFFFFF0315B8FFFFFF0800F8FFFFFF
+00FCE198: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0415B8FFFFFF0700F8FFFFFF0515B8FF
+00FCE1A8: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFFF0600F802FFFF0515B8FFFFFF0500
+00FCE1B8: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F8FFFFFF020000FF15B802FFFF0215B8
+00FCE1C8: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFFFFF0400F8FFFFFF030000FDFFFF00
+00FCE1D8: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00FFFF0215B8FFFFFF0300F802FFFF05
+00FCE1E8: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0000FFFFFF0215B8FFFFFF0200F8FFFF
+00FCE1F8: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FF0315B8FFFFFF030000FFFFFF0215B8
+00FCE208: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FDFFFF00F8FFFF0315B8FFFFFF040000
+00FCE218: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFFFFF0215B802FFFF0415B806FFFFFF
+00FCE228: FFFF 15B8
+
+
+
+;------------------------- end -------------------------
+

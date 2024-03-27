@@ -1,0 +1,14 @@
+;E71v45
+;Не мигать маячком в энергосберегающем режиме заставки
+;Don't blink SLI in energy save screensaver
+;(c) BuG
+;(p) benj9
+;Version: 
+;PatchID: 10314
+;Details: https://patches.kibab.com/patches/details.php5?id=10314
+/*
+
+*/
+05AE0A6: 01 05
+;------------------------- end -------------------------
+

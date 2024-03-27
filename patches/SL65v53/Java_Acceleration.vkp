@@ -1,0 +1,13 @@
+;SL65v53
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 5276
+;Details: https://patches.kibab.com/patches/details.php5?id=5276
+/*
+
+*/
+1167AA4: 02 01
+;------------------------- end -------------------------
+

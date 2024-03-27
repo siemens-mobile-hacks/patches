@@ -1,0 +1,22 @@
+;M65v50
+;Carbon Special Indicators, Optimized for Carbon Black
+;Carbon Special Indicators, Optimized for Carbon Black
+;(c) www.intheweb.ch
+;Version: 2
+;PatchID: 718
+;Details: https://patches.kibab.com/patches/details.php5?id=718
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=m65v50&f=CarbonSpecialV2_M65_FW50.rar
+
+/*
+Заменяет индикаторы аккумулятора и уровня сети на вертикальные под граф.тему "Carbon Special Black".
+
+
+
+1. Картинки индикаторов занимают ~1см слева и справа, закрывая собой любой текст/цифры на основном экране.
+
+
+
+*/
+;В архиве текст патча, графическая тема и картинки.
+;------------------------- end -------------------------
+

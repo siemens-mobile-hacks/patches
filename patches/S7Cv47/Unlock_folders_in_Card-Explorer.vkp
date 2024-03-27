@@ -1,0 +1,21 @@
+;S7Cv47
+;Unlock folders in Card-Explorer
+;Unlock folders in Card-Explorer
+;(c) 1nvisible
+;(r) funMarkus
+;(p) BingK(binghelingxi)
+;Version: 2.5
+;PatchID: 8980
+;Details: https://patches.kibab.com/patches/details.php5?id=8980
+/*
+
+v1 - now you can do everything (cut, copy, view attributes, etc.) with system folders
+v2 - you can move/copy any files anywhere
+v2.5 - now all folders have their native names instead of langpack strings
+
+*/
+0370C2C: 0028 8042 ;normal names for system folders
+036AEBE: F3B5FFB0 01207047 ;unlock move/copy for every file
+036F6B3: D0 E0 ;unlock options menu
+;------------------------- end -------------------------
+

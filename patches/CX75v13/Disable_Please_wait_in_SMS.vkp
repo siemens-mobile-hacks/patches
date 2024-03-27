@@ -1,0 +1,15 @@
+;CX75v13
+;Отключить "Подождите" в SMS
+;Disable Please wait in SMS
+;(c) sempai
+;(r) 1nvisible
+;(p) Nikolas535
+;Version: 
+;PatchID: 9396
+;Details: https://patches.kibab.com/patches/details.php5?id=9396
+/*
+
+*/
+0569B22: BCF076E9 C046C046
+;------------------------- end -------------------------
+

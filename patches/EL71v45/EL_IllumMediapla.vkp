@@ -1,0 +1,20 @@
+;EL71v45
+;Длительность подсветки в медиаплеере как в настройках индикации
+;Backlight Duration in Mediaplayer as in Display Settings
+;(c) Evgr
+;(p) spyonby
+;Version: 
+;PatchID: 9314
+;Details: https://patches.kibab.com/patches/details.php5?id=9314
+/*
+
+*/
+08D6374: 00251C1C2B1CFF212322B931 00488047,0xA1410231,1C1C2B1C
+
+#pragma enable old_equal_ff
+1410230: 0025FF212322B931FFB50749A34203D0
+1410240: C878984200D0CB70C879984200D0CB71
+1410250: FFBC01BC04300047,0xA8F596E4
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

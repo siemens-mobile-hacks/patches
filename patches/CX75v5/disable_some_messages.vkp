@@ -1,0 +1,25 @@
+;CX75v5
+;Убрать_некоторые_сообщения
+;Disable_some_messages
+;(c) SiNgle
+;(p) TAPAKAH
+;Version: 2.0
+;PatchID: 434
+;Details: https://patches.kibab.com/patches/details.php5?id=434
+/*
+Убирает выскакивающие на короткое время назойливые окошки при вкл/выкл звуковых сигналов и при блокировке клавиатуры и прочих ненужных окошек. Мелочь, а приятно!
+*/
+02CD63E: 0021 10BD ;"Все сигналы вкл"
+02CD65A: 0021 10BD ;"Все сигналы выкл"
+02CD6AA: 0021 10BD ;"Блокировка клавиатуры включена"
+03252B0: 77F1 80BD ; Vibra alert on/off
+032534A: 77F1 80BD ; IrDA on/off
+032537A: 77F1 80BD ; GPRS on/off
+03253C6: 77F1 80BD ; Bluetooth on/off
+034B5F4: 9BD111FA 0100A0E3 ; "Please wait" before using camera
+034CDD8: B30802EB 0100A0E3 ; "Saved to:" after you take a foto
+03516E0: 41B911FA 0100A0E3 ; "Please wait" in Card-Explorer
+051F07A: 01 00 ; "Copy SIM" at SIM change
+
+;------------------------- end -------------------------
+

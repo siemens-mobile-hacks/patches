@@ -1,0 +1,27 @@
+;S75v47
+;Автоматически заполнять поле "Номер" при сохранении нового номера в SIM 
+;Auto fill item "Number" when saving new number to SIM card instead of "Choose 'Insert' in an empty line to insert"
+;(c) Evgr
+;Version: 
+;PatchID: 10527
+;Details: https://patches.kibab.com/patches/details.php5?id=10527
+/*
+
+*/
+; ! elfloader, swilib
+
+0624C94: 0510A0E1 C16936FA
+0624CA8: 060050E3 7C80BDE8
+
+#pragma enable old_equal_ff
+13BF3A0: 291CFFB5071CFF210531615808780628
+13BF3B0: 15D1B878002812D14868041CC7DFD302
+13BF3C0: 00280CD00021201CC7DFB502011C0022
+13BF3D0: 201CC7DFB602002801D000F001F8FFBD
+13BF3E0: B0B58CB02A21009101A903236A46044C
+13BF3F0: A04701AA1D21381C024CA0470CB0B0BD
+13BF400: 0xA096849B,0xA095B90F
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

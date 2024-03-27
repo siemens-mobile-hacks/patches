@@ -1,0 +1,17 @@
+;S75v47
+;Не сворачивать MP3 плеер
+;Don't hide MP3 player to background
+;(c) ThE TrIFoN
+;Version: 
+;PatchID: 5794
+;Details: https://patches.kibab.com/patches/details.php5?id=5794
+/*
+После установки патча плеер не будет автоматически сворачиватся если долго работает. Также не будет автоматически блокироватся клавиатура.
+
+P.S. Ходят слухи, что при заблокированнй клавиатуре плеер использует больше энергии аккумулятора.
+*/
+0066C10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 09B5044B9847002801D1014B984709BD
+0066C20: FFFFFFFFFFFFFFFF 9DF496A08DD152A0
+029BB4C: 50F1FEEC CBF560F8
+;------------------------- end -------------------------
+

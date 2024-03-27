@@ -1,0 +1,15 @@
+;CF75v23
+;Изменение названия дисков в меню выбора
+;Change disk names in menu
+;(c) DeHuCoH
+;Version: 
+;PatchID: 4838
+;Details: https://patches.kibab.com/patches/details.php5?id=4838
+/*
+
+*/
+009D017: 726976652030 617461000000 ; Drive 0 -> Data
+009D034: 44726976652031 43616368650000 ; Drive 1 -> Cache
+009D052: 44726976652032 436F6E66696700 ; Drive 2 -> Config
+;------------------------- end -------------------------
+

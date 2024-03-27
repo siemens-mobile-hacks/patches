@@ -1,0 +1,39 @@
+;CX70v56
+;Чёрный или белый список
+;Black Or White List
+;(c) SiNgle
+;(p) Lost
+;Version: 2
+;PatchID: 2379
+;Details: https://patches.kibab.com/patches/details.php5?id=2379
+/*
+Чёрной становится выбранная группа в фильтре (Меню-9-6-4)
+Черный список - при звонке кого то из этой группы телефон выдаёт "занято"
+Белый список - при звонке кого то НЕ из этой группы телефон выдаёт "занято"
+Вызов НЕ показывается в "неотвеченных"
+
+English:The group chosen in Call Screening becomes Black (Menu-9-6-4)
+BlackList means the phone emits busy signal when somebody from this group is calling
+WhiteList means the phone emits busy signal when somebody NOT from this group is calling
+The call is NOT shown in the missed calls screen
+*/
+0B80F2A: 061C281C 8EF36AE9
+0B81C1C: 0006000E 8DF32AEB
+0B82086: B0420ED1 8DF3D8E8
+#pragma enable old_equal_ff
+0F0F200: 00402DE9FF012DE9FF0050E30500000A
+0F0F210: 0100A0E30FE0A0E184F09FE5000050E3
+0F0F220: 0000001A0D0000EBFF01BDE80060A0E1
+0F0F230: 0500A0E10080BDE800402DE9FF012DE9
+0F0F240: 060050E10300001A040000EBFF01BDE8
+0F0F250: 0040BDE84CF09FE5FF01BDE80080BDE8
+0F0F260: FF412DE90000A0E30FE0A0E138F09FE5
+0F0F270: FF81BDE8FF412DE9FF0057E30200000A
+0F0F280: 180096E5000057E10300001AFF01BDE8
+0F0F290: 000CA0E1200CA0E10080BDE8EFFFFFEB
+0F0F2A0: F9FFFFEA6D8F25A1A920B8A0472DB8A0
+#pragma disable old_equal_ff
+1274EBB: D5 E0
+;0F0F247: 1A 0A ; WhiteList
+;------------------------- end -------------------------
+

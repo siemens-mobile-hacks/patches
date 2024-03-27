@@ -1,0 +1,25 @@
+;M75v19
+;Мастер-Патч
+;Master-Patch
+;(c) 1nvisible
+;(r) avkiev, chaos, KiRiK, ~Jhellico
+;Version: 3 RC2
+;PatchID: 2566
+;Details: https://patches.kibab.com/patches/details.php5?id=2566
+/*
+Альтернативная версия МП, пока имеющая определённые глюки на x75. Но обладающая большими возможностями, чем стандартная версия от avkiev.
+
+Не будет анимации на вкл/выкл. + трабл с бекграундом. Будет иправлено в новых версиях Мастера. А пока на 75-х такая беда
+English: There would be NO switch on/off animation + troubles with background. It would be fixed in new MP versions.
+*/
+021F3BC: 000050E30B00001A60408FE2 04E08FE204F01FE5C512FCA0 
+02BF360: 041C4DF7A0EC082C0CD2 004B98478110FCA0C046
+04B1D00: 838931A0 510CFCA0 
+04B1D0C: 2908000019080000 BD0A0000BD0A0000 
+04B1D18: B9 BD
+07D2CD8: 0C4C00921823201C 004B98475111FCA0 
+0800360: A080022020706070 004DA8478911FCA0 
+0800CE4: 192189014018C068 00490847F110FCA0 
+0A83FE0: 0D1CFFF7A5FE6E1C 004FB847C110FCA0
+;------------------------- end -------------------------
+

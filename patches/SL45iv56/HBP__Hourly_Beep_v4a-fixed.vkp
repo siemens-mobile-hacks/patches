@@ -1,0 +1,110 @@
+;SL45iv56
+;HBP. Ежечасный сигнал
+;HBP. Hourly Beep
+;(c) RizaPN, Lalo, rc-flitzer, lbuczko
+;(r) GoLL@B
+;Version: 4a
+;PatchID: 3611
+;Details: https://patches.kibab.com/patches/details.php5?id=3611
+/*
+Патч издает звуковой сигнал (пип) через установленные промежутки
+ времени (чаще всего - каждый час). Патч выбирается в меню "Приложения" в Функции 7.
+
+# Возможности: #
+- не пикает если осуществляется звонок;
+- звук пиканья можна выбирать прямо в телефоне (по желанию);
+- возможна единичная вибра вместо звука (новое в v3);
+- включается подсветка (по желанию);
+- появляется сообщение (по желанию);
+- часы пикают каждые ХХ минут (стандартно: 60);
+- (новое в v4) пиканье если есть непрочтенные SMS или пропущенные звонки (баг если есть только 1 анонимный звонок - напоминание о звонке не сработает).
+- v4a: 
+- отдельные пункты меню APP для напоминаний о звонках и SMS (Профиль 3, Функция 11);
+- патч переадресован на другое место (мне нужно было; если место плохое - верну обратно);
+- пикает также при анонимном звонке.
+
+Отмените все старые версии патча!
+
+
+English:
+This patch gives a beeping sound in configurable time period 
+ (commonly every hour). Patch is selectable through application 
+ menu (v1 is enough) with function no. 7 
+
+ # Features: # 
+- no beep sound if call is in progress 
+- choosable beeping sound via phone (if wished) 
+- (new in v3) also possible vibra once as "sound" 
+- illumination turns on (if wished) 
+- message box pops up (if wished) 
+- clock beeps after each XX minutes (standard: 60) 
+- (new in v4) beep if you have unreaded SMS or lost call (bug if you have only call with hidden id, the call reminder will not run).
+- v4a: 
+- separate APP dependent for Call and SMS reminder (P3,F11) 
+- readressed to another place, I need this, If it`s not good place, I can set it in default 
+- beep also when hidden id called 
+
+Please undo any older version of hourly beep.
+
+Release: May 7th, 2006 
+Updated: June 3rd, 2006 by lbuczko 
+Some supplements: GoLL@B (v4a fixed)
+*/
+0x3B36BC: 26F00C00 DAE030CF 
+
+0x40CF30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAA3B20048403D46D7400E00F3F8423A 
+0x40CF40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 9AF41960E6FD3C00BB403D12BB549AF4 
+0x40CF50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1200DAC024AFE6FC3800DAC3B600E01C 
+0x40CF60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FDAE04DAE698F1BB460EF4BB3F0D2A 
+0x40CF70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB420FF4BB3BD7403600F2F46E099AF4 
+0x40CF80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 21A0E6FD0A00BB213D19BB359AF41A10 
+0x40CF90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7600C00F2F4082D02F4042D02F4062D 
+0x40CFA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3D05D7400D00F2F4D8292D0CE6FC4200 
+0x40CFB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC31400BB201EF4BB190D04BB1C1FF4 
+0x40CFC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB150D0026F00C00DB00D7500D00F2F2 
+0x40CFD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DC25F2F4DE25F0C45C2C5C64204C0042 
+0x40CFE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F6F40EFE4BDDF2F40CFECB00D7401100 
+0x40CFF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F7F84038CB00D7401100F3F84038CB00 
+
+;----------HOUR BEEP----------- 
+;40CF46: 3C xx ;change period in minutes, standard is 60 = 003Ch 
+
+;40CF58: 38 xx 
+; sound number = 38h for changes look into Rizapn sound list 
+; sound no. 36h = CB-sound, then it's configurable in phone menu 
+; sound no. 00h = no sound 
+
+;40CF52: DAC024AF xxxxxxxx; zmie&#324; xxxxxxxx (change xxxxxxxx) 
+;CC00CC00 ;if no light wanted 
+;DAC1A0FB ;pod&#347;wietla je&#347;li klawiatura nie jest zablokowana (oszcz&#281;dno&#347;&#263; energii), (light only if keypad unlocked) 
+;DAC1B6FB ;pod&#347;w tylko przez kilka sekund, (light only few seconds) 
+
+;string ID = 04AEh (=AE04 in firmware) 
+;40CF62: AE04 XXXX 
+
+; if no messagebox wanted 
+;40CF64: DAE698F1 CC00CC00 
+
+;Wybierz jedno z poni&#380;szych, standardowo tylko d&#378;wi&#281;k ; choose one from below, only sound default 
+
+;40CF5A: DAC3B600 DAC36E02 ;vibra instead if sound (wibra flag independent) 
+;40CF5A: DAC3B600 DAE000D0 ;vibra and sound (look *) 
+
+;(*) 
+0x40D000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC31400DADEA6172D02FAC36C02DB00 ; sounds independent, vibra dependent default
+;d&#378;wi&#281;ki niezale&#380;ne od flagi, czyli oboj&#281;tnie, czy s&#261; w&#322;&#261;czone, czy nie, us&#322;yszymy przypomnienie, wibracja zale&#380;na od flagi 
+;standardowo - d&#378;wi&#281;ki niezale&#380;ne, wibracja zale&#380;na 
+
+;DAC31400 - sounds flag independent (d&#378;wi&#281;ki niezale&#380;ne) - you can write DAC3B600 - sounds flag dependent (d&#378;wi&#281;ki zale&#380;ne) 
+;DADEA6172D05DAC36C02 - wibra flag dependent (wibra zale&#380;na) - you can write DAC36E02 - wibra flag independent (wibra niezale&#380;na) 
+
+;-----------SMS OR CALL REMINDER--------- 
+
+;40CF84: 0A xx ;change period in minutes, standard is 10 (czas w minutach, standardowo 10) 
+
+;40CFAE: 42 xx ;to change sound number (id d&#378;wi&#281;ku) 
+
+;40CFB0: DAC31400 DAC36C02 ;vibra instead if sound (wibra zamiast d&#378;wi&#281;ku) 
+;40CFB0: DAC31400 DAE000D0 ;vibra and sound (look *)
+;------------------------- end -------------------------
+

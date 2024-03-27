@@ -1,0 +1,18 @@
+;CX75v12
+;Шрифт меню и софт-кнопок
+;Menu and soft-key font size
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 511
+;Details: https://patches.kibab.com/patches/details.php5?id=511
+/*
+Позволяет изменить размер шрифта в меню и софт кнопок.
+
+*/
+04A2248: 03 02 ; Шрифт софт-кнопок
+04A2290: 03 08 ; Выбраная позиция меню
+04A2294: 02 08 ; Список меню
+;------------------------- end -------------------------
+

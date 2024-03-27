@@ -1,0 +1,15 @@
+;M75v19
+;Отключить Retarget Exit
+;Disable Retarget Exit
+;(c) 1nvisible
+;(p) Grizzzzly
+;Version: 
+;PatchID: 3712
+;Details: https://patches.kibab.com/patches/details.php5?id=3712
+/*
+Для тех, у кого вылетает из явы с Retarget Exit'ом.
+English:For those who have Retarget Exit when using java.
+*/
+0A31FA0: 70402DE9 1EFF2FE1
+;------------------------- end -------------------------
+

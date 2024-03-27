@@ -1,0 +1,14 @@
+;EL71v45
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) 1allen
+;Version: 
+;PatchID: 7951
+;Details: https://patches.kibab.com/patches/details.php5?id=7951
+/*
+
+*/
+0953F1E: 6549 0121
+;------------------------- end -------------------------
+

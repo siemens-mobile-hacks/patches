@@ -1,0 +1,16 @@
+;C55v24
+;Индикатор вибры
+;The indicator of vibra
+;(c) Sinclair
+;Version: 
+;PatchID: 2528
+;Details: https://patches.kibab.com/patches/details.php5?id=2528
+/*
+В качестве индикатора используется картинка 10F - индикатор ИК-порта
+*/
+4E5A7E: DAB9 DAE1
+4E5A80: 203B 003F
+613F00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400A00F3F8E40947F8FF002D07E6FC
+613F10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0F01F0D85C1D00D0B8CD0881FAB9203B
+;------------------------- end -------------------------
+

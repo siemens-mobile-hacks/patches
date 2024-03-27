@@ -1,0 +1,13 @@
+;S75v52
+;Разрешить Разблокировку Клавиатуры Коротким Нажатием #
+;To resolve the Unblocking of the Keyboard Short Pressing
+;(c) den11111
+;Version: 
+;PatchID: 8320
+;Details: https://patches.kibab.com/patches/details.php5?id=8320
+/*
+
+*/
+0342CCC: 22D1 C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;E71v45
+;Исправить обрезанный шрифт в DrawScrollString
+;Fix clipped font in DrawScrollString
+;(c) Azq2
+;(p) Виктор89
+;Version: 1
+;PatchID: 10712
+;Details: https://patches.kibab.com/patches/details.php5?id=10712
+/*
+Патч исправляет баг в DrawScrollString, когда он не прорисовывает 1px снизу у глифов.
+
+The patch fixes a bug in DrawScrollString when it does not draw 1px from the bottom of glyphs.
+*/
+0A128C4: 013D 003D
+;------------------------- end -------------------------
+

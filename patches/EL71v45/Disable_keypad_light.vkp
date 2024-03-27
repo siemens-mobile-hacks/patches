@@ -1,0 +1,14 @@
+;EL71v45
+;Отключить подсветку клавиатуры
+;Disable keypad light
+;(c) SiNgle
+;(p) Frezzz
+;Version: 
+;PatchID: 7142
+;Details: https://patches.kibab.com/patches/details.php5?id=7142
+/*
+
+*/
+08D5F5D: D5 24
+;------------------------- end -------------------------
+

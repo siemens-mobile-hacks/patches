@@ -1,0 +1,33 @@
+;S75v47
+;Показать экран "зарядки" при коротком нажатии красной кнопки при выключенном телефоне
+;Show "Charge" Screen When Pressing Red While Phone Off
+;(c) Evgr
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=10557
+;PatchID: 10556
+;Details: https://patches.kibab.com/patches/details.php5?id=10556
+/*
+удобен для просмотра информации с установленным патчем "Показывать будильник, время и заряд аккумулятора при зарядке выключенного телефона"
+good together with "Show alarm clock, time and akku capacity in offline charge"
+
+*/
+/*
+удобен для просмотра информации с установленным патчем "Показывать будильник, время и заряд аккумулятора при зарядке выключенного телефона"
+good together with "Show alarm clock, time and akku capacity in offline charge"
+*/
+
+0233361: 50 90
+02333E3: 1A EA
+
+01C7764: 0900001A 0000A0E1 ;  disable SwitchPhoneOff during bootscreen
+02881D8: B64B013B984226D0 00498847,0xA13D3401 ; set SwitchPhoneOff at TempLightOn in ChargeOnlyModeModeMMI 
+
+#pragma enable old_equal_ff 
+13D3400: 00B5094B984202D002BC043108470749
+13D3410: 0978012904D006490978012900D009DF
+13D3420: 02BC52310847C046,0x00006403,0xA8E90BBC
+13D3430: 0xA8D79150
+#pragma disable old_equal_ff 
+
+;------------------------- end -------------------------
+

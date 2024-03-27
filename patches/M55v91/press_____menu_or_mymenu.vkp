@@ -1,0 +1,49 @@
+;M55v91
+;Главное меню отовсюду
+;Main Menu Everywhere
+;(c) Seklth
+;(p) DNN
+;Version: 
+;PatchID: 9632
+;Details: https://patches.kibab.com/patches/details.php5?id=9632
+/*
+Внимание: 1. Патч вызывает главное меню, но оно глючит (Иконка сообщений может
+;              появлятся в произвольном месте, для выхода из меню приходиться нажимать
+;              красную кнопку несколько раз). Помните, что это только тестовая версия.
+;           2. При разблокированной клавиатуре при нажатии ### вы получите строку ###
+;              в поле набора номера
+;           3. Блокировака, разблоктровка и блокировака клавиатуры вызовут главное меню,
+;              не пугайтесь :) 
+Без пикоффов
+
+Warning: 1. Patch call Menu, but behaviour is buggy (Message icon
+;             is travelling, for normal exit you must press redkey several times)
+;             Assume that it's test version. 
+;          2. In unlocked mode you'll get ### in "dial field".
+;          3. LockBy#, UnlockBy#, LockBy# cause patch activisation ;), 
+;             don't panic.
+
+*/
+;Seklth показал, что из GetKey в принципе можно вызывать 
+;стандартные диалоговые функции, но тем не менее нужна более тонкая доработка.
+;сделал пока вызов самого меню по таймеру.
+;тестовая версия, будут мысли и время, может и станет более стабильной.
+
+; Место вставки
+; patched point
+00788502: DAA024AD DA5500C6
+
+; Код патча
+; patch code
+0035C600: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAA024ADF3F275A98AF123008840E103
+0035C610: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E032E6F323A32812DD0206F11400D740
+0035C620: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1100D4C1022140C33D1328213DF4E6FC
+0035C630: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 54C6E6FD5500E00E88D088C088E0E6FC
+0035C640: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1C01E03DE6FEAA00E00FDAA09C7F0806
+0035C650: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 9840DB00FA2572A2FA2F42344D4D4531
+
+; Заменить глючный вызов Меню на более стабильное МоеМеню
+; Change buggy Menu to more stable MyMenu
+;0035C654: FA2572A2 CC00CC00 ;
+;------------------------- end -------------------------
+

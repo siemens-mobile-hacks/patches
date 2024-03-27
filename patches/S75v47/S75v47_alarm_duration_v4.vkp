@@ -1,0 +1,21 @@
+;S75v47
+;Изменить продолжительность рингтона в будильнике
+;Change alarmclock ringtone duration 
+;(c) Evgr
+;Version: 4
+;PatchID: 10379
+;Details: https://patches.kibab.com/patches/details.php5?id=10379
+/*
++ любая продолжительность 
+
+*/
+0346920: 2300A0E3 20C518FB
+0346A98: E0CC50E2 48C11FE5
+0346A9C: A6CE5C22 0CC050E0
+
+0346958: 040000EA 0x000493E0 ; 0x493E0(hex)=300000(dec)msec=300sec=5min
+041DF04: C0D40100 0x000493E0 ; 0x493E0(hex)=300000(dec)msec=300sec=5min
+041E510: C0D40100 0x000493E0 ; 0x493E0(hex)=300000(dec)msec=300sec=5min
+
+;------------------------- end -------------------------
+

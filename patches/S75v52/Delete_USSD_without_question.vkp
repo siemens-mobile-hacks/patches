@@ -1,0 +1,14 @@
+;S75v52
+;Удалять USSD сообщения без подтверждения
+;Delete USSD without question
+;(c) Evgr
+;(p) dimonp25
+;Version: 
+;PatchID: 8665
+;Details: https://patches.kibab.com/patches/details.php5?id=8665
+/*
+
+*/
+02FE0BC: F0F0CAEC 00209047
+;------------------------- end -------------------------
+

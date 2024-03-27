@@ -1,0 +1,14 @@
+;S75v47
+;Изменение шрифта окошек в Разработчике 
+;Change font in Developer windows
+;(c) Evgr
+;Version: 
+;PatchID: 10488
+;Details: https://patches.kibab.com/patches/details.php5?id=10488
+/*
+
+*/
+
+013A978C: 04 04
+;------------------------- end -------------------------
+

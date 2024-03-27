@@ -1,0 +1,16 @@
+;A65v17
+;В Flex memory полноценное переименование файлов
+;Valuable renaming it is file in Flex memory
+;(c) Joenka
+;Version: 
+;PatchID: 3868
+;Details: https://patches.kibab.com/patches/details.php5?id=3868
+/*
+
+*/
+330642: 00CE CC00 ; -  Вывоим полный путь
+3300C8: 0064 CC00 ; -  Сохраняем всю строку целиком
+56B75E: 48403D E0140D ; - при редактировании выводить все символы при нажатии '*' или '0'
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;S7Cv47
+;Vibra At Call End
+;Vibra At Call End
+;(c) BingK(binghelingxi)
+;Version: 
+;PatchID: 8957
+;Details: https://patches.kibab.com/patches/details.php5?id=8957
+/*
+No English doc at the moment! :(
+
+*/
+;VIBRA_AT_CALL_PEND_HOOK
+0x002F99D0: 444A2B1C70320021 004CA047012056A1
+;VIBRA_AT_CALL_PEND_BODY
+#pragma enable old_equal_ff
+0x01562000: 74460A480A4988470A4807490A4A0B4B
+0x01562010: 98472B1C0021FF20103022587032241D
+0x01562020: 20470020024908476400000032000000
+0x01562030: F3111BA080F1A7A8232056A1783209A0
+#pragma disable old_equal_ff
+0x01562028: 64000000 64000000 ;time duration
+0x0156202C: 32000000 32000000 ;vibra power
+;------------------------- end -------------------------
+

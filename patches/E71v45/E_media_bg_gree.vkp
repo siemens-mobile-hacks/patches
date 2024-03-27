@@ -1,0 +1,19 @@
+;E71v45
+;Сворачивать воспроизведение и закрывать проводник в медиаплеере по зелёной кнопке
+;Move playback to background and close mediaplayer explorer by green button
+;(c) Evgr
+;Version: 
+;PatchID: 9827
+;Details: https://patches.kibab.com/patches/details.php5?id=9827
+/*
+Стараемся компенсировать отсутствие кнопки медиаплеера
+*/
+078A8F4: 0400001A D9BF2D1A
+079AE64: 250000EA 827E2DEA
+
+#pragma enable old_equal_ff
+12FA860: 0B0050E32840D21A0C0094E59292CEEB 
+12FA870: 6A42D2EA050051E37E81D20A9F81D2EA
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

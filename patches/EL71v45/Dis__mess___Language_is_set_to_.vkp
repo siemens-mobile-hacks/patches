@@ -1,0 +1,14 @@
+;EL71v45
+;Отключить сообщение "Выбран русский язык"
+;Disable message "Language is set to:"
+;(c) Evgr
+;(p) Visad
+;Version: 
+;PatchID: 8129
+;Details: https://patches.kibab.com/patches/details.php5?id=8129
+/*
+
+*/
+5ADBE2: 51F20AEB C046C046
+;------------------------- end -------------------------
+

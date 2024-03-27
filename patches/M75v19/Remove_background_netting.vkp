@@ -1,0 +1,13 @@
+;M75v19
+;Убрать сетку с бэкграунда при прорисовке окошек
+;Remove background netting
+;(c) SiNgle
+;Version: 
+;PatchID: 2318
+;Details: https://patches.kibab.com/patches/details.php5?id=2318
+/*
+
+*/
+07F5FC0: 55 00
+;------------------------- end -------------------------
+

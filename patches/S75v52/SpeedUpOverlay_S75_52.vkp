@@ -1,0 +1,14 @@
+;S75v52
+;Ускорить загрузку overlay info при старте телефона
+;Speed up overlay info load on startup
+;(c) FIL
+;(p) Feyman
+;Version: 
+;PatchID: 10730
+;Details: https://patches.kibab.com/patches/details.php5?id=10730
+/*
+Убирает чрезмерную задержку загрузки "overlay info" при старте телефона.
+*/
+02FD312: 9B48 AA20
+;------------------------- end -------------------------
+

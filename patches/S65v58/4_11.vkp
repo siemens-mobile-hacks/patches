@@ -1,0 +1,20 @@
+;S65v58
+;Убрать Сетку на Фоне при Прорисовке Окошек 
+;Disable Background Net on Drawing Windows
+;(c) 1nvisible
+;(r) SiNgle
+;(p) dimonp25
+;Version: 
+;PatchID: 9085
+;Details: https://patches.kibab.com/patches/details.php5?id=9085
+/*
+Другая версия патча
+*/
+;0115bb2c: f3f773fc C046C046 ;в опциях и яве глючит
+0114f5b4: fff72fff C046C046
+0114938c: 06f043f8 C046C046
+011492d2: 06f0a0f8 C046C046
+
+
+;------------------------- end -------------------------
+

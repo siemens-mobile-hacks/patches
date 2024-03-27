@@ -1,0 +1,15 @@
+;C72v22
+;Сжатие jpeg с максимальным кач-вом (100% вместо 75%)
+;Jpeg-compression with maximal quality (100% instead of 75%)
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 5847
+;Details: https://patches.kibab.com/patches/details.php5?id=5847
+/*
+
+*/
+;* Сжатие jpeg с максимальным кач-вом (100% вместо 75%) ** Jpeg-compression with maximal quality (100% instead of 75%) * © SiNgle
+09EFF30: 4B 64
+;------------------------- end -------------------------
+

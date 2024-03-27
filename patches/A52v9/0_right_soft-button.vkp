@@ -1,0 +1,16 @@
+;A52v9
+;0+правая софт-кнопка
+;0+right soft-button
+;(c) Delirium
+;Version: 
+;PatchID: 4367
+;Details: https://patches.kibab.com/patches/details.php5?id=4367
+/*
+
+*/
+1E7F6E: 4840 CC00
+1E7F92: 7E02 BD00 ;подпись к кнопке (здесь "Диапазон")
+1E81AE: DA82A841 DA9DAC89;  здесь вход в меню Диапазон (заменить на нужный)
+1E81B5: 20 00
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;EL71v45
+;Всегда запускать Startup Assistant
+;Always Do Startup Assistant
+;(c) ?
+;(r) SiNgle
+;Version: 
+;PatchID: 7981
+;Details: https://patches.kibab.com/patches/details.php5?id=7981
+/*
+
+*/
+066D534: 38D1 C046
+066D53C: 34D0 C046
+;------------------------- end -------------------------
+

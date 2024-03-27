@@ -1,0 +1,16 @@
+;C81v51
+;Не показывать провайдер, профайл и поиск сети на главном экране
+;Do not show provider, profile and network search message on main screen
+;(c) Miha_r
+;(p) dimonp25
+;Version: 
+;PatchID: 7840
+;Details: https://patches.kibab.com/patches/details.php5?id=7840
+/*
+
+*/
+03030A2: FEF74BFA C046C046 ;network search
+03031AE: FEF711FA C046C046 ;provider
+0303296: FEF79DF9 C046C046 ;profile
+;------------------------- end -------------------------
+

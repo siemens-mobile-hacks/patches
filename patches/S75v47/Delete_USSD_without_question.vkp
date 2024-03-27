@@ -1,0 +1,14 @@
+;S75v47
+;Удалять USSD сообщения без подтверждения
+;Delete USSD without question
+;(c) Evgr
+;(p) den11111
+;Version: 
+;PatchID: 8250
+;Details: https://patches.kibab.com/patches/details.php5?id=8250
+/*
+
+*/
+02FDD34: F0F0DEEB 00209047
+;------------------------- end -------------------------
+

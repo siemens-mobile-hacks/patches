@@ -1,0 +1,29 @@
+;CX70v56
+;Переносим папку Sms archive с Data на Config
+;It is transferable folder Sms archive with Data on Config
+;(c) USV
+;(p) Lost
+;Version: 
+;PatchID: 2389
+;Details: https://patches.kibab.com/patches/details.php5?id=2389
+/*
+Патч переносим папку Sms archive с Data на Config (Убираем мусор на диске Data).
+*/
+0A4F690: 30 32
+0A4F6AE: 30 32
+0A4F6BE: 30 32
+0A4F6E0: 30 32
+0A4F70A: 30 32
+0A4F722: 30 32
+0A4F74A: 30 32
+0A4F772: 30 32
+0A4F78A: 30 32
+0A4F7B4: 30 32
+0A4F7E0: 30 32
+0A4F7F8: 30 32
+0A4F822: 30 32
+0A4F84C: 30 32
+0A4F862: 30 32
+0A4F9DC: 30 32 ;Переносим папку Text module с Data на Config
+;------------------------- end -------------------------
+

@@ -1,0 +1,20 @@
+;M75v25
+;Отправка Flash SMS
+;Directly Send Flash SMS
+;(c) Bennie
+;(p) Greeze
+;Version: 1.1
+;PatchID: 4422
+;Details: https://patches.kibab.com/patches/details.php5?id=4422
+/*
+Для отправки Flash SMS начните смс с пробела.
+*/
+0BD5BDC: 201CB168 8AF6E8FC
+#pragma enable old_equal_ff
+0A605B0: 201CB8380178082906D000290CD1417B
+0A605C0: 7F221140F02204E0437B817B1B02C918
+0A605D0: 1822202900D10270201CB1687047
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

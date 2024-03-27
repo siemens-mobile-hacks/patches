@@ -1,0 +1,21 @@
+;CX75v25
+;Расширенный список вызовов
+;Extended "Calls dialed" list
+;(c) avkiev
+;(p) SMeeTBB
+;Version: 
+;PatchID: 4196
+;Details: https://patches.kibab.com/patches/details.php5?id=4196
+/*
+
+*/
+049ED2C: 2FB258 71FB1F
+032617A: 78F1D4ED B3F5F9EC
+#pragma enable old_equal_ff
+01FFB50: 457874656E642E43616C6C734C697374
+01FFB60: A961766B6965762031332E30362E3035
+01FFB70: 00B58BF35CFBBFF099FC0130072803D0
+01FFB80: 8BF35BFB8BF356FB00BD
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

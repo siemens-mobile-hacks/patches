@@ -1,0 +1,17 @@
+;S75v40
+;Не лочить клаву при MP3
+;Don't auto lock keyboard while playing MP3
+;(c) ThE TrIFoN
+;Version: 
+;PatchID: 4728
+;Details: https://patches.kibab.com/patches/details.php5?id=4728
+/*
+Баг - решеткой при мп3 тоже не лочится
+English:
+Small bug: it's also impossible to lock keyboard manually by long #
+*/
+0066C10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 09B5044B9847002801D1014B984709BD
+0066C20: FFFFFFFFFFFFFFFF A30F90A0CDB952A0
+03ED320: A30F90A0 116C06A0
+;------------------------- end -------------------------
+

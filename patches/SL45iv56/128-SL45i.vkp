@@ -1,0 +1,21 @@
+;SL45iv56
+;Быстрое включение диктофона
+;Fast dictaphone enabling
+;(c) DeadMan
+;Version: 
+;PatchID: 1723
+;Details: https://patches.kibab.com/patches/details.php5?id=1723
+/*
+Короткое нажатие кнопки диктофона включает запись без 
+подтверждения, долгое удержание кнопки диктафона проигрывает 
+последнюю запись
+
+
+Realese: 27.03.04
+
+Патч №128 с http://patch.oslik.ru/SL45_RU
+*/
+44ffbc: eb ea 
+44ffc2: ea eb
+;------------------------- end -------------------------
+

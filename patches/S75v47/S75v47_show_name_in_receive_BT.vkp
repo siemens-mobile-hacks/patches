@@ -1,0 +1,23 @@
+;S75v47
+;Показывать имя файла при приёме по БТ
+;Show file name while receiving file via BT
+;(c) Evgr
+;Version: 
+;PatchID: 10495
+;Details: https://patches.kibab.com/patches/details.php5?id=10495
+/*
+исправляем косяк платформы NSG
+*/
+
+0595CA0: 2039C019401A82F72CF8 004B9847,0xA13BF351,C046
+
+#pragma enable old_equal_ff
+13BF350: 00B52039C019401A074B98472878054B 
+13BF360: 5843C01930384168806A044B984701BC
+13BF370: 06300047D4040000,0xA0517D03,0xA05253FB
+#pragma disable old_equal_ff
+
+05256AF: D9 E0 ; не резать имя файла
+
+;------------------------- end -------------------------
+

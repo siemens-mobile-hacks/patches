@@ -1,0 +1,15 @@
+;CX70v56
+;Подсветка с шагом 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 619
+;Details: https://patches.kibab.com/patches/details.php5?id=619
+/*
+Подсветка с шагом 5%.
+*/
+091B5B4: 0A 05 ; 05 или любая цифра в HEX
+091B5C4: 0A 05 ; 05 или любая цифра в HEX
+;------------------------- end -------------------------
+

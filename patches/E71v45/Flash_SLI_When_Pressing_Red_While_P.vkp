@@ -1,0 +1,14 @@
+;E71v45
+;Моргать только SLI при коротком нажатии красной кнопки при выключенном телефоне
+;Flash SLI When Pressing Red While Phone Off
+;(c) benj9, Evgr
+;Version: 
+;PatchID: 9320
+;Details: https://patches.kibab.com/patches/details.php5?id=9320
+/*
+
+*/
+04AA3A0: 0500000A020000EF0030A0E30220A0E30000A0E314109FE5858A00EB 0100A0E30110A0E36420A0E30030A0E30000A0E10100A0E36C0F04FB
+04AA3CC: FA F3
+;------------------------- end -------------------------
+

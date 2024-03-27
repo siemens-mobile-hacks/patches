@@ -1,0 +1,13 @@
+;CX75v25
+;Отключить Retarget Exit
+;Disable Retarget Exit
+;(c) 1nvisible
+;Version: 
+;PatchID: 5046
+;Details: https://patches.kibab.com/patches/details.php5?id=5046
+/*
+
+*/
+0A33728: 70402DE9 1EFF2FE1
+;------------------------- end -------------------------
+

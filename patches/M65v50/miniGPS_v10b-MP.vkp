@@ -1,0 +1,20 @@
+;M65v50
+;МиниGPS с логгингом БС - MP
+;MiniGPS with GSM Data Logger
+;(c) ACiD[mrp], arsh0r
+;(r) bennie, SiNgle, (i) KreN
+;(p) Mifodiy
+;Version: 1.02
+;PatchID: 2720
+;Details: https://patches.kibab.com/patches/details.php5?id=2720
+/*
+Можно использовать его вместе с динамическим провайдером v10, для этого надо закомментировать первую строчку в патче и прописать новый адрес в библиотеке. Вот так: 
+
++0FC0000
+600: 004F3847,0xA0FC7601 ; f192: MiniGPS
++0
+
+*/
+1651118: B75EB4A0 0176FCA0
+;------------------------- end -------------------------
+

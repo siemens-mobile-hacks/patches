@@ -1,0 +1,13 @@
+;S7Cv47
+;Disable KbdUnlock in Sending SMS
+;Disable KbdUnlock in Sending SMS
+;(c) BingK(binghelingxi)
+;Version: 
+;PatchID: 8968
+;Details: https://patches.kibab.com/patches/details.php5?id=8968
+/*
+If you want to send a SMS when keyboard locked, you would find that this patch is usefull.
+*/
+0E92A90: 13F27EED C046C046
+;------------------------- end -------------------------
+

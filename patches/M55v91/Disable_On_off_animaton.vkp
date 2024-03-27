@@ -1,0 +1,13 @@
+;M55v91
+;Бездействующие пункты меню "аним при вкл" и "аним при выкл"
+;Disable "on/off animation" menu items
+;(c) a220
+;Version: 
+;PatchID: 1943
+;Details: https://patches.kibab.com/patches/details.php5?id=1943
+/*
+
+*/
+05CAF6: 48862D0248873D0E 48862D0148870D0E
+;------------------------- end -------------------------
+

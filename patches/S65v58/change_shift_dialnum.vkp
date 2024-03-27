@@ -1,0 +1,16 @@
+;S65v58
+;Изменить длину строки набора номера, при которой строка сдвигается вверх
+;Change dial-up number string length for string shift-up
+;(c) Evgr
+;(p) dimonp25
+;Version: 
+;PatchID: 9465
+;Details: https://patches.kibab.com/patches/details.php5?id=9465
+/*
+Портерам: К сожалению на СГ нету третьей строчки
+*/
+0169e714: 0E 0ixx ; первый сдвиг при числе цифр xx / first shift at xx digits
+0169E71C: 1C 0iyy ; второй сдвиг при числе цифр yy=2*xx / second shift at yy=2*xx digits
+
+;------------------------- end -------------------------
+

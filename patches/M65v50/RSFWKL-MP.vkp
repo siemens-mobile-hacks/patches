@@ -1,0 +1,20 @@
+;M65v50
+;Вызов Различных Функций при Залоченной Клавиатуре
+;Running Some Functions While Keyboard is Locked
+;(c) 1nvisible
+;(r) Bennie, avkiev, AsteriX, KiRiK, SiNgle
+;(p) Mifodiy
+;Version: 10.5 MP
+;PatchID: 2198
+;Details: https://patches.kibab.com/patches/details.php5?id=2198
+/*
+Телефон выполняет различные функции при нажатии клавиш при залоченной клавиатуре.
+Функция может быть вызвана как при одиночном нажатии клавиши, так и при двойном (для защиты от случайного нажатия).
+*/
+#pragma enable old_equal_ff
+163AA36: F8F7D5FD 1FF033FF 
+163DA7E: 0223E05E 1CF011FF 
+165A8A0: 014B1847014B1847A120FCA0C120FCA0 ; patch loader
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

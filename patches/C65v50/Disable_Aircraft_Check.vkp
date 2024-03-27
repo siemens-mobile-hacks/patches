@@ -1,0 +1,13 @@
+;C65v50
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) Bennie
+;Version: 
+;PatchID: 3343
+;Details: https://patches.kibab.com/patches/details.php5?id=3343
+/*
+Отключает всем надоевшее "Подтвердите включение",не трогая EEPROM
+*/
+16EBC93: D1 E0
+;------------------------- end -------------------------
+

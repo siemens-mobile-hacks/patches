@@ -1,0 +1,14 @@
+;EL71v45
+;Открыть заблокированные блоки EEPROM
+;Open Hidden EEPROM
+;(c) Skylord
+;(p) Frezzz
+;Version: 
+;PatchID: 7140
+;Details: https://patches.kibab.com/patches/details.php5?id=7140
+/*
+
+*/
+057E4EC: 00 01
+;------------------------- end -------------------------
+

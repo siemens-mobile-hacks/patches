@@ -1,0 +1,14 @@
+;S75v32
+;Громкая связь без подтверждения
+;Toggle HandsFree without question
+;(c) SiNgle
+;(p) Bueffel
+;Version: 
+;PatchID: 3708
+;Details: https://patches.kibab.com/patches/details.php5?id=3708
+/*
+
+*/
+02F47B6: 002201206B49F9F0C2E8 0122012000218CF734EC
+;------------------------- end -------------------------
+

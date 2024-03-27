@@ -1,0 +1,14 @@
+;SL45iv56
+;Включение NetMonitor'а
+;Net Monitor
+;(c) RizaPN
+;Version: 
+;PatchID: 333
+;Details: https://patches.kibab.com/patches/details.php5?id=333
+/*
+Дает доступ к сервисному меню по нажатию "Меню" и "*".
+*/
+217F58: 2D03 0D03 
+
+;------------------------- end -------------------------
+

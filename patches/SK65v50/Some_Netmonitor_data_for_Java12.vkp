@@ -1,0 +1,44 @@
+;SK65v50
+;Передача некоторых данных Netmonitor мидлетам
+;Some Netmonitor data for Java
+;(c) ~Jhellico
+;(r) 1nvisible
+;Version: 1.2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=5336
+;PatchID: 4791
+;Details: https://patches.kibab.com/patches/details.php5?id=4791
+/*
+English:return current CID and LAC values in Java properties MPJC_CID and MPJC_LAC
+return current+6 neighbours CID and LAC values in Java properties MPJCCIDS and MPJCLACS
+return current+6 neighbours RX values in Java property MPJCRXLS
+return current TA value in Java property MPJC_TA
+*/
+
+#pragma enable old_equal_ff
+00D4000: F081BDE8FEB502682A4B9A423FD10D1C
+00D4010: 2F4C294B4068984213D0284B98420FD0
+00D4020: 274B984219D0274B984215D0264B9842
+00D4030: 20D0264B984227D000200870081C07E0
+00D4040: 023402342288281C19A1224FB847281C
+00D4050: FEBC7FB0FFF7D4EF02340234072120B4
+00D4060: 228800F019F801390029F9D1013D2970
+00D4070: 01BCEDE70634072120B4227800F00CF8
+00D4080: 01390029F9D1F1E7173C2278DBE7FEBC
+00D4090: 00240C700C1C00BD02B505A1281C0D4F
+00D40A0: B8472D182C21297001350C3402BDFFFF
+00D40B0: 256900FF4D504A435F4349445F4C4143
+00D40C0: 434944534C41435352584C535F544100
+00D40D0: 0xA8E7CE18,0xA0D1C5DD ; A,B
+#pragma disable old_equal_ff
+
+07C2DC4: 0080A0E30080C1E50140A0E1 04E08FE204F01FE5,0xA00D4005 ; Y
+
+/*
+Port info:
+Y - find 0080A0E30080C1E50140A0E1
+A - RamNet
+B - sprintf
+*/
+
+;------------------------- end -------------------------
+

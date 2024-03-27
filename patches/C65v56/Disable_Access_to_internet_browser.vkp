@@ -1,0 +1,15 @@
+;C65v56
+;Отключить доступ к интернет-браузеру
+;Disable Access to internet browser
+;(c) KiRiK
+;Version: 
+;PatchID: 3769
+;Details: https://patches.kibab.com/patches/details.php5?id=3769
+/*
+
+*/
+093F950: 2DB08EA0 00000000
+093F91C: 47B08EA0 00000000
+093F268: DDB98EA0 00000000
+;------------------------- end -------------------------
+

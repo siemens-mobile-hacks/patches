@@ -1,0 +1,13 @@
+;M75v25
+;Изменение времени подачи ежеминутного сигнала во время разговора
+;Change minute beep during call
+;(c) SiNgle
+;Version: 
+;PatchID: 4107
+;Details: https://patches.kibab.com/patches/details.php5?id=4107
+/*
+
+*/
+0553B26: 00 37
+;------------------------- end -------------------------
+

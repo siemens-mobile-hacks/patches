@@ -1,0 +1,15 @@
+;SL45iv56
+;POP. Предпросмотр анимации включения
+;POP. Power On animation Preview
+;(c) Dingol
+;(p) Seklth
+;Version: 
+;PatchID: 2642
+;Details: https://patches.kibab.com/patches/details.php5?id=2642
+/*
+English: Remark:
+Go to "Setup" -> "Device" -> "Display" -> "Screen Style", select a desired animation, you can preview the animation right away.
+*/
+3C5974: DAE6F854 DADB3624
+;------------------------- end -------------------------
+

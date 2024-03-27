@@ -1,0 +1,14 @@
+;C81v51
+;Отключить "Подождите" в Списке Вызовов
+;Disable "Please Wait" in Call List
+;(c) 1nvisible
+;(p) den11111
+;Version: 
+;PatchID: 7798
+;Details: https://patches.kibab.com/patches/details.php5?id=7798
+/*
+
+*/
+05FEEDA: 0120 10BD
+;------------------------- end -------------------------
+

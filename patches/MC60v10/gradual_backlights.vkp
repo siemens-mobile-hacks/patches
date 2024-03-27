@@ -1,0 +1,16 @@
+;MC60v10
+;Плавное включение подсветки
+;Smooth keypad light
+;(c) SiNgle
+;(p) Kanibaals
+;Version: 
+;PatchID: 3633
+;Details: https://patches.kibab.com/patches/details.php5?id=3633
+/*
+
+*/
+007DDDA4: DA9D58DD DA75001c
+007DDE90: DA9B94F5 DA75001c
+551c00: FFFFFFFFFFFFFFFFFFFF E6FE0004DA9D58DDDB00
+;------------------------- end -------------------------
+

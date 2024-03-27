@@ -1,0 +1,13 @@
+;CF75v23
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) Bennie
+;Version: 
+;PatchID: 4835
+;Details: https://patches.kibab.com/patches/details.php5?id=4835
+/*
+
+*/
+02CADA1: D1 E0
+;------------------------- end -------------------------
+

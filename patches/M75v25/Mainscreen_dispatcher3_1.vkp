@@ -1,0 +1,17 @@
+;M75v25
+;Диспатчер главного экрана
+;Mainscreen-dispatcher
+;(c) avkiev
+;(r) KreN
+;(p) VoVkA
+;Version: 3.1
+;PatchID: 5484
+;Details: https://patches.kibab.com/patches/details.php5?id=5484
+/*
+
+*/
+; (!) SWI
+
+02A8D54: 261C002D05900490 004FB847,0xA0FC3E01
+;------------------------- end -------------------------
+

@@ -1,0 +1,73 @@
+;M75v25
+;Таблица Релокаций
+;Picture Relocation
+;(c) 1nvisible
+;(p) Grizzzzly
+;Version: 61003
+;PatchID: 4674
+;Details: https://patches.kibab.com/patches/details.php5?id=4674
+/*
+В этой редакции:
+- обновлены записи для новых dis патчей
+
+Версия патча записана в формате "ГММДД". Индицирует дату обновления патча.
+Он предназначен для универсализации GPF/GPP патчей.
+Требуется для многих патчей, написанных с использованием концепции "Мастер-Патч + Библиотека функций" (c) 1nvisible, avkiev
+
+English:Patch version is in "YMMDD" format. It indicates its update date.
+
+For GPF/GPP patches
+ It is needed for many other patches, whitch are written using "Master-Patch+Functon Library" concept (c) 1nvisible, avkiev
+*/
++0FC0000
+#pragma enable old_equal_ff
+;              hex  dec
+A00: 0x024D ; F000 61440 r0: picture batt charge
+A02: 0x0250 ; F001 61441 r1: picture batt
+A04: 0x0154 ; F002 61442 r2: alarm clock (dis)
+A08: 0x034B ; F004 61444 r4: net indicators (standart)
+A0A: 0x0163 ; F005 61445 r5: calculator_pics
+A0C: 0x02E8 ; F006 61446 r6: bluetooth icons (activity)
+A0E: 0x02FE ; F007 61447 r7: IrDA icons (activity)
+A10: 0x0300 ; F008 61448 r8: locked kb icon
+A12: 0x0542 ; F009 61449 r9: small digits (0)
+A14: 0x04EA ; F00A 61450 r10: big digits (0)
+A16: 0x01D7 ; F00B 61451 r11: folder icons (small, unchecked)
+A18: 0x0236 ; F00C 61452 r12: group icons (big)
+A1A: 0x02FA ; F00D 61453 r13: GPRS (transferring)
+A1C: 0x0306 ; F00E 61454 r14: GPRS (attached)
+A1E: 0x0391 ; F00F 61455 r15: group icons (small)
+A20: 0x04F7 ; F010 61456 r16: illumination control
+A22: 0x04E9 ; F011 61457 r17: analog clock
+A24: 0x053C ; F012 61458 r18: adjusting volume (increasing)
+A26: 0x054C ; F013 61459 r19: pic extra
+A28: 0x0562 ; F014 61460 r20: pic profiles
+A2A: 0x0577 ; F015 61461 r21: pic advnet
+A2C: 0x055A ; F016 61462 r22: pic calendar
+A2E: 0x00E4 ; F017 61463 r23: sms animation
+A30: 0x0540 ; F018 61464 r24: pic LANI
+A32: 0x0569 ; F019 61465 r25: pic accu graph
+; Menu
+A34: 0x002D ; F01A 61466 r26: Camera selcted
+A36: 0x003F ; F01B 61467 r27: My stuff selcted
+A38: 0x004D ; F01C 61468 r28: Extras selcted
+A3A: 0x005F ; F01D 61469 r29: Massages selcted
+A3C: 0x0071 ; F01E 61470 r30: Organizer selcted
+A3E: 0x007F ; F01F 61471 r31: Addres bokk selcted
+A40: 0x008D ; F020 61472 r32: Call records selcted
+A42: 0x00A1 ; F021 61473 r33: Setup selcted
+A44: 0x00AF ; F022 61474 r34: Surf&Fun selcted
+A46: 0x0431 ; F023 61475 r35: Camera
+A48: 0x0435 ; F024 61476 r36: My stuff
+A4A: 0x0438 ; F025 61477 r37: Extras
+A4C: 0x043C ; F026 61478 r38: Massages
+A4E: 0x043F ; F027 61479 r39: Organizer
+A50: 0x0443 ; F028 61480 r40: Addres bokk
+A52: 0x0446 ; F029 61481 r41: Call records
+A54: 0x044B ; F02A 61482 r42: Setup
+A56: 0x044E ; F02B 61483 r43: Surf&Fun
+#pragma disable old_equal_ff
++0
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;SL65v50
+;Открыть заблокированные блоки EEPROM
+;Open closed EEPROM blocks
+;(c) SkyLord
+;(p) Asterix
+;Version: 
+;PatchID: 182
+;Details: https://patches.kibab.com/patches/details.php5?id=182
+/*
+Открыть заблокированные блоки EEPRom.
+Становятся доступны 6 скрытых блока.
+
+Требуется для некоторых специфичных настроек телефона.
+*/
+1269290: 00 01
+;------------------------- end -------------------------
+

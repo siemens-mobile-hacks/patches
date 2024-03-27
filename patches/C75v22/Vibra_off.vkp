@@ -1,0 +1,23 @@
+;C75v22
+;Отключение вибры в будильнике
+;Vibra off in Alarm clock
+;(c) SiNgle
+;(p) SMeeTBB
+;Version: 
+;PatchID: 1199
+;Details: https://patches.kibab.com/patches/details.php5?id=1199
+/*
+Патч отключает вибру, поэтому как проснетесь включите её сами
+*/
+054EFF8: 0F209DF02EEA B0F4B2EE0028
+#pragma enable old_equal_ff
+01FFD60: 00402DE9F23F2DE90FE0A0E148F09FE5
+01FFD70: 0FE0A0E144F09FE5000050E30100001A
+01FFD80: 070000EB040000EA0FE0A0E130F09FE5
+01FFD90: 030000EB01002DE90100BDE8F23FBDE8
+01FFDA0: 0080BDE800402DE90020A0E30F00A0E3
+01FFDB0: 0FE0A0E10CF09FE50080BDE8,0xA02C27F1
+01FFDC0: 0xA0329089,0xA032909F,0xA02F4770
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

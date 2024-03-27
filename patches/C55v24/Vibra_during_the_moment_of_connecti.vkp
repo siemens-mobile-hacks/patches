@@ -1,0 +1,19 @@
+;C55v24
+;Вибросигнал в момент соединения
+;Vibra during the moment of connection
+;(c) Sinclair
+;Version: 
+;PatchID: 2516
+;Details: https://patches.kibab.com/patches/details.php5?id=2516
+/*
+По мотивам патча "Вибросигнал в момент соединения v1.4" © Matr!x (M55)
+*/
+03EAE4: DA836CF1 DA8B766F
+0B6F76: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA9130F5E6FC2F00DA940891E6FCA86FE6FD8B0088D088C0E00E88
+0B6F91: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E0E6FCF40FE00DE6FE3600E00FDA92D62E0806FA913AF5E6FC0000
+0B6FAC: FFFFFFFFFFFF DA940891DB00
+
+;0B6F9A: 36 XX ; Время работы вибры, 1B = 1/8 секунды, 36 = 1/4 секунды, C6 = 1/2 секунды, D8 = 1 секунда
+;0B6F7C: 2F XX ; Звук вместо вибры (из списка звуков)
+;------------------------- end -------------------------
+

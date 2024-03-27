@@ -1,0 +1,26 @@
+;S75v52
+;Запуск BalletMini вместо стандартного браузера
+;Launch BalletMini instead of standart browser
+;(c) Kibab
+;(r) RainMaker, den11111, Den
+;(p) SimaFish, Виктор89
+;Version: 
+;PatchID: 8979
+;Details: https://patches.kibab.com/patches/details.php5?id=8979
+/*
+
+*/
+;Закомментируйте ненужные строки
+004220C0: CBDC32A0 0xA0061301 ;шорткат и флекс меню
+00437B60: 753833A0 0xA0061301 ;натив меню
+
++0061300 
+#pragma enable old_equal_ff
+00: FFB58020C7DF2501061C06A18022C7DF
+10: 6C0100220021301C94DF301CC7DF2901
+20: FFBD
+24: "4:\\ZBin\\BalletMini\\BalletMini.elf",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

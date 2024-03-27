@@ -1,0 +1,15 @@
+;SL65v50
+;Отключить логгинг MMI
+;Disable MMI logging
+;(c) SiNgle
+;(r) 1nvisible
+;Version: 
+;PatchID: 2364
+;Details: https://patches.kibab.com/patches/details.php5?id=2364
+/*
+Ускоряет работу телефона
+English: Speeds up phone operation
+*/
+08BC6B1: B5 47
+;------------------------- end -------------------------
+

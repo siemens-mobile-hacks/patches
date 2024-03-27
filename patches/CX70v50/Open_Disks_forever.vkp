@@ -1,0 +1,14 @@
+;CX70v50
+;Открыть диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 91
+;Details: https://patches.kibab.com/patches/details.php5?id=91
+/*
+Открываются скрытые диски телефона на всегда.
+*/
+118B0EC: 02 03
+;------------------------- end -------------------------
+

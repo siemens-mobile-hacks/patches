@@ -1,0 +1,14 @@
+;S75v52
+;Отключить "Помощник" при включении
+;Disable "Assistant" at startup
+;(c) SiNgle
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8343
+;Details: https://patches.kibab.com/patches/details.php5?id=8343
+/*
+Слетают настройки интернета !
+*/
+02FD24D: D1 D0
+;------------------------- end -------------------------
+

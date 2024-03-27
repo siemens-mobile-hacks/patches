@@ -1,0 +1,32 @@
+;M75v25
+;Черный список
+;Black list
+;(c) SiNgle
+;(r) Mikel
+;(p) Greeze
+;Version: 1.4
+;PatchID: 4453
+;Details: https://patches.kibab.com/patches/details.php5?id=4453
+/*
+
+*/
+050A10A: 06D1 0028
+050A10E: 04D1 0028
+050A568: B0420ED1 97F7A2EF;97F7eaEF
+04A24B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00402DE9060050E10600001AFF3F2DE9
+04A24c0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0000A0E30FE0A0E10cF09FE5FF3FBDE8
+04A24d0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0040BDE804F09FE50080BDE8,0xa07CCAB7
+04A24e0: FFFFFFFF 79A550A0                           
+0AE6207: D5 E0
+
+
+; "Убрать иконку фильтра"
+; "To remove an icon of the filter"
+; M75 SW25
+; (c)?
+; (p) D_K_
+
+2A9098: FFF738FE 00280028
+
+;------------------------- end -------------------------
+

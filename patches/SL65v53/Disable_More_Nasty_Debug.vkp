@@ -1,0 +1,13 @@
+;SL65v53
+;Disable More Nasty Debug
+;Disable More Nasty Debug
+;(c) benj9
+;Version: 
+;PatchID: 5302
+;Details: https://patches.kibab.com/patches/details.php5?id=5302
+/*
+
+*/
+0A22AF4: FFB5 7047
+;------------------------- end -------------------------
+

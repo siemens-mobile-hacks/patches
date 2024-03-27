@@ -1,0 +1,14 @@
+;CX70v50
+;Открыть заблокированные блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;(p) AsteriX
+;Version: 
+;PatchID: 90
+;Details: https://patches.kibab.com/patches/details.php5?id=90
+/*
+Становятся доступны 6 скрытых блока
+*/
+118A43C: 00 01
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;C81v51
+;NativeMenu вместо Аним. при вкл.
+;NativeMenu instead of Start up anim.
+;(c) Belarus
+;(p) klaud
+;Version: 
+;PatchID: 7369
+;Details: https://patches.kibab.com/patches/details.php5?id=7369
+/*
+Вешаем на горячую клавишу "Аним. при вкл." (NAT_ANIM_STARTUP) и напрямую получаем доступ в NativeMenu
+На те кнопки на которые не вешается стандартным способом, вешаем прогой ShotKeyEd.exe
+*/
+0042AE14: 618233A0 A3112DA0
+;------------------------- end -------------------------
+

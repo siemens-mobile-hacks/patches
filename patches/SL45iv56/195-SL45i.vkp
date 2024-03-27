@@ -1,0 +1,62 @@
+;SL45iv56
+;DSSM. Перемещение строки даты/часов и коллекция перемещений
+;DSSM. Date/time string style & movement collection
+;(c) trustkill
+;(r) rizapn, abomin, rc-flitzer
+;Version: 
+;PatchID: 1892
+;Details: https://patches.kibab.com/patches/details.php5?id=1892
+/*
+Все настройки делаются в теле патча перед установкой.
+
+
+Released: July 28,2004
+
+Патч №195 с http://patch.oslik.ru/SL45_RU
+*/
+;0x3B0106: DAE6EC5F CC00CC00 ; Удалить время
+;0x3B00A0: DAE6EC5F CC00CC00 ; Удалить дату
+
+;[b]Горизонтальные пермещения[/b]
+;0x3B0110: E6FE1CE0 E6FE1EE0 ; Центрировать время (нужно удалить дату)
+;0x3B00AA: E6FE1DE0 E6FE1EE0 ; Центрировать дату (нужно удалить время)
+;0x3B0110: E6FE1CE0 E6FE1DE0 ; Переместить часы влево
+;0x3B00AA: E6FE1DE0 E6FE1CE0 ; Переместить дату вправо
+
+;[b]Вертикальные перемещения[/b]
+;0x18E6C2: 31 XX ; Режим логотипа
+;0x18E67A: 31 XX ; Режим поиска сети
+;0x18E6A2: 31 XX ; Нормальный режим
+;Нулевой уровень - под антенной и батареей,
+;чтобы поднять выше - использовать отрицательные значения
+;(-1) - FF, (-2) - FE и тд.
+
+;[b]Text style[/b]
+;Ox18E6A4: 07 XX ; Код шрифта: Режим логотипа      
+;0x18E67C: 07 XX ; Код шрифта: Режим поиска сети 
+;0x18E6C4: 07 XX ; Код шрифта: Нормальный режим  
+
+; Код шрифта ...
+; 00 = Very small
+; 01 = Big
+; 02 = Thin
+; 03 = Normal
+; 04 = Small for limited chars, numbers etc
+; 05 = Very small, limited chars, numbers etc
+; 06 = Very-very small, numbers only
+; 07 = Small
+; 08 = Small Bold
+; 09 = WAP
+; 0A = Big Phone Numbers
+; 0B = Thin (reduced height/space)
+
+
+; Удаления "очищающего прямоугольника" в линии индикаторов (F8)
+;0x3B38D4: DAC0D0E5 CC00CC00 
+;0x3B36DA: DAC0D0E5 CC00CC00
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+;Если надо изменить стандартные батарею, антенну и значки - 
+;юзать SPC2 (Siemens Picture Search 2) (www.gsm-dev.de).
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;EL71v45
+;Не удалять файлы pvx и sdp
+;Don't delete pvx and sdp
+;(c) @ndres/PRM
+;Version: 
+;PatchID: 7958
+;Details: https://patches.kibab.com/patches/details.php5?id=7958
+/*
+
+*/
+0739E54: 03 16
+0739E67: 0A EA
+;------------------------- end -------------------------
+

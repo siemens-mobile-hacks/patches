@@ -1,0 +1,15 @@
+;CX70v50
+;Толщина прогрессбара при проигрывании .wav
+;Thickness of the strip at play .wav
+;(c) Deface
+;(p) Deface
+;Version: 1.0
+;PatchID: 315
+;Details: https://patches.kibab.com/patches/details.php5?id=315
+/*
+Толщина прогрессбара при проигрований .wav
+*/
+0A56D5E: 66 70 ;Тоньше обычной
+;0A56D5E: 66 60 ;Толше обычной
+;------------------------- end -------------------------
+

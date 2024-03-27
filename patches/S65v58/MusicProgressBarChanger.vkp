@@ -1,0 +1,16 @@
+;S65v58
+;Изменение прогрессбара
+;Music ProgressBar Changer
+;(c) KreN
+;(r) SiNgle, -=(Kad)=-
+;(p) птичка
+;Version: 1-MP
+;PatchID: 6371
+;Details: https://patches.kibab.com/patches/details.php5?id=6371
+/*
+с MP5 не робит
+*/
+09C09E0: 081080E50C3080E5 04F01FE5,0xA0FC7117 
+09C0CEC: 0250A0E1002090E50370A0E1 04E08FE204F01FE5,0xA0FC7101 
+;------------------------- end -------------------------
+

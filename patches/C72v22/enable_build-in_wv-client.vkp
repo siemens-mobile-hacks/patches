@@ -1,0 +1,14 @@
+;C72v22
+;Aктивизация встроенного wv-клиента
+;enable build-in wv-client
+;(c) SiNgle
+;(p) птичка
+;Version: 
+;PatchID: 5820
+;Details: https://patches.kibab.com/patches/details.php5?id=5820
+/*
+
+*/
+00B676B8: 66 78
+;------------------------- end -------------------------
+

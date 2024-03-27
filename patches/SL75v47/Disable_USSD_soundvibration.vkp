@@ -1,0 +1,15 @@
+;SL75v47
+;Отключить звук\вибру  USSD сообщения
+;Disable USSD sound\vibration
+;(c) ThE TrIFoN
+;(r) (i) -=(Kad)=-
+;(p) a1ex
+;Version: 
+;PatchID: 6783
+;Details: https://patches.kibab.com/patches/details.php5?id=6783
+/*
+
+*/
+29C712: 0F 21
+;------------------------- end -------------------------
+

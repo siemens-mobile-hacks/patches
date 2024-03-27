@@ -1,0 +1,16 @@
+;S65v53
+;Значок Вибры на главном экране
+;Vibra logo on MainScreen
+;(c) SiNgle
+;(p) BuG
+;Version: 
+;PatchID: 342
+;Details: https://patches.kibab.com/patches/details.php5?id=342
+/*
+На гланом экране будет отображаться значок вибры.
+
+*/
+1695454: 09D0 0028 
+16B19EC: 951EB9 F3A38D
+;------------------------- end -------------------------
+

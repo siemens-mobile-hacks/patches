@@ -1,0 +1,17 @@
+;CX70v50
+;Мое меню = Диск меню
+;My stuff = Disk Menu
+;(c) LinuXrULz
+;Version: 
+;PatchID: 3291
+;Details: https://patches.kibab.com/patches/details.php5?id=3291
+/*
+
+*/
+0A4F2E6: 0C 04
+0A4F2E8: 32 31
+0A4F2EE: 43 00
+0A4F310: 0C 04
+0A4F318: 43 00
+;------------------------- end -------------------------
+

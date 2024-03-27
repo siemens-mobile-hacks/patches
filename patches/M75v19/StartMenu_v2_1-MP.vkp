@@ -1,0 +1,24 @@
+;M75v19
+;Меню "Пуск" на главном экране
+;StartMenu on MainScreen
+;(c) KreN
+;(r) 1nvisible, benj9
+;(p) Kibab
+;Version: 2.1
+;PatchID: 3097
+;Details: https://patches.kibab.com/patches/details.php5?id=3097
+/*
+Ставим картинкой фона 1346, ставим эту картинку из патча 3065
+И Библиотеку обновляем (60422 или новее).
+Необходимо раскомментировать строчку в конце тела патча перед установкой! И удалить старый конфиг-файл!
+English:
+Set 1346 as backgound picture, install this pic from  3065
+Please also update library, only 60422 or higher is suitable.
+Uncomment the line at the end of patch before installation! And delete old config-file
+*/
+02CC25E: 002865D0DCF779FA0028 C046,00498847,0xA0FCC051
+04B1C98: BD6C32A0 0xA0FCC0E3  ;"ELSE_PUSHTOTALK"
+; UNCOMMENT THE LINE BEHIND PATCH BODY!!!
+; РАСКОММЕНТИРУЙТЕ СТРОКУ ВНИЗУ ТЕЛА ПАТЧА!!!
+;------------------------- end -------------------------
+

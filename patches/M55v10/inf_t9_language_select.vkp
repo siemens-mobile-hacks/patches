@@ -1,0 +1,13 @@
+;M55v10
+;Инф.Т9 при наборе SMS -> выбор языка
+;T9 info in SMS -> language select
+;(c) SiNgle
+;Version: 
+;PatchID: 1540
+;Details: https://patches.kibab.com/patches/details.php5?id=1540
+/*
+
+*/
+0B4DD1: 9944AA 8F4830
+;------------------------- end -------------------------
+

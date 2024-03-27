@@ -1,0 +1,14 @@
+;SK65v50
+;Почасовой контроль яркости
+;Screen Illumination Auto Control
+;(c) starfriend
+;(p) (i) ~Jhellico
+;Version: 2.1
+;PatchID: 3307
+;Details: https://patches.kibab.com/patches/details.php5?id=3307
+/*
+Яркость подсветки дисплея меняется в зависимости от времени (на каждый час можно установить свое значение)
+*/
+078F34C: 04980E1C141CC707101C 004FB847,0xA0FC4C01,C046
+;------------------------- end -------------------------
+

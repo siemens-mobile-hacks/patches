@@ -1,0 +1,14 @@
+;C72v22
+;Фотографирование любой цифровой кнопкой v1
+;To make foto with any digital key v1
+;(c) SiNgle
+;Version: 
+;PatchID: 5834
+;Details: https://patches.kibab.com/patches/details.php5?id=5834
+/*
+
+*/
+0D27B00: 01 16
+0D27B0C: 25 23
+;------------------------- end -------------------------
+

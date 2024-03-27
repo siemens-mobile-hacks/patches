@@ -1,0 +1,14 @@
+;S65v58
+;Не вырубаться при NativeMenu-Списки выз.-Время\стоимость
+;Revision Native Menu
+;(c) Bennie
+;(p)  MaX666
+;Version: 
+;PatchID: 7242
+;Details: https://patches.kibab.com/patches/details.php5?id=7242
+/*
+Теперь не вырубается при NativeMenu-Списки выз.-Время\стоимость
+*/
+092D77C: 0F8F8CA0 E79B8DA0
+;------------------------- end -------------------------
+

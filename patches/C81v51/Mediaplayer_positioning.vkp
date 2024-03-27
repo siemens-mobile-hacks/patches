@@ -1,0 +1,53 @@
+;C81v51
+;Позиционирование элементов медиаплеера
+;Mediaplayer positioning
+;(c) @ndres/PRM
+;(r) DPEHA
+;Version: 0.4
+;PatchID: 7888
+;Details: https://patches.kibab.com/patches/details.php5?id=7888
+/*
+
+*/
+;C81v51
+;* Позиционирование элементов медиаплеера *
+;* Mediaplayer positioning *
+;v0.4
+;(c) @ndres/PRM
+;(r) DPEHA [за тест и скрины на s75]
+
+; animation
+0612CD0: 401A 0420
+0612CEA: 2437 2427
+;0612CD0: 04 0i004 ; x
+;0612CEA: 24 0i036 ; y
+
+; volume
+061331C: 1631 1621
+;0613310: 0420 0020 
+;0613310: 04 0i004 ; x
+;0613331C: 16 0i022 ; y
+
+; play mode
+06133D8: 0236 2226
+06133D6: 1631 1621
+;06133D8: 22 0i034 ; x
+;06133D6: 16 0i022 ; y
+
+; headset
+0613400: B01C 3220
+061340C: 1631 1621
+;0613400: 32 0i050 ; x
+;061340C: 16 0i022 ; y
+
+; status
+061344C: 8931 8921
+;0613452: 0120 0020
+;0613452: 01 0i001 ; x
+;061344C: 89 0i137 ; y
+
+;locale=Russian_Russia.1251
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

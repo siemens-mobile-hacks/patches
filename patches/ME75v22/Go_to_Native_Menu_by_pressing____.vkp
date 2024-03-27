@@ -1,0 +1,16 @@
+;ME75v22
+;Идем в Native menu по тройному нажатию #
+;Go to Native Menu by pressing #
+;(c) SiNgle
+;(r) WerewolF BlacK
+;(p) Grizzzzly
+;Version: 
+;PatchID: 4652
+;Details: https://patches.kibab.com/patches/details.php5?id=4652
+/*
+
+*/
+07863DC: 7DF06FFB 0AF540FA
+0490860: FFFFFFFFFFFFFFFF FFB531F657FAFFBD
+;------------------------- end -------------------------
+

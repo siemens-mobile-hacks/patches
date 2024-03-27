@@ -1,0 +1,14 @@
+;SK65v50
+;Менеджер Графических патчей
+;GraphPatchManager
+;(c) KreN
+;(p) 1nvisible
+;Version: 3.1
+;PatchID: 4241
+;Details: https://patches.kibab.com/patches/details.php5?id=4241
+/*
+
+*/
+02A71AC: 1883261C002D0590 004FB847013EFCA0
+;------------------------- end -------------------------
+

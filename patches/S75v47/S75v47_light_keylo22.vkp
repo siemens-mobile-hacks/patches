@@ -1,0 +1,64 @@
+;S75v47
+;Включать и выключать подсветку дисплея при заблокированной клавиатуре по заданной кнопке
+;Switch display light on/off in keylock by custom key
+;(c) Evgr
+;Version: 2.2
+;PatchID: 10420
+;Details: https://patches.kibab.com/patches/details.php5?id=10420
+/*
++ включать подсветку и показать экран заблокированной клавиатуры по красной кнопке 
++ выключать подсветку при повторном нажатии красной кнопки в экране заблокированной клавиатуры 
+English:
++ switch on display light and show keyboard locked screen by red key
++ switch off display light by red key in keyboard locked screen
+
+*/
+; RU:
+; + включать подсветку и показать экран заблокированной клавиатуры по красной кнопке 
+; + выключать подсветку при повторном нажатии красной кнопки в экране заблокированной клавиатуры 
+; EN:
+; + switch on display light and show keyboard locked screen by red key
+; + switch off display light by red key in keyboard locked screen
+
+09042BA: F9F78EFF C7F780EF ; delete timer
+08CC1BC: 584D4C222061747472696275 00C09FE51CFF2FE1,0xA13D26F9 
+
+0301ED6: 0223E05E F5F07CE8 ; any key in keylock before screensaver
+03F6FD0: FFFFFFFFFFFFFFFFFFFFFFFF 00C09FE51CFF2FE1,0xA13D2709
+
+0303D16: 206B0028 F3F062E9 ; red key and volume keys after screensaver
+03F6FDC: FFFFFFFFFFFFFFFFFFFFFFFF 00C09FE51CFF2FE1,0xA13D272D
+
+0346066: 0223E05E B0F0C0EF ; any digit key, star, hash, navi button, softs after screensaver
+03F6FE8: FFFFFFFFFFFFFFFFFFFFFFFF 00C09FE51CFF2FE1,0xA13D2743
+
+#pragma enable old_equal_ff
+13D26E0: FFB5002800D001200C2D03D12C4D2870
+13D26F0: 00F039F8FFBDC04603B52848C7DF8C01
+13D2700: 03BC2A4A904700BD00B5606880681A28
+13D2710: 02D00223E05E00BD60684068FF389438
+13D2720: 01D100F020F801BC263000477146059D
+13D2730: 206BFFF7D5FF002801D00A3108470231
+13D2740: 084700B5606880681A2802D00223E05E
+13D2750: 00BD60684068FF38943801D100F003F8
+13D2760: 01BC38300047FFB50C480F4907A20132
+13D2770: 4DDF0121FF230A480078002801D00022
+13D2780: 01E008480278002008DFFFBD00B50020
+13D2790: 01210022FF2308DF00BDC046,0xA8A7F100 ; 0xA8A7F100 freeRAM 8 bytes  
+13D27A0: 0xA8D07D80,0xA8DADC94,3B040000,0xA08FE1DB
+#pragma disable old_equal_ff
+
+13D2774: FF FF ; delay for illumination on/off
+13D27A8: 0x0000043B 0x0000043B ; 043Bh=1083*6/1300=~5 secs illumination duration
+
+;any key before screensaver
+13D270E: 1A 1A ; 0x1A navi center 
+
+;red key and volume keys after screensaver
+13D26E8: 0C 0C ; 0x0C red key 
+
+;any digit key, star, hash, navy button, softs after screensaver
+13D2748: 1A 1A ; 0x1A navi center 
+
+;------------------------- end -------------------------
+

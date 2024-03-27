@@ -1,0 +1,13 @@
+;CX75v25
+;Удалять Файлы Только-для-Чтения из Card-Explorer'а
+;Delete Read-Only Files from Card-Explorer
+;(c) 1nvisible
+;Version: 1
+;PatchID: 5458
+;Details: https://patches.kibab.com/patches/details.php5?id=5458
+/*
+
+*/
+02DE0E7: 0A EA
+;------------------------- end -------------------------
+

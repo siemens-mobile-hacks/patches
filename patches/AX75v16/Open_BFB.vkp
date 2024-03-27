@@ -1,0 +1,13 @@
+;AX75v16
+;Открыть BFB
+;Open BFB
+;(c) avkiev
+;Version: 
+;PatchID: 4334
+;Details: https://patches.kibab.com/patches/details.php5?id=4334
+/*
+
+*/
+5FB9B8: 0CBA F8B9 
+;------------------------- end -------------------------
+

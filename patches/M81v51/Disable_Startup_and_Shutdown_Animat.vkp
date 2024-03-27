@@ -1,0 +1,17 @@
+;M81v51
+;Отключить Анимацию при включении и выключении
+;Disable Startup and Shutdown Animation
+;(c) Evgr
+;(p) RaiF-03
+;Version: 
+;PatchID: 9498
+;Details: https://patches.kibab.com/patches/details.php5?id=9498
+/*
+
+*/
+2FDF49: D1 E0 ; disable Startup animation
+;2FE061: 1C 21 ; do not show Startup animation
+2FDA49:  D1 E0 ; disable Shutdown animation
+;2FDB3B:  1C 21 ; do not show Shutdown Animation
+;------------------------- end -------------------------
+

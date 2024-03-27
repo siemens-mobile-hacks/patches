@@ -1,0 +1,14 @@
+;M55v11
+;Включение/выключение громкой связи без подтверждения
+;Hadsfree on/off without confirmation
+;(c) SiNgle
+;(p) AlexSid
+;Version: 
+;PatchID: 5199
+;Details: https://patches.kibab.com/patches/details.php5?id=5199
+/*
+
+*/
+0D1A4E: E01CE6FD4907E00E DAA12E28FA2D621A 
+;------------------------- end -------------------------
+

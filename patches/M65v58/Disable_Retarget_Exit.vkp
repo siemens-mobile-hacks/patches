@@ -1,0 +1,13 @@
+;M65v58
+;Отключить Retarget Exit
+;Disable Retarget Exit
+;(c) 1nvisible
+;Version: 
+;PatchID: 4162
+;Details: https://patches.kibab.com/patches/details.php5?id=4162
+/*
+English: For those who have Retarget Exit when using java
+*/
+12DDD14: 70402DE9 1EFF2FE1
+;------------------------- end -------------------------
+

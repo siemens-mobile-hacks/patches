@@ -1,0 +1,16 @@
+;M75v25
+;Автодозвон постоянно с заданной паузой
+;AutoRedial forever with selected pause
+;(c) SiNgle
+;(p) DDick
+;Version: 
+;PatchID: 6506
+;Details: https://patches.kibab.com/patches/details.php5?id=6506
+/*
+
+*/
+055841A: A068 0020
+0558443: 30 20
+0A560F5: 05 0A
+;------------------------- end -------------------------
+

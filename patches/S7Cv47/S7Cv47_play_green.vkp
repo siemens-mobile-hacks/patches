@@ -1,0 +1,31 @@
+;S7Cv47
+;Change play mode in mediaplayer by green button
+;Change play mode in mediaplayer by green button
+;(c) Evgr
+;Version: 
+;PatchID: 10281
+;Details: https://patches.kibab.com/patches/details.php5?id=10281
+/*
+English:Change play mode in mediaplayer by green button
+*/
+;Change play mode in mediaplayer by green button
+;S75v47
+;(c) Evgr
+
+03B3EDC: A06E72F002EB0128 00488047,0xA152E2E0 ;S7Cv47
+
+#pragma enable old_equal_ff
+152E2E0: 080091E50B0050E30500001A040091E5
+152E2F0: 650F50E30200001AD807D4E1010050E3
+152E300: 0400000A680094E59400D4E5010050E3
+152E310: 04E08EE21EFF2FE160009FE5100090E5
+152E320: 780090E5000050E30120A003010050E3
+152E330: 0220A003020050E30620A003060050E3
+152E340: 0520A003050050E30320A003030050E3
+152E350: 0020A0030C0094E51810A0E304002DE9 
+152E360: C5C8B7FB0400BDE80200A0E1FD60C1FA 
+152E370: 960100EF00E09FE51EFF2FE1,0xA03B4213
+152E380: 0xA8DD7720
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

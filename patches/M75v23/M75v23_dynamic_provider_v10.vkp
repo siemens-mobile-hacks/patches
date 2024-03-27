@@ -1,0 +1,15 @@
+;M75v23
+;Динамич. замена имени оператора
+;Dynamic replacing of Provider name
+;(c) avkiev
+;(r) Bennie, arsh0r, Acid
+;Version: 10
+;PatchID: 2845
+;Details: https://patches.kibab.com/patches/details.php5?id=2845
+/*
+
+*/
+049F010: 0xA083661B 0xA0FC1B01 ; M75v23
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,56 @@
+;CL61v128
+;Включить звук при разговоре и проигрывании amr файлов
+;Recover voice call and amr sound
+;(c) Маришка, Evgr
+;(p) ILYA_ZX, Miha_r
+;Version: 1.5
+;PatchID: 10418
+;Details: https://patches.kibab.com/patches/details.php5?id=10418
+/*
+Возвращает звук при разговоре и воспроизведении AMR в динамик E71 перепрошитого в CL61. Не зависит от swi
+English:Recover voice call and amr sound for E71 reflashed into CL61. Not needed swi
+
++ исправлен баг, теперь в гарнитуру с этим патчем играет стерео
+English:+ fixed bug, now headset plays stereo with this patch
+*/
+;Version: 1.5
+
+0DED145: 00 01 ; registry 42
+
+0DED188: 00 03 ; registry 57
+
+0DF1650: 39 12 ; volume level
+
+0DF1654: 39 08 ; 0x8+0xD=0x15 начальная громкость при разговоре в наушниках, чем меньше, тем громче
+
+0248350: C01094E5 0010A0E3 ; disable handsfree for amr
+
+04A4B78: 20D003294CD0CD48 004CA047810034A1 ; headset to speaker
+
+0A94294: 0040A0E1 88AF22FA ; speaker to headset
+
+0A93C94: 003093E5 0CB122FB ; speaker to headset
+
+0A9416C: 0040A0E1 DAAF22FB ; speaker to headset
+
+0A83738: 6288E74B00061A816288000E 004A9047,0xA13400F1,E54B1A81 ; normalize volume in headset
+
+#pragma enable old_equal_ff
+1340080: 002400B5022908D0032903D101BC9C30
+1340090: 0047094820BC0435284700F039F8012B
+13400A0: 02D010BC403420470024002AEED10021
+13400B0: 01BC48300047C04613DBD9A808B500F0
+13400C0: 27F8002B01D0222408BD041C08BD1B68
+13400D0: 08B500F01DF8002B00D0182108BD08B5
+13400E0: 00F016F8002B01D0002408BD041C08BD
+13400F0: 0006000E00B500F00BF86288002B00D1
+1340100: 03E00720392A00D00D3208BC04331847
+1340110: F7B50E488068002800D00079152801D0
+1340120: 0023F7BD0A48007804280CD009488068
+1340130: C068826808498A42F2D1406800687421
+1340140: 085C1928ECD10123F7BDC0460C3AE2A8
+1340150: 9417ECA8E4C2E8A8100EEDA0
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

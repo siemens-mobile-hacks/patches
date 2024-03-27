@@ -1,0 +1,21 @@
+;SL75v47
+;PIML_EP(3.0)SL7Cv47
+;PIML_EP(3.0)SL7Cv47
+;(c) Rst7/CBSIE
+;(p) bertgrin
+;Version: 
+;PatchID: 10257
+;Details: https://patches.kibab.com/patches/details.php5?id=10257
+/*
+У кого на этом патче(id 10217) тел делал тыц ставте этот
+
+*/
+;ICODE
+#pragma enable old_equal_ff
+0x0155EC10: 0400A0E1CCBD11FA0400A0E1996500EB
+0x0155EC10: 0500A0E1FE80BDE8
+;PATCH
+#pragma disable old_equal_ff
+0x004F0AD8: 201CFFF721FB281C 0048004710EC55A1
+;------------------------- end -------------------------
+

@@ -1,0 +1,23 @@
+;M75v25
+;MpsPlayer
+;MpsPlayer
+;(c) CRAZY_HEEAD
+;Version: 1.0
+;PatchID: 5735
+;Details: https://patches.kibab.com/patches/details.php5?id=5735
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=m75v25&f=MpsPlayer.zip
+
+/*
+Патч создан для того, чтобы можно было открывать плейлисты создаваемые Mps плеером(.plt) сразу из кард эксплорера.(По аналогии с патчем ZipViewer) Для нормальной работы плеер следует подписать smelter"ом
+*/
+4AD705: 50646656696577 4D7073506C6179 ; PdfViewer -> MpsPlayer
+;4AD6ED: 446F6356696577 4D7073506C6179 ; DocViewer -> MpsPlayer
+;4AD6F9: 586C7356696577 4D7073506C6179 ; XlsViewer -> MpsPlayer
+4AD76C: 706466 706C74 ; pdf -> plt
+;4AD72C: 646F63 706C74 ; doc -> plt
+;4AD74C: 786C73 706C74 ; xls -> plt
+;------------------------- end -------------------------
+
+
+;------------------------- end -------------------------
+

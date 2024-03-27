@@ -1,0 +1,15 @@
+;S75v52
+;Отключить загрузку FlexMenu
+;Disconnect FlexMenu loading
+;(c) DDM
+;(p) SimaFish
+;Version: 
+;PatchID: 8540
+;Details: https://patches.kibab.com/patches/details.php5?id=8540
+/*
+Патч отключает загрузку FlexMenu при старте телефона, следовательно нет ошибки Internal Error, но к сожалению нет и второй явы. Нужно в ручную запустить FlexMenu из разроботчика Разроботчик->Java->StartFlexMenu, тогда можно будет использовать 2 явы (папка FlexMenu должна быть переименованна или удалена).
+
+*/
+09F3FE4: B9BFFFEB C046C046
+;------------------------- end -------------------------
+

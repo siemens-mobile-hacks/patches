@@ -1,0 +1,57 @@
+;SL45iv56
+;Переключатель между индикацией от Chaos и Riza
+;Switch Between Incoming Call Displays of Chaos and Riza
+;(c) Naransula
+;(r) Chaos, RizaPN
+;Version: 
+;PatchID: 1907
+;Details: https://patches.kibab.com/patches/details.php5?id=1907
+/*
+English: This patch switch between incoming call display patches created by Chaos and Riza 
+You should first apply the patches by (1) Chaos and (2) Riza, and then (3) this patch.
+
+Created: Aug 22, 2004
+
+Патч №210 с http://patch.oslik.ru/SL45_RU
+*/
+;restore the parameters of image ID #214 in accordance with Chaos' patch 
+0x4BB556: 7D2601005E100C00 7E4101005E100C00 
+
+;modifies the parameters of image ID #20E for Riza's patch 
+0x4BB526: 653C01002202AD03 7D2601005E100C00 
+
+0x444CD0: DAE0C0CB DAC730D6 
+0x3AFDC2: DAC728EB DAC74AD6 
+0x3B39F8: DAC7C0EB DAC764D6 
+
+0x27D630: FFFFFFFFFFFFFFFF 88C0D7400E00F2FC 
+0x27D638: FFFFFFFFFFFFFFFF 423A9AFC03D098C0 
+0x27D640: FFFFFFFFFFFFFFFF FAE4605698C0FAE0 
+0x27D648: FFFFFFFFFFFFFFFF C0CB88C0D7400E00 
+0x27D650: FFFFFFFFFFFFFFFF F2FC423A9AFC03D0 
+0x27D658: FFFFFFFFFFFFFFFF 98C0FADA46FC98C0 
+0x27D660: FFFFFFFFFFFFFFFF FAC728EB88C0D740 
+0x27D668: FFFFFFFFFFFFFFFF 0E00F2FC423A9AFC 
+0x27D670: FFFFFFFFFFFFFFFF 03D098C0FAA40034 
+0x27D678: FFFFFFFFFFFFFFFF 98C0FAC7C0EB 
+
+
+0x445718: 1402 0E02 ; change the image ID for Riza's patch 
+
+0x4457B0: 73 72 ; s - R ; change the file name for Riza's patch 
+0x4457C6: 73 72 ; s - R ; file A:\ImageR\nnnnnnn.bmp 
+
+;I modified the name of the directory for Riza's Display Call Image as "ImageR" 
+;if you want to use Riza's patch you should create a new directory and name it 
+;as "ImageR". If you check the function box, it will enable the patch by Riza. 
+;Otherwise, it will enable the patch by Chaos. 
+
+;Customization; 
+
+;for profile: change the marked values 423A and 0E (1st profile) to any of other profile 
+;as you wish, for profile 2: 6C09 and 36, for profile 3: 6E09 and 36 
+
+;for item number: change the marked values DO (13th item) to any other item number 
+;function number - 1
+;------------------------- end -------------------------
+

@@ -1,0 +1,22 @@
+;SL45iv56
+;Выключение телефона с подтверждением
+;Switch off with confirmation
+;(c) abomin
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=2089
+;PatchID: 2041
+;Details: https://patches.kibab.com/patches/details.php5?id=2041
+/*
+Известные баги: иногда выход из диалога возможен 
+только по длинному нажатию КРАСНОЙ кнопки.
+
+
+Release: 13 March 2005
+*/
+2BE1D6: E6FCA034E6FD0E00 DAE060D50D05CC00 
+40D560: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC8015E6FD8303E6FE8615F0FDFAE5 
+40D570: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF CEDDF04E46FE23003D02DAC22C4ADB00 
+40D580: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0000000002009A066800FF7F00000000 
+40D590: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 72D5E000000000005A2CE202264E0200 
+;------------------------- end -------------------------
+

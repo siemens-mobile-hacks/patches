@@ -1,0 +1,13 @@
+;SL65v53
+;Открыть заблокированные блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;Version: 
+;PatchID: 5273
+;Details: https://patches.kibab.com/patches/details.php5?id=5273
+/*
+
+*/
+12696B0: 00 01
+;------------------------- end -------------------------
+

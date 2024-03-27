@@ -1,0 +1,14 @@
+;C81v51
+;Ускорить загрузку overlay info при старте телефона
+;Speed up overlay info load on startup
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10774
+;Details: https://patches.kibab.com/patches/details.php5?id=10774
+/*
+Убирает чрезмерную задержку загрузки "overlay info" при старте телефона.
+*/
+02FDE6E: 9B48 AA20
+;------------------------- end -------------------------
+

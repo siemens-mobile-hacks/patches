@@ -1,0 +1,21 @@
+;CX70v56
+;Перенаправление ДС
+;RouteDL
+;(c) benj9
+;(p) me-at
+;Version: 0.1
+;PatchID: 994
+;Details: https://patches.kibab.com/patches/details.php5?id=994
+/*
+Перенаправляет динамический свет на подсветку клавиатуры или гл.экрана.
+
+EN:
+Routes the dynamic lights signals to keypadlight or mainscreen.
+*/
+1151150: 00A0A0E3 EABBF9EB
+0FC0100: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 020050E30000A00300A0A0E31EFF2FE1
+
+;0FC0104: 00 01; 00:dl->mainscreenlight | гл.экран 01:dl->keypadlight | клавиатура
+
+;------------------------- end -------------------------
+

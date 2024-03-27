@@ -1,0 +1,20 @@
+;C60v27
+;День недели при нажатии кнопки "вверх"
+;Day of week with the pushing of knob "upward"
+;(c) Snowm@n
+;Version: 
+;PatchID: 4345
+;Details: https://patches.kibab.com/patches/details.php5?id=4345
+/*
+
+*/
+002BA8C8: DA678815 DA831007
+#pragma enable old_equal_ff
+00630710: D7400C00F2FC900388C0E00CD7700C00
+00630720: 02FC8A035C8C02FC8C03F6FC9003E0CD
+00630730: E6FC8E03DACECEC568475C2406F4D101
+00630740: E01CF0D4DA76F44998C0D7400C00F6FC
+00630750: 9003DB00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

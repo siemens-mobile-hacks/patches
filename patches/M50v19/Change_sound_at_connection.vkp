@@ -1,0 +1,13 @@
+;M50v19
+;Замена звука во время дозвона
+;Change sound at connection
+;(c) ACiD[mrp], Lalo
+;Version: 
+;PatchID: 5321
+;Details: https://patches.kibab.com/patches/details.php5?id=5321
+/*
+
+*/
+23D680: 2A 08
+;------------------------- end -------------------------
+

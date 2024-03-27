@@ -1,0 +1,18 @@
+;C81v51
+;Мега-громкость3
+;Mega-loudnes3
+;(c) SiNgle,-=(Kad)=-,Akot
+;(p) den11111
+;Version: 3
+;PatchID: 7810
+;Details: https://patches.kibab.com/patches/details.php5?id=7810
+/*
+
+*/
+01F2BDC: 000000EA C0FFFFEA                                                 ; Headset C81v51
+01F2AE4: 0600000A020000EF6C3DA0E30320A0E3 00709FE537FF2FE131EB06A03B0000EA ; Headset C81v51
+01F2BB0: 2600C4E5 D3FFFFEA                                                 ; Speaker C81v51
+01F2B04: 030000EF6C3DA0E30320A0E30410A0E1 00709FE537FF2FE101EB06A0290000EA ; Speaker C81v51
+
+;------------------------- end -------------------------
+

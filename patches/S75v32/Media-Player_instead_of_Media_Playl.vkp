@@ -1,0 +1,13 @@
+;S75v32
+;Медиа-Плеер вместо Последней Песни
+;Media-Player instead of Media Playlast
+;(c) Bueffel
+;Version: 
+;PatchID: 3709
+;Details: https://patches.kibab.com/patches/details.php5?id=3709
+/*
+
+*/
+04317DC: 29 21
+;------------------------- end -------------------------
+

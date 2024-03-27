@@ -1,0 +1,14 @@
+;EL71v45
+;Уничтожитель всплывающих сообщений
+;Popup Killer
+;(c) avkiev
+;(r) SiNgle
+;Version: 1-MP
+;PatchID: 7508
+;Details: https://patches.kibab.com/patches/details.php5?id=7508
+/*
+
+*/
+095865A: 041C011C281C86F7E8EE C046,004A9047,0xA0066A01
+;------------------------- end -------------------------
+

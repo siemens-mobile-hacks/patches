@@ -1,0 +1,14 @@
+;ME75v22
+;Активировать  Dev.Menu
+;Enable Developer Menu
+;(c) Phantom
+;Version: 
+;PatchID: 2677
+;Details: https://patches.kibab.com/patches/details.php5?id=2677
+/*
+
+*/
+07DD730: 040090E5 0000A0E3
+
+;------------------------- end -------------------------
+

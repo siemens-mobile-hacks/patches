@@ -1,0 +1,13 @@
+;A62v7
+;Активация DevMenu
+;Enable DevMenu
+;(c) avkiev
+;Version: 
+;PatchID: 8197
+;Details: https://patches.kibab.com/patches/details.php5?id=8197
+/*
+
+*/
+10258E: 2D 0D
+;------------------------- end -------------------------
+

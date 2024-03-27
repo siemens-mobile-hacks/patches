@@ -1,0 +1,32 @@
+;C75v22
+;Защита паролем важных функций телефона
+;Password protection some functions
+;(c) avkiev
+;(r) MasterMind
+;(p) MasterMind, inquis
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9728
+;PatchID: 6974
+;Details: https://patches.kibab.com/patches/details.php5?id=6974
+/*
+Функции для защиты найдены только для SMS.
+*/
+#pragma enable old_equal_ff
+10DF440: 50726F746563743320A961766B696576
+10DF450: 00B50A48002202600021416005498160
+10DF460: F821C1600261044A4261836100F008E8
+;10DF470: 00BD,C046,0xA02C8E1F,0xA878B264,0xA85E2B80
+10DF470: 00BD,C046,0xA02C8E1F,0xA8780000,0xA85E2B80
+10DF480: 00c09fe51cff2fe16b4342a0
+#pragma disable old_equal_ff
+10DF458: 00 06 ;ProtectType: 00-PIN, 08-PIN2, 06-Phonecode ; C75v22
+603F58: 0xA052BB79 0xA10DF4B1
+10DF4B0: FFFFFFFFFFFFFFFF 004B,CD,E7,0xA052BB79 ;Inbox
+;**
+603F78: 0xA052BC49 0xA10DF4D9
+10DF4D8: FFFFFFFFFFFFFFFF 004B,B9,E7,0xA052BC49 ;OUTBOX (Неотправленные сообщения-Функция)
+;**
+603F88: 0xA052BCBD 0xA10DF4C1
+10DF4C0: FFFFFFFFFFFFFFFF 004B,C5,E7,0xA052BCBD ;Sent items
+;------------------------- end -------------------------
+

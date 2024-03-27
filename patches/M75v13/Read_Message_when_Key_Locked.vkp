@@ -1,0 +1,31 @@
+;M75v13
+;Чтение СМС при заблокированной клаве
+;Read Message when Key Locked
+;(c) Bennie
+;(r) avkiev
+;(p) Buffel
+;Version: 
+;PatchID: 732
+;Details: https://patches.kibab.com/patches/details.php5?id=732
+/*
+При заблокированной клаве и полученном СМС нажать Зеленую кнопку
+*/
+
+
+02CC5DC: DCF734F8 D9F533FD
+02CF792: 0223E05E D6F565FC
+#pragma enable old_equal_ff
+00A6010: 40B50026052814D128F2F6FA01280AD0
+00A6020: 29F254FA01280CD10320154B98471548
+00A6030: 8047022605E00320114B984725F209F8
+00A6040: 0126301C40BD0223E85E00B5FFF7E0FF
+00A6050: 002802D102F2F8FA00BD01B00A490847
+00A6060: 0223E05E01B5FFF7D3FF002800D101BD
+00A6070: 02B0022802D1002029F2B1FF03490847
+00A6080: 819285A014E349A029C52CA07FF82CA0
+#pragma disable old_equal_ff
+
+
+
+;------------------------- end -------------------------
+

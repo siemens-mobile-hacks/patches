@@ -1,0 +1,14 @@
+;SL75v52
+;Не показывать помощника при загрузке
+;Don't SHOW Startup Assistant
+;(c) benj9
+;(p) kiREALlov
+;Version: 
+;PatchID: 7827
+;Details: https://patches.kibab.com/patches/details.php5?id=7827
+/*
+
+*/
+03443BC: ABF04CEE C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v42
+;Вибра в момент соединения
+;Vibra at connect
+;(c) SiNgle, (i) avkiev
+;(p) RainMaker AKA Shadow®
+;Version: 
+;PatchID: 4946
+;Details: https://patches.kibab.com/patches/details.php5?id=4946
+/*
+
+*/
+0DA77AC: 2A1C2B1C09211730 00498847,0xA0063801   ; S75v42
+;------------------------- end -------------------------
+

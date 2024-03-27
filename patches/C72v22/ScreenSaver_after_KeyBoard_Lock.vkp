@@ -1,0 +1,14 @@
+;C72v22
+;Моментальный запуск скринсейвера после блокировки клавиатуры 
+;Fast Screensaver Appearance after KeyBoard Lock 
+;(c) Evgr, funMarkus
+;Version: 
+;PatchID: 10269
+;Details: https://patches.kibab.com/patches/details.php5?id=10269
+/*
+
+*/
+08DFFD4: 11205CF02CE9041CE2F717F8 012001F0D1FF012001F0B9FF
+
+;------------------------- end -------------------------
+

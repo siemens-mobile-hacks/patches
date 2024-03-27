@@ -1,0 +1,40 @@
+;M55v91
+;Индикатор заряда аккумулятора в мВ с настройкой
+;Accum indicator with adjust
+;(c) ZH-Soft
+;(p) «Serg°H»
+;Version: 
+;PatchID: 1946
+;Details: https://patches.kibab.com/patches/details.php5?id=1946
+/*
+Напряжение индицируется под значком GPRS в мВ посредине экрана. Теперь с точкой !
+Cовместим с патчем * GPRS Monitor * © ZH-Soft & SiNgle § AlexSid!Cовместим с патчем *** Мультииндикатор *** © ZH-Soft, ACiD[mrp], § AlexSid, !Freeman!, Lalo, KoTsK, TimberWolf
+Cовместим с патчем *** Супермонитор *** © ZH-Soft § AlexSid, ZZToP
+Cовместим с патчем *** Cell ID и № канала с настройкой V.2.1 *** © zzt121, § «Serg°H»
+*/
+0DDAD6: DA9FFC08 DA9FD00D ;с патчем *** Супермонитор ***
+;0DDAD6: DA9F9008 DA9FD00D ;с патчем *** Мультииндикатор ***
+;0DDAD6: DA2DB2D2 DA9FD00D ;без патчей *** Мультииндикатор *** или *** Супермонитор ***
+7F0DD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA2DB2D2D7401100F2F11C21F6F10EFE
+7F0DE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FFE8035BFFF2FE0EFEF2FF0CFEE02D
+7F0DF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC4F0006FE190088F0DA2DB2D2E6FE
+7F0E00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2300E02DE6FC5200DA2DB2D298F0F6FF
+7F0E10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0EFEE6FF64005BFFF2FE0EFEF2FF0CFE
+7F0E20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E02DE6FC550006FE190088F0DA2DB2D2
+7F0E30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 98F0F6FF0EFEE0AF5BFFF2FE0EFEF2FF
+7F0E40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0CFEE02DE6FC590006FE190088F0DA2D
+7F0E50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B2D298E0E02DE6FC5D0006FE1900DA2D
+7F0E60: FFFFFFFFFFFFFFFF B2D2DA9F0009DB00 ;с патчем *** Супермонитор ***
+;7F0E60: FFFFFFFF B2D2DB00 ;без патча *** Супермонитор *** с любым другим
+7F0DF2: 4F 2C ;C - X-координата 1-ой цифры
+7F0E06: 52 2F ;C - X-координата знака "."
+7F0E24: 55 32 ;C - X-координата 2-ой цифры
+7F0E46: 59 36 ;C - X-координата 3-ой цифры
+7F0E58: 5D 3A ;C - X-координата 4-ой цифры
+7F0DEF: 2D AD ;2 - Y-координата 1-ой цифры
+7F0E03: 2D AD ;2 - Y-координата знака "."
+7F0E21: 2D AD ;2 - Y-координата 2-ой цифры
+7F0E43: 2D AD ;2 - Y-координата 3-ой цифры
+7F0E55: 2D AD ;2 - Y-координата 4-ой цифры
+;------------------------- end -------------------------
+

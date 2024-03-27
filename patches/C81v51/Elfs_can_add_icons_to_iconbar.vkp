@@ -1,0 +1,16 @@
+;C81v51
+;Добавление иконок в иконбар из эльфов
+;Elfs can add icons to iconbar
+;(c) Miha_r
+;(p) dimonp25
+;Version: 2
+;PatchID: 8556
+;Details: https://patches.kibab.com/patches/details.php5?id=8556
+/*
+Этот патч даёт возможность из эльфов добавлять иконки в иконбар. 
+Теперь не надо убирать иконку гпрс.Если уже стоит disable turnoff icon, то закомментить.
+*/
+029c50a: 00ab187a042803d105a9 014B9847C046019606A0
+029C516:FFF7D3FD C046C046 ; disable turnoff icon
+;------------------------- end -------------------------
+

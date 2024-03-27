@@ -1,0 +1,35 @@
+;SX1v15
+;Вибра в момент соединения ver1
+;vibra when connected ver1
+;(c) Rascal
+;Version: 1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=8458
+;PatchID: 8457
+;Details: https://patches.kibab.com/patches/details.php5?id=8457
+/*
+вибра в момент соединения © Rascal
+SX1v15 
+Патч в формате V-Klay для Egold !!!
+Патч для обладателей S-key или порезанных тестпоинтов.
+Egold fw15 only !
+Срабатывает и на входящие и на исходящие
+Микрофон при срабатывании отключается, собеседник не слышит жужания
+*/
+; вибра в момент соединения © Rascal
+; SX1v15 
+; Патч в формате V-Klay для Egold !!!
+; Патч для обладателей S-key или порезанных тестпоинтов.
+; Egold fw15 only !
+; Срабатывает и на входящие и на исходящие
+; Микрофон при срабатывании отключается, собеседник не слышит жужания
+
+00028AC4: DA8264A8 DAFD0010
+007D1000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA01FE8ADA8AB2FDE6FC2F00DA8B3EDD
+007D1010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC3A10E6FDFD00E00E88D088C088E0
+007D1020: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC00E0E01DE6FE1B00E00FDAB832DC
+007D1030: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0806DA01088BFA8264A8E00CDA8B3EDD
+007D1040: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FA8AC2FD
+
+;007D1028: 1B 10 ;длительность вибры
+;------------------------- end -------------------------
+

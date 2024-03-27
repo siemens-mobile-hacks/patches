@@ -1,0 +1,22 @@
+;M75v12
+;Изменение типа виброзвонка при установке на горячую кнопку
+;Change vibra type when turning it on with hotkey
+;(c) 1nvisible
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 589
+;Details: https://patches.kibab.com/patches/details.php5?id=589
+/*
+Изменение типа вибровызова при установке виброзвонка на горячую клавишу.
+
+*/
+;00 — Стандарт * Standard
+;01 — Вертолёт * Helicopter
+;02 — НЛО * UFO
+;03 — Удар * Shock
+;04 — Москит * Mosquito
+;05 — Поезд * Train
+
+032605E: 00 04
+;------------------------- end -------------------------
+

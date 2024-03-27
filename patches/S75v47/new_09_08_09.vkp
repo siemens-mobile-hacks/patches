@@ -1,0 +1,14 @@
+;S75v47
+;Звук звонка отключен по умолчанию
+;Ringtone status is OFF
+;(c) dimonp25
+;Version: 
+;PatchID: 9504
+;Details: https://patches.kibab.com/patches/details.php5?id=9504
+/*
+
+*/
+01f88f8: 00 01
+
+;------------------------- end -------------------------
+

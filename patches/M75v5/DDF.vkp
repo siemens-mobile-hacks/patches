@@ -1,0 +1,14 @@
+;M75v5
+;Убрать запятую между именем и фамилией в списке адресной
+;none
+;(c) SiNgle
+;(p) Gurza
+;Version: 
+;PatchID: 553
+;Details: https://patches.kibab.com/patches/details.php5?id=553
+/*
+
+*/
+05CA7AE: 59F076E8 00280028
+;------------------------- end -------------------------
+

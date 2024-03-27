@@ -1,0 +1,17 @@
+;CX75v13
+;Чёрно-белый режим камеры
+;Black and white camera
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 784
+;Details: https://patches.kibab.com/patches/details.php5?id=784
+/*
+RUS: Чёрно-белый режим съёмки камерой по умолчанию.
+
+ENG: Black-white mode of shooting by the chamber by default.
+*/
+0D11737: 3F163F 801680
+;------------------------- end -------------------------
+

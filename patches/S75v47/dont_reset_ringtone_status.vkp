@@ -1,0 +1,14 @@
+;S75v47
+;Не cбрасывать состояние звука при переключении профилей
+;Don't reset ringtone status in profiles
+;(c) dimonp25
+;Version: 
+;PatchID: 9503
+;Details: https://patches.kibab.com/patches/details.php5?id=9503
+/*
+
+*/
+0336004: 002046f738ed c046c046c046
+
+;------------------------- end -------------------------
+

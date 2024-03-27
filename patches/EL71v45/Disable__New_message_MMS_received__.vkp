@@ -1,0 +1,14 @@
+;EL71v45
+;Отключить сообщение "Получено/Поступило новое сообщение/MMS!"
+;Disable "New message/MMS received!"
+;(c) Evgr
+;(p) Виктор89
+;Version: 0.11
+;PatchID: 9172
+;Details: https://patches.kibab.com/patches/details.php5?id=9172
+/*
+В отличие от предыдущего патча (0.1) вибрирует и играется мелодия при SMS/MMS
+*/
+070C2DE: F5F0EEEB C046C046
+;------------------------- end -------------------------
+

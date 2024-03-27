@@ -1,0 +1,19 @@
+;CF75v23
+;Изменение размеров Non-Per Mem и Perm Mem
+;Change Non-Per Mem and Perm Mem size
+;(c) ~Jhellico
+;(r) ~V1ruS~, Shur
+;(p) Dimadze
+;Version: 
+;PatchID: 9825
+;Details: https://patches.kibab.com/patches/details.php5?id=9825
+/*
+
+*/
+;Change Non-Per Mem size
+0903FBC: 40 4D ; 4A ; 0x400000 - изначальная нонперм (en.: 0x400000 is default Non-Per Mem size)
+
+;Change Perm Mem size
+0903FC4: E8 E8 ; 0xE8000 ; Начинать уменьшать перм надо если убедился, что всё выжал из нонперм (точнее, тотал сайз) (en.: you can began decrease Perm Mem if you convince that increase Non-Perm Mem (so, Total Size) is not real)
+;------------------------- end -------------------------
+

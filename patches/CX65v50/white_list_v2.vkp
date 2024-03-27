@@ -1,0 +1,34 @@
+;CX65v50
+;Белый список
+;White List
+;(c) SiNgle
+;(p) empeka
+;Version: 2
+;PatchID: 1281
+;Details: https://patches.kibab.com/patches/details.php5?id=1281
+/*
+Белым списком становится выбранная группа в фильтре.
+Неопределенные - занято, левые - занято, звенят только из белой группы.
+
+English:
+The selected group in filter becomes whitelist. All other calls are rejected ("Busy").
+*/
+0B12AB6: 061C281C D1F1A4EC
+0B137A8: 0006000E D0F164EE
+0B13C12: B0420ED1 D0F112EC
+#pragma enable old_equal_ff
+0CE4400: 00402DE9FF012DE9FF0050E30500000A
+0CE4410: 0100A0E30FE0A0E184F09FE5000050E3
+0CE4420: 0000001A0D0000EBFF01BDE80060A0E1
+0CE4430: 0500A0E10080BDE800402DE9FF012DE9
+0CE4440: 060050E10300000A040000EBFF01BDE8
+0CE4450: 0040BDE84CF09FE5FF01BDE80080BDE8
+0CE4460: FF412DE90000A0E30FE0A0E138F09FE5
+0CE4470: FF81BDE8FF412DE9FF0057E30200000A
+0CE4480: 180096E5000057E10300001AFF01BDE8
+0CE4490: 000CA0E1200CA0E10080BDE8EFFFFFEB
+0CE44A0: F9FFFFEA210330A1353CB1A0D348B1A0
+1289BDF: D5 E0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

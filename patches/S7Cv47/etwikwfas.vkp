@@ -1,0 +1,13 @@
+;S7Cv47
+;Enable T9 When Input Key Words for Addressbook Search
+;Enable T9 When Input Key Words for Addressbook Search
+;(c) BingK(binghelingxi)
+;Version: 
+;PatchID: 9291
+;Details: https://patches.kibab.com/patches/details.php5?id=9291
+/*
+
+*/
+069EFFC: 481BA0E3 401BA0E3
+;------------------------- end -------------------------
+

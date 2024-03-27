@@ -1,0 +1,227 @@
+;C75v22
+;API
+;API
+;(c) 1nvisible
+;(p) tick
+;Version: 14
+;PatchID: 10517
+;Details: https://patches.kibab.com/patches/details.php5?id=10517
+/*
+This Patch contains some useful functions which have not been found in FW
+It is universal and can be installed on every x65-x75 phone without changing
+*/
++110000
+#pragma enable old_equal_ff
+;----------------------------------------
+;OpenWriteCloseFile
+;v1.1
+;(c) 1nvisible
+;Writes Buffer to a File
+;R0 - File Name
+;R1 - Buffer Pointer
+;R2 - Bytes to Write
+0FCF000: FFB50D1C161C0849FF2201326B46F1F7
+0FCF010: 1FF8291C321C061C6B46F1F721F8301C
+0FCF020: 6946F1F721F8FFBD01030000
+;----------------------------------------
+;ReturnProcedure
+;v1.0
+;(c) 1nvisible
+;Returns from ldr/blx patches by adding 4 to LR
+0FCF030: 0040BDE804E08EE21EFF2FE1
+;----------------------------------------
+;Hex2Int
+;v1.0
+;(c) empeka
+;This function converts numerical string containing hexadecimal value to 32bit integer
+;Parameters:
+;R0: pointer to string
+;R1: address for pointer containing last processed byte from input string (optional)
+;Output:
+;R0: received value (32bit)
+;R1: pointer to last processed character
+;Notes:
+;Function automatically skips blanks (0x20) and new lines (0x13) in given string, so "123 4" is possible in input
+;If function encounters character, which is one of above, nor hexadecimal digit, it breaks execution.
+0FCF050: 10B5002302780130141C093C042CF9D9
+0FCF060: 202AF7D0302A15D3662A13D8392A09DD
+0FCF070: 412A0FDB462A03DD612A0BDB573A02E0
+0FCF080: 373A00E0303A1C1C102363439B180278
+0FCF090: 0130E7E7002901D001380860181C10BD
+;----------------------------------------
+;StrAnsi2Uni
+;in:  R0 = pointer to ANSI string (0-term),
+;     R1 = pointer to Unicode string buffer (1st word - len)
+0FCF0A0: FFB5021C00230224D05C002805D000F0
+0FCF0B0: 17F8085301330234F6E70B80FFBD
+;----------------------------------------
+;StrUni2Ansi
+;in:  R0 = pointer to Unicode string (1st word - len),
+;     R1 = pointer to ANSI string buffer
+0FCF0C0: FFB50388821C108800F03AF808700131
+0FCF0D0: 0232013B002BF6D10B70FFBD
+;----------------------------------------
+;CharAnsi2Unicode
+;in:  R0 = ANSI char
+;out: R0 = Unicode char
+0FCF0E0: 02B5A821884228DB15D0401A182803DB
+0FCF0F0: 572822DC08381DE002280ED007280ED0
+0FCF100: 0A280ED00B280ED010280ED012280ED0
+0FCF110: 17280ED011E001200CE004200AE00720
+0FCF120: 08E0062006E0562004E0512002E05420
+0FCF130: 00E0572004210902401802BD
+;----------------------------------------
+;CharUnicode2Ansi
+;in:  R0 = Unicode char
+;out: R0 = ANSI char
+0FCF140: 02B504210902884228DB401A102803DB
+0FCF150: 4F280ADC083020E001280FD004280FD0
+0FCF160: 06280FD007280FD018E051280ED05428
+0FCF170: 0ED056280ED057280ED00FE000200CE0
+0FCF180: 02200AE00A2008E0072006E0102004E0
+0FCF190: 122002E00B2000E01720A83002BD
+;----------------------------------------
+;DrawText
+;v1.1
+;(c) 1nvisible
+;(r) benj9, KreN
+;Draws a text string.
+;R0 - wstring
+;R1 - x
+;R2 - y
+;R3 - font
+;[SP] - width
+;[SP+4] - height
+;[SP+8] - alignment
+;[SP+12] - text color
+;[SP+16] - bg color
+;[SP+20] - inversion
+0FCF1B0: F0B5FFB0041C1D1C859B009304A8849B
+0FCF1C0: F1F7F2F808A804A9899A2B1C0093869B
+0FCF1D0: 0193029402ABF1F7EBF808A88799889A
+0FCF1E0: F1F7EAF808A8F1F7EFF808A8F1F7F0F8
+0FCF1F0: 7FB0F0BD
+;----------------------------------------
+;OpenReadCloseFile
+;v1.1
+;(c) KreN
+;Reads whole file to RAM. Supports >64k files.
+;R0 - File Name (0-term str)
+;R1 - RAM for ptr (4 bytes)
+0FCF200: FEB582B00D1C041C00F04AF8411C36D0
+0FCF210: 061E201C802211026B46F0F719FF0190
+0FCF220: 411C2CD0701CF0F73BFF2860051C0024
+0FCF230: 84550294029901291AD0802000020030
+0FCF240: 86420CD9211C019800226B46F0F714FF
+0FCF250: 8022120200322919A418B61A03E02919
+0FCF260: 321C0120029001986B46F0F7F5FEE1E7
+0FCF270: 01986946F0F7F8FEA01902B0FEBD0020
+0FCF280: 2860C043F9E7
+;----------------------------------------
+;GetFileSize
+;v1.1
+;(c) KreN
+;Returns File Size.
+;R0 - File Name (0-term str)
+0FCF2A0: FEB58BB06A4601A9F1F7BAF8411C00D0
+0FCF2B0: 02980BB0FEBD
+;----------------------------------------
+;Seconds2iTime
+;v1.0
+;(c) benj9
+;in: R0 - time (seconds)
+;out: R0 - iTime
+0FCF300: FEB505210902143141430620F1F758F9
+0FCF310: FEBD 
+;----------------------------------------
+;CanvasDraw
+;R0 - X
+;R1 - Y
+;R2 - Pic
+0FCF320: FFB570BC101C21DF40190121401A03B4
+0FCF330: 301C22DF0319013B2A1C211CB2DF25DF
+0FCF340: 02B0F8BD
+;----------------------------------------
+;DrawPicWithCanvas
+;R0 - X
+;R1 - Y
+;R2 - Pic
+0FCF350: FFB570BCFFF7E4FF70B407BC24DFF8BD
+;----------------------------------------
+;DrawColorPicWithCanvas
+;R0 - X
+;R1 - Y
+;R2 - Pic
+;R3 - * color (color addr)
+;[SP] - * bg color (color addr)
+0FCF370: FFB570BCFFF7D4FF069A08BC04B470B4
+0FCF380: 07BC26DF01B0F0BD
+;----------------------------------------
+;Process Files
+0FCF3A0: 03B5FFB0FFB0011C0CA81ADF0CA950A8
+0FCF3B0: 4CAA6BDF002824D00CA950A8A923C35C
+0FCF3C0: 5F2B19D083DF0CA86A4601A984DF0198
+0FCF3D0: 0004C00F06D10CA80DA117DFFF99FFF7
+0FCF3E0: DFFF09E0FF9A002A06D00CA8694611DF
+0FCF3F0: 011C0098FF9A904750A84CA96CDF0028
+0FCF400: DAD150A84CA96DDF7FB07FB003BDC046
+0FCF410: 5C2A00
+;----------------------------------------
+;PlayVibra
+;R0 - Frequency
+;R1 - Duration
+;R2 - PlayIfOff (0-no, 1-yes)
+0FCF420: 07B540DF029A104308D000987CDFC7DF
+0FCF430: E4801030019902A201324DDF07BDFFFF
+0FCF440: 00B500207CDF00BD
+;----------------------------------------
+;PlaySoundVibra
+;R0 - Sound# (if > 0x80, plays with vibra)
+;R1 - Vibra Frequency
+;R2 - ... Duration
+;R3 - Play Vibra If Vibra Off
+0FCF450: 0FB57F23034000200021002204B432DF
+0FCF460: 03BC802907BC00D356DF00BD
+;----------------------------------------
+;GetAccessoryType E71v42/EL71v41/SGold
+;Out: R0 - accesory type
+0FCF480: D08000EF080090E5000050E31EFF2F01
+0FCF490: 0400D0E51EFF2FE1
+;----------------------------------------
+;GetAkkuCapacity
+;Out: R0 - akku capacity
+0FCF500: C88000EFB000D0E11EFF2FE1
+;----------------------------------------
+;GetProfileName
+0FCF510: 10B5041CB6DF001C0022211CC7DF9602
+0FCF520: 10BD
+;----------------------------------------
+;GET_MISSED_EVENT_COUNT
+0FCF530: FEB5071CC7DFD4800178C7DFCC800278
+0FCF540: C7DFCD80037800208C1AE41A032F01DC
+0FCF550: 7F00BF44FEBD02E003E004E005E0081C
+0FCF560: FEBD101CFEBD181CFEBD201CFEBD
+;----------------------------------------
+;SWILIB_FUNC2DC_2DD
+0FCF5A0: 00B5011C032000F03FF800BDC046C046
+0FCF5B0: 1FB5041C03A86B4601AA02A900F05BF8
+0FCF5C0: 002C09D0231C009403980299019A00F0
+0FCF5D0: 47F8012004B010BD0020FBE701B500AB
+0FCF5E0: 19786420642900D9187000AB59786429
+0FCF5F0: 00D9587000AB1978C7DFD78001705978
+0FCF600: 417099788170D978C17008BD01B4C7DF
+0FCF610: D780011C01BC0A7802704A7842708A78
+0FCF620: 8270C978C170704718B568460C1CFFF7
+0FCF630: EDFF2006000E00AB187001B4C7DFD880
+0FCF640: 011C01BC194AC97A8900891849785970
+0FCF650: 5978A14200D958700098FFF7BFFF18BD
+0FCF660: 18B51C1C00AB18705A709970DC700098
+0FCF670: FFF7B4FF18BDF8B5041C161C0D1C1F1C
+0FCF680: 6846FFF7C3FF00AB1878206098782860
+0FCF690: 58783060D8783860F8BD5050000F281E
+0FCF6A0: 0F3C281E0FF02828000000009AF60DA1
+#pragma disable old_equal_ff
++0
+
+;------------------------- end -------------------------
+

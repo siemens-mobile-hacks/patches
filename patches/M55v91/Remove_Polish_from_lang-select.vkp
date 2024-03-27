@@ -1,0 +1,20 @@
+;M55v91
+;Убрать польский из меню выбора языков ввода
+;Remove Polish from language selection menu
+;(c) AlexSid
+;Version: 2.0
+;PatchID: 896
+;Details: https://patches.kibab.com/patches/details.php5?id=896
+/*
+
+*/
+#pragma disable warn_if_new_exist_on_apply 
+680080: 3C90 0000
+#pragma enable warn_if_new_exist_on_apply 
+41AE30: 0000 1501
+;Отключение англ. Т9:
+#pragma disable warn_if_new_exist_on_apply 
+680038: bc 00
+#pragma enable warn_if_new_exist_on_apply 
+;------------------------- end -------------------------
+

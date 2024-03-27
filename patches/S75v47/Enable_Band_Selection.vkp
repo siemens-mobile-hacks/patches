@@ -1,0 +1,14 @@
+;S75v47
+;Разрешить выбор Диапазона
+;Enable Band Selection
+;(c) Bennie
+;(p) ManOfWar
+;Version: 
+;PatchID: 5576
+;Details: https://patches.kibab.com/patches/details.php5?id=5576
+/*
+
+*/
+041F484: 0502 F901
+;------------------------- end -------------------------
+

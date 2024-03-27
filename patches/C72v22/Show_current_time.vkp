@@ -1,0 +1,22 @@
+;C72v22
+;Показ текущего времени при срабатывании отложенного будильника
+;Show current time during postponed alarm
+;(c) avkiev
+;(p) птичка
+;Version: 2
+;PatchID: 6776
+;Details: https://patches.kibab.com/patches/details.php5?id=6776
+/*
+
+*/
+0A8BD78: 42780178 74F572FD
+#pragma enable old_equal_ff
+0800840: 506F7374706F6E656420416C61726D20
+0800850: A961766B6965762031332E30362E3035
+0800860: 01B5D0F09DFF411C01BC0838072905D0
+0800870: 044A0548011C083190470348017A427A
+0800880: 00BDC04673DAB9A0001000A8
+#pragma disable old_equal_ff
+;080086C: 07 NP ;Profile "No patches"
+;------------------------- end -------------------------
+

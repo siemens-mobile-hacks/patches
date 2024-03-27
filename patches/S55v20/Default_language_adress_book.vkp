@@ -1,0 +1,19 @@
+;S55v20
+;Смена языка на русский при входе в адресную книгу
+;Default Language at entry to Standard Book
+;(c) Matr!x
+;(p) avkiev
+;Version: 
+;PatchID: 5085
+;Details: https://patches.kibab.com/patches/details.php5?id=5085
+/*
+
+*/
+324662: DAC6C097 DA61E0AF
+8698B8: DAC6F892 DA61E6AF
+21AFE0: FFFFFFFFFFFF BB05FAC6C097
+21AFE6: FFFFFFFFFFFF BB02FAC6F892
+21AFEC: FFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FF1100D7400C00F6FF983ECB00
+;21AFEE: 11 00 ; Russian ==> English
+;------------------------- end -------------------------
+

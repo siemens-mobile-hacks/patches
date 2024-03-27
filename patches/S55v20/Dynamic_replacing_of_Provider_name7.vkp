@@ -1,0 +1,178 @@
+;S55v20
+;Динамическая замена имени оператора
+;Dynamic replacing of Provider name
+;(c) avkiev
+;Version: 7
+;PatchID: 5061
+;Details: https://patches.kibab.com/patches/details.php5?id=5061
+/*
+
+*/
+/*
+Имя оператора заменяется на строку, меняющуюся с течением времени.
+Частота обновления является частотой опроса сети телефоном.
+24 байта в области 21A900-21A917 являются тремя циклическими буферами,
+содержимое которых определяет то, что будет выводиться на экран.
+Первый буфер (21A900-21A907) определяет замены при незаблокированной клавиатуре.
+Второй буфер (21A908-21A90F) - при заблокированной.
+Третий буфер (21A910-21A917) - в режиме Заставка.
+Строка замены состоит из двух частей, разделенных пробелом.
+Пример №1: по адресу 21A900 находится 12h.
+Это значит, что имя оператора будет заменено на результат работы
+функции №1 и функции №2, разделенных пробелом.
+В нашем примере это будет "Время + Дата".
+Так как следующий байт равен 45h, то при следующем обновлении экрана 
+будет выведено "Температура + Аккумулятор".
+И так в цикле, 8 раз, после чего мы опять вернемся к байту (21A900)=12h
+Пример №2: для того, чтобы всегда было "Время+Температура" нужно эту область забить байтом 14h.
+Если суммарная длина строки превышает 16 (?) символов, то окончание обрезается.
+Примеры скриншотов: http://avkiev.siemens-club.ru/Siemens/Patches/Provider/provider.htm
+Список доступных функций:
++---+------------------+-----------+------+----------------------------------+
+| N | Название         | Формат    | Длина| Комментарии                      |
++---+------------------+-----------+------+----------------------------------+
+| 1 | Время            | 18:39     | 5    |                                  |
+| 2 | Дата, день недели| 17 Май Пн | 6-10 |                                  |
+| 3 | День недели      | Понедел.  | 5-8  |                                  |
+| 4 | Температура      | 25,7'C    | 6    |                                  |
+| 5 | Аккумулятор      | 3,812 10% | 9    |                                  |
+| 6 | Потребляемый ток | 58mA      | 4,5  |                                  |
+| 7 | Оператор         | UA UMC    | ?    |Текущий оператор                  |
+| 8 | Уровень сигнала  | -65dB     | 5,6  |"-" - 1800, "_" - 900             |
+| 9 | Сетевая инфа     | 6502:111  | 8,9  |CI:CH - Текущие сота и канал      |
+| A | Статус           | AGkSV9    | 6    |Alarm,GPRS,Keylock,Sound,Vibra,900|
+| B | Слово в памяти   | 65535     | 4,5  |Мониторинг значения слова в памяти|
++---+------------------+-----------+------+----------------------------------+
+Все остальные - пусто
+*/
+
+
+/*
+The name of the Provider is change to dynamic changed string.
+The Frequency of the renovation is a frequency of the questioning to network by telephone.
+24 bytes in area 21A900-21A917 are three cyclic buffers,
+which define content of the screen.
+First buffer (21A900-21A907) defines strings when keyboard isn't locked.
+Second (21A908-21A90F) - if keyboard is locked.
+Third (21A910-21A917) - in screensaver mode.
+Replacing string consist of two parts, separated with Space.
+Example N1: (21A900) = 12h.
+It means, that ProviderName will changed with results of
+function N1 and function N2, separated with Space.
+In our example it will be "Time + Date".
+Because of next byte is 45h, then next string will be "Temperature + Akku"
+It's cycle, 8 times, after this cycle we again return to byte (21A900)=12h
+Example N2: if you want always "Time+Temperature" fill this area with 14h.
+If total length of string more than 16 (?) chars - string will be truncated
+Screenshots: http://avkiev.kiev.ua/Siemens/Patches/Provider/provider.htm
+Avaliable functions:
++---+------------------+-----------+------+----------------------------------+
+| N | Description      | Format    | Len  |Comments                          |
++---+------------------+-----------+------+----------------------------------+
+| 1 | Time             | 18:39     | 5    |                                  |
+| 2 | Date, DayOfWeek  | 17 May Mo | 6-10 |                                  |
+| 3 | Day of week      | Monday    | 5-8  |                                  |
+| 4 | Temperature      | 25,7'C    | 6    |                                  |
+| 5 | Akkumulator      | 3,812 10% | 9    |                                  |
+| 6 | Current cuircut  | 58mA      | 4,5  |                                  |
+| 7 | Provider         | UA UMC    | ?    |Current provider                  |
+| 8 | Level of Signal  | -65dB     | 5,6  |"-" - 1800, "_" - 900             |
+| 9 | Net Info         | 6502:531  | 8,9  |CI:CH - Current cell and channel  |
+| A | Status           | AGkSV9    | 6    |Alarm,GPRS,Keylock,Sound,Vibra,900|
+| B | Word in memory   | 65535     | 4,5  |Monitor of word in memory         |
++---+------------------+-----------+------+----------------------------------+
+All other - empty
+*/
+
+
+31AAF0: F2FF02FE DA6118A9
+
+;Три циклических 8-байтных буфера, настройте их по себя
+;Three cyclic 8-bytes buffers, adjust their
+#pragma disable warn_no_old_on_apply
+21A900: FFFFFFFFFFFFFFFF 1245657812456578 ; Клава не блокирована | Keyboard isn't locked
+21A908: FFFFFFFFFFFFFFFF 1245657812456578 ; Клава блокирована    | Keyboard is locked
+21A910: FFFFFFFFFFFFFFFF 1245657812456578 ; Режим Заставка       | Screensaver mode
+#pragma enable warn_no_old_on_apply
+
+21A918: FFFFFFFFFFFFFFFF 88508860887088C0
+21A920: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88D088E0DA73403E98E088408840E6F5
+21A930: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 20C1A9D509D1B9D509A1BB10E7FF2000
+21A940: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B9F509A1BB0BE10DB9D598D098C09870
+21A950: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 98609850E6FE2101E03FDB00D7400300
+21A960: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2F62001686706F6100098403D0926F6
+21A970: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0800D7401000F2F7B8393D0226F60800
+21A980: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 06F60029D7408601A9C647FA21003D01
+21A990: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 7C4667FC0F0049C12D2149C22D5E49C3
+21A9A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D7D49C4EA20F0AA49C5EA202AAB49C6
+21A9B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF EA207CAB49C7EA20AAAB47FC0800EA20
+21A9C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B2AB47FC0900EA2000AC47FC0A00EA20
+21A9D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 42AC47FC0B00EA20ACACCB00D7500D00
+21A9E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2FCBC04F2FDBE04BB6DB9D509A1B9C5
+21A9F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 09A1E7FF3A00B9F509A1BB63B9D509A1
+21AA00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B9C509A1CB00D7600D00F2F6C404F3FE
+21AA10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C204F3FFC004E6FC1EC1B87C28C2B86C
+21AA20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E03D8850DABF1CAF9850CB008850004C
+21AA30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7408601A9C4F0C6DA677CFAF0E4F0F5
+21AA40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 9850E10FB9F5F0C5E03DDABFAE81F05C
+21AA50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E7FF9100B9F509A1CB00D7500D00F2F4
+21AA60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C204F2FDC004BB2EB9D509A1B9C509A1
+21AA70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E7FF2000B9F509A1E11D47F80A008D01
+21AA80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E12DE6FCA72ABBD2E7FF2000B9F509A1
+21AA90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BBBAE12DE6FCB42ABBC9CB00BBB4E15D
+21AAA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FCBB2ABBC3CB00ECEFF2F5F7F9FBFD
+21AAB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FF000204090F14191D2228ACB8ADAEAF
+21AAC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B0ABF0DCF6FD0EFEE0A65B66F3FD0EFE
+21AAD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F3FC0CFE06F63030CB00F6FC0EFEE6FD
+21AAE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 64004BDDF2FD0CFEBBEFF076BBEBCB00
+21AAF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7406900F2FCB239E6FDAA0A20CDBBED
+21AB00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B9E509A1B9D509A1E7FF2C00B9F509A1
+21AB10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B9C509A1E7FF2700B9F509A1E7FF4300
+21AB20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B9F509A1CB000DD90D8CD7401000F2FC
+21AB30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 9638BBD3B9F509A1E7FF2C00B9F509A1
+21AB40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B9E509A1B9D509A1B9C509A1E7FF2000
+21AB50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B9F509A1D7400F00F2FD2828BBB3E7FE
+21AB60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 250047FD3A003D03E7FD3100F1ECB9D5
+21AB70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 09A1B9C509A1B9E509A1CB00D7401000
+21AB80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2FCB038BB3C47FE30002D02B9E509A1
+21AB90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B9D509A1B9C509A1E7FF6D00B9F509A1
+21ABA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E7FF4100B9F509A1CB00F2FF02FEBBBC
+21ABB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF CB00D7500800F2FDE23EF2F6E83EE7FF
+21ABC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 110046FD7D008D02E7FF2D00B9F509A1
+21ABD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E10DF0C6BB1447FE30002D02B9E509A1
+21ABE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B9D509A1B9C509A1E7FF6400B9F509A1
+21ABF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E7FF4200B9F509A1CB00EA00C8AA0D93
+21AC00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400800F2FCE43EBB57E7FF3A00B9F5
+21AC10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 09A1D7400800F2FCE23E46FC7D008D02
+21AC20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 06FC5101BBECB9E509A1B9D509A1B9C5
+21AC30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 09A1CB0048402D0227FC2000B9C509A1
+21AC40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF CB00D7400A00F2F4C03F6841E7FC6100
+21AC50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BBF1DA71C6B8E7FC6700BBECD7401000
+21AC60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2F4B839E7FC6B00BBE5DAA448B0E7FC
+21AC70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 530048402D06E7FC730048412D02E7FC
+21AC80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 4200B9C509A1DA922E5FE7FC7600BBD2
+21AC90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400800F2FDE23EE7FC390046FD7D00
+21ACA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8D02E7FC3100B9C509A1CB00D7400900
+21ACB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2FC6C39BB01CB00F6FC0EFEE6F61027
+21ACC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 5B66F2F70CFEBB9947FC30002D02B9C5
+21ACD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 09A1F0C7BB94B9F509A1B9E509A1B9D5
+21ACE0: FFFFFFFFFFFFFFFF 09A1B9C509A1CB00
+
+
+;21AA88: E7FF CB00 ; Не выводить день недели в функции 2 (Дата)
+                   ; Don't display DayOfWeek in function 2 (Date)
+
+;21AB2A: D740 0D14 ; Не выводить напряжение в функции 5, только Проценты
+                   ; Don't display voltage in function 5, just percentages of Akku
+
+;21AB4C: E7FF CB00 ; Не выводить проценты в функции 5, только Напряжение
+                   ; Don't display percentages in function 5, just Voltage of Akku
+
+;Настройка функции B (Монитор слова в памяти телефона)
+;В данном примере мониторится слово по адресу 0009:39C6 = 02796C (MainscreenCounter)
+;Adjusting of function B (Monitoring of word in memory)
+;In this example word 0009:39C6 = 02796C (MainscreenCounter) will monitor
+;21ACAE: 0900 0900 ; Page   = adr/4000h
+;21ACB2: 6C39 6C39 ; Offset = adr%4000h
+;------------------------- end -------------------------
+

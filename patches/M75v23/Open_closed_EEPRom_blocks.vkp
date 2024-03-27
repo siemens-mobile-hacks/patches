@@ -1,0 +1,13 @@
+;M75v23
+;Открыть заблокированные блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;Version: 
+;PatchID: 2821
+;Details: https://patches.kibab.com/patches/details.php5?id=2821
+/*
+
+*/
+08CF5BC: 00 01
+;------------------------- end -------------------------
+

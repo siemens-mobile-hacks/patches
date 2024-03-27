@@ -1,0 +1,27 @@
+;SL45iv56
+;Создание ярлыка "Исходящие SMS" (размещенных на SIM-карте)
+;Create new shortcut for Outbox SMS (located on the SIM card)
+;(c) RizaPN
+;Version: 
+;PatchID: 1507
+;Details: https://patches.kibab.com/patches/details.php5?id=1507
+/*
+Вместо ярлыка "Инкогнито" будет ярлык "Исходящие SMS" (размещенные на SIM-карте)
+
+Патч №002 с www.oslik.ru
+*/
+;Патч №002 с www.patch.oslik.ru/SL45_RU
+;*** Create new shortcut for Outbox SMS (located on the SIM card) ***
+;*** Создание ярлыка "Исходящие SMS" (размещенных на Sim-карте) *** 
+
+;Firmware: SL45 v56 
+;Author: RizaPN 
+
+;Заменяет ярлык "Инкогнито" 
+
+18E38A: 49 92 
+18E3BE: 4A01 6900 
+18E416: 49014901 92019201 
+3AE308: DADA04A3 DAD9F80A 
+;------------------------- end -------------------------
+

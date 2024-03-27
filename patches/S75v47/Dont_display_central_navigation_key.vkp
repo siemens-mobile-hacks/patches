@@ -1,0 +1,14 @@
+;S75v47
+;Не отображать иконки центральной навигационной клавиши
+;Don't display central navigation key icon
+;(c) avkiev
+;Version: 
+;PatchID: 6585
+;Details: https://patches.kibab.com/patches/details.php5?id=6585
+/*
+
+*/
+19A402C: 0C0E8800 00000000
+19A4034: 0C0E8800 00000000
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;SK65v50
+;Удалить черточки в конце CB-сообщения v2.5
+;Replace the dash at the end of CB-news v2.5
+;(c) rreezzoo, Bo$s
+;(r) empeka, g-e-l-o
+;Version: 2.5
+;PatchID: 2483
+;Details: https://patches.kibab.com/patches/details.php5?id=2483
+/*
+
+*/
+01EA00F: 2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D "Any NameYou Want\0" ;maximum 24 ascii characters
+
+;------------------------- end -------------------------
+

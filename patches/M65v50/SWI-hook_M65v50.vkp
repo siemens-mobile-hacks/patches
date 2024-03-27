@@ -1,0 +1,18 @@
+;M65v50
+;SWI-хук
+;SWI-hook
+;(c) avkiev, Rst7/CBSIE, BoBa
+;(r) KonstanT
+;(p) Mifodiy
+;Version: 
+;PatchID: 5444
+;Details: https://patches.kibab.com/patches/details.php5?id=5444
+/*
+Необходим для вызова библиотечных функций из перемещаемых патчей
+English:
+It is needed for calling Library functions from dis-patches
+*/
+00925E0: 1A0000EA DCF09FE5
+00926C3: A100000000 000080FDA0
+;------------------------- end -------------------------
+

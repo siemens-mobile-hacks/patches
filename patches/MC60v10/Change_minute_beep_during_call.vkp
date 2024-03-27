@@ -1,0 +1,19 @@
+;MC60v10
+;Изменение времени подачи ежеминутного сигнала во время разговора
+;Change minute beep during call
+;(c) SiNgle
+;(p) Kanibaals
+;Version: 
+;PatchID: 3158
+;Details: https://patches.kibab.com/patches/details.php5?id=3158
+/*
+Позволяет изменить время подачи ежеминутного сигнала с 60 секунд на любое другое время. Полезно, в частности, абонентам тарифных планов с поминутной тарификацией, типа О'Лайта. Изменяешь на 55 секунд и имеешь ещё 5 секунд закончить разговор, прежде чем начнётся новая минута
+
+English:Allows you to change beep time from 60s to any value you want. Useful for users with tariffs with per-minute payment. For example, change it to 55s and you will have 5s to end call before new minute begins
+*/
+003144: f2f40cfe da750015
+551500: ffffffffffffffff f2f40cfe46f43200 ;На какой секунде подавать первый сигнал. Здесь - на 50-й секунде (32h)
+551508: ffff db00
+
+;------------------------- end -------------------------
+

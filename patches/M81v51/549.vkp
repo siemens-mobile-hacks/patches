@@ -1,0 +1,17 @@
+;M81v51
+;Убрать сообщение "Профиль активирован" 
+;Disable message "Profile Activated" v2
+;(c) funMarkus
+;(p) dimonp25
+;Version: 2
+;PatchID: 9150
+;Details: https://patches.kibab.com/patches/details.php5?id=9150
+/*
+Патчик будет попроще, чем от -=(Kad)=-, но стабильнее, т.к. использует нативные функции тела
+
+*/
+033fef2: b8f00cee 32f342ed
+
+
+;------------------------- end -------------------------
+

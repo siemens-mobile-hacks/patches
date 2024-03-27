@@ -1,0 +1,33 @@
+;CX75v25
+;Молния вместо галки
+;Lightning instead of daw
+;(c) DM101
+;Version: 
+;PatchID: 6025
+;Details: https://patches.kibab.com/patches/details.php5?id=6025
+/*
+Заменяет стандартную галку на молнию.
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 23.10.2006  -  Time: 18:25:01                             ###
+; ### Patch for: SIEMENS CX75 v25                                     ###
+; #######################################################################
+
+
+; ##### Picture 361 #####
+010C0B6C: 0A0E0100F03115A1 0A0E0100F03115A1
+
+011531F0: 003F003F007F00FF01FF83FFC7BFEF3F 003F00BF01BF033F073F0E3F1FFF03BF
+01153200: FE3F7C3F383F103F003F003F 073F063F0C3F083F003F003F
+
+
+
+;------------------------- end -------------------------
+

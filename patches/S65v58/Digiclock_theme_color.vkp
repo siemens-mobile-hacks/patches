@@ -1,0 +1,36 @@
+;S65v58
+;Цифровые Часы на Заставке в Тон Активной Темы Телефона
+;Active Theme Color Scheme for Digiclock ScreenSaver
+;(c) SiNgle, tick
+;(r) titron
+;Version: 1.1
+;PatchID: 10012
+;Details: https://patches.kibab.com/patches/details.php5?id=10012
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s65v58&f=Digiclock_theme_color.zip
+
+/*
+Патч динамически меняет цвета на заставке цифровых часов в зависимости от активной темы (или скина) телефона.
+
++Добавил замену фона под стрелочкой пропущенных!
+*/
+16A30A6: 01 82 ;1h back 70
+16A30AE: 00 77 ;1h font 71
+16A30F0: 01 82 ;2h back 72
+16A30F8: 00 77 ;2h font 73
+16A3132: 01 82 ; back 74
+16A313A: 00 77 ; font 75
+16A316E: 01 82 ;1m back 76
+16A3176: 00 77 ;1m font 77
+16A31B6: 01 82 ;2m back 78
+16A31BE: 00 77 ;2m font 79
+16A3208: 01 82
+16A3210: 00 77
+16A3232: 01 82 ;AM/PM back
+16A323A: 00 77 ;AM/PM font
+16BA3F8: 01 82 ;Arrow back
+16BA450: 00 75 ;ProvName font
+16BA454: 01 82 ;background
+16BA4C0: 00 75 ;ProvFon with Arrow
+16BA4C4: 01 82 ;background with Arrow
+;------------------------- end -------------------------
+

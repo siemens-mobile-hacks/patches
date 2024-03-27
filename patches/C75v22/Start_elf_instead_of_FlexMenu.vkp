@@ -1,0 +1,27 @@
+;C75v22
+;Запуск эльфа вместо Flex-меню
+;Start elf instead of FlexMenu
+;(c) SiNgle
+;(p) NeverGone
+;Version: 
+;PatchID: 9924
+;Details: https://patches.kibab.com/patches/details.php5?id=9924
+/*
+[fix] теперь нормально работает при свёрнутой яве
+*/
+4A0FB4: 0xA02C1D5D 0xA10C9F01 ; CKLK_CK_MAIN_MNU: центр джойстика
+4A1634: 0xA02C1D5D 0xA10C9F01 ; ELSE_MMENU_OPEN: для DSE
+4A7C74: 0xA0340679 0xA10C9F01 ; запуск меню из функций разговора
+
+2B796C: 434B4C4B5F434B5F4D41494E4D4E55 434E43545F425553494E4553534344 ;чтоб работало при свёрнутой яве
+2B797C: 454C53455F4D4D454E555F4F50454E 434E43545F425553494E4553534344
+
++10C9F00
+#pragma enable old_equal_ff
+000: FFB58020C7DF2501061C05A18022C7DF
+010: 6C010021301C94DF301CC7DF2901FFBD
+020: "0:\\ZBin\\Menu\\Menu.elf",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

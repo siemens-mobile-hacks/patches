@@ -1,0 +1,13 @@
+;C81v51
+;Отключить логгинг MMI
+;Disable MMI-logging
+;(c) SiNgle
+;Version: 
+;PatchID: 7517
+;Details: https://patches.kibab.com/patches/details.php5?id=7517
+/*
+
+*/
+01F9E02: 041C 70BD
+;------------------------- end -------------------------
+

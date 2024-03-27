@@ -1,0 +1,13 @@
+;ME75v22
+;Активировать выбор диапазона
+;Enable Band Selection
+;(c) Bennie
+;Version: 
+;PatchID: 5036
+;Details: https://patches.kibab.com/patches/details.php5?id=5036
+/*
+
+*/
+04B0D00: 0502 FA01
+;------------------------- end -------------------------
+

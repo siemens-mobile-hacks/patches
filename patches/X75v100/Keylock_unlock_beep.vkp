@@ -1,0 +1,19 @@
+;X75v100
+;Звук при блокировании клавиатуры
+;Keylock/unlock beep
+;(c) RainMaker
+;(r) avkiev & others (i) -=(Kad)=-
+;Version: 2.1
+;PatchID: 7175
+;Details: https://patches.kibab.com/patches/details.php5?id=7175
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Keylock_unlock_beep.zip
+
+/*
+
++2.1 Не вибрирует при запуске рефрешера и старте телефона, ориентировано на эльфлоадер 2.0+ 
+т.к. все знают, как этот патч вибрит намного дольше, чем нужно..
+
+*/
+;
+;------------------------- end -------------------------
+

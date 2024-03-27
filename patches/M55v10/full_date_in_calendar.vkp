@@ -1,0 +1,13 @@
+;M55v10
+;Выводить в календаре дату полностью
+;Show the full date in calendar
+;(c) Matr!x
+;Version: 
+;PatchID: 1541
+;Details: https://patches.kibab.com/patches/details.php5?id=1541
+/*
+
+*/
+Патч изменяет: Янв2004->29.01.2004
+;------------------------- end -------------------------
+

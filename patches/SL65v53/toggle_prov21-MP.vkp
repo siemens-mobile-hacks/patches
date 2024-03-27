@@ -1,0 +1,17 @@
+;SL65v53
+;Toggle provider string patches
+;Toggle provider string patches
+;(c) benj9
+;(r) Lost
+;(p) Benlux
+;Version: 2.1-MP
+;PatchID: 7837
+;Details: https://patches.kibab.com/patches/details.php5?id=7837
+/*
+No English doc at the moment! :(
+;(!) MP, "Dynamic Provider 10", "miniGPS"
+;(!) FL: 41,B6,C0,C4 
+*/
+1660390: 0xA0B4C223 0xA0FC2CE1 ; SL65v53 
+;------------------------- end -------------------------
+

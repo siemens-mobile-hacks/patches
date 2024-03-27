@@ -1,0 +1,13 @@
+;SK65v50
+;Отключить вопрос о вкл/выкл GPRS через меню
+;Disable GPRS on/off question in menu
+;(c) 1nvisible
+;Version: 
+;PatchID: 4183
+;Details: https://patches.kibab.com/patches/details.php5?id=4183
+/*
+
+*/
+02C6B82: 84F138EB 9047C046
+;------------------------- end -------------------------
+

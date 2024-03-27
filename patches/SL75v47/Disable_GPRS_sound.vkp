@@ -1,0 +1,14 @@
+;SL75v47
+;Убрать звук GPRS
+;Disable GPRS sound
+;(c) AlexeyZ
+;(p) bertgrin
+;Version: 
+;PatchID: 9477
+;Details: https://patches.kibab.com/patches/details.php5?id=9477
+/*
+
+*/
+103F7AC: 5352544600000400C409D200 000000000000000000000000
+;------------------------- end -------------------------
+

@@ -1,0 +1,83 @@
+;CX70v50
+;Индикатор пропущенных событий
+;Missed Events Indicator
+;(c) BuG
+;(p) KreN
+;Version: 2.1
+;PatchID: 2901
+;Details: https://patches.kibab.com/patches/details.php5?id=2901
+/*
+Очень полный индикатор пропущенных событий, гораздо более полный и продвинутый, нежели стандартный.
+English:
+Very good indicator with lots of opportunities, much better then built-in one!
+*/
+1711EDA: 059800F0C9F80C206043 C046,00488047,0xA0FCA851
+1711EF6: 8A4202D12988C90703D53858A02100F0C8F80136 00F002E805E000C09FE51CFF2FE1,0xA0FCA811,C046
+
+; Конфиг-секция патча с правильными номерами картинок:
+; Заменить ею оригинальную секцию в конце тела!
+/*
+0FCA910: 0xB1C2D3E4,0x0000BB03,0000000000000000,"\
+{patch `Missed Events` ver=2.1 cp=BuG id=BB03}","\
+{c `arr`","\
+`total`=0","\
+`calls`=7","\
+`SMS`=4","\
+`MMS`=8","\
+`alarm`=1","\
+`tasks`=6","\
+`BT/IrDA Data`=2","\
+`e-mails`=3","\
+`WAP push`=10","\
+`unknown1`=5","\
+`unknown2`=9","\
+`unknown3`=11","\
+}","\
+{sm arrangement}","\
+{1 o `` c=`arr` v=0}","\
+{2 o `` c=`arr` v=7}","\
+{3 o `` c=`arr` v=4}","\
+{4 o `` c=`arr` v=8}","\
+{5 o `` c=`arr` v=1}","\
+{6 o `` c=`arr` v=6}","\
+{7 o `` c=`arr` v=2}","\
+{8 o `` c=`arr` v=3}","\
+{9 o `` c=`arr` v=10}","\
+{10 o `` c=`arr` v=5}","\
+{11 o `` c=`arr` v=9}","\
+{12 o `` c=`arr` v=11}","\
+{endsm}","\
+{sm icons}","\
+{64 i `total` v=1139}","\
+{92 i `\ncalls` v=852}","\
+{80 i `\nSMS` v=983}","\
+{96 i `\nMMS` v=941}","\
+{68 i `\nalarm` v=996}","\
+{88 i `\ntasks` v=997}","\
+{72 i `\nBT/IrDA Data` v=414}","\
+{76 i `\ne-mails` v=843}","\
+{104 i `\nWAP push` v=846}","\
+{84 i `\nunknown1` v=482}","\
+{100 i `\nunknown2` v=482}","\
+{108 i `\nunknown3` v=482}","\
+{endsm}","\
+{sm positions}","\
+event 1{13 xy `digit` x=7 y=119}{15 xy `icon` x=14 y=115}","\
+event 2{17 xy `digit` x=7 y=104}{19 xy `icon` x=14 y=101}","\
+event 3{21 xy `digit` x=7 y=90}{23 xy `icon` x=14 y=87}","\
+event 4{25 xy `digit` x=7 y=76}{27 xy `icon` x=14 y=73}","\
+event 5{29 xy `digit` x=7 y=62}{31 xy `icon` x=14 y=59}","\
+event 6{33 xy `digit` x=7 y=48}{35 xy `icon` x=14 y=45}","\
+event 7{37 xy `digit` x=7 y=34}{39 xy `icon` x=14 y=31}","\
+event 8{41 xy `digit` x=7 y=20}{43 xy `icon` x=14 y=17}","\
+event 9{45 xy `digit` x=36 y=118}{47 xy `icon` x=43 y=115}","\
+event 10{49 xy `digit` x=36 y=104}{51 xy `icon` x=43 y=101}","\
+event 11{53 xy `digit` x=36 y=90}{55 xy `icon` x=43 y=87}","\
+event 12{57 xy `digit` x=36 y=76}{59 xy `icon` x=43 y=73}","\
+{endsm}","\
+{62 cb `disable standard canvas`}","\
+{61 cb `disable standard icons` v=1}","\
+",00
+*/
+;------------------------- end -------------------------
+

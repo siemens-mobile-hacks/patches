@@ -1,0 +1,34 @@
+;S65v58
+;Чёрный список v3-MP
+;Black List v3
+;(c) SiNgle
+;(r) (i) KreN
+;(p) -=[LCW]=-ExXtReMe
+;Version: 
+;PatchID: 2349
+;Details: https://patches.kibab.com/patches/details.php5?id=2349
+/*
+Для работы патча необходимо, чтобы был включен фильтр на любую группу (по стандартным иконкам путь 9-5-4) хотя бы в одном профиле, неважно на какую (кроме сим), все настройки берутся с мастер патча.
+
+*/
+;* Black List v3 *
+;S65v58
+;(c) SiNgle, Aru55
+;(r) (i) KreN
+;(p) -=[LCW]=-ExXtReMe
+;(!) MP + FL
+
+0B4C6C2: 061C281C C2F41DFF 
+0B4D3B4: 0006000E C2F4ACF8
+0B4D81E: B0420ED1 C1F47FFE
+
+#pragma enable old_equal_ff
+080F500: FFB501490847C046,0xA0FC6C2B
+080F510: 7FB501490847C046,0xA0FC6C65
+080F520: FFB501490847C046,0xA0FC6C01
+
+0FC6CAC: 0xA132EC85,0xA0B4D841
+
+
+;------------------------- end -------------------------
+

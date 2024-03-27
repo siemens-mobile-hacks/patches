@@ -1,0 +1,30 @@
+;X75v100
+;Выключение звука отдельно для каждого профиля
+;Mute per profile
+;(c) BuG
+;Version: 1-BASE
+;PatchID: 7683
+;Details: https://patches.kibab.com/patches/details.php5?id=7683
+/*
+
+*/
+#pragma enable old_equal_ff
+006B700: 4D75746550726F66696C652C20427547
+006B710: 00B5B6DF051C7EB40648C4DF02D00134
+006B720: 005D37DFFEBC012004373847
+
+006B730: 0xB1C2D3E4,0x0000BB99,0000000000000000,"\
+{patch `Mute per profile` ver=1.0 cp=BuG id=BB99 pf=n}","\
+mute in profile:","\
+{1 cb General}","\
+{2 cb Silent}","\
+{3 cb Meeting v=1}","\
+{4 cb Outdoor}","\
+{5 cb `<Name>` v=1}","\
+{6 cb `<Name>`}","\
+{7 cb `Car Kit`}","\
+{8 cb Headset}","\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

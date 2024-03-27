@@ -1,0 +1,57 @@
+;SL65v50
+;Переключение между патчами замены имени оператора
+;Toggle ProviderString-Patches
+;(c) benj9
+;(p) KiRiK
+;Version: 1
+;PatchID: 715
+;Details: https://patches.kibab.com/patches/details.php5?id=715
+/*
+Моментально переключает патчи "миниGPS" и "Динамическая замена имени оператора"
+для тех, кому не нравится аварийное отключение в патче "миниGPS v0.8".
+Обязательно читайте инструкцию в теле патча! Не забывайте про зависимости!
+
+EN:
+Toggles "MiniGPS" and "Dynamic Replacing of Provider" Patches on-the-fly
+for people don't like the miniGps0.8 to crash.
+Please read carefullry instructions inside patch! Don't forget about dependencies!
+*/
+/*
+Toggles "MiniGPS" and "Dynamic Replacing of Provider" Patches on-the-fly
+for people don't like the miniGps0.8 to crash
+Feed the phone with the body of both patches, 
+but comment with ";" the hooks of both patches, lines beginning with "165F9C4:"
+Define profile table below.
+
+Моментально переключает патчи "миниGPS" и "Динамическая замена имени оператора"
+для тех, кому не нравится аварийное отключение в патче "миниGPS v0.8"
+Залейте в телефон тела обоих патчей, но в обоих патчах 
+ЗАКОММЕНТИРУЙТЕ СТРОКУ (;), НАЧИНАЮЩУЮСЯ С 165F9C4:
+Определитесь по таблице профилей ниже
+*/
+165F9C4: 6FB9B4A0 B10680A0
+#pragma enable old_equal_ff
+08006B0: 39B50A4D2D68A847054C245C01BC2419
+08006C0: 2419064B1B59984738BD
+08006D0: D40680A0
+08006DC: E00680A04DBB8CA0D307B9A0
+
+08006E8: 610180A0 ; Mode 02: Entrypoint "dynamic replacing of provider name v7 or v8" (dont change)
+;                  Режим 02: Точка входа "Динамическая замена имени оператора v7 или v8 (НЕ ИЗМЕНЯТЬ)
+08006EC: 071580A0 ; Mode 03: Entrypoint "miniGps v08" (dont change)
+;                  Режим 03: Точка входа "миниGPS" (НЕ ИЗМЕНЯТЬ)
+;08006F0: FFFFFFFF ; more modes for other patches | Ещё режимы для других патчей
+
+# User Config | Настройки пользователя
+#        01 02 03 04 05 06 07   Profiles | Профили
+08006D4: 02,03,02,02,02,02,01 ; Modes for Profiles 1-7 | Режимы для профилей 1-7
+#
+# Modes are: | Режимы:
+# 00 = blocked | блокировано  
+# 01 = normal operation | обычная работа
+# 02 = Dynamic Replacing Provider v7/v8 | Динамическая замена имени оператора v7/v8 
+# 03 = miniGPS v08 | миниGPS v08
+#
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,44 @@
+;SL45iv56
+;UMM. Более удобное меню сообщений
+;UMM. More Usefull Messages Menu
+;(c) Viraptor
+;(r) margmisie, vBart
+;Version: 
+;PatchID: 1917
+;Details: https://patches.kibab.com/patches/details.php5?id=1917
+/*
+Патч меняет некоторые точки входа в меню "Сообщения" для более удобного и быстрого доступа.
+
+English: Patch rearranges some entries in Messages menu for faster access.
+
+
+Created: 14.09.2004
+
+Патч №220 с http://patch.oslik.ru/SL45_RU
+*/
+0x18A8D2: EE0A 020B 
+0x18A8D6: F80A F20D 
+0x18A8DA: 020B FC0D 
+0x18A90E: 8D04 DF03 
+0x18A910: 8D04 DE03 
+0x18A91A: CB C9 
+0x18A920: 8B048B04 60025F02 
+0x18A92C: CB E1 
+0x18A932: DF03DE03 A200A100 
+0x18A93E: C9 DE 
+0x18A980: 300DD9 000000 
+0x18A9AE: 5A0D EE0A 
+0x18A9B2: F20D F80A 
+0x18A9B6: FC 5A 
+0x18A9C2: 3D023C02 8D048D04 
+0x18A9CE: CE CB 
+0x18A9D4: 60025F02 8B048B04 
+0x18A9E0: E1 CB 
+0x18A9E6: A200A100 A501A501 
+0x18AA22: 000000 300DD9 
+0x390B8B: E2 E0 
+0x390B93: E3 E1 
+0x390D35: 12 10 
+0x390D3F: 13 11 
+;------------------------- end -------------------------
+

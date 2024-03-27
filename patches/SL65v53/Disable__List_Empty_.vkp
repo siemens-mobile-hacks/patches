@@ -1,0 +1,13 @@
+;SL65v53
+;Отключить Сообщение "Список Пуст!"
+;Disable "List Empty!"
+;(c) 1nvisible
+;Version: 
+;PatchID: 5284
+;Details: https://patches.kibab.com/patches/details.php5?id=5284
+/*
+
+*/
+0A89C5E: 9F49 03E0
+;------------------------- end -------------------------
+

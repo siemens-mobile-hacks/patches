@@ -1,0 +1,16 @@
+;M65v50
+;Изменить названия дисков в меню выбора
+;Change disk names in menu
+;(c) DeHuCoH
+;(p) AsteriX
+;Version: 
+;PatchID: 49
+;Details: https://patches.kibab.com/patches/details.php5?id=49
+/*
+Изменяет названия дисков в меню выбора дисков на те, которыми их называют программы на PC (типа SiMoCo, MPM и VSFE)
+*/
+009AD2F: 726976652030 617461000000 ;Drive 0 -> Data
+009AD4C: 44726976652031 43616368650000 ;Drive 1 -> Cache
+009AD6A: 44726976652032 436F6E66696700 ;Drive 2 -> Config
+;------------------------- end -------------------------
+

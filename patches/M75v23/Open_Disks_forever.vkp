@@ -1,0 +1,13 @@
+;M75v23
+;Открыть диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;Version: 
+;PatchID: 2822
+;Details: https://patches.kibab.com/patches/details.php5?id=2822
+/*
+
+*/
+08D026C: 02 03
+;------------------------- end -------------------------
+

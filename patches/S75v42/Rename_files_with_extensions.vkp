@@ -1,0 +1,16 @@
+;S75v42
+;Переименование файлов с расширением
+;Rename files with extensions
+;(c) SiNgle
+;(p) DiHLoS
+;Version: 
+;PatchID: 4976
+;Details: https://patches.kibab.com/patches/details.php5?id=4976
+/*
+
+*/
+04D4430: 2E22 0022
+04D4442: 2E22 0022
+059866C: 2E22 0022
+;------------------------- end -------------------------
+

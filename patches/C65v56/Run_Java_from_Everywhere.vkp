@@ -1,0 +1,13 @@
+;C65v56
+;Запуск Явы Отовсюду
+;Run Java from Everywhere
+;(c) 1nvisible
+;Version: 3
+;PatchID: 4193
+;Details: https://patches.kibab.com/patches/details.php5?id=4193
+/*
+
+*/
+0C6F514: 2500000A 000050E3
+;------------------------- end -------------------------
+

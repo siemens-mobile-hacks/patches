@@ -1,0 +1,15 @@
+;S65v58
+;Удалить черточки в конце CB-сообщения
+;Remove the dash at the end of CB-news
+;(c) rreezzoo
+;(r) Bo$s, empeka, g-e-l-o, AsteriX
+;Version: 2
+;PatchID: 1657
+;Details: https://patches.kibab.com/patches/details.php5?id=1657
+/*
+
+*/
+01EAA02: 2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D "                        \0" ;maximum 24 ascii characters
+
+;------------------------- end -------------------------
+

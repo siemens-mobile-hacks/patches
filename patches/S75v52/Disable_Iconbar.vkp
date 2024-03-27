@@ -1,0 +1,15 @@
+;S75v52
+;Отключение Иконбара
+;Disable Iconbar
+;(c) Serega65
+;(r) Evgr
+;Version: 
+;PatchID: 9746
+;Details: https://patches.kibab.com/patches/details.php5?id=9746
+/*
+
+*/
+029D694: 00F092F9 C046C046
+029D616: FFF74EFC C046C046
+;------------------------- end -------------------------
+

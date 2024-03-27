@@ -1,0 +1,13 @@
+;M75v25
+;Сохранение видео и фото на ММС-карте
+;Save videos and photos on the MMC-card
+;(c) avkiev
+;Version: 
+;PatchID: 4119
+;Details: https://patches.kibab.com/patches/details.php5?id=4119
+/*
+
+*/
+04A56C8: 30 34
+;------------------------- end -------------------------
+

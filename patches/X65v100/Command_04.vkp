@@ -1,0 +1,31 @@
+;X65v100
+;Command
+;Command
+;(c) cbn
+;Version: 0.4
+;PatchID: 6598
+;Details: https://patches.kibab.com/patches/details.php5?id=6598
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=Command_04.zip
+
+/*
+Command.elf  Командный интерпретатор BAT файлов
+Выполняет основные команды MS-DOS: copy,move,ren,dir,mkdir,...и кучу др.
+
+Положить в папку 0:\ZBin\DOS
+Добавить в extension.cfg строки:
+[bat]
+RUN=0:\ZBin\DOS\Command.elf
+
+*/
+Command.elf  Командный интерпретатор BAT файлов
+Выполняет основные команды MS-DOS: copy,move,ren,dir,mkdir,...и кучу др.
+Примеры вложены в архив.
+
+Положить в папку 0:\ZBin\DOS
+Добавить в extension.cfg строки:
+[bat]
+RUN=0:\ZBin\DOS\Command.elf
+
+Скачайте приложенный файл
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;SL45iv56
+;Исключение добавления знаков "_nnn_nnn" при перемещении SMS в Архив
+;Eliminate the additional _nnn_nnn string when moving SMS to the archive folder
+;(c) RizaPN
+;Version: 
+;PatchID: 1508
+;Details: https://patches.kibab.com/patches/details.php5?id=1508
+/*
+При перемещении SMS в Архив в имя файла не будет добавлятся приписка "_nnn_nnn".
+
+Патч №003 с www.oslik.ru
+*/
+;Патч №003 с www.oslik.ru
+;*** Eliminate the additional _nnn_nnn string when moving SMS to the archive folder ***
+;*** Исключение добавления знаков "_nnn_nnn" при перемещении SMS в Архив *** 
+
+39FE5C: 8860F0C8 FAD902FF 
+;------------------------- end -------------------------
+

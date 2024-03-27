@@ -1,0 +1,17 @@
+;CX75v25
+;Переделка М75 в СХ75
+;Convert M75 into CX75
+;(c) mana9er
+;(r) N1K
+;Version: 
+;PatchID: 3524
+;Details: https://patches.kibab.com/patches/details.php5?id=3524
+/*
+
+
+
+*/
+81BA94: 0E 00; HWid 
+8DB280: 05 02; add_interpreter
+;------------------------- end -------------------------
+

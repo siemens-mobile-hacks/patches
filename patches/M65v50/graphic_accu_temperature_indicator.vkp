@@ -1,0 +1,85 @@
+;M65v50
+;Графический индикатор температуры аккума
+;Accu Temperature As Graphic Indicator
+;(c) benj9
+;(r) ACiD[mrp], avkiev, BuG
+;Version: 1.5
+;PatchID: 562
+;Details: https://patches.kibab.com/patches/details.php5?id=562
+/*
+Для демонстрации используются встроенные картинки аккума, создавайте свои наборы картинок.
+Или используйте прилагаемый набор, раскомментировав строки 98-9C. 
+В этом случае должен быть установлен патч 571 "Дополнение к PIT таблице"
+
+EN:
+for demonstration the built-in accu icons are used, feel free to create your own set of icons.
+Uncomment lines 98-9C to use built-in picture set.
+In this case 571 "Addition To PIT Table" patch must be installed
+
+
+!!! Пофиксена зависимость - патч 469 - это таблица PIT для S65...
+*/
+1633C0A: 02D0,00F08FFA  C046,26F0F8FD  
+
++165A800
+#pragma enable old_equal_ff
+00: FFB5214880473727C74001200740012F
+10: 03D0FFBC,D9F78BFC,00BD1A2101220D1C ; 14: D9F78BFC = BL A163412E
+20: 009101920D22662182230E98174DA847
+30: 009568240F2501200321154A90470A21
+40: 0902AA31401A00210A061116401803D5
+50: 2D230235635340420E4F0F4E963801D5
+60: 321C0BE0C0210031884201DB3A1C05E0
+70: C117090F081809490011421866200D21
+80: 074B9847C5E70000,E59F8CA0,974163A1 ; GetProfile,DrawCanvas
+90: D09F15A1,370200003502000038020000 ; GetAccuTemp
+A0: BD4163A1 ; DrawImage
+#pragma disable old_equal_ff
+
+; there are 14 pictures.
+; 1 pic below temp_min, 1 pic over temp_max, 12 pics in the range of temp_min to temp_max
+
+; for demonstration the built-in accu icons are used, feel free to create your own set of icons
+# picture numbers #
+98: 3502 0401 ; spc icon no. for temperature < temp_min
+94: 3702 0301 ; spc icon no. for temperature >= (temp_min+range)
+9C: 3802 F700 ; spc icon no. of first icon (12 pics for a range from temp_min to temp_max (like accu indicator pics))
+
+# icon position #
+7C: 66 66; icon_x_start
+7E: 0D 0D; icon_y_start 
+
+# canvas (erase background under icon) position #
+26: 66 67; canvas_x_start
+28: 82 81; canvas_x_end ; x_start + iconwidth
+24: 0D 0F; canvas_y_start
+1A: 1A 13; canvas_y_end ; y:start + iconheight
+
+# minimum temperatur for display #
+5C: 96 96 ; temp_min: minimum temperature ( 0xB4 = 180 = 18°C),(0x96=150=15°)
+               ; temp_max: temp_min + range   (range is (a)19.2°C or (b)38.4°C)
+
+# range of display #
+; you can make the range of the 12 icons between temp_min and temp_max 19.2°C or 38.4°C
+; following lines: (a) range is 19.2°C, (b) range is 38.4°C
+;72: 090F C90E ; (a):090F, (b):C90E
+;78: 0011 4011 ; (a):0011, (b):4011
+;66: 00 C0     ; (a):00,   (b):C0
+
+# temperature calibration #
+34: 0F 00 ; 0i015. Adjust temperature by 0.1ЎC: 000 - TBA, 030 - TEN, 015 - (TBA+TEN)/2, -010 - TBA-1 :)
+
+# profile configuration #
+; every single bit of the profile key represents a profile,
+; the most left one is profile no. 7, the most right one profile no. 1
+; to activate patch in a certain profile, set the according bit to 1
+; example: 0n0100101 - patch is active in profiles no. 1, 3 and 6
+06: 37 37; 37 0n0100101 profile key 
+
+# canvas mode #
+;2A: 0E98 0020 ; normally line is turned off.
+; turn on line means: canvas doesn't select a background automatically, but 
+; erases always with SkinApplicationIdleImage. use with an activated background 
+; image on phone to calibrate canvas'.
+;------------------------- end -------------------------
+

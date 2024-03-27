@@ -1,0 +1,13 @@
+;A52v9
+;Получение SMS без звука и вибры
+;Get SMS without a sound and vibra
+;(c) Delirium
+;Version: 
+;PatchID: 4372
+;Details: https://patches.kibab.com/patches/details.php5?id=4372
+/*
+
+*/
+203D8A: DA8CD4DC CC00CC00
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;C81v51
+;Изменение размера java heap
+;Change java heap size
+;(c) Miha_r
+;(p) @ndreS/PRM, dimonp25
+;Version: 1-MP
+;PatchID: 8138
+;Details: https://patches.kibab.com/patches/details.php5?id=8138
+/*
+
+*/
+;c81v51
+;Изменение размера java heap
+;Change java heap size
+;(c) Miha_r
+;(p) @ndreS/PRM, dimonp25
+;Version: 1-MP 
+
+00B9BA0: 002090E5 56BEFEEB 
+
+;locale=Russian_Russia.1251
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;SL75v52
+;Убрать Запятую в Адреске
+;Remove Comma in AddressBook
+;(c) 1nvisible
+;(r)  KiRik
+;(p) ferro
+;Version: 
+;PatchID: 7635
+;Details: https://patches.kibab.com/patches/details.php5?id=7635
+/*
+
+*/
+0643ce8: 2C 00
+095f62e: 63F071fb C046C046 
+;------------------------- end -------------------------
+

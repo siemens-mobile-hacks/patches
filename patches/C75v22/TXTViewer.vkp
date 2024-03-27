@@ -1,0 +1,26 @@
+;C75v22
+;Открытие TXT файлов из Card Explorer
+;Open TXT from card explorer
+;(c) inquis
+;Version: 
+;PatchID: 5468
+;Details: https://patches.kibab.com/patches/details.php5?id=5468
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=c75v22&f=TXTViewer.rar
+
+/*
+Заменяет формат DOC на TXT!
+Чтобы патч работал нужно создать папку
+0:/java/jam/Applications/TXTViewer/ 
+или
+0:/java/Applications/TXTViewer/ (если стоит патч на удаление папки "jam"),
+поместить в нее любую программу, работающию с TXT и переименовать в TXTViewer.jar!
+Файл не будет открываться сам, он только запустит программу, а дальше как обычно!
+
+!После установки патча и установки приложения перезагрузите телефон
+!Не совместим с патчем RARViewer
+*/
+49D130: 646F63 747874
+49D0F1: 446F63 545854
+
+;------------------------- end -------------------------
+

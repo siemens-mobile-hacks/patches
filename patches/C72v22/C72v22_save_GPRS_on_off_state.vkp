@@ -1,0 +1,31 @@
+;C72v22
+;Сохранять состояние вкл/выкл GPRS в еепром в момент переключения
+;Save GPRS on/off state to EEPROM at the moment of the change
+;(c) Evgr
+;Version: 
+;PatchID: 10599
+;Details: https://patches.kibab.com/patches/details.php5?id=10599
+/*
+Патч нужен, чтобы после включения/выключения состояние GPRS не было потеряно в случае рестарта/вытаскивания аккумулятора.
+Patch is aimed to keep GPRS state after switch on/off in the case of power off/restart incident.
+*/
+
+093C83C: F97027A1 0xA0DAE071
+08D2840: 201CFFF77FFF0025 00488047,0xA0DAE09D
+
+#pragma enable old_equal_ff 
+0DAE070: 3EB5041C022000AB1872002C00D10320
+0DAE080: 18720121201C034A904702A90020024A ; C 0 и 3 свободны
+0DAE090: 90473EBD,0xA12770F9,0xA08C1B25,00B500F0
+0DAE0A0: 0BF80521201C034CA047002501BC0430
+0DAE0B0: 0047C046,0xA08D2745,98B569460020124A ; C 0 и 3 свободны
+0DAE0C0: 904700AB1878022814D01878032811D0
+0DAE0D0: C0460E488047041CFFF7CAFF022000AB
+0DAE0E0: 1870002C01D10320187069460420084A
+0DAE0F0: 904798BD00AB19780120022900D00020
+0DAE100: FFF7B6FFF5E7C046,0xA08C1B3F,0xA127715F
+0DAE110: 0xA08C1B25
+#pragma disable old_equal_ff 
+
+;------------------------- end -------------------------
+

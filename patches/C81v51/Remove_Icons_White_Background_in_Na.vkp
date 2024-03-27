@@ -1,0 +1,15 @@
+;C81v51
+;Убрать белый фон у иконок в Native menu
+;Remove Icons White Background in Native Menu
+;(c) SiNgle
+;(p) den11111
+;Version: 
+;PatchID: 8214
+;Details: https://patches.kibab.com/patches/details.php5?id=8214
+/*
+подправил
+*/
+0A17216: 00 FF
+0A172BA: E8F7A2F8 00280028
+;------------------------- end -------------------------
+

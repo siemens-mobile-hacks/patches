@@ -1,0 +1,22 @@
+;SL65v53
+;Native Menu вместо главного меню
+;Native Menu instead of MainMenu
+;(c) SiNgle
+;(r) Bennie
+;(p) Виктор89
+;Version: 2.2
+;PatchID: 9427
+;Details: https://patches.kibab.com/patches/details.php5?id=9427
+/*
+-запуск при свернутой яве
+-не вырубается по Списки вызов.-Время\стоим.
+*/
+09224C4: 0xA08E4433 0xA08E927F ; CKLK_CK_MAIN_MNU: центр джойстика
+0922ADC: 0xA08E4433 0xA08E927F ; ELSE_MMENU_OPEN: для DSE
+
+08C4EC4: 434B4C4B5F434B5F4D41494E4D4E55 434E43545F425553494E4553534344
+08C4ED4: 454C53455F4D4D454E555F4F50454E 434E43545F425553494E4553534344
+
+09210C0: 17B58CA0 0xA08E3A77 ; NativeMenu-Списки вызов.-Время\стоим.
+;------------------------- end -------------------------
+

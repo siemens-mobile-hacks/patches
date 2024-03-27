@@ -1,0 +1,15 @@
+;CF75v22
+;Disable keypad light
+;Disable keypad light
+;(c) SiNgle
+;Version: 
+;PatchID: 4707
+;Details: https://patches.kibab.com/patches/details.php5?id=4707
+/*
+
+*/
+;* &#206;&#242;&#234;&#235;&#254;&#247;&#232;&#242;&#252; &#239;&#238;&#228;&#241;&#226;&#229;&#242;&#234;&#243; &#234;&#237;&#238;&#239;&#238;&#234; ** Disable keypad light * © SiNgle
+; Enviado por Bruno Oz
+078DF2F: D5 24
+;------------------------- end -------------------------
+

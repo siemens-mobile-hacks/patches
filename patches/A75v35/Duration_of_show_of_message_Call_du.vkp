@@ -1,0 +1,15 @@
+;A75v35
+;Время показа сообщения "Время разговора"
+;Duration of show of the message "Call duration"
+;(c) Ramil_
+;(p) Nikolas535
+;Version: 
+;PatchID: 9367
+;Details: https://patches.kibab.com/patches/details.php5?id=9367
+/*
+
+*/
+DBCCE: B80B D007 ; время задаётся в мс, D007=2000 мс
+;DBCCE: B80B 0100 ; 0100=1 мс
+;------------------------- end -------------------------
+

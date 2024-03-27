@@ -1,0 +1,14 @@
+;A65v17
+;Убрать название оператора
+;Hide operator name
+;(c) ?
+;(p) Rasp
+;Version: 
+;PatchID: 6379
+;Details: https://patches.kibab.com/patches/details.php5?id=6379
+/*
+Убрает название оператора на главном экране и скринсейвере.
+*/
+2B21E0: DAB80058DAB78C6DF07FD740E800 DB0088808870886026F02200DB00
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M75v5
+;Открыть скрытые диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 412
+;Details: https://patches.kibab.com/patches/details.php5?id=412
+/*
+Открывает скрытые диски навсегда - Cache и Config
+*/
+08CDC20: 02 03
+;------------------------- end -------------------------
+

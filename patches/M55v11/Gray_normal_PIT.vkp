@@ -1,0 +1,16 @@
+;M55v11
+;Установка "серых" телефонов на первую (главную) PIT-таблицу
+;Set "gray" phones for main PIT
+;(c) SiNgle
+;(p) AlexSid
+;Version: 
+;PatchID: 5259
+;Details: https://patches.kibab.com/patches/details.php5?id=5259
+/*
+
+*/
+362AAA: 40195501 00004201
+362AC0: 5601 4201
+362AD2: 08185601 00004201
+;------------------------- end -------------------------
+

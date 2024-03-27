@@ -1,0 +1,33 @@
+;SL45iv56
+;Добавление нового пункта меню "Выбор диапозона"
+;Band selection
+;(c) Wind
+;Version: 
+;PatchID: 1525
+;Details: https://patches.kibab.com/patches/details.php5?id=1525
+/*
+Добавление нового пункта меню "Выбор диапозона".
+
+Где искать: 
+Меню->Настройки->Сеть->Настройки->Диапазон 
+Menu->Setup->Network->Setup->Band selection 
+
+Варианты: 
+Automatic 
+GSM 900 
+GSM 1800
+
+Патч №016 с http://patch.oslik.ru/SL45_RU
+*/
+18D6BA: 0402 F901 
+
+;Где искать: 
+;Меню->Настройки->Сеть->Настройки->Диапазон 
+;Menu->Setup->Network->Setup->Band selection 
+
+;Варианты: 
+;Automatic 
+;GSM 900 
+;GSM 1800
+;------------------------- end -------------------------
+

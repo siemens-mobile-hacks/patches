@@ -1,0 +1,14 @@
+;S75v47
+;Отключить разблокировку клавиатуры при отправке SMS
+;Disable KbdUnlock if Sending SMS
+;(c) BingK(binghelingxi)
+;(p) Виктор89
+;Version: 
+;PatchID: 8977
+;Details: https://patches.kibab.com/patches/details.php5?id=8977
+/*
+
+*/
+0D8DE1C: 3DF226EF C046C046
+;------------------------- end -------------------------
+

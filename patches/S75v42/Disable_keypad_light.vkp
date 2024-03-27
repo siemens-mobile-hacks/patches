@@ -1,0 +1,15 @@
+;S75v42
+;Отключение подсветки клавиатуры
+;Disable keypad light
+;(c) SiNgle
+;(p) SimaFish
+;Version: 
+;PatchID: 5471
+;Details: https://patches.kibab.com/patches/details.php5?id=5471
+/*
+
+*/
+08FBA9F: D5 24
+
+;------------------------- end -------------------------
+

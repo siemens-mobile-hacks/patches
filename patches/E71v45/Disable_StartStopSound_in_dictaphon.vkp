@@ -1,0 +1,15 @@
+;E71v45
+;Отключить звук в начале и конце записи в Диктофоне/Записи звука
+;Disable ringtone for Record/Stop in Dictaphone/Sound recorder
+;(c) Smelter by avkiev
+;Version: 
+;PatchID: 10355
+;Details: https://patches.kibab.com/patches/details.php5?id=10355
+/*
+
+*/
+; также не будет сигнала предупреждения, если, например, пытаться выставить подсветку больше 100%
+
+0221F11: 09 FF
+;------------------------- end -------------------------
+

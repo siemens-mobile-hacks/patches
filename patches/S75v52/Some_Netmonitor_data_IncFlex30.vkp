@@ -1,0 +1,57 @@
+;S75v52
+;Информация нетмонитора для Ява (IncFlex30 совместимый)
+;Some Netmonitor data for Java (IncFlex30 compatible)
+;(c) ~Jhellico
+;(r) 1nvisible, Ad, Kibab
+;(p) ferro
+;Version: 
+;PatchID: 9345
+;Details: https://patches.kibab.com/patches/details.php5?id=9345
+/*
+
+Патч предназначен для того, чтобы можно было получить данные нетмонитора из ява приложений.
+Отличие от предыдущей версии - возможность проверить блокировку клавиатуры из явы. Используется, в частности, в BombusMod (c) Ad
+
+Property Value
+---------------------------------------------------
+MPJC_CID current cell CID
+MPJC_LAC current cell LAC
+MPJCCIDS current+neighbours cells CID
+MPJCLACS current+neighbours cells LAC
+MPJCRXLS current+neighbours cells RX level
+MPJC_TA TA
+MPJCTXPW TXPWR
+MPJC_CAP current accu charge level
+MPJCGPRS current GPRS traffic (bytes)
+MPJCKEYL current keyboard lock state
+*/
+09FC1C4: 0070A0E30070C1E50140A0E1 04E08FE204F01FE5F5BA06A0 ; S75v52
+
+#pragma enable old_equal_ff
++006BAF0
+00: F080BDE8FEB502683D4B9A4262D10D1C
+10: 01B4C7DFCA80041C01BC3A4B40689842
+20: 1FD0394B98421BD0384B984225D0384B
+30: 984221D0374B98422CD0374B984233D0
+40: 364B984233D0364B984235D0354B9842
+50: 35D0354B984236D000200870081C07E0
+60: 023402342288281C22A116DF281CFFE7
+70: FEBC1CB0FFF7C4EF02340234072120B4
+80: 228800F02CF801390029F9D1013D2970
+90: 01BCEDE70634072120B4227800F01FF8
+A0: 01390029F9D1F1E7173C2278DBE7C7DF
+B0: C880041C2278D6E7053C2278D3E76FDF
+C0: 70DF0268CFE743DF012801D0012200E0
+D0: 0022C8E7FEBC00240C700C1C00BD02B5
+E0: 04A1281C16DF2D182C21297001350C34
+F0: 02BDC046256900
++0
+
++006BBF0
+00: 4D504A435F4349445F4C414343494453
+10: 4C41435352584C535F5441005F434150
+20: 54585057475052534B45594C00000000
++0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

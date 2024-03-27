@@ -1,0 +1,42 @@
+;A52v9
+;Автоматическая смена профиля с ежечасным сигналом
+;Automatic change of a profile with a hourly signal
+;(c) Sinclair
+;Version: 
+;PatchID: 4387
+;Details: https://patches.kibab.com/patches/details.php5?id=4387
+/*
+Требует патч *** www.Инициализация_при_старте ***
+Дневной профиль - "Шумное место"(профиль 3), переход в 06.30
+Ночной профиль - "Тихое место" (профиль 2), переход в 22.30
+Ежечасный сигнал в дневном профиле, минуты не заданны.
+В качестве ежечасного сигнала используется сигнал CB-сообщений - его можно менять через меню и регулировать громкость, к тому же он не цикличный.
+*/
+0C4D70: CC00CC00 DA82A00C
+020CA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA8ACEBFD7500800F2F9E83FF2F2E63F
+020CB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400C00F2F8503FF049F19440482D26
+020CC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400C00F6F4503F46F916003D0346F2
+020CD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1E002D1446F906003D0346F21E002D12
+020CE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46F200003D13D7404000C2F45C034842
+020CF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3D0DE6FC3600DA8C66D80D08E01CDA86
+020D00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E2DA0DEEE02CDA86E2DA0DEAE6FCA00C
+020D10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FD8200DAA4582DE6FC603FE6FD0C00
+020D20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FED800E00FDA8A10F40806FA8AD8BF
+020D30: FFFFFFFFFFFF DA8ACEBF0DEB
+;************************************************************************
+; Setting:
+;!!! Профили нумеруются с 0 - Обыч.место по 6 - В самолёте)
+;020CCA: 16 hh      ; hour for night profile (in hex)
+;020CD0: 1E mm      ; minute for night profile (in hex)
+;020CD6: 06 hh      ; hour for day profile (in hex)
+;020CDC: 1E mm      ; minute for day profile (in hex)
+;020CE2: 00 mm      ; minute for hourly beep (in hex)
+;020CEF: 42 4p      ; select profile number for hourly beep (0 <= p <= 6) 
+;020CF0: 3D0D 0D0D  ; disable hourly beep
+;020CF0: 3D0D CC00  ; hourly beep in all profiles
+;020CF4: 36 ss      ; sound for hourly beep (in hex)
+;020CC8: 46F9 0D0B  ; disable change profile
+;020CFD: 1C nC      ; select number for night profile (0 <= n <= 6)
+;020D05: 2C dC      ; select number for day profile (0 <= d <= 6)
+;------------------------- end -------------------------
+

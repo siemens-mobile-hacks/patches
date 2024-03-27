@@ -1,0 +1,24 @@
+;EL71v45
+;Устранение утечки памяти при отображении IdleScreen
+;Patch Idle Memory Leak
+;(c) Rst7/CBSIE
+;(p) KiRiK
+;Version: 
+;PatchID: 8014
+;Details: https://patches.kibab.com/patches/details.php5?id=8014
+/*
+; Устранение утечки памяти при отображении IdleScreen
+; Теперь устранена неприятная утечка, из-за которой телефон начинал тормозить после длительного использования
+; Желательно портировать на все, что есть. Данная утечка есть везде!
+
+; Eliminate memory leak in IdleScreen display
+; Now we got rid of a troublesome leak leading to slowing phone after prolonged use
+; Wish it be ported to everything we have. The leak is everywhere!
+*/
+05EC114: 201CFFF721FB281C 0048004700A007A0
+#pragma enable old_equal_ff
+007A000: 0400A0E1D4C515FA0400A0E1DF6300FB
+007A010: 0500A0E1FE80BDE8
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

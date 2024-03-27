@@ -1,0 +1,17 @@
+;SL65v50
+;Значёк Вибры на главном экране
+;Vibra logo on MainScreen
+;(c) SiNgle
+;(p) BuG
+;Version: 
+;PatchID: 170
+;Details: https://patches.kibab.com/patches/details.php5?id=170
+/*
+Значёк Вибры на главном экране
+*/
+;* Значёк Вибры на главном экране ** Vibra logo on MainScreen * © SiNgle, § BuG
+;!Используется значок *!* как значек вибры, можете нарисовать что хотите сами
+164209E: 08D0 0028
+165EC30: D9C5B4 AF3C8E
+;------------------------- end -------------------------
+

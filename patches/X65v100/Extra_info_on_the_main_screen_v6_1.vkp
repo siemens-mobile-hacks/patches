@@ -1,0 +1,112 @@
+;X65v100
+;Дополнительная информация на главном экране
+;Extra info on the main screen
+;(c) avkiev
+;(r) Lisugar
+;Version: 6.1
+;PatchID: 2727
+;Details: https://patches.kibab.com/patches/details.php5?id=2727
+/*
+
+*/
+;* x65 - Extra info on the main screen v6.1 *
+; (c) avkiev
+; (r) Lisugar
+
+; (!) MasterPatch V3 RC2#114 (+Library)
+; (!) GraphPatchManager v3.1
+
+;Показывает на главном экране следующую информацию:
+;УровеньСети, Температура, НапряжениеАккума, ЗарядАккума,
+;Профиль, ЛогоВибры, РасширенныйИндикаторСети, БайтРамы,
+;СчетчикПропущенныхЗвонков, СчётчикПропущенныхСМС.
+
+;Не забываем обновить БиблиотекуФункций!
+;А при необходимости - и МастерПатч с МастерМидлетом,
+;а также установить дополнительные картинки.
+;Ссылки на соответвующие патчи смотрим в патчах "Дополнительная информация на главном экране MP" ;для своего телефона!
+
+
+;Соответственно, следующие патчи устарели:
+;- Дополнительная информация на главном экране
+;- Лого вибры на главном экране
+;- Холст для Дополнительной Информации
+;- Продвинутый индикатор сети + Лого профиля
+;- Индикатор пропущенных событий
+
+
+;replaces the patches
+;* Extra info on the main screen v4 *
+;* Extra Info Canvas v3.1 *
+;* Vibra Logo On MainScreen *
+;* ImprovedNetIndicator + ProfileLogo *
+;* Missed Events Indicator v1.4 *
+
+
+#pragma enable old_equal_ff
+0FC1600: 02B5,9048FFF7FCFA00D1C8E0,009D,281C
+0FC1610: 70627478B578FFF71BF839880020FF29
+0FC1620: 404100F0E6F8FFF713F8B97900F0D2F8
+0FC1630: 022000F0DEF8032000F0DBF8F4783579
+0FC1640: 01200321FEF7F4FC0A210902AA31401A
+0FC1650: 05217156091803D5002000F0CAF84942
+0FC1660: 0A20FEF7DDFC00F0B2F8042000F0C1F8
+0FC1670: 081CFFF761F800F0C0F8052000F0B9F8
+0FC1680: 062000F0B6F8B479F57900200921FEF7
+0FC1690: CFFC011C03200002E830FEF7C1FCFFF7
+0FC16A0: 4BF800F0AAF8042000F0A3F80A20FEF7
+0FC16B0: B7FC00F08CF8072000F09BF8347A757A
+0FC16C0: FEF7BEFF398800F085F8082000F091F8
+0FC16D0: B47AF57AFEF79CFCFFF736F8317B0029
+0FC16E0: 02D10130FFF728F800F087F8747BB57B
+0FC16F0: FEF786FDF77BB84204D1FFF729F80020
+0FC1700: 00F07BF8FEF7ACFF1020002300F050F8
+0FC1710: FEF7AAFF1220012300F04AF8347D757D
+0FC1720: 0721FEF795FF82B4B879013000210022
+0FC1730: B37D83424A41F37D83424A41337E8342
+0FC1740: 4A41737E83424A41B37E83424A41F37E
+0FC1750: 83424A41337F83424A41737F83424A41
+0FC1760: 0E2007231A4004D0501E3B88FF2B00D3
+0FC1770: 0730FEF7F5FF00F040F8063C053482BC
+0FC1780: 0C370139CFD1B47FF57F032000F031F8
+0FC1790: 012000F02EF8336A197800F01BF8,02BD
+
+0FC17B0: 82B53988002928D0345C0130355CFEF7
+0FC17C0: CBFF181C00F019F80A34033503E082B5
+0FC17D0: 011C00E082B50A20FEF722FCFEF7ACFF
+0FC17E0: 0A2802D3FFF7F3FF01E000F006F8081C
+0FC17F0: 04E082B5FEF7A4FF00E082B53A18201C
+0FC1800: 291C736A00F002F8063482BD1FB5101C
+0FC1810: FEF77EFC041C101CFEF776FC0138013C
+0FC1820: 06BC84B00B1980180090012001900598
+0FC1830: FEF77AFC02B007BCFEF772FC18BD
+
+0FC1840: 0xB1C2D3E4,0x0100AB03,0xA0FC1601,00000000,\
+"{patch=ExtraInfo ver=6.1 cp=avkiev id=0100AB03 mem=40}\
+{1 xy Net y=20}\
+{3 xy Temperature x=36 y=20}\
+{5 b TempAdjust range=-50..50 v=15}\
+{6 xy Voltage x=78 y=20}\
+{8 xy Capacity x=114 y=20}\
+{10 xy Profiles y=90}\
+{12 cb Logo}\
+{13 xy Vibra y=110}\
+{15 cb ShowWhenVibra}","\
+{16 xy MissedCalls x=100 y=90}\
+{18 xy MissedSMS x=100 y=110}\
+{20 xy AdvNet y=128}\
+{sm Limits}\
+{22 b 1 v=30}\
+{23 b 2 v=52}\
+{24 b 3 v=60}\
+{25 b 4 v=68}\
+{26 b 5 v=76}\
+{27 b 6 v=84}\
+{28 b 7 v=92}\
+{29 b 8 v=100}\
+{endsm}\
+{30 xy RAM y=60}\
+{32 a Address v=A86CEF8A}",00
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;X65v100
+;Не выключаться при разряженном аккуме
+;Don't Turn Off When Battery Is Low
+;(c) benj9
+;(r) ThE TrIFoN
+;Version: 2
+;PatchID: 3031
+;Details: https://patches.kibab.com/patches/details.php5?id=3031
+/*
+Не используйте слишком часто, это может повредить ваш аккумулятор!
+Don't use it too often. It can damage your battery!
+*/
+#pragma enable old_equal_ff
+0FDDF00: 00B50948E2F77CFE06D102E007480121
+0FDDF10: 0160E2F799F800BDB078002803D0F278
+0FDDF20: 0221E2F73DF900BDFF00C0AC
+0FDDF30: 0xB1C2D3E4,0x00acc0ff,0000000000000000,"\
+{patch=`Accu Shutdown Off` ver=2 cp=benj9 id=00acc0ff}","\
+{info `Dont use it too often. It can damage your battery!`}","\
+{2 b `sound instead shutdown (0=no sound)` v=5}","\
+{3 sl `sound loops` r=0..10 v=10}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

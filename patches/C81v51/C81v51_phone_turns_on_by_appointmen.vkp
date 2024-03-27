@@ -1,0 +1,24 @@
+;C81v51
+;Включение телефона по напоминанию
+;The phone turns on by appointment
+;(c) 1nvisible
+;(p) Evgr
+;Version: 
+;PatchID: 10422
+;Details: https://patches.kibab.com/patches/details.php5?id=10422
+/*
+По памятке срабатывает заранее (указано в "Сигнал" - Вкл. хх Минуты).
+*/
+
+/*
+По памятке срабатывает заранее (указано в "Сигнал" - Вкл. хх Минуты).
+*/
+05A248E: 386A0028 5EF6D3FC
+#pragma enable old_equal_ff
+0400E38: 3FB5074B1B78152B05DC064B98473FBC
+0400E48: 01B0054B18473FBC386A002800BDC046
+0400E58: 0xA8EADA30,0xA0233BFC,0xA05A24AF
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

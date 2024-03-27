@@ -1,0 +1,14 @@
+;SK65v50
+;Disable Some Debug
+;Disable Some Debug
+;(c) benj9
+;Version: 
+;PatchID: 4157
+;Details: https://patches.kibab.com/patches/details.php5?id=4157
+/*
+
+*/
+0715524: 10B5 7047
+0715598: 0FB4 7047
+;------------------------- end -------------------------
+

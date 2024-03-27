@@ -1,0 +1,16 @@
+;S75v47
+;Отключить ВСЕ подождите
+;Disable ALL wait
+;(c) benj9
+;(p) Виктор89
+;Version: 
+;PatchID: 9292
+;Details: https://patches.kibab.com/patches/details.php5?id=9292
+/*
+Патч работает только если Помощник при включении НЕ отключен/спрятан. Должна быть ВЫКЛЮЧЕНА анимация на включение, то же после смены темы, иначе телефон при включении зависнет на Помощнике!
+English:Patch works only if startassistant NOT disabled/hidden. StartupAnimation must be off, the same after a Theme was changed, else phone can not exit from StartupAssistant!
+
+*/
+09775F6: FFB5 7047
+;------------------------- end -------------------------
+

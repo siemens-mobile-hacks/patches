@@ -1,0 +1,16 @@
+;M65v58
+;Отключить звук в начале записи видео
+;No start sound in Video rec
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 863
+;Details: https://patches.kibab.com/patches/details.php5?id=863
+/*
+
+*/
+08D9458: 1A 1D
+
+;------------------------- end -------------------------
+

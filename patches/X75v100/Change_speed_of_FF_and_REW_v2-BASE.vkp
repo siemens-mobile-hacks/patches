@@ -1,0 +1,28 @@
+;X75v100
+;Изменение скорости перемотки плеера
+;Change speed of fast forward and rewind
+;(c) Miha_r
+;(p) Evgr
+;Version: 2-BASE
+;PatchID: 9731
+;Details: https://patches.kibab.com/patches/details.php5?id=9731
+/*
+
+*/
+#pragma enable old_equal_ff
+0066F20: FA2FA0E3B04084E204E08EE215402DE9
+0066F30: 5C009FE5C40000EFFACFA0E30D00000A
+0066F40: 0830D0E5000053E3042090E50A00000A
+0066F50: A00051E30400001AB240D0E1034084E0
+0066F60: 042082E0B240C0E1030000EA0040A0E3
+0066F70: B240C0E1000000EA0C20A0E39C0203E0
+0066F80: 1580BDE8
+0066F90: 0xB1C2D3E4,0x0000FE01,0000000000000000,"\
+{p=Change_FF_RW_speed cp=Miha_r id=FE01 ver=2}\
+{4 i Multiplier v=12}\
+{8 b Increase v=0}\
+",00
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

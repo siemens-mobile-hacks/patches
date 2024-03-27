@@ -1,0 +1,19 @@
+;X65v100
+;MOD2WAV
+;MOD2WAV
+;(c) ILYA_ZX
+;Version: 0.1
+;PatchID: 6857
+;Details: https://patches.kibab.com/patches/details.php5?id=6857
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=MOD2WAV.zip
+
+/*
+MOD2WAV - эльф преобразует MOD в WAV! 
+В extension.cfg прописать: 
+MOD:0:\ZBin\MOD2WAV.elf 
+MOD2WAV.elf кинуть в 0:\ZBin\
+после перекодировки ~17кб mod получается >1мб wav!
+*/
+;качаем приаттаченный файл
+;------------------------- end -------------------------
+

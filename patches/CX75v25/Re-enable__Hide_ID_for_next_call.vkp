@@ -1,0 +1,14 @@
+;CX75v25
+;Возобновить "Инкогнито для след.вызова
+;Re-enable "Hide ID for next call
+;(c) BuG
+;(r) benj9
+;Version: 1
+;PatchID: 5461
+;Details: https://patches.kibab.com/patches/details.php5?id=5461
+/*
+
+*/
+0346112: 012040293C4E 002701204029
+;------------------------- end -------------------------
+

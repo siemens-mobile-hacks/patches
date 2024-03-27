@@ -1,0 +1,13 @@
+;E71v45
+;Отключить "Подождите" в Адреске
+;Disable "Please Wait" in Addressbook
+;(c) 1nvisible
+;Version: 
+;PatchID: 9672
+;Details: https://patches.kibab.com/patches/details.php5?id=9672
+/*
+
+*/
+06D67D6: 22F1F8E8 C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,20 @@
+;M75v25
+;Т9 на Cache:
+;T9 on Cache:
+;(c) Nyxis
+;Version: 
+;PatchID: 6476
+;Details: https://patches.kibab.com/patches/details.php5?id=6476
+/*
+Переносит базу Т9 на 1:\System\T9
+Патч меняет раположение баз Т9 с 0:\System\T9 на 1:\System\T9 . Там самым освобождается место на 0: . Переместить файлы баз и создать папки вы должны самостоятельно. В патче вы сможете указать любое другое место.
+English:
+Move T9 bases on 1:\System\T9
+*/
+;My 2nd
+;* T9 на MMC ** T9 on 1:\ *
+004A5C54: 0i12,00,'0:\\System\\T9' 0i12,00,'1:\\System\\T9'
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

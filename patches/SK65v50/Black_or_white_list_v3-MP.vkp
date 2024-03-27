@@ -1,0 +1,23 @@
+;SK65v50
+;Чёрный Список
+;Black List
+;(c) SiNgle
+;(r) (i) KreN
+;(p) ~Jhellico
+;Version: 3-MP
+;PatchID: 3276
+;Details: https://patches.kibab.com/patches/details.php5?id=3276
+/*
+Для работы патча необходимо, чтобы был включен фильтр на любую группу, неважно на какую (кроме сим), все настройки берутся с мастер патча.
+
+English: For this patch to work, the filter must be switched on for any group except SIM-card. It's equal what group will be chosen, all settings are taken from Master-Patch.
+*/
+070829A: 061C281C 6BF531FD
+0708F8C: 0006000E 6AF5BBFE
+07093F6: B0420ED1 6AF589FC
+
+#pragma enable old_equal_ff
+0473D00: FFB5054908477FB504490847FFB50149
+0473D10: 0847C046,0xA0FC6C01,0xA0FC6C2B,0xA0FC6C65
+;------------------------- end -------------------------
+

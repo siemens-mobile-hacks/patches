@@ -1,0 +1,52 @@
+;EL71v45
+;Починить меню вибры
+;Repair "Shutdown" and "Startup" items in "Setup"->"Vibration"->"More light effe."
+;(c) Evgr
+;(p) Marie
+;Version: 
+;PatchID: 10708
+;Details: https://patches.kibab.com/patches/details.php5?id=10708
+/*
+наконец дошли руки портировать этот замечательный патч не только на цл61 но и на ёлку
+ps ставим "москита" на вкл/выкл icon_yes
+English:Do WHZZZHHU while on/off
+*/
+;Install patch * More items in vibration menu * to enable "More light effe." item!
+
+;set effect for "SHUTDOWN" event 
+0841E5C: 00 02
+0841E60: 00 01
+0841E64: 09 05
+0841E68: 00 74
+0841E6C: 00 01
+;disable shutdown event dependence on "Setup"->"Ringtones" settings
+066D1C5: D1 E0
+066D1E6: 06D0 C046
+;disable shutdown event dependence on low level charge of accu (AUDIO_ALARM_MODE_SILENT)
+066D1DC: 0BD1 C046
+
+;set effect for "STARTUP" event 
+0841E40: 00 02
+0841E44: 00 01
+0841E48: 09 05
+0841E4C: 00 74
+0841E50: 00 01
+;disable startup event dependence on "Setup"->"Ringtones" settings
+066D6F4: 5DD0 C046
+066D706: 06D0 C046
+
+;=======================================================================================
+
+;EL71v45
+;More items in vibration menu
+;NativeMenu->Setup->vibration
+;(c) Saifaye
+;(r) Evgr
+;(p) Marie
+
+0893AB8: 81 A2 ;Dynamic light
+0893B38: 60 A2 ;ptt calls
+0893BB8: 81 A2 ;More light effe.
+08B380C: 8C A2 ;Mediaplayer
+;------------------------- end -------------------------
+

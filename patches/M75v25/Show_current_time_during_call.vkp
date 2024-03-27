@@ -1,0 +1,23 @@
+;M75v25
+;Показ текущего времени при разговоре
+;Show current time during call
+;(c) Bennie
+;(r) ~Jhellico
+;(p) VoVka
+;Version: 
+;PatchID: 5684
+;Details: https://patches.kibab.com/patches/details.php5?id=5684
+/*
+Должен быть включен пункт "Автоматическая индикация" Меню - 2 - 5 - 5 - 4
+English:
+Turn on "Auto display": Мenu - 2 - 5 - 5 - 4
+*/
+02CA2DC: 04A80B21D4F188EA 68461B2134F78EFC
+#pragma enable old_equal_ff
+01FEC00: 30B5041C0A4B984782B000206946094B
+01FEC10: 9847201C084988472D21215401302118
+01FEC20: 68460322054DA84702B0201C30BDFFFF
+01FEC30: 0xa05a3f79,0xa07d8cfb,0xa0ef359d,0xa020e9e9
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

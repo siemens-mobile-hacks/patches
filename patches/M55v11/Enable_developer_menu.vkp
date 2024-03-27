@@ -1,0 +1,14 @@
+;M55v11
+;Включение Инженерного меню
+;Enable Developer Menu
+;(c) avkiev
+;Version: 
+;PatchID: 5174
+;Details: https://patches.kibab.com/patches/details.php5?id=5174
+/*
+Необходимо отключить в конфигурации Инженерного меню опцию (S)Exit
+
+*/
+0BD9F4: 2D 0D
+;------------------------- end -------------------------
+

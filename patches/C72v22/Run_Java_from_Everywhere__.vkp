@@ -1,0 +1,15 @@
+;C72v22
+;Запуск явы отовсюду
+;Run Java from Everywhere
+;(c) 1nvisible
+;(r) Enya ; WerewolF BlacK
+;(p) Virusmater
+;Version: 3
+;PatchID: 6396
+;Details: https://patches.kibab.com/patches/details.php5?id=6396
+/*
+
+*/
+C9B258: 2500000A 000050E3
+;------------------------- end -------------------------
+

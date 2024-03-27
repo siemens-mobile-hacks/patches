@@ -1,0 +1,16 @@
+;CX75v13
+;Телефон работает без Sim - Карты
+;No Sim card phone operation
+;(c) SiNgle
+;(p) ThE TrIFoN
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=6434
+;PatchID: 1789
+;Details: https://patches.kibab.com/patches/details.php5?id=1789
+/*
+Тел работает без симки полноценно.
+*/
+03B20EC: 10B54E494E48EAF096E9041C4D484E49 FFB50348014901228847FFBDA0FA82A0
+03B20FC: 0068FF30 50B751A8
+;------------------------- end -------------------------
+

@@ -1,0 +1,23 @@
+;C55v24
+;Изменение времени до выхода из меню в режим ожидания
+;Change time up to output from the menu in mode of expectation
+;(c) Broken Brain
+;Version: 
+;PatchID: 4294
+;Details: https://patches.kibab.com/patches/details.php5?id=4294
+/*
+Время, через которое телефон выходит в режим ожидания, при неактивном пользовании, из меню, SMS e.t.c.
+*/
+59D7BC: C0D4E01D 80A9E03D ;2 мин. > 4 мин.
+; формат записи:
+; zzyyE0xD ;где xyyzz время в милисекундах
+; 3A980 = 240,000ms = 4min -> 80A9E03D
+; 57E40 = 360,000ms = 3min -> 407EE05D
+; 1D4C0 = 120,000ms = 2min(defoult)-> C0D4E01D
+; 0EA60 = 60,000ms = 1min  -> 60EAE00D
+; 07530 = 30,000ms = 30sec -> 3075E00D
+; 02710 = 10,000ms = 10sec -> 1027E00D
+; 01388 = 5,000ms = 5sec   -> 8813E00D
+; 003EB = 1,000ms = 1sec -> EB03E00D (чиста, для прикола)
+;------------------------- end -------------------------
+

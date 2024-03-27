@@ -1,0 +1,18 @@
+;CX70v56
+;Запуск явы отовсюду
+;Run Java from Everywhere
+;(c) 1nvisible
+;(r) Zl0d, Kamikadze!
+;(p) NForce
+;Version: 3
+;PatchID: 3682
+;Details: https://patches.kibab.com/patches/details.php5?id=3682
+/*
+Ниче переименовывать не надо.
+English:No additional actions needed.
+no bugs
+*/
+0C8EB48: 2500000A 000050E3
+
+;------------------------- end -------------------------
+

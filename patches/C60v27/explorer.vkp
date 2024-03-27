@@ -1,0 +1,15 @@
+;C60v27
+;Explorer_вместо_Own_Stuff_в_главном_меню
+;Own_Stuff_=_Explorer_in_main_menu
+;(c) Christ
+;Version: 
+;PatchID: 2057
+;Details: https://patches.kibab.com/patches/details.php5?id=2057
+/*
+Теперь, в главном меню вместо пункта "Свои", будет Card explorer
+*/
+24DD10: FA4488E0 FA446CE0
+24E06E: E6FD4A21E6FE1301 E6FD0000E6FE0000
+
+;------------------------- end -------------------------
+

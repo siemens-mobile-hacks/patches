@@ -1,0 +1,27 @@
+;EL71v45
+;Заменить сообщение "Сохранено на:" после снимка камерой на картинку
+;Change message "Save to:" after camera shot by picture
+;(c) Zhek@
+;(p) Evgr
+;Version: 
+;PatchID: 9415
+;Details: https://patches.kibab.com/patches/details.php5?id=9415
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=el71v45&f=Change_Msg_Save_to_picture.zip
+
+/*
+Кладем в img картинку номер 181, картинка в архиве
+*/
+0715BBC: 700A09FB CFEA33EB
+
+#pragma enable old_equal_ff
+1410700: 2800A0E38C10A0E3B520A0E3230000EF
+1410710: 0C009FE5E810A0E308209FE54D0000EF
+1410720: 2615CCEB8C35DFA8E79395A0
+#pragma disable old_equal_ff
+
+1410700: 0i40 0i96 ; координаты x
+1410704: 0i140 0i165 ; координаты y
+1410708: 0i181 0i181 ; номер картинки
+1410714: E8 E8 ; время показа
+;------------------------- end -------------------------
+

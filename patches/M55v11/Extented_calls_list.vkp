@@ -1,0 +1,18 @@
+;M55v11
+;Зелёная кнопка -> расширенный список вызовов
+;Green key ->  Extented calls list
+;(c) Matr!x
+;(p) AlexSid
+;Version: 
+;PatchID: 5187
+;Details: https://patches.kibab.com/patches/details.php5?id=5187
+/*
+
+*/
+0D5D7A: DA6FECB8 DA5500D0
+;1-ое - набранные номера, 2-ое неотвеченные, 3-ие - принятые.
+035D000: FFFFFFFFFFFFFFFFFFFFFFFF DA6FECB8DA6FF0B8FA6F8CB8
+;1-ое - набранные номера, 2-ое - принятые.
+;035D000: FFFFFFFFFFFFFFFF DA6FECB8FA6FF0B8
+;------------------------- end -------------------------
+

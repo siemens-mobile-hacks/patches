@@ -1,0 +1,26 @@
+;CX70v56
+;Чёрный Список
+;Black List
+;(c) SiNgle
+;(r) (i) KreN
+;(p) Lost
+;Version: 3-MP
+;PatchID: 3590
+;Details: https://patches.kibab.com/patches/details.php5?id=3590
+/*
+Для работы патча необходимо, чтобы был включен фильтр на любую группу, неважно на какую (кроме сим), все настройки берутся с мастер патча.
+
+English: For this patch to work, the filter must be switched on for any group except SIM-card. It's equal what group will be chosen, all settings are taken from Master-Patch.
+*/
+0B80F2A: 061C281C 8EF4E9FA
+0B81C1C: 0006000E 8DF473FC
+0B82086: B0420ED1 8DF441FA
+
+#pragma enable old_equal_ff
+080F500: FFB5044908477FB503490847FFB50349
+080F510: 0847C046,0xA0FC6C2B,0xA0FC6C65,0xA0FC6C01
+
+0FC6CAC: 0xA1258F6D,0xA0B820A9
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;SL75v52
+;Отключение сообщение вкл\выкл при вкл\выкл bluetooth
+;Disable messages on\off when on\off bluetooth
+;(c) Evgr
+;(p) Виктор89
+;Version: 
+;PatchID: 9642
+;Details: https://patches.kibab.com/patches/details.php5?id=9642
+/*
+
+*/
+0331834: FFF728FB C046C046
+;------------------------- end -------------------------
+

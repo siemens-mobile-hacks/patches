@@ -1,0 +1,16 @@
+;SL45iv56
+;Автоматический выбор русской раскладки при входе в адресную книгу
+;Automatical Russian Layout in Addressbook
+;(c) abomin
+;Version: 
+;PatchID: 1912
+;Details: https://patches.kibab.com/patches/details.php5?id=1912
+/*
+Release: 4 сентября 2004
+
+Патч №215 с http://patch.oslik.ru/SL45_RU
+*/
+3470AC: 88908880 DAE0F0C7 
+40C7F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88908880E112D7400C0075F2FE0FDB00
+;------------------------- end -------------------------
+

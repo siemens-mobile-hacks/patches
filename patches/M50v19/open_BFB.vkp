@@ -1,0 +1,13 @@
+;M50v19
+;Открыть BFB
+;open BFB
+;(c) Akustik
+;Version: 
+;PatchID: 5315
+;Details: https://patches.kibab.com/patches/details.php5?id=5315
+/*
+Включает BFB. нужен чтоб делать скриншоты
+*/
+2938E8: 3E 28
+;------------------------- end -------------------------
+

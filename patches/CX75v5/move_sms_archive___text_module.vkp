@@ -1,0 +1,31 @@
+;CX75v5
+;Перенос_папок_Sms_archive_и_Text Module_на_Config
+;Move_folders_Sms_archive_и_Text Module_to_disk_Config
+;(c) TAPAKAH
+;Version: 1.0
+;PatchID: 441
+;Details: https://patches.kibab.com/patches/details.php5?id=441
+/*
+Переносит папки Sms archive и Text Module на диск Config. Видимо для любителей скрывать свой обмен сообщениями.
+*/
+04A47C4: 30 32
+04A47E2: 30 32
+04A47F2: 30 32
+04A4814: 30 32
+04A483E: 30 32
+04A4856: 30 32
+04A487E: 30 32
+04A48A6: 30 32
+04A48BE: 30 32
+04A48E8: 30 32
+04A4914: 30 32
+04A492C: 30 32
+04A4956: 30 32
+04A4980: 30 32
+04A4996: 30 32
+04A47C4: 30 32
+04A4AF6: 30 32 ;Text Module
+04A4B10: 30 32 ;Text Module
+
+;------------------------- end -------------------------
+

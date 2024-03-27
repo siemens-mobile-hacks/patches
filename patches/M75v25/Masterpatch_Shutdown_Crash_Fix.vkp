@@ -1,0 +1,14 @@
+;M75v25
+;Masterpatch Shutdown Crash Fix
+;Masterpatch Shutdown Crash Fix
+;(c) benj9
+;Version: 
+;PatchID: 4129
+;Details: https://patches.kibab.com/patches/details.php5?id=4129
+/*
+
+*/
+0323FA8: 03DF C046
+0323FB0: 79F1C0E8 C046C046
+;------------------------- end -------------------------
+

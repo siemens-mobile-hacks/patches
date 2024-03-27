@@ -1,0 +1,27 @@
+;S75v42
+;Запуск TMO Editor по горячей клавише
+;Launch TMO Editor by hotkey
+;(c) Kibab
+;(r) _caine
+;Version: 1.0
+;PatchID: 6011
+;Details: https://patches.kibab.com/patches/details.php5?id=6011
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v42&f=Launch_TMO_Editor_by_hotkey.rar
+
+/*
+Экспериментальный патч запуска. Пока не определился окончательно с выбором адреса патча.
+TMO.elf кладем в 4:\ZBin\Kibab, как полагается. Ставим на гор.клавишу "Секундомер" (извините, на большее фантазии не хватило, если что - ищем другие арлыки в окрестности этого)
+
+Обновите библиотеку!!!
+На всякий случай ещё прикрепил исходные тексты патча (проект Keil)
+*/
++0067490 
+#pragma enable old_equal_ff
+00: FFB58020C7DF2501061C05A18022C7DF
+10: 6C010021301C94DF301CC7DF2901FFBD
+20: "4:\\ZBin\\Kibab\\tmo.elf",00
+#pragma disable old_equal_ff
++0
+0424230: 65C432A0 0xA0067491 ; STOPWATCH @ S74v42
+;------------------------- end -------------------------
+

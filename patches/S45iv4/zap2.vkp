@@ -1,0 +1,15 @@
+;S45iv4
+;Убрать запятую между фамилией и именем при входящем звонке
+;To remove the comma between the surname and the name with the entering bell
+;(c) SiNgle
+;(p) Girosavo
+;Version: 
+;PatchID: 909
+;Details: https://patches.kibab.com/patches/details.php5?id=909
+/*
+
+
+*/
+067616: 2C 20
+;------------------------- end -------------------------
+

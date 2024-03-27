@@ -1,0 +1,15 @@
+;CX75v23
+;Убирать звук дозвона
+;Remove call sound
+;(c) AlexSid
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1806
+;Details: https://patches.kibab.com/patches/details.php5?id=1806
+/*
+
+*/
+04B9FAC: FCF54CA0 00000000
+;------------------------- end -------------------------
+

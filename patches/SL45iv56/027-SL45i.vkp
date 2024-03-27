@@ -1,0 +1,39 @@
+;SL45iv56
+;Добавление 15 новых голосывых команд
+;Add Menu item under Voice Command
+;(c) RizaPN
+;Version: 
+;PatchID: 1573
+;Details: https://patches.kibab.com/patches/details.php5?id=1573
+/*
+Патч №027 с http://patch.oslik.ru/SL45_RU
+*/
+467E5B: 2E FE 
+
+467D96: EA02D4CD5637 1F03D4CD7012 
+468C3C: EA02D4CD5637 1F03D4CD7012 
+469270: EA02D4CD5637 1F03D4CD7012 
+46965A: EA02D4CD5637 1F03D4CD7012 
+46A376: EA02D4CD5637 1F03D4CD7012 
+46B2E2: EA02D4CD5637 1F03D4CD7012 
+46B164: EA02 1F03 
+46B168: 5837 7212 
+46B16C: 5A37 7412 
+
+27D270: FFFFFFFFFFFF B40014F3D400 ;Dictaphone (Диктoфон) 
+27D276: FFFFFFFFFFFF B701F886DB00 ;MP3Player 
+27D27C: FFFFFFFFFFFF 9F02620AD900 ;WriteMessage (Написать SMS) 
+27D282: FFFFFFFFFFFF 5403B8E1D800 ;Internet 
+27D288: FFFFFFFFFFFF B00DB4E1D800 ;Java 
+27D28E: FFFFFFFFFFFF DF03020BD900 ;Archive (Архив) 
+27D294: FFFFFFFFFFFF 4F01E846DC00 ;IrDA (Инфракрасный порт) 
+27D29A: FFFFFFFFFFFF 56006CEFDB00 ;Answer-Message (Ответ-SMS) 
+27D2A0: FFFFFFFFFFFF D20270EFDB00 ;BussinessCard (Визитная карт.) 
+27D2A6: FFFFFFFFFFFF E70080F2DB00 ;Call-Missed (Пропущенные вызовы) 
+27D2AC: FFFFFFFFFFFF 440084F2DB00 ;Call-Received (Входящие вызовы) 
+27D2B2: FFFFFFFFFFFF 220188F2DB00 ;Call-Dialer (Набран.номера) 
+27D2B8: FFFFFFFFFFFF 9C011606DC00 ;Compose-Melody (Составить мелодию) 
+27D2BE: FFFFFFFFFFFF D300EE0AD900 ;Incoming-Message (Входящие SMS) 
+27D2C4: FFFFFFFFFFFF 6900F80AD900 ;Outgoing-Message (Исходящие SMS) 
+;------------------------- end -------------------------
+

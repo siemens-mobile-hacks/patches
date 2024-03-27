@@ -1,0 +1,14 @@
+;S75v47
+;Убрать сообщение "Сохранить в:" после съёмки
+;Disable message "Saved to:" after you take a foto
+;(c) SiNgle
+;(p) ManOfWar
+;Version: 
+;PatchID: 5864
+;Details: https://patches.kibab.com/patches/details.php5?id=5864
+/*
+
+*/
+0591880: CEF09CE8 C046C046
+;------------------------- end -------------------------
+

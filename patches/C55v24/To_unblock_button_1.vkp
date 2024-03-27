@@ -1,0 +1,20 @@
+;C55v24
+;Разблокировать_кнопку_1
+;To unblock button 1
+;(c) Baloo
+;Version: 
+;PatchID: 1206
+;Details: https://patches.kibab.com/patches/details.php5?id=1206
+/*
+Работает с урезанным ленгпаком
+*/
+4E4658: 3D 0D
+4E46CE: 3D 0D
+4E4956: 3D 0D
+4E4B62: 2D30 CC00
+4E4CCA: 32 31
+4E4F44: 2D1D CC00
+4E5035: 82 81
+
+;------------------------- end -------------------------
+

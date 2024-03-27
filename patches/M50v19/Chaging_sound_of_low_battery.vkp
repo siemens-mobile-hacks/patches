@@ -1,0 +1,17 @@
+;M50v19
+;Изменение звука разряженного аккумулятора
+;Chaging sound of low battery
+;(c) alex_alt
+;Version: 
+;PatchID: 5317
+;Details: https://patches.kibab.com/patches/details.php5?id=5317
+/*
+
+*/
+25ffdb:3C OC;тишина
+;25ffdb:3C 1C;tut-tut-tut
+;25ffdb:3C 2C;tit
+;25ffdb:3C 4C;clik
+;25ffdb:3C 5C;high tit
+;------------------------- end -------------------------
+

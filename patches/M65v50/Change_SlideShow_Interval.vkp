@@ -1,0 +1,13 @@
+;M65v50
+;Изменить интервал в слайдшоу
+;Change SlideShow Interval
+;(c) benj9
+;Version: 
+;PatchID: 3361
+;Details: https://patches.kibab.com/patches/details.php5?id=3361
+/*
+
+*/
+096AA8C: 0x0000021D 0x0000043B ; iTime=sec*1300/6
+;------------------------- end -------------------------
+

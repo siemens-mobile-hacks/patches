@@ -1,0 +1,14 @@
+;M75v23
+;Увеличить фото при входящем звонке
+;Enlarge Incoming Call Photo
+;(c) SiNgle
+;Version: 2
+;PatchID: 2802
+;Details: https://patches.kibab.com/patches/details.php5?id=2802
+/*
+
+*/
+0518A10: 04 00 ; except SL65
+02A66F6: 19 11
+;------------------------- end -------------------------
+

@@ -1,0 +1,62 @@
+;S65v50
+;Дополнительная информация на главном экране
+;Extra info on the main screen
+;(c) avkiev
+;(p) AsteriX
+;Version: 4
+;PatchID: 283
+;Details: https://patches.kibab.com/patches/details.php5?id=283
+/*
+Выводит дополнительную инфу.
+
+Необходимо также установить патч c дополнительными картинками, см. зависимости.
+
+*/
+1694950: 051C0020 2FF0D6FF
+
+#pragma enable old_equal_ff
+16C4900: 01B5ECF756EA0130072856D03B4E0427
+16C4910: 3F02053700248025B047002414253649
+16C4920: 897900F04FF88920B0478A20B0470A20
+16C4930: B0471E241425012003212D4A90470A21
+16C4940: 0902AA31401A0F210A061116091802D5
+16C4950: 8720B04749420A20A2F742EE00F02FF8
+16C4960: 8B20B047081CB0478C20B0478D20B047
+16C4970: 0A20B04748241425002009211C4A9047
+16C4980: 011C03200002E830A2F72AEEB0478B20
+16C4990: B0476420A2F724EEB04700F013F88E20
+16C49A0: B0470A20B047722414251248018800F0
+16C49B0: 09F88F20B0470A20B047002020BD02B5
+16C49C0: 011C00E002B50A20A2F70AEE0A2802D3
+16C49D0: FFF7F5FF00E0B047081CB04702BD02B5
+16C49E0: 3A1821060816291CECF746EB063402BD
+16C49F0: A00024A16C0667A878CF67A8DF496CA1
+#pragma disable old_equal_ff
+
+;16C4914: 00,24,80 xx,24,yy ; Profile
+;16C491A: 00,24,14 xx,24,yy ; Net
+;16C4932: 1E,24,14 xx,24,yy ; Temperature
+;16C4974: 48,24,14 xx,24,yy ; Voltage
+;16C49A6: 72,24,14 xx,24,yy ; Capacity
+
+;Подстройка температуры в десятых долях градуса: 000 - TBA, 030 - TEN, 015 - (TBA+TEN)/2, -010 - TBA-1
+;Adjust temperature by 0.1'C                   : 000 - TBA, 030 - TEN, 015 - (TBA+TEN)/2, -010 - TBA-1
+;16C4946: 0F 0i030
+
+;Не показывать пробел после:
+;Don't show space after:
+;16C4930: B047 C046 ; Net
+;16C4972: B047 C046 ; Temperature
+;16C49A4: B047 C046 ; Voltage
+;16C49B8: B047 C046 ; Capacity
+
+;16C4908: 07 NP ; Profile "No patches"
+
+
+;Показывать вместо номера профиля логотип профиля
+;Profile logo instead of the profile number
+;(i) AsteriX
+;16C4906: 013007 903096
+
+;------------------------- end -------------------------
+

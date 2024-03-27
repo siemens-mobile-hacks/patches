@@ -1,0 +1,13 @@
+;E71v45
+;Отключить сообщение "Выбран русский язык"
+;Disable message "Language is set to:"
+;(c) unknow
+;Version: 
+;PatchID: 10341
+;Details: https://patches.kibab.com/patches/details.php5?id=10341
+/*
+
+*/
+05ACC72: 4BF28CEE C046C046
+;------------------------- end -------------------------
+

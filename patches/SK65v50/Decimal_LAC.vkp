@@ -1,0 +1,24 @@
+;SK65v50
+;Десятичный LAC вместо N и B в списке соседних сот вместо ENIP монитора
+;Decimal LAC instead of N & B in neighbour list instead of ENIP monitor
+;(c) слава Богу
+;(r) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 2511
+;Details: https://patches.kibab.com/patches/details.php5?id=2511
+/*
+комбинируется с "Десятичный CID вместо C1 и C2 в списке соседних сот"
+combined with "Decimal CID instead of C1 & C2 in neighbour list"
+Переключаться в режим CID ко клавишам 2 <-> 0 (switch to CID mode with keys 0 <-> 2)
+
+*/
+031E14C: 0E 0D
+031E22E: 1622281C 0E26A5E7
+044CEF4: 37D9A2 0129A5
+0A52A5A: 002908D1 0E2E08D0
+0A52AB6: 0122211C0B31F078DEF028EB0122211C0D313079 203EF08B20360522002800280522211C0B310028
+0B5D6BD: 4E2042 4C4143
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;S75v47
+;Быстрый показ окна "Соединение завершено"
+;Fast show call ended window
+;(c) Evgr
+;Version: 
+;PatchID: 9850
+;Details: https://patches.kibab.com/patches/details.php5?id=9850
+/*
+
+*/
+; Быстрый показ окна "Соединение завершено"
+; Fast show call ended window
+; S75v47
+; (c) Evgr
+
+042C8F0: D007 0001
+
+;------------------------- end -------------------------
+

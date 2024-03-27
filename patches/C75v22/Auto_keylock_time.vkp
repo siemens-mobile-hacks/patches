@@ -1,0 +1,13 @@
+;C75v22
+;Изменение времени автоблокировки клавиш
+;Auto keylock time
+;(c) SiNgle
+;Version: 
+;PatchID: 4204
+;Details: https://patches.kibab.com/patches/details.php5?id=4204
+/*
+
+*/
+02CFEAC: C832 7017
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S75v52
+;Снять ограничение на данные заряда аккумулятора выше 90% уровня
+;Do not limit akku charge data in above 90% range
+;(c) Evgr
+;(p) Vados
+;Version: 
+;PatchID: 10581
+;Details: https://patches.kibab.com/patches/details.php5?id=10581
+/*
+
+*/
+01FC948: 50 64
+01A875C: 50 64
+;------------------------- end -------------------------
+

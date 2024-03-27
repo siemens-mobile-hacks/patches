@@ -1,0 +1,23 @@
+;CX75v25
+;Вибра в момент начала разговора
+;Vibrate shortly after connection
+;(c) SiNgle
+;(p) TAPAKAH,maximkml
+;Version: 1.2
+;PatchID: 4197
+;Details: https://patches.kibab.com/patches/details.php5?id=4197
+/*
+
+*/
+02CAA18: D4F1EAE90028 002835F79AEA
+#pragma enable old_equal_ff
+01FFF50: 00402DE9FF3F2DE90FE0A0E144F09FE5
+01FFF60: 000050E30900001A0100A0E30FE0A0E1
+01FFF70: 34F09FE5020050E30400001A2F00A0E3
+01FFF80: 0210A0E30120A0E30FE0A0E11CF09FE5
+01FFF90: 0FE0A0E118F09FE5000050E3FF3FBDE8
+01FFFA0: 0040BDE80CF09FE5674655A0830AABA0
+01FFFB0: D44A2BA0BB3950A01FAA2CA0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

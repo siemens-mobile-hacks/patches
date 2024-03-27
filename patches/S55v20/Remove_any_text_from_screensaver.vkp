@@ -1,0 +1,15 @@
+;S55v20
+;Не показывать надписи в заставке
+;Remove any text in screensaver
+;(c) Matr!x
+;(p) KiRiK
+;Version: 
+;PatchID: 5062
+;Details: https://patches.kibab.com/patches/details.php5?id=5062
+/*
+
+*/
+332F1A: DA73D650 CC00CC00
+332F38: DA64FA31 CC00CC00
+;------------------------- end -------------------------
+

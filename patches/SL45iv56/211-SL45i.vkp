@@ -1,0 +1,18 @@
+;SL45iv56
+;POC. Включение телефона при зарядке
+;POC. Power On when Charged
+;(c) rizapn
+;Version: 
+;PatchID: 1908
+;Details: https://patches.kibab.com/patches/details.php5?id=1908
+/*
+Включает телефон, если воткнута зарядка.
+
+
+Created: Aug 28, 2004
+
+Патч №211 с http://patch.oslik.ru/SL45_RU
+*/
+0x454F28: DAC1EC22 DAC03208 
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;C72v22
+;Мастер патч
+;Master patch
+;(c) avkiev
+;(r) 1nvisible, chaos
+;(p) Geka
+;Version: 14
+;PatchID: 7598
+;Details: https://patches.kibab.com/patches/details.php5?id=7598
+/*
+
+*/
+;Run Scaner on startup
+08C37DA: FF20 BEDF
+;Run Scaner instead of REMOTE_SYNCHRONIZATION
+0946790: 45298FA0 910CFCA0
+;------------------------- end -------------------------
+

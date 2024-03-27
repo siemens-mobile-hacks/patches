@@ -1,0 +1,42 @@
+;SL45iv56
+;Изменяет Francais на Русский и France на Russian в списке выбора языка Т9
+;Francias to Russian in T9 list
+;(c) ValeraVi, Yurgen, RO
+;Version: 1a
+;PatchID: 1620
+;Details: https://patches.kibab.com/patches/details.php5?id=1620
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=057-SL45i.rar
+
+/*
+В отличии от патча ValeraVi "V_fw5601_T9RusName_v1.vkp" надпись "Русский" видно, не только если установлена русификация МР3 тегов 
+и если на надпись навести курсор 
+Надпись сделана как у Yurgena в патче "Стандартная раскладка клавиатуры для прошивки 56 файл rus_lat56.bin" 
+Только патч Yurgena заменяет English на Русский 
+Для использования требуется как минимум три файла на MMC в папке "T9 data base" en.ldb de.ldb и fr.ldb или ru.ldb 
+В противном случае начинаются глюки с надписями, видимо связано с очередностью Т9 баз в прошивке 
+English Deutsch Francais Italiano Espaniol Portugues Svenska Norsk Suomi Dansk ну и т.д. 
+Видимо можно вылечить если заменить их родной Deutsch на Русский
+
+Так же файл базы Т9 fr.ldb возможно переименовать в ru.ldb (в файле по смещению 0х000036 должно быть значение 0Ch) 
+
+Release: Июнь 7, 2003
+
+Патч №057 с http://patch.oslik.ru/SL45_RU
+*/
+; Данная строка для тех, у кого установлен патч от Yurgena и востанавлиает надпись English 
+; . Р у с с к и й . . E n g l i s h . 
+1AE273: 9B204341413A383900 95456E676C69736800 
+
+;Заменяет France на Russian и Francais на Русский 
+; . F r a n c e . . R u s s i a . 
+1AE2A3: 954672616E636500 9552757373696100 
+; . F r a n . c . a i s . . Р у с с к и й . . . . 
+1AE2AB: 954672616E96679561697300 9B204341413A383900000000 
+
+;Подмена базы Т9 fr.ldb на ru.ldb 
+; f r r u 
+1A6F3D: 6672 7275 
+1ABFD1: 6672 7275 
+; Не нужное закоментировать
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;CX65v50
+;Отключение вибры в будильнике
+;Vibra off in Alarm clock
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 23
+;Details: https://patches.kibab.com/patches/details.php5?id=23
+/*
+Патч отключает вибру, поэтому, как проснетесь, включите её сами
+*/
+0B6D478: 0F20D9F5B0E9 70F1C2EE0028
+#pragma enable old_equal_ff
+0CDE200: 00402DE9F23F2DE90FE0A0E148F09FE5
+0CDE210: 0FE0A0E144F09FE5000050E30100001A
+0CDE220: 070000EB040000EA0FE0A0E130F09FE5
+0CDE230: 030000EB01002DE90100BDE8F23FBDE8
+0CDE240: 0080BDE800402DE90020A0E30F00A0E3
+0CDE250: 0FE0A0E10CF09FE50080BDE8E59F8CA0
+0CDE260: 43218EA059218EA0DC6794A0
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

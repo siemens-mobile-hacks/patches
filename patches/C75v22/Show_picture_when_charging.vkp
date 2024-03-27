@@ -1,0 +1,14 @@
+;C75v22
+;Картинка при оффлайн зарядке
+;Show picture when offline charging
+;(c) Evgr, 88421409
+;(r) sempai
+;Version: 
+;PatchID: 9595
+;Details: https://patches.kibab.com/patches/details.php5?id=9595
+/*
+
+*/
+02A87FC: 8023002000F047FB 00200021xx2223DF ; xx - номер картинки
+;------------------------- end -------------------------
+

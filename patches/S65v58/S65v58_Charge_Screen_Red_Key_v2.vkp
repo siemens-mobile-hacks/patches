@@ -1,0 +1,50 @@
+;S65v58
+;Показать экран "зарядки" при коротком нажатии красной кнопки при выключенном телефоне
+;Show "Charge" Screen When Pressing Red While Phone Off
+;(c) Evgr
+;Version: 2
+;PatchID: 10638
+;Details: https://patches.kibab.com/patches/details.php5?id=10638
+/*
+удобен для просмотра информации с патчем "Показывать будильник, время и заряд аккумулятора при зарядке выключенного телефона"
+good together with "Show alarm clock, time and akku capacity in offline charge"
+
++ задаётся длительность показа
++ duration time control added
+*/
+
+; + задаётся длительность показа
+; + duration time control added
+
+/*
+удобен для просмотра информации с патчем "Показывать будильник, время и заряд аккумулятора при зарядке выключенного телефона"
+good together with "Show alarm clock, time and akku capacity in offline charge"
+*/
+
+129B021: 60 90
+129B0A7: 1A EA
+
+124F7D8: 0A00001A 0000A0E1 ;  disable SwitchPhoneOff during bootscreen
+08BE658: 221C231C9121281C0094 004B9847,0xA0800C47,9121 ; I ported just similar to C72v22
+1699194: FF21B2310C320023 00498847,0xA0800C65
+
+#pragma enable old_equal_ff 
+0800BD8: F6402DE921DC00EBB0109FE5B0208FE2 ; 4 BL A0837C68
+0800BE8: 90C181E00C0092E80C00A0E1182728EB ; C BL A120A85C
+0800BF8: A4208FE20C0092E8152728EBA8309FE5 ; 8 BL A120A85C
+0800C08: F680BDE8FF402DE9F0FFFFEB001093E5
+0800C18: 010040E094C09FE50CC050E0038C292B ; C BLCS A1263C38
+0800C28: FF80BDE8FEB51F490978012905D01E49
+0800C38: 0978012901D00120FEBD0020FEBD221C 
+0800C48: 231C281C009409B5FFF7ECFF012802D1
+0800C58: FFF7BEEF186019BC0434204701B50C32 ; 0800C66: 0C in S65v58, not 18 as in C72v22
+0800C68: FFF7E0FF012803D1FFF7CCEF044900E0
+0800C78: 0549002381BC04373847000000000000
+0800C88: 0x00000090,00000000,0x000001B1,00000000 ; 0x00000090=0x000001B1/3
+0800C98: 60EA00000D00000000000000E8030000
+0800CA8: 00000000,0xA87DF4BC,0xA868C2C4,0xA8775C80 ; 0xA8775C80 AlarmClock address, we will use it
+0800CB8: 0x00000BB8                       ; 0x00000BB8=3000 msec=3 sec
+#pragma disable old_equal_ff 
+
+;------------------------- end -------------------------
+

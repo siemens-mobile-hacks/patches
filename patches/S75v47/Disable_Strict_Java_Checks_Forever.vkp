@@ -1,0 +1,14 @@
+;S75v47
+;Убрать Проверку Java
+;Disable Strict Java Checks Forever
+;(c) 1nvisible
+;(p) den11111
+;Version: 
+;PatchID: 8051
+;Details: https://patches.kibab.com/patches/details.php5?id=8051
+/*
+Убирает проверку на отсутствие классов. Иногда полезно :)
+*/
+096C1FC: 48071FE5000090E5 0000A0E31EFF2FE1
+;------------------------- end -------------------------
+

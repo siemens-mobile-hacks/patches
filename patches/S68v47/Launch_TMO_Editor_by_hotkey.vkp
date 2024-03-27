@@ -1,0 +1,33 @@
+;S68v47
+;Запуск TMO Editor по горячей клавише
+;Launch TMO Editor by hotkey
+;(c) Kibab
+;(r) RainMaker, den11111, Дэн
+;(p) klaud
+;Version: 1.2
+;PatchID: 6860
+;Details: https://patches.kibab.com/patches/details.php5?id=6860
+/*
+Экспериментальный патч запуска.
+
+Вешаем на горячую клавишу "Мгновенные сообщения"  и срабатывает TMOEditor.
+
+P.S. не забываем обновить библиотеку
+
+При желании можно назначить для запуска любой эльф изменив путь в теле патча.
+
+*/
++0067490 
+#pragma enable old_equal_ff
+00: FFB58020C7DF2501061C06A18022C7DF
+10: 6C0100220021301C94DF301CC7DF2901
+20: FFBD
+24: "0:\\ZBin\\kibab\\tmo.elf",00
+#pragma disable old_equal_ff
++0
+
+;Вешаем на горячую клавишу Inst.Message
+03EB188: 215E31A0 0xA0067491 ;instant_message @ S68v47
+
+;------------------------- end -------------------------
+

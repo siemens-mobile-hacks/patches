@@ -1,0 +1,15 @@
+;M75v25
+;Уменьшить задержку для долгого нажатия клавиш
+;Decrease Keypad Long Press Delay
+;(c) 1nvisible
+;(r) benj9
+;(p) VoVka
+;Version: 
+;PatchID: 5485
+;Details: https://patches.kibab.com/patches/details.php5?id=5485
+/*
+
+*/
+07FF81A: 82 41
+;------------------------- end -------------------------
+

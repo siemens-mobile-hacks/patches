@@ -1,0 +1,38 @@
+;S65v58
+;Блинкер
+;Blinker
+;(c) benj9
+;(r) 1nvisible, avkiev, BuG, Chaos
+;(p) -=[LCW]=-ExXtReMe
+;Version: 3.2-MP
+;PatchID: 1764
+;Details: https://patches.kibab.com/patches/details.php5?id=1764
+/*
+Телефон мигает при припущенных событиях, при наличии сетевого трафика,
+потере сети и загрузке, подсветкой клавиатуры и/или экрана. 
+Мигает 1 раз при одном пропущенном событии,
+2 при двух, 3 при трёх, если больше - динамически меняется. 
+Пропущенные события - непросмотренные события во Входящих.
+Удалите патч IlluminationControl v0.01 ( он включён в этот)
+
+
+English:Blinker on missed events*, net traffic speed, net lost & boot sfx to keypad and/or screen
+Blinks: 1x by 1 missed event, 2by2 events, 3by3 events, dynamic sweep blinker if more events.
+* missed events are understood as the number of uncommitted elements of the new message inbox
+(!) masterpatch required. function lib numbers: 2, 8, 77, 81, 228 required
+(!) masterpatch midlet 0.91 or higher required
+
+history
+v3.2 optimized, config mp-midlet0.9 compatible, flash-at-illumination-on added.
+v3.1 minor bugs removed
+v3 masterpatch compatible
+v2 net traffic included, debugged
+v1 initial release
+*/
+1240DD0: 0070A0E1 8E6EF6EB
+
+#pragma enable old_equal_ff
+0FDCCD0: 40000000,300200A8,0xA863A758,0xA863D33C ; -RBC  - x65 (?)
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

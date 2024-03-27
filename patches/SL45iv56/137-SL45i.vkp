@@ -1,0 +1,19 @@
+;SL45iv56
+;Предотвращение зависания при SMS "%English"
+;Fixing SMS "%English" bug
+;(c) tAU6
+;Version: 
+;PatchID: 1741
+;Details: https://patches.kibab.com/patches/details.php5?id=1741
+/*
+Для тех, кто не хочет копать ленгпак (как это делал я). 
+Вместо виса выдает картинку с цветочками.
+
+
+Release: Jun 1. 2003
+
+Патч №137 с http://patch.oslik.ru/SL45_RU
+*/
+1AEA18: 466C6F77657273 456E676C697368
+;------------------------- end -------------------------
+

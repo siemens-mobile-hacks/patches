@@ -1,0 +1,15 @@
+;C75v13
+;Изменение цвета прогрессбара
+;Change progressbar color
+;(c) -=(Kad)=-
+;Version: 
+;PatchID: 4145
+;Details: https://patches.kibab.com/patches/details.php5?id=4145
+/*
+
+*/
+04B287C: BEE6FA64 5656F814 ; background
+04B2880: 1EBEE664 00000034 ; contour
+04B2884: 001E8264 FFFFFF24 ; stripe
+;------------------------- end -------------------------
+

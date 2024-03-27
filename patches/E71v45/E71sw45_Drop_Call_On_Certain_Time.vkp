@@ -1,0 +1,34 @@
+;E71v45
+;Сброс звонка по достижении определенного времени-MP
+;Drop Call On Certain Time-MP
+;(c) 1nvisible
+;(r) ~Jhellico,Apo4emu,-=(Kad)=-
+;(p) Evgr
+;Version: 1.2
+;PatchID: 10162
+;Details: https://patches.kibab.com/patches/details.php5?id=10162
+/*
+
+*/
+09AD378: 1CF792FC01300004000C 004CA047,0xA0070001,C046
+#pragma enable old_equal_ff
+0070000: FEB500F06DF8041C0E48F0F7F9FD11D0
+0070010: 061C012000F068F8022803D0032809D1
+0070020: B07800E07078012804D17268A24201D1
+0070030: 00F05EF8601CFEBC0004000C00F04AE8
+0070040: 0xB1C2D3E4,0x00001E01,0000000000000000,"\
+{patch DropCallOnCertainTime cp=1nvisible id=1E01 ver=1.2}","\
+{1 cb DropOutgoing v=1}","\
+{2 cb DropIncoming}","\
+{4 int Second r=1..1000 v=5}",00
+#pragma disable old_equal_ff
+;---------------------------------------- 
+00700D4: FFFFFFFFFFFFFFFFFFFFFFFF 0040BDE804E08EE21EFF2FE1 ;Returns from ldr/blx patches by adding 4 to LR 
+;---------------------------------------- 
+00700E0: FFFFFFFFFFFFFFFF 004F3847,0xA08C9CA1 ; 072: SetCurrentSecondOfCall
+00700E8: FFFFFFFFFFFFFFFF 004F3847,0xA0CD9DEF ; GetTypeOfCall
+00700F0: FFFFFFFFFFFFFFFF 004F3847,0xA09B77C7 ; 065: EndCall
+;---------------------------------------- 
+
+;------------------------- end -------------------------
+

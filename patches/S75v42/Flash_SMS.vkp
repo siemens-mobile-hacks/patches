@@ -1,0 +1,25 @@
+;S75v42
+;Флеш СМС
+;Flash SMS
+;(c) Bennie
+;(p) bank!
+;Version: 
+;PatchID: 5516
+;Details: https://patches.kibab.com/patches/details.php5?id=5516
+/*
+Начните текст сообщения с пробела
+Формат текста-> Размер шрифта-> Средний шрифт, иначе будет обычное СМС
+
+English: Add a whitespace in the beginning of message, It should be a FlashSMS
+Be sure to set "Middle font" in Messages preferences.
+*/
+0E370E4: 201CB168 63F694FE
+
+#pragma enable old_equal_ff
+0C9AE10: 201CB8380178082906D000290CD1417B
+0C9AE20: 7F221140F02204E0437B817B1B02C918
+0C9AE30: 1822202900D10270201CB1687047
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

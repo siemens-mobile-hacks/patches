@@ -1,0 +1,28 @@
+;S45iv4
+;Запрос на подтвержение выключения телефона
+;Confirmation for swtiching phone off
+;(c) LaLo
+;Version: 1.1
+;PatchID: 638
+;Details: https://patches.kibab.com/patches/details.php5?id=638
+/*
+Патч добавляет текстовое окно с подтверждением на выключение телефона сразу после долгого нажатия красной кнопки в режиме ожидания, предотвращая нежелательное выключение.
+*/
+456C1E: DAF54E34 FA87C0F7
+07F790: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00000000E2F787000000000000000000
+07F7A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 20091A02FE081A0201000000FF7F6609
+07F7B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1A020000010000000100D0070000FFFF
+07F7C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAF54E3448402D0CE01CE6FDDD0688C0
+07F7D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88D0E6FC9037E6FD1F02DAFACA4CE014
+07F7E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DB00DACB9A88DAFCD2FAF0C55CEC704C
+07F7F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 7C25DACA30ADDACC223646F11A003D02
+07F800: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FAE5266CDAFC5E96E024DB00
+;Настройка:
+;Изменить время задержки текстового окна (раскомментировать):
+;07F7BA: D007 yyxx ;по умолчанию = 2 секунды
+;где yyxx - время в мс в формате HEX с переставленными байтами
+;Например:
+;yyxx = F401 = 500ms
+;yyxx = E803 = 1000ms
+;------------------------- end -------------------------
+

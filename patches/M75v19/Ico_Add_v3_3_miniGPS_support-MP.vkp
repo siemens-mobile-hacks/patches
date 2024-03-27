@@ -1,0 +1,122 @@
+;M75v19
+;Дополнительная панель иконок с поддержкой miniGPS
+;IconbarAdditions v3.3 miniGPS support
+;(c) benj9
+;(r) BuG, empeka
+;(p) Kibab
+;Version: 3.3-MP
+;PatchID: 3247
+;Details: https://patches.kibab.com/patches/details.php5?id=3247
+/*
+featuring: charging icons, profile icons, vibra on/off, animation, netmode, minigps, universal engines
+
+Полное описание внутри патча тела на английском.
+*/
+; Если хотим иконки слева от стандартных
+02A8DD8: F4F15CECF4F164EE0028 00488047,0xA0FDB811,C046 ; M75v19
+0FDBA88: FFFFFFFFFFFFFFFF 0xA049D694,0xA049DAA8 ; M75v19
+
+; Если хотим справа от стандартных
+;02A907C: 16F018FA16F038FDFF28 00488047,0xA0FDB811,C046 ; M75v19
+;0FDBA88: FFFFFFFFFFFFFFFF 0xA02BF4B1,0xA02BFAF5 ; M75v19
+;0FDB856: 00 FF ; put this line BEHIND patch
+
+; Конфиг-секция (положить вместо оригинальной!!!)
+; тут уже настроены номера картинок для первой части патча...
+; но картинки профилей из ADDPIT!
+0FDBAA0: "{patch=IconbarAdditions ver=33 cp=benj9 id=1c00}","\
+\
+{sm ProfileIcons}","\
+{2.0 cb engage v=1}","\
+{24 i `first icon` v=1411}","\
+{endsm}","\
+\
+{sm ChargingIcons}","\
+{2.1 cb engage v=1}","\
+0 = icon off","\
+{8 i `charge icon` v=387}","\
+{12 i `full icon` v=388}","\
+{endsm}","\
+\
+{sm VibraIcons}","\
+{2.2 cb engage v=1}","\
+{20 i `vibra icon` v=722}","\
+{16 i `no-vibra icon` v=0}","\
+(0=icon off)","\
+{endsm}","\
+\
+{sm NetModeIcons v=1}","\
+{2.3 cb engage v=1}","\
+{52 xy position x=132 y=33}(off=iconbar, on=static)","\
+{28 i iconSearchingLo v=352}","\
+{32 i iconPhoneTraffic v=345}","\
+{36 i iconSearchingHi v=354}","\
+{40 i iconSmsTraffic v=351}","\
+{44 i iconSemiIdle v=350}","\
+{48 i iconIdle}","\
+(0=icon off)","\
+{endsm}","\
+\
+{sm AnimationIcons}","\
+{2.4 cb engage v=1}","\
+{sm Profiles}","\
+{4.0 cb 1 v=1}{4.1 cb 2 v=1}{4.2 cb 3 v=1}{4.3 cb 4 v=1}","\
+{4.4 cb 5 v=1}{4.5 cb 6 v=1}{4.6 cb 7 v=1}","\
+{endsm}","\
+{56 xy position x=2 y=142}(off=iconbar, on=static)","\
+{60 i `first icon` v=958}","\
+{64 i `last icon` v=968}","\
+{endsm}","\
+\
+{sm miniGpsIcons}","\
+Enter icons in 3rd line of minigps files","\
+{2.5 cb engage v=1}","\
+{80 xy position x=85 y=142}(off=iconbar, on=static)","\
+{82 s miniGPS maxlen=31 ","\
+value=`0:\\Misc\\gps\\%i\\%i-%i.tmo`}","\
+{endsm}",00
+
+0FDC340: E4D3C2B1,0x00001C01,0000000000000000,"\
+{patch=Icon-Netmode2 ver=33 cp=benj9 id=1C01}","\
+{02 xy position x=59 y=120}(off=iconbar, on=static)","\
+{sm focus}","\
+\
+{08 a address v=A8F5A0B0}","\
+{04 cb `use as pointer` v=0}","\
+{05 b offset v=0}","\
+{01 o `load type` `byte (1b)`=0 `hword (2b)`=1 `dword (4b)`=2 v=0}{endsm}","\
+{06 o `val1-val7 condition` `=`=0 `<=`=1 `>=`=2 v=0}","\
+\
+{sm v1}{7.0 cb 1 v=1}","\
+{12 i val1 v=0}","\
+{44 i icon v=890}{endsm}","\
+\
+{sm v2}{7.1 cb 2 v=1}","\
+{16 i val2 v=1}","\
+{48 i icon v=855}{endsm}","\
+\
+{sm v3}{7.2 cb 3 v=1}","\
+{20 i val3 v=2}","\
+{52 i icon v=868}{endsm}","\
+\
+{sm v4}{7.3 cb 4 v=1}","\
+{24 i val4 v=3}","\
+{56 i icon v=891}{endsm}","\
+\
+{sm v5}{7.4 cb 5 v=1}","\
+{28 i val5 v=8}","\
+{60 i icon v=892}{endsm}","\
+\
+{sm v6}{7.5 cb 6 v=0}","\
+{32 i val6 v=16}","\
+{64 i icon v=394}{endsm}","\
+\
+{sm v7}{7.6 cb 7 v=0}","\
+{36 i val7 v=19}","\
+{68 i icon v=395}{endsm}","\
+\
+{sm vElse}{7.7 cb Else v=1}","\
+{40 i `exclude val` v=27}","\
+{72 i icon v=406}{endsm}",00
+;------------------------- end -------------------------
+

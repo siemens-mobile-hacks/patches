@@ -1,0 +1,14 @@
+;S65v58
+;Отключение AUMA и UDIAL дебагеров
+;Disable AUMA and UDIAL Debug
+;(c) 1nvisible
+;Version: 
+;PatchID: 3528
+;Details: https://patches.kibab.com/patches/details.php5?id=3528
+/*
+Отключаем очередной дебаг:)
+*/
+08EFC6C: F0412DE9 1EFF2FE1 ; AUMA Debug
+0C7013C: 0FB4 7047 ; UDIAL Debug
+;------------------------- end -------------------------
+

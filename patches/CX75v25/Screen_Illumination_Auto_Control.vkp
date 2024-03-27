@@ -1,0 +1,15 @@
+;CX75v25
+;Почасовой контроль яркости
+;Screen Illumination Auto Control
+;(c) starfriend
+;(p) kiREALlov
+;Version: 2.1-MP
+;PatchID: 5904
+;Details: https://patches.kibab.com/patches/details.php5?id=5904
+/*
+Яркость подсветки дисплея меняется в зависимости от времeни(на каждый час можно установить свое значение).
+*/
+085BEBC: 04980E1C141CC707101C 004FB847,0xA0FC4C01,C046
+
+;------------------------- end -------------------------
+

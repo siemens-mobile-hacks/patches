@@ -1,0 +1,18 @@
+;S75v47
+;Увеличение интервала между сообщениями "Аккумулятор разряжен" до 5 мин
+;Chenge the time of the msg. "Accum. discharge" to 5 min
+;(c) ?
+;(r) Merzotnuk
+;(p) ferro
+;Version: 
+;PatchID: 7721
+;Details: https://patches.kibab.com/patches/details.php5?id=7721
+/*
+!тестируем!
+!У меня ни к чему не привело! Туфта опять какая-то
+
+*/
+0292a48: ED100000 E8FD0000
+
+;------------------------- end -------------------------
+

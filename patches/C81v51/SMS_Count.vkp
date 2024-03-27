@@ -1,0 +1,17 @@
+;C81v51
+;Счетчик СМС
+;SMS Count
+;(c) starfriend
+;(p) den11111
+;Version: 3.4
+;PatchID: 8226
+;Details: https://patches.kibab.com/patches/details.php5?id=8226
+/*
+(!) Master, func lib: 0A,0B,0C,0D,17,1A,4E
+Вместо INSTANT_MESSAGE выводит информацию о колличестве отправленных смс
+*/
+0x42D894: 8D7A33A0 CD5106A0
+0x301FDC: 5865BD48BC491438 004988472B5106A0
+0xE2E4B8: 706881694269201C 004A90479D5006A0
+;------------------------- end -------------------------
+

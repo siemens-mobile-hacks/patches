@@ -1,0 +1,80 @@
+;SL75v52
+;Позиционирование элементов главного экрана v3
+;MainScreen positioning v3
+;(c) SiNgle, BuG, KiRiK, [crazy]misha
+;(r) arsh0r, RainMaker AKA Shadow®
+;(p) ferro
+;Version: 
+;PatchID: 7649
+;Details: https://patches.kibab.com/patches/details.php5?id=7649
+/*
+не проверил:
+missed Events
+02FF516: 78 yy ;y
+*/
+;Net-Icons
+029d1e2: 03 00 ;canvas start x;
+029d1e0: 02 00 ;canvas start y
+029d1e4: 21 1e ;xx ;canvas end x
+029d1dA: 0F 0d ;yy ;canvas end y ;29B62A
+;029d1e8: FFF76FFE 00280028 ; no canvas
+029d1f4: 03 00 ;xx ;x
+029d1f2: 02 00 ;yy ;y
+
++21b4
+;Iconbar
+;029B434: 23 xx ;canvas1(icons in iconbar?) start x
+029B432: 02 01 ;yy ;canvas1(icons in iconbar?) stat y
+;029B436: 63 xx ;canvas1(icons in iconbar?) end x
+029B42C: 0F 0e ;yy ;canvas1(icons in iconbar?) end y
+029B49A: 02 01 ;yy ;canvas2(iconbar) start y
+029B490: 0F 0e ;00yy ;canvas2(iconbar) end y
+;029B43A: FFF74EFC 00280028 ;no canvas1
+;029B4A0: FFF71BFC 00280028 ;no canvas2
+;029B400: 21 00 ;xx ;x with canvas2 iconbar
+029B4B4: 02 01 ;yy ;y
+
+;Battery-Icons
+029B56C: 65 65 ;xx ;canvas start x
+029B56A: 02  00;canvas start y
+;029B56E: 80 xx ;canvas end x
+029B564: 0F 0d ;yy ;canvas end y
+;029B572: FFF7B2FB 00280028 ; no canvas
+029B57E: 65 69 ;xx ;x
+029B57C: 02 00 ;yy ;y
++0
+
+;missed Events
+;02FF516: 78 yy ;y
+
++4370
+;without Provider-Logo:
+042E978: 0B 14 ;yy ;Date/Time ;don't works on skin application image
+042E988: 1E 22 ;yy ;Provider
+042E998: 30 30 ;yy ;Sub-Provider
+;042E9A8: 40 4a ;Flash-SMS/CB-News !
+;042E9B8: 66 yy ;Timer when Stopwatch running
+;042E9C8: 78 yy ;Stopwatch/Timer
+
+;with Provider-Logo:
+042E9D8: 0B 14 ;yy ;Date/Time ;don't works on skin application image
+;042E9F8: 40 yy ;Flash-SMS/CB-News
+;042EA08: 66 yy ;Timer when Stopwatch running
+;042EA18: 78 yy ;Stopwatch/Timer
++0
++4244
+;Date/Time on Skin Application Image
+;042D37C: 06 xx ;start x
+;042D37E: 1A yy ;start y
+042D380: 7D 20 ;xx ;stop x
+042D382: 26 2c ;yy ;stop y
+
+;Hotkey Info on Skin Application Image
+;042D398: 06 xx ;start x
+;042D39A: 8A yy ;start y
+;042D39C: 83 xx ;stop x
+;042D39E: 99 yy ;stop y
++0
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;CX70v50
+;Уменьшить задержку для долгого нажатия клавиш
+;Decrease Keypad Long Press Delay
+;(c) 1nvisible
+;(r) benj9
+;(p) Smelter
+;Version: 
+;PatchID: 2903
+;Details: https://patches.kibab.com/patches/details.php5?id=2903
+/*
+
+*/
+00CB4146: 82 41
+;------------------------- end -------------------------
+

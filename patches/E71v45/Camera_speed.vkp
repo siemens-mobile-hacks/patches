@@ -1,0 +1,14 @@
+;E71v45
+;Скорость камеры
+;Camera speed
+;(c) SiNgle
+;(p) DDM
+;Version: 
+;PatchID: 9670
+;Details: https://patches.kibab.com/patches/details.php5?id=9670
+/*
+
+*/
+0A05E1C: 1400A0E3 0000A0E3
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;C75v22
+;Подсветка с шагом 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(r) AsteriX
+;Version: 
+;PatchID: 1139
+;Details: https://patches.kibab.com/patches/details.php5?id=1139
+/*
+
+*/
+03AF3EC: 0A 05 ; 05 или любая цифра в HEX
+03AF3FC: 0A 05 ; 05 или любая цифра в HEX
+
+
+;------------------------- end -------------------------
+

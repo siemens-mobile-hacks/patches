@@ -1,0 +1,15 @@
+;C81v51
+;Полностью отключить SIM-меню
+;Completely disable SIM-menu
+;(c) BingK(binghelingxi)
+;(r) dimonp25
+;(p) Виктор89
+;Version: 
+;PatchID: 9112
+;Details: https://patches.kibab.com/patches/details.php5?id=9112
+/*
+Убирает пункт SIM-меню отовсюду
+*/
+02D2001: D1 E0
+;------------------------- end -------------------------
+

@@ -1,0 +1,34 @@
+;E71v41
+;Изменить позицию и шрифт имени провайдера в заставке
+;Change position and font of providername in ScreenSaver
+;(c) arsh0r
+;(r) SiNgle
+;(p) Bueffel
+;Version: 
+;PatchID: 6743
+;Details: https://patches.kibab.com/patches/details.php5?id=6743
+/*
+
+*/
+;Analog Clock
+086D760: 00 xx ; x-start
+086D762: 2301 yyyy ; y-start
+086D764: F0 xx ; x-stop
+086D766: 3F01 yyyy ; y-stop
+086D768: 05 ff ; font size
+
+; Digital Clock
+086D77C: 00 xx ; x-start
+086D77E: 2301 yyyy ; Y-start
+086D780: F0 xx ;x-stop
+086D782: 3F01 yy ; y-stop
+086D784: 05 ff ; font size
+
+; Picture
+086D744: 00 xx ; x-start
+086D746: 2301 yyyy ; y-start
+086D748: F0 xx ; x-stop
+086D74A: 3F01 yyyy ; y-stop
+086D74C: 05 ff ; font size
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S75v47
+;Фотографии с максимальным качеством
+;Photos with maximal quality
+;(c) SiNgle
+;(p) RainMaker AKA Shadow®
+;Version: 
+;PatchID: 5551
+;Details: https://patches.kibab.com/patches/details.php5?id=5551
+/*
+Фотографии с максимальным качеством.
+*/
+0207400: 0000DDE5 0200A0E3
+0207410: 0000DD05 0200A0E3
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;S75v52
+;Изменить звуки "Аккумулятор почти разряжен, Зарядите!" и "Аккумулятор разряжен! Зарядите!"
+;Change sounds "Battery power low. Please recharge!" and "Battery empty. Please recharge!"
+;(c) Evgr
+;(p) SimaFish
+;Version: 
+;PatchID: 8788
+;Details: https://patches.kibab.com/patches/details.php5?id=8788
+/*
+1B, 1C  без звука
+1D щелчок фотокамеры
+1E звук начала видео
+1F звук разряженного аккума
+*/
+029BD92: 27 1D ; "Аккумулятор почти разряжен, Зарядите!"
+029BD9A: 1E 1D ; "Аккумулятор разряжен! Зарядите!"
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;M81v51
+;Истинные размеры файлов, папок в Card-Explorer
+;Real sizes of files, folders in Card-Explorer
+;(c) _caine
+;(r) avkiev
+;(p) Frezzz
+;Version: 
+;PatchID: 6222
+;Details: https://patches.kibab.com/patches/details.php5?id=6222
+/*
+
+*/
+02A58EC: 7D 80
+02A5A00: 4042 FFFF
+;------------------------- end -------------------------
+

@@ -1,0 +1,79 @@
+;CX70v56
+;Перенос папки System с Data на Config
+;Move System folder from Data to Config
+;(c) Serega_1
+;(r) SMeeTBB
+;(p) me-at
+;Version: 
+;PatchID: 716
+;Details: https://patches.kibab.com/patches/details.php5?id=716
+/*
+Патч переносит папку System с Data на Config. 
+Надо перенести папку System на Config перед применением патча.
+Патч освобождает немного места на диске Data.
+
+EN:
+This patch changes location of System folder from \Data to \Config. Note that you should move System by your own to Config before applying this patch!
+*/
+0A4EE62: 30 32
+0A4EE76: 30 32
+0A4EE82: 30 32
+0A4EE9a: 30 32
+0A4EEb6: 30 32
+0A4EEca: 30 32
+0A4EEec: 30 32
+0A4Ef0c: 30 32
+0A4Ef24: 30 32
+0A4Ef4a: 30 32
+0A4Ef6a: 30 32
+0A4Ef82: 30 32
+0A4Efa6: 30 32
+0A4Efc2: 30 32
+0A4Efd6: 30 32
+0A4Eff6: 30 32
+0A4f012: 30 32
+0A4f026: 30 32
+0A4f048: 30 32
+0A4f06a: 30 32
+0A4f084: 30 32
+0A4f0aa: 30 32
+0A4f0c6: 30 32
+0A4f0da: 30 32
+0A4f0fc: 30 32
+0A4f11c: 30 32
+0A4f134: 30 32
+0A4f156: 30 32
+0A4f170: 30 32
+0A4f182: 30 32
+0A4f1a4: 30 32
+0A4f1cc: 30 32
+0A4f1ec: 30 32
+0A4f218: 30 32
+0A4f234: 30 32
+0A4f248: 30 32
+0A4f268: 30 32
+0A4f284: 30 32
+0A4f298: 30 32
+0A4f2b8: 30 32
+0A4f2d6: 30 32
+0A4f2ec: 30 32
+0A4f30e: 30 32
+0A4f32c: 30 32
+0A4f342: 30 32
+0A4f3ce: 30 32
+0A4f3ea: 30 32
+0A4f3fe: 30 32
+0A4f422: 30 32
+0A4f448: 30 32
+0A4f466: 30 32
+0A4f494: 30 32
+0A4f4ba: 30 32
+0A4f4d8: 30 32
+0A4f502: 30 32
+0A4f520: 30 32
+0A4f536: 30 32
+;0A4F37E: 30 32 ;Ети строски переносят ММС на диск Конфиг, расскоментируйти их, если пользуетесь редко ММС
+;0A4F39A: 30 32
+;0A4F3AE: 30 32
+;------------------------- end -------------------------
+

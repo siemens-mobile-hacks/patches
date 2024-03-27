@@ -1,0 +1,14 @@
+;SL65v50
+;Подсветка с шагом 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;Version: 
+;PatchID: 5116
+;Details: https://patches.kibab.com/patches/details.php5?id=5116
+/*
+
+*/
+09073F8: 0A 05 ; 05 или любая цифра в HEX
+0907408: 0A 05 ; 05 или любая цифра в HEX
+;------------------------- end -------------------------
+

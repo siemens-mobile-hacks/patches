@@ -1,0 +1,16 @@
+;EL71v41
+;Подсветка с шагом 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(p) Siemann
+;Version: 
+;PatchID: 7118
+;Details: https://patches.kibab.com/patches/details.php5?id=7118
+/*
+Устанавливает шаг подсветки 5%, или любое другое число в HEX
+English: Setup illumination by 5%, or other number in HEX
+*/
+06410E4: 0A 05
+06410EA: 0A 05
+;------------------------- end -------------------------
+

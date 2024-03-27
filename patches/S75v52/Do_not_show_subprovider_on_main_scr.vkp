@@ -1,0 +1,14 @@
+;S75v52
+;Не показывать сабпровайдер на главном экране
+;Do not show subprovider on main screen
+;(c) Miha_r
+;(p) Виктор89
+;Version: 
+;PatchID: 9262
+;Details: https://patches.kibab.com/patches/details.php5?id=9262
+/*
+
+*/
+0302670: FEF702FA C046C046
+;------------------------- end -------------------------
+

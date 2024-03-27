@@ -1,0 +1,17 @@
+;CL61v128
+;Мега-громкость для гарнитуры
+;Mega-loudness for handsfree
+;(c) Akot
+;(p) Marie
+;Version: 
+;PatchID: 10412
+;Details: https://patches.kibab.com/patches/details.php5?id=10412
+/*
+
+*/
+0A93478: 0600000A020000EF6C3DA0E3 050040E22E00C4E53C0000EA
+0A9356C: 2E00C4E5 C0FFFFEA
+
+0A93478: 05 11 ; 05 - min, 11 - max
+;------------------------- end -------------------------
+

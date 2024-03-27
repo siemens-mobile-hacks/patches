@@ -1,0 +1,13 @@
+;CF75v23
+;Отключить Retarget Exit
+;Disable Retarget Exit
+;(c) 1nvisible
+;Version: 
+;PatchID: 4884
+;Details: https://patches.kibab.com/patches/details.php5?id=4884
+/*
+
+*/
+09C9990: 70402DE9 1EFF2FE1 ; For those who have Retarget Exit when using java
+;------------------------- end -------------------------
+

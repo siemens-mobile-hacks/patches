@@ -1,0 +1,14 @@
+;S65v58
+;Изменение шрифта окошек в Разработчике 
+;Change font in Developer windows
+;(c) Evgr
+;Version: 
+;PatchID: 10486
+;Details: https://patches.kibab.com/patches/details.php5?id=10486
+/*
+
+*/
+0931CB4: 03 08 
+
+;------------------------- end -------------------------
+

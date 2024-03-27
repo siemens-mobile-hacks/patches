@@ -1,0 +1,80 @@
+;E71Cv41
+;Keys add-on for Card-Explorer
+;Keys add-on for Card-Explorer
+;(c) BingK(binghelingxi)
+;Version: 1.1
+;PatchID: 8963
+;Details: https://patches.kibab.com/patches/details.php5?id=8963
+/*
+English:v1.1
++ disable search, use KEY_DOWN
+---------------------------------
+The patch sets key shorcuts in the Card-Explorer.
+As the default setting, we set 8 keys:
+1st key: green button, function: mark/unmark
+2nd key: key_7, function: delete
+3rd key: key_6, function: rename
+4th key: key_4, function: copy
+5th key: key_5, function: Default //first item of option menu
+6th key: key_star, function: Atteibutes
+7th key: key_0, function: move
+8th key: key_1, function: send
+
+And you can edit the keys and functions by yourself(see the patch).
+*/
+;ExpKExtern_hook
+0x007A6360: 042091E5 A6DA2EFA
+;ExpKDisableSearch_hook
+0x008B00D8: 92000140 92000040
+;ExpKExtern_body
+#pragma enable old_equal_ff
+0x0135CE00: 4A68FFB5FF3A942A15D189680A4C2588
+0x0135CE10: 0026AE420FD0A41C761C2778002FF8D0
+0x0135CE20: FF2F08D08F42F4D16778FF2F03D0011C
+0x0135CE30: 381C024B9847FFBD40CE35A144116BA0
+0x0135CE40: 0x0800 ;how many keys you want to set.
+0x0135CE42: 0B,08 ;1st  key: green button, function: mark/unmark
+0x0135CE44: 37,06 ;2nd  key: key_7, function: delete
+0x0135CE46: 36,0C ;3rd  key: key_6, function: rename
+0x0135CE48: 34,04 ;4th  key: key_4, function: copy
+0x0135CE4A: 35,00 ;5th  key: key_5, function: Default //first item of option menu
+0x0135CE4C: 2A,0E ;6th  key: key_star, function: Atteibutes
+0x0135CE4E: 30,03 ;7th  key: key_0, function: move
+0x0135CE50: 31,02 ;8th  key: key_1, function: send
+;... you can add more keys, depending on how many in 0x015623C8.
+;... keys, functions could be edited by yourself
+#pragma disable old_equal_ff
+/*
+function lists:
+0x00 Default //option menu first item
+0x18 Enter
+0x10 Option Menu
+0x16 Back
+0x02 Send
+0x21 Set To Contact
+0x1F Set As ...
+0x0C Rename
+0x06 Delete
+0x03 Move
+0x15 Cancel Move/Copy
+0x04 Copy
+0x0B New Folder
+0x08 Mark/Unmark
+0x09 Mark All
+0x0D Sort
+0x1C Search
+0x0E Atteibutes
+0x1D Formate Card
+0x11 Help
+0x0F Drive Info
+0x1E Eject Card
+0x23 Edit
+0x24 Manage Licences
+0x22 Theme Preview
+0x26 Java Update
+0x27 Java Security
+0x29 Java Online Settings
+*/
+
+;------------------------- end -------------------------
+

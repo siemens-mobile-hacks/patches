@@ -1,0 +1,40 @@
+;M81v51
+;Мигание фонарика при входящем звонке v1.1
+;Lighter during incoming call v1.1
+;(c) ThE TrIFoN
+;(r) BoBa, 1nvisible
+;(p) Cypok
+;Version: 
+;PatchID: 6861
+;Details: https://patches.kibab.com/patches/details.php5?id=6861
+/*
+
+*/
+;M81v51 - Мигание фонарика при входящем звонке v1.1
+;M81v51 - Lighter during incoming call v1.1
+;(c) ThE TrIFoN
+;(r) BoBa, 1nvisible
+;(p) Cypok
+
+
+02F97AE: 51F080FD 96F585FB
+034B230: 321C281C 44F536FE
+034B23A: 321C281C 44F531FE
+
+#pragma enable old_equal_ff
+008FEA0: 0FB50F2D04D0104800210170024B9847
+008FEB0: 0FBC321C281C00BD618442A11FB50A48
+008FEC0: 0121017009480A490A4A0B4B98471FBC
+008FED0: BBF2EFF900BDFFB5042001210022014B
+008FEE0: 9847FFBDCC641BA0806C36AC706C36AC
+008FEF0: 26000000D7FE08A0783209A0
+
+1428460: FFB50A480A490B4A0B4B9847FFBDFFB5
+1428470: 05490978002903D1084B9847FFF7F0FF
+1428480: FFBDC046826C36AC806C36AC706C36AC
+1428490: 250000006F8442A1783209A0CF8A33A0
+#pragma disable old_equal_ff
+
+1428490: 25 25   ; Frequency. Min=16
+;------------------------- end -------------------------
+

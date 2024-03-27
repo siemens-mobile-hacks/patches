@@ -1,0 +1,14 @@
+;SL75v39
+;Диспатчер заставки и главного экрана
+;Screensaver and Mainscreen dispatcher
+;(c) avkiev
+;(p) ferro
+;Version: 
+;PatchID: 6121
+;Details: https://patches.kibab.com/patches/details.php5?id=6121
+/*
+(!) Master
+*/
+0343456: 26229D44090169446844 C046,004A9047,0xA0063F01   ; SL75v39
+;------------------------- end -------------------------
+

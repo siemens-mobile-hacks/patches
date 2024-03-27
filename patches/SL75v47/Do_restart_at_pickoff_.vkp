@@ -1,0 +1,19 @@
+;SL75v47
+;Перезагрузка при пикоффе
+;Do restart at pickoff
+;(c) Evgr, Feyman
+;(r) Dimadze, Маришка
+;(p) bertgrin
+;Version: 
+;PatchID: 10191
+;Details: https://patches.kibab.com/patches/details.php5?id=10191
+/*
+
+*/
+02457F8: 1D 16 
+02457FB: 1A EA 
+024586B: 0A EA
+02421C4: 00 01 ; RestartEnable 
+0242208: 00 01 ; Exit_RAM_Dump_Enable
+;------------------------- end -------------------------
+

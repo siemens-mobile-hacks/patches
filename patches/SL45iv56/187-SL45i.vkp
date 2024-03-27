@@ -1,0 +1,24 @@
+;SL45iv56
+;Нажатие кнопки PTT при разблокированной клавиатуре запускает MP3 плеер
+;Use PTT button when keyboard Unloked to start MP3
+;(c) ACiD [mrp]
+;Version: 
+;PatchID: 1886
+;Details: https://patches.kibab.com/patches/details.php5?id=1886
+/*
+Нажатие кнопки PTT при разблокированной клавиатуре запускает MP3 плеер.
+
+Если клавиатура заблокирована то включается голосовой набор.
+
+
+Created: July 14, 2004
+
+Патч №187 с http://patch.oslik.ru/SL45_RU
+*/
+3B0386: 46FC1E00EA20CE07 FAE0B0D0CC00CC00 
+
+40D0B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46FC1E002D02FADB8E03DAA2184C4840 
+40D0C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D03DADBFE86E026F046986098809890 
+40D0D0: FFFF DB00
+;------------------------- end -------------------------
+

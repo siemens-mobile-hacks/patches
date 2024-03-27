@@ -1,0 +1,157 @@
+;A50v12
+;Патчи для меню "Напоминания"
+;Patches for menu "Reminders"
+;(c) Delirium, Sinclair, Baloo
+;Version: 
+;PatchID: 2779
+;Details: https://patches.kibab.com/patches/details.php5?id=2779
+/*
+Содержит патчи:
+*** Автоматическая смена профиля и ежечасный сигнал v3.2
+*** Напоминание о пропущеных событиях v1.3 ***
+*** Напоминание о состоянии заряда аккумулятора v1.1 ***
+*/
+;********************************************************************************
+;*** www.Автоматическая_смена_профиля_и_ежечасный_сигнал_v3.2 *** © Sinclair
+; A50v12 ® Delirium
+; Требует патч *** www.Инициализация_при_старте ***
+; Вкл./Выкл. через "CoM" -> "Напоминания" -> "Авто-профиль"
+; Для звукового сигнала используется звук CB-сообщений.
+; ежечасный сигнал можно выключить в любом профиле через настройки Аудио->..."Ежечас.сигнал"
+; by default: 
+; Дневной профиль - "Шумное место"(профиль 3), переход в 06.30
+; Ночной профиль - "Тихое место" (профиль 2), переход в 22.30
+; Звуковой сигнал, однократная вибра и подсветка в дневном профиле, минуты не заданны.
+258D08: CC00CC00 DAE50081
+258100: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DACC2CE8D7402D00F2F1A23A9AF13670
+258110: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7500E00F2F9183DF2F2163DD7402C00
+258120: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2F85033F049F19440482D28D7402C00
+258130: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F6F4503346F916003D0346F21E002D16
+258140: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46F906003D0346F21E002D1446F20000
+258150: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3D15DAC56CCD48423D11E6FC3600DACE
+258160: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0224DACE0C26DACDD4560D08E01CDAC5
+258170: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 32CD0DECE02CDAC532CD0DE8E6FC0081
+258180: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FDE50088D088C0E6FC6033E6FD2C00
+258190: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FED800E00FDACD62170804FACC36E8
+2581A0: FFFFFFFFFFFF DACC2CE80DEB
+;************************************************************************
+; Setting:
+;258136: 16 hh      ; hour for night profile (in hex)
+;25813С: 1E mm      ; minute for night profile (in hex)
+;258142: 06 hh      ; hour for day profile (in hex)
+;258148: 1E mm      ; minute for day profile (in hex)
+;25814E: 00 mm      ; minute for hourly beep (in hex)
+;---------------------------------------------------
+;258157: 42 4p      ; select profile number for hourly beep (0<->5)
+; or:
+;258157: 423D 412D  ; disable hourly beep only "Quiet environ." (profile 2)
+;---------------------------------------------------
+;258160: 36 ss      ; sound CB for hourly beep (in hex)
+;258171: 1C nC      ; select number for night profile (0 <= n <= 5)
+;258179: 2C dC      ; select number for day profile (0 <= d <= 5)
+;-----------------------------------------------------
+;258166: DACE 0D01  ; hourly beep without silent alert
+;25816A: DACD 0D01  ; hourly beep without illumination
+;************************************************************************
+; Редактирование сообщений (взято из старого патча автопрофиля):
+; (!!! Only Relocation langpack support!!!)
+;====================================================================
+;Смена названия пункта Мелодии/ "Информ. услуги" на "Ежечас.сигнал"
+23C782: 7B007B00 13031303 ;смена Handle и Items на 0313 - "' Запись/пауза^& Стоп"
+;Смена названия пункта Мелодии/Громкость/ "Информ. услуги" на "Ежечас.сигнал"
+23C8A8: 7B007B00 13031303 ;смена Handle и Items на 0313 - "' Запись/пауза^& Стоп"
+;--------------------------------------------------------------------
+;Edit message  1 : 0313  "' Record/pause^& Stop" => "Hourly beep"
+2C63C3: 15343E0608227A6F0D32200EBC9B344406082705C0 15063C7E0CC708B614200000000000000000000000
+;Редактирование сообщения  2 : 0313  "' Запись/пауза^& Стоп" => "Ежечас.сигнал"
+2C63D8: 163B3A76DFAD0611093F02CA201C0D793B62768314BF 16022E1F0FCBB67B060537100D280000000000000000
+;Редактирование сообщения  3 : 0313  "' Запис/Пауза^& Стоп" => "Щогодин.сигнал"
+2C63EE: 163938090BD99E94417E0F22980919395A090B921DD0 160254070C070D057F9006050C831700000000000000
+;********************************************************************************
+
+
+;********************************************************************************
+;*** www.Напоминание_о_пропущеных_событиях_v1.3 *** © Sinclair, Baloo
+; A50v12 ® Delirium
+; Требует патч *** www.Инициализация_при_старте ***
+; Вкл.\Выкл.через "CoM"->"Напоминания"->"Пропущ.напомин","Будильник","SMS","Важные SMS"(Flash),"Пропущ.вызовы"
+; by default: 
+; Звуковой сигнал, однократная вибра и подсветка в профиле "Шумное место" (профиль 3)
+; интервал напоминания - 20 секунд
+;------------------------------------------------------------------------
+258D0C: CC00CC00 DAE50089
+258900: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DACC2CE80D4DDACC2CE82802D7400300
+258910: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2F4083D8AF443D0E1392D052991DAC5
+258920: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 6CCD41893D3CD7402D00F2F4A23AB840
+258930: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 9AF40500DAF2A8E948403D29A8409AF4
+258940: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0510DAE538EA48403D22A8409AF40730
+258950: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7402D00F2F4023248403D19A8409AF4
+258960: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0C20D7402900F3F84C3F9AF40660DAF0
+258970: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 229C28414843FD0BA8409AF41040DAC4
+258980: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 6C8970453D04DAC4A88970452D08E6FC
+258990: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3A00DACE0224DACE0C26DACDD4560802
+2589A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC0689E6FDE50088D088C0E6FC7033
+2589B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FD2C00E6FEEC10E6FF0000DACD6217
+2589C0: FFFFFFFFFFFF 0804FACC36E8
+;------------------------------------------------------------------------
+; Настройки:
+;258919: 39   x9    ; где x - номер профиля, в котором будет сигнал (1<=x<=5; 0-во всех профилях)
+; or:
+;258919: 39 29 ;|
+;258924: 3D 2D ;|-> сигнал во всех профилях, кроме профиля 2 ("Тихое место")
+;-------------------- 
+;258990: 3A   ss    ; номер звука для сигнала
+;------------------------------------------------------------------------
+;2589B6: EC10 XXYY  ; интервал напоминания
+;2589BA: 0000 ZZWW  ; где WWZZYYXX - значение периода в HEX, 1 = 1/216,57 секунды
+; здесь EC10 => 10ECh => 4332 dec => 4332/216,57 = 20 секунд
+; Например, для 30 мин будет такой расчёт:
+;__30 мин.= 1800 сек => 1800*216,57 = 389826 = 05F2C2h, отсюда:
+;2589B6: EC10 C2F2 
+;2589BA: 0000 0500
+;--------------------------------------------------------------------------------
+;258996: DACE 0D01 ; disable silent alert
+;25899A: DACD 0D01 ; disable illumination
+;********************************************************************************
+
+
+;********************************************************************************
+;*** www.Напоминание_о_состоянии_заряда_аккумулятора_v1.1 *** © Sinclair
+; A50v12 ® Delirium
+; Требует патч *** www.Инициализация_при_старте ***
+; Вкл./выкл. через меню "CoM" -> "Напоминания" -> "accu LS5", "accu LS3"
+; В патче используется переменная LS из Charge Monitor
+; По дефолту сигнал работает в 3-ем профиле (Шумное место) 
+;*************************************************************************
+258D10: CC00CC00 DAE5508F
+258F50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DACC2CE80D2FDACC2CE8D7400300F2F4
+258F60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 083D8AF427D0E1392D052991DAC56CCD
+258F70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 41893D20D7402D00F2F4A23AD7501100
+258F80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2FC4A3C9AF4055048C53D03E6FC3C00
+258F90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0D0B9AF4056048C33D03E6FC39000D04
+258FA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 48C43D08E6FC3B00DACE0224DACDD456
+258FB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DACE0C26E6FC568FE6FDE50088D088C0
+258FC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC8033E6FD2C00E6FEC232E6FF0000
+258FD0: FFFFFFFFFFFFFFFFFFFF DACD62170804FACC36E8
+;------------------------------------------------------------------------
+;258F67: 39 x9 ; где x - номер профиля, в котором будет сигнал (1<=x<=5; 0-во всех профилях)
+; or:
+;258F67: 39 29 ;|
+;258F72: 3D 2D ;|-> сигнал во всех профилях, кроме профиля 2 ("Тихое место")
+;----------------
+;258F8E: 3C ss ; звук при LS5 ; акку полный, зарядка отключена (пиковый заряд акку)
+;258F9C: 39 ss ; звук при LS3 ; Режим добора при CUP 100%
+;258FA6: 3B ss ; звук при LS4 ; Отключение зарядки после добора (если такое значение и есть, то я его не видел)
+;258FCA: C232 XXYY ; интервал напоминания  (здесь 1 мин.= 60 сек => 300*216,57 = 12994,2  = 0032C2h)
+;258FCE: 0000 ZZWW ; где WWZZYYXX - значение периода в HEX, 1 = 1/216,57 секунды
+;----------------------------------------
+;258FAC: DACD 0D01 ; disable illumination 
+;258FB0: DACE 0D01 ; disable silent alert
+;-------------------------------------------------------------------------
+;Пороги LS:
+;258F89: С5 Сx
+;258F97: C3 Cx
+;258FA1: C4 Cx
+;*************************************************************************
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;SK65v50
+;Включить Вибру при Подключенном Кабеле
+;Enable Vibra while the Cable is Plugged In
+;(c) 1nvisible
+;Version: 
+;PatchID: 2532
+;Details: https://patches.kibab.com/patches/details.php5?id=2532
+/*
+Для тестирования патчей, задействующих вибру
+For testing patches affecting vibra
+*/
+0A171B8: F081BD18 0000A0E3
+;------------------------- end -------------------------
+

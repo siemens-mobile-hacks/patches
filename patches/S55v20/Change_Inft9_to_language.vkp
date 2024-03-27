@@ -1,0 +1,17 @@
+;S55v20
+;Изменить Инф.Т9 на меню выбора языка
+;Change Inf T9 to language select dialog
+;(c) SiNgle
+;(r) Mikel
+;Version: 
+;PatchID: 4890
+;Details: https://patches.kibab.com/patches/details.php5?id=4890
+/*
+Изменяет где только можно (СМС, заметки, ММС, почта...) Инф.Т9 на меню выбора языка
+English:Patch changes InfT9 everywhere to language select menu
+*/
+1229DA: 9C01 0907 ; ....see text
+2F9DB3: 9E8082 6760DA ; ....see Entry
+5DF3AC: DA9EBE7A CC00CC00 ;hide selected language msgbox
+;------------------------- end -------------------------
+

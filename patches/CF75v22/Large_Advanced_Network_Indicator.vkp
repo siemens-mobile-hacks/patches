@@ -1,0 +1,41 @@
+;CF75v22
+;Большой продвинутый индикатор сети
+;Large Advanced Network Indicator
+;(c) Alex Unknown, KiRiK
+;(r) arsh0r, empeka, avkiev, benj9, BuG,KreN
+;Version: 3.1
+;PatchID: 4252
+;Details: https://patches.kibab.com/patches/details.php5?id=4252
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cf75v22&f=Large_Advanced_Network_Indicator.rar
+
+/*
+(!) GraphPatchManager v3
+*/
++F00000
+#pragma enable old_equal_ff
+5300: 00B52448FBF77CFC3BD0FBF7C5F93868
+5310: 002836D0FAF780FF0130F178C14030D3
+5320: 82B000218323B2782A20801800900120
+5330: 019000200498FAF7F7FE02B000207178
+5340: F268FAF7EDFE0025FBF782F93C1CB178
+5350: A81E2388FF2B01D2726800E0B268A379
+5360: 002B07D0801C3FB4FAF7DAFE3FBC0133
+5370: 692BF7D30C340631002002380135072D
+5380: E7DB00BD
+
+5390: 0xB1C2D3E4,0x0100CD05,0xA0F05301,00000000,"\
+{patch=`LANI` ver=3.1 id=0100CD05}\
+{1 sl `background Y` range=46..86 v=56}\
+{2 sl `upper stripe Y` range=55..95 v=65}\
+{3.0 cb `Show in lock`}\
+{3.1 cb `Show in unlock`}\
+{sm PicSetup}","\
+{4 i `pic 900` v=228}\
+{8 i `pic 1800` v=229}\
+{12 i `background pic` v=227}\
+{endsm}\
+",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

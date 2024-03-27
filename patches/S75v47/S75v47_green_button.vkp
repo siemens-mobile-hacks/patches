@@ -1,0 +1,13 @@
+;S75v47
+;Вызывать "Списки вызовов" вместо "Набранные номера" по нажатию зеленой кнопки на ГЭ
+;Change "Calls dialled" to "Call records" on green button on Mainscreen
+;(c) Evgr
+;Version: 
+;PatchID: 9807
+;Details: https://patches.kibab.com/patches/details.php5?id=9807
+/*
+
+*/
+034584E: A8F0B6EB E7F7F9FF
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;CX75v13
+;Изменение номера SW-версии
+;Change SW-Version to XX
+;(c) Pashen
+;(p) -=(Kad)=-
+;Version: 
+;PatchID: 2593
+;Details: https://patches.kibab.com/patches/details.php5?id=2593
+/*
+Всё ясно из названия, в примере чётко показано как ставить свой номер можно 4х значный
+
+*/
+90181: 00313300 00393900 ; change hex-code to anything you want (example: 3939 = 99,3X3X = XX,3131 = 11,31313131 =
+1111,32353731 = 2571 etc) 
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,40 @@
+;SL45iv56
+;Черный список с автоответчиком
+;Blacklist with ANM
+;(c) charlielao
+;Version: 
+;PatchID: 2063
+;Details: https://patches.kibab.com/patches/details.php5?id=2063
+/*
+Нужны патчи "Черный список" и tracking. 
+Меняет АВТО ОТВЕТ на АВТООТВЕТЧИК, когда индекс 
+установлен в "A".
+ANM выбирается в Профиль 2 Функция 3 
+Авто ANM в Профиль 2 Функция 16 
+
+English: Needs blacklist + tracking patch. 
+This changes the AUTO ANSWER to ANSWERING MACHINE when postcode is 
+set to "A". 
+ANM selectable at Profile 2 Function 3 
+AUTO ANM selectable is at Profile 2 Function 16 
+
+
+Created: March 15, 2005
+*/
+27DDD8: DAA224DE DAC748DF 
+27DF48: FFFF 8890 ; mov [-r0], r9 
+27DF4A: FFFFFFFF D7403600 ; extp #36h, #1 
+27DF4E: FFFFFFFF F2F96C09 ; mov r9, mem_D896C 
+27DF52: FFFF FEF9 ; bclr r9.15 
+27DF54: FFFF 2EF9 ; bclr r9.2 
+27DF56: FFFF 2FF9 ; bset r9.2 
+27DF58: FFFFFFFF D7403600 ; EXTP #36H, #1 
+27DF5C: FFFFFFFF F6F96C09 ; mem_D896C, mov r9 
+27DF60: FFFF 9890 ; mov r9, [r0+] 
+27DF62: FFFF DB00 
+
+;If you dont use AUTO ANM uncomment this: 
+;Если Не успользуете AUTO ANM раскомметируйте: 
+;27DF52: FEF9 CC00
+;------------------------- end -------------------------
+

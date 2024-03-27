@@ -1,0 +1,20 @@
+;S75v47
+;Постоянная подсветка при зарядке выключенного телефона
+;The neverending light in offline charge
+;(c) Evgr
+;Version: 
+;PatchID: 10552
+;Details: https://patches.kibab.com/patches/details.php5?id=10552
+/*
+Хорош в сочетании с гарнитурой IMS-700 и патчем http://patches.kibab.com/patches/details.php5?id=10529
+*/
+0288230: 032063F1BAEEF8E7 00488047,0xA13D3371
+
+#pragma enable old_equal_ff
+13D3370: 00B5002001216422002308DF10BC0A3C
+13D3380: 2047
+#pragma disable old_equal_ff
+
+13D3376: 64 0i5 ; (%) уровень подсветки 5%
+;------------------------- end -------------------------
+

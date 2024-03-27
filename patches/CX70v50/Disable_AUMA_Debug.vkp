@@ -1,0 +1,17 @@
+;CX70v50
+;Отключить AUMA отладчик
+;Disable AUMA Debug
+;(c) benj9
+;(p) onixxx
+;Version: 
+;PatchID: 3363
+;Details: https://patches.kibab.com/patches/details.php5?id=3363
+/*
+Ускоряет телефон, отсекая ненужный код
+English:Speed up phone by stripping needless code
+*/
+
+0B8D0B4: 10B5 7047
+0B8D128: 0FB4 7047
+;------------------------- end -------------------------
+

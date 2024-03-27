@@ -1,0 +1,16 @@
+;SL45iv56
+;Заменяет ярлык "Инкогнито" ярлыком "Входящие СМС"
+;Overwrite Conceal ID shortcut with Inbox SMS
+;(c) RizaPN, mic.kan
+;Version: 
+;PatchID: 1631
+;Details: https://patches.kibab.com/patches/details.php5?id=1631
+/*
+Патч №068 с http://patch.oslik.ru/SL45_RU
+*/
+18E38A: 4901 5A03 
+18E3BE: 4A01 D300 
+18E416: 49014901 5A035B03 
+3AE308: DADA04A3 DAD9EE0A 
+;------------------------- end -------------------------
+

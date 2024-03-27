@@ -1,0 +1,13 @@
+;M55v10
+;Отключить верификацию JAVA-классов
+;Disable Java-classes vertificaton
+;(c) SiNgle, Chaos
+;Version: 
+;PatchID: 1376
+;Details: https://patches.kibab.com/patches/details.php5?id=1376
+/*
+Ускоряет запуск мидлетов на 30-70%
+*/
+7577BE: 3D 0D
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;SL45iv56
+;Анимированный Скринсейвер (корявенький)
+;Show startup pictures as ScreenSaver
+;(c) RizaPN
+;Version: 
+;PatchID: 1558
+;Details: https://patches.kibab.com/patches/details.php5?id=1558
+/*
+При заблокированной клавиатуре ме-е-едленно меняются картинки из графики начальной заставки. 
+
+Патч №020 с http://patch.oslik.ru/SL45_RU
+*/
+3B37F6: E6F95501F0C85C1C E6F83C4EDAC720D1 
+3B37FE: 00C0B89C EA00503A 
+
+27D120: FFFFFFFFFFFFFFFF D7403400F2FC1C3E 
+27D128: FFFFFFFFFFFFFFFF 08C146FC0A008D01 
+27D130: FFFFFFFFFFFFFFFF E00CD7403400F6FC 
+27D138: FFFFFFFFFFFFFFFF 1C3E008CE00CDB00 
+;------------------------- end -------------------------
+

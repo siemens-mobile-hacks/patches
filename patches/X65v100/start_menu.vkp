@@ -1,0 +1,56 @@
+;X65v100
+;Меню "Пуск"
+;"Start" menu
+;(c) KreN
+;(r) 1nvisible
+;Version: 1.2
+;PatchID: 2552
+;Details: https://patches.kibab.com/patches/details.php5?id=2552
+/*
+
+*/
+#pragma enable old_equal_ff
+0FC7100: 00B500F06EF81AD0B078002817D0F9F7
+0FC7110: C3FA3868002812D0B2680020F178F8F7
+0FC7120: FFFF7378002B0AD0013B34795C43F178
+0FC7130: 091901317079F268D218F8F7F1FF00BD
+0FC7140: 696848888205920DFF3AFFB50222A85E
+0FC7150: 262806D0252804D0292802D0FFBC07F0
+0FC7160: 68EF00F03EF8F9D0B1780029F6D02928
+0FC7170: 18D07178252804D0002900D109310139
+0FC7180: 03E0082900D109390131717014208019
+0FC7190: 316910A20132F9F767F8FFBC01B0F9F7
+0FC71A0: BFF8B0BD00F022F8F7E7FFB500F019F8
+0FC71B0: 0DD0B078002804D0B079002804D00020
+0FC71C0: 00E00120B070FFBD00F010F8FFBDF9F7
+0FC71D0: 13FAFFBDFFB500F004F801D00025B570
+0FC71E0: FFBDBFB51B48F9F70BFDBFBDFFB57078
+0FC71F0: 002815D008280DD0013880001C231B18
+0FC7200: F3181968002901D0884709E008A10958
+0FC7210: 884705E03820801900230022F9F71CF8
+0FC7220: 0020B070FFBD
+
+0FC7250: 0xB1C2D3E4,0x0100CD0B,0xA0FC7101,00000000,"\
+{patch=`MenuPusk` id=0100cd0b ver=1.2 cp=KreN}","\
+{sm `pic setup`}","\
+{3 sl `Y position` range=0..50 v=45}","\
+{4 b `space between menu` range=12..18 v=14}","\
+{5 b `space left` range=0..30 v=11}","\
+{8 i `pic background` v=1412}","\
+{12 i `start pic` v=1413}","\
+{endsm}","\
+{6 cb `CloseOnRunButton`}","\
+{16 ms timeclosemenu v=5000}","\
+{sm `own adresses`}","\
+{28 a `1st item`}","\
+{32 a `2nd item`}","\
+{36 a `3rd item`}","\
+{40 a `4th item`}","\
+{44 a `5th item`}","\
+{48 a `6th item`}","\
+{52 a `7th item`}","\
+{endsm}","\
+{56 sf Midlet mask=*.jar maxlen=56}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

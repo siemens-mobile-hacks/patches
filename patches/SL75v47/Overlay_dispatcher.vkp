@@ -1,0 +1,15 @@
+;SL75v47
+;Оверлей диспатчер
+;Overlay dispatcher
+;(c) -=(Kad)=-
+;(p) ferro
+;Version: 
+;PatchID: 7346
+;Details: https://patches.kibab.com/patches/details.php5?id=7346
+/*
+
+*/
+0A5bcf2: 2D68011C2B1CFF333133 C0460048804701E806A0
+
+;------------------------- end -------------------------
+

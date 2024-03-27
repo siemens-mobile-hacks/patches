@@ -1,0 +1,17 @@
+;C75v22
+;Замена обычного меню на нативное (быстрое)
+;NativeMenu instead of MainMenu
+;(c) SiNgle
+;(p) EVIL
+;Version: 1.0
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=8863
+;PatchID: 8847
+;Details: https://patches.kibab.com/patches/details.php5?id=8847
+/*
+При свернутой яве (java) не работает!
+*/
+; 0xA02C1D5D - Run Native Menu
+004A0FB4: 0xA032926D 0xA02C1D5D ; CKLK_CK_MAIN_MNU: центр джостика
+004A1634: 0xA032926D 0xA02C1D5D ; ELSE_MMENU_OPEN: Если ставиш на клавиши или в DSE (боковая и тд
+;------------------------- end -------------------------
+

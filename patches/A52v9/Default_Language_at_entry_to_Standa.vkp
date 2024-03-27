@@ -1,0 +1,17 @@
+;A52v9
+;Смена языка на русский при входе в телефонную книгу
+;Default Language at entry to Standard Book
+;(c) Matr!x
+;Version: 
+;PatchID: 4355
+;Details: https://patches.kibab.com/patches/details.php5?id=4355
+/*
+
+*/
+1F973E: DA9F5623 DAAB9862
+2B6298: FFFFFFFF E6FF1100
+2B629C: FFFFFFFF D7404B00
+2B62A0: FFFFFFFF F6FFFA30
+2B62A4: FFFFFFFF FA9F5623
+;------------------------- end -------------------------
+

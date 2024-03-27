@@ -1,0 +1,26 @@
+;CX75v25
+;Из любого места  попадаем в  меню
+;Goto menu anywhere
+;(c) Single
+;(r) (i) Andrey_ua
+;(p) Geka
+;Version: 2-MP
+;PatchID: 5470
+;Details: https://patches.kibab.com/patches/details.php5?id=5470
+/*
+Очень глючно попадает в меню в музыкальном плеере, тем более там не будет подсветки.
+*/
+7D6F6C: 224D321C893D6868 004988470138FCA0
+7D6FA0: 801969680138884202D1 C046004FB8473738FCA0
+
+;обновление библиотеки:
+
++0FC0000 
+#pragma enable old_equal_ff
+300: 004F3847,0xA0326BA7 ; f096: ShowMainMenu
+308: 004F3847,0xA032B0CF ; f097: ShowNativeMenu
+6C0: 004FF746,0xA8691FF9 ; v16: RamMenuAnywhere
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

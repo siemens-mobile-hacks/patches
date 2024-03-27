@@ -1,0 +1,22 @@
+;M75v25
+;Вибра в момент начала разговора
+;Vibrate shortly after connection
+;(c) SiNgle
+;Version: 
+;PatchID: 4142
+;Details: https://patches.kibab.com/patches/details.php5?id=4142
+/*
+
+*/
+02CAA1C: D4F15CE90028 0028DBF568ED
+#pragma enable old_equal_ff
+00A64F0: 00402DE9FF3F2DE90FE0A0E144F09FE5
+00A6500: 000050E30900001A0100A0E30FE0A0E1
+00A6510: 34F09FE5020050E30400001A2F00A0E3
+00A6520: 0210A0E30120A0E30FE0A0E11CF09FE5
+00A6530: 0FE0A0E118F09FE5000050E3FF3FBDE8
+00A6540: 0040BDE80CF09FE52F4555A03FFCAAA0
+00A6550: D84A2BA0833850A023AA2CA0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,41 @@
+;M65v58
+;Продвинутый индикатор сети v0.13b
+;Improved net Indicator v0.13b
+;(c) arsh0r
+;(p) starter48
+;Version: 0.13b
+;PatchID: 2718
+;Details: https://patches.kibab.com/patches/details.php5?id=2718
+/*
+Этот патч заменяет стандартный индикатор сети на 7 мини-индикаторов соседних сот.
+Используются следующие картинки:
+0x328 - 0x32E ;1-7 GSM900
+0x32F - 0x335 ;1-7 GSM1800
+0x336 - Слабый уровень сигнала
+Размеры картинок - 5x14
+Для нормальной работы требуется графический патч 143.
+Может конфликтовать с патчем "Лого профиля на главном экране".
+English:
+This patch displays 7 bars meaning the next 7 available GSM channels instead of the normal net indicator.
+Here is a table of the used images:
+0x328 - 0x32E ;1-7 GSM900
+0x32F - 0x335 ;1-7 GSM1800
+0x336 low signal
+the image size is 5x14 px
+You should install a graphic patch 143 to display correctly.
+May be incompatible with "Profile Logo On Mainscreen" patch.
+*/
+01635110: 00F0B8FA 51F0F6FF
+#pragma enable old_equal_ff
+01687100: F8B50F1C0025194C461F2088FF2801D2
+01687110: 174A01E0164A0732A079222819D33E28
+01687120: 01D2063217E0452801D2053213E04C28
+01687130: 01D204320FE0532801D203320BE05A28
+01687140: 01D2023207E0612801D2013203E06828
+01687150: 01D3074A0E32074B0436391C1B68301C
+01687160: 98470C340135072DCFDBF8BDACD06CA8
+01687170: 28030000787168A1855663A1
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

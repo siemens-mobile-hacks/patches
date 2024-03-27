@@ -1,0 +1,14 @@
+;SK65v50
+;Переключатель фона главного экрана
+;Wallpaper Cycle
+;(c) benj9
+;(p) ~Jhellico
+;Version: 0.91-MP
+;PatchID: 3977
+;Details: https://patches.kibab.com/patches/details.php5?id=3977
+/*
+
+*/
+02C5F06: 2421614312688A182132 C046,004FB847,0xA0FD932F
+;------------------------- end -------------------------
+

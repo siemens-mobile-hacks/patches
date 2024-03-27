@@ -1,0 +1,19 @@
+;S75v52
+;Редактирование сообщения "Добавить композиции в плейлист" в медиаплеере
+;Change "add files to playlist" message in mediaplayer
+;(c) johnnyz aka veritaz
+;(p) magicelf
+;Version: 
+;PatchID: 10224
+;Details: https://patches.kibab.com/patches/details.php5?id=10224
+/*
+Редактирование сообщения "Добавить композиции в плейлист." > "Добавьте композиции в плейлист!" в медиаплеере.
+
+
+Добавил скриншот
+*/
+;Редактирование сообщения "Добавить композиции в плейлист." > "Добавьте композиции в плейлист!" в медиаплеере.
+
+17F8ED5: D094D0BED0B1D0B0D0B2D0B8D182D18C20D0BAD0BED0BCD0BFD0BED0B7D0B8D186D0B8D0B820D0B220D0BFD0BBD0B5D0B9D0BBD0B8D181D1822E00 D094D0BED0B1D0B0D0B2D18CD182D0B520D0BAD0BED0BCD0BFD0BED0B7D0B8D186D0B8D0B820D0B220D0BFD0BBD0B5D0B9D0BBD0B8D181D1822100
+;------------------------- end -------------------------
+

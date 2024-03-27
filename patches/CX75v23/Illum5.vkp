@@ -1,0 +1,17 @@
+;CX75v23
+;Подсветка с шагом 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1823
+;Details: https://patches.kibab.com/patches/details.php5?id=1823
+/*
+
+*/
+03B7DAC: 0A 05 ; 05 или любая цифра в HEX
+03B7DBC: 0A 05 ; 05 или любая цифра в HEX
+
+;------------------------- end -------------------------
+

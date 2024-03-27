@@ -1,0 +1,15 @@
+;M55v10
+;Перенос файла graphcach (316кб) на Диск А
+;Move graphcach (316kb) to disk A
+;(c) AlexSid
+;(p) Phoner
+;Version: 
+;PatchID: 1419
+;Details: https://patches.kibab.com/patches/details.php5?id=1419
+/*
+Патч нужен для установки анимации на включение/выключение с увеличенным диском.
+English: Patch is used for setting startup/shutdown animation when disk is increased.
+*/
+45714A: 42 41
+;------------------------- end -------------------------
+

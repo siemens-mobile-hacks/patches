@@ -1,0 +1,34 @@
+;EL71v38
+;Изменить позицию и шрифт имени оператора в заставке
+;Change position / font of providername in screensaver
+;(c) arsh0r
+;(r) SiNgle
+;(p) Bueffel
+;Version: 
+;PatchID: 5637
+;Details: https://patches.kibab.com/patches/details.php5?id=5637
+/*
+
+*/
+;Analog Clock
+0870918: 00 xx ; x-start
+087091A: 2301 yyyy ; y-start
+087091C: F0 xx ; x-stop
+087091E: 3F01 yyyy ; y-stop
+0870920: 05 ff ; font size
+
+; Digital Clock
+0870934: 00 xx ; x-start
+0870936: 2301 yyyy ; Y-start
+0870938: F0 xx ;x-stop
+087093A: 3F01 yy ; y-stop
+087093C: 05 ff ; font size
+
+; Picture
+08708FC: 00 xx ; x-start
+08708FE: 2301 yyyy ; y-start
+0870900: F0 xx ; x-stop
+0870902: 3F01 yyyy ; y-stop
+0870904: 05 ff ; font size
+;------------------------- end -------------------------
+

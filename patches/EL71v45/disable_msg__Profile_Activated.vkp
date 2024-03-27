@@ -1,0 +1,14 @@
+;EL71v45
+;Убрать сообщение "Профиль активирован",когда подключается гарнитура
+;disable msg. "Profile Activated" when headset conected
+;(c) shadows
+;Version: 
+;PatchID: 7968
+;Details: https://patches.kibab.com/patches/details.php5?id=7968
+/*
+; BUG : меню выбора профиля само не закрывается, нужно жать "назад"
+;;pattern2  = 3C 60 00 21 20 1C +6
+*/
+06FFC32: 01F144EF 001C001C
+;------------------------- end -------------------------
+

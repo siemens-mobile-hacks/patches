@@ -1,0 +1,14 @@
+;SL75v52
+;Повышенный приоритет для MMI задач
+;Higher MMI Prio
+;(c) benj9
+;(p) kiREALlov
+;Version: 
+;PatchID: 7911
+;Details: https://patches.kibab.com/patches/details.php5?id=7911
+/*
+
+*/
+02888A0: 10 02
+;------------------------- end -------------------------
+

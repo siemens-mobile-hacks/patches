@@ -1,0 +1,15 @@
+;S75v47
+;Изменить частоту обновления OverLay
+;Change DevMenu Overlay Display Refresh Rate
+;(c) benj9
+;(r) KIBER-DEMON
+;(p) SimaFish
+;Version: 
+;PatchID: 8549
+;Details: https://patches.kibab.com/patches/details.php5?id=8549
+/*
+
+*/
+060D51A: 36 6C ; internal timer ~ miliseconds * 216.7 / 1000
+;------------------------- end -------------------------
+

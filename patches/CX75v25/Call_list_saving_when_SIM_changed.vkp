@@ -1,0 +1,16 @@
+;CX75v25
+;Сохранение списков при смене SIM карты
+;Call list saving when SIM is changed
+;(c) SiNgle
+;(p) Grizzzzly
+;Version: 
+;PatchID: 3552
+;Details: https://patches.kibab.com/patches/details.php5?id=3552
+/*
+Сохраняются списки при смене SIM карты.
+
+
+*/
+02A755E: F6F118EA 00200020
+;------------------------- end -------------------------
+

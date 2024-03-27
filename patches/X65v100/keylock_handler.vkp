@@ -1,0 +1,15 @@
+;X65v100
+;Обработчик блокировки клавиатуры
+;keylock_handler
+;(c) Geka
+;Version: 0.2
+;PatchID: 6528
+;Details: https://patches.kibab.com/patches/details.php5?id=6528
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=keylock_handler.zip
+
+/*
+при блокировке и разблокировке клавиатуры профиль сменяется на заданный в конфиге
+*/
+;качаем приложенный файл
+;------------------------- end -------------------------
+

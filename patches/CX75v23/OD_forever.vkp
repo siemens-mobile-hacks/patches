@@ -1,0 +1,14 @@
+;CX75v23
+;Открыть диски навсегда
+;Open Disks forever
+;(c) Skylord
+;(p) Smelter
+;Version: 
+;PatchID: 1837
+;Details: https://patches.kibab.com/patches/details.php5?id=1837
+/*
+
+*/
+08D03A8: 02 03
+;------------------------- end -------------------------
+

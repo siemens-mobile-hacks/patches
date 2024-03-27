@@ -1,0 +1,15 @@
+;S75v47
+;Автоматическое открытие USSD сообщений
+;Auto Show USSD
+;(c) Evgr
+;(r) VoVkA
+;(p) dimonp25
+;Version: 0.1
+;PatchID: 8664
+;Details: https://patches.kibab.com/patches/details.php5?id=8664
+/*
+
+*/
+03022be: 42f0abfb fcf745f8
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;C65v56
+;Отключить Логгинг MMI
+;Disable MMI Logging
+;(c) SiNgle
+;Version: 
+;PatchID: 3852
+;Details: https://patches.kibab.com/patches/details.php5?id=3852
+/*
+Ускоряет работу телефона
+*/
+08BD169: B5 47 ; speeds up phone operation
+;------------------------- end -------------------------
+

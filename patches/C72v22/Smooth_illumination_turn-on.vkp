@@ -1,0 +1,15 @@
+;C72v22
+;Плавное включение подсветки
+;Smooth illumination turn-on
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 5846
+;Details: https://patches.kibab.com/patches/details.php5?id=5846
+/*
+
+*/
+;* Плавное включение подсветки ** Smooth illumination turn-on * © SiNgle
+0BEC822: 0022 664A
+;------------------------- end -------------------------
+

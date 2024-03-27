@@ -1,0 +1,16 @@
+;SL45iv56
+;Краткое нажатие "#" для разблок.лавиш, стрелка ВВЕРХ для голосового набора при блоке
+;Use short press of # to unlock key, UP arrow for VoiceDial when key-locked
+;(c) RizaPN
+;Version: 
+;PatchID: 1929
+;Details: https://patches.kibab.com/patches/details.php5?id=1929
+/*
+Краткое нажатие "#" для разблокировки клавиш, стрелка ВВЕРХ для голосового набора при заблокированной клавиатуре.
+*/
+0x3B07C4: 1E14
+0x3B07C7: 0304
+0x3B07CA: 1F21
+0x3B07CE: DAA2184C48402D10 0D03DADAECF60D0F
+;------------------------- end -------------------------
+

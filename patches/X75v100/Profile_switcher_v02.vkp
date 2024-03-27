@@ -1,0 +1,18 @@
+;X75v100
+;Переключатель профилей
+;Profile switcher
+;(c) Geka
+;(p) -=(Kad)=-
+;Version: 0.2
+;PatchID: 6540
+;Details: https://patches.kibab.com/patches/details.php5?id=6540
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Profile_switcher_v02.zip
+
+/*
+
+В настройке номер профиля в который нужно переключаться, уровень заряда и параметры звучка.
+
+*/
+Качаем архив
+;------------------------- end -------------------------
+

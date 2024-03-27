@@ -1,0 +1,25 @@
+;S75v22
+;Отключить появление окна "Помощника" при старте телефона
+;Disable "Assistant" at startup
+;(c) SiNgle
+;Version: 
+;PatchID: 1772
+;Details: https://patches.kibab.com/patches/details.php5?id=1772
+/*
+Отключение появления окна "Помощника" при включении телефона с новой SIM или после сброса.
+
+ВНИМАНИЕ!
+Возможны большие проблемы с сетевыми настройками после установки этого патча!
+См. http://forum.siemens-club.org/viewtopic.php?TopicID=55365&page=27#416132.
+Не следует ставить этот патч, если вы используете сеть!
+English:
+
+DON'T INSTALL this patch if you use GPRS and other connections!
+*/
+;S75v22 - Отключить появление окна "Помощника" при старте телефона
+;S75v22 - Disable "Assistant" at startup
+;(c) SiNgle
+
+02F3B2F: D1 D0
+;------------------------- end -------------------------
+

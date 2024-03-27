@@ -1,0 +1,33 @@
+;S68v47
+;Черный список
+;Black list
+;(c) ThE TrIFoN, SiNgle
+;(r) kibab
+;(p) klaud,grizzzzly
+;Version: 
+;PatchID: 6799
+;Details: https://patches.kibab.com/patches/details.php5?id=6799
+/*
+Настройка производится путём определения номера группы, звонки из которой должны игнорироваться. Игнор происходит путём бросания трубки. Звонок записывается в принятые вызовы.
+
+
+*/
+Черная группа по умолчанию - Хобби 2
+На черную группу и абонента не должно стоять никаких мелодий!!!
+
+
+;008FFD2 0B 0N ; N-черная группа 00- Нет группы, 03-Семья, 04-Друзья и так далее по возрастающей 
+; По умолчанию в патче черная группа - Хобби 2
+; N means Black Group, 00-No group, 03-Family, 04-Friends and so on
+; By default the Black Group is Hobby 2
+ номерами
+
+
+
+082CA94: 201CC5F198E9 002002F098F9
+03289CE: 1BF7ECEA 67F5FFFA
+008FFD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFB50B2803D10020034B984703E0FFBC
+008FFE0: FFFFFFFFFFFFFFFFFFFFFFFF B3F1E2EF00BDFFBDCBED82A0
+
+;------------------------- end -------------------------
+

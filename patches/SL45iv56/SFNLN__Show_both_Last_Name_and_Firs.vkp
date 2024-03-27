@@ -1,0 +1,33 @@
+;SL45iv56
+;SFNLN. Показывать имя и фамилию при входящем звонке
+;SFNLN. Show both Last Name and First Name for incoming call
+;(c) Lbuczko
+;(r) DeadManS, Rizapn
+;Version: 0.1
+;PatchID: 2647
+;Details: https://patches.kibab.com/patches/details.php5?id=2647
+/*
+based on SNN patch, so if you want to use it
+please uninstall this patch.
+
+Release : January 17th, 2006
+
+*/
+0x3AFC56: DAE6B2FA DAE0C0CB
+0x40CBC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAE6B2FAE6FDBE30E6FE063AE6FF3700
+0x40CBD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E082882088F088E0D7400800984DF034
+0x40CBE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF CC00CC00CC00CC00BB0D3DF6DC4FB95E
+0x40CBF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E00CE6FD3500E6FE6500E08FDAD658A3
+0x40CC00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0806DB00E7F9000041892D05CC00CC00
+0x40CC10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DC4FB98E08E1CB00FFFFFFFFFFFFFFFF
+
+; If you want to have up only last name please uncheck this, but in lost call
+; you have only last name.
+;8378a: 2c 0A
+;If you want to change font style unmark this
+;0x40CBD1: 42 x2 ; x is the code of font style - details in SXS patch
+;0x40CBFB: 8F zF ; z is height of font depends from font style
+
+;locale=Polish_Poland.1250 
+;------------------------- end -------------------------
+

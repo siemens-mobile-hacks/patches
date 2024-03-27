@@ -1,0 +1,16 @@
+;A65v17
+;Автоматическое включение телефона по будильнику
+;Auto on by Alarm
+;(c) SiNgle, !Freeman!
+;(r) Snowm@n (за портирование на C60)
+;(p) Ganster41
+;Version: 
+;PatchID: 6609
+;Details: https://patches.kibab.com/patches/details.php5?id=6609
+/*
+Телефон включается при срабатывании будильника без подтверждения. Мелодия/вибра при этом не срабатывают!
+English:The Telephone is switched on by alarm clock without acknowledgement. The tune/vibration herewith do not operate!
+*/
+246268: 0d42 0d27
+;------------------------- end -------------------------
+

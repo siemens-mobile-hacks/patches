@@ -1,0 +1,14 @@
+;EL71v38
+;Разрешить выбор Диапазона
+;Enable Band Selection
+;(c) Bennie
+;(p) Bueffel
+;Version: 
+;PatchID: 5635
+;Details: https://patches.kibab.com/patches/details.php5?id=5635
+/*
+
+*/
+083B658: 0502 F901
+;------------------------- end -------------------------
+

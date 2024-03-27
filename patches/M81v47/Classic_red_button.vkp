@@ -1,0 +1,14 @@
+;M81v47
+;Классическая функция красной кнопки
+;Classic red button
+;(c) Rst7/CBSIE
+;(p) Barracuda
+;Version: 
+;PatchID: 9028
+;Details: https://patches.kibab.com/patches/details.php5?id=9028
+/*
+
+*/
+0096DCE0: 94 96
+;------------------------- end -------------------------
+

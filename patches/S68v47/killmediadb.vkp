@@ -1,0 +1,21 @@
+;S68v47
+;Убить процесс обновления медиабазы
+;Kill MediaDB update process
+;(c) captain_SISka
+;(r) dimonp25 за этот  телефон-квест
+;Version: 
+;PatchID: 9138
+;Details: https://patches.kibab.com/patches/details.php5?id=9138
+/*
+убивает процесс обновления медиабазы.
+должен фиксить PickOff по адресу a01b9720 cepid 0x4223
+(просто убиваем cepid 0x4223).
+*/
+; S68v47
+; kill media db process
+;(c) captain_SISka
+;Version: 0.1
+
+02EE05E: 6A48 80BD
+;------------------------- end -------------------------
+

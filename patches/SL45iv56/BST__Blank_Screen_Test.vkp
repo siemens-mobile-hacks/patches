@@ -1,0 +1,29 @@
+;SL45iv56
+;BST. Тест пустого экрана
+;BST. Blank Screen Test
+;(c) RizaPN
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=3434
+;PatchID: 1964
+;Details: https://patches.kibab.com/patches/details.php5?id=1964
+/*
+Патч не добавляет внешних изменений, он просто "вставляет"
+пустой экран перед отображением чего-либо в режиме ожидания
+(надеюсь, это сохранит заряд батареи, т.к. при пустом
+экране патч пропускает много процедур).
+
+English: No difference will be notice, it just insert
+a blank screen test before displaying something in the idle screen
+(hope it can save battery more, because it will skip some procedure
+when the screen is blanked).
+
+
+Release: November 12, 2003
+*/
+0x3B36C0: DAE5024B FAC710DD
+
+0x27DD10: FFFFFFFFFFFFFFFF DAC0BCCB3D02FADB
+0x27DD18: FFFFFFFFFFFFFFFF 583ADAE5024BFADB
+0x27DD20: FFFFFFFFFFFFFFFF C436FFFFFFFFFFFF
+;------------------------- end -------------------------
+

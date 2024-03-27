@@ -1,0 +1,31 @@
+;S7Cv47
+;NativeMenu instead of Main menu
+;NativeMenu instead of Main menu
+;(c) 42Gzb
+;(p) BingK(binghelingxi)
+;Version: 1.1
+;PatchID: 8981
+;Details: https://patches.kibab.com/patches/details.php5?id=8981
+/*
+
+
+*/
+;NativeMenu instead of Main menu
+;(c) 42Gzb
+;(p) BingK(binghelingxi)
+;S7Cv47
+
++0459F10
+00: E16134A0 0xA02D31DB
+0C: 9D 72
+;2C: 7C 80; 7C: icon of main menu, 80: icon of change
+30: A200 0D14
+34: A200 0D14 
+40: 3205 8923 
+44: 3205 8923 
+5C: 3B 1F 
+60: 02 00 
+64: 8C6FA1A0A46FA1A0 0000000000000000
++0
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;X75v100
+;Графический индикатор температуры аккумулятора
+;Accu temp graffic indicator
+;(c) Geka
+;(p) -=(Kad)=-
+;Version: 
+;PatchID: 6542
+;Details: https://patches.kibab.com/patches/details.php5?id=6542
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Accu_temp_graffic_indicator.zip
+
+/*
+В настройке расположение на экране и номер первой картинки
+*/
+Качаем аттач
+;------------------------- end -------------------------
+

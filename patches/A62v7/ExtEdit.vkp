@@ -1,0 +1,16 @@
+;A62v7
+;Сделать доступным редактирование расширений файлов с телефона
+;Edit File Extensions with Phone
+;(c) Ganster41
+;Version: 
+;PatchID: 9405
+;Details: https://patches.kibab.com/patches/details.php5?id=9405
+/*
+
+*/
+;A62 v7
+;Сделать доступным редактирование расширений файлов с телефона
+;Портировал Ganster41
+7DCB42: DAA796A9 50445055
+;------------------------- end -------------------------
+

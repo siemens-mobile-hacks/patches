@@ -1,0 +1,15 @@
+;M81v47
+;Отключить изменение громкости звонка на главном экране
+;Disconnect change to loudness bell on mainscreen
+;(c) Zhek@
+;(p) Barracuda
+;Version: 
+;PatchID: 9045
+;Details: https://patches.kibab.com/patches/details.php5?id=9045
+/*
+
+*/
+03386D8: 50F73CFD c046c046
+03386E4: 50F736FD c046c046
+;------------------------- end -------------------------
+

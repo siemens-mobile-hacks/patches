@@ -1,0 +1,16 @@
+;M75v25
+;Динамическая замена имени оператора
+;Dynamic replacing  of Provider name
+;(c) avkiev
+;(r) Bennie, arsh0r, Acid
+;(p) Grizzzzly
+;Version: 10-MP
+;PatchID: 4691
+;Details: https://patches.kibab.com/patches/details.php5?id=4691
+/*
+См. описание в патче для X65v100.
+
+*/
+049F010: 0xA08366BB 0xA0FC1B01
+;------------------------- end -------------------------
+

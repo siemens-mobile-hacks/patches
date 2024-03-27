@@ -1,0 +1,59 @@
+;SL45iv56
+;USI. Индикатор количества непрочитанных SMS
+;USI. (just another) Unread SMS Indicator
+;(c) RizaPN
+;Version: 3
+;PatchID: 1874
+;Details: https://patches.kibab.com/patches/details.php5?id=1874
+/*
+Добавляет число непрочитанных SMS на soft-клавишу
+v3->Гудок и/или вибра, пока иконка нормальная
+v3->Выбирается через меню Приложение (последний патч №103) (Профиль 2, 1 пункт)
+
+
+Created: July 06, 2004
+Updated: July 22, 2004 (v3)
+
+Патч №172 (обновление 1) с http://patch.oslik.ru/SL45_RU
+*/
+0x20E2B0: DAC0A4DF DAC700E7
+
+0x27E700: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC0A4DFD4D00200D4C00400DC4DD44C
+0x27E710: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3A008840E6FC1C0046F4264E2D0B46F4
+0x27E720: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3D4E2D0846F43E4E2D05E6FC010046F4
+0x27E730: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 364E3D11D7400D00F2F4D829E0A2F6F4
+0x27E740: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0EFE5B22F2F10CFE8810F2FE0EFE2D01
+0x27E750: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB0598E0BB039840FAC730E606FE0102
+0x27E760: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FD450088C0DAC1EC2298C008C6CB00
+
+0x27E716: 1C 01 ; x-позиция первой цифры                                                 
+;0x27E72C: 01 xx ; x-позиция первой цифры, если на кнопке что-то ещё (+alarm,missedcall)  
+;0x27E762: 45 yy ; y-позиция цифр
+;0x27E74F: 01 00 ; использовать для показа лидирующего нуля
+
+;Если не хотите, чтобы был гудок и/или вибра, пока иконка нормальная
+;раскомментируйте:
+;0x27E758: FAC7 DB00
+
+;освобождайте - из старого патча SCI (№116)
+0x27E630: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7403600F2F16C099AF12600E6F3143A
+0x27E640: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6F5370026F4254E2D0728412D0526F4
+0x27E650: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 10002D0228453D15E6F11001DC45A843
+0x27E660: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D034980BD110D01F0412991AD0BF193
+0x27E670: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2981DAC784E6E6FC3900DAC31400FAC3
+0x27E680: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 6C02E004DC45B843DB00FFFFFFFFFFFF
+
+;0x27E678: 39 xx ; xx = sound ID
+;0x27E65A: 10 nn ; nn = номер гудка beep/vibra который вы хотите повторить (10 = 16 раз)
+;0x27E65B: 01 pp ; pp = период между гудком (01 is around 50s - 1 minutes)
+
+;Если не нужно выбираемое, раскомментировать:
+;0x27E63A: 26 00
+
+;Если не нужна вибра, раскоментировать:
+;0x27E67E: FAC3 DB00
+
+;Если нужно только гудок/вибра без цифр, раскомментируйте
+;0x27E712: 8840E6FC FAC730E6
+;------------------------- end -------------------------
+

@@ -1,0 +1,40 @@
+;S75v47
+;Постоянная подсветка при зарядке выключенного телефона с регулированием яркости
+;The neverending light in offline charge with brightness adjustment
+;(c) Evgr
+;Version: 
+;PatchID: 10553
+;Details: https://patches.kibab.com/patches/details.php5?id=10553
+/*
+Хорош в сочетании с гарнитурой IMS-700 и патчем http://patches.kibab.com/patches/details.php5?id=10529
+*/
+
+/*
+конфликтует с "Включать подсветку при зарядке выключенного телефона по заданной кнопке"
+in conflict with "Switch on light in offline charge by custom key"
+*/
+
+028817A: FF23963398426DD0CF4B C046004B9847,0xA13D3371
+0288230: 032063F1BAEEF8E7 00488047,0xA13D33CB
+
+#pragma enable old_equal_ff
+13D3370: FF239633984202D17046DE300047FF23
+13D3380: 9433984208D0034B7847000004E08EE2
+13D3390: 1EFF2FE1625600000698124C25780D28
+13D33A0: 04D00E2808D07446E0342047642D01DB
+13D33B0: 642500E0013504E0002D01DC002500E0
+13D33C0: 013D25707146AE31084700B500200121
+13D33D0: 044A1278642A00DD6422002308DF10BC
+13D33E0: 0A3C2047,0xA8EA1440
+#pragma disable old_equal_ff
+
+; увеличиваем яркость
+13D339E: 0D 0D ; клавиша громкость выше 
+13D33B4: 01 01 ; шаг 1% 
+
+; уменьшаем яркость
+13D33A2: 0E 0E ; клавиша громкость ниже 
+13D33C0: 01 01 ; шаг 1% 
+
+;------------------------- end -------------------------
+

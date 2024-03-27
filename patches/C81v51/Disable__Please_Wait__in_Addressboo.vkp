@@ -1,0 +1,14 @@
+;C81v51
+;Отключить "Подождите" в Адреске
+;Disable "Please Wait" in Addressbook
+;(c) 1nvisible
+;(p) den11111
+;Version: 
+;PatchID: 7799
+;Details: https://patches.kibab.com/patches/details.php5?id=7799
+/*
+
+*/
+060400C: 96A60DFB 0000A0E1
+;------------------------- end -------------------------
+

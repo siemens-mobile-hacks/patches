@@ -1,0 +1,15 @@
+;S68v52
+;Don't Cut Numbers in Addressbook
+;Don't Cut Numbers in Addressbook
+;(c) BingK(binghelingxi), 1nvisible  
+;(p) Hotter 
+;Version: 
+;PatchID: 10265
+;Details: https://patches.kibab.com/patches/details.php5?id=10265
+/*
+
+*/
+04FD3A7: 9A EA ; Addressbook,(c)1nvisible
+0517D27: 9A EA ; Phonebook,(c)BingK(binghelingxi)
+;------------------------- end -------------------------
+

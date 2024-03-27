@@ -1,0 +1,24 @@
+;S55v20
+;Яркость подсветки с шагом 5%
+;Changing illumination by 5%
+;(c) SiNgle
+;(p) ValeraVi
+;Version: 
+;PatchID: 4785
+;Details: https://patches.kibab.com/patches/details.php5?id=4785
+/*
+
+*/
+27DD76: 06FC0A00 06FC0500
+27DDAC: 26FC0A00 26FC0500
+
+61753E: E0AC E05C
+617552: F441AE35 F4412237
+
+617570: E0AC E05C
+617584: F441AE35 F4412237
+
+;brightness codes:
+1AF722: 676765722056312E30390044455354524F59454400 000103081012161E242B3034384044485054586064
+;------------------------- end -------------------------
+

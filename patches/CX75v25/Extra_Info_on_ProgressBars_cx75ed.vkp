@@ -1,0 +1,25 @@
+;CX75v25
+;Дополнительная Информация на Прогрессбарах x75 edition
+;Extra Info on ProgressBars x75 edition
+;(c) 1nvisible
+;(r) Kamikadze!
+;(p) NForce
+;Version: 2av-MP
+;PatchID: 6413
+;Details: https://patches.kibab.com/patches/details.php5?id=6413
+/*
+Показывает проценты на прогрессбарах, а также данные о принимаемых и передаваемых файлах. Нормально отображаются проценты и вес при приема данных!
+English:
+Shows percents on progressbars and info on files being sent/received Correct filesize and percents are showed when receiving data!
+
+*/
+04AD3C8: 24A12EA000000000 0xA0FC7D35,0xA0FC7D25
+04B89A0: 0000000000000000 0xA0FC7D11,0xA0FC7D01
+
+08ABB08: 216B000C4143E06A87F1C4EF 004FB847,0xA0FC7D51,C046C046
+08ABBC0: 0C20185E231C4BF7 004FB847,0xA0FC7DD9
+
+0FC7D4C: FFFFFFFF 0xA851D898
+
+;------------------------- end -------------------------
+

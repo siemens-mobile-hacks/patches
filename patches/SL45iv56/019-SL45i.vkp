@@ -1,0 +1,54 @@
+;SL45iv56
+;Присваивание различных мелодий разным входящим номерам
+;Assign Any Ringtone to Any Listed Phone Number
+;(c) RizaPN
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1556
+;PatchID: 1553
+;Details: https://patches.kibab.com/patches/details.php5?id=1553
+/*
+Патч №019 с http://patch.oslik.ru/SL45_RU
+*/
+;Сначала установите для VIP-группы 1-й дискретный звонок: 
+;Меню-Аудио-Мелодии-VIP-Дискретный-1-ОК 
+;Menu - Audio - Melodies - VIP - Discreet - 1 - OK 
+;Иначе работать не будет! 
+
+;Добавьте в конце имени абонента соответствующий символ. 
+;Таблица ниже. 
+
+3EC1F2: DAF1909E DAC780D0 
+3EFDAC: DAF1909E DAC780D0 
+
+27D080: FFFFFFFFFFFFFFFF DAF1909E8860E6F6 
+27D088: FFFFFFFFFFFFFFFF B010D7401F039996 
+27D090: FFFFFFFFFFFFFFFF 2D0B41983DFA26F6 
+27D098: FFFFFFFFFFFFFFFF B110D7403400F6F6 
+27D0A0: FFFFFFFFFFFFFFFF 1A3EE6F421000D01 
+27D0A8: FFFFFFFFFFFFFFFF E0049860DB00CC00 
+
+27D0B0: FFFFFFFFFFFFFFFF 23405C26A72E2C3F 
+27D0B8: FFFFFFFFFFFFFFFF 212B2D3A22273B2A 
+27D0C0: FFFFFFFFFFFFFFFF 2F28293C3D3E2520 
+27D0C8: FFFFFFFFFFFFFFFF A324A5C9E9E8F6F1 
+27D0D0: FFFFFFFFFFFFFFFF F2C6D8C5E6F8E5DC 
+27D0D8: FFFFFFFFFFFFFFFF FCF9C4E4E0000000 
+
+4646F2: E112F06D DAC7F0D0 
+
+27D0F0: FFFFFFFFFFFFFFFF E112F06D46F61B00 
+27D0F8: FFFFFFFFFFFFFFFF 3D04D7403400F2F6 
+27D100: FFFFFFFF 1A3EDB00 
+
+;Мелодии и соответствующие им символы: 
+
+;Standard (1-5): # @ \ & § (key #) 
+;Classical (1-18 ): . , ? ! + - : " ' ; (key 0) * / ( ) < = > % (key *) 
+;Traditional (1-4): space Ј $ Ґ (key 1) 
+;Discreet (1-6): Й й и (key 3) ц с т (key 6) 
+;Pop music (1-6): Ж Ш Е ж ш е (key 9) 
+
+;При желании измените таблицу соответствий, внося изменения 
+;начиная с адреса 27D0B0.
+;------------------------- end -------------------------
+

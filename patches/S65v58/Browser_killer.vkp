@@ -1,0 +1,15 @@
+;S65v58
+;Отключение браузера
+;Browser killer
+;(c) Zhek@
+;(p) Виктор89
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9590
+;PatchID: 8583
+;Details: https://patches.kibab.com/patches/details.php5?id=8583
+/*
+отключение браузера добавляет ~1Mb свободной оперативной памяти
+*/
+b6f898: FEF75ffB C046C046
+;------------------------- end -------------------------
+

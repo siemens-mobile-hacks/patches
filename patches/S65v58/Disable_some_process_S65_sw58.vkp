@@ -1,0 +1,27 @@
+;S65v58
+;Отключение некоторых процесов
+;Disable some process
+;(c) PICAS
+;(p) LourenS65
+;Version: 
+;PatchID: 9897
+;Details: https://patches.kibab.com/patches/details.php5?id=9897
+/*
+
+*/
+;Отключение WapPush Client
+B357DA: 03F721FD c046c046; WAP_PUSH_CLIENT
+
+;Отключение MMS Client
+B3582E: 03F7F4FA c046c046; MMS_CLIENT_CORE_PROCESS + adds 120020 bytes to PermMem
+
+;Отключение процессов
+B357A4: 22F007FA c046c046; LOG_PROCESS
+B357A8: 19F0B2FC c046c046; MMAL_PROCESS
+
+;Вроде отключение синхронизации(Не проверял)
+B3583E: 03F146FB c046c046; SYNCML_DM_PROCESS
+B35842: 03F1C2FA c046c046; SYNCML_DM_PROCESS
+B35846: 03F1D0F9 c046c046; SYNCML_COMM_PROCESS
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;S68v47
+;Мегагромкость
+;Megaloudness
+;(c)  SiNgle
+;(p) Shadow_ru
+;Version: 
+;PatchID: 6567
+;Details: https://patches.kibab.com/patches/details.php5?id=6567
+/*
+
+*/
+01B5CD8: 2600C4E5 D3FFFFEA 
+01B5C30: 6C3DA0E30320A0E3 2600C4E52A0000EA 
+01B5C2C: 030000EF 030040E2 ;уровень 3 
+;01B5C2C: 030000EF 040040E2 ;уровень 4 
+;01B5C2C: 030000EF 050040E2 ;уровень 5 
+;01B5C2C: 030000EF 060040E2 ;уровень 6 
+;01B5C2C: 030000EF 070040E2 ;уровень 7 
+
+;------------------------- end -------------------------
+

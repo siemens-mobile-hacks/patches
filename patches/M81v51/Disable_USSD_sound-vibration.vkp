@@ -1,0 +1,15 @@
+;M81v51
+;Отключить звук\вибру USSD сообщения
+;Disable USSD sound\vibration
+;(c) ThE TrIFoN
+;(r) -=(Kad)=-
+;(p) Siemann
+;Version: 
+;PatchID: 6926
+;Details: https://patches.kibab.com/patches/details.php5?id=6926
+/*
+Отключение звука и вибры в USSD
+*/
+029B8F2: 0F 21
+;------------------------- end -------------------------
+

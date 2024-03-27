@@ -1,0 +1,436 @@
+;S75v40
+;Библиотека функций
+;Functions Library
+;(c) avkiev
+;Version: 061112
+;PatchID: 3724
+;Details: https://patches.kibab.com/patches/details.php5?id=3724
+/*
+Этот патч сам по себе ничего не делает. Он предназначен для облегчения создания и портирования других патчей.
+В патче собрано 4096 самых часто-используемых функций, переменных и констант.
+После применения патча для вызова (например) функции GetWeek достаточно написать "SWI 181".
+Для получения в R0 адреса переменной RamCap нужно будет написать "SWI 200". На любом телефоне и на любой прошивке.
+После портирования этого патча на определенную прошивку - для портирования других патчей
+в большинстве случаев достаточно будет поменять только место врезки.
+Для портирования этого патча на другие прошивки используйте Smelter - Инструменты - Библиотека функций.
+
++RamScreenBrightness
+
+English:It is auxiliary patch. It consist of 4096 most useable function, variables and constants.
+After applying this patch for calling (for example) GetWeek - you should write "SWI 181".
+For getting in R0 address of variable RamCap you sould write "SWI 200". In any mobile. In any firmware.
+After porting this patch to some firmware - in most cases for porting another patches you just need to change a EntryPoint.
+For porting this patch use Smelter - Tools - Function library.
+
+
+*/
++0074000
+#pragma enable old_equal_ff
+0000: 0xA00020F0   ; f000: SWI_0
+0004: 0xA00020F0   ; f001: SWI_1
+0008: 0xA00020F0   ; f002: SWI_2
+000C: 0xA00020F0   ; f003: SWI_3
+0010: 0xA00020F0   ; f004: SWI_4
+0014: 0xA026DAE1   ; f005: DecToHex
+0018: 0xA01AA3FC   ; f006: GetAkku
+001C: 0xA006F061   ; f007: GetLP
+0020: 0xA01B4958   ; f008: SetIllumination
+0024: 0xA0232960   ; f009: SwitchPhoneOff
+;
+0028: 0xA025127C   ; f010: fopen
+002C: 0xA025133C   ; f011: fread
+0030: 0xA025146C   ; f012: fwrite
+0034: 0xA02511D0   ; f013: fclose
+0038: 0xA0251200   ; f014: fflush
+003C: 0xA0251230   ; f015: lseek
+0040: 0x00000000   ; f016: mkdir
+0044: 0xA006F001   ; f017: OpenReadCloseFile
+0048: 0x00000000   ; f018: GetFileAttrib
+004C: 0x00000000   ; f019: SetFileAttrib
+;
+0050: 0xA0094B5C   ; f020: malloc
+0054: 0xA0094BB8   ; f021: mfree
+0058: 0xA0FC4385   ; f022: sPrintf
+005C: 0xA0FC5DF1   ; f023: strcat
+0060: 0xA0FC5E11   ; f024: strchr
+0064: 0xA0FC5E34   ; f025: strcmp
+0068: 0xA0FC5ED1   ; f026: strcopy
+006C: 0xA0FC5F51   ; f027: StrLen
+0070: 0xA01F5BCD   ; f028: wsAppendChar
+0074: 0xA01F5B81   ; f029: wsInsertChar
+;
+0078: 0x00000000   ; f030: GetPITaddr
+007C: 0x00000000   ; f031: DrawMainScreen
+0080: 0x00000000   ; f032: DrawScreenSaver
+0084: 0xA0975E5F   ; f033: GetImgHeight
+0088: 0xA0975E6F   ; f034: GetImgWidth
+008C: 0xA029B7E1   ; f035: DrawImg
+0090: 0x00000000   ; f036: DrawImage2
+0094: 0xA029ACDB   ; f037: DrawCanvas
+0098: 0xA0A0206D   ; f038: DrawImgBW
+009C: 0x00000000   ; f039: AddIconToIconbar
+;
+00A0: 0x00000000   ; f040: getEELiteMaxID
+00A4: 0x00000000   ; f041: getEEFullMaxID
+00A8: 0x00000000   ; f042: GetEELiteBlockAddress
+00AC: 0x00000000   ; f043: getEELiteBlockSizeVersion
+00B0: 0x00000000   ; f044: getEEFullBlockSizeVersion
+00B4: 0x00000000   ; f045: StartWriteEELiteBlock
+00B8: 0x00000000   ; f046: FinishWriteEELiteBlock
+00BC: 0x00000000   ; f047: DeleteEELiteBlock
+00C0: 0x00000000   ; f048: WriteEELiteBlock
+00C4: 0xA0FC6099   ; f049: strrchr
+;
+00C8: 0xA0280D20   ; f050: PlaySound
+00CC: 0xA02776FC   ; f051: PlaySound2
+00D0: 0xA0B37628   ; f052: PlaySoundLoop
+00D4: 0x00000000   ; f053: AlarmClockRing
+00D8: 0x00000000   ; f054: GetATCmdString
+00DC: 0xA09A4FED   ; f055: OriginalATCGSN
+00E0: 0x00000000   ; f056: PostAtCommand
+00E4: 0xA08E7015   ; f057: SendATAnswerStr
+00E8: 0x00000000   ; f058: mfree_high
+00EC: 0xA0FC50ED   ; f059: MemChr
+;
+00F0: 0x00000000   ; f060: SetFileSize
+00F4: 0x00000000   ; f061: editOrNewTXTModule
+00F8: 0x00000000   ; f062: LoadProcesses
+00FC: 0xA0971099   ; f063: GetPaletteAdrByColorIndex
+0100: 0xA028972D   ; f064: GetVibraStatus
+0104: 0xA08F8867   ; f065: GetProvider
+0108: 0x00000000   ; f066: IsScreenSaver
+010C: 0xA09007BB   ; f067: IsUnlocked
+0110: 0x00000000   ; f068: TempLigntOn
+0114: 0x00000000   ; f069: GetWavLen
+;
+0118: 0x00000000   ; f070: HasNewSMS
+011C: 0x00000000   ; f071: HasFlashSMS
+0120: 0x00000000   ; f072: ReadNewSMS
+0124: 0x00000000   ; f073: ReadFlashSMS
+0128: 0x00000000   ; f074: PlayFile
+012C: 0xA0AA80E4   ; f075: StartMidlet
+0130: 0x00000000   ; f076: GetMissedCallsCount
+0134: 0xA0093278   ; f077: CallAfterTimer
+0138: 0x00000000   ; f078: ShowMsgInR1_3
+013C: 0x00000000   ; f079: ShowMsgInR1_4
+;
+0140: 0x00000000   ; f080: ShowMsgInR1_7
+0144: 0xA0D4F01F   ; f081: GetNetAccessMode
+0148: 0x00000000   ; f082: GetIlluminationDataTable
+014C: 0x00000000   ; f083: memcmp
+0150: 0xA02BF90D   ; f084: StrToInt
+0154: 0xA037F253   ; f085: SwitchVibraOnOff
+0158: 0xA006F131   ; f086: PlayVibra
+015C: 0x00000000   ; f087: IsCallAfterTimerStillRunning
+0160: 0xA001838C   ; f088: ClearMemory
+0164: 0x00000000   ; f089: memcpy
+;
+0168: 0x00000000   ; f090: KeypressOn
+016C: 0x00000000   ; f091: KeypressOff
+0170: 0xA01CF82C   ; f092: GetCPUClock
+0174: 0xA0331C37   ; f093: GetCPULoad
+0178: 0x00000000   ; f094: GetMMIMemUsed
+017C: 0x00000000   ; f095: GetNonPermMemAvail
+0180: 0x00000000   ; f096: ShowMainMenu
+0184: 0x00000000   ; f097: ShowNativeMenu
+0188: 0xA02896F5   ; f098: SetVibraStatus
+018C: 0x00000000   ; f099: MS_Wallpaper_Flush
+;
+0190: 0x00000000   ; f100: TriggerUpdate
+0194: 0x00000000   ; f101: EndCall
+0198: 0x00000000   ; f102: EndCallBusy
+019C: 0x00000000   ; f103: IsDirectCallActive
+01A0: 0x00000000   ; f104: GetScreenSaverRAM
+01A4: 0x00000000   ; f105: LockSched
+01A8: 0x00000000   ; f106: UnlockSched
+01AC: 0xA0250D4C   ; f107: FindFirstFile
+01B0: 0xA0250DCC   ; f108: FindNextFile
+01B4: 0xA0250C94   ; f109: FindClose
+;
+01B8: 0xA0D08D3D   ; f110: IsCalling
+01BC: 0x00000000   ; f111: RefreshGPRSTraffic
+01C0: 0x00000000   ; f112: GetGPRSTrafficPointer
+01C4: 0x00000000   ; f113: DrawRoundRect
+01C8: 0x00000000   ; f114: SetCurrentSecondOfCall
+01CC: 0x00000000   ; f115: GetTypeOfCall
+01D0: 0x00000000   ; f116: GetFunctionPointer
+01D4: 0x00000000   ; f117: StoreXYWHtoRECT
+01D8: 0x00000000   ; f118: SetWindowText
+01DC: 0x00000000   ; f119: set2color_byPaletteAdr
+;
+01E0: 0x00000000   ; f120: GetTimeFormat
+01E4: 0x00000000   ; f121: DrawObject
+01E8: 0x00000000   ; f122: ClearWindowBuffer
+01EC: 0x00000000   ; f123: GetProfileFilter
+01F0: 0xA01AF22B   ; f124: SetVibration
+01F4: 0x00000000   ; f125: IsIncognitoCall
+01F8: 0x00000000   ; f126: Rand
+01FC: 0xA052B9CD   ; f127: IsPlayerOn
+0200: 0xA05E212D   ; f128: GetCallsList
+0204: 0xA0FC5964   ; f129: HexToDec
+;
+0208: 0xA052BAAF   ; f130: GetCurrentTrackFilename
+020C: 0x00000000   ; f131: GetPathOfFoundFile
+0210: 0x00000000   ; f132: GetFileStats
+0214: 0x00000000   ; f133: StrCmpNoCase
+0218: 0x00000000   ; f134: ReadEEPROMData
+021C: 0x00000000   ; f135: WriteEEPROMData
+0220: 0xA022D874   ; f136: GetAccessoryType
+0224: 0xA0902A90   ; f137: GetLangMesIntoWS
+0228: 0x00000000   ; f138: GetFreeFlexSpace
+022C: 0x00000000   ; f139: GetTotalFlexSpace
+;
+0230: 0xA04D48A9   ; f140: RegExplorerExt
+0234: 0xA02FFD39   ; f141: GetProfileName
+0238: 0x00000000   ; f142: 
+023C: 0x00000000   ; f143: 
+0240: 0x00000000   ; f144: 
+0244: 0x00000000   ; f145: 
+0248: 0x00000000   ; f146: 
+024C: 0x00000000   ; f147: 
+0250: 0x00000000   ; f148: 
+0254: 0x00000000   ; f149: 
+;
+0258: 0x00000000   ; f150: 
+025C: 0x00000000   ; f151: 
+0260: 0x00000000   ; f152: 
+0264: 0x00000000   ; f153: 
+0268: 0x00000000   ; f154: 
+026C: 0x00000000   ; f155: 
+0270: 0x00000000   ; f156: 
+0274: 0x00000000   ; f157: 
+0278: 0x00000000   ; f158: 
+027C: 0x00000000   ; f159: 
+;
+0280: 0xA0968929   ; f160: wsprintf
+0284: 0x00000000   ; f161: wstrcpy
+0288: 0x00000000   ; f162: Unicode_GetCharByPosition
+028C: 0xA02519BC   ; f163: ws_2str
+0290: 0x00000000   ; f164: 
+0294: 0x00000000   ; f165: 
+0298: 0x00000000   ; f166: 
+029C: 0x00000000   ; f167: 
+02A0: 0x00000000   ; f168: 
+02A4: 0x00000000   ; f169: 
+;
+02A8: 0x00000000   ; f170: 
+02AC: 0xA00020F0   ; f171: SWI_AB
+02B0: 0x00000000   ; f172: DrawText
+02B4: 0x00000000   ; f173: StrAnsi2Uni
+02B8: 0x00000000   ; f174: StrUni2Ansi
+02BC: 0x00000000   ; f175: Hex2Int
+02C0: 0x00000000   ; f176: DrawPicWithCanvas
+02C4: 0xA006F101   ; f177: DrawColorPicWithCanvas
+02C8: 0x00000000   ; f178: 
+02CC: 0x00000000   ; f179: Seconds2iTime
+;
+02D0: 0xA08FCD77   ; f180: GetDateTime
+02D4: 0xA026CAA3   ; f181: GetWeek
+02D8: 0xA0288F27   ; f182: GetProfile
+02DC: 0xA0288F87   ; f183: SetProfile
+02E0: 0xA0FC5784   ; f184: dwMODdw
+02E4: 0x00000000   ; f185: 
+02E8: 0x00000000   ; f186: 
+02EC: 0x00000000   ; f187: 
+02F0: 0x00000000   ; f188: 
+02F4: 0x00000000   ; f189: 
+;
+02F8: 0xA0060C81   ; f190: RunScaner
+02FC: 0x00000000   ; f191: SpellTime
+0300: 0x00000000   ; f192: MiniGPS
+0304: 0xA0060C51   ; f193: RunDispatcher
+0308: 0x00000000   ; f194: GetAllPatchesByInject
+030C: 0xA006F091   ; f195: ProcessFiles
+0310: 0xA0060C01   ; f196: GetBuffer
+0314: 0x00000000   ; f197: PIT_Manager_Core
+0318: 0x00000000   ; f198: 
+031C: 0x00000000   ; f199: CallLibFunByNumber
+;
+0320: 0xA8D036D6   ; f200: RamCap
+0324: 0xA8D036FA   ; f201: RamLS
+0328: 0xA8E2EC9E   ; f202: RamNet
+032C: 0x00000000   ; f203: 
+0330: 0x00000000   ; f204: RamMissedCalls
+0334: 0x00000000   ; f205: RamMissedSMS
+0338: 0x00000000   ; f206: RamDateTime
+033C: 0x00000000   ; f207: RamAlarm
+0340: 0xA8D6A3DC   ; f208: RamAccPoint
+0344: 0x00000000   ; f209: RamScreensaver
+;
+0348: 0x00000000   ; f210: RamAutoTime
+034C: 0xA8A80000   ; f211: RamStby
+0350: 0xA8DD33F0   ; f212: RamMissedMes
+0354: 0x00000000   ; f213: RamIsLocked
+0358: 0x00000000   ; f214: RamNetOnline
+035C: 0xA8DADD10   ; f215: RamScreenBrightness
+0360: 0x00000000   ; f216: RamMenuAnywhere
+0364: 0x00000000   ; f217: RamShutdownMode
+0368: 0x00000000   ; f218: RamIsShutdown
+036C: 0x00000000   ; f219: RamMainscreenAccuIcon
+;
+0370: 0x00000000   ; f220: RamRandSeed
+0374: 0xA899F2BC   ; f221: RamCurrentTrack
+0378: 0xA8D77FF8   ; f222: RamIsSimPresent
+037C: 0xA8D34F7C   ; f223: RamPressedKey
+0380: 0x00000000   ; f224: 
+0384: 0x00000000   ; f225: 
+0388: 0x00000000   ; f226: 
+038C: 0x00000000   ; f227: RamProfileNum
+0390: 0xA8A80000   ; f228: FreeRAM
+0394: 0x0000123D   ; f229: LP_MonthsShort
+;
+0398: 0x00000260   ; f230: Pic_Big0
+039C: 0x00000830   ; f231: Pic_Little0
+03A0: 0x00000800   ; f232: Pic_Extra
+03A4: 0x00000810   ; f233: Pic_Profiles
+03A8: 0x00000818   ; f234: Pic_Vibra
+03AC: 0x00000000   ; f235: Pic_Call
+03B0: 0x00000800   ; f236: Pic_AdvNet
+03B4: 0x00001137   ; f237: LP_MonthsLong
+03B8: 0x000003EB   ; f238: LP_Weekdays
+03BC: 0x000005B0   ; f239: Pic_Calendar
+;
+03C0: 0x00000000   ; f240: Pic_AccuGraph
+03C4: 0xA02FEAE1   ; f241: BuildCanvas
+03C8: 0x00000000   ; f242: lpRAM_PIT
+03CC: 0x00000000   ; f243: RAM_PIT_Cap
+03D0: 0x00000000   ; f244: 
+03D4: 0x00000000   ; f245: 
+03D8: 0x00000000   ; f246: 
+03DC: 0x00000000   ; f247: 
+03E0: 0x00000000   ; f248: Additional_PIT_address
+03E4: 0x00000000   ; f249: Additional_PIT_start
+;
+03E8: 0x00000000   ; f250: Additional_PIT_end
+03EC: 0x00000000   ; f251: 
+03F0: 0x00000000   ; f252: PictureRelocationTable
+03F4: 0x00000000   ; f253: PictureRelocationBase
+03F8: 0x00000000   ; f254: NextPictureMagic
+03FC: 0x00000000   ; f255: 
+;
+;High Library
+;
+0400: 0xA0092A94   ; f256: GBS_SendMessage(int cepid_to, int msg, ...)
+0404: 0xA0091950   ; f257: GBS_ReciveMessage(GBS_MSG *)
+0408: 0xA009209C   ; f258: GBS_AcceptMessage(void)
+040C: 0xA0091DA4   ; f259: GBS_ClearMessage(void)
+;
+0410: 0xA0091F88   ; f260: GBS_PendMessage(GBS_MSG *)
+0414: 0xA0092F40   ; f261: CreateGBSproc(int cepid, const char *name, void(*onMsg)(void), int prio, int unk_zero)
+0418: 0xA8DB99B0   ; f262: CSM_root()
+041C: 0xA096FA4B   ; f263: CreateCSM(const CSM_DESC*,void *,int)
+0420: 0xA096FA5D   ; f264: FindCSMbyID(void *csm_q,int id)
+0424: 0xA096FB19   ; f265: DoIDLE(void)
+0428: 0x00000000   ; f266: GetConfig(unsigned int id)
+042C: 0x00000000   ; f267: GetMinAdrScan()
+0430: 0x00000000   ; f268: GetMaxAdrScan()
+0434: 0x00000000   ; f269: GetCI()
+;
+0438: 0x00000000   ; f270: Vibration(unsigned int power, unsigned int duration)
+043C: 0xA0299E1D   ; f271: freeUSSD()
+0440: 0xA026DEB9   ; f272: wstrcopy(char *dst, char *src)
+0444: 0xA0299E59   ; f273: GetTypeUSSD()
+0448: 0xA0299E69   ; f274: SetUSSD(StructUSSDStr *)
+044C: 0xA0FC5F21   ; f275: strpbrk(const char *s1,const char *s2)
+0450: 0xA0FC5F9D   ; f276: strncat(char *dest,const char *substr,int maxSubLen)
+0454: 0xA0FC5FCD   ; f277: strncmp(const char *s1,const char *s2,int n)
+0458: 0xA0FC601D   ; f278: strncpy(char *dest,const char *source,int maxlen)
+045C: 0xA0FC6099   ; f279: strrchr(const char *s,int c)
+;
+0460: 0xA0FC60B1   ; f280: strstr(const char *s1,const char *s2)
+0464: 0xA0FC60D9   ; f281: strtol(const char *nptr,char **endptr,int base)
+0468: 0xA0FC6155   ; f282: strtoul(const char *nptr,char **endptr,int base)
+046C: 0xA0FC4331   ; f283: snprintf(char *,int n,const char *format,...)
+0470: 0xA0018941   ; f284: memcmp(void *m1,void *m2,int n)
+0474: 0xA0FC556C   ; f285: zeromem(void *dest,int n)
+0478: 0xA000B228   ; f286: memcpy(void *dest,const void *source,int cnt)
+047C: 0xA01F5ABF   ; f287: wstrcpy(WSHDR *wshdr_d,WSHDR *wshdr_s)
+0480: 0xA01F5AE1   ; f288: wstrncpy(WSHDR *,WSHDR *,int)
+0484: 0xA01F5B05   ; f289: wstrcat(WSHDR *wshdr_d,WSHDR *wshdr_s)
+;
+0488: 0xA01F5B39   ; f290: wstrncat(WSHDR *wshdr_d,WSHDR *wshdr_s,int n)
+048C: 0xA01F541F   ; f291: wstrlen(WSHDR *wshdr)
+0490: 0xA0968929   ; f292: wsprintf(WSHDR *,const char *format,...)
+0494: 0xA09693ED   ; f293: AllocWS(int len)
+0498: 0xA01F5D31   ; f294: CutWSTR(void *WSHDR,int len)
+049C: 0xA01F594F   ; f295: CreateLocalWS(WSHDR *wshdr,unsigned __int16 *wsbody,int len)
+04A0: 0xA01F59C9   ; f296: CreateWS(void *malloc,void *mfree,int len)
+04A4: 0xA01F5351   ; f297: FreeWS(WSHDR *wshdr)
+04A8: 0xA08FF95D   ; f298: DrawObject(DRWOBJ *)
+04AC: 0xA096FBF5   ; f299: AddKeybMsgHook(void *proc)
+;
+04B0: 0xA096FBFD   ; f300: AddKeybMsgHook_end(void *proc)
+04B4: 0xA096FC05   ; f301: RemoveKeybMsgHook(void *proc)
+04B8: 0xA0971099   ; f302: GetPaletteAdrByColorIndex(int ColorIndex)
+04BC: 0xA09710BD   ; f303: getRGBcolor(int ColorIndex,void *dest)
+04C0: 0xA09710CD   ; f304: getRGBbyPaletteAdr(void *paletteAdr,void *dest)
+04C4: 0xA09710EB   ; f305: setColor(int a,int r,int g,int b,void *dest)
+04C8: 0x00000000   ; f306: 
+04CC: 0xA0975931   ; f307: StoreXYWHtoRECT(void *RECT,int x,int y,int w,int h)
+04D0: 0xA0975947   ; f308: StoreXYXYtoRECT(void *RECT,int x,int y,int x2,int y2)
+04D4: 0xA0978233   ; f309: IsGuiOnTop(int id)
+;
+04D8: 0x00000000   ; f310: CreateGUI_ID(void *gui,int id)
+04DC: 0xA0978367   ; f311: CreateGUI(void *gui)
+04E0: 0xA0978375   ; f312: CreateGUI_30or2(void *gui)
+04E4: 0xA09783AF   ; f313: CreateGUIWithDummyCSM(void *gui,int flag)
+04E8: 0xA09783BF   ; f314: CreateGUIWithDummyCSM_30or2(void *gui,int flag)
+04EC: 0xA09783CF   ; f315: GeneralFuncF1(int cmd)
+04F0: 0xA09783DD   ; f316: GeneralFuncF0(int cmd)
+04F4: 0xA09783EB   ; f317: GeneralFunc_flag1(int id,int cmd)
+04F8: 0xA09783FB   ; f318: GeneralFunc_flag0(int id,int cmd)
+04FC: 0xA097848F   ; f319: DirectRedrawGUI(void)
+;
+0500: 0xA09784A7   ; f320: DirectRedrawGUI_ID(int id)
+0504: 0xA097849B   ; f321: PendedRedrawGUI(void)
+0508: 0xA09FFC17   ; f322: FindCSM(void *csm_q,int id)
+050C: 0xA0093318   ; f323: GBS_StartTimer(GBSTMR *tmr,int time,int msg,int unk,int cepid)
+0510: 0xA009B820   ; f324: GBS_StopTimer(GBSTMR *tmr)
+0514: 0xA0099208   ; f325: GBS_GetCurCepid(void)
+0518: 0xA009B180   ; f326: LockSchedNoTskContext(void)
+051C: 0xA009B26C   ; f327: UnlockSchedNoTskContext(void)
+0520: 0xA09778BB   ; f328: ShowMSG(int flag, int lgp_id)
+0524: 0xA09733B1   ; f329: SetPropTo_Obj1(DRWOBJ *drwobj,void *rect,int rect_flag,WSHDR *wshdr,int font,int text_flag)
+;
+0528: 0xA09715E5   ; f330: FreeDrawObject_subobj(DRWOBJ *drwobj)
+052C: 0xA097154F   ; f331: SetColor(DRWOBJ *drwobj, int color1, int color2)
+0530: 0xA09733FB   ; f332: DrawString(WSHDR *WSHDR,int x1,int y1,int x2,int y2,int font,int text_attribute,int *Pen,int *Brush)
+0534: 0xA0978241   ; f333: GetTopGUI(void)
+0538: 0xA0A17DD9   ; f334: FindItemByID(GUI *gui,int id)
+053C: 0xA0A17E25   ; f335: GetDataOfItemByID(GUI *gui,int id)
+0540: 0xA0A01AEF   ; f336: DrawFrameInNativeMenu(int x1,int y1,int x2,int y2,int x_round,int y_round,int flags,int *pen,int *brush)
+0544: 0xA0A02043   ; f337: SetPropTo_Obj5(DRWOBJ *, RECT *, int zero, IMGHDR *Image)
+0548: 0xA097744B   ; f338: CreateMenu(int is_small,int zero1,MENU_DESC *menu,HEADER_DESC *hdr,int zero2,int n_items,int zero4,int zero5)
+054C: 0xA0091808   ; f339: GBS_RecActDstMessage(GBS_MSG *)
+;
+0550: 0xA0099180   ; f340: KillGBSproc(int cepid)
+0554: 0xA00E2EE0   ; f341: png_create_read_struct(png_const_charp user_png_ver, png_voidp error_ptr, png_error_ptr error_fn, png_error_ptr warn_fn)
+0558: 0xA00E1908   ; f342: png_create_info_struct(png_structp png_ptr)
+055C: 0xA00E4404   ; f343: png_destroy_read_struct(png_structpp png_ptr_ptr, png_infopp info_ptr_ptr, png_infopp end_info_ptr_ptr)
+0560: 0xA00E170C   ; f344: png_set_sig_bytes(png_structp png_ptr,int num_bytes)
+0564: 0xA00E3160   ; f345: png_read_info(png_structp png_ptr, png_infop info_ptr)
+0568: 0xA00E2698   ; f346: png_get_IHDR(png_structp png_ptr,png_infop info_ptr, png_uint_32 *width, png_uint_32 *height, int *bit_depth, int *color_type, int *interlace_method, int *compression_method, int *filter_method)
+056C: 0xA01192DC   ; f347: png_malloc(png_structp png_ptr, png_uint_32 size)
+0570: 0xA00E3CE0   ; f348: png_read_image(png_structp png_ptr, png_bytepp image)
+0574: 0xA00E3D40   ; f349: png_read_end(png_structp png_ptr, png_infop info_ptr)
+;
+0578: 0xA00E4404   ; f350: png_destroy_read_struct(png_structpp png_ptr_ptr, png_infopp info_ptr_ptr, png_infopp end_info_ptr_ptr)
+057C: 0xA00E22B4   ; f351: png_get_rowbytes(png_structp png_ptr,png_infop info_ptr)
+0580: 0xA00E3774   ; f352: png_read_row(png_structp png_ptr,png_bytep row,png_bytep dsp_row)
+0584: 0xA00E1E48   ; f353: png_init_io(png_structp png_ptr, int fp)
+0588: 0xA0FC6388   ; f354: setjmp(jmp_buf jmpbuf)
+058C: 0xA0A0BFB7   ; f355: AllocEQueue(void *malloc_a, void *mfree_a)
+0590: 0xA0A0B3F5   ; f356: PrepareEditControl(EDITCONTROL *)
+0594: 0xA0A0B705   ; f357: ConstructEditControl(EDITCONTROL *EditControl,int type,int flag,WSHDR *ws,int maxlen)
+0598: 0xA0A0C153   ; f358: AddEditControlToEditQend(void *EditQ,EDITCONTROL *EditControl,void *malloc_a)
+059C: 0xA0A08D7D   ; f359: CreateInputTextDialog(const INPUTDIA_DESC *input_desc, const HEADER_DESC *header_desc,void editq,int do_mfree,WSHDR *)
+;
+05A0: 0xA0A1205B   ; f360: SetSoftKey(void *gui,SOFTKEY_DESC *,int n)
+05A4: 0xA0A11FF1   ; f361: ExtractEditControl(void *guidata,int n,EDITCONTROL *)
+05A8: 0xA0A11FFD   ; f362: StoreEditControl(void *guidata,int n,EDITCONTROL *)
+05AC: 0xA02510B8   ; f363: unlink(const char *cFileName,unsigned int *errornumber)
+05B0: 0xA02518C8   ; f364: str_2ws(WSHDR *ws,char *str,unsigned int size)
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

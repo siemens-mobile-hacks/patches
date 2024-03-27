@@ -1,0 +1,14 @@
+;S65v58
+;Отключить сообщение "Карта неисправна или неотформатирована"
+;Disable "Card defect or not formatted" message
+;(c) ThE TrIFoN
+;(p) KiRiK
+;Version: 
+;PatchID: 1320
+;Details: https://patches.kibab.com/patches/details.php5?id=1320
+/*
+Кирик этим патчем лечит нервы владельцев s65v58. Теперь будет всё "исправно". 
+*/
+169A58E: 1AF07EEF 00210021
+;------------------------- end -------------------------
+

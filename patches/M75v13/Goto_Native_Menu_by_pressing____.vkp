@@ -1,0 +1,25 @@
+;M75v13
+;Goto Native Menu by pressing ###
+;Goto Native Menu by pressing ###
+;(c) ThE TrIFoN
+;(r) SiNgle
+;(p) Buffel
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1009
+;PatchID: 733
+;Details: https://patches.kibab.com/patches/details.php5?id=733
+/*
+; Now it works with playing Mp3
+; Start Mp3-Player, then choose "options->edit"
+; Now you can choose Native Menu with ###
+; Or you set Keylock and then press ###
+*/
+
+07D4C54: 84F019F9 CCF404FD
+04A1660: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFB55DF30CF8002807D10320B7F308FE
+04A1670: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 7FB4034900230B707FBC1DF641F9FFBD
+04A1680: FFFFFFFF 40F84FA8
+
+
+;------------------------- end -------------------------
+

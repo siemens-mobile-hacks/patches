@@ -1,0 +1,19 @@
+;S65v50
+;Открыть ZIP и RAR архивы с кард експлорера
+;Open ZIP and RAR archives from card explorer
+;(c) NForce
+;(r) Shadow_ru
+;Version: 
+;PatchID: 4043
+;Details: https://patches.kibab.com/patches/details.php5?id=4043
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s65v50&f=archives.rar
+
+/*
+ In archive which i have added there are 2 java applications MobileZip x75 (special edition for this patch) and MobileRar (opens rar archives but only from Misc, Sounds etc. folders not from root) and sources for graph patches updated graphic in archive
+*/
+0A25D64: "pdf" "zip" ;if you already have patch ZIPViewer comment this line
+0A25CFD: "Pdf" "ZIP" ;if you already have patch ZIPViewer comment this line
+0A25D24: "doc" "rar"
+0A25CE5: "Doc" "RAR"
+;------------------------- end -------------------------
+

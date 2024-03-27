@@ -1,0 +1,38 @@
+;SL45iv56
+;Инвертирование по горячей клавише
+;Invert Display Hotkey
+;(c) trustkill
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=2641
+;PatchID: 1866
+;Details: https://patches.kibab.com/patches/details.php5?id=1866
+/*
+Добавляет возможность использовать горячую клавишу для "Invert Display" 
+вместо "User Group". Перезаписывает "Flip Screen Hotkey" от arsh0r,
+отмените его.
+
+
+Release: June 26, 2004
+
+Патч №162 с http://patch.oslik.ru/SL45_RU
+*/
+;Invert both softkeys & Display when APP Function 1 is selected, 
+;needs at least JAF.Funny Display & ISK.Invert Softkey selectable: 
+0x27D6CB: C0 00 
+0x27D6E1: C0 00 
+
+;correction for Round Softkeys (selectable) Patch 
+0x27E09C: 9AFE01C0 9AFE0100; asks now for Function 1 
+;Function 13 in APP is now FREE ! You better change the string to "Unused" 
+
+0x18E388: 8B00 A804 ;string #8B -> #4A8 
+0x18E3BC: 8B00 A804 ;string #8B -> #4A8 
+0x18E4B8: 8B008B00 A804A804 ;same thing 
+0x3AE310: DAD70245 DAC7E0D3 ;call to patch 
+
+0x27D3E0: FFFFFFFFFFFFFFFF 88C0D7400E00F2FC 
+0x27D3E8: FFFFFFFFFFFFFFFF 423A9AFC02000EFC 
+0x27D3F0: FFFFFFFFFFFFFFFF 0D010FFCD7400E00 
+0x27D3F8: FFFFFFFFFFFFFFFF F6FC423A98C0DB00 
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M55v11
+;Набор только 112 при заблокированной клавиатуре (без 08, 911)
+;Dial only 112 when keypad is locked(not 08.911)
+;(c) Matr!x,
+;(r) ACiD[mrp]
+;Version: 
+;PatchID: 5201
+;Details: https://patches.kibab.com/patches/details.php5?id=5201
+/*
+Тел больше НЕ отрубается при нажатиях 5, 0 или 8 и не реагирует на них!
+*/
+02160E: EA20 0D0F
+;------------------------- end -------------------------
+

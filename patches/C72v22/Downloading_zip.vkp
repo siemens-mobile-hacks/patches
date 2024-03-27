@@ -1,0 +1,15 @@
+;C72v22
+;Скачивание стандартным браузером файлов формата .zip
+;Downloading by standard browser files of format .zip
+;(c) Geka
+;Version: 1.1
+;PatchID: 6059
+;Details: https://patches.kibab.com/patches/details.php5?id=6059
+/*
+Вместо "zip" можно выставлять некоторые другие форматы на ваш выбор, к примеру "rar"
+Теперь сохраняет 0:\\misc\data inbox\название файла.zip(rar)
+*/
+0C78920: 6A617661 "zip"00 ; скачивание
+0C02090: 646174 "zip" ; сохранение в .zip
+;------------------------- end -------------------------
+

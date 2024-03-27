@@ -1,0 +1,31 @@
+;SL45iv56
+;BSK. Пустой экран при заблокированной клавиатуре по долгому нажатию кнопки #
+;BSK. Blank Screen for KeyLock by long pressing # Button
+;(c) RizaPN
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1694
+;PatchID: 1693
+;Details: https://patches.kibab.com/patches/details.php5?id=1693
+/*
+Пустой экран при заблокированной клавиатуре по долгому нажатию кнопки #.
+
+Появляется пустой экран при заблокированной клавиатуре по 
+долгому нажатию кнопки #. Не влияет на автоматическую 
+блокировку. 
+
+
+Release: November 5, 2003
+
+Патч №100 с http://patch.oslik.ru/SL45_RU
+*/
+3AD2B8: DAA37440 DAC7C0DC 
+3AF6E2: DAA37A40 DAC7D8DC 
+
+27DCC0: FFFFFFFFFFFFFFFF DAA37440DAC0BCCB 
+27DCC8: FFFFFFFFFFFFFFFF D7403500F7F80039 
+27DCD0: FFFFFFFFFFFFFFFF E00CDAC0CACADB00 
+27DCD8: FFFFFFFFFFFFFFFF DAA37A40DAC0BCCB 
+27DCE0: FFFFFFFFFFFFFFFF 49803DF9D7403500 
+27DCE8: FFFFFFFFFFFFFFFF C2FC00390DF2FFFF 
+;------------------------- end -------------------------
+

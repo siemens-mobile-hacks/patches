@@ -1,0 +1,23 @@
+;SL65v53
+;Расширенный список вызовов
+;Extended Calls list
+;(c) BoBa
+;(p) andrey_ua
+;Version: 3
+;PatchID: 3968
+;Details: https://patches.kibab.com/patches/details.php5?id=3968
+/*
+Жмем зеленую кнопку -> попадаем в меню "Набранные номера"
+Жмем красную кнопку -> попадаем в меню "Принятые номера"
+Жмем красную кнопку -> попадаем в меню "Неотвеченные номера"
+Жмем красную кнопку -> выход в режим готовности
+English:
+Green button -> "Calls dialed"
+Red -> "Calls missed"
+Red -> "Calls received"
+Red -> Ready
+*/
+165ff18: 9397a8a0 0xA0FC8001 ;sl65v53
+
+;------------------------- end -------------------------
+

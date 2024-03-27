@@ -1,0 +1,14 @@
+;EL71v45
+;Автоматическое открытие USSD сообщений
+;Auto Show USSD
+;(c) Evgr
+;(r) VoVkA
+;Version: 0.1
+;PatchID: 8663
+;Details: https://patches.kibab.com/patches/details.php5?id=8663
+/*
+
+*/
+05C4612: ADF02CF8 AAF0C5FA
+;------------------------- end -------------------------
+

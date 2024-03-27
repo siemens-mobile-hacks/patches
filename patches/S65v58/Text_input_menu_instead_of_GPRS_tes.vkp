@@ -1,0 +1,14 @@
+;S65v58
+;Ввод текста вместо жпрс-тест
+;Text-input menu instead of GPRS-test
+;(c) Timrik
+;Version: 1
+;PatchID: 2910
+;Details: https://patches.kibab.com/patches/details.php5?id=2910
+/*
+Чуть более быстрый выход в меню выбора языка ввода, чем по стандартному шоткату.
+
+*/
+0092eaf4: f1a48da0 0xA08FB7C1
+;------------------------- end -------------------------
+

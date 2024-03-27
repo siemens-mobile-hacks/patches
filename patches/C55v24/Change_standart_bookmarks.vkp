@@ -1,0 +1,16 @@
+;C55v24
+;Изменение стандартных закладок
+;Change standart bookmarks
+;(c) mcbobo
+;Version: 1.0
+;PatchID: 5325
+;Details: https://patches.kibab.com/patches/details.php5?id=5325
+/*
+Раньше были недоступны для изменения первые четыре закладки. После применения патча станут доступны для изменения все закладки в WAP браузере!!!
+*/
+7C36FC: 02 00 ;Wap Bookmark 1
+7C3848: 42 00 ;Wap Bookmark 2
+7C3994: 22 00 ;Wap Bookmark 3
+7C3AE0: 12 00 ;Wap Bookmark 4
+;------------------------- end -------------------------
+

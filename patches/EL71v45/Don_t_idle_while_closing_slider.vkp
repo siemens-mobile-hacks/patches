@@ -1,0 +1,14 @@
+;EL71v45
+;Не выходить на гэ при закрытии слайдера в native menu (сообщения, экстра, настройки, разработчик и т.д.)
+;Don't idle while closing slider in native menu (messages, settings, extra, developer menu etc.)
+;(c) funMarkus
+;Version: 
+;PatchID: 8442
+;Details: https://patches.kibab.com/patches/details.php5?id=8442
+/*
+
+*/
+0671C34: 8EF156E9 C046C046 ; DON'T IDLE WHILE CLOSING SLIDER/не выходить на ГЭ
+;0671C4C: 8EF162E9 C046C046; BLOCK SLIDER WHILE CLOSING/заблокировать клавиатуру
+;------------------------- end -------------------------
+

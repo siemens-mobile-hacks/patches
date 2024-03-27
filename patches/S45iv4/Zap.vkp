@@ -1,0 +1,18 @@
+;S45iv4
+;Убрать запятую между фамилией и именем в адресной книге
+;To remove the comma between the surname and the name in the directory
+;(c) Lalo
+;(p) Chaos
+;Version: 
+;PatchID: 908
+;Details: https://patches.kibab.com/patches/details.php5?id=908
+/*
+
+
+
+*/
+502454: DAFD3C97 CC00CC00
+;502452: 2C xx ;замена запятой на символ UNICODE
+;50245C: DAFD3C97 CC00CC00 ;удалить пробел после запятой
+;------------------------- end -------------------------
+

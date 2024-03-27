@@ -1,0 +1,13 @@
+;SK65v50
+;Отключить Вопрос о Включении Профиля "В Самолете"
+;Disable Profile "Aircraft" Question
+;(c) 1nvisible
+;Version: 
+;PatchID: 4165
+;Details: https://patches.kibab.com/patches/details.php5?id=4165
+/*
+
+*/
+03876EC: 46490120 904780BD
+;------------------------- end -------------------------
+

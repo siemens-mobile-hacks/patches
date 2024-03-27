@@ -1,0 +1,30 @@
+;CX75v23
+;Вибра в момент начала разговора
+;Vibrate shortly after connection
+;(c) SiNgle
+;(p) Mikel
+;Version: 1.2
+;PatchID: 2582
+;Details: https://patches.kibab.com/patches/details.php5?id=2582
+/*
+
+*/
+02CAA18: D4F1EAE90028 002835F742EA
+#pragma enable old_equal_ff
+01FFea0: 00402DE9FF3F2DE90FE0A0E144F09FE5
+01FFeb0: 000050E30900001A0100A0E30FE0A0E1
+01FFec0: 34F09FE5020050E30400001A2F00A0E3
+01FFed0: 0210A0E30120A0E30FE0A0E11CF09FE5
+01FFee0: 0FE0A0E118F09FE5000050E3FF3FBDE8
+01FFef0: 0040BDE80CF09FE5034655A053fcAAA0
+01FFf00: d44a2BA0bb3950A01fAa2CA0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+
+
+
+
+
+
+;------------------------- end -------------------------
+

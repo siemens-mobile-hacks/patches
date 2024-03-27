@@ -1,0 +1,38 @@
+;S7Cv47
+;Вибра вместо "Сообщение оправлено!"
+;VibraWhenSMSsent
+;(c) BingK
+;(p) loquat
+;Version: 
+;PatchID: 9759
+;Details: https://patches.kibab.com/patches/details.php5?id=9759
+/*
+MasterPatch
+Play vibra instead of the window "SMS is sent"
+*/
+0x005FF624: A5F0FCEEA0630DE0 00498847,0xA0063801 ; S7Cv47
+#pragma enable old_equal_ff
+0063800: 71460431173003B40A48C4DF08D001B4
+0063810: 0430816804A201324DDF01BC40787CDF
+0063820: 2A1C2B1C092101BD00B500207CDF00BD
+0063830: 0xB1C2D3E4,0x0000AB08,0000000000000000,"\
+{p=ED77E14F10629F520797A852 cp=SiNgle,avkiev id=AB08}","\
+{1 b 91988773 v=10}","\
+{12 ms 68541F67 v=20}",00
+#pragma disable old_equal_ff
+
+;Another version of this patch
+
+0x005FF624: A5F0FCEEA0630DE0 004CA047C13806A0
+#pragma enable old_equal_ff
+0x000638C0: 00B588200002401CC4DF002806D0041C
+0x000638D0: 60697CDF201DA169074A4DDF10BC2B1C
+0x000638E0: 0021FF20103022587032241D204700B5
+0x000638F0: 00207CDF00BD0000EF3806A0
+0x00063900: 0xB1C2D3E4,0x00008801,0000000000000000,"\
+{p=ED77E14F10629F520797A852 cp=BingK id=8801}","\
+{20 i 3A5FA65E v=20}","\
+{24 ms 68541F67 v=30}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

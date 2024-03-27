@@ -1,0 +1,23 @@
+;C81v51
+;Вибра в момент соединения
+;Vibra at connect
+;(c) SiNgle
+;(r) (i) avkiev,Вова
+;(p) dimonp25
+;Version: 
+;PatchID: 7416
+;Details: https://patches.kibab.com/patches/details.php5?id=7416
+/*
+отвязан от МП:)
+*/
+0D9FB4C: 2A1C2B1C09211730 00498847,0xA0063801 
+
+#pragma enable old_equal_ff
+0063800: 71460431173003B4C046C046C04601B4
+0063810: 0748642104A201324DDF01BC1E207CDF
+0063820: 2A1C2B1C092101BD00B500207CDF00BD
+0063830: 0000A8AC
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

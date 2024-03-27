@@ -1,0 +1,19 @@
+;A60v27
+;Доступ в Card-Explorer
+; Access To Card-Explorer
+;(c) Rasp
+;(r) FFNevil
+;Version: 
+;PatchID: 294
+;Details: https://patches.kibab.com/patches/details.php5?id=294
+/*
+Card-Explorer вместо "Свои" в главном меню
+*/
+;A60v27
+;Card-Explorer вместо "Свои" в главном меню. 
+;Портировано: Rasp
+
+65C1D4: FA85B2C5 FA8596C5 
+65C598: E6FDE43FE6FE1602 E6FD0000E6FE0000
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;CX75v12
+;Изменение типа виброзвонка при установке на горячую кнопку
+;Change vibra type when turning it on with hotkey
+;(c) 1nvisible
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 531
+;Details: https://patches.kibab.com/patches/details.php5?id=531
+/*
+Изменение типа вибровызова при установке виброзвонка на горячую клавишу.
+
+*/
+0326056: 00 01 ; 00 - Standard, 01 - Helicopter, 02 - UFO, 03 - Shock, ;04 - Mosquito, 05 - Train
+
+
+;------------------------- end -------------------------
+

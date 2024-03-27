@@ -1,0 +1,13 @@
+;M75v19
+;Карта неисправна или неотформатирована
+;Card defect or not fotmatted
+;(c) ThE TrIFoN
+;Version: 
+;PatchID: 2340
+;Details: https://patches.kibab.com/patches/details.php5?id=2340
+/*
+
+*/
+02C6F1E: D7F1DEE8 00210021
+;------------------------- end -------------------------
+

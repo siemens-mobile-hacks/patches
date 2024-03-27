@@ -1,0 +1,47 @@
+;S75v32
+;иконки из BoBaPack
+;icons from BoBaPack
+;(c) BoBa
+;Version: 
+;PatchID: 3643
+;Details: https://patches.kibab.com/patches/details.php5?id=3643
+/*
+Для тех, кому нравятся иконки от ВоВы! Реально работает с диспатчером2, вибра в момент соединения, расш. индикация, МП10, новые либы
+*/
+;Patch:    BoBaPack 
+;Firmware: s75_32
+;Release:  06.06.2006 
+;Language: Russian 
+;Author:   BoBa 
+;Compiler: IAR 4.31.1.539 
+;Include:  
+;Icons ©BoBa
+;Верхняя строчка иконок
+;---------------------
+;более четырех иконок одновременно
+;иконки вибры, плеера
+
+;Icons_Vrezka2
+0x00299DF6: 0321 0021
+;Icons_Vrezka3
+0x00299E08: 0320 0020
+;Icons_Vrezka1
+0x0029A1DC: 00AB988A 32F00DFD
+0x0029A1E0: 042801D90420988200AB988A0E234421 002803D0144805A9FFF78CFD13480068
+0x0029A1F0: 584300AB091A988A013050F110EE0004 002802D005A9FFF785FD00AB988A0028
+0x0029A200: 000C03902130050400ABA649988A0988 11D0FFB4031C0D24604340084224201A
+0x0029A210: 2D0C884219D0A3480822311C283050F1 02210B4C5D00625B0FB423DF0FBC0D30
+0x0029A220: 06EDA048082230309F4950F100ED0122 5B1EF6D1FFBC6AE000B501B403480260
+0x0029A230: 0F2100910192022223216323381CFFF7 01BCA260002900BD75020000000000A8
+0x0029A240: 4EFC00AB 1E94D7A8
+;Icons_Vrezka6
+0x0029A354: 6520 6820
+;Icons_Vrezka4
+0x0029A370: 6521 6821
+;Icons_Vrezka5
+0x0029A382: 6520 6820
+;Icons_Vrezka7
+0x005F18DA: A2600029 A8F4A5FC
+
+;------------------------- end -------------------------
+

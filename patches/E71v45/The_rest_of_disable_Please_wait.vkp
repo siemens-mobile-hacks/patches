@@ -1,0 +1,94 @@
+;E71v45
+;Остаток патчей на отключение "Подождите"
+;The rest of disable "Please wait"
+;(c) Evgr
+;Version: 
+;PatchID: 10336
+;Details: https://patches.kibab.com/patches/details.php5?id=10336
+/*
+1) Отключить "Подождите" в Напоминания/Задачи-Нов.запись
+2) Отключить "Подождите" в Заметки-Нов.запись
+3) Отключить "Подождите" в Все контакты-Нов.запись
+4) Отключить "Подождите" в Контакты-Группы
+5) Отключить "Подождите" в Передача...-Как MMS и Как E-mail в Мои файлы
+6) Отключить "Подождите" в Передача...-Через BT в Мои файлы
+7) Отключить "Подождите" в Сообщения-Настройки-Wap Push
+8) Отключить "Подождите" в Сеть-Сетев. информ.
+9) Отключить "Подождите" в Переадресац.-Пров. состоян.
+10) Отключить "Подождите" в Сетев. блокир.-Пров. состоян.
+11) Отключить "Подождите" в "Неотв.выз."/"Прин.вызовы"/"Набр.номера"->"Опции"->"Удалить"
+12) Отключить "Подождите" в "Спис.вызовов"->"Удал. списки"
+13) Отключить "Подождите" в Заметки-Конфиденц.
+14) Отключить "Подождите" в "Общ.вход./Вх.устройство"->"Неотв.выз."->"Опции"->"Удалить"
+15) Отключить "Подождите" в "Запись звука/Диктофон"-"Опции"-"Удалить"
+16) Отключить "Подождите" в "Задать как..."-"Закладка/Фон. картинка/Логотип/Заставка/Аним. при вкл./Аним.при выкл" в "Мои файлы"
+*/
+; Отключить "Подождите" в Все контакты-Нов.запись
+; Disable "Please wait" in All contacts-New enry
+07B9A5C: 3EF0B4EF C046C046
+
+; Отключить "Подождите" в Напоминания/Задачи-Нов.запись
+; Disable "Please wait" in Appointments/Tasks-New enry
+099D25E: B1F754FE C046C046
+
+; Отключить "Подождите" в Сетев. блокир.-Пров. состоян.
+; Disable "Please wait" in Barrings-Status check
+07C9C7A: 30F054EC C046C046
+
+; Отключить "Подождите" в "Спис.вызовов"->"Удал. списки"
+; Disable "Please wait" in "Call records"->"Delete records"
+; Отключить "Подождите" в "Неотв.выз."/"Прин.вызовы"/"Набр.номера"->"Опции"->"Удалить все"
+; Disable "Please wait" in "Calls missed"/"Calls received"/"Calls dialled"->"Options"->"Delete all"
+09A293A: ACF7E6FA C046C046
+
+; Отключить "Подождите" в "Неотв.выз."/"Прин.вызовы"/"Набр.номера"->"Опции"->"Удалить"
+; Disable "Please wait" in "Calls missed"/"Calls received"/"Calls dialled"->"Options"->"Delete"
+09A28F8: ACF707FB C046C046
+
+; Отключить "Подождите" в Контакты-Группы
+; Disable "Please wait" in Contacts-Groups
+07DCDB6: 1BF008EE C046C046
+
+; Отключить "Подождите" в Переадресац.-Пров. состоян.
+; Disable "Please wait" in Divert-Status check
+06FF004: FBF08EEA C046C046
+
+; Отключить "Подождите" в Сообщения-Настройки-Wap Push
+; Disable "Please wait" in Messages-Settings-Wap Push
+06B8678: 40F1A6E9 C046C046
+
+; Отключить "Подождите" в Сеть-Сетев. информ.
+; Disable "Please wait" in Network-Network info
+06FFCD2: 0120 10BD
+
+; Отключить "Подождите" в Заметки-Конфиденц.
+; Disable "Please wait" in Notes-Confidential
+0A7FC76: CFF648F9 C046C046 
+09A13E4: ADF791FD C046C046 
+
+; Отключить "Подождите" в Заметки-Нов.запись
+; Disable "Please wait" in Notes-New enry
+0A7FC0E: CFF67CF9 C046C046
+  
+; Отключить "Подождите" в Передача...-Через BT в Мои файлы
+; Disable "Please wait" in Send...-Via Bluetooth in My stuff
+0A95F7A: B9F03DFE C046C046
+
+; Отключить "Подождите" в Передача...-Как MMS и Как E-mail в Мои файлы
+; Disable "Please wait" in Send...-Via MMS and Via e-mail in My stuff
+0690AFC: 01F90AFB 0000A0E1
+
+; Отключить "Подождите" в "Задать как..."-"Закладка/Фон. картинка/Логотип/Заставка/Аним. при вкл./Аним.при выкл" в "Мои файлы"
+; Disable "Please wait" in "Set as..."-"Bookmark/Wallpaper/Logo/Screensaver/Startup anim./Shutdn. anim." in "My stuff"
+07CB348: EE0E06FB 0000A0E1
+07A6C20: B8A006FB 0000A0E1
+
+; Отключить "Подождите" в "Запись звука/Диктофон"-"Опции"-"Удалить" 
+; Disable "Please wait" in "Sound recorder/Dictat.machine"-"Options"-"Delete" 
+07EEF48: EE7F05FB 0000A0E1
+
+; Отключить "Подождите" в "Общ.вход./Вх.устройство"->"Неотв.выз."->"Опции"->"Удалить"
+; Disable "Please wait" in unified_inbox_Calls missed_Options_Delete
+050637A: F2F226EB C046C046
+;------------------------- end -------------------------
+

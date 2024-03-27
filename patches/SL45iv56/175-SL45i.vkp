@@ -1,0 +1,25 @@
+;SL45iv56
+;Меняет картинку, звонка (напоминания, будильника и.т.д.)
+;Change Icon for Call (Appointment, Alarm etc.)
+;(c) vBart
+;Version: 
+;PatchID: 1877
+;Details: https://patches.kibab.com/patches/details.php5?id=1877
+/*
+Патч №175 с http://patch.oslik.ru/SL45_RU
+*/
+3B0126: 0A 03 ; smile 
+
+;select: 
+;01 - phone 
+;03 - clock 
+;04 - car 
+;05 - book 
+;06 - "C" - Cancell 
+;07 - telephone receiver 
+;08 - woofer 
+;0C - "CB" 
+;0D - envelope -SMS? 
+;XX - ?...
+;------------------------- end -------------------------
+

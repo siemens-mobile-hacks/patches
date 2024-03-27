@@ -1,0 +1,24 @@
+;C81v51
+;Исправление ошибок Native Menu
+;Fix mistakes in NativeMenu
+;(c) caine
+;(r) Grizzzzly
+;(p) klaud
+;Version: 
+;PatchID: 7368
+;Details: https://patches.kibab.com/patches/details.php5?id=7368
+/*
+По сравнению с предыдущей версией - добавил присвоение собственного CSM NativeMenu, чтобы можно было переключаться в X-Task на него. Пока не делал ничего с Сообщениями и Таймером. Доделайте кто-нибудь плз :)
+English: Now Native Menu has its own CSM. Didn't fix Timer & Messages errors, please somebody do it :)
+к сожалению не возможно становится юзать одновременно и главное и натив, совет: поставить на центральную навигационную кнопку анимацию при включении и поставить патч замена шорт ката "анимации при в включении" на "натив меню", и навсегда забыть про флекс меню, с его глюками при совмесной работе с ява
+
+*/
+; CreateGUIWithDummyCSM call & other stuff
+0033D462: B9F076EE 00210AE0
+0033D476: 00210020BBF65BF8002802D0 BCF09AEA80BDBAF006E8FEBD
+
+; Fix Internet (from v2)
+0044C008: 08 00
+;------------------------- end -------------------------
+;------------------------- end -------------------------
+

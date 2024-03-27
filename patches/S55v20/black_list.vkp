@@ -1,0 +1,21 @@
+;S55v20
+;Черный список
+;Black list
+;(c) SiNgle
+;(p) ACiD [mrp]
+;Version: 
+;PatchID: 4869
+;Details: https://patches.kibab.com/patches/details.php5?id=4869
+/*
+
+*/
+; default Black List is the 5th from the top
+; change this here: (03 = 1st, 04 = 2nd, 05 = 3rd, ... , 07 = 5th)
+003B9A06: FF 07 
+
+64B1A2: 8880F08C FA7B009A
+003B9A00: FFFFFFFFFFFF 8880F08C46F8
+003B9A07: FFFFFFFFFFFFFFFFFF 002D02FAA4A6B19880
+003B9A10: FFFF DB00
+;------------------------- end -------------------------
+

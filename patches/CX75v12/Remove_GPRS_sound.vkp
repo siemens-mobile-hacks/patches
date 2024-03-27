@@ -1,0 +1,13 @@
+;CX75v12
+;Убрать звук GPRS
+;Remove GPRS sound
+;(c) AlexeyZ
+;Version: 0.1
+;PatchID: 7704
+;Details: https://patches.kibab.com/patches/details.php5?id=7704
+/*
+
+*/
+004CEBE0: 5352544600000400C409D200 000000000000000000000000
+;------------------------- end -------------------------
+

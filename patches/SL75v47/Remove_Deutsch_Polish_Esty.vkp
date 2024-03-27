@@ -1,0 +1,15 @@
+;SL75v47
+;Убрать Немецкий, Польский и Эстонский из меню языков ввода
+;Remove Deutsch, Polish and Esty from input languages menu
+;(c) AlexSid, 0xFEDF
+;Version: 
+;PatchID: 6702
+;Details: https://patches.kibab.com/patches/details.php5?id=6702
+/*
+
+*/
+0C1B2AA: 00 01; убрать немецкий (c) AlexSid
+0C1B2EE: 00 01; убрать польский (c) AlexSid
+0C1B2EA: 00 01; убрать эстонский (с) 0xFEDF
+;------------------------- end -------------------------
+

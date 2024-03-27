@@ -1,0 +1,27 @@
+;CF75v23
+;Запуск эльфа вместо Flex-меню
+;Start elf instead of FlexMenu
+;(c) SiNgle
+;(p) Виктор89
+;Version: 
+;PatchID: 9912
+;Details: https://patches.kibab.com/patches/details.php5?id=9912
+/*
+
+*/
+4A4E7C: ABF132A0 0xA10D7F01 ; CKLK_CK_MAIN_MNU: центр джойстика
+4A54FC: ABF132A0 0xA10D7F01 ; ELSE_MMENU_OPEN: для DSE
+4ABF0C: 896E34A0 0xA10D7F01 ; запуск меню из функций разговора
+
+2B87F8: 434B4C4B5F434B5F4D41494E4D4E55 434E43545F425553494E4553534344
+2B8808: 454C53455F4D4D454E555F4F50454E 434E43545F425553494E4553534344
+
++10D7F00
+#pragma enable old_equal_ff
+000: FFB58020C7DF2501061C05A18022C7DF
+010: 6C010021301C94DF301CC7DF2901FFBD
+020: "0:\\ZBin\\Menu\\Menu.elf",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

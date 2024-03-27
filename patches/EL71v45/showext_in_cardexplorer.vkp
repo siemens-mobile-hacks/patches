@@ -1,0 +1,15 @@
+;EL71v45
+;Показ Расширений Файлов в Card-Explorer'е
+;Showext in cardexplorer
+;(c) 1nvisible
+;(r) SiNgle
+;(p) NForce
+;Version: 
+;PatchID: 7935
+;Details: https://patches.kibab.com/patches/details.php5?id=7935
+/*
+
+*/
+072C030: 2E 1E
+;------------------------- end -------------------------
+

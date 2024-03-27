@@ -1,0 +1,14 @@
+;M65v50
+;Отключить вопрос о включении профиля "В Самолете"
+;Disable Profile "Aircraft" Question
+;(c) 1nvisible
+;(p) Mifodiy
+;Version: 
+;PatchID: 3358
+;Details: https://patches.kibab.com/patches/details.php5?id=3358
+/*
+
+*/
+09064DC: 46490120 904780BD
+;------------------------- end -------------------------
+

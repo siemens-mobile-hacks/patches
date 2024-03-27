@@ -1,0 +1,55 @@
+;SL65v50
+;API
+;API
+;(c) 1nvisible, empeka
+;Version: 30.12
+;PatchID: 1310
+;Details: https://patches.kibab.com/patches/details.php5?id=1310
+/*
+Необходим для мастер-патча
+*/
+;** API **
+;30.12.2005
+
+13D6DFE: 2870311C201C21F622EB C046,004A9047,0xA0FCF101 ; SL65v50 - GetLP
+;1405DB8: 2870311C201C04F6D8EB 004A9047,0xA0FCF101,C046 ; S65v58 - GetLP
+;13CF17A: 2870311C201C21F656EE C046,004A9047,0xA0FCF101 ; CX65v50 - GetLP
+
+#pragma enable old_equal_ff
+
+;OpenWriteCloseFile
+; (c) 1nvisible
+0FCF000: FFB50D1C161C0849FF2201326B46F1F7
+0FCF010: 1FF8291C321C061C6B46F1F721F8301C
+0FCF020: 6946F1F721F8FFBD01030000
+
+;HexToInt
+; (c) empeka
+/*
+this function converts numerical string containing hexadecimal value to 32bit integer.
+Parameters:
+R0: pointer to string
+R1: address for pointer containing last processed byte from input string (optional)
+Output:
+R0: received value (32bit)
+R1: pointer to last processed character.
+
+Notes:
+Function automatically skips blanks (0x20) and new lines (0x13) in given string, so "123 4" is possible in input.
+if function encounter character, which is one of above, nor hexadecimal digit, it breaks execution.
+*/
+
+0FCF050: 10B5002302780130141C093C042CF9D9
+0FCF060: 202AF7D0302A15D3662A13D8392A09DD
+0FCF070: 412A0FDB462A03DD612A0BDB573A02E0
+0FCF080: 373A00E0303A1C1C102363439B180278
+0FCF090: 0130E7E7002901D001380860181C10BD
+
+;GetLP
+; (c) empeka
+0FCF100: 00B5A8210906A14203D8211C40BC103E
+0FCF110: 304723202870311C201C024EB04740BC
+0FCF120: 04363047,0xA0820025
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

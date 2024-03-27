@@ -1,0 +1,15 @@
+;C75v22
+;Исправление Native Menu (Меню-2-5)
+;Fix Native Menu (Menu-2-5)
+;(c) Bennie
+;(p) ahk
+;Version: 1.0
+;PatchID: 8956
+;Details: https://patches.kibab.com/patches/details.php5?id=8956
+/*
+теперь не выключается при Меню - 2 - 5
+*/
+0499130: D31B2CA0 5B8832A0
+
+;------------------------- end -------------------------
+

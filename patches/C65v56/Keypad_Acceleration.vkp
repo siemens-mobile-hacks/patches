@@ -1,0 +1,13 @@
+;C65v56
+;Скорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 3833
+;Details: https://patches.kibab.com/patches/details.php5?id=3833
+/*
+
+*/
+0C969DA: 56 20
+;------------------------- end -------------------------
+

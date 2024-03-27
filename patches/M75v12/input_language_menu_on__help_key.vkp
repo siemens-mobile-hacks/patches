@@ -1,0 +1,17 @@
+;M75v12
+;Меню выбора языка ввода при нажатии Help (Инф. Т9)
+;Input language menu on Help key (Т9 info)
+;(c) SiNgle
+;(p) SMeeTBB
+;Version: 1.0
+;PatchID: 590
+;Details: https://patches.kibab.com/patches/details.php5?id=590
+/*
+Меню выбора языка на левой софт клавише вместо справки в некоторых местах - MMS, E-Mail, заметки, SMS
+*/
+041810A: 784900227848 9EF769FF80BD ;в MMS
+05B6146: 56F721FF 00F64BFF ;в e-mail
+0587FC4: 9CF0BAE9 2FF60CF8 ;в заметках
+050D09A: FFF777FF A9F6A1FF ;в SMS
+;------------------------- end -------------------------
+

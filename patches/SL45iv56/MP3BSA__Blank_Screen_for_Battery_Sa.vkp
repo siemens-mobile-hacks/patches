@@ -1,0 +1,38 @@
+;SL45iv56
+;MP3BSA. Пустой экран в mp3 для экономии батареи (mp3lcd v2)
+;MP3BSA. Blank Screen for Battery Saving in mp3 (mp3lcd v2)
+;(c) RizaPN, Charger
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=5754
+;PatchID: 3435
+;Details: https://patches.kibab.com/patches/details.php5?id=3435
+/*
+Патч отрубает экран при блокировании МП3 и врубает обратно при разблокировании 
+экран отрубается полностью!
+Есесно это токо пример использования, можно и на блок поставить и т.п., если у кого желание будет. 
+
+!!! Не выходите из мп3 по долгому red, если заблокировано, а то вслепую будете тыркаться !!!
+
+Выбирается по по пункту меню Приложения 4 
+
+v2 - экран включается при вх. звонке, смс и т.д.
+
+English:
+Blocking keyboard in mp3 causes LCD to turn off with this patch, and unlocking to turn back on
+LCD really turns off, it doesn't only clear screen buffer!
+
+!!! Don't close locked mp3 by red button long pressing  Your screen doesn't turn on !!!
+
+v2 - selectable through 4th item of app menu
+ - turn on lcd on incoming call, incoming sms, etc
+
+Modified: May 12, 2006
+*/
+3BA1D0: F0C8F0D9 DAC7C0D5 
+
+0x27D5C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400E00F3F9423A9AF40CB0DADB22ED 
+0x27D5D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 48413D0BDAC00ECCE7F80000D7403500 
+0x27D5E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F7F80039F0C8F0D9DB00DAC008CCE118 
+0x27D5F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFF D7403500F7F80039F0C8F0D9DB00
+;------------------------- end -------------------------
+

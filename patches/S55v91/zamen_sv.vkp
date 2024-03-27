@@ -1,0 +1,15 @@
+;S55v91
+;Замена черточек в конце CB-сообщения пробелами
+;Replacement of lines at the end B- communication by the gaps
+;(c) rreezzoo
+;(r) bo_dmtr
+;(p) Bo$s
+;Version: 
+;PatchID: 1284
+;Details: https://patches.kibab.com/patches/details.php5?id=1284
+/*
+
+*/
+1EAD41: 2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D2D 
+;------------------------- end -------------------------
+

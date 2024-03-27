@@ -1,0 +1,21 @@
+;S55v91
+;Удалить имя оператора
+;Remove operator name
+;(c) Lalo
+;Version: 3
+;PatchID: 4796
+;Details: https://patches.kibab.com/patches/details.php5?id=4796
+/*
+
+*/
+;first line: 
+31A9CC: 8890 DB00 
+
+;second line: 
+;always: 
+3252AA: D460 0D42 
+
+;phone in normal mode (not netserching, not GPRS mode...): 
+;32526E: D4C0 0D15 
+;------------------------- end -------------------------
+

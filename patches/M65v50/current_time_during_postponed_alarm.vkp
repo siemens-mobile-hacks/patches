@@ -1,0 +1,19 @@
+;M65v50
+;Показ текущего времени при срабатывании отложенного будильника
+;Show current time during postponed alarm
+;(c) avkiev
+;(p) AsteriX
+;Version: 
+;PatchID: 135
+;Details: https://patches.kibab.com/patches/details.php5?id=135
+/*
+Показывает текущее время при срабатывании отложенного будильника
+*/
+0A3A3C8: 42780178 C6F534FA
+#pragma enable old_equal_ff
+0800820: 506F7374706F6E416C61726D20A96176
+0800830: 6B69657600B5044A0448011C08319047
+0800840: 0248017A427A00BD3B0DB2A000AE75A8
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

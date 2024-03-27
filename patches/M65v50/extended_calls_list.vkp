@@ -1,0 +1,26 @@
+;M65v50
+;Расширенный список вызовов
+;Extended "Calls dialed" list
+;(c) avkiev
+;(p) AsteriX
+;Version: 
+;PatchID: 134
+;Details: https://patches.kibab.com/patches/details.php5?id=134
+/*
+Жмем зеленую кнопку -> попадаем в меню "Набранные номера" (Green button -> "Calls dialed")
+Жмем красную кнопку -> попадаем в меню "Принятые номера" (Red button   -> "Calls received")
+Жмем красную кнопку -> попадаем в меню "Неотвеченные номера" (Red button   -> "Calls missed")
+Жмем красную кнопку -> выход в режим готовности. (Red button   -> Ready)
+*/
+;Жмем зеленую кнопку -> попадаем в меню "Набранные номера" (Green button -> "Calls dialed")
+;Жмем красную кнопку -> попадаем в меню "Принятые номера" (Red button   -> "Calls received")
+;Жмем красную кнопку -> попадаем в меню "Неотвеченные номера" (Red button   -> "Calls missed")
+;Жмем красную кнопку -> выход в режим готовности. (Red button   -> Ready)
+1650C64: E761A8 110880
+#pragma enable old_equal_ff
+0800800: 45787443616C6C7320A961766B696576
+0800810: 00B5E1F0A1F8E1F09BF8E1F0ABF800BD
+#pragma disable old_equal_ff
+;080081A: E1F0ABF8 C046C046 ;Не выводить список пропущенных звонков
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;SL65v53
+;Замена меню на супербыстрое
+;Press joystick goto SuperFast main menu
+;(c) SiNgle, § AsteriX
+;(p) НекрономикоН
+;Version: 
+;PatchID: 6282
+;Details: https://patches.kibab.com/patches/details.php5?id=6282
+/*
+
+*/
+09224C4: 33448E A1B68C
+;------------------------- end -------------------------
+

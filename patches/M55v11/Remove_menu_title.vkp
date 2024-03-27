@@ -1,0 +1,13 @@
+;M55v11
+;Убрать заголовок и растянуть главное меню
+;Remove title and increase menu size
+;(c) Matr!x
+;Version: 2
+;PatchID: 5251
+;Details: https://patches.kibab.com/patches/details.php5?id=5251
+/*
+
+*/
+05A1C6: DA9B10A0 CC00CC00
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;C72v22
+;Убрать звук дозвона
+;Disable connecting sound
+;(c) AlexSid
+;Version: 
+;PatchID: 5817
+;Details: https://patches.kibab.com/patches/details.php5?id=5817
+/*
+
+*/
+151164C: 9C6C52A1 00000000
+;------------------------- end -------------------------
+

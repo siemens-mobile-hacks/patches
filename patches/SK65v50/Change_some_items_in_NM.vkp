@@ -1,0 +1,27 @@
+;SK65v50
+;Удалить/изменить некоторые пункты NativeMenu
+;Remove/change some items in NativeMenu
+;(c) tick
+;(p) Лесной
+;Version: 
+;PatchID: 10128
+;Details: https://patches.kibab.com/patches/details.php5?id=10128
+/*
+
+*/
+; Удалить пункты "ProSlide" из "Настройки", "Управление устройством" и "Камера" из "Еще"
+
+04621DC: 78 65 ;ProSlide
+;0456B98: 78 65 ;Камера
+;0456BD0: 78 65 ;Управление устройством
+
+; Добавить Кард-Эксплорер и Запись звука, как в ява меню
+
+-4D6B84
+092D634: 93C42BA0 EF9031A0; Camera -> Voice Recorder
+092D708: 670E00007107 4E0B00004E0B ; Lang fix
+092D63C: AFC42BA0 8B8931A0; Device man. -> Card-Explorer
+092D740: 801100008011 1E0300001F03 ; Lang fix
++0
+;------------------------- end -------------------------
+

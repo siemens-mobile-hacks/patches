@@ -1,0 +1,14 @@
+;SL75v52
+;Убрать проигрывание музыки при изменении громкости
+;Disable playing music while changing volume
+;(c) Visad
+;(p) dimonp25
+;Version: 
+;PatchID: 9784
+;Details: https://patches.kibab.com/patches/details.php5?id=9784
+/*
+
+*/
+02D16CC: A9F7F0EE C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;S75v52
+;Увеличение фото при входящем звонке
+;Large photo during incoming call
+;(c) SiNgle
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8334
+;Details: https://patches.kibab.com/patches/details.php5?id=8334
+/*
+
+*/
+029ED74: 33 57 ;photo size
+042D548: 63 6D ;7A ; outcall_y_name
+042D564: 75 7A ;8A ; outcall_y_phonenum
+042D59C: 1B 00 ; outcall_y_blankarea1
+;042D580: 87 00 ; ??? outcall_y_blankarea2 ; отключает показ времени разговора при исходящем звонке
+042D5EA: 2D 16 ; incall_photo_y
+042D39E: 2D 16 ; outcall_photo_y
+042D754: 63 6D ;7A ; incall_y_name
+042D770: 75 7A ;8A ; incall_y_phonenum
+042D738: 1B 00 ; incall_y_blankarea1
+;042D78C: 87 00 ; incall_y_blankarea2 ; отключает показ времени разговора при входящем звонке
+;------------------------- end -------------------------
+

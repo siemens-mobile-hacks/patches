@@ -1,0 +1,14 @@
+;E71v42
+;Отключить подсветку клавиатуры
+;Disable keypad light
+;(c) SiNgle
+;(p) $TA$
+;Version: 
+;PatchID: 6768
+;Details: https://patches.kibab.com/patches/details.php5?id=6768
+/*
+
+*/
+08CC095: D5 24
+;------------------------- end -------------------------
+

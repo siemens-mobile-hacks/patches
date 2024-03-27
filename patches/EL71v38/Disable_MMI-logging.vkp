@@ -1,0 +1,14 @@
+;EL71v38
+;Отключение MMI-logging
+;Disable MMI-logging
+;(c) SiNgle
+;(p) Duku
+;Version: 
+;PatchID: 6688
+;Details: https://patches.kibab.com/patches/details.php5?id=6688
+/*
+
+*/
+04FFDB2: 041C 70BD
+;------------------------- end -------------------------
+

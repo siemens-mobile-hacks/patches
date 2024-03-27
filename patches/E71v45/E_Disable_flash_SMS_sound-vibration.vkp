@@ -1,0 +1,13 @@
+;E71v45
+;Отключить звук\вибру флеш сообщения
+;Disable flash SMS sound\vibration
+;(c) Evgr
+;Version: 1
+;PatchID: 10103
+;Details: https://patches.kibab.com/patches/details.php5?id=10103
+/*
+
+*/
+05C06F2: 10 21
+;------------------------- end -------------------------
+

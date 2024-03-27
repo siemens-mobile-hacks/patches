@@ -1,0 +1,16 @@
+;CX75v23
+;Открыть заблокированные блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1836
+;Details: https://patches.kibab.com/patches/details.php5?id=1836
+/*
+
+*/
+08CF6F8: 00 01
+
+;------------------------- end -------------------------
+

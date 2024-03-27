@@ -1,0 +1,20 @@
+;CL61v128
+;Изменить отражение в видоискателе
+;Change image direction in viewfinder
+;(c) Evgr
+;Version: 
+;PatchID: 10398
+;Details: https://patches.kibab.com/patches/details.php5?id=10398
+/*
+Патч исправляет баг перевёрнутой камеры в E71 переделанном в CL61
+English:Change image direction in viewfinder for E71 reflashed into CL61
+*/
+;omnivision_OV9650 (OV9650_DS (1.3).pdf, p.16, Address (Hex) 1E, Register Name MVFP)
+
+115B378: 04 34 ; (14 VFlip enable, 24 Mirror image)
+
+;semco_AU70C
+
+115B67E: 00 03 ; (01 VFlip enable, 02 Mirror image)
+;------------------------- end -------------------------
+

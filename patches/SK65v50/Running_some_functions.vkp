@@ -1,0 +1,128 @@
+;SK65v50
+;Вызов различных функций при залоченной клавиатуре
+;Running some functions while keyboard locked
+;(c) 1nvisible
+;(r) Bennie, avkiev, AsteriX, KiRiK, SiNgle
+;Version: 9.1
+;PatchID: 2506
+;Details: https://patches.kibab.com/patches/details.php5?id=2506
+/*
+!Необходимо установить патч * Мастер-Патч + АвтоЗагрузчик * и закачать в телефон файл 'RSFWKL.ptc'.
+Телефон выполняет различные функции при нажатии клавиш при залоченной клавиатуре.
+Функция может быть вызвана как при одиночном нажатии клавиши, так и при двойном (для защиты от случайного нажатия).
+!You need to install patch * Master-Patch + AutoLoader * and upload to the phone file 'RSFWKL.ptc'.
+The phone runs some functions while keyboard is locked.
+The function may be called either on short press or on double press (to prevent casual pressing).
+
+*/
+02C93E2: DDF7E7FB D6F60DFE ;Idle
+02CCB26: 0223E05E D3F678FA ;ScreenSaver
+#pragma enable old_equal_ff
+01A0000: 0223E85E00B500F013F8002802D106F1
+01A0010: D1FD00BD01B0714908470223E05E01B5
+01A0020: 00F006F8002800D101BD02B06C490847
+01A0030: FFB51DF199F80130072805D000206E4B
+01A0040: 9847002800D0FF2801BC1BD00F1C5328
+01A0050: 1ED000281ED001281ED005281ED00E28
+01A0060: 1ED00F281ED025281ED026281ED02728
+01A0070: 1ED028281ED029281ED014281ED01528
+01A0080: 78D001E00020FEBD00F099F80120FEBD
+01A0090: 002414E0022412E0042410E006240EE0
+01A00A0: 08240CE00A240AE00C2408E00E2406E0
+01A00B0: 102404E0122402E0142400E016243B5D
+01A00C0: 01343A5D0121114203D000F060F8002E
+01A00D0: DAD00221114201D000F063F804211142
+01A00E0: 01D000F063F845490870FF2BCCD0012B
+01A00F0: 08D0022B09D0E02B34D2D02B1BD2902B
+01A0100: 12DCC1E7F5F70CFEBEE72BF1FDFB0128
+01A0110: 07D02CF1B7FB012800D0B5E7F3F20BFC
+01A0120: B2E727F1F4FFAFE7982BADDC913B181C
+01A0130: 2E498847A8E7DF2BA6DCD03B1A1C3248
+01A0140: 43A12B4FB84730482E492A4FB8470028
+01A0150: 9ADB2C4F3E683618002333703868224B
+01A0160: 984791E7EF2B8FDCE03B9B0028A2D258
+01A0170: 904789E7013F3978002983D000F007F8
+01A0180: 002E81D000F00DF800F010F87CE7BFB5
+01A0190: 1A490A789042087001D1012600E00026
+01A01A0: BFBDFFB503200F4B9847FFBD3FB51748
+01A01B0: 0023037003F165FE102303703FBDFFB5
+01A01C0: 0F4803A20132F0216AF006ECFFBDC046
+01A01D0: FFB50A49FF200870FFBDC04645932CA0
+01A01E0: 87CC2CA099F478A0A8B87BA037D02BA0
+01A01F0: E1D7D1A01B057FA00100DCA020E1E7A8
+01A0200: 28E1E7A824E1E7A8000FE3A81C7BE5A8
+;Настройки (Settings)
+;01A0044: 07 NP ;Профиль "No Patches"
+;Список процедур (Procedure List)
+;По умолчанию в каждой строке стоит ссылка на 'XTRA_NO_APPLI' (639331A0 - нет действия), вы можете переставить ее на любую другую функцию.
+;By default in every line there's a link to 'XTRA_NO_APPLI' (639331A0 - no action), you can change it to any other.
+;Вот некоторые процедуры (Here are some procedures)
+;ELSE_SOUND_RECO - EF9031A0
+;ELSE_STOP_WATCH - 418931A0
+;ELSE_STR_MYMENU - 859031A0
+;FLSH_FLEXPLORER - 8B8931A0
+;ELSE_COUNT_DOWN - 4B8931A0
+;ELSE_DICTA_SAVE - 199131A0
+01A0210: 418931A0 ;Procedure 0
+01A0214: 4B8931A0 ;Procedure 1
+01A0218: 199131A0 ;Procedure 2
+01A021C: 639331A0 ;Procedure 3
+01A0220: 639331A0 ;Procedure 4
+01A0224: 639331A0 ;Procedure 5
+01A0228: 639331A0 ;Procedure 6
+01A022C: 639331A0 ;Procedure 7
+01A0230: 639331A0 ;Procedure 8
+01A0234: 639331A0 ;Procedure 9
+01A0238: 639331A0 ;Procedure A
+01A023C: 639331A0 ;Procedure B
+01A0240: 639331A0 ;Procedure C
+01A0244: 639331A0 ;Procedure D
+01A0248: 639331A0 ;Procedure E
+01A024C: 639331A0 ;Procedure F
+;Настройки действий при нажатии кнопок (Key bindings)
+;Начиная с v9, настройки действий при нажатии кнопок заносятся в специальный конфигурационный файл (RSFWKL.ptc).
+;Структура файла:
+;1 байт: 00 (патч не работает) или 01 (патч работает).
+;2 байт: 00 (разблокировать клавиатуру как обычно) или 01 (разблокировать клавиатуру при двойном нажатии '#').
+;Далее идет 12 пар байт, в которых вы назначаете функции и опции. Первая пара - для левой софт-кнопки (1 байт - функция, 2 байт - опция), вторая пара - для правой...
+;Since v9 key bindings are stored in special config file (RSFWKL.ptc).
+;File structure:
+;1st byte: 00 (patch is disabled) or 01 (patch is enabled).
+;2nd byte: 00 (unlock witg long press of '#') or 01 (unlock with double press of '#').
+;After that there are 12 couples of bytes which are used to define functions and options. The 1st couple is function and option for Left SoftKey, the 2nd - for Right SoftKey...
+;Список кнопок (Keys List)
+;1 - Левая софт-клавиша (Left SoftKey)
+;2 - Правая софт-клавиша (Right SoftKey)
+;3 - Красная кнопка (Red Button)
+;4 - Зеленая кнопка (Green Button)
+;5 - Громкость вниз (Volume Down)
+;6 - Громкость вверх (Volume Up)
+;7 - Джойстик вниз (Joystick Down)
+;8 - Джойстик вверх (Joystick Up)
+;9 - Джойстик вправо (Joystick Right)
+;10 - Джойстик влево (Joystick Left)
+;11 - Нажатие на джойстик (Joystick Press)
+;12 - Звездочка (Asterisk)
+;Список функций (Functions List)
+;Function 01 (© avkiev) - проговаривание текущего времени. !Должен быть установлен патч "Говорящий Телефон v2" (spelling current time. !The patch "Talking Phone v2" must be installed)
+;Function 02 (© Bennie) - просмотр пропущенных SMS/вызовов/напоминаний (view missed SMS/calls/appointments)
+;Function 9x - переключиться в профиль (где 'x' - номер профиля - от 1 до 8) (switch to profile (where 'x' is the profile number - from 1 to 8))
+;Function Dx - запустить мидлет (где 'x' - номер мидлета) (run midlet (where 'x' is the number of midlet).)
+;Function Ex - запустить процедуру (где 'x' - номер процедуры в списке процедур - см. выше) (run procedure (where 'x' is the number of procedure in procedure list - see above))
+;Function FF - ничего не делать (do nothing)
+;Список опций (Options List)
+;Option   00 - никаких дополнительных действий (no additional actions)
+;Option   01 - проверка на ДВОЙНОЕ нажатие клавиши (для защиты от случайных нажатий) (checks DOUBLE pressing of the button (to prevent casual pressing))
+;Option   02 - включить временную подсветку (light on temporarily)
+;Option   04 - разблокировать клавиатуру (рекомендуется при запуске мидлетов и других задач, где нужна подсветка при нажатии клавиш) (unlock keyboard (recommended when running midlets or other functions requiring lighting on while buttons pressed))
+;Просто просуммируйте номера необходимых функций. Например, чтобы разблокировать клавиатуру при двойном нажатии клавиши, введите 05 (4+1).
+;Just summarize the numbers of the required functions. For instance, to unlock keyboard after double pressing the button, put 05 (4+1).
+;Мидлеты (Midlets)
+;Начиная с v9, пути к мидлетам заносятся в специальные файлы (midlet0.txt, midlet1.txt...) (Since v9 paths to midlets are stored in special files (midlet0.txt, midlet1.txt...))
+;Путь к файлам конфигурации мидлетов (Path to midlet config files)
+01A0250: "0:\\Misc\\Patch Config\\RSFWKL\\midlet%i.txt",00
+#pragma disable old_equal_ff
+
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;S75v47
+;Счетчик СМС
+;SMS Count
+;(c) starfriend
+;(r) lisugar
+;Version: 3.4
+;PatchID: 8225
+;Details: https://patches.kibab.com/patches/details.php5?id=8225
+/*
+(!) Master, func lib: 0A,0B,0C,0D,17,1A,4E
+Вместо INSTANT_MESSAGE выводит информацию о колличестве отправленных смс
+*/
+0x421A78: 91DB32A0 CD5106A0
+0x3010D4: 5865BD48BC491438 004988472B5106A0
+0xE39E30: 706881694269201C 004A90479D5006A0
+;------------------------- end -------------------------
+

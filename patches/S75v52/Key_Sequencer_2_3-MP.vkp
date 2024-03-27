@@ -1,0 +1,16 @@
+;S75v52
+;Секвенсер клавиш
+;Key Sequencer
+;(c) benj9, 2NewSGold by BuG
+;(r) chaos, avkiev, 1nvisible and all fw explorers
+;(p) Diman3452
+;Version: 2.3-MP
+;PatchID: 8610
+;Details: https://patches.kibab.com/patches/details.php5?id=8610
+/*
+ 
+*/
+0904576: 010602D5FFF782FFB0BD 014CA047B0BD,0xA006B21F
+
+;------------------------- end -------------------------
+

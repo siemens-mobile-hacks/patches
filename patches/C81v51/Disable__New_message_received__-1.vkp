@@ -1,0 +1,22 @@
+;C81v51
+;Отключить "Получено новое сообщение!" при входящем SMS
+;Disable "New message received!" at incoming SMS
+;(c) Evgr
+;(p) dimonp25
+;Version: v0.1b
+;PatchID: 8178
+;Details: https://patches.kibab.com/patches/details.php5?id=8178
+/*
+
+*/
+; Отключить "Получено новое сообщение!" при входящем SMS 
+; Disable "New message received!" at incoming SMS 
+; C81v51
+; (c) Evgr
+; v0.1 beta
+
+02FE744: 28 00
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

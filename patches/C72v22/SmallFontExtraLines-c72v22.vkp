@@ -1,0 +1,14 @@
+;C72v22
+;Мелкий шрифт доп строчек курсора
+;Small font extra lines of cursor
+;(c) Feyman
+;(p) FrozenFire
+;Version: 
+;PatchID: 10100
+;Details: https://patches.kibab.com/patches/details.php5?id=10100
+/*
+В курсоре меню только верхняя строчка будет отображается нормальным шрифтом, 2 и 3 мелким. Есть скрины http://patches.kibab.com/patches/details.php5?id=10095
+*/
+0C9F0F4: 3968 0721
+;------------------------- end -------------------------
+

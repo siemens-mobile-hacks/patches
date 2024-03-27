@@ -1,0 +1,14 @@
+;S75v40
+;Убрать сообщение "Сохранить в:" после съёмки
+;Disable message "Saved to:" after you take a foto
+;(c) SiNgle
+;(p) -=(Kad)=-
+;Version: 
+;PatchID: 5076
+;Details: https://patches.kibab.com/patches/details.php5?id=5076
+/*
+
+*/
+058B490: D1F0AEEA C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;CF75v22
+;Отключить звук в начале записи видео
+;No start sound in Video rec
+;(c) SiNgle
+;(r) AsteriX
+;Version: 
+;PatchID: 1534
+;Details: https://patches.kibab.com/patches/details.php5?id=1534
+/*
+Отключить звук в начале записи видео
+
+No start sound in Video rec
+*/
+02DFC64: 1A 1D
+;------------------------- end -------------------------
+

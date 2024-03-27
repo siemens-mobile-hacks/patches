@@ -1,0 +1,15 @@
+;S75v40
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) Kibab
+;Version: 
+;PatchID: 3752
+;Details: https://patches.kibab.com/patches/details.php5?id=3752
+/*
+Уменьшает задержку между автоповторами нажатия на клавиатуру
+English:Reduces time between autoretry of key press
+*/
+08FFF9A: 011C 2021
+;------------------------- end -------------------------
+

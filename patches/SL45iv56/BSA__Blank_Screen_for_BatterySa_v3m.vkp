@@ -1,0 +1,58 @@
+;SL45iv56
+;BSA. Черный экран для сохранения заряда батареи (moved)
+;BSA. Blank Screen for Battery Saving (moved)
+;(c) Charger, RizaPN
+;(p) PawelW
+;Version: 3
+;PatchID: 7896
+;Details: https://patches.kibab.com/patches/details.php5?id=7896
+/*
+Экран будет "чистым" при блокировании клавиатуры или если 
+клавиши разблокируются длинным нажатием "#".
+Экран будет обычным когда: клавиатура разблокирована, при
+входящем звонке, при длинном нажатии "Красной кнопки" 
+(нужен patchID 1678) и при сигнале напоминания.
+v3 - выключает экран полностью (v2 - менялся контраст экрана) выбирается четвертым пунктом меню app 
+
+
+
+Патч вкл./выкл. через меню Установки -> Приложение -> Профиль 1 -> Функция 4
+
+
+English: Screen will be blanked when auto-keylock is executed,
+or keypad is unlocked by long-pressing # button.
+Screen will be normal when : keypad is unlocked, incoming call,
+RED button long pressed (need patch "No Temporary Light
+After Key Unlocked" - patchID 1678), and appointment alarm.
+v3 - new turning off LCD method
+
+Patch could be turn ON/OFF through the new Setup -> Application menu item 4.
+
+
+21.07.2007 v3 - moved to location of old Blank screen beacouse conlifct with "Funny dispaly" at 0x27DBC0
+
+Release: November 5, 2003
+Modified: may 10, 2006
+Moved: 21.07.2007 (PawelW)
+*/
+;Patch could be turn ON/OFF through the new App menu item 4
+
+0x3E1710: E6003600 DAC7EADC
+
+;if you want to activate this blank screen patch when
+;the keypad is locked using # button long-press, enter this:
+0x3AD2A8: DAA38040 DAC7C0DC
+
+;if you also want to use it when the keypad is autolocked, add this:
+0x3B02AA: DAA38040 DAC7C0DC
+
+0x27DCC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB0A3D079AF405B0E118F6F80039DAC0
+0x27DCD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 08CCFAA38040D7400E00F3F9423AE600
+0x27DCE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3500F3F800394980CB00BBF52D089AF4
+0x27DCF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 06B0E7F80000F7F80039DAC00ECCE600
+0x27DD00: FFFFFFFF 3600DB00
+
+;for turning on lcd with long red button when keylocked
+21FBC8: DAC15AFB9A0402D0DAC13AFB DADE10179A0402D0DAC198FB
+;------------------------- end -------------------------
+

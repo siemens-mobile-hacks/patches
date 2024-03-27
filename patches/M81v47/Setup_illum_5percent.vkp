@@ -1,0 +1,15 @@
+;M81v47
+;Настройка подсветки шагом в 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(p) Barracuda
+;Version: 
+;PatchID: 9051
+;Details: https://patches.kibab.com/patches/details.php5?id=9051
+/*
+
+*/
+033EEFC: 0a 05 ;или любое число в hex
+033EF02: 0a 05 ;или любое число в hex
+;------------------------- end -------------------------
+

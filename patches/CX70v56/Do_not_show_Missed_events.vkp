@@ -1,0 +1,14 @@
+;CX70v56
+;Не показывать "Пропущенные события"
+;Do not show "Missed events"
+;(c) 1nvisible
+;(r) benj9
+;Version: 
+;PatchID: 3057
+;Details: https://patches.kibab.com/patches/details.php5?id=3057
+/*
+
+*/
+1721FC6: FFB5 7047
+;------------------------- end -------------------------
+

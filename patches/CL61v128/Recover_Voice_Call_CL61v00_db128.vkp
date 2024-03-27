@@ -1,0 +1,49 @@
+;CL61v128
+;Включить звук при разговоре и проигрывании amr файлов
+;Recover voice call and amr sound
+;(c) Маришка, Evgr
+;(p) ILYA_ZX, Miha_r
+;Version: 1.4
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=10418
+;PatchID: 10397
+;Details: https://patches.kibab.com/patches/details.php5?id=10397
+/*
+Возвращает звук при разговоре и воспроизведении AMR в динамик E71 перепрошитого в CL61. Не зависит от swi
+English:Recover voice call and amr sound for E71 reflashed into CL61. Not needed swi
+
+Найден баг, в гарнитуру с этим патчем играет моно
+English:Found bug, headset play mono with this patch
+*/
+0DED145: 00 01 ; registry 42
+
+0DED188: 00 03 ; registry 57
+
+0DF1650: 39 12 ; volume level
+
+0DF1654: 39 08 ; 0x8+0xD=0x15 начальная громкость при разговоре в наушниках, чем меньше, тем громче
+
+0248350: C01094E5 0010A0E3 ; disable handsfree for amr
+
+04A4BBC: 01 00 ; headset to speaker
+
+0A94294: 0040A0E1 F9F724FB ; speaker to headset
+
+0A93C94: 003093E5 7EF924FA ; speaker to headset
+
+0A9416C: 0040A0E1 4CF824FA ; speaker to headset
+
+0A83738: 6288E74B00061A816288000E 004A9047,0xA13D22B7,E54B1A81 ; normalize volume in headset
+
+#pragma enable old_equal_ff
+13D2270: F7B500F031F8152801D10123F7BD0023
+13D2280: F7BD08B5FFF7F4FF002B01D0222408BD
+13D2290: 041C08BD1B6808B5FFF7EAFF002B00D0
+13D22A0: 182108BD08B5FFF7E3FF002B01D00024
+13D22B0: 08BD041C08BD0006000E00B5FFF7D8FF
+13D22C0: 6288002B00D103E00720392A00D00D32
+13D22D0: 08BC04331847C04602488068002800D0
+13D22E0: 00797047,0xA8E23A0C              ; 0D0: RamAccPoint
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

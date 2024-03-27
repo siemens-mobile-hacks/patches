@@ -1,0 +1,17 @@
+;S65v58
+;Изменение сигнала таймера
+;Timer Signal Change
+;(c) StrikerX
+;(p) benj9
+;Version: 
+;PatchID: 1238
+;Details: https://patches.kibab.com/patches/details.php5?id=1238
+/*
+Изменяет мелодию сигнала таймера на более долгую и громкую.
+English:Makes countdown melody longer and louder.
+*/
+13CAC3C: 1C003E 44F83D ; polytechno
+;13CAC3C: 1C003E A4F83D ; muh
+;13CAC3C: 1C003E B4F83D ; kikeriki
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;SL45iv56
+;Мелодии вызова играют только в гарнитуре, если она подключена
+;Ringtones play only in handsfree if it connected
+;(c) abomin
+;Version: 
+;PatchID: 2069
+;Details: https://patches.kibab.com/patches/details.php5?id=2069
+/*
+Release: 30.04.2005 
+*/
+22E90E: E6FC0001E6FD0200DAC28AE6F2FC0081 F2FC0081DAC254E148413D0BE112F7F2 
+22E91E: DAC254E148402D14E112F7F20281F78E 0281F78E0481F78F0681F6F80881F6F9 
+22E92E: 0481F78F0681F6F80881F6F90A81E6FC 0A81E6FC0001E6FD0200DAC28AE60D08 
+22E93E: 0001E6FD0200DAC28AE60D02 CC00CC00CC00CC00CC00CC00 
+;------------------------- end -------------------------
+

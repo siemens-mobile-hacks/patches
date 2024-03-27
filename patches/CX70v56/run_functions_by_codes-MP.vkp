@@ -1,0 +1,18 @@
+;CX70v56
+;Запуск функций с помощью *# кодов
+;Running functions with *# codes
+;(c) empeka
+;Version: 
+;PatchID: 1211
+;Details: https://patches.kibab.com/patches/details.php5?id=1211
+/*
+Врезка к патчу 1194
+
+Пример: 
+в F0 заносим A0FC3001 (talking_phone), а в CodeStr=67
+Теперь на гл. эк. набираем комбинацию: 670# 
+
+*/
+171B668: 0655021951700522 004B9847,0xA0FC3501 ; CX70v56
+;------------------------- end -------------------------
+

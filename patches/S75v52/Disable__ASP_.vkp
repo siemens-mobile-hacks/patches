@@ -1,0 +1,18 @@
+;S75v52
+;Отключение ASP
+;Disable  ASP
+;(c) caine
+;(p) den11111
+;Version: 1.2
+;PatchID: 8289
+;Details: https://patches.kibab.com/patches/details.php5?id=8289
+/*
+
+*/
+02A5AEA: 00 01
+02A5AE6: 02 01
+
+020306F: 71 73
+020307A: 41738173 01218171
+;------------------------- end -------------------------
+

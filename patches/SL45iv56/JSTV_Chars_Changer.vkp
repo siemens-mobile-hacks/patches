@@ -1,0 +1,21 @@
+;SL45iv56
+;Изменение символов для патча JSTV
+;Just Simple Text Viever Chars Changer
+;(c) sc0ty
+;Version: 
+;PatchID: 5929
+;Details: https://patches.kibab.com/patches/details.php5?id=5929
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=JSTV_Chars_Changer.zip
+
+/*
+English:
+Little plug in to JSTV (1900), repair bug connected with Polish font.
+After load text file run this, chars will be changed using
+char table. If you like, you can change this table:
+run any hex explorer and modify data 100h - 1FFh.
+
+This version of table is Polish language.
+*/
+; see in attach
+;------------------------- end -------------------------
+

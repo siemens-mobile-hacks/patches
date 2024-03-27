@@ -1,0 +1,48 @@
+;C75v22
+;Разгон CPU до 208 МГц
+;CPU OverClock to 208 MHz
+;(c) Dimadze
+;(r) Dimadze
+;(p) m.ksy
+;Version: 1.0
+;PatchID: 10679
+;Details: https://patches.kibab.com/patches/details.php5?id=10679
+/*
+Разгоняет CPU до 208 МГц
+*/
+;C75v22
+;CPU OverClock to 208 MHz
+;Разгон CPU до 208 МГц
+;(c)Dimadze
+;(p)m.ksy
+;v1.0
+
+/*
+
+DevSetup Overlay показывает текущую частоту
+Телефон реально работает быстрее при 208 MHz!
+В других режимах 52 и 104 скорости не прибавится!
+
+*/
+;PATCH_BODY
+#pragma enable old_equal_ff
+0x001FFF00: FF1CC1E3801E81E3A4108EE5794200EA
+0x001FFF10: 4C009FE5A80090E5200AA0E10F0000E2
+0x001FFF20: 040050E3D000A0036800A0130880BDE8
+0x001FFF30: 4221A0E11F402DE9F004A0E3101090E5
+0x001FFF40: 4016C1E3101080E5601090E52010A0E3
+0x001FFF50: 601080E5681090E52010A0E3681080E5
+0x001FFF60: 1F80BDE8000050F4
+;PLL_A4_FIX
+#pragma disable old_equal_ff
+0x002108F4: A4108EE5 81BDFFEA
+;PLL_A8_HIGHFREQ
+0x00210D54: 800980E3 400880E3
+;EBU_PLL_SETTINGS
+0x0021AEF8: 4221A0E1 0C94FFEB
+;CPU_OC_OVERLAY
+0x00883F50: 6800A0E3 EEEFE5EA
+
+
+;------------------------- end -------------------------
+

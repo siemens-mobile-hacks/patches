@@ -1,0 +1,39 @@
+;C72v22
+;Продвинутый индикатор сети
+; Improved net Indicator
+;(c)  arsh0r
+;(p) птичка
+;Version: 0.13
+;PatchID: 6775
+;Details: https://patches.kibab.com/patches/details.php5?id=6775
+/*
+Этот патч заменяет стандартный индикатор сети на 6 мини-индикаторов соседних сот.
+Используются следующие картинки:
+0x322 - 0x328 ;1-7 GSM900
+0x329 - 0x32F ;1-7 GSM1800
+0x330 - Слабый уровень сигнала
+Размеры картинок - 5x14
+this patch displays 6 bars meaning the next 6 available GSM channels instead 
+of the normal net indicator. the bar images are still a bit crappy, because
+i don't know how to make them transparent, for any help i'll be pleased. here
+is a table of the used images:
+0x322 - 0x328 ;1-7 GSM900
+0x329 - 0x32F ;1-7 GSM1800
+0x330 low signal
+the image size is 5x14 px
+
+*/
+08C4CA4: 00F0F8FA 79F02CFA
+#pragma enable old_equal_ff
+093E100: F8B50F1C0025194C461F2088FF2801D2
+093E110: 174A01E0164A0732A079222819D33E28
+093E120: 01D2063217E0452801D2053213E04C28
+093E130: 01D204320FE0532801D203320BE05A28
+093E140: 01D2023207E0612801D2013203E06828
+093E150: 01D3074A0E32074B0536391C1B68301C
+093E160: 98470C340135062DCFDBF8BDF42847A8
+093E170: 2203000078E193A099528CA0
+#pragma disable old_equal_ff
+;093E158: 05 04 ;другое расстояние между индикаторами
+;------------------------- end -------------------------
+

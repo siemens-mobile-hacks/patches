@@ -1,0 +1,16 @@
+;M65v58
+;Запись видео 1 минуту
+;Video rec 1min
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 869
+;Details: https://patches.kibab.com/patches/details.php5?id=869
+/*
+
+*/
+08D92C6: 0300C8C003 2000C8C020
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,26 @@
+;EL71v38
+;Запуск рефрешера при выходе из мастер-мидлета
+;Run Refresher On Exit From Master-Midlet
+;(c) 1nvisible
+;(p) DuKu
+;Version: MP
+;PatchID: 6687
+;Details: https://patches.kibab.com/patches/details.php5?id=6687
+/*
+Удобно ;) После редактирования настроек МП-патчей при выходе из Мастер-Мидлета сразу запускается рефрешер.
+*/
+0A8F4C0: 000050E30E00001A6C408FE2 04E08FE204F01FE5090F06A0
+
+#pragma enable old_equal_ff
+0060F00: 006088E5F081BDE8002801D118A47047
+0060F10: EFB52868174B984225D16868164B9842
+0060F20: 02D1FFF7B5FE1DE0144B984215D1281C
+0060F30: 0830002181DF031C281C203081DF021C
+0060F40: 281C183081DF011C02B4281C103081DF
+0060F50: 02BCF0B49847F0BC04E0094B984201D1
+0060F60: 08A4FFE7EFBDEFBC019807B0FFF7C8EF
+0060F70: 000000004D504A43434F4E4652554E46
+0060F80: 4D50564E76332E30302052433200
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

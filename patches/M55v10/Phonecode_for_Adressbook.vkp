@@ -1,0 +1,39 @@
+;M55v10
+;Код телефона на просмотр Адресной книги
+;Phonecode for Adressbook view
+;(c) ACiD[mrp]
+;(p) totenkopf
+;Version: 
+;PatchID: 1404
+;Details: https://patches.kibab.com/patches/details.php5?id=1404
+/*
++ пароль на Группы и Телеф. справ. чтоб оттуда не залезть
+!имеется ГЛЮК - ДЛЯ ВЫХОДА ИЗ АДРЕСКИ НУЖНО ДОЛГО ЖАТЬ НА КРАСНУЮ КНОПКУ (при коротком нажатии телефон виснет)
+в адреску всё-таки можно попасть, например набрав номер и нажав софт-клавишу для сохранения
+как с этим всем бороться не известно
+
+*/
+059523: 6AFE9E 55207F ;пароль на адреску
+0D4BA7: 6AFE9E 55207F ;НЕ СТАВИТЬ, если стоит патч *Смена языка на русский при входе в адресную книгу*
+;35DE65: 6AFE9E 55207F ;РАСКОММЕНТИРОВАТЬ, если стоит патч *Смена языка на русский при входе в адресную книгу*
+0D77ED: 6AFE9E 55207F
+4FB68B: 6AFE9E 55207F
+0D2CA7: 6A869F 55207F
+0E358D: 6A869F 55207F
+357F08: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00000000060064912E00E000D4F72100
+357F18: FFFFFFFFFFFFFFFF 4E280A002C7F5500
+357F20: FFFFFFFFFFFFFFFFFFFFFFFF E6FC087FE6FD5501FA2E96E4
+357F2C: FFFFFFFFFFFFFFFFFFFFFFFF E00CE00DE00EE00FFA6AFE9E
+059557: 6B2635 55507F ;пароль на группы
+357F38: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00000000060064912E00E000D4F72100
+357F48: FFFFFFFFFFFFFFFF 4E280A005C7F5500
+357F50: FFFFFFFFFFFFFFFFFFFFFFFF E6FC387FE6FD5501FA2E96E4
+357F5C: FFFFFFFFFFFFFFFFFFFFFFFF E00CE00DE00EE00FFA6B2635
+0D2C9F: 6A809F 55807F ;пароль на Телеф. справочник на симке
+0E3591: 6A809F 55807F
+357F68: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00000000060064912E00E000D4F72100
+357F78: FFFFFFFFFFFFFFFF 4E280A008C7F5500
+357F80: FFFFFFFFFFFFFFFFFFFFFFFF E6FC687FE6FD5501FA2E96E4
+357F8C: FFFFFFFFFFFFFFFFFFFFFFFF E00CE00DE00EE00FFA6A809F
+;------------------------- end -------------------------
+

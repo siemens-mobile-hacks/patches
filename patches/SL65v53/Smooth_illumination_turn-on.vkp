@@ -1,0 +1,13 @@
+;SL65v53
+;Плавное включение подсветки
+;Smooth illumination turn-on
+;(c) SiNgle
+;Version: 
+;PatchID: 5255
+;Details: https://patches.kibab.com/patches/details.php5?id=5255
+/*
+
+*/
+0B6FB02: 0022 664A
+;------------------------- end -------------------------
+

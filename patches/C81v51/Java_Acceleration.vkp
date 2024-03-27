@@ -1,0 +1,19 @@
+;C81v51
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) Frezzz
+;Version: 
+;PatchID: 7203
+;Details: https://patches.kibab.com/patches/details.php5?id=7203
+/*
+
+*/
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) Frezzz
+0968F14: 6549 0121
+
+;------------------------- end -------------------------
+

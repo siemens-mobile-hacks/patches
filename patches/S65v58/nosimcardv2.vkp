@@ -1,0 +1,21 @@
+;S65v58
+;Работа телефона без SIM-карты
+;No SIM Card Phone Operation
+;(c) SiNgle
+;(r) 1nvisible
+;(p) KiRiK
+;Version: 2
+;PatchID: 3282
+;Details: https://patches.kibab.com/patches/details.php5?id=3282
+/*
+Нажмите на джойстик, чтобы начать начать работу
+Press joystick to start working
+*/
+169A208: 152870D1 25F052FF
+#pragma enable old_equal_ff
+16C00B0: FEB5152800D1FEBD292802D104480349
+16C00C0: 8847281CFEBC06B0F0BDC046AC2425A1
+16C00D0: 00200BA8
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

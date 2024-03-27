@@ -1,0 +1,15 @@
+;SL65v50
+;Убрать запятую между именем и фамилией в списке адресной книги
+;Remove a comma between a name and a surname in the addressbook
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 175
+;Details: https://patches.kibab.com/patches/details.php5?id=175
+/*
+Убирает запятую между именем и фамилией при просмотре адрессной книги.
+*/
+;* Убрать запятую между именем и фамилией в списке адресной книги * © SiNgle, § AsteriX
+0AB7584: 44F14EFF 00280028
+;------------------------- end -------------------------
+

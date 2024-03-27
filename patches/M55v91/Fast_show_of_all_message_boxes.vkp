@@ -1,0 +1,69 @@
+;M55v91
+;Быстрый показ почти ВСЕХ окон с сообщениями
+;Fast show of all message boxes in phone
+;(c) SiNgle & Nikolas535
+;(p) Smelter by avkiev & Nikolas535
+;Version: 
+;PatchID: 9643
+;Details: https://patches.kibab.com/patches/details.php5?id=9643
+/*
+Патч уменьшает время показа окошек практически во всех меню с 3 до 1 сек. Время можно поставить любое. Глюков не обнаружено.
+*/
+; время задаётся в мс, D007=2000 мс, DC05=1500 мс
+;385C9E: B80B D007 ; Time to show "Talk time", (c) klaster
+
+; часть 1 (выше адреса 385C9E)
+
+385908: B80B E204 ; 1250 мс 
+3858A4: B80B E204
+385684: B80B E204
+385656: B80B E204
+385230: B80B E204
+385202: B80B E204
+384632: B80B E204
+384604: B80B E204
+383050: B80B E204
+383022: B80B E204
+382FF4: B80B E204
+37F9F4: B80B E204
+37F2E6: B80B E204
+37F2B8: B80B E204
+37EFA8: B80B E204
+37EF7A: B80B E204
+37DF50: B80B E204
+37DF1E: B80B E204
+
+; часть 2 (ниже адреса 385C9E)
+
+385CCC: B80B E204
+385D1C: B80B E204
+386D30: B80B E204
+387120: B80B E204
+387152: B80B E204
+387184: B80B E204
+3877C2: B80B E204
+387D24: B80B E204
+38A002: B80B E204
+38C3FC: B80B E204
+3B9B28: B80B E204
+3B9CA6: B80B E204
+3C01B8: B80B E204
+3C15C4: B80B E204
+3C3EC8: B80B E204
+3FF9D4: B80B E204
+3FFA02: B80B E204
+3FFA9C: B80B E204
+3FFACA: B80B E204
+3FFAF8: B80B E204
+3FFB26: B80B E204
+3FFB54: B80B E204
+3FFB82: B80B E204
+3FFBB0: B80B E204
+3FFBDE: B80B E204
+3FFC0C: B80B E204
+3FFD02: B80B E204
+3FFD30: B80B E204
+3FFF0C: B80B E204
+
+;------------------------- end -------------------------
+

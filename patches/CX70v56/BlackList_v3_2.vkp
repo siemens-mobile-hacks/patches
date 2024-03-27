@@ -1,0 +1,17 @@
+;CX70v56
+;Черный список
+;BlackList
+;(c) SiNgle
+;(r) (i) KreN
+;Version: 3.2
+;PatchID: 4279
+;Details: https://patches.kibab.com/patches/details.php5?id=4279
+/*
++ Настрока действия для каждого профиля
++ Работает и при выключенном фильтре
+*/
+0B80F22: 50F539FD51F555F8061C C04600488047216CFCA0
+0B81C1C: 0006000EFF2F0AD0FD2F 004A9047416CFCA0C046
+0B82068: 4FF596FC4FF5B2FF061C 00488047016CFCA0C046
+;------------------------- end -------------------------
+

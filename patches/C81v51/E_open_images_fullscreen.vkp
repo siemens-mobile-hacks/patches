@@ -1,0 +1,17 @@
+;C81v51
+;Открывать картинки сразу во весь экран
+;Open images fullscreen immediately
+;(c) Evgr
+;(r) Ganster41
+;(p) dimonp25
+;Version: 
+;PatchID: 9577
+;Details: https://patches.kibab.com/patches/details.php5?id=9577
+/*
+
+*/
+05be5e4: 00 01
+05be5ee: 00 01
+
+;------------------------- end -------------------------
+

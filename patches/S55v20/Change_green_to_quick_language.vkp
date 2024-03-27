@@ -1,0 +1,16 @@
+;S55v20
+;Новое sms, зеленая кнопка - выбор языка
+;New sms-> green button ... "Language Selector"
+;(c) SiNgle
+;Version: 
+;PatchID: 4891
+;Details: https://patches.kibab.com/patches/details.php5?id=4891
+/*
+
+*/
+2F9DC2: E6 DA
+2F9DC3: FEEE00 6760DA ;...another Entry
+2F9DC6: E07F DB00
+5DF3AC: DA9EBE7A CC00CC00 ;hide selected language msgbox
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;X75v100
+;Папки в экплорере
+;Folders in explorer
+;(c) klaster
+;Version: 
+;PatchID: 6777
+;Details: https://patches.kibab.com/patches/details.php5?id=6777
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=folders.zip
+
+/*
+GPN-фаил заменяет 427 и 442 (hex) картинки - папки в экплорере
+*/
+GPN-фаил заменяет 427 и 442 (hex) картинки
+;------------------------- end -------------------------
+

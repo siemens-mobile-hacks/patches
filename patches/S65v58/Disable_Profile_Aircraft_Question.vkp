@@ -1,0 +1,17 @@
+;S65v58
+;Отключить вопрос о включении профиля "В Самолете"
+;Disable Profile "Aircraft" Question
+;(c) 1nvisible
+;(p) -=(Kad)=-
+;Version: 
+;PatchID: 3447
+;Details: https://patches.kibab.com/patches/details.php5?id=3447
+/*
+
+*/
+8FBD56: 45490120 904780BD
+
+;---===(port info by -=(Kad)=-)===---
+;????0120????????80BD10B50223????1829 ; all x65
+;------------------------- end -------------------------
+

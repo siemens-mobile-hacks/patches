@@ -1,0 +1,13 @@
+;SL65v53
+;Отключить Логгинг ММI
+;Disable MMI Logging
+;(c) benj9
+;Version: 
+;PatchID: 3472
+;Details: https://patches.kibab.com/patches/details.php5?id=3472
+/*
+Speeds up phone operation
+*/
+08BCC79: B5 47 
+;------------------------- end -------------------------
+

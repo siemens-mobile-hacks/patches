@@ -1,0 +1,18 @@
+;M65v50
+;MyStuff = меню выбора дисков
+;MyStuff = Disk Menu
+;(c) Single
+;(p) AsteriX
+;Version: 0.1
+;PatchID: 6310
+;Details: https://patches.kibab.com/patches/details.php5?id=6310
+/*
+Useful for MyStuff
+*/
+0A07F2A: 0C 04
+0A07F2C: 32 31
+0A07F32: 43 00
+0A07F54: 0C 04
+0A07F5C: 43 00
+;------------------------- end -------------------------
+

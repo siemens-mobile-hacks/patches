@@ -1,0 +1,17 @@
+;M75v25
+;Убрать софт-кнопки с главного экрана и опустить дату с часами вниз v2
+;Remove soft-keys from MainScreen v2
+;(c) SiNgle
+;Version: 
+;PatchID: 4083
+;Details: https://patches.kibab.com/patches/details.php5?id=4083
+/*
+
+*/
+02CBFCD: D0 E0
+02CC08A: 05D1 0028
+03473B8: 07D1 0028
+02CCB72: 0DD1 0028 
+02CCB78: 0AD1 0028
+;------------------------- end -------------------------
+

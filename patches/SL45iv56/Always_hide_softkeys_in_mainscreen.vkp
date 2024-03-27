@@ -1,0 +1,14 @@
+;SL45iv56
+;Всегда скрывать софт-клавиши главного экрана
+;Always hide softkeys in mainscreen
+;(c) Charger
+;Version: 
+;PatchID: 2648
+;Details: https://patches.kibab.com/patches/details.php5?id=2648
+/*
+Не отображаются даже софты пропущенных звонков и SMS.
+*/
+18e5dc: a001 ffff
+18e624: d613 ffff
+;------------------------- end -------------------------
+

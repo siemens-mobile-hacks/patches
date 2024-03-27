@@ -1,0 +1,16 @@
+;CX75v23
+;Изменение прогрессбара при проигрывании музыки
+;Change progressbar in music play
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1827
+;Details: https://patches.kibab.com/patches/details.php5?id=1827
+/*
+Прогрессбар становится тоньше и длиннее.
+*/
+04D9AC4: 1000660073 0500700080 ; для С65 заменить на 050051007E
+
+;------------------------- end -------------------------
+

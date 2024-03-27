@@ -1,0 +1,36 @@
+;CX70v56
+;Цифровые Часы на Заставке в Тон Активной Темы Телефона
+;Active Theme Color Scheme for Digiclock ScreenSaver
+;(c) SiNgle, tick
+;(r) titron
+;Version: 1.1
+;PatchID: 10043
+;Details: https://patches.kibab.com/patches/details.php5?id=10043
+/*
+Патч динамически меняет цвета на заставке цифровых часов в зависимости от активной темы (или скина) телефона.
+*/
++3C5C
+171C3DE: 01 82 ;1h back
+171C3E6: 00 77 ;1h font
+171C428: 01 82 ;2h back
+171C430: 00 77 ;2h font
+171C46A: 01 82 ;":" back
+171C472: 00 77 ;":" font
+171C4A6: 01 82 ;1m back
+171C4AE: 00 77 ;1m font
+171C4EE: 01 82 ;2m back
+171C4F6: 00 77 ;2m font
+171C540: 01 82
+171C548: 00 77
+171C56A: 01 82 ;AM/PM back
+171C572: 00 77 ;AM/PM font
+
++3CC4
+1733754: 01 82 ;Arrow back
+17337AC: 00 75 ;ProvName font
+17337B0: 01 82 ;background
+173381C: 00 75 ;ProvFon with Arrow
+1733820: 01 82 ;background with Arrow
++0
+;------------------------- end -------------------------
+

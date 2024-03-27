@@ -1,0 +1,16 @@
+;E71v45
+;Не менять профиль при подключении гарнитуры
+;Do not change profile at headset connection
+;(c) binghelingxi, BingK
+;(p) St@lker
+;Version: 
+;PatchID: 10323
+;Details: https://patches.kibab.com/patches/details.php5?id=10323
+/*
+Глюк: после патча перестают переключаться профили
+! http://patches.kibab.com/patches/details.php5?id=10156 - новая версия
+*/
+;DONOT_CHANGEPROFILE_AT_HEADSET_CONNECTION_HOOK
+06F25E4: 01 04
+;------------------------- end -------------------------
+

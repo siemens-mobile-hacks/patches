@@ -1,0 +1,14 @@
+;ME75v22
+;Masterpatch Shutdown Crash Fix
+;Masterpatch Shutdown Crash Fix
+;(c) benj9
+;Version: 
+;PatchID: 3929
+;Details: https://patches.kibab.com/patches/details.php5?id=3929
+/*
+
+*/
+032624C: 03DF C046
+0326254: 64F1E4EE C046C046
+;------------------------- end -------------------------
+

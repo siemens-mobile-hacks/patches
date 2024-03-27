@@ -1,0 +1,39 @@
+;S75v40
+;Отправка Flash SMS
+;Directly Send Flash SMS (DSFS)
+;(c) Bennie
+;(r) RainMaker
+;(p) bank!
+;Version: 1.1
+;PatchID: 3860
+;Details: https://patches.kibab.com/patches/details.php5?id=3860
+/*
+Начните текст сообщения с пробела
+Формат текста-> Размер шрифта-> Средний шрифт, иначе будет обычное СМС
+Add a whitespace to begin, It should be a FlashSMS
+
+*/
+;S75v40 - Отправка Flash SMS v1.1
+;S75v40 - DSFS Directly Send Flash SMS v1.1
+;(c) Bennie
+;(r) RainMaker
+;(p) bank!
+
+;Начните текст сообщения с пробела
+;Формат текста-> Размер шрифта-> Средний шрифт, иначе будет обычное СМС
+;Add a whitespace to begin, It should be a FlashSMS
+
+
+
+0E36ED8: 201CB168 67F69AFE
+
+#pragma enable old_equal_ff
+0C9EC10: 201CB8380178082906D000290CD1417B
+0C9EC20: 7F221140F02204E0437B817B1B02C918
+0C9EC30: 1822202900D10270201CB1687047
+#pragma disable old_equal_ff
+
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

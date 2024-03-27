@@ -1,0 +1,15 @@
+;M81v51
+;Замена папки для хранения диктофонных записей
+;Change Dictating Records Folder
+;(c) RainMaker AKA Shadow®
+;(r) All from S-C.org
+;(p) Cypok
+;Version: 
+;PatchID: 6704
+;Details: https://patches.kibab.com/patches/details.php5?id=6704
+/*
+Замена папки для хранения диктофонных записей.
+*/
+068A818: 1400,'0:\\Dictating machine' 0F00,'0:\\Sounds\\Voice',00,00,00,00,00,00
+;------------------------- end -------------------------
+

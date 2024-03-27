@@ -1,0 +1,19 @@
+;S75v32
+;Расширенный список вызовов из BoBaPack
+;Extended Calls List from BoBaPack
+;(c) BoBa
+;(r) RainMaker AKA Shadow®
+;(p) ferro
+;Version: 
+;PatchID: 4494
+;Details: https://patches.kibab.com/patches/details.php5?id=4494
+/*
+Врезка sw32 для: http://patches.kibab.com/patches/details.php5?id=4495
+*/
+
+03Ed940: 95bc5dA0 01FE06A0 ;sw32
+
+
+
+;------------------------- end -------------------------
+

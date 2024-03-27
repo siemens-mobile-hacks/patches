@@ -1,0 +1,16 @@
+;C81v51
+;Плавное включение подсветки
+;Smooth keypad light on
+;(c) SiNgle
+;(p) Evgr
+;Version: 
+;PatchID: 10423
+;Details: https://patches.kibab.com/patches/details.php5?id=10423
+/*
+
+*/
+
+0958190: 0022 FF22
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,44 @@
+;CX75v25
+;Иконка сообщения под меню Windows XP3
+;Icon of the messages under menu Windows XP3
+;(c) SBoY
+;Version: 1
+;PatchID: 6639
+;Details: https://patches.kibab.com/patches/details.php5?id=6639
+/*
+
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 23.11.2006  -  Time: 21:39:35                             ###
+; ### Patch for: SIEMENS CX75 v25                                     ###
+; #######################################################################
+
+
+; ##### Picture 819 #####
+010C19BC: 120E8500606E17A1 110E85000000E7A1
+
+01E70000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 08C00253FF4E0DC0FB53DFBF530608C0
+01E70010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FF1302C0F953BB770A2A4F2A05C0F873
+01E70020: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 971377537B334E02C002B7FE966E03C0
+01E70030: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F972FF1357330F7206FFFF6E03C0FE72
+01E70040: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FF020FFD2B2ADB03FFFCADD1DF6E03C0
+01E70050: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FE72FF0293FF72029203FFFCB2D6DF6E
+01E70060: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 03C0FF6E06FFFD7372730297FEDF6E03
+01E70070: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C0FF6E03FF03DBFF93022F020FFEDF6E
+01E70080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 03C0FF6E03FFFBFBFFDB77130257FD13
+01E70090: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DF6E03C0FF4E04FFFCDF371337027BFD
+01E700A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 13FF9203C0024AFC773392570213FA7B
+01E700B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 724A136E4A06C0FA0A0F2F13374E02C0
+01E700C0: FFFFFFFFFFFFFFFFFFFFFF FF4E09C0FC4E0A2E4908C0
+
+
+
+;------------------------- end -------------------------
+

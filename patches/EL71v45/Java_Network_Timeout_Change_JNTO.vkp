@@ -1,0 +1,13 @@
+;EL71v45
+;Изменить таймаут пинга в Java
+;Java Network Timeout Change JNTO
+;(c) Rst7/CBSIE
+;Version: 
+;PatchID: 7139
+;Details: https://patches.kibab.com/patches/details.php5?id=7139
+/*
+
+*/
+0A075AC: 0010A0E1 401AA0E3
+;------------------------- end -------------------------
+

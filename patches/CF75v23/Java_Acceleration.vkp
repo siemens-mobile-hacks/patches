@@ -1,0 +1,13 @@
+;CF75v23
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 4862
+;Details: https://patches.kibab.com/patches/details.php5?id=4862
+/*
+
+*/
+08494E8: 02 01
+;------------------------- end -------------------------
+

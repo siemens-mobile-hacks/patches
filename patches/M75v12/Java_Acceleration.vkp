@@ -1,0 +1,14 @@
+;M75v12
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 596
+;Details: https://patches.kibab.com/patches/details.php5?id=596
+/*
+Появляются странные эффекты с прорисовкой подписей к софт-кнопкам
+
+*/
+0897F98: 02 01
+;------------------------- end -------------------------
+

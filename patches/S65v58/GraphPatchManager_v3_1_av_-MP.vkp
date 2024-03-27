@@ -1,0 +1,24 @@
+;S65v58
+;Менеджер Графических патчей v3.1 av -MP
+;GraphPatchManager v3.1 av -MP
+;(c) KreN
+;(r) avkiev
+;(p) -=[LCW]=-ExXtReMe
+;Version: 
+;PatchID: 2371
+;Details: https://patches.kibab.com/patches/details.php5?id=2371
+/*
+
+*/
+;** GraphPatchManager v3.1 av **
+; (c) KreN
+; (r) avkiev
+; (p) -=[LCW]=-ExXtReMe
+;  s65v58
+; (!) MasterPatch v5 by avkiev
+
+1698BD4: 261C002D05900490 004FB847013EFCA0
+
+
+;------------------------- end -------------------------
+

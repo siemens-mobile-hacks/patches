@@ -1,0 +1,14 @@
+;CX70v56
+;Disable AUMA And UDIAL Debug
+;Disable AUMA And UDIAL Debug
+;(c) 1nvisible
+;Version: 
+;PatchID: 4167
+;Details: https://patches.kibab.com/patches/details.php5?id=4167
+/*
+
+*/
+0905A78: F0412DE9 1EFF2FE1 ; AUMA Debug
+0CC663C: 0FB4 7047 ; UDIAL Debug
+;------------------------- end -------------------------
+

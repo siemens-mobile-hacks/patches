@@ -1,0 +1,20 @@
+;S65v58
+;Сжатие jpeg с максимальным кач-вом (100% вместо 75%)
+;Jpeg-compression with maximal quality (100% instead of 75%)
+;(c) SiNgle
+;Version: 
+;PatchID: 2735
+;Details: https://patches.kibab.com/patches/details.php5?id=2735
+/*
+этот патч улучшает качество фото. Заметно небольщое улучшение на фотографиях, сделанных при хорошем дневном свете
+*/
+;S65 SW58
+;Ron
+
+;* Сжатие jpeg с максимальным кач-вом (100% вместо 75%) ** Jpeg-compression with maximal quality (100% instead of 75%) * © SiNgle
+09C97AC: 4B 64
+
+
+;locale=russian
+;------------------------- end -------------------------
+

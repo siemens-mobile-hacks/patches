@@ -1,0 +1,16 @@
+;S68v52
+;Change font menu and soft keys
+;Change font menu and soft keys
+;(c) SiNgle
+;(p) Hotter
+;Version: 
+;PatchID: 10284
+;Details: https://patches.kibab.com/patches/details.php5?id=10284
+/*
+
+*/
+0A2D36C: 05 0B
+0A2D3B4: 05 0B
+0A2D3B8: 04 0B
+;------------------------- end -------------------------
+

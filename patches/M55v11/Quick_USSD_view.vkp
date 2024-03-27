@@ -1,0 +1,14 @@
+;M55v11
+;Быстрый просмотр USSD сообщений и удаление с экрана
+;Quick USSD view
+;(c) Matr!x, SiNgle
+;(p) «Serg°H»
+;Version: 
+;PatchID: 5300
+;Details: https://patches.kibab.com/patches/details.php5?id=5300
+/*
+Для работы необходимо повесить ссылку 9FF005 на любую кнопку
+*/
+7F05F0: FFFFFFFFFFFFFFFFFFFF DA2D4829F0C4FA2E82DA
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;A52v9
+;Отключение сообщений при Включении/Выключении сигналов
+;Disable message at turIn on/turn off of signals
+;(c) Delirium
+;Version: 
+;PatchID: 4365
+;Details: https://patches.kibab.com/patches/details.php5?id=4365
+/*
+
+*/
+205A68: DA9E1A5A CC00CC00
+205A62: DA9EF459 CC00CC00
+;------------------------- end -------------------------
+

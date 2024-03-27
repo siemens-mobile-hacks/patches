@@ -1,0 +1,26 @@
+;M75v25
+;Мастер-патч
+;Master-patch
+;(c) avkiev
+;(r) 1nvisible, chaos
+;(p) Grizzzzly
+;Version: 11
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=5481
+;PatchID: 4678
+;Details: https://patches.kibab.com/patches/details.php5?id=4678
+/*
+Служит для управления настройками патчей непосредственно с телефона.
+Перед запуском нужно создать папку 0:\Misc\Patches\PTC\
+
+English: This patch is made to control other patches settings from mobile without connecting it to the computer.
+You must create the folder 0:\Misc\Patches\PTC\ before installing it
+
+*/
+;Run Scaner on startup
+02A7832: FF20 BEDF
+
+;Run Scaner instead of REMOTE_SYNCHRONIZATION
+04B1DA4: 616232A0 810CFCA0
+
+;------------------------- end -------------------------
+

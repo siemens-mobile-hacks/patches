@@ -1,0 +1,21 @@
+;M65v58
+;Размер шрифта и позиция Flash-SMS и т.п
+;Flash-SMS Position & Font Size
+;(c) [crazy]misha
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 867
+;Details: https://patches.kibab.com/patches/details.php5?id=867
+/*
+
+*/
+16555E8: 64 92 ; Y позиция Flash-SMS
+1655628: 64 92
+16555EC: 07 08 ; изменить шрифт Flash-SMS - 02-08 (Change Flash-SMS font)
+16555FC: 07 08
+165562C: 07 08
+165563C: 07 08
+
+;------------------------- end -------------------------
+

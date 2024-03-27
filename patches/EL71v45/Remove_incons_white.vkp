@@ -1,0 +1,15 @@
+;EL71v45
+;Убрать белый фон у иконок в Native menu
+;Remove Icons White Background in Native Menu
+;(c) SiNgle
+;(p) ahk
+;Version: 
+;PatchID: 8911
+;Details: https://patches.kibab.com/patches/details.php5?id=8911
+/*
+
+*/
+0A2E20E: 00 FF
+0A2E2B2: E7F7DEFE 00280028
+;------------------------- end -------------------------
+

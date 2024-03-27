@@ -1,0 +1,21 @@
+;A65v17
+;Замена отображения марки телефона в инфе
+;Replacement of mapping the stamp of telephone in info
+;(c) VirMay
+;Version: 
+;PatchID: 3873
+;Details: https://patches.kibab.com/patches/details.php5?id=3873
+/*
+
+*/
+67FF70:  413635  413336 ;Product: A36 (:Вспомним прошлое:) 
+;0067FF73: 000000000000000000   20225669724D617922  ;Product: A65 "VirMay"
+;67FF70:  41363500 41583635 ; Product: AX65 
+;67FF70:  413635  433435 ; Product: C45 
+;67FF70:  413635  433630 ; Product: C60 
+;67FF70:  413635  4D3535 ; Product: M55
+;67FF70:  413635  543635 ; Product: T65 
+;67FF70:  413635  5A3635 ; Product: Z65 
+
+;------------------------- end -------------------------
+

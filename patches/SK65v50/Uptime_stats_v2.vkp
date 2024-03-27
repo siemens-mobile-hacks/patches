@@ -1,0 +1,33 @@
+;SK65v50
+;Время работы телефона
+;Uptime stats
+;(c) benj9
+;(r) ~Jhellico
+;Version: 2
+;PatchID: 4242
+;Details: https://patches.kibab.com/patches/details.php5?id=4242
+/*
+При выключении выводит сообщение о времени работы телефона
+Возможен непосредственный вызов по адресу A0FDE02D
+English:
+Shows a short message with session duration at shutdown.
+Will be also launchable directly by keysequencer by call thumb: A0FDE02D
+
+*/
+07167C8: 0022009200AB0420 004A9047,0xA0FDE001
+097F870: 0010A0E30000A0E3 04F01FE5,0xA0FDE019
+#pragma enable old_equal_ff
+0FDE000: 1F4A1068002800D11360002200926B46
+0FDE010: 042072460432104700B500F007F80021
+0FDE020: 0020184FB84704BC04321047FFB5E1F7
+0FDE030: EFFF992822D0A4B084B06846124A9047
+0FDE040: 04B00F4D2E68991B1048E1F7E9FF061C
+0FDE050: 0F48E1F7E5FF051C3C20E1F7E1FF321C
+0FDE060: 2B1C009001910BA110A8051CE2F720F8
+0FDE070: 0120291C0022E2F7FFF824B0FFBDFFFF
+0FDE080: 0xA8000208,0xA0972D58,0xA096752C,80510100
+0FDE090: 100E0000557074696D65202569640D25
+0FDE0A0: 3032693A253032693A2530326900
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

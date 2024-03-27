@@ -1,0 +1,14 @@
+;S75v52
+;Отключить "Подождите" в эксплорере
+;Disable please wait in explorer
+;(c) SiNgle
+;(p) Vedan
+;Version: 
+;PatchID: 8362
+;Details: https://patches.kibab.com/patches/details.php5?id=8362
+/*
+
+*/
+0529EDA: 03D1 03E0
+;------------------------- end -------------------------
+

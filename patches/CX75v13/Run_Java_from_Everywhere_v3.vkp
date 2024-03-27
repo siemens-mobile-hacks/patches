@@ -1,0 +1,18 @@
+;CX75v13
+;Запуск явы отовсюду
+;Run Java from Everywhere
+;(c) 1nvisible
+;(r) Zl0d, Kamikadze!
+;(p) Luke
+;Version: 3
+;PatchID: 3679
+;Details: https://patches.kibab.com/patches/details.php5?id=3679
+/*
+Ниче переименовывать не надо. 
+No additional actions needed. 
+
+*/
+07Bdc00: 2500000A 000050E3
+
+;------------------------- end -------------------------
+

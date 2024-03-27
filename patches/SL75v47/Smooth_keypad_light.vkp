@@ -1,0 +1,14 @@
+;SL75v47
+;Плавное включение подсветки
+;Smooth keypad light
+;(c) SiNgle
+;(p) kiREALlov
+;Version: 
+;PatchID: 7303
+;Details: https://patches.kibab.com/patches/details.php5?id=7303
+/*
+
+*/
+09647D8: 0022 FF22
+;------------------------- end -------------------------
+

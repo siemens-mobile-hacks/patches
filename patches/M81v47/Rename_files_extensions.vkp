@@ -1,0 +1,16 @@
+;M81v47
+;Переименование файлов с расширением
+;Rename files with extensions
+;(c) SiNgle
+;(p) Barracuda
+;Version: 
+;PatchID: 9052
+;Details: https://patches.kibab.com/patches/details.php5?id=9052
+/*
+
+*/
+002A51C8: 2E22 0022
+002A51DA: 2E22 0022
+005B2DE4: 2E22 0022
+;------------------------- end -------------------------
+

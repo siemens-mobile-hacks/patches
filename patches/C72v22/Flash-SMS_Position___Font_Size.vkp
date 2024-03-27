@@ -1,0 +1,18 @@
+;C72v22
+;Размер шрифта и позиция Flash-SMS
+;Flash-SMS Position & Font Size
+;(c) [crazy]misha
+;Version: 
+;PatchID: 5841
+;Details: https://patches.kibab.com/patches/details.php5?id=5841
+/*
+
+*/
+0944350: 2B 66 ; Y позиция Flash-SMS для С65 заменить на 66
+0944390: 2B 66 ; для С65 заменить на 66
+0944354: 07 08 ; изменить шрифт Flash-SMS - 02-08 (Change Flash-SMS font)
+0944364: 07 08
+0944394: 07 08
+09443A4: 07 08
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;X75v100
+;GameBoy
+;GameBoy
+;(c) cbn
+;Version: 0.7
+;PatchID: 5985
+;Details: https://patches.kibab.com/patches/details.php5?id=5985
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=GB_07.zip
+
+/*
+GameBoy эмулятор
+Полностью переписан
+*/
+GameBoy эмулятор
+Положить в папку 0:\ZBin\GameBoy
+Управление демо игры: 5 - старт, * - огонь
+
+В extension.cfg добавить строки:
+gb:0:\ZBin\GameBoy\GameBoy.elf
+gbc:0:\ZBin\GameBoy\GameBoy.elf
+
+Скачайте приложенный файл
+;------------------------- end -------------------------
+

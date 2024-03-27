@@ -1,0 +1,26 @@
+;S55v20
+;Время перехода в режим ожидания
+;ITO. Idle Time Out
+;(c) rizapn
+;(p) Giro
+;Version: 
+;PatchID: 5086
+;Details: https://patches.kibab.com/patches/details.php5?id=5086
+/*
+Изменяет время перехода в режим ожидания. После применения этого патча на таймаут время в заставке больших цифровых часов обновляется через 1 минуту, как и положено!
+English:Modify time-out value for the system to go back to the IDLE conditions.
+
+*/
+8F9EE6: C0D4E01D 409CE00D
+
+/*
+The original value is 1D4C0 = 120,000ms = 2minutes
+in that example I change it to 09C40 = 40,000 = 40secs (faster)
+use your own xyyzz value and use this:
+
+0x8F9EE6: C0D4E01D ZZYYE0XD
+
+instead of that original patch (remark it).
+*/
+;------------------------- end -------------------------
+

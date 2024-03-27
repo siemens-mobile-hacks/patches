@@ -1,0 +1,27 @@
+;SL75v47
+;Исправление кнопок *, 0, #, кнопка вызова в Native Menu
+;Fix key *, 0, #, greenkey in Native Menu
+;(c) BingK(binghelingxi)
+;(p) bertgrin
+;Version: 
+;PatchID: 9483
+;Details: https://patches.kibab.com/patches/details.php5?id=9483
+/*
+рус: *-Прочее, 0-Мои файлы, решетка-Настройки, кнопка вызова-Разработчик
+eng: *-Extra, 0-Mystuff, lattice-Setup, GreenKey-Dev.Menu
+*/
+;NMNU_FIX_KEY_HOOK3 
+0x00333268: 1529 0529 
+;NMNU_FIX_KEY_HOOK1 
+0x00A1D2E4: 162869D171688868 004A9047017806A0
+;NMNU_FIX_KEY_HOOK2 
+0x00A1D2F0: 3928 3C28 
+;NMNU_FIX_KEY_BODY 
+#pragma enable old_equal_ff 
+0x00067800: 162807D0142803D015280FD13C2006E0 
+0x00067810: 3A2004E071688868302802D13B207168 
+0x00067820: 8860716888687246121D10477246D432 
+0x00067830: 1047 
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

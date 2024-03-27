@@ -1,0 +1,16 @@
+;CX75v23
+;Отключить подсветку кнопок
+;Disable keypad light
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1809
+;Details: https://patches.kibab.com/patches/details.php5?id=1809
+/*
+
+*/
+07D696B: D5 24
+
+;------------------------- end -------------------------
+

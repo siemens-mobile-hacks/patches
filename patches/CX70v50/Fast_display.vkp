@@ -1,0 +1,14 @@
+;CX70v50
+;Быстрый показ окна "Язык ввода:" при выборе языка
+;Fast display of a window " Language of input: " at a choice of language
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 87
+;Details: https://patches.kibab.com/patches/details.php5?id=87
+/*
+Быстрый показ окна "Язык ввода:" при выборе языка.
+*/
+0D7F730: B80B 0100
+;------------------------- end -------------------------
+

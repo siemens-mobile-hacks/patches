@@ -1,0 +1,14 @@
+;S75v52
+;Отключить бутскрин
+;Disable BootScreen
+;(c) benj9
+;(p) Vedan
+;Version: 
+;PatchID: 8360
+;Details: https://patches.kibab.com/patches/details.php5?id=8360
+/*
+
+*/
+01A68AC: 693E000B 0000A0E1
+;------------------------- end -------------------------
+

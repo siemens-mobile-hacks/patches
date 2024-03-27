@@ -1,0 +1,15 @@
+;M75v19
+;Сохранение фоток в папке Photos
+;Save photos in folder Photos
+;(c) unknown
+;(p) Geka
+;Version: 
+;PatchID: 4704
+;Details: https://patches.kibab.com/patches/details.php5?id=4704
+/*
+
+*/
+4a6481: 5049435455524553 50686F746F733030
+4a6492: 500069006300740075007200650073 500068006F0074006F007300000000
+;------------------------- end -------------------------
+

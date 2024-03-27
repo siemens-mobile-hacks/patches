@@ -1,0 +1,32 @@
+;SL45iv56
+;EXR. Правый софт в CardExplorer'е
+;EXR. Explorer Rightsoftkey
+;(c) rizapn
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=2095
+;PatchID: 1887
+;Details: https://patches.kibab.com/patches/details.php5?id=1887
+/*
+Меняет функцию правого софта на открыть, пометить - на кнопке '#'.
+
+
+Created: July 16, 2004
+
+Патч №189 с http://patch.oslik.ru/SL45_RU
+*/
+0x189F98: 8B E8
+0x189F9A: 39 2D
+0x189F9E: 84 E8
+
+0x3863C6: 7869 3664
+0x386482: E6F72F00 EA009664
+0x386496: E6F73900DC41B876A8C0 DC41A87646F72F002DF3
+0x3864A0: D4D00200DAE7AE61F064F075F0C6F0D7 889088808860DAD89873EA00CE69DC47
+0x3864B0: F0E8F0F906FEF001DAD8 F426010057F2FF00DB00
+0x3869A2: E7F2FF00 DAD8AE64
+
+;Меняет функцию кнопки'#' на пометить
+0x3863EE: 4666 7869
+;0x3863E6: 4666 7869 ;Тоже самое, только на кнопке '*'
+;------------------------- end -------------------------
+

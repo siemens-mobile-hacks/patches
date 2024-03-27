@@ -1,0 +1,14 @@
+;M81v51
+;Отключение картинок на пропущенные события
+;Disable icons of missed events
+;(c) dimonp25
+;(p) Виктор89
+;Version: 
+;PatchID: 9297
+;Details: https://patches.kibab.com/patches/details.php5?id=9297
+/*
+
+*/
+0302BD1: D0 E0
+;------------------------- end -------------------------
+

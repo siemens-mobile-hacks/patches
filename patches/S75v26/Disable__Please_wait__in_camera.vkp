@@ -1,0 +1,14 @@
+;S75v26
+;Убрать сообщение "Пожалуйста подождите" при запуске камеры
+;Disable "Please wait" in camera
+;(c) Single
+;(p) Striker Voo
+;Version: 
+;PatchID: 2442
+;Details: https://patches.kibab.com/patches/details.php5?id=2442
+/*
+
+*/
+01593A4: 03D1 03E0
+;------------------------- end -------------------------
+

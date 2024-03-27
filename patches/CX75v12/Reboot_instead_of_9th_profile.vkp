@@ -1,0 +1,13 @@
+;CX75v12
+;Перезагрузка вместо 9го профиля
+;Reboot instead of 9th profile
+;(c) -=(Kad)=-
+;Version: 1.0
+;PatchID: 7707
+;Details: https://patches.kibab.com/patches/details.php5?id=7707
+/*
+
+*/
+049CEC0: 0xA0A9646C 0xA0A96478
+;------------------------- end -------------------------
+

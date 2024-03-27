@@ -1,0 +1,15 @@
+;X65v100
+;Зарядка 0%
+;Accum 0%
+;(c) Geka
+;Version: 
+;PatchID: 6504
+;Details: https://patches.kibab.com/patches/details.php5?id=6504
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=zero_accum_lvl.zip
+
+/*
+при нажатии на эльф зарядка батареи везде станет 0%
+*/
+Качаем приложенный файл
+;------------------------- end -------------------------
+

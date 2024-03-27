@@ -1,0 +1,16 @@
+;EL71v45
+;Автодозвон с заданной паузой
+;AutoRedial forever with selected pause
+;(c) SiNgle,AsteriX
+;(p) Estar
+;Version: 
+;PatchID: 7920
+;Details: https://patches.kibab.com/patches/details.php5?id=7920
+/*
+
+*/
+09BEC42: A068 0020 
+09BEC05: 30 20 
+0C52928: 05 0A ; pause (0A=10 seconds)
+;------------------------- end -------------------------
+

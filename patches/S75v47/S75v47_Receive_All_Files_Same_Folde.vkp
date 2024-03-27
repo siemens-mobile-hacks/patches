@@ -1,0 +1,27 @@
+;S75v47
+;Приём всех файлов в одну папку
+;Receive All Files to the Same Folder
+;(c) 1nvisible
+;(p) Evgr
+;Version: 0.91b
+;PatchID: 10499
+;Details: https://patches.kibab.com/patches/details.php5?id=10499
+/*
+
+*/
+
+04D3F66: 10B50C1CFFF7D4FF002C 00B50220024AFE469047
+04D3F70: 06D0002804D0407A 00BDC046,0xA140AA19
+
+04D4080: 10B50C1C002806D0002C04D0FFF7E0FE 00B50120014AFE46904700BD,0xA140AA19
+
+#pragma enable old_equal_ff
+140AA18: 30B5051C0868012D04D109A1122200F0
+140AA28: 06F830BD0EA1,12,2200F001F830BDF0B5 ;change 0x12 to (lentgth*2 + 2)
+140AA38: 141C00254B5D43550135A542FAD1F0BD
+140AA48: 0800,'4:\\Inbox'                   ;folder for OBEX mode, may use MicroSD 
+140AA68: 0800,'0:\\Inbox'                   ;folder for Phone mode, don't use MicroSD! 
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

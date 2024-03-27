@@ -1,0 +1,13 @@
+;C75v22
+;Убрать имя оператора в заставке
+;Remove provider name in ScreenSaver
+;(c) KiRiK
+;Version: 
+;PatchID: 6825
+;Details: https://patches.kibab.com/patches/details.php5?id=6825
+/*
+
+*/
+02D26CC: 72ED 0028
+;------------------------- end -------------------------
+

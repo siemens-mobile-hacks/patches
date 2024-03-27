@@ -1,0 +1,48 @@
+;M65v50
+;Позиционирование главного экрана
+;MainScreen positioning
+;(c) SiNgle, BuG, KiRiK, arsh0r,
+;(p) AsteriX
+;Version: 2
+;PatchID: 6315
+;Details: https://patches.kibab.com/patches/details.php5?id=6315
+/*
+
+*/
+;Charge Indicator (Switched-Off Mode)
+1633B76: 10 5E ;background end Y
+1633B7C: 02 50 ;background start Y
+1633B7E: 63 33 ;background start X
+1633B80: 80 50 ;background end X
+1633B85: F007FB 280028 ;no background
+1633B8E: 02 50 ;Y
+1633B90: 63 33 ;X
+;Net
+1633C2E: 10 5E ;background end Y
+1633C32: 02 01 ;background start Y
+1633C34: 21 1F ;background end X
+1633C36: 03 01 ;background start X
+1633C3B: F0ACFA 280028 ;no background
+1633C44: 02 01 ;Y
+1633C46: 03 01 ;X
+;Iconbar
+1633EC8: 10 0F ;background end Y
+1633ECC: 02 01 ;background start Y
+1633ECE: 23 37 ;background start X
+1633ED0: 61 75 ;background end X
+1633ED7: F05EF9 280028 ;no background
+1633F02: 21 35 ;X
+1633F1C: 02 01 ;Y
+;Battery
+1633FB6: 10 1B ;background end Y
+1633FBA: 02 0D ;background start Y
+1633FBC: 80 1E ;background end X
+1633FBE: 63 01 ;background start X
+1633FC3: F0E8F8 280028 ;no background
+1633FCC: 02 0D ;Y
+1633FCE: 63 01 ;X
+1654058: 08 12 ;Y - Provider name
+1654068: 1A 24 ;Y - Sub provider name
+;163AE38: A1 A0 ;Y - Time & Date
+;------------------------- end -------------------------
+

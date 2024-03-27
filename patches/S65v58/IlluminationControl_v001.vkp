@@ -1,0 +1,29 @@
+;S65v58
+;Управление подсветкой
+;IlluminationControl
+;(c) benj9
+;(p) KiRiK
+;Version: 0,01
+;PatchID: 974
+;Details: https://patches.kibab.com/patches/details.php5?id=974
+/*
+постоянная подсветка дисплея в выбранном профиле
+
+English:
+keep mainscreen illumination alive in certain profile
+
+*/
+1240DA0: 0160A0E180179FE5 84579FE555FFD6EB
++800B00
+#pragma enable old_equal_ff 
+00: 3F402DE930009FE530FF2FE10060A0E1
+10: 3F00BDE8990056E30400001A000050E3
+20: 0200001A000052E30000001A2820A0E3
+30: 0160A0E10510A0E10080BDE80D9B8CA0
+#pragma disable old_equal_ff 
+
+14: 99 02 ; active profile - 1 | выбранный профиль (0-7) минус 1 (!)
+2C: 28 0i010 ; brightness of screen light (decimal 0-100) | яркость подсветки (0-100)
++0
+;------------------------- end -------------------------
+

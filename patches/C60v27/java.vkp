@@ -1,0 +1,14 @@
+;C60v27
+;Отключение_верификации_JAVA-классов
+;java
+;(c) SiNgle, Chaos (remake by WASP)
+;(p) dimon_quaker
+;Version: 
+;PatchID: 2045
+;Details: https://patches.kibab.com/patches/details.php5?id=2045
+/*
+Ускоряет запуск мидлетов на 30-70%!
+*/
+4DC1C6: 3D 0D
+;------------------------- end -------------------------
+

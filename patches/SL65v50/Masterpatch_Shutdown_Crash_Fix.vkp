@@ -1,0 +1,14 @@
+;SL65v50
+;Masterpatch Shutdown Crash Fix
+;Masterpatch Shutdown Crash Fix
+;(c) benj9
+;Version: 
+;PatchID: 5139
+;Details: https://patches.kibab.com/patches/details.php5?id=5139
+/*
+
+*/
+0A288C8: 03DF C046
+0A288D0: F2F67AEA C046C046
+;------------------------- end -------------------------
+

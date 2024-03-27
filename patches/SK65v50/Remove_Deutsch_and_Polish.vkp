@@ -1,0 +1,16 @@
+;SK65v50
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;(p) AsteriX
+;Version: 
+;PatchID: 2486
+;Details: https://patches.kibab.com/patches/details.php5?id=2486
+/*
+
+*/
+0905E06: 00 01
+0905E36: 00 01
+
+;------------------------- end -------------------------
+

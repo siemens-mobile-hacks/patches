@@ -1,0 +1,15 @@
+;C81v51
+;Блокировка клавиатуры при коротком нажатии на красную кнопку
+;Keypad lock when press red button 
+;(c) Saifaye 
+;(r) Evgr
+;(p) Виктор89
+;Version: 
+;PatchID: 10230
+;Details: https://patches.kibab.com/patches/details.php5?id=10230
+/*
+Отлично смотрится с 9131
+*/
+034F142: A8F06CE9 E8F794FE
+;------------------------- end -------------------------
+

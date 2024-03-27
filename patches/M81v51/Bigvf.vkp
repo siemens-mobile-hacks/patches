@@ -1,0 +1,20 @@
+;M81v51
+;Большой видоискатель
+;Big viewfinder
+;(c) SiNgle
+;(p) Siemann
+;Version: 
+;PatchID: 6229
+;Details: https://patches.kibab.com/patches/details.php5?id=6229
+/*
+
+*/
+2067A4: 7C809DE5 9C80A0E3
+342C22: 132D42D0 C046C046
+607FA2: 9E5F122114229A5E595E 9C26122114229A5E0021
+607FBE: C2891692038AC91801391591408A 00221692038ACB18013B15939C20
+6083DE: C089 1620
+
+
+;------------------------- end -------------------------
+

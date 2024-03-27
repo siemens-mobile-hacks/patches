@@ -1,0 +1,14 @@
+;S75v26
+;Убрать сообщение "Пожалуйста подождите" в эксплорере
+;Disable "Please wait" in Card Explorer
+;(c) Single
+;(p) Striker Voo
+;Version: 
+;PatchID: 2441
+;Details: https://patches.kibab.com/patches/details.php5?id=2441
+/*
+
+*/
+0161E12: 03D1 03E0
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;C81v51
+;Отключить ввод 112 на Экране Блокировки
+;Disable 112 Input In Locked Screen
+;(c) 1nvisible
+;(p) den11111
+;Version: 
+;PatchID: 8194
+;Details: https://patches.kibab.com/patches/details.php5?id=8194
+/*
+
+*/
+034C40E: 21D0 2520
+;------------------------- end -------------------------
+

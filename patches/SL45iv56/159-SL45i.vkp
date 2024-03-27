@@ -1,0 +1,20 @@
+;SL45iv56
+;VUSO. Просмотр непрочитанных SMS
+;VUSO. View Unread SMS from the Oldest
+;(c) RizaPN
+;Version: 
+;PatchID: 1863
+;Details: https://patches.kibab.com/patches/details.php5?id=1863
+/*
+Чтение непрочитаных SMS начинается со старых к более новым!
+
+
+Released: June 25, 2004
+
+Патч №159 с http://patch.oslik.ru/SL45_RU
+*/
+0x3B054E: E0098890 DAC790E3 
+
+0x27E390: FFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400D00F2F9D82928918890DB00 
+;------------------------- end -------------------------
+

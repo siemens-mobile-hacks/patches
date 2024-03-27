@@ -1,0 +1,13 @@
+;C60v27
+;Отключить проверку в самолета
+;Disable Aircraft Check
+;(c) avkiev
+;Version: 
+;PatchID: 4378
+;Details: https://patches.kibab.com/patches/details.php5?id=4378
+/*
+
+*/
+2C8E74: 3D 0D 
+;------------------------- end -------------------------
+

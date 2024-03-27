@@ -1,0 +1,33 @@
+;S65v58
+;Мастер-Патч
+;Master-Patch
+;(c) avkiev
+;(r) 1nvisible, chaos
+;Version: 5
+;PatchID: 1025
+;Details: https://patches.kibab.com/patches/details.php5?id=1025
+/*
+Это врезки для Мастер-патча, необходимо установить сам Мастер-патч!Служит для управления настройками патчей непосредственно с телефона.
+Перед запуском нужно создать папку 0:\Misc\Patches\ptc
+
+Мастер-Мидлет: http://chaos.allsiemens.com/download/Master.rar
+
+Обсуждение: http://forum.siemens-club.org/viewtopic.php?TopicID=57688
+
+English:
+This patch contains only entrypoints, you should also install body of Master-Patch (see dependencies)
+This patch is made to control other patches' settings from mobile without connecting it to the computer.
+You must create the folder 0:\Misc\Patches\ptc before installing it
+
+MASTER-MIDLET: http://chaos.allsiemens.com/download/Master.rar
+
+*/
+;Run Refresher instead ELSE_REMOVE_SYNC
+092EC60: D39C8DA0 0xA0FC0C51   ; S65v58
+
+;Адрес врезки. Должен быть кратен 4. Если нет - добавьте или отнимите 2
+;Entrypoint. Must be aligned to word (4 bytes). If no - add or subtract 2
+;Run Scaner on startup
+16977DC: 27636763A763E763 00498847,0xA0FC0C81 ;  S65v58
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;EL71v45
+;Убрать "Задайте номер через настройки быст. дост." при нажатии на "точку"
+;Take away "Assign the number through adjustment byst. дост." when striking on "point"
+;(c) funMarkus
+;Version: 
+;PatchID: 8261
+;Details: https://patches.kibab.com/patches/details.php5?id=8261
+/*
+
+*/
+06F668E: 08F1CCED C046C046
+;------------------------- end -------------------------
+

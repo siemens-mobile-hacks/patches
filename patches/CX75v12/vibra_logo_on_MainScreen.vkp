@@ -1,0 +1,17 @@
+;CX75v12
+;Картинка вибры на главном экране
+;Vibra logo on MainScreen
+;(c) SiNgle
+;(r) 1nvisible
+;(p) BuG, B&#252;ffel
+;Version: 1.0
+;PatchID: 689
+;Details: https://patches.kibab.com/patches/details.php5?id=689
+/*
+Отображает индикацию вибромигнала на главном экране. Используется стандартная картинка, которую в скором времени можно будет заменить.
+*/
+02A8DA8: 09D0 0028
+;02A8DAE: 00 01 ; show logo when vibra is disabled
+049D7A8: 795A83A0 276032A0
+;------------------------- end -------------------------
+

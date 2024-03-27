@@ -1,0 +1,17 @@
+;A52v9
+;Инициализация при старте
+;Initialization with the start
+;(c) Delirium
+;Version: 
+;PatchID: 4384
+;Details: https://patches.kibab.com/patches/details.php5?id=4384
+/*
+Этот патч ничего не делает, он нужен для работы некоторых будущих патчей
+*/
+0B7D60: DA8BCCB9 DA8C6C4D
+0C4D6C: FFFFFFFF DA8BCCB9
+0C4D70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF CC00CC00CC00CC00CC00CC00CC00CC00
+0C4D80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF CC00CC00CC00CC00CC00CC00CC00CC00
+0C4D90: FFFFFFFFFFFFFFFFFFFF CC00CC00CC00CC00DB00
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;S75v35
+;Замена звука при дозвоне "ошибка соединения"
+;Change dialing ringtone "No connection"
+;(c) B-727
+;(p) StrikerVoo
+;Version: 
+;PatchID: 3367
+;Details: https://patches.kibab.com/patches/details.php5?id=3367
+/*
+
+*/
+;S75v35
+;(C) B-727 
+;(p) StrikerVoo
+;* Замена звука при дозвоне "ошибка соединения" 
+1033CEA: 1800FAFF0000B6034A0178054A0108074A01FFFFE803F9FF0300 0C00B8073200FFFF3200400C1A00FFFFFFFFFFFFFFFFFFFFFFFF
+;------------------------- end -------------------------
+

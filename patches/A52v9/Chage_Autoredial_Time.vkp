@@ -1,0 +1,14 @@
+;A52v9
+;Автонабор через заданные промежутки времени
+;Chage Autoredial Time
+;(c) Delirium
+;Version: 
+;PatchID: 4380
+;Details: https://patches.kibab.com/patches/details.php5?id=4380
+/*
+
+*/
+037AA2: 08C1 CC00
+03BA5E: 05 hh ;где hh - количество секунд в Hex
+;------------------------- end -------------------------
+

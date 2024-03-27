@@ -1,0 +1,14 @@
+;SK65v50
+;Показывать Скрытые Файлы в Card-Explorer'е по умолчанию
+;Show Hidden Files in Card-Explorer by default
+;(c) 1nvisible
+;Version: 
+;PatchID: 4179
+;Details: https://patches.kibab.com/patches/details.php5?id=4179
+/*
+
+*/
+02DA56C: 00 FF
+02DA61C: 00 FF
+;------------------------- end -------------------------
+

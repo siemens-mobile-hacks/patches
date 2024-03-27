@@ -1,0 +1,20 @@
+;CX70v56
+;Отключение разных процессов
+;Disable various processes
+;(c) PICAS
+;Version: 
+;PatchID: 9951
+;Details: https://patches.kibab.com/patches/details.php5?id=9951
+/*
+Отключение различных процессов
+
+После применения не работает меню LOGAL и Native Menu в меню разработчика! На счет ### не знаю, не тестил
+*/
+B7741C: 16F079FC c046c046; LOG_PROCESS
+B77420: 0CF0AAFA c046c046; MMAL_PROCESS
+
+B774B6: 1BF04AFA c046c046; SYNCML_DM_PROCESS
+B774BA: 1BF0C6F9 c046c046; SYNCML_DM_PROCESS
+B774BE: 1BF0D4F8 c046c046; SYNCML_COMM_PROCESS
+;------------------------- end -------------------------
+

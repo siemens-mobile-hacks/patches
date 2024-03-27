@@ -1,0 +1,30 @@
+;X75v100
+;Выключаться при разряженном аккумуляторе
+;Switch off when akku is empty
+;(c) ThE TrIFoN
+;(r) (i) avkiev
+;Version: 
+;PatchID: 5731
+;Details: https://patches.kibab.com/patches/details.php5?id=5731
+/*
+Патч выключен - телефон не будет выключаться при пустой батарее
+Патч включен  - телефон будет выключаться при пустой батарее
+Нормальное состояние патча - включен
+Для работы на пустой батарее - выключите патч, но не забудьте потом его включить
+Для включения телефона с посаженной батареей можно использовать safe-mode (удерживание # при включении)
+English:
+Patch disabled - phone won't switch off if battery is empty
+Patch enabled  - phone will  switch off if battery is empty
+Usually patch should be enabled
+For working with empty battery - disable patch, but don't forget enable it later
+For switching on mobile with empty battery - use safe-mode (press and hold # during start of mobile)
+*/
+#pragma enable old_equal_ff
+0066300: 00B50448C4DF00D009DF00BD
+
+0066310: E4D3C2B1,0x0000AB16,0000000000000000,"\
+{p=OffWhenEmpty ver=2 cp=`ThE TrIFoN,avkiev` id=AB16}\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

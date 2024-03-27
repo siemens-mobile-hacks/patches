@@ -1,0 +1,16 @@
+;C65v56
+;Настройка аналоговых часов
+;Analog Clock Tuning
+;(c) SiNgle
+;Version: 
+;PatchID: 3783
+;Details: https://patches.kibab.com/patches/details.php5?id=3783
+/*
+
+*/
+16F2C38: 01 04 ; Цвет часовой стрелки (Hour hand color)
+16F2BD8: 01 04 ; Цвет часовой стрелки вторая линия(для жирности)(Hour hand second line color (bold))
+16F2B28: 01 06 ; Цвет минутной стрелки (Minute hand color)
+16F2A66: 9E 80 ; Длина стрелок (Hands length)
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;M75v25
+;Диспатчер главного экрана
+;Mainscreen-dispatcher
+;(c) avkiev
+;(r) KreN
+;(p) Grizzzzly
+;Version: 3
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=5484
+;PatchID: 4677
+;Details: https://patches.kibab.com/patches/details.php5?id=4677
+/*
+
+*/
+02A8D54: 261C002D05900490 004FB847013EFCA0
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;EL71v45
+;Отключить подсветку при смене профиля
+;Disable Illumination in SetProfile
+;(c) BuG
+;(r) BoBa
+;Version: 
+;PatchID: 9554
+;Details: https://patches.kibab.com/patches/details.php5?id=9554
+/*
+Useful for Key Sequencer, Extended Appointments or Alarm 2.
+(This patch is not the same as BoBa's) ;)
+*/
+0641E34: BDF110ED C046C046
+;------------------------- end -------------------------
+

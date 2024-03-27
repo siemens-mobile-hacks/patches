@@ -1,0 +1,15 @@
+;X75v100
+;Пофиксенная иконка Помошника загрузки
+;Sturtup_assistant_fixed_logo_Q
+;(c) Quant
+;Version: 
+;PatchID: 6067
+;Details: https://patches.kibab.com/patches/details.php5?id=6067
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=sturtup_ass_fix_Q.zip
+
+/*
+Иногда SPC3 (или Smelter) выдает странные глюки при обработке серых пикселей. Методом проб и ошибок исправляется..
+*/
+GPF #655 в архивном аттаче. :-)
+;------------------------- end -------------------------
+

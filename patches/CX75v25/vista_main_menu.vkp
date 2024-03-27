@@ -1,0 +1,19 @@
+;CX75v25
+;Главное меню в стиле Windows Vista
+;Windows Vista style of main menu
+;(c) b00s
+;Version: 1
+;PatchID: 7184
+;Details: https://patches.kibab.com/patches/details.php5?id=7184
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v25&f=vista_main_menu.zip
+
+/*
+Переделывает главное меню на меню в стиле Windows Vista
+
+Внимание! Сам патч находится в прилагаемом архиве!
+*/
+;загрузите прилагаемый архив, в нем содержится сам патч
+
+; www.online-mpc.com
+;------------------------- end -------------------------
+

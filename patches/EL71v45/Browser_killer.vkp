@@ -1,0 +1,14 @@
+;EL71v45
+;Отключение браузера
+;Browser killer
+;(c) Zhek@
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8491
+;Details: https://patches.kibab.com/patches/details.php5?id=8491
+/*
+Патч отключает браузер за счёт чего увеличевается оперативная память.
+*/
+05FD41A: FEF72AFF C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;M81v51
+;Не менять профиль и не показывать попапы при подключении\отключение гарнитуры
+;Cancel when plugin/remove the headset switch profile and tips  
+;(c) BingK(binghelingxi)
+;(p) dimonp25
+;Version: 
+;PatchID: 8932
+;Details: https://patches.kibab.com/patches/details.php5?id=8932
+/*
+
+
+*/
+02fd256: 42f077fe C046C046; pull out the headphones
+02fcf3a: 43f005f8 C046C046; plug in your headphones
+;------------------------- end -------------------------
+

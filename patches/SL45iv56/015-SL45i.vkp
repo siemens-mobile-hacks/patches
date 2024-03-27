@@ -1,0 +1,18 @@
+;SL45iv56
+;Короткая "Джойстик вверх" для разблокировки, и клавиша PTT (на наушниках) для "Голосового набора" при блокированной клав
+;Short # to unlock keypad, UP arrow and PTT button for VoiceDial when keypad is locked v.Yurgen
+;(c) Yurgen
+;Version: 
+;PatchID: 1524
+;Details: https://patches.kibab.com/patches/details.php5?id=1524
+/*
+Короткая "Джойстик вверх" для разблокировки, и клавиша PTT (на наушниках) для "Голосового набора" при блокированной клавиатуре.
+
+Патч №015 с http://patch.oslik.ru/SL45_RU
+*/
+3B07C4: 1E 21 
+3B07C7: 03 04 
+3B07CA: 1F 1E 
+3B07CE: DAA2184C48402D10 0D03DADAECF60D0F 
+;------------------------- end -------------------------
+

@@ -1,0 +1,41 @@
+;CX75v25
+;Перенос папки System с диска 0 на диск 2
+;Move System folder from disk 0 to disk 2
+;(c) vorkachev
+;Version: 1.0
+;PatchID: 8081
+;Details: https://patches.kibab.com/patches/details.php5?id=8081
+/*
+Делал патч для себя, соответственно у меня работает без проблем, вообще проблем быть не должно. Пробуйте, будут предложения-поправлю.
+ЗЫ. Перед установкой скопируйте папку System с диска 0 на диск 2
+Ps. Before installing copy folder System from disk 0 to disk 2
+*/
+;Siemens CX 75 SW25 перенос папки System с дидска 0 на диск 2
+;Высвобождает лишнюю пару сотен кб
+;Автор: Владимир Воркачев
+;mailto:vorkachev@tochka.ru
+;Patch whitch moves "System" folder from disk 0 to disk 2
+;Gives about 300kb (it depends) for your additional use. 
+004a5a7a: 30 32
+004a5ab2: 30 32
+004a5b04: 30 32
+004a5b62: 30 32
+004a5bbe: 30 32
+004a5c0e: 30 32
+004a5c60: 30 32
+004a5cc2: 30 32
+004a5d14: 30 32
+004a5d6e: 30 32
+004a5dbc: 30 32
+004a5e30: 30 32
+004a5e80: 30 32
+004a5ed0: 30 32
+004a5f26: 30 32
+004a5f96: 30 32
+004a5fe6: 30 32
+004a603a: 30 32
+004a60ac: 30 32
+004a611a: 30 32
+;-------------------------конец-----------------------------------------
+;------------------------- end -------------------------
+

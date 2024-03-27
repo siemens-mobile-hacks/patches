@@ -1,0 +1,14 @@
+;S75v52
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 8271
+;Details: https://patches.kibab.com/patches/details.php5?id=8271
+/*
+
+*/
+0973640: 6549 0121
+;------------------------- end -------------------------
+

@@ -1,0 +1,33 @@
+;E71v45
+;Показ текущего времени при разговоре
+;Show current time during call
+;(c) Bennie
+;(p) Evgr
+;Version: 
+;PatchID: 9667
+;Details: https://patches.kibab.com/patches/details.php5?id=9667
+/*
+Должен быть включен пункт "Автоматическая индикация" Меню - Список вызовов - Время/стоим. - Настр. тарифа.
+Плохо совместим с патчем "Увеличение фото при входящем звонке"
+*/
+#pragma enable old_equal_ff
+0C506C0: 30B5041C0A4B984782B000206946094B
+0C506D0: 9847201C084988472D21215401302118
+0C506E0: 68460322054DA84702B0201C30BDFFFF
+0C506F0: 0xA09AD80D,0xA08CF3FB,0xA122AF85,0xA058AA11 ; A, B, C, D
+#pragma disable old_equal_ff
+
+0664BDE: 04A80B2196F130EE 68461B21A5F196EC ; Y
+080A510: FFFFFFFFFFFFFFFFFFFFFFFF 00C09FE51CFF2FE1C106C5A0 
+
+/*
+Port info:
+Y = 04A80B21????????0027
+A = function called from Y
+B = GetDateTime
+C = strlen
+D = F8B5071C0C1C151C3A26 + 1
+*/
+
+;------------------------- end -------------------------
+

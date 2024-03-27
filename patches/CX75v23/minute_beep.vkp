@@ -1,0 +1,15 @@
+;CX75v23
+;Изменение времени подачи ежеминутного сигнала во время разговора
+;Change minute beep during call
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1832
+;Details: https://patches.kibab.com/patches/details.php5?id=1832
+/*
+
+*/
+0553BFA: 00 37
+;------------------------- end -------------------------
+

@@ -1,0 +1,35 @@
+;SL45iv56
+;DMD. Задержка вывода сообщения
+;DMD. Display Message Delay
+;(c) RizaPN
+;Version: 
+;PatchID: 1873
+;Details: https://patches.kibab.com/patches/details.php5?id=1873
+/*
+Меняет время вывода некоторых сообщений: Сообщение удалено, и т.п.
+
+
+Created: July 05, 2004
+Modified: July 09, 2004
+
+Патч №171 (обновление 1) с http://patch.oslik.ru/SL45_RU
+*/
+;Поменять на свой значение (original 07D0=2000ms)
+
+0x18B14E: D007 D000
+
+;Сообщение сохранено и Сообщение добавлено в архив
+
+0x1AF5D4: B80B F401 ; 0BB8=3000ms, 01F4=500ms
+0x1AF602: B80B F401
+
+;"Language" messages
+
+0x1AF630: B80B F401
+
+;MMC access and most of messages
+
+0x1AF65E: B80B F401
+0x1AF68C: B80B F401
+;------------------------- end -------------------------
+

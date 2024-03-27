@@ -1,0 +1,14 @@
+;S75v47
+;Не показывать помощника при загрузке
+;Don't SHOW Startup Assistant
+;(c) benj9
+;(p) den11111
+;Version: 
+;PatchID: 7825
+;Details: https://patches.kibab.com/patches/details.php5?id=7825
+/*
+
+*/
+0344390: A7F07AED C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;CX75v13
+;Исправление инициализации карт памяти MMC
+;MMC init fix
+;(c) DebriZ
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9322
+;PatchID: 9269
+;Details: https://patches.kibab.com/patches/details.php5?id=9269
+/*
+Устранение проблемы некоторых неработающих MMC карт объемом 1 Гб. Может быть начнут работать и MMC карты большего объема.
+*/
+0A8AB84: 32 64
+0A8B618: 32 64
+;------------------------- end -------------------------
+

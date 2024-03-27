@@ -1,0 +1,19 @@
+;S65v58
+;Change java heap size
+;Change java heap size
+;(c) Miha_r
+;(p) loquat
+;Version: 1MP
+;PatchID: 9835
+;Details: https://patches.kibab.com/patches/details.php5?id=9835
+/*
+No English doc at the moment! :(
+
+*/
+; * Change java heap size (SGold) *
+; (c) Miha_r
+; (p) loquat
+
+0CAA9B4: 000093E5002091E5020050E1 00402DE9107B0CFA0040BDE8           ;S65V58
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S65v58
+;Увеличить фото при входящем звонке v2
+;Enlarge Incoming Call Photo v2
+;(c) SiNgle
+;Version: 
+;PatchID: 2736
+;Details: https://patches.kibab.com/patches/details.php5?id=2736
+/*
+Фотография звонящего, если она установлена, высвечивается на весь экран
+*/
+0A51FC4: 04 00
+1696708: 19 11
+;------------------------- end -------------------------
+

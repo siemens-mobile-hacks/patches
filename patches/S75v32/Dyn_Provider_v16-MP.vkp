@@ -1,0 +1,18 @@
+;S75v32
+;Динамическая замена имени оператора и субоператора
+;Dynamic replacing of Provider and Subprovider name
+;(c) avkiev
+;(r) Bennie, arsh0r
+;Version: 16-MP
+;PatchID: 6247
+;Details: https://patches.kibab.com/patches/details.php5?id=6247
+/*
+- Корректное отображение в тегах буквы Ё и украинских букв.
+
+ЗЫ. Не все фонты умеют отображать украинские символы...
+*/
+03EC678: 0xA08F66AF 0xA0061601                           ; S75v32 - Provider
+02FF110: 301CFFF751FDEA79311C 004B9847,0xA0061611,C046   ; S75v32 - Subprovider
+02FF0F8: 00 FF                                           ; S75v32 - Subprovider in Profile0
+;------------------------- end -------------------------
+

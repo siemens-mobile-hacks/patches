@@ -1,0 +1,23 @@
+;S75v42
+;Черный список
+;Black list
+;(c) ThE TrIFoN, SiNgle
+;(p) KiRiK
+;Version: 
+;PatchID: 5682
+;Details: https://patches.kibab.com/patches/details.php5?id=5682
+/*
+
+*/
+033FA8A: 38F73EE9 50F5A1FA 
+008FFD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFB50B2803D10020034B984703E0FFBC
+008FFE0: FFFFFFFFFFFFFFFFFFFFFFFF E7F192EE00BDFFBD17329BA0
+;008FFD2 0B 0N ; N-черная группа 00- Нет группы, 03-Семья, 04-Друзья и так далее по возрастающей 
+; По умолчанию в патче черная группа - Хобби 2
+; N means Black Group, 00-No group, 03-Family, 04-Friends and so on
+; By default the Black Group is Hobby 2
+
+09B0EE0: 201C27F2C4E9 002002F098E9 ; отсекать вызовы с подавлением номера
+; reject incognito calls
+;------------------------- end -------------------------
+

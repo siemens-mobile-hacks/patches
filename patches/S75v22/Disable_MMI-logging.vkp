@@ -1,0 +1,13 @@
+;S75v22
+;Отключить логгинг MMI
+;Disable MMI-logging
+;(c) SiNgle
+;Version: 
+;PatchID: 1778
+;Details: https://patches.kibab.com/patches/details.php5?id=1778
+/*
+Отключение логгинга MMI.
+*/
+01F2E5E: 6C4D F8BD
+;------------------------- end -------------------------
+

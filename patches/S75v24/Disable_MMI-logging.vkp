@@ -1,0 +1,13 @@
+;S75v24
+;Отключить логгинг MMI
+;Disable MMI-logging
+;(c) SiNgle
+;Version: 
+;PatchID: 2176
+;Details: https://patches.kibab.com/patches/details.php5?id=2176
+/*
+
+*/
+01F3342: 6C4D F8BD
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;M81v51
+;Изменение длительности горения подсветки
+;Change Illumination Turn Off Timer
+;(c) benj9
+;(p) Виктор89
+;Version: 
+;PatchID: 9096
+;Details: https://patches.kibab.com/patches/details.php5?id=9096
+/*
+Устанавливать только при оригинальном set_display.fs, если нет оного берём из архива и кладём в 
+Config:\japp\FlexMenu
+
+ВНИМАНИЕ! ЕСЛИ ЭТОГО НЕ СДЕЛАТЬ, ТО ПОЯВЯТСЯ ГЛЮКИ ОПИСАННЫЕ by Pavel81
+*/
+0C0ED65: 0F 0i90 ; mainscreen (in seconds)
+0C0ED69: 3C 0i90 ; menues, lists etc. (in seconds)
+;------------------------- end -------------------------
+

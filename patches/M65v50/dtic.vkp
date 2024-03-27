@@ -1,0 +1,21 @@
+;M65v50
+;Показ текущего времени при разговоре
+;Show current time during call
+;(c) Bennie
+;(r) avkiev, 1nvisible
+;(p) Mifodiy
+;Version: 1.1
+;PatchID: 3429
+;Details: https://patches.kibab.com/patches/details.php5?id=3429
+/*
+При включенной автоиндикации (Меню-2-5-5-4) вместе с продолжительностью разговора показывается текущее время
+*/
+1638808: 04A80B2117F068EF 68461B2122F098F9
+#pragma enable old_equal_ff
+165AB40: 30B5041CF5F7CCED82B0002000A9F6F7
+165AB50: CAED201C064988472D21215401302118
+165AB60: 00A80322034DA84702B0201C30BDC046
+165AB70: E5E653A1,71BC82A0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

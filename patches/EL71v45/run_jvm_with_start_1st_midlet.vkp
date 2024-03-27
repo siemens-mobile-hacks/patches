@@ -1,0 +1,19 @@
+;EL71v45
+;Запуск ява-машины при старте первого мидлета
+;Run java-machine with start 1st midlet
+;(c) @ndreS/PRM
+;(r) (idea) Miha_r, DronSPB
+;Version: 
+;PatchID: 8229
+;Details: https://patches.kibab.com/patches/details.php5?id=8229
+/*
+
+*/
+0A11470: 281703EB 2279D9FA
+
+#pragma enable old_equal_ff
+006F900: 01B506480478FB2C03D101BC024CA047
+006F910: 00BDFB24047001BD,0xA0AD7118,0xA8F413C0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

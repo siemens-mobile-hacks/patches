@@ -1,0 +1,15 @@
+;S75v52
+;"Українська" вместо "український"
+;"Українська" instead of "український"
+;(c) weclnt
+;Version: 
+;PatchID: 8384
+;Details: https://patches.kibab.com/patches/details.php5?id=8384
+/*
+
+*/
+;Редактирование сообщения  1 : 504C9  "український" => "Українська"
+167A125: D183D0BAD180D0B0D197D0BDD181D18CD0BAD0B8D0B900 D0A3D0BAD180D0B0D197D0BDD181D18CD0BAD0B0FFFF00
+
+;------------------------- end -------------------------
+

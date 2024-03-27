@@ -1,0 +1,13 @@
+;EL71v45
+;Отключить окошко "Сообщение отправлено!"
+;Disable "Message sent!" window
+;(c) BingK
+;Version: 
+;PatchID: 9576
+;Details: https://patches.kibab.com/patches/details.php5?id=9576
+/*
+Отключает окошко, появляющееся при успешном отправлении СМС
+*/
+07543C0: ADF038ED C0460020
+;------------------------- end -------------------------
+

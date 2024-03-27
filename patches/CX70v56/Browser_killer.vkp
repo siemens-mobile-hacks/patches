@@ -1,0 +1,15 @@
+;CX70v56
+;Отключение браузера
+;Browser killer
+;(c) Zhek@
+;(p) Виктор89
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=10456
+;PatchID: 8585
+;Details: https://patches.kibab.com/patches/details.php5?id=8585
+/*
+отключение браузера добавляет ~1Mb свободной оперативной памяти
+*/
+b97238: FEF75ffB C046C046
+;------------------------- end -------------------------
+

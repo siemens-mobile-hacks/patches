@@ -1,0 +1,17 @@
+;SL75v52
+;Звук при запросе на передачу данных
+;Sound on data transfer request
+;(c) -=(Kad)=-
+;(p) kiREALlov
+;Version: 2-MP
+;PatchID: 7758
+;Details: https://patches.kibab.com/patches/details.php5?id=7758
+/*
++2 Воспроизводит звук на окошке "Приём данных завершён!"
+
+Воспроизводит звук при запросе на передачу данных и после приёма файла.
+*/
+059A720: 0523252000923F49 004B984701E806A0 ; Request sound
+059A6E8: 2068002807D1474B 0049884731E806A0 ; Recieved data sound
+;------------------------- end -------------------------
+

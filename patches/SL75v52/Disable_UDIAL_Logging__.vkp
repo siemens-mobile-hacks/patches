@@ -1,0 +1,14 @@
+;SL75v52
+;Отключить UDIAL логгинг
+;Disable UDIAL Logging
+;(c) benj9
+;(p) kiREALlov
+;Version: 
+;PatchID: 8208
+;Details: https://patches.kibab.com/patches/details.php5?id=8208
+/*
+Отключает UDIAL логгинг
+*/
+04E6AC0: 0FB4 7047
+;------------------------- end -------------------------
+

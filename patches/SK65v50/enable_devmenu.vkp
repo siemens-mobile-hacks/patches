@@ -1,0 +1,16 @@
+;SK65v50
+;Включение Инженерного меню
+;Enable Developer Menu
+;(c) Phantom
+;(p) Smelter
+;Version: 
+;PatchID: 252
+;Details: https://patches.kibab.com/patches/details.php5?id=252
+/*
+Необходимо выключить пункт (S)Exit.
+Dev. Menu нужно повесить на горячую кнопку.
+Или поставить его как пункт в MyMenu.
+*/
+09722B8: 040090E5 0000A0E3
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;CF75v23
+;Уменьшить задержку для долгого нажатия клавиш
+;Decrease Keyboard Long Press Delay
+;(c) 1nvisible
+;(r) benj9
+;(p) NeverGone
+;Version: 
+;PatchID: 9852
+;Details: https://patches.kibab.com/patches/details.php5?id=9852
+/*
+
+*/
+07B6F66: 82 41
+;------------------------- end -------------------------
+

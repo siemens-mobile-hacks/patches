@@ -1,0 +1,30 @@
+;CX70v50
+;Замена помошника загрузки на мастер-мидлет
+;Replace Download Assistant with Master-midlet
+;(c) -=(Kad)=-
+;(r) ~Jhellico
+;(p) SiamiX
+;Version: 1.0
+;PatchID: 3284
+;Details: https://patches.kibab.com/patches/details.php5?id=3284
+/*
+Появляется в меню 3-3. Можно воткнуть любой мидлет, но он обязательно должен лежать в Java\Applications или в
+Java\jam\applications. 
+English:Appears in menu 3-3. You may insert any midlet, but it must be in Java\Applications or in
+Java\jam\applications.
+
+*/
+8EFE99: 446F776E6C6F616420417373697374616E74 000000000000000000000000000000000000
+8EFE99: 000000000000000000000000000000000000 "Master"
+8FB2A1: 446F776E6C6F616420417373697374616E74 000000000000000000000000000000000000
+8FB2A1: 000000000000000000000000000000000000 "Master"
+B8B149: 446F776E6C6F616420417373697374616E74 000000000000000000000000000000000000
+B8B149: 000000000000000000000000000000000000 "Master"
+
+;"Помощн.загр." -> "Мастер-мидлет"
+149E27: 0CB637D64236930BA62C3993 0CC629A2A37A0B35312D8D3B
+
+;"Помощник^загрузки" -> "Мастер-^мидлет"
+149E78: 0CB637D642E333F6A6F130A8 0CC629A2A37A8E35312D8D3B
+;------------------------- end -------------------------
+

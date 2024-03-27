@@ -1,0 +1,14 @@
+;C75v22
+;Disable MMS Debug
+;Disable MMS Debug
+;(c) 1nvisible
+;Version: 
+;PatchID: 3407
+;Details: https://patches.kibab.com/patches/details.php5?id=3407
+/*
+безпонятия, кто знает отпишитесь в каментариях..
+*/
+0320000: 0FB4 7047 
+03200F0: F0B5 7047 
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;M65v58
+;Убрать софт-кнопки с главного экрана и опустить дату с часами вниз v2
+;Remove soft-keys from MainScreen v2
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 858
+;Details: https://patches.kibab.com/patches/details.php5?id=858
+/*
+
+*/
+163B881: D0 E0
+163B93E: 04D1 0028
+164117A: 07D1 0028 ; чтоб часы не скакали вверх при SMS и т.п.
+163C33A: 0DD1 0028
+163C340: 0AD1 0028 
+;------------------------- end -------------------------
+

@@ -1,0 +1,26 @@
+;S68v52
+;Изменить высоту и положение области строки с провайдером в режиме скринсейвера "Экономия энергии"  
+;Change height and position of provider line in Energy saving mode of Screensaver  
+;(c) Evgr 
+;Version: 1
+;PatchID: 10275
+;Details: https://patches.kibab.com/patches/details.php5?id=10275
+/*
+you may move position of provider line somewhere out of the screen
+вроде можно сдвинуть область строки с провайдером за пределы экрана
+
+на экране "EPSON_L2F50333T" проверено hotter'ом. Потестите, у кого экраны "EPSON_L5F30007T" и "PHILIPS_TOSHIBA_JBT6K71"
+*/
+; you may move position of provider line somewhere out of the screen
+
+030C9C0: 4E 4E ; 0x4E in unknown way correlates to provider line position below top of screen ; "EPSON_L2F50333T"
+030C9C8: 15 15 ; 0x15=21(dec) height
+
+030D7E8: 8B F2 ; 0x8B=139(dec) provider line position below top of screen ; "EPSON_L5F30007T"
+030D7F0: 28 28 ; 0x28=40(dec) height
+
+030B9EC: 8B F2 ; 0x8B=139(dec) provider line position below top of screen ; "PHILIPS_TOSHIBA_JBT6K71"
+030B9F4: 28 28 ; 0x28=40(dec) height
+
+;------------------------- end -------------------------
+

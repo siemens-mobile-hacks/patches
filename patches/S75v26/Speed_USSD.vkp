@@ -1,0 +1,15 @@
+;S75v26
+;Увеличить скорость USSD сообщений
+;To increase speed USSD of messages
+;(c) Single
+;(p) Striker Voo
+;Version: 
+;PatchID: 2464
+;Details: https://patches.kibab.com/patches/details.php5?id=2464
+/*
+
+*/
+042DE21: 0B 03
+042DE04: D007 0003
+;------------------------- end -------------------------
+

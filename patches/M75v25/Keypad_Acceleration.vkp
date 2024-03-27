@@ -1,0 +1,13 @@
+;M75v25
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 4108
+;Details: https://patches.kibab.com/patches/details.php5?id=4108
+/*
+
+*/
+07FFD6A: 56 20
+;------------------------- end -------------------------
+

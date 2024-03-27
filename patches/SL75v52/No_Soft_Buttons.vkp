@@ -1,0 +1,15 @@
+;SL75v52
+;Удалить софт-кнопки с экрана
+;No Soft Buttons
+;(c) SiNgle, AsteriX
+;(p) kiREALlov
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=8153
+;PatchID: 7833
+;Details: https://patches.kibab.com/patches/details.php5?id=7833
+/*
+Убирает софт-кнопки с главного экрана. Кроме того убираются функции на них (быстрый просмотр полученных смс, пропущенных звонков и т. д.)
+*/
+0300170: 06D1 0028
+;------------------------- end -------------------------
+

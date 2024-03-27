@@ -1,0 +1,21 @@
+;SL45iv56
+;DSP. Делать что нибудь при воспроизведении диктофона
+;DSP. Doing Something else while Playing dictaphone
+;(c) rizapn
+;Version: 
+;PatchID: 1882
+;Details: https://patches.kibab.com/patches/details.php5?id=1882
+/*
+Изменяет Инфо на Меню в Диктофоне (воспроизведение).
+
+
+Created: July 10, 2004
+
+Патч №181 с http://patch.oslik.ru/SL45_RU
+*/
+0x11BC90: 2A01 6B07 ; do not use A001 ("Menu" string) if you apply MBT patch. 
+
+0x352936: DAD460E9 DADBDC42 
+0x352DFC: DAD460E9 DADBDC42
+;------------------------- end -------------------------
+

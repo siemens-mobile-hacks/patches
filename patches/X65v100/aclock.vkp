@@ -1,0 +1,23 @@
+;X65v100
+;Аналоговые часы на главном экране
+;aclock
+;(c) snemeis
+;Version: 1.3
+;PatchID: 7249
+;Details: https://patches.kibab.com/patches/details.php5?id=7249
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=aclock.zip
+
+/*
+length1 - длина минутной стрелки
+length2 - длина часовой стрелки
+color1 - цвет минутной стрелки
+color2 - цвет часовой стрелки
+Background - фон
+*/
+length1 - длина минутной стрелки
+length2 - длина часовой стрелки
+color1 - цвет минутной стрелки
+color2 - цвет часовой стрелки
+Background - фон
+;------------------------- end -------------------------
+

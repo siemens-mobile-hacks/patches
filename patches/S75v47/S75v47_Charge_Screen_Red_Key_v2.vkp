@@ -1,0 +1,50 @@
+;S75v47
+;Показать экран "зарядки" при коротком нажатии красной кнопки при выключенном телефоне
+;Show "Charge" Screen When Pressing Red While Phone Off
+;(c) Evgr
+;Version: 2
+;PatchID: 10557
+;Details: https://patches.kibab.com/patches/details.php5?id=10557
+/*
+удобен для просмотра информации с патчем "Показывать будильник, время и заряд аккумулятора при зарядке выключенного телефона"
+good together with "Show alarm clock, time and akku capacity in offline charge"
+
++ задаётся длительность показа
++ duration time control added
+*/
+
+; + задаётся длительность показа
+; + duration time control added
+
+/*
+удобен для просмотра информации с патчем "Показывать будильник, время и заряд аккумулятора при зарядке выключенного телефона"
+good together with "Show alarm clock, time and akku capacity in offline charge"
+*/
+
+0233361: 50 90
+02333E3: 1A EA
+
+01C7764: 0900001A 0000A0E1 ;  disable SwitchPhoneOff during bootscreen
+0288410: 221C231C0139281C 004A9047,0xA13D346F 
+029D600: 2A4F30A030C84B3F 00488047,0xA13D348D
+
+#pragma enable old_equal_ff 
+13D3400: F6402DE9F8FFB2EBB0109FE5B0208FE2
+13D3410: 90C181E00C0092E80C00A0E14FC0EFEB
+13D3420: A4208FE20C0092E84CC0EFEBA8309FE5
+13D3430: F680BDE8FF402DE9F0FFFFEB081093E5
+13D3440: 010040E094C09FE50CC050E0C384B92B
+13D3450: FF80BDE8FEB51F490978012905D01E49
+13D3460: 0978012901D00120FEBD0020FEBD221C
+13D3470: 231C0139281C09B5FFF7ECFF012802D1
+13D3480: FFF7BEEF986019BC0434204700B5074F
+13D3490: FFF7E0FF012803D1FFF7CCEF04A000E0
+13D34A0: 05A030C801BC04300047C04614050000
+13D34B0: 01000000000000000200000000000000
+13D34C0: 60EA00000D00000000000000E8030000
+13D34D0: 00000000,0xA8E90BBC,0xA8D79150,0xA8E3E72C
+13D34E0: 0x00000BB8                       ; 0x00000BB8=3000 msec=3 sec
+#pragma disable old_equal_ff 
+
+;------------------------- end -------------------------
+

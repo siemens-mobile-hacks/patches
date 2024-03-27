@@ -1,0 +1,17 @@
+;E71v45
+;Быстрое переключение мелодий в медиаплеере
+;Fast switching melody in mediaplayer
+;(c) alfinant
+;Version: 
+;PatchID: 10280
+;Details: https://patches.kibab.com/patches/details.php5?id=10280
+/*
+
+*/
+
+079056C: 02 03
+0792A20: 04 03
+078AABC: 1E03001A 0000A0E1
+078B0D8: 9701001A 0000A0E1
+;------------------------- end -------------------------
+

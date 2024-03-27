@@ -1,0 +1,20 @@
+;CX70v56
+;Меню пуск на главном экране
+;StartMenu on MainScreen
+;(c) KreN
+;(r) 1nvisible, benj9
+;(p) Lost
+;Version: 2.1
+;PatchID: 3240
+;Details: https://patches.kibab.com/patches/details.php5?id=3240
+/*
+
+*/
+;ShortCut'ы:
+;0943B48: 0xA08EF999 0xA0FCC0E3 ;ELSE_STOP_WATCH (Секундомер)
+;ИЛИ, как у меня:
+09439A8: 0xA08F0397 0xA0FCC0E3 ;ELSE_OPENPOCAPL (walky-talky)
+
+171C04E: 002861D0F9F701F80028 C046,00498847,0xA0FCC051
+;------------------------- end -------------------------
+

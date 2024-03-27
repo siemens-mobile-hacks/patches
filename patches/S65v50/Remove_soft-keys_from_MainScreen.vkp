@@ -1,0 +1,18 @@
+;S65v50
+;Убрать софт-кнопки с главного экрана и опустить дату с часами вниз
+;Remove soft-keys from MainScreen
+;(c) SiNgle
+;(p) AsteriX
+;Version: 2
+;PatchID: 43
+;Details: https://patches.kibab.com/patches/details.php5?id=43
+/*
+Убрать софт-кнопки с главного экрана
+*/
+169B117: D0 E0
+169B1F6: 05D1 0028
+16A08AE: 07D1 0028 ;чтоб часы не скакали вверх при SMS и т.п.
+169BB9A: 0DD1 0028
+169BBA0: 0AD1 0028
+;------------------------- end -------------------------
+

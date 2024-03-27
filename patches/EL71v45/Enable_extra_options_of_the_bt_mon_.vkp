@@ -1,0 +1,19 @@
+;EL71v45
+;Использовать экстра-опции bluetooth-монитора
+;Enable extra options of the bluetooth monitor
+;(c) funMarkus
+;Version: 
+;PatchID: 8657
+;Details: https://patches.kibab.com/patches/details.php5?id=8657
+/*
+
+*/
+0AA1424: 00 01 ; Enable bluetooth power saving
+0AA13A4: 40 20 ; Set to 2.56ms
+0AA140C: 00 01 ; Start RSSI mea.
+0AA154C: 00 01 ; Start AFH mea.
+0AA1564: 00 01 ; Start PowerLev mea.
+0AA13C4: 00 01 ; Block AFH chnl
+0AA1390: 00 01 ; Java sec. low
+;------------------------- end -------------------------
+

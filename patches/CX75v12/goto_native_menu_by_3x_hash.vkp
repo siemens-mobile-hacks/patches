@@ -1,0 +1,22 @@
+;CX75v12
+;Идем в Native menu по тройному нажатию ###
+;Goto Native Menu by pressing ###
+;(c) SiNgle
+;(p) ThE TrIFoN, 1nvisible
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=701
+;PatchID: 654
+;Details: https://patches.kibab.com/patches/details.php5?id=654
+/*
+Из любого места (кроме штатного мп3 плеера) давим ### и попадаем в Native Menu со всеми вытекающими последствиями =)) Для активации сего, надо поставить активацию инженерного меню и в нём, в пункте LOGAL, в профиле default включить реакцию на "###".
+
+Пункт меню "Спис. Вызовов" - "Время/Стоимость" вырубает телефон
+
+
+EN:
+This is patch which all of you have been so long waiting for :) ### -> MainMenu ANYWHERE except built-in mp3 player
+*/
+07D4B08: 84F06FFB 09F50AFF
+04DE920: FFFFFFFFFFFFFFFF FFB5DFF58DFFFFBD
+;------------------------- end -------------------------
+

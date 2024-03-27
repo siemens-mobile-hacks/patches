@@ -1,0 +1,49 @@
+;C75v22
+;Таблица Релокаций
+;Picture Relocation
+;(c) 1nvisible
+;(p) tick
+;Version: 
+;PatchID: 5973
+;Details: https://patches.kibab.com/patches/details.php5?id=5973
+/*
+Он предназначен для универсализации GPF/GPP патчей.
+Требуется для многих патчей, написанных с использованием концепции "Мастер-Патч + Библиотека функций" (c) 1nvisible, avkiev
+
+English:
+For GPF/GPP patches
+It is needed for many other patches, whitch are written using "Master-Patch+Functon Library" concept (c) 1nvisible, avkiev
+*/
++10D0000
+#pragma enable old_equal_ff
+;----------------------------------------------------------------------
+;Picture Relocation
+;----------------------------------------------------------------------
+A00: 0x0259 ; r0: picture batt charge
+A02: 0x025C ; r1: picture batt
+A04: 0x0114 ; r2: alarm clock (dis)
+A06: 0x0D3  ; r3: music animation (cx70v50)
+A08: 0x35C  ; r4: net indicators (standart)
+A0A: 0x16F  ; r5: calculator_pics
+;A0C: 0x02B7 ; r6: bluetooth icons (activity)
+A0E: 0x0310 ; r7: IrDA icons (activity)
+A10: 0x0311 ; r8: locked kb icon
+A12: 0x0479 ; r9: small digits (0)
+A14: 0x04FE ; r10: big digits (0)
+A16: 0x01E3 ; r11: folder icons (small, unchecked)
+A18: 0x0245 ; r12: group icons (big)
+A1A: 0x0317 ; r13: GPRS (transferring)
+A1C: 0x0318 ; r14: GPRS (attached)
+A1E: 0x03A2 ; r15: group icons (small)
+A20: 0x050B ; r16: illumination control
+A22: 0x04FD ; r17: analog clock
+A24: 0x0550 ; r18: adjusting volume (increasing)
+A26: 0x050C ; r19: pic extra
+A28: 0x03D1 ; r20: pic profiles
+A2A: 0x0362 ; r21: pic advnet
+A2C: 0x02E8 ; r22: pic calendar
+A2E: 0x00F0 ; r23: sms animation
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

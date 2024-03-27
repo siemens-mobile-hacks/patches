@@ -1,0 +1,13 @@
+;M65v50
+;Убрать Пункт "Справка" в Card-Explorer'е
+;Remove "Help" Item from Card-Explorer
+;(c) 1nvisible
+;Version: 
+;PatchID: 4522
+;Details: https://patches.kibab.com/patches/details.php5?id=4522
+/*
+
+*/
+0A0F08C: 17 16 
+;------------------------- end -------------------------
+

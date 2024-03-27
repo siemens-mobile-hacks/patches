@@ -1,0 +1,42 @@
+;SL45iv56
+;BSK. Пустой экран при заблокированной клавиатуре по долгому нажатию кнопки #
+;BSK. Blank Screen for KeyLock by long pressing # Button
+;(c) RizaPN
+;Version: 2
+;PatchID: 1694
+;Details: https://patches.kibab.com/patches/details.php5?id=1694
+/*
+Экран будет пустой при автоматической блокировке клавитуры или 
+по долгому нажатию клавиши "#" 
+Экран включается при разблокировке, входящему звонку, длинному 
+нажатию клавиши "#" (patchID 1678)
+
+Патч может быть включен/выключен через новое меню 
+Setup->Application. 
+
+
+Release: November 5, 2003 
+Modified: November 8, 2003 
+
+Патч №101 с http://patch.oslik.ru/SL45_RU
+*/
+3E1710: E6003600 DAC7EADC 
+
+27DCC0: FFFFFFFFFFFFFFFF BB0A2D079AF405B0 
+27DCC8: FFFFFFFFFFFFFFFF F7F80039E00CDAC0 
+27DCD0: FFFFFFFFFFFFFFFF CACAFAA38040D740 
+27DCD8: FFFFFFFFFFFFFFFF 0E00F3F9423ADAC0 
+27DCE0: FFFFFFFFFFFFFFFF BCCBE60035004980 
+27DCE8: FFFFFFFFFFFFFFFF CB00BBF53D069AF4 
+27DCF0: FFFFFFFFFFFFFFFF 04B0C2FC0039DAC0 
+27DCF8: FFFFFFFFFFFFFFFF CACAE6003600DB00 
+
+;Для выключения по длинному нажатию "#", раскоментируйте строки: 
+
+;3AD2A8: DAA38040 DAC7C0DC 
+
+;Для выключения автоматически, раскоментируйте строки: 
+
+3B02AA: DAA38040 DAC7C0DC 
+;------------------------- end -------------------------
+

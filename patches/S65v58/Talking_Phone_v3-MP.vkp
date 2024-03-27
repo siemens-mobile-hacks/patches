@@ -1,0 +1,43 @@
+;S65v58
+;Говорящий телефон
+;Talking Phone
+;(c) avkiev
+;Version: 3-MP
+;PatchID: 1133
+;Details: https://patches.kibab.com/patches/details.php5?id=1133
+/*
+MP+FL!
+Этот патч является точкой входа для патча 1130. Установка врезки включает 3 этапа:
+1. Выбор шортката на который будет заменяться SpellTime
+2. Здесь ничего не выбирать :), идёт замена вызова PlaySound (т.е. будильника) на проговаривание времени
+3. Должен быть установлен патч 886 , или закомментируйте строки после  3. Keylock
+*/
+;1. Shortcut
+092E910: "ELSE_COUNT_DOWN",00,9B9C8DA0 "ELSE_COUNT_DOWN",00,0xA0FC3001 ; S65v58 - ELSE_COUNT_DOWN
+;092EC50: "ELSE_REMOTESYNC",00,1F978DA0 "ELSE_REMOTESYNC",00,0xA0FC3001 ; S65v58 - ELSE_REMOTESYNC
+;092EBE8: "ELSE_PUSHTOTALK",00,CBA68DA0 "ELSE_PUSHTOTALK",00,0xA0FC3001 ; S65v58 - ELSE_PUSHTOTALK
+
+
+;2. Alarm
+;Говорить время вместо мелодии будильника (не работает если телефон выключен)
+;Spell time instead of Alarm (doesn't work if phone is off)
+0BB356C: 0F20ABF5CAEC2080 00488047,0xA0FC30A7   ; S65v58  00488047A730FCA0
+
+
+;3. Keylock
+;Говорить время при нажатии определенной кнопки при залоченной клавиатуре
+;Должен быть установлен патч "Чтение сообщений при залоченной клавиатуре"
+
+;Talk time after press some key in keylock mode
+;Must be installed patch "Read messages in keylock mode"
+
+;RedKey-01, GreenKey-05, VolumeDown-0E, VolumeUp-0F, JDown-25, JUp-26, JRight-27, JLeft-28, JPress-29, "*"-14, "#"-15
+
++16E00F0 ;   S65v58
+
+0: FF 0F ; Key=VolumeUp
+1: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF40B50026 2801D1014B9847002603E0,0xA0FC3001,40B5F5E7
++0
+
+;------------------------- end -------------------------
+

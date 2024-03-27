@@ -1,0 +1,15 @@
+;CX70v56
+;Отключить "Подождите" при USSD Запросе
+;Disable "Please Wait" on USSD Request
+;(c) 1nvisible
+;(r) dimonp25
+;(p) Виктор89
+;Version: 
+;PatchID: 9398
+;Details: https://patches.kibab.com/patches/details.php5?id=9398
+/*
+
+*/
+01712BBC: 0AF035FB C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,43 @@
+;SL65v53
+;Говорящий телефон
+;Talking Phone
+;(c) avkiev
+;(p) TicK
+;Version: 3
+;PatchID: 5099
+;Details: https://patches.kibab.com/patches/details.php5?id=5099
+/*
+
+Патч заменяет шорткат ELSE_COUNT_DOWN (Таймер) на функцию проговаривания текущего времени.
+Сажаем этот шорткат с помощью DSE на любую кнопку, при ее нажатии будет проговариваться время.
+Эти файлы необходимо положить в 0:\Sounds\Time: http://www.sugardas.lt/~tick/SL65v50_patches/time.rar 
+DSE: http://www.gsm-multifund.com/mod/DSE.rar
+
+Patch replaces shortcut ELSE_COUNT_DOWN (Timer) with spelling current time function.
+Set this shortcut by help DSE to any key, if you press this key - current time will be spelled.
+You should download those files to 0:\Sounds\Time: http://www.sugardas.lt/~tick/SL65v50_patches/time.rar 
+DSE: http://www.gsm-multifund.com/mod/DSE.rar
+
+*/
+;1. Shortcut
+0922B44: 2D458EA0 0xA0FC3001 ; ELSE_PUSHTOTALK
+
+;2. Alarm
+;Говорить время вместо мелодии будильника (не работает если телефон выключен)
+;Spell time instead of Alarm (doesn't work if phone is off)
+0B75A80: 0F20D2F5BEEC2080 00488047,0xA0FC30A7   ; SL65v53
+
+
+;* Исправление для Говорящего телефона *
+;* Fix for Talking phone *
+; © 1nvisible
+; теперь телефон играет тили-бом-бом при залоченой клаве
+; now phone plays tili-bom-bom in key lock mode
+#pragma enable old_equal_ff
+0801650: FFB503480349044A044B9847FFBDC046
+0801660: 000400A8,50000000,0130FCA0,948282A0
+; первый адрес - 0x8 байт пустая рама, второй - задержка (0x50 - ~1/3 секунды), третий - адрес патча-говорилки, четвертый - CallAfterTimer
+; first - 0x8 bytes free ram, second - delay (0x50 - ~1/3 of second), third - adress of talking phone, fourth - CallAfterTimer
+
+;------------------------- end -------------------------
+

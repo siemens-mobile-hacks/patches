@@ -1,0 +1,28 @@
+;SL45iv56
+;JACT. Изменение отображения формата времени разговора
+;JACT. Just Another CallingTime
+;(c) coollang, RizaPN
+;Version: 2
+;PatchID: 1707
+;Details: https://patches.kibab.com/patches/details.php5?id=1707
+/*
+Включите функцию в Time/Charge -> Charge Setting -> Auto Display
+Формат отображения x:xx-HH:MM
+v2, исправление бага xx:x
+
+
+Release : December 19, 2003 (original by CoolLang)
+Update : July 22, 2004 (by rizapn)
+
+Патч №114 (обновление 1) с http://patch.oslik.ru/SL45_RU
+*/
+0x0023F0: DAC79E85 DAC7B0DF
+
+0x27DFB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6F12D3A08E1DC4FA98E41832D0108E1
+0x27DFC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E00306FE0A00DC4F896ED7500D00F2F3
+0x27DFD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DE25F2F4DC258830BB0ADC4F893E9840
+0x27DFE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB06DC4F892EE6FE4802FAC79E85E0A2
+0x27DFF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F6F40EFE5B22F3F80CFEF3F90EFE06F4
+0x27E000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3030DC5F898E899ECB00FFFFFFFFFFFF
+;------------------------- end -------------------------
+

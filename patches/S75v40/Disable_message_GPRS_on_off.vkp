@@ -1,0 +1,20 @@
+;S75v40
+;Убрать сообщение "GPRS вкл/выкл"
+;Disable message "GPRS on/off"
+;(c) SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 3746
+;Details: https://patches.kibab.com/patches/details.php5?id=3746
+/*
+
+*/
+;S75v40 - Убрать сообщение "GPRS вкл/выкл"
+;S75v40 - Disable message "GPRS on/off"
+;(c) SiNgle
+;(p) ferro
+
+0951b6c: C0109F15 02F0A0E1
+
+;------------------------- end -------------------------
+

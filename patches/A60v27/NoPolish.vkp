@@ -1,0 +1,18 @@
+;A60v27
+;Убрать польский из выбора языков
+;Remove Polish from input languages menu
+;(c) Rasp
+;(r) FFNevil
+;Version: 
+;PatchID: 296
+;Details: https://patches.kibab.com/patches/details.php5?id=296
+/*
+
+*/
+;A60v27
+;Убрать польский из выбора языков набора СМС.
+;Портировано: Rasp
+
+1569FC: 0000 1501
+;------------------------- end -------------------------
+

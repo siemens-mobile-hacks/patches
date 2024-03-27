@@ -1,0 +1,14 @@
+;CX70v50
+;Чернобелый режим камеры
+;Black and white camera
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 115
+;Details: https://patches.kibab.com/patches/details.php5?id=115
+/*
+Чернобелый режим камеры.
+*/
+132B757: 3F163F 801680
+;------------------------- end -------------------------
+

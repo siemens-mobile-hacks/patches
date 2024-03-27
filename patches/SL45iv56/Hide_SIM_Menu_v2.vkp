@@ -1,0 +1,13 @@
+;SL45iv56
+;Спрятать меню SIM
+;Hide SIM Menu
+;(c) Seklth
+;Version: 2
+;PatchID: 2121
+;Details: https://patches.kibab.com/patches/details.php5?id=2121
+/*
+
+*/
+3B418C: 3D06 CC00
+;------------------------- end -------------------------
+

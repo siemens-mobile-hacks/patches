@@ -1,0 +1,14 @@
+;A65v17
+;Отключение верификации Java
+;Turning off of verification Java
+;(c) avkiev  SiNgle
+;(r) Chaos
+;Version: 
+;PatchID: 3866
+;Details: https://patches.kibab.com/patches/details.php5?id=3866
+/*
+Реально ускоряет запуск мидлетов на 30-70% (сильно зависит от мидлета)
+*/
+4DC53A: 3D 0D
+;------------------------- end -------------------------
+

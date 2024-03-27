@@ -1,0 +1,21 @@
+;M81v51
+;Запуск ява-машины при старте 1го мидлета
+;Run java-machine with the start of 1st midlet
+;(c) @ndreS/PRM
+;(r) Miha_r, DronSPB
+;(p) dimonp25
+;Version: 
+;PatchID: 9264
+;Details: https://patches.kibab.com/patches/details.php5?id=9264
+/*
+
+*/
+09FA6E0: 300F03EB 86D4D9FA
+09F0FB8: F02018EB C046C046
+
+#pragma enable old_equal_ff
+006F900: 01B506480478FB2C03D101BC024CA047
+006F910: 00BDFB24047001BD,0xA0ABE3A8,0xAC000080
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

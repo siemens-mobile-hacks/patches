@@ -1,0 +1,15 @@
+;M65v50
+;OverlayInfo
+;OverlayInfo
+;(c) benj9
+;Version: 0.2
+;PatchID: 2852
+;Details: https://patches.kibab.com/patches/details.php5?id=2852
+/*
+enable any devmenu-overlay setting. it's overwritten by cpu-load 
+and only shown if load is higher than setting
+*/
+08C8980: 00F019F8201C51F080EA 004CA04711DDFDA0C046 ; m65v50
+0FDDD58: FFFFFFFFFFFFFFFF 0xA08C89B7,0xA1149673 ; m65v50
+;------------------------- end -------------------------
+

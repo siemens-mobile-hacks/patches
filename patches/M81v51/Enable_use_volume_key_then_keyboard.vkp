@@ -1,0 +1,14 @@
+;M81v51
+;Использовать клавиши громкости при кейлоке если играет музыка в медиаплеере
+;Enable use volume key then keyboard locked if playing music in mediaplayer
+;(c) BingK(binghelingxi)
+;(p) RaiF-03
+;Version: 
+;PatchID: 9496
+;Details: https://patches.kibab.com/patches/details.php5?id=9496
+/*
+
+*/
+60FD6E: 02D1 C046
+;------------------------- end -------------------------
+

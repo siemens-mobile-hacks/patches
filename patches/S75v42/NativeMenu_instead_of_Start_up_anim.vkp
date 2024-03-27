@@ -1,0 +1,13 @@
+;S75v42
+;NativeMenu вместо Аним. при вкл.
+;NativeMenu instead of Start up anim.
+;(c) Belarus
+;Version: 
+;PatchID: 5026
+;Details: https://patches.kibab.com/patches/details.php5?id=5026
+/*
+
+*/
+041DA30: 0xA032C8A1 0xA02CC5FF
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;M81v51
+;Показ Расширений Файлов в Card-Explorer'е
+;Show File Extensions in Card-Explorer
+;(c) BingK(binghelingxi)
+;(r) SiNgle,1nvisible
+;(p) Виктор89
+;Version: 
+;PatchID: 9376
+;Details: https://patches.kibab.com/patches/details.php5?id=9376
+/*
+
+*/
+05B7C86: 291C 12E0
+;------------------------- end -------------------------
+

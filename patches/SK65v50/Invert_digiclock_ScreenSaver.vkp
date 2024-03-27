@@ -1,0 +1,50 @@
+;SK65v50
+;Инвертировать Цифровые часы
+;Invert digiclock ScreenSaver
+;(c) SiNgle
+;Version: 
+;PatchID: 4181
+;Details: https://patches.kibab.com/patches/details.php5?id=4181
+/*
+
+*/
+169EDCE: 01 00 ;1h back
+169EDD6: 00 01 ;1h font
+169EE18: 01 00 ;2h back
+169EE20: 00 01 ;2h font
+169EE5A: 01 00 ;":" back
+169EE62: 00 01 ;":" font
+169EE96: 01 00 ;1m back
+169EE9E: 00 01 ;1m font
+169EEDE: 01 00 ;2m back
+169EEE6: 00 01 ;2m font
+169EF30: 01 00
+169EF38: 00 01
+16B6128: 00 01 ;ProvName font
+16B612C: 01 00 ;background
+16B6198: 00 01 ;ProvFon with Arrow
+16B619C: 01 00 ;background with Arrow
+;color table (0..17h) R G B
+;00 - белый (white)
+;01 - чёрный (black)
+;02 - красный (red base)
+;03 - синий (navy base)
+;04 - зелёный (green base)
+;05 - малиновый (magenta base)
+;06 - голубой (aqua base)
+;07 - жёлтый (yellow base)
+;08 - светло-красный (red light)
+;09 - светло-синий (navy light)
+;0A - светло-зелёный (green light)
+;0B - светло-малиновый (magenta light)
+;0C - бледно-голубой (aqua light)
+;0D - бледно-желтый (уellow light)
+;0E - тёмно-красный (red dark)
+;0F - тёмно-синий (navy dark)
+;10 - тёмно-зелёный (green dark)
+;11 - тёмно-малиновый (magenta dark)
+;12 - тёмно-голубой aqua (dark)
+;13 - тёмно-жёлтый yellow (dark)
+;14-17 - прозрачный (clean)
+;------------------------- end -------------------------
+

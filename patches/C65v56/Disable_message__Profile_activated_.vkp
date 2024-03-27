@@ -1,0 +1,13 @@
+;C65v56
+;Отключить сообщение "Профиль активирован"
+;Disable message "Profile activated"
+;(c) 13.beta2
+;Version: 
+;PatchID: 3888
+;Details: https://patches.kibab.com/patches/details.php5?id=3888
+/*
+
+*/
+0912BA6: 2B1C 04E0
+;------------------------- end -------------------------
+

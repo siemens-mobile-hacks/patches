@@ -1,0 +1,14 @@
+;SL65v53
+;Ускоритель вывода на экран
+;Screen Speed-Up patch
+;(c) Single
+;(p) dimonp25
+;Version: 
+;PatchID: 9161
+;Details: https://patches.kibab.com/patches/details.php5?id=9161
+/*
+Как на нсг - экран не глючит терь
+*/
+013249be: 7bf058ef A861C046
+;------------------------- end -------------------------
+

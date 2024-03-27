@@ -1,0 +1,24 @@
+;EL71v45
+;I-MODE меню сообщений
+;I-MODE message menu
+;(c) Zhek@
+;(p) funMarkus
+;Version: 
+;PatchID: 7790
+;Details: https://patches.kibab.com/patches/details.php5?id=7790
+/*
+
+*/
+0873C1C: F5B26FA0 61656FA0
+0844F54: F5 78
+0844FD4: F5 78
+0845054: F5 78
+08450D4: F5 78
+0845154: F5 78
+08451D4: F5 78
+0845254: F5 78
+08452D4: F5 78
+0845354: F5 78
+0845454: F5 78
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;CX70v56
+;Менеджер Графических патчей av -MP
+;GraphPatchManager av -MP
+;(c) KreN
+;(r) avkiev
+;Version: 3.1
+;PatchID: 2571
+;Details: https://patches.kibab.com/patches/details.php5?id=2571
+/*
+
+*/
+1715650: 1883261C002D0590 004FB847013EFCA0
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;SK65v50
+;Увеличить размер фото при входящем звонке
+;Enlarge incoming call photo
+;(c) SiNgle
+;(p) KiRiK, AsteriX
+;Version: 
+;PatchID: 2499
+;Details: https://patches.kibab.com/patches/details.php5?id=2499
+/*
+
+*/
+049B9A2: 502280 842278
+
+;------------------------- end -------------------------
+

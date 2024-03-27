@@ -1,0 +1,14 @@
+;S75v42
+;Ускорение опроса клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p)  DiHLoS
+;Version: 
+;PatchID: 4926
+;Details: https://patches.kibab.com/patches/details.php5?id=4926
+/*
+
+*/
+901152: 011C 2021
+;------------------------- end -------------------------
+

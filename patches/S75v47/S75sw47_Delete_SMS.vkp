@@ -1,0 +1,25 @@
+;S75v47
+;Удалять SMS в браузере
+;Delete SMS in Browser
+;(c) Evgr
+;(r) Evgr
+;(p) St.Hunter
+;Version: 
+;PatchID: 10087
+;Details: https://patches.kibab.com/patches/details.php5?id=10087
+/*
+Известно, что существует проблема, когда при удалении SMS она на самом деле не удаляется, а остается в памяти телефона.Этот патч при удалении SMS принудительно вызывает функцию удаления SMS, чтобы компенсировать глюки прошивки. Исправлена ошибка при сохранении в черновики. 
+It is known that problem exists that when SMS is deleted it is indeed still present in phone memory. This patch at SMS deletion calls SMS delete function on purpose to compensate for flash bugs. Fixed bug when saving drafts.
+
+*/
+0E5C0D6: 71F734FC E0F11DF8 ; inbox, draft, outbox 
+0E5E778: 6FF7E3F8 DDF1CCFC ; sent
+0F1CA30: B0F687FF 1FF170FB ; save as draft
+0107C72: 6DF022E9 EDF226EB ; delete marked 
+
+#pragma enable old_equal_ff 
+03F52C0: 00C09FE51CFF2FE114C103A1
+103C114: 01B591F514FC011C01BCFEB492F50BFEFDBD   
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

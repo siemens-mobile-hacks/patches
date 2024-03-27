@@ -1,0 +1,14 @@
+;S75v52
+;Отключить "Подождите" при OBEX-подключении
+;Disable "Wait" in OBEX
+;(c) DJ,dimonp25
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8499
+;Details: https://patches.kibab.com/patches/details.php5?id=8499
+/*
+
+*/
+0977AA2:F8B5 7047
+;------------------------- end -------------------------
+

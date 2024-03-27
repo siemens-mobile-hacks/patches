@@ -1,0 +1,19 @@
+;M65v50
+;Сжатие jpeg с максимальным кач-вом (100% вместо 75%)
+;Maximum Jpeg compression (100% instead of 75%)
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 130
+;Details: https://patches.kibab.com/patches/details.php5?id=130
+/*
+Сжатие jpeg с максимальным кач-вом (100% вместо 75%)
+
+*/
+09A7160: 4B 64   ; 100%
+;09A7160: 4B 5F  ; 95% 
+;09A7160: 4B 5A  ; 90%
+;09A7160: 4B 55  ; 85%   
+
+;------------------------- end -------------------------
+

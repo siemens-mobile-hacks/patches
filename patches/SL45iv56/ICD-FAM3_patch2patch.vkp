@@ -1,0 +1,13 @@
+;SL45iv56
+;ICD v2.2/FAM3 patch2patch
+;ICD v2.2/FAM3 patch2patch
+;(c) Rst7/CBSIE, trustkill
+;Version: 
+;PatchID: 7093
+;Details: https://patches.kibab.com/patches/details.php5?id=7093
+/*
+Патч нужен если Вы пользуетесь ICD v2.2 (Incoming call display) вместе с FAM3.
+*/
+0x4456E6: E6F5E400E6F48257DAE4F07F E6FDE400E6FC8257DAE4FC7F
+;------------------------- end -------------------------
+

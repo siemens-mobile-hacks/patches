@@ -1,0 +1,16 @@
+;M81v47
+;Удалить лишние языки из меню языков ввода
+;Remove unusable languages from input languages menu
+;(c) AlexSid
+;(p) Barracuda
+;Version: 
+;PatchID: 9037
+;Details: https://patches.kibab.com/patches/details.php5?id=9037
+/*
+Only for LG1 !!!
+*/
++0C3791A
+04: 00 01 ; Немецкий
+08: 00 01 ;Французский
+;------------------------- end -------------------------
+

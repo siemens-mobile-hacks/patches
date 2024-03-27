@@ -1,0 +1,24 @@
+;SL45iv56
+;LKL. Левый софт в заблокированном состоянии
+;LKL. LeftSoftKey while Key Locked
+;(c) SL45_6688i, RizaPN
+;Version: 4
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=5880
+;PatchID: 1614
+;Details: https://patches.kibab.com/patches/details.php5?id=1614
+/*
+Чтение SMS, просмотр звонков, и т.д. при заблокированной клавиатуре.
+
+Release: May 27, 2003 (v3)
+Updated: July 30, 2004 (v4 by rizapn)
+
+Патч №051 (обновление 1) с http://patch.oslik.ru/SL45_RU
+*/
+0x3B07C8: 46F81F00 FAE4904A
+
+0x444A90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 48813D0BF08EF09FDADB14192D02FADB
+0x444AA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8A0646F81F00FADBCC07E6F3C40AD740
+0x444AB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 910399832DF640843DFADAC04EB1F0C8
+0x444AC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FADB62034446474C0000FFFFFFFFFFFF
+;------------------------- end -------------------------
+

@@ -1,0 +1,145 @@
+;SL45iv56
+;Индикаторы главного экрана
+;Mainscreen indicators
+;(c) lbuczko
+;Version: 
+;PatchID: 3319
+;Details: https://patches.kibab.com/patches/details.php5?id=3319
+/*
+Патч отображает слева на главном экране состояние вибры, назначает некоторые функции в меню "Приложения", прячет статус ID.
+Справа: состояние звука, тип подсоединения (напр., наушники), состояние клавиатуры.
+Внизу: пропущенные звонки и непрочитанные SMS, номер профиля.
+
+English: This patch show on left side of mainscreen status of vibra, set some function in APP, hide ID status. 
+On right side: sound status, type of conecting (exp. headphone), keyboard status.
+Down: lost call and unreaded SMS, number of profile.
+*/
+;If you don't have instaled SOL patch unmark this: 
+ 
+;0x3B0C08: E6003500 DAC720D1 
+;0x3B0362: 46FC2200 DAC730D1 
+;0x3AC464: F2F6763F DAC744D1  
+;0x27D120: FFFFFFFFFFFFFFFF E6003500E012D740 
+;0x27D128: FFFFFFFFFFFFFFFF 3400F7F41B3EDB00 
+;0x27D130: FFFFFFFFFFFFFFFF 48C1FD05E004D740 
+;0x27D138: FFFFFFFFFFFFFFFF 3400F7F81B3E46FC 
+;0x27D140: FFFFFFFFFFFFFFFF 2200DB00F2F6763F 
+;0x27D148: FFFFFFFFFFFFFFFF 0DF5 
+ 
+0x3b3808: 48402D07 FAE41047 
+ 
+0x444710: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88108820884088D088E088C0D7403400 
+0x444720: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F3F41B3E2D42DADEA61748402D08E6FC 
+0x444730: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0000E6FE0300E6FD0800DAC1EC22D740 
+0x444740: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3600F2F46E099AF40360E6FE5A010D02 
+0x444750: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FEF501E6FC0400E6FD1400DAC1EC22 
+0x444760: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6003200CC00F3F2E2038AF10360E6FE 
+0x444770: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 6E020D02E6FE2B02E6FC0100E6FD1E00 
+0x444780: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB78DAC3E00048412D0548422D06E6FE 
+0x444790: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2C020D05E6FE33010D02E6FE3201E6FC 
+0x4447A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 5500E6FD0800BB650D0C98C098E098D0 
+0x4447B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 98409820981048402D02FADB0C38FADB 
+0x4447C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1A38DAC2464848432D0B48422D0C4841 
+0x4447D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D0DDAC2024948402D10E6FE49010D08 
+0x4447E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FE56010D05E6FE51010D02E6FE5001 
+0x4447F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC5B00E6FD1000BB3CE6FE9E01DAA3 
+0x444800: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 924048402D0128E1E6FC5500E6FD1900 
+0x444810: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB30D7400C00F2F4082D2D0DE6FEDD01 
+0x444820: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC3500E6FD2D00BB24E6FC3F00E6FD 
+0x444830: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D00F0E4BB23D7400D00F2F4D8292D0D 
+0x444840: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FE9202E6FC4C00E6FD2B00BB12E6FC 
+0x444850: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 5800E6FD2D00F0E4BB11E004DAA46698 
+0x444860: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 06F40202F0E4E6FC2800E6FD2D00BB01 
+0x444870: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0D9C8840DAC1EC229840CB00F6FE0EFE 
+0x444880: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E0AE5BEEF2FE0CFE88E0F2FE0EFE2D01 
+0x444890: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB0398E0BB01CB0006FE010288C088D0 
+0x4448A0: FFFFFFFFFFFFFFFFFFFF BBE898D098C008C6CB00 
+ 
+;TO DISABLE ORYGINAL INDICATORS UNMARK THIS: 
+ 
+;sound 
+;3b381a: dac3e000 e004cc00 
+;3b3830: dac3e000 e004cc00 
+ 
+;keyboardlock 
+;3b37e6: daa39240 e014cc00 
+ 
+;conection with pc 
+;3b374a: dac20249 e004cc00 
+ 
+ 
+; If you want to change some no. images or position 
+ 
+;----------------vibra--------------- 
+;444730:00 xx ; x position of image 
+;444738:08 yy ; y position of image 
+;444734:03 nr ; number of image 
+;44473A:DAC1EC22 CC00CC00 ; to disable this indicator 
+ 
+;--------------status of function in  aplication menu 
+;444740: 36 vv ;profile 2 or 3 (details in app patch for change) 
+;444744: 6E09 vv ; profil 3 (details in app patch for change) 
+;444749: 60 v0 ; number of functon -1 
+;44474C: 5A01 aaaa ; no. image if select = 15Ah 
+;444752: F501 aaaa ; no. image if not select = 1F5h 
+;444756: 04 xx ; x pos. 
+;44475A: 14 yy ; y pos. 
+;44475C: DAC1EC22 CC00CC00 ; to disable this indicator 
+ 
+;---------------status of hiden ID ----------- 
+; works only if provider of GSM allow to change this function in phone 
+;444770: 6E02 aaaa ; no. image if enabled #26Eh 
+;444776: 2B02 aaaa ; no. image if disabled #22Bh 
+;44477A: 01 xx ; x pos. 
+;44477E: 1E YY ; y pos. 
+;444780: BB78 CC00 ; to disable this indicator 
+ 
+;---------------status of sound --------------- 
+;444790: 2C02 aaaa ; no. image if enabled #22ch 
+;444796: 3301 aaaa ; no. image if disabled #133h  
+;44479C: 3201 aaaa ; no. image if only beep #132h 
+;4447A0: 55 xx ; x pos. 
+;4447A4: 08 yy ; y pos. 
+;4447A6: BB65 CC00 ; to disable this indicator 
+ 
+ 
+;---------------status of conection phone with PC, headphone and other 
+;4447DC: 4901 aaaa ; no. image if conect with PC #22ch 
+;4447E2: 5601 aaaa ; no. image if conect with ....(I'can't check this) 
+;4447E8: 5101 aaaa ; no. image if conect with headphone 
+;4447EE: 5001 aaaa ; no. image if conect with ....(I'can't check this) 
+;4447F2: 5B xx ;    x   pos. 
+;4447F6: 10 yy ;    y   pos.
+;4447F8: BB3C CC00 ; to disable this indicator 
+ 
+;--------------status of keylock ---------------------- 
+;4447FC: 9E01 aaaa ; no. image if enabled, (aaaa - 1) no. image if disabled 
+;44480A: 55 xx ; x pos. 
+;44480E: 19 yy ; y pos. 
+;444810: BB30 CC00 ; to disable this indicator 
+ 
+;--------------no. of lost call (without calls with hidden id)------------ 
+;44481E: DD01 aaaa ; no. image 
+;444822: 35 xx ; x pos. 
+;444826: 2D yy ; y pos. 
+;444828: BB24 CC00 ; to disable draw this image 
+;44482C: 3F xx ; x pos. of no. of lost call 
+;444830: 2D yy ; y pos. of no. of lost call 
+;444834: BB23 CC00 ; to disable draw no. of lost call 
+ 
+;--------------no. of unreaded SMS ------------ 
+;444842: 9202 aaaa ;no. image 
+;444846: 4C xx ; x pos. 
+;444848: 2B yy ; y pos. 
+;44484C: BB12 CC00 ; to disable draw this image 
+;444850: 58 xx ; x pos.of no. of unreaded SMS 
+;444854: 2D yy ; y pos.of no. of unreaded SMS 
+;444858: BB11 CC00 ; to disable draw no. of unreaded sms 
+ 
+;--------------icon of profile ---------------- 
+;444862: 0202 aaaa ;no. of first image of profile 
+;444868: 28 xx ; x pos. 
+;44486C: 2D yy ; y pos. 
+;44486E: BB01 CC00 ; to disable this indicator
+;------------------------- end -------------------------
+

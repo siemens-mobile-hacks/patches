@@ -1,0 +1,19 @@
+;M55v10
+;Создавать только High-фото в папке Camera в корневом каталоге
+;Create only High photo in Camera folder
+;(c) avkiev
+;(p) Asterix
+;Version: 
+;PatchID: 1424
+;Details: https://patches.kibab.com/patches/details.php5?id=1424
+/*
+
+*/
+385EFC: 50696374757265 43616D65726100
+385F19: 50696374757265 43616D65726100
+385F35: 58 00
+386FAC: 50696374757265 43616D65726100
+386FDD: 50696374757265 43616D65726100
+
+;------------------------- end -------------------------
+

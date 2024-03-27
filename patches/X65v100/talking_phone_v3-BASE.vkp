@@ -1,0 +1,61 @@
+;X65v100
+;Говорящий Телефон
+;Talking Phone
+;(c) avkiev
+;(r) SiNgle
+;Version: 3
+;PatchID: 1130
+;Details: https://patches.kibab.com/patches/details.php5?id=1130
+/*
+Этот патч является продолжением линейки патчей направленных на работу с МП и БФ, добавлен выбор пути wav'ок в Мастер-Мидлете, и выбор типа произношения польский или русский (для польского нужны другие вавки).
+
+Патч заменяет выбранный шорткат на функцию проговаривания текущего времени.
+Сажаем этот шорткат с помощью DSE на любую кнопку, при ее нажатии будет проговариваться время.
+Эти файлы необходимо положить в 0:\Sounds\Time: http://avkiev.kiev.ua/Siemens/Patches/time.rar
+DSE: http://www.gsm-multifund.com/mod/DSE.rar
+
+English:
+Patch replaces shoosen shortcut with spelling current time function.
+Set this shortcut by help DSE to any key, if you press this key - current time will be spelled.
+You should download those files to 0:\Sounds\Time: http://avkiev.kiev.ua/Siemens/Patches/time.rarDSE: http://www.gsm-multifund.com/mod/DSE.rar
+
+*/
+#pragma enable old_equal_ff
+0FC3000: FFB57048FDF7FCFD4CD020210902F068
+0FC3010: 884229D0F160301C1430306118307061
+0FC3020: 0020311C2E31321C76320B8813800130
+0FC3030: 02310232002BF8D10138B0850638311C
+0FC3040: 743108803167311CA031301CB030C860
+0FC3050: 062008822E20C8827720088361204883
+0FC3060: 76208883012008840020311DFCF7C8FF
+0FC3070: 341CCC340025632000F05CF83179B078
+0FC3080: 002803D13C2700F02AF801E000F04EF8
+0FC3090: 7179002903D1622000F04CF802E04627
+0FC30A0: 00F01DF8FFBD7EB5FDF73AFBF878A828
+0FC30B0: 01D0002005E04348FDF7A2FD01D07078
+0FC30C0: 00287EBC03D10F20FDF766F802E00F20
+0FC30D0: FFF796FF2080012080BC0437384700B5
+0FC30E0: 14290CD30A2080B4FCF79AFF80BC4200
+0FC30F0: C000801800F01EF80520002912D0081C
+0FC3100: 01290AD0022908D000F014F805200029
+0FC3110: 08D0052906D2022004E0C019143000F0
+0FC3120: 09F8081CC01900F005F800BD00B53D20
+0FC3130: A027F4E782B52060201D291C0FA20132
+0FC3140: FDF792F821680A20FCF76AFF30303031
+0FC3150: B28D52002232B0520232B152301C0C30
+0FC3160: FDF762F8716A88000918091809183C20
+0FC3170: FCF756FF2D180C3482BDC046FCB51148
+0FC3180: FDF73EFD1AD0FF20341CC0340C342168
+0FC3190: 8142FBD020600A20FCF742FF30303031
+0FC31A0: 321CAC32D0801181A7200090311CC031
+0FC31B0: 01910C2050390023FDF74AF8FCBD
+
+0FC31C0: 0xB1C2D3E4,0x0000AB05,0000000000000000,"\
+{patch=TalkingPhone ver=3 cp=avkiev id=AB05 mem=288}\
+{1 cb UseAsAlarm v=1}\
+{2 o Language `Russian`=0 `Polish`=1}\
+{46 u WAVs maxlen=32 v=`0:\\Sounds\\Time\\xx.wav`}",00
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

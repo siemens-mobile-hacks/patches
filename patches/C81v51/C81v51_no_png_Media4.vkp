@@ -1,0 +1,25 @@
+;C81v51
+;Не добавлять png файлы в базу Медиаплеера 
+;Do not add png files to Media Database 
+;(c) Evgr
+;(r) Лесной 
+;Version: 
+;PatchID: 10426
+;Details: https://patches.kibab.com/patches/details.php5?id=10426
+/*
+
+*/
+
+05BC7F4: A88D4007800FEFD1 00488047,0xA14709A1
+
+#pragma enable old_equal_ff 
+14709A0: 00B5381C00F00CE8002805D1A88D4007
+14709B0: 800F01BC0430004701BC1C380047C046
+14709C0: FC402DE90050A0E18000A0E30070A0E3
+14709D0: F4B9D3FA0040A0E10500A0E1BED8C1FA
+14709E0: 270050E30170A0030400A0E1F5B9D3FB
+14709F0: 0700A0E1FC80BDE8
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

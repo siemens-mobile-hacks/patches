@@ -1,0 +1,13 @@
+;M75v12
+;Изменение времени подачи ежеминутного сигнала во время разговора
+;Change minute beep during call
+;(c) SiNgle
+;Version: 
+;PatchID: 5371
+;Details: https://patches.kibab.com/patches/details.php5?id=5371
+/*
+
+*/
+0551C8E: 00 37
+;------------------------- end -------------------------
+

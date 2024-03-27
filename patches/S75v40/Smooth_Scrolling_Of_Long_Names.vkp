@@ -1,0 +1,21 @@
+;S75v40
+;Плавный скроллинг длинных названий и имен
+;Smooth Scrolling Of Long Names
+;(c) SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 3736
+;Details: https://patches.kibab.com/patches/details.php5?id=3736
+/*
+
+*/
+;S75v40- Плавный скроллинг длинных названий и имен
+;S75v40 - Smooth Scrolling Of Long Names
+;(c) SiNgle
+;(p) ferro
+
+0687fa4: D00700002C01 120200002A00
+0c006b8: D00700002C01 120200002A00
+
+;------------------------- end -------------------------
+

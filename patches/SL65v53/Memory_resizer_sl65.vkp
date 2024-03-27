@@ -1,0 +1,23 @@
+;SL65v53
+;Memory resizer
+;Memory resizer
+;(c) Zhek@, ~Jhellico, Zeus
+;(r) Rst7
+;Version: 2
+;PatchID: 9535
+;Details: https://patches.kibab.com/patches/details.php5?id=9535
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl65v53&f=Memory_resizer_sl65.zip
+
+/*
+Патч увеличивает кол-во свободной оперативной памяти до ~5мб за счет отключения ява машины.
+Патч "Browser killer" после установки не нужен
+
+После установки ява работать не будет
+*/
+1295f88: 0x002FD000 0x0011AB70 ; PermMem. -1929 Кб ,если меньше то пикофф
+009A6d8: 0x177000 0x000000 ; JavaHeap. -1500 Кб ,нулевое значение использовать только с отключеной явой, иначе пик
+1295f84: 0x00652000 0x006A4000 ; NonPermMem
+11469ca: b1f06aee c046c046 ; rap bearer 0 (browser)
+11469e2: b1f05eee c046c046 ; rap bearer 1 (java)
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;SK65v50
+;Показывать только последние 2 цифры года
+;Show only last 2 digits of year
+;(c) ?
+;(p) Лесной
+;Version: 
+;PatchID: 10130
+;Details: https://patches.kibab.com/patches/details.php5?id=10130
+/*
+Вместо допустим 2009 будет отображаться 09
+*/
+2C8E80: 1F 17
+2C8E84: 0F 07
+;------------------------- end -------------------------
+

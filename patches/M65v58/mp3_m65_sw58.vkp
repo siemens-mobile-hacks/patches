@@ -1,0 +1,14 @@
+;M65v58
+;МП3 на М65 (шутка)
+;MP3 on M65"(joke)
+;(c) Pashen
+;(p) JuNoS
+;Version: 1.01
+;PatchID: 9500
+;Details: https://patches.kibab.com/patches/details.php5?id=9500
+/*
+позволяет запускать файлы мп3, вместо imy
+*/
+940C94: "imy" "mp3"
+;------------------------- end -------------------------
+

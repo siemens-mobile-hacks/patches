@@ -1,0 +1,31 @@
+;M55v91
+;Добавление функций для "Встречи"
+;Another Function of Appointment
+;(c) RizaPN, China people, lbuczko
+;(r) Ramil_
+;(p) Rascal
+;Version: 
+;PatchID: 4865
+;Details: https://patches.kibab.com/patches/details.php5?id=4865
+/*
+По напоминанию с заполненным по образцу полем 'Место:' происходит запуск команд прописанных в поле.
+Формат записи команд:
+ .rКОМАНДЫ В HEX , пример .rDA554EBC - выключение телефона.
+ставится поверх патча Автоматическое переключение профиля по напоминанию v3 (c) dnn 12.11.2005
+
+Список команд, в будущем буду пополнять 
+.rDA554EBC - выключение телефона.
+.rFA9CE6C2 - включение телефона, если выключен, и перезагрузка если включён.
+*/
+35BC1E: 3D20 3D30
+
+35BC80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46FE72003DEDE6FE0037E0BDE6FF5020 
+35BC90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DC4DA92EBD0ABB135C41F132BB107123
+35BCA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400000B92F08F10DF3E6F1DB0028F2
+35BCB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400000B81FDA005020FA5548BCDC4D
+35BCC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 992E27F2300047F20A008D0367F2DF00
+35BCD0: FFFFFFFFFFFF 292708E1CB00
+
+
+;------------------------- end -------------------------
+

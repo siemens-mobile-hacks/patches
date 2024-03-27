@@ -1,0 +1,13 @@
+;C65v56
+;Прием звонков только зеленой кнопкой
+;Receive calls only by pressing green button
+;(c) SiNgle
+;Version: 
+;PatchID: 3836
+;Details: https://patches.kibab.com/patches/details.php5?id=3836
+/*
+
+*/
+16F1CB4: 62D0 0028
+;------------------------- end -------------------------
+

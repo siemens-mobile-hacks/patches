@@ -1,0 +1,16 @@
+;M65v50
+;Включение/выключение вибры при блокировке/разблокировке клавиатуры
+;Turn vibra on/off on keypad lock/unlock
+;(c) ~Jhellico
+;(r) empeka
+;(p) Mifodiy
+;Version: 0.3
+;PatchID: 3211
+;Details: https://patches.kibab.com/patches/details.php5?id=3211
+/*
+
+*/
+114D32C: 1039886001210320 004FB847,0xA0FC7001
+114D6B4: 0120886001210320 004FB847,0xA0FC7005
+;------------------------- end -------------------------
+

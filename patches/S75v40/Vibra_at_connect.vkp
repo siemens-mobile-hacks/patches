@@ -1,0 +1,14 @@
+;S75v40
+;Вибра в момент соединения
+;Vibra at connect
+;(c) SiNgle
+;(r) (i) avkiev
+;Version: 
+;PatchID: 3753
+;Details: https://patches.kibab.com/patches/details.php5?id=3753
+/*
+
+*/
+0DA724C: 2A1C2B1C09211730 00498847,0xA0063801   ; S75v40
+;------------------------- end -------------------------
+

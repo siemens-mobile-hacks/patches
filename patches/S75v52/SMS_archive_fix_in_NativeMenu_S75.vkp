@@ -1,0 +1,14 @@
+;S75v52
+;Фикс ошибки SMS архива в NativeMenu
+;SMS archive fix in NativeMenu
+;(c) Miha_r
+;(p) pip@
+;Version: 
+;PatchID: 8767
+;Details: https://patches.kibab.com/patches/details.php5?id=8767
+/*
+
+*/
+8CC310: 557560A0 03E032A0
+;------------------------- end -------------------------
+

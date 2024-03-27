@@ -1,0 +1,22 @@
+;C75v22
+;PS/2 Помошник
+;PS/2 Helper
+;(c) Dimadze
+;(p) m.ksy
+;Version: 1.0
+;PatchID: 10520
+;Details: https://patches.kibab.com/patches/details.php5?id=10520
+/*
+Патч PS/2 Helper предназначен для осуществления ввода текста при помощи специальным способом подключенной к телефону компьютерной клавиатуры. Подробнее - http://siedevelop.xclan.ru/index.php?page=info-arcticles-ps2_kbd (сайт помер).
+Вся инфа оттуда здесь - [url]https://www.mediafire.com/file/upzf0p9e9b3csql/PS2_Keyboard.7z/file[/url]
+*/
+;PATCH_INSERT_SYMBOL
+0x008494A4: 0E1C051C87B0171C 004CA04700B00CA1
+;CODE
+0x010CB000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 05002DE92C209FE5B000D2E1000050E3
+0x010CB010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0010A0110000A0E3B000C2E10500BDE8
+0x010CB020: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0160A0E10050A0E11CD04DE20270A0E1
+0x010CB030: FFFFFFFFFFFFFFFFFFFFFFFF 04E08EE21EFF2FE1703F0000
+
+;------------------------- end -------------------------
+

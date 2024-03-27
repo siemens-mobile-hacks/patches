@@ -1,0 +1,13 @@
+;SL45iv56
+;TLO. Время гашения подсветки
+;TLO. Time of Light Off
+;(c) Nick0las, Seklth
+;Version: 
+;PatchID: 2124
+;Details: https://patches.kibab.com/patches/details.php5?id=2124
+/*
+
+*/
+21FB7C: B20C 6419; ~15 sec> ~30 seс. B20C>0CB2=3250 - in 1/217 sec
+;------------------------- end -------------------------
+

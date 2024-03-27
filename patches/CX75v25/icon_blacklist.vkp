@@ -1,0 +1,44 @@
+;CX75v25
+;Замена значка фильтра на черный список
+;Change filter icon on blacklist
+;(c) Espirito
+;Version: 1.0
+;PatchID: 6015
+;Details: https://patches.kibab.com/patches/details.php5?id=6015
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v25&f=icon_blacklist.rar
+
+/*
+Специально для тех кто установил патч на Чёрный Список.
+
+Special for those who installed patch on Black List.
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 23.10.2006  -  Time: 8:12:33                              ###
+; ### Patch for: SIEMENS CX75 v25                                     ###
+; #######################################################################
+
+
+; ##### Picture 774 #####
+010C1854: 0E0E85008C5317A1 0E0E85001691FDA0
+
+00FD9116: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFC004FF02C003FF05C0FFFF0200FFFF
+00FD9126: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02C0FDFF00FF05C0F7FF00FF00FFC0FF
+00FD9136: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00FF05C0FEFF0002FFFF0002FFFE00FF
+00FD9146: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 05C0FEFF0002FFFF0002FFFE00FF05C0
+00FD9156: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F7FF00FF00FFC0FF00FF05C0FFFF0300
+00FD9166: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FBFFC0FF00FF05C0FEFF0002FFFF0002
+00FD9176: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFFE00FF05C0F7FF00FFC0FF00FF00FF
+00FD9186: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 05C0F7FF00FFC0FF00FF00FF05C0F7FF
+00FD9196: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00FFC0FF00FF00FF05C0FEFF0002FFFF
+00FD91A6: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0002FFFF0005FFFEC0FF0300FDFFC0FF
+00FD91B6: FFFFFFFFFFFFFFFFFFFFFF 0500FEFFC004FF02C007FF
+
+;------------------------- end -------------------------
+

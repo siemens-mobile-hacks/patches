@@ -1,0 +1,14 @@
+;S75v47
+;Отключение ошибки dplhandler
+;Disable dplhandler in java aplications
+;(c) Ivanhoe
+;(p) SimaFish
+;Version: 0.1
+;PatchID: 8539
+;Details: https://patches.kibab.com/patches/details.php5?id=8539
+/*
+Для тех, у кого телефон в ява-приложениях зависает и с пиком выключается через 5 минут. Патч отключает эту ошибку.
+*/
+12B79A8: 02 00
+;------------------------- end -------------------------
+

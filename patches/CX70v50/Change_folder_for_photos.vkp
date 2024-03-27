@@ -1,0 +1,17 @@
+;CX70v50
+;Изменить папку для фотографий
+;Change folder for photos
+;(c) avkiev
+;(p) AsteriX
+;Version: 
+;PatchID: 107
+;Details: https://patches.kibab.com/patches/details.php5?id=107
+/*
+Изменить папку для фотографий.
+!!!Папку с картинками можно просмотреть только через Меню-7-9.
+! 0:\Pictures => 0:\_MyPhoto
+
+*/
+;0A4E2D4: 0B00,'0:\\Pictures' 0B00,'0:\\_MyPhoto'
+;------------------------- end -------------------------
+

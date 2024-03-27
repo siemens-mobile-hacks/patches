@@ -1,0 +1,16 @@
+;SL45iv56
+;Автодозвон с постоянными паузами
+;Redial with Instant Timeout
+;(c) abomin
+;Version: 
+;PatchID: 1746
+;Details: https://patches.kibab.com/patches/details.php5?id=1746
+/*
+Release: May 4, 2004
+
+Патч №142 с http://patch.oslik.ru/SL45_RU
+*/
+02FB2A: 08C1 CC00 
+082EE0: 05 03 ;здесь 03 - новая пауза в секундах 
+;------------------------- end -------------------------
+

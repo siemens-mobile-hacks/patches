@@ -1,0 +1,16 @@
+;SL75v52
+;Увеличить скорость просмотра USSD сообщений
+;Speed USSD
+;(c) SiNgle
+;(r) StrikerVoo
+;(p) ferro
+;Version: 
+;PatchID: 7638
+;Details: https://patches.kibab.com/patches/details.php5?id=7638
+/*
+
+*/
+29c3b8: D007 0003
+29c3d5: 0B 03
+;------------------------- end -------------------------
+

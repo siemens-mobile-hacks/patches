@@ -1,0 +1,14 @@
+;CX70v50
+;Ежечасное событие и звуковые напоминания о пропущенных событиях и состоянии аккумуляторa
+;Hourly event and sound alerts after missed events and state of battery
+;(c) avkiev
+;Version: 12-MP
+;PatchID: 1189
+;Details: https://patches.kibab.com/patches/details.php5?id=1189
+/*
+Врезка к патчу 1188
+*/
+17188C0: 041C0E1CD7B03BA9 004A9047,0xA0FC4039   ; CX70v50 - Mainscreen
+171BB6C: 0E1C9AB007A902A8 004A9047,0xA0FC404B   ; CX70v50 - Screensaver
+;------------------------- end -------------------------
+

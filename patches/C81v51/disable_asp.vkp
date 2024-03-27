@@ -1,0 +1,17 @@
+;C81v51
+;Отключение ASP
+;Disable ASP
+;(c) caine
+;(p) dimonp25
+;Version: 1.2
+;PatchID: 7210
+;Details: https://patches.kibab.com/patches/details.php5?id=7210
+/*
+
+*/
+02A930A: 02 01
+02A930E: 00 01
+02025E4: 8171 8173
+02025F0: 41738173 01218171
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;CX70v50
+;Настройка аналоговых часов
+;Analog Clock Tuning
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 104
+;Details: https://patches.kibab.com/patches/details.php5?id=104
+/*
+Настройка аналоговых часов.
+*/
+171BFDE: 9E 80 ;Длина стрелок (Hands length)
+171C052: 01 02 ;Центральная точка (Center-point)
+171C0A0: 01 06 ;Цвет минутной стрелки (Minute hand color)
+171C150: 01 04 ;Цвет часовой стрелки вторая линия(для жирности)(Hour hand second line color (bold))
+171C1B0: 01 04 ;Цвет часовой стрелки (Hour hand color)
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;M75v23
+;Сжатие jpeg с максимальным качеством
+;Compress jpeg with maximum quality
+;(c) SiNgle
+;Version: 
+;PatchID: 2811
+;Details: https://patches.kibab.com/patches/details.php5?id=2811
+/*
+
+*/
+03ECF10: 4B 64
+;------------------------- end -------------------------
+

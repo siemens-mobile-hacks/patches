@@ -1,0 +1,13 @@
+;M75v12
+;Отключить сообщение "Профиль активирован"
+;Disable message "Profile activated"
+;(c) 13.beta2
+;Version: 
+;PatchID: 5376
+;Details: https://patches.kibab.com/patches/details.php5?id=5376
+/*
+
+*/
+03B7558: 2B1C 04E0
+;------------------------- end -------------------------
+

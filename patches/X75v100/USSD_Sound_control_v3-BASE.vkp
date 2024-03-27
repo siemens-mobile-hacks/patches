@@ -1,0 +1,32 @@
+;X75v100
+;Настройка звука USSD сообщения
+;USSD Sound control
+;(c) -=(Kad)=-
+;Version: 3-BASE
+;PatchID: 7320
+;Details: https://patches.kibab.com/patches/details.php5?id=7320
+/*
+
+*/
+#pragma enable old_equal_ff
+006E500: 00220F490F20FFB51248C4DF0FD0071C
+006E510: B87A01280FD07878B9787A683B7A98DF
+006E520: 00220749787AFF2805D033DF03E00022
+006E530: 03490F2033DFFFBC04BC04321047C046
+006E540: 09420000
+
+006E550: E4D3C2B105AD00000000000000000000,"\
+{p=`USSD Sound control` id=ad05 cp=`-=(Kad)=-` ver=3}\
+{c typ `SMS sound+vibration`=0x0F `SMS only sound`=0x15 `Accu low power`=0x1E `Camera sound`=0x1C `No sound`=0xFF}","\
+{10 cb `Only disable sound&vibra`}","\
+{sm `First sound settings`}","\
+{1 h `Sound №` v=88}","\
+{2 b Frequency v=10}","\
+{4 ms Duration v=45}","\
+{8 cb `Play if vibra off` v=1}","\
+{endsm}","\
+{9 o `Second sound` c=typ v=0x0F}","\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

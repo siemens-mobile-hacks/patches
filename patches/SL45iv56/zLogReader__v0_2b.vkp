@@ -1,0 +1,38 @@
+;SL45iv56
+;zLogReader
+;zLogReader
+;(c) Seklth
+;Version: 0.2b
+;PatchID: 5911
+;Details: https://patches.kibab.com/patches/details.php5?id=5911
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=zLogReader__v0_2b.rar
+
+/*
+Бинарик, который позволяет читать логи звонков и смс с ММС, нужен патч Call (and SMS) Detail Record v2.3
+
+
+Клавиши:
+в меню
+1/4 - смена года
+3/6 - смена месяца
+
+в списке вызовов
+левый софт/зеленая клавиша - вывод номера на дисплей
+
+http://patch.oslik.ru/SL45_RU/patches/zbin/zlogreader.bin
+
+
+English:
+Keys:
+in meun
+'1'/'4' change year
+'3'/'6' change month
+
+in calllist
+left soft/green - function Correct No.
+
+http://patch.oslik.ru/SL45_RU/patches/zbin/zlogreader.bin
+*/
+; see in attach
+;------------------------- end -------------------------
+

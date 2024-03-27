@@ -1,0 +1,16 @@
+;C75v22
+;Выбор профиля при подключении гарнитуры
+;Selection of profile with the connection the sets
+;(c) ThE TrIFoN
+;(p) SMeeTBB
+;Version: 
+;PatchID: 1307
+;Details: https://patches.kibab.com/patches/details.php5?id=1307
+/*
+
+*/
+033C0E6: 201C 0n20 ; n-номер профиля
+;Или 
+033C0D2: 04 0n; n-номер профиля -1
+;------------------------- end -------------------------
+

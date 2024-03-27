@@ -1,0 +1,19 @@
+;S75v35
+;Работа с мидлетами как с файлами
+;Work with midlets as files
+;(c) SiNgle
+;(p) StrikerVoo
+;Version: 
+;PatchID: 3365
+;Details: https://patches.kibab.com/patches/details.php5?id=3365
+/*
+Работа с мидлетами как с файлами (реально работает)
+
+*/
+;S75v35
+;Работа с мидлетами как с файлами (реально работает)
+;(c) SiNgle
+;(p) StrikerVoo
+526A58: 33F130EB0028 FEF748FE0128
+;------------------------- end -------------------------
+

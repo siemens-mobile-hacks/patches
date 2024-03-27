@@ -1,0 +1,23 @@
+;CX75v13
+;Удаление папки jam из Java
+;Remove folder jam from Java
+;(c) majsky
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 797
+;Details: https://patches.kibab.com/patches/details.php5?id=797
+/*
+RUS: Удаляет подпапку jam из папки Java, при этом приложения и игры сохраняются сразу в свои подпапки в папке Java. Удобно.
+
+ENG: Deletes subfolder jam from folder Java, thus of the appendix and games are kept at once in the subfolder in folder Java. Conveniently.
+*/
+04A4C42: 0B 07
+04A4C52: 5C006A0061006D 00000000000000
+04A4C96: 18 14
+04A4CA8: 6A0061006D005C004100700070006C 4100700070006C0069006300610074
+04A4CBA: 63006100740069006F006E0073 6F006E00730000000000000000
+04A4D1C: 11 0D
+04A4D2E: 6A0061006D005C00470061006D00650073 470061006D006500730000000000000000
+
+;------------------------- end -------------------------
+

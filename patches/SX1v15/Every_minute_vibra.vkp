@@ -1,0 +1,45 @@
+;SX1v15
+;Ежеминутная вибра ver1
+;Every minute vibration ver1
+;(c) Rascal
+;Version: 1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=8455
+;PatchID: 8454
+;Details: https://patches.kibab.com/patches/details.php5?id=8454
+/*
+Ежеминутная вибра © Rascal
+SX1v15
+Патч в формате V-Klay для Egold !!!
+Патч для обладателей S-key или порезанных тестпоинтов.
+Egold fw15 only !
+Микрофон при срабатывании отключается, собеседник не слышит жужания
+*/
+; Ежеминутная вибра © Rascal
+; SX1v15
+; Патч в формате V-Klay для Egold !!!
+; Патч для обладателей S-key или порезанных тестпоинтов.
+; Egold fw15 only !
+; Микрофон при срабатывании отключается, собеседник не слышит жужания
+
+013994: 4841 CC00
+013996: 3D13 CC00
+0139AE: E6FC0C04 DAFDA010
+0139B2: E6FD1300 CC00CC00
+0139B6: E6FE5A00 CC00CC00
+0139BA: DA01AC95 CC00CC00
+07D10A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA01FE8ADA8AB2FDE6FC2F00DA8B3EDD
+07D10B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FCD610E6FDFD00E00E88D088C088E0
+07D10C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC00E0E01DE6FE1000E00FDAB832DC
+07D10D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0806FA01088BE00CDA8B3EDDFA8AC2FD
+
+;07D10C8: 10 08 ;длительность вибры
+
+;Время срабатывания вибры © SiNgle, RizaPN, § Rascal
+;0139A8: F2F40CFE DAFDE010
+;7D10E0: FFFFFFFFFFFFFFFFFFFF F2F40CFE46F43200DB00 ;на 50 секунде
+
+;7D10E6: 32 32 ; на какой секунде вибрировать
+
+;На плате еголда нет тихих звуков как на x55, потому и прикрутил вибру, так оказалось даж удобнее, вибра очень короткая.
+;------------------------- end -------------------------
+

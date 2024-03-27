@@ -1,0 +1,16 @@
+;S75v40
+;Исправление ошибок Native Menu
+;Correction of mistakes in NativeMenu
+;(c) caine
+;(r) ThE TrIFoN
+;Version: 2.1
+;PatchID: 4903
+;Details: https://patches.kibab.com/patches/details.php5?id=4903
+/*
+В пункте "Интернет" работает меню. Исправлены ошибки в меню "Сообщения"
+English: In menu item "Internet" submenu works. Errors in menu item "Messages" fixed.
+*/
+043F8F0: 08 00 
+0437E48: 852C33 3BD132
+;------------------------- end -------------------------
+

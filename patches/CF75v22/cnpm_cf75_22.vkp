@@ -1,0 +1,15 @@
+;CF75v22
+;Изменение размера NonPermMem
+;Change NonPermMem
+;(c) Jellico
+;(r) ~V1ruS~, Shur
+;(p) m.ksy
+;Version: 
+;PatchID: 9714
+;Details: https://patches.kibab.com/patches/details.php5?id=9714
+/*
+Добавить ~900 кб оперативы, иногда пикает при включении/выключении IrDA
+*/
+0903ED0: 40 4D
+;------------------------- end -------------------------
+

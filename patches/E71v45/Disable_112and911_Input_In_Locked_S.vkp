@@ -1,0 +1,14 @@
+;E71v45
+;Отключить ввод 112 и 911 на Экране Блокировки
+;Disable 112and911 Input In Locked Screen
+;(c) 1nvisible
+;(p) Danil_e71
+;Version: 
+;PatchID: 9533
+;Details: https://patches.kibab.com/patches/details.php5?id=9533
+/*
+
+*/
+06696F6: 21D0 2520
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;CX70v56
+;Убрать софт-кнопки с главного экрана и опустить дату с часами вниз
+;Remove soft-keys from MainScreen
+;(c) SiNgle
+;(p) Smelter
+;Version: 2
+;PatchID: 1113
+;Details: https://patches.kibab.com/patches/details.php5?id=1113
+/*
+
+*/
+;* Убрать софт-кнопки с главного экрана и опустить дату с часами вниз v2 ** Remove soft-keys from MainScreen v2 * © SiNgle
+171BD9D: D0 E0
+171BE5C: 04D1 0028
+1721B96: 07D1 0028
+171C8C8: 0DD1 0028 ; чтоб часы не скакали вверх при SMS и т.п.
+171C8CE: 0AD1 0028
+
+
+;------------------------- end -------------------------
+

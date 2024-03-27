@@ -1,0 +1,26 @@
+;EL71v45
+;SLI индикатор записи в камере
+;SLI indicator record in the camera
+;(c) Evgr, Feyman
+;Version: 
+;PatchID: 9831
+;Details: https://patches.kibab.com/patches/details.php5?id=9831
+/*
+В процессе фото и видеозаписи горит индикатор.
+*/
+05C9830: 0100A0E3 13C434EB
+0679FBC: 8571FCEA 230232EA 
+0715798: 0070A0E1 35942FEA 
+0715464: 3510A0E3 0A952FEA
+
+#pragma enable old_equal_ff
+12FA850: 08402DE90100A0E30110A0E36420A0E3
+12FA860: 0030A0E3080000EF0100A0E3360000EF
+12FA870: 0880BDE80070A0E10000A0E3360000EF
+12FA880: C56BD0EA0E402DE9F0FFFFEB0100A0E3
+12FA890: 0E80BDE83510A0E3010050E30000A003
+12FA8A0: 3600000FEF6AD0EA
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

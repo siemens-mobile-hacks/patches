@@ -1,0 +1,23 @@
+;S65v58
+;Memory resizer
+;Memory resizer
+;(c) Zhek@, ~Jhellico, Zeus
+;(r) Rst7
+;Version: 2
+;PatchID: 9537
+;Details: https://patches.kibab.com/patches/details.php5?id=9537
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s65v58&f=Memory_resizer_s65.zip
+
+/*
+Патч увеличивает кол-во свободной оперативной памяти до ~5мб за счет отключения ява машины.
+Патч "Browser killer" после установки не нужен
+
+После установки ява работать не будет
+*/
+12c50fc: a009 e80a ; если пикофф нужно увеличить значение
+009abe0: 0x177000 0x000000 ; JavaHeap. -1500 Кб ,нулевое значение использовать только с отключеной явой, иначе пик
+114eb32: bbf0e6ed c046c046 ; rap bearer 0 (browser)
+114eb4a: bbf0daed c046c046 ; rap bearer 1 (java)
+12c510c: 0x00652000 0x006a2000
+;------------------------- end -------------------------
+

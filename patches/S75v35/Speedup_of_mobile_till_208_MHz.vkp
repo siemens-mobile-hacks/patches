@@ -1,0 +1,17 @@
+;S75v35
+;Разгон телефона до 208 МГц
+;Speedup of mobile till 208 MHz
+;(c) SiNgle
+;(p) StrikerVoo
+;Version: 
+;PatchID: 3432
+;Details: https://patches.kibab.com/patches/details.php5?id=3432
+/*
+
+*/
+232B40: 08402DE9 FF4046EA
+13C2F44: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 01002DE914009FE50000D0E5010050E3
+13C2F54: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0100BDE808402D1904F09F1504F09FE5
+13C2F64: FFFFFFFFFFFFFFFFFFFFFFFF 84F20800442B23A0D42B23A0
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;C81v51
+;Отключение запроса приёма файлов по Bluetooth
+;Disable receive question
+;(c) Sinclair
+;(p) Evgr
+;Version: 
+;PatchID: 10437
+;Details: https://patches.kibab.com/patches/details.php5?id=10437
+/*
+
+*/
+
+0358D42: 12D0 12E0
+0358D72: 1AD1 F2D1
+0358D52: F05E1A2803D01C2801D01B28 00209EF01AEA27E00025F2E7
+
+;------------------------- end -------------------------
+

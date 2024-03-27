@@ -1,0 +1,17 @@
+;CX75v13
+;Звуковой сигнал по окончании приёма данных
+;Sound after data recieve complete
+;(c) SiNgle
+;Version: 
+;PatchID: 923
+;Details: https://patches.kibab.com/patches/details.php5?id=923
+/*
+RUS: Звуковой сигнал по завершению приёма данных через ИК-порт или BT. 
+Звук будет такой же, как установлен на приёме нового SMS.
+
+ENG: Sound signal on end of reception of data through IR or BT.
+The sound will be same as it is established on reception new SMS.
+*/
+035AD5C: 0010A0E3 0767FDEB
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;CX75v12
+;Убрать сообщение "Карта неисправна или неотформатирована"
+;Disable message "Card defect or not formatted"
+;(c) ThE TrIFoN
+;Version: 
+;PatchID: 7706
+;Details: https://patches.kibab.com/patches/details.php5?id=7706
+/*
+
+*/
+02C6D34: D7F148E8 00210021
+;------------------------- end -------------------------
+

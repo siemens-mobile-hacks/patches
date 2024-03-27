@@ -1,0 +1,13 @@
+;M75v19
+;Включение Инженерного меню
+;Enable Developer Menu
+;(c) Phantom
+;Version: 
+;PatchID: 2342
+;Details: https://patches.kibab.com/patches/details.php5?id=2342
+/*
+
+*/
+0831740: 040090E5 0000A0E3
+;------------------------- end -------------------------
+

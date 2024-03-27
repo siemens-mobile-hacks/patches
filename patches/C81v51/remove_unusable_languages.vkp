@@ -1,0 +1,19 @@
+;C81v51
+;Удалить лишние языки из меню языков ввода
+;Remove unusable languages from input languages menu
+;(c) AlexSid
+;(p) Turbid
+;Version: 
+;PatchID: 7207
+;Details: https://patches.kibab.com/patches/details.php5?id=7207
+/*
+
+*/
+0C37936: 00 01 ; Немецкий
+0C3796A: 00 01 ; Латвийский
+0C3796E: 00 01 ; Литовский
+0C37972: 00 01 ; Украинский
+0C37976: 00 01 ; Эстонский
+0C3797A: 00 01 ; Польский
+;------------------------- end -------------------------
+

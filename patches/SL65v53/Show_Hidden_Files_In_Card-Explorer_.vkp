@@ -1,0 +1,14 @@
+;SL65v53
+;Показывать Скрытые Файлы в Card-Explorer'е по умолчанию
+;Show Hidden Files In Card-Explorer By Default
+;(c) 1nvisible
+;Version: 
+;PatchID: 5291
+;Details: https://patches.kibab.com/patches/details.php5?id=5291
+/*
+
+*/
+093B398: 00 FF
+093B448: 00 FF
+;------------------------- end -------------------------
+

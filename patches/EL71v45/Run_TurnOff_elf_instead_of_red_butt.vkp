@@ -1,0 +1,17 @@
+;EL71v45
+;Запуск эльфа TurnOff вместо меню красной кнопки
+;Run TurnOff.elf instead of red button menu
+;(c) @ndres/PRM
+;Version: 
+;PatchID: 8071
+;Details: https://patches.kibab.com/patches/details.php5?id=8071
+/*
+Путь к эльфу: 
+4:\ZBin\utilities\TurnOff.elf (TurnOff не демон разумеется).
+*/
+070F9DE: BFB5051C6548654CE0610020A0626448 FFB58020C7DF2501061C05A18022C7DF
+070F9EE: E06203202063634860638BF624E90028 6C0100220021301C94DF301CC7DF2901
+070F9FE: 01D1 FFBD
+070FA00: 614800E06148206260620022039200925B4A00215A4B019102910C323833 "4:\\ZBin\\utilities\\TurnOff.elf",00
+;------------------------- end -------------------------
+

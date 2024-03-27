@@ -1,0 +1,15 @@
+;E71v45
+;Убрать сообщение "Пожалуйста подождите" при запуске камеры
+;Disable message "Please wait" on camera start
+;(c) SiNgle
+;(r) StrikerVoo
+;(p) Evgr
+;Version: 
+;PatchID: 9671
+;Details: https://patches.kibab.com/patches/details.php5?id=9671
+/*
+
+*/
+067B53B: 18 E8
+;------------------------- end -------------------------
+

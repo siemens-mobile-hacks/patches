@@ -1,0 +1,25 @@
+;M65v50
+;Инфа_Windows XP
+;Info_Windows XP
+;(c) -=(Kad)=-
+;(r) Strike66
+;(p) Valdemar
+;Version: 
+;PatchID: 3444
+;Details: https://patches.kibab.com/patches/details.php5?id=3444
+/*
+Изменяет информацию по *#05#:
+1.Operating Time:=>Windows XP
+2.Talk Time :=>Service Pack 2
+Патч ругаеться, но пишет правильные данные!
+
+*/
+;Operating Time:=>Windows XP:
+1635210: 4F7065726174696E672054696D653A 000000000000000000000000000000
+1635210: 000000000000000000000000000000 "Windows XP"A0
+
+;Talk Time :=>Service Pack2:
+1635224: 54616C6B2054696D65203A00 000000000000000000000000
+1635224: 000000000000000000000000000000 "Service Pack 2"A0
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;SL65v53
+;Open actual MiniGpsTMO file by hotkey
+;Open actual MiniGpsTMO file by hotkey
+;(c) Benlux
+;Version: 
+;PatchID: 7011
+;Details: https://patches.kibab.com/patches/details.php5?id=7011
+/*
+- by DSE is needs set function: "ELSE_DICTA_PLAY" below some key
+*/
+0922908: 0F438EA0 0xA0FDDE91 ;ELSE_DICTA_PLAY
+;------------------------- end -------------------------
+

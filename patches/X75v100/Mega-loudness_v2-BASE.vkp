@@ -1,0 +1,24 @@
+;X75v100
+;Мега-громкость
+;Mega-loudness
+;(c) SiNgle,-=(Kad)=-
+;Version: 2-BASE
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7806
+;PatchID: 7731
+;Details: https://patches.kibab.com/patches/details.php5?id=7731
+/*
+
+*/
+; body x75
+#pragma enable old_equal_ff
+006EB00: E0B51FB40B48C4DF06D0071C1FBC7D78
+006EB10: 401B2626A05502E01FBC2626A055E0BC
+006EB20: 80BC04373847
+
+006EB30: E4D3C2B116AD00000000000000000000,"\
+{p=`Mega loudness` cp=`SiNgle,-=(Kad)=-` id=ad16 ver=2}\
+{1 sl Loudness r=0..7}\
+,"00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;CX70v56
+;Отключить доступ к интернет-браузеру
+;Disable Access To Internet Browser
+;(c) KiRiK
+;(p) Smelter
+;Version: 
+;PatchID: 624
+;Details: https://patches.kibab.com/patches/details.php5?id=624
+/*
+Патч отключает доступ к интернет-браузеру например: к закладкам и.д
+*/
+0943DEC: 2DF98EA0 00000000
+0943DB8: 47F98EA0 00000000
+0943704: FF028FA0 00000000
+;------------------------- end -------------------------
+

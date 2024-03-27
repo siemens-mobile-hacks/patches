@@ -1,0 +1,25 @@
+;CX70v56
+;Аудио-хук
+;Audio-Hook
+;(c) ILYA_ZX
+;(p) SiamiX
+;Version: 3
+;PatchID: 7595
+;Details: https://patches.kibab.com/patches/details.php5?id=7595
+/*
+Патч нужен для работы mp3-плееров на эльфах
+*/
+011B7380: 3880BDE8 0xEF7D2C,0xEA
+
+#pragma enable old_equal_ff
+0FD4264: 0xA0966D14   ; 99: __arm int PlayMelodyInMem(char Unk_0x11,void *MelAddr,int MelSize,int unk2_0xFFFF,int Unk3_0,int Unk4_0)
+0FD4268: 0xA115AFDC   ; 9A: __arm int ChangeVolume(unsigned char Volume)
+0FD426C: 0xA879D98C   ; 9B: Audio params addr
+
+00D96838: 18309FE5003093E5000053E30000001A
+00D96848: 3880BDE80030A0E3503084E5FBFFFFEA
+00D96858: 0xA879D91C
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;SK65v50
+;Уменьшить задержку для долгого нажатия клавиш
+;Decrease Keypad Long Press Delay
+;(c) 1nvisible
+;(r) benj9
+;Version: 
+;PatchID: 2597
+;Details: https://patches.kibab.com/patches/details.php5?id=2597
+/*
+
+*/
+0737D9E: 82 41
+;------------------------- end -------------------------
+

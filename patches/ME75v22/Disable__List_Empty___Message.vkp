@@ -1,0 +1,13 @@
+;ME75v22
+;Убрать сообщение "Список пуст!"
+;Disable "List Empty!" Message
+;(c) 1nvisible
+;Version: 
+;PatchID: 5044
+;Details: https://patches.kibab.com/patches/details.php5?id=5044
+/*
+
+*/
+054FC3A: 9F49 03E0
+;------------------------- end -------------------------
+

@@ -1,0 +1,34 @@
+;EL71v45
+;Убрать софт-кнопки с главного экрана
+;Remove Softkeys from Mainscreen
+;(c) BuG
+;(p) -=[LCW]=-ExXtReMe
+;Version: 
+;PatchID: 7783
+;Details: https://patches.kibab.com/patches/details.php5?id=7783
+/*
+Полностью убирает софт-кнопки и их канвас
+(!) Library function C5
+[EN]v3 removes them completely, with their canvases
+(!) Library function C5
+*/
+05C3BF4: ACF0CEFB C046C046
+05C3B80: ACF008FC C046C046
+05C3BB8: ACF0ECFB C046C046
+05C3C39: D1 E0
+0A348C8: 99B0051C0BA8102210A9 0049884711AF06A0C046
+
+#pragma enable old_equal_ff
+006AF00: 52656D536F66746B6579732C20427547
+006AF10: FFB5C5DF002801D00BB0F0BDFFBC10BC
+006AF20: 99B0051C0BA8102210A904342047
+#pragma disable old_equal_ff
+
+;05C3794: 2BD1 0028 ; always shift down timer/stopwatch
+;05C386A: 1CD1 0028 ; always shift down timer/stopwatch
+05C3795: D1 E0 ; or never shift down timer/stopwatch
+05C386B: D1 E0 ; or never shift down timer/stopwatch
+
+05C3FA1: D0 E0 ; remove missed event softkey image
+;------------------------- end -------------------------
+

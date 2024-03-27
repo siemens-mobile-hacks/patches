@@ -1,0 +1,13 @@
+;SL65v53
+;Выбор профиля при подключении гарнитуры
+;Select Profile On Headset Plug-In
+;(c) ThE TrIFoN
+;Version: 
+;PatchID: 5289
+;Details: https://patches.kibab.com/patches/details.php5?id=5289
+/*
+
+*/
+164D9FA: 04 0N ; N = profile# - 1
+;------------------------- end -------------------------
+

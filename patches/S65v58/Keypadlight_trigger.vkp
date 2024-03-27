@@ -1,0 +1,40 @@
+;S65v58
+;Переключатель режима подсветки клавиатуры
+;Keypadlight trigger
+;(c) benj9
+;(p) KiRiK
+;Version: 0.9
+;PatchID: 818
+;Details: https://patches.kibab.com/patches/details.php5?id=818
+/*
+Меняет режим подсветки клавы в соответствии с выбранным профилем.Пользователь может определять профили и задержку.
+*/
+0C5712A: B1F092EC D1F069F9
+#pragma enable old_equal_ff
+0D28400: 00B5FCB40D48006880470006000E0D49
+0D28410: 43181978FCBC022904D0012904D00329
+0D28420: 04D005E0002203E02D2201E055231B02
+0D28430: 01200121E0F70CEB00BD99994084D2A0
+0D28440: 0D9B8CA04884D2A0
+
+0D28448: 03 ; Set Keypadlight Mode for Profile 1 | определить режим для профиля 1
+0D28449: 03 ; Set Keypadlight Mode for Profile 2 |                  для профиля 2
+0D2844A: 01 ; Set Keypadlight Mode for Profile 3 |                  для профиля 3
+0D2844B: 01 ; Set Keypadlight Mode for Profile 4 |                  для профиля 4
+0D2844C: 03 ; Set Keypadlight Mode for Profile 5 |                  для профиля 5
+0D2844D: 03 ; Set Keypadlight Mode for Profile 6 |                  для профиля 6
+0D2844E: 00 ; Set Keypadlight Mode for Profile 7 |                  для профиля 7
+#pragma disable old_equal_ff
+
+/* Keypadlight Modes are: | Режимы подсветки:
+00 = normal | обычный
+01 = keypadlight always on | подсветка всегда включена
+02 = keypadlight always off | подсветка всегда выключена
+03 = keypadlight delayed afterburner | задержка гашения подсветки
+*/
+
+0D2842C: 55 1A ; Set Delay for Mode 3 | определить задержку для режима 3
+; 00=normal/no_delay, ..., 1A=some seconds, ..., FF=some minutes delay  Nsec X 4: 28h=40=10sec
+;    обычный без задержки     несколько секунд      несколько минут 
+;------------------------- end -------------------------
+

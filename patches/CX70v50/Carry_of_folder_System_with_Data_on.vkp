@@ -1,0 +1,78 @@
+;CX70v50
+;Перенос папки System с Data на Config
+;Carry of folder System with Data on Config
+;(c) Serega_1
+;(r) SMeeTBB
+;(p) dmitriy103
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=3922
+;PatchID: 99
+;Details: https://patches.kibab.com/patches/details.php5?id=99
+/*
+Патч переносит папку System с Data на Config. 
+!!!Надо перенести папку System на Config.
+Патч освобождает немного места на диске Data.
+*/
+0A4E81E: 30 32
+0A4E832: 30 32
+0A4E83E: 30 32
+0A4E856: 30 32
+0A4E872: 30 32
+0A4E886: 30 32
+0A4E8A8: 30 32
+0A4E8C8: 30 32
+0A4E8E0: 30 32
+0A4E906: 30 32
+0A4E926: 30 32
+0A4E93E: 30 32
+0A4E962: 30 32
+0A4E97E: 30 32
+0A4E992: 30 32
+0A4E9B2: 30 32
+0A4E9CE: 30 32
+0A4E9E2: 30 32
+0A4EA04: 30 32
+0A4EA26: 30 32
+0A4EA40: 30 32
+0A4EA66: 30 32
+0A4EA82: 30 32
+0A4EA96: 30 32
+0A4EAB8: 30 32
+0A4EAD8: 30 32
+0A4EAF0: 30 32
+0A4EB12: 30 32
+0A4EB2C: 30 32
+0A4EB3E: 30 32
+0A4EB60: 30 32
+0A4EB88: 30 32
+0A4EBA8: 30 32
+0A4EBD4: 30 32
+0A4EBF0: 30 32
+0A4EC04: 30 32
+0A4EC24: 30 32
+0A4EC40: 30 32
+0A4EC54: 30 32
+0A4EC74: 30 32
+0A4EC92: 30 32
+0A4ECA8: 30 32
+0A4ECCA: 30 32
+0A4ECE8: 30 32
+0A4ECFE: 30 32
+0A4ED8A: 30 32
+0A4EDA6: 30 32
+0A4EDBA: 30 32
+0A4EDDE: 30 32
+0A4EE04: 30 32
+0A4EE22: 30 32
+0A4EE50: 30 32
+0A4EE76: 30 32
+0A4EE94: 30 32
+0A4EEBE: 30 32
+0A4EEDC: 30 32
+0A4EEF2: 30 32
+;0A4ED3A: 30 32 ;Ети строски переносят ММС на диск Конфиг, расскоментируйти их, если пользуетесь редко ММС
+;0A4ED56: 30 32
+;0A4ED6A: 30 32
+
+;------------------------- end -------------------------
+

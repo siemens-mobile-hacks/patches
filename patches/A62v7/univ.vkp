@@ -1,0 +1,36 @@
+;A62v7
+;Патч 71-го блока
+;71 eeprom block patch
+;(c) avkiev
+;Version: 
+;PatchID: 9407
+;Details: https://patches.kibab.com/patches/details.php5?id=9407
+/*
+Позволяет отключить некоторые сообщения и включить нетмонитор.
+*/
+; A62 v7 lg98 - Patch made by "Smelter" © avkiev
+; http://avkiev.kiev.ua/Siemens/Smelter/Smelter.htm
+;********************************************************************************
+;Патч 71-го блока
++5C217A
+7: FE 7E ; Disable "Security-Last 10 only" menu
+;7: FE DE ; Disable "Security-Barrings" menu
+;7: FE FF ; Disable "Band selection" menu
+;8: FF 7F ; Disable "Display-Illumination"
+8: FF F7 ; Disable "Divert-Unanswered"
+;8: FF FB ; Disable extended divert ; Not reachable/No reply/Busy
+;8: FF FD ; Disable "Divert-Status check"
+;8: FF FE ; Disable "Divert-Clear all"
+;9: FF DF ; Disable "Divert-Receiving fax"
+9: FF EF ; Disable "Divert-Receiving data"
+A: FF BF ; Disable startup Music/Animation
+;A: FF EF ; Enable "Network-Line" menu
+C: FF BF ; Disable WAP Browser in menu
+D: EF FF ; Enable/Disable aircraft check
+;E: FF 7F ; Disable 3 attempts for entering phonecode
+E: FF BF ; Enable Fullscreen FlashSMS
++0
+;********************************************************************************
+
+;------------------------- end -------------------------
+

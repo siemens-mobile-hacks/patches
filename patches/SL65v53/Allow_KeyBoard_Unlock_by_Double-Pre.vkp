@@ -1,0 +1,13 @@
+;SL65v53
+;Разрешить Разблокировку Клавиатуры Двойным Нажатием #
+;Allow KeyBoard Unlock by Double-Press of #
+;(c) 1nvisible
+;Version: 
+;PatchID: 5298
+;Details: https://patches.kibab.com/patches/details.php5?id=5298
+/*
+
+*/
+164FB3A: 21D1 C046
+;------------------------- end -------------------------
+

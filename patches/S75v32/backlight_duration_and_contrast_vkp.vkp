@@ -1,0 +1,21 @@
+;S75v32
+;Включить пункты меню "гашение подсветки" и "контраст"
+;Enable menu items "backlight duration" and "contrast"
+;(c) Bueffel, Bug
+;(p) GrosserS
+;Version: 
+;PatchID: 4603
+;Details: https://patches.kibab.com/patches/details.php5?id=4603
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v32&f=backlight_duration_and_contrast_vkp.zip
+
+/*
+Активирует пункты "задержка гашения подсветки" и "контраст" (пока не работает) в меню настроек индикация. Нужно заменить файл set_display.fs в Config/japp/FlexMenu на приложенный
+
+*/
+; modified set_display.fs required, replace it in Config/japp/FlexMenu
+
+042E868: 93 9B ; backlight_duration
+042F668: 7405 F809 ; contrast -don't really work-
+
+;------------------------- end -------------------------
+

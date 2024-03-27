@@ -1,0 +1,15 @@
+;M65v50
+;Индикатор Пропущенных Событий
+;Missed Events Indicator
+;(c) BuG
+;(r) empeka
+;(p) Mifodiy
+;Version: 2.1 -MP
+;PatchID: 2723
+;Details: https://patches.kibab.com/patches/details.php5?id=2723
+/*
+
+*/
+1634018: 8A4202D12988C90703D53858A02100F0C9F80136 C046,00F002E805E000C09FE51CFF2FE1,11A8FCA0
+;------------------------- end -------------------------
+

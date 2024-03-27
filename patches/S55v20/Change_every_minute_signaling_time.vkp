@@ -1,0 +1,18 @@
+;S55v20
+;Изменение времени подачи ежеминутного сигнала
+;Change every minute signaling time
+;(c) SiNgle, RizaPN
+;(p) avkiev
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=4775
+;PatchID: 4773
+;Details: https://patches.kibab.com/patches/details.php5?id=4773
+/*
+
+*/
+222D14: F2F40CFE DA6100A0
+21A000: FFFFFFFFFFFF F2F40CFE46F4
+21A006: FF 32 ; Секунда, на которой подается сигнал. Здесь - 50
+21A007: FFFFFF 00DB00
+;------------------------- end -------------------------
+

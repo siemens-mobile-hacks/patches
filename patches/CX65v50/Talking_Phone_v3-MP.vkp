@@ -1,0 +1,25 @@
+;CX65v50
+;Говорящий телефон
+;Talking Phone
+;(c) avkiev
+;(r) avkiev
+;(p) empeka
+;Version: 3-MP
+;PatchID: 1227
+;Details: https://patches.kibab.com/patches/details.php5?id=1227
+/*
+MP+FL!
+Этот патч является точкой входа для патча 1130. Установка врезки включает 3 этапа:
+1. Выбор шортката на который будет заменяться SpellTime
+2. Здесь ничего не выбирать :), идёт замена вызова PlaySound (т.е. будильника) на проговаривание времени
+3. Должен быть установлен патч 385 , или закомментируйте строки после  3. Keylock
+*/
+;1. Shortcut
+;0920960: "ELSE_COUNT_DOWN",00,FB198EA0 "ELSE_COUNT_DOWN",00,0xA0FC3001 ; CX65v50 - ELSE_COUNT_DOWN
+;0920C6C: "ELSE_REMOTESYNC",00,2D1A8EA0 "ELSE_REMOTESYNC",00,0xA0FC3001 ; CX65v50 - ELSE_REMOTESYNC
+;0920C04: "ELSE_PUSHTOTALK",00,F9238EA0 "ELSE_PUSHTOTALK",00,0xA0FC3001 ; CX65v50 - ELSE_PUSHTOTALK
+
+;2. Alarm
+0B6D478: 0F20D9F5B0E92080 00488047,0xA0FC30A7   ; CX65v50
+;------------------------- end -------------------------
+

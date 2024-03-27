@@ -1,0 +1,14 @@
+;M75v19
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) Grizzzzly
+;Version: 
+;PatchID: 2330
+;Details: https://patches.kibab.com/patches/details.php5?id=2330
+/*
+
+*/
+07FFB6E: 56 20
+;------------------------- end -------------------------
+

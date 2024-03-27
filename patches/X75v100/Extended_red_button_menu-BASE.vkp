@@ -1,0 +1,42 @@
+;X75v100
+;Расширенное меню красной нкопки
+;Extended red button menu
+;(c) -=(Kad)=-
+;Version: 5.0
+;PatchID: 8859
+;Details: https://patches.kibab.com/patches/details.php5?id=8859
+/*
++5.0 Патч переписан с нуля, добавлены новые пункты, все пофиксил, если смогу сделаю на все 4 пункта
+*/
+#pragma enable old_equal_ff
+006E200: FFB53448C4DF28D0071C787800280AD0
+006E210: 01280DD002280DD003281ED0042819D0
+006E220: 05281AD01AE07968002917D0884715E0
+006E230: 93DF13E08020C7DF2501061C391C1031
+006E240: 8022C7DF6C010021301C94DF301CC7DF
+006E250: 290103E0BEDFC7DF0901A9DFFFBDFFB5
+006E260: 1C48C4DF2CD0071CB87800280AD00128
+006E270: 0DD002280DD0032822D004281DD00528
+006E280: 17D01FE0B96800291CD088471AE093DF
+006E290: 18E08020C7DF2501061C391C4C318022
+006E2A0: C7DF6C010021301C94DF301CC7DF2901
+006E2B0: 08E0A9DFC7DF090104E0BEDFC7DF0901
+006E2C0: D7F20EFBFFBD
+
+006E2D0: E4D3C2B107AD00000000000000000000,"\
+{p=`Extended red button menu` id=ad07 cp=`-=(Kad)=-` ver=5}\
+{c wtd `User adr`=0 `Reboot`=1 `File`=2 `Standart`=3 `Refresh`=4 `Key lock`=5}\
+{sm `Second`}\
+{1 o `Who to do:` c=wtd}\
+{4 a `User adr`}\
+{16 sf `File`}\
+{endsm}\
+{sm `Third`}\
+{2 o `Who to do:` c=wtd}","\
+{8 a `User adr`}\
+{76 sf `File`}\
+{endsm}\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

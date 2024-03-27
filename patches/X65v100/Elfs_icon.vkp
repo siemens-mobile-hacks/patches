@@ -1,0 +1,19 @@
+;X65v100
+;Иконка эльфов
+;Elf's icon
+;(c) Ushastiy™
+;(r) 1nvisible
+;(p) Duke_Brass + GPFactory
+;Version: 1
+;PatchID: 6162
+;Details: https://patches.kibab.com/patches/details.php5?id=6162
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=Elfs_icon.rar
+
+/*
+Иконка эльфов, нашёл среди GPF-файлов для S75. В архиве gpp-фаил и исходник в bmp-формате.
+
+NB! Не забудьте про Pictures Add-on 5.1!!!
+*/
+Иконка эльфов, нашёл среди GPF-файлов для S75. В архиве gpp-фаил и исходник в bmp-формате. См. приложенный архив.
+;------------------------- end -------------------------
+

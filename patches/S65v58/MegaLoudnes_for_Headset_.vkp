@@ -1,0 +1,25 @@
+;S65v58
+;Мегагромкость для гарнитуры
+;MegaLoudnes for Headset
+;(c) ILYA_ZX
+;Version: 
+;PatchID: 10682
+;Details: https://patches.kibab.com/patches/details.php5?id=10682
+/*
+
+*/
+;MegaLoudnes for Headset
+;s65v58
+
+125924C: 1E0000EA EDFFFFEA
+1259208: 70161FE5035AFFEB 080040E22E0000EA
+
+;WARNING! 16 - very aloud! May damage ears, headset or maybe Power Amplifier of mobile!
+;Осторожно! 16 - очень громко! Может повредить слух, гарнитуру и возможно усилитель мощности телефона!
+
+;Patch option, remove comment:
+;1259208: 08 XX
+;XX - HEX from 00(no changes) to 16(max)
+
+;------------------------- end -------------------------
+

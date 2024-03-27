@@ -1,0 +1,15 @@
+;X65v100
+;Расширеный список вызовов
+;Extended calls list
+;(c) alex_itd
+;Version: 0.1
+;PatchID: 6394
+;Details: https://patches.kibab.com/patches/details.php5?id=6394
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=Extended_calls_list.rar
+
+/*
+Жмем зелёную кнопку - попадаем в набранные, потом красную в -принятые-пропущенные
+*/
+Эльф находится в приложеном архиве
+;------------------------- end -------------------------
+

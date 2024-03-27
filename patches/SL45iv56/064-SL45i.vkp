@@ -1,0 +1,19 @@
+;SL45iv56
+;"Левый Джойстик" как ярлык для "Профили"
+;Left-Arrow-Key for as a Profile shortcut
+;(c) RizaPN, mic.kan
+;Version: 
+;PatchID: 1627
+;Details: https://patches.kibab.com/patches/details.php5?id=1627
+/*
+Release: 2003-06-17
+
+Патч №064 с http://patch.oslik.ru/SL45_RU
+*/
+3B03B0: EA200A0546FC1400 8D0446FC1500EAF0 
+3B03B8: EA200A0546FC1500 0A0546FC23002D5D 
+3B0474: E00CE00D DADB3CEF 
+3B0478: E00E 0D0B 
+3B047A: DAD4AC70 DADB5C40
+;------------------------- end -------------------------
+

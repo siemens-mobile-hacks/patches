@@ -1,0 +1,23 @@
+;EL71v38
+;Отключить помошника при загрузке
+;Disable "Assistant" at startup
+;(c) SiNgle
+;(r) SMeeTBB
+;(p) -=PaScaL=-
+;Version: 
+;PatchID: 6555
+;Details: https://patches.kibab.com/patches/details.php5?id=6555
+/*
+
+*/
+;EL71v38
+;Отключить помошника при загрузке
+;Disable "Assistant" at startup
+;(c) SiNgle
+;(r) Огромный респект SMeeTBB за подробную инструкцию по портированию патчей
+;(p) -=PaScaL=-
+;Version
+669401: D1 D0
+;------------------------- end -------------------------
+;------------------------- end -------------------------
+

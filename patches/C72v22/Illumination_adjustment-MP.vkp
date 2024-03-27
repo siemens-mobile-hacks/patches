@@ -1,0 +1,15 @@
+;C72v22
+;Настройка подсветки
+;Illumination adjustment
+;(c) avkiev
+;(r) benj9
+;(p) Virusmater
+;Version: 
+;PatchID: 7606
+;Details: https://patches.kibab.com/patches/details.php5?id=7606
+/*
+
+*/
+1148AB4: 08D04DE20010D1E502B0A0E3 04E08FE204F01FE5,0xA0FC6701
+;------------------------- end -------------------------
+

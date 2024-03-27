@@ -1,0 +1,14 @@
+;EL71v45
+;Отключить "Подождите" в Контакты-Группы
+;Disable "Please wait" in Contacts-Groups
+;(c) Evgr
+;(p) den11111
+;Version: 
+;PatchID: 8087
+;Details: https://patches.kibab.com/patches/details.php5?id=8087
+/*
+
+*/
+07C7962: 37F068EC C046C046
+;------------------------- end -------------------------
+

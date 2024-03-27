@@ -1,0 +1,18 @@
+;S45iv4
+;Увеличиваем_время_работы_разряженного_аккумулятора
+;We increase the time of the work of the discharged storage battery
+;(c) Ramil
+;Version: 
+;PatchID: 846
+;Details: https://patches.kibab.com/patches/details.php5?id=846
+/*
+
+
+сообщение "Аккум.. разряжен! Зарядите!" выходит с интервалом в 20 секунд, и так 3 раза, а на четвёртый телефон выключается
+было 20 сек, стало 60 сек
+
+Только full c289
+*/
+2950CA: ED10 C832
+;------------------------- end -------------------------
+

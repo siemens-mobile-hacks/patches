@@ -1,0 +1,20 @@
+;E71v41
+;Изменение длительности горения подсветки
+;Change Illumination Turn Off Timer
+;(c) benj9
+;(p) BuG
+;Version: 
+;PatchID: 6751
+;Details: https://patches.kibab.com/patches/details.php5?id=6751
+/*
+Устанавливать только при оригинальном set_display.fs, если нет оного берём из архива и кладём в 
+Config:\japp\FlexMenu
+
+ВНИМАНИЕ! ЕСЛИ ЭТОГО НЕ СДЕЛАТЬ, ТО ПОЯВЯТСЯ ГЛЮКИ ОПИСАННЫЕ by Pavel81
+*/
+08891C0: 05 0i10 ; 1st menu item
+08891D4: 0A 0i30 ; 2nd menu item
+08891E8: 0F 0i60 ; 3rd menu item
+08891FC: 14 0i120 ; 4th menu item
+;------------------------- end -------------------------
+

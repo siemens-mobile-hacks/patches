@@ -1,0 +1,36 @@
+;CX70v50
+;Белый список
+;White List
+;(c) SiNgle
+;(p) KreN
+;Version: 2
+;PatchID: 1282
+;Details: https://patches.kibab.com/patches/details.php5?id=1282
+/*
+Белым списком становится выбранная группа в фильтре.
+Неопределенные - занято, левые - занято, звенят только из белой группы.
+
+English:
+The selected group in filter becomes whitelist. All other calls are rejected ("Busy").
+*/
+0B801D2: 061C281C 8FF366E8
+0B80EC4: 0006000E 8EF326EA
+0B8132E: B0420ED1 8DF3D4EF
+
+#pragma enable old_equal_ff
+0F0F2A0: 00402DE9FF012DE9FF0050E30500000A
+0F0F2B0: 0100A0E30FE0A0E184F09FE5000050E3
+0F0F2C0: 0000001A0D0000EBFF01BDE80060A0E1
+0F0F2D0: 0500A0E10080BDE800402DE9FF012DE9
+0F0F2E0: 060050E10300000A040000EBFF01BDE8
+0F0F2F0: 0040BDE84CF09FE5FF01BDE80080BDE8
+0F0F300: FF412DE90000A0E30FE0A0E138F09FE5
+0F0F310: FF81BDE8FF412DE9FF0057E30200000A
+0F0F320: 180096E5000057E10300001AFF01BDE8
+0F0F330: 000CA0E1200CA0E10080BDE8EFFFFFEB
+0F0F340: F9FFFFEA6D7D25A15113B8A0EF1FB8A0
+#pragma disable old_equal_ff
+
+12728A3: D5 E0
+;------------------------- end -------------------------
+

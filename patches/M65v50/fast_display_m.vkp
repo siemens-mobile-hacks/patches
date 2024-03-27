@@ -1,0 +1,15 @@
+;M65v50
+;Быстрый показ окна "Язык ввода:" при выборе языка
+;Fast showing language input.
+;(c) SiNgle
+;(p) AsteriX
+;Version: 1.1
+;PatchID: 6304
+;Details: https://patches.kibab.com/patches/details.php5?id=6304
+/*
+Быстрый показ выбранного языка
+*/
+11F93AC: B80B 0100
+
+;------------------------- end -------------------------
+

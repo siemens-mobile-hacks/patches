@@ -1,0 +1,18 @@
+;CX75v13
+;Удалить дефис в конце CB-сообщения
+;Remove the dash at the end of CB news
+;(c) rreezzoo, Bo$s
+;(r) empeka, g-e-l-o
+;(p) BuG
+;Version: 1.0
+;PatchID: 803
+;Details: https://patches.kibab.com/patches/details.php5?id=803
+/*
+RUS: Удаляет прочерк в конце СВ-сообщения.
+
+ENG: Deletes a crossed out section in the end of the св-message.
+*/
+01F1CDB: 2D 00
+
+;------------------------- end -------------------------
+

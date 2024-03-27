@@ -1,0 +1,14 @@
+;M55v11
+;Отключить сообщение "Блокировка клавиатуры включена"
+;Disable "Keypad Locked" message
+;(c) avkiev
+;(p) AlexSid
+;Version: 
+;PatchID: 5238
+;Details: https://patches.kibab.com/patches/details.php5?id=5238
+/*
+
+*/
+0D2D1C: DA2D 0D01
+;------------------------- end -------------------------
+

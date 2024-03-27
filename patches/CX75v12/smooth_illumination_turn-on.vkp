@@ -1,0 +1,15 @@
+;CX75v12
+;Плавное включение подсветки
+;Smooth illumination turn-on
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 500
+;Details: https://patches.kibab.com/patches/details.php5?id=500
+/*
+Плавное включение подсветки. С принципом задания времени пока не разобрался.
+*/
+08595E6: 0022 664A
+;------------------------- end -------------------------
+

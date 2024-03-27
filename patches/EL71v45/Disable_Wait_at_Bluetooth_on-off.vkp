@@ -1,0 +1,14 @@
+;EL71v45
+;Отключить "Подождите" при вкл/выкл блютуз
+;Disable Wait at Bluetooth on/off
+;(c) Evgr
+;(p) funMarkus
+;Version: 
+;PatchID: 7964
+;Details: https://patches.kibab.com/patches/details.php5?id=7964
+/*
+
+*/
+0B5E56A: FAF59BFB C046C046
+;------------------------- end -------------------------
+

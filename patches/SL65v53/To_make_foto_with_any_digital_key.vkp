@@ -1,0 +1,14 @@
+;SL65v53
+;Фотографирование любой цифровой кнопкой
+;To make foto with any digital key
+;(c) SiNgle
+;Version: 1
+;PatchID: 5243
+;Details: https://patches.kibab.com/patches/details.php5?id=5243
+/*
+
+*/
+08F3940: 01 16 ; !Выход из камеры по длинному нажатию красной кнопки
+08F3948: 45 23
+;------------------------- end -------------------------
+

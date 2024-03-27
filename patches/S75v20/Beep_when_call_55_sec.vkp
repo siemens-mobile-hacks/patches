@@ -1,0 +1,13 @@
+;S75v20
+;Звуковой сигнал о 55 секундах разговора
+;Beep when call duration is 55 seconds
+;(c) SiNgle
+;Version: 
+;PatchID: 1664
+;Details: https://patches.kibab.com/patches/details.php5?id=1664
+/*
+
+*/
+9AB474: 00 37; 55 или другое число в HEX
+;------------------------- end -------------------------
+

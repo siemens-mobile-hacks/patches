@@ -1,0 +1,15 @@
+;SK65v50
+;Отключить сообщение "Профиль активирован"
+;Disable message "Profile activated"
+;(c) 13.beta2
+;(p) Marie
+;Version: 
+;PatchID: 10618
+;Details: https://patches.kibab.com/patches/details.php5?id=10618
+/*
+
+
+*/
+03876D0: 2B1C 04E0
+;------------------------- end -------------------------
+

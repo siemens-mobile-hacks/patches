@@ -1,0 +1,20 @@
+;M75v23
+;Изменение размеров шрифта на главном экране
+;Change font size on MainScreen
+;(c) SiNgle, [crazy]misha, KiRiK, BuG
+;Version: 3
+;PatchID: 2798
+;Details: https://patches.kibab.com/patches/details.php5?id=2798
+/*
+
+*/
+04AB508: 03 FF ; provider name
+04AB518: 03 FF ; sub provider name
+04AB538: 07 FF ; Flash-SMS - x75
+04AB548: 08 FF ; Date&Time
+
+04AB568: 07 FF ; Sub provider name/Flash SMS with provider logo - x75
+04AB578: 07 FF ; Flash SMS with provider logo - x75
+04AB588: 08 FF ; Date&Time with provider logo
+;------------------------- end -------------------------
+

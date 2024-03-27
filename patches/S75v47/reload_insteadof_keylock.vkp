@@ -1,0 +1,20 @@
+;S75v47
+;Перезагрузка вместо Клав. Заблок. в меню красной кнопки
+;Reload instead of Keylock in RedButtonMenu
+;(c) ThE TrIFoN
+;(r) siepatchdb@conference.jabber.ru
+;(p) bank!
+;Version: 
+;PatchID: 5579
+;Details: https://patches.kibab.com/patches/details.php5?id=5579
+/*
+перезагружает телефон из меню красной кнопки.
+*/
+0345580: A7F0B4EB EFF6F4E8
+13AEF94: 0x21CC 0x054B ; Keylock => Reload
+13AEF98: 0x21CC 0x054B ; Keylock => Reload
+02FCEC4: 1FD1 0028 ; принудительный запуск помощника, чтобы не стирались настроики интернета
+
+034557C: FDF7BDFB C046C046 ; Не отображать окно "Клава залочена"
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;CX75v5
+;Плавное_включение_подсветки
+;Smooth_illumination_turn-on
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 446
+;Details: https://patches.kibab.com/patches/details.php5?id=446
+/*
+Плавное включение подсветки. С принципом задания времени пока не разобрался.
+*/
+0857952: 0022 664A
+
+;------------------------- end -------------------------
+

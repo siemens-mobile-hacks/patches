@@ -1,0 +1,14 @@
+;M75v25
+;Звуковой сигнал по окончании приёма данных
+;Sound after data recieve complete
+;(c) SiNgle
+;(p) VoVkA
+;Version: 
+;PatchID: 4908
+;Details: https://patches.kibab.com/patches/details.php5?id=4908
+/*
+
+*/
+035B000: 0010A0E3 A566FDEB
+;------------------------- end -------------------------
+

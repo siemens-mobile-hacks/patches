@@ -1,0 +1,15 @@
+;SL65v50
+;Шрифт меню и софт кнопок
+;Type of menu and soft of the buttons
+;(c) SiNgle
+;Version: 
+;PatchID: 5115
+;Details: https://patches.kibab.com/patches/details.php5?id=5115
+/*
+
+*/
+091CEC0: 03 02 ; Шрифт софт-кнопок
+091CF08: 03 08 ; Выбраная позиция меню
+091CF0C: 02 08 ; Список меню
+;------------------------- end -------------------------
+

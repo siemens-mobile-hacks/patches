@@ -1,0 +1,23 @@
+;M55v91
+;Черный список
+;Black list
+;(c) SiNgle
+;(p) AlexSid
+;Version: 2.1
+;PatchID: 9725
+;Details: https://patches.kibab.com/patches/details.php5?id=9725
+/*
+Чёрным списком становится выбранная группа в фильтре (меню Аудио) находясь при этом в первом профиле!
+*/
+;!Не совместим с патчем *Чёрный список v1.1*
+;!Чёрным списком становится выбранная группа в фильтре (меню Аудио)
+;!Работает только при стандартном профиле
+01CBCE: 3D0C cc00
+01D742: 3D0B CC00
+01D880: 3D06 cc00
+7F3F20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F08CD7400D00F2FCC62366FCFF0046FC
+7F3F30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FF002D0308C240C82D03E00DFAA27A40
+7F3F40: FFFFFFFFFFFF 9880FA22CA0C
+824076: F08ce00d FA9F203F
+;------------------------- end -------------------------
+

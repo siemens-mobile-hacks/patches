@@ -1,0 +1,15 @@
+;EL71v45
+;Отключить звук камеры
+;Disable camera sound
+;(c) -=(Kad)=-
+;Version: 
+;PatchID: 7709
+;Details: https://patches.kibab.com/patches/details.php5?id=7709
+/*
+Убирает стандартный звук затвора камеры
+
+*/
+0679FBC: 8571FCEA 1EFF2FE1
+
+;------------------------- end -------------------------
+

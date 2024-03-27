@@ -1,0 +1,13 @@
+;C65v56
+;Настройка яркости камеры
+;Camera brightness
+;(c) SiNgle
+;Version: 
+;PatchID: 3792
+;Details: https://patches.kibab.com/patches/details.php5?id=3792
+/*
+
+*/
+122A5F1: 80 C0 ;up to FFh
+;------------------------- end -------------------------
+

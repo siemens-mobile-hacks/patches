@@ -1,0 +1,37 @@
+;CX75v25
+;Чтение СМС при залоченой клавиатуре
+;Read message when key locked
+;(c) Bennie
+;(r) avkiev
+;(p) NForce
+;Version: 2.1
+;PatchID: 6256
+;Details: https://patches.kibab.com/patches/details.php5?id=6256
+/*
+Чтение СМС при залоченой клавиатуре зеленой кнопкой.
+*/
+;CX75v25
+;Read message when key locked
+;Read message when key locked
+;(c) Bennie
+;(r) avkiev
+;(p) NForce
+;Version: 2.1
+2CC770: DBF7F2FF 33F7C9FA
+2CF90C: 0223E05E 30F708FA
+#pragma enable old_equal_ff
+01FFcD0: 40B50026052814D1CEF054FD01280AD0
+01FFcE0: CFF0B2FC01280CD10320154B98471548
+01FFcF0: 8047022605E00320114B9847CBF031FA
+01FFd00: 0126301C40BD0223E85E00B5FFF7E0FF
+01FFd10: 002802D1A8F020FD00BD01B00A490847
+01FFd20: 0223E05E01B5FFF7D3FF002800D101BD
+01FFd30: 02B0022802D10020D0F011FA03490847
+01FFd40: 0xA085C009,0xA049F10C,0xA02CC5FF,0xA02CF9F9
+#pragma disable old_equal_ff
+
+
+;locale=russian
+
+;------------------------- end -------------------------
+

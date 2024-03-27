@@ -1,0 +1,16 @@
+;CX75v25
+;Только папка Игры на ММС
+;Only folder Games on MMC
+;(c) ThE TrIFoN
+;(p) kiREALlov
+;Version: 
+;PatchID: 3542
+;Details: https://patches.kibab.com/patches/details.php5?id=3542
+/*
+Патч сделан из-за необходимости работы Мастер-мидлета с диска 0:\
+*/
+004A59B6: 30 34
+004A59D8: 30 34
+004A5A0A: 30 34
+;------------------------- end -------------------------
+

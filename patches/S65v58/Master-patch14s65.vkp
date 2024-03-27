@@ -1,0 +1,47 @@
+;S65v58
+;Master-patch
+;Master-patch
+;(c) avkiev
+;(p) Merzotnuk
+;Version: 14
+;PatchID: 6018
+;Details: https://patches.kibab.com/patches/details.php5?id=6018
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s65v58&f=Master-patch14s65.zip
+
+/*
+FAQ по установке Master Patch v.14
+Установка этого Мастера отличается от предыдущих.
+Думаем, что ставим на чистый фф. Сначала ставимпростую БФ (для совместимости со старыми патчами) и новую - Большую библиотеку:
+____________
+FunctionLibrary.vkp 
+BigFunctionLibrary.vkp
+____________
+Затем ставим Мастера и АПИ:
+____________
+API-patch-BASE.vkp
+Master-patch_v14_S65v58.vkp
+____________
+После этого ставим Pictures add-on и Swi hook
+____________
+Pictures_add_on.vkp
+SWI-hook.vkp
+____________
+Теперь можно ставить mainscreen dispatcher и можем спокойно управлять главным экраном в формате dis+cfg+txt:
+____________
+Mainscreen_dispatcher.vkp
+____________
+Создаем 0:/Misc/Patces/dis. Туда и станем помещать патчи .dis
+
+FAQ by NForce (большой и человеческий ему респект), процитировал Leo
+P.S. В приложеном файле все рабочее собрано вместе. У меня стоит из этого архива и все пашет. 
+*/
+; (!) Library, API, SWI
+
+;Run Scaner on startup
+16977D2: FF20 BEDF 
+
+;Run Scaner instead of ELSE_REMOTE_SYNC
+092EC60: D39C8DA0 0xA0FC0C91
+
+;------------------------- end -------------------------
+

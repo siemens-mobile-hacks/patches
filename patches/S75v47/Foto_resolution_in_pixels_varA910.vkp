@@ -1,0 +1,21 @@
+;S75v47
+;Разрешение в пикселях вместо названий в камере (Variant A910)
+;Size in pixels instead of names in camera (Variant A910)
+;(c) alkaba
+;(p) ferro
+;Version: 
+;PatchID: 5893
+;Details: https://patches.kibab.com/patches/details.php5?id=5893
+/*
+В настройках камеры -> качество фото вместо непонятных "Максимальное", "Высок." и т.д. будет размер фото в пикселях - 1280x1024, 640x480 и т.д.
+
+
+Только для русского язьіка (Variant A910)
+*/
+018366c2: D09CD0B0D0BAD181D0B8D0BCD0B0D0BBD18CD0BDD0BED0B5 "1280x1024
+0182a3a7: D092D18BD181D0BED0BA2E "640x480
+0182b717: D09ED0B1D18BD187D0BDD0BED0B5 "320x240
+01845bc1: D09DD0B8D0B7D0BA2E "160x120
+;018366e7: D0A4D0BED0BD2E20D0BAD0B0D180D182D0B8D0BDD0BAD0B0 "132x176",00
+;------------------------- end -------------------------
+

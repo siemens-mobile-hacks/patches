@@ -1,0 +1,21 @@
+;EL71v45
+;Счетчик СМС
+;SMS Count
+;(c) starfriend
+;(r) lisugar
+;(p) Evgr
+;Version: 3.4
+;PatchID: 8223
+;Details: https://patches.kibab.com/patches/details.php5?id=8223
+/*
+(!) Master, func lib: 0A,0B,0C,0D,17,1A,4E
+Show SMS Count instead of INSTANT_MESSAGE
+*/
+0x845648: F5556FA0 CD5106A0
+
+0x5C33DA: 5865AB48AB4914386844 C046004988472B5106A0
+0xE2EAB0: 706881694269201C 004A90479D5006A0
+0x065268: FFFFFFFF C1EEF4A8 ; RamSMSNum
+
+;------------------------- end -------------------------
+

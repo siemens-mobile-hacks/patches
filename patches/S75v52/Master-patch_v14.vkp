@@ -1,0 +1,22 @@
+;S75v52
+;Мастер-патч
+;Master-patch
+;(c) avkiev
+;(r) 1nvisible, chaos
+;(p) KIBER-DEMON
+;Version: 14
+;PatchID: 8298
+;Details: https://patches.kibab.com/patches/details.php5?id=8298
+/*
+Обновление! Совместимость с загрузчиком эльфов 2.2
+*/
+;Run Scaner on startup
+02FD236: 0021 BEDF
+
+;Run Scaner instead of REMOTE_SYNCHRONIZATION
+0425440: 0xA032E1C1 0xA0060C91
+
+;Редактирование сообщения  7 : 0804  "Дист.синхр." => "Рефрешер"
+17AC3B5: D094D0B8D181D1822ED181D0B8D0BDD185D1802E00 D0A0D0B5D184D180D0B5D188D0B5D180FFFFFFFF00
+;------------------------- end -------------------------
+

@@ -1,0 +1,20 @@
+;CX75v12
+;Открыть ZIP и RAR архивы с кард експлорера
+;Open ZIP and RAR archives from card explorer
+;(c) NForce
+;(r) Shadow_ru
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=5652
+;PatchID: 4045
+;Details: https://patches.kibab.com/patches/details.php5?id=4045
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v12&f=archives.rar
+
+/*
+ In archive which i have added there are 2 java applications MobileZip x75 (special edition for this patch) and MobileRar (opens rar archives but only from Misc, Sounds etc. folders not from root) and sources for graph patches updated graphic in archive
+*/
+04AD390: "pdf" "zip" ;if you already have patch ZIPViewer comment this line
+04AD329: "Pdf" "ZIP" ;if you already have patch ZIPViewer comment this line
+04AD350: "doc" "rar"
+04AD311: "Doc" "RAR"
+;------------------------- end -------------------------
+

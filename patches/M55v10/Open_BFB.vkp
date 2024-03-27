@@ -1,0 +1,14 @@
+;M55v10
+;Open BFB
+;Open BFB
+;(c) RizaPN
+;(p) Girosavo
+;Version: 
+;PatchID: 1474
+;Details: https://patches.kibab.com/patches/details.php5?id=1474
+/*
+Позволяет работать с Sensors Tool, Siemens Screenshot
+*/
+7E5AB4: 0A5B F45A
+;------------------------- end -------------------------
+

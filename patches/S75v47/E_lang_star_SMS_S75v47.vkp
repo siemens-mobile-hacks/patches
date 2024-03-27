@@ -1,0 +1,23 @@
+;S75v47
+;Выбор языка ввода по долгому нажатию '*' в SMS, E-mail и браузере  
+;Input language select on long '*' press in SMS, E-mail and Browser  
+;(c) Evgr
+;(p) Vitll
+;Version: 
+;PatchID: 9920
+;Details: https://patches.kibab.com/patches/details.php5?id=9920
+/*
+
+*/
+05CB02C: 1E215956814208D1 00498847,0xA008FFD9    
+00B3B22: 02215956 DCF74DFA
+
+#pragma enable old_equal_ff 
+008FFC0: 00B502215956032800D000BDE86825F0
+008FFD0: 9BF810BC1834204700B51E2159560328
+008FFE0: 06D008BC814201D10433184716331847
+008FFF0: E06825F089F810BC14342047
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

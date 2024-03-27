@@ -1,0 +1,14 @@
+;S65v50
+;Открыть заблокированные блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;(p) AsteriX
+;Version: 
+;PatchID: 34
+;Details: https://patches.kibab.com/patches/details.php5?id=34
+/*
+Становятся доступны 6 скрытых блока
+*/
+12869A4: 00 01
+;------------------------- end -------------------------
+

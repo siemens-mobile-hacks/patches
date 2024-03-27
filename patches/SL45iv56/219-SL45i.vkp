@@ -1,0 +1,21 @@
+;SL45iv56
+;FNC. Полное изменение имени
+;FNC. Full Name Change
+;(c) Viraptor
+;Version: 
+;PatchID: 1916
+;Details: https://patches.kibab.com/patches/details.php5?id=1916
+/*
+Позволяет редактировать расширение в имени файла.
+
+
+Created: 15.09.2004
+Used soft: IDA, SFE (thnx RizaPN)
+
+Патч №219 с http://patch.oslik.ru/SL45_RU
+*/
+0x37FD14: DAC7CC85 DAEBC2BC 
+0x4BBCC2: FFFFFFFFFFFFFFFFFFFFFFFFFFFF F6FD00FEF02CDA014C02F04CF2F5 
+0x4BBCD0: FFFFFFFFFFFF 00FEF0C2DB00
+;------------------------- end -------------------------
+

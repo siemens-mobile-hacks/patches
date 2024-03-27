@@ -1,0 +1,132 @@
+;C55v24
+;Расширение_диска
+;Disk_size_increase
+;(c) Baloo
+;Version: 2.5
+;PatchID: 472
+;Details: https://patches.kibab.com/patches/details.php5?id=472
+/*
+Патч увеличивает размер диска до до 632,760,888,1016,1144 Кб. Пользователю предоставляется возможность выбрать размер диска, жертвуя ненужными языками и прочими относительно нужными функциями. Внимание!!! Перед установкой сохранить содержимое диска, ибо после установки произойдёт его форматирование, все данные будут потеряны!!! Если диск расширяем менее 1016 Кб, то надо влить урезанные базы Т9, поставляемые с патчем, в архиве инструкция. В любом случае, не забывайте про резервные копии ФФ!!!
+*/
+;
+;; Базовая версия, 632Кб
+;
+
+;SysArray
+11EA94: E6FCD007 FADEF01E
+5E1EF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF ECF4ECF5E6FC4C31E0BDE6FE7017DA92
+5E1F00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FE21E6FCB80B88C088508840FCF5FCF4
+5E1F10: FFFFFFFF FA91A6EA
+
+;правильно показывать Mb
+4A3E8C: E7 FF
+4A3EC4: E7 FF
+
+;FFS_FS_Def
+11EA6C: 040000000200542A4702 06000000020078000003
+
+;FFS_Pages
+400078: FFFFFFFFFFFF 0100C0000003
+40007E: FFFFFFFFFFFF 0100C6000003
+400084: FFFFFFFFFFFF 0100CC000003
+40008A: FFFFFFFFFFFF 0100D2000003
+400090: FFFFFFFFFFFF 0100D8000003
+400096: FFFFFFFFFFFF 0100DE000003
+40009C: FFFFFFFFFFFF 0100E4000003
+4000A2: FFFFFFFFFFFF 0100EA000003
+4000A8: FFFFFFFFFFFF 0100F0000003
+4000AE: FFFFFFFFFFFF 0100F6000003
+;4000B4: FFFFFFFFFFFF 0100FC000003
+;4000BA: FFFFFFFFFFFF 010002010003
+
+;FFS_Page_blocks
+4000C0: FFFFFFFFFFFF 0000EE008000            
+4000C6: FFFFFFFFFFFF 0000F0008000            
+4000CC: FFFFFFFFFFFF 0000F2008000            
+4000D2: FFFFFFFFFFFF 0000F4008000            
+4000D8: FFFFFFFFFFFF 0000F6008000            
+4000DE: FFFFFFFFFFFF 0000F8008000            
+4000E4: FFFFFFFFFFFF 0000E2008000 ;LANGPACK
+4000EA: FFFFFFFFFFFF 0000EC008000 ;EEFS
+4000F0: FFFFFFFFFFFF 00008A008000 ;T9[2]
+4000F6: FFFFFFFFFFFF 000088008000 ;T9[1]
+;4000FC: FFFFFFFFFFFF 0000??008000 ;??
+;400102: FFFFFFFFFFFF 0000??008000 ;??
+
+;
+;;Расширенные версии, 760,888,1016,1144 Кб
+;
+;;Далее везде, где в заголовке встречается слово LANGPACK, значит, что нужен урезанный LANGPACK
+;;Распакованная графика только в версии от Sinclair
+;
+;;!!! Уберите комментарии только у одной версии блока !!!
+;
+
+;
+;;LANGPACK версия, 760 Кб
+;
+;11EA6C: 06 07
+;#pragma disable warn_no_old_on_apply
+;#pragma disable undo
+;620010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;#pragma enable undo
+;#pragma enable warn_no_old_on_apply
+
+;
+;;LANGPACK+EEFS версия, 888 Кб
+;
+;11EA6C: 06 08
+;12A476: 03 02 ;EEFS--
+;#pragma disable warn_no_old_on_apply
+;#pragma disable undo
+;620010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;6A0010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;6C0010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;6E0010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;#pragma enable undo
+;#pragma enable warn_no_old_on_apply
+
+;
+;;LANGPACK+EEFS+T9[2] версия, 1016 Кб
+;
+;11EA6C: 06 09
+;12A476: 03 02 ;EEFS--
+;#pragma disable warn_no_old_on_apply
+;#pragma disable undo
+;0A0010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;620010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;6A0010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;6C0010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;6E0010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;#pragma enable undo
+;#pragma enable warn_no_old_on_apply
+
+;
+;;LANGPACK+EEFS+T9[2]+T9[1] версия, 1144 Кб
+;
+;11EA6C: 06 0A
+;12A476: 03 02 ;EEFS--
+;#pragma disable warn_no_old_on_apply
+;#pragma disable undo
+;080010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;0A0010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;620010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;6A0010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;6C0010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;6E0010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+;#pragma enable undo
+;#pragma enable warn_no_old_on_apply
+
+#pragma disable warn_no_old_on_apply
+#pragma disable undo
+680010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+700010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+720010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+740010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+760010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+780010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+#pragma enable undo
+#pragma enable warn_no_old_on_apply
+
+;------------------------- end -------------------------
+

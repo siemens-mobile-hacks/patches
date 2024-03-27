@@ -1,0 +1,14 @@
+;S75v40
+;Плавное включение подсветки
+;Smooth keypad light
+;(c) SiNgle
+;(p) Spider13
+;Version: 
+;PatchID: 3777
+;Details: https://patches.kibab.com/patches/details.php5?id=3777
+/*
+
+*/
+9623D4: 0022 FF22
+;------------------------- end -------------------------
+

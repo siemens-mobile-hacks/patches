@@ -1,0 +1,16 @@
+;S65v58
+;Отключить доступ к интернет-браузеру
+;Disable Access To Internet Browser
+;(c) KiRiK
+;Version: 
+;PatchID: 1220
+;Details: https://patches.kibab.com/patches/details.php5?id=1220
+/*
+Патч отключает доступ к Интернет-браузеру
+English:Patch disables access to internal wap browser
+*/
+092EFD4: 259C8DA0 00000000
+092EFA0: 3F9C8DA0 00000000
+092E954: 15A68DA0 00000000
+;------------------------- end -------------------------
+

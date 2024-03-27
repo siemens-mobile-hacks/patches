@@ -1,0 +1,14 @@
+;S75v31
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) StrikerVoo
+;Version: 
+;PatchID: 2754
+;Details: https://patches.kibab.com/patches/details.php5?id=2754
+/*
+без патча-2580 очей,С патчем-3352 очей
+*/
+096FF74: 6549 0121
+;------------------------- end -------------------------
+

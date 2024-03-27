@@ -1,0 +1,55 @@
+;SL45iv56
+;Автоматическая запись входящих и исходящих вызовов
+;Start dictaphone recording at start of outgoing calling
+;(c) DeadManSс, rc-flitzer, BoB aka D.V.A
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=2662
+;PatchID: 1726
+;Details: https://patches.kibab.com/patches/details.php5?id=1726
+/*
+Этот патч автоматически запускает запись входящих и исходящих 
+вызовов, заисывать или нет выбирается через 14-ю функцию 
+меню Application
+ 
+!отмените установленные до этого патчи автоматической записи!
+
+Также разархивирйте архив по этой ссылке 
+ftp://derbi.convex.ru/Siemens/y.rar в папку java\s\ 
+
+
+Release: April 2nd, 2004
+
+Патч №129 с http://patch.oslik.ru/SL45_RU
+*/
+;Закомментируйте этот блок если вы не хотите записывать исходящие вызовы 
+02E784: DAC31400 DAE0E4C9 
+40C9E4: FFFFFFFF DAC31400 ; calls PlayTone 
+40C9E8: FFFFFFFF D7400E00 ; extp #0Eh, #01h 
+40C9EC: FFFFFFFF F2FC423A ; mov r12, 03A42h 
+40C9F0: FFFFFFFF 9AFC02D0 ; jnb r12.13, return 
+40C9F4: FFFFFFFF DAE090C8 ; calls dictRecording trought Java midlet 
+40C9F8: FFFF DB00 ; rets 
+
+
+;Закомментируйте нижеследующий блок если вы не хотите 
+;записывать входящие вызовы 
+
+3AFF3C: DAA224DE DAE0FAC9 
+40C9FA: FFFFFFFF D7400E00 ; extp #0Eh, #01h 
+40C9FE: FFFFFFFF F2FC423A ; mov r12, 03A42h 
+40CA02: FFFFFFFF 9AFC02D0 ;jnb r12.13, return 
+40CA06: FFFFFFFF DAE090C8 ;call dictRecording trought Java midlet 
+40CA0A: FFFFFFFF DAA224DE ;call original function 
+40CA0E: FFFF DB00 
+
+;Если вы хотите использовать другие функции APP menu, 
+;измените значения ниже: 
+
+;40C9F0: FFFFFFFF 9AFC02x0 ; x - номер функции-1 
+;40CA02: FFFFFFFF 9AFC02y0 ; y - номер функции-1 
+
+;Если x неравно y то выбирать функции записи входящих и 
+;исходящих можно будет независимо, в другом случае они 
+;выбираются одновременно.
+;------------------------- end -------------------------
+

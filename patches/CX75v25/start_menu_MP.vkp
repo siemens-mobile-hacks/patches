@@ -1,0 +1,23 @@
+;CX75v25
+;Меню Пуск
+;Start Menu On The Mainscreen
+;(c) KreN
+;(r) 1nvisible, benj9
+;(p) NForce
+;Version: 2.1
+;PatchID: 4750
+;Details: https://patches.kibab.com/patches/details.php5?id=4750
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v25&f=start_menu_MP.rar
+
+/*
+As background set picture 1346 (added in archive as gpp file)
+
+Uncomment the line at the end of patch before installation! And delete old config-file
+*/
+02CC25A: 002865D0DCF77BFA0028 C046,00498847,0xA0FCC051
+04B1E54: BD6C32A0 0xA0FCC0E3  ;"ELSE_PUSHTOTALK"
+; UNCOMMENT THE LINE BEHIND PATCH BODY!!!
+; РАСКОММЕНТИРУЙТЕ СТРОКУ ВНИЗУ ТЕЛА ПАТЧА!!!
+
+;------------------------- end -------------------------
+

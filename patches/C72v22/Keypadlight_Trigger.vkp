@@ -1,0 +1,15 @@
+;C72v22
+;Переключатель режима подсветки клавиатуры
+;Keypadlight_Trigger
+;(c) benj9
+;(r) empeka
+;(p) Virusmater
+;Version: 2.2-MP
+;PatchID: 7604
+;Details: https://patches.kibab.com/patches/details.php5?id=7604
+/*
+Можно настроить яркость клавиатуры вне зависимости от яркости экрана.
+*/
+BEC78C: 2A1C012101207CF068EE 00488047,0xA0FC3401,0000
+;------------------------- end -------------------------
+

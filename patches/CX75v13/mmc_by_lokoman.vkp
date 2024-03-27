@@ -1,0 +1,44 @@
+;CX75v13
+;Заменяет значок ММС
+;Change ikon MMC
+;(c) Lokoman
+;Version: 1.0
+;PatchID: 4471
+;Details: https://patches.kibab.com/patches/details.php5?id=4471
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v13&f=mmc_by_lokoman.rar
+
+/*
+Патч изменяет значок ММС.Красиво смотрится!
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 27.07.2006  -  Time: 15:59:31                             ###
+; ### Patch for: SIEMENS CX75 v13                                     ###
+; #######################################################################
+
+
+; ##### Picture 509 #####
+010C100C: 0E0E8500F0F715A1 0E0E85003330FAA0
+
+00FA3033: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 04C00396049206C0FD926D69026DFB91
+00FA3043: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B591499204C0FE926904F9FCFAB54992
+00FA3053: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 04C0FE926D03F9FBFAFEB5499204C0FE
+00FA3063: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 929105FEFDB5499204C0FE929105FEFD
+00FA3073: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 91499204C0FC6D8DF9B5026D0349FF92
+00FA3083: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 04C0FE6D490325FE49250249FF9204C0
+00FA3093: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FF6D0449FE69880249FF9204C0FC6D49
+00FA30A3: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88C403E4FD69499204C0F66D49892692
+00FA30B3: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C0E469499204C0F96D49C0B5D4CCA402
+00FA30C3: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 49FF9204C0F96D49B08C45496D029205
+00FA30D3: FFFFFFFFFFFFFF C00349029206C0
+
+
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;CX70v56
+;Увеличение интервала между сообщениями "Аккумулятор разряжен! Зарядите"
+;An increase in the interval between the communications "Storage battery is discharged! You will load"
+;(c) 1nvisible
+;(r) benj9
+;Version: 
+;PatchID: 3056
+;Details: https://patches.kibab.com/patches/details.php5?id=3056
+/*
+10ED = 20сек между сигналами (вроде так)
+*/
+;114ED00: ED100000 F17E0000 ; 7EF1 ~= 150сек = 2,5минуты
+114ED00: ED100000 658E0000 ; 2 минуты
+;------------------------- end -------------------------
+

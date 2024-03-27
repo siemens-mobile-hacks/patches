@@ -1,0 +1,22 @@
+;E71v45
+;запускать Помощника при включении всегда
+;Always Do Startup Assistant
+;(c) benj9
+;(r) SiNgle
+;Version: 
+;PatchID: 9669
+;Details: https://patches.kibab.com/patches/details.php5?id=9669
+/*
+; do Startup Assi even if phone crashed to prevent data loss of online settings
+
+; запускать Помощника при включении всегда, чтобы предотвратить сброс онлайн настроек
+
+*/
+; do Startup Assi even if phone crashed to prevent data loss of online settings
+; запускать Помощника при включении всегда, чтобы предотвратить сброс онлайн настроек
+
+066B30E: 1FD1 C046
+066B316: 1BD0 C046
+
+;------------------------- end -------------------------
+

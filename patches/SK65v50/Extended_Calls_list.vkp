@@ -1,0 +1,14 @@
+;SK65v50
+;Расширенный список вызовов
+;Extended Calls list
+;(c) BoBa
+;(p) ~Jhellico
+;Version: 3
+;PatchID: 3951
+;Details: https://patches.kibab.com/patches/details.php5?id=3951
+/*
+
+*/
+044BA00: 03474FA0 0xA0FC8001
+;------------------------- end -------------------------
+

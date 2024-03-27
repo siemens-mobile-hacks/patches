@@ -1,0 +1,29 @@
+;S68v52
+;Отключение анимации в Native Menu
+;Stop Native Menu Animation
+;(c) sim_emrom
+;Version: 
+;PatchID: 9278
+;Details: https://patches.kibab.com/patches/details.php5?id=9278
+/*
+Патч выключает анимацию пунктов Native Menu.
+Так как в S68 и так нет анимации, это помогает предотвратить нарастание темноты возле значков.
+English: Disable animation in Native Menu.
+For S68 it means there will be no black shape around icons.
+*/
+; I've just deleted some code to force stop of animation. Looks and works fine as it seems.
+
+040611C: 8703 0000 ;Address Book
+0406158: 7403 0000 ;Calls
+040617C: AB03 0000 ;Internet
+0406258: 7C03 0000 ;Melodies
+0406224: BD03 0000 ;Messages
+04061FC: D203 0000 ;Organiser
+0406288: 9F03 0000 ;Games
+04061A0: B303 0000 ;Media Player
+04061CC: 6803 0000 ;Alarm Clock
+04062BC: 9303 0000 ;Others
+04062F0: C903 0000 ;MyStuff
+0406318: DF03 0000 ;Settings
+;------------------------- end -------------------------
+

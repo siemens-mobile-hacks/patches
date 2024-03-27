@@ -1,0 +1,14 @@
+;M81v51
+;Изменение размера java heap
+;Change java heap size
+;(c) Miha_r
+;(p) den11111
+;Version: 1-MP
+;PatchID: 8092
+;Details: https://patches.kibab.com/patches/details.php5?id=8092
+/*
+
+*/
+00B9BA0: 002090E5 56BEFEEB
+;------------------------- end -------------------------
+

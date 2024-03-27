@@ -1,0 +1,13 @@
+;A52v9
+;Убрать польский язык из меню выбора языков ввода
+;Remove Polish from input languages menu
+;(c) AlexSid
+;Version: 
+;PatchID: 4388
+;Details: https://patches.kibab.com/patches/details.php5?id=4388
+/*
+
+*/
+21BD42: 0000 1501
+;------------------------- end -------------------------
+

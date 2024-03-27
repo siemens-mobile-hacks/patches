@@ -1,0 +1,14 @@
+;CX70v56
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) Bennie
+;(p) Smelter
+;Version: 
+;PatchID: 612
+;Details: https://patches.kibab.com/patches/details.php5?id=612
+/*
+Патч убрает подтверждение самолёта.
+*/
+171698B: D1 E0
+;------------------------- end -------------------------
+

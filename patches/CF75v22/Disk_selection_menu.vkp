@@ -1,0 +1,18 @@
+;CF75v22
+;Меню выбора дисков и отображение скрытых файлов и папок
+;Disk selection menu
+;(c) SiNgle
+;(r) AsteriX
+;Version: 
+;PatchID: 2997
+;Details: https://patches.kibab.com/patches/details.php5?id=2997
+/*
+
+*/
+;* Меню выбора дисков и отображение скрытых файлов и папок ** Disk selection menu * © SiNgle, § Smelter, ® AsteriX
+03CAD90: 0900000A 000055E3
+03CADEC: 3534 2000
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

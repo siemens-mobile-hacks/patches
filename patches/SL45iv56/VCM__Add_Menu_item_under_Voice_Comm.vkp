@@ -1,0 +1,35 @@
+;SL45iv56
+;VCM. Добавить пункт меню под "Голосовая комманда"
+;VCM. Add Menu item under Voice Command
+;(c) RizaPN
+;Version: 
+;PatchID: 2168
+;Details: https://patches.kibab.com/patches/details.php5?id=2168
+/*
+English: Add another menu items under Voice Command.
+
+
+Release: March 5, 2003
+*/
+0x467E5B: 2E 7E
+
+0x467D96: EA02D4CD5637 1F03D4CD7012
+0x468C3C: EA02D4CD5637 1F03D4CD7012
+0x469270: EA02D4CD5637 1F03D4CD7012
+0x46965A: EA02D4CD5637 1F03D4CD7012
+0x46A376: EA02D4CD5637 1F03D4CD7012
+0x46B2E2: EA02D4CD5637 1F03D4CD7012
+
+0x46B164: EA02 1F03
+0x46B168: 5837 7212
+0x46B16C: 5A37 7412
+
+0x27D270: FFFFFFFFFFFF B40014F3D400     ;... Dictaphone
+0x27D276: FFFFFFFFFFFF B701F886DB00     ;... MP3Player
+0x27D27C: FFFFFFFFFFFF 9F02620AD900     ;... WriteMessage
+0x27D282: FFFFFFFFFFFF 5403B8E1D800     ;... Internet
+0x27D288: FFFFFFFFFFFF B00DB4E1D800     ;... Java
+0x27D28E: FFFFFFFFFFFF DF03020BD900     ;... Archive
+0x27D294: FFFFFFFFFFFF A904E0D3C700     ;... Flip Screen
+;------------------------- end -------------------------
+

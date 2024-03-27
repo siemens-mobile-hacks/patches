@@ -1,0 +1,13 @@
+;S75v40
+;МедиаПлеер вместо ПоследнейПесни
+;Media_Player instead of Media_Playlast
+;(c) Bueffel
+;Version: 
+;PatchID: 3790
+;Details: https://patches.kibab.com/patches/details.php5?id=3790
+/*
+useful to stop playing last song immediately, on sidekey2
+*/
+0422BC0: 3B 33
+;------------------------- end -------------------------
+

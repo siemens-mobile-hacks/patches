@@ -1,0 +1,43 @@
+;SL45iv56
+;Переворачивание экрана по горячей клавише
+;Flip Screen switch hotkey
+;(c) arsh0r
+;Version: 
+;PatchID: 2175
+;Details: https://patches.kibab.com/patches/details.php5?id=2175
+/*
+Пункт "Повернуть горизонтально" находится в меню "Приложение".
+С его помощью можно переворачивать экран горизонтально и вертикально.
+Желательно изменить строку ленгпака (Russian_adv) на "Развернеть экран"
+или что-то подобное.
+Патч затирает горячую клавишу "Абонентская группа".
+
+
+English: The "Flip horizontal" entry in the APP menu now flips the
+screen horizontal and vertical, this is cool if you are carriing your SL pants.
+You better change the string to "Flip Screen" or something like this. The 
+"Flip Vertical" function can be userd otherwise. You don't have to put it out 
+and turn it to see the time. This patch overwrites the User Group hotkey.
+
+
+Release: June 7, 2004
+*/
+0x27DB8F: 20 10 ;modify rizapn's funny display patch
+
+;just copied from rizapn
+0x18E388: 8B00 A904 ;string #8B -> #4A9
+0x18E3BC: 8C00 A904 ;string #8B -> #4A9
+0x18E4B8: 8B008B00 A904A904 ;same thing
+0x3AE310: DAD70245 DAC7E0D3 ;call to my patch
+
+;routine stolen from rc-flitzer
+0x27D3E0: FFFFFFFFFFFFFFFF 88C0D7400E00F2FC
+0x27D3E8: FFFFFFFFFFFFFFFF 423A9AFC02101EFC
+0x27D3F0: FFFFFFFFFFFFFFFF 0D011FFCD7400E00
+0x27D3F8: FFFFFFFFFFFFFFFF F6FC423A98C0DB00
+
+;this is my second patch. thx to all the great patchers out there...
+
+;PS: online flashing with this patch crashes my phone
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;S75v47
+;Автодозвон постоянно с заданной паузой
+;AutoRedial forever with selected pause
+;(c) SiNgle,AsteriX
+;(p) starfriend
+;Version: 
+;PatchID: 7090
+;Details: https://patches.kibab.com/patches/details.php5?id=7090
+/*
+Автодозвон постоянно с заданной паузой
+*/
+09B43DA: A068 0020 
+09B4403: 30 20 
+0C08FA1: 05 0A ; pause (0A=10 seconds)
+;------------------------- end -------------------------
+

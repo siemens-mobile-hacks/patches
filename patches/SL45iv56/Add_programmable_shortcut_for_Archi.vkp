@@ -1,0 +1,16 @@
+;SL45iv56
+;Добавить программируемый ярлык для "Архива" (заменяет ярлык "Абонентская группа")
+;Add programmable shortcut for "Archive" (overwrite "User Group" shortcut)
+;(c) RizaPN
+;Version: 
+;PatchID: 1930
+;Details: https://patches.kibab.com/patches/details.php5?id=1930
+/*
+
+*/
+0x18E388: 8B00 DE03
+0x18E3BC: 8C00 DE03 ;(short text)
+0x18E4B8: 8B008B00 DE03DE03
+0x3AE310: DAD70245 DAD9020B
+;------------------------- end -------------------------
+

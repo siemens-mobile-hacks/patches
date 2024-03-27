@@ -1,0 +1,15 @@
+;CF75v23
+;Исправление отображения Native Menu
+;Native Menu view fix
+;(c) green
+;Version: 1.0
+;PatchID: 10484
+;Details: https://patches.kibab.com/patches/details.php5?id=10484
+/*
+Исправление расположения иконок в Native Menu CF75 SW23
+*/
+049D09C: 17001E 1E0028
+049D0A8: 010008 080001
+
+;------------------------- end -------------------------
+

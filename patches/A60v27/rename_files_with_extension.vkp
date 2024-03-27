@@ -1,0 +1,14 @@
+;A60v27
+;Отключение запрета редактирования расширения в Explorer
+;Turning off of the prohibition of the editing of expansion in Explorer
+;(c) Sinclair
+;(p) Rasp
+;Version: 
+;PatchID: 10460
+;Details: https://patches.kibab.com/patches/details.php5?id=10460
+/*
+
+*/
+7E39BE: DAA796A9 50445055
+;------------------------- end -------------------------
+

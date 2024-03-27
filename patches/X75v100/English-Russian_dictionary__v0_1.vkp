@@ -1,0 +1,15 @@
+;X75v100
+;Англо-русский словарь
+;English-Russian dictionary
+;(c) alex_itd
+;Version: 0.1
+;PatchID: 6219
+;Details: https://patches.kibab.com/patches/details.php5?id=6219
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=English-Russian_dictionary__v0_1.rar
+
+/*
+для установки каталог dictionary положить в 0:\ZBin\ или 4:\ZBin\
+*/
+; see in attach
+;------------------------- end -------------------------
+

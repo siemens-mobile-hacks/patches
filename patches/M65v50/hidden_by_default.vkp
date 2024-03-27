@@ -1,0 +1,15 @@
+;M65v50
+;Показывать Скрытые Файлы в Card-Explorer'е по умолчанию
+;Show Hidden Files In Card-Explorer By Default
+;(c) 1nvisible
+;(p) Smelter
+;Version: 
+;PatchID: 2437
+;Details: https://patches.kibab.com/patches/details.php5?id=2437
+/*
+
+*/
+0939770: 00 FF
+0939820: 00 FF
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;C65v56
+;Скорость камеры
+;Camera Speed
+;(c) SiNgle
+;Version: 
+;PatchID: 3791
+;Details: https://patches.kibab.com/patches/details.php5?id=3791
+/*
+
+*/
+11D48D8: 32 00
+;------------------------- end -------------------------
+

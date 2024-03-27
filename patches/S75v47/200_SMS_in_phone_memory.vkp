@@ -1,0 +1,27 @@
+;S75v47
+;165 SMS в памяти телефона
+;165 SMS in phone memory
+;(c) ILYA_ZX
+;(r) LazyC0DEr, Vados
+;(p) SimaFish
+;Version: 
+;PatchID: 8488
+;Details: https://patches.kibab.com/patches/details.php5?id=8488
+/*
+Внимание! Все SMS с памяти телефона будут удалены.
+
+1. Переименуйте SMS.dat, EMS_Admin.dat и WB.dat в SMS.da_, EMS_Admin.da_, WB.da_.
+2. Примените патч
+3. Удалите SMS.da_, EMS_Admin.da_, WB.da_.
+
+*/
+0963718: 8A45 148B
+0963B14: 4C1F 3E4E
+09C918C: F0B5 2C4C
+0FF8EDA: 64 A5
+0A8A702: 64 A5
+0A8A770: 64 A5
+0A8A634: 64 A5
+0A8A69C: 64 A5
+;------------------------- end -------------------------
+

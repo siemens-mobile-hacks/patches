@@ -1,0 +1,19 @@
+;CX75v13
+;API
+;API
+;(c) avkiev, empeka, 1nvisible
+;Version: 010114
+;PatchID: 1339
+;Details: https://patches.kibab.com/patches/details.php5?id=1339
+/*
+Врезка для API-патча.
+*/
+; Ставить именно эту GetLP()!!!!!
+0A831B4: 2870311C201C56F238E8 004A9047,0xA0FCF101,C046 ; CX75v13 - GetLP
+#pragma enable old_equal_ff
+0FCF100: 00B5A8210906A14203D8211C40BC103E
+0FCF110: 304723202870311C201C024EB04740BC
+0FCF120: 04363047,0xA0202BE9
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

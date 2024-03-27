@@ -1,0 +1,22 @@
+;CX75v25
+;Неограниченная запись видео с нормальным отображением времени
+;Video no limit time
+;(c) SiNgle
+;(p) Wmaximum
+;Version: 1.1
+;PatchID: 3801
+;Details: https://patches.kibab.com/patches/details.php5?id=3801
+/*
+
+*/
+;CX75v25
+;Неограниченная запись видео
+;Unlimited video recording
+;© SiNgle
+;Version: 1.1
+2D96AF: 00 FF
+34EF64: 3300000A 920052E3
+3CF06D: 640000 303364
+130F9D: 13770D8A770D0D7528770D8A770D0DE3357C7B 13F78a770D0D7528F78a770D0DE3357C7B0B0B
+;------------------------- end -------------------------
+

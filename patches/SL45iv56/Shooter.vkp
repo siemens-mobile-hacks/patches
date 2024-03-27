@@ -1,0 +1,15 @@
+;SL45iv56
+;Shooter
+;Shooter
+;(c) Silent_Kill
+;Version: 
+;PatchID: 5907
+;Details: https://patches.kibab.com/patches/details.php5?id=5907
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=Shooter.zip
+
+/*
+Нужно отстреливать мишени пока не кончатся патроны.
+*/
+; See in attach
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S75v47
+;Диктофон в меню во время разговора
+;Dictaphone in conversation menu
+;(c) Miha_r
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 7872
+;Details: https://patches.kibab.com/patches/details.php5?id=7872
+/*
+
+*/
+438DA0: 790D34A0 6BDD32A0
+438F1C: B604 6100
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v20
+;Плавное включение подсветки
+;Smooth illumination turn on
+;(c) SiNgle
+;Version: 
+;PatchID: 1668
+;Details: https://patches.kibab.com/patches/details.php5?id=1668
+/*
+
+*/
+0955918: 0022 FF22 
+
+;------------------------- end -------------------------
+

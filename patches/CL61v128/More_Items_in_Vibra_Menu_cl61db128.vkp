@@ -1,0 +1,19 @@
+;CL61v128
+;Открыть заблокированные пункты меню "Вибрация"
+;More items in vibration menu
+;(c) Saifaye
+;(r) Evgr
+;(p) Marie
+;Version: 
+;PatchID: 10404
+;Details: https://patches.kibab.com/patches/details.php5?id=10404
+/*
+Открываем заблокированные пункты в меню вибры
+English:More items in vibration menu NativeMenu->Setup->vibration
+*/
+116419C: 81 A2 ;Dynamic light
+116421C: 60 A2 ;ptt calls
+116429C: 81 A2 ;More light effe.
+1261948: 8C A2 ;Mediaplayer
+;------------------------- end -------------------------
+

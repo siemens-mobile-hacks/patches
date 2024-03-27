@@ -1,0 +1,53 @@
+;C75v22
+;Инвертировать Цифровые часы
+;Invert digiclock ScreenSaver
+;(c) SiNgle
+;(p) SMeeTBB
+;Version: 
+;PatchID: 1190
+;Details: https://patches.kibab.com/patches/details.php5?id=1190
+/*
+Можно поменять цвет цифр на любой из таблицы RGB
+В принципе патч графический, но....
+*/
+02D2E02: 01 00 ;1h back
+02D2E0A: 00 01 ;1h font
+02D2E4C: 01 00 ;2h back
+02D2E54: 00 01 ;2h font
+02D2E8E: 01 00 ;":" back
+02D2E96: 00 01 ;":" font
+02D2ECA: 01 00 ;1m back
+02D2ED2: 00 01 ;1m font
+02D2F12: 01 00 ;2m back
+02D2F1A: 00 01 ;2m font
+02D2F64: 01 00
+02D2F6C: 00 01
+049C390: 00 01 ;ProvName font
+049C394: 01 00 ;background
+049C400: 00 01 ;ProvFon with Arrow
+049C404: 01 00 ;background with Arrow
+
+;color table (0..17h) R G B
+;00 - белый (white)
+;01 - чёрный (black)
+;02 - красный (red base)
+;03 - синий (navy base)
+;04 - зелёный (green base)
+;05 - малиновый (magenta base)
+;06 - голубой (aqua base)
+;07 - жёлтый (yellow base)
+;08 - светло-красный (red light)
+;09 - светло-синий (navy light)
+;0A - светло-зелёный (green light)
+;0B - светло-малиновый (magenta light)
+;0C - бледно-голубой (aqua light)
+;0D - бледно-желтый (уellow light)
+;0E - тёмно-красный (red dark)
+;0F - тёмно-синий (navy dark)
+;10 - тёмно-зелёный (green dark)
+;11 - тёмно-малиновый (magenta dark)
+;12 - тёмно-голубой aqua (dark)
+;13 - тёмно-жёлтый yellow (dark)
+;14-17 - прозрачный (clean)
+;------------------------- end -------------------------
+

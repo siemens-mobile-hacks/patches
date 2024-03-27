@@ -1,0 +1,44 @@
+;C55v24
+;Инверсия экрана
+;Inversion of the screen
+;(c) exr & ACiD [mrp] & SiNgle
+;Version: 
+;PatchID: 2525
+;Details: https://patches.kibab.com/patches/details.php5?id=2525
+/*
+
+*/
+11C0DC: 4A 3A
+11C0E0: 4A 3A
+11C0E4: 4A 3A
+11C0E8: 4A 3A
+11C0EC: 4A 3A
+11C0F0: 4A 3A
+11C0F4: 4A 3A
+11C0F8: 4A 3A
+11C100: 4A 3A
+11C104: 4A 3A
+11C108: 4A 3A
+11C10C: 4A 3A
+11C110: 4A 3A
+11C114: 4A 3A
+11C118: 4A 3A
+11C11C: 4A 3A
+11C174: 4A 3A
+11C178: 4A 3A
+11C17C: 4A 3A
+11C180: 4A 3A
+11C184: 4A 3A
+11C188: 4A 3A
+11C18C: 4A 3A
+11C190: 4A 3A
+11C198: 4A 3A
+11C19C: 4A 3A
+11C1A0: 4A 3A
+11C1A4: 4A 3A
+11C1A8: 4A 3A
+11C1AC: 4A 3A
+11C1B0: 4A 3A
+11C1B4: 4A 3A
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;CX75v23
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1805
+;Details: https://patches.kibab.com/patches/details.php5?id=1805
+/*
+
+*/
+0A40C52: 00 01
+0A40C8A: 00 01
+;------------------------- end -------------------------
+

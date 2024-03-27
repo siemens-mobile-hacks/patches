@@ -1,0 +1,13 @@
+;C55v24
+;Скорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 2418
+;Details: https://patches.kibab.com/patches/details.php5?id=2418
+/*
+
+*/
+1242B2: 56 20
+;------------------------- end -------------------------
+

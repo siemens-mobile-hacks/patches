@@ -1,0 +1,13 @@
+;EL71v45
+;Открыть подменю разработчика нажатием 1 в МайСтаффе
+;Open dev. submenu by pushing 1 in MyStuff
+;(c) funMarkus
+;Version: 
+;PatchID: 8726
+;Details: https://patches.kibab.com/patches/details.php5?id=8726
+/*
+
+*/
+072B330: 35343631 31000000
+;------------------------- end -------------------------
+

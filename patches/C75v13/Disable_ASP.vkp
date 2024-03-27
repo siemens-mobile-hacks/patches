@@ -1,0 +1,28 @@
+;C75v13
+;Отключение ASP
+;Disable ASP
+;(c) caine
+;(r) caine
+;(p) klaud
+;Version: 
+;PatchID: 5424
+;Details: https://patches.kibab.com/patches/details.php5?id=5424
+/*
+
+*/
+;C75v13
+;Отключение ASP
+;Disable ASP
+;(c) caine
+;(p) klaud
+;Version: 
+
+/*
+отключение нарастания громкости. за Ваши уши в ответе только Вы!!!
+*/
+008F480С: 00 01
+008F4810: 02 01
+;------------------------- end -------------------------
+
+;------------------------- end -------------------------
+

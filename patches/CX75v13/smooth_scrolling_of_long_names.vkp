@@ -1,0 +1,19 @@
+;CX75v13
+;Плавный скроллинг длинных названий и имен
+;Smooth scrolling of long names
+;(c) SiNgle
+;(r) AsteriX, KiRiK
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 777
+;Details: https://patches.kibab.com/patches/details.php5?id=777
+/*
+RUS: Плавный скроллинг длинных названий, что не умещаются на экране, можно увеличить скорость скроллинга и, тем самым, увеличить удобство чтения названий файлов, например. По умолчанию увеличено время ожидания перед сначалом скроллинга в 3 раза и увеличина скорость скроллинга в 7 раз. Недовольные могут поменять эти параметры под себя.
+
+ENG: Smooth scroll long names that do not find room on the screen, it is possible to increase speed скроллинга and, that, to increase convenience of reading of names of files, for example. The waiting time before start the scroll in 3 times and speed up  scroll in 7 times is By default increased. Dissatisfied can change these parameters under itself.
+*/
+04A7CC4: D007 1202 ; задержка перед скролом (delay before start)
+04A7CC8: 2C01 2A00 ; скорость скрола (scrolling speed)
+
+;------------------------- end -------------------------
+

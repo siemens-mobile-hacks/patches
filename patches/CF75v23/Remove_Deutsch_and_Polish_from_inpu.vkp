@@ -1,0 +1,14 @@
+;CF75v23
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;Version: 
+;PatchID: 4828
+;Details: https://patches.kibab.com/patches/details.php5?id=4828
+/*
+
+*/
+09D86A2: 00 01
+09D86DA: 00 01
+;------------------------- end -------------------------
+

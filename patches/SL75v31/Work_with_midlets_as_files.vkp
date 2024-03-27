@@ -1,0 +1,14 @@
+;SL75v31
+;Работа с мидлетами как с файлами
+;Work with midlets as files
+;(c) SiNgle
+;(p) Cypok
+;Version: 
+;PatchID: 4260
+;Details: https://patches.kibab.com/patches/details.php5?id=4260
+/*
+
+*/
+052EBD8: 2FF150EE0028 FEF748FE0128
+;------------------------- end -------------------------
+

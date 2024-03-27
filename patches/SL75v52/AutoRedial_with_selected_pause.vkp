@@ -1,0 +1,18 @@
+;SL75v52
+;Автодозвон постоянно с заданной паузой
+;AutoRedial forever with selected pause
+;(c) SiNgle,AsteriX
+;(r) (i)starfriend
+;(p) ferro
+;Version: 
+;PatchID: 7628
+;Details: https://patches.kibab.com/patches/details.php5?id=7628
+/*
+Автодозвон постоянно с заданной паузой
+
+*/
+09B8a22: A068 0020 
+09B8a4b: 30 20 
+0C11600: 05 0A ; pause (0A=10 seconds)
+;------------------------- end -------------------------
+

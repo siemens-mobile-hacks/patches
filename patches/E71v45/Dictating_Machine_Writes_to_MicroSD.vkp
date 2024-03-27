@@ -1,0 +1,16 @@
+;E71v45
+;Запись Диктофоном на MicroSD
+;Dictating Machine Writes to MicroSD
+;(c) 1nvisible
+;Version: 
+;PatchID: 10327
+;Details: https://patches.kibab.com/patches/details.php5?id=10327
+/*
+Сохраняется в деректории 4:\Misc\Dict
+*/
+059E680: 08009DE5 0400A0E3
+082A438: 1400,'0:\\Dictating machine' 0C00,'4:\\Misc\\Dict'
+082A464: 30 34
+082A472: 30 34
+;------------------------- end -------------------------
+

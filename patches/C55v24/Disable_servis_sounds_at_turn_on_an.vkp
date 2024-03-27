@@ -1,0 +1,15 @@
+;C55v24
+;Отключение сервиcных сигналов при включении и выключении
+;Disable servis sounds at turn on and turn off of phone
+;(c) Delirium
+;Version: 
+;PatchID: 4312
+;Details: https://patches.kibab.com/patches/details.php5?id=4312
+/*
+
+*/
+06C42A: 2D 0D ; no register tone to the net
+4CE5D6: 2D 0D ; no long sound in Siemens start up
+52236A: 2D 0D ; no long sound in Siemens shutdown
+;------------------------- end -------------------------
+

@@ -1,0 +1,22 @@
+;C65v50
+;Убрать сообщения
+;Disable some messages
+;(c) SiNgle
+;Version: 1
+;PatchID: 3381
+;Details: https://patches.kibab.com/patches/details.php5?id=3381
+/*
+Убирает сообщения типа GPRS вкл, Ик-порт Включён, в камере Сохранить в.. и т.д.
+*/
+16F3092: 0021 10BD ;"Все сигналы вкл" (All ringtones on)
+16F30B2: 0021 10BD ;"Все сигналы выкл" (All ringtones off)
+16F3108: 0021 10BD ;"Блокировка клавиатуры включена" (Keypad locked)
+08EB27A: 4AF0 80BD ;Вибра вкл\выкл (Vibra alert on\off)
+08EB30C: 4AF0 80BD ;IrDA вкл\выкл (IrDA on\off)
+08EB33C: 4AF0 80BD ;GPRS вкл\выкл (GPRS on\off)
+08F9FA4: 91D90DFA 000050E3 ;"Подождите" при запуске камеры ("Please wait" before using camera)
+08FB1A8: 1F7500EB 0100A0E3 ;"Сохранить в:" после съёмки ("Saved to:" after you take a foto)
+08FECE8: 21C60DFA 0100A0E3 ;"Подождите" в эксплорере ("Please wait" in Card-Explorer)
+0A73F36: 01 00 ;"Копировать SIM" при смене SIM ("Copy SIM" at SIM change)
+;------------------------- end -------------------------
+

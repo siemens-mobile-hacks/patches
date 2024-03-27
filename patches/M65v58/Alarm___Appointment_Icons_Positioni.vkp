@@ -1,0 +1,17 @@
+;M65v58
+;Alarm & Appointment Icons Positioning
+;Alarm & Appointment Icons Positioning
+;(c) benj9
+;(r) TiCK
+;Version: 
+;PatchID: 4158
+;Details: https://patches.kibab.com/patches/details.php5?id=4158
+/*
+
+*/
+164175A: 01 0i161 ; Y-Pos Alarm(fix y-pos forever (dont weird y-moving at net lost)
+164175B: 39 21
+1641746: 01 0i161 ; Y-Pos Appointment
+1641747: 39 21 
+;------------------------- end -------------------------
+

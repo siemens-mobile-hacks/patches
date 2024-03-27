@@ -1,0 +1,20 @@
+;S65v58
+;Включение телефона по напоминанию
+;The phone turns on by appointment
+;(c) 1nvisible
+;(p) KiRiK
+;Version: 
+;PatchID: 1409
+;Details: https://patches.kibab.com/patches/details.php5?id=1409
+/*
+Телефон включается по напоминанию. При этом звук напоминания не проигрывается.
+English: The phone turns on by appointment. The appointment sound is not played.
+*/
+0ADCC3C: EB4F0028 49F2E0FA
+#pragma enable old_equal_ff
+0D26200: 3FB5074B1B78152B05DC064B98473FBC
+0D26210: 01B0054B18473FBCA06E002800BDC046
+0D26220: 8AEF6CA8,443C26A1,6DCCADA0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

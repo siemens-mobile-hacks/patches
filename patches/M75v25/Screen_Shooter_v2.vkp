@@ -1,0 +1,19 @@
+;M75v25
+;Скрин-шутер
+;Screen Shooter
+;(c) avkiev
+;(p) Grizzzzly
+;Version: 2-MP
+;PatchID: 5764
+;Details: https://patches.kibab.com/patches/details.php5?id=5764
+/*
+Создайте папку 0:\Misc\Shots
+Повесьте на какую-нибудь кнопку шорткат STUP_BABYSITTER или вызовите функцию A0FC7301 с помощью KeySequencer
+
+Если патч выключен - шорткат работает как обычно.
+Если патч включен - работает скрин-шутер
+*/
+04B2C10: F16A32A0 0xA0FC7301
+0FC73E8: 0xFFFFFFFF 0xA0326AF1
+;------------------------- end -------------------------
+

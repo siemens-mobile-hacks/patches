@@ -1,0 +1,16 @@
+;CX75v12
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found"
+;(c) avkiev
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 518
+;Details: https://patches.kibab.com/patches/details.php5?id=518
+/*
+Отключить звук "ту-ту-ту" при нахождении сети телефоном.
+*/
+04CEBD4: 5C03 FFFF
+
+;------------------------- end -------------------------
+

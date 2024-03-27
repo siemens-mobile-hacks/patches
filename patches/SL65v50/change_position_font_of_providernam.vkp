@@ -1,0 +1,42 @@
+;SL65v50
+;Изменить позицию и шрифт имени провайдера в заставке
+;change position/font of providername in screensaver
+;(c) arsh0r,
+;(r) SiNgle
+;Version: 
+;PatchID: 5111
+;Details: https://patches.kibab.com/patches/details.php5?id=5111
+/*
+
+*/
+
+;Digital Clock
+1663F50: 00 xx ; x-start
+1663F52: 71 yy ; y-start
+1663F54: 82 xx ; x-stop
+1663F56: 81 yy ; y-stop
+1663F58: 03 ff ; font size
+
+;Analog Clock
+1663F34: 00 xx ; x-start
+1663F36: 71 yy ; y-start
+1663F38: 82 xx ; x-stop
+1663F3A: 81 yy ; y-stop
+1663F3C: 03 ff ; font size
+
+;Picture
+1663F18: 00 xx ; x-start
+1663F1A: 71 yy ; y-start
+1663F1C: 82 xx ; x-stop
+1663F1E: 81 yy ; y-stop
+1663F20: 03 ff ; font size
+
+;Energysaving
+1663F6C: 00 xx ; x-start
+1663F6E: 36 yy ; y-start
+1663F70: 82 xx ; x-stop
+1663F72: 45 yy ; y-stop
+1663F74: 03 ff ; font size
+
+;------------------------- end -------------------------
+

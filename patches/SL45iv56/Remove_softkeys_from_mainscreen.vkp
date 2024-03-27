@@ -1,0 +1,19 @@
+;SL45iv56
+;Убрать софты с главного экрана (пропущенное и всякие прочие остаются)
+;Remove softkeys from mainscreen
+;(c) Charger
+;Version: 
+;PatchID: 2115
+;Details: https://patches.kibab.com/patches/details.php5?id=2115
+/*
+Убрать софты с главного экрана (пропущенное и всякие прочие остаются)
+*/
+18e5dc: a001 ffff 
+18e624: d613 ffff 
+
+;опустить дату 
+0x18E6C2: 31 3e; Logo mode 
+0x18E67A: 31 3e; Netsearch mode 
+0x18E6A2: 31 3e; normal mode
+;------------------------- end -------------------------
+

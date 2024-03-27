@@ -1,0 +1,31 @@
+;SL45iv56
+;Изменение профиля при подключении/отключении наушников
+;Change Profiles When Plug\Unplug Handsfree
+;(c) abomin
+;Version: 3
+;PatchID: 2639
+;Details: https://patches.kibab.com/patches/details.php5?id=2639
+/*
+English: In v3 problem after phone conversation was solved
+When we connect Handsfree patch sets wished profile, when unplug 
+patch sets profile which was before plug.
+
+
+Release: 26.03.06
+*/
+224750: DAC21E48 DAE1B6C7
+224782: DAC21E48 DAE190C7
+0x41C790: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB203D01DB00DAA46698D7403100F7F8
+0x41C7A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3040DAC21E48E6FC0404D7400D00F6FC
+0x41C7B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8864FAA44A98BB0D3D0A88C0D7403100
+0x41C7C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F3F83040F198F0C4DAE1AAC798C0FAC2
+0x41C7D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFF 1E48D7400E00F2FD56BF48D2CB00
+
+;0x41C7A8: 0404 xxxx - wished profile (&#380;&#261;dany profil)
+
+;0101 - (quiet) Profil cichy 
+;0202 - (loud) Profil g&#322;o&#347;ny 
+;0303 - Profil 1 
+;0404 - Profil 2
+;------------------------- end -------------------------
+

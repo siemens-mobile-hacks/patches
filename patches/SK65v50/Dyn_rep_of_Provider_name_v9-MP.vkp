@@ -1,0 +1,18 @@
+;SK65v50
+;Динамическая замена имени оператора
+;Dynamic replacing  of Provider name
+;(c) avkiev
+;(r) Bennie, arsh0r, Acid
+;Version: 10-MP
+;PatchID: 1068
+;Details: https://patches.kibab.com/patches/details.php5?id=1068
+/*
+MP+FL!
+См. описание в патче для X65v100.
+
+miniGPS лучше поставить, чтобы не было неожиданностей при случайно заданной функции 08. Не забываем комментировать точку входа miniGPS.
+
+*/
+044BDE4: 0xA075FDC3 0xA0FC1B01  ; SK65v50
+;------------------------- end -------------------------
+

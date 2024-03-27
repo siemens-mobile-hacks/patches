@@ -1,0 +1,20 @@
+;EL71v45
+;Выбрать сканируемые папки Базой Данных Медиаплеера
+;Choose MP-DB scanning folders
+;(c) funMarkus
+;Version: 2
+;PatchID: 8654
+;Details: https://patches.kibab.com/patches/details.php5?id=8654
+/*
+
+*/
+07350EC: B5 BB
+07353C0: 343A5C2A00000000303A5C2A000000004646533A20416464456C656D656E7400 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+07353E0: 6D65646961706C617965722F6D65646961646261652F6D6564696164625F6666 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+#pragma enable old_equal_ff
+07353C0: "4:\\Music\\"00 ; использовать не более 31 знаков в каждом пути сканируемой папки
+07353E0: "4:\\Video\\"00 ; use no more than 31 characters in each way of the scanning folder
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

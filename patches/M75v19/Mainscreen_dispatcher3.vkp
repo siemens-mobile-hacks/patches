@@ -1,0 +1,16 @@
+;M75v19
+;Диспатчер главного экрана
+;Mainscreen-dispatcher
+;(c) avkiev
+;(r) KreN
+;(p) Grizzzzly
+;Version: 3
+;PatchID: 4066
+;Details: https://patches.kibab.com/patches/details.php5?id=4066
+/*
+От Мастер-патча v5 ничего не зависит
+*/
+02A8D54: 261C002D05900490 004FB847013EFCA0
+
+;------------------------- end -------------------------
+

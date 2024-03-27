@@ -1,0 +1,25 @@
+;C75v22
+;Вибра в момент начала разговора
+;Vibra at the moment of the beginning of the conversation
+;(c) SiNgle
+;(p) SMeeTBB
+;Version: 1.2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=2746
+;PatchID: 1173
+;Details: https://patches.kibab.com/patches/details.php5?id=1173
+/*
+Режим включается одновременно с галкой в Меню-2-5-5-4 или 2-5-4-3 (Авт.Индикац.)
+При входящих не вибрирует
+*/
+02CD844: BFF122EB0028 002832F784EB
+#pragma enable old_equal_ff
+01FFF50: 00402DE9FF3F2DE90FE0A0E144F09FE5
+01FFF60: 000050E30900001A0100A0E30FE0A0E1
+01FFF70: 34F09FE5020050E30400001A2F00A0E3
+01FFF80: 0210A0E30120A0E30FE0A0E11CF09FE5
+01FFF90: 0FE0A0E118F09FE5000050E3FF3FBDE8
+01FFFA0: 0040BDE80CF09FE5D3E050A03FEEA2A0
+01FFFB0: FC432BA0F7F04CA04BD82CA0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

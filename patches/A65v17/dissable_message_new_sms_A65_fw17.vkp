@@ -1,0 +1,18 @@
+;A65v17
+;Отключение сообщения  "Получено новое SMS"
+;Unhooking the message "Received new SMS"
+;(c) ?
+;(p) Rasp
+;Version: 
+;PatchID: 6382
+;Details: https://patches.kibab.com/patches/details.php5?id=6382
+/*
+Убирает надоедливое сообщение :)
+*/
+;Убрать окошко сообщения "получено новое смс".
+;Портировано: Rasp
+2C79C8: F0C6F0D7 CC00CC00
+2C79CC: E6FE2700 CC00CC00
+2C79D0: DA4CCC98 CC00CC00
+;------------------------- end -------------------------
+

@@ -1,0 +1,45 @@
+;CX75v13
+;Красная иконка - будильник включон
+;Red Icon alarm clock on
+;(c) Demo
+;Version: 1.0
+;PatchID: 3572
+;Details: https://patches.kibab.com/patches/details.php5?id=3572
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v13&f=Red_Icon_alarm_clock_on_1.rar
+
+/*
+
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ### Avtor: Demo                                                     ###
+; ### Date: 02.06.2005  -  Time: 17:47:19                             ###
+; ### Patch for: SIEMENS CX75 v13                                     ###
+; #######################################################################
+
+
+; ##### Picture 767 #####
+010C181C: 0E0C8500B04F17A1 0E0E8500C037FBA0
+
+00FB37C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 06C002FF08C002FFFEC0FF0200FEFFC0
+00FB37D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02FF03C0FFFF020006FF0200FDFFC0FF
+00FB37E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 020002FF040002FF020002FFFE00FF02
+00FB37F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0004F60200FCFF00FFC002FFFF0002F6
+00FB3800: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FF0003EDFF0002FF02C0FEFF0003F6FF
+00FB3810: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0004EDFE00FF02C0FDFF00F602ED0200
+00FB3820: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFED02E5FE00FF02C0FEFF0004ED0300
+00FB3830: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FDE500FF02C0FEFF0003ED03E502E0FE
+00FB3840: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00FF03C0FEFF0003E503E0FE00FF04C0
+00FB3850: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFFF0200FFE503E00200FFFF03C0FEFF
+00FB3860: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0002FF040002FFFE00FF03C0FFFF02C0
+00FB3870: FFFFFFFFFFFFFFFF 04FF02C0FFFF02C0
+
+
+
+;------------------------- end -------------------------
+

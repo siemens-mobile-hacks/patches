@@ -1,0 +1,14 @@
+;S75v52
+;Автоматическое открытие USSD сообщений
+;Auto Show USSD
+;(c) Evgr
+;(r) VoVkA
+;Version: 0.1
+;PatchID: 8672
+;Details: https://patches.kibab.com/patches/details.php5?id=8672
+/*
+
+*/
+030267E: 42F0E8FB FCF729F8
+;------------------------- end -------------------------
+

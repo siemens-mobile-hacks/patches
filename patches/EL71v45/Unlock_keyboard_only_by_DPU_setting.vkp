@@ -1,0 +1,19 @@
+;EL71v45
+;Разблокировать клавиатуру только по конфигу эльфа DPU
+;Unlock keyboard only by DPU.elf settings
+;(c) Evgr
+;(r) 1nvisible; (idea) windes
+;(p) thiagom
+;Version: 
+;PatchID: 8253
+;Details: https://patches.kibab.com/patches/details.php5?id=8253
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=el71v45&f=Unlock_keyboard_only_by_DPU_setting.zip
+
+/*
+
+*/
+066B7DD: D1 E0 ; по длинному нажатию решетки клава не разблокируется
+066B6BF: D1 E0 ; после 1 (или 9) и длинного нажатия решетки клава не разблокируется
+066B625: D1 E0 ; после 112 (или 911) и длинного нажатия решетки клава не разблокируется
+;------------------------- end -------------------------
+

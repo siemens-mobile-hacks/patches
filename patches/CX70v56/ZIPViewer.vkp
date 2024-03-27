@@ -1,0 +1,16 @@
+;CX70v56
+;ZIPViewer
+;ZIPViewer
+;(c) MaX6, DJ
+;Version: 
+;PatchID: 3739
+;Details: https://patches.kibab.com/patches/details.php5?id=3739
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx70v56&f=ZIPViewer.zip
+
+/*
+Заменяет формат PDF на ZIP! Устанавливаем приложеный к патчу файл ZIPViewer.jar в приложения, и после этого будут открываться файлы с расширением .zip! Графику для этого патча можно взять в "графика для системного"!
+*/
+A4FFA5: 506466 5A4950
+A5000C: 706466 7A6970
+;------------------------- end -------------------------
+

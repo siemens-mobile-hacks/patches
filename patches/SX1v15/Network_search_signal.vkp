@@ -1,0 +1,28 @@
+;SX1v15
+;Сигнал при нахождении сети
+;Network search signal
+;(c) Rascal
+;Version: 
+;PatchID: 8456
+;Details: https://patches.kibab.com/patches/details.php5?id=8456
+/*
+Сигнал при нахождении сети © Rascal 
+SX1v15 
+Патч в формате V-Klay для Egold !!! 
+Патч для обладателей S-key или порезанных тестпоинтов. 
+Egold fw15 only ! 
+
+  
+*/
+;Сигнал при нахождении сети © Rascal 
+; SX1v15 
+; Патч в формате V-Klay для Egold !!! 
+; Патч для обладателей S-key или порезанных тестпоинтов. 
+; Egold fw15 only ! 
+
+
+02E0B2: DA85C4AE CC00CC00 
+02E0B6: 4840 CC00 
+02E0B8: 2D12 CC00
+;------------------------- end -------------------------
+

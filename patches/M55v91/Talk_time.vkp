@@ -1,0 +1,14 @@
+;M55v91
+;Время показа сообщения "Время разговора"
+;Time to show "Talk time"
+;(c) klaster
+;Version: 
+;PatchID: 1847
+;Details: https://patches.kibab.com/patches/details.php5?id=1847
+/*
+B8h = 3000 мс, 64h = 100 мс (меньше никак)
+*/
+385C9E: B80B 6400 ;3000 -> 100 мс
+
+;------------------------- end -------------------------
+

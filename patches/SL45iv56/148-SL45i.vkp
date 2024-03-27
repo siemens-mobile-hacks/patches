@@ -1,0 +1,19 @@
+;SL45iv56
+;SDS. Ярлык удаления SMS
+;SDS. SMS Delete Shortcut
+;(c) RizaPN
+;Version: 
+;PatchID: 1752
+;Details: https://patches.kibab.com/patches/details.php5?id=1752
+/*
+Изменение значения правого софта на "Удалить" во время просмотра SMS.
+
+
+Release: June 09, 2004 (v0.1)
+
+Патч №148 с http://patch.oslik.ru/SL45_RU
+*/
+0x18AE8E: 6F 25 
+0x18AE92: 4B4E 7E01 
+;------------------------- end -------------------------
+

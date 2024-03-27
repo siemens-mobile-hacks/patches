@@ -1,0 +1,40 @@
+;C60v27
+;Редактор главного экрана
+;Mainscreen redactor
+;(c) pavel18
+;Version: 1.0
+;PatchID: 6465
+;Details: https://patches.kibab.com/patches/details.php5?id=6465
+/*
+Изменение координат расположения индикаторов аккумулятора и сигнала сети,а также иконок GPRS и т.д.
+С патчем на 4,14мб не тестировался!
+*/
+;Иконка заряда батареи
+2C1986: E6FC4A00 FA6500FF
+45FF00: FFFFFFFF E6FC0100 ;01 -координата X
+45FF04: FFFFFFFF E6FD1200 ;12 -координата Y,далее везде по аналогии
+45FF08: FFFFFFFF FA4C8C19
+;Иконка сети
+2C14EC: E00CE00D FA650CFF
+45FF0C: FFFFFFFF E6FC0100
+45FF10: FFFFFFFF E6FD0100
+45FF14: FFFFFFFF FA4CF014
+;При одной иконке на экране вверху
+;Иконка 1
+2C18DE: E6FC1E00 FA6518FF
+45FF18: FFFFFFFF E6FC4F00
+45FF1C: FFFFFFFF E6FD2E00
+45FF20: FFFFFFFF FA4CE418
+;При двух иконках на экране вверху
+;Иконка 1
+2C18F8: E6FC3400 FA6524FF
+45FF24: FFFFFFFF E6FC4F00
+45FF28: FFFFFFFF E6FD2200
+45FF2C: FFFFFFFF FA4CFE18
+;Иконка 2
+2C18D8: E6FC2A00 FA6530FF
+45FF30: FFFFFFFF E6FC4F00
+45FF34: FFFFFFFF E6FD2E00
+45FF38: FFFFFFFF FA4CE418
+;------------------------- end -------------------------
+

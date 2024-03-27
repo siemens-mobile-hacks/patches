@@ -1,0 +1,15 @@
+;EL71v45
+;Показывать скрытые файлы в карт-эксплорере по умолчанию
+;Show Hidden Files In Card-Explorer By Default
+;(c) 1nvisible
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8521
+;Details: https://patches.kibab.com/patches/details.php5?id=8521
+/*
+
+*/
+06968A4: 00 FF
+06969AC: 00 FF
+;------------------------- end -------------------------
+

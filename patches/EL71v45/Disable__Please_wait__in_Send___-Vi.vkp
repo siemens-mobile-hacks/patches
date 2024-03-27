@@ -1,0 +1,14 @@
+;EL71v45
+;Отключить "Подождите" в Передача...-Через BT в Мои файлы
+;Disable "Please wait" in Send...-Via Bluetooth in My stuff
+;(c) Evgr
+;(p) den11111
+;Version: 
+;PatchID: 8089
+;Details: https://patches.kibab.com/patches/details.php5?id=8089
+/*
+
+*/
+0AA25FA: BBF0F3FE C046C046
+;------------------------- end -------------------------
+

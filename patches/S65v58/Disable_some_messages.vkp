@@ -1,0 +1,38 @@
+;S65v58
+;Убрать некоторые сообщения
+;Disable some messages
+;(c) SiNgle
+;Version: 
+;PatchID: 753
+;Details: https://patches.kibab.com/patches/details.php5?id=753
+/*
+Убирает следующие сообщения | Removes following messages:
+
+"Копировать SIM" при смене SIM | "Copy SIM" at SIM change
+"GPRS вкл/выкл" | GPRS on/off
+"IrDA вкл/выкл" | IrDA on/off
+"Блокировка клавиатуры включена" | "Keypad locked"
+"Все сигналы выкл" | "All ringtones off"
+"Все сигналы вкл" | "All ringtones on"
+"Вибра вкл/выкл" | Vibra on/off
+"Сохранить в:" после съёмки | "Saved to:" after you take a photo
+"Пожалуйста подождите" при запуске камеры | 
+"Please wait" on camera start
+"Пожалуйста подождите" в эксплорере | "Please wait" in explorer
+
+*/
+0B589D6: 01 00     ;"Копировать SIM" при смене SIM | "Copy SIM" at SIM change
+08DA4EA: 4DF0 80BD ; "GPRS вкл/выкл" | GPRS on/off
+08DA4BA: 4DF0 80BD ; "IrDA вкл/выкл" | IrDA on/off
+16A13F8: 0021 10BD ; "Блокировка клавиатуры включена" | "Keypad locked"
+16A13A2: 0021 10BD ; "Все сигналы выкл" | "All ringtones off"
+16A1382: 0021 10BD ; "Все сигналы вкл" | "All ringtones on"
+08DA428: 4DF0 80BD ; "Вибра вкл/выкл" | Vibra on/off
+097E80C: 65DB00EB 0100A0E3 ; "Сохранить в:" после съёмки | 
+"Saved to:" after you take a photo
+097D608: 5E1B1FFA 000050E3 ; "Пожалуйста подождите" при запуске камеры | 
+"Please wait" on camera start
+0982A28: 37061FFA 0100A0E3 ; "Пожалуйста подождите" в эксплорере | "Please wait" in explorer
+
+;------------------------- end -------------------------
+

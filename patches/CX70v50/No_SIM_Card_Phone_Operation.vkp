@@ -1,0 +1,21 @@
+;CX70v50
+;Работа телефона без СИМ-карты
+;No SIM Card Phone Operation
+;(c) SiNgle
+;(p) empeka
+;Version: 
+;PatchID: 723
+;Details: https://patches.kibab.com/patches/details.php5?id=723
+/*
+Жмем *#06# потом заходим в тест и жмём тест звука 1, ничего не происходит, жмем кратко красную кнопку
+
+English:
+Press *#06#, goto Device Check, press Soundcheck 1 (nothing happens), and press the red button shortly
+*/
+09287F8: 05F0E6F8 05F0DAED
+
+092E3B0: 10B55A495A480BF004EF041C59485A49 FF7F2DE910109FE510009FE50120A0E3
+092E3C0: 0068FF300130C460201C0BF000EF5748 0FE0A0E111FF2FE1FFBFBDE8E81A16A1
+092E3D0: 8EF704FC 00200BA8
+;------------------------- end -------------------------
+

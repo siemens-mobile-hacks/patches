@@ -1,0 +1,14 @@
+;CX75v25
+;Плавный скроллинг длинных названий и имен
+;Smooth scrolling of long names
+;(c) SiNgle
+;Version: 
+;PatchID: 3498
+;Details: https://patches.kibab.com/patches/details.php5?id=3498
+/*
+
+*/
+04A89B0: D007 1202 ; delay before start
+04A89B4: 2C01 2A00 ; scrolling speed
+;------------------------- end -------------------------
+

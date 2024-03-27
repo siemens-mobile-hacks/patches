@@ -1,0 +1,26 @@
+;S7Cv47
+;Постоянная подстветка
+;Lit Light all the time
+;(c) benj9
+;(p) (i)starfriend
+;Version: 0.01
+;PatchID: 9794
+;Details: https://patches.kibab.com/patches/details.php5?id=9794
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s7cv47&f=Lit_Light_all_the_time_v0_01.rar
+
+/*
+If can be MP version,it will be the much more convenient.
+ELF version created by BingK,3Ks,NSD as well.
+*/
+01B695C:0080A0E1740D9FE5 785D9FE52636FBEB
+
+#pragma enable old_equal_ff
+0x084200: 3F402DE928009FE530FF2FE10060A0E1
+0x084210: 3F00BDE8FF0056E30200001A000050E3
+0x084220: 0000001AFF20A0E30080A0E10500A0E1
+0x084230: 0080BDE8ABB628A0
+#pragma disable old_equal_ff
+0x084214: FF 05 ; profile 6&#65288;hex 0 - 7&#65289;
+0x084224: FF 0i15 ;lignt &#65288;dec 0 - 100&#65289;
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;CF75v23
+;Убрать иконку фильтра
+;To remove an icon of the filter
+;(c) не помню
+;(p) Sherbakov_ag
+;Version: 
+;PatchID: 4888
+;Details: https://patches.kibab.com/patches/details.php5?id=4888
+/*
+
+
+
+
+*/
+0B35914: FFF738FE 00280028
+;------------------------- end -------------------------
+

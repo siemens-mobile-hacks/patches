@@ -1,0 +1,14 @@
+;CX65v50
+;Открыть скрытые диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 28
+;Details: https://patches.kibab.com/patches/details.php5?id=28
+/*
+Открывает скрытые диски навсегда - Cache и Config
+*/
+12603E8: 02 03
+;------------------------- end -------------------------
+

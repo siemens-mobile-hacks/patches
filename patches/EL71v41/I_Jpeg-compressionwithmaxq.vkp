@@ -1,0 +1,14 @@
+;EL71v41
+;Cжатие Jpeg c максимальным качеством (100% вместо 75%)
+;Jpeg-compression with maximal quality (100% instead of 75%)
+;(c) SiNgle
+;(p) Siemann
+;Version: 
+;PatchID: 7119
+;Details: https://patches.kibab.com/patches/details.php5?id=7119
+/*
+
+*/
+0D6CAE4: 4B 64
+;------------------------- end -------------------------
+

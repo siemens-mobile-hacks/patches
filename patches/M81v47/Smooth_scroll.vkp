@@ -1,0 +1,15 @@
+;M81v47
+;Плавный скроллинг длинных имен
+;Smooth scrolling of long names
+;(c) SiNgle
+;(p) Barracuda
+;Version: 
+;PatchID: 9023
+;Details: https://patches.kibab.com/patches/details.php5?id=9023
+/*
+
+*/
+06A4E20: D00700002C01 120200002A00
+0C22954: D00700002C01 120200002A00
+;------------------------- end -------------------------
+

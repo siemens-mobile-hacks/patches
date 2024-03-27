@@ -1,0 +1,13 @@
+;AX75v16
+;Отключить Самолёт
+;Disable Aircraft Check
+;(c) avkiev
+;Version: 
+;PatchID: 4332
+;Details: https://patches.kibab.com/patches/details.php5?id=4332
+/*
+
+*/
+2DA982: 3D 0D 
+;------------------------- end -------------------------
+

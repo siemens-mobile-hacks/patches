@@ -1,0 +1,15 @@
+;EL71v45
+;Отключить сообщение "Подождите" в МайСтаффе
+;Disable "Wait" in MyStuff
+;(c) Single
+;(r) Evgr
+;(p) funMarkus
+;Version: 
+;PatchID: 7973
+;Details: https://patches.kibab.com/patches/details.php5?id=7973
+/*
+
+*/
+069B773: 18 E8
+;------------------------- end -------------------------
+

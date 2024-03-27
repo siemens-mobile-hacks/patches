@@ -1,0 +1,18 @@
+;S65v58
+;Подсветка с шагом 1%
+;Setup illumination by 1%
+;(c) SiNgle
+;(r) Клименс
+;(p) AsteriX
+;Version: 
+;PatchID: 1239
+;Details: https://patches.kibab.com/patches/details.php5?id=1239
+/*
+Регулировка подсветки с шагом 1%. Можно настроить шаг.
+English: You can setup illumination brightness by 1% or any other.
+*/
+08FBA2C: 0A 01 ; 05 или любое число в HEX
+08FBA3C: 0A 01 ; 05 или любое число в HEX
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;C55v24
+;Отключние_запроса_доступа_явы_к_функциям_телефона
+;Turning off of the demand of the access of Java to the functions of the telephone
+;(c) Baloo, Sinclair
+;Version: 
+;PatchID: 1207
+;Details: https://patches.kibab.com/patches/details.php5?id=1207
+/*
+Работает с урезанным ленгпаком
+*/
+2F2212: E6FCB6E1 EA008C1D
+2F1DDE: E01C0D2E EA009622
+2F1E0A: E0240D26 EA009622
+
+;------------------------- end -------------------------
+

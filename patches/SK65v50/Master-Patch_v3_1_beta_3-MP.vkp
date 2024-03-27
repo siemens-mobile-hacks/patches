@@ -1,0 +1,31 @@
+;SK65v50
+;Мастер-Патч
+;Master-Patch
+;(c) 1nvisible
+;(r) avkiev,chaos,KiRiK,~Jhellico,benj9,KreN,empeka
+;Version: 3.1 b3
+;PatchID: 4238
+;Details: https://patches.kibab.com/patches/details.php5?id=4238
+/*
+Мастер-Патч используется для управления другими патчами непосредственно с телефона.
+Для этого используется мидлет, написанный chaos'ом (http://chaos.allsiemens.com/download/Master.rar).
+К каждому патчу, совместимому с МП, прикладывается специальная конфиг-секция. Ее изменять не надо. Все настройки меняются только с телефона.
+!Перед установкой патча создайте папку 0:\Misc\Patches и установите мидлет.
+Инструкция:
+Мастер-Патч (Master-Patch) - управление патчами непосредственно с телефона
+English:
+Master-Patch is used to take control over other patches from the phone without connecting it to a computer.
+It uses the Master-Midlet written by chaos (http://chaos.allsiemens.com/download/Master.rar).
+Every patch compatible with Master-Patch has its own config-section. You don't need to edit it. All settings are changed only from the mobile phone.
+!Before installing the patch create the folder 0:\Misc\Patches and install the midlet.
+*/
+021F25C: 000050E30B00001A60408FE2 04E08FE204F01FE5E512FCA0
+045ED0C: 838931A0 510CFCA0
+045ED18: 2908000019080000 BD0A0000BD0A0000
+045ED24: B9 BD
+0711F88: 0C4C00921823201C 004B98471112FCA0
+07388D0: A080022020706070 004DA8474912FCA0
+0739234: 192189014018C068 00490847C111FCA0
+0BA54A0: 0D1CFFF7A5FE6E1C 004FB8479111FCA0
+;------------------------- end -------------------------
+

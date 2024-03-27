@@ -1,0 +1,19 @@
+;SL45iv56
+;DDB. Убирает сигнал о начале записи диктофона (by RizaPN)
+;DDB. No sound on start of recording (by RizaPN)
+;(c) RizaPN
+;Version: 
+;PatchID: 1755
+;Details: https://patches.kibab.com/patches/details.php5?id=1755
+/*
+Released: June 12, 2004
+
+Патч №151 с http://patch.oslik.ru/SL45_RU
+*/
+0x351138: 3D 00 
+0x351408: 3D 00 
+0x35198E: 3D 00 
+0x351CC4: 3D 00 
+0x3C2837: 2C 0C
+;------------------------- end -------------------------
+

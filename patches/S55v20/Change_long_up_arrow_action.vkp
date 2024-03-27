@@ -1,0 +1,34 @@
+;S55v20
+;Изменить действие долгого нажатия кнопки СтрелкаВверх
+;Change long up arrow action
+;(c) ValeraVi
+;Version: 1
+;PatchID: 4822
+;Details: https://patches.kibab.com/patches/details.php5?id=4822
+/*
+
+*/
+3249E1: 20 00
+3249DA: DA8D8A9C DAAB2800 ; call main menu icons handlers caller
+;DAAB2800 - вызов вызывальщика обработчиков нажаний на иконках в главном
+; меню. Замените его на вызов любой другой допустимой функции. Например:
+; DA74240C - для вызова проводника Flex памяти, DA740C0C - Java Игры.
+;3249DA: DA8D8A9C DA740C0C ;- Java.
+
+;Вызывальщик обработчиков нажаний на иконках в главном меню:
+6B0028: FFFFFFFF E00EE00F
+6B0030: FFFF DB00
+6B002C: FFFFFFFF DA6796AC ;Records
+;DA6796AC - обработчик нажатия на иконку в главном меню (полный список
+; смотрите ниже)
+; DA678EAC MainMenu_On_Addressbook_icon (Адресная книга)
+; DA6796AC MainMenu_On_Records_icon (Списки вызовов)
+; DA679EAC MainMenu_On_Organiser_icon (Планировщик)
+; DA67A6AC MainMenu_On_Messages_icon (Сообщения)
+; DA67B0AC MainMenu_On_SuftFun_icon (Инет и развлечения)
+; DA67B8AC MainMenu_On_Profiles_icon (Профили)
+; DA67C0AC MainMenu_On_Extras_icon (Другое)
+; DA67C8AC MainMenu_On_Filesystem_icon (Файловая система)
+; DA67CEAC MainMenu_On_Setup_icon (Настройка)
+;------------------------- end -------------------------
+

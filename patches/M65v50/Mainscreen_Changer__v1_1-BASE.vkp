@@ -1,0 +1,36 @@
+;M65v50
+;Управление Гл. Экраном
+;Mainscreen Changer
+;(c) BuG
+;(r) KreN, SiNgle, KiRiK, [crazy]misha
+;Version: 1.1-MP
+;PatchID: 1593
+;Details: https://patches.kibab.com/patches/details.php5?id=1593
+/*
+Патч заменяет * Позиционирование главного экрана v2 * и * Изменение размеров шрифта на главном экране * совместим с * Расширенная панель иконок v0.5 beta *
+
+English:
+Replaces the patches * Mainscreen Positioning * and * change font size on mainscreen * compatible to * Extended IconBar v0.5 beta *
+*/
+; net icons
+1633C3C: ACFA C046 ; clear old canvas call
+1633C42: 321C0221032000F0B8FA C046,00488047,0xA0FCA001 ; not word-aligned example entry
+
+; iconbar
+1633ED8: 5EF9 C046 ; clear old canvas call
+1633EFC: 00040014039021300704 00488047,0xA0FCA03B,C046 ; word-aligned example entry
+1633F1A: 825B0221381C00F04CF9 C046,00498847,0xA0FCA09D
+
+; accu icons
+1633FC4: E8F8 C046 ; clear old canvas call
+1633FCA: 221C0221632000F0F4F8 C046,00488047,0xA0FCA01B
+
+; date and time with removed softkeys
+163AE36: 3869A1220106090E201C C046,004DA847,0xA0FCA0BF
+
+; standard fonts, see line 0FCA100!
+163B0D4: D1F4B2FB664C022803D1 00488047,0xA0FCA0DD,C046
+; fonts with provider logo
+163B110: 0220686157482E613830 00488047,0xA0FCA111,C046
+;------------------------- end -------------------------
+

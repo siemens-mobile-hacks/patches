@@ -1,0 +1,14 @@
+;EL71v38
+;Работа с мидлетами как с файлами
+;Work with midlets as files
+;(c) Single
+;(p) 1nvisible
+;Version: 
+;PatchID: 5604
+;Details: https://patches.kibab.com/patches/details.php5?id=5604
+/*
+
+*/
+0698910: 00 01
+;------------------------- end -------------------------
+

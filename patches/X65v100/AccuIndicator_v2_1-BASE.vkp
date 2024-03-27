@@ -1,0 +1,42 @@
+;X65v100
+;Графический индикатор температуры аккумулятора
+;Accu Temperature As Graphic Indicator
+;(c) benj9
+;(r) ACiDmrp, avkiev, BuG
+;Version: 2.1
+;PatchID: 1502
+;Details: https://patches.kibab.com/patches/details.php5?id=1502
+/*
+Для патча нужны 14 картинок. Одна для температуры меньше минимальной, одна для температуры больше максимальной, 12 для промежутка между максимальной и минимальной температурой. В мастер патче вы можете установить минимальную температуру и промежуток между максимальной и минимальной температурой (19.2 or 38.4°C)
+
+English:there are 14 pictures. 1 pic below temp_min, 1 pic over temp_max, 12 pics in the range of temp_min to temp_max
+in masterpatch you can set temp_min and the range between temp_min and temp_max (19.2 or 38.4°C)
+*/
+#pragma enable old_equal_ff
+0FDE300: 41636375546D704932312C62656E6A39
+0FDE310: 7FB52848E2F774FC3FD001200321E1F7
+0FDE320: 87FE0A210902AA31401A112571574018
+0FDE330: 00D54042C021357C002D03D0C0311B23
+0FDE340: 052501E01C230425F778C01B01D5B468
+0FDE350: 09E0884201DBF46805E0C117D9404018
+0FDE360: 71682841441882B0201CE1F7CDFEB178
+0FDE370: 091801200190091A0091201CE1F7C8FE
+0FDE380: 71784318013BB2780F98E1F7CDFE02B0
+0FDE390: B1787078221CE1F7BFFEFFBC58436B46
+0FDE3A0: 091A188B013004373847091801397047
+0FDE3B0: E4D3C2B1CDCC00000000000000000000
+0FDE3C0: "{patch=AccuTemperaIndic ver=2 cp=benj9 id=CCCD}","\
+{sm `Icon/Canvas Setup`}","\
+{1 xy `Icon Pos` x=102 y=14}","\
+{4 i `1st icon pit` v=247}","\
+{8 i `underrun icon pit` v=260}","\
+{12 i `overflow icon pit` v=259}","\
+{endsm}","\
+{sm `Thermometer Setup`}","\
+{3 b `1st icon temperature (0..25.5°C x 10)` v=150}","\
+{16 o `range cold to hot` `19.2°C`=0 `38.4°C`=1}","\
+{17 b `temperature calibration (-3..3°C x 10)` r=-30..30}","\
+{endsm}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

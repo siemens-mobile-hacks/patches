@@ -1,0 +1,26 @@
+;SL45iv56
+;Запуск MP3-Auto-Play двойным нажатием кнопки Play при заблокированной клавиатуре
+;Unlock MP3-Auto-Play with DobbleClick on the Play-button, when keypad is locked
+;(c) Vikado77
+;Version: 
+;PatchID: 1632
+;Details: https://patches.kibab.com/patches/details.php5?id=1632
+/*
+Запуск MP3-Auto-Play двойным нажатием кнопки Play при заблокированной клавиатуре.
+
+[Патч содержит в себе патч "Разблокировка клавиатуры долгим нажатием "#", без подтверждения OK" - ID: 1560]
+
+Патч №069 с http://patch.oslik.ru/SL45_RU
+*/
+3B07C4: 1E 62 
+3B07C7: 03 04
+3B07CA: 1F 1E 
+3B07CE: DAA2184C48402D10 0D03DADAE2F60D0F
+
+;Патч содержит в себе патч №021 (Kibab PatchID: 1560)
+;"Разблокировка клавиатуры долгим нажатием "#", без подтверждения "OK"
+;и без этих 2-х строк не работает(!):
+3AF6F4: DAD66C2C DADAE2F6
+3B06E0: DC45 0D06
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;SL45iv56
+;Изменение расширения плейлиста с mpl на m3u
+;Modify playlist extension from mpl to m3u
+;(c) arsh0r
+;Version: 
+;PatchID: 1680
+;Details: https://patches.kibab.com/patches/details.php5?id=1680
+/*
+Release: September 21, 2003
+
+Патч №086 с http://patch.oslik.ru/SL45_RU
+*/
+189E33: 6D706C 6D3375
+18FF48: 6D706C 6D3375
+18FF50: 6D706C 6D3375
+;------------------------- end -------------------------
+

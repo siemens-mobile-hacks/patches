@@ -1,0 +1,14 @@
+;CX70v50
+;Перенос папки Licenses на диск Config
+;Reallocate Licenses folder to Config disk
+;(c) SimaFish
+;Version: 
+;PatchID: 8711
+;Details: https://patches.kibab.com/patches/details.php5?id=8711
+/*
+
+*/
+0501D0: 31 32
+0503B4: 31 32
+;------------------------- end -------------------------
+

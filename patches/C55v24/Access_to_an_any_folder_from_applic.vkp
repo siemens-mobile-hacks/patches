@@ -1,0 +1,18 @@
+;C55v24
+;Доступ к произвольной папке из мидлетов
+;Access to an any folder from applications
+;(c) Triguk_VV, Sinclair
+;Version: 
+;PatchID: 4304
+;Details: https://patches.kibab.com/patches/details.php5?id=4304
+/*
+
+*/
+3368AC: 99 9A
+3368B5: 9A 99
+3368BF: 99 9A
+3368C8: 9A 99
+3368D2: 99 9A
+3368DB: 9A 99
+;------------------------- end -------------------------
+

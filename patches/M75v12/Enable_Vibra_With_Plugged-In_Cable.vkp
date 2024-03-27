@@ -1,0 +1,13 @@
+;M75v12
+;Включить вибру при подключенном кабеле
+;Enable Vibra With Plugged-In Cable
+;(c) 1nvisible
+;Version: 
+;PatchID: 5380
+;Details: https://patches.kibab.com/patches/details.php5?id=5380
+/*
+
+*/
+096B9E8: F081BD18 0000A0E3
+;------------------------- end -------------------------
+

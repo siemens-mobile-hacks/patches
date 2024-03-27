@@ -1,0 +1,20 @@
+;CX65v50
+;Работа телефона без СИМ-карты
+;No SIM Card Phone Operation
+;(c) SiNgle
+;(p) empeka
+;Version: 
+;PatchID: 721
+;Details: https://patches.kibab.com/patches/details.php5?id=721
+/*
+Жмем *#06# потом заходим в тест и жмём тест звука 1, ничего не происходит, жмем кратко красную кнопку
+
+EN:
+Press *#06#, goto Device Check, press Soundcheck 1 (nothing happens), and press the red button shortly
+*/
+091170c: 05F0A8F9 05F09CEE
+0917448: 10B55A495A4802F0F8E8041C59485A49 FF7F2DE910109FE510009FE50120A0E3
+0917458: 0068FF300130C460201C02F0F4E85748 0FE0A0E111FF2FE1FFBFBDE8b42f23A1
+0917468: A5F722F9 00200BA8
+;------------------------- end -------------------------
+

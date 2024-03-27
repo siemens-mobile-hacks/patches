@@ -1,0 +1,31 @@
+;SL45iv56
+;Отображение часов в MP3 плеере
+;Just Another Display Time for MP3Player
+;(c) RizaPN
+;(r) mamaich
+;Version: 0.3
+;PatchID: 1681
+;Details: https://patches.kibab.com/patches/details.php5?id=1681
+/*
+Отображает часы в верхнем правом углу при прослушивании MP3 плеера. 
+Сделайте откат патча №72 Показывать текущее время по нажатию "Зеленой трубки" в MP3 плеере! 
+
+Юзаем патчи №183 (patchID 1635) и №188 (patchID 1636)
+
+Release: October 14, 2003
+
+Патч №088 с http://patch.oslik.ru/SL45_RU
+*/
+3BD968: EEAB 10DB 
+3BE0FC: 4B 5B 
+3BE10C: 23 10 
+3BE8A6: EEAB 10DB 
+
+27DB10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC7EEABE09E00E0F2FF02FEE6F4202D 
+27DB20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DC6FB98EE49E0100E48E020008E3E6F4 
+27DB30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DE25BB09E6F4003ADC4FB99E08E1E6F4 
+27DB40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DC25BB01DB00E0A5D7400D00A844F6F4 
+27DB50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0EFE5B55F3F80CFEF3F90EFE06F43030 
+27DB60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DC6FB99EE48E0100E4BE020008E2CB00 
+;------------------------- end -------------------------
+

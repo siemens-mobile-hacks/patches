@@ -1,0 +1,18 @@
+;S75v40
+;Перезагрузка вместо Клав. Заблок. в меню красной кнопки
+;Reboot instead of Keylock in Red Button Menu
+;(c) ThE TrIFoN
+;Version: 
+;PatchID: 4590
+;Details: https://patches.kibab.com/patches/details.php5?id=4590
+/*
+При нажатии Клав. Заблок. в меню красной кнопки происходит перезагрузка телефона
+*/
+0344D2E: A8F0F4EA EDF61EEE
+
+13ABA94: 0x21CC 0x054B   ; Keylock => Reload
+13ABA98: 0x21CC 0x054B   ; Keylock => Reload
+
+02FAEEC: 1FD1 0028       ;принудительный запуск помощника, чтобы не стирались настроики интернета
+;------------------------- end -------------------------
+

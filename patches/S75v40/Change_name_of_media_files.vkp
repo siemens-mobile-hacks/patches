@@ -1,0 +1,14 @@
+;S75v40
+;Изменить имя для фото и видео
+;Change name of media-files
+;(c) avkiev
+;Version: 
+;PatchID: 3817
+;Details: https://patches.kibab.com/patches/details.php5?id=3817
+/*
+Теперь фотки можно именовать не img123.jpg, а 060608_121345.jpg
+*/
+03EF09C: 0xA05AE0E5 0xA0063B01   ; /S75v40
+0063B48: 0xFFFFFFFF 0xA05AE0E5   ; \S75v40
+;------------------------- end -------------------------
+

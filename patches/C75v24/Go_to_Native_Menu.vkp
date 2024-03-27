@@ -1,0 +1,15 @@
+;C75v24
+;Идем в Native menu по тройному нажатию ###
+;Go to Native Menu by pressing###
+;(c) SiNgle
+;(p) Tick
+;Version: 
+;PatchID: 2967
+;Details: https://patches.kibab.com/patches/details.php5?id=2967
+/*
+
+*/
+07866E8: 7DF095FB 0AF55AFA
+0490BA0: FFFFFFFFFFFFFFFF FFB5,31F6E3F8,FFBD
+;------------------------- end -------------------------
+

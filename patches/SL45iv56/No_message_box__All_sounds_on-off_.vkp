@@ -1,0 +1,22 @@
+;SL45iv56
+;Пип вместо сообщения о вкл./выкл. звуков
+;No message box "All sounds on/off" but beep
+;(c) rc-flitzer, GoLL@B
+;Version: 
+;PatchID: 2660
+;Details: https://patches.kibab.com/patches/details.php5?id=2660
+/*
+English: Disables message box "All sounds on" at long press on * key. 
+Also possible to make vanish message box "All sounds off". 
+Plays also configurable beeping soun.
+
+
+Release: October 3rd, 2005 
+Updated: February, 17th, 2006 (by GoLL@B)
+*/
+3B1642: 8880 DB00 ; no box "all sounds off" (brak wiadomo&#347;ci - d&#378;wi&#281;ki wy&#322;&#261;czone) 
+
+3B1614: 8880E6FC7C0488C0E6FD E6FC0200DAC3B600DB00 ; sound number, here example with 02h (brak wiadomo&#347;ci 
+;d&#378;wi&#281;ki w&#322;&#261;czone, przyk&#322;adowy d&#378;wi&#281;k 02hex)
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S75v52
+;Увеличить скорость просмотра USSD сообщений
+;Increase speed of USSD-messages
+;(c) SiNgle
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8279
+;Details: https://patches.kibab.com/patches/details.php5?id=8279
+/*
+
+*/
+029C3A4: D007 0003
+029C3C1: 0B 03
+;------------------------- end -------------------------
+

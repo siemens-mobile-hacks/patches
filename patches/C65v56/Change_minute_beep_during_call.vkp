@@ -1,0 +1,13 @@
+;C65v56
+;Изменение времени подачи ежеминутного сигнала во время разговора
+;Change minute beep during call
+;(c) SiNgle
+;Version: 
+;PatchID: 3834
+;Details: https://patches.kibab.com/patches/details.php5?id=3834
+/*
+
+*/
+0B85CAA: 00 37
+;------------------------- end -------------------------
+

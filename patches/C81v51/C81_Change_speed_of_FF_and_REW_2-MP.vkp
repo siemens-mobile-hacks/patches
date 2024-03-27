@@ -1,0 +1,17 @@
+;C81v51
+;Изменение скорости перемотки плеера
+;Change speed of fast forward and rewind
+;(c) Miha_r
+;(p) Evgr
+;Version: 2-MP
+;PatchID: 10433
+;Details: https://patches.kibab.com/patches/details.php5?id=10433
+/*
+
+*/
+;original mediaplayer speed = 12 
+
+0614B48: EC4B7D22D200B034 004B9847,0xA0066F20
+
+;------------------------- end -------------------------
+

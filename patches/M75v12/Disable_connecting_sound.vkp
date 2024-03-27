@@ -1,0 +1,13 @@
+;M75v12
+;Убрать звук дозвона
+;Disable connecting sound
+;(c) AlexSid
+;Version: 
+;PatchID: 5356
+;Details: https://patches.kibab.com/patches/details.php5?id=5356
+/*
+
+*/
+04B8668: B8DC4CA0 00000000
+;------------------------- end -------------------------
+

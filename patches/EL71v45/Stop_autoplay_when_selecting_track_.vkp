@@ -1,0 +1,20 @@
+;EL71v45
+;Остановить автоматическое воспроизведение при выборе трека в Медиаплеере
+;Stop autoplay when selecting track in Mediaplayer
+;(c) Evgr
+;Version: 1.1
+;PatchID: 9588
+;Details: https://patches.kibab.com/patches/details.php5?id=9588
+/*
+not based on swilib 
+не использует swi
+*/
+07A2C20: 120000EA CAB631EB
+#pragma enable old_equal_ff
+1410750: 4CE08EE202402DE928009FE5080090E5
+1410760: 0C0090E5081090E514209FE5020051E1
+1410770: 0200001A0C0090E50F10A0E31F3ECAEB
+1410780: 0280BDE854B487A09800E9A8
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

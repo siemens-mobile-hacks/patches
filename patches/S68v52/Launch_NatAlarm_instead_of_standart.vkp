@@ -1,0 +1,26 @@
+;S68v52
+;Запуск NatAlarm вместо стандартного будильника 
+;Launch NatAlarm instead of standart alarm
+;(c) Kibab
+;(p) nikinet1
+;Version: 
+;PatchID: 10163
+;Details: https://patches.kibab.com/patches/details.php5?id=10163
+/*
+
+*/
+;Закомментируйте ненужные строки
+003E88A4: 8B6531A0 0xA00610A1 ;шорткат и флекс меню
+0040608C: D7BB31A0 0xA00610A1 ;натив меню
++00610A0 
+#pragma enable old_equal_ff
+00: FFB58020C7DF2501061C06A18022C7DF
+10: 6C0100220021301C94DF301CC7DF2901
+20: FFBD
+24: "0:\\ZBin\\utilities\\natalarm_s68.elf",00 ;путь до эльфа (вместо одного "\" ставьте "\\"!)
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+
+;------------------------- end -------------------------
+

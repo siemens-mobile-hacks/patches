@@ -1,0 +1,18 @@
+;SL45iv56
+;MMP. Изменение позиции по умолчанию в главном меню
+;MMP. Modify Main-menu default item Position
+;(c) RizaPN
+;Version: 
+;PatchID: 1869
+;Details: https://patches.kibab.com/patches/details.php5?id=1869
+/*
+Меняет местами (на ваш выбор) пункты главного меню.
+
+
+Published: July 01, 2004
+
+Патч №166 с http://patch.oslik.ru/SL45_RU
+*/
+0x3B41BB: 0E xE ; x Это ID пункта меню: 0=Organiser, 1=Surf/Fun...
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;EL71v38
+;Изменение яркости подсветки с шагом 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(p) Estar
+;Version: 
+;PatchID: 6997
+;Details: https://patches.kibab.com/patches/details.php5?id=6997
+/*
+
+*/
+063DD80: 0A 05
+063DD86: 0A 05
+;------------------------- end -------------------------
+

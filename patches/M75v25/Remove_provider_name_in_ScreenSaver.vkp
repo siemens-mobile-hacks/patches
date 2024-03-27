@@ -1,0 +1,13 @@
+;M75v25
+;Убрать имя оператора в заставке
+;Remove provider name in ScreenSaver
+;(c) KiRiK
+;Version: 
+;PatchID: 4085
+;Details: https://patches.kibab.com/patches/details.php5?id=4085
+/*
+
+*/
+02CF890: BCEB 0028
+;------------------------- end -------------------------
+

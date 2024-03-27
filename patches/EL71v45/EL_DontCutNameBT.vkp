@@ -1,0 +1,13 @@
+;EL71v45
+;Не резать имена при приёме/передаче файлов по БТ
+;Don't cut file names in BT send/receive window
+;(c) Evgr
+;Version: 
+;PatchID: 9389
+;Details: https://patches.kibab.com/patches/details.php5?id=9389
+/*
+
+*/
+0695143: 9A EA
+;------------------------- end -------------------------
+

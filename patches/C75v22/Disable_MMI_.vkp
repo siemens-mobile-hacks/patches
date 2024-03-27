@@ -1,0 +1,16 @@
+;C75v22
+;Отключить логгинг MMI
+;Disable MMI logging
+;(c) SiNgle
+;(r) 1nvisible
+;Version: 
+;PatchID: 2366
+;Details: https://patches.kibab.com/patches/details.php5?id=2366
+/*
+Ускоряет работу телефона
+English:Speeds up phone operation
+
+*/
+02A03DD: B5 47
+;------------------------- end -------------------------
+

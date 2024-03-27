@@ -1,0 +1,16 @@
+;M55v11
+;Не показывать надписи в заставке
+;Remove any text in screensaver
+;(c) Matr!x
+;(p) =NeoSpb=
+;Version: 
+;PatchID: 5217
+;Details: https://patches.kibab.com/patches/details.php5?id=5217
+/*
+
+*/
+0E637E: DA2E6485 CC00CC00
+0E639C: DA220841 CC00CC00
+
+;------------------------- end -------------------------
+

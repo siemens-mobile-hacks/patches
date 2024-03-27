@@ -1,0 +1,15 @@
+;S65v50
+;Убрать подтверждения при включении громкой связи
+;Toggle HandsFree without question
+;(c) SiNgle
+;(p) KiRiK
+;Version: 
+;PatchID: 42
+;Details: https://patches.kibab.com/patches/details.php5?id=42
+/*
+Включение громкой связи нажатием одной кнопки
+*/
+16998BE: CB21C90000 0021002101
+16998C6: 18F00EE8 17F086E8
+;------------------------- end -------------------------
+

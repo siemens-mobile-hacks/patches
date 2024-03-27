@@ -1,0 +1,13 @@
+;SL65v53
+;Сжатие jpeg с максимальным кач-вом (100% вместо 75%)
+;Jpeg-compression with maximal quality (100% instead of 75%)
+;(c) SiNgle
+;Version: 
+;PatchID: 5256
+;Details: https://patches.kibab.com/patches/details.php5?id=5256
+/*
+
+*/
+09A8D54: 4B 64
+;------------------------- end -------------------------
+

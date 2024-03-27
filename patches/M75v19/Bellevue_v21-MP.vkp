@@ -1,0 +1,15 @@
+;M75v19
+;Красивый вид. Убрать иконки с главного экрана
+;Bellevue. Disable icons on mainscreen
+;(c) benj9
+;(r) (i) KreN
+;(p) Kibab
+;Version: 2.1-MP
+;PatchID: 2888
+;Details: https://patches.kibab.com/patches/details.php5?id=2888
+/*
+Требуется библиотека 60408-2 или новее.
+*/
+049DB58: B9767FA0 0xA0FC3901 ;M75v19
+;------------------------- end -------------------------
+

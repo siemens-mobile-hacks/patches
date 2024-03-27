@@ -1,0 +1,13 @@
+;M55v11
+;Русификация Card-Explorer на горячей клавише
+;Russian Card-Explorer on hotkey
+;(c) SiNgle
+;Version: 
+;PatchID: 5193
+;Details: https://patches.kibab.com/patches/details.php5?id=5193
+/*
+Возможно выключение телефона
+*/
+0D3B10: 2D06 CC00
+;------------------------- end -------------------------
+

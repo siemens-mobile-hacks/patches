@@ -1,0 +1,41 @@
+;CX75v23
+;Расширенная панель иконок
+;Extended IconBar
+;(c) 1nvisible
+;(p) SMeeTBB,Mikel
+;Version: 0.5
+;PatchID: 2581
+;Details: https://patches.kibab.com/patches/details.php5?id=2581
+/*
+Отмените предыдущие патчи координат панели иконок
+
+Undo earlier IconBar coordinates patches
+*/
++0x110
+02A8C04: 85 45 ;disable 1st check
+02A8C06: AD 6D
+02A8C24: F00024 00208C ;another fix to support 8 icons
+02A9056: 10 60 ;canvas end Y coordinate
+02A905A: 02 50 ;canvas end Y coordinate
+02A906C: 04 08 ;disable 2nd check
+02A9070: 04 08
+
+;02A907A: 42 50 ;extend iconbar length
+02A9090: 21 21 ;starting X coordinate
+02A90A2: 08 10 ;fix to support 8 icons
+
+;02A90AA: 02 50 ;change Y coordinate
+02A90CA: 05 00 ;disable 3rd check
+02A90F2: 1C 7C ;fix accu bug
+02A9164: 50 b0 ;move 1st RAM
++0
+
+
+
+
+
+
+
+
+;------------------------- end -------------------------
+

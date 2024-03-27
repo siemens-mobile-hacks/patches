@@ -1,0 +1,14 @@
+;EL71v45
+;Изменить частоту обновления OverLay
+;Change DevMenu Overlay Display Refresh Rate
+;(c) benj9
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8544
+;Details: https://patches.kibab.com/patches/details.php5?id=8544
+/*
+
+*/
+07C534A: 36 6C ; internal timer ~ miliseconds * 216.7 / 1000
+;------------------------- end -------------------------
+

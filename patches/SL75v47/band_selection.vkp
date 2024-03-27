@@ -1,0 +1,14 @@
+;SL75v47
+;Разрешить выбор Диапазона
+;Enable Band Selection
+;(c) Bennie
+;Version: 
+;PatchID: 6178
+;Details: https://patches.kibab.com/patches/details.php5?id=6178
+/*
+
+*/
+0423914: 0502 F901
+
+;------------------------- end -------------------------
+

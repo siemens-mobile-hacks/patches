@@ -1,0 +1,14 @@
+;SL65v53
+;Изменение разделителя в меню
+;Change delimiter in menu
+;(c) *S*h*a*D*o*W*
+;(r) ILL!
+;Version: 
+;PatchID: 5239
+;Details: https://patches.kibab.com/patches/details.php5?id=5239
+/*
+
+*/
+0E4C800: 55555555555555555555555F FFFFFFFFFFFFFFFFFFFFFFFF
+;------------------------- end -------------------------
+

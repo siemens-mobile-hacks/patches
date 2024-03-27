@@ -1,0 +1,15 @@
+;SL75v47
+;Дата вверху ;) (на главном экране) в виде "Чт, 20 Апр" v11
+;Date at the top ;) of mainscreen as "Thu, 20 Apr" v11
+;(c) avkiev
+;(p) ferro
+;Version: 
+;PatchID: 6116
+;Details: https://patches.kibab.com/patches/details.php5?id=6116
+/*
+(!) MasterPatch
+*/
+0903aec: FEF7A5FC231C2A1C 004B9847,0xA0063A01   ; SL75v47
+
+;------------------------- end -------------------------
+

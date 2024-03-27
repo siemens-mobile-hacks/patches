@@ -1,0 +1,27 @@
+;M55v11
+;Изменить Инф.Т9 на быструю смену языка
+;Change Inf T9 to quick language change
+;(c) SiNgle
+;(r) Mikel
+;(p) klaster
+;Version: 
+;PatchID: 5136
+;Details: https://patches.kibab.com/patches/details.php5?id=5136
+/*
+Изменяет где только можно (СМС, заметки, ММС, почта...) Инф.Т9 набыструю смену языка
+English:Patch changes InfT9 everywhere to quick language change
+*/
+0B576F: 9964B8 8F623E ;СМС
+4EDD09: 9964B8 8F623E ;Заметки
+0B9D57: 9964B8 8F623E ;Текстовые модули
+1E297D: 9964B8 8F623E ;MMS Текст
+1E33F1: 9964B8 8F623E ;MMS Тема
+098C5D: 9964B8 8F623E ;Email Тема и Текст
+0AF9B5: 9964B8 8F623E
+0B5B87: 9964B8 8F623E
+0C9CE3: 9964B8 8F623E
+0D9623: 9964B8 8F623E
+0DDD29: 9964B8 8F623E
+1736C3: 9964B8 8F623E
+;------------------------- end -------------------------
+

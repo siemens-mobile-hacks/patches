@@ -1,0 +1,13 @@
+;CX75v25
+;Изменение времени подачи ежеминутного сигнала во время разговора
+;Change minute beep during call
+;(c) SiNgle
+;Version: 
+;PatchID: 3502
+;Details: https://patches.kibab.com/patches/details.php5?id=3502
+/*
+
+*/
+0553C5E: 00 37
+;------------------------- end -------------------------
+

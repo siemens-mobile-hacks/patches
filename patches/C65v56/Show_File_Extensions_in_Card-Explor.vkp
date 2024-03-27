@@ -1,0 +1,14 @@
+;C65v56
+;Показ Расширений Файлов в Card-Explorer'е
+;Show File Extensions in Card-Explorer
+;(c) 1nvisible
+;(r) SiNgle
+;Version: 
+;PatchID: 3859
+;Details: https://patches.kibab.com/patches/details.php5?id=3859
+/*
+
+*/
+0921020: 2E 1E ; x65, CX75
+;------------------------- end -------------------------
+

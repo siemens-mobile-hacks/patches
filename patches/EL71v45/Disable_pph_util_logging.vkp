@@ -1,0 +1,16 @@
+;EL71v45
+;Отключить лог pph_util
+;Disable pph_util logging
+;(c) benj9
+;Version: 
+;PatchID: 8005
+;Details: https://patches.kibab.com/patches/details.php5?id=8005
+/*
+
+*/
+07B951C: 70402DE9 1EFF2FE1; project
+07B9420: 0F002DE9 1EFF2FE1; return
+07B94C8: 0F002DE9 1EFF2FE1 ; return2
+07B95F4: 0F002DE9 1EFF2FE1 ; return3
+;------------------------- end -------------------------
+

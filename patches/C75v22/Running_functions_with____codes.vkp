@@ -1,0 +1,77 @@
+;C75v22
+;Запуск функций с помощью *# кодов
+;Running functions with *# codes
+;(c) empeka
+;(p) Art
+;Version: 2.1
+;PatchID: 4714
+;Details: https://patches.kibab.com/patches/details.php5?id=4714
+/*
+
+*/
+;Запуск функций с помощью *# кодов
+[color:red](!) Master
+(!) API[/color]
+Patch allows to bind function to *#...# code.
+This way we can save shortcut entries like ELSE_PUSHTOTALK or ELSE_REMOTESYNC normally used by some patches.
+CodeStr: first characters of calling string. (i.e. *#67).
+FN: address of function called by CodeStrN# (i.e. F0 is called by *#670#; F1 by *#671# and so on).
+User can specify R0-R3 values before calling a function. Syntax is: CodeStrN*R0*R1*R2*R3#
+Register values are optional. If no value is specified, then 0 is used by default.
+Examples:
+  *#670*1# will call function 0 with R0=0x01, R1=0x00, R2=0x00, R3=0x00
+  *#679*255*10*0*65535# will call function 9 with R0=0xFF, R1=0x0A, R2=0x00, R3=0xFFFF
+Optionally, patch can return R0 value after execution.
+This option may be configured separately for each function in Master Midlet.
+User can now also write description of any function (up to 15 chars). At the moment this option isn't used by patch itself.
+;Entrypoint. Must be aligned to word (4 bytes).
+;0021,0655021951700522
+02CE4FC: 0655021951700522 004B9847,0xA10D4701 
+
++110000
+#pragma enable old_equal_ff
+0FC4700: 00210655021951700522F7B5051C4148
+0FC4710: FCF776FA49D02C243019FBF7DDFC041C
+0FC4720: 601901300078232801D02A283DD1281C
+0FC4730: 2C27F119221CFBF7AFFD002835D12B5D
+0FC4740: 303B1F1C092B30D8002B2ED49B009B19
+0FC4750: D879002829D0C0B45F6800F02AF8B847
+0FC4760: 88BC021C01210120072F01DD083F0131
+0FC4770: B8405F5C384218D0D0218919101C0023
+0FC4780: 071C08225A4397403F0ECF540133042B
+0FC4790: F6DB081D042201B4FBF746FC02BC0439
+0FC47A0: 1A4F0F600020FBF763FDF7BC08BC0433
+0FC47B0: 1847F0B56019013001782A2925D10130
+0FC47C0: 0021FBF76DFD01B42C1902340726281C
+0FC47D0: FBF782FC2D18201C2A210B22FBF7FCFC
+0FC47E0: A84208DA023E0130041C0021FBF758FD
+0FC47F0: 01B4012EEFDC0020002100220023023E
+0FC4800: B74408BC04BC02BC01BCF0BD52303A20
+
+0FC4810: E4D3C2B103EA00000000000000000000,\
+"{patch=HashCodes id=EA03 ver=2.1 cp=empeka mem=255}\
+{48 s Desc.0 v=Refresher}\
+{4 a F0 v=A10D0C51}\
+{64 s Desc.1}\
+{8 a F1}\
+{80 s Desc.2}\
+{12 a F2}\
+{96 s Desc.3}\
+{16 a F3}\
+{112 s Desc.4}","\
+{20 a F4}\
+{128 s Desc.5}\
+{24 a F5}\
+{144 s Desc.6}\
+{28 a F6}\
+{160 s Desc.7}\
+{32 a F7}\
+{176 s Desc.8}\
+{36 a F8}\
+{192 s Desc.9}\
+{40 a F9}\
+{44 s Str maxlen=3 v=`*#`}",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

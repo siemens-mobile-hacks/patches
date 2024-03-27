@@ -1,0 +1,64 @@
+;SL45iv56
+;ICF. Фильтр входящих звонков
+;ICF. Incoming Call Filter
+;(c) RizaPN
+;Version: 2.1
+;PatchID: 1692
+;Details: https://patches.kibab.com/patches/details.php5?id=1692
+/*
+Этот патч изменяет функцию "Фильтр" в профилях. 
+После применения появится 3 пункта внутри этой функции: Off, Auto 
+Answer, и Rejected (для входящих) 
+
+Патч использует картинки 014A и 014B (правьте при помощи ffmod v1.1) 
+
+v2->дополнительный код для работы с AnsweringMachine 
+v2.1->use another RAM area to insert the code 
+
+
+Created : Nov 04, 2003 
+Updated : Aug 24, 2004 (v2.1)
+
+Патч №099 (обновление 2) с http://patch.oslik.ru/SL45_RU
+*/
+;Модификация пунктов меню Фильтр: 
+0x1A0D76: 15001500 77007700 
+0x1A0D88: E601E601 CE05CE05 
+
+
+;Модификация индикаторов на главном экране: 
+0x3B3856: 48403D0AE6FC0080E6FD E00948403D09DAA466A4 
+0x3B3860: 1C18E6FE E0190D03 
+0x3B3872: E6F94A01 06F94A01 
+
+;Модификация замечаний фильтра: 
+0x3BFD62: E6FC1500 E6FC7700 
+0x3BFDA4: E6FCE601 E6FCCE05 
+
+
+;Код для вызова функции ICF: 
+0x030F64: 3D04DAA4 FAC780DC 
+0x030F7E: DAA4 E008 
+0x030F80: 56A4 0DF1 
+
+
+;ICF функция: 
+0x27DC80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAA456A43D05DAA466A43D09FAA36E0F 
+0x27DC90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400C00F7F91E10E6F818000D02E6F8 
+0x27DCA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFF 1940E6FCC834E0EDF0E8FAA3A80F
+
+
+
+;*** Images for Incoming Call Filter by RizaPN *** 
+;Firmware : SL45v56
+;Graphic: MacKam
+;Release : November 4, 2003
+
+;Images with "Undo Date" 
+
+0x4B2207: 008E1F08131F0C971F3E1F1F0CBF9F08 08381F1C7C1F3E261F08031F08031F08
+0x4B2217: 001F00841F 071F08021F
+0x4B221C: 1F8E1F0F111F07249F02BF9F00A09F3F 04141F0C071F1F949F0C449F04579F00
+0x4B222C: 209F3E209F 449F07931F
+;------------------------- end -------------------------
+

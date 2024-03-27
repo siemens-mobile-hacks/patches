@@ -1,0 +1,24 @@
+;SL65v50
+;Говорящий телефон
+;Talking Phone
+;(c) avkiev
+;(p) Tick
+;Version: 3-MP
+;PatchID: 5596
+;Details: https://patches.kibab.com/patches/details.php5?id=5596
+/*
+
+*/
+;1. Shortcut
+9222AC: "ELSE_COUNT_DOWN",00,E3C0FCA0 "ELSE_COUNT_DOWN",00,0xA0FC3001
+;9225EC: "ELSE_REMOTESYNC",00,510CFCA0 "ELSE_REMOTESYNC",00,0xA0FC3001 
+;922584: "ELSE_PUSHTOTALK",00,E3C0FCA0 "ELSE_PUSHTOTALK",00,0xA0FC3001 
+
+
+;2. Alarm
+;Говорить время вместо мелодии будильника (не работает если телефон выключен)
+;Spell time instead of Alarm (doesn't work if phone is off)
+B751CC: 0F20D2F544EE2080 00488047,0xA0FC30A7   ; sl65v50
+
+;------------------------- end -------------------------
+

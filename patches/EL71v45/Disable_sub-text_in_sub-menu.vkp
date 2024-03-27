@@ -1,0 +1,18 @@
+;EL71v45
+;Отключить подтекст в подменю
+;Disable sub-text in sub-menu
+;(c) funMarkus
+;Version: 
+;PatchID: 8466
+;Details: https://patches.kibab.com/patches/details.php5?id=8466
+/*
+Плюс патча заключается в том, что убираем тупые надписи, взамен получая видимых подпунктов на один больше:)
+*/
+071E0F4: F0EC08FA 0000A0E1; MediaPlayer->Options->Send
+07E5000: 2DD105FA 0000A0E1; MediaPlayer->Options
+07E3A40: 9DD605FA 0000A0E1; MediaPlayer->Options->New
+0715FC8: 3B0D09FA 0000A0E1; Camera->Options
+07F85D0: B98305FA 0000A0E1; While Playing smth in MediaPlayer->Options
+07F83F8: 2F8405FA 0000A0E1; Режим воспроизведения
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;S75v52
+;Цветовая схема
+;Color skin
+;(c) benj9
+;(p) Diman3452
+;Version: 1.1-MP
+;PatchID: 8607
+;Details: https://patches.kibab.com/patches/details.php5?id=8607
+/*
+Замена цветовым схемам
+*/
+0971506: 8000 0847
+0971890: 0xA8DF0392 0xA007D311
+007D334: 0xFFFFFFFF 0xA8DF0392
+;------------------------- end -------------------------
+

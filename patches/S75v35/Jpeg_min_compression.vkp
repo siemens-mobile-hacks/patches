@@ -1,0 +1,13 @@
+;S75v35
+;Jpeg с минимальным сжатием
+;Jpeg minimal compression
+;(c) SiNgle
+;Version: 
+;PatchID: 3372
+;Details: https://patches.kibab.com/patches/details.php5?id=3372
+/*
+Макс получил фотку 353кб, а в среднем станут по 200кб
+*/
+0AF2EA4: 4B 64
+;------------------------- end -------------------------
+

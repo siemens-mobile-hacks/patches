@@ -1,0 +1,16 @@
+;S75v47
+;Не показывать провайдер, профайл и поиск сети на главном экране
+;Do not show provider, profile and network search message on main screen
+;(c) Miha_r
+;(p) dimonp25 and KIBER-DEMON
+;Version: 
+;PatchID: 7845
+;Details: https://patches.kibab.com/patches/details.php5?id=7845
+/*
+
+*/
+030218A: FEF753FA C046C046 ;network search
+0302294: FEF71AFA C046C046 ;provider
+030237A: FEF7A7F9 C046C046 ;profile
+;------------------------- end -------------------------
+

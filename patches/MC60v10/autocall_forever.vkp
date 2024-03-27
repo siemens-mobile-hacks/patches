@@ -1,0 +1,15 @@
+;MC60v10
+;Автонабор постоянно через нужные вам промежутки времени
+;AutoCall Forever With Selected Pause
+;(c) SiNgle
+;(p) Madcat
+;Version: 
+;PatchID: 3378
+;Details: https://patches.kibab.com/patches/details.php5?id=3378
+/*
+
+*/
+01B1A4: 08C1 CC00
+351E44: 05 02 ; 02 = 2 секунды
+;------------------------- end -------------------------
+

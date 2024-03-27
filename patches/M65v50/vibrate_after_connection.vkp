@@ -1,0 +1,26 @@
+;M65v50
+;Вибра в момент начала разговора
+;Vibrate shortly after connection
+;(c) SiNgle
+;(p) AsteriX
+;Version: 1.2
+;PatchID: 133
+;Details: https://patches.kibab.com/patches/details.php5?id=133
+/*
+Режим включается одновременно с галкой в Меню-2-5-5-4 или 2-5-4-3 (Авт.Индикац.).
+При входящих не вибрирует.
+*/
+;!Режим включается одновременно с галкой в Меню-2-5-5-4 или 2-5-4-3 (Авт.Индикац.)
+;!При входящих не вибрирует
+1638E7E: 17F05AEF0028 002821F03EED
+#pragma enable old_equal_ff
+165A900: 00402DE9FF3F2DE90FE0A0E144F09FE5
+165A910: 000050E30900001A0100A0E30FE0A0E1
+165A920: 34F09FE5020050E30400001A2F00A0E3
+165A930: 0210A0E30120A0E30FE0A0E11CF09FE5
+165A940: 0FE0A0E118F09FE5000050E3FF3FBDE8
+165A950: 0040BDE80CF09FE52BE6B3A0670B30A1
+165A960: F85C93A0AFCFB0A0858E63A1FF
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;X75v100
+;GprsD - демон сессии без мессаджей
+;GprsD - session daemon, no messages
+;(c) Rst7,Shadow
+;(p) windes ;)
+;Version: 
+;PatchID: 7740
+;Details: https://patches.kibab.com/patches/details.php5?id=7740
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=gprsd_nolog_elf.zip
+
+/*
+Вот, для NewSgold и 
+SGold, без сообщений о "Session sarted!", "Session closed!" и "Can't start session!"
+*/
+Эльфы для NewSGold и SGold в аттаче. Кладем в 4:\Zbin\Daemons (0:\Zbin\Daemons)
+;------------------------- end -------------------------
+

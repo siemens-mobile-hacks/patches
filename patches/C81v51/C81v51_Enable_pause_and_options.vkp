@@ -1,0 +1,17 @@
+;C81v51
+;Включить паузу и опции при полноэкранном просмотре
+;Enable pause and options in mediaplayer fullscreen mode
+;(c) Miha_r
+;(p) Evgr
+;Version: 
+;PatchID: 10429
+;Details: https://patches.kibab.com/patches/details.php5?id=10429
+/*
+
+*/
+
+
+060B58E: 012803D0042801D01A28 C046C0460428C046C046 
+
+;------------------------- end -------------------------
+

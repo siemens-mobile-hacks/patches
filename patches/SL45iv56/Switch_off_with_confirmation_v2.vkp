@@ -1,0 +1,21 @@
+;SL45iv56
+;Выключение телефона с подтверждением
+;Switch off with confirmation
+;(c) abomin, greenteas
+;Version: 2
+;PatchID: 2089
+;Details: https://patches.kibab.com/patches/details.php5?id=2089
+/*
+Release: 11 October 2005 (v2.0) 
+
+V2.0-Correction: at the circumstance that "SIM card error", 
+the problem that can't Switch off 
+*/
+2BE1D2: 48402D0A FAE056D5 
+40D556: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 48402D02DAE060D5DB00E6FC8015E6FD 
+40D566: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8303E6FE8615F0FDFAE5CEDDF04E46FE 
+40D576: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 23003D02DACBD6E1DB00000000000200 
+40D586: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 9A066800FF7F0000000072D5E0000000 
+40D596: FFFFFFFFFFFFFFFFFFFF 00005A2CE202264E0200
+;------------------------- end -------------------------
+

@@ -1,0 +1,315 @@
+;M75v19
+;Большая Библиотека Функций
+;Big Function Library
+;(c) avkiev
+;(r) avkiev, Mikel
+;(p) Kibab
+;Version: 60716
+;PatchID: 4053
+;Details: https://patches.kibab.com/patches/details.php5?id=4053
+/*
+Эта новая библиотека нужна для Мастер-Патча v11
+В этой редакции:
+- добавлены функции для работы MP v11
+
+Старую библиотеку пока не сносим :)
+Версия патча записана в формате "ГММДД". Индицирует дату обновления патча.
+Этот патч сам по себе ничего не делает. Он предназначен для облегчения создания и портирования других патчей.
+Требуется для многих патчей, написанных с использованием концепции "Мастер-Патч + Библиотека функций" (c) 1nvisible, avkiev
+
+English:Patch version is in "YMMDD" format. It indicates its update date.
+
+For Master-Patch v11
+
+It is auxiliary patch. It consists of 255 most useable function.
+ It is needed for many other patches, whitch are written using "Master-Patch+Functon Library" concept (c) 1nvisible, avkiev
+*/
++0FD4000
+#pragma enable old_equal_ff
+;0000: 0x   ; f000: SWI_0
+;0004: 0x   ; f001: SWI_1
+;0008: 0x   ; f002: SWI_2
+;000C: 0x   ; f003: SWI_3
+;0010: 0x   ; f004: SWI_4
+0014: 0xA020EB99   ; f005: DecToHex
+0018: 0xA081A844   ; f006: GetAkku
+001C: 0xA0A83FDD   ; f007: GetLP
+0020: 0xA081B6D8   ; f008: SetIllumination
+0024: 0xA0A98C8C   ; f009: SwitchPhoneOff
+;
+0028: 0xA07CB91C   ; f010: fopen
+002C: 0xA07CB95C   ; f011: fread
+0030: 0xA07CBA44   ; f012: fwrite
+0034: 0xA07CB870   ; f013: fclose
+0038: 0xA07CB8A0   ; f014: fflush
+003C: 0xA07CB8D0   ; f015: lseek
+0040: 0xA08DD7E0   ; f016: mkdir
+0044: 0xA0FCF201   ; f017: OpenReadCloseFile
+0048: 0xA08DDCD4   ; f018: GetFileAttrib
+004C: 0xA08DD7E0   ; f019: SetFileAttrib
+;
+0050: 0xA0203C24   ; f020: malloc
+0054: 0xA0203C8C   ; f021: mfree
+0058: 0xA0EF10E5   ; f022: sPrintf
+005C: 0xA0EF29CD   ; f023: strcat
+0060: 0xA0EF29ED   ; f024: strchr
+0064: 0xA0EF2A10   ; f025: strcmp
+0068: 0xA0EF2AAD   ; f026: strcopy
+006C: 0xA0EF2B2D   ; f027: StrLen
+0070: 0xA07BCAFD   ; f028: wsAppendChar
+0074: 0xA07BCAB1   ; f029: wsInsertChar
+;
+0078: 0xA0800CF1   ; f030: GetPITaddr
+007C: 0xA02CCDF5   ; f031: DrawMainScreen
+0080: 0xA0CD32F5   ; f032: DrawScreenSaver
+0084: 0xA0800E37   ; f033: GetImgHeight
+0088: 0xA0800E47   ; f034: GetImgWidth
+008C: 0xA02A944D   ; f035: DrawImg
+0090: 0xA07F76B9   ; f036: DrawImage2
+0094: 0xA02A9427   ; f037: DrawCanvas
+0098: 0xA07F75F9   ; f038: DrawImgBW
+009C: 0xA02A8D0D   ; f039: AddIconToIconbar
+;
+00A0: 0xA081C8FC   ; f040: getEELiteMaxID
+00A4: 0xA07CA274   ; f041: getEEFullMaxID
+00A8: 0xA081C7B8   ; f042: GetEELiteBlockAddress
+00AC: 0xA081C8A0   ; f043: getEELiteBlockSizeVersion
+00B0: 0xA07C9EB8   ; f044: getEEFullBlockSizeVersion
+00B4: 0xA081C930   ; f045: StartWriteEELiteBlock
+00B8: 0xA081C9AC   ; f046: FinishWriteEELiteBlock
+00BC: 0xA081C908   ; f047: DeleteEELiteBlock
+00C0: 0xA081C968   ; f048: WriteEELiteBlock
+00C4: 0xA0EF2C75   ; f049: strrchr
+;
+00C8: 0xA02FC5BC   ; f050: PlaySound
+00CC: 0xA02F1EB4   ; f051: PlaySound2
+00D0: 0xA02B4AD8   ; f052: PlaySoundLoop
+00D4: 0xA058A6EB   ; f053: AlarmClockRing
+00D8: 0xA04F2D41   ; f054: GetATCmdString
+00DC: 0xA0594A57   ; f055: OriginalATCGSN
+00E0: 0xA04F26DD   ; f056: PostAtCommand
+00E4: 0xA04F3E2F   ; f057: SendATAnswerStr
+00E8: 0xA08FC7E9   ; f058: mfree_high
+00EC: 0xA0EF1DC1   ; f059: MemChr
+;
+00F0: 0xA07CB99C   ; f060: SetFileSize
+00F4: 0xA050E773   ; f061: editOrNewTXTModule
+00F8: 0xA04EEEED   ; f062: LoadProcesses
+00FC: 0xA07F8321   ; f063: GetPaletteAdrByColorIndex
+0100: 0xA0326987   ; f064: GetVibraStatus
+0104: 0xA08362F7   ; f065: GetProvider
+0108: 0xA02D0159   ; f066: IsScreenSaver
+010C: 0xA07FFE7B   ; f067: IsUnlocked
+0110: 0xA085AB25   ; f068: TempLigntOn
+0114: 0xA0351900   ; f069: GetWavLen
+;
+0118: 0xA02CF64D   ; f070: HasNewSMS
+011C: 0xA02CE789   ; f071: HasFlashSMS
+0120: 0xA02CB167   ; f072: ReadNewSMS
+0124: 0xA0510826   ; f073: ReadFlashSMS
+0128: 0xA02F49B8   ; f074: PlayFile
+012C: 0xA088DF54   ; f075: StartMidlet
+0130: 0xA0558215   ; f076: GetMissedCallsCount
+0134: 0xA020AF00   ; f077: CallAfterTimer
+0138: 0xA07C2B57   ; f078: ShowMsgInR1_3
+013C: 0xA07C2B67   ; f079: ShowMsgInR1_4
+;
+0140: 0xA07C2BCF   ; f080: ShowMsgInR1_7
+0144: 0xA0B40DA1   ; f081: GetNetAccessMode
+0148: 0xA081BD84   ; f082: GetIlluminationDataTable
+014C: 0xA0EF1DE5   ; f083: memcmp
+0150: 0xA020EBD5   ; f084: StrToInt
+0154: 0xA032699D   ; f085: SwitchVibraOnOff
+;0158: 0x   ; f086: PlayVibra
+015C: 0xA020B00C   ; f087: IsCallAfterTimerStillRunning
+0160: 0xA0005D18   ; f088: ClearMemory
+0164: 0xA0EF22B0   ; f089: memcpy
+;
+0168: 0xA07FF6F7   ; f090: KeypressOn
+016C: 0xA07FF825   ; f091: KeypressOff
+0170: 0xA03B5429   ; f092: GetCPUClock
+0174: 0xA03B5463   ; f093: GetCPULoad
+0178: 0xA03B5431   ; f094: GetMMIMemUsed
+017C: 0xA03B543B   ; f095: GetNonPermMemAvail
+0180: 0xA0326BA7   ; f096: ShowMainMenu
+0184: 0xA032B0CF   ; f097: ShowNativeMenu
+;0188: 0x   ; f098: SetVibraStatus
+018C: 0xA02C93EF   ; f099: MS_Wallpaper_Flush
+;
+0190: 0xA0626B60   ; f100: TriggerUpdate
+0194: 0xA0833D65   ; f101: EndCall
+0198: 0xA07CC997   ; f102: EndCallBusy
+019C: 0xA02A8759   ; f103: IsDirectCallActive
+01A0: 0xA02A5E67   ; f104: GetScreenSaverRAM
+01A4: 0xA020C108   ; f105: LockSched
+01A8: 0xA020C190   ; f106: UnlockSched
+01AC: 0xA07CB654   ; f107: FindFirstFile
+01B0: 0xA07CB690   ; f108: FindNextFile
+01B4: 0xA07CB5DC   ; f109: FindClose
+;
+01B8: 0xA0AAEDC3   ; f110: IsCalling
+01BC: 0xA02C9C97   ; f111: RefreshGPRSTraffic
+01C0: 0xA02C9CB5   ; f112: GetGPRSTrafficPointer
+01C4: 0xA07F604F   ; f113: DrawRoundRect
+01C8: 0xA05543CF   ; f114: SetCurrentSecondOfCall
+01CC: 0xA0AAF5DB   ; f115: GetTypeOfCall
+01D0: 0xA0327163   ; f116: GetFunctionPointer
+01D4: 0xA07FCF8D   ; f117: StoreXYWHtoRECT
+01D8: 0xA089B749   ; f118: SetWindowText
+01DC: 0xA0898F27   ; f119: set2color_byPaletteAdr
+;
+01E0: 0xA07D9989   ; f120: GetTimeFormat
+01E4: 0xA07FC2E3   ; f121: DrawObject
+01E8: 0xA0898FBD   ; f122: ClearWindowBuffer
+01EC: 0xA02BFAF5   ; f123: GetProfileFilter
+01F0: 0xA0A881E4   ; f124: SetVibration
+01F4: 0xA0AAE7DD   ; f125: IsIncognitoCall
+01F8: 0xA0AE9DF1   ; f126: Rand
+;01FC: 0x   ; f127: IsPlayerOn
+0200: 0xA058AF49   ; f128: GetCallsList
+0204: 0xA0EF2540   ; f129: HexToDec
+;
+;0208: 0x   ; f130: GetCurrentTrackFilename
+020C: 0xA02DD148   ; f131: GetPathOfFoundFile
+0210: 0xA07CB7D0   ; f132: GetFileStats
+0214: 0xA0208A05   ; f133: StrCmpNoCase
+0218: 0xA07C9DE0   ; f134: ReadEEPROMData
+021C: 0xA07C9F24   ; f135: WriteEEPROMData
+;0220: 0x   ; f136: GetAccessoryType
+;0224: 0x   ; f137: GetLangMesIntoWS
+0228: 0xA07CB56C   ; f138: GetFreeFlexSpace
+022C: 0xA07CBB30   ; f139: GetTotalFlexSpace
+;
+;0230: 0x   ; f140:
+;0234: 0x   ; f141:
+;0238: 0x   ; f142:
+;023C: 0x   ; f143:
+;0240: 0x   ; f144:
+;0244: 0x   ; f145:
+;0248: 0x   ; f146:
+;024C: 0x   ; f147:
+;0250: 0x   ; f148:
+;0254: 0x   ; f149:
+;
+;0258: 0x   ; f150:
+;025C: 0x   ; f151:
+;0260: 0x   ; f152:
+;0264: 0x   ; f153:
+;0268: 0x   ; f154:
+;026C: 0x   ; f155:
+;0270: 0x   ; f156:
+;0274: 0x   ; f157:
+;0278: 0x   ; f158:
+;027C: 0x   ; f159:
+;
+0280: 0xA07BC05F   ; f160: wsprintf
+0284: 0xA0208AE5   ; f161: wstrcpy
+0288: 0xA07BC5EF   ; f162: Unicode_GetCharByPosition
+028C: 0xA07CADBC   ; f163: ws_2str
+;0290: 0x   ; f164:
+;0294: 0x   ; f165:
+;0298: 0x   ; f166:
+;029C: 0x   ; f167:
+;02A0: 0x   ; f168:
+;02A4: 0x   ; f169:
+;
+;02A8: 0x   ; f170:
+;02AC: 0x   ; f171: SWI_AB
+02B0: 0xA0FCF1B1   ; f172: DrawText
+02B4: 0xA0FCF0A1   ; f173: StrAnsi2Uni
+02B8: 0xA0FCF0C1   ; f174: StrUni2Ansi
+02BC: 0xA0FCF051   ; f175: Hex2Int
+02C0: 0xA0FCF351   ; f176: DrawPicWithCanvas
+02C4: 0xA0FCF371   ; f177: DrawColorPicWithCanvas
+;02C8: 0x   ; f178:
+02CC: 0xA0FCF301   ; f179: Seconds2iTime
+;
+02D0: 0xA07D8B0B   ; f180: GetDateTime
+02D4: 0xA020845B   ; f181: GetWeek
+02D8: 0xA02BF4B1   ; f182: GetProfile
+02DC: 0xA02BF35F   ; f183: SetProfile
+02E0: 0xA0EF2424   ; f184: dwMODdw
+;02E4: 0x   ; f185:
+;02E8: 0x   ; f186:
+;02EC: 0x   ; f187:
+;02F0: 0x   ; f188:
+;02F4: 0x   ; f189:
+;
+02F8: 0xA0FC0C81   ; f190: RunScaner
+;02FC: 0x   ; f191: SpellTime
+;0300: 0x   ; f192: MiniGPS
+0304: 0xA0FC0C51   ; f193: RunDispatcher
+;0308: 0x   ; f194: GetAllPatchesByInject
+030C: 0xA0FCF3A1   ; f195: ProcessFiles
+0310: 0xA0FC0C01   ; f196: GetBuffer
+;0314: 0x   ; f197: PIT_Manager_Core
+;0318: 0x   ; f198:
+;031C: 0x   ; f199: CallLibFunByNumber
+
+;
+0320: 0xA850D2C0   ; f200: RamCap
+0324: 0xA850D2C2   ; f201: RamLS
+0328: 0xA851A92C   ; f202: RamNet
+;032C: 0x   ; f203:
+0330: 0xA8411778   ; f204: RamMissedCalls
+0334: 0xA841176C   ; f205: RamMissedSMS
+0338: 0xA84D1218   ; f206: RamDateTime
+033C: 0xA8526584   ; f207: RamAlarm
+0340: 0xA8559310   ; f208: RamAccPoint
+0344: 0xA84CB45C   ; f209: RamScreensaver
+;
+0348: 0xA84D1240   ; f210: RamAutoTime
+034C: 0xA84CB464   ; f211: RamStby
+0350: 0xA841175C   ; f212: RamMissedMes
+0354: 0xA84FF84C   ; f213: RamIsLocked
+0358: 0xA84CFBBC   ; f214: RamNetOnline
+035C: 0xA8532F5A   ; f215: RamScreenBrightness
+;0360: 0x   ; f216: RamMenuAnywhere
+;0364: 0x   ; f217: RamShutdownMode
+0368: 0xA855975C   ; f218: RamIsShutdown
+036C: 0xA84CB490   ; f219: RamMainscreenAccuIcon
+;
+;0370: 0x   ; f220: RamRandSeed
+;0374: 0x   ; f221: RamCurrentTrack
+;0378: 0x   ; f222:
+;037C: 0x   ; f223:
+;0380: 0x   ; f224:
+;0384: 0x   ; f225:
+;0388: 0x   ; f226:
+038C: 0xA851BBB8   ; f227: RamProfileNum
+0390: 0xA815D000   ; f228: FreeRAM
+0394: 0x0000130C   ; f229: LP_MonthsShort
+;
+0398: 0x000004EA   ; f230: Pic_Big0
+039C: 0x0000056F   ; f231: Pic_Little0
+03A0: 0x0000057A   ; f232: Pic_Extra
+03A4: 0x0000058D   ; f233: Pic_Profiles
+03A8: 0x00000302   ; f234: Pic_Vibra
+03AC: 0x0000040A   ; f235: Pic_Call
+03B0: 0x00000560   ; f236: Pic_AdvNet
+03B4: 0x000011FA   ; f237: LP_MonthsLong
+03B8: 0x0000042C   ; f238: LP_Weekdays
+03BC: 0x00000551   ; f239: Pic_Calendar
+;
+;03C0: 0x   ; f240: Pic_AccuGraph
+03C4: 0xA02CCC05   ; f241: BuildCanvas
+;03C8: 0x   ; f242: lpRAM_PIT
+;03CC: 0x   ; f243: RAM_PIT_Cap
+;03D0: 0x   ; f244:
+;03D4: 0x   ; f245:
+;03D8: 0x   ; f246:
+;03DC: 0x   ; f247:
+03E0: 0xA0FD0050   ; f248: Additional_PIT_address
+03E4: 0x00000542   ; f249: Additional_PIT_start
+;
+03E8: 0x000005A6   ; f250: Additional_PIT_end
+;03EC: 0x   ; f251:
+03F0: 0xA0FC0A00   ; f252: PictureRelocationTable
+03F4: 0x0000F000   ; f253: PictureRelocationBase
+03F8: 0x00001E1E   ; f254: NextPictureMagic
+;03FC: 0x   ; f255:
+#pragma disable old_equal_ff
++0
+
+;------------------------- end -------------------------
+

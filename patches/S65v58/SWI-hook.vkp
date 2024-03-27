@@ -1,0 +1,18 @@
+;S65v58
+;SWI-hook
+;SWI-hook
+;(c) avkiev, Rst7/CBSIE, BoBa
+;(r) NForce
+;(p) Merzotnuk
+;Version: 
+;PatchID: 5586
+;Details: https://patches.kibab.com/patches/details.php5?id=5586
+/*
+
+*/
+00927C0: 1A0000EA DCF09FE5
+00928A3: A100000000 000080FDA0
+;------------------------- end -------------------------
+
+;------------------------- end -------------------------
+

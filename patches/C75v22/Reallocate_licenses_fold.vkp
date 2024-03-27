@@ -1,0 +1,14 @@
+;C75v22
+;Перенос папки Licenses на диск Config
+;Reallocate Licenses folder to Config disk
+;(c) SimaFish
+;Version: 
+;PatchID: 8710
+;Details: https://patches.kibab.com/patches/details.php5?id=8710
+/*
+
+*/
+070190: 31 32
+070374: 31 32
+;------------------------- end -------------------------
+

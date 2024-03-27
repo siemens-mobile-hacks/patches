@@ -1,0 +1,16 @@
+;CX75v12
+;Убрать Латвийский, Литовский и Русский из меню языков ввода
+;Remove Latvia, Lithuania and Russian from input languages menu
+;(c) Pavel81
+;(r) AlexSid
+;Version: 1.0
+;PatchID: 525
+;Details: https://patches.kibab.com/patches/details.php5?id=525
+/*
+Удаляет Латвийский, Литовский и Русский (по выбору) из меню выбора языков ввода.
+*/
+0A3E592: 00 01 ; убрать Latvia
+0A3E596: 00 01 ; убрать Lithuania
+;0A3E5AA: 00 01 ; убрать Русский
+;------------------------- end -------------------------
+

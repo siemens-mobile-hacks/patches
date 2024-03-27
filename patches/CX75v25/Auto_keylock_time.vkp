@@ -1,0 +1,13 @@
+;CX75v25
+;Изменение времени автоблокировки клавиш
+;Auto keylock time
+;(c) SiNgle
+;Version: 
+;PatchID: 3494
+;Details: https://patches.kibab.com/patches/details.php5?id=3494
+/*
+
+*/
+02CD09C: C832 7017
+;------------------------- end -------------------------
+

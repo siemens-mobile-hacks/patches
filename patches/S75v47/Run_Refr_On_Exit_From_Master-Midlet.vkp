@@ -1,0 +1,14 @@
+;S75v47
+;Запуск рефрешера при выходе из мастер-мидлета
+;Run Refresher On Exit From Master-Midlet
+;(c) 1nvisible
+;(p) -=(Kad)=-
+;Version: 
+;PatchID: 7253
+;Details: https://patches.kibab.com/patches/details.php5?id=7253
+/*
+
+*/
+0A6C7C4: 000050E30E00001A6C408FE2 04E08FE204F01FE5090F06A0
+;------------------------- end -------------------------
+

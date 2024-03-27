@@ -1,0 +1,19 @@
+;M55v10
+;Отключить сигналы в диктофоне
+;Disable voice record signals
+;(c) Matr!x
+;Version: 2
+;PatchID: 1378
+;Details: https://patches.kibab.com/patches/details.php5?id=1378
+/*
+
+*/
+0C321C: DAA2462B CC00CC00
+0C34A0: DAA2462B CC00CC00
+0C3B36: DAA2462B CC00CC00
+0C3B72: DAA2462B CC00CC00
+6FD3BE: DAA2462B CC00CC00
+700578: DAA2462B CC00CC00
+
+;------------------------- end -------------------------
+

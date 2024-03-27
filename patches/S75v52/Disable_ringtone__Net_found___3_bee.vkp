@@ -1,0 +1,13 @@
+;S75v52
+;Отключить звучок "Сеть найдена"
+;Disable ringtone "Net found" (3*beep)
+;(c) avkiev
+;Version: 
+;PatchID: 8329
+;Details: https://patches.kibab.com/patches/details.php5?id=8329
+/*
+
+*/
+103430C: 5C03 FFFF
+;------------------------- end -------------------------
+

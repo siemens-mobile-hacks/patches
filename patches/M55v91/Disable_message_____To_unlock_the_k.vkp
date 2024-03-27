@@ -1,0 +1,14 @@
+;M55v91
+;Убрать сообщение "... Для выкл. нажм. и удержив. '#'"
+;Disable message "...To unlock the keyboard..."
+;(c) Ramil_
+;Version: 
+;PatchID: 4299
+;Details: https://patches.kibab.com/patches/details.php5?id=4299
+/*
+
+*/
+0D6198: DC59D4C80400D4D80600 46F714003D0DDAC8E2FF
+A8FFE2: FFFFFFFFFFFFFFFFFFFFFFFF DC59D4C80400D4D80600DB00
+;------------------------- end -------------------------
+

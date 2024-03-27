@@ -1,0 +1,15 @@
+;S75v47
+;Не запускать меню красной кнопки на ГЭ
+;Do not start red button menu on idle
+;(c) Visad
+;(r) (i)1nvisible
+;(p) Виктор89
+;Version: 
+;PatchID: 8629
+;Details: https://patches.kibab.com/patches/details.php5?id=8629
+/*
+
+*/
+34545a: A6F09AEE C046C046
+;------------------------- end -------------------------
+

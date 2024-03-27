@@ -1,0 +1,26 @@
+;CX70v56
+;Дополнение к таблице PIT
+;Addition to PIT-table
+;(c) 1nvisible
+;(r) avkiev
+;(p) me-at
+;Version: 1.1
+;PatchID: 1126
+;Details: https://patches.kibab.com/patches/details.php5?id=1126
+/*
+Теперь PIT-адреса картинок с номерами #1330(0x532)1429(0x595) можно разместить в свободной памяти (0xA0FD0050)
+
+Now you can assign PIT addresses to pics #1330(0x532)1429(0x595) in free memory (0xA0FD0050)
+
+*/
+0CB75B8: FFF7F5FF 18F322FD
+
+#pragma enable old_equal_ff
+0FD0000: 0A4B984207DC084B984204DBC01AC000
+0FD0010: 034BC01810BDE7F4C6FA024B1847C046
+0FD0020: 5000FDA0BD75CBA03205000095050000
+#pragma disable old_equal_ff
+
+093C428: 3105 9505 ; MaxPitNumber 1329->1429 (just for reference)
+;------------------------- end -------------------------
+

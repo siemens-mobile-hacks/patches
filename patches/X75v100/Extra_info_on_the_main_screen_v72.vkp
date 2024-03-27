@@ -1,0 +1,23 @@
+;X75v100
+;Дополнительная информация на главном экране
+;Extra info on the main screen
+;(c) avkiev, KreN
+;(r) SiNgle, 1nvisible
+;Version: 7.2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7167
+;PatchID: 6533
+;Details: https://patches.kibab.com/patches/details.php5?id=6533
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Extra_info_on_the_main_screen_v72.zip
+
+/*
+Заточка под NewSGold
+Несовместима с доп инфой v8 от avkiev`a также необходимо удалить ptc файл иначе будут глюки.
+Для работы патча необходимо заменить строку в библиотеке:
+03A0: 0x00000800   ; E8: Pic_Extra
+на вот эту
+03A0: 0x00000960   ; E8: Pic_Extra v7.2
+А также положить gpn из архива
+*/
+Качаем аттач
+;------------------------- end -------------------------
+

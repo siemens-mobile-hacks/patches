@@ -1,0 +1,14 @@
+;S75v42
+;Расширенный список вызовов из BoBaPack
+;Extended Calls List from BoBaPack
+;(c) BoBa
+;(p) RainMaker AKA Shadow®
+;Version: 
+;PatchID: 4942
+;Details: https://patches.kibab.com/patches/details.php5?id=4942
+/*
+
+*/
+03EC980: 316A5EA0 01FE06A0  ; sw42
+;------------------------- end -------------------------
+

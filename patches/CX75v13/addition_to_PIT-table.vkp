@@ -1,0 +1,28 @@
+;CX75v13
+;Дополнение к таблице PIT
+;Addition to PIT-table
+;(c) 1nvisible
+;(r) avkiev
+;(p) SMeeTBB
+;Version: 1.1
+;PatchID: 956
+;Details: https://patches.kibab.com/patches/details.php5?id=956
+/*
+RUS: Теперь PIT-адреса картинок с номерами #1324(0x52C)1423(0x58F) можно разместить в свободной памяти (0xA0FD0050)
+Известные проблемы:
+Пока что нельзя смотреть или редактировать эти картинки с помощью SPC3 © ACiD[mrp]\b@iLLi или Smelter © avkiev
+
+ENG: Now you can assign PIT addresses to pics #1324(0x52C)1423(0x58F) in free memory (0xA0FD0050)
+Known Problems:
+You can't yet view or edit these pics by means of SPC3 © ACiD[mrp]\b@iLLi or Smelter © avkiev
+*/
+800058: FFF7F5FF A1F4D2FB
+#pragma enable old_equal_ff
+4A1800: 0B4B984209DC094B984206DBC01A031C
+4A1810: 082673430348C01810BD5EF314FC024B
+4A1820: 1847C0465000FDA05D0080A057050000  
+4A1830: BA050000
+#pragma disable old_equal_ff
+04A13FC: 5705 BB05;MaxPitNumber 1367->1467 (just for reference)
+;------------------------- end -------------------------
+

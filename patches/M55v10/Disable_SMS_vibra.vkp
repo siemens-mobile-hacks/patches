@@ -1,0 +1,14 @@
+;M55v10
+;Отключить виброзвонок при получении SMS
+;Disable vibra when SMS received
+;(c) Matr!x
+;Version: 
+;PatchID: 1380
+;Details: https://patches.kibab.com/patches/details.php5?id=1380
+/*
+Если стоит патч Динамическая вибрация 1379, на SMS ставить Д/С в котором нет вибры
+*/
+0E8E8C: 11 2F
+0E8E8F: 22B655 A2142B
+;------------------------- end -------------------------
+

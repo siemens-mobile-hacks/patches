@@ -1,0 +1,16 @@
+;CX75v13
+;Убрать запятую между именем и фамилией в списке адресной
+;Remove "," between last name and first name
+;(c) SiNgle
+;(p) TAPAKAH
+;Version: 1.0
+;PatchID: 808
+;Details: https://patches.kibab.com/patches/details.php5?id=808
+/*
+RUS: Убирает запятую между именем и фамилией в алресной книге.
+
+ENG: Cleans a comma between a name and a surname in алресной to the book.
+*/
+05CD6C2: 57F0C4EC 00280028
+;------------------------- end -------------------------
+

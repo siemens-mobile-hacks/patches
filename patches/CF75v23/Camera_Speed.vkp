@@ -1,0 +1,15 @@
+;CF75v23
+;Camera Speed
+;Camera Speed
+;(c) SiNgle
+;Version: 
+;PatchID: 5394
+;Details: https://patches.kibab.com/patches/details.php5?id=5394
+/*
+
+*/
+;* &#209;&#234;&#238;&#240;&#238;&#241;&#242;&#252; &#234;&#224;&#236;&#229;&#240;&#251; ** Camera Speed * © SiNgle
+; Enviado por Bruno Oz
+0B056E4: 32 00 ; except S65
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;M75v23
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 2813
+;Details: https://patches.kibab.com/patches/details.php5?id=2813
+/*
+
+*/
+089AEDC: 02 01
+;------------------------- end -------------------------
+

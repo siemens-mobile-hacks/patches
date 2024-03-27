@@ -1,0 +1,15 @@
+;S55v20
+;Убрать запятую между фамилией и именем
+;Remove coma between first and last name
+;(c) SiNgle
+;Version: 
+;PatchID: 4772
+;Details: https://patches.kibab.com/patches/details.php5?id=4772
+/*
+Запятые пропадают в SMS!
+
+*/
+86608E: DA964020 CC00CC00 ; адресбук - список
+88169C: DA964020 CC00CC00 ; адресбук - подробно
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M75v5
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) BuG
+;Version: 
+;PatchID: 431
+;Details: https://patches.kibab.com/patches/details.php5?id=431
+/*
+Увеличивает скорость автоповтора клавиатуры
+*/
+07FC3D6: 56 20
+;------------------------- end -------------------------
+

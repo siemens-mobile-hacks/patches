@@ -1,0 +1,14 @@
+;C60v27
+;Разрешить_неправильные_e-mail_адреса_в_телефонной_книге
+;allow invalid e-mail addresses in phonebook
+;(c) Christ
+;Version: 
+;PatchID: 2055
+;Details: https://patches.kibab.com/patches/details.php5?id=2055
+/*
+Разрешить_неправильные_e-mail_адреса_в_телефонной_книге  
+*/
+3DE6DA: 2D09 0D09
+
+;------------------------- end -------------------------
+

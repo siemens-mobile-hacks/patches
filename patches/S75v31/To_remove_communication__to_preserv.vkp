@@ -1,0 +1,14 @@
+;S75v31
+;Убрать сообщение "Сохранить в:" после съёмки
+;To remove communication "to preserve into:" after the survey
+;(c) SiNgle
+;(p) Cypok
+;Version: 
+;PatchID: 2770
+;Details: https://patches.kibab.com/patches/details.php5?id=2770
+/*
+
+*/
+0589164: D1F050ED C046C046 
+;------------------------- end -------------------------
+

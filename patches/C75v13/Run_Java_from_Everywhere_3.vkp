@@ -1,0 +1,16 @@
+;C75v13
+;Запуск явы отовсюду
+;Run Java from Everywhere
+;(c) 1nvisible
+;(r) Beetles "1"
+;(p) WerewolF BlacK
+;Version: 3
+;PatchID: 3967
+;Details: https://patches.kibab.com/patches/details.php5?id=3967
+/*
+Позволяет запускать яву из любой папки
+*/
+771F34: 2500000A 000050E3
+
+;------------------------- end -------------------------
+

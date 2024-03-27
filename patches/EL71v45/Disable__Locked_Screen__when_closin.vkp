@@ -1,0 +1,13 @@
+;EL71v45
+;Disable "Locked Screen" when closing Slider
+;Disable "Locked Screen" when closing Slider
+;(c) benj9
+;Version: 
+;PatchID: 8019
+;Details: https://patches.kibab.com/patches/details.php5?id=8019
+/*
+
+*/
+05C41EC: 152819 982818
+;------------------------- end -------------------------
+

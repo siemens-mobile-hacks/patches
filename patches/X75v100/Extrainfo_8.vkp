@@ -1,0 +1,15 @@
+;X75v100
+;Дополнительная информация на главном экране
+;Extra info on the main screen
+;(c) avkiev
+;Version: 8
+;PatchID: 4945
+;Details: https://patches.kibab.com/patches/details.php5?id=4945
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Extrainfo_8.zip
+
+/*
+Обновление! Совместимость с загрузчиком эльфов 2.2
+*/
+;
+;------------------------- end -------------------------
+

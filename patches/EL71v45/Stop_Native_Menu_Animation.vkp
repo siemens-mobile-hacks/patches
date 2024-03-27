@@ -1,0 +1,27 @@
+;EL71v45
+;Отключение анимации в Native Menu
+;Stop Native Menu Animation
+;(c) sim_emrom
+;(p) Виктор89
+;Version: 
+;PatchID: 9281
+;Details: https://patches.kibab.com/patches/details.php5?id=9281
+/*
+Патч выключает анимацию пунктов Native Menu:
+- проще заменять картинки меню
+- выше скорость работы меню
+*/
+0873CEC: 8603 0000 ; Address Book
+0873D28: 7C03 0000 ; Calls
+0873D4C: 9A03 0000 ; Internet
+0873E28: 8103 0000 ; Camera
+0873DF4: A403 0000 ; Messages
+0873DCC: AE03 0000 ; Organiser
+0873E58: 9503 0000 ; Games
+0873D70: 9F03 0000 ; Media Player
+0873D9C: 7703 0000 ; Alarm Clock
+0873E8C: 8B03 0000 ; Others
+0873EC0: A903 0000 ; MyStuff
+0873EE8: B303 0000 ; Settings
+;------------------------- end -------------------------
+

@@ -1,0 +1,30 @@
+;CX75v25
+;Дополнительная Информация на Прогрессбарах
+;Extra Info on ProgressBars
+;(c) 1nvisible
+;(p) sempai
+;Version: 2av-MP
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=6413
+;PatchID: 5045
+;Details: https://patches.kibab.com/patches/details.php5?id=5045
+/*
+Показывает проценты на прогрессбарах, а также данные о принимаемых и передаваемых файлах
+
+обновить библиотеку функций!
+
+English:
+Shows percents on progressbars and info on files being sent/received
+
+update Function Library!
+
+*/
+04AD3C8: 24A12EA000000000 0xA0FC7D35,0xA0FC7D25
+04B89A0: 0000000000000000 0xA0FC7D35,0xA0FC7D25
+
+08ABB08: 216B000C4143E06A87F1C4EF 004FB847,0xA0FC7D51,C046C046
+08ABBC0: 0C20185E231C4BF7 004FB847,0xA0FC7DD9
+
+0FC7D4C: FFFFFFFF 0xA851D898
+
+;------------------------- end -------------------------
+

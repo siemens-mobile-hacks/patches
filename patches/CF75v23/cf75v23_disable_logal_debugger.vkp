@@ -1,0 +1,15 @@
+;CF75v23
+;Отключить LogAL-отладчик
+;Disable LogAL debugger
+;(c) benj9
+;(r) dimonp25
+;(p) NeverGone
+;Version: 
+;PatchID: 9953
+;Details: https://patches.kibab.com/patches/details.php5?id=9953
+/*
+пункт «LogAL» в меню разработчика и комбинация ### больше не будут работать!
+*/
+80C3A0: F0B5 7047
+;------------------------- end -------------------------
+

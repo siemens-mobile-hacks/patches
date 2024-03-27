@@ -1,0 +1,14 @@
+;SL75v52
+;Отключить звук "Сеть найдена"
+;Disable sound "Network found"
+;(c) avkiev
+;(p) dimonp25
+;Version: 
+;PatchID: 9782
+;Details: https://patches.kibab.com/patches/details.php5?id=9782
+/*
+
+*/
+1041420: 5C03 FFFF
+;------------------------- end -------------------------
+

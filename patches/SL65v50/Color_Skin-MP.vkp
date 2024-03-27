@@ -1,0 +1,19 @@
+;SL65v50
+;Цветовая Схема
+;ColorSkin
+;(c) benj9
+;Version: MP
+;PatchID: 1656
+;Details: https://patches.kibab.com/patches/details.php5?id=1656
+/*
+Настройки цвета (замена цветовым схемам :) )
+Данные записаны в виде RRGGBBTT. область значений RR, GG, BB: 0-0xFF, TT=прозрачность : 0-0x64
+English:
+overlay color settings. 
+data=RRGGBBTT. RR, GG, BB range: 0-0xFF, TT=transparency range: 0-0x64
+*/
+1149596: 8000 0847
+1149920: 0xA868BEE2 0xA0FDAE11
+0FDAE34: 0xFFFFFFFF 0xA868BEE2
+;------------------------- end -------------------------
+

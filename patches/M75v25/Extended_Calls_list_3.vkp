@@ -1,0 +1,22 @@
+;M75v25
+;Расширенный список вызовов
+;Extended Calls list
+;(c) BoBa
+;(p) Mikel
+;Version: 3-MP
+;PatchID: 4685
+;Details: https://patches.kibab.com/patches/details.php5?id=4685
+/*
+Жмем зеленую кнопку -> попадаем в меню "Набранные номера"
+Жмем красную кнопку -> попадаем в меню "Принятые номера"
+Жмем красную кнопку -> попадаем в меню "Неотвеченные номера"
+Жмем красную кнопку -> выход в режим готовности
+English:
+Green button -> "Calls dialed"
+Red -> "Calls missed"
+Red -> "Calls received"
+Red -> Ready
+*/
+49EC14: F7B058A0 0xA0FC8001
+;------------------------- end -------------------------
+

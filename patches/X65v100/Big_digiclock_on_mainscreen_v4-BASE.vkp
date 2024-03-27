@@ -1,0 +1,36 @@
+;X65v100
+;Большие цифровые часы на главном экране при залоченной клавиатуре
+;Big digital clock on mainscreen when keylocked
+;(c) avkiev
+;(r) arsh0r
+;Version: 4
+;PatchID: 1036
+;Details: https://patches.kibab.com/patches/details.php5?id=1036
+/*
+Концепция MP+FL
+Установите этот патч и врезку для своего телефона.
+*/
+#pragma enable old_equal_ff
+0FC1400: F1B53448FFF7FCFB3ED0FFF745F93868
+0FC1410: 002839D0F0780221084002D1FEF7FCFE
+0FC1420: 32D1301D011C0831FEF7EAFD0F247578
+0FC1430: 82B0211C2A1C0B1C6633101C24300090
+0FC1440: 0120019002984069FEF76EFE02B0317B
+0FC1450: 00F01EF8B078022809D0012803D07069
+0FC1460: C143716103D40B2000F019F8183C0C34
+0FC1470: 717B00F00DF8F0780121084004D0403C
+0FC1480: 1C35B17B00F004F8F1BC0D49884700BD
+0FC1490: 01B50A20FEF7C4FD00F001F800E002B5
+0FC14A0: FFF746F95A2D01D3FFF746F93A18201C
+0FC14B0: 291CFEF735FE18345A2D00D3103C01BD
+
+0FC14D0: 0xB1C2D3E4,0x0000AB02,0000000000000000,"\
+{patch=`Big Digital Clock` version=4 copyright=avkiev id=AB02 memory=21}\
+{1 slider Y range=62..89 v=73}\
+{2 o Colon `Blink`=0 `On`=1 `Off`=2}\
+{3.0 cb `Show seconds` v=1}\
+{3.1 cb `Show in unlock`}\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

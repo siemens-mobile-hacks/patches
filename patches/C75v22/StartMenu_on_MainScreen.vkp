@@ -1,0 +1,130 @@
+;C75v22
+;Меню пуск на главном экране
+;StartMenu on MainScreen
+;(c) KreN
+;(r) 1nvisible, benj9, KreN
+;(p) T!ck
+;Version: 2
+;PatchID: 3014
+;Details: https://patches.kibab.com/patches/details.php5?id=3014
+/*
+Это версия с исправлением для х75 - респект KreN.
+Меню можно запустить с помощью шортката PUSHTOTALK или настроить в мидлете запуск через красную кнопку.
+
+*/
+02CF086: 00286CD0D9F7E9F80028 C04600498847,0xA10DC053
+04A1704: 839332A0 0xA10DC0EB
+
++110000
+#pragma enable old_equal_ff
+0FCC000: 00B500F08CF807D0B078002804D0F4F7
+0FCC010: 43FB3868002800D100BDB26800207179
+0FCC020: F4F77EF800277279013230208019F179
+0FCC030: 7378013B0C24BB4200D1083433191C1D
+0FCC040: 00F091F8072FE7D01A30B57952190137
+0FCC050: EEE7FCB5012815D1F4F76EF9002811D1
+0FCC060: 00F05DF80DD0B1780222A85EF2783271
+0FCC070: F070002826D0002903D025280AD02628
+0FCC080: 0ED08942FCBC02F0D4EF0029F9D000F0
+0FCC090: 4BF812E07178082900D10939013104E0
+0FCC0A0: 7178002900D10931013971702436301D
+0FCC0B0: 316817A20132F4F7D7F80020F4F730F9
+0FCC0C0: 07B0B0BD292AE0D03D2ADED0012AD8D1
+0FCC0D0: 2321715CB3788F44C046D2E75A4002E0
+0FCC0E0: 00229A42E9D0B270E7E7FFB500F017F8
+0FCC0F0: 0CD0B078002802D10120B070FFBD0020
+0FCC100: 2221715C0029F8D100F00EF8FFBDC046
+0FCC110: FFB500F004F801D00020B070FFBDBFB5
+0FCC120: 4C48F4F76DFDBFBD00B57178002917D0
+0FCC130: 01398801FF300530801902789744C046
+0FCC140: 08E005E0083000230022F4F785F807E0
+0FCC150: 406804E009011EA04018F4F721F98047
+0FCC160: 0020B07000BDFFB590B00CA8B3790093
+0FCC170: 337FF4F719F90FAF109800F018F83860
+0FCC180: 3B1CC022707F0090B07F01900CA902A8
+0FCC190: F4F70EF91399149A02A8F4F70DF902A8
+0FCC1A0: F4F712F902A8F4F713F910B0FFBD0021
+0FCC1B0: 821C535A002B01D00231FAE749080180
+0FCC1C0: 7047
+
+0FCC1D0: "ELSE_ALARMCLOCK",00\
+"FLSH_MYOWNSTUFF",00\
+"JAVA_GAMES_MENU",00\
+"JAVA_APPLI_MENU",00\
+"FLSH_FLEXSOUNDS",00\
+"MESG_NEWEMS_VFO",00\
+"ELSE_CALCULATOR",00\
+"ELSE_REMOTESYNC",00
+
+0FCC250: E4D3C2B10BCD000101C00DA100000000,"\
+{patch=MenuPusk id=0100cd0b ver=2 cp=KreN}","\
+{tp mp}","\
+{0 o action standart=0 own=2 midlet=4}","\
+{4 a adress}","\
+{8 sf midlet mask=*.jar ml=55}","\
+{endtp}","\
+{sm `Pic&FontsSetup`}","\
+{5 sl `Y position` range=0..50 v=45}","\
+{6 b HeightPoint  range=12..18 v=14}","\
+{28 sl WidthPoint v=67}","\
+{7 b `space left` range=0..30 v=26}","\
+{8 i `pic background` v=513}","\
+{12 h FontColor ml=4 v=00000064}","\
+{16 h BackColor ml=4 v=00000000}","\
+{20 h SFontColor ml=4 v=FFFFFF64}","\
+{24 h SBackColor ml=4 v=0000FF64}","\
+{29 b FontSize v=7}","\
+{30 o FontType normal=0 accented=8}","\
+{endsm}","\
+\
+{sm PointsSetup}\
+{sm `1st item`}","\
+{260 usetp mp}","\
+{50 u string ml=11 v=`Будильник`}","\
+{endsm}","\
+\
+{sm `2nd item`}","\
+{324 usetp mp}","\
+{76 u string ml=11 v=`Мои Файлы`}","\
+{endsm}","\
+\
+{sm `3rd item`}","\
+{388 usetp mp}","\
+{102 u string ml=11 v=`Игрушки`}","\
+{endsm}","\
+\
+{sm `4th item`}","\
+{452 usetp mp}","\
+{128 u string ml=11 v=`Программы`}","\
+{endsm}","\
+\
+{sm `5th item`}","\
+{516 usetp mp}","\
+{154 u string ml=11 v=`Мелодии`}","\
+{endsm}","\
+\
+{sm `6th item`}","\
+{580 usetp mp}","\
+{180 u string ml=11 v=`Новое SMS`}","\
+{endsm}","\
+\
+{sm `7th item`}","\
+{644 usetp mp}","\
+{206 u string ml=11 v=`Калькулятор`}","\
+{endsm}","\
+\
+{sm `8th item`}","\
+{708 usetp mp}","\
+{232 u string ml=11 v=`Мастер`}","\
+{endsm}","\
+{endsm}\
+\
+{34 cb CloseOnRunButton}","\
+{35 o RedButton nothing=0 open=8 close=6 `open&close`=2}","\
+{36 ms timeclosemenu v=1100}",00
+#pragma disable old_equal_ff
+
+0FCC0C2: B0 F8 ; x75 fix
++0
+;------------------------- end -------------------------
+

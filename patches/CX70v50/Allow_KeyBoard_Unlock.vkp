@@ -1,0 +1,14 @@
+;CX70v50
+;Разрешить Разблокировку Клавиатуры Двойным Нажатием #
+;Allow KeyBoard Unlock by Double-Press of #
+;(c) 1nvisible
+;Version: 
+;PatchID: 3285
+;Details: https://patches.kibab.com/patches/details.php5?id=3285
+/*
+Долгое нажатие также работает
+English:Long-Press also works
+*/
+171EC0A: 21D1 C046
+;------------------------- end -------------------------
+

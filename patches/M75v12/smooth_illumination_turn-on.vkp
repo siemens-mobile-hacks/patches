@@ -1,0 +1,13 @@
+;M75v12
+;Плавное включение подсветки
+;Smooth illumination turn-on
+;(c) SiNgle
+;Version: 
+;PatchID: 598
+;Details: https://patches.kibab.com/patches/details.php5?id=598
+/*
+
+*/
+0857F66: 0022 664A
+;------------------------- end -------------------------
+

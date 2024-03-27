@@ -1,0 +1,52 @@
+;CF75v23
+;Позиционирование главного экрана
+;MainScreen positioning
+;(c) SiNgle, BuG
+;(r) KiRiK, arsh0r
+;Version: 2
+;PatchID: 4837
+;Details: https://patches.kibab.com/patches/details.php5?id=4837
+/*
+
+*/
+;Charge Indicator (Switched-Off Mode)
+02A9676: 10 5E ; background end Y (4A for C65\SL65)
+02A967C: 02 50 ; background start Y (3C for C65\SL65)
+02A967E: 61 33 ; background start X
+02A9680: 7C 50 ; background end X (49 for C65\SL65)
+02A9685: F047FB 280028 ; no background
+02A968E: 02 50 ; Y (3C for C65\SL65)
+02A9690: 61 33 ; X
+
+;Net
+02A972E: 10 5E ; background end Y для С65 заменить на 0E
+02A9732: 02 01 ; background start Y
+;02A9747: ???? ; background end X для С65 заменить на 1E
+;02A9747: ???? ; background start X
+02A973B: F0ECFA 280028 ; no background
+02A9744: 02 01 ; Y
+;02A9752: ???? ; X
+
+;Iconbar
+02A9A4A: 10 0F ; background end Y для С65 заменить на 0E
+02A9A4E: 02 01 ; background start Y
+02A9A50: 21 37 ; background start X для С65 заменить на 36
+02A9A52: 5F 75 ; background end X для С65 заменить на 74
+02A9A59: F05DF9 280028 ; no background
+02A9A84: 1F 35 ; X для С65 заменить на 34
+02A9A9E: 02 01 ; Y
+
+;Battery
+02A9B38: 10 1B ; background end Y
+02A9B3C: 02 0D ; background start Y
+02A9B3E: 7C 1E ; background end X для С65 заменить на 1D
+02A9B40: 61 01 ; background start X
+02A9B45: F0E7F8 280028 ; no background
+02A9B4E: 02 0D ; Y
+02A9B50: 61 01 ; X
+049F1E4: 08 12 ; Y - Provider name
+049F1F4: 1A 24 ; Y - Sub provider name
+02D2C92: 91 A0 ; Y - Time & Date для С65 заменить на 72
+
+;------------------------- end -------------------------
+

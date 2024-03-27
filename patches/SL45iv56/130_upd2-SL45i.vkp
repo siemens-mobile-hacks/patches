@@ -1,0 +1,63 @@
+;SL45iv56
+;BSI. Индикатор батарейки и уровня сигнала в цифрах
+;BSI. (Yet Another) Battery and Signal Indicator
+;(c) DeadMan, RizaPN
+;Version: 
+;PatchID: 1733
+;Details: https://patches.kibab.com/patches/details.php5?id=1733
+/*
+Применяйте только если вы не использовали другие патчи для главного экрана. 
+Некоторые патчи для главного экрана используют те же точки входа, 
+что може привести к конфликту... 
+
+Этот патч показывает цифрами уровень сигнала и напряжение батарейки на экране. 
+Лучше всего было поместить их рядом с оригинальными значками. 
+Я поместил индикатор уровня сигнала справа от изменённого значка 
+и напряжение батарейки слева от её значка. 
+Уровень сигнала написан в формате ABC (например: 073) 
+для обозначения уровня в -ABC дБ, и напряжение батарейки 
+в виде XYZ, для XYZ0 мВ, 
+Например 410 означает значение между 4100мВ - 4109мВ ... 
+
+v2->изменён адрес (конфликтовал с другими) 
+v2->использует значение из показний NetMonitor (для совместимости с патчем arsh0r'а)
+
+
+Created : July 15, 2004 
+Updated : Aug 20, 2004 (изменение адресов)
+
+Патч №130 (обновление 2) с http://patch.oslik.ru/SL45_RU
+*/
+;Показывать напряжение: 
+0x3B3A54: DAC1EC22 DAE4F04D 
+
+;Показывать уровень сигнала: 
+0x3B36EA: DAC1EC22 DAE4464E 
+
+;Напряжение показывается и при зарядке. 
+0x454F28: DAC1EC22 DAE4F04D 
+
+0x444DF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 26F84101CD262887BD0526F8EE4CCD21 
+0x444E00: FFFFFFFF 2885AD1F 
+
+;Позиция X значения напряжения (в оригинале=4A): 
+0x444E04: FFFFFFFF E6F94A00 
+
+0x444E08: FFFFFFFFFFFFFFFF E008D7400E00F2F4 
+0x444E10: FFFFFFFFFFFFFFFFFFFF E2398840DAC1EC2298C0 
+
+;Код шрифта (в оригинале=4): 
+0x444E1A: FFFF E042 
+
+0x444E1C: FFFFFFFF 8820E6FD 
+0x444E20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 063AE6FE3700008D88E08880DAC71E89 
+0x444E30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F0C9E00DE6FE1000E07FDAD658A30806 
+0x444E40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DB00FAC1EC2226F86001CDFB2884ADF9 
+
+;Позиция X уровня сигнала (в оригинале=D): 
+0x444E50: FFFF E0D9 
+
+0x444E52: FFFFFFFFFFFFFFFFFFFFFFFFFFFF E018D7400E00F2F48E1DE10906F4 
+0x444E60: FFFFFFFF E8030DD7 
+;------------------------- end -------------------------
+

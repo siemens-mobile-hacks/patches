@@ -1,0 +1,19 @@
+;S68v47
+;Мастер патч
+;Master patch
+;(c) avkiev
+;(r) 1nvisible, dimonp25,chaos
+;(p) den11111
+;Version: 14
+;PatchID: 7848
+;Details: https://patches.kibab.com/patches/details.php5?id=7848
+/*
+Также для работы нужно поставить АПИ из раздела X75v100.
+Но тока он будет работать с подправленной библой(смотрите чтобы было так:  0390: 0xA8D80010   ; E4: FreeRAM).
+*/
+02CDE3A: 0021 BEDF
+03EE588: 256031A0 910C06A0
+
+
+;------------------------- end -------------------------
+

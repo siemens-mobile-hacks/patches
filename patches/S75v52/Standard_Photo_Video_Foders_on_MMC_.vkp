@@ -1,0 +1,16 @@
+;S75v52
+;Замена стандартных папок для фото и видео с камеры на MMC
+;Standard Photo&Video Foders on MMC Change
+;(c) RainMaker AKA Shadow®
+;(p) KIBER-DEMON
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9327
+;PatchID: 8287
+;Details: https://patches.kibab.com/patches/details.php5?id=8287
+/*
+Замена стандартных папок для фото и видео с камеры на MMC.
+*/
+067283E: 0B00,'4:\\Pictures' 0900,'4:\\Картинки'
+067287A: 0900,'4:\\Videos' 0900,'4:\\Видео'
+;------------------------- end -------------------------
+

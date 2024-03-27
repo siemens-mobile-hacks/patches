@@ -1,0 +1,20 @@
+;S75v32
+;Перезагрузка вместо Клав. Заблок. в меню красной кнопки
+;Reboot instead of Keylock in Red Button Menu
+;(c) ThE TrIFoN
+;(r) avkiev
+;(p) _caine
+;Version: 
+;PatchID: 4665
+;Details: https://patches.kibab.com/patches/details.php5?id=4665
+/*
+При нажатии Клав. Заблок. в меню красной кнопки происходит перезагрузка телефона
+Не стирает настройки инета, убран popup "Клавиатура заблокирована" при перезагрузке.
+*/
+02F99C8: 21D1 0028
+037F4A6: C0F79CFF6DF0BEE8 B2F6B4EAC046C046
+
+13B12EC: CC210000 4B050000   ; Keylock => Reload
+13B12F0: CC210000 4B050000   ; Keylock => Reload
+;------------------------- end -------------------------
+

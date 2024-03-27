@@ -1,0 +1,23 @@
+;SL65v53
+;Мастер-Патч
+;Master-Patch
+;(c) 1nvisible
+;(r) avkiev,chaos,KiRiK,~Jhellico,benj9,KreN,empeka
+;(p) andrey_ua
+;Version: 3.1 b3
+;PatchID: 3593
+;Details: https://patches.kibab.com/patches/details.php5?id=3593
+/*
+
+*/
+083C238: 000050E30B00001A60408FE2 04E08FE204F01FE5E512FCA0
+0922BAC: 633B8EA0 0xA0FC0C51
+0922bb8: 2908000019080000 BD0A0000BD0A0000
+0922bc4: B9 BD
+0b214e8: 0C4C00921823201C 004B98471112FCA0
+1150ef8: A080022020706070 004DA8474912FCA0
+115185c: 192189014018C068 00490847C111FCA0 
+13d736c: 0D1CFFF7A5FE6E1C 004FB8479111FCA0
+
+;------------------------- end -------------------------
+

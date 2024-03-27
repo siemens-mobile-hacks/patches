@@ -1,0 +1,13 @@
+;C72v22
+;Отключить подсветку кнопок
+;Disable keypad light
+;(c) SiNgle
+;Version: 
+;PatchID: 5816
+;Details: https://patches.kibab.com/patches/details.php5?id=5816
+/*
+
+*/
+0B9B617: D5 24
+;------------------------- end -------------------------
+

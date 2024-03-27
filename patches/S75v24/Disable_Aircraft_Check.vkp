@@ -1,0 +1,14 @@
+;S75v24
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) SiNgle
+;Version: 
+;PatchID: 2166
+;Details: https://patches.kibab.com/patches/details.php5?id=2166
+/*
+
+*/
+0292D11: D0 E0
+
+;------------------------- end -------------------------
+

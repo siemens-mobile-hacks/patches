@@ -1,0 +1,13 @@
+;C55v24
+;Время работы подсветки до затухания
+;Operating time of illumination before attenuation
+;(c) Joenka
+;Version: 
+;PatchID: 4293
+;Details: https://patches.kibab.com/patches/details.php5?id=4293
+/*
+
+*/
+1281EA: B20C D900 ; где 00D9 - время горения подсветки D9h это примерно 1 секунда
+;------------------------- end -------------------------
+

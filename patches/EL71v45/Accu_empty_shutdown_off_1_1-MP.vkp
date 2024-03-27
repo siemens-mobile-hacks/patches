@@ -1,0 +1,15 @@
+;EL71v45
+;Не выключаться при разряженном аккумуляторе
+;Accu empty shutdown off
+;(c) benj9
+;(r) ThE TrIFoN
+;Version: 1.1-MP
+;PatchID: 7663
+;Details: https://patches.kibab.com/patches/details.php5?id=7663
+/*
+Должен быть включен в мастер мидлете, не используйте очень часто, может убить аккумулятор
+*/
+01A4490: A5960EEA AE5CFBEA
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;SL45iv56
+;Поддержка MultiMedia карт v02
+;Add support of Kingmax v02 MMC
+;(c) mamaich
+;Version: 
+;PatchID: 336
+;Details: https://patches.kibab.com/patches/details.php5?id=336
+/*
+Этот патч заставляет телефон понимать MMC-карты, которые 
+раньше им не воспринимались. 
+
+
+*/
+302FFA: 3D1B CC00 
+;------------------------- end -------------------------
+

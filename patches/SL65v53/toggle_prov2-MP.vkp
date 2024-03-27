@@ -1,0 +1,16 @@
+;SL65v53
+;Переключение между патчами замены имени оператора
+;Toggle provider string patches
+;(c) benj9
+;(p) TicK
+;Version: 2-MP
+;PatchID: 5091
+;Details: https://patches.kibab.com/patches/details.php5?id=5091
+/*
+Моментально переключает патчи "miniGPS" и "Динамическая замена имени оператора"
+для тех, кому не нравится аварийное отключение в патче "miniGPS"
+
+*/
+1660390: 0xA0B4C223 0xA0FC2CE1
+;------------------------- end -------------------------
+

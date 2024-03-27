@@ -1,0 +1,15 @@
+;A52v9
+;Запретить набор 112 при заблокированной клавиатуре
+;Disable 112 Input In Locked Screen
+;(c) Delirium
+;Version: 
+;PatchID: 4375
+;Details: https://patches.kibab.com/patches/details.php5?id=4375
+/*
+
+*/
+03BE2A: 2D4C CC00
+03BE42: 2D40 CC00
+03BE5A: 2D34 CC00
+;------------------------- end -------------------------
+

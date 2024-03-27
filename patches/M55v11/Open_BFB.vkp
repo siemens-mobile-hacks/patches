@@ -1,0 +1,14 @@
+;M55v11
+;Open BFB
+;Open BFB
+;(c) RizaPN
+;(p) AlexSid
+;Version: 
+;PatchID: 5260
+;Details: https://patches.kibab.com/patches/details.php5?id=5260
+/*
+Позволяет работать с Sensors Tool, Siemens Screenshot
+*/
+7E6918: 6E 58
+;------------------------- end -------------------------
+

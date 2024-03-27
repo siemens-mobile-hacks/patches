@@ -1,0 +1,23 @@
+;CX75v25
+;Отключение анимации в Native Menu
+;Stop Native Menu Animation
+;(c) sim_emrom
+;(r) Evgr
+;(p) serega65
+;Version: 
+;PatchID: 10151
+;Details: https://patches.kibab.com/patches/details.php5?id=10151
+/*
+
+*/
+04A99C4: 8C 00 ;Address Book
+04A99E8: 9A 00 ;Calls
+04A9A04: BC 00 ;Internet
+04A9A20: 7E 00 ;Organiser 
+04A9A40: 6B 00 ;Messages
+04A9A78: 34 00 ;Camera
+04A9A94: 56 00 ;Extras
+04A9AB8: 48 00 ;My stuff
+04A9ADC: B1 00 ;Setup
+;------------------------- end -------------------------
+

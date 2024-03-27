@@ -1,0 +1,16 @@
+;CX75v23
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) Bennie
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1811
+;Details: https://patches.kibab.com/patches/details.php5?id=1811
+/*
+
+*/
+02C68A5: D1 E0
+
+;------------------------- end -------------------------
+

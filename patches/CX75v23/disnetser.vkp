@@ -1,0 +1,15 @@
+;CX75v23
+;Отключить надпись "Поиск сети"
+;Disable displaying "netsearch"
+;(c) arsh0r
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1804
+;Details: https://patches.kibab.com/patches/details.php5?id=1804
+/*
+
+*/
+02CF866: 6B49 04E0 ; screensaver
+;------------------------- end -------------------------
+

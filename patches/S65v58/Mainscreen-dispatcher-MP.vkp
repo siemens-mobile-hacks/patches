@@ -1,0 +1,16 @@
+;S65v58
+;Диспатчер главного экрана
+;Mainscreen-dispatcher
+;(c) avkiev
+;(p) Merzotnuk
+;Version: 3.1
+;PatchID: 6047
+;Details: https://patches.kibab.com/patches/details.php5?id=6047
+/*
+Отмените патч ExtraInfo7.1 из за него возможны некоторые дефеты. тем более что теперь есть ExtraInfo7.2.dis или еще лучше TextInfo1.2.dis :)
+*/
+1698BD4: 261C002D05900490 004FB847013EFCA0
+
+
+;------------------------- end -------------------------
+

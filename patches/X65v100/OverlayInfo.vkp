@@ -1,0 +1,25 @@
+;X65v100
+;OverlayInfo
+;OverlayInfo
+;(c) benj9
+;Version: 0.2
+;PatchID: 2851
+;Details: https://patches.kibab.com/patches/details.php5?id=2851
+/*
+enable any devmenu-overlay setting. it's overwritten by cpu-load 
+and only shown if load is higher than setting
+*/
+#pragma enable old_equal_ff
+0FDDD00: 4F766C6179447570312C62656E6A3900
+0FDDD10: 6EB5041C1348E2F773FF10D070B4E2F7
+0FDDD20: E3FA70BC7778B84203DA216800220A80
+0FDDD30: 08E0021C06A1201CE2F7E2FB02E0201C
+0FDDD40: 054FB847201C054FB847EEBC04373847
+0FDDD50: 2530336420000000
+0FDDD60: E4D3C2B1CBCC00000000000000000000
+0FDDD70: "{patch=OverlayInfo ver=0.2 cp=benj9 id=CCCB}","\
+show only at more than","\
+{1 b `cpu load %` v=90}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

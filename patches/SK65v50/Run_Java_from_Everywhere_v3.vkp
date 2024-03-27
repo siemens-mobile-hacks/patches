@@ -1,0 +1,16 @@
+;SK65v50
+;Запуск явы отовсюду v3
+;Run Java from Everywhere v3
+;(c) 1nvisible
+;(r) Zl0d, Kamikadze!
+;Version: 
+;PatchID: 3675
+;Details: https://patches.kibab.com/patches/details.php5?id=3675
+/*
+Ниче переименовывать не надо. 
+No additional actions needed. 
+
+*/
+06EABC8: 2500000A 000050E3
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;EL71v45
+;Изменить длину строки набора номера, при которой строка сдвигается вверх
+;Change dial-up number string length for string shift-up
+;(c) Evgr
+;(p) Faust
+;Version: 
+;PatchID: 9444
+;Details: https://patches.kibab.com/patches/details.php5?id=9444
+/*
+
+*/
+06651CE: 08 0ixx ; первый сдвиг при числе цифр xx / first shift at xx digits
+06651D6: 10 0iyy ; второй сдвиг при числе цифр yy=2*xx / second shift at yy=2*xx digits
+06651DE: 18 0izz ; третий сдвиг при числе цифр zz=3*xx / third shift at zz=3*xx digits
+;------------------------- end -------------------------
+

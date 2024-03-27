@@ -1,0 +1,13 @@
+;S45iv4
+;Виброзвонок_при_зарядке
+;Vibrozvonok with the charging
+;(c) Lalo
+;Version: 
+;PatchID: 847
+;Details: https://patches.kibab.com/patches/details.php5?id=847
+/*
+только Fullflash с289
+*/
+2DC146: 8A88 0D01
+;------------------------- end -------------------------
+

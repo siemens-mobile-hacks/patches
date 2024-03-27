@@ -1,0 +1,21 @@
+;EL71v45
+;Перезагрузка вместо Выкл. звуки в меню красной кнопки
+;Reload Instead Of RingtonesOff In RedButtonMenu
+;(c) ThE TrIFoN
+;(r) -=PaScaL=-
+;(p) 1allen
+;Version: 1.1
+;PatchID: 7944
+;Details: https://patches.kibab.com/patches/details.php5?id=7944
+/*
+
+*/
+070FB1A: FFF7A1FF 3AF60EEA
+
+070FB88: B620 4B05 ; Change TextID <Ringtones off -> Reload> ; (c)kirik64
+
+066D534: 38D1 0028 ; принудительный запуск помощника, чтобы не стирались настроики интернета
+
+070F66C: EFF0DCED C046C046 ;Не отображать окно "Все звуки выкл."
+;------------------------- end -------------------------
+

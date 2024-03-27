@@ -1,0 +1,24 @@
+;EL71v45
+;Исправление ошибок раздела OPWV Version
+;Dev menu OPWV Version fix
+;(c) Zl0d
+;(p) Visad
+;Version: 
+;PatchID: 8127
+;Details: https://patches.kibab.com/patches/details.php5?id=8127
+/*
+
+*/
+245560: "19" "35" 
+2455E2: "19" "35" 
+2455F2: "4" "2" 
+2454A2: "18" "13" 
+
+23C89A: "20" "05" 
+23C894: 302720 303027
+23C894: "00" "-3" 
+
+2456A3: "Version info" "> Version < "
+2456C0: "FFS info" "> FFS < "
+;------------------------- end -------------------------
+

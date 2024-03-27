@@ -1,0 +1,13 @@
+;SL45iv56
+;Убрать тишину в начале звонка
+;No silence at begin of ringing
+;(c) lbuczko
+;Version: 
+;PatchID: 2646
+;Details: https://patches.kibab.com/patches/details.php5?id=2646
+/*
+
+*/
+22ED72: FD01 CC00
+;------------------------- end -------------------------
+

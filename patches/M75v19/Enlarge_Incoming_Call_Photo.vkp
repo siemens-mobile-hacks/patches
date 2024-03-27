@@ -1,0 +1,13 @@
+;M75v19
+;Увеличить фото при входящем звонке
+;Enlarge Incoming Call Photo
+;(c) SiNgle
+;Version: 
+;PatchID: 2325
+;Details: https://patches.kibab.com/patches/details.php5?id=2325
+/*
+
+*/
+051891E: 052104 002100
+;------------------------- end -------------------------
+

@@ -1,0 +1,27 @@
+;A50v12
+;Зеленая кнопка - Циклическая смена языка ввода при наборе SMS
+;Green button - Cyrcle changing input language when SMS writing
+;(c) Ramil_
+;Version: 
+;PatchID: 3145
+;Details: https://patches.kibab.com/patches/details.php5?id=3145
+/*
+Зелёная кнопка при наборе SMS - смена языка: Русский -> English или English -> Русский 
+*/
+24C096: B80B F401 ;время показа сообщения: "Язык ввода: -", в мс
+2AFFDE: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7402D00F2FC6A3A48C02D02E00C0D02
+2AFFEE: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC1100D7402D00F6FC6A3ADAF4FEB6
+2AFFFE: FFFF DB00
+30554B: CD8A03 EADEFF
+34B352: CA00 DAF4
+34B796: CB DB
+
+;Дополнение к патчу *** http://www.Циклическая_смена_языка_ввода_при_наборе_sms/ ***
+;A50v12 c Broken Brain
+;Заменить или убрать в сообщении о выбранном языке надпись "Язык ввода:", будет просто "Русский" или "English"
+34B73C: 9D07 000E; или заменить на любую другую строчку, например 9000 - "Вкл."(0090 - string 144)
+;*** www.Отключение_сервисного_сигнала_(короткий_пип/short_pip)_
+;Этот сигнал сопровождает большую часть сообщений и ошибок
+30F460: E03C DB00
+;------------------------- end -------------------------
+

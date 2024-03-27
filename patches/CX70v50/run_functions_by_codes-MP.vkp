@@ -1,0 +1,14 @@
+;CX70v50
+;Запуск функций с помощью *# кодов
+;Running functions with *# codes
+;(c) empeka
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1272
+;PatchID: 1197
+;Details: https://patches.kibab.com/patches/details.php5?id=1197
+/*
+Врезка к патчу 1194
+*/
+1717A24: 0655021951700522 004B9847,0xA0FC3501 ; CX70v50
+;------------------------- end -------------------------
+

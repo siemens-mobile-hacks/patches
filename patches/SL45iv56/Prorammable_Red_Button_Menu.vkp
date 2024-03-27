@@ -1,0 +1,33 @@
+;SL45iv56
+;(Програмируемое) меню Красной кнопки
+;(Prorammable) Red Button Menu
+;(c) abomin
+;(r) RizaPN
+;Version: 2
+;PatchID: 2067
+;Details: https://patches.kibab.com/patches/details.php5?id=2067
+/*
+Этот патч добавляет новое меню для запуска его коротким нажатием красной кнопки 
+при обычном экране. Теперь длинное нажатие на красную кнопку не выключает 
+телефон, так что не забывайте добавлять новый пункт меню "Выключить" с 
+точкой входа c24a2c (или e0d560 если используете патч "Switch off with confirmation" ("Выключение с подтверждением") ). 
+Пункт меню устанавливается в [Интернет][Избранное] [URL] со 
+ВТОРОГО пункта. 
+Формат данных пункта меню - тот же что и в патче FAV: 
+SSS.AAAAAA, где SSS - 3 цифры ID строки для пункта меню, 
+and AAAAAA - 6 цифр, точка входа для этого пункта. 
+Поместите один пробел между пунктами меню. 
+
+
+Release: 28.03.2005 
+
+
+English: Menu item is programmable through [Internet][Favorites] [URL] from 
+the SECOND entry.
+*/
+0x3B0686: EA20F607 FAE0A0D5 
+
+0x40D5A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D02FADB8A06E6F4EB13DAE4F074FADB 
+0x40D5B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F607FFFFFFFFFFFFFFFFFFFFFFFFFFFF 
+;------------------------- end -------------------------
+

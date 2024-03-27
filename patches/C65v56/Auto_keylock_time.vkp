@@ -1,0 +1,13 @@
+;C65v56
+;Изменение времени автоблокировки клавиш
+;Auto keylock time
+;(c) SiNgle
+;Version: 
+;PatchID: 3794
+;Details: https://patches.kibab.com/patches/details.php5?id=3794
+/*
+
+*/
+16F0120: C832 7017
+;------------------------- end -------------------------
+

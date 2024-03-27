@@ -1,0 +1,13 @@
+;S55v20
+;Изменение звука снимающей камеры
+;Chage camera sound
+;(c) avkiev
+;Version: 
+;PatchID: 5065
+;Details: https://patches.kibab.com/patches/details.php5?id=5065
+/*
+
+*/
+42BBC0: 7E XX ; XX - любой звучок из списка в Smelter
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;M65v58
+;Адаптация при звонке в стиле М75
+;M75 call animation
+;(c) cest84
+;Version: 3.2
+;PatchID: 944
+;Details: https://patches.kibab.com/patches/details.php5?id=944
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=m65v58&f=v_stile_M75_v3_2.rar
+
+/*
+
+*/
+;Пожалуйста, скачайте прикреплённый файл.
+;------------------------- end -------------------------
+

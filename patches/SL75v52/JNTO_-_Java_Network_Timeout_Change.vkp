@@ -1,0 +1,16 @@
+;SL75v52
+;JNTO - Изменение таймаута соединения в Джаве
+;JNTO - Java Network Timeout Change
+;(c) Rst7/CBSIE
+;(p) ferro
+;Version: 
+;PatchID: 7645
+;Details: https://patches.kibab.com/patches/details.php5?id=7645
+/*
+
+*/
+09F8bfc: 0010A0E1 401AA0E3
+
+
+;------------------------- end -------------------------
+

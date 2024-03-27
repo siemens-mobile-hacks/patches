@@ -1,0 +1,15 @@
+;S75v52
+;Изменение шрифта заголовков
+;Change Headers Font
+;(c) Evgr
+;(p) dimonp25
+;Version: 
+;PatchID: 9356
+;Details: https://patches.kibab.com/patches/details.php5?id=9356
+/*
+
+*/
+0C0097c: 05 0C ;мелкий жирный
+
+;------------------------- end -------------------------
+

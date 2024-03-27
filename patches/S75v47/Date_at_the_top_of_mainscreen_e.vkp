@@ -1,0 +1,28 @@
+;S75v47
+;Дата вверху на главном экране в виде "Чт, 20 Апр"
+;Date at the top of mainscreen as "Thu, 20 Apr"
+;(c) avkiev
+;Version: 11
+;PatchID: 7433
+;Details: https://patches.kibab.com/patches/details.php5?id=7433
+/*
+Отвязный патч :D
+То бишь - отвязанный от МП...
+Для тех, кто не любит МП *bl*
+*/
+0901C50: FEF7A5FC231C2A1C 004B9847013A06A0      ; S75v47
+
++0063A00
+#pragma enable old_equal_ff
+00: 01B545783468023409BC01B4B4DFB5DF
+10: 0D3000F01DF820BC69790A20B8DF3030
+20: 3031202323806080A180E38008342879
+30: 00F00EF83368E41A6408013C1C807FBD
+40: 01BCB4DF231C2A1C301C02BC04310847
+50: 00B5011CC7DFE5804018211C07DFA418
+60: 00BD
+#pragma disable old_equal_ff
++0
+
+;------------------------- end -------------------------
+

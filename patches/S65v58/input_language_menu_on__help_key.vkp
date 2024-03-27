@@ -1,0 +1,26 @@
+;S65v58
+;Меню выбора языка ввода при нажатии Help (Инф. Т9)
+;Input language menu on Help key (Т9 info)
+;(c) SiNgle
+;(p) KiRiK
+;Version: 1.0
+;PatchID: 819
+;Details: https://patches.kibab.com/patches/details.php5?id=819
+/*
+Меню выбора языка на левой софт клавише вместо справки в некоторых местах - MMS, E-Mail, заметки, SMS
+*/
+09E36AE: 784900227848 18F787F880BD ; MMS
+0AC6512: 81F701FE 35F655F9 ; E-mail
+0AA6A7A: 7BF708EF 54F6A1FE ; Notes (заметки)
+0A48226: FFF777FF B3F6CBFA ; SMS
+
+;Change Left SoftKey Help->Language (Text ID)
+;Изменить левую софт-клавишу Справка->Язык
+;(c)KiRiK S65v58
+
+0A36964: 75 46 ; MMS
+0B21234: 75 46 ; SMS
+0B27FB8: 75 46 ; Notes (заметки)
+0B2A5D8: 75 46 ; E-mail
+;------------------------- end -------------------------
+

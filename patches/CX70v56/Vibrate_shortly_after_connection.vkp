@@ -1,0 +1,24 @@
+;CX70v56
+;Вибра в момент начала разговора
+;Vibrate shortly after connection
+;(c) SiNgle
+;(p) vmaxy202
+;Version: 1.2
+;PatchID: 706
+;Details: https://patches.kibab.com/patches/details.php5?id=706
+/*
+Режим включается одновременно с галкой в Меню-2-5-5-4 или 2-5-4-3 (Авт.Индикац.)  >>> При входящих не вибрирует <<<
+*/
+171AA0E: 18F0C0E90028 002821F076EC
+
+#pragma enable old_equal_ff
+173C300: 00402DE9FF3F2DE90FE0A0E144F09FE5
+173C310: 000050E30900001A0100A0E30FE0A0E1
+173C320: 34F09FE5020050E30400001A2F00A0E3
+173C330: 0210A0E30120A0E30FE0A0E11CF09FE5
+173C340: 0FE0A0E118F09FE5000050E3FF3FBDE8
+173C350: 0040BDE80CF09FE59BCEB9A06B9D25A1
+173C360: 249C95A027B4B7A015AA71A1
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

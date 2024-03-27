@@ -1,0 +1,14 @@
+;CF75v23
+;Плавный скроллинг длинных названий и имен
+;Smooth scrolling of long names
+;(c) SiNgle
+;Version: 
+;PatchID: 4851
+;Details: https://patches.kibab.com/patches/details.php5?id=4851
+/*
+
+*/
+049C0A8: D007 1202 ; delay before start
+049C0AC: 2C01 2A00 ; scrolling speed
+;------------------------- end -------------------------
+

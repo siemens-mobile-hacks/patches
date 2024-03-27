@@ -1,0 +1,58 @@
+;CX75v25
+;Время работы телефона
+;Uptime stats
+;(c) benj9
+;(r) ~Jhellico
+;(p) sempai
+;Version: 2
+;PatchID: 6143
+;Details: https://patches.kibab.com/patches/details.php5?id=6143
+/*
+При выключении выводит сообщение о времени работы телефона
+Возможен непосредственный вызов по адресу A0FDE02D
++ GetLPFix для правильного отображения информации
+English:
+Shows a short message with session duration at shutdown.
+Will be also launchable directly by keysequencer by call thumb: A0FDE02D
++ GetLPFix for correct display of info
+
+*/
+07D82D4: 0022009200AB0420 004A9047,0xA0FDE001  ;E1
+0A9A134: 0010A0E30000A0E3 04F01FE5,0xA0FDE019  ;E2
+
+#pragma enable old_equal_ff
+0FDE000: 1F4A1068002800D11360002200926B46
+0FDE010: 042072460432104700B500F007F80021
+0FDE020: 0020184FB84704BC04321047FFB5E1F7
+0FDE030: EFFF992822D0A4B084B06846124A9047
+0FDE040: 04B00F4D2E68991B1048E1F7E9FF061C
+0FDE050: 0F48E1F7E5FF051C3C20E1F7E1FF321C
+0FDE060: 2B1C009001910BA110A8051CE2F720F8
+0FDE070: 0120291C0022E2F7FFF824B0FFBDFFFF
+0FDE080: 0xA8000208,0xA0833550,0xA0823DE0,80510100 ; A, B, C, -
+0FDE090: 100E0000557074696D65202569640D25
+0FDE0A0: 3032693A253032693A2530326900
+#pragma disable old_equal_ff
+
+/*
+Port info:
+; E1 = 041C01A8????????0022009200AB0420 + 8
+; E2 = 0010A0E30000A0E3????????08402DE9
+; A - 4 bytes free ram
+; B = 04E02DE514D04DE20020A0E3 (Reload)
+; C = F8402DE980639FE50050A0E1
+*/
+;------------------------- end -------------------------
+
+;CX75v25
+;GetLP
+0A85A70: 2870311C201C55F2F4EE 004A9047,0xA0FDE0B1,C046
+#pragma enable old_equal_ff
+0FDE0B0: 00B5A8210906A14203D8211C40BC103E
+0FDE0C0: 304723202870311C201C024EB04740BC
+0FDE0D0: 04363047,0xA0820B99
+#pragma disable old_equal_ff
+0FDE0BE: 10 0E   ; if address aligned to 4
+
+;------------------------- end -------------------------
+

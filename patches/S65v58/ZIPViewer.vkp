@@ -1,0 +1,16 @@
+;S65v58
+;ZIPViewer
+;ZIPViewer
+;(c) MaX6, DJ
+;Version: 1
+;PatchID: 3730
+;Details: https://patches.kibab.com/patches/details.php5?id=3730
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s65v58&f=ZIPViewer.zip
+
+/*
+Заменяет формат PDF на ZIP! Устанавливаем приложеный к патчу файл ZIPViewer.jar в приложения, и после этого будут открываться файлы с расширением .zip! Графику для этого патча можно взять в "графика для системного"!
+*/
+A2633D: 506466 5A4950
+A263A4: 706466 7A6970
+;------------------------- end -------------------------
+

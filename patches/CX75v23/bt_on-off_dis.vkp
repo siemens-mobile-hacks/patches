@@ -1,0 +1,13 @@
+;CX75v23
+;Отключить сообщение Bluetooth вкл/выкл
+;Disable Bluetooth on/off Message
+;(c) arsh0r
+;Version: 
+;PatchID: 1842
+;Details: https://patches.kibab.com/patches/details.php5?id=1842
+/*
+
+*/
+0326AE6: 78F1 80BD ; S/SK65
+;------------------------- end -------------------------
+

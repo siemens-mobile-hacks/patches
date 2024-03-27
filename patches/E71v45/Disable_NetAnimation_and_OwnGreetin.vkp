@@ -1,0 +1,15 @@
+;E71v45
+;Отключить анимацию поиска сети и свое приветствие
+;Disable NetAnimation or OwnGreeting
+;(c) benj9
+;(p) Evgr
+;Version: 2.0
+;PatchID: 10352
+;Details: https://patches.kibab.com/patches/details.php5?id=10352
+/*
+
+*/
+066B2A3: 1C 21
+066B3A9: 1C 21
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;SL75v52
+;Ускоренный показ длинных названий
+;Smooth scrolling of long names
+;(c) SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 7637
+;Details: https://patches.kibab.com/patches/details.php5?id=7637
+/*
+
+*/
+68f630: D00700002C01 120200002A00
+C07c04: D00700002C01 120200002A00
+
+;------------------------- end -------------------------
+

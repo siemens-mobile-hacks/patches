@@ -1,0 +1,13 @@
+;SL65v53
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 5261
+;Details: https://patches.kibab.com/patches/details.php5?id=5261
+/*
+
+*/
+115077E: 56 20
+;------------------------- end -------------------------
+

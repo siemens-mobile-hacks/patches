@@ -1,0 +1,31 @@
+;SL45iv56
+;Base of mainscreen patches
+;Base of mainscreen patches
+;(c) GoLL@B
+;(r) rc-flitzer
+;Version: 
+;PatchID: 2666
+;Details: https://patches.kibab.com/patches/details.php5?id=2666
+/*
+English: Patch works on another epoint and it`s better in my opinion. It`s not 
+antenna indicator nor battery indicator so patches works with this base 
+don`t flash when we don`t have signal or our battery is empty.
+
+
+Release: 3 March 2006
+*/
+0x3B3A1E: 46F8FFFF DAE090DB
+
+40DB90: FFFFFFFF CC00CC00
+40DB94: FFFFFFFF CC00CC00
+40DB98: FFFFFFFF CC00CC00
+40DB9C: FFFFFFFF CC00CC00
+40DBA0: FFFFFFFF CC00CC00
+40DBA4: FFFFFFFF CC00CC00
+40DBA8: FFFFFFFF CC00CC00
+40DBAC: FFFFFFFF CC00CC00
+40DBB0: FFFF DB00
+
+;CC00CC00 should be changed on yours epoints with patches.
+;------------------------- end -------------------------
+

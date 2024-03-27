@@ -1,0 +1,22 @@
+;SL45iv56
+;AFD. Быстрое удаление напоминаний
+;AFD. Appointment's Fast Delete
+;(c) RizaPN
+;Version: 
+;PatchID: 1870
+;Details: https://patches.kibab.com/patches/details.php5?id=1870
+/*
+Меняет кнопку "ОК" при просмотре напоминания на "Удалить".
+
+По причине лажавости функции удаления напоминалки, 
+после ее удаления Вас будет выкидывать к пункту "Новая запись".
+
+Патч №167 с http://patch.oslik.ru/SL45_RU
+
+English: Modify "OK" button when view Appointment details to become "Delete"
+*/
+0x1A2BF4: EA 7C 
+0x3D1CBA: EA20501D46FC 3D02E0EC0D41 
+0x3D1CC0: 2300EA20501D 46FC23002D45 
+;------------------------- end -------------------------
+

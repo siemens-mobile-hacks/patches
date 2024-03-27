@@ -1,0 +1,21 @@
+;C72v22
+;Изменить высоту и положение области строки с провайдером в режиме скринсейвера "Экономия энергии"  
+;Change height and position of provider line in Energy saving mode of Screensaver  
+;(c) Evgr 
+;Version: 1
+;PatchID: 10273
+;Details: https://patches.kibab.com/patches/details.php5?id=10273
+/*
+по всему получается, патч только для телефонов с дисплеем DisplayID(1,54): Philips Leadis LDS183
+*/
+; DisplayID(1,54): Philips Leadis LDS183
+; at screensaver startup
+11C5FEC: 33 33 ; position of upper boundary of provider line from top of screen 
+11C6000: 47 47 ; position of lower boundary of provider line from top of screen
+
+; at screensaver refresh
+11C5920: 33 33 ; position of upper boundary of provider line from top of screen 
+11C5934: 47 47 ; position of lower boundary of provider line from top of screen
+
+;------------------------- end -------------------------
+

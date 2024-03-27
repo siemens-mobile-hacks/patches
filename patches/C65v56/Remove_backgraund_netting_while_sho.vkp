@@ -1,0 +1,13 @@
+;C65v56
+;Убрать сетку с бэкграунда при прорисовке окошек
+;Remove backgraund netting while showing MsgBoxes
+;(c) SiNgle
+;Version: 
+;PatchID: 3760
+;Details: https://patches.kibab.com/patches/details.php5?id=3760
+/*
+
+*/
+0C8D5B0: 55 00
+;------------------------- end -------------------------
+

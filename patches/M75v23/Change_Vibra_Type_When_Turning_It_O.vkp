@@ -1,0 +1,19 @@
+;M75v23
+;Изменение типа вибры при ее включении через горячую клавишу
+;Change Vibra Type When Turning It On With HotKey
+;(c) 1nvisible
+;Version: 
+;PatchID: 2826
+;Details: https://patches.kibab.com/patches/details.php5?id=2826
+/*
+
+*/
+;00 - Standard
+;01 - Helicopter
+;02 - UFO
+;03 - Shock
+;04 - Mosquito
+;05 - Train
+03269BA: 00 NN
+;------------------------- end -------------------------
+

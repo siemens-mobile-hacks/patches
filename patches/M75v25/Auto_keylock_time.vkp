@@ -1,0 +1,13 @@
+;M75v25
+;Изменение времени автоблокировки клавиш
+;Auto keylock time
+;(c) SiNgle
+;Version: 
+;PatchID: 4098
+;Details: https://patches.kibab.com/patches/details.php5?id=4098
+/*
+
+*/
+02CD0A0: C832 7017
+;------------------------- end -------------------------
+

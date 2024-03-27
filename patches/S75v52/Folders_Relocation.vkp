@@ -1,0 +1,32 @@
+;S75v52
+;Перенос папок
+;Folders Relocation
+;(c) 1nvisible
+;(p) Vedan
+;Version: 
+;PatchID: 8372
+;Details: https://patches.kibab.com/patches/details.php5?id=8372
+/*
+
+*/
+# Conversations
+# 0->1 
+6726A6: 30 31 ;\  
+6726C8: 30 31 ;- v47
+6726D4: 30 31 ;/
+
+# Tmp
+# 0->2
+672664: 30 32 ;- v47 
+
+# Themes
+# 0->4
+6720F8: 30 34 ;\ 
+67210C: 30 34 ;- v47 
+672118: 30 34 ;/
+
+# Active Theme
+# 0->2
+67212E: 30 32 ;- v47
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;M75v19
+;Запуск функций с помощью *# кодов
+;Running functions with *# codes
+;(c) empeka
+;(p) Kibab
+;Version: 2.1-MP
+;PatchID: 2547
+;Details: https://patches.kibab.com/patches/details.php5?id=2547
+/*
+Необходимо ставить API-патч.
+НЕЛЬЗЯ ПОЛЬЗОВАТЬСЯ ФУНКЦИЕЙ ПОКАЗА ВОЗВРАЩАЕМОГО ЗНАЧЕНИЯ!
+*/
+02CB6D4: 0655021951700522 004B9847,0xA0FC4701
+
+;------------------------- end -------------------------
+

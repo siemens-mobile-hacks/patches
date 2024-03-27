@@ -1,0 +1,13 @@
+;S75v24
+;Убрать сообщение "GPRS вкл/выкл"
+;Disable message "GPRS on/off"
+;(c) SiNgle
+;Version: 
+;PatchID: 2169
+;Details: https://patches.kibab.com/patches/details.php5?id=2169
+/*
+
+*/
+09447F0: C0109F15 02F0A0E1
+;------------------------- end -------------------------
+

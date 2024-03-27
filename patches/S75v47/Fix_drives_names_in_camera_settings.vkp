@@ -1,0 +1,27 @@
+;S75v47
+;Исправить в камере имена дисков при сохранении фоток для патча "Релокация папок на MMC с подвидом MyStuff"
+;Fix drives names pictures to be saved in camera for patch "Folder relocation to MMC with MyStuff-view"
+;(c) Evgr
+;(p) johnnyz
+;Version: 
+;PatchID: 10297
+;Details: https://patches.kibab.com/patches/details.php5?id=10297
+/*
+Оказалось, после 8131патча в камере перепутаны названия "Мультим Карта" и "Мои файлы". Патч это исправляет.
+*/
+;Оказалось, после "Folder relocation to MMC with MyStuff-view" 
+;в камере перепутаны названия "Мультим Карта" и "Мои файлы". 
+;Патч это исправляет.
+
+
+
+02a9b344: 48 40 
+0b160a8: AC B4
+068c5e8: 630D 0B13 
+068c5dc: 0B13 630D
+
+
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

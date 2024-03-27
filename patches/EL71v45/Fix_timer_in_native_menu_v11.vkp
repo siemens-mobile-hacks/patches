@@ -1,0 +1,18 @@
+;EL71v45
+;Исправление таймера в Native Menu
+;Fix timer in Native Menu
+;(c) @ndres/PRM
+;Version: 1.1
+;PatchID: 7808
+;Details: https://patches.kibab.com/patches/details.php5?id=7808
+/*
+
+*/
+05C7871: 10 00
+05C778C: 70402DE948DF4DE20060A0E101 30402DE947DF4DE20000A0E100
+05C779C: 1C108DE20800 04008DE21810
+05C77B0: 000056E32100001A05 0000A0E10000A0E100
+05C7858: 48DF8DE270 47DF8DE230
+0788206: ECF604EB 3FF634EB
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;EL71v38
+;Убрать сообщение "Все сигналы вкл"
+;Disable message "All ringtones on"
+;(c) SiNgle
+;(p) 1nvisible
+;Version: 
+;PatchID: 5541
+;Details: https://patches.kibab.com/patches/details.php5?id=5541
+/*
+
+*/
+0707C76: EFF0A0ED C046C046
+0707C94: EFF090ED C046C046
+;------------------------- end -------------------------
+

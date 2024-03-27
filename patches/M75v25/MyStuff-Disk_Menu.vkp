@@ -1,0 +1,18 @@
+;M75v25
+;MyStuff = Disk Menu
+;MyStuff = Disk Menu
+;(c) LinuXrULz
+;(p) kiREALlov
+;Version: 1
+;PatchID: 6126
+;Details: https://patches.kibab.com/patches/details.php5?id=6126
+/*
+Для доступа к дискам Cache и Config из MyStuff (MyStuff Creator)
+*/
+4A642A: 0C 04
+4A642C: 32 31
+4A6432: 43 00
+4A6454: 0C 04
+4A645C: 43 00
+;------------------------- end -------------------------
+

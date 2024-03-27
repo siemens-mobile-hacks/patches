@@ -1,0 +1,15 @@
+;SL75v47
+;Полностью отключить SIM-меню
+;Completely disable SIM-menu
+;(c) BingK(binghelingxi)
+;(r) dimonp25
+;(p) bertgrin
+;Version: 
+;PatchID: 9476
+;Details: https://patches.kibab.com/patches/details.php5?id=9476
+/*
+Убирает пункт SIM-меню отовсюду
+*/
+02CEAB7: D1 E0
+;------------------------- end -------------------------
+

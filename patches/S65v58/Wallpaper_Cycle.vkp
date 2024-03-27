@@ -1,0 +1,60 @@
+;S65v58
+;Переключатель фона главного экрана
+;Wallpaper Cycle
+;(c) benj9
+;(p) -=[LCW]=-ExXtReMe
+;Version: 0.9
+;PatchID: 3256
+;Details: https://patches.kibab.com/patches/details.php5?id=3256
+/*
+Инструкция:
++ Минуты, секунды
+- Активный режим: Задается интервал, через который патч меняет фон на главном экране
+- Пассивный режим: После заданного времени патч меняет фон на заставке (или в Меню, списке)
+
++ Папка, маска
+Выберите папку с картинками и укажите маску (если поставить маску *.* патч находит папки/файлы, которые не являются картинками, фон не отображается)
+
++ Режим смены
+-"Активный" режим меняет фон только на главном экране, но не очень хорошо работает с анимациями
+-"Пассивный" режим меняет фон только в меню и заставке. Необоходимо сменить заставку, чтобы заработало. Посе того, как проходит заданное время и телефон входит в меню или запускается заставка, фон меняется. Этот режим работает с анимированными GIF
+-> Если фон перестал правильно меняться после смены режима во время работы патча, перезагрузите телефон
+
++ Вызов внешним приложением (Меню "Пуск", патч Hashcodes и т.п.)
+- Загрузить следующий фон: A0FD9311 немедленно загружает следующий файл
+- Перезагрузить фон: A0FD9311 перезагружает текущий фон. После перехода в профиль, в котором патч выключен, эта функция восстанавливает оригинальный фон
+
++ Настройка патча
+После того, как заданное время прошло патч пытается изменить фон (на главном экране активном режиме, не на главном экране в пассивном режиме). Если телефон на этот момент находится в "неправильном" (несоответствующем режиму) состоянии, патч ждет то время, кторое задано в Short Cycle, и повторяет попытку. Если вы устанавливаете короткий интервал в этом поле, патч работает быстро, Долгий интервал(10 секунД) - патч реагирует медленно, но это не сказывается на производительности.
+
++ Известные проблемы (версия 0.9)
+- "Активный режим" не слишком хорошо работает с анимациями. Приходится юзать "Перезагрузку обоев".
+- Перезагрузка обоев изредка может вообще убрать фон. В таком случае перезагружаем телефон.
+*/
+;Usage:
+;+ Minutes, Seconds
+;-Active Mode: Interval after that patch changes WP at mainscreen 
+;-Passive Mode: After given time patch changes WP in Screensaver (or Menu,List)
+;
+;+ Folder, Mask
+;Choose images folder and appropriate mask (if mask like *.* finds files/folders that are no images, no wp is displayed)
+;
+;+ Change Mode
+;-'Active' mode changes WP only at mainscreen, but doesn't work well with animations.
+;-'Passive' mode changes WP only in menus or screensaver. Needs screensaver to change. After the cycle time is run out and phone enters screensaver or menu, wp is changed. This works with animated Gif.
+;-> if wallpaper doesnt work correctly after changing Mode during patch already runs, reboot.
+;
+;+ External Calls (by external launcher, e.g. key sequencer)
+;- Load Next Wallpaper: call A0FD9311, immediatly loads next file
+;- Reload Wallpaper: call A0FD9321, reloads current wallpaper. After entering patch off profile,this reloads originally set wp. 
+;
+;+ Patch Config:
+;After Cycle Time is finished, patch tries to change WP (at mainscreen in active mode, not at mainscreen in passive mode). If phone is at that moment in "wrong" state, patch waits in short cycles and retries. Set short retry interval below. Short time means, patch reacts fast. Long time (10 seconds) means, patch reacts slow, but doesnt affects performance.
+;
+;+ Known problems (this is 0.9):
+;- 'Active mode' doesnt like animations too much. If not displayed, refresh by
+;calling by key 'Reload Wallpaper'.
+;- 'Reload key' seldomly causes WP display to stop, then reboot
+169C4F2: 2421614312688A182132 C046,004FB847,0xA0FD932F ; S65v58
+;------------------------- end -------------------------
+

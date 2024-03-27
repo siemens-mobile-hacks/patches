@@ -1,0 +1,15 @@
+;SL65v53
+;Disable Auma-Debug
+;Disable Auma-Debug
+;(c) benj9
+;Version: 
+;PatchID: 3471
+;Details: https://patches.kibab.com/patches/details.php5?id=3471
+/*
+Ускоряем телефон
+*/
+0B246C4: 10B5 7047
+0B24738: 0FB4 7047
+
+;------------------------- end -------------------------
+

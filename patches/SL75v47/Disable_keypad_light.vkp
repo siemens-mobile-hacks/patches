@@ -1,0 +1,13 @@
+;SL75v47
+;Отключение подсветки клавиатуры
+;Disable keypad light
+;(c) SiNgle
+;Version: 
+;PatchID: 6701
+;Details: https://patches.kibab.com/patches/details.php5?id=6701
+/*
+
+*/
+08FFFA3: D5 24
+;------------------------- end -------------------------
+

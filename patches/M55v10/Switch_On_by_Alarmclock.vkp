@@ -1,0 +1,13 @@
+;M55v10
+;Автоматическое включение телефона по будильнику
+;Swich On by Alarm Clock
+;(c) SiNgle
+;Version: 
+;PatchID: 1470
+;Details: https://patches.kibab.com/patches/details.php5?id=1470
+/*
+Необходимо сменить мелодию будильника
+*/
+052E6A: EA00 0D2B
+;------------------------- end -------------------------
+

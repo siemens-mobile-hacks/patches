@@ -1,0 +1,46 @@
+;SL45iv56
+;CBI. CB-сообщение на экране
+;CBI. CB message in Idle screen
+;(c) Lalo
+;Version: 
+;PatchID: 1905
+;Details: https://patches.kibab.com/patches/details.php5?id=1905
+/*
+Меняет вывод CB-сообщения на экране.
+
+
+Release: 23.08.04 - v1
+
+Патч №208 с http://patch.oslik.ru/SL45_RU
+*/
+;Eliminating the ---- line (choose one): 
+;CB message flashes: 
+3B2066: A5 A6 
+;CB message aways on: 
+3B204F: 0A 11 
+3B2059: 05 0C 
+
+;Меняет позицию и шрифт для вывода CB-сообщений (и флеш тоже): 
+;18E66A:250003 yy00zz ;если дата/часы включены 
+;18E6BA:2E0003 yy00zz ;если дата/часы выключены
+;18E6C2:310007 yy00zz ;в логотипе оператора
+;где: 
+;yy = вертикальная координата строки
+;где F8-FF,0-49 сверху вниз (0=сразу после батареи и антенны) 
+;zz = тип шрифта
+
+; Код шрифта (zz)...
+; 00 = Very small
+; 01 = Big
+; 02 = Thin
+; 03 = Normal
+; 04 = Small for limited chars, numbers etc
+; 05 = Very small, limited chars, numbers etc
+; 06 = Very-very small, numbers only
+; 07 = Small
+; 08 = Small Bold
+; 09 = WAP
+; 0A = Big Phone Numbers
+; 0B = Thin (reduced height/space)
+;------------------------- end -------------------------
+

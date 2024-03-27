@@ -1,0 +1,15 @@
+;CX75v5
+;Ускоритель_явы
+;Java_acceleration
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 430
+;Details: https://patches.kibab.com/patches/details.php5?id=430
+/*
+Ускоряет выполнение ява-приложений и ява-игр.
+*/
+0897900: 02 01
+;------------------------- end -------------------------
+

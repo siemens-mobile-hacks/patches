@@ -1,0 +1,16 @@
+;M75v25
+;Задержка гашения подсветки
+;Illumination fade time
+;(c) BuG
+;Version: 
+;PatchID: 4100
+;Details: https://patches.kibab.com/patches/details.php5?id=4100
+/*
+
+*/
+085B08C: B80B E803 ; 1000 ms
+;085B08C: B80B DC05 ; 1500 ms
+;085B08C: B80B D007 ; 2000 ms
+;085B08C: B80B C409 ; 2500 ms
+;------------------------- end -------------------------
+

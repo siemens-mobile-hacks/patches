@@ -1,0 +1,28 @@
+;SL75v52
+;Увеличение размера заметок
+;Upsize of notes
+;(c) alfinant
+;(p) Виктор89
+;Version: 
+;PatchID: 10067
+;Details: https://patches.kibab.com/patches/details.php5?id=10067
+/*
+Размер увеличен до 1024 символов
+*/
+050C28C: E6FEFFEB 22BCFBFA
+05916B2: A0220E19 69F639FE
+0591754: A022291C 69F6EBFD
+059175E: A022291C 69F6E6FD
+05DBA7C: EAC0FCEB 267EF8FA
+05EB79E: A022381C 0FF6C9FD
+05EB7B0: A0220092 0FF6C3FD
+05EB936: A0210E1A 0FF603FD
+
+#pragma enable old_equal_ff
+03FB31C: 0D2801D1 
+03FB320: 0A48704708490847084A0E197047074A 
+03FB330: 291C7047054A381C7047044A00927047 
+03FB340: 02490E1A70470000,0xA050BE2C,00040000 
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

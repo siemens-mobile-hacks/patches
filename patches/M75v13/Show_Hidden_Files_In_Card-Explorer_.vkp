@@ -1,0 +1,14 @@
+;M75v13
+;Показывать Скрытые Файлы в Card-Explorer'е по умолчанию
+;Show Hidden Files In Card-Explorer By Default
+;(c) 1nvisible
+;Version: 
+;PatchID: 4319
+;Details: https://patches.kibab.com/patches/details.php5?id=4319
+/*
+
+*/
+02DD344: 00 FF
+02DD3F4: 00 FF
+;------------------------- end -------------------------
+

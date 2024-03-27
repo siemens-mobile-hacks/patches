@@ -1,0 +1,43 @@
+;SL45iv56
+;Калибровка стандартного индикатора батареи
+;Calibrating of standards batery indicator
+;(c) lbuczko
+;Version: 
+;PatchID: 3321
+;Details: https://patches.kibab.com/patches/details.php5?id=3321
+/*
+Патч должен помочь тем, у кого батаре постоянно полная (в стандартном индикаторе) и нельзя сориентироватся когда она разрядится.
+
+
+English: 
+It helps all, who have shown always full battery (in standards indicator) and don't know when the battery will discharged.
+
+Realease: 29.04.06
+*/
+0X3B3A4C: 26FC1A00 DAE4C046 
+ 
+0x4446C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46F84801ED0346F84501ED12D7400E00 
+0x4446D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2F8443A46F8420E8D0E46F80A0F8D0E 
+0x4446E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46F8A00F8D0E46F804108D0EE6F84501 
+0x4446F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 26FC1A00DB00E6F841010DFAE6F84201 
+0x444700: FFFFFFFFFFFFFFFFFFFFFFFFFFFF 0DF7E6F843010DF4E6F844010DF1 
+ 
+;xxxx value in hex from netmonitor - VMAX - put yours setting
+;XXXX WARTOSCI HEX ODWROCONE Z NETMONITORA - VMAX 
+ 
+;4446D6: 420E XXXX ; below 3650  discharged - empty (PONIZEJ 3650V - ROZLADOWANA) 
+;4446DC: 0A0F XXXX ; below 3850 1/4 battery (PONIZEJ 3850V - 1/4 )
+;4446E2: A00F XXXX ; below 4000V 1/2 battery (PONIZEJ 4000V - 1/2)
+;4446E8: 0410 XXXX ; below 4100V (1004h) it will be 3/4 indicator (PONIZEJ 4100V - 3/4 )
+;above value from adress 4446e8 it will be show full battery indicator
+; POWYZEJ WARTOSCI Z 4446E8 - FULL 
+ 
+;no. of image battery if you want change this
+;YYYY - NR OBRAZKA BATERII JESLI CHCESZ ZMIENIC WPISZ NR OBRAZKA 
+;4446F8: 4101 YYYY : no. image empty battery (NR OBRAZKA 141H ROZLADOWANEJ) 
+;4446FE: 4201 YYYY ; no. image 1/4 bat. (NR OBRAZKA 142H 1/4 BATERII) 
+;444704: 4301 YYYY ; no. image 1/2 bat. (NR OBRAZKA 143H 1/2 BATERII)
+;44470A: 4401 YYYY ; no. image 3/4 bat. (NR OBRAZKA 144H 3/4 BATERII)
+;4446EE: 4501 YYYY ; no. image full bat. (NR OBRAZKA 145H NALADOWANEJ - FULL)
+;------------------------- end -------------------------
+

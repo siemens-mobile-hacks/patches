@@ -1,0 +1,15 @@
+;M55v11
+;Замена Sim Application Toolkit Menu
+;Replace Sim Application Toolkit Menu
+;(c) LittleBro
+;Version: 
+;PatchID: 5145
+;Details: https://patches.kibab.com/patches/details.php5?id=5145
+/*
+Замена SAT menu на сменить код телефона
+*/
+3685CE: 529C 56B0
+3685D2: 5A9C 56B0
+36861F: 273A27 06F305 ;rename menu ite
+;------------------------- end -------------------------
+

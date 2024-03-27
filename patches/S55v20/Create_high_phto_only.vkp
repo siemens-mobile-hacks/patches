@@ -1,0 +1,14 @@
+;S55v20
+;Создавать только High-фото
+;Create only High photo
+;(c) avkiev
+;(p) Asterix
+;Version: 
+;PatchID: 5064
+;Details: https://patches.kibab.com/patches/details.php5?id=5064
+/*
+
+*/
+14FF2F: 58 00
+;------------------------- end -------------------------
+

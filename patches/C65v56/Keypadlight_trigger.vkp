@@ -1,0 +1,38 @@
+;C65v56
+;Переключатель режима подсветки клавиатуры
+;Keypadlight trigger
+;(c) benj9
+;(p) TiCK
+;Version: 0.9
+;PatchID: 4344
+;Details: https://patches.kibab.com/patches/details.php5?id=4344
+/*
+
+*/
+0BBAF42: 78F03CEF BAF15DFB
+#pragma enable old_equal_ff
+0D75600: 00B5FCB40D48006880470006000E0D49
+0D75610: 43181978FCBC022904D0012904D00329
+0D75620: 04D005E0002203E02D2201E055231B02
+0D75630: 01200121,BEF6C2EB,00BD9999,0xA0D75640
+0D75640: 0xA08CD21D,0xA0D75648
+;определить режим (Set Keypadlight mode)
+0D75648: 03 ;for Profile 1
+0D75649: 03 ;for Profile 2
+0D7564A: 03 ;for Profile 3
+0D7564B: 03 ;for Profile 4
+0D7564C: 03 ;for Profile 5
+0D7564D: 03 ;for Profile 6
+0D7564E: 03 ;for Profile 7
+#pragma disable old_equal_ff
+;Режимы подсветки (Keypad light modes are):
+;00 = обычный (normal)
+;01 = подсветка всегда включена (keypadlight always on)
+;02 = подсветка всегда выключена (keypadlight always off)
+;03 = задержка гашения подсветки (keypadlight delayed afterburner)
+0D7562C: 55 1A ;определить задержку для режима 3 (Set delay for mode 3)
+;00 = обычный без задержки (normal/no_delay)
+;1A = несколько секунд (some seconds)
+;FF = несколько минут (some minutes delay)
+;------------------------- end -------------------------
+

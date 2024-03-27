@@ -1,0 +1,22 @@
+;M55v11
+;Запуск мидлета при вставке новой SIM-карты
+;Run midlet when insert new SIM
+;(c) SiNgle
+;(p) kay
+;Version: 
+;PatchID: 5147
+;Details: https://patches.kibab.com/patches/details.php5?id=5147
+/*
+!Не совместим с патчем \"отмена вопроса о копировании SIM-карты\"
+!Запуск происходит при выборе \"Справ. по умолч.\"
+!Программа должна иметь путь и имя: A:\Java\SecureSMS\sms.jar
+Папку можно сделать скрытой, чтобы не было видно в card-explorer'е
+*/
+0D876C: 98809890 FA9F6006
+4EFA7A: DAB89E0C FA6E96FA
+7F0630: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC3E06E6FD7C02E01EFA9122F8413A
+7F0640: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 5C4A6176615C536563757265534D535C
+7F0650: FFFFFFFFFFFFFF 736D732E6A6172
+7F0660: FFFFFFFFFFFFFFFFFFFF DA9F300698809890DB00
+;------------------------- end -------------------------
+

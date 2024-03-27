@@ -1,0 +1,67 @@
+;SL45iv56
+;Инвертирование по горячей клавише (и/или при блоке клавиш)
+;Invert Display Hotkey (and/or when keylocked)
+;(c) trustkill, rc-flitzer, thE prEtEndEr
+;Version: 3
+;PatchID: 2641
+;Details: https://patches.kibab.com/patches/details.php5?id=2641
+/*
+English: With this patch you have a hotkey for "Invert Display"
+instead of "User Group". It overwrites the patch "Flip Screen Hotkey"
+from arsh0r, you better undo that patch before.
+
+You can choose if you want invert display when keylocked.
+This patch also works with KLP (Keypad Locked Password) patch.
+
+Invert both softkeys & Display when APP Function 1 is selected,
+needs at least JAF.Funny Display & ISK.Invert Softkey selectable.
+
+
+ Release: June 26, 2004
+ v2 -> rc-flitzer (September 25th, 2005)
+improvements
+ v3 -> thE prEtEndEr (November 30th, 2005)
+now works with auto keylock mode, too 
+*/
+; Comment these two lines, if you don't have installed ISK or
+; if you don't want inverted softkeys
+; 0x27D6CB: C0 00 ; changes ISK app function no. from #13 to #1
+; 0x27D6E1: C0 00 ; changes ISK app function no. from #13 to #1
+
+
+; Hotkey Patch
+; If you don't want to change "User group" to "Invert", comment following block
+0x18E388: 8B00 A804 ;string #8B -> #4A8
+0x18E3BC: 8C00 A804 ;string #8B -> #4A8
+0x18E4B8: 8B008B00 A804A804 ;same thing
+0x3AE310: DAD70245 DAC798E0 ;call to patch
+
+
+; Invert Display when keylocked
+; (More exact: changing App-function #1 when key locked/unlocked)
+; If you don't want invert display when keylocked, comment these three lines
+0x3AF6E2: DAA37A40 DAC7B8E0 ; --> call to patch before unlock
+0x3AD292: E6003600 DAC7ACE0 ; --> call to patch if locked by #
+0x3B02B2: DAA37440 DAC7A8E0 ; --> call to patch if auto keylocked
+
+
+; Main patch block
+0x27E098: FFFFFFFF D7400E00 ; extp #0Eh #1
+0x27E09C: FFFFFFFF F2FC423A ; mov r12, mem_3A42
+0x27E0A0: FFFFFFFF 9AFC1300 ; jnb r12.0, loc_C7E0CA
+0x27E0A4: FFFFFFFF FAC7C4E0 ; jmps 0C7h, loc_C7E0C4
+0x27E0A8: FFFFFFFF DAA37440 ; call auto keylock
+0x27E0AC: FFFFFFFF D7400E00 ; extp #0Eh #1
+0x27E0B0: FFFFFFFF F2FC423A ; mov r12, mem_3A42
+0x27E0B4: FFFFFFFF FAC7CAE0 ; jmps 0C7h, loc_C7E0CA
+0x27E0B8: FFFFFFFF DAA37A40 ; calls unlock
+0x27E0BC: FFFFFFFF D7400E00 ; extp #0Eh #1
+0x27E0C0: FFFFFFFF F2FC423A ; mov r12, mem_3A42
+0x27E0C4: FFFF 0EFC ; bclr r12.0
+0x27E0C6: FFFFFFFF FAC7CCE0 ; jmps 0C7h, loc_C7E0CC
+0x27E0CA: FFFF 0FFC ; bset r12.0
+0x27E0CC: FFFFFFFF D7400E00 ; extp #0Eh #1
+0x27E0D0: FFFFFFFF F6FC423A ; mov mem_3A42, r12
+0x27E0D4: FFFF DB00 ; rets
+;------------------------- end -------------------------
+

@@ -1,0 +1,41 @@
+;SL45iv56
+;BST. Тест пустого экрана
+;BST. Blank Screen Test
+;(c) RizaPN, Charger
+;Version: 2
+;PatchID: 3434
+;Details: https://patches.kibab.com/patches/details.php5?id=3434
+/*
+Патч не добавляет внешних изменений, он просто "вставляет"
+пустой экран перед отображением чего-либо в режиме ожидания
+(надеюсь, это сохранит заряд батареи, т.к. при пустом
+экране патч пропускает много процедур).
+Gfnx убирает перерисовку кое чего при блокированной клавиатуре.
+v2 - модифицирован под другой метод выключения экрана 
+
+
+English: No difference will be notice, it just insert
+a blank screen test before displaying something in the idle screen
+(hope it can save battery more, because it will skip some procedure
+when the screen is blanked).
+
+Authors comment:
+Apply this patch, only if you apply "Selectable Operator Logo" and 
+"Blank Screen" patches. No difference will be notice, it just insert 
+a blank screen test before displaying something in the idle screen 
+(hope it can save battery more, because it will skip some procedure 
+when the screen is blanked).
+v2 - modified for new turning off LCD method 
+
+
+Release: November 12, 2003
+Modified: May 12, 2006
+*/
+0x3B36C0: DAE5024B FAC7C2DD 
+
+0x27DDC0: FFFFFFFFFFFFFFFF FFFFD7403500F3F8 
+0x27DDC8: FFFFFFFFFFFFFFFF 003949802D02FADB 
+0x27DDD0: FFFFFFFFFFFFFFFF 583ADAE5024BFADB 
+0x27DDD8: FFFFFFFFFFFFFFFF C436FFFFFFFFFFFF 
+;------------------------- end -------------------------
+

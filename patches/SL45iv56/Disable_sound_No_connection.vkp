@@ -1,0 +1,15 @@
+;SL45iv56
+;Отключить звук "Нет соединения"
+;Disable sound "No connection"
+;(c) Ramil_
+;Version: 
+;PatchID: 2894
+;Details: https://patches.kibab.com/patches/details.php5?id=2894
+/*
+
+*/
+02F2E9: DC 0C 
+02F4BB: DC 0C 
+02F505: DC 0C
+;------------------------- end -------------------------
+

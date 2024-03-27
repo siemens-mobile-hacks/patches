@@ -1,0 +1,17 @@
+;EL71v45
+;Неограниченная запись диктофоном 
+;Unlimited dictaphone recording  
+;(c) Evgr
+;Version: 
+;PatchID: 10508
+;Details: https://patches.kibab.com/patches/details.php5?id=10508
+/*
+
+*/
+
+07BAE60: 70008485 0000A0E1
+07BC030: 44108425 0000A0E1
+07BC034: 48108425 0000A0E1
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;S65v58
+;Отключить Вопрос при Редактировании Интернет-Профилей
+;Disable Internet Profiles Edit Query
+;(c) 1nvisible
+;(p) KiRiK
+;Version: 1
+;PatchID: 3283
+;Details: https://patches.kibab.com/patches/details.php5?id=3283
+/*
+Внимание:
+
+! Пункт "Добавить Из:" не работает
+! "Add From:" item doesn't work 
+*/
+08F6844: 00F088F8 FFF7EAFD
+;------------------------- end -------------------------
+

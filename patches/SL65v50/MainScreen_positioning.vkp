@@ -1,0 +1,52 @@
+;SL65v50
+;Позиционирование главного экрана
+;MainScreen positioning
+;(c) SiNgle, BuG,
+;(r) KiRiK, arsh0r
+;Version: 2
+;PatchID: 5110
+;Details: https://patches.kibab.com/patches/details.php5?id=5110
+/*
+
+*/
+;Charge Indicator (Switched-Off Mode)
+1641EEC: 0F 4A ; background end Y 
+1641EF2: 02 3C ; background start Y 
+1641EF4: 62 33 ; background start X
+1641EF6: 7F 49 ; background end X 
+1641EFB: F006FB 280028 ; no background
+1641F04: 02 3C ; Y 
+1641F06: 62 33 ; X
+
+;Net
+1641FA4: 0F 0E ; background end Y для С65 заменить на 0E
+1641FA8: 02 01 ; background start Y
+1641FAA: 20 1F ; background end X для С65 заменить на 1E
+1641FAC: 02 01 ; background start X
+1641FB1: F0ABFA 280028 ; no background
+1641FBA: 02 01 ; Y
+1641FBC: 02 01 ; X
+
+;Iconbar
+164223C: 10 0F ; background end Y для С65 заменить на 0E
+1642240: 02 01 ; background start Y
+1642242: 22 37 ; background start X для С65 заменить на 36
+1642244: 60 75 ; background end X для С65 заменить на 74
+164224B: F05EF9 280028 ; no background
+1642276: 20 35 ; X для С65 заменить на 34
+1642290: 02 01 ; Y
+
+;Battery
+164232A: 0F 1B ; background end Y
+164232E: 02 0D ; background start Y
+1642330: 7F 1E ; background end X для С65 заменить на 1D
+1642332: 62 01 ; background start X
+1642337: F0E8F8 280028 ; no background
+1642340: 02 0D ; Y
+1642342: 62 01 ; X
+16629CC: 07 12 ; Y - Provider name
+16629DC: 19 24 ; Y - Sub provider name
+164946C: 73 A0 ; Y - Time & Date для С65 заменить на 72
+
+;------------------------- end -------------------------
+

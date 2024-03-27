@@ -1,0 +1,14 @@
+;E71v45
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle
+;(p) Виктор89
+;Version: 3
+;PatchID: 9457
+;Details: https://patches.kibab.com/patches/details.php5?id=9457
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+66B7BA: 53F77BFD 8CF11EEE
+;------------------------- end -------------------------
+

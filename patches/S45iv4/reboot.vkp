@@ -1,0 +1,13 @@
+;S45iv4
+;Перезагрузка при ошибке сим карты
+;RebootWhenCardError
+;(c) BoBa!
+;Version: 
+;PatchID: 1224
+;Details: https://patches.kibab.com/patches/details.php5?id=1224
+/*
+
+*/
+0x591070 E6FC4B03B8C0 DACD982ACC00 
+;------------------------- end -------------------------
+

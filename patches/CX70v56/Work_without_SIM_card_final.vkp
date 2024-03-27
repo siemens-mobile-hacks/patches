@@ -1,0 +1,22 @@
+;CX70v56
+;Работа телефона без SIM карты
+;No SIM Card Phone Operation
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle
+;(p) Zeus
+;Version: 3
+;PatchID: 9205
+;Details: https://patches.kibab.com/patches/details.php5?id=9205
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+1716DB0: 10B5BA49BA480BF002FF041CBD49 08B5014B984708BD,0xA173C2D0,C046
++173C2D0
+#pragma enable old_equal_ff
+00: FF7F2DE910109FE510009FE50120A0E3
+10: 0FE0A0E111FF2FE1FFBFBDE8,0xA1161AC0
+20: 0xA80B2000
+#pragma disable old_equal_ff
++0
+
+;------------------------- end -------------------------
+

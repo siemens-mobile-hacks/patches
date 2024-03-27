@@ -1,0 +1,13 @@
+;C65v56
+;Открыть диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;Version: 
+;PatchID: 3781
+;Details: https://patches.kibab.com/patches/details.php5?id=3781
+/*
+
+*/
+1179414: 02 03
+;------------------------- end -------------------------
+

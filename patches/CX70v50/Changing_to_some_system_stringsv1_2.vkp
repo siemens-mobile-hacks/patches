@@ -1,0 +1,31 @@
+;CX70v50
+;Изменение некоторых названий в системе
+;Changing to some system strings
+;(c)  -=(Kad)=-
+;(r) Apo4emu
+;(p) (i)SiamiX
+;Version: 1.2
+;PatchID: 2687
+;Details: https://patches.kibab.com/patches/details.php5?id=2687
+/*
+Немного доработанная версия.
+*/
+;Developer menu (S)Exit
+;Exit-No:=>ErrorNo:
+091899E: 457869742D4E6F3A20 000000000000000000
+091899E: 000000000000000000 "ErrorNo:"A0
+
+;SW-Ver:=>FW-Ver:
+0918C6A: 53572D5665723A20 0000000000000000
+0918C6A: 0000000000000000 "FW-Ver:"A0
+
+;Инфа по *#05#
+;Operating Time:=>Total Time:
+17130B4: 4F7065726174696E672054696D653A 000000000000000000000000000000
+17130B4: 000000000000000000000000000000 "Total Time:"A0
+
+;Talk Time :=>You Talked:
+17130C8: 54616C6B2054696D65203A 0000000000000000000000
+17130C8: 000000000000000000000000 "You Talked:"A0
+;------------------------- end -------------------------
+

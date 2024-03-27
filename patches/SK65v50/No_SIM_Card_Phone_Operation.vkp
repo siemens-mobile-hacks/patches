@@ -1,0 +1,22 @@
+;SK65v50
+;Работа телефона без СИМ-карты
+;No SIM Card Phone Operation
+;(c) SiNgle
+;(p) ~Jhellico
+;Version: 
+;PatchID: 3244
+;Details: https://patches.kibab.com/patches/details.php5?id=3244
+/*
+Жмем *#06# потом заходим в тест и жмём "тест звука 1", ничего не происходит, жмем кратко красную кнопку
+В патч вложена краткая инструкция по портированию на другие модели.
+English:
+Press *#06#, goto Device Check, press Soundcheck 1 (nothing happens), and press the red button shortly
+*/
+#pragma enable old_equal_ff
+01B0600: FFB50348012201498847FFBD981397A0
+01B0610: 0020E3A8
+#pragma disable old_equal_ff
+
+03E4262: 35F043FE CCF5CDF9
+;------------------------- end -------------------------
+

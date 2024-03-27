@@ -1,0 +1,14 @@
+;CX70v56
+;Мелкий шрифт доп строчек курсора
+;Small font extra lines of cursor
+;(c) Feyman
+;(p) sempai
+;Version: 
+;PatchID: 10097
+;Details: https://patches.kibab.com/patches/details.php5?id=10097
+/*
+В курсоре меню только верхняя строчка будет отображается нормальным шрифтом, 2 и 3 мелким
+*/
+0C9315C: 3968 0721
+;------------------------- end -------------------------
+

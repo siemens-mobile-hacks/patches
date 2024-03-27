@@ -1,0 +1,27 @@
+;C81v51
+;CSMList.txt для XTask3.elf (ru)
+;CSMList.txt for XTask3.elf (ru)
+;(c) Arago
+;Version: 
+;PatchID: 10754
+;Details: https://patches.kibab.com/patches/details.php5?id=10754
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=c81v51&f=CSMList.zip
+
+/*
+Файл с названиями процессов для XTask3
+Нужно положить его в: 0:\ZBin\ect\CSMList.txt или 4:\ZBin\ect\CSMList.txt
+
+Это не патч! Скачиваем CSMList.zip!
+
+English:
+File with CSM names for XTask3
+You need to put it in: 0:\ZBin\ect\CSMList.txt or 4:\ZBin\ect\CSMList.txt
+
+This is not a patch! Download the CSMList.zip!
+
+*/
+; Тут ничего нет! Скачивайте дополнительный файл!
+; There's nothing here! Download the additional file!
+
+;------------------------- end -------------------------
+

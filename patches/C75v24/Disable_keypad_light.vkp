@@ -1,0 +1,13 @@
+;C75v24
+;Отключить подсветку кнопок
+;Disable keypad light
+;(c) SiNgle
+;Version: 
+;PatchID: 4212
+;Details: https://patches.kibab.com/patches/details.php5?id=4212
+/*
+
+*/
+0786ADF: D5 24
+;------------------------- end -------------------------
+

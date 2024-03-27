@@ -1,0 +1,13 @@
+;S75v22
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 1779
+;Details: https://patches.kibab.com/patches/details.php5?id=1779
+/*
+Ускорение работы java-приложений.
+*/
+09667D8: 6549 0121
+;------------------------- end -------------------------
+

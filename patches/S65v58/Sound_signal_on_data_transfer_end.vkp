@@ -1,0 +1,14 @@
+;S65v58
+;Звуковой сигнал по окончании приёма данных
+;Sound Signal On Data Transfer End
+;(c) SiNgle
+;(p) KiRiK
+;Version: 
+;PatchID: 1431
+;Details: https://patches.kibab.com/patches/details.php5?id=1431
+/*
+
+*/
+098AA3C: 0010A0E3 60EEFEEB
+;------------------------- end -------------------------
+

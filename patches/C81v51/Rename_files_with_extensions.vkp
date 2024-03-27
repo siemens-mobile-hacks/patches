@@ -1,0 +1,17 @@
+;C81v51
+;Переименование файлов с расширением
+;Rename files with extensions
+;(c) SiNgle
+;(p) den11111
+;Version: 
+;PatchID: 7337
+;Details: https://patches.kibab.com/patches/details.php5?id=7337
+/*
+
+*/
+02A5410: 2E22 0022
+02A5422: 2E22 0022
+05B315C: 2E22 0022
+
+;------------------------- end -------------------------
+

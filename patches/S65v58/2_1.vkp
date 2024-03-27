@@ -1,0 +1,14 @@
+;S65v58
+;Более высокий mmi приоритет
+;Higher MMI Prio
+;(c) benj9
+;(p) dimonp25
+;Version: 
+;PatchID: 9083
+;Details: https://patches.kibab.com/patches/details.php5?id=9083
+/*
+По умолчанию-D, сделал 02(как и на нсг).Пробуем
+*/
+08BEB10: 0D 02
+;------------------------- end -------------------------
+

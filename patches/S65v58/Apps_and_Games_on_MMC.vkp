@@ -1,0 +1,41 @@
+;S65v58
+;Игры и приложения на ММС
+;Applications And Games On MMC
+;(c) kraze1984
+;Version: 
+;PatchID: 1216
+;Details: https://patches.kibab.com/patches/details.php5?id=1216
+/*
+Патч переносит папки Игры и Приложения на MMC-карту
+Если много программ в одной папке, то их список открывается довольно долго, поэтому лучше рассортировать их на несколько папок: по несколько программ в одну папку. К сожалению, если часто устанавливаете игры в одну папку, придется периодически форматировать карту, иначе будут сильные тормоза. Так что, если у вас 2-3 игры в папке, а открывается долго попробуйте отформатировать карточку.
+
+Если Вы используете Библиотеку Функций, нужно также применить следующий патч:
+
++0FC0000
+668: 004FF746,0xA845164C 004FF746,0xA8451B44 ; v05: RamMissedSMS 
++0
+
+English:Patch moves Java applications and games to MMC card. If there are many applications in one folder then loading a list of them takes some time. To avoid this create some folders in games and applications and sort applications in them.
+
+If you use FunctionLibrary, apply the following patch:
++0FC0000
+668: 004FF746,0xA845164C 004FF746,0xA8451B44 ; v05: RamMissedSMS 
++0
+*/
+0A24934: 30 34
+0A24948: 30 34
+0A2496E: 30 34
+0A2499C: 30 34
+0A249CE: 30 34
+0A249F0: 30 34
+0A24A22: 30 34
+0A24A46: 30 34
+0A24A64: 30 34
+
+; Если используется Библиотека Функций
+; If you're using Function Library
+;+0FC0000
+;668: 004FF746,0xA845164C 004FF746,0xA8451B44 ; v05: RamMissedSMS 
+;+0
+;------------------------- end -------------------------
+

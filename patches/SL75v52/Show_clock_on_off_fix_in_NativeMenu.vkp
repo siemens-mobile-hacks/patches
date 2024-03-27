@@ -1,0 +1,21 @@
+;SL75v52
+;Фикс Настройки-Часы-Показ. часы-Вкл./Выкл в NativeMenu
+;Show clock on/off fix in NativeMenu
+;(c) BingK(binghelingxi)
+;(p) Виктор89
+;Version: 
+;PatchID: 9308
+;Details: https://patches.kibab.com/patches/details.php5?id=9308
+/*
+Теперь включается и выключается из меню
+*/
+;NMNU_SHOW_TIME_FIX_HOOK1,NMNU_SHOW_TIME_FIX_HOOK2
+0x00449780: FB5B3AA0035C3AA0 411606A0511606A0
+;NMNU_SHOW_TIME_FIX_BODY
+#pragma enable old_equal_ff
+61640: F0B5071C064EB047381C064EB047F0BD
+61650: F0B50F1C044EB047391C044EB047F0BD
+61660: 5DE329A0B75C33A02FE329A0CB5C33A0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

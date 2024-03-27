@@ -1,0 +1,20 @@
+;SL75v47
+;Изменение прогрессбара в медиаплеере
+;Change progressbar in mediaplayer
+;(c) SiNgle
+;(p) bertgrin
+;Version: 
+;PatchID: 9473
+;Details: https://patches.kibab.com/patches/details.php5?id=9473
+/*
+
+*/
+/*
+Формат: x1,y1,x2,y2
+Format: x1,y1,x2,y2
+*/
+08CCB68: 30008B0053009500 1200960072009A00 ; полоса
+08CCB70: 30008B0053009000 1200960072009A00 ; фон
+08CCB78: 3000910053009600 1200960072009A00 ; контур
+;------------------------- end -------------------------
+

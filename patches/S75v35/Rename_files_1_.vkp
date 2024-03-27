@@ -1,0 +1,22 @@
+;S75v35
+;Переименование файлов с расширением
+;Rename files with extensions
+;(c) SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 3560
+;Details: https://patches.kibab.com/patches/details.php5?id=3560
+/*
+
+*/
+;S75v35
+;Переименование файлов с расширением
+;Rename files with extensions
+;(c) SiNgle
+004D6190: 2E22 0022
+004D61a2: 2E22 0022
+005924a4: 2E22 0022
+;------------------------- end -------------------------
+
+;------------------------- end -------------------------
+

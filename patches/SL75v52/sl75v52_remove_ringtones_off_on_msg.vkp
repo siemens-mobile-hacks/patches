@@ -1,0 +1,15 @@
+;SL75v52
+;Убрать сообщения «Все сигналы выключены/включены»
+;Remove «Ringtones on/off» messages
+;(c) SiNgle
+;(p) Виктор89
+;Version: 
+;PatchID: 9932
+;Details: https://patches.kibab.com/patches/details.php5?id=9932
+/*
+
+*/
+0344DC2: ABF076ED C046C046
+0344DE0: ABF066ED C046C046
+;------------------------- end -------------------------
+

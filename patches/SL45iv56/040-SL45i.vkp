@@ -1,0 +1,15 @@
+;SL45iv56
+;Графическое меню в мр3 плейре
+;Use Graphical Menu in the MP3 Player
+;(c) RizaPN
+;Version: 
+;PatchID: 1604
+;Details: https://patches.kibab.com/patches/details.php5?id=1604
+/*
+Release: April 9, 2003
+
+Патч №040 с http://patch.oslik.ru/SL45_RU
+*/
+0x3BA0FA: DADBDC42 DAC7C0D5 
+;------------------------- end -------------------------
+

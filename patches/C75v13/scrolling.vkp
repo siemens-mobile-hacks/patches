@@ -1,0 +1,16 @@
+;C75v13
+;плавный скролинг длинных имен
+;Smooth scrolling of long names
+;(c) SiNgle
+;(r) AsteriX, KiRiK
+;Version: 
+;PatchID: 1446
+;Details: https://patches.kibab.com/patches/details.php5?id=1446
+/*
+
+*/
+0497E9C: D007 1202 ; (delay before start)
+0497EA0: 2C01 2A00 ; (scrolling speed)
+
+;------------------------- end -------------------------
+

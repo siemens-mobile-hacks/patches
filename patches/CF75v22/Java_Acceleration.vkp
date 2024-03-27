@@ -1,0 +1,16 @@
+;CF75v22
+;Java Acceleration
+;Java Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 4509
+;Details: https://patches.kibab.com/patches/details.php5?id=4509
+/*
+Using this patche, you may experience problems viewing photos.
+
+*/
+;CF75 V22 - * &#211;&#241;&#234;&#238;&#240;&#232;&#242;&#229;&#235;&#252; &#255;&#226;&#251; ** Java Acceleration *  © SiNgle § Smelter 
+;Enviado por Bruno Oz
+0849428: 02 01
+;------------------------- end -------------------------
+

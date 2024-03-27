@@ -1,0 +1,14 @@
+;EL71v45
+;Прибить статусбар в медиаплеере
+;Kill status string in mediaplayer
+;(c) Marie
+;Version: 
+;PatchID: 10707
+;Details: https://patches.kibab.com/patches/details.php5?id=10707
+/*
+Прибить статусбар в МП
+English:Kill statusbar in mp
+*/
+07B2E60: FF412DE9 1EFF2FE1
+;------------------------- end -------------------------
+

@@ -1,0 +1,22 @@
+;CX70v50
+;Blinker
+;Blinker
+;(c) benj9
+;(r) 1nvisible, avkiev, BuG, Chaos
+;(p) KreN
+;Version: 3-MP
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1588
+;PatchID: 1397
+;Details: https://patches.kibab.com/patches/details.php5?id=1397
+/*
+Врезка к патчу 1396
+*/
+11511D4: 0070A0E1 8D2DFAEB
+
+#pragma enable old_equal_ff
+0FDCCDC: 0xA8200300  ; R
+0FDCCE0: 0xA83FF444,0xA863A758,0xA863D33C  ; ABC
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

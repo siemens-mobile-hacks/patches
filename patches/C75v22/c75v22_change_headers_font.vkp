@@ -1,0 +1,15 @@
+;C75v22
+;Изменение шрифта заголовков
+;Change headers font
+;(c) Evgr
+;(r) SimaFish
+;(p) NevAtse
+;Version: 
+;PatchID: 9941
+;Details: https://patches.kibab.com/patches/details.php5?id=9941
+/*
+
+*/
+0049863C: 03 08 ;мелкий жирный
+;------------------------- end -------------------------
+

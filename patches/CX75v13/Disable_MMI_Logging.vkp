@@ -1,0 +1,17 @@
+;CX75v13
+;Выключения логинга ММИ
+;Disable MMI Logging
+;(c) SiNgle
+;(r) Strelok
+;Version: 1.0
+;PatchID: 2572
+;Details: https://patches.kibab.com/patches/details.php5?id=2572
+/*
+Ускоряет операции телефона.
+Но не ждите что у вас будет Pentium IV ;-)
+*/
+;*Disable MMI Logging*
+© SiNgle
+02A0461: B5 47 ; speeds up phone operation
+;------------------------- end -------------------------
+

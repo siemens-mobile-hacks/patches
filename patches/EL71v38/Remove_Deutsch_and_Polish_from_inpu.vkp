@@ -1,0 +1,15 @@
+;EL71v38
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=6374
+;PatchID: 6260
+;Details: https://patches.kibab.com/patches/details.php5?id=6260
+/*
+
+*/
+0C54576: 00 01
+0C545BA: 00 01
+;------------------------- end -------------------------
+

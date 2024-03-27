@@ -1,0 +1,14 @@
+;C75v24
+;Сжатие jpeg с максимальным кач-вом (100% вместо 75%)
+;Jpeg-compression with maximal quality (100% instead of 75%)
+;(c) SiNgle
+;Version: 
+;PatchID: 2934
+;Details: https://patches.kibab.com/patches/details.php5?id=2934
+/*
+
+*/
+03D17C0: 4B 64
+
+;------------------------- end -------------------------
+

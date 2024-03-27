@@ -1,0 +1,18 @@
+;C72v22
+;Убрать софт-кнопки с главного экрана и опустить дату с часами вниз
+;Remove soft-keys from MainScreen
+;(c) SiNgle
+;(p) Virusmater, Smelter
+;Version: 2
+;PatchID: 6890
+;Details: https://patches.kibab.com/patches/details.php5?id=6890
+/*
+Наконецто доделал то, что не доделал Smelter
+*/
+08DDD79: D0 E0
+08dde36: 05D1 0028
+09018dc: 07D1 0028
+08de91e: 0DD1 0028
+8de924: 0AD1 0028
+;------------------------- end -------------------------
+

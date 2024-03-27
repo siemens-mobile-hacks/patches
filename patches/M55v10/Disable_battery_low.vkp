@@ -1,0 +1,13 @@
+;M55v10
+;Отключить сообщение "Аккумулятор разряжен"
+;Disable "Battery Low" message
+;(c) SiNgle
+;Version: 
+;PatchID: 1360
+;Details: https://patches.kibab.com/patches/details.php5?id=1360
+/*
+
+*/
+0EA90C: E6FC DB00
+;------------------------- end -------------------------
+

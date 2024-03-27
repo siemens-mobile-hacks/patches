@@ -1,0 +1,18 @@
+;M81v47
+;Большой видоискатель
+;Large viewfinder
+;(c) SiNgle
+;(p) Barracuda
+;Version: 
+;PatchID: 9034
+;Details: https://patches.kibab.com/patches/details.php5?id=9034
+/*
+
+*/
+0206694: 7C809DE5 9C80A0E3
+034283E: 132D42D0 C046C046
+0607AEE: 9E5F122114229A5E595E 9C26122114229A5E0021
+0607B0A: C2891692038AC91801391591408A 00221692038ACB18013B15939C20
+0607F2A: C089 1620
+;------------------------- end -------------------------
+

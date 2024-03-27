@@ -1,0 +1,13 @@
+;M75v12
+;Открыть скрытые диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;Version: 
+;PatchID: 573
+;Details: https://patches.kibab.com/patches/details.php5?id=573
+/*
+Открывает скрытые диски навсегда - Cache и Config
+*/
+08CD15C: 02 03
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;X75v100
+;Ежечасное событие и звуковые напоминания о пропущенных событиях
+;Hourly event and sound alerts after missed_events and state_of_battery
+;(c) avkiev
+;Version: 13
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7270
+;PatchID: 4957
+;Details: https://patches.kibab.com/patches/details.php5?id=4957
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Hourly_event_and_sound_alerts_after.zip
+
+/*
+Обновление! Совместимость с загрузчиком эльфов 2.2
+*/
+;
+;------------------------- end -------------------------
+

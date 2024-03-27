@@ -1,0 +1,22 @@
+;CX70v50
+;Показ текущего времени при срабатывании отложенного будильника
+;Show current time during postponed alarm
+;(c) avkiev
+;(p) AsteriX
+;Version: 2
+;PatchID: 215
+;Details: https://patches.kibab.com/patches/details.php5?id=215
+/*
+Показ текущего времени при срабатывании отложенного будильника v2/
+*/
+0A7FCB8: 42780178 80F5D2FD
+#pragma enable old_equal_ff
+0800840: 506F7374706F6E656420416C61726D20
+0800850: A961766B6965762031332E30362E3035
+0800860: 01B5D0F0BFFD411C01BC0838072905D0
+0800870: 044A0548011C083190470348017A427A
+0800880: 00BDC046E3F8B8A0008076A8
+#pragma disable old_equal_ff
+;080086C: 07 NP ;Profile "No patches"
+;------------------------- end -------------------------
+

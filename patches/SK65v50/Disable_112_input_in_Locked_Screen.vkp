@@ -1,0 +1,13 @@
+;SK65v50
+;Отключить ввод 112 на Экране Блокировки
+;Disable 112 input in Locked Screen
+;(c) 1nvisible
+;Version: 
+;PatchID: 4171
+;Details: https://patches.kibab.com/patches/details.php5?id=4171
+/*
+
+*/
+032F617: D0 22
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;CX75v13
+;Cкорость автоповтора клавиатуры
+;Keypad acceleration
+;(c) SiNgle
+;(p) Gurza
+;Version: 
+;PatchID: 763
+;Details: https://patches.kibab.com/patches/details.php5?id=763
+/*
+RUS: Увеличивает скорость автоповтора клавиатуры. Полезно тем, что быстрее происходит перемещение по меню, более быстрый ввод текста в редакторе.
+
+ENG: Increases speed of autorepetition of the keyboard. It is useful for that there is a moving under the menu more quickly, faster input of the text in the editor.
+*/
+07FEEE6: 56 20
+
+;------------------------- end -------------------------
+

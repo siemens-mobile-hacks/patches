@@ -1,0 +1,14 @@
+;EL71v41
+;Изменения таймаута в Java
+;Java Network Timeout Change JNTO
+;(c) Rst7/CBSIE
+;(p) Siemann
+;Version: 
+;PatchID: 7122
+;Details: https://patches.kibab.com/patches/details.php5?id=7122
+/*
+
+*/
+0A042C0: 0010A0E1 401AA0E3
+;------------------------- end -------------------------
+

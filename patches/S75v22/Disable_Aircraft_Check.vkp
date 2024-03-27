@@ -1,0 +1,13 @@
+;S75v22
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) SiNgle
+;Version: 
+;PatchID: 1771
+;Details: https://patches.kibab.com/patches/details.php5?id=1771
+/*
+Отмена вопроса подтверждения самолёта при отключенном запросе PIN-кода.
+*/
+02927C1: D0 E0
+;------------------------- end -------------------------
+

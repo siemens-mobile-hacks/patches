@@ -1,0 +1,15 @@
+;CX75v25
+;изменение размера NonPermMem
+;Change NonPermMem
+;(c) Jellico
+;(p) Виктор89
+;Version: 
+;PatchID: 8599
+;Details: https://patches.kibab.com/patches/details.php5?id=8599
+/*
+патч добавляет примерно 300 кб.
+у кого пикает попробуйте поменять значения.
+*/
+97a52c: 0x0047a120 0x004ca120
+;------------------------- end -------------------------
+

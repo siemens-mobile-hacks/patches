@@ -1,0 +1,17 @@
+;C81v51
+;Run Refresher On Exit From Master-Midlet
+;Run Refresher On Exit From Master-Midlet
+;(c) 1nvisible
+;(p) dimonp25
+;Version: 
+;PatchID: 8472
+;Details: https://patches.kibab.com/patches/details.php5?id=8472
+/*
+http://patches.siemens-club.org/patches/details.php5?id=6665
+тело
+*/
+0A8397C: 000050E30E00001A6C408FE2 04E08FE204F01FE5090F06A0
+
+
+;------------------------- end -------------------------
+

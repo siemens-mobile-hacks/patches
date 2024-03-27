@@ -1,0 +1,14 @@
+;CX70v56
+;Запуск функций с помощью *# кодов
+;Running functions with *# codes
+;(c) empeka
+;(p) SiamiX
+;Version: 2.1
+;PatchID: 4626
+;Details: https://patches.kibab.com/patches/details.php5?id=4626
+/*
+Описание смотрите в теле патча.
+*/
+171B668: 0655021951700522 004B9847,0xA0FC4701
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;C75v24
+;Убрать Немецкий, Польский, Латвийский и Литовский из меню языков ввода
+;Remove Deutsch, Polish, Latvian and Lithuanian from input languages menu
+;(c) 0xFEDF, AlexSid
+;Version: 
+;PatchID: 2919
+;Details: https://patches.kibab.com/patches/details.php5?id=2919
+/*
+
+*/
+09D2882: 00 01
+09D28BA: 00 01
+09D28B2: 00 01 ; sw53+
+09D28B6: 00 01
+;------------------------- end -------------------------
+

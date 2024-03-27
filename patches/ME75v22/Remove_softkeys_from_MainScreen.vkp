@@ -1,0 +1,18 @@
+;ME75v22
+;Убрать софт-кнопки с главного экрана
+;Remove softkeys from MainScreen
+;(c) SiNgle
+;Version: 
+;PatchID: 5043
+;Details: https://patches.kibab.com/patches/details.php5?id=5043
+/*
+
+*/
+02CEDAD: D0 E0
+02CEE6A: 05D1 0028
+02CEE6A: 05D1 0028 ; SL65
+033DFC0: 07D1 0028
+02CF936: 0DD1 0028
+02CF93C: 0AD1 0028
+;------------------------- end -------------------------
+

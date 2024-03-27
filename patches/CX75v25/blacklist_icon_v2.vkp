@@ -1,0 +1,47 @@
+;CX75v25
+;Замена значка фильтра на черный список
+;Change filter icon on blacklist
+;(c) Espirito
+;Version: 2.0
+;PatchID: 6026
+;Details: https://patches.kibab.com/patches/details.php5?id=6026
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v25&f=blacklist_icon_v2.rar
+
+/*
+Специально для тех кто установил патч на Чёрный Список.
+Сделал абсолютно новую иконку, она мне больше нравится.
+ЗЫ. Можно не отменять патч 6015, адреса картинки другие.
+
+Special for those who installed patch on Black List.
+Made absolutely new icon, imho more beautiful.
+PS. You may leave patch 6015, there is another addresses of picture.
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 23.10.2006  -  Time: 21:08:35                             ###
+; ### Patch for: SIEMENS CX75 v25                                     ###
+; #######################################################################
+
+
+; ##### Picture 774 #####
+010C1854: 0E0E85008C5317A1 0E0E8500C191FDA0
+
+00FD91C1: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFC005FF08C002FF030002FF07C0FFFF
+00FD91D1: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0200FFFF020004FF04C0FFFF0200FFFF
+00FD91E1: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0200FFFF0200FFFF04C0FFFF0200FFFF
+00FD91F1: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0200FFFF0200FFFF04C0FFFF040002FF
+00FD9201: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0200FFFF04C0FFFF0200FFFF0200FFFF
+00FD9211: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0200FFFF04C0FFFF0200FFFF0200FFFF
+00FD9221: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0200FFFF04C0FFFF0200FFFF0200FFFF
+00FD9231: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0200FFFF04C0FFFF040002FF0200FEFF
+00FD9241: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C002FFFFC007FF020002FFFE00FF07C0
+00FD9251: FFFFFFFFFFFFFFFFFFFFFFFF FFFF040002FF07C006FF10C0
+
+;------------------------- end -------------------------
+

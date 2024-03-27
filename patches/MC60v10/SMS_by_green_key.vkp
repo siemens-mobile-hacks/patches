@@ -1,0 +1,18 @@
+;MC60v10
+;Отправка SMS нажатием "Зелёной кнопки"
+;Send SMS by "green" key
+;(c) ZiHwA
+;(p) Kanibaals
+;Version: 
+;PatchID: 3626
+;Details: https://patches.kibab.com/patches/details.php5?id=3626
+/*
+English: Extend "call key" function when sending SMS:
+Finished SMS -> green key -> left soft key choose number (either input number directly) -> green key (or right soft key) send SMS
+
+
+*/
+000BCEDE: 77 05
+000BCEE1: 0E 13
+;------------------------- end -------------------------
+

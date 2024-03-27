@@ -1,0 +1,14 @@
+;M55v91
+;Уменьшить ширину пробела в малом шрифте
+;Reduce space in small font
+;(c) ?
+;Version: 
+;PatchID: 2136
+;Details: https://patches.kibab.com/patches/details.php5?id=2136
+/*
+
+*/
+222433: 04 02
+
+;------------------------- end -------------------------
+

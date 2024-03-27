@@ -1,0 +1,14 @@
+;SL45iv56
+;Входящее Flash SMS - сразу на полный экран
+;Incoming Flash SMS - immediatly in full screen
+;(c) Roxxy. Lalo
+;(p) Lalo
+;Version: 
+;PatchID: 2097
+;Details: https://patches.kibab.com/patches/details.php5?id=2097
+/*
+Date: 07.06.2004
+*/
+4537A1: 0A 05
+;------------------------- end -------------------------
+

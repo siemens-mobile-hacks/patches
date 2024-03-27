@@ -1,0 +1,14 @@
+;E71v45
+;Удалять Файлы Только-для-Чтения в Card-Explorer'е
+;Delete Read-Only Files in Card-Explorer
+;(c) 1nvisible
+;Version: 
+;PatchID: 10313
+;Details: https://patches.kibab.com/patches/details.php5?id=10313
+/*
+
+*/
+05D0F00: 01 00
+0694F28: 0100000A 070000EA
+;------------------------- end -------------------------
+

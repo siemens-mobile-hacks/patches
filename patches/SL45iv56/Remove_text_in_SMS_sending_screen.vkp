@@ -1,0 +1,16 @@
+;SL45iv56
+;Убрать текст с окна отправки SMS
+;Remove text in SMS sending screen
+;(c) GoLL@B
+;Version: 
+;PatchID: 2665
+;Details: https://patches.kibab.com/patches/details.php5?id=2665
+/*
+English: Thanks to this patch we don`t have text in bottom of screen when we use full sending screen and "blank" rectangle doesn`t appear.
+
+
+Release: 24 February, 2006
+*/
+18B2D0:7904 FFFF
+;------------------------- end -------------------------
+

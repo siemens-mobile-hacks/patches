@@ -1,0 +1,15 @@
+;SK65v50
+;Подсветка с шагом 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 266
+;Details: https://patches.kibab.com/patches/details.php5?id=266
+/*
+Подсветка с шагом 5%.
+*/
+0387184: 0A 05 ;05 или любая цифра в HEX
+0387194: 0A 05 ;05 или любая цифра в HEX
+;------------------------- end -------------------------
+

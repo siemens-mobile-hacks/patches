@@ -1,0 +1,20 @@
+;E71v45
+;Иконки меню без красных уголков
+;Menu icons without red corners
+;(c) MAXIM
+;Version: 
+;PatchID: 10760
+;Details: https://patches.kibab.com/patches/details.php5?id=10760
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=e71v45&f=Fix_Menu_v45.zip
+
+/*
++Меню без красных углоы
++Исправлена статическая иконка радио
++При использовании ява-меню положить flexmenu.properties с выравненной сеткой
++Исправлены иконки внутри пунктов меню Камера, Контакты, Вызовы, Игры, Мои файлы, Медиаплеер.
+
+P.S. Патч и flexmenu.properties во вспомогательных файлах
+*/
+Патч и flexmenu.properties во вспомогательных файлах
+;------------------------- end -------------------------
+

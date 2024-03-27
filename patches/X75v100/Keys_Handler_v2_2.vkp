@@ -1,0 +1,136 @@
+;X75v100
+;Обработчик клавиш
+;Keys Handler
+;(c) -=(Kad)=-
+;Version: 2.2
+;PatchID: 7064
+;Details: https://patches.kibab.com/patches/details.php5?id=7064
+/*
+Обновление! Совместимость с загрузчиком эльфов 2.2
+*/
+#pragma enable old_equal_ff
+006D000: 01B5071C041C802084438248C4DF1FD0
+006D010: 071C43DF01307978C14010D3F97A0129
+006D020: 02D06EDF01280AD0797A012902D07FDF
+006D030: 012804D0B878F978BA883B7A98DF43DF
+006D040: 0130B97AC14004D36EDF012800D001E0
+006D050: D5E0CAE0C7DFDF8006782A2E05D17422
+006D060: B85CC7DFF9013969C8E0232E05D17522
+006D070: B85CC7DFF9017969C0E0302E05D17622
+006D080: B85CC7DFF901B969B8E0312E05D17722
+006D090: B85CC7DFF901F969B0E0322E05D17822
+006D0A0: B85CC7DFF901396AA8E0332E05D17922
+006D0B0: B85CC7DFF901796AA0E0342E05D17A22
+006D0C0: B85CC7DFF901B96A98E0352E05D17B22
+006D0D0: B85CC7DFF901F96A90E0362E05D17C22
+006D0E0: B85CC7DFF901396B88E0372E05D17D22
+006D0F0: B85CC7DFF901796B80E0382E05D17E22
+006D100: B85CC7DFF901B96B78E0392E05D17F22
+006D110: B85CC7DFF901F96B70E03D2E05D18022
+006D120: B85CC7DFF901396C68E03E2E05D18122
+006D130: B85CC7DFF901796C60E03B2E05D18222
+006D140: B85CC7DFF901B96C58E03C2E05D18322
+006D150: B85CC7DFF901F96C50E01A2E05D18422
+006D160: B85CC7DFF901396D48E00E2E05D18522
+006D170: B85CC7DFF901796D40E00D2E05D18622
+006D180: B85CC7DFF901B96D38E00C2E05D18722
+006D190: B85CC7DFF901F96D30E00B2E05D18822
+006D1A0: B85CC7DFF901396E28E0012E05D18922
+006D1B0: B85CC7DFF901796E20E0042E05D18A22
+006D1C0: B85CC7DFF901B96E18E0152E05D18B22
+006D1D0: B85CC7DFF901F96E10E0142E05D18C22
+006D1E0: B85CC7DFF901396F08E06EDF012806D0
+006D1F0: C7DFDF800078272801D1F968884781BC
+006D200: 04373847
+
+0006D210: E4D3C2B109AD00000000000000000000,"\
+{p=`Keys handler` id=ad09 cp=`-=(Kad)=-` ver=2.2}","\
+{c cmds no=0x0D prev=0x02 next=0x01 fwd=0x12 rwd=0x13 `list begin`=0x1D `track begin`=0x27 pause=0x10 play=0x0E toggle=0x11 stop=0x0F vol_up=0x15 vol_dwn=0x16 kill=0x0C mute=0x0A}","\
+{sm `Work in`}\
+{1.0 cb `Lock`}\
+{1.1 cb `Unlock` v=1}\
+{11 cb `Work in call`}\
+{9 cb `Work if player on` v=1}","\
+{endsm}\
+{sm `Sound`}\
+{2 h `Sound №` v=80}","\
+{3 b `Frequency` v=10}\
+{4 ms `Duration` v=12}\
+{8 cb `Play if vibra off` v=1}","\
+{endsm}\
+{sm `Launch funcs`}","\
+{sm `Work in`}\
+{10.0 cb `Lock` v=1}\
+{10.1 cb `Unlock`}\
+{endsm}\
+{12 a `Headset key` v=a032dddb}","\
+{sm `Num keys`}\
+{16 a `key *` v=a032ddd3}","\
+{20 a `key #` v=a032e411}\
+{24 a `key 0` v=a032e411}\
+{28 a `key 1` v=a032e411}\
+{32 a `key 2` v=a032e411}","\
+{36 a `key 3` v=a032e411}","\
+{40 a `key 4` v=a032e411}","\
+{44 a `key 5` v=a032e411}","\
+{48 a `key 6` v=a032e411}","\
+{52 a `key 7` v=a032e411}","\
+{56 a `key 8` v=a032e411}","\
+{60 a `key 9` v=a032e411}","\
+{endsm}","\
+{sm `Joystick keys`}","\
+{64 a `joy left` v=a032e411}","\
+{68 a `joy right` v=a032e411}","\
+{72 a `joy up` v=a032e411}","\
+{76 a `joy down` v=a032e411}","\
+{80 a `joy cntr` v=a032e411}","\
+{endsm}","\
+{sm `System keys`}","\
+{84 a `vol down` v=a032e411}","\
+{88 a `vol up` v=a032e411}","\
+{92 a `red key` v=a032e411}","\
+{96 a `green key` v=a032e411}","\
+{100 a `left soft` v=a032e411}","\
+{104 a `right soft` v=a032e411}","\
+{108 a `media key` v=a032e411}","\
+{112 a `camera key` v=a032e411}","\
+{endsm}","\
+{endsm}","\
+{sm `Media control`}","\
+{sm `Num keys`}\
+{116 o `key * cmd` c=cmds}\
+{117 o `key # cmd` c=cmds}","\
+{118 o `key 0 cmd` c=cmds}\
+{119 o `key 1 cmd` c=cmds}","\
+{120 o `key 2 cmd` c=cmds}","\
+{121 o `key 3 cmd` c=cmds}","\
+{122 o `key 4 cmd` c=cmds}","\
+{123 o `key 5 cmd` c=cmds}","\
+{124 o `key 6 cmd` c=cmds}","\
+{125 o `key 7 cmd` c=cmds}","\
+{126 o `key 8 cmd` c=cmds}","\
+{127 o `key 9 cmd` c=cmds}","\
+{endsm}","\
+{sm `Joystick keys`}","\
+{128 o `joy left cmd` c=cmds v=0x02}","\
+{129 o `joy right cmd` c=cmds v=0x01}","\
+{130 o `joy up cmd` c=cmds}","\
+{131 o `joy dwn cmd` c=cmds}","\
+{132 o `joy cntr cmd` c=cmds v=0x11}","\
+{endsm}","\
+{sm `System keys`}","\
+{133 o `vol dwn cmd` c=cmds v=0x01}\
+{134 o `vol up cmd` c=cmds v=0x02}\
+{135 o `red key cmd` c=cmds}","\
+{136 o `green key cmd` c=cmds}","\
+{137 o `left soft cmd` c=cmds}","\
+{138 o `right soft cmd` c=cmds v=0x0C}","\
+{139 o `media key cmd` c=cmds}","\
+{140 o `camera key cmd` c=cmds}","\
+{endsm}","\
+{endsm}","\
+",00
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

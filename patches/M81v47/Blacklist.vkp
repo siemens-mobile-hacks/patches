@@ -1,0 +1,21 @@
+;M81v47
+;Черный список
+;Blacklist
+;(c) ThE TrIFoN, SiNgle
+;(p) Barracuda
+;Version: 
+;PatchID: 9041
+;Details: https://patches.kibab.com/patches/details.php5?id=9041
+/*
+
+*/
+008FFD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFB50B2803D10020034B984703E0FFBC
+008FFE0: FFFFFFFFFFFFFFFFFFFFFFFF E8F11EED00BDFFBD4F2E9BA0
+;008FFD2 0B 0N ; N-черная группа 00- Нет группы, 03-Семья, 04-Друзья и так далее по возрастающей 
+; По умолчанию в патче черная группа - Хобби 2
+; N means Black Group, 00-No group, 03-Family, 04-Friends and so on
+; By default the Black Group is Hobby 2
+034AE5A: 2DF7E2ED 45F5B9F8
+09B0B18: 201C51F25EEF 002002F098F9 ;отклонять вызовы с подавленными номерами
+;------------------------- end -------------------------
+

@@ -1,0 +1,27 @@
+;M75v19
+;Дополнение к таблице PIT
+;Addition to PIT-table
+;(c) 1nvisible
+;(r) avkiev
+;(p) Kibab
+;Version: 1.1
+;PatchID: 2615
+;Details: https://patches.kibab.com/patches/details.php5?id=2615
+/*
+Теперь PIT-адреса картинок с номерами #1346(0x542) - 1446(0x5A6) можно разместить в свободной памяти (0xA0FD0050)
+Известные проблемы:
+Пока что нельзя смотреть или редактировать эти картинки с помощью SPC3 © ACiD[mrp]\b@iLLi
+English: Now you can assign PIT addresses to pics #1346(0x542) - 1446(0x5A6) in free memory (0xA0FD0050)
+Known Problems:
+You can't yet view or edit these pics by means of SPC3 © ACiD[mrp]\b@iLLi
+*/
+04A1F2C: 4205 A605 ; MaxPitNumber 1346->1446
+0800CF4: FFF7F5FF A1F4E4FA ; Entrypoint
+
+#pragma enable old_equal_ff
+04A22C0: 041C084B984207DC074B984204DBC01A
+04A22D0: C000064BC01810BD5EF303FD004B9847
+04A22E0: F90C80A0A605000042050000,0xA0FD0050 ; -,PitTableAddress
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

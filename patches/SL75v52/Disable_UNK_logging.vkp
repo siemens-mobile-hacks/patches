@@ -1,0 +1,14 @@
+;SL75v52
+;Отключить UNK логгинг
+;Disable UNK logging
+;(c) benj9
+;(p) kiREALlov
+;Version: 
+;PatchID: 8209
+;Details: https://patches.kibab.com/patches/details.php5?id=8209
+/*
+Отключает UNK логгинг
+*/
+0A0013C: 0F002DE9 1EFF2FE1
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;M55v10
+;Проводник без SIM-карты
+;Card Explorer without SIM-card
+;(c) SiNgle
+;Version: 
+;PatchID: 1543
+;Details: https://patches.kibab.com/patches/details.php5?id=1543
+/*
+При выходе красной кнопкой из апплета, телефон вырубается!
+
+*/
+368930: C404 5E05
+
+;------------------------- end -------------------------
+

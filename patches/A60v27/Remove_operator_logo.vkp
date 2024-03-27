@@ -1,0 +1,14 @@
+;A60v27
+;Убрать название оператора на главном экране и в заставке
+;Remove operator logo on inle and screensaver
+;(c) .
+;(p) Rasp
+;Version: 
+;PatchID: 10474
+;Details: https://patches.kibab.com/patches/details.php5?id=10474
+/*
+
+*/
+6C252E: DAD6A2B7DAD556C4F07FD740D700 DB0088808870886026F02200DB00
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;M75v12
+;Скачивание стандартным браузером файлов формата .zip
+;Downloading by standard browser files of format .zip
+;(c) Geka
+;Version: 1.1
+;PatchID: 6062
+;Details: https://patches.kibab.com/patches/details.php5?id=6062
+/*
+Вместо "zip" можно выставлять некоторые другие форматы на ваш выбор, к примеру "rar"
+Теперь сохраняет 0:\\misc\data inbox\название файла.zip(rar)
+*/
+0635C1B: 6A617661 "zip"00 ; скачивание
+0598D38: 646174 "zip" ; сохранение в .zip
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;CX75v5
+;Чёрнобелый_режим_камеры
+;Black_and_white_camera
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 455
+;Details: https://patches.kibab.com/patches/details.php5?id=455
+/*
+Чёрно-белый режим съёмки камерой по умолчанию.
+*/
+0D09E27: 3F163F 801680
+;------------------------- end -------------------------
+

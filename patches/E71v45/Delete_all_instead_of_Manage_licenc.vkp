@@ -1,0 +1,14 @@
+;E71v45
+;"Удалить все" вместо "Управ.лиценз." в Моих Файлах
+;"Delete all" instead of "Manage licence" in My Stuff
+;(c) @ndres aka PRM
+;Version: 
+;PatchID: 10312
+;Details: https://patches.kibab.com/patches/details.php5?id=10312
+/*
+
+*/
+071AA34: 23 07
+08704A4: 7821 1B00
+;------------------------- end -------------------------
+

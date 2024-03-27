@@ -1,0 +1,17 @@
+;CX75v13
+;Ускоритель java
+;Java acceleration
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 761
+;Details: https://patches.kibab.com/patches/details.php5?id=761
+/*
+RUS: Ускоряет выполнение ява-приложений и ява-игр. Есть мелкие косяки с обновлением прорисовки софт-кнопок.
+
+ENG: Increases the speed of Java applications execution. There are some small bugs with softkeys redrawing.
+*/
+0899E44: 02 01
+;------------------------- end -------------------------
+

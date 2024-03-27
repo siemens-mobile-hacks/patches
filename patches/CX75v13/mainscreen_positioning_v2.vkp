@@ -1,0 +1,54 @@
+;CX75v13
+;Позиционирование на главном экране
+;Mainscreen positioning
+;(c) SiNgle, BuG
+;(r) KiRiK, arsh0r
+;Version: 2.0
+;PatchID: 801
+;Details: https://patches.kibab.com/patches/details.php5?id=801
+/*
+RUS: Позиционирует элементы на главном экране.
+
+ENG: Positions elements on the main screen.
+*/
+;Charge Indicator (Switched-Off Mode)
+02A8BDA: 10 5E ; background end Y
+02A8BE0: 02 50 ; background start Y
+02A8BE2: 63 33 ; background start X
+02A8BE4: 80 50 ; background end X
+02A8BE9: F094FB 280028 ; no background
+02A8BF2: 02 50 ; Y
+02A8BF4: 63 33 ; X
+
+;Net
+02A8C92: 10 0C ; background end Y
+02A8C96: 02 01 ; background start Y
+02A8C98: 21 22 ; background end X
+02A8C9A: 03 01 ; background start X
+;02A8C9F: F039FB 280028 ; no background
+02A8CA8: 02 01 ; Y
+02A8CAA: 03 01 ; X
+
+;Iconbar
+02A9056: 10 0F ; background end Y
+02A905A: 02 01 ; background start Y
+02A905C: 23 36 ; background start X
+02A905E: 61 74 ; background end X
+;02A9065: F056F9 280028 ; no background
+02A9090: 21 34 ; X
+02A90AA: 02 01 ; Y
+
+;Battery
+02A9144: 10 18 ; background end Y
+02A9148: 02 0C ; background start Y
+02A914A: 80 22 ; background end X
+02A914C: 63 01 ; background start X
+;02A9151: F0E0F8 280028 ; no background
+02A9172: 02 0C ; Y
+02A9174: 63 01 ; X
+
+04AA930: 08 11 ; Y - Provider name
+04AA940: 1A 23 ; Y - Sub provider name
+02CCA04: A1 A0 ; Y - Time & Date
+;------------------------- end -------------------------
+

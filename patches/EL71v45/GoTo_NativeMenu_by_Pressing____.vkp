@@ -1,0 +1,14 @@
+;EL71v45
+;Идем в NativeMenu по Нажатию ###
+;GoTo NativeMenu by Pressing ###
+;(c) SiNgle
+;(p) -=PaScaL=-
+;Version: 
+;PatchID: 8062
+;Details: https://patches.kibab.com/patches/details.php5?id=8062
+/*
+
+*/
+08D5A82: 69F06AFD 67F512F9
+;------------------------- end -------------------------
+

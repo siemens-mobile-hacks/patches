@@ -1,0 +1,18 @@
+;SL45iv56
+;Разблокировка клавиатуры долгим нажатием "#", без подтверждения "OK"
+;Use only long press of # to unlock keypad
+;(c) RizaPN
+;Version: 
+;PatchID: 1560
+;Details: https://patches.kibab.com/patches/details.php5?id=1560
+/*
+Патч №021 с http://patch.oslik.ru/SL45_RU
+*/
+3AF6F4: DAD66C2C DADAE2F6 
+3B06E0: DC45 0D06 
+
+;Для отключения сообщения "Клавиатура разблокирована" добавьте: 
+
+3AD2B4: DADB 0D01
+;------------------------- end -------------------------
+

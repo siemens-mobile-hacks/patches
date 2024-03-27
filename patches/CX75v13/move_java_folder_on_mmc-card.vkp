@@ -1,0 +1,25 @@
+;CX75v13
+;Перенос папки Java на MMC-карту
+;Move Java folder on MMC-card
+;(c) TAPAKAH
+;Version: 1.0
+;PatchID: 767
+;Details: https://patches.kibab.com/patches/details.php5?id=767
+/*
+RUS: Переносит папку Java с диска 0:/ телефона на MMC-карту. Полезность патча очевидна тем, кто любит держать в телефоне много ява-приложений и ява-игр.
+
+ENG: Transfers folder Java from a disk 0:/ phone on a MMC-card. Utility of a patch is obvious that who likes to hold in phone many java-applications and java-games.
+*/
+004A4C1E: 30 34
+004A4C30: 30 34
+004A4C44: 30 34
+004A4C6A: 30 34
+004A4C98: 30 34
+004A4CCA: 30 34
+004A4CEC: 30 34
+004A4D1E: 30 34
+004A4D42: 30 34
+004A4D60: 30 34
+
+;------------------------- end -------------------------
+

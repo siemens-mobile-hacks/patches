@@ -1,0 +1,19 @@
+;AX75v16
+;Автонабор через определенный промежуток постоянно, без увеличений
+;The auto-collection through the specific space constantly, without the increases
+;(c) SiNgle,
+;(r) mamyx
+;(p) dimon_quaker
+;Version: 
+;PatchID: 4339
+;Details: https://patches.kibab.com/patches/details.php5?id=4339
+/*
+
+*/
+00217444: 08C1 CC00
+
+; 0A - 10 секунд
+0021B5AC: 05 0A
+
+;------------------------- end -------------------------
+

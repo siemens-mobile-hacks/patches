@@ -1,0 +1,27 @@
+;EL71v45
+;Диспетчер перерисовки главного экрана
+;Idle screen redraw dispatcher
+;(c) Miha_r
+;Version: 
+;PatchID: 8986
+;Details: https://patches.kibab.com/patches/details.php5?id=8986
+/*
+Send IPC message on idle screen redraw
+IPC message parameters: 
+name_to = "IdleUpd" 
+name_from = "IdleUpd"
+
+Эльф IdleDisp больше не нужен
+*/
+05C42BC: ACB0041C8BA82422 00498847019E06A0
+
+#pragma enable old_equal_ff
+0069E00: 7146FFB400F008E8FFBCACB0041C8BA8
+0069E10: 242204318F46C0461C309FE500402DE9
+0069E20: 0020A0E3B010A0E3DE1C81E30900A0E3
+0069E30: 420C80E3000100EF0080BDE8509E06A0
+0069E40: 49646C655570640049646C6555706400
+0069E50: 409E06A0489E06A000000000
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

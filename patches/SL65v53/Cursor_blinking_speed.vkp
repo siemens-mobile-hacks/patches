@@ -1,0 +1,13 @@
+;SL65v53
+;Скорость мигания курсора
+;Cursor blinking speed
+;(c) SiNgle
+;Version: 
+;PatchID: 5254
+;Details: https://patches.kibab.com/patches/details.php5?id=5254
+/*
+
+*/
+091D130: 2C01 8003
+;------------------------- end -------------------------
+

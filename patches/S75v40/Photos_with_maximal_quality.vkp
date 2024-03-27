@@ -1,0 +1,14 @@
+;S75v40
+;Фотографии с максимальным качеством
+;Photos with maximal quality
+;(c) SiNgle
+;Version: 
+;PatchID: 3757
+;Details: https://patches.kibab.com/patches/details.php5?id=3757
+/*
+
+*/
+20561C: 0000DDE5 0200A0E3
+20562C: 0000DD05 0200A0E3
+;------------------------- end -------------------------
+

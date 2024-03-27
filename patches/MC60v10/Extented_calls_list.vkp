@@ -1,0 +1,21 @@
+;MC60v10
+;Green key ->  Extented calls list
+;Green key ->  Extented calls list
+;(c) Rasp
+;(p) Kanibaals
+;Version: 2.0
+;PatchID: 3333
+;Details: https://patches.kibab.com/patches/details.php5?id=3333
+/*
+No English doc at the moment! :(
+набранные,принятые,неотвеченные
+*/
+0D7139: 6C96FF 9C9005
+
+7C0590: FFFFFFFFFFFFFFFF DA6C96FFDA6C36FF ;набранные,принятые,неотвеченные.
+7C0598: FFFFFFFF FA6C9AFF
+
+
+;D7134:DA97E24EDA6C96FF DA2584D9E026CC00 ;old one buggy
+;------------------------- end -------------------------
+

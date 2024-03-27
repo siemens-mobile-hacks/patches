@@ -1,0 +1,19 @@
+;CX70v56
+;wav > mp3 icon FS
+;wav > mp3 icon FS
+;(c) Palya
+;(r) b@iLLi
+;Version: 
+;PatchID: 5500
+;Details: https://patches.kibab.com/patches/details.php5?id=5500
+/*
+Используется совместно с mp3 шуткой и иконками файловой системы. На вновь испеченном mp3 появляются картинки.
+*/
+; ##### Picture 553 #####
+00DA116C: 0E0E85000873D9A0 0E0E8500D070D9A0
+          
+; ##### Picture 554 #####
+00DA1174: 2020850088A7E4A0 202085003831E4A0
+
+;------------------------- end -------------------------
+

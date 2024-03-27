@@ -1,0 +1,14 @@
+;S55v91
+;Разблокировка клавиатуры при двойном нажатии #
+;Unlocking of keyboard with the dual pressure #
+;(c) Matr!x
+;(p) Mich3L
+;Version: 
+;PatchID: 4802
+;Details: https://patches.kibab.com/patches/details.php5?id=4802
+/*
+
+*/
+5E90B8: EA303291 CC00CC00
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;M75v25
+;Скины на ММС
+;Skins on MMC
+;(c) ---
+;Version: 
+;PatchID: 4122
+;Details: https://patches.kibab.com/patches/details.php5?id=4122
+/*
+
+*/
+04A56FE: 30 34
+;------------------------- end -------------------------
+

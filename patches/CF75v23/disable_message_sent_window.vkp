@@ -1,0 +1,14 @@
+;CF75v23
+;Отключить окошко «Сообщение отправлено»
+;Disable «Message sent» window
+;(c) BingK
+;(p) Виктор89
+;Version: 
+;PatchID: 9947
+;Details: https://patches.kibab.com/patches/details.php5?id=9947
+/*
+
+*/
+0534320: BDF05EEB C0460020
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;A50v12
+;Включение полной версии игры "BattleMail" (multiplayer)
+;Enable full version of game "BattleMail" (multiplayer)
+;(c) аноним
+;Version: 
+;PatchID: 3146
+;Details: https://patches.kibab.com/patches/details.php5?id=3146
+/*
+
+*/
+; Включение игры "BattleMail" в меню "Игры":
+;0240B9A: 3A 33 ;эта строка уже есть в патче Превращения а50 в с45
+
+; Включение полной версии игры "BattleMail Multiplayer"(SMS-Chat??):
+32259C: FADF74CF FADF90D4
+1FD508: E01C 0D04; не показывать msg "Актив.реж. BattleMail Multiplayer"
+;------------------------- end -------------------------
+

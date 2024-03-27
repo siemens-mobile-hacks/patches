@@ -1,0 +1,23 @@
+;EL71v45
+;Отключить некоторые иконки иконбара
+;Disable some icons in iconbar
+;(c) funMarkus
+;Version: 
+;PatchID: 8525
+;Details: https://patches.kibab.com/patches/details.php5?id=8525
+/*
+Патч нужен для формирования структурированного иконбара, управляемого эльфами
+*/
+05C2A0C: FFF7FCFC C046C046; MicroSD
+;05C278C: FFF73CFE C046C046; HandsFree
+;05C26C8: FFF79EFE C046C046; HiddenPlayer
+;05C2734: FFF768FE C046C046; BlueTooth
+;05C27AE: FFF72BFE C046C046; KeyLock
+;05C293E: FFF763FD C046C046; IsCalling
+;05C285E: FFF7D3FD C046C046; SoundsOff
+;05C265E: FFF7D3FE C046C046; HasNewMessage
+;05C29F2: FFF709FD C046C046; SendingMessage
+;05C290C: FFF77CFD C046C046; DownloadInBrowser
+;05C29B0: FFF72AFD C046C046; TurnOff
+;------------------------- end -------------------------
+

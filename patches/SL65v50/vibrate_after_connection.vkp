@@ -1,0 +1,31 @@
+;SL65v50
+;Вибра в момент начала разговора
+;Vibrate shortly after connection
+;(c) SiNgle
+;(p) KiRiK
+;Version: 1.2
+;PatchID: 712
+;Details: https://patches.kibab.com/patches/details.php5?id=712
+/*
+Вкл\выкл: Меню 2-5-5-4 (Авт.Дисплей) 
+При входящих не вибрирует.
+
+EN:
+On\Off: Menu 2-5-5-4 (Auto Display)
+Doesn't vibrate on incoming call connection.
+*/
+1647490: 18F0BEE80028 002827F04CEE
+#pragma enable old_equal_ff
+166F100: 566962726120416674657220436F6E6E
+166F110: 656374696F6E2076312E322028632953
+166F120: 694E676C65202870294B6952694B0000
+166F130: 00402DE9FF3F2DE90FE0A0E144F09FE5
+166F140: 000050E30900001A0100A0E30FE0A0E1
+166F150: 34F09FE5020050E30400001A2F00A0E3
+166F160: 0210A0E30120A0E30FE0A0E11CF09FE5
+166F170: 0FE0A0E118F09FE5000050E3FF3FBDE8
+166F180: 0040BDE80CF09FE5CF40B4A04B7930A1
+166F190: 707393A04324B1A0977464A1  
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

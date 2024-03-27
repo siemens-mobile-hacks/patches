@@ -1,0 +1,17 @@
+;A50v12
+;Убрать софт-клавиши с главного экрана
+;Hide softkeys from Mainscreen
+;(c) Ramil_
+;(r) Broken Brain
+;Version: 2
+;PatchID: 3130
+;Details: https://patches.kibab.com/patches/details.php5?id=3130
+/*
+
+*/
+06E8DE: DACB962C DAE292FE
+22FE92: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7402D00F3F8D82D49813D03DACAC65A
+22FEA2: FFFFFFFFFFFF DB00FACB962C
+317401: 0E 5E; Убрать правую серенькую кнопку при поиске сети
+;------------------------- end -------------------------
+

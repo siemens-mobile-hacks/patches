@@ -1,0 +1,13 @@
+;ME75v22
+;открыть заблокированые блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;Version: 
+;PatchID: 2676
+;Details: https://patches.kibab.com/patches/details.php5?id=2676
+/*
+
+*/
+086BA7C: 00 01
+;------------------------- end -------------------------
+

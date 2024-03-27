@@ -1,0 +1,22 @@
+;CX65v50
+;Показ текущего времени при разговоре
+;Show current time during call
+;(c) Bennie
+;(r) avkiev, 1nvisible
+;(p) ~Jhellico
+;Version: 1.1
+;PatchID: 473
+;Details: https://patches.kibab.com/patches/details.php5?id=473
+/*
+При включенной автоиндикации (Меню-2-5-5-4) вместе с продолжительностью разговора показывается текущее время
+*/
+1638DBC: 04A80B2117F06AEF 68461B2122F0E6FB
+
+#pragma enable old_equal_ff
+165B590: 30B5041CF5F780EB82B0002000A9F6F7
+165B5A0: 80EB201C064988472D21215401302118
+165B5B0: 00A80322034DA84702B0201C30BDFFFF
+165B5C0: C5DA53A171BC82A0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

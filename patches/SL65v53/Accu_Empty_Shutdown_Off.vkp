@@ -1,0 +1,16 @@
+;SL65v53
+;Выключение при разряженой батарейке
+;Accu Empty Shutdown Off
+;(c) benj9
+;(r) ThE TrIFoN
+;(p) andrey_ua
+;Version: 2
+;PatchID: 3598
+;Details: https://patches.kibab.com/patches/details.php5?id=3598
+/*
+; выключите профайлы в мидлете после старта. не используйте слишком часто. можете повредить ваш аккумулятор!
+English:; turn off profiles in midlet after start. don't use too often. could damage your accu!
+*/
+125F57C: 18009FE50C0090E503AAFFEA 00009FE510FF2FE101DFFDA0
+;------------------------- end -------------------------
+

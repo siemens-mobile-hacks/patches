@@ -1,0 +1,21 @@
+;C75v22
+;Отключить разную отладку
+;Disable registration logging
+;(c) benj9
+;(r) dimonp25
+;(p) NevAtse
+;Version: 
+;PatchID: 9942
+;Details: https://patches.kibab.com/patches/details.php5?id=9942
+/*
+
+*/
+03C9398: 0F002DE9 1EFF2FE1
+03C9300: 0F002DE9 1EFF2FE1
+03C926C: 0F002DE9 1EFF2FE1
+03C9218: 0F002DE9 1EFF2FE1
+03C91C4: 0F002DE9 1EFF2FE1
+03C9170: 0F002DE9 1EFF2FE1
+03C90E4: 70402DE9 1EFF2FE1
+;------------------------- end -------------------------
+

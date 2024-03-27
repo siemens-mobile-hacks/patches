@@ -1,0 +1,28 @@
+;X75v100
+;Tetris
+;Tetris
+;(c) cbn
+;Version: 0.6
+;PatchID: 6264
+;Details: https://patches.kibab.com/patches/details.php5?id=6264
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Tetris_06.zip
+
+/*
+Tetris игра elf
+Множество настроек, редактор уровней.
+Идет на SGOLD, NEWSGOLD
+Положить в папку 4:\ZBin\Tetris
+В extension.cfg добавить строку:
+tet:4:\ZBin\Tetris\Tetris.elf
+
+*/
+Tetris игра elf
+Множество настроек, редактор уровней.
+
+Положить в папку 4:\ZBin\Tetris
+В extension.cfg добавить строку:
+tet:4:\ZBin\Tetris\Tetris.elf
+
+Скачайте приложенный файл
+;------------------------- end -------------------------
+

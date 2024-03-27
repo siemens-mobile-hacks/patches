@@ -1,0 +1,27 @@
+;SL45iv56
+;Аналоговые часы с фоном (заставка)
+;Analog clock with background (screensaver)
+;(c) Seklth
+;Version: 
+;PatchID: 5882
+;Details: https://patches.kibab.com/patches/details.php5?id=5882
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=ssaver_anclock.rar
+
+/*
+Бинарник ложим в a:\zbin\ScreenSavers\
+Загрузка фона из a:\zbin\screensavers\anclock_back.bmp 
+файл должен быть <=1344 байта, 101x80 пикселей.
++ толстая стрелка минуты. 
+
+P.S. если так долго грузятся картики, стоит ли делать анимированное меню с загрузкой с карты....
+
+
+English:
+Put bin into a:\zbin\ScreenSavers\
+Load background from a:\zbin\screensavers\anclock_back.bmp
+File size must be <=1344 byte, 101x80 pixels.
++ bold minutes line
+*/
+; see BIN-file in attach
+;------------------------- end -------------------------
+

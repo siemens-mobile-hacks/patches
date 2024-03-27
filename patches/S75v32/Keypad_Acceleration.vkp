@@ -1,0 +1,15 @@
+;S75v32
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) StrikerVoo
+;Version: 
+;PatchID: 3026
+;Details: https://patches.kibab.com/patches/details.php5?id=3026
+/*
+Уменьшает задержку между автоповторами нажатия на клавиатуру
+English:Reduces time between autoretry of key press
+*/
+08FDD3E: 011C 2021
+;------------------------- end -------------------------
+

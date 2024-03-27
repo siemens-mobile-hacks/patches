@@ -1,0 +1,15 @@
+;E71v45
+;Не показывать пропущенные события на главном экране
+;Do not show missed events on main screen
+;(c) Miha_r
+;Version: 
+;PatchID: 10349
+;Details: https://patches.kibab.com/patches/details.php5?id=10349
+/*
+Пропущенные события не отображаются на ГЭ
+*/
+05C1FB4: FFF79CFC C046C046 ;Other events
+05C2020: FFF766FC C046C046 ;Sms
+05C20BA: FFF719FC C046C046 ;Calls
+;------------------------- end -------------------------
+

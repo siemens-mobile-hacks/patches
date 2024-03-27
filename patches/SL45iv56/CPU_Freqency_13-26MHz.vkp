@@ -1,0 +1,16 @@
+;SL45iv56
+;Ускорение телефона
+;Speed Up Phone
+;(c) Rst7/CBSIE
+;Version: 
+;PatchID: 5919
+;Details: https://patches.kibab.com/patches/details.php5?id=5919
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=CPU_Freqency_13-26MHz.zip
+
+/*
+По умолчанию в телефоне 13Mhz, в яве 26Mhz 
+После запуска Set26Mhz выбирается 26MHz, но после выхода из явы опять 13MHz 
+*/
+; see in attach
+;------------------------- end -------------------------
+

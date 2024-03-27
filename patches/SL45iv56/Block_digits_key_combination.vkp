@@ -1,0 +1,16 @@
+;SL45iv56
+;Кнопки блокировки + #
+;Block digits + # key combination
+;(c) greenteas
+;Version: 2
+;PatchID: 2098
+;Details: https://patches.kibab.com/patches/details.php5?id=2098
+/*
+If you use the"KLP v1.2 3in1",you can find a bug:block digits + # key will in sim-location.this patch v2.0 Modification it.
+*/
+0x02D9EA: 47F22300 DABF30B9 
+0x1FB930: FFFFFFFFFFFFFFFF 88C0DAA3924098C0 
+0x1FB938: FFFFFFFFFFFFFFFF 48402D0347F22300 
+0x1FB940: FFFFFFFFFFFFFFFF 0D0247F2FF00DB00
+;------------------------- end -------------------------
+

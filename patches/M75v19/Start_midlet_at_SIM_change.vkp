@@ -1,0 +1,33 @@
+;M75v19
+;Запуск мидлета при смене SIM-карты
+;Start midlet at SIM change
+;(c) Fuchs
+;(r) Mikel, SiNgle, avkiev, 1nvisible, Stitch
+;(p) Kibab
+;Version: 2
+;PatchID: 3068
+;Details: https://patches.kibab.com/patches/details.php5?id=3068
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=m75v19&f=Start_midlet_at_SIM_change.rar
+
+/*
+Описание и мидлет лежат в прикреплённом файле.
+Эта версия умеет сохранять списки вызовов при замене карты.
+
+English:
+MIDlet & description are in the attached file.
+This version also saves calls list when changing SIM.
+*/
+02A755E: F6F13AE9 FAF140EF
+
++04A23E0
+#pragma enable old_equal_ff
+00: 0000A0E3FF7F2DE9
+08: 18008FE20030A0E3
+10: 0020A0E308409FE5
+18: 0FE0A0E114FF2FE1
+20: FFBFBDE8,0xA088DF54 ; -, StartMIDlet
+28: "2:\\gsm.jar",0000 ;путь к мидлету, его можно поменять на любой другой. !Слэшей должно быть по два!
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

@@ -1,0 +1,20 @@
+;C81v51
+;Правильное название дней в будильнике
+;Correct names of days in alarm clock
+;(c) Belarus
+;(p) Виктор89
+;Version: 
+;PatchID: 9105
+;Details: https://patches.kibab.com/patches/details.php5?id=9105
+/*
+
+*/
+-080006
+017FC55D: BE BD
+017FC56B: D0B5 D182
+017FC571: 8F 82
+017FC575: D183 D0B1
+017FC57A: D0BE D181
++0
+;------------------------- end -------------------------
+

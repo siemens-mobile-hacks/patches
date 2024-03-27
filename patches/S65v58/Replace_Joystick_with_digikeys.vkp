@@ -1,0 +1,33 @@
+;S65v58
+;Замена джойстика цифровыми клавишами
+;Replace Joystick with digi-keys
+;(c) KreN
+;(p) Виктор89
+;Version: 
+;PatchID: 9522
+;Details: https://patches.kibab.com/patches/details.php5?id=9522
+/*
+Нажмите * и 1 чтобы изменить функциональность цифровых клавиш на функции джостика и обратно
+English: Press * and 1 to change functionality of digi-keys into joystick functions and back
+*/
+1158642: 010602D5FFF793FF10BD 014F3847C0460170FBA0 ; Y
+
+#pragma enable old_equal_ff
+0FB7000: 1D4F3B782A281AD0012B13D132281CD0
+0FB7010: B22824D034281AD0B42822D0352818D0
+0FB7020: B52820D0362816D0B6281ED0382814D0
+0FB7030: B8281CD001061CD5114FB84710BD012B
+0FB7040: 00D00223013B3B70F4E73B20F2E73D20
+0FB7050: F0E71A20EEE73E20ECE73C20EAE7BB20
+0FB7060: E8E7BD20E6E79A20E4E7BE20E2E7BC20
+0FB7070: E0E7024FB84710BD,0xA8000204,0xA11584B3 ; A,B
+0FB7080: 0xA1158571 ; C
+#pragma disable old_equal_ff
+
+; port info:
+; Y - entrypoint search for 010602D5FFF7????10BDFFF7
+; A - free 4 byte ram
+; B - KeypressOn
+; C - KeypressOff
+;------------------------- end -------------------------
+

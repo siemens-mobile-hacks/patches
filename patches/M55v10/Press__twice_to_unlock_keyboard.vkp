@@ -1,0 +1,13 @@
+;M55v10
+;Разблокировка клавиатуры при двойном нажатии
+;Press twice to unlock keyboard
+;(c) Matr!x
+;Version: 
+;PatchID: 1422
+;Details: https://patches.kibab.com/patches/details.php5?id=1422
+/*
+
+*/
+79B7B0: EA302AB8 CC00CC00
+;------------------------- end -------------------------
+

@@ -1,0 +1,35 @@
+;SL45iv56
+;Конвертер плейлистов
+;Playlist converter
+;(c) sc0ty
+;Version: 1.3
+;PatchID: 5925
+;Details: https://patches.kibab.com/patches/details.php5?id=5925
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=Playlist_converter__v1_3.zip
+
+/*
+English:
+Add a posibility to convert Winamp m3u and XMPlay pls file into Siemens mpl playlist.
+
+NEW VERSION: You can change driver letter to A:\
+
+You need patches:
+- FAM 3.2
+- BFA 2.2b
+- EXR 2
+- FTA 2
+
+You must add this lines to a:\execute.ext file:
+m3u:[location of PlayConv.bin]
+pls:[location of PlayConv.bin]
+(check example execute.ext into this archivum)
+
+To convert m3u playlist - run Card Explorer and click this file
+
+
+Relased: 17 November 2005
+Updated: 26 November 2005
+*/
+; see in attach
+;------------------------- end -------------------------
+

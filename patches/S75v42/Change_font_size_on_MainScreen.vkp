@@ -1,0 +1,32 @@
+;S75v42
+;Изменить размер шрифта на Главном экране
+;Change font size on MainScreen
+;(c) SiNgle, BuG, KiRiK, [crazy]misha
+;(p) RainMaker
+;Version: 3
+;PatchID: 4983
+;Details: https://patches.kibab.com/patches/details.php5?id=4983
+/*
+
+*/
+-1E10
+;fonts without Provider-Logo
+042E97C: 0B ff ; Date/Time
+042E98C: 05 ff ; Provider
+042E99C: 05 ff ; Sub-Provider
+042E9AC: 04 ff ; Flash-SMS/CB-News
+042E9BC: 0C ff ; Timer when Stopwatch running
+042E9CC: 0C ff ; Stopwatch/Timer
+
+;fonts with Provider-Logo
+042E9DC: 0B ff ; Date/Time
+042E9FC: 04 ff ; Flash-SMS/CB-News
+042EA00: 0C ff ; Timer when Stopwatch running
+042EA10: 0C ff ; Stopwatch/Timer
+
+;fonts on Skin Application Image
+042D384: 0B ff ; Date/Time ;42B574
+042D3A0: 0C ff ; Hotkey Info
++0
+;------------------------- end -------------------------
+

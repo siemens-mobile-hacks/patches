@@ -1,0 +1,23 @@
+;SL45iv56
+;ILC. Управление подсветкой
+;ILC. Illumination Control
+;(c) RizaPN
+;Version: 
+;PatchID: 1965
+;Details: https://patches.kibab.com/patches/details.php5?id=1965
+/*
+Изменяет шаг увеличения/уменьшения подсветки и добавляет
+максимум значений.
+
+English: Modify the illumination step and maximum value.
+
+
+Release: December 23, 2003
+*/
+0x20B07E: 08 04
+0x20B0A0: 08 04
+0x20B0C2: 08 04
+0x20B0E0: 08 04
+0x3C387C: F06D49C6 46FD0900
+;------------------------- end -------------------------
+

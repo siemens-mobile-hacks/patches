@@ -1,0 +1,17 @@
+;SL75v31
+;Разгон телефона до 208 МГц
+;Speedup of mobile till 208 MHz
+;(c) SiNgle
+;(p) StrikerVoo
+;Version: 
+;PatchID: 3265
+;Details: https://patches.kibab.com/patches/details.php5?id=3265
+/*
+
+*/
+2319E8: 08402DE9 2D4746EA 
+13C36A4: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 01002DE914009FE50000D0E5010050E3
+13C36B4: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0100BDE808402D1904F09F1504F09FE5
+13C36C4: FFFFFFFFFFFFFFFFFFFFFFFF 84F20800EC1923A07C1A23A0
+;------------------------- end -------------------------
+

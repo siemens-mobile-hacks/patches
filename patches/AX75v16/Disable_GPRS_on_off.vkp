@@ -1,0 +1,14 @@
+;AX75v16
+;Отключить подтверждение при Включении/Выключении GPRS
+;Disable GPRS on/off messages
+;(c) Matr!x
+;(p) dkBrazz
+;Version: 1
+;PatchID: 5876
+;Details: https://patches.kibab.com/patches/details.php5?id=5876
+/*
+
+*/
+2C0D04: 48402D09 FA2CDE0C
+;------------------------- end -------------------------
+

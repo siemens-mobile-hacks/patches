@@ -1,0 +1,14 @@
+;E71v45
+;Мелкий шрифт доп строчек курсора
+;Small font extra lines of cursor
+;(c) Feyman
+;Version: 
+;PatchID: 10094
+;Details: https://patches.kibab.com/patches/details.php5?id=10094
+/*
+В курсоре меню только верхняя строчка будет отображается нормальным шрифтом, 2 и 3 мелким
+*/
+
+094FD8A: 3968 0821
+;------------------------- end -------------------------
+

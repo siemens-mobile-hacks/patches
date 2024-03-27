@@ -1,0 +1,20 @@
+;CX70v50
+;Увеличить скорость видеоискателя (с вкл/выкл)
+;To increase speed of the videoselector
+;(c) SiNgle
+;(p) AsteriX
+;Version: 2.12
+;PatchID: 79
+;Details: https://patches.kibab.com/patches/details.php5?id=79
+/*
+Патч увеличивает скорость видеоискателя с (вкл./выкл.)
+Работает когда в опциях Баланс белого стоит "Автоматич." (отключает Nightmode)
+*/
+12A4708: 3200A0E3 FCEDF4EB
+;132B743: 40 10;Эта строчка ускоряет неимоверно, но не делает фотки большого размера в этом режиме. Видео же пишет наоборот лучше, но 20 секунд (раскоментируйте если нужно)
+132B751: 80 C0 ;яркость
+0FDFF00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FE5F2DE914009FE514109FE5000021E0
+0FDFF10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0400D0E5000050E33200A013FE9FBDE8
+0FDFF20: FFFFFFFFFFFFFFFF E12EEA4CBDCA9CE4
+;------------------------- end -------------------------
+

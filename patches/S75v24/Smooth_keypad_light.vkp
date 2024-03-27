@@ -1,0 +1,13 @@
+;S75v24
+;Плавное включение подсветки
+;Smooth keypad light
+;(c) SiNgle
+;Version: 
+;PatchID: 2179
+;Details: https://patches.kibab.com/patches/details.php5?id=2179
+/*
+
+*/
+0954F48: 0022 FF22
+;------------------------- end -------------------------
+

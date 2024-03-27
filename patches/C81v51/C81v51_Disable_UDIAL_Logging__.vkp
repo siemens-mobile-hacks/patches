@@ -1,0 +1,21 @@
+;C81v51
+;Отключить UDIAL логгинг
+;Disable UDIAL Logging
+;(c) benj9
+;(r) SimaFish
+;(p) Evgr
+;Version: 
+;PatchID: 10431
+;Details: https://patches.kibab.com/patches/details.php5?id=10431
+/*
+Отключает UDIAL логгинг
+*/
+
+/*
+
+Отключает UDIAL логгинг
+*/
+04F1CE4: 0FB4 7047
+
+;------------------------- end -------------------------
+

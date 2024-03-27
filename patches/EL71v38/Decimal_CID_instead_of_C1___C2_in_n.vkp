@@ -1,0 +1,18 @@
+;EL71v38
+;Десятичный CID вместо C1 и C2 в списке соседних сот
+;Decimal CID instead of C1 & C2 in neighbour list
+;(c) слава Богу
+;(r) SiNgle
+;Version: 
+;PatchID: 5536
+;Details: https://patches.kibab.com/patches/details.php5?id=5536
+/*
+
+*/
+0D21B1A: 0123F856002802DA 203FB88B203702E0
+0D21B28: 2B 20
+0D21B2C: 02 05
+0D21B36: 0223 0CE0
+0FE3790: 31204332 656C4944
+;------------------------- end -------------------------
+

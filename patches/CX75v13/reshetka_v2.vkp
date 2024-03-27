@@ -1,0 +1,33 @@
+;CX75v13
+;Из любого места жмем ### и попадаем в главное меню
+;Goto mainmenu from anywhere by pressing ###
+;(c) ThE TrIFoN
+;(r) SiNgle
+;Version: 2.1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=964
+;PatchID: 810
+;Details: https://patches.kibab.com/patches/details.php5?id=810
+/*
+RUS: Теперь сворачивает MP3-плеер во время проигрывания. Делаем так - запускаем MP3-плеер, блокируем клавиатуру (долгое нажатие #), давим ### и  мы в native-меню с разблокированной клавой и подсветкой!
+;7 профиль - как будто его нет (идет в LOGAL)
+;6 профиль - идет в MainMenu
+Пункт меню "Спис. Вызовов" - "Время/Стоимость" вырубает телефон
+
+
+ENG:  Now turns off a MP3-player during playing. We do so - we start a MP3-player, we block the keyboard (long pressing *), we press *** and we in the native-menu with unblocked keyboard and illumination!
+The item of the menu " the List of Calls " - "Time/cost" cuts down phone
+*/
+07D57C8: 84F019F9 08F532FC
+#pragma enable old_equal_ff
+04DE030: FFB5134B98470130072818D021F3D9F8
+04DE040: 002807D103207BF3D5FE7FB40A490023
+04DE050: 0B707FBC0A4B98470130062803D1054B
+04DE060: 984700F006F8E0F549FC00F002F8034B
+04DE070: 9847FFBDEB6832A0E8F84FA8FF9985A0
+04DE080: 91F32BA0
+#pragma disable old_equal_ff
+;04DE038: 07 NP ;Profile (идет в LOGAL)
+;04DE05A: 06 NP ;Profile (идет в MainMenu)
+
+;------------------------- end -------------------------
+

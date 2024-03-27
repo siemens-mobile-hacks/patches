@@ -1,0 +1,146 @@
+;X65v100
+;Вызов Различных Функций при Залоченной Клавиатуре
+;Running Some Functions While Keyboard is Locked
+;(c) 1nvisible
+;(r) Bennie, avkiev, AsteriX, KiRiK, SiNgle
+;Version: 10.5
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=5757
+;PatchID: 1399
+;Details: https://patches.kibab.com/patches/details.php5?id=1399
+/*
+Телефон выполняет различные функции при нажатии клавиш при залоченной клавиатуре.
+Функция может быть вызвана как при одиночном нажатии клавиши, так и при двойном (для защиты от случайного нажатия).C "сервис-паком" ;)
+English:The phone runs some functions while keyboard is locked.
+The function may be called either on short press or on double press (to prevent casual pressing).
+*/
+#pragma enable old_equal_ff
+0FC20A0: 00B50223E85E00F019F8002802D1FEF7
+0FC20B0: 43F900BD01B00120FEF732F9201CB0BD
+0FC20C0: 0223E05E01B500F009F8002800D101BD
+0FC20D0: 02B00120FEF724F9301C70BDFFB5FEF7
+0FC20E0: 1FFB10377348FEF78BFD01BC5BD0C0B4
+0FC20F0: 53281AD000281AD001281AD005281AD0
+0FC2100: 0E281AD00F281AD025281AD026281AD0
+0FC2110: 27281AD028281AD029281AD014281AD0
+0FC2120: 15283BD016283AD03FE0042414E00624
+0FC2130: 12E0082410E00A240EE00C240CE00E24
+0FC2140: 0AE0102408E0122406E0142404E01624
+0FC2150: 02E0182400E01A24335D0134325D0121
+0FC2160: 114203D000F074F800291ED002211142
+0FC2170: 01D000F076F80421114201D000F076F8
+0FC2180: 3870FF2B11D0012B14D0022B15D0E02B
+0FC2190: 34D2D02B27D2902B1EDC06E04AE039E0
+0FC21A0: C0BC00F06DF80020FEBDC0BC00F068F8
+0FC21B0: 0120FEBDFEF720FAF7E7FEF73DF80128
+0FC21C0: 07D0FEF735F8012800D0EEE7FEF738F8
+0FC21D0: EBE7FEF739F8E8E7982BE6DC913B181C
+0FC21E0: FDF71AFFE1E7DF2BDFDCD03B5C203C21
+0FC21F0: 594309188819FEF72FF8D6E7EF2BD4DC
+0FC2200: E03B9B001C33F358002BCED0FFB49847
+0FC2210: FFBCCAE7B178002901D13870C0E70129
+0FC2220: 01D13870C1E700F013F80129BDD100F0
+0FC2230: 18F8BAE77178002901D13870B0E700F0
+0FC2240: 07F80029B1D000F00CF800F00FF8ACE7
+0FC2250: FDB53A789042387001D1012100E00021
+0FC2260: FDBDFFB50320FDF7DBFFFFBDFFB5FEF7
+0FC2270: 1BFA00233B70FEF763F810230370FFBD
+0FC2280: FFB5381D03A201320323F15CFDF7ECFF
+0FC2290: FFBDC046FFB5FEF743FA1037FF203870
+0FC22A0: FFBD
+
+0FC22B0: 0xB1C2D3E4,0x00001E00,00000000,00000000,\
+"{patch `RSFWKL` id=1E00 cp=1nvisible ver=10.5}","\
+{info `The phone runs some functions while keyboard is locked`}","\
+{1 o `Unlock Type` `By Long Press`=0 `By Double Press`=1 v=0}","\
+{2 o `Numbers` `Show Locked Screen`=0 `Do not Show`=1 `LightOn by Double Press`=2 v=2}","\
+{3 b `Delay for Double-Click` v=200}","\
+{of +4}","\
+{sm `Key Bindings`}","\
+{sm `Left SoftKey`}","\
+{0 hex `Function` maxlen=1 v=02}","\
+{1 hex `Option` maxlen=1 v=06}","\
+{endsm}","\
+{sm `Right SoftKey`}","\
+{2 hex `Function` maxlen=1 v=FF}","\
+{3 hex `Option` maxlen=1 v=07}","\
+{endsm}","\
+{sm `Red Button`}","\
+{4 hex `Function` maxlen=1 v=FF}","\
+{5 hex `Option` maxlen=1 v=02}","\
+{endsm}","\
+{sm `Green Button`}","\
+{6 hex `Function` maxlen=1 v=02}","\
+{7 hex `Option` maxlen=1 v=02}","\
+{endsm}","\
+{sm `Volume Down`}","\
+{8 hex `Function` maxlen=1 v=E0}","\
+{9 hex `Option` maxlen=1 v=07}","\
+{endsm}","\
+{sm `Volume Up`}","\
+{10 hex `Function` maxlen=1 v=01}","\
+{11 hex `Option` maxlen=1 v=00}","\
+{endsm}","\
+{sm `Joy Down`}","\
+{12 hex `Function` maxlen=1 v=92}","\
+{13 hex `Option` maxlen=1 v=03}","\
+{endsm}","\
+{sm `Joy Up`}","\
+{14 hex `Function` maxlen=1 v=91}","\
+{15 hex `Option` maxlen=1 v=03}","\
+{endsm}","\
+{sm `Joy Right`}","\
+{16 hex `Function` maxlen=1 v=D0}","\
+{17 hex `Option` maxlen=1 v=07}","\
+{endsm}","\
+{sm `Joy Left`}","\
+{18 hex `Function` maxlen=1 v=D1}","\
+{19 hex `Option` maxlen=1 v=07}","\
+{endsm}","\
+{sm `Joy Press`}","\
+{20 hex `Function` maxlen=1 v=E1}","\
+{21 hex `Option` maxlen=1 v=07}","\
+{endsm}","\
+{sm `Asterisk`}","\
+{22 hex `Function` maxlen=1 v=E2}","\
+{23 hex `Option` maxlen=1 v=07}","\
+{endsm}","\
+{endsm}","\
+{sm `Functions`}","\
+{24 a `0` v=A0318941}","\
+{28 a `1` v=A031894B}","\
+{32 a `2` v=A0319119}","\
+{36 a `3` v=A0319363}","\
+{40 a `4` v=A0319363}","\
+{44 a `5` v=A0319363}","\
+{48 a `6` v=A0319363}","\
+{52 a `7` v=A0319363}","\
+{56 a `8` v=A0319363}","\
+{60 a `9` v=A0319363}","\
+{64 a `A` v=A0319363}","\
+{68 a `B` v=A0319363}","\
+{72 a `C` v=A0319363}","\
+{76 a `D` v=A0319363}","\
+{80 a `E` v=A0319363}","\
+{84 a `F` v=A0319363}","\
+{endsm}","\
+{sm `Midlets`}","\
+{88 sf `0` mask=`*.jar` maxlen=59}","\
+{148 sf `1` mask=`*.jar` maxlen=59}","\
+{208 sf `2` mask=`*.jar` maxlen=59}","\
+{268 sf `3` mask=`*.jar` maxlen=59}","\
+{328 sf `4` mask=`*.jar` maxlen=59}","\
+{388 sf `5` mask=`*.jar` maxlen=59}","\
+{448 sf `6` mask=`*.jar` maxlen=59}","\
+{508 sf `7` mask=`*.jar` maxlen=59}","\
+{568 sf `8` mask=`*.jar` maxlen=59}","\
+{628 sf `9` mask=`*.jar` maxlen=59}","\
+{688 sf `A` mask=`*.jar` maxlen=59}","\
+{748 sf `B` mask=`*.jar` maxlen=59}","\
+{808 sf `C` mask=`*.jar` maxlen=59}","\
+{868 sf `D` mask=`*.jar` maxlen=59}","\
+{928 sf `E` mask=`*.jar` maxlen=59}","\
+{988 sf `F` mask=`*.jar` maxlen=59}","\
+{endsm}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

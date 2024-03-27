@@ -1,0 +1,26 @@
+;SL45iv56
+;RSB. Закругленная софт клавиша
+;RSB. (just another) Rounded Softkey Button
+;(c) RizaPN
+;Version: 
+;PatchID: 1878
+;Details: https://patches.kibab.com/patches/details.php5?id=1878
+/*
+Изменяет "окно" кнопки придавая ей новую форму, такую какую хотите вы
+Закругление это только один из эффектов.
+
+Патч №176 с http://patch.oslik.ru/SL45_RU
+*/
+0x20E2BE: 98609870 DAC7F0E8
+
+0x27E8F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6F81429D7501F03982846F2FFFF2D07
+0x27E900: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C04CC05DE01EE01FDAD60AA20DF39860
+0x27E910: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 9870DB00
+
+;Между координатами X и Y будет нарисован белый пиксель,
+;прописывается символами -FFFF-. Можете добавлять их сами.
+
+0x27E914: FFFFFFFFFFFFFFFFFFFFFFFF 00432E43004F2E4F36436443
+0x27E920: FFFFFFFFFFFF 364F644FFFFF
+;------------------------- end -------------------------
+

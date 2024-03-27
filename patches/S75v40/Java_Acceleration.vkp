@@ -1,0 +1,19 @@
+;S75v40
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 3735
+;Details: https://patches.kibab.com/patches/details.php5?id=3735
+/*
+Просто портирован из sw32. Работает, но эффективность нечем проверить
+*/
+;S75v40 - Ускоритель явы
+;S75v40 - Java Acceleration
+;(c) SiNgle
+;(p) ferro
+09731ec: 6549 0121
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S75v52
+;Замена имени в *#06#
+;Change name in *#06#
+;(c) avkiev
+;(p) Vedan
+;Version: 
+;PatchID: 8379
+;Details: https://patches.kibab.com/patches/details.php5?id=8379
+/*
+Смена имени в информации на любое заданное
+*/
+008108E: 533735003300300000000000 "Siemens S75i"
+
+;------------------------- end -------------------------
+

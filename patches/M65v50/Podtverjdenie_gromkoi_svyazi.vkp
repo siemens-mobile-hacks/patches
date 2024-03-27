@@ -1,0 +1,15 @@
+;M65v50
+;Убрать подтверждения при включении громкой связи
+;Toggle HandsFree without question
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 368
+;Details: https://patches.kibab.com/patches/details.php5?id=368
+/*
+
+*/
+1638AAC: CB21C9000022 002100210122
+1638AB4: 18F0C8E8 17F016E9
+;------------------------- end -------------------------
+

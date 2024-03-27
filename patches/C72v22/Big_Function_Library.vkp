@@ -1,0 +1,24 @@
+;C72v22
+;Большая Библиотека Функций
+;Big Function Library
+;(c) avkiev
+;(r) Geka
+;(p) Virusmater
+;Version: 
+;PatchID: 6954
+;Details: https://patches.kibab.com/patches/details.php5?id=6954
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=c72v22&f=Big_Function_Library.rar
+
+/*
+Этот патч сам по себе ничего не делает. Он предназначен для облегчения создания и портирования других патчей.
+Требуется для многих патчей, написанных с использованием концепции "Мастер-Патч + Библиотека функций" (c) 1nvisible, avkiev
+
+It is auxiliary patch. It consists of 255 most useable function.
+It is needed for many other patches, whitch are written using "Master-Patch+Functon Library" concept (c) 1nvisible, avkiev
+
+
+Патч стал очень длинный и его обновление стало затруднительным. Так что новые версии патча берем в вспомогательном Файле
+*/
+Смотрим приложенный файл...
+;------------------------- end -------------------------
+

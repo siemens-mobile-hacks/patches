@@ -1,0 +1,19 @@
+;C72v22
+;ZIPViewer
+;ZIPViewer
+;(c) (c) MaX6, const
+;(r) NForce, DJ, cbn
+;Version: 2.2
+;PatchID: 5823
+;Details: https://patches.kibab.com/patches/details.php5?id=5823
+/*
+
+*/
+0A5B751: 446F63 526172 ; DocViewer -> RarViewer
+0A5B75D: 586C73 "7z",00 ; XlsViewer -> RarViewer
+0A5B769: 506466 5A6970 ; PdfViewer -> ZipViewer
+0A5B790: 646F63 726172 ; doc -> rar
+0A5B7B0: 786C73 "7z",00 ; xls -> 7z
+0A5B7D0: 706466 7A6970 ; pdf -> zip
+;------------------------- end -------------------------
+

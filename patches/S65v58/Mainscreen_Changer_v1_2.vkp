@@ -1,0 +1,124 @@
+;S65v58
+;Изменение главного экрана
+;Mainscreen Changer
+;(c) BuG
+;(r) KreN, SiNgle, KiRiK, [crazy]misha (i) Lisugar
+;(p) -=[LCW]=-ExXtReMe
+;Version: 1.2
+;PatchID: 3175
+;Details: https://patches.kibab.com/patches/details.php5?id=3175
+/*
+; replaces the patches * Mainscreen Positioning *
+; and * change font size on mainscreen *
+; compatible to * Extended IconBar *
+; add alarm and appointment
+*/
+; net icons
+1698C2E: 00F0ECFA C046C046 ; clear old canvas call
+1698C36: 321C0221032000F0F8FA C046,00488047,0xA0FCA001
+
+; iconbar
+1698F52: 00F05AF9 C046C046 ; clear old canvas call
+1698F78: 00040014039021300704 00488047,0xA0FCA03B,C046
+1698F96: 825B0221381C00F048F9 C046,00498847,0xA0FCA09D
+
+; accu icons
+169903E: 00F0E4F8 C046C046 ; clear old canvas call
+1699046: 221C0221632000F0F0F8 C046,00488047,0xA0FCA01B
+
+; date and time with removed softkeys
+169FE6A: 3869A1220106090E201C C046,004DA847,0xA0FCA0BF
+
+; standard fonts
+16A00DA: A7F425FF0C4C022803D1 C046,00488047,0xA0FCA0DD
+0FCA10C: FFFFFFFF 08,373847 ; use 0A if standard fonts entry is word-aligned, otherwise 08
+
+; fonts with provider logo
+16A0138: 022068612E615248 00488047,0xA0FCA111
+
+;Appointment
+16A5164: 595E0139321C10F012E9 004A9047,0xA0FCA1CB,C046
+
+;Alarm
+16A5178: 3A1C0139281C10F008E9 004A9047,0xA0FCA1D7,C046
+
+0xFCA1F4: FFFFFFFFFFFFFFFF 0xA16B8E74,0xA1347F29
+
+#pragma enable old_equal_ff
+0xFCA000: 321CFFB50320022100F09BF802D0F036
+0xFCA010: 707DB17D00F09AF80BE0221CFFB56320
+0xFCA020: 022100F08EF802D0F036F07D317E00F0
+0xFCA030: 8DF8FFBC01BC0430004700AB188B0E23
+0xFCA040: 584300AB10B5EDB420240222422100F0
+0xFCA050: 78F806D0F036747EB27EF17E337F002B
+0xFCA060: 0DD102B482B0012001900D2080180090
+0xFCA070: 6318211C1098F6F757F802B002BCEDBC
+0xFCA080: 091A188B0130F5F7CBFF000400140590
+0xFCA090: 001910BC070420BC04352847825B40B5
+0xFCA0A0: 022100F04EF801D0F036B17E40BC381C
+0xFCA0B0: 80B4F6F731F880BC01BC043000473869
+0xFCA0C0: 20B5A12200F03DF801D0F036327D20BC
+0xFCA0D0: 0106090E201C40BC043630476EB5F6F7
+0xFCA0E0: 1FFB002F0BD0434C00F02BF807D0301D
+0xFCA0F0: 0768002F01D100F045F80436341CEEBC
+0xFCA100: 3D4880470437022800D13847
+0xFCA110: 022068617EB5F6F703FB002F0BD000F0
+0xFCA120: 10F8344C07D0301D0768002F01D100F0
+0xFCA130: 29F80436341C201CFEBC2E6138300437
+0xFCA140: 3847BFB52F48F6F75BFDBFBD07B5101C
+0xFCA150: F5F7DEFF041C101CF5F7D6FF0138013C
+0xFCA160: 06BC84B0367F002E07D10B1980180090
+0xFCA170: 012001901498F5F7D7FF02B007BCF5F7
+0xFCA180: CBFF00BD00B51B4D0127296801600435
+0xFCA190: 043001371D2FF8D1301C743070625030
+0xFCA1A0: F065301C7C30134DA96D0A6882644A68
+0xFCA1B0: C264296A01278A680260CA6842601030
+0xFCA1C0: 103101370A2FF6D100BD321CFFB5595E
+0xFCA1D0: 0139F22304E03A1CFFB50139281CF023
+0xFCA1E0: FFF7AFFF02D0F618707FB17FF5F794FF
+0xFCA1F0: 1FE7C046
+
+0xFCA200: 0xB1C2D3E4,0x0000BB02,00000000,00000000,\
+"{patch=`Mainscreen Changer` cp=BuG ver=1.2 id=BB02}","\
+{offset +0x70}","\
+{sm=Texts}","\
+{sm=standard}","\
+Y positions:","\
+{0x4 i `provider name` r=0..200 v=8}","\
+{0x14 i `sub provider name` r=0..200 v=0x1A}","\
+{0x24 i `CB/flash messages` r=0..200 v=0x64}","\
+{0x34 i `stopwatch/timer` r=0..200 v=0x72}","\
+{0x44 i `date/time` r=0..200 v=0x81}","\
+font sizes: (0-10)","\
+{0x8 i `provider name` r=0..10 v=3}","\
+{0x18 i `sub provider name` r=0..10 v=3}","\
+{0x28 i `CB/flash messages` r=0..10 v=7}","\
+{0x38 i `v_stopwatch/timer` r=0..10 v=7}","\
+{0x48 i `date/time` r=0..10 v=8}","\
+{endsm}","\
+{sm `with provider logo`}","\
+Y positions:","\
+{0x64 i `sub provider name/CB/flash msg` r=0..200 v=0x64}","\
+{0x74 i `stopwatch/timer` r=0..200 v=0x72}","\
+{0x84 i `date/time` r=0..200 v=0x81}","\
+font sizes: (0-10)","\
+{0x68 i `sub provider name/CB/flash msg` r=0..10 v=7}","\
+{0x78 i `stopwatch/timer` r=0..10 v=7}","\
+{0x88 i `date/time` r=0..10 v=8}","\
+{endsm}","\
+{0x94 b `date/time no softkeys` r=0..200 v=0xA1}","\
+{endsm}","\
+{sm=Icons}","\
+{0x95 xy `net icons` x=3 y=2}","\
+{0x97 xy `battery icons` x=0x63 y=2}","\
+{0x99 xy `icon bar` x=0x21 y=2}","\
+{0x9B b `icon bar width` v=0x42}","\
+{0x9D xy `alarm` x=0x57 y=160}","\
+{0x9F xy `appointment` x=0x47 y=160}","\
+{0x9C cb `disable canvases` v=0}","\
+{endsm}","\
+",00
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

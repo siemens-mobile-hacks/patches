@@ -1,0 +1,13 @@
+;E71v45
+;Отключить BootScreen
+;Disable BootScreen
+;(c) benj9
+;Version: 
+;PatchID: 10726
+;Details: https://patches.kibab.com/patches/details.php5?id=10726
+/*
+
+*/
+04A9F10: 1E34000B 0000A0E1
+;------------------------- end -------------------------
+

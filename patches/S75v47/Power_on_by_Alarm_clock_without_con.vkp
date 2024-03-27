@@ -1,0 +1,13 @@
+;S75v47
+;Не спрашивать подтверждения включения по будильнику
+;Power on by Alarm clock without confirmation
+;(c) ThE TrIFoN
+;Version: 
+;PatchID: 5796
+;Details: https://patches.kibab.com/patches/details.php5?id=5796
+/*
+
+*/
+0303E0C: 9FCC19FB 56C2FCEB
+;------------------------- end -------------------------
+

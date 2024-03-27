@@ -1,0 +1,16 @@
+;SK65v50
+;Изменение прогрессбара
+;MusicProgressBarChanger
+;(c) KreN
+;(r) SiNgle, Kad
+;(p) ~Jhellico
+;Version: 1.0
+;PatchID: 4588
+;Details: https://patches.kibab.com/patches/details.php5?id=4588
+/*
+
+*/
+03B099C: 081080E50C3080E5 04F01FE5,0xA0FC7117
+03B0CA8: 0250A0E1002090E50370A0E1 04E08FE204F01FE5,0xA0FC7101
+;------------------------- end -------------------------
+

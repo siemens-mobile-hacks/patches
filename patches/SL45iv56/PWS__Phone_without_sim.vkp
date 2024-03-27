@@ -1,0 +1,21 @@
+;SL45iv56
+;PWS. Телефон без SIM карты
+;PWS. Phone Without SIM Card
+;(c) DeadManS, rizapn
+;Version: 
+;PatchID: 337
+;Details: https://patches.kibab.com/patches/details.php5?id=337
+/*
+Полная функциональность телефона без SIM карты.
+Похоже всё равно сажает батарею. Надо доделать.
+
+Created: July 16, 2004 (original by DeadManS)
+Updated: July 17, 2004 (goto IDLE screen by rizapn)
+
+Патч №191 с http://patch.oslik.ru/SL45_RU
+*/
+0x024C2A: E004 E014
+0x44EEAC: DAE57C25 DAEEAC1C
+
+;------------------------- end -------------------------
+

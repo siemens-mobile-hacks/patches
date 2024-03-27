@@ -1,0 +1,22 @@
+;SL45iv56
+;Долгое нажатие бокового минуса для вкл./выкл. ИК на главном экране
+;Long press (leftside) minus to enable/unable IrDA on main screen
+;(c) lbuczko
+;(p) GoLL@B
+;Version: 
+;PatchID: 2668
+;Details: https://patches.kibab.com/patches/details.php5?id=2668
+/*
+English: This version is prepared for patch (left + to swap profiles by rc)
+
+
+Release: 6-3-2006 
+*/
+0x3B0396: 46FC0E00 FAE150DE 
+
+0x41DE50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46FC0D002D0446FC0E00FADB9A038880 
+0x41DE60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88C088D0DC5998C8A8D8DC4DD48C0400 
+0x41DE70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 98D098C046F8EB002D05988046FC0E00 
+0x41DE80: FFFFFFFFFFFFFFFFFFFFFFFFFFFF FADB9A039880DADCE846FADBF607
+;------------------------- end -------------------------
+

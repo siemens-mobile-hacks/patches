@@ -1,0 +1,59 @@
+;M65v50
+;Диск A 13.66Мб
+;Disk A 13.66Mb
+;(c) SiNgle, empeka, Hynix, AsteriX
+;Version: 2.1
+;PatchID: 95
+;Details: https://patches.kibab.com/patches/details.php5?id=95
+/*
+Увеличивает ёмкость диска А до 13,66 МБ!
+!!!Патч требует заливки файлов! файлы можно взять тут:
+
+http://patches.kibab.com/patches/bin/m65v50/incflex_files.rar
+
+ВНИМАТЕЛЬНО читайте инструкцию внутри!!!
+
+Ставится поверх патча №94 "Увеличение диска до 12,71МБ"
+*/
+/*
+Ставится после патча * M65v5003 * Диска A 12.71Мб v2.0 * !!!
+Делаем Fullflash Backup!
+!!!Сделайте backup всей файловой системы и адрессной книги, они будут отформатированы!!!
+1. Переносим ленгпак по адресу !!!17A0000!!!, его размер должен быть <=384кб (Langpack v5003_From_0E.bin)
+2. Убедитесь что у вас нету никаких патчей по адресу 0FC0000-0FF0000, если есть, отмените их
+3. Заливаем файлы по адресам: PIT.bin - 0DA0024, DATA.bin - 1660110(С этого архива, от CX65 не покатит)
+4. Ставим патч и после нажатия красной кнопки ждем 10-15 секунд, пока отформатируется новый диск
+To be installed after * M65v5003 * Disk A 12.71Mb v2.0 * !!!
+Make the Fullflash Backup!
+!!!make the backup of all file system and adressbook, all will be formated!!!
+1. Move your LangPack to !!!17A0000!!! address. LangPack's size should be <=384kb (Langpack v5003_From_0E.bin)
+2. Make sure you have no patches applied at 0FC0000-0FF0000 address, if you do, cancel them
+3. Install files to the following addresses: PIT.bin - 0DA0024, DATA.bin - 1660110(From this archive, CX65 version not work)
+4. Apply the following patch. Then press the red button and wait 10-15 second until the phone has finished formatting the increased disk
+*/
+083A718: 13 14
+083A764: 6D 75
+009B01E: F2A0000080A1000090A10000A0 DCA00000F2A0000080A1000090
+009B02E: B0A10000C0A10000D0A10000E0 A0A10000B0A10000C0A10000D0
+009B03E: F0A100000000 E0A10000F0A1
+13CFC3E: 0EA0 7AA1
+13CFCF6: 0EA0 7AA1
+13CFF12: 0EA0 7AA1
+#pragma enable old_equal_ff
+00B0368: 00000EA0000002000000DCA000000200
+00B0378: 0000DEA0000002000000E0A000000200
+00B0388: 0000E2A0000002000000E4A000000200
+00B0398: 0000E6A0000002000000FCA000000200
+#pragma disable old_equal_ff
+#pragma disable warn_no_old_on_apply
+00E0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0DC0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0DE0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0E00000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0E20000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0E40000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0E60000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+0FC0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+#pragma enable warn_no_old_on_apply
+;------------------------- end -------------------------
+

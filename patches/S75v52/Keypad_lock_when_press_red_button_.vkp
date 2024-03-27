@@ -1,0 +1,15 @@
+;S75v52
+;Блокировка клавиатуры при коротком нажатии на красную кнопку
+;Keypad lock when press red button 
+;(c) Saifaye 
+;(r) Evgr
+;(p) Виктор89
+;Version: 
+;PatchID: 10228
+;Details: https://patches.kibab.com/patches/details.php5?id=10228
+/*
+Отлично смотрится с 9130
+*/
+03458A2: A6F022EF E8F77CFD
+;------------------------- end -------------------------
+

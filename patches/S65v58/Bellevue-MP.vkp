@@ -1,0 +1,21 @@
+;S65v58
+;Красивый вид. Убрать иконки с главного экрана
+;Bellevue. Disable icons on mainscreen
+;(c) benj9
+;(r) (i) KreN
+;(p) Lasky
+;Version: MP
+;PatchID: 2026
+;Details: https://patches.kibab.com/patches/details.php5?id=2026
+/*
+
+*/
+;* Bellevue. Disable icons on mainscreen v2.1 *
+; (c) benj9
+; (r) (i) KreN
+; (p) -=[LCW]=-ExXtReMe
+
+16B5398: B50B15A1 0xA0FC3901
+
+;------------------------- end -------------------------
+

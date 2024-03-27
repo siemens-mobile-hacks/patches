@@ -1,0 +1,25 @@
+;C75v22
+;Вывод сообщения вместо пикоффа при запуске NSG-эльфа
+;Show message instead of turn-off when launching NSG elf
+;(c) Dimadze
+;(p) NevAtse
+;Version: 
+;PatchID: 9923
+;Details: https://patches.kibab.com/patches/details.php5?id=9923
+/*
+
+*/
+;PATCH_CSMCREATE
+0x007A5D80: 1F1C0E1C 5AF0BEFA
+;PATCH_BODY
+#pragma enable old_equal_ff
+0x00800300: 00B58E68002E12D1CE68002E0FD10E69
+0x00800310: 002E0CD14E69002E09D1CE6A8E600E6B
+0x00800320: CE604E6B0E618E6B4E6100F004E81F1C
+0x00800330: 0E1C00BD03402DE90100A0E3011F8FE2
+0x00800340: 480100EF0380BDE8446F6E2774207375
+0x00800350: 70706F727465642100
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;S75v52
+;Исправить отображение числа символов в заметках
+;Fix the number of symbols display in notes
+;(c) Evgr
+;(p) Виктор89
+;Version: 
+;PatchID: 10070
+;Details: https://patches.kibab.com/patches/details.php5?id=10070
+/*
+
+*/
+05E8974: 256400 202564
+0C00794: 04 02
+069B2B4: BD BE
+;------------------------- end -------------------------
+

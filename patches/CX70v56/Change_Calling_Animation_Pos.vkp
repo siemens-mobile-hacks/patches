@@ -1,0 +1,16 @@
+;CX70v56
+;Изменить позицию анимации звонка
+;Change Calling Animation Pos
+;(c) vmaxy202
+;(p) SiamiX
+;Version: 
+;PatchID: 4623
+;Details: https://patches.kibab.com/patches/details.php5?id=4623
+/*
+Опускает аниму чить ниже обычного. получается что анимация прижимается к номеру.
+
+*/
+0CF11D8: 4118 3221
+0CF134A: 4118 3221
+;------------------------- end -------------------------
+

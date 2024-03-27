@@ -1,0 +1,22 @@
+;C75v22
+;Смайлики вместо стандартной СМС-анимации
+;Smiles as standart SMS-animation
+;(c) Complex90
+;(p) SPC3
+;Version: 1.0
+;PatchID: 2116
+;Details: https://patches.kibab.com/patches/details.php5?id=2116
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=c75v22&f=smiles.rar
+
+/*
+Патч заменяет смс-анимацию с мальчиком-олигофреном на красивые анимированные смайлики.
+
+Patch change sms-animation to animated smiles.
+
+***
+
+Если будут наблюдаться какие-либо глюки, просьба незамедлительно сообщать. Желательно по ICQ (306008058)
+*/
+Сам патч находится в прикрепленном файле
+;------------------------- end -------------------------
+

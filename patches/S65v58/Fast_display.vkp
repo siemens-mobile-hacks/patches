@@ -1,0 +1,16 @@
+;S65v58
+;Быстрый показ окна "Язык ввода:" при выборе языка
+;Fast display of a window " Language of input: " at a choice of language
+;(c) SiNgle
+;Version: 
+;PatchID: 9075
+;Details: https://patches.kibab.com/patches/details.php5?id=9075
+/*
+
+*/
+/*
+Быстрый показ окна "Язык ввода:" при выборе языка.
+*/
+1213188: B80B 0100
+;------------------------- end -------------------------
+

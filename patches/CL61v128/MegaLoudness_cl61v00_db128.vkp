@@ -1,0 +1,17 @@
+;CL61v128
+;Мега-громкость
+;Mega-loudness
+;(c) SiNgle
+;(p) Marie
+;Version: 
+;PatchID: 10403
+;Details: https://patches.kibab.com/patches/details.php5?id=10403
+/*
+Увеличивает громкость воспроизводимого аудио
+English: Upper speaker loudness
+*/
+0A93544: 2B00C4E5 D3FFFFEA
+0A93498: 030000EF6C3DA0E30320A0E3 030040E22B00C4E52A0000EA
+0A93498: 03 04 ; Громкость (00-07) | Loudness (00-07)
+;------------------------- end -------------------------
+

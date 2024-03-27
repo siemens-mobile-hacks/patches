@@ -1,0 +1,76 @@
+;SL45iv56
+;Пароль на доступ к функциям SMS и Голосовым сообщениям
+;Password for SMS Access Functions
+;(c) RizaPN
+;Version: 
+;PatchID: 1609
+;Details: https://patches.kibab.com/patches/details.php5?id=1609
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=046-SL45i.rar
+
+/*
+Назначение пароля на доступ к SMS (входящим, исходящим, составление SMS) и Голосовым сообщениям. 
+
+Использование: код * пароль # [Left Side PLAY] 
+
+Пароль - это номер от 1 до 65535 
+Код: 
+0 :убрать пароль 
+1 :заблокировать вход./исход./Новые 
+2 :заблокировать составление SMS 
+3 :заблокировать все обе функции 
+4 :заблокировать доступ к Голосовым сообщениям 
+
+Если хотите заблокировать несколько функций, просто добавьте код. 
+Например, код 5 блокирует пункты кодов 1 и 4, а код 7 блокирует пункты кодов 1, 2 и 4... 
+
+Для изменения пароля: 0 * старый пароль * новый пароль # 
+
+Код вводится как не постоянный параметр, что значит, что он не сохраняется в EEPROM. Если выключить и включить телефон - код вернется на предыдущее значение. 
+
+Для сохранения кода на постоянно, используйте + вместо * 
+
+Пароль по умолчанию в чистом EEPROM'е - 65535 
+
+Пример: 0 * 6 5 5 3 5 # [LeftSidePLAY]
+
+
+Дополнительная информация: 
+Патч использует 5205 блок EEPROM'а.
+Для добавления этого блока сделайте следующее: 
+
+Скачайте блок здесь и используйте Siemens EEPROM tools от Skylord'а 
+
+В левой части нажать "Init", нажать красную кнопку телефона, нажать "Load", выбрать файл (который скачали), скопировать в правую часть окна используя большую правую стрелку. 
+
+В правой части экрана выбрать блок 5205, нажать "Save Selected" и нажать в левой части "Exit"
+
+Release: April 30, 2003 
+Update: May 13, 2003
+
+Патч №046 с http://patch.oslik.ru/SL45_RU
+*/
+396374: F2FF02FEDAEE1211 E6FF0200DAC710DA 
+399A9E: F2FF02FEDAEE1211 E6FF0100DAC710DA 
+39F702: F2FF02FEDAEE1211 E6FF0100DAC710DA 
+
+35364C: F2FF02FEDAEE1211 E6FF0400DAC710DA 
+
+3AD668: 46FE0E00 DAC770D9 
+278334: F0C2 CC00 
+
+27D970: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46FE62002D1746FE0E00DB00E00C88C0 
+27D980: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88C088C0E03C88C0E6FC5514E6FDFD3F 
+27D990: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FE3700E00FE6F5C200DAC788EE06F0 
+27D9A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0800CB00E0ACE6FD3600DAC7E6828810 
+27D9B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8840DAC7E6828840E00447F22A003D02 
+27D9C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC7E6828840E6F43E2FBBD898209830 
+27D9D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 98409810D740370042F3FE3F2D06E6FD 
+27D9E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3C07E01CDAE698F10D1148403D034820 
+27D9F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D01F032D7503700F7F8FD3FF6F3FE3F 
+27DA00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 47F22A002D03E6F4922FBBB8E01EDB00 
+27DA10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7503700F3F2FD3FF2F4FE3F3D0F88C0 
+27DA20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88D088E088F0E6F43E2FBBA898F098E0 
+27DA30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 98D098C0D7403700F3F2FD3F601F3DCF 
+27DA40: FFFFFFFFFFFFFFFFFFFF F2FF02FEDAEE1211DB00 
+;------------------------- end -------------------------
+

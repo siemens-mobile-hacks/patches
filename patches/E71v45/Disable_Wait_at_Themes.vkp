@@ -1,0 +1,13 @@
+;E71v45
+;Убрать сообщение "Подождите" в "Гланое меню"-"Настройки"-"Темы"
+;Disable message "Wait" in "Main menu"-"Settings"-"Themes"
+;(c) unknow
+;Version: 
+;PatchID: 10335
+;Details: https://patches.kibab.com/patches/details.php5?id=10335
+/*
+
+*/
+07A8AC3: 18 E8
+;------------------------- end -------------------------
+

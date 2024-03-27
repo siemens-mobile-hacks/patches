@@ -1,0 +1,27 @@
+;M55v11
+;Меню  &#9472;> Card-Explorer  &#9472;> Выбор диска
+;Menu -> Card Explorer -> Disc select
+;(c) Matr!x, Creat0r
+;(r) (I) Capricorn7B
+;(p) kay
+;Version: 
+;PatchID: 5173
+;Details: https://patches.kibab.com/patches/details.php5?id=5173
+/*
+Совместим с патчем *Диск А 3,5Мб*
+*/
+35B526: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E00CE6FD3435E6FE5601FA368A3A423A5C00 ;Обращение к диску B
+1638DA: E6FE9733E6FF6201DABF5CA808024840 DABFBAC9CC00CC00CC00080247F83A00 ;Поправка отображения папок в Card-Explorer
+059FF0: DA25240E DA2548BF ;Menu-Card-Explorer -> Menu-Setup-Tel.setup.Card-Explorer
+05A000: FA25 DB00 ;Убираем ненужные ссылки
+05c026: FA36683b FA2504A0 ;замена ссылки Форматирование -> Файловая система
+05C02C: DA3ED487 DA5526B5 ;замена ссылки Дефрагментация -> Процедура патча по переходу на диск B
+05C038: FA3E DB00 ;Убираем ненужные ссылки
+5AA82B: 0E8806D3020C0F841C77194B242D 0EB20506AD0B0600000000000000 ; langpack Всё через IrDA -> Диск A
+36920A: 1A0B C306 ;langpack Форматирование -> Диск A
+5AA840: 0C8806D3020C0F841C771433 0CB20506AD0B140000000000 ; langpack Все через BT -> Диск B
+3691F8: 1F07 C206 ;langpack Дефрагментация -> Диск B
+5AA822: 09F30897BC2E0C2922 09790C037708220000 ;langpack All via IrDA -> Drive A
+5AA839: 07F30897BC3124 07790C03770831 ;langpack All via BT -> Drive B
+;------------------------- end -------------------------
+

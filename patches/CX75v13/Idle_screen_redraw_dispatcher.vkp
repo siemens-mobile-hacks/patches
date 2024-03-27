@@ -1,0 +1,28 @@
+;CX75v13
+;Диспетчер перерисовки главного экрана
+;Idle screen redraw dispatcher
+;(c) Miha_r
+;(p) Виктор89
+;Version: 2
+;PatchID: 9501
+;Details: https://patches.kibab.com/patches/details.php5?id=9501
+/*
+Send IPC message on idle screen redraw
+IPC message parameters: 
+name_to = "IdleUpd" 
+name_from = "IdleUpd"
+
+Эльф IdleDisp больше не нужен, ExtraInfo больше не мограет!
+*/
+02CC680: 0E1CD7B03BA936A8 004A9047019EFCA0
+
+#pragma enable old_equal_ff
+0FC9E00: 7246072903D1FFB400F008E8FFBC0E1C
+0FC9E10: D7B03BA936A804329746C0461C309FE5
+0FC9E20: 00402DE90020A0E3F210A0E3C01F81E3
+0FC9E30: 0900A0E3420C80E3000100EF0080BDE8
+0FC9E40: 549EFCA049646C655570640049646C65
+0FC9E50: 55706400449EFCA04C9EFCA000000000
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

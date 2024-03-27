@@ -1,0 +1,124 @@
+;SL45iv56
+;Графическое главное меню (c полноэкранными картинками)
+;Graphical Menu
+;(c) RizaPN
+;Version: 
+;PatchID: 1603
+;Details: https://patches.kibab.com/patches/details.php5?id=1603
+/*
+Выход из MP3 плеера в список композиций долгим нажатием "Правого софта", "Джойстик вправо", кнопки "Воспроизведения" (с левой стороны телефона) и кнопки PTT (на наушниках).
+
+После патча желательно применить патч 1938 (исправляет баг с доступом к хронометру).
+
+
+Release: April 9, 2003
+
+Патч №039 с http://patch.oslik.ru/SL45_RU
+*/
+38E1CE: F0CEF0DF E6FDA102 
+
+;Если хотите использовать "Правый Софт" как вход в графическое 
+;меню уберите символ комментария ";" перед строкой: 
+
+;3B036E: 3C 54 
+
+;Если вы НЕ ХОТИТЕ использовать "Джойстик вправо" для входа в 
+;графическое меню поставте символ комментария ";" перед строкой: 
+
+3B0368: 3C 54 
+
+3B0450: F0C4DAE5243AEA00 EA00EE07DAC7C0D5 
+3B0458: F407 0D23 
+
+3BF1D0: DC4DC4EC0400 E6FCF22ACC00 
+
+27D500: FFFFFFFFFFFFFFFF DC4FD44E02002D32 
+27D508: FFFFFFFFFFFFFFFF D7403400F2FE1C3E 
+27D510: FFFFFFFFFFFFFFFF 26FE6F0046F42000 
+27D518: FFFFFF 3D0208 
+27D51B: FF E3 ;измените E3 на Ex где x это число на которое увеличится положение курсора при нажатии " Джойстик Вниз". 
+27D51C: FFFFFFFF 0D1146F4 
+27D520: FFFFFFFFFF 21003D0228 
+27D525: FF E3 ;измените E3 на Ex где x это число на которое уменьшится положение курсора при нажатии "Джойстик Вверх". 
+27D526: FFFF 0D0C 
+27D528: FFFFFFFFFFFFFF 46F422003D0208 
+27D52F: FF E1 ;измените E1 на Ex где x это число на которое увеличится положение курсора при нажатии "Джойстик Вправо". 
+27D530: FFFFFFFFFFFFFFFF 0D0746F423003D02 
+27D538: FF 28 
+27D539: FF E1 ;измените E1 на Ex где x это число на которое уменьшится положение курсора при нажатии "Джойстик Влево". 
+27D53A: FFFFFFFFFFFF 0D0248412D62 
+27D540: FFFFFFFFFF 48E0DD02E0 
+27D545: FF BE ;измените BE на xE где x=n-1, n-кол-во картинок (пунктов меню) 
+;(Адрес 27D54A тоже обязательно дожне быть изменен)27D546: FFFF 0D04 
+27D548: FFFF 46FE 
+27D54A: FF 0C ;измените 0C на 0n где n-кол-во картинок (пунктов меню) 
+;(Адрес 27D545 тоже обязательно дожне быть изменен) 
+27D54B: FFFFFFFFFF 00CD01E00E 
+27D550: FFFFFFFFFFFFFFFF 48452D0F48432D0D 
+27D558: FFFFFFFFFFFFFFFF 06FE6F00D7403400 
+27D560: FFFFFFFFFFFFFFFF F6FE1C3EE00CE00D 
+27D568: FFFFFFFFFFFFFFFF DAC1EC22E6F4FFFF 
+27D570: FFFFFFFFFFFFFFFF DB00F04E5C1400E4 
+27D578: FFFFFFFFFFFFFFFF 06FEDC14E005D760 
+27D580: FFFFFFFFFFFFFFFF 1F03998E999E99AE 
+27D588: FFFFFFFFFFFFFFFF 2DF1DAC788EE0DEE 
+
+27D590: FFFFFFFFFFFFFFFF 0000000000D5C700 
+27D598: FFFFFFFFFFFFFFFF 00000000527CF000 
+27D5A0: FFFFFFFFFFFFFFFF 9429E10228161F03 
+27D5A8: FFFFFFFFFFFFFFFF 0000000065005000 
+27D5B0: FFFFFFFFFFFFFFFF 1C3E340000000000 
+27D5B8: FFFFFFFF 0000FF00 
+
+27D5C0: FFFFFFFFFFFFFFFF E6F46F00D7403400 
+27D5C8: FFFFFFFFFFFFFFFF F6F41C3E88908880 
+27D5D0: FFFFFFFFFFFFFFFF E6FC5AF5E6FDD800 
+27D5D8: FFFFFFFFFFFFFFFF E6FE96F5F0FDDAF0 
+27D5E0: FFFFFFFFFFFFFFFF 3CFDF084F095F0C8 
+27D5E8: FFFFFFFFFFFFFFFF F0D9E6FE9015E6FF 
+27D5F0: FFFFFFFFFFFFFFFF 1F03DAF024FFF0C8 
+27D5F8: FFFFFFFFFFFFFFFF F0D9DAF09E809880 
+27D600: FFFFFFFFFFFFFFFF 9890DB00E004DB00 
+
+27D610: FFFFFFFFFFFFFFFF 03000300FFFF0000 
+27D618: FFFFFFFFFFFFFFFF 0000FFFF00000000 
+27D620: FFFFFFFFFFFFFFFF FFFF05000500FFFF 
+27D628: FFFFFFFFFFFFFFFF 10161F030100FFFF 
+
+;Menu items: 
+27D4DC: FFFFFF 3C40DB ;...Organiser 
+27D4DF: FFFFFF 0840DB ;...Message 
+27D4E2: FFFFFF 4C40DB ;...Surf/Fun 
+27D4E5: FFFFFF 6C40DB ;...Audio 
+27D4E8: FFFFFF 1C40DB ;...Record 
+27D4EB: FFFFFF 2C40DB ;...Setup 
+27D4EE: FFFFFF 620AD9 ;...WriteMessage 
+27D4F1: FFFFFF B4E1D8 ;...Java 
+27D4F4: FFFFFF C4E1D8 ;...MP3Player 
+27D4F7: FFFFFF 1879DC ;...Games 
+27D4FA: FFFFFF 50EFDB ;...Calendar 
+27D4FD: FFFFFF CAE1D8 ;...Card-Explorer 
+
+; Если вы хотите использовать кнопки стрелок как в обычном меню 
+;(Право - вход, Лево - выход, Ввех/Вниз - выбор) 
+;уберите символы комментария ";" перед строками: 
+
+;27D51B: E3 E1 
+;27D525: E3 E1 
+;27D52E: 08E1 0D21 
+;27D53B: 02 64 
+
+;Этот патч изпользует картинки из прошивки с номерами от 112 по 123. 
+;Измените эти картинки после/перед применением патча. Картинка размером 
+;101х80, может быть любой, но на каждой картике должен быть ввыделен 
+;соответствующий пункт меню. 
+
+;Other Entry-Point (Main Menu Items): 
+;(copy this data over that above) 
+;5C40DB = Profiles 
+;7C40DB = Time/Charge 
+;8C40DB = Divert 
+;50FBEC = Help
+;0200E1 = UNI2 settings
+;------------------------- end -------------------------
+

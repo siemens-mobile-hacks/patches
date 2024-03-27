@@ -1,0 +1,14 @@
+;EL71v45
+;NativeMenu вместо Главного при разговоре
+;NativeMenu instead of main during talk
+;(c) Zhek@
+;(p) funMarkus
+;Version: 
+;PatchID: 7788
+;Details: https://patches.kibab.com/patches/details.php5?id=7788
+/*
+
+*/
+0876CB0: 61B570A0 ABCC63A0
+;------------------------- end -------------------------
+

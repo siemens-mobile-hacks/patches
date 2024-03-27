@@ -1,0 +1,18 @@
+;M65v58
+;Автодозвон постоянно с заданной паузой
+;AutoRedial forever with selected pause
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 868
+;Details: https://patches.kibab.com/patches/details.php5?id=868
+/*
+
+*/
+0B43100: A068 0020
+0B43129: 30 20
+0BDCB5C: 05 0A ; пауза (0A=10 секунд)
+
+;------------------------- end -------------------------
+

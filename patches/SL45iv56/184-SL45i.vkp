@@ -1,0 +1,25 @@
+;SL45iv56
+;DRS. Разные мелодии для SMS и отчета
+;DRS. Different Ringtone for SMS status report
+;(c) rizapn
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=2649
+;PatchID: 1883
+;Details: https://patches.kibab.com/patches/details.php5?id=1883
+/*
+Делает разные мелодии для нормальных SMS и для отчёта.
+
+
+Created: July 12, 2004
+
+Патч №184 с http://patch.oslik.ru/SL45_RU
+*/
+0x23022A: E6FC3500 DAC7C0E9 
+
+0x27E9C0: FFFFFFFFFFFF DADB3E19E6FC 
+0x27E9C6: FF 37 ; ID сигнала для отчёта (37=CB-tone) 
+0x27E9C7: FFFFFFFFFFFFFF 0048442D02E6FC 
+0x27E9CE: FF 35 ; ID сигнала для нормальных SMS (35=SMS-tone) 
+0x27E9CF: FFFFFF 00DB00
+;------------------------- end -------------------------
+

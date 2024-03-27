@@ -1,0 +1,16 @@
+;S75v52
+;Не показывать пропущенные события на главном экране
+;Do not show missed events on main screen
+;(c) Miha_r
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8309
+;Details: https://patches.kibab.com/patches/details.php5?id=8309
+/*
+Этот патч отключает отображение новых сообщений, звонков и событий на главном екране.
+*/
+0301688: FFF7CEFC C046C046 ;Other events
+03016F4: FFF798FC C046C046 ;Sms
+0301796: FFF747FC C046C046 ;Calls
+;------------------------- end -------------------------
+

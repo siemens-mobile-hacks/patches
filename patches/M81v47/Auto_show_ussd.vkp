@@ -1,0 +1,15 @@
+;M81v47
+;Автоматическое открытие USSD сообщений
+;Auto show USSD
+;(c) Evgr
+;(r) VoVkA
+;(p) Barracuda
+;Version: 0.1
+;PatchID: 9026
+;Details: https://patches.kibab.com/patches/details.php5?id=9026
+/*
+
+*/
+0302E46: 4BF06DFA FCF745F8
+;------------------------- end -------------------------
+

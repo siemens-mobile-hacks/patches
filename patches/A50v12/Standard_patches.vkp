@@ -1,0 +1,75 @@
+;A50v12
+;Стандартные патчи
+;First patches
+;(c) Smelter, Sinclair
+;(r) =NeoSpb=
+;Version: 
+;PatchID: 2690
+;Details: https://patches.kibab.com/patches/details.php5?id=2690
+/*
+!!! ПАТЧ НУЖЕН ДЛЯ УСТАНОВКИ ВСЕХ ДРУГИХ ПАТЧЕЙ !!!
+УСТАНАВЛИВАТЬ САМЫМ ПЕРВЫМ
+
+Патч:
+- отключает проверку CRC (CRC OFF);
+- проверку в самолете (Disable Aircraft Check);
+- открывает инженерное меню (Developer Menu);
+- открывает скытые блоки EEPROM;
+- открывает режим BFB (Open full BFB-mode);
+
+А также содержит патчи:
+- Инициализация при старте;
+- Drawing extended indicators and other;
+- Info about contents.
+*/
+#pragma disable warn_if_new_exist_on_apply
+#pragma enable old_equal_ff	
+;----------------------------------------------------
+;A50v12lg91T9lg11 - Patch made by "Smelter" © avkiev
+; http://avkiev.kiev.ua/Siemens/Smelter/Smelter.htm
+;----------------------------------------------------
+#pragma disable undo	
+0DBDA0: 3D0A CC00 ;|
+0DBDAE: 3D03 CC00 ;|=> DisableFirstCRC
+0DFBFA: 2D 0D     ; => DisableSecondCRC
+;-------------------
+0A5704: 2D 0D ; EnableDevMenu
+;-------------------
+344E84: 3D 0D ; DisableAircraftCheck
+;-------------------
+0963BE: 1064 FA63 ; Open BFB
+;-------------------
+207F98: 01149013D513911302140314 000000000000000000000000 ; OpenHiddenEEPROM
+;-------------------
+#pragma enable undo
+;************************************************************************
+;*** Инициализация при старте *** © Sinclair
+;A50v12 ® =NeoSpb=
+0D91FE: DACD12FB DAE5008D
+258D00: DACD12FBCC00CC00CC00CC00CC00CC00
+258D10: CC00CC00CC00CC00CC00CC00CC00CC00DB00
+;---------------------------------------------------------
+; Info about contents:
+;258D04: CC00CC00 DAE5628D ; Регулировка яркости подсветки
+;258D08: CC00CC00 DAE50081 ; Автоматическая смена профиля с ежечасным сигналом
+;258D0C: CC00CC00 DAE50089 ; Напоминания о пропущенных событиях
+;258D10: CC00CC00 DAE5508F ; Напоминание о состоянии аккумулятора
+;************************************************************************
+;*** Drawing extended indicators and other ***
+31CC04: DAC6B8F5 DAFAAE1A
+31C968: DAC6B8F5 DAFAD01A
+3A1AAE: CC00CC00CC00CC00CC00CC00CC00CC00
+3A1ABE: CC00CC00CC00CC00CC00CC00DB00
+3A1AD0: CC00CC00CC00CC00CC00CC00CC00CC00DB00
+;---------------------------------------------------------
+; Info about contents:
+;3A1AAE: CC00CC00 DAF7B0FF ; Индикатор заряда в стиле Nokia
+;3A1AB2: CC00CC00 DAFA501C ; Мульти-индикатор accu
+;3A1AB6: CC00CC00 DAE98EBF ; Анимация в режиме ожидания
+;3A1AD0: CC00CC00 DAF7D4FF ; Индикатор сети в стиле Nokia
+;3A1AD4: CC00CC00 DAFA801D ; Мульти-индикатор сети
+;************************************************************************
+#pragma disable old_equal_ff
+#pragma enable warn_if_new_exist_on_apply
+;------------------------- end -------------------------
+

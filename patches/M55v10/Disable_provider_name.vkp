@@ -1,0 +1,14 @@
+;M55v10
+;Не показывать название оператора
+;Disable provider name
+;(c) Matr!x
+;Version: 
+;PatchID: 1414
+;Details: https://patches.kibab.com/patches/details.php5?id=1414
+/*
+
+*/
+0CB4A0: 8890 DB00
+
+;------------------------- end -------------------------
+

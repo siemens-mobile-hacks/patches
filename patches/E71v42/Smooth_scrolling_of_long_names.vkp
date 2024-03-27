@@ -1,0 +1,15 @@
+;E71v42
+;Плавная прокрутка длинных названий иимен
+;Smooth scrolling of long names
+;(c) SiNgle
+;(p) a1ex
+;Version: 
+;PatchID: 6728
+;Details: https://patches.kibab.com/patches/details.php5?id=6728
+/*
+
+*/
+0C37400: D00700002C01 120200002A00
+0C43778: D00700002C01 120200002A00
+;------------------------- end -------------------------
+

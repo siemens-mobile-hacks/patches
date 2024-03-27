@@ -1,0 +1,15 @@
+;CX75v13
+;Отключить "Подождите" в Списке Вызовов
+;Disable "Please Wait" in Call List
+;(c) 1nvisible
+;(r) s3mpa1
+;(p) Nikolas535
+;Version: 
+;PatchID: 9393
+;Details: https://patches.kibab.com/patches/details.php5?id=9393
+/*
+
+*/
+58A74C: 0120 10BD
+;------------------------- end -------------------------
+

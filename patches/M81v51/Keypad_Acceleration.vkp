@@ -1,0 +1,14 @@
+;M81v51
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) Cypok
+;Version: 
+;PatchID: 6693
+;Details: https://patches.kibab.com/patches/details.php5?id=6693
+/*
+
+*/
+0913992: 011C 2021
+;------------------------- end -------------------------
+

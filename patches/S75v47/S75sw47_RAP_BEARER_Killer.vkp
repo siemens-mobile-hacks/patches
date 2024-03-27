@@ -1,0 +1,19 @@
+;S75v47
+;RAP_BEARER Killer
+;RAP_BEARER Killer
+;(c) Marie
+;(p) Evgr
+;Version: 
+;PatchID: 10407
+;Details: https://patches.kibab.com/patches/details.php5?id=10407
+/*
+злополучный пик RAP_BEARER_0 при перезагрузке/выключении
+*/
+096EEE4: 6BF2C6E8 C046C046 ; RAP_BEARER_0 (Browser)
+;096EEFC: 6BF2BAE8 C046C046 ; RAP_BEARER_1 (Java)
+;096EF14: 6BF2AEE8 C046C046 ; RAP_BEARER_2
+;096EF2C: 6BF2A2E8 C046C046 ; RAP_BEARER_3
+;096EF44: 6BF296E8 C046C046 ; RAP_BEARER_4
+;------------------------- end -------------------------
+;------------------------- end -------------------------
+

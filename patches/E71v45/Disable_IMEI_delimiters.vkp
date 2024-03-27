@@ -1,0 +1,17 @@
+;E71v45
+;Убрать черточки-разделители при показе IMEI
+;Disable delimiters while showing IMEI
+;(c) Evgr
+;(p) 1nvisible, Bennie
+;Version: 
+;PatchID: 10310
+;Details: https://patches.kibab.com/patches/details.php5?id=10310
+/*
+
+*/
+;Убрать черточки-разделители при показе IMEI
+;Disable delimiters while showing IMEI
+06F131C: 30302D303030302D30302D3030303030302D30 30303030303030303030303030303000000000
+;06F131C: "00-0000-00-00000" "0000000000000000"
+;------------------------- end -------------------------
+

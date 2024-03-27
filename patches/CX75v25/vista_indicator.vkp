@@ -1,0 +1,45 @@
+;CX75v25
+;Индикатор громкости в плеере в стиле WinVista
+;WinVista style player volume indicator
+;(c) b00s
+;Version: 1
+;PatchID: 7010
+;Details: https://patches.kibab.com/patches/details.php5?id=7010
+/*
+Этот патч изменяет графический индикатор громкости при проигрывании MP3 в стиль прогресс баров из windows Vista.
+
+!!!Для его корректной работы и работы вообще необходимо установить патч 3706 "Графический индикатор громкости при проигрывании MP3" от Erik51.
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Autor: b00s  http://www.online-mpc.com                          ###
+; ### Patch for: SIEMENS CX75 v25                                     ###
+; #######################################################################
+
+
+
+; ##### Picture 46 #####
+010C0194: 040487007CEE0CA1 050588007CEE0CA1
+
+010CEE7C: 1008F00F0F0F0F0F0F0F0F0F0F0F0F 0596AF05759F05850605EA3E052C57
+
+
+; ##### Picture 47 #####
+010C019C: 4A0887000CF60CA1 4A0888000CF60CA1
+
+010CF60C: 4B08F048FFFF0208F048FFFF0208F048 FE00E038C64696B5FD38C600E0F7BD48
+010CF61C: FFFF0208F048FFFF0208F048FFFF0208 7DEFFEF7BD96B548DEF70296B548FBDE
+010CF62C: F048FFFF4B08F00F0F0F0F0F0F0F0F0F FE96B592944879CE0292944818C6FE92
+010CF63C: 0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F 9414A548FBDEFD14A500E0F39C46D39C
+010CF64C: 0F0F0F0F0F FEF39C00E0
+
+
+
+;------------------------- end -------------------------
+

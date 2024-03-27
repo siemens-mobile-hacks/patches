@@ -1,0 +1,14 @@
+;S65v58
+;Скины на MMC
+;Skins on MMC
+;(c) ?
+;Version: 
+;PatchID: 1215
+;Details: https://patches.kibab.com/patches/details.php5?id=1215
+/*
+Перенос папки Скины на MMC-карту
+English:Move folder Skins to MMC
+*/
+0A248D2: 30 34
+;------------------------- end -------------------------
+

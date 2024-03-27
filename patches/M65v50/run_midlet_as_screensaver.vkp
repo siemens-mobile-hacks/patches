@@ -1,0 +1,69 @@
+;M65v50
+;Запуск мидлета как скринсейвера
+;Run Midlet As Screensaver
+;(c) benj9
+;(r) ACiD[mrp], arsh0r, avkiev, SiNgle, (i) KiRiK
+;Version: 
+;PatchID: 391
+;Details: https://patches.kibab.com/patches/details.php5?id=391
+/*
+Позволяет запустить мидлет как скринсейвер.
+Бесплатные графические мидлеты, например, тут: http://java.mob385.com/en/efekti.shtml
+Много настроек, см.тело патча. Совместимость с патчами Динамической Замены и МиниGPS, но нужно закомментировать в них определенные строки.
+*/
+/*
+Midlet must be placed in the root of Config (2:\)
+Мидлет необходимо положить в корень диска Config (2:\)
+Check for free graphic midlets/Бесплатные графические мидлеты к примеру здесь:
+http://java.mob385.com/en/efekti.shtml
+*/
+
+1651118: B75EB4A0 01AC65A1 
+; if use with follow-up patch comment the line beginning with 1651118: there, 
+; but feed phone with the body of that patch.
+; Если использовать с "патчем продолжения", закомментируйте в нём начинающуюся с 1651118: строку,
+; но залейте в телефон тело самого патча
+
+#pragma enable old_equal_ff
+165AC00: FFB5194880473F27C74001200740012F
+165AC10: 16D10E4F3C68012C02D100243C600FE0
+165AC20: 0B48804700280BD00A488047002807D0
+165AC30: 064F01243C60084C0A4800230022A047
+165AC40: 02E0FFB4064CA047FFBDFFFF200200A8
+165AC50: D1E263A1A7D014A1A849C3A068AC65A1
+165AC60: 610180A06CAC65A1E59F8CA0
+
+165AC6C: "2:\\amark.jar",00 ; any midlet | любой мидлет
+
+#pragma disable old_equal_ff
+
+### User Config | Настройки пользователя ###
+;165AC2F: D0 D1; D0: patch active when key locked, D1: active when key not locked.
+;                D0: патч активен при блокированной клаве, D1: при разблокированной
+165AC2E: 07D0 C046 ; patch active keylocked and unlocked
+;                    патч активен как при блокированной, так и разблокированной клаве
+
+
+165AC06: 3F 01 ; profile key | ключ профиля
+; define patch active in profiles by setting according bits in profile key. 
+; Определите профили, в которых патч будет активен, рассчитав биты в ключе профиля
+; profilekey=sum(2^(profile#-1))
+; example 1: 3F: patch is not active in profile 7
+;  пример 1: 3F: патч не активен в профиле 7
+; example 2: 01: patch is active only in profile 1
+;  пример 2: 01: патч активен только в профиле 1
+; example 3: 25: active in profile 1, 3, 6 : 2^0 + 2^2 + 2^5 = 1 + 4 + 32 = 37 = 0x25
+;  пример 3: 25: патч активен в профилях 1, 3, 6
+
+165AC40: 02E0 FFBC  ; line active: pass-thru to follo-up patch. line not active: stand-alone.
+;                    линия активна: переход к "патчу продолжения"; линия не активна: автономная работа  
+
+; Follow-Up Patches: | Патчи продолжения:
+165AC60: 610180A0 B10680A0 ; follow-up patch is Toggle ProviderString-Patches v1
+;                            патч продолжения - Переключение между патчами замены имени оператора v1. Установите тело
+;165AC60: 610180A0 610180A0 ; follow-up patch is dynamic replacing provider v7/8. body has to be installed.
+;                             патч продолжения - Динамическая замена имени оператора v7/8. Установите тело
+;165AC60: 610180A0 071580A0 ; follow-up patch is minigps v08. body has to be installed.
+;                             патч продолжения - Мини GPS v08. Установите тело
+;------------------------- end -------------------------
+

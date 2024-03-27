@@ -1,0 +1,138 @@
+;SL45iv56
+;BIM2. Кнопки в MP3
+;BIM2. Buttons in MP3
+;(c) Charger
+;Version: 2
+;PatchID: 1973
+;Details: https://patches.kibab.com/patches/details.php5?id=1973
+/*
+Изменяет назначение кнопок в плеере. 
+Отличия от предыдущей версии: разделены функции кнопок вправо, PTT, play; 
+все собрано в один блок, включая функции из mp3indicators, для оптимизации кода 
+Можно устанавливать без заранее установленных патчей, 
+или поверх ‘Doing something else in mp3’ и ‘mp3indicators’ 
+Настройки кнопок (басы, высокие), установленные в ‘mp3indicators’ 
+не имеют значения и устанавливаются здесь, также если он не 
+установлен, функции будут работать без индикаторов (как в ‘add timbre’) 
+
+Конфигурация кнопок по умолчанию: 
+RIGHT/LEFT - след./пред. трек 
+UP/DOWN - громкость вниз/вверх (+/- остаются, их функции в патче не меняются) 
+1/4 - treble up/down, 3/6 - bass up/down 
+PLAY - функция play (как в winamp к примеру), сброс и воспроизведение 
+PTT - как в патче Rizapn для PTT; * - ‘doing s. else in mp3’ 
+GREEN - подсветка 
+RECORD - напр. на аккум. 
+длинное нажатие 7/9 - перемотка назад/вперед 
+
+Перед установкой отмените все патчи меняющие функции кнопок в мп3, включая PTT, кроме патча mp3 indicators 
+
+
+Released: Feb 03, 2005
+*/
+27DCB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 48142D1A46F13E002D3446F13F002D39 
+27DCC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46F136002D4846F134002D4E46F13300 
+27DCD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D5446F131002D5A46F10B002D6046F1 
+27DCE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 06002D6AFADBC8A3DC57D4F60200A8E6 
+27DCF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DC4FD41E040046F1E9003D02FADB94A3 
+27DD00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46F1EB002D0746F1EA003D02FADB14A3 
+27DD10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FADBC2A3F0C8F0D9DADB78EB46F43000 
+27DD20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3D02FADB36A1DADBC8CFDADBF0A3FADB 
+27DD30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C2A3DC57D4F60200A8E6DC4FD41E0400 
+27DD40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46F1E9002D0446F1EA002D030D37FADB 
+27DD50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 76A2FADB52A3E6003200F3F2B52F0923 
+27DD60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 6923DAD0825CDB00E6003200F3F2B62F 
+27DD70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 09236923DAD0A05CDB00E6003200F3F2 
+27DD80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B52F09216923DAD0825CDB00E6003200 
+27DD90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F3F2B62F09216923DAD0A05CDB00DC57 
+27DDA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D4F60200A8E6DC4FD41E040046F1EA00 
+27DDB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3D05DAC024AF0D02DAE0CECAFADBC2A3 
+
+
+3BA180: 46F13D00 46F13700 
+3BA184: EA2006A2 2D4046F1 
+3BA188: 46F13E00 3900EA20 ; если патч mp3indicators не установлен 
+;3BA188: FAC780E4 3900EA20 ; если установлен 
+3BA18C: EA20A6A2 A6A246F1 
+3BA190: 4814EA20A6A2 3D00EA204EA1 
+3BA196: EA00C8A3 FAC7B0DC 
+
+
+;если патч doing something else in mp3 не установлен 
+3BA07A: EA2008A146F62000 2D4646F620002D43 
+3BA082: EA2036A146F62100 46F621002D2746F6 
+3BA08A: EA204EA1 13002D32 
+
+;если doing something else in mp3 установлен 
+;3BA081: 5A 43 
+;3BA087: 63 27 
+
+
+;часть патча doing something else in mp3, если он установлен, закомментировать 
+3BA0EE: DC49A9C8 08610D19 
+3BA0F2: C0C60861E0A7F6F6 D7403400F6F61E3E 
+3BA0FA: 0EFE4B77F2F60CFE DADBDC42EA00C2A3 ;menu 
+
+
+;entrypoint для блока из патча 'показывать заряд аккум. в мв' (c) DeadMan 
+;27DDB8: DAE0CECA CC00CC00 ;если эта функция не нужна или патч не установлен 
+
+
+;для правильной работы right, play 
+3BE216: 46FE3E002D16 CC00CC00CC00 
+3BE22E: 3D 0D 
+
+;убрать сброс при кототком нажатии на перемотку назад 
+;(заменяется функцией play) 
+3BA272: EA30 EA00 
+
+;play при блоке 
+3BA046: 3D 0D 
+
+;если не установлен mp3indicators, для работы кнопок тембра раскомментировать 
+;107468: 007002000028040000C0030000380500 007002000028040000C0050000380700 
+;107478: 0060010000EC02000060010000EC0200 0060010000EC02000060040000EC0500 
+;305C07: 21 23 
+;305C0B: 14 34 
+;305C1B: 21 23 
+;305C1F: 14 34 
+;305D00: 3D 0D 
+;305D3E: 3D 0D 
+;305C86: E6FCB038F7F2B52F F7F2B52FE6FCB038 
+;305CA4: E6FCB038F7F2B62F F7F2B62FE6FCB038 
+
+;настройка кнопок 
+;3BA088: 21 XX ;увел. громкость 
+;3BA07E: 20 XX ;уменьш. громкость 
+;3BA08A: 13 XX ;кнопка, выполн. функцию doing something else (меню по умолч.) 
+;3BA182: 37 XX ;перемотка назад (здесь и далее из 2 списка, приведенного ниже) 
+;3BA188: 39 XX ;перемотка вперед 
+;3BA190: 3D XX ;пред. трек 
+;27DCB6: 3E XX ;след. трек 
+;27DCBC: 3F XX ;функция play 
+;27DCC2: 36 XX ;bass down 
+;27DCC8: 34 XX ;treble down 
+;27DCCE: 33 XX ;bass up 
+;27DCD4: 31 XX ;treble up 
+;27DCDA: 0B XX ;подсветка 
+;27DCE0: 06 XX ;напряжение на аккум. 
+
+;дополн. список кодов кнопок 
+; 01 - left softkey 
+; 06 - record 
+; 0B - green 
+; 0C - red 
+; 2A - "*" 
+; 23 - "#" 
+; 30-39 - "0"-"9" 
+; 3B - up 
+; 3C - down 
+; 3D - left 
+; 3E - right 
+; 3F - play 
+
+;можно использовать doing something else сразу для написания смс (или другой entryp.), 
+;(а меню - на левом софте другим патчем, например) 
+;3BA0FA: DADBDC42 DAD9620A ;main menu > write sms
+;------------------------- end -------------------------
+

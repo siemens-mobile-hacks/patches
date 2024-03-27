@@ -1,0 +1,34 @@
+;CX70v56
+;Замена маленькой иконки меню
+;Change little picture menu
+;(c) DM101
+;(p) vasserman
+;Version: 
+;PatchID: 9966
+;Details: https://patches.kibab.com/patches/details.php5?id=9966
+/*
+Заменяет картинку запуска основного меню на более правельную, ну мне так кажется. (c)DM101
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 13.08.2010  -  Time: 19:20:28                             ###
+; ### Patch for: SIEMENS CX70 v56                                     ###
+; #######################################################################
+
+
+; ##### Picture 350 #####
+00DA0B14: 0A0E0100C45AE3A0 0A0E01005069D9A0
+
+00D96950: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 003FFE3F853FB4BF87BFB0BF80BFBEBF
+00D96960: FFFFFFFFFFFFFFFFFFFFFFFF 80BFBEBF80BFFFBF003F003F
+
+
+
+;------------------------- end -------------------------
+

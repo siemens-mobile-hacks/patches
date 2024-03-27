@@ -1,0 +1,13 @@
+;SL65v50
+;Отключить AUMA отладчик
+;Disable AUMA Debug
+;(c) benj9
+;Version: 
+;PatchID: 3359
+;Details: https://patches.kibab.com/patches/details.php5?id=3359
+/*
+
+*/
+0B23D64: 10B5 7047
+;------------------------- end -------------------------
+

@@ -1,0 +1,33 @@
+;SL45iv56
+;APO. Автоматическое включение
+;APO. Auto Power ON
+;(c) RizaPN
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=3460
+;PatchID: 1753
+;Details: https://patches.kibab.com/patches/details.php5?id=1753
+/*
+Добавляет автовключение в SL45 через Appointment (Напоминания).
+
+
+Released: June 10, 2004
+
+Патч №149 с http://patch.oslik.ru/SL45_RU
+*/
+0x38F1B0: DAD892EF FAC7A0E1 
+
+0x27E1A0: FFFFFFFFFFFFFFFF DC4DD4EC48007C6E 
+0x27E1A8: FFFFFFFFFFFFFFFF 66FE0F0048E42D04 
+;                                    ^^
+;Поменяйте (E4) на нужное:
+;E0=memo
+;E1=call
+;E2=meeting
+;E3=birthday
+;E4=voicememo - изначально
+
+
+0x27E1B0: FFFFFFFFFFFFFFFF DAD892EFFAD8FEF2 
+0x27E1B8: FFFFFFFF FAD8DAF2
+;------------------------- end -------------------------
+

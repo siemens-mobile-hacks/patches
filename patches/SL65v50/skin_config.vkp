@@ -1,0 +1,15 @@
+;SL65v50
+;Скины на Cоnfig
+;sin_config
+;(c) strike66, Волк
+;(r) Strike66
+;(p) Strike66
+;Version: 1
+;PatchID: 2889
+;Details: https://patches.kibab.com/patches/details.php5?id=2889
+/*
+перенос хранение скинов на другой диск.
+*/
+0A08F96: 30 32
+;------------------------- end -------------------------
+

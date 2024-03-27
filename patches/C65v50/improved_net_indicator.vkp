@@ -1,0 +1,49 @@
+;C65v50
+;Продвинутый индикатор сети
+;Improved net Indicator
+;(c) arsh0r
+;(r) BuG
+;(p) AsteriX
+;Version: 0.13
+;PatchID: 241
+;Details: https://patches.kibab.com/patches/details.php5?id=241
+/*
+Этот патч заменяет стандартный индикатор сети на 6 мини-индикаторов соседних сот.
+
+Внимательно читайте инструкцию внутри патча! Есть строки, которые в некоторых случаях надо раскомментировать!
+
+Нужно ставить картинки!
+
+Например из патча 240
+*/
+/*
+Картинки для патча в конце сборника (pictures for patch are in the end of patch collection)
+Этот патч заменяет стандартный индикатор сети на 6 мини-индикаторов соседних сот.
+Используются следующие картинки:
+0x2FB - 0x301 ;1-7 GSM900
+0x302 - 0x308 ;1-7 GSM1800
+0x309 - Слабый уровень сигнала
+Размеры картинок - 5x14
+this patch displays 6 bars meaning the next 6 available GSM channels instead 
+of the normal net indicator. the bar images are still a bit crappy, because
+i don't know how to make them transparent, for any help i'll be pleased. here
+is a table of the used images:
+0x2FB - 0x301 ;1-7 GSM900
+0x302 - 0x308 ;1-7 GSM1800
+0x309 low signal
+the image size is 5x14 px
+*/
+16EA9C6: 00F0F5FA 29F01BFB
+#pragma enable old_equal_ff
+1714000: F8B50F1C0025194C461F2088FF2801D2
+1714010: 174A01E0164A0732A079222819D33E28
+1714020: 01D2063217E0452801D2053213E04C28
+1714030: 01D204320FE0532801D203320BE05A28
+1714040: 01D2023207E0612801D2013203E06828
+1714050: 01D3074A0E32074B0536391C1B68301C
+1714060: 98470C340135062DCFDBF8BD084D67A8
+1714070: FB020000784071A1B5AF6EA1
+#pragma disable old_equal_ff
+;1714058: 05 04 ;другое расстояние между индикаторами © AlexSid
+;------------------------- end -------------------------
+

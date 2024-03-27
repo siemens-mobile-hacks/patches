@@ -1,0 +1,29 @@
+;C81v51
+;Отключить ВСЕ подождите
+;disable ALL wait
+;(c) benj9
+;(p) dimonp25
+;Version: 
+;PatchID: 7838
+;Details: https://patches.kibab.com/patches/details.php5?id=7838
+/*
+Другой вариант патча
+*/
+; * disable ALL wait *
+; * Отключить ВСЕ подождите
+; (c) benj9
+; (p) dimonp25
+; C81v51
+
+096D99A: FFB5 7047
+
+; BUG: patch works only if startassistant NOT disabled/hidden
+; BUG: StartupAnimation must be off, the same after a Theme was changed, else phone can not exit from StartupAssistant!
+; баг: патч работает только если Помощник при включении НЕ отключен/спрятан
+; баг: должна быть выключена анимация на включение, то же после смены темы, иначе телефон при включении зависнет на Помощнике!
+
+;locale=Russian_Russia.1251
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

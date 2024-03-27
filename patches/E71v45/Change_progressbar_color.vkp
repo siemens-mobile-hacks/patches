@@ -1,0 +1,16 @@
+;E71v45
+;Изменение цвета прогрессбара
+;Change progressbar color
+;(c) -=(Kad)=-
+;(p) DDM
+;Version: 
+;PatchID: 10308
+;Details: https://patches.kibab.com/patches/details.php5?id=10308
+/*
+Заменяет цвет фона прогрессбара на голубой полупрозрачный
+*/
+088DEF4: 001E8264 FFFFFF24 ; stripe
+088DEF0: 1EBEE664 00000034 ; contour
+088DEEC: BEE6FA64 5656F814 ; background
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v47
+;Подсветка при смене профиля
+;Illumination in SetProfile
+;(c) BoBa
+;(p) ManOfWar
+;Version: 
+;PatchID: 6251
+;Details: https://patches.kibab.com/patches/details.php5?id=6251
+/*
+Отключает подсветку при смене профиля
+*/
+02CEF08: 1CF1D8EE C046C046
+;------------------------- end -------------------------
+

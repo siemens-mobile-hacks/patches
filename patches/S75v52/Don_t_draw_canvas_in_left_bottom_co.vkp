@@ -1,0 +1,14 @@
+;S75v52
+;Не рисовать чей-то канвас в левом нижнем углу
+;Don't draw canvas in left bottom corner
+;(c) avkiev
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8280
+;Details: https://patches.kibab.com/patches/details.php5?id=8280
+/*
+
+*/
+030115B: 30 20
+;------------------------- end -------------------------
+

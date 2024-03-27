@@ -1,0 +1,14 @@
+;EL71v45
+;Сохранение списков при смене сим карты
+;Call list saving when SIM is changed
+;(c) starfriend
+;(r) SiNgLe
+;Version: 
+;PatchID: 7400
+;Details: https://patches.kibab.com/patches/details.php5?id=7400
+/*
+
+*/
+066FD04: 92F19CED c046c046
+;------------------------- end -------------------------
+

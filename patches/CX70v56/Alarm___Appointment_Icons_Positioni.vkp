@@ -1,0 +1,17 @@
+;CX70v56
+;Alarm & Appointment Icons Positioning
+;Alarm & Appointment Icons Positioning
+;(c) benj9
+;(r) TiCK
+;Version: 
+;PatchID: 4169
+;Details: https://patches.kibab.com/patches/details.php5?id=4169
+/*
+
+*/
+172217A: 01 0i161 ; Y-Pos Alarm(fix y-pos forever (dont weird y-moving at net lost)
+172217B: 39 21
+1722166: 01 0i161 ; Y-Pos Appointment
+1722167: 39 21
+;------------------------- end -------------------------
+

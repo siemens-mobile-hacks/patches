@@ -1,0 +1,19 @@
+;E71v45
+;Показывать битрейт в атрибутах MP3 и AAC
+;Extended attributes of MP3 and AAC-files
+;(c) @ndres/PRM
+;(p) bingk
+;Version: 1.0
+;PatchID: 10347
+;Details: https://patches.kibab.com/patches/details.php5?id=10347
+/*
+!http://patches.kibab.com/patches/details.php5?id=10328 - новая версия
+*/
+0x00712E30: 2800003A F2AA2FEA
+#pragma enable old_equal_ff
+0x012FDA00: 3855D03A0400A0E1B4F6E6EBB001CDE1
+0x012FDA10: B001DDE1000050E3B001DD11800C5013
+0x012FDA20: 3055D03A0255D0EA
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

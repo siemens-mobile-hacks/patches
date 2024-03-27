@@ -1,0 +1,17 @@
+;A65v17
+;Громкая связь без подтверждения
+;Toggle HandsFree without question
+;(c) ?
+;(p) Rasp
+;Version: 
+;PatchID: 6385
+;Details: https://patches.kibab.com/patches/details.php5?id=6385
+/*
+
+*/
+;Громкая связь без подтверждения.
+;Портировано: Rasp
+2B6DB8: 9A010320 CC00CC00 
+2B6DBC: DA426610 DA4B1C5D
+;------------------------- end -------------------------
+

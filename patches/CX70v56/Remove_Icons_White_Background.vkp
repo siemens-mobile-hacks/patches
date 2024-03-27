@@ -1,0 +1,15 @@
+;CX70v56
+;Убрать белый фон у иконок в Native menu
+;Remove Icons White Background in Native Menu
+;(c) SiNgle
+;(p) Lost
+;Version: 
+;PatchID: 3392
+;Details: https://patches.kibab.com/patches/details.php5?id=3392
+/*
+
+*/
+0D25AC8: 00 FF
+0D25B6C: 87F7E7FA 00280028
+;------------------------- end -------------------------
+

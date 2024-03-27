@@ -1,0 +1,15 @@
+;CX75v23
+;Убрать черточки-разделители при показе IMEI
+;Disable delimiters while showing IMEI
+;(c) 1nvisible
+;(p) Luke
+;Version: 
+;PatchID: 3104
+;Details: https://patches.kibab.com/patches/details.php5?id=3104
+/*
+
+*/
+32C004: 05D0 0AE0
+
+;------------------------- end -------------------------
+

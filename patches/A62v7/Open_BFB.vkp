@@ -1,0 +1,13 @@
+;A62v7
+;Открыть BFB
+;Open BFB
+;(c) avkiev
+;Version: 
+;PatchID: 8200
+;Details: https://patches.kibab.com/patches/details.php5?id=8200
+/*
+
+*/
+0E4DC8: 1C 08 
+;------------------------- end -------------------------
+

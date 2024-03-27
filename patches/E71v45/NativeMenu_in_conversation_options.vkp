@@ -1,0 +1,13 @@
+;E71v45
+;Native Menu вместо Главного при разговоре
+;Native Menu instead of Flex-Menu in conversation options
+;(c) Zhek@
+;Version: 
+;PatchID: 10311
+;Details: https://patches.kibab.com/patches/details.php5?id=10311
+/*
+
+*/
+86C8B8: FDDE6FA0 7BB063A0
+;------------------------- end -------------------------
+

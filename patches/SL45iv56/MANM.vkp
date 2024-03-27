@@ -1,0 +1,21 @@
+;SL45iv56
+;MANM. Отключение микрофона во время работы автоответчика
+;MANM.
+;(c) vBart
+;Version: 
+;PatchID: 2076
+;Details: https://patches.kibab.com/patches/details.php5?id=2076
+/*
+в самом ANM v2 от Riza эта функция упомянута, но почему-то не работает
+
+Release: 25.05.05
+*/
+;Если установлен ANMv2 раскомментируйте эти строки: 
+;444CC4: FAD414F3 FAE4904D 
+;444D90: FFFFFFFFFFFFFFFFFFFF DAC2D647FAD414F3DB00 
+
+;Если установлен ANMv2 + Answering Machine while Incoming Call Ringing v2 раскомментируйте эти строки: 
+;27D106: DAD414F3 DAE4904D 
+;444D90: FFFFFFFFFFFFFFFFFFFF DAC2D647FAD414F3DB00
+;------------------------- end -------------------------
+

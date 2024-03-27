@@ -1,0 +1,17 @@
+;M65v58
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 860
+;Details: https://patches.kibab.com/patches/details.php5?id=860
+/*
+
+*/
+11FA066: 00 01
+11FA09E: 00 01
+
+;------------------------- end -------------------------
+

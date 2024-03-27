@@ -1,0 +1,15 @@
+;SL75v52
+;Отключить звук\вибру  USSD сообщения
+;Disable USSD sound\vibration
+;(c) ThE TrIFoN
+;(r) (i) -=(Kad)=-
+;(p) kiREALlov
+;Version: 
+;PatchID: 8055
+;Details: https://patches.kibab.com/patches/details.php5?id=8055
+/*
+
+*/
+29C8FA: 0F 21
+;------------------------- end -------------------------
+

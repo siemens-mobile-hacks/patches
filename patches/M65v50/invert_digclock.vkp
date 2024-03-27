@@ -1,0 +1,53 @@
+;M65v50
+;Инвертировать Цифровые часы
+;Invert digiclock ScreenSaver
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 26
+;Details: https://patches.kibab.com/patches/details.php5?id=26
+/*
+Инвертирует Цифровые Часы в заставке, так что цифры часов показываются чёрным цветом, а фон - белый, что соответствует отключенному состоянию дисплея с наименьшим энергопотреблением. Впрочем, цвета можно поменять. Инструкция внутри патча.
+*/
+;!Можно поменять цвет цифр на любой из таблици RGB
+;11FF9FD: FFFFFF64 A9ABA900 ;set "0" color to transparent
+163E0F4: 01 00 ;1h back
+163E0FC: 00 01 ;1h font
+163E142: 01 00 ;2h back
+163E14A: 00 01 ;2h font
+163E188: 01 00 ;":" back
+163E190: 00 01 ;":" font
+163E1C4: 01 00 ;1m back
+163E1CC: 00 01 ;1m font
+163E210: 01 00 ;2m back
+163E218: 00 01 ;2m font
+163E266: 01 00
+163E26E: 00 01
+1655490: 00 01 ;ProvName font
+1655494: 01 00 ;background
+1655500: 00 01 ;ProvFon with Arrow
+1655504: 01 00 ;background with Arrow
+;color table (0..17h) R G B
+;00 - white
+;01 - black
+;02 - red (base)
+;03 - navy (base)
+;04 - green (base)
+;05 - magenta (base)
+;06 - aqua (base)
+;07 - yellow (base)
+;08 - red (light)
+;09 - navy (light)
+;0A - green (light)
+;0B - magenta (light)
+;0C - aqua (light)
+;0D - yellow (light)
+;0E - red (dark)
+;0F - navy (dark)
+;10 - green (dark)
+;11 - magenta (dark)
+;12 - aqua (dark)
+;13 - yellow (dark)
+;14-17 - clean
+;------------------------- end -------------------------
+

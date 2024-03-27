@@ -1,0 +1,22 @@
+;CX75v25
+;Дополнительная панель иконок с поддержкой miniGPS
+;IconbarAdditions v3.3 miniGPS support
+;(c) benj9
+;(r) BuG, empeka
+;(p) Geka
+;Version: 3.3-MP
+;PatchID: 5492
+;Details: https://patches.kibab.com/patches/details.php5?id=5492
+/*
+
+*/
+; Если хотим иконки слева от стандартных
+2A8DD8: F4F13aEdF4F142Ef0028 00488047,0xA0FDB811,C046 ; cx75sw25
+0FDBA88: FFFFFFFFFFFFFFFF 0xA049D850,0xA049DC64 ;cx75sw25
+
+; Если хотим справа от стандартных
+;2A907C: 16F016FA16F036FDFF28 00488047,0xA0FDB811,C046 ; cx75sw25
+;0FDBA88: FFFFFFFFFFFFFFFF 0xA02BF4B1,0xA02BFAF5 ; cx75sw25
+;0FDB856: 00 FF ; put this line BEHIND patch
+;------------------------- end -------------------------
+

@@ -1,0 +1,23 @@
+;S65v58
+;Запуск мидлета при вставке новой SIM
+;Midlet start when SIM is changed
+;(c) SiNgle
+;(p) Tepish
+;Version: 
+;PatchID: 4398
+;Details: https://patches.kibab.com/patches/details.php5?id=4398
+/*
+
+*/
+;* Запуск мидлета при вставке новой SIM ** Midlet start when SIM is changed * © SiNgle, § AsteriX
+;(p) Tepish
+0B58A52: D6F047FF CFF156ED
+#pragma enable old_equal_ff
+0D28500: FF7F2DE918008FE20030A0E30020A0E3
+0D28510: 08409FE50FE0A0E114FF2FE1FFBFBDE8
+0D28520: F4E9C7A0
+0D28524: "2:\\gsm.jar",0000 ;путь к мидлету, его можно поменять на любой другой. !Слэшей должно быть по два!
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;C75v13
+;Изменение прогрессбара при проигрывании музыки
+;Change progressbar in music play
+;(c) SiNgle
+;(r) AsteriX
+;Version: 
+;PatchID: 982
+;Details: https://patches.kibab.com/patches/details.php5?id=982
+/*
+утоньшаем эту "полоску"
+*/
+04B289C: 1000660073 0500700080 
+;------------------------- end -------------------------
+

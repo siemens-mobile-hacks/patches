@@ -1,0 +1,23 @@
+;E71v45
+;Разблокировать клавиатуру двойным нажатием # 
+;Unlock keyBoard by Double-Press of #
+;(c) 1nvisible
+;(p) Evgr
+;Version: 
+;PatchID: 10317
+;Details: https://patches.kibab.com/patches/details.php5?id=10317
+/*
+после тестов sim_emrom выяснилось, что этому патчу больше подходит название
+
+Разблокировать клавиатуру любой кнопкой (кроме 1, 9, красная и громкость вниз) и # 
+Unlock keyboard by any key (except 1, 9, red button and Vol. down) and # 
+
+*/
+0669846: 96 94
+
+;Редактирование сообщения: 00279  "Для выключения нажмите и удерживайте '#'" => "Для выключения дважды нажмите '#'"
+;Для ленгпака lg91
+
+17B2387: D094D0BBD18F20D0B2D18BD0BAD0BBD18ED187D0B5D0BDD0B8D18F20D0BDD0B0D0B6D0BCD0B8D182D0B520D0B820D183D0B4D0B5D180D0B6D0B8D0B2D0B0D0B9D182D0B52027232700 D094D0BBD18F20D0B2D18BD0BAD0BBD18ED187D0B5D0BDD0B8D18F20D0B4D0B2D0B0D0B6D0B4D18B20D0BDD0B0D0B6D0BCD0B8D182D0B520272327FFFFFFFFFFFFFFFFFFFFFFFFFF00
+;------------------------- end -------------------------
+

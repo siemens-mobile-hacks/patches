@@ -1,0 +1,14 @@
+;EL71v45
+;Отключить выключение подсветки при нажатии отмена в входящем смс
+;Disable light off when press cancel in sms incoming window
+;(c) BingK(binghelingxi)
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8517
+;Details: https://patches.kibab.com/patches/details.php5?id=8517
+/*
+
+*/
+070C1EC: F6F070EA C046C046
+;------------------------- end -------------------------
+

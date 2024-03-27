@@ -1,0 +1,23 @@
+;SL45iv56
+;Вибра вместо звука при входящем SMS во время разговора
+;Change the ringing to vibration when a new SMS comes during conversation
+;(c) Greenteas
+;(p) GoLL@B
+;Version: 
+;PatchID: 3543
+;Details: https://patches.kibab.com/patches/details.php5?id=3543
+/*
+Вместо пиканья при входящем SMS во время разговора срабатывает вибра.
+Маленький баг: патч изменяет звуки, поэтому если звуки отключены, то вибра не срабатывает.
+
+
+English:
+Instead of sound when new SMS comes while conwersation we have vibra. 
+Small bug: it changes sounds so if sounds are off we don't have vibra.
+
+Release: May 28,2006
+*/
+230256: 2C 10 ;18=3x, 10=2x, 20=4x (кол-во вибраций) (numbers of vibra)
+230258: DAC31400 DAC36E02
+;------------------------- end -------------------------
+

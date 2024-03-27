@@ -1,0 +1,14 @@
+;S65v53
+;Сохранение фоток и видео на MMC
+;Save videos and photos on the MMC-card
+;(c) avkiev
+;(p) Athlon
+;Version: 
+;PatchID: 341
+;Details: https://patches.kibab.com/patches/details.php5?id=341
+/*
+
+*/
+0A247FC: 30 34
+;------------------------- end -------------------------
+

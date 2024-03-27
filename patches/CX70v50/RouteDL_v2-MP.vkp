@@ -1,0 +1,15 @@
+;CX70v50
+;Перенаправление ДС
+;Route DL
+;(c) empeka
+;(p) KreN
+;Version: 2-MP
+;PatchID: 1167
+;Details: https://patches.kibab.com/patches/details.php5?id=1167
+/*
+Врезка для патча 1165
+*/
+11511A4: 0160A0E1 55C8F9FA   ; CX70v50 (SetIllumination + 4)
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,50 @@
+;SK65v50
+;Позиционирование главного экрана
+;MainScreen positioning
+;(c) SiNgle, BuG
+;(r) KiRiK, arsh0r
+;(p) AsteriX
+;Version: 2
+;PatchID: 2493
+;Details: https://patches.kibab.com/patches/details.php5?id=2493
+/*
+
+*/
+;Charge Indicator (Switched-Off Mode)
+02A7144: 10 5E ;background end Y
+02A714A: 02 50 ;background start Y
+02A714C: 63 33 ;background start X
+02A714E: 80 50 ;background end X
+02A7153: F046FB 280028 ;no background
+02A715C: 02 50 ;Y
+02A715E: 63 33 ;X
+;Net
+02A71FC: 10 5E ;background end Y
+02A7200: 02 01 ;background start Y
+02A7202: 21 1F ;background end X
+02A7204: 03 01 ;background start X
+02A7209: F0EBFA 280028 ;no background
+02A7212: 02 01 ;Y
+02A7214: 03 01 ;X
+;Iconbar
+02A751C: 10 0F ;background end Y
+02A7520: 02 01 ;background start Y
+02A7522: 23 37 ;background start X
+02A7524: 61 75 ;background end X
+02A752B: F05AF9 280028 ;no background
+02A7556: 21 35 ;X
+02A7570: 02 01 ;Y
+;Battery
+02A760A: 10 1B ;background end Y
+02A760E: 02 0D ;background start Y
+02A7610: 80 1E ;background end X
+02A7612: 63 01 ;background start X
+02A7617: F0E4F8 280028 ;no background
+02A7620: 02 0D ;Y
+02A7622: 63 01 ;X
+0458AE8: 08 12 ;Y - Provider name
+0458AF8: 1A 24 ;Y - Sub provider name
+;02C989C: A1 A0 ;Y - Time & Date
+
+;------------------------- end -------------------------
+

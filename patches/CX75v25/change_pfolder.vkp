@@ -1,0 +1,15 @@
+;CX75v25
+;Изменить папку для фото с Pictures на My_Photo
+;Change default folder for photos from Pictures to My_Photo
+;(c) Vanoleo
+;(p) IliaKompGS
+;Version: 
+;PatchID: 3982
+;Details: https://patches.kibab.com/patches/details.php5?id=3982
+/*
+Стандартная папка pictures изменяется на My_Photo
+*/
+04A54C4: 500069006300740075007200650073 4D0079005F00500068006F0074006F ;0:/Pictures => My_Photo
+04A664E: 500069006300740075007200650073 4D0079005F00500068006F0074006F ;4:/Pictures => My_Photo
+;------------------------- end -------------------------
+

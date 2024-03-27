@@ -1,0 +1,15 @@
+;C81v51
+;Убрать черточки-разделители при показе IMEI
+;Disable delimiters while showing IMEI
+;(c) 1nvisible
+;(r) Bennie
+;(p) den11111
+;Version: 
+;PatchID: 7772
+;Details: https://patches.kibab.com/patches/details.php5?id=7772
+/*
+
+*/
+033E788: "00-0000-00-00000" "0000000000000000"
+;------------------------- end -------------------------
+

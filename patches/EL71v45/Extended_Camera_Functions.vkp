@@ -1,0 +1,28 @@
+;EL71v45
+;Расширенные функции фото-видео-камеры
+;Extended Camera Functions
+;(c) Evgr
+;(r) (idea) funMarkus
+;Version: 
+;PatchID: 8655
+;Details: https://patches.kibab.com/patches/details.php5?id=8655
+/*
+  фото-видео-запись по сдвигу слайдера
+  Чтобы начать фото-видео-запись, можно приоткрыть слайдер, чтобы были видны кнопки *0#
+  Чтобы начать фото-видео-запись при открытом слайдере, его можно задвинуть, чтобы были закрыты кнопки 123
+  можно менять зум в фото-видео-камере боковыми клавишами изменения громкости
+
+  enable photo/video recording by phone sliding
+  if closed then open slider till *0# buttons row is unshielded
+  if opened then close slider till 123 buttons row is shielded
+  enable Zoom in Camera by Volume Up and Volume Down Buttons
+*/
+0715370: F210D4E1 22AB33EA
+#pragma enable old_equal_ff
+1400000: F210D4E10F0051E32610A003D854CC0A
+1400010: 0E0051E32510A003D554CC0A9A0051E3
+1400020: 3910A003D254CC0A9B0051E33910A003
+1400030: CF54CCEA
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

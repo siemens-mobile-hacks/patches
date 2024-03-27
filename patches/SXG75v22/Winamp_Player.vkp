@@ -1,0 +1,15 @@
+;SXG75v22
+;Замена графики стандартного плеера на таковой от Winamp
+;Graphic's change in native player into Winamp's one
+;(c) Unknown
+;Version: 
+;PatchID: 6170
+;Details: https://patches.kibab.com/patches/details.php5?id=6170
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sxg75v22&f=Winamp_Player.zip
+
+/*
+Ложим сюда brew\mod\mplayer\res\common
+*/
+             
+;------------------------- end -------------------------
+

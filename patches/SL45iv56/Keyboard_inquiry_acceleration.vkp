@@ -1,0 +1,13 @@
+;SL45iv56
+;Ускорение опроса клавиатуры
+;Keyboard inquiry acceleration
+;(c) Charger
+;Version: 
+;PatchID: 1986
+;Details: https://patches.kibab.com/patches/details.php5?id=1986
+/*
+Адаптирован из патчей для других моделей. 
+*/
+21e2f2: 56 32
+;------------------------- end -------------------------
+

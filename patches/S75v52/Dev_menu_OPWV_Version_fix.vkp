@@ -1,0 +1,27 @@
+;S75v52
+;Исправление ошибок раздела OPWV Version
+;Dev menu OPWV Version fix
+;(c) Zl0d
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8346
+;Details: https://patches.kibab.com/patches/details.php5?id=8346
+/*
+Исправляем ошибки в этом разделе меню разработчика
+*/
+1333EBC: "19" "35" 
+1333F3E: "19" "35" 
+1333F4E: "4" "2"   
+1333DFE: "18" "13" 
+
+132FD1E: "20" "05" 
+132FD18: 302720 303027
+132FD18: "00" "-3" 
+132B492: "20" "05" 
+132B48C: 302720 303027
+132B48C: "00" "-3" 
+
+1333FFF: "Version info" "> Version < "
+133401C: "FFS info" "> FFS < "
+;------------------------- end -------------------------
+

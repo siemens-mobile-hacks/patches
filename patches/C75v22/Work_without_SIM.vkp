@@ -1,0 +1,20 @@
+;C75v22
+;Работа телефона без SIM-карты
+;Work without a SIM - card
+;(c) SiNgle
+;(r) himtosh, klaud
+;(p) Grizzzzly
+;Version: 
+;PatchID: 4734
+;Details: https://patches.kibab.com/patches/details.php5?id=4734
+/*
+При включении телефона без сим-карты нажмите на джойстик. (Иногда 2 раза) 
+*/
+02C9A08: 15283FD1 C6F1DAFF 
+#pragma enable old_equal_ff
+04909C0: FEB5152800D1FEBD292802D104480349 
+04909D0: 8847281CFEBC06B0F0BDC046,0xA07DC93C 
+04909E0: 00200BA8 
+#pragma disable old_equal_ff 
+;------------------------- end -------------------------
+

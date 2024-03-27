@@ -1,0 +1,13 @@
+;EL71v45
+;Мигалка
+;Blinker
+;(c) benj9
+;Version: 4
+;PatchID: 8001
+;Details: https://patches.kibab.com/patches/details.php5?id=8001
+/*
+
+*/
+04BD624: 0050A0E1 7AFCEEEB ;EL71v45
+;------------------------- end -------------------------
+

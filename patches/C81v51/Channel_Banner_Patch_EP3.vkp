@@ -1,0 +1,28 @@
+;C81v51
+;Запрет использования каналов (ELFPack 3.0 by Z.Vova & Ganster)
+;Channel Banner Patch (ELFPack 3.0 by Z.Vova & Ganster)
+;(c) Rst7/CBSIE
+;(p) dimonp25
+;Version: 
+;PatchID: 10213
+;Details: https://patches.kibab.com/patches/details.php5?id=10213
+/*
+Патч перенесён на новое место для ELFPack 3.0 by Z.Vova & Ganster Это каторый для нового elf loadera,т.к. загрузчик стал больше по размеру перенесен на новое место.
+
+*/
+;CODE
+0x0007B240: ffffffffffffffffffffffffffffffff 70402DE90040A0E10150A0E1BB8100EF
+0x0007B250: ffffffffffffffffffffffffffffffff 006090E5000056E30700000A042096E5
+0x0007B260: ffffffffffffffffffffffffffffffff 0510A0E10400A0E132FF2FE1006096E5
+0x0007B270: ffffffffffffffffffffffffffffffff 0050A0E1000056E3F7FFFF1A04009FE5
+0x0007B280: ffffffffffffffffffffffffffffffff 0050C4E77080BDE8EA45EDA800402DE9
+0x0007B290: ffffffffffffffffffffffffffffffff FF20A0E3FF2C82E3020051E10080BD08
+0x0007B2A0: ffffffffffffffffffffffffffffffff F30F50E30080BDA8021081E22111A0E1
+0x0007B2B0: ffffffffffffffffffffffffffffffff E2FFFFEB0080BDE80300A0E1DFFFFFEA
+;PATCH_GLOBAL_SCAN,PATCH_J
+0x00B015E6: c14a914207d0c44a1268 034A104701B502488047
+0x00B015F0: 904203D80231C34A89081154 262F01BD8CB207A0B8B207A0
+;PATCH_WORK_SCAN
+0x00B01C22: 262fd154 FFF7E2FC
+;------------------------- end -------------------------
+

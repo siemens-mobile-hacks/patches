@@ -1,0 +1,14 @@
+;C65v56
+;Отключить надписть "Поиск сети"
+;Disable displaying "netsearch"
+;(c) Arsh0r
+;Version: 
+;PatchID: 3768
+;Details: https://patches.kibab.com/patches/details.php5?id=3768
+/*
+
+*/
+16F277E: 6549 04E0 ;SCREENSAVER
+16EFAAE: 15F0FCE8 07E00028 ;MAINSCREEN
+;------------------------- end -------------------------
+

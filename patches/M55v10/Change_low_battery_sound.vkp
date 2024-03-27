@@ -1,0 +1,13 @@
+;M55v10
+;Изменение звука разряженного аккумулятора
+;Chaging sound of low battery
+;(c) ACiD[mrp], RizaPN
+;Version: 
+;PatchID: 1304
+;Details: https://patches.kibab.com/patches/details.php5?id=1304
+/*
+
+*/
+73FFD3: 3C 1C ;0С - тишина, 1C - биип, 4С - щелчок
+;------------------------- end -------------------------
+

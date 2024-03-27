@@ -1,0 +1,25 @@
+;S65v58
+;Включение/выключение вибры при блокировке/разблокировке клавиатуры
+;Turn Vibra On/Off On Keypad Lock/Unlock
+;(c) ~Jhellico
+;(r) empeka
+;(p) KiRiK
+;Version: 0.1
+;PatchID: 2429
+;Details: https://patches.kibab.com/patches/details.php5?id=2429
+/*
+При автоблокировке вибра не включается
+
+English: On auto keylock vibra doesn't turn on
+*/
+#pragma disable old_equal_ff
+1158E10: 01210320 A7F678F9 
+1159198: 01210320 A6F6B2FF
+
+#pragma enable old_equal_ff
+1000100: 012100E0002101480047C046,0xA1000111
+1000110: FCB50F1C04498847B84201D003498847
+1000120: FCBC0121032000BD,0xA08DA3DF,0xA08DA3F5 ; GetVibraStatus, SwitchVibraOnOff  
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

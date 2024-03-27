@@ -1,0 +1,18 @@
+;E71v45
+;Не добавлять png файлы в базу Медиаплеера 
+;Do not add png files to Media Database
+;(c) Evgr
+;(r) Лесной
+;Version: 
+;PatchID: 9799
+;Details: https://patches.kibab.com/patches/details.php5?id=9799
+/*
+
+*/
+07266CC: 3300001A 34A8331A
+
+#pragma enable old_equal_ff 
+14107A4: 270050E3F457CC0AFB57CCEA
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

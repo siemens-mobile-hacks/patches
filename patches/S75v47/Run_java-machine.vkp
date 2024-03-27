@@ -1,0 +1,22 @@
+;S75v47
+;Запуск ява-машины при старте 1го мидлета
+;Run java-machine with the start of 1st midlet
+;(c) @ndreS/PRM
+;(r) (i)Miha_r, DronSPB
+;(p) dimonp25
+;Version: 
+;PatchID: 8706
+;Details: https://patches.kibab.com/patches/details.php5?id=8706
+/*
+
+*/
+09FCB3C: E2AA02EB 6FCBD9FA
+09F3414: 514017EB C046C046
+
+;09FCAD0: 04 00 ;Если нужна двуявность, то расскоментируйте
+#pragma enable old_equal_ff
+006F900: 01B506480478FB2C03D101BC024CA047
+006F910: 00BDFB24047001BD,0xA0AA76CC,0xA8000080
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

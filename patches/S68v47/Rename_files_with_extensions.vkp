@@ -1,0 +1,16 @@
+;S68v47
+;Переименование файлов с расширением
+;Rename files with extensions
+;(c) SiNgle
+;(p)  klaud
+;Version: 
+;PatchID: 6574
+;Details: https://patches.kibab.com/patches/details.php5?id=6574
+/*
+
+*/
+002709D8: 2E22 0022
+002709EA: 2E22 0022
+00338118: 2E22 0022
+;------------------------- end -------------------------
+

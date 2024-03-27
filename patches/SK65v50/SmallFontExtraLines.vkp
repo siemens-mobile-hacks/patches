@@ -1,0 +1,14 @@
+;SK65v50
+;Мелкий шрифт доп строчек курсора
+;Small font extra lines of cursor
+;(c) Feyman
+;(p) Лесной
+;Version: 
+;PatchID: 10129
+;Details: https://patches.kibab.com/patches/details.php5?id=10129
+/*
+В курсоре меню только верхняя строчка будет отображается нормальным шрифтом, 2 и 3 мелким
+*/
+6EF1DC: 3968 0721
+;------------------------- end -------------------------
+

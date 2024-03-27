@@ -1,0 +1,14 @@
+;S75v52
+;Нормальная анимация при записи в диктофоне
+;Normal animation in sound recorder
+;(c) SiNgle
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8277
+;Details: https://patches.kibab.com/patches/details.php5?id=8277
+/*
+
+*/
+0654C98: FA 64
+;------------------------- end -------------------------
+

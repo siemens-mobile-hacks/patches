@@ -1,0 +1,14 @@
+;S65v53
+;Убрать имя оператора в заставке
+;Remove provider name in ScreenSaver
+;(c) KiRiK
+;(p) BuG
+;Version: 
+;PatchID: 343
+;Details: https://patches.kibab.com/patches/details.php5?id=343
+/*
+
+*/
+169F094: 64EB 0028
+;------------------------- end -------------------------
+

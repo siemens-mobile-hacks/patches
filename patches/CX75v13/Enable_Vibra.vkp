@@ -1,0 +1,14 @@
+;CX75v13
+;Включить вибру при подключенном кабеле
+;Enable Vibra With Plugged-In Cable
+;(c) 1nvisible
+;(p) -=(Kad)=-
+;Version: 
+;PatchID: 2557
+;Details: https://patches.kibab.com/patches/details.php5?id=2557
+/*
+Включение вибры при подплугеном кабеле или заряднике
+*/
+96D338: F081BD18 0000A0E3
+;------------------------- end -------------------------
+

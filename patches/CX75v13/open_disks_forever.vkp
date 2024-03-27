@@ -1,0 +1,16 @@
+;CX75v13
+;Открыть диски навсегда
+;Open disks forever
+;(c) SiNgle
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 758
+;Details: https://patches.kibab.com/patches/details.php5?id=758
+/*
+Открывает в телефоне скрытые диски (Cache (FFS_B) и Config (FFS_C)). После применения патча скрытые диски в телефоне становятся видны в программах-проводниках типа MPM, VNavigator и SiMoCo. Это полезно для изменения иконок главного меню, убирания звука камеры и т. д., одним словом, для манипуляции со скрытыми файловыми ресурсами телефона. Внимание, соблюдайте осторожность, можно и чего важное стереть, потому всегда сохраняйте резервные копии.
+
+EN: Opens  hidden disks (Cache (FFS_B) and Config (FFS_C)) in phone. After application of a patch hidden disks in phone become visible in explorers like MPM, VNavigator and SiMoCo. It is useful for changing icons of main menu, removing a sound of the chamber, etc., in a word, for manipulation with the hidden file resources of phone. Attention, be careful, it is possible also to erase important files, so always keep backup copies.
+*/
+08CF008: 02 03
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;CF75v22
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found"
+;(c) avkiev
+;(r) AsteriX
+;Version: 
+;PatchID: 1533
+;Details: https://patches.kibab.com/patches/details.php5?id=1533
+/*
+Отключить звук "Сеть найдена"
+
+Disable ringtone "Net found"
+*/
+0E8D060: 5C03 FFFF
+;------------------------- end -------------------------
+

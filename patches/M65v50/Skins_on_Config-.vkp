@@ -1,0 +1,15 @@
+;M65v50
+;Скины на Сonfig
+;Skins_on_Config
+;(c) strike66
+;(r) strike66
+;(p) strike66
+;Version: 
+;PatchID: 2881
+;Details: https://patches.kibab.com/patches/details.php5?id=2881
+/*
+Скины больше не будут занимать место на диске Data! :)
+*/
+0A072A2: 30 32
+;------------------------- end -------------------------
+

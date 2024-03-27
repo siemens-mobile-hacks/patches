@@ -1,0 +1,17 @@
+;A65v17
+;Убрать польский из выбора языков
+;Remove Polish from input languages menu
+;(c) ?
+;(p) Rasp
+;Version: 
+;PatchID: 6383
+;Details: https://patches.kibab.com/patches/details.php5?id=6383
+/*
+
+*/
+;Убрать польский из выбора языков набора СМС.
+;Портировано: Rasp
+5F430E: 0000 1501
+
+;------------------------- end -------------------------
+

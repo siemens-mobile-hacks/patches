@@ -1,0 +1,30 @@
+;SL65v50
+;Чтение СМС при заблокированной клавиатуре
+;Read Message when Key Locked
+;(c) Bennie
+;(r) avkiev
+;(p) KiRiK
+;Version: 2,1
+;PatchID: 3112
+;Details: https://patches.kibab.com/patches/details.php5?id=3112
+/*
+Чтение флэш СМС и нового сообщения при залоченной клавиатуре с временной подсветкой. С закрытым слайдером также Чтобы прочитать сообщение, нажмите ЗЕЛЁНУЮ кнопку
+
+English:Read flash sms and new message when keyboard locked, and Light on temporarily. With closed slider also
+Press the GREEN button to read message
+*/
+1649006: F8F7A9FC 97F096F8
+164C35C: 0223E05E 93F0F8FE
+#pragma enable old_equal_ff
+16E0100: 40B50026052814D16AF7C4FF01280AD0
+16E0110: 6BF77EFF01280CD10320154B98471548
+16E0120: 8047022605E00320114B984767F74BFD
+16E0130: 0126301C40BD0223E85E00B5FFF7E0FF
+16E0140: 002802D161F70AFC00BD01B00A490847
+16E0150: 0223E05E01B5FFF7D3FF002800D101BD
+16E0160: 02B0022802D100206CF7F9FC03490847
+16E0170: 45F2B6A084F965A1698F64A185C364A1
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,101 @@
+;C72v22
+;Графический индикатор температуры аккума
+;Accu temperature as graphic indicator
+;(c) benj9
+;(p) птичка
+;Version: 1.5
+;PatchID: 6918
+;Details: https://patches.kibab.com/patches/details.php5?id=6918
+/*
+Графический индикатор температуры аккума
+*/
+08C4C66: 02D0 C046
+08C4C68: 00F0D0FA 79F0E2F9
+
++093E030
+#pragma enable old_equal_ff
+00: FFB5214880473727C74001200740012F
+10: 03D0FFBC87F7E2F800BD1A2101220D1C
+20: 009101920D22662182230E98174DA847
+30: 009568240F2501200321154A90470A21
+40: 0902AA31401A00210A061116401803D5
+50: 2D230235635340420E4F0F4E963801D5
+60: 321C0BE0C0210031884201DB3A1C05E0
+70: C117090F081809490011421866200D21
+80: 074B9847C5E7C046A1178DA073528CA0
+90: 147C14A1250200002302000026020000
+A0: 99528CA0
+#pragma disable old_equal_ff
+
+; there are 14 pictures.(28x6)
+; 1 pic below temp_min, 1 pic over temp_max, 12 pics in the range of temp_min to temp_max
+; for demonstration the built-in accu icons are used, feel free to create your own set of icons
+; uncomment lines 98-9C to use attached pics set
+; in this case * Addition To PIT Table * patch must be installed
+
+; Всего 14 картинок(28x6)
+; 1 картинка для ниже мин.темп., 1 для выше макс.темп., 12 для диапазона от мин.темп. до макс.темп.
+; Для демонстрации используются встроенные картинки аккума, создавайте свои наборы картинок
+; Или используйте прилагаемый набор, раскомментировав строки 98-9C. 
+; В этом случае должен быть установлен патч * Дополнение к PIT таблице *
+
+# picture numbers | номера картинок #
+98: 2302 6802 ; spc icon no. for temperature < temp_min
+               ; № в SPC для температуры < мин.темп.
+94: 2502 6902 ; spc icon no. for temperature >= (temp_min+range)
+               ; № в SPC для температуры >= (мин.темп+диапазон)
+9C: 2602 6A02 ; spc icon no. of first icon (12 pics for a range from temp_min to temp_max (like accu indicator pics)
+               ; № в SPC первой иконки (12 шт. в диапазоне от мин.темп. до макс.темп. (как иконки индикатора аккума)
+
+##########
+# icon position | позиция иконки #
+7C: 66 63 ; icon_x_start
+7E: 0D 11 ; icon_y_start 
+##########
+# canvas (erase background under icon) position | позиция холста (стирание фона под иконкой) #
+26: 66 63 ; canvas_x_start
+28: 82 7F ; canvas_x_end ; x_start + iconwidth | + длина иконки
+24: 0D 11 ; canvas_y_start
+1A: 1A 17 ; canvas_y_end ; y:start + iconheight | + высота иконки
+##########
+# minimum temperature for display | минимальная для отображения температура #
+;5C: 96 96 ; temp_min: minimum temperature ( 0xB4 = 180 = 18°C),(0x96=150=15°)
+          ; temp_max: temp_min + range   (range is (a)19.2°C or (b)38.4°C)
+##########
+# range of display | диапазон отображения #
+; you can make the range of the 12 icons between temp_min and temp_max 19.2°C or 38.4°C
+; following lines: (a) range is 19.2°C, (b) range is 38.4°C
+; Для 12 иконок можно выбрать диапазон 19.2°C или 38.4°C между мин.темп. и макс.темп.
+; (a) диапазон 19.2°C, (b) диапазон 38.4°C
+;72: 090F C90E ; (a):090F, (b):C90E
+;78: 0011 4011 ; (a):0011, (b):4011
+;66: 00 C0     ; (a):00,   (b):C0
+##########
+# temperature calibration | подстройка температуры #
+;34: 0F 0i012 ; Adjust temperature by 0.1°C: 000 - TBA, 030 - TEN, 015 - (TBA+TEN)/2, -010 - TBA-1 
+              ; Подстройка температуры в десятых долях градуса 
+##########
+# profile configuration | конфигурация профилей #
+; every single bit of the profile key represents a profile,
+; the most left one is profile no. 7, the most right one profile no. 1
+; to activate patch in a certain profile, set the according bit to 1
+; example: 0n0100101 - patch is active in profiles no. 1, 3 and 6
+; Каждый бит в ключе определяет профиль
+; Крайний левый - профиль 7, крайний правый - профиль 1
+; Для активации патча в определённом профиле нужный бит будет равен 1
+; Например: 0n0100101 - патч активен в профилях 1, 3 и 6
+;06: 37 0n0111111 ; profile key | ключ профилей
+##########
+# canvas mode | режим холста #
+;2A: 0E98 0020 ; normally line is turned off | обычно линия отключена
+; turn on line means: canvas doesn't select a background automatically, but 
+; erases always with SkinApplicationIdleImage. use with an activated background 
+; image on phone to calibrate canvas
+; Включить линию означает: холст перерисовывает автоматически не фон (обои),
+; а подставляет SkinApplicationIdleImage 
+##########
++0 ; отмена корректора адреса
+#pragma enable old_equal_ff
+
+;------------------------- end -------------------------
+

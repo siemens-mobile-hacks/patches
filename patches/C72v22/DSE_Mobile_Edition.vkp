@@ -1,0 +1,19 @@
+;C72v22
+;DSE Mobile Edition
+;DSE Mobile Edition
+;(c) 1nvisible
+;(p) Virusmater
+;Version: 2
+;PatchID: 7600
+;Details: https://patches.kibab.com/patches/details.php5?id=7600
+/*
+Позволяет назначить функции кнопок прямо с телефона. 
+Если вы хотите использовать стандартное значение - напишите STDF в нужной строке.
+English:Allows keys to be rebound from the mobile phone.
+If you want the standart function to be used - put "STDF" as a string.
+v2: for MP v14
+*/
+8F5E4C: 2C3A381CA16B45F0DEEC 00488047,0xA0FC9001,C046
+
+;------------------------- end -------------------------
+

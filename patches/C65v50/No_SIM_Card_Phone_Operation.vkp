@@ -1,0 +1,21 @@
+;C65v50
+;Работа телефона без СИМ-карты
+;No SIM Card Phone Operation
+;(c) SiNgle
+;(r) KiRiK
+;(p) TiCK
+;Version: 
+;PatchID: 828
+;Details: https://patches.kibab.com/patches/details.php5?id=828
+/*
+Жмем *#06# потом заходим в тест и жмём тест звука 1, ничего не происходит, жмем кратко красную кнопку
+
+EN:
+Press *#06#, goto Device Check, press Soundcheck 1 (nothing happens), and press the red button shortly
+*/
+0922C88: 05F0D6FE 06F0C2EB
+0929410: 10B55A495A480BF0FAEE041C59485A49 FF7F2DE910109FE510009FE50120A0E3
+0929420: 0068FF300130C460201C0BF0F6EE5748 0FE0A0E111FF2FE1FFBFBDE8900715A1
+0929430: 93F7C0FB 00200BA8
+;------------------------- end -------------------------
+

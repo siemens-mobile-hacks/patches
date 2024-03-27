@@ -1,0 +1,14 @@
+;S75v52
+;Отключить Retarget Exit
+;Disable Retarget Exit
+;(c) 1nvisible
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8270
+;Details: https://patches.kibab.com/patches/details.php5?id=8270
+/*
+
+*/
+03E9794: 70402DE9 1EFF2FE1
+;------------------------- end -------------------------
+

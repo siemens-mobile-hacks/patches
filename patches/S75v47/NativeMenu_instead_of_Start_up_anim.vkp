@@ -1,0 +1,16 @@
+;S75v47
+;NativeMenu вместо Аним. при вкл. или Главного меню
+;NativeMenu instead of Start up anim. or MainMenu
+;(c) Belarus
+;Version: 
+;PatchID: 5574
+;Details: https://patches.kibab.com/patches/details.php5?id=5574
+/*
+Вешаем на горячую клавишу "Аним. при вкл." (NAT_ANIM_STARTUP) и напрямую получаем доступ в NativeMenu
+*/
+
+;Вешаем на горячую клавишу "Аним. при вкл." (NAT_ANIM_STARTUP) и напрямую получаем доступ в NativeMenu
+041EFF8: 0xA032E365 0xA02CDF23 ; вместо "Аним. при вкл."
+;04221F8: 0xA032DFA1 0xA02CDF23 ; вместо "Главного меню"
+;------------------------- end -------------------------
+

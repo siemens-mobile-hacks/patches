@@ -1,0 +1,14 @@
+;SL45iv56
+;Без стандартной анимации зарядки батареи  и выключения телефона
+;No standard animation of battery loading - phone off
+;(c) GoLL@B
+;Version: 
+;PatchID: 3551
+;Details: https://patches.kibab.com/patches/details.php5?id=3551
+/*
+English:
+Release: May 30, 2006
+*/
+0x454F28: DAC1EC22 CC00CC00
+;------------------------- end -------------------------
+

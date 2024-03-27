@@ -1,0 +1,43 @@
+;SL65v50
+;ZIPViewer
+;ZIPViewer
+;(c) MaX6, const
+;(r) NForce, DJ, cbn
+;(p) Geka
+;Version: 2.2
+;PatchID: 5598
+;Details: https://patches.kibab.com/patches/details.php5?id=5598
+/*
+;http://djfromredsys.wen.ru/Other/MobileZip-x75.jar - Открывает Zip-архивы сразу из кард-эксплорера
+;http://www.mobilerar.narod.ru/MobileRar.jar - Пока открывается только сам и из него уже можно выбрать Rar- или Zip-архив.
+; Для использования разных программ для zip и rar закомментировать соответствующие строки.
+; Архивы 7zip (впрочем как и rar) распаковываются ТОЛЬКО MobileRar, поэтому для их открывания используем RarViewer.
+; В данном примере следующая комбинация:
+;        PdfViewer (*.pdf) заменён на ZipViewer (*.zip)
+;        DocViewer (*.doc) заменён на RarViewer (*.rar)
+;        XlsViewer (*.xls) заменён на RarViewer (*.7z)
+
+*/
+0A0A2E1: 446F63 526172 ; DocViewer -> RarViewer
+0A0A2ED: 586C73 526172 ; XlsViewer -> RarViewer
+;0A0A2F9: 506466 526172 ; PdfViewer -> RarViewer
+
+;04AD805: 446F63 5A4950 ; DocViewer -> ZipViewer
+;0A0A2ED: 586C73 5A4950 ; XlsViewer -> ZipViewer
+0A0A2F9: 506466 5A6970 ; PdfViewer -> ZipViewer
+
+
+;Собственно замена расширений
+;0A0A320: 646F63 7A6970 ; doc -> zip
+0A0A320: 646F63 726172 ; doc -> rar
+;0A0A320: 646F63 377A00 ; doc -> 7z
+
+;0A0A340: 786C73 7A6970 ; xls -> zip
+;0A0A340: 786C73 726172 ; xls -> rar
+0A0A340: 786C73 377A00 ; xls -> 7z
+
+0A0A360: 706466 7A6970 ; pdf -> zip
+;0A0A360: 706466 726172 ; pdf -> rar
+;0A0A360: 706466 377A00 ; pdf -> 7z
+;------------------------- end -------------------------
+

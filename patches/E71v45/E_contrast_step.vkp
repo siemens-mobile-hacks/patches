@@ -1,0 +1,26 @@
+;E71v45
+;Разделить шаблоны регулирования яркости и контраста
+;Split illumination and contrast setup patterns
+;(c) Evgr
+;Version: 
+;PatchID: 10446
+;Details: https://patches.kibab.com/patches/details.php5?id=10446
+/*
+так как удобно иметь разные шаги изменения подсветки и контраста, а они совмещены в прошивке, пришлось их разделить
+*/
+
+06403E4: 041CBAF198EE0223 004CA047,0xA13D2BE1
+
+#pragma enable old_equal_ff
+13D2BE0: 00B5041C044B98478168044B994207D0
+13D2BF0: 022302BC04310847,0xA0A20A2F,0xA077EA85
+13D2C00: 02BC0223E95EDD1E28291CD008DC0129
+13D2C10: 1DD01A2919D025290BD0262919D10BE0
+13D2C20: 2A2906D02B2907D03D290ED07C2910D1
+13D2C30: 0DE041680A3901E041680A314160011C
+13D2C40: 201C054CA047281CB0BD012141610220
+13D2C50: B0BD0020B0BDC046,0xA0640371
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

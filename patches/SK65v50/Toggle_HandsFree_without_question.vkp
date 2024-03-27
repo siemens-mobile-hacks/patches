@@ -1,0 +1,15 @@
+;SK65v50
+;Убрать подтверждения при включении громкой связи
+;Toggle HandsFree without question
+;(c) SiNgle
+;(p) 1nvisible
+;Version: 
+;PatchID: 966
+;Details: https://patches.kibab.com/patches/details.php5?id=966
+/*
+
+*/
+02C7592: CB21C90000 0021002101
+02C759A: 84F128EA 32F0ECEB
+;------------------------- end -------------------------
+

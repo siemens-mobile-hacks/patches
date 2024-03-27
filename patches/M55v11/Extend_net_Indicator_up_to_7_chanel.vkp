@@ -1,0 +1,13 @@
+;M55v11
+;Расширение индикатора сети с 6-и до 7-и каналов
+;Extend net Indicator up to 7 chanels
+;(c) Broken Brain
+;Version: 
+;PatchID: 5128
+;Details: https://patches.kibab.com/patches/details.php5?id=5128
+/*
+
+*/
+7F05E8: 9C A8
+;------------------------- end -------------------------
+

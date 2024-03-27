@@ -1,0 +1,21 @@
+;SK65v50
+;Включение по Напоминанию
+;Turn On by Appointment
+;(c) 1nvisible
+;Version: 1
+;PatchID: 4219
+;Details: https://patches.kibab.com/patches/details.php5?id=4219
+/*
+Телефон включается по напоминанию. При этом звук напоминания не проигрывается.
+English:
+The phone turns on by appointment. The appointment sound is not played.
+*/
+0534C88: A06E0028 BFF4BAFD
+
+#pragma enable old_equal_ff
+01F4800: 3FB5074B1B78152B05DC064B98473FBC
+01F4810: 01B0054B18473FBCA06E002800BDC046
+01F4820: 1ECEE7A87CF897A0AF4C53A0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

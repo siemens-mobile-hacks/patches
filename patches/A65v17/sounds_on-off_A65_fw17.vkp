@@ -1,0 +1,17 @@
+;A65v17
+;Отключить сообщение при Включении/Выключении сигналов
+;Unhooking the message "All sounds on/off"
+;(c) ?
+;(p) Rasp
+;Version: 
+;PatchID: 6380
+;Details: https://patches.kibab.com/patches/details.php5?id=6380
+/*
+отключает надоедливое сообщение :)
+*/
+;Отключить сообщение при Включении/Выключении сигналов
+;Портировано: Rasp
+2B7EAE: DA4CCC98 CC00CC00
+2B7EC4: DA4CCC98 CC00CC00
+;------------------------- end -------------------------
+

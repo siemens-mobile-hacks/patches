@@ -1,0 +1,15 @@
+;S75v47
+;Отключить "Подождите" в Списке Вызовов
+;Disable "Please Wait" in Call List
+;(c) 1nvisible
+;(p) -=(Kad)=-
+;Version: 
+;PatchID: 7797
+;Details: https://patches.kibab.com/patches/details.php5?id=7797
+/*
+
+*/
+05E928E: 0120 10BD
+
+;------------------------- end -------------------------
+

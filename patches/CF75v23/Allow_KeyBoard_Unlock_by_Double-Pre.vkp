@@ -1,0 +1,14 @@
+;CF75v23
+;Разрешить Разблокировку Клавиатуры Двойным Нажатием #
+;Allow KeyBoard Unlock by Double-Press of #
+;(c) 1nvisible
+;(p) $TA$
+;Version: 
+;PatchID: 6908
+;Details: https://patches.kibab.com/patches/details.php5?id=6908
+/*
+
+*/
+0345418: 36D1 C046
+;------------------------- end -------------------------
+

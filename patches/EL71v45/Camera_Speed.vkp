@@ -1,0 +1,14 @@
+;EL71v45
+;Скорость камеры
+;Camera Speed
+;(c) SiNgle
+;(p) funMarkus
+;Version: 
+;PatchID: 7921
+;Details: https://patches.kibab.com/patches/details.php5?id=7921
+/*
+
+*/
+0A0FBC8: 14 00
+;------------------------- end -------------------------
+

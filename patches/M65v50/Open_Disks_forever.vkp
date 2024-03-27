@@ -1,0 +1,14 @@
+;M65v50
+;Открыть скрытые диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 227
+;Details: https://patches.kibab.com/patches/details.php5?id=227
+/*
+Открывает скрытые диски навсегда - Cache и Config
+*/
+125FE30: 02 03
+;------------------------- end -------------------------
+

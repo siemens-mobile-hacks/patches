@@ -1,0 +1,14 @@
+;EL71v38
+;Предпросмотр Смс
+;Sms Preview
+;(c) Zl0d
+;(p) -=PaScaL=-
+;Version: 
+;PatchID: 6798
+;Details: https://patches.kibab.com/patches/details.php5?id=6798
+/*
+
+*/
+2385A5: 66616C736527 747275652720
+;------------------------- end -------------------------
+

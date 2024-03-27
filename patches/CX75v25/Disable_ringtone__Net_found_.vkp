@@ -1,0 +1,14 @@
+;CX75v25
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found"
+;(c) avkiev
+;Version: 
+;PatchID: 3487
+;Details: https://patches.kibab.com/patches/details.php5?id=3487
+/*
+
+*/
+04CF128: 5C03 FFFF
+
+;------------------------- end -------------------------
+

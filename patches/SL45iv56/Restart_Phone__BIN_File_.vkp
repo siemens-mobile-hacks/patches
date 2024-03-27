@@ -1,0 +1,18 @@
+;SL45iv56
+;Перезагрузка телефона (BIN-файл)
+;Restart Phone (BIN File)
+;(c) rizapn
+;Version: 
+;PatchID: 2039
+;Details: https://patches.kibab.com/patches/details.php5?id=2039
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=Restart_Phone__BIN_File_.rar
+
+/*
+Кто-то спрашивает меня о патче, для перезапуска телефона ярлыком или 
+меню, и я сообщаю: перезапуск файлом BIN... ( может легко быть 
+преобразовано к нормальному патчу).
+Бинарник в прикрепленном архиве. 
+*/
+;ZZZZZZ: E6FCA034E0EDE05EE05FFAC130AA
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;CX70v56
+;Open ZIP and RAR archives from card explorer
+;Open ZIP and RAR archives from card explorer
+;(c) NForce
+;(r) Shadow_ru
+;Version: 
+;PatchID: 4031
+;Details: https://patches.kibab.com/patches/details.php5?id=4031
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx70v56&f=archives.rar
+
+/*
+English: In archive which i have added there are 2 java applications MobileZip x75 (special edition for this patch) and MobileRar (opens rar archives but only from Misc, Sounds etc. folders not from root) and sources for graph patches updated graphic in archive
+*/
+0A5000C: "pdf" "zip" ;if you already have patch ZIPViewer comment this line
+0A4FFA5: "Pdf" "ZIP" ;if you already have patch ZIPViewer comment this line
+0A4FFCC: "doc" "rar"
+0A4FF8D: "Doc" "RAR"
+;------------------------- end -------------------------
+

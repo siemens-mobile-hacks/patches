@@ -1,0 +1,20 @@
+;S65v58
+;Мегагромкость
+;MegaLoudness
+;(c) SiNgle
+;(p) KiRiK
+;Version: 
+;PatchID: 3624
+;Details: https://patches.kibab.com/patches/details.php5?id=3624
+/*
+Громкость поднята на 3 пункта из 7 возможных, но уже хрипит на некоторых мелодиях
+English:Volume up 3 points out of 7, but already wheezes in some tunes
+
+Логотип к патчу не относится. Просто патч был во время ЧМ 2006 сделан . Просто себе его забросьте на заставку.
+Apo4emu
+*/
+12592A4: 2600C4E5 D3FFFFEA
+12591FC: 030000EF 030040E2
+1259200: 6C2DA0E30100A0E3 2600C4E5290000EA
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;SL75v52
+;Классическая функция красной кнопки
+;Classic Red Button
+;(c) Rst7/CBSIE
+;(p) Dikobraz
+;Version: 
+;PatchID: 9276
+;Details: https://patches.kibab.com/patches/details.php5?id=9276
+/*
+
+*/
+0097B324: 94 96
+;------------------------- end -------------------------
+

@@ -1,0 +1,26 @@
+;CX75v25
+;SieGet вместо открытия родного браузера из явы
+;SieGet instead of opening the native browser from Java
+;(c) green
+;(r) Dimadze
+;Version: 
+;PatchID: 10663
+;Details: https://patches.kibab.com/patches/details.php5?id=10663
+/*
+При запросе на открытие встроенного браузера вместо него посылает сообщение сиегету. Естественно должен быть запущен SieGetD.elf
+*/
+093FCC8: 014F4FA0 0xA0FA5721	; тело патча +1
+;куда врезаться - можно попытаться найти ????????687474703A000000????????66696C653A000000
+
+
++0FA5720
+#pragma enable old_equal_ff
+0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F0B5031CF4215B1807A109A219605A60
+0010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 9860034803490022C7DF0001F0BD0000
+0020: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 09420000F20300005369654765744400
+0030: FFFFFFFFFF 4A61766100
+#pragma disable old_equal_ff
++0
+
+;------------------------- end -------------------------
+

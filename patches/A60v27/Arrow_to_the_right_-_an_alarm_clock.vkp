@@ -1,0 +1,20 @@
+;A60v27
+;Стрелка вправо - будильник
+;Arrow to the right - an alarm clock
+;(c) .
+;(p) Rasp
+;Version: 
+;PatchID: 4256
+;Details: https://patches.kibab.com/patches/details.php5?id=4256
+/*
+
+*/
+6CAD4C: DACFA2CE FA7FE0D6
+5FD6E0: FFFFFFFFFFFF 46FD27002D08
+5FD6E6: FFFFFFFFFFFF DA4FA2CE4840
+5FD6EC: FFFFFFFFFFFF 2D02FA8C56AD
+5FD6F2: FFFFFFFFFF FA8C04B1DA
+5FD6F7: FFFFFF 85D6BC
+5FD6FA: FFFFFFFF FA8C04B1
+;------------------------- end -------------------------
+

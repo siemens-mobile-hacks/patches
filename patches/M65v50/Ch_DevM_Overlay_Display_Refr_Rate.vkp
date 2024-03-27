@@ -1,0 +1,14 @@
+;M65v50
+;Изменить частоту обновления Overlay
+;Change DevMen Overlay Display Refresh Rate
+;(c) benj9
+;(p) Smelter
+;Version: 
+;PatchID: 2731
+;Details: https://patches.kibab.com/patches/details.php5?id=2731
+/*
+ 
+*/
+08C898E: 36 6B ; internal timer ~ miliseconds * 216.7 / 1000
+;------------------------- end -------------------------
+

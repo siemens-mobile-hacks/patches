@@ -1,0 +1,18 @@
+;M65v50
+;Blinker
+;Blinker
+;(c) benj9
+;(r) 1nvisible, avkiev, BuG, Chaos
+;Version: 3.2-MP
+;PatchID: 1591
+;Details: https://patches.kibab.com/patches/details.php5?id=1591
+/*
+
+*/
+1225EA0: 0070A0E1 5ADAF6EB
+
+#pragma enable old_equal_ff
+0FDCCD0: 40000000,300200A8,0xA863A758,0xA863D33C ; -RBC  - x65 (?)
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;C55v24
+;Отключение перехода в режим ожидания
+;Disable transition in a mode of expectation
+;(c) vova_v_g
+;Version: 
+;PatchID: 4295
+;Details: https://patches.kibab.com/patches/details.php5?id=4295
+/*
+Отключает переход в режим ожидания при долгом ненажимании на клавиатуру. 
+*/
+59CE9E: 6D 0D
+;------------------------- end -------------------------
+

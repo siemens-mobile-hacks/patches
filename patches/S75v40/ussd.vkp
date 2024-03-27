@@ -1,0 +1,15 @@
+;S75v40
+;Увеличить скорость просмотра USSD-сообщений
+;Speed USSD
+;(c) SiNgle
+;(p) Belarus
+;Version: 
+;PatchID: 4563
+;Details: https://patches.kibab.com/patches/details.php5?id=4563
+/*
+
+*/
+29A1D0: D007 0003
+29A1ED: 0B 03
+;------------------------- end -------------------------
+

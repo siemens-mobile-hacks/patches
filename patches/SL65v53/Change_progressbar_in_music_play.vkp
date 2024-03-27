@@ -1,0 +1,13 @@
+;SL65v53
+;Изменение прогрессбара при проигрывании музыки
+;Change progressbar in music play
+;(c) SiNgle
+;Version: 
+;PatchID: 5252
+;Details: https://patches.kibab.com/patches/details.php5?id=5252
+/*
+
+*/
+0A11B28: 1000490071 050051007E
+;------------------------- end -------------------------
+

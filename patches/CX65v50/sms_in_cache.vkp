@@ -1,0 +1,30 @@
+;CX65v50
+;Перенос архива sms и text module на cache
+;sms in cache
+;(c) Strike66
+;(r) Strike66
+;(p) Strike66
+;Version: 1
+;PatchID: 2886
+;Details: https://patches.kibab.com/patches/details.php5?id=2886
+/*
+Перенос архива sms и text module на cache
+*/
+0A07C90: 30 31
+0A07CAE: 30 31
+0A07CBE: 30 31
+0A07CE0: 30 31
+0A07D0A: 30 31
+0A07D22: 30 31
+0A07D4A: 30 31
+0A07D72: 30 31
+0A07D8A: 30 31
+0A07DB4: 30 31
+0A07DE0: 30 31
+0A07DF8: 30 31
+0A07E22: 30 31
+0A07E4C: 30 31
+0A07E62: 30 31
+0A07FDC: 30 31
+;------------------------- end -------------------------
+

@@ -1,0 +1,28 @@
+;CX75v13
+;Секвенсер Клавиш
+;Key Sequencer
+;(c) benj9
+;(r) chaos, bug, avkiev, 1nvisible
+;(p) Geka
+;Version: 2
+;PatchID: 6424
+;Details: https://patches.kibab.com/patches/details.php5?id=6424
+/*
+(!) Masterpatch, API & Function Library: uses function libr. no. v13, v18, v19, z00,
+funcs: 3, 9, 20, 23, 26, 31, 52, 61, 68, 75, 77, 80, 88, 90, 91, 104, 160 
+if use of "Blinker Sign" option Blinker 3.2 upwards has to be installed.
+examples: press "*JoystickClick" to enter phone setup, "12345" to start a midlet.
+there are 2 ways to use key sequences: directly or after hotkey
+directly: keys leave key prints at user interface
+after hotkey: the key prints are invisible for user interface
+hotkey: press once: you are in hotkey mode, all hotkey key sequences are 
+accepted now. press twice: normal function of key. for long press function 
+of hotkey press it short, then press it long.
+see further help in midlet "info" of CCC5 and CCC6
+add/remove key sequences from CCC5 as you like, but keep the {offset} distance of 0x10 proper!
+
+*/
+0FC0E1C: 0xA0FE0000 0xA1FA0000 ; Расширение области поиска конфигов
+07FEC4E: 010602D5FFF7A3FF10BD 014CA04710BD0FF0FDA0
+;------------------------- end -------------------------
+

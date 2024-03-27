@@ -1,0 +1,26 @@
+;M75v13
+;Дополнение к таблице PIT
+;Addition to PIT-table
+;(c) 1nvisible
+;(r) avkiev
+;(p) Gurza
+;Version: 1.1
+;PatchID: 1013
+;Details: https://patches.kibab.com/patches/details.php5?id=1013
+/*
+RUS: Теперь PIT-адреса картинок с номерами #1324(0x52C)1423(0x58F) можно разместить в свободной памяти (0xA0FD0050)
+Необходим Smelter 7.10 и выше для редактирования
+
+ENG: Now you can assign PIT addresses to pics #1324(0x52C)1423(0x58F) in free memory (0xA0FD0050)
+You need Smelter >7.10 to edit these pictures
+*/
+07FF4E4: FFF7F5FF A2F4FCF8 
+#pragma enable old_equal_ff 
+04A16E0: 0B4B984209DC094B984206DBC01A031C 
+04A16F0: 082673430348C01810BD5DF3EAFE024B ; D548192189014018 
+04A1700: 1847C04600101AA0E9F47FA041050000
+04A1710: A4050000 
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;M65v50
+;Шрифт меню и софт-кнопок
+;Font of menu and softkeys
+;(c) SiNgle
+;Version: 
+;PatchID: 2358
+;Details: https://patches.kibab.com/patches/details.php5?id=2358
+/*
+
+*/
+091B6C0: 03 02 ;Шрифт софт-кнопок
+091B708: 03 08 ;Выбраная позиция меню
+091B70C: 02 08 ;Список меню
+
+;------------------------- end -------------------------
+

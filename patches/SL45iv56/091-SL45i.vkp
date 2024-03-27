@@ -1,0 +1,52 @@
+;SL45iv56
+;Бешенный дисплей :)
+;Just Another Funny Display
+;(c) RizaPN
+;Version: 2
+;PatchID: 1684
+;Details: https://patches.kibab.com/patches/details.php5?id=1684
+/*
+Инвертирует, переворачивает вертикально, переворачивает 
+горизонтально дисплей или делает все вместе.
+
+Настраивается через меню Установки -> Приложение.
+
+
+English: Give a possibility to do some "funny" display :
+invert, flip horizontal, flip vertical, and all possible combinations.
+
+Patch is selectable from the "new" Setup->Application menu
+
+
+Release: October 21, 2003
+Modified: November 8, 2003
+
+Более новая версия патча №091 с http://patch.oslik.ru/SL45_RU
+*/
+0x440028: 76FA0080 DAC780DB
+0x44004C: A99AF0BE DAC7B8DB
+0x440072: 08B1 00B6
+0x440096: 08B1 00B6
+0x4400BA: 08B1 00B6
+0x4400DE: 08B1 00B6
+0x440102: 08B1 00B6
+0x440126: 08B1 00B6
+0x44014A: 08B1 00B6
+0x440168: 4AF4F587 DAC7E4DB
+
+0x27DB80: FFFFFFFFFFFFFFFF 8860E016D7400E00
+0x27DB88: FFFFFFFFFFFFFFFF C2F5423A9AF51110
+0x27DB90: FFFFFFFFFFFFFFFF E6F20C1620A2F6FA
+0x27DB98: FFFFFFFFFFFFFFFF 0EFE5BBB02F20CFE
+0x27DBA0: FFFFFFFFFFFFFFFF E6FA4F0022FA0EFE
+0x27DBA8: FFFFFFFFFFFFFFFF 1BABF2FA0EFE00A2
+0x27DBB0: FFFFFFFFFFFFFFFF 81B076FA0080DB00
+0x27DBB8: FFFFFFFFFFFFFFFF A99AF0BE9AF50400
+0x27DBC0: FFFFFFFFFFFFFFFF 9110912091309140
+0x27DBC8: FFFFFFFFFFFFFFFF 9AF50B10816046FB
+0x27DBD0: FFFFFFFFFFFFFFFF 6F1B9D03E6F57836
+0x27DBD8: FFFFFFFFFFFFFFFF 0D02E6F54837205B
+0x27DBE0: FFFFFFFFFFFFFFFF F0B5DB0098604AF4
+0x27DBE8: FFFFFFFFFFFFFFFF F587DB00FFFFFFFF
+;------------------------- end -------------------------
+

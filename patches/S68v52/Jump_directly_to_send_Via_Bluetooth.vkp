@@ -1,0 +1,15 @@
+;S68v52
+;Jump directly to send Via Bluetooth over send menu
+;Jump directly to send Via Bluetooth over send menu
+;(c) Evgr 
+;Version: 
+;PatchID: 10262
+;Details: https://patches.kibab.com/patches/details.php5?id=10262
+/*
+
+*/
+0335872: 7CF066EE 00F007F8
+0335892: 0223F85E 0A2009E0
+033C5C0: 75F0BEEF 77F0B0EA  
+;------------------------- end -------------------------
+

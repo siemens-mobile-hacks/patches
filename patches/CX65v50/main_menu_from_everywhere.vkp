@@ -1,0 +1,16 @@
+;CX65v50
+;Из любого места жмем ### и попадаем в главное меню
+;Goto mainmenu from anywhere by pressing ###
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 1438
+;Details: https://patches.kibab.com/patches/details.php5?id=1438
+/*
+Должен быть включен DevMenu и в пункте LOGAL\options - нажать Enable ### (Goto DevMenu\LOGAL\options and press Enable ###)
+
+*/
+0B1E500: 4AF0EBFF C8F523FE ;native menu
+;0B1E500: 4AF0EBFF C3F5FDFE ;main menu
+;------------------------- end -------------------------
+

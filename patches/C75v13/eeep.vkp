@@ -1,0 +1,14 @@
+;C75v13
+;Открыть заблокированные блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;(r) AsteriX
+;Version: 
+;PatchID: 985
+;Details: https://patches.kibab.com/patches/details.php5?id=985
+/*
+
+*/
+086A084: 00 01
+;------------------------- end -------------------------
+

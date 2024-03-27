@@ -1,0 +1,32 @@
+;SL75v39
+;Фото на весь экран
+;Large photo
+;(c) SiNgle
+;(p) Orastar
+;Version: 
+;PatchID: 5019
+;Details: https://patches.kibab.com/patches/details.php5?id=5019
+/*
+Оптимальный размер 99 на 99. Но можете поиграться со значениями в строке photo size. Не забываем переводить из десятичных в HEX. 
+По умолчанию значение 63 (HEX to DEC=99)
+*/
+029C954: 33 63 ;photo size
+
+042EFC4: 08 00 ; disable name and phone incall x displacements
+042EFE0: 08 00
+
+042EDBC: 63 7a ; outcall_y_name
+042EDD8: 75 8a ; outcall_y_phonenum
+042EE10: 1B 00 ; outcall_y_blankarea1
+042EDF4: 87 00 ; outcall_y_blankarea2
+
+042EE5E: 2d 16 ; incall_photo_y
+042EC12: 2d 16 ; outcall_photo_y
+
+042EFC8: 63 7a ; incall_y_name
+042EFE4: 75 8A ; incall_y_phonenum
+042EFAC: 1B 00 ; incall_y_blankarea1
+042F000: 87 00 ; incall_y_blankarea2
+
+;------------------------- end -------------------------
+

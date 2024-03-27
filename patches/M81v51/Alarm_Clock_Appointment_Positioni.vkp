@@ -1,0 +1,29 @@
+;M81v51
+;Позиционирование будильника
+;Alarm Clock / Appointment Positioning
+;(c) BuG
+;(r) -=[LCW]=-ExXtReMe, (Big respect) Grizzzzly
+;(p) const
+;Version: 
+;PatchID: 7584
+;Details: https://patches.kibab.com/patches/details.php5?id=7584
+/*
+Портировано с Е71! Будильник перемещается и убирается по желанию. 
+*/
+;* remove alarm clock icon from date/time *
+301E92: 1298 0020
+
+;* remove appointment icon from date/time *
+301EBC: 1898 0020
+
+; Alarmclock-Icon
+301EBA: 013C XX,24
+301F80: 281C YY,26
+
+; Appointment-Icon
+;!!!05C1C66: 4018 E8,20 ; yy,20 отсутствует у S75
+301EDA: 0136 E0,26 ; XX,26 if alarmclock off
+301EE6: 261A E0,26 ; YY,26 if alarmclock on
+
+;------------------------- end -------------------------
+

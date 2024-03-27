@@ -1,0 +1,14 @@
+;M65v50
+;Отключить Сообщение "Список Пуст!"
+;Disable "List Empty!" Message
+;(c) 1nvisible
+;(p) Smelter
+;Version: 
+;PatchID: 1623
+;Details: https://patches.kibab.com/patches/details.php5?id=1623
+/*
+Отключает сообщение "Список Пуст!" в списках набранных/принятых/пропущенных звонков.
+*/
+0A866B2: 9F49 03E0
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M55v10
+;Отключить сообщение при Включении/Выключении сигналов
+;Disable ringer on/off message
+;(c) Matr!x
+;Version: 
+;PatchID: 1365
+;Details: https://patches.kibab.com/patches/details.php5?id=1365
+/*
+
+*/
+0D1FE4: DA2EE6A8 CC00CC00
+0D1FFA: DA2EE6A8 CC00CC00
+;------------------------- end -------------------------
+

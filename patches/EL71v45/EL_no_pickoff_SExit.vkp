@@ -1,0 +1,14 @@
+;EL71v45
+;Убрать пикофф при включенном DevMenu->Exits->SExit патченного телефона
+;Remove pick-off of patched phone with turned on DevMenu->Exits->SExit
+;(c) Evgr
+;Version: 
+;PatchID: 10548
+;Details: https://patches.kibab.com/patches/details.php5?id=10548
+/*
+
+*/
+
+04D33F3: 0A EA
+;------------------------- end -------------------------
+

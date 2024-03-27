@@ -1,0 +1,15 @@
+;E71v45
+;Большие часы в экране при заблокированной клавиатуре вместо "Блокировка клавиш вкл."
+;Big Time in Keylock Screen instead of "Keypad Locked"
+;(c) benj9
+;Version: 
+;PatchID: 10350
+;Details: https://patches.kibab.com/patches/details.php5?id=10350
+/*
+
+*/
+0669A65: 998EF1BEEE 985AF75BFA 
+084AC70: 05 01 ; font
+0669B9A: 4901 0901 ; duration of dialog 2 seconds
+;------------------------- end -------------------------
+

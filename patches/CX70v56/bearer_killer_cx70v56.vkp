@@ -1,0 +1,18 @@
+;CX70v56
+;Bearer Killer
+;Bearer Killer
+;(c) Zhek@
+;(p) Marie
+;Version: 
+;PatchID: 10456
+;Details: https://patches.kibab.com/patches/details.php5?id=10456
+/*
+Kill create bearers proc
+*/
+0CAC726: A3F7B4EB C046C046 ; RAP_BEARER_0 (Browser)
+;0CAC73E: A3F7A8EB C046C046 ; RAP_BEARER_1 (Java)
+;0CAC756: A3F79CEB C046C046 ; RAP_BEARER_2
+;0CAC76E: A3F790EB C046C046 ; RAP_BEARER_3
+;0CAC786: A3F784EB C046C046 ; RAP_BEARER_4
+;------------------------- end -------------------------
+

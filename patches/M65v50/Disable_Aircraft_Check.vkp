@@ -1,0 +1,15 @@
+;M65v50
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) Bennie
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 2355
+;Details: https://patches.kibab.com/patches/details.php5?id=2355
+/*
+Убрать подтверждение самолёта при включении телефона
+*/
+1634E97: D1 E0
+;------------------------- end -------------------------
+

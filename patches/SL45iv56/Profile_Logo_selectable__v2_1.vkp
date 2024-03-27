@@ -1,0 +1,33 @@
+;SL45iv56
+;Выбираемое лого профиля
+;Profile Logo selectable
+;(c) ACiD [mrp], rc-flitzer
+;Version: 2.1
+;PatchID: 5751
+;Details: https://patches.kibab.com/patches/details.php5?id=5751
+/*
+ Display a profile logo on mainscreen, depending on selected profile.
+ The picture of the logos are numbers #545..#549 for the profiles normal, quiet, loud, profile1 and profile2.
+
+ Patch needs at least "base of mainscreen patches" to be called.
+ "Application menu" is necassary for (de-)selecting patch in menu.
+
+v2: displaying is selectable with APPlication menu patch, function 12.
+v2.1: Adapted to base of mainscreen patches: add command "DAC790D6" to a free "slot".
+
+
+Release: September 24th, 2006
+*/
+0x27D690: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400E00F2FC423A9AFC0CB0E004DAA4
+0x27D6A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 669806F42102F0E4E6FC0C00E6FD0D00
+0x27D6B0: FFFFFFFFFFFF DAC1EC22DB00
+
+; CUSTOMIZATION
+; Change position of profile logo:
+;0x27D6AA: 0C xx ; number of pixels from the left (00h-64h)
+;0x27D6AE: 0D xx ; number of pixels from the top (00h-4Fh)
+
+; To use another function number than 12, change x value:
+;0x27D69B: B0 x0 ; x is function number minus 1 (values 0-F = function no. 1-16)
+;------------------------- end -------------------------
+

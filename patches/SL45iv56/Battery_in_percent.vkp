@@ -1,0 +1,59 @@
+;SL45iv56
+;Батарея в процентах
+;Battery in percent
+;(c) rc-flitzer
+;Version: 3.1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=5752
+;PatchID: 2088
+;Details: https://patches.kibab.com/patches/details.php5?id=2088
+/*
+English: Use with "Collection of mainscreen patches" and replace the block beginning 
+with 0x40CACE. 
+The patch uses picture #325 (formerly some battery pic). 
+For customization look below. 
+
+v3.1: shorted some bytes and added possibility for y-position changing. 
+
+
+Release: October 20th, 2005
+*/
+#pragma enable old_equal_ff 
+0x40CACE: 8870 
+0x40CAD0: D7400E00F2F7E239E6FD100E207D9D03 
+0x40CAE0: E6FE01020D28E6FC3F02E6FD64001B7D 
+0x40CAF0: 5BCCF2F70EFE46F764008D0A26F76400 
+0x40CB00: E6FE0202E6FC4B00E6FD0000DAC1EC22 
+0x40CB10: E00E26F70A008D0208E10DFB06F70A00 
+0x40CB20: 06FE0102E6FC5100E6FD0000DAC1EC22 
+0x40CB30: E6FE010200E7E6FC5700E6FD0000DAC1 
+0x40CB40: EC22E6FE4501E6FC5D00E6FD0000DAC1 
+0x40CB50: EC229870DB00 
+#pragma disable old_equal_ff 
+
+
+; ##### Picture 325 ##### -- sign of percent - change it if you like with SPC2 
+0x4BAEDE: 19070100 08090100 
+0x4B2182: 3FFFFE7F5FFFFF7FEFFFFFFFEFFFFFFF 315A5C381E2B4B46000F0F0F0F0F0F0F 
+0x4B2192: EFFFFFFF5FFFFF7F3FFFFE7F 0F0F0F0F0F0F0F0F0F0F0F0F 
+
+
+; CUSTOMIZATION: 
+; x-positions: 
+; 0x40CB06: 4B xx ; 4B = 75 for 1. number 
+; 0x40CB26: 51 xx ; 51 = 81 for 2. number 
+; 0x40CB38: 57 xx ; 57 = 87 for 3. number 
+; 0x40CB48: 5D xx ; 5D = 93 for percent 
+
+; y-positions: 
+; 0x40CB0A: 00 xx ; for first number 
+; 0x40CB2A: 00 xx ; for second number 
+; 0x40CB3C: 00 xx ; for third number 
+; 0x40CB4C: 00 xx ; for percent sign 
+
+; values of measurement: 
+; 0x40CADA: 100E xxxx ; 100E -> 0E10 = 3600 is lowest mV value = 0% 
+; 0x40CAE8: 3F02 xxxx ; 3F02 -> 023F = 575 is difference between lowest and 
+; highest value (here: 4175mV - 3600mV = 575) 
+; That means: 4175mV = 100%
+;------------------------- end -------------------------
+

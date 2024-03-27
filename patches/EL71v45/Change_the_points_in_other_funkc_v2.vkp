@@ -1,0 +1,44 @@
+;EL71v45
+;Замена пунктов в друг.функциях на эльфы
+;Change the points in other funkciyah on elfs
+;(c) KIBER-DEMON
+;(r) Kibab
+;Version: 2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=8702
+;PatchID: 8566
+;Details: https://patches.kibab.com/patches/details.php5?id=8566
+/*
++ Мои приложения=>LED-фонарик
++ Статус онлайн=>Разработчик
+Патч заменяет такие пункты в меню\друг.функции Калькулятор, Таймер и Секундомер на эльфы, можно взять такие как SCalca, eTimer и StopWatch соответственно.
+Кинуть в 2:\\MenuContent\\, или прописать самому путь к эльфам.
+В патч входит замена двух типов:main menu\shortcat и emenu\native menu.Что не надо можно закаментировать.
+*/
+;----------------------main menu\shortcat-----------------------------------
+0843348: 6F586FA0 717506A0 ;Калькулятор=>SCalca
+0843DC8: 9D596FA0 B17506A0 ;Таймер=>eTimer
+0849348: 8D596FA0 F17506A0 ;Секундомер=>StopWatch
+;----------------------emenu\native menu------------------------------------
+088CC08: AD8178A0 717506A0 ;Калькулятор=>SCalca
+088CC1C: 038278A0 B17506A0 ;Таймер=>eTimer
+088CC18: F98178A0 F17506A0 ;Секундомер=>StopWatch
+;---------------------------other-------------------------------------------
+088CC04: B58178A0 17666FA0 ;Мои приложения=>LED-фонарик
+088CC64: DC20 641D ;Мои приложения=>LED-фонарик
+088CC10: D78178A0 115A6FA0 ;Статус онлайн=>Разработчик
+088CCB8: 6421 9913 ;Статус онлайн=>Разработчик
++0067530
+#pragma enable old_equal_ff
+40: FFB58020C7DF2501061C05A18022C7DF
+50: 6C010021301C94DF301CC7DF2901FFBD
+60: "2:\\MenuContent\\SCalka.elf",00
+80: FFB58020C7DF2501061C05A18022C7DF
+90: 6C010021301C94DF301CC7DF2901FFBD
+A0: "2:\\MenuContent\\eTimer.elf",00
+C0: FFB58020C7DF2501061C05A18022C7DF
+D0: 6C010021301C94DF301CC7DF2901FFBD
+E0: "2:\\MenuContent\\StopWatch.elf",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

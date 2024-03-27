@@ -1,0 +1,14 @@
+;C65v56
+;Disable Some Debug
+;Disable Some Debug
+;(c) benj9
+;Version: 
+;PatchID: 4186
+;Details: https://patches.kibab.com/patches/details.php5?id=4186
+/*
+
+*/
+0B77588: 10B5 7047 
+0B775FC: 0FB4 7047 
+;------------------------- end -------------------------
+

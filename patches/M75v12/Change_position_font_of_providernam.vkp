@@ -1,0 +1,41 @@
+;M75v12
+;Изменить позицию и шрифт имени провайдера в заставке
+;Change position/font of providername in screensaver
+;(c) arsh0r
+;(r) SiNgle
+;Version: 
+;PatchID: 5361
+;Details: https://patches.kibab.com/patches/details.php5?id=5361
+/*
+
+*/
+;Digital Clock
+04AB19C: 00 xx ; x-start
+04AB19E: 9F yy ; y-start
+04AB1A0: 84 xx ; x-stop
+04AB1A2: AF yy ; y-stop
+04AB1A4: 03 ff ; font size
+
+;Analog Clock
+04AB180: 00 xx ; x-start
+04AB182: 9F yy ; y-start
+04AB184: 84 xx ; x-stop
+04AB186: AF yy ; y-stop
+04AB188: 03 ff ; font size
+
+;Picture
+04AB164: 00 xx ; x-start
+04AB166: 9F yy ; y-start
+04AB168: 84 xx ; x-stop
+04AB16A: AF yy ; y-stop
+04AB16C: 03 ff ; font size
+
+;Energysaving
+04AB1B8: 00 xx ; x-start
+04AB1BA: 52 yy ; y-start
+04AB1BC: 84 xx ; x-stop
+04AB1BE: 61 yy ; y-stop
+04AB1C0: 03 ff ; font size
+
+;------------------------- end -------------------------
+

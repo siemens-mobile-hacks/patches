@@ -1,0 +1,25 @@
+;C72v22
+;АудиоХук
+;AudioHook
+;(c) ilya_zx
+;Version: 
+;PatchID: 7348
+;Details: https://patches.kibab.com/patches/details.php5?id=7348
+/*
+
+*/
+;AudioHook
+011B1D80: 3880BDE8 0x15EC61,0xEA
+0172CF0C: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 18309FE5003093E5000053E30000001A
+0172CF1C: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3880BDE80030A0E3503084E5FBFFFFEA
+0172CF2C: FFFFFFFF 0xA86B7D20
+
+; Function Library
++0FD4000
+0264: FFFFFFFF 0xA0974880   ; 99: ;__arm int PlayMelodyInMem(char Unk_0x11,void *MelAddr,int MelSize,int unk2_0xFFFF,int Unk3_0,int Unk4_0)
+0268: FFFFFFFF 0xA11B1048   ; 9A: ;__arm int ChangeVolume(unsigned char Volume)
+026C: FFFFFFFF 0xA86B7D90   ; 9B: Audio params addr
++0
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;CX65v25
+;Убрать подтверждения при включении громкой связи
+;Toggle HandsFree without question
+;(c) SiNgle
+;Version: 
+;PatchID: 138
+;Details: https://patches.kibab.com/patches/details.php5?id=138
+/*
+теперь для вкл громкой связи достаточно один раз нажать кнопку
+*/
+0854A2C: CB21C90000 0021002101
+0854A34: 65F098ED 1AF168EA
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;CX70v50
+;Прием звонков только зеленой кнопкой
+;Receive calls only by pressing green button
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 86
+;Details: https://patches.kibab.com/patches/details.php5?id=86
+/*
+Прием звонков только зеленой кнопкой. Receive calls only by pressing green button.
+!!! Но отключение звука только долгим нажатием "*" (!!! But disable sound only by "*" long press)
+*/
+171B158: 62D0 0028
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,27 @@
+;S75v52
+;Заменить сообщение "Сохранено на:" в камере на картинку
+;Change message "Save to:" after camera shot by picture
+;(c) Zhek@
+;(p) Feyman
+;Version: 
+;PatchID: 9454
+;Details: https://patches.kibab.com/patches/details.php5?id=9454
+/*
+После съёмки вместо окошка выводится картинка. По умолчанию номер 181 
+*/
+;0591FBC: CEF080EA 46F318EB ; Если не стоит PatchID:8308
+0591FBC: C046C046 46F318EB ; Если стоит PatchID:8308
+
+#pragma enable old_equal_ff
+8D85F0: 2200A0E34210A0E3B520A0E3230000EF
+8D8600: 0C009FE5F010A0E308209FE54D0000EF
+8D8610: 6ae6f2fa100000A8EF8897A0
+#pragma disable old_equal_ff
+
+;8D85F0: 22 0iXX ; координаты x
+;8D85F4: 42 0iYY ; координаты y
+;8D85F8: B5 0i181 ; номер картинки
+;8D8604: F0 tt ; время показа
+
+;------------------------- end -------------------------
+

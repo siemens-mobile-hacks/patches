@@ -1,0 +1,81 @@
+;M65v50
+;Холст для Дополнительной Информации
+;Extra Info Canvas
+;(c) benj9
+;(r) avkiev, BuG
+;(p) KiRiK
+;Version: 3.1
+;PatchID: 688
+;Details: https://patches.kibab.com/patches/details.php5?id=688
+/*
+Патч является дополнением для патча "Дополнительная информация на главном экране v3" (см. зависимости).
+Перед выполнением патча "Доп.инфо" перерисовывает любое кол-во участков холста (очищает фон)
+- Определяет профили, в которых будет активен патч "Доп.инфо"
+- Имеет сквозной канал для вызова ещё одного патча продолжения
+EN:
+Draws as many as you like canvas regions (clears the background) before executing ExtraInfo-Patch
+- Configure in which profiles ExtraInfo-Patch is active
+- Have one more pass-thru call for another follow-up patch
+*/
+/*
+- Draws as many as you like canvas regions (clears the background) before executing ExtraInfo-Patch
+- Configure in which profiles ExtraInfo-Patch is active
+- Have one more pass-thru call for another follow-up patch
+
+1) Install ExtraInfo v3.
+2) Configure profile key for this patch - in which profiles ExtraInfo is called.
+3) Configure as many canvas regions as you like (canvas regions are erased whith the normal content of mainscreen to prevent ExtraInfos "smelting digits")
+One record for a canvas is leftX, rightX, topY, bottomY.
+Put as many records after another as you like.
+Put a FF after last record to tell the patch to stop making canvas.
+4) If you don't need a third patch running, you're finished.)
+5) Install the body of the third patch. It runs not dependent to profile key.
+6) Put the body's address to in little endian sex to _ThirdPatch
+7) Enable the "activate ThirdPatch " line
+=========================================
+1) Установите патч * Дополнительная информация на главном экране v3*
+2) Определитесь с ключом профилей - в каких профилях вызывать "Доп.инфо"
+3) Выберите сколь угодно много участков холста (они будут затираться обычным содержанием главного
+   экрана (обоями), чтобы предотвратить наложение цифр в "Доп.Инфо")
+   Запись имеет вид "лев.Х, прав.Х, верх.У, ниж.У
+   Можно сделать любое количество записей
+   За последней записью поставьте FF, чтобы патч прекратил перерисовку холста
+4) Если не нужен запуск Третьего Патча, то на этом всё
+5) Установите тело Третьего Патча. Он будет запущен независимо от ключа профилей
+6) В строку Третий Патч занесите адрес тела, переставив байты в обратном порядке, и раскомментируйте её
+7) Раскомментируйте строку "активировать Третий Патч"
+ЗЫ. Всё это имеет смысл при прозрачном фоне либо главного экрана, либо картинок к "Доп.Инфо"
+*/
+
+1633BD4: 26F094FF 051C0020 ; undo ExtraInfo-EntryPoint | отмена энтрипойнта "Доп.Инфо"
+1633C04: D8F41AFE 27F03CF8
+
+#pragma enable old_equal_ff
+165AC80: FFB5124880470327C74001200740012F
+165AC90: 14D10D4E3778FF2F0DD0F1780122009D
+165ACA0: 00910192B278391C73780E98084CA047
+165ACB0: 00950436EEE707488047C046C046C046
+165ACC0: FFBCB1F4BBFD00BD,DCAC65A1,E59F8CA0 ; -,-,Data,GetProfile
+165ACD0: 974163A1,01AB65A1,FFFFFFFF ; DrawCanvas,ExtraInfo,_ThirdPatch
+
+;Data
+165ACDC: 69,84,95,9F ; erase-region on the mainscreen: x-start, x-end, y-start, y-end
+;165ACE0: 12,34,56,78 ; more erase-regions ... | ещё область
+;165ACE4: 11,22,33,44 ; more erase-regions ... | ещё область
+165ACE0: FF ; after last erase-region place this END mark
+            ; за последней областью поставьте этот знак КОНЦА (FF)
+#pragma disable old_equal_ff
+
+;165ACBC: C046C046 06488047 ; activate ThirdPatch 
+
+165AC86: 03 0n1010110 ; profile key 
+; Here you can determine in which profile the ExtraInfo (and the Canvas function) will be active.
+; the "1" most left (next to the "n") says that ExtraInfo is active in Profile 7
+; the "0" most right says that ExtraInfo is NOT active in Profile 1
+; the in-between digits stand for Profile 6 - 2
+; so example "0n1010110" means, that Extrainfo is active in profiles 2,3,5,7
+
+165ACAA: 0E98 0020 ; DrawCanvas redraws always IdleBackgroundApplicationImage.
+; For configuring the canvas set this line, set a wallpaper on phone and you see the canvas
+;------------------------- end -------------------------
+

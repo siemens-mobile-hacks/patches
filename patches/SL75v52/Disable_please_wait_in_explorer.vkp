@@ -1,0 +1,14 @@
+;SL75v52
+;Убрать подождите в эксплорере
+;Disable please wait in explorer
+;(c) SiNgle
+;(p) Виктор89
+;Version: 
+;PatchID: 9634
+;Details: https://patches.kibab.com/patches/details.php5?id=9634
+/*
+Пожалуйста на русском уже убрали, осталось убрать подождите :)
+*/
+0530F02: 03D1 03E0
+;------------------------- end -------------------------
+

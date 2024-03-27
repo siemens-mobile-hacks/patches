@@ -1,0 +1,40 @@
+;CX70v50
+;Изменить позицию и шрифт имени провайдера в заставке
+;Change position and font of providername in ScreenSaver
+;(c) arsh0r
+;(r) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 102
+;Details: https://patches.kibab.com/patches/details.php5?id=102
+/*
+Изменить позицию и шрифт имени провайдера в заставке. Значения различаются, если показана стрелка (например, при получении сообщения.
+!!!Нужные строки раскомментировать.
+
+*/
+;Цифровые часы (digiclock)
+;17337A0: 00 xx ;x-start
+;17337A2: 9F yy ;y-start
+;17337A4: 84 xx ;x-stop
+;17337A6: AF yy ;y-stop
+;17337A8: 03 ff ;font size
+;Аналоговые часы (analogclock)
+;1733784: 00 xx ;x-start
+;1733786: 9F yy ;y-start
+;1733788: 84 xx ;x-stop
+;173378A: AF yy ;y-stop
+;173378C: 03 ff ;font size
+;Картинка (picture)
+;1733768: 00 xx ;x-start
+;173376A: 9F yy ;y-start
+;173376C: 84 xx ;x-stop
+;173376E: AF yy ;y-stop
+;1733770: 03 ff ;font size
+;Экономия энергии (energysaving)
+;17337BC: 00 xx ;x-start
+;17337BE: 52 yy ;y-start
+;17337C0: 84 xx ;x-stop
+;17337C2: 61 yy ;y-stop
+;17337C4: 03 ff ;font size
+;------------------------- end -------------------------
+

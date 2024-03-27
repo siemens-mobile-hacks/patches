@@ -1,0 +1,14 @@
+;S75v52
+;Плавное включение подсветки
+;Smooth keypad light
+;(c) SiNgle
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8273
+;Details: https://patches.kibab.com/patches/details.php5?id=8273
+/*
+
+*/
+0962820: 0022 FF22
+;------------------------- end -------------------------
+

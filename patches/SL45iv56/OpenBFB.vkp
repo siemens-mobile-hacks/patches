@@ -1,0 +1,16 @@
+;SL45iv56
+;OpenBFB
+;OpenBFB
+;(c) Sinclair
+;Version: 
+;PatchID: 2031
+;Details: https://patches.kibab.com/patches/details.php5?id=2031
+/*
+После применения патча с телефона можно снимать скриншоты (что-то еще?).
+Программы для снятия скриншотов с SL45:
+http://www.gsm-dev.com/projects/SiemensDebugger.rar 
+http://gsmdev.servs.de/SiemensScreenshot.rar
+*/
+200290: 60 00
+;------------------------- end -------------------------
+

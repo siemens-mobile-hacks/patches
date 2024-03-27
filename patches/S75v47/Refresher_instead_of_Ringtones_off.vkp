@@ -1,0 +1,18 @@
+;S75v47
+;Рефрешер вместо "Выкл. звуки" в меню красной кнопки
+;Refresher instead of "Ringtones off" in Red button menu
+;(c) Lans, ThE TrIFoN
+;(r) avkiev
+;Version: 
+;PatchID: 5986
+;Details: https://patches.kibab.com/patches/details.php5?id=5986
+/*
+Тока после рефреша он не закрывает за собой это окошко...
+*/
+345586: FFF787FF 1BF583FB
+
+; замена названия пункта (by avkiev)
+03455F4: 0x20B6 0x1C6C ; Rigtones off => Refresh
+03455F8: 0x2210 0x1C6C ; Rigtones on => Refresh
+;------------------------- end -------------------------
+

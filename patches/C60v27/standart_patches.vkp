@@ -1,0 +1,27 @@
+;C60v27
+;Стандартные патчи
+;Standart patches
+;(c) Smelter v4.44
+;Version: 
+;PatchID: 2048
+;Details: https://patches.kibab.com/patches/details.php5?id=2048
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=c60v27&f=standart_patches.rar
+
+/*
+EnableDevMenu
+DisableAircraftCheck
+Open BFB
+
+*/
+; EnableDevMenu
+; 1. Заливаем 280 блок еепрома
+; 2. Ставим патч
+63D988: 2D 0D
+
+; DisableAircraftCheck
+2C8E74: 3D 0D 
+
+; Open BFB
+6212FA: 4E 3A 
+;------------------------- end -------------------------
+

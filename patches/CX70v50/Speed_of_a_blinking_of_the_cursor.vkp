@@ -1,0 +1,14 @@
+;CX70v50
+;Скорость мигания курсора
+;Speed of a blinking of the cursor
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 127
+;Details: https://patches.kibab.com/patches/details.php5?id=127
+/*
+Скорость мигания курсора.
+*/
+093C1AC: 2C01 8003
+;------------------------- end -------------------------
+

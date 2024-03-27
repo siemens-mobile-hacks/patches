@@ -1,0 +1,15 @@
+;SL65v53
+;Шрифт меню и софт кнопок
+;Font menu and soft keys
+;(c) SiNgle
+;Version: 
+;PatchID: 5237
+;Details: https://patches.kibab.com/patches/details.php5?id=5237
+/*
+
+*/
+091D46C: 03 02 ; Шрифт софт-кнопок
+091D4B4: 03 08 ; Выбраная позиция меню
+091D4B8: 02 08 ; Список меню
+;------------------------- end -------------------------
+

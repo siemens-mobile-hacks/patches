@@ -1,0 +1,27 @@
+;EL71v38
+;Черный список
+;Black list
+;(c) ThE TrIFoN, SiNgle
+;(p) SMeeTBB
+;Version: 
+;PatchID: 5895
+;Details: https://patches.kibab.com/patches/details.php5?id=5895
+/*
+
+*/
+0704442: 8CF65CE8 04F195FD
+#pragma enable old_equal_ff
+0808F70: FFB50B2803D10020034B984703E0FFBC
+0808F80: 87F5BCEA00BDFFBD3B5E9BA0
+#pragma disable old_equal_ff
+
+; 0808F72: 0B 0N ; N-черная группа 00- Нет группы, 03-Семья, 04-Друзья и так далее по возрастающей 
+; По умолчанию в патче черная группа - последняя группа
+; N means Black Group, 00-No group, 03-Family, 04-Friends and so on
+; By default the Black Group is the last group
+
+;(C)ThE TrIFoN; EL71v3809B3258: 201C27F2FEEB 002002F0EEFD ; отсекать вызовы с подавлением номера
+; reject incognito calls
+
+;------------------------- end -------------------------
+

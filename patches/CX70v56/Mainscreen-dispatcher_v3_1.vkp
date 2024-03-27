@@ -1,0 +1,15 @@
+;CX70v56
+;Диспатчер главного экрана
+;Mainscreen-dispatcher
+;(c) avkiev
+;(r) KreN
+;Version: 3.1
+;PatchID: 5634
+;Details: https://patches.kibab.com/patches/details.php5?id=5634
+/*
+
+*/
+1715650: 1883261C002D0590 004FB847,0xA0FC3E01
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,43 @@
+;CX75v23
+;Изменить позицию и шрифт имени провайдера в заставке
+;Change position and font of providername in ScreenSaver
+;(c) arsh0r
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1813
+;Details: https://patches.kibab.com/patches/details.php5?id=1813
+/*
+
+*/
+;Цифровые часы (Digital Clock)
+04ACA80: 00 xx ; x-start
+04ACA82: 9F yy ; y-start
+04ACA84: 84 xx ; x-stop
+04ACA86: AF yy ; y-stop
+04ACA88: 03 ff ; font size
+
+;Аналоговые часы (Analog Clock)
+04ACA64: 00 xx ; x-start
+04ACA66: 9F yy ; y-start
+04ACA68: 84 xx ; x-stop
+04ACA6A: AF yy ; y-stop
+04ACA6C: 03 ff ; font size
+
+;Картинка (Picture)
+04ACA48: 00 xx ; x-start
+04ACA4A: 9F yy ; y-start
+04ACA4C: 84 xx ; x-stop
+04ACA4E: AF yy ; y-stop
+04ACA50: 03 ff ; font size
+
+;Экономия энергии (Energysaving)
+04ACA9C: 00 xx ; x-start
+04ACA9E: 52 yy ; y-start
+04ACAA0: 84 xx ; x-stop
+04ACAA2: 61 yy ; y-stop
+04ACAA4: 03 ff ; font size
+
+
+;------------------------- end -------------------------
+

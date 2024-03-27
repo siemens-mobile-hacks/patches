@@ -1,0 +1,29 @@
+;SL45iv56
+;VWC. Вибра при соединении
+;VWC. (just another) Vibra When Connected
+;(c) RizaPN
+;Version: 
+;PatchID: 1871
+;Details: https://patches.kibab.com/patches/details.php5?id=1871
+/*
+Включается вибра когда происходит соединение (только если Вибра включена).
+
+
+Published: July 03, 2004
+
+Патч №082 с http://patch.oslik.ru/SL45_RU
+*/
+0x3AC4C8: F0C8F0D9 DAC7C0E6 
+0x3AC51C: F0C8F0D9 DAC7C4E6 
+
+0x27E6C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E01C0D0DD7403700F2FC043ACD0CDADE 
+0x27E6D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF A6172D0988C0DAC36C0298C028C1D740 
+0x27E6E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3700F6FC043AF0C8F0D9DB00FFFFFFFF 
+
+;Если вы хотите изменить количество вибраций (по умолчанию 1 раз), используйте это: 
+;0x27E6C1: FF xC ; x is 0..F 
+
+;Если вы хотите пропустить Вибра вкл/выкл (всегда будет Вибра при соединении), используйте это: 
+;0x27E6D3: 09 00
+;------------------------- end -------------------------
+

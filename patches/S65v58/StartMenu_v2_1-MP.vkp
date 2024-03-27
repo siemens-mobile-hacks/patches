@@ -1,0 +1,15 @@
+;S65v58
+;Меню пуск на главном экране
+;StartMenu on MainScreen
+;(c) KreN
+;(r) 1nvisible, benj9
+;Version: 2.1
+;PatchID: 3090
+;Details: https://patches.kibab.com/patches/details.php5?id=3090
+/*
+
+*/
+169F67E: 002861D0F8F7A9FF0028 C046,00498847,0xA0FCC051
+092EBF8: CBA68DA0 0xA0FCC0E3
+;------------------------- end -------------------------
+

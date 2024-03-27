@@ -1,0 +1,25 @@
+;SL65v50
+;Убрать сообщения
+;Disable some messages
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 171
+;Details: https://patches.kibab.com/patches/details.php5?id=171
+/*
+Убирает вывод на экран некоторых сообщений.
+*/
+;* Убрать сообщения ** Disable some messages * © SiNgle, § AsteriX
+164AABA: 0021 10BD ;"Все сигналы вкл" (All ringtones on)
+164AADA: 0021 10BD ;"Все сигналы выкл" (All ringtones off)
+164AB30: 0021 10BD ;"Блокировка клавиатуры включена" (Keypad locked)
+08E3CF8: 37F0 80BD ;Вибра вкл\выкл (Vibra alert on\off)
+08E3D8A: 37F0 80BD ;IrDA вкл\выкл (IrDA on\off)
+08E3DBA: 37F0 80BD ;GPRS вкл\выкл (GPRS on\off) § KiRiK
+113C1F4: 4049C239 80B580BD ;"Подождите" при запуске камеры ("Please wait" before using camera)
+08F3AB8: AE6700EB 0100A0E3 ;"Сохранить в:" после съёмки ("Saved to:" after you take a foto)
+0967EB8: AE501FFA 0100A0E3 ;"Подождите" в эксплорере ("Please wait" in Card-Explorer)
+0B285BA: 01 00 ;"Копировать SIM" при смене SIM ("Copy SIM" at SIM change)
+
+;------------------------- end -------------------------
+

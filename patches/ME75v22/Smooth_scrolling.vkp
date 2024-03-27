@@ -1,0 +1,14 @@
+;ME75v22
+;Плавная прокрутка длинных имен
+;Smooth scrolling of long names
+;(c) SiNgle
+;Version: 
+;PatchID: 3255
+;Details: https://patches.kibab.com/patches/details.php5?id=3255
+/*
+
+*/
+0498174: D007 1202 ; delay before start
+0498178: 2C01 2A00 ; scrolling speed
+;------------------------- end -------------------------
+

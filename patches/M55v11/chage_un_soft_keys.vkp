@@ -1,0 +1,13 @@
+;M55v11
+;Изменение недоступных кнопок
+;Chage unavailable soft keys
+;(c) Matr!x
+;Version: 
+;PatchID: 5202
+;Details: https://patches.kibab.com/patches/details.php5?id=5202
+/*
+
+*/
+775718: AA FF ;FF - невидимые, 00 - заполнены цветом, C0, F0 - волны, DD - рябь
+;------------------------- end -------------------------
+

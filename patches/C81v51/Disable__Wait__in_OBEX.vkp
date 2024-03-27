@@ -1,0 +1,14 @@
+;C81v51
+;Отключить "Подождите" при OBEX-подключении
+;Disable "Wait" in OBEX
+;(c) dimonp25
+;(p) Виктор89
+;Version: 2
+;PatchID: 9157
+;Details: https://patches.kibab.com/patches/details.php5?id=9157
+/*
+Теперь как на E\EL71 работает
+*/
+030BD3A: EDF084ED C046C046
+;------------------------- end -------------------------
+

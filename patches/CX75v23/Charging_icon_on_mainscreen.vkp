@@ -1,0 +1,66 @@
+;CX75v23
+;Иконка зарядки на главном экране
+;Charging icon on mainscreen
+;(c) empeka
+;(r) Buffel
+;(p) Mikel
+;Version: 
+;PatchID: 2608
+;Details: https://patches.kibab.com/patches/details.php5?id=2608
+/*
+Показывает различные иконки в панели иконок, в зависимости от процесса заряки - идет заряд одна иконка, закончен другая.
+Картики для патча прилагаются.
+Клай может ругаться на картинки - перенисите их в другое место.
+*/
+2A8F3A: F4F1FAEB 37F6E1FA
+
+#pragma enable old_equal_ff
+00E0500: 00B507480078002807D00649022800DD
+00E0510: 013107AA281CC8F1F9FB0348804700BD
+00E0520: 6aD350A8,FFFF0000,30d749A0
+
+00E0524: 0i01403 ;picture #
+;when battery is full, patch uses next bitmap (picture# + 1)
+
+#pragma disable old_equal_ff
+
+;00E050C: 0228 01E0 ;use first icon only
+;00E050E: 00DD 04D8 ;don't display
+
+### Pictures for * Charging icon on mainscreen * ###
+
+; (!) Addition to PIT table
+
+
+
+
+
+
+
+; ##### Pic 1403-1404 #####
+#pragma enable old_equal_ff 
+0FD0170: 0E0E85000000ceA1
+0FD0178: 0E0E85006000ceA1
++1ce0000
+000: 19C0FEF9B00AC0FCD4FDF9B409C0FCF9
+010: FDF9B008C0FBF8F9FEF9B007C0FFF805
+020: F907C0FFFD02F9FEFEFD02F9FFD406C0
+030: 02F9FDFEFDF102F9FFB407C0FFFE03F9
+040: FEF8B007C0FFFD03F9FFB408C003F9FE
+050: F8B008C003F9FFB00AC0FEF9D419C0
+060: 19C0FEF06404C002B104C0FCA8F5F084
+070: 04C0FDB288B202C0FCF0F5F06406C0FE
+080: B18802F0FDF5F06407C0FDCCA8AC03F0
+090: 07C0FFF502F0FEA8D102F0FFA806C002
+0a0: F0FDF5D18402F0FF8407C0FFF502F0FD
+0b0: CCA86407C0FFF503F0FD84898D06C0FF
+0c0: ED02F0FACC64C0B288B204C003F0FF64
+0d0: 04C0FEB28804C0FEF0A807C0FFB211C0
+#pragma disable old_equal_ff
+
++0
+
+
+
+;------------------------- end -------------------------
+

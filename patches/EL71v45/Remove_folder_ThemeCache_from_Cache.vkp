@@ -1,0 +1,18 @@
+;EL71v45
+;Удаляем папку "ThemeCache" с кеш-диска
+;Remove the folder "ThemeCache" from Cache
+;(c) funMarkus
+;Version: 2
+;PatchID: 7942
+;Details: https://patches.kibab.com/patches/details.php5?id=7942
+/*
+Delete this folder from Cache, then turn the phone off and apply this patch.
+; That's it, got more free space on the Cache-disc. No bad effects. ;)
+
+; Удаляем папку "ThemeCache" с кеш-диска, вырубаем тел и применяем патч.
+; Готово, получили на 600 кб больше свободного места. Глюков не наблюдал. 
+; БЕЗ ЭТОГО ПАТЧА папка "ThemeCache", когда сделаете рибут, возрождается после удаления.
+*/
+087DF3C: 31 32; Delete ThemeCache
+;------------------------- end -------------------------
+

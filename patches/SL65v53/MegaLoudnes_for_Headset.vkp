@@ -1,0 +1,31 @@
+;SL65v53
+;Мегагромкость для гарнитуры
+;MegaLoudnes for Headset
+;(c) ILYA_ZX
+;(r) allsiemens.com
+;(p) Hoper777
+;Version: 
+;PatchID: 10686
+;Details: https://patches.kibab.com/patches/details.php5?id=10686
+/*
+
+*/
+;MegaLoudnes for Headset
+;SL65v53
+;(c)ILYA_ZX
+;(p)Hoper777
+;(r)allsiemens.com
+
+
+123F3AC: 1E0000EA EDFFFFEA
+123F368: 70161FE57B77FFEB 080040E22E0000EA
+
+;WARNING! 16 - very aloud! May damage ears, headset or maybe Power Amplifier of mobile!
+;Осторожно! 16 - очень громко! Может повредить слух, гарнитуру и возможно усилитель мощности телефона!
+
+;Patch option, remove comment:
+;123F368: 08 XX
+;XX - HEX from 00(no changes) to 16(max)
+
+;------------------------- end -------------------------
+

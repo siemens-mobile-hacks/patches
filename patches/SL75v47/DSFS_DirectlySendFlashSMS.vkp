@@ -1,0 +1,20 @@
+;SL75v47
+;DirectlySendFlashSMS
+;DirectlySendFlashSMS
+;(c) Bennie
+;(p) loquat
+;Version: 1.1
+;PatchID: 10588
+;Details: https://patches.kibab.com/patches/details.php5?id=10588
+/*
+English:SMS begin as a whitespace should be FlashSMS
+introduce patch 10578
+*/
+E3A528: 201CB168 6AF642FA
+#pragma enable old_equal_ff
+CA49B0: 201CB8380178082906D000290CD1417B
+CA49C0: 7F221140F02204E0437B817B1B02C918
+CA49D0: 1822202900D10270201CB1687047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

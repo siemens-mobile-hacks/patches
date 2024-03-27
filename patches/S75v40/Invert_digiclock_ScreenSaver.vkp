@@ -1,0 +1,52 @@
+;S75v40
+;Инвертировать Цифровые часы
+;Invert digiclock ScreenSaver
+;(c) SiNgle
+;(p) Buffel
+;Version: 
+;PatchID: 3788
+;Details: https://patches.kibab.com/patches/details.php5?id=3788
+/*
+
+*/
+0345D02: 00 01 ;1h back
+0345D0A: 01 00 ;1h font
+0345D50: 00 01 ;2h back
+0345D58: 01 00 ;2h font
+0345D96: 00 01 ;":" back
+0345D9E: 01 00 ;":" font
+0345DD2: 00 01 ;1m back
+0345DDA: 01 00 ;1m font
+0345E1E: 00 01 ;2m back
+0345E26: 01 00 ;2m font
+0345E9E: 00 01
+0345EA6: 01 00
+043ACFC: 01 00 ;ProvName font
+043AD00: 00 01 ;background
+043AD50: 01 00 ;ProvFon with Icon
+043AD54: 00 01 ;background with Icon
+
+;color table (0..17h) R G B
+;00 - white
+;01 - black
+;02 - red (base)
+;03 - navy (base)
+;04 - green (base)
+;05 - magenta (base)
+;06 - aqua (base)
+;07 - yellow (base)
+;08 - red (light)
+;09 - navy (light)
+;0A - green (light)
+;0B - magenta (light)
+;0C - aqua (light)
+;0D - yellow (light)
+;0E - red (dark)
+;0F - navy (dark)
+;10 - green (dark)
+;11 - magenta (dark)
+;12 - aqua (dark)
+;13 - yellow (dark)
+;14-17 - clean
+;------------------------- end -------------------------
+

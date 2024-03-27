@@ -1,0 +1,15 @@
+;M55v10
+;Съемка камерой при разряженном аккумуляторе
+;Make photos with low battery
+;(c) Skylord, ValeraVi
+;(p) SiNgle
+;Version: 
+;PatchID: 1546
+;Details: https://patches.kibab.com/patches/details.php5?id=1546
+/*
+
+*/
+7E1328: F2F4E2A7 E094DB00
+
+;------------------------- end -------------------------
+

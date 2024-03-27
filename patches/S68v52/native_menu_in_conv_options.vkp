@@ -1,0 +1,14 @@
+;S68v52
+;Native Menu вместо Главного в опциях разговора
+;Native Menu instead of Flex-Menu in conversation options
+;(c) Zhek@
+;(p) sim_emrom
+;Version: 
+;PatchID: 9286
+;Details: https://patches.kibab.com/patches/details.php5?id=9286
+/*
+
+*/
+407868: 6D8632A0 D3592AA0
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v52
+;Disable AuMa Logging
+;Disable AuMa Logging
+;(c) benj9
+;(p) Виктор89
+;Version: 
+;PatchID: 8928
+;Details: https://patches.kibab.com/patches/details.php5?id=8928
+/*
+
+*/
+E13FA8: 08B5 7047
+;------------------------- end -------------------------
+

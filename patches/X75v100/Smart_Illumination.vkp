@@ -1,0 +1,30 @@
+;X75v100
+;Ушлая подсветка
+;Smart Illumination
+;(c) BoBa
+;(p) -=(Kad)=-
+;Version: 
+;PatchID: 5077
+;Details: https://patches.kibab.com/patches/details.php5?id=5077
+/*
+
+*/
+#pragma enable old_equal_ff
+0068030: F0B50FB40D48F8F7E3FD01D10FBC11E0
+0068040: 82B000206946,00F083F8,6D462C7802B0
+0068050: 0FBC012806D17578AC4203D3B578AC42
+0068060: 00D20022,00F078F8,F0BD000002BAB000
+0068070: 0xB1C2D3E4,0x00B0BA02,0x00000000,0x00000000
+0068080: "\
+{p=`Smart Illumination` id=B0Ba02 cp=BoBa ver=1}\
+{info `The phone turns keypadlight off from morning till evening`}\
+{1 sl Morning r=0..23 v=8}\
+{2 sl Evening r=0..23 v=22}",00
+#pragma disable old_equal_ff
+
+#pragma enable old_equal_ff
+068150: 004F3847,0xA090059F   ; f000: GetDateTime     \ S75v47
+068158: 004F3847,0xA01B642C   ; f008: SetIllumination / S75v47
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M55v11
+;Автоматическое включение телефона по будильнику
+;Swich On by Alarm Clock
+;(c) SiNgle
+;(p) !Freeman!
+;Version: 
+;PatchID: 5264
+;Details: https://patches.kibab.com/patches/details.php5?id=5264
+/*
+Необходимо сменить мелодию будильника
+*/
+053458: EA00 0D2B
+;------------------------- end -------------------------
+

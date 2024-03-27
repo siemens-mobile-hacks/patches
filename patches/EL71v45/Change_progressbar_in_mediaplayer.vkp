@@ -1,0 +1,16 @@
+;EL71v45
+;Изменение прогрессбара в медиаплеере
+;Change progressbar in mediaplayer
+;(c) SiNgle
+;(p) @ndreS/PRM
+;Version: 
+;PatchID: 7750
+;Details: https://patches.kibab.com/patches/details.php5?id=7750
+/*
+Формат: x1,y1,x2,y2
+*/
+0897A10: 6000030199001501 10001601E0001D01 ; background
+0897A18: 6000030199000C01 10001601E0001D01 ; contour
+0897A20: 60000D0199001601 10001601E0001D01 ; stripe
+;------------------------- end -------------------------
+

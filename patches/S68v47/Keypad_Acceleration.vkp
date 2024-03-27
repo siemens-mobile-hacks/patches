@@ -1,0 +1,15 @@
+;S68v47
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p)  klaud
+;Version: 
+;PatchID: 6572
+;Details: https://patches.kibab.com/patches/details.php5?id=6572
+/*
+
+*/
+07A6826: 011C 2021
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;A75v35
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) avkiev
+;(p) Smelter v5.67
+;Version: 
+;PatchID: 9364
+;Details: https://patches.kibab.com/patches/details.php5?id=9364
+/*
+
+*/
+0D7810: 3D 0D ; DisableAircraftCheck
+;------------------------- end -------------------------
+

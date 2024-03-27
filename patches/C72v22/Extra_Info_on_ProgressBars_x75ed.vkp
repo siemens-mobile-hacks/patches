@@ -1,0 +1,25 @@
+;C72v22
+;Дополнительная Информация на Прогрессбарах x75 edition
+;Extra Info on ProgressBars x75 edition
+;(c) 1nvisible
+;(p) Virusmater
+;Version: 2av-MP
+;PatchID: 7602
+;Details: https://patches.kibab.com/patches/details.php5?id=7602
+/*
+Показывает проценты на прогрессбарах, а также данные о принимаемых и передаваемых файлах.
+Нормально отображаются проценты и вес при приема данных!
+English:
+Shows percents on progressbars and info on files being sent/received.
+Correct filesize and percents are showed when receiving data!
+
+*/
+0A5B33C: C8A696A000000000 0xA0FC7D35,0xA0FC7D25
+094C7A0: 0000000000000000 0xA0FC7D11,0xA0FC7D01
+
+116A5E4: 216B000C4143E06AB0F04CE8 004FB847,0xA0FC7D51,C046C046
+116A69C: 0C20185E231CAFF0 004FB847,0xA0FC7DD9
+
+0FC7D4C: FFFFFFFF 0xA851D898
+;------------------------- end -------------------------
+

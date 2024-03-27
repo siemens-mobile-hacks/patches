@@ -1,0 +1,26 @@
+;C75v24
+;Запуск явы отовсюду
+;Run Java from Everywhere
+;(c) 1nvisible
+;(r) Enya ; WerewolF BlacK
+;(p) klaud
+;Version: 3
+;PatchID: 4400
+;Details: https://patches.kibab.com/patches/details.php5?id=4400
+/*
+если не пашет, пишите
+*/
+;C75v24
+;Запуск явы отовсюду
+;Run Java from Everywhere
+;(c) 1nvisible
+;(r) Enya
+;(p) Klaud
+;Version: 3
+/*
+Ничего переименовывать не надо. 
+No additional actions needed. 
+*/
+007735BC: 2500000A 000050E3
+;------------------------- end -------------------------
+

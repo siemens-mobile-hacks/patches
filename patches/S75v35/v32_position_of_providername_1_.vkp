@@ -1,0 +1,43 @@
+;S75v35
+;Изменить позицию и шрифт имени оператора в заставке
+;Change position / font of providername in screensaver
+;(c) arsh0r
+;(r) SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 3559
+;Details: https://patches.kibab.com/patches/details.php5?id=3559
+/*
+
+*/
+;S75v35
+;Изменить позицию и шрифт имени оператора в заставке
+;Change position / font of providername in screensaver
+;(c) arsh0r
+;(r) SiNgle
+;Analog Clock
+043a658: 00 xx ; x-start
+043a65a: A1 yy ; y-start
+043965c: 84 xx ; x-stop
+043965e: AF yy ; y-stop
+0439660: 05 03 ; font size
+
+; Digital Clock
+043a674: 00 xx ; x-start
+043a676: A1 95 ;yy ; Y-start
+043a678: 84 xx ;x-stop
+043a67a: AF yy ; y-stop
+043a67c: 05 02 ;font size03-меньше курсив,06-тонкий курсив,00-норм,01-крупнее ниже,07-меньше,02-
+;00-07
+
+; Picture
+043963c: 00 xx ; x-start
+043963e: A1 yy ; y-start
+0439640: 84 xx ; x-stop
+0439642: AF yy ; y-stop
+0439644: 05 03 ; font size
+;------------------------- end -------------------------
+
+
+;------------------------- end -------------------------
+

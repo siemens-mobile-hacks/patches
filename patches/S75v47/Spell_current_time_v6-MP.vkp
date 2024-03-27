@@ -1,0 +1,27 @@
+;S75v47
+;Проговаривание текущего времени
+;Spell current time
+;(c) avkiev
+;(r) SiNgle, _caine
+;Version: 6-MP
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7153
+;PatchID: 6237
+;Details: https://patches.kibab.com/patches/details.php5?id=6237
+/*
+Патч заменяет шорткат NAT_VOICE_MSGCHANGE (изменить голосовое сообщение) на функцию проговаривания текущего времени.
+Сажаем этот шорткат с помощью FakEditor на любую кнопку, при ее нажатии будет проговариваться время.
+Эти файлы необходимо положить в 0:\Sounds\Time: http://avkiev.kiev.ua/Siemens/Patches/time.rar
+English:
+Patch replaces shortcut NAT_VOICE_MSGCHANGE (change voice message) with spelling current time function.
+Set this shortcut by help FakEditor to any key, if you press this key - current time will be spelled.
+You should download those files to 0:\Sounds\Time: http://avkiev.kiev.ua/Siemens/Patches/time.rar
+*/
+04266E8: "VOICE_MSGCHANGE",00,0xA032DBC3 "VOICE_MSGCHANGE",00,0xA0063001   ; S75v47 - SpellTime instead of VOICE_MSGCHANGE
+0346968: 44CBFCEBB000C4E1 BF0000EF0000A0E1                                 ; S75v47 - SpellTime instead of Alarm
+
+;Редактирование сообщения  7 : 0298  "Почт.ящ" => "Время"
+
+;182108a: D09FD0BED187D1822ED18FD18900 D092D180D0B5D0BCD18FFFFFFF00 ; для 910
+;17A1F26: D09FD0BED187D1822ED18FD18900 D092D180D0B5D0BCD18FFFFFFF00 ; для сервисной (Украинской)
+;------------------------- end -------------------------
+

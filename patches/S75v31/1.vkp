@@ -1,0 +1,19 @@
+;S75v31
+;Убрать лишние из меню языков ввода
+;Remove from input languages menu
+;(c) AlexSid
+;(p) Xman12
+;Version: 1
+;PatchID: 2874
+;Details: https://patches.kibab.com/patches/details.php5?id=2874
+/*
+
+*/
+0C10E06: 00 01 ; Немецкий
+; Латвийский
+; Литовский
+0C10E42: 00 01 ; Украинский
+0C10E46: 00 01 ; Эстонский
+0C10E4A: 00 01 ; Польский
+;------------------------- end -------------------------
+

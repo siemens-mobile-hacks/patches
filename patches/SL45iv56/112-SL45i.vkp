@@ -1,0 +1,15 @@
+;SL45iv56
+;Отключает звук дозвона в бесшумном режиме
+;No Dialtone In Silent Mode
+;(c) ACiD [mrp]
+;Version: 
+;PatchID: 1705
+;Details: https://patches.kibab.com/patches/details.php5?id=1705
+/*
+Патч №112 с http://patch.oslik.ru/SL45_RU
+*/
+0002E72C: DAC31400 DAE0D0C7 
+0040C7D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8840D7400F00F2F436C748412D02DAC3 
+0040C7E0: FFFFFFFFFFFF 14009840DB00
+;------------------------- end -------------------------
+

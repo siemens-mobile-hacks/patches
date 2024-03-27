@@ -1,0 +1,14 @@
+;CF75v23
+;Увеличить фото при входящем звонке
+;Enlarge Incoming Call Photo
+;(c) SiNgle
+;Version: 1
+;PatchID: 4848
+;Details: https://patches.kibab.com/patches/details.php5?id=4848
+/*
+
+*/
+04EB7CC: 0521042001910090502280 00210020019100908422A8 ; CX65, M65, S65, SK65
+
+;------------------------- end -------------------------
+

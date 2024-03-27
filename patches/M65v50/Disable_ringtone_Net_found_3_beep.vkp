@@ -1,0 +1,15 @@
+;M65v50
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found" (3*beep)
+;(c) Avkiev
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 2352
+;Details: https://patches.kibab.com/patches/details.php5?id=2352
+/*
+
+*/
+13B064C: 5C03 FFFF
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v31
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) Bennie
+;(p) Cypok
+;Version: 
+;PatchID: 2769
+;Details: https://patches.kibab.com/patches/details.php5?id=2769
+/*
+
+*/
+0297DE1: D1 E0
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;CX75v13
+;Изменение стандартных анимаций EMS на смайлы
+;Change standart EMS animation to smiles
+;(c) deoide
+;Version: 
+;PatchID: 953
+;Details: https://patches.kibab.com/patches/details.php5?id=953
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v13&f=change_standart_animation_to_smiles.rar
+
+/*
+RUS: Изменяет стандартные анимации на забавные смайлики.
+
+ENG:  Changes standard animations to smilies.
+*/
+; смотрите дополнительный файл
+;------------------------- end -------------------------
+

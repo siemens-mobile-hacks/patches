@@ -1,0 +1,14 @@
+;CX70v56
+;Убирать звук дозвона
+;To clean a sound of dialing
+;(c) AlexSid
+;(p) Smelter
+;Version: 
+;PatchID: 627
+;Details: https://patches.kibab.com/patches/details.php5?id=627
+/*
+Патч убирает звук дозвона.
+*/
+150EFE4: 344652A1 00000000
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;SL75v52
+;Disable BootScreen
+;Disable BootScreen
+;(c) benj9
+;(p) kiREALlov
+;Version: 
+;PatchID: 7829
+;Details: https://patches.kibab.com/patches/details.php5?id=7829
+/*
+
+*/
+01A68AC: 693E000B 0000A0E1
+;------------------------- end -------------------------
+

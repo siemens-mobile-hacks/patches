@@ -1,0 +1,15 @@
+;SL75v39
+;Диспатчер главного экрана v3
+;Mainscreen-dispatcher v3
+;(c) avkiev
+;(r) KreN
+;(p) ferro
+;Version: 
+;PatchID: 6123
+;Details: https://patches.kibab.com/patches/details.php5?id=6123
+/*
+(!) Master
+*/
+02fd014: 00201B92F860391C0861 00488047,0xA0063E01,C046   ; SL75v39
+;------------------------- end -------------------------
+

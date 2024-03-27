@@ -1,0 +1,14 @@
+;M81v51
+;Изменение времени подачи ежеминутного сигнала
+;Change minute beep during call
+;(c) SiNgle
+;(p) Cypok
+;Version: 
+;PatchID: 6705
+;Details: https://patches.kibab.com/patches/details.php5?id=6705
+/*
+
+*/
+09AACC8: 00 0i055 ; 55 sec
+;------------------------- end -------------------------
+

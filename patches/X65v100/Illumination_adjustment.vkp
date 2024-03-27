@@ -1,0 +1,30 @@
+;X65v100
+;Настройка подсветки
+;Illumination adjustment
+;(c) avkiev
+;(r) benj9
+;(p) ~Jhellico
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=5625
+;PatchID: 5605
+;Details: https://patches.kibab.com/patches/details.php5?id=5605
+/*
+
+*/
+#pragma enable old_equal_ff
+0FC6700: 82B009780224A34643B5041C022C13D2
+0FC6710: 0C48C4DF10D0051C04B4B6DF04BC6978
+0FC6720: 8C43E40000190430285CEB78002A01D0
+0FC6730: AB78021C4343099343BD
+
+0FC6740: 0xB1C2D3E4,0x0000AB12,0000000000000000,"\
+{p=Illumination cp=avkiev id=AB12}\
+{4 b(8) Display v=5,20,20,20,20,20,20,0}\
+{12 b(8) Keyboard v=0,20,20,20,50,50,50,0}\
+{1 cb `Keyboard=Display`}\
+{2 b FactorOn v=5}\
+{3 b FactorOff v=30}\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

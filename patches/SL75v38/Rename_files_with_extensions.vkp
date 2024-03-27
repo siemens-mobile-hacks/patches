@@ -1,0 +1,16 @@
+;SL75v38
+;Переименование файлов с расширением
+;Rename files with extensions
+;(c) SiNgle
+;(p) Orastar
+;Version: 
+;PatchID: 5015
+;Details: https://patches.kibab.com/patches/details.php5?id=5015
+/*
+
+*/
+004D93A0: 2E22 0022
+004D93B2: 2E22 0022
+0059AA68: 2E22 0022
+;------------------------- end -------------------------
+

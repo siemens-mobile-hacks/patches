@@ -1,0 +1,37 @@
+;S65v58
+;Стандартная иконка будильника без белого фона
+;Standard icon of an alarm clock without a white background
+;(c) LLIaMaH
+;Version: 1
+;PatchID: 6063
+;Details: https://patches.kibab.com/patches/details.php5?id=6063
+/*
+
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 25.10.2006  -  Time: 19:46:26                             ###
+; ### Patch for: SIEMENS S65 v58                                      ###
+; #######################################################################
+
+; ##### Picture 685 #####
+00DA158C: 0E0C8500C0FDE3A0 0E0C8800545FD2A0
+
+00D25F54: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1400E00275030900E00275030400E002
+00D25F64: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 75030500E00275030200E00275030200
+00D25F74: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E00275030400E0FE750300E002750302
+00D25F84: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFB7026A03FE00E075030600E0FD7503
+00D25F94: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFD74A0202FFB7FF6A030700E0FF7503
+00D25FA4: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02FFB7024A02FDFFB7DF964A020600E0
+00D25FB4: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FF750303FFB7024A02FEDF964A020700
+00D25FC4: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E0FE6A03FFB703DF96FF4A020800E002
+00D25FD4: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 6A03FEDF96DF6E024A020700E0FF6A03
+00D25FE4: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0200E0024A020200E0FF6A031100E0
+;------------------------- end -------------------------
+

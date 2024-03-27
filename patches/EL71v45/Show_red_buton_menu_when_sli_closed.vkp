@@ -1,0 +1,13 @@
+;EL71v45
+;Показывать меню красной кнопки при закрытом слайдере
+;Show red button menu when slider closed & red key pressed
+;(c) -=(Kad)=-
+;Version: 
+;PatchID: 7734
+;Details: https://patches.kibab.com/patches/details.php5?id=7734
+/*
+
+*/
+0671F4C: 0128 C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;M65v50
+;Мастер-Патч
+;Master-Patch
+;(c) 1nvisible
+;(r) avkiev,chaos,KiRiK,~Jhellico,benj9,KreN,empeka
+;(p) Mifodiy
+;Version: 3.1 b3
+;PatchID: 3749
+;Details: https://patches.kibab.com/patches/details.php5?id=3749
+/*
+На данный момент не работает совместно с патчем: 
+*IconbarAdditions v3.3 miniGPS support* (c)benj
+
+*/
+083C238: 000050E30B00001A60408FE2 04E08FE204F01FE5E512FCA0
+0B1B330: 0C4C00921823201C 004B98471112FCA0
+114D570: A080022020706070 004DA8474912FCA0
+114DED4: 192189014018C068 00490847C111FCA0
+13CFB74: 0D1CFFF7A5FE6E1C 004FB8479111FCA0
+0920C80: 2D1A8EA0 0xA0FC0C51
+0920C8C: 2908000019080000 BD0A0000BD0A0000
+0920C98: B9 BD 
+;------------------------- end -------------------------
+

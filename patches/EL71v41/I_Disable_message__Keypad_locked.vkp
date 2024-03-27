@@ -1,0 +1,14 @@
+;EL71v41
+;Отключение сообщения "Клавиатура заблокирована"
+;Disable message "Keypad locked"
+;(c) SiNgle
+;(p) Siemann
+;Version: 
+;PatchID: 7128
+;Details: https://patches.kibab.com/patches/details.php5?id=7128
+/*
+
+*/
+066ACE4: 92F15CE8 C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;M55v10
+;Отключить подтверждение при Включении/Выключении GPRS
+;Disable GPRS on/off messages
+;(c) Matr!x
+;Version: 
+;PatchID: 1377
+;Details: https://patches.kibab.com/patches/details.php5?id=1377
+/*
+
+*/
+0CC4B8: 48402D09 FA2C9AC4
+;------------------------- end -------------------------
+

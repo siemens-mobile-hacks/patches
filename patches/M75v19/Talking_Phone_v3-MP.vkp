@@ -1,0 +1,28 @@
+;M75v19
+;Говорящий телефон
+;Talking Phone
+;(c) avkiev
+;(p) Geka
+;Version: 3
+;PatchID: 4819
+;Details: https://patches.kibab.com/patches/details.php5?id=4819
+/*
+MP+FL!
+Этот патч является точкой входа для патча 1130. Установка врезки включает 3 этапа:
+1. Выбор шортката на который будет заменяться SpellTime
+2. Здесь ничего не выбирать :), идёт замена вызова PlaySound (т.е. будильника) на проговаривание времени
+
+*/
+;1. Shortcut
+4B1914: "ELSE_COUNT_DOWN",00,256232A0 "ELSE_COUNT_DOWN",00,0xA0FC3001
+;4B1CF0: "ELSE_REMOTESYNC",00,256232A0 "ELSE_REMOTESYNC",00,0xA0FC3001 
+;4B1C88: "ELSE_PUSHTOTALK",00,256232A0 "ELSE_PUSHTOTALK",00,0xA0FC3001 
+
+
+;2. Alarm
+;Говорить время вместо мелодии будильника (не работает если телефон выключен)
+;Spell time instead of Alarm (doesn't work if phone is off)
+58A6B8: 0F209BF0C6EC2080 00488047,0xA0FC30A7   ; S65v58  00488047A730FCA0
+
+;------------------------- end -------------------------
+

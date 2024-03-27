@@ -1,0 +1,23 @@
+;C81v51
+;Отключить Logal логгинг
+;Disable Logal logging
+;(c) benj9
+;(p) Evgr
+;Version: 2
+;PatchID: 10432
+;Details: https://patches.kibab.com/patches/details.php5?id=10432
+/*
+Интегрировано отключение UNK логгинга. У кого уже установлен аналогичный патч - комментируем строчку project(to unk loging).
+*/
+
+
+/*
+
+Отключает Logal логгинг.
+*/
+04DE8F2: 10B5 7047 
+09F95A4: 0F002DE9 1EFF2FE1
+0FB8798: B0B5 7047 
+
+;------------------------- end -------------------------
+

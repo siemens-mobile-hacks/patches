@@ -1,0 +1,17 @@
+;S75v42
+;Увеличить скорость просмотра USSD-сообщений
+;Speed USSD
+;(c) SiNgle
+;(p) weclnt
+;Version: 
+;PatchID: 4972
+;Details: https://patches.kibab.com/patches/details.php5?id=4972
+/*
+
+*/
+29A810: D007 0003
+29A82D: 0B 03
+
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M81v51
+;Не рисовать чей-то канвас в левом нижнем углу
+;Don't draw canvas in left bottom corner
+;(c) avkiev
+;(p) Cypok
+;Version: 
+;PatchID: 6712
+;Details: https://patches.kibab.com/patches/details.php5?id=6712
+/*
+
+*/
+0301CDB: 30 20
+;------------------------- end -------------------------
+

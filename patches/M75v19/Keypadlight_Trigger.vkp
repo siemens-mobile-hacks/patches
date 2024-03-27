@@ -1,0 +1,16 @@
+;M75v19
+;Переключатель режима подсветки клавиатуры
+;Keypadlight Trigger
+;(c) benj9
+;(r) empeka
+;(p) Serega_1
+;Version: 2.2-MP
+;PatchID: 5004
+;Details: https://patches.kibab.com/patches/details.php5?id=5004
+/*
+Можно настроить яркость клавиатуры вне зависимости от яркости экрана.
+
+*/
+85AA98: 2A1C01210120,C0F71cEe 00488047,0xA0FC3401,0000
+;------------------------- end -------------------------
+

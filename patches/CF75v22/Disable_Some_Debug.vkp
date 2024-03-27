@@ -1,0 +1,16 @@
+;CF75v22
+;Disable Some Debug
+;Disable Some Debug
+;(c) benj9
+;Version: 
+;PatchID: 4508
+;Details: https://patches.kibab.com/patches/details.php5?id=4508
+/*
+
+*/
+; CF75 V22 - *Disable Some Debug* © benj9 § Smelter
+;Enviado por Bruno Oz
+078DB48: 10B5 7047 ; \ (x65, CX75)
+078DBBC: 0FB4 7047 ; /speed up phone by stripping needless code
+;------------------------- end -------------------------
+

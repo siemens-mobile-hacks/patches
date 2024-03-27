@@ -1,0 +1,14 @@
+;M81v51
+;Классическая фунция красной кнопки
+;Classic Red Button
+;(c) Rst7/CBSIE
+;(p) Siemann
+;Version: 
+;PatchID: 6231
+;Details: https://patches.kibab.com/patches/details.php5?id=6231
+/*
+
+*/
+96E21C: 94 96
+;------------------------- end -------------------------
+

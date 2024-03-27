@@ -1,0 +1,21 @@
+;SL45iv56
+;Удаление сообщения "Клавиатура заблокированна"
+;Remove Keyboard Locked Message
+;(c) Lalo
+;Version: 2
+;PatchID: 1910
+;Details: https://patches.kibab.com/patches/details.php5?id=1910
+/*
+Этот патч удаляет сообщение о том что клавиатура заблокирована 
+Примечание: он еще удаляет возможность набора 112 при заблокированной клавиатуре 
+
+
+Release: 26.08.04 - v2
+
+Патч №213 с http://patch.oslik.ru/SL45_RU
+*/
+3B07DC: DC5FD4CE0400D4DE0600 46F814003D0ADAC7FAD0 
+
+27D0FA: FFFFFFFFFFFFFFFFFFFFFFFF DC5FD4CE0400D4DE0600DB00
+;------------------------- end -------------------------
+

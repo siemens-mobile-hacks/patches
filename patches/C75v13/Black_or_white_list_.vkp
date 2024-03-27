@@ -1,0 +1,24 @@
+;C75v13
+;Чёрный и белый лист вызова
+;Black or white list
+;(c) SiNgle
+;(p) AsteriX
+;Version: 1,3
+;PatchID: 1449
+;Details: https://patches.kibab.com/patches/details.php5?id=1449
+/*
+
+*/
+0B69728: 06D1 0028
+0B6972C: 04D1 0028
+0B69B7A: B0420ED1 06F242ED
+#pragma enable old_equal_ff
+0D70600: 00402DE9060050E10500001AFF3F2DE9
+0D70610: 0FE0A0E10CF09FE5FF3FBDE80040BDE8
+0D70620: 04F09FE50080BDE8359EB8A09D9BB6A0
+#pragma disable old_equal_ff
+1256DD7: D5 E0
+;0D7060B: 1A 0A ; (white list)
+
+;------------------------- end -------------------------
+

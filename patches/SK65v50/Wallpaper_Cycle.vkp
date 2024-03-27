@@ -1,0 +1,38 @@
+;SK65v50
+;Переключатель фона главного экрана
+;Wallpaper Cycle
+;(c) benj9
+;(p) ~Jhellico
+;Version: 0.9
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=3977
+;PatchID: 3253
+;Details: https://patches.kibab.com/patches/details.php5?id=3253
+/*
+Usage:
++ Minutes, Seconds
+-Active Mode: Interval after that patch changes WP at mainscreen 
+-Passive Mode: After given time patch changes WP in Screensaver (or Menu,List)
+
++ Folder, Mask
+Choose images folder and appropriate mask (if mask like *.* finds files/folders that are no images, no wp is displayed)
+
++ Change Mode
+-'Active' mode changes WP only at mainscreen, but doesn't work well with animations.
+-'Passive' mode changes WP only in menus or screensaver. Needs screensaver to change. After the cycle time is run out and phone enters screensaver or menu, wp is changed. This works with animated Gif.
+-> if wallpaper doesnt work correctly after changing Mode during patch already runs, reboot.
+
++ External Calls (by external launcher, e.g. key sequencer)
+- Load Next Wallpaper: call A0FD9311, immediatly loads next file
+- Reload Wallpaper: call A0FD9321, reloads current wallpaper. After entering patch off profile,this reloads originally set wp. 
+
++ Patch Config:
+After Cycle Time is finished, patch tries to change WP (at mainscreen in active mode, not at mainscreen in passive mode). If phone is at that moment in "wrong" state, patch waits in short cycles and retries. Set short retry interval below. Short time means, patch reacts fast. Long time (10 seconds) means, patch reacts slow, but doesnt affects performance.
+
++ Known problems (this is 0.9):
+- 'Active mode' doesnt like animations too much. If not displayed, refresh by
+calling by key 'Reload Wallpaper'.
+- 'Reload key' seldomly causes WP display to stop, then reboot
+*/
+02C5F06: 2421614312688A182132 C046,004FB847,0xA0FD932F
+;------------------------- end -------------------------
+

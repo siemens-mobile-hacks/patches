@@ -1,0 +1,14 @@
+;SL45iv56
+;Убирает SIM меню
+;Hide SIM Application Menu
+;(c) RizaPN
+;Version: 
+;PatchID: 1566
+;Details: https://patches.kibab.com/patches/details.php5?id=1566
+/*
+Патч №024 с http://patch.oslik.ru/SL45_RU
+*/
+18F604: 4505 0402 
+18F616: 4505 0402
+;------------------------- end -------------------------
+

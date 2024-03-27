@@ -1,0 +1,15 @@
+;SL75v39
+;Убрать Немецкий и Польский из меню языков ввода
+;Remove Deutsch and Polish from input languages menu
+;(c) AlexSid
+;(p) Ziklop
+;Version: 
+;PatchID: 5349
+;Details: https://patches.kibab.com/patches/details.php5?id=5349
+/*
+
+*/
+0C15D6A: 00 01
+0C15DAE: 00 01
+;------------------------- end -------------------------
+

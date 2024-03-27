@@ -1,0 +1,14 @@
+;CX70v56
+;Разрешить Разблокировку Клавиатуры Двойным Нажатием #
+;Allow KeyBoard Unlock by Double-Press of #
+;(c) 1nvisible
+;(p) Smelter
+;Version: 
+;PatchID: 5768
+;Details: https://patches.kibab.com/patches/details.php5?id=5768
+/*
+
+*/
+1722876: 21D1 C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;CX75v25
+;Динамическая замена имени оператора
+;Dynamic replacing  of Provider name
+;(c) avkiev
+;(r) Bennie, arsh0r, Acid
+;(p) Geka
+;Version: 10-MP
+;PatchID: 5478
+;Details: https://patches.kibab.com/patches/details.php5?id=5478
+/*
+MP+FL!
+См. описание в патче для X65v100.
+*/
+49F128: 0xA08377DB 0xA0FC1B01  ; cx75sw25
+;------------------------- end -------------------------
+

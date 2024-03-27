@@ -1,0 +1,15 @@
+;E71v45
+;Шаг регулирования подсветки 1%
+;Setup illumination by 1%
+;(c) SiNgle
+;(p) BuG
+;Version: 
+;PatchID: 10345
+;Details: https://patches.kibab.com/patches/details.php5?id=10345
+/*
+
+*/
+064041C: 0A 01
+0640422: 0A 01
+;------------------------- end -------------------------
+

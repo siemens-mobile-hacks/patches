@@ -1,0 +1,14 @@
+;M65v50
+;Изменение номера SW-версии
+;Change SW-Version to XX
+;(c) -=(Kad)=-
+;Version: 
+;PatchID: 3205
+;Details: https://patches.kibab.com/patches/details.php5?id=3205
+/*
+
+*/
+90179: 3530 0000
+90179: 0000 "63"
+;------------------------- end -------------------------
+

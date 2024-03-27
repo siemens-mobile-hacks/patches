@@ -1,0 +1,15 @@
+;S68v52
+;Показ Расширений Файлов в Card-Explorer'е
+;Show File Extensions in Card-Explorer
+;(c) BingK(binghelingxi)
+;(r) SiNgle,1nvisible
+;(p) Виктор89
+;Version: 
+;PatchID: 9377
+;Details: https://patches.kibab.com/patches/details.php5?id=9377
+/*
+
+*/
+033EDA6: 291C 12E0
+;------------------------- end -------------------------
+

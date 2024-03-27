@@ -1,0 +1,16 @@
+;E71v45
+;Звук при завершении разговора
+;Play sound at the end of connection
+;(c) Evgr
+;Version: 
+;PatchID: 10359
+;Details: https://patches.kibab.com/patches/details.php5?id=10359
+/*
+
+*/
+0661F8E: 3F48 1E20 
+0661F90: 96F1CCEB 33F76AEB 
+
+; 1D щелчок фотокамеры; 1E звук начала видео; 1F звук разряженного аккума; 10 звук USSD сообщения
+;------------------------- end -------------------------
+

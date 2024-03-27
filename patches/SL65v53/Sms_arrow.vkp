@@ -1,0 +1,31 @@
+;SL65v53
+;Переход к следующему/предыдущему SMS по джойстику вправо/влево
+;Use Right Arrow as a "View Next Message" shortcut and Left Arrow key as a "View Previous Message" shortcut
+;(c) Bennie
+;(p) Weron
+;Version: 
+;PatchID: 7151
+;Details: https://patches.kibab.com/patches/details.php5?id=7151
+/*
+
+*/
+;* SVS. SMS View Shortcut *
+; SL65v53
+; (c) Bennie
+; (p) Weron
+;Переход к следующему/предыдущему SMS по джойстику вправо/влево
+;Use Right Arrow as a "View Next Message" shortcut and
+;Left Arrow key as a "View Previous Message" shortcut
+0A6CF6C: 69688160 7BF2D6FF
+0A6D4E8: 013290422AD9 B368,7BF209FD
+0A6D4F4: 0130 101C
+0A6D558: 3B1CAA68 6B892A89
+0AB0074: 201C4BF082E80C23 8A2008E0012729E0
+0AB00A2: 18D0 E9D0
+#pragma enable old_equal_ff
+0CE8F00: 012B01D0013200E0013A002A02DB8242
+0CE8F10: 02DA7047421E704700227047,A9880181
+0CE8F20: 298941817047
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

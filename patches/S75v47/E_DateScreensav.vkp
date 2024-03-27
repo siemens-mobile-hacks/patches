@@ -1,0 +1,15 @@
+;S75v47
+;Дата вместо имени оператора в заставке
+;Date instead of provider name in ScreenSaver
+;(c) Evgr
+;(r) dimonp25
+;(p) Виктор89
+;Version: 
+;PatchID: 8811
+;Details: https://patches.kibab.com/patches/details.php5?id=8811
+/*
+
+*/
+0345F0E: FFF74BFE 58F7A6F8
+;------------------------- end -------------------------
+

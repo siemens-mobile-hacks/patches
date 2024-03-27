@@ -1,0 +1,14 @@
+;M75v19
+;Менеджер Графических патчей
+;GraphPatchManager
+;(c) KreN
+;(p) Grizzzzly
+;Version: 3.1
+;PatchID: 3917
+;Details: https://patches.kibab.com/patches/details.php5?id=3917
+/*
+Нужен под мастер 1nvisible
+*/
+02A8D54: 261C002D05900490 004FB847,0xA0FC3E01
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S45iv4
+;Разрешить смену расширения файлов
+;To permit the change of expansion it is file
+;(c) Viraptor
+;(p) ntcn
+;Version: 
+;PatchID: 907
+;Details: https://patches.kibab.com/patches/details.php5?id=907
+/*
+
+только Fulflash c289
+*/
+54DF6E: DAFF5641 50445055
+;------------------------- end -------------------------
+

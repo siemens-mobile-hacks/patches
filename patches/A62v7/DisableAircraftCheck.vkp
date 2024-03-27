@@ -1,0 +1,13 @@
+;A62v7
+;Отключить провеку самолета
+;Disable Aircraft Check
+;(c) avkiev
+;Version: 
+;PatchID: 8198
+;Details: https://patches.kibab.com/patches/details.php5?id=8198
+/*
+
+*/
+6D8CC2: 3D 0D
+;------------------------- end -------------------------
+

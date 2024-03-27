@@ -1,0 +1,14 @@
+;CF75v23
+;Ускорение опроса клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) NeverGone
+;Version: 
+;PatchID: 9853
+;Details: https://patches.kibab.com/patches/details.php5?id=9853
+/*
+
+*/
+07B74B6: 56 20
+;------------------------- end -------------------------
+

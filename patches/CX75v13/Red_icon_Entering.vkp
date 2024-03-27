@@ -1,0 +1,45 @@
+;CX75v13
+;красная иконка-входящие
+;Red icon Entering
+;(c) Demo
+;Version: 
+;PatchID: 3568
+;Details: https://patches.kibab.com/patches/details.php5?id=3568
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v13&f=Red_icon_Entering.rar
+
+/*
+
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ### Avtor: Demo                                                                ###
+; ### Date: 02.06.2005  -  Time: 17:14:08                             ###
+; ### Patch for: SIEMENS CX75 v13                                     ###
+; #######################################################################
+
+
+; ##### Picture 1209 #####
+010C25EC: 110E8500209319A1 110E85000F37FBA0
+
+00FB370F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 05810CC0FF8104FAFF810BC0FF8103FA
+00FB371F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02F60881FF800260FF8103FA03F6FCF1
+00FB372F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 20F1ED03E902E4FE608102FA04F6FFF1
+00FB373F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 022003E903E4FD6081FA03F60420FDDD
+00FB374F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 20E904E4FE608104F6FF2002DEFFDD02
+00FB375F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BDFF2004E4FE608103F6FCF120DEDD02
+00FB376F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BD02B9FF2002E4FDC4608103F6FDF120
+00FB377F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DD02BD02B9FF2002E402C4FE608102F6
+00FB378F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02F10420FEB92002E403C4FD6081F603
+00FB379F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F103E9022003E403C4FE608103F1FFED
+00FB37AF: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 03E9FF2003E404C4FE60810FE8FF6005
+00FB37BF: FFFFFFFFFF 81FF800B60
+
+
+
+;------------------------- end -------------------------
+

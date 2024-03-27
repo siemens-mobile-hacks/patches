@@ -1,0 +1,14 @@
+;SL75v38
+;CRB - Классическая функция красной кнопки
+;CRB - Classic Red Button
+;(c) Rst7/CBSIE
+;(p) Orastar
+;Version: 
+;PatchID: 5010
+;Details: https://patches.kibab.com/patches/details.php5?id=5010
+/*
+
+*/
+009764F0: 94 96
+;------------------------- end -------------------------
+

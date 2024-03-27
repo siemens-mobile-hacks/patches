@@ -1,0 +1,33 @@
+;M75v19
+;Перенос папок Sms archive и Text Module на Config
+;Move folders Sms archive and Text Module to disk Config
+;(c) TAPAKAH
+;(p) Geka
+;Version: 1
+;PatchID: 4810
+;Details: https://patches.kibab.com/patches/details.php5?id=4810
+/*
+RUS: Переносит папки Sms archive и Text Module на диск Config. Видимо для любителей скрывать свой обмен сообщениями.
+
+ENG: Transfers folders Sms archive and Text Module on disk Config. Probably for fans to hide the exchange of messages.
+
+*/
+4A6438: 30 32 ;текст модули
+4A60EC: 30 32
+4A613C: 30 32
+4A611A: 30 32
+4A610A: 30 32
+4A613C: 30 32
+4A6166: 30 32
+4A617E: 30 32
+4A61A6: 30 32
+4A61CE: 30 32
+4A61E6: 30 32
+4A6210: 30 32
+4A623C: 30 32
+4A6254: 30 32
+4A627E: 30 32
+4A62BE: 30 32
+
+;------------------------- end -------------------------
+

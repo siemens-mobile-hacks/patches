@@ -1,0 +1,15 @@
+;SL65v53
+;Drop Call On Certain Time
+;Drop Call On Certain Time
+;(c) 1nvisible
+;(r) ~Jhellico
+;(p) Benlux
+;Version: 1.2
+;PatchID: 6985
+;Details: https://patches.kibab.com/patches/details.php5?id=6985
+/*
+
+*/
+0B43F2C: 00F029FD01300004000C 004CA047,0xA0FC4B01,C046 ;SL65v53
+;------------------------- end -------------------------
+

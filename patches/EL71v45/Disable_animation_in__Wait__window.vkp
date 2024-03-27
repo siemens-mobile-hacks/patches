@@ -1,0 +1,14 @@
+;EL71v45
+;Отключить анимацию в окошке "Подождите"
+;Disable animation in "Wait" window
+;(c) Evgr
+;(p) funMarkus
+;Version: 
+;PatchID: 7976
+;Details: https://patches.kibab.com/patches/details.php5?id=7976
+/*
+
+*/
+0958B7A: C0F2C2E8 C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,43 @@
+;S65v58
+;Расширенная панель иконок
+;Extended IconBar
+;(c) 1nvisible
+;(p) KiRiK
+;Version: 0.5
+;PatchID: 1441
+;Details: https://patches.kibab.com/patches/details.php5?id=1441
+/*
+Расширяет Панель до 8 иконок
+Отмените предыдущие патчи координат панели иконок
+
+English:
+Undo earlier IconBar coordinates patches
+Extends IconBar up to 8 Icons
+
+*/
+1698F5A: 04 08 ;disable 1st check отключить первую проверку
+1698F5E: 04 08
+
+1698F68: 42 50 ;extend iconbar length расширеная длина панели иконок
+
+1698F7E: 21 21 ;starting X coordinate начальная координата x
+
+1698B94: 85 45 ;disable 2nd check отключить вторую проверку
+1698B96: AD 6D
+
+1698FB8: 05 00 ;disable 3rd check отключить третью проверку
+
+16990CC: FCC4 5CC5 ;move 1st RAM передвинуть первую RAM
+
+1698F90: 08 10 ;fix to support 8 icons исправление для поддержки 8 иконок
+
+1698F98: 02 50 ;change Y coordinate изменить координату Y
+
+1698BB4: F00024 00208C ;another fix to support 8 icons другое исправление для поддержки 8 иконок
+  
+1698F44: 10 60 ;canvas end Y coordinate конечная координата Y холста
+1698F48: 02 50 ;canvas end Y coordinate конечная координата Y холста
+
+1698FE0: 1C 7C ;fix accu bug исправить ошибку с аккумом
+;------------------------- end -------------------------
+

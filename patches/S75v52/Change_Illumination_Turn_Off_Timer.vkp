@@ -1,0 +1,17 @@
+;S75v52
+;Изменение длительности горения подсветки
+;Change Illumination Turn Off Timer
+;(c) benj9
+;(p) dimonp25
+;Version: 
+;PatchID: 8668
+;Details: https://patches.kibab.com/patches/details.php5?id=8668
+/*
+Устанавливать только при оригинальном set_display.fs, если нет оного берём из архива и кладём в 2:\japp\FlexMenu
+*/
+;Главный экран (в секундах) \ mainscreen (in seconds)
+0BE93E1: 0F 0i60
+;Меню, списки и т.д. (в секундах) \ menues, lists etc. (in seconds)
+0BE93E5: 3C 0i180
+;------------------------- end -------------------------
+

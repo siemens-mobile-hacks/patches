@@ -1,0 +1,14 @@
+;CF75v23
+;Сохранение списков при смене SIM карты
+;Call list saving when SIM is changed
+;(c) SiNgle
+;(p) Виктор89
+;Version: 
+;PatchID: 9873
+;Details: https://patches.kibab.com/patches/details.php5?id=9873
+/*
+Сохранение списков вызовов при смене SIM-карты
+*/
+02A7836: E8F136E8 00200020
+;------------------------- end -------------------------
+

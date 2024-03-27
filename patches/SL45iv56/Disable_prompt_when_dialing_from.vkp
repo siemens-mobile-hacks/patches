@@ -1,0 +1,20 @@
+;SL45iv56
+;Отключение подтверждения набора номера из Java
+;Disable prompt when dialing from Java
+;(c) chaos
+;Version: 
+;PatchID: 7094
+;Details: https://patches.kibab.com/patches/details.php5?id=7094
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=Disable_prompt_when_dialing_from.rar
+
+/*
+Для более удобного пользования мидлетом AddressBook (во вложении).
+*/
+28548E: E6F8 DC57 
+285490: A012E6F921038890 A8C6D4D60200DC4D 
+285498: 8880E6FCFE12E6FD 984CF0ECF0FCDC5D 
+2854A0: 210388D088C0E00C 981EB92F08F12841 
+2854A8: F0D6F0E7DAC9B671 3DFADC4DB98FDADF 
+2854B0: 06F0 AC53
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;S65v58
+;Разрешить Разблокировку Клавиатуры Двойным Нажатием #
+;Allow KeyBoard Unlock by Double-Press of #
+;(c) 1nvisible
+;(p) KiRiK
+;Version: 1
+;PatchID: 3281
+;Details: https://patches.kibab.com/patches/details.php5?id=3281
+/*
+Разрешить Разблокировку Клавиатуры Двойным Нажатием #
+
+Долгое нажатие также работает.
+Long-Press also works.
+*/
+16A5876: 21D1 C046
+
+
+;------------------------- end -------------------------
+

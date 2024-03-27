@@ -1,0 +1,34 @@
+;SL45iv56
+;K1S. Другие ярлыки вместо почты на клавише 1
+;K1S. Key 1 from mailbox to other Shortcuts
+;(c) Lalo
+;Version: 
+;PatchID: 1903
+;Details: https://patches.kibab.com/patches/details.php5?id=1903
+/*
+Release: 06.08.04 - v1
+
+Патч №206 с http://patch.oslik.ru/SL45_RU
+*/
+Выбрать одно:
+
+;1)
+;меняет только короткое нажатие на клавишу 1 
+3B3108: 8501 xxxx ;Текст
+3B3365: DB8E2E yyyyyy ;EntryPoint для короткого нажатия 1 и правого софткея
+3B3368: F0C4 0D45
+
+;2)
+;меняет только длинное нажатие на клавишу 1
+3AD415: DBF832 zzzzzz ;EntryPoint для длинного нажатия
+
+;3)
+;меняет оба:
+3B30FC: EA20 0D01 
+3B3108: 8501 xxxx ;Текст
+3B335C: 2D0E CC00
+3B3365: DB8E2E yyyyyy ;EntryPoint для короткого нажатия 1 и правого софткея
+3B3368: F0C4 0D45
+3B3373: DBF22D zzzzzz ;EntryPoint для длинного нажатия
+;------------------------- end -------------------------
+

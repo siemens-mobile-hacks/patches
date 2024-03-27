@@ -1,0 +1,15 @@
+;ME75v22
+;Изменить время автоматической блокировки клавиатуры
+;Change time of automatical keypad lock
+;(c) SiNgle
+;Version: 
+;PatchID: 5039
+;Details: https://patches.kibab.com/patches/details.php5?id=5039
+/*
+All delays are separated to intervals of ~5 ms
+example: 65000ms/5=0x32C8 => C832, 130000ms/5=0x6590 => 9065
+
+*/
+02CFE64: C832 7017
+;------------------------- end -------------------------
+

@@ -1,0 +1,53 @@
+;SK65v50
+;Запуск мидлета как скринсейвера
+;Run midlet as ScreenSaver
+;(c) benj9
+;(r) ACiD[mrp], arsh0r, avkiev, SiNgle, § AsteriX
+;Version: 
+;PatchID: 2509
+;Details: https://patches.kibab.com/patches/details.php5?id=2509
+/*
+!Мидлет необходимо положить в корень диска Config (2:\) (Midlet must be placed in the root of Config (2:\))
+Бесплатные графические мидлеты (Check for free graphic midlets e.g. at) http://java.mob385.com/en/efekti.shtml
+
+Если использовать с "патчем продолжения", закомментируйте в нём
+начинающуюся с 044BDE4: строку, но залейте в телефон тело самого патча
+If use with follo-up patch comment the line beginning with
+044BDE4: there, but feed phone with the body of that patch
+
+*/
+;044BDE4: C3FD75A0 0100DBA0
+
+
+
+#pragma enable old_equal_ff
+0DB0000: FFB5194880473F27C74001200740012F
+0DB0010: 16D10E4F3C68012C02D100243C600FE0
+0DB0020: 0B48804700280BD00A488047002807D0
+0DB0030: 064F01243C60084C0A4800230022A047
+0DB0040: 02E0FFB4064CA047FFBDFFFF200200A8
+0DB0050: C1D32CA0078473A0A8B87BA05800DBA0
+0DB0060: 617019A06C00DBA069D12BA0
+0DB006C: "2:\\BounceText.jar",00 ;любой мидлет (any midlet)
+#pragma disable old_equal_ff
+;Настройки пользователя (User Config):
+;D0 - патч активен при блокированной клаве, D1 - при разблокированной
+;D0 - patch active when keylocked, D1 - when unlocked
+;0DB002F: D0 D1
+;патч активен как при блокированной, так и разблокированной клаве (patch active keylocked and unlocked)
+0DB002E: 07D0 C046
+0DB0006: 3F 01 ;ключ профиля (profile key)
+;Определите профили, в которых патч будет активен, рассчитав биты в ключе профиля
+;Define patch active in profiles by setting according bits in profile key
+;profilekey=sum(2^(profile#-1))
+;example 1: 3F: патч не активен в профиле 7 (patch is not active in profile 7)
+;example 2: 01: патч активен только в профиле 1 (patch is active only in profile 1)
+;example 3: 25: патч активен в профилях 1, 3, 6 (active in profile 1, 3, 6 : 2^0 + 2^2 + 2^5 = 1 + 4 + 32 = 37 = 0x25)
+;линия активна: переход к "патчу продолжения"; линия не активна: автономная работа
+;line active: pass-thru to follo-up patch. line not active: stand-alone.
+0DB0040: 02E0 FFBC
+;Патчи продолжения, обязательно установите тело патча продолжения (Follo-Up Patches, patch body has to be nstalled)
+;0DB0060: 61 61 ;* Динамическая замена имени оператора v8 ** Dynamic replacing  of Provider name v8 *
+
+;------------------------- end -------------------------
+

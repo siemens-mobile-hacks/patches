@@ -1,0 +1,20 @@
+;M55v91
+;Стрелка вправо во время разговора -> вкл./выкл.автообрыва
+;Right arrow during call -> on/of autoend
+;(c) Rascal
+;(r) Matr!x
+;Version: 1
+;PatchID: 4483
+;Details: https://patches.kibab.com/patches/details.php5?id=4483
+/*
+Должен быть установлен патч Автообрыв соединения по времени до 65535 сек. © «Serg°H», иначе просто вкл/откл ежеминутного сигнала.
+Включение автообрыва собровождается писком, чтобы можно было различить
+
+*/
+0D18BE: 14 26
+0D18C2: A819 861A
+0D1A86: DA2CEE93 DA5500F6 
+35F600: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA8CFA8848402D03DA8C28890D06DA8C 
+35F610: FFFFFFFFFFFFFFFFFFFFFFFF 1089E6FC0400DAA2AA39DB00 
+;------------------------- end -------------------------
+

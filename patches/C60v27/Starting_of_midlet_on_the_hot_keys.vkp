@@ -1,0 +1,43 @@
+;C60v27
+;Запуск мидлетов по горячим клавишам
+;Starting of midlet on the hot keys
+;(c) Chaos, Single
+;(p) Christ
+;Version: 2
+;PatchID: 4373
+;Details: https://patches.kibab.com/patches/details.php5?id=4373
+/*
+ИНСТРУКЦИЯ:
+Копируете мидлет в папку A:\Java\jam\keys\N\, где N=2..9 - номер быстрой клавиши
+!!!!!! Мидлет должен иметь имя файла j.jar (+ j.jad если нужен) !!!!!!
+Затем на выбранную клавишу устанавливаете "Java" после запуска мидлета придется жать красную кнопку долго
+
+ Добавлено в версии 2:
+ Изменить код функции GetStoragePath (0x6A777C), чтоб не занималась саботажем.
+ Теперь путь к storage определяется правильно.
+
+*/
+4A77F2: 2D1A 0D1A
+
+;Сделать запуск вместо Camera
+2B8B64: DA4D0CB4 DA837402
+;Замена текста "Camera" -> "Java"
+2B8600: DC06DC06D106 740774077407
+
+; Кому не охота на камеру - Сделать запуск вместо Predefined texts
+; только название так и останется Predefined texts
+;2B8B98: DA4AA883 DA837402
+
+630254: FFFFFFFFFFFFFFFF 413A5C4A6176615C
+63025C: FFFFFFFFFFFFFFFF 6A616D5C6B657973
+630264: FFFFFFFFFFFFFFFF 5C305C6A2E6A6172
+63026C: FFFFFFFFFFFFFFFF 0000000000000000
+630274: FFFFFFFFFFFFFFFF E6FE5402E6FFF338
+63027C: FFFFFFFFFFFFFFFF D7400C02992E08F1
+630284: FFFFFFFFFFFFFFFF D7400900B92F3DF8
+63028C: FFFFFFFFFFFFFFFF D7500900F3F2F238
+630294: FFFFFFFFFFFFFFFF F7F20539E6FC4B01
+63029C: FFFFFFFFFFFFFFFF DA44A481E6FCF438
+6302A4: FFFFFFFFFFFFFFFF E09DE01EFA6A5691
+;------------------------- end -------------------------
+

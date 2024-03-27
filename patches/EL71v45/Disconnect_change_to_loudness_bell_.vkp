@@ -1,0 +1,15 @@
+;EL71v45
+;Отключить изменение громкости звонка на главном экране
+;Disconnect change to loudness bell on main screen
+;(c) Zhek@
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8259
+;Details: https://patches.kibab.com/patches/details.php5?id=8259
+/*
+
+*/
+06F6604: B7F6A3F8 C046C046
+06F6610: B7F69DF8 C046C046
+;------------------------- end -------------------------
+

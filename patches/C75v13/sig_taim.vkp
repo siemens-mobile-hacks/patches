@@ -1,0 +1,13 @@
+;C75v13
+;Изменить сигнал таймера на более громкий и длинный
+;Timer signal louder and longer
+;(c) glav
+;Version: 
+;PatchID: 1056
+;Details: https://patches.kibab.com/patches/details.php5?id=1056
+/*
+
+*/
+0E6B284: 6406E8 74FEE7
+;------------------------- end -------------------------
+

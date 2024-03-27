@@ -1,0 +1,45 @@
+;CX75v25
+;Замена значка вибры на главном экране
+;Change vibra icon on main screen
+;(c) Espirito
+;Version: 
+;PatchID: 7544
+;Details: https://patches.kibab.com/patches/details.php5?id=7544
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v25&f=change_vibra_icon_on_mainscreen.rar
+
+/*
+Для отображения значка нужно применить связанный патч!
+
+Лично придуманный "символ вибрации", состоящий из двух букв "z" в скошенной рамке.
+
+English:It is necessary to apply the linked patch to display of an icon!
+
+Personally thought up "a symbol of vibration", consisting of two letters "z" in oblique frame.
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 17.05.2007  -  Time: 23:01:49                             ###
+; ### Patch for: SIEMENS CX75 v25                                     ###
+; #######################################################################
+
+
+; ##### Picture 787 #####
+010C18BC: 0E0E8500A05A17A1 0E0E85004BA8FDA0
+
+00FDA84B: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02C00BFF02C002FF0900FEFFC002FF02
+00FDA85B: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0007FFFC00FFC0FF020003FF0400FAFF
+00FDA86B: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00FFC0FF0006FFFF0002FFFB00FFC0FF
+00FDA87B: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0005FFFF0003FFFA00FFC0FF00FF0700
+00FDA88B: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FAFF00FFC0FF0003FFFF0005FFFB00FF
+00FDA89B: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C0FF0002FFFF0006FFFA00FFC0FF00FF
+00FDA8AB: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 040003FF0200FCFFC0FF0007FF020002
+00FDA8BB: FFFFFFFFFFFFFFFFFFFFFFFFFFFF FFFEC0FF090002FF02C00BFF11C0
+
+;------------------------- end -------------------------
+

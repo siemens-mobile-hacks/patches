@@ -1,0 +1,25 @@
+;SK65v50
+;Убрать сообщения
+;Disable some messages
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 2480
+;Details: https://patches.kibab.com/patches/details.php5?id=2480
+/*
+
+*/
+02CB32E: 0021 10BD ;"Все сигналы вкл" (All ringtones on)
+02CB34E: 0021 10BD ;"Все сигналы выкл" (All ringtones off)
+02CB3A4: 0021 10BD ;"Блокировка клавиатуры включена" (Keypad locked)
+03190E0: 32F1 80BD ;Вибра вкл\выкл (Vibra alert on\off)
+0319172: 32F1 80BD ;IrDA вкл\выкл (IrDA on\off)
+03191A2: 32F1 80BD ;Bluetooth вкл\выкл (Bluetooth on\off) § 1nvisible
+03191EE: 32F1 80BD ;GPRS вкл\выкл (GPRS on\off) § 1nvisible
+0319208: 32F1 80BD ;GPRS вкл\выкл (GPRS on\off) § 1nvisible
+0339748: 39D40EFA 0100A0E3 ;"Подождите" в эксплорере ("Please wait" in Card-Explorer)
+04A3D8A: 01 00 ;"Копировать SIM" при смене SIM ("Copy SIM" at SIM change)
+
+
+;------------------------- end -------------------------
+

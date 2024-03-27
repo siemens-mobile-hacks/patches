@@ -1,0 +1,17 @@
+;SK65v50
+;Шрифт меню и софт кнопок
+;Font of the menu and software of buttons
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 2497
+;Details: https://patches.kibab.com/patches/details.php5?id=2497
+/*
+
+*/
+0450060: 03 02 ;Шрифт софт-кнопок
+04500A8: 03 08 ;Выбраная позиция меню
+04500AC: 02 08 ;Список меню
+
+;------------------------- end -------------------------
+

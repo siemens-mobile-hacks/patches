@@ -1,0 +1,14 @@
+;S65v58
+;Убрать Пункт "Справка" в Card-Explorer'е
+;Remove "Help" Item from Card-Explorer
+;(c) 1nvisible
+;Version: 
+;PatchID: 4485
+;Details: https://patches.kibab.com/patches/details.php5?id=4485
+/*
+Когда курсор на карте, помощь есть, но не работает.
+English:When the cursor is on MMC-Card, "Help" is visible but disabled
+*/
+0A2D2FC: 17 16
+;------------------------- end -------------------------
+

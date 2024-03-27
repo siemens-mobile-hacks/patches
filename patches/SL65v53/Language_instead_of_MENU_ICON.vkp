@@ -1,0 +1,41 @@
+;SL65v53
+;Отображать язык ввода (Rus/Eng) вместо MENU_ICON в эльфах
+;Show input language (Eng/Rus) instead of MENU_ICON in ELF's
+;(c) green
+;Version: 
+;PatchID: 10303
+;Details: https://patches.kibab.com/patches/details.php5?id=10303
+/*
+Выводит текущий язык ввода (Rus/Eng/???) вместо MENU_ICON, если отрисовка этой самой MENU_ICON вызвана при "верхнем" CSM, находящемся в RAM %)
+
+Крч, если стоит IdleRedrawHandler от Димадзе, то иконка, к сожалению, будет заменяться и на Idle (в т.ч. при наборе номера) =(
+*/
+11591C4: 3B1C0231021C0798 004B9847,0xA0CE9001 ;адрес патча +1 (ибо Thumb)
+
++0CE9000
+#pragma enable old_equal_ff
+00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 06E0024C2468E468E47A0FE0,0xA868A834 ; CSM_ROOT+8 (из swilib)
+10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3B1C0231021C0798FFB5034B9A42089B
+20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF EFD004330893FFBD,0xA0DA08EC,A82CF8D1 ; MENU_ICON PIT_addr
+30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF C0460833089315488047,0x00,2802D0,0x11,28 ; A,B
+40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 02D003E00EA002E00EA000E00EA0,0x00,21 ; pos_x1
+50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 019A08A308B408A308B4222308B40823
+60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 08B432239B1808B4,0x80,23C046034CA047 ; pos_x2
+70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 05B0FFBD,00000064,FFFFFF64,0xA1168685 ; int RGBA outline color; int RGBA text color; function 0x14C: DrawString
+80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0xA0CE9090,0xA0CE9098,A0CE90A0,0xA0B0FAA3 ; C,D,E,F
+90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 030045006E006700,0200520075007300 ; ws "Eng", ws "Rus"
+A0: FFFFFFFFFFFFFFFF 02003F003F003F00 ; ws "???"
+#pragma disable old_equal_ff
++0
+
+;A (0x00=English) - Lang_ID одного из используемых языков
+;B (0x11=Russian) - второй. Если выбран язык кроме этих двух, будет показан третий вариант "???"
+;//0x00 English | 0x01 Deutsch | 0x02 Francais | 0x03 Italiano |0x04 Espaтol | 0x05 Portugues | 0x06 Svenska | 0x07 Norsk | 0x08 Suomi
+;//0x09 Dansk | 0x0A Nederlands | 0x0B Cestina | 0x0C Polski | 0x0D Magyar | 0x0E Slovakia | 0x0F Turkce | 0x10 Eyynvika | 0x11 Русский
+;//0x18 Catola | 0x19 Romana | 0x1A Българсkи | 0x1B Latvia | 0x1C Lithuania
+;C   WSHDR ("Eng")
+;D   WSHDR ("Rus")
+;E   WSHDR ("???")
+;F   GetTextInputLanguage(), pattern C088000600167047 -1
+;------------------------- end -------------------------
+

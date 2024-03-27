@@ -1,0 +1,14 @@
+;S75v42
+;Разрешить выбор Диапазона
+;Enable Band Selection
+;(c) Bennie
+;(p) DiHLoS
+;Version: 
+;PatchID: 4925
+;Details: https://patches.kibab.com/patches/details.php5?id=4925
+/*
+
+*/
+041DEBC: 0502 F901
+;------------------------- end -------------------------
+

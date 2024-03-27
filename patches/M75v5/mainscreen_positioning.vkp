@@ -1,0 +1,56 @@
+;M75v5
+;Позиционирование главного экрана
+;MainScreen positioning
+;(c) SiNgle, BuG
+;(r) KiRiK, arsh0r
+;Version: 2
+;PatchID: 422
+;Details: https://patches.kibab.com/patches/details.php5?id=422
+/*
+Изменение расположения некоторых элементов главного экрана:
+- Индикатор зарядки (выключенный телефон)
+- Сеть
+- Иконки
+- Батарея
+*/
+;Charge Indicator (Switched-Off Mode)
+02A85D2: 10 5E ; background end Y
+02A85D8: 02 50 ; background start Y
+02A85DA: 63 33 ; background start X
+02A85DC: 80 50 ; background end X
+02A85E1: F095FB 280028 ; no background
+02A85EA: 02 50 ; Y
+02A85EC: 63 33 ; X
+
+;Net
+02A868A: 10 5E ; background end Y
+02A868E: 02 01 ; background start Y
+02A8690: 21 1F ; background end X
+02A8692: 03 01 ; background start X
+;02A8697 F03AFB 280028 ; no background
+02A86A0: 02 01 ; Y
+02A86A2: 03 01 ; X
+
+;Iconbar
+02A8A4E: 10 0F ; background end Y
+02A8A52: 02 01 ; background start Y
+02A8A54: 23 37 ; background start X
+02A8A56: 61 75 ; background end X
+02A8A5D: F057F9 280028 ; no background
+02A8A88: 21 35 ; X
+02A8AA2: 02 01 ; Y
+
+;Battery
+02A8B3C: 10 1B ; background end Y
+02A8B40: 02 0D ; background start Y
+02A8B42: 80 1E ; background end X
+02A8B44: 63 01 ; background start X
+;A02A8B49: F0E1F8 280028; no background
+02A8B6A: 02 0C ; Y
+02A8B6C: 63 01 ; X
+
+04A9B48: 08 12 ;Y - Provider name
+04A9B58: 1A 24 ;Y - Sub provider name
+;02CC004: A1 A0 ;Y - Time & Date
+;------------------------- end -------------------------
+

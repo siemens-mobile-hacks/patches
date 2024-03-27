@@ -1,0 +1,18 @@
+;SL45iv56
+;SMP3. Справочник SIM для SMS при проигрывании MP3
+;SMP3. Use SIM-Location for SMS while playing MP3
+;(c) RizaPN
+;Version: 
+;PatchID: 1935
+;Details: https://patches.kibab.com/patches/details.php5?id=1935
+/*
+Release: March 15, 2003
+*/
+0x341E56: 4860EA30 FAC7C0D3
+
+0x27D3C0: FFFFFFFFFFFFFFFF E6FC1300D7403400
+0x27D3C8: FFFFFFFFFFFFFFFF 42FC1E3E3D02FAD4
+0x27D3D0: FFFFFFFFFFFFFFFF CE1E48603D02FAD4
+0x27D3D8: FFFFFFFFFFFF 5C1EFAD44627
+;------------------------- end -------------------------
+

@@ -1,0 +1,25 @@
+;A52v9
+;Вибросигнал в момент соединения
+;Vibra when calling
+;(c) Sinclair
+;Version: 
+;PatchID: 4386
+;Details: https://patches.kibab.com/patches/details.php5?id=4386
+/*
+
+*/
+03A6C8: DA8320BD DA87D0FD
+07FDD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA8ACEBFE6FC2F00DA8C66D8E6FC00FE
+07FDE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FD8700DAA4582DE6FC703FE6FD0C00
+07FDF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FE6C00E00FDA8A10F40806FA8AD8BF
+07FE00: FFFFFFFFFFFFFFFF E00CDA8C66D8DB00
+;-----------------------
+;07FDF2: 6C xx ; Время работы вибры, 1/2 сек = 216,57/2=108=06Ch
+;D8 = 216,57  =  1сек
+;6C = 216,57/2 = 1/2 сек
+;36 = 216,57/4 = 1/4 сек
+;1B = 216,57/4 = 1/8 сек
+;-----------------------
+;07FDD6: 2F yy ; Звук вместо вибры (из списка звуков)
+;------------------------- end -------------------------
+

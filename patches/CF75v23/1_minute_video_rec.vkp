@@ -1,0 +1,13 @@
+;CF75v23
+;Запись видео 1 минуту
+;1 minute video rec
+;(c) SiNgle
+;Version: 
+;PatchID: 4866
+;Details: https://patches.kibab.com/patches/details.php5?id=4866
+/*
+
+*/
+02DFAE6: 0300C8C003 2000C8C020
+;------------------------- end -------------------------
+

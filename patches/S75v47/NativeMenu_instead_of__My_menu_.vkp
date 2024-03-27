@@ -1,0 +1,13 @@
+;S75v47
+;NativeMenu вместо "Мое меню"
+;NativeMenu instead of "My menu"
+;(c) AlexeyZ
+;Version: 
+;PatchID: 7742
+;Details: https://patches.kibab.com/patches/details.php5?id=7742
+/*
+
+*/
+423D78: 5BDF32A0 0xA02CDF23
+;------------------------- end -------------------------
+

@@ -1,0 +1,253 @@
+;X65v100
+;Оверлей инфо мультиплексер
+;Overlay Info Mux
+;(c) benj9
+;Version: 1.2
+;PatchID: 3971
+;Details: https://patches.kibab.com/patches/details.php5?id=3971
+/*
+(!) MP, func lib: f: 0,6,22,66,77,81,92,93,117-119,160. v: 0,3,14,18,19
+
+отмените: * Change DevMen Overlay Display Refresh Rate *
+отмените: * OverlayInfo v0.2 *
+
+
+
+*/
+#pragma enable old_equal_ff
+0FD9800: 4F766C61794D7831302C62656E6A3900
+0FD9810: DE4908780130032800DB002008700228
+0FD9820: 01D10020C870704700B500200C2F4BDA
+0FD9830: 3B1C7F00023FBF4446E00FE010E011E0
+0FD9840: 14E016E019E027E037E036E035E034E0
+0FD9850: 181C073800F039F8181C35E00D9833E0
+0FD9860: 0E9831E0E6F7F8FE38782DE0E6F70CFD
+0FD9870: 2AE0E6F7E5FE387826E001200321E6F7
+0FD9880: D7FB0A210902AA31401A0F9A2323D156
+0FD9890: 401819D5404217E081B010992831E6F7
+0FD98A0: AFFB00911098283002784378B2A1E6F7
+0FD98B0: FFFB1098283001B006E0181C083800F0
+0FD98C0: 04F801D000F016F800BD40B5119E8100
+0FD98D0: 0C317358002B0BD57178012282401142
+0FD98E0: 06D01B68002B03D502210918715C5B18
+0FD98F0: 1B1C40BD40B5119E07210918715C0129
+0FD9900: 04DB01D01B6802E01B8800E01B78181C
+0FD9910: 00E0002040BD02B010B582B09A48E7F7
+0FD9920: 6FF9341C04D0002000F0ECF801D10025
+0FD9930: 8DA60DA8F2790092B37972793179E6F7
+0FD9940: 33FDB2780192717800912B1C00220DA9
+0FD9950: 04A8E6F72DFD321C0C32301C03300078
+0FD9960: 002802D000F009F800E0111F04A8E6F7
+0FD9970: 23FD02B090BC82B038473CB5041C834D
+0FD9980: 04214919AA78002A05D1029B24331B68
+0FD9990: 0B600122AA70042A01DB131F00E0531E
+0FD99A0: 0127174200D10027C85C012F03D0001B
+0FD99B0: 0AD5002003E00019FF2805DDFF200132
+0FD99C0: 062A00DD0022AA70C8543CBD4EB4041C
+0FD99D0: E0B00D956C48E7F713F95AD0E6F784FC
+0FD99E0: 0A90E6F77DFC0B900D950C960120311C
+0FD99F0: 22310978084208D0E6F746FC132804D0
+0FD9A00: E6F756FE387801283FD0012000F07AF8
+0FD9A10: 3BD03078012838DB3BD0321CAF321778
+0FD9A20: 002F17D082B0FFF7FFFE02B0321C1032
+0FD9A30: 1168321CAE321278012A02D004DC8842
+0FD9A40: 07E0884204DD01E0884201DA012100E0
+0FD9A50: 00211AD182B0341C18340025675DFFF7
+0FD9A60: E3FEA9006A46505001350C2DF6DB009A
+0FD9A70: 019B02B068463830011D0160311C2431
+0FD9A80: E6F73EFD6846383008E0216800220A80
+0FD9A90: 03E0201C3F4FB847FFE7201CE6F71CFE
+0FD9AA0: 3C88002C0FD0002E0DD0384BDD78FF2D
+0FD9AB0: 09D001680A886F1C974201DDFF2501E0
+0FD9AC0: 0F800135DD70344FB847344FB847002E
+0FD9AD0: 0FD0002C0DD0FF2D01D00A210AE07169
+0FD9AE0: 082901DA082105E00820000277308142
+0FD9AF0: 00DB36210D98264AE6F7B6FB60B04EBC
+0FD9B00: 1EB0B0BD30B5041C204D2878002803D0
+0FD9B10: 013814D1FE201FE0E6F7DAFD38780128
+0FD9B20: 0AD0E6F7D9FD00203F5E002F04D5E6F7
+0FD9B30: 6FFB03D0032002E0022000E004200138
+0FD9B40: 012C0BD06978FF2905D0884206D00228
+0FD9B50: 01D10020E870FF20002603E0B0214143
+0FD9B60: 76183436687030BD0006000000008414 
+0FD9B70: 00000064FFFFFF6425643A253032643A
+0FD9B80: 2530326400000000CBCC0000,0xA8000210 ; free ram 8 bytes
+
+0FD9BA0: E4D3C2B1CBCC00000000000000000000
+0FD9BB0: "{patch=`Overlay Info Mux` ver=1 cp=benj9 id=CCCB}","\
+\
+{c al left=0 center=2 right=4}{c ct off=0 firmware=1 patch=2}","\
+{c fn off=0 cpu_load=1 cpu_clock=2 net_rx=3 net_mode=4 accu_cap=5 ","\
+accu_temp=6 time=7 func8=8 func9=9 func10=10 func11=11 string12=12}","\
+{c th `=`=0 `<=`=1 `>=`=2}{c lt `byte (1b)`=0 `hword (2b)`=1 `dword (4b)`=2}","\
+\
+\
+{sm `Options`}","\
+{sm func8}{12 a address v=0}{1.0 cb `use as pointer` v=0}","\
+{2 b off v=0}{7 o load c=lt v=2}{endsm}","\
+{sm func9}{16 a address v=A8000204}{1.1 cb `use as pointer` v=1}","\
+{3 b off v=18}{8 o load c=lt v=1}{endsm}","\
+{sm func10}{20 a address v=0}{1.2 cb `use as pointer` v=0}","\
+{4 b off v=0}{9 o load c=lt v=2}{endsm}","\
+{sm func11}{24 a address v=0}{1.3 cb `use as pointer` v=0}","\
+{5 b off v=0}{10 o load c=lt v=2}{endsm}","\
+{sm string12}{28 a address v=A8000218}{1.4 cb `use as pointer` v=1}","\
+{6 b off v=189}{endsm}","\
+{35 b `\naccu temp calibr.` range=-50..50 v=`-10`}","\
+{34.0 cb `hide at net` v=0}","\
+{36 const size=3 v=0x00FF00}","\
+{39 b `\nopacity of color\nslide (restart)` r=0..100 v=0x54}","\
+{endsm}","\
+\
+\
+{offset=0x34}{sm `\nOverride`}","\
+\
+{0 o content c=ct v=2}{sm content}","\
+{36 s sprintf ml=137 v=`cpu %03d%% %03dM \nrx=%ddB m=%02x c=%03d%%\ntix=%d `}","\
+{24 o `\n$1=` c=fn v=1}","\
+{25 o `\n$2=` c=fn v=2}","\
+{26 o `\n$3=` c=fn v=3}","\
+{27 o `\n$4=` c=fn v=4}","\
+{28 o `\n$5=` c=fn v=5}","\
+{29 o `\n$6=` c=fn v=10}","\
+{30 o `\n$7=` c=fn v=0}","\
+{31 o `\n$8=` c=fn}","\
+{32 o `\n$9=` c=fn}","\
+{33 o `\n$10=` c=fn }","\
+{34 o `\n$11=` c=fn}","\
+{35 o `\n$12=` c=fn}{endsm}","\
+\
+{sm style}{4 xy left/up x=0 y=16}","\
+{6 xy width/height x=132 y=90}","\
+{1 sl font r=0..9 v=2}","\
+{2 o alignement c=al v=0}","\
+{8 co `\nfg color` v=0x640000F0}","\
+{3 b `fg colorslide stepsize (0=off)` v=14}","\
+{12 co `\nbg color` v=0x482C0000}{endsm}","\
+\
+{sm threshold}show only if{0xAF o `function` c=fn v=0}{0xAE o c=th v=2}{16 i threshold v=85}{endsm}","\
+\
+{20 ms `\nrefresh cycle time (ms)` range=8..2167 v=22}","\
+{endsm}","\
+\
+\
+{offset=0xE4}{sm Mainscreen}","\
+\
+{0 o content c=ct v=2}{sm content}","\
+{36 s sprintf ml=137 v=`cpu %03d%% %dM \nnet %03d%% m=%02x\nbat %d%% %dcC `}","\
+{24 o `\n$1=` c=fn v=1}","\
+{25 o `\n$2=` c=fn v=2}","\
+{26 o `\n$3=` c=fn v=3}","\
+{27 o `\n$4=` c=fn v=4}","\
+{28 o `\n$5=` c=fn v=5}","\
+{29 o `\n$6=` c=fn v=6}","\
+{30 o `\n$7=` c=fn v=0}","\
+{31 o `\n$8=` c=fn v=0}","\
+{32 o `\n$9=` c=fn}","\
+{33 o `\n$10=` c=fn}","\
+{34 o `\n$11=` c=fn}","\
+{35 o `\n$12=` c=fn}{endsm}","\
+\
+{sm style}","\
+{4 xy left/up x=0 y=110}","\
+{6 xy width/height x=132 y=176}","\
+{1 sl font r=0..9 v=2}","\
+{2 o alignement c=al v=2}","\
+{8 co `\nfg color` v=0x641010FF}","\
+{3 b `fg colorslide stepsize (0=off)` v=4}","\
+{12 co `\nbg color` v=0x58280000}{endsm}","\
+\
+{sm threshold}show only if{0xAF o `function` c=fn v=1}{0xAE o c=th v=2}{16 i threshold v=80}{endsm}","\
+\
+{20 ms `\nrefresh cycle time (ms)` range=8..2167 v=65}","\
+{endsm}","\
+\
+\
+{offset=0x194}{sm Screensaver}","\
+\
+{0 o content c=ct v=2}{sm content}","\
+{36 s sprintf ml=137 v=`cpu=%03d%% rx=%03d%% \ncap=%d%% t=%dcC \ntix=%d `}","\
+{24 o `\n$1=` c=fn v=1}","\
+{25 o `\n$2=` c=fn v=3}","\
+{26 o `\n$3=` c=fn v=5}","\
+{27 o `\n$4=` c=fn v=6}","\
+{28 o `\n$5=` c=fn v=10}","\
+{29 o `\n$6=` c=fn v=0}","\
+{30 o `\n$7=` c=fn v=0}","\
+{31 o `\n$8=` c=fn v=0}","\
+{32 o `\n$9=` c=fn v=0}","\
+{33 o `\n$10=` c=fn v=0}","\
+{34 o `\n$11=` c=fn v=0}","\
+{35 o `\n$12=` c=fn}{endsm}","\
+\
+{sm style}","\
+{4 xy left/up x=2 y=0}","\
+{6 xy width/height x=127 y=110}","\
+{1 sl font r=0..9 v=2}","\
+{2 o alignement c=al v=1}","\
+{8 co `\nfg color` v=0x64E0E0E0}","\
+{3 b `fg colorslide stepsize (0=off)` v=0}","\
+{12 co `\nbg color`v=0x64000000}{endsm}","\
+\
+{sm threshold}show only if{0xAF o `function` c=fn v=0}{0xAE o c=th v=2}{16 i threshold v=85}{endsm}","\
+\
+{20 ms `\nrefresh cycle time (ms)` range=8..2167 v=217}","\
+{endsm}","\
+\
+\
+{offset=0x244}{sm `Menues, Lists`}","\
+\
+{0 o content c=ct v=2}{sm content}","\
+{36 s sprintf ml=137 v=`%03d %03d %03d %s`}","\
+{24 o `\n$1=` c=fn v=1}","\
+{25 o `\n$2=` c=fn v=5}","\
+{26 o `\n$3=` c=fn v=3}","\
+{27 o `\n$4=` c=fn v=7}","\
+{28 o `\n$5=` c=fn}","\
+{29 o `\n$6=` c=fn}","\
+{30 o `\n$7=` c=fn}","\
+{31 o `\n$8=` c=fn}","\
+{32 o `\n$9=` c=fn}","\
+{33 o `\n$10=` c=fn}","\
+{34 o `\n$11=` c=fn}","\
+{35 o `\n$12=` c=fn}{endsm}","\
+\
+{sm style}{4 xy left/up x=10 y=170}","\
+{6 xy width/height x=112 y=15}","\
+{1 sl font r=0..9 v=6}","\
+{2 o alignement c=al v=2}","\
+{8 co `\nfg color` v=0x5C0000E8}","\
+{3 b `fg colorslide stepsize (0=off)` v=0}","\
+{12 co `\nbg color` v=0x64100000}{endsm}","\
+\
+{sm threshold}show only if{0xAF o `function` c=fn v=0}","\
+{0xAE o c=th v=2}{16 i threshold v=85}{endsm}","\
+\
+{20 ms `\nrefresh cycle time (ms)` range=8..2167 v=160}{endsm}",00
+#pragma disable old_equal_ff
+
+; nopatch standard values:
+0FD9AF2: 36 A0 ; standard cycle time
+0FD9B68: 000600000000841400000064FFFFFF64 0006020000008414FFFFFF6400000064 ; structure like midlet style
+
+; * Overlay Info Mux v1.1 Patch *
+; (c) benj9
+;
+; to prevent crash after shutdown by "reboot" or profile 8, apply this patch to Overlay Info Mux v1.0
+; set also new func lib entry: v17: ram_ShutdownMode(hword)
+
+0FD9B1A: DAFD387801280AD0 D6FD388800280AD1
+
+; * Overlay Info Mux v1.2 Patch *
+; (c) benj9
+;
+; to make function "string12" work correctly
+; set also new func lib entry: v17: ram_ShutdownMode
+
+; apply OverlayInfoMux1, Overlay Info Mux v1.1 Patch and Overlay Info Mux v1.2 Patch
+; to get * Overlay Info Mux v1.2 *
+
+0FD982F: DA DC
+0FD9852: 07 08
+;------------------------- end -------------------------
+

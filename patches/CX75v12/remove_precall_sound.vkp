@@ -1,0 +1,16 @@
+;CX75v12
+;Убрать звук при дозвоне
+;Remove precall sound
+;(c) AlexSid
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 519
+;Details: https://patches.kibab.com/patches/details.php5?id=519
+/*
+Убрать звук при дозвоне.
+
+*/
+04B9A58: A8F04CA0 00000000
+;------------------------- end -------------------------
+

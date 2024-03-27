@@ -1,0 +1,21 @@
+;C75v22
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle
+;(p) NevAtse
+;Version: 3
+;PatchID: 9065
+;Details: https://patches.kibab.com/patches/details.php5?id=9065
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+02C9AA8: 10B5BB49BB4875F0ACFA041CBE49 08B5014B984708BD,0xA04909C0,C046
++04909C0
+#pragma enable old_equal_ff
+00: FF7F2DE910109FE510009FE50120A0E3
+10: 0FE0A0E111FF2FE1FFBFBDE8,0xA07DC93C
+20: 00200BA8
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

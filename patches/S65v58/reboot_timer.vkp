@@ -1,0 +1,18 @@
+;S65v58
+;Перезагрузка вместо таймера
+;Reboot Instead Of Timer
+;(c) ThE TrIFoN
+
+;(p) KiRiK
+;Version: 
+;PatchID: 1325
+;Details: https://patches.kibab.com/patches/details.php5?id=1325
+/*
+Можно выбрать любой другой шорткат
+[EN]
+Choose any appropriate shortcut
+*/
+092E920: 9B9C8DA0 443C26A1
+
+;------------------------- end -------------------------
+

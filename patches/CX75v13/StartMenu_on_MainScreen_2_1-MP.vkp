@@ -1,0 +1,20 @@
+;CX75v13
+;Меню "Пуск" на главном экране
+;StartMenu on MainScreen
+;(c) KreN
+;(r) 1nvisible, benj9
+;(p) -=(Kad)=-
+;Version: 2.1-MP
+;PatchID: 3652
+;Details: https://patches.kibab.com/patches/details.php5?id=3652
+/*
+Необходимо раскомментировать строчку в конце тела патча перед установкой!
+English:
+Uncomment the line at the end of patch before installation!
+*/
+2CC136: 002865D0DCF785FA0028 C046,00498847,0xA0FCC051
+4B1168: 016A32A0 0xA0FCC0E3  ;"ELSE_PUSHTOTALK"
+; UNCOMMENT THE LINE BEHIND PATCH BODY!!!
+; РАСКОММЕНТИРУЙТЕ СТРОКУ ВНИЗУ ТЕЛА ПАТЧА!!!
+;------------------------- end -------------------------
+

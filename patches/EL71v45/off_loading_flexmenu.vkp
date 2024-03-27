@@ -1,0 +1,15 @@
+;EL71v45
+;Отключить загрузку FlexMenu
+;Disconnect loading FlexMenu
+;(c) DDM
+;(p) SkyLinE
+;Version: 
+;PatchID: 8196
+;Details: https://patches.kibab.com/patches/details.php5?id=8196
+/*
+Патч отключает загрузку FlexMenu при старте телефона следовательно нет ошибки Internal Error, но к сожалению пока нет второй явы
+(нужно в ручную запустить FlexMenu из разроботчика(Разроботчик->Java->StartFlexMenu, тогда можно будет юзать 2 явы(папка FlexMenu должна быть переименованна)))
+*/
+0A05F50: 87C9FFFB  C046C046
+;------------------------- end -------------------------
+

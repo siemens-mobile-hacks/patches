@@ -1,0 +1,13 @@
+;E71v45
+;Убрать проигрывание музыки при изменении громкости
+;Disable playing music while changing volume
+;(c) Visad
+;Version: 
+;PatchID: 9175
+;Details: https://patches.kibab.com/patches/details.php5?id=9175
+/*
+
+*/
+063FF82: 59F7D4E9 C046C046
+;------------------------- end -------------------------
+

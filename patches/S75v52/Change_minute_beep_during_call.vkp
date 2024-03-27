@@ -1,0 +1,14 @@
+;S75v52
+;Изменение времени подачи ежеминутного сигнала
+;Change minute beep during call
+;(c) SiNgle
+;(p) ManOfWar
+;Version: 
+;PatchID: 8770
+;Details: https://patches.kibab.com/patches/details.php5?id=8770
+/*
+
+*/
+09ADCAC: 00 0i055 ; 55 сек
+;------------------------- end -------------------------
+

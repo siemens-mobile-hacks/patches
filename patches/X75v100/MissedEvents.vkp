@@ -1,0 +1,23 @@
+;X75v100
+;Упущенные события
+;Missed Events
+;(c) Andrey_ua
+;(r) KreN, Rst7
+;Version: 1.0
+;PatchID: 7301
+;Details: https://patches.kibab.com/patches/details.php5?id=7301
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=MissedEvents.rar
+
+/*
+Эльф, показывающий иконку и количество пропущенных звонков и сообщений.
+Также показывает номер и иконку профиля.
+Обсуждение http://forum.siemens-club.org/viewtopic.php?TopicID=64236
+Картинки положить в Zbin\img\MissedEvents\
+*/
+;Эльф, показывающий иконку и количество пропущенных звонков и сообщений.
+;Также показывает номер и иконку профиля.
+;Обсуждение [http://forum.siemens-club.org/viewtopic.php?TopicID=64236
+;Картинки положить в Zbin\img\MissedEvents\
+
+;------------------------- end -------------------------
+

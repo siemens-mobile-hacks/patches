@@ -1,0 +1,14 @@
+;S75v40
+;Диспатчер главного экрана
+;Mainscreen-dispatcher
+;(c) avkiev
+;(r) KreN
+;Version: 3
+;PatchID: 3980
+;Details: https://patches.kibab.com/patches/details.php5?id=3980
+/*
+
+*/
+02FF044: 00201B92F860391C0861 00488047,0xA0063E01,C046   ; S75v40
+;------------------------- end -------------------------
+

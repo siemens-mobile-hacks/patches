@@ -1,0 +1,13 @@
+;C75v24
+;Открыть диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;Version: 
+;PatchID: 2939
+;Details: https://patches.kibab.com/patches/details.php5?id=2939
+/*
+
+*/
+086CAB0: 02 03
+;------------------------- end -------------------------
+

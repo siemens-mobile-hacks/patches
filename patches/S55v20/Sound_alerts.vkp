@@ -1,0 +1,48 @@
+;S55v20
+;Звуковые напоминания
+;Sound alerts
+;(c) avkiev
+;Version: 5
+;PatchID: 5089
+;Details: https://patches.kibab.com/patches/details.php5?id=5089
+/*
+Звуковые напоминания о пропущенных будильнике, звонках, смс, заметках и полном аккумуляторе
+Если упущено какое-либо событие, то телефон проигрывает один раз
+в N минут соответствующую мелодию. Мелодии для патча описаны здесь:
+http://vi-soft.com.ua/siemens/patches/s55/_ringtones.vkp и в смелтере
+
+Если задана мелодия 00, то она звучать не будет.
+Напоминания не играют во время разговора.
+Напоминания (кроме будильника) не играют при выключенном звуке.
+Напоминания играют не чаще, чем один раз в N минут.
+
+English:Sound alerts after missed alarm, calls, SMS, notes and full battery 
+If you miss some event - mobile plays each N minutes according ringtone.
+Ringtones for patch described here:
+http://vi-soft.com.ua/siemens/patches/s55/_ringtones.vkp
+Ringtone 00 doesn't play.
+Alerts aren't play during call.
+Alerts (except missed alarm) aren't play if sound is off.
+Alerts plays not often, than once per N minutes.
+*/
+38868: F09DF08C DA6110B8
+21B800: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 416C657274733520A92061766B696576
+21B810: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88C088D088E08A1B37C0D7400300F2F6
+21B820: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1601D7400D00F2F7BC04F0C740769D02
+21B830: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 06F73C0006F6050040768D26D7400300
+21B840: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F6FC1601E02CDAC848D7E6FC7C00BB20
+21B850: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAA448B03D19DA6354A7E6FC3600BB18
+21B860: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA6FB6FBE6FC3800BB13DA81DC00E6FC
+21B870: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3B00BB0ED7401000F2F69E3848658D04
+21B880: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E014E6FC3D00BB0498E098909880DB00
+21B890: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D0648402D04FCF6DAA40CAD0DF5CB00
+
+
+;21B836: 05 NN ; Период напоминания - NN минут       | Play alerts each NN minutes
+;21B84C: 7C RR ; Мелодия при пропущенном будильнике  | Ringtone for Missed alarm
+;21B85C: 36 RR ; Мелодия при пропущенном звонке      | Ringtone for Missed call
+;21B866: 38 RR ; Мелодия при пропущенном SMS         | Ringtone for Missed SMS
+;21B870: 3B RR ; Мелодия при пропущенной заметке     | Ringtone for Missed note
+;21B884: 3D RR ; Мелодия при заряженном аккумуляторе | Ringtone for Full Battery
+;------------------------- end -------------------------
+

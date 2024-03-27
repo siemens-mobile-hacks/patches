@@ -1,0 +1,15 @@
+;CX75v13
+;Отключить "Подождите" во "Входящих"
+;Remove Wait before Unified Inbox
+;(c) benj9
+;(r) sempai
+;(p) Nikolas535
+;Version: 
+;PatchID: 9395
+;Details: https://patches.kibab.com/patches/details.php5?id=9395
+/*
+
+*/
+050FA7E: 16F1C8E9 C046C046
+;------------------------- end -------------------------
+

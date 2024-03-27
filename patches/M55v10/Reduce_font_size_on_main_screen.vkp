@@ -1,0 +1,19 @@
+;M55v10
+;Уменьшение размера шрифта даты и времени на главном экране
+;Reduce font size on mainscreen
+;(c) !Freeman!, SiNgle
+;(p) Asterix
+;Version: 
+;PatchID: 1425
+;Details: https://patches.kibab.com/patches/details.php5?id=1425
+/*
+
+*/
+381E40: 06 08
+381E48: 02 08
+381E50: 02 08
+381E58: 06 08
+381E60: 06 08
+381E68: 06 08
+;------------------------- end -------------------------
+

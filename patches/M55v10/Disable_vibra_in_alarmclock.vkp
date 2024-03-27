@@ -1,0 +1,15 @@
+;M55v10
+;Отключить виброзвонок в будильнике
+;Disable vibra in alarm clock
+;(c) Matr!x
+;Version: 2
+;PatchID: 1381
+;Details: https://patches.kibab.com/patches/details.php5?id=1381
+/*
+Если стоит патч "Динамическая вибрация"1379 на будильник ставить Д/С в котором нет вибры
+*/
+35D400: FFFFFFFFFFFFFFFFFFFFFFFFFFFF E0DCDAA21E31E6FC2F00FAA2142B
+4C6A5F: A21E31 5500D4
+
+;------------------------- end -------------------------
+

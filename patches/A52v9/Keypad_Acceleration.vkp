@@ -1,0 +1,13 @@
+;A52v9
+;Ускорение опроса клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 4389
+;Details: https://patches.kibab.com/patches/details.php5?id=4389
+/*
+
+*/
+2587CA: 56 32
+;------------------------- end -------------------------
+

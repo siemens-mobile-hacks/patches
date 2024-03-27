@@ -1,0 +1,14 @@
+;S75v26
+;Убрать сообщение "Все сигналы вкл"
+;Remove "all signals on/off" message
+;(c) SiNgle
+;(p) StrikerVoo
+;Version: 
+;PatchID: 2452
+;Details: https://patches.kibab.com/patches/details.php5?id=2452
+/*
+
+*/
+0BB9CFA: D0F188EC C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,30 @@
+;CX75v13
+;Черный или белый список
+;Black or white list
+;(c) SiNgle
+;(p) ТАРАКАН
+;Version: 1.0
+;PatchID: 807
+;Details: https://patches.kibab.com/patches/details.php5?id=807
+/*
+RUS: Чёрной становится выбранная группа в фильтре (Меню-9-6-4)
+ЧЕРНЫЙ СПИСОК - при звонке кого то из этой группы телефон кладет трубку
+БЕЛЫЙ СПИСОК - при звонке кого то НЕ из этой группы телефон кладет трубку
+
+ENG:   Black there is a chosen group in the filter (Menu--9-6-4) the 
+BLACK LIST - at a call of whom that of this group phone puts a tube the 
+WHITE LIST - at a call of whom NOT from this group phone puts that
+*/
+05092FC: 06D1 0028
+0509300: 04D1 0028
+050974E: B0420ED1 98F7D8E8
+#pragma enable old_equal_ff
+04A1900: 00402DE9060050E10500001AFF3F2DE9
+04A1910: 0FE0A0E10CF09FE5FF3FBDE80040BDE8
+04A1920: 04F09FE50080BDE8353083A0719750A0
+#pragma disable old_equal_ff
+0AE454B: D5 E0
+;04A190B: 1A 0A ;(White list)
+;02A8F88: FFF738FE 00280028 ;Дополнение к Black_List:убрать иконку фильтра
+;------------------------- end -------------------------
+

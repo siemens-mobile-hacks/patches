@@ -1,0 +1,15 @@
+;CX70v50
+;Отключить логгинг MMI
+;Disable MMI logging
+;(c) SiNgle
+;(r) 1nvisible
+;Version: 
+;PatchID: 2365
+;Details: https://patches.kibab.com/patches/details.php5?id=2365
+/*
+Ускоряет работу телефона
+English: Speeds up phone operation
+*/
+08BCBDD: B5 47
+;------------------------- end -------------------------
+

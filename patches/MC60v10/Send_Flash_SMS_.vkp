@@ -1,0 +1,23 @@
+;MC60v10
+;Отправка Flash SMS
+;Directly Send Flash SMS
+;(c) Crack
+;(p) Kanibaals
+;Version: 
+;PatchID: 3334
+;Details: https://patches.kibab.com/patches/details.php5?id=3334
+/*
+Начните текст сообщения с пробела Формат текста -> Размер шрифта -> Средний шрифт, иначе будет обычное SMS
+
+English:Not working yet, sends standart SMS not flash :(
+*/
+0x9654F2:E6FCB203 DA750017 
+0x551700:ffffffffffffffffffffffffffffffff 88808890EC00E6007700F3F85D083D0A
+0x551710:ffffffffffffffffffffffffffffffff F3F26B0867F25F003D25E7F2F000F7F2
+0x551720:ffffffffffffffffffffffffffffffff 5D080D205DF808003D1DF3F26B08F3F3
+0x551730:ffffffffffffffffffffffffffffffff 6C0846F100203D16E7F21800F7F25D08
+0x551740:ffffffffffffffffffffffffffffffff F3F269082D0F2922F7F26908C02F88F0
+0x551750:ffffffffffffffffffffffffffffffff E6FC6B08E6FD7700E6FE6D08F0FDDABF
+0x551760:ffffffffffffffffffffffffffffffff 12A90802FC0098909880E6FC1809DB00 
+;------------------------- end -------------------------
+

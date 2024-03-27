@@ -1,0 +1,16 @@
+;S75v47
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c)  SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 5557
+;Details: https://patches.kibab.com/patches/details.php5?id=5557
+/*
+
+*/
+
+09037c2: 011C 2021
+
+;------------------------- end -------------------------
+

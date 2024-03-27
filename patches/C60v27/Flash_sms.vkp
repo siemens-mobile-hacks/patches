@@ -1,0 +1,17 @@
+;C60v27
+;Просмотр_Flash-SMS_на_весь_экран
+;Flash SMS
+;(c) Roxxy, Lalo, § KiRiK
+;(p) Christ
+;Version: 
+;PatchID: 2049
+;Details: https://patches.kibab.com/patches/details.php5?id=2049
+/*
+сообщение появляется сразу на весь экран, а не бегущей строкой.
+
+*/
+2CA97C: 3D09 0D09
+2CA990: E00C E01C
+
+;------------------------- end -------------------------
+

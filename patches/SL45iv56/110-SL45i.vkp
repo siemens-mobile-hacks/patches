@@ -1,0 +1,19 @@
+;SL45iv56
+;Смена сигнала о дозвоне
+;Change Call Active Sound
+;(c) ACiD [mrp]
+;Version: 
+;PatchID: 1703
+;Details: https://patches.kibab.com/patches/details.php5?id=1703
+/*
+Патч №110 с http://patch.oslik.ru/SL45_RU
+*/
+;Выключение сигнала: 
+23DB1E: DAA40CAD CC00CC00 
+
+;Замена на другой: 
+;02E780: E6FC1300 E6FC??00 
+;?? -> Адрес сигнала
+;(пробные адреса: http://oslik.ru/phpBB2/viewtopic.php?t=797)
+;------------------------- end -------------------------
+

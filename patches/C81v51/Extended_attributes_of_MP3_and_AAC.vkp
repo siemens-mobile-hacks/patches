@@ -1,0 +1,15 @@
+;C81v51
+;Расширенные свойства MP3 и AAC файлов
+;Extended attributes of MP3 and AAC files
+;(c) @ndres/PRM
+;(p) Виктор89
+;Version: 2.0
+;PatchID: 8808
+;Details: https://patches.kibab.com/patches/details.php5?id=8808
+/*
+Патч нужен для корректной работы функции GetFileProp.
+*/
+097C55C: DEA9EDFA 0010A013
+097C57B: E3 03
+;------------------------- end -------------------------
+

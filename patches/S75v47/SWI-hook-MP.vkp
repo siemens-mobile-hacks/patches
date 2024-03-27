@@ -1,0 +1,18 @@
+;S75v47
+;SWI-хук
+;SWI-hook
+;(c) avkiev, Rst7/CBSIE, BoBa
+;(r) KonstanT
+;(p) ferro
+;Version: 
+;PatchID: 5564
+;Details: https://patches.kibab.com/patches/details.php5?id=5564
+/*
+;Необходим для вызова библиотечных функций из перемещаемых патчей
+;It needs for calling Library-function from dis-patches
+*/
+13A4870: 2C0000EA 80F19FE5          ;/ S75v47
+13A49f7: A100FFFFFF 00,0xA0078001   ;\ S75v47
+
+;------------------------- end -------------------------
+

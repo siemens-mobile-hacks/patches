@@ -1,0 +1,14 @@
+;S65v58
+;Моментальный запуск скринсейвера после блокировки клавиатуры 
+;Fast Screensaver Appearance after KeyBoard Lock 
+;(c) Evgr, funMarkus
+;(p) Виктор89
+;Version: 
+;PatchID: 10274
+;Details: https://patches.kibab.com/patches/details.php5?id=10274
+/*
+
+*/
+16A13FA: 012014F046E8041CF4F7BCFE 0120,01F052FF,0120,01F03AFF
+;------------------------- end -------------------------
+

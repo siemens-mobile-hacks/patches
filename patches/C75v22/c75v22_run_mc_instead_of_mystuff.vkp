@@ -1,0 +1,23 @@
+;C75v22
+;Запуск MC из Native Menu вместо «Мои файлов»
+;Run MC from Native Menu instead of «My Stuff»
+;(c) Kibab, Zhek@, sempai
+;(r) RainMaker, den11111, Дэн
+;(p) NevAtse
+;Version: 
+;PatchID: 9957
+;Details: https://patches.kibab.com/patches/details.php5?id=9957
+/*
+
+*/
+0499190: 191C2CA0 41A10CA1
++10CA100 ;C75
+#pragma enable old_equal_ff
+040: FFB58020C7DF2501061C05A18022C7DF
+050: 6C010021301C94DF301CC7DF2901FFBD
+060: "0:\\ZBin\\MC\\mc.elf",00               ; Запуск mc.elf = A10CA141
+#pragma disable old_equal_ff
++0
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v32
+;Включить Выбор диапазона
+;Enable Band Selection
+;(c) Bennie
+;(p) Bueffel
+;Version: 
+;PatchID: 3660
+;Details: https://patches.kibab.com/patches/details.php5?id=3660
+/*
+Изменение производится через Settings->Network->Band Selection, либо можно повесить на горячую клавишу.
+*/
+042E8E8: 0502 F901
+;------------------------- end -------------------------
+

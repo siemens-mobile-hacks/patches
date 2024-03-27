@@ -1,0 +1,16 @@
+;S65v58
+;Из любого места жмем ### и попадаем в главное меню
+;Goto mainmenu from anywhere by pressing ###
+;(c) SiNgle, arsh0r
+;(p) KiRiK
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=3983
+;PatchID: 916
+;Details: https://patches.kibab.com/patches/details.php5?id=916
+/*
+Должен быть включен DevMenu и в пункте LOGAL\options - нажать Enable ### (Goto DevMenu\LOGAL\options and press Enable ###)
+*/
+0B57CA0: 5AF0BDFF 87F5CBFB ; native menu by arsh0r
+;0B57CA0: 5AF0BDFF 82F596FC ; main menu by SiNgle
+;------------------------- end -------------------------
+

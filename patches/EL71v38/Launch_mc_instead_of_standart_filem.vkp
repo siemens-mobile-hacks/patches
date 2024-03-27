@@ -1,0 +1,25 @@
+;EL71v38
+;Запуск mc вместо стандартного файл-менеджера (Мои файлы)
+;Launch mc instead of standart filemanager (My stuff)
+;(c) Kibab
+;(p) 1allen
+;Version: 1
+;PatchID: 7042
+;Details: https://patches.kibab.com/patches/details.php5?id=7042
+/*
+MC.elf нужно положить в: 0:\ZBin\mc\
+
+
+// при портировании изменил путь на другой, при желании и наличии флешки можно руками исправить 0 на 4 :)
+*/
+83FFCC: 37E66EA0 0xA0067531
++0067530 
+#pragma enable old_equal_ff
+00: FFB58020C7DF2501061C06A18022C7DF
+10: 6C0100220021301C94DF301CC7DF2901
+20: FFBD
+24: "0:\\ZBin\\mc\\mc.elf",00
+#pragma disable old_equal_ff
++0
+;------------------------- end -------------------------
+

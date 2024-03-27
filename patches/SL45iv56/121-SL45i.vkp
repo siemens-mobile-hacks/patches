@@ -1,0 +1,28 @@
+;SL45iv56
+;CMB. Ежеминутный сигнал
+;CMB. Call Minutes Beep Modification
+;(c) RizaPN, avkiev
+;(p) rc-flitze
+;Version: 2
+;PatchID: 1715
+;Details: https://patches.kibab.com/patches/details.php5?id=1715
+/*
+Теперь подается сигнал за 10 сек до окончания минуты и каждые 30.
+
+
+Release: April 14, 2003 
+Update: March 11, 2004 (by rc-flitzer)
+
+Патч №121 с http://patch.oslik.ru/SL45_RU
+*/
+;Исправляет задержку с 60 до 30 секунд: 
+001F18: 3C 1E ; 1E = 30 decimal 
+
+001F20: F2F40CFE DAC710D1 
+27D110: FFFFFFFFFFFF F2F40CFE46F4 
+
+;Изменение секунды подачи сигнала, здесь 50 сек: 
+27D116: FF 32 ; 32 = 50 decimal 
+27D118: FFFFFF 00DB00 
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;SL65v53
+;Убрать писк дисконекта GPRS
+;Remove GPRS sound
+;(c) AlexeyZ
+;(p) НекрономикоН
+;Version: 
+;PatchID: 6283
+;Details: https://patches.kibab.com/patches/details.php5?id=6283
+/*
+
+*/
+13B8918: 5352544600000400C409D200 000000000000000000000000
+;------------------------- end -------------------------
+

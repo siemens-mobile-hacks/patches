@@ -1,0 +1,18 @@
+;CX75v13
+;Задержка времени гашения подсветки
+;Illumination fade time
+;(c) BuG
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 780
+;Details: https://patches.kibab.com/patches/details.php5?id=780
+/*
+RUS: Замедляет время, через которое происходит автоматическое гашение подсветки экрана. Иногда бывает полезно.
+
+ENG: Slows down time through which there is an automatic clearing illumination of the screen. Sometimes happens it is useful.
+*/
+0859F98: B80B E803 ; 1 sec
+
+;------------------------- end -------------------------
+

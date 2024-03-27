@@ -1,0 +1,15 @@
+;CX70v56
+;Изменение надписи "Service Mode" в Сервис моде  
+;Change inscription "Service Mode" in Service to mode   
+;(c) SouthNetAlexx
+;(p) Wazk
+;Version: 
+;PatchID: 9694
+;Details: https://patches.kibab.com/patches/details.php5?id=9694
+/*
+
+*/
+1E9EB5: 53657276696365206D6F6465 000000000000000000000000
+1E9EB5: 000000000000000000000000 "MOD by WAZK"; 12 символов, не больше!!!
+;------------------------- end -------------------------
+

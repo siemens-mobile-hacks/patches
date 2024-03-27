@@ -1,0 +1,18 @@
+;A50v12
+;Сигнал во время разговора
+;Beep while talk
+;(c) RizaPN, Lalo, vova_v_g, WolF
+;Version: 
+;PatchID: 2700
+;Details: https://patches.kibab.com/patches/details.php5?id=2700
+/*
+beep каждые YY и XX+YY секунд (где XX > YY)
+*/
+011BE2: DACB066F DA87F018
+0718F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46F404002D04DACB066F46F43700DB00
+;Настройка:
+;011BE0: 3C00 XXXX ; Период (сейчас 003С = 60 сек.)
+;0718FC: 3700 YYYY ; Первый beep (сейчас 0037 = 55 сек.)
+;0718F2: 0400 TTTT ; сигнал для нетарифицируемого интервала (0004h = 4 сек.)
+;------------------------- end -------------------------
+

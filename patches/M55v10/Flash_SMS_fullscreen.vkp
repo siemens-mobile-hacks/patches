@@ -1,0 +1,16 @@
+;M55v10
+;Просмотр Flash-SMS на весь экран
+;Full screen Flash-SMS view
+;(c) Roxxy, Lalo
+;(p) KiRiK
+;Version: 
+;PatchID: 1412
+;Details: https://patches.kibab.com/patches/details.php5?id=1412
+/*
+
+*/
+0EC320: 3D 2D
+0EC337: 0C 1C
+
+;------------------------- end -------------------------
+

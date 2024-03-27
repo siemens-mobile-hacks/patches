@@ -1,0 +1,17 @@
+;CX70v56
+;Убрать галку в меню
+;To remove a daw in the menu
+;(c) SPC 3.0
+;Version: 
+;PatchID: 6107
+;Details: https://patches.kibab.com/patches/details.php5?id=6107
+/*
+Убираем дурацкую галку. Пишется на место старых данных.
+*/
+; ##### Picture 351 #####
+00DA0B1C: 0A0E0100E05AE3A0 01010800E05AE3A0
+
+00E35AE0: 003F003F007F00FF01FF83FFC7BFEF3F 00E00F0F0F0F0F0F0F0F0F0F0F0F0F0F
+00E35AF0: FE3F7C3F383F103F003F003F 0F0F0F0F0F0F0F0F0F0F0F0F
+;------------------------- end -------------------------
+

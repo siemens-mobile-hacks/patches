@@ -1,0 +1,14 @@
+;M81v51
+;Изменение шрифта заголовков
+;Change Headers Font
+;(c) Evgr
+;(p) SimaFish
+;Version: 
+;PatchID: 9358
+;Details: https://patches.kibab.com/patches/details.php5?id=9358
+/*
+
+*/
+0C22F54: 05 0C ;мелкий жирный
+;------------------------- end -------------------------
+

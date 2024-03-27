@@ -1,0 +1,52 @@
+;S75v42
+;Изменить позицию и шрифт имени оператора в заставке
+;Change_pos_and_font_prov_screensave
+;(c) arsh0r
+;(r) SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 4991
+;Details: https://patches.kibab.com/patches/details.php5?id=4991
+/*
+
+*/
+;Analog Clock
+;0438e30: 00 xx ; x-start
+;0438e32: A1 yy ; y-start
+;0438e34: 84 xx ; x-stop
+;0438e36: AF yy ; y-stop
+;0438e38: 05 03 ; font size
+
+; Digital Clock
+;0438e4c: 00 xx ; x-start
+0438e4e: A1 70 ;yy ; Y-start
+;0438e50: 84 xx ;x-stop
+;0438e52: AF yy ; y-stop
+0438e54: 05 01 ;font size 03-меньше курсив, курсив без рус
+                         ;06-тонкий курсив,
+                         ;00-норм,
+                         ;01-крупнее ниже,
+                         ;07-меньше,
+                         ;02-рек,
+                         ;04-тонкий мал,
+                         ;05-по умолчанию,
+                         ;08-очень мал,
+                         ;09-очень мал,
+                         ;0а-совсем мал,
+                         ;0b-мал,
+                         ;0с-мал толст,
+                         ;0d-мал курсив, 
+                         ;0e-мал толст курсив,
+                         ;0f-узкий вытянутый,
+                         ;10-мал цифры
+                         ;11-нет
+
+; Picture
+;0438e14: 00 xx ; x-start
+;0438e16: A1 yy ; y-start
+;0438e18: 84 xx ; x-stop
+;0438e1A: AF yy ; y-stop
+;0438e1C: 05 03 ; font size
+
+;------------------------- end -------------------------
+

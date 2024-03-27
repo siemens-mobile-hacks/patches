@@ -1,0 +1,14 @@
+;M81v51
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found"
+;(c) avkiev
+;(p) Cypok
+;Version: 
+;PatchID: 6716
+;Details: https://patches.kibab.com/patches/details.php5?id=6716
+/*
+
+*/
+106B354: 5C03 FFFF
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;M65v50
+;Изменить позицию анимации звонка
+;Change Calling Animation Pos
+;(c) vmaxy202
+;(p) benj9
+;Version: 
+;PatchID: 3086
+;Details: https://patches.kibab.com/patches/details.php5?id=3086
+/*
+
+*/
+11741BC: 4118 3221
+117432E: 4118 3221
+;------------------------- end -------------------------
+

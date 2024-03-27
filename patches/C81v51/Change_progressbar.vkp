@@ -1,0 +1,29 @@
+;C81v51
+;Изменение прогрессбара в медиаплеере
+;Change progressbar in mediaplayer
+;(c) SiNgle
+;(p) dimonp25
+;Version: 
+;PatchID: 7889
+;Details: https://patches.kibab.com/patches/details.php5?id=7889
+/*
+
+*/
+;c81v51
+;* Изменение прогрессбара в медиаплеере
+;* Change progressbar in mediaplayer
+;(c) SiNgle
+;(p) dimonp25
+
+;Формат: x1,y1,x2,y2
+;Format: x1,y1,x2,y2
+
+08E2A14: 30008B0053009500 1200960072009A00 ; background
+08E2A1C: 30008B0053009000 1200960072009A00 ; contour
+08E2A24: 3000910053009600 1200960072009A00 ; stripe
+
+;locale=Russian_Russia.1251
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

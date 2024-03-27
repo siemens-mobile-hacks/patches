@@ -1,0 +1,16 @@
+;SL75v47
+;Вибра в момент соединения
+;Vibra at connect
+;(c) SiNgle
+;(r) avkiev
+;(p) ferro
+;Version: 
+;PatchID: 6112
+;Details: https://patches.kibab.com/patches/details.php5?id=6112
+/*
+(!) Master
+*/
+0DA9c84: 2A1C2B1C09211730 00498847,0xA0063801   ; SL75v47
+
+;------------------------- end -------------------------
+

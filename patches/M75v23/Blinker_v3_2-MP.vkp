@@ -1,0 +1,17 @@
+;M75v23
+;Blinker
+;Blinker
+;(c) benj9
+;(r) 1nvisible, avkiev, BuG, Chaos
+;Version: 3.2-MP
+;PatchID: 2858
+;Details: https://patches.kibab.com/patches/details.php5?id=2858
+/*
+
+*/
+081B898: 0070A0E1 DC031FEB
+#pragma enable old_equal_ff
+0FDCCD0: 40000000,300200A8,90B44CA8,BCFB4CA8 ; -RBC
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

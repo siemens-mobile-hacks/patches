@@ -1,0 +1,14 @@
+;M75v12
+;Задержка гашения подсветки
+;Illumination fade time
+;(c) BuG
+;Version: 
+;PatchID: 5367
+;Details: https://patches.kibab.com/patches/details.php5?id=5367
+/*
+
+*/
+0858100: B80B E803 ; 1 sec
+
+;------------------------- end -------------------------
+

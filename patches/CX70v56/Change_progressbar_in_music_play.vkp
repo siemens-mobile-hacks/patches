@@ -1,0 +1,14 @@
+;CX70v56
+;Изменение прогрессбара при проигрывании музыки
+;Change progressbar in music play
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 614
+;Details: https://patches.kibab.com/patches/details.php5?id=614
+/*
+Изменение прогрессбара при проигрывании музыки.
+*/
+0A573A0: 1000660073 0500700080
+;------------------------- end -------------------------
+

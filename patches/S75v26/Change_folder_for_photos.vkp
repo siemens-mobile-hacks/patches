@@ -1,0 +1,13 @@
+;S75v26
+;Изменить папку для фотографий
+;Change folder for photos
+;(c) avkiev
+;Version: 
+;PatchID: 2842
+;Details: https://patches.kibab.com/patches/details.php5?id=2842
+/*
+
+*/
+0E26896: 0B00,'0:\\Pictures' 0B00,'0:\\_MyPhoto'
+;------------------------- end -------------------------
+

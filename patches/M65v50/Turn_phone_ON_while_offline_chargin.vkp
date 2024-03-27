@@ -1,0 +1,16 @@
+;M65v50
+;Включить телефон при оффлайн зарядке
+;Turn phone ON while offline charging
+;(c) Tick
+;(r) 1nvisivle
+;(p) Mifodiy
+;Version: 1.0
+;PatchID: 5991
+;Details: https://patches.kibab.com/patches/details.php5?id=5991
+/*
+(!) SWI (f. 93)
+
+*/
+08BDE5E: 0120 93DF
+;------------------------- end -------------------------
+

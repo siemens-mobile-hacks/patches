@@ -1,0 +1,15 @@
+;A65v17
+;Запретить набор SOS при заблокированной клавиатуре
+;To forbid collection SOS with the blocked keyboard
+;(c) Acid[mpr], Sinclair
+;(p) Joenka
+;Version: 
+;PatchID: 3872
+;Details: https://patches.kibab.com/patches/details.php5?id=3872
+/*
+
+*/
+
+21D160: FA41 DB00
+;------------------------- end -------------------------
+

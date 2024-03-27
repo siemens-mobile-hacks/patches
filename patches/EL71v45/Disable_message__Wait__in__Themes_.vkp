@@ -1,0 +1,14 @@
+;EL71v45
+;Убрать сообщение "Подождите" в "Main Menu"=>"Settings"=>"Themes"
+;Disable message "Wait" in "Main Menu"=>"Settings"=>"Themes"
+;(c) Evgr
+;(p) funMarkus
+;Version: 
+;PatchID: 7970
+;Details: https://patches.kibab.com/patches/details.php5?id=7970
+/*
+
+*/
+07B9D27: 18 E8
+;------------------------- end -------------------------
+

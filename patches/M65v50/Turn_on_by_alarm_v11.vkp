@@ -1,0 +1,26 @@
+;M65v50
+;Включение телефона по будильнику
+;Turn on by Alarm clock
+;(c) SiNgle
+;(r) (I) ThE TrIFoN
+;(p) Mifodiy
+;Version: 1.1
+;PatchID: 2226
+;Details: https://patches.kibab.com/patches/details.php5?id=2226
+/*
+При срабатывании будильника телефон включается и коротко вибрирует.
+v1.1: исправлен баг: перезагрузка уже включенного телефона
+English:When alarm clock triggers phone switches on and vibrates shortly.
+v1.1: bug fixed: reboot of switched on phone
+*/
+0B6D44e: DBF5 C046
+0B6D450: 04EF0020  94F456E9
+
+#pragma enable old_equal_ff
+0801700: 0FE0A0E124F09FE524009FE5B600D0E1
+0801710: 200050E3030000AA1200A0E30010A0E3
+0801720: 0FE0A0E10CF09FE50000A0E308F09FE5
+0801730: 589294a0,a0b067a8,bc4323a1,55d4b6a0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

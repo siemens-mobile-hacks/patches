@@ -1,0 +1,72 @@
+;CX75v13
+;Индикатор пропущенных событий
+;Missed Events Indicator
+;(c) empeka
+;(r) BuG, KiRiK
+;(p) SMeeTBB, Buffel
+;Version: 
+;PatchID: 1790
+;Details: https://patches.kibab.com/patches/details.php5?id=1790
+/*
+
+*/
+02A91C4: 3858A021 56F71CFB
+
++01FF800
+#pragma enable old_equal_ff
+00: FFB52D4F2B4E2D4D0024274800780028
+10: 07D000F02AF8B0472A4A00F03CF8B047
+20: 013420480078002807D000F01EF8B047
+30: 234A00F030F8B04701341C4800780028
+40: 07D000F012F8B0471F4A00F024F8B047
+50: 01341E4A16480078F32802D100F01BF8
+60: B047FFBC3858722100BD00B5011C0A20
+70: 1CF0D8E8002808D00EB44219A300DB19
+80: 187806385978B0470EBC4A19A300DB19
+90: 1878597800BD00B5A300DB199878D978
+A0: 00BDC046,6C1741A8,781741A8,741741A8 ; RamMissedSMS, RamMissedCalls, RamMissedTasks
+B0: 246652A8,3B932AA0,D0F81FA0,FFFF0000 ; RamMissedAlarm, DrawImg, position array
+C0: FFFF0000FFFF0000FFFF0000FFFF0000
+
+### Image numbers ###
+
+BC: 0i01146 ; digit pic#
+C0: 0i01215 ; missed msg icon#
+C4: 0i01206 ; missed call icon#
+C8: 0i01220 ; missed task icon#
+CC: 0i01204 ; missed alarm icon#
+
+### Image positions ###
+
+; event 1
+D0: 0i001 ; digit X
+D1: 0i118 ; digit Y
+D2: 0i008 ; icon X
+D3: 0i115 ; icon Y
+; event 2
+D4: 0i023 ; digit X
+D5: 0i118 ; digit Y
+D6: 0i030 ; icon X
+D7: 0i115 ; icon Y
+; event 3
+D8: 0i045 ; digit X
+D9: 0i118 ; digit Y
+DA: 0i052 ; icon X
+DB: 0i115 ; icon Y
+; event 4
+DC: 0i000 ; digit X - not used
+DD: 0i000 ; digit Y - not used
+DE: 0i067 ; icon X
+DF: 0i115 ; icon Y
+#pragma disable old_equal_ff
+
+### digit width ###
+;82: 06 05
+### do not include calls from hidden IDs ###
+;A8: 60F43F 042268
++0
+
+;02A91A2:00F0B7F8 C046C046 ; remove background of standard missed events icons (the date will be visible)
+;02A91C8:00F0B7F8 C046C046 ; remove standard icons completely (including missed alarm etc.)
+;------------------------- end -------------------------
+

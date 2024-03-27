@@ -1,0 +1,23 @@
+;EL71v45
+;Один отчёт о доставке СМС для составного СМС 
+;Single SMS status report for concatenated SMS 
+;(c) Evgr
+;Version: 
+;PatchID: 10109
+;Details: https://patches.kibab.com/patches/details.php5?id=10109
+/*
+RU: Запрашивается отчёт о доставке СМС только для последнего сегмента составного СМС 
+
+EN: SMS status report is requested only for last segment of concatenated SMS
+*/
+0E2EBE6: 20339974 CDF144ED
+
+#pragma enable old_equal_ff
+0FFC670: 00C09FE51CFF2FE1,0xA13D1BD1
+13D1BD0: 20339974D97B00290BD03224195D0029
+13D1BE0: 07D10334195D0134185D884201D00021
+13D1BF0: 19747047
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

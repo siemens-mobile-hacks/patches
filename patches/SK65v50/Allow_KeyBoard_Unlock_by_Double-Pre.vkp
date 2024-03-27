@@ -1,0 +1,15 @@
+;SK65v50
+;Разрешить Разблокировку Клавиатуры Двойным Нажатием #
+;Allow KeyBoard Unlock by Double-Press of #
+;(c) 1nvisible
+;Version: 
+;PatchID: 4172
+;Details: https://patches.kibab.com/patches/details.php5?id=4172
+/*
+Долгое нажатие также работает.
+English:
+Long-Press also works.
+*/
+032F642: 21D1 C046
+;------------------------- end -------------------------
+

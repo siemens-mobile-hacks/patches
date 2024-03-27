@@ -1,0 +1,37 @@
+;SL45iv56
+;EXR. Правый софт в CardExplorer'е
+;EXR. Explorer Rightsoftkey
+;(c) RizaPN
+;Version: 2
+;PatchID: 2095
+;Details: https://patches.kibab.com/patches/details.php5?id=2095
+/*
+Модифицирует правый софт в Card Explorer с "выделить" на "открыть", выделить переносится на клавишу "#" 
+
+v2->Выделить работает на клавише"*"
+
+
+English: Modify RightSoftKey function in the Card Explorer, from Mark/Unmark 
+to become "Open". Mark/Unmark is handled by '#' button. 
+
+v2->[*] button has Mark/Unmark All function 
+
+
+Created: July 16, 2004 
+Modified: Apr 17, 2005 (v2)
+*/
+0x189F98: 8B013900 E8012D00 
+0x189F9E: 8401 E801 
+
+0x3863C4: EA207869 EA203664 
+0x3863E4: EA204666 EA20E464 
+0x3863EC: EA204666 EA207869 
+0x386482: E6F72F00 EA009664 
+0x386496: E6F73900DC41B876A8C0 DC41A87646F72F002DF3 
+0x3864A0: D4D00200DAE7AE61F064F075F0C6F0D7 889088808860DAD89873EA00CE69DC47 
+0x3864B0: F0E8F0F906FEF001DAD8 F426010057F2FF00DB00 
+0x3869A2: E7F2FF00 DAD8AE64 
+0x38653C: 47FCFF00 57FCFF00 
+0x386540: 3D03 0D04
+;------------------------- end -------------------------
+

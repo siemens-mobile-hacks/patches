@@ -1,0 +1,21 @@
+;E71v45
+;Идем в NativeMenu по Нажатию ###
+;Go To NativeMenu by Pressing ###
+;(c) SiNgle
+;(p) den11111
+;Version: 
+;PatchID: 9662
+;Details: https://patches.kibab.com/patches/details.php5?id=9662
+/*
+Для того чтобы активировать данную функцию, нужно поставить в Developer Menu галочку в
+под меню "LOGAL/опции->Enable ###". Там же можно и отключить.
+давим ### и мы в native-меню. Из явы в native-меню не выходит. Пользуем XTask.
+
+To enable this function, you should select "Enable ###" in Options menu 
+(Developer->LOGAL, then Options, Enable ###").
+we press ### and we are in the native-menu, in java it is not work.
+
+*/
+08CC662: 69F0B8F8 6EF50AFD
+;------------------------- end -------------------------
+

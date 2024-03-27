@@ -1,0 +1,14 @@
+;M81v47
+;Открыть заблокированные блоки EEPROM
+;Open Closed EEPROM
+;(c) Skylord
+;(p) Barracuda
+;Version: 
+;PatchID: 9048
+;Details: https://patches.kibab.com/patches/details.php5?id=9048
+/*
+
+*/
+0261EEC: 00 01
+;------------------------- end -------------------------
+

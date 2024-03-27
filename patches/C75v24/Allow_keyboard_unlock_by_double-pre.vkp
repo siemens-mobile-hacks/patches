@@ -1,0 +1,19 @@
+;C75v24
+;Разрешить разблокировку клавиатуры двойным нажатием #
+;Allow keyboard unlock by double-press of #
+;(c) Vedan06
+;Version: 
+;PatchID: 6942
+;Details: https://patches.kibab.com/patches/details.php5?id=6942
+/*
+
+*/
+;Разрешить разблокировку клавиатуры двойным нажатием #
+;Allow keyboard unlock by double-press of #
+
+*/
+33ECE8: 36D1 C046
+
+;------------------------- end -------------------------
+;------------------------- end -------------------------
+

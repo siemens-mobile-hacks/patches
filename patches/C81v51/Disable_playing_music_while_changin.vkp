@@ -1,0 +1,14 @@
+;C81v51
+;Убрать проигрывание музыки при изменении громкости
+;Disable playing music while changing volume
+;(c) Visad
+;(p) dimonp25
+;Version: 
+;PatchID: 8935
+;Details: https://patches.kibab.com/patches/details.php5?id=8935
+/*
+
+*/
+02D49DA: A5F7F2EE C046C046
+;------------------------- end -------------------------
+

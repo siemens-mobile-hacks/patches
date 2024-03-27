@@ -1,0 +1,14 @@
+;M81v51
+;Не спрашивать подтверждения включения по будильнику
+;Power on by Alarm clock without confirmation
+;(c) ThE TrIFoN
+;(p) Cypok
+;Version: 
+;PatchID: 6713
+;Details: https://patches.kibab.com/patches/details.php5?id=6713
+/*
+
+*/
+0304D48: C2A119FB B4BBFCEB
+;------------------------- end -------------------------
+

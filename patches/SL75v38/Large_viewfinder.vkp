@@ -1,0 +1,19 @@
+;SL75v38
+;Большой видоискатель
+;Large viewfinder
+;(c) SiNgle
+;(r) StrikerVoo
+;(p) Orastar
+;Version: 
+;PatchID: 5011
+;Details: https://patches.kibab.com/patches/details.php5?id=5011
+/*
+
+*/
+0204DA8: 7C809DE5 9C80A0E3
+0338992: 132D42D0 C046C046
+05EDB76: 9E5F122114229A5E595E 9C26122114229A5E0021
+05EDB92: C2891692038AC91801391591408A 00221692038ACB18013B15939C20
+05EDFB2: C089 1620
+;------------------------- end -------------------------
+

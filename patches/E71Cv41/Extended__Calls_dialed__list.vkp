@@ -1,0 +1,37 @@
+;E71Cv41
+;Расширенные списки вызовов
+;Extended "Calls dialed" list
+;(c) BoBa
+;(r) (i)avkiev
+;(p) loquat
+;Version: 3MP
+;PatchID: 9798
+;Details: https://patches.kibab.com/patches/details.php5?id=9798
+/*
+
+*/
+;Green button -> "Calls dialed"
+;Back         -> "Calls received"
+;Back         -> "Calls missed"
+;Back         -> "History"
+;Back         -> Ready.
+
+081C9E4: 0xA0AB3B41 0xA006FE01
+
+#pragma enable old_equal_ff
+006FE00: 00B50A48C4DFC04600280AD0061C0124
+006FE10: 0021305DFF2800D080DF641C052CF7D1
+006FE20: 00BD0021022080DF00BD,0000,0x00B0BA01
+
+006FE30: 0xB1C2D3E4,0x00B0BA01,0000000000000000,"\
+{p=ExCallList ver=3 id=B0Ba01 cp=BoBa}\
+{c cls Dialed=2 Received=1 Missed=0 History=3 off=0xff}\
+{1 o List1 c=cls v=3}\
+{2 o List2 c=cls v=2}\
+{3 o List3 c=cls v=1}\
+{4 o List4 c=cls v=0}\
+",00
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

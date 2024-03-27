@@ -1,0 +1,18 @@
+;M75v5
+;Убрать фон из под иконок - наилучшее отображение фотки
+;Delete background of icons - best photo image
+;(c) *S*h*a*D*o*W*
+;(r) SiNgle, BuG
+;(p) Gurza
+;Version: 
+;PatchID: 546
+;Details: https://patches.kibab.com/patches/details.php5?id=546
+/*
+Дополнение к патчу 545 - Фото на весь экран при входящем звонке.
+*/
+02A8697: F03AFB 280028 ;Net
+02A8A5D: F057F9 280028 ;Iconbar
+02A8B49: F0E1F8 280028 ;Battery
+02A85E1: F095FB 280028 ;Charge Indicator (Switched-Off Mode)
+;------------------------- end -------------------------
+

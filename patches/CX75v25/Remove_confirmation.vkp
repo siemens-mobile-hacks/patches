@@ -1,0 +1,15 @@
+;CX75v25
+;Убрать подтверждения при включении громкой связи
+;Remove confirmation at inclusion of loud connection
+;(c) ThE TrIFoN
+;(r) SiNgle
+;(p) johnshadow
+;Version: 
+;PatchID: 7879
+;Details: https://patches.kibab.com/patches/details.php5?id=7879
+/*
+
+*/
+002CA578: 002201205249D4F1CCEBDDF7E8FA 012233F0DAEB02E0C046C046C046
+;------------------------- end -------------------------
+

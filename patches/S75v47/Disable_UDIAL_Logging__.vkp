@@ -1,0 +1,16 @@
+;S75v47
+;Отключить UDIAL логгинг
+;Disable UDIAL Logging
+;(c) benj9
+;(r) SimaFish
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8106
+;Details: https://patches.kibab.com/patches/details.php5?id=8106
+/*
+
+Отключает UDIAL логгинг
+*/
+04E0D68: 0FB4 7047
+;------------------------- end -------------------------
+

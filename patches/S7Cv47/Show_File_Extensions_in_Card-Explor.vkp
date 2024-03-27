@@ -1,0 +1,14 @@
+;S7Cv47
+;Show File Extensions in Card-Explorer
+;Show File Extensions in Card-Explorer
+;(c) BingK(binghelingxi)
+;(r) SiNgle,1nvisible
+;Version: 
+;PatchID: 9372
+;Details: https://patches.kibab.com/patches/details.php5?id=9372
+/*
+
+*/
+0370AC6: 291C 12E0
+;------------------------- end -------------------------
+

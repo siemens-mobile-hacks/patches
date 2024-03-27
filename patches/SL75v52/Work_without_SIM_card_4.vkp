@@ -1,0 +1,16 @@
+;SL75v52
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) Saifaye
+;(p) bertgrin
+;Version: 4
+;PatchID: 10209
+;Details: https://patches.kibab.com/patches/details.php5?id=10209
+/*
+Применяем патч, вкл. тело кратко нажимаем sos пошел вызов сбрасываем звонок, и через fastran запускаем mc.elf, шаримся по файлах, менюха у меня не запустилась.
+*/
+0E89690: FBF7A6FD 33F0E4F8
+0424870: C504 A205
+0431F00: 3201 DB00
+;------------------------- end -------------------------
+

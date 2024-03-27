@@ -1,0 +1,13 @@
+;C55v24
+;ПЕРЕЗАГРУЗКА ТЕЛЕФОНА ПРИ ОШИБКЕ СИМ-КАРТЫ
+;Reboot When Card Error
+;(c) BoBa
+;Version: 
+;PatchID: 1214
+;Details: https://patches.kibab.com/patches/details.php5?id=1214
+/*
+
+*/
+0x52221A: E6FC0803B8C0 8880DA8E7AEC
+;------------------------- end -------------------------
+

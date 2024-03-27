@@ -1,0 +1,13 @@
+;C75v24
+;Настройка яркости камеры
+;Camera brightness
+;(c) SiNgle
+;Version: 
+;PatchID: 2928
+;Details: https://patches.kibab.com/patches/details.php5?id=2928
+/*
+
+*/
+0C60509: 80 C0
+;------------------------- end -------------------------
+

@@ -1,0 +1,22 @@
+;CX70v50
+;Расширенный список вызовов
+;Extended Calls list
+;(c) BoBa
+;(p) SiamiX
+;Version: 3
+;PatchID: 3566
+;Details: https://patches.kibab.com/patches/details.php5?id=3566
+/*
+Жмем зеленую кнопку -> попадаем в меню "Набранные номера"
+Жмем красную кнопку -> попадаем в меню "Принятые номера"
+Жмем красную кнопку -> попадаем в меню "Неотвеченные номера"
+Жмем красную кнопку -> выход в режим готовности
+English:
+Green button -> "Calls dialed"
+Red -> "Calls missed"
+Red -> "Calls received"
+Red -> Ready
+*/
+172F018: 8FBAACA0 0xA0FC8001
+;------------------------- end -------------------------
+

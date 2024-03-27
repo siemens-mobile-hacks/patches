@@ -1,0 +1,29 @@
+;SL45iv56
+;Создание ярлыка "Входящие SMS" (размещенных на Sim-карте)
+;Create new shortcut for Inbox SMS (located on the SIM card)
+;(c) RizaPN
+;Version: 
+;PatchID: 1506
+;Details: https://patches.kibab.com/patches/details.php5?id=1506
+/*
+Вместо ярлыка "Профили" будет ярлык "Входящие SMS" (размещенные на SIM-карте).
+
+Патч №001 с www.oslik.ru
+*/
+; Дистрибуция - http://patch.oslik.ru/SL45_RU/
+
+;Патч №001
+;*** Create new shortcut for Inbox SMS (located on the SIM card) ***
+;*** Создание ярлыка "Входящие SMS" (размещенных на Sim-карте) *** 
+
+;Firmware: SL45 v56 
+;Author: RizaPN 
+
+;Заменяет ярлык "Профили" 
+
+18E3AC: 2A08 5A03 
+18E3E0: 0B02 D300 
+18E524: 2A082A08 5A035B03 
+3AE412: DADF944C DAD9EE0A 
+;------------------------- end -------------------------
+

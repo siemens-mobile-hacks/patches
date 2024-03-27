@@ -1,0 +1,14 @@
+;SK65v50
+;Отключить Логгинг MMI
+;Disable MMI Logging
+;(c) SiNgle
+;(p) 1nvisible
+;Version: 
+;PatchID: 4180
+;Details: https://patches.kibab.com/patches/details.php5?id=4180
+/*
+
+*/
+029FBCC: 70B5 7047
+;------------------------- end -------------------------
+

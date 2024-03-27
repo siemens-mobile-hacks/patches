@@ -1,0 +1,21 @@
+;M65v50
+;Работа телефона без SIM-карты
+;No SIM Card Phone Operation
+;(c) SiNgle
+;(r) 1nvisible
+;(p) Mifodiy
+;Version: 2
+;PatchID: 3356
+;Details: https://patches.kibab.com/patches/details.php5?id=3356
+/*
+Нажмите на джойстик, чтобы начать начать работу
+Press joystick to start working
+*/
+1635184: 152870D1 8AF094FF
+#pragma enable old_equal_ff
+16C00B0: FEB5152800D1FEBD292802D104480349
+16C00C0: 8847281CFEBC06B0F0BDC046,0xA12329FC
+16C00D0: 00200BA8
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

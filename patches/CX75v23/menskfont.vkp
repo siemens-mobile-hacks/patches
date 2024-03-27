@@ -1,0 +1,19 @@
+;CX75v23
+;Шрифт меню и софт кнопок
+;Menu and Softkeys font
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1817
+;Details: https://patches.kibab.com/patches/details.php5?id=1817
+/*
+
+*/
+04A273C: 03 02 ; Шрифт софт-кнопок
+04A2784: 03 08 ; Выбраная позиция меню
+04A2788: 02 08 ; Список меню
+
+
+;------------------------- end -------------------------
+

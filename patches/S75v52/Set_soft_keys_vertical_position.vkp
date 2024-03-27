@@ -1,0 +1,20 @@
+;S75v52
+;Задать положение софт кнопок по вертикали
+;Set soft keys vertical position
+;(c) Evgr
+;(p) SimaFish
+;Version: 
+;PatchID: 9600
+;Details: https://patches.kibab.com/patches/details.php5?id=9600
+/*
+
+Позиционирование софтов со шрифтами, отличными от стандартного 5-го.
+*/
+0A209C4: 01923A1C331C0091 00488047,0xA1410791
+
+#pragma enable old_equal_ff 
+1410790: 0192034A331C009100B502BC04310847
+14107A0: 9F000000 ; y position, 9Fhex=159dec - смещение на 1 пикс. вниз
+#pragma disable old_equal_ff 
+;------------------------- end -------------------------
+

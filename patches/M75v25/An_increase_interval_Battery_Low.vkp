@@ -1,0 +1,15 @@
+;M75v25
+;Увеличение интервала между сообщениями "Аккумулятор разряжен! Зарядите"
+;An increase in the interval between the communications "Storage battery is discharged! You will load"
+;(c) 1nvisible
+;(r) benj9
+;(p) VoVka
+;Version: 
+;PatchID: 5487
+;Details: https://patches.kibab.com/patches/details.php5?id=5487
+/*
+
+*/
+081949C: ED100000 E8FD0000
+;------------------------- end -------------------------
+

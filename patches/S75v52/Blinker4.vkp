@@ -1,0 +1,15 @@
+;S75v52
+;Мигалка
+;Blinker4
+;(c) © benj9
+;(p) Feyman
+;Version: 4
+;PatchID: 8620
+;Details: https://patches.kibab.com/patches/details.php5?id=8620
+/*
+
+*/
+01B64C4: 0080A0E1 D2AEFAEB
+
+;------------------------- end -------------------------
+

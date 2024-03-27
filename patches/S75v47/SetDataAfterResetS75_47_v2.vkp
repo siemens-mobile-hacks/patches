@@ -1,0 +1,41 @@
+;S75v47
+;Задать начальную дату после сброса
+;Set initial date after power off reset
+;(c) Evgr
+;Version: 2
+;PatchID: 10563
+;Details: https://patches.kibab.com/patches/details.php5?id=10563
+/*
++ проверяет дату последнего экзита. Если дата экзита допустимая, то она устанавливается как начальная. Если не допустимая, то остаётся дата, заданная в патче.
++ checking for valid date of the last Exit is added. If Exit date is valid, then it is set as initial one. If not, patch configured date will be initial.
+*/
+; + проверяет дату последнего экзита. Если дата экзита допустимая, то она устанавливается как начальная. Если не допустимая, то остаётся дата, заданная в патче.
+; + check for valid date of last Exit is added. If Exit date is valid, then it is set as initial one. If not, patch configured date will be initial.
+
+01A6804: 7F0002E2 3FB348EA ; check for valid date of last exit at bootscreen
+01F1984: 1F00A0E3 DD8647FA
+01F1991: 40 10
+
+#pragma enable old_equal_ff
+13D3500: 1F2001217047C0467F0002E2120050E3
+13D3510: 030050130400001A010051E30200001A
+13D3520: 0E00A0E1020000EB00E0A0E17F0002E2
+13D3530: B44CB7EAFF402DE974DE4DE2E534BAEB
+13D3540: 000050E32000000A84109FE5080091E5
+13D3550: 000050E30410911581008010B050D011
+13D3560: 0200001A0000A0E32B27B8EB0050A0E1
+13D3570: 000055E31400000A0060A0E33C67CDE5
+13D3580: 403E8DE28E3F83E23C079DE50520A0E1
+13D3590: 0310A0E3B925B8EB3C078DE570CE8DE2
+13D35A0: DC03DCE1010070E30700000A70CE8DE2
+13D35B0: DC03DCE1000050E3030000BA4C069DE5
+13D35C0: 000050E30000000AE333BAEB74DE8DE2
+13D35D0: FF80BDE8,0xA8D705E8
+#pragma disable old_equal_ff
+
+13D3500: 1F 14 ; день
+13D3502: 01 04 ; месяц
+01F1C04: 0x000007D6 0x000007DD ; 0x7DD=2013 год
+
+;------------------------- end -------------------------
+

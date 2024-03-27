@@ -1,0 +1,46 @@
+;CX75v13
+;Зелёная иконка-входящие
+;Grin icon Entering
+;(c) Demo
+;Version: 
+;PatchID: 3563
+;Details: https://patches.kibab.com/patches/details.php5?id=3563
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v13&f=Grin_icon_Entering.rar
+
+/*
+Без комментариев
+No komment
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ### Avtor: Demo                                                     ###
+; ### Date: 28.05.2005  -  Time: 17:20:56                             ###
+; ### Patch for: SIEMENS CX75 v13                                     ###
+; #######################################################################
+
+
+; ##### Picture 1209 #####
+010C25EC: 110E8500209319A1 110E8500209319A1
+
+01199320: 05810CC0FF8104FFFF810BC0FF8103FF 05140CC0FF1404DFFF140BC0FF1403DF
+01199330: 02FB0881FC8060608103FF03FBFCF750 029E0814FF10020CFF1403DF039EFC7E
+01199340: F7F603F202EEFC6081FFFF04FBFDF750 007E3903190215FE0C1402DF049EFF7E
+01199350: 4C03F203EEFD6081FF03FB0350FC4CDD 020003190315FD0C14DF039E0400FD53
+01199360: 2CF204EEFE608104FBF950DEDEDDBDBD 00190415FE0C14049EFF000353022FFF
+01199370: 2804EEFE608103FBF2F750DEDDBDBDB9 000415FE0C14039EFE7E000253022F02
+01199380: B928EEEEEA608103FBE0F74CDDBDBDB9 0BFF000215FD100C14039EFD7E005302
+01199390: B928EEEEEACA6081FBFBF7F74C4C2C28 2F020BFF0002150210FE0C14029E027E
+011993A0: B928EEEEEACACA6081FB03F703F20228 0400FE0B0002150310FD0C149E037E03
+011993B0: 03EEFBEACACA608103F7FFF603F2FF28 19020003150310FE0C14037EFF390319
+011993C0: 03EEFFEA03CAFE60810FFBFF600581FF FF0003150410FE0C140F3DFF0C0514FF
+011993D0: 800B60 100B0C
+
+
+
+;------------------------- end -------------------------
+

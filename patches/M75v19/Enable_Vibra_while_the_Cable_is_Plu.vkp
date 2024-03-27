@@ -1,0 +1,15 @@
+;M75v19
+;Включить Вибру при Подключенном Кабеле
+;Enable Vibra while the Cable is Plugged In
+;(c) 1nvisible
+;(p) Grizzzzly
+;Version: 
+;PatchID: 2531
+;Details: https://patches.kibab.com/patches/details.php5?id=2531
+/*
+Для тестирования патчей, задействующих вибру
+For testing patches affecting vibra
+*/
+096E954: F081BD18 0000A0E3
+;------------------------- end -------------------------
+

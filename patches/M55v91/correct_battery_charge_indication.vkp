@@ -1,0 +1,16 @@
+;M55v91
+;Корректировка перевода процента заряда батареи в номер картинки
+;Correct battery procent to picture numbers conversion
+;(c) dnn
+;Version: 
+;PatchID: 9630
+;Details: https://patches.kibab.com/patches/details.php5?id=9630
+/*
+%-PicNo: 0..4-0;5-14-1;...;95-0FFFFh-0Ah
+originally there was: "-4;4-14;14-24;24-29;29-34;34-44;44-54;54-64;64-74;74-84,84+" gradation.
+for ex: real proc=55%, PicNo=7 (as 70% filled battery)
+*/
+007E2648: 46FC5400FD03E0ACEA00AE2646FC4A00 08C5E0A1F6FC0EFE4B11F2F40EFE4041
+007E2658: FD02E09C0D28 FD01F041DB00
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;X65v100
+;GameBoy
+;GameBoy
+;(c) cbn
+;Version: 0.9
+;PatchID: 5987
+;Details: https://patches.kibab.com/patches/details.php5?id=5987
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=GB_09.zip
+
+/*
+GameBoy эмулятор
+
+*/
+GameBoy эмулятор
+Положить в папку 0:\ZBin\GameBoy
+Управление демо игры: 5 - старт, * - огонь
+
+В extention.cfg добавить строки:
+gb:0:\ZBin\GameBoy\GameBoy.elf
+gbc:0:\ZBin\GameBoy\GameBoy.elf
+
+Скачайте приложенный файл
+;------------------------- end -------------------------
+

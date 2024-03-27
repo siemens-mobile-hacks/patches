@@ -1,0 +1,23 @@
+;CX70v50
+;Ускоритель вывода на экран
+;Main screen accelerator
+;(c) SiNgle
+;(p) Kibab
+;Version: 
+;PatchID: 2586
+;Details: https://patches.kibab.com/patches/details.php5?id=2586
+/*
+Отличия от оригинала: заложена возможность включить/выключить патч через Мастер-Мидлет, правда, после включения патча и до перезарузки телефона нет эффекта от выключения патча.
+
+Просто удобно можно посмотреть, насколько ускоряется вывод на экран, в рамках одного сеанса работы с телефоном...
+*/
+0CADB3A: A0F732EE 31F361FE
+0FDF800: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFB50848E1F7FCF903D0FFBCA861C046
+0FDF810: FFFFFFFFFFFFFFFFFFFF 02E0FFBC6EF4C4EF00BD
+0FDF820: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E4D3C2B102C600000000000000000000
+0FDF830: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 7B70617463683D605363725370656564
+0FDF840: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 555060207665723D312E302069643D43
+0FDF850: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 36303220636F707972696768743D4B69
+0FDF860: FFFFFFFFFFFFFFFFFFFFFF 626162206D656D3D317D00
+;------------------------- end -------------------------
+

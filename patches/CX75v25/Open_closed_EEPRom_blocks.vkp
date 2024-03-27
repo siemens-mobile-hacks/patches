@@ -1,0 +1,13 @@
+;CX75v25
+;Открыть заблокированные блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;Version: 
+;PatchID: 3508
+;Details: https://patches.kibab.com/patches/details.php5?id=3508
+/*
+
+*/
+08D077C: 00 01
+;------------------------- end -------------------------
+

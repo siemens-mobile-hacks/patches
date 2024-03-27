@@ -1,0 +1,18 @@
+;C72v22
+;Настройка аналоговых часов
+;Analog Clock Tuning
+;(c) SiNgle
+;(p) Virusmater
+;Version: 
+;PatchID: 6963
+;Details: https://patches.kibab.com/patches/details.php5?id=6963
+/*
+
+*/
+8E1927: 9E 80 ;Длина стрелок (Hands length)
+8E19E6: 01 02 ;Центральная точка (Center-point)
+8E1A34: 01 06 ;Цвет минутной стрелки (Minute hand color)
+8E1AE4: 01 04 ;Цвет часовой стрелки вторая линия(для жирности)(Hour hand second line color (bold))
+8E1B44: 01 04 ;Цвет часовой стрелки (Hour hand color)
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;S65v58
+;Убрать звук дозвона
+;Disable dialing sound
+;(c) AlexSid
+;Version: 
+;PatchID: 9088
+;Details: https://patches.kibab.com/patches/details.php5?id=9088
+/*
+
+*/
+13CAA8C: DC003EA1 00000000
+;------------------------- end -------------------------
+

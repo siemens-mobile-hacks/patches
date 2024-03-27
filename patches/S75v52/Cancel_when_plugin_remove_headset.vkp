@@ -1,0 +1,15 @@
+;S75v52
+;Не менять профиль и не показывать попапы при подключении\отключение гарнитуры
+;Cancel when plugin/remove the headset switch profile and tips  
+;(c) BingK(binghelingxi)
+;(p) dimonp25
+;Version: 
+;PatchID: 8933
+;Details: https://patches.kibab.com/patches/details.php5?id=8933
+/*
+
+*/
+02fc6d6: 39f0c1fe c046c046
+02fc3ba: 3af04ff8 c046c046
+;------------------------- end -------------------------
+

@@ -1,0 +1,42 @@
+;S75v32
+;Загрузчик эльфов
+;Elfloader
+;(c) Rst7/CBSIE, BoBa
+;(r) Rst7/CBSIE
+;(p) MihaSoft, GrosserS
+;Version: 3
+;PatchID: 4747
+;Details: https://patches.kibab.com/patches/details.php5?id=4747
+/*
+Release 23.08.2006
+
+Внимание: Во избежание глюков откатываем Popup Killer v2
+
+
++Загрузка всех .elf-файлов из каталога 4:\ZBin\Daemons
++Загрузка необходимых .elf файлов при выборе файла с произвольным расширением
+ по файлу 4:\ZBin\etc\extension.cfg. Формат файла:
+ ...
+ расширение_без_точки:полный_путь_и_имя_elf_файла<CR><LF>
+ ...
+ Последняя строка в файле - универсальное расширение, рекоммендуется прописать
+ туда строку "*:4:\ZBin\TED\Ted.elf"
+
++Исправлен HELPER_PROC (заменен cepid с 4338 на 4339)
++Перенесены в библиотеку функции SUBPROC и REDRAW - находятся в HELPER
++Удаление процесса HELPER_PROC при закрытии IDLE_CSM
++Для упрощения формирования структуры каталогов разархивируйте в корень MMC архив 
+ММС.zip с сохранением путей.
++Вынесены адреса возврата в отдельный сегмент (RET_ADRS) для упрощения портирования
++Ублажены юзеры МП - перенесен GetCPULoad
+*/
+;S75_32
+0x00079000: FFFFFFFFFFFFFFFFFFFFFFFF 47B82FA00FB62FA0275497A0 ;RET_ADRS
+0x004254F0: 0FB62FA0 B48407A0        ;PATCH_ONCREATE
+0x00425504: 47B82FA0 EC8307A0        ;PATCH_ONCLOSE
+0x00659A2C: 275497A0 858707A0        ;PATCH_SHOWMSG_BLF
+0x0068A7A8: 297F5BA0 488507A0        ;PATCH_TXT_EXT
+0x009008F8: EC9601FA 08F09FE5        ;PATCH_ESI1
+0x00900908: 7C25647C 008107A0        ;PATCH_ESI2
+;------------------------- end -------------------------
+

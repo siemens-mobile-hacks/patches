@@ -1,0 +1,14 @@
+;SK65v50
+;Плавное включение подсветки
+;Smooth illumination turn-on
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 260
+;Details: https://patches.kibab.com/patches/details.php5?id=260
+/*
+Плавное включение подсветки.
+*/
+078F4A2: 0022 664A
+;------------------------- end -------------------------
+

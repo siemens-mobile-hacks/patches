@@ -1,0 +1,15 @@
+;M75v23
+;Автодозвон постоянно с заданной паузой
+;AutoRedial forever with selected pause
+;(c) SiNgle
+;Version: 
+;PatchID: 2801
+;Details: https://patches.kibab.com/patches/details.php5?id=2801
+/*
+
+*/
+05583B6: A068 0020
+05583DF: 30 20
+0A55FC9: 05 0A ; pause (0A=10 sec.) - x75
+;------------------------- end -------------------------
+

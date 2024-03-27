@@ -1,0 +1,58 @@
+;EL71v38
+;Запуск явы отовсюду (работают оба пункта меню)
+;Run Java from everywhere (both menu items work)
+;(c) weclnt
+;(r) SMeeTBB
+;(p) -=PaScaL=-
+;Version: 
+;PatchID: 6556
+;Details: https://patches.kibab.com/patches/details.php5?id=6556
+/*
+
+*/
+;EL71v38
+;Запуск явы отовсюду (работают оба пункта меню)
+;Run Java from everywhere (both menu items work)
+;(c) weclnt
+;(p) -=PaScaL=-
+;(r) SMeeTBB
+;Version 1.1
+06EE704: 20 10
+06F3F74: 20 10
+82ACBC: 50494353 4A415641
+82ACC1: 53435245454E5341564552 4A414D5F47414D45530000
+82ACCE: 17 08
+82ACD6: 50 47
+82ACD8: 69 61
+82ACDA: 63 6D
+82ACDC: 74 65
+82ACDE: 75 73
+82ACE0: 72 00
+82ACE2: 65 00
+82ACE4: 73 00
+82ACE6: 5C 00
+82ACE8: 53 00
+82ACEA: 63 00
+82ACEC: 72 00
+82ACEE: 65 00
+82ACF0: 65 00
+82ACF2: 6E 00
+82ACF4: 73 00
+82ACF6: 61 00
+82ACF8: 76 00
+82ACFA: 65 00
+82ACFC: 72 00
+82AEB3: 53 5A
+82AEB6: 08 00
+82AEB8: 30 00
+82AEBA: 3A 00
+82AEBC: 5C 00
+82AEBE: 47 00
+82AEC0: 61 00
+82AEC2: 6D 00
+82AEC4: 65 00
+82AEC6: 73 00
+
+;------------------------- end -------------------------
+;------------------------- end -------------------------
+

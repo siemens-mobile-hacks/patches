@@ -1,0 +1,14 @@
+;CX75v13
+;изменение размера NonPermMem
+;Change NonPermMem
+;(c) Jellico
+;(p) Geka
+;Version: 1
+;PatchID: 8614
+;Details: https://patches.kibab.com/patches/details.php5?id=8614
+/*
+патч добавляет примерно 470 кб.у кого пикает попробуйте поменять значения.у меня свободной оперативы около 1940
+*/
+977F00: 0x0047A120 0x004CA120
+;------------------------- end -------------------------
+

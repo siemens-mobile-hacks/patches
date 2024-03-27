@@ -1,0 +1,24 @@
+;SL75v47
+;Вибра в момент соединения без МП
+;Vibra at connect without  MP
+;(c) SiNgle
+;(r) avkiev
+;(p) velesiK
+;Version: 
+;PatchID: 7499
+;Details: https://patches.kibab.com/patches/details.php5?id=7499
+/*
+Отвязан от Мастер Патча.
+
+*/
+0DA9C84: 2A1C2B1C09211730 00498847,0xA0063801
+
+#pragma enable old_equal_ff
+0063800: 71460431173003B4C046C046C04601B4
+0063810: 0748642104A201324DDF01BC1E207CDF
+0063820: 2A1C2B1C092101BD00B500207CDF00BD
+0063830: 0000A8A8
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

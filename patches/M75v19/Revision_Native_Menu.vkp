@@ -1,0 +1,14 @@
+;M75v19
+;Изменение Native Menu
+;Revision Native Menu
+;(c) Bennie
+;(p) Geka
+;Version: 
+;PatchID: 6213
+;Details: https://patches.kibab.com/patches/details.php5?id=6213
+/*
+;теперь не выключается при Меню - 2 - 5 - 5
+*/
+04A964C: 93E82BA0 0xA0326167
+;------------------------- end -------------------------
+

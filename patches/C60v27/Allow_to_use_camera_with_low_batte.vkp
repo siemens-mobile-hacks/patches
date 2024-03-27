@@ -1,0 +1,28 @@
+;C60v27
+;Разрешить использование камеры при разряженном аккумуляторе
+;Allow to use camera with low battery level
+;(c) Christ
+;Version: 3
+;PatchID: 4357
+;Details: https://patches.kibab.com/patches/details.php5?id=4357
+/*
+
+*/
+
+; disable battery level checks
+2DA65E: 4863FD1C CC00CC00
+2DC04E: FD06 CC00
+2DBFC0: ED04 0D04
+2DBE6E: ED04 0D04
+2DBD48: ED04 0D04
+2DBB18: ED04 0D04
+2DBA6A: 4863FD26 CC00CC00
+
+; battery 100% for camera software
+; comment this out if problems occur with camera
+; может повлиять на работу камеры или отображение
+; заряда батареи во время работы камеры
+2DB69C: DA81AECB E6F40A00
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;C81v51
+;Автодозвон постоянно с заданной паузой
+;AutoRedial forever with selected pause
+;(c) SiNgle,AsteriX
+;(r) starfriend
+;(p) den11111
+;Version: 
+;PatchID: 7334
+;Details: https://patches.kibab.com/patches/details.php5?id=7334
+/*
+
+*/
+09B1EB2: A068 0020 
+09B1EDB: 30 20 
+0C2C7A9: 05 0A ; pause (0A=10 seconds)
+;------------------------- end -------------------------
+

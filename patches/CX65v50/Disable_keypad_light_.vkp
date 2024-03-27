@@ -1,0 +1,14 @@
+;CX65v50
+;Отключить подсветку кнопок
+;Disable keypad light
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 2981
+;Details: https://patches.kibab.com/patches/details.php5?id=2981
+/*
+
+*/
+0B1E8F3: D5 24
+;------------------------- end -------------------------
+

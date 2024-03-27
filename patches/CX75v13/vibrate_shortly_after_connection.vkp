@@ -1,0 +1,25 @@
+;CX75v13
+;Вибра в момент начала разговора
+;Vibrate shortly after connection
+;(c) SiNgle
+;(p) TAPAKAH
+;Version: 1.2
+;PatchID: 830
+;Details: https://patches.kibab.com/patches/details.php5?id=830
+/*
+RUS: При дозвоне до абонента (когда на другом конце подняли трубку) телефон вибрирует. Это удобно - не надо всё время телефон у уха держать. Режим включается одновременно с галкой в Меню-2-5-5-4 или 2-5-4-3 (Авт.Индикац.). При входящих не вибрирует.
+
+ENG:  At dialing up to the subscriber (when on other end have lifted a tube) phone vibrates. It is convenient - all time phone at an ear is not necessary to hold. The mode joins simultaneously with a daw in the Menu-2-5-5-4 or 2-5-4-3. At entering does not vibrate.
+*/
+02CA8F8: D3F10AEC0028 002835F72AEB
+#pragma enable old_equal_ff
+01FFF50: 00402DE9FF3F2DE90FE0A0E144F09FE5
+01FFF60: 000050E30900001A0100A0E30FE0A0E1
+01FFF70: 34F09FE5020050E30400001A2F00A0E3
+01FFF80: 0210A0E30120A0E30FE0A0E11CF09FE5
+01FFF90: 0FE0A0E118F09FE5000050E3FF3FBDE8
+01FFFA0: 0040BDE80CF09FE56B3555A05BE7AAA0
+01FFFB0: BC492BA0CB2A50A0FFA82CA0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

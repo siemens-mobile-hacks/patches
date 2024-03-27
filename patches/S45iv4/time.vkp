@@ -1,0 +1,30 @@
+;S45iv4
+;Время при звонках
+;TIC. Time in Calls
+;(c) Lalo
+;Version: 
+;PatchID: 1225
+;Details: https://patches.kibab.com/patches/details.php5?id=1225
+/*
+Патч добавляет новую строку с показанием текущего времени над анимацией вызова.
+Показ времени (также в формате 12AM-PM, если эта опция включена в меню Applications v3 - Профиль 1, пункт 9) можно выбирать через меню Applications v3, Профиль 2, пункт 3
+
+
+*/
+55C9EC: DAFC44DD DA8740F5 ;нормальный экран вызова
+55CB66: DAFC44DD DA8740F5 ;экран конференц-связи
+
+7F540: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7405B00F2F2602E9AF22220DACAF097
+7F550: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6F67237E6F74400E6F87837F097F0C6
+7F560: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F0D7DAC63A2CDACC3E37DACA949AD740
+7F570: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 4200F2F23C3F9AF20380DA87D0CE0D02
+7F580: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC6743AF048F059DAC82029DACB5A8F
+7F590: FFFFFFFF FAFC44DD
+
+
+;Настройка:
+;Выбор через меню Applications v3 (патч должен быть установлен заранее)
+;по умолчанию = Профиль 2, пункт 3 
+;7E514: FFFF DF09 ;Заменить надпись <Пусто> на <Время> (раскомментировать)
+;------------------------- end -------------------------
+

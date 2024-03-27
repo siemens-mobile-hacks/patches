@@ -1,0 +1,19 @@
+;M55v11
+;Смена языка на русский при входе в адресную книгу
+;Default Language at entry to Standard Book
+;(c) Matr!x
+;(p) ZH-Soft
+;Version: 2.1
+;PatchID: 5168
+;Details: https://patches.kibab.com/patches/details.php5?id=5168
+/*
+
+*/
+0D59AF: 6A66B2 5560DE
+4AB35F: 6A9EAD 5568DE
+35DE50: FFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FF1100D7400D00F6FF1A1EDB00
+35DE60: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA5550DEFA6A66B2DA5550DEFA6A9EAD
+;русский &#9472;> английский
+;35DE52: 11 00
+;------------------------- end -------------------------
+

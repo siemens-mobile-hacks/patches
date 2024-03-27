@@ -1,0 +1,13 @@
+;C75v24
+;Disable More Nasty Debug
+;Disable More Nasty Debug
+;(c) benj9
+;Version: 
+;PatchID: 3423
+;Details: https://patches.kibab.com/patches/details.php5?id=3423
+/*
+тоже без понятия...)
+*/
+031FEBC: FFB5 7047
+;------------------------- end -------------------------
+

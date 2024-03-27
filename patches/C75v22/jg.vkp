@@ -1,0 +1,27 @@
+;C75v22
+;Расширенный список вызовов
+;Extended list of the calls
+;(c) avkiev
+;(p) SMeeTBB
+;Version: 2
+;PatchID: 1171
+;Details: https://patches.kibab.com/patches/details.php5?id=1171
+/*
+
+
+*/
+048CDC8: F3F854A0 71FB1FA0
+0328866: 65F18AE8 D7F682E9
+#pragma enable old_equal_ff
+01FFB50: 457874656E642E43616C6C734C697374
+01FFB60: A961766B6965762031332E30362E3035
+01FFB70: 00B54FF3BEFEC2F03BFE0130072803D0
+01FFB80: 4FF3BDFE4FF3B8FE00BD
+#pragma disable old_equal_ff
+;01FFB84: 4FF3B8FE C046C046 ;Не выводить список пропущенных звонков
+;01FFB7C: 07 NP ;Profile "No patches"
+
+
+
+;------------------------- end -------------------------
+

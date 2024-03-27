@@ -1,0 +1,16 @@
+;S75v52
+;Не выходить в режим ожидания и не спрашивать при нажатии кнопки браузера
+;Not to leave in mode of the waiting and not to ask the button browser when striking
+;(c) Rst7, ThE TrIFoN, weclnt
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8347
+;Details: https://patches.kibab.com/patches/details.php5?id=8347
+/*
+
+*/
+03455F6: 0098 381C
+03455FE: B9F7E8F8002813D0 C046C046C046C046
+0345606: A7F0DEE9 C046C046
+;------------------------- end -------------------------
+

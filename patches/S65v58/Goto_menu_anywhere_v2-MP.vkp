@@ -1,0 +1,24 @@
+;S65v58
+;Из любого места  попадаем в  меню
+;Goto menu anywhere
+;(c) Single
+;(r) (i) Andrey_ua
+;(p) -=(Kad)=-
+;Version: 2-MP
+;PatchID: 3983
+;Details: https://patches.kibab.com/patches/details.php5?id=3983
+/*
+Для работы патча должен стоять кусок библиотеки
++0FC0000 (В v060907 он уже есть!!!!!!!!!!!!!!)
+#pragma enable old_equal_ff
+300: 004F3847,0xA08DA5D1 ; f096: ShowMainMenu
+308: 004F3847,0xA08DF43B ; f097: ShowNativeMenu
+6C0: 004FF746,0xA8691FF9 ; v16: RamMenuAnywhere
+#pragma disable old_equal_ff
++0 
+не забываем отменить старую версию.
+*/
+0B57BF0: 224D321C893D6868 004988470137FCA0
+0B57C96: 801969680138884202D1 C046004FB8473737FCA0
+;------------------------- end -------------------------
+

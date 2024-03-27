@@ -1,0 +1,15 @@
+;X75v100
+;Цифры и символы для патча "Дополнительная информация на главном экране"
+;Symbols for patch "Extra info on the main screen"
+;(c) AlexeyZ
+;Version: 0
+;PatchID: 7268
+;Details: https://patches.kibab.com/patches/details.php5?id=7268
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=pic_for_ExtraInfo_2.zip
+
+/*
+Маленькие аккуратные цифры и буквы.
+*/
+; .gpn файл вложен.
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;SK65v50
+;Включение по будильнику
+;Turn On By AlarmClock
+;(c) SiNgle
+;(r) (i) ThE TrIFoN
+;(p) ~Jhellico
+;Version: 1.1
+;PatchID: 6772
+;Details: https://patches.kibab.com/patches/details.php5?id=6772
+/*
+Включенный телефон не перезагружается по будильнику
+
+*/
+#pragma enable old_equal_ff
+01FEA00: 10B5054CA0470648C088202803DA1220
+01FEA10: 0021024A904710BD,0xA02F125C,0xA0972D58
+01FEA20: 0xA8E7CE18
+#pragma disable old_equal_ff
+04F3E16: 7DF018ED 0AF5F3FD
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;SL75v47
+;Расширение для картинок v5
+;Pictures add-on v5
+;(c) avkiev
+;(r) 1nvisible
+;(p)  ferro
+;Version: 
+;PatchID: 6113
+;Details: https://patches.kibab.com/patches/details.php5?id=6113
+/*
+(!) Master
+*/
+0A2b080: 54009FE51EFF2FE1 04F01FE5,0xA0063691   ; SL75v47
+
+;------------------------- end -------------------------
+

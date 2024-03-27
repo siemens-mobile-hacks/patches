@@ -1,0 +1,16 @@
+;CX75v13
+; Активизация (ICQ AIM) встроенного WV-клиента
+; Enable built-In WV-client (ICQ AIM)
+;(c)  SiNgle
+;(p) Smelter by avkiew
+;Version: 1.0
+;PatchID: 757
+;Details: https://patches.kibab.com/patches/details.php5?id=757
+/*
+Активирует возможность использования встроенного в телефон WV-клиента. Появляется в Меню - 5-2.
+
+EN: Activates an opportunity of use of the WV-client built in phone. Appears in the Menu - 5-2.
+*/
+064290C: 66 78
+;------------------------- end -------------------------
+

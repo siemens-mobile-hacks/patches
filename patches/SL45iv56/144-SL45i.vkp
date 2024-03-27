@@ -1,0 +1,51 @@
+;SL45iv56
+;Отображение текущей температуры вместо часов на десктопе
+;Show current temperature instead time
+;(c) rc-flitzer
+;(r) trustkill
+;Version: 
+;PatchID: 1748
+;Details: https://patches.kibab.com/patches/details.php5?id=1748
+/*
+Показывает текущую температуру вместо времени 
+В виде "25,3 С", можно поменять формат 
+
+
+Release: May 22nd, 2004
+
+Патч №144 с http://patch.oslik.ru/SL45_RU
+*/
+0x3B00E8: DAA4E4BA DAC722E1 
+
+0x27E122: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8890888088608840F09FF08ED7400F00 
+0x27E132: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF F2F6162026F6AA0AE10826F664008D02 
+0x27E142: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 09810DFB06F66400E10926F60A008D02 
+0x27E152: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 09910DFB06F60A00F1DCE7FC2C0007FD 
+0x27E162: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 300007F9300007F83000DC59B848C468 
+0x27E172: FFFFFFFFFFFF 02000884E6F4 
+
+
+;Тут задаются два символа, отображающиеся после числа градусов: 
+0x27E178: FFFF 2043 ; =" C" (пробел, C) 
+;0x27E178: FFFF 6043 ; "°С" (C патчем от trustkill)
+
+;"20" = Пробел
+;"43" = C 
+
+0x27E17A: FFFFFFFFFFFFFFFF E006DC59B848C468 
+0x27E182: FFFFFFFFFFFFFFFFFFFFFFFF 02009840986098809890DB00 
+
+ 
+;trustkill добавил: 
+
+;Если вы хотите °, раскоментируйте эти строчки и строчку 27 выше (26 ессно надо закомментировать): 
+;00494DB6: 0600 0510 
+;00494DB9: 10 28 
+;00494DBB: 00 28 
+;00494DBF: 10 00 
+;00494DC1: 20 00 
+;00494DC3: 44 00 
+;00494DC5: 44 00 
+;00494DC7: 38 00
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;SL65v53
+;Дополнительная Информация на Прогрессбарах
+;Extra Info on ProgressBars
+;(c) 1nvisible
+;(p) t1ck
+;Version: 2
+;PatchID: 4645
+;Details: https://patches.kibab.com/patches/details.php5?id=4645
+/*
+MP v3 Required
+Показывает проценты на прогрессбарах, а также данные о принимаемых и передаваемых файлах
+English:Shows percents on progressbars and info on files being sent/received
+
+*/
+0921E04: B0338EA000000000 85F0FBA075F0FBA0
+09276A8: 0000000000000000 61F0FBA051F0FBA0
+
+1177398: 216B000C4143E06A81F00CE9 004FB847A1F0FBA0C046C046
+1177450: 0C20185E231CCFF7 004FB84733F1FBA0
+
+0FBF09C: FFFFFFFF 0xA86C9330
+
+;------------------------- end -------------------------
+

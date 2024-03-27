@@ -1,0 +1,14 @@
+;S65v58
+;Отключение ASP
+;Disable ASP
+;(c) caine
+;Version: 
+;PatchID: 5409
+;Details: https://patches.kibab.com/patches/details.php5?id=5409
+/*
+отключение нарастания громкости. за Ваши уши в ответе только Вы!!!
+*/
+12BEAB0: 00 01
+12BEAB4: 02 01
+;------------------------- end -------------------------
+

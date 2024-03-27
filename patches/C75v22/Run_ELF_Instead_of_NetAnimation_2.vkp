@@ -1,0 +1,21 @@
+;C75v22
+;Запуск эльфа вместо анимации поиска сети
+;Run ELF Instead of NetAnimation
+;(c) benj9
+;Version: 
+;PatchID: 8734
+;Details: https://patches.kibab.com/patches/details.php5?id=8734
+/*
+Врезка - benj9, остальное народное.
+*/
+10E43D8: FFFFFFFF 0xA048B8C0
+10E43DC: FFFFFFFF 0xA0490A01
+02A7384: E4F19CEA F7DFF6DF
+
+#pragma enable old_equal_ff
+0490A00: FFB58020C7DF2501061C05A18022C7DF
+0490A10: 6C010021301C94DF301CC7DF2901FFBD
+0490A20: "0:\\ZBin\\StartMan\\StartMan.elf",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

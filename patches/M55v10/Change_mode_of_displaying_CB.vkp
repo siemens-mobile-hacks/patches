@@ -1,0 +1,20 @@
+;M55v10
+;Смена режима отображения CB сообщений
+;Change mode of displaying CB-messages
+;(c) Lalo
+;Version: 
+;PatchID: 1420
+;Details: https://patches.kibab.com/patches/details.php5?id=1420
+/*
+
+*/
+;0D9724: 8E 8F ;мигающее CB сообщение
+;0D9722: E6FC 0D06 ;CB сообщения всегда включены
+;CB сообщения всегда включены v2
+0D96FF: 09 18
+0D9707: 05 14
+;персональное CB сообщение
+45DAB0: 952D2D2D2D2D2D2D2D2D2D2D2D2D2D2D 952D206C616C6F206973207468652062
+45DAC0: 2D2D2D2D2D2D2D2D2D00 657374203B29202D9500
+;------------------------- end -------------------------
+

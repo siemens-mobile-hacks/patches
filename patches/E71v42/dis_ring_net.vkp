@@ -1,0 +1,14 @@
+;E71v42
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found"
+;(c) avkiev
+;(p) $TA$
+;Version: 
+;PatchID: 6739
+;Details: https://patches.kibab.com/patches/details.php5?id=6739
+/*
+
+*/
+02211C8: 5C03 FFFF
+;------------------------- end -------------------------
+

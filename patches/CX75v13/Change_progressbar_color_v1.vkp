@@ -1,0 +1,24 @@
+;CX75v13
+;Изменение цвета прогрессбара
+;Change progressbar color
+;(c) -=(Kad)=-
+;Version: 1
+;PatchID: 4049
+;Details: https://patches.kibab.com/patches/details.php5?id=4049
+/*
+Давно меня терзала идея убрать эти противные синий и бежевый цвета
+как всегда цвет в формате RRGGBBTT RR=0-FF(красный) GG=0-FF(зелёный) BB=0-FF(голубой) TT=0-64(прозрачность)
+*/
+04D8DB8: BEE6FA64 5656F814 ; бекграунд
+04D8DBC: 1EBEE664 00000034 ; контур 
+04D8DC0: 001E8264 FFFFFF24 ; ползунок
+
+/*
+Smelter auto-patch
+=*Change progressbar color* *Изменение цвета прогрессбара* © -=(Kad)=-
+BEE6FA64=5656F814 ; background
+1EBEE664=00000034 ; contour
+001E8264=FFFFFF24 ; stripe
+*/
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;EL71v45
+;Remove Wait before Unified Inbox
+;Remove Wait before Unified Inbox
+;(c) benj9
+;Version: 
+;PatchID: 8031
+;Details: https://patches.kibab.com/patches/details.php5?id=8031
+/*
+
+*/
+050C260: F2F2E8EF C046C046
+;------------------------- end -------------------------
+

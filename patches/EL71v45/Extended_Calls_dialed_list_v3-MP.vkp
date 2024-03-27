@@ -1,0 +1,26 @@
+;EL71v45
+;Расширенный список вызовов
+;Extended Calls dialed list
+;(c) BoBa
+;Version: 3-MP
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7999
+;PatchID: 7421
+;Details: https://patches.kibab.com/patches/details.php5?id=7421
+/*
+
+Жмем зеленую кнопку -> попадаем в "Набранные номера"
+Жмем "Назад" -> попадаем в "Принятые номера"
+Жмем "Назад" -> попадаем в "Неотвеченные номера"
+Жмем "Назад" -> попадаем в "Журнал"
+Жмем "Назад" -> выход в режим готовности.
+
+Green button -> "Calls dialed"
+Back -> "Calls received"
+Back -> "Calls missed"
+Back -> "History"
+Back -> Ready.
+
+*/
+0802208: 0xA0A8C2F1 0xA006FE01
+;------------------------- end -------------------------
+

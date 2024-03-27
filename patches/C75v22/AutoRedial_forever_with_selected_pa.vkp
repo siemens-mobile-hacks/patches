@@ -1,0 +1,21 @@
+;C75v22
+;Автодозвон с постоянной заданной паузой
+;AutoRedial forever with selected pause
+;(c) SiNgle
+;(p) BPSNSK
+;Version: 
+;PatchID: 6988
+;Details: https://patches.kibab.com/patches/details.php5?id=6988
+/*
+
+*/
+0511FBE: A068 0020
+0511FE7: 30 20
+09E7D0D: 05 01 ; pause 01=1 sec, 02=2 sec, ... 0A=10 sec
+;------------------------- end -------------------------
+
+
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

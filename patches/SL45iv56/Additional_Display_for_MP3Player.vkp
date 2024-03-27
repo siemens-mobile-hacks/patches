@@ -1,0 +1,37 @@
+;SL45iv56
+;Показ дополнительной информации при проигрывании MP3
+;Just Another Additional Display for MP3Player
+;(c) RizaPN, sc0ty
+;(r) mamaich, cool_lang
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=2130
+;PatchID: 1962
+;Details: https://patches.kibab.com/patches/details.php5?id=1962
+/*
+После установки патча в mp3-плеере отображается поточное время
+вместе с позицией песни.
+
+Формат показа - мм:сс -v- чч:мм
+
+English: It will display the current time and volume level
+together with the current song position (combine two function
+already provided by cool_lang in his previous patch).
+
+Display format is 'mm:ss -v- hh:mm'
+
+
+Release: October 14, 2003 (by RizaPN)
+Modified: Jan 11, 2005 (by sc0ty)
+*/
+0x3BD966: DAC7EEAB DAC710DB 
+0x3BE0FC: 4B 64 
+0x3BE10C: 23 10 
+0x3BE8A4: DAC7EEAB DAC710DB 
+0x27DB10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC7EEABE0CE00E0F2FF00FEE6F4202D 
+0x27DB20: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 898E899E898E08E3E6F4DE25BB09E6F4 
+0x27DB30: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 003ADC4FB99E08E1E6F4DC25BB01DB00 
+0x27DB40: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E0A5D7400D00A844F6F40EFE5B55F3F8 
+0x27DB50: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0CFEF3F90EFE06F43030DC6FB99EE48E 
+0x27DB60: FFFFFFFFFFFFFFFFFFFF 0100E4BE020008E2CB00
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;CX65v50
+;МиниGPS с логгингом БС
+;MiniGPS with GSM Data Logger
+;(c) KreN, ACiD[mrp], arsh0r
+;(r) BuG, benj9, bennie, SiNgle
+;Version: 1.02
+;PatchID: 2970
+;Details: https://patches.kibab.com/patches/details.php5?id=2970
+/*
+
+*/
+16516D0: BB5EB4A0 0xA0FC7601
+
+;------------------------- end -------------------------
+

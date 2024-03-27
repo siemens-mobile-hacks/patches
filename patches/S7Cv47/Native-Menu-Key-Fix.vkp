@@ -1,0 +1,26 @@
+;S7Cv47
+;Fix key *, 0, #, greenkey in Native Menu
+;Fix key *, 0, #, greenkey in Native Menu
+;(c) BingK(binghelingxi)
+;Version: 
+;PatchID: 8958
+;Details: https://patches.kibab.com/patches/details.php5?id=8958
+/*
+*-Extra, 0-Mystuff, lattice-Setup, GreenKey-Dev.Menu
+*/
+;NMNU_FIX_KEY_HOOK3
+0x0034B704: 1529 0529
+;NMNU_FIX_KEY_HOOK1
+0x00A36868: 162869D171688868 004A9047812056A1
+;NMNU_FIX_KEY_HOOK2
+0x00A36874: 3928 3C28
+;NMNU_FIX_KEY_BODY
+#pragma enable old_equal_ff
+0x01562080: 162807D0142803D015280FD13C2006E0
+0x01562090: 3A2004E071688868302802D13B207168
+0x015620A0: 8860716888687246121D10477246D432
+0x015620B0: 1047
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

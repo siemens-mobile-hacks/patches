@@ -1,0 +1,28 @@
+;S75v31
+;Расширенный список вызовов
+;Extented Calls List
+;(c) BoBa
+;(r) avkiev
+;Version: 
+;PatchID: 2915
+;Details: https://patches.kibab.com/patches/details.php5?id=2915
+/*
+Жмем зеленую кнопку -> попадаем в "Набранные номера"
+
+Жмем "Назад"        -> попадаем в "Принятые номера"
+
+Жмем "Назад"        -> попадаем в "Неотвеченные номера"
+
+Жмем "Назад"        -> попадаем в "Журнал"
+
+Жмем "Назад"        -> выход в режим готовности.
+
+*/
+003ED3D8: 6DB25DA0 000040A1
+01400000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00402DE91CC09FE53CFF2FE118C09FE5
+01400010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3CFF2FE114C09FE53CFF2FE110C09FE5
+01400020: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3CFF2FE10080BDE86DB25DA079B25DA0
+01400030: FFFFFFFFFFFFFFFF 73B25DA07FB25DA0
+
+;------------------------- end -------------------------
+

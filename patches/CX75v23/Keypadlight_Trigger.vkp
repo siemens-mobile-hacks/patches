@@ -1,0 +1,15 @@
+;CX75v23
+;Переключатель режима подсветки клавиатуры
+;Keypadlight Trigger
+;(c) benj9
+;(r) empeka
+;(p) Mikel
+;Version: 2.2
+;PatchID: 2606
+;Details: https://patches.kibab.com/patches/details.php5?id=2606
+/*
+[PatchID][/PatchID]Можно настроить яркость клавиатуры вне зависимости от яркости экрана. Является врезкой к патчу 1674 http://patches.kibab.com/patches/details.php5?id=1674
+*/
+85AEF8: 2A1C01210120,C0F750Ed 00488047,0xA0FC3401,0000 ; CX75v23
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S75v42
+;Плавный скроллинг длинных названий и имени
+;Smooth scrolling of long names
+;(c) SiNgle
+;(p)  DiHLoS
+;Version: 
+;PatchID: 4927
+;Details: https://patches.kibab.com/patches/details.php5?id=4927
+/*
+
+*/
+6896A8: D00700002C01 120200002A00
+BFCCAC: D00700002C01 120200002A00
+;------------------------- end -------------------------
+

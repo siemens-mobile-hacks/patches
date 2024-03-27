@@ -1,0 +1,20 @@
+;M75v25
+;Увеличить фото звонящего на весь экран
+;Enlarge incoming Call Photo v2
+;(c) SiNgle
+;(r) Mikel
+;(p) Mikel
+;Version: 2
+;PatchID: 4557
+;Details: https://patches.kibab.com/patches/details.php5?id=4557
+/*
+Нормальное отображение фото (без 11 пикселей фона) :-)
+*/
+518A74: 04 00 
+2A66F6: 19 00
+2A8CF9: F095FB 280028
+2A8DAF: F03AFB 280028
+2A9175: F057F9 280028
+2A9261: F0E1F8 280028
+;------------------------- end -------------------------
+

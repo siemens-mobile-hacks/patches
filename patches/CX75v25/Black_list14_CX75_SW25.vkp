@@ -1,0 +1,32 @@
+;CX75v25
+;Черный список
+;Black list
+;(c) SiNgle
+;(r) Mikel
+;(p) Fedor
+;Version: 1.4
+;PatchID: 5878
+;Details: https://patches.kibab.com/patches/details.php5?id=5878
+/*
+Черной становится выбранная группа в фильтре. Меню-9-5-4.
+При звонке кого-то из этой группы телефон выдает "Занято".
+*/
+050A242: 06D1 0028
+050A246: 04D1 0028
+050A6A0: B0420ED1 97F706EF;97F7eaEF
+04A24B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00402DE9060050E10600001AFF3F2DE9
+04A24c0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0000A0E30FE0A0E10cF09FE5FF3FBDE8
+04A24d0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0040BDE804F09FE50080BDE8,0xA07CD62B
+04A24e0: FFFFFFFF B1A650A0                        
+0AE6b5b: D5 E0
+;
+;
+; "Убрать иконку фильтра"
+; "To remove an icon of the filter"
+; CX75 SW25
+; (c)?
+; (p) Fedor
+
+2A9098: FFF738FE 00280028
+;------------------------- end -------------------------
+

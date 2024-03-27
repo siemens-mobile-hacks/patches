@@ -1,0 +1,14 @@
+;A60v27
+;Отключение сообщения "Блокировка клавиатуры включена"
+;Unhooking the message Keylock is included
+;(c) .
+;(p) Rasp
+;Version: 
+;PatchID: 4247
+;Details: https://patches.kibab.com/patches/details.php5?id=4247
+/*
+
+*/
+6C815A: DA8C 0D01
+;------------------------- end -------------------------
+

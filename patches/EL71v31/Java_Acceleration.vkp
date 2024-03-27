@@ -1,0 +1,14 @@
+;EL71v31
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;(p) 1nvisible
+;Version: 
+;PatchID: 5084
+;Details: https://patches.kibab.com/patches/details.php5?id=5084
+/*
+
+*/
+094CE8E: 6449 0121
+;------------------------- end -------------------------
+

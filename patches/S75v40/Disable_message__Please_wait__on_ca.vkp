@@ -1,0 +1,13 @@
+;S75v40
+;Убрать "Пожалуйста подождите" при запуске камеры
+;Disable message "Please wait" on camera start
+;(c) SiNgle
+;Version: 
+;PatchID: 3770
+;Details: https://patches.kibab.com/patches/details.php5?id=3770
+/*
+
+*/
+0306D49: D1 E0
+;------------------------- end -------------------------
+

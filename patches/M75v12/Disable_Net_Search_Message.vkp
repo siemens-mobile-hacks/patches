@@ -1,0 +1,18 @@
+;M75v12
+;Отключить надпись "Поиск сети"
+;Disable displaying "netsearch"
+;(c) arsh0r
+;(p) Gurza
+;Version: 
+;PatchID: 631
+;Details: https://patches.kibab.com/patches/details.php5?id=631
+/*
+Отображается инвертированный "!" вместо Поиск сети (instead of Netsearch there is 
+*/
+;* Отключить надпись "Поиск сети" ** Disable displaying "netsearch" * © arsh0r, § Gurza 
+;!Отображается инвертированный "!" вместо Поиск сети (instead of Netsearch there is an inverted "!" in front of providername) 
+02CF620: A721 04E0 ;screensaver 
+02CC7EE: CFF14CEC 07E00028 ;mainscreen
+
+;------------------------- end -------------------------
+

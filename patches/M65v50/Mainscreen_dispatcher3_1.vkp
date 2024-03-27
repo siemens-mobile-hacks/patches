@@ -1,0 +1,15 @@
+;M65v50
+;Диспатчер главного экрана
+;Mainscreen-dispatcher
+;(c) avkiev
+;(r) KreN
+;(p) Mifodiy
+;Version: 3.1
+;PatchID: 5494
+;Details: https://patches.kibab.com/patches/details.php5?id=5494
+/*
+
+*/
+1633BE0: 261C002D05900490 004FB847013EFCA0
+;------------------------- end -------------------------
+

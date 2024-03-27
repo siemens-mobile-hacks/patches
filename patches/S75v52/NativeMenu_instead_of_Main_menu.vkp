@@ -1,0 +1,25 @@
+;S75v52
+;NativeMenu вместо Главного Меню
+;NativeMenu instead of Main menu
+;(c) 42Gzb
+;(p) pip@
+;Version: 1.1
+;PatchID: 8768
+;Details: https://patches.kibab.com/patches/details.php5?id=8768
+/*
+
+*/
++422548 
+1F8: 0xA032E3CD,00000000 0xA02CE19B,6FE332A0 
+204: 9D 72 
+;224: 7C 80; 7C: icon of main menu, 80: icon of change
+228: A200 0D14 
+22C: A200 0D14 
+238: 3205 8923 
+23C: 3205 8923 
+254: 3B 1F 
+258: 02 00 
+25C: 90DA9FA0A8DA9FA0 0000000000000000 
++0
+;------------------------- end -------------------------
+

@@ -1,0 +1,121 @@
+;AX75v16
+; Увеличение флекс-памяти до 2.40 Мб
+;Increase in the fleks- memory to 2.40 mb.
+;(c) avkiev
+;(r) chaos, Sinclair.
+;(p) dimon_quaker
+;Version: 1,2
+;PatchID: 4337
+;Details: https://patches.kibab.com/patches/details.php5?id=4337
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=ax75v16&f=Increase_in_the_fleks-_memory.rar
+
+/*
+. Сливаем ФФ при помощи программы Joker (http://papuas.allsiemens.com/)
+2. Сохраняем файлы, адресную книку, календарь и всё остальное с помощью программы SiMoCo
+  (http://www.mysiemens.cz/ms/download/SiMoCoSetup.zip)
+3. Используем V_Klay 3.3 или новее - http://www.vi-soft.com.ua/
+4. Урезаем ленгпак.
+4.1. Скачиваем ленгпак (Английский + Русский): http://ustop.nm.ru/ax75/lgp-En_Ru.rar
+     (Приложен к патчу на кибабе)
+4.2. Распаковываем архив с ленгпаком
+4.3. Открываем бинарный файл (lgp-En_Ru.bin) ленгпака в V_Klay-Флешер. 
+4.4. Выставляем: Адрес=600000, размер не меняем, ИспСоСмещения=0. 
+4.5. Нажимаем "Запись памяти", нажимаем "Да". 
+5. Применяем патч ниже.
+6. Включаем телефон, ждем пока отформатируется память.
+7. Не удивляемся, что всё написано иероглифами, 
+   просто нажимаем правую Софт кнопку (Меню), потом 9, 2, 1 и выбираем язык.
+7. Заливаем на телефон все свои файлы, сохраненные в пункте 2, за исключением
+   каталогов: "Adress book" и "apo". Восстанавливаем адресную книку и календарь.
+8. Наслаждаемся диском в 2.40М.
+ЗЫ. Если что-то пошло не так - восстанавливаемся из бекапа из пункта 1.
+*/
+67D89E: 0C000000020056189F01 0B000000040000108401
+
+#pragma enable old_equal_ff
+611000: 0400,4810,8401
+611006: 0400,6010,8401
+61100C: 0400,7810,8401
+611012: 0400,9010,8401
+611018: 0400,A810,8401
+61101E: 0400,C010,8401
+611024: 0400,D810,8401
+61102A: 0400,F010,8401
+611030: 0400,0811,8401
+611036: 0400,2011,8401
+61103C: 0400,3811,8401
+#pragma disable old_equal_ff
+
+#pragma disable warn_no_old_on_apply
+611048: 0000,D0,004000
+61104E: 0000,D1,004000
+611054: 0000,D2,004000
+61105A: 0000,D3,004000
+611060: 0000,D4,004000
+611066: 0000,D5,004000
+61106C: 0000,D6,004000
+611072: 0000,D7,004000
+611078: 0000,D8,004000
+61107E: 0000,D9,004000
+611084: 0000,DA,004000
+61108A: 0000,DB,004000
+611090: 0000,DC,004000
+611096: 0000,DD,004000
+61109C: 0000,DE,004000
+6110A2: 0000,DF,004000
+6110A8: 0000,E0,004000
+6110AE: 0000,E1,004000
+6110B4: 0000,E2,004000
+6110BA: 0000,E3,004000
+6110C0: 0000,E4,004000
+6110C6: 0000,E5,004000
+6110CC: 0000,E6,004000
+6110D2: 0000,E7,004000
+6110D8: 0000,62,004000
+6110DE: 0000,63,004000
+6110E4: 0000,64,004000
+6110EA: 0000,65,004000
+6110F0: 0000,76,004000
+6110F6: 0000,77,004000
+6110FC: 0000,78,004000
+611102: 0000,79,004000
+611108: 0000,9A,004000
+61110E: 0000,9B,004000
+611114: 0000,9C,004000
+61111A: 0000,9D,004000
+611120: 0000,F6,004000
+611126: 0000,F7,004000
+61112C: 0000,F8,004000
+611132: 0000,F9,004000
+611138: 0000,FC,004000
+61113E: 0000,FD,004000
+611144: 0000,FE,004000
+61114A: 0000,FF,004000
+#pragma enable warn_no_old_on_apply
+
+#pragma disable warn_no_old_on_apply
+D00080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+D10080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+D20080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+D30080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+D40080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+D50080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+D60080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+D70080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+D80080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+D90080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+DA0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+DB0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+DC0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+DD0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+DE0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+DF0080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+E00080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+E10080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+E20080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+E30080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+E40080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+E50080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+#pragma enable warn_no_old_on_apply
+;------------------------- end -------------------------
+

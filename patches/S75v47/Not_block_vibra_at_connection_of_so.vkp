@@ -1,0 +1,21 @@
+;S75v47
+;Не блокировать вибросигнал при подключении некоторых аксессуаров
+;Not block vibra at connection of some accessories
+;(c) =NeoSpb=
+;(r) avkiev
+;Version: 
+;PatchID: 7431
+;Details: https://patches.kibab.com/patches/details.php5?id=7431
+/*
+
+*/
+00405588: 0D 00 ;Стандартное зарядное устройство
+                ;Standard Charger
+00405589: 0E 00 ;Data-кабель
+                ;Data Cable
+0040558A: 0F 00 ;USB Data-кабель
+                ;USB Data Cable
+0040558B: 10 00 ;Data Кабель USB-USB
+                ;Data Cable USB-USB
+;------------------------- end -------------------------
+

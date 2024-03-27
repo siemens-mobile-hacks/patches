@@ -1,0 +1,16 @@
+;SL75v47
+;Фотографии с максимальным качеством
+;Photos with maximal quality
+;(c)  SiNgle
+;(p) ferro
+;Version: 
+;PatchID: 6191
+;Details: https://patches.kibab.com/patches/details.php5?id=6191
+/*
+
+*/
+02073c0: 0000DDE5 0200A0E3
+02073d0: 0000DD05 0200A0E3
+
+;------------------------- end -------------------------
+

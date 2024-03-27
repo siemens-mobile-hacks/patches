@@ -1,0 +1,17 @@
+;S65v58
+;Отключить Retarget Exit
+;Disable Retarget Exit
+;(c) 1nvisible
+;Version: 
+;PatchID: 3719
+;Details: https://patches.kibab.com/patches/details.php5?id=3719
+/*
+Для тех, у кого вылетает из явы с Retarget Exit'ом.
+Ничего переименовывать не надо.
+English: For those who have Retarget Exit when using java.
+No additional actions needed.
+
+*/
+130B1EC: 70402DE9 1EFF2FE1
+;------------------------- end -------------------------
+

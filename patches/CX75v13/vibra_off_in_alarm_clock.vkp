@@ -1,0 +1,25 @@
+;CX75v13
+;Отключение вибры в будильнике
+;Vibra off in alarm clock
+;(c) SiNgle
+;(p) SMeeTBB
+;Version: 1.0
+;PatchID: 922
+;Details: https://patches.kibab.com/patches/details.php5?id=922
+/*
+RUS: Отключает вибру при срабатывании будильника.
+
+ENG: Disconnects vibra at operation of an alarm clock.
+*/
+05897E0: 0F209CF04CE9 76F4BEEA0028
+#pragma enable old_equal_ff
+01FFD60: 00402DE9F23F2DE90FE0A0E148F09FE5
+01FFD70: 0FE0A0E144F09FE5000050E30100001A
+01FFD80: 070000EB040000EA0FE0A0E130F09FE5
+01FFD90: 030000EB01002DE90100BDE8F23FBDE8
+01FFDA0: 0080BDE800402DE90020A0E30F00A0E3
+01FFDB0: 0FE0A0E10CF09FE50080BDE891F32BA0 
+01FFDC0: CB6632A0E16632A0F41B2FA0     
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

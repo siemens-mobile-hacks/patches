@@ -1,0 +1,26 @@
+;EL71v45
+;Красная кнопка в Медиаплеере как правый софт(IncFlex27 совместимый)
+;Short pressed red button in Mediaplayer as right soft(IncFlex27 compatible)
+;(c) Evgr
+;(r) XTask coders
+;(p) Виктор89, Feyman
+;Version: 
+;PatchID: 9654
+;Details: https://patches.kibab.com/patches/details.php5?id=9654
+/*
+
+*/
+0A145E4: A8686968FFF770FD 00498847,0xA12FA551
+
+#pragma enable old_equal_ff 
+12FA550: A8686968FFB50C1C0C2814D112488068 
+12FA560: C0688068114988420DD111481149124A 
+12FA570: 8C4205D0944206D10422C7DF00010000 
+12FA580: FFBC022002E0FFBC00F008E878470000
+12FA590: 0040BDE804E08EE21EFF2FE100C09FE5
+12FA5A0: 1CFF2FE1,0xA0A140CD,0xA8E90098,0xA087BA8C
+12FA5B0: 094200009301000094010000
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

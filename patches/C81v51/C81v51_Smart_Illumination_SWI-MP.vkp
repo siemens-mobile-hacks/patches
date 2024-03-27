@@ -1,0 +1,16 @@
+;C81v51
+;Ушлая подсветка (SWI)
+;Smart Illumination (SWI)
+;(c) BoBa
+;(r) (i) StarFriend
+;(p) Evgr
+;Version: 1-MP
+;PatchID: 10424
+;Details: https://patches.kibab.com/patches/details.php5?id=10424
+/*
+
+*/
+0C032F8: CC641BA0 318006A0 
+
+;------------------------- end -------------------------
+

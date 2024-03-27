@@ -1,0 +1,16 @@
+;CX75v25
+;Options instead of My menu in Native Menu
+;Options instead of My menu in Native Menu
+;(c) Saifaye
+;Version: 
+;PatchID: 10687
+;Details: https://patches.kibab.com/patches/details.php5?id=10687
+/*
+
+*/
+02BE940: 6DF0D3FF  F2F008FE 
+03B15A8: 05AA 0022 
+03B15B2: 0020 0620
+04A99A4: D527 C001
+;------------------------- end -------------------------
+

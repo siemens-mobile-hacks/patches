@@ -1,0 +1,27 @@
+;SK65v50
+;Дополнение к таблице PIT
+;Addition to PIT table
+;(c) 1nvisible
+;(r) avkiev
+;Version: 1.1
+;PatchID: 2505
+;Details: https://patches.kibab.com/patches/details.php5?id=2505
+/*
+Теперь ссылки на картинки с номерами от 1289 (0x509) до 1399 (0x577) можно разместить в свободной памяти (0xA01A1000).
+Now you can assign PIT addresses to pics #1289(0x509)-#1399(0x577) in free memory (0xA0FD0050)
+Известные проблемы | Known Probs
+Пока что нельзя смотреть или редактировать эти картинки с помощью SPC3 © ACiD[mrp]\b@iLLi или Smelter © avkiev
+You can't yet view or edit these pics by means of SPC3 © ACiD[mrp]\b@iLLi or Smelter © avkiev
+
+*/
+0739244: FFF7F5FF 16F5CCFD
+#pragma enable old_equal_ff
+044FDE0: 0A4B984207DC084B984204DBC01AC000
+044FDF0: 034BC01810BDE9F21CFA024B1847C046
+044FE00: 00101AA0499273A00905000077050000
+#pragma disable old_equal_ff
+;Можно изменить эти значения, однако могут пропасть некоторые картинки или анимация при вкл/выкл.
+;044FE08: 09050000 XXXXXXXX ;начальная картинка
+;044FE0C: 77050000 XXXXXXXX ;конечная картинка
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;SL75v52
+;Разблокировать клавиатуру только по конфигу эльфа DPU
+;Unlock keyboard only by DPU.elf settings
+;(c) Evgr
+;(r) (i) windes
+;(p) kiREALlov
+;Version: 
+;PatchID: 8245
+;Details: https://patches.kibab.com/patches/details.php5?id=8245
+/*
+По длинному нажатию решетки клава не разблокируется
+Доп.файл:http://patches.siemens-club.org/cnt.php5?d=s75v47&f=Unlock_keyboard_only_by_elf_DPU.zip
+*/
+0342871: D1 E0 ; по длинному нажатию решетки клава не разблокируется 
+0342747: D1 E0 ; по 1 (или 9) и длинному нажатию решетки клава не разблокируется
+03426AD: D1 E0 ; после 112 (или 911) и длинного нажатия решетки клава не разблокируется
+;------------------------- end -------------------------
+

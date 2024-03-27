@@ -1,0 +1,13 @@
+;C75v24
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 2940
+;Details: https://patches.kibab.com/patches/details.php5?id=2940
+/*
+
+*/
+08404F0: 02 01
+;------------------------- end -------------------------
+

@@ -1,0 +1,20 @@
+;M81v51
+;Отключить иконки сети и аккума
+;Disable net and accum icons
+;(c) sempai
+;(p) SimaFish
+;Version: 
+;PatchID: 9220
+;Details: https://patches.kibab.com/patches/details.php5?id=9220
+/*
+
+*/
+;Сеть
+029C1CF: D0 E0 ; канвас иконок сети
+029C1E7: D0 E0 ; иконки сети
+
+;Аккум
+029C70D: D0 E0 ; канвас иконок аккума
+029C725: D0 E0 ; иконки аккума
+;------------------------- end -------------------------
+

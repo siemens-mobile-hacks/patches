@@ -1,0 +1,19 @@
+;S68v52
+;Set soft keys vertical position
+;Set soft keys vertical position
+;(c) Evgr
+;(p) Hotter
+;Version: 
+;PatchID: 10285
+;Details: https://patches.kibab.com/patches/details.php5?id=10285
+/*
+
+*/
+0899BB8: 01923A1C331C0091 00488047,0xA0060791
+
+#pragma enable old_equal_ff 
+60790: 0192034A331C009100B502BC04310847
+607A0: 9F000000 ; y position, 9Fhex=159dec
+#pragma disable old_equal_ff 
+;------------------------- end -------------------------
+

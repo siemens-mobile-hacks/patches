@@ -1,0 +1,28 @@
+;CX70v56
+;Изменение размера Permanent memory
+;Change Permanent memory size
+;(c) ~Jhellico, Zeus
+;(r) Rst7
+;(p) Zeus
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9203
+;PatchID: 9203
+;Details: https://patches.kibab.com/patches/details.php5?id=9203
+/*
+-Отрезается от Java Heap 0x157000 байт памяти, и столько же от PermMem.
+(Java Heap является частью PermMem, поэтому не имеет смысла понижать только один из видов памяти)
+-Освобождённая память отходит к NonPermMem,
+которую так же можно немного увеличить патчем "Изменение размера NonPermMem memory" (Change NonPermMem memory size).
+-Для избежания пика при запуске родного меню ява хип
+установить не меньше, чем 0x015000, а может и больше.
+-Если при загрузке выдаётся сообщение "Ошибка Java" не
+нажимайте кнопку OK иначе огребёте пик. Уйдите от него
+нажатием красной кнопки; можно свернуть или закрыть
+сообщение через Xtask.
+*/
+11C5170: 0x002FD000 0x001A6000 ;PermMem. -1372 Кб
+
+; resize java heap Zeus's Edition
+009AE24: 0x177000 0x020000 ;JavaHeap. -1372 Кб
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v52
+;Фикс падения телефона после запуска рефрешера
+;Refresh fix for Master v14
+;(c) BuG
+;(p) SimaFish
+;Version: 
+;PatchID: 8411
+;Details: https://patches.kibab.com/patches/details.php5?id=8411
+/*
+
+*/
+0060CD2: 04B432DF04BC 009032DF0022
+;------------------------- end -------------------------
+

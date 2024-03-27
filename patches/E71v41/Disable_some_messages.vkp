@@ -1,0 +1,16 @@
+;E71v41
+;Отключение сообщений
+;Disable some messages
+;(c) SiNgle
+;(p) Bueffel
+;Version: 
+;PatchID: 6745
+;Details: https://patches.kibab.com/patches/details.php5?id=6745
+/*
+
+*/
+0701564: F6F026ED C046C046 ; Ringtones off
+0701546: F6F036ED C046C046 ; Ringtones on
+06FF814: F8F0CEEB C046C046 ; Keypad locked
+;------------------------- end -------------------------
+

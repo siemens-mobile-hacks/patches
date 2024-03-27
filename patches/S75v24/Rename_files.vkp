@@ -1,0 +1,15 @@
+;S75v24
+;Переименование файлов с расширением
+;Rename files
+;(c) SiNgle
+;Version: 
+;PatchID: 2346
+;Details: https://patches.kibab.com/patches/details.php5?id=2346
+/*
+
+*/
+059BBA0: 2E22 0022
+04D3E70: 2E22 0022
+04D3E82: 2E22 0022
+;------------------------- end -------------------------
+

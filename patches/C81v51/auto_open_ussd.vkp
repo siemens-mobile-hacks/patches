@@ -1,0 +1,16 @@
+;C81v51
+;Автоматическое открытие USSD сообщений
+;Auto Show USSD
+;(c) Evgr
+;(r) VoVkA
+;(p) dimonp25
+;Version: 
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=10435
+;PatchID: 8728
+;Details: https://patches.kibab.com/patches/details.php5?id=8728
+/*
+
+*/
+03031da: 4bf08afa fcf729f8
+;------------------------- end -------------------------
+

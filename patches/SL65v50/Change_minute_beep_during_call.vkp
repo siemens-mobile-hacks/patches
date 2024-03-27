@@ -1,0 +1,13 @@
+;SL65v50
+;Изменение времени подачи ежеминутного сигнала во время разговора
+;Change minute beep during call
+;(c) SiNgle
+;Version: 
+;PatchID: 5125
+;Details: https://patches.kibab.com/patches/details.php5?id=5125
+/*
+
+*/
+0B436C6: 00 37
+;------------------------- end -------------------------
+

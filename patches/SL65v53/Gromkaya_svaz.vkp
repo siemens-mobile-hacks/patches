@@ -1,0 +1,14 @@
+;SL65v53
+;Убрать подтверждения при вкл. громкой связи
+;Toggle HandsFree without question
+;(c) SiNgle
+;Version: 
+;PatchID: 3474
+;Details: https://patches.kibab.com/patches/details.php5?id=3474
+/*
+
+*/
+164797C: CB21C90000 0021002101
+1647984: 18F0BEEA 17F0D8EA
+;------------------------- end -------------------------
+

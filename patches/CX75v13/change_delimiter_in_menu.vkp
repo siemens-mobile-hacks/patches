@@ -1,0 +1,21 @@
+;CX75v13
+;Изменение разделителя в меню
+;Change delimiter in menu
+;(c) *S*h*a*D*o*W*
+;(r) ILL!, AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 785
+;Details: https://patches.kibab.com/patches/details.php5?id=785
+/*
+RUS: Изменение вида разделителя меню.
+
+ENG: Change of a kind of a divider of the menu.
+*/
+1183878: 55555555555555555555555F FFFFFFFFFFFFFFFFFFFFFFFF;"_____________"
+;1183878: 55555555555555555555555F 8F11E23C4788F11E23C4788F ;"._._._._._._."
+;1183878: 55555555555555555555555F 22222222222222222222222F ;". . . . ."
+;1183878: 55555555555555555555555F 00000000000000000000000F ;" "
+
+;------------------------- end -------------------------
+

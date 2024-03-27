@@ -1,0 +1,17 @@
+;S65v58
+;Автодозвон постоянно с заданной паузой
+;AutoRedial forever with selected pause
+;(c) SiNgle
+;Version: 
+;PatchID: 1246
+;Details: https://patches.kibab.com/patches/details.php5?id=1246
+/*
+Автодозвон постоянно с заданной паузой
+Опытным путём установлена оптимальная пауза в 6 сек для дозвона(не слишком часто, не слишком долго...)
+English: Autoredial with set pause. Pause doesn't increases with calls.
+*/
+0B8DF08: A068 0020
+0B8DF31: 30 20
+0D1A082: 05 07 ; пауза (0A=10 секунд)(07=6 сек)
+;------------------------- end -------------------------
+

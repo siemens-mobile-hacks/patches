@@ -1,0 +1,16 @@
+;A65v17
+;Перенос папки T9 database на диск А
+;T9 database on disk A
+;(c) DeathStar
+;(r) EverGrey
+;Version: 
+;PatchID: 7269
+;Details: https://patches.kibab.com/patches/details.php5?id=7269
+/*
+Перенос папки T9 Database на диск A
+*/
+;A65 sw15/17
+;Предварительно создать папку T9 Database на диске A 
+47FE9E: 42 41
+;------------------------- end -------------------------
+

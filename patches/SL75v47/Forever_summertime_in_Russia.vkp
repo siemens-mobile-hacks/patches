@@ -1,0 +1,22 @@
+;SL75v47
+;Вечное летнее время в России
+;Forever summertime in Russia
+;(c) Feyman
+;(p) bertgrin
+;Version: 
+;PatchID: 10201
+;Details: https://patches.kibab.com/patches/details.php5?id=10201
+/*
+
+*/
+0BF54E0: B4 F0 ; Москва
+0BF5F6C: F000 2C01 ; Ижевск
+0BF67DC: 2C 68 ; Екатеринбург
+0BF7268: 68 A4 ; Новосибирск
+0BF78BC: A4 E0 ; Красноярск
+0BF7CF4: E001 1C02 ; Иркутск
+0BF899C: 58 94 ; Владивосток
+0BF9428: 94 D0 ; Магадан
+0BF9A80: 0C03 D002 ; Камчатка
+;------------------------- end -------------------------
+

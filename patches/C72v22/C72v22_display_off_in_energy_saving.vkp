@@ -1,0 +1,22 @@
+;C72v22
+;Отключать дисплей в режиме заставки Экономия энергии 
+;Switch off display in Energy saving screensaver 
+;(c) Evgr
+;Version: 1.1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=10272
+;PatchID: 10271
+;Details: https://patches.kibab.com/patches/details.php5?id=10271
+/*
++ fix picture screensaver in order not to cause Energy saving
++ исправил, чтобы на Заставке с картинкой не включался режим Экономии энергии
+
+по всему получается, патч только для телефонов с дисплеем DisplayID(1,54): Philips Leadis LDS183
+*/
+08E15CC: 05 04
+08E15CF: D1 D0
+08E15D4: 01 03
+11A261C: 20 10
+11C59B4: 0000A0E3 010020E2
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,39 @@
+;CX75v25
+;Замена значка IMS-700 на Winamp
+;Change picture IMS-700 of Winamp
+;(c) DM101
+;Version: 
+;PatchID: 5941
+;Details: https://patches.kibab.com/patches/details.php5?id=5941
+/*
+Замена иконки наушников на значёк Winamp.
+*/
+; #######################################################################
+; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
+; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###
+; ### Additional programming by Cluni.                                ###
+; ###                                                                 ###
+; ### GSM Development Crew - www.gsm-dev.com                          ###
+; ### GSM Multifund, Handyhacking - http://www.gsm-multifund.de/board ###
+; ###                                                                 ###
+; ### Date: 11.10.2006  -  Time: 18:29:09                             ###
+; ### Patch for: SIEMENS CX75 v25                                     ###
+; #######################################################################
+
+
+; ##### Picture 781 #####
+010C188C: 0E0E8500845717A1 0E0E8500845717A1
+
+01175784: 03C008FF04C002FFFFB60644F896FFFF 19FFFDFB69D609FFFBDBB28460D608FF
+01175794: C0FFFFB64406B6FE449603FFFDB644B6 FBB284ACCCD607FFFAD684A8D5F4D506
+011757A4: 06FFF9B64496FFFF44B608FFFAB644FF FFF8DA8984CCF8F4C8AD06FFF889ACF8
+011757B4: FF44B608FFD4B644FFFF44B6FF4444FF FDF8F0C88406FFFEB1F802FCFCF0C8A8
+011757C4: FF4444FFB644FFFF44B6449244FFFF44 AD06FFF9D6A9F5CCA8D1FA06FFFAD688
+011757D4: 9244B644FFFFB644B69244FFFF4492B6 D1CCCDDA07FFFBC080ACCCD609FFFD89
+011757E4: 449203FFE744B69244FFFF4492B644FF 84D50BFFFED6DA18FF0F0F0F0F0F0F0F
+011757F4: FFC0FFFF449244FFFF449244FFFF03C0 0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F
+01175804: F6FF449244FFFF449244FF04C002FF02 0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F
+01175814: 4402FF024402FF05C008FF03C0 0F0F0F0F0F0F0F0F0F0F0F0F0F
+
+;------------------------- end -------------------------
+

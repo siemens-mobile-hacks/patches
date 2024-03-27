@@ -1,0 +1,25 @@
+;S75v47
+;Скрин-шутер
+;Screen Shooter
+;(c) avkiev
+;(r) (i) -=(Kad)=-
+;Version: 2.1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7078
+;PatchID: 6956
+;Details: https://patches.kibab.com/patches/details.php5?id=6956
+/*
++2.1 добавлена возможность выключения в 8м профиле
+Создайте папку 0:\Misc\Shots
+Если патч выключен - Фонарик работает как обычно.
+Если патч включен - вместо Фонарика работает скрин-шутер
+
++2.1 Now you can disable patch in 8th profile
+Create folder 0:\Misc\Shots
+If patch disabled - Lighter works as usually
+If patch enabled - instead of Lighter works ScreenShooter
+*/
+;Run ScreenShooter instead of Lighter
+0424878: 0xA032EBB7 0xA0067301
+00673F8: 0xFFFFFFFF 0xA032EBB7
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;A60v27
+;Меню выбора языка ввода при нажатии Help (Инф. Т9)
+;Input language menu on Help key (Т9 info)
+;(c) Rasp
+;(r) FFNevil
+;Version: 
+;PatchID: 297
+;Details: https://patches.kibab.com/patches/details.php5?id=297
+/*
+
+*/
+;A60v27
+;Вместо Инф.T9 переход на Выбор языка. 
+;Портировано: Rasp
+
+6AF8C7: B34879 85C0F1
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;C75v22
+;Открыть заблокированные блоки EEPRom
+;Open closed EEPRom blocks
+;(c) Skylord
+;(r) AsteriX
+;Version: 
+;PatchID: 1145
+;Details: https://patches.kibab.com/patches/details.php5?id=1145
+/*
+
+*/
+086BC20: 00 01
+
+;------------------------- end -------------------------
+

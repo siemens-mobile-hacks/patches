@@ -1,0 +1,13 @@
+;C75v24
+;Изменить частоту обновления OverLay
+;Change DevMenu Overlay Display Refresh Rate
+;(c) benj9
+;Version: 
+;PatchID: 2951
+;Details: https://patches.kibab.com/patches/details.php5?id=2951
+/*
+
+*/
+02C19DE: 36 6C ; internal timer ~ miliseconds * 216.7 / 1000
+;------------------------- end -------------------------
+

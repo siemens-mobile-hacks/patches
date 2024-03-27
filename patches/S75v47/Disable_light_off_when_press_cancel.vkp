@@ -1,0 +1,14 @@
+;S75v47
+;Отключить выключение подсветки при нажатии отмена в входящем смс
+;Disable light off when press cancel in sms incoming window
+;(c) BingK(binghelingxi)
+;(p) den11111
+;Version: 
+;PatchID: 8527
+;Details: https://patches.kibab.com/patches/details.php5?id=8527
+/*
+
+*/
+0341938: ACF04EED C046C046
+;------------------------- end -------------------------
+

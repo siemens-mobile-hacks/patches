@@ -1,0 +1,18 @@
+;C81v51
+;Изменение шрифтов меню и софт кнопок
+;Change menu and soft keys fonts
+;(c) SiNgle
+;(r) tender
+;(p) dimonp25
+;Version: 
+;PatchID: 9192
+;Details: https://patches.kibab.com/patches/details.php5?id=9192
+/*
+
+*/
+0c3997c: 05 02 ; Шрифт софт-кнопок
+0C399c4: 05 0C ; Выбранная позиция меню
+0c399c8: 04 0B ; Menu
+
+;------------------------- end -------------------------
+

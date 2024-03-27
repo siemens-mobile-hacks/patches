@@ -1,0 +1,19 @@
+;CX75v25
+;Значок Вибры на главном экране
+;vibra logo on MainScreen
+;(c) SiNgle
+;(r) 1nvisible, BuG
+;(p) sempai
+;Version: 2
+;PatchID: 7324
+;Details: https://patches.kibab.com/patches/details.php5?id=7324
+/*
+
+*/
+02BF692: 01D1 C046
+02A8F24: 09D0 0028
+;02A8E1A: 00 01 ; show logo when vibra is disabled
+049DC78: 998483 876932
+
+;------------------------- end -------------------------
+

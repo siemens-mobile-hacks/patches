@@ -1,0 +1,15 @@
+;EL71v45
+;Не показывать иконку GPRS в яве
+;Disable GPRS icon in java
+;(c) Evgr
+;(r) BingK(binghelingxi)
+;(p) Виктор89
+;Version: 
+;PatchID: 9867
+;Details: https://patches.kibab.com/patches/details.php5?id=9867
+/*
+
+*/
+0AEDD60: 57A2FCFB 0000A0E1 
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;S75v47
+;Отключить ввод 112 на Экране Блокировки
+;Disable 112 Input In Locked Screen
+;(c) 1nvisible
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8191
+;Details: https://patches.kibab.com/patches/details.php5?id=8191
+/*
+
+*/
+034273A: 1DD0 2520
+;------------------------- end -------------------------
+

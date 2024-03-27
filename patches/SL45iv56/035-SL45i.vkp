@@ -1,0 +1,22 @@
+;SL45iv56
+;Поправки к "Красной трубке"
+;RED Button Modification
+;(c) RizaPN
+;Version: 
+;PatchID: 1599
+;Details: https://patches.kibab.com/patches/details.php5?id=1599
+/*
+Патч исправляет ошибки: 
+- не работает Адресная книга в MP3 плеере при отправке SMS. 
+- останавливается анимированное лого оператора при нажатии неиспользуемых клавиш.
+Достаточно нажать "Красную трубку" для выхода из "глючной" ситуации.
+
+Патч №035 с http://patch.oslik.ru/SL45_RU
+*/
+3B066C: DAA28AFB DAC7F0D3 
+
+27D3F0: FFFFFFFFFFFFFFFF D7503400F68F1C3E 
+27D3F8: FFFFFFFFFFFFFFFF F68E1E3EDAA28AFB 
+27D400: FFFF DB00
+;------------------------- end -------------------------
+

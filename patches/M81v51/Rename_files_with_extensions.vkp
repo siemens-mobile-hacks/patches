@@ -1,0 +1,16 @@
+;M81v51
+;Переименование файлов с расширением
+;Rename files with extensions
+;(c) SiNgle
+;(p) Cypok
+;Version: 
+;PatchID: 6719
+;Details: https://patches.kibab.com/patches/details.php5?id=6719
+/*
+
+*/
+02A5438: 2E22 0022
+02A544A: 2E22 0022
+05B3180: 2E22 0022
+;------------------------- end -------------------------
+

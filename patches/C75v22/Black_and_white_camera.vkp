@@ -1,0 +1,13 @@
+;C75v22
+;Чёрнобелый режим камеры
+;Black and white camera
+;(c) SiNgle
+;Version: 
+;PatchID: 3914
+;Details: https://patches.kibab.com/patches/details.php5?id=3914
+/*
+
+*/
+0C60207: 3F163F 801680 ;
+;------------------------- end -------------------------
+

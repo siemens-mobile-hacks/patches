@@ -1,0 +1,32 @@
+;X75v100
+;Настройка звука флеш СМС
+;Flash SMS Sound control
+;(c) -=(Kad)=-, Evgr
+;(p) Evgr
+;Version: 
+;PatchID: 10121
+;Details: https://patches.kibab.com/patches/details.php5?id=10121
+/*
+Теперь звук отчета о доставке в виде flash-sms отличается от обычной смс! Номер мелодии задавать в HEX
+*/
+#pragma enable old_equal_ff
+0072300: FEB51048C4DF01D10F200DE0071CB87A
+0072310: 012801D1202007E07878B9787A683B7A
+0072320: 98DF787AFF28F5D0FEBC33DF002401BC
+0072330: 04300047
+
+0072340: E4D3C2B1110220000000000000000000,"\
+{p=`Flash SMS Sound control` id=200211 cp=`-=(Kad)=-, Evgr` ver=1}\
+{c typ `SMS sound+vibra`=0x0F `SMS only sound`=0x15 `Accu low pow`=0x1E `Video sound`=0x1D `Cam sound`=0x1C `Phone On sound`=0x16 `Phone Off sound`=0x17 `No sound`=0xFF}","\
+{10 cb `Disable sound&vibra`}","\
+{sm `First sound settings`}","\
+{1 h `Sound #` v=88}","\
+{2 b Frequency v=10}","\
+{4 ms Duration v=45}","\
+{8 cb `Play if vibra off` v=1}","\
+{endsm}","\
+{9 o `Second sound` c=typ v=0x0F}","\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

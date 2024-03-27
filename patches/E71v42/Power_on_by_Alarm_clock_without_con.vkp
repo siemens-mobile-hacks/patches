@@ -1,0 +1,14 @@
+;E71v42
+;Не спрашивать подтверждения включения по будильнику
+;Power on by Alarm clock without confirmation
+;(c) ThE TrIFoN
+;(p) a1ex
+;Version: 
+;PatchID: 6732
+;Details: https://patches.kibab.com/patches/details.php5?id=6732
+/*
+
+*/
+06712B4: E1770BFB 470000EA
+;------------------------- end -------------------------
+

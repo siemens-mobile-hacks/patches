@@ -1,0 +1,14 @@
+;C75v22
+;Change win-1252 to win-1251 for Cyrillic in browser
+;Change win-1252 to win-1251 for Cyrillic in browser
+;(c) mixbb, AlexSid
+;(p) SuDex
+;Version: 
+;PatchID: 7003
+;Details: https://patches.kibab.com/patches/details.php5?id=7003
+/*
+
+*/
+E86456: 32 31
+;------------------------- end -------------------------
+

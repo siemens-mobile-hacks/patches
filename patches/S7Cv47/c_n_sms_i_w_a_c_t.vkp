@@ -1,0 +1,16 @@
+;S7Cv47
+;Change New SMS Incoming Window Auto Close Time
+;Change New SMS Incoming Window Auto Close Time
+;(c) BingK(binghelingxi)
+;Version: 
+;PatchID: 9055
+;Details: https://patches.kibab.com/patches/details.php5?id=9055
+/*
+
+0x00001770=2*0x00000BB8
+0x00001770 @ 5 seconds.
+
+*/
+0472A50: 0x00000BB8 0x00001770
+;------------------------- end -------------------------
+

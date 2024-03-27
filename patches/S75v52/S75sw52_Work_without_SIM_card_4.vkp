@@ -1,0 +1,17 @@
+;S75v52
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) Saifaye
+;(p) Evgr,Feyman,Loquat
+;Version: 4
+;PatchID: 10206
+;Details: https://patches.kibab.com/patches/details.php5?id=10206
+/*
+по нажатию левого софта попадаем в Главное меню, нет поиска сети, экономит энергию.
+
+*/
+02FB15C: FBF7A6FD 33F036F9
+04203CC: C504 A205
+042DA88: 3201 DB00
+;------------------------- end -------------------------
+

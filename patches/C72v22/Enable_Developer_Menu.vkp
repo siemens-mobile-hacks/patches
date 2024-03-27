@@ -1,0 +1,13 @@
+;C72v22
+;Включение Инженерного меню
+;Enable_Developer_Menu
+;(c) Phantom
+;Version: 
+;PatchID: 5813
+;Details: https://patches.kibab.com/patches/details.php5?id=5813
+/*
+
+*/
+115B108: 040090E5 0000A0E3
+;------------------------- end -------------------------
+

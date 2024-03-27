@@ -1,0 +1,21 @@
+;M75v5
+;Изменение типа виброзвонка при установке на горячую кнопку
+;Change Vibra Type When Turning It On With HotKey
+;(c) 1nvisible
+;(p) Smelter auto-patch
+;Version: 1.0
+;PatchID: 532
+;Details: https://patches.kibab.com/patches/details.php5?id=532
+/*
+
+*/
+;00 - Standard
+;01 - Helicopter
+;02 - UFO
+;03 - Shock
+;04 - Mosquito
+;05 - Train
+032529E: 00 NN
+
+;------------------------- end -------------------------
+

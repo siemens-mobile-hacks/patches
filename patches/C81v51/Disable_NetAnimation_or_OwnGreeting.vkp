@@ -1,0 +1,15 @@
+;C81v51
+;Отключить анимацию поиска сети или приветствие
+;Disable NetAnimation or OwnGreeting
+;(c) benj9
+;(p) den11111
+;Version: 2
+;PatchID: 7824
+;Details: https://patches.kibab.com/patches/details.php5?id=7824
+/*
+
+*/
+02FDD3D: 1C 21
+02FDE43: 1C 21
+;------------------------- end -------------------------
+

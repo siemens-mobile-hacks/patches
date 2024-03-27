@@ -1,0 +1,16 @@
+;X75v100
+;Прицел в камере
+;Sight in the chamber
+;(c) Pentium02
+;(r) DM101
+;Version: 
+;PatchID: 6200
+;Details: https://patches.kibab.com/patches/details.php5?id=6200
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=pricel_v_kameere.rar
+
+/*
+Теперь в камере есть прицел. В архиве сами gpf'ки и исходник для желающих изменить цвет прицела. Идею подал DM101.
+*/
+-
+;------------------------- end -------------------------
+

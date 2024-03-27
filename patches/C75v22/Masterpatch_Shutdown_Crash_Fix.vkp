@@ -1,0 +1,14 @@
+;C75v22
+;Masterpatch Shutdown Crash Fix
+;Masterpatch Shutdown Crash Fix
+;(c) benj9
+;Version: 
+;PatchID: 2844
+;Details: https://patches.kibab.com/patches/details.php5?id=2844
+/*
+
+*/
+0326294: 03DF C046
+032629C: 64F172EF C046C046
+;------------------------- end -------------------------
+

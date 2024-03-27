@@ -1,0 +1,15 @@
+;M75v19
+;Disable More Nasty Debug
+;Disable More Nasty Debug
+;(c) benj9
+;Version: 
+;PatchID: 3420
+;Details: https://patches.kibab.com/patches/details.php5?id=3420
+/*
+Очередной патч из анти-дебажной темы 
+Если стоит патч Disable MMS Debug, то закоментируем 1 строку
+*/
+031DD14: 0FB4 7047
+031DB80: FFB5 7047
+;------------------------- end -------------------------
+

@@ -1,0 +1,21 @@
+;SL45iv56
+;Выбираемое инвертирование дисплея
+;Selectable Display Invert
+;(c) RizaPN
+;Version: 
+;PatchID: 1682
+;Details: https://patches.kibab.com/patches/details.php5?id=1682
+/*
+Этот патч использует опцию "Большие буквы" из 5-го профиля (2-й 
+профиль снизу). Включение "Больших букв" инвертирует дисплей. 
+
+Release: October 14, 2003
+
+Патч №089 с http://patch.oslik.ru/SL45_RU
+*/
+44004C: A99AF0BE DAC780DB 
+
+27DB80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF A99AF0BED7400D00C2F5A4249AF50460 
+27DB90: FFFFFFFFFFFFFFFFАААА 9110912091309140DB00 
+;------------------------- end -------------------------
+

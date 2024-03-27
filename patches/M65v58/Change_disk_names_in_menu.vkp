@@ -1,0 +1,18 @@
+;M65v58
+;Изменение названия дисков в меню выбора
+;Change disk names in menu
+;(c) DeHuCoH, USV
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 866
+;Details: https://patches.kibab.com/patches/details.php5?id=866
+/*
+
+*/
+009AFE2: 44726976652030 303A5C44617461 ; Drive 0 -> Data
+009B000: 4472697665203100 313A5C4361636865 ; Drive 1 -> Cache
+009B01E: 447269766520320000 323A5C436F6E666967 ; Drive 2 -> Config
+
+;------------------------- end -------------------------
+

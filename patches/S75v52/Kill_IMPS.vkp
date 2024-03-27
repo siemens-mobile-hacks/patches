@@ -1,0 +1,14 @@
+;S75v52
+;Грохнуть InstantMessenger
+;Kill InstantMessenger
+;(c) Feyman
+;Version: 
+;PatchID: 10718
+;Details: https://patches.kibab.com/patches/details.php5?id=10718
+/*
+IMPS нафиг не нужен, а более 100КБ оперативки всегда выжирает. Хватит это терпеть!
+*/
+08E6502: 20F0B6EE 05F052EE ; don't create process
+0421FCC: 5F05 8405 ;Delete from FlexMenu
+;------------------------- end -------------------------
+

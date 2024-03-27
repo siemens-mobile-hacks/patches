@@ -1,0 +1,21 @@
+;CX70v56
+;Скрин-шутер
+;Screen Shooter
+;(c) avkiev
+;(p) SiamiX
+;Version: 2
+;PatchID: 5740
+;Details: https://patches.kibab.com/patches/details.php5?id=5740
+/*
+Создайте папку 0:\Misc\Shots
+Повесьте на какую-нибудь кнопку шорткат STUP_BABYSITTER или вызовите функцию A0FC7301 с помощью KeySequencer
+
+Если патч выключен - шорткат работает как обычно.
+Если патч включен - работает скрин-шутер
+*/
+; Run ScreenShooter instead of STUP_BABYSITTER
+09448E4: 0xA08F0227 0xA0FC7301
+0FC73E8: 0xFFFFFFFF 0xA03191F5
+
+;------------------------- end -------------------------
+

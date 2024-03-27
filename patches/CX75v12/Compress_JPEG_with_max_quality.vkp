@@ -1,0 +1,16 @@
+;CX75v12
+;Сжатие JPEG с максимальным качеством
+;Compress JPEG with max quality
+;(c) SiNgle
+;(r) Izzzwerg
+;(p) tolala
+;Version: 2.1
+;PatchID: 5653
+;Details: https://patches.kibab.com/patches/details.php5?id=5653
+/*
+
+*/
+A87E10: 32 00
+ABAA98: 186D02 000505
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;M75v19
+;Счётчик траффика вместо логотипа GPRS
+;Traffic indicator instead of GPRS logo
+;(c) Sinclair
+;(r) (i) ~Jhellico
+;(p) Kibab
+;Version: 1.3
+;PatchID: 2867
+;Details: https://patches.kibab.com/patches/details.php5?id=2867
+/*
+
+*/
+0950E58: 10708DE50210A0E3020044E2 00109FE531FF2FE1,0xA0FC5601 ; M75v19
+;------------------------- end -------------------------
+

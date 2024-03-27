@@ -1,0 +1,15 @@
+;S75v47
+;Диспатчер главного экрана
+;Mainscreen-dispatcher
+;(c) avkiev
+;(r) KreN
+;Version: 3
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7014
+;PatchID: 5622
+;Details: https://patches.kibab.com/patches/details.php5?id=5622
+/*
+
+*/
+03010F8: 00201B92F860391C0861 00488047,0xA0063E01,C046   ; S75v47
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;M81v51
+;Убрать сообщение "Блокировка клавиатуры включена"
+;Disable message "Keypad locked"
+;(c) SiNgle
+;(p) Frezzz
+;Version: 
+;PatchID: 6368
+;Details: https://patches.kibab.com/patches/details.php5?id=6368
+/*
+
+*/
+034CA00: AAF08AEF C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,34 @@
+;S55v91
+;Вибросигнал в момент соединения
+;Vibrate shortly after connecting
+;(c) Matr!x
+;(r) Sinclair
+;(p) avkiev, Mich3L
+;Version: 2
+;PatchID: 4794
+;Details: https://patches.kibab.com/patches/details.php5?id=4794
+/*
+Переделал патч "Вибросигнал в момент соединения". Теперь в момент вибры отключается микрофон и собеседник не слышит бззз в начале разговора.
+
+*/
+23DB42: DA639CF6 DA6120B1
+#pragma enable old_equal_ff
+21B120: DAD1CED8E6FC2F00DAA430AFE6FC52B1
+21B130: E6FD610088D088C0E00E88E0E6FCF403
+21B140: E00DE6FE3600E00FDAD1EAF20806FAD1
+21B150: D8D8E6FC0000DAA430AFDB00
+#pragma disable old_equal_ff
+
+;21B126: 2F XX ; Звук вместо вибры (из списка звуков)
+;21B144: 36 XX ; Время работы вибры, 1B = 1/8 секунды, 36 = 1/4 секунды,
+; 6C = 1/2 секунды, D8 = 1 секунда
+
+;Баг: ИНОГДА самый первый вызов после включения телефона не вибрирует.
+
+;Отключение микрофона во время вибры. Придумал как сделать dnn. Адаптировал vvrom :). 
+23DB42: DA6120B1 DA611CB1
+21B11C: FFFFFFFF DAA262FE
+21B15A: DB00FFFFFFFF DAA272FEDB00
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;SL45iv56
+;"#" и "Правый софт" как переключатель вибры
+;#[RightSoft] as Vibra Toggle
+;(c) RizaPN
+;Version: 
+;PatchID: 1939
+;Details: https://patches.kibab.com/patches/details.php5?id=1939
+/*
+English: If you want to use another fixed shortcut button, select your own patch for
+that particular button (in the previous patch list), and use DA DC 6A 17 as
+a Vibra Toggle entry-point.
+
+Release: April 10, 2003
+Revision: May 05, 2003
+*/
+0x3B31AC: 7D03 C802
+0x3B3398 : DAD91A49 DADC6A17
+;------------------------- end -------------------------
+

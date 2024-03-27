@@ -1,0 +1,13 @@
+;S75v22
+;Убрать сообщение "GPRS вкл/выкл"
+;Disable message "GPRS on/off"
+;(c) SiNgle
+;Version: 
+;PatchID: 1773
+;Details: https://patches.kibab.com/patches/details.php5?id=1773
+/*
+Отключение сообщения "GPRS вкл/выкл" при соответствующем действии.
+*/
+09452A8: C0109F15 02F0A0E1
+;------------------------- end -------------------------
+

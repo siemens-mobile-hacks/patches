@@ -1,0 +1,27 @@
+;SL45iv56
+;FAM. Модификация доступа к файлам
+;FAM. File Access Modification
+;(c) Rst7/CBSIE
+;Version: 3.3
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=3382
+;PatchID: 2142
+;Details: https://patches.kibab.com/patches/details.php5?id=2142
+/*
+Работает вместе с FAM3.2 (не сносить)!
+Добавляет паузу MP3 при обращении к диску. 
+
+
+Release: 08.02.2006
+*/
+; Переход на проверку доп. функций. 
+0x449EDA: FAE4707E FAE4A07F 
+; Код патча 
+0x447F90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2A2A2A2046414D2076332E33202A2A2A 
+; Добавление функции 
+0x447FA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAD0825E48402D13E6FCD27FE6FDE400 
+0x447FB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF ECFDECFCE6FCE835E0EDE6FEAC00E6FF 
+0x447FC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2400DAC130AADAD0825E48403DFCFAE4 
+0x447FD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 707EE6FCE835E0EDE6FEAC00E6FF2600 
+0x447FE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC130AADAD0825E48402DFCDB00
+;------------------------- end -------------------------
+

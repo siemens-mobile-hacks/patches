@@ -1,0 +1,16 @@
+;M65v58
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 3464
+;Details: https://patches.kibab.com/patches/details.php5?id=3464
+/*
+
+*/
+;* Java Acceleration *
+; (c) SiNgle
+; Smelter auto-patch
+1164CD4: 02 01
+;------------------------- end -------------------------
+

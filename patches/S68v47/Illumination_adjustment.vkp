@@ -1,0 +1,15 @@
+;S68v47
+;Настройка подсветки
+;Illumination adjustment
+;(c) avkiev
+;(r) benj9
+;(p) den11111
+;Version: 
+;PatchID: 7865
+;Details: https://patches.kibab.com/patches/details.php5?id=7865
+/*
+
+*/
+0903368: 69DE4DE202B0A0E101A0A0E1 04E08FE204F01FE5,0xA0066701
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;A60v27
+;Убрать заголовок в Главном меню
+;Remove header in Main menu
+;(c) .
+;(p) Rasp
+;Version: 
+;PatchID: 10473
+;Details: https://patches.kibab.com/patches/details.php5?id=10473
+/*
+
+*/
+14CB32: DAB472CD CC00CC00
+;------------------------- end -------------------------
+

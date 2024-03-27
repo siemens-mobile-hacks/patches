@@ -1,0 +1,14 @@
+;S65v58
+;Изменить звук разряженного аккума
+;Change Accu Empty Sound
+;(c) benj9
+;(p) KiRiK
+;Version: 
+;PatchID: 1442
+;Details: https://patches.kibab.com/patches/details.php5?id=1442
+/*
+
+*/
+0C5A644: 03 3A ; PlaySound number: 00 = no sound. 2F = vibrate. e.g.: 3A, 3B 3E, 3F, 5A, 5E
+;------------------------- end -------------------------
+

@@ -1,0 +1,27 @@
+;X75v100
+;Обновитель главного экрана
+;MS-Refresher
+;(c) -=(Kad)=-
+;Version: 1-BASE
+;PatchID: 7052
+;Details: https://patches.kibab.com/patches/details.php5?id=7052
+/*
+Обновление! Совместимость с загрузчиком эльфов 2.2
+*/
+#pragma enable old_equal_ff
+006CE00: FFB51448C4DF17D0071C43DF01307978
+006CE10: C14011D3C7DFDB80007800280CD1C7DF
+006CE20: DF800078002807D1B978012902D07FDF
+006CE30: 012801D0C7DF0901FFBC0149884700BD
+
+006CE40: E4D3C2B110AD00000000000000000000,"\
+{p=MS-Refresher ver=1 cp=`-=(Kad)=-` id=ad10}\
+{info `This path wil update the provider string every 2-4 seconds`}\
+Work if:\
+{1.0 cb `Locked` v=1}\
+{1.1 cb `Unlocked`}\
+{2 cb `Player on`}\
+",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

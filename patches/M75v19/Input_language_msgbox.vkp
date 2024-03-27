@@ -1,0 +1,13 @@
+;M75v19
+;Быстрый показ окна "Язык ввода:" при выборе языка
+;Fast show "Input language:" msgbox
+;(c) SiNgle
+;Version: 
+;PatchID: 2312
+;Details: https://patches.kibab.com/patches/details.php5?id=2312
+/*
+
+*/
+0A3FA38: B80B 0100
+;------------------------- end -------------------------
+

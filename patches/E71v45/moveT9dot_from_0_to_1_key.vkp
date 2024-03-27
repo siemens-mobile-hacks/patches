@@ -1,0 +1,26 @@
+;E71v45
+;Перенос набора точки в режиме Т9 с клавиши 0 на 1
+;move "T9 dot" from key 0 to key 1
+;(c) BuG
+;Version: 
+;PatchID: 10318
+;Details: https://patches.kibab.com/patches/details.php5?id=10318
+/*
+В случае необходимости изменения раскладки в другом варианте, измените раскладку с помощью редактора раскладки в V_Klay и примените этот патч
+*/
+; If you want another keyboard layout, e.g. Nokia style,
+; change the layout with V_Klay and apply this patch.
+
+017FB3E: 30 31
+017FB4A: 31 30
+0AEBC08: 31 30
+0AEBC0C: 30 31
+0AEE0E2: 31 30
+0AEE102: 30 31
+0AEE110: 30 31
+0AEE122: 30 31
+00B4C8C: 30 31
+00B4C90: 31 30
+00B4D4E: 30 31
+;------------------------- end -------------------------
+

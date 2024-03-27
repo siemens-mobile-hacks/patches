@@ -1,0 +1,20 @@
+;A50v12
+;Читать новое SMS при залоченной клавиатуре
+;Read Message when Key Locked
+;(c) digitalbrothers, vova_v_g, Ramil_
+;(p) Broken Brain
+;Version: 2
+;PatchID: 2204
+;Details: https://patches.kibab.com/patches/details.php5?id=2204
+/*
+Читать новое SMS, пропущенные звонки, пропущенные события и т.д. нажимая левую софт-кнопку при залоченной клавиатуре
+ v2 -> при 2-х или более упущеных событий, также происходит их выбор клавиатура становится разблокированной
+
+*/
+2B2080: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46F644002D0D46F646002D0E46F64700
+2B2090: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 2D0F46F64C002D1046F61E00FAF1487C
+2B20A0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC474C1FAF1B079DAC474C1FAF1627A
+2B20B0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC474C1FAF1707ADAC474C1FAF19C7A
+317C44: 46F61E00 FAEB8020
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;SL65v50
+;Disable More Nasty Debug
+;Disable More Nasty Debug
+;(c) benj9
+;(p) Strike66, Волк
+;Version: 
+;PatchID: 3445
+;Details: https://patches.kibab.com/patches/details.php5?id=3445
+/*
+Ускоритель работы телефона.
+*/
+0A224A0: FFB5 7047
+;------------------------- end -------------------------
+

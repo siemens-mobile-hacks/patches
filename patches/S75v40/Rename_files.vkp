@@ -1,0 +1,17 @@
+;S75v40
+;Переименование файлов с расширением
+;Rename files with extensions
+;(c) SiNgle
+;(p) GrosserS
+;Version: 
+;PatchID: 3728
+;Details: https://patches.kibab.com/patches/details.php5?id=3728
+/*
+Переименование файлов с расширением
+English:Rename files with extensions
+*/
+004D6280: 2E22 0022
+004D6292: 2E22 0022
+00594298: 2E22 0022
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;CX70v50
+;Изменение названия дисков в меню выбора
+;Change disk names in menu
+;(c) DeHuCoH, USV
+;(p) AsteriX
+;Version: 
+;PatchID: 105
+;Details: https://patches.kibab.com/patches/details.php5?id=105
+/*
+Изменение названия дисков в меню выбора: 
+Drive 0 -> 0:\Data
+Drive 1 -> 1:\Cache
+Drive 2 -> 2:\Config
+*/
+009BCAE: 44726976652030 303A5C44617461 ;Drive 0 -> 0:\Data
+009BCCC: 4472697665203100 313A5C4361636865 ;Drive 1 -> 1:\Cache
+009BCEA: 447269766520320000 323A5C436F6E666967 ;Drive 2 -> 2:\Config
+;------------------------- end -------------------------
+

@@ -1,0 +1,19 @@
+;CX75v13
+;Увеличить размер фото при входящем звонке
+;Enlarge incoming call photo
+;(c) SiNgle
+;(r) KiRiK, AsteriX
+;(p) ТАРАКАН
+;Version: 2.0
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=5998
+;PatchID: 783
+;Details: https://patches.kibab.com/patches/details.php5?id=783
+/*
+RUS: Увеличивает на весь экран фото абонента, на которого задана картинка при входящем звонке.  Рекомендуется для фото использовать картинку 176х132 пикселя.
+
+ENG: Increases by all screen of a photo of the subscriber on which the picture is set at an entering call. It is recommended to use for a photo a picture 176X132 pixel.
+*/
+0517C22: 052104 002100
+0517C2A: 502280 842278
+;------------------------- end -------------------------
+

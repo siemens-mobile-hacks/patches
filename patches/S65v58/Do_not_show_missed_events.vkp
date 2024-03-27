@@ -1,0 +1,16 @@
+;S65v58
+;Не показывать пропущенные события
+;Do not show missed events
+;(c) 1nvisible
+;(r) benj9
+;Version: 
+;PatchID: 9534
+;Details: https://patches.kibab.com/patches/details.php5?id=9534
+/*
+Выдран из 917 для удобства
+*/
+169907C: C6F8 0028 
+16990A4: C5F8 0028
+
+;------------------------- end -------------------------
+

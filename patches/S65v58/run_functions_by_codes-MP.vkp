@@ -1,0 +1,13 @@
+;S65v58
+;Запуск функций с помощью *# кодов
+;Running functions with *# codes
+;(c) empeka
+;Version: 
+;PatchID: 1195
+;Details: https://patches.kibab.com/patches/details.php5?id=1195
+/*
+Врезка к патчу 1194
+*/
+169EB80: 0655021951700522 004B9847,0xA0FC3501 ; S65v58
+;------------------------- end -------------------------
+

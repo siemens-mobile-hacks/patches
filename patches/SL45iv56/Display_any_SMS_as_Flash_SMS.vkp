@@ -1,0 +1,37 @@
+;SL45iv56
+;Показывать любое SMS как Flash SMS
+;Display any SMS as Flash SMS
+;(c) Greenteas
+;Version: 
+;PatchID: 2111
+;Details: https://patches.kibab.com/patches/details.php5?id=2111
+/*
+English: Latest SMS or any SMS marked as unread in Inbox will be displayed on 
+mainscreen just like a Flash SMS or like a Status report. rolling news! 
+When using any SMS marked as unread, you have to activate it from the menu 
+"Cell Broadcast" -- "Auto Display" -- "Only new". 
+*/
+0x2F9F4C: A8C02D1C FAE0B0CE 
+0x40CEB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF A8C02D0988C0DAA3924098C04840CC00 
+; change last CC00 to 3D01 = only on keylock 
+
+0x40CEC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF BB04FACF509FFACF889F88C0E6FCB000 
+0x40CED0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 88C0E6FC0421E6FD3200E00EE6FFB000 
+0x40CEE0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1BEFF2FE0EFE00CEE6FEB829E6FF3200 
+0x40CEF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC7B483080298C0CB00FFFFFFFFFFFF 
+
+; ---------------------------------------------------------------------------------------- 
+
+; Usefull code for customizing the patch: 
+; 18e662: 31 xx, this is for moving the Datestring in "New SMS" Mode... 
+
+; Change position and characters of CB message (and flash message too): 
+; 18E66A:250003 yy00zz ;if date&time string on in operator name screen mode 
+; 18E6BA:2E0003 yy00zz ;if date&time string off in operator name screen mode 
+; 18e6d2: 2e0003 3f0009 ;in operator logo screen mode 
+; where: 
+; yy = vertical coordinate of string, 
+; where F8-FF,0-49 is from top to bottom (0=just benath net&battery icons) 
+; zz = font type, choosing one of Riza's font type list. 
+;------------------------- end -------------------------
+

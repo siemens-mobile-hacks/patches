@@ -1,0 +1,22 @@
+;S65v58
+;Дополнительная Информация на Прогрессбарах
+;Extra Info on ProgressBars
+;(c) 1nvisible
+;(p) Kamikadze!
+;Version: 2 av
+;PatchID: 6405
+;Details: https://patches.kibab.com/patches/details.php5?id=6405
+/*
+Показывает проценты на прогрессбарах а так же размер файла при передаче/приеме.
+Проблему 24% я наконец исправил ;)...
+*/
+0A25F00: 6C7795A000000000 0xA0FC7D35,0xA0FC7D25
+0A29DB0: 0000000000000000 0xA0FC7D11,0xA0FC7D01
+
+1182400: 216B000C4143E06A88F008E9 004FB847,0xA0FC7D51,C046C046
+11824B8: 0C20185E231CCCF7 004FB847,0xA0FC7DD9
+
+0FC7D4C: FFFFFFFF 0xA851D898
+
+;------------------------- end -------------------------
+

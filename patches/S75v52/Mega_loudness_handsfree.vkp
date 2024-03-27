@@ -1,0 +1,28 @@
+;S75v52
+;Мега-громкость для гарнитуры
+;Mega-loudness for handsfree
+;(c) SiNgle,-=(Kad)=-,Akot
+;(r) KIBER-DEMON
+;(p) Meloman
+;Version: 
+;PatchID: 8399
+;Details: https://patches.kibab.com/patches/details.php5?id=8399
+/*
+то же, что и на sw47
+*/
+;S75v52
+;Мега-громкость для гарнитуры
+;Mega-loudness for handsfree
+;(c) SiNgle,-=(Kad)=-,Akot
+;(p) Meloman
+;(r) KIBER-DEMON
+;Version: 
+;PatchID: 7805
+01F353C: 0600000A020000EF6C3DA0E3 050040E22900C4E53C0000EA
+01F3634: 000000EA C0FFFFEA
+
+01F353C: 05 07
+
+;------------------------- end -------------------------
+;------------------------- end -------------------------
+

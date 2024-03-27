@@ -1,0 +1,21 @@
+;C75v22
+;изменение расположения папок sms и Т9
+;a change in the arrangement of folders sms and T9
+;(c) Athlonfreak
+;Version: 
+;PatchID: 1329
+;Details: https://patches.kibab.com/patches/details.php5?id=1329
+/*
+0/System/SMS->2/System/SMS , 0/System/T9->2/System/T9  
+Т9 переносим ручками...
+
+
+*/
+;0/System/SMS->2/System/SMS
+049413A: 30 32
+
+;0/System/T9->2/System/T9
+049429A: 30 32 
+
+;------------------------- end -------------------------
+

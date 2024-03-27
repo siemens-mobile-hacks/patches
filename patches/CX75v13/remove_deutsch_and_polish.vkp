@@ -1,0 +1,21 @@
+;CX75v13
+;Убрать Немецкий, Польский, Латвийский и (Lithuania) из меню языков ввода
+;Remove deutsch and polish from input languages menu
+;(c) AlexSid
+;(r) AsteriX, Pavel81
+;(p) Smelter by avkiev
+;Version: 2.0
+;PatchID: 795
+;Details: https://patches.kibab.com/patches/details.php5?id=795
+/*
+RUS: Убрать немецкий, польский, латвийский и литовский из меню выбора языков. Патч стал рабочим, благодаря замене лэнгпака в телефоне на lg3.
+
+ENG: To clean German, Polish, Latvian and Lithuanian of the menu of a choice of languages. The patch became workers, owing to replacement лэнгпака in phone on lg3.
+*/
+0A3F90A: 00 01
+0A3F93A: 00 01 ;Latvia
+0A3F93E: 00 01 ;Lithuania
+0A3F942: 00 01
+
+;------------------------- end -------------------------
+

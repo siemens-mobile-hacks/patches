@@ -1,0 +1,34 @@
+;S75v32
+;Изменить позицию и шрифт имени оператора в заставке
+;Change position / font of providername in screensaver
+;(c) arsh0r
+;(r) SiNgle
+;(p) Buffel
+;Version: 
+;PatchID: 3235
+;Details: https://patches.kibab.com/patches/details.php5?id=3235
+/*
+
+*/
+;Analog Clock
+0439E40: 00 xx ; x-start
+0439E42: A1 yy ; y-start
+0439E44: 84 xx ; x-stop
+0439E46: AF yy ; y-stop
+0439E48: 05 03 ; font size
+
+; Digital Clock
+0439E5C: 00 xx ; x-start
+0439E5E: A1 yy ; Y-start
+0439E60: 84 xx ;x-stop
+0439E62: AF yy ; y-stop
+0439E64: 05 03 ; font size
+
+; Picture
+0439E24: 00 xx ; x-start
+0439E26: A1 yy ; y-start
+0439E28: 84 xx ; x-stop
+0439E2A: AF yy ; y-stop
+0439E2C: 05 03 ; font size
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S75v47
+;Настройка подсветки
+;Illumination adjustment
+;(c) avkiev
+;(r) avkiev
+;(p) ManOfWar, avb2107
+;Version: 
+;PatchID: 5615
+;Details: https://patches.kibab.com/patches/details.php5?id=5615
+/*
+Позволяет настраивать мощность подсветки клавиатуры и дисплея в каждом профиле, а также скорость ее включения и выключения.
+*/
+01B6438: 08D04DE20000D0E564BD9FE5 04E08FE204F01FE5,0xA0066701   ; S75v47
+;------------------------- end -------------------------
+

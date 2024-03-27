@@ -1,0 +1,28 @@
+;EL71v45
+;Держать 208 Мгц
+;Keep208MHz
+;(c) benj9
+;Version: 
+;PatchID: 7776
+;Details: https://patches.kibab.com/patches/details.php5?id=7776
+/*
+
+*/
+
+; Turn on/off patch: DevMenu->Exits->Sexit-Loggin
+
+0x006252F8: 030050E30400002A 0E10A0E1036B3DFA
+
+#pragma enable old_equal_ff
+0x0157FF00: 4B65657032303828632962656E6A3900 
+0x0157FF10: 03B50720C7DFF201002805D007BC0328 
+0x0157FF20: 00DB14328E46104707BC0847
+#pragma disable old_equal_ff
+
+0x0082069A: 5345786974204C6F6767696E 4B65657020323038204D487A ; Rename menu entry to "Keep 208 MHz"
+
+; note for elf coders: this patch is workaround to keep cpu clock at 208MHz while running e.g. gameboy elf. 
+; it would be better to include in elf's like gameboy function SetCpuClockTempHi(2) [EL71v45: 0xA06252E0] 
+; to clock cpu temporarily up, so no more need for this patch.
+;------------------------- end -------------------------
+

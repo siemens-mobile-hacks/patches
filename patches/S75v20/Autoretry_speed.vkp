@@ -1,0 +1,13 @@
+;S75v20
+;Автоповтор клавиатуры
+;Autoretry speed
+;(c) SiNgle
+;Version: 
+;PatchID: 1667
+;Details: https://patches.kibab.com/patches/details.php5?id=1667
+/*
+
+*/
+08FD036: 011C 2021
+;------------------------- end -------------------------
+

@@ -1,0 +1,26 @@
+;CX75v13
+;Противоугонная сигнализация
+;Anticreeping signal system
+;(c) SiNgle
+;(p) ThE TrIFoN
+;Version: 
+;PatchID: 957
+;Details: https://patches.kibab.com/patches/details.php5?id=957
+/*
+Патч для противоугонного мидлета. Подробности тут: http://forum.siemens-club.org/printtopic.php?TopicID=48531
+Если патч не работает - обновите MAP.
+Исправлены ошибки!
+
+English: Patch for anticreeping java-aplication. Details here: http://forum.siemens-club.org/printtopic.php?TopicID=48531 (Russian only)
+If patch doesn't work - update MAP.
+Some Errors fixed!
+*/
+0520032: 05F12CE8 BEF766E8
+#pragma enable old_equal_ff
+04DE100: FF7F2DE918008FE20030A0E30020A0E3
+04DE110: 08409FE50FE0A0E114FF2FE1FFBFBDE8
+04DE120: 14D288A0
+04DE124: "2:\\gsm.jar"
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;CF75v22
+;Убирать звук дозвона
+;To remove a sound of dialing
+;(c) AlexSid
+;(r) AsteriX
+;Version: 
+;PatchID: 1532
+;Details: https://patches.kibab.com/patches/details.php5?id=1532
+/*
+Убирать звук дозвона
+
+To remove a sound of dialing
+*/
+0E77EE4: 34D5E8A0 00000000
+;------------------------- end -------------------------
+

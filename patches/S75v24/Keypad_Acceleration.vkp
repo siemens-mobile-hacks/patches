@@ -1,0 +1,13 @@
+;S75v24
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 2178
+;Details: https://patches.kibab.com/patches/details.php5?id=2178
+/*
+
+*/
+08FFF7E: 011C 2021
+;------------------------- end -------------------------
+

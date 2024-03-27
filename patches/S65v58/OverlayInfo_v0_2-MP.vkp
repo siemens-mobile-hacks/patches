@@ -1,0 +1,25 @@
+;S65v58
+;Оверлей инфо
+;OverlayInfo
+;(c) benj9
+;(p) -=[LCW]=-ExXtReMe
+;Version: 0.2
+;PatchID: 2890
+;Details: https://patches.kibab.com/patches/details.php5?id=2890
+/*
+Показывает информацию оверлей, если процессор загружен более чем на 90%
+*/
+; * OverlayInfo v0.2 *
+; (c) benj9
+; (p) -=[LCW]=-ExXtReMe
+
+; (!) MasterPatch
+
+; enable any devmenu-overlay setting. it's overwritten by cpu-load 
+; and only shown if load is higher than setting
+
+08C8D04: 00F019F8201C5FF0F4E8 004CA04711DDFDA0C046 ; s65v58
+0FDDD58: FFFFFFFFFFFFFFFF 0xA08C8D3B,0xA1155153 ; s65v58
+
+;------------------------- end -------------------------
+

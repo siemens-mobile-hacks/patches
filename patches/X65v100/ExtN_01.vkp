@@ -1,0 +1,15 @@
+;X65v100
+;ExtN
+;ExtN
+;(c) cbn
+;Version: 0.1
+;PatchID: 7835
+;Details: https://patches.kibab.com/patches/details.php5?id=7835
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x65v100&f=ExtN_01.zip
+
+/*
+аналог openwith
+*/
+аналог openwith
+;------------------------- end -------------------------
+

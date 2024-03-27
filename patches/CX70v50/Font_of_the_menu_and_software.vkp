@@ -1,0 +1,16 @@
+;CX70v50
+;Шрифт меню и софт кнопок
+;Font of the menu and software of buttons
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 110
+;Details: https://patches.kibab.com/patches/details.php5?id=110
+/*
+Изменение шрифта меню и софт кнопок.
+*/
+093C4E8: 03 02 ;Шрифт софт-кнопок
+093C530: 03 08 ;Выбраная позиция меню
+093C534: 02 08 ;Список меню
+;------------------------- end -------------------------
+

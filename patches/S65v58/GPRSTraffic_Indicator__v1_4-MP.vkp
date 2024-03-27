@@ -1,0 +1,15 @@
+;S65v58
+;Счётчик траффика вместо логотипа GPRS
+;Traffic indicator instead of GPRS logo
+;(c) Sinclair
+;(p)  ~Jhellico, Apo4emu
+;Version: 1.4
+;PatchID: 2892
+;Details: https://patches.kibab.com/patches/details.php5?id=2892
+/*
+Подходит к версии тела v1.3 
+*/
+1196EDC: 10708DE50210A0E3020044E2 00109FE531FF2FE1,0xA0FC5601
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;S75v47
+;Отключить Logal Logging
+;Disable Logal Logging
+;(c) benj9
+;(r) SimaFish
+;(p) KIBER-DEMON
+;Version: 2
+;PatchID: 8104
+;Details: https://patches.kibab.com/patches/details.php5?id=8104
+/*
+
+Отключает Logal логгинг.
+*/
+08E8946: 10B5 7047 
+09FBA24: 0F002DE9 1EFF2FE1
+0FB7E58: B0B5 7047 
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S75v42
+;Расширенный список вызовов
+;Extended "Calls dialed" list
+;(c) BoBa
+;(p) SimaFish
+;Version: 
+;PatchID: 5474
+;Details: https://patches.kibab.com/patches/details.php5?id=5474
+/*
+
+*/
+05E6A30: 00210220DAE700210020D7E700210120D4E700210320D1E7 80B57F46493F0220B8470120B8470020B8470320B84780BD
+
+;------------------------- end -------------------------
+

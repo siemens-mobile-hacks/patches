@@ -1,0 +1,15 @@
+;S65v50
+;Включение Инженерного меню
+;Enable Developer Menu
+;(c) Phantom
+;(p) Smelter
+;Version: 
+;PatchID: 38
+;Details: https://patches.kibab.com/patches/details.php5?id=38
+/*
+!Необходимо выключить пункт (S)Exit
+!Dev. Menu нужно повесить на горячую кнопку
+*/
+1253524: 040090E5 0000A0E3
+;------------------------- end -------------------------
+

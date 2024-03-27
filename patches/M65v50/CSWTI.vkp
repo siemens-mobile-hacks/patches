@@ -1,0 +1,15 @@
+;M65v50
+;Изменить время заставки ожидания
+;Change Screensaver Wait Time Interpretation
+;(c) benj9
+;Version: 
+;PatchID: 7345
+;Details: https://patches.kibab.com/patches/details.php5?id=7345
+/*
+
+*/
+163B344: C832 D900 ; treat minutes as seconds
+; 163B344: C832 B201 ; treat minutes as 2 seconds
+; 163B344: C832 7708 ; treat minutes as 10 seconds 
+;------------------------- end -------------------------
+

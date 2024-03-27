@@ -1,0 +1,14 @@
+;S75v20
+;Убрать сообщение клавиатура заблокирована
+;Disable keypad locked message
+;(c) SiNgle
+;Version: 
+;PatchID: 1660
+;Details: https://patches.kibab.com/patches/details.php5?id=1660
+/*
+
+*/
+033A0DE: AEF0 C046
+033A0E0: 7EED C046
+;------------------------- end -------------------------
+

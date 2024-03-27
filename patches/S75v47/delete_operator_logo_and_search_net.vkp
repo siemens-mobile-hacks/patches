@@ -1,0 +1,15 @@
+;S75v47
+;Не показывать имя оператора и поиск сети в заставке
+;Do not show provider name and network search in ScreenSaver
+;(c) Evgr
+;(p) Виктор89
+;Version: 
+;PatchID: 8810
+;Details: https://patches.kibab.com/patches/details.php5?id=8810
+/*
+
+*/
+0345F18: 3DF0AAFC C046C046
+0345E44: 03D0 C046
+;------------------------- end -------------------------
+

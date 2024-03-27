@@ -1,0 +1,20 @@
+;AX75v16
+;Удалить софт-кнопки с экрана
+; Remove soft-keys from MainScreen
+;(c) SiNgle, ACID[mrp]
+;(p) dkBrazz
+;Version: 1
+;PatchID: 5792
+;Details: https://patches.kibab.com/patches/details.php5?id=5792
+/*
+
+*/
+2C780E: 2D 0D
+2C78EA: 3D05 CC00
+2C7A40: 3d02 cc00
+2C7A9E: 0e 04
+2C7AB4: da2ceeb8 da2c7e28
+2C8486: 3d0d cc00
+2C8490: 3d08 cc00
+;------------------------- end -------------------------
+

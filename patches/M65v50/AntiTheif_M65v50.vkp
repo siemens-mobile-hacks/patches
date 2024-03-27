@@ -1,0 +1,23 @@
+;M65v50
+;Запуск мидлета при вставке новой SIM
+;Start midlet on new SIM insertion
+;(c) SiNgle
+;(r) Triguk_VV
+;(p) Maestro
+;Version: 1
+;PatchID: 201
+;Details: https://patches.kibab.com/patches/details.php5?id=201
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=m65v50&f=AntiTheif_M65v50.rar
+
+/*
+При включении телефона с новой симкой, патч запускает мидлет, рассылающий СМС. Мидлет и инструкция прилагаются, не забывайте про прикрепленный файл.
+*/
+0B22B92: E6F767FF BFF196EB
+#pragma enable old_equal_ff
+0CE22C0: FF7F2DE918008FE20030A0E30020A0E3
+0CE22D0: 08409FE50FE0A0E114FF2FE1FFBFBDE8
+0CE22E0: A849C3A0
+0CE22E4: "2:\\gsm.jar",0000 ;путь к мидлету. Его можно поменять на любой другой. !Слэшей должно быть по два!
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

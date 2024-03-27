@@ -1,0 +1,14 @@
+;S75v52
+;Отключить ввод 112 на Экране Блокировки
+;Disable 112 Input In Locked Screen
+;(c) 1nvisible
+;(p) Vedan
+;Version: 
+;PatchID: 8378
+;Details: https://patches.kibab.com/patches/details.php5?id=8378
+/*
+Единичка все-таки проскакивает...
+*/
+0342B6E: 21D0 2520
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;C72v22
+;Уменьшить задержку для долгого нажатия клавиш
+;Decrease Keyboard Long Press Delay
+;(c) 1nvisible
+;(r) benj9
+;Version: 
+;PatchID: 5837
+;Details: https://patches.kibab.com/patches/details.php5?id=5837
+/*
+
+*/
+125F1AA: 00 41
+;------------------------- end -------------------------
+

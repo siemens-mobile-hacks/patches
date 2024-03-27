@@ -1,0 +1,15 @@
+;SL75v47
+;Отключить звук "Сеть найдена"
+;Disable ringtone "Net found"
+;(c) avkiev
+;(r) ferro
+;(p) AlexADA
+;Version: 
+;PatchID: 6313
+;Details: https://patches.kibab.com/patches/details.php5?id=6313
+/*
+
+*/
+103F7A0: 5C03 FFFF
+;------------------------- end -------------------------
+

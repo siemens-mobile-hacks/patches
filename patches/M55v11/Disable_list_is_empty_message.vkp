@@ -1,0 +1,13 @@
+;M55v11
+;Отключить сообщение "Список пуст!"
+;Disable "List is empty!" message
+;(c) Matr!x
+;Version: 
+;PatchID: 5232
+;Details: https://patches.kibab.com/patches/details.php5?id=5232
+/*
+Вместо списка отображается просто белый экран
+*/
+4FB776: FA9972B4 CC00CC00
+;------------------------- end -------------------------
+

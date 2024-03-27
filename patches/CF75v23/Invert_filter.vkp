@@ -1,0 +1,16 @@
+;CF75v23
+;Инвертация фильтра вызовов
+;Invert filter
+;(c) не помню
+;(p) Sherbakov_ag
+;Version: 
+;PatchID: 4887
+;Details: https://patches.kibab.com/patches/details.php5?id=4887
+/*
+
+*/
+4DA399: d1 d0
+
+
+;------------------------- end -------------------------
+

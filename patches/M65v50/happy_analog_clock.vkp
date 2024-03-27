@@ -1,0 +1,28 @@
+;M65v50
+;Весёлые аналоговые часики
+;Happy analogclock
+;(c) Master of Disaster
+;Version: 
+;PatchID: 622
+;Details: https://patches.kibab.com/patches/details.php5?id=622
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=m65v50&f=happy_analog_clock.rar
+
+/*
+Психоделические аналоговые часы... ))))
+
+Взял вот отсюда: http://forum.siemenspower.de/thread.php?threadid=359
+
+Не мешало бы передвинуть картинку, по стрёмным адресам лежит, у меня ругалась!
+
+Попутно оказалось, что патч очень хорошо жмется раром, поэтому в тексте патча нету самого патча! Качайте прикреплённый файл!
+
+EN:
+Happy analog clock!
+Dont' forget about VKPResolver!!! I couldn't apply this patch until moved it to new place.
+
+There is no patch text in patchfile, download attached RARfile please.
+*/
+; качайте прикреплённый файл, он в 10 раз меньше текста патча :)
+
+;------------------------- end -------------------------
+

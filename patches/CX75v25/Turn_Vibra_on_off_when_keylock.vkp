@@ -1,0 +1,23 @@
+;CX75v25
+;Включение/выключение вибры при блокировке/разблокировке клавиатуры
+;Turn vibra on/off when keypad locked/unlocked
+;(c) ~Jhellico
+;(r) empeka
+;(p) sempai
+;Version: 
+;PatchID: 6443
+;Details: https://patches.kibab.com/patches/details.php5?id=6443
+/*
+
+*/
+0800E7C: 01210320 DDF49AFF
+0801216: 01210320 DDF4CBFD
+
+#pragma enable old_equal_ff
+04DEDB0: 012100E0002101480047C046,0xA04DEDC1
+04DEDC0: FCB50F1C04498847B84201D003498847
+04DEDD0: FCBC0121032000BD,0xA0326987,0xA032699D ; GetVibraStatus, SwitchVibraOnOff
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

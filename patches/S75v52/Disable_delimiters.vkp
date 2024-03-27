@@ -1,0 +1,15 @@
+;S75v52
+;Убрать черточки-разделители при показе IMEI
+;Disable delimiters while showing IMEI
+;(c) 1nvisible
+;(r) Bennie
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8284
+;Details: https://patches.kibab.com/patches/details.php5?id=8284
+/*
+
+*/
+0334CC0: "00-0000-00-00000" "0000000000000000"
+;------------------------- end -------------------------
+

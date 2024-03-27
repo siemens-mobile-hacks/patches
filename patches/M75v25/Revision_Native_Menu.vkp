@@ -1,0 +1,14 @@
+;M75v25
+;Не вырубаться при NativeMenu-Списки выз.-Время\стоимость
+;Revision Native Menu
+;(c) Bennie
+;(p) Виктор89
+;Version: 
+;PatchID: 9557
+;Details: https://patches.kibab.com/patches/details.php5?id=9557
+/*
+Теперь не вырубается при NativeMenu-Списки выз.-Время\стоимость
+*/
+04A96F0: 93E82BA0 0xA032616B
+;------------------------- end -------------------------
+

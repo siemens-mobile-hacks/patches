@@ -1,0 +1,32 @@
+;SL45iv56
+;(Програмируемый) Левый софт
+;(Prorammable) LEFT Softkey
+;(c) charlielao
+;(r) abomin
+;Version: 
+;PatchID: 2068
+;Details: https://patches.kibab.com/patches/details.php5?id=2068
+/*
+Этот патч основан на патче FAV v2.01 
+(т.ж. патч ESI, и патч Use LEFT Arrow key as a "SIM-Location" 
+(Использовать Левую стрелку как ярлык SIM)) установлен.
+
+Этот патч добавляет новое меню, запускаемое Левой стрелкой 
+на главном экране. 
+Пункт меню Избранное устанавливается через [Интернет][Избранное] 
+[URL] с ТРЕТЬЕГО пункта. 
+Формат данных пункта меню - тот же что и в патче FAV: 
+SSS.AAAAAA, где SSS - 3 цифры ID строки для пункта меню, 
+and AAAAAA - 6 цифр, точка входа для этого пункта. 
+Поместите один пробел между пунктами меню.
+
+
+Release: April 4, 2005 
+*/
+3B047A: DADB46EF DAFFEECC 
+
+5FCCEE: FFFFFFFF E6F4EC13 
+5FCCF2: FFFFFFFF DAE4F074 
+5FCCF6: FFFF DB00
+;------------------------- end -------------------------
+

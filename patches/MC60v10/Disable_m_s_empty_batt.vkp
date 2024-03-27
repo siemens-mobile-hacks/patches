@@ -1,0 +1,15 @@
+;MC60v10
+;Отключение сообщения и звука разряженной батареи.
+;Disable message and sound empty battery.
+;(c) Rasp
+;(r) Single,Sinclair,BoBa,Papuas и др.
+;Version: 
+;PatchID: 158
+;Details: https://patches.kibab.com/patches/details.php5?id=158
+/*
+Отключение звука и сообщения о разряженной батарее.
+*/
+0EA964: E6FC DB00
+4BFFD3: 3C 0C
+;------------------------- end -------------------------
+

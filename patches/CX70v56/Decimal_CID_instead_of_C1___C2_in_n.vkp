@@ -1,0 +1,20 @@
+;CX70v56
+;Десятичный CID вместо C1 и C2 в списке соседних сот
+;Decimal CID instead of C1 & C2 in neighbour list
+;(c) слава Богу
+;(r) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 663
+;Details: https://patches.kibab.com/patches/details.php5?id=663
+/*
+Десятичный CID вместо C1 и C2 в списке соседних сот.
+*/
+129FAE2: 0123F856002802DA 203FB88B203702E0
+129FAF0: 2B 20
+129FAF4: 02 05
+129FAFE: 0223 0CE0
+1328598: 31204332 656C4944
+
+;------------------------- end -------------------------
+

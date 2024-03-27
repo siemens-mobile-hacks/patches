@@ -1,0 +1,88 @@
+;S75v47
+;Дополнительная информация на прогрессбарах 
+;Extra Info on ProgressBars
+;(c) Sinclair/Evgr
+;(r) ~Jhellico/funMarkus
+;Version: 1.2 MP
+;PatchID: 10498
+;Details: https://patches.kibab.com/patches/details.php5?id=10498
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v47&f=S75v47_Extra_Info_on_ProgressBars.rar
+
+/*
+(!) Master patch, library functions 21, 22, 26, 71, C4, C7, B8, 251, 252, 257
+!!! swi 257 must be 257:char *RamIsSendReceiveBT(), but not isSendReceiveFile()
+
+использует новую не библиотечную рамную функцию:
+0xA8A32DE0 RamSizeOfSentPart - размер переданной части файла
+поиск в армдебаггере по:
+A0521E64: A06C     LDR R0, [R4,#0x48]  ; оставшийся к передаче размер файла
+A0521E66: E16C     LDR R1, [R4,#0x4C]  ; 0xA8A32DE0 RamSizeOfSentPart - размер переданной части файла
+
+
+в папку Zbin/img необходимо положить картинки шрифтов
+
+были проблемы с портированием этого патча на эску, решены
+*/
+;(!) Master patch, library functions 21, 22, 26, 71, C4, C7, B8, 251, 252, 257   
+;[+]  / no conflict with "mainscreen icon changer"
+
+0A1F422: 08 0C
+0A1F430: 201CFFF75EFF10BD 00488047,0xA007189B
+
+#pragma enable old_equal_ff
+00717C0: 0B2F03D0C7DF51820000704700487047  
+00717D0: 0xA8A32DE0,FFB5B27C307C121A121A002B ;0xA8A32DE0 RamSizeOfSentPart - размер переданной части файла
+00717E0: 06D1121A68464355013514E0002B12D0
+00717F0: 191C0A200CB4B8DF0CBC031C68464155
+0071800: 307C121A0134032C03D1002B01D0121A
+0071810: 00240135EAE7301C0C30311D04B403B4
+0071820: 012001B4042001B401B4F37C707C1B18
+0071830: 0133901EF17CB27C013A71DF05B008BC
+0071840: 013B002D14D0181C6F46013D7A5D00F0
+0071850: 18F8013C002C08D1002D06D0307C1B18
+0071860: 181C0A2200F00DF80324307C1B18E8E7
+0071870: 1B18181C728E348E121B00F002F8FFBD
+0071880: FFFF78B5331C0833371D80B4F17C0131
+0071890: 378ED21926DF01B078BDFFB5201C014C  
+00718A0: A04701E0,0xA0A1F2F3,C7DF578207780B2F
+00718B0: 0FD00F2F09D1C7DF51820468C7DF5282
+00718C0: 00000068201A002803D1FFBC10BC0A34
+00718D0: 20472448C4DF061C37D082B000240025
+00718E0: 1B48308622DF3074308E21DF7074FFF7
+00718F0: 67FF0368B07800280DD0327DB274727D
+0071900: F274B2697260F269B260326AF260114A
+0071910: 7286FFF75FFFF078002815D0B27DB274
+0071920: F27DF274726A7260B26AB260F26AF260
+0071930: 094A7286C7DF528200000168181C034A 
+0071940: 9047031CFFF746FF02B0BEE7,0xA152F000   
+0071950: 300800004208000025080000; 0x830 picture number for 0,0x842 picture number for B,0x825 picture number for %,
+0071960: 0xB1C2D3E4,0x000023E9,0000000000000000,"\
+{patch=ExtraInfoOnPB id=23E9 cp=Evgr ver=1.2}","\
+{sm `Bytes Info`}\
+{2 cb `on/off` v=1}","\
+{20 xy Position x=95 y=55}","\
+{24 co `FillColor` v=0x64FF0000}","\
+{32 co `BorderColor` v=0x640000FF}","\
+{28 co `FontColor` v=0x64F8FCF8}","\
+{endsm}\
+{sm `Percent Info`}\
+{3 cb `on/off` v=1}","\
+{22 xy Position x=79 y=74}","\
+{36 co `FillColor` v=0x640000FF}","\
+{44 co `BorderColor` v=0x64FF0000}","\
+{40 co `FontColor` v=0x64F8FCF8}","\
+{endsm}\
+",00
+#pragma disable old_equal_ff
+
+;ProgressCalculate
+;(c) 1nvisible
+;__arm int ProgressCalculate(int current, int total);
+
+#pragma enable old_equal_ff
+152F000: 08402DE90030A0E10000A0E30120B0E1
+152F010: 0500000A020053E10300008A6400A0E3
+152F020: 900301E00200A0E1BC0000EF0880BDE8
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

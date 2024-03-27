@@ -1,0 +1,70 @@
+;CX75v13
+;Запуск мидлета как скринсейвера
+;Run Midlet As Screensaver
+;(c) benj9
+;(r) ACiD[mrp], arsh0r, avkiev, SiNgle, (i) KiRiK
+;(p) Geka
+;Version: 
+;PatchID: 6454
+;Details: https://patches.kibab.com/patches/details.php5?id=6454
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx75v13&f=run_midlet_as_screensaver.zip
+
+/*
+Позволяет запустить мидлет как скринсейвер.
+Много настроек, см.тело патча. Совместимость с патчами Динамической Замены и МиниGPS, но нужно закомментировать в них определенные строки.
+*/
+049E448: C75583A0 0xa0FBB021
+
+; If use with follo-up patch comment the line beginning with 16B60B4: there, 
+; but feed phone with the body of that patch
+; Если использовать с "патчем продолжения", закомментируйте в нём начинающуюся с 16B60B4: строку,
+; но залейте в телефон тело самого патча
+
+#pragma enable old_equal_ff
+0FBB000: 4D69646C657441735363727361766572
+0FBB010: A92062656E6A392028702947656B61ff
+0FBB020: FFB5194880473F27C74001200740012F
+0FBB030: 16D10E4F3C68012C02D100243C600FE0
+0FBB040: 0B48804700280BD00A488047002807D0
+0FBB050: 064F01243C60084C0A4800230022A047
+0FBB060: 02E0FFB4064CA047FFBDFFFF,0xA8000220
+0FBB070: 0xa02CFFD1,0xa07FF1F3,0xa088D214,0xa0FBB078
+0FBB080: 0706F8A1,0xa0FBB08C,0xa02BF391
+
+0FBB08C: "2:\\scrsaver.jar",00 ; any midlet | любой мидлет 
+
+#pragma disable old_equal_ff
+
+### User Config | Настройки пользователя ###
+FBB04F: D0 D1 ; D0: patch active when key not locked, D1: active when key locked.
+;                 D0: патч активен при разблокированной  клаве, D1: при блокированной 
+;FBB04E: 07D0 C046 ; patch active keylocked and unlocked
+;                    патч активен как при блокированной, так и разблокированной клаве
+
+# profile configuration | конфигурация профилей #
+
+FBB026: 3F 0n0100101 ; profile key | ключ профилей
+
+; every single bit of the profile key represents a profile,
+; the most left one is profile no. 7, the most right one profile no. 1
+; to activate patch in a certain profile, set the according bit to 1
+; example: 0n0100101 - patch is active in profiles no. 1, 3 and 6
+; Каждый бит в ключе определяет профиль
+; Крайний левый - профиль 7, крайний правый - профиль 1
+; Для активации патча в определённом профиле нужный бит будет равен 1
+; Например: 0n0100101 - патч активен в профилях 1, 3 и 6
+
+;FBB060: 02E0 FFBC ; line active: pass-thru to follo-up patch. line not active: stand-alone.
+;                    линия активна: переход к "патчу продолжения"; линия не активна: автономная работа  
+
+; Follo-Up Patches: | Патчи продолжения:
+;FBB080: 0xa0FC7601 0xa0FC2CE1 ; follo-up patch is Toggle ProviderString-Patches v2
+;                            патч продолжения - Переключение между патчами замены имени оператора v1. Установите тело
+;FBB080: 0xa0FC7601 0xa0FC1B01 ; follo-up patch is dynamic replacing provider v10-mp. body has to be installed.
+;                             патч продолжения - Динамическая замена имени оператора v10-mp. Установите тело
+;FBB080: 0xa0FC7601 0xaFC7601 ; follo-up patch is minigps v1.02-mp. body has to be installed.
+;
+;FBB080: 0xa0FC7601 0706F8A1 ;  патч продолжения - Мини GPS v08. Установите тело
+
+;------------------------- end -------------------------
+

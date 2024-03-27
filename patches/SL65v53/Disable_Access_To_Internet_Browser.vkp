@@ -1,0 +1,15 @@
+;SL65v53
+;Отключить доступ к интернет-браузеру
+;Disable Access To Internet Browser
+;(c) KiRiK
+;Version: 
+;PatchID: 5207
+;Details: https://patches.kibab.com/patches/details.php5?id=5207
+/*
+
+*/
+0922F20: B53A8EA0 00000000
+0922EEC: CF3A8EA0 00000000
+09228A0: 77448EA0 00000000
+;------------------------- end -------------------------
+

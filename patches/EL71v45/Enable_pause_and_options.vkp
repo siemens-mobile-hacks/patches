@@ -1,0 +1,14 @@
+;EL71v45
+;Включить паузу и опции при полноэкранном просмотре
+;Enable pause and options in mediaplayer fullscreen mode
+;(c) Miha_r
+;(p) DuKu
+;Version: 
+;PatchID: 7956
+;Details: https://patches.kibab.com/patches/details.php5?id=7956
+/*
+
+*/
+079E9C8: 010050E3040050131A005013 040050E30000A0E10000A0E1
+;------------------------- end -------------------------
+

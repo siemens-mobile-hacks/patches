@@ -1,0 +1,33 @@
+;EL71v45
+;backlight duration adjustment
+;backlight duration adjustment
+;(c) BuG
+;(p) 1allen
+;Version: 
+;PatchID: 7984
+;Details: https://patches.kibab.com/patches/details.php5?id=7984
+/*
+
+*/
+08936CC: 05 0i10 ; 1st menu item
+08936E0: 0A 0i30 ; 2nd menu item
+08936F4: 0F 0i60 ; 3rd menu item
+0893708: 14 0i120 ; 4th menu item
+
+
+; Корректировка ленгпака для данного патча 
+; LanpackPatch made by "Smelter" © avkiev
+
+;Редактирование сообщения  7 : 504EC  "5 секунд" => "10 сек"
+178FC13: 3520D181D0B5D0BAD183D0BDD0B400 313020D181D0B5D0BAFFFFFFFFFF00
+
+;Редактирование сообщения  7 : 504ED  "10 секунд" => "30 секунд"
+178FC22: 313020D181D0B5D0BAD183D0BDD0B400 333020D181D0B5D0BAD183D0BDD0B400
+
+;Редактирование сообщения  7 : 504EE  "15 секунд" => "1 минута"
+178FC32: 313520D181D0B5D0BAD183D0BDD0B400 3120D0BCD0B8D0BDD183D182D0B0FF00
+
+;Редактирование сообщения  7 : 504EF  "20 секунд" => "2 минуты"
+178FC42: 323020D181D0B5D0BAD183D0BDD0B400 3220D0BCD0B8D0BDD183D182D18BFF00
+;------------------------- end -------------------------
+

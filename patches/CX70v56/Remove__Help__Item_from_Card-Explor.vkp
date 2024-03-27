@@ -1,0 +1,14 @@
+;CX70v56
+;Убрать Пункт "Справка" в Card-Explorer'е
+;Remove "Help" Item from Card-Explorer
+;(c) 1nvisible
+;Version: 
+;PatchID: 4487
+;Details: https://patches.kibab.com/patches/details.php5?id=4487
+/*
+Когда курсор на карте, помощь есть, но не работает.
+English:When the cursor is on MMC-Card, "Help" is visible but disabled
+*/
+0A56C3C: 17 16
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S75v47
+;Отключить "Подождите" в Настройки Bluetooth->Все "Подождите" в этом меню
+;Disable "Please wait" Bluetooth Settings->All "waits" are removed in this menu
+;(c) Visad
+;(r) benj9
+;(p) dimonp25
+;Version: 
+;PatchID: 8596
+;Details: https://patches.kibab.com/patches/details.php5?id=8596
+/*
+
+*/
+9776da: FFF78cFF C046C046
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;A52v9
+;Открыть скрытые блоки EEPROM
+;OpenHiddenEEPROM
+;(c) avkiev
+;Version: 
+;PatchID: 4364
+;Details: https://patches.kibab.com/patches/details.php5?id=4364
+/*
+
+*/
+09B164: 01149013D513911302140314 000000000000000000000000
+098116: 6E 6C ; Open BFB
+;------------------------- end -------------------------
+

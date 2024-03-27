@@ -1,0 +1,15 @@
+;C81v51
+;Отключить изменение громкости звонка на главном экране
+;Disconnect change to loudness bell on main screen
+;(c) Zhek@
+;(p) klaud
+;Version: 
+;PatchID: 8385
+;Details: https://patches.kibab.com/patches/details.php5?id=8385
+/*
+
+*/
+00338A98: 50F73AFC C046C046
+00338AA4: 50F734FC C046C046
+;------------------------- end -------------------------
+

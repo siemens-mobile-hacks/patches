@@ -1,0 +1,28 @@
+;X65v100
+;Постоянная подсветка при зарядке аккумулятора
+;Permanent Illumination when charging accu
+;(c) Kibab
+;(r) Caye
+;Version: 
+;PatchID: 3303
+;Details: https://patches.kibab.com/patches/details.php5?id=3303
+/*
+При включённой зарядке подсветка постоянно горит. Можно установить яркость горения. А также указать, что именно должно быть включено - клавиатура, экран или динамический свет (CX65/70, M65).
+Сделано по просьбе Caye! Ему респект за идею =)
+Сделан под Диспетчер Графических Патчей.
+English: When charging, illumination is turned on permanently. User can setup the brightness and select display, keypad and/or dynlight (CX65/70, M65) to light.
+*/
++0FDF900
+#pragma enable old_equal_ff
+00: FFB50C48E1F77CF911D0E0F799FEB878
+10: 00280CD00020327900230025451C715D
+20: 01B4E0F78DFB01BC01300428F6D1FFBD
+30: 0xB1C2D3E4,0x0100C604,0xA0FDF901,00000000,"\
+{patch=`PermChargeIllu` ver=1.0 id=0100C604 cp=Kibab mem=5}\
+{1 cb `Light display`}\
+{2 cb `Light keyboard`}\
+{3 cb `Light dynlight`}\
+{4 b `Light brightness:` range=1..100 v=100}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

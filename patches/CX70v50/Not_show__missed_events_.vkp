@@ -1,0 +1,13 @@
+;CX70v50
+;Отключить стандартный индикатор пропущенных событий
+;Disable standart misssed events indicator
+;(c) KreN
+;Version: 
+;PatchID: 3080
+;Details: https://patches.kibab.com/patches/details.php5?id=3080
+/*
+
+*/
+0171E35A: FFB5 7047
+;------------------------- end -------------------------
+

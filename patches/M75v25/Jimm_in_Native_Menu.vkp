@@ -1,0 +1,20 @@
+;M75v25
+;Jimm в Native Menu>3>3
+;Jimm in Native Menu>3>3
+;(c) sanyaaa
+;(p) kiREALlov
+;Version: 1.0
+;PatchID: 6125
+;Details: https://patches.kibab.com/patches/details.php5?id=6125
+/*
+Jimm в Native Menu в Интернет/игры (3>3).
+Так же ELSE_EMO_DEVICE запускает Jimm.
+*/
+326D05: 456D6F7479 4A696D6D00
+32B7D1: 456D6F7479 4A696D6D00
+7D4061: 456D6F7479 4A696D6D00
+
+; "Emoty" => "Jimm"
+1F1856: 95456D6F747900 954A696D6D9500
+;------------------------- end -------------------------
+

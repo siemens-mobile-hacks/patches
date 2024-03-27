@@ -1,0 +1,15 @@
+;M65v58
+;Увеличить размер фото при входящем звонке
+;Enlarge incoming call photo
+;(c) SiNgle
+;(r) AsteriX, KiRiK
+;(p) Smelter
+;Version: 1
+;PatchID: 870
+;Details: https://patches.kibab.com/patches/details.php5?id=870
+/*
+
+*/
+0A347F6: 052104 002100
+;------------------------- end -------------------------
+

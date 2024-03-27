@@ -1,0 +1,23 @@
+;CX70v56
+;Memory resizer
+;Memory resizer
+;(c) Zhek@, ~Jhellico, Zeus
+;(r) Rst7
+;Version: 2
+;PatchID: 9536
+;Details: https://patches.kibab.com/patches/details.php5?id=9536
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx70v56&f=memory_resizer_v2_cx70.zip
+
+/*
+Патч увеличивает кол-во свободной оперативной памяти до ~5мб за счет отключения ява машины.
+Патч "Browser killer" после установки не нужен
+
+После установки ява работать не будет
+*/
+11C5170: 0x002FD000 0x00162000 ; PermMem
+009AE24: 0x177000 0x000000 ; JavaHeap. -1500 Кб ,нулевое значение использовать только с отключеной явой, иначе пик
+11C516C: 0x00652000 0x006A4000 ; NonPermMem.
+cac726: A3F7B4EB c046c046 ; rap bearer 0 (browser)
+cac73e: A3F7A8EB c046c046 ; rap bearer 1 (java)
+;------------------------- end -------------------------
+

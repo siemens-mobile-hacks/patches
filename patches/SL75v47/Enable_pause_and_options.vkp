@@ -1,0 +1,14 @@
+;SL75v47
+;Включить паузу и опции при полноэкранном просмотре
+;Enable pause and options in mediaplayer fullscreen mode
+;(c) Miha_r
+;(p) bertgrin
+;Version: 
+;PatchID: 10574
+;Details: https://patches.kibab.com/patches/details.php5?id=10574
+/*
+
+*/
+05F89CA: 012803D0042801D01A28 C046C0460428C046C046 
+;------------------------- end -------------------------
+

@@ -1,0 +1,25 @@
+;SK65v50
+;Запуск мидлета при вставке новой SIM
+;Midlet start when SIM is changed
+;(c) SiNgle
+;(r) AsteriX
+;(p) 1nvisible
+;Version: 1.3
+;PatchID: 2510
+;Details: https://patches.kibab.com/patches/details.php5?id=2510
+/*
+!Необходимо отменить патч *Убрать вопрос "Копировать SIM" при смене SIM*
+!Описание и мидлет лежат тут www.asterix.com.ru/download.php?X65/Security.rar
+
+*/
+04A3E06: C9F0B6EA ACF77CE8
+#pragma enable old_equal_ff
+044FF00: FF7F2DE918008FE20030A0E30020A0E3
+044FF10: 08409FE50FE0A0E114FF2FE1FFBFBDE8
+044FF20: A8B87BA0
+044FF24: "2:\\gsm.jar",0000 ;путь к мидлету, его можно поменять на любой другой. !Слэшей должно быть по два!
+#pragma disable old_equal_ff
+;04A3D8A: 00 01 ;отменяем патч *Убрать вопрос "Копировать SIM" при смене SIM*
+
+;------------------------- end -------------------------
+

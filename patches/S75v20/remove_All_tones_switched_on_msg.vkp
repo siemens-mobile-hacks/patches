@@ -1,0 +1,15 @@
+;S75v20
+;Убрать сообщение "Все сигналы выключены"
+;Remove "all signals on/off" message
+;(c) SiNgle
+;Version: 
+;PatchID: 1659
+;Details: https://patches.kibab.com/patches/details.php5?id=1659
+/*
+
+*/
+033BDFE: ACF0 C046
+033BE00: EEEE C046
+033BE1C: ACF0DEEE C046C046
+;------------------------- end -------------------------
+

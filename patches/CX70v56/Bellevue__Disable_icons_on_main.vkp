@@ -1,0 +1,16 @@
+;CX70v56
+;Красивый вид. Убрать иконки с главного экрана
+;Bellevue. Disable icons on mainscreen
+;(c) benj9
+;(r) (i) KreN
+;(p) SiamiX
+;Version: 2.1
+;PatchID: 4628
+;Details: https://patches.kibab.com/patches/details.php5?id=4628
+/*
+Убирает стандартные иконки с главного экрана (gprs, irda, заряд, сигнал и т.д.)
+Версия 2.1 - добавлена возможность убирать иконки при звонке
+*/
+1732450: A9E7CAA0 0139FCA0
+;------------------------- end -------------------------
+

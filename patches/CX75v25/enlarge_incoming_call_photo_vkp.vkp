@@ -1,0 +1,15 @@
+;CX75v25
+;Увеличить размер фото при входящем звонке
+;Enlarge incoming call photo
+;(c) SiNgle
+;(p) MihaSoft
+;Version: 2
+;PatchID: 3547
+;Details: https://patches.kibab.com/patches/details.php5?id=3547
+/*
+
+*/
+0518BAA: 052104 002100
+0518BB2: 502280 842278
+;------------------------- end -------------------------
+

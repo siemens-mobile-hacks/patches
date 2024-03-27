@@ -1,0 +1,57 @@
+;SL45iv56
+;МультиSIM без SIM-карты
+;MultiSIM without SIM card
+;(c) Nick0las, Sinclair, Konca Fung
+;(p) Seklth
+;Version: 2.4.2
+;PatchID: 2158
+;Details: https://patches.kibab.com/patches/details.php5?id=2158
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=MultiSIM_v2_4_2.rar
+
+/*
+Необходимы патчи ISS, ESI и 5003 блока EEPROM'а (все в архиве).
+
+ Небольшая инструкция по установке:
+
+Данный патч предназначен для эмуляции мультисимкарты.
+Выбор карт осуществляется через меню Настройки->Сеть->Настройки->Выбор SIM.
+Настройка карт производится ручной правкой файла 5003.txt,
+Описание формата файла - в нём же.
+Для редактирования имени, или пунктов меню можно воспользоваться opname.exe
+Отредактированный файл нужно записать в телефон с помощью любой
+программы, работающей с блоками EEPROM телефона, например Siemens
+EEPROM Tools by Skylord. Файл 5003.tid нужен для описания блока.
+
+Необходимо создать второй профиль смс и выбрать его по умолчанию.
+Настройка номера смсцентра физической сим - в первом профиле,
+виртуальных - во втором.
+
+Патч находиться в meni_sim.vkp
+
+
+English: Need patchs ISS, ESI and 5003 eeprom block.
+
+ The small instruction installation:
+
+This patch is intended for emulation multisimcard.
+Choice cards through menu Setup->Network->Setup->Change SIM.
+Setup cards in the file 5003.txt.
+Description of the format in the file.
+For editing the name, or item menu possible to use
+http://patch.oslik.ru/SL45_RU/patches/opname.rar
+Edited file it is necessary to write in telephone by means of any 
+the program, working with block EEPROM telephone, for instance Siemens 
+EEPROM Tools by Skylord. File 5003.tid needs for description of the block.
+
+Need to create the second sms profile and choose it by default.
+Changins the smsc number of physical network - in the first profile,
+virtual - in second.
+
+Patch - in meni_sim.vkp
+*/
+; EN: This patch for change menu item's to english.
+; RU: этот патч для изменения пунктов меню на английские.
+0x4FFFA6: 9B9B124B313E4091912053494D 4368616E67652053494D530000
+0x4FFFB6: 9B9B243837384735413A304F00 506879736963616C0000000000
+;------------------------- end -------------------------
+

@@ -1,0 +1,13 @@
+;EL71v38
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) Bennie
+;Version: 
+;PatchID: 5535
+;Details: https://patches.kibab.com/patches/details.php5?id=5535
+/*
+
+*/
+05BC1DF: D1 E0
+;------------------------- end -------------------------
+

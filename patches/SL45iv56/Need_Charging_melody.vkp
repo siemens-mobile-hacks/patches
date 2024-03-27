@@ -1,0 +1,21 @@
+;SL45iv56
+;Села батарейка
+;Need Charging melody
+;(c) abomin
+;Version: 
+;PatchID: 2074
+;Details: https://patches.kibab.com/patches/details.php5?id=2074
+/*
+Патч меняет звук разряженного аккума на мелодию "Села батарейка". 
+
+
+Release: 05.08.05
+*/
+#pragma enable old_equal_ff 
+1AAE42: CA29EA02 20178303 
+40D720: C805FE01FFFFAA002605FF00FFFF55009604FF00FFFF55005404FF00FFFF5500 
+40D740: DC03FF00FFFF5500DC03FE01FFFFA8025404FF00FFFF55009604FF00FFFF5500 
+40D760: 5404FF00FFFF5500DC03FE01FFFFFE01FDFF0300 
+;40D772: 03 03 - число повторов 
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;C81v51
+;Настройка подсветки шагом в 5%
+;Setup illumination by 5%
+;(c) SiNgle
+;(r)  -=(Kad)=-
+;(p) klaud
+;Version: 
+;PatchID: 7764
+;Details: https://patches.kibab.com/patches/details.php5?id=7764
+/*
+
+*/
+0033F2BC: 0A 05
+0033F2C2: 0A 05
+;------------------------- end -------------------------
+

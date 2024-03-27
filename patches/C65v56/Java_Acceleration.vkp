@@ -1,0 +1,13 @@
+;C65v56
+;Ускоритель явы
+;Java Acceleration
+;(c) SiNgle
+;Version: 
+;PatchID: 3809
+;Details: https://patches.kibab.com/patches/details.php5?id=3809
+/*
+
+*/
+0CBB99C: 02 01
+;------------------------- end -------------------------
+

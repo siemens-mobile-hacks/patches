@@ -1,0 +1,13 @@
+;E71v45
+;Отключить "Подождите" при вкл/выкл блютуз
+;Disable "Wait" at Bluetooth on/off
+;(c) Evgr
+;Version: 
+;PatchID: 9681
+;Details: https://patches.kibab.com/patches/details.php5?id=9681
+/*
+
+*/
+0B4FD7E: FFF5CFF8 C046C046
+;------------------------- end -------------------------
+

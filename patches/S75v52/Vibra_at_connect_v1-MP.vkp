@@ -1,0 +1,15 @@
+;S75v52
+;Вибра в момент соединения
+;Vibra at connect
+;(c) SiNgle
+;(r) (i) avkiev
+;(p) ferro
+;Version: 1-MP
+;PatchID: 8363
+;Details: https://patches.kibab.com/patches/details.php5?id=8363
+/*
+
+*/
+0DAb6c0: 2A1C2B1C09211730 00498847,0xA0063801
+;------------------------- end -------------------------
+

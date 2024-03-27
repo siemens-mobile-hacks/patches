@@ -1,0 +1,16 @@
+;C81v51
+;Звук при запросе на передачу данных
+;Sound on data transfer request
+;(c) -=(Kad)=-
+;(p) den11111
+;Version: 1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=7759
+;PatchID: 7664
+;Details: https://patches.kibab.com/patches/details.php5?id=7664
+/*
+
+*/
+0358CE4: 0523252000923F49 004B984701E806A0
+
+;------------------------- end -------------------------
+

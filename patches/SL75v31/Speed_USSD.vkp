@@ -1,0 +1,15 @@
+;SL75v31
+;Увеличить скорость просмотра USSD сообщений
+;Speed USSD
+;(c) SiNgle
+;(p) StrikerVoo
+;Version: 
+;PatchID: 3261
+;Details: https://patches.kibab.com/patches/details.php5?id=3261
+/*
+
+*/
+298AD8: D007 0003
+298AF5: 0B 03
+;------------------------- end -------------------------
+

@@ -1,0 +1,24 @@
+;C60v27
+;Оптимизация загрузки телефона
+;Phone startup optimization
+;(c) Christ
+;Version: 
+;PatchID: 4371
+;Details: https://patches.kibab.com/patches/details.php5?id=4371
+/*
+Включается на 0,7-1 сек быстрее.
+English:Phone boots up to 1 second faster.
+ Никаких побочных эффектов НЕТ И БЫТЬ НЕ МОЖЕТ (убираются вызовы пустых функций).
+
+*/
+203AE4: 3D02 0D02
+203B20: 3D02 0D02
+203F12: 3D04 0D04
+203F7A: 3D04 0D04
+203F9E: 3D02 0D02
+2041AE: 3D04 0D04
+2042F0: 3D04 0D04
+2040A6: DA40744E CC00CC00
+
+;------------------------- end -------------------------
+

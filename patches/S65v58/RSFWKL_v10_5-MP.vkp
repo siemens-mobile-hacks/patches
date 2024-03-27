@@ -1,0 +1,49 @@
+;S65v58
+;Вызов Различных Функций при Залоченной Клавиатуре
+;Running Some Functions While Keyboard is Locked
+;(c) 1nvisible
+;(r) Bennie, avkiev, AsteriX, KiRiK, SiNgle
+;(p) -=(Kad)=-
+;Version: 10.5-MP
+;PatchID: 3300
+;Details: https://patches.kibab.com/patches/details.php5?id=3300
+/*
+Не совместим спатчем Чтение флэш СМС и нового сообщения при залоченной клавиатуре с временной подсветкой
+т.к. этот заменяет его.
+
+;Функции (Functions) 
+;00 - временно включить подсветку (temporarily light on)
+;01 (© avkiev) - проговаривание текущего времени. !Должен быть установлен патч "Говорящий Телефон v3" 
+;(spelling current time. !The patch "Talking Phone v3" must be installed)
+;02 (© Bennie) - просмотр пропущенных SMS/вызовов/напоминаний (view missed SMS/calls/appointments)
+;9x - переключиться в профиль (где 'x' - номер профиля - от 1 до 8)
+;также можно использовать патч на перезагрузку вместо 8го профиля (© -=(Kad)=-)
+;(switch to profile (where 'x' is the profile number - from 1 to 8))
+;You can use patch reboot instead of 8th profile (© -=(Kad)=-)
+;Dx - запустить мидлет (где 'x' - номер мидлета в списке мидлетов - см. ниже) 
+;(run midlet (where 'x' is the midlet number in midlet list - see below))
+;Ex - запустить процедуру (где 'x' - номер процедуры в списке процедур - см. ниже) 
+;(run procedure (where 'x' is the procedure number in procedure list - see below))
+
+;Опции (Options)
+;00 - никаких дополнительных действий (no additional actions)
+;01 - проверка на ДВОЙНОЕ нажатие клавиши (для защиты от случайных нажатий) 
+;(check DOUBLE pressing of the button (to prevent casual pressing))
+;02 - включить временную подсветку (light on temporarily)
+;04 - разблокировать клавиатуру (рекомендуется при запуске мидлетов и других задач, где нужна подсветка) 
+;(unlock keyboard (recommended when running midlets or other functions requiring lighting on))
+;Например, чтобы разблокировать клавиатуру при двойном нажатии клавиши, введите 05 (4+1).
+;Just summarize the numbers of the required functions. 
+;For instance, to unlock keyboard after double pressing the button, put 05 (4+1).
+
+И еще: Не работает в заставке! т.к. портировал с м65 там тоже не работает. и версия 8.5 под s65 не работала 
+в заставке, нужен fix!!!!
+*/
+#pragma enable old_equal_ff
+169FA50: F8F7C2FD 57F046FD
+16A2A2E: 0223E05E 54F057FD 
+16F74E0: 014B1847014B1847A120FCA0C120FCA0 ; patch loader
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

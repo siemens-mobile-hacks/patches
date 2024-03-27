@@ -1,0 +1,14 @@
+;E71v41
+;Разрешить выбор Диапазона
+;Enable Band Selection
+;(c) Bennie
+;(p) Bueffel
+;Version: 
+;PatchID: 6746
+;Details: https://patches.kibab.com/patches/details.php5?id=6746
+/*
+
+*/
+0839F2C: 0502 F901
+;------------------------- end -------------------------
+

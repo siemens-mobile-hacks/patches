@@ -1,0 +1,14 @@
+;C60v27
+;Изменить тип вибры
+;Quick Vibra - channge duration vibra
+;(c) Alexander S
+;Version: 
+;PatchID: 2050
+;Details: https://patches.kibab.com/patches/details.php5?id=2050
+/*
+Изменить тип вибры
+*/
+34254e: f401 b000 ;длительность "бзз"
+342552: f401 b000 ;длительность паузы
+;------------------------- end -------------------------
+

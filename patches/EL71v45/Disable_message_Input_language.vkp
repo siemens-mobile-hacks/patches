@@ -1,0 +1,15 @@
+;EL71v45
+;Отключить сообщение "Язык ввода:..." при выборе языка
+;Disable message "Input language:..." at a language choice
+;(c) Evgr
+;(p) den11111
+;Version: 
+;PatchID: 8237
+;Details: https://patches.kibab.com/patches/details.php5?id=8237
+/*
+
+*/
+0957CBD: D1 D0
+0957DA4: 00F073FF C046C046 ; disable "please wait"
+;------------------------- end -------------------------
+

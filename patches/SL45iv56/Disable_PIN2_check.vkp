@@ -1,0 +1,18 @@
+;SL45iv56
+;Не запрашивать PIN2
+;Disable PIN2 check
+;(c) rizapn
+;Version: 
+;PatchID: 2083
+;Details: https://patches.kibab.com/patches/details.php5?id=2083
+/*
+Release: September 26th, 2005
+*/
+0x2C8288: 2F 2E ; Disable PIN2 check 
+0x2C3F38: 3D 0D 
+
+; Disable card program error (otherwise SIM doesn't accept requests) 
+0x44EF5F: 30 00 
+0x44EF7F: 30 00
+;------------------------- end -------------------------
+

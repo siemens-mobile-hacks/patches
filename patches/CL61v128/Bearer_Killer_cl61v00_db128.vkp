@@ -1,0 +1,18 @@
+;CL61v128
+;RAP_BEARER Killer
+;RAP_BEARER Killer
+;(c) Marie
+;Version: 
+;PatchID: 10402
+;Details: https://patches.kibab.com/patches/details.php5?id=10402
+/*
+Патч отключает создание процессов RAP_BEARER отвечающих за Java, Browser, OPWV, Pilots
+English:Diseble RAP_BEARER proceses (Java, Browser, OPWV, Pilots)
+*/
+0124302: 6DF78DFF C046C046 ; RAP_BEARER_0 (Browser)
+;012431A: 6DF781FF C046C046 ; RAP_BEARER_1 (Java)
+;0124332: 6DF775FF C046C046 ; RAP_BEARER_2
+;012434A: 6DF769FF C046C046 ; RAP_BEARER_3
+;0124362: 6DF75DFF C046C046 ; RAP_BEARER_4
+;------------------------- end -------------------------
+

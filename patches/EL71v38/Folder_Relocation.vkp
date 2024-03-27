@@ -1,0 +1,28 @@
+;EL71v38
+;Перенос Папок
+;Folder Relocation
+;(c) 1nvisible
+;Version: 
+;PatchID: 5607
+;Details: https://patches.kibab.com/patches/details.php5?id=5607
+/*
+
+*/
+;Conversations
+;0->1
+082BCCA: 30 31
+082BCEC: 30 31
+082BCF8: 30 31
+;Tmp
+;0->2
+082BC88: 30 32
+;Themes
+;0->4
+082B71C: 30 34
+082B730: 30 34
+082B73C: 30 34
+;Active Theme
+;0->2
+082B752: 30 32
+;------------------------- end -------------------------
+

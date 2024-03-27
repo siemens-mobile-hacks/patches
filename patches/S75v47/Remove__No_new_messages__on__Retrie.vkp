@@ -1,0 +1,15 @@
+;S75v47
+;Удалить 'Нет новых сообщений' в 'Полученной почте'
+;Remove "No new messages" on "Retrieve email"
+;(c) benj9
+;(p) den11111
+;Version: 
+;PatchID: 8048
+;Details: https://patches.kibab.com/patches/details.php5?id=8048
+/*
+note: cause of ELF png loader conceptional bug retrieving email 
+without new messages crashes, this patch is workaround.
+*/
+0EFA51A: 081C 7047
+;------------------------- end -------------------------
+

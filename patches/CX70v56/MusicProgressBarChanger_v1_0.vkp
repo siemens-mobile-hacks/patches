@@ -1,0 +1,15 @@
+;CX70v56
+;Изменение прогрессбара
+;MusicProgressBarChanger
+;(c) KreN
+;(r) SiNgle, Kad
+;Version: 1.0
+;PatchID: 4281
+;Details: https://patches.kibab.com/patches/details.php5?id=4281
+/*
+
+*/
+09D98C0: 081080E50C3080E5 04F01FE5,0xA0FC7117
+09D9BCC: 0250A0E1002090E50370A0E1 04E08FE204F01FE5,0xA0FC7101
+;------------------------- end -------------------------
+

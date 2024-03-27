@@ -1,0 +1,15 @@
+;S75v47
+;Увеличить хип на 512кБ
+;Increase heap 512kB
+;(c) Feyman
+;(r) DebriZ
+;Version: 
+;PatchID: 9657
+;Details: https://patches.kibab.com/patches/details.php5?id=9657
+/*
+Увеличивает доступную системную память на 512 килобайт
+*/
+041D3EE: C8 D0
+0270AD4: C8 D0
+;------------------------- end -------------------------
+

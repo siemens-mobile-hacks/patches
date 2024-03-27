@@ -1,0 +1,21 @@
+;M75v19
+;Перенос Игр и Приложений
+;Carrying Dir's Games and Applicationson MMC
+;(c) 0xFFFF
+;Version: 1
+;PatchID: 6953
+;Details: https://patches.kibab.com/patches/details.php5?id=6953
+/*
+Перенос Игр и приложений на MMC
+*/
+04A5760: 30 34
+04A5774: 30 34
+04A579A: 30 34
+04A57C8: 30 34
+04A57FA: 30 34
+04A581C: 30 34
+04A584E: 30 34
+04A5872: 30 34
+04A5890: 30 34
+;------------------------- end -------------------------
+

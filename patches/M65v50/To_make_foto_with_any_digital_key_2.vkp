@@ -1,0 +1,19 @@
+;M65v50
+;Фотографирование любой цифровой кнопкой
+;To make foto with any digital key
+;(c) SiNgle
+;(r) (i) KreN
+;(p) Mifodiy
+;Version: 2
+;PatchID: 3428
+;Details: https://patches.kibab.com/patches/details.php5?id=3428
+/*
+Нормальный выход из камеры
+*/
+08F2214: 010050E3 C97710FA
+
+#pragma enable old_equal_ff
+0D10140: 162801D00128704700480047,0xA08F22B0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

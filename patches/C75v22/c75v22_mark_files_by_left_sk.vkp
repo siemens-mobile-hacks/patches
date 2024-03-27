@@ -1,0 +1,20 @@
+;C75v22
+;Выделение файлов левой софт-кнопкой в Card-Explorer'е
+;Mark files by Left Softkey in Card-Explorer 
+;(c) 1nvisible
+;(r) Mifodiy
+;(p) sempai, m.ksy
+;Version: 
+;PatchID: 9930
+;Details: https://patches.kibab.com/patches/details.php5?id=9930
+/*
+
+*/
+034BF94: 02 08 
+034BF20: 360050E3 B61205FA 
+#pragma enable old_equal_ff 
+0490A00: 362800D1704703B449680979012903BC 
+0490A10: 01D036287047,85,2036287047 
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

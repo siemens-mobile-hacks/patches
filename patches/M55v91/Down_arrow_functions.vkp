@@ -1,0 +1,15 @@
+;M55v91
+;Стрелка вниз -> Ссылки
+;Down arrow -> any function
+;(c) kay
+;(p) AlexSid
+;Version: 
+;PatchID: 2134
+;Details: https://patches.kibab.com/patches/details.php5?id=2134
+/*
+Список ссылок 1998. 
+English: Functions list 1998. 
+*/
+0D59AF: 6A66B2 6B2646 ;группы (или любая ссылка из списка)
+;------------------------- end -------------------------
+

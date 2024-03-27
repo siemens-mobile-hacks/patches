@@ -1,0 +1,14 @@
+;M75v25
+;Вибра в момент соединения MP
+;Vibra at connect MP
+;(c) SiNgle
+;(r) (i) avkiev
+;Version: 
+;PatchID: 5800
+;Details: https://patches.kibab.com/patches/details.php5?id=5800
+/*
+
+*/
+0B38278: 2A1C2B1C09211730 00498847,0xA0FC3801
+;------------------------- end -------------------------
+

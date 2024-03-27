@@ -1,0 +1,13 @@
+;E71v45
+;Удалять USSD сообщения без подтверждения
+;Delete USSD without question
+;(c) Evgr
+;Version: 
+;PatchID: 9684
+;Details: https://patches.kibab.com/patches/details.php5?id=9684
+/*
+
+*/
+066C2C4: 8EF140E9 00209047
+;------------------------- end -------------------------
+

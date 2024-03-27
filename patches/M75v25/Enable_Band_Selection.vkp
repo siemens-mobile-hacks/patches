@@ -1,0 +1,13 @@
+;M75v25
+;Включить выбор диапазона
+;Enable Band Selection
+;(c) Bennie
+;Version: 
+;PatchID: 4113
+;Details: https://patches.kibab.com/patches/details.php5?id=4113
+/*
+
+*/
+04D79C0: 0502 FA01
+;------------------------- end -------------------------
+

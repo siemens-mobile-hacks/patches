@@ -1,0 +1,17 @@
+;SL75v47
+;Увеличить скорость просмотра USSD сообщений
+;Speed USSD
+;(c) SiNgle
+;(r) StrikerVoo
+;(p) Apo4emu
+;Version: 
+;PatchID: 6802
+;Details: https://patches.kibab.com/patches/details.php5?id=6802
+/*
+Где-то в 2 раза быстрее прокручивается USSD собщения от стандартных установок.
+*/
+29c1d0: D007 0003
+29c1ed: 0B 03
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;E71v42
+;Отключить звук\вибру USSD сообщения
+;Disable USSD sound\vibration
+;(c) ThE TrIFoN
+;(r) (i) -=(Kad)=-
+;(p) SancheS
+;Version: 
+;PatchID: 6809
+;Details: https://patches.kibab.com/patches/details.php5?id=6809
+/*
+
+*/
+05C07EA: 10 21
+;------------------------- end -------------------------
+

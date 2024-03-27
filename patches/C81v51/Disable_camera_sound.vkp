@@ -1,0 +1,14 @@
+;C81v51
+;Отключить звук камеры
+;Disable camera sound
+;(c) -=(Kad)=-
+;(p) klaud
+;Version: 
+;PatchID: 7501
+;Details: https://patches.kibab.com/patches/details.php5?id=7501
+/*
+Убирает стандартный звук затвора камеры
+*/
+00308140: 70F702ED C046C046
+;------------------------- end -------------------------
+

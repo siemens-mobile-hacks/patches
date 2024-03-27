@@ -1,0 +1,14 @@
+;CX65v50
+;Убрать черточки-разделители при показе IMEI
+;Disable delimiters while showing IMEI
+;(c) 1nvisible
+;(r) Bennie
+;Version: 
+;PatchID: 3074
+;Details: https://patches.kibab.com/patches/details.php5?id=3074
+/*
+Особено хорош при использовании патча "Замена отображаемого IMEI" (Change Display of IMEI) http://patches.kibab.com/patches/details.php5?id=290
+*/
+08E8070: 05D0 0AE0
+;------------------------- end -------------------------
+

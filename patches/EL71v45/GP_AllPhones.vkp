@@ -1,0 +1,15 @@
+;EL71v45
+;Иконки закрытого слайдера во всех местах
+;Icons slider closed in all space on phone
+;(c) MAXIM
+;Version: 
+;PatchID: 10763
+;Details: https://patches.kibab.com/patches/details.php5?id=10763
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=el71v45&f=GP_AllPhones.rar
+
+/*
+Иконки закрытого слайдера во всех местах + анимация вставьте сим, положить в Default диска Config. Патч в доп. файлах
+*/
+Патч в доп. файлах
+;------------------------- end -------------------------
+

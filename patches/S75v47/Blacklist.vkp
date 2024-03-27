@@ -1,0 +1,25 @@
+;S75v47
+;Черный список
+;Black list
+;(c) ThE TrIFoN, SiNgle
+;Version: 
+;PatchID: 5683
+;Details: https://patches.kibab.com/patches/details.php5?id=5683
+/*
+Настройка производится путём определения номера группы, звонки из которой должны игнорироваться. Игнор происходит путём бросания трубки. Звонок записывается в принятые вызовы.
+
+Черная группа по умолчанию - Хобби 2
+На черную группу и абонента не должно стоять никаких мелодий!!!
+
+*/
+008FFD0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFB50B2803D10020034B984703E0FFBC
+008FFE0: FFFFFFFFFFFFFFFFFFFFFFFF E9F14EEB00BDFFBD43599BA0
+;008FFD2 0B 0N ; N-черная группа 00- Нет группы, 03-Семья, 04-Друзья и так далее по возрастающей 
+; По умолчанию в патче черная группа - Хобби 2
+; N means Black Group, 00-No group, 03-Family, 04-Friends and so on
+; By default the Black Group is Hobby 2
+034154E: 38F798E8 4EF53FFD
+09B360C: 201C27F2FEEB 002002F098F9 ;отклонять вызовы с подавленными номерами
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,35 @@
+;C75v24
+;Отключить сообщения
+;Disable messages
+;(c) SiNgle
+;(p) simplix
+;Version: 
+;PatchID: 4573
+;Details: https://patches.kibab.com/patches/details.php5?id=4573
+/*
+Убирает сообщения:
+
+Профиль активирован
+All ringtones on
+All ringtones off
+Keypad locked
+Vibra alert on/off
+IrDA on/off
+GPRS on/off
+"Saved to:" after you take a foto
+*/
+;* Отключить сообщения * C75_v24
+; (c) SiNgle
+; (p) simplix
+
+03AF744: 2B1C 04E0 ; Профиль активирован
+02D0FD6: 0021 10BD ; All ringtones on
+02D0FF2: 0021 10BD ; All ringtones off
+02D1042: 0021 10BD ; Keypad locked
+0329122: 63F1 80BD ; Vibra alert on/off
+03291B6: 63F1 80BD ; IrDA on/off
+03291E6: 63F1 80BD ; GPRS on/off
+03452C4: C5D801EB 0100A0E3 ; "Saved to:" after you take a foto
+
+;------------------------- end -------------------------
+

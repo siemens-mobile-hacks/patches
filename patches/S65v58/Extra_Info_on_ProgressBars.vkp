@@ -1,0 +1,30 @@
+;S65v58
+;Дополнительная Информация на Прогрессбарах
+;Extra Info on ProgressBars
+;(c) 1nvisible
+;(r) NForce, Ace_Ventura
+;(p) Kamikadze!
+;Version: 2
+;PatchID: 5570
+;Details: https://patches.kibab.com/patches/details.php5?id=5570
+/*
+Обновление библиотеки:
+
++0FC0000
+#pragma enable old_equal_ff
+4F8: 004F3847,0xA114F417   ; f159: DrawRect
+520: 004F3847,0xA0C30C67   ; f164: wsAlloc
+528: 004F3847,0xA0C30CA3   ; f165: wsFree 
+#pragma disable old_equal_ff
+
+*/
+0A25F00: 6C7795A000000000 85F0FBA075F0FBA0
+0A29DB0: 0000000000000000 61F0FBA051F0FBA0
+
+1182400: 216B000C4143E06A88F008E9 004FB847A1F0FBA0C046C046
+11824B8: 0C20185E231CCCF7 004FB84733F1FBA0
+
+0FBF09C: FFFFFFFF 0xA851D898
+
+;------------------------- end -------------------------
+

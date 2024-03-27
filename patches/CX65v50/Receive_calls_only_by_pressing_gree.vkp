@@ -1,0 +1,19 @@
+;CX65v50
+;Прием звонков только зеленой кнопкой
+;Receive calls only by pressing green button
+;(c) SiNgle
+;(p) AsteriX
+;Version: 
+;PatchID: 191
+;Details: https://patches.kibab.com/patches/details.php5?id=191
+/*
+Прием звонков только зеленой кнопкой
+
+Но отключение звука только долгим нажатием "*"
+(But disable sound only by "*" long press)
+ 
+*/
+163D49C: 62D0 0028
+
+;------------------------- end -------------------------
+

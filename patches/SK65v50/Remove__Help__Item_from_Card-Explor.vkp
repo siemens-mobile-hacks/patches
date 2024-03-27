@@ -1,0 +1,13 @@
+;SK65v50
+;Убрать Пункт "Справка" в Card-Explorer'е
+;Remove "Help" Item from Card-Explorer
+;(c) 1nvisible
+;Version: 
+;PatchID: 5338
+;Details: https://patches.kibab.com/patches/details.php5?id=5338
+/*
+
+*/
+046E5FC: 17 16
+;------------------------- end -------------------------
+

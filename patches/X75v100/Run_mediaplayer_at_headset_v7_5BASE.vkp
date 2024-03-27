@@ -1,0 +1,54 @@
+;X75v100
+;Запуск медиаплеера при подключении гарнитуры
+;Run mediaplayer at headset connection
+;(c) -=(Kad)=-, Kibab
+;(r) ~Jhellico, ThE TrIFoN
+;Version: 7.5
+;PatchID: 7352
+;Details: https://patches.kibab.com/patches/details.php5?id=7352
+/*
+
+Тело универсально для NewSgold & NewSGold 2
+В патче появился новый параметр:
+`Your phone type` выбираем для кого что нужно
+
+Потдочено для EL71, также продолжает работать на S75 :)
+*/
+#pragma enable old_equal_ff
+006DB00: 14B5201CB7DF2A4FB8472E48C4DF4CD0
+006DB10: 071C43DF01307978C14046D388DF797A
+006DB20: 884229D1C7DFDF8000781A283DD06EDF
+006DB30: 01283AD07FDF01282BD0C6DFF9788842
+006DB40: 00D832E07121785C012802D0022803D0
+006DB50: 2BE0C7DFFF0123E08020C7DF2501061C
+006DB60: 391C20318022C7DF6C010021301C94DF
+006DB70: 301CC7DF290113E0387E002815D0C7DF
+006DB80: F801022811D1C7DFDF8000781A280CD0
+006DB90: 03E0C7DFF801012807D1C7DFFF0104E0
+006DBA0: 387979797A89FB7B98DF94BC04373847
+
+006DBC0: E4D3C2B104AD00000000000000000000,"\
+{p=`Run player at headset connection` id=AD04 cp=`-=(Kad)=-, Kibab` ver=7.5}\
+{info=`(r) ~Jhellico, \nThE TrIFoN`}","\
+{c wtd `Exec playlist`=2 `Exec play last`=1}\
+{c mt `E-EL71`=21 `S-SL75`=19}\
+{sm `Run player at`}\
+{1.0 cb `Lock` v=1}\
+{1.1 cb `Unlock` v=1}\
+{endsm}","\
+{sm `Sound settings`}\
+{4 h `Sound №` v=90}","\
+{5 b `Frequency` v=25}\
+{10 ms `Duration` v=249}\
+{15 cb `Play if vibra off` v=1}\
+{endsm}\
+{9 o `Your phone type` c=mt}\
+{113 o `What to do:` c=wtd v=2}\
+{24 cb `Pause on disconect` v=1}\
+{32 sf `Playlist` mask=`*.m3u` ml=80}","\
+{3 b `Dont run player if akku is lower than: \n(0=always run)` r=0..100 v=15}\
+",00
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

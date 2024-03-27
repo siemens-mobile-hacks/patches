@@ -1,0 +1,16 @@
+;M65v50
+;Убрать звук дозвона
+;Disable dialing sound
+;(c) AlexSid
+;(p) BuG
+;Version: 
+;PatchID: 6309
+;Details: https://patches.kibab.com/patches/details.php5?id=6309
+/*
+
+*/
+; Smelter patch didn't work)
+13B0B20: 8A083BA1 00000000
+
+;------------------------- end -------------------------
+

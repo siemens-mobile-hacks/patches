@@ -1,0 +1,15 @@
+;CX75v13
+;Отключить сообщение "Профиль активирован
+;Disable message "Profile activated"
+;(c) AlexSid
+;(r) Geka
+;(p) Smelter by avkiev
+;Version: 1
+;PatchID: 3948
+;Details: https://patches.kibab.com/patches/details.php5?id=3948
+/*
+
+*/
+03B7D5E: 2B1C 04E0
+;------------------------- end -------------------------
+

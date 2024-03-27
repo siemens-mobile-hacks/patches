@@ -1,0 +1,13 @@
+;S55v20
+;Включение/выключение GPRS без подтверждения
+;Turn GPRS on/off without confirmation
+;(c) dspmobile
+;Version: 
+;PatchID: 4771
+;Details: https://patches.kibab.com/patches/details.php5?id=4771
+/*
+
+*/
+108976: C404 5E05
+;------------------------- end -------------------------
+

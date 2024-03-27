@@ -1,0 +1,18 @@
+;CX75v13
+;Плавное включение подсветки
+;Smooth illumination turn-on
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 774
+;Details: https://patches.kibab.com/patches/details.php5?id=774
+/*
+RUS: Плавное включение подсветки. С принципом задания времени пока не разобрался.
+
+ENG: Smooth inclusion of illumination. With a principle of the task of time has not understood yet.
+*/
+0859DFE: 0022 FF22
+
+;------------------------- end -------------------------
+

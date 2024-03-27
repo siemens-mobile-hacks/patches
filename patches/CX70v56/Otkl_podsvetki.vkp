@@ -1,0 +1,14 @@
+;CX70v56
+;Отключить подсветку кнопок
+;Disable keypad light
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 664
+;Details: https://patches.kibab.com/patches/details.php5?id=664
+/*
+Патч отключает подсветку кнопок.
+*/
+0B8E1EF: D5 24
+;------------------------- end -------------------------
+

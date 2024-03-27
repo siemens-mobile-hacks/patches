@@ -1,0 +1,14 @@
+;EL71v45
+;Disable MMI-logging
+;Disable MMI-logging
+;(c) SiNgle
+;(p) NForce
+;Version: 
+;PatchID: 7969
+;Details: https://patches.kibab.com/patches/details.php5?id=7969
+/*
+
+*/
+0503DBE: 041C 70BD
+;------------------------- end -------------------------
+

@@ -1,0 +1,29 @@
+;SL45iv56
+;DSF. Подпапка диктофона
+;DSF. Dictaphone Sub Folder
+;(c) RizaPN
+;Version: 1.1
+;PatchID: 1970
+;Details: https://patches.kibab.com/patches/details.php5?id=1970
+/*
+Изменяет пункт меню "--Справка--" (в меню Диктофон -> Опции) на пункт "Папка".
+Дает доступ к папка внутри Voice memo.
+
+English: Modify --Help-- item (inside the Dictaphone - Options menu) with "Folder"
+Get access to the folder inside the Voice memo.
+
+
+Published: July 19, 2004
+Modified: March 13, 2005 (v1.1 - исправлен баг Красной кнопки)
+*/
+0x11BBFC: 28012801 87088708 
+
+0x34F814: DAEC50FB DAE46047 
+
+0x444760: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC5F00DAF0508326F02C02F0C066FC 
+0x444770: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FF3F88C0F2FD02FEDAD860E098C006FC 
+0x444780: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3100F2FD02FEE6FE9607E6FF9103DAC7 
+0x444790: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1685FAD892E1413A2F566F696365206D 
+0x4447A0: FFFFFFFF 656D6F00 
+;------------------------- end -------------------------
+

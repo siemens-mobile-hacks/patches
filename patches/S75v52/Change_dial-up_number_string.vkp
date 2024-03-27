@@ -1,0 +1,18 @@
+;S75v52
+;Изменить длину строки набора номера, при которой строка сдвигается вверх
+;Change dial-up number string length for string shift-up
+;(c) Evgr
+;(p) SimaFish
+;Version: 
+;PatchID: 9419
+;Details: https://patches.kibab.com/patches/details.php5?id=9419
+/*
+
+*/
+-B5C
+02F6D04: 0D 0ixx ; первый сдвиг при числе цифр xx / first shift at xx digits
+02F6D0C: 1A 0iyy ; второй сдвиг при числе цифр yy=2*xx / second shift at yy=2*xx digits
+02F6D14: 27 0izz ; третий сдвиг при числе цифр zz=3*xx / third shift at zz=3*xx digits
+-0
+;------------------------- end -------------------------
+

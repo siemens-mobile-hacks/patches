@@ -1,0 +1,13 @@
+;S75v32
+;Не выходить в режим ожидания при нажатии кнопки браузера
+;Don't do idle when pressing browser button
+;(c) (C)Rst7, ThE TrIFoN
+;Version: 
+;PatchID: 4017
+;Details: https://patches.kibab.com/patches/details.php5?id=4017
+/*
+Наконец-то нажатие кнопки браузера запускает его, не убивая запущенные приложения!
+*/
+03424BA: A9F0E6EC C046C046
+;------------------------- end -------------------------
+

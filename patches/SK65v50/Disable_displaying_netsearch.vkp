@@ -1,0 +1,17 @@
+;SK65v50
+;Отключить надпись "Поиск сети"
+;Disable displaying "netsearch"
+;(c) arsh0r
+;(p) AsteriX
+;Version: 
+;PatchID: 2484
+;Details: https://patches.kibab.com/patches/details.php5?id=2484
+/*
+!Отображается инвертированный "!" вместо Поиск сети (instead of Netsearch there is an inverted "!" in front of providername)
+
+*/
+02CCAB6: 6A49 04E0 ;screensaver
+02C96D6: 80F18AEF 07E00028 ; mainscreen
+
+;------------------------- end -------------------------
+

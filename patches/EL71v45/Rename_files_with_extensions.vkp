@@ -1,0 +1,16 @@
+;EL71v45
+;Переименование файлов с расширениями
+;Rename files with extensions
+;(c) SiNgle
+;(p) NForce
+;Version: 
+;PatchID: 7941
+;Details: https://patches.kibab.com/patches/details.php5?id=7941
+/*
+
+*/
+05D1FEC: 2E 00
+05D2008: 2E 00
+0722584: 2E 00
+;------------------------- end -------------------------
+

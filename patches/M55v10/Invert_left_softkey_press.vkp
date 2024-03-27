@@ -1,0 +1,15 @@
+;M55v10
+;Инверсия нажатия левой софт-кнопки
+;Invert left softkey press
+;(c) Ramil_
+;(p) Nikolas535
+;Version: 
+;PatchID: 9615
+;Details: https://patches.kibab.com/patches/details.php5?id=9615
+/*
+Патч меняет местами длинное и короткое нажатие на левой с-к на главном экране
+*/
+0D4CBC: EC CA
+0D5172: CA EC
+;------------------------- end -------------------------
+

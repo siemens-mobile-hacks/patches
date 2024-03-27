@@ -1,0 +1,41 @@
+;SL45iv56
+;ASF. Archive Sub Folder access
+;ASF. Archive Sub Folder access
+;(c) RizaPN
+;Version: 2
+;PatchID: 1968
+;Details: https://patches.kibab.com/patches/details.php5?id=1968
+/*
+Изменяет пункт меню "--Справка--" в Архиве на меню "Папка" для
+доступа к подпапке Архив SMS.
+
+
+English: Modify --Help-- inside the Archive to become "Folder" menu to get access
+to the subfolder of SMS Archive.
+
+
+Created: July 14, 2004
+Modified: March 12, 2005 (v2) 
+*/
+;Для сохранения СМС в подпапку, примените патч "Modify Character for Filename", 
+;или раскомментируйте строку ниже, если Вы его не установили. 
+;0x186110: BF00A1 2F005C 
+
+;v2 -> исправлены баги Красной кнопки 
+
+0x18C7B2: 12FFD800 2046E400 
+
+;если не нравится "Папка" измените этот указатель на строку (ID) 
+0x18C7C2: 2901AB02 87088708 
+
+;main routines: 
+0x444620: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 26F02C02F0C066FCFF3F88C0F2FD02FE 
+0x444630: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAD860E098C006FC3100F2FD02FEE6FE 
+0x444640: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 4E06E6FF9103DAC71685FAD892E1413A 
+0x444650: FFFFFFFFFF 2F534D5300 
+
+;Known "bugs":
+;It will not back to the Archive menu, unless you are in the root folder.
+;I use the "Card-Explorer" function to provide this function.
+;------------------------- end -------------------------
+

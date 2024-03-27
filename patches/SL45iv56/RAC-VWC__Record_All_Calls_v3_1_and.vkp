@@ -1,0 +1,48 @@
+;SL45iv56
+;RAC&VWC. Record All Calls v3.1 & Vibra When Connected
+;RAC&VWC. Record All Calls v3.1 & Vibra When Connected
+;(c) DeadManS, RizaPN, rc-flitzer
+;Version: 3.1
+;PatchID: 2662
+;Details: https://patches.kibab.com/patches/details.php5?id=2662
+/*
+English: Records all calls (incoming, outgoing)
+ - Vibrates once if connection is established (outgoing) and vibra is active.
+ (function can be disabled)
+ - Auto record function is selectable through Profile1 / Function 14
+
+ ! Uninstall any previous version of this patch.
+ ! Uninstall old patch "vibra when connected" from RizaPN.
+
+
+ Version Changes - v3 - No more need java midlet.
+ Update v3.1: Vibra bug disabled - but only vibration once possible
+ No usage of older "vibra when connected" patch anymore.
+
+
+
+Created : August 14, 2004
+Update : February 19th, 2006 (by rc-flitzer)
+*/
+0x3AC51C: F0C8F0D9 DAE060D2
+
+0x02F56E: DAE66653 DAE09ED2
+
+#pragma enable old_equal_ff
+0x40D260: D7400300F2FCFE048AFC16000FFCD740
+0x40D270: 0300F6FCFE0488808890DADEA6172D02
+0x40D280: DAC36C02D7400E00F2FC423A9AFC02D0
+0x40D290: DAD414F398909880F0C8F0D9DB00D740
+0x40D2A0: 0300F2FCFE040EFCD7400300F6FCFE04
+0x40D2B0: F0C8FAE66653
+#pragma disable old_equal_ff
+
+; 0x40D28E: D0 x0 ; function number (minus one, e.g. D = 13 -> function 14)
+
+; If you want to skip vibra flag (always vibrate when connected), use this:
+; 0x40D27E: 2D02 CC00
+
+; If you don't want any vibra (only record calls), use this:
+; 0x40D280: DAC36C02 CC00CC00
+;------------------------- end -------------------------
+

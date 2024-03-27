@@ -1,0 +1,14 @@
+;CX70v56
+;Изменить звук разряженного аккума
+;Change Accu Empty Sound
+;(c) benj9
+;(p) Smelter
+;Version: 
+;PatchID: 5784
+;Details: https://patches.kibab.com/patches/details.php5?id=5784
+/*
+
+*/
+0BD4EA0: 03 3A ; 00 = no sound. 2F = vibrate. e.g.: 3A, 3B, 3E, 3F, 5A, 5E
+;------------------------- end -------------------------
+

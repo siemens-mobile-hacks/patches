@@ -1,0 +1,15 @@
+;S75v40
+;Отключить подсветку клавиатуры
+;Disable Keypad Light
+;(c) SiNgle
+;(p) qtazure
+;Version: 
+;PatchID: 3903
+;Details: https://patches.kibab.com/patches/details.php5?id=3903
+/*
+Экономим электроэнергию :)
+English: +1 patch for Power Saving :)
+*/
+08FA8E7: D5 24
+;------------------------- end -------------------------
+

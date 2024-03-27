@@ -1,0 +1,42 @@
+;SL45iv56
+;Часы вместо софтов без функций
+;Clock instead of softkey having no function
+;(c) sc0ty, GoLL@B
+;Version: 
+;PatchID: 3415
+;Details: https://patches.kibab.com/patches/details.php5?id=3415
+/*
+Патч показывает часы на месте софт-клавиш, которые не имеют функции.
+Патч также работает при инвертировании.
+НО если текст софт-клавиши слишком краткий, то он не полностью перекрывает часы.
+
+Также нужно сделать фоновый рисунок софтов, т.к. без него некоторые тексты не будут перекрыватся. Фон нужно поставить в допустимое место.
+
+
+English:
+Patch shows a clock instead of softkey having no function. 
+Patch works also when we have invert. 
+But if text on softkey is too short, clock is not covered entirely.
+
+You should do a background because without it some texts can be not covered, you should also set it in a suitable place.
+
+Release: May, 14, 2006
+*/
+0x20E102: E6F6AA008860E0978870E6FC4000 DAE300D7FAC02CE1CC00CC00CC00
+0x20E110: 88C0E06C CC00CC00
+
+
+43D700: FFFFFFFF E6FC0000 ;E6FCxx00, xx - Left clock`s background
+43D704: FFFFFFFF E6FD0000 ;E6FCyy00, yy - Top clock`s background
+43D708: FFFFFFFF E6FE2A03 ;E6FExxyy xxyy - number of picture with clock`s background
+43D70C: FFFFFFFF DAC1EC22
+43D710: FFFFFFFF E6FC0400 ;E6FCxx00 xx - x clock position
+43D714: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7500D00F2F1DE25F2F2DC258820BB05
+43D724: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E0AEBB109810BB01DB00E0A2F6F10EFE
+43D734: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 5B22F2F10CFE8810F2FE0EFEBB0398E0 
+43D744: FFFFFFFFFFFF BB01CB0088C0
+43D74A: FFFFFFFF 06FE0102 ;06FExxyy xxyy - number of first picture with "0" digit (next 1,2...)
+43D74E: FFFFFFFF E6FD4400 ;E6DCyy00 yy - y clock position
+43D752: FFFFFFFFFFFFFFFFFFFF DAC1EC2298C008C6CB00
+;------------------------- end -------------------------
+

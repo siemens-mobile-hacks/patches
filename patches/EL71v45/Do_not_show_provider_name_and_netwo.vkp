@@ -1,0 +1,14 @@
+;EL71v45
+;Не показывать имя оператора и поиск сети в заставке
+;Do not show provider name and network search in ScreenSaver
+;(c) ?
+;Version: 
+;PatchID: 8652
+;Details: https://patches.kibab.com/patches/details.php5?id=8652
+/*
+
+*/
+07100D4: 85F0B3F8 C046C046
+0710000: 03D0 C046
+;------------------------- end -------------------------
+

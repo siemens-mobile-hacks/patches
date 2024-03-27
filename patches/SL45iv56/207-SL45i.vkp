@@ -1,0 +1,26 @@
+;SL45iv56
+;OLA. Лого оператора везде
+;OLA. Operator Logo Anywhere
+;(c) RizaPN
+;Version: 
+;PatchID: 1904
+;Details: https://patches.kibab.com/patches/details.php5?id=1904
+/*
+Логотип оператора будет всегда, не зависит от оператора 
+(даже если в роуминге)
+
+Патч №207 с http://patch.oslik.ru/SL45_RU
+
+
+English:
+Operator logo will become background image, not depend on the operator anymore 
+(means you will see it even you are in "Roaming" mode)
+
+Released: June 12, 2004
+*/
+0x02D486: DE003D10 FF003D39
+
+;I want to share this: SL45 developer has a good joke in this operator logo function, 
+;they use "DE FA CE" header to make the bitmap shown anywhere...
+;------------------------- end -------------------------
+

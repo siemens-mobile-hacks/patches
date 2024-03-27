@@ -1,0 +1,19 @@
+;SL45iv56
+;Отключить запрос Allow sms to при отправке SMS из Java мидлета
+;Disable "Allow SMS to" from Java Midlet's
+;(c) DeadMan
+;(r) abomin, SiNgle
+;Version: 
+;PatchID: 1722
+;Details: https://patches.kibab.com/patches/details.php5?id=1722
+/*
+Патч убирает запрос "Allow SMS to" при попытке послать SMS из Java мидлета.
+
+
+Release: 24 марта 2004
+
+Патч №127 с http://patch.oslik.ru/SL45_RU
+*/
+297188: dac9b671 cc00cc00
+;------------------------- end -------------------------
+

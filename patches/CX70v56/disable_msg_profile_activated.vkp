@@ -1,0 +1,13 @@
+;CX70v56
+;Отключить сообщение "Профиль активирован"
+;Disable message "Profile activated"
+;(c) 13.beta2
+;Version: 
+;PatchID: 10367
+;Details: https://patches.kibab.com/patches/details.php5?id=10367
+/*
+
+*/
+091B8C2: 2B1C 04E0
+;------------------------- end -------------------------
+

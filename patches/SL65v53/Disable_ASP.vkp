@@ -1,0 +1,15 @@
+;SL65v53
+;Отключение ASP
+;Disable ASP
+;(c) caine
+;(p) Tick
+;Version: 
+;PatchID: 5422
+;Details: https://patches.kibab.com/patches/details.php5?id=5422
+/*
+отключение нарастания громкости. за Ваши уши в ответе только Вы!!!
+*/
+1294BB0: 00 01
+1294BB4: 02 01
+;------------------------- end -------------------------
+

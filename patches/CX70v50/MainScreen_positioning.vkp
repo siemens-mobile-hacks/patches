@@ -1,0 +1,50 @@
+;CX70v50
+;Позиционирование главного экрана
+;MainScreen positioning
+;(c) SiNgle, BuG
+;(r) KiRiK, arsh0r
+;(p) AsteriX
+;Version: 
+;PatchID: 101
+;Details: https://patches.kibab.com/patches/details.php5?id=101
+/*
+Позиционирование главного экрана v2. Например изменяется место расположение батарии и т.д.
+*/
+;Charge Indicator (Switched-Off Mode)
+17119D8: 10 5E ;background end Y
+17119DE: 02 50 ;background start Y
+17119E0: 63 33 ;background start X
+17119E2: 80 50 ;background end X
+17119E7: F044FB 280028 ;no background
+17119F0: 02 50 ;Y
+17119F2: 63 33 ;X
+;Net
+1711A90: 10 5E ;background end Y
+1711A94: 02 01 ;background start Y
+1711A96: 21 1F ;background end X
+1711A98: 03 01 ;background start X
+1711A9D: F0E9FA 280028 ;no background
+1711AA6: 02 01 ;Y
+1711AA8: 03 01 ;X
+;Iconbar
+1711DA6: 10 0F ;background end Y
+1711DAA: 02 01 ;background start Y
+1711DAC: 23 37 ;background start X
+1711DAE: 61 75 ;background end X
+1711DB5: F05DF9 280028 ;no background
+1711DE0: 21 35 ;X
+1711DFA: 02 01 ;Y
+;Battery
+1711E94: 10 1B ;background end Y
+1711E98: 02 0D ;background start Y
+1711E9A: 80 1E ;background end X
+1711E9C: 63 01 ;background start X
+1711EA1: F0E7F8 280028 ;no background
+1711EAA: 02 0D ;Y
+1711EAC: 63 01 ;X
+1732374: 08 12 ;Y - Provider name
+1732384: 1A 24 ;Y - Sub provider name
+;1718C8E: A1 A0 ;Y - Time & Date (раскоментировать если нужно)
+
+;------------------------- end -------------------------
+

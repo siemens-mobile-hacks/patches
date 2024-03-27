@@ -1,0 +1,17 @@
+;A62v7
+;Не показывать вторую анимацию при загрузке
+;Don't show second boot animation
+;(c) Rasp
+;(p) Weron
+;Version: 
+;PatchID: 9403
+;Details: https://patches.kibab.com/patches/details.php5?id=9403
+/*
+
+*/
+;Не показывать вторую анимацию при загрузке.
+;by Rasp
+;(p) Weron
+6DAB56: 3D 0D
+;------------------------- end -------------------------
+

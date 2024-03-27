@@ -1,0 +1,22 @@
+;X75v100
+;Графический индикатор температуры аккумулятора
+;Accu Temperature As Graphic Indicator
+;(c) benj9
+;(r) ACiDmrp, avkiev, BuG (i)~Jhellico,-=(Kad)=-
+;Version: 3.1
+;PatchID: 6529
+;Details: https://patches.kibab.com/patches/details.php5?id=6529
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=Accu_temp_Indic_v31.zip
+
+/*
+
+В архиве так же лежат картинки в формате gpn
+
+для работы пачта необходимо иметь в библиотеке функцию
+03C0: 0x00001200   ; F0: Pic_AccuGraph
+
+Всё, разобрались с кртинками, вроде...
+*/
+;качаем аттач
+;------------------------- end -------------------------
+

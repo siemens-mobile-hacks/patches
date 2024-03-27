@@ -1,0 +1,18 @@
+;CX75v13
+;Автодозвон с паузой в 10 сек
+;Autoredial with pause in 10 sec
+;(c) SiNgle
+;(p) TAPAKAH
+;Version: 1.0
+;PatchID: 796
+;Details: https://patches.kibab.com/patches/details.php5?id=796
+/*
+RUS: Патч реализует бесконечный дозвон с фиксированной паузой в 10 секунд (можно и изменить эту паузу).
+
+ENG: The patch realizes infinite dialing with the fixed pause in 10 seconds (it is possible and to change this pause).
+*/
+0557456: A068 0020
+055747F: 30 20
+0A54D5D: 05 0A ; pause (0A=10 sec.)
+;------------------------- end -------------------------
+

@@ -1,0 +1,38 @@
+;SL65v53
+;Отключение некоторых иконок в иконбаре
+;Disable some icons in iconbar
+;(c) sempai
+;(p) dimonp25
+;Version: 
+;PatchID: 9077
+;Details: https://patches.kibab.com/patches/details.php5?id=9077
+/*
+;Отключение некоторых элементов на главном экране при использовании позиционирования, 
+;патчей, эльфов. . . например, можно убрать индикатор сети, заменив на продвинутый (dis патч) и т.п.
+*нужное раскомментить
+*/
+; net
+;016428cf: D0 E0 ; net background
+;016428e7: D0 E0 ; net
+
+; battery
+;01642c55: D0 E0 ; battery background
+;01642c6d: D0 E0 ; battery
+
+; iconbar 
+;01642b7a: 00F05eF9 C046C046 ; iconbar background
+;01642bc4: 00F04cF9 C046C046 ; iconbar
+
+; iconbar icons
+;0164298e: FFF756FF C046C046 ; irda on
+;016429de: FFF72eFF C046C046 ; headset
+;016429fa: FFF720FF C046C046 ; keylock
+;01642a5e: FFF7EeFE C046C046 ; all ringtones off
+;01642b20: FFF78dFE C046C046 ; gprs
+
+; events
+;01642ca2: 00F0CaF8 C046C046 ; background of missed events icons
+;01642cca: 00F0C9F8 C046C046 ; missed events icons
+
+;------------------------- end -------------------------
+

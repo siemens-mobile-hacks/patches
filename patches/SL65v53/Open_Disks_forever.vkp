@@ -1,0 +1,13 @@
+;SL65v53
+;Открыть диски навсегда
+;Open Disks forever
+;(c) SiNgle
+;Version: 
+;PatchID: 5275
+;Details: https://patches.kibab.com/patches/details.php5?id=5275
+/*
+
+*/
+126A360: 02 03
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;M75v19
+;Изменить интервал в слайдшоу
+;Change Slideshow Interval
+;(c) benj9
+;(p) Geka
+;Version: 1
+;PatchID: 4811
+;Details: https://patches.kibab.com/patches/details.php5?id=4811
+/*
+
+*/
+35CBF0: 1D020000 3B040000 ; 043Bh=1083*6/1300=~5 secs
+
+;------------------------- end -------------------------
+

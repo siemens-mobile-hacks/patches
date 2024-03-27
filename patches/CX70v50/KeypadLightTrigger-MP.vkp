@@ -1,0 +1,16 @@
+;CX70v50
+;Переключатель режима подсветки клавиатуры
+;Keypad Light Trigger
+;(c) benj9
+;(r) (i) empeka
+;(p) KreN
+;Version: 2.1-MP
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1689
+;PatchID: 1151
+;Details: https://patches.kibab.com/patches/details.php5?id=1151
+/*
+Патч является точкой входа для патча 1150
+*/
+0BD0988: 2A1C01210120,7EF086EA 004880470134FCA0,0000 ; CX70v50
+;------------------------- end -------------------------
+

@@ -1,0 +1,25 @@
+;CX65v50
+;Перенаправление ДС - MP
+;RouteDL - MP
+;(c) benj9
+;(r) (i) empeka
+;(p) KiRiK
+;Version: 0.1
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1166
+;PatchID: 755
+;Details: https://patches.kibab.com/patches/details.php5?id=755
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx65v50&f=RouteDL-MP_v01.rar
+
+/*
+Перенаправляет динамический свет на подсветку клавиатуры или гл.экрана.
+Адаптирован для использования с Мастер-Патчем.
+
+EN:
+Routes the dynamic lights signals to keypadlight or mainscreen.
+Designed for use with Master-Patch.
+*/
+122643C: 00A0A0E3 27D110FA
+165A8E0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00B5022800D008E0FCB4052003498847
+165A8F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FCBC012801D10139087800BD41B865A1
+;------------------------- end -------------------------
+

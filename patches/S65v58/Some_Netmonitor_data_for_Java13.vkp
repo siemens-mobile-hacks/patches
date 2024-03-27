@@ -1,0 +1,53 @@
+;S65v58
+;Передача некоторых данных Netmonitor мидлетам
+;Some Netmonitor data for Java
+;(c) ~Jhellico
+;(r) 1nvisible
+;(p) kraze1984
+;Version: 1.3
+;PatchID: 5428
+;Details: https://patches.kibab.com/patches/details.php5?id=5428
+/*
+     Property                   Value
+    ---------------------------------------------------
+     MPJC_CID         current cell CID
+     MPJC_LAC         current cell LAC
+     MPJCCIDS         current+neighbours cells CID
+     MPJCLACS         current+neighbours cells LAC
+     MPJCRXLS         current+neighbours cells RX level
+     MPJC_TA          TA
+     MPJCTXPW         TXPWR
+     MPJC_CAP         current accu charge level
+
+*/
+#pragma enable old_equal_ff
+00D4000: F081BDE8FEB50268304B9A424BD10D1C
+00D4010: 374C2F4B4068984219D02E4B984215D0
+00D4020: 2D4B98421FD02D4B98421BD02C4B9842
+00D4030: 26D02C4B98422DD02B4B98422DD02B4B
+00D4040: 98422DD000200870081C07E002340234
+00D4050: 2288281C1CA1284FB847281CFEBC7FB0
+00D4060: FFF7CEEF02340234072120B4228800F0
+00D4070: 1FF801390029F9D1013D297001BCEDE7
+00D4080: 0634072120B4227800F012F801390029
+00D4090: F9D1F1E7173C2278DBE7164C2278D8E7
+00D40A0: 053C2278D5E7FEBC00240C700C1C00BD
+00D40B0: 02B505A1281C104FB8472D182C212970
+00D40C0: 01350C3402BDFFFF256900FF4D504A43
+00D40D0: 5F4349445F4C4143434944534C414353
+00D40E0: 52584C535F5441005F43415054585057
+00D40F0: 0xA86CEF84,0xA4411FE5,0xA1669A99 ; A,B,C
+#pragma disable old_equal_ff
+
+116D6D4: 0080A0E30080C1E50140A0E1 04E08FE204F01FE5,0xA00D4005 ; Y
+
+/*
+Port info:
+Y - find 0080A0E30080C1E50140A0E1
+A - RamNet
+B - RamCap = &(????????B000C4E1B210D5E1010040E0)
+C - sprintf
+*/
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,28 @@
+;SL45iv56
+;Переключение между патчами mamaich/ACiD[mrp] AT+CGSN через меню APP
+;Switch between mamaich/ACiD[mrp] AT+CGSN patch using APP menu
+;(c) arsh0r
+;(r) rc-flitzer
+;Version: 
+;PatchID: 1732
+;Details: https://patches.kibab.com/patches/details.php5?id=1732
+/*
+Патч позволяет переключатся между режимами AT+CGSN патчей mamaich и ACiD[mrp] с помощью функции 16 в меню Application (активно - патч Мамаича).
+Перед установкой патчей необходимо закомментировать в них блок 0010F100:
+
+English: This patch uses the Fuction 16 in APP menu to switch between the AT+CGSN Patches
+of mamaich (can be found at: http://mamaich.fuckru.net/sl45i/flash_edit.vkp) and
+ACiD[mrp] (can be found at: http://www.gsmdev.de/index.php?c=viewprojektinfo&id=24).
+you shoud comment the 0010F100: block in both patches 
+you can rename the "Fuction 16" string in you language pack in f.e. "online flashing" or "mamaich/acid"
+
+Release: May 26, 2004
+*/
+0010F100: 26C1D200 02D4C700
+
+0x27D402: FFFFFFFFFFFFFFFF 88C0D7400E00F2FC
+0x27D40A: FFFFFFFFFFFFFFFF 423A9AFC03F098C0
+0x27D412: FFFFFFFFFFFFFFFF FAEF000098C0FAC7
+0x27D41A: FFFF D6D7
+;------------------------- end -------------------------
+

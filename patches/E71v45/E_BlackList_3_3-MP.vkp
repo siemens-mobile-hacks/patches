@@ -1,0 +1,33 @@
+;E71v45
+;Черный список
+;BlackList
+;(c) SiNgle, ThE TrIFoN, Evgr
+;(r) KreN
+;Version: 3.3-MP
+;PatchID: 9804
+;Details: https://patches.kibab.com/patches/details.php5?id=9804
+/*
+Этот патч является врезкой для патча 9803
++ добавлены пункты SIM и Unknown
++ SIM and Unknown items are added
+
+в swilib должна быть функция:
+;E71v45
++0074000
+#pragma enable old_equal_ff
+0194: 0xA09B77C7                     ; 065: EndCall
+#pragma disable old_equal_ff
++0
+
+*/
+06FE780: 321C281C 0BF174EC              
+06FE78A: 321C281C 0BF176EC
+
+#pragma enable old_equal_ff
+080A06C: 00C09FE51CFF2FE1,0xA0066361
+080A078: 00C09FE51CFF2FE1,0xA006637D
+0066418: 0xA09B643F,0xA8EB5E88                  ; answer call, RAM number property
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

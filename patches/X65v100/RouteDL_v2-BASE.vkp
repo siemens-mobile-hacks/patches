@@ -1,0 +1,30 @@
+;X65v100
+;Перенаправление ДС
+;RouteDL
+;(c) empeka
+;Version: 2
+;PatchID: 1165
+;Details: https://patches.kibab.com/patches/details.php5?id=1165
+/*
+Патч перенаправляет динамический свет на дисплей или клавиатуру. Пользователь может устанавливать любую комбинацию вывода (т.е. динамический свет + клавиатура)
+
+
+English:
+Patch may redirect signals from dynamic light to display or keypad.
+User can set any combination for output (i.e. dynamic light + keypad)
+*/
+#pragma enable old_equal_ff
+0FC3300: 0E1CFEB502281AD17FB40E48FDF778FC
+0FC3310: 77787FBC13D00120384204D000208EB4
+0FC3320: FCF78EFE8EBC0220384204D001208EB4
+0FC3330: FCF786FE8EBC0420384200D00220FEBD
+
+0FC3340: E4D3C2B1,0x0000EA02,0000000000000000,\
+"{patch=RouteDL id=EA02}\
+Route to:\
+{1.0 cb Display}\
+{1.1 cb Keypad}\
+{1.2 cb Dyn.light}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

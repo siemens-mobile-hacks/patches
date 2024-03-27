@@ -1,0 +1,14 @@
+;CF75v23
+;Увеличение интервала между сообщениями "Аккумулятор разряжен! Зарядите"
+;An increase in the interval between the communications "storage battery is discharged! You will load "
+;(c) ?
+;(p) yavadim
+;Version: 
+;PatchID: 6431
+;Details: https://patches.kibab.com/patches/details.php5?id=6431
+/*
+
+*/
+07D04D0: ED100000 658E0000 ; 2 минуты 
+;------------------------- end -------------------------
+

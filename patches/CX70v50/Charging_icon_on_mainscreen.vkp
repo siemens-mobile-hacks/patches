@@ -1,0 +1,32 @@
+;CX70v50
+;Индикатор зарядки на главном экране
+;Charging icon on mainscreen
+;(c) empeka
+;(p) Kibab
+;Version: 1.0
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=1433
+;PatchID: 1054
+;Details: https://patches.kibab.com/patches/details.php5?id=1054
+/*
+Патч отображает иконку при зарядке батареи. Когда батарея будет заряжена, отображается другая иконка.
+Предназначен, в первую очередь, для тех, кто снёс индикатор батареи с главного экрана и использует только патчи Дополнительной информации на главном экране.
+
+English:
+patch adds an icon to iconbar at the top of the screen durring charging battery.
+when battery is full, different icon is used.
+dedicated to all who removed battery icon from mainscreen and uses only extrainfo;)
+*/
+1711BA2: 1CF08EEA 26F07DFD
+
++17386A0
+#pragma enable old_equal_ff
+00: 00B507480078002807D00649022800DD
+10: 013107AA281CD9F7A0F90348804700BD
+20: 26ED66A87F010000C0E072A1
+#pragma disable old_equal_ff
+
+24: 7F01 0i00389  ; Номер картинки в PIT для индикации зарядки (десятич.)
+;Когда батарея заряжена, используется следующая картинка (picture# + 1)
++0
+;------------------------- end -------------------------
+

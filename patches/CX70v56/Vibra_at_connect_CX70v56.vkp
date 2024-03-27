@@ -1,0 +1,14 @@
+;CX70v56
+;Вибра в момент соединения
+;Vibra at connect
+;(c) SiNgle
+;(r) (i) avkiev
+;Version: 
+;PatchID: 5801
+;Details: https://patches.kibab.com/patches/details.php5?id=5801
+/*
+
+*/
+129E7E4: 2A1C2B1C09211730 00498847,0xA0FC3801
+;------------------------- end -------------------------
+

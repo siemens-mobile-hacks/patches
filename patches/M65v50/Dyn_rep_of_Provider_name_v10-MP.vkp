@@ -1,0 +1,17 @@
+;M65v50
+;Динамическая замена имени оператора
+;Dynamic replacing  of Provider name
+;(c) avkiev
+;(r) Bennie, arsh0r, Acid
+;Version: 10-MP
+;PatchID: 1651
+;Details: https://patches.kibab.com/patches/details.php5?id=1651
+/*
+См. описание в патче для X65v100.
+
+miniGPS лучше поставить, чтобы не было неожиданностей при случайно заданной функции 08. Не забываем комментировать точку входа miniGPS -  "1651118: B75EB4 071580".
+
+*/
+1651118: B75EB4A0 0xA0FC1B01
+;------------------------- end -------------------------
+

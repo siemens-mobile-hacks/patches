@@ -1,0 +1,20 @@
+;M75v25
+;SWI-хук
+;SWI-hook
+;(c) avkiev, Rst7/CBSIE, BoBa
+;(r) KonstanT
+;(p) Grizzzzly
+;Version: 
+;PatchID: 4675
+;Details: https://patches.kibab.com/patches/details.php5?id=4675
+/*
+Необходим для вызова библиотечных функций из перемещаемых патчей
+English:
+It is needed for calling Library functions from dis-patches
+
+
+*/
+0092BE0: 1A0000EA DCF09FE5
+0092CC3: A100000000 000080FDA0
+;------------------------- end -------------------------
+

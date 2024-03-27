@@ -1,0 +1,16 @@
+;M55v11
+;Стрелка вправо во время разговора -> вкл./выкл. микрофона
+;Right arrow during talk -> on/off microphone
+;(c) Matr!x
+;Version: 
+;PatchID: 5182
+;Details: https://patches.kibab.com/patches/details.php5?id=5182
+/*
+
+*/
+0D18BE: 14 26
+0D18C2: A819 861A
+0D1A86: DA2CEE93 DA2DA00A
+
+;------------------------- end -------------------------
+

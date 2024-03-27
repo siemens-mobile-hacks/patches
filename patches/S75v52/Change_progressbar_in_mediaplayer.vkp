@@ -1,0 +1,17 @@
+;S75v52
+;Изменение прогрессбара в медиаплеере
+;Change progressbar in mediaplayer
+;(c) SiNgle
+;(p) KIBER-DEMON
+;Version: 
+;PatchID: 8304
+;Details: https://patches.kibab.com/patches/details.php5?id=8304
+/*
+Формат: x1,y1,x2,y2
+Format: x1,y1,x2,y2
+*/
+08CABD8: 30008B0053009500 1200960072009A00 ; полоса
+08CABE0: 30008B0053009000 1200960072009A00 ; фон
+08CABE8: 3000910053009600 1200960072009A00 ; контур
+;------------------------- end -------------------------
+

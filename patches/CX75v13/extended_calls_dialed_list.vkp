@@ -1,0 +1,26 @@
+;CX75v13
+;Расширенный список вызовов
+;Extended "Calls dialed" list
+;(c) avkiev
+;(p) SMeeTBB
+;Version: 
+;PatchID: 965
+;Details: https://patches.kibab.com/patches/details.php5?id=965
+/*
+Жмем зеленую кнопку -> попадаем в меню "Набранные номера" (Green button -> "Calls dialed")
+Жмем красную кнопку -> попадаем в меню "Принятые номера" (Red button   -> "Calls received")
+Жмем красную кнопку -> попадаем в меню "Неотвеченные номера" (Red button   -> "Calls missed")
+Жмем красную кнопку -> выход в режим готовности. (Red button   -> Ready)
+*/
+049E04C: A7A058 71FB1F
+0325EBE: 78F1C2E8 D9F657FE
+#pragma enable old_equal_ff
+01FFB50: 457874656E642E43616C6C734C697374
+01FFB60: A961766B6965762031332E30362E3035
+01FFB70: 00B58AF398FABFF00BFC0130072803D0
+01FFB80: 8AF397FA8AF392FA00BD
+#pragma disable old_equal_ff
+;01FFB84: 8AF392FA C046C046 ;Не выводить список пропущенных звонков
+;01FFB7C: 07 NP ;Profile "No patches"
+;------------------------- end -------------------------
+

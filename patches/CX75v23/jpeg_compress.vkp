@@ -1,0 +1,16 @@
+;CX75v23
+;Сжатие jpeg с максимальным кач-вом
+;JPEG compression with max quality
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter
+;Version: 
+;PatchID: 1830
+;Details: https://patches.kibab.com/patches/details.php5?id=1830
+/*
+100% вместо 75%
+*/
+03ECF0C: 4B 64
+
+;------------------------- end -------------------------
+

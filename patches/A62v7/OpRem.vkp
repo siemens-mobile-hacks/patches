@@ -1,0 +1,17 @@
+;A62v7
+;Убрать название оператора на главном экране и в заставке
+;Remove operator name
+;(c) Rasp
+;(p) Weron
+;Version: 
+;PatchID: 9402
+;Details: https://patches.kibab.com/patches/details.php5?id=9402
+/*
+
+*/
+;Убрать название оператора на главном экране и в заставке.
+;by Rasp
+;(p) Weron
+6C239E: DAC95EF7DAC9240EF07FD740D700 DB0088808870886026F02200DB00
+;------------------------- end -------------------------
+

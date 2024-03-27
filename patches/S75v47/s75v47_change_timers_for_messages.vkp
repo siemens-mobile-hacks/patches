@@ -1,0 +1,29 @@
+;S75v47
+;Быстрый показ почти ВСЕХ окон с сообщениями
+;Fast show of all message boxes in phone
+;(c) SiNgle & Nikolas535
+;(p) dimonp25
+;Version: 
+;PatchID: 9755
+;Details: https://patches.kibab.com/patches/details.php5?id=9755
+/*
+
+*/
+0BFE5C8: D007 f401  ;1/2 секунды
+0BFE638: D007 f401  
+0BFE670: D007 f401  
+0BFE718: D007 f401  
+0BFE750: D007 f401 
+0BFE788: D007 f401  
+0BFE7C0: D007 f401 
+0BFE7F8: D007 f401  
+0BFE830: D007 f401  
+0BFE9BC: D007 f401 
+0BFE9F4: D007 f401 
+0BFEDC4: D007 f401  
+0BFEE18: D007 f401  
+0BFEE50: D007 f401 
+0BFEE88: D007 f401  
+0BFE600: D007 f401
+;------------------------- end -------------------------
+

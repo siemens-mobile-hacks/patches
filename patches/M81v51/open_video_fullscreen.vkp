@@ -1,0 +1,16 @@
+;M81v51
+;Открывать видео сразу во весь экран
+;Open video fullscreen immediately
+;(c) Ganster41
+;(p) dimonp25
+;Version: 
+;PatchID: 9564
+;Details: https://patches.kibab.com/patches/details.php5?id=9564
+/*
+
+*/
+05be644: 00 01
+05be64e: 00 01
+
+;------------------------- end -------------------------
+

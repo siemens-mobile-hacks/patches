@@ -1,0 +1,15 @@
+;M55v11
+;Убрать софт-кнопки с главного экрана
+;Remove soft keys from main screen
+;(c) SiNgle, ACID[mrp]
+;(r) ValeraVi
+;Version: 3
+;PatchID: 5175
+;Details: https://patches.kibab.com/patches/details.php5?id=5175
+/*
+
+*/
+0D5824: 3D05 CC00
+0D5746: 2D 0D
+;------------------------- end -------------------------
+

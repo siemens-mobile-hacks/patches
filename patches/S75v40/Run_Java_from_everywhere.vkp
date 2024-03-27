@@ -1,0 +1,48 @@
+;S75v40
+;Запуск явы отовсюду
+;Run Java from everywhere
+;(c) Zl0d, Дэн-s75
+;(p) perk11
+;Version: 
+;PatchID: 3995
+;Details: https://patches.kibab.com/patches/details.php5?id=3995
+/*
+Можно запускать ява-приложения отовсюду
+English: You can run Java applications from everywhere.
+*/
+66DBE4: 50494353 4A415641
+66DBE9: 53435245454E53 4A414D5F47414D
+66DBF0: 41564552 45530000
+66DBF6: 17 08
+66DBFE: 50 47
+66DC00: 69 61
+66DC02: 63 6D
+66DC04: 74 65
+66DC06: 75 73
+66DC08: 72 00
+66DC0A: 65 00
+66DC0C: 73 00
+66DC0E: 5C 00
+66DC10: 53 00
+66DC12: 63 00
+66DC14: 72 00
+66DC16: 65 00
+66DC18: 65 00
+66DC1A: 6E 00
+66DC1C: 73 00
+66DC1E: 61 00
+66DC20: 76 00
+66DC22: 65 00
+66DC24: 72 00
+66DDDE: 08 00
+66DDE0: 30 00
+66DDE2: 3A 00
+66DDE4: 5C 00
+66DDE6: 47 00
+66DDE8: 61 00
+66DDEA: 6D 00
+66DDEC: 65 00
+66DDEE: 73 00
+
+;------------------------- end -------------------------
+

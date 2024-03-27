@@ -1,0 +1,14 @@
+;C72v22
+;Меню выбора дисков и отображение скрытых файлов и папок
+;Disk selection menu
+;(c) SiNgle
+;Version: 
+;PatchID: 5811
+;Details: https://patches.kibab.com/patches/details.php5?id=5811
+/*
+
+*/
+09E35BC: 0900000A 000055E3
+09E3618: 3534 2000
+;------------------------- end -------------------------
+

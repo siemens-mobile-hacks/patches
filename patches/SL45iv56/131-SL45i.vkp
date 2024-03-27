@@ -1,0 +1,18 @@
+;SL45iv56
+;Удаление отображения недоступных кнопок на экране
+;Don't Show Unaccessible Buttons
+;(c) Yurgen
+;Version: 
+;PatchID: 1735
+;Details: https://patches.kibab.com/patches/details.php5?id=1735
+/*
+Теперь вместо "пустых" кнопок, будет закрашенный прямоугольник.
+
+
+Release: 27.01.04
+
+Патч №131 с http://patch.oslik.ru/SL45_RU
+*/
+20E109: 97 07
+;------------------------- end -------------------------
+

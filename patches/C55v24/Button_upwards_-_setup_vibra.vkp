@@ -1,0 +1,13 @@
+;C55v24
+;Кнопка вверх - настройка вибры
+;Button upwards - setup vibra
+;(c) Joenka
+;Version: 
+;PatchID: 2419
+;Details: https://patches.kibab.com/patches/details.php5?id=2419
+/*
+
+*/
+55C252: DAD5D6ED DACCAEF1
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;CX75v13
+;Скорость мигания курсора
+;Cursor blink speed
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 775
+;Details: https://patches.kibab.com/patches/details.php5?id=775
+/*
+RUS: Изменение скорости мигания курсора. С настройками пока не разобрался.
+
+ENG: Change of speed of a blinking of the cursor. With adjustments has not understood yet.
+*/
+04A1714: 2C01 8003
+
+;------------------------- end -------------------------
+

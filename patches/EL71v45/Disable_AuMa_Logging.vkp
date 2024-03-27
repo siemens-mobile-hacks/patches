@@ -1,0 +1,13 @@
+;EL71v45
+;Disable AuMa Logging
+;Disable AuMa Logging
+;(c) benj9
+;Version: 
+;PatchID: 8041
+;Details: https://patches.kibab.com/patches/details.php5?id=8041
+/*
+
+*/
+08D5C56: 0FB4 7047
+;------------------------- end -------------------------
+

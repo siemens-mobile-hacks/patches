@@ -1,0 +1,15 @@
+;CX65v50
+;Удаление оператора с экрана скринсейвера
+;Removing operator name from screensaver
+;(c) xVoLAnD
+;Version: 
+;PatchID: 27
+;Details: https://patches.kibab.com/patches/details.php5?id=27
+/*
+Патч удаляет оператора с экрана скринсейвера
+*/
+1655A48: 00 01
+1655AB8: 00 01
+
+;------------------------- end -------------------------
+

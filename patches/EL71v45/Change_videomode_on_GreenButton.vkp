@@ -1,0 +1,15 @@
+;EL71v45
+;Менять режим просмотра в медиаплеере по зеленой кнопке
+;Change view mode in mediaplayer by green button
+;(c) @ndreS (PRM), Evgr, Feyman
+;Version: 1.1
+;PatchID: 9832
+;Details: https://patches.kibab.com/patches/details.php5?id=9832
+/*
+
+*/
+079EBB0: 08 0A 
+079F7D8: 240F1FE5 050050E3
+079F7DC: 1CD904FB A7FCFF0A
+;------------------------- end -------------------------
+

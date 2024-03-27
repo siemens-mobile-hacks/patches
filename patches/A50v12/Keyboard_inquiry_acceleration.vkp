@@ -1,0 +1,13 @@
+;A50v12
+;Ускорение опроса клавиатуры
+;Keyboard inquiry acceleration
+;(c) Broken Brain
+;Version: 
+;PatchID: 2696
+;Details: https://patches.kibab.com/patches/details.php5?id=2696
+/*
+
+*/
+0D20BE: 56 20
+;------------------------- end -------------------------
+

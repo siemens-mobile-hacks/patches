@@ -1,0 +1,32 @@
+;S65v58
+;165 SMS в памяти телефона
+;165 SMS in phone memory
+;(c) ILYA_ZX
+;(r) LazyC0DEr, Vados, Quant
+;Version: 
+;PatchID: 9585
+;Details: https://patches.kibab.com/patches/details.php5?id=9585
+/*
+Патч и описание из этой темы: http://forum.allsiemens.com/viewtopic.php?t=54222
+
+Установка: 
+1. Переименовать SMS.dat, EMS_Admin.dat and WB.dat в SMS.da_, EMS_Admin.da_, WB.da_ 
+в 0:\system\sms\ 
+2. Применить патч 
+3. Удалить SMS.da_, EMS_Admin.da_, WB.da_ 
+Все смс которые были до установки патча в памяти телефона будут утеряны! 
+Патч полностью не тестировался! 
+
+
+*/
+0C38444: 8A45 148B
+0C38454: 4C1F 3E4E
+0BA90E4: 781E 2C4C
+13ECFD4: 64 A5
+0BE871E: 64 A5
+0BE86D2: 64 A5
+0BE83EC: 64 A5
+0BE83A0: 64 A5
+
+;------------------------- end -------------------------
+

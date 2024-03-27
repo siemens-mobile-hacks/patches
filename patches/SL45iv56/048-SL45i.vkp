@@ -1,0 +1,30 @@
+;SL45iv56
+;SAS. Не использовать Адресную Книгу при просмотре SMS
+;SAS. Skip Addressbook for SMS Viewing
+;(c) RizaPN
+;Version: 4
+;PatchID: 1611
+;Details: https://patches.kibab.com/patches/details.php5?id=1611
+/*
+После применения этого патча поиск имени отправителя при просмотре списка SMS и текста SMS во Входящих, Исходящих и Архиве будет производится только в на SIM карте.
+Патч, в некоторых случаях, уменьшит задержки при просмотре SMS.
+
+Release: May 11, 2003
+Update: 2003-06-29 (4th edition)
+
+Патч №048 (обновление 1) с http://patch.oslik.ru/SL45_RU
+*/
+27DA60: FFFFFFFFFFFFFFFF D7400C00F68E521A 
+27DA68: FFFFFFFFFFFFFFFF 88908880DB0048E0
+27DA70: FFFFFFFFFFFFFFFF 3D04D7400C00F68F
+27DA78: FFFFFFFFFFFFFFFF 521A88908880DB00
+
+3470AC: 88908880 DAC76EDA
+341AF6: 88908880 DAC772DA
+
+39995A: 88908880 DAC772DA 
+
+398F64: 88908880 DAC760DA
+39F47A: 88908880 DAC760DA
+;------------------------- end -------------------------
+

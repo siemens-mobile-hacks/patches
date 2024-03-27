@@ -1,0 +1,15 @@
+;S75v32
+;Настройка подсветки
+;Illumination adjustment
+;(c) avkiev
+;(r) benj9
+;(p) ferro
+;Version: 
+;PatchID: 3994
+;Details: https://patches.kibab.com/patches/details.php5?id=3994
+/*
+
+*/
+01b40c0: 08D04DE20000D0E564BD9FE5 04E08FE204F01FE5,0xA0066701   ; S75v32
+;------------------------- end -------------------------
+

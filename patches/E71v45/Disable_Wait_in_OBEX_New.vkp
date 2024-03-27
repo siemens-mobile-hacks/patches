@@ -1,0 +1,14 @@
+;E71v45
+;Отключить "Подождите" при OBEX-подключении
+;Disable "Wait" in OBEX
+;(c) DJ
+;(p) Evgr
+;Version: 
+;PatchID: 9678
+;Details: https://patches.kibab.com/patches/details.php5?id=9678
+/*
+
+*/
+067E478: D0400BFB 0000A0E1
+;------------------------- end -------------------------
+

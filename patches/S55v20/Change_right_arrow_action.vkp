@@ -1,0 +1,16 @@
+;S55v20
+;Изменить действие кнопки ПравоСтороннийМинус на GPRS_Info или другое
+;Change right arrow action
+;(c) ValeraVi
+;Version: 
+;PatchID: 4821
+;Details: https://patches.kibab.com/patches/details.php5?id=4821
+/*
+
+*/
+324746: DA723689 DA7106B8
+;DA7106B8 - GPRS_Info, измените на любое другое действие (исп. call)
+
+32474D: 20 00
+;------------------------- end -------------------------
+

@@ -1,0 +1,18 @@
+;X75v100
+;ДискМон - показ свободного места
+;DiskMon - Freeplace on Data, MMC
+;(c) RainMaker
+;(p) windes ;)
+;Version: 1
+;PatchID: 7739
+;Details: https://patches.kibab.com/patches/details.php5?id=7739
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x75v100&f=diskmon_elf.zip
+
+/*
+Помещается на главном экране, выводит свободное место на дисках графически: столбиками или полосками. Пока выводит только диск Data и MMC. C настройкой в bcfg, пока столбики привязаны друг к другу. В архиве эльф под NewSGold, SGold и EL.
+
+Автор - RainMaker.
+*/
+В архиве эльф под NewSGold, SGold и EL.
+;------------------------- end -------------------------
+

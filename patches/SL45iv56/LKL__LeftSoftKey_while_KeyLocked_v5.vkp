@@ -1,0 +1,33 @@
+;SL45iv56
+;LKL. Левый софт в заблокированном состоянии
+;LKL. LeftSoftKey while Key Locked
+;(c) SL45_6688i, RizaPN, lbuczko
+;Version: 5
+;PatchID: 5880
+;Details: https://patches.kibab.com/patches/details.php5?id=5880
+/*
+Чтение SMS, просмотр звонков, и т.д. при заблокированной клавиатуре. Подсветка временно включается.
+v5 - После просмотра нового SMS, звонка или напоминания, клавиатура разблокируется и благодаря этому подсветка есть все время, а после нажатия левой софт-клавиши звук получения SMS останавливается.
+
+
+English:
+Get a "normal" LeftSoftKey function when the key is locked. 
+(read SMS, missed call, etc). Backlight is temporarely ON. 
+v4 -> RED button also act as a normal if there is active status report.
+v5 by lbuczko,
+ After "read" new SMS, new call or alarm, keypad is unlocked, thanks to it we have light all the time and when we click on left softkey, ringtone of SMS is stopped.
+
+Release: May 27, 2003 (v3)
+Updated: July 30, 2004 (v4 by rizapn)
+Updated: 06.10.2006 (v5 by lbuczko)
+*/
+0x3B07C8: 46F81F00 FAE4904A 
+
+
+0x444A90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 48813D0BF08EF09FDADB14192D02FADB
+0x444AA0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8A0646F81F00FADBCC07E6F3CC0AD740
+0x444AB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 910399832DF640843DFA8880DADAE2F6
+0x444AC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC024AF98C0DADB6203DB004446474C
+0x444AD0: FFFF 0000 
+;------------------------- end -------------------------
+

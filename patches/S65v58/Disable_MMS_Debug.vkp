@@ -1,0 +1,14 @@
+;S65v58
+;Disable MMS Debug
+;Disable MMS Debug
+;(c) 1nvisible
+;Version: 
+;PatchID: 3411
+;Details: https://patches.kibab.com/patches/details.php5?id=3411
+/*
+
+*/
+0A3E340: 0FB4 7047
+0A3E430: F0B5 7047
+;------------------------- end -------------------------
+

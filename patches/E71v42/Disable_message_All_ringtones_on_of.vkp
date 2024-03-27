@@ -1,0 +1,15 @@
+;E71v42
+;Убрать сообщение "Все сигналы вкл/выкл"
+;Disable message "All ringtones on/off"
+;(c) SiNgle
+;(p) a1ex
+;Version: 
+;PatchID: 6731
+;Details: https://patches.kibab.com/patches/details.php5?id=6731
+/*
+
+*/
+070169E: F6F07CED C046C046
+07016BC: F6F06CED C046C046
+;------------------------- end -------------------------
+

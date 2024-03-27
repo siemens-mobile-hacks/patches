@@ -1,0 +1,32 @@
+;CX75v13
+;Мегагромкость гарнитуры
+;MegaLoudnes for Headset
+;(c) ILYA_ZX
+;(p) Master
+;Version: v1
+;PatchID: 8160
+;Details: https://patches.kibab.com/patches/details.php5?id=8160
+/*
+Мегагромкость гарнитуры
+*/
+;MegaLoudnes for Headset
+;CX75sw13
+;(c)ILYA_ZX
+;(p)<<Master>>
+;(r)allsiemens.com
+
+0A8D298: 1E0000EA EDFFFFEA
+
+0A8D254: BC161FE56CFAF4EB 100040E22E0000EA
+          
+
+
+;WARNING! 16 - very aloud! May damage ears, headset or maybe Power Amplifier of mobile!
+;Осторожно! 16 - очень громко! Может повредить слух, гарнитуру и возможно усилитель мощности телефона!
+
+;Patch option, remove comment:
+;0A8D254: 08 XX
+;XX - HEX from 00(no changes) to 16(max)
+
+;------------------------- end -------------------------
+

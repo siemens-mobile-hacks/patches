@@ -1,0 +1,31 @@
+;EL71v45
+;Изменить размер шрифта на Главном экране
+;Change font size on MainScreen
+;(c) SiNgle, BuG, KiRiK, [crazy]misha
+;(p) @ndreS aka PRM
+;Version: 3
+;PatchID: 7923
+;Details: https://patches.kibab.com/patches/details.php5?id=7923
+/*
+
+*/
+;fonts without Provider-Logo
+0830834: 08 xx ; Date/Time
+0830844: 05 xx ; Provider
+;0830854: 05 xx ; Sub-Provider
+0830864: 04 xx ; Flash-SMS/CB-News
+0830874: 09 xx ; Timer when Stopwatch running
+0830884: 09 xx ; Stopwatch/Timer
+
+;fonts with Provider-Logo
+0830894: 08 xx ; Date/Time
+;08308A4: 05 xx ; Sub-Provider
+08308B4: 04 xx ; Flash-SMS/CB-News
+08308C4: 09 xx ; Timer when Stopwatch running
+08308D4: 09 xx ; Stopwatch/Timer
+
+;fonts on Skin Application Image
+0852784: 08 xx ; Date/Time
+08527A0: 09 xx ; Hotkey Info
+;------------------------- end -------------------------
+

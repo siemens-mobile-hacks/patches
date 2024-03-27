@@ -1,0 +1,36 @@
+;SL45iv56
+;Изменить вид софтов без функции
+;Modify the picture of the softkey having no function
+;(c) sc0ty
+;(r) 486255xu, trustkill
+;Version: 2
+;PatchID: 3128
+;Details: https://patches.kibab.com/patches/details.php5?id=3128
+/*
+Патч не влияет на инвертированные софты.
+
+Версия 2: Картинку софтов можно изменить заменив картинку №582 в ФФ с помощью SPC2.
+
+
+English: No effect of display when using invert softkey.
+
+Version 2: you can draw your own picture - modyfy image 582 using e.g. SPC2.
+
+*/
+; No effect of display when using invert softkey.
+
+0x20E102: E6F6AA008860E0978870E6FC4000 E00CE6FD4300E6FE4602DAC1EC22
+0x20E110: 88C0E06C FAC02CE1
+
+Image number:
+20E10A: 4602
+
+; My example picture (uncomment to apply this):
+
+4B4F70: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7F FFFFFFFFFFFF800000000003BFFFFFFF
+4B4F80: FDFFFFFFFF7FF8FFFFFFFF7FF07FFFC1 FFFBA0000000000BAFFFFFFFFFEBA800
+4B4F90: FF7FFDFFFFC1F417DDDFFFFFF637DDDF 0000002BABFFFFFFFFABA8000000002B
+4B4FA0: FFC1F777DDDFF3C1F007C01FF3FFFFFF AFFFFFFFFFEBA0000000000BBFFFFFFF
+4B4FB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFF FFFB800000000003FFFFFFFFFFFF
+;------------------------- end -------------------------
+

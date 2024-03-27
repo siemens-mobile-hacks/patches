@@ -1,0 +1,15 @@
+;CX70v50
+;Включить вибру при подключенном кабеле
+;Enable Vibra With Plugged-In Cable
+;(c) 1nvisible
+;(p) AlexeyZ
+;Version: 
+;PatchID: 2544
+;Details: https://patches.kibab.com/patches/details.php5?id=2544
+/*
+Для тестирования патчей, задействующих вибру
+English:For testing patches affecting vibra
+*/
+11BAAC0: F081BD18 0000A0E3
+;------------------------- end -------------------------
+

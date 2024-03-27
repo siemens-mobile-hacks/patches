@@ -1,0 +1,17 @@
+;M75v25
+;Замена меню на супербыстрое
+;Change mainmenu on superfaster
+;(c) SiNgle
+;(p) DDick
+;Version: 
+;PatchID: 6508
+;Details: https://patches.kibab.com/patches/details.php5?id=6508
+/*
+вместо главного меню нативное
+English:
+native menu instead mainmenu
+
+*/
+004B15A8: 434B4C4B5F434B5F4D41494E4D4E5500AB6B32A0 "CKLK_CK_MAINMNU",00,0xA02BEA1D
+;------------------------- end -------------------------
+

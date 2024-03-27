@@ -1,0 +1,29 @@
+;SL45iv56
+;Запуск мидлета при вставке новой SIM
+;Starting midlet then new SIM-card is installed
+;(c) SiNgle
+;(p) abomin
+;Version: 
+;PatchID: 1719
+;Details: https://patches.kibab.com/patches/details.php5?id=1719
+/*
+Патч запускает мидлет a:/java/s/z.jad при включении тела после смены SIM-карты. 
+
+После применения патча нужно скопировать файл "ваш_мидлет.jad" в 
+каталог /java/s/z.jad 
+После копирования "ваш_мидлет.jad" в 1.jad (к примеру), измените параметр мидлета "Midlet-Jar-URL" (внутри .jad файла) на путь к jar файлу. 
+
+Полный пример: 
+1. Имеем мидлет /java/jam/App/App.jar, 
+2. Копируем /java/jam/App/App.jad в /java/s/z.jad 
+3. Изменяем содержимое z.jad: 
+
+Midlet-Jar-URL : file:///a:/java/jam/Game1/Game1.jar
+
+Release: 19 марта 2004
+
+Патч №124 с http://patch.oslik.ru/SL45_RU
+*/
+44EBA0: E6FC7639E6FD DAE096C80D07
+;------------------------- end -------------------------
+

@@ -1,0 +1,15 @@
+;S75v52
+;Отключить сообщение "Язык ввода:..." при выборе языка
+;Disable message "Input language:..." at the language choice
+;(c) Evgr
+;(p) siemens1787
+;Version: 
+;PatchID: 8403
+;Details: https://patches.kibab.com/patches/details.php5?id=8403
+/*
+
+*/
+097721D: D1 D0
+0977304: 00F049FF C046C046
+;------------------------- end -------------------------
+

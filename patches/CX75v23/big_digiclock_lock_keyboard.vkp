@@ -1,0 +1,52 @@
+;CX75v23
+;Большие цифровые часы на главном экране при залоченной клаве
+;Big digital clock on the main screen when keylocked
+;(c) avkiev
+;(p) Mikel
+;Version: 5
+;PatchID: 2583
+;Details: https://patches.kibab.com/patches/details.php5?id=2583
+/*
+
+*/
+;04A2B9C: 0xA02A9223 0xA0FC1401 ; /M75v13
+;0FC14C0: 0xFFFFFFFF 0xA02A9223
+
+4A39A0: 31932AA0 0xA0FC1401 ; CX75v23
+0FC14C0: 0xFFFFFFFF 31932AA0 
+
+
+#pragma enable old_equal_ff
+0FC1400: F1B53448FFF7FCFB3BD0FFF745F93868
+0FC1410: 002836D0FEF700FF0130717CC14030D3
+0FC1420: 0020311DFEF7ECFD0F24757882B0211C
+0FC1430: 2A1C0B1C6633101C2430009001200190
+0FC1440: 02984069FEF770FE02B0317900F01DF8
+0FC1450: B078022809D0012803D0F068C143F160
+0FC1460: 03D40B2000F018F8183C0C34717900F0
+0FC1470: 0CF8307C002804D0403C1C35B17900F0
+0FC1480: 04F8F1BC0E49884700BD01B50A20FEF7
+0FC1490: C7FD00F001F800E002B5FFF749F95A2D
+0FC14A0: 01D3FFF749F93A18201C291CFEF738FE
+0FC14B0: 18345A2D00D3103C01BD
+
+0FC14D0: 0xB1C2D3E4,0x0000AB02,0000000000000000,"\
+{patch=`Big Digital Clock` ver=5 cp=avkiev id=AB02}\
+{1 sl Y r=25..110 v=73}\
+{2 o Colon `Blink`=0 `On`=1 `Off`=2}\
+{16 cb `Show seconds` v=1}\
+{17.0 cb `Show in lock` v=1}\
+{17.1 cb `Show in unlock`}\
+",00
+#pragma disable old_equal_ff
+
+;locale=Russian_Russia.1251
+
++0
+
+
+
+
+
+;------------------------- end -------------------------
+

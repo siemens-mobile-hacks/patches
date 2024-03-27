@@ -1,0 +1,41 @@
+;X65v100
+;Переключатель профилей при разряде аккумулятора
+;Switch Profile when battery low
+;(c) Kibab
+;(r) avkiev, KreN
+;Version: 3.1
+;PatchID: 2621
+;Details: https://patches.kibab.com/patches/details.php5?id=2621
+/*
+Адаптирован к GraphPatchManager.
+
+Отмените предыдущую версию!
+
+Патч переключает профиль на заданный, когда аккумулятор 
+разряжается до заданного уровня. Пользователь может определять профиль, в который нужно переключиться, и уровень заряда аккума, при котором произойдёт переключение.
+Полезно, если сделать один из профилей с минимальными параметрами энергопотребления - подсветка 1%, отключённая вибра, тихие звонки, отключённый динамический свет...
+
+English:
+Designed for using with GraphPatchManager
+Patch switches phone to chosen profile when battery capacity reaches chosen level. User can define profile # and battery capacity.
+Useful if you create a "Low power consumption profile" - backlight is set to 1%, no vibra, weak signals, no dynlight... This patch is built using MP+FL conception.
+*/
+#pragma enable old_equal_ff
+0FC5000: FFB52448FBF7FCFD40D0F178FBF718FB
+0FC5010: 3A78B378002B13D0FBF712FBB8780028
+0FC5020: 0ED0337A022B31D0FAF7F2FFB071337A
+0FC5030: F3713379581EFAF7EFFF0220307225E0
+0FC5040: 337A002B09D0012B14D0022B1ED1B079
+0FC5050: FAF7E2FFF079307218E08A4216D8FAF7
+0FC5060: D7FF70717478201C0138FAF7D5FF0120
+0FC5070: 30720BE0F178FBF7E3FA3A788A4205DD
+0FC5080: 7079FAF7C9FF00203072FFE7FFBD
+0FC5090: 0xB1C2D3E4,0x0100C601,0xA0FC5001,00000000,"\
+{patch=`Change Profile` ver=3.1 id=0100C601 copyright=Kibab mem=9}\
+{1 b `Profile to switch to:` range=1..6 v=6}\
+{3 b `Accu level:` range=0..100 v=15}\
+{2 cb `Switch profile when charging:`}\
+{4 b `Profile when charging:` range=1..6 v=3}",00
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+

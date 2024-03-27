@@ -1,0 +1,16 @@
+;C72v22
+;Изменение прогрессбара
+;MusicProgressBarChanger
+;(c) KreN
+;(r) SiNgle, Kad
+;(p) Virusmater
+;Version: 1.0-MP
+;PatchID: 7607
+;Details: https://patches.kibab.com/patches/details.php5?id=7607
+/*
+
+*/
+09E6DE8: 081080E50C3080E5 04F01FE5,0xA0FC7117
+09E7100: 30809DE50250A0E1002090E5 04E08FE204F01FE5,0xA0FC7101
+;------------------------- end -------------------------
+

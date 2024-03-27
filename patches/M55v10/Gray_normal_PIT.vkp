@@ -1,0 +1,15 @@
+;M55v10
+;Установка "серых" телефонов на первую (главную) PIT-таблицу
+;Set "gray" phones for main PIT
+;(c) SiNgle
+;Version: 
+;PatchID: 1551
+;Details: https://patches.kibab.com/patches/details.php5?id=1551
+/*
+
+*/
+3627EA: 40195501 00004201
+362800: 5601 4201
+362812: 08185601 00004201
+;------------------------- end -------------------------
+

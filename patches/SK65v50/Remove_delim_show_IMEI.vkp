@@ -1,0 +1,14 @@
+;SK65v50
+;Убрать черточки-разделители при показе IMEI
+;Disable delimiters while showing IMEI
+;(c) 1nvisible
+;(r) Bennie
+;Version: 
+;PatchID: 2598
+;Details: https://patches.kibab.com/patches/details.php5?id=2598
+/*
+
+*/
+031F038: 05D0 0AE0
+;------------------------- end -------------------------
+

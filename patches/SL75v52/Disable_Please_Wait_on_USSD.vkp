@@ -1,0 +1,14 @@
+;SL75v52
+;Отключить "Подождите" при USSD Запросе
+;Disable "Please Wait" on USSD Request
+;(c) 1nvisible
+;(p) kiREALlov
+;Version: 
+;PatchID: 7793
+;Details: https://patches.kibab.com/patches/details.php5?id=7793
+/*
+
+*/
+0344E66: 854A 7047
+;------------------------- end -------------------------
+

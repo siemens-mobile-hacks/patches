@@ -1,0 +1,14 @@
+;C81v51
+;Перенос папки "ThemeCache" на диск Config
+;Reallocate the folder "ThemeCache" from Cache to Config
+;(c) funMarkus
+;(p) SimaFish
+;Version: 
+;PatchID: 9223
+;Details: https://patches.kibab.com/patches/details.php5?id=9223
+/*
+
+*/
+06A918C: 31 32
+;------------------------- end -------------------------
+

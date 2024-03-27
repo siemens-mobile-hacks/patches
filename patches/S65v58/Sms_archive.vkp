@@ -1,0 +1,28 @@
+;S65v58
+;Перенос Sms archive и Text Module на CACHE
+;Move folders Sms archive and Text Module to disk Config
+;(c) Strike66
+;Version: 
+;PatchID: 2880
+;Details: https://patches.kibab.com/patches/details.php5?id=2880
+/*
+Я думаю теперь и на диске Config стало много хлама! Поэтому переносим его не на Config, а на cache! :-)
+*/
+A252C0: 30 31
+A252DE: 30 31
+A252EE: 30 31
+A25310: 30 31
+A2533A: 30 31
+A25352: 30 31
+A2537A: 30 31
+A253A2: 30 31
+A253BA: 30 31
+A253E4: 30 31
+A25410: 30 31
+A25428: 30 31
+A25452: 30 31
+A2547C: 30 31
+A25492: 30 31
+A2560C: 30 31
+;------------------------- end -------------------------
+

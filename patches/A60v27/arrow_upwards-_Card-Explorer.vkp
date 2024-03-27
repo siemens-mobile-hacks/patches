@@ -1,0 +1,18 @@
+;A60v27
+;Cтрелка вверх - Card-Explorer
+;arrow upwards- Card-Explorer
+;(c) .
+;(p) raps
+;Version: 
+;PatchID: 4257
+;Details: https://patches.kibab.com/patches/details.php5?id=4257
+/*
+
+*/
+6CAD84: E6 DA
+6CAD85: FCE800 85F893
+6CAD88: DAAE44354840 CC00CC00CC00
+6CAD8F: 30 00
+
+;------------------------- end -------------------------
+

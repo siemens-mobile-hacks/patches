@@ -1,0 +1,15 @@
+;C81v51
+;Cкорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) den11111
+;Version: 
+;PatchID: 7309
+;Details: https://patches.kibab.com/patches/details.php5?id=7309
+/*
+
+*/
+091396E: 011C 1021
+
+;------------------------- end -------------------------
+

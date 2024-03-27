@@ -1,0 +1,31 @@
+;E71v45
+;Отключить сканирование ДатаБазы медиа-файлов с диска "0:/"
+;Disable scanning and refreshing DataBase of Media-files of "0:/"
+;(c) funMarkus
+;Version: 3.0
+;PatchID: 10329
+;Details: https://patches.kibab.com/patches/details.php5?id=10329
+/*
+Инструкция внутри патча
+*/
+;Сканирует на флешке все папки с символом "~" (без кавычек!),
+;место опострофа в названии папки не имеет значения, например, "Music~", без кавычек :)
+
+;Инструкция:
+;1) Идём в папку System/apo, там удаляем следующие папки: idx, mal, mmalb, mmart, mmgen, mulmed
+;2) Выключаем тел, применяем патч.
+;3) Включаем тел, открываем плеер, ждём, пока обновится БД в 1-ый раз (это займёт чутка времени).
+;4) Всё, о бесконечных мучительных обновлениях теперь можете забыть. :)
+
+;ENGLISH instruction
+;Disable scanning and refreshing DataBase of Media-files of "0:/".
+;Scanning all folders with "~" in the name of them (the location of "~" has no matter (example: Music~ ).
+;1) Go to System/apo, delete following folders there: idx, mal, mmalb, mmart, mmgen, mulmed
+;2) Turn the phone off. Apply the patch.
+;3) Turn on, open MediaPlayer. Wait till it refreshes the DB for the 1st time (it takes a while).
+;4) That's it, no more long and exhausting refreshing of the DB! :)
+
+0726DD4: 30 FF
+0726DD0: 0000 "~"2A
+;------------------------- end -------------------------
+

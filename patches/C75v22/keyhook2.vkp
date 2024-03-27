@@ -1,0 +1,56 @@
+;C75v22
+;КейХук
+;keyhook
+;(c) by MasterMind
+;Version: 2
+;PatchID: 6326
+;Details: https://patches.kibab.com/patches/details.php5?id=6326
+/*
+Дополнительные функции для большой библиотеки
+Близки по функциональности AddKeybMsgHook_end и RemoveKeybMsgHook NewSGold-ов
+Для совместимости с патчем Ускорение опроса клавиатуры (Keypad Acceleration) изменить указанные строки
+
+*/
+0x07AF9F4: ff20 0048
+0x07AF9F6: 9430 0047
+0x07AF9F8: fff744ff 01f50da1
+
+0x07AFB18: ff20 0048
+0x07AFB1A: 9530 0047
+0x07AFB1C: fff7b2fe 15f50da1
+
+0x07AFE18: ff20 297c
+0x07AFE1A: 9630 c046
+0x07AFE1C: 297c 0048
+0x07AFE1E: fff7 0047
+;0x07AFE20: 31fd2021 29f50da1 ;если установлен патч - Ускорение опроса клавиатуры (Keypad Acceleration)
+0x07AFE20: 31fd5621 29f50da1 ;не установлен
+
+#pragma enable old_equal_ff
+
+10E44AC: 0xA0002070 ;xxx; 12B: AddKeybMsgHook(void *proc)
+10E44B0: 0xA10DF56F ; 12C: AddKeybMsgHook_end(void *proc)
+10E44B4: 0xA10DF59F ; 12D: RemoveKeybMsgHook(void *proc)
+
+10DF500: 80B4942000F01AF8354FB84780BCC046 
+10DF510: 3448004780B4952000F010F8304FB847 
+10DF520: 80BCC0463048004780B4962000F006F8 
+10DF530: 2B4FB84780BC56212C480047FCB50D1C 
+10DF540: FF30041C2A4F3F68002F0AD03A68002A 
+10DF550: 07D0281C211C9047002802D17F68002F 
+10DF560: F4D1291C201CFCBD291C0020FCBDF0B5 
+10DF570: 041C08201F4FB84700280FD01C4F3968 
+10DF580: 002901D1386005E04F68002F01D0391C 
+10DF590: FAE748600460002444600120F0BDF0B5 
+10DF5A0: 041CC046124F3E1C361F3F68002F11D0
+10DF5B0: 396800290ED0A14205D07968002909D0 
+10DF5C0: 3E1C0F1CF4E779687160381C0A4FB847 
+10DF5D0: 0120F0BD0020F0BD0000000000000000
+10DF5E0: 0xA07AF885,0xA07AF9FD,0xA07AFB21,0xA07AFE25
+10DF5F0: 0xA8000280,0xA0203C24,0xA0203C8C
+
+#pragma disable old_equal_ff
+
+;0x10DF536: 5621 2021 ;если необходим патч - Ускорение опроса клавиатуры (Keypad Acceleration)
+;------------------------- end -------------------------
+

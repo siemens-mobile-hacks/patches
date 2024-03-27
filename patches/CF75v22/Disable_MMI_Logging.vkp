@@ -1,0 +1,15 @@
+;CF75v22
+;Disable MMI Logging
+;Disable MMI Logging
+;(c) SiNgle
+;Version: 
+;PatchID: 4528
+;Details: https://patches.kibab.com/patches/details.php5?id=4528
+/*
+
+*/
+;*&#206;&#242;&#234;&#235;&#254;&#247;&#232;&#242;&#252; &#203;&#238;&#227;&#227;&#232;&#237;&#227; MMI* *Disable MMI Logging* © SiNgle
+; enviado pro Bruno Oz
+02A03FD: B5 47 ; speeds up phone operation
+;------------------------- end -------------------------
+

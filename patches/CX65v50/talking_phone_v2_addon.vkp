@@ -1,0 +1,22 @@
+;CX65v50
+;Дополнение к патчу "Говорящий телефон v2"
+;Addon for "talking phone v2" patch
+;(c) avkiev
+;(p) Estar
+;Version: 
+;PatchID: 395
+;Details: https://patches.kibab.com/patches/details.php5?id=395
+/*
+Говорит время при нажатии определенной кнопки при залоченной клавиатуре.
+
+Нужно добавить ставить с оригинальным патчем * Говорящий телефон v2 ** Talking phone v2 * © avkiev, ® SiNgle, § AsteriX 394
+
+Должен быть установлен патч "Чтение сообщений при залоченной клавиатуре"
+*/
+;Самостоятельно выберите из списка клавишу, по которой будет проговариваться время
+;
+;RedKey-01, GreenKey-05, VolumeDown-0E, VolumeUp-0F, JDown-25, JUp-26, JRight-27, JLeft-28, JPress-29, "*"-14, "#"-15
+165AEF0: FF 05 ; Key=VolumeUp
+165AEF1: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF40B50026 2801D1014B9847002603E0210980A040B5F5E7
+;------------------------- end -------------------------
+

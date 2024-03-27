@@ -1,0 +1,19 @@
+;SL45iv56
+;Исправление звука наушников после изменений ffmod
+;Earphone Correction after ffmod Modification
+;(c) RizaPN
+;Version: 
+;PatchID: 1934
+;Details: https://patches.kibab.com/patches/details.php5?id=1934
+/*
+Если оригинальная мелодия заменялась с помощью ffmod, звук
+в наушниках и в динамике будут отличатся.
+После применения патча звук будет одинаковым и в наушниках и в динамике.
+
+English: If the original ringtone had been modified using ffmod, the sound heared
+from earphone is different with the sound from normal speaker. Using this
+patch both sound will be same.
+*/
+0x46478C: 3D 0D
+;------------------------- end -------------------------
+

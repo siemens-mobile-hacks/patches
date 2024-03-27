@@ -1,0 +1,30 @@
+;E71v45
+;Отключение анимации в Native Menu
+;Stop Native Menu Animation
+;(c) sim_emrom
+;Version: 
+;PatchID: 9306
+;Details: https://patches.kibab.com/patches/details.php5?id=9306
+/*
+Патч выключает анимацию пунктов Native Menu:
+- проще заменять картинки меню
+- выше скорость работы меню
+
+(Спасибо Виктор89 за такое описание)
+*/
+08698F4: 8603 0000 ;Address Book
+0869930: 7C03 0000 ;Calls
+0869954: 9A03 0000 ;Internet
+0869A30: 8103 0000 ;Camera
+08699FC: A403 0000 ;Messages
+08699D4: AE03 0000 ;Organiser
+0869A60: 9503 0000 ;Games
+0869978: 9F03 0000 ;Media Player
+;08699A4: 7703 0000 ;Alarm Clock - if patch to change it for Radio is not installed
+08699A4: 9003 0000 ;Radio - if patch is installed
+0869A94: 8B03 0000 ;Others
+0869AC8: A903 0000 ;MyStuff
+0869AF0: B303 0000 ;Settings
+
+;------------------------- end -------------------------
+

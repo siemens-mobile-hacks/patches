@@ -1,0 +1,14 @@
+;S75v47
+;Убрать сообщение "Профиль активирован"
+;Disable message "Profile Activated"
+;(c) funMarkus
+;(p) dimonp25
+;Version: 2
+;PatchID: 9451
+;Details: https://patches.kibab.com/patches/details.php5?id=9451
+/*
+Патчик будет попроще, чем от -=(Kad)=-, но стабильнее, т.к. использует нативные функции тела.
+*/
+0335FDA: B7F0A2EB 27F344ED
+;------------------------- end -------------------------
+

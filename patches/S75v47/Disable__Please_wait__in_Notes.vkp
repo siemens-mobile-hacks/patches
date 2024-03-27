@@ -1,0 +1,14 @@
+;S75v47
+;Отключить_Подождите_в Заметки->Нов.запись
+;Disable "Please wait" in Notes-New enry
+;(c) Evgr
+;(p) Diman3452
+;Version: 
+;PatchID: 8945
+;Details: https://patches.kibab.com/patches/details.php5?id=8945
+/*
+
+*/
+05E6248: 77F024EC C046C046
+;------------------------- end -------------------------
+

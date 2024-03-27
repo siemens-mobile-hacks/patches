@@ -1,0 +1,17 @@
+;SK65v50
+;Задержка гашения подсветки
+;Illumination fade time
+;(c) BuG
+;(p) AsteriX
+;Version: 
+;PatchID: 265
+;Details: https://patches.kibab.com/patches/details.php5?id=265
+/*
+Задержка гашения подсветки.
+(03E8h=1000 ms -> swap bytes, 1388=5000 ms etc 0000 leads to instant fade-in and fade-out) 
+*/
+;03E8h=1000 ms -> swap bytes, 1388=5000 ms etc
+;0000 leads to instant fade-in and fade-out
+078F63C: B80B E803 ;1 sec
+;------------------------- end -------------------------
+

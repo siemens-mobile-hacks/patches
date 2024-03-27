@@ -1,0 +1,16 @@
+;CX75v5
+;Изменение времени подачи ежеминутного сигнала во время разговора
+;Сhange minute beep during call
+;(c) SiNgle
+;(r) AsteriX
+;(p) Smelter by avkiev
+;Version: 1.0
+;PatchID: 444
+;Details: https://patches.kibab.com/patches/details.php5?id=444
+/*
+Изменяет время подачи минутного сигнала во время разговора. 
+*/
+0551752: 00 37; было 00h = 1 минута, стало 37h = 55 секунд (37h = 55dec)
+
+;------------------------- end -------------------------
+

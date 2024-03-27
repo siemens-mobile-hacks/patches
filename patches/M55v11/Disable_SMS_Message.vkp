@@ -1,0 +1,15 @@
+;M55v11
+;Отключить сообщение "Получено новое SMS"
+;Disable "New text message received" message
+;(c) SiNgle
+;Version: 
+;PatchID: 5247
+;Details: https://patches.kibab.com/patches/details.php5?id=5247
+/*
+
+*/
+0E9BC0: F0C6F0D7 CC00CC00
+0E9BC4: E6FE2700 CC00CC00
+0E9BC8: DA2E56B6 CC00CC00
+;------------------------- end -------------------------
+

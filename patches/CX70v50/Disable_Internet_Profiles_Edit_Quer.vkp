@@ -1,0 +1,16 @@
+;CX70v50
+;Отключить Вопрос при Редактировании Интернет-Профилей
+;Disable Internet Profiles Edit Query
+;(c) 1nvisible
+;(p) SiamiX
+;Version: 
+;PatchID: 3280
+;Details: https://patches.kibab.com/patches/details.php5?id=3280
+/*
+Пункт "Добавить Из:" не работает
+English:"Add From:" item doesn't work 
+
+*/
+0915EDC: 00F088F8 FFF7EAFD
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;CX75v12
+;Изменение прогрессбара при проигрывании музыки
+;Change progressbar during playing the music
+;(c) Nikola Inc
+;(p) crash
+;Version: 2.0
+;PatchID: 4568
+;Details: https://patches.kibab.com/patches/details.php5?id=4568
+/*
+
+*/
+4D9570: 1000660073 2000700064
+;------------------------- end -------------------------
+

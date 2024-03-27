@@ -1,0 +1,16 @@
+;S65v58
+;Отключение вывода на экран
+;Screen shut down
+;(c) -=(Kad)=-
+;Version: 1
+;PatchID: 3033
+;Details: https://patches.kibab.com/patches/details.php5?id=3033
+/*
+Может кому-то пригодится, хотя вещь абсолютно бессмысленная.
+Он нужен лишь для того, чтобы сознательно сделать телефон внешне неисправным, исходя из каких-нибудь своих меркантильных интересов.
+
+It only is necessary meaningly to make the phone externally faulty, proceeding from any mercantile interests.  
+*/
+1151F12: B8F0DEE9 0000C046
+;------------------------- end -------------------------
+

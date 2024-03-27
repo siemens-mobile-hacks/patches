@@ -1,0 +1,15 @@
+;M65v50
+;Disable MMS Debug
+;Disable MMS Debug
+;(c) 1nvisible
+;(p) Smelter
+;Version: 
+;PatchID: 3412
+;Details: https://patches.kibab.com/patches/details.php5?id=3412
+/*
+Продолжение анти-дебажной темы
+*/
+0A20714: 0FB4 7047
+0A20804: F0B5 7047
+;------------------------- end -------------------------
+

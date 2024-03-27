@@ -1,0 +1,15 @@
+;C72v22
+;Изменение времени автоблокировки клавиш
+;Auto keylock time
+;(c) SiNgle
+;(p) Smelter
+;Version: 
+;PatchID: 5844
+;Details: https://patches.kibab.com/patches/details.php5?id=5844
+/*
+
+*/
+;* Изменение времени автоблокировки клавиш ** Auto keylock time * © SiNgle
+08DEE4C: C832 7017
+;------------------------- end -------------------------
+

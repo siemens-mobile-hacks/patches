@@ -1,0 +1,22 @@
+;SK65v50
+;Включение/выключение вибры при блокировке/разблокировке клавиатуры
+;Turn vibra on/off when keypad locked/unlocked
+;(c) ~Jhellico
+;(r) empeka
+;Version: 0.1
+;PatchID: 2433
+;Details: https://patches.kibab.com/patches/details.php5?id=2433
+/*
+
+*/
+0738690: 01210320 3BF550FB
+0738A18: 01210320 3BF58AF9
+
+#pragma enable old_equal_ff
+0473D30: 012100E0002101480047C046,0xA0DB0201
+0DB0200: FCB50F1C04498847B84201D003498847
+0DB0210: FCBC0121032000BD,0xA0319097,0xA03190AD
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

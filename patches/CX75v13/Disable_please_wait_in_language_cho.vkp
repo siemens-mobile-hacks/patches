@@ -1,0 +1,16 @@
+;CX75v13
+;Отключить "Подождите" при выборе языка ввода
+
+;Disable "please wait" in language choice
+;(c) Evgr
+;(r) s3mpa1
+;(p) Nikolas535
+;Version: 
+;PatchID: 9397
+;Details: https://patches.kibab.com/patches/details.php5?id=9397
+/*
+
+*/
+0A829E2: 56F200EC C046C046
+;------------------------- end -------------------------
+
