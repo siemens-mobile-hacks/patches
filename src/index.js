@@ -9,6 +9,8 @@ import { KibabAPI } from './KibabAPI.js';
 // patches.kibab.com timezone
 process.env.TZ = 'Europe/Moscow'; // thanks Viktor89
 
+console.log((new Date).toLocaleString());
+
 let TMP_DIR = `${import.meta.dirname}/../tmp`;
 let OUT_DIR = `${import.meta.dirname}/../patches`;
 
