@@ -7,7 +7,7 @@ import child_process from 'child_process';
 import { KibabAPI } from './KibabAPI.js';
 
 // patches.kibab.com timezone
-process.env.TZ = 'Europe/Moscow';
+process.env.TZ = 'Europe/Moscow'; // thanks Viktor89
 
 let TMP_DIR = `${import.meta.dirname}/../tmp`;
 let OUT_DIR = `${import.meta.dirname}/../patches`;
@@ -154,6 +154,16 @@ async function downloadPatches(api, all_patches_ids, force_all) {
 					en:		title_en,
 				}
 			};
+			
+			/*
+			if (old_patch && Math.abs(new_patch.mtime - old_patch.mtime) == 3600000) {
+				let delta = new_patch.mtime - old_patch.mtime;
+				for (let p of Object.values(index_data[model])) {
+					p.mtime += delta;
+				}
+				console.log('apply time hack');
+			}
+			*/
 			
 			fs.writeFileSync(`${OUT_DIR}/${patch_file}`, member.data);
 			let new_patch_md5 = fileMD5(`${OUT_DIR}/${patch_file}`);
