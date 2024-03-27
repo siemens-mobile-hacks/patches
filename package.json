@@ -1,0 +1,17 @@
+{
+	"name": "patches-git-mirror",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"cheerio": "^1.0.0-rc.12",
+		"iconv-lite": "^0.6.3",
+		"yauzl": "^3.1.2"
+	}
+}
