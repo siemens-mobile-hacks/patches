@@ -9,7 +9,16 @@ export TZ=Europe/Moscow
 export LC_ALL=C
 
 npm install
-node .
+time node .
 git add patches
+
+export TZ=
+
+git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+git config --local user.name "github-actions[bot]"
+
 git commit -m "sync"
-git commit --amend --author="github-actions[bot] <github-actions[bot]@users.noreply.github.com>" --no-edit
+git push
+
+git config --local --unset user.email
+git config --local --unset user.name
