@@ -6,13 +6,16 @@ cd $(dirname $0)/../
 
 npm install
 node .
-git add patches
 
 export TZ=
 
 git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
 git config --local user.name "github-actions[bot]"
 
+git stash
+git pull
+git stash pop
+git add patches
 git commit -m "sync"
 git push
 

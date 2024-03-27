@@ -25,7 +25,7 @@ for (let model of all_models) {
 	console.log(`[${model.name}]`);
 	fs.mkdirSync(`${OUT_DIR}/${model.name}`, { recursive: true });
 	
-//	if (model.name != 'S75v47')
+//	if (model.name != 'CF75v23')
 //		continue;
 	
 	let all_model_patches = await api.getAllPatches(model.modelId, model.swId);
@@ -157,16 +157,6 @@ async function downloadPatches(api, all_patches_ids, force_all) {
 					en:		title_en,
 				}
 			};
-			
-			/*
-			if (old_patch && (Math.abs(new_patch.mtime - old_patch.mtime) % 3600000) == 0) {
-				let delta = new_patch.mtime - old_patch.mtime;
-				for (let p of Object.values(index_data[model])) {
-					p.mtime += delta;
-				}
-				console.log('apply time hack');
-			}
-			*/
 			
 			fs.writeFileSync(`${OUT_DIR}/${patch_file}`, member.data);
 			let new_patch_md5 = fileMD5(`${OUT_DIR}/${patch_file}`);
