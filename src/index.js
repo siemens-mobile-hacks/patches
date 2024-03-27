@@ -9,8 +9,6 @@ import { KibabAPI } from './KibabAPI.js';
 // patches.kibab.com timezone
 process.env.TZ = 'Europe/Moscow'; // thanks Viktor89
 
-console.log((new Date).toLocaleString());
-
 let TMP_DIR = `${import.meta.dirname}/../tmp`;
 let OUT_DIR = `${import.meta.dirname}/../patches`;
 
@@ -26,6 +24,9 @@ let all_models = await api.getAllModels();
 for (let model of all_models) {
 	console.log(`[${model.name}]`);
 	fs.mkdirSync(`${OUT_DIR}/${model.name}`, { recursive: true });
+	
+//	if (model.name != 'S75v47')
+//		continue;
 	
 	let all_model_patches = await api.getAllPatches(model.modelId, model.swId);
 	let all_patches_ids = all_model_patches.map((p) => p.id);
@@ -158,7 +159,7 @@ async function downloadPatches(api, all_patches_ids, force_all) {
 			};
 			
 			/*
-			if (old_patch && Math.abs(new_patch.mtime - old_patch.mtime) == 3600000) {
+			if (old_patch && (Math.abs(new_patch.mtime - old_patch.mtime) % 3600000) == 0) {
 				let delta = new_patch.mtime - old_patch.mtime;
 				for (let p of Object.values(index_data[model])) {
 					p.mtime += delta;

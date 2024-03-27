@@ -4,12 +4,8 @@ set -x
 
 cd $(dirname $0)/../
 
-# patches.kibab.com timezone
-export TZ=Europe/Moscow
-export LC_ALL=RU_ru.UTF-8
-
 npm install
-time node .
+node .
 git add patches
 
 export TZ=
