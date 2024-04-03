@@ -30841,5 +30841,8 @@
 	],
 	[
 		"E71v45/force_update_audio_track_in_ram.vkp"
+	],
+	[
+		"E71v45/send_gbs_message_while_ss_starts.vkp"
 	]
 ]
