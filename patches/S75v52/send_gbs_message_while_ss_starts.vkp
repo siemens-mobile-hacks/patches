@@ -1,17 +1,17 @@
-;E71v45
+;S75v52
 ;Отправка GBS сообщения в момент запуска скринсейвера
 ;Send a GBS message while a screensaver starts
 ;(c) Azq2, FIL
 ;(r) Виктор89
 ;Version: 
-;PatchID: 10781
-;Details: https://patches.kibab.com/patches/details.php5?id=10781
+;PatchID: 10782
+;Details: https://patches.kibab.com/patches/details.php5?id=10782
 /*
 Патч отправляет GBS сообщение GBS_SendMessage(0x4209, 0xA000, SCREENSAVER_CSM_ID) в момент запуска самого скринсейвера. Данный патч нужен для работы эльфов-скринсейверов.
 */
-0670B8C: 87F128EF 79F06EFC
+0303BFC: E8F034EB 2CF02EFC
 
-+06EA460
++0330450
 0C: 4150 20B5
 0E: 4D5F4669 C7DF0701
 12: 6C65 0546

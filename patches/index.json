@@ -18981,6 +18981,16 @@
 				"ru": "Принудительно обновлять данные текущего аудио трека в памяти",
 				"en": "Force update the data of a current audio track in ram"
 			}
+		},
+		"10782": {
+			"id": "10782",
+			"model": "S75v52",
+			"file": "S75v52/send_gbs_message_while_ss_starts.vkp",
+			"mtime": 1712149486000,
+			"title": {
+				"ru": "Отправка GBS сообщения в момент запуска скринсейвера",
+				"en": "Send a GBS message while a screensaver starts"
+			}
 		}
 	},
 	"SL75v31": {
@@ -92726,7 +92736,7 @@
 			"id": "10781",
 			"model": "E71v45",
 			"file": "E71v45/send_gbs_message_while_ss_starts.vkp",
-			"mtime": 1712075452000,
+			"mtime": 1712149502000,
 			"title": {
 				"ru": "Отправка GBS сообщения в момент запуска скринсейвера",
 				"en": "Send a GBS message while a screensaver starts"
