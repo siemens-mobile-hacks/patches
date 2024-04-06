@@ -1,0 +1,14 @@
+;S75v52
+;Не скрывать медиаплеер при заблокированой клавиатуре после сворачивания xtask'ом
+;Not to hide mediapleer at keylock to keyboard after roll up xtask'om
+;(c) FIL
+;(r) Zhek@
+;Version: 2
+;PatchID: 10783
+;Details: https://patches.kibab.com/patches/details.php5?id=10783
+/*
+Патч устраняет зависание после сворачивания плеера XTask'ом и блокировании клавиатуры, после разблокировки плеер будет виден в XTask.
+*/
+05A8174: 85F7B4FA C046C046
+;------------------------- end -------------------------
+

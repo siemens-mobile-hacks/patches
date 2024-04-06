@@ -18991,6 +18991,16 @@
 				"ru": "Отправка GBS сообщения в момент запуска скринсейвера",
 				"en": "Send a GBS message while a screensaver starts"
 			}
+		},
+		"10783": {
+			"id": "10783",
+			"model": "S75v52",
+			"file": "S75v52/dont_hide_mp_at_keylock.vkp",
+			"mtime": 1712340340000,
+			"title": {
+				"ru": "Не скрывать медиаплеер при заблокированой клавиатуре после сворачивания xtask'ом",
+				"en": "Not to hide mediapleer at keylock to keyboard after roll up xtask'om"
+			}
 		}
 	},
 	"SL75v31": {
