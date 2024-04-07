@@ -96795,6 +96795,16 @@
 				"ru": "Загрузочный экран Siemens Mobile Black",
 				"en": "Bootscreen Siemens Mobile Black"
 			}
+		},
+		"10787": {
+			"id": 10787,
+			"model": "S68v52",
+			"file": "S68v52/10787-BS_SM_White_S68sw52.vkp",
+			"mtime": 1712516156000,
+			"title": {
+				"ru": "Загрузочный экран Siemens Mobile White",
+				"en": "Bootscreen Siemens Mobile White"
+			}
 		}
 	},
 	"A75v20": {
