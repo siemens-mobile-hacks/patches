@@ -92721,6 +92721,16 @@
 				"ru": "Отправка GBS сообщения в момент запуска скринсейвера",
 				"en": "Send a GBS message while a screensaver starts"
 			}
+		},
+		"10784": {
+			"id": 10784,
+			"model": "E71v45",
+			"file": "E71v45/10784-disable_message_choose_energy_sav.vkp",
+			"mtime": 1712493698000,
+			"title": {
+				"ru": "Отключить сообщение \"Выбрать 'Энергосбереж' для увеличения врем.работы\"",
+				"en": "Disable message \"Choose 'Energy saving' to increase standby.\""
+			}
 		}
 	},
 	"C81v51": {
