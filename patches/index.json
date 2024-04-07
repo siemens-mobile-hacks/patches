@@ -15122,7 +15122,7 @@
 			"id": 8291,
 			"model": "S75v52",
 			"file": "S75v52/8291-PIML__Patch_Idle_Memory_Leak_.vkp",
-			"mtime": 1202578862000,
+			"mtime": 1712471518000,
 			"title": {
 				"ru": "Устранение утечки памяти при отображении IdleScreen",
 				"en": "PIML (Patch Idle Memory Leak)"
