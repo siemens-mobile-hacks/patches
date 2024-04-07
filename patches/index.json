@@ -19001,6 +19001,16 @@
 				"ru": "Не скрывать медиаплеер при заблокированой клавиатуре после сворачивания xtask'ом",
 				"en": "Not to hide mediapleer at keylock to keyboard after roll up xtask'om"
 			}
+		},
+		"10785": {
+			"id": 10785,
+			"model": "S75v52",
+			"file": "S75v52/10785-Fast_switching_songs_in_mediaplayer.vkp",
+			"mtime": 1712507280000,
+			"title": {
+				"ru": "Быстрое переключение мелодий в медиаплеере",
+				"en": "Fast switching melody in mediaplayer"
+			}
 		}
 	},
 	"SL75v31": {
