@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 010424
+;Version: 070424
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -978,7 +978,7 @@
 
 0EC0: 0xA05ACECB ; 3B0: __thumb void SettingsAE_RegisterListener(SettingsAE_ListenerProc proc, int set, const char *entry, const char *keyword);
 0EC4: 0xA05ACF25 ; 3B1: __thumb void SettingsAE_DeregisterListener(SettingsAE_ListenerProc proc, int set, const char *entry, const char *keyword);
-;EC8:            ; 3B2: __thumb WSHDR *GetLastAudioTrackDir();
+0EC8: 0xA069FA18 ; 3B2: __arm WSHDR *GetLastAudioTrackDir();
 0ECC: 0xA066FF69 ; 3B3: __thumb IMGHDR *GetIMGHDRFromCanvasCache(unsigned int CanvasID);
 
 #pragma disable old_equal_ff

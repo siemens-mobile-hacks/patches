@@ -1,0 +1,19 @@
+;S75v52
+;Быстрое переключение мелодий в медиаплеере
+;Fast switching melody in mediaplayer
+;(c) alfinant
+;(p) Виктор89
+;Version: 
+;PatchID: 10785
+;Details: https://patches.kibab.com/patches/details.php5?id=10785
+/*
+
+*/
++8FC
+005f59ea: 3bd1 c046
+005f5bd6: 3dd1 c046
+005f85f0: 04 03
+005f79c4: 02 03
++0
+;------------------------- end -------------------------
+

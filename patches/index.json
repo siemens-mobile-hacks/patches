@@ -15122,7 +15122,7 @@
 			"id": "8291",
 			"model": "S75v52",
 			"file": "S75v52/PIML__Patch_Idle_Memory_Leak_.vkp",
-			"mtime": 1202578862000,
+			"mtime": 1712471518000,
 			"title": {
 				"ru": "Устранение утечки памяти при отображении IdleScreen",
 				"en": "PIML (Patch Idle Memory Leak)"
@@ -19000,6 +19000,16 @@
 			"title": {
 				"ru": "Не скрывать медиаплеер при заблокированой клавиатуре после сворачивания xtask'ом",
 				"en": "Not to hide mediapleer at keylock to keyboard after roll up xtask'om"
+			}
+		},
+		"10785": {
+			"id": "10785",
+			"model": "S75v52",
+			"file": "S75v52/Fast_switching_songs_in_mediaplayer.vkp",
+			"mtime": 1712507280000,
+			"title": {
+				"ru": "Быстрое переключение мелодий в медиаплеере",
+				"en": "Fast switching melody in mediaplayer"
 			}
 		}
 	},
@@ -91509,7 +91519,7 @@
 			"id": "10075",
 			"model": "E71v45",
 			"file": "E71v45/swilib.vkp",
-			"mtime": 1711978694000,
+			"mtime": 1712494332000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -92736,7 +92746,7 @@
 			"id": "10780",
 			"model": "E71v45",
 			"file": "E71v45/force_update_audio_track_in_ram.vkp",
-			"mtime": 1711545892000,
+			"mtime": 1712507294000,
 			"title": {
 				"ru": "Принудительно обновлять данные текущего аудио трека в памяти",
 				"en": "Force update the data of a current audio track in ram"
@@ -92750,6 +92760,16 @@
 			"title": {
 				"ru": "Отправка GBS сообщения в момент запуска скринсейвера",
 				"en": "Send a GBS message while a screensaver starts"
+			}
+		},
+		"10784": {
+			"id": "10784",
+			"model": "E71v45",
+			"file": "E71v45/disable_message_choose_energy_sav.vkp",
+			"mtime": 1712493698000,
+			"title": {
+				"ru": "Отключить сообщение \"Выбрать 'Энергосбереж' для увеличения врем.работы\"",
+				"en": "Disable message \"Choose 'Energy saving' to increase standby.\""
 			}
 		}
 	},
@@ -96794,6 +96814,26 @@
 			"title": {
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
+			}
+		},
+		"10786": {
+			"id": "10786",
+			"model": "S68v52",
+			"file": "S68v52/BS_SM_Black_S68sw52.vkp",
+			"mtime": 1712515334000,
+			"title": {
+				"ru": "Загрузочный экран Siemens Mobile Black",
+				"en": "Bootscreen Siemens Mobile Black"
+			}
+		},
+		"10787": {
+			"id": "10787",
+			"model": "S68v52",
+			"file": "S68v52/BS_SM_White_S68sw52.vkp",
+			"mtime": 1712516156000,
+			"title": {
+				"ru": "Загрузочный экран Siemens Mobile White",
+				"en": "Bootscreen Siemens Mobile White"
 			}
 		}
 	},

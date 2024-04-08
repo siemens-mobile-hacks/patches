@@ -1,0 +1,13 @@
+;E71v45
+;Отключить сообщение "Выбрать 'Энергосбереж' для увеличения врем.работы"
+;Disable message "Choose 'Energy saving' to increase standby."
+;(c) FIL
+;Version: 
+;PatchID: 10784
+;Details: https://patches.kibab.com/patches/details.php5?id=10784
+/*
+
+*/
+07CA71E: FFF729FF C046C046
+;------------------------- end -------------------------
+
