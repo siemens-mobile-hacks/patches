@@ -16344,10 +16344,10 @@
 		"8462": {
 			"id": 8462,
 			"model": "S75v52",
-			"file": "S75v52/8462-remove_icons_white_bg_in_nat_menu.vkp",
+			"file": "S75v52/8462-remove_icons_white_bg_in_nm_v2.vkp",
 			"mtime": 1712777272000,
 			"title": {
-				"ru": "Убрать белый фон у иконок в Native menu",
+				"ru": "Убрать белый фон у иконок в Native Menu",
 				"en": "Remove Icons White Background in Native Menu"
 			}
 		},
