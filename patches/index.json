@@ -19021,6 +19021,16 @@
 				"ru": "Отключить отрисовку номера текущего элемента в Native Menu",
 				"en": "Disable drawing the number of a current item in Native Menu"
 			}
+		},
+		"10789": {
+			"id": 10789,
+			"model": "S75v52",
+			"file": "S75v52/10789-S75v52_native_longpress_fix.vkp",
+			"mtime": 1712784334000,
+			"title": {
+				"ru": "Включить перемещение по пунктам нативного меню по длиному нажатию джоя влево/вправо",
+				"en": "Enable native menu items navigation by left/right navy key long press"
+			}
 		}
 	},
 	"SL75v31": {
