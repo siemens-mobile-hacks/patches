@@ -16344,8 +16344,8 @@
 		"8462": {
 			"id": "8462",
 			"model": "S75v52",
-			"file": "S75v52/RemoveIconsWhit.vkp",
-			"mtime": 1206191428000,
+			"file": "S75v52/remove_icons_white_bg_in_nat_menu.vkp",
+			"mtime": 1712777272000,
 			"title": {
 				"ru": "Убрать белый фон у иконок в Native menu",
 				"en": "Remove Icons White Background in Native Menu"
@@ -19010,6 +19010,26 @@
 			"title": {
 				"ru": "Быстрое переключение мелодий в медиаплеере",
 				"en": "Fast switching melody in mediaplayer"
+			}
+		},
+		"10788": {
+			"id": "10788",
+			"model": "S75v52",
+			"file": "S75v52/disable_drawing_num_in_native_menu.vkp",
+			"mtime": 1712777990000,
+			"title": {
+				"ru": "Отключить отрисовку номера текущего элемента в Native Menu",
+				"en": "Disable drawing the number of a current item in Native Menu"
+			}
+		},
+		"10789": {
+			"id": "10789",
+			"model": "S75v52",
+			"file": "S75v52/S75v52_native_longpress_fix.vkp",
+			"mtime": 1712784334000,
+			"title": {
+				"ru": "Включить перемещение по пунктам нативного меню по длиному нажатию джоя влево/вправо",
+				"en": "Enable native menu items navigation by left/right navy key long press"
 			}
 		}
 	},
