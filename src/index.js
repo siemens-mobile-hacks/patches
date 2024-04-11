@@ -115,12 +115,13 @@ async function downloadPatches(api, all_patches_ids, force_all) {
 			let old_patch_md5;
 			let old_patch = index_data[model][patch_id];
 			if (old_patch) {
+				old_patch_md5 = fileMD5(`${OUT_DIR}/${old_patch.file}`);
+				
 				if (old_patch.file != patch_file) {
 					console.log(`  rename ${old_patch.file} -> ${patch_file}`);
 					child_process.spawnSync("git", ["add", old_patch.file], { cwd: OUT_DIR });
 					child_process.spawnSync("git", ["mv", old_patch.file, patch_file], { cwd: OUT_DIR });
 				}
-				old_patch_md5 = fileMD5(`${OUT_DIR}/${old_patch.file}`);
 			}
 			
 			let additional_file;
