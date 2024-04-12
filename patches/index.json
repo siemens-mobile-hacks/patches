@@ -19031,6 +19031,16 @@
 				"ru": "Включить перемещение по пунктам нативного меню по длиному нажатию джоя влево/вправо",
 				"en": "Enable native menu items navigation by left/right navy key long press"
 			}
+		},
+		"10790": {
+			"id": 10790,
+			"model": "S75v52",
+			"file": "S75v52/10790-NMFP_v3.vkp",
+			"mtime": 1712930658000,
+			"title": {
+				"ru": "Пакет исправлений Native Menu",
+				"en": "Native Menu Fix Pack"
+			}
 		}
 	},
 	"SL75v31": {
