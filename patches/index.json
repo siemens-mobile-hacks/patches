@@ -16344,10 +16344,10 @@
 		"8462": {
 			"id": "8462",
 			"model": "S75v52",
-			"file": "S75v52/remove_icons_white_bg_in_nat_menu.vkp",
+			"file": "S75v52/remove_icons_white_bg_in_nm_v2.vkp",
 			"mtime": 1712777272000,
 			"title": {
-				"ru": "Убрать белый фон у иконок в Native menu",
+				"ru": "Убрать белый фон у иконок в Native Menu",
 				"en": "Remove Icons White Background in Native Menu"
 			}
 		},
@@ -19030,6 +19030,16 @@
 			"title": {
 				"ru": "Включить перемещение по пунктам нативного меню по длиному нажатию джоя влево/вправо",
 				"en": "Enable native menu items navigation by left/right navy key long press"
+			}
+		},
+		"10790": {
+			"id": "10790",
+			"model": "S75v52",
+			"file": "S75v52/NMFP_v3.vkp",
+			"mtime": 1712930658000,
+			"title": {
+				"ru": "Пакет исправлений Native Menu",
+				"en": "Native Menu Fix Pack"
 			}
 		}
 	},
@@ -92790,6 +92800,16 @@
 			"title": {
 				"ru": "Отключить сообщение \"Выбрать 'Энергосбереж' для увеличения врем.работы\"",
 				"en": "Disable message \"Choose 'Energy saving' to increase standby.\""
+			}
+		},
+		"10791": {
+			"id": "10791",
+			"model": "E71v45",
+			"file": "E71v45/disable_drawing_num_in_native_menu.vkp",
+			"mtime": 1712951460000,
+			"title": {
+				"ru": "Отключить отрисовку номера текущего элемента в Native Menu",
+				"en": "Disable drawing the number of a current item in Native Menu"
 			}
 		}
 	},

@@ -1,0 +1,152 @@
+;S75v52
+;Пакет исправлений Native Menu
+;Native Menu Fix Pack
+;(c) caine,Miha_r,BingK,Evgr,SiNgle,FIL,42Gzb,Zhek@
+;Version: 3
+;PatchID: 10790
+;Details: https://patches.kibab.com/patches/details.php5?id=10790
+/*
+
+*/
+;№1
+;Исправление ошибок Native Menu
+;Fix mistakes in NativeMenu
+;(c) caine
+;(r) ThE TrIFoN
+;(p) Belarus, Kibab, KIBER-DEMON
+;CreateGUIWithDummyCSM call & other stuff
+033399A: B8F040ED 00210AE0
+03339AE: 00210020C5F6EBFA002802D0 BBF014E980BDB8F0D6EEFEBD
+; Fix Internet (from v2)
+043F66C: 08 00
+; Fix Taimer & SMS
+0437B80: 593833 07DD32
+043F418: 279C37 65E332
+
+;№2
+;Фикс ошибки SMS архива в NativeMenu
+;SMS archive fix in NativeMenu
+;(c) Miha_r
+;(p) pip@
+8CC310: 557560A0 03E032A0
+
+;№3
+;Фикс меню Сообщения-Настройки в NativeMenu
+;Fix SMS setting Menu in NativeMenu
+;(c) BingK(binghelingxi)
+;(p) snoopyhzy
+08CC4AC: 91 10
+0607E6A: 30 18
+0607D6C: D6 F2
+
+;№4
+;Исправить навигацию по пунктам нативного меню
+;Fix native menu items navigation
+;(c) Evgr
+;(p) Diman3452
+-A244
+0A24754: 1ED1 C046 ; navi down
+0A246AE: 71D1 C046 ; navi up
+0A24610: E4DB 4EDB ; navi left
+0A247EA: 99D0 B4D0 ; navi right
++0
+
+;№5
+;Исправление кнопок *, 0, #, кнопка вызова в Native Menu
+;Fix key *, 0, #, greenkey in Native Menu
+;(c) BingK(binghelingxi)
+;(p) Виктор89
+;NMNU_FIX_KEY_HOOK3 
+0x003338F4: 1529 0529 
+;NMNU_FIX_KEY_HOOK1 
+0x00A1A314: 162869D171688868 004A9047017806A0
+;NMNU_FIX_KEY_HOOK2 
+0x00A1A320: 3928 3C28 
+;NMNU_FIX_KEY_BODY 
+#pragma enable old_equal_ff 
+0x00067800: 162807D0142803D015280FD13C2006E0 
+0x00067810: 3A2004E071688868302802D13B207168 
+0x00067820: 8860716888687246121D10477246D432 
+0x00067830: 1047 
+#pragma disable old_equal_ff
+
+;№6
+;Включить перемещение по пунктам нативного меню по длиному нажатию джоя влево/вправо
+;Enable native menu items navigation by left/right navy key long press  
+;(c) Evgr
+;(p) Виктор89
+0A1A2F8: 251C271CB0378035 004DA847,0xA1470851
+
+#pragma enable old_equal_ff
+1470850: 00B5251C271CB03780352C2801D12720
+1470860: 02E02D2800D12820784700000040BDE8
+1470870: 04E08EE21EFF2FE1
+#pragma disable old_equal_ff
+
+;№7
+;Фикс Настройки-Часы-Показ. часы-Вкл./Выкл в NativeMenu
+;Show clock on/off fix in NativeMenu
+;(c) BingK(binghelingxi)
+;(p) Виктор89
+;NMNU_SHOW_TIME_FIX_HOOK1,NMNU_SHOW_TIME_FIX_HOOK2
+0x00444908: 831F3AA08B1F3AA0 411606A0511606A0
+;NMNU_SHOW_TIME_FIX_BODY
+#pragma enable old_equal_ff
+61640: F0B5071C064EB047381C064EB047F0BD
+61650: F0B50F1C044EB047391C044EB047F0BD
+61660: B5E329A0175F33A087E329A02B5F33A0
+#pragma disable old_equal_ff
+
+;№8
+;Убрать белый фон у иконок в Native Menu
+;Remove Icons White Background in Native Menu
+;(c) FIL,SiNgle
+;(r) Виктор89, MAXIM
+;(p) Barakyda
+;Version: 2
+0A18374: FFF777FE C046C046
+
+0A1A21E: 00 FF
+0A1A27E: E8F7C4F8 83F227FB
+#pragma enable old_equal_ff
+0C9D8D0: F0B591B003930400144B02200D00160098470399033C0331F31CEA1E0091104E2100193D070005A8B0473B0005A907A80C4E0022B0473B0005A907A800940022094C0195A0470022110007A8074B9847074B07A8984711B0F0BDC04603C8A1A09B5D97A05F29A0A0852AA0A0A31997A0493C90A0
+#pragma disable old_equal_ff
+0A1A2C2: E8F7A2F8 00280028
+
+;№9
+;Отключить отрисовку номера текущего элемента в Native Menu
+;Disable drawing the number of a current item in Native Menu
+;(c) FIL
+0A199B2: C2F14EEB C046C046
+
+;№10
+;Native Menu вместо главного меню
+;Native Menu instead of MainMenu
+;(c) 42Gzb
+;(r) Виктор89
+;(p) SimaFish
++0422740
+00: CDE332A0 9BE12CA0
+0C: 9D 72
+;2C: 7C 80 ;иконка на ГЭ - 7C: иконка главного меню, 80: иконка замены
+30: A200 0D14
+34: A200 0D14 
+40: 3205 8923 
+44: 3205 8923 
+5C: 3B 1F 
+60: 02 00 
+64: 90DA9FA0A8DA9FA0 0000000000000000
++0
+
+;№11
+;NativeMenu вместо Главного в опциях разговора
+;NativeMenu instead of FlexMenu in conversation menu
+;(c) Zhek@
+;(p) SimaFish
+043939C: 011134A0 9BE12CA0
+
+
+
+
+;------------------------- end -------------------------
+
