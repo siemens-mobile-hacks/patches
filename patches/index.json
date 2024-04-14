@@ -96855,6 +96855,16 @@
 				"ru": "Отключить отрисовку номера текущего элемента в Native Menu",
 				"en": "Disable drawing the number of a current item in Native Menu"
 			}
+		},
+		"10793": {
+			"id": 10793,
+			"model": "S68v52",
+			"file": "S68v52/10793-remove_icons_white_bg_in_nm_v2.vkp",
+			"mtime": 1713120100000,
+			"title": {
+				"ru": "Убрать белый фон у иконок в Native Menu",
+				"en": "Remove Icons White Background in Native Menu"
+			}
 		}
 	},
 	"A75v20": {
