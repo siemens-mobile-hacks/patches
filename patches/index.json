@@ -96875,6 +96875,16 @@
 				"ru": "Загрузочный экран Siemens Mobile White",
 				"en": "Bootscreen Siemens Mobile White"
 			}
+		},
+		"10792": {
+			"id": "10792",
+			"model": "S68v52",
+			"file": "S68v52/disable_drawing_num_in_native_menu.vkp",
+			"mtime": 1713012306000,
+			"title": {
+				"ru": "Отключить отрисовку номера текущего элемента в Native Menu",
+				"en": "Disable drawing the number of a current item in Native Menu"
+			}
 		}
 	},
 	"A75v20": {
