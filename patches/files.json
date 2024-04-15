@@ -30893,7 +30893,9 @@
 	[
 		"C81v51/10801-fix_active_item_position_in_nm.vkp"
 	],
-	null,
+	[
+		"E71v45/10802-fix_navigation_in_nm.vkp"
+	],
 	null,
 	[
 		"S75v52/10804-add_icons_to_header_in_nm_v1_1.vkp"
