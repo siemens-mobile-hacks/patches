@@ -33834,6 +33834,16 @@
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
 			}
+		},
+		"10798": {
+			"id": 10798,
+			"model": "CX75v25",
+			"file": "CX75v25/10798-fix_active_item_position_in_nm.vkp",
+			"mtime": 1713162024000,
+			"title": {
+				"ru": "Исправить позицию активного элемента в Native Menu",
+				"en": "Fix the active item position in Native Menu"
+			}
 		}
 	},
 	"M75v5": {
