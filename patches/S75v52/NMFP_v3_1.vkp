@@ -2,7 +2,7 @@
 ;Пакет исправлений Native Menu
 ;Native Menu Fix Pack
 ;(c) caine,Miha_r,BingK,Evgr,SiNgle,FIL,42Gzb,Zhek@
-;Version: 3
+;Version: 3.1
 ;PatchID: 10790
 ;Details: https://patches.kibab.com/patches/details.php5?id=10790
 /*
@@ -145,8 +145,11 @@
 ;(p) SimaFish
 043939C: 011134A0 9BE12CA0
 
-
-
+;#12
+;Исправить позицию текущего элемента в Native Menu 
+;Fix the active item position in Native Menu
+;(c) FIL
+0A19FA6: 00 FF
 
 ;------------------------- end -------------------------
 

@@ -19035,11 +19035,21 @@
 		"10790": {
 			"id": "10790",
 			"model": "S75v52",
-			"file": "S75v52/NMFP_v3.vkp",
-			"mtime": 1712930658000,
+			"file": "S75v52/NMFP_v3_1.vkp",
+			"mtime": 1713128786000,
 			"title": {
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
+			}
+		},
+		"10797": {
+			"id": "10797",
+			"model": "S75v52",
+			"file": "S75v52/fix_active_item_position_in_nm.vkp",
+			"mtime": 1713128640000,
+			"title": {
+				"ru": "Исправить позицию активного элемента в Native Menu",
+				"en": "Fix the active item position in Native Menu"
 			}
 		}
 	},
@@ -96884,6 +96894,16 @@
 			"title": {
 				"ru": "Отключить отрисовку номера текущего элемента в Native Menu",
 				"en": "Disable drawing the number of a current item in Native Menu"
+			}
+		},
+		"10793": {
+			"id": "10793",
+			"model": "S68v52",
+			"file": "S68v52/remove_icons_white_bg_in_nm_v2.vkp",
+			"mtime": 1713120100000,
+			"title": {
+				"ru": "Убрать белый фон у иконок в Native Menu",
+				"en": "Remove Icons White Background in Native Menu"
 			}
 		}
 	},

@@ -1,0 +1,13 @@
+;S75v52
+;Исправить позицию активного элемента в Native Menu 
+;Fix the active item position in Native Menu
+;(c) FIL
+;Version: 
+;PatchID: 10797
+;Details: https://patches.kibab.com/patches/details.php5?id=10797
+/*
+Фикс позиции активного элемента в Native Menu при запуске нескольких копий и после переключения между ними.
+*/
+0A19FA6: 00 FF
+;------------------------- end -------------------------
+
