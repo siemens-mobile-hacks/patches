@@ -96885,6 +96885,16 @@
 				"ru": "Убрать белый фон у иконок в Native Menu",
 				"en": "Remove Icons White Background in Native Menu"
 			}
+		},
+		"10800": {
+			"id": 10800,
+			"model": "S68v52",
+			"file": "S68v52/10800-fix_active_item_position_in_nm.vkp",
+			"mtime": 1713162156000,
+			"title": {
+				"ru": "Исправить позицию активного элемента в Native Menu",
+				"en": "Fix the active item position in Native Menu"
+			}
 		}
 	},
 	"A75v20": {
