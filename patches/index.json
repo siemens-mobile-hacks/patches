@@ -91266,11 +91266,11 @@
 		"9682": {
 			"id": 9682,
 			"model": "E71v45",
-			"file": "E71v45/9682-NMFPv3.vkp",
-			"mtime": 1259539906000,
+			"file": "E71v45/9682-NMFP_v3_1.vkp",
+			"mtime": 1713164814000,
 			"title": {
 				"ru": "Пакет исправлений Native Menu",
-				"en": "NMFP Native Menu Fix Pack"
+				"en": "Native Menu Fix Pack"
 			}
 		},
 		"9683": {
