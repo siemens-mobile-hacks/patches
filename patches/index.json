@@ -92852,6 +92852,16 @@
 				"en": "Disable drawing the number of a current item in Native Menu"
 			}
 		},
+		"10799": {
+			"id": 10799,
+			"model": "E71v45",
+			"file": "E71v45/10799-fix_active_item_position_in_nm.vkp",
+			"mtime": 1713162124000,
+			"title": {
+				"ru": "Исправить позицию активного элемента в Native Menu",
+				"en": "Fix the active item position in Native Menu"
+			}
+		},
 		"10807": {
 			"id": 10807,
 			"model": "E71v45",

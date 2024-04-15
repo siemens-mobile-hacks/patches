@@ -30884,7 +30884,9 @@
 	[
 		"CX75v25/10798-fix_active_item_position_in_nm.vkp"
 	],
-	null,
+	[
+		"E71v45/10799-fix_active_item_position_in_nm.vkp"
+	],
 	[
 		"S68v52/10800-fix_active_item_position_in_nm.vkp"
 	],
