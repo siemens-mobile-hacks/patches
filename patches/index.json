@@ -92872,6 +92872,16 @@
 				"en": "Fix native menu items navigation"
 			}
 		},
+		"10803": {
+			"id": 10803,
+			"model": "E71v45",
+			"file": "E71v45/10803-fix_long_press_navigation_in_nm.vkp",
+			"mtime": 1713163834000,
+			"title": {
+				"ru": "Включить перемещение по пунктам нативного меню по длиному нажатию джоя влево/вправо",
+				"en": "Enable native menu items navigation by left/right navy key long press"
+			}
+		},
 		"10807": {
 			"id": 10807,
 			"model": "E71v45",

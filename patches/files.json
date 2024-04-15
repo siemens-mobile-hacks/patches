@@ -30896,7 +30896,9 @@
 	[
 		"E71v45/10802-fix_navigation_in_nm.vkp"
 	],
-	null,
+	[
+		"E71v45/10803-fix_long_press_navigation_in_nm.vkp"
+	],
 	[
 		"S75v52/10804-add_icons_to_header_in_nm_v1_1.vkp"
 	],
