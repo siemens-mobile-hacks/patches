@@ -95428,6 +95428,16 @@
 				"ru": "Не показывать окошко \"Отсутствуют настройки интернет\" при включении телефона",
 				"en": "Don't show popup \"Missing internet setup\" at phone startup"
 			}
+		},
+		"10801": {
+			"id": 10801,
+			"model": "C81v51",
+			"file": "C81v51/10801-fix_active_item_position_in_nm.vkp",
+			"mtime": 1713162194000,
+			"title": {
+				"ru": "Исправить позицию активного элемента в Native Menu",
+				"en": "Fix the active item position in Native Menu"
+			}
 		}
 	},
 	"C81v38": {
