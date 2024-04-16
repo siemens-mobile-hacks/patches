@@ -1,22 +1,16 @@
 ;E71v45
 ;Пакет исправлений Native Menu
-;NMFP Native Menu Fix Pack
-;(c) caine, DJ, Zhek@, Miha_r, BingK(binghelingxi), SiN
-;(r) ThE TrIFoN, DJ, weclnt
-;(p) Grizzzzly, sempai, sim_emrom, snoopyhzy
-;Version: 3
+;Native Menu Fix Pack
+;(c) caine, DJ, Zhek@, Miha_r, BingK, SiNgle, Evgr, FIL
+;Version: 3.1
 ;PatchID: 9682
 ;Details: https://patches.kibab.com/patches/details.php5?id=9682
 /*
-; Version 15.11.2008
-; Вроде сделано всё, чтобы Native Menu заменило Flex-Menu :) Подробности в патче. Ненужное можно закомментировать. Пак состоит из 14 патчей.
-*/
-; Version 15.11.2008
-; Вроде сделано всё, чтобы Native Menu заменило Flex-Menu :)
 
-; -No1-
-; Исправление ошибок Native Menu
-; Fix mistakes in Native Menu
+*/
+;№1
+;Исправление ошибок Native Menu
+;Fix mistakes in Native Menu
 ;(c) caine 
 ;(r) ThE TrIFoN
 ;(p) Grizzzzly 
@@ -29,9 +23,9 @@
 ;Fix Internet / Исправление меню Интернет
 0883604: 08 00
 
-; -No2-
-; Исправление анимации в Native Menu
-; Fix animation in Native Menu
+;№2
+;Исправление анимации в Native Menu
+;Fix animation in Native Menu
 ;(c) DJ
 -A3F8
 873CFC: 01 00
@@ -48,30 +42,29 @@
 873EF8: 01 00
 +0
 
-; -No3-
-; Радио вместо будильника в Native Menu
-; Radio instead alarmclock in Native Menu
+;№5
+;Замена будильника на радио в натив меню
+;Change alarmclock to radio in native menu
 ;(c) Zhek@
 ;(r) DJ
-;Внимание! Это важно:
-869864: 9BDC6EA0 F78F6EA0; если не установлен патч "Запуск альтернативного радиомидлета вместо стандартного"
-;869864: 9BDC6EA0 317506A0; если установлен, раскомментировать эту и закомментировать предыдущую
+;869864: 9BDC6EA0 317506A0; если установлен патч "Запуск альтернативного радиомидлета вместо стандартного"
+869864: 9BDC6EA0 F78F6EA0; если не установлен, раскоментировать эту и закоментировать предыдущую
 
 869B3C: 6903 6E03
 8699A0: 7603000077030000780300007903 8F03000090030000910300009203
 8699B0: 7A03 9303
 869860: 850100 D31401
 
-; -No4-
-; Исправление ошибок Native Menu: архив сообщений
-; Fix native menu: enable msg archive
+;№4
+;Исправление ошибок Native Menu: архив сообщений
+;Fix native menu: enable msg archive
 ;(c) Miha_r
 
 88F808: E9D87AA0 D77F6EA0
 
-; -No5-
-; Исправление в нативном меню Сообщения-Настройки
-; Fix SMS setting Menu in Native Menu
+;№5
+;Исправление в нативном меню Сообщения-Настройки
+;Fix SMS setting Menu in Native Menu
 ;(c) BingK(binghelingxi)
 ;(p) sempai
 
@@ -79,24 +72,24 @@
 07AE1FE: 30 18
 07AE100: D6 F2
 
-; -No6-
-; Исправить запуск Таймера в Native Menu
-; Fix timer in Native Menu
+;№6
+;Исправить запуск Таймера в Native Menu
+;Fix timer in Native Menu
 ;(c) caine
 ;(r) ThE TrIFoN
 ;(p) sim_emrom
 
 08833B0: 674D77 39836E
 
-; -No7-
-; Исправление кнопок
-; Native Menu Key Fix
+;№7
+;Исправление кнопок
+;Native Menu Key Fix
 ;(c) BingK(binghelingxi)
 ;(p) snoopyhzy
 
 ; Кнопки: 0 - Мои файлы, * - Другие функции, # - Настройки
 ; Кнопка звонка - меню Разработчика
-;*-Extra 0-Mystuff #-Setup GreenKey-Dev.Menu
+;*-Extra 0-Mystuff Setup GreenKey-Dev.Menu
 
 ;NMNU_FIX_KEY_HOOK3
 0x006EDD2C: 1529 0529
@@ -112,9 +105,9 @@
 0x0135CD30: 1047
 #pragma disable old_equal_ff
 
-; -No8-
-; Исправление позиции иконок и фона
-; Native Menu fix. Fix icon position and backgroud position
+;№8
+;Исправление позиции иконок и фона
+;Native Menu fix. Fix icon position and backgroud position
 ;(c) BingK(binghelingxi)
 ;(p) snoopyhzy
 
@@ -135,9 +128,9 @@
 0x0135CCE0: 69030000
 #pragma disable old_equal_ff
 
-; -No9-
-; Исправление в нативном меню Настройки-Часы-Показ. часы-Вкл./Выкл.
-; Show clock on/off fix in Native Menu
+;№9
+;Исправление в нативном меню Настройки-Часы-Показ. часы-Вкл./Выкл.
+;Show clock on/off fix in Native Menu
 ;(c) BingK(binghelingxi)
 ;(p) sempai
 
@@ -150,9 +143,9 @@
 0061660: 65405CA0DF206FA037405CA0F3206FA0
 #pragma disable old_equal_ff
 
-; -No10-
-; Добавить будильник в органайзер Native Menu
-; Add alarm in Organiser in Native Menu
+;№10
+;Добавить будильник в органайзер Native Menu
+;Add alarm in Organiser in Native Menu
 ;(c) BingK(binghelingxi)
 ;(p) sempai
 
@@ -193,51 +186,77 @@
 008A7F54: 04080000 AE030000
 -0
 
-; -No11-
-; Убрать белый фон у иконок в Native Menu
-; Remove Icons White Background in Native Menu
+;№11
+;Убрать белый фон у иконок в Native Menu
+;Remove Icons White Background in Native Menu
 ;(c) SiNgle
 ;(p) sempai
 
 0A24462: 00 FF
 0A24506: E7F7DEFE 00280028
 
-; -No12-
-; Native Menu вместо Главного в опциях разговора
-; Native Menu instead of Flex-Menu in conversation options
+;№12
+;Native Menu вместо Главного при разговоре
+;Native Menu instead of Flex-Menu in conversation options
 ;(c) Zhek@
-
 86C8B8: FDDE6FA0 7BB063A0
 
-; -No13-
-; Native Menu с названием вместо Управ. лиценз. (NAT_LICENSE_MANAGER)
-; Native Menu+Name instead of Licence mgr.(NAT_LICENSE_MANAGER)
-;(c) SiNgle 
-;(r) weclnt
-;(p) Grizzzzly
-
-;НЕ ОБЯЗАТЕЛЕН, если ставить патч No14
-;NO MORE NEEDED due to No14
-;083D494: 818B6EA0 7BB063A0 ; вместо "Управ. лиценз."
-
-; -No14-
-; Native Menu вместо FlexMenu
-; Native Menu instead of FlexMenu
+;№13
+;Native Menu вместо главного меню
+;Native Menu instead of Main Menu
 ;(c) 42Gzb
-;(p) sim_emrom
-
-+83D694
+;(p) Виктор89
+;Version: 
+;PatchID: 9271
+;Details: https://patches.kibab.com/patches/details.php5?id=9271
++083D694
 00: A5836EA0 0xA063B07B
 0C: A2 72
-;2C: 7C 80 ;icon for MS: 7C - MainMenu icon, 80 - icon for change
+;2C: 7C 80 ;иконка на ГЭ - 7C: иконка главного меню, 80: иконка замены
 30: A200 0D14
 34: A200 0D14
 40: 3205 8923
-44: 3205 8923 
+44: 3205 8923
 5C: 3B 1F
 60: 02 00
 64: 987DA0A0B07DA0A0 0000000000000000
 +0
+
+;№14
+;Исправить навигацию по пунктам нативного меню
+;Fix native menu items navigation
+;(c) Evgr
+0A24754: 1ED1 C046 ; navi down
+0A246AE: 71D1 C046 ; navi up
+0A24610: E4DB 4EDB ; navi left
+0A247EA: 99D0 B4D0 ; navi right
+
+;№15
+;Включить перемещение по пунктам нативного меню по длиному нажатию джоя влево/вправо
+;Enable native menu items navigation by left/right navy key long press 
+;(c) Evgr
+0A2453C: 251C271CB0378035 004DA847,0xA14112D1
+
+#pragma enable old_equal_ff
+14112D0: 00B5251C271CB03780352C2801D12720
+14112E0: 02E02D2800D12820784700000040BDE8
+14112F0: 04E08EE21EFF2FE1
+#pragma disable old_equal_ff
+
+;№16
+;Отключить отрисовку номера текущего элемента в Native Menu
+;Disable drawing the number of a current item in Native Menu
+;(c) FIL
+;(p) Виктор89
+0A23BF6: E9F118ED C046C046
+
+;№17
+;Исправить позицию активного элемента в Native Menu 
+;Fix the active item position in Native Menu
+;(c) FIL
+;(p) Виктор89
+0A241EA: 00 FF
+
 
 ;------------------------- end -------------------------
 

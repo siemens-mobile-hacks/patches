@@ -27609,7 +27609,7 @@
 		"E71v45/dis_wait_BT.vkp"
 	],
 	[
-		"E71v45/NMFPv3.vkp"
+		"E71v45/NMFP_v3_1.vkp"
 	],
 	[
 		"E71v45/Enable_RTSP.vkp"
@@ -30886,5 +30886,15 @@
 	null,
 	[
 		"S75v52/fix_active_item_position_in_nm.vkp"
+	],
+	[
+		"CX75v25/fix_active_item_position_in_nm.vkp"
+	],
+	null,
+	[
+		"S68v52/fix_active_item_position_in_nm.vkp"
+	],
+	[
+		"C81v51/fix_active_item_position_in_nm.vkp"
 	]
 ]

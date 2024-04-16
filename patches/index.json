@@ -15072,7 +15072,7 @@
 			"model": "S75v52",
 			"file": "S75v52/swilib.vkp",
 			"additionalFile": "S75v52/S75sw52_Functions_library_231017.zip",
-			"mtime": 1711977366000,
+			"mtime": 1713211092000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -33833,6 +33833,16 @@
 			"title": {
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
+			}
+		},
+		"10798": {
+			"id": "10798",
+			"model": "CX75v25",
+			"file": "CX75v25/fix_active_item_position_in_nm.vkp",
+			"mtime": 1713162024000,
+			"title": {
+				"ru": "Исправить позицию активного элемента в Native Menu",
+				"en": "Fix the active item position in Native Menu"
 			}
 		}
 	},
@@ -91286,11 +91296,11 @@
 		"9682": {
 			"id": "9682",
 			"model": "E71v45",
-			"file": "E71v45/NMFPv3.vkp",
-			"mtime": 1259539906000,
+			"file": "E71v45/NMFP_v3_1.vkp",
+			"mtime": 1713164814000,
 			"title": {
 				"ru": "Пакет исправлений Native Menu",
-				"en": "NMFP Native Menu Fix Pack"
+				"en": "Native Menu Fix Pack"
 			}
 		},
 		"9683": {
@@ -91559,7 +91569,7 @@
 			"id": "10075",
 			"model": "E71v45",
 			"file": "E71v45/swilib.vkp",
-			"mtime": 1712494332000,
+			"mtime": 1713207296000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -95448,6 +95458,16 @@
 				"ru": "Не показывать окошко \"Отсутствуют настройки интернет\" при включении телефона",
 				"en": "Don't show popup \"Missing internet setup\" at phone startup"
 			}
+		},
+		"10801": {
+			"id": "10801",
+			"model": "C81v51",
+			"file": "C81v51/fix_active_item_position_in_nm.vkp",
+			"mtime": 1713162194000,
+			"title": {
+				"ru": "Исправить позицию активного элемента в Native Menu",
+				"en": "Fix the active item position in Native Menu"
+			}
 		}
 	},
 	"C81v38": {
@@ -96904,6 +96924,16 @@
 			"title": {
 				"ru": "Убрать белый фон у иконок в Native Menu",
 				"en": "Remove Icons White Background in Native Menu"
+			}
+		},
+		"10800": {
+			"id": "10800",
+			"model": "S68v52",
+			"file": "S68v52/fix_active_item_position_in_nm.vkp",
+			"mtime": 1713162156000,
+			"title": {
+				"ru": "Исправить позицию активного элемента в Native Menu",
+				"en": "Fix the active item position in Native Menu"
 			}
 		}
 	},

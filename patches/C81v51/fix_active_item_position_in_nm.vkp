@@ -1,0 +1,14 @@
+;C81v51
+;Исправить позицию активного элемента в Native Menu 
+;Fix the active item position in Native Menu
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10801
+;Details: https://patches.kibab.com/patches/details.php5?id=10801
+/*
+Фикс позиции активного элемента в Native Menu при запуске нескольких копий и после переключения между ними.
+*/
+0A16F9E: 00 FF
+;------------------------- end -------------------------
+
