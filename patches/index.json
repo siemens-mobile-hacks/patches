@@ -19071,6 +19071,16 @@
 				"ru": "Отключить сообщение 'Батарея Мобильного^музыкальн.^коплекта разряжена!'",
 				"en": "Disable message 'Battery level of the Mobile Soundset is low!'"
 			}
+		},
+		"10806": {
+			"id": 10806,
+			"model": "S75v52",
+			"file": "S75v52/10806-change_animation_speed_in_nm.vkp",
+			"mtime": 1713551770000,
+			"title": {
+				"ru": "Изменить скорость анимации в Native Menu",
+				"en": "Change animation speed in Native Menu"
+			}
 		}
 	},
 	"SL75v31": {
