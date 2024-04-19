@@ -19051,6 +19051,16 @@
 				"ru": "Исправить позицию активного элемента в Native Menu",
 				"en": "Fix the active item position in Native Menu"
 			}
+		},
+		"10804": {
+			"id": "10804",
+			"model": "S75v52",
+			"file": "S75v52/add_icons_to_header_in_nm.vkp",
+			"mtime": 1713435930000,
+			"title": {
+				"ru": "Добавить иконки в заголовок Native Menu",
+				"en": "Add icons to header in Native Menu"
+			}
 		}
 	},
 	"SL75v31": {

@@ -1,0 +1,27 @@
+;S75v52
+;Добавить иконки в заголовок Native Menu
+;Add icons to header in Native Menu
+;(c) FIL
+;Version: 
+;PatchID: 10804
+;Details: https://patches.kibab.com/patches/details.php5?id=10804
+/*
+
+*/
+0A19FCA: FEF76AF8 83F2C1FC
+#pragma enable old_equal_ff
+0C9D950: F8B50C4B050098470B4B0221280098470600041E0CD0094F0820B84700233A000360436004000100054B3000054EB0472C61F8BDA380A1A04587A1A05C4B09A0484909A05FE1A1A0
+#pragma disable old_equal_ff
+
+0A19C0E: FFF79FFE 83F2C4FE
+#pragma enable old_equal_ff
+0C9D99A: 000010B5064B040098472269002A05D0E16A034BCB5C03495B18136010BD5199A1A0C0D9C9A03E03000004020703090B060801050A0C
+#pragma disable old_equal_ff
+
+0A1A00A: 64F73CFA 83F2E1FC
+#pragma enable old_equal_ff
+0C9D9D0: 70B5040000690D00002801D0034B98472900034B2000984770BDC046484909A087E497A0
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+
