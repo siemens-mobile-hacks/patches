@@ -19061,6 +19061,16 @@
 				"ru": "Добавить иконки в заголовок Native Menu",
 				"en": "Add icons to header in Native Menu"
 			}
+		},
+		"10805": {
+			"id": 10805,
+			"model": "S75v52",
+			"file": "S75v52/10805-disable_message_bat_lvl_is_low.vkp",
+			"mtime": 1713541984000,
+			"title": {
+				"ru": "Отключить сообщение 'Батарея Мобильного^музыкальн.^коплекта разряжена!'",
+				"en": "Disable message 'Battery level of the Mobile Soundset is low!'"
+			}
 		}
 	},
 	"SL75v31": {
