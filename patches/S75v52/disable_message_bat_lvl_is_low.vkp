@@ -1,0 +1,14 @@
+;S75v52
+;Отключить сообщение 'Батарея Мобильного^музыкальн.^коплекта разряжена!'
+;Disable message 'Battery level of the Mobile Soundset is low!'
+;(c) FIL
+;Version: 
+;PatchID: 10805
+;Details: https://patches.kibab.com/patches/details.php5?id=10805
+/*
+
+*/
+02FC70E: F2F020E9 C046C046
+
+;------------------------- end -------------------------
+

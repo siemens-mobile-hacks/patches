@@ -1,0 +1,14 @@
+;S75v52
+;Отключить сообщения 'Мобильный музыкаль-ный комплект подключен.', Мобильный музыкаль-ный комплект отключен.'
+;Disable messages 'Mobile soundset connected.', 'Mobile soundset disconnect..'
+;(c) FIL
+;Version: 
+;PatchID: 10808
+;Details: https://patches.kibab.com/patches/details.php5?id=10808
+/*
+
+*/
+02FC77E: EFF040EF 0020C046 ; Mobile soundset connected.
+02FC7BA: EFF022EF 0020C046 ; Mobile soundset disconnect..
+;------------------------- end -------------------------
+

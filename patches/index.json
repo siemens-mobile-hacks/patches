@@ -19061,6 +19061,36 @@
 				"ru": "Добавить иконки в заголовок Native Menu",
 				"en": "Add icons to header in Native Menu"
 			}
+		},
+		"10805": {
+			"id": "10805",
+			"model": "S75v52",
+			"file": "S75v52/disable_message_bat_lvl_is_low.vkp",
+			"mtime": 1713541984000,
+			"title": {
+				"ru": "Отключить сообщение 'Батарея Мобильного^музыкальн.^коплекта разряжена!'",
+				"en": "Disable message 'Battery level of the Mobile Soundset is low!'"
+			}
+		},
+		"10806": {
+			"id": "10806",
+			"model": "S75v52",
+			"file": "S75v52/change_animation_speed_in_nm.vkp",
+			"mtime": 1713551770000,
+			"title": {
+				"ru": "Изменить скорость анимации в Native Menu",
+				"en": "Change animation speed in Native Menu"
+			}
+		},
+		"10808": {
+			"id": "10808",
+			"model": "S75v52",
+			"file": "S75v52/disable_messages_ims_700.vkp",
+			"mtime": 1713553436000,
+			"title": {
+				"ru": "Отключить сообщения 'Мобильный музыкаль-ный комплект подключен.', Мобильный музыкаль-ный комплект отключен.'",
+				"en": "Disable messages 'Mobile soundset connected.', 'Mobile soundset disconnect..'"
+			}
 		}
 	},
 	"SL75v31": {
@@ -92840,6 +92870,16 @@
 			"title": {
 				"ru": "Отключить отрисовку номера текущего элемента в Native Menu",
 				"en": "Disable drawing the number of a current item in Native Menu"
+			}
+		},
+		"10807": {
+			"id": "10807",
+			"model": "E71v45",
+			"file": "E71v45/change_animation_speed_in_nm.vkp",
+			"mtime": 1713552014000,
+			"title": {
+				"ru": "Изменить скорость анимации в Native Menu",
+				"en": "Change animation speed in Native Menu"
 			}
 		}
 	},
