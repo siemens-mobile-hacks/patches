@@ -92871,6 +92871,16 @@
 				"ru": "Убрать пикофф при запуске календаря по центру джоя в органайзере в нативном меню с включенным оверлеем",
 				"en": "Remove pickoff in \"Native menu\"->\"Organiser\"->\"Calendar\" when pressing NAVI_CENTER with overlay info"
 			}
+		},
+		"10811": {
+			"id": 10811,
+			"model": "E71v45",
+			"file": "E71v45/10811-enable_transparent_in_themes.vkp",
+			"mtime": 1713716798000,
+			"title": {
+				"ru": "Включить прозрачность в темах",
+				"en": "Enable transparent in themes"
+			}
 		}
 	},
 	"C81v51": {
