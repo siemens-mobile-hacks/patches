@@ -92851,6 +92851,16 @@
 				"ru": "Изменить скорость анимации в Native Menu",
 				"en": "Change animation speed in Native Menu"
 			}
+		},
+		"10809": {
+			"id": 10809,
+			"model": "E71v45",
+			"file": "E71v45/10809-fix_pickoff_in_nm_organiser_cal_v2.vkp",
+			"mtime": 1713677324000,
+			"title": {
+				"ru": "Убрать пикофф при запуске календаря по центру джоя в органайзере в нативном меню с включенным оверлеем",
+				"en": "Remove pickoff in \"Native menu\"->\"Organiser\"->\"Calendar\" when pressing NAVI_CENTER with overlay info"
+			}
 		}
 	},
 	"C81v51": {
