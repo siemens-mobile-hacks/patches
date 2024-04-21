@@ -19091,6 +19091,16 @@
 				"ru": "Отключить сообщения 'Мобильный музыкаль-ный комплект подключен.', 'Мобильный музыкаль-ный комплект отключен.'",
 				"en": "Disable messages 'Mobile soundset connected.', 'Mobile soundset disconnect..'"
 			}
+		},
+		"10810": {
+			"id": 10810,
+			"model": "S75v52",
+			"file": "S75v52/10810-fix_pickoff_in_nm_organiser_cal_v2.vkp",
+			"mtime": 1713677538000,
+			"title": {
+				"ru": "Убрать пикофф при запуске календаря по центру джоя в органайзере в нативном меню с включенным оверлеем",
+				"en": "Remove pickoff in \"Native menu\"->\"Organiser\"->\"Calendar\" when pressing NAVI_CENTER with overlay info"
+			}
 		}
 	},
 	"SL75v31": {
