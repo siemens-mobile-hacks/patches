@@ -92931,6 +92931,16 @@
 				"ru": "Добавить иконки в заголовок Native Menu",
 				"en": "Add icons to header in Native Menu"
 			}
+		},
+		"10814": {
+			"id": 10814,
+			"model": "E71v45",
+			"file": "E71v45/10814-default_icons_addon_to_nmfp.vkp",
+			"mtime": 1713791482000,
+			"title": {
+				"ru": "Дополнение \"Стандартные иконки\" для \"Пакет исправлений Native Menu\"",
+				"en": "Addon \"Default icons\" to \"Native Menu Fix Pack\""
+			}
 		}
 	},
 	"C81v51": {
