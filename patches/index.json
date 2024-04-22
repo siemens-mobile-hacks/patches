@@ -92911,6 +92911,16 @@
 				"ru": "Включить прозрачность в темах",
 				"en": "Enable transparent in themes"
 			}
+		},
+		"10812": {
+			"id": 10812,
+			"model": "E71v45",
+			"file": "E71v45/10812-remove_icons_white_bg_in_nm_v2.vkp",
+			"mtime": 1713790876000,
+			"title": {
+				"ru": "Убрать белый фон у иконок в Native Menu",
+				"en": "Remove icons white background in Native Menu"
+			}
 		}
 	},
 	"C81v51": {
