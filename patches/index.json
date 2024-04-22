@@ -19035,8 +19035,8 @@
 		"10790": {
 			"id": "10790",
 			"model": "S75v52",
-			"file": "S75v52/NMFP_v3_1.vkp",
-			"mtime": 1713128786000,
+			"file": "S75v52/NMFP_v3_2.vkp",
+			"mtime": 1713691688000,
 			"title": {
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
@@ -19055,8 +19055,8 @@
 		"10804": {
 			"id": "10804",
 			"model": "S75v52",
-			"file": "S75v52/add_icons_to_header_in_nm.vkp",
-			"mtime": 1713435930000,
+			"file": "S75v52/add_icons_to_header_in_nm_v1_1.vkp",
+			"mtime": 1713691610000,
 			"title": {
 				"ru": "Добавить иконки в заголовок Native Menu",
 				"en": "Add icons to header in Native Menu"
@@ -19088,8 +19088,18 @@
 			"file": "S75v52/disable_messages_ims_700.vkp",
 			"mtime": 1713553436000,
 			"title": {
-				"ru": "Отключить сообщения 'Мобильный музыкаль-ный комплект подключен.', Мобильный музыкаль-ный комплект отключен.'",
+				"ru": "Отключить сообщения 'Мобильный музыкаль-ный комплект подключен.', 'Мобильный музыкаль-ный комплект отключен.'",
 				"en": "Disable messages 'Mobile soundset connected.', 'Mobile soundset disconnect..'"
+			}
+		},
+		"10810": {
+			"id": "10810",
+			"model": "S75v52",
+			"file": "S75v52/fix_pickoff_in_nm_organiser_cal_v2.vkp",
+			"mtime": 1713677538000,
+			"title": {
+				"ru": "Убрать пикофф при запуске календаря по центру джоя в органайзере в нативном меню с включенным оверлеем",
+				"en": "Remove pickoff in \"Native menu\"->\"Organiser\"->\"Calendar\" when pressing NAVI_CENTER with overlay info"
 			}
 		}
 	},
@@ -92880,6 +92890,26 @@
 			"title": {
 				"ru": "Изменить скорость анимации в Native Menu",
 				"en": "Change animation speed in Native Menu"
+			}
+		},
+		"10809": {
+			"id": "10809",
+			"model": "E71v45",
+			"file": "E71v45/fix_pickoff_in_nm_organiser_cal_v2.vkp",
+			"mtime": 1713677324000,
+			"title": {
+				"ru": "Убрать пикофф при запуске календаря по центру джоя в органайзере в нативном меню с включенным оверлеем",
+				"en": "Remove pickoff in \"Native menu\"->\"Organiser\"->\"Calendar\" when pressing NAVI_CENTER with overlay info"
+			}
+		},
+		"10811": {
+			"id": "10811",
+			"model": "E71v45",
+			"file": "E71v45/enable_transparent_in_themes.vkp",
+			"mtime": 1713716798000,
+			"title": {
+				"ru": "Включить прозрачность в темах",
+				"en": "Enable transparent in themes"
 			}
 		}
 	},

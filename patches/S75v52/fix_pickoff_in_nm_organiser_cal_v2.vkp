@@ -1,0 +1,18 @@
+;S75v52
+;Убрать пикофф при запуске календаря по центру джоя в органайзере в нативном меню с включенным оверлеем
+;Remove pickoff in "Native menu"->"Organiser"->"Calendar" when pressing NAVI_CENTER with overlay info
+;(c) Evgr
+;(p) Виктор89
+;Version: 2
+;PatchID: 10810
+;Details: https://patches.kibab.com/patches/details.php5?id=10810
+/*
+
+*/
++29244
+0952E0E: 10 11
+0952E54: 10 11 
+0952E30: 10 11
++0
+;------------------------- end -------------------------
+
