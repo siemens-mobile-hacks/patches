@@ -92941,6 +92941,16 @@
 				"ru": "Дополнение \"Стандартные иконки\" для \"Пакет исправлений Native Menu\"",
 				"en": "Addon \"Default icons\" to \"Native Menu Fix Pack\""
 			}
+		},
+		"10815": {
+			"id": 10815,
+			"model": "E71v45",
+			"file": "E71v45/10815-change_animation_frames_in_nm.vkp",
+			"mtime": 1713885650000,
+			"title": {
+				"ru": "Изменить кадры анимации в Native Menu",
+				"en": "Change animation frames in Native Menu"
+			}
 		}
 	},
 	"C81v51": {
