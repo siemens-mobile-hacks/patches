@@ -92951,6 +92951,16 @@
 				"ru": "Изменить кадры анимации в Native Menu",
 				"en": "Change animation frames in Native Menu"
 			}
+		},
+		"10816": {
+			"id": 10816,
+			"model": "E71v45",
+			"file": "E71v45/10816-diable_bg_in_audio_setup_ui.vkp",
+			"mtime": 1713899278000,
+			"title": {
+				"ru": "Отключить фон в интерфейсе настройки громкости",
+				"en": "Disable background in Audio Setup UI"
+			}
 		}
 	},
 	"C81v51": {
