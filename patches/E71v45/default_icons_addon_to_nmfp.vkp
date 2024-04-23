@@ -1,0 +1,63 @@
+;E71v45
+;Дополнение "Стандартные иконки" для "Пакет исправлений Native Menu"
+;Addon "Default icons" to "Native Menu Fix Pack"
+;(c) DJ, BingK(binghelingxi), SiNgle
+;Version: 
+;PatchID: 10814
+;Details: https://patches.kibab.com/patches/details.php5?id=10814
+/*
+Дополнение для использования стандартных иконок в Native Menu.
+*/
+;№1
+;Исправление анимации в Native Menu
+;Fix animation in Native Menu
+;(c) DJ
+-A3F8
+873CFC: 01 00
+873D38: 01 00
+873D5C: 01 00
+873D80: 01 00
+873DAC: 01 00
+873DDC: 01 00
+873E04: 01 00
+873E38: 01 00
+873E68: 01 00
+873E9C: 01 00
+873ED0: 01 00
+873EF8: 01 00
++0
+
+;№2
+;Исправление позиции иконок и фона
+;Native Menu fix. Fix icon position and backgroud position
+;(c) BingK(binghelingxi)
+;(p) snoopyhzy
+
+;TRA_NMENU_ICON_PBG_HOOK
+0x00A22460: 616A80000E58201C 0049884741CC35A1
+;TRA_NMENU_ICON_PBG_BODY
+#pragma enable old_equal_ff
+0x0135CC40: 616A80000E58201C25498E4244D34D31
+0x0135CC50: 8E4241D81FB42368002B37D018880428
+0x0135CC60: 01D1012106E0512801D14E2102E09E28
+0x0135CC70: 2CD19A2119805431042299520222985A
+0x0135CC80: 3F2801D139211BE0762801D1642117E0
+0x0135CC90: AD2801D19E2113E0E42801D1CC210FE0
+0x0135CCA0: 412801D13C2110E0782801D176210CE0
+0x0135CCB0: AF2801D1B02108E0E62807D1EA2104E0
+0x0135CCC0: 99525431121D995200E0995220699D28
+0x0135CCD0: 01D1172020611FBC7146091D08470000
+0x0135CCE0: 69030000
+#pragma disable old_equal_ff
+
+;№3
+;Убрать белый фон у иконок в Native Menu
+;Remove Icons White Background in Native Menu
+;(c) SiNgle
+;(p) sempai
+
+0A24462: 00 FF
+0A24506: E7F7DEFE 00280028
+
+;------------------------- end -------------------------
+

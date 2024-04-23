@@ -1,0 +1,20 @@
+;E71v45
+;Включить перемещение по пунктам нативного меню по длиному нажатию джоя влево/вправо
+;Enable native menu items navigation by left/right navy key long press 
+;(c) Evgr
+;Version: 
+;PatchID: 10803
+;Details: https://patches.kibab.com/patches/details.php5?id=10803
+/*
+
+*/
+0A2453C: 251C271CB0378035 004DA847,0xA14112D1
+
+#pragma enable old_equal_ff
+14112D0: 00B5251C271CB03780352C2801D12720
+14112E0: 02E02D2800D12820784700000040BDE8
+14112F0: 04E08EE21EFF2FE1
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

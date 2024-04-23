@@ -27609,7 +27609,7 @@
 		"E71v45/dis_wait_BT.vkp"
 	],
 	[
-		"E71v45/NMFP_v3_1.vkp"
+		"E71v45/NMFP_v3_2.vkp"
 	],
 	[
 		"E71v45/Enable_RTSP.vkp"
@@ -30890,15 +30890,21 @@
 	[
 		"CX75v25/fix_active_item_position_in_nm.vkp"
 	],
-	null,
+	[
+		"E71v45/fix_active_item_position_in_nm.vkp"
+	],
 	[
 		"S68v52/fix_active_item_position_in_nm.vkp"
 	],
 	[
 		"C81v51/fix_active_item_position_in_nm.vkp"
 	],
-	null,
-	null,
+	[
+		"E71v45/fix_navigation_in_nm.vkp"
+	],
+	[
+		"E71v45/fix_long_press_navigation_in_nm.vkp"
+	],
 	[
 		"S75v52/add_icons_to_header_in_nm_v1_1.vkp"
 	],
@@ -30922,5 +30928,14 @@
 	],
 	[
 		"E71v45/enable_transparent_in_themes.vkp"
+	],
+	[
+		"E71v45/remove_icons_white_bg_in_nm_v2.vkp"
+	],
+	[
+		"E71v45/add_icons_to_header_in_nm_v1_1.vkp"
+	],
+	[
+		"E71v45/default_icons_addon_to_nmfp.vkp"
 	]
 ]

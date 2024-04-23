@@ -1,0 +1,17 @@
+;E71v45
+;Исправить навигацию по пунктам нативного меню
+;Fix native menu items navigation
+;(c) Evgr
+;Version: 
+;PatchID: 10802
+;Details: https://patches.kibab.com/patches/details.php5?id=10802
+/*
+
+*/
+0A24754: 1ED1 C046 ; navi down
+0A246AE: 71D1 C046 ; navi up
+0A24610: E4DB 4EDB ; navi left
+0A247EA: 99D0 B4D0 ; navi right
+
+;------------------------- end -------------------------
+

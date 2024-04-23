@@ -91346,8 +91346,8 @@
 		"9682": {
 			"id": "9682",
 			"model": "E71v45",
-			"file": "E71v45/NMFP_v3_1.vkp",
-			"mtime": 1713164814000,
+			"file": "E71v45/NMFP_v3_2.vkp",
+			"mtime": 1713791830000,
 			"title": {
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
@@ -92882,6 +92882,36 @@
 				"en": "Disable drawing the number of a current item in Native Menu"
 			}
 		},
+		"10799": {
+			"id": "10799",
+			"model": "E71v45",
+			"file": "E71v45/fix_active_item_position_in_nm.vkp",
+			"mtime": 1713162124000,
+			"title": {
+				"ru": "Исправить позицию активного элемента в Native Menu",
+				"en": "Fix the active item position in Native Menu"
+			}
+		},
+		"10802": {
+			"id": "10802",
+			"model": "E71v45",
+			"file": "E71v45/fix_navigation_in_nm.vkp",
+			"mtime": 1713163724000,
+			"title": {
+				"ru": "Исправить навигацию по пунктам нативного меню",
+				"en": "Fix native menu items navigation"
+			}
+		},
+		"10803": {
+			"id": "10803",
+			"model": "E71v45",
+			"file": "E71v45/fix_long_press_navigation_in_nm.vkp",
+			"mtime": 1713163834000,
+			"title": {
+				"ru": "Включить перемещение по пунктам нативного меню по длиному нажатию джоя влево/вправо",
+				"en": "Enable native menu items navigation by left/right navy key long press"
+			}
+		},
 		"10807": {
 			"id": "10807",
 			"model": "E71v45",
@@ -92910,6 +92940,36 @@
 			"title": {
 				"ru": "Включить прозрачность в темах",
 				"en": "Enable transparent in themes"
+			}
+		},
+		"10812": {
+			"id": "10812",
+			"model": "E71v45",
+			"file": "E71v45/remove_icons_white_bg_in_nm_v2.vkp",
+			"mtime": 1713790876000,
+			"title": {
+				"ru": "Убрать белый фон у иконок в Native Menu",
+				"en": "Remove icons white background in Native Menu"
+			}
+		},
+		"10813": {
+			"id": "10813",
+			"model": "E71v45",
+			"file": "E71v45/add_icons_to_header_in_nm_v1_1.vkp",
+			"mtime": 1713791094000,
+			"title": {
+				"ru": "Добавить иконки в заголовок Native Menu",
+				"en": "Add icons to header in Native Menu"
+			}
+		},
+		"10814": {
+			"id": "10814",
+			"model": "E71v45",
+			"file": "E71v45/default_icons_addon_to_nmfp.vkp",
+			"mtime": 1713791482000,
+			"title": {
+				"ru": "Дополнение \"Стандартные иконки\" для \"Пакет исправлений Native Menu\"",
+				"en": "Addon \"Default icons\" to \"Native Menu Fix Pack\""
 			}
 		}
 	},

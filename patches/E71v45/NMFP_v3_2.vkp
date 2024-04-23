@@ -1,8 +1,8 @@
 ;E71v45
 ;Пакет исправлений Native Menu
 ;Native Menu Fix Pack
-;(c) caine, DJ, Zhek@, Miha_r, BingK, SiNgle, Evgr, FIL
-;Version: 3.1
+;(c) caine, Zhek@, Miha_r, BingK, SiNgle, Evgr, FIL
+;Version: 3.2
 ;PatchID: 9682
 ;Details: https://patches.kibab.com/patches/details.php5?id=9682
 /*
@@ -24,25 +24,6 @@
 0883604: 08 00
 
 ;№2
-;Исправление анимации в Native Menu
-;Fix animation in Native Menu
-;(c) DJ
--A3F8
-873CFC: 01 00
-873D38: 01 00
-873D5C: 01 00
-873D80: 01 00
-873DAC: 01 00
-873DDC: 01 00
-873E04: 01 00
-873E38: 01 00
-873E68: 01 00
-873E9C: 01 00
-873ED0: 01 00
-873EF8: 01 00
-+0
-
-;№5
 ;Замена будильника на радио в натив меню
 ;Change alarmclock to radio in native menu
 ;(c) Zhek@
@@ -55,14 +36,14 @@
 8699B0: 7A03 9303
 869860: 850100 D31401
 
-;№4
+;№3
 ;Исправление ошибок Native Menu: архив сообщений
 ;Fix native menu: enable msg archive
 ;(c) Miha_r
 
 88F808: E9D87AA0 D77F6EA0
 
-;№5
+;№4
 ;Исправление в нативном меню Сообщения-Настройки
 ;Fix SMS setting Menu in Native Menu
 ;(c) BingK(binghelingxi)
@@ -72,7 +53,7 @@
 07AE1FE: 30 18
 07AE100: D6 F2
 
-;№6
+;№5
 ;Исправить запуск Таймера в Native Menu
 ;Fix timer in Native Menu
 ;(c) caine
@@ -81,7 +62,7 @@
 
 08833B0: 674D77 39836E
 
-;№7
+;№6
 ;Исправление кнопок
 ;Native Menu Key Fix
 ;(c) BingK(binghelingxi)
@@ -105,30 +86,7 @@
 0x0135CD30: 1047
 #pragma disable old_equal_ff
 
-;№8
-;Исправление позиции иконок и фона
-;Native Menu fix. Fix icon position and backgroud position
-;(c) BingK(binghelingxi)
-;(p) snoopyhzy
-
-;TRA_NMENU_ICON_PBG_HOOK
-0x00A22460: 616A80000E58201C 0049884741CC35A1
-;TRA_NMENU_ICON_PBG_BODY
-#pragma enable old_equal_ff
-0x0135CC40: 616A80000E58201C25498E4244D34D31
-0x0135CC50: 8E4241D81FB42368002B37D018880428
-0x0135CC60: 01D1012106E0512801D14E2102E09E28
-0x0135CC70: 2CD19A2119805431042299520222985A
-0x0135CC80: 3F2801D139211BE0762801D1642117E0
-0x0135CC90: AD2801D19E2113E0E42801D1CC210FE0
-0x0135CCA0: 412801D13C2110E0782801D176210CE0
-0x0135CCB0: AF2801D1B02108E0E62807D1EA2104E0
-0x0135CCC0: 99525431121D995200E0995220699D28
-0x0135CCD0: 01D1172020611FBC7146091D08470000
-0x0135CCE0: 69030000
-#pragma disable old_equal_ff
-
-;№9
+;№7
 ;Исправление в нативном меню Настройки-Часы-Показ. часы-Вкл./Выкл.
 ;Show clock on/off fix in Native Menu
 ;(c) BingK(binghelingxi)
@@ -143,7 +101,7 @@
 0061660: 65405CA0DF206FA037405CA0F3206FA0
 #pragma disable old_equal_ff
 
-;№10
+;№8
 ;Добавить будильник в органайзер Native Menu
 ;Add alarm in Organiser in Native Menu
 ;(c) BingK(binghelingxi)
@@ -186,22 +144,13 @@
 008A7F54: 04080000 AE030000
 -0
 
-;№11
-;Убрать белый фон у иконок в Native Menu
-;Remove Icons White Background in Native Menu
-;(c) SiNgle
-;(p) sempai
-
-0A24462: 00 FF
-0A24506: E7F7DEFE 00280028
-
-;№12
+;№9
 ;Native Menu вместо Главного при разговоре
 ;Native Menu instead of Flex-Menu in conversation options
 ;(c) Zhek@
 86C8B8: FDDE6FA0 7BB063A0
 
-;№13
+;№10
 ;Native Menu вместо главного меню
 ;Native Menu instead of Main Menu
 ;(c) 42Gzb
@@ -222,7 +171,7 @@
 64: 987DA0A0B07DA0A0 0000000000000000
 +0
 
-;№14
+;№11
 ;Исправить навигацию по пунктам нативного меню
 ;Fix native menu items navigation
 ;(c) Evgr
@@ -231,7 +180,7 @@
 0A24610: E4DB 4EDB ; navi left
 0A247EA: 99D0 B4D0 ; navi right
 
-;№15
+;№12
 ;Включить перемещение по пунктам нативного меню по длиному нажатию джоя влево/вправо
 ;Enable native menu items navigation by left/right navy key long press 
 ;(c) Evgr
@@ -243,19 +192,46 @@
 14112F0: 04E08EE21EFF2FE1
 #pragma disable old_equal_ff
 
-;№16
+;№13
 ;Отключить отрисовку номера текущего элемента в Native Menu
 ;Disable drawing the number of a current item in Native Menu
 ;(c) FIL
 ;(p) Виктор89
 0A23BF6: E9F118ED C046C046
 
-;№17
+;№14
 ;Исправить позицию активного элемента в Native Menu 
 ;Fix the active item position in Native Menu
 ;(c) FIL
 ;(p) Виктор89
 0A241EA: 00 FF
+
+;№15
+;Убрать пикофф при запуске календаря по центру джоя в органайзере в нативном меню с включенным оверлеем
+;Remove pickoff in "Native menu"->"Organiser"->"Calendar" when pressing NAVI_CENTER with overlay info
+;(c) Evgr
+;Version: 2
+0952E0E: 10 11
+0952E54: 10 11 
+0952E30: 10 11
+
+;№16
+;Добавить иконки в заголовок Native Menu
+;Add icons to header in Native Menu
+;(c) FIL
+;(p) Виктор89
+;Version: 1.1
+0A2420E: FDF7C2FF 7AF2F1FD
+
+0C9EDF4: 746865207472616E73666F726D6174696F6E206D61747269782063616E6E6F7420626520636F6D70757465642064756520746F20696C6C6567616C207065727370656374697665206F7220706172616C F8B50D4B050098470C4B0221280098470600041E0DD00A4F0820B847094B3A0003600023436004000100074B3000074EB0472C61F8BDC0469721A2A03928A2A0512F09A065030000932F09A0F783A2A0
+
+0A23E52: FFF79FFE 7BF211F8
+0C9EE78: 6368696C6420697320612067726F75702C206973206120776F726C64206E6F64652C20616C726561647920686173206120706172 10B5074B040098472269002A06D0E16A044BCB5CD72189005B18136010BDC046953BA2A09CEEC9A003010702090B060805040A0C
+
+0A2424E: 31F786F8 7AF273FE
+0C9EF38: 616E79204D65736820746861742069732074657374656420666F7220696E746572736563 70B5040000690D00002801D0034B98472900034B2000984770BDC046932F09A05F5395A0
+
+
 
 
 ;------------------------- end -------------------------
