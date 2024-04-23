@@ -5146,6 +5146,16 @@
 				"ru": "Загрузочный экран Siemens Mobile Black",
 				"en": "Bootscreen Siemens Mobile Black"
 			}
+		},
+		"10819": {
+			"id": 10819,
+			"model": "EL71v45",
+			"file": "EL71v45/10819-diable_bg_in_audio_setup_ui.vkp",
+			"mtime": 1713905436000,
+			"title": {
+				"ru": "Отключить фон в интерфейсе настройки громкости",
+				"en": "Disable background in Audio Setup UI"
+			}
 		}
 	},
 	"S75v20": {
