@@ -19101,6 +19101,16 @@
 				"ru": "Убрать пикофф при запуске календаря по центру джоя в органайзере в нативном меню с включенным оверлеем",
 				"en": "Remove pickoff in \"Native menu\"->\"Organiser\"->\"Calendar\" when pressing NAVI_CENTER with overlay info"
 			}
+		},
+		"10817": {
+			"id": 10817,
+			"model": "S75v52",
+			"file": "S75v52/10817-diable_bg_in_audio_setup_ui.vkp",
+			"mtime": 1713905304000,
+			"title": {
+				"ru": "Отключить фон в интерфейсе настройки громкости",
+				"en": "Disable background in Audio Setup UI"
+			}
 		}
 	},
 	"SL75v31": {
