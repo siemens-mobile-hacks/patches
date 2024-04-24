@@ -1,0 +1,17 @@
+;S75v52
+;Отключить фон в интерфейсе настройки громкости
+;Disable background in Audio Setup UI
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10817
+;Details: https://patches.kibab.com/patches/details.php5?id=10817
+/*
+
+*/
++43892C
+0: 64 17
+4: 65 17
++0
+;------------------------- end -------------------------
+

@@ -1,0 +1,17 @@
+;EL71v45
+;Отключить фон в интерфейсе настройки громкости
+;Disable background in Audio Setup UI
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10819
+;Details: https://patches.kibab.com/patches/details.php5?id=10819
+/*
+
+*/
++8762B4
+0: 64 17
+4: 65 17
++0
+;------------------------- end -------------------------
+

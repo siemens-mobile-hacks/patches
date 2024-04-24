@@ -5146,6 +5146,16 @@
 				"ru": "Загрузочный экран Siemens Mobile Black",
 				"en": "Bootscreen Siemens Mobile Black"
 			}
+		},
+		"10819": {
+			"id": "10819",
+			"model": "EL71v45",
+			"file": "EL71v45/diable_bg_in_audio_setup_ui.vkp",
+			"mtime": 1713905436000,
+			"title": {
+				"ru": "Отключить фон в интерфейсе настройки громкости",
+				"en": "Disable background in Audio Setup UI"
+			}
 		}
 	},
 	"S75v20": {
@@ -19100,6 +19110,26 @@
 			"title": {
 				"ru": "Убрать пикофф при запуске календаря по центру джоя в органайзере в нативном меню с включенным оверлеем",
 				"en": "Remove pickoff in \"Native menu\"->\"Organiser\"->\"Calendar\" when pressing NAVI_CENTER with overlay info"
+			}
+		},
+		"10817": {
+			"id": "10817",
+			"model": "S75v52",
+			"file": "S75v52/diable_bg_in_audio_setup_ui.vkp",
+			"mtime": 1713905304000,
+			"title": {
+				"ru": "Отключить фон в интерфейсе настройки громкости",
+				"en": "Disable background in Audio Setup UI"
+			}
+		},
+		"10821": {
+			"id": "10821",
+			"model": "S75v52",
+			"file": "S75v52/VolumeBar_fix.vkp",
+			"mtime": 1713906636000,
+			"title": {
+				"ru": "Корректное отображение иконок экрана громкости",
+				"en": "Fix view icons volumebar"
 			}
 		}
 	},
@@ -92935,8 +92965,8 @@
 		"10811": {
 			"id": "10811",
 			"model": "E71v45",
-			"file": "E71v45/enable_transparent_in_themes.vkp",
-			"mtime": 1713716798000,
+			"file": "E71v45/enable_transparent_in_themes_v1_1.vkp",
+			"mtime": 1713893918000,
 			"title": {
 				"ru": "Включить прозрачность в темах",
 				"en": "Enable transparent in themes"
@@ -92970,6 +93000,26 @@
 			"title": {
 				"ru": "Дополнение \"Стандартные иконки\" для \"Пакет исправлений Native Menu\"",
 				"en": "Addon \"Default icons\" to \"Native Menu Fix Pack\""
+			}
+		},
+		"10815": {
+			"id": "10815",
+			"model": "E71v45",
+			"file": "E71v45/change_animation_frames_in_nm.vkp",
+			"mtime": 1713885650000,
+			"title": {
+				"ru": "Изменить кадры анимации в Native Menu",
+				"en": "Change animation frames in Native Menu"
+			}
+		},
+		"10816": {
+			"id": "10816",
+			"model": "E71v45",
+			"file": "E71v45/diable_bg_in_audio_setup_ui.vkp",
+			"mtime": 1713899278000,
+			"title": {
+				"ru": "Отключить фон в интерфейсе настройки громкости",
+				"en": "Disable background in Audio Setup UI"
 			}
 		}
 	},
@@ -95608,6 +95658,16 @@
 				"ru": "Исправить позицию активного элемента в Native Menu",
 				"en": "Fix the active item position in Native Menu"
 			}
+		},
+		"10820": {
+			"id": "10820",
+			"model": "C81v51",
+			"file": "C81v51/diable_bg_in_audio_setup_ui.vkp",
+			"mtime": 1713905492000,
+			"title": {
+				"ru": "Отключить фон в интерфейсе настройки громкости",
+				"en": "Disable background in Audio Setup UI"
+			}
 		}
 	},
 	"C81v38": {
@@ -97074,6 +97134,16 @@
 			"title": {
 				"ru": "Исправить позицию активного элемента в Native Menu",
 				"en": "Fix the active item position in Native Menu"
+			}
+		},
+		"10818": {
+			"id": "10818",
+			"model": "S68v52",
+			"file": "S68v52/diable_bg_in_audio_setup_ui.vkp",
+			"mtime": 1713905378000,
+			"title": {
+				"ru": "Отключить фон в интерфейсе настройки громкости",
+				"en": "Disable background in Audio Setup UI"
 			}
 		}
 	},

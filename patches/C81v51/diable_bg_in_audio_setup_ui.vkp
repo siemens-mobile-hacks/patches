@@ -1,0 +1,17 @@
+;C81v51
+;Отключить фон в интерфейсе настройки громкости
+;Disable background in Audio Setup UI
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10820
+;Details: https://patches.kibab.com/patches/details.php5?id=10820
+/*
+
+*/
++444688
+0: 64 17
+4: 65 17
++0
+;------------------------- end -------------------------
+

@@ -1,0 +1,20 @@
+;E71v45
+;Включить прозрачность в темах
+;Enable transparent in themes
+;(c) FIL
+;(r) Виктор89
+;Version: 1.1
+;PatchID: 10811
+;Details: https://patches.kibab.com/patches/details.php5?id=10811
+/*
+
+*/
+073D37C: 0010A0E3 0810A0E1
+073D384: 2C3E16EB 9DE02EEB
+
+#pragma enable old_equal_ff
+12F5600: 003091E570402DE90050A0E10400D3E54C309FE50240A0E133FF2FE10420A0E140309FE50010A0E30060A0E10500A0E133FF2FE1004050E20700001A083046E20F0056E3020053130300008A18309FE50510A0E30500A0E133FF2FE10400A0E17080BDE8ECCC73A03CCCCCA070B4CCA0
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

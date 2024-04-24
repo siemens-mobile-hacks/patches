@@ -1,0 +1,17 @@
+;S68v52
+;Отключить фон в интерфейсе настройки громкости
+;Disable background in Audio Setup UI
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10818
+;Details: https://patches.kibab.com/patches/details.php5?id=10818
+/*
+
+*/
++406DF8
+0: 64 17
+4: 65 17
++0
+;------------------------- end -------------------------
+

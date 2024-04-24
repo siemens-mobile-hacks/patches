@@ -30927,7 +30927,7 @@
 		"S75v52/fix_pickoff_in_nm_organiser_cal_v2.vkp"
 	],
 	[
-		"E71v45/enable_transparent_in_themes.vkp"
+		"E71v45/enable_transparent_in_themes_v1_1.vkp"
 	],
 	[
 		"E71v45/remove_icons_white_bg_in_nm_v2.vkp"
@@ -30937,5 +30937,26 @@
 	],
 	[
 		"E71v45/default_icons_addon_to_nmfp.vkp"
+	],
+	[
+		"E71v45/change_animation_frames_in_nm.vkp"
+	],
+	[
+		"E71v45/diable_bg_in_audio_setup_ui.vkp"
+	],
+	[
+		"S75v52/diable_bg_in_audio_setup_ui.vkp"
+	],
+	[
+		"S68v52/diable_bg_in_audio_setup_ui.vkp"
+	],
+	[
+		"EL71v45/diable_bg_in_audio_setup_ui.vkp"
+	],
+	[
+		"C81v51/diable_bg_in_audio_setup_ui.vkp"
+	],
+	[
+		"S75v52/VolumeBar_fix.vkp"
 	]
 ]

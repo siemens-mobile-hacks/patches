@@ -1,0 +1,15 @@
+;E71v45
+;Отключить фон в интерфейсе настройки громкости
+;Disable background in Audio Setup UI
+;(c) FIL
+;Version: 
+;PatchID: 10816
+;Details: https://patches.kibab.com/patches/details.php5?id=10816
+/*
+
+*/
+086BEBC: 64 17
+086BEC0: 65 17
+
+;------------------------- end -------------------------
+
