@@ -1,14 +1,20 @@
 ;E71v45
+;Дополнение "Нестандартные иконки" для "Пакет исправлений Native Menu"
+;Addon "Custom icons" to "Native Menu Fix Pack"
+;(c) FIL, SiNgle, MAXIM
+;Version: 
+;PatchID: 10822
+;Details: https://patches.kibab.com/patches/details.php5?id=10822
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=e71v45&f=custom_icons_addon_to_nmfp.zip
+
+/*
+Пример иконок в архиве.
+*/
+;№1
 ;Изменить кадры анимации в Native Menu
 ;Change animation frames in Native Menu
 ;(c) FIL
-;(r) Marie
-;Version: 
 ;PatchID: 10815
-;Details: https://patches.kibab.com/patches/details.php5?id=10815
-/*
-Добавляет кадры анимации в Native Menu. Полностью перестает работать Flex Menu.
-*/
 ;CONTACTS
 ;08698F0: 8503 8503 ; 901
 ;08698F4: 8603 8603 ; 902
@@ -164,6 +170,20 @@
 0869B10: 0100 730F ; 3955
 0869B14: 0100 740F ; 3956
 ;0869B18: 00 00 ; end
+
+;E71v45
+;Убрать белый фон у иконок в Native Menu
+;Remove icons white background in Native Menu
+;(c) FIL, SiNgle
+;(p) Виктор89
+;Version: 2
+0A22468: FFF777FE C046C046
+
+0A24462: 00 FF
+0A244C2: E7F700FF 3EF22FFF
+0C63324: 4174206C65617374206F6E6520436F6E6669672F506F6C69637920706F6C6963792066696C6520696E207468652066696C6573797374656D2068617320612077726F6E672076657273696F6E206F72206973206F757464617465642E20506C656173652075706461746520796F75722066696C65 F0B591B003930400144B02200D00160098470399053C0531731D6A1F0091104E21003D3D070005A8B0473B0005A907A80C4E0022B0473B0005A907A800940022094C0195A0470022110007A8074B9847074B07A8984711B0F0BDC046956AA2A0A7CA94A01BC8A0A041C9A0A0E78494A0CB2D8DA0
+
+0A24506: E7F7DEFE 00280028
 
 ;------------------------- end -------------------------
 

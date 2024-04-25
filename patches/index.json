@@ -93021,6 +93021,17 @@
 				"ru": "Отключить фон в интерфейсе настройки громкости",
 				"en": "Disable background in Audio Setup UI"
 			}
+		},
+		"10822": {
+			"id": "10822",
+			"model": "E71v45",
+			"file": "E71v45/custom_icons_addon_to_nmfp.vkp",
+			"additionalFile": "E71v45/custom_icons_addon_to_nmfp.zip",
+			"mtime": 1713958250000,
+			"title": {
+				"ru": "Дополнение \"Нестандартные иконки\" для \"Пакет исправлений Native Menu\"",
+				"en": "Addon \"Custom icons\" to \"Native Menu Fix Pack\""
+			}
 		}
 	},
 	"C81v51": {
