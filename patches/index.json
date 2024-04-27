@@ -93032,6 +93032,16 @@
 				"ru": "Дополнение \"Нестандартные иконки\" для \"Пакет исправлений Native Menu\"",
 				"en": "Addon \"Custom icons\" to \"Native Menu Fix Pack\""
 			}
+		},
+		"10823": {
+			"id": "10823",
+			"model": "E71v45",
+			"file": "E71v45/change_dirs_of_theme_res.vkp",
+			"mtime": 1714152666000,
+			"title": {
+				"ru": "Изменить директории ресурсов темы",
+				"en": "Change directories of theme resources"
+			}
 		}
 	},
 	"C81v51": {
