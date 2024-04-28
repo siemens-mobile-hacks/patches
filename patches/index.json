@@ -93036,11 +93036,11 @@
 		"10823": {
 			"id": "10823",
 			"model": "E71v45",
-			"file": "E71v45/change_dirs_of_theme_res.vkp",
-			"mtime": 1714152666000,
+			"file": "E71v45/change_dirs_of_theme_res_v1_1.vkp",
+			"mtime": 1714250330000,
 			"title": {
-				"ru": "Изменить директории ресурсов темы",
-				"en": "Change directories of theme resources"
+				"ru": "Задать директорию ресурсов темы",
+				"en": "Set directory of theme resources"
 			}
 		}
 	},
