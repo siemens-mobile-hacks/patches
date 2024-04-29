@@ -46869,16 +46869,6 @@
 				"en": "Dynamic replacing of provider name"
 			}
 		},
-		"197": {
-			"id": 197,
-			"model": "CX65v50",
-			"file": "CX65v50/197-keypad_light_trigger.vkp",
-			"mtime": 1119556800000,
-			"title": {
-				"ru": "Переключатель режима подсветки клавиатуры",
-				"en": "Keypadlight trigger"
-			}
-		},
 		"221": {
 			"id": 221,
 			"model": "CX65v50",
