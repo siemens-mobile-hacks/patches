@@ -58330,16 +58330,6 @@
 				"en": "turn on by alarm clock"
 			}
 		},
-		"7538": {
-			"id": 7538,
-			"model": "SL65v53",
-			"file": "SL65v53/7538-IncFlex_instruction.vkp",
-			"mtime": 1179584890000,
-			"title": {
-				"ru": "IncFlex v1.0 (12.71MB)",
-				"en": "IncFlex v1.0 (12.71MB)"
-			}
-		},
 		"7837": {
 			"id": 7837,
 			"model": "SL65v53",
