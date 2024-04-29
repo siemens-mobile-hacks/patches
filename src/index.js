@@ -23,12 +23,14 @@ let [login, password] = process.env.KIBAB_TEST_USER.split(':');
 
 let api = new KibabAPI(login, password);
 let all_models = await api.getAllModels();
+let flag = false;
 for (let model of all_models) {
 	console.log(`[${model.name}]`);
 	fs.mkdirSync(`${OUT_DIR}/${model.name}`, { recursive: true });
 
-//	if (model.name != 'CF75v23')
-//		continue;
+	if (process.env.FROM_MODEL && model.name != process.env.FROM_MODEL && !flag)
+		continue;
+	flag = true;
 
 	let all_model_patches = await api.getAllPatches(model.modelId, model.swId);
 	let all_patches_ids = all_model_patches.map((p) => p.id);
@@ -62,8 +64,7 @@ async function downloadPatches(api, all_patches_ids, force_all) {
 		index_data = JSON.parse(fs.readFileSync(`${OUT_DIR}/index.json`));
 
 	let chunks = getChunks(all_patches_ids, 10);
-
-	if (chunks.length > 0)
+	if (chunks.length > 0 && chunks[0].length >= 5)
 		chunks.unshift([chunks[0].shift()]);
 
 	while (chunks.length > 0) {

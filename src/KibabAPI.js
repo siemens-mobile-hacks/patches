@@ -69,7 +69,7 @@ class KibabAPI {
 	}
 
 	async addToCart(patches_ids) {
-		let form = new FormData();
+		let form = new URLSearchParams();
 		form.append('action', 'add_multiple');
 
 		for (let id of patches_ids)
