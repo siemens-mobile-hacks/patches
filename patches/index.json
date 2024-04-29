@@ -68364,16 +68364,6 @@
 				"en": "T9 info in SMS -> language select"
 			}
 		},
-		"1541": {
-			"id": 1541,
-			"model": "M55v10",
-			"file": "M55v10/1541-full_date_in_calendar.vkp",
-			"mtime": 1140382800000,
-			"title": {
-				"ru": "Выводить в календаре дату полностью",
-				"en": "Show the full date in calendar"
-			}
-		},
 		"1542": {
 			"id": 1542,
 			"model": "M55v10",
