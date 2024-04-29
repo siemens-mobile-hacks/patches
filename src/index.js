@@ -44,14 +44,17 @@ async function garbageCollector(api) {
 				deletedIndex[p.model] = deletedIndex[p.model] || {};
 				deletedIndex[p.model] = patchInfo;
 
+				let newFileName = addPrefixToFile(patchInfo.file, `${patchInfo.id}-`);
 				console.log(`DELETE: #${patchInfo.id} ${patchInfo.file}`);
-
 				fs.mkdirSync(`${DELETED_DIR}/${p.model}`, { recursive: true });
-				child_process.spawnSync("git", ["mv", patchInfo.file, `${DELETED_DIR}/${patchInfo.file}`], { cwd: OUT_DIR });
+				child_process.spawnSync("git", ["mv", patchInfo.file, `${DELETED_DIR}/${newFileName}`], { cwd: OUT_DIR });
+				patchInfo.file = newFileName;
 
 				if (patchInfo.additionalFile) {
+					let newAdditionalFileName = addPrefixToFile(patchInfo.file, `${patchInfo.id}-`);
 					console.log(`DELETE: #${patchInfo.id} ${patchInfo.additionalFile}`);
-					child_process.spawnSync("git", ["mv", patchInfo.additionalFile, `${DELETED_DIR}/${patchInfo.additionalFile}`], { cwd: OUT_DIR });
+					child_process.spawnSync("git", ["mv", patchInfo.additionalFile, `${DELETED_DIR}/${newAdditionalFileName}`], { cwd: OUT_DIR });
+					patchInfo.additionalFile = newAdditionalFileName;
 				}
 
 				deletedCnt++;
@@ -62,6 +65,7 @@ async function garbageCollector(api) {
 	} while (deletedCnt > 0);
 
 	saveDeletedIndex(deletedIndex);
+	saveIndex(indexData);
 }
 
 async function syncPatches(api) {
@@ -325,4 +329,8 @@ function getChunks(arr, size) {
 		chunks.push(chunk);
 	}
 	return chunks;
+}
+
+function addPrefixToFile(file, prefix) {
+	return `${path.dirname(file)}/${prefix}${path.basename(file)}`;
 }
