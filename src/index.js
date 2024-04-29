@@ -9,7 +9,6 @@ import { KibabAPI } from './KibabAPI.js';
 // patches.kibab.com timezone
 process.env.TZ = 'Europe/Moscow'; // thanks Viktor89
 
-let TMP_DIR = `${import.meta.dirname}/../tmp`;
 let OUT_DIR = `${import.meta.dirname}/../patches`;
 
 if (!process.env.KIBAB_TEST_USER) {
@@ -17,14 +16,14 @@ if (!process.env.KIBAB_TEST_USER) {
 	process.exit(1);
 }
 
-let force_all = !!process.env.KIBAB_FULL_SYNC;
+let forceAll = !!process.env.KIBAB_FULL_SYNC;
 
 let [login, password] = process.env.KIBAB_TEST_USER.split(':');
 
 let api = new KibabAPI(login, password);
-let all_models = await api.getAllModels();
+let allModels = await api.getAllModels();
 let flag = false;
-for (let model of all_models) {
+for (let model of allModels) {
 	console.log(`[${model.name}]`);
 	fs.mkdirSync(`${OUT_DIR}/${model.name}`, { recursive: true });
 
@@ -32,68 +31,68 @@ for (let model of all_models) {
 		continue;
 	flag = true;
 
-	let all_model_patches = await api.getAllPatches(model.modelId, model.swId);
-	let all_patches_ids = all_model_patches.map((p) => p.id);
+	let allModelPatches = await api.getAllPatches(model.modelId, model.swId);
+	let allModelPatchesIds = allModelPatches.map((p) => p.id);
 
-	await downloadPatches(api, all_patches_ids, force_all);
+	await downloadPatches(api, allModelPatchesIds, forceAll);
 }
 
-let index_data = {};
+let indexData = {};
 if (fs.existsSync(`${OUT_DIR}/index.json`))
-	index_data = JSON.parse(fs.readFileSync(`${OUT_DIR}/index.json`));
+	indexData = JSON.parse(fs.readFileSync(`${OUT_DIR}/index.json`));
 
-let index_list = [];
-for (let model in index_data) {
-	for (let patch of Object.values(index_data[model])) {
-		index_list[patch.id] = [];
+let indexList = [];
+for (let model in indexData) {
+	for (let patch of Object.values(indexData[model])) {
+		indexList[patch.id] = [];
 		if (patch.file)
-			index_list[patch.id].push(patch.file);
+			indexList[patch.id].push(patch.file);
 		if (patch.additionalFile)
-			index_list[patch.id].push(patch.additionalFile);
+			indexList[patch.id].push(patch.additionalFile);
 	}
 }
 
-fs.writeFileSync(`${OUT_DIR}/files.json`, JSON.stringify(index_list, null, '\t'));
+fs.writeFileSync(`${OUT_DIR}/files.json`, JSON.stringify(indexList, null, '\t'));
 
-async function downloadPatches(api, all_patches_ids, force_all) {
-	let chunk_id = 0;
-	let unchnaged_patches = 0;
-	let index_data = {};
+async function downloadPatches(api, allPatchesIds, forceAll) {
+	let chunkId = 0;
+	let unchnagedPatches = 0;
+	let indexData = {};
 
 	if (fs.existsSync(`${OUT_DIR}/index.json`))
-		index_data = JSON.parse(fs.readFileSync(`${OUT_DIR}/index.json`));
+		indexData = JSON.parse(fs.readFileSync(`${OUT_DIR}/index.json`));
 
-	let chunks = getChunks(all_patches_ids, 10);
-	if (chunks.length > 0 && chunks[0].length >= 5)
+	let chunks = getChunks(allPatchesIds, 10);
+	if (!forceAll && chunks.length > 0 && chunks[0].length >= 5)
 		chunks.unshift([chunks[0].shift()]);
 
 	while (chunks.length > 0) {
 		let chunk = chunks.shift();
 
-		console.log(`chunk #${chunk_id} [`, chunk.join(', '), `]`);
+		console.log(`chunk #${chunkId} [`, chunk.join(', '), `]`);
 
 		await api.clearCart();
-		let not_added = await api.addToCart(chunk);
-		if (not_added.length > 0) {
-			for (let not_added_pid of not_added.reverse())
-				chunks.unshift([not_added_pid]);
+		let notAddedIds = await api.addToCart(chunk);
+		if (notAddedIds.length > 0) {
+			for (let pid of notAddedIds.reverse())
+				chunks.unshift([pid]);
 		}
 
 		let blob = await api.downloadCart();
 
 		findBrokenFiles(blob);
-		let found_zip_start = findZipStart(blob);
-		if (found_zip_start < 0) {
+		let zipStartOffset = findZipStart(blob);
+		if (zipStartOffset < 0) {
 			console.error(`NOT ZIP, see here: /tmp/invalid-patch.zip`);
 			fs.writeFileSync(`/tmp/invalid-patch.zip`, blob)
 			throw new Error(`Invalid ZIP:`);
 		}
 
-		blob = blob.slice(found_zip_start);
+		blob = blob.slice(zipStartOffset);
 
-		let patches_from_zip;
+		let patchesFromZip;
 		try {
-			patches_from_zip = await getPatchesFromArchive(blob);
+			patchesFromZip = await getPatchesFromArchive(blob);
 		} catch (e) {
 			console.log(`Invalid ZIP:`, e);
 			console.error(`See here: /tmp/invalid-patch.zip`);
@@ -101,97 +100,97 @@ async function downloadPatches(api, all_patches_ids, force_all) {
 			throw e;
 		}
 
-		for (let member of patches_from_zip) {
-			let patch_text = iconv.decode(member.data, 'win1251');
-			let patch_id = patch_text.match(/;PatchID: (\d+)/i)[1];
-			let lines = patch_text.split(/\r\n/);
+		for (let member of patchesFromZip) {
+			let patchText = iconv.decode(member.data, 'win1251');
+			let patchId = patchText.match(/;PatchID: (\d+)/i)[1];
+			let lines = patchText.split(/\r\n/);
 			let model = lines[0].replace(/^;/, '').trim();
-			let title_ru = lines[1].replace(/^;/, '').trim();
-			let title_en = lines[2].replace(/^;/, '').trim();
+			let titleRU = lines[1].replace(/^;/, '').trim();
+			let titleEN = lines[2].replace(/^;/, '').trim();
 
-			index_data[model] = index_data[model] || {};
+			indexData[model] = indexData[model] || {};
 
-			let patch_file = `${model}/${path.basename(member.fileName)}`;
+			let patchFile = `${model}/${path.basename(member.fileName)}`;
 
-			console.log(`+ ${patch_id}: ${patch_file}`);
+			console.log(`+ ${patchId}: ${patchFile}`);
 
-			let old_patch_md5;
-			let old_patch = index_data[model][patch_id];
-			if (old_patch) {
-				old_patch_md5 = fileMD5(`${OUT_DIR}/${old_patch.file}`);
+			let oldPatchHash;
+			let oldPatch = indexData[model][patchId];
+			if (oldPatch) {
+				oldPatchHash = fileMD5(`${OUT_DIR}/${oldPatch.file}`);
 
-				if (old_patch.file != patch_file) {
-					console.log(`  rename ${old_patch.file} -> ${patch_file}`);
-					child_process.spawnSync("git", ["add", old_patch.file], { cwd: OUT_DIR });
-					child_process.spawnSync("git", ["mv", old_patch.file, patch_file], { cwd: OUT_DIR });
+				if (oldPatch.file != patchFile) {
+					console.log(`  rename ${oldPatch.file} -> ${patchFile}`);
+					child_process.spawnSync("git", ["add", oldPatch.file], { cwd: OUT_DIR });
+					child_process.spawnSync("git", ["mv", oldPatch.file, patchFile], { cwd: OUT_DIR });
 				}
 			}
 
-			let additional_file;
-			let additional_file_link = patch_text.match(/^;!к патчу прикреплён файл, (.*?)\r\n$/im)?.[1];
-			let old_additional_file_md5;
-			let new_additional_file_md5;
+			let additionalFile;
+			let additionalFileLink = patchText.match(/^;!к патчу прикреплён файл, (.*?)\r\n$/im)?.[1];
+			let oldAdditionalFileHash;
+			let newAdditionalFileHash;
 
-			if (additional_file_link) {
-				let parsed_url = new URL(additional_file_link);
-				additional_file = `${model}/${path.basename(parsed_url.searchParams.get('f'))}`;
+			if (additionalFileLink) {
+				let parsedUrl = new URL(additionalFileLink);
+				additionalFile = `${model}/${path.basename(parsedUrl.searchParams.get('f'))}`;
 
-				console.log(`+ ${patch_id}: ${additional_file}`);
+				console.log(`+ ${patchId}: ${additionalFile}`);
 
-				if (old_patch && old_patch.additionalFile) {
-					old_additional_file_md5 = fileMD5(`${OUT_DIR}/${old_patch.additionalFile}`);
+				if (oldPatch && oldPatch.additionalFile) {
+					oldAdditionalFileHash = fileMD5(`${OUT_DIR}/${oldPatch.additionalFile}`);
 
-					if (old_patch.additionalFile != additional_file) {
-						console.log(`  rename ${old_patch.additionalFile} -> ${additional_file}`);
-						child_process.spawnSync("git", ["add", old_patch.additionalFile], { cwd: OUT_DIR });
-						child_process.spawnSync("git", ["mv", old_patch.additionalFile, additional_file], { cwd: OUT_DIR });
+					if (oldPatch.additionalFile != additionalFile) {
+						console.log(`  rename ${oldPatch.additionalFile} -> ${additionalFile}`);
+						child_process.spawnSync("git", ["add", oldPatch.additionalFile], { cwd: OUT_DIR });
+						child_process.spawnSync("git", ["mv", oldPatch.additionalFile, additionalFile], { cwd: OUT_DIR });
 					}
 				}
 
-				let additional_data = await fetch(additional_file_link).then((res) => res.arrayBuffer()).then((res) => Buffer.from(res));
-				fs.writeFileSync(`${OUT_DIR}/${additional_file}`, additional_data);
+				let additionalData = await fetch(additionalFileLink).then((res) => res.arrayBuffer()).then((res) => Buffer.from(res));
+				fs.writeFileSync(`${OUT_DIR}/${additionalFile}`, additionalData);
 
-				new_additional_file_md5 = fileMD5(`${OUT_DIR}/${additional_file}`);
+				newAdditionalFileHash = fileMD5(`${OUT_DIR}/${additionalFile}`);
 			}
 
-			let new_patch = {
-				id:				patch_id,
+			let newPatch = {
+				id:				patchId,
 				model:			model,
-				file:			patch_file,
-				additionalFile:	additional_file,
+				file:			patchFile,
+				additionalFile:	additionalFile,
 				mtime:			member.time,
 				title:	{
-					ru:		title_ru,
-					en:		title_en,
+					ru:		titleRU,
+					en:		titleEN,
 				}
 			};
 
-			fs.writeFileSync(`${OUT_DIR}/${patch_file}`, member.data);
-			let new_patch_md5 = fileMD5(`${OUT_DIR}/${patch_file}`);
+			fs.writeFileSync(`${OUT_DIR}/${patchFile}`, member.data);
+			let newPatchHash = fileMD5(`${OUT_DIR}/${patchFile}`);
 
 			let changed;
-			if (new_patch_md5 !== old_patch_md5 || new_additional_file_md5 !== old_additional_file_md5) {
+			if (newPatchHash !== oldPatchHash || newAdditionalFileHash !== oldAdditionalFileHash) {
 				changed = true;
 			} else {
-				changed = JSON.stringify(old_patch) != JSON.stringify(new_patch);
+				changed = JSON.stringify(oldPatch) != JSON.stringify(newPatch);
 			}
 
 			if (changed) {
-				index_data[model][patch_id] = new_patch;
-				unchnaged_patches = 0;
+				indexData[model][patchId] = newPatch;
+				unchnagedPatches = 0;
 			} else {
-				unchnaged_patches++;
+				unchnagedPatches++;
 			}
 		}
 
-		if (unchnaged_patches >= 1 && !force_all) {
-			// console.log(`STOP: unchnaged_patches=${unchnaged_patches}`);
+		if (unchnagedPatches >= 1 && !forceAll) {
+			// console.log(`STOP: unchnagedPatches=${unchnagedPatches}`);
 			break;
 		}
 
-		chunk_id++;
+		chunkId++;
 	}
-	fs.writeFileSync(`${OUT_DIR}/index.json`, JSON.stringify(index_data, null, '\t'));
+	fs.writeFileSync(`${OUT_DIR}/index.json`, JSON.stringify(indexData, null, '\t'));
 }
 
 function findBrokenFiles(blob) {
@@ -203,14 +202,14 @@ function findBrokenFiles(blob) {
 }
 
 function findZipStart(blob) {
-	let found_zip_start = -1;
+	let foundZipStart = -1;
 	for (let i = 0; i < blob.length; i++) {
 		if (blob[i] == 0x50 && blob[i + 1] == 0x4b && blob[i + 2] == 0x03 && blob[i + 3] == 0x04) {
-			found_zip_start = i;
+			foundZipStart = i;
 			break;
 		}
 	}
-	return found_zip_start;
+	return foundZipStart;
 }
 
 function fileMD5(file) {

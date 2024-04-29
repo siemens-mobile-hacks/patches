@@ -1,11 +1,14 @@
 import iconv from 'iconv-lite';
 import cheerio from 'cheerio';
 import crypto from 'crypto';
-import { promisify } from 'util';
 
 const KIBAB_URL = 'https://patches.kibab.com';
 
 class KibabAPI {
+	user;
+	password;
+	session;
+
 	constructor(user, password) {
 		this.user = user;
 		this.password = password;
@@ -20,12 +23,12 @@ class KibabAPI {
 
 		let $ = cheerio.load(html);
 		for (let p of $('a[href*="=disp_patches"]')) {
-			let link_title = $(p).text();
-			let link_url = $(p).attr("href");
+			let linkTitle = $(p).text();
+			let linkUrl = $(p).attr("href");
 
-			let phone = link_title.match(/\s([a-z0-9]+v\d+)/i)?.[1];
-			let ph_model_id = link_url.match(/ph_model=(\d+)/)[1];
-			let ph_sw_id = link_url.match(/ph_sw=(\d+)/)[1];
+			let phone = linkTitle.match(/\s([a-z0-9]+v\d+)/i)?.[1];
+			let phModelId = linkUrl.match(/ph_model=(\d+)/)[1];
+			let phSwId = linkUrl.match(/ph_sw=(\d+)/)[1];
 
 			let [model, sw] = phone.split('v');
 
@@ -33,8 +36,8 @@ class KibabAPI {
 				name:		phone,
 				model:		model,
 				sw:			sw,
-				modelId:	ph_model_id,
-				swId:		ph_sw_id,
+				modelId:	phModelId,
+				swId:		phSwId,
 			});
 		}
 
@@ -46,53 +49,53 @@ class KibabAPI {
 		return models;
 	}
 
-	async getAllPatches(model_id, sw_id) {
-		let html = await this.apiRequest(`/patches/index.php5?ph_model=${model_id}&ph_sw=${sw_id}&action=disp_patches`);
+	async getAllPatches(modelId, swId) {
+		let html = await this.apiRequest(`/patches/index.php5?ph_model=${modelId}&ph_sw=${swId}&action=disp_patches`);
 		html = iconv.decode(Buffer.from(html), 'win1251');
 
 		let patches = [];
 
 		let $ = cheerio.load(html);
 		for (let p of $('a[class*="patch_name"]')) {
-			let link_title = $(p).text();
-			let link_url = $(p).attr("href");
+			let linkTitle = $(p).text();
+			let linkUrl = $(p).attr("href");
 
-			let id = link_url.match(/id=(\d+)/)[1];
+			let id = linkUrl.match(/id=(\d+)/)[1];
 
 			patches.push({
 				id:		id,
-				title:	link_title.trim(),
+				title:	linkTitle.trim(),
 			});
 		}
 
 		return patches;
 	}
 
-	async addToCart(patches_ids) {
+	async addToCart(patchesIds) {
 		let form = new URLSearchParams();
 		form.append('action', 'add_multiple');
 
-		for (let id of patches_ids)
+		for (let id of patchesIds)
 			form.append('stuff[]', id);
 
 		let html = await this.apiRequest(`/patches/cart.php5`, form);
-		let ok_added = [];
+		let okAdded = [];
 
 		let m;
 		let re = /Патч (\d+) добавлен ОК/sig;
 		while ((m = re.exec(html)))
-			ok_added.push(m[1]);
+			okAdded.push(m[1]);
 
 		re = /Патч (\d+) уже есть в Корзине/sig;
 		while ((m = re.exec(html)))
-			ok_added.push(m[1]);
+			okAdded.push(m[1]);
 
-		let not_added = [];
-		for (let id of patches_ids) {
-			if (!ok_added.includes(id))
-				not_added.push(id);
+		let notAdded = [];
+		for (let id of patchesIds) {
+			if (!okAdded.includes(id))
+				notAdded.push(id);
 		}
-		return not_added;
+		return notAdded;
 	}
 
 	async downloadCart() {
@@ -103,21 +106,21 @@ class KibabAPI {
 		await this.apiRequest(`/patches/cart.php5?action=del_all`);
 	}
 
-	async apiRequest(url, form, as_buffer) {
-		let request_options = {};
+	async apiRequest(url, form, asBuffer) {
+		let requestOptions = {};
 		if (form) {
-			request_options.method = 'POST';
-			request_options.body = form;
+			requestOptions.method = 'POST';
+			requestOptions.body = form;
 		}
 
 		let req = fetch(`${KIBAB_URL}${url}`, {
 			headers:		{ Cookie: this.getCookies() },
 			credentials:	"include",
 			redirect:		"manual",
-			...request_options
+			...requestOptions
 		});
 
-		if (as_buffer) {
+		if (asBuffer) {
 			return await req
 				.then((res) => res.arrayBuffer())
 				.then((res) => Buffer.from(res));
