@@ -15,6 +15,29 @@ class KibabAPI {
 		this.session = crypto.createHash('md5').update(`v0:${user}:${password}`).digest("hex")
 	}
 
+	async getDeletedPatches(page = 0) {
+		let url = `/stat.php5?action=del_pat&p=${page}`;
+		let html = await this.apiRequest(url);
+		html = iconv.decode(Buffer.from(html), 'win1251');
+
+		let deletedPatchesIds = [];
+		let $ = cheerio.load(html);
+
+		let ids = $('table.maintext td.patches:nth-child(1)');
+		let models = $('table.maintext td.patches:nth-child(2)');
+
+		if (ids.length != models.length)
+			throw new Error(`Invalid response (url=${url}).`);
+
+		for (let i = 0; i < ids.length; i++) {
+			let patchId = +$(ids[i]).text().trim();
+			let phoneModel = $(models[i]).text().trim();
+
+			deletedPatchesIds.push({id: patchId, model: phoneModel});
+		}
+		return deletedPatchesIds;
+	}
+
 	async getAllModels() {
 		let html = await this.apiRequest(`/patches/phonelist.php5?`);
 		html = iconv.decode(Buffer.from(html), 'win1251');

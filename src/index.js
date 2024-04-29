@@ -9,7 +9,8 @@ import { KibabAPI } from './KibabAPI.js';
 // patches.kibab.com timezone
 process.env.TZ = 'Europe/Moscow'; // thanks Viktor89
 
-let OUT_DIR = `${import.meta.dirname}/../patches`;
+const OUT_DIR = `${import.meta.dirname}/../patches`;
+const DELETED_DIR = `${import.meta.dirname}/../deleted`;
 
 if (!process.env.KIBAB_TEST_USER) {
 	console.error(`KIBAB_TEST_USER is not set!`);
@@ -19,48 +20,87 @@ if (!process.env.KIBAB_TEST_USER) {
 let forceAll = !!process.env.KIBAB_FULL_SYNC;
 
 let [login, password] = process.env.KIBAB_TEST_USER.split(':');
-
 let api = new KibabAPI(login, password);
-let allModels = await api.getAllModels();
-let flag = false;
-for (let model of allModels) {
-	console.log(`[${model.name}]`);
-	fs.mkdirSync(`${OUT_DIR}/${model.name}`, { recursive: true });
 
-	if (process.env.FROM_MODEL && model.name != process.env.FROM_MODEL && !flag)
-		continue;
-	flag = true;
+await garbageCollector(api);
+await syncPatches(api);
+generateFilesList();
 
-	let allModelPatches = await api.getAllPatches(model.modelId, model.swId);
-	let allModelPatchesIds = allModelPatches.map((p) => p.id);
+async function garbageCollector(api) {
+	let deletedCnt = 0;
+	let page = 0;
+	let deletedIndex = loadDeletedIndex();
+	let indexData = loadIndex();
 
-	await downloadPatches(api, allModelPatchesIds, forceAll);
+	do {
+		deletedCnt = 0;
+
+		let deletedPatches = await api.getDeletedPatches(page);
+		for (let p of deletedPatches) {
+			if (indexData[p.model] && indexData[p.model][p.id]) {
+				let patchInfo = indexData[p.model][p.id];
+				delete indexData[p.model][p.id];
+
+				deletedIndex[p.model] = deletedIndex[p.model] || {};
+				deletedIndex[p.model] = patchInfo;
+
+				console.log(`DELETE: #${patchInfo.id} ${patchInfo.file}`);
+
+				fs.mkdirSync(`${DELETED_DIR}/${p.model}`, { recursive: true });
+				child_process.spawnSync("git", ["mv", patchInfo.file, `${DELETED_DIR}/${patchInfo.file}`], { cwd: OUT_DIR });
+
+				if (patchInfo.additionalFile) {
+					console.log(`DELETE: #${patchInfo.id} ${patchInfo.additionalFile}`);
+					child_process.spawnSync("git", ["mv", patchInfo.additionalFile, `${DELETED_DIR}/${patchInfo.additionalFile}`], { cwd: OUT_DIR });
+				}
+
+				deletedCnt++;
+			}
+		}
+
+		page++;
+	} while (deletedCnt > 0);
+
+	saveDeletedIndex(deletedIndex);
 }
 
-let indexData = {};
-if (fs.existsSync(`${OUT_DIR}/index.json`))
-	indexData = JSON.parse(fs.readFileSync(`${OUT_DIR}/index.json`));
+async function syncPatches(api) {
+	let allModels = await api.getAllModels();
+	let flag = false;
+	for (let model of allModels) {
+		console.log(`[${model.name}]`);
+		fs.mkdirSync(`${OUT_DIR}/${model.name}`, { recursive: true });
 
-let indexList = [];
-for (let model in indexData) {
-	for (let patch of Object.values(indexData[model])) {
-		indexList[patch.id] = [];
-		if (patch.file)
-			indexList[patch.id].push(patch.file);
-		if (patch.additionalFile)
-			indexList[patch.id].push(patch.additionalFile);
+		if (process.env.FROM_MODEL && model.name != process.env.FROM_MODEL && !flag)
+			continue;
+		flag = true;
+
+		let allModelPatches = await api.getAllPatches(model.modelId, model.swId);
+		let allModelPatchesIds = allModelPatches.map((p) => p.id);
+
+		await downloadPatches(api, allModelPatchesIds, forceAll);
 	}
 }
 
-fs.writeFileSync(`${OUT_DIR}/files.json`, JSON.stringify(indexList, null, '\t'));
+function generateFilesList() {
+	let indexData = loadIndex();
+	let indexList = [];
+	for (let model in indexData) {
+		for (let patch of Object.values(indexData[model])) {
+			indexList[patch.id] = [];
+			if (patch.file)
+				indexList[patch.id].push(patch.file);
+			if (patch.additionalFile)
+				indexList[patch.id].push(patch.additionalFile);
+		}
+	}
+	fs.writeFileSync(`${OUT_DIR}/files.json`, JSON.stringify(indexList, null, '\t'));
+}
 
 async function downloadPatches(api, allPatchesIds, forceAll) {
 	let chunkId = 0;
 	let unchnagedPatches = 0;
-	let indexData = {};
-
-	if (fs.existsSync(`${OUT_DIR}/index.json`))
-		indexData = JSON.parse(fs.readFileSync(`${OUT_DIR}/index.json`));
+	let indexData = loadIndex();
 
 	let chunks = getChunks(allPatchesIds, 10);
 	if (!forceAll && chunks.length > 0 && chunks[0].length >= 5)
@@ -190,7 +230,29 @@ async function downloadPatches(api, allPatchesIds, forceAll) {
 
 		chunkId++;
 	}
+	saveIndex(indexData);
+}
+
+function loadIndex() {
+	let indexData = {};
+	if (fs.existsSync(`${OUT_DIR}/index.json`))
+		indexData = JSON.parse(fs.readFileSync(`${OUT_DIR}/index.json`));
+	return indexData;
+}
+
+function saveIndex(indexData) {
 	fs.writeFileSync(`${OUT_DIR}/index.json`, JSON.stringify(indexData, null, '\t'));
+}
+
+function loadDeletedIndex() {
+	let indexData = {};
+	if (fs.existsSync(`${DELETED_DIR}/index.json`))
+		indexData = JSON.parse(fs.readFileSync(`${DELETED_DIR}/index.json`));
+	return indexData;
+}
+
+function saveDeletedIndex(indexData) {
+	fs.writeFileSync(`${DELETED_DIR}/index.json`, JSON.stringify(indexData, null, '\t'));
 }
 
 function findBrokenFiles(blob) {
