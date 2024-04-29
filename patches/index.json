@@ -67321,16 +67321,6 @@
 				"en": "Change standart volume control"
 			}
 		},
-		"5324": {
-			"id": 5324,
-			"model": "C55v24",
-			"file": "C55v24/5324-Java_activation.vkp",
-			"mtime": 1157295712000,
-			"title": {
-				"ru": "Активирование Java ( Включение DES )",
-				"en": "Java activation"
-			}
-		},
 		"5325": {
 			"id": 5325,
 			"model": "C55v24",
