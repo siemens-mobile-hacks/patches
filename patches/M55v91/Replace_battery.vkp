@@ -8,7 +8,6 @@
 /*
 
 */
-Picture author: __Andrey__
 ; #######################################################################
 ; ### Date: 02.02.2005  -  Time: 11:24:55                             ###
 ; ### Patch for: SIEMENS M55 v91                                      ###
@@ -334,7 +333,5 @@ Picture author: __Andrey__
 2EB9A7: 22222222222222FFC0C0C0FFFFFFFFFF 10101010101010FFC0FFFFFFFFFFFFFF
 2EB9B7: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
 2EB9C7: FFFFFF FFFFFF
-
-
 ;------------------------- end -------------------------
 

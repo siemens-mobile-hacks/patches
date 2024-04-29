@@ -6,12 +6,11 @@
 ;PatchID: 1881
 ;Details: https://patches.kibab.com/patches/details.php5?id=1881
 /*
-
 Created: July 09, 2004
 
 Патч №179 с http://patch.oslik.ru/SL45_RU
 */
-Ширина софт клавиши (оригинал 2F=47, 31=49), меняйте как хотите
+;Ширина софт клавиши (оригинал 2F=47, 31=49), меняйте как хотите
 
 0x20DD1E: 2F 31
 

@@ -25,9 +25,7 @@
 ; Camera key( Vol+ ) : 14
 ; PTT key( Vol- ) : 15
 ; Например: 7D4AE0: 23232300 15151500 означает открытие не по ###, а по трем нажатиям кнопки PTT
-
-/*
-Port info
-search for 00000023232300, then add 03h to the found address
+;Port info
+;search for 00000023232300, then add 03h to the found address
 ;------------------------- end -------------------------
 

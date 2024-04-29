@@ -10,6 +10,7 @@
 /*
 Патч предназначен для того, чтобы можно было получить данные нетмонитора из ява приложений.
 */
+/*
 Property Value
 ---------------------------------------------------
 MPJC_CID current cell CID
@@ -22,6 +23,7 @@ MPJCTXPW TXPWR
 MPJC_CAP current accu charge level
 MPJCGPRS current GPRS traffic (bytes)
 MPJCKEYL current keyboard lock state
+*/
 
 A05928: 0070A0E30070C1E50140A0E1 04E08FE204F01FE5FD1CADA1
 #pragma enable old_equal_ff

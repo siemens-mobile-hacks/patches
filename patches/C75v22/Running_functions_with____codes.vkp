@@ -9,9 +9,7 @@
 /*
 
 */
-;Запуск функций с помощью *# кодов
-[color:red](!) Master
-(!) API[/color]
+/*
 Patch allows to bind function to *#...# code.
 This way we can save shortcut entries like ELSE_PUSHTOTALK or ELSE_REMOTESYNC normally used by some patches.
 CodeStr: first characters of calling string. (i.e. *#67).
@@ -24,6 +22,7 @@ Examples:
 Optionally, patch can return R0 value after execution.
 This option may be configured separately for each function in Master Midlet.
 User can now also write description of any function (up to 15 chars). At the moment this option isn't used by patch itself.
+*/
 ;Entrypoint. Must be aligned to word (4 bytes).
 ;0021,0655021951700522
 02CE4FC: 0655021951700522 004B9847,0xA10D4701 

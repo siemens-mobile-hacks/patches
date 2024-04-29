@@ -209,9 +209,9 @@ Add the 3 chosen numbers. The result is the MM byte.
 Examples of MM byte:
 e.g. 129 = 1 + 128 : key sequence by hotkey + only if keylock off
 e.g.  51 = 1 + 2 + 48: key sequence by hotkey + send red key after + only if screensaver on
-e.g.  0: always.*/
+e.g.  0: always.
 
-; plug-in function Adresses
+plug-in function Adresses
 
 DevM_NativeMenu EQU 0xA032AE0F
 DevM_Sexit EQU 0xA03B5815
@@ -234,6 +234,6 @@ Usr_Pictures EQU 0xA0326007
 Usr_Ringtones EQU 0xA0326127
 Usr_ClockSetup_TimeDate EQU 0xA03261F3
 Usr_Calc EQU 0xA0325F57
-
+*/
 ;------------------------- end -------------------------
 

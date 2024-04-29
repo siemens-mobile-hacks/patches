@@ -10,8 +10,6 @@
 Ускоряет операции телефона.
 Но не ждите что у вас будет Pentium IV ;-)
 */
-;*Disable MMI Logging*
-© SiNgle
 02A0461: B5 47 ; speeds up phone operation
 ;------------------------- end -------------------------
 

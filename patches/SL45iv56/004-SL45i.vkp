@@ -14,10 +14,10 @@
 ;Дает доступ к меню "Индикация". 
 ;Используйте "Левый +" для доступа к голосовому набору. 
 
-18E3A0: 4E02 6000 (shorcut Start: text) 
-18E3D4: 4F02 6000 (upper-right button text) 
-18E4A6: 4E024E02 60006000 (menu item text) 
-3AE3B2: DAE6F8A9 DAD56AF2 (function entry-point) 
+18E3A0: 4E02 6000 ;(shorcut Start: text) 
+18E3D4: 4F02 6000 ;(upper-right button text) 
+18E4A6: 4E024E02 60006000 ;(menu item text) 
+3AE3B2: DAE6F8A9 DAD56AF2 ;(function entry-point) 
 
 ;============================================= 
 ;Точка входа : Текст : Описание функции 
@@ -58,6 +58,5 @@
 ;DA D5 5A F2 : 5B 02 : Language 
 ;DA D5 6A F2 : 5F 00 : Display 
 ;DA D5 82 F2 : 7E 02 : T9-Input 
-;============================================= 
 ;------------------------- end -------------------------
 

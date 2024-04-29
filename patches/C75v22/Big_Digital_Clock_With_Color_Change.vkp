@@ -8,11 +8,8 @@
 ;Details: https://patches.kibab.com/patches/details.php5?id=4711
 /*
 
-
 */
-;Большие цифровые часы с изменением цвета
-;(p) Art
-
+/*
 [EN]:Auto Change Time Format
 Set BackGroundColor and FontColor
 Set X when 12hours or 24hours format
@@ -26,7 +23,7 @@ Add Canvas Control to solve the problem of getting stronger when use transparent
 [color:red](!) MasterPatch V3 RC2 #114
 (!) FunctionLibrary (f067, f000, z02, f120, f004, f037, f038, f033, f034)
 (!) GraphPatchManager 3.x[/color]
-
+*/
 
 +110000
 #pragma enable old_equal_ff

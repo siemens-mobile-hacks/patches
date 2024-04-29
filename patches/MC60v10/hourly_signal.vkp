@@ -11,11 +11,9 @@
 
 English:This patch gives a beeping sound in every hour or every hour in time period from 8-23. Not working yet. 
 */
-################################
-
 ;With original code, that can be easily changed by using SFE.
 
-2. Time period 8-23 hourly signal
+;2. Time period 8-23 hourly signal
 000CF584:98809890 DA750033
 0x553300: ffffffffffffffffffffffffffffffff 9880989088C0D7401500F2FC680F48C0
 0x553310: ffffffffffffffffffffffffffffffff 3D16D7400C00F2FC020948C12D2DD740
@@ -36,9 +34,8 @@ English:This patch gives a beeping sound in every hour or every hour in time per
 ;0x553330: ffffffffffffffffffffffffffffffff D7400C00F2FC020948C12D0AE6FC3e00
 ;0x553340: ffffffffffffffffffffffffffffffff DA9F9C4F9DF0E00CD7400C00F6FC0209
 ;0x553350: ffffffff 98C0DB00
-
-*****
-Following is the original code.
+/*
+;Following is the original code.
 ; Hourly signal+
 ;MC60 V07
 ; 8-23
@@ -113,6 +110,6 @@ Rets
 
 #################################
 
-
+*/
 ;------------------------- end -------------------------
 

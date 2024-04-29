@@ -183,37 +183,37 @@ choose ONE of these 2 numbers
 choose one number from the list below to make the key sequence conditional:
 0always
 8(menus or lists or midlets etc.)
-12(mainscreen or screensaver or keylock-#-dialogs)
+12(mainscreen or screensaver or keylock-dialogs)
 32(screensaver off)
 40(screensaver off) and (menus, lists, midlets etc.)
-44(screensaver off) and (mainscreen or screensaver or keylock-#-dialogs)
+44(screensaver off) and (mainscreen or screensaver or keylock-dialogs)
 48(screensaver)
 56(screensaver) and (menus, lists, midlets etc.)
-60(screensaver) and (mainscreen or screensaver or keylock-#-dialogs)
+60(screensaver) and (mainscreen or screensaver or keylock-dialogs)
 128(keylock off)
 136(keylock off) and (menus or lists or midlets etc.)
-140(keylock off) and (mainscreen or screensaver or keylock-#-dialogs)
+140(keylock off) and (mainscreen or screensaver or keylock-dialogs)
 160(keylock off) and (screensaver off)
 168(keylock off) and (screensaver off) and (menus or lists or midlets etc.)
-172(keylock off) and (screensaver off) and (mainscreen or screensaver or keylock-#-dialogs)
+172(keylock off) and (screensaver off) and (mainscreen or screensaver or keylock-dialogs)
 176(keylock off) and (screensaver)
 184(keylock off) and (screensaver) and (menus or lists or midlets etc.)
-188(keylock off) and (screensaver) and (mainscreen or screensaver or keylock-#-dialogs)
+188(keylock off) and (screensaver) and (mainscreen or screensaver or keylock-dialogs)
 192 (keylock) 
 200 (keylock) and (screensaver) and (menus or lists or midlets etc.)
-204 (keylock) and (mainscreen or screensaver or keylock-#-dialogs)
+204 (keylock) and (mainscreen or screensaver or keylock-dialogs)
 224 (keylock)
 232 (keylock) and (screensaver off) and (menus or lists or midlets etc.)
-236 (keylock) and (screensaver off) and (mainscreen or screensaver or keylock-#-dialogs)
+236 (keylock) and (screensaver off) and (mainscreen or screensaver or keylock-dialogs)
 240(keylock) 
 248 (keylock) and (screensaver) and (menus or lists or midlets etc.)
-252(keylock) and (screensaver) and (mainscreen or screensaver or keylock-#-dialogs)
+252(keylock) and (screensaver) and (mainscreen or screensaver or keylock-dialogs)
 
 Add the 3 chosen numbers. The result is the MM byte.
 
 Examples of MM byte:
 e.g. 129 = 1 + 128 : key sequence by hotkey + only if keylock off
 e.g. 51 = 1 + 2 + 48: key sequence by hotkey + send red key after + only if screensaver on
-e.g. 0: always.
+e.g. 0: always. */
 ;------------------------- end -------------------------
 

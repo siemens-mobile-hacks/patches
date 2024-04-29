@@ -44,7 +44,7 @@ English: Patch allows to change position of different elements of main screen
 ;missed Events
 02FDCAE: 78 yy ;y
 
-without Provider-Logo:
+;without Provider-Logo:
 0425720: 0B yy ;Date/Time ;don't works on skin application image
 0425730: 1E yy ;Provider 
 0425740: 30 yy ;Sub-Provider

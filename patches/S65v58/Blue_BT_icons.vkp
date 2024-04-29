@@ -10,14 +10,6 @@
 /*
 All Blue BT icons
 */
-S65v58
-;Blue BT icons
-;(c) Bakhti
-;Version: 1.0
-;PatchID: 8220
-;Details: http://patches.siemens-club.org/patches/details.php5?id=8220
-
-
 ; ##### Picture 520 #####
 00DA1064: 1A0E85001888E3A0 1A0E8500545FD2A0
 
@@ -191,8 +183,5 @@ S65v58
 00D26521: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FDE0070303C00303FB0703E003E00207
 00D26531: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF FF0304C0040302E0FF07020306C00303
 00D26541: FFFFFFFFFFFFFFFFFFFF FFE0030308C0050305C0
-
-;------------------------- end -------------------------
-
 ;------------------------- end -------------------------
 

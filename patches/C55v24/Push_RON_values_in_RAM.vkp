@@ -12,8 +12,8 @@
 ;для которого хочется узнать значения РОН r0-r16
 ;ZZZZZZZZ - кусок кода вместо которого записываем вызов 
 ;нашей процедуры записи значений РОН в ОЗУ
-XXXXXX: ZZZZZZZZ DADFFCBC
-5FBCFC: FFFFFFFF ZZZZZZZZ 
+;XXXXXX: ZZZZZZZZ DADFFCBC
+;5FBCFC: FFFFFFFF ZZZZZZZZ 
 ;Далее ничего менять не нужно!
 ;Заносим значения РОН в ОЗУ по адресам с 600 по 620
 ;Просматриваем Siemens Debuger-ом
