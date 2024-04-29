@@ -63359,17 +63359,6 @@
 				"en": "To clean a sound of dialing"
 			}
 		},
-		"647": {
-			"id": 647,
-			"model": "CX70v56",
-			"file": "CX70v56/647-Winamp_ecvalaizer.vkp",
-			"additionalFile": "CX70v56/647-Winamp_ecvalaizer.rar",
-			"mtime": 1127332800000,
-			"title": {
-				"ru": "Winamp_ecvalaizer",
-				"en": "Winamp_ecvalaizer"
-			}
-		},
 		"651": {
 			"id": 651,
 			"model": "CX70v56",
