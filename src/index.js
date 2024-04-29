@@ -51,7 +51,7 @@ async function garbageCollector(api) {
 				patchInfo.file = newFileName;
 
 				if (patchInfo.additionalFile) {
-					let newAdditionalFileName = addPrefixToFile(patchInfo.file, `${patchInfo.id}-`);
+					let newAdditionalFileName = addPrefixToFile(patchInfo.additionalFile, `${patchInfo.id}-`);
 					console.log(`DELETE: #${patchInfo.id} ${patchInfo.additionalFile}`);
 					child_process.spawnSync("git", ["mv", patchInfo.additionalFile, `${DELETED_DIR}/${newAdditionalFileName}`], { cwd: OUT_DIR });
 					patchInfo.additionalFile = newAdditionalFileName;
