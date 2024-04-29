@@ -32972,7 +32972,7 @@
 			"id": "7027",
 			"model": "CX75v25",
 			"file": "CX75v25/WinAmp.vkp",
-			"mtime": 1172325794000,
+			"mtime": 1714378334000,
 			"title": {
 				"ru": "Значок плейлиста в стиле Winamp",
 				"en": "Badge playlist in stiletto Winamp"
@@ -32982,7 +32982,7 @@
 			"id": "7028",
 			"model": "CX75v25",
 			"file": "CX75v25/Patch.vkp",
-			"mtime": 1172325690000,
+			"mtime": 1714378318000,
 			"title": {
 				"ru": "Значок в плеере когда звук отключен",
 				"en": "Badge in player when sound is unplugged"
@@ -32992,7 +32992,7 @@
 			"id": "7029",
 			"model": "CX75v25",
 			"file": "CX75v25/Badge_in_mark.vkp",
-			"mtime": 1172325614000,
+			"mtime": 1714378272000,
 			"title": {
 				"ru": "Значок в заметках",
 				"en": "Badge in mark"
@@ -33002,7 +33002,7 @@
 			"id": "7030",
 			"model": "CX75v25",
 			"file": "CX75v25/Badge_of_the_calculator.vkp",
-			"mtime": 1172325542000,
+			"mtime": 1714378300000,
 			"title": {
 				"ru": "Значок калькулятора",
 				"en": "Badge of the calculator"
@@ -33045,7 +33045,7 @@
 			"model": "CX75v25",
 			"file": "CX75v25/rulezzzzzzz.vkp",
 			"additionalFile": "CX75v25/rulezzzzzzz.rar",
-			"mtime": 1174120668000,
+			"mtime": 1714378362000,
 			"title": {
 				"ru": "Значок громкости как в телефонах Samsung",
 				"en": "Badge to loudness as in telephone Samsung"
@@ -45581,7 +45581,7 @@
 			"id": "845",
 			"model": "C65v50",
 			"file": "C65v50/extrainfo_canvas__v3_1.vkp",
-			"mtime": 1129838400000,
+			"mtime": 1714378028000,
 			"title": {
 				"ru": "Холст для Дополнительной Информации",
 				"en": "Extra Info Canvas"
@@ -51530,7 +51530,7 @@
 			"id": "753",
 			"model": "S65v58",
 			"file": "S65v58/Disable_some_messages.vkp",
-			"mtime": 1129492800000,
+			"mtime": 1714379112000,
 			"title": {
 				"ru": "Убрать некоторые сообщения",
 				"en": "Disable some messages"
@@ -71077,7 +71077,7 @@
 			"id": "10766",
 			"model": "M55v91",
 			"file": "M55v91/pic_big_digits_7seg_m55.vkp",
-			"mtime": 1709907490000,
+			"mtime": 1714378698000,
 			"title": {
 				"ru": "Картинки цифр для Больших цифровых часов (семисегментные) + исправления",
 				"en": "Digits pictures for big digital clock + fixes"
@@ -71309,7 +71309,7 @@
 			"id": "4788",
 			"model": "S55v20",
 			"file": "S55v20/Change_autokeylock_time_on_screens.vkp",
-			"mtime": 1156616214000,
+			"mtime": 1714378984000,
 			"title": {
 				"ru": "Изменение времени автоблокировки клавиш и запуска хранителя экрана",
 				"en": "Change auto keylock time on screensaver"
@@ -95250,7 +95250,7 @@
 			"id": "9608",
 			"model": "C81v51",
 			"file": "C81v51/Folder_relocation_to_MMC.vkp",
-			"mtime": 1256017518000,
+			"mtime": 1714377622000,
 			"title": {
 				"ru": "Релокация папок на MMC с подвидом MyStuff",
 				"en": "Folder relocation to MMC with MyStuff-view"

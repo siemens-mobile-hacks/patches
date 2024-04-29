@@ -10,13 +10,6 @@
 /*
 Громкость как у Samsung'ов !!! Прикладываю исходники.
 */
-Если патч не ставиться или ставиться с ошибкой, пожалуйста 
-переделайте его под свой телефон при помощи программы VkpResolver!!!
-           
-                          Ваш RedBull
-
-made in Tyumen
-
 ; ##### Picture 1357 #####
 010C2AAC: 7E5A8800ACA81AA1 7E5A88000000FDA0
 
@@ -1791,7 +1784,5 @@ made in Tyumen
 00FB096F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 7F00E07F00E07F00E07F00E07F00E07F
 00FB097F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00E07F00E07F00E07F00E07F00E07F00
 00FB098F: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E07F00E07F00E07F00E07F00E03900E0
-
-
 ;------------------------- end -------------------------
 

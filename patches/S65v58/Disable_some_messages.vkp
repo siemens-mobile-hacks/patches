@@ -28,10 +28,8 @@
 16A13A2: 0021 10BD ; "Все сигналы выкл" | "All ringtones off"
 16A1382: 0021 10BD ; "Все сигналы вкл" | "All ringtones on"
 08DA428: 4DF0 80BD ; "Вибра вкл/выкл" | Vibra on/off
-097E80C: 65DB00EB 0100A0E3 ; "Сохранить в:" после съёмки | 
-"Saved to:" after you take a photo
-097D608: 5E1B1FFA 000050E3 ; "Пожалуйста подождите" при запуске камеры | 
-"Please wait" on camera start
+097E80C: 65DB00EB 0100A0E3 ; "Сохранить в:" после съёмки | "Saved to:" after you take a photo
+097D608: 5E1B1FFA 000050E3 ; "Пожалуйста подождите" при запуске камеры | "Please wait" on camera start
 0982A28: 37061FFA 0100A0E3 ; "Пожалуйста подождите" в эксплорере | "Please wait" in explorer
 
 ;------------------------- end -------------------------
