@@ -3,6 +3,7 @@ import yauzl from 'yauzl';
 import iconv from 'iconv-lite';
 import crypto from 'crypto';
 import path from 'path';
+import { globSync } from 'glob';
 import child_process from 'child_process';
 import { KibabAPI } from './KibabAPI.js';
 
@@ -22,14 +23,21 @@ let forceAll = !!process.env.KIBAB_FULL_SYNC;
 let [login, password] = process.env.KIBAB_TEST_USER.split(':');
 let api = new KibabAPI(login, password);
 
+console.time("garbageCollector");
 await garbageCollector(api);
+console.timeEnd("garbageCollector");
+
+console.time("syncPatches");
 await syncPatches(api);
+console.timeEnd("syncPatches");
+
+console.time("generateFilesList");
 generateFilesList();
+console.timeEnd("generateFilesList");
 
 async function garbageCollector(api) {
 	let deletedCnt = 0;
 	let page = 0;
-	let deletedIndex = loadDeletedIndex();
 	let indexData = loadIndex();
 
 	do {
@@ -41,21 +49,8 @@ async function garbageCollector(api) {
 				let patchInfo = indexData[p.model][p.id];
 				delete indexData[p.model][p.id];
 
-				deletedIndex[p.model] = deletedIndex[p.model] || {};
-				deletedIndex[p.model] = patchInfo;
-
-				let newFileName = addPrefixToFile(patchInfo.file, `${patchInfo.id}-`);
-				console.log(`DELETE: #${patchInfo.id} ${patchInfo.file}`);
-				fs.mkdirSync(`${DELETED_DIR}/${p.model}`, { recursive: true });
-				child_process.spawnSync("git", ["mv", patchInfo.file, `${DELETED_DIR}/${newFileName}`], { cwd: OUT_DIR });
-				patchInfo.file = newFileName;
-
-				if (patchInfo.additionalFile) {
-					let newAdditionalFileName = addPrefixToFile(patchInfo.additionalFile, `${patchInfo.id}-`);
-					console.log(`DELETE: #${patchInfo.id} ${patchInfo.additionalFile}`);
-					child_process.spawnSync("git", ["mv", patchInfo.additionalFile, `${DELETED_DIR}/${newAdditionalFileName}`], { cwd: OUT_DIR });
-					patchInfo.additionalFile = newAdditionalFileName;
-				}
+				for (let file of globSync(`${OUT_DIR}/${patchInfo.id}-*`))
+					child_process.spawnSync("git", ["rm", `${OUT_DIR}/${file}`], { cwd: OUT_DIR });
 
 				deletedCnt++;
 			}
@@ -64,7 +59,6 @@ async function garbageCollector(api) {
 		page++;
 	} while (deletedCnt > 0);
 
-	saveDeletedIndex(deletedIndex);
 	saveIndex(indexData);
 }
 
@@ -154,7 +148,7 @@ async function downloadPatches(api, allPatchesIds, forceAll) {
 
 			indexData[model] = indexData[model] || {};
 
-			let patchFile = `${model}/${path.basename(member.fileName)}`;
+			let patchFile = `${model}/${patchId}-${path.basename(member.fileName)}`;
 
 			console.log(`+ ${patchId}: ${patchFile}`);
 
@@ -177,7 +171,7 @@ async function downloadPatches(api, allPatchesIds, forceAll) {
 
 			if (additionalFileLink) {
 				let parsedUrl = new URL(additionalFileLink);
-				additionalFile = `${model}/${path.basename(parsedUrl.searchParams.get('f'))}`;
+				additionalFile = `${model}/${patchId}-${path.basename(parsedUrl.searchParams.get('f'))}`;
 
 				console.log(`+ ${patchId}: ${additionalFile}`);
 
