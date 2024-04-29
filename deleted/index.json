@@ -1,0 +1,53 @@
+{
+	"CX70v56": {
+		"id": "647",
+		"model": "CX70v56",
+		"file": "CX70v56/647-Winamp_ecvalaizer.vkp",
+		"additionalFile": "CX70v56/647-Winamp_ecvalaizer.rar",
+		"mtime": 1127332800000,
+		"title": {
+			"ru": "Winamp_ecvalaizer",
+			"en": "Winamp_ecvalaizer"
+		}
+	},
+	"C55v24": {
+		"id": "5324",
+		"model": "C55v24",
+		"file": "C55v24/5324-Java_activation.vkp",
+		"mtime": 1157295712000,
+		"title": {
+			"ru": "Активирование Java ( Включение DES )",
+			"en": "Java activation"
+		}
+	},
+	"SL65v53": {
+		"id": "7538",
+		"model": "SL65v53",
+		"file": "SL65v53/7538-IncFlex_instruction.vkp",
+		"mtime": 1179584890000,
+		"title": {
+			"ru": "IncFlex v1.0 (12.71MB)",
+			"en": "IncFlex v1.0 (12.71MB)"
+		}
+	},
+	"S65v50": {
+		"id": "8243",
+		"model": "S65v50",
+		"file": "S65v50/8243-AdpcmAllFreq.vkp",
+		"mtime": 1200428786000,
+		"title": {
+			"ru": "AdpcmAllFreq",
+			"en": "AdpcmAllFreq"
+		}
+	},
+	"M55v10": {
+		"id": "1541",
+		"model": "M55v10",
+		"file": "M55v10/1541-full_date_in_calendar.vkp",
+		"mtime": 1140382800000,
+		"title": {
+			"ru": "Выводить в календаре дату полностью",
+			"en": "Show the full date in calendar"
+		}
+	}
+}

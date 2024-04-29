@@ -51360,16 +51360,6 @@
 				"ru": "Меняет картинки в фото-видео камере",
 				"en": "Changes pictures in photo-video camera"
 			}
-		},
-		"8243": {
-			"id": "8243",
-			"model": "S65v50",
-			"file": "S65v50/AdpcmAllFreq.vkp",
-			"mtime": 1200428786000,
-			"title": {
-				"ru": "AdpcmAllFreq",
-				"en": "AdpcmAllFreq"
-			}
 		}
 	},
 	"S65v53": {
@@ -58350,16 +58340,6 @@
 				"en": "turn on by alarm clock"
 			}
 		},
-		"7538": {
-			"id": "7538",
-			"model": "SL65v53",
-			"file": "SL65v53/IncFlex_instruction.vkp",
-			"mtime": 1179584890000,
-			"title": {
-				"ru": "IncFlex v1.0 (12.71MB)",
-				"en": "IncFlex v1.0 (12.71MB)"
-			}
-		},
 		"7837": {
 			"id": "7837",
 			"model": "SL65v53",
@@ -63389,17 +63369,6 @@
 				"en": "To clean a sound of dialing"
 			}
 		},
-		"647": {
-			"id": "647",
-			"model": "CX70v56",
-			"file": "CX70v56/Winamp_ecvalaizer.vkp",
-			"additionalFile": "CX70v56/Winamp_ecvalaizer.rar",
-			"mtime": 1127332800000,
-			"title": {
-				"ru": "Winamp_ecvalaizer",
-				"en": "Winamp_ecvalaizer"
-			}
-		},
 		"651": {
 			"id": "651",
 			"model": "CX70v56",
@@ -67351,16 +67320,6 @@
 				"en": "Change standart volume control"
 			}
 		},
-		"5324": {
-			"id": "5324",
-			"model": "C55v24",
-			"file": "C55v24/Java_activation.vkp",
-			"mtime": 1157295712000,
-			"title": {
-				"ru": "Активирование Java ( Включение DES )",
-				"en": "Java activation"
-			}
-		},
 		"5325": {
 			"id": "5325",
 			"model": "C55v24",
@@ -68413,16 +68372,6 @@
 			"title": {
 				"ru": "Инф.Т9 при наборе SMS -> выбор языка",
 				"en": "T9 info in SMS -> language select"
-			}
-		},
-		"1541": {
-			"id": "1541",
-			"model": "M55v10",
-			"file": "M55v10/full_date_in_calendar.vkp",
-			"mtime": 1140382800000,
-			"title": {
-				"ru": "Выводить в календаре дату полностью",
-				"en": "Show the full date in calendar"
 			}
 		},
 		"1542": {
