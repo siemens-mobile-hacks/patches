@@ -61456,16 +61456,6 @@
 				"en": "Calendar on the mainscreen"
 			}
 		},
-		"155": {
-			"id": 155,
-			"model": "CX70v50",
-			"file": "CX70v50/155-Calendar_on_the_mainscreen.vkp",
-			"mtime": 1118520000000,
-			"title": {
-				"ru": "Календарь на главном экране с вкл/выкл",
-				"en": "Calendar on the mainscreen with on/off"
-			}
-		},
 		"167": {
 			"id": 167,
 			"model": "CX70v50",
