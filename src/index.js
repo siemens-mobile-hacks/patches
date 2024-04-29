@@ -17,6 +17,8 @@ if (!process.env.KIBAB_TEST_USER) {
 	process.exit(1);
 }
 
+let force_all = !!process.env.KIBAB_FULL_SYNC;
+
 let [login, password] = process.env.KIBAB_TEST_USER.split(':');
 
 let api = new KibabAPI(login, password);
@@ -24,14 +26,14 @@ let all_models = await api.getAllModels();
 for (let model of all_models) {
 	console.log(`[${model.name}]`);
 	fs.mkdirSync(`${OUT_DIR}/${model.name}`, { recursive: true });
-	
+
 //	if (model.name != 'CF75v23')
 //		continue;
-	
+
 	let all_model_patches = await api.getAllPatches(model.modelId, model.swId);
 	let all_patches_ids = all_model_patches.map((p) => p.id);
-	
-	await downloadPatches(api, all_patches_ids, false);
+
+	await downloadPatches(api, all_patches_ids, force_all);
 }
 
 let index_data = {};
@@ -55,29 +57,29 @@ async function downloadPatches(api, all_patches_ids, force_all) {
 	let chunk_id = 0;
 	let unchnaged_patches = 0;
 	let index_data = {};
-	
+
 	if (fs.existsSync(`${OUT_DIR}/index.json`))
 		index_data = JSON.parse(fs.readFileSync(`${OUT_DIR}/index.json`));
-	
+
 	let chunks = getChunks(all_patches_ids, 10);
-	
+
 	if (chunks.length > 0)
 		chunks.unshift([chunks[0].shift()]);
-	
+
 	while (chunks.length > 0) {
 		let chunk = chunks.shift();
-		
+
 		console.log(`chunk #${chunk_id} [`, chunk.join(', '), `]`);
-		
+
 		await api.clearCart();
 		let not_added = await api.addToCart(chunk);
 		if (not_added.length > 0) {
 			for (let not_added_pid of not_added.reverse())
 				chunks.unshift([not_added_pid]);
 		}
-		
+
 		let blob = await api.downloadCart();
-		
+
 		findBrokenFiles(blob);
 		let found_zip_start = findZipStart(blob);
 		if (found_zip_start < 0) {
@@ -85,9 +87,9 @@ async function downloadPatches(api, all_patches_ids, force_all) {
 			fs.writeFileSync(`/tmp/invalid-patch.zip`, blob)
 			throw new Error(`Invalid ZIP:`);
 		}
-		
+
 		blob = blob.slice(found_zip_start);
-		
+
 		let patches_from_zip;
 		try {
 			patches_from_zip = await getPatchesFromArchive(blob);
@@ -97,7 +99,7 @@ async function downloadPatches(api, all_patches_ids, force_all) {
 			fs.writeFileSync(`/tmp/invalid-patch.zip`, blob)
 			throw e;
 		}
-		
+
 		for (let member of patches_from_zip) {
 			let patch_text = iconv.decode(member.data, 'win1251');
 			let patch_id = patch_text.match(/;PatchID: (\d+)/i)[1];
@@ -105,52 +107,52 @@ async function downloadPatches(api, all_patches_ids, force_all) {
 			let model = lines[0].replace(/^;/, '').trim();
 			let title_ru = lines[1].replace(/^;/, '').trim();
 			let title_en = lines[2].replace(/^;/, '').trim();
-			
+
 			index_data[model] = index_data[model] || {};
-			
+
 			let patch_file = `${model}/${path.basename(member.fileName)}`;
-			
+
 			console.log(`+ ${patch_id}: ${patch_file}`);
-			
+
 			let old_patch_md5;
 			let old_patch = index_data[model][patch_id];
 			if (old_patch) {
 				old_patch_md5 = fileMD5(`${OUT_DIR}/${old_patch.file}`);
-				
+
 				if (old_patch.file != patch_file) {
 					console.log(`  rename ${old_patch.file} -> ${patch_file}`);
 					child_process.spawnSync("git", ["add", old_patch.file], { cwd: OUT_DIR });
 					child_process.spawnSync("git", ["mv", old_patch.file, patch_file], { cwd: OUT_DIR });
 				}
 			}
-			
+
 			let additional_file;
 			let additional_file_link = patch_text.match(/^;!к патчу прикреплён файл, (.*?)\r\n$/im)?.[1];
 			let old_additional_file_md5;
 			let new_additional_file_md5;
-			
+
 			if (additional_file_link) {
 				let parsed_url = new URL(additional_file_link);
 				additional_file = `${model}/${path.basename(parsed_url.searchParams.get('f'))}`;
-				
+
 				console.log(`+ ${patch_id}: ${additional_file}`);
-				
+
 				if (old_patch && old_patch.additionalFile) {
 					old_additional_file_md5 = fileMD5(`${OUT_DIR}/${old_patch.additionalFile}`);
-					
+
 					if (old_patch.additionalFile != additional_file) {
 						console.log(`  rename ${old_patch.additionalFile} -> ${additional_file}`);
 						child_process.spawnSync("git", ["add", old_patch.additionalFile], { cwd: OUT_DIR });
 						child_process.spawnSync("git", ["mv", old_patch.additionalFile, additional_file], { cwd: OUT_DIR });
 					}
 				}
-				
+
 				let additional_data = await fetch(additional_file_link).then((res) => res.arrayBuffer()).then((res) => Buffer.from(res));
 				fs.writeFileSync(`${OUT_DIR}/${additional_file}`, additional_data);
-				
+
 				new_additional_file_md5 = fileMD5(`${OUT_DIR}/${additional_file}`);
 			}
-			
+
 			let new_patch = {
 				id:				patch_id,
 				model:			model,
@@ -162,17 +164,17 @@ async function downloadPatches(api, all_patches_ids, force_all) {
 					en:		title_en,
 				}
 			};
-			
+
 			fs.writeFileSync(`${OUT_DIR}/${patch_file}`, member.data);
 			let new_patch_md5 = fileMD5(`${OUT_DIR}/${patch_file}`);
-			
+
 			let changed;
 			if (new_patch_md5 !== old_patch_md5 || new_additional_file_md5 !== old_additional_file_md5) {
 				changed = true;
 			} else {
 				changed = JSON.stringify(old_patch) != JSON.stringify(new_patch);
 			}
-			
+
 			if (changed) {
 				index_data[model][patch_id] = new_patch;
 				unchnaged_patches = 0;
@@ -180,12 +182,12 @@ async function downloadPatches(api, all_patches_ids, force_all) {
 				unchnaged_patches++;
 			}
 		}
-		
+
 		if (unchnaged_patches >= 1 && !force_all) {
 			// console.log(`STOP: unchnaged_patches=${unchnaged_patches}`);
 			break;
 		}
-		
+
 		chunk_id++;
 	}
 	fs.writeFileSync(`${OUT_DIR}/index.json`, JSON.stringify(index_data, null, '\t'));
@@ -216,7 +218,7 @@ function fileMD5(file) {
 
 function getPatchesFromArchive(buffer) {
 	let patches = [];
-	
+
 	return new Promise((callback, error) => {
 		yauzl.fromBuffer(buffer, {lazyEntries: true}, function (err, zipfile) {
 			if (err)
