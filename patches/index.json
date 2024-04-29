@@ -51350,16 +51350,6 @@
 				"ru": "Меняет картинки в фото-видео камере",
 				"en": "Changes pictures in photo-video camera"
 			}
-		},
-		"8243": {
-			"id": 8243,
-			"model": "S65v50",
-			"file": "S65v50/8243-AdpcmAllFreq.vkp",
-			"mtime": 1200428786000,
-			"title": {
-				"ru": "AdpcmAllFreq",
-				"en": "AdpcmAllFreq"
-			}
 		}
 	},
 	"S65v53": {
