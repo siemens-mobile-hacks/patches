@@ -16,7 +16,7 @@ git diff --exit-code patches || {
 	git stash
 	git pull
 	git stash pop
-	git add patches deleted
+	git add patches
 	git commit -m "sync"
 	git push
 }
