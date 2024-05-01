@@ -28,7 +28,7 @@
 1738CE0: 1C1F1E1F1E1F1F1E1F1E1F00C0E963A8
 1738CF0: F3040000992071A1E3F8B8A0008076A8
 1738D00: CF5782A0DE8C73A1FA04000053040000
-#pragma enable old_equal_ff
+#pragma disable old_equal_ff
 0136EF9: 0AC12B953593AE2BACCE 0AC0298D367839450A0A ;"Автом. время" => "Календарь"
 ;подстройка координаты Y ®  *S*h*a*D*o*W*
 ;1738C0E: 2E YY ;для строки дней недели
