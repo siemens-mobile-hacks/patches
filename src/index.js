@@ -3,6 +3,8 @@ import yauzl from 'yauzl';
 import iconv from 'iconv-lite';
 import crypto from 'crypto';
 import path from 'path';
+import yargs from 'yargs'
+import { hideBin } from 'yargs/helpers'
 import { globSync } from 'glob';
 import child_process from 'child_process';
 import { KibabAPI } from './KibabAPI.js';
@@ -13,14 +15,35 @@ process.env.TZ = 'Europe/Moscow'; // thanks Viktor89
 const OUT_DIR = `${import.meta.dirname}/../patches`;
 const DELETED_DIR = `${import.meta.dirname}/../deleted`;
 
-if (!process.env.KIBAB_TEST_USER) {
-	console.error(`KIBAB_TEST_USER is not set!`);
+const argv = yargs(hideBin(process.argv))
+	.option('cookie', {
+		type: 'string',
+		description: 'Kibab cookie: login:password_hash',
+		default: ""
+	})
+	.option('full-sync', {
+		type: 'boolean',
+		description: 'Run full sync (~3h).',
+		default: false
+	})
+	.option('from-model', {
+		type: 'boolean',
+		description: 'Run sync starting from specified model.',
+		default: false
+	})
+	.option('patches', {
+		type: 'string',
+		description: 'Patches IDs for partial sync.',
+		default: false
+	})
+	.parse();
+
+if (!argv.cookie) {
+	console.error(`--cookie is not set!`);
 	process.exit(1);
 }
 
-let forceAll = !!process.env.KIBAB_FULL_SYNC;
-
-let [login, password] = process.env.KIBAB_TEST_USER.split(':');
+let [login, password] = argv.cookie.split(':');
 let api = new KibabAPI(login, password);
 
 console.time("garbageCollector");
@@ -65,20 +88,32 @@ async function garbageCollector(api) {
 }
 
 async function syncPatches(api) {
+	if (argv["full-sync"]) {
+		console.log("-------------------------------------------------");
+		console.log(`Full sync mode!!!`);
+		console.log("-------------------------------------------------");
+	}
+
+	if (argv["patches"]) {
+		let patchesToSync = argv["patches"].split(/\s*,\s*/);
+		await downloadPatches(api, patchesToSync, true);
+		return;
+	}
+
 	let allModels = await api.getAllModels();
 	let flag = false;
 	for (let model of allModels) {
 		console.log(`[${model.name}]`);
 		fs.mkdirSync(`${OUT_DIR}/${model.name}`, { recursive: true });
 
-		if (process.env.FROM_MODEL && model.name != process.env.FROM_MODEL && !flag)
+		if (argv["from-model"] && model.name != argv["from-model"] && !flag)
 			continue;
 		flag = true;
 
 		let allModelPatches = await api.getAllPatches(model.modelId, model.swId);
 		let allModelPatchesIds = allModelPatches.map((p) => p.id);
 
-		await downloadPatches(api, allModelPatchesIds, forceAll);
+		await downloadPatches(api, allModelPatchesIds, argv["full-sync"]);
 	}
 }
 
@@ -97,13 +132,13 @@ function generateFilesList() {
 	fs.writeFileSync(`${OUT_DIR}/files.json`, JSON.stringify(indexList, null, '\t'));
 }
 
-async function downloadPatches(api, allPatchesIds, forceAll) {
+async function downloadPatches(api, allPatchesIds, fullSync) {
 	let chunkId = 0;
 	let unchnagedPatches = 0;
 	let indexData = loadIndex();
 
 	let chunks = getChunks(allPatchesIds, 10);
-	if (!forceAll && chunks.length > 0 && chunks[0].length >= 5)
+	if (!fullSync && chunks.length > 0 && chunks[0].length >= 5)
 		chunks.unshift([chunks[0].shift()]);
 
 	while (chunks.length > 0) {
@@ -156,6 +191,7 @@ async function downloadPatches(api, allPatchesIds, forceAll) {
 
 			let oldPatchHash;
 			let oldPatch = indexData[model][patchId];
+
 			if (oldPatch) {
 				oldPatchHash = fileMD5(`${OUT_DIR}/${oldPatch.file}`);
 
@@ -176,6 +212,9 @@ async function downloadPatches(api, allPatchesIds, forceAll) {
 				additionalFile = `${model}/${patchId}-${path.basename(parsedUrl.searchParams.get('f'))}`;
 
 				console.log(`+ ${patchId}: ${additionalFile}`);
+
+				if (oldPatch && oldPatch.additionalFile && !fs.existsSync(`${OUT_DIR}/${oldPatch.additionalFile}`))
+					oldPatch.additionalFile = null;
 
 				if (oldPatch && oldPatch.additionalFile) {
 					oldAdditionalFileHash = fileMD5(`${OUT_DIR}/${oldPatch.additionalFile}`);
@@ -223,7 +262,7 @@ async function downloadPatches(api, allPatchesIds, forceAll) {
 			}
 		}
 
-		if (unchnagedPatches >= 1 && !forceAll) {
+		if (unchnagedPatches >= 1 && !fullSync) {
 			// console.log(`STOP: unchnagedPatches=${unchnagedPatches}`);
 			break;
 		}

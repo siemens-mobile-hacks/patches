@@ -5,7 +5,7 @@ set -x
 cd $(dirname $0)/../
 
 npm install
-node .
+node . --cookie=$KIBAB_TEST_USER "$@"
 
 export TZ=
 
