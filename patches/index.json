@@ -28627,16 +28627,6 @@
 				"en": "* Some Netmonitor data for Java v1.3 *"
 			}
 		},
-		"5519": {
-			"id": 5519,
-			"model": "CX75v13",
-			"file": "CX75v13/5519-FreeRAM_relocation.vkp",
-			"mtime": 1158168678000,
-			"title": {
-				"ru": "Исправление расположения FreeRAM для правильной работы МАСТЕР-патча",
-				"en": "FreeRAM relocation for normaly work MP"
-			}
-		},
 		"5601": {
 			"id": 5601,
 			"model": "CX75v13",
