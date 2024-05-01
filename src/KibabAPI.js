@@ -33,6 +33,9 @@ class KibabAPI {
 			let patchId = +$(ids[i]).text().trim();
 			let phoneModel = $(models[i]).text().trim();
 
+			if (!phoneModel.match(/^([\w\d_-]+)$/))
+				throw new Error(`Invalid model: ${phoneModel}`);
+
 			deletedPatchesIds.push({id: patchId, model: phoneModel});
 		}
 		return deletedPatchesIds;
@@ -50,8 +53,11 @@ class KibabAPI {
 			let linkUrl = $(p).attr("href");
 
 			let phone = linkTitle.match(/\s([a-z0-9]+v\d+)/i)?.[1];
-			let phModelId = linkUrl.match(/ph_model=(\d+)/)[1];
-			let phSwId = linkUrl.match(/ph_sw=(\d+)/)[1];
+			let phModelId = +linkUrl.match(/ph_model=(\d+)/)[1];
+			let phSwId = +linkUrl.match(/ph_sw=(\d+)/)[1];
+
+			if (!phone.match(/^([\w\d_-]+)$/))
+				throw new Error(`Invalid model: ${phone}`);
 
 			let [model, sw] = phone.split('v');
 

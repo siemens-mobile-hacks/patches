@@ -45,14 +45,16 @@ async function garbageCollector(api) {
 
 		let deletedPatches = await api.getDeletedPatches(page);
 		for (let p of deletedPatches) {
-			if (indexData[p.model] && indexData[p.model][p.id]) {
-				let patchInfo = indexData[p.model][p.id];
-				delete indexData[p.model][p.id];
+			for (let file of globSync(`${OUT_DIR}/${p.model}/${p.id}-*`)) {
+				if (fs.existsSync(file)) {
+					child_process.spawnSync("git", ["rm", file], { cwd: OUT_DIR });
+					deletedCnt++;
+				}
 
-				for (let file of globSync(`${OUT_DIR}/${patchInfo.id}-*`))
-					child_process.spawnSync("git", ["rm", `${OUT_DIR}/${file}`], { cwd: OUT_DIR });
-
-				deletedCnt++;
+				if (indexData[p.model] && indexData[p.model][p.id]) {
+					delete indexData[p.model][p.id];
+					deletedCnt++;
+				}
 			}
 		}
 
