@@ -23489,16 +23489,6 @@
 				"en": "Changing face of back clocks"
 			}
 		},
-		"2558": {
-			"id": 2558,
-			"model": "CF75v22",
-			"file": "CF75v22/2558-eq_v22.vkp",
-			"mtime": 1142802000000,
-			"title": {
-				"ru": "Замена анимации при проигрывании музыки",
-				"en": "Change Animation in Music Player"
-			}
-		},
 		"2994": {
 			"id": 2994,
 			"model": "CF75v22",
