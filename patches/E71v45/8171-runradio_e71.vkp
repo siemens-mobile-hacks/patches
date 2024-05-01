@@ -17,5 +17,6 @@
 10: 6C010021301C94DF301CC7DF2901FFBD
 20: "0:\\Applications\\Radio\\Radio.jar",00 ; путь к мидлету
 #pragma disable old_equal_ff
++0
 ;------------------------- end -------------------------
 

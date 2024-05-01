@@ -23,5 +23,6 @@ http://patches.kibab.com/cnt.php5?d=cx70v50&f=Start_midlet_at_an_insert_new_SIM.
 20: FFBFBDE8,0xA0C3B828
 28: "2:\\gsm.jar",0000 ;путь к мидлету, его можно поменять на любой другой. !Слэшей должно быть по два!
 #pragma disable old_equal_ff
++0
 ;------------------------- end -------------------------
 

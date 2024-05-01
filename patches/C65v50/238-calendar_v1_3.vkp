@@ -29,7 +29,7 @@
 17112E0: 1C1F1E1F1E1F1F1E1F1E1F00F0E663A8
 17112F0: A7040000B5AF6EA12F81B7A0000475A8
 1711300: CF5782A0DE1271A1AE04000007040000
-#pragma enable old_equal_ff
+#pragma disable old_equal_ff
 0136EF9: 0AC12B953593AE2BACCE 0AC0298D367839450A0A ;"Автом. время" => "Календарь"
 ;подстройка координаты Y ®  *S*h*a*D*o*W*
 ;171120E: 2E 24 ;для строки дней недели

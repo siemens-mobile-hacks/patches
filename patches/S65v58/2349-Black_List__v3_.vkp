@@ -28,7 +28,7 @@
 080F520: FFB501490847C046,0xA0FC6C01
 
 0FC6CAC: 0xA132EC85,0xA0B4D841
-
+#pragma disable old_equal_ff
 
 ;------------------------- end -------------------------
 

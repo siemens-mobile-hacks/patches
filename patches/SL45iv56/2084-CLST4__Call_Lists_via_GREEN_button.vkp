@@ -14,11 +14,11 @@
 Release: 11.10.05
 */
 -0A00000 
-#pragma enable old_equal_ff 
+
 0xDE3186: E6FEEA00E6FFE902 E6FEA017E6FF8303 
 0xDE3154: E6FEEA00E6FFE902 E6FEC617E6FF8303 
 0xDE31B8: E6FEEA00E6FFE902 E6FEEC17E6FF8303 
-
+#pragma enable old_equal_ff 
 0xE0D7A0: 0000000016D8E0000000000000000000 
 0xE0D7B0: E600E902E000E902120000006A2DDE00 
 0xE0D7C0: 0000000000000000000044D8E0000000 
@@ -43,5 +43,7 @@ Release: 11.10.05
 0xE0D8F0: 922DDADC0428E6F4FEFFFADE022E 
 ;0xE0D87A: 7881 7089 ; - раскомментировать, если хотите использовать 
 ; и верхний край для перехода в предыдущий список.
+#pragma disable old_equal_ff
++0
 ;------------------------- end -------------------------
 

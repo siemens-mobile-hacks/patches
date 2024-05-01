@@ -98,7 +98,6 @@
 
 ; ===== Sample KeySequences ====================
 ; can be anywhere in Flash - set "address of Key Sequences"
-#pragma enable old_equal_ff
 
 ; Sample Key Sequences FW dependent
 

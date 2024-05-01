@@ -12,7 +12,6 @@
 
 English: On auto keylock vibra doesn't turn on
 */
-#pragma disable old_equal_ff
 1158E10: 01210320 A7F678F9 
 1159198: 01210320 A6F6B2FF
 

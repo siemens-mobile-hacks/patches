@@ -32,5 +32,6 @@ A0: 0730A0E3F6FFFFEAB80053E35130A003
 B0: F3FFFF0ABA0053E35430A003F0FFFF0A
 C0: BF0053E3E1FFFF1A5730A0E3ECFFFFEA
 #pragma disable old_equal_ff
++0
 ;------------------------- end -------------------------
 

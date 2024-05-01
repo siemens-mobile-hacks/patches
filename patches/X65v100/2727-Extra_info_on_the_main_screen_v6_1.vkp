@@ -107,6 +107,6 @@
 {endsm}\
 {30 xy RAM y=60}\
 {32 a Address v=A86CEF8A}",00
-
+#pragma disable old_equal_ff
 ;------------------------- end -------------------------
 

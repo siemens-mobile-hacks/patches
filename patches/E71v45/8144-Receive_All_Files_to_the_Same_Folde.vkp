@@ -22,6 +22,6 @@
 1310020: 141C00254B5D43550135A542FAD1F0BD
 1310030: 0800,'4:\\Inbox' ;folder for OBEX mode, may use MicroSD
 1310050: 0800,'0:\\Inbox' ;folder for Phone mode, don't use MicroSD!
-
+#pragma disable old_equal_ff
 ;------------------------- end -------------------------
 

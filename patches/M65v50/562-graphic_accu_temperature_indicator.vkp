@@ -81,5 +81,6 @@ A0: BD4163A1 ; DrawImage
 ; turn on line means: canvas doesn't select a background automatically, but 
 ; erases always with SkinApplicationIdleImage. use with an activated background 
 ; image on phone to calibrate canvas'.
++0
 ;------------------------- end -------------------------
 

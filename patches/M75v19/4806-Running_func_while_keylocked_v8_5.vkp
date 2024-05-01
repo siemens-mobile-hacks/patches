@@ -186,6 +186,6 @@ B48: "0:\\Java\\jam\\Applications\\DocViewer\\DocViewer.jar",00 ; Midlet 1
 ;E48: ; Midlet F
 
 #pragma disable old_equal_ff
-
++0
 ;------------------------- end -------------------------
 

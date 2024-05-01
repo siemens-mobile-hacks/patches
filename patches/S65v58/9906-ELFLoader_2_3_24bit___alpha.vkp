@@ -515,5 +515,6 @@
 02C: 0xA0FDA001  ; f011: fread
 030: 0xA0FDA051  ; f012: fwrite
 #pragma disable old_equal_ff
++0
 ;------------------------- end -------------------------
 

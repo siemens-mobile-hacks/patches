@@ -8,14 +8,16 @@
 /*
 Release: 12.11.05
 */
-#pragma enable old_equal_ff 
+
 224750: DAC21E48 DADBF22D ; unplug HF - profile 0 
-;224782: DAC21E48 DAE0A0C7 ; connect HF - profile 1 
+;224782: DAC21E48 DAE0A0C7 ; connect HF - profile 1
+#pragma enable old_equal_ff 
 0x40C7A0: D7400D00F2FD8864E6000E00CC00F6FD 
 0x40C7B0: 58BFF6FC56BFE6FC0303D7400D00F6FC 
 0x40C7C0: 8864FAA44A98E6000E00CC00F2FD56BF 
 0x40C7D0: 48D23D07F2FC58BFF6FD58BFF68E56BF 
-0x40C7E0: 2DECF6FD58BFF6FC56BFDB00 
+0x40C7E0: 2DECF6FD58BFF6FC56BFDB00
+#pragma disable old_equal_ff
 40C7B8: 0303 0101 ; wished profile 
 ;----------------------------------------- 
 ;DBF22D ;Entry Point for long-pressed key 1 (or short-pressed key 1 + green button) 

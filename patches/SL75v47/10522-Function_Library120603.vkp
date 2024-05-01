@@ -961,6 +961,7 @@
 0E24: 0xA0A0A811   ; 389: void SetDepthBufferOnLCDLAYER(LCDLAYER *, char depth)
 ;E28:              ; 38A: void *RamAudioHookProc()
 0E2C: 0xA8D191A4   ; 38B: char *RamLastStoreString()
-
+#pragma disable old_equal_ff
++0
 ;------------------------- end -------------------------
 

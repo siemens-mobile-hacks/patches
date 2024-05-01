@@ -8,13 +8,6 @@
 /*
 Эльфпак 2.2 с поддержкой МП14
 */
-;* ELFpack v2.2 *
-;Release 6.04.2007
-;E71v45
-;(c) 2007 by Rst7/CBSIE, BoBa, Kren
-
-;no english documentation available
-
 ;SWILIB_FUNC171,SWILIB_FUNC172
 #pragma enable old_equal_ff
 0x000745C4: 008507A0EC8407A0
@@ -340,7 +333,6 @@
 0x000793A0: B70076001621A400A600A000312E322E
 0x000793B0: 35000000343A5C5A42696E5C696D675C
 0x000793C0: 00000000
-#pragma enable old_equal_ff
 ;PATCH_EXT2_R7_1
 #pragma disable old_equal_ff
 0x005026AC: 10739FE5 66D6EDEB

@@ -8,7 +8,6 @@
 /*
 
 */
-
 +0FD4000
 #pragma enable old_equal_ff
 0000: 0xA0092E1C ; 000: void loopback0()
@@ -857,7 +856,6 @@ BB4: 0xA116B768    ; 2ED: int i2c_receive(I2C_MSG *msg)
 0E34: 0xA0D1EA71   ; 38D: void SetPropTo_obj0x15
 0E38: 0xA0CE2D37   ; 38E: void SetPropTo_obj0x13
 #pragma disable old_equal_ff
-
-
++0
 ;------------------------- end -------------------------
 

@@ -33,7 +33,7 @@
 16600E0: 1C1F1E1F1E1F1F1E1F1E1F00A8E763A8
 16600F0: BD040000BD4163A13B0DB2A000AE75A8
 1660100: CF5782A0DE0066A1C404000027040000
-#pragma enable old_equal_ff
+#pragma disable old_equal_ff
 0136EF9: 0AC12B953593AE2BACCE 0AC0298D367839450A0A ;"Автом. время" => "Календарь"
 ;Картинки для патча * Календарь на главном экране v1.3 ** Calendar on the mainscreen v1.3 * 1213-1220 © DeHuCoH, § AsteriX
 0DA260C: 31130100B006E8A0 0D0A0800805505A0

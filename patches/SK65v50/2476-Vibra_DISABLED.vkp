@@ -26,7 +26,6 @@
 1400090: ECFFEC02E8FDEC0EDF027B0209FDC0EC
 14000A0: E802ECFCE8ECC00E0609FEC0EC02E8FF
 14000B0: EC02C0
-#praqma disable old_equal_ff
-
+#pragma disable old_equal_ff
 ;------------------------- end -------------------------
 

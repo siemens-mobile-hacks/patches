@@ -8,7 +8,6 @@
 /*
 
 */
-
 +0074000
 #pragma enable old_equal_ff
 0000: 0xA0002070   ;   0: void loopback0()
@@ -904,7 +903,7 @@
 0E44: 0xA0093AB4   ; 391: void *MemMBPAlloc(void *pool, int size)
 0E48: 0xA00947A8   ; 392: void MemMBPFree(void *pool, void *ptr)
 0E4C: 0xA8DB49FC   ; 393: void *MopiResourcePool()
-
-
+#pragma disable old_equal_ff
++0
 ;------------------------- end -------------------------
 

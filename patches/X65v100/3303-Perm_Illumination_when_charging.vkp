@@ -24,5 +24,6 @@ English: When charging, illumination is turned on permanently. User can setup th
 {3 cb `Light dynlight`}\
 {4 b `Light brightness:` range=1..100 v=100}",00
 #pragma disable old_equal_ff
++0
 ;------------------------- end -------------------------
 

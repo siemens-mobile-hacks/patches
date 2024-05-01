@@ -52,6 +52,6 @@
 01FF400:  F9FFFF1A0C10A0E18BB0B0E100106122
 01FF410:  000060421EFF2FE10010E0E30000A0E3
 01FF420:  FFFFFFFF 1EFF2FE1
-
+#pragma disable old_equal_ff
 ;------------------------- end -------------------------
 

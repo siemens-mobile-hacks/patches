@@ -150,5 +150,7 @@ Every patch compatible with Master-Patch has its own config-section. You don't n
 13C0: 50006100740063006800200076003300
 13D0: 2E003100200062006500740061002000
 13E0: 3300
+#pragma disable old_equal_ff
++0
 ;------------------------- end -------------------------
 

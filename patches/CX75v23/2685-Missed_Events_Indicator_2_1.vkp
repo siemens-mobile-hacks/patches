@@ -94,6 +94,6 @@ event 12{57 xy `digit` x=36 y=76}{59 xy `icon` x=43 y=73}","\
 {62 cb `disable standard canvas`}","\
 {61 cb `disable standard icons` v=1}","\
 ",00
-
+#pragma disable old_equal_ff
 ;------------------------- end -------------------------
 

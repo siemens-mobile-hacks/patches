@@ -26,7 +26,7 @@
 0D28090: 4018211C034B984700BDC046D00177A8
 0D280A0: CF5782A0A16D3DA1F08A83A04DBB8CA0
 0D280B0: 97120000
-#pragma enable old_equal_ff
+#pragma disable old_equal_ff
 
 0D2805A: 2C 95 ; убрать запятую | remove comma
 ;0D28028: 07 NP ; Profile "No patches"

@@ -16,5 +16,6 @@
 10: 0FE0A0E111FF2FE1FFBFBDE8,0xA082FAA0 ; ---A
 20: 50B751A8 ; B
 #pragma disable old_equal_ff
++0
 ;------------------------- end -------------------------
 

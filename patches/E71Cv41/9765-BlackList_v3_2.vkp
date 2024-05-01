@@ -69,6 +69,6 @@ C0: 0xB1C2D3E4,0x0000CD09,00000000,00000000,"\
 {sm Prof7}{68 usetp call}{endsm}","\
 {sm Prof8}{79 usetp call}{endsm}",00
 #pragma disable old_equal_ff
-
++0
 ;------------------------- end -------------------------
 

@@ -29,6 +29,7 @@ Release: 06.02.06
 0x27DB50: A844F6F40EFE5B55F3F80CFEF3F90EFE 
 0x27DB60: 06F43030DC6FB99EE48E0100E4BE0200 
 0x27DB70: 08E2CB00 
+#pragma disable old_equal_ff
 ;Настройка: 
 ;3BE10C: 07 07 ; - Х-координата строки 
 ;27DB20: 283D 283D ; - символы слева 

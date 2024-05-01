@@ -19,5 +19,6 @@ English: For this patch to work, the filter must be switched on for any group ex
 #pragma enable old_equal_ff
 0473D00: FFB5054908477FB504490847FFB50149
 0473D10: 0847C046,0xA0FC6C01,0xA0FC6C2B,0xA0FC6C65
+#pragma disable old_equal_ff
 ;------------------------- end -------------------------
 

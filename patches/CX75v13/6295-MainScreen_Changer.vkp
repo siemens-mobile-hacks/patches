@@ -108,5 +108,6 @@ font sizes: (0-10)","\
 {0x9C cb `disable canvases` v=0}","\
 {endsm}","\
 "00
+#pragma disable old_equal_ff
 ;------------------------- end -------------------------
 
