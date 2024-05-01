@@ -85210,16 +85210,6 @@
 				"en": "Font(super)"
 			}
 		},
-		"6364": {
-			"id": 6364,
-			"model": "C72v22",
-			"file": "C72v22/6364-Font_Figures_.vkp",
-			"mtime": 1164027578000,
-			"title": {
-				"ru": "Фигурный шрифт",
-				"en": "Font(Figures)"
-			}
-		},
 		"6395": {
 			"id": 6395,
 			"model": "C72v22",
