@@ -47,7 +47,6 @@
 {22 sl `temperature calibration (-3..3°C x 10)` r=-30..30}","\
 {endsm}",00
 
-#pragma enable old_equal_ff
 ##### 1367 - 1380 #####
 00FD0050: 1A068500,0xa01A1A00
 
@@ -150,8 +149,5 @@
 001A1cf0: 1B000F0F0F0F0F0F0F0F0F0F0F0F0F0F
 
 #pragma disable old_equal_ff
-
-
-
 ;------------------------- end -------------------------
 
