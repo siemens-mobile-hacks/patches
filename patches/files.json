@@ -2299,9 +2299,7 @@
 	[
 		"CX75v13/832-small_and_middle_fonts.vkp"
 	],
-	[
-		"CX75v13/833-super_font.vkp"
-	],
+	null,
 	[
 		"M65v50/834-Change_minute_beep_during_call.vkp"
 	],
@@ -7272,9 +7270,7 @@
 	[
 		"CX75v13/2557-Enable_Vibra.vkp"
 	],
-	[
-		"CF75v22/2558-eq_v22.vkp"
-	],
+	null,
 	[
 		"S65v58/2559-MiniGPS_v1_02b-MP.vkp"
 	],
@@ -12714,9 +12710,7 @@
 	[
 		"CX70v50/4457-zamena_znascka_reszim_bez_zvyka.vkp"
 	],
-	[
-		"CX70v50/4458-Analogovie_scasi.vkp"
-	],
+	null,
 	[
 		"C75v22/4459-Change_buttons_in_calculator.vkp"
 	],
@@ -15706,9 +15700,7 @@
 	[
 		"CX70v50/5496-zamena_papki_standart_na_papky_xpv2.vkp"
 	],
-	[
-		"CX70v50/5497-Wav_Amr_Mid_papki_pod_xp.vkp"
-	],
+	null,
 	[
 		"S75v42/5498-DisableASP_v12.vkp"
 	],
@@ -18175,9 +18167,7 @@
 	[
 		"C72v22/6363-Font_super_.vkp"
 	],
-	[
-		"C72v22/6364-Font_Figures_.vkp"
-	],
+	null,
 	[
 		"M75v25/6365-enable_built-in_wv_client.vkp"
 	],
@@ -18270,9 +18260,7 @@
 	[
 		"C72v22/6396-Run_Java_from_Everywhere__.vkp"
 	],
-	[
-		"C72v22/6397-Win-1251_in_e-mail-client_with_smal.vkp"
-	],
+	null,
 	null,
 	[
 		"CX75v13/6399-Run_Refresher.vkp"

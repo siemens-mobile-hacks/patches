@@ -20157,7 +20157,7 @@
 			"id": "6672",
 			"model": "SL75v47",
 			"file": "SL75v47/6672-Extended_Calls__dialed_list.vkp",
-			"mtime": 1168022998000,
+			"mtime": 1714494564000,
 			"title": {
 				"ru": "Расширенный список вызовов",
 				"en": "Extended \"Calls dialed\" list"
@@ -20680,7 +20680,7 @@
 			"id": "7381",
 			"model": "SL75v47",
 			"file": "SL75v47/7381-The_Claw_fonts.vkp",
-			"mtime": 1178364548000,
+			"mtime": 1714495034000,
 			"title": {
 				"ru": "The_Claw_fonts",
 				"en": "The_Claw_fonts"
@@ -23487,16 +23487,6 @@
 			"title": {
 				"ru": "Замена циферблата часов на заднем экране",
 				"en": "Changing face of back clocks"
-			}
-		},
-		"2558": {
-			"id": "2558",
-			"model": "CF75v22",
-			"file": "CF75v22/2558-eq_v22.vkp",
-			"mtime": 1142802000000,
-			"title": {
-				"ru": "Замена анимации при проигрывании музыки",
-				"en": "Change Animation in Music Player"
 			}
 		},
 		"2994": {
@@ -27177,16 +27167,6 @@
 			"title": {
 				"ru": "Замена среднего и большого шрифтов",
 				"en": "Small and middle font change"
-			}
-		},
-		"833": {
-			"id": "833",
-			"model": "CX75v13",
-			"file": "CX75v13/833-super_font.vkp",
-			"mtime": 1129665600000,
-			"title": {
-				"ru": "Супер шрифт (RUS and ENG)",
-				"en": "Super Font (RUS and ENG)"
 			}
 		},
 		"842": {
@@ -35504,7 +35484,7 @@
 			"id": "5345",
 			"model": "M75v13",
 			"file": "M75v13/5345-Disable_Retarget_Exit.vkp",
-			"mtime": 1157305236000,
+			"mtime": 1714494336000,
 			"title": {
 				"ru": "Отключить Retarget Exit",
 				"en": "Disable Retarget Exit"
@@ -63056,16 +63036,6 @@
 				"en": "zamena znascka reszim bez zvyka"
 			}
 		},
-		"4458": {
-			"id": "4458",
-			"model": "CX70v50",
-			"file": "CX70v50/4458-Analogovie_scasi.vkp",
-			"mtime": 1154042384000,
-			"title": {
-				"ru": "Аналоговые часы.Прикольные",
-				"en": "Analogovie scasi"
-			}
-		},
 		"4478": {
 			"id": "4478",
 			"model": "CX70v50",
@@ -63145,16 +63115,6 @@
 			"title": {
 				"ru": "Замена папки стандартной на папку хр",
 				"en": "Change folder icon to XP-like style"
-			}
-		},
-		"5497": {
-			"id": "5497",
-			"model": "CX70v50",
-			"file": "CX70v50/5497-Wav_Amr_Mid_papki_pod_xp.vkp",
-			"mtime": 1157892908000,
-			"title": {
-				"ru": "Wav.Amr.Mid+папки под хр",
-				"en": "Wav.Amr.Mid+papki pod xp"
 			}
 		},
 		"5714": {
@@ -71227,7 +71187,7 @@
 			"id": "4784",
 			"model": "S55v20",
 			"file": "S55v20/4784-Change_calculator_softkeys.vkp",
-			"mtime": 1156614734000,
+			"mtime": 1714494630000,
 			"title": {
 				"ru": "Изменение раскладки софт-кнопок в калькуляторе",
 				"en": "Chage soft keys in calculator"
@@ -85240,16 +85200,6 @@
 				"en": "Font(super)"
 			}
 		},
-		"6364": {
-			"id": "6364",
-			"model": "C72v22",
-			"file": "C72v22/6364-Font_Figures_.vkp",
-			"mtime": 1164027578000,
-			"title": {
-				"ru": "Фигурный шрифт",
-				"en": "Font(Figures)"
-			}
-		},
 		"6395": {
 			"id": "6395",
 			"model": "C72v22",
@@ -85268,16 +85218,6 @@
 			"title": {
 				"ru": "Запуск явы отовсюду",
 				"en": "Run Java from Everywhere"
-			}
-		},
-		"6397": {
-			"id": "6397",
-			"model": "C72v22",
-			"file": "C72v22/6397-Win-1251_in_e-mail-client_with_smal.vkp",
-			"mtime": 1164212516000,
-			"title": {
-				"ru": "Win-1251 в e-mail-клиенте при мелком шрифте",
-				"en": "Win-1251 in e-mail-client with small font"
 			}
 		},
 		"6404": {
