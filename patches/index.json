@@ -56892,7 +56892,7 @@
 			"id": 6472,
 			"model": "SL65v50",
 			"file": "SL65v50/6472-Start_midlet_at_SIM_change.vkp",
-			"mtime": 1165334348000,
+			"mtime": 1714566334000,
 			"title": {
 				"ru": "Запуск мидлета при смене SIM-карты",
 				"en": "Start_midlet_at_SIM_change"
