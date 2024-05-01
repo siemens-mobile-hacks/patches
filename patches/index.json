@@ -27169,16 +27169,6 @@
 				"en": "Small and middle font change"
 			}
 		},
-		"833": {
-			"id": 833,
-			"model": "CX75v13",
-			"file": "CX75v13/833-super_font.vkp",
-			"mtime": 1129665600000,
-			"title": {
-				"ru": "Супер шрифт (RUS and ENG)",
-				"en": "Super Font (RUS and ENG)"
-			}
-		},
 		"842": {
 			"id": 842,
 			"model": "CX75v13",
