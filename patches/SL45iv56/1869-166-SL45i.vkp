@@ -13,6 +13,6 @@ Published: July 01, 2004
 
 Патч №166 с http://patch.oslik.ru/SL45_RU
 */
-0x3B41BB: 0E xE ; x Это ID пункта меню: 0=Organiser, 1=Surf/Fun...
+0x3B41BB: 0E XX ; XX это ID пункта меню в формате: 0E=Organiser, 1E=Surf/Fun...
 ;------------------------- end -------------------------
 
