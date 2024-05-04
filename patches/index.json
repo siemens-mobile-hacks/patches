@@ -24981,7 +24981,6 @@
 			"id": "10258",
 			"model": "CF75v23",
 			"file": "CF75v23/10258-ELFLoader_3_0_Z_Vova__Ganster.vkp",
-			"additionalFile": "CF75v23/10258-ELFLoader_3_0_Z_Vova__Ganster.zip",
 			"mtime": 1697014716000,
 			"title": {
 				"ru": "Загрузчик эльфов 3.0 Z.Vova, Ganster",
@@ -41084,7 +41083,6 @@
 			"id": "2058",
 			"model": "C75v22",
 			"file": "C75v22/2058-smails.vkp",
-			"additionalFile": "C75v22/2058-smails.rar",
 			"mtime": 1141246800000,
 			"title": {
 				"ru": "Смайлы",
@@ -46597,7 +46595,6 @@
 			"id": "3737",
 			"model": "CX65v43",
 			"file": "CX65v43/3737-ZIPViewer.vkp",
-			"additionalFile": "CX65v43/3737-ZIPViewer.zip",
 			"mtime": 1153085972000,
 			"title": {
 				"ru": "ZIPViewer",
@@ -77953,7 +77950,6 @@
 			"id": "3059",
 			"model": "SL45iv56",
 			"file": "SL45iv56/3059-DLDR__Daemon_loader_READRESS_v1_0.vkp",
-			"additionalFile": "SL45iv56/3059-DLDR__Daemon_loader_READRESS_v1_0.rar",
 			"mtime": 1145284958000,
 			"title": {
 				"ru": "DLDR. Загрузчик демонов (READRESSED)",
@@ -81456,7 +81452,6 @@
 			"id": "3403",
 			"model": "X75v100",
 			"file": "X75v100/3403-Vibra_icon.vkp",
-			"additionalFile": "X75v100/3403-Vibra_icon.rar",
 			"mtime": 1153217194000,
 			"title": {
 				"ru": "Иконка вибры",
@@ -81467,7 +81462,6 @@
 			"id": "3404",
 			"model": "X75v100",
 			"file": "X75v100/3404-Green_Calculator.vkp",
-			"additionalFile": "X75v100/3404-Green_Calculator.rar",
 			"mtime": 1153217166000,
 			"title": {
 				"ru": "Зеленый Калькулятор",
@@ -81568,7 +81562,6 @@
 			"id": "4039",
 			"model": "X75v100",
 			"file": "X75v100/4039-Pictures_icons_V1.vkp",
-			"additionalFile": "X75v100/4039-Pictures_icons_V1.zip",
 			"mtime": 1152954108000,
 			"title": {
 				"ru": "Иконки картинок",
@@ -81579,7 +81572,6 @@
 			"id": "4059",
 			"model": "X75v100",
 			"file": "X75v100/4059-Playlist_icon_V1.vkp",
-			"additionalFile": "X75v100/4059-Playlist_icon.zip",
 			"mtime": 1153217100000,
 			"title": {
 				"ru": "Иконки плейлиста",
@@ -81601,7 +81593,6 @@
 			"id": "4079",
 			"model": "X75v100",
 			"file": "X75v100/4079-Pictures_icons_V2_-_S75__GPF_.vkp",
-			"additionalFile": "X75v100/4079-Pictures_icons_V2_-_S75__GPF_.zip",
 			"mtime": 1153217016000,
 			"title": {
 				"ru": "Иконки картинок",
@@ -82905,7 +82896,6 @@
 			"id": "6777",
 			"model": "X75v100",
 			"file": "X75v100/6777-folders.vkp",
-			"additionalFile": "X75v100/6777-folders.zip",
 			"mtime": 1168289572000,
 			"title": {
 				"ru": "Папки в экплорере",
@@ -84589,7 +84579,6 @@
 			"id": "9067",
 			"model": "A52v9",
 			"file": "A52v9/9067-Melody_size_from_3400_to_5350-16380.vkp",
-			"additionalFile": "A52v9/9067-Melody_size_from_3400_to_5350-16380.zip",
 			"mtime": 1223559208000,
 			"title": {
 				"ru": "Увеличение максимального размера мелодий с 3400 до 5350-16380 байт",
@@ -93067,7 +93056,6 @@
 			"id": "7223",
 			"model": "C81v51",
 			"file": "C81v51/7223-functions_library.vkp",
-			"additionalFile": "C81v51/7223-functions_library.zip",
 			"mtime": 1212319846000,
 			"title": {
 				"ru": "Библиотека функций",
@@ -95228,7 +95216,6 @@
 			"id": "10215",
 			"model": "C81v51",
 			"file": "C81v51/10215-ELFPack_3_0_by_Z_Vova___Ganster.vkp",
-			"additionalFile": "C81v51/10215-ELFPack_3_0_by_Z_Vova___Ganster.zip",
 			"mtime": 1314125506000,
 			"title": {
 				"ru": "ELFPack 3.0 by Z.Vova & Ganster",
@@ -95269,7 +95256,6 @@
 			"id": "10421",
 			"model": "C81v51",
 			"file": "C81v51/10421-C81v51_video_FS25.vkp",
-			"additionalFile": "C81v51/10421-C81v51_video_FS25.rar",
 			"mtime": 1335033462000,
 			"title": {
 				"ru": "Переключение оконного/полноэкранного видео на лету",
@@ -95400,7 +95386,6 @@
 			"id": "10434",
 			"model": "C81v51",
 			"file": "C81v51/10434-C81sw51_Call_Recorder_v05.vkp",
-			"additionalFile": "C81v51/10434-C81sw51_Call_Recorder_v05.rar",
 			"mtime": 1335037026000,
 			"title": {
 				"ru": "Запись телефонных разговоров",
