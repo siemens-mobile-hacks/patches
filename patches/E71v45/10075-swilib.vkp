@@ -993,8 +993,8 @@
 0EF8: 0xA05681EC ; 3BE: __arm int SetFileAttrib_ws(const WSHDR *path, uint8_t attr, unsigned int *err);
 0EFC: 0xA0567F74 ; 3BF: __arm int FindFirstFile_ws(DIR_ENTRY *dir_entry, const WSHDR *mask, unsigned int *err);
 
-0F00: 0xA094EED3 ; 3C0: __thumb int ShowWait(int flags, int message);
-0F04: 0xA094EF0B ; 3C1: __thumb int ShowPleaseWait(int flags);
+0F00: 0xA094EED3 ; 3C0: __thumb int ShowWaitBox(int flags, int message);
+0F04: 0xA094EF0B ; 3C1: __thumb int ShowPleaseWaitBox(int flags);
 
 #pragma disable old_equal_ff
 +0
