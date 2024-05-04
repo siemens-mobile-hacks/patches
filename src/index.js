@@ -46,9 +46,9 @@ if (!argv.cookie) {
 let [login, password] = argv.cookie.split(':');
 let api = new KibabAPI(login, password);
 
-console.time("garbageCollector");
-await garbageCollector(api);
-console.timeEnd("garbageCollector");
+console.time("removeDeletedPatches");
+await removeDeletedPatches(api);
+console.timeEnd("removeDeletedPatches");
 
 console.time("syncPatches");
 await syncPatches(api);
@@ -58,7 +58,11 @@ console.time("generateFilesList");
 generateFilesList();
 console.timeEnd("generateFilesList");
 
-async function garbageCollector(api) {
+console.time("garbageCollector");
+garbageCollector();
+console.timeEnd("garbageCollector");
+
+async function removeDeletedPatches(api) {
 	let deletedCnt = 0;
 	let page = 0;
 	let indexData = loadIndex();
@@ -123,8 +127,7 @@ function generateFilesList() {
 	for (let model in indexData) {
 		for (let patch of Object.values(indexData[model])) {
 			indexList[patch.id] = [];
-			if (patch.file)
-				indexList[patch.id].push(patch.file);
+			indexList[patch.id].push(patch.file);
 			if (patch.additionalFile)
 				indexList[patch.id].push(patch.additionalFile);
 		}
@@ -132,10 +135,33 @@ function generateFilesList() {
 	fs.writeFileSync(`${OUT_DIR}/files.json`, JSON.stringify(indexList, null, '\t'));
 }
 
+function garbageCollector() {
+	let indexData = loadIndex();
+	let allUsedFiles = {};
+	for (let model in indexData) {
+		for (let patch of Object.values(indexData[model])) {
+			allUsedFiles[patch.file] = true;
+			if (patch.additionalFile)
+				allUsedFiles[patch.additionalFile] = true;
+		}
+	}
+
+	for (let file of readFiles(OUT_DIR)) {
+		if (file.indexOf('/') < 0)
+			continue;
+
+		if (!(file in allUsedFiles)) {
+			console.log(`Redundant file: ${file}`);
+			child_process.spawnSync("git", ["rm", file], { cwd: OUT_DIR });
+		}
+	}
+}
+
 async function downloadPatches(api, allPatchesIds, fullSync) {
 	let chunkId = 0;
 	let unchnagedPatches = 0;
 	let indexData = loadIndex();
+	let badPatches = [];
 
 	let chunks = getChunks(allPatchesIds, 10);
 	if (!fullSync && chunks.length > 0 && chunks[0].length >= 5)
@@ -226,10 +252,22 @@ async function downloadPatches(api, allPatchesIds, fullSync) {
 					}
 				}
 
-				let additionalData = await fetch(additionalFileLink).then((res) => res.arrayBuffer()).then((res) => Buffer.from(res));
-				fs.writeFileSync(`${OUT_DIR}/${additionalFile}`, additionalData);
+				let additionalData = await wget(additionalFileLink);
+				if (additionalData.status == 404) {
+					badPatches.push({
+						id:		patchId,
+						error:	`Additional file not found: ${additionalFileLink}`
+					});
+					newAdditionalFileHash = oldAdditionalFileHash;
+				} else if (additionalData.status == 200) {
+					fs.writeFileSync(`${OUT_DIR}/${additionalFile}`, additionalData.body);
+					newAdditionalFileHash = fileMD5(`${OUT_DIR}/${additionalFile}`);
+				} else {
+					throw new Error(`HTTP error ${additionalData.status}`);
+				}
 
-				newAdditionalFileHash = fileMD5(`${OUT_DIR}/${additionalFile}`);
+				if (!fs.existsSync(`${OUT_DIR}/${additionalFile}`))
+					additionalFile = undefined;
 			}
 
 			let newPatch = {
@@ -270,6 +308,13 @@ async function downloadPatches(api, allPatchesIds, fullSync) {
 		chunkId++;
 	}
 	saveIndex(indexData);
+
+	if (badPatches.length) {
+		console.log(`ERRORS:`);
+		for (let err of badPatches) {
+			console.log(`#${err.id}: ${err.error}`);
+		}
+	}
 }
 
 function loadIndex() {
@@ -368,4 +413,25 @@ function getChunks(arr, size) {
 
 function addPrefixToFile(file, prefix) {
 	return `${path.dirname(file)}/${prefix}${path.basename(file)}`;
+}
+
+async function wget(url) {
+	let response = await fetch(url);
+	return {
+		status:	response.status,
+		body:	Buffer.from(await response.arrayBuffer())
+	};
+}
+
+function readFiles(dir, base, files) {
+	base = base || "";
+	files = files || [];
+	fs.readdirSync(dir, {withFileTypes: true}).forEach((entry) => {
+		if (entry.isDirectory()) {
+			readFiles(dir + "/" + entry.name, base + entry.name + "/", files);
+		} else {
+			files.push(base + entry.name);
+		}
+	});
+	return files;
 }
