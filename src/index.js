@@ -253,10 +253,10 @@ async function downloadPatches(api, allPatchesIds, fullSync) {
 				}
 
 				let additionalData = await wget(additionalFileLink);
-				if (additionalData.status == 404) {
+				if (additionalData.status == 404 || additionalData.status == 403) {
 					badPatches.push({
 						id:		patchId,
-						error:	`Additional file not found: ${additionalFileLink}`
+						error:	`Additional file http error #${additionalData.status}: ${additionalFileLink}`
 					});
 					newAdditionalFileHash = oldAdditionalFileHash;
 				} else if (additionalData.status == 200) {
