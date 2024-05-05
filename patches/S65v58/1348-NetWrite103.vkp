@@ -262,7 +262,8 @@ Meню Net_Indicator позволяет включить Large Advanced Net Indi
 {6 sl MonitorLevel range=0..6 v=06}\
 {7 sl ChangedCellSound range=0..3 v=03}\
 {8 sl NewCellSound range=0..3 v=01}\
-{endsm}","\{sm Net_Indicator}\
+{endsm}","\
+{sm Net_Indicator}\
 {3 xy Position y=0}\
 {2 cb Enabled v=0}\
 {endsm}",00

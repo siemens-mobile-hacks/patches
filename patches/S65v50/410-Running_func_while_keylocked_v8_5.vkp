@@ -166,7 +166,7 @@
 ;If "jam" folder is removed (see appr.patch), the path is: "0:\\Java\\Applications\\Lighter\\Lighter.jar",00
 ;Or starting from MMC-card: "4:\\Java\\Applications\\Lighter\\Lighter.jar",00
 
-16BBB00: "0:\\Java\jam\Applications\\Lighter\\Lighter.jar",00 ; Midlet 0
+16BBB00: "0:\\Java\\jam\\Applications\\Lighter\\Lighter.jar",00 ; Midlet 0
 16BBB40: "0:\\Java\\jam\\Applications\\DocViewer\\DocViewer.jar",00 ; Midlet 1
 ;16BBB80: ; Midlet 2
 ;16BBBC0: ; Midlet 3
