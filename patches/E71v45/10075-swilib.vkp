@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 010524
+;Version: 040524
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -983,7 +983,7 @@
 0ED0: 0xA08D0ACF ; 3B4: __thumb GetDate_ws(WSHDR *ws, const TDate *date, unsigned int unk);
 0ED4: 0xA08D0951 ; 3B5: __thumb GetTime_ws(WSHDR *ws, const TTime *time, unsigned int unk);
 0ED8: 0xA0CCB470 ; 3B6: __arm int Obs_SetTransparent(HObj obs, unsigned int unk_3_4_5);
-0EDC: 0xA0568090 ; 3B7: __arm int sys_mkdir_ws(const WSHDR *path, unsigned int *err);
+0EDC: 0xA0568090 ; 3B7: __arm int sys_mkdir_ws(const WSHDR *dirname, unsigned int *err);
 0EE0: 0xA056817C ; 3B8: __arm int sys_rmdir_ws(const WSHDR *path, unsigned int *err);
 0EE4: 0xA0568108 ; 3B9: __arm int sys_rename_ws(const WSHDR *old_name, const WSHDR *new_name, unsigned int *err);
 0EE8: 0xA05682D4 ; 3BA: __arm int sys_unlink_ws(const WSHDR *path, unsigned int *err);
@@ -995,6 +995,9 @@
 
 0F00: 0xA094EED3 ; 3C0: __thumb int ShowWaitBox(int flags, int message);
 0F04: 0xA094EF0B ; 3C1: __thumb int ShowPleaseWaitBox(int flags);
+0F08: 0xA094EF6F ; 3C2: __thumb int ShowPBarBox(int flags, int message, void *pbar_desc, int initial_value, WSHDR *initial_ws);
+0F0C: 0xA094EFF5 ; 3C3: __thumb int SetPBarValue(int gui_id, int value);
+0F10: 0xA094F00B ; 3C4: __thumb int SetPBarText(int gui_id, WSHDR *ws);
 
 #pragma disable old_equal_ff
 +0

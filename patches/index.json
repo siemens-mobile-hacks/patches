@@ -91516,7 +91516,7 @@
 			"id": "10075",
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib.vkp",
-			"mtime": 1714587358000,
+			"mtime": 1714915764000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -92832,8 +92832,8 @@
 		"10811": {
 			"id": "10811",
 			"model": "E71v45",
-			"file": "E71v45/10811-enable_transparent_in_themes_v1_1.vkp",
-			"mtime": 1713893918000,
+			"file": "E71v45/10811-enable_transparent_in_themes_v1_2.vkp",
+			"mtime": 1714922924000,
 			"title": {
 				"ru": "Включить прозрачность в темах",
 				"en": "Enable transparent in themes"
