@@ -258,7 +258,8 @@ Meню Net_Indicator позволяет включить Large Advanced Net Indi
 {sm Net_Writing}\
 {11 cb Write v=0}\
 {12 cb Update v=0}\
-{13 cb CB_Write v=0}","\{5 b DefaultSymbol v=01}\
+{13 cb CB_Write v=0}","\
+{5 b DefaultSymbol v=01}\
 {6 sl MonitorLevel range=0..6 v=06}\
 {7 sl ChangedCellSound range=0..3 v=03}\
 {8 sl NewCellSound range=0..3 v=01}\
