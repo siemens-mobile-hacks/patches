@@ -30443,7 +30443,7 @@
 			"id": "3105",
 			"model": "CX75v23",
 			"file": "CX75v23/3105-EMS_Animation.vkp",
-			"additionalFile": "CX75v23/3105-EMS_Animation.rar",
+			"additionalFile": "CX75v23/3105-EMS_Animation.zip",
 			"mtime": 1145774986000,
 			"title": {
 				"ru": "Смайлики вместо стандартных анимаций в смс",
@@ -50492,7 +50492,7 @@
 			"id": "933",
 			"model": "M65v58",
 			"file": "M65v58/933-nokia-style_batt_and_net_indicators.vkp",
-			"additionalFile": "M65v58/933-ukazatele.rar",
+			"additionalFile": "M65v58/933-nokia-style_batt_and_net_indicators.zip",
 			"mtime": 1130443200000,
 			"title": {
 				"ru": "Антена и аккумулятор в стиле Nokia",
@@ -78409,7 +78409,7 @@
 			"id": "5911",
 			"model": "SL45iv56",
 			"file": "SL45iv56/5911-zLogReader__v0_2b.vkp",
-			"additionalFile": "SL45iv56/5911-zLogReader__v0_2b.rar",
+			"additionalFile": "SL45iv56/5911-zLogReader__v0_2b.zip",
 			"mtime": 1160561282000,
 			"title": {
 				"ru": "zLogReader",

@@ -5,7 +5,7 @@
 ;Version: 0.2b
 ;PatchID: 5911
 ;Details: https://patches.kibab.com/patches/details.php5?id=5911
-;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=zLogReader__v0_2b.rar
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=sl45iv56&f=zLogReader__v0_2b.zip
 
 /*
 Бинарик, который позволяет читать логи звонков и смс с ММС, нужен патч Call (and SMS) Detail Record v2.3
