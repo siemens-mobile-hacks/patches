@@ -6,6 +6,7 @@ cd $(dirname $0)/../
 
 npm install
 node . --cookie=$KIBAB_TEST_USER "$@"
+node src/get-bad-patches.js > bad.md
 
 export TZ=
 
@@ -16,7 +17,7 @@ git diff --exit-code patches || {
 	git stash
 	git pull
 	git stash pop
-	git add patches
+	git add patches bad.md
 	git commit -m "sync"
 	git push
 }

@@ -229,7 +229,7 @@ async function downloadPatches(api, allPatchesIds, fullSync) {
 			}
 
 			let additionalFile;
-			let additionalFileLink = patchText.match(/^;!к патчу прикреплён файл, (.*?)\r\n$/im)?.[1];
+			let additionalFileLink = patchText.match(/^;!(к патчу прикреплён файл|There is a file attached to this patch), (.*?)\r\n$/im)?.[1];
 			let oldAdditionalFileHash;
 			let newAdditionalFileHash;
 
