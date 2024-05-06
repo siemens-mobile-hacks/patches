@@ -217,6 +217,8 @@ async function downloadPatches(api, allPatchesIds, fullSync) {
 
 			let oldPatchHash;
 			let oldPatch = indexData[model][patchId];
+			if (oldPatch && !fs.existsSync(`${OUT_DIR}/${oldPatch.file}`))
+				oldPatch = null;
 
 			if (oldPatch) {
 				oldPatchHash = fileMD5(`${OUT_DIR}/${oldPatch.file}`);
