@@ -10,7 +10,7 @@
 	"author": "",
 	"license": "MIT",
 	"dependencies": {
-		"@sie-js/vkp": "^1.0.4",
+		"@sie-js/vkp": "^1.0.5",
 		"cheerio": "^1.0.0-rc.12",
 		"glob": "^10.3.12",
 		"iconv-lite": "^0.6.3",
