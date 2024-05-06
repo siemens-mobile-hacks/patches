@@ -1,5 +1,5 @@
 ### Patches with errors
-[SL45iv56/5911-zLogReader__v0_2b.rar -> log_read_bin/info/_dsm.vkp](https://patches.kibab.com/patches/details.php5?id=5911)
+[SL45iv56/5911-zLogReader__v0_2b.zip -> log_read_bin/info/_dsm.vkp](https://patches.kibab.com/patches/details.php5?id=5911)
 
 Error: Syntax error at line 6 col 1
 ```
@@ -40,13 +40,6 @@ Error: Syntax error at line 9 col 1
 ```
 
 
-### Archive with additional files is broken
-Unarchiver is unable to open this archives.
-
-| ID | Model | PATCH |
-|---|---|---|
-| 3105 | CX75v23 | [Смайлики вместо стандартных анимаций в смс<br>EMS Animation smiles](https://patches.kibab.com/patches/details.php5?id=3105) |
-| 933 | M65v58 | [Антена и аккумулятор в стиле Nokia<br>Nokia-style net & battery indicators](https://patches.kibab.com/patches/details.php5?id=933) |
 ### Additional files are not found
 The patch has additional files, but it isn't accessible.
 
