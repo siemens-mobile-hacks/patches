@@ -62,11 +62,9 @@ The patch has additional files, but it isn't accessible.
 | 10395 | CL61v128 | [Библиотека функций<br>swilib](https://patches.kibab.com/patches/details.php5?id=10395) |
 | 10396 | CL61v128 | [Elfloader 2.3 Official<br>Elfloader 2.3 Official](https://patches.kibab.com/patches/details.php5?id=10396) |
 | 3737 | CX65v43 | [ZIPViewer<br>ZIPViewer](https://patches.kibab.com/patches/details.php5?id=3737) |
-| 5652 | CX75v12 | [zip rar 7z Viewer<br>zip rar 7z Viewer](https://patches.kibab.com/patches/details.php5?id=5652) |
 | 10521 | S7Cv47 | [Extra Info on ProgressBars<br>Extra Info on ProgressBars](https://patches.kibab.com/patches/details.php5?id=10521) |
 | 9794 | S7Cv47 | [Постоянная подстветка<br>Lit Light all the time](https://patches.kibab.com/patches/details.php5?id=9794) |
 | 3059 | SL45iv56 | [DLDR. Загрузчик демонов (READRESSED)<br>DLDR. Daemon loader (READRESSED)](https://patches.kibab.com/patches/details.php5?id=3059) |
-| 10440 | SL75v47 | [Включить пункты меню "гашение подсветки" и "контраст"<br>Enable menu items "backlight duration" and "contrast"](https://patches.kibab.com/patches/details.php5?id=10440) |
 | 3403 | X75v100 | [Иконка вибры<br>Vibra Icon](https://patches.kibab.com/patches/details.php5?id=3403) |
 | 3404 | X75v100 | [Зеленый Калькулятор<br>Green Calculator](https://patches.kibab.com/patches/details.php5?id=3404) |
 | 4039 | X75v100 | [Иконки картинок<br>Pictures icons](https://patches.kibab.com/patches/details.php5?id=4039) |
