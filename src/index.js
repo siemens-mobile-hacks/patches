@@ -27,7 +27,7 @@ const argv = yargs(hideBin(process.argv))
 		default: false
 	})
 	.option('from-model', {
-		type: 'boolean',
+		type: 'string',
 		description: 'Run sync starting from specified model.',
 		default: false
 	})
