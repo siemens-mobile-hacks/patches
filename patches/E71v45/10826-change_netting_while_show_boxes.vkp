@@ -12,10 +12,10 @@
 0A1D60E: EEF7C0FD C046C046
 0A20E36: EBF7ACF9 C046C046
 
-0A20DFA: A661 C046
 0A20C3A: 35 01 ; bg color index
 0A20C3B: F7A2FA 20C046
 ;0A20C48: D873 C046 ; disable bg transparent
+0A20DFA: A661 C046
 
 ;------------------------- end -------------------------
 
