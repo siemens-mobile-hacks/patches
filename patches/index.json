@@ -92923,8 +92923,8 @@
 		"10826": {
 			"id": "10826",
 			"model": "E71v45",
-			"file": "E71v45/10826-change_netting_while_show_boxes.vkp",
-			"mtime": 1715108232000,
+			"file": "E71v45/10826-change_nett_while_show_boxes_v1_1.vkp",
+			"mtime": 1715203292000,
 			"title": {
 				"ru": "Изменить сетку при прорисовке окошек",
 				"en": "Change netting while showing MsgBoxes"
