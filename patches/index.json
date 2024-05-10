@@ -92929,6 +92929,16 @@
 				"ru": "Изменить сетку при прорисовке окошек",
 				"en": "Change netting while showing MsgBoxes"
 			}
+		},
+		"10827": {
+			"id": 10827,
+			"model": "E71v45",
+			"file": "E71v45/10827-fix_pbar_canvas.vkp",
+			"mtime": 1715323526000,
+			"title": {
+				"ru": "Исправить канвас прогрессбара",
+				"en": "Fix progressbar canvas"
+			}
 		}
 	},
 	"C81v51": {
