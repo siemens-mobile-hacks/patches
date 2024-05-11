@@ -91516,7 +91516,7 @@
 			"id": "10075",
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib.vkp",
-			"mtime": 1714990052000,
+			"mtime": 1715332464000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -92923,11 +92923,21 @@
 		"10826": {
 			"id": "10826",
 			"model": "E71v45",
-			"file": "E71v45/10826-change_nett_while_show_boxes_v1_1.vkp",
-			"mtime": 1715203292000,
+			"file": "E71v45/10826-change_nett_while_show_boxes_v1_2.vkp",
+			"mtime": 1715319782000,
 			"title": {
 				"ru": "Изменить сетку при прорисовке окошек",
 				"en": "Change netting while showing MsgBoxes"
+			}
+		},
+		"10827": {
+			"id": "10827",
+			"model": "E71v45",
+			"file": "E71v45/10827-fix_pbar_canvas.vkp",
+			"mtime": 1715323526000,
+			"title": {
+				"ru": "Исправить канвас прогрессбара",
+				"en": "Fix progressbar canvas"
 			}
 		}
 	},

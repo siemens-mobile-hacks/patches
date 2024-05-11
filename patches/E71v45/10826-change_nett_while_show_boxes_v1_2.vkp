@@ -2,7 +2,7 @@
 ;Изменить сетку при прорисовке окошек
 ;Change netting while showing MsgBoxes
 ;(c) FIL, 1nvisible
-;Version: 1.1
+;Version: 1.2
 ;PatchID: 10826
 ;Details: https://patches.kibab.com/patches/details.php5?id=10826
 /*
@@ -10,15 +10,13 @@
 */
 ;01 - BG COLOR INDEX
 0A20C3A: 35 01
-0A20E02: 35 01
 
 0A20C3B: F7A2FA 20C046
 0A20DFA: A661 C046
-0A20E03: F7BEF9 20C046
-0A20E3A: 2662 C046
 
 0A2024A: EBF7A2FF C046C046
 0A1D60E: EEF7C0FD C046C046
+0A20E36: EBF7ACF9 C046C046
 
 ;------------------------- end -------------------------
 
