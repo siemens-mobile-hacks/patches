@@ -92940,6 +92940,16 @@
 				"en": "Fix progressbar canvas"
 			}
 		},
+		"10828": {
+			"id": 10828,
+			"model": "E71v45",
+			"file": "E71v45/10828-smooth_scroll_of_long_headers.vkp",
+			"mtime": 1715799192000,
+			"title": {
+				"ru": "Плавная прокрутка длинных заголовков",
+				"en": "Smooth scrolling of long headers"
+			}
+		},
 		"10829": {
 			"id": 10829,
 			"model": "E71v45",
