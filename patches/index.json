@@ -92939,6 +92939,26 @@
 				"ru": "Исправить канвас прогрессбара",
 				"en": "Fix progressbar canvas"
 			}
+		},
+		"10828": {
+			"id": "10828",
+			"model": "E71v45",
+			"file": "E71v45/10828-smooth_scroll_of_long_headers.vkp",
+			"mtime": 1715799192000,
+			"title": {
+				"ru": "Плавная прокрутка длинных заголовков",
+				"en": "Smooth scrolling of long headers"
+			}
+		},
+		"10829": {
+			"id": "10829",
+			"model": "E71v45",
+			"file": "E71v45/10829-fix_init_of_scroll_header.vkp",
+			"mtime": 1715799148000,
+			"title": {
+				"ru": "Исправить инициализацию прокручиваемого заголовка",
+				"en": "Fix init of scrolling header"
+			}
 		}
 	},
 	"C81v51": {

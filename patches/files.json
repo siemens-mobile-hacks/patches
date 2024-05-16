@@ -30930,5 +30930,11 @@
 	],
 	[
 		"E71v45/10827-fix_pbar_canvas.vkp"
+	],
+	[
+		"E71v45/10828-smooth_scroll_of_long_headers.vkp"
+	],
+	[
+		"E71v45/10829-fix_init_of_scroll_header.vkp"
 	]
 ]
