@@ -17,6 +17,8 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: 21
+    - name: Install deps
+      run: sudo apt install unar
     - name: Sync patches
       run: tools/ci.sh
       env:
