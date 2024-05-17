@@ -3,7 +3,7 @@
 ;Smooth scrolling of long headers
 ;(c) FIL
 ;(r) Azq2
-;Version: 
+;Version: 1.1
 ;PatchID: 10828
 ;Details: https://patches.kibab.com/patches/details.php5?id=10828
 /*
@@ -11,13 +11,13 @@
 */
 ; HEADER
 ; DEFAULT
-0A27BFC: FF 42 ; scrolling speed
+0A27BFC: FF 2A ; scrolling speed
 ; scrolling delay
 0A27BFE: 2D32 8421
 0A27C00: 7D21 8900
 0A27C02: 0901 0231
 ; MEDIAPLAYER
-079FF14: 64 42 ; scrolling speed
+079FF14: 64 2A ; scrolling speed
 079FF18: FA1F 211E ; scrolling delay
 
 ; HEADER ADDOINMENT
