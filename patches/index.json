@@ -92959,6 +92959,16 @@
 				"ru": "Исправить инициализацию прокручиваемого заголовка",
 				"en": "Fix init of scrolling header"
 			}
+		},
+		"10830": {
+			"id": 10830,
+			"model": "E71v45",
+			"file": "E71v45/10830-change_max_width_of_extra_header.vkp",
+			"mtime": 1715969696000,
+			"title": {
+				"ru": "Изменить максимальную ширину дополнительного заголовка",
+				"en": "Change maximum width of the extra header"
+			}
 		}
 	},
 	"C81v51": {
