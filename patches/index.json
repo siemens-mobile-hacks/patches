@@ -91354,11 +91354,11 @@
 		"9795": {
 			"id": 9795,
 			"model": "E71v45",
-			"file": "E71v45/9795-Headers_font_E.vkp",
-			"mtime": 1269546414000,
+			"file": "E71v45/9795-change_headers_fonts_v1_1.vkp",
+			"mtime": 1727726432000,
 			"title": {
-				"ru": "Изменение шрифта заголовков",
-				"en": "Change Headers Font"
+				"ru": "Изменение шрифтов заголовков",
+				"en": "Change headers fonts"
 			}
 		},
 		"9796": {
