@@ -1,0 +1,17 @@
+;E71v45
+;Изменить максимальную ширину дополнительного заголовка
+;Change maximum width of the extra header
+;(c) FIL
+;Version: 
+;PatchID: 10830
+;Details: https://patches.kibab.com/patches/details.php5?id=10830
+/*
+
+*/
+0A27742: 23 0i80
+0A27746: 23 0i80
+0A27708: 23 0i80
+0A27710: 23 0i80
+
+;------------------------- end -------------------------
+

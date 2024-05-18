@@ -91354,11 +91354,11 @@
 		"9795": {
 			"id": "9795",
 			"model": "E71v45",
-			"file": "E71v45/9795-Headers_font_E.vkp",
-			"mtime": 1269546414000,
+			"file": "E71v45/9795-change_headers_fonts_v1_1.vkp",
+			"mtime": 1715965306000,
 			"title": {
-				"ru": "Изменение шрифта заголовков",
-				"en": "Change Headers Font"
+				"ru": "Изменение шрифтов заголовков",
+				"en": "Change headers fonts"
 			}
 		},
 		"9796": {
@@ -91516,7 +91516,7 @@
 			"id": "10075",
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib.vkp",
-			"mtime": 1715332464000,
+			"mtime": 1715961752000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -92950,14 +92950,14 @@
 				"en": "Smooth scrolling of long headers"
 			}
 		},
-		"10829": {
-			"id": "10829",
+		"10830": {
+			"id": "10830",
 			"model": "E71v45",
-			"file": "E71v45/10829-fix_init_of_scroll_header.vkp",
-			"mtime": 1715799148000,
+			"file": "E71v45/10830-change_max_width_of_extra_header.vkp",
+			"mtime": 1715969696000,
 			"title": {
-				"ru": "Исправить инициализацию прокручиваемого заголовка",
-				"en": "Fix init of scrolling header"
+				"ru": "Изменить максимальную ширину дополнительного заголовка",
+				"en": "Change maximum width of the extra header"
 			}
 		}
 	},

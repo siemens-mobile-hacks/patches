@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 100524
+;Version: 170524
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -995,10 +995,12 @@
 
 0F00: 0xA094EED3 ; 3C0: __thumb int ShowWaitBox(int flags, int message);
 0F04: 0xA094EF0B ; 3C1: __thumb int ShowPleaseWaitBox(int flags);
-0F08: 0xA094EF6F ; 3C2: __thumb int ShowPBarBox(int flags, int message, void *pbar_desc, int initial_value, WSHDR *initial_ws);
+0F08: 0xA094EF6F ; 3C2: __thumb int ShowPBarBox(int flags, int message, PBAR_DESC *pbar_desc, int initial_value, WSHDR *initial_ws);
 0F0C: 0xA094EFF5 ; 3C3: __thumb int SetPBarValue(int gui_id, int value);
 0F10: 0xA094F00B ; 3C4: __thumb int SetPBarText(int gui_id, WSHDR *ws);
 0F14: 0xA0A26719 ; 83C5: void *GetPBarProc3();
+0F18: 0xA0A285B9 ; 3C6: __thumb void SetHeaderScrollText(void *header, const WSHDR *title, const void *malloc_fn, const void *mfree_fn);
+0F1C: 0xA0A28245 ; 3C7: __thumb void SetHeaderExtraText(void *header, const WSHDR *ws, const void *malloc_fn, const void *mfree_fn);
 
 #pragma disable old_equal_ff
 +0
