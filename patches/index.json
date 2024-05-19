@@ -92959,6 +92959,16 @@
 				"ru": "Изменить максимальную ширину дополнительного заголовка",
 				"en": "Change maximum width of the extra header"
 			}
+		},
+		"10831": {
+			"id": "10831",
+			"model": "E71v45",
+			"file": "E71v45/10831-fix_init_of_scollable_headers.vkp",
+			"mtime": 1716047054000,
+			"title": {
+				"ru": "Исправить инициализацию прокручиваемых заголовков",
+				"en": "Fix init of scrollable headers"
+			}
 		}
 	},
 	"C81v51": {
