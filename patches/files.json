@@ -30940,5 +30940,8 @@
 	],
 	[
 		"E71v45/10831-fix_init_of_scollable_headers.vkp"
+	],
+	[
+		"E71v45/10832-alternate_scroll_by_default.vkp"
 	]
 ]
