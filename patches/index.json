@@ -92969,6 +92969,16 @@
 				"ru": "Исправить инициализацию прокручиваемых заголовков",
 				"en": "Fix init of scrollable headers"
 			}
+		},
+		"10832": {
+			"id": "10832",
+			"model": "E71v45",
+			"file": "E71v45/10832-alternate_scroll_by_default.vkp",
+			"mtime": 1716107088000,
+			"title": {
+				"ru": "Альтернативный скроллинг по умолчанию",
+				"en": "Alternate scrolling by default"
+			}
 		}
 	},
 	"C81v51": {

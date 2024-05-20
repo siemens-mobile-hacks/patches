@@ -1,0 +1,15 @@
+;E71v45
+;Альтернативный скроллинг по умолчанию
+;Alternate scrolling by default
+;(c) FIL
+;Version: 
+;PatchID: 10832
+;Details: https://patches.kibab.com/patches/details.php5?id=10832
+/*
+
+*/
+0A27912: 02 01
+0A28E68: 317F 0121
+0C366A0: 02 01
+;------------------------- end -------------------------
+
