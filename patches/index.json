@@ -19131,6 +19131,16 @@
 				"ru": "Корректное отображение иконок экрана громкости",
 				"en": "Fix view icons volumebar"
 			}
+		},
+		"10835": {
+			"id": 10835,
+			"model": "S75v52",
+			"file": "S75v52/10835-fuckingtest.vkp",
+			"mtime": 1716325818000,
+			"title": {
+				"ru": "ТЕСТ ПАТЧ",
+				"en": "TEST PATCH"
+			}
 		}
 	},
 	"SL75v31": {
