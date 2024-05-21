@@ -11,18 +11,18 @@
 */
 ; HEADER
 ; DEFAULT
-0A27BFC: FF 2A ; scrolling speed
-; scrolling delay
+0A27BFC: FF 2A ; speed
+; delay
 0A27BFE: 2D32 8421
 0A27C00: 7D21 8900
 0A27C02: 0901 0231
 ; MEDIAPLAYER
-079FF14: 64 2A ; scrolling speed
-079FF18: FA1F 211E ; scrolling delay
+079FF14: 64 2A ; speed
+079FF18: FA1F 211E ; delay
 
-; HEADER ADDOINMENT
-0C366A4: E803 1202 ; scrolling delay
-0C366A8: F401 2A00 ; scrolling speed
+; EXTRA HEADER
+0C366A4: E803 1202 ; delay
+0C366A8: F401 2A00 ; speed
 
 ;------------------------- end -------------------------
 

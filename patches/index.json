@@ -89090,10 +89090,10 @@
 		"7443": {
 			"id": "7443",
 			"model": "E71v45",
-			"file": "E71v45/7443-Smooth_scrolling_of_long_names.vkp",
-			"mtime": 1179124436000,
+			"file": "E71v45/7443-smooth_scroll_of_long_names_v1_1.vkp",
+			"mtime": 1716217184000,
 			"title": {
-				"ru": "Плавная прокрутка длинных названий иимен",
+				"ru": "Плавная прокрутка длинных названий имен",
 				"en": "Smooth scrolling of long names"
 			}
 		},
@@ -92978,6 +92978,26 @@
 			"title": {
 				"ru": "Альтернативный скроллинг по умолчанию",
 				"en": "Alternate scrolling by default"
+			}
+		},
+		"10833": {
+			"id": "10833",
+			"model": "E71v45",
+			"file": "E71v45/10833-speed_up_menu_scrolling.vkp",
+			"mtime": 1716215698000,
+			"title": {
+				"ru": "Ускорить прокручивание меню",
+				"en": "Speed up menu scrolling"
+			}
+		},
+		"10834": {
+			"id": "10834",
+			"model": "E71v45",
+			"file": "E71v45/10834-UIFP.vkp",
+			"mtime": 1716220488000,
+			"title": {
+				"ru": "UI Fix Pack",
+				"en": "Пакет исправлений пользовательского интерфейса"
 			}
 		}
 	},

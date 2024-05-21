@@ -21185,7 +21185,7 @@
 		"E71v45/7442-Classic_Red_Button.vkp"
 	],
 	[
-		"E71v45/7443-Smooth_scrolling_of_long_names.vkp"
+		"E71v45/7443-smooth_scroll_of_long_names_v1_1.vkp"
 	],
 	[
 		"E71v45/7444-work_with_midlet_as_files.vkp"
@@ -30943,5 +30943,11 @@
 	],
 	[
 		"E71v45/10832-alternate_scroll_by_default.vkp"
+	],
+	[
+		"E71v45/10833-speed_up_menu_scrolling.vkp"
+	],
+	[
+		"E71v45/10834-UIFP.vkp"
 	]
 ]
