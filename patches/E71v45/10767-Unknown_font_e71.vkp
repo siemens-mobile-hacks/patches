@@ -5,8 +5,6 @@
 ;Version: 
 ;PatchID: 10767
 ;Details: https://patches.kibab.com/patches/details.php5?id=10767
-;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=e71v45&f=Unknown_font_e71.zip
-
 /*
 Шрифт обнаружен в фулле 15 летней давности и вытащен с помощью FFPatch.
 Автор и название неизвестны. Шрифт на форумах в виде патча не найден.
