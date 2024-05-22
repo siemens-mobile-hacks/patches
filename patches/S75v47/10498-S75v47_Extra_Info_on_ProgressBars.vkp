@@ -23,6 +23,7 @@ A0521E66: E16C     LDR R1, [R4,#0x4C]  ; 0xA8A32DE0 RamSizeOfSentPart - разм
 
 были проблемы с портированием этого патча на эску, решены
 */
+
 ;(!) Master patch, library functions 21, 22, 26, 71, C4, C7, B8, 251, 252, 257   
 ;[+]  / no conflict with "mainscreen icon changer"
 

@@ -12,6 +12,7 @@
 English:monitorIcons: create your own iconbar icon by assigning values of a ram byte to icons
 ChargingIcons: shows an icon by charging, another by charging finished
 */
+
 16421F4: 1CF0F2EB1CF02CEDFF28 0048804701C4FDA0C046
 0FDC4AC: FFFFFFFF 0xA165EC54 ; take j_GetProfileFilter from entry
 ;------------------------- end -------------------------

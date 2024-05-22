@@ -8,6 +8,7 @@
 /*
 
 */
+
 04A2624: 03 02 ; softkey font
 04A266C: 03 08 ; chosen item in menu
 04A2670: 02 08 ; menu list

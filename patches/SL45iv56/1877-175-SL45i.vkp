@@ -8,6 +8,7 @@
 /*
 Патч №175 с http://patch.oslik.ru/SL45_RU
 */
+
 3B0126: 0A 03 ; smile 
 
 ;select: 

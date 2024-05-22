@@ -24,6 +24,7 @@ The patch includes following ones:
 These patches have to be undone.
 
 */
+
 #pragma enable old_equal_ff
 0FC96A0: FBB50448C4DF00D0021CFBBD
 

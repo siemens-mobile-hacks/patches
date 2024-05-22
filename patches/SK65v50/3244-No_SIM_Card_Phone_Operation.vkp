@@ -12,6 +12,7 @@
 English:
 Press *#06#, goto Device Check, press Soundcheck 1 (nothing happens), and press the red button shortly
 */
+
 #pragma enable old_equal_ff
 01B0600: FFB50348012201498847FFBD981397A0
 01B0610: 0020E3A8

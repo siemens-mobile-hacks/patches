@@ -12,6 +12,7 @@ Config:\japp\FlexMenu
 
 ВНИМАНИЕ! ЕСЛИ ЭТОГО НЕ СДЕЛАТЬ, ТО ПОЯВЯТСЯ ГЛЮКИ ОПИСАННЫЕ by Pavel81
 */
+
 08891C0: 05 0i10 ; 1st menu item
 08891D4: 0A 0i30 ; 2nd menu item
 08891E8: 0F 0i60 ; 3rd menu item

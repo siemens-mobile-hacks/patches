@@ -13,6 +13,7 @@
 ; to have new midlet values activated, let turn off illu one time and press any key else than red key
 
 */
+
 0B1E942: 5349A000411868460422 C046,00498847,0xA0FDE60B ; CX65v50
 ;------------------------- end -------------------------
 

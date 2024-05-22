@@ -13,6 +13,7 @@ v1.1: исправлен баг: перезагрузка уже включен�
 English:When alarm clock triggers phone switches on and vibrates shortly.
 v1.1: bug fixed: reboot of switched on phone
 */
+
 0B6D44e: DBF5 C046
 0B6D450: 04EF0020  94F456E9
 

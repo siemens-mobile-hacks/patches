@@ -12,6 +12,7 @@
 English:
 Replaces the patches * Mainscreen Positioning * and * change font size on mainscreen * compatible to * Extended IconBar v0.5 beta *
 */
+
 ; net icons
 1711A9E: E9FA C046 ; clear old canvas call
 1711AA4: 321C0221032000F0F5FA 00488047,0xA0FCA001,C046           ; word-aligned example entry

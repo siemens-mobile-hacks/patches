@@ -18,6 +18,7 @@ You should download those files to 0:\Sounds\Time: http://avkiev.kiev.ua/Siemens
 +6.1 Если включен плеер, то после проговаривания времени воспроизведение продолжится
 
 */
+
 04266E8: "VOICE_MSGCHANGE",00,0xA032DBC3 "VOICE_MSGCHANGE",00,0xA0063001
 0346968: 44CBFCEBB000C4E1 BF0000EF0000A0E1
 ;------------------------- end -------------------------

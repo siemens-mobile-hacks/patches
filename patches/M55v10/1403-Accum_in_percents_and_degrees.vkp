@@ -12,6 +12,7 @@
 Положения по умолчанию под картинки 3х5
 
 */
+
 0DCCF1: 2DCCC4 9F0009
 #pragma enable old_equal_ff
 7F0900: DA2DCCC4D7400C00F2F100009AF13B00

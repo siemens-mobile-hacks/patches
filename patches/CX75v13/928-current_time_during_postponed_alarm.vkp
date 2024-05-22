@@ -11,6 +11,7 @@ RUS: Показывает текущее время при срабатыван�
 
 ENG: Shows current time at operation of the postponed alarm clock.
 */
+
 051E0C4: 42780178 E1F4ACFD
 #pragma enable old_equal_ff
 1FFC00: 506F7374706F6E656420416C61726D20

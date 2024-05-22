@@ -9,6 +9,7 @@
 Запуск происходит при выборе "Справ. по умолч."
 Программа должна иметь путь и имя: a:\Java\jam\SecureSMS\GSM.jar 
 */
+
 8B2B06: DA927264 E6FC1000 ; mov r12, #10h
 8B2B0A: 48403D04 DA730E87 ; calls HideSelectDefaultBook()
 8B2B16: DADAC81348403D0A DA6100A8FACB322B ; don't ask to copy bull****

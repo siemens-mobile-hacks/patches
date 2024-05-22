@@ -28,6 +28,7 @@ Release: November 26, 2003
 
 Патч №109 с http://patch.oslik.ru/SL45_RU
 */
+
 3B36C6: 46FCFFFF DAE000C7 
 
 40C700: FFFFFFFFFFFFFFFF 88C088D088908840 

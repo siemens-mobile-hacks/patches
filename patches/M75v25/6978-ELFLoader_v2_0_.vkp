@@ -51,6 +51,7 @@
 ;+Дописал функции которых нет в прошивке - UnRegExplorerExt,AddKeybMsgHook,AddKeybMsgHook_end,RemoveKeybMsgHook
 
 */
+
 ;FSWI_PATCH1
 0x00092BE0: 1A0000EA DCF09FE5
 ;FSWI_PATCH3,FSWI_PATCH2

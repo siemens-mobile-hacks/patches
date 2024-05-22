@@ -18,6 +18,7 @@ Bluetooth вкл./выкл (Bluetooth on\off)
 "Сохранить в" после фотографирования ("Save to" after taking picture)
 
 */
+
 03252B8: 77F1 80BD ;"Вибра вкл./выкл."
 0325352: 77F1 80BD ;"IrDA вкл./выкл."
 03253CE: 77F1 80BD ;"Bluetooth вкл./выкл."

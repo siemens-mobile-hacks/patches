@@ -16,6 +16,7 @@ Replaces the patches * Mainscreen Positioning * , * change font size on mainscre
 compatible to * Extended IconBar *
 Version 1.3: swi adaptation, fixed canvas
 */
+
 #pragma enable old_equal_ff
 0FCA000: FFB5341C0320152502E0FFB563201725
 0FCA010: 022100F0B0F806D0F03600F0D3F818D3

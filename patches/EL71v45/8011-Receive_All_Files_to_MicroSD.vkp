@@ -10,6 +10,7 @@
 ;! Аддон к * Приему Всех Файлов в Одну Папку * v0.91
 ;! Addon to * Receive All Files to the Same Folder * v0.91
 */
+
 1310052: 30 34 ;move Inbox folder to MicroSD
 08325BA: 30 34 ;move Misc folder to MicroSD
 08325CA: 30 34 

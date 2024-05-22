@@ -12,6 +12,7 @@ RUS: Убрать немецкий, польский, латвийский и л
 
 ENG: To clean German, Polish, Latvian and Lithuanian of the menu of a choice of languages. The patch became workers, owing to replacement лэнгпака in phone on lg3.
 */
+
 0A3F90A: 00 01
 0A3F93A: 00 01 ;Latvia
 0A3F93E: 00 01 ;Lithuania

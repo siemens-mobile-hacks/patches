@@ -12,6 +12,7 @@
 !Для нормального функционирования патча необходимо установить патчu "Graph info + profile logo on the main screen v5.1 Pictures.vkp" и ExtraInfoCanvas_v3_1.vkp
 !For correct work of this patch you must apply patches "Graph info v5.1 Pictures.vkp" and "ExtraInfoCanvas_v3_1.vkp"
 */
+
 1711A36: 051C0020 27F0ABFD
 #pragma enable old_equal_ff
 1738800: 00B500F0C5FE00BD

@@ -9,6 +9,7 @@
 /*
 Release: 23.02.2005
 */
+
 ; Enable MP3 in Carkit and in Dockstation 
 3B85A1: 21 2D 
 ; 

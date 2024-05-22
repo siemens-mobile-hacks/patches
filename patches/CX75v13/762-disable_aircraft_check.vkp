@@ -12,6 +12,7 @@ RUS: Убирает навязчивое подтверждение включе
 
 ENG: Removes annoying confirmation of switching phone on when using SIM-card with disabled PIN control.
 */
+
 02C678D: D1 E0
 
 ;------------------------- end -------------------------

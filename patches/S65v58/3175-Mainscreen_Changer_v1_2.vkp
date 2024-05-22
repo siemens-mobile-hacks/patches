@@ -13,6 +13,7 @@
 ; compatible to * Extended IconBar *
 ; add alarm and appointment
 */
+
 ; net icons
 1698C2E: 00F0ECFA C046C046 ; clear old canvas call
 1698C36: 321C0221032000F0F8FA C046,00488047,0xA0FCA001

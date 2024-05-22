@@ -9,6 +9,7 @@
 /*
 English:Changes phone name in fw (*#06#) and in bootcore version 22. max lenght of name - 5 simbols.
 */
+
 ;Имя телефона CX70 -> CXV70
 90184: 4358373000330030 0000000000000000 ;delete model from firmware
 90184: 0000000000000000 "CXV70" ;write model in firmware

@@ -10,6 +10,7 @@
 ;* Отключить сообщения *
 
 */
+
 02D0FC6: 0021 10BD ; All ringtones on
 02D0FE2: 0021 10BD ; All ringtones off
 02D1032: 0021 10BD ; Keypad locked

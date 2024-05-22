@@ -12,6 +12,7 @@ RUS: Звуковой сигнал по завершению приёма дан
 ENG: Sound signal on end of reception of data through IR or BT.
 The sound will be same as it is established on reception new SMS.
 */
+
 035AD5C: 0010A0E3 0767FDEB
 ;------------------------- end -------------------------
 

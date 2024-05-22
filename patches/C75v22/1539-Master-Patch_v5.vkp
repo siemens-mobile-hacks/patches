@@ -22,6 +22,7 @@ You must create the folder 0:\Misc\Patches\ptc before installing it
 MASTER-MIDLET: http://chaos.allsiemens.com/download/Master.rar
 
 */
+
 ;Run Scaner on startup
 02A733C: E56225636563A563 00498847,0xA10D0C81 ;  C75v22
 

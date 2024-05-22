@@ -9,6 +9,7 @@
 /*
 
 */
+
 029ED74: 33 57 ;photo size
 042D548: 63 6D ;7A ; outcall_y_name
 042D564: 75 7A ;8A ; outcall_y_phonenum

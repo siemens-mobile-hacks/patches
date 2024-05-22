@@ -9,6 +9,7 @@
 /*
 BUG: Не работает долгое нажатие на левую и короткое на правую софт кнопки на главном экране.
 */
+
 3244C6: 3D07 CC00 ;remove menu soft key
 3243B0: 2D 0D ;remove the left soft key and shift down the time string
 ; as in keylock mode.

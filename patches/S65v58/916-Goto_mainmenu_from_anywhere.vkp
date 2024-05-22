@@ -10,6 +10,7 @@
 /*
 Должен быть включен DevMenu и в пункте LOGAL\options - нажать Enable ### (Goto DevMenu\LOGAL\options and press Enable ###)
 */
+
 0B57CA0: 5AF0BDFF 87F5CBFB ; native menu by arsh0r
 ;0B57CA0: 5AF0BDFF 82F596FC ; main menu by SiNgle
 ;------------------------- end -------------------------

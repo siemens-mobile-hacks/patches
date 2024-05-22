@@ -21,6 +21,7 @@
 "Пожалуйста подождите" в эксплорере | "Please wait" in explorer
 
 */
+
 0B589D6: 01 00     ;"Копировать SIM" при смене SIM | "Copy SIM" at SIM change
 08DA4EA: 4DF0 80BD ; "GPRS вкл/выкл" | GPRS on/off
 08DA4BA: 4DF0 80BD ; "IrDA вкл/выкл" | IrDA on/off

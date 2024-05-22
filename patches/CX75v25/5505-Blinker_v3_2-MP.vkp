@@ -12,6 +12,7 @@
 English:
 completely working version
 */
+
 81C47C: 0070A0E1 E3001FEB ; Y
 #pragma enable old_equal_ff
 0FDCCD0: 40000000,300200A8,0xA84CB538,0xA84CFC64 ; -RBC

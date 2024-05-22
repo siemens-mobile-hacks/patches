@@ -13,6 +13,7 @@
 ;Чтобы прочитать сообщение, нажмите ЗЕЛЁНУЮ кнопку (Press the GREEN button to read message)
 */
 
+
 02CF54E: D8F787FE 30F75AFC
 02D274C: 0223E05E 2DF768FB 
 #pragma enable old_equal_ff

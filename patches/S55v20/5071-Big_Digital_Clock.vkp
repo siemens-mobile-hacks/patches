@@ -23,6 +23,7 @@ New in v4: In screensaver mode:
 - Dial of analog clock doesn't show
 - Update - once at 1 minute
 */
+
 32C750: E6FC8C01 DA6140A4 ; Показывать часы при заблокированной клавиатуре
                           ; Show Clock in keylock mode
 

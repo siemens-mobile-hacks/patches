@@ -39,6 +39,7 @@ Example:
 "1 work" will display "work" on screen and change profile to normal environment.
 
 */
+
 ;044BDE4: C3FD75 07F5DB ;!Для установки патча необходимо раскомментировать
 
 #pragma enable old_equal_ff

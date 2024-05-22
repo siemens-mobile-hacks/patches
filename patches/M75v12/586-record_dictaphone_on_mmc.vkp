@@ -14,6 +14,7 @@ EN:
 Record time depends on free space on disk A:.
 But you can repeat recording as many times as free space on MMC allows.
 */
+
 04A3AE0: 30 34
 ;------------------------- end -------------------------
 

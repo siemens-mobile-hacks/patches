@@ -14,6 +14,7 @@ name_from = "IdleUpd"
 
 Эльф IdleDisp больше не нужен
 */
+
 0302e84: FFB0ACB0041C8BA8 00498847019E06A0
 
 #pragma enable old_equal_ff

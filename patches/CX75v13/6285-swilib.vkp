@@ -18,6 +18,7 @@ English:Patch version is in "YMMDD" format. It indicates its update date.
 
  It is needed for many other patches, whitch are written using "Master-Patch+Functon Library" concept (c) 1nvisible, avkiev
 */
+
 +0FD4000
 #pragma enable  old_equal_ff
 0000: 0xA0002070   ;   0: __arm void loopback0()

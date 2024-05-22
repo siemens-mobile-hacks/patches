@@ -11,6 +11,7 @@
 /*
 Врезка к патчу 1396
 */
+
 11511D4: 0070A0E1 8D2DFAEB
 
 #pragma enable old_equal_ff

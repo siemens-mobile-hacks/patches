@@ -9,6 +9,7 @@
 /*
 
 */
+
 02CB32E: 0021 10BD ;"Все сигналы вкл" (All ringtones on)
 02CB34E: 0021 10BD ;"Все сигналы выкл" (All ringtones off)
 02CB3A4: 0021 10BD ;"Блокировка клавиатуры включена" (Keypad locked)

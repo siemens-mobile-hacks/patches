@@ -13,6 +13,7 @@ English:Needed on S68 with EL71 firmware for display to work, and not just turn 
 
 Is an addon for "Do not read HWID from GPIO to enable running EL71 firmware on S68"
 */
+
 060BFD0: 0020C7E5 0040C7E5 ; strb       r2,[r7,#0x0]=>disp_0_type = 02h
 
 ;Просто меняем r2 на r4 к примеру, вот и всё

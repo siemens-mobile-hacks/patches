@@ -9,6 +9,7 @@
 /*
 
 */
+
 ;* Отключить доступ к интернет-браузеру ** Disable Access To Internet Browser * © KiRiK
 0946B38: 8D288FA0 00000000
 0946AD0: A7288FA0 00000000

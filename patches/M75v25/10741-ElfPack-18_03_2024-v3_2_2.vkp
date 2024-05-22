@@ -17,6 +17,7 @@ Changelog and sources: [url]https://github.com/siemens-mobile-hacks/elfloader3/b
 SDK for developers: [url]https://github.com/siemens-mobile-hacks/sdk[/url]
 Bugtracker: [url]https://github.com/siemens-mobile-hacks/elfloader3/issues[/url]
 */
+
 ;FSWI_PATCH1
 0x00092BE0: 1A0000EA DCF09FE5
 ;FSWI_PATCH3,FSWI_PATCH2

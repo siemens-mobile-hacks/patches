@@ -12,6 +12,7 @@ English:
 overlay color settings. 
 data=RRGGBBTT. RR, GG, BB range: 0-0xFF, TT=transparency range: 0-0x64
 */
+
 #pragma enable old_equal_ff
 0FDAE00: 436F6C6F72536B696E2C62656E6A3900
 0FDAE10: DDB5E5F785FC3F68013706D50948E5F7

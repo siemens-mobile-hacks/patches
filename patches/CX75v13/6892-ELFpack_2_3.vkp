@@ -15,6 +15,7 @@ Release 20.07.2007
 Много доделок/переделок, подробности в логе на SVN
 
 */
+
 +0FD4000
 #pragma enable  old_equal_ff
 0000: 0xA0002070   ;   0: __arm void loopback0()

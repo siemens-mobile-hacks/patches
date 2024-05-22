@@ -9,6 +9,7 @@
 English:If you use Change alarmclock to radio in native menu ,you will find no alarm in NativeMenu.If use this,you can find it in naive menu.
 Also Fix Remote mync. in the patch
 */
+
 08A7FC4: 07 08
 
 08A7F6C: 854779A0 0x00000000

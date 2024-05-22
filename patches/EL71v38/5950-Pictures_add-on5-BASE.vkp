@@ -44,6 +44,7 @@ Format of gpf2-file:
 Description is 8 bytes: X, X, Y, Y, Compression&Bits, 0, 0, 0, e.g.: 15 00 10 00 8A 00 00 00
 Merging several such files gives to us gpn2-file. It can be processed too.
 */
+
 ;Note: for x85 devices with a display resolution of 240x320, like EL71 and E71, we need a new gpf-format, *.gpf2!
 0A31A54: 54009FE51EFF2FE1 04F01FE5,0xA0063691 ; EL71v38 
 

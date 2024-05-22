@@ -20,6 +20,7 @@
 
 В архиве обоина и исходные картинки.
 */
+
 #pragma enable old_equal_ff
 ; Picture 1 cold
 00FD0100: 0B43080080F91BA0

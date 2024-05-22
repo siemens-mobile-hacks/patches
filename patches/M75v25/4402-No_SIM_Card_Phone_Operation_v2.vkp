@@ -12,6 +12,7 @@
 English:
 Press joystick to start working.
 */
+
 02C6B9C: 152871D1 DBF1E8FB
 #pragma enable old_equal_ff
 04A2370: FEB5152800D1FEBD292802D104480349

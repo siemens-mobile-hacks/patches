@@ -11,6 +11,7 @@
 !Если у вас стоит патч на приём всех данных на флешку, то строку с комментарием Misc нужно удалить из патча, иначе в-клей будет ругаться!
 !If you have installed patch "Recive all files to MicroSD" you must delete line with comment "Misc"!
 */
+
 08323D0: 30 34; Sounds
 083263C: 30 34; Pictures
 0833340: 30 34; Themes

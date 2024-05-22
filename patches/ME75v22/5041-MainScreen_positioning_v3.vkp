@@ -9,6 +9,7 @@
 /*
 
 */
+
 ;Charge Indicator (Switched-Off Mode)
 02A87AA: 10 YY ; background end Y
 02A87B0: 02 YY ; background start Y

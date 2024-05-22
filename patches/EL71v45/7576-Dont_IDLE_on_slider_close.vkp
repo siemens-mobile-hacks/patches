@@ -18,6 +18,7 @@ English:
 When slider closes the phone dont goes to IDLE
 
 */
+
 05C10E4: 3FF2B2E8 C046C046
 070F778: EFF056ED C046C046
 ;------------------------- end -------------------------

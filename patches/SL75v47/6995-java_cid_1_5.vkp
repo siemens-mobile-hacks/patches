@@ -26,6 +26,7 @@ Property                   Value
      MPJCGPRS         current GPRS traffic (bytes)
      MPJCKEYL         current keyboard lock state
 */
+
 09FF1B8: 0070A0E30070C1E50140A0E1 04E08FE204F01FE5050FBCA1 ; SL75v47
 #pragma enable old_equal_ff
 1BC0F00: F080BDE8FEB502683D4B9A4262D10D1C

@@ -11,6 +11,7 @@ RUS: Настройка параметров аналоговых часов н�
 
 ENG: Adjustment of parameters of analog hours for prompt.
 */
+
 02CF9FA: 9E 80 ; Hands length
 02CFA6E: 01 02 ; Center-point
 02CFABC: 01 06 ; Minute hand color

@@ -48,6 +48,7 @@ For creating gpf-file:
 2. Open this fubu in Smelter.
 3. Pictures - RightClick - Save picture as GPF.
 */
+
 0A2444C: 54009FE51EFF2FE1 04F01FE5,0xA0063691   ; S75v32
 ;------------------------- end -------------------------
 

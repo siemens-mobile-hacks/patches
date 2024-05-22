@@ -14,6 +14,7 @@ English:
 For GPF/GPP patches
 It is needed for many other patches, whitch are written using "Master-Patch+Functon Library" concept (c) 1nvisible, avkiev
 */
+
 +10D0000
 #pragma enable old_equal_ff
 ;----------------------------------------------------------------------

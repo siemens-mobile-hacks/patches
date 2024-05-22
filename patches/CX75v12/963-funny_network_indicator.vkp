@@ -11,6 +11,7 @@ RUS: Показывает синие рожицы (картинки №740-747).
 
 ENG: Shows blue faces (picture №740-747). The better reception - the more smile
 */
+
 019B100: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00280028FFB5
 019B106: FF 02 ; x pos (hex)
 019B107: FF 20

@@ -12,6 +12,7 @@
 Запрашивается отчёт о доставке СМС только для последнего сегмента составного СМС 
 English:SMS status report is requested only for last segment of concatenated SMS
 */
+
 0E39F66: 20339974 02F2B6E8
 
 #pragma enable old_equal_ff

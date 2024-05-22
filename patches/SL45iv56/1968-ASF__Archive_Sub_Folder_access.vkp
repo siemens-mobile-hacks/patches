@@ -17,6 +17,7 @@ to the subfolder of SMS Archive.
 Created: July 14, 2004
 Modified: March 12, 2005 (v2) 
 */
+
 ;Для сохранения СМС в подпапку, примените патч "Modify Character for Filename", 
 ;или раскомментируйте строку ниже, если Вы его не установили. 
 ;0x186110: BF00A1 2F005C 

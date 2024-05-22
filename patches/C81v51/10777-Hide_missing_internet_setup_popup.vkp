@@ -16,6 +16,7 @@ The patch hides the annoying “Missing internet setup” message that pops up e
 - When you insert a new SIM card.
 - In the case of multi-IMSI SIMs like Yota or TELE2 rSIM, popups are shown every time you turn on the phone and every network search.
 */
+
 05632D4: A3F791FF CBE7C046
 ;------------------------- end -------------------------
 

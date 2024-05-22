@@ -12,6 +12,7 @@
 ;name_to = "IdleUpd"
 ;name_from = "IdleUpd" 
 */
+
 02D5B9C: FFB0ACB0041C8BA8 00498847019E06A0
 #pragma enable old_equal_ff
 0069E00: 7146FFB400F008E8FFBCFFB0ACB0041C

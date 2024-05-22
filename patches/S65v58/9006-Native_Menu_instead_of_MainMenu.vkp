@@ -9,6 +9,7 @@
 /*
 -запуск при свернутой яве
 */
+
 0092E578: 0xA08DA5D1 0xA08DF43B ; CKLK_CK_MAIN_MNU: центр джойстика
 0092EB90: 0xA08DA5D1 0xA08DF43B ; ELSE_MMENU_OPEN: для DSE
 

@@ -14,6 +14,7 @@ MP+FL!
 2. Здесь ничего не выбирать :), идёт замена вызова PlaySound (т.е. будильника) на проговаривание времени
 3. Должен быть установлен патч Чтение SMS при залоченной клаве , или закомментируйте строки после  3. Keylock
 */
+
 ;1. Shortcut
 09436C0: "ELSE_COUNT_DOWN",00,A3F98EA0 "ELSE_COUNT_DOWN",00,0xA0FC3001 ;  CX70v56 - ELSE_COUNT_DOWN
 ;0943A68: "ELSE_REMOTESYNC",00,510CFCA0 "ELSE_REMOTESYNC",00,0xA0FC3001 ;  CX70v56 - ELSE_REMOTESYNC

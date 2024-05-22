@@ -8,6 +8,7 @@
 /*
 Отключает доступ к инет-браузеру.
 */
+
 0920FF0: 85198EA0 00000000 ;disable Internet INTR_STRTBROWSR
 0920FBC: 9F198EA0 00000000 ;disable Bookmarks INTR_BBOOKMARKS
 09209A4: 43238EA0 00000000 ;disable DevMenu ELSE_DEVELP_MNU

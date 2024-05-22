@@ -21,6 +21,7 @@ AUTO ANM selectable is at Profile 2 Function 16
 
 Created: March 15, 2005
 */
+
 27DDD8: DAA224DE DAC748DF 
 27DF48: FFFF 8890 ; mov [-r0], r9 
 27DF4A: FFFFFFFF D7403600 ; extp #36h, #1 

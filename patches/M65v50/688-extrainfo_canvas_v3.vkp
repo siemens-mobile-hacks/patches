@@ -17,6 +17,7 @@ Draws as many as you like canvas regions (clears the background) before executin
 - Configure in which profiles ExtraInfo-Patch is active
 - Have one more pass-thru call for another follow-up patch
 */
+
 /*
 - Draws as many as you like canvas regions (clears the background) before executing ExtraInfo-Patch
 - Configure in which profiles ExtraInfo-Patch is active

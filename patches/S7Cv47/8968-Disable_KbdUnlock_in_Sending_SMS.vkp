@@ -8,6 +8,7 @@
 /*
 If you want to send a SMS when keyboard locked, you would find that this patch is usefull.
 */
+
 0E92A90: 13F27EED C046C046
 ;------------------------- end -------------------------
 

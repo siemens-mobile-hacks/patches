@@ -12,6 +12,7 @@
 Жмем красную кнопку -> попадаем в меню "Неотвеченные номера" (Red button   -> "Calls missed")
 Жмем красную кнопку -> выход в режим готовности. (Red button   -> Ready)
 */
+
 049E04C: A7A058 71FB1F
 0325EBE: 78F1C2E8 D9F657FE
 #pragma enable old_equal_ff

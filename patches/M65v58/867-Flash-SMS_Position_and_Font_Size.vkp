@@ -10,6 +10,7 @@
 /*
 
 */
+
 16555E8: 64 92 ; Y позиция Flash-SMS
 1655628: 64 92
 16555EC: 07 08 ; изменить шрифт Flash-SMS - 02-08 (Change Flash-SMS font)

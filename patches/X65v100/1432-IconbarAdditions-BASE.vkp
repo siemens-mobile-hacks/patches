@@ -13,6 +13,7 @@
 English:monitorIcons: create your own iconbar icon by assigning values of a ram byte to icons
 ChargingIcons: shows an icon by charging, another by charging finished
 */
+
 #pragma enable old_equal_ff
 0FDC400: 50B52B48E4F7FCFB2FD0B478002C0DD0
 0FDC410: C92700F041F83878002807D0716B0328

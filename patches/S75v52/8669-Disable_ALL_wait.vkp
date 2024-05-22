@@ -11,6 +11,7 @@
 Patch works only if startassistant NOT disabled/hidden.StartupAnimation must be off, the same after a Theme was changed, else phone can not exit from StartupAssistant!
 
 */
+
 09780C6: FFB5 7047
 ;------------------------- end -------------------------
 

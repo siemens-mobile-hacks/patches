@@ -14,6 +14,7 @@ Config:\japp\FlexMenu
 
 ВНИМАНИЕ! ЕСЛИ ЭТОГО НЕ СДЕЛАТЬ, ТО ПОЯВЯТСЯ ГЛЮКИ ОПИСАННЫЕ by Pavel81
 */
+
 ;Главный экран (в секундах) \ mainscreen (in seconds)
 0BE5928: 0F 0i60 
 ;Меню, списки и т.д. (в секундах) \ menues, lists etc. (in seconds)

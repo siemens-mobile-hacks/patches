@@ -21,6 +21,7 @@ ENG: Includes:
 Undo patches of the same name first - see Conflicts list!
 Patch #956 "Addition to PIT table"  must be installed
 */
+
 ;Сначала отмените одноименные патчи
 ;Если использовать прилагаемый граф.патч, должен быть установлен патч * Дополнение к PIT таблице *
 ;Undo patches of the same name first

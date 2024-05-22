@@ -15,6 +15,7 @@
 ; Now we got rid of a troublesome leak leading to slowing phone after prolonged use
 ; Wish it be ported to everything we have. The leak is everywhere!
 */
+
 05EC114: 201CFFF721FB281C 0048004700A007A0
 #pragma enable old_equal_ff
 007A000: 0400A0E1D4C515FA0400A0E1DF6300FB

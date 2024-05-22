@@ -14,6 +14,7 @@
 In menu item "Internet" submenu works. "Timer" & "Msg.archive" fixed.
 Has NO own CSM assignation to Native Menu!
 */
+
 ; Fix Internet (from v2)
 04444E4: 08 00
 ; Fix Timer & SMS

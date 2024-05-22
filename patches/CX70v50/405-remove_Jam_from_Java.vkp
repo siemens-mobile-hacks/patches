@@ -11,6 +11,7 @@
 
 Даёшь кофе без джема! (с) Kibab :)
 */
+
 ;Перед применением патча папки "Applications" и "Games" переместить из "0:/Java/jam/" в "0:/Java/", опустевшую папку "jam" удалить
 ;Before applying the patch move folders "Applications" and "Games" from "0:\Java\jam\" to "0:\Java\", then delete the empty folder "jam"
 0A4E6D2: 0B 07

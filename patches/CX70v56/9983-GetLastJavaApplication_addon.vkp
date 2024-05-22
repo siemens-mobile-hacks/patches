@@ -11,6 +11,7 @@
 Поставить XTask от SGold75.
 В CSMlist.txt адрес ява должен быть обозначен как Java.
 */
+
 ;PATCH_ENTER
 0x00CD8AD4: 000090E504008DE5544EFFFB 00109FE531FF2FE10005F1A0
 ;PATCH_UPDATE

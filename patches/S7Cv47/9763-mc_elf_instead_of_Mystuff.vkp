@@ -11,6 +11,7 @@ English:
 MasterPatch
 When Open the Patch MyStuff will be replaced to mc.elf
 */
+
 045BB10: FB6134A0 01DF06A0 ;NMENU ADDR
 04701A8: ADB634A0 01DF06A0 ;MMENU ADDR
 +006DF00

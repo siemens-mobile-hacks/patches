@@ -22,6 +22,7 @@ You must create the folder 0:\Misc\Patches\ptc before installing it
 MASTER-MIDLET: http://chaos.allsiemens.com/download/Master.rar
 
 */
+
 171424C: E76227636763A763 00498847,0xA0FC0C81    ; Run Scaner on startup cx70sw56
 
 ;Run Refresher instead ELSE_REMOVE_SYNC

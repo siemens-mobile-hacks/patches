@@ -9,6 +9,7 @@
 /*
 Ускорение загрузки телефона, выключение за секунду
 */
+
 ;PATCH_DISABLE_TIMER_OF_NETSEARCH_ANIMATION
 02A826E: C949 0121
 ;PATCH_DISABLE_TIMER_OF_STARTUP_ANIMATION1

@@ -12,6 +12,7 @@
 Patch dont works correctly with "Large Photo on calls"
 For patch work, must be activated "Autom. Show" on Calls Rate
 */
+
 #pragma enable old_equal_ff
 0C5CC24: 30B5041C0A4B984782B000206946094B
 0C5CC34: 9847201C084988472D21215401302118

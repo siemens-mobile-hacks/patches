@@ -10,6 +10,7 @@
 featuring: charging icons, profile icons, vibra on/off, animation, netmode, minigps, universal engines
 
 */
+
 #pragma enable old_equal_ff
 0FDB800: 49636F6E6241646433332C62656E6A39
 0FDB810: 58B5E4F799FD9F48E5F7F2F905D00024

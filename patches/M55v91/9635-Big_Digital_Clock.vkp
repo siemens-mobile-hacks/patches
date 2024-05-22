@@ -15,6 +15,7 @@
 ;Патч с картинками http://alexsid.antex.ru/dn.php?file=files/gpatches/Clock_Digits.rar 
 ;Там же (http://alexsid.antex.ru/gpatches.php) есть еще кучка вариантов циферок
 */
+
 ;Чуть подвинутые "Большие цифровые часы при залоченной клавиатуре v0.3b" 
 ;для избежания конфликта с DNN_CallsLog2+
 ;двоеточие не мигает (в v3.1 мигает на мой взгляд глючно) 

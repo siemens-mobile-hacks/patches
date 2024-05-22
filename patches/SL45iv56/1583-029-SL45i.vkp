@@ -10,6 +10,7 @@
 
 Патч №029 с http://patch.oslik.ru/SL45_RU
 */
+
 117BA8: BB 8F 
 117BB8: 38 0C 
 117BBC: A4 27 

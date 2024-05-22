@@ -13,6 +13,7 @@ name_from = "IdleUpd"
 
 Эльф IdleDisp больше не нужен, ExtraInfo больше не мограет!
 */
+
 169FAF8: 0E1CD7B03BA936A8 004A9047019EFCA0
 
 #pragma enable old_equal_ff

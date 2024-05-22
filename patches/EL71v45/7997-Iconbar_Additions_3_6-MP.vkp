@@ -8,6 +8,7 @@
 /*
 ready for ELFPack
 */
+
 05C254A: 1E839D8200271C39341C C046,004FB847,0xA007B81B ; EL71v45
 ; don't replace line feeds with spaces in provider name
 05C55F2: 0A FF ; mainscreen ; EL71v45

@@ -12,6 +12,7 @@
 конфиг берем из приаттаченого файла
 стартовать эльф, прописанный в 0:\\ZBin\\etc\\start_elf.bcfg
 */
+
 ;PATCH_START_ELF
 0x004B0A80: 815E32A0 01E0FCA0 ;CNCT_BUSINESSCD
 ;CODE,DATA_C

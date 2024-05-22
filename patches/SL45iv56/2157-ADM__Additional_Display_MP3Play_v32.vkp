@@ -12,6 +12,7 @@ Aнимация перемещена за пределы экрана, не ме
 
 
 */
+
 3BE020: E6FE1200 E6FE0000 ;x1 playbar 
 3BE024: E6FF1D00 E6FF3000 ;y1 playbar 
 3BE010: E6FD5400 E6FD6400 ;x2 playbar 

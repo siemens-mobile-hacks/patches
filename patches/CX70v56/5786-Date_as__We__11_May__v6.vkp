@@ -9,6 +9,7 @@
 /*
 Для тех, кто не пользует МП
 */
+
 0B916B6: FFF7E0FF 7DF3B3FE
 #pragma enable old_equal_ff
 0F0F400: 426F74746F6D20446174652076362020

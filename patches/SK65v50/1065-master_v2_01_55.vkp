@@ -17,6 +17,7 @@ It uses the Master-Midlet written by chaos (http://chaos.allsiemens.com/download
 Every patch compatible with Master-Patch has its own config-section. You don't need to edit it. All settings are changed only from the mobile phone.
 [url]Before installing the patch create the folder 0:\Misc\Patches and install the midlet.[/url]
 */
+
 ;* Мастер-Патч ** Master-Patch * © 1nvisible, ® avkiev, chaos, KiRiK, ~Jhellico
 ;Phone:	SK65 SW50
 ;Version:	2.01

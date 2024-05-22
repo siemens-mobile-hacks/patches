@@ -11,6 +11,7 @@
 
 English:The phone turns on by appointment. The appointment sound is not played.
 */
+
 059B62C: A06E0028 1CF7A0FC
 
 #pragma enable old_equal_ff

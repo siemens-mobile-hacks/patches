@@ -20,6 +20,7 @@ Draws as many as you like canvas regions (clears the background) before executin
 - Have one more pass-thru call for another follow-up patch
 PS. There is sense to install this patch if you have either transparent mainscreen background or transparent ExtraInfo pictures.
 */
+
 /*
 1) Установите патч * Дополнительная информация на главном экране v3\v4 *
 2) Определитесь с ключом профилей - в каких профилях вызывать "Доп.инфо"

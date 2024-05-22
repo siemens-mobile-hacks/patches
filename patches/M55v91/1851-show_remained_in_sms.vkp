@@ -10,6 +10,7 @@
 /*
 Вместо счетчика от 760/330(для юникода) до 0 выводится число символов, оставшееся до конца текущей SMS - 160/70(для юникода)
 */
+
 0A1C03: BFC4BA 9FC00F
 0A1C1D: C8 CA
 7F0FC0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8840DABFC4BAF6F80EFEF0A898E02D09

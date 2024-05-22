@@ -18,6 +18,7 @@
 ;        XlsViewer (*.xls) заменён на RarViewer (*.7z)
 
 */
+
 0A0A2E1: 446F63 526172 ; DocViewer -> RarViewer
 0A0A2ED: 586C73 526172 ; XlsViewer -> RarViewer
 ;0A0A2F9: 506466 526172 ; PdfViewer -> RarViewer

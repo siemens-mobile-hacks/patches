@@ -12,6 +12,7 @@
 EN:
 Enables use of BFB protocol. It's nessesary for many programs, for example, for SieScreenShot.
 */
+
 7E6970: C6 B0
 ;------------------------- end -------------------------
 

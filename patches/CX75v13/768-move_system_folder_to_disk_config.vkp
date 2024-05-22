@@ -12,6 +12,7 @@ RUS: Переносит папку System на диск Config, что выгл�
 ENG: Transfers folder System on disk Config that looks quite logically for in this folder are stored to adjustment of the user and is not present clearly why developers initially have not placed this folder there where it on logic should be. 
 To apply separately from others (and that subtraction of the address will work)
 */
+
 -7F8
 004A5586: 30 32
 004A559A: 30 32

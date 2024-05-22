@@ -12,6 +12,7 @@ RUS: Десятичный CID вместо C1 и C2 в списке соседн
 
 ENG: Decimal CID instead of C1 and C2 in the list next сот. The patch of inclusion of the engineering menu for лицезрения this is desirable.
 */
+
 0B3C1C6: 0123F856002802DA 203FB88B203702E0
 0B3C1D4: 2B 20
 0B3C1D8: 02 05

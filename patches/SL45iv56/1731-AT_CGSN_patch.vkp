@@ -8,6 +8,7 @@
 /*
 Улучшенное управление через AT+CGSN.
 */
+
 ;---- New block. Segment address:B00000--------
 0010F100: 26C1D200 D6D7C700
 ;---- New block. Segment address:C70000--------

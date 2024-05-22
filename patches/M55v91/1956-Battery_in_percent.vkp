@@ -10,6 +10,7 @@
 Значение берется из AkkuMon переменная CAP
 English: Value is taken from AkkuMon variable CAP
 */
+
 0DDAD7: 2DB2D2 9F0009
 362A9A: 01 20
 7F0900: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DA2DB2D2D7401300F2F1EC27F6F10EFE

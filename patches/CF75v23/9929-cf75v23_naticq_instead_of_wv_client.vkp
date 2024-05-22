@@ -10,6 +10,7 @@
 /*
 
 */
+
 0608F34: 29E152A0 0xA01FFBA1 ;перенаправление функции
 
 #pragma enable old_equal_ff

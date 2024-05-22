@@ -12,6 +12,7 @@
 /*
 English:Changes needless pictures from adress 1412. Any pik offs unnoticed. In master midlet write number 1412. in vklay will be an error - just create a repair patch ;) исходник добавлен
 */
+
 ; ##### Picture 1412 #####
 00FD02E0: FFFFFFFFFFFFFFFF 8483880020D605A0
 

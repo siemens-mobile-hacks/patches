@@ -11,6 +11,7 @@ v1 - now you can do everything (cut, copy, view attributes, etc.) with system fo
 v2 - you can move/copy any files anywhere
 v2.5 - now all folders have their native names instead of langpack strings
 */
+
 05A4940: 0028 8042 ;normal names for system folders
 059EBD2: F3B5FFB0 01207047 ;unlock move/copy for every file
 05A33C7: D0 E0 ;unlock options menu

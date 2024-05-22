@@ -11,6 +11,7 @@ RUS: При дозвоне до абонента (когда на другом �
 
 ENG:  At dialing up to the subscriber (when on other end have lifted a tube) phone vibrates. It is convenient - all time phone at an ear is not necessary to hold. The mode joins simultaneously with a daw in the Menu-2-5-5-4 or 2-5-4-3. At entering does not vibrate.
 */
+
 02CA8F8: D3F10AEC0028 002835F72AEB
 #pragma enable old_equal_ff
 01FFF50: 00402DE9FF3F2DE90FE0A0E144F09FE5

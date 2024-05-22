@@ -11,6 +11,7 @@
 Normal exit from camera mode
 Обычный выход из режима камеры
 */
+
 097E0CC: 010050E3 FBA70EFA
 #pragma enable old_equal_ff
 0D280C0: 162801D0012870470048004768E197A0

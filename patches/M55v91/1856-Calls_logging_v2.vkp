@@ -11,6 +11,7 @@
 Формат: дата, время, тип (D-набранные, I-входящие), длительность, номер
 
 */
+
 01C338: DA21F6BC DA9FB006
 7F0680: FFFFFFFFFFFFFFFF 001F1C1F1E1F1E1F
 7F0688: FFFFFFFFFFFFFFFF 1F1E1F1E1F000000

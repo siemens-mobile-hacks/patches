@@ -32,6 +32,7 @@ NEW Library here:
 http://st-hunter.ru/svn/trunk/libs/
 
 */
+
 #pragma enable old_equal_ff
 ;SWILIB_FUNC171,SWILIB_FUNC172
 0x000745C4: 804432A16C4432A1

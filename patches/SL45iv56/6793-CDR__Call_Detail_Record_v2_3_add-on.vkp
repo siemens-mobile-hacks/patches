@@ -15,6 +15,7 @@ Now correctly handles SMSes with the alphanumeric number
 For example SMS from the operator, wherein instead the number is the operator's name.
 Fix adding name from addresbook to log, now corectly write names with multinational character other than  Cyrillic (Central European etc.).
 */
+
 0x4453CE: DC55995C996C FAE42055CC00 ; CDR 2.3 hook
 
 0x445520: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DC55995C996C888066F8FF0046F85200

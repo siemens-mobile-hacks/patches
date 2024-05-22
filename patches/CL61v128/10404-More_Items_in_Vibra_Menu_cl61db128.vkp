@@ -11,6 +11,7 @@
 Открываем заблокированные пункты в меню вибры
 English:More items in vibration menu NativeMenu->Setup->vibration
 */
+
 116419C: 81 A2 ;Dynamic light
 116421C: 60 A2 ;ptt calls
 116429C: 81 A2 ;More light effe.

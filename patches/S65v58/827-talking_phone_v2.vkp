@@ -19,6 +19,7 @@ You should download those files to 0:\Sounds\Time: http://www.asterix.com.ru/dow
 ===
 DSE: http://allsiemens.com/soft/download.php?p=other&file=DSE.rar
 */
+
 ;092E910: "ELSE_COUNT_DOWN",00,9B9C8DA0 "ELSE_COUNT_DOWN",00,0xA0800921 ; Entry for TalkingPhone
 ;092EC50: "ELSE_REMOTESYNC",00,1F978DA0 "ELSE_REMOTESYNC",00,0xA0800921 
 092EBE8: "ELSE_PUSHTOTALK",00,CBA68DA0 "ELSE_PUSHTOTALK",00,0xA0800921 

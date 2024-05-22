@@ -16,6 +16,7 @@ Red -> "Calls missed"
 Red -> "Calls received"
 Red -> Ready
 */
+
 #pragma enable old_equal_ff
 0FC8000: 00B50C48F8F7FCFD0AD001240021305D
 0FC8010: FF2801D0F8F7F4F90134042CF6D100BD

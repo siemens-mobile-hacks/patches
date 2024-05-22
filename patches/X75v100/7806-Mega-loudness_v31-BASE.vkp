@@ -8,6 +8,7 @@
 /*
 пофиксен баг с громкой связью
 */
+
 #pragma enable old_equal_ff
 006EB00: E0B51FB41B48C4DF0ED0071C6EDF0128
 006EB10: 0AD07FDF0130B978C14005D31FBC7D78

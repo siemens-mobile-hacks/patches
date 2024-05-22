@@ -16,6 +16,7 @@ After applying this patch phone won't ask about Alowing network connections when
 
 BE CAREFUL! Some midlets can access network without notifying you about it!
 */
+
 742CF6: 2D04 CC00
 ;------------------------- end -------------------------
 

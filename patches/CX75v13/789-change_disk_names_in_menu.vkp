@@ -12,6 +12,7 @@ RUS: Переименование имён дисков в меню выбора
 
 ENG: Renaming of names of disks into the menu of a choice of disks into more clear. The patch is meaningful only at activation of the menu of a choice of disks.
 */
+
 009C40E: 44726976652030 303A5C44617461 ; Drive 0 -> Data
 009C42C: 4472697665203100 313A5C4361636865 ; Drive 1 -> Cache
 009C44A: 447269766520320000 323A5C436F6E666967 ; Drive 2 -> Config

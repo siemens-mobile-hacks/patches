@@ -9,6 +9,7 @@
 /*
 Release: 12.01.2005
 */
+
 224750: DAC21E48 DAE0D4C7 ; при отсоединении гарнитуры - профиль 0 
 224782: DAC21E48 DAE0C0C7 ; при подсоединении гарнитуры - профиль 1 
 40C7C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DAC21E48E6FC0101D7400D00F6FC8824 

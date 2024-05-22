@@ -9,6 +9,7 @@
 /*
 Теперь включается и выключается из Native Menu - Настройки - Часы
 */
+
 ;NMNU_SHOW_TIME_FIX_HOOK1,NMNU_SHOW_TIME_FIX_HOOK2
 0418514: A36B39A0AB6B39A0 411606A0511606A0
 ;NMNU_SHOW_TIME_FIX_BODY

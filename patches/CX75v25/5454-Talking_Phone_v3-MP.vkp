@@ -9,6 +9,7 @@
 /*
 Пока что "заикается" - многократно повторяет последнее сказанное слово
 */
+
 ;1. Shortcut
 4B1AD0: "ELSE_COUNT_DOWN",00,256232A0 "ELSE_COUNT_DOWN",00,0xA0FC3001
 ;4B1EAC: "ELSE_REMOTESYNC",00,256232A0 "ELSE_REMOTESYNC",00,0xA0FC3001 

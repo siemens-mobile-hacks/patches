@@ -17,6 +17,7 @@
 .rDA554EBC - выключение телефона.
 .rFA9CE6C2 - включение телефона, если выключен, и перезагрузка если включён.
 */
+
 35BC1E: 3D20 3D30
 
 35BC80: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 46FE72003DEDE6FE0037E0BDE6FF5020 

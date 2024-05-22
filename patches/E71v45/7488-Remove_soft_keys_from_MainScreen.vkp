@@ -9,6 +9,7 @@
 /*
 
 */
+
 ; (i) BuG: corrected left soft key functionality on missed event and timer/stopwatch positioning
 
 05C2168: 2BD1 0028 ; always shift down timer/stopwatch

@@ -10,6 +10,7 @@
 /*
 Патч пердназначен для вызова различных функции при помощи различных комбинаций нажатия клавиш.
 */
+
 ; assign actions to key sequences
 ; examples: press "*08" to enter phone setup, "*00" for native menu
 ; "*5" to change to profile 5, "##" for doubleclick keylock

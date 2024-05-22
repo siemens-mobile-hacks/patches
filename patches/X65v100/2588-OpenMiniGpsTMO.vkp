@@ -15,6 +15,7 @@ English: open current MiniGPS-TMO by calling "A0FDDE91"
 by any address launcher like * Key Sequencer *
 
 */
+
 #pragma enable old_equal_ff
 0FDDE80: 4F70656E477073544D4F2C62656E6A39
 0FDDE90: FEB5A2B0E2F7DCFB7B88BA88009201A8

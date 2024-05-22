@@ -13,6 +13,7 @@
 
 Настройки - внутри патча.
 */
+
 ;Меняет режим подсветки клавы в соответствии с выбранным профилем (changes keypadlight mode according to chosen profile)
 ;Пользователь может определять профили и задержку (User can setup profiles and delay)
 0B696F6: 5EF0E2E8 74F183FE

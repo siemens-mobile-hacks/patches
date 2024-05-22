@@ -17,6 +17,7 @@ Will be also launchable directly by keysequencer by call thumb: A0FDE02D
 Тем 10, кто скачал этот патч до обновления.
 Скачайте заново!!!
 */
+
 ;(!) FL f002, f004, f022, f079
 
 07D7570: 0022009200AB0420 004A9047,0xA0FDE001

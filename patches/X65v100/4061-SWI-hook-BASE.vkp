@@ -11,6 +11,7 @@
 English:
 It is needed for calling Library functions from dis-patches
 */
+
 #pragma enable old_equal_ff
 0FD8000: C70050E30500001AB000DEE100109DE5
 0FD8010: 200011E302E08E1204E08E0214E08DE5

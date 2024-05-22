@@ -10,6 +10,7 @@
 Для отображения в меню Аудио\Другие вызовы выбора звуков для линий: Siemens Service Profiler Bit 27 (Disable "Network-Line" menu) снять галку.
 
 */
+
 0CDB40: E048 E078 ; замена звука "щелчок" на звук "Линия 2"
 0CDBDA: DA8C66D8 DA82F00B
 020BF0: FFFFFFFFFFFFFFFFFFFFFFFFFFFF 8880F08CDA8ACEBFDA8C42D9DB00

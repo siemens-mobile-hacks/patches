@@ -21,6 +21,7 @@ Known bugs:
 - If there are no missed SMS/calls/appointments the left SoftKey will function like the right one.
 - If there are missed SMS/calls/appointments the key won't function
 */
+
 1649006: F8F7A9FC 77F07BFC ; заблокированная клавиатура (Locked Keypad)
 164C35C: 0223E05E 74F0DDFA ; скринсейвер (ScreenSaver)
 

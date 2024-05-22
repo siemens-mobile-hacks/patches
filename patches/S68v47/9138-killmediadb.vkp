@@ -11,6 +11,7 @@
 должен фиксить PickOff по адресу a01b9720 cepid 0x4223
 (просто убиваем cepid 0x4223).
 */
+
 ; S68v47
 ; kill media db process
 ;(c) captain_SISka

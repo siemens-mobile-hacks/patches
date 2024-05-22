@@ -12,6 +12,7 @@ English:
 Turn on "Auto display": Мenu - 2 - 5 - 5 - 4
 
 */
+
 #pragma enable old_equal_ff
 01FEC00: 30B5041C0A4B984782B000206946094B
 01FEC10: 9847201C084988472D21215401302118

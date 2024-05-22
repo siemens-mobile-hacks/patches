@@ -10,6 +10,7 @@
 *-Прочее, 0-Мои файлы, решетка-Настройки, кнопка вызова-Разработчик
 English:*-Extra, 0-Mystuff, lattice-Setup, GreenKey-Dev.Menu
 */
+
 ;NMNU_FIX_KEY_HOOK3 
 0x00333694: 1529 0529 
 ;NMNU_FIX_KEY_HOOK1 

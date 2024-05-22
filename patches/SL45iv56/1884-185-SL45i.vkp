@@ -13,6 +13,7 @@ Created: July 13, 2004
 
 Патч №185 с http://patch.oslik.ru/SL45_RU
 */
+
 0x230268: 48403D0E FAC7E0E9 
 
 0x27E9E0: FFFFFFFFFFFFFFFF 48402D01DB00E6FC 

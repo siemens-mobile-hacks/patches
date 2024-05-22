@@ -9,6 +9,7 @@
 /*
 Совместим с ЭльфПаком 2.2
 */
+
 ;Run Scanner on startup
 066D51E: 0021 BEDF ; EL71v45
 

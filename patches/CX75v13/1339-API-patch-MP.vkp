@@ -8,6 +8,7 @@
 /*
 Врезка для API-патча.
 */
+
 ; Ставить именно эту GetLP()!!!!!
 0A831B4: 2870311C201C56F238E8 004A9047,0xA0FCF101,C046 ; CX75v13 - GetLP
 #pragma enable old_equal_ff

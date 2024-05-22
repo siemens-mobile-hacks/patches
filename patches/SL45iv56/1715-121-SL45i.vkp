@@ -15,6 +15,7 @@ Update: March 11, 2004 (by rc-flitzer)
 
 Патч №121 с http://patch.oslik.ru/SL45_RU
 */
+
 ;Исправляет задержку с 60 до 30 секунд: 
 001F18: 3C 1E ; 1E = 30 decimal 
 

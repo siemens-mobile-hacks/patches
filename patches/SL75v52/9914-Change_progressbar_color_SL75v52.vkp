@@ -9,6 +9,7 @@
 /*
 Плавное появление прогрессбара.
 */
+
 08CD478: BEE6FA64 BEE6FA0A ; background
 08CD47C: 1EBEE664 00000034 ; contour
 08CD480: 001E8264 FFFFFF24 ; stripe

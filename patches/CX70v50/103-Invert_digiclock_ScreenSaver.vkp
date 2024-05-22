@@ -32,6 +32,7 @@ color table (0..17h) R G B
 13 - тёмно-жёлтый yellow (dark)
 14-17 - прозрачный (clean)
 */
+
 ;0D8E36D: FFFFFF64 A9ABA900 ;set "0" color to transparent
 171C3DE: 01 00 ;1h back
 171C3E6: 00 01 ;1h font

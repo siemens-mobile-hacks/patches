@@ -17,6 +17,7 @@ v1.3 + correct time of saved SMS displayed
 v1.2 + status report as flash SMS now can be saved
 v1.1 + some fix of group recognize function
 */
+
 /*
 v1.3 + показывается правильное время сохранённой СМС
 v1.2 + отчет о доставке в виде флэш СМС теперь возможно сохранить

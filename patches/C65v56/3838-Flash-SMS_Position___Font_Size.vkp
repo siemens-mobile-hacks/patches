@@ -8,6 +8,7 @@
 /*
 
 */
+
 1708D20: 46 66 ; Y позиция Flash-SMS
 1708D60: 46 66 ; 
 1708D24: 07 08 ; изменить шрифт Flash-SMS - 02-08 (Change Flash-SMS font)

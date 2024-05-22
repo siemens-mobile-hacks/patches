@@ -10,6 +10,7 @@
 Чиним пункты "Включение" и "Выключение" в "Настройки"->"Вибросигнал"->"Боль.свет.эфф." Не забываем установить патч More items in vibration menu ID10404
 English:Repair "Shutdown" and "Startup" items in "Setup"->"Vibration"->"More light effe." Install patch * More items in vibration menu * to enable "More light effe." item! ID10404
 */
+
 ;set effect for "SHUTDOWN" event 
 
 0E36270: 00 02

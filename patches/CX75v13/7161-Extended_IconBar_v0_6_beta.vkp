@@ -10,6 +10,7 @@
 /*
 
 */
+
 ; Extends IconBar up to 8 Icons
 ; fixed in v0.6: switched-off display of charging icon works now
 

@@ -18,6 +18,7 @@ Draws as many as you like canvas regions (clears the background) before executin
 - Have one more pass-thru call for another follow-up patch
 
 */
+
 /*
 Патч является дополнением для патча "Дополнительная информация на главном экране v3" (см. зависимости).
 Перед выполнением патча "Доп.инфо" перерисовывает любое кол-во участков холста (очищает фон)

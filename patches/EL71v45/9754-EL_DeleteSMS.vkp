@@ -9,6 +9,7 @@
 Известно, что существует проблема, когда при удалении SMS она на самом деле не удаляется, а остается в памяти телефона.Этот патч при удалении SMS принудительно вызывает функцию удаления SMS, чтобы компенсировать глюки прошивки. 
 It is known that problem exists that when SMS is deleted it is indeed still present in phone memory. This patch at SMS deletion calls SMS delete function on purpose to compensate for flash bugs. 
 */
+
 0F13D60: ABF6A3F8 DDF0D6FC ; inbox, draft, outbox
 0E50086: 6EF710FF A1F143FB ; sent
 0104C02: 6AF078EF 7CF7F6E9 ; save as draft

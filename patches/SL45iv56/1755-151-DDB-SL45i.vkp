@@ -10,6 +10,7 @@ Released: June 12, 2004
 
 Патч №151 с http://patch.oslik.ru/SL45_RU
 */
+
 0x351138: 3D 00 
 0x351408: 3D 00 
 0x35198E: 3D 00 

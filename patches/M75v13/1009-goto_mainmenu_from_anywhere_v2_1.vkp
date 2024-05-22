@@ -15,6 +15,7 @@
 English:Now turns off a MP3-player during playing. We do so - we start a MP3-player, we block the keyboard (long pressing #), we press ### and we in the native-menu with unblocked keyboard and illumination! At 7 profile as though it is not present (goes in LOGAL) and at 6 - goes in MainMenu.
 The item of the menu " the List of Calls " - "Time/cost" shuts down phone
 */
+
 07D4C54: 84F019F9 CCF4FCFC 
 #pragma enable old_equal_ff 
 04A1650: FFB5134B98470130072818D05DF30FF8 

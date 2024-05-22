@@ -11,6 +11,7 @@
 Заставляет телефон понять, что 1 Кб = 1024б и так далее...
 Forces phone to treat 1Kb as 1024b and so far
 */
+
 04Db830: 7D 80
 04Db944: 4042 FFFF
 

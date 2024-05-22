@@ -16,6 +16,7 @@ Patch replaces shortcut NAT_VOICE_MSGCHANGE (change voice message) with spelling
 Set this shortcut by help FakEditor to any key, if you press this key - current time will be spelled.
 You should download those files to 0:\Sounds\Time: http://avkiev.kiev.ua/Siemens/Patches/time.rar
 */
+
 08428BC: "VOICE_MSGCHANGE",00,0xA06EE23B "VOICE_MSGCHANGE",00,0xA0063001   ; EL71v38 - SpellTime instead of VOICE_MSGCHANGE
 0709254: A81CFAEBB000C4E1 BF0000EF0000A0E1                                 ; EL71v38 - SpellTime instead of Alarm
 

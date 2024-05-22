@@ -11,6 +11,7 @@
 In x75/x85 system, master reset only should be used in NO SIM CARD MODE,now it can be use all the time
 Теперь не надо извлекать сим-карту для общего сброса настроек телефона по *#9999#
 */
+
 03044F3: D0 E0 ; s75v47
 ;------------------------- end -------------------------
 

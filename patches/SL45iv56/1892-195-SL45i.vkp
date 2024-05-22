@@ -14,6 +14,7 @@ Released: July 28,2004
 
 Патч №195 с http://patch.oslik.ru/SL45_RU
 */
+
 ;0x3B0106: DAE6EC5F CC00CC00 ; Удалить время
 ;0x3B00A0: DAE6EC5F CC00CC00 ; Удалить дату
 

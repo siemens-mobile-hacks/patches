@@ -10,6 +10,7 @@
 ;This Patch contains some useful functions which have not been found in FW
 ;It is universal and can be installed on every x65-x75 phone without changing
 */
+
 +110000
 #pragma enable old_equal_ff
 ;----------------------------------------

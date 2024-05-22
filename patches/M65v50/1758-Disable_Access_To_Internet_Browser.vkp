@@ -9,6 +9,7 @@
 /*
 Патч отключает доступ к интернет-браузеру например: к закладкам и.д
 */
+
 0920FF4: 85198EA0 00000000 ;disable Internet INTR_STRTBROWSR
 0920FC0: 9F198EA0 00000000 ;disable Bookmarks INTR_BBOOKMARKS
 09209A8: 43238EA0 00000000 ;disable DevMenu ELSE_DEVELP_MNU

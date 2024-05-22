@@ -46,6 +46,7 @@ If current profile is 7 - patch doesn't work.
 Пример 2. Если в буфере по смещению 23 находится байт 08, то в 23:00 телефон выключится
 WAV-файлы для проговаривания часов можно
 */
+
 02C94E6: 82F180EC CEF655F8 ;mainscreen
 02CC96A: BBF7ECEE CAF617FE ;screensaver
 #pragma enable old_equal_ff

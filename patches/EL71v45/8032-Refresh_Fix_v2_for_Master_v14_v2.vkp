@@ -11,6 +11,7 @@
 ; append to master vkp, or, if master already installed, just apply.
 ; you can remove Refresh Fix Master v14 and apply only this one
 */
+
 0060CD2: 04B432DF04BC 009032DF0022
 ;------------------------- end -------------------------
 

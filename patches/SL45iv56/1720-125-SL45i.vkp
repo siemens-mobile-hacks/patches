@@ -10,6 +10,7 @@ Release: March 2, 2004
 
 Патч №125 с http://patch.oslik.ru/SL45_RU
 */
+
 ;Вместо 28 ставьте номер звука как в "change call active sound" 
 
 452554: 2D03E02C E6FC2800

@@ -8,6 +8,7 @@
 /*
 
 */
+
 16F1142: 0021 10BD ; "Все сигналы вкл" (All ringtones on)\
 16F1162: 0021 10BD ; "Все сигналы выкл" (All ringtones off)/ © arsh0r
 16F11B8: 0021 10BD ; "Блокировка клавиатуры включена" (Keypad locked)

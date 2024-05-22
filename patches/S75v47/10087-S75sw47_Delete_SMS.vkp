@@ -12,6 +12,7 @@
 It is known that problem exists that when SMS is deleted it is indeed still present in phone memory. This patch at SMS deletion calls SMS delete function on purpose to compensate for flash bugs. Fixed bug when saving drafts.
 
 */
+
 0E5C0D6: 71F734FC E0F11DF8 ; inbox, draft, outbox 
 0E5E778: 6FF7E3F8 DDF1CCFC ; sent
 0F1CA30: B0F687FF 1FF170FB ; save as draft

@@ -15,6 +15,7 @@ English:This patch is made to control other patches settings from mobile without
 */
 
 
+
 ;Run Scaner on startup
 02A7334: FF20 BEDF
 

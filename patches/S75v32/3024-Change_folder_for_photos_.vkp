@@ -9,6 +9,7 @@
 Фотографии сохраняются в папке 0:/_MyPhoto
 English: Photos are saved in folder 0:/_MyPhoto
 */
+
 066C1E6: 0B00,'0:\\Pictures' 0B00,'0:\\_MyPhoto'
 ;------------------------- end -------------------------
 

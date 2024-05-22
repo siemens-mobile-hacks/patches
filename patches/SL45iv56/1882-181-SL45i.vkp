@@ -13,6 +13,7 @@ Created: July 10, 2004
 
 Патч №181 с http://patch.oslik.ru/SL45_RU
 */
+
 0x11BC90: 2A01 6B07 ; do not use A001 ("Menu" string) if you apply MBT patch. 
 
 0x352936: DAD460E9 DADBDC42 

@@ -10,6 +10,7 @@
 увеличена фото и поднята до 0x1A по Y
 English: Caller name removed, number moved down, photo is made bigger and moved up to 0x1A.
 */
+
 0422064: 1B 00
 0422080: 63 00
 04220B8: 8700000004000000 0000000004000000

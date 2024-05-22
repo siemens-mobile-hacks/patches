@@ -47,6 +47,7 @@ C4:GetBuffer
 129:__thumb void  FreeWS
 16C:__arm int str_2ws
 */
+
 ;PATCH_ENTRY
 0x00B099E4: 307802283ED07869 004988470158FCA0
 ;------------------------- end -------------------------

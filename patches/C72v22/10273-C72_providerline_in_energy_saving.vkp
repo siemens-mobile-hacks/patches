@@ -8,6 +8,7 @@
 /*
 по всему получается, патч только для телефонов с дисплеем DisplayID(1,54): Philips Leadis LDS183
 */
+
 ; DisplayID(1,54): Philips Leadis LDS183
 ; at screensaver startup
 11C5FEC: 33 33 ; position of upper boundary of provider line from top of screen 

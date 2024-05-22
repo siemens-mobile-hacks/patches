@@ -11,6 +11,7 @@
 When the keyboard is locked you can open DEVICE_INBOX by pressing Left-Soft-Button. 
 
 */
+
 ;OPEN_INBOX_KBDLOCKED_HOOK
 0853464: 0FBB66A0 872456A1
 ;OPEN_INBOX_KBDLOCKED_BODY

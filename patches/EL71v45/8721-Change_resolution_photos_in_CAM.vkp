@@ -11,6 +11,7 @@
 ;1st meaning on X-line (less than 1280 pixels)
 ;2nd meaning on Y-line (less than 1024 pixels)
 */
+
 08548D8: 0i00240,0i00320 0i00024,0i00032 ; Фон. картинка/Wallpaper
 08548CC: 0i00160,0i00120 0i00500,0i00700 ; Низк./Low
 08548C0: 0i00320,0i00240 0i01000,0i00750 ; Обычное/Medium

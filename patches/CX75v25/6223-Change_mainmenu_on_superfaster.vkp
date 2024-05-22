@@ -12,6 +12,7 @@ English:
 native menu instead mainmenu
 
 */
+
 004B16C0: 434B4C4B5F434B5F4D41494E4D4E5500A76B32A0 "CKLK_CK_MAINMNU",00,0xA02BEA19
 
 ;------------------------- end -------------------------

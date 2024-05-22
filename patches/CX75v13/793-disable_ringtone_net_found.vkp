@@ -12,6 +12,7 @@ RUS: Отключить звук "ту-ту-ту" при нахождении с
 
 ENG: To disconnect a sound "tu-tu-tu" at a finding of a network phone.
 */
+
 04CE43C: 5C03 FFFF
 ;------------------------- end -------------------------
 

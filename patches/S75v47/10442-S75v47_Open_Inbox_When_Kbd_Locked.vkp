@@ -11,6 +11,7 @@
 1.When keyboard locked and there are some missed events, you could open DEVICE_INBOX by pressing Left-Soft-Button.
 2.Light-on by long pressing any key.
 */
+
 ;OPEN_INBOX_KBDLOCKED_HOOK
 0x043955C: 192C34A0 852456A1
 ;OPEN_INBOX_KBDLOCKED_BODY

@@ -18,6 +18,7 @@ English: Default phone fonts with some fixes:
 - now (Cyrillic) Ukrainian letter "Ii" is displayed in smallest font (useful in midlets, WAP-browser, SMS);
 - in English "I" added bootom and top dashs (for difference with small Englash "L").
 */
+
 ;SIEMENS CE 5.4 build 230 vkp export, 20.04.2006 at 18:28:03
 ;SIEMENS M65, lg3, fw:58
 

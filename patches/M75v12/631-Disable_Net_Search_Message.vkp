@@ -9,6 +9,7 @@
 /*
 Отображается инвертированный "!" вместо Поиск сети (instead of Netsearch there is 
 */
+
 ;* Отключить надпись "Поиск сети" ** Disable displaying "netsearch" * © arsh0r, § Gurza 
 ;!Отображается инвертированный "!" вместо Поиск сети (instead of Netsearch there is an inverted "!" in front of providername) 
 02CF620: A721 04E0 ;screensaver 

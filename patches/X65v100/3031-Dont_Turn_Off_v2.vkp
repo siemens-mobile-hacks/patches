@@ -10,6 +10,7 @@
 Не используйте слишком часто, это может повредить ваш аккумулятор!
 Don't use it too often. It can damage your battery!
 */
+
 #pragma enable old_equal_ff
 0FDDF00: 00B50948E2F77CFE06D102E007480121
 0FDDF10: 0160E2F799F800BDB078002803D0F278

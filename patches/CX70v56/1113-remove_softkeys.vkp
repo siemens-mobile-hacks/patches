@@ -9,6 +9,7 @@
 /*
 
 */
+
 ;* Убрать софт-кнопки с главного экрана и опустить дату с часами вниз v2 ** Remove soft-keys from MainScreen v2 * © SiNgle
 171BD9D: D0 E0
 171BE5C: 04D1 0028

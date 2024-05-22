@@ -14,6 +14,7 @@ English: If the original ringtone had been modified using ffmod, the sound heare
 from earphone is different with the sound from normal speaker. Using this
 patch both sound will be same.
 */
+
 0x46478C: 3D 0D
 ;------------------------- end -------------------------
 

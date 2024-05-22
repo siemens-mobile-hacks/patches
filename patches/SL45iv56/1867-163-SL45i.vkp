@@ -16,6 +16,7 @@ Release: April 25th, 2004
 
 Патч №163 с http://patch.oslik.ru/SL45_RU
 */
+
 ;Если патч  №060 (patchID: 1622) "Иконка профиля" установлен, выберите:
 ;0x40CB5E: FFFFFFFFFFFFFFFF 98D098E0FAC794D6 ; с иконкой профиля
 0x40CB5E: FFFFFFFFFFFF 98D098E0DB00 ; без иконки профиля

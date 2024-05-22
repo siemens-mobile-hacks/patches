@@ -15,6 +15,7 @@
 Тестируйте, совместим с эльфпаком 2.2
 
 */
+
 #pragma enable old_equal_ff
 ;OpenReadCloseFile
 006F000: 7EB50D1C802211026B460ADF041C411C

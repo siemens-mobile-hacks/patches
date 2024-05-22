@@ -17,6 +17,7 @@ Will be also launchable directly by keysequencer by call thumb: A0FDE02D
 + GetLPFix for correct display of info
 
 */
+
 07D82D4: 0022009200AB0420 004A9047,0xA0FDE001  ;E1
 0A9A134: 0010A0E30000A0E3 04F01FE5,0xA0FDE019  ;E2
 

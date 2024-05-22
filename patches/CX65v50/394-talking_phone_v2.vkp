@@ -19,6 +19,7 @@ You should download those files to 0:\Sounds\Time: http://www.asterix.com.ru/dow
 ===
 DSE: http://allsiemens.com/soft/download.php?p=other&file=DSE.rar
 */
+
 0920960: "ELSE_COUNT_DOWN",00,FB198EA0 "ELSE_COUNT_DOWN",00,0xA0800921 ;Entry for SpellTime
 0B6D47A: D9F5B0E9 93F451FA ;Говорить время вместо мелодии будильника (Talk time instead of Alarm)
 #pragma enable old_equal_ff

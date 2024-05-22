@@ -8,6 +8,7 @@
 /*
 
 */
+
 00413C: F2F40CFE DA6800BD
 48BD00: FFFFFFFFFFFFFFFFFFFF F2F40CFE46F43200DB00
 ;48BD06: 32 XX ;заменить на кол-во сек. до подачи сигнала в HEX

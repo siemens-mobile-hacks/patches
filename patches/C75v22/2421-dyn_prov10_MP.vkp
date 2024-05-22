@@ -40,6 +40,7 @@ English:Attention ! For function 08 must be installed BODY of patch "miniGPS"
 | 3 | Время                   | 15:56           | 5    |                                  |
 | 4 | Дата   
 */
+
 048D1B8: 37EC7EA0 0xA10D1B01 ; C75v22
 +110000
 #pragma enable old_equal_ff

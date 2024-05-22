@@ -22,6 +22,7 @@ please switch to "base of mainscreen patches" from Goll@B.
 Modified: May 12, 2006
 September 24th, 2006 (v2a: moved patch)
 */
+
 3BA1D0: F0C8F0D9 DAC7F0D6
 
 0x27D6F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7400E00F3F9423A9AF40CB0DADB22ED

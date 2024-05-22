@@ -9,6 +9,7 @@
 /*
 Отключает вибру при срабатывании будильника.
 */
+
 0589CC8: 0F209BF050EB 76F44AE80028
 #pragma enable old_equal_ff
 01FFD60: 00402DE9F23F2DE90FE0A0E148F09FE5

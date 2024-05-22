@@ -8,6 +8,7 @@
 /*
 
 */
+
 +0FD4000
 #pragma enable old_equal_ff
 0000: 0xA0092E1C ; 000: void loopback0()

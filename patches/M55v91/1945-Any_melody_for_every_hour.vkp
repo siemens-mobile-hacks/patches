@@ -13,6 +13,7 @@
 Работает только если внизу экрана показывается дата в виде "Пн 26 Янв"
 Когда тел в других режимах (screen-saver e.t.c.)-патч не работает!
 */
+
 35B0C0: DAA2AA39 DA5500DF
 35DF00: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E0FCFA5510DFFFFFFFFFFFFFFFFFFFFF
 35DF10: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8880F08CE00D88D088C0E6FC0109E6FD

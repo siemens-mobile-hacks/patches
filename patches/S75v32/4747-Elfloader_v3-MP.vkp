@@ -30,6 +30,7 @@ Release 23.08.2006
 +Вынесены адреса возврата в отдельный сегмент (RET_ADRS) для упрощения портирования
 +Ублажены юзеры МП - перенесен GetCPULoad
 */
+
 ;S75_32
 0x00079000: FFFFFFFFFFFFFFFFFFFFFFFF 47B82FA00FB62FA0275497A0 ;RET_ADRS
 0x004254F0: 0FB62FA0 B48407A0        ;PATCH_ONCREATE

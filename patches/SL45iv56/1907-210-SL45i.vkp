@@ -14,6 +14,7 @@ Created: Aug 22, 2004
 
 Патч №210 с http://patch.oslik.ru/SL45_RU
 */
+
 ;restore the parameters of image ID #214 in accordance with Chaos' patch 
 0x4BB556: 7D2601005E100C00 7E4101005E100C00 
 

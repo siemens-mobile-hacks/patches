@@ -12,6 +12,7 @@
 English:on the difference of original patch a combination of upto 4 keys can be assigned. But you can also assign only one key - then you should fill the end of string with zeroes.
 
 */
+
 078653C: 23232300 nnNNnnNN
 ;*-2A, 23, SK left-01, SK right-04, joy up-3B, down-3c, left-3d, right-3e, joy center-1A
 ; callkey-0b on/off-0c, 0...9 - 30...39

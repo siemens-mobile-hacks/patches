@@ -37,6 +37,7 @@ User can now also write description of any function (up to 15 chars). At the mom
 
 It's nessesary to install API patch and entrypoints for both APIpatch & this one!
 */
+
 #pragma enable old_equal_ff
 0FC4700: 00210655021951700522F7B5051C4148
 0FC4710: FCF776FA49D02C243019FBF7DDFC041C

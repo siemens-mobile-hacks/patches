@@ -10,6 +10,7 @@
 rus:*-Прочее 0-Мои файлы #-Настройки Кнопка вызова-Разработчик
 eng:*-Extra 0-Mystuff #-Setup GreenKey-Dev.Menu
 */
+
 ;NMNU_FIX_KEY_HOOK3 
 0x006FB390: 1529 0529 
 ;NMNU_FIX_KEY_HOOK1 

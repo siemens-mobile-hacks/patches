@@ -19,6 +19,7 @@ Will be also launchable directly by keysequencer by call thumb: A10EE02D
 
 (!) FL f002, f004, f022, f079
 */
+
 078781C: 0022009200AB0420 004A9047,0xA10EE001 ; если нужен вызов только ч-з функцию A10EE02D - закомент. эту строку
 07EAB14: 0010A0E30000A0E3 04F01FE5,0xA10EE019
 

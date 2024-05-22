@@ -11,6 +11,7 @@
 English:
 Routes the dynamic lights signals to keypadlight or mainscreen.
 */
+
 122643C: 00A0A0E3 2BD110EB
 165A8F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 020050E30000A00300A0A0E31EFF2FE1
 

@@ -12,6 +12,7 @@
 (!) MP (+ Library functions f006, f033, f034, f036, f037, f066, v11)
 (!) GraphPatchManager v3
 */
+
 +F00000
 #pragma enable old_equal_ff
 6400: 00B52848FAF7FCFB47D0FAF745F93868

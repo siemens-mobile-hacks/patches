@@ -16,6 +16,7 @@ English:
 
 DON'T INSTALL this patch if you use GPRS and other connections!
 */
+
 ;S75v22 - Отключить появление окна "Помощника" при старте телефона
 ;S75v22 - Disable "Assistant" at startup
 ;(c) SiNgle

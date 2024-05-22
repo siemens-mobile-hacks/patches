@@ -47,6 +47,7 @@ For creating gpf-file:
 2. Open this fubu in Smelter.
 3. Pictures - RightClick - Save picture as GPF.
 */
+
 #pragma enable old_equal_ff
 0063600: 00B50120800314DF041CC7DFE4804460
 0063610: 2BA255689668D7682EA003A10131C3DF

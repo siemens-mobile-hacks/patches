@@ -14,6 +14,7 @@ Created: July 12, 2004
 
 Патч №184 с http://patch.oslik.ru/SL45_RU
 */
+
 0x23022A: E6FC3500 DAC7C0E9 
 
 0x27E9C0: FFFFFFFFFFFF DADB3E19E6FC 

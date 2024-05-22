@@ -20,6 +20,7 @@ The indicator is not displayed in dialing and incoming call modes
 Undo the standard net indicator X\Y position in * MainScreen positioning v2 *
 Use combi-patch * ImprovedNetIndicator + ProfileLogo * to change its coordinates
 */
+
 ;*** Large Advanced Net Indicator v2 ***
 ;*** Большой продвинутый индикатор сети v2 ***
 ;© Alex Unknown, KiRiK

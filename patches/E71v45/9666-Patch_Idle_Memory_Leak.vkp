@@ -13,6 +13,7 @@
 ; Now we got rid of a troublesome leak leading to slowing phone after prolonged use
 ; Wish it be ported to everything we have. The leak is everywhere!
 */
+
 ; Устранение утечки памяти при отображении IdleScreen
 ; Теперь устранена неприятная утечка, из-за которой телефон начинал тормозить после длительного использования
 ; Желательно портировать на все, что есть. Данная утечка есть везде!

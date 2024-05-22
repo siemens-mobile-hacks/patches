@@ -15,6 +15,7 @@ StrAnsi2Uni, StrUni2Ansi, CharAnsi2Unicode, CharUnicode2Ansi - функции п
 English:
 Patch contanins several functions that overload or expand standard FW functions.
 */
+
 +F00000
 ;HexToInt
 ; (c) empeka

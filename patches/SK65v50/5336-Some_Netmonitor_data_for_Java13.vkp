@@ -13,6 +13,7 @@ return current+6 neighbours CID and LAC values in Java properties MPJCCIDS and M
 return current+6 neighbours RX values in Java property MPJCRXLS
 return current TA value in Java property MPJC_TA
 */
+
 /*
      Property                   Value
     ---------------------------------------------------

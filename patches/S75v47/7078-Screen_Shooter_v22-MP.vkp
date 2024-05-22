@@ -18,6 +18,7 @@
 Если патч включен - вместо Фонарика работает скрин-шутер
 
 */
+
 ;Run ScreenShooter instead of Lighter
 0424878: 0xA032EBB7 0xA0067301
 0067438: 0xFFFFFFFF 0xA032EBB7

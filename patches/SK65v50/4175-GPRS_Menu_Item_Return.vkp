@@ -10,6 +10,7 @@
 English:
 For those who don't have GPRS item in menu and who cannot set up GPRS options in connection profiles.
 */
+
 0381DF4: 00 FF
 03865F6: 00 FF
 ;------------------------- end -------------------------

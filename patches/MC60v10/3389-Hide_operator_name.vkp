@@ -18,6 +18,7 @@ OR
 New: use VKP patch
 
 */
+
 000CF450: 8890 DB00
 
 ;Remove service provider, no more need for 1*1 transparent map! ^_^

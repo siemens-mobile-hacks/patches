@@ -21,6 +21,7 @@ By the way, add some old library
 0A4C: 0xA8E637E4 ; 293:  __arm char *RamAlarmclockHour()
 0A50: 0xA8E637E5 ; 294:  __arm char *RamAlarmclockMinute()
 */
+
 ;HOOK1
 3410C8: 321C281C B7F0E0EF
 ;HOOK2

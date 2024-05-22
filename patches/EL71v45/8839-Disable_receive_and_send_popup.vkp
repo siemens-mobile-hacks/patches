@@ -11,6 +11,7 @@
 Для замены прогрессбара юзаем эльф 
 ExioPB - Extended Information On ProgressBar (C) Vedan
 */
+
 0690068: 0110A0E3 0000A0E1 ; disable send popup
 071D32C: 0110A0E3 0000A0E1 ; disable receive popup
 ;------------------------- end -------------------------

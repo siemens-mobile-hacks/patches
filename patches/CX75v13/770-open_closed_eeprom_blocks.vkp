@@ -12,6 +12,7 @@ RUS: Открывает скрытые блоки EEPROM. Для тех, кто 
 
 ENG: Opens latent blocks EEPROM. For those who knows, what for to it it. For example, for defragmentation EEPROM.
 */
+
 08CE358: 00 01
 ;------------------------- end -------------------------
 

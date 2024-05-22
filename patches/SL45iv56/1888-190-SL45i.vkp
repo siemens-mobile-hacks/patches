@@ -13,6 +13,7 @@ Created: July 17, 2004
 
 Патч №190 с http://patch.oslik.ru/SL45_RU
 */
+
 0x3B0698: A8D8DAD69809DADB E01CDAF05083DAE4
 0x3B06A0: 8219 C046
 

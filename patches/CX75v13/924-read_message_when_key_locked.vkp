@@ -13,6 +13,7 @@ RUS: Чтение flash-SMS и нового сообщения при залоч
 
 ENG: Reading flash-SMS and the new message when the key locked with time illumination At new SMS - we press green button ;-)
 */
+
 02CC5D8: DCF736F8 32F715FC
 02CF78E: 0223E05E 2FF747FB
 #pragma enable old_equal_ff

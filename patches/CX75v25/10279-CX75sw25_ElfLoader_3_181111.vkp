@@ -30,6 +30,7 @@ NEW Library here:
 http://st-hunter.ru/svn/trunk/libs/
 
 */
+
 #pragma enable old_equal_ff
 ;FSWI_PATCH1
 0x00092BE4: DCF09FE5

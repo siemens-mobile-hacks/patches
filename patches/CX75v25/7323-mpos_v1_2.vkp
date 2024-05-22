@@ -17,6 +17,7 @@
 by sempai : дабы избежать конфликта, чутка изменил патч Enlarge_incoming_Call_Photo_v2
 положил в архив с конфигом
 */
+
 ;PATCH_NET_CANVAS
 0x002A8DB0: 39FBBE42 00280028
 ;PATCH_NET_ICONS

@@ -17,6 +17,7 @@ that will turn the phone off. Add this patch to correct that 'bugs'.
 
 Release: April 8, 2003
 */
+
 0x38E1CE: F0CEF0DF E6FDA102
 
 0x3BF1D0: DC4DC4EC0400 E6FCF22ACC00

@@ -15,6 +15,7 @@ English: Now you can assign PIT addresses to pics #1346(0x542) - 1446(0x5A6) in 
 Known Problems:
 You can't yet view or edit these pics by means of SPC3 © ACiD[mrp]\b@iLLi
 */
+
 04A1F2C: 4205 A605 ; MaxPitNumber 1346->1446
 0800CF4: FFF7F5FF A1F4E4FA ; Entrypoint
 

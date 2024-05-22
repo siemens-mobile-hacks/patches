@@ -19,6 +19,7 @@ Will be also launchable directly by keysequencer by call thumb: A0800C3D
 Needs Function Library to run and: "GetLP_UsrString" or "API". Function library #2, 4, 22, 79 functions used, if missing, patch shuts down phone.
 
 */
+
 0B1F7B0: 00220092 E1F42EFA
 1240938: 0010A0E30000A0E3 04F01FE5250C80A0
 #pragma enable old_equal_ff

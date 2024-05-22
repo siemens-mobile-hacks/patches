@@ -10,6 +10,7 @@
 /*
 Теперь работает с адресацией RAM 0xACxxxxxx и 0xADxxxxxx 
 */
+
 12DD85C: 2C0000EA 80F19FE5
 12DD9E3: A100FFFFFF 00,0xA0078001
 

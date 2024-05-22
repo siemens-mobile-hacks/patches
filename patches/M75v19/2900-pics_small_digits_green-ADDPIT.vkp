@@ -17,6 +17,7 @@ Transparent little green digits, placed in AddPIT, to use with FunctionLibrary. 
 Picture numbers: 56F-578
 0xA1210000 - 0xA121043C
 */
+
 ; FL Constant Correction
 ; Use only if standard pics were set (0x465).
 ;00FC0738: 004FF746,0x00000465 004FF746,0x0000056F ; z03: Pic_Little0

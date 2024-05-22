@@ -15,6 +15,7 @@ EN:
 Read flash sms and new message when keyboard locked, and Light on temporarily.
 Press the GREEN button to read message.
 */
+
 163AA36: F8F7D5FD 20F07EFA
 163DA7E: 0223E05E 1DF067FA
 #pragma enable old_equal_ff

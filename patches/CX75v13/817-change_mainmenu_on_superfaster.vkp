@@ -15,6 +15,7 @@ English: Replacement of the main menu on superfast.
 The item of the menu " the List of Calls " - "Time/cost" cuts down phone
 
 */
+
 004B09D4: 434B4C4B5F434B5F4D41494E4D4E5500EB6832A0 "CKLK_CK_MAINMNU",00,0xA02BE8FD
 ;------------------------- end -------------------------
 

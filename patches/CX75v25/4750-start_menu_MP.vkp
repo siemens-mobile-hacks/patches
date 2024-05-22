@@ -14,6 +14,7 @@ As background set picture 1346 (added in archive as gpp file)
 
 Uncomment the line at the end of patch before installation! And delete old config-file
 */
+
 02CC25A: 002865D0DCF77BFA0028 C046,00498847,0xA0FCC051
 04B1E54: BD6C32A0 0xA0FCC0E3  ;"ELSE_PUSHTOTALK"
 ; UNCOMMENT THE LINE BEHIND PATCH BODY!!!

@@ -16,6 +16,7 @@ English:Patch version is in "YMMDD" format. It indicates its update date.
 
 It is needed for many other patches, whitch are written using "Master-Patch+Functon Library" concept (c) 1nvisible, avkiev
 */
+
 ;ELFpack v2.3UAFIX (C)2007 by Rst7/CBSIE, BoBa, Kren
 ;Release 26.07.2007
 ;CX75v13

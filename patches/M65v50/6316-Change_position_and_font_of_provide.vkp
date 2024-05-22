@@ -9,6 +9,7 @@
 /*
 ;!Значения различаются, если показана стрелка (например, при получении сообщения (there are different settings if the arrow is shown (f.ex. when you got a message))
 */
+
 ;Цифровые часы (digiclock)
 1655484: 00 xx ;x-start
 1655486: 9F yy ;y-start

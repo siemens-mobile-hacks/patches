@@ -9,6 +9,7 @@
 
 */
 
+
 ; disable battery level checks
 2DA65E: 4863FD1C CC00CC00
 2DC04E: FD06 CC00

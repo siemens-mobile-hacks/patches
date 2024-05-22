@@ -13,6 +13,7 @@ Created: August 8, 2004
 
 Патч №201 с http://patch.oslik.ru/SL45_RU
 */
+
 212364: DAEF0E00 DAE066BD
 
 0x40BD66: FFFFFFFF 88C0D740

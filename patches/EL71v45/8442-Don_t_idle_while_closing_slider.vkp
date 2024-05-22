@@ -8,6 +8,7 @@
 /*
 
 */
+
 0671C34: 8EF156E9 C046C046 ; DON'T IDLE WHILE CLOSING SLIDER/не выходить на ГЭ
 ;0671C4C: 8EF162E9 C046C046; BLOCK SLIDER WHILE CLOSING/заблокировать клавиатуру
 ;------------------------- end -------------------------

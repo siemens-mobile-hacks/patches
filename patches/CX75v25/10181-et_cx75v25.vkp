@@ -15,6 +15,7 @@ X:\Zbin\etc\ExtTheme.bcfg
 http://siedevelop.xclan.ru?page=develop-patches-et
 
 */
+
 ;IC_DISABLE1
 0x007C6092: 30F094FE C046C046
 ;IC_DRAW_CURSOR

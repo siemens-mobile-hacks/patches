@@ -13,6 +13,7 @@
 
 Патчи №076 и №080 с http://patch.oslik.ru/SL45_RU
 */
+
 3BA12E: DAD0585C DAC740DB 
 27DB40: FFFFFFFFFFFFFFFF DAD0585CC0CEE6FC 
 27DB48: FF 3F ; = left coord of num 

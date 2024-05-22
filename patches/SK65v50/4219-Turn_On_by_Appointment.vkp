@@ -10,6 +10,7 @@
 English:
 The phone turns on by appointment. The appointment sound is not played.
 */
+
 0534C88: A06E0028 BFF4BAFD
 
 #pragma enable old_equal_ff

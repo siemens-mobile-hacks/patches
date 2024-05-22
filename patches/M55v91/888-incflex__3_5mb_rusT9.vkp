@@ -21,6 +21,7 @@ Increases Flex Memory up to 3.5 MB, Russian T9 and only 2 languages in langpack 
 Read installation manual carefully!!!
 Attached file is nessasary to install this patch.
 */
+
 ; Разархивируйте приложенный к патчу файл. Там будут 2 файла по 128 кил.
 ;  1. Копируем всю файловую систему дисков A и B на комп
 ;     Диск B - если он у вас открыт, и на нем есть полезная инфа.

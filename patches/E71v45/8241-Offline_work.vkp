@@ -10,6 +10,7 @@
 
 The patch allows to use phone without connection to a network, for example as a player 
 */
+
 ;+ Убрал самовыключение при бездействии через 3 мин 
 
 ;Для работы необходимо установить контроль PIN-кода или кода телефона при включении

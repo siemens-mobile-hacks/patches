@@ -9,6 +9,7 @@
 /*
 Вместо INSTANT_MESSAGE выводит информацию о колличестве отправленных смс
 */
+
 ;Show SMSCount instead of INSTANT_MESSAGE
 0x421A78: 0xA032DB91 0xA00651C5
 

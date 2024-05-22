@@ -10,6 +10,7 @@
 /*
 Данный патч нужен для эльфа ChanBanner.
 */
+
 ;CODE
 #pragma enable old_equal_ff
 0x00079C00: 70402DE90040A0E10150A0E1BB8100EF

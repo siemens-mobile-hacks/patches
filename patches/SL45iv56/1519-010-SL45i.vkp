@@ -10,6 +10,7 @@
 
 Патч №010 с http://patch.oslik.ru/SL45_RU
 */
+
 3B0368: 3C 54 
 3B0450: F0C4DAE5 EA00EE07 
 3B0454: 243AEA00 DAD8CAE1 ;Точка входа

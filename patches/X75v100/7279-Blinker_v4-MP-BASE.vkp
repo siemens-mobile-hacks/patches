@@ -13,6 +13,7 @@
 
 !!!Совмеситим с ЭП 2.2!!!
 */
+
 #pragma enable old_equal_ff
 +62000 
 014: 0080A0E1 ; "mov" at entrypoint

@@ -10,6 +10,7 @@
 /*
 В архиве исходники и графика в gpp
 */
+
 #pragma enable old_equal_ff
 ; ##### Picture 199 #####
 010C065C: 65248800CCAA10A1 843F8800289AFAA0

@@ -9,6 +9,7 @@
 /*
 Устанавливать только при оригинальном set_display.fs, если нет оного берём из архива и кладём в 2:\japp\FlexMenu
 */
+
 ;Главный экран (в секундах) \ mainscreen (in seconds)
 0BE93E1: 0F 0i60
 ;Меню, списки и т.д. (в секундах) \ menues, lists etc. (in seconds)

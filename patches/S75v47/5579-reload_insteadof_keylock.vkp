@@ -10,6 +10,7 @@
 /*
 перезагружает телефон из меню красной кнопки.
 */
+
 0345580: A7F0B4EB EFF6F4E8
 13AEF94: 0x21CC 0x054B ; Keylock => Reload
 13AEF98: 0x21CC 0x054B ; Keylock => Reload

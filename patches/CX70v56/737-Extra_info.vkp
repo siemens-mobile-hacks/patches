@@ -10,6 +10,7 @@
 /*
 Патч добавляет уровень сигнала в децибелах,напряжение,температуру
 */
+
 ;* Extra info + profile logo on the main screen v4.1 *
 ; © avkiev, (I) AsteriX, § AsteriX
 ; profile logo pics not ported yet, 

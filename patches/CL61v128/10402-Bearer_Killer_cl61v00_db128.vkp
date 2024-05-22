@@ -9,6 +9,7 @@
 Патч отключает создание процессов RAP_BEARER отвечающих за Java, Browser, OPWV, Pilots
 English:Diseble RAP_BEARER proceses (Java, Browser, OPWV, Pilots)
 */
+
 0124302: 6DF78DFF C046C046 ; RAP_BEARER_0 (Browser)
 ;012431A: 6DF781FF C046C046 ; RAP_BEARER_1 (Java)
 ;0124332: 6DF775FF C046C046 ; RAP_BEARER_2

@@ -9,6 +9,7 @@
 /*
 
 */
+
 4A4E7C: ABF132A0 0xA10D7F01 ; CKLK_CK_MAIN_MNU: центр джойстика
 4A54FC: ABF132A0 0xA10D7F01 ; ELSE_MMENU_OPEN: для DSE
 4ABF0C: 896E34A0 0xA10D7F01 ; запуск меню из функций разговора

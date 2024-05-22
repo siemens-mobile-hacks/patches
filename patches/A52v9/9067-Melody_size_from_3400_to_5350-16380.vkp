@@ -23,6 +23,7 @@
 Теперь с помощью mcA52 и Siemens EEPROM tool можно записывать в телефон мелодии увеличенного размера.
 
 */
+
 F2DB8: 4C0D FFFF
 F2DBE: 4C0D FFFF
 F2DC4: 4C0D FFFF

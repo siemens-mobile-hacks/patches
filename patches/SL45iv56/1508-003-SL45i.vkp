@@ -10,6 +10,7 @@
 
 Патч №003 с www.oslik.ru
 */
+
 ;Патч №003 с www.oslik.ru
 ;*** Eliminate the additional _nnn_nnn string when moving SMS to the archive folder ***
 ;*** Исключение добавления знаков "_nnn_nnn" при перемещении SMS в Архив *** 

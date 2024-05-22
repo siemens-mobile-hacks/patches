@@ -9,6 +9,7 @@
 /*
 Все файлы будут приниматься в корень диска Data
 */
+
 ;Install patch * Unlock Folders in Card-Explorer * before installing this patch!
 
 04D4572: 10B50C1CFFF7D4FF002C06D00028 00B50220FE46004900BD19AA40A1

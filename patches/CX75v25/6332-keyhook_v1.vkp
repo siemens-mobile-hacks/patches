@@ -10,6 +10,7 @@
 Дополнительные функции для большой библиотеки
 Близки по функциональности AddKeybMsgHook_end и RemoveKeybMsgHook NewSGold-ов. Не совместим с Key Sequencer. Не обрабатывает LONG_PRESS. 
 */
+
 0800646: 010602D5FFF7A3FF10BD 014CA04710BD01F0FDA0
 
 #pragma enable old_equal_ff

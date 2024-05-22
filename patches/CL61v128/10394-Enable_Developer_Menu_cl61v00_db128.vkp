@@ -10,6 +10,7 @@
 добавляет пункт "Разработчик" в список шорткатов для горячих клавиш без введённого Bootkey
 English:Add item "Developer" in hotkeys shortcuts without Bootkey
 */
+
 ;0xA8E3248C ; RAM_is_Developer_menu_enabled (0, 2 -disabled, 1 - enabled)
 
 0778404: 0000D0E5 0100A0E3

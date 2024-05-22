@@ -11,6 +11,7 @@
 
 EN: Opens  hidden disks (Cache (FFS_B) and Config (FFS_C)) in phone. After application of a patch hidden disks in phone become visible in explorers like MPM, VNavigator and SiMoCo. It is useful for changing icons of main menu, removing a sound of the chamber, etc., in a word, for manipulation with the hidden file resources of phone. Attention, be careful, it is possible also to erase important files, so always keep backup copies.
 */
+
 08CF008: 02 03
 ;------------------------- end -------------------------
 

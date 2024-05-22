@@ -22,6 +22,7 @@ Known bugs:
 - If there are missed SMS/calls/appointments the key won't function
 
 */
+
 23C6DC: F8F7C2FD 20F056FF ; заблокированная клавиатура (Locked Keypad)
 2CF910: 0223E05E 1DF074FF ; скринсейвер (ScreenSaver)
 

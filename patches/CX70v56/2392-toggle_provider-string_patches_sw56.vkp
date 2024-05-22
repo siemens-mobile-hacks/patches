@@ -21,6 +21,7 @@ Please read carefullry instructions inside patch! Don't forget about dependencie
 
 Install both patches, but comment line beginning with 173313C in them.
 */
+
 173313C: 0xA0FC1B01 0xA0BA49A3  ;Disable DynProv10_MP hook
 173313C: 0xA0BA49A3 0xA08006B1
 #pragma enable old_equal_ff

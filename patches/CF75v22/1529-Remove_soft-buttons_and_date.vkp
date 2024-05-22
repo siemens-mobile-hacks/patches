@@ -11,6 +11,7 @@
 
 To remove soft-buttons from the main screen and to remove date. The pathc there is some edited The Nameless, since it considers, that hours it is possible look and on the external screen.
 */
+
 02D1F45: D0 E0
 02D2002: 05D1 0028
 02D2C80: 0DD1 0028

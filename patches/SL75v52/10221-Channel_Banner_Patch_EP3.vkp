@@ -10,6 +10,7 @@
 Патч перенесён на новое место для ELFPack 3.0 by Z.Vova & Ganster
 http://team-sc.ru/viewtopic.php?t=7252&postdays=0&postorder=asc&start=0
 */
+
 ;PATCH_GLOBAL_SCAN,PATCH_J
 0x00AF1382: C14A 034A
 0x00AF1384: 914207D0C44A1268904203D80231C34A 104701B502488047262F01BD6CE007A0

@@ -9,6 +9,7 @@
 /*
 Позиционирование таких элементов медиаплеера как: animation, volume, play mode, headset, status.
 */
+
 ; animation
 05FE308: 401A 0420
 05FE322: 2437 2427

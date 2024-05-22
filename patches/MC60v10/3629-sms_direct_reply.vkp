@@ -13,6 +13,7 @@ Was:Left softkey->reply->write message
 Now:Left softkey->write message
 
 */
+
 000BDF98: 14 0C
 ;------------------------- end -------------------------
 

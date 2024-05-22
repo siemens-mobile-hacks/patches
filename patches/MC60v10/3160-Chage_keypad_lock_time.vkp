@@ -17,6 +17,7 @@ English:changes the keyboard automatic locking time
 The original value is 32c8=13000,13000*5=65000ms=65s
 For example must change 20s,20s=20000ms,20000ms/5=4000=fa0, to change
 */
+
 ; Changes the keyboard automatic locking time
 ; The original value is 32c8=13000,13000*5=65000ms=65s
 ; For example must change 20s,20s=20000ms,20000ms/5=4000=fa0, to change 

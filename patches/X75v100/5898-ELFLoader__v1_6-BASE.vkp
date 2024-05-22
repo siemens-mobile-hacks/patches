@@ -22,6 +22,7 @@
 + Поддержка эльфов SVv4, генерируемых LD (respect DeathSoft)
 Обновление 12.10.2006 - правильный архив MMC.ZIP с учётом последних исправлений
 */
+
 ;ElfLoader+ESI+RunElfsByExtention
 ;SWILIB_FUNC171,SWILIB_FUNC172
 #pragma enable old_equal_ff

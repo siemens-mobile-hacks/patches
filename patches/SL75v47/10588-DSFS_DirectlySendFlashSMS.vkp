@@ -10,6 +10,7 @@
 English:SMS begin as a whitespace should be FlashSMS
 introduce patch 10578
 */
+
 E3A528: 201CB168 6AF642FA
 #pragma enable old_equal_ff
 CA49B0: 201CB8380178082906D000290CD1417B

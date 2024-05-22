@@ -48,6 +48,7 @@ Online flashing may cause network and sometimes SIM/MMC-card errors when you
 enter flashing mode during some background operation in firmware. You'll need
 to turn phone off/on for the error 
 */
+
 ; This is an AT+GSN/AT+CGSN debugging patch. Use "AT+GSN:?" for help.
 ; The following line may be commented if you don't use modified "AT+GSN" command
 ; and the "online flashing mode" of V_Klay.

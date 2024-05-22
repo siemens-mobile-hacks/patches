@@ -9,6 +9,7 @@
 Патч убирает потверждение при включении телефона, если отключена проверка PIN-кода.
 English: Patch disables confirmation when switching phone on if PIN check is disabled.
 */
+
 1699F1B: D1 E0
 ;------------------------- end -------------------------
 

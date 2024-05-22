@@ -8,6 +8,7 @@
 /*
 Зелёная кнопка - набранные, красная кнопка - принятые, ещё раз - неотвеченные
 */
+
 27D53C: FFFFFFFFFFFFFFFFFFFFFFFF DA9FC22ADA9FE62AFA9F902B
 1DEC3C: DA9FE22A DAA73CD5 ; во время звонка
 1E24C0: DA9FE22A DAA73CD5 ; в режиме ожидания

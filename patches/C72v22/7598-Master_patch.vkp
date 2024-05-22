@@ -10,6 +10,7 @@
 /*
 
 */
+
 ;Run Scaner on startup
 08C37DA: FF20 BEDF
 ;Run Scaner instead of REMOTE_SYNCHRONIZATION

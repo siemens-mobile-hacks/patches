@@ -10,6 +10,7 @@
 /*
 
 */
+
 033FEEA: 201C4AF7D9FA3BF73AEA 014FB847C04601DB06A0
 006DBB0: 0xFFFFFFFF 0xA027B368 ; 2nd BLX\BL instruction after entrypoint
 ;Ниже прикреплено тело патча

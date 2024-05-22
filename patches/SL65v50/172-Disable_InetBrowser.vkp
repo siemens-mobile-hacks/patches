@@ -8,6 +8,7 @@
 /*
 Убрать доступ к Интернет-браузеру.
 */
+
 ;* Отключить доступ к интернет-браузеру ** Disable Access To Internet Browser * © KiRiK
 0922970: ED348EA0 00000000 ;disable Internet INTR_STRTBROWSR092293C: 07358EA0 00000000 ;disable Bookmarks INTR_BBOOKMARKS
 09222F0: AF3E8EA0 00000000 ;disable DevMenu ELSE_DEVELP_MNU

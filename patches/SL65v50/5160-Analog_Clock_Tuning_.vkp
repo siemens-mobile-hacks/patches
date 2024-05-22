@@ -8,6 +8,7 @@
 /*
 
 */
+
 164C73C: 01 04 ; Цвет часовой стрелки (Hour hand color)
 164C6DC: 01 04 ; Цвет часовой стрелки вторая линия(для жирности)(Hour hand second line color (bold))
 164C62C: 01 06 ; Цвет минутной стрелки (Minute hand color)

@@ -14,6 +14,7 @@ English: The patch includes following ones:
 "View SMS status report as flash SMS"
 These patches have to be undone.
 */
+
 2FC018: 11225201A2181070 004FB847,0xA0072751
 D0FD4A: BFF2ACEA 38F320E9 ;BLX loc_1047F8C
 E3A65A: 20335974 0DF292EC ;BLX loc_1047F80

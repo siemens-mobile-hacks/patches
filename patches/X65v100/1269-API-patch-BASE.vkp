@@ -23,6 +23,7 @@ Seconds2iTime, CanvasDraw, DrawPicWithCanvas, DrawColorPicWithCanvas
 English:
 Patch contanins several functions that overload or expand standard FW functions.
 */
+
 #pragma enable old_equal_ff 
 ;---------------------------------------- 
 ;OpenWriteCloseFile 

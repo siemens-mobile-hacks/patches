@@ -8,6 +8,7 @@
 /*
 press media on left side everywhere, make jump directly to main menu (for example jump from running java) 
 */
+
 0041445c: 124A41A0 B64941A0 ;shot key press 
 ;004144A0: 294A41A0 B64941A0 ;long key press
 ;------------------------- end -------------------------

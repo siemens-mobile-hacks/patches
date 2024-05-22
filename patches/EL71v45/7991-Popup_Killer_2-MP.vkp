@@ -52,6 +52,7 @@ Example. How to disable message "Language is set to...".
 PS. Not all messages can be disabled in such manner...
 
 */
+
 095865A: 041C011C281C86F7E8EE C046,004A9047,0xA0066A71 ; Ok,YesNo
 09485EA: 11600190029996F720EF C046,004B9847,0xA0066A91 ; OnOff
 0639A42: 211C301CC5F104EB201C C046,004A9047,0xA0066AA1 ; Complex

@@ -11,6 +11,7 @@
 
 EN: Allows to look files on the hidden files and disks. It is done from Other->Card Explorer. When you enter there, it is necessary to press briefly "1" (at use of the password after pressing "*" it is necessary to enter the password) to enter the disk selection menu.
 */
+
 03D9168: 0900000A 000055E3
 03D91C4: 3534 2000
 ;03D91C4: 20003631 "1234" ;пароль (Password) 1234

@@ -14,6 +14,7 @@
 http://boba.su/index.php?option=com_idoblog&task=viewpost&id=41&Itemid=0
 Спасибо Evgr за помощь!
 */
+
 ;PATCH_GETPROPERTY_AFTER
 0x009FB990: 0700A0E1 0BEED9EB
 

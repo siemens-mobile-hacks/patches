@@ -9,6 +9,7 @@
 /*
 Убирает ограничение на количество иконок (ирда, бт и.т.п) 
 */
+
 02A8C04: 85 45 ;disable 1st check
 02A8C06: AD 6D
 02A8C24: F00024 00208C ;another fix to support 8 icons

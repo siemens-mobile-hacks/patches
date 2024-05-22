@@ -19,6 +19,7 @@ English:Patch version is in "YMMDD" format. It indicates its update date.
 For GPF/GPP patches
  It is needed for many other patches, whitch are written using "Master-Patch+Functon Library" concept (c) 1nvisible, avkiev
 */
+
 +0FC0000
 #pragma enable old_equal_ff
 A00: 0x024D ; r0: picture batt charge

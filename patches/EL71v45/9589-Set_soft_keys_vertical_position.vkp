@@ -9,6 +9,7 @@
 good for soft keys fonts 8 or 9 
 для более точного позиционирования софтов со шрифтами 8 или 9
 */
+
 0A34A48: 01923A1C331C0091 00488047,0xA1410791
 
 #pragma enable old_equal_ff 

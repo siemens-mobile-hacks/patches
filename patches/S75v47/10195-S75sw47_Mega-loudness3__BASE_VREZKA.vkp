@@ -12,6 +12,7 @@
 
 *профиксили 3.1
 */
+
 ;Version: 3-MP
 01F352C: 000000EA C0FFFFEA                                                 ; Headset S75v47
 01F3434: 0600000A020000EF6C3DA0E30320A0E3 00709FE537FF2FE131EB06A03B0000EA ; Headset S75v47

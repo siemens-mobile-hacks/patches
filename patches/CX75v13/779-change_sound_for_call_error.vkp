@@ -12,6 +12,7 @@ RUS: Изменяет звук при ошибке соединения при �
 
 ENG: Changes a sound at a mistake of connection at dialing.
 */
+
 04CE3F6: 1800FAFF0000B6034A0178054A0108074A01FFFFE803F9FF0300 0C00B8073200FFFF3200400C1A00FFFFFFFFFFFFFFFFFFFFFFFF
 
 ;------------------------- end -------------------------

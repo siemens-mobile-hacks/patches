@@ -9,6 +9,7 @@
 Когда курсор на карте, помощь есть, но не работает.
 English:When the cursor is on MMC-Card, "Help" is visible but disabled
 */
+
 0A2D2FC: 17 16
 ;------------------------- end -------------------------
 

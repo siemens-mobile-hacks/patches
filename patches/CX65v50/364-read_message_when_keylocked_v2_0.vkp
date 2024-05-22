@@ -19,6 +19,7 @@ Press the GREEN button to read message.
 
 Corrected port; there was a mistake in previous one. Reinstalling this patch is nessary.
 */
+
 ;fixed version
 163AFEA: F8F7D7FD 1FF0A3FF 
 163E032: 0223E05E 1CF08CFF

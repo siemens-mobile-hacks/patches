@@ -23,6 +23,7 @@ A0316676: E16C     LDR R1, [R4,#0x4C]  ; 0xA8A32DE0 RamSizeOfSentPart - size of 
 
 in folder Zbin/img you have to put font pictures
 */
+
 ;(!) Master patch, library functions 21, 22, 26, 71, C4, C7, B8, 251, 252, 257   
 ;[+]  / no conflict with "mainscreen icon changer"
 

@@ -8,6 +8,7 @@
 /*
 Release: September 26th, 2005
 */
+
 0x2C8288: 2F 2E ; Disable PIN2 check 
 0x2C3F38: 3D 0D 
 

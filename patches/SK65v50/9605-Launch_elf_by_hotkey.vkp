@@ -11,6 +11,7 @@
 Поставить на горячую клавишу "Визитная карточка"(CNCT_BUSINESSCD) и будет стартовать эльф, прописанный в 0:\\ZBin\\etc\\start_elf.bcfg
 конфиг берем из приаттаченого файла
 */
+
 ;PATCH_START_ELF
 0x0045E6C0: 6D8831A0 01E0FCA0 ;CNCT_BUSINESSCD
 ;CODE,DATA_C

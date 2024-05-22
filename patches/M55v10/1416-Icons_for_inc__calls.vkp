@@ -11,6 +11,7 @@
 English: Patch works if operator sends phone numbers in internetional format (+7...)
 Icons are shown if number fully matches a phone in adressbook
 */
+
 01B073: 21BEE8 5500DD
 01B07A: 36B2 30B1
 01B292: 30B1 6CB0

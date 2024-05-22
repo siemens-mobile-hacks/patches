@@ -32,6 +32,7 @@
 Патч не работает в 7-м профиле.
 Примеры скриншотов: http://avkiev.kiev.ua/Siemens/Patches/s65/dyn_prov/dyn_prov.htm
 */
+
 ;172F4A0: 071580 AB39BA ;Disable miniGPS's hook
 172F4A0: AB39BA 610180
 #pragma enable old_equal_ff

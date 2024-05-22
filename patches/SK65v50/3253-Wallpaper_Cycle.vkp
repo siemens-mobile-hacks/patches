@@ -33,6 +33,7 @@ After Cycle Time is finished, patch tries to change WP (at mainscreen in active 
 calling by key 'Reload Wallpaper'.
 - 'Reload key' seldomly causes WP display to stop, then reboot
 */
+
 02C5F06: 2421614312688A182132 C046,004FB847,0xA0FD932F
 ;------------------------- end -------------------------
 

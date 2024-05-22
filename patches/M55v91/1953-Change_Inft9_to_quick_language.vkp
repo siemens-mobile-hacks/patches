@@ -10,6 +10,7 @@
 Изменяет где только можно (СМС, заметки, ММС, почта...) Инф.Т9 набыструю смену языка
 English:Patch changes InfT9 everywhere to quick language change
 */
+
 0B576F: 992CB9 5540DC
 098C5D: 992CB9 5540DC
 0AF9B5: 992CB9 5540DC

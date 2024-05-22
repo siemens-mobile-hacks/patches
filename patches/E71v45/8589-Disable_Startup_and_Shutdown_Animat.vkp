@@ -14,6 +14,7 @@ melodies are not played at phone switching on and off.
 now phone correctly works with installed patch "Disable "Wait" in StartupAssistant" 
 independently from choice in Settings-Display-Startup anim.
 */
+
 066B48B: D1 E0 ; disable Startup animation
 ;066B571: 1C 21 ; do not show Startup animation
 066AFE5: D1 E0 ; disable Shutdown animation

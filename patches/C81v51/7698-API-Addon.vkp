@@ -8,6 +8,7 @@
 /*
 Необходимо для вызова GetAccessoryType
 */
+
 #pragma enable old_equal_ff
 ;GetAccessoryType 
 ;Out: R0 - accesory type

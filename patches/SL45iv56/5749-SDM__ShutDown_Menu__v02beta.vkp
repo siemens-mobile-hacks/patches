@@ -19,6 +19,7 @@ To turn lcd on press long red button again.
 Relased: September 22, 2006
 Updated: September 26, 2006
 */
+
 0x2BE1D6: E6FCA034 FAF156D5
 
 0x51D556: FFFFFFFFFFFFFFFFFFFF 26F01000E6FC3616E6FD

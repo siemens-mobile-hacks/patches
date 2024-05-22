@@ -10,6 +10,7 @@
 /*
 Патч позволяет сохранять и запускать игры с диска Соnfigs. Для установки игр положте папку с необходимым приложением по адресу: Соnfigs/jаvа/gаmes. Необходимо также установить спецальный [url=http://patches.kibab.com/cnt.php5?d=m65v50&f=Configs_Java.rar]mystuff[/url] !!!
 */
+
 #pragma enable old_equal_ff
 0A0939E: 324A6176615C47616D6573
 #pragma disable old_equal_ff

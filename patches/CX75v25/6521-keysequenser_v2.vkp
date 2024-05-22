@@ -22,6 +22,7 @@ see further help in midlet "info" of CCC5 and CCC6
 add/remove key sequences from CCC5 as you like, but keep the {offset} distance of 0x10 proper!
 
 */
+
 0FC0E1C: 0xA0FE0000 0xA1FA0000 ; Расширение области поиска конфигов
 0800646: 010602D5FFF7A3FF10BD 014CA04710BD0FF0FDA0
 ;------------------------- end -------------------------

@@ -10,6 +10,7 @@
 Ускоряет телефон, отсекая ненужный код
 English:Speed up phone by stripping needless code
 */
+
 0B8DE0C: 10B5 7047
 0B8DE80: 0FB4 7047
 ;------------------------- end -------------------------

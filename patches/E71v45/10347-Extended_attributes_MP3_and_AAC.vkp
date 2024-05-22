@@ -9,6 +9,7 @@
 /*
 !http://patches.kibab.com/patches/details.php5?id=10328 - новая версия
 */
+
 0x00712E30: 2800003A F2AA2FEA
 #pragma enable old_equal_ff
 0x012FDA00: 3855D03A0400A0E1B4F6E6EBB001CDE1

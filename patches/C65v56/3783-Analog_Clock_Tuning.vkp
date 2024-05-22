@@ -8,6 +8,7 @@
 /*
 
 */
+
 16F2C38: 01 04 ; Цвет часовой стрелки (Hour hand color)
 16F2BD8: 01 04 ; Цвет часовой стрелки вторая линия(для жирности)(Hour hand second line color (bold))
 16F2B28: 01 06 ; Цвет минутной стрелки (Minute hand color)

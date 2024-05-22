@@ -29,6 +29,7 @@ In midlet you see a disable key - this is the key that disable patch
 hold it on the startup and patch will not load
 You can setup shutdown sound in midlet too.
 */
+
 ;
 ;------------------------- end -------------------------
 

@@ -9,6 +9,7 @@
 /*
 SL75 has no MMC card, this patch seems not that necessary.
 */
+
 5F8994: 3D 1A
 5F8998: 3E 1A
 

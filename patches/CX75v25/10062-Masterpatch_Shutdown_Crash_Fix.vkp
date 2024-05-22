@@ -12,6 +12,7 @@ Use if you have shutdown crashes only
 Использовать только если тел с писком отрубается при включении 
 
 */
+
 0323FA4: 03DF C046
 0323FAC: 79F14EE9 C046C046
 

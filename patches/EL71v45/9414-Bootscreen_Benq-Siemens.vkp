@@ -9,6 +9,7 @@
 /*
 Бутскрин Benq-Siemens замена стандартному!(нЕ знаю че случилось со скрином но этого квадратика нет)
 */
+
 ; BootScreen Patch for EL71v45
 ; (c) benj9
 ; (r) RainMaker

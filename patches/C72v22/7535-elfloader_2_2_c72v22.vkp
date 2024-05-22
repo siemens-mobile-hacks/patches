@@ -9,6 +9,7 @@
 /*
 Загузчик эльфов с 16-битной графикой
 */
+
 ;FSWI_PATCH1
 0x000929B0: 1A0000EA DCF09FE5
 ;FSWI_PATCH3,FSWI_PATCH2

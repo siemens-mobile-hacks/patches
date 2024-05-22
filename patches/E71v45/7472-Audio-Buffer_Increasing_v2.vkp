@@ -8,6 +8,7 @@
 /*
 
 */
+
 ;Disables sound lags when surfing file system
 ;Go to Dev.Menu->Configuration->Audio_Buf_Cfg
 ;v2 +Auto-Loading

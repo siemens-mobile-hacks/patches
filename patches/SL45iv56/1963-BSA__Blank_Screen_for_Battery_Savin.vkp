@@ -27,6 +27,7 @@ Patch could be turn ON/OFF through the new Setup -> Application menu.
 Release: November 5, 2003
 Modified: November 8, 2003
 */
+
 0x3E1710: E6003600 DAC7EADC
 
 0x27DCC0: FFFFFFFFFFFFFFFF BB0A2D079AF405B0

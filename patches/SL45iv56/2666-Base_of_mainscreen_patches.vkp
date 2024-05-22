@@ -14,6 +14,7 @@ don`t flash when we don`t have signal or our battery is empty.
 
 Release: 3 March 2006
 */
+
 0x3B3A1E: 46F8FFFF DAE090DB
 
 40DB90: FFFFFFFF CC00CC00

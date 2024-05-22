@@ -17,6 +17,7 @@ Uncomment lines 98-9C to use built-in picture set.
 In this case 710 "Addition To PIT Table" patch must be installed
 
 */
+
 1641F80: 02D0,00F08EFA  C046,2DF03DF9
 +166F200
 #pragma enable old_equal_ff

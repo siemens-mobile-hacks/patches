@@ -8,6 +8,7 @@
 /*
 В случае необходимости изменения раскладки в другом варианте, измените раскладку с помощью редактора раскладки в V_Klay и примените этот патч
 */
+
 ; If you want another keyboard layout, e.g. Nokia style,
 ; change the layout with V_Klay and apply this patch.
 

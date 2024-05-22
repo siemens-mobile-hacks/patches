@@ -8,6 +8,7 @@
 /*
 
 */
+
 ;* Убрать имя оператора в заставке ** Remove provider name in ScreenSaver * © KiRiK
 ;???? ; excluded in fw 50+
 164CBE4: D2EB 0028

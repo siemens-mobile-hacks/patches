@@ -27,6 +27,7 @@ Make the Fullflash Backup!
 3. Apply the following patch. Then press the red button and wait 10-15 second until the phone has finished formatting the increased disk
 
 */
+
 083A718: 0E 12               
 083A764: 59 68
 083A720: 68487E 002055               

@@ -15,6 +15,7 @@
 
 Release: August 31, 2003
 */
+
 ;Make 19200 speed to become 115200 (used in Hyperterminal/modem settings and alike) 
 ;достаточно закомментить первую часть (терминальную) и service mode проги (например, Siemens EEPROM Tool) будут находить телефон на привычных 19200
 0b7d96: 09 01

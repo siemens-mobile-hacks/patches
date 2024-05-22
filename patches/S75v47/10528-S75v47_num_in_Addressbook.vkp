@@ -14,6 +14,7 @@ when saving to New entry, number is put in configured field
 when saving to existing entry, number is put in first unoccupied field for phone number
 
 */
+
 /*
 RU: 
 при сохранении с созданием Новой записи вставляется в поле, заданное в патче

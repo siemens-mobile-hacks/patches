@@ -8,6 +8,7 @@
 /*
 Скрин из эльфа. Чтобы в браузере работало нужно установить также патч ID 10688.
 */
+
 ;PATCH_EVP_CIPHERINIT
 0x00E7FC04: 10B5029C002C02D0 004E30475DEB2FA1
 ;PATCH_SSL_CIPHER_GET_EVP,SSL_CIPHER_GET_EVP__CODE_AREA

@@ -9,6 +9,7 @@
 После английских символов в английской раскладке идут русские в кодировке cp1251
 English:This patch is usefull for russian people only.
 */
+
 00CAECB8: 07 08
 00CAECC0: 05 09
 00CAECC4: FA FC

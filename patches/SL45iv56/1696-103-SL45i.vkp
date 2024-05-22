@@ -18,6 +18,7 @@ Second Update: August 3, 2004 (добавляет 48 пунктов меню)
 
 Патч №103 (обновление 2) с http://patch.oslik.ru/SL45_RU
 */
+
 0x1A1E12: A101A201 9D089D08
 0x1A1EC2: EA4ADC00 00DEC700
 

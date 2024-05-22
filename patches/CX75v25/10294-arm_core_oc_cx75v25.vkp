@@ -13,6 +13,7 @@ http://siedevelop.xclan.ru/index.php?page=files-patches-cpu_overclock
 Прошлый патч необходимо отменить!
 
 */
+
 ;PATCH_BODY,CODE
 #pragma enable old_equal_ff
 0x001FFD00: C0209FE5002092E5000052E3A02093E5

@@ -8,6 +8,7 @@
 /*
 useful to stop playing last song immediately, on sidekey2
 */
+
 0422BC0: 3B 33
 ;------------------------- end -------------------------
 

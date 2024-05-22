@@ -13,6 +13,7 @@
 ; to have new midlet values activated, let turn off illu one time and press any key else than red key
 
 */
+
 #pragma enable old_equal_ff
 0FDE600: 496C6C75542C62656E6A41B50948E2F7
 0FDE610: F7FA02D0311C023100E0044941BC08BC

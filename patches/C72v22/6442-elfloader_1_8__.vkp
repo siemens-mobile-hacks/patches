@@ -35,6 +35,7 @@
 ;
 ;+Функция SEQKILLER для освобождения памяти демонов при закрытии IDLE_CSM
 */
+
 ;ElfLoader+ESI+RunElfsByExtention
 ;PATCH_PROPERTY_WINDOW
 0x0099CA0C: 0370A0E10260A0E10150A0E1 04E08FE204F01FE53881FDA0

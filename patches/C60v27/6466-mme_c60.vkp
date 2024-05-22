@@ -24,6 +24,7 @@ Warning: 1. Patch call Menu, but behaviour is buggy (Message icon
 ;             don't panic.
 
 */
+
 ;Место вставки
 ;patched point
 0055693A: DA847856 DA836045

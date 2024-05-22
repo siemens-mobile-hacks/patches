@@ -9,6 +9,7 @@
 /*
 В мастер мидлете выбираем профиль..и при включении этого профиля отрубаются звуки....вроде так:-D
 */
+
 ; (!) Masterpatch, Library functions 37, B6, C4
 033FEF0: 3BF7 05E0 ; don't reset ringtone state on profile change
 028A4AC: FFF7C9FF051C0120 004FB84711B706A0

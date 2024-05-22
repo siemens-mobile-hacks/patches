@@ -13,6 +13,7 @@ http://team-sc.ru/viewtopic.php?t=7252&postdays=0&postorder=asc&start=0
 Details original Patch: http://patches.kibab.com/patches/details.php5?id=8468
 
 */
+
 ;PATCH_GLOBAL_SCAN,PATCH_J
 0x00AEA8DE: C14A 034A
 0x00AEA8E0: 914207D0C44A1268904203D80231C34A 104701B502488047262F01BD6CE007A0

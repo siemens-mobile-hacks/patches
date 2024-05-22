@@ -11,6 +11,7 @@
 Дополнительный файл:
 http://patches.kibab.com/cnt.php5?d=cx70v50&f=Start_midlet_at_an_insert_new_SIM.rar
 */
+
 ;1640416: 00200020 1EF0C4E9 ;Раскомментировать, если установлен патч "Сохранение списков при смене SIM карты" (c) SiNgle
 1640416: 1EF0C4E9 29F0BCEA
 

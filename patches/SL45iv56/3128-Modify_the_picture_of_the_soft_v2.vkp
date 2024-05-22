@@ -17,6 +17,7 @@ English: No effect of display when using invert softkey.
 Version 2: you can draw your own picture - modyfy image 582 using e.g. SPC2.
 
 */
+
 ; No effect of display when using invert softkey.
 
 20E102: E6F6AA008860E0978870E6FC4000 E00CE6FD4300E6FE4602DAC1EC22

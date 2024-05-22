@@ -14,6 +14,7 @@ Shows a short message with session duration at shutdown.
 Will be also launchable directly by keysequencer by call thumb: A0FDE02D
 
 */
+
 07167C8: 0022009200AB0420 004A9047,0xA0FDE001
 097F870: 0010A0E30000A0E3 04F01FE5,0xA0FDE019
 #pragma enable old_equal_ff

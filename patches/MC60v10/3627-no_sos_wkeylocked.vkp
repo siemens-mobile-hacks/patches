@@ -18,6 +18,7 @@ http://www.mabila.com/magazine/?file=2001.05.25.2338
 
 English:Could be used for babysitting no more prank calls to sos center...use with caution
 */
+
 00351F68: 31313200 00000000 ;disable 112
 00351F6C: 39313100 00000000 ;disable 911
 00351F70: 303800 393900 ;Original 08, change to 99

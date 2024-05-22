@@ -8,6 +8,7 @@
 /*
 Убирает белый фон бэкграунда иконок в Native menu Apo4emu
 */
+
 ;*Убрать белый фон у иконок в Native menu** Remove Icons White Background in Native Menu ***
 119E4D8: 00 FF
 119E57C: B0F7E5FF 00280028

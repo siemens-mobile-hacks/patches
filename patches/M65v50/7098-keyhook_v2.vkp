@@ -12,6 +12,7 @@
 4B4: 0xA0FFF0A3   ; 12D: RemoveKeybMsgHook(void *proc)
 Для совместимости с патчем Ускорение опроса клавиатуры (Keypad Acceleration) изменить указанные строки.
 */
+
 0x114C9FC: 291C 0048 
 0x114C9FE: FF20 0047 
 0x114CA00: 9430FFF7 01F0FFA0 

@@ -10,6 +10,7 @@
 English: for compactness reason the bell picture is used instead of alarmclock one as proposed by loquat
 */
 
+
 ; SHOW_TIME_OFFLINE_CHARGE_HOOK   
 1698B80: 021C0221632000F053FB 00498847,0xA0800CE1,C046
 

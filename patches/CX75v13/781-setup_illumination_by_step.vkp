@@ -12,6 +12,7 @@ RUS: Позволяет задать произвольный шаг регул�
 
 ENG: Allows to set an any step of adjustment of illumination. It is useful, for example, for installation of a level of illumination in 2-5 percent for comfortable reading in full darkness.
 */
+
 03B7A50: 0A 05 ; 05 или любая цифра в HEX
 03B7A60: 0A 05 ; 05 или любая цифра в HEX
 

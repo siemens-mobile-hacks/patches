@@ -10,6 +10,7 @@
  note: cause of ELF png loader conceptional bug retrieving email 
  without new messages crashes, this patch is workaround.
 */
+
 0EF239A: 081C 7047
 ;------------------------- end -------------------------
 

@@ -11,6 +11,7 @@ RUS: Активирует меню ручного выбора диапазон�
 
 ENG: Activates the menu of a manual choice of a range (900 MHz, 1800 MHz, 1900 MHz). Item in the menu 9-10-5.
 */
+
 04D6DEC: 0502 FA01
 ;------------------------- end -------------------------
 

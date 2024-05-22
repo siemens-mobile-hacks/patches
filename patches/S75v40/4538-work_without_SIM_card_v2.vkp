@@ -10,6 +10,7 @@
 Жмем демо и тел включается как обычно
 English: Press Demo and work as usual
 */
+
 029E89C: 0000A0E3C9FFFFEA 04F01FE5,0xA0D0FADD
 ;------------------------- end -------------------------
 

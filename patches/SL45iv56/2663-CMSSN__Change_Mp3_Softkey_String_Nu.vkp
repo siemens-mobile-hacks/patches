@@ -14,6 +14,7 @@ It works also if we don't use Invert Softkeys and you can choose which string yo
 
 Release: February 24, 2006
 */
+
 0x1A0426: EF01 FFFF ;remove pause string
 0x1A0420: 2A01 FFFF ;remove info string
 0x1A042C: 1000 FFFF ;remove play string

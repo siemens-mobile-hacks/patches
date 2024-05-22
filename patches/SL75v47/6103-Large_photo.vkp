@@ -10,6 +10,7 @@
 /*
 В патче установлены, понравившиеся мне настройки. Настройки авторов - за коментариями
 */
+
 029eb4c: 33 57 ;photo size
 
 04315b0: 08 00 ; disable name and phone incall x displacements

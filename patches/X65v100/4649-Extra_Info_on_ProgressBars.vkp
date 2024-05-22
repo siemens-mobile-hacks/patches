@@ -11,6 +11,7 @@ MP v3 Required
 English:Shows percents on progressbars and info on files being sent/received
 
 */
+
 #pragma enable old_equal_ff
 0FBF050: FFB5604801F0D4FD01D052204872FFBD
 0FBF060: FFB5032905D15B4801F0CAFD01D00020

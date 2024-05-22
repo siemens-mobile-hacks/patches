@@ -17,6 +17,7 @@ Some E71 from China have a different Dialog type and the detection of the SLI in
 And the SLI indicator doesn't work.
 The patch fixes all checks associated with the new Dialog type.
 */
+
 051BC34: 0050C1E5 F9FFFFEA ; B #0xA051BC20
 051BC2C: 0040C1E5 FBFFFFEA ; B #0xA051BC20
 04F5CCC: 05 02 ; Allow pasic_type=2 for SLI

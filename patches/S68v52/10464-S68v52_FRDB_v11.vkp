@@ -10,6 +10,7 @@
 Теперь можно ставить файлы на горячие клавиши.
 */
 
+
 ;PATCH_APM_FRDB_GetInfo1
 0x002A07B2: 0020 11E0
 ;PATCH_ITEM_NAME

@@ -13,6 +13,7 @@ http://patches.siemens-club.org/cnt.php5?d=cx75v25&f=mpos_v1_2.zip конфиг
 конфиг берем из архива и кладем в 0:\ZBin\etc\mpos.bcfg
 !!!для с75 из архива взять только конфиг!!!
 */
+
 ;PATCH_NET_CANVAS
 0x002A88B8: ECFABE42 00280028
 ;PATCH_NET_ICONS

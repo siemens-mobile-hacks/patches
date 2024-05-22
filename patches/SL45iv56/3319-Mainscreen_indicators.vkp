@@ -14,6 +14,7 @@ English: This patch show on left side of mainscreen status of vibra, set some fu
 On right side: sound status, type of conecting (exp. headphone), keyboard status.
 Down: lost call and unreaded SMS, number of profile.
 */
+
 ;If you don't have instaled SOL patch unmark this: 
  
 ;0x3B0C08: E6003500 DAC720D1 

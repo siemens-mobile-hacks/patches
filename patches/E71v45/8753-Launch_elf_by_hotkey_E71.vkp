@@ -9,6 +9,7 @@
 /*
 
 */
+
 0x00840794: 63896EA0 917406A0 ;Hang up on hot key "Fax/Data" 
 
 #pragma enable old_equal_ff 

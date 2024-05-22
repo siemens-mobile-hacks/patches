@@ -17,6 +17,7 @@ Command.elf  Командный интерпретатор BAT файлов
 RUN=0:\ZBin\DOS\Command.elf
 
 */
+
 Command.elf  Командный интерпретатор BAT файлов
 Выполняет основные команды MS-DOS: copy,move,ren,dir,mkdir,...и кучу др.
 Примеры вложены в архив.

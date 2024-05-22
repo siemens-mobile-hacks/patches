@@ -9,6 +9,7 @@
 /*
 !Должен быть включен DevMenu и в пункте LOGAL\options - нажать Enable ### (Goto DevMenu\LOGAL\options and press Enable ###)
 */
+
 ;0490580: FFFFFFFFFFFFFFFF 80B5A2F60BFF80BD ;native menu
 0490580: FFFFFFFFFFFFFFFF 80B598f61bfd80BD ;main menu
 0784F38: 7DF0B7F9 0BF522FB 

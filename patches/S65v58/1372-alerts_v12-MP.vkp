@@ -15,6 +15,7 @@ English:
 Phone executes some tasks every hour.
 Besides, if you miss some event - mobile plays according ringtone each N minutes.
 */
+
 169FAF8: 0E1CD7B03BA936A8 004A9047,0xA0FC4039   ; S65v58 - Mainscreen
 16A2868: 0E1C9AB007A902A8 004A9047,0xA0FC404B   ; S65v58 - Screensaver
 

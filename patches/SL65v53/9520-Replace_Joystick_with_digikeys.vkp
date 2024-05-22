@@ -10,6 +10,7 @@
 Нажмите * и 1 чтобы изменить функциональность цифровых клавиш на функции джостика и обратно
 English: Press * and 1 to change functionality of digi-keys into joystick functions and back
 */
+
 11504EA: 010602D5FFF793FF10BD 014F3847C0460170FBA0 ; Y
 
 #pragma enable old_equal_ff

@@ -13,6 +13,7 @@
 В меню "еще" появляется пункт Multi Sim
 С помощью проги, приложенной к патчу генерируем 5400 блок и заливаем его в телефон.
 */
+
 ;---- New block. Segment address:A00D0000--------
 000D0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 00B5FFB40E4CA047FFBC0E4B0E4E5988
 000D0010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 283E01250A0600BD7646079A08990020

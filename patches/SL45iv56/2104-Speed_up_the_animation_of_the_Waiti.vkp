@@ -14,6 +14,7 @@ English: Change to 10 frames from originally 5 frames per second.
 
 Date: 2004.11.6
 */
+
 0x1A21AE: C8 64 ;can change to 32, which may be too fast. The ultimate speed is 01. 
 0x1AF84E: C8 64 
 0x1AF87A: C8 64

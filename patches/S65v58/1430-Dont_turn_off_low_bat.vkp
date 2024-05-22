@@ -15,6 +15,7 @@ English:
 Don't use it too often. It can damage your battery!
 !!!WARNING! After installing this patch, phone won't turn off if you press red key.
 */
+
 129A950: B824FFEB 229610EB
 1263C38: 0010A0E30000A0E389C0FFEA 08402DE90030A0E30880BDE8
 16C01E0: FFFFFFFFFFFFFFFFFFFFFFFF 0010A0E30000A0E3821AEFEA

@@ -19,6 +19,7 @@ In this case 571 "Addition To PIT Table" patch must be installed
 
 !!! Пофиксена зависимость - патч 469 - это таблица PIT для S65...
 */
+
 1633C0A: 02D0,00F08FFA  C046,26F0F8FD  
 
 +165A800

@@ -15,6 +15,7 @@ Undo earlier IconBar coordinates patches
 Extends IconBar up to 8 Icons
 
 */
+
 1698F5A: 04 08 ;disable 1st check отключить первую проверку
 1698F5E: 04 08
 

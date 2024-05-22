@@ -11,6 +11,7 @@
 /*
 Качаем также и тело патча. Это только врезка. Описание - читаем в описании тела
 */
+
 0079000: FFFFFFFFFFFFFFFFFFFFFFFF fbed2fa0e5eb2fa0237297A0 ;RET_ADRS
 042df10: e5eb2fa0 208707A0         ;PATCH_ONCREATE
 042df24: fbed2fa0 5C8607A0         ;PATCH_ONCLOSE

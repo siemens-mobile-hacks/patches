@@ -11,6 +11,7 @@
 
 The patch fixes a bug in DrawScrollString when it does not draw 1px from the bottom of glyphs.
 */
+
 0A128C4: 013D 003D
 ;------------------------- end -------------------------
 

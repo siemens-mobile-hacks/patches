@@ -11,6 +11,7 @@ you may move position of provider line somewhere out of the screen
 
 на экране "EPSON_L2F50333T" проверено hotter'ом. Потестите, у кого экраны "EPSON_L5F30007T" и "PHILIPS_TOSHIBA_JBT6K71"
 */
+
 ; you may move position of provider line somewhere out of the screen
 
 030C9C0: 4E 4E ; 0x4E in unknown way correlates to provider line position below top of screen ; "EPSON_L2F50333T"

@@ -18,6 +18,7 @@ English:Now turns off MP3-player during playing. We do so - we start MP3-player,
 
 To enable this function, you should select "Enable ###" in Options menu. (Developer->LOGAL, then Options, Enable ###".
 */
+
 07D701C: 84F0F9FD 07F583FE
 #pragma enable old_equal_ff
 04DED26: FFB5134B98470130072818D021F35AFF

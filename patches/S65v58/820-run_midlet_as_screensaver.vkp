@@ -12,6 +12,7 @@
 Бесплатные графические мидлеты, например, тут: http://java.mob385.com/en/efekti.shtml
 Много настроек, см.тело патча. Совместимость с патчами Динамической Замены и МиниGPS, но нужно закомментировать в них определенные строки.
 */
+
 16B60B4: 6B02B9A0 21056CA1
 ; If use with follo-up patch comment the line beginning with 16B60B4: there, 
 ; but feed phone with the body of that patch

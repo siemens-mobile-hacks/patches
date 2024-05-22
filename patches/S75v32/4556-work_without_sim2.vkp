@@ -11,6 +11,7 @@
 Жмем Демо и телефон включается как обычно
 English:Press Demo and mobile works as usually
 */
+
 029D78C: 0000A0E3C9FFFFEA 04F01FE5,0xA0D0C8A1 ;S75sw32
 ;------------------------- end -------------------------
 

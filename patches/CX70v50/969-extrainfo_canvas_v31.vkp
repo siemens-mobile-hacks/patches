@@ -20,6 +20,7 @@ Draws as many as you like canvas regions (clears the background) before executin
 - Configure in which profiles ExtraInfo-Patch is active
 - Have one more pass-thru call for another follow-up patch
 */
+
 /*
 - Перед выполнением патча "Доп.инфо" перерисовывает любое кол-во участков холста (очищает фон)
 - Определяет профили, в которых будет активен патч "Доп.инфо"

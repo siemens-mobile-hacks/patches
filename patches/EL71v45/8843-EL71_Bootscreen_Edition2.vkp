@@ -9,6 +9,7 @@
 /*
 Второй вариант бутскрина для EL71 (http://patches.kibab.com/patches/details.php5?id=8841)
 */
+
 ; BootScreen Patch for EL71v45
 ; (c) benj9
 ; (r) RainMaker

@@ -20,6 +20,7 @@ Designed for using with GraphPatchManager
 Patch switches phone to chosen profile when battery capacity reaches chosen level. User can define profile # and battery capacity.
 Useful if you create a "Low power consumption profile" - backlight is set to 1%, no vibra, weak signals, no dynlight... This patch is built using MP+FL conception.
 */
+
 #pragma enable old_equal_ff
 0FC5000: FFB52448FBF7FCFD40D0F178FBF718FB
 0FC5010: 3A78B378002B13D0FBF712FBB8780028

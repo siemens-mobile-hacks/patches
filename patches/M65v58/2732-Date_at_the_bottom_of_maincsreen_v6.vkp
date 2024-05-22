@@ -12,6 +12,7 @@
 0CDF928: 07 00 ;Profile "No patches"
 
 */
+
 0B22712: FFF7E0FF BDF105F9
 #pragma enable old_equal_ff
 0CDF900: 426F74746F6D20446174652076362020

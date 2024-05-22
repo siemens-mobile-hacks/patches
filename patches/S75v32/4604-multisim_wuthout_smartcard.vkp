@@ -10,6 +10,7 @@
 
 Все ответы на вопросы по установке и использованию ищем тут: http://forum.siemens-club.org/viewtopic.php?TopicID=43063
 */
+
 ;Menu_Hook
 0x0042F9DC: E37F37A0 B507BCA1
 ;Msg_dispatch

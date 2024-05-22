@@ -31,6 +31,7 @@ ATTENTION! If you're using patch "Java to MMC", apply the following patch:
 668: 004FF746,0xA845164C 004FF746,0xA8451B44 ; v05: RamMissedSMS 
 +0
 */
+
 ;** Function Library (c) avkiev, S65 v58 **
 ; Updated by 08/07/2006
 

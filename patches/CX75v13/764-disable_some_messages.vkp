@@ -11,6 +11,7 @@ RUS: Убирает выскакивающие на короткое время 
 
 ENG: Remove importunate windows jumping out on short time at on/off sound signals and at blocking the keyboard and other unnecessary windows. A trifle, and it is pleasant!
 */
+
 02CE036: 0021 10BD ;"Все сигналы вкл"
 02CE052: 0021 10BD ;"Все сигналы выкл"
 02CE0A2: 0021 10BD ;"Блокировка клавиатуры включена"

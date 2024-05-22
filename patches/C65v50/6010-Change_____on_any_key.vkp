@@ -13,6 +13,7 @@ English:on the difference of original patch a combination of upto 4 keys can be 
 
 Сейчас в патче стоят данные что вмечто ### стоят ***
 */
+
 00b758c8: 23232300 2a2a2a00
 ;*-2A, 23, SK left-01, SK right-04, joy up-3B, down-3c, left-3d, right-3e, joy center-1A
 ; callkey-0b on/off-0c, 0...9 - 30...39

@@ -22,6 +22,7 @@ The thing part of mnemonic indicator shows RXAM level
 It is recommended that you tune all other patches so that lines 8..14 and
 lines 15..57 columns 0..95 are free.
 */
+
 ; ##### Picture 290 ##### - SCALE - Шкала
 ; Picture Table Index
 0DE840: 1C240100 46080100

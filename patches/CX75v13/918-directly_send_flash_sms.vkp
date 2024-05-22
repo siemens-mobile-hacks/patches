@@ -11,6 +11,7 @@ RUS: Отправка Flash-SMS. Начните текст сообщения с
 
 ENG: Sending Flash-SMS. Begin the text of the message with a blank the Format of the text-> the Size of a font-> the Average font, differently will be usual SMS.
 */
+
 0BD37A8: 201CB168 1FF152FF
 #pragma enable old_equal_ff
 0CF3650: 201CB8380178082906D000290CD1417B

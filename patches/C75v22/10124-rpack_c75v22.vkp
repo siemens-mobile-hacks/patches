@@ -15,6 +15,7 @@
 5) Более эффективная разметка RAM (NonPermMem: 0xA8800000)
    Собирает в единый хип все участки RAM
 */
+
 ;PATCH_DS_MOPI_SM
 0x00219BF0: CDD130FA E1713BFA
 ;PATCH_MMSCLIENT_CREATE

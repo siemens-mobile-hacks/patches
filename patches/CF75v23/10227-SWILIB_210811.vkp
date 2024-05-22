@@ -11,6 +11,7 @@
 210811: +(88,89,8d,98,9c,9e,cb-d7,d9,da,dc,f5,f6,10d,1fa,220,22f,231,251-253,256,257,26e,29c,2a0,2b1,2ba,2bc,2c5,2dc-2df,2e1,2e2) -> (m.ksy) +47func
 		*(11,56,a1,ac-b1,b3,c3,c6,1fb,26c,26d) -> (m.ksy) *15func
 */
+
 +10E4000
 #pragma enable  old_equal_ff
 0000: 0xA0002070   ; f000: SWI0

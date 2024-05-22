@@ -26,6 +26,7 @@ Format: "Date, Time, Type, time of calling, Number"
  Hint:
  Dialed numbers with time 0:00 will not be logged.
 */
+
 23AC76: DA6322A6 DA7B0095
 
 003B9400: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 001F1C1F1E1F1E1F1F1E1F1E1F000000

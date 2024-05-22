@@ -17,6 +17,7 @@ Changelog and sources: [url]https://github.com/siemens-mobile-hacks/elfloader3/b
 SDK for developers: [url]https://github.com/siemens-mobile-hacks/sdk[/url]
 Bugtracker: [url]https://github.com/siemens-mobile-hacks/elfloader3/issues[/url]
 */
+
 ;SWILIB_FUNC171,SWILIB_FUNC172
 #pragma enable old_equal_ff
 0x000745C4: 0C4432A1F44332A1

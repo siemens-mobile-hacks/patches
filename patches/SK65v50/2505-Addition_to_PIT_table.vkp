@@ -14,6 +14,7 @@ Now you can assign PIT addresses to pics #1289(0x509)-#1399(0x577) in free memor
 You can't yet view or edit these pics by means of SPC3 © ACiD[mrp]\b@iLLi or Smelter © avkiev
 
 */
+
 0739244: FFF7F5FF 16F5CCFD
 #pragma enable old_equal_ff
 044FDE0: 0A4B984207DC084B984204DBC01AC000

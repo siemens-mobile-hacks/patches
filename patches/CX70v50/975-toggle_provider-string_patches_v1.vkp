@@ -21,6 +21,7 @@ Please read carefullry instructions inside patch! Don't forget about dependencie
 
 Install both patches, but comment line beginning with 172F4A0 in them.
 */
+
 172F4A0: AB39BA B10680
 #pragma enable old_equal_ff
 08006B0: 39B50A4D2D68A847054C245C01BC2419

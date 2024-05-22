@@ -9,6 +9,7 @@
 /*
 При наличии EDGE показывет его значек вместо GPRS, в ява-приложениях.
 */
+
 0ABD06C: 020080E2 7C5605EB ;
 0C12A64: FFFFFFFFFFFFFFFF 020080E210509FE5              
 0C12A6C: FFFFFFFFFFFFFFFF 0050D5E5011055E3                

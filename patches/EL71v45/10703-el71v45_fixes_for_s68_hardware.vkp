@@ -13,6 +13,7 @@
 English:Fix screen resolution in JMenu, JVM. Remove data abort in mediaplayer while playing mp3.
 Only for S68!
 */
+
 063D73A: 4132F021 B0228421 ; EL71v45 лечим размер экрана везде кроме явы (нет цветной каши)
 094FF38: FF224132 B0220032 ;FIX_JAVA_MENU H
 094FF3C: F021 8421 ;FIX_JAVA_MENU W 

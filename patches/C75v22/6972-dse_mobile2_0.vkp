@@ -12,6 +12,7 @@ English:
 Allows keys to be rebound from the mobile phone.
 If you want the standard function to be used - put "STDF" as a string.
 */
+
 0331D18: 2C3A381CA16B59F1B6E9 00488047,0xA10D9001,C046
 
 +10D0000

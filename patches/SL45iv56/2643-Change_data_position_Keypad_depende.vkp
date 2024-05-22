@@ -15,6 +15,7 @@ English: This patch allows to choose position of date (with clock) if keypad loc
 
 Release: December 10, 2005
 */
+
 0x18E7FE: 5226 003F
 0x18E800: E302 2700
 0x18E74E: 7226 203F

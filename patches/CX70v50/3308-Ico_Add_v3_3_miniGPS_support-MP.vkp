@@ -12,6 +12,7 @@ featuring: charging icons, profile icons, vibra on/off, animation, netmode, mini
 
 Полное описание внутри патча тела на английском.
 */
+
 ; entrypoint with icons left in iconbar:
 1711AC6: 1CF08CEB1CF0FCED0028 C046,00488047,0xA0FDB811 ; CX70v50
 0FDBA88: FFFFFFFFFFFFFFFF 0xA172E1E0,0xA172E6C4 ; CX70v50

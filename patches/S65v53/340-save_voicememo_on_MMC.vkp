@@ -13,6 +13,7 @@
 Max rec time of a file is determined by free space on A:\
 But it can be repeated as many times as the MMC allows
 */
+
 0A24454: 30 34
 ;------------------------- end -------------------------
 

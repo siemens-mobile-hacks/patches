@@ -12,6 +12,7 @@
 Для замены прогрессбара юзаем эльф 
 ExioPB - Extended Information On ProgressBar (C) Vedan
 */
+
 0521E14: 0121 C046 ; Disable send popup
 0596E84: 0121 C046 ; Disable receive popup
 ;------------------------- end -------------------------

@@ -30,6 +30,7 @@ since the latest "Clear" action.
 Add confirmation dialog for "Clear" function.
 Does not count the Status report SMS for incoming.
 */
+
 0x18A8E2: DEFFEB00 B047E400
 0x18A956: 2801AB02 53045304 
 0x39BE4C: DAE5CEDD DAE4DA48

@@ -36,6 +36,7 @@
 Meню Net_Indicator позволяет включить Large Advanced Net Indicator  (LANI) и задать позицию его вывода. Перед включением, убедитесь, что картинки (771-773) для него
 установлены !
 */
+
 ;---- New block. Segment address:A0A50000--------
 00A51FD8: 0EB010BD D5F212F8
 ;---- New block. Segment address:A0D20000--------

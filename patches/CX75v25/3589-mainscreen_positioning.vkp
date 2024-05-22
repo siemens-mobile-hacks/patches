@@ -10,6 +10,7 @@
 /*
 Позиционирование на главном экране
 */
+
 ;Charge Indicator (Switched-Off Mode)
 02A8CEA: 10 5E ; background end Y
 02A8CF0: 02 50 ; background start Y

@@ -18,6 +18,7 @@ You should download those files to 0:\Sounds\Time: http://avkiev.kiev.ua/Siemens
 
 +6.1 Если включен плеер, то после проговаривания времени воспроизведение продолжится
 */
+
 084A2B8: "VOICE_MSGCHANGE",00,0xA06F5627 "VOICE_MSGCHANGE",00,0xA0063001 ; EL71v45 - SpellTime instead of VOICE_MSGCHANGE
 0710C0C: 7116FAEBB000C4E1 BF0000EF0000A0E1 ; EL71v45 - SpellTime instead of Alarm
 ;------------------------- end -------------------------

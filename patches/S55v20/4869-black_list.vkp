@@ -9,6 +9,7 @@
 /*
 
 */
+
 ; default Black List is the 5th from the top
 ; change this here: (03 = 1st, 04 = 2nd, 05 = 3rd, ... , 07 = 5th)
 003B9A06: FF 07 

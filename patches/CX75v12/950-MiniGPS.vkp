@@ -25,6 +25,7 @@ v - вибрировать дважды
 "0 home" на экране "home" и НЕ происходит смена профиля
 "1 work" на экране "work" и происходит смена профиля на NormalEnglish:
 */
+
 049EC58: BB4D83 077BFA
  
 #pragma enable old_equal_ff

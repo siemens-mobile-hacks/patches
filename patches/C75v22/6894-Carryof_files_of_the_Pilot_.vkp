@@ -12,6 +12,7 @@
 Ну и конечно папку с Phone Pilot нужно скопировать на конфиг и убрать в конце букву "s"
 
 */
+
 0494710: 0E00,'0:\\PhonePilots' 0D00,'2:\\PhonePilot',0000
 049473A: 1300,'0:\\PhonePilots\\List' 1200,'2:\\PhonePilot\\List',0000
 049476E: 1200,'0:\\PhonePilots\\Res' 1100,'2:\\PhonePilot\\Res',0000

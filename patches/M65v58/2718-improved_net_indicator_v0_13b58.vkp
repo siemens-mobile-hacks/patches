@@ -25,6 +25,7 @@ the image size is 5x14 px
 You should install a graphic patch 143 to display correctly.
 May be incompatible with "Profile Logo On Mainscreen" patch.
 */
+
 01635110: 00F0B8FA 51F0F6FF
 #pragma enable old_equal_ff
 01687100: F8B50F1C0025194C461F2088FF2801D2

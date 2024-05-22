@@ -25,6 +25,7 @@ join us at <http://www.handyhacking.com/>
 this patch conflicts with older blacklist versions!
 
 */
+
 64B21A: 8880F08C FA7B009A
 3B9A00: FFFFFFFF 8880F08C
 3B9A04: FFFF 46F8

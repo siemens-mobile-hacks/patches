@@ -21,6 +21,7 @@ Before installing the patch create the folder 0:\Misc\Patches\ptc and install th
 Manual:
 http://forum.siemens-club.org/viewtopic.php?TopicID=56798&page=0
 */
+
 021F23C: 000050E30B00001A60408FE2 04E08FE204F01FE5,0xA0F012C5
 02C353C: 041C47F7B2EC082C0CD2 004B9847,0xA0F01081,C046
 04A5634: 0xA032E885 0xA0F00C51

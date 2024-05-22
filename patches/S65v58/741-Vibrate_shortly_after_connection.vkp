@@ -11,6 +11,7 @@
 
 При входящих не вибрирует
 */
+
 169DF26: 17F0E0EE0028 002822F06AE8
 #pragma enable old_equal_ff
 16C0000: 00402DE9FF3F2DE90FE0A0E144F09FE5

@@ -9,6 +9,7 @@
 /*
 злополучный пик RAP_BEARER_0 при перезагрузке/выключении
 */
+
 096EEE4: 6BF2C6E8 C046C046 ; RAP_BEARER_0 (Browser)
 ;096EEFC: 6BF2BAE8 C046C046 ; RAP_BEARER_1 (Java)
 ;096EF14: 6BF2AEE8 C046C046 ; RAP_BEARER_2

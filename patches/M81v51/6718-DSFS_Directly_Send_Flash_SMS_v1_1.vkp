@@ -10,6 +10,7 @@
 Начните текст сообщения с пробела
 English: Add a whitespace to begin, It should be a FlashSMS
 */
+
 0E2E4D4: 201CB168 91F674FE
 
 #pragma enable old_equal_ff

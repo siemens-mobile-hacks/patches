@@ -11,6 +11,7 @@ RUS: Отображает индикацию виброcигнала на гла
 
 ENG: Displays indication vibra on the main screen.
 */
+
 02A8E14: 09D0 0028
 ;02A8E1A: 00 01 - * Значок ОТСУТСТВИЯ Вибры ** Vibra DISABLED logo * © 1nvisible
 049CF98: 856283 CB6632

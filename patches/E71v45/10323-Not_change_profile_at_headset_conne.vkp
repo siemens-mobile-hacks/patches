@@ -10,6 +10,7 @@
 Глюк: после патча перестают переключаться профили
 ! http://patches.kibab.com/patches/details.php5?id=10156 - новая версия
 */
+
 ;DONOT_CHANGEPROFILE_AT_HEADSET_CONNECTION_HOOK
 06F25E4: 01 04
 ;------------------------- end -------------------------

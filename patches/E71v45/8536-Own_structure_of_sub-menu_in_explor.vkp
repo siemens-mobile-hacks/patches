@@ -12,6 +12,7 @@
 english language:
 The point, which U want to change, U should remove ";", after changing points, it will be good to edit langpack, if U don't want to forget which point what do
 */
+
 ;*/пункт инфо о диске*/
 
 ;071A974: 0F 00 ;инфо о диске->открыть

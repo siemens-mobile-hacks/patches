@@ -9,6 +9,7 @@
 /*
 
 */
+
 ; In input dialogs press:
 ; # - change АбвT9->Абв->Abc->123->
 ; Long # - Symbols table

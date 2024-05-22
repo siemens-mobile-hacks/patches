@@ -46,6 +46,7 @@ Release 04.02.2007
 
 +Дописал функции которых нет в прошивке - UnRegExplorerExt,AddKeybMsgHook,AddKeybMsgHook_end,RemoveKeybMsgHook
 */
+
 ; ELF Loader v2.2 (16-bit PNG + Compatibility with Pictures add-on v5.1)
 ; (C)2007 by Rst7/CBSIE, BoBa
 ; Release 9.04.2007

@@ -15,6 +15,7 @@ RUS: Этот патч заменяет стандартный индикато�
 ENG: This patch displays 6 (7) bars meaning the next 6 available GSM channels instead 
 of the normal net indicator.
 */
+
 ;this patch displays 6 bars meaning the next 6 available GSM channels instead 
 ;of the normal net indicator. the bar images are still a bit crappy, because
 ;i don't know how to make them transparent, for any help i'll be pleased. here

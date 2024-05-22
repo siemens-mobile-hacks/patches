@@ -2,12 +2,13 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 170524
+;Version: 210524
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
 
 */
+
 +0074000
 #pragma enable old_equal_ff
 0000: 0xA009B810 ; 000: __arm void loopback0();
@@ -1001,6 +1002,7 @@
 0F14: 0xA0A26719 ; 83C5: void *GetPBarProc3();
 0F18: 0xA0A285B9 ; 3C6: __thumb void SetHeaderScrollText(void *header, const WSHDR *title, const void *malloc_fn, const void *mfree_fn);
 0F1C: 0xA0A28245 ; 3C7: __thumb void SetHeaderExtraText(void *header, const WSHDR *ws, const void *malloc_fn, const void *mfree_fn);
+0F20: 0xA05021B8 ; 3C8: __arm int GetMimeType(int uid, WSHDR *mime_type, int unk_0);
 
 #pragma disable old_equal_ff
 +0

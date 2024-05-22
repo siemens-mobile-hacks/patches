@@ -12,6 +12,7 @@ RUS: Убирает софт кнопки с главного экрана (эк
 
 ENG: Cleans a software of the button from the main screen (the screen of a mode of expectation) and lowers date and time for their place. Thus the functions appointed to a software of the button will hold good by pressing buttons.
 */
+
 02CBEA5: D0 E0
 02CBF62: 05D1 0028
 0347118: 07D1 0028 ;чтоб часы не скакали вверх при SMS и т.п.

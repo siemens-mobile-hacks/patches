@@ -10,6 +10,7 @@
 Патч нужен для установки анимации на включение/выключение с увеличенным диском.
 English: Patch is used for setting startup/shutdown animation when disk is increased.
 */
+
 45714A: 42 41
 ;------------------------- end -------------------------
 

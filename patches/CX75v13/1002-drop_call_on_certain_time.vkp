@@ -13,6 +13,7 @@ RUS: Телефон сбрасывает вызов через NN секунд �
 ENG: The phone hangs up after NN seconds from the call start (5 secs by default)
 On/Off in chosen profiles.
 */
+
 552B40: 00F028FD 4EF716FE
 +4A1770
 #pragma enable old_equal_ff

@@ -11,6 +11,7 @@
 
 Однако сам патч цифирок не содержит, ставим отдельно. Можно поставить патч 913 или 914, или другие цифры, найти можно тут: http://alexsid.antex.ru/index.php?main=gpatches.php
 */
+
 0DD650: E6FCB101 DA5500B8
 ;35B600
 35B800: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E00CD7500D00F2F1FE63F2F2FC638820

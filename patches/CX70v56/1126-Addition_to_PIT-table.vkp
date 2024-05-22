@@ -13,6 +13,7 @@
 Now you can assign PIT addresses to pics #1330(0x532)1429(0x595) in free memory (0xA0FD0050)
 
 */
+
 0CB75B8: FFF7F5FF 18F322FD
 
 #pragma enable old_equal_ff

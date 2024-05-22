@@ -15,6 +15,7 @@ ENG: Now you can assign PIT addresses to pics #1324(0x52C)1423(0x58F) in free me
 Known Problems:
 You can't yet view or edit these pics by means of SPC3 © ACiD[mrp]\b@iLLi or Smelter © avkiev
 */
+
 0800E80: FFF7F5FF A1F45EFA
 #pragma enable old_equal_ff
 04A2340: 0A4B984207DC084B984204DBC01AC000

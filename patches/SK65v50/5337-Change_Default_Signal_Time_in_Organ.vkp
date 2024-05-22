@@ -11,6 +11,7 @@
 ;!Все записи, у которых стоит 15 мин, при просмотре будут иметь 0 мин
 ;!All entries with 15 min will have 0 min when viewing
 */
+
 04E8020: 311C201C F8F43EF8
 #pragma enable old_equal_ff
 01E00A0: 08B5B37D1F2B01D10123B375311C201C

@@ -8,6 +8,7 @@
 /*
 Патч №110 с http://patch.oslik.ru/SL45_RU
 */
+
 ;Выключение сигнала: 
 23DB1E: DAA40CAD CC00CC00 
 

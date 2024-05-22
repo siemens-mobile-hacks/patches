@@ -11,6 +11,7 @@
 На многих телефонах патч "Date at the bottom of maincsreen as "We, 11 May" v8" не работал. На моем в частности.
 Выкладываю патч который у меня по крайней мере работатет.
 */
+
 ;* Дата внизу (на главном экране) в виде "Ср, 11 Май" v8 * © avkiev
 ;* Date at the bottom of maincsreen as "We, 11 May" v8 *
 

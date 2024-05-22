@@ -11,6 +11,7 @@
 Близки по функциональности AddKeybMsgHook_end и RemoveKeybMsgHook NewSGold-ов.
 
 */
+
 0x07FEAB8: ff20 0048
 0x07FEABA: 9430 0047
 0x07FEABC: fff744ff 01f0ffa0

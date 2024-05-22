@@ -11,6 +11,7 @@
 
 Только для прошивки  53 и выше (так указано)Apo4emu
 */
+
 ;* Убрать Латвийский и Литовский из меню языков ввода ** Remove Latvian and Lithuanian from input languages menu * © 0xFEDF
 1213F06: 00 01 ; sw53+
 1213F0A: 00 01

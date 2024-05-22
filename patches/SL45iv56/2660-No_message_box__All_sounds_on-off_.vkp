@@ -14,6 +14,7 @@ Plays also configurable beeping soun.
 Release: October 3rd, 2005 
 Updated: February, 17th, 2006 (by GoLL@B)
 */
+
 3B1642: 8880 DB00 ; no box "all sounds off" (brak wiadomo&#347;ci - d&#378;wi&#281;ki wy&#322;&#261;czone) 
 
 3B1614: 8880E6FC7C0488C0E6FD E6FC0200DAC3B600DB00 ; sound number, here example with 02h (brak wiadomo&#347;ci 

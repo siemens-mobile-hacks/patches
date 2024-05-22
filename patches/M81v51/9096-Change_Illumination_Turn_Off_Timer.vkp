@@ -12,6 +12,7 @@ Config:\japp\FlexMenu
 
 ВНИМАНИЕ! ЕСЛИ ЭТОГО НЕ СДЕЛАТЬ, ТО ПОЯВЯТСЯ ГЛЮКИ ОПИСАННЫЕ by Pavel81
 */
+
 0C0ED65: 0F 0i90 ; mainscreen (in seconds)
 0C0ED69: 3C 0i90 ; menues, lists etc. (in seconds)
 ;------------------------- end -------------------------

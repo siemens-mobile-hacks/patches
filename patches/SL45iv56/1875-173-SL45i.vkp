@@ -16,6 +16,7 @@ Created: July 05, 2004
 
 Патч №173 с http://patch.oslik.ru/SL45_RU
 */
+
 0x18D110: C807C807 85088508
 
 0x3A7F1C: 889088 EA0092

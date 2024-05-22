@@ -13,6 +13,7 @@
 
 (i) BuG: works from start-up now, without clicking some menus
 */
+
 08CA1C0: 01D1 C046
 1633D2A: 08D0 0028
 ;1633D30: 00 01 ; show logo when vibra is disabled

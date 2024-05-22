@@ -9,6 +9,7 @@
 /*
 Убирает вывод на экран некоторых сообщений.
 */
+
 ;* Убрать сообщения ** Disable some messages * © SiNgle, § AsteriX
 164AABA: 0021 10BD ;"Все сигналы вкл" (All ringtones on)
 164AADA: 0021 10BD ;"Все сигналы выкл" (All ringtones off)

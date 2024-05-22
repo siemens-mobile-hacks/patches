@@ -20,6 +20,7 @@ has to activate key unlock.
 
 Release: February 18th, 2006
 */
+
 0x3AF6E2: DAA37A40 DAC7A0DF
 
 0x27DFA0: FFFFFFFF CC00CC00 ; replace with call to entrypoint (DA......)

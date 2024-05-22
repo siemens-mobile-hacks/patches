@@ -11,6 +11,7 @@
 English:You can adjust color and length of hour and minute arrows
 
 */
+
 2CFD54: 01 04 ; Цвет часовой стрелки (Hour hand color)
 2CFCF4: 01 04 ; Цвет часовой стрелки вторая линия(для жирности)(Hour hand second line color (bold))
 2CFC44: 01 06 ; Цвет минутной стрелки (Minute hand color)

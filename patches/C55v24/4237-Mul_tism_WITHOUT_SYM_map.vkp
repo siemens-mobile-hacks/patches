@@ -42,6 +42,7 @@
 ;заполните нулями. Последним кодом в строке должен быть "00".
 ;Четвертая строка зарезервирована для хранения номера SMS-
 */
+
 ;---- New block. Segment address:DF0000--------
 005FE900: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 6039840370398403400F0A00500F0A00
 005FE910: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 600F0A00700F0A00800F0A00900F0A00

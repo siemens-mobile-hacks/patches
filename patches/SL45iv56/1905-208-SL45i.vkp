@@ -13,6 +13,7 @@ Release: 23.08.04 - v1
 
 Патч №208 с http://patch.oslik.ru/SL45_RU
 */
+
 ;Eliminating the ---- line (choose one): 
 ;CB message flashes: 
 3B2066: A5 A6 

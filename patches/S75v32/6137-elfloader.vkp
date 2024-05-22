@@ -40,6 +40,7 @@ Release 10.10.2006
 +Поддержка эльфов SVv4, генерируемых LD (respect DeathSoft)
 
 */
+
 ;S75_32
 0x00079000: FFFFFFFFFFFFFFFFFFFFFFFF 47B82FA00FB62FA0275497A0 ;RET_ADRS
 0x004254F0: 0FB62FA0 148707A0                                 ;PATCH_ONCREATE

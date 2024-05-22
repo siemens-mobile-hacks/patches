@@ -15,6 +15,7 @@ English:Description and MIDlet are in http://patches.kibab.com/patches/bin/_comm
 
 Remove patch of disabling "Copy SIM?" message!!!
 */
+
 051FEFA: 04F1D2EA 81F7DAEB  
 #pragma enable old_equal_ff 
 04A16B0: FF7F2DE918008FE20030A0E30020A0E3 

@@ -10,6 +10,7 @@
 
 Патч №011 с http://patch.oslik.ru/SL45_RU
 */
+
 3B309E: 4840 E014 
 3B30C4: 7B03 DE03 ;Текст
 3B3322: DAA0AC15 DAD9020B ;Точка входа

@@ -19,6 +19,7 @@ LCD really turns off, it doesn't only clear screen buffer!
 
 !!! Don't close locked mp3 by red button long pressing :) Your screen doesn't turn on !!!
 */
+
 3BA1D0: F0C8F0D9 DAC7C0D5
 0x27D5C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DADB22ED48413D05DAC00ECCF0C8F0D9 
 0x27D5D0: FFFFFFFFFFFFFFFFFFFFFFFF DB00DAC008CCF0C8F0D9DB00

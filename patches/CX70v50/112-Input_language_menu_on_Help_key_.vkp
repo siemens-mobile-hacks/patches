@@ -9,6 +9,7 @@
 /*
 Меню выбора языка ввода при нажатии Help(Инф. Т9).
 */
+
 09FF17A: 784900227848 1BF70FFE80BD ;в MMS
 0AF1A42: 7DF797FF 29F6ABF9 ;в e-mail
 0A6FA82: FFF777FF ABF68BF9 ;в SMS

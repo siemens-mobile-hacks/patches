@@ -9,6 +9,7 @@
 /*
 
 */
+
 ; Shows a short message with session duration at shutdown.
 ; Will be also launchable directly by call thumb: A006E02D
 

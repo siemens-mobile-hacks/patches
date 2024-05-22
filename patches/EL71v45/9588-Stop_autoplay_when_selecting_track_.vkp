@@ -9,6 +9,7 @@
 not based on swilib 
 не использует swi
 */
+
 07A2C20: 120000EA CAB631EB
 #pragma enable old_equal_ff
 1410750: 4CE08EE202402DE928009FE5080090E5

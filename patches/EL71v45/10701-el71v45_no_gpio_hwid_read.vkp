@@ -14,6 +14,7 @@ English:Skip all the code that calculates the HWID from the state of the GPIO le
 Has nothing to do with the patches "HWID Changer", "HWID Remover (Skip check)" and the addition "Add interpreter fix"
 Needed to fully run the EL71 firmware on the S68 (and not only!)
 */
+
 0561240: 0060A0E3 0860A0E3 ; mov r6, 0	->	mov r6, 8
 0561244: 850085E0 130000EB ; bl 0xa0561298
 ;------------------------- end -------------------------

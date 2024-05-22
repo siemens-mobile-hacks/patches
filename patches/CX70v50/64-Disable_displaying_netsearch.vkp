@@ -9,6 +9,7 @@
 /*
 Патч отключает надпись "Поиск сети". Отображается инвертированный "!" вместо Поиск сети (instead of Netsearch there is an inverted "!" in front of providername)
 */
+
 171BCC2: 6A49 04E0 ;screensaver
 1718ACA: 15F0ECEB 07E00028 ;mainscreen
 ;------------------------- end -------------------------

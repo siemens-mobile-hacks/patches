@@ -13,6 +13,7 @@ RUS: Увеличивает на весь экран фото абонента, 
 
 ENG: Increases by all screen of a photo of the subscriber on which the picture is set at an entering call. It is recommended to use for a photo a picture 176X132 pixel.
 */
+
 0517C22: 052104 002100
 0517C2A: 502280 842278
 ;------------------------- end -------------------------

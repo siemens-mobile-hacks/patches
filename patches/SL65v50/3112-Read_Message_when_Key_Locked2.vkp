@@ -13,6 +13,7 @@
 English:Read flash sms and new message when keyboard locked, and Light on temporarily. With closed slider also
 Press the GREEN button to read message
 */
+
 1649006: F8F7A9FC 97F096F8
 164C35C: 0223E05E 93F0F8FE
 #pragma enable old_equal_ff

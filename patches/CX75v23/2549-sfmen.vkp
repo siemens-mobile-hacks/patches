@@ -9,6 +9,7 @@
 /*
 Вместо обычного меню запускается Native Menu.
 */
+
 ;Details: http://patches.kibab.com/patches/details.php5?id=817 
 4B16C0: 434B4C4B5F434B5F4D41494E4D4E5500A76B32A0 "CKLK_CK_MAINMNU",00,0xA02BEA19 
 ;------------------------- end -------------------------

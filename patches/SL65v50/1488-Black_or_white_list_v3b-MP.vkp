@@ -11,6 +11,7 @@
 
 English: For this patch to work, the filter must be switched on for any group except SIM-card. It's equal what group will be chosen, all settings are taken from Master-Patch.
 */
+
 0B18148: 061C281C FEF6EAF9
 0B18E44: 0006000E FDF674FB
 0B192C6: B0420ED1 FDF63BF9

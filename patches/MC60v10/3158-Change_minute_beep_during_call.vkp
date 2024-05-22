@@ -11,6 +11,7 @@
 
 English:Allows you to change beep time from 60s to any value you want. Useful for users with tariffs with per-minute payment. For example, change it to 55s and you will have 5s to end call before new minute begins
 */
+
 003144: f2f40cfe da750015
 551500: ffffffffffffffff f2f40cfe46f43200 ;На какой секунде подавать первый сигнал. Здесь - на 50-й секунде (32h)
 551508: ffff db00

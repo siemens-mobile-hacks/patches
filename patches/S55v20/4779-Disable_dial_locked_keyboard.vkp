@@ -8,6 +8,7 @@
 /*
 
 */
+
 ; allow only "112" in keylocked mod (not 98 and 911):
 2400DE: EA20 0D0F
 ; allow no keypress in keylock mode:

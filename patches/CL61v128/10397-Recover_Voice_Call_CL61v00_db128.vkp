@@ -14,6 +14,7 @@ English:Recover voice call and amr sound for E71 reflashed into CL61. Not needed
 Найден баг, в гарнитуру с этим патчем играет моно
 English:Found bug, headset play mono with this patch
 */
+
 0DED145: 00 01 ; registry 42
 
 0DED188: 00 03 ; registry 57

@@ -11,6 +11,7 @@ Seem Calculator "<C" function
 
 Release: April 22th, 2006
 */
+
 0x18CF7A: 0C 0B
 
 ;0x18CF76: F601 ;"Options" string

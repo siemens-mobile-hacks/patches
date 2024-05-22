@@ -10,6 +10,7 @@
 /*
 Совместимость с ELFPack v2.2
 */
+
 ;Note: for x85 devices with a display resolution of 240x320, like EL71 and E71, we need a new gpf-format, *.gpf2! 
 
 0A32284: 54009FE51EFF2FE1 04F01FE5,0xA0063691 ; E71v45

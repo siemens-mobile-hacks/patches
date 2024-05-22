@@ -9,6 +9,7 @@
 /*
 
 */
+
 ; Отключить "Получено новое сообщение!" при входящем SMS 
 ; Disable "New message received!" at incoming SMS 
 ; C81v51

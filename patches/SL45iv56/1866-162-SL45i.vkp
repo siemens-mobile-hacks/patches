@@ -16,6 +16,7 @@ Release: June 26, 2004
 
 Патч №162 с http://patch.oslik.ru/SL45_RU
 */
+
 ;Invert both softkeys & Display when APP Function 1 is selected, 
 ;needs at least JAF.Funny Display & ISK.Invert Softkey selectable: 
 0x27D6CB: C0 00 

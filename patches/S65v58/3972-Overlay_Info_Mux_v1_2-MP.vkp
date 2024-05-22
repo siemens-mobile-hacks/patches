@@ -10,6 +10,7 @@
 дополнительно поставьте:
 08C8CC4: 011C 2121 ; * запуск оверлея немедленно * (s65v58)
 */
+
 08C8D04: 00F019F8201C5FF0F4E8 004F3847CD99FDA0C046 ; s65v58
 0FD9B90: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0xA08C8CDB,0xA08C8D3B,0xA1155153,0xA11551E1 
 ; 1) host function of entry, 2) 1st, 3) 2nd, 4) 3rd BL(X) at/after entrypoint

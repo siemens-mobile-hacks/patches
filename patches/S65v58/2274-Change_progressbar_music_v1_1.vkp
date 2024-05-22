@@ -14,6 +14,7 @@
 English:
 There are some variants of progressbar in the patch. You can choose one you like more.
 */
+
 ; Smelter auto-patch
 ; сгенерирован смелтером (попробуйте сначала отменить, вдруг устанавливали) 
 ;0A2DA60: 1000660073 0500700080 

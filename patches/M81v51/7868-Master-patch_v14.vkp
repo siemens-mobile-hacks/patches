@@ -10,6 +10,7 @@
 /*
 Совместим с загрузчиком эльфов 2.3
 */
+
 ;Run Scaner on startup
 02FDDB6: 0021 BEDF ;  M81v51
 

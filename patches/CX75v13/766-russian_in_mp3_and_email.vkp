@@ -11,6 +11,7 @@ RUS: Руссифицирует тэги, отображаемые при про
 
 ENG: Translate to Russian the tags displayed at playing of MP3-files also allows to display correctly Russian letters in coding Win-1251 the built in post client (before application of a patch in both cases are observed not read symbols).
 */
+
 011E59AE: 208010803C80 3C0042004200
 011E59B5: 80 00
 011E59B7: 80 00

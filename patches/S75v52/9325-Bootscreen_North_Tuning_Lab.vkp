@@ -13,6 +13,7 @@
 English: It is the first picture after pressing red button to booting phone.
 White backcolor of this picture provide to you ability to see battery icon without own white backcolor, when it is charging in off-mode.
 */
+
 00401B14: 0xA0401125 0xA1BE0204 ; Адрес картинки
 00401B18: 0xA0401AFE 0xA1BE0000 ; Адрес палитры
 

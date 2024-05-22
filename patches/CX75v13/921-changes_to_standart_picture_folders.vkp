@@ -11,6 +11,7 @@ RUS: Изменяет папку Pictures на Pic и позволяет доб�
 
 ENG:  Changes folder Pictures on Pic and allows to add photos in a separate folder for a photo (folder Foto). After application of a patch it is necessary folders "EMS", "MMS", "Logos", "Wallpapers", "Frames", "Icons" move in "0: \Pic \Stuf \". What to get from folder Foto in folder Pic it is necessary to press shortly in folder Foto the red button.
 */
+
 04A47DE: 740075007200650073 5C0046006F0074006F ;Pictures => Pic\Foto
 04A488A: 740075007200650073 5C0053007400750066 ;Pictures\Clip Gallery => Pic\Stuf\Clip Gallery
 04A48EE: 740075007200650073 5C0053007400750066 ;Pictures\EMS => Pic\Stuf\EMS

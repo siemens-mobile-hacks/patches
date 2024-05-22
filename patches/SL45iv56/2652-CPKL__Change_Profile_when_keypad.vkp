@@ -8,6 +8,7 @@
 /*
 Release: 03 February 2006
 */
+
 40DBB0: CC00CC00 DAE370F9 ;(e-point, kt&#243;ry musi by&#263; wzi&#281;ty z MSP, kt&#243;ry
 ;tak&#380;e musi by&#263; wgrany, przyk&#322;adowo u mnie 40DBB0) 
 ;we must find free epoint from MSP and use it instead of 40DBB0 (my free e-

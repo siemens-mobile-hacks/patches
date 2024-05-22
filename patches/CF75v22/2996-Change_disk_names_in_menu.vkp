@@ -9,6 +9,7 @@
 /*
 
 */
+
 ;* Изменение названия дисков в меню выбора ** Change disk names in menu * © DeHuCoH, USV, § Smelter, ® AsteriX
 009D016: 44726976652030 303A5C44617461 ; Drive 0 -> Data
 009D034: 4472697665203100 313A5C4361636865 ; Drive 1 -> Cache

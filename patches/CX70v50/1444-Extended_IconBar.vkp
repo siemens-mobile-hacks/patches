@@ -15,6 +15,7 @@ Undo earlier IconBar coordinates patches
 Extends IconBar up to 8 Icons
 
 */
+
 1711DBC: 04 08 ;disable 1st check
 1711DC0: 04 08
 

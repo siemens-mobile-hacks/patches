@@ -12,6 +12,7 @@ SMS status report is requested only for last segment of concatenated SMS
 + support of 16-bit reference number
 */
 
+
 0E3A972: 20339974 02F2CEE8
 
 #pragma enable old_equal_ff

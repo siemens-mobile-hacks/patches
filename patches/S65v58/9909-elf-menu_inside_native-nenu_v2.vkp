@@ -8,6 +8,7 @@
 /*
 тот же патч, что и 9908 (http://patches.kibab.com/patches/details.php5?id=9908), только добавлен запуск из Developer menu -> Native menu
 */
+
 ;------------------------- start ------------------------
 0092E578: 0xA08DF43B 0xA00B00A1 ; CKLK_CK_MAIN_MNU: центр джойстика
 0092EB90: 0xA08DF43B 0xA00B0051 ; ELSE_MMENU_OPEN: для DSE

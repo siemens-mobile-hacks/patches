@@ -13,6 +13,7 @@ v1.1: исправлен баг: перезагрузка уже включен�
 English:When alarm clock triggers phone switches on and vibrates shortly.
 v1.1: bug fixed: reboot of switched on phone
 */
+
 0ACB160: 9BF678ED7560 36F5CEEA,C046
 
 #pragma enable old_equal_ff

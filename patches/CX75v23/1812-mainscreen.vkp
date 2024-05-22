@@ -10,6 +10,7 @@
 /*
 
 */
+
 ;Charge Indicator (Switched-Off Mode)
 02A8CEA: 10 5E ; background end Y для С65 заменить на 4A
 02A8CF0: 02 50 ; background start Y для С65 заменить на 3C

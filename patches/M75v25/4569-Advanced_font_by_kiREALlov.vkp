@@ -9,6 +9,7 @@
 (!) Содержит патч меняющий цифровые часы при залоченной клавиатуре под стиль шрифта.
 [URL=http://imageshack.us][IMG]http://img60.imageshack.us/img60/8505/ghffjhjfhfnx9.jpg[/IMG][/URL]
 */
+
 011C39D9: 07 05
 011C39DE: 1C 18
 011C39E0: 1C 18

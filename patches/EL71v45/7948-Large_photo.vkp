@@ -9,6 +9,7 @@
 /*
 Необходимы аватары размером 240x220
 */
+
 5C60D4: 5A B5 ;photo size
 
 852BF8: BF EA ; outcall_y_name

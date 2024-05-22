@@ -8,6 +8,7 @@
 /*
 Теперь фотки можно именовать не img123.jpg, а 060608_121345.jpg
 */
+
 #pragma enable old_equal_ff
 0063B00: 33B51448C4DF17D0051D0DA49B00E418
 0063B10: 281C291C0831B4DF6879297A6A7AAB7A

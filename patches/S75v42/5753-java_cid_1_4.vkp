@@ -22,6 +22,7 @@ Property                   Value
      MPJC_CAP         current accu charge level
      MPJCGPRS         current GPRS traffic (bytes)
 */
+
 /*
 Property         Value
 ---------------------------------------------

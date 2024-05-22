@@ -20,6 +20,7 @@ English: This patch will provide an ability to display firmware image no. 339 in
 if the Vibra is active. Please modify the image (original image is like up-arrow) 
 as you like.
 */
+
 ;Вы можете указать когда показывать иконку: когда вибра включена или 
 ;когда выключена. Это определяется байтом по адресу 3B3728: 
 ; - если байт по адресу [3B3720] = 00 - иконка будет отображаться когда 

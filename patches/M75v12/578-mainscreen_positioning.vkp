@@ -12,6 +12,7 @@
 - Сеть
 - Батарея
 */
+
 ;Charge Indicator (Switched-Off Mode)
 02A8B72: 10 5E ; background end Y для
 02A8B78: 02 50 ; background start Y

@@ -8,6 +8,7 @@
 /*
 Remove pick-off of patched phone with turned on DevMenu->Exits->SExit
 */
+
 ; Убрать pick-off при включенном DevMenu->Exits->SExit патченного телефона
 ; Remove pick-off of patched phone with turned on DevMenu->Exits->SExit
 ; S68v52

@@ -9,6 +9,7 @@
 ! патч работает только если НЕ УСТАНОВЛЕН патч "Удалить лишние языки из меню языков ввода" и не удалялись лишние бызы T9 
  ! patch works only if patch "Remove unusable languages from input languages menu" is NOT installed and any unused T9 bases not deleted
 */
+
 075B10A: 201C E068
 07FE17C: D1640BA0 250941A1 
 00B5266: 00200790E96807AA0092221C281C E868014CA04705E00092250941A1

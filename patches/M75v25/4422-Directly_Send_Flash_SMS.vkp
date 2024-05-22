@@ -9,6 +9,7 @@
 /*
 Для отправки Flash SMS начните смс с пробела.
 */
+
 0BD5BDC: 201CB168 8AF6E8FC
 #pragma enable old_equal_ff
 0A605B0: 201CB8380178082906D000290CD1417B

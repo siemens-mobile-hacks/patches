@@ -13,6 +13,7 @@
 EN:
 Routes the dynamic lights signals to keypadlight or mainscreen.
 */
+
 11511B8: 00A0A0E3 0C3619EB
 179E9F0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 020050E30000A00300A0A0E31EFF2FE1
 ;179E9F4: 00 01; 00:dl->mainscreenlight | гл.экран 01:dl->keypadlight | клавиатура

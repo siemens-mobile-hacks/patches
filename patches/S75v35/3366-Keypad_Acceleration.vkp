@@ -10,6 +10,7 @@
 Уменьшает задержку между автоповторами нажатия на клавиатуру
 English:Reduces time between autoretry of key press
 */
+
 ;S75v35
 ;Cкорость автоповтора клавиатуры
 ;(c) SiNgle

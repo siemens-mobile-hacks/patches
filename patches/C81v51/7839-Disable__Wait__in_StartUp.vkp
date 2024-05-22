@@ -9,6 +9,7 @@
 /*
 Кроме отключения "Подождите" при включении телефона до StartAssistant,также ускоряет запуск демонов
 */
+
 ;Disable "Wait" in StartUp before StartAssistant
 ;Disable "Wait" while zooming a picture in MyStuff
 ;Отключить "Подождите" при включении телефона до StartAssistant

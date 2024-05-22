@@ -21,6 +21,7 @@
 
 English:For correct work of this patch you must apply pictures patch #961
 */
+
 1711A36: 051C0020 27F0ABFD
 #pragma enable old_equal_ff
 1739590: 01B5F4F782EF062801D1002020BD4000

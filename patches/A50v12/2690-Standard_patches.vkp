@@ -22,6 +22,7 @@
 - Drawing extended indicators and other;
 - Info about contents.
 */
+
 #pragma disable warn_if_new_exist_on_apply
 #pragma enable old_equal_ff	
 ;----------------------------------------------------

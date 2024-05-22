@@ -10,6 +10,7 @@
 ; with no new messages crashes, this patch is workaround.
 
 */
+
 0EF1A66: 081C 7047
 ;------------------------- end -------------------------
 

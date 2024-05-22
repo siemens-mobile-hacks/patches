@@ -15,6 +15,7 @@ Undo first Net Indicator X/Y coordinates changes in * Mainscreen Positioning v2 
 You can change them again with the help of * ImprovedNetIndicator + ProfileLogo * combi patch
 
 */
+
 1698C38: 02210320 28F0C2F9 ; entrypoint
 
 +16C0FA0

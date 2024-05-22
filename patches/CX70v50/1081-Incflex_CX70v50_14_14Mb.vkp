@@ -22,6 +22,7 @@ Before applying this patch do the Fullflash Backup!
 3. Put the most valuable files back to Disk C
 4. Reboot your cell phone. Be pleased and don't install patches to the new FFS space.
 */
+
 083A764: 6D 79
 083A7BC: 10 04
 00B0368: FFFFFFFFFFFFFFFF 000036A000000200

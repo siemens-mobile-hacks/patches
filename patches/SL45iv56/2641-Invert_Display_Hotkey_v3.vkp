@@ -23,6 +23,7 @@ improvements
  v3 -> thE prEtEndEr (November 30th, 2005)
 now works with auto keylock mode, too 
 */
+
 ; Comment these two lines, if you don't have installed ISK or
 ; if you don't want inverted softkeys
 ; 0x27D6CB: C0 00 ; changes ISK app function no. from #13 to #1

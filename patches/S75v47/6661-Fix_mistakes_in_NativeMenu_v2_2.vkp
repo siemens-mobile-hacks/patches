@@ -11,6 +11,7 @@
 По сравнению с предыдущей версией - добавил присвоение собственного CSM NativeMenu, чтобы можно было переключаться в X-Task на него. Пока не делал ничего с Сообщениями и Таймером. Доделайте кто-нибудь плз :)
 English: Now Native Menu has its own CSM. Didn't fix Timer & Messages errors, please somebody do it :)
 */
+
 ; CreateGUIWithDummyCSM call & other stuff
 033356E: B8F0AAEC 00210AE0
 0333582: 00210020C5F67DFC002802D0 BBF07AE880BDB8F040EEFEBD

@@ -13,6 +13,7 @@ MP+FL!
 2. Здесь ничего не выбирать :), идёт замена вызова PlaySound (т.е. будильника) на проговаривание времени
 
 */
+
 ;1. Shortcut
 4B1914: "ELSE_COUNT_DOWN",00,256232A0 "ELSE_COUNT_DOWN",00,0xA0FC3001
 ;4B1CF0: "ELSE_REMOTESYNC",00,256232A0 "ELSE_REMOTESYNC",00,0xA0FC3001 

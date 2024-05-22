@@ -8,6 +8,7 @@
 /*
 Патч №067 с http://patch.oslik.ru/SL45_RU
 */
+
 18E3A0: 4E02 5A03 
 18E3D4: 4F02 D300 
 18E4A6: 4E024E02 5A035B03 

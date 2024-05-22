@@ -13,6 +13,7 @@ Delete this folder from Cache, then turn the phone off and apply this patch.
 ; Готово, получили на 600 кб больше свободного места. Глюков не наблюдал. 
 ; БЕЗ ЭТОГО ПАТЧА папка "ThemeCache", когда сделаете рибут, возрождается после удаления.
 */
+
 087DF3C: 31 32; Delete ThemeCache
 ;------------------------- end -------------------------
 

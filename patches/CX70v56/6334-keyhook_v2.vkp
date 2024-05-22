@@ -10,6 +10,7 @@
 Близки по функциональности AddKeybMsgHook_end и RemoveKeybMsgHook NewSGold-ов.
 Для совместимости с патчем Ускорение опроса клавиатуры (Keypad Acceleration) изменить указанные строки.
 */
+
 0x0CB60D0: 291c 0048
 0x0CB60D2: ff20 0047
 0x0CB60D4: 9430fff7 01e5fca0

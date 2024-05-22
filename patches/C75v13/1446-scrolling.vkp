@@ -9,6 +9,7 @@
 /*
 
 */
+
 0497E9C: D007 1202 ; (delay before start)
 0497EA0: 2C01 2A00 ; (scrolling speed)
 

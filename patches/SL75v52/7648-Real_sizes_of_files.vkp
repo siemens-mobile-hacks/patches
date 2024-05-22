@@ -12,6 +12,7 @@
 Forces phone to treat 1Kb as 1024b and so far
 
 */
+
 04Dbe50: 7D 80
 04Dbf64: 4042 FFFF
 

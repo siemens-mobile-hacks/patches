@@ -18,6 +18,7 @@
 Патч устарел!
 [url=http://patches.kibab.com/patches/details.php5?id=10183]Новая версия[/url]
 */
+
 0x0070FE84: 58319FE5 7F0030EB
 
 0x0070FE90: 01 01 ;01 - окно, 00 - во весь экран

@@ -20,6 +20,7 @@ FF000032 - красный полупрозрачный
 0000FF2E - 46 процентов синий
 Остальное смотрим в любом графическом редакторе!
 */
+
 ; SHOW_TIME_OFFLINE_CHARGE_HOOK 
 0x0029CE70: 0221652000F090FC 00488047,0xA13BF4E3 
 ; SHOW_TIME_OFFLINE_CHARGE_BODY, DATA_C 

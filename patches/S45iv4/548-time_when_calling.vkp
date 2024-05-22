@@ -12,6 +12,7 @@
 Профиль 1, пункт 9) можно выбирать через меню Applications v3, Профиль 2, пункт 3
 
 */
+
 55C9EC: DAFC44DD DA8740F5 ;нормальный экран вызова
 55CB66: DAFC44DD DA8740F5 ;экран конференц-связи
 07F540: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7405B00F2F2602E9AF22220DACAF097

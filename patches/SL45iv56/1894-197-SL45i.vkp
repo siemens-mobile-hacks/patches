@@ -15,6 +15,7 @@ Release: July 30, 2004
 
 Патч №197 с http://patch.oslik.ru/SL45_RU
 */
+
 ;менеджер адресной книги 
 0x013DD0: FE01 2A03 ;32Ah = 810d, = count+10 
 0x016C42: FE01 2A03 

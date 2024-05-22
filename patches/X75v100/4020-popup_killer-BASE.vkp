@@ -29,6 +29,7 @@ PS. Not all messages can be disabled in such manner...
 566 - Language is set to...
 
 */
+
 #pragma enable old_equal_ff
 0066A00: 62421032041C011C281C73B530BC1548
 0066A10: C4DF10D0061C103019210368A34219D0

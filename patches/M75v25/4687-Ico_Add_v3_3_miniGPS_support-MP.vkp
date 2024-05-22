@@ -11,6 +11,7 @@
 featuring: charging icons, profile icons, vibra on/off, animation, netmode, minigps, universal engines
 
 */
+
 ; Если хотим иконки слева от стандартных
 02A8DD8: F4F1AEECF4F1B6EE0028 00488047,0xA0FDB811,C046 
 0FDBA88: FFFFFFFFFFFFFFFF 0xA049D738,0xA049DB4C

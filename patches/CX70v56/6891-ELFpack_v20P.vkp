@@ -47,6 +47,7 @@ Release 04.02.2007
 
 +Дописал функции которых нет в прошивке - UnRegExplorerExt,AddKeybMsgHook,AddKeybMsgHook_end,RemoveKeybMsgHook
 */
+
 +0FD4000
 #pragma enable old_equal_ff
 0000: 0xA0002070 ; 000: __arm void loopback0();

@@ -14,6 +14,7 @@ English: Modify the illumination step and maximum value.
 
 Release: December 23, 2003
 */
+
 0x20B07E: 08 04
 0x20B0A0: 08 04
 0x20B0C2: 08 04

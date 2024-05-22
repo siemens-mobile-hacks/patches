@@ -8,6 +8,7 @@
 /*
 
 */
+
 02CE1B6: 0021 10BD ; "Все сигналы вкл" (All ringtones on)\
 02CE1D2: 0021 10BD ; "Все сигналы выкл" (All ringtones off)/ © arsh0r
 02CE222: 0021 10BD  ; "Блокировка клавиатуры включена" (Keypad locked)

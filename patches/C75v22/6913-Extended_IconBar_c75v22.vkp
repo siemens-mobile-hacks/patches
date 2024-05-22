@@ -14,6 +14,7 @@ English:Undo earlier IconBar coordinates patches
 Extends IconBar up to 8 Icons
 
 */
+
 02A8BDC: 04 08 ;disable 1st check
 02A8BE0: 04 08
 

@@ -12,6 +12,7 @@
 
 (changes keypadlight mode according to chosen profile; user can setup profiles and delay)
 */
+
 ;Меняет режим подсветки клавы в соответствии с выбранным профилем (changes keypadlight mode according to chosen profile)
 ;Пользователь может определять профили и задержку (User can setup profiles and delay)
 0B696F2: 5EF0E2E8 75F185F9

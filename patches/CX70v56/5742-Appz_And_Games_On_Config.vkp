@@ -9,6 +9,7 @@
 /*
 Переносим игры и приложения на Config, в папку Java/Jam/Applications(Games), запускаем из Меню-Интернет/игры
 */
+
 ;Игры и приложения на Config
 ;Appz And Games On Config
 0A4ED04: 30 32

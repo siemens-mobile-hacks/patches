@@ -11,6 +11,7 @@
 
 Поддерживает концепцию "Профиль без патчей".
 */
+
 0B2760E: FFF7E0FF 00F207FD
 #pragma enable old_equal_ff
 

@@ -10,6 +10,7 @@
 Меняет режим подсветки клавы в соответствии с выбранным профилем. Пользователь может определять профили и задержку
 English:Changes keypadlight mode according to chosen profile. User can setup profiles and delay
 */
+
 ;Entrypoint. Must be aligned to word (4 bytes). If no - add 2
 0803FCC: 2A1C01210120C7F742E9 00488047,0xA10D3401,0000 ; C75v22
 

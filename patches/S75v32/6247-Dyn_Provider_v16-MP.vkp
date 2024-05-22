@@ -11,6 +11,7 @@
 
 ЗЫ. Не все фонты умеют отображать украинские символы...
 */
+
 03EC678: 0xA08F66AF 0xA0061601                           ; S75v32 - Provider
 02FF110: 301CFFF751FDEA79311C 004B9847,0xA0061611,C046   ; S75v32 - Subprovider
 02FF0F8: 00 FF                                           ; S75v32 - Subprovider in Profile0

@@ -11,6 +11,7 @@
 
 ЗЫ. Не все фонты умеют отображать украинские символы...
 */
+
 03EB6AC: 0xA08F9A1F 0xA0061601                           ; S75v42 - Provider
 0300978: 301CFFF751FDEA79311C 004B9847,0xA0061611,C046   ; S75v42 - Subprovider
 0300960: 00 FF                                           ; S75v42 - Subprovider in Profile0

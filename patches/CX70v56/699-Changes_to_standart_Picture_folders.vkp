@@ -13,6 +13,7 @@
 !!!Что бы попасть из папки Foto в папку Pic нужно в папке Foto нажать красную кнопку.
 
 */
+
 0A4E926: 740075007200650073 5C0046006F0074006F ;Pictures => Pic\Foto
 0A4E95E: 740075007200650073 5C0053007400750066 ;Pictures\Clip Gallery => Pic\Stuf\Clip Gallery
 0A4E9C2: 740075007200650073 5C0053007400750066 ;Pictures\EMS => Pic\Stuf\EMS

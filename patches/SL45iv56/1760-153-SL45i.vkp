@@ -13,6 +13,7 @@ Released: June 16, 2004
 
 Патч №153 с http://patch.oslik.ru/SL45_RU
 */
+
 0x39EA24: 7CED A4EC 
 0x39ECA4: F0C8F0D9 DAC7E0E2 
 0x39ECF2: DC4FB87E DAC7E8E2 

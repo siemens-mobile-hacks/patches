@@ -21,6 +21,7 @@ GPRS вкл\выкл (GPRS on\off)
 "Копировать SIM" при смене SIM ("Copy SIM" at SIM change)
 
 */
+
 163C36A: 0021 10BD ;"Все сигналы вкл" (All ringtones on)
 163C38A: 0021 10BD ;"Все сигналы выкл" (All ringtones off)
 163C3E0: 0021 10BD ;"Блокировка клавиатуры включена" (Keypad locked)

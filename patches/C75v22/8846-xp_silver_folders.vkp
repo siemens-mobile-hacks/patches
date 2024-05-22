@@ -16,6 +16,7 @@
 -Значёк папки при заполнении всей памяти телефона
   в стиле White Glass Folders из IconPackager
 */
+
 ;Picture 483
 00F80F3C: 0E0E8500 0F0F8800
 00F80F40: 0xA1015C38 0xA00C0280

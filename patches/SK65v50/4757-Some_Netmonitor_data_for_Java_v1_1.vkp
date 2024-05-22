@@ -15,6 +15,7 @@ return current+6 neighbours CID and LAC values in Java properties MPJCCIDS and M
 return current+6 neighbours RX values in Java property MPJCRXLS
 
 */
+
 #pragma enable old_equal_ff
 00D4000: F081BDE8FEB50268274B9A4239D10D1C
 00D4010: 2B4C264B4068984210D0254B98420CD0

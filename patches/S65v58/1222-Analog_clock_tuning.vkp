@@ -9,6 +9,7 @@
 Настраивается цвет часовой и минутной стрелки и их длина.
 English: You can adjust color and length of hour and minute arrows
 */
+
 16A2E78: 01 04 ; Цвет часовой стрелки (Hour hand color)
 16A2E18: 01 04 ; Цвет часовой стрелки вторая линия(для жирности)(Hour hand second line color (bold))
 16A2D68: 01 06 ; Цвет минутной стрелки (Minute hand color)

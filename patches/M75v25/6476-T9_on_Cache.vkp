@@ -11,6 +11,7 @@
 English:
 Move T9 bases on 1:\System\T9
 */
+
 ;My 2nd
 ;* T9 на MMC ** T9 on 1:\ *
 004A5C54: 0i12,00,'0:\\System\\T9' 0i12,00,'1:\\System\\T9'

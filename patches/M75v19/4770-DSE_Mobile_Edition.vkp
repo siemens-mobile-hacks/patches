@@ -13,6 +13,7 @@ If you want the standart function to be used - put "STDF" as a string.
 v1.2: + Added support for QWERTY-open
 
 */
+
 3297E4: 2C3A381CA16B73F1d6Eb 00488047,0xA0FC9001,C046
 0FC9050: FFFFFFFF 0xA07C9DE0
 

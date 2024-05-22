@@ -12,6 +12,7 @@ RUS: Ускоряет выполнение ява-приложений и ява
 
 ENG: Increases the speed of Java applications execution. There are some small bugs with softkeys redrawing.
 */
+
 0899E44: 02 01
 ;------------------------- end -------------------------
 

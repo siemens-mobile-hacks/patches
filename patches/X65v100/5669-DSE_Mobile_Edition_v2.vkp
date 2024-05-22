@@ -11,6 +11,7 @@ English:Allows keys to be rebound from the mobile phone.
 If you want the standart function to be used - put "STDF" as a string.
 v2: for MP v14
 */
+
 +FC0000
 #pragma enable old_equal_ff
 9000: 2C3A381CA16BFFB51E48C4DF019908D0

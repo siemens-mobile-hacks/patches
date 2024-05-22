@@ -16,6 +16,7 @@ patch adds an icon to iconbar at the top of the screen durring charging battery.
 when battery is full, different icon is used.
 dedicated to all who removed battery icon from mainscreen and uses only extrainfo;)
 */
+
 1711BA2: 1CF08EEA 26F07DFD
 
 +17386A0

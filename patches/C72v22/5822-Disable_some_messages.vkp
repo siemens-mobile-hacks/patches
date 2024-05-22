@@ -9,6 +9,7 @@
 /*
 
 */
+
 08DFF82: 0021 10BD ; "Все сигналы выкл" (All ringtones off)
 08DFF66: 0021 10BD ; "Все сигналы вкл" (All ringtones off)
 08dffd2: 0021 10BD ; Keypad locked

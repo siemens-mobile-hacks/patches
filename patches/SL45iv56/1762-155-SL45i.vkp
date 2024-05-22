@@ -13,6 +13,7 @@ Update: June 15, 2004 (by MacKam)
 
 Патч №155 с http://patch.oslik.ru/SL45_RU
 */
+
 0x18F54A: DEFFEB 620AD9 ;Меняет "Help" на "Write message" 
 0x18F6BE: AC02AB02 9F029F02 ; Меняет текст на строку 671 ("Write message")
 

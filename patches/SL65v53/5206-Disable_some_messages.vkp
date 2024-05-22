@@ -8,6 +8,7 @@
 /*
 
 */
+
 164B446: 0021 10BD ; "Все сигналы вкл" (All ringtones on)\
 164B466: 0021 10BD ; "Все сигналы выкл" (All ringtones off)/ © arsh0r
 164B4BC: 0021 10BD ; "Блокировка клавиатуры включена" (Keypad locked)

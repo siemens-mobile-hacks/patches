@@ -10,6 +10,7 @@
 ; + проверяет дату последнего экзита. Если дата экзита допустимая, то она устанавливается как начальная. Если не допустимая, то остаётся дата, заданная в патче.
 ; + check for valid date of last Exit is added. If Exit date is valid, then it is set as initial one. If not, patch configured date will be initial.
 */
+
 01A6805: 0002E212 3FB348EA ; check for valid date of last exit at bootscreen
 01F1984: 1F00A0E3 DD8647FA
 01F1991: 40 10

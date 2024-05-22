@@ -17,6 +17,7 @@ English:
 ; Now you can choose Native Menu with ###
 ; Or you set Keylock and then press ###
 */
+
 07D6438: 84F00BFB 08F5EAFB
 #pragma enable old_equal_ff
 04DEC10: FFB5134B98470130072818D021F3F3F9

@@ -12,6 +12,7 @@ RUS: Изменение скорости мигания курсора. С на�
 
 ENG: Change of speed of a blinking of the cursor. With adjustments has not understood yet.
 */
+
 04A1714: 2C01 8003
 
 ;------------------------- end -------------------------

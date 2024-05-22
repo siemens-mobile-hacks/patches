@@ -12,6 +12,7 @@
 2. memset заменен на ClearMemory.
 Скомпилено занова. Почему-то в конце добавились пару лишних байт(хз почему...)
 */
+
 ;PATCH_EVP_CIPHERINIT
 0x00E8EC34: 10B5029C002C02D0 004E3047BDC744A1
 ;PATCH_SSL_CIPHER_GET_EVP,SSL_CIPHER_GET_EVP__CODE_AREA

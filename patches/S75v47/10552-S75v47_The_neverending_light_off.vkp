@@ -8,6 +8,7 @@
 /*
 Хорош в сочетании с гарнитурой IMS-700 и патчем http://patches.kibab.com/patches/details.php5?id=10529
 */
+
 0288230: 032063F1BAEEF8E7 00488047,0xA13D3371
 
 #pragma enable old_equal_ff

@@ -12,6 +12,7 @@ RUS: Изменяет время подачи минутного сигнала 
 
 ENG: Changes time of submission of a minute signal during conversation.
 */
+
 0552B62: 00 37
 
 ;------------------------- end -------------------------

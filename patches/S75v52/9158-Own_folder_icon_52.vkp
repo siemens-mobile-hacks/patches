@@ -11,6 +11,7 @@
 Баг: Почему-то не отображаются иконки неграфических файлов
 
 */
+
 ;OWM_FOLDER_ICON_HOOK
 059D90C: 211C301C00F0DCFB 00488047,0xA08D85A5
 ;OWM_FOLDER_ICON_BODY,DATA_C

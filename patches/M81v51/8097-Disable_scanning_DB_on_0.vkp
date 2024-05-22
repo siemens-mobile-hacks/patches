@@ -13,6 +13,7 @@
 Теперь сканируется только то, что лежит в папке "MP3" на флешке (а там только музыка у меня - мп3, аас и т.д.) и "3GP" (для видео) на флешке
 Теперь не нужно ждать вечно, сканирование пролетает мгновенно (в зависимости от количества содержимого в этих 2-ух папках)
 */
+
 05BC8C8: 30 34; Disable checking and refreshing database of "0:/"
 05BC8C4: 000000 4D5033; check and refresh database of a folder "4:/MP3" (for sounds)
 05BC8CC: 000000 334750; check and refresh database of a folder "4:/3GP" (for videos)

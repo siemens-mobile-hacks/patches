@@ -9,6 +9,7 @@
 /*
 
 */
+
 05C233A: 00 01; statusbar pallete index
 05C2322: 00 01; battery bg pallete index
 ;------------------------- end -------------------------

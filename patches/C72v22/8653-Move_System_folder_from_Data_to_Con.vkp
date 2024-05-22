@@ -10,6 +10,7 @@
 /*
 
 */
+
 /*
 Патч переносит папку System с Data на Config. 
 [color:red]Надо перенести папку System на Config перед применением патча[/color].

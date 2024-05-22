@@ -8,6 +8,7 @@
 /*
 Плюс патча заключается в том, что убираем тупые надписи, взамен получая видимых подпунктов на один больше:)
 */
+
 071E0F4: F0EC08FA 0000A0E1; MediaPlayer->Options->Send
 07E5000: 2DD105FA 0000A0E1; MediaPlayer->Options
 07E3A40: 9DD605FA 0000A0E1; MediaPlayer->Options->New

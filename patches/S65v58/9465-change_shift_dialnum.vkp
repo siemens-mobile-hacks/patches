@@ -9,6 +9,7 @@
 /*
 Портерам: К сожалению на СГ нету третьей строчки
 */
+
 0169e714: 0E 0ixx ; первый сдвиг при числе цифр xx / first shift at xx digits
 0169E71C: 1C 0iyy ; второй сдвиг при числе цифр yy=2*xx / second shift at yy=2*xx digits
 

@@ -11,6 +11,7 @@
 Патч позволяет изменять положение различных элементов на главном экране
 English: Patch allows to change position of different elements of main screen
 */
+
 ;Net-Icons
 0299DEE: 0F yy ;canvas end y
 0299DF4: 02 yy ;canvas start y

@@ -13,6 +13,7 @@
 English:
 Replaces the patches * Mainscreen Positioning * and * change font size on mainscreen * compatible to * Extended IconBar v0.5 beta *
 */
+
 ; net icons
 02A7208: 00F0EBFA C046C046
 02A7210: 321C0221032000F0F7FA 00488047,0xA0FCA001,C046

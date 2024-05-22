@@ -12,6 +12,7 @@
 http://boba.su/index.php?option=com_idoblog&task=viewpost&id=41&Itemid=0
 
 */
+
 ;PATCH_GETPROPERTY_AFTER
 0x00A0FA28: 0700A0E1 E59DD9EB
 

@@ -8,6 +8,7 @@
 /*
 Плавненько включается...
 */
+
 08C9F7C: BEE6FA64 BEE6FA0A ; background
 08C9F80: 1EBEE664 00000034 ; contour
 08C9F84: 001E8264 FFFFFF24 ; stripe

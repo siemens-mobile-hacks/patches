@@ -35,6 +35,7 @@ v0.4
 v1.0
 - Work when repeat not selected (mp3 dialog close after last track)
 */
+
 ; reduce playlist size to 1 song on allocate 
 3BB82E: 26FC1E00 28C1CC00 
 ; reduce playlist size to 1 song on free 

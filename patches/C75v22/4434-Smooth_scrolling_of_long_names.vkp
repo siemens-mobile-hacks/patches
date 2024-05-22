@@ -9,6 +9,7 @@
 * Плавный скроллинг длинных названий и имен ** Smooth scrolling of long names *
 C75 SW22
 */
+
 04982D8: D007 1202 ; delay before start
 04982DC: 2C01 2A00 ; scrolling speed
 ;------------------------- end -------------------------

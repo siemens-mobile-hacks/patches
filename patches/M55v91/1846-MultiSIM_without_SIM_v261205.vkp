@@ -40,6 +40,7 @@
 Четвертая строка зарезервирована для хранения номера SMS-центра.
 Пока что находится на доработ
 */
+
 ;---- New block. Segment address:9F0000--------
 007F12C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 90257C02A0257C020005000010050000
 007F12D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 20050000300500004005000050050000

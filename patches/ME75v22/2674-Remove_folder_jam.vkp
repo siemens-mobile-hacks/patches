@@ -10,6 +10,7 @@
 English:Before applying the patch move folders "Applications" and "Games" from "0:\Java\jam\" to "0:\Java\", then delete the empty folder "jam"
 Compatible with patch "appz and games on MMC" (4:\ in this case) - S65
 */
+
 0493CF6: 0B 07
 0493D06: 5C006A0061006D 00000000000000
 0493D4A: 18 14

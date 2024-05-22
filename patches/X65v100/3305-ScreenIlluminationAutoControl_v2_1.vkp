@@ -13,6 +13,7 @@
 English:
 Brightness of illumination of the display depending on time (at each o'clock it is possible to establish the value)
 */
+
 #pragma enable old_equal_ff
 0FC4C00: 7FB51048FBF7FCFF0DD084B06846011C
 0FC4C10: 0831FBF7F5F96F4604B03F7A0137F25D

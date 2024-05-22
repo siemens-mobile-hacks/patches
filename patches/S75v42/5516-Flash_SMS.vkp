@@ -13,6 +13,7 @@
 English: Add a whitespace in the beginning of message, It should be a FlashSMS
 Be sure to set "Middle font" in Messages preferences.
 */
+
 0E370E4: 201CB168 63F694FE
 
 #pragma enable old_equal_ff

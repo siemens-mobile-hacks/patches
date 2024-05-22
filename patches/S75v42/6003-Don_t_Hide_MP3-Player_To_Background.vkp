@@ -15,6 +15,7 @@ English:
 Player won't go to background automatically
 Besides, keypad won't be automatically locked
 */
+
 029A19C: 50F18EEE CCF538FD
 
 #pragma enable old_equal_ff

@@ -11,6 +11,7 @@ mainscreen just like a Flash SMS or like a Status report. rolling news!
 When using any SMS marked as unread, you have to activate it from the menu 
 "Cell Broadcast" -- "Auto Display" -- "Only new". 
 */
+
 0x2F9F4C: A8C02D1C FAE0B0CE 
 0x40CEB0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF A8C02D0988C0DAA3924098C04840CC00 
 ; change last CC00 to 3D01 = only on keylock 

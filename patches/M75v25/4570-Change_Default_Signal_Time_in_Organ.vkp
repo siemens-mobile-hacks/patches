@@ -13,6 +13,7 @@ English:
 All entries with 15 min will have 0 min when viewing
 Changes signal time: 15 min -> 0 min
 */
+
 057E94C: 311C201C 23F728FD
 #pragma enable old_equal_ff
 04A23A0: 08B5B37D1F2B01D10123B375311C201C

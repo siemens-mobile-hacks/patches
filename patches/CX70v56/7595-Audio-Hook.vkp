@@ -9,6 +9,7 @@
 /*
 Патч нужен для работы mp3-плееров на эльфах
 */
+
 011B7380: 3880BDE8 0xEF7D2C,0xEA
 
 #pragma enable old_equal_ff

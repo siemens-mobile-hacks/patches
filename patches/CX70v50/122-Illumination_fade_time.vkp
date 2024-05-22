@@ -10,6 +10,7 @@
 Задержка гашения подсветки.
 (03E8h=1000 ms -> swap bytes, 1388=5000 ms etc 0000 leads to instant fade-in and fade-out) 
 */
+
 0BD0BB8: B80B E803 ;1 sec
 ;------------------------- end -------------------------
 

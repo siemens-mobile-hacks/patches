@@ -9,6 +9,7 @@
 /*
 Sometimes the settings made by backlight duration adjustment patch are overwritten. You can set a default value here.
 */
+
 12E26B7: 0F 0i40 ; (seconds)
 ;------------------------- end -------------------------
 

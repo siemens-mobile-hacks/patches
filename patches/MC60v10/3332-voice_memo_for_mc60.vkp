@@ -10,6 +10,7 @@ English:Unhide voice memo(dictaphone) option under extras like in M55. Records v
 
 Would be great if could be added as extra option not instead countdown, no idea...
 */
+
 ;Countdown - voice memo, can be used while call in progress for wiretap
 00358CD8: 4D065E02 7E007F00
 0005CFF4: F0CEF0DF FA2CFE4D

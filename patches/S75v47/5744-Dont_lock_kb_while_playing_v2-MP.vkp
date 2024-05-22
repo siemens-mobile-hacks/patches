@@ -16,6 +16,7 @@ Now this patch can be turned on/off in Master-midlet
 Small bug: it's also impossible to lock keyboard manually by long #
 
 */
+
 03ECCF4: 0xA09047CB 0xA0066C11
 ;------------------------- end -------------------------
 

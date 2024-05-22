@@ -18,6 +18,7 @@ Create folder 0:\Misc\Shots
 If patch disabled - Lighter works as usually
 If patch enabled - instead of Lighter works ScreenShooter
 */
+
 ;Run ScreenShooter instead of Lighter
 0424878: 0xA032EBB7 0xA0067301
 00673F8: 0xFFFFFFFF 0xA032EBB7

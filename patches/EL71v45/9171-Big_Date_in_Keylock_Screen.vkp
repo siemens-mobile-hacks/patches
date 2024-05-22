@@ -16,6 +16,7 @@ In addition to benj9's patch "Big Time in Keylock Screen"(ID8059).
 Patch replaces messages “Press (|) or open slider to release” and “Press & hold ‘#’ to release”. They can be added to picture number 640. 
 
 */
+
 066BA4B: 9993F100EB 9859F76FFD
 0853404: 04 00 ; font
 08533FE: AD00 6E00 ; отступ сверху, y

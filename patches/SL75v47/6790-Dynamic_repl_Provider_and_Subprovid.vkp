@@ -14,6 +14,7 @@ UseIfNoTMO=08 - ставить нельзя! Будет виснуть теле�
 
 
 */
+
 03F09C4: 0xA08FDF1B 0xA0061601				  ;- Provider
 030058A: 301CFFF72fFDEA79311C  C046004B9847,0xA0061611    ;- Subprovider
 0300572: 00 FF						  ;- Subprovider in Profile0

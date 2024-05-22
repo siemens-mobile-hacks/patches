@@ -10,6 +10,7 @@
 У кого на этом патче(id 10217) тел делал тыц ставте этот
 
 */
+
 ;ICODE
 #pragma enable old_equal_ff
 0x0155EC10: 0400A0E1CCBD11FA0400A0E1996500EB

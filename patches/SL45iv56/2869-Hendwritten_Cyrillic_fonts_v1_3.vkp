@@ -26,6 +26,7 @@ v1.1 (06.04.06) - many fixes
 v1.2 (16.04.06) - wight of letter "л" in Extra small font descreased in 1 pixel (offset: 004813D3)
 v1.3 (06.05.06) - fixed letters in small fonts
 */
+
 ; *** Рукописні кириличні шрифти v1.3 ***
 
 ;SIEMENS CE 5.3 build 226 vkp export, 06.04.2006 at 21:01:31

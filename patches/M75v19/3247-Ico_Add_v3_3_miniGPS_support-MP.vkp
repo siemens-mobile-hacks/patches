@@ -12,6 +12,7 @@ featuring: charging icons, profile icons, vibra on/off, animation, netmode, mini
 
 Полное описание внутри патча тела на английском.
 */
+
 ; Если хотим иконки слева от стандартных
 02A8DD8: F4F15CECF4F164EE0028 00488047,0xA0FDB811,C046 ; M75v19
 0FDBA88: FFFFFFFFFFFFFFFF 0xA049D694,0xA049DAA8 ; M75v19

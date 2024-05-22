@@ -17,6 +17,7 @@ Y-координата процентов меняется, исходя из д
 Показывает проценты на прогрессбарах, а также данные о принимаемых и передаваемых файлах
 English:Shows percents on progressbars and info on files being sent/received
 */
+
 045A9B4: 4C702EA000000000 85F0FBA075F0FBA0
 04654DC: 0000000000000000 61F0FBA051F0FBA0
 

@@ -8,6 +8,7 @@
 /*
 Start elf on key shortcut. With DSE set selected key on RECD_DELETERECD and edit path to elf on patch.
 */
+
 009445A4: 25F98EA0 0xA00B9001 ;RECD_DELETERECD -> 0xA00B9001 = Mp3 Player
 
 +00B0000 

@@ -10,6 +10,7 @@ RU: Запрашивается отчёт о доставке СМС тольк�
 
 EN: SMS status report is requested only for last segment of concatenated SMS
 */
+
 0E2EBE6: 20339974 CDF144ED
 
 #pragma enable old_equal_ff

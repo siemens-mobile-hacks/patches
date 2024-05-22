@@ -8,6 +8,7 @@
 /*
 
 */
+
 06C42A: 2D 0D ; no register tone to the net
 4CE5D6: 2D 0D ; no long sound in Siemens start up
 52236A: 2D 0D ; no long sound in Siemens shutdown

@@ -26,6 +26,7 @@
 
 ; known probs: after shutdown started, avoid keypresses.
 */
+
 0737EC2: 010602D5FFF793FF10BD 014CA04710BD0FF0FDA0 ; SK65v50
 
 #pragma enable old_equal_ff

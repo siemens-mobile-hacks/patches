@@ -10,6 +10,7 @@ RU: Запрашивается отчёт о доставке СМС тольк�
 
 EN: SMS status report is requested only for last segment of concatenated SMS
 */
+
 ;Один отчёт о доставке СМС для составного СМС
 ;Single SMS status report for concatenated SMS
 ;E71v45

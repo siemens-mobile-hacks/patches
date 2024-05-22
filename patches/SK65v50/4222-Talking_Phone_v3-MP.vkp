@@ -17,6 +17,7 @@ Set this shortcut by help DSE to any key, if you press this key - current time w
 You should download those files to 0:\Sounds\Time: http://avkiev.kiev.ua/Siemens/Patches/time.rar
 DSE: http://www.gsm-multifund.com/mod/DSE.r
 */
+
 ;1. Shortcut
 045E9CC: "ELSE_COUNT_DOWN",00,4B8931A0 "ELSE_COUNT_DOWN",00,0xA0FC3001 ; SK65v50 - ELSE_COUNT_DOWN
 ;045ED0C: "ELSE_REMOTESYNC",00,838931A0 "ELSE_REMOTESYNC",00,0xA0FC3001 ; SK65v50 - ELSE_REMOTESYNC

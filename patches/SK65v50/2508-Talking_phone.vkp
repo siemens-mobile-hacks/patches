@@ -17,6 +17,7 @@ You should download those files to 0:\Sounds\Time: www.asterix.com.ru/download.p
 DSE: http://allsiemens.com/soft/download.php?p=other&file=DSE.rar
 
 */
+
 045ECFC: "ELSE_REMOTESYNC",00,838931A0 "ELSE_REMOTESYNC",00,215D19A0 ;Entry for SpellTime
 04F3E3E: 7BF014EB A1F46FFF ;Говорить время вместо мелодии будильника (Talk time instead of Alarm)
 #pragma enable old_equal_ff

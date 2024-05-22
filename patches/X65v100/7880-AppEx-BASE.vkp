@@ -47,6 +47,7 @@ C4:GetBuffer
 129:__thumb void  FreeWS
 16C:__arm int str_2ws
 */
+
 ;PATCH_JUMP,CODE,DATA_C
 #pragma enable old_equal_ff
 0x00FC5800: 714642310078022808D07869800006D5

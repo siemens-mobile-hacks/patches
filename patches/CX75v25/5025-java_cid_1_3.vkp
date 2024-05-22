@@ -12,6 +12,7 @@
 
 CID, LAC, RX, TA, TXPWR, CAP
 */
+
 ; * Some Netmonitor data for Java v1.3 *
 ; CX75v25
 ; (c) ~Jhellico

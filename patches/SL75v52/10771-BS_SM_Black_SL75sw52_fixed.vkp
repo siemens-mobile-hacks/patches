@@ -9,6 +9,7 @@
 /*
 Загрузочный экран Siemens Mobile на черном фоне с исправлением фона во время зарядки батареи выключенного телефона
 */
+
 ; BootScreen Siemens Mobile Black V2 Patch for SL75v52
 ; (c) benj9
 ; (r) RainMaker

@@ -35,6 +35,7 @@ E4:FreeRAM
 
 4 байта по адресу FreeRAM+0x7C
 */
+
 ;TYPE_SAVE,CODE
 #pragma enable old_equal_ff
 0x00803000: 10B5C7DFE48010BCC467201C00BD0000

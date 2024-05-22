@@ -11,6 +11,7 @@
 ;Необходим для вызова библиотечных функций из перемещаемых патчей
 ;It needs for calling Library-function from dis-patches
 */
+
 13A4870: 2C0000EA 80F19FE5          ;/ S75v47
 13A49f7: A100FFFFFF 00,0xA0078001   ;\ S75v47
 

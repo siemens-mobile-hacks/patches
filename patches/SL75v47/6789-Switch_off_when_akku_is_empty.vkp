@@ -21,6 +21,7 @@
 ;For switching on mobile with empty battery - use safe-mode (press and hold # during start of mobile)
 
 */
+
 01A968C:  7C021FE5100090E5EE2B02EA 00009FE510FF2FE1,0xA0066301
 ;------------------------- end -------------------------
 

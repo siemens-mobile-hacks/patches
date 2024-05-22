@@ -14,6 +14,7 @@
 ;Proper CSM assigned to Native Menu (one can now switch to and from in XTask).
 
 */
+
 ;CreateGUIWithDummyCSM call & other stuff
 033356E: B8F0AAEC 00210AE0
 0333582: 00210020C5F67DFC002802D0 BBF07AE880BDB8F040EEFEBD

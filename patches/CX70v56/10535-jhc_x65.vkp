@@ -18,6 +18,7 @@ C помощью патча можно регулировать JavaHeap и во
 или
 4:\ZBin\etc\JHC.bcfg (S65)
 */
+
 ;PATCH_JAVAHEAP_ALLOC
 0x00D409CC: 7CDDFEEB A40D0AEB
 ;CODE,DATA_C

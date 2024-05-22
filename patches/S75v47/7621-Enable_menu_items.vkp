@@ -13,6 +13,7 @@
 (пока не работает) в меню настроек индикация. Нужно заменить
 файл set_display.fs в Config/japp/FlexMenu на приложенный
 */
+
 041F404: 93 9B ; backlight_duration
 0420204: 7405 F809 ; contrast, don't really work
 ;------------------------- end -------------------------

@@ -22,6 +22,7 @@
 
 графика в прикреплённом архиве
 */
+
 002C198E: DA4C0C13 DA835004
 #pragma enable old_equal_ff
 00630450: DA4C0C13D7401200F2F16026F6F10EFE

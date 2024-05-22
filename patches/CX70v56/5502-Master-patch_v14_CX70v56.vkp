@@ -13,6 +13,7 @@ This patch is made to control other patches settings from mobile without connect
 !Перед запуском нужно создать папку 0:\Misc\Patches\PTC\
 
 */
+
 ;Run Scaner on startup
 1714244: FF20 BEDF
 

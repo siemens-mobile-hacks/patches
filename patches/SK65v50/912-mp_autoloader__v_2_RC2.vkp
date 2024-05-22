@@ -19,6 +19,7 @@
 
 Архив с мидлетом приложен к патчу.
 */
+
 #pragma enable old_equal_ff
 02A6866: 1BF0CBFE 40F7CBFB
 

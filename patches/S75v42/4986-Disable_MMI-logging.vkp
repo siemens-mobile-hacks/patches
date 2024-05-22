@@ -10,6 +10,7 @@
 Патч отменяет логгинг MMI, что немного увеличивает скорость работы.
 English:Patch disables MMI logging, that increases phone operation speed.
 */
+
 01F8F7A: 041C 70BD
 ;------------------------- end -------------------------
 

@@ -14,6 +14,7 @@
 ; Хорош вместе с патчем Всегда запускать помощника при включении
 
 */
+
 ; * Don't SHOW Startup Assistant *
 ; but let it work. good together with "* Always Do Startup Assistant *"
 

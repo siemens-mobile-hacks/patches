@@ -8,6 +8,7 @@
 /*
 Этот патч предназначен для работы с программой TCGSNDebuger от ACiD. Работает с урезанным ленгпаком.
 */
+
 ;AT+CGSN
 ;Display IMEI, as usual
 

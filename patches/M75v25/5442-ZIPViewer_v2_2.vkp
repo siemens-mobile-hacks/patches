@@ -13,6 +13,7 @@
 Заменяет форматы PDF, DOC или XLS на ZIP, RAR и 7Z и позволяет открывать их сразу из Card-Explorer! Чтобы патч работал нужно создать папку X://java/jam/Applications/ZipViewer/ (X://java/jam/Applications/RarViewer/)поместить любой разархиватор Zip (Rar, 7Z) и переименовать в ZipViewer.jar (RarViewer)!
 В аттаче исходники для графики + выполненные в едином стиле MobilZip-x75 (adapted by DJ) и MobilRar-0.7c (© cbn)
 */
+
 ;http://djfromredsys.wen.ru/Other/MobileZip-x75.jar - Открывает Zip-архивы сразу из кард-эксплорера.
 ;http://www.mobilerar.narod.ru/MobileRar.jar - Открывает Zip/Rar/7z-архивы сразу из кард-эксплорера (с версии 0.7c).
 ; Для использования разных программ для zip и rar закомментировать соответствующие строки.

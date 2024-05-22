@@ -11,6 +11,7 @@
 English:Shows percents on progressbars and info on files being sent/received
 
 */
+
 #pragma enable old_equal_ff
 0FC7D00: FFB55848C4DF01D052214170FFBDC046
 0FC7D10: FFB5032904D15348C4DF01D000214170

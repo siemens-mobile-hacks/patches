@@ -11,6 +11,7 @@
 English: Disable animation in Native Menu.
 For S68 it means there will be no black shape around icons.
 */
+
 ; I've just deleted some code to force stop of animation. Looks and works fine as it seems.
 
 040611C: 8703 0000 ;Address Book

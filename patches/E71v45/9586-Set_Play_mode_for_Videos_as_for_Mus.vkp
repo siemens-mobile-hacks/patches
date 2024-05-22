@@ -9,6 +9,7 @@
 В режиме "Перемешать" видео воспроизводится в режиме "Повторить все" 
 In "Shuffle" mode videos play in "Repeat all" mode
 */
+
 078F3EF: 01 E1
 078F3F3: 02 E2
 078F3F7: 02 E2

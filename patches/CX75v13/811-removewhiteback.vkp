@@ -13,6 +13,7 @@ RUS: Убирает белый фон из под выбранной иконк�
 ENG: Cleans a white background from under the chosen icon in the native-menu, it is looked thus much more pleasantly. 
 But there is a is dirty-grey color of substrates icons, here of it to get rid...
 */
+
 0956494: 00 FF
 0956538: 9EF645FF 00280028
 

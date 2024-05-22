@@ -17,6 +17,7 @@ ENG: Draws as many as you like canvas regions (clears the background) before exe
 - Configure in which profiles ExtraInfo-Patch is active
 - Have one more pass-thru call for another follow-up patch
 */
+
 /*
 1) Установите патч * Дополнительная информация на главном экране v3\v4 *
 2) Определитесь с ключом профилей - в каких профилях вызывать "Доп.инфо"

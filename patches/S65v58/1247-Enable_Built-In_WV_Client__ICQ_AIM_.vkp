@@ -13,6 +13,7 @@
 English: Patch enables built-in WV client (Menu 5-2)
 To use it, register at yamigo.com and take settings there.
 */
+
 0B24070: 66 78
 ;------------------------- end -------------------------
 

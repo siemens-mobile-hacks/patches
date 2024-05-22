@@ -12,6 +12,7 @@ MP+FL!
 2. Здесь ничего не выбирать :), идёт замена вызова PlaySound (т.е. будильника) на проговаривание времени
 3. Должен быть установлен патч 886 , или закомментируйте строки после  3. Keylock
 */
+
 ;1. Shortcut
 092E910: "ELSE_COUNT_DOWN",00,9B9C8DA0 "ELSE_COUNT_DOWN",00,0xA0FC3001 ; S65v58 - ELSE_COUNT_DOWN
 ;092EC50: "ELSE_REMOTESYNC",00,1F978DA0 "ELSE_REMOTESYNC",00,0xA0FC3001 ; S65v58 - ELSE_REMOTESYNC

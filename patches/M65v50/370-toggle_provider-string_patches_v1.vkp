@@ -15,6 +15,7 @@ Toggles "MiniGPS" and "Dynamic Replacing of Provider" Patches on-the-fly
 for people don't like the miniGps0.8 to crash.
 Please read carefullry instructions inside patch! Don't forget about dependencies!
 */
+
 ;*** Toggle ProviderString-Patches v1 ***
 ;*** Переключение между патчами замены имени оператора v1 ***
 ;M65v50 

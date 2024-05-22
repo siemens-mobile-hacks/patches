@@ -9,6 +9,7 @@
 /*
 
 */
+
 ;* Подсветка с шагом 5% ** Setup illumination by 5% * © SiNgle, § Smelter, ® AsteriX
 03B9CF4: 0A 05 ; 05 или любая цифра в HEX
 03B9D04: 0A 05 ; 05 или любая цифра в HEX

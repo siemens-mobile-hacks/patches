@@ -17,6 +17,7 @@ Small bug: it changes sounds so if sounds are off we don't have vibra.
 
 Release: May 28,2006
 */
+
 230256: 2C 10 ;18=3x, 10=2x, 20=4x (кол-во вибраций) (numbers of vibra)
 230258: DAC31400 DAC36E02
 ;------------------------- end -------------------------

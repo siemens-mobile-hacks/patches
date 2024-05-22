@@ -39,6 +39,7 @@
 6) Put the body's address to in little endian sex to ThirdPatch
 7) Enable the "activate ThirdPatch"
 */
+
 02A8850: 57F7D6F8 051C0020 ;отмена энтрипойнта "Доп.Инфо" (undo ExtraInfo-EntryPoint)
 02A8880: E3F15EE9 57F73EF8 
 #pragma enable old_equal_ff

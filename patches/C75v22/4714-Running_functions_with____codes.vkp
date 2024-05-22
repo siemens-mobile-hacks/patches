@@ -9,6 +9,7 @@
 /*
 
 */
+
 /*
 Patch allows to bind function to *#...# code.
 This way we can save shortcut entries like ELSE_PUSHTOTALK or ELSE_REMOTESYNC normally used by some patches.

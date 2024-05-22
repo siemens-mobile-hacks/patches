@@ -20,6 +20,7 @@ It uses the Master-Midlet written by chaos (http://chaos.allsiemens.com/download
 Every patch compatible with Master-Patch has its own config-section. You don't need to edit it. All settings are changed only from the mobile phone.
 !Before installing the patch create the folder 0:\Misc\Patches and install the midlet.
 */
+
 +0FC0000
 #pragma enable old_equal_ff
 0C00: BDB5FFF78DFD3D686B1C1AD57C68FFF7

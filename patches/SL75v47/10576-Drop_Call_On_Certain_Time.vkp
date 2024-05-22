@@ -11,6 +11,7 @@
 тестим врезка 
 копирайтам просьба отделять сразу тело патча
 */
+
 09B0CEA: 4CF7EBFF01300004000C C046,0049D6AB,0xA0070001
 ;привязка
 00700E0: FFFFFFFFFFFFFFFF 004F8F5B,0xA08FDCC5  ; 072: SetCurrentSecondOfCall

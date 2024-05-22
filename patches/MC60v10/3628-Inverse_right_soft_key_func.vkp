@@ -13,6 +13,7 @@ English:Short press of right softkey -> execute
 Long press to change softkey function
 
 */
+
 000D3EA4: CE3F 0243
 000D4112: 0243 CE3F
 

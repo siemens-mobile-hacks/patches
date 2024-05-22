@@ -18,6 +18,7 @@ Not compatible with To make foto with any digital key v1
 Max rec time indicator shows shit, ignore it
 Tested with Save videos and photos on the MMC-card
 */
+
 08D83E7: 00 FF
 097EF64: 3300000A 920052E3
 ;------------------------- end -------------------------

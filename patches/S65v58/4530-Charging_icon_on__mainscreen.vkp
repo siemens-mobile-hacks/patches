@@ -10,6 +10,7 @@
 Патч добавляет иконку в панель иконок вверху экрана во время зарядки. По завершении зарядки используется другая иконка
 English: Patch adds an icon to iconbar at the top of the screen during charging battery. When battery is full, different icon is used
 */
+
 1698DBA: 1BF048EF 27F001FA
 #pragma enable old_equal_ff
 16C01C0: 00B507480078002807D00649022800DD

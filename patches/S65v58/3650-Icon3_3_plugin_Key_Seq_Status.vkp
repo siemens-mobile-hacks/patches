@@ -12,6 +12,7 @@ if use as iconbar icon, disable vElse!
 Проверьте стоит ли строка
 0FDB830: 04 02 ; universal icon ptc's are from 1C01.ptc to 1C0?.ptc.
 */
+
 #pragma enable old_equal_ff
 0FDC000: E4D3C2B1,0x00001C02,0000000000000000,"\
 {patch=Icon-KeySeq ver=3.3 cp=benj9 id=1C02}","\

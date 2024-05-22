@@ -10,6 +10,7 @@ RUS: Переносит папки Sms archive и Text Module на диск Conf
 
 ENG: Transfers folders Sms archive and Text Module on disk Config. Probably for fans to hide the exchange of messages.
 */
+
 004A55BC: 30 32
 004A55DA: 30 32
 004A55EA: 30 32

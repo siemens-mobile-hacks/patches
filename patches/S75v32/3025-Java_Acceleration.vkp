@@ -10,6 +10,7 @@
 Известные проблемы: Исчезновение софт-кнопок, при зуме картинок с разрешением по вертикали или горизонтали меньше, чем в два раза больших размеров дисплея, нужно прокрутить один раз картинку. Возможны и другие глюки.
 English: Patch speeds up java removing one draw cycle. There are some known unwished effects. The main is that soft keys disappear sometimes.
 */
+
 0970D74: 6549 0121
 ;------------------------- end -------------------------
 

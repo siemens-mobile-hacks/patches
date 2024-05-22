@@ -10,6 +10,7 @@
 По желанию координаты выставляйте сами
 Картинки для патча брать здесь-http://www.sugardas.lt/~tick/c75v22_patches/lani_pic.vkp
 */
+
 ;(!) GraphPatchManager v3
 +110000
 #pragma enable old_equal_ff

@@ -13,6 +13,7 @@ English:
 Patch may redirect signals from dynamic light to display or keypad.
 User can set any combination for output (i.e. dynamic light + keypad)
 */
+
 #pragma enable old_equal_ff
 0FC3300: 0E1CFEB502281AD17FB40E48FDF778FC
 0FC3310: 77787FBC13D00120384204D000208EB4

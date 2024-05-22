@@ -10,6 +10,7 @@
 /*
 Транслит вызывается по "Опции" - "Транс" (бывший "Удалить текст" ) в редакторе SMS.
 */
+
 04A2610: FFFFFFFFFFFFFFFFFFFFFFFF 08B5014B984708BD01F11FA0  
 04A2620: FFFFFFFFFFFFFFFFFFFFFFFF 08B5014B984708BD15F11FA0 
 057205C: B7F0A6EA 30F7E0FA         ;  пункт Опции - Удалить текст

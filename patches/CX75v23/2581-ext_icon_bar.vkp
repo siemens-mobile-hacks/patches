@@ -11,6 +11,7 @@
 
 Undo earlier IconBar coordinates patches
 */
+
 +0x110
 02A8C04: 85 45 ;disable 1st check
 02A8C06: AD 6D

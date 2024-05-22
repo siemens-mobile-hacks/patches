@@ -13,6 +13,7 @@
 English: Need FAM3.2 and BFA2.2 (or BFA2.2b) patches
 Apply after EBIN, don't undo EBIN! 
 */
+
 ; For original BFA2.2 
 0x447388: E085E004FAE4F87F F0ECF0FDFAE49849 
 ; For BFA2.2b - readressed to 0x4F3640 

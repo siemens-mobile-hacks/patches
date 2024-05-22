@@ -12,6 +12,7 @@ RUS: Изменение параметров вывода на экран flash-
 
 ENG: Change of parameters of a conclusion to the screen flash-sms.
 */
+
 04AA960: 72 92 ; Y позиция Flash-SMS
 04AA9A0: 72 92
 04AA954: 07 08 ; изменить шрифт Flash-SMS - 02-08 (Change Flash-SMS font)

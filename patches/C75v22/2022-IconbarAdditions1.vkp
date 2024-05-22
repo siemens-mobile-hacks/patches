@@ -21,6 +21,7 @@ English:featuring "Charging icon on mainscreen"
 monitorIcons: create your own iconbar icon by assigning values of a ram byte to icons
 ChargingIcons: shows an icon by charging, another by charging finished
 */
+
 02A8AFC: 19F078FE1AF098F9FF28 0048804701C40EA1C046
 10EC4AC: FFFFFFFF 0xA02C2E35
 

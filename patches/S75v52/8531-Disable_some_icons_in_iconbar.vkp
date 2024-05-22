@@ -10,6 +10,7 @@
 Нужен для скрытия ненужных иконок в иконбаре
 (?)-не точно
 */
+
 029D1F8:FFF770FF C046C046 ; HasNewMessage(?)
 029D22E:FFF755FF C046C046 ; DownloadInBrowser(?)
 029D2B2:FFF713FF C046C046 ; BlueTooth

@@ -15,6 +15,7 @@
 
 
 */
+
 08e71e6: 00 01 ; Enable bluetooth power saving
 08e71f6: 01210903 08210902 ; Set to 2.56ms
 08e7258: 00 01 ; Block AFH chnl

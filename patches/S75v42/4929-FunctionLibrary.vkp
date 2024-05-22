@@ -22,6 +22,7 @@ For getting in R0 address of variable RamCap you sould write "SWI 200". In any m
 After porting this patch to some firmware - in most cases for porting another patches you just need to change a EntryPoint.
 For porting this patch use Smelter - Tools - Function library.
 */
+
 ; S75 v42 lg3 - Patch made by "Smelter" © avkiev
 
 ; http://avkiev.kiev.ua/Siemens/Smelter/Smelter.htm

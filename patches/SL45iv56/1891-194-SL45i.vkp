@@ -14,6 +14,7 @@ Updated: Aug 1, 2004 (v1.1)
 
 Патч №194 (обновление 1) с http://patch.oslik.ru/SL45_RU
 */
+
 0x02D5C0: E6FCBB00 DB00CC00
 
 0x3874E2: E6F61D00 DAE4C049

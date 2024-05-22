@@ -15,6 +15,7 @@ while writing sms. Instaead it dispalys the current time.
 Created: 17.07.04 (by vBart)
 Updated: 14.03.2005 (v1.2 by FROSTER)
 */
+
 18CF82: 8302 A001 
 18CF7C: 8101 A001 
 3a7c30: DAEC50FB CC00CC00 

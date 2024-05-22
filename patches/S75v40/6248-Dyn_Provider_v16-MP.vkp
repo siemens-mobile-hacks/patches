@@ -11,6 +11,7 @@
 
 ЗЫ. Не все фонты умеют отображать украинские символы...
 */
+
 03ED368: 0xA08F8867 0xA0061601                           ; S75v40 - Provider
 0300290: 301CFFF751FDEA79311C 004B9847,0xA0061611,C046   ; S75v40 - Subprovider
 0300278: 00 FF                                           ; S75v40 - Subprovider in Profile0

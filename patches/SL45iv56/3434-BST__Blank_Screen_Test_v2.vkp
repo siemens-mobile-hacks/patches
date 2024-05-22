@@ -31,6 +31,7 @@ v2 - modified for new turning off LCD method
 Release: November 12, 2003
 Modified: May 12, 2006
 */
+
 0x3B36C0: DAE5024B FAC7C2DD 
 
 0x27DDC0: FFFFFFFFFFFFFFFF FFFFD7403500F3F8 

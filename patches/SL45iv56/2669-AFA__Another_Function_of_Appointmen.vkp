@@ -10,6 +10,7 @@ English: Release: 21-11-2003
 Updated by and China people (fix for two or more epoints corrected, attend unicode text) 
 Updated by lbuczko 18-03-2006 (fix for short wibra and melody when you use AFA) 
 */
+
 0x3CADD4: E6F8A000 FAC730DD 
 0x3D5274: DAC3E801 DAC7C8DD 
 

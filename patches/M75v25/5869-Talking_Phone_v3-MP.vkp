@@ -18,6 +18,7 @@ Set this shortcut by help DSE to any key, if you press this key - current time w
 You should download those files to 0:\Sounds\Time: http://avkiev.kiev.ua/Siemens/Patches/time.rarDSE: http://www.gsm-multifund.com/mod/DSE.rar
 
 */
+
 ;1. Shortcut
 4B19B8: "ELSE_COUNT_DOWN",00,296232A0 "ELSE_COUNT_DOWN",00,0xA0FC3001
 ;4B1D2C: "ELSE_PUSHTOTALK",00,C16C32A0 "ELSE_PUSHTOTALK",00,0xA0FC3001 

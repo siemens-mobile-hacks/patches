@@ -14,6 +14,7 @@ v2: for MP v14
 English:Allows keys to be rebound from the mobile phone.
 If you want the standart function to be used - put "STDF" as a string.
 */
+
 03297E4: 2C3A381CA16B73F1B4EC 00488047,0xA0FC9001,C046
 ;------------------------- end -------------------------
 

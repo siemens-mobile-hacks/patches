@@ -20,6 +20,7 @@ Property                   Value
      MPJCGPRS         current GPRS traffic (bytes)
 
 */
+
 #pragma enable old_equal_ff
 00D4000: F081BDE8FEB50268344B9A4254D10D1C
 00D4010: 3C4C334B406898421CD0324B984218D0

@@ -8,6 +8,7 @@
 /*
 Зелёная кнопка при наборе SMS - смена языка: Русский -> English или English -> Русский 
 */
+
 24C096: B80B F401 ;время показа сообщения: "Язык ввода: -", в мс
 2AFFDE: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF D7402D00F2FC6A3A48C02D02E00C0D02
 2AFFEE: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E6FC1100D7402D00F6FC6A3ADAF4FEB6

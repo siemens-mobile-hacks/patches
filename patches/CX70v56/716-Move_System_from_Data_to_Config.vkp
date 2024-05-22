@@ -15,6 +15,7 @@
 EN:
 This patch changes location of System folder from \Data to \Config. Note that you should move System by your own to Config before applying this patch!
 */
+
 0A4EE62: 30 32
 0A4EE76: 30 32
 0A4EE82: 30 32

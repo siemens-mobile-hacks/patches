@@ -12,6 +12,7 @@ Released: June 24, 2004
 
 Патч №157 с http://patch.oslik.ru/SL45_RU
 */
+
 0x289010: E6001100 DAC740E3 
 0x38E1B4: FAC8220F FAC76EE3 
 

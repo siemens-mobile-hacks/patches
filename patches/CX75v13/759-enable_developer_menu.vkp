@@ -11,6 +11,7 @@
 
 EN: Includes an opportunity of an input in the Developer menu. There is a small subtlety: entrance in the menu is not on pressing "#" or "*" and being in MainMenu as was earlier - you will have to set up call on the hotkey (1..9 or soft-keys): when you change its action, one of offered variants will be Develop. menu. Well and as always, I warn, that changes of parameters in the Developer menu can badly affect stability of work of phone.
 */
+
 0830A10: 040090E5 0000A0E3
 ;------------------------- end -------------------------
 

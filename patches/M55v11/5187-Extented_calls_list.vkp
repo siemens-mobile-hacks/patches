@@ -9,6 +9,7 @@
 /*
 
 */
+
 0D5D7A: DA6FECB8 DA5500D0
 ;1-ое - набранные номера, 2-ое неотвеченные, 3-ие - принятые.
 035D000: FFFFFFFFFFFFFFFFFFFFFFFF DA6FECB8DA6FF0B8FA6F8CB8

@@ -22,6 +22,7 @@ It is auxiliary patch. It consists of 200 most useable function, 28 variables an
  It is needed for many other patches, whitch are written using "Master-Patch+Functon Library" concept (c) 1nvisible, avkiev
 
 */
+
 +0FC0000
 #pragma enable old_equal_ff
 000: 004F3847,0xA0B20D3B ; f000: GetDateTimeOld 

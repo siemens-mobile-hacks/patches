@@ -22,6 +22,7 @@ compatible to * Extended IconBar v0.5 beta *
 
 ВНИМАНИЕ! Пока что есть проблемы несовместимости с патчем на Увеличение фото при входящем звонке!
 */
+
 ; net icons
 02A8DB0: 3AFB C046 ; clear old canvas call
 02A8DB6: 321C0221032000F046FB C046,00488047,0xA0FCA001

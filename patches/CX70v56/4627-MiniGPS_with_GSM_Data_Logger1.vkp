@@ -26,6 +26,7 @@ English:
 Example: you can create only two files - at work and at home, in other cases provider name will be shown.
 - You can also specify default action and default text, which will be used for the new files creation. First variable - CID, the other one - LAC.
 */
+
 173313C: 0xA0BA49A3 0xA0FC7601
 ;------------------------- end -------------------------
 

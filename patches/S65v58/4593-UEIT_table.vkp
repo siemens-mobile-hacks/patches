@@ -8,6 +8,7 @@
 /*
 Замена стандартной картинки регулировки подсветки на таблицу УЭИТ. Если не V_KLay ругается, то не забываем про Vkp_resolver.
 */
+
 ;S65v58
 ;Замена стандартной картинки регулировки подсветки на таблицу УЭИТ
 ;Replacement standard picture of adjustment of illumination on the UEIT table

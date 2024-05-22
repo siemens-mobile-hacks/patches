@@ -15,6 +15,7 @@
 через несколько секунд жмем еще раз и попадаем в MediaPlayer
 Для запуска только FlexMenu набираем 112 или 911 и жмем кнопку вызова
 */
+
 0669494: FCF720FC 8CF0D0F9 ; MediaPlayer (SOS button)
 0669532: FCF7D1FB 91F085FF; FlexMenu (112/911 and press green button)
 06699A0: 7C4B C046

@@ -14,6 +14,7 @@ English:This patch allow the auto-answer, with no Siemens BlueTooth Headset, aft
 Need flag for auto-answer in Setup->Accessories->Headset.
 No need to set Headset profile, only connect and pair your BT Headset to phone.
 */
+
 329984: E6F88806 DA7B6098
 
 3B9860: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E01CDA82D0EE48443D1BE01CDA701850

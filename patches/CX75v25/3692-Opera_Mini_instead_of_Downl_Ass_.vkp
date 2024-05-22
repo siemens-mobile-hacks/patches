@@ -10,6 +10,7 @@
 OperaMini будет вызываться через Меню-3-3 и шорткат ELSE_DOWN_ASSIS
 !Мидлет должен быть в папке "\Applications\OperaMini\"
 */
+
 0326CE5: 446F776E6C6F61642041 "OperaMini",00
 032B7B9: 446F776E6C6F61642041 "OperaMini",00
 07D4BC1: 446F776E6C6F61642041 "OperaMini",00

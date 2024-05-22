@@ -11,6 +11,7 @@
 Мастер-патч. Необходим для работы патчей, ориентированных на работу с ним.
 Тел никаких не ставим, он тут целиком.
 */
+
 ;Run Scanner on startup
 ;Entrypoint must be aligned to word (4 bytes). If no - add or subtract 2
 2A7838: A562E56225636563 00498847,0xA0FC0C81 ; CX75v23

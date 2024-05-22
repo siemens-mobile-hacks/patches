@@ -31,6 +31,7 @@ Patch could be turn ON/OFF through the new Setup -> Application menu item 4.
 Release: November 5, 2003
 Modified: may 10, 2006
 */
+
 0x3E1710: E6003600 DAC7EADB 
 
 ;выкл. экран блокированием клавиатуры 

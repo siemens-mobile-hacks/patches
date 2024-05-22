@@ -8,6 +8,7 @@
 /*
 Убирает запятую в адресной книге между фамилией и именем.
 */
+
 ;* remove the comma between name and surname in address book *
 ; (c) SiNgle
 ; Smelter auto-patch

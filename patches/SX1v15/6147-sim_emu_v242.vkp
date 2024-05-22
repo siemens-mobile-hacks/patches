@@ -30,6 +30,7 @@ http://patch.oslik.ru/sim_emu_242_SX1v15.rar
 Отредактированный файл нужно записать в телефон с помощью любой программы, работающей с блоками EEPROM телефона, например Siemens EEPROM Tools by Skylord. Файл 5003.tid нужен для описания блока.
 
 */
+
 ;---- New block. Segment address:940000--------
 0014ADB0: DA84E6B6 DAFD0000
 0014ADC6: DA843EBB DAFD0A00

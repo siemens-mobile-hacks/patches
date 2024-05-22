@@ -10,6 +10,7 @@
 Телефон включается по напоминанию. При этом звук напоминания не проигрывается.
 English: The phone turns on by appointment. The appointment sound is not played.
 */
+
 0ABB840: EB4F0028 6AF2DEFC
 #pragma enable old_equal_ff
 0D26200: 3FB5074B1B78152B05DC064B98473FBC

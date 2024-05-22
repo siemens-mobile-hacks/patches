@@ -13,6 +13,7 @@
 По указанному адресу находятся зарезервированные типы файлов, которые можно заменить на любые другие.
 English:After applying this patch phone can open mfi(mld) files, that are analogue of midi, but may have additional info inside. You can convert files in PSM player.
 */
+
 06709E3: 6C64 6669
 ;------------------------- end -------------------------
 

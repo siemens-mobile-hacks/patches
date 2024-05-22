@@ -13,6 +13,7 @@ only for test
 Не совместим с Key Sequencer.......
 (-) Не обрабатывает LONG_PRESS
 */
+
 07AFB8A: 010602D5FFF7A3FF10BD 014CA04710BD01F50DA1
 
 #pragma enable old_equal_ff

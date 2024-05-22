@@ -15,6 +15,7 @@
 
 English: Modify "OK" button when view Appointment details to become "Delete"
 */
+
 0x1A2BF4: EA 7C 
 0x3D1CBA: EA20501D46FC 3D02E0EC0D41 
 0x3D1CC0: 2300EA20501D 46FC23002D45 

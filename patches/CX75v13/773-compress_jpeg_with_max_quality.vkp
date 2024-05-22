@@ -14,6 +14,7 @@ RUS: Сжимает сделанные камерой телефона фото�
 ENG: Compresses made by the chamber of phone of a photo with quality of 100 % instead of 75 %. ATTENTION!!! I put this patch, but have not noticed change of the size of files (and they on idea will increase should) so it, similar yet does not work. We wait for correction...
 
 */
+
 03EC58C: 4B 64
 
 ;------------------------- end -------------------------

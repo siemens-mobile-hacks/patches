@@ -11,6 +11,7 @@
 
 English:Sound alert when battery charged. Alert interval-4 sec
 */
+
 DE508:  46FD6600 DA750A1C 
 551c0a:  FFFFFFFF 88d0E6FC
 551c0e:  Ff 3e ;signal melody can be 3A, 3B, 3C, 3D, 3E, 5A

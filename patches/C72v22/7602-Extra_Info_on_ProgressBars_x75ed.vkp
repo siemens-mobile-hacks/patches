@@ -14,6 +14,7 @@ Shows percents on progressbars and info on files being sent/received.
 Correct filesize and percents are showed when receiving data!
 
 */
+
 0A5B33C: C8A696A000000000 0xA0FC7D35,0xA0FC7D25
 094C7A0: 0000000000000000 0xA0FC7D11,0xA0FC7D01
 

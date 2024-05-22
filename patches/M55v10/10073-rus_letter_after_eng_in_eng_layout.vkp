@@ -11,6 +11,7 @@
 
 russian letter after english in english layout.
 */
+
 ; M55 v10 lg2 - Изменение раскладки клавиатуры (правильные русские буквы после английских в английской раскладке)
 ; Made by veritaz with LayoutMe   www.avkiev.siemens-club.ru/Siemens/LayoutMe/LayoutMe.htm
 3FD620: 5F0020000A0031004100420043003200 5F0020000A0031002E002C003F002100

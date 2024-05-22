@@ -11,6 +11,7 @@ RUS: Сохранение списков вызовов при смене SIM-к
 
 ENG: Preservation of lists of calls at change of a SIM-card.
 */
+
 02A742C: F5F13AEC 00200020
 ;------------------------- end -------------------------
 

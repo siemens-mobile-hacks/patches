@@ -17,6 +17,7 @@ English: Modified version: now it works with CDR 2.3 and FAM 3.2/3.3.
 
 Updated: GoLL@B, 12 July 2006 (rearranged)
 */
+
 ;1) Setup different SMS types 
 ;Setup two SMS types for recognition in some programmes: normal SMS and Flash SMS 
 ;updated: GoLL@B, 12 July 2006 

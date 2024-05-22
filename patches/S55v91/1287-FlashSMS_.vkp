@@ -9,6 +9,7 @@
 Для отправки ФлешСМС необходимо и достаточно, чтобы сообщение начиналось с пробела
 English:For sending flash SMS - first symbol of SMS text must be a space.
 */
+
 4D5806: E6FEC63E FA6100A5
 21A500: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8880E6F81E3ED7400B00F448030047F4
 21A510: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 20003D10D7400B00A94847F408002D08

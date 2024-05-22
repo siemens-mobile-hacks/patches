@@ -12,6 +12,7 @@ English:
 overlay color settings. 
 data=RRGGBBTT. RR, GG, BB range: 0-0xFF, TT=transparency range: 0-0x64
 */
+
 1149596: 8000 0847
 1149920: 0xA868BEE2 0xA0FDAE11
 0FDAE34: 0xFFFFFFFF 0xA868BEE2

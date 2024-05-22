@@ -14,6 +14,7 @@
 English:The phone hangs up after NN seconds from the call start (5 secs by default).
 On/Off in chosen profiles.
 */
+
 0B89604: 00F028FD 9EF17CFB
 +0D27D00
 #pragma enable old_equal_ff

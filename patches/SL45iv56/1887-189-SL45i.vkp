@@ -14,6 +14,7 @@ Created: July 16, 2004
 
 Патч №189 с http://patch.oslik.ru/SL45_RU
 */
+
 0x189F98: 8B E8
 0x189F9A: 39 2D
 0x189F9E: 84 E8

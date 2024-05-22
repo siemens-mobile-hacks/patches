@@ -12,6 +12,7 @@
 
 Исходник: [url]https://github.com/Alexious-sh/sie-dev/blob/master/elfloader3/src2/EL71sw45/Exe/ElfPack_EL71sw45.vkp[/url], убрал чанк с AddrLibrary(), потому что она уже есть в последней Библиотеке Функций.
 */
+
 ;EL71sw45
 ;ELFLoader
 ;(c) Z.Vova, Ganster

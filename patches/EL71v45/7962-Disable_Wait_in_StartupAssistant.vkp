@@ -11,6 +11,7 @@
 ; BUG: StartupAnimation must be off, the same after a Theme was changed, else phone can not exit from StartupAssistant!
 ; баг: должна быть выключена анимация на включение, то же после смены темы, иначе телефон при включении зависнет на Помощнике!
 */
+
 06C49AE: 3AF142EC C046C046
 ;------------------------- end -------------------------
 

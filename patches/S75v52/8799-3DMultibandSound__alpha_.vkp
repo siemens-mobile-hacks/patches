@@ -9,6 +9,7 @@
 /*
 Работа патча не доказана, но может послышаться... xD
 */
+
 020695A: 32 03 ; AudioVis (Multiband)
 ;020695A: 32 06 ; AudioVis (1band)
 020697A: 0DD2 06D1 ; Equalizer (3DSet1)

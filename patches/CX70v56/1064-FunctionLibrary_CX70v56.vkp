@@ -20,6 +20,7 @@ Patch version is in "YMMDD" format. It indicates its update date.
 It is auxiliary patch. It consists of 200 most useable function, 28 variables and 28 constants.
  It is needed for many other patches, whitch are written using "Master-Patch+Functon Library" concept (c) 1nvisible, avkiev
 */
+
 +0FC0000
 #pragma enable old_equal_ff
 ;----------------------------------------------------------------------

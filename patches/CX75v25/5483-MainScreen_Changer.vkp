@@ -10,6 +10,7 @@
 /*
 
 */
+
 ; net icons
 2A8DB0: 39FB C046 ; clear old canvas call
 2A8DB6: 321C0221032000F045FB C046,00488047,0xA0FCA001

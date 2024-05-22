@@ -35,6 +35,7 @@ Possibility to eliminate the leading zero in a hour part.
 This patch will overwrite All "Operator Logo" patches. UNDO those patches before applying this patch. 
 It is ALSO need to UNDO the "Midlet while KeyLocked" patch.
 */
+
 3AC464: F2F6763F         DAC744D1 
 
 3B0362: 46FC2200         DAC730D1 

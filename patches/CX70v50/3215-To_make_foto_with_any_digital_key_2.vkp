@@ -9,6 +9,7 @@
 /*
 Нормальный выход из камеры
 */
+
 09061A8: 010050E3 68CE38FA
 
 #pragma enable old_equal_ff

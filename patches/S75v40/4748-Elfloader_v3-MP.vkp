@@ -41,6 +41,7 @@ Release 23.08.2006
 +Ублажены юзеры МП - перенесен GetCPULoad
 
 */
+
 ;S75_40
 0x0042E748: 53CB2FA0 0xA00784B4       ;PATCH_ONCREATE
 0x0042E75C: 7BCD2FA0 0xA00783EC       ;PATCH_ONCLOSE

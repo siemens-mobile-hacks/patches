@@ -10,6 +10,7 @@
 ЗЫ. Перед установкой скопируйте папку System с диска 0 на диск 2
 Ps. Before installing copy folder System from disk 0 to disk 2
 */
+
 ;Siemens CX 75 SW25 перенос папки System с дидска 0 на диск 2
 ;Высвобождает лишнюю пару сотен кб
 ;Автор: Владимир Воркачев

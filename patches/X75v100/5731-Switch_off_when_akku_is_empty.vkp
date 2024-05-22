@@ -19,6 +19,7 @@ Usually patch should be enabled
 For working with empty battery - disable patch, but don't forget enable it later
 For switching on mobile with empty battery - use safe-mode (press and hold # during start of mobile)
 */
+
 #pragma enable old_equal_ff
 0066300: 00B50448C4DF00D009DF00BD
 

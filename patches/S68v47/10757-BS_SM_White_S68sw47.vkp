@@ -9,6 +9,7 @@
 /*
 Загрузочный экран
 */
+
 ; BootScreen Patch for S68v47
 ; (c) benj9
 ; (r) RainMaker

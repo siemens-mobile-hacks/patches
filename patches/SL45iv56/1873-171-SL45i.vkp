@@ -14,6 +14,7 @@ Modified: July 09, 2004
 
 Патч №171 (обновление 1) с http://patch.oslik.ru/SL45_RU
 */
+
 ;Поменять на свой значение (original 07D0=2000ms)
 
 0x18B14E: D007 D000

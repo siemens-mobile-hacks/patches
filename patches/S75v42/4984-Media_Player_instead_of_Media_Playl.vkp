@@ -8,6 +8,7 @@
 /*
 useful to stop playing last song immediately, on sidekey2
 */
+
 0420DB0: 17 0F
 ;------------------------- end -------------------------
 

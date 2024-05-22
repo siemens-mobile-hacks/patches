@@ -10,6 +10,7 @@ RUS: Патч удаляет надпись с именем оператора �
 
 ENG: The patch deletes an inscription with a name of the operator from the screen of a screensaver.
 */
+
 04ABDA0: 00 01
 04ABE10: 00 01
 

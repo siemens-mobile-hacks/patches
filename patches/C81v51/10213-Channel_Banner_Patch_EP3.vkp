@@ -10,6 +10,7 @@
 Патч перенесён на новое место для ELFPack 3.0 by Z.Vova & Ganster Это каторый для нового elf loadera,т.к. загрузчик стал больше по размеру перенесен на новое место.
 
 */
+
 ;CODE
 0x0007B240: ffffffffffffffffffffffffffffffff 70402DE90040A0E10150A0E1BB8100EF
 0x0007B250: ffffffffffffffffffffffffffffffff 006090E5000056E30700000A042096E5

@@ -20,6 +20,7 @@ FF000032 - красный полупрозрачный
 + цвета шрифта и фона часов скринсейвера теперь независимы, т.к. настраиваются по разным адресам
 + font color and screensaver clock background color are now independent
 */
+
 0A17886: 011C02A82A1C3AF7EDFC 02A8004B9847,0xA1410201
 #pragma enable old_equal_ff
 1410200: 0549064A08B5034B984708BC08BC0433

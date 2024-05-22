@@ -8,6 +8,7 @@
 /*
 For NSG lg3 user,you can plant with placing an offset "+0x..."or"-0x..."
 */
+
 00BD9451: 3E 3F
 00BD9453: 7F00630063 5E80618061
 00BD9458: 0063006300630063 8061806180408000

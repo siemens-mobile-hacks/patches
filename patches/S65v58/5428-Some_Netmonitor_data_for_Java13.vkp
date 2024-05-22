@@ -20,6 +20,7 @@
      MPJC_CAP         current accu charge level
 
 */
+
 #pragma enable old_equal_ff
 00D4000: F081BDE8FEB50268304B9A424BD10D1C
 00D4010: 374C2F4B4068984219D02E4B984215D0

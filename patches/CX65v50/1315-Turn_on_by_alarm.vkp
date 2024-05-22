@@ -10,6 +10,7 @@
 При срабатывании будильника телефон включается и коротко вибрирует.
 English:When alarm clock triggers phone switches on and vibrates shortly.
 */
+
 0B6D452: DBF5 C046
 0B6D454: 00EF0020 70F17CEE
 #pragma enable old_equal_ff

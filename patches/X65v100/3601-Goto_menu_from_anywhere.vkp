@@ -12,6 +12,7 @@
 Должен быть включен DevMenu и в пункте LOGAL\options - нажать Enable ###. 
 English: Patch allows to reach main menu from EVERYWHERE, including Java-applications.  Must be enabled Developer menu. Goto DevMenu\LOGAL\options and press Enable ###
 */
+
 #pragma enable old_equal_ff
 0FC3700: FFB51848FDF77CFA0AD0B11CFCF7D8FF
 0FC3710: 002508783870013101370135032DF8D1

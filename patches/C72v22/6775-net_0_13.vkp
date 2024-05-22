@@ -23,6 +23,7 @@ is a table of the used images:
 the image size is 5x14 px
 
 */
+
 08C4CA4: 00F0F8FA 79F02CFA
 #pragma enable old_equal_ff
 093E100: F8B50F1C0025194C461F2088FF2801D2

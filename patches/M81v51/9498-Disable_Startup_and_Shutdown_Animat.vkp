@@ -9,6 +9,7 @@
 /*
 
 */
+
 2FDF49: D1 E0 ; disable Startup animation
 ;2FE061: 1C 21 ; do not show Startup animation
 2FDA49:  D1 E0 ; disable Shutdown animation

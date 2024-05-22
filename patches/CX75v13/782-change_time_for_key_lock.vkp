@@ -12,6 +12,7 @@ RUS: Изменяет время автоблокировки клавиатур
 
 ENG: Changes time of automatic lock-out of the keyboard.
 */
+
 02CCF18: C832 7017
 
 ;------------------------- end -------------------------

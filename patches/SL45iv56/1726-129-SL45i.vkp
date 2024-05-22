@@ -21,6 +21,7 @@ Release: April 2nd, 2004
 
 Патч №129 с http://patch.oslik.ru/SL45_RU
 */
+
 ;Закомментируйте этот блок если вы не хотите записывать исходящие вызовы 
 02E784: DAC31400 DAE0E4C9 
 40C9E4: FFFFFFFF DAC31400 ; calls PlayTone 

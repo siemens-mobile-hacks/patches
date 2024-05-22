@@ -9,6 +9,7 @@
 /*
 Поставить на горячую клавишу "Запуск эльфа" и будет стартовать эльф, прописанный в 0:\\ZBin\\etc\\start_elf.cfg
 */
+
 4B1654: 416132A0 0xa0FCE001 ;CNCT_BUSINESSCD
 #pragma enable old_equal_ff
 0x00FCE000: FFB58020C7DF2501061C071C07A000F0

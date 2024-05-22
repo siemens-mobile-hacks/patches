@@ -11,6 +11,7 @@ RUS: Изменяет все малые и средние шрифты. Шриф
 
 ENG: Changes all small and average fonts. The font turns out more beautiful and narrow. Though to whom-as, on taste and on color of comrade is not present...
 */
+
 011E4B25: 05 04
 011E4B33: 40 00
 011E4B35: 80 00

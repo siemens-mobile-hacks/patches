@@ -10,6 +10,7 @@
 MasterPatch
 Play vibra instead of the window "SMS is sent"
 */
+
 0x005FF624: A5F0FCEEA0630DE0 00498847,0xA0063801 ; S7Cv47
 #pragma enable old_equal_ff
 0063800: 71460431173003B40A48C4DF08D001B4

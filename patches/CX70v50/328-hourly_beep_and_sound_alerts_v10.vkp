@@ -30,6 +30,7 @@ If ringtone more than 80h, than ringtone (R-80h) plays and phone are vibrate.
 For example, if you set ringtone DF, than ringtone 5F plays and phone is vibrate.
 If current profile is 7 - patch doesn't work.
 */
+
 /*
 Телефон выполняет раз в час некоторые задания.
 Кроме того, если упущено какое-либо событие, то телефон проигрывает

@@ -15,6 +15,7 @@ English: This patch is made to control other patches settings from mobile withou
 You must create the folder 0:\Misc\Patches\PTC\ before installing it
 
 */
+
 ;Run Scaner on startup
 2A773C: FF20 BEDF
 

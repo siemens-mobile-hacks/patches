@@ -17,6 +17,7 @@ RUS: Теперь сворачивает MP3-плеер во время прои
 ENG:  Now turns off a MP3-player during playing. We do so - we start a MP3-player, we block the keyboard (long pressing *), we press *** and we in the native-menu with unblocked keyboard and illumination!
 The item of the menu " the List of Calls " - "Time/cost" cuts down phone
 */
+
 07D57C8: 84F019F9 08F532FC
 #pragma enable old_equal_ff
 04DE030: FFB5134B98470130072818D021F3D9F8

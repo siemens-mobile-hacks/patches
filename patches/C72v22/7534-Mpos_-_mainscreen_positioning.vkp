@@ -12,6 +12,7 @@
 настраивается в конфиге
 конфиг берем отсюда http://patches.kibab.com/cnt.php5?d=cx75v13&f=Mpos.zip и кладем в 0:\ZBin\etc\mpos.bcfg
 */
+
 ;PATCH_NET_CANVAS
 0x008C4C98: ECFABE42 00280028
 ;PATCH_NET_ICONS

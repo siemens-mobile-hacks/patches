@@ -22,6 +22,7 @@ and turn it to see the time. This patch overwrites the User Group hotkey.
 
 Release: June 7, 2004
 */
+
 0x27DB8F: 20 10 ;modify rizapn's funny display patch
 
 ;just copied from rizapn

@@ -8,6 +8,7 @@
 /*
 теперь работает
 */
+
 05F5928: A06E09F00DFA0128 00488047,0xA1471350
 
 #pragma enable old_equal_ff

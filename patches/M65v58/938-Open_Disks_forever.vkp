@@ -11,6 +11,7 @@
 
 EN: Opens hidden disk (Cache, Config) forever - you don't need to reopen them after phone restart.
 */
+
 1260C98: 02 03
 ;------------------------- end -------------------------
 

@@ -12,6 +12,7 @@
 Сделан под Диспетчер Графических Патчей.
 English: When charging, illumination is turned on permanently. User can setup the brightness and select display, keypad and/or dynlight (CX65/70, M65) to light.
 */
+
 +0FDF900
 #pragma enable old_equal_ff
 00: FFB50C48E1F77CF911D0E0F799FEB878

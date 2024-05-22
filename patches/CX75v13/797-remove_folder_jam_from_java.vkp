@@ -11,6 +11,7 @@ RUS: Удаляет подпапку jam из папки Java, при этом �
 
 ENG: Deletes subfolder jam from folder Java, thus of the appendix and games are kept at once in the subfolder in folder Java. Conveniently.
 */
+
 04A4C42: 0B 07
 04A4C52: 5C006A0061006D 00000000000000
 04A4C96: 18 14

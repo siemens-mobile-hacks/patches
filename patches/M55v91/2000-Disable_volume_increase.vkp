@@ -11,6 +11,7 @@
 Рекомендуется убрать отключение нарастания звука на sms - наблюдаются глюки
 English: It's recommended to comment sms strength, there are problems
 */
+
 16FE28: E6FD2E00 E6FD2D00
 16FE30: E6FD4500 E6FD4400
 16FE38: E6FD4700 E6FD4600

@@ -10,6 +10,7 @@
 Patch is aimed to keep GPRS state after switch on/off in the case of power off/restart incident.
 */
 
+
 093C83C: F97027A1 0xA0DAE071
 08D2840: 201CFFF77FFF0025 00488047,0xA0DAE09D
 

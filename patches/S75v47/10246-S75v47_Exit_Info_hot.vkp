@@ -9,6 +9,7 @@
 для lg91 и lg3
 перед установкой раскоментировать строчку своего лэнга
 */
+
 0420578: 97E732A0 0xA14712E0 ; change shortcut "DEVICE_MANAGER"
 04205AC: 2C11 B122 ; change lanpack string ID
 

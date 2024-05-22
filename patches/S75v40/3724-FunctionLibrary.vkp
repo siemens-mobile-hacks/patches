@@ -24,6 +24,7 @@ For porting this patch use Smelter - Tools - Function library.
 
 
 */
+
 +0074000
 #pragma enable old_equal_ff
 0000: 0xA00020F0   ; f000: SWI_0

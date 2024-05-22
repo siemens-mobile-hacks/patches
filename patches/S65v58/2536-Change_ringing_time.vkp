@@ -10,6 +10,7 @@
 Изменяет продолжительность сигнала напоминаний и будилбника. Возможна настройка.
 English: Patch changes time of alarm clock and appointment ring. There is a config.
 */
+
 0C191F0: C8AF0000 C0D40100 ; Alarmclock (2 minutes)
 0A9CB40: C8AF0000 C0D40100 ; Appointment (2 minutes)
 

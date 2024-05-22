@@ -9,6 +9,7 @@
 /*
 Совмещён с GetLP для корректной работы патча при отображении иформации.
 */
+
 ; (!) Library: f002, f004, f022, f079, if missing, patch shuts down phone.
 
 ; shows a short message with session duration at shutdown.

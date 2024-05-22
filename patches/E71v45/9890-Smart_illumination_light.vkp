@@ -8,6 +8,7 @@
 /*
 Подсветка клавиатуры включается в 18, выключается в 9
 */
+
 ;PATCH_JSETILLUMINATION
 0x00C0E820: 54724BA0 007707A0
 ;PATCH_SWISETILLUMINATION

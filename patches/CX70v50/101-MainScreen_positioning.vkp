@@ -10,6 +10,7 @@
 /*
 Позиционирование главного экрана v2. Например изменяется место расположение батарии и т.д.
 */
+
 ;Charge Indicator (Switched-Off Mode)
 17119D8: 10 5E ;background end Y
 17119DE: 02 50 ;background start Y

@@ -9,6 +9,7 @@
 /*
 Заменяет в меню-3-3 "Помощника загрузки" на Opera Mini. Мидлет должен быть в папке "\Applications\OperaMini\"
 */
+
 0326385: 446F776E6C6F61642041 "OperaMini",00
 032AE41: 446F776E6C6F61642041 "OperaMini",00
 07D27ED: 446F776E6C6F61642041 "OperaMini",00

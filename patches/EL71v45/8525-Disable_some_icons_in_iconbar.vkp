@@ -8,6 +8,7 @@
 /*
 Патч нужен для формирования структурированного иконбара, управляемого эльфами
 */
+
 05C2A0C: FFF7FCFC C046C046; MicroSD
 ;05C278C: FFF73CFE C046C046; HandsFree
 ;05C26C8: FFF79EFE C046C046; HiddenPlayer

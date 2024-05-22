@@ -10,6 +10,7 @@
 /*
 Необходима библиотека 60907 или новее!
 */
+
 081B908: 0070A0E1 C0031FEB 
 #pragma enable old_equal_ff
 0FDCCD0: 40000000,300200A8,0xA84CB490,0xA84CFBBC

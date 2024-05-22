@@ -8,6 +8,7 @@
 /*
 http://e71.ru/forum/21-25-58626-16-1410938421
 */
+
 0590E98: 140094E5 588AEBFA
 0590E9D: 50 10
 01A92D1: D1 E0 ; exclude exit "[%d]==Invalid Handsfree mode"

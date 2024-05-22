@@ -9,6 +9,7 @@
 /*
 Убрает сетку с бэкграунда при прорисовке окошек, например "Please Wait" и т.д.
 */
+
 ;* Убрать сетку с бэкграунда при прорисовке окошек, например "Please Wait" и тп и тд 
 ;** Remove background netting while showing MsgBoxes, "Please Wait", e.g. * © SiNgle, § AsteriX
 114F4BC: 55 00

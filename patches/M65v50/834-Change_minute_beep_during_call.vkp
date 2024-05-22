@@ -12,6 +12,7 @@ EN:
 
 Allows you to change beep time from 60s to any value you want. Useful for users with tariffs with per-minute payment. For example, change it to 55s and you will have 5s to end call before new minute begins :)
 */
+
 0B3DC22: 00 37 ;в HEX (37h=55 секунд)
 ;------------------------- end -------------------------
 

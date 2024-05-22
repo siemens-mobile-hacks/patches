@@ -12,6 +12,7 @@
   (!) MP, "Dynamic Provider 10", "miniGPS"
   (!) FL: 41,B6,C0,C4
 */
+
 #pragma enable old_equal_ff
 0FC2CE0: FBB501250B48C4DF02D0B6DF0130355C
 0FC2CF0: 03BC002D09D0012D01D141DF05E0022D

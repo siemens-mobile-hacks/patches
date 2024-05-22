@@ -10,6 +10,7 @@
 В связи с тем, что очень часто поступают просьбы выложить работающий АудиоХук для C75sw22, выкладываю.
 Функция "ChangeVolume" найдена и отлично работает, адреса прописаны с 0x000C0000.
 */
+
 008EF844: 3880BDE8 0xDF41ED,0xEA
 000C0000: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 18309FE5003093E5000053E30000001A
 000C0010: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 3880BDE80030A0E3503084E5FBFFFFEA

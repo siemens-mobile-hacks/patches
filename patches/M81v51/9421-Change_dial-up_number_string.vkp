@@ -9,6 +9,7 @@
 /*
 
 */
+
 +24
 02F6D04: 0D 0ixx ; первый сдвиг при числе цифр xx / first shift at xx digits
 02F6D0C: 1A 0iyy ; второй сдвиг при числе цифр yy=2*xx / second shift at yy=2*xx digits

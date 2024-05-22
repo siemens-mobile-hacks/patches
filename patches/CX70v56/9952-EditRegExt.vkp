@@ -8,6 +8,7 @@
 /*
 Отключение "понимания" телефоном различных расширений
 */
+
 ;8C4878: 806602EB c046c046 ; disable ALL reg ext 
 95E294: 2cbd0cfa c046c046 ; disable bmx reg ext 
 95E2D4: 1cbd0cfa c046c046 ; disable bmp reg ext 

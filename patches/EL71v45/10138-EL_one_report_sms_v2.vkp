@@ -13,6 +13,7 @@ EN: SMS status report is requested only for last segment of concatenated SMS
 + support of 16-bit reference number
 
 */
+
 /*
 запрашивается отчёт о доставке СМС только для последнего сегмента составного СМС
 SMS status report is requested only for last segment of concatenated SMS

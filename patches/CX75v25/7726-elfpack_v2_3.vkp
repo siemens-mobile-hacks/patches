@@ -9,6 +9,7 @@
 ;Release 20.07.2007
 ;Много доделок/переделок, подробности в логе на SVN
 */
+
 ;FSWI_PATCH1
 0x00092BE4: 1A0000EA DCF09FE5
 ;FSWI_PATCH3,FSWI_PATCH2

@@ -11,6 +11,7 @@ SMS status report is requested only for last segment of concatenated SMS
 + поддержка 16-битного идентификационного номера
 + support of 16-bit reference number
 */
+
 0E39F66: 20339974 02F2B6E8
 
 #pragma enable old_equal_ff

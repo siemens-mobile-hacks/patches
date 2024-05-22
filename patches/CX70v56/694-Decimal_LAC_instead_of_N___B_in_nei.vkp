@@ -13,6 +13,7 @@ Combined with "Decimal CID instead of C1 & C2 in neighbour list"
 Переключаться в режим CID ко клавишам 2 <-> 0 (switch to CID mode with keys 0 <-> 2)
 
 */
+
 08FB1B8: 0E 0D
 08FB290: 1622281C 0E26AAE7
 093BB04: 67FF27 D4F829

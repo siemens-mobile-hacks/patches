@@ -13,6 +13,7 @@
 /*
 Не идут патчи доп. инфы на экране, а так- даже GameBoy и NES работают! Осталось CSMlist переработать!
 */
+
 ;SL75sw47
 0079000: FFFFFFFFFFFFFFFFFFFFFFFF 0dcc2fa0d5c92fa00f9c97A0 ;RET_ADRS
 04324a0: d5c92fa0 148707A0        ;PATCH_ONCREATE

@@ -10,6 +10,7 @@
 Подробнее:
 http://siedevelop.xclan.ru/index.php?page=develop-patches-imgc
 */
+
 ;IC_J32BODY
 0x004DB100: 41646D69 727130EA
 ;IC_DISABLE1

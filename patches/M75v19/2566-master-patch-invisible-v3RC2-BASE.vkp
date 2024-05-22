@@ -12,6 +12,7 @@
 Не будет анимации на вкл/выкл. + трабл с бекграундом. Будет иправлено в новых версиях Мастера. А пока на 75-х такая беда
 English: There would be NO switch on/off animation + troubles with background. It would be fixed in new MP versions.
 */
+
 021F3BC: 000050E30B00001A60408FE2 04E08FE204F01FE5C512FCA0 
 02BF360: 041C4DF7A0EC082C0CD2 004B98478110FCA0C046
 04B1D00: 838931A0 510CFCA0 

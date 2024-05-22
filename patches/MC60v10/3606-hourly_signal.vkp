@@ -11,6 +11,7 @@
 
 English:This patch gives a beeping sound in every hour or every hour in time period from 8-23. Not working yet. 
 */
+
 ;With original code, that can be easily changed by using SFE.
 
 ;2. Time period 8-23 hourly signal

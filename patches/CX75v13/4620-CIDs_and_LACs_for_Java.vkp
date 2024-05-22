@@ -10,6 +10,7 @@
 /*
 Передача параметров сотовых вышек CIDs и LACs в Java-машину для использования их мидлетами.
 */
+
 ; return current CID and LAC values in Java properties MPJC_CID and MPJC_LAC 
 ; return current+6 neighbours CIDs and LACs values in Java properties MPJCCIDS and MPJCLACS 
 #pragma enable old_equal_ff 

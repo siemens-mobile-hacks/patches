@@ -9,6 +9,7 @@
 /*
 It may not update time in some java
 */
+
 ;MMENU_TIME_HOOK
 0x00B35490: 0010A0E1 DABE28EB
 ;MMENU_TIME_BODY

@@ -10,6 +10,7 @@
 /*
 Патч не тестировался
 */
+
 ;Menu_Hook
 0x00420DC0: F7DF32A0 B507BCA1
 ;Msg_dispatch

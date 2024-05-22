@@ -22,6 +22,7 @@ i don't know how to make them transparent, for any help i'll be pleased. here
 0x36A - low signal
 the image size is 5x14 px
 */
+
 02A88C4: 00F0F8FA FDF51CFE
 #pragma enable old_equal_ff 
 00A6500: F8B50F1C0025194C461F2088FF2801D2 

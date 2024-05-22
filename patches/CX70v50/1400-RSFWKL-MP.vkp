@@ -9,6 +9,7 @@
 /*
 
 */
+
 #pragma enable old_equal_ff
 1739B00: 014B1847014B1847A120FCA0C120FCA0 ; patch loader
 171881A: F8F715FE 21F071F9                ; entry fore idle mode

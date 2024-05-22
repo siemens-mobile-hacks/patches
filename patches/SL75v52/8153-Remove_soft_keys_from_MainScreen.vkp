@@ -10,6 +10,7 @@
 /*
 (i) BuG: corrected left soft key functionality on missed event and timer/stopwatch positioning.
 */
+
 02FFA14: 2DD1 0028 ; always shift down timer/stopwatch
 02FFAEC: 1AD1 0028 ; always shift down timer/stopwatch
 ;02FFA14: D1 E0 ; or never shift down timer/stopwatch

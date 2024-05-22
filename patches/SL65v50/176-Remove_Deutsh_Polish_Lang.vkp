@@ -9,6 +9,7 @@
 /*
 
 */
+
 ;* Убрать Немецкий и Польский из меню языков ввода ** Remove Deutsch and Polish from input languages menu * © AlexSid, § AsteriX
 1201CEE: 00 01
 1201D1E: 00 01

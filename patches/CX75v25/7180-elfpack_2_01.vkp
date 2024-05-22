@@ -59,6 +59,7 @@
 ;16-битный цвет в PNG, совместимость с Pictures Addon
 
 */
+
 ;ElfLoader+ESI+RunElfsByExtention+FSWI
 
 ;FSWI_PATCH1

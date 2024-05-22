@@ -13,6 +13,7 @@
 
 Goto DevMenu\LOGAL\options and press Enable ###
 */
+
 ;* Из любого места жмем ### и попадаем в главное меню ** Goto mainmenu from anywhere by pressing ### * © SiNgle, § KiRiK
 ;!Должен быть включен DevMenu и в пункте LOGAL\options - нажать Enable ### (Goto DevMenu\LOGAL\options and press Enable ###)
 0B23D54: 4BF025F9 C4F5AFFF ;native menu (меню "зашитое" в прошивку - очень быстрое)

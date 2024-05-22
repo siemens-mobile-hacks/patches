@@ -21,6 +21,7 @@
 В архиве исходники.
 
 */
+
 #pragma enable old_equal_ff
 ;Picture 1 cold (1250)
 

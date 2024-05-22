@@ -13,6 +13,7 @@ English:
 Shows percents on progressbars and info on files being sent/received Correct filesize and percents are showed when receiving data!
 
 */
+
 04AD3C8: 24A12EA000000000 0xA0FC7D35,0xA0FC7D25
 04B89A0: 0000000000000000 0xA0FC7D11,0xA0FC7D01
 

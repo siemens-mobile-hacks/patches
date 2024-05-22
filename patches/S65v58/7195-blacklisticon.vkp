@@ -10,6 +10,7 @@
 
 Change black/white list icon (CallFilter) to icon on the screenshot. xp style.
 */
+
 ; ##### Picture 692 #####
 00DA15C4: 0E0E85009C01E4A0 0E0E8800E08ED2A0
 

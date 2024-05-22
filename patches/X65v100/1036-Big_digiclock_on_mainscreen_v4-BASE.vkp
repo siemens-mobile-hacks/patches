@@ -10,6 +10,7 @@
 Концепция MP+FL
 Установите этот патч и врезку для своего телефона.
 */
+
 #pragma enable old_equal_ff
 0FC1400: F1B53448FFF7FCFB3ED0FFF745F93868
 0FC1410: 002839D0F0780221084002D1FEF7FCFE

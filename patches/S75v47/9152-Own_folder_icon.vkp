@@ -11,6 +11,7 @@
 Просто поставить icon.png в папку.
 Just put a icon.png under the folder.
 */
+
 ;OWM_FOLDER_ICON_HOOK
 059D1D4: 211C301C00F0DCFB 00488047655B51A1
 ;OWM_FOLDER_ICON_BODY,DATA_C

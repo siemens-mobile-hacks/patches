@@ -9,6 +9,7 @@
 /*
 English: If you send FlashSMS " 0" to a phone flashed this patch, the phone will switch off.
 */
+
 29C85A: FFF748FD 5CF123EC
 
 #pragma enable old_equal_ff

@@ -9,6 +9,7 @@
 for dis files with id 5
 only change: disable master with "#" while booting works again
 */
+
 0830638: 212C5CA0 0xA1380011
 #pragma enable old_equal_ff
 1380000: 5374426172447370312C62656E6A3900

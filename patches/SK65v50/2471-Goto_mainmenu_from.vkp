@@ -11,6 +11,7 @@
 
 Должен быть включен DevMenu и в пункте LOGAL\options - нажать Enable ### (Goto DevMenu\LOGAL\options and press Enable ###). 
 */
+
 0715514: 79F0C7FD 08F4EDFD ;native menu
 ;0715514: 79F0C7FD 03F4B8FE ;main menu
 

@@ -13,6 +13,7 @@
 настраивается в конфиге
 конфиг берем из приаттаченного архива и кладем в 0:\ZBin\etc\mpos.bcfg
 */
+
 ;PATCH_NET_CANVAS
 0x002A8CA0: 39FBBE42 00280028
 ;PATCH_NET_ICONS

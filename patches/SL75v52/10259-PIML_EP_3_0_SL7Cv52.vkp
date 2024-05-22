@@ -9,6 +9,7 @@
 /*
 Новое место + измененные данные
 */
+
 #pragma enable old_equal_ff
 0x0155EC10: 0400A0E1CCBD11FA0400A0E1996500EB
 0x0155EC20: 0500A0E1FE80BDE8

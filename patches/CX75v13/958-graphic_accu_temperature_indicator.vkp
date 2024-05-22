@@ -16,6 +16,7 @@ ENG: For demonstration the built-in accu icons are used, feel free to create you
 Uncomment lines 98-9C to use built-in picture set.
 In this case 956 "Addition To PIT Table" patch must be installed
 */
+
 2A8C6E: 02D000F01CFB C046F7F6C6F9
 
 +1A0000

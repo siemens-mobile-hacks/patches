@@ -10,6 +10,7 @@
 Убирает ненужные языки из меню выбора языков ввода. Вы можете выбрать, какие языки убрать.
 English: Patch removes unusable languages from language select dialog. You can choose which languages to remove.
 */
+
 +0C11C9E
 04: 00 01 ; Немецкий
 38: 00 01 ; Латвийский

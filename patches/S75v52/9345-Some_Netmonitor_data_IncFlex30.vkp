@@ -25,6 +25,7 @@ MPJC_CAP current accu charge level
 MPJCGPRS current GPRS traffic (bytes)
 MPJCKEYL current keyboard lock state
 */
+
 09FC1C4: 0070A0E30070C1E50140A0E1 04E08FE204F01FE5F5BA06A0 ; S75v52
 
 #pragma enable old_equal_ff

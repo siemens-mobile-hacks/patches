@@ -24,6 +24,7 @@ Updated: Aug 24, 2004
 
 Патч №205 (обновление 1) с http://patch.oslik.ru/SL45_RU
 */
+
 ;Отключение ANM для исходящих звонков: 
 0x3AC4D4: DAF09AC3 DAE4144D 
 

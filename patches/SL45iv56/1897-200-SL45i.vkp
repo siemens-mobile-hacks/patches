@@ -42,6 +42,7 @@ LogReader midlet are attached.
 Created: August 5, 2004 
 Updated: August 13, 2004 (v2.3) 
 */
+
 ;для логов звонков: 
 0x02F560: F2F8FE38 DAE47052 
 0x44E6FC: E6FE2600 DAE4CE52 

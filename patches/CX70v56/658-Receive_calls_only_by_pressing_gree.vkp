@@ -10,6 +10,7 @@
 Прием звонков только зеленой кнопкой. Receive calls only by pressing green button.
 !!! Но отключение звука только долгим нажатием "*" (!!! But disable sound only by "*" long press)
 */
+
 171EDB0: 62D0 0028
 
 ;------------------------- end -------------------------

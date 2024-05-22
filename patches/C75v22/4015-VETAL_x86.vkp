@@ -24,6 +24,7 @@
 ;* Missed Events Indicator v1.4 *
 
 */
+
 +110000
 #pragma enable old_equal_ff
 0xFC1600: 02B59048FFF7FCFA00D1D0E0FFF744F8

@@ -14,6 +14,7 @@ MP+FL!
 2. Здесь ничего не выбирать :), идёт замена вызова PlaySound (т.е. будильника) на проговаривание времени
 3. Должен быть установлен патч 385 , или закомментируйте строки после  3. Keylock
 */
+
 ;1. Shortcut
 ;0920960: "ELSE_COUNT_DOWN",00,FB198EA0 "ELSE_COUNT_DOWN",00,0xA0FC3001 ; CX65v50 - ELSE_COUNT_DOWN
 ;0920C6C: "ELSE_REMOTESYNC",00,2D1A8EA0 "ELSE_REMOTESYNC",00,0xA0FC3001 ; CX65v50 - ELSE_REMOTESYNC

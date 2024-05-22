@@ -20,6 +20,7 @@
 
 В прикреплённом файле - инструкция по установке и образцы конфигурационных файлов.
 */
+
 ;---- New block. Segment address:FE0000--------
 5EF0C0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 14324E0222324E02C0213800D0213800
 5EF0D0: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF E0213800F02138000022380010223800

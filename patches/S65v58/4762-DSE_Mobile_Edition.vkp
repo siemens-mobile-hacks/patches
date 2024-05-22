@@ -13,6 +13,7 @@ English:Allows keys to be rebound from the mobile phone.
 If you want the standart function to be used - put "STDF" as a string.
 v1.2: + Added support for QWERTY-open
 */
+
 08DDB64: 2C3A381CA16B49F07AEE 00488047,0xA0FC9001,C046
 0FC9050: FFFFFFFF 0xA122D23C
 ;------------------------- end -------------------------

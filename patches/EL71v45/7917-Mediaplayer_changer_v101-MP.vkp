@@ -9,6 +9,7 @@
 /*
 
 */
+
 0070F3C: 0xFFFFFFFF 0xA0A15F3F ; DrawRectangle
 07B2498: 100090E5 4CFAE2FA ; videobg color
 07B2514: 888E09FB 22FAE2FA ; videobg position

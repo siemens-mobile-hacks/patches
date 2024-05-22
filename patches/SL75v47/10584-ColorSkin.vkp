@@ -9,6 +9,7 @@
 /*
 MasterPatch
 */
+
 973422: 8000 0847
 099F550: 0xA8DF02EE 0xA007D301
 #pragma enable old_equal_ff

@@ -17,6 +17,7 @@ for demonstration the built-in accu icons are used, feel free to create your own
 Uncomment lines 98-9C to use built-in picture set.
 In this case 469 "Addition To PIT Table" patch must be installed
 */
+
 1694986: 02D0,00F0D0FA  C046,27F0E2F9
 +16BBD50
 #pragma enable old_equal_ff

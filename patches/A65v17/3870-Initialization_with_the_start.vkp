@@ -10,6 +10,7 @@
 Для урезаного Ленгпака
 Этот патч ничего не делает! Просто он необходим для некоторых будущих патчей
 */
+
 64C134: DA8470FB DA615250
 415052: FFFFFFFF DA8470FB
 415056: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF CC00CC00CC00CC00CC00CC00CC00CC00

@@ -13,6 +13,7 @@
 English:
 Originally this is the part of UNI2 patch (patchID2299).
 */
+
 ; menu hook
 018A21E: A420E202B221E2020F00 00008403200184031000
 

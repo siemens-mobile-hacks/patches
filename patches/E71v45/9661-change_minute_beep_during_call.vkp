@@ -11,6 +11,7 @@ RUS: Изменяет время подачи минутного сигнала 
 
 ENG: Changes time of submission of a minute signal during conversation.
 */
+
 09AD3BE: 00 0i055 ; 55 сек
 ;------------------------- end -------------------------
 

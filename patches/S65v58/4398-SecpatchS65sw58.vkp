@@ -9,6 +9,7 @@
 /*
 
 */
+
 ;* Запуск мидлета при вставке новой SIM ** Midlet start when SIM is changed * © SiNgle, § AsteriX
 ;(p) Tepish
 0B58A52: D6F047FF CFF156ED

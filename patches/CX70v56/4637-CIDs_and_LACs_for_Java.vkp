@@ -11,6 +11,7 @@
 return current CID and LAC values in Java properties MPJC_CID and MPJC_LAC
 return current+6 neighbours CIDs and LACs values in Java properties MPJCCIDS and MPJCLACS
 */
+
 0CE09C0: 0080A0E30080C1E50140A0E1 04E08FE204F01FE5,0xA0801805
 #pragma enable old_equal_ff
 0801800: F081BDE8FEB502681F4B9A4235D10D1C

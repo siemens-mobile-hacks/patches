@@ -13,6 +13,7 @@ From our German friends :)
 
 Note that if you wish to use this patch with improved net indicator, you shouldn't apply pictures 808-825 from this patch.
 */
+
 ;M65v50
 ;Индикаторы сети и аккумулятора с процентами (тёмно-синие)
 ;Netz & Akku Symbole mit Prozentanzeige (Dunkelblau)

@@ -13,6 +13,7 @@ English:Recover voice call and amr sound for E71 reflashed into CL61. Not needed
 + исправлен баг, теперь в гарнитуру с этим патчем играет стерео
 English:+ fixed bug, now headset plays stereo with this patch
 */
+
 ;Version: 1.5
 
 0DED145: 00 01 ; registry 42

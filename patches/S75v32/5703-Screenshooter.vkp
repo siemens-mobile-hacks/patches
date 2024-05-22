@@ -21,6 +21,7 @@ Press button - screenshot appears
 FakEditor: http://patches.kibab.com/utils/fakeditor.rar
 ShotKeyEd: http://s75.siemens-club.org/files/soft/shotkeyed.rar
 */
+
 ;Run ScreenShooter instead of:
 
 04339DC: 0xA0377FDB 0xA0067301   ; S75v32 - PHONE_IDENTITY

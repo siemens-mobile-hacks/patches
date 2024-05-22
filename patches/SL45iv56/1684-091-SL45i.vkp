@@ -23,6 +23,7 @@ Modified: November 8, 2003
 
 Более новая версия патча №091 с http://patch.oslik.ru/SL45_RU
 */
+
 0x440028: 76FA0080 DAC780DB
 0x44004C: A99AF0BE DAC7B8DB
 0x440072: 08B1 00B6

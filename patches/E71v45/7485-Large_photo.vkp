@@ -9,6 +9,7 @@
 /*
 
 */
+
 5C4A80: 5A BD ;photo size
 
 84A4D4: BF EA ; outcall_y_name

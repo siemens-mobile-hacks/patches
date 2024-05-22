@@ -15,6 +15,7 @@
 (!) При создании нового MyStuff, пункт Картинки находится по адресу 0:\Pictures\Clip Gallery, пункт Фото по адресу 0:\Pictures 
 
 */
+
 A06F50: 18 0B
 A06F18: 0B 08
 A06F1A: '0:\\Pictures' '0:\\Photo'

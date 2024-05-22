@@ -13,6 +13,7 @@ English:
 keep mainscreen illumination alive in certain profile
 
 */
+
 1240DA0: 0160A0E180179FE5 84579FE555FFD6EB
 +800B00
 #pragma enable old_equal_ff 

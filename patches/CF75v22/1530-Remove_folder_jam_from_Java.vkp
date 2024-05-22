@@ -10,6 +10,7 @@
 
 Remove folder "jam" from "Java"
 */
+
 0497C2A: 0B 07
 0497C3A: 5C006A0061006D 00000000000000
 0497C7E: 18 14

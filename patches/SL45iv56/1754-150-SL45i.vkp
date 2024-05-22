@@ -23,6 +23,7 @@ English: ;Modify "Move to Archive" shortcut (RightSoft button) to become "Delete
 ;Modify "Print via IrDA" option to become "Save Message" (move to archive!)
 ;If you do not want these modification, just comment them ...
 */
+
 0x18AE8E: 6F 25			; modify "Move to Archive" function -> "Delete"
 0x18AE92: 4B4E 7E01		; modify "Move to Archive" text button -> "Delete"
 0x18D2E6: C807C807 7B057B05	; modify "Print via IrDA" text -> "Save Message"

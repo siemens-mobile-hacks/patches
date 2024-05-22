@@ -10,6 +10,7 @@
 Run ScreenShooter instead of STUP_BABYSITTER 
 для MP14
 */
+
 092FA98: 3DA58DA0 0xA0FC7301 
 0FC73E8: 0xFFFFFFFF 0xA08DA53D 
 ;------------------------- end -------------------------

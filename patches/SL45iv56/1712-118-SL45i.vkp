@@ -17,6 +17,7 @@ Release: January 03, 2004
 
 Патч №118 с http://patch.oslik.ru/SL45_RU
 */
+
 ;Точки входа на буквы: 
 
 ;a-E0C800, b-E0C806, c-E0C80C, d-E0C812, e-E0C818, f-E0C81E, g-E0C824, 

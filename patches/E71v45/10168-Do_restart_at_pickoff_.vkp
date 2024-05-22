@@ -10,6 +10,7 @@
 В Меню разработчика/Exits появится пункт Restart
 Exit RAM Dump должен быть выключен
 */
+
 055A9E8: 1D 16 
 055A9EB: 1A EA 
 055AA5B: 0A EA

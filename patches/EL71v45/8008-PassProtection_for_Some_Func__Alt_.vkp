@@ -14,6 +14,7 @@
 ;Generate file ccq_wtf.dat with program from attach and put it to the disk 2:\
 ;Fully compatible with * Password Protection for Some Functions *
 */
+
 #pragma enable old_equal_ff
 ;ENTRY
 0x01303000: 00B5181C00F0FCEF00BD

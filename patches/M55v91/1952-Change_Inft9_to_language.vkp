@@ -10,6 +10,7 @@
 Изменяет где только можно (СМС, заметки, ММС, почта...) Инф.Т9 на меню выбора языка
 English:Patch changes InfT9 everywhere to language select menu
 */
+
 0B576F: 992CB9 8F623E
 098C5D: 992CB9 8F623E
 0AF9B5: 992CB9 8F623E

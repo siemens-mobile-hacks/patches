@@ -10,6 +10,7 @@
 /*
 Отображает логотип профиля на главном экране. Картинки - в теле патча. Картинки от Продвинутого Индикатора не используются.
 */
+
 ;Картинки для патча в конце сборника (pictures for patch are in the end of patch collection)
 ;патч не использует картинки из "Доп.инфо на главном экране"
 ;this patch doesn't use the pics from "extrainfo on mainscreen"

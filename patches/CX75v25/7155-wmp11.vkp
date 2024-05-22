@@ -9,6 +9,7 @@
 Патч заменяет иконки 3gp видео на иконку Windows Media Player 11 из Windows Vista.
 This patch change 3gp video icon to Windows Media Player 11 icon from Windows Vista.
 */
+
 ; #######################################################################
 ; ### This file is made by ©SiemensPictureChange 3.0 - Public Beta    ###
 ; ### programmed ©2004 by ACiD[mrp], b@iLLi.                          ###

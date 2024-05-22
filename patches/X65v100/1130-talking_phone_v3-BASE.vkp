@@ -20,6 +20,7 @@ Set this shortcut by help DSE to any key, if you press this key - current time w
 You should download those files to 0:\Sounds\Time: http://avkiev.kiev.ua/Siemens/Patches/time.rarDSE: http://www.gsm-multifund.com/mod/DSE.rar
 
 */
+
 #pragma enable old_equal_ff
 0FC3000: FFB57048FDF7FCFD4CD020210902F068
 0FC3010: 884229D0F160301C1430306118307061

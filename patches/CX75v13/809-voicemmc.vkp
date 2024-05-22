@@ -12,6 +12,7 @@ RUS: Cохраняет из пункта диктофон (а не "запись
 
 ENG:  Save from item a dictophone (instead of " record of a sound ") on ММС. Maximal time of record of one file is defined by an empty seat on А: \, but record it is possible to repeat so much time, the place how many will allow
 */
+
 4A46D8: 30 34
 
 ;------------------------- end -------------------------

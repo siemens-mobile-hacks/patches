@@ -9,6 +9,7 @@
 /*
 Плавненько включается...
 */
+
 08CAA28: BEE6FA64 BEE6FA0A ; background
 08CAA2C: 1EBEE664 00000034 ; contour
 08CAA30: 001E8264 FFFFFF24 ; stripe

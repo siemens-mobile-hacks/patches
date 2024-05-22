@@ -23,6 +23,7 @@ The item of the menu " the List of Calls " - "Time/cost" shuts down phone
 To enable this function, you should select "Ebale ###" in Options menu. (Developer->LOGAL, then Options, Enable ###".
 
 */
+
 07D57C8: 84F019F9 08F532FC
 #pragma enable old_equal_ff
 04DE030: FFB5134B98470130072818D021F3D9F8

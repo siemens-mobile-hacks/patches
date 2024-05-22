@@ -32,6 +32,7 @@ color table (0..17h) R G B
 13 - тёмно-жёлтый yellow (dark)
 14-17 - прозрачный (clean)
 */
+
 ;0D8DED9: FFFFFF64 A9ABA900 ;set "0" color to transparent
 
 +3C5C

@@ -13,6 +13,7 @@
 у папок с одинаковыми именами будут одинаковые иконки!
 *фикс длиных имен папок
 */
+
 ;OWM_FOLDER_ICON_HOOK
 0x00718FCC: 0600A0E1 F50E31FA
 ;OWM_FOLDER_ICON_BODY,DATA_C

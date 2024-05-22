@@ -19,6 +19,7 @@
 ;Now it scans only those files, which are located in "4:/MP3" (I have only songs on my memory-card there - mp3, aac and so on), and in "4:/3GP" (for videos)
 ;The scanning runs really fast (depends on the number of files in those folders) 
 */
+
 07353C8: 30 34; Disable checking and refreshing database of "0:/"
 07353C4: 000000 4D5033; check and refresh database of a folder "4:/MP3" (for sounds)
 07353CC: 000000 334750; check and refresh database of a folder "4:/3GP" (for videos)

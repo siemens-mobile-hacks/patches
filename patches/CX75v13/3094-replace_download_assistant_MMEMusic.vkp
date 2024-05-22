@@ -11,6 +11,7 @@
 MihaSoft переделал, чтобы заменяла не на OperaMini, а на плеер MEE Music
 RUS: MME Music будет вызываться через Меню-3-3 и шорткат ELSE_DOWN_ASSIS
 */
+
 326A29: 446F776E6C6F61642041 "MME Music",00
 32B4F9: 446F776E6C6F61642041 "MME Music",00
 7D34AD: 446F776E6C6F61642041 "MME Music",00

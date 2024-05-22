@@ -9,6 +9,7 @@
 /*
 В патче прописаны дефолтовые координаты иконок...меняйте на необходимые
 */
+
 03476D8: 01 0i161 ;Y-Pos (fix y-pos forever (dont weird y-moving at net lost)
 03476D9: 39 21
 03476C4: 01 0i161 ;Y-Pos (fix y-pos forever (dont weird y-moving at net lost)

@@ -16,6 +16,7 @@ move in "0: \Pic \Stuf \". If you want to rename don`t forget some things: You n
 And this one: new data must be shourter than old!
 
 */
+
 0A24548: 0B00,'0:\\Pictures' 0B00,'0:\\Pic\\Foto'
 ;если в настройках "Сохранять на ММС"
 0A2565E: 0B00,'4:\\Pictures' 0B00,'4:\\MyPhoto'

@@ -12,6 +12,7 @@
 
 English: Increase volume level. Patch is set on value 03 from 07. Volume adjusting is in line 030040E2.
 */
+
 0A8C5F0: 2600C4E5 D3FFFFEA 
 0A8C548: 030000EF 030040E2 
 0A8C54C: 6C2DA0E30100A0E3 2600C4E5290000EA 

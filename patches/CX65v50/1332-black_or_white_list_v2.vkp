@@ -17,6 +17,7 @@ BlackList means the phone emits busy signal when somebody from this group is cal
 WhiteList means the phone emits busy signal when somebody NOT from this group is calling
 The call is NOT shown in the missed calls screen
 */
+
 0B12AB6: 061C281C D1F1A4EC
 0B137A8: 0006000E D0F164EE
 0B13C12: B0420ED1 D0F112EC

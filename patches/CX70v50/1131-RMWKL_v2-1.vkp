@@ -13,6 +13,7 @@
 Чтение flash-SMS и нового сообщения при залоченной клавиатуре с временной подсветкой
 Чтобы прочитать сообщение, нажмите ЗЕЛЁНУЮ кнопку (Press the GREEN button to read message)
 */
+
 171881A: F8F715FE 20F08CFB
 171BD32: 0223E05E 1DF00DF9
 #pragma enable old_equal_ff

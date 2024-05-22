@@ -15,6 +15,7 @@ replaces the patches * Mainscreen Positioning *
 and * change font size on mainscreen *
 compatible to * Extended IconBar v0.5 beta *
 */
+
 ; net icons
 2A8CA0: 39FB C046 ; clear old canvas call
 2A8CA6: 321C0221032000F045FB C046,00488047,0xA0FCA001

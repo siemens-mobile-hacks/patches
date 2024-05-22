@@ -8,6 +8,7 @@
 /*
 
 */
+
 08D9E5A: 00 NN 
 ; 00 - Стандарт (Standard),01 - Вертолет (Helicopter),02 - НЛО (UFO),
 ; 03 - Удар (Shock),04 - Москит (Mosquito),05 - Поезд (Train)

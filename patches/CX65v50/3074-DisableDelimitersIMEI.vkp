@@ -9,6 +9,7 @@
 /*
 Особено хорош при использовании патча "Замена отображаемого IMEI" (Change Display of IMEI) http://patches.kibab.com/patches/details.php5?id=290
 */
+
 08E8070: 05D0 0AE0
 ;------------------------- end -------------------------
 

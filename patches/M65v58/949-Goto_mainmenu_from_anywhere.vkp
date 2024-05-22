@@ -10,6 +10,7 @@
 Из любого места жмем ### и попадаем в главное меню.
 Должен быть включен DevMenu и в пункте LOGAL\options - нажать Enable ### (Goto DevMenu\LOGAL\options and press Enable ###).
 */
+
 0B1EE58: 4BF03BF9 AAF532FA ;native menu by arsh0r
 ;0B1EE58: 4BF03BF9 C3F52BFD ;main menu by SiNgle
 ;------------------------- end -------------------------

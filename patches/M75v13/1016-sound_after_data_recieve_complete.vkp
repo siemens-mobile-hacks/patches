@@ -13,6 +13,7 @@
 ENG: Sound signal on end of reception of data through IR or BT.
 The sound will be same as it is established on reception new SMS.
 */
+
 035AD60: 0010A0E3 0767FDEB
 ;------------------------- end -------------------------
 

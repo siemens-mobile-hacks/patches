@@ -9,6 +9,7 @@
 /*
 
 */
+
 ;!Необходимо отменить патч *Убрать вопрос "Копировать SIM" при смене SIM*
 0B22B92: E6F767FF BBF1B6EF
 #pragma enable old_equal_ff

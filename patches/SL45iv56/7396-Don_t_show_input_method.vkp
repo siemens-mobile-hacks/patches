@@ -12,6 +12,7 @@
 English:
 Don't show input method when long pressing '*' key. Change input methods quickly, maybe more convenient for inputting letters.
 */
+
 0x366010: 2A 00
 ;------------------------- end -------------------------
 

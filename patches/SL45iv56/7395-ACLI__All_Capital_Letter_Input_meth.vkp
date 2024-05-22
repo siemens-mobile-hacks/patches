@@ -12,6 +12,7 @@
 English:
 The patch reveals a hidden input method, all capital letters.
 */
+
 0x366068: 3D 0D
 
 0x1AFB92: D1 D5;modify the display icon of the input method 

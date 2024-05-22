@@ -19,6 +19,7 @@ It uses the Master-Midlet written by chaos (http://chaos.allsiemens.com/download
 Every patch compatible with Master-Patch has its own config-section. You don't need to edit it. All settings are changed only from the mobile phone.
 !Before installing the patch create the folder 0:\Misc\Patches and install the midlet.
 */
+
 021F25C: 000050E30B00001A60408FE2 04E08FE204F01FE5E512FCA0
 045ED0C: 838931A0 510CFCA0
 045ED18: 2908000019080000 BD0A0000BD0A0000

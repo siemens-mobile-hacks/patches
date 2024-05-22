@@ -15,6 +15,7 @@ in masterpatch you can set temp_min and the range between temp_min and temp_max 
 No entrypoint needed, because of Graphpatch manager
 2.2 -> 2.25 - check for RamStby and screensaver
 */
+
 #pragma enable old_equal_ff
 0FC6400: 00B52848FAF7FCFB47D0FAF745F93868
 0FC6410: 002842D0F9F7FCFE3FD101200321F9F7

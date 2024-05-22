@@ -13,6 +13,7 @@
 English:The phone runs some functions while keyboard is locked.
 The function may be called either on short press or on double press (to prevent casual pressing).
 */
+
 #pragma enable old_equal_ff
 0FC2100: 00B50223E85E00F016F8002801D167DF
 0FC2110: 00BD01B0012064DF201CB0BD0223E05E

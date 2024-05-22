@@ -12,6 +12,7 @@
 English:there are 14 pictures. 1 pic below temp_min, 1 pic over temp_max, 12 pics in the range of temp_min to temp_max
 in masterpatch you can set temp_min and the range between temp_min and temp_max (19.2 or 38.4°C)
 */
+
 #pragma enable old_equal_ff
 0FDE300: 41636375546D704932312C62656E6A39
 0FDE310: 7FB52848E2F774FC3FD001200321E1F7

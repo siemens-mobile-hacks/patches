@@ -19,6 +19,7 @@ Patch is intended ONLY for start midlet from Shadow_ru. Midlet it is possible to
 ; To open PdfViewer, doc and xls - DocViewer, wav - MediaPlayer, etc. Patch changes of icon pdf on mp3 and by pressing
 ; On mp3 the file at once is started the converter. PdfViewer it is possible to download here: http: // www.smpda.com/midlets/PdfViewer_v.1.0.6 .zip.  
 */
+
 04A1038: "pdf" "mp3"
 00F812A4: 0E0E8500444901A1 0E0E8500B03801A1 ; маленькая иконка mp3
 049F3E8: "\\PdfViewer\\" "\\MP3Ringer\\" ;адрес мидлета, при необходимости измените на свой, слешей должно быть по два!

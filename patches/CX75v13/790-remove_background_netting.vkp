@@ -13,6 +13,7 @@ RUS: Убирает сетку с бэкграунда при прорисовк
 ENG: Cleans a grid from a background at a portrayal of windows, for example " Please Wait ", etc., etc. ATTENTION!!! Causes bug portrayals of the screen in java-applications.
 
 */
+
 07F5338: 55 00
 
 ;------------------------- end -------------------------

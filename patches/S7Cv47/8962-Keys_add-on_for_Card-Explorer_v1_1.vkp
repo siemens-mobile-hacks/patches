@@ -22,6 +22,7 @@ As the default setting, we set 8 keys:
 
 And you can edit the keys and functions by yourself(see the patch).
 */
+
 ;ExpKExtern_hook
 0x0036DA24: FFE769684A68FF3A 004B9847812356A1
 ;ExpKDisableSearch_hook

@@ -8,6 +8,7 @@
 /*
 
 */
+
 3249E1: 20 00
 3249DA: DA8D8A9C DAAB2800 ; call main menu icons handlers caller
 ;DAAB2800 - вызов вызывальщика обработчиков нажаний на иконках в главном

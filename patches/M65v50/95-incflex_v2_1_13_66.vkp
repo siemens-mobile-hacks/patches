@@ -15,6 +15,7 @@ http://patches.kibab.com/patches/bin/m65v50/incflex_files.rar
 
 Ставится поверх патча №94 "Увеличение диска до 12,71МБ"
 */
+
 /*
 Ставится после патча * M65v5003 * Диска A 12.71Мб v2.0 * !!!
 Делаем Fullflash Backup!

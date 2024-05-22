@@ -12,6 +12,7 @@
 No English doc at the moment! :(
 English: In archive which i have added there are 2 java applications MobileZip x75 (special edition for this patch) and MobileRar (opens rar archives but only from Misc, Sounds etc. folders not from root) and sources for graph patches updated graphic in archive
 */
+
 0A263A4: "pdf" "zip" ;if you already have patch ZIPViewer comment this line
 0A2633D: "Pdf" "ZIP" ;if you already have patch ZIPViewer comment this line
 0A26364: "doc" "rar"

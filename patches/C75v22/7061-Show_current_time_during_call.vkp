@@ -10,6 +10,7 @@
 Должен быть включен пункт "Автоматическая индикация" (Меню-2-5-5-4).
 English:"Auto display" (Мenu-2-5-5-4) have to be turned on.
 */
+
 02CD0F0: 04A80B21BFF164EC 68461B21F2F59CFF
 #pragma enable old_equal_ff
 00C0030: 30B5041C0A4B984782B000206946094B

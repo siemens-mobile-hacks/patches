@@ -10,6 +10,7 @@
 Патч PS/2 Helper предназначен для осуществления ввода текста при помощи специальным способом подключенной к телефону компьютерной клавиатуры. Подробнее - http://siedevelop.xclan.ru/index.php?page=info-arcticles-ps2_kbd (сайт помер).
 Вся инфа оттуда здесь - [url]https://www.mediafire.com/file/upzf0p9e9b3csql/PS2_Keyboard.7z/file[/url]
 */
+
 ;PATCH_INSERT_SYMBOL
 0x008494A4: 0E1C051C87B0171C 004CA04700B00CA1
 ;CODE

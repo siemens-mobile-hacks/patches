@@ -13,6 +13,7 @@ If a number from an addressbook or SIM location is calling, then VIP-melody is r
 
 Release: 26.06.06
 */
+
 30F72: F0D8 E01D
 ; Change the strings "VIP" to "Addressbook" in Audio-menu:
 ; Изменить название пунктов "VIP" на "Адресная книга" в меню Аудио:

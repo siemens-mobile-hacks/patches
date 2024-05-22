@@ -9,6 +9,7 @@
 /*
 
 */
+
 0E23780: D007 1202 ; delay before start
 0E23784: 2C01 2A00 ; scrolling speed
 0E636D0: D007 1202 ; delay before start

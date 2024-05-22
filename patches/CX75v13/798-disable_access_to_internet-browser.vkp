@@ -11,6 +11,7 @@ RUS: Отключает возможность использования wap-б
 
 ENG: Disconnects an opportunity of use of a wap-browser. Can and is useful with present quotations on wap-traffic though already there are also other decisions to look wap-pages...
 */
+
 04B1578: E95E32A0 00000000
 04B1510: 035F32A0 00000000
 04B0E28: 2F6932A0 00000000

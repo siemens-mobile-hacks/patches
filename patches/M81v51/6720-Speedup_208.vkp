@@ -11,6 +11,7 @@
 Разгон процессора телефона до 208 МГц.
 English:Speedup of mobile till 208 MHz
 */
+
 0234128: 7008C0E3 B43FF9EB
 
 #pragma enable old_equal_ff

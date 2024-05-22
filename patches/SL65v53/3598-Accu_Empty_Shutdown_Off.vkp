@@ -11,6 +11,7 @@
 ; выключите профайлы в мидлете после старта. не используйте слишком часто. можете повредить ваш аккумулятор!
 English:; turn off profiles in midlet after start. don't use too often. could damage your accu!
 */
+
 125F57C: 18009FE50C0090E503AAFFEA 00009FE510FF2FE101DFFDA0
 ;------------------------- end -------------------------
 

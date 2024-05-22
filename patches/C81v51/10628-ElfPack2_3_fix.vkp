@@ -9,6 +9,7 @@
 /*
 Фикс SWI хука: адрес функции StoreErrString был задан неверно.
 */
+
 ;SWILIB_FUNC171,SWILIB_FUNC172
 #pragma enable old_equal_ff
 0x000745C4: 808607A06C8607A0

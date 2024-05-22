@@ -10,6 +10,7 @@
 /*
 Чтение СМС при залоченой клавиатуре зеленой кнопкой.
 */
+
 ;CX75v25
 ;Read message when key locked
 ;Read message when key locked

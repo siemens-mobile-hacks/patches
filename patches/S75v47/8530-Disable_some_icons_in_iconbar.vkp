@@ -10,6 +10,7 @@
 Нужен для скрытия ненужных иконок в иконбаре
 (?)-не точно
 */
+
 029D17A:FFF7C9FE C046C046 ; HandsFree
 029D0E6:FFF713FF C046C046 ; BlueTooth
 029D19C:FFF7B8FE C046C046 ; KeyLock

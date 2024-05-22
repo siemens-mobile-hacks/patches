@@ -9,6 +9,7 @@
 /*
 Бутскрин EL71 примерно в таком же стиле, как и для S75 (http://patches.kibab.com/patches/details.php5?id=8840)
 */
+
 ; BootScreen Patch for EL71v45
 ; (c) benj9
 ; (r) RainMaker

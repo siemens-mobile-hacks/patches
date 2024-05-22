@@ -12,6 +12,7 @@
 ; N means Black Group, 00-No group, 03-Family, 04-Friends and so on
 ; By default the Black Group is the last group
 */
+
 070BE02: 8AF6EAEB 04F1B5FE
 
 #pragma enable old_equal_ff

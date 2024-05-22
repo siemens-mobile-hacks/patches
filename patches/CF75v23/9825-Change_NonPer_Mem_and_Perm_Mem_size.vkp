@@ -10,6 +10,7 @@
 /*
 
 */
+
 ;Change Non-Per Mem size
 0903FBC: 40 4D ; 4A ; 0x400000 - изначальная нонперм (en.: 0x400000 is default Non-Per Mem size)
 

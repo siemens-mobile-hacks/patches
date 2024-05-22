@@ -16,6 +16,7 @@ Created: 14.09.2004
 
 Патч №220 с http://patch.oslik.ru/SL45_RU
 */
+
 0x18A8D2: EE0A 020B 
 0x18A8D6: F80A F20D 
 0x18A8DA: 020B FC0D 

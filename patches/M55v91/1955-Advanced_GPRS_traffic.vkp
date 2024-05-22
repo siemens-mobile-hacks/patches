@@ -9,6 +9,7 @@
 Показывает общий траффик GPRS вместо надписи GPRS вверху экрана, при активном соединении еще показывает входящий и исходящий траффик текущей сессии (справа и слева соотв.)
 English: Shows total GPRS traffic instead of GPRS icon in the top of the screen. If there is an active connection, patch also shows incoming(in the right) and outgoing(in the left) traffic for current session.
 */
+
 362A9A: 0103 2003
 0DD2B8: DA96468F DA9F000C
 0DDA1A: 1E 1B

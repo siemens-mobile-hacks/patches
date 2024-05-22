@@ -12,6 +12,7 @@
 Bзменен elf loader, подробности тут
 http://team-sc.ru/viewtopic.php?t=7252&postdays=0&postorder=asc&start=0
 */
+
 #pragma enable old_equal_ff
 ;FSWI_PATCH1
 0x000929B4: DCF09FE5

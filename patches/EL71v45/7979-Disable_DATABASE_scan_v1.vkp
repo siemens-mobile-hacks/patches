@@ -19,6 +19,7 @@
 ;Now it scans only those files, which are located in "4:/MP3" (I have only songs on my memory-card there - mp3, aac and so on),
 ;The scanning runs really fast (depends on the number of files in this folder)
 */
+
 07353C8: 30 FF; Disable checking and refreshing database of "0:/"
 07353C4: 000000 4D5033; check and refresh database of a folder "4:/MP3"
 ;------------------------- end -------------------------

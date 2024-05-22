@@ -10,6 +10,7 @@
 Master-patch v5
 Master-Midlet 0.96
 */
+
 021F23C: 000050E30B00001A60408FE2 04E08FE204F01FE5,0xA10D12C5 ;entry for java
 
 +110000

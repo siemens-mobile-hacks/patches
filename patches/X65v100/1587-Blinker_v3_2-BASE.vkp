@@ -24,6 +24,7 @@ midlet 0.91 or higher required
 v3.2 optimized, config mp-midlet0.9 compatible, flash-at-illumination-on added.
 v3.1 minor bugs removed
 */
+
 #pragma enable old_equal_ff
 0FDC800: 426C696E6B6572332E322C62656E6A39
 0FDC810: 6E402DE9A8729FE517FF2FE1FFB500F0

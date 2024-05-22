@@ -12,6 +12,7 @@ SMS status report is requested only for last segment of concatenated SMS
 + поддержка 16-битного идентификационного номера 
 + support of 16-bit reference number
 */
+
 ;Один отчёт о доставке СМС для составного СМС
 ;Single SMS status report for concatenated SMS
 ;E71v45

@@ -12,6 +12,7 @@
 !Начните текст сообщения с пробела Формат текста -> Размер шрифта -> Средний шрифт, иначе будет обычное SMS
 English: Remark: Add a whitespace when start sms typing. Patch works only if you have normal font size/
 */
+
 ;* Отправка Flash SMS v1.1 ** DSFS Directly Send Flash SMS v1.1 * © Bennie, § BuG
 ;!Начните текст сообщения с пробела Формат текста -> Размер шрифта -> Средний шрифт, иначе будет обычное SMS
 1424918: 201CB168 A1F272FB

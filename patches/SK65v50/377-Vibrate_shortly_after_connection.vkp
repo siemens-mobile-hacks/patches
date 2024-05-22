@@ -11,6 +11,7 @@
 !При входящих не вибрирует
 
 */
+
 02C79DA: 84F174E80028 002888F1C8E9
 #pragma enable old_equal_ff
 044FD70: 00402DE9FF3F2DE90FE0A0E144F09FE5

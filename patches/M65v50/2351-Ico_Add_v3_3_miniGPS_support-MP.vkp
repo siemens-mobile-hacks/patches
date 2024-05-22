@@ -12,6 +12,7 @@ featuring: charging icons, profile icons, vibra on/off, animation, netmode, mini
 (!) funclib: f2,f17,f22,f33,f34,f35,f37,f39,f58,f64,f81,f105,f106,v 1,v2,v14
 
 */
+
 ; entrypoint with icons left in iconbar:
 1633C66: 1CF0C8E81CF068EB0028 C0460048804711B8FDA0 ; m65v50
 0FDBA88: FFFFFFFFFFFFFFFF F8FD64A1,3C0365A1 ; m65v50

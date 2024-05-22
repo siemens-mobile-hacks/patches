@@ -9,6 +9,7 @@
 /*
 Всё понятно по названию
 */
+
 02A8C44: 261C002D05900490 004FB847,0xA0FC3E01 ; CX75v13
 #pragma enable old_equal_ff
 0FC3700: 34CD12AB00B53F48FDF77AFA61D0FCF7

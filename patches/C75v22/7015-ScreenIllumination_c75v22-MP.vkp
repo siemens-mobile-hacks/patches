@@ -15,6 +15,7 @@
 English:
 Brightness of illumination of the display depending on time (at each o'clock it is possible to establish the value)
 */
+
 0803F0C: 04980E1C141CC707101C 004FB847,0xA10D4C01,C046
 ;------------------------- end -------------------------
 

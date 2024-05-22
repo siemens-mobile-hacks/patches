@@ -11,6 +11,7 @@
 
 English: For this patch to work, the filter must be switched on for any group except SIM-card. It's equal what group will be chosen, all settings are taken from Master-Patch.
 */
+
 #pragma enable old_equal_ff
 0FC6C00: 3048F9F7FDFF09D000980130325C002A
 0FC6C10: 0AD000F03EF8FFBC01B003E0FFBC08BC

@@ -21,6 +21,7 @@ When the keylocked set CPU to 13 MHz (to save energy)
 
 Relased: 2006-02-14
 */
+
 ;If you don't need some functions comment it: 
 
 ; After unlock keybord set cpu to 26 MHz 

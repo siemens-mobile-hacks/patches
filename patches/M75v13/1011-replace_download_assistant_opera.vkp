@@ -16,6 +16,7 @@ ENG: Menu-3-3 and shortcut ELSE_DOWN_ASSIS will call OperaMini
 Midlet must locate in folder "\Applications\OperaMini\"
 You can also change langpack string $12AA to "OperaMini" (will show in menu)
 */
+
 0326A2D: 446F776E6C6F61642041 "OperaMini",00 
 032B4FD: 446F776E6C6F61642041 "OperaMini",00 
 07D2939: 446F776E6C6F61642041 "OperaMini",00 

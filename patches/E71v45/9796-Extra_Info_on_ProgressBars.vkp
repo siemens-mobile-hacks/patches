@@ -9,6 +9,7 @@
 /*
 but I want to know if this patch can be port directly onto my S7Cv47?
 */
+
 05C14CC: 03041B0C0422211C381C 004A9047,0xA007189B,0422
 
 #pragma enable old_equal_ff

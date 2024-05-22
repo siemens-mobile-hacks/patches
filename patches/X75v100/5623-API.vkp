@@ -17,6 +17,7 @@
 
 Перенесена в этот раздел, т.к. теперь API снова прошивконезависима.
 */
+
 #pragma enable old_equal_ff
 ;OpenReadCloseFile
 006F000: 7EB50D1C802211026B460ADF041C411C

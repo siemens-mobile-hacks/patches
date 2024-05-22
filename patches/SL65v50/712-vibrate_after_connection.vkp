@@ -14,6 +14,7 @@ EN:
 On\Off: Menu 2-5-5-4 (Auto Display)
 Doesn't vibrate on incoming call connection.
 */
+
 1647490: 18F0BEE80028 002827F04CEE
 #pragma enable old_equal_ff
 166F100: 566962726120416674657220436F6E6E

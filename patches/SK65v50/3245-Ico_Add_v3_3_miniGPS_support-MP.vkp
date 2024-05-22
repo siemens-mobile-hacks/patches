@@ -12,6 +12,7 @@ featuring: charging icons, profile icons, vibra on/off, animation, netmode, mini
 
 Полное описание внутри патча тела на английском.
 */
+
 ; entrypoint with icons left in iconbar:
 02A7232: A3F166E9A3F16EEB0028 C046,00488047,0xA0FDB811 ; SK65v50
 0FDBA88: FFFFFFFFFFFFFFFF 0xA044A500,0xA044A914 ; SK65v50

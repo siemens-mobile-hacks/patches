@@ -20,6 +20,7 @@ Battery level is a value from ca. 4.150 mV (best) to 3.600 mV (worst).
 
 Release: April 5th, 2004
 */
+
 ; If you have already applied profile logo patch from Acid[mrp],
 ; uncomment this line and comment next line:
 ;40CB08: FFFFFFFFFFFFFFFF DAC790D6E6FE4501

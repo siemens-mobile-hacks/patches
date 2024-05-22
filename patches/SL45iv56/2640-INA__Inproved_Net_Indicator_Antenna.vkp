@@ -17,6 +17,7 @@ You will need Improved Net Indicator patch and A1P patch (only when using image 
 Release: November 29th, 2005
 Update: December 1st, 2005
 */
+
 ; change hooks of Net Indicator to new location
 0x454BD0: DAE010CA DAE004CA
 0x3B36EA: DAE010CA DAE004CA

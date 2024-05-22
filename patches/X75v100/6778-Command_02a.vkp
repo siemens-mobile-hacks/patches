@@ -19,6 +19,7 @@ Command.elf  Командный интерпретатор MS-DOS
 Добавить в extension.cfg строку:
 bat:4:\ZBin\DOS\Command.elf
 */
+
 Command.elf  Командный интерпретатор MS-DOS
 Выполняет основные команды MS-DOS: copy,move,ren,dir,mkdir,...и кучу др.
 Отображает консоль, понимает .BAT файлы (не х86 эмулятор!)

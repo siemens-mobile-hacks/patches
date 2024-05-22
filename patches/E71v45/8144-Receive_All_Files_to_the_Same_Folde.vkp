@@ -9,6 +9,7 @@
 /*
 
 */
+
 ;Install patch * Unlock Folders in Card-Explorer * before installing this patch!
 ;Пофиксен баг VKlay с комментариями (в память не прописывался путь для Phone mode)
 
