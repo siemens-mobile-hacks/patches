@@ -2897,7 +2897,6 @@
 			"id": "8072",
 			"model": "EL71v45",
 			"file": "EL71v45/8072-_EL71_hacked__bootscreen.vkp",
-			"additionalFile": "EL71v45/8072-_EL71_hacked__bootscreen.zip",
 			"mtime": 1192186996000,
 			"title": {
 				"ru": "\"EL71 hacked\" bootscreen",
@@ -3892,7 +3891,6 @@
 			"id": "9054",
 			"model": "EL71v45",
 			"file": "EL71v45/9054-Menu_sl91.vkp",
-			"additionalFile": "EL71v45/9054-Menu_sl91.zip",
 			"mtime": 1222683602000,
 			"title": {
 				"ru": "Меню SL91",
@@ -5707,7 +5705,6 @@
 			"id": "2398",
 			"model": "S75v24",
 			"file": "S75v24/2398-Blue_battery_and_network.vkp",
-			"additionalFile": "S75v24/2398-Blue_battery_and_network.rar",
 			"mtime": 1142197200000,
 			"title": {
 				"ru": "Голубые батарея и сеть",
@@ -13792,7 +13789,6 @@
 			"id": "9843",
 			"model": "S75v47",
 			"file": "S75v47/9843-Vibra_at_call_time.vkp",
-			"additionalFile": "S75v47/9843-Vibra_at_call_time.rar",
 			"mtime": 1272942990000,
 			"title": {
 				"ru": "Vibra_at_call_time",
@@ -13803,7 +13799,6 @@
 			"id": "9846",
 			"model": "S75v47",
 			"file": "S75v47/9846-LED_Call_Num_Font.vkp",
-			"additionalFile": "S75v47/9846-LED_Call_Num_Font.rar",
 			"mtime": 1272943704000,
 			"title": {
 				"ru": "LED_Call_Num_Font",
@@ -18441,7 +18436,6 @@
 			"id": "9844",
 			"model": "S75v52",
 			"file": "S75v52/9844-Vibra_at_call_time_MP.vkp",
-			"additionalFile": "S75v52/9844-Vibra_at_call_time_MP.rar",
 			"mtime": 1272943136000,
 			"title": {
 				"ru": "Vibra_at_call_time_MP",
@@ -18452,7 +18446,6 @@
 			"id": "9845",
 			"model": "S75v52",
 			"file": "S75v52/9845-LED_Call_Num_Font.vkp",
-			"additionalFile": "S75v52/9845-LED_Call_Num_Font.rar",
 			"mtime": 1272943430000,
 			"title": {
 				"ru": "LED_Call_Num_Font",
@@ -26016,7 +26009,6 @@
 			"id": "543",
 			"model": "CX75v12",
 			"file": "CX75v12/543-change_standart_animation_to_smiles.vkp",
-			"additionalFile": "CX75v12/543-change_standart_animation_to_smiles.rar",
 			"mtime": 1125864000000,
 			"title": {
 				"ru": "Изменение стандартных анимаций EMS на смайлы",
@@ -27336,7 +27328,6 @@
 			"id": "953",
 			"model": "CX75v13",
 			"file": "CX75v13/953-change_standart_animation_to_smiles.vkp",
-			"additionalFile": "CX75v13/953-change_standart_animation_to_smiles.rar",
 			"mtime": 1130706000000,
 			"title": {
 				"ru": "Изменение стандартных анимаций EMS на смайлы",
@@ -27419,7 +27410,6 @@
 			"id": "995",
 			"model": "CX75v13",
 			"file": "CX75v13/995-change_picture_of_volume_regulator.vkp",
-			"additionalFile": "CX75v13/995-change_picture_of_volume_regulator.rar",
 			"mtime": 1131570000000,
 			"title": {
 				"ru": "Изменение картинки регулятора громкости",
@@ -29155,7 +29145,6 @@
 			"id": "7024",
 			"model": "CX75v13",
 			"file": "CX75v13/7024-Bat_Net.vkp",
-			"additionalFile": "CX75v13/7024-Bat_Net.rar",
 			"mtime": 1171715900000,
 			"title": {
 				"ru": "Супер Индикаторы",
@@ -29176,7 +29165,6 @@
 			"id": "7103",
 			"model": "CX75v13",
 			"file": "CX75v13/7103-Menu_cf75.vkp",
-			"additionalFile": "CX75v13/7103-Menu_cf75.rar",
 			"mtime": 1172991564000,
 			"title": {
 				"ru": "Меню от siemens cf75",
@@ -29187,7 +29175,6 @@
 			"id": "7112",
 			"model": "CX75v13",
 			"file": "CX75v13/7112-ef81_s88.vkp",
-			"additionalFile": "CX75v13/7112-ef81_s88.rar",
 			"mtime": 1173082254000,
 			"title": {
 				"ru": "Меню от ef81_s88_icons",
@@ -30453,7 +30440,6 @@
 			"id": "3105",
 			"model": "CX75v23",
 			"file": "CX75v23/3105-EMS_Animation.vkp",
-			"additionalFile": "CX75v23/3105-EMS_Animation.zip",
 			"mtime": 1145774986000,
 			"title": {
 				"ru": "Смайлики вместо стандартных анимаций в смс",
@@ -30514,7 +30500,6 @@
 			"id": "4430",
 			"model": "CX75v23",
 			"file": "CX75v23/4430-menu_in_style_windows_xp.vkp",
-			"additionalFile": "CX75v23/4430-menu_in_style_windows_xp.rar",
 			"mtime": 1153901766000,
 			"title": {
 				"ru": "меню в стиле windows xp",
@@ -31437,7 +31422,6 @@
 			"id": "4431",
 			"model": "CX75v25",
 			"file": "CX75v25/4431-menu_in_style_windows_xp.vkp",
-			"additionalFile": "CX75v25/4431-menu_in_style_windows_xp.rar",
 			"mtime": 1153902432000,
 			"title": {
 				"ru": "меню в стиле windows xp",
@@ -32990,7 +32974,6 @@
 			"id": "7110",
 			"model": "CX75v25",
 			"file": "CX75v25/7110-Menu_cf75.vkp",
-			"additionalFile": "CX75v25/7110-Menu_cf75.rar",
 			"mtime": 1173079618000,
 			"title": {
 				"ru": "Меню от siemens cf75",
@@ -33001,7 +32984,6 @@
 			"id": "7111",
 			"model": "CX75v25",
 			"file": "CX75v25/7111-ef81_s88.vkp",
-			"additionalFile": "CX75v25/7111-ef81_s88.rar",
 			"mtime": 1173081816000,
 			"title": {
 				"ru": "Меню от ef81_s88_icons",
@@ -33043,7 +33025,6 @@
 			"id": "7184",
 			"model": "CX75v25",
 			"file": "CX75v25/7184-vista_main_menu.vkp",
-			"additionalFile": "CX75v25/7184-vista_main_menu.zip",
 			"mtime": 1174715264000,
 			"title": {
 				"ru": "Главное меню в стиле Windows Vista",
@@ -33054,7 +33035,6 @@
 			"id": "7185",
 			"model": "CX75v25",
 			"file": "CX75v25/7185-vista_sound_icons.vkp",
-			"additionalFile": "CX75v25/7185-vista_sound_icons.zip",
 			"mtime": 1174721644000,
 			"title": {
 				"ru": "Иконки всех звуковых файлов как в WinVista",
@@ -41123,7 +41103,6 @@
 			"id": "2116",
 			"model": "C75v22",
 			"file": "C75v22/2116-smiles.vkp",
-			"additionalFile": "C75v22/2116-smiles.rar",
 			"mtime": 1141333200000,
 			"title": {
 				"ru": "Смайлики вместо стандартной СМС-анимации",
@@ -42078,7 +42057,6 @@
 			"id": "4482",
 			"model": "C75v22",
 			"file": "C75v22/4482-Large_Advanced_Network_Indicator.vkp",
-			"additionalFile": "C75v22/4482-Large_Advanced_Network_Indicator.rar",
 			"mtime": 1154125750000,
 			"title": {
 				"ru": "Большой продвинутый индикатор сети",
@@ -47332,7 +47310,6 @@
 			"id": "1043",
 			"model": "CX65v50",
 			"file": "CX65v50/1043-CX75v13_adaptation_of_pictures_at_d.vkp",
-			"additionalFile": "CX65v50/1043-CX75v13_adaptation_of_pictures_at_d.rar",
 			"mtime": 1132261200000,
 			"title": {
 				"ru": "адаптация картинок для cx75",
@@ -48605,7 +48582,6 @@
 			"id": "622",
 			"model": "M65v50",
 			"file": "M65v50/622-happy_analog_clock.vkp",
-			"additionalFile": "M65v50/622-happy_analog_clock.rar",
 			"mtime": 1127246400000,
 			"title": {
 				"ru": "Весёлые аналоговые часики",
@@ -48756,7 +48732,6 @@
 			"id": "935",
 			"model": "M65v50",
 			"file": "M65v50/935-grafic-volume_selector.vkp",
-			"additionalFile": "M65v50/935-grafic-volume_selector.rar",
 			"mtime": 1130443200000,
 			"title": {
 				"ru": "Изменение регулятора громкости",
@@ -50491,7 +50466,6 @@
 			"id": "931",
 			"model": "M65v58",
 			"file": "M65v58/931-grafic-volume_selector.vkp",
-			"additionalFile": "M65v58/931-grafic-volume_selector.rar",
 			"mtime": 1130443200000,
 			"title": {
 				"ru": "Изменение регулятора громкости",
@@ -50502,7 +50476,6 @@
 			"id": "933",
 			"model": "M65v58",
 			"file": "M65v58/933-nokia-style_batt_and_net_indicators.vkp",
-			"additionalFile": "M65v58/933-nokia-style_batt_and_net_indicators.zip",
 			"mtime": 1130443200000,
 			"title": {
 				"ru": "Антена и аккумулятор в стиле Nokia",
@@ -50513,7 +50486,6 @@
 			"id": "934",
 			"model": "M65v58",
 			"file": "M65v58/934-M65_talk_animation__v3-0.vkp",
-			"additionalFile": "M65v58/934-M75_talk_animation__v3-0.rar",
 			"mtime": 1130443200000,
 			"title": {
 				"ru": "Адаптация при разговоре в стиле М75",
@@ -50585,7 +50557,6 @@
 			"id": "942",
 			"model": "M65v58",
 			"file": "M65v58/942-gprs_and_irda_icons.vkp",
-			"additionalFile": "M65v58/942-gprs_and_irda_icons.rar",
 			"mtime": 1130443200000,
 			"title": {
 				"ru": "Индикаторы GPRS И IRDA в стиле Windows XP",
@@ -50596,7 +50567,6 @@
 			"id": "943",
 			"model": "M65v58",
 			"file": "M65v58/943-v_stile_M75__v3_1.vkp",
-			"additionalFile": "M65v58/943-v_stile_M75__v3_1.rar",
 			"mtime": 1130443200000,
 			"title": {
 				"ru": "Адаптация при звонке в стиле М75",
@@ -50607,7 +50577,6 @@
 			"id": "944",
 			"model": "M65v58",
 			"file": "M65v58/944-v_stile_M75_v3_2.vkp",
-			"additionalFile": "M65v58/944-v_stile_M75_v3_2.rar",
 			"mtime": 1130443200000,
 			"title": {
 				"ru": "Адаптация при звонке в стиле М75",
@@ -50618,7 +50587,6 @@
 			"id": "945",
 			"model": "M65v58",
 			"file": "M65v58/945-Animation_during_sound_play.vkp",
-			"additionalFile": "M65v58/945-Animation_during_sound_play.rar",
 			"mtime": 1130443200000,
 			"title": {
 				"ru": "Анимация при проигрывании мелодии",
@@ -64151,7 +64119,6 @@
 			"id": "1483",
 			"model": "CX70v56",
 			"file": "CX70v56/1483-smiles.vkp",
-			"additionalFile": "CX70v56/1483-smiles.rar",
 			"mtime": 1139691600000,
 			"title": {
 				"ru": "Смайлики вместо стандартной СМС-анимации",
@@ -64162,7 +64129,6 @@
 			"id": "2062",
 			"model": "CX70v56",
 			"file": "CX70v56/2062-old_style_icon_pack_on_main_screen.vkp",
-			"additionalFile": "CX70v56/2062-old_style_icon_pack_on_main_screen.rar",
 			"mtime": 1141333200000,
 			"title": {
 				"ru": "Иконки на главном экране в виде букв",
