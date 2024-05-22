@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 210524
+;Version: 220524
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -1003,6 +1003,9 @@
 0F18: 0xA0A285B9 ; 3C6: __thumb void SetHeaderScrollText(void *header, const WSHDR *title, const void *malloc_fn, const void *mfree_fn);
 0F1C: 0xA0A28245 ; 3C7: __thumb void SetHeaderExtraText(void *header, const WSHDR *ws, const void *malloc_fn, const void *mfree_fn);
 0F20: 0xA05021B8 ; 3C8: __arm int GetMimeType(int uid, WSHDR *mime_type, int unk_0);
+0F24: 0xA04FA54B ; 3C9: __thumb int wstrncmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
+0F28: 0xA04FA597 ; 3CA: __thumb int wstricmp(const WSHDR *ws1, const WSHDR *ws2);
+0F2C: 0xA04FA5CD ; 3CB: __thumb int wstrnicmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
 
 #pragma disable old_equal_ff
 +0

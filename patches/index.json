@@ -5128,7 +5128,6 @@
 			"id": "10768",
 			"model": "EL71v45",
 			"file": "EL71v45/10768-Unknown_font_el71.vkp",
-			"additionalFile": "EL71v45/10768-Unknown_font_el71.zip",
 			"mtime": 1716330226000,
 			"title": {
 				"ru": "Неизвестный шрифт",
@@ -91492,7 +91491,7 @@
 			"id": "10075",
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib.vkp",
-			"mtime": 1716313308000,
+			"mtime": 1716397770000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -92698,7 +92697,6 @@
 			"id": "10767",
 			"model": "E71v45",
 			"file": "E71v45/10767-Unknown_font_e71.vkp",
-			"additionalFile": "E71v45/10767-Unknown_font_e71.zip",
 			"mtime": 1716330096000,
 			"title": {
 				"ru": "Неизвестный шрифт",
