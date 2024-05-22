@@ -24,6 +24,11 @@ let tables = {
 		description: 'The patch has additional files, but it isn\'t accessible.',
 		patches: []
 	},
+	patchInArchive: {
+		title: 'The patch is in the archive instead of a patch body',
+		description: 'This is not always an error, some patches are too big.',
+		patches: []
+	},
 	empty: {
 		title: 'Empty patches',
 		description: 'This is not always an error, some patches contain commented lines.',
@@ -76,6 +81,7 @@ for (let file of readFiles(PATCHES_DIR)) {
 			continue;
 		}
 
+		let foundPatches = 0;
 		for (let entry of archive.lsarContents) {
 			if (entry.XADFileName.match(/\.vkp$/i)) {
 				let subpatchInfo = {
@@ -89,8 +95,13 @@ for (let file of readFiles(PATCHES_DIR)) {
 				subpatchInfo.errors = analyzePatch(patchText);
 				if (subpatchInfo.errors.length > 0)
 					badPatches.push(subpatchInfo);
+
+				foundPatches++;
 			}
 		}
+
+		if (foundPatches > 0)
+			tables.patchInArchive.push(patchInfo);
 	} else if (detectedType == "EMPTY") {
 		tables.empty.patches.push(patchInfo);
 	} else if (detectedType == "PATCH") {
