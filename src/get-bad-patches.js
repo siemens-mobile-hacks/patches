@@ -101,7 +101,7 @@ for (let file of readFiles(PATCHES_DIR)) {
 		}
 
 		if (foundPatches > 0)
-			tables.patchInArchive.push(patchInfo);
+			tables.patchInArchive.patches.push(patchInfo);
 	} else if (detectedType == "EMPTY") {
 		tables.empty.patches.push(patchInfo);
 	} else if (detectedType == "PATCH") {
