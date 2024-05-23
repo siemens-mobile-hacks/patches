@@ -1,0 +1,14 @@
+;E71v45
+;Выход из PersMenu после выбора элемента
+;Exit from PersMenu after select an item
+;(c) FIL
+;Version: 
+;PatchID: 10837
+;Details: https://patches.kibab.com/patches/details.php5?id=10837
+/*
+
+*/
+
+07A5EE4: 0A0000EA 0880A0E1
+;------------------------- end -------------------------
+

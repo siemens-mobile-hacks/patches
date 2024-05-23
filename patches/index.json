@@ -92993,6 +92993,16 @@
 				"ru": "Убрать пункт 'Bookmark' из PersMenu в медиаплеере",
 				"en": "Remove 'Bookmark' item from PersMenu in mediaplayer"
 			}
+		},
+		"10837": {
+			"id": 10837,
+			"model": "E71v45",
+			"file": "E71v45/10837-exit_from_pm_after_select_item.vkp",
+			"mtime": 1716484878000,
+			"title": {
+				"ru": "Выход из PersMenu после выбора элемента",
+				"en": "Exit from PersMenu after select an item"
+			}
 		}
 	},
 	"C81v51": {
