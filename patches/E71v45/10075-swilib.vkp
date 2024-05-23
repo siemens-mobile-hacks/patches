@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 220524
+;Version: 230524
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -778,7 +778,7 @@
 0B60: 0xA0958367 ; 2D8: void TViewSetText(void *gui, WSHDR *text, void *malloc_adr, void *mfree_adr);
 0B64: 0xA095840B ; 2D9: void TViewSetUserPointer(void *gui,void *user_pointer);
 0B68: 0xA0958411 ; 2DA: void *TViewGetUserPointer(void *gui);
-0B6C: 0xA0788E1C ; 2DB: void SendMedia(WSHDR *file, WSHDR *path);
+0B6C: 0xA0788E1C ; 2DB: void MediaSendCSM_Open(WSHDR *file, WSHDR *path);
 0B70: 0xA08CCD05 ; 2DC: __thumb void SaveMaxIllumination(int level);
 0B74: 0xA08CCD2D ; 2DD: __thumb void SetIlluminationoffTimeout(int time_sec);
 0B78: 0xA08CCEB9 ; 2DE: __thumb void IllumTimeRequest(int TimeMode, int Counter);
@@ -1006,6 +1006,7 @@
 0F24: 0xA04FA54B ; 3C9: __thumb int wstrncmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
 0F28: 0xA04FA597 ; 3CA: __thumb int wstricmp(const WSHDR *ws1, const WSHDR *ws2);
 0F2C: 0xA04FA5CD ; 3CB: __thumb int wstrnicmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
+0F30: 0xA07A529C ; 3CC: __arm int PersMenuCSM_Open(const WSHDR *file_name, const WSHDR *dir, int flag, int open_mode);
 
 #pragma disable old_equal_ff
 +0
