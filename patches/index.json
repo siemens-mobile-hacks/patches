@@ -91491,7 +91491,7 @@
 			"id": "10075",
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib.vkp",
-			"mtime": 1716397770000,
+			"mtime": 1716487092000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -92982,6 +92982,26 @@
 			"title": {
 				"ru": "Пакет исправлений пользовательского интерфейса",
 				"en": "UI Fix Pack"
+			}
+		},
+		"10836": {
+			"id": "10836",
+			"model": "E71v45",
+			"file": "E71v45/10836-remove_bookmark_item_from_pm_in_mp.vkp",
+			"mtime": 1716473440000,
+			"title": {
+				"ru": "Убрать пункт 'Bookmark' из PersMenu в медиаплеере",
+				"en": "Remove 'Bookmark' item from PersMenu in mediaplayer"
+			}
+		},
+		"10837": {
+			"id": "10837",
+			"model": "E71v45",
+			"file": "E71v45/10837-exit_from_pm_after_select_item.vkp",
+			"mtime": 1716484878000,
+			"title": {
+				"ru": "Выход из PersMenu после выбора элемента",
+				"en": "Exit from PersMenu after select an item"
 			}
 		}
 	},

@@ -1,0 +1,14 @@
+;E71v45
+;Убрать пункт 'Bookmark' из PersMenu в медиаплеере
+;Remove 'Bookmark' item from PersMenu in mediaplayer
+;(c) FIL
+;Version: 
+;PatchID: 10836
+;Details: https://patches.kibab.com/patches/details.php5?id=10836
+/*
+Патч устанавливает другой тип меню в медиаплеере, поэтому пункт "Bookmark" не создается.
+*/
+
+07CC204: 02 00
+;------------------------- end -------------------------
+
