@@ -97131,6 +97131,16 @@
 				"ru": "Отключить фон в интерфейсе настройки громкости",
 				"en": "Disable background in Audio Setup UI"
 			}
+		},
+		"10839": {
+			"id": 10839,
+			"model": "S68v52",
+			"file": "S68v52/10839-swilib.vkp",
+			"mtime": 1717526596000,
+			"title": {
+				"ru": "Библиотека Функций",
+				"en": "Function Library"
+			}
 		}
 	},
 	"A75v20": {
