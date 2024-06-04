@@ -93003,6 +93003,16 @@
 				"ru": "Выход из PersMenu после выбора элемента",
 				"en": "Exit from PersMenu after select an item"
 			}
+		},
+		"10838": {
+			"id": 10838,
+			"model": "E71v45",
+			"file": "E71v45/10838-fix_lsk_on_idle.vkp",
+			"mtime": 1717515378000,
+			"title": {
+				"ru": "Исправить левый софткей на главном экране когда отключена сеть",
+				"en": "Fix left softkey on IDLE when network is disabled"
+			}
 		}
 	},
 	"C81v51": {
