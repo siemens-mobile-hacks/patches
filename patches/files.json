@@ -30924,5 +30924,11 @@
 	],
 	[
 		"E71v45/10837-exit_from_pm_after_select_item.vkp"
+	],
+	[
+		"E71v45/10838-fix_lsk_on_idle.vkp"
+	],
+	[
+		"S68v52/10839-swilib.vkp"
 	]
 ]

@@ -19128,7 +19128,7 @@
 			"id": "10835",
 			"model": "S75v52",
 			"file": "S75v52/10835-fuckingtest.vkp",
-			"mtime": 1716329762000,
+			"mtime": 1717517672000,
 			"title": {
 				"ru": "ТЕСТ ПАТЧ",
 				"en": "TEST PATCH"
@@ -91491,7 +91491,7 @@
 			"id": "10075",
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib.vkp",
-			"mtime": 1716487092000,
+			"mtime": 1717528016000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -93002,6 +93002,16 @@
 			"title": {
 				"ru": "Выход из PersMenu после выбора элемента",
 				"en": "Exit from PersMenu after select an item"
+			}
+		},
+		"10838": {
+			"id": "10838",
+			"model": "E71v45",
+			"file": "E71v45/10838-fix_lsk_on_idle.vkp",
+			"mtime": 1717515378000,
+			"title": {
+				"ru": "Исправить левый софткей на главном экране когда отключена сеть",
+				"en": "Fix left softkey on IDLE when network is disabled"
 			}
 		}
 	},
@@ -97120,6 +97130,16 @@
 			"title": {
 				"ru": "Отключить фон в интерфейсе настройки громкости",
 				"en": "Disable background in Audio Setup UI"
+			}
+		},
+		"10839": {
+			"id": "10839",
+			"model": "S68v52",
+			"file": "S68v52/10839-swilib.vkp",
+			"mtime": 1717526596000,
+			"title": {
+				"ru": "Библиотека Функций",
+				"en": "Function Library"
 			}
 		}
 	},
