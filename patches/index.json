@@ -93013,6 +93013,16 @@
 				"ru": "Исправить левый софткей на главном экране когда отключена сеть",
 				"en": "Fix left softkey on IDLE when network is disabled"
 			}
+		},
+		"10840": {
+			"id": "10840",
+			"model": "E71v45",
+			"file": "E71v45/10840-change_text_network_search.vkp",
+			"mtime": 1717598270000,
+			"title": {
+				"ru": "Изменить текст 'Поиск сети' когда отключена сеть",
+				"en": "Change 'Network search' text when network is disabled"
+			}
 		}
 	},
 	"C81v51": {
