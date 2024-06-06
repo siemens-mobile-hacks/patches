@@ -1,0 +1,20 @@
+;E71v45
+;Исправить иконку сети когда отключена сеть
+;Fix network icon when network is disabled
+;(c) FIL
+;(r) MAXIM, Виктор89
+;Version: 
+;PatchID: 10841
+;Details: https://patches.kibab.com/patches/details.php5?id=10841
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=e71v45&f=fix_network_icon.zip
+
+/*
+
+*/
+
+05C0FA2: FFF73CFF 06F053FA
+05C744C: 43616D41453A20436F6D6D6F6E4D736748616E646C65723A204361726B697420 10B5054B9847022802D0044B984710BD95208000FBE7C046E3E863A01F0E5CA0
+
+
+;------------------------- end -------------------------
+
