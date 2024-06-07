@@ -93023,6 +93023,17 @@
 				"ru": "Изменить текст 'Поиск сети' когда отключена сеть",
 				"en": "Change 'Network search' text when network is disabled"
 			}
+		},
+		"10841": {
+			"id": "10841",
+			"model": "E71v45",
+			"file": "E71v45/10841-fix_network_icon.vkp",
+			"additionalFile": "E71v45/10841-fix_network_icon.zip",
+			"mtime": 1717673358000,
+			"title": {
+				"ru": "Исправить иконку сети когда отключена сеть",
+				"en": "Fix network icon when network is disabled"
+			}
 		}
 	},
 	"C81v51": {
