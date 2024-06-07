@@ -1,0 +1,19 @@
+;E71v45
+;Меню 'Выключить' вместо 'Факс/данные' по горячей кнопке
+;'Switch off' menu instead of 'Fax/Data' on hotkey
+;(c) FIL
+;(r) Barracuda, Виктор89
+;Version: 
+;PatchID: 10842
+;Details: https://patches.kibab.com/patches/details.php5?id=10842
+/*
+
+*/
+
+0840794: 63896EA0 0xA0702413
+
+08407C4: 7E20 0x2223 ; lgp_id
+08407C8: 7E20 0x2223 ; lgp_id
+
+;------------------------- end -------------------------
+
