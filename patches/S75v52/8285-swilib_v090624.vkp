@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 150424
+;Version: 090624
 ;PatchID: 8285
 ;Details: https://patches.kibab.com/patches/details.php5?id=8285
 ;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v52&f=S75sw52_Functions_library_231017.zip
@@ -187,7 +187,7 @@
 
 0280: 0xA0968D75   ;  A0: int wsprintf_2(WSHDR *,const char *format,...)
 0284: 0xA01F77C3   ;  A1: WSHDR *wstrcpy_2(WSHDR *wshdr_d,WSHDR *wshdr_s)
-;288:              ;  A2: Unicode_GetCharByPosition
+0288: 0xA01F71A9   ;  A2: __thumb uint16_t wsCharAt(const WSHDR *ws, short pos);
 028C: 0xA0253968   ;  A3: void ws2str(WSHDR *ws, char *str, unsigned int size)
 0290: 0xA0969839   ;  A4: WSHDR *AllocWS_2(int len)
 0294: 0xA01F6F7D   ;  A5: void FreeWS_2(WSHDR *wshdr)
@@ -1003,6 +1003,35 @@
 0ECC: 0xA0303035   ; 3B3: __thumb IMGHDR *GetIMGHDRFromCanvasCache(unsigned int CanvasID);
 0ED0: 0xA0902663   ; 3B4: __thumb GetDate_ws(WSHDR *ws, TDate *date, unsigned int unk);
 0ED4: 0xA0902511   ; 3B5: __thumb GetTime_ws(WSHDR *ws, TTime *time, unsigned int unk);
+;0ED8:             ; 3B6: __arm int Obs_SetTransparent(HObj obs, unsigned int unk_3_4_5);
+;0EDC:             ; 3B7: __arm int sys_mkdir_ws(const WSHDR *dirname, unsigned int *err);
+;0EE0:             ; 3B8: __arm int sys_rmdir_ws(const WSHDR *path, unsigned int *err);
+;0EE4:             ; 3B9: __arm int sys_rename_ws(const WSHDR *old_name, const WSHDR *new_name, unsigned int *err);
+;0EE8:             ; 3BA: __arm int sys_unlink_ws(const WSHDR *path, unsigned int *err);
+;0EEC:             ; 3BB: __arm int sys_stat_ws(const WSHDR *path, FSTATS *stat, unsigned int *err);
+;0EF0:             ; 3BC: __arm int isdir_ws(const WSHDR *path, unsigned int *err);
+;0EF4:             ; 3BD: __arm int GetFileAttrib_ws(const WSHDR *path, uint8_t *attr, unsigned int *err);
+;0EF8:             ; 3BE: __arm int SetFileAttrib_ws(const WSHDR *path, uint8_t attr, unsigned int *err);
+;0EFC:             ; 3BF: __arm int FindFirstFile_ws(DIR_ENTRY *dir_entry, const WSHDR *mask, unsigned int *err);
+
+;0F00:             ; 3C0: __thumb int ShowWaitBox(int flags, int message);
+;0F04:             ; 3C1: __thumb int ShowPleaseWaitBox(int flags);
+;0F08:             ; 3C2: __thumb int ShowPBarBox(int flags, int message, PBAR_DESC *pbar_desc, int initial_value, WSHDR *initial_ws);
+;0F0C:             ; 3C3: __thumb int SetPBarValue(int gui_id, int value);
+;0F10:             ; 3C4: __thumb int SetPBarText(int gui_id, WSHDR *ws);
+;0F14:             ; 83C5: void *GetPBarProc3();
+;0F18:             ; 3C6: __thumb void SetHeaderScrollText(void *header, const WSHDR *title, const void *malloc_fn, const void *mfree_fn);
+;0F1C:             ; 3C7: __thumb void SetHeaderExtraText(void *header, const WSHDR *ws, const void *malloc_fn, const void *mfree_fn);
+;0F20:             ; 3C8: __arm int GetMimeType(int uid, WSHDR *mime_type, int unk_0);
+;0F24:             ; 3C9: __thumb int wstrncmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
+;0F28:             ; 3CA: __thumb int wstricmp(const WSHDR *ws1, const WSHDR *ws2);
+;0F2C:             ; 3CB: __thumb int wstrnicmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
+;0F30:             ; 3CC: __arm int PersMenuCSM_Open(const WSHDR *file_name, const WSHDR *dir, int flag, int open_mode);
+;0F34:             ; 3CD: __thumb int wstrtoupper(WSHDR *ws);
+;0F38:             ; 3CE: __thumb int wstrtolower(WSHDR *ws);
+;0F3C:             ; 3CF: __thumb int wstrcapitalize(WSHDR *ws);
+
+0F40: 0xA029F1C3  ; 3D0: __thumb int ShowScreenSaverCodeProtection();
 
 #pragma disable old_equal_ff
 +0
