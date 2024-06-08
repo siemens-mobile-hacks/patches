@@ -93034,6 +93034,16 @@
 				"ru": "Исправить иконку сети когда отключена сеть",
 				"en": "Fix network icon when network is disabled"
 			}
+		},
+		"10842": {
+			"id": "10842",
+			"model": "E71v45",
+			"file": "E71v45/10842-switch_off_menu_instead_of_fax_data.vkp",
+			"mtime": 1717786680000,
+			"title": {
+				"ru": "Меню 'Выключить' вместо 'Факс/данные' по горячей кнопке",
+				"en": "'Switch off' menu instead of 'Fax/Data' on hotkey"
+			}
 		}
 	},
 	"C81v51": {
