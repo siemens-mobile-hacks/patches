@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 040624
+;Version: 080624
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -183,7 +183,7 @@
 
 0280: 0xA093EB4D ; 0A0: wsprintf(WSHDR *,const char *format,...);
 0284: 0xA04FB3CB ; 0A1: wstrcpy
-0288: 0xA04FADB1 ; 0A2: Unicode_GetCharByPosition
+0288: 0xA04FADB1 ; 0A2: __thumb uint16_t wsCharAt(const WSHDR *ws, short pos);
 028C: 0xA0568BA4 ; 0A3: __arm void ws_2str(WSHDR *ws, char *str, unsigned int size);
 0290: 0xA093F611 ; 0A4: AllocWS(int len);
 0294: 0xA04FAB85 ; 0A5: FreeWS_2(WSHDR *wshdr);
@@ -1010,6 +1010,8 @@
 0F34: 0xA04FA78B ; 3CD: __thumb int wstrtoupper(WSHDR *ws);
 0F38: 0xA04FA84D ; 3CE: __thumb int wstrtolower(WSHDR *ws);
 0F3C: 0xA04FA929 ; 3CF: __thumb int wstrcapitalize(WSHDR *ws);
+
+0F40: 0xA05C4EDD ; 3D0: __thumb int ShowScreenSaverCodeProtection();
 
 
 #pragma disable old_equal_ff
