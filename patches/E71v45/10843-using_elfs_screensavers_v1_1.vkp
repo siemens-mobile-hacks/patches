@@ -1,0 +1,21 @@
+;E71v45
+;Использование эльфов-скринсейверов
+;Using ELFs screensavers
+;(c) FIL
+;Version: 1.1
+;PatchID: 10843
+;Details: https://patches.kibab.com/patches/details.php5?id=10843
+/*
+Патч для замены стандартных скринсейверов телефона на скринсейверы-эльфы.
+Посмотреть реализацию эльфа-скринсейвера можно тут: [url]https://github.com/siemens-mobile-hacks/sie_crazy_saver[/url].
+*/
+
+0670C92: 9948 2000
+0670C94: 88F15CEC 01F02EFF
+0672AF4: 43616D41453A204170702E2063616C6C732043616D41455F A021C26810B50248024B0902984710BD09420000AB1E09A0
+
+06710D6: 53F701FF 0020C046 ; bypass default code protection on close screensaver
+
+
+;------------------------- end -------------------------
+
