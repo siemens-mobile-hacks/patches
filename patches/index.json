@@ -19133,6 +19133,16 @@
 				"ru": "ТЕСТ ПАТЧ",
 				"en": "TEST PATCH"
 			}
+		},
+		"10844": {
+			"id": 10844,
+			"model": "S75v52",
+			"file": "S75v52/10844-using_elfs_screensavers_v1_1.vkp",
+			"mtime": 1717874998000,
+			"title": {
+				"ru": "Использование эльфов-скринсейверов",
+				"en": "Using ELFs screensavers"
+			}
 		}
 	},
 	"SL75v31": {
