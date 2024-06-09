@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 080624
+;Version: 090624
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -967,9 +967,9 @@
 ;E90:            ; 3A4
 ;E94:            ; 3A5
 ;E98:            ; 3A6
-;E9C:            ; 3A7
-;EA0:            ; 3A8
-;EA4:            ; 3A9
+0E9C: 0xA094CB67 ; 3A7: __thumb int GUI_NewTimer(void *gui);
+0EA0: 0xA094CCAB ; 3A8: __thumb int GUI_DeleteTimer(void *gui, int id);
+0EA4: 0xA094CBFB ; 3A9: __thumb void GUI_StartTimerProc(void *gui, int id, long timeout, GUI_TimerProc callback);
 ;EA8:            ; 3AA
 ;EAC:            ; 3AB
 ;EB0:            ; 3AC
