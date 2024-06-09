@@ -15074,9 +15074,9 @@
 		"8285": {
 			"id": "8285",
 			"model": "S75v52",
-			"file": "S75v52/8285-swilib.vkp",
+			"file": "S75v52/8285-swilib_v090624.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
-			"mtime": 1713211092000,
+			"mtime": 1717876340000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -19132,6 +19132,16 @@
 			"title": {
 				"ru": "ТЕСТ ПАТЧ",
 				"en": "TEST PATCH"
+			}
+		},
+		"10844": {
+			"id": "10844",
+			"model": "S75v52",
+			"file": "S75v52/10844-using_elfs_screensavers_v1_1.vkp",
+			"mtime": 1717874998000,
+			"title": {
+				"ru": "Использование эльфов-скринсейверов",
+				"en": "Using ELFs screensavers"
 			}
 		}
 	},
@@ -91490,8 +91500,8 @@
 		"10075": {
 			"id": "10075",
 			"model": "E71v45",
-			"file": "E71v45/10075-swilib.vkp",
-			"mtime": 1717528016000,
+			"file": "E71v45/10075-swilib_v080624.vkp",
+			"mtime": 1717866140000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -93043,6 +93053,16 @@
 			"title": {
 				"ru": "Меню 'Выключить' вместо 'Факс/данные' по горячей кнопке",
 				"en": "'Switch off' menu instead of 'Fax/Data' on hotkey"
+			}
+		},
+		"10843": {
+			"id": "10843",
+			"model": "E71v45",
+			"file": "E71v45/10843-using_elfs_screensavers_v1_1.vkp",
+			"mtime": 1717865654000,
+			"title": {
+				"ru": "Использование эльфов-скринсейверов",
+				"en": "Using ELFs screensavers"
 			}
 		}
 	},
