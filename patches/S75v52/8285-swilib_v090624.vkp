@@ -987,6 +987,9 @@
 ; 0E90:            ; 3A4
 ; 0E94:            ; 3A5
 ; 0E98:            ; 3A6
+0E9C: 0xA0975E5B   ; 3A7: __thumb int GUI_NewTimer(void *gui);
+0EA0: 0xA0975F9F   ; 3A8: __thumb int GUI_DeleteTimer(void *gui, int id);
+0EA4: 0xA0975EEF   ; 3A9: __thumb void GUI_StartTimerProc(void *gui, int id, long timeout, GUI_TimerProc callback);
 ; 0E9C:            ; 3A7
 ; 0EA0:            ; 3A8
 ; 0EA4:            ; 3A9
