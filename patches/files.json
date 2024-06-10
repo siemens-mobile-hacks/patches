@@ -28685,7 +28685,7 @@
 	],
 	null,
 	[
-		"E71v45/10075-swilib_v080624.vkp"
+		"E71v45/10075-swilib_v090624.vkp"
 	],
 	[
 		"EL71v45/10076-library.vkp"
@@ -30942,9 +30942,12 @@
 		"E71v45/10842-switch_off_menu_instead_of_fax_data.vkp"
 	],
 	[
-		"E71v45/10843-using_elfs_screensavers_v1_1.vkp"
+		"E71v45/10843-using_elfs_screensavers_v1_2.vkp"
 	],
 	[
-		"S75v52/10844-using_elfs_screensavers_v1_1.vkp"
+		"S75v52/10844-using_elfs_screensavers_v1_2.vkp"
+	],
+	[
+		"S75v52/10845-change_dirs_of_theme_res_v1_1.vkp"
 	]
 ]

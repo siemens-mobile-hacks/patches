@@ -15076,7 +15076,7 @@
 			"model": "S75v52",
 			"file": "S75v52/8285-swilib_v090624.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
-			"mtime": 1717876340000,
+			"mtime": 1717919082000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -19137,11 +19137,21 @@
 		"10844": {
 			"id": "10844",
 			"model": "S75v52",
-			"file": "S75v52/10844-using_elfs_screensavers_v1_1.vkp",
-			"mtime": 1717874998000,
+			"file": "S75v52/10844-using_elfs_screensavers_v1_2.vkp",
+			"mtime": 1717924222000,
 			"title": {
 				"ru": "Использование эльфов-скринсейверов",
 				"en": "Using ELFs screensavers"
+			}
+		},
+		"10845": {
+			"id": "10845",
+			"model": "S75v52",
+			"file": "S75v52/10845-change_dirs_of_theme_res_v1_1.vkp",
+			"mtime": 1717946734000,
+			"title": {
+				"ru": "Задать директорию ресурсов темы",
+				"en": "Set directory of theme resources"
 			}
 		}
 	},
@@ -91500,8 +91510,8 @@
 		"10075": {
 			"id": "10075",
 			"model": "E71v45",
-			"file": "E71v45/10075-swilib_v080624.vkp",
-			"mtime": 1717866140000,
+			"file": "E71v45/10075-swilib_v090624.vkp",
+			"mtime": 1717914726000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -93058,8 +93068,8 @@
 		"10843": {
 			"id": "10843",
 			"model": "E71v45",
-			"file": "E71v45/10843-using_elfs_screensavers_v1_1.vkp",
-			"mtime": 1717865654000,
+			"file": "E71v45/10843-using_elfs_screensavers_v1_2.vkp",
+			"mtime": 1717923730000,
 			"title": {
 				"ru": "Использование эльфов-скринсейверов",
 				"en": "Using ELFs screensavers"

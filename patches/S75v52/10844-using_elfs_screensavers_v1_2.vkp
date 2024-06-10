@@ -3,7 +3,7 @@
 ;Using ELFs screensavers
 ;(c) FIL
 ;(p) Виктор89
-;Version: 1.1
+;Version: 1.2
 ;PatchID: 10844
 ;Details: https://patches.kibab.com/patches/details.php5?id=10844
 /*
@@ -15,7 +15,9 @@
 0303CFC: E8F0BAEE 0AF020FF
 030EB40: 4572726F722061742070617369635F4D6F6E6F436F6E7472 A021C26810B50248024B0902984710BD09420000942A09A0
 
-03040FE: 9BF760F8 0020C046 ; bypass default code protection on close screensaver
+03040FE: 9BF760F8 0020C046
+0304104: 10BD FFE7
+030410A: 10BD FFE7
 
 ;------------------------- end -------------------------
 
