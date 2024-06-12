@@ -97202,6 +97202,16 @@
 				"ru": "Библиотека Функций",
 				"en": "Function Library"
 			}
+		},
+		"10846": {
+			"id": "10846",
+			"model": "S68v52",
+			"file": "S68v52/10846-change_dirs_of_theme_res_v1_1.vkp",
+			"mtime": 1718128794000,
+			"title": {
+				"ru": "Задать директорию ресурсов темы",
+				"en": "Set directory of theme resources"
+			}
 		}
 	},
 	"A75v20": {
