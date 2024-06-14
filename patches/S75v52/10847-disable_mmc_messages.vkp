@@ -1,0 +1,15 @@
+;S75v52
+;Отключить сообщения 'Карта неисправна или неотформатирована!', 'Потеря данных! Исп. опцию "Вынуть карту".'
+;Disable messages 'MultiMedia-Card defect or not formatted!', 'Data lost! Use option 'Eject card'.'
+;(c) FIL
+;Version: 
+;PatchID: 10847
+;Details: https://patches.kibab.com/patches/details.php5?id=10847
+/*
+
+*/
+
+029CBF8: 4FF102ED C046C046
+
+;------------------------- end -------------------------
+

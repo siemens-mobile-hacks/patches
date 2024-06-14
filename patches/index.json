@@ -19153,6 +19153,16 @@
 				"ru": "Задать директорию ресурсов темы",
 				"en": "Set directory of theme resources"
 			}
+		},
+		"10847": {
+			"id": 10847,
+			"model": "S75v52",
+			"file": "S75v52/10847-disable_mmc_messages.vkp",
+			"mtime": 1718380774000,
+			"title": {
+				"ru": "Отключить сообщения 'Карта неисправна или неотформатирована!', 'Потеря данных! Исп. опцию \"Вынуть карту\".'",
+				"en": "Disable messages 'MultiMedia-Card defect or not formatted!', 'Data lost! Use option 'Eject card'.'"
+			}
 		}
 	},
 	"SL75v31": {
