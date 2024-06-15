@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 140624
+;Version: 150624
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -1013,6 +1013,7 @@
 
 0F40: 0xA05C4EDD ; 3D0: __thumb int ShowScreenSaverCodeProtection();
 0F44: 0xA069FD2C ; 3D1: __arm void MediaProc_LaunchLastPlayback();
+0F48: 0xA05C4ED5 ; 3D2: __thumb int GetScreenSaverType();
 
 
 #pragma disable old_equal_ff
