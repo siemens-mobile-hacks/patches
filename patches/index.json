@@ -15074,9 +15074,9 @@
 		"8285": {
 			"id": "8285",
 			"model": "S75v52",
-			"file": "S75v52/8285-swilib_v090624.vkp",
+			"file": "S75v52/8285-swilib_v140624.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
-			"mtime": 1717919082000,
+			"mtime": 1718377772000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -19152,6 +19152,16 @@
 			"title": {
 				"ru": "Задать директорию ресурсов темы",
 				"en": "Set directory of theme resources"
+			}
+		},
+		"10847": {
+			"id": "10847",
+			"model": "S75v52",
+			"file": "S75v52/10847-disable_mmc_messages.vkp",
+			"mtime": 1718380774000,
+			"title": {
+				"ru": "Отключить сообщения 'Карта неисправна или неотформатирована!', 'Потеря данных! Исп. опцию \"Вынуть карту\".'",
+				"en": "Disable messages 'MultiMedia-Card defect or not formatted!', 'Data lost! Use option 'Eject card'.'"
 			}
 		}
 	},
@@ -91510,8 +91520,8 @@
 		"10075": {
 			"id": "10075",
 			"model": "E71v45",
-			"file": "E71v45/10075-swilib_v090624.vkp",
-			"mtime": 1717914726000,
+			"file": "E71v45/10075-swilib_v140624.vkp",
+			"mtime": 1718377676000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"

@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 090624
+;Version: 140624
 ;PatchID: 8285
 ;Details: https://patches.kibab.com/patches/details.php5?id=8285
 ;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v52&f=S75sw52_Functions_library_231017.zip
@@ -1035,6 +1035,7 @@
 ;0F3C:             ; 3CF: __thumb int wstrcapitalize(WSHDR *ws);
 
 0F40: 0xA029F1C3  ; 3D0: __thumb int ShowScreenSaverCodeProtection();
+0F44: 0xA052E243  ; 3D1: __thumb void MediaProc_LaunchLastPlayback();
 
 #pragma disable old_equal_ff
 +0

@@ -23539,7 +23539,7 @@
 		"S75v52/8284-Disable_delimiters.vkp"
 	],
 	[
-		"S75v52/8285-swilib_v090624.vkp",
+		"S75v52/8285-swilib_v140624.vkp",
 		"S75v52/8285-S75sw52_Functions_library_231017.zip"
 	],
 	null,
@@ -28685,7 +28685,7 @@
 	],
 	null,
 	[
-		"E71v45/10075-swilib_v090624.vkp"
+		"E71v45/10075-swilib_v140624.vkp"
 	],
 	[
 		"EL71v45/10076-library.vkp"
@@ -30952,5 +30952,8 @@
 	],
 	[
 		"S68v52/10846-change_dirs_of_theme_res_v1_1.vkp"
+	],
+	[
+		"S75v52/10847-disable_mmc_messages.vkp"
 	]
 ]
