@@ -23539,7 +23539,7 @@
 		"S75v52/8284-Disable_delimiters.vkp"
 	],
 	[
-		"S75v52/8285-swilib_v140624.vkp",
+		"S75v52/8285-swilib_v150624.vkp",
 		"S75v52/8285-S75sw52_Functions_library_231017.zip"
 	],
 	null,
@@ -28685,7 +28685,7 @@
 	],
 	null,
 	[
-		"E71v45/10075-swilib_v140624.vkp"
+		"E71v45/10075-swilib_v150624.vkp"
 	],
 	[
 		"EL71v45/10076-library.vkp"
@@ -30942,10 +30942,10 @@
 		"E71v45/10842-switch_off_menu_instead_of_fax_data.vkp"
 	],
 	[
-		"E71v45/10843-using_elfs_screensavers_v1_2.vkp"
+		"E71v45/10843-using_elfs_screensavers_v1_5.vkp"
 	],
 	[
-		"S75v52/10844-using_elfs_screensavers_v1_2.vkp"
+		"S75v52/10844-using_elfs_screensavers_v1_5.vkp"
 	],
 	[
 		"S75v52/10845-change_dirs_of_theme_res_v1_1.vkp"
