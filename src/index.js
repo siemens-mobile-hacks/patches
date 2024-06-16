@@ -1,8 +1,8 @@
 import fs from 'fs';
+import path from 'path';
 import yauzl from 'yauzl';
 import iconv from 'iconv-lite';
 import crypto from 'crypto';
-import path from 'path';
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 import { globSync } from 'glob';
@@ -11,9 +11,6 @@ import { KibabAPI } from './KibabAPI.js';
 
 // patches.kibab.com timezone
 process.env.TZ = 'Europe/Moscow'; // thanks Viktor89
-
-const OUT_DIR = `${import.meta.dirname}/../patches`;
-const DELETED_DIR = `${import.meta.dirname}/../deleted`;
 
 const argv = yargs(hideBin(process.argv))
 	.option('cookie', {
@@ -36,7 +33,18 @@ const argv = yargs(hideBin(process.argv))
 		description: 'Patches IDs for partial sync.',
 		default: false
 	})
+	.option('output', {
+		type: 'string',
+		 description: 'Output dir.',
+		default: path.resolve(`${import.meta.dirname}/../`)
+	})
 	.parse();
+
+const OUT_DIR = argv.output;
+if (!fs.existsSync(OUT_DIR)) {
+	console.error(`Output dir not exists: ${OUT_DIR}`);
+	process.exit(1);
+}
 
 if (!argv.cookie) {
 	console.error(`--cookie is not set!`);
@@ -330,17 +338,6 @@ function saveIndex(indexData) {
 	fs.writeFileSync(`${OUT_DIR}/index.json`, JSON.stringify(indexData, null, '\t'));
 }
 
-function loadDeletedIndex() {
-	let indexData = {};
-	if (fs.existsSync(`${DELETED_DIR}/index.json`))
-		indexData = JSON.parse(fs.readFileSync(`${DELETED_DIR}/index.json`));
-	return indexData;
-}
-
-function saveDeletedIndex(indexData) {
-	fs.writeFileSync(`${DELETED_DIR}/index.json`, JSON.stringify(indexData, null, '\t'));
-}
-
 function findBrokenFiles(blob) {
 	let m;
 	let RE_BROKEN_FILES = /fopen\((.*?)\):/gi;
@@ -411,10 +408,6 @@ function getChunks(arr, size) {
 		chunks.push(chunk);
 	}
 	return chunks;
-}
-
-function addPrefixToFile(file, prefix) {
-	return `${path.dirname(file)}/${prefix}${path.basename(file)}`;
 }
 
 async function wget(url) {
