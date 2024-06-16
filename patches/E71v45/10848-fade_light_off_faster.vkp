@@ -1,0 +1,15 @@
+;E71v45
+;Ускоренное гашение подсветки
+;Fade light off faster
+;(c) FIL
+;Version: 
+;PatchID: 10848
+;Details: https://patches.kibab.com/patches/details.php5?id=10848
+/*
+
+*/
+
+0936190: 021C FF22
+
+;------------------------- end -------------------------
+
