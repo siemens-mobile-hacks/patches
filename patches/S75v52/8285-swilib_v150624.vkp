@@ -29,7 +29,7 @@
 002C: 0xA02532E8   ;   B: int fread(int FileHandler, void *cBuffer, int iByteCount, unsigned int *ErrorNumber)
 0030: 0xA0253418   ;   C: unsigned int fwrite(int FileHandler, void const *cBuffer, int iByteCount, unsigned int *ErrorNumber)
 0034: 0xA025317C   ;   D: void fclose(int FileHandler, unsigned int *ErrorNumber)
-;038:              ;   E: 
+;038:              ;   E:
 003C: 0xA02531DC   ;   F: unsigned int lseek(int FileHandler, unsigned int offset, unsigned int origin, unsigned int *ErrorNumber, unsigned int *ErrorNumber2)
 
 0040: 0xA0252E20   ;  10: int mkdir(const char *cFileName, unsigned int *ErrorNumber)
@@ -107,7 +107,7 @@
 0150: 0xA02C1AC9   ;  54: int StrToInt(char *s, char **endp)
 ;154:              ;  55: SwitchVibraOnOff
 0158: 0xA006F131   ;  56: PlayVibra
-;15C:              ;  57: IsCallAfterTimerStillRunning
+015C: 0xA0093388   ;  57: int IsTimerProc_2(GBSTMR *timer)
 0160: 0xA0FC496C   ;  58: void zeromem_2(void *dest,int n)
 0164: 0xA0FC4A10   ;  59: void *memcpy_2(void *dest,const void *source,int cnt)
 0168: 0xA0904371   ;  5A: KeypressOn(int key)
@@ -121,7 +121,7 @@
 0184: 0xA02CE19B   ;  61: ShowNativeMenu
 0188: 0xA028B8C5   ;  62: SetVibraStatus
 018C: 0xA029E741   ;  63: void MMI_CanvasBuffer_FlushV(int CanvasID)
-0190: 0xA0978820   ;  64: TriggerUpdate
+0190: 0xA0978823   ;  64: void GeneralFuncF1_2(int cmd)
 0194: 0xA09b7495   ;  65: EndCall
 0198: 0xA09b6423   ;  66: EndCallBusy
 019C: 0xA03457b9   ;  67: IsDirectCallActive
@@ -141,10 +141,10 @@
 01D0: 0xA02C935D   ;  74: SHORTCUTREC *GetShortcutRecordByName(char *szShortcutName)
 01D4: 0xA029EC59   ;  75: IsCanvasBufferSet(char CanvasID)
 01D8: 0xA029EC09   ;  76: GetCanvasBufferPicPtr(char CanvasID)
-;1DC:              ;  77: set2color_byPaletteAdr
+01DC: 0xA09719A3   ;  77: void DrwObj_SetColor_2(DRWOBJ *drwobj, const char *pen, const char *brush)
 01E0: 0xA09024ED   ;  78: GetTimeFormat
 01E4: 0xA0903C1D   ;  79: DrawObject2Layer(LCD_Layer *, DRWOBJ *)
-01E8: 0x00006422   ;  7A: GBS_Cmd_4200_UpdateScreen
+;1E8:              ;  7A: void LCDLAYER_Flush(LCDLAYER *layer)
 ;1EC:              ;  7B: GetProfileFilter
 01F0: 0xA01B0D5B   ;  7C: unsigned int SetVibration(unsigned int power)
 01F4: 0xA0D0C6D3   ;  7D: IsIncognitoCall
@@ -183,7 +183,7 @@
 0270: 0xA03040C5   ;  9C: CloseScreensaver
 0274: 0xA02FE82B   ;  9D: GetMissedEventsPtr
 0278: 0xA006F2B1   ;  9E: int GetMissedEventCount(unsigned int Event)
-;27C:              ;  9F: DrawRect
+027C: 0xA0A022D7   ;  9F: void DrawRectangle_2(int x1, int y1, int x2, int y2, int flags, const char *pen, const char *brush)
 
 0280: 0xA0968D75   ;  A0: int wsprintf_2(WSHDR *,const char *format,...)
 0284: 0xA01F77C3   ;  A1: WSHDR *wstrcpy_2(WSHDR *wshdr_d,WSHDR *wshdr_s)
@@ -245,9 +245,9 @@
 0358: 0xA8DACBCC   ;  D6: RamNetOnline
 035C: 0xA8DADCA8   ;  D7: RamScreenBrightness
 ;360:              ;  D8: RamMenuAnywhere
-;364:              ;  D9: 
+;364:              ;  D9:
 0368: 0xA8D6CD14   ;  DA: RamIsShutdown
-036C: 0xA8E920EC   ;  DB: RamMainscreenAccuIcon
+;36C:              ;  DB: int *RamIsNotOnMainscreen()
 0370: 0xA8DCCD34   ;  DC: int *RamRandSeed(void)
 0374: 0xA899F2BC   ;  DD: RamCurrentTrack
 0378: 0xA8D77F78   ;  DE: RamIsSimPresent
@@ -277,11 +277,11 @@
 ;3D0:              ;  F4: Pic_LANI
 03D4: 0xA8D29864   ;  F5: Ram_LCD_Overlay_Layer
 03D8: 0xA8DAE2EC   ;  F6: RAM_LCD_Layer_Base_Ptr
-;3DC:              ;  F7: 
+;3DC:              ;  F7:
 ;3E0:              ;  F8: Additional_PIT_address
 ;3E4:              ;  F9: Additional_PIT_start
 ;3E8:              ;  FA: Additional_PIT_end
-;3EC:              ;  FB: 
+;3EC:              ;  FB:
 ;3F0:              ;  FC: PictureRelocationTable
 ;3F4:              ;  FD: PictureRelocationBase
 ;3F8:              ;  FE: NextPictureMagic
@@ -596,7 +596,7 @@
 ;880:              ; 220: IsSliderClosed
 0884: 0xA01D1380   ; 221: void SetCpuClockLow
 0888: 0xA01D1368   ; 222: void SetCpuClockTempHi
-088C: 0xA052D7C3   ; 223: IsMediaPlayerInBackground 
+088C: 0xA052D7C3   ; 223: IsMediaPlayerInBackground
 0890: 0xA052E0AB   ; 224: CloseMediaPlayer
 0894: 0xA027BF64   ; 225: int PlayMelody_ChangeVolume(int handle,int volume)
 0898: 0xA027CA14   ; 226: int PlayMelody_StopPlayback(int handle)
@@ -607,7 +607,7 @@
 08AC: 0xA02D28B9   ; 22B: CreateRadioButtonList(RadioButtonListDesc *, char num_of_radiobuttons, 0, 0, char prev_setting, void HandlerFunc(int), char flag)
 08B0: 0xA02D21AB   ; 22C: pdcache_getval(char *return, int maxlen_of_return_str, char cachetype,0, *pd_entry_identifier)
 08B4: 0xA02D22A9   ; 22D: pdcache_setval(char *new_value, char cachetype, 0, char *pd_entry_identifier)
-08B8: 0xA052A5D3   ; 22E: OpenExplorer(ExplOpenDesc *)
+08B8: 0xA052A5F7   ; 22E: int OpenExplorer(NativeExplorerData *data)
 08BC: 0xA8D297D4   ; 22F: TDateTimeSettings *RamDateTimeSettings
 
 08C0: 0xA0900FF1   ; 230: int GetTimeZoneShift(int param1, int param2, int timeZone)
@@ -700,7 +700,7 @@
 0A08: 0xA8DD3694   ; 282: char *RamIsRunCamera()
 0A0C: 0xA051A091   ; 283: int RunMidletLinkablely(const char *midlet_name, WSHDR *filename)
 0A10: 0xA0D47007   ; 284: int IsGPRS()
-0A14: 0xA8E2C778   ; 285: char *RamIsEDGE()
+0A14: 0xA0D4700F   ; 285: char IsEDGEAvailable()
 0A18: 0xA0D3E4BF   ; 286: int GetSMSState()
 0A1C: 0xA02D3193   ; 287: int BT_GetLocVisibility()
 0A20: 0xA02EDF5D   ; 288: int GetCurrAudioPath()
@@ -717,7 +717,7 @@
 0A48: 0xA8E938A4   ; 292: char *RamIsAlarmAutorepeatOn()
 0A4C: 0xA8E938AC   ; 293: char *RamAlarmclockHour()
 0A50: 0xA8E938AD   ; 294: char *RamAlarmclockMinute()
-;0A54:             ; 294: 
+;0A54:             ; 294:
 0A58: 0xA028B235   ; 296: void getProfileNameByN(WSHDR *ws, int n, int _0)
 0A5C: 0xA8E8C548   ; 297: char *RamIsSoundRecord()
 0A60: 0xA8E8C5A4   ; 298: char *RamIsSoundRecordQuality()
@@ -810,7 +810,7 @@
 0BA8: 0xA02D2481   ; 2EA: void* SettingsAE_GetEntryList(int set);
 0BAC: 0xA02D2587   ; 2EB: int SettingsAE_RemoveEntry(int set,char *entry,int flag)
 0BB0: 0xA01F1678   ; 2EC: int i2c_transfer(I2C_MSG *msg)
-0BB4: 0xA01F16CC   ; 2ED: int i2c_receive(I2C_MSG *msg) 
+0BB4: 0xA01F16CC   ; 2ED: int i2c_receive(I2C_MSG *msg)
 ;BB8:              ; 2EE: included in EL3.0
 ;BBC:              ; 2EF: included in EL3.0
 
@@ -832,7 +832,7 @@
 0C2C: 0xA00A3AF0   ; 30B: __arm NU_Check_Stack           // CHECK IT!
 0C30: 0xA00A2030   ; 30C: __arm NU_Current_Task_Pointer
 0C34: 0xA00A2CD0   ; 30D: __arm NU_Established_Tasks     // CHECK IT!
-0C38: 0xA00A6900   ; 30E: __arm NU_Task_Information 
+0C38: 0xA00A6900   ; 30E: __arm NU_Task_Information
 0C3C: 0xA00A662C   ; 30F: __arm NU_Task_Pointers         // CHECK IT!
 
 ;C40:              ; 310: __arm NU_Create_Mailbox
@@ -846,10 +846,10 @@
 ;C60:              ; 318: __arm NU_Mailbox_Pointers
 0C64: 0xA00A60D4   ; 319: __arm NU_Create_Queue
 0C68: 0xA00A6174   ; 31A: __arm NU_Delete_Queue
-;C6C:              ; 31B: __arm NU_Reset_Queue 
-;C70:              ; 31C: __arm NU_Send_To_Front_Of_Queue 
+;C6C:              ; 31B: __arm NU_Reset_Queue
+;C70:              ; 31C: __arm NU_Send_To_Front_Of_Queue
 0C74: 0xA00A6194   ; 31D: __arm NU_Send_To_Queue
-;C78:              ; 31E: __arm NU_Broadcast_To_Queue 
+;C78:              ; 31E: __arm NU_Broadcast_To_Queue
 0C7C: 0xA00A6238   ; 31F: __arm NU_Receive_From_Queue
 
 0C80: 0xA00A62E8   ; 320: __arm NU_Established_Queues
@@ -867,7 +867,7 @@
 ;CB0:              ; 32C: __arm NU_Pipe_Pointers
 0CB4: 0xA00A39C0   ; 32D: __arm NU_Create_Semaphore
 0CB8: 0xA00A39F8   ; 32E: __arm NU_Delete_Semaphore
-;CBC:              ; 32F: __arm NU_Reset_Semaphore 
+;CBC:              ; 32F: __arm NU_Reset_Semaphore
 
 0CC0: 0xA00A3A18   ; 330: __arm NU_Obtain_Semaphore
 0CC4: 0xA00A39F8   ; 331: __arm NU_Release_Semaphore      // CHECK IT!
@@ -1040,5 +1040,6 @@
 
 #pragma disable old_equal_ff
 +0
+
 ;------------------------- end -------------------------
 
