@@ -15074,9 +15074,9 @@
 		"8285": {
 			"id": "8285",
 			"model": "S75v52",
-			"file": "S75v52/8285-swilib_v150624.vkp",
+			"file": "S75v52/8285-swilib_v160624.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
-			"mtime": 1718556258000,
+			"mtime": 1718561856000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -91521,7 +91521,7 @@
 			"id": "10075",
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib_v150624.vkp",
-			"mtime": 1718470622000,
+			"mtime": 1718553008000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
