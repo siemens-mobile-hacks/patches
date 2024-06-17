@@ -19153,6 +19153,16 @@
 				"ru": "Отключить сообщения 'Карта неисправна или неотформатирована!', 'Потеря данных! Исп. опцию \"Вынуть карту\".'",
 				"en": "Disable messages 'MultiMedia-Card defect or not formatted!', 'Data lost! Use option 'Eject card'.'"
 			}
+		},
+		"10849": {
+			"id": 10849,
+			"model": "S75v52",
+			"file": "S75v52/10849-fade_light_off_faster.vkp",
+			"mtime": 1718604786000,
+			"title": {
+				"ru": "Ускоренное гашение подсветки",
+				"en": "Fade light off faster"
+			}
 		}
 	},
 	"SL75v31": {
