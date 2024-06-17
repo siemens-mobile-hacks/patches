@@ -19124,16 +19124,6 @@
 				"en": "Fix view icons volumebar"
 			}
 		},
-		"10835": {
-			"id": "10835",
-			"model": "S75v52",
-			"file": "S75v52/10835-fuckingtest.vkp",
-			"mtime": 1717517672000,
-			"title": {
-				"ru": "ТЕСТ ПАТЧ",
-				"en": "TEST PATCH"
-			}
-		},
 		"10844": {
 			"id": "10844",
 			"model": "S75v52",
