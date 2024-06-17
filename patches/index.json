@@ -95657,16 +95657,6 @@
 				"en": "ElfPack [18.03.2024]"
 			}
 		},
-		"10694": {
-			"id": 10694,
-			"model": "C81v51",
-			"file": "C81v51/10694-elfpack3_swilib_20181228_vkp.vkp",
-			"mtime": 1714560022000,
-			"title": {
-				"ru": "Библиотека Функций для elfpack3",
-				"en": "Function Library for elfpack3"
-			}
-		},
 		"10754": {
 			"id": 10754,
 			"model": "C81v51",
