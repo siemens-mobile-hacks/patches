@@ -95641,7 +95641,7 @@
 			"id": "10629",
 			"model": "C81v51",
 			"file": "C81v51/10629-swilib_c81v51_vkp.vkp",
-			"mtime": 1714559936000,
+			"mtime": 1718619064000,
 			"title": {
 				"ru": "Библиотека Функций",
 				"en": "Function Library"
@@ -95655,16 +95655,6 @@
 			"title": {
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
-			}
-		},
-		"10694": {
-			"id": "10694",
-			"model": "C81v51",
-			"file": "C81v51/10694-elfpack3_swilib_20181228_vkp.vkp",
-			"mtime": 1714560022000,
-			"title": {
-				"ru": "Библиотека Функций для elfpack3",
-				"en": "Function Library for elfpack3"
 			}
 		},
 		"10754": {

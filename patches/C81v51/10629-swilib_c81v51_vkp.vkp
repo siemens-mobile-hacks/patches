@@ -53,14 +53,14 @@
 0094: 0xA029BE9B   ;  25: void DrawCanvas(void *data, int x1, int y1, int x2, int y2, int flag_one)
 0098: 0xA09FF981   ;  26: void DrawImgBW(unsigned int x, unsigned int y, unsigned int picture, char *pen, char *brush)
 009C: 0xA029C0C1   ;  27: AddIconToIconbar
-00A0: 0xA102C810   ;  28: double fp_sint2fp(signed int i)
+;0A0:              ;  28: uint32_t GetEELiteMaxID()
 0A4:  0xA01E4F6C   ;  29: getEEFullMaxID
 00A8: 0xA01E5364   ;  2A: int *GetEELiteBlockAddress(short blocknum)
-00AC: 0xA102C6B0   ;  2B: signed int fp_fp2sint(double f)
+;0AC:              ;  2B: int GetEELiteBlockSizeVersion(uint32_t block, int *size, char *version)
 00B0: 0xA01E4A00   ;  2C: getEEFullBlockSizeVersion(int block, *buf1, *buf2)
-00B4: 0xA102BA70   ;  2D: double fp_add(double addend1, double addend2)
-00B8: 0xA102C9D0   ;  2E: double fp_mul(double factor1, double factor2)
-00BC: 0xA102C084   ;  2F: double fp_div(double divisor, double divident)
+;0B4:              ;  2D: int StartWriteEELiteBlock(uint32_t block, uint32_t size, uint32_t version, int *null)
+;0B8:              ;  2E: int FinishWriteEELiteBlock(uint32_t block, int *null)
+;0BC:              ;  2F: int DeleteEELiteBlock(uint32_t block, int *null)
 
 00C0: 0xA01E6144   ;  30: WriteEELiteBlock
 00C4: 0xA0FFA861   ;  31: char *strrchr_2(const char *s,int c)
@@ -103,7 +103,7 @@
 0150: 0xA02C4AD1   ;  54: StrToInt
 ;154:              ;  55: SwitchVibraOnOff
 0158: 0xA006F131   ;  56: PlayVibra
-;15C:              ;  57: IsCallAfterTimerStillRunning
+015C: 0xA0093388   ;  57: int IsTimerProc_2(GBSTMR *timer)
 0160: 0xA0FF9D34   ;  58: void zeromem_2(void *dest,int n)
 0164: 0xA0FF9DD8   ;  59: void *memcpy_2(void *dest,const void *source,int cnt)
 0168: 0xA0913A59   ;  5A: KeypressOn(int key)
@@ -117,7 +117,7 @@
 0184: 0xA02D11A3   ;  61: ShowNativeMenu
 0188: 0xA028AC3D   ;  62: SetVibraStatus
 018C: 0xA029D6B9   ;  63: void MMI_CanvasBuffer_FlushV(int CanvasID)
-0190: 0xA096E08C   ;  64: TriggerUpdate
+0190: 0xA096E0F7   ;  64: void GeneralFuncF1_2(int cmd)
 0194: 0xA09B448D   ;  65: EndCall
 0198: 0xA09B341B   ;  66: EndCallBusy
 019C: 0xA034F059   ;  67: IsDirectCallActive
@@ -135,9 +135,9 @@
 01C8: 0xA090BFDD   ;  72: SetCurrentSecondOfCall
 01CC: 0xA0D2921F   ;  73: int GetTypeOfCall(int type)
 01D0: 0xA02CC365   ;  74: SHORTCUTREC *GetShortcutRecordByName(char *szShortcutName)
-01D4: 0xA029DBD1   ;  75: void StoreXYWHtoRECT_2(void *RECT,int x,int y,int w,int h)
+;1D4:              ;  75: int IsCanvasBufferSet(char canvas_id)
 01D8: 0xA029DB81   ;  76: GetCanvasBufferPicPtr(char CanvasID)
-;1DC:              ;  77: set2color_byPaletteAdr
+01DC: 0xA0967277   ;  77: void DrwObj_SetColor_2(DRWOBJ *drwobj, const char *pen, const char *brush)
 01E0: 0xA0911BD5   ;  78: GetTimeFormat
 01E4: 0xA0913331   ;  79: void DrawObject_2(DRWOBJ *)
 01E8: 0xA096B605   ;  7A: UpdateDisplayByLayerPtr(LCD_Layer *)
@@ -180,7 +180,7 @@
 0270: 0xA0304C21   ;  9C: CloseScreensaver
 0274: 0xA02FF387   ;  9D: GetMissedEventsPtr
 0278: 0xA006F2B1   ;  9E: int GetMissedEventCount(unsigned int Event)
-;27C:              ;  9F: DrawRect
+027C: 0xA09FF2CF   ;  9F: void DrawRectangle_2(int x1, int y1, int x2, int y2, int flags, const char *pen, const char *brush)
 
 0280: 0xA095E6E5   ;  A0: int wsprintf_2(WSHDR *,const char *format,...)
 0284: 0xA01F6D6B   ;  A1: WSHDR *wstrcpy_2(WSHDR *wshdr_d,WSHDR *wshdr_s)
@@ -244,7 +244,7 @@
 ;360:              ;  D8: RamMenuAnywhere
 ;364:              ;  D9: RamShutdownMode
 0368: 0xA8E2CAC8   ;  DA: RamIsShutdown
-036C: 0xA8F10D0C   ;  DB: RamMainscreenAccuIcon
+;36C:              ;  DB: int *RamIsNotOnMainscreen()
 0370: 0xA8E4BAB8   ;  DC: int *RamRandSeed()
 0374: 0xA899F2BC   ;  DD: RamCurrentTrack
 0378: 0xA8DF6D00   ;  DE: RamIsSimPresent
@@ -274,11 +274,11 @@
 ;3D0:              ;  F4: Pic_LANI
 03D4: 0xA8DA85EC   ;  F5: Ram_LCD_Overlay_Layer
 03D8: 0xA8E2D070   ;  F6: RAM_LCD_Layer_Base_Ptr
-;3DC:              ;  F7: 
+;3DC:              ;  F7:
 ;3E0:              ;  F8: Additional_PIT_address
 ;3E4:              ;  F9: Additional_PIT_start
 ;3E8:              ;  FA: Additional_PIT_end
-;3EC:              ;  FB: 
+;3EC:              ;  FB:
 ;3F0:              ;  FC: PictureRelocationTable
 ;3F4:              ;  FD: PictureRelocationBase
 ;3F8:              ;  FE: NextPictureMagic
@@ -599,15 +599,15 @@
 08AC: 0xA02D58C1   ; 22B: CreateRadioButtonList(RadioButtonListDesc *, char num_of_radiobuttons, 0, 0, char prev_setting, void HandlerFunc(int), char flag)
 08B0: 0xA02D51B3   ; 22C: pdcache_getval(char *return, int maxlen_of_return_str, char cachetype,0, *pd_entry_identifier)
 08B4: 0xA02D52B1   ; 22D: pdcache_setval(char *new_value, char cachetype, 0, char *pd_entry_identifier)
-08B8: 0xA0549383   ; 22E: OpenExplorer(ExplOpenDesc *)
+08B8: 0xA05493A7   ; 22E: int OpenExplorer(NativeExplorerData *data)
 08BC: 0xA8DA855C   ; 22F: TDateTimeSettings *RamDateTimeSettings
 08C0: 0xA09106D9   ; 230: int GetTimeZoneShift(int param1, int param2, int timeZone)
 08C4: 0xA8DA8504   ; 231: TAppointment *RamAppointment
 08C8: 0xA0092848   ; 232: GBS_DestroyMessage(GBS_MSG *)
-08CC: 0xA061BF73   ; 233: void GetAllEmail() 
-08D0: 0xA09515C7   ; 238: __arm void SendAutoUSSDack(void);
-08D4: 0xA01E4ECC   ; 239: __arm int EEFullDeleteBlock(unsigned int block,int cepid,int msg);
-08D8: 0xA01E5038   ; 23A: __arm  int EEFullCreateBlock(unsigned int block,int size,int version,int cepid,int msg);
+08CC: 0xA061BF73   ; 233: void GetAllEmail()
+;8D0:              ; 238: int GetLunarDate(const TDate *date, TDate *lunar_date)
+;8D4:              ; 239: int GetLunarYearID(int year)
+;8D8:              ; 23A: int GetLunarAnimal(int year)
 ;8EC:              ; 23B: void DisableIconBar(int disable)
 ;8F0:              ; 23C: int SetCurrentGPRSProfile(int profile)
 08F4: 0xA0F39299   ; 23D: void MD5_Init(MD5_CTX *c)
@@ -628,7 +628,7 @@
 094C: 0xA8E63BE2   ; 253: char *RamLastCallNum();
 0950: 0xA05493A7   ; 254: int StartNativeExplorer(NativeExplorerData* data);
 0954: 0xA0974D02   ; 255: void MenuSetUserPointer(void *gui,void *user_pointer);
-0958: 0xA05C6FEE   ; 256: isSetupTheme();
+;958:              ; 256: const char *RamNameOfReceivedOrSentFile()
 095C: 0xA0935578   ; 257: isSendReceiveFile();
 0960: 0xA096BB20   ; 258: int CalcBitmapSize(short w,short h, char typy);
 0964: 0xA09A00D8   ; 259: HObj Obs_CreateObject(int uid_in, int uid_out, int prio, int msg_callback, int emb4, int sync,unsigned int *ErrorNumber);
@@ -675,7 +675,7 @@
 0A7C: 0xA8DA285C   ; 29F: char *RamIsBTHeadsetConnected()
 
 0A80: 0xA029E954   ; 2A0: int GetAlarmclockState(int state)
-;0A84: 0x ; 2A1: 
+;0A84: 0x ; 2A1:
 ;0A88: 0x ; 2A2:
 0A8C: 0xA0971E31   ; 2A3: __swi __arm void UpdateMenuCursorItem(void *gui, int n)
 0A90: 0xA096EC93   ; 2A4: void *GetMenuGUI(void *malloc_adr, void *mfree_adr)
@@ -756,7 +756,7 @@
 0BAC: 0xA02D558F   ; 2EB: __swi __arm  int SettingsAE_RemoveEntry(int set,char *entry,int flag)
 0BB0: 0xA01F0C20   ; 2EC: __swi __arm int i2c_transfer(I2C_MSG *msg)
 0BB4: 0xA01F0C74   ; 2ED: __swi __arm int i2c_receive(I2C_MSG *msg)
-0BB8: 0xA0099AC4   ; 2EE: __swi __arm unsigned int GetMemUsedByCepID(short cepid)
+;BB8:              ; 2EE: int elfclose(void *ex)
 
 0C00: 0xA00A2420   ; 300: __arm NU_Create_Task
 0C04: 0xA00A253C   ; 301: __arm NU_Delete_Task
@@ -906,5 +906,6 @@
 0E4C: 0xA8DB49FC   ; 393: void *MopiResourcePool()
 #pragma disable old_equal_ff
 +0
+
 ;------------------------- end -------------------------
 
