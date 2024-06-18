@@ -1,0 +1,14 @@
+;S75v52
+;Ускоренное гашение подсветки
+;Fade light off faster
+;(c) FIL
+;Version: 
+;PatchID: 10849
+;Details: https://patches.kibab.com/patches/details.php5?id=10849
+/*
+
+*/
+
+0962856: 021C FF22
+;------------------------- end -------------------------
+

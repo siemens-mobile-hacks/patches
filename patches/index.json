@@ -19127,8 +19127,8 @@
 		"10844": {
 			"id": "10844",
 			"model": "S75v52",
-			"file": "S75v52/10844-using_elfs_screensavers_v1_5.vkp",
-			"mtime": 1718481594000,
+			"file": "S75v52/10844-using_elfs_screensavers_v1_6.vkp",
+			"mtime": 1718524408000,
 			"title": {
 				"ru": "Использование эльфов-скринсейверов",
 				"en": "Using ELFs screensavers"
@@ -19152,6 +19152,16 @@
 			"title": {
 				"ru": "Отключить сообщения 'Карта неисправна или неотформатирована!', 'Потеря данных! Исп. опцию \"Вынуть карту\".'",
 				"en": "Disable messages 'MultiMedia-Card defect or not formatted!', 'Data lost! Use option 'Eject card'.'"
+			}
+		},
+		"10849": {
+			"id": "10849",
+			"model": "S75v52",
+			"file": "S75v52/10849-fade_light_off_faster.vkp",
+			"mtime": 1718604786000,
+			"title": {
+				"ru": "Ускоренное гашение подсветки",
+				"en": "Fade light off faster"
 			}
 		}
 	},

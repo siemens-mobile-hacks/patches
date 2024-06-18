@@ -54,7 +54,6 @@ This is not always an error, some patches contain commented lines.
 | 640 | S45iv4 | [Список ссылок и звуков<br>Links & sound list](https://patches.kibab.com/patches/details.php5?id=640) |
 | 2167 | S75v24 | [Отключить появление окна "Помощника" при старте телефона<br>Disable "Assistant" at startup](https://patches.kibab.com/patches/details.php5?id=2167) |
 | 2541 | S75v26 | [Смена имени телефона в *#06#<br>Rename phone in *#06#](https://patches.kibab.com/patches/details.php5?id=2541) |
-| 10835 | S75v52 | [ТЕСТ ПАТЧ<br>TEST PATCH](https://patches.kibab.com/patches/details.php5?id=10835) |
 | 1688 | SL45iv56 | [Исправление предупредительного сигнала об окончании батарейки<br>Modify Battery Empty Warning Sound](https://patches.kibab.com/patches/details.php5?id=1688) |
 | 1747 | SL45iv56 | [Скрыть, отцентрировать и т.п. дату и время<br>Remove, center etc. Date & Clock](https://patches.kibab.com/patches/details.php5?id=1747) |
 | 1892 | SL45iv56 | [DSSM. Перемещение строки даты/часов и коллекция перемещений<br>DSSM. Date/time string style & movement collection](https://patches.kibab.com/patches/details.php5?id=1892) |
