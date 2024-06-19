@@ -93094,6 +93094,16 @@
 				"ru": "Ускоренное гашение подсветки",
 				"en": "Fade light off faster"
 			}
+		},
+		"10850": {
+			"id": 10850,
+			"model": "E71v45",
+			"file": "E71v45/10850-Airplane_mode_E45.vkp",
+			"mtime": 1718827000000,
+			"title": {
+				"ru": "Авиарежим с автовключением",
+				"en": "Airplane mode with auto-on"
+			}
 		}
 	},
 	"C81v51": {
