@@ -93078,11 +93078,31 @@
 		"10843": {
 			"id": "10843",
 			"model": "E71v45",
-			"file": "E71v45/10843-using_elfs_screensavers_v1_5.vkp",
-			"mtime": 1718478376000,
+			"file": "E71v45/10843-using_elfs_screensavers_v1_6.vkp",
+			"mtime": 1718522540000,
 			"title": {
 				"ru": "Использование эльфов-скринсейверов",
 				"en": "Using ELFs screensavers"
+			}
+		},
+		"10848": {
+			"id": "10848",
+			"model": "E71v45",
+			"file": "E71v45/10848-fade_light_off_faster.vkp",
+			"mtime": 1718552220000,
+			"title": {
+				"ru": "Ускоренное гашение подсветки",
+				"en": "Fade light off faster"
+			}
+		},
+		"10850": {
+			"id": "10850",
+			"model": "E71v45",
+			"file": "E71v45/10850-Airplane_mode_E45.vkp",
+			"mtime": 1718827000000,
+			"title": {
+				"ru": "Авиарежим с автовключением",
+				"en": "Airplane mode with auto-on"
 			}
 		}
 	},

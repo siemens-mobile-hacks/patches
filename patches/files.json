@@ -30938,7 +30938,7 @@
 		"E71v45/10842-switch_off_menu_instead_of_fax_data.vkp"
 	],
 	[
-		"E71v45/10843-using_elfs_screensavers_v1_5.vkp"
+		"E71v45/10843-using_elfs_screensavers_v1_6.vkp"
 	],
 	[
 		"S75v52/10844-using_elfs_screensavers_v1_6.vkp"
@@ -30952,8 +30952,13 @@
 	[
 		"S75v52/10847-disable_mmc_messages.vkp"
 	],
-	null,
+	[
+		"E71v45/10848-fade_light_off_faster.vkp"
+	],
 	[
 		"S75v52/10849-fade_light_off_faster.vkp"
+	],
+	[
+		"E71v45/10850-Airplane_mode_E45.vkp"
 	]
 ]
