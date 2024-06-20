@@ -1018,7 +1018,7 @@
 
 ;EC0:              ; 3B0: void SettingsAE_RegisterListener(SettingsAE_ListenerProc proc, int set_id, const char *entry, const char *keyword)
 ;EC4:              ; 3B1: void SettingsAE_DeregisterListener(SettingsAE_ListenerProc proc, int set_id, const char *entry, const char *keyword)
-;EC8:              ; 3B2: const WSHDR *GetLastAudioTrackDir()
+0EC8: 0xA054C6C1   ; 3B2: const WSHDR *GetLastAudioTrackDir()
 ;ECC:              ; 3B3: IMGHDR *GetIMGHDRFromCanvasCache(char canvas_id)
 ;ED0:              ; 3B4: void GetDate_ws(WSHDR *ws, const TDate *date, unsigned int unk)
 ;ED4:              ; 3B5: void GetTime_ws(WSHDR *ws, const TTime *time, unsigned int unk)
