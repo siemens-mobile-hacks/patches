@@ -9,6 +9,7 @@
 
 */
 
+; C81v51
 +00074000
 #pragma enable old_equal_ff
 
@@ -1052,7 +1053,7 @@
 ;F40:              ; 3D0: int ShowScreenSaverCodeProtection()
 ;F44:              ; 3D1: void MediaProc_LaunchLastPlayback()
 ;F48:              ; 3D2: int GetScreenSaverType()
-
+0F4C: 0xA090E36B   ; 3D3: void IllumFilterSet(int flags, int unk)
 #pragma enable old_equal_ff
 +0
 
