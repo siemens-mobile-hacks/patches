@@ -95747,6 +95747,16 @@
 				"ru": "Отключить фон в интерфейсе настройки громкости",
 				"en": "Disable background in Audio Setup UI"
 			}
+		},
+		"10852": {
+			"id": 10852,
+			"model": "C81v51",
+			"file": "C81v51/10852-fade_light_off_faster.vkp",
+			"mtime": 1718888642000,
+			"title": {
+				"ru": "Ускоренное гашение подсветки",
+				"en": "Fade light off faster"
+			}
 		}
 	},
 	"C81v38": {
