@@ -93104,6 +93104,16 @@
 				"ru": "Авиарежим с автовключением",
 				"en": "Airplane mode with auto-on"
 			}
+		},
+		"10851": {
+			"id": 10851,
+			"model": "E71v45",
+			"file": "E71v45/10851-invert_colors_in_service_mode.vkp",
+			"mtime": 1718880366000,
+			"title": {
+				"ru": "Инвентировать цвета в Service Mode",
+				"en": "Invert colors in Service Mode"
+			}
 		}
 	},
 	"C81v51": {

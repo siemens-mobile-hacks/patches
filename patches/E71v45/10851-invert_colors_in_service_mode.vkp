@@ -1,0 +1,16 @@
+;E71v45
+;Инвентировать цвета в Service Mode
+;Invert colors in Service Mode
+;(c) FIL
+;Version: 
+;PatchID: 10851
+;Details: https://patches.kibab.com/patches/details.php5?id=10851
+/*
+
+
+*/
+
+063BB32: 00 01 ; bg palette index
+063BB8A: 01 00 ; fg palette index
+;------------------------- end -------------------------
+
