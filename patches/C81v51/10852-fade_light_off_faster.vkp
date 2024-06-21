@@ -1,0 +1,15 @@
+;C81v51
+;Ускоренное гашение подсветки
+;Fade light off faster
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10852
+;Details: https://patches.kibab.com/patches/details.php5?id=10852
+/*
+
+*/
+
+09581C6: 021C FF22
+;------------------------- end -------------------------
+

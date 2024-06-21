@@ -1,3 +1,35 @@
+### Patches with errors
+[C81v51/10629-swilib_c81v51_vkp.vkp](https://patches.kibab.com/patches/details.php5?id=10629)
+
+Warning: Useless "#pragma enable old_equal_ff" has no effect at line 1057 col 1
+You can safely remove this line.
+```
+  1054 | ;F44:              ; 3D1: void MediaProc_LaunchLastPlayback()
+  1055 | ;F48:              ; 3D2: int GetScreenSaverType()
+  1056 | 0F4C: 0xA090E36B   ; 3D3: void IllumFilterSet(int flags, int unk)
+> 1057 | #pragma enable old_equal_ff
+       | ^
+  1058 | +0
+  1059 | 
+  1060 | ;------------------------- end -------------------------
+
+```
+
+Warning: Uncanceled pragma "old_equal_ff" at line 14 col 1
+Please put "#pragma disable old_equal_ff" at the end of the patch.
+```
+    11 | 
+    12 | ; C81v51
+    13 | +00074000
+>   14 | #pragma enable old_equal_ff
+       | ^
+    15 | 
+    16 | 0000: 0xA0002070   ;   0: void loopback0()
+    17 | 0004: 0xA0002070   ;   1: void loopback1()
+
+```
+
+
 ### Additional files are not found
 The patch has additional files, but it isn't accessible.
 

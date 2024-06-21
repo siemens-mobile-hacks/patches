@@ -93104,6 +93104,26 @@
 				"ru": "Авиарежим с автовключением",
 				"en": "Airplane mode with auto-on"
 			}
+		},
+		"10851": {
+			"id": "10851",
+			"model": "E71v45",
+			"file": "E71v45/10851-invert_colors_in_service_mode.vkp",
+			"mtime": 1718880366000,
+			"title": {
+				"ru": "Инвентировать цвета в Service Mode",
+				"en": "Invert colors in Service Mode"
+			}
+		},
+		"10853": {
+			"id": "10853",
+			"model": "E71v45",
+			"file": "E71v45/10853-turn_phone_while_off_charging_v2.vkp",
+			"mtime": 1718907782000,
+			"title": {
+				"ru": "Включить телефон при оффлайн зарядке",
+				"en": "Turn phone on while offline charging"
+			}
 		}
 	},
 	"C81v51": {
@@ -95736,6 +95756,16 @@
 			"title": {
 				"ru": "Отключить фон в интерфейсе настройки громкости",
 				"en": "Disable background in Audio Setup UI"
+			}
+		},
+		"10852": {
+			"id": "10852",
+			"model": "C81v51",
+			"file": "C81v51/10852-fade_light_off_faster.vkp",
+			"mtime": 1718888642000,
+			"title": {
+				"ru": "Ускоренное гашение подсветки",
+				"en": "Fade light off faster"
 			}
 		}
 	},
