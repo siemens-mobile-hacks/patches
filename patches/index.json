@@ -93124,6 +93124,16 @@
 				"ru": "Включить телефон при оффлайн зарядке",
 				"en": "Turn phone on while offline charging"
 			}
+		},
+		"10854": {
+			"id": "10854",
+			"model": "E71v45",
+			"file": "E71v45/10854-disable_message_data_received.vkp",
+			"mtime": 1719066532000,
+			"title": {
+				"ru": "Отключить сообщение 'Прием данных завершен'",
+				"en": "Disable message 'Data received'"
+			}
 		}
 	},
 	"C81v51": {

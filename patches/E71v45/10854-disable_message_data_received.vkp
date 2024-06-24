@@ -1,0 +1,15 @@
+;E71v45
+;Отключить сообщение 'Прием данных завершен'
+;Disable message 'Data received'
+;(c) FIL
+;Version: 
+;PatchID: 10854
+;Details: https://patches.kibab.com/patches/details.php5?id=10854
+/*
+Отключает сообщение после приема файла по БТ.
+*/
+
+070FE2C: A3FA08FA 0000A0E3
+
+;------------------------- end -------------------------
+
