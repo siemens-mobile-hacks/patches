@@ -93134,6 +93134,16 @@
 				"ru": "Отключить сообщение 'Прием данных завершен'",
 				"en": "Disable message 'Data received'"
 			}
+		},
+		"10855": {
+			"id": 10855,
+			"model": "E71v45",
+			"file": "E71v45/10855-dont_lock_vibra.vkp",
+			"mtime": 1720380280000,
+			"title": {
+				"ru": "Не блокировать вибрацию при подключении аксессуаров",
+				"en": "Don't lock vibra when accessories are connected"
+			}
 		}
 	},
 	"C81v51": {
