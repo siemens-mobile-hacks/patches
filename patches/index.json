@@ -93134,6 +93134,26 @@
 				"ru": "Отключить сообщение 'Прием данных завершен'",
 				"en": "Disable message 'Data received'"
 			}
+		},
+		"10855": {
+			"id": "10855",
+			"model": "E71v45",
+			"file": "E71v45/10855-dont_lock_vibra.vkp",
+			"mtime": 1720380280000,
+			"title": {
+				"ru": "Не блокировать вибрацию при подключении аксессуаров",
+				"en": "Don't lock vibra when accessories are connected"
+			}
+		},
+		"10856": {
+			"id": "10856",
+			"model": "E71v45",
+			"file": "E71v45/10856-activate_dyn_light.vkp",
+			"mtime": 1720381468000,
+			"title": {
+				"ru": "Активировать динамический свет",
+				"en": "Activate dynamic light"
+			}
 		}
 	},
 	"C81v51": {

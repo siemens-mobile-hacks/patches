@@ -1,0 +1,16 @@
+;E71v45
+;Не блокировать вибрацию при подключении аксессуаров
+;Don't lock vibra when accessories are connected
+;(c) FIL
+;Version: 
+;PatchID: 10855
+;Details: https://patches.kibab.com/patches/details.php5?id=10855
+/*
+
+*/
+
+053E9E8: 1C10A0E3 0000A0E3
+053E9EC: 50039FE5 1EFF2FE1
+
+;------------------------- end -------------------------
+
