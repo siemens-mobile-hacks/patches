@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 240624
+;Version: 080724
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -965,7 +965,7 @@
 ;E88:            ; 3A2
 0E8C: 0xA09544FB ; 3A3: __thumb void SetMenuItemIconIMGHDR(void *gui, void *item, IMGHDR *img);
 ;E90:            ; 3A4
-;E94:            ; 3A5
+0E94: 0xA0A0CA97 ; 3A5: __thumb void DrawIMGHDR(int x, int y, IMGHDR *img);
 ;E98:            ; 3A6
 0E9C: 0xA094CB67 ; 3A7: __thumb int GUI_NewTimer(void *gui);
 0EA0: 0xA094CCAB ; 3A8: __thumb int GUI_DeleteTimer(void *gui, int id);
@@ -1015,6 +1015,7 @@
 0F44: 0xA069FD2C ; 3D1: __arm void MediaProc_LaunchLastPlayback();
 0F48: 0xA05C4ED5 ; 3D2: __thumb int GetScreenSaverType();
 0F4C: 0xA08CCC11 ; 3D3: __thumb int IllumFilterSet(int flags, int unk);
+0F50: 0xA0A0CB71 ; 3D4: __thumb void DrawCroppedIMGHDR(int x, int y, int offset_x, int offset_y, int w, int h, int flags, const IMGHDR *img);
 
 #pragma disable old_equal_ff
 +0
