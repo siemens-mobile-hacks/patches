@@ -2,7 +2,7 @@
 ;Пакет исправлений пользовательского интерфейса
 ;UI Fix Pack
 ;(c) FIL, Azq2, SiNgle
-;Version: 
+;Version: 1.1
 ;PatchID: 10834
 ;Details: https://patches.kibab.com/patches/details.php5?id=10834
 /*
@@ -19,7 +19,7 @@
 0C42790: D007 1202 ; delay before start
 0C42794: 2C01 2A00 ; scrolling speed
 
-; MEDIAPLAYER INFO LANE
+; MEDIAPLAYER INFO LINE
 079F4AC: 64 2A ; delay
 079F4B0: FA1F 211E ; speed
 
@@ -85,6 +85,14 @@
 ;Version: 1
 0A128C4: 013D 003D
 
+;№8
+;Ускорить Ring UI
+;Speed up Ring UI
+;(c) FIL
+;Details: https://patches.kibab.com/patches/details.php5?id=10857
+
+0A21BA6: FEF7A3FA 14F085FE
+0A368B4: 6E6F7420656E6F75676874206D656D6F72792C20494D5053 10B5002804D00468002C01D1014CA04710BDC046F100A2A0
 
 ;------------------------- end -------------------------
 
