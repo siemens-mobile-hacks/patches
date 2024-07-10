@@ -92927,8 +92927,8 @@
 		"10825": {
 			"id": "10825",
 			"model": "E71v45",
-			"file": "E71v45/10825-ASFP.vkp",
-			"mtime": 1715081764000,
+			"file": "E71v45/10825-ASFP_v1_1.vkp",
+			"mtime": 1720512880000,
 			"title": {
 				"ru": "Пакет исправлений Audio Setup",
 				"en": "Audio Setup Fix Pack"
@@ -93007,8 +93007,8 @@
 		"10834": {
 			"id": "10834",
 			"model": "E71v45",
-			"file": "E71v45/10834-UIFP.vkp",
-			"mtime": 1716220488000,
+			"file": "E71v45/10834-UIFP_v1_1.vkp",
+			"mtime": 1720514082000,
 			"title": {
 				"ru": "Пакет исправлений пользовательского интерфейса",
 				"en": "UI Fix Pack"
@@ -93153,6 +93153,16 @@
 			"title": {
 				"ru": "Активировать динамический свет",
 				"en": "Activate dynamic light"
+			}
+		},
+		"10857": {
+			"id": "10857",
+			"model": "E71v45",
+			"file": "E71v45/10857-speed_up_ring_ui.vkp",
+			"mtime": 1720513728000,
+			"title": {
+				"ru": "Ускорить Ring UI",
+				"en": "Speed up Ring UI"
 			}
 		}
 	},

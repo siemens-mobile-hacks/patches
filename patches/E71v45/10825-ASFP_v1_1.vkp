@@ -2,7 +2,7 @@
 ;Пакет исправлений Audio Setup
 ;Audio Setup Fix Pack
 ;(c) FIL, Evgr, Visad
-;Version: 
+;Version: 1.1
 ;PatchID: 10825
 ;Details: https://patches.kibab.com/patches/details.php5?id=10825
 /*
@@ -24,14 +24,6 @@
 086BEC0: 65 17
 
 ;№3
-;Ускорить интерфейс настройки громкости
-;Speed up Audio Setup UI
-;(c) FIL
-;(r) Azq2
-0A21B8A: 64 FF
-0A21B8C: 0DD0 0DD1
-
-;№4
 ;Увеличивать громкость на 1 деление, а не уменьшать, при однократном нажатии во время звонка на кнопку "громкость вверх" 
 ;Increase volume in 1 step instead of decrease at once press of "Volume Up" button during call  
 ;(c) Evgr
