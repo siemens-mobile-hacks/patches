@@ -95807,6 +95807,16 @@
 				"ru": "Ускоренное гашение подсветки",
 				"en": "Fade light off faster"
 			}
+		},
+		"10858": {
+			"id": "10858",
+			"model": "C81v51",
+			"file": "C81v51/10858-c81v51_megaloudness_for_handsfree.vkp",
+			"mtime": 1721517924000,
+			"title": {
+				"ru": "Мега-громкость для гарнитуры",
+				"en": "Mega-Loudness for handsfree"
+			}
 		}
 	},
 	"C81v38": {
