@@ -93164,6 +93164,16 @@
 				"ru": "Ускорить Ring UI",
 				"en": "Speed up Ring UI"
 			}
+		},
+		"10859": {
+			"id": "10859",
+			"model": "E71v45",
+			"file": "E71v45/10859-please_wait_instead_idle.vkp",
+			"mtime": 1722441044000,
+			"title": {
+				"ru": "'Пожалуйста, подождите' вместо главного экрана",
+				"en": "'Please wait' instead IDLE"
+			}
 		}
 	},
 	"C81v51": {
