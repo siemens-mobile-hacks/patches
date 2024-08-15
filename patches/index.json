@@ -97585,6 +97585,7 @@
 			"id": "10395",
 			"model": "CL61v128",
 			"file": "CL61v128/10395-swilib_cl61v00_db128.vkp",
+			"additionalFile": "CL61v128/10395-swilib_cl61v00_db128.zip",
 			"mtime": 1333107772000,
 			"title": {
 				"ru": "Библиотека функций",
