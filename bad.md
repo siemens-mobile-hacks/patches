@@ -42,11 +42,8 @@ The patch has additional files, but it isn't accessible.
 | 10434 | C81v51 | [Запись телефонных разговоров<br>Call Recorder](https://patches.kibab.com/patches/details.php5?id=10434) |
 | 7223 | C81v51 | [Библиотека функций<br>Functions Library](https://patches.kibab.com/patches/details.php5?id=7223) |
 | 10258 | CF75v23 | [Загрузчик эльфов 3.0 Z.Vova, Ganster<br>ELFLoader 3.0 Z.Vova, Ganster](https://patches.kibab.com/patches/details.php5?id=10258) |
-| 10395 | CL61v128 | [Библиотека функций<br>swilib](https://patches.kibab.com/patches/details.php5?id=10395) |
 | 10396 | CL61v128 | [Elfloader 2.3 Official<br>Elfloader 2.3 Official](https://patches.kibab.com/patches/details.php5?id=10396) |
 | 3737 | CX65v43 | [ZIPViewer<br>ZIPViewer](https://patches.kibab.com/patches/details.php5?id=3737) |
-| 10521 | S7Cv47 | [Extra Info on ProgressBars<br>Extra Info on ProgressBars](https://patches.kibab.com/patches/details.php5?id=10521) |
-| 9794 | S7Cv47 | [Постоянная подстветка<br>Lit Light all the time](https://patches.kibab.com/patches/details.php5?id=9794) |
 | 3059 | SL45iv56 | [DLDR. Загрузчик демонов (READRESSED)<br>DLDR. Daemon loader (READRESSED)](https://patches.kibab.com/patches/details.php5?id=3059) |
 | 3403 | X75v100 | [Иконка вибры<br>Vibra Icon](https://patches.kibab.com/patches/details.php5?id=3403) |
 | 3404 | X75v100 | [Зеленый Калькулятор<br>Green Calculator](https://patches.kibab.com/patches/details.php5?id=3404) |
