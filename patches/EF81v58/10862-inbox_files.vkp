@@ -1,0 +1,16 @@
+;EF81v58
+;Корректные иконки полученных файлов
+;New icons inbox files
+;(c) MAXIM
+;Version: 
+;PatchID: 10862
+;Details: https://patches.kibab.com/patches/details.php5?id=10862
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=ef81v58&f=inbox_files.zip
+
+/*
+Новые иконки полученных файлов (без изображения ик-порта)
+*/
+
+BAR-файлы размещены во вспомогательных файлах
+;------------------------- end -------------------------
+

@@ -97797,6 +97797,17 @@
 				"ru": "SXG-меню (полнокадровое)",
 				"en": "Fullframes SXG-menu"
 			}
+		},
+		"10862": {
+			"id": 10862,
+			"model": "EF81v58",
+			"file": "EF81v58/10862-inbox_files.vkp",
+			"additionalFile": "EF81v58/10862-inbox_files.zip",
+			"mtime": 1723918798000,
+			"title": {
+				"ru": "Корректные иконки полученных файлов",
+				"en": "New icons inbox files"
+			}
 		}
 	}
 }
