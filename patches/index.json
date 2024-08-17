@@ -97786,6 +97786,17 @@
 				"ru": "Новый иконбар в стиле SG\\NSG",
 				"en": "New iconbar SG\\NSG Style"
 			}
+		},
+		"10861": {
+			"id": 10861,
+			"model": "EF81v58",
+			"file": "EF81v58/10861-Manu_SXG.vkp",
+			"additionalFile": "EF81v58/10861-Manu_SXG.zip",
+			"mtime": 1723918320000,
+			"title": {
+				"ru": "SXG-меню (полнокадровое)",
+				"en": "Fullframes SXG-menu"
+			}
 		}
 	}
 }

@@ -1,0 +1,20 @@
+;EF81v58
+;SXG-меню (полнокадровое)
+;Fullframes SXG-menu
+;(c) MAXIM
+;Version: 
+;PatchID: 10861
+;Details: https://patches.kibab.com/patches/details.php5?id=10861
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=ef81v58&f=Manu_SXG.zip
+
+/*
+Меню в стиле SXG с серым анимированным селектором, а также иконки подпунктов.
+
+1. javaappmgr_images.bar положить в brew/mod/javaappmgr/res/common (тут иконка внутри пункта меню "Игры")
+2. mainmenuapp_common.bar положить в brew/mod/MainMenuApp/res/common (тут все меню)
+3. common_media.bar положить в brew/mod/CoreDeamonApp/common_res/common (тут иконки сверху пунктов меню и внутри их)
+*/
+
+BAR-файл размещен во вспомогательных файлах
+;------------------------- end -------------------------
+
