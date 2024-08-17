@@ -97774,5 +97774,18 @@
 				"en": "ElfPack"
 			}
 		}
+	},
+	"EF81v58": {
+		"10860": {
+			"id": 10860,
+			"model": "EF81v58",
+			"file": "EF81v58/10860-New_iconbar.vkp",
+			"additionalFile": "EF81v58/10860-New_iconbar.zip",
+			"mtime": 1723917870000,
+			"title": {
+				"ru": "Новый иконбар в стиле SG\\NSG",
+				"en": "New iconbar SG\\NSG Style"
+			}
+		}
 	}
 }
