@@ -97774,5 +97774,40 @@
 				"en": "ElfPack"
 			}
 		}
+	},
+	"EF81v58": {
+		"10860": {
+			"id": "10860",
+			"model": "EF81v58",
+			"file": "EF81v58/10860-New_iconbar.vkp",
+			"additionalFile": "EF81v58/10860-New_iconbar.zip",
+			"mtime": 1723917870000,
+			"title": {
+				"ru": "Новый иконбар в стиле SG\\NSG",
+				"en": "New iconbar SG\\NSG Style"
+			}
+		},
+		"10861": {
+			"id": "10861",
+			"model": "EF81v58",
+			"file": "EF81v58/10861-Manu_SXG.vkp",
+			"additionalFile": "EF81v58/10861-Manu_SXG.zip",
+			"mtime": 1723918320000,
+			"title": {
+				"ru": "SXG-меню (полнокадровое)",
+				"en": "Fullframes SXG-menu"
+			}
+		},
+		"10862": {
+			"id": "10862",
+			"model": "EF81v58",
+			"file": "EF81v58/10862-inbox_files.vkp",
+			"additionalFile": "EF81v58/10862-inbox_files.zip",
+			"mtime": 1723918798000,
+			"title": {
+				"ru": "Корректные иконки полученных файлов",
+				"en": "New icons inbox files"
+			}
+		}
 	}
 }
