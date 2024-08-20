@@ -97808,28 +97808,6 @@
 				"ru": "Корректные иконки полученных файлов",
 				"en": "New icons inbox files"
 			}
-		},
-		"10863": {
-			"id": "10863",
-			"model": "EF81v58",
-			"file": "EF81v58/10863-fix_recorder_anim.vkp",
-			"additionalFile": "EF81v58/10863-fix_recorder_anim.zip",
-			"mtime": 1724081654000,
-			"title": {
-				"ru": "Исправление анимации диктофона",
-				"en": "Fix recorder animation"
-			}
-		},
-		"10864": {
-			"id": "10864",
-			"model": "EF81v58",
-			"file": "EF81v58/10864-devicecheckman_new.vkp",
-			"additionalFile": "EF81v58/10864-devicecheckman_new.zip",
-			"mtime": 1724081924000,
-			"title": {
-				"ru": "Иконки вкладок в идентификации устройства в стиле NSG",
-				"en": "New devicecheckman icons in tabs"
-			}
 		}
 	}
 }
