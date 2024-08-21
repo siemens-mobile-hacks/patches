@@ -1,0 +1,16 @@
+;EF81v58
+;Иконки вкладок в идентификации устройства в стиле NSG
+;New devicecheckman icons in tabs
+;(c) MAXIM
+;Version: 
+;PatchID: 10864
+;Details: https://patches.kibab.com/patches/details.php5?id=10864
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=ef81v58&f=devicecheckman_new.zip
+
+/*
+Иконки вкладок в идентификации устройства в стиле NSG
+*/
+
+BAR-файлы во вспомогательных файлах
+;------------------------- end -------------------------
+

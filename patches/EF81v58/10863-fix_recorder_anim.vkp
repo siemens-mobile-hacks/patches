@@ -1,0 +1,17 @@
+;EF81v58
+;Исправление анимации диктофона
+;Fix recorder animation
+;(c) MAXIM
+;(r) Adobe
+;Version: 
+;PatchID: 10863
+;Details: https://patches.kibab.com/patches/details.php5?id=10863
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=ef81v58&f=fix_recorder_anim.zip
+
+/*
+Исправление анимации диктофона, теперь она меньше (исходники EL71), без зеленых отливов.
+*/
+
+BAR-файл во вспомогательных файлах
+;------------------------- end -------------------------
+
