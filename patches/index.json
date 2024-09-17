@@ -55725,6 +55725,16 @@
 				"ru": "Исправить обрезанный шрифт в DrawScrollString",
 				"en": "Fix clipped font in DrawScrollString"
 			}
+		},
+		"10870": {
+			"id": 10870,
+			"model": "S65v58",
+			"file": "S65v58/10870-speed_up_audio_setup_u.vkp",
+			"mtime": 1726598706000,
+			"title": {
+				"ru": "Ускорить интерфейс настройки громкости",
+				"en": "Speed up Audio Setup UI"
+			}
 		}
 	},
 	"SL65v50": {
