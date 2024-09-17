@@ -55715,6 +55715,16 @@
 				"ru": "Исправить позицию активного элемента в Native Menu",
 				"en": "Fix the active item position in Native Menu"
 			}
+		},
+		"10869": {
+			"id": 10869,
+			"model": "S65v58",
+			"file": "S65v58/10869-fix_DrawScrollString.vkp",
+			"mtime": 1726598596000,
+			"title": {
+				"ru": "Исправить обрезанный шрифт в DrawScrollString",
+				"en": "Fix clipped font in DrawScrollString"
+			}
 		}
 	},
 	"SL65v50": {

@@ -1,0 +1,16 @@
+;S65v58
+;Исправить обрезанный шрифт в DrawScrollString
+;Fix clipped font in DrawScrollString
+;(c) Azq2
+;(p) dimonp25
+;Version: 1
+;PatchID: 10869
+;Details: https://patches.kibab.com/patches/details.php5?id=10869
+/*
+
+*/
+
+01173588: 0139 0039
+
+;------------------------- end -------------------------
+
