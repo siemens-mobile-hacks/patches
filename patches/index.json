@@ -55675,6 +55675,16 @@
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
 			}
+		},
+		"10865": {
+			"id": 10865,
+			"model": "S65v58",
+			"file": "S65v58/10865-change_animation_speed_in_nm.vkp",
+			"mtime": 1726598018000,
+			"title": {
+				"ru": "Изменить скорость анимации в Native Menu",
+				"en": "Change animation speed in Native Menu"
+			}
 		}
 	},
 	"SL65v50": {
