@@ -55735,6 +55735,16 @@
 				"ru": "Ускорить интерфейс настройки громкости",
 				"en": "Speed up Audio Setup UI"
 			}
+		},
+		"10871": {
+			"id": 10871,
+			"model": "S65v58",
+			"file": "S65v58/10871-SpeedUpOverlay.vkp",
+			"mtime": 1726598822000,
+			"title": {
+				"ru": "Ускорить загрузку overlay info при старте телефона",
+				"en": "Speed up overlay info load on startup"
+			}
 		}
 	},
 	"SL65v50": {

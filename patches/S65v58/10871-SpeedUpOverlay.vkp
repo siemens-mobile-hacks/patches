@@ -1,0 +1,16 @@
+;S65v58
+;Ускорить загрузку overlay info при старте телефона
+;Speed up overlay info load on startup
+;(c) FIL
+;(p) dimonp25
+;Version: 
+;PatchID: 10871
+;Details: https://patches.kibab.com/patches/details.php5?id=10871
+/*
+
+*/
+
+01698444: 0a48 AA20
+
+;------------------------- end -------------------------
+
