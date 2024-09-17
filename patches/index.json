@@ -55685,6 +55685,16 @@
 				"ru": "Изменить скорость анимации в Native Menu",
 				"en": "Change animation speed in Native Menu"
 			}
+		},
+		"10866": {
+			"id": 10866,
+			"model": "S65v58",
+			"file": "S65v58/10866-change_max_width_of_extra_header.vkp",
+			"mtime": 1726598250000,
+			"title": {
+				"ru": "Изменить максимальную ширину дополнительного заголовка",
+				"en": "Change maximum width of the extra header"
+			}
 		}
 	},
 	"SL65v50": {
