@@ -55705,6 +55705,16 @@
 				"ru": "Отключить отрисовку номера текущего элемента в Native Menu",
 				"en": "Disable drawing the number of a current item in Native Menu"
 			}
+		},
+		"10868": {
+			"id": 10868,
+			"model": "S65v58",
+			"file": "S65v58/10868-fix_active_item_position_in_nm.vkp",
+			"mtime": 1726598486000,
+			"title": {
+				"ru": "Исправить позицию активного элемента в Native Menu",
+				"en": "Fix the active item position in Native Menu"
+			}
 		}
 	},
 	"SL65v50": {

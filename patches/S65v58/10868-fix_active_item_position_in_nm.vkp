@@ -1,0 +1,16 @@
+;S65v58
+;Исправить позицию активного элемента в Native Menu 
+;Fix the active item position in Native Menu
+;(c) FIL
+;(p) dimonp25
+;Version: 
+;PatchID: 10868
+;Details: https://patches.kibab.com/patches/details.php5?id=10868
+/*
+
+*/
+
+0119e26c: 00 FF
+
+;------------------------- end -------------------------
+
