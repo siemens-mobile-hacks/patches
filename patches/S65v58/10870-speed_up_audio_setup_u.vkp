@@ -1,0 +1,18 @@
+;S65v58
+;Ускорить интерфейс настройки громкости
+;Speed up Audio Setup UI
+;(c) FIL
+;(r) Azq2
+;(p) dimonp25
+;Version: 
+;PatchID: 10870
+;Details: https://patches.kibab.com/patches/details.php5?id=10870
+/*
+
+*/
+
+0118137c: 64 FF
+0118137e: 0DD0 0DD1
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;S65v58
+;Отключить отрисовку номера текущего элемента в Native Menu
+;Disable drawing the number of a current item in Native Menu
+;(c) FIL
+;(p) dimonp25
+;Version: 
+;PatchID: 10867
+;Details: https://patches.kibab.com/patches/details.php5?id=10867
+/*
+
+*/
+
+0119dcac: 6cf0c0eb C046C046
+
+;------------------------- end -------------------------
+

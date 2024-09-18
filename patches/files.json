@@ -31010,5 +31010,26 @@
 	[
 		"EF81v58/10864-devicecheckman_new.vkp",
 		"EF81v58/10864-devicecheckman_new.zip"
+	],
+	[
+		"S65v58/10865-change_animation_speed_in_nm.vkp"
+	],
+	[
+		"S65v58/10866-change_max_width_of_extra_header.vkp"
+	],
+	[
+		"S65v58/10867-disable_drawing_num_in_native_menu.vkp"
+	],
+	[
+		"S65v58/10868-fix_active_item_position_in_nm.vkp"
+	],
+	[
+		"S65v58/10869-fix_DrawScrollString.vkp"
+	],
+	[
+		"S65v58/10870-speed_up_audio_setup_u.vkp"
+	],
+	[
+		"S65v58/10871-SpeedUpOverlay.vkp"
 	]
 ]

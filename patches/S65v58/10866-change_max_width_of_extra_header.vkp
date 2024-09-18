@@ -1,0 +1,17 @@
+;S65v58
+;Изменить максимальную ширину дополнительного заголовка
+;Change maximum width of the extra header
+;(c) FIL
+;(p) dimonp25
+;Version: 
+;PatchID: 10866
+;Details: https://patches.kibab.com/patches/details.php5?id=10866
+/*
+
+*/
+
+0115ef72: 23 0i80
+0115ef80: 23 0i80
+
+;------------------------- end -------------------------
+

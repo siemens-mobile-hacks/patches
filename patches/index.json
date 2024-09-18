@@ -55675,6 +55675,76 @@
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
 			}
+		},
+		"10865": {
+			"id": "10865",
+			"model": "S65v58",
+			"file": "S65v58/10865-change_animation_speed_in_nm.vkp",
+			"mtime": 1726598018000,
+			"title": {
+				"ru": "Изменить скорость анимации в Native Menu",
+				"en": "Change animation speed in Native Menu"
+			}
+		},
+		"10866": {
+			"id": "10866",
+			"model": "S65v58",
+			"file": "S65v58/10866-change_max_width_of_extra_header.vkp",
+			"mtime": 1726598250000,
+			"title": {
+				"ru": "Изменить максимальную ширину дополнительного заголовка",
+				"en": "Change maximum width of the extra header"
+			}
+		},
+		"10867": {
+			"id": "10867",
+			"model": "S65v58",
+			"file": "S65v58/10867-disable_drawing_num_in_native_menu.vkp",
+			"mtime": 1726598354000,
+			"title": {
+				"ru": "Отключить отрисовку номера текущего элемента в Native Menu",
+				"en": "Disable drawing the number of a current item in Native Menu"
+			}
+		},
+		"10868": {
+			"id": "10868",
+			"model": "S65v58",
+			"file": "S65v58/10868-fix_active_item_position_in_nm.vkp",
+			"mtime": 1726598486000,
+			"title": {
+				"ru": "Исправить позицию активного элемента в Native Menu",
+				"en": "Fix the active item position in Native Menu"
+			}
+		},
+		"10869": {
+			"id": "10869",
+			"model": "S65v58",
+			"file": "S65v58/10869-fix_DrawScrollString.vkp",
+			"mtime": 1726598596000,
+			"title": {
+				"ru": "Исправить обрезанный шрифт в DrawScrollString",
+				"en": "Fix clipped font in DrawScrollString"
+			}
+		},
+		"10870": {
+			"id": "10870",
+			"model": "S65v58",
+			"file": "S65v58/10870-speed_up_audio_setup_u.vkp",
+			"mtime": 1726598706000,
+			"title": {
+				"ru": "Ускорить интерфейс настройки громкости",
+				"en": "Speed up Audio Setup UI"
+			}
+		},
+		"10871": {
+			"id": "10871",
+			"model": "S65v58",
+			"file": "S65v58/10871-SpeedUpOverlay.vkp",
+			"mtime": 1726598822000,
+			"title": {
+				"ru": "Ускорить загрузку overlay info при старте телефона",
+				"en": "Speed up overlay info load on startup"
+			}
 		}
 	},
 	"SL65v50": {
