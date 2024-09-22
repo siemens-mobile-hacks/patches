@@ -2,7 +2,7 @@
 ;Библиотека Функций
 ;Function Library
 ;(c) avkiev
-;Version: 140206
+;Version: 220924
 ;PatchID: 10625
 ;Details: https://patches.kibab.com/patches/details.php5?id=10625
 /*
@@ -727,7 +727,7 @@ BB4: 0xA116B768    ; 2ED: int i2c_receive(I2C_MSG *msg)
 0C30: 0xA0830CCC   ; 30C:  NU_Current_Task_Pointer
 0C34: 0xA082AE28   ; 30D:  NU_Established_Tasks
 0C38: 0xA082B0FC   ; 30E:  NU_Task_Information
-0C38: 0xA082AE50   ; 30E:  NU_Task_Pointers
+0C3C: 0xA082AE50   ; 30E:  NU_Task_Pointers
 
 0C40: 0xA082A678   ; 310:  NU_Create_Mailbox
 0C44: 0xA082A6A4   ; 311:  NU_Delete_Mailbox
