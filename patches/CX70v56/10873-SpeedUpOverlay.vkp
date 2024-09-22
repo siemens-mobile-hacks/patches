@@ -1,0 +1,15 @@
+;CX70v56
+;Ускорить загрузку overlay info при старте телефона
+;Speed up overlay info load on startup
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10873
+;Details: https://patches.kibab.com/patches/details.php5?id=10873
+/*
+
+*/
+
+01714EC4: 0A48 AA20
+;------------------------- end -------------------------
+

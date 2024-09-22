@@ -66555,6 +66555,16 @@
 				"ru": "Отключить отрисовку номера текущего элемента в Native Menu",
 				"en": "Disable drawing the number of a current item in Native Menu"
 			}
+		},
+		"10873": {
+			"id": 10873,
+			"model": "CX70v56",
+			"file": "CX70v56/10873-SpeedUpOverlay.vkp",
+			"mtime": 1726984220000,
+			"title": {
+				"ru": "Ускорить загрузку overlay info при старте телефона",
+				"en": "Speed up overlay info load on startup"
+			}
 		}
 	},
 	"C55v24": {
