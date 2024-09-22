@@ -59079,6 +59079,16 @@
 				"ru": "Card-Explorer вместо Мои файлы",
 				"en": "Card-Explorer instead of My Stuff"
 			}
+		},
+		"10887": {
+			"id": 10887,
+			"model": "SL65v53",
+			"file": "SL65v53/10887-disable_wait_in_card_explorer.vkp",
+			"mtime": 1727004932000,
+			"title": {
+				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
+				"en": "Disable 'Please wait' in Card-Explorer"
+			}
 		}
 	},
 	"SK65v50": {
