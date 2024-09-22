@@ -1,0 +1,16 @@
+;C75v22
+;Отключить 'Пожалуйста, подождите' в Card-Explorer
+;Disable 'Please wait' in Card-Explorer
+;(c) FIL
+;(r) Azq2
+;(p) Виктор89
+;Version: 
+;PatchID: 10895
+;Details: https://patches.kibab.com/patches/details.php5?id=10895
+/*
+
+*/
+
+0349A00: F3FFFFEB 0880A0E1
+;------------------------- end -------------------------
+
