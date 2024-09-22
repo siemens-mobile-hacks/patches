@@ -60827,6 +60827,16 @@
 				"ru": "Иконки пунктов меню + фикс иконки паузы",
 				"en": "HL Icons main menu statusbar and fix icon pause in recorder"
 			}
+		},
+		"10878": {
+			"id": 10878,
+			"model": "SK65v50",
+			"file": "SK65v50/10878-card_explorer_instead_of_my_stuff.vkp",
+			"mtime": 1727004594000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
 		}
 	},
 	"CX70v50": {
