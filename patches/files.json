@@ -31041,7 +31041,9 @@
 	[
 		"CX70v56/10874-fix_active_item_position_in_nm.vkp"
 	],
-	null,
+	[
+		"CX70v56/10875-explorer_instead_of_my_stuff_v1_1.vkp"
+	],
 	[
 		"CX70v56/10876-disable_wait_in_card_explorer.vkp"
 	],

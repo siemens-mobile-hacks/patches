@@ -66756,6 +66756,16 @@
 				"en": "Fix the active item position in Native Menu"
 			}
 		},
+		"10875": {
+			"id": 10875,
+			"model": "CX70v56",
+			"file": "CX70v56/10875-explorer_instead_of_my_stuff_v1_1.vkp",
+			"mtime": 1727020756000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
+		},
 		"10876": {
 			"id": 10876,
 			"model": "CX70v56",
