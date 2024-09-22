@@ -66488,8 +66488,8 @@
 		"10625": {
 			"id": "10625",
 			"model": "CX70v56",
-			"file": "CX70v56/10625-FunctionLibrary.vkp",
-			"mtime": 1714560730000,
+			"file": "CX70v56/10625-swilib_v220924.vkp",
+			"mtime": 1726979040000,
 			"title": {
 				"ru": "Библиотека Функций",
 				"en": "Function Library"
