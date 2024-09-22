@@ -58999,6 +58999,16 @@
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
 			}
+		},
+		"10877": {
+			"id": 10877,
+			"model": "SL65v53",
+			"file": "SL65v53/10877-card_explorer_instead_of_my_stuff.vkp",
+			"mtime": 1727004546000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
 		}
 	},
 	"SK65v50": {

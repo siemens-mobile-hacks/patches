@@ -1,0 +1,20 @@
+;SL65v53
+;Card-Explorer вместо Мои файлы
+;Card-Explorer instead of My Stuff
+;(c) FIL
+;(r) Azq2
+;(p) Виктор89
+;Version: 1.1
+;PatchID: 10877
+;Details: https://patches.kibab.com/patches/details.php5?id=10877
+/*
+
+*/
+
+0969F10: 01 FF
+
+0922E5C: C627 1F03
+0922E68: C627 1F03
+092111C: C627 1F03
+;------------------------- end -------------------------
+
