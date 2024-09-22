@@ -66575,6 +66575,16 @@
 				"ru": "Исправить позицию активного элемента в Native Menu",
 				"en": "Fix the active item position in Native Menu"
 			}
+		},
+		"10876": {
+			"id": 10876,
+			"model": "CX70v56",
+			"file": "CX70v56/10876-disable_wait_in_card_explorer.vkp",
+			"mtime": 1727003464000,
+			"title": {
+				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
+				"en": "Disable 'Please wait' in Card-Explorer"
+			}
 		}
 	},
 	"C55v24": {
