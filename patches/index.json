@@ -29711,6 +29711,16 @@
 				"ru": "Card-Explorer вместо Мои файлы",
 				"en": "Card-Explorer instead of My Stuff"
 			}
+		},
+		"10892": {
+			"id": 10892,
+			"model": "CX75v13",
+			"file": "CX75v13/10892-disable_wait_in_card_explorer.vkp",
+			"mtime": 1727005404000,
+			"title": {
+				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
+				"en": "Disable 'Please wait' in Card-Explorer"
+			}
 		}
 	},
 	"CX75v23": {
