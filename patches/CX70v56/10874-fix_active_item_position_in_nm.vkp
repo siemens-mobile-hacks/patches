@@ -1,0 +1,15 @@
+;CX70v56
+;Исправить позицию активного элемента в Native Menu 
+;Fix the active item position in Native Menu
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10874
+;Details: https://patches.kibab.com/patches/details.php5?id=10874
+/*
+
+*/
+
+0D2585C: 00 FF
+;------------------------- end -------------------------
+

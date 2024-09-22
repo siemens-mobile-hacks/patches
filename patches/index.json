@@ -66565,6 +66565,16 @@
 				"ru": "Ускорить загрузку overlay info при старте телефона",
 				"en": "Speed up overlay info load on startup"
 			}
+		},
+		"10874": {
+			"id": 10874,
+			"model": "CX70v56",
+			"file": "CX70v56/10874-fix_active_item_position_in_nm.vkp",
+			"mtime": 1726985326000,
+			"title": {
+				"ru": "Исправить позицию активного элемента в Native Menu",
+				"en": "Fix the active item position in Native Menu"
+			}
 		}
 	},
 	"C55v24": {
