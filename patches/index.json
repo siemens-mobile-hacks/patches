@@ -33911,6 +33911,16 @@
 				"ru": "Исправить позицию активного элемента в Native Menu",
 				"en": "Fix the active item position in Native Menu"
 			}
+		},
+		"10881": {
+			"id": 10881,
+			"model": "CX75v25",
+			"file": "CX75v25/10881-card_explorer_instead_of_my_stuff.vkp",
+			"mtime": 1727004722000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
 		}
 	},
 	"M75v5": {
