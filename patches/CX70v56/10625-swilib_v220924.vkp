@@ -162,14 +162,14 @@
 0250: 0xA09526B8 ; 094: int ExecuteFile (WSHDR *filepath, WSHDR *mimetype)
 ;0254: 0x ; 095: int UnRegExplorerExt(REGEXPLEXT const *)
 ;0258: 0x ; 06: GetWavLenByContent
-025C: 0xA006F261   ;  97: CreatePath
-0260: 0xA006F211   ;  98: void PlaySoundVibra(char SndNum, char VibraPower, unsigned int VibraDuration, char VibraIfOff)
-0264: 0xA0966D14   ;  99: int PlayMelodyInMem(char Unk_0x11,void *MelAddr,int MelSize,int unk2_0xFFFF,int Unk3_0,int Unk4_0)
-0268: 0xA115AFDC   ;  9A: int ChangeVolume(unsigned char Volume)
-;026C: 0x ; 09B: Audio params addr
+025C: 0xA006F261 ; 097: CreatePath
+0260: 0xA006F211 ; 098: void PlaySoundVibra(char SndNum, char VibraPower, unsigned int VibraDuration, char VibraIfOff)
+0264: 0xA0966D14 ; 099: int PlayMelodyInMem(char Unk_0x11,void *MelAddr,int MelSize,int unk2_0xFFFF,int Unk3_0,int Unk4_0)
+0268: 0xA115AFDC ; 09A: int ChangeVolume(unsigned char Volume)
+026C: 0xA879D98C ; 09B: Audio params addr
 ;0270: 0x ; 09C: CloseScreensaver
 0274: 0xA0C35CB1 ; 09D: int GetMissedEventsPtr()
-0278: 0xA006F2B1   ;  9E: int GetMissedEventCount(unsigned int Event)027C: 0xA0CAD00B ; 09F: DrawRect
+0278: 0xA006F2B1 ;  9E: int GetMissedEventCount(unsigned int Event)027C: 0xA0CAD00B ; 09F: DrawRect
 0280: 0xA0C8C7BF ; 0A0: Unicode_sprintf
 0284: 0xA0825E59 ; 0A1: Unicode_CopyStr2Str
 0288: 0xA0C8CD43 ; 0A2: Unicode_GetCharByPosition
@@ -594,269 +594,334 @@
 0910: 0xA15CAD31 ; 244: int Base64Encode(void *inbuf, int insize, void *outbuf, int outsize)
 0914: 0xA15CADE1 ; 245: int Base64Decode(char *inbuf, int insize, void *outbuf, int outsize, char *_null, int *unk5)
 092C: 0xA0C97076 ; 24B: void SetMenuSearchCallBack(void *gui, MenuSearchCallBack proc)
-0934: 0xA0967314   ; 24D: int PlayMelody_SetPosition(int handle, int pos_ms)
-0938: 0xA099C8E8   ; 24E: void *GetPlayObjById(int handle)
+0934: 0xA0967314 ; 24D: int PlayMelody_SetPosition(int handle, int pos_ms)
+0938: 0xA099C8E8 ; 24E: void *GetPlayObjById(int handle)
 0950: 0xA098F758 ; 254: int StartNativeExplorer(NativeExplorerData* data)
-0954: 0xA12C7D7D   ; 255: void MenuSetUserPointer(void *gui,void *user_pointer)
-;958:              ; 256: isSetupTheme()
-;95C:              ; 257: isSendReceiveFile()
-0960: 0xA0CB768B   ; 258: int CalcBitmapSize(short w,short h, char typy)
-964: 0xA09798B0    ; 259: HObj Obs_CreateObject(int uid_in, int uid_out, int prio, int msg_callback, int emb4, int sync,unsigned int *ErrorNumber)
-0968: 0xA09D7ACC   ; 25A: int Obs_DestroyObject(HObj hObj)
-96C: 0xA097E2D4    ; 25B: int Obs_SetInput_File (HObj hObj, int unk_zero, WSHDR *path)
-0970: 0xA0977C84   ; 25C: int Obs_GetInputImageSize (HObj hObj, short *w, short *h)
-0974: 0xA167E21C   ; 25D: int Obs_SetOutputImageSize (HObj hObj, short w, short h)
-978: 0xA097CFD0    ; 25E: int Obs_Start(HObj hObj)
-97C: 0xA099F058    ; 25F: int Obs_Output_GetPictstruct(HObj hObj, IMGHDR *img)
-0980: 0xA0978724   ; 260: int Obs_Graphics_SetClipping(HObj hObj, short x, short y, short w, short h)
-0984: 0xA0978294   ; 261: int Obs_SetRotation(HObj hObj, int angle)
-0988: 0xA097CE60   ; 262: int Obs_GetInfo(HObj hObj, int unk_0or1)
-098C: 0xA0978150   ; 263: intObs_SetScaling(HObj hObj, int unk5)
-0990: 0xA097F8F8   ; 264: int Obs_TranslateMessageGBS(GBS_MSG *msg, OBSevent *event_handler)
-994: 0xA097D5C0    ; 265: int Obs_Pause(HObj hObj)
-998: 0xA097D6DC    ; 266: int Obs_Resume(HObj hObj)
-99C: 0xA097D43C    ; 267: int Obs_Stop(HObj hObj)
-;9A0:              ; 268: int Obs_Prepare(HObj hObj)
-;9A4:              ; 269: int Obs_SetRenderOffset(HObj hObj,short x,short y)
-9A8: 0xA097A640    ; 26A: int Obs_SetPosition(HObj hObj,int ms)
-;9AC:              ; 26B: int Obs_Mam_SetPurpose(HObj hObj,int ms)
-;9B0:              ; 26C: int Obs_Sound_SetVolumeEx(HObj hObj, char vol, char delta)
-9B4: 0xA099EF1C    ; 26D: int Obs_Sound_GetVolume(HObj hObj, char *vol)
-A04: 0xA86DA9E8   ; 281: char *RamIsRunJava()
-;A08:              ; 282: char *RamIsRunCamera()
-A0C: 0xA095FF34    ; 283: int runMidletLinkablely(const char *midlet_name, WSHDR *filename)
-A10: 0xA0AF8B33    ; 284: int IsGPRS()
-;A14:              ; 285: int IsEDGE()
-;A18:              ; 286: int GetSMSState()
-;A1C:              ; 287: int BT_GetLocVisibility()
-;A20:              ; 288: int GetCurrAudioPath()
-0A24: 0xA12A18D1   ; 289: int isDecryption()
-;A28:              ; 28A: char *RamIsFileCache()
-A58: 0xA08D1643    ; 296: void getProfileNamervn
-A8C: 0xA0C95BFB    ; 2A3: void UpdateMenuCursorItem(void *gui, int n)
-A90: 0xA0C9325F    ; 2A4: void *GetMenuGUI(void *malloc_adr, void *mfree_adr)
-A94: 0xA0CF170D    ; 2A5: void *GetMultiLinesMenuGUI(void *malloc_adr, void *mfree_adr)
+0954: 0xA12C7D7D ; 255: void MenuSetUserPointer(void *gui,void *user_pointer)
+;958:            ; 256: isSetupTheme()
+;95C:            ; 257: isSendReceiveFile()
+0960: 0xA0CB768B ; 258: int CalcBitmapSize(short w,short h, char typy)
+0964: 0xA09798B0 ; 259: HObj Obs_CreateObject(int uid_in, int uid_out, int prio, int msg_callback, int emb4, int sync,unsigned int *ErrorNumber)
+0968: 0xA09D7ACC ; 25A: int Obs_DestroyObject(HObj hObj)
+096C: 0xA097E2D4 ; 25B: int Obs_SetInput_File (HObj hObj, int unk_zero, WSHDR *path)
+0970: 0xA0977C84 ; 25C: int Obs_GetInputImageSize (HObj hObj, short *w, short *h)
+0974: 0xA167E21C ; 25D: int Obs_SetOutputImageSize (HObj hObj, short w, short h)
+0978: 0xA097CFD0 ; 25E: int Obs_Start(HObj hObj)
+097C: 0xA099F058 ; 25F: int Obs_Output_GetPictstruct(HObj hObj, IMGHDR *img)
+0980: 0xA0978724 ; 260: int Obs_Graphics_SetClipping(HObj hObj, short x, short y, short w, short h)
+0984: 0xA0978294 ; 261: int Obs_SetRotation(HObj hObj, int angle)
+0988: 0xA097CE60 ; 262: int Obs_GetInfo(HObj hObj, int unk_0or1)
+098C: 0xA0978150 ; 263: intObs_SetScaling(HObj hObj, int unk5)
+0990: 0xA097F8F8 ; 264: int Obs_TranslateMessageGBS(GBS_MSG *msg, OBSevent *event_handler)
+0994: 0xA097D5C0 ; 265: int Obs_Pause(HObj hObj)
+0998: 0xA097D6DC ; 266: int Obs_Resume(HObj hObj)
+099C: 0xA097D43C ; 267: int Obs_Stop(HObj hObj)
+;09A0:           ; 268: int Obs_Prepare(HObj hObj)
+;09A4:           ; 269: int Obs_SetRenderOffset(HObj hObj,short x,short y)
+09A8: 0xA097A640 ; 26A: int Obs_SetPosition(HObj hObj,int ms)
+;9AC:            ; 26B: int Obs_Mam_SetPurpose(HObj hObj,int ms)
+;9B0:            ; 26C: int Obs_Sound_SetVolumeEx(HObj hObj, char vol, char delta)
+09B4: 0xA099EF1C ; 26D: int Obs_Sound_GetVolume(HObj hObj, char *vol)
+0A04: 0xA86DA9E8 ; 281: char *RamIsRunJava()
+;A08:            ; 282: char *RamIsRunCamera()
+0A0C: 0xA095FF34 ; 283: int runMidletLinkablely(const char *midlet_name, WSHDR *filename)
+0A10: 0xA0AF8B33 ; 284: int IsGPRS()
+;A14:            ; 285: int IsEDGE()
+;A18:            ; 286: int GetSMSState()
+;A1C:            ; 287: int BT_GetLocVisibility()
+;A20:            ; 288: int GetCurrAudioPath()
+0A24: 0xA12A18D1 ; 289: int isDecryption()
+;A28:            ; 28A: char *RamIsFileCache()
+0A58: 0xA08D1643 ; 296: void getProfileNamervn
+0A8C: 0xA0C95BFB ; 2A3: void UpdateMenuCursorItem(void *gui, int n)
+0A90: 0xA0C9325F ; 2A4: void *GetMenuGUI(void *malloc_adr, void *mfree_adr)
+0A94: 0xA0CF170D ; 2A5: void *GetMultiLinesMenuGUI(void *malloc_adr, void *mfree_adr)
 ;A98: ; 2A6: void SetHeaderToMenu(void *gui, const HEADER_DESC *hdr, void *malloc_adr)
-A9C: 0xA0C967F1    ; 2A7: void SetMenuToGUI(void *gui, const void *menu_desc)
-AA0: 0xA0C93E2F    ; 2A8: int GetMenuItemCount(void *gui)
-AA4: 0xA0C92177    ; 2A9: int CreatePopupGUI(int flag, void *user_pointer, const POPUP_DESC *, int lgp_msg)
-AA8: 0xA0C920E9    ; 2AA: int CreatePopupGUI_ws(int flag, void *user_pointer, const POPUP_DESC *, WSHDR *msg)
-AAC: 0xA0CBB169    ; 2AB: void *GetPopupUserPointer(void *gui)
-;AB0: 0x            ; 2AC: __unknown int DeleteSMS(int index, short *del_cnt)
-;AB4: 0x            ; 2AD: __unknown int SetSmsStatus(int index, int type)
-AB8: 0xA0C9724F    ; 2AE: void *GetHeaderPointer(void *gui)
-ABC: 0xA113D489    ; 2AF: void SetHeaderText(void *hdr_pointer, WSHDR *txt, void *malloc_adr, void *mfree_adr)
-AC0: 0xA0C97B2B    ; 2B0: void SetMenuSoftKey(void *gui, const SOFTKEY_DESC *,int n)
-;AC4: 0x            ; 2B1: __unknown SMS_DATA_ROOT *SmsDataRoot()
-AC8: 0xA134D5B5    ; 2B2: int GetSmsPosIndex(SMS_POS_INDEX_DATA *buf, int data_id)
-;ACC: 0x            ; 2B3: __unknown NativeAbData *AllocNativeAbData(void)
-;AD0: 0x            ; 2B4: __unknown int FreeNativeAbData(NativeAbData *ab_data)
-;AD4: 0x            ; 2B5: __unknown int GetNativeAbDataType(NativeAbData *nab, int unk0)
-;AD8: 0x            ; 2B6: __unknown WSHDR *GetNumFromNativeAbData(NativeAbData *nab, int type, int unk0)
-;ADC: 0x            ; 2B7: __unknown int GetNativeAbDataStatus(NativeAbData *nab, int _0)
-;AE0: 0x            ; 2B8: __unknown int SetNumToNativeAbData(NativeAbData *abd, int unk, WSHDR *num)
-;AE4: 0x            ; 2B9: __unknown unsigned int OpenNativeAddressbook(int type, int unk1, int unk2, void *data)
-;AE8: 0x            ; 2BA: __unknown void SetHeaderIcon(void *hdr_pointer, const int *icon, void *malloc_adr, void *mfree_adr)
-;AEC: 0x            ; 2BB: __unknown void *GetTabGUI(void *malloc_adr, void *mfree_adr)
-;AF0: 0x            ; 2BC: __unknown void SetGUIDefinition(void *gui, const void *definition)
-;AF4: 0x            ; 2BD: __unknown int SetGUIToTabGUI(void *tabgui, int n, const int *tabicons, void *gui)
-;AF8: 0x            ; 2BE: __unknown int SetCursorTab(void *tab_gui, int n)
-;AFC: 0x            ; 2BF: __unknown int UpdateTab1stItem(void *tab_gui, int unk_0)
-;B00: 0x            ; 2C0: __unknown int GetCursorTab(void *tab_gui)
-;B04: 0x            ; 2C1: __unknown void *GetGuiByTab(void *tab_gui, int n)
-B08: 0xA0BA47A5    ; 2C2: int GetSubprovider(WSHDR* ws)
-B0C: 0xA0BA49B9    ; 2C3: int GetRoamingState(); 
-B18: 0xA082B57B    ; 2C6: int GetSecondsFromDateTime(int *result, TDate *t_date, TTime *time, TDate *s_date)
-B1C: 0xA082B5CD    ; 2C7: int GetSecondsFromDateTimeSince1997(int *result, TDate *date, TTime *time)
-B20: 0xA082B9BF    ; 2C8: int GetSecondsFromTime(TTime *time)
-B24: 0xA082B4B5    ; 2C9: int GetDateTimeFromSeconds(int *seconds, TDate *t_date, TTime *time, TDate *s_date)
-B28: 0xA082B5EF    ; 2CA: int GetDateTimeFromSecondsSince1997(int *seconds, TDate *date, TTime *time)
-B2C: 0xA082B9D1    ; 2CB: void GetTimeFromSeconds(TTime *time, int seconds)
-B34: 0xA0825C8F    ; 2CD: void InitTime(TDate *time, unsigned char hour, unsigned char min, unsigned char sec, unsigned long millisec)
-B38: 0xA0825671    ; 2CE: int CmpDates(TDate *date1, TDate *date2)
-B3C: 0xA082B961    ; 2CF: int CmpTimes(TTime *time1, TTime *time2)
-B40: 0xA08256C1    ; 2D0: int GetDaysFromMonth(TDate *date)
-B44: 0xA08256A1    ; 2D1: int IsLeapYear(TDate *date)
-B48: 0xA0B958FB    ; 2D2: StartNativeBrowserCore()
-;B4C: 0x           ; 2D3: __unknown int GetFilledNAbDataCount(NativeAbData *nab)
-;B50: 0x           ; 2D4: __unknown void *GetDataFromNAbData(NativeAbData *nab, int n)
-B54: 0xA0BAD9A5    ; 2D5: void UnpackNumPkt(PKT_NUM *pkt, char *buf, int maxlen)
-B58: 0xA0CBBD87    ; 2D6: void *TViewGetGUI(void *malloc_adr, void *mfree_adr)
-B5C: 0xA0CBC339    ; 2D7: void TViewSetDefinition(void *gui, const TVIEW_DESC *)
-B60: 0xA0CBC2C3    ; 2D8: void TViewSetText(void *gui, WSHDR *text, void *malloc_adr, void *mfree_adr)
-;B64: 0x           ; 2D9: void TViewSetUserPointer(void *gui,void *user_pointer)
-;B68: 0x           ; 2DA: void *TViewGetUserPointer(void *gui)
-B6C: 0xA09D8B24    ; 2DB: void SendMedia(WSHDR *file, WSHDR *path)
+0A9C: 0xA0C967F1 ; 2A7: void SetMenuToGUI(void *gui, const void *menu_desc)
+0AA0: 0xA0C93E2F ; 2A8: int GetMenuItemCount(void *gui)
+0AA4: 0xA0C92177 ; 2A9: int CreatePopupGUI(int flag, void *user_pointer, const POPUP_DESC *, int lgp_msg)
+0AA8: 0xA0C920E9 ; 2AA: int CreatePopupGUI_ws(int flag, void *user_pointer, const POPUP_DESC *, WSHDR *msg)
+0AAC: 0xA0CBB169 ; 2AB: void *GetPopupUserPointer(void *gui)
+;AB0: 0x         ; 2AC: __unknown int DeleteSMS(int index, short *del_cnt)
+;AB4: 0x         ; 2AD: __unknown int SetSmsStatus(int index, int type)
+0AB8: 0xA0C9724F ; 2AE: void *GetHeaderPointer(void *gui)
+0ABC: 0xA113D489 ; 2AF: void SetHeaderText(void *hdr_pointer, WSHDR *txt, void *malloc_adr, void *mfree_adr)
+0AC0: 0xA0C97B2B ; 2B0: void SetMenuSoftKey(void *gui, const SOFTKEY_DESC *,int n)
+;AC4: 0x         ; 2B1: __unknown SMS_DATA_ROOT *SmsDataRoot()
+0AC8: 0xA134D5B5 ; 2B2: int GetSmsPosIndex(SMS_POS_INDEX_DATA *buf, int data_id)
+;ACC: 0x         ; 2B3: __unknown NativeAbData *AllocNativeAbData(void)
+;AD0: 0x         ; 2B4: __unknown int FreeNativeAbData(NativeAbData *ab_data)
+;AD4: 0x         ; 2B5: __unknown int GetNativeAbDataType(NativeAbData *nab, int unk0)
+;AD8: 0x         ; 2B6: __unknown WSHDR *GetNumFromNativeAbData(NativeAbData *nab, int type, int unk0)
+;ADC: 0x         ; 2B7: __unknown int GetNativeAbDataStatus(NativeAbData *nab, int _0)
+;AE0: 0x         ; 2B8: __unknown int SetNumToNativeAbData(NativeAbData *abd, int unk, WSHDR *num)
+;AE4: 0x         ; 2B9: __unknown unsigned int OpenNativeAddressbook(int type, int unk1, int unk2, void *data)
+;AE8: 0x         ; 2BA: __unknown void SetHeaderIcon(void *hdr_pointer, const int *icon, void *malloc_adr, void *mfree_adr)
+;AEC: 0x         ; 2BB: __unknown void *GetTabGUI(void *malloc_adr, void *mfree_adr)
+;AF0: 0x         ; 2BC: __unknown void SetGUIDefinition(void *gui, const void *definition)
+;AF4: 0x         ; 2BD: __unknown int SetGUIToTabGUI(void *tabgui, int n, const int *tabicons, void *gui)
+;AF8: 0x         ; 2BE: __unknown int SetCursorTab(void *tab_gui, int n)
+;AFC: 0x         ; 2BF: __unknown int UpdateTab1stItem(void *tab_gui, int unk_0)
+;B00: 0x         ; 2C0: __unknown int GetCursorTab(void *tab_gui)
+;B04: 0x         ; 2C1: __unknown void *GetGuiByTab(void *tab_gui, int n)
+0B08: 0xA0BA47A5 ; 2C2: int GetSubprovider(WSHDR* ws)
+0B0C: 0xA0BA49B9 ; 2C3: int GetRoamingState(); 
+0B18: 0xA082B57B ; 2C6: int GetSecondsFromDateTime(int *result, TDate *t_date, TTime *time, TDate *s_date)
+0B1C: 0xA082B5CD ; 2C7: int GetSecondsFromDateTimeSince1997(int *result, TDate *date, TTime *time)
+0B20: 0xA082B9BF ; 2C8: int GetSecondsFromTime(TTime *time)
+0B24: 0xA082B4B5 ; 2C9: int GetDateTimeFromSeconds(int *seconds, TDate *t_date, TTime *time, TDate *s_date)
+0B28: 0xA082B5EF ; 2CA: int GetDateTimeFromSecondsSince1997(int *seconds, TDate *date, TTime *time)
+0B2C: 0xA082B9D1 ; 2CB: void GetTimeFromSeconds(TTime *time, int seconds)
+0B34: 0xA0825C8F ; 2CD: void InitTime(TDate *time, unsigned char hour, unsigned char min, unsigned char sec, unsigned long millisec)
+0B38: 0xA0825671 ; 2CE: int CmpDates(TDate *date1, TDate *date2)
+0B3C: 0xA082B961 ; 2CF: int CmpTimes(TTime *time1, TTime *time2)
+0B40: 0xA08256C1 ; 2D0: int GetDaysFromMonth(TDate *date)
+0B44: 0xA08256A1 ; 2D1: int IsLeapYear(TDate *date)
+0B48: 0xA0B958FB ; 2D2: StartNativeBrowserCore()
+;B4C: 0x         ; 2D3: __unknown int GetFilledNAbDataCount(NativeAbData *nab)
+;B50: 0x         ; 2D4: __unknown void *GetDataFromNAbData(NativeAbData *nab, int n)
+0B54: 0xA0BAD9A5 ; 2D5: void UnpackNumPkt(PKT_NUM *pkt, char *buf, int maxlen)
+0B58: 0xA0CBBD87 ; 2D6: void *TViewGetGUI(void *malloc_adr, void *mfree_adr)
+0B5C: 0xA0CBC339 ; 2D7: void TViewSetDefinition(void *gui, const TVIEW_DESC *)
+0B60: 0xA0CBC2C3 ; 2D8: void TViewSetText(void *gui, WSHDR *text, void *malloc_adr, void *mfree_adr)
+;B64: 0x         ; 2D9: void TViewSetUserPointer(void *gui,void *user_pointer)
+;B68: 0x         ; 2DA: void *TViewGetUserPointer(void *gui)
+0B6C: 0xA09D8B24 ; 2DB: void SendMedia(WSHDR *file, WSHDR *path)
 	
-;0B70: 0x          ; 2DC: void SaveMaxIllumination(int level)
-;0B74: 0x          ; 2DD: int SetIlluminationoffTimeout(int time_sec)
-0B78: 0xA0B8E2F3   ; 2DE: void IllumTimeRequest(int TimeMode, int Counter)
-0B7C: 0xA0B8E30F   ; 2DF: void IllumTimeRelease(int TimeMode, int Counter)
-;B80: ; 2E0: IMGHDR *GetIMGHDRFromThemeCache(int index)
-0B84: 0xA095233C   ; 2E1: int GetExtUidByFileName_ws(WSHDR *path)
-0B88: 0xA0C8CA47   ; 2E2: int wstrcmp(WSHDR *ws1, WSHDR *ws2)
-;B8C: ; 2E3: int fexists(WSHDR* FileName)
-;B90: ; 2E4: int SettingsAE_Update_ws(WSHDR *,int set,char * entry,char *keyword)
-;B94: ; 2E5: int SettingsAE_Read_ws(WSHDR *,int set,char * entry,char *keyword)
-;B98: ; 2E6: int SettingsAE_SetFlag(int val,int set,char * entry,char *keyword)
-;B9C: ; 2E7: int SettingsAE_GetFlag(int *res,int set,char * entry,char *keyword)
-;BA0: ; 2E8: int SettingsAE_Update(int val,int set,char * entry,char *keyword)
-;BA4: ; 2E9: int SettingsAE_Read(int *res,int set,char * entry,char *keyword)
-;BA8: ; 2EA: void* SettingsAE_GetEntryList(int set)
-;BAC: ; 2EB: int SettingsAE_RemoveEntry(int set,char *entry,int flag)
+;0B70: 0x        ; 2DC: void SaveMaxIllumination(int level)
+;0B74: 0x        ; 2DD: int SetIlluminationoffTimeout(int time_sec)
+0B78: 0xA0B8E2F3 ; 2DE: void IllumTimeRequest(int TimeMode, int Counter)
+0B7C: 0xA0B8E30F ; 2DF: void IllumTimeRelease(int TimeMode, int Counter)
+;B80:            ; 2E0: IMGHDR *GetIMGHDRFromThemeCache(int index)
+0B84: 0xA095233C ; 2E1: int GetExtUidByFileName_ws(WSHDR *path)
+0B88: 0xA0C8CA47 ; 2E2: int wstrcmp(WSHDR *ws1, WSHDR *ws2)
+;B8C:            ; 2E3: int fexists(WSHDR* FileName)
+;B90:            ; 2E4: int SettingsAE_Update_ws(WSHDR *,int set,char * entry,char *keyword)
+;B94:            ; 2E5: int SettingsAE_Read_ws(WSHDR *,int set,char * entry,char *keyword)
+;B98:            ; 2E6: int SettingsAE_SetFlag(int val,int set,char * entry,char *keyword)
+;B9C:            ; 2E7: int SettingsAE_GetFlag(int *res,int set,char * entry,char *keyword)
+;BA0:            ; 2E8: int SettingsAE_Update(int val,int set,char * entry,char *keyword)
+;BA4:            ; 2E9: int SettingsAE_Read(int *res,int set,char * entry,char *keyword)
+;BA8:            ; 2EA: void* SettingsAE_GetEntryList(int set)
+;BAC:            ; 2EB: int SettingsAE_RemoveEntry(int set,char *entry,int flag)
 
-BB0: 0xA116B71C    ; 2EC: int i2c_transfer(I2C_MSG *msg)
-BB4: 0xA116B768    ; 2ED: int i2c_receive(I2C_MSG *msg)
+0BB0: 0xA116B71C ; 2EC: int i2c_transfer(I2C_MSG *msg)
+0BB4: 0xA116B768 ; 2ED: int i2c_receive(I2C_MSG *msg)
 
 ;EP3
 
 ;Nucleus RTOS API
 
-0C00: 0xA082AA60   ; 300:  NU_Create_Task
-0C04: 0xA082AB7C   ; 301:  NU_Delete_Task
-0C08: 0xA082ABD8   ; 302:  NU_Reset_Task
-0C0C: 0xA082ABF8   ; 303:  NU_Terminate_Task
-0C10: 0xA082ACC0   ; 304:  NU_Resume_Task
-0C14: 0xA082AD08   ; 305:  NU_Suspend_Task
-0C18: 0xA082AD44   ; 306:  NU_Relinquish
-0C1C: 0xA082AD68   ; 307:  NU_Sleep
-0C20: 0xA0831050   ; 308:  NU_Change_Priority
-0C24: 0xA0831068   ; 309:  NU_Change_Preemption
-0C28: 0xA0831084   ; 30A:  NU_Change_Time_Slice
-0C2C: 0xA08373F4   ; 30B:  NU_Check_Stack
-0C30: 0xA0830CCC   ; 30C:  NU_Current_Task_Pointer
-0C34: 0xA082AE28   ; 30D:  NU_Established_Tasks
-0C38: 0xA082B0FC   ; 30E:  NU_Task_Information
-0C3C: 0xA082AE50   ; 30E:  NU_Task_Pointers
+0C00: 0xA082AA60 ; 300:  NU_Create_Task
+0C04: 0xA082AB7C ; 301:  NU_Delete_Task
+0C08: 0xA082ABD8 ; 302:  NU_Reset_Task
+0C0C: 0xA082ABF8 ; 303:  NU_Terminate_Task
+0C10: 0xA082ACC0 ; 304:  NU_Resume_Task
+0C14: 0xA082AD08 ; 305:  NU_Suspend_Task
+0C18: 0xA082AD44 ; 306:  NU_Relinquish
+0C1C: 0xA082AD68 ; 307:  NU_Sleep
+0C20: 0xA0831050 ; 308:  NU_Change_Priority
+0C24: 0xA0831068 ; 309:  NU_Change_Preemption
+0C28: 0xA0831084 ; 30A:  NU_Change_Time_Slice
+0C2C: 0xA08373F4 ; 30B:  NU_Check_Stack
+0C30: 0xA0830CCC ; 30C:  NU_Current_Task_Pointer
+0C34: 0xA082AE28 ; 30D:  NU_Established_Tasks
+0C38: 0xA082B0FC ; 30E:  NU_Task_Information
+0C3C: 0xA082AE50 ; 30E:  NU_Task_Pointers
 
-0C40: 0xA082A678   ; 310:  NU_Create_Mailbox
-0C44: 0xA082A6A4   ; 311:  NU_Delete_Mailbox
-;C48:              ; 312:  NU_Reset_Mailbox
-0C4C: 0xA082A6C4   ; 313:  NU_Send_To_Mailbox
-;C50:              ; 314:  NU_Broadcast_To_Mailbox
-0C54: 0xA082A728   ; 315:  NU_Receive_From_Mailbox
-;C58:              ; 316:  NU_Established_Mailboxes
-;C5C:              ; 317:  NU_Mailbox_Information
-;C60:              ; 318:  NU_Mailbox_Pointers
-0C64: 0xA0832F5C   ; 319:  NU_Create_Queue
-0C68: 0xA0832FFC   ; 31A:  NU_Delete_Queue
-;C6C:              ; 31B:  NU_Reset_Queue
-;C70:              ; 31C:  NU_Send_To_Front_Of_Queue
-0C74: 0xA083301C   ; 31D:  NU_Send_To_Queue
-;C78:              ; 31E:  NU_Broadcast_To_Queue
-0C7C: 0xA08330C0   ; 31F:  NU_Receive_From_Queue
+0C40: 0xA082A678 ; 310:  NU_Create_Mailbox
+0C44: 0xA082A6A4 ; 311:  NU_Delete_Mailbox
+;C48:            ; 312:  NU_Reset_Mailbox
+0C4C: 0xA082A6C4 ; 313:  NU_Send_To_Mailbox
+;C50:            ; 314:  NU_Broadcast_To_Mailbox
+0C54: 0xA082A728 ; 315:  NU_Receive_From_Mailbox
+;C58:            ; 316:  NU_Established_Mailboxes
+;C5C:            ; 317:  NU_Mailbox_Information
+;C60:            ; 318:  NU_Mailbox_Pointers
+0C64: 0xA0832F5C ; 319:  NU_Create_Queue
+0C68: 0xA0832FFC ; 31A:  NU_Delete_Queue
+;C6C:            ; 31B:  NU_Reset_Queue
+;C70:            ; 31C:  NU_Send_To_Front_Of_Queue
+0C74: 0xA083301C ; 31D:  NU_Send_To_Queue
+;C78:            ; 31E:  NU_Broadcast_To_Queue
+0C7C: 0xA08330C0 ; 31F:  NU_Receive_From_Queue
 
-0C80: 0xA0833170   ; 320:  NU_Established_Queues
-0C84: 0xA08331F4   ; 321:  NU_Queue_Information
-0C88: 0xA0833184   ; 322:  NU_Queue_Pointers
-;C8C:              ; 323:  NU_Create_Pipe
-;C90:              ; 324:  NU_Delete_Pipe
-;C94:              ; 325:  NU_Reset_Pipe
-;C98:              ; 326:  NU_Send_To_Front_Of_Pipe
-;C9C:              ; 327:  NU_Send_To_Pipe
-;CA0:              ; 328:  NU_Broadcast_To_Pipe
-;CA4:              ; 329:  NU_Receive_From_Pipe
-;CA8:              ; 32A:  NU_Established_Pipes
-;CAC:              ; 32B:  NU_Pipe_Information
-;CB0:              ; 32C:  NU_Pipe_Pointers
-0CB4: 0xA08300AC   ; 32D:  NU_Create_Semaphore
-0CB8: 0xA08300E4   ; 32E:  NU_Delete_Semaphore
-;CBC:              ; 32F:  NU_Reset_Semaphore
+0C80: 0xA0833170 ; 320:  NU_Established_Queues
+0C84: 0xA08331F4 ; 321:  NU_Queue_Information
+0C88: 0xA0833184 ; 322:  NU_Queue_Pointers
+;C8C:            ; 323:  NU_Create_Pipe
+;C90:            ; 324:  NU_Delete_Pipe
+;C94:            ; 325:  NU_Reset_Pipe
+;C98:            ; 326:  NU_Send_To_Front_Of_Pipe
+;C9C:            ; 327:  NU_Send_To_Pipe
+;CA0:            ; 328:  NU_Broadcast_To_Pipe
+;CA4:            ; 329:  NU_Receive_From_Pipe
+;CA8:            ; 32A:  NU_Established_Pipes
+;CAC:            ; 32B:  NU_Pipe_Information
+;CB0:            ; 32C:  NU_Pipe_Pointers
+0CB4: 0xA08300AC ; 32D:  NU_Create_Semaphore
+0CB8: 0xA08300E4 ; 32E:  NU_Delete_Semaphore
+;CBC:            ; 32F:  NU_Reset_Semaphore
 
-0CC0: 0xA0830104   ; 330:  NU_Obtain_Semaphore
-0CC4: 0xA0830154   ; 331:  NU_Release_Semaphore
-;CC8:              ; 332:  NU_Established_Semaphores
-;CCC:              ; 333:  NU_Semaphore_Information
-;CD0:              ; 334:  NU_Semaphore_Pointers
-0CD4: 0xA082F6EC   ; 335:  NU_Create_Event_Group
-0CD8: 0xA082F708   ; 336:  NU_Delete_Event_Group
-0CDC: 0xA082F728   ; 337:  NU_Set_Events
-0CE0: 0xA082F75C   ; 338:  NU_Retrieve_Events
-;CE4:              ; 339:  NU_Established_Event_Groups
-;CE8:              ; 33A:  NU_Event_Group_Information
-;CEC:              ; 33B:  NU_Event_Group_Pointers
-0CF0: 0xA083109C   ; 33C:  NU_Control_Signals
-0CF4: 0xA08310BC   ; 33D:  NU_Receive_Signals
-0CF8: 0xA08310DC   ; 33E:  NU_Register_Signal_Handler
-0CFC: 0xA0831108   ; 33F:  NU_Send_Signals
+0CC0: 0xA0830104 ; 330:  NU_Obtain_Semaphore
+0CC4: 0xA0830154 ; 331:  NU_Release_Semaphore
+;CC8:            ; 332:  NU_Established_Semaphores
+;CCC:            ; 333:  NU_Semaphore_Information
+;CD0:            ; 334:  NU_Semaphore_Pointers
+0CD4: 0xA082F6EC ; 335:  NU_Create_Event_Group
+0CD8: 0xA082F708 ; 336:  NU_Delete_Event_Group
+0CDC: 0xA082F728 ; 337:  NU_Set_Events
+0CE0: 0xA082F75C ; 338:  NU_Retrieve_Events
+;CE4:            ; 339:  NU_Established_Event_Groups
+;CE8:            ; 33A:  NU_Event_Group_Information
+;CEC:            ; 33B:  NU_Event_Group_Pointers
+0CF0: 0xA083109C ; 33C:  NU_Control_Signals
+0CF4: 0xA08310BC ; 33D:  NU_Receive_Signals
+0CF8: 0xA08310DC ; 33E:  NU_Register_Signal_Handler
+0CFC: 0xA0831108 ; 33F:  NU_Send_Signals
 
-0D00: 0xA082A790   ; 340:  NU_Create_Partition_Pool
-0D04: 0xA082A814   ; 341:  NU_Delete_Partition_Pool
-0D08: 0xA082A834   ; 342:  NU_Allocate_Partition
-0D0C: 0xA082A898   ; 343:  NU_Deallocate_Partition
-0D10: 0xA082A8D0   ; 344:  NU_Established_Partition_Pools
-0D14: 0xA082A954   ; 345:  NU_Partition_Pool_Information
-0D18: 0xA082A8E4   ; 346:  NU_Partition_Pool_Pointers
-0D1C: 0xA082A384   ; 347:  NU_Create_Memory_Pool
-0D20: 0xA082A414   ; 348:  NU_Delete_Memory_Pool
-0D24: 0xA082A434   ; 349:  NU_Allocate_Memory
-0D28: 0xA082A4C0   ; 34A:  NU_Deallocate_Memory
-0D2C: 0xA082A4F8   ; 34B:  NU_Established_Memory_Pools
-0D30: 0xA082A57C   ; 34C:  NU_Memory_Pool_Information
-0D34: 0xA082A50C   ; 34D:  NU_Memory_Pool_Pointers
-0D38: 0xA0837230   ; 34E:  NU_Control_Interrupts
-0D3C: 0xA083725C   ; 34F:  NU_Local_Control_Interrupts
+0D00: 0xA082A790 ; 340:  NU_Create_Partition_Pool
+0D04: 0xA082A814 ; 341:  NU_Delete_Partition_Pool
+0D08: 0xA082A834 ; 342:  NU_Allocate_Partition
+0D0C: 0xA082A898 ; 343:  NU_Deallocate_Partition
+0D10: 0xA082A8D0 ; 344:  NU_Established_Partition_Pools
+0D14: 0xA082A954 ; 345:  NU_Partition_Pool_Information
+0D18: 0xA082A8E4 ; 346:  NU_Partition_Pool_Pointers
+0D1C: 0xA082A384 ; 347:  NU_Create_Memory_Pool
+0D20: 0xA082A414 ; 348:  NU_Delete_Memory_Pool
+0D24: 0xA082A434 ; 349:  NU_Allocate_Memory
+0D28: 0xA082A4C0 ; 34A:  NU_Deallocate_Memory
+0D2C: 0xA082A4F8 ; 34B:  NU_Established_Memory_Pools
+0D30: 0xA082A57C ; 34C:  NU_Memory_Pool_Information
+0D34: 0xA082A50C ; 34D:  NU_Memory_Pool_Pointers
+0D38: 0xA0837230 ; 34E:  NU_Control_Interrupts
+0D3C: 0xA083725C ; 34F:  NU_Local_Control_Interrupts
 
-0D40: 0xA0837278   ; 350:  NU_Restore_Interrupts
-;D44:              ; 351:  NU_Setup_Vector
-0D48: 0xA0830F5C   ; 352:  NU_Register_LISR
-0D4C: 0xA082ADC4   ; 353:  NU_Activate_HISR
-0D50: 0xA082AB0C   ; 354:  NU_Create_HISR
-0D54: 0xA082ABB8   ; 355:  NU_Delete_HISR
-0D58: 0xA0830CF4   ; 356:  NU_Current_HISR_Pointer
-0D5C: 0xA082AE3C   ; 357:  NU_Established_HISRs
-0D60: 0xA082B01C   ; 358:  NU_HISR_Information
-0D64: 0xA082AEC0   ; 359:  NU_HISR_Pointers
-0D68: 0xA083764C   ; 35A:  NU_Protect
-0D6C: 0xA08376D8   ; 35B:  NU_Unprotect
-0D70: 0xA082B188   ; 35C:  NU_Create_Timer
-0D74: 0xA082B1FC   ; 35D:  NU_Delete_Timer
-0D78: 0xA082B21C   ; 35E:  NU_Reset_Timer
-0D7C: 0xA082B280   ; 35F:  NU_Control_Timer
+0D40: 0xA0837278 ; 350:  NU_Restore_Interrupts
+;D44:            ; 351:  NU_Setup_Vector
+0D48: 0xA0830F5C ; 352:  NU_Register_LISR
+0D4C: 0xA082ADC4 ; 353:  NU_Activate_HISR
+0D50: 0xA082AB0C ; 354:  NU_Create_HISR
+0D54: 0xA082ABB8 ; 355:  NU_Delete_HISR
+0D58: 0xA0830CF4 ; 356:  NU_Current_HISR_Pointer
+0D5C: 0xA082AE3C ; 357:  NU_Established_HISRs
+0D60: 0xA082B01C ; 358:  NU_HISR_Information
+0D64: 0xA082AEC0 ; 359:  NU_HISR_Pointers
+0D68: 0xA083764C ; 35A:  NU_Protect
+0D6C: 0xA08376D8 ; 35B:  NU_Unprotect
+0D70: 0xA082B188 ; 35C:  NU_Create_Timer
+0D74: 0xA082B1FC ; 35D:  NU_Delete_Timer
+0D78: 0xA082B21C ; 35E:  NU_Reset_Timer
+0D7C: 0xA082B280 ; 35F:  NU_Control_Timer
 
-0D80: 0xA0831130   ; 360:  NU_Established_Timers
-0D84: 0xA08311B4   ; 361:  NU_Timer_Information
-0D88: 0xA0831144   ; 362:  NU_Timer_Pointers
-0D8C: 0xA0837C5C   ; 363:  NU_Set_Clock
-0D90: 0xA0837C68   ; 364:  NU_Retrieve_Clock
-0D94: 0xA0835540   ; 365:  NU_Release_Information
-0D98: 0xA0834BD0   ; 366:  NU_License_Information
-;D9C:              ; 367:  NU_Disable_History_Saving
-;DA0:              ; 368:  NU_Enable_History_Saving
-;DA4:              ; 369:  NU_Make_History_Entry
-;DA8:              ; 36A:  NU_Retrieve_History_Entry
-;DAC:              ; 36B:  NU_Create_Driver
-;DB0:              ; 36C:  NU_Delete_Driver
-;DB4:              ; 36D:  NU_Request_Driver
-;DB8:              ; 36E:  NU_Resume_Driver
-;DBC:              ; 36F:  NU_Suspend_Driver
+0D80: 0xA0831130 ; 360:  NU_Established_Timers
+0D84: 0xA08311B4 ; 361:  NU_Timer_Information
+0D88: 0xA0831144 ; 362:  NU_Timer_Pointers
+0D8C: 0xA0837C5C ; 363:  NU_Set_Clock
+0D90: 0xA0837C68 ; 364:  NU_Retrieve_Clock
+0D94: 0xA0835540 ; 365:  NU_Release_Information
+0D98: 0xA0834BD0 ; 366:  NU_License_Information
+;D9C:            ; 367:  NU_Disable_History_Saving
+;DA0:            ; 368:  NU_Enable_History_Saving
+;DA4:            ; 369:  NU_Make_History_Entry
+;DA8:            ; 36A:  NU_Retrieve_History_Entry
+;DAC:            ; 36B:  NU_Create_Driver
+;DB0:            ; 36C:  NU_Delete_Driver
+;DB4:            ; 36D:  NU_Request_Driver
+;DB8:            ; 36E:  NU_Resume_Driver
+;DBC:            ; 36F:  NU_Suspend_Driver
 
-;DC0:              ; 370:  NU_Established_Drivers
-;DC4:              ; 371:  NU_Driver_Pointers
-;DC8:              ; 372:  NU_IS_SUPERVISOR_MODE
-0DCC: 0xA08370D8   ; 373:  NU_SUPERVISOR_MODE
-0DD0: 0xA0837178   ; 374:  NU_USER_MODE
-0DD4: 0xA86CDA3C   ; 375:  NU_SUPERV_USER_VARIABLES
+;DC0:            ; 370:  NU_Established_Drivers
+;DC4:            ; 371:  NU_Driver_Pointers
+;DC8:            ; 372:  NU_IS_SUPERVISOR_MODE
+0DCC: 0xA08370D8 ; 373:  NU_SUPERVISOR_MODE
+0DD0: 0xA0837178 ; 374:  NU_USER_MODE
+0DD4: 0xA86CDA3C ; 375:  NU_SUPERV_USER_VARIABLES
 
 ;<Reserved>
 
-0E00: 0xA0CF0FC3   ; 380: GetClipBoard()
-0E04: 0xA0CF0F9F   ; 381: CopyWsToClipboard(WSHDR *src)
-0E08: 0xA0CF0F59   ; 382: ClearClipboard(void)
+0E00: 0xA0CF0FC3 ; 380: GetClipBoard()
+0E04: 0xA0CF0F9F ; 381: CopyWsToClipboard(WSHDR *src)
+0E08: 0xA0CF0F59 ; 382: ClearClipboard(void)
 
-0E0C: 0xA0CE4511   ; 383: int PushDRWOBJOnLAYER(DRWOBJ *, LCDLAYER *)
-0E10: 0xA0CE6177   ; 384: int LCDRedrawLAYER(LCDLAYER *)
-0E14: 0xA0824144   ; 385: GBSPROC *GetGBSProcAddress(short cepid)
-0E18: 0xA0CE8D05   ; 386: void SetPropTo_obj0x17(DRWOBJ *, RECT *, int zero0, EIMGHDR *, int zero1, int zero2); 
-0E1C: 0xA0CAC2A1   ; 387: LCDLAYER *GetLCDLAYERByCurCepID()
-0E20: 0xA0C8F03B   ; 388: void SetDepthBuffer(char depth); 
-0E24: 0xA0C8EFF1   ; 389: void SetDepthBufferOnLCDLAYER(LCDLAYER *, char depth); 
-0E28: 0xA879F550   ; 838A: PCM_WAV_STRUCT *RamPCMWAVStruct()
-0E2C: 0xA868AF98   ; 38B: char *RamLastStoreString()
-0E30: 0xA0CAFC6F   ; 38C: void SetPropTo_obj0x0F(DRWOBJ *obj, RECT *rect, int r2, int r3, int _sp, int _sp_4, int _sp_8)
-0E34: 0xA0D1EA71   ; 38D: void SetPropTo_obj0x15
-0E38: 0xA0CE2D37   ; 38E: void SetPropTo_obj0x13
+0E0C: 0xA0CE4511 ; 383: int PushDRWOBJOnLAYER(DRWOBJ *, LCDLAYER *)
+0E10: 0xA0CE6177 ; 384: int LCDRedrawLAYER(LCDLAYER *)
+0E14: 0xA0824144 ; 385: GBSPROC *GetGBSProcAddress(short cepid)
+0E18: 0xA0CE8D05 ; 386: void SetPropTo_obj0x17(DRWOBJ *, RECT *, int zero0, EIMGHDR *, int zero1, int zero2); 
+0E1C: 0xA0CAC2A1 ; 387: LCDLAYER *GetLCDLAYERByCurCepID()
+0E20: 0xA0C8F03B ; 388: void SetDepthBuffer(char depth); 
+0E24: 0xA0C8EFF1 ; 389: void SetDepthBufferOnLCDLAYER(LCDLAYER *, char depth); 
+0E28: 0xA879F550 ; 838A: PCM_WAV_STRUCT *RamPCMWAVStruct()
+0E2C: 0xA868AF98 ; 38B: char *RamLastStoreString()
+;0E30:           ; 38C: int format(unsigned short drive, unsigned int *error);
+;0E34:           ; 38D: int stat(int fhandler, FStat *fstat, unsigned int *error);
+;0E38:           ; 38E: __arm void CreateICL(PGROUP *pg);
+;0E3C:           ; 38F: PGroupProc *CreatePGroupRes(int mask, int unk_zero, TaskConfig *conf, int size);
+;0E40:           ; 390: PGroupProc *PGroupCurrentTaskPointer();
+;0E44:           ; 391: void *MemMBPAlloc(void *pool, int size);
+;0E48:           ; 392: void MemMBPFree(void *pool, void *ptr);
+;0E4C:           ; 8393: void *MopiResourcePool();
+ 
+;0E50:           ; 394
+;0E54:           ; 395
+;0E58:           ; 396
+;0E5C:           ; 397
+;0E60:           ; 398
+;0E64:           ; 399
+;0E68:           ; 39A
+;0E6C:           ; 39B
+;0E70:           ; 39C
+;0E74:           ; 39D
+;0E78:           ; 39E
+;0E7C:           ; 39F
+
+;0E80:           ; 3A0
+;0E84:           ; 3A1
+;0E88:           ; 3A2
+;0E8C:           ; 3A3: __thumb void SetMenuItemIconIMGHDR(void *gui, void *item, IMGHDR *img);
+;0E90:           ; 3A4
+;0E94:           ; 3A5: __thumb void DrawIMGHDR(int x, int y, IMGHDR *img);
+;0E98:           ; 3A6
+;0E9C:           ; 3A7: __thumb int GUI_NewTimer(void *gui);
+;0EA0:           ; 3A8: __thumb int GUI_DeleteTimer(void *gui, int id);
+;0EA4:           ; 3A9: __thumb void GUI_StartTimerProc(void *gui, int id, long timeout, GUI_TimerProc callback);
+;EA8:            ; 3AA
+;EAC:            ; 3AB
+;EB0:            ; 3AC
+;EB4:            ; 3AD
+;EB8:            ; 3AE
+;EBC:            ; 3AF
+
+;0EC8:           ; 3B2: __arm WSHDR *GetLastAudioTrackDir();
+;0ECC:           ; 3B3: __thumb IMGHDR *GetIMGHDRFromCanvasCache(unsigned int CanvasID);
+;0ED0:           ; 3B4: __thumb GetDate_ws(WSHDR *ws, const TDate *date, unsigned int unk);
+;0ED4:           ; 3B5: __thumb GetTime_ws(WSHDR *ws, const TTime *time, unsigned int unk);
+;0ED8:           ; 3B6: __arm int Obs_SetTransparent(HObj obs, unsigned int unk_3_4_5);
+;0F00:           ; 3C0: __thumb int ShowWaitBox(int flags, int message);
+0F04: 0xA0C927B5 ; 3C1: __thumb int ShowPleaseWaitBox(int flags);
+;0F08:           ; 3C2: __thumb int ShowPBarBox(int flags, int message, PBAR_DESC *pbar_desc, int initial_value, WSHDR *initial_ws);
+;0F0C:           ; 3C3: __thumb int SetPBarValue(int gui_id, int value);
+;0F10:           ; 3C4: __thumb int SetPBarText(int gui_id, WSHDR *ws);
+;0F14:           ; 83C5: void *GetPBarProc3();
+;0F18:           ; 3C6: __thumb void SetHeaderScrollText(void *header, const WSHDR *title, const void *malloc_fn, const void *mfree_fn);
+;0F1C:           ; 3C7: __thumb void SetHeaderExtraText(void *header, const WSHDR *ws, const void *malloc_fn, const void *mfree_fn);
+;0F20:           ; 3C8: __arm int GetMimeType(int uid, WSHDR *mime_type, int unk_0);
+;0F24:           ; 3C9: __thumb int wstrncmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
+;0F28:           ; 3CA: __thumb int wstricmp(const WSHDR *ws1, const WSHDR *ws2);
+;0F2C:           ; 3CB: __thumb int wstrnicmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
+;0F30:           ; 3CC: __arm int PersMenuCSM_Open(const WSHDR *file_name, const WSHDR *dir, int flag, int open_mode);
+;0F34:           ; 3CD: __thumb int wstrtoupper(WSHDR *ws);
+;0F38:           ; 3CE: __thumb int wstrtolower(WSHDR *ws);
+;0F3C:           ; 3CF: __thumb int wstrcapitalize(WSHDR *ws);
+
+;0F40:           ; 3D0: __thumb int ShowScreenSaverCodeProtection();
+;0F44:           ; 3D1: __arm void MediaProc_LaunchLastPlayback();
+;0F48:           ; 3D2: __thumb int GetScreenSaverType();
+;0F4C:           ; 3D3: __thumb int IllumFilterSet(int flags, int unk);
+;0F50:           ; 3D4: __thumb void DrawCroppedIMGHDR(int x, int y, int offset_x, int offset_y, int w, int h, int flags, const IMGHDR *img);
+;0F54:           ; 3D5: __arm int BuildPath(WSHDR *ws, const WSHDR *file_name, const WSHDR *dir);
 #pragma disable old_equal_ff
 +0
+
 ;------------------------- end -------------------------
 
