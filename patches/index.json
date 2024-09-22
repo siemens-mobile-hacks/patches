@@ -45437,6 +45437,16 @@
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
 			}
+		},
+		"10884": {
+			"id": 10884,
+			"model": "C75v24",
+			"file": "C75v24/10884-card_explorer_instead_of_my_stuff.vkp",
+			"mtime": 1727004820000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
 		}
 	},
 	"C65v50": {
