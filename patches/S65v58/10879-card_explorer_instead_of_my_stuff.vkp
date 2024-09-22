@@ -1,0 +1,20 @@
+;S65v58
+;Card-Explorer вместо Мои файлы
+;Card-Explorer instead of My Stuff
+;(c) FIL
+;(r) Azq2
+;(p) Виктор89
+;Version: 1.1
+;PatchID: 10879
+;Details: https://patches.kibab.com/patches/details.php5?id=10879
+/*
+
+*/
+
+09844D8: 01 FF
+
+092EF10: C627 1F03
+092EF1C: C627 1F03
+092D7D8: C627 1F03
+;------------------------- end -------------------------
+

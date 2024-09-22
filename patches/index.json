@@ -55745,6 +55745,16 @@
 				"ru": "Ускорить загрузку overlay info при старте телефона",
 				"en": "Speed up overlay info load on startup"
 			}
+		},
+		"10879": {
+			"id": 10879,
+			"model": "S65v58",
+			"file": "S65v58/10879-card_explorer_instead_of_my_stuff.vkp",
+			"mtime": 1727004634000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
 		}
 	},
 	"SL65v50": {
