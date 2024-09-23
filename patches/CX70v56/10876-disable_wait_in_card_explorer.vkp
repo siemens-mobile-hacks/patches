@@ -1,0 +1,15 @@
+;CX70v56
+;Отключить 'Пожалуйста, подождите' в Card-Explorer
+;Disable 'Please wait' in Card-Explorer
+;(c) FIL
+;Version: 
+;PatchID: 10876
+;Details: https://patches.kibab.com/patches/details.php5?id=10876
+/*
+
+*/
+
+098ED40: F3FFFFEB 0880A0E1
+
+;------------------------- end -------------------------
+

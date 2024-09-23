@@ -25058,6 +25058,26 @@
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
 			}
+		},
+		"10883": {
+			"id": "10883",
+			"model": "CF75v23",
+			"file": "CF75v23/10883-card_explorer_instead_of_my_stuff.vkp",
+			"mtime": 1727004790000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
+		},
+		"10893": {
+			"id": "10893",
+			"model": "CF75v23",
+			"file": "CF75v23/10893-disable_wait_in_card_explorer.vkp",
+			"mtime": 1727005434000,
+			"title": {
+				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
+				"en": "Disable 'Please wait' in Card-Explorer"
+			}
 		}
 	},
 	"CX75v5": {
@@ -29691,6 +29711,26 @@
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
 			}
+		},
+		"10882": {
+			"id": "10882",
+			"model": "CX75v13",
+			"file": "CX75v13/10882-card_explorer_instead_of_my_stuff.vkp",
+			"mtime": 1727004754000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
+		},
+		"10892": {
+			"id": "10892",
+			"model": "CX75v13",
+			"file": "CX75v13/10892-disable_wait_in_card_explorer.vkp",
+			"mtime": 1727005404000,
+			"title": {
+				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
+				"en": "Disable 'Please wait' in Card-Explorer"
+			}
 		}
 	},
 	"CX75v23": {
@@ -33910,6 +33950,26 @@
 			"title": {
 				"ru": "Исправить позицию активного элемента в Native Menu",
 				"en": "Fix the active item position in Native Menu"
+			}
+		},
+		"10881": {
+			"id": "10881",
+			"model": "CX75v25",
+			"file": "CX75v25/10881-card_explorer_instead_of_my_stuff.vkp",
+			"mtime": 1727004722000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
+		},
+		"10891": {
+			"id": "10891",
+			"model": "CX75v25",
+			"file": "CX75v25/10891-disable_wait_in_card_explorer.vkp",
+			"mtime": 1727005382000,
+			"title": {
+				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
+				"en": "Disable 'Please wait' in Card-Explorer"
 			}
 		}
 	},
@@ -39982,6 +40042,26 @@
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
 			}
+		},
+		"10880": {
+			"id": "10880",
+			"model": "M75v25",
+			"file": "M75v25/10880-card_explorer_instead_of_my_stuff.vkp",
+			"mtime": 1727004686000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
+		},
+		"10890": {
+			"id": "10890",
+			"model": "M75v25",
+			"file": "M75v25/10890-disable_wait_in_card_explorer.vkp",
+			"mtime": 1727005350000,
+			"title": {
+				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
+				"en": "Disable 'Please wait' in Card-Explorer"
+			}
 		}
 	},
 	"ME75v22": {
@@ -43847,6 +43927,26 @@
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
 			}
+		},
+		"10885": {
+			"id": "10885",
+			"model": "C75v22",
+			"file": "C75v22/10885-card_explorer_instead_of_my_stuff.vkp",
+			"mtime": 1727004846000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
+		},
+		"10895": {
+			"id": "10895",
+			"model": "C75v22",
+			"file": "C75v22/10895-disable_wait_in_card_explorer.vkp",
+			"mtime": 1727005490000,
+			"title": {
+				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
+				"en": "Disable 'Please wait' in Card-Explorer"
+			}
 		}
 	},
 	"C75v13": {
@@ -45396,6 +45496,26 @@
 			"title": {
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
+			}
+		},
+		"10884": {
+			"id": "10884",
+			"model": "C75v24",
+			"file": "C75v24/10884-card_explorer_instead_of_my_stuff.vkp",
+			"mtime": 1727004820000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
+		},
+		"10894": {
+			"id": "10894",
+			"model": "C75v24",
+			"file": "C75v24/10894-disable_wait_in_card_explorer.vkp",
+			"mtime": 1727005466000,
+			"title": {
+				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
+				"en": "Disable 'Please wait' in Card-Explorer"
 			}
 		}
 	},
@@ -55745,6 +55865,36 @@
 				"ru": "Ускорить загрузку overlay info при старте телефона",
 				"en": "Speed up overlay info load on startup"
 			}
+		},
+		"10879": {
+			"id": "10879",
+			"model": "S65v58",
+			"file": "S65v58/10879-card_explorer_instead_of_my_stuff.vkp",
+			"mtime": 1727004634000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
+		},
+		"10889": {
+			"id": "10889",
+			"model": "S65v58",
+			"file": "S65v58/10889-disable_wait_in_card_explorer.vkp",
+			"mtime": 1727005324000,
+			"title": {
+				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
+				"en": "Disable 'Please wait' in Card-Explorer"
+			}
+		},
+		"10897": {
+			"id": "10897",
+			"model": "S65v58",
+			"file": "S65v58/10897-function_library_new.vkp",
+			"mtime": 1727024656000,
+			"title": {
+				"ru": "Библиотека функций 22.09.24",
+				"en": "Function Library 22.09.24"
+			}
 		}
 	},
 	"SL65v50": {
@@ -58999,6 +59149,26 @@
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
 			}
+		},
+		"10877": {
+			"id": "10877",
+			"model": "SL65v53",
+			"file": "SL65v53/10877-card_explorer_instead_of_my_stuff.vkp",
+			"mtime": 1727004546000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
+		},
+		"10887": {
+			"id": "10887",
+			"model": "SL65v53",
+			"file": "SL65v53/10887-disable_wait_in_card_explorer.vkp",
+			"mtime": 1727004932000,
+			"title": {
+				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
+				"en": "Disable 'Please wait' in Card-Explorer"
+			}
 		}
 	},
 	"SK65v50": {
@@ -60816,6 +60986,26 @@
 			"title": {
 				"ru": "Иконки пунктов меню + фикс иконки паузы",
 				"en": "HL Icons main menu statusbar and fix icon pause in recorder"
+			}
+		},
+		"10878": {
+			"id": "10878",
+			"model": "SK65v50",
+			"file": "SK65v50/10878-card_explorer_instead_of_my_stuff.vkp",
+			"mtime": 1727004594000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
+		},
+		"10888": {
+			"id": "10888",
+			"model": "SK65v50",
+			"file": "SK65v50/10888-disable_wait_in_card_explorer.vkp",
+			"mtime": 1727004966000,
+			"title": {
+				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
+				"en": "Disable 'Please wait' in Card-Explorer"
 			}
 		}
 	},
@@ -65865,7 +66055,7 @@
 			"id": "7595",
 			"model": "CX70v56",
 			"file": "CX70v56/7595-Audio-Hook.vkp",
-			"mtime": 1180863494000,
+			"mtime": 1727027808000,
 			"title": {
 				"ru": "Аудио-хук",
 				"en": "Audio-Hook"
@@ -66544,6 +66734,56 @@
 			"title": {
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
+			}
+		},
+		"10872": {
+			"id": "10872",
+			"model": "CX70v56",
+			"file": "CX70v56/10872-disable_drawing_num_in_native_menu.vkp",
+			"mtime": 1726984112000,
+			"title": {
+				"ru": "Отключить отрисовку номера текущего элемента в Native Menu",
+				"en": "Disable drawing the number of a current item in Native Menu"
+			}
+		},
+		"10873": {
+			"id": "10873",
+			"model": "CX70v56",
+			"file": "CX70v56/10873-SpeedUpOverlay.vkp",
+			"mtime": 1726984220000,
+			"title": {
+				"ru": "Ускорить загрузку overlay info при старте телефона",
+				"en": "Speed up overlay info load on startup"
+			}
+		},
+		"10874": {
+			"id": "10874",
+			"model": "CX70v56",
+			"file": "CX70v56/10874-fix_active_item_position_in_nm.vkp",
+			"mtime": 1726985326000,
+			"title": {
+				"ru": "Исправить позицию активного элемента в Native Menu",
+				"en": "Fix the active item position in Native Menu"
+			}
+		},
+		"10875": {
+			"id": "10875",
+			"model": "CX70v56",
+			"file": "CX70v56/10875-explorer_instead_of_my_stuff_v1_1.vkp",
+			"mtime": 1727020756000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
+		},
+		"10876": {
+			"id": "10876",
+			"model": "CX70v56",
+			"file": "CX70v56/10876-disable_wait_in_card_explorer.vkp",
+			"mtime": 1727003464000,
+			"title": {
+				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
+				"en": "Disable 'Please wait' in Card-Explorer"
 			}
 		}
 	},
@@ -86304,6 +86544,26 @@
 			"title": {
 				"ru": "ElfPack [18.03.2024]",
 				"en": "ElfPack [18.03.2024]"
+			}
+		},
+		"10886": {
+			"id": "10886",
+			"model": "C72v22",
+			"file": "C72v22/10886-card_explorer_instead_of_my_stuff.vkp",
+			"mtime": 1727004886000,
+			"title": {
+				"ru": "Card-Explorer вместо Мои файлы",
+				"en": "Card-Explorer instead of My Stuff"
+			}
+		},
+		"10896": {
+			"id": "10896",
+			"model": "C72v22",
+			"file": "C72v22/10896-disable_wait_in_card_explorer.vkp",
+			"mtime": 1727005526000,
+			"title": {
+				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
+				"en": "Disable 'Please wait' in Card-Explorer"
 			}
 		}
 	},

@@ -1,0 +1,18 @@
+;CX70v56
+;Card-Explorer вместо Мои файлы
+;Card-Explorer instead of My Stuff
+;(c) FIL
+;Version: 1.1
+;PatchID: 10875
+;Details: https://patches.kibab.com/patches/details.php5?id=10875
+/*
+
+*/
+
+09907DC: 01 FF
+0943D28: C627 1F03
+0943D34: C627 1F03
+0941B5C: C627 1F03
+
+;------------------------- end -------------------------
+

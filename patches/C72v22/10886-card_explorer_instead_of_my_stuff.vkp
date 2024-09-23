@@ -1,0 +1,20 @@
+;C72v22
+;Card-Explorer вместо Мои файлы
+;Card-Explorer instead of My Stuff
+;(c) FIL
+;(r) Azq2
+;(p) Виктор89
+;Version: 1.1
+;PatchID: 10886
+;Details: https://patches.kibab.com/patches/details.php5?id=10886
+/*
+
+*/
+
+099F5A0: 01 FF
+
+0946A40: C627 4303
+0946A4C: C627 4303
+09425A4: C627 4303
+;------------------------- end -------------------------
+

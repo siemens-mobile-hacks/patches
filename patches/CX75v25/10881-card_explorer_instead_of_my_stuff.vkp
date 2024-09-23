@@ -1,0 +1,20 @@
+;CX75v25
+;Card-Explorer вместо Мои файлы
+;Card-Explorer instead of My Stuff
+;(c) FIL
+;(r) Azq2
+;(p) Виктор89
+;Version: 1.1
+;PatchID: 10881
+;Details: https://patches.kibab.com/patches/details.php5?id=10881
+/*
+
+*/
+
+0354A8C: 01 FF
+
+04B216C: C627 4303
+04B2178: C627 4303
+04A9864: C627 4303
+;------------------------- end -------------------------
+
