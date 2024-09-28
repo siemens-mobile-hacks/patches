@@ -1,0 +1,18 @@
+;C75v24
+;Убрать пункт "Справка" в меню опций во Входящих
+;Remove opt. menu item "Help" in Inbox
+;(c) Marie aka marry_on_me
+;Version: 
+;PatchID: 10898
+;Details: https://patches.kibab.com/patches/details.php5?id=10898
+/*
+Патч по заказу портера с лапками Ромки
+Убирает во "Входящих" в меню опций последний пункт "Справка"
+English: Remove item "Help" in opt menu Inbox
+*/
+
+0605CA4: 04000000 03000000
+
+;info 4 porters lgp strings D2 6B7  FC3 and F05 search pattern c75v24 00000000B7060000B706000000000000 then move up
+;------------------------- end -------------------------
+

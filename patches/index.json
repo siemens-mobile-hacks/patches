@@ -45517,6 +45517,16 @@
 				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
 				"en": "Disable 'Please wait' in Card-Explorer"
 			}
+		},
+		"10898": {
+			"id": "10898",
+			"model": "C75v24",
+			"file": "C75v24/10898-c75v24_remove_help_inbox_opt.vkp",
+			"mtime": 1727474866000,
+			"title": {
+				"ru": "Убрать пункт \"Справка\" в меню опций во Входящих",
+				"en": "Remove opt. menu item \"Help\" in Inbox"
+			}
 		}
 	},
 	"C65v50": {
