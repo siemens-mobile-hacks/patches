@@ -43947,6 +43947,16 @@
 				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
 				"en": "Disable 'Please wait' in Card-Explorer"
 			}
+		},
+		"10899": {
+			"id": "10899",
+			"model": "C75v22",
+			"file": "C75v22/10899-Remove_item_Help_in_some_menus.vkp",
+			"mtime": 1727529314000,
+			"title": {
+				"ru": "Убрать пункт «Справка» из меню опций в некоторых меню",
+				"en": "Remove «Help» item from the options menu in some menus"
+			}
 		}
 	},
 	"C75v13": {
