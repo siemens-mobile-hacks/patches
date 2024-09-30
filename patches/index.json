@@ -66815,6 +66815,16 @@
 				"ru": "Исправить ширину меню",
 				"en": "Fix menu width"
 			}
+		},
+		"10902": {
+			"id": 10902,
+			"model": "CX70v56",
+			"file": "CX70v56/10902-use_e_header_font_from_definition.vkp",
+			"mtime": 1727726002000,
+			"title": {
+				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
+				"en": "Use extra header font only from 'Definition'"
+			}
 		}
 	},
 	"C55v24": {
