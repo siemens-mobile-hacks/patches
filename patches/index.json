@@ -66805,6 +66805,16 @@
 				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
 				"en": "Disable 'Please wait' in Card-Explorer"
 			}
+		},
+		"10901": {
+			"id": "10901",
+			"model": "CX70v56",
+			"file": "CX70v56/10901-fix_menu_width.vkp",
+			"mtime": 1727631942000,
+			"title": {
+				"ru": "Исправить ширину меню",
+				"en": "Fix menu width"
+			}
 		}
 	},
 	"C55v24": {
