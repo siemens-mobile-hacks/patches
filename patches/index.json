@@ -96257,6 +96257,16 @@
 				"ru": "Мега-громкость для гарнитуры",
 				"en": "Mega-Loudness for handsfree"
 			}
+		},
+		"10910": {
+			"id": 10910,
+			"model": "C81v51",
+			"file": "C81v51/10910-Del_scrollbar.vkp",
+			"mtime": 1727794076000,
+			"title": {
+				"ru": "Убрать скроллбар в списках",
+				"en": "Delete scrollbar"
+			}
 		}
 	},
 	"C81v38": {
