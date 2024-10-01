@@ -23408,6 +23408,16 @@
 				"ru": "Загрузочный экран Siemens Mobile Black",
 				"en": "Bootscreen Siemens Mobile Black"
 			}
+		},
+		"10908": {
+			"id": 10908,
+			"model": "SL75v52",
+			"file": "SL75v52/10908-Del_scrollbar.vkp",
+			"mtime": 1727793966000,
+			"title": {
+				"ru": "Убрать скроллбар в списках",
+				"en": "Delete scrollbar"
+			}
 		}
 	},
 	"CF75v22": {
