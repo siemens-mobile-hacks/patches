@@ -97754,6 +97754,16 @@
 				"ru": "Задать директорию ресурсов темы",
 				"en": "Set directory of theme resources"
 			}
+		},
+		"10909": {
+			"id": 10909,
+			"model": "S68v52",
+			"file": "S68v52/10909-Del_scrollbar.vkp",
+			"mtime": 1727794016000,
+			"title": {
+				"ru": "Убрать скроллбар в списках",
+				"en": "Delete scrollbar"
+			}
 		}
 	},
 	"A75v20": {
