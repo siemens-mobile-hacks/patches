@@ -1,0 +1,16 @@
+;S65v58
+;Убрать скроллбар в списках
+;Delete scrollbar
+;(c) dimonp25
+;(r) FIL
+;Version: 
+;PatchID: 10904
+;Details: https://patches.kibab.com/patches/details.php5?id=10904
+/*
+
+*/
+
+1160e3c: 11d0 7de0
+
+;------------------------- end -------------------------
+
