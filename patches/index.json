@@ -19163,6 +19163,16 @@
 				"ru": "Ускоренное гашение подсветки",
 				"en": "Fade light off faster"
 			}
+		},
+		"10907": {
+			"id": 10907,
+			"model": "S75v52",
+			"file": "S75v52/10907-Del_scrollbar.vkp",
+			"mtime": 1727793902000,
+			"title": {
+				"ru": "Убрать скроллбар в списках",
+				"en": "Delete scrollbar"
+			}
 		}
 	},
 	"SL75v31": {
