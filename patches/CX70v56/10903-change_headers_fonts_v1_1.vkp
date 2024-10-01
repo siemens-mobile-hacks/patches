@@ -1,0 +1,18 @@
+;CX70v56
+;Изменение шрифтов заголовков 
+;Change headers fonts
+;(c) Evgr, FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10903
+;Details: https://patches.kibab.com/patches/details.php5?id=10903
+/*
+
+
+*/
+
+094100C: 03 03 ; main
+0941034: 03 03 ; extra
+
+;------------------------- end -------------------------
+

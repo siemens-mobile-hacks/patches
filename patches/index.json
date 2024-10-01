@@ -66815,6 +66815,26 @@
 				"ru": "Исправить ширину меню",
 				"en": "Fix menu width"
 			}
+		},
+		"10902": {
+			"id": "10902",
+			"model": "CX70v56",
+			"file": "CX70v56/10902-use_e_header_font_from_definition.vkp",
+			"mtime": 1727726002000,
+			"title": {
+				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
+				"en": "Use extra header font only from 'Definition'"
+			}
+		},
+		"10903": {
+			"id": "10903",
+			"model": "CX70v56",
+			"file": "CX70v56/10903-change_headers_fonts_v1_1.vkp",
+			"mtime": 1727726446000,
+			"title": {
+				"ru": "Изменение шрифтов заголовков",
+				"en": "Change headers fonts"
+			}
 		}
 	},
 	"C55v24": {
@@ -91720,7 +91740,7 @@
 			"id": "9795",
 			"model": "E71v45",
 			"file": "E71v45/9795-change_headers_fonts_v1_1.vkp",
-			"mtime": 1715965306000,
+			"mtime": 1727726432000,
 			"title": {
 				"ru": "Изменение шрифтов заголовков",
 				"en": "Change headers fonts"
