@@ -66845,6 +66845,16 @@
 				"ru": "Изменение шрифтов заголовков",
 				"en": "Change headers fonts"
 			}
+		},
+		"10905": {
+			"id": 10905,
+			"model": "CX70v56",
+			"file": "CX70v56/10905-Del_scrollbar_cx70.vkp",
+			"mtime": 1727784674000,
+			"title": {
+				"ru": "Убрать скроллбар в списках",
+				"en": "Delete scrollbar"
+			}
 		}
 	},
 	"C55v24": {
