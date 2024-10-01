@@ -5153,6 +5153,16 @@
 				"ru": "Отключить фон в интерфейсе настройки громкости",
 				"en": "Disable background in Audio Setup UI"
 			}
+		},
+		"10911": {
+			"id": 10911,
+			"model": "EL71v45",
+			"file": "EL71v45/10911-Del_scrollbar.vkp",
+			"mtime": 1727794336000,
+			"title": {
+				"ru": "Убрать скроллбар в списках",
+				"en": "Delete scrollbar"
+			}
 		}
 	},
 	"S75v20": {

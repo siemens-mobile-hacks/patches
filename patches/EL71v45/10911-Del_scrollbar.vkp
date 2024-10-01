@@ -1,0 +1,16 @@
+;EL71v45
+;Убрать скроллбар в списках
+;Delete scrollbar
+;(c) dimonp25
+;(r) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10911
+;Details: https://patches.kibab.com/patches/details.php5?id=10911
+/*
+
+*/
+
+0A3441C: 1Ad0 7de0
+;------------------------- end -------------------------
+
