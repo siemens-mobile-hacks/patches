@@ -1,0 +1,16 @@
+;CX70v56
+;Убрать скроллбар в списках
+;Delete scrollbar
+;(c) dimonp25
+;(r) FIL
+;Version: 
+;PatchID: 10905
+;Details: https://patches.kibab.com/patches/details.php5?id=10905
+/*
+
+*/
+
+113Eb78: 11d0 7de0
+
+;------------------------- end -------------------------
+

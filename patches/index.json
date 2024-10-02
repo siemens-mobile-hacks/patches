@@ -5153,6 +5153,16 @@
 				"ru": "Отключить фон в интерфейсе настройки громкости",
 				"en": "Disable background in Audio Setup UI"
 			}
+		},
+		"10911": {
+			"id": "10911",
+			"model": "EL71v45",
+			"file": "EL71v45/10911-Del_scrollbar.vkp",
+			"mtime": 1727794336000,
+			"title": {
+				"ru": "Убрать скроллбар в списках",
+				"en": "Delete scrollbar"
+			}
 		}
 	},
 	"S75v20": {
@@ -19163,6 +19173,16 @@
 				"ru": "Ускоренное гашение подсветки",
 				"en": "Fade light off faster"
 			}
+		},
+		"10907": {
+			"id": "10907",
+			"model": "S75v52",
+			"file": "S75v52/10907-Del_scrollbar.vkp",
+			"mtime": 1727793902000,
+			"title": {
+				"ru": "Убрать скроллбар в списках",
+				"en": "Delete scrollbar"
+			}
 		}
 	},
 	"SL75v31": {
@@ -23397,6 +23417,16 @@
 			"title": {
 				"ru": "Загрузочный экран Siemens Mobile Black",
 				"en": "Bootscreen Siemens Mobile Black"
+			}
+		},
+		"10908": {
+			"id": "10908",
+			"model": "SL75v52",
+			"file": "SL75v52/10908-Del_scrollbar.vkp",
+			"mtime": 1727793966000,
+			"title": {
+				"ru": "Убрать скроллбар в списках",
+				"en": "Delete scrollbar"
 			}
 		}
 	},
@@ -55915,6 +55945,16 @@
 				"ru": "Библиотека функций 22.09.24",
 				"en": "Function Library 22.09.24"
 			}
+		},
+		"10904": {
+			"id": "10904",
+			"model": "S65v58",
+			"file": "S65v58/10904-Del_scrollbar_s65.vkp",
+			"mtime": 1727784590000,
+			"title": {
+				"ru": "Убрать скроллбар в списках",
+				"en": "Delete scrollbar"
+			}
 		}
 	},
 	"SL65v50": {
@@ -66834,6 +66874,16 @@
 			"title": {
 				"ru": "Изменение шрифтов заголовков",
 				"en": "Change headers fonts"
+			}
+		},
+		"10905": {
+			"id": "10905",
+			"model": "CX70v56",
+			"file": "CX70v56/10905-Del_scrollbar_cx70.vkp",
+			"mtime": 1727784674000,
+			"title": {
+				"ru": "Убрать скроллбар в списках",
+				"en": "Delete scrollbar"
 			}
 		}
 	},
@@ -93554,6 +93604,16 @@
 				"ru": "'Пожалуйста, подождите' вместо главного экрана",
 				"en": "'Please wait' instead IDLE"
 			}
+		},
+		"10906": {
+			"id": "10906",
+			"model": "E71v45",
+			"file": "E71v45/10906-Del_scrollbar.vkp",
+			"mtime": 1727787878000,
+			"title": {
+				"ru": "Убрать скроллбар в списках",
+				"en": "Delete scrollbar"
+			}
 		}
 	},
 	"C81v51": {
@@ -96207,6 +96267,16 @@
 				"ru": "Мега-громкость для гарнитуры",
 				"en": "Mega-Loudness for handsfree"
 			}
+		},
+		"10910": {
+			"id": "10910",
+			"model": "C81v51",
+			"file": "C81v51/10910-Del_scrollbar.vkp",
+			"mtime": 1727794076000,
+			"title": {
+				"ru": "Убрать скроллбар в списках",
+				"en": "Delete scrollbar"
+			}
 		}
 	},
 	"C81v38": {
@@ -97703,6 +97773,16 @@
 			"title": {
 				"ru": "Задать директорию ресурсов темы",
 				"en": "Set directory of theme resources"
+			}
+		},
+		"10909": {
+			"id": "10909",
+			"model": "S68v52",
+			"file": "S68v52/10909-Del_scrollbar.vkp",
+			"mtime": 1727794016000,
+			"title": {
+				"ru": "Убрать скроллбар в списках",
+				"en": "Delete scrollbar"
 			}
 		}
 	},

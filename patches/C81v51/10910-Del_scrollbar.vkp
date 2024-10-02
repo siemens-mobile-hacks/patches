@@ -1,0 +1,16 @@
+;C81v51
+;Убрать скроллбар в списках
+;Delete scrollbar
+;(c) dimonp25
+;(r) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10910
+;Details: https://patches.kibab.com/patches/details.php5?id=10910
+/*
+
+*/
+
+0A1D3B4: 11d0 7de0
+;------------------------- end -------------------------
+
