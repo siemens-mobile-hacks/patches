@@ -5163,6 +5163,16 @@
 				"ru": "Убрать скроллбар в списках",
 				"en": "Delete scrollbar"
 			}
+		},
+		"10914": {
+			"id": 10914,
+			"model": "EL71v45",
+			"file": "EL71v45/10914-Cut_ENIP1_HEAP_el71_45.vkp",
+			"mtime": 1728035602000,
+			"title": {
+				"ru": "Подрезка ENIP1_HEAP",
+				"en": "Cut ENIP1_HEAP"
+			}
 		}
 	},
 	"S75v20": {
