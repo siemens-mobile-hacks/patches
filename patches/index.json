@@ -19183,6 +19183,16 @@
 				"ru": "Убрать скроллбар в списках",
 				"en": "Delete scrollbar"
 			}
+		},
+		"10912": {
+			"id": 10912,
+			"model": "S75v52",
+			"file": "S75v52/10912-Cut_ENIP1_HEAP_s75_52.vkp",
+			"mtime": 1728035268000,
+			"title": {
+				"ru": "Подрезка ENIP1_HEAP",
+				"en": "Cut ENIP1_HEAP"
+			}
 		}
 	},
 	"SL75v31": {
