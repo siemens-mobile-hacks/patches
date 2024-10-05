@@ -1,0 +1,14 @@
+;S75v52
+;Подрезка ENIP1_HEAP
+;Cut ENIP1_HEAP
+;(c) Feyman
+;Version: 
+;PatchID: 10912
+;Details: https://patches.kibab.com/patches/details.php5?id=10912
+/*
+ENIP1_HEAP в прошивке очень жирный, но никаких следов его использования обнаружить не удалось. Поэтому добавляем 428кБ к FreeRAM и тестируем
+*/
+
+03F52AC: 14F00600  00400000  ; "ENIP1_HEAP" 444 kB=>16kB
+;------------------------- end -------------------------
+

@@ -1,0 +1,14 @@
+;E71v45
+;Подрезка ENIP1_HEAP
+;Cut ENIP1_HEAP
+;(c) Feyman
+;Version: 
+;PatchID: 10913
+;Details: https://patches.kibab.com/patches/details.php5?id=10913
+/*
+ENIP1_HEAP в прошивке очень жирный, но никаких следов его использования обнаружить не удалось. Поэтому добавляем 300кБ к FreeRAM и тестируем
+*/
+
+00809B14: 34CD0400 00200000; ENIP1_HEAP 307кB=>8kB
+;------------------------- end -------------------------
+

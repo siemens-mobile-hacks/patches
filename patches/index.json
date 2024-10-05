@@ -5163,6 +5163,16 @@
 				"ru": "Убрать скроллбар в списках",
 				"en": "Delete scrollbar"
 			}
+		},
+		"10914": {
+			"id": "10914",
+			"model": "EL71v45",
+			"file": "EL71v45/10914-Cut_ENIP1_HEAP_el71_45.vkp",
+			"mtime": 1728035602000,
+			"title": {
+				"ru": "Подрезка ENIP1_HEAP",
+				"en": "Cut ENIP1_HEAP"
+			}
 		}
 	},
 	"S75v20": {
@@ -19182,6 +19192,16 @@
 			"title": {
 				"ru": "Убрать скроллбар в списках",
 				"en": "Delete scrollbar"
+			}
+		},
+		"10912": {
+			"id": "10912",
+			"model": "S75v52",
+			"file": "S75v52/10912-Cut_ENIP1_HEAP_s75_52.vkp",
+			"mtime": 1728035268000,
+			"title": {
+				"ru": "Подрезка ENIP1_HEAP",
+				"en": "Cut ENIP1_HEAP"
 			}
 		}
 	},
@@ -93613,6 +93633,16 @@
 			"title": {
 				"ru": "Убрать скроллбар в списках",
 				"en": "Delete scrollbar"
+			}
+		},
+		"10913": {
+			"id": "10913",
+			"model": "E71v45",
+			"file": "E71v45/10913-Cut_ENIP1_HEAP_e71_45.vkp",
+			"mtime": 1728035454000,
+			"title": {
+				"ru": "Подрезка ENIP1_HEAP",
+				"en": "Cut ENIP1_HEAP"
 			}
 		}
 	},
