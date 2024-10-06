@@ -66905,6 +66905,16 @@
 				"ru": "Убрать скроллбар в списках",
 				"en": "Delete scrollbar"
 			}
+		},
+		"10915": {
+			"id": 10915,
+			"model": "CX70v56",
+			"file": "CX70v56/10915-add_icons_to_header_in_nm_v1_2_1.vkp",
+			"mtime": 1728239506000,
+			"title": {
+				"ru": "Добавить иконки в заголовок Native Menu",
+				"en": "Add icons to header in Native Menu"
+			}
 		}
 	},
 	"C55v24": {
