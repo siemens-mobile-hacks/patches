@@ -25128,6 +25128,16 @@
 				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
 				"en": "Disable 'Please wait' in Card-Explorer"
 			}
+		},
+		"10916": {
+			"id": 10916,
+			"model": "CF75v23",
+			"file": "CF75v23/10916-Change_Sizes_Popup_options_windows.vkp",
+			"mtime": 1728240708000,
+			"title": {
+				"ru": "Изменить размеры всплывающих окон и окна опции",
+				"en": "Change sizes popups and options windows"
+			}
 		}
 	},
 	"CX75v5": {
