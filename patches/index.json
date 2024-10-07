@@ -96347,6 +96347,16 @@
 				"ru": "Ускорение длинного нажатия",
 				"en": "Long Press Acceleration"
 			}
+		},
+		"10919": {
+			"id": 10919,
+			"model": "C81v51",
+			"file": "C81v51/10919-only_BT_item.vkp",
+			"mtime": 1728302612000,
+			"title": {
+				"ru": "Убрать пункты \"Как MMS\" и \"Как E-mail\" из меню \"Передача...\"",
+				"en": "Remove items \"Via MMS\" and \"Via e-mail\" from \"Send...\" menu"
+			}
 		}
 	},
 	"C81v38": {
