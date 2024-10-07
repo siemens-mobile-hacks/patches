@@ -96367,6 +96367,16 @@
 				"ru": "Скорость камеры",
 				"en": "Camera speed"
 			}
+		},
+		"10921": {
+			"id": 10921,
+			"model": "C81v51",
+			"file": "C81v51/10921-Unlock_folders_in_Card-Explorer.vkp",
+			"mtime": 1728303270000,
+			"title": {
+				"ru": "Разблокировать папки в Card-Explorer",
+				"en": "Unlock folders in Card-Explorer"
+			}
 		}
 	},
 	"C81v38": {
