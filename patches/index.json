@@ -19057,8 +19057,8 @@
 		"10790": {
 			"id": "10790",
 			"model": "S75v52",
-			"file": "S75v52/10790-NMFP_v3_2.vkp",
-			"mtime": 1713691688000,
+			"file": "S75v52/10790-NMFP_v3_3.vkp",
+			"mtime": 1728216012000,
 			"title": {
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
@@ -19077,8 +19077,8 @@
 		"10804": {
 			"id": "10804",
 			"model": "S75v52",
-			"file": "S75v52/10804-add_icons_to_header_in_nm_v1_1.vkp",
-			"mtime": 1713691610000,
+			"file": "S75v52/10804-add_icons_to_header_in_nm_v1_2.vkp",
+			"mtime": 1728215950000,
 			"title": {
 				"ru": "Добавить иконки в заголовок Native Menu",
 				"en": "Add icons to header in Native Menu"
@@ -25127,6 +25127,16 @@
 			"title": {
 				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
 				"en": "Disable 'Please wait' in Card-Explorer"
+			}
+		},
+		"10916": {
+			"id": "10916",
+			"model": "CF75v23",
+			"file": "CF75v23/10916-Change_Sizes_Popup_options_windows.vkp",
+			"mtime": 1728240708000,
+			"title": {
+				"ru": "Изменить размеры всплывающих окон и окна опции",
+				"en": "Change sizes popups and options windows"
 			}
 		}
 	},
@@ -66905,6 +66915,16 @@
 				"ru": "Убрать скроллбар в списках",
 				"en": "Delete scrollbar"
 			}
+		},
+		"10915": {
+			"id": "10915",
+			"model": "CX70v56",
+			"file": "CX70v56/10915-add_icons_to_header_in_nm_v1_2_1.vkp",
+			"mtime": 1728239506000,
+			"title": {
+				"ru": "Добавить иконки в заголовок Native Menu",
+				"en": "Add icons to header in Native Menu"
+			}
 		}
 	},
 	"C55v24": {
@@ -91698,8 +91718,8 @@
 		"9682": {
 			"id": "9682",
 			"model": "E71v45",
-			"file": "E71v45/9682-NMFP_v3_2.vkp",
-			"mtime": 1713791830000,
+			"file": "E71v45/9682-NMFP_v3_3.vkp",
+			"mtime": 1728218028000,
 			"title": {
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
@@ -93306,8 +93326,8 @@
 		"10813": {
 			"id": "10813",
 			"model": "E71v45",
-			"file": "E71v45/10813-add_icons_to_header_in_nm_v1_1.vkp",
-			"mtime": 1713791094000,
+			"file": "E71v45/10813-add_icons_to_header_in_nm_v1_2.vkp",
+			"mtime": 1728217994000,
 			"title": {
 				"ru": "Добавить иконки в заголовок Native Menu",
 				"en": "Add icons to header in Native Menu"
