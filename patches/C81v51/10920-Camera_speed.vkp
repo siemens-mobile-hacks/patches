@@ -1,0 +1,16 @@
+;C81v51
+;Скорость камеры
+;Camera speed
+;(c) SiNgle
+;(r) KIBER-DEMON
+;(p) Виктор89
+;Version: 
+;PatchID: 10920
+;Details: https://patches.kibab.com/patches/details.php5?id=10920
+/*
+
+*/
+
+09F96A4: 14 00
+;------------------------- end -------------------------
+

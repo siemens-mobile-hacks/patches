@@ -96357,6 +96357,16 @@
 				"ru": "Убрать пункты \"Как MMS\" и \"Как E-mail\" из меню \"Передача...\"",
 				"en": "Remove items \"Via MMS\" and \"Via e-mail\" from \"Send...\" menu"
 			}
+		},
+		"10920": {
+			"id": 10920,
+			"model": "C81v51",
+			"file": "C81v51/10920-Camera_speed.vkp",
+			"mtime": 1728302788000,
+			"title": {
+				"ru": "Скорость камеры",
+				"en": "Camera speed"
+			}
 		}
 	},
 	"C81v38": {
