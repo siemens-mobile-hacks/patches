@@ -1,0 +1,15 @@
+;C81v51
+;Ускорение длинного нажатия
+;Long Press Acceleration
+;(c) 1nvisible
+;(p) Виктор89
+;Version: 
+;PatchID: 10918
+;Details: https://patches.kibab.com/patches/details.php5?id=10918
+/*
+
+*/
+
+09139EE: 011C 4021
+;------------------------- end -------------------------
+

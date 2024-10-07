@@ -96337,6 +96337,16 @@
 				"ru": "Убрать сообщение \"Пожалуйста подождите\" при запуске камеры",
 				"en": "Disable message \"Please wait\" on camera start"
 			}
+		},
+		"10918": {
+			"id": 10918,
+			"model": "C81v51",
+			"file": "C81v51/10918-Long_Press_Acceleration.vkp",
+			"mtime": 1728302198000,
+			"title": {
+				"ru": "Ускорение длинного нажатия",
+				"en": "Long Press Acceleration"
+			}
 		}
 	},
 	"C81v38": {
