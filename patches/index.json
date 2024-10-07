@@ -96387,6 +96387,16 @@
 				"ru": "Показывать имя файла при приёме по БТ",
 				"en": "Show file name while receiving file via BT"
 			}
+		},
+		"10923": {
+			"id": 10923,
+			"model": "C81v51",
+			"file": "C81v51/10923-BigDateTimeKeylock_vkp.vkp",
+			"mtime": 1728311584000,
+			"title": {
+				"ru": "Большая дата и часы в экране заблокированной клавиатуры",
+				"en": "Big Date & Time in Keylock Screen instead of \"Press & hold # to release\" & \"Keypad Locked\""
+			}
 		}
 	},
 	"C81v38": {
