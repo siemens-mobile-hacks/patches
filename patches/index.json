@@ -96327,6 +96327,16 @@
 				"ru": "Убрать скроллбар в списках",
 				"en": "Delete scrollbar"
 			}
+		},
+		"10917": {
+			"id": 10917,
+			"model": "C81v51",
+			"file": "C81v51/10917-dis_mes_wait_in_camera.vkp",
+			"mtime": 1728302052000,
+			"title": {
+				"ru": "Убрать сообщение \"Пожалуйста подождите\" при запуске камеры",
+				"en": "Disable message \"Please wait\" on camera start"
+			}
 		}
 	},
 	"C81v38": {
