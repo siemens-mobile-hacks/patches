@@ -96377,6 +96377,16 @@
 				"ru": "Разблокировать папки в Card-Explorer",
 				"en": "Unlock folders in Card-Explorer"
 			}
+		},
+		"10922": {
+			"id": 10922,
+			"model": "C81v51",
+			"file": "C81v51/10922-show_name_in_receive_BT.vkp",
+			"mtime": 1728308452000,
+			"title": {
+				"ru": "Показывать имя файла при приёме по БТ",
+				"en": "Show file name while receiving file via BT"
+			}
 		}
 	},
 	"C81v38": {
