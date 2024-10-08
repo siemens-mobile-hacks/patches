@@ -96327,6 +96327,76 @@
 				"ru": "Убрать скроллбар в списках",
 				"en": "Delete scrollbar"
 			}
+		},
+		"10917": {
+			"id": "10917",
+			"model": "C81v51",
+			"file": "C81v51/10917-dis_mes_wait_in_camera.vkp",
+			"mtime": 1728302052000,
+			"title": {
+				"ru": "Убрать сообщение \"Пожалуйста подождите\" при запуске камеры",
+				"en": "Disable message \"Please wait\" on camera start"
+			}
+		},
+		"10918": {
+			"id": "10918",
+			"model": "C81v51",
+			"file": "C81v51/10918-Long_Press_Acceleration.vkp",
+			"mtime": 1728302198000,
+			"title": {
+				"ru": "Ускорение длинного нажатия",
+				"en": "Long Press Acceleration"
+			}
+		},
+		"10919": {
+			"id": "10919",
+			"model": "C81v51",
+			"file": "C81v51/10919-only_BT_item.vkp",
+			"mtime": 1728302612000,
+			"title": {
+				"ru": "Убрать пункты \"Как MMS\" и \"Как E-mail\" из меню \"Передача...\"",
+				"en": "Remove items \"Via MMS\" and \"Via e-mail\" from \"Send...\" menu"
+			}
+		},
+		"10920": {
+			"id": "10920",
+			"model": "C81v51",
+			"file": "C81v51/10920-Camera_speed.vkp",
+			"mtime": 1728302788000,
+			"title": {
+				"ru": "Скорость камеры",
+				"en": "Camera speed"
+			}
+		},
+		"10921": {
+			"id": "10921",
+			"model": "C81v51",
+			"file": "C81v51/10921-Unlock_folders_in_Card-Explorer.vkp",
+			"mtime": 1728303270000,
+			"title": {
+				"ru": "Разблокировать папки в Card-Explorer",
+				"en": "Unlock folders in Card-Explorer"
+			}
+		},
+		"10922": {
+			"id": "10922",
+			"model": "C81v51",
+			"file": "C81v51/10922-show_name_in_receive_BT.vkp",
+			"mtime": 1728308452000,
+			"title": {
+				"ru": "Показывать имя файла при приёме по БТ",
+				"en": "Show file name while receiving file via BT"
+			}
+		},
+		"10923": {
+			"id": "10923",
+			"model": "C81v51",
+			"file": "C81v51/10923-BigDateTimeKeylock_vkp.vkp",
+			"mtime": 1728311584000,
+			"title": {
+				"ru": "Большая дата и часы в экране заблокированной клавиатуры",
+				"en": "Big Date & Time in Keylock Screen instead of \"Press & hold # to release\" & \"Keypad Locked\""
+			}
 		}
 	},
 	"C81v38": {

@@ -1,0 +1,16 @@
+;C81v51
+;Убрать пункты "Как MMS" и "Как E-mail" из меню "Передача..."
+;Remove items "Via MMS" and "Via e-mail" from "Send..." menu
+;(c) Evgr
+;(p) Виктор89
+;Version: 
+;PatchID: 10919
+;Details: https://patches.kibab.com/patches/details.php5?id=10919
+/*
+
+*/
+
+0447744: 9D 9C ; Как MMS
+044777C: 9D 9C ; Как E-mail
+;------------------------- end -------------------------
+

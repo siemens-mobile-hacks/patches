@@ -1,0 +1,28 @@
+;C81v51
+;Большая дата и часы в экране заблокированной клавиатуры
+;Big Date & Time in Keylock Screen instead of "Press & hold # to release" & "Keypad Locked"
+;(c) benj9
+;(r) Azq2
+;(p) Виктор89
+;Version: 
+;PatchID: 10923
+;Details: https://patches.kibab.com/patches/details.php5?id=10923
+/*
+
+*/
+
+;Date
+034C7C9: 99AAF0EAED 9850F7EAFC
+0C22A74: 04 01 ; font
+0C22A6E: 62 74 ; 0x74=116 - отступ сверху в пикселях 
+;0C22A70: 83 83 ; 0x83=131 - отступ слева в пикселях правого края даты 
+
+;Time
+034C785: 99AAF00CEE 9850F72FFD
+0C22A58: 05 01 ; font
+034C93C: 4901 0901 ; duration of dialog 2 seconds
+
+034C844: 50F7ADFC C046C046 ; убрать дату в трее
+034C888: 50F7AEFC C046C046 ; убрать часы в трее
+;------------------------- end -------------------------
+
