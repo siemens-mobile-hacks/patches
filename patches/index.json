@@ -66925,6 +66925,16 @@
 				"ru": "Добавить иконки в заголовок Native Menu",
 				"en": "Add icons to header in Native Menu"
 			}
+		},
+		"10924": {
+			"id": 10924,
+			"model": "CX70v56",
+			"file": "CX70v56/10924-remove_camera_from_extras.vkp",
+			"mtime": 1728418302000,
+			"title": {
+				"ru": "Убрать пункт 'Камера' из меню 'Еще'",
+				"en": "Remove 'Camera' item from 'Extras' menu"
+			}
 		}
 	},
 	"C55v24": {
