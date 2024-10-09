@@ -66925,6 +66925,26 @@
 				"ru": "Добавить иконки в заголовок Native Menu",
 				"en": "Add icons to header in Native Menu"
 			}
+		},
+		"10924": {
+			"id": "10924",
+			"model": "CX70v56",
+			"file": "CX70v56/10924-remove_camera_from_extras.vkp",
+			"mtime": 1728418302000,
+			"title": {
+				"ru": "Убрать пункт 'Камера' из меню 'Еще'",
+				"en": "Remove 'Camera' item from 'Extras' menu"
+			}
+		},
+		"10925": {
+			"id": "10925",
+			"model": "CX70v56",
+			"file": "CX70v56/10925-fix_navigation_in_tile_view.vkp",
+			"mtime": 1728433516000,
+			"title": {
+				"ru": "Исправить навигацию в плиточном режиме",
+				"en": "Fix navigation in tile view"
+			}
 		}
 	},
 	"C55v24": {

@@ -1,0 +1,14 @@
+;CX70v56
+;Убрать пункт 'Камера' из меню 'Еще'
+;Remove 'Camera' item from 'Extras' menu
+;(c) FIL
+;Version: 
+;PatchID: 10924
+;Details: https://patches.kibab.com/patches/details.php5?id=10924
+/*
+
+*/
+
+0941AA0: 7805 6705
+;------------------------- end -------------------------
+
