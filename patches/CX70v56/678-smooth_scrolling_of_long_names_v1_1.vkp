@@ -1,16 +1,21 @@
 ;CX70v56
 ;Плавный скроллинг длинных названий и имен
 ;Smooth scrolling of long names
-;(c) SiNgle
+;(c) SiNgle, FIL
 ;(p) Smelter
-;Version: 
+;Version: 1.1
 ;PatchID: 678
 ;Details: https://patches.kibab.com/patches/details.php5?id=678
 /*
 Плавный скроллинг длинных названий и имен.
 */
 
-0940CB8: D007 1202 ; задержка перед скролом (delay before start)
-0940CBC: 2C01 2A00 ; скорость скрола (scrolling speed)
+0940CB8: D007 1202 ; delay before start
+0940CBC: 2C01 3A00 ; scrolling speed
+
+; MP HEADER
+09D9568: C8 3A ; delay
+09D956C: FA1F 311E ; speed
+
 ;------------------------- end -------------------------
 
