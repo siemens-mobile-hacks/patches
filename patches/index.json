@@ -66965,6 +66965,16 @@
 				"ru": "Изменить размеры всплывающих окон и окна опции",
 				"en": "Change sizes popups and options windows"
 			}
+		},
+		"10928": {
+			"id": 10928,
+			"model": "CX70v56",
+			"file": "CX70v56/10928-fix_cursor_in_tile_view.vkp",
+			"mtime": 1728500216000,
+			"title": {
+				"ru": "Исправить курсор в плиточном режиме",
+				"en": "Fix cursor in tile view"
+			}
 		}
 	},
 	"C55v24": {
