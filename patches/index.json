@@ -66945,6 +66945,16 @@
 				"ru": "Исправить навигацию в плиточном режиме",
 				"en": "Fix navigation in tile view"
 			}
+		},
+		"10926": {
+			"id": 10926,
+			"model": "CX70v56",
+			"file": "CX70v56/10926-alternate_scroll_by_default.vkp",
+			"mtime": 1728467538000,
+			"title": {
+				"ru": "Альтернативный скроллинг по умолчанию",
+				"en": "Alternate scrolling by default"
+			}
 		}
 	},
 	"C55v24": {
