@@ -63936,8 +63936,8 @@
 		"678": {
 			"id": "678",
 			"model": "CX70v56",
-			"file": "CX70v56/678-Smooth_scrolling_of_long_names.vkp",
-			"mtime": 1127505600000,
+			"file": "CX70v56/678-smooth_scrolling_of_long_names_v1_1.vkp",
+			"mtime": 1728468248000,
 			"title": {
 				"ru": "Плавный скроллинг длинных названий и имен",
 				"en": "Smooth scrolling of long names"
@@ -66944,6 +66944,36 @@
 			"title": {
 				"ru": "Исправить навигацию в плиточном режиме",
 				"en": "Fix navigation in tile view"
+			}
+		},
+		"10926": {
+			"id": "10926",
+			"model": "CX70v56",
+			"file": "CX70v56/10926-alternate_scroll_by_default.vkp",
+			"mtime": 1728467538000,
+			"title": {
+				"ru": "Альтернативный скроллинг по умолчанию",
+				"en": "Alternate scrolling by default"
+			}
+		},
+		"10927": {
+			"id": "10927",
+			"model": "CX70v56",
+			"file": "CX70v56/10927-Change_Sizes_Popup_options_windows.vkp",
+			"mtime": 1728494606000,
+			"title": {
+				"ru": "Изменить размеры всплывающих окон и окна опции",
+				"en": "Change sizes popups and options windows"
+			}
+		},
+		"10928": {
+			"id": "10928",
+			"model": "CX70v56",
+			"file": "CX70v56/10928-fix_cursor_in_tile_view.vkp",
+			"mtime": 1728500216000,
+			"title": {
+				"ru": "Исправить курсор в плиточном режиме",
+				"en": "Fix cursor in tile view"
 			}
 		}
 	},
