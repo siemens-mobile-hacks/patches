@@ -66975,6 +66975,16 @@
 				"ru": "Исправить курсор в плиточном режиме",
 				"en": "Fix cursor in tile view"
 			}
+		},
+		"10930": {
+			"id": 10930,
+			"model": "CX70v56",
+			"file": "CX70v56/10930-set_csm_for_nm.vkp",
+			"mtime": 1728652890000,
+			"title": {
+				"ru": "Задать CSM для Native Menu",
+				"en": "Set CSM for Native Menu"
+			}
 		}
 	},
 	"C55v24": {
