@@ -66939,8 +66939,8 @@
 		"10925": {
 			"id": 10925,
 			"model": "CX70v56",
-			"file": "CX70v56/10925-fix_navigation_in_tile_view.vkp",
-			"mtime": 1728433516000,
+			"file": "CX70v56/10925-fix_navigation_in_tile_view_v1_1.vkp",
+			"mtime": 1728648598000,
 			"title": {
 				"ru": "Исправить навигацию в плиточном режиме",
 				"en": "Fix navigation in tile view"
