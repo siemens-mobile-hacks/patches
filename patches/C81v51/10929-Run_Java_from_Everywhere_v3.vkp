@@ -1,0 +1,16 @@
+;C81v51
+;Запуск Java Отовсюду
+;Run Java from Everywhere
+;(c) 1nvisible
+;(r) Feyman
+;(p) Виктор89
+;Version: 3
+;PatchID: 10929
+;Details: https://patches.kibab.com/patches/details.php5?id=10929
+/*
+Пункт "Игры" в меню работает и после патча.
+*/
+
+09E11F3: 0A EA
+;------------------------- end -------------------------
+

@@ -96447,6 +96447,16 @@
 				"ru": "Большая дата и часы в экране заблокированной клавиатуры",
 				"en": "Big Date & Time in Keylock Screen instead of \"Press & hold # to release\" & \"Keypad Locked\""
 			}
+		},
+		"10929": {
+			"id": "10929",
+			"model": "C81v51",
+			"file": "C81v51/10929-Run_Java_from_Everywhere_v3.vkp",
+			"mtime": 1728543100000,
+			"title": {
+				"ru": "Запуск Java Отовсюду",
+				"en": "Run Java from Everywhere"
+			}
 		}
 	},
 	"C81v38": {
