@@ -1,0 +1,19 @@
+;CX70v56
+;Задать CSM для Native Menu
+;Set CSM for Native Menu
+;(c) FIL
+;Version: 
+;PatchID: 10930
+;Details: https://patches.kibab.com/patches/details.php5?id=10930
+/*
+Можно переключаться через XTask.
+*/
+
+08D027C: 4FD0 C046
+08D0318: 6AF0 0021
+08D031A: BEEEFEBD C2F399FC
+08D031E: 0020 FEBD
+08D0344: 6AF0B2EE C046C046
+
+;------------------------- end -------------------------
+

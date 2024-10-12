@@ -1849,7 +1849,7 @@
 		"CX70v56/677-Replacement_of_a_sound_at_dialing.vkp"
 	],
 	[
-		"CX70v56/678-smooth_scrolling_of_long_names_v1_1.vkp"
+		"CX70v56/678-smooth_scrolling_of_long_names.vkp"
 	],
 	[
 		"CX70v56/679-Speed_of_a_blinking_of_the_cursor.vkp"
@@ -31190,7 +31190,7 @@
 		"CX70v56/10924-remove_camera_from_extras.vkp"
 	],
 	[
-		"CX70v56/10925-fix_navigation_in_tile_view.vkp"
+		"CX70v56/10925-fix_navigation_in_tile_view_v1_1.vkp"
 	],
 	[
 		"CX70v56/10926-alternate_scroll_by_default.vkp"
@@ -31203,5 +31203,8 @@
 	],
 	[
 		"C81v51/10929-Run_Java_from_Everywhere_v3.vkp"
+	],
+	[
+		"CX70v56/10930-set_csm_for_nm.vkp"
 	]
 ]

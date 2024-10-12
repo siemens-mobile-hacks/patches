@@ -63936,8 +63936,8 @@
 		"678": {
 			"id": "678",
 			"model": "CX70v56",
-			"file": "CX70v56/678-smooth_scrolling_of_long_names_v1_1.vkp",
-			"mtime": 1728468248000,
+			"file": "CX70v56/678-smooth_scrolling_of_long_names.vkp",
+			"mtime": 1728655738000,
 			"title": {
 				"ru": "Плавный скроллинг длинных названий и имен",
 				"en": "Smooth scrolling of long names"
@@ -66939,8 +66939,8 @@
 		"10925": {
 			"id": "10925",
 			"model": "CX70v56",
-			"file": "CX70v56/10925-fix_navigation_in_tile_view.vkp",
-			"mtime": 1728433516000,
+			"file": "CX70v56/10925-fix_navigation_in_tile_view_v1_1.vkp",
+			"mtime": 1728648598000,
 			"title": {
 				"ru": "Исправить навигацию в плиточном режиме",
 				"en": "Fix navigation in tile view"
@@ -66974,6 +66974,16 @@
 			"title": {
 				"ru": "Исправить курсор в плиточном режиме",
 				"en": "Fix cursor in tile view"
+			}
+		},
+		"10930": {
+			"id": "10930",
+			"model": "CX70v56",
+			"file": "CX70v56/10930-set_csm_for_nm.vkp",
+			"mtime": 1728652890000,
+			"title": {
+				"ru": "Задать CSM для Native Menu",
+				"en": "Set CSM for Native Menu"
 			}
 		}
 	},
