@@ -55985,6 +55985,16 @@
 				"ru": "Убрать скроллбар в списках",
 				"en": "Delete scrollbar"
 			}
+		},
+		"10931": {
+			"id": 10931,
+			"model": "S65v58",
+			"file": "S65v58/10931-s65v58_pcm_all_2024.vkp",
+			"mtime": 1728845978000,
+			"title": {
+				"ru": "PCM ALL",
+				"en": "PCM ALL"
+			}
 		}
 	},
 	"SL65v50": {
