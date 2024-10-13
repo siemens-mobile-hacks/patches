@@ -1,7 +1,7 @@
 ;SL65v53
 ;Изменить направление кручения бобин при проигрывании аудио
 ;Reverse Audio play animation
-;(c) marry_on_me aka Marie aka Маришка
+;(c) Marie
 ;Version: 
 ;PatchID: 10933
 ;Details: https://patches.kibab.com/patches/details.php5?id=10933
@@ -20,5 +20,6 @@
 0DA0888: B491E1A0 4CA0E1A0
 0DA0890: 4CA0E1A0 B491E1A0
 0DA0898: B8AEE1A0 2483E1A0
+
 ;------------------------- end -------------------------
 
