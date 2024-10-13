@@ -556,7 +556,7 @@
 07C4: 0xA094DD24   ; 1F1: __thumb filecopy_op_announce
 07C8: 0xA12534F0   ; 1F2: devmenu_config_IsCheckboxOff
 07CC: 0xA0837C68   ; 1F3: __swi __arm unsigned int GetSessionAge(void)
-07F4: 0xA114F3FB   ; 1FD: SetProp2Square_v2
+;7D0:              ; 1F4:
 07D4: 0xA166ACE1   ; 1F5: __swi __arm int sscanf(const char *, const char *, ...)
 07D8: 0xA115A0A7   ; 1F6: __swi __arm IMGHDR* GetPitAdrBy0xE200Symbol(int uni_symbol)
 ;7DC:              ; 1F7: 
@@ -788,7 +788,7 @@
 0C30: 0xA0830CCC   ; 30C:  __arm NU_Current_Task_Pointer
 0C34: 0xA082AE28   ; 30D:  __arm NU_Established_Tasks
 0C38: 0xA082B0FC   ; 30E:  __arm NU_Task_Information
-0C38: 0xA082AE50   ; 30E:  __arm NU_Task_Pointers
+0C3C: 0xA082AE50   ; 30F:  __arm NU_Task_Pointers
 
 0C40: 0xA082A678   ; 310:  __arm NU_Create_Mailbox
 0C44: 0xA082A6A4   ; 311:  __arm NU_Delete_Mailbox
@@ -983,8 +983,5 @@
 #pragma disable old_equal_ff
 +0
 
-
-
-;locale=Russian_Russia.1251
 ;------------------------- end -------------------------
 
