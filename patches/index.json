@@ -59279,6 +59279,16 @@
 				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
 				"en": "Disable 'Please wait' in Card-Explorer"
 			}
+		},
+		"10933": {
+			"id": 10933,
+			"model": "SL65v53",
+			"file": "SL65v53/10933-sl65v53_reverse_audio_play_animatio.vkp",
+			"mtime": 1728850692000,
+			"title": {
+				"ru": "Изменить направление кручения бобин при проигрывании аудио",
+				"en": "Reverse Audio play animation"
+			}
 		}
 	},
 	"SK65v50": {
