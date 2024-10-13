@@ -55995,6 +55995,16 @@
 				"ru": "PCM ALL",
 				"en": "PCM ALL"
 			}
+		},
+		"10932": {
+			"id": 10932,
+			"model": "S65v58",
+			"file": "S65v58/10932-s65v58_reverse_audio_play_animation.vkp",
+			"mtime": 1728848988000,
+			"title": {
+				"ru": "Изменить направление кручения бобин при проигрывании аудио",
+				"en": "Reverse Audio play animation"
+			}
 		}
 	},
 	"SL65v50": {
