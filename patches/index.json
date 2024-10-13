@@ -59289,6 +59289,16 @@
 				"ru": "Изменить направление кручения бобин при проигрывании аудио",
 				"en": "Reverse Audio play animation"
 			}
+		},
+		"10934": {
+			"id": 10934,
+			"model": "SL65v53",
+			"file": "SL65v53/10934-sl65v53_Disable_Profile_Aircraft_Qu.vkp",
+			"mtime": 1728854388000,
+			"title": {
+				"ru": "Отключить вопрос о включении профиля \"В Самолете\"",
+				"en": "Disable Profile \"Aircraft\" Question"
+			}
 		}
 	},
 	"SK65v50": {
