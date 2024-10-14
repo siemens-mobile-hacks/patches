@@ -55970,7 +55970,7 @@
 			"id": "10897",
 			"model": "S65v58",
 			"file": "S65v58/10897-function_library_new.vkp",
-			"mtime": 1727024656000,
+			"mtime": 1728844080000,
 			"title": {
 				"ru": "Библиотека функций 22.09.24",
 				"en": "Function Library 22.09.24"
@@ -55984,6 +55984,26 @@
 			"title": {
 				"ru": "Убрать скроллбар в списках",
 				"en": "Delete scrollbar"
+			}
+		},
+		"10931": {
+			"id": "10931",
+			"model": "S65v58",
+			"file": "S65v58/10931-s65v58_pcm_all_2024.vkp",
+			"mtime": 1728845978000,
+			"title": {
+				"ru": "PCM ALL",
+				"en": "PCM ALL"
+			}
+		},
+		"10932": {
+			"id": "10932",
+			"model": "S65v58",
+			"file": "S65v58/10932-s65v58_reverse_audio_play_animation.vkp",
+			"mtime": 1728848988000,
+			"title": {
+				"ru": "Изменить направление кручения бобин при проигрывании аудио",
+				"en": "Reverse Audio play animation"
 			}
 		}
 	},
@@ -59258,6 +59278,26 @@
 			"title": {
 				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
 				"en": "Disable 'Please wait' in Card-Explorer"
+			}
+		},
+		"10933": {
+			"id": "10933",
+			"model": "SL65v53",
+			"file": "SL65v53/10933-sl65v53_reverse_audio_play_animatio.vkp",
+			"mtime": 1728850692000,
+			"title": {
+				"ru": "Изменить направление кручения бобин при проигрывании аудио",
+				"en": "Reverse Audio play animation"
+			}
+		},
+		"10934": {
+			"id": "10934",
+			"model": "SL65v53",
+			"file": "SL65v53/10934-sl65v53_Disable_Profile_Aircraft_Qu.vkp",
+			"mtime": 1728854388000,
+			"title": {
+				"ru": "Отключить вопрос о включении профиля \"В Самолете\"",
+				"en": "Disable Profile \"Aircraft\" Question"
 			}
 		}
 	},
