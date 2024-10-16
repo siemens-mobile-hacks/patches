@@ -19203,6 +19203,26 @@
 				"ru": "Подрезка ENIP1_HEAP",
 				"en": "Cut ENIP1_HEAP"
 			}
+		},
+		"10935": {
+			"id": "10935",
+			"model": "S75v52",
+			"file": "S75v52/10935-fix_leftsoft_on_idle_S75.vkp",
+			"mtime": 1729008996000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
+		},
+		"10936": {
+			"id": "10936",
+			"model": "S75v52",
+			"file": "S75v52/10936-Info_network_search.vkp",
+			"mtime": 1729031496000,
+			"title": {
+				"ru": "Расширенная информация вместо \"поиск сети\"",
+				"en": "Expanded information instead of 'network search'"
+			}
 		}
 	},
 	"SL75v31": {
