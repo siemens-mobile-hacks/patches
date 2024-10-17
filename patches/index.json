@@ -19223,6 +19223,16 @@
 				"ru": "Расширенная информация вместо \"поиск сети\"",
 				"en": "Expanded information instead of 'network search'"
 			}
+		},
+		"10937": {
+			"id": "10937",
+			"model": "S75v52",
+			"file": "S75v52/10937-neticon_offline.vkp",
+			"mtime": 1729073600000,
+			"title": {
+				"ru": "Своя иконка сети в оффлайн-режиме",
+				"en": "Custom network icon in offline mode"
+			}
 		}
 	},
 	"SL75v31": {
