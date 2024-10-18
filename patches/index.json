@@ -25168,6 +25168,16 @@
 				"ru": "Изменить размеры всплывающих окон и окна опции",
 				"en": "Change sizes popups and options windows"
 			}
+		},
+		"10938": {
+			"id": "10938",
+			"model": "CF75v23",
+			"file": "CF75v23/10938-M75ProtoMenuSW00_CF75.vkp",
+			"mtime": 1729178824000,
+			"title": {
+				"ru": "Голубое меню от M75 SW00",
+				"en": "Blue menu M75 SW00"
+			}
 		}
 	},
 	"CX75v5": {
