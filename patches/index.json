@@ -67085,6 +67085,16 @@
 				"ru": "Отключить анимацию поиска сети",
 				"en": "Disable network search animation"
 			}
+		},
+		"10941": {
+			"id": 10941,
+			"model": "CX70v56",
+			"file": "CX70v56/10941-smooth_scroll_of_long_headers_v1_1.vkp",
+			"mtime": 1729632376000,
+			"title": {
+				"ru": "Плавная прокрутка длинных заголовков",
+				"en": "Smooth scrolling of long headers"
+			}
 		}
 	},
 	"C55v24": {
