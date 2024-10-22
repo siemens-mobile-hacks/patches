@@ -67065,6 +67065,16 @@
 				"ru": "Задать CSM для Native Menu",
 				"en": "Set CSM for Native Menu"
 			}
+		},
+		"10939": {
+			"id": 10939,
+			"model": "CX70v56",
+			"file": "CX70v56/10939-fix_startup_animation_without_sim.vkp",
+			"mtime": 1729629990000,
+			"title": {
+				"ru": "Исправить анимацию при включении без SIM",
+				"en": "Fix a startup animation without SIM"
+			}
 		}
 	},
 	"C55v24": {
