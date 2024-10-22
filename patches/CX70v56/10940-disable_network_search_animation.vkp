@@ -1,0 +1,16 @@
+;CX70v56
+;Отключить анимацию поиска сети
+;Disable network search animation
+;(c) FIL
+;Version: 
+;PatchID: 10940
+;Details: https://patches.kibab.com/patches/details.php5?id=10940
+/*
+
+*/
+
+171EFB2: 80B5 0020
+171EFB4: 0023 7047
+
+;------------------------- end -------------------------
+

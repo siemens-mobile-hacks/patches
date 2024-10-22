@@ -67075,6 +67075,16 @@
 				"ru": "Исправить анимацию при включении без SIM",
 				"en": "Fix a startup animation without SIM"
 			}
+		},
+		"10940": {
+			"id": 10940,
+			"model": "CX70v56",
+			"file": "CX70v56/10940-disable_network_search_animation.vkp",
+			"mtime": 1729630900000,
+			"title": {
+				"ru": "Отключить анимацию поиска сети",
+				"en": "Disable network search animation"
+			}
 		}
 	},
 	"C55v24": {
