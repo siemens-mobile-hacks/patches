@@ -31230,5 +31230,14 @@
 	],
 	[
 		"CF75v23/10938-M75ProtoMenuSW00_CF75.vkp"
+	],
+	[
+		"CX70v56/10939-fix_startup_animation_without_sim.vkp"
+	],
+	[
+		"CX70v56/10940-disable_network_search_animation.vkp"
+	],
+	[
+		"CX70v56/10941-smooth_scroll_of_long_headers_v1_1.vkp"
 	]
 ]
