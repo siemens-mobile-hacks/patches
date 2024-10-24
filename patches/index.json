@@ -19243,6 +19243,16 @@
 				"ru": "Ускорить Ring UI",
 				"en": "Speed up Ring UI"
 			}
+		},
+		"10946": {
+			"id": 10946,
+			"model": "S75v52",
+			"file": "S75v52/10946-Enable_trans_themes_S75.vkp",
+			"mtime": 1729772200000,
+			"title": {
+				"ru": "Включить полупрозрачность в темах",
+				"en": "Enable translucency in themes"
+			}
 		}
 	},
 	"SL75v31": {
