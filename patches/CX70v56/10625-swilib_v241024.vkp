@@ -2,7 +2,7 @@
 ;Библиотека Функций
 ;Function Library
 ;(c) avkiev
-;Version: 220924
+;Version: 241024
 ;PatchID: 10625
 ;Details: https://patches.kibab.com/patches/details.php5?id=10625
 /*
@@ -656,7 +656,7 @@
 ;ADC: 0x         ; 2B7: __unknown int GetNativeAbDataStatus(NativeAbData *nab, int _0)
 ;AE0: 0x         ; 2B8: __unknown int SetNumToNativeAbData(NativeAbData *abd, int unk, WSHDR *num)
 ;AE4: 0x         ; 2B9: __unknown unsigned int OpenNativeAddressbook(int type, int unk1, int unk2, void *data)
-;AE8: 0x         ; 2BA: __unknown void SetHeaderIcon(void *hdr_pointer, const int *icon, void *malloc_adr, void *mfree_adr)
+0AE8: 0xA113D742 ; 2BA: __unknown void SetHeaderIcon(void *hdr_pointer, const int *icon, void *malloc_adr, void *mfree_adr)
 ;AEC: 0x         ; 2BB: __unknown void *GetTabGUI(void *malloc_adr, void *mfree_adr)
 ;AF0: 0x         ; 2BC: __unknown void SetGUIDefinition(void *gui, const void *definition)
 ;AF4: 0x         ; 2BD: __unknown int SetGUIToTabGUI(void *tabgui, int n, const int *tabicons, void *gui)
