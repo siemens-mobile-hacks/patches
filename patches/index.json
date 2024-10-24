@@ -19233,6 +19233,16 @@
 				"ru": "Своя иконка сети в оффлайн-режиме",
 				"en": "Custom network icon in offline mode"
 			}
+		},
+		"10942": {
+			"id": "10942",
+			"model": "S75v52",
+			"file": "S75v52/10942-SpeedUpRingUI_s75.vkp",
+			"mtime": 1729718234000,
+			"title": {
+				"ru": "Ускорить Ring UI",
+				"en": "Speed up Ring UI"
+			}
 		}
 	},
 	"SL75v31": {
