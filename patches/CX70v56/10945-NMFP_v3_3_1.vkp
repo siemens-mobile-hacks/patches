@@ -1,0 +1,87 @@
+;CX70v56
+;Пакет исправлений Native Menu
+;Native Menu Fix Pack
+;(c) FIL, SiNgle, Bennie
+;Version: 3.3.1
+;PatchID: 10945
+;Details: https://patches.kibab.com/patches/details.php5?id=10945
+/*
+
+*/
+
+;№1
+;Добавить иконки в заголовок Native Menu
+;Add icons to header in Native Menu
+;(c) FIL
+;(p) Виктор89
+;Version: 1.2.1
+;PatchID: 10915
+;Details: https://patches.kibab.com/patches/details.php5?id=10915
+
+0D25880: 93F7D6FC E9F1BEFE
+#pragma enable old_equal_ff
+0F0F600: 70B5094B040008200D0016009847C7239B00320029000360002343602061034B2000984770BDC046980F82A03192CBA0
+#pragma disable old_equal_ff
+
+0D254E2: FFF7ADFE EAF1BDF8
+#pragma enable old_equal_ff
+0F0F660: 0B4B70B5040098470A4BA2689A420ED1A26A094B2569D35C084A20009B182B60074B9847074C084B084A2900A04770BD4152D2A04C1C94A0ACF6F0A06A0200004F72C9A043D713A1001082A0980F82A0C0C6ECB8B2014541CA
+#pragma disable old_equal_ff
+
+0D258C0: 71F775FE E9F1FEFE
+#pragma enable old_equal_ff
+0F0F6C0: 70B5064B040000690D0098470023290023612000024B984770BDC046001082A0AF75C9A0
+#pragma disable old_equal_ff
+
+;№2
+;Native Menu вместо главного меню
+;Native Menu instead of MainMenu
+;(c) SiNgle
+;(p) Zeus
+;Version: 2.1
+;PatchID: 9206
+;Details: https://patches.kibab.com/patches/details.php5?id=9206
+
+09432F4: 0xA08F02BB 0xA08D0339 ; CKLK_CK_MAIN_MNU: центр джойстика
+0943940: 0xA08F02BB 0xA08D0339 ; ELSE_MMENU_OPEN: для DSE
+
+08C6374: 434B4C4B5F434B5F4D41494E4D4E55 434E43545F425553494E4553534344
+08C6384: 454C53455F4D4D454E555F4F50454E 434E43545F425553494E4553534344
+
+;№3
+;Убрать пункт 'Камера' из меню 'Еще'
+;Remove 'Camera' item from 'Extras' menu
+;(c) FIL
+;Version: 
+;PatchID: 10924
+;Details: https://patches.kibab.com/patches/details.php5?id=10924
+
+0941AA0: 7805 6705
+
+;№4
+;Не вырубаться при NativeMenu-Списки выз.-Время\стоимость
+;Revision Native Menu
+;(c) Bennie
+;(p) DeviceMan
+;Version: 1
+;PatchID: 6190
+;Details: https://patches.kibab.com/patches/details.php5?id=6190
+
+0941B00: AF018DA0 EFF88EA0
+
+;№5
+;Задать CSM для Native Menu
+;Set CSM for Native Menu
+;(c) FIL
+;Version: 
+;PatchID: 10930
+;Details: https://patches.kibab.com/patches/details.php5?id=10930
+
+08D027C: 4FD0 C046
+08D0318: 6AF0 0021
+08D031A: BEEEFEBD C2F399FC
+08D031E: 0020 FEBD
+08D0344: 6AF0B2EE C046C046
+
+;------------------------- end -------------------------
+
