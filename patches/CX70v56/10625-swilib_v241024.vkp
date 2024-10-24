@@ -914,9 +914,9 @@
 ;0F38:           ; 3CE: __thumb int wstrtolower(WSHDR *ws);
 ;0F3C:           ; 3CF: __thumb int wstrcapitalize(WSHDR *ws);
 
-;0F40:           ; 3D0: __thumb int ShowScreenSaverCodeProtection();
+;0F40:           ; 3D0: __thumb int RestartLockTimers();
 ;0F44:           ; 3D1: __arm void MediaProc_LaunchLastPlayback();
-;0F48:           ; 3D2: __thumb int GetScreenSaverType();
+;0F48:           ; 3D2
 ;0F4C:           ; 3D3: __thumb int IllumFilterSet(int flags, int unk);
 ;0F50:           ; 3D4: __thumb void DrawCroppedIMGHDR(int x, int y, int offset_x, int offset_y, int w, int h, int flags, const IMGHDR *img);
 ;0F54:           ; 3D5: __arm int BuildPath(WSHDR *ws, const WSHDR *file_name, const WSHDR *dir);
