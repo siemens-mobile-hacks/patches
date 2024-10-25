@@ -19243,6 +19243,16 @@
 				"ru": "Ускорить Ring UI",
 				"en": "Speed up Ring UI"
 			}
+		},
+		"10946": {
+			"id": "10946",
+			"model": "S75v52",
+			"file": "S75v52/10946-Enable_trans_themes_S75.vkp",
+			"mtime": 1729772200000,
+			"title": {
+				"ru": "Включить полупрозрачность в темах",
+				"en": "Enable translucency in themes"
+			}
 		}
 	},
 	"SL75v31": {
@@ -34080,6 +34090,16 @@
 			"title": {
 				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
 				"en": "Disable 'Please wait' in Card-Explorer"
+			}
+		},
+		"10943": {
+			"id": "10943",
+			"model": "CX75v25",
+			"file": "CX75v25/10943-scroll_new_cx75.vkp",
+			"mtime": 1729765298000,
+			"title": {
+				"ru": "Плавная прокрутка длинных заголовков",
+				"en": "Smooth scrolling of long headers"
 			}
 		}
 	},
@@ -67104,6 +67124,16 @@
 			"title": {
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
+			}
+		},
+		"10945": {
+			"id": "10945",
+			"model": "CX70v56",
+			"file": "CX70v56/10945-NMFP_v3_3_1.vkp",
+			"mtime": 1729766400000,
+			"title": {
+				"ru": "Пакет исправлений Native Menu",
+				"en": "Native Menu Fix Pack"
 			}
 		}
 	},
