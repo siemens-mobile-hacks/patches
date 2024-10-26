@@ -88359,6 +88359,16 @@
 				"ru": "Перезагрузка при пикоффе",
 				"en": "Do restart at pickoff"
 			}
+		},
+		"10947": {
+			"id": "10947",
+			"model": "M81v51",
+			"file": "M81v51/10947-Change_HWID_M81.vkp",
+			"mtime": 1729889432000,
+			"title": {
+				"ru": "Изменить HWID на 400 (S75)",
+				"en": "Change device HWID to 400 (S75)"
+			}
 		}
 	},
 	"S68v47": {
