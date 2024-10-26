@@ -96627,6 +96627,16 @@
 				"ru": "Запуск Java Отовсюду",
 				"en": "Run Java from Everywhere"
 			}
+		},
+		"10948": {
+			"id": 10948,
+			"model": "C81v51",
+			"file": "C81v51/10948-Change_HWID_C81.vkp",
+			"mtime": 1729975590000,
+			"title": {
+				"ru": "Переделка C81 в S75",
+				"en": "Rework C81 in S75"
+			}
 		}
 	},
 	"C81v38": {
