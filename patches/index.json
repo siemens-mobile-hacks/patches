@@ -96657,6 +96657,16 @@
 				"ru": "Не менять левый софткей на ГЭ если нет сети",
 				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
+		},
+		"10951": {
+			"id": 10951,
+			"model": "C81v51",
+			"file": "C81v51/10951-BS_SM_White_C81sw51.vkp",
+			"mtime": 1730041338000,
+			"title": {
+				"ru": "Загрузочный экран Siemens Mobile White",
+				"en": "Bootscreen Siemens Mobile White"
+			}
 		}
 	},
 	"C81v38": {
