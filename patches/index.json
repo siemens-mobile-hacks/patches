@@ -88359,6 +88359,16 @@
 				"ru": "Перезагрузка при пикоффе",
 				"en": "Do restart at pickoff"
 			}
+		},
+		"10947": {
+			"id": "10947",
+			"model": "M81v51",
+			"file": "M81v51/10947-Change_HWID_M81.vkp",
+			"mtime": 1729889432000,
+			"title": {
+				"ru": "Изменить HWID на 400 (S75)",
+				"en": "Change device HWID to 400 (S75)"
+			}
 		}
 	},
 	"S68v47": {
@@ -96616,6 +96626,16 @@
 			"title": {
 				"ru": "Запуск Java Отовсюду",
 				"en": "Run Java from Everywhere"
+			}
+		},
+		"10948": {
+			"id": "10948",
+			"model": "C81v51",
+			"file": "C81v51/10948-Change_HWID_C81.vkp",
+			"mtime": 1729975590000,
+			"title": {
+				"ru": "Переделка C81 в S75",
+				"en": "Rework C81 in S75"
 			}
 		}
 	},
