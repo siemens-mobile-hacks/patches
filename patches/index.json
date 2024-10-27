@@ -96667,6 +96667,16 @@
 				"ru": "Загрузочный экран Siemens Mobile White",
 				"en": "Bootscreen Siemens Mobile White"
 			}
+		},
+		"10952": {
+			"id": 10952,
+			"model": "C81v51",
+			"file": "C81v51/10952-Info_network_search81.vkp",
+			"mtime": 1730055512000,
+			"title": {
+				"ru": "Расширенная информация вместо \"поиск сети\"",
+				"en": "Expanded information instead of 'network search'"
+			}
 		}
 	},
 	"C81v38": {
