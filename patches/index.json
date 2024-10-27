@@ -96637,6 +96637,16 @@
 				"ru": "Переделка C81 в S75",
 				"en": "Rework C81 in S75"
 			}
+		},
+		"10949": {
+			"id": 10949,
+			"model": "C81v51",
+			"file": "C81v51/10949-fix_leftsoft_on_idle.vkp",
+			"mtime": 1730040254000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"C81v38": {
