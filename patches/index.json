@@ -93884,6 +93884,16 @@
 				"ru": "Подрезка ENIP1_HEAP",
 				"en": "Cut ENIP1_HEAP"
 			}
+		},
+		"10950": {
+			"id": 10950,
+			"model": "E71v45",
+			"file": "E71v45/10950-fix_leftsoft_on_idle.vkp",
+			"mtime": 1730040388000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"C81v51": {
