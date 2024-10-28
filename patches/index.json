@@ -93884,6 +93884,16 @@
 				"ru": "Подрезка ENIP1_HEAP",
 				"en": "Cut ENIP1_HEAP"
 			}
+		},
+		"10950": {
+			"id": "10950",
+			"model": "E71v45",
+			"file": "E71v45/10950-fix_leftsoft_on_idle.vkp",
+			"mtime": 1730040388000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"C81v51": {
@@ -96636,6 +96646,36 @@
 			"title": {
 				"ru": "Переделка C81 в S75",
 				"en": "Rework C81 in S75"
+			}
+		},
+		"10949": {
+			"id": "10949",
+			"model": "C81v51",
+			"file": "C81v51/10949-fix_leftsoft_on_idle.vkp",
+			"mtime": 1730040254000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
+		},
+		"10951": {
+			"id": "10951",
+			"model": "C81v51",
+			"file": "C81v51/10951-BS_SM_White_C81sw51.vkp",
+			"mtime": 1730041338000,
+			"title": {
+				"ru": "Загрузочный экран Siemens Mobile White",
+				"en": "Bootscreen Siemens Mobile White"
+			}
+		},
+		"10952": {
+			"id": "10952",
+			"model": "C81v51",
+			"file": "C81v51/10952-Info_network_search81.vkp",
+			"mtime": 1730055512000,
+			"title": {
+				"ru": "Расширенная информация вместо \"поиск сети\"",
+				"en": "Expanded information instead of 'network search'"
 			}
 		}
 	},
