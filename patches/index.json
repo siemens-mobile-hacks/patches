@@ -67135,6 +67135,16 @@
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
 			}
+		},
+		"10954": {
+			"id": "10954",
+			"model": "CX70v56",
+			"file": "CX70v56/10954-change_scancode_of_internet_key.vkp",
+			"mtime": 1730082546000,
+			"title": {
+				"ru": "Изменить сканкод клавиши 'Интернет'",
+				"en": "Change scancode of 'Internet' key"
+			}
 		}
 	},
 	"C55v24": {
