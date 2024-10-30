@@ -96687,6 +96687,16 @@
 				"ru": "Расширенная информация вместо \"поиск сети\"",
 				"en": "Expanded information instead of 'network search'"
 			}
+		},
+		"10955": {
+			"id": "10955",
+			"model": "C81v51",
+			"file": "C81v51/10955-Graphfixes_C81_sw51.vkp",
+			"mtime": 1730235142000,
+			"title": {
+				"ru": "Пакет графических исправлений",
+				"en": "Graphpack fixes"
+			}
 		}
 	},
 	"C81v38": {
