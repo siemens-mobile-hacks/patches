@@ -96697,6 +96697,16 @@
 				"ru": "Пакет графических исправлений",
 				"en": "Graphpack fixes"
 			}
+		},
+		"10956": {
+			"id": 10956,
+			"model": "C81v51",
+			"file": "C81v51/10956-Remove_sound_deleay_startup_shutdow.vkp",
+			"mtime": 1730316578000,
+			"title": {
+				"ru": "Убрать задержку звука при включении и выключении",
+				"en": "Remove sound delay switch on and off"
+			}
 		}
 	},
 	"C81v38": {
