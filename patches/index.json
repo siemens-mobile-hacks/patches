@@ -19253,6 +19253,16 @@
 				"ru": "Включить полупрозрачность в темах",
 				"en": "Enable translucency in themes"
 			}
+		},
+		"10957": {
+			"id": "10957",
+			"model": "S75v52",
+			"file": "S75v52/10957-Remove_sound_deleay_startup_shutdow.vkp",
+			"mtime": 1730316658000,
+			"title": {
+				"ru": "Убрать задержку звука при включении и выключении",
+				"en": "Remove sound delay switch on and off"
+			}
 		}
 	},
 	"SL75v31": {
@@ -23497,6 +23507,16 @@
 			"title": {
 				"ru": "Убрать скроллбар в списках",
 				"en": "Delete scrollbar"
+			}
+		},
+		"10959": {
+			"id": "10959",
+			"model": "SL75v52",
+			"file": "SL75v52/10959-Remove_sound_deleay_startup_shutdow.vkp",
+			"mtime": 1730321452000,
+			"title": {
+				"ru": "Убрать задержку звука при включении и выключении",
+				"en": "Remove sound delay switch on and off"
 			}
 		}
 	},
@@ -96697,6 +96717,16 @@
 				"ru": "Пакет графических исправлений",
 				"en": "Graphpack fixes"
 			}
+		},
+		"10956": {
+			"id": "10956",
+			"model": "C81v51",
+			"file": "C81v51/10956-Remove_sound_deleay_startup_shutdow.vkp",
+			"mtime": 1730316578000,
+			"title": {
+				"ru": "Убрать задержку звука при включении и выключении",
+				"en": "Remove sound delay switch on and off"
+			}
 		}
 	},
 	"C81v38": {
@@ -98203,6 +98233,16 @@
 			"title": {
 				"ru": "Убрать скроллбар в списках",
 				"en": "Delete scrollbar"
+			}
+		},
+		"10958": {
+			"id": "10958",
+			"model": "S68v52",
+			"file": "S68v52/10958-Remove_sound_deleay_startup_shutdow.vkp",
+			"mtime": 1730316862000,
+			"title": {
+				"ru": "Убрать задержку звука при включении и выключении",
+				"en": "Remove sound delay switch on and off"
 			}
 		}
 	},
