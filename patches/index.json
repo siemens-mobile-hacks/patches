@@ -5173,6 +5173,16 @@
 				"ru": "Подрезка ENIP1_HEAP",
 				"en": "Cut ENIP1_HEAP"
 			}
+		},
+		"10969": {
+			"id": 10969,
+			"model": "EL71v45",
+			"file": "EL71v45/10969-NM_Improvements_package_EL71.vkp",
+			"mtime": 1730655366000,
+			"title": {
+				"ru": "Пакет исправлений Native Menu",
+				"en": "Native Menu Fix Pack"
+			}
 		}
 	},
 	"S75v20": {
