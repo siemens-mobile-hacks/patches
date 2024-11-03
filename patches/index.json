@@ -19258,7 +19258,7 @@
 			"id": 10957,
 			"model": "S75v52",
 			"file": "S75v52/10957-Remove_sound_deleay_startup_shutdow.vkp",
-			"mtime": 1730316658000,
+			"mtime": 1730653094000,
 			"title": {
 				"ru": "Убрать задержку звука при включении и выключении",
 				"en": "Remove sound delay switch on and off"
