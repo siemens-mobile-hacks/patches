@@ -96727,6 +96727,16 @@
 				"ru": "Убрать задержку звука при включении и выключении",
 				"en": "Remove sound delay switch on and off"
 			}
+		},
+		"10968": {
+			"id": 10968,
+			"model": "C81v51",
+			"file": "C81v51/10968-NM_Improvements_package_C81_SW51.vkp",
+			"mtime": 1730643200000,
+			"title": {
+				"ru": "Пакет исправлений Native Menu",
+				"en": "Native Menu Fix Pack"
+			}
 		}
 	},
 	"C81v38": {
