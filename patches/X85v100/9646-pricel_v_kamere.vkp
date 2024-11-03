@@ -1,0 +1,17 @@
+;X85v100
+;Прицел в камере
+;Sight in the chamber
+;(c) Pentium02
+;(r) DM101
+;Version: 
+;PatchID: 9646
+;Details: https://patches.kibab.com/patches/details.php5?id=9646
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=x85v100&f=pricel_v_kamere.zip
+
+/*
+(!)ElfLoader
+*/
+
+ 
+;------------------------- end -------------------------
+

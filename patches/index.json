@@ -5173,6 +5173,16 @@
 				"ru": "Подрезка ENIP1_HEAP",
 				"en": "Cut ENIP1_HEAP"
 			}
+		},
+		"10969": {
+			"id": "10969",
+			"model": "EL71v45",
+			"file": "EL71v45/10969-NM_Improvements_package_EL71.vkp",
+			"mtime": 1730655366000,
+			"title": {
+				"ru": "Пакет исправлений Native Menu",
+				"en": "Native Menu Fix Pack"
+			}
 		}
 	},
 	"S75v20": {
@@ -19258,10 +19268,20 @@
 			"id": "10957",
 			"model": "S75v52",
 			"file": "S75v52/10957-Remove_sound_deleay_startup_shutdow.vkp",
-			"mtime": 1730316658000,
+			"mtime": 1730653094000,
 			"title": {
 				"ru": "Убрать задержку звука при включении и выключении",
 				"en": "Remove sound delay switch on and off"
+			}
+		},
+		"10970": {
+			"id": "10970",
+			"model": "S75v52",
+			"file": "S75v52/10970-SpeedUpMenuScroll_s75.vkp",
+			"mtime": 1730665902000,
+			"title": {
+				"ru": "Ускорить прокручивание меню",
+				"en": "Speed up menu scrolling"
 			}
 		}
 	},
@@ -23513,7 +23533,7 @@
 			"id": "10959",
 			"model": "SL75v52",
 			"file": "SL75v52/10959-Remove_sound_deleay_startup_shutdow.vkp",
-			"mtime": 1730321452000,
+			"mtime": 1730618538000,
 			"title": {
 				"ru": "Убрать задержку звука при включении и выключении",
 				"en": "Remove sound delay switch on and off"
@@ -58687,7 +58707,7 @@
 			"id": "7310",
 			"model": "SL65v53",
 			"file": "SL65v53/7310-infav21sl65sw53.vkp",
-			"mtime": 1177389978000,
+			"mtime": 1730655552000,
 			"title": {
 				"ru": "Дополнительная Информация на Прогрессбарах v2.1",
 				"en": "Extra Info on ProgressBars v2.1"
@@ -96727,6 +96747,16 @@
 				"ru": "Убрать задержку звука при включении и выключении",
 				"en": "Remove sound delay switch on and off"
 			}
+		},
+		"10968": {
+			"id": "10968",
+			"model": "C81v51",
+			"file": "C81v51/10968-NM_Improvements_package_C81_SW51.vkp",
+			"mtime": 1730643200000,
+			"title": {
+				"ru": "Пакет исправлений Native Menu",
+				"en": "Native Menu Fix Pack"
+			}
 		}
 	},
 	"C81v38": {
@@ -98749,6 +98779,514 @@
 			"title": {
 				"ru": "Иконки вкладок в идентификации устройства в стиле NSG",
 				"en": "New devicecheckman icons in tabs"
+			}
+		}
+	},
+	"X85v100": {
+		"7250": {
+			"id": "7250",
+			"model": "X85v100",
+			"file": "X85v100/7250-aclock.vkp",
+			"additionalFile": "X85v100/7250-aclock.zip",
+			"mtime": 1175776122000,
+			"title": {
+				"ru": "Аналоговые часы на главном экране",
+				"en": "aclock"
+			}
+		},
+		"7260": {
+			"id": "7260",
+			"model": "X85v100",
+			"file": "X85v100/7260-CfgEdit.vkp",
+			"additionalFile": "X85v100/7260-CfgEdit.zip",
+			"mtime": 1176023636000,
+			"title": {
+				"ru": "Конфигуратор эльфов CfgEdit",
+				"en": "CfgEdit elf"
+			}
+		},
+		"7276": {
+			"id": "7276",
+			"model": "X85v100",
+			"file": "X85v100/7276-smenu_dummy.vkp",
+			"additionalFile": "X85v100/7276-smenu_dummy.rar",
+			"mtime": 1176579390000,
+			"title": {
+				"ru": "Многоуровневое Меню `Пуск`",
+				"en": "Multilevel `Start` Menu"
+			}
+		},
+		"7407": {
+			"id": "7407",
+			"model": "X85v100",
+			"file": "X85v100/7407-Dynamic_Provider_v17.vkp",
+			"mtime": 1180547308000,
+			"title": {
+				"ru": "Динамическая замена имени оператора",
+				"en": "Dynamic Provider"
+			}
+		},
+		"7409": {
+			"id": "7409",
+			"model": "X85v100",
+			"file": "X85v100/7409-Change_speed_of_FF_and_REW_v2-BASE.vkp",
+			"mtime": 1178619066000,
+			"title": {
+				"ru": "Изменение скорости перемотки плеера",
+				"en": "Change speed of fast forward and rewind"
+			}
+		},
+		"7504": {
+			"id": "7504",
+			"model": "X85v100",
+			"file": "X85v100/7504-MP3_Tag_String_on_MS.vkp",
+			"additionalFile": "X85v100/7504-MP3_Tag_String_on_MS.zip",
+			"mtime": 1179261730000,
+			"title": {
+				"ru": "Строка mp3 Тега на главном экране",
+				"en": "MP3 Tag String on MS"
+			}
+		},
+		"7515": {
+			"id": "7515",
+			"model": "X85v100",
+			"file": "X85v100/7515-Pictures_add-on_v5.vkp",
+			"mtime": 1179375556000,
+			"title": {
+				"ru": "Расширение для картинок",
+				"en": "Pictures add-on"
+			}
+		},
+		"7530": {
+			"id": "7530",
+			"model": "X85v100",
+			"file": "X85v100/7530-Mainscreen_Dispatcher_v6-BASE.vkp",
+			"mtime": 1179509272000,
+			"title": {
+				"ru": "Диспатчер главного экрана",
+				"en": "Mainscreen Dispatcher"
+			}
+		},
+		"7562": {
+			"id": "7562",
+			"model": "X85v100",
+			"file": "X85v100/7562-Additional_icons_on_MS.vkp",
+			"additionalFile": "X85v100/7562-Additional_icons_on_MS.zip",
+			"mtime": 1179998456000,
+			"title": {
+				"ru": "Дополнительные иконки на главном экране",
+				"en": "Additional icons on MS"
+			}
+		},
+		"7568": {
+			"id": "7568",
+			"model": "X85v100",
+			"file": "X85v100/7568-Key_Sequencer_2_2-BASE.vkp",
+			"mtime": 1180199370000,
+			"title": {
+				"ru": "Секвенсер клавиш",
+				"en": "Key Sequencer"
+			}
+		},
+		"7570": {
+			"id": "7570",
+			"model": "X85v100",
+			"file": "X85v100/7570-Mainscreen_icon_changer_1-BASE.vkp",
+			"mtime": 1180199768000,
+			"title": {
+				"ru": "Изменение иконок на ГЭ",
+				"en": "Mainscreen icon changer"
+			}
+		},
+		"7572": {
+			"id": "7572",
+			"model": "X85v100",
+			"file": "X85v100/7572-Mediaplayer_status_in_iconbar.vkp",
+			"additionalFile": "X85v100/7572-Mediaplayer_status_in_iconbar.zip",
+			"mtime": 1180621744000,
+			"title": {
+				"ru": "Статус медиаплеера на панели иконок",
+				"en": "Mediaplayer status in iconbar"
+			}
+		},
+		"7588": {
+			"id": "7588",
+			"model": "X85v100",
+			"file": "X85v100/7588-Vibra_at_net_lost-found.vkp",
+			"additionalFile": "X85v100/7588-Vibra_at_net_lost-found.zip",
+			"mtime": 1180597958000,
+			"title": {
+				"ru": "Вибра при потере-нахождении сети",
+				"en": "Vibra at net lost-found"
+			}
+		},
+		"7589": {
+			"id": "7589",
+			"model": "X85v100",
+			"file": "X85v100/7589-Switch_Profile_when_battery_low.vkp",
+			"additionalFile": "X85v100/7589-Switch_Profile_when_battery_low.zip",
+			"mtime": 1180598092000,
+			"title": {
+				"ru": "Переключатель профилей при разряде аккумулятора",
+				"en": "Switch Profile when battery low"
+			}
+		},
+		"7590": {
+			"id": "7590",
+			"model": "X85v100",
+			"file": "X85v100/7590-Add-on_Illumination.vkp",
+			"additionalFile": "X85v100/7590-Add-on_Illumination.zip",
+			"mtime": 1180598528000,
+			"title": {
+				"ru": "Дополнительная подсветка",
+				"en": "Add-on Illumination"
+			}
+		},
+		"7618": {
+			"id": "7618",
+			"model": "X85v100",
+			"file": "X85v100/7618-Vibra_at_net_lost_or_found.vkp",
+			"additionalFile": "X85v100/7618-Vibra_at_net_lost_or_found.zip",
+			"mtime": 1181161252000,
+			"title": {
+				"ru": "Вибра при потери или нахождении сети",
+				"en": "Vibra at net lost or found"
+			}
+		},
+		"7652": {
+			"id": "7652",
+			"model": "X85v100",
+			"file": "X85v100/7652-Menu_icons_from_E71.vkp",
+			"additionalFile": "X85v100/7652-Menu_icons_from_E71.zip",
+			"mtime": 1181665558000,
+			"title": {
+				"ru": "Иконки меню от E71",
+				"en": "Menu icons from E71"
+			}
+		},
+		"7658": {
+			"id": "7658",
+			"model": "X85v100",
+			"file": "X85v100/7658-Sound_on_data_transfer_req_v2-BASE.vkp",
+			"mtime": 1186321136000,
+			"title": {
+				"ru": "Звук при запросе на передачу данных",
+				"en": "Sound on data transfer request"
+			}
+		},
+		"7660": {
+			"id": "7660",
+			"model": "X85v100",
+			"file": "X85v100/7660-ColorSkin_v1_1-BASE.vkp",
+			"mtime": 1181786964000,
+			"title": {
+				"ru": "Цветовая схема",
+				"en": "Color skin"
+			}
+		},
+		"7662": {
+			"id": "7662",
+			"model": "X85v100",
+			"file": "X85v100/7662-Accu_empty_shutdown_off.vkp",
+			"mtime": 1181787578000,
+			"title": {
+				"ru": "Не выключаться при разряженном аккумуляторе",
+				"en": "Accu empty shutdown off"
+			}
+		},
+		"7708": {
+			"id": "7708",
+			"model": "X85v100",
+			"file": "X85v100/7708-Extra_info_on_the_main_screen_72i.vkp",
+			"additionalFile": "X85v100/7708-Extra_info_on_the_main_screen_72i.zip",
+			"mtime": 1183921938000,
+			"title": {
+				"ru": "Дополнительная информация на главном экране",
+				"en": "Extra info on the main screen"
+			}
+		},
+		"7716": {
+			"id": "7716",
+			"model": "X85v100",
+			"file": "X85v100/7716-Accu_Temp_Indicator.vkp",
+			"additionalFile": "X85v100/7716-Accu_Temp_Indicator.zip",
+			"mtime": 1184186640000,
+			"title": {
+				"ru": "Графический индикатор температуры аккумулятора",
+				"en": "Accu Temperature As Graphic Indicator"
+			}
+		},
+		"7730": {
+			"id": "7730",
+			"model": "X85v100",
+			"file": "X85v100/7730-Mega-loudness_v2-BASE_.vkp",
+			"mtime": 1185124860000,
+			"title": {
+				"ru": "Мега-громкость",
+				"en": "Mega-loudness"
+			}
+		},
+		"7735": {
+			"id": "7735",
+			"model": "X85v100",
+			"file": "X85v100/7735-Set_profile_at_player_v2.vkp",
+			"additionalFile": "X85v100/7735-Set_profile_at_player_v2.zip",
+			"mtime": 1185200772000,
+			"title": {
+				"ru": "Установить профиль при включении плеера",
+				"en": "Set profile at player"
+			}
+		},
+		"7794": {
+			"id": "7794",
+			"model": "X85v100",
+			"file": "X85v100/7794-aclock2_0.vkp",
+			"additionalFile": "X85v100/7794-aclock2_0.rar",
+			"mtime": 1187029008000,
+			"title": {
+				"ru": "Аналоговые часы на главном экране",
+				"en": "aclock"
+			}
+		},
+		"7892": {
+			"id": "7892",
+			"model": "X85v100",
+			"file": "X85v100/7892-illumination_Fader-BASE.vkp",
+			"mtime": 1189620770000,
+			"title": {
+				"ru": "Задержка подсветки",
+				"en": "illumination Fader"
+			}
+		},
+		"7893": {
+			"id": "7893",
+			"model": "X85v100",
+			"file": "X85v100/7893-Key_Sequencer_2_3-BASE.vkp",
+			"mtime": 1189621264000,
+			"title": {
+				"ru": "Секвенсер клавиш",
+				"en": "Key Sequencer"
+			}
+		},
+		"7916": {
+			"id": "7916",
+			"model": "X85v100",
+			"file": "X85v100/7916-Mediaplayer_changer_v101-MP_BASE.vkp",
+			"mtime": 1194464642000,
+			"title": {
+				"ru": "Управление элементами медиаплеера",
+				"en": "Mediaplayer changer"
+			}
+		},
+		"7985": {
+			"id": "7985",
+			"model": "X85v100",
+			"file": "X85v100/7985-Disable_camera-BASE.vkp",
+			"mtime": 1190880602000,
+			"title": {
+				"ru": "Отключение камеры",
+				"en": "Disable camera"
+			}
+		},
+		"7988": {
+			"id": "7988",
+			"model": "X85v100",
+			"file": "X85v100/7988-Spell_current_time_v6_1-BASE.vkp",
+			"mtime": 1190881708000,
+			"title": {
+				"ru": "Проговаривание текущего времени",
+				"en": "Spell current time"
+			}
+		},
+		"7990": {
+			"id": "7990",
+			"model": "X85v100",
+			"file": "X85v100/7990-Popup_Killer_v2-BASE.vkp",
+			"mtime": 1190883614000,
+			"title": {
+				"ru": "Уничтожитель всплывающих сообщений",
+				"en": "Popup Killer"
+			}
+		},
+		"7994": {
+			"id": "7994",
+			"model": "X85v100",
+			"file": "X85v100/7994-Illumination_Fader.vkp",
+			"mtime": 1190886008000,
+			"title": {
+				"ru": "Illumination Fader",
+				"en": "Illumination Fader"
+			}
+		},
+		"7996": {
+			"id": "7996",
+			"model": "X85v100",
+			"file": "X85v100/7996-Iconbar_Additions_v3_6-BASE.vkp",
+			"mtime": 1190888866000,
+			"title": {
+				"ru": "Дополнение к панели иконок",
+				"en": "Iconbar Additions"
+			}
+		},
+		"7998": {
+			"id": "7998",
+			"model": "X85v100",
+			"file": "X85v100/7998-Extended_Calls_dialed_list_v5-BASE.vkp",
+			"mtime": 1190889200000,
+			"title": {
+				"ru": "Расширенный список вызовов",
+				"en": "Extended Calls dialed list"
+			}
+		},
+		"8000": {
+			"id": "8000",
+			"model": "X85v100",
+			"file": "X85v100/8000-Blinker_v4-BASE.vkp",
+			"mtime": 1190889930000,
+			"title": {
+				"ru": "Мигалка",
+				"en": "Blinker"
+			}
+		},
+		"8002": {
+			"id": "8002",
+			"model": "X85v100",
+			"file": "X85v100/8002-Regular_email_polling-BASE.vkp",
+			"mtime": 1190891500000,
+			"title": {
+				"ru": "Периодическая проверка почты",
+				"en": "Regular email polling"
+			}
+		},
+		"8056": {
+			"id": "8056",
+			"model": "X85v100",
+			"file": "X85v100/8056-Mega-loudness.vkp",
+			"mtime": 1191258452000,
+			"title": {
+				"ru": "Мега-громкость",
+				"en": "Mega-loudness"
+			}
+		},
+		"8063": {
+			"id": "8063",
+			"model": "X85v100",
+			"file": "X85v100/8063-Change_java_heap_size.vkp",
+			"mtime": 1191772866000,
+			"title": {
+				"ru": "Изменение размера java heap",
+				"en": "Change java heap size"
+			}
+		},
+		"8065": {
+			"id": "8065",
+			"model": "X85v100",
+			"file": "X85v100/8065-Jump_to_custom_folders.vkp",
+			"mtime": 1191839676000,
+			"title": {
+				"ru": "Jump to custom folders",
+				"en": "Jump to custom folders"
+			}
+		},
+		"8066": {
+			"id": "8066",
+			"model": "X85v100",
+			"file": "X85v100/8066-Launch_SPLayer_by_mediaplayer_key-B.vkp",
+			"mtime": 1192182614000,
+			"title": {
+				"ru": "Запуск SPLayer по клавише плеера",
+				"en": "Launch_SPLayer by mediaplayer key"
+			}
+		},
+		"8222": {
+			"id": "8222",
+			"model": "X85v100",
+			"file": "X85v100/8222-SMS_Count_v3_4.vkp",
+			"mtime": 1198426674000,
+			"title": {
+				"ru": "Счетчик СМС",
+				"en": "SMS Count"
+			}
+		},
+		"8441": {
+			"id": "8441",
+			"model": "X85v100",
+			"file": "X85v100/8441-Elfs_can_add_icons_to_iconbar.vkp",
+			"mtime": 1205703560000,
+			"title": {
+				"ru": "Добавление иконок в иконбар из эльфов",
+				"en": "Elfs can add icons to iconbar"
+			}
+		},
+		"8447": {
+			"id": "8447",
+			"model": "X85v100",
+			"file": "X85v100/8447-Iconbar_enhancement-BASE.vkp",
+			"mtime": 1206442576000,
+			"title": {
+				"ru": "Расширение иконбара",
+				"en": "Iconbar enhancement"
+			}
+		},
+		"8463": {
+			"id": "8463",
+			"model": "X85v100",
+			"file": "X85v100/8463-Iconbar_enhancement_v1_2-BASE.vkp",
+			"mtime": 1206446356000,
+			"title": {
+				"ru": "Расширение иконбара",
+				"en": "Iconbar enhancement"
+			}
+		},
+		"9646": {
+			"id": "9646",
+			"model": "X85v100",
+			"file": "X85v100/9646-pricel_v_kamere.vkp",
+			"additionalFile": "X85v100/9646-pricel_v_kamere.zip",
+			"mtime": 1257712882000,
+			"title": {
+				"ru": "Прицел в камере",
+				"en": "Sight in the chamber"
+			}
+		},
+		"9768": {
+			"id": "9768",
+			"model": "X85v100",
+			"file": "X85v100/9768-BlackList_v3_2_BASE.vkp",
+			"mtime": 1269194638000,
+			"title": {
+				"ru": "Черный список",
+				"en": "BlackList"
+			}
+		},
+		"10152": {
+			"id": "10152",
+			"model": "X85v100",
+			"file": "X85v100/10152-x85_SMSblacklist.vkp",
+			"mtime": 1303754058000,
+			"title": {
+				"ru": "SMSblacklist",
+				"en": "SMSblacklist"
+			}
+		},
+		"10503": {
+			"id": "10503",
+			"model": "X85v100",
+			"file": "X85v100/10503-Receive_all_files_option_x85v100.vkp",
+			"mtime": 1339127956000,
+			"title": {
+				"ru": "Прием всех файлов на диск Data или карту памяти по выбору",
+				"en": "Receive all files to Data or memory card as option"
+			}
+		},
+		"10512": {
+			"id": "10512",
+			"model": "X85v100",
+			"file": "X85v100/10512-BASE_x85_Write_dict_to_Data_or_MMC.vkp",
+			"mtime": 1340347200000,
+			"title": {
+				"ru": "Диктофон и Запись звука пишут на диск Data или карту памяти по выбору",
+				"en": "Dictaphone and Sound recorder write to Data or memory card as option"
 			}
 		}
 	}

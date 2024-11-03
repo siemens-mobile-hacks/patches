@@ -1,0 +1,189 @@
+;EL71v45
+;Пакет исправлений Native Menu
+;Native Menu Fix Pack
+;(c) FIL, BingK(binghelingxi), caine, 42Gzb, Zhek@, Evgr, SiNgle, Feyman
+;(p) Azq2, Виктор89
+;Version: 3.3
+;PatchID: 10969
+;Details: https://patches.kibab.com/patches/details.php5?id=10969
+/*
+Полный пакет исправлений нативного меню включающий в себя как разработки 17-20 летней давности, а так и новейшие правки от 2024-го года. Главным преимуществом пакета фиксов является скорость работы, а также использование без необходимости отключения анимации и правки цветовой схемы .col
+
+В пакет включены и портированы:
+1. Исправление кнопок *, 0, #, кнопки вызова;
+2. Фикс Настройки-Часы-Показ. часы-Вкл./Выкл.;
+3. Исправление ошибок (Таймер, Интернет и SMS);
+4. NativeMenu вместо главного меню;
+5. Иконки в заголовке;
+6. NativeMenu в опциях разговора;
+7. Перемещение по пунктам нативного меню по длиному нажатию джоя влево/вправо;
+8. Убран белый фон у иконок;
+9. Отключение отрисовки номера текущего пункта меню в заголовке;
+10. Активировать "Синхронизация" в нативном меню;
+11. Исправление навигации.
+*/
+
+;----1----
+;Native Menu вместо главного меню
+;Native Menu instead of Main Menu
+;(c) 42Gzb
+;(p) ahk
+
++0845D48
+00: 095A6FA0 ABCC63A0
+0C: A2 72
+;2C: 7C 80 ;иконка на ГЭ - 7C: иконка главного меню, 80: иконка замены
+30: A200 0D14
+34: A200 0D14
+40: 3205 8923
+44: 3205 8923
+5C: 3B 1F
+60: 02 00
+64: 441BA1A05C1BA1A0 0000000000000000
++0
+
+;----2----
+;NativeMenu вместо Главного в опциях разговора
+;NativeMenu instead of FlexMenu in conversation menu
+;(c) Zhek@
+;(p) Виктор89
+
+876CB0: 61B570A0 0xA063CCAB
+
+;----3----
+;Добавить иконки в заголовок NativeMenu
+;Add icons in header NativeMenu
+;(c) FIL
+;(p) Виктор89, Azq2
+
+; .NativeMenu_OnCreate
+0CAB888: 746865207472616E73666F726D6174696F6E206D61747269782063616E6E6F7420626520636F6D70757465642064756520746F20696C6C6567616C207065727370656374697665206F7220706172616C F7B50D4F0500019108201600B8470B4B019932000A4E03600023040043602800084B98472800084B98473A00074B2100B0472C61F7BDC046512F09A065030000A321A3A043BFA2A0C1EB95A0932F09A0
+
+; .NativeMenu_OnCreate_Jump
+0A2DFBA: FDF7C2FF 7DF265FC
+
+; .NativeMenu_OnChange
+0CAB90C: 6368696C6420697320612067726F75702C206973206120776F726C64206E6F64652C20616C7265616479206861732061 10B5064B04009847E16A054B2269CB5CD72189005B18136010BDC04641D9A2A02CB9CAA003010702090B060805040A0C
+
+; .NativeMenu_OnChange_Jump
+0A2DBFE: FFF79FFE 7DF285FE
+
+; .NativeMenu_OnClose
+0CAB9CC: 616E79204D65736820746861742069732074657374656420666F7220696E746572736563 70B5064B040000690D0098470023290023612000024B984770BDC046932F09A0E3F095A0
+
+; .NativeMenu_OnClose_Jump
+0A2DFFA: 31F772F8 7DF2E7FC
+
+;----4----
+;Включить перемещение по пунктам нативного меню по длиному нажатию джоя влево/вправо
+;Enable native menu items navigation by left/right navy key long press 
+;(c) Evgr
+;(p) Виктор89
+
+0A2E2E8: 251C271CB0378035 004DA847,0xA14112D1
+
+#pragma enable old_equal_ff
+14112D0: 00B5251C271CB03780352C2801D12720
+14112E0: 02E02D2800D12820784700000040BDE8
+14112F0: 04E08EE21EFF2FE1
+#pragma disable old_equal_ff
+
+;----5----
+;Убрать белый фон у иконок в Native Menu
+;Remove Icons White Background in Native Menu
+;(c) FIL, SiNgle
+;(p) Виктор89
+
+; .SkipDrawRectangle
+0A2C214: FFF777FE C046C046
+
+; .Change_R2_from_00_to_FF
+0A2E20E: 0022 FF22
+
+; .DrawMenuItemBG_Jump
+0A2E26E: E7F700FF 41F25BFC
+
+; .DrawMenuItemBG
+0C6FB28: 4174206C65617374206F6E6520436F6E6669672F506F6C69637920706F6C6963792066696C6520696E207468652066696C6573797374656D2068617320612077726F6E672076657273696F6E206F72206973206F757464617465642E20506C656173652075706461746520796F75722066696C65 F0B591B003930400144B02200D00160098470399053C0531731D6A1F0091104E21003D3D070005A8B0473B0005A907A80C4E0022B0473B0005A907A800940022094C0195A0470022110007A8074B9847074B07A8984711B0F0BDC0464108A3A02B6895A0C765A1A0ED66A1A06B2295A0F3C18DA0
+
+; .SkipDrawRoundedFrame
+0A2E2B2: E7F7DEFE C046C046
+
+;----6----
+;Отключить отрисовку номера текущего элемента в Native Menu
+;Disable drawing the number of a current item in Native Menu
+;(c) FIL
+;(p) Виктор89
+
+0A2D9A2: EBF11EEC C046C046
+
+;----7----
+; Fix native menu items navigation
+; Исправить навигацию по пунктам нативного меню
+; EL71v45
+; (c) Evgr
+
+0A2E500: 1ED1 C046 ; navi down
+0A2E45A: 71D1 C046 ; navi up
+0A2E3BC: E4DB 4EDB ; navi left
+0A2E596: 99D0 B4D0 ; navi right
+
+;----8----
+;Исправить ошибки NativeMenu (Таймер, Интернет, Сообщения)
+;Fix mistakes in NativeMenu
+;(c) caine
+;(p) Azq2
+
+; Fix Internet (from v2)
+088CE70: 08 00
+
+; Fix Timer & SMS
+873C1C: 0xA06FB2F5 0xA06F5345
+88CC1C: 0xA0788203 0xA06F599D
+
+;----9----
+;Исправление кнопок *,0,#,кнопка вызова в Native Menu
+;Fix key *,0,#,greenkey in Native Menu
+;(c) BingK(binghelingxi)
+;(p) snoopyhzy
+
+;NMNU_FIX_KEY_HOOK3 
+0x006FB390: 1529 0529 
+;NMNU_FIX_KEY_HOOK1 
+0x00A2E304: 162869D171688868 004A904701CD35A1 
+;NMNU_FIX_KEY_HOOK2 
+0x00A2E310: 3928 3C28 
+;NMNU_FIX_KEY_BODY 
+#pragma enable old_equal_ff 
+0x0135CD00: 162807D0142803D015280FD13C2006E0 
+0x0135CD10: 3A2004E071688868302802D13B207168 
+0x0135CD20: 8860716888687246121D10477246D432 
+0x0135CD30: 1047 
+#pragma disable old_equal_ff
+
+;----10----
+;Фикс Настройки-Часы-Показ. часы-Вкл./Выкл в NativeMenu
+;Show clock on/off fix in NativeMenu
+;(c) BingK(binghelingxi)
+;(p) KIBER-DEMON
+
+;NMNU_SHOW_TIME_FIX_HOOK1,NMNU_SHOW_TIME_FIX_HOOK2
+08B2E50: FFAE7DA007AF7DA0 411606A0511606A0
+;NMNU_SHOW_TIME_FIX_BODY
+#pragma enable old_equal_ff
+061640: F0B5071C064EB047381C064EB047F0BD
+061650: F0B50F1C044EB047391C044EB047F0BD
+061660: B9565CA043F76FA08B565CA057F76FA0
+#pragma disable old_equal_ff
+
+;----11----
+;EL71v45
+;Активировать "Синхронизация" в нативном меню
+;Activate the "SyncML" in the native menu
+;(c) Feyman
+
+08053A8: A7 A3
+0805FAC: A3 A7
+0AB7FA2: 00207047 0F20ECE7
+;------------------------- end -------------------------
+

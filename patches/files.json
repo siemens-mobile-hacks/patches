@@ -20606,7 +20606,10 @@
 		"X65v100/7249-aclock.vkp",
 		"X65v100/7249-aclock.zip"
 	],
-	null,
+	[
+		"X85v100/7250-aclock.vkp",
+		"X85v100/7250-aclock.zip"
+	],
 	[
 		"X75v100/7251-MP3_Tag_String_on_MS.vkp",
 		"X75v100/7251-MP3_Tag_String_on_MS.zip"
@@ -20634,7 +20637,10 @@
 	],
 	null,
 	null,
-	null,
+	[
+		"X85v100/7260-CfgEdit.vkp",
+		"X85v100/7260-CfgEdit.zip"
+	],
 	[
 		"X75v100/7261-Smiles_for_NatICQ.vkp",
 		"X75v100/7261-Smiles_for_NatICQ.rar"
@@ -20680,7 +20686,10 @@
 		"C75v13/7275-elfloader_C75v13_2_2.vkp",
 		"C75v13/7275-elfloader_C75v13_2_2.rar"
 	],
-	null,
+	[
+		"X85v100/7276-smenu_dummy.vkp",
+		"X85v100/7276-smenu_dummy.rar"
+	],
 	null,
 	[
 		"CF75v23/7278-papki_v_stile_vista.vkp"
@@ -21055,11 +21064,15 @@
 		"EL71v45/7405-Unlock_vibra_when_cable.vkp"
 	],
 	null,
-	null,
+	[
+		"X85v100/7407-Dynamic_Provider_v17.vkp"
+	],
 	[
 		"EL71v45/7408-Dynamic_Provider_v17-MP.vkp"
 	],
-	null,
+	[
+		"X85v100/7409-Change_speed_of_FF_and_REW_v2-BASE.vkp"
+	],
 	[
 		"EL71v45/7410-Change_speed_of_FF_and_REW_v2-MP.vkp"
 	],
@@ -21336,7 +21349,10 @@
 	],
 	null,
 	null,
-	null,
+	[
+		"X85v100/7504-MP3_Tag_String_on_MS.vkp",
+		"X85v100/7504-MP3_Tag_String_on_MS.zip"
+	],
 	[
 		"EL71v45/7505-Vibra_at_connect.vkp"
 	],
@@ -21367,7 +21383,9 @@
 	[
 		"EL71v45/7514-Change_minute_beep_during_call.vkp"
 	],
-	null,
+	[
+		"X85v100/7515-Pictures_add-on_v5.vkp"
+	],
 	[
 		"C81v51/7516-Change_font_size_on_MainScreen_v3.vkp"
 	],
@@ -21410,7 +21428,9 @@
 	[
 		"C81v51/7529-Input_language_select_on_long_____p.vkp"
 	],
-	null,
+	[
+		"X85v100/7530-Mainscreen_Dispatcher_v6-BASE.vkp"
+	],
 	[
 		"EL71v45/7531-Mainscreen_Dispatcher_v6-MP.vkp"
 	],
@@ -21506,7 +21526,10 @@
 	[
 		"S65v58/7561-Enable_Developer_Menu.vkp"
 	],
-	null,
+	[
+		"X85v100/7562-Additional_icons_on_MS.vkp",
+		"X85v100/7562-Additional_icons_on_MS.zip"
+	],
 	[
 		"SL75v47/7563-Change_SW_Version.vkp"
 	],
@@ -21521,15 +21544,22 @@
 		"E71v45/7566-Alarm_Clock___Appointment_Positioni.vkp"
 	],
 	null,
-	null,
+	[
+		"X85v100/7568-Key_Sequencer_2_2-BASE.vkp"
+	],
 	[
 		"EL71v45/7569-Key_Sequencer_2_2-MP.vkp"
 	],
-	null,
+	[
+		"X85v100/7570-Mainscreen_icon_changer_1-BASE.vkp"
+	],
 	[
 		"EL71v45/7571-Mainscreen_icon_changer_v1-MP.vkp"
 	],
-	null,
+	[
+		"X85v100/7572-Mediaplayer_status_in_iconbar.vkp",
+		"X85v100/7572-Mediaplayer_status_in_iconbar.zip"
+	],
 	[
 		"EL71v45/7573-Mediaplayer_status_in_iconbar.vkp"
 	],
@@ -21571,9 +21601,18 @@
 	[
 		"EL71v45/7587-Blink_lighter_v21.vkp"
 	],
-	null,
-	null,
-	null,
+	[
+		"X85v100/7588-Vibra_at_net_lost-found.vkp",
+		"X85v100/7588-Vibra_at_net_lost-found.zip"
+	],
+	[
+		"X85v100/7589-Switch_Profile_when_battery_low.vkp",
+		"X85v100/7589-Switch_Profile_when_battery_low.zip"
+	],
+	[
+		"X85v100/7590-Add-on_Illumination.vkp",
+		"X85v100/7590-Add-on_Illumination.zip"
+	],
 	[
 		"M65v50/7591-Some_Netmonitor_data_for_Java14.vkp"
 	],
@@ -21650,7 +21689,10 @@
 		"X65v100/7617-callautox65.vkp",
 		"X65v100/7617-callautox65.rar"
 	],
-	null,
+	[
+		"X85v100/7618-Vibra_at_net_lost_or_found.vkp",
+		"X85v100/7618-Vibra_at_net_lost_or_found.zip"
+	],
 	null,
 	[
 		"S75v47/7620-Change_font_size_on_MS.vkp"
@@ -21744,7 +21786,10 @@
 	[
 		"SL75v52/7651-Cut_heap.vkp"
 	],
-	null,
+	[
+		"X85v100/7652-Menu_icons_from_E71.vkp",
+		"X85v100/7652-Menu_icons_from_E71.zip"
+	],
 	[
 		"M75v25/7653-help_cardexp.vkp"
 	],
@@ -21760,15 +21805,21 @@
 	[
 		"X75v100/7657-Master-patch_v14.vkp"
 	],
-	null,
+	[
+		"X85v100/7658-Sound_on_data_transfer_req_v2-BASE.vkp"
+	],
 	[
 		"EL71v45/7659-Sound_on_data_transfer_req_v2-MP.vkp"
 	],
-	null,
+	[
+		"X85v100/7660-ColorSkin_v1_1-BASE.vkp"
+	],
 	[
 		"EL71v45/7661-Color_skin_v1_1-MP.vkp"
 	],
-	null,
+	[
+		"X85v100/7662-Accu_empty_shutdown_off.vkp"
+	],
 	[
 		"EL71v45/7663-Accu_empty_shutdown_off_1_1-MP.vkp"
 	],
@@ -21896,7 +21947,10 @@
 	[
 		"CX75v12/7707-Reboot_instead_of_9th_profile.vkp"
 	],
-	null,
+	[
+		"X85v100/7708-Extra_info_on_the_main_screen_72i.vkp",
+		"X85v100/7708-Extra_info_on_the_main_screen_72i.zip"
+	],
 	[
 		"EL71v45/7709-Disable_camera_sound.vkp"
 	],
@@ -21918,7 +21972,10 @@
 	[
 		"SL75v52/7715-Russian_tags.vkp"
 	],
-	null,
+	[
+		"X85v100/7716-Accu_Temp_Indicator.vkp",
+		"X85v100/7716-Accu_Temp_Indicator.zip"
+	],
 	null,
 	null,
 	null,
@@ -21951,7 +22008,9 @@
 	[
 		"SL75v52/7729-ELFPack_2_3.vkp"
 	],
-	null,
+	[
+		"X85v100/7730-Mega-loudness_v2-BASE_.vkp"
+	],
 	[
 		"X75v100/7731-Mega-loudness_v2-BASE.vkp"
 	],
@@ -21964,7 +22023,10 @@
 	[
 		"EL71v45/7734-Show_red_buton_menu_when_sli_closed.vkp"
 	],
-	null,
+	[
+		"X85v100/7735-Set_profile_at_player_v2.vkp",
+		"X85v100/7735-Set_profile_at_player_v2.zip"
+	],
 	[
 		"SL75v52/7736-Mega-loudness_v2-MP.vkp"
 	],
@@ -22136,7 +22198,10 @@
 	[
 		"SL75v52/7793-Disable_Please_Wait_on_USSD.vkp"
 	],
-	null,
+	[
+		"X85v100/7794-aclock2_0.vkp",
+		"X85v100/7794-aclock2_0.rar"
+	],
 	[
 		"X75v100/7795-aclock2_0.vkp",
 		"X75v100/7795-aclock2_0.rar"
@@ -22421,8 +22486,12 @@
 	[
 		"E71v45/7891-illumination_Fader-MP.vkp"
 	],
-	null,
-	null,
+	[
+		"X85v100/7892-illumination_Fader-BASE.vkp"
+	],
+	[
+		"X85v100/7893-Key_Sequencer_2_3-BASE.vkp"
+	],
 	[
 		"E71v45/7894-Key_Sequencer_2_3-MP.vkp"
 	],
@@ -22485,7 +22554,9 @@
 	[
 		"E71v45/7915-Java-machine_Killer-MP.vkp"
 	],
-	null,
+	[
+		"X85v100/7916-Mediaplayer_changer_v101-MP_BASE.vkp"
+	],
 	[
 		"EL71v45/7917-Mediaplayer_changer_v101-MP.vkp"
 	],
@@ -22689,18 +22760,24 @@
 	[
 		"EL71v45/7984-backlight_duration_adjustment.vkp"
 	],
-	null,
+	[
+		"X85v100/7985-Disable_camera-BASE.vkp"
+	],
 	[
 		"EL71v45/7986-Disable_camera-MP.vkp"
 	],
 	[
 		"EL71v45/7987-Don_t_lock_keyboard_while_playing.vkp"
 	],
-	null,
+	[
+		"X85v100/7988-Spell_current_time_v6_1-BASE.vkp"
+	],
 	[
 		"EL71v45/7989-Spell_current_time.vkp"
 	],
-	null,
+	[
+		"X85v100/7990-Popup_Killer_v2-BASE.vkp"
+	],
 	[
 		"EL71v45/7991-Popup_Killer_2-MP.vkp"
 	],
@@ -22710,23 +22787,33 @@
 	[
 		"EL71v45/7993-Launch_TMO_Editor_by_hotkey_v1_3.vkp"
 	],
-	null,
+	[
+		"X85v100/7994-Illumination_Fader.vkp"
+	],
 	[
 		"EL71v45/7995-Illumination_Fader-MP.vkp"
 	],
-	null,
+	[
+		"X85v100/7996-Iconbar_Additions_v3_6-BASE.vkp"
+	],
 	[
 		"EL71v45/7997-Iconbar_Additions_3_6-MP.vkp"
 	],
-	null,
+	[
+		"X85v100/7998-Extended_Calls_dialed_list_v5-BASE.vkp"
+	],
 	[
 		"EL71v45/7999-Extended_Calls_dialed_list_v5-MP.vkp"
 	],
-	null,
+	[
+		"X85v100/8000-Blinker_v4-BASE.vkp"
+	],
 	[
 		"EL71v45/8001-Blinker_v4-MP.vkp"
 	],
-	null,
+	[
+		"X85v100/8002-Regular_email_polling-BASE.vkp"
+	],
 	[
 		"EL71v45/8003-Regular_email_polling-MP.vkp"
 	],
@@ -22887,7 +22974,9 @@
 	[
 		"SL75v52/8055-Disable_USSD_soundvibration.vkp"
 	],
-	null,
+	[
+		"X85v100/8056-Mega-loudness.vkp"
+	],
 	[
 		"EL71v45/8057-Mega-loudness_v3-MP.vkp"
 	],
@@ -22907,12 +22996,18 @@
 	[
 		"EL71v45/8062-GoTo_NativeMenu_by_Pressing____.vkp"
 	],
-	null,
+	[
+		"X85v100/8063-Change_java_heap_size.vkp"
+	],
 	[
 		"EL71v45/8064-Change_java_heap_size.vkp"
 	],
-	null,
-	null,
+	[
+		"X85v100/8065-Jump_to_custom_folders.vkp"
+	],
+	[
+		"X85v100/8066-Launch_SPLayer_by_mediaplayer_key-B.vkp"
+	],
 	[
 		"EL71v45/8067-Launch_SPLayer_by_mediaplayer_key.vkp"
 	],
@@ -23351,7 +23446,9 @@
 	[
 		"S75v47/8221-Net_indicator_icons_adjust.vkp"
 	],
-	null,
+	[
+		"X85v100/8222-SMS_Count_v3_4.vkp"
+	],
 	[
 		"EL71v45/8223-SMS_Count_v3_4.vkp"
 	],
@@ -23989,7 +24086,9 @@
 	[
 		"EL71v45/8440-Elfs_can_add_icons_to_iconbar.vkp"
 	],
-	null,
+	[
+		"X85v100/8441-Elfs_can_add_icons_to_iconbar.vkp"
+	],
 	[
 		"EL71v45/8442-Don_t_idle_while_closing_slider.vkp"
 	],
@@ -24005,7 +24104,9 @@
 	[
 		"E71v45/8446-Iconbar_enhancement-MP.vkp"
 	],
-	null,
+	[
+		"X85v100/8447-Iconbar_enhancement-BASE.vkp"
+	],
 	[
 		"EL71v45/8448-Iconbar_enhancement-MP.vkp"
 	],
@@ -24053,7 +24154,9 @@
 	[
 		"S75v52/8462-remove_icons_white_bg_in_nm_v2.vkp"
 	],
-	null,
+	[
+		"X85v100/8463-Iconbar_enhancement_v1_2-BASE.vkp"
+	],
 	[
 		"E71v45/8464-Iconbar_enhancement_v1_2-MP.vkp"
 	],
@@ -27444,7 +27547,10 @@
 	[
 		"CX75v25/9645-cx75v25_extram_v1.vkp"
 	],
-	null,
+	[
+		"X85v100/9646-pricel_v_kamere.vkp",
+		"X85v100/9646-pricel_v_kamere.zip"
+	],
 	[
 		"CX75v13/9647-Cut_heap.vkp"
 	],
@@ -27802,7 +27908,9 @@
 	[
 		"S7Cv47/9767-Show_Time_at_Title_of_Java.vkp"
 	],
-	null,
+	[
+		"X85v100/9768-BlackList_v3_2_BASE.vkp"
+	],
 	[
 		"E71v45/9769-E_BlackList_v3_2-MP.vkp"
 	],
@@ -28910,7 +29018,9 @@
 	[
 		"CX75v25/10151-Stop_Native_Menu_Animation.vkp"
 	],
-	null,
+	[
+		"X85v100/10152-x85_SMSblacklist.vkp"
+	],
 	[
 		"E71v45/10153-E_SMSblacklist.vkp"
 	],
@@ -29951,7 +30061,9 @@
 	[
 		"S75v47/10502-S75v47_Receive_all_files_optionally.vkp"
 	],
-	null,
+	[
+		"X85v100/10503-Receive_all_files_option_x85v100.vkp"
+	],
 	[
 		"E71v45/10504-E71v45_Receive_all_files_optionally.vkp"
 	],
@@ -29976,7 +30088,9 @@
 	[
 		"S75v52/10511-S75v52_Write_dict_to_Data_or_MMCard.vkp"
 	],
-	null,
+	[
+		"X85v100/10512-BASE_x85_Write_dict_to_Data_or_MMC.vkp"
+	],
 	[
 		"E71v45/10513-E71v45_Write_dict_to_Data_or_MMCard.vkp"
 	],
@@ -31289,5 +31403,22 @@
 	],
 	[
 		"SL75v52/10959-Remove_sound_deleay_startup_shutdow.vkp"
+	],
+	null,
+	null,
+	null,
+	null,
+	null,
+	null,
+	null,
+	null,
+	[
+		"C81v51/10968-NM_Improvements_package_C81_SW51.vkp"
+	],
+	[
+		"EL71v45/10969-NM_Improvements_package_EL71.vkp"
+	],
+	[
+		"S75v52/10970-SpeedUpMenuScroll_s75.vkp"
 	]
 ]

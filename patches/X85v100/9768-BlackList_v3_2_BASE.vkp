@@ -1,0 +1,57 @@
+;X85v100
+;Черный список
+;BlackList
+;(c) SiNgle, ThE TrIFoN, Evgr
+;(r) KreN
+;Version: 3.2
+;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=9803
+;PatchID: 9768
+;Details: https://patches.kibab.com/patches/details.php5?id=9768
+/*
+гибрид из патчей SiNgle и ThE TrIFoN 
+*/
+
+
+#pragma enable old_equal_ff
+0066820: 321C281CFFB500F051F809D0002D04D0
+0066830: 0B2D05DC032D03D9023D00F01EF800D0
+0066840: FFBDFFBC3AE0C046321C281CFFB500F0
+0066850: 3DF80FD0002D05D00B2D0BDC032D09D9
+0066860: 023D04E001207DDF002800D10A2500F0
+0066870: 04F800D0FFBDFFBC20E0FEB5AC1C7178
+0066880: 002901D0002000E0B6DF0B2148438019
+0066890: FF25025D52009744C0460CE006E001E0
+00668A0: 08E005E00020002166DF03E065DF01E0
+00668B0: 0A4DA8470025281CFEBDC04678470000
+00668C0: 0040BDE804E08EE21EFF2FE1BFB5CD20
+00668D0: 00020930C4DF00D0061CBFBD
+
+00668E0: 0xB1C2D3E4,0x0000CD09,00000000,00000000,"\
+{p=BlackList id=cd09 ver=3.2 cp=SiNgle}","\
+{c type Normal=0 Drop=1 Busy=2 Quiet=3 `auto answer`=4}","\
+{tp call}","\
+{0 o `No group` c=type}","\
+{1 o Family c=type}","\
+{2 o Friends c=type}","\
+{3 o Business c=type}","\
+{4 o VIP c=type}","\
+{5 o Office c=type}","\
+{6 o Leisure c=type}","\
+{7 o Private c=type}","\
+{8 o `Hobby 1` c=type}","\
+{9 o `Hobby 2` c=type}","\
+{10 o Incognito c=type}","\
+{endtp}","\
+{1 cb UseOnlyFirstProfile}","\
+{sm Prof1}{2 usetp call}{endsm}","\
+{sm Prof2}{13 usetp call}{endsm}","\
+{sm Prof3}{24 usetp call}{endsm}","\
+{sm Prof4}{35 usetp call}{endsm}","\
+{sm Prof5}{46 usetp call}{endsm}","\
+{sm Prof6}{57 usetp call}{endsm}","\
+{sm Prof7}{68 usetp call}{endsm}","\
+{sm Prof8}{79 usetp call}{endsm}",00
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+
