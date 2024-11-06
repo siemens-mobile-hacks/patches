@@ -56115,6 +56115,16 @@
 				"ru": "Изменить направление кручения бобин при проигрывании аудио",
 				"en": "Reverse Audio play animation"
 			}
+		},
+		"10971": {
+			"id": 10971,
+			"model": "S65v58",
+			"file": "S65v58/10971-nesto.vkp",
+			"mtime": 1730887458000,
+			"title": {
+				"ru": "Шрифт NESTO",
+				"en": "Font NESTO"
+			}
 		}
 	},
 	"SL65v50": {
