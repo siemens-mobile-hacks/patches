@@ -31420,5 +31420,17 @@
 	],
 	[
 		"S75v52/10970-SpeedUpMenuScroll_s75.vkp"
+	],
+	[
+		"S65v58/10971-nesto.vkp"
+	],
+	[
+		"S65v58/10972-fix_menu_width.vkp"
+	],
+	[
+		"S65v58/10973-fix_cursor_in_tile_view.vkp"
+	],
+	[
+		"S65v58/10974-fix_navigation_in_tile_view_v1_1.vkp"
 	]
 ]

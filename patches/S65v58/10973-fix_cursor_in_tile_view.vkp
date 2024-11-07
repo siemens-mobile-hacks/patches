@@ -1,0 +1,25 @@
+;S65v58
+;Исправить курсор в плиточном режиме
+;Fix cursor in tile view
+;(c) FIL
+;(r) SiNgle
+;(p) Виктор89
+;Version: 
+;PatchID: 10973
+;Details: https://patches.kibab.com/patches/details.php5?id=10973
+/*
+1. Убирает белый фон у иконок Native Menu.
+2. Исправляет цвет курсора в плиточном режиме Card Explorer.
+
+*/
+
+119E4D8: 00 FF
+119E542: 061C 3E1C
+119E57C: B0F7E5FF 21F698FD
+
+#pragma enable old_equal_ff
+0FC00B0: F0B589B01D0007920D4B129A040006919A4213D00B4F7520B84706007420B847109B079A02930F9B069901930E9B039600932B0004902000034CA04709B0F0BDC8D892A0191815A14BF514A1
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

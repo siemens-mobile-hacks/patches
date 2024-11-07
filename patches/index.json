@@ -56115,6 +56115,46 @@
 				"ru": "Изменить направление кручения бобин при проигрывании аудио",
 				"en": "Reverse Audio play animation"
 			}
+		},
+		"10971": {
+			"id": "10971",
+			"model": "S65v58",
+			"file": "S65v58/10971-nesto.vkp",
+			"mtime": 1730887458000,
+			"title": {
+				"ru": "Шрифт NESTO",
+				"en": "Font NESTO"
+			}
+		},
+		"10972": {
+			"id": "10972",
+			"model": "S65v58",
+			"file": "S65v58/10972-fix_menu_width.vkp",
+			"mtime": 1730888486000,
+			"title": {
+				"ru": "Исправить ширину меню",
+				"en": "Fix menu width"
+			}
+		},
+		"10973": {
+			"id": "10973",
+			"model": "S65v58",
+			"file": "S65v58/10973-fix_cursor_in_tile_view.vkp",
+			"mtime": 1730892234000,
+			"title": {
+				"ru": "Исправить курсор в плиточном режиме",
+				"en": "Fix cursor in tile view"
+			}
+		},
+		"10974": {
+			"id": "10974",
+			"model": "S65v58",
+			"file": "S65v58/10974-fix_navigation_in_tile_view_v1_1.vkp",
+			"mtime": 1730896586000,
+			"title": {
+				"ru": "Исправить навигацию в плиточном режиме",
+				"en": "Fix navigation in tile view"
+			}
 		}
 	},
 	"SL65v50": {
