@@ -56136,6 +56136,16 @@
 				"en": "Fix menu width"
 			}
 		},
+		"10973": {
+			"id": 10973,
+			"model": "S65v58",
+			"file": "S65v58/10973-fix_cursor_in_tile_view.vkp",
+			"mtime": 1730945568000,
+			"title": {
+				"ru": "Исправить курсор в плиточном режиме",
+				"en": "Fix cursor in tile view"
+			}
+		},
 		"10974": {
 			"id": 10974,
 			"model": "S65v58",
