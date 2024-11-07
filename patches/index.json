@@ -5183,6 +5183,16 @@
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
 			}
+		},
+		"10975": {
+			"id": 10975,
+			"model": "EL71v45",
+			"file": "EL71v45/10975-change_animation_speed_in_nm.vkp",
+			"mtime": 1731009210000,
+			"title": {
+				"ru": "Изменить скорость анимации в Native Menu",
+				"en": "Change animation speed in Native Menu"
+			}
 		}
 	},
 	"S75v20": {
