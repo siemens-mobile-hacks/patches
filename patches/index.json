@@ -56175,6 +56175,16 @@
 				"ru": "Добавить иконки в заголовок Native Menu",
 				"en": "Add icons to header in Native Menu"
 			}
+		},
+		"10977": {
+			"id": 10977,
+			"model": "S65v58",
+			"file": "S65v58/10977-remove_camera_from_extras.vkp",
+			"mtime": 1731082534000,
+			"title": {
+				"ru": "Убрать пункт 'Камера' из меню 'Еще'",
+				"en": "Remove 'Camera' item from 'Extras' menu"
+			}
 		}
 	},
 	"SL65v50": {

@@ -1,0 +1,15 @@
+;S65v58
+;Убрать пункт 'Камера' из меню 'Еще'
+;Remove 'Camera' item from 'Extras' menu
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10977
+;Details: https://patches.kibab.com/patches/details.php5?id=10977
+/*
+
+*/
+
+092D71C: 7805 6705
+;------------------------- end -------------------------
+
