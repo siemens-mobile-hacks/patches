@@ -1,0 +1,38 @@
+;S65v58
+;Добавить иконки в заголовок Native Menu
+;Add icons to header in Native Menu
+;(c) FIL
+;(p) Виктор89
+;Version: 1.2.1
+;PatchID: 10976
+;Details: https://patches.kibab.com/patches/details.php5?id=10976
+/*
+
+*/
+
+#pragma enable old_equal_ff
+; .NativeMenu_OnCreate
+0FED600: 70B5084B040008200D0016009847064B320029000360002343602061034B2000984770BD980F82A0DF020000A5BB15A1
+#pragma disable old_equal_ff
+
+; .NativeMenu_OnCreate_Jump
+119E290: BDF788FC 4FF6B6F9
+
+#pragma enable old_equal_ff
+; .NativeMenu_OnChange
+0FED660: 0B4B70B5040098470A4BA2689A420ED1A26A094B2569D35C084A20009B182B60074B9847074C084B084A2900A04770BD51DC19A1C8D892A0ACD6FEA029020000A78D14A107FA15A1001082A0980F82A0C1C7EDBCB6014541CB
+#pragma disable old_equal_ff
+
+; .NativeMenu_OnChange_Jump
+119DEF2: FFF7ADFE 4FF6B5FB
+
+#pragma enable old_equal_ff
+; .NativeMenu_OnClose
+0FED6D0: 70B5064B040000690D0098470023290023612000024B984770BDC046001082A0079114A1
+#pragma disable old_equal_ff
+
+; .NativeMenu_OnClose_Jump
+119E2D0: AAF719FF 4FF6FEF9
+
+;------------------------- end -------------------------
+

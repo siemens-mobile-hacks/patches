@@ -56165,6 +56165,16 @@
 				"ru": "Исправить навигацию в плиточном режиме",
 				"en": "Fix navigation in tile view"
 			}
+		},
+		"10976": {
+			"id": 10976,
+			"model": "S65v58",
+			"file": "S65v58/10976-add_icons_to_header_in_nm_v1_2_1.vkp",
+			"mtime": 1731081978000,
+			"title": {
+				"ru": "Добавить иконки в заголовок Native Menu",
+				"en": "Add icons to header in Native Menu"
+			}
 		}
 	},
 	"SL65v50": {
