@@ -5183,6 +5183,16 @@
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
 			}
+		},
+		"10975": {
+			"id": "10975",
+			"model": "EL71v45",
+			"file": "EL71v45/10975-change_animation_speed_in_nm.vkp",
+			"mtime": 1731009210000,
+			"title": {
+				"ru": "Изменить скорость анимации в Native Menu",
+				"en": "Change animation speed in Native Menu"
+			}
 		}
 	},
 	"S75v20": {
@@ -56140,7 +56150,7 @@
 			"id": "10973",
 			"model": "S65v58",
 			"file": "S65v58/10973-fix_cursor_in_tile_view.vkp",
-			"mtime": 1730892234000,
+			"mtime": 1730945568000,
 			"title": {
 				"ru": "Исправить курсор в плиточном режиме",
 				"en": "Fix cursor in tile view"
@@ -56150,7 +56160,7 @@
 			"id": "10974",
 			"model": "S65v58",
 			"file": "S65v58/10974-fix_navigation_in_tile_view_v1_1.vkp",
-			"mtime": 1730896586000,
+			"mtime": 1730941552000,
 			"title": {
 				"ru": "Исправить навигацию в плиточном режиме",
 				"en": "Fix navigation in tile view"
