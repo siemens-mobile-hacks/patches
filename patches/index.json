@@ -56245,6 +56245,16 @@
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
 			}
+		},
+		"10984": {
+			"id": 10984,
+			"model": "S65v58",
+			"file": "S65v58/10984-change_scancode_of_internet_key.vkp",
+			"mtime": 1731143848000,
+			"title": {
+				"ru": "Изменить сканкод клавиши 'Интернет'",
+				"en": "Change scancode of 'Internet' key"
+			}
 		}
 	},
 	"SL65v50": {
