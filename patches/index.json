@@ -56255,6 +56255,16 @@
 				"ru": "Изменить сканкод клавиши 'Интернет'",
 				"en": "Change scancode of 'Internet' key"
 			}
+		},
+		"10985": {
+			"id": 10985,
+			"model": "S65v58",
+			"file": "S65v58/10985-disable_network.vkp",
+			"mtime": 1731158014000,
+			"title": {
+				"ru": "Отключить сеть",
+				"en": "Disable network"
+			}
 		}
 	},
 	"SL65v50": {
