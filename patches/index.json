@@ -5193,6 +5193,16 @@
 				"ru": "Изменить скорость анимации в Native Menu",
 				"en": "Change animation speed in Native Menu"
 			}
+		},
+		"10987": {
+			"id": 10987,
+			"model": "EL71v45",
+			"file": "EL71v45/10987-change_dirs_of_theme_res_v1_1.vkp",
+			"mtime": 1731169320000,
+			"title": {
+				"ru": "Задать директорию ресурсов темы",
+				"en": "Set directory of theme resources"
+			}
 		}
 	},
 	"S75v20": {
