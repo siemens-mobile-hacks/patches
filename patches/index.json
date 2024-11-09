@@ -56165,6 +56165,46 @@
 				"ru": "Исправить навигацию в плиточном режиме",
 				"en": "Fix navigation in tile view"
 			}
+		},
+		"10976": {
+			"id": "10976",
+			"model": "S65v58",
+			"file": "S65v58/10976-add_icons_to_header_in_nm_v1_2_1.vkp",
+			"mtime": 1731081978000,
+			"title": {
+				"ru": "Добавить иконки в заголовок Native Menu",
+				"en": "Add icons to header in Native Menu"
+			}
+		},
+		"10977": {
+			"id": "10977",
+			"model": "S65v58",
+			"file": "S65v58/10977-remove_camera_from_extras.vkp",
+			"mtime": 1731082534000,
+			"title": {
+				"ru": "Убрать пункт 'Камера' из меню 'Еще'",
+				"en": "Remove 'Camera' item from 'Extras' menu"
+			}
+		},
+		"10978": {
+			"id": "10978",
+			"model": "S65v58",
+			"file": "S65v58/10978-set_csm_for_nm.vkp",
+			"mtime": 1731085056000,
+			"title": {
+				"ru": "Задать CSM для Native Menu",
+				"en": "Set CSM for Native Menu"
+			}
+		},
+		"10979": {
+			"id": "10979",
+			"model": "S65v58",
+			"file": "S65v58/10979-NMFP_v3_3_1.vkp",
+			"mtime": 1731085500000,
+			"title": {
+				"ru": "Пакет исправлений Native Menu",
+				"en": "Native Menu Fix Pack"
+			}
 		}
 	},
 	"SL65v50": {

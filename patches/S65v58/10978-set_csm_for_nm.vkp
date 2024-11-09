@@ -1,0 +1,20 @@
+;S65v58
+;Задать CSM для Native Menu
+;Set CSM for Native Menu
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10978
+;Details: https://patches.kibab.com/patches/details.php5?id=10978
+/*
+Можно переключаться через XTask.
+*/
+
+08C8FDC: 4FD0 C046
+08C9078: 5EF0 0021
+08C907A: 86EFFEBD 5EF038EA
+08C907E: 0020 C046
+08C9080: FCE7 FEBD
+
+;------------------------- end -------------------------
+
