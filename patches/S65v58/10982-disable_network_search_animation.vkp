@@ -1,0 +1,16 @@
+;S65v58
+;Отключить анимацию поиска сети
+;Disable network search animation
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10982
+;Details: https://patches.kibab.com/patches/details.php5?id=10982
+/*
+
+*/
+
+16A20F6: 80B5 0020
+16A20F8: 0023 7047
+;------------------------- end -------------------------
+

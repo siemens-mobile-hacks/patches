@@ -31453,5 +31453,8 @@
 	],
 	[
 		"S65v58/10981-fix_startup_animation_without_sim.vkp"
+	],
+	[
+		"S65v58/10982-disable_network_search_animation.vkp"
 	]
 ]

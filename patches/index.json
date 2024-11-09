@@ -56225,6 +56225,16 @@
 				"ru": "Исправить анимацию при включении без SIM",
 				"en": "Fix a startup animation without SIM"
 			}
+		},
+		"10982": {
+			"id": 10982,
+			"model": "S65v58",
+			"file": "S65v58/10982-disable_network_search_animation.vkp",
+			"mtime": 1731142264000,
+			"title": {
+				"ru": "Отключить анимацию поиска сети",
+				"en": "Disable network search animation"
+			}
 		}
 	},
 	"SL65v50": {
