@@ -56215,6 +56215,16 @@
 				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
 				"en": "Use extra header font only from 'Definition'"
 			}
+		},
+		"10981": {
+			"id": 10981,
+			"model": "S65v58",
+			"file": "S65v58/10981-fix_startup_animation_without_sim.vkp",
+			"mtime": 1731142110000,
+			"title": {
+				"ru": "Исправить анимацию при включении без SIM",
+				"en": "Fix a startup animation without SIM"
+			}
 		}
 	},
 	"SL65v50": {
