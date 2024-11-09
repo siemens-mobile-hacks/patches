@@ -5203,6 +5203,17 @@
 				"ru": "Задать директорию ресурсов темы",
 				"en": "Set directory of theme resources"
 			}
+		},
+		"10988": {
+			"id": 10988,
+			"model": "EL71v45",
+			"file": "EL71v45/10988-custom_icons_addon_to_nmfp.vkp",
+			"additionalFile": "EL71v45/10988-custom_icons_addon_to_nmfp.zip",
+			"mtime": 1731178720000,
+			"title": {
+				"ru": "Дополнение \"Нестандартные иконки\" для \"Пакет исправлений Native Menu\"",
+				"en": "Addon \"Custom icons\" to \"Native Menu Fix Pack\""
+			}
 		}
 	},
 	"S75v20": {
