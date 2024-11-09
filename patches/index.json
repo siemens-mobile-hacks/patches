@@ -56235,6 +56235,16 @@
 				"ru": "Отключить анимацию поиска сети",
 				"en": "Disable network search animation"
 			}
+		},
+		"10983": {
+			"id": 10983,
+			"model": "S65v58",
+			"file": "S65v58/10983-smooth_scroll_of_long_headers_v1_1.vkp",
+			"mtime": 1731143002000,
+			"title": {
+				"ru": "Плавная прокрутка длинных заголовков",
+				"en": "Smooth scrolling of long headers"
+			}
 		}
 	},
 	"SL65v50": {
