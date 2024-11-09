@@ -56205,6 +56205,16 @@
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
 			}
+		},
+		"10980": {
+			"id": 10980,
+			"model": "S65v58",
+			"file": "S65v58/10980-use_e_header_font_from_definition.vkp",
+			"mtime": 1731141910000,
+			"title": {
+				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
+				"en": "Use extra header font only from 'Definition'"
+			}
 		}
 	},
 	"SL65v50": {
