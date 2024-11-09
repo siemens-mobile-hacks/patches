@@ -96907,6 +96907,16 @@
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
 			}
+		},
+		"10986": {
+			"id": 10986,
+			"model": "C81v51",
+			"file": "C81v51/10986-change_dirs_of_theme_res_v1_1.vkp",
+			"mtime": 1731169232000,
+			"title": {
+				"ru": "Задать директорию ресурсов темы",
+				"en": "Set directory of theme resources"
+			}
 		}
 	},
 	"C81v38": {

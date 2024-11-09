@@ -1,0 +1,41 @@
+;C81v51
+;Задать директорию ресурсов темы
+;Set directory of theme resources
+;(c) FIL, Azq2
+;(r) Виктор89
+;Version: 1.2
+;PatchID: 10986
+;Details: https://patches.kibab.com/patches/details.php5?id=10986
+/*
+По умолчанию ресурсы тем сохраняются в каталоги 0:\Pictures, 0:\Sounds и тем самым загрязняют их. Данный патч переносит запись в директорию 1:\ThemeResources. Перед применением темы каталог 1:\ThemeResources очищается.
+*/
+
+#pragma enable old_equal_ff
+; .rodata
+13BFDD0: 303A5C536F756E647300303A5C506963747572657300313A5C5468656D655265736F75726365730025735C25770025775C257700257300
+#pragma disable old_equal_ff
+
+; .FixThemeResourcesPath_Jump
+0550CD0: 21F1E2EC 00F062E9
+
+; .FixThemeResourcesPath_Trampoline
+0550F98: 50706841455F506B675F4F70 04E02DE5A3BB39FA04F09DE4
+
+#pragma enable old_equal_ff
+; .FixThemeResourcesPath
+13BFE30: F0B5164D9DB0019314000CA91022060002A8A847102214A907A8A8471049114D02A8A847104907A8A847104F02A92000B847002807D10E4A0E49019B094C3000A0471DB0F0BD07A92000B8470028F2D00949019B22003000A847F2E7FB6B1FA0D0FD3BA1E5E695A0DAFD3BA11F661FA0E6FD3BA1F8FD3BA1FEFD3BA1
+#pragma disable old_equal_ff
+
+; .ReleaseWallpaperBeforeCleanup_Jump
+05C7214: 86F70DF8 00F084E8
+
+; .ReleaseWallpaperBeforeCleanup_Trampoline
+05C7320: 50706841455F5468656D655F 04E02DE5E9E237FA04F09DE4
+
+#pragma enable old_equal_ff
+; .ReleaseWallpaperBeforeCleanup
+13BFED0: 00B50B4B97B006A9202201A8984701A8084A0949094B98470022094B032165209847084B012101A8984717B000BDC046FB6B1FA0E6FD3BA104FE3BA1E5E695A0F56955A0493F5CA0
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+
