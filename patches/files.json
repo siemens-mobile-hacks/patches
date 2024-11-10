@@ -31485,7 +31485,9 @@
 	[
 		"S65v58/10991-fix_lsk_on_idle.vkp"
 	],
-	null,
+	[
+		"S65v58/10992-change_network_search_text_v1_0_1.vkp"
+	],
 	[
 		"S65v58/10993-open_disk_sel_menu_in_ce_by_hotkey.vkp"
 	]

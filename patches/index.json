@@ -56317,6 +56317,16 @@
 				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
 		},
+		"10992": {
+			"id": 10992,
+			"model": "S65v58",
+			"file": "S65v58/10992-change_network_search_text_v1_0_1.vkp",
+			"mtime": 1731260030000,
+			"title": {
+				"ru": "Изменить текст 'Поиск сети' когда отключена сеть",
+				"en": "Change 'Network search' text when network is disabled"
+			}
+		},
 		"10993": {
 			"id": 10993,
 			"model": "S65v58",
