@@ -1,0 +1,21 @@
+;S65v58
+;Открыть меню выбора диска по горячей клавише в Card-Explorer
+;Open disk selection menu in Card-Explorer by hotkey
+;(c) FIL
+;Version: 
+;PatchID: 10993
+;Details: https://patches.kibab.com/patches/details.php5?id=10993
+/*
+Меню открывается по зеленой кнопке.
+*/
+
+#pragma enable old_equal_ff
+; .OpenDisksMenu
+17E03A0: 4B6810B55B6804000B2B03D1436B9868024B9847024B2000984710BD482398A0BD9714A1
+#pragma disable old_equal_ff
+
+; .OpenDisksMenu_Jump
+0985080: CD111FFA C66C39FA
+
+;------------------------- end -------------------------
+
