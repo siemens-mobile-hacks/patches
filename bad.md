@@ -45,6 +45,22 @@ Please put "+0" at the end of the patch.
 
 ```
 
+[EL71v45/10988-custom_icons_addon_to_nmfp.vkp](https://patches.kibab.com/patches/details.php5?id=10988)
+
+Warning: Uncanceled offset +A3F8 at line 19 col 1
+Please put "+0" at the end of the patch.
+```
+   16 | ;Изменить кадры анимации в Native Menu
+   17 | ;Change animation frames in Native Menu
+   18 | ;(c) FIL
+>  19 | +A3F8
+      | ^
+   20 | 
+   21 | ;ALARM CLOCK
+   22 | ;08699A0: 7603 7603 ;886 
+
+```
+
 
 ### Additional files are not found
 The patch has additional files, but it isn't accessible.
