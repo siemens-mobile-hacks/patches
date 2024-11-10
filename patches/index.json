@@ -56306,6 +56306,16 @@
 				"ru": "Исправить иконку сети когда отключена сеть",
 				"en": "Fix network icon when network is disabled"
 			}
+		},
+		"10991": {
+			"id": 10991,
+			"model": "S65v58",
+			"file": "S65v58/10991-fix_lsk_on_idle.vkp",
+			"mtime": 1731242764000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"SL65v50": {
