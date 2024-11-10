@@ -1,0 +1,30 @@
+;S65v58
+;Плавная прокрутка длинных заголовков
+;Smooth scrolling of long headers
+;(c) FIL
+;(p) Виктор89
+;Version: 1.1
+;PatchID: 10983
+;Details: https://patches.kibab.com/patches/details.php5?id=10983
+/*
+
+*/
+
+; DEFAULT
++222C4
+113D176: FF 3A ; speed
+; delay
+113D178: 2D32 8421
+113D17A: 7D21 8900
+113D17C: 0901 0231
+; MEDIA PLAYER
+-18EE0
+09D9568: C8 3A ; speed
+09D956C: FA1F 311E ; delay
+; EXTRA HEADER
+-14364
+094104C: E803 1202 ; delay
+0941050: F401 3A00 ; speed
++0
+;------------------------- end -------------------------
+

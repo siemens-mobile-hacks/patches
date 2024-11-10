@@ -31447,5 +31447,33 @@
 	],
 	[
 		"S65v58/10979-NMFP_v3_3_1.vkp"
+	],
+	[
+		"S65v58/10980-use_e_header_font_from_definition.vkp"
+	],
+	[
+		"S65v58/10981-fix_startup_animation_without_sim.vkp"
+	],
+	[
+		"S65v58/10982-disable_network_search_animation.vkp"
+	],
+	[
+		"S65v58/10983-smooth_scroll_of_long_headers_v1_1.vkp"
+	],
+	[
+		"S65v58/10984-change_scancode_of_internet_key.vkp"
+	],
+	[
+		"S65v58/10985-disable_network.vkp"
+	],
+	[
+		"C81v51/10986-change_dirs_of_theme_res_v1_1.vkp"
+	],
+	[
+		"EL71v45/10987-change_dirs_of_theme_res_v1_1.vkp"
+	],
+	[
+		"EL71v45/10988-custom_icons_addon_to_nmfp.vkp",
+		"EL71v45/10988-custom_icons_addon_to_nmfp.zip"
 	]
 ]

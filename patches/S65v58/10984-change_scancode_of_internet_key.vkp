@@ -1,16 +1,15 @@
-;CX70v56
+;S65v58
 ;Изменить сканкод клавиши 'Интернет'
 ;Change scancode of 'Internet' key
 ;(c) FIL
 ;(r) Feyman, Виктор89
 ;Version: 
-;PatchID: 10954
-;Details: https://patches.kibab.com/patches/details.php5?id=10954
+;PatchID: 10984
+;Details: https://patches.kibab.com/patches/details.php5?id=10984
 /*
 Патч нужен для нормальной работы XTask3 на кнопке запуска браузера. Соотвественно браузер больше не будет запускаться по этой кнопке.
 */
 
-0096A40: 11 69
-
+096A54: 11 69
 ;------------------------- end -------------------------
 

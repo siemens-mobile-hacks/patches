@@ -1,0 +1,15 @@
+;S65v58
+;Использовать шрифт дополнительного заголовка только из 'Definition'
+;Use extra header font only from 'Definition'
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 10980
+;Details: https://patches.kibab.com/patches/details.php5?id=10980
+/*
+Патч нужен для более унифицированного интерфейса.
+*/
+
+115F858: 80B5 7047
+;------------------------- end -------------------------
+

@@ -5178,7 +5178,7 @@
 			"id": "10969",
 			"model": "EL71v45",
 			"file": "EL71v45/10969-NM_Improvements_package_EL71.vkp",
-			"mtime": 1730655366000,
+			"mtime": 1731178652000,
 			"title": {
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
@@ -5192,6 +5192,27 @@
 			"title": {
 				"ru": "Изменить скорость анимации в Native Menu",
 				"en": "Change animation speed in Native Menu"
+			}
+		},
+		"10987": {
+			"id": "10987",
+			"model": "EL71v45",
+			"file": "EL71v45/10987-change_dirs_of_theme_res_v1_1.vkp",
+			"mtime": 1731169320000,
+			"title": {
+				"ru": "Задать директорию ресурсов темы",
+				"en": "Set directory of theme resources"
+			}
+		},
+		"10988": {
+			"id": "10988",
+			"model": "EL71v45",
+			"file": "EL71v45/10988-custom_icons_addon_to_nmfp.vkp",
+			"additionalFile": "EL71v45/10988-custom_icons_addon_to_nmfp.zip",
+			"mtime": 1731178720000,
+			"title": {
+				"ru": "Дополнение \"Нестандартные иконки\" для \"Пакет исправлений Native Menu\"",
+				"en": "Addon \"Custom icons\" to \"Native Menu Fix Pack\""
 			}
 		}
 	},
@@ -56205,6 +56226,66 @@
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
 			}
+		},
+		"10980": {
+			"id": "10980",
+			"model": "S65v58",
+			"file": "S65v58/10980-use_e_header_font_from_definition.vkp",
+			"mtime": 1731141910000,
+			"title": {
+				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
+				"en": "Use extra header font only from 'Definition'"
+			}
+		},
+		"10981": {
+			"id": "10981",
+			"model": "S65v58",
+			"file": "S65v58/10981-fix_startup_animation_without_sim.vkp",
+			"mtime": 1731142110000,
+			"title": {
+				"ru": "Исправить анимацию при включении без SIM",
+				"en": "Fix a startup animation without SIM"
+			}
+		},
+		"10982": {
+			"id": "10982",
+			"model": "S65v58",
+			"file": "S65v58/10982-disable_network_search_animation.vkp",
+			"mtime": 1731142264000,
+			"title": {
+				"ru": "Отключить анимацию поиска сети",
+				"en": "Disable network search animation"
+			}
+		},
+		"10983": {
+			"id": "10983",
+			"model": "S65v58",
+			"file": "S65v58/10983-smooth_scroll_of_long_headers_v1_1.vkp",
+			"mtime": 1731143002000,
+			"title": {
+				"ru": "Плавная прокрутка длинных заголовков",
+				"en": "Smooth scrolling of long headers"
+			}
+		},
+		"10984": {
+			"id": "10984",
+			"model": "S65v58",
+			"file": "S65v58/10984-change_scancode_of_internet_key.vkp",
+			"mtime": 1731143848000,
+			"title": {
+				"ru": "Изменить сканкод клавиши 'Интернет'",
+				"en": "Change scancode of 'Internet' key"
+			}
+		},
+		"10985": {
+			"id": "10985",
+			"model": "S65v58",
+			"file": "S65v58/10985-disable_network.vkp",
+			"mtime": 1731158014000,
+			"title": {
+				"ru": "Отключить сеть",
+				"en": "Disable network"
+			}
 		}
 	},
 	"SL65v50": {
@@ -96846,6 +96927,16 @@
 			"title": {
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
+			}
+		},
+		"10986": {
+			"id": "10986",
+			"model": "C81v51",
+			"file": "C81v51/10986-change_dirs_of_theme_res_v1_1.vkp",
+			"mtime": 1731169232000,
+			"title": {
+				"ru": "Задать директорию ресурсов темы",
+				"en": "Set directory of theme resources"
 			}
 		}
 	},
