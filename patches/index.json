@@ -56296,6 +56296,16 @@
 				"ru": "Процент заряда батареи вместо иконок",
 				"en": "Battery percentage instead of icons"
 			}
+		},
+		"10990": {
+			"id": 10990,
+			"model": "S65v58",
+			"file": "S65v58/10990-fix_network_icon.vkp",
+			"mtime": 1731232266000,
+			"title": {
+				"ru": "Исправить иконку сети когда отключена сеть",
+				"en": "Fix network icon when network is disabled"
+			}
 		}
 	},
 	"SL65v50": {
