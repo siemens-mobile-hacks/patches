@@ -56210,8 +56210,8 @@
 		"10978": {
 			"id": 10978,
 			"model": "S65v58",
-			"file": "S65v58/10978-set_csm_for_nm.vkp",
-			"mtime": 1731085056000,
+			"file": "S65v58/10978-set_csm_for_nm_v1_0_1.vkp",
+			"mtime": 1731261884000,
 			"title": {
 				"ru": "Задать CSM для Native Menu",
 				"en": "Set CSM for Native Menu"
