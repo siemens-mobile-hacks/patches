@@ -1,0 +1,30 @@
+;S65v58
+;Изменить текст 'Поиск сети' когда отключена сеть
+;Change 'Network search' text when network is disabled
+;(c) FIL
+;(r) Виктор89
+;Version: 1.0.1
+;PatchID: 10992
+;Details: https://patches.kibab.com/patches/details.php5?id=10992
+/*
+
+*/
+
+#pragma enable old_equal_ff
+; .IDLE_SetLangMesIntoWS
+17E0300: 054A064B10B5904204D1054A1278042A00D10448984710BD7E020000975E40A1DA0B69A8C1160000
+#pragma disable old_equal_ff
+
+; .IDLE_SetLangMesIntoWS_Jump
+16A4F90: 60F581FF 3BF1B6F9
+
+#pragma enable old_equal_ff
+; .ScreenSaver_SetLangMesIntoWS
+17E0350: 054A064B10B5904204D1054A1278042A00D10448984710BD7E020000975E40A1DA0B69A8C1160000
+#pragma disable old_equal_ff
+
+; .ScreenSaver_SetLangMesIntoWS_Jump
+16A8C56: 5DF51EF9 37F17BFB
+
+;------------------------- end -------------------------
+

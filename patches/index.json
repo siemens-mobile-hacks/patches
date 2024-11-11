@@ -56210,8 +56210,8 @@
 		"10978": {
 			"id": "10978",
 			"model": "S65v58",
-			"file": "S65v58/10978-set_csm_for_nm.vkp",
-			"mtime": 1731085056000,
+			"file": "S65v58/10978-set_csm_for_nm_v1_0_1.vkp",
+			"mtime": 1731261884000,
 			"title": {
 				"ru": "Задать CSM для Native Menu",
 				"en": "Set CSM for Native Menu"
@@ -56220,8 +56220,8 @@
 		"10979": {
 			"id": "10979",
 			"model": "S65v58",
-			"file": "S65v58/10979-NMFP_v3_3_1.vkp",
-			"mtime": 1731085500000,
+			"file": "S65v58/10979-NMFP_v3_3_2.vkp",
+			"mtime": 1731261966000,
 			"title": {
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
@@ -56285,6 +56285,56 @@
 			"title": {
 				"ru": "Отключить сеть",
 				"en": "Disable network"
+			}
+		},
+		"10989": {
+			"id": "10989",
+			"model": "S65v58",
+			"file": "S65v58/10989-battery_percentage_instead_of_icons.vkp",
+			"mtime": 1731217954000,
+			"title": {
+				"ru": "Процент заряда батареи вместо иконок",
+				"en": "Battery percentage instead of icons"
+			}
+		},
+		"10990": {
+			"id": "10990",
+			"model": "S65v58",
+			"file": "S65v58/10990-fix_network_icon.vkp",
+			"mtime": 1731232266000,
+			"title": {
+				"ru": "Исправить иконку сети когда отключена сеть",
+				"en": "Fix network icon when network is disabled"
+			}
+		},
+		"10991": {
+			"id": "10991",
+			"model": "S65v58",
+			"file": "S65v58/10991-fix_lsk_on_idle.vkp",
+			"mtime": 1731242764000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
+		},
+		"10992": {
+			"id": "10992",
+			"model": "S65v58",
+			"file": "S65v58/10992-change_network_search_text_v1_0_1.vkp",
+			"mtime": 1731260030000,
+			"title": {
+				"ru": "Изменить текст 'Поиск сети' когда отключена сеть",
+				"en": "Change 'Network search' text when network is disabled"
+			}
+		},
+		"10993": {
+			"id": "10993",
+			"model": "S65v58",
+			"file": "S65v58/10993-open_disk_sel_menu_in_ce_by_hotkey.vkp",
+			"mtime": 1731258240000,
+			"title": {
+				"ru": "Открыть меню выбора диска по горячей клавише в Card-Explorer",
+				"en": "Open disk selection menu in Card-Explorer by hotkey"
 			}
 		}
 	},

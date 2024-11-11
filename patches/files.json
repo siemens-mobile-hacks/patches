@@ -31443,10 +31443,10 @@
 		"S65v58/10977-remove_camera_from_extras.vkp"
 	],
 	[
-		"S65v58/10978-set_csm_for_nm.vkp"
+		"S65v58/10978-set_csm_for_nm_v1_0_1.vkp"
 	],
 	[
-		"S65v58/10979-NMFP_v3_3_1.vkp"
+		"S65v58/10979-NMFP_v3_3_2.vkp"
 	],
 	[
 		"S65v58/10980-use_e_header_font_from_definition.vkp"
@@ -31475,5 +31475,20 @@
 	[
 		"EL71v45/10988-custom_icons_addon_to_nmfp.vkp",
 		"EL71v45/10988-custom_icons_addon_to_nmfp.zip"
+	],
+	[
+		"S65v58/10989-battery_percentage_instead_of_icons.vkp"
+	],
+	[
+		"S65v58/10990-fix_network_icon.vkp"
+	],
+	[
+		"S65v58/10991-fix_lsk_on_idle.vkp"
+	],
+	[
+		"S65v58/10992-change_network_search_text_v1_0_1.vkp"
+	],
+	[
+		"S65v58/10993-open_disk_sel_menu_in_ce_by_hotkey.vkp"
 	]
 ]

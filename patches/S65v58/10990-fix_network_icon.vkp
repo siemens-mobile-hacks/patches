@@ -1,0 +1,22 @@
+;S65v58
+;Исправить иконку сети когда отключена сеть
+;Fix network icon when network is disabled
+;(c) FIL
+;(r) Виктор89
+;Version: 
+;PatchID: 10990
+;Details: https://patches.kibab.com/patches/details.php5?id=10990
+/*
+
+*/
+
+#pragma enable old_equal_ff
+; .GetNetworkIcon
+1720200: 044B10B51B78042B02D0034B984710BD0248FCE7DA0B69A8A59169A1DB020000
+#pragma disable old_equal_ff
+
+; .GetNetworkIcon_Jump
+1698C00: 00F0D0FA 87F0FEFA
+
+;------------------------- end -------------------------
+
