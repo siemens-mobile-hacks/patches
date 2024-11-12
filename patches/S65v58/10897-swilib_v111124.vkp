@@ -1,10 +1,9 @@
 ;S65v58
-;Библиотека функций 22.09.24
-;Function Library 22.09.24
-;(c) All
-;(r) siepatchdb
+;Библиотека функций
+;Functions Library
+;(c) avkiev
 ;(p) dimonp25
-;Version: 
+;Version: 111124
 ;PatchID: 10897
 ;Details: https://patches.kibab.com/patches/details.php5?id=10897
 /*
@@ -111,66 +110,65 @@
 158: 0xA006F131  ; 086: PlayVibra
 15C: 0xA08283A0   ; 087: IsCallAfterTimerStillRunning
 160: 0xA0005CE8   ; 088: ClearMemory
-164: 0xA166A98C   ; 089: memcpy
-;
-168: 0xA11584B3   ; 090: KeypressOn
-16C: 0xA1158571   ; 091: KeypressOff
-0170: 0xA129A4C8   ; 5C: GetCPUClock()(KMZ)
+164: 0xA166A98C   ; 089: memcpy;
+0168: 0xA11584B3 ; 090: KeypressOn
+016C: 0xA1158571 ; 091: KeypressOff
+0170: 0xA129A4C8 ; 05C: GetCPUClock()(KMZ)
 0174: 0xA08F911F   ; 5D: GetCPULoad()
 178: 0xA0824650   ; 094: GetMMIMemUsed
 017C: 0xA082100C   ; 5F: void GetNonPermMemAvail()(KMZ)
-180: 0xA08DA5D1   ; 096: ShowMainMenu
-184: 0xA08DF43B   ; 097: ShowNativeMenu
-;188: 0x   ; f098: SetVibraStatus
-18C: 0xA169CA33   ; 099: MS_Wallpaper_Flush;
-190: 0xA11447C9 ; 100: EndUpdateScreen
-194: 0xA0B8F0C1 ; 101: EndCall
-198: 0xA0B4E4DF ; 102: EndCallBusy
-19C: 0xA16985D9 ; 103: IsDirectCallActive
-1A0: 0xA16960A7 ; 104: GetScreenSaverRAM
-1A4: 0xA082949C ; 105: LockShed
-1A8: 0xA0829524 ; 106: UnlockShed
-01AC: 0xA122E9E8 ; 6B: FindFirstFile(DIR_ENTRY *DIRENTRY,char *mask,unsigned int *ErrorNumber)(KMZ)
-01B0: 0xA122EA24 ; 6C: FindNextFile(DIR_ENTRY *DIRENTRY,unsigned int *ErrorNumber)
-01B4: 0xA122E970 ; 6D: FindClose(DIR_ENTRY *DIRENTRY,unsigned int *ErrorNumber)
-;
-1B8: 0xA132F26B ; 110: IsCalling
-01BC: 0xA169D2EF   ; 6F: void RefreshGPRSTraffic()(KMZ)
-01C0: 0xA169D30D   ; 70: int * GetGPRSTrafficPointer()(KMZ)
-1C4: 0xA114F54B ; 113: DrawFrame
-1C8: 0xA0B8A02F ; 114: GetCurrentSecondOfCall
-1CC: 0xA132FA83 ; 115: GetTypeOfCall
-1D0: 0xA08DAB57 ; 116: GetFunctionPointer
-1D4: 0xA1155DED ; 117: ScreenWindowMetrics
-1D8: 0xA117369D ; 118: ScreenWindowText
-1DC: 0xA1170E7B ; 119: ScreenWindowColor
-;
-1E0: 0xA0C37A37   ; 120: GetTimeFormat
-1E4: 0xA11551C1   ; 121: DrawObject
-1E8: 0xA1170F11   ; 122: ClearWindowBuffer
-1EC: 0xA084F979   ; 123: GetProfileFilter
-01F0: 0xA1249178   ; 7C: SetVibration(unsigned int power)(KMZ)
-1F4: 0xA132EC85   ; 125: IsIncognitoCall
-1F8: 0xA1344F79   ; 126: Rand
-;1FC: 0x   ; f127: IsPlayerOn
-0200: 0xA0AA76D5   ; 80: ShowCallList(int list, int zero)(KMZ)
-204: 0xA166AC1C   ; 129: HexToDec
-;
-;208: 0x   ; f130: GetCurrentTrackFilename
-20C: 0xA094A914   ; 131: GetPathOfFoundFile
-0210: 0xA122EB64   ; 84: int GetFileStats(const char *cFileName, void * StatBuffer, unsigned int *errornumber)(KMZ)
-214: 0xA0825D79   ; 133: StrCmpNoCase
-0218: 0xA122D23C ; 086: __arm void EEFullReadBlock(int block, void *buf, int offset, int size, int cepid, int msg); //cepid=msg=0
+
+0180: 0xA08DA5D1 ; 060: ShowMainMenu
+0184: 0xA08DF43B ; 061: ShowNativeMenu
+;188: 0x         ; 062: SetVibraStatus
+018C: 0xA05C4441 ; 063: MMI_CanvasBuffer_FlushV(char canvas_id);
+0190: 0xA11447C9 ; 064: EndUpdateScreen
+0194: 0xA0B8F0C1 ; 065: EndCall
+0198: 0xA0B4E4DF ; 066: EndCallBusy
+019C: 0xA16985D9 ; 067: IsDirectCallActive
+01A0: 0xA16960A7 ; 068: GetScreenSaverRAM
+01A4: 0xA082949C ; 069: LockShed
+01A8: 0xA0829524 ; 06A: UnlockShed
+01AC: 0xA122E9E8 ; 06B: FindFirstFile(DIR_ENTRY *DIRENTRY,char *mask,unsigned int *ErrorNumber);
+01B0: 0xA122EA24 ; 06C: FindNextFile(DIR_ENTRY *DIRENTRY,unsigned int *ErrorNumber);
+01B4: 0xA122E970 ; 06D: FindClose(DIR_ENTRY *DIRENTRY,unsigned int *ErrorNumber);
+01B8: 0xA132F26B ; 06E: IsCalling
+01BC: 0xA169D2EF ; 06F: void RefreshGPRSTraffic();
+
+01C0: 0xA169D30D ; 070: int * GetGPRSTrafficPointer();
+01C4: 0xA114F54B ; 071: DrawFrame
+01C8: 0xA0B8A02F ; 072: GetCurrentSecondOfCall
+01CC: 0xA132FA83 ; 073: GetTypeOfCall
+01D0: 0xA08DAB57 ; 074: GetFunctionPointer
+01D4: 0xA169BFC1 ; 075: int IsCanvasBufferSet(char CanvasID);
+01D8: 0xA169C00D ; 076: IMGHDR *GetCanvasBufferPicPtr(char CanvasID);
+01DC: 0xA1170E7B ; 077: ScreenWindowColor
+01E0: 0xA0C37A37 ; 078: GetTimeFormat
+01E4: 0xA11551C1 ; 079: DrawObject
+01E8: 0xA1170F11 ; 07A: ClearWindowBuffer
+01EC: 0xA084F979 ; 07B: GetProfileFilter
+01F0: 0xA1249178 ; 07C: SetVibration(unsigned int power);
+01F4: 0xA132EC85 ; 07D: IsIncognitoCall
+01F8: 0xA1344F79 ; 07E: Rand
+;1FC: 0x         ; 07F: IsPlayerOn
+
+0200: 0xA0AA76D5 ; 080: ShowCallList(int list, int zero);
+0204: 0xA166AC1C ; 081: HexToDec
+;208: 0x         ; 082: GetCurrentTrackFilename
+020C: 0xA094A914 ; 083: GetPathOfFoundFile
+0210: 0xA122EB64 ; 084: int GetFileStats(const char *cFileName, void * StatBuffer, unsigned int *errornumber);
+0214: 0xA0825D79 ; 085: StrCmpNoCase
+0218: 0xA122D23C ; 086: __arm void EEFullReadBlock(int block, void *buf, int offset, int size, int cepid, int msg);
 021C: 0xA122D380 ; 087: __arm void EEFullWriteBlock(int block, void *buf, int offset, int size, int cepid, int msg);
-;220: 0x   ; f136: GetAccessoryType
-;224: 0x   ; f137: GetLangMesIntoWS
-0228: 0xA122E900   ; 8A: int GetFreeFlexSpace(int DriveNum, unsigned int *ErrorNumber)
-022C: 0xA122EEC4   ; 8B: int GetTotalFlexSpace(int DriveNum, unsigned int *ErrorNumber)(KMZ)
-;
-0230: 0xA093C464   ; 8C: RegExplorerExt(REGEXPLEXT const *)(KMZ)
-;234: 0x   ; f141: 
-0238: 0xA122EAC4   ; 8E: int fmove(const char * SourceFileName, const char * DestFileName, unsigned int *ErrorNumber)(KMZ)
-023C: 0xA122EAFC   ; 8F: int rmdir(const char * cDirectory, unsigned int *ErrorNumber)(KMZ)
+;220: 0x         ; 088: GetAccessoryType
+0224: 0xA1405E97 ; 089: __thumb GetLangMesIntoWS(int lgp_id, WSHDR *ws);
+0228: 0xA122E900 ; 08A: int GetFreeFlexSpace(int DriveNum, unsigned int *ErrorNumber);
+022C: 0xA122EEC4 ; 08B: int GetTotalFlexSpace(int DriveNum, unsigned int *ErrorNumber);
+0230: 0xA093C464 ; 08C: RegExplorerExt(REGEXPLEXT const *);
+;234: 0x         ; 08D: GetProfileName
+0238: 0xA122EAC4 ; 08E: int fmove(const char * SourceFileName, const char * DestFileName, unsigned int *ErrorNumber);
+023C: 0xA122EAFC ; 08F: int rmdir(const char * cDirectory, unsigned int *ErrorNumber);
+
 0240: 0xA122EDA0   ; 90: int truncate(int FileHandler, int length, int *errornumber)(KMZ)
 0244: 0xA122EA64   ; 91: int isdir(const char * cDirectory, unsigned int *ErrorNumber)(KMZ)
 0248: 0xA0C46604   ; 092: int * calloc(size_t nelem, size_t elsize); (kmz)
@@ -758,18 +756,18 @@
 0B78: 0xA0C34873 ; 2DE: __thumb void IllumTimeRequest(int TimeMode, int Counter);
 0B7C: 0xa0c3488f ; 2DF: __thumb void IllumTimeRelease(int TimeMode, int Counter);
 
-;0B80: 0xA0A26A95 ; 2E0: __thumb IMGHDR *GetIMGHDRFromThemeCache(int index);
-0B84: 0xA093c1ac ; 2E1: __arm int GetExtUidByFileName_ws(WSHDR *fn);
+;B80: 0xA0A26A95 ; 2E0: __thumb IMGHDR *GetIMGHDRFromThemeCache(int index);
+0B84: 0xA093C1AC ; 2E1: __arm int GetExtUidByFileName_ws(WSHDR *fn);
 0B88: 0xA0C306F7 ; 2E2: __thumb int wstrcmp(WSHDR *ws1, WSHDR *ws2);
-;0B8C: 0xA05D0EAC ; 2E3: __arm int fexists(WSHDR *FileName);
-;0B90: ; 2E4: __thumb int SettingsAE_Update_ws(WSHDR *, int set, char * entry, char *keyword);
-;0B94: ; 2E5: __thumb int SettingsAE_Read_ws(WSHDR *, int set, char * entry, char *keyword);
-;0B98: ; 2E6: __thumb int SettingsAE_SetFlag(int val, int set, char * entry, char *keyword);
-;0B9C: ; 2E7: __thumb int SettingsAE_GetFlag(int *res, int set, char * entry, char *keyword);
-;0BA0: ; 2E8: __thumb int SettingsAE_Update(int val, int set, char * entry, char *keyword);
-;0BA4: ; 2E9: __thumb int SettingsAE_Read(int *res, int set, char * entry, char *keyword);
-;0BA8: ; 2EA: __thumb void *SettingsAE_GetEntryList(int set);
-;0BAC: ; 2EB: __thumb int SettingsAE_RemoveEntry(int set, char *entry, int flag); 
+0B8C: 0xA094E3B0 ; 2E3: __arm int fexists(WSHDR *FileName);
+;B90:            ; 2E4: __thumb int SettingsAE_Update_ws(WSHDR *, int set, char * entry, char *keyword);
+;B94:            ; 2E5: __thumb int SettingsAE_Read_ws(WSHDR *, int set, char * entry, char *keyword);
+;B98:            ; 2E6: __thumb int SettingsAE_SetFlag(int val, int set, char * entry, char *keyword);
+;B9C:            ; 2E7: __thumb int SettingsAE_GetFlag(int *res, int set, char * entry, char *keyword);
+;BA0:            ; 2E8: __thumb int SettingsAE_Update(int val, int set, char * entry, char *keyword);
+;BA4:            ; 2E9: __thumb int SettingsAE_Read(int *res, int set, char * entry, char *keyword);
+;BA8:            ; 2EA: __thumb void *SettingsAE_GetEntryList(int set);
+;BAC:            ; 2EB: __thumb int SettingsAE_RemoveEntry(int set, char *entry, int flag); 
 0BB0: 0xA12600B8 ; 2EC: __arm int i2c_transfer(I2C_MSG *msg);
 0BB4: 0xA1260104 ; 2ED: __arm int i2c_receive(I2C_MSG *msg);
 
