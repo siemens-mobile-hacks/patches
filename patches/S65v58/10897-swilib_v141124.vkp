@@ -3,7 +3,7 @@
 ;Functions Library
 ;(c) avkiev
 ;(p) dimonp25
-;Version: 111124
+;Version: 141124
 ;PatchID: 10897
 ;Details: https://patches.kibab.com/patches/details.php5?id=10897
 /*
@@ -971,12 +971,15 @@
 0F38: 0xA0C3A565 ; 3CE: __thumb int wstrtolower(WSHDR *ws);
 0F3C: 0xA0C3A641 ; 3CF: __thumb int wstrcapitalize(WSHDR *ws);
 
-;0F40: ; 3D0: __thumb int ShowScreenSaverCodeProtection();
-;0F44: ; 3D1: __arm void MediaProc_LaunchLastPlayback();
-0F48: 0xA16A339b ; 3D2: __thumb int GetScreenSaverType();
-0F4C: 0xA0c34809 ; 3D3: __thumb int IllumFilterSet(int flags, int unk);
-0F50: 0xA1150d6b ; 3D4: __thumb void DrawCroppedIMGHDR(int x, int y, int offset_x, int offset_y, int w, int h, int flags, const IMGHDR *img);
-;0F54: 0x ; 3D5: __arm int BuildPath(WSHDR *ws, const WSHDR *file_name, const WSHDR *dir);
+;F40:            ; 3D0: __thumb int ShowScreenSaverCodeProtection();
+;F44:            ; 3D1: __arm void MediaProc_LaunchLastPlayback();
+0F48: 0xA16A339B ; 3D2: __thumb int GetScreenSaverType();
+0F4C: 0xA0C34809 ; 3D3: __thumb int IllumFilterSet(int flags, int unk);
+0F50: 0xA1150D6B ; 3D4: __thumb void DrawCroppedIMGHDR(int x, int y, int offset_x, int offset_y, int w, int h, int flags, const IMGHDR *img);
+;F54:            ; 3D5: __arm int BuildPath(WSHDR *ws, const WSHDR *file_name, const WSHDR *dir);
+0F58: 0xA0053C00 ; 83D6: RECT *GetHeaderRECT();
+0F5C: 0xA0C27054 ; 83D7: RECT *GetOptionsHeaderRECT();
+0F60: 0xA0A25E74 ; 83D8: RECT *GetInputAreaRECT();
 
 #pragma disable old_equal_ff
 +0
