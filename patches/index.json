@@ -56336,6 +56336,26 @@
 				"ru": "Открыть меню выбора диска по горячей клавише в Card-Explorer",
 				"en": "Open disk selection menu in Card-Explorer by hotkey"
 			}
+		},
+		"10994": {
+			"id": "10994",
+			"model": "S65v58",
+			"file": "S65v58/10994-redisign_surf_and_fun_menu.vkp",
+			"mtime": 1731680448000,
+			"title": {
+				"ru": "Переработка меню 'Интерн./игр'",
+				"en": "Redesign 'Surf & fun' menu"
+			}
+		},
+		"10995": {
+			"id": "10995",
+			"model": "S65v58",
+			"file": "S65v58/10995-disable_draw_weeks_nums_in_calendar.vkp",
+			"mtime": 1731681046000,
+			"title": {
+				"ru": "Отключить отрисовку номеров недель в календаре",
+				"en": "Disable drawing weeks numbers in calendar"
+			}
 		}
 	},
 	"SL65v50": {
