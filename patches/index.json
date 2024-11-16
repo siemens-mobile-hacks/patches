@@ -56373,8 +56373,8 @@
 			"file": "S65v58/10997-disable_wait_in_appointments_tasks.vkp",
 			"mtime": 1731792450000,
 			"title": {
-				"ru": "Отключить 'Подождите' в (Встречи|Задания)->Нов.запись",
-				"en": "Disable 'Please wait' in (Appointments|Tasks)->New entry"
+				"ru": "Отключить 'Подождите' в (Встречи,Задания)-Нов.запись",
+				"en": "Disable 'Please wait' in (Appointments,Tasks)-New entry"
 			}
 		}
 	},
