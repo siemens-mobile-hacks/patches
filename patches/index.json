@@ -56356,6 +56356,16 @@
 				"ru": "Отключить отрисовку номеров недель в календаре",
 				"en": "Disable drawing weeks numbers in calendar"
 			}
+		},
+		"10996": {
+			"id": 10996,
+			"model": "S65v58",
+			"file": "S65v58/10996-disable_please_wait_in_notes.vkp",
+			"mtime": 1731792142000,
+			"title": {
+				"ru": "Отключить 'Подождите' в Заметки->Нов.запись",
+				"en": "Disable 'Please wait' in Notes->New entry"
+			}
 		}
 	},
 	"SL65v50": {
