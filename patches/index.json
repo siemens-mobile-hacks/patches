@@ -56366,6 +56366,16 @@
 				"ru": "Отключить 'Подождите' в Заметки->Нов.запись",
 				"en": "Disable 'Please wait' in Notes->New entry"
 			}
+		},
+		"10997": {
+			"id": 10997,
+			"model": "S65v58",
+			"file": "S65v58/10997-disable_wait_in_appointments_tasks.vkp",
+			"mtime": 1731792450000,
+			"title": {
+				"ru": "Отключить 'Подождите' в (Встречи|Задания)->Нов.запись",
+				"en": "Disable 'Please wait' in (Appointments|Tasks)->New entry"
+			}
 		}
 	},
 	"SL65v50": {
