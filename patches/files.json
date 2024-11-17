@@ -28310,7 +28310,7 @@
 		"S65v58/9903-Memory_Control.zip"
 	],
 	[
-		"S65v58/9904-dh16_s65v58.vkp"
+		"S65v58/9904-draw_hook_v1_9.vkp"
 	],
 	null,
 	[
@@ -31222,7 +31222,7 @@
 		"C72v22/10896-disable_wait_in_card_explorer.vkp"
 	],
 	[
-		"S65v58/10897-swilib_v141124.vkp"
+		"S65v58/10897-swilib_v171124.vkp"
 	],
 	[
 		"C75v24/10898-c75v24_remove_help_inbox_opt.vkp"
@@ -31496,5 +31496,11 @@
 	],
 	[
 		"S65v58/10995-disable_draw_weeks_nums_in_calendar.vkp"
+	],
+	[
+		"S65v58/10996-disable_please_wait_in_notes.vkp"
+	],
+	[
+		"S65v58/10997-disable_wait_in_appointments_tasks.vkp"
 	]
 ]

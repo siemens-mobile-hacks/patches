@@ -3,7 +3,7 @@
 ;Functions Library
 ;(c) avkiev
 ;(p) dimonp25
-;Version: 141124
+;Version: 171124
 ;PatchID: 10897
 ;Details: https://patches.kibab.com/patches/details.php5?id=10897
 /*
@@ -690,37 +690,39 @@
 0A58: 0xA08C97B7   ; 296: void getProfileNameByN(WSHDR *ws, int n, int _0)
 0A70: 0xA868A8E5   ; 829C: char *RamInputLanguage()
 
-;0A84: 0x ; 2A1: 
-;0A88: 0x ; 2A2:
-;0A8C: 0xA0953319 ; 2A3: __thumb void UpdateMenuCursorItem(void *gui, int n);
-;0A90: 0xA0950125 ; 2A4: __thumb void *GetMenuGUI(void *malloc_adr, void *mfree_adr); 
-;0A94: 0xA0957479 ; 2A5: __thumb void *GetMultiLinesMenuGUI(void *malloc_adr, void *mfree_adr); 
-;0A98: 0xA094F739 ; 2A6: __thumb void SetHeaderToMenu(void *gui, const HEADER_DESC *hdr, void *malloc_adr); 
-;0A9C: 0xA09540DB ; 2A7: __thumb void SetMenuToGUI(void *gui, const void *menu_desc);
-;0AA0: 0xA ; 2A8: __thumb int GetMenuItemCount(void *gui);
-0AA4: 0xA1143ccf ; 2A9: __thumb int CreatePopupGUI(int flag, void *user_pointer, const POPUP_DESC *, int lgp_msg);
-0AA8: 0xA1143c41 ; 2AA: __thumb int CreatePopupGUI_ws(int flag, void *user_pointer, const POPUP_DESC *, WSHDR *msg);
-0AAC: 0xA115dadd ; 2AB: __thumb void *GetPopupUserPointer(void *gui);
-;0AB0: 0xA0B57217 ; 2AC: __thumb int DeleteSMS(int index, int _1);
-;0AB4: 0xA0B575C5 ; 2AD: __thumb int SetSmsStatus(int index, int type);
-;0AB8: 0xA0954E3D ; 2AE: __unknown void *GetHeaderPointer(void *gui);
-;0ABC: 0xA0A2819D ; 2AF: __thumb void SetHeaderText(void *hdr_pointer, WSHDR *txt, void *malloc_adr, void *mfree_adr);
-;0AC0: 0xA0956031 ; 2B0: __thumb void SetMenuSoftKey(void *gui, const SOFTKEY_DESC *,int n);
-;0AC4: 0xA8EB9A84 ; 82B1: __arm SMS_DATA_ROOT *SmsDataRoot(); 
-;0AC8: 0xA0D35895 ; 2B2: __thumb int GetSmsPosIndex(SMS_POS_INDEX_DATA *buf, int data_id);
-;0ACC: 0xA05FEB9D ; 2B3: __thumb NativeAbData *AllocNativeAbData(void);
-;0AD0: 0xA05FEC45 ; 2B4: __thumb int FreeNativeAbData(NativeAbData *ab_data);
-;0AD4: 0xA05FEDF7 ; 2B5: __thumb int GetNativeAbDataType(NativeAbData *nab, int unk0);
-;0AD8: 0xA05FF207 ; 2B6: __thumb WSHDR *GetNumFromNativeAbData(NativeAbData *nab, int type, int unk0);
-;0ADC: 0xA05FEE0B ; 2B7: __thumb int GetNativeAbDataStatus(NativeAbData *nab, int _0);
-;0AE0: 0xA05FF37D ; 2B8: __thumb int SetNumToNativeAbData(NativeAbData *abd, int unk, WSHDR *num);
-;0AE4: 0xA06D62FB ; 2B9: __thumb unsigned int OpenNativeAddressbook(int type, int unk1, int unk2, void *data);
-0AE8: 0xA115fa07 ; 2BA: __thumb void SetHeaderIcon(void *hdr_pointer, const int *icon, void *malloc_adr, void *mfree_adr);
-;0AEC: 0xA0A251B7 ; 2BB: __arm void *GetTabGUI(void *malloc_adr, void *mfree_adr);
-0AF0: 0xa115babb ; 2BC: __arm void SetGUIDefinition(void *gui, const void *definition);
-;0AF4: 0xA0A2566B ; 2BD: __arm int SetGUIToTabGUI(void *tabgui, int n, const int *tabicons, void *gui);
-;0AF8: 0xA0A25787 ; 2BE: __arm int SetCursorTab(void *tab_gui, int n);
-;0AFC: 0xA0A258E9 ; 2BF: __arm int UpdateTab1stItem(void *tab_gui, int unk_0);
+;A80:            ; 2A0:
+;A84:            ; 2A1: 
+;A88:            ; 2A2:
+0A8C: 0xA1147752 ; 2A3: __thumb void UpdateMenuCursorItem(void *gui, int n);
+0A90: 0xA1144DB7 ; 2A4: __thumb void *GetMenuGUI(void *malloc_adr, void *mfree_adr);
+0A94: 0xA1181935 ; 2A5: __thumb void *GetMultiLinesMenuGUI(void *malloc_adr, void *mfree_adr);
+0A98: 0xA1695F95 ; 2A6: __thumb void SetHeaderToMenu(void *gui, const HEADER_DESC *hdr, void *malloc_adr);
+0A9C: 0xA1148349 ; 2A7: __thumb void SetMenuToGUI(void *gui, const void *menu_desc);
+0AA0: 0xA1145987 ; 2A8: __thumb int GetMenuItemCount(void *gui);
+0AA4: 0xA1143CCF ; 2A9: __thumb int CreatePopupGUI(int flag, void *user_pointer, const POPUP_DESC *, int lgp_msg);
+0AA8: 0xA1143C41 ; 2AA: __thumb int CreatePopupGUI_ws(int flag, void *user_pointer, const POPUP_DESC *, WSHDR *msg);
+0AAC: 0xA115DADD ; 2AB: __thumb void *GetPopupUserPointer(void *gui);
+;AB0:            ; 2AC: __thumb int DeleteSMS(int index, int _1);
+;AB4:            ; 2AD: __thumb int SetSmsStatus(int index, int type);
+0AB8: 0xA1148DA7 ; 2AE: __unknown void *GetHeaderPointer(void *gui);
+0ABC: 0xA115F74D ; 2AF: __thumb void SetHeaderText(void *hdr_pointer, WSHDR *txt, void *malloc_adr, void *mfree_adr);
+
+0AC0: 0xA1149683 ; 2B0: __thumb void SetMenuSoftKey(void *gui, const SOFTKEY_DESC *,int n);
+;AC4:            ; 82B1: __arm SMS_DATA_ROOT *SmsDataRoot(); 
+;AC8:            ; 2B2: __thumb int GetSmsPosIndex(SMS_POS_INDEX_DATA *buf, int data_id);
+;ACC:            ; 2B3: __thumb NativeAbData *AllocNativeAbData(void);
+;AD0:            ; 2B4: __thumb int FreeNativeAbData(NativeAbData *ab_data);
+;AD4:            ; 2B5: __thumb int GetNativeAbDataType(NativeAbData *nab, int unk0);
+;AD8:            ; 2B6: __thumb WSHDR *GetNumFromNativeAbData(NativeAbData *nab, int type, int unk0);
+;ADC:            ; 2B7: __thumb int GetNativeAbDataStatus(NativeAbData *nab, int _0);
+;AE0:            ; 2B8: __thumb int SetNumToNativeAbData(NativeAbData *abd, int unk, WSHDR *num);
+;AE4:            ; 2B9: __thumb unsigned int OpenNativeAddressbook(int type, int unk1, int unk2, void *data);
+0AE8: 0xA115FA07 ; 2BA: __thumb void SetHeaderIcon(void *hdr_pointer, const int *icon, void *malloc_adr, void *mfree_adr);
+;AEC:            ; 2BB: __arm void *GetTabGUI(void *malloc_adr, void *mfree_adr);
+0AF0: 0xA115BABB ; 2BC: __arm void SetGUIDefinition(void *gui, const void *definition);
+;AF4:            ; 2BD: __arm int SetGUIToTabGUI(void *tabgui, int n, const int *tabicons, void *gui);
+;AF8:            ; 2BE: __arm int SetCursorTab(void *tab_gui, int n);
+;AFC:            ; 2BF: __arm int UpdateTab1stItem(void *tab_gui, int unk_0);
 
 ;0B00: 0xA0A257A5 ; 2C0: __arm int GetCursorTab(void *tab_gui);
 ;0B04: 0xA0A25221 ; 2C1: __arm void *GetGuiByTab(void *tab_gui, int n);
@@ -739,22 +741,22 @@
 0B38: 0xA082b961 ; 2CE: int CmpDates(TDate *date1, TDate *date2);
 0B3C: 0xA0825671 ; 2CF: int CmpTimes(TTime *time1, TTime *time2);
 
-0B40: 0xA08256c1 ; 2D0: int GetDaysFromMonth(TDate *date);
-0B44: 0xa08256a1 ; 2D1: int IsLeapYear(TDate *date);
-0B48: 0xa0b6df5b ;  2D2: __thumb StartNativeBrowserCore();
-;0B4C: 0x ; 2D3: int GetFilledNAbDataCount(NativeAbData *nab);
-;0B50: 0x ; 2D4: void *GetDataFromNAbData(NativeAbData *nab, int n);
-0B54: 0xA0c523e5 ; 2D5: void UnpackNumPkt(PKT_NUM *pkt, char *buf, int maxlen);
-0B58: 0xA115e6fb ; 2D6: void *TViewGetGUI(void *malloc_adr, void *mfree_adr);
-0B5C: 0xA115ecad ; 2D7: void TViewSetDefinition(void *gui, const TVIEW_DESC *);
-0B60: 0xA115ec37 ; 2D8: void TViewSetText(void *gui, WSHDR *text, void *malloc_adr, void *mfree_adr);
-;0B64: 0xA095840B ; 2D9: void TViewSetUserPointer(void *gui,void *user_pointer);
-;0B68: 0xA0958411 ; 2DA: void *TViewGetUserPointer(void *gui);
-0B6C: 0xA09bfc40 ; 2DB: void MediaSendCSM_Open(WSHDR *file, WSHDR *path);
-;0B70: 0xA08CCD05 ; 2DC: __thumb void SaveMaxIllumination(int level);
-;0B74: 0xA08CCD2D ; 2DD: __thumb void SetIlluminationoffTimeout(int time_sec);
+0B40: 0xA08256C1 ; 2D0: int GetDaysFromMonth(TDate *date);
+0B44: 0xA08256A1 ; 2D1: int IsLeapYear(TDate *date);
+0B48: 0xA0B6DF5B ;  2D2: __thumb StartNativeBrowserCore();
+;B4C:            ; 2D3: int GetFilledNAbDataCount(NativeAbData *nab);
+;B50:            ; 2D4: void *GetDataFromNAbData(NativeAbData *nab, int n);
+0B54: 0xA0C523E5 ; 2D5: void UnpackNumPkt(PKT_NUM *pkt, char *buf, int maxlen);
+0B58: 0xA115E6FB ; 2D6: void *TViewGetGUI(void *malloc_adr, void *mfree_adr);
+0B5C: 0xA115ECAD ; 2D7: void TViewSetDefinition(void *gui, const TVIEW_DESC *);
+0B60: 0xA115EC37 ; 2D8: void TViewSetText(void *gui, WSHDR *text, void *malloc_adr, void *mfree_adr);
+0B64: 0xA115ECD5 ; 2D9: void TViewSetUserPointer(void *gui,void *user_pointer);
+0B68: 0xA115ECD9 ; 2DA: void *TViewGetUserPointer(void *gui);
+0B6C: 0xA09BFC40 ; 2DB: void MediaSendCSM_Open(WSHDR *file, WSHDR *path);
+;B70:            ; 2DC: __thumb void SaveMaxIllumination(int level);
+;B74:            ; 2DD: __thumb void SetIlluminationoffTimeout(int time_sec);
 0B78: 0xA0C34873 ; 2DE: __thumb void IllumTimeRequest(int TimeMode, int Counter);
-0B7C: 0xa0c3488f ; 2DF: __thumb void IllumTimeRelease(int TimeMode, int Counter);
+0B7C: 0xA0C3488F ; 2DF: __thumb void IllumTimeRelease(int TimeMode, int Counter);
 
 ;B80: 0xA0A26A95 ; 2E0: __thumb IMGHDR *GetIMGHDRFromThemeCache(int index);
 0B84: 0xA093C1AC ; 2E1: __arm int GetExtUidByFileName_ws(WSHDR *fn);
@@ -949,24 +951,24 @@
 ;EB8:            ; 3AE
 ;EBC:            ; 3AF
 
-;0EC8: 0x ; 3B2: __arm WSHDR *GetLastAudioTrackDir();
-;0ECC: 0x ; 3B3: __thumb IMGHDR *GetIMGHDRFromCanvasCache(unsigned int CanvasID);
-0ED0: 0xA0c37b9b ; 3B4: __thumb GetDate_ws(WSHDR *ws, const TDate *date, unsigned int unk);
-0ED4: 0xA0c37a5b ; 3B5: __thumb GetTime_ws(WSHDR *ws, const TTime *time, unsigned int unk);
+;EC8:            ; 3B2: __arm WSHDR *GetLastAudioTrackDir();
+;ECC:            ; 3B3: __thumb IMGHDR *GetIMGHDRFromCanvasCache(unsigned int CanvasID);
+0ED0: 0xA0C37B9B ; 3B4: __thumb GetDate_ws(WSHDR *ws, const TDate *date, unsigned int unk);
+0ED4: 0xA0C37A5B ; 3B5: __thumb GetTime_ws(WSHDR *ws, const TTime *time, unsigned int unk);
 0ED8: 0xA0972764 ; 3B6: __arm int Obs_SetTransparent(HObj obs, unsigned int unk_3_4_5);
-;0F00: 0x ; 3C0: __thumb int ShowWaitBox(int flags, int message);
-;0F04: 0x ; 3C1: __thumb int ShowPleaseWaitBox(int flags);
-;0F08: 0x ; 3C2: __thumb int ShowPBarBox(int flags, int message, PBAR_DESC *pbar_desc, int initial_value, WSHDR *initial_ws);
-;0F0C: 0x ; 3C3: __thumb int SetPBarValue(int gui_id, int value);
-;0F10: 0x ; 3C4: __thumb int SetPBarText(int gui_id, WSHDR *ws);
-;0F14: 0x ; 83C5: void *GetPBarProc3();
-0F18: 0xA115fb61 ; 3C6: __thumb void SetHeaderScrollText(void *header, const WSHDR *title, const void *malloc_fn, const void *mfree_fn);
-0F1C: 0xA115f7d9 ; 3C7: __thumb void SetHeaderExtraText(void *header, const WSHDR *ws, const void *malloc_fn, const void *mfree_fn);
-0F20: 0xA11431cf ; 3C8: __arm int GetMimeType(int uid, WSHDR *mime_type, int unk_0);
-;0F24: 0x ; 3C9: __thumb int wstrncmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
-;0F28: 0x ; 3CA: __thumb int wstricmp(const WSHDR *ws1, const WSHDR *ws2);
-;0F2C: 0x ; 3CB: __thumb int wstrnicmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
-;0F30: ; 3CC: __arm int PersMenuCSM_Open(const WSHDR *file_name, const WSHDR *dir, int flag, int open_mode);
+0F00: 0xA11442D5 ; 3C0: __thumb int ShowWaitBox(int flags, int message);
+0F04: 0xA114430D ; 3C1: __thumb int ShowPleaseWaitBox(int flags);
+;F08:            ; 3C2: __thumb int ShowPBarBox(int flags, int message, PBAR_DESC *pbar_desc, int initial_value, WSHDR *initial_ws);
+;F0C:            ; 3C3: __thumb int SetPBarValue(int gui_id, int value);
+;F10:            ; 3C4: __thumb int SetPBarText(int gui_id, WSHDR *ws);
+;F14:            ; 83C5: void *GetPBarProc3();
+0F18: 0xA115FB61 ; 3C6: __thumb void SetHeaderScrollText(void *header, const WSHDR *title, const void *malloc_fn, const void *mfree_fn);
+0F1C: 0xA115F7D9 ; 3C7: __thumb void SetHeaderExtraText(void *header, const WSHDR *ws, const void *malloc_fn, const void *mfree_fn);
+0F20: 0xA11431CF ; 3C8: __arm int GetMimeType(int uid, WSHDR *mime_type, int unk_0);
+;F24:            ; 3C9: __thumb int wstrncmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
+;F28:            ; 3CA: __thumb int wstricmp(const WSHDR *ws1, const WSHDR *ws2);
+;F2C:            ; 3CB: __thumb int wstrnicmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
+;F30:            ; 3CC: __arm int PersMenuCSM_Open(const WSHDR *file_name, const WSHDR *dir, int flag, int open_mode);
 0F34: 0xA0C3A4A3 ; 3CD: __thumb int wstrtoupper(WSHDR *ws);
 0F38: 0xA0C3A565 ; 3CE: __thumb int wstrtolower(WSHDR *ws);
 0F3C: 0xA0C3A641 ; 3CF: __thumb int wstrcapitalize(WSHDR *ws);
@@ -979,7 +981,8 @@
 ;F54:            ; 3D5: __arm int BuildPath(WSHDR *ws, const WSHDR *file_name, const WSHDR *dir);
 0F58: 0xA0053C00 ; 83D6: RECT *GetHeaderRECT();
 0F5C: 0xA0C27054 ; 83D7: RECT *GetOptionsHeaderRECT();
-0F60: 0xA0A25E74 ; 83D8: RECT *GetInputAreaRECT();
+0F60: 0xA0A25E74 ; 83D8: RECT *GetMainAreaRECT();
+0F64: 0xA11599B3 ; 3D9: __thumb int GetPITSize();
 
 #pragma disable old_equal_ff
 +0

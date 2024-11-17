@@ -1,0 +1,16 @@
+;S65v58
+;Отключить 'Подождите' в Заметки->Нов.запись
+;Disable 'Please wait' in Notes->New entry
+;(c) FIL
+;(r) Evgr
+;Version: 
+;PatchID: 10996
+;Details: https://patches.kibab.com/patches/details.php5?id=10996
+/*
+
+*/
+
+0AA49F6: 83F6CAED 0020C046
+
+;------------------------- end -------------------------
+

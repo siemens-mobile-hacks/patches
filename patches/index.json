@@ -55716,11 +55716,11 @@
 		"9904": {
 			"id": "9904",
 			"model": "S65v58",
-			"file": "S65v58/9904-dh16_s65v58.vkp",
-			"mtime": 1277858618000,
+			"file": "S65v58/9904-draw_hook_v1_9.vkp",
+			"mtime": 1731768648000,
 			"title": {
-				"ru": "DrawHook",
-				"en": "DrawHook"
+				"ru": "Draw Hook",
+				"en": "Draw Hook"
 			}
 		},
 		"9906": {
@@ -56110,8 +56110,8 @@
 		"10897": {
 			"id": "10897",
 			"model": "S65v58",
-			"file": "S65v58/10897-swilib_v141124.vkp",
-			"mtime": 1731590442000,
+			"file": "S65v58/10897-swilib_v171124.vkp",
+			"mtime": 1731790910000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -56355,6 +56355,26 @@
 			"title": {
 				"ru": "Отключить отрисовку номеров недель в календаре",
 				"en": "Disable drawing weeks numbers in calendar"
+			}
+		},
+		"10996": {
+			"id": "10996",
+			"model": "S65v58",
+			"file": "S65v58/10996-disable_please_wait_in_notes.vkp",
+			"mtime": 1731792142000,
+			"title": {
+				"ru": "Отключить 'Подождите' в Заметки->Нов.запись",
+				"en": "Disable 'Please wait' in Notes->New entry"
+			}
+		},
+		"10997": {
+			"id": "10997",
+			"model": "S65v58",
+			"file": "S65v58/10997-disable_wait_in_appointments_tasks.vkp",
+			"mtime": 1731792450000,
+			"title": {
+				"ru": "Отключить 'Подождите' в (Встречи|Задания)->Нов.запись",
+				"en": "Disable 'Please wait' in (Appointments|Tasks)->New entry"
 			}
 		}
 	},
