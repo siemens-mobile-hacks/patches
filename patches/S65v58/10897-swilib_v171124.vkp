@@ -84,23 +84,24 @@
 0F4: 0xA0A47F21   ; 061: editOrNewTXTModule
 0F8: 0xA0B356E9   ; 062: LoadProcesses
 0FC: 0xA1151819   ; 063: GetPaletteAdrByColorIndex
-100: 0xA08DA3DF   ; 064: GetVibraStatus
-104: 0xA0B9026B   ; 065: GetProvider
-108: 0xA16A3271   ; 066: IsScreenSaver
-010C: 0xA1158B87  ; 43: IsUnlocked(KMZ)
-110: 0xA0C571B1   ; 068: TempLigntOn
-114: 0xA09818F8   ; 069: GetWavLen
-;
-118: 0xA16A279D   ; 070: HasNewSMS
-11C: 0xA16A195D   ; 071: HasFlashSMS
-120: 0xA0A49FB7   ; 072: ReadNewSMS
-124: 0xA169E64E   ; 073: ReadFlashSMS
-0128: 0xA096137C  ; 04A: __arm void PlayFile(int _C,WSHDR* folder,WSHDR* filename,int cepid, int _167); (kmz)
-12C: 0xA0C7E9F4   ; 075: StartMidlet
-130: 0xA0B8DE75   ; 076: GetMissedCallsCount
-0134: 0xA0828294  ; 4D: GBS_StartTimerProc(void *htimer, long ms, void ptr())
+
+0100: 0xA08DA3DF ; 040: GetVibraStatus
+0104: 0xA0B9026B ; 041: GetProvider
+0108: 0xA16A3271 ; 042: IsScreenSaver
+010C: 0xA1158B87 ; 043: IsUnlocked
+0110: 0xA0C34765 ; 044: __thumb void TempLigntOn(int flags, int unk);
+0114: 0xA09818F8 ; 045: GetWavLen;
+0118: 0xA16A279D ; 046: HasNewSMS
+011C: 0xA16A195D ; 047: HasFlashSMS
+0120: 0xA0A49FB7 ; 048: ReadNewSMS
+0124: 0xA169E64E ; 049: ReadFlashSMS
+0128: 0xA096137C ; 04A: __arm void PlayFile(int _C,WSHDR* folder,WSHDR* filename,int cepid, int _167);
+012C: 0xA0C7E9F4 ; 04B: StartMidlet
+0130: 0xA0B8DE75 ; 04C: GetMissedCallsCount
+0134: 0xA0828294 ; 04D: GBS_StartTimerProc(void *htimer, long ms, void ptr());
 0138: 0xA1143E7F ; 04E: __thumb int MsgBoxError(int flag, int LgpId);
 013C: 0xA1143EDD ; 04F: __thumb int MsgBoxYesNo(int flag, int LgpID, void CallBackProc(int));
+
 0140: 0xA1143EE7 ; 050: __thumb int MsgBoxOkCancel(int flag, int LgpID, void CallBackProc(int));
 144: 0xA136D5B5   ; 081: GetNetAccessMode
 148: 0xA1241448   ; 082: GetIlluminationDataTable
