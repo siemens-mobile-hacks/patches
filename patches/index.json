@@ -56386,6 +56386,16 @@
 				"ru": "Отключить 'Подождите' в (Встречи,Задания)-Нов.запись",
 				"en": "Disable 'Please wait' in (Appointments,Tasks)-New entry"
 			}
+		},
+		"10999": {
+			"id": 10999,
+			"model": "S65v58",
+			"file": "S65v58/10999-using_elfs_screensavers_v2_0.vkp",
+			"mtime": 1731862740000,
+			"title": {
+				"ru": "Использование эльфов-скринсейверов",
+				"en": "Using ELFs screensavers"
+			}
 		}
 	},
 	"SL65v50": {
