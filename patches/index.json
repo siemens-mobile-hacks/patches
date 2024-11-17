@@ -56361,10 +56361,10 @@
 			"id": 10996,
 			"model": "S65v58",
 			"file": "S65v58/10996-disable_please_wait_in_notes.vkp",
-			"mtime": 1731792142000,
+			"mtime": 1731815810000,
 			"title": {
-				"ru": "Отключить 'Подождите' в Заметки->Нов.запись",
-				"en": "Disable 'Please wait' in Notes->New entry"
+				"ru": "Отключить 'Подождите' в Заметки-Нов.запись",
+				"en": "Disable 'Please wait' in Notes-New entry"
 			}
 		},
 		"10997": {
