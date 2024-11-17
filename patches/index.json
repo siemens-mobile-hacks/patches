@@ -19324,6 +19324,16 @@
 				"ru": "Позиционирование элементов основного меню",
 				"en": "Positioning of MainMenu elements"
 			}
+		},
+		"11000": {
+			"id": 11000,
+			"model": "S75v52",
+			"file": "S75v52/11000-AccelerationMenu.vkp",
+			"mtime": 1731875674000,
+			"title": {
+				"ru": "Ускорение Меню",
+				"en": "Acceleration Menu"
+			}
 		}
 	},
 	"SL75v31": {
