@@ -19314,6 +19314,16 @@
 				"ru": "Ускорить прокручивание меню",
 				"en": "Speed up menu scrolling"
 			}
+		},
+		"10998": {
+			"id": 10998,
+			"model": "S75v52",
+			"file": "S75v52/10998-MainMenuPosition.vkp",
+			"mtime": 1731859326000,
+			"title": {
+				"ru": "Позиционирование элементов основного меню",
+				"en": "Positioning of MainMenu elements"
+			}
 		}
 	},
 	"SL75v31": {
