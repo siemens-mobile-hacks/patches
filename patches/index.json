@@ -67516,6 +67516,16 @@
 				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
 				"en": "Don't stop media player playback when minimized"
 			}
+		},
+		"11006": {
+			"id": 11006,
+			"model": "CX70v56",
+			"file": "CX70v56/11006-fade_light_off_faster.vkp",
+			"mtime": 1731947048000,
+			"title": {
+				"ru": "Ускоренное гашение подсветки",
+				"en": "Fade light off faster"
+			}
 		}
 	},
 	"C55v24": {
