@@ -56416,6 +56416,16 @@
 				"ru": "Позиционирование элементов основного меню",
 				"en": "Positioning of MainMenu elements"
 			}
+		},
+		"11003": {
+			"id": 11003,
+			"model": "S65v58",
+			"file": "S65v58/11003-fade_light_off_faster.vkp",
+			"mtime": 1731938278000,
+			"title": {
+				"ru": "Ускоренное гашение подсветки",
+				"en": "Fade light off faster"
+			}
 		}
 	},
 	"SL65v50": {
