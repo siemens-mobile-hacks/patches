@@ -1,0 +1,46 @@
+;S65v58
+;Использование эльфов-скринсейверов
+;Using ELFs screensavers
+;(c) FIL
+;Version: 2.0
+;PatchID: 10999
+;Details: https://patches.kibab.com/patches/details.php5?id=10999
+/*
+Патч для замены стандартных скринсейверов телефона на скринсейверы-эльфы.
+Посмотреть реализацию эльфа-скринсейвера можно тут: [url]https://github.com/siemens-mobile-hacks/sie_crazy_saver[/url].
+Патч полностью переписан для совместимости с SGold!
+*/
+
+#pragma enable old_equal_ff
+; .rodata
+17200A0: 454C4600
+
+; .CreateGUI
+17200C0: 70B5084B05009847074B04009847042805D12B0005490648064D2200A847200070BDC046614714A19B336AA1FA03000009420000047B82A0
+#pragma disable old_equal_ff
+
+; .CreateGUI_Jump
+16A2B3C: 12F042EC 7DF0C0FA
+
+; .FixR1_1
+16A2934: 0321 0121
+
+; .FixR1_2
+16A295E: 0321 0121
+
+; .OnRedraw_Addr
+16BA1A0: 00000000 010172A1
+
+#pragma enable old_equal_ff
+; .OnRedraw
+1720100: 30B5094D85B00120A84704000120A8470194AF23054C83220290002001000090A04705B030BDC046191815A117F414A1
+
+; .GetLangMessageIntoWS
+1720140: 064A0B0010B5904205D118000449054B0322984710BD044B9847FBE755030000A00072A130E022A1975E40A1
+#pragma disable old_equal_ff
+
+; .GetLangMessageIntoWS_Jump
+16A8264: 5DF517FE 77F06CFF
+
+;------------------------- end -------------------------
+

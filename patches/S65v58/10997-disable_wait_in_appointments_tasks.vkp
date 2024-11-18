@@ -1,6 +1,6 @@
 ;S65v58
-;Отключить 'Подождите' в (Встречи|Задания)->Нов.запись
-;Disable 'Please wait' in (Appointments|Tasks)->New entry
+;Отключить 'Подождите' в (Встречи,Задания)-Нов.запись
+;Disable 'Please wait' in (Appointments,Tasks)-New entry
 ;(c) FIL
 ;(r) Evgr
 ;Version: 

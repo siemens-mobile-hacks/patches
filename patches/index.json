@@ -19314,6 +19314,26 @@
 				"ru": "Ускорить прокручивание меню",
 				"en": "Speed up menu scrolling"
 			}
+		},
+		"10998": {
+			"id": "10998",
+			"model": "S75v52",
+			"file": "S75v52/10998-MainMenuPosition.vkp",
+			"mtime": 1731859326000,
+			"title": {
+				"ru": "Позиционирование элементов основного меню",
+				"en": "Positioning of MainMenu elements"
+			}
+		},
+		"11000": {
+			"id": "11000",
+			"model": "S75v52",
+			"file": "S75v52/11000-AccelerationMenu.vkp",
+			"mtime": 1731875674000,
+			"title": {
+				"ru": "Ускорение Меню",
+				"en": "Acceleration Menu"
+			}
 		}
 	},
 	"SL75v31": {
@@ -56111,7 +56131,7 @@
 			"id": "10897",
 			"model": "S65v58",
 			"file": "S65v58/10897-swilib_v171124.vkp",
-			"mtime": 1731790910000,
+			"mtime": 1731852764000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -56361,10 +56381,10 @@
 			"id": "10996",
 			"model": "S65v58",
 			"file": "S65v58/10996-disable_please_wait_in_notes.vkp",
-			"mtime": 1731792142000,
+			"mtime": 1731815810000,
 			"title": {
-				"ru": "Отключить 'Подождите' в Заметки->Нов.запись",
-				"en": "Disable 'Please wait' in Notes->New entry"
+				"ru": "Отключить 'Подождите' в Заметки-Нов.запись",
+				"en": "Disable 'Please wait' in Notes-New entry"
 			}
 		},
 		"10997": {
@@ -56373,8 +56393,18 @@
 			"file": "S65v58/10997-disable_wait_in_appointments_tasks.vkp",
 			"mtime": 1731792450000,
 			"title": {
-				"ru": "Отключить 'Подождите' в (Встречи|Задания)->Нов.запись",
-				"en": "Disable 'Please wait' in (Appointments|Tasks)->New entry"
+				"ru": "Отключить 'Подождите' в (Встречи,Задания)-Нов.запись",
+				"en": "Disable 'Please wait' in (Appointments,Tasks)-New entry"
+			}
+		},
+		"10999": {
+			"id": "10999",
+			"model": "S65v58",
+			"file": "S65v58/10999-using_elfs_screensavers_v2_0.vkp",
+			"mtime": 1731862740000,
+			"title": {
+				"ru": "Использование эльфов-скринсейверов",
+				"en": "Using ELFs screensavers"
 			}
 		}
 	},
