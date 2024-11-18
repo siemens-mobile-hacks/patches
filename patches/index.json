@@ -56436,6 +56436,16 @@
 				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
 				"en": "Don't stop media player playback when minimized"
 			}
+		},
+		"11007": {
+			"id": 11007,
+			"model": "S65v58",
+			"file": "S65v58/11007-AccelerationMenu.vkp",
+			"mtime": 1731954730000,
+			"title": {
+				"ru": "Ускорение Меню",
+				"en": "Acceleration Menu"
+			}
 		}
 	},
 	"SL65v50": {
