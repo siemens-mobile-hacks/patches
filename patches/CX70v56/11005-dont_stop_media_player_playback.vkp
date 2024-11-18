@@ -1,0 +1,16 @@
+;CX70v56
+;Не останавливать воспроизведение медиаплеера после сворачивания
+;Don't stop media player playback when minimized
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 11005
+;Details: https://patches.kibab.com/patches/details.php5?id=11005
+/*
+
+*/
+
+0996B8C: 0C0090E5 0000A0E3
+0996B90: 1210A0E3 0000A0E3
+;------------------------- end -------------------------
+

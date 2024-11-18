@@ -67506,6 +67506,16 @@
 				"ru": "Изменить сканкод клавиши 'Интернет'",
 				"en": "Change scancode of 'Internet' key"
 			}
+		},
+		"11005": {
+			"id": 11005,
+			"model": "CX70v56",
+			"file": "CX70v56/11005-dont_stop_media_player_playback.vkp",
+			"mtime": 1731946948000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
+			}
 		}
 	},
 	"C55v24": {
