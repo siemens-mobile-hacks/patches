@@ -1,0 +1,16 @@
+;S65v58
+;Не останавливать воспроизведение медиаплеера после сворачивания
+;Don't stop media player playback when minimized
+;(c) FIL
+;Version: 
+;PatchID: 11004
+;Details: https://patches.kibab.com/patches/details.php5?id=11004
+/*
+
+*/
+
+098FAF8: 0C0090E5 0000A0E3
+098FAFC: 1210A0E3 0000A0E3
+
+;------------------------- end -------------------------
+

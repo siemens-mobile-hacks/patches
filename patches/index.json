@@ -56426,6 +56426,16 @@
 				"ru": "Ускоренное гашение подсветки",
 				"en": "Fade light off faster"
 			}
+		},
+		"11004": {
+			"id": 11004,
+			"model": "S65v58",
+			"file": "S65v58/11004-dont_stop_media_player_playback.vkp",
+			"mtime": 1731945962000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
+			}
 		}
 	},
 	"SL65v50": {
