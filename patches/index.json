@@ -94245,6 +94245,16 @@
 				"ru": "Не менять левый софткей на ГЭ если нет сети",
 				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
+		},
+		"11002": {
+			"id": 11002,
+			"model": "E71v45",
+			"file": "E71v45/11002-AccelerationMenu.vkp",
+			"mtime": 1731932322000,
+			"title": {
+				"ru": "Ускорение Меню",
+				"en": "Acceleration Menu"
+			}
 		}
 	},
 	"C81v51": {
