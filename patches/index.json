@@ -55329,11 +55329,11 @@
 		"9093": {
 			"id": 9093,
 			"model": "S65v58",
-			"file": "S65v58/9093-Smooth_keypad_light.vkp",
-			"mtime": 1224788102000,
+			"file": "S65v58/9093-smooth_keypad_light_on.vkp",
+			"mtime": 1731938230000,
 			"title": {
 				"ru": "Плавное включение подсветки",
-				"en": "Smooth keypad light"
+				"en": "Smooth keypad light on"
 			}
 		},
 		"9094": {

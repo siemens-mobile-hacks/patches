@@ -1,6 +1,6 @@
 ;S65v58
 ;Плавное включение подсветки
-;Smooth keypad light
+;Smooth keypad light on
 ;(c) SiNgle
 ;Version: 
 ;PatchID: 9093
@@ -9,6 +9,6 @@
 
 */
 
-0C571BA: 0022 664A
+0C571BA: 0022 FF22
 ;------------------------- end -------------------------
 
