@@ -56406,6 +56406,16 @@
 				"ru": "Использование эльфов-скринсейверов",
 				"en": "Using ELFs screensavers"
 			}
+		},
+		"11001": {
+			"id": 11001,
+			"model": "S65v58",
+			"file": "S65v58/11001-MainMenuPosition_s65.vkp",
+			"mtime": 1731928062000,
+			"title": {
+				"ru": "Позиционирование элементов основного меню",
+				"en": "Positioning of MainMenu elements"
+			}
 		}
 	},
 	"SL65v50": {
