@@ -67546,6 +67546,16 @@
 				"ru": "Ускоренное гашение подсветки",
 				"en": "Fade light off faster"
 			}
+		},
+		"11009": {
+			"id": 11009,
+			"model": "CX70v56",
+			"file": "CX70v56/11009-dont_lock_vibra.vkp",
+			"mtime": 1732019496000,
+			"title": {
+				"ru": "Не блокировать вибрацию при подключении аксессуаров",
+				"en": "Don't lock vibra when accessories are connected"
+			}
 		}
 	},
 	"C55v24": {
