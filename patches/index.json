@@ -56446,6 +56446,16 @@
 				"ru": "Ускорение Меню",
 				"en": "Acceleration Menu"
 			}
+		},
+		"11008": {
+			"id": 11008,
+			"model": "S65v58",
+			"file": "S65v58/11008-dont_lock_vibra.vkp",
+			"mtime": 1732019344000,
+			"title": {
+				"ru": "Не блокировать вибрацию при подключении аксессуаров",
+				"en": "Don't lock vibra when accessories are connected"
+			}
 		}
 	},
 	"SL65v50": {
