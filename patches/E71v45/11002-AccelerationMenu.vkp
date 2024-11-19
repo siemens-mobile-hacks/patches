@@ -1,15 +1,16 @@
-;S75v52
+;E71v45
 ;Ускорение Меню
 ;Acceleration Menu
 ;(c) Feyman
+;(p) Виктор89
 ;Version: 1.1
-;PatchID: 11000
-;Details: https://patches.kibab.com/patches/details.php5?id=11000
+;PatchID: 11002
+;Details: https://patches.kibab.com/patches/details.php5?id=11002
 /*
 Уменьшаем тайминги шастанья по менюшкам
 */
 
-0C00764: D007 0004
-0C00768: 2C01 D000
+0C36418: D007 0004
+0C3641C: 2C01 D000
 ;------------------------- end -------------------------
 

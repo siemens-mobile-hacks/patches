@@ -1,0 +1,15 @@
+;S65v58
+;Ускоренное гашение подсветки
+;Fade light off faster
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 11003
+;Details: https://patches.kibab.com/patches/details.php5?id=11003
+/*
+
+*/
+
+0C571F0: 021C FF22
+;------------------------- end -------------------------
+

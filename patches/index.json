@@ -19329,7 +19329,7 @@
 			"id": "11000",
 			"model": "S75v52",
 			"file": "S75v52/11000-AccelerationMenu.vkp",
-			"mtime": 1731875674000,
+			"mtime": 1731931692000,
 			"title": {
 				"ru": "Ускорение Меню",
 				"en": "Acceleration Menu"
@@ -55329,11 +55329,11 @@
 		"9093": {
 			"id": "9093",
 			"model": "S65v58",
-			"file": "S65v58/9093-Smooth_keypad_light.vkp",
-			"mtime": 1224788102000,
+			"file": "S65v58/9093-smooth_keypad_light_on.vkp",
+			"mtime": 1731938230000,
 			"title": {
 				"ru": "Плавное включение подсветки",
-				"en": "Smooth keypad light"
+				"en": "Smooth keypad light on"
 			}
 		},
 		"9094": {
@@ -56405,6 +56405,46 @@
 			"title": {
 				"ru": "Использование эльфов-скринсейверов",
 				"en": "Using ELFs screensavers"
+			}
+		},
+		"11001": {
+			"id": "11001",
+			"model": "S65v58",
+			"file": "S65v58/11001-MainMenuPosition_s65.vkp",
+			"mtime": 1731928062000,
+			"title": {
+				"ru": "Позиционирование элементов основного меню",
+				"en": "Positioning of MainMenu elements"
+			}
+		},
+		"11003": {
+			"id": "11003",
+			"model": "S65v58",
+			"file": "S65v58/11003-fade_light_off_faster.vkp",
+			"mtime": 1731938278000,
+			"title": {
+				"ru": "Ускоренное гашение подсветки",
+				"en": "Fade light off faster"
+			}
+		},
+		"11004": {
+			"id": "11004",
+			"model": "S65v58",
+			"file": "S65v58/11004-dont_stop_media_player_playback.vkp",
+			"mtime": 1731945962000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
+			}
+		},
+		"11007": {
+			"id": "11007",
+			"model": "S65v58",
+			"file": "S65v58/11007-AccelerationMenu.vkp",
+			"mtime": 1731954730000,
+			"title": {
+				"ru": "Ускорение Меню",
+				"en": "Acceleration Menu"
 			}
 		}
 	},
@@ -67475,6 +67515,26 @@
 			"title": {
 				"ru": "Изменить сканкод клавиши 'Интернет'",
 				"en": "Change scancode of 'Internet' key"
+			}
+		},
+		"11005": {
+			"id": "11005",
+			"model": "CX70v56",
+			"file": "CX70v56/11005-dont_stop_media_player_playback.vkp",
+			"mtime": 1731946948000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
+			}
+		},
+		"11006": {
+			"id": "11006",
+			"model": "CX70v56",
+			"file": "CX70v56/11006-fade_light_off_faster.vkp",
+			"mtime": 1731947048000,
+			"title": {
+				"ru": "Ускоренное гашение подсветки",
+				"en": "Fade light off faster"
 			}
 		}
 	},
@@ -94234,6 +94294,16 @@
 			"title": {
 				"ru": "Не менять левый софткей на ГЭ если нет сети",
 				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
+		},
+		"11002": {
+			"id": "11002",
+			"model": "E71v45",
+			"file": "E71v45/11002-AccelerationMenu.vkp",
+			"mtime": 1731932322000,
+			"title": {
+				"ru": "Ускорение Меню",
+				"en": "Acceleration Menu"
 			}
 		}
 	},

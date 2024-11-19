@@ -1,0 +1,15 @@
+;CX70v56
+;Ускоренное гашение подсветки
+;Fade light off faster
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 11006
+;Details: https://patches.kibab.com/patches/details.php5?id=11006
+/*
+
+*/
+
+0BD1A4C: 021C FF22
+;------------------------- end -------------------------
+

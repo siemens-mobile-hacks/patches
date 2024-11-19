@@ -25974,7 +25974,7 @@
 		"S65v58/9092-Change_dialing_ringtone__No_connect.vkp"
 	],
 	[
-		"S65v58/9093-Smooth_keypad_light.vkp"
+		"S65v58/9093-smooth_keypad_light_on.vkp"
 	],
 	[
 		"S65v58/9094-Change_Vibra_Type_When_HotKey.vkp"
@@ -31511,5 +31511,26 @@
 	],
 	[
 		"S75v52/11000-AccelerationMenu.vkp"
+	],
+	[
+		"S65v58/11001-MainMenuPosition_s65.vkp"
+	],
+	[
+		"E71v45/11002-AccelerationMenu.vkp"
+	],
+	[
+		"S65v58/11003-fade_light_off_faster.vkp"
+	],
+	[
+		"S65v58/11004-dont_stop_media_player_playback.vkp"
+	],
+	[
+		"CX70v56/11005-dont_stop_media_player_playback.vkp"
+	],
+	[
+		"CX70v56/11006-fade_light_off_faster.vkp"
+	],
+	[
+		"S65v58/11007-AccelerationMenu.vkp"
 	]
 ]
