@@ -5214,6 +5214,16 @@
 				"ru": "Дополнение \"Нестандартные иконки\" для \"Пакет исправлений Native Menu\"",
 				"en": "Addon \"Custom icons\" to \"Native Menu Fix Pack\""
 			}
+		},
+		"11012": {
+			"id": 11012,
+			"model": "EL71v45",
+			"file": "EL71v45/11012-Info_network_search_El71_45.vkp",
+			"mtime": 1732132714000,
+			"title": {
+				"ru": "Расширенная информация вместо \"поиск сети\"",
+				"en": "Expanded information instead of 'network search'"
+			}
 		}
 	},
 	"S75v20": {
