@@ -1,0 +1,15 @@
+;EL71v45
+;Не менять левый софткей на ГЭ если нет сети
+;Don`t change the left softkey on IDLE if there is no network
+;(c) Feyman
+;(r) FIL
+;Version: 
+;PatchID: 11013
+;Details: https://patches.kibab.com/patches/details.php5?id=11013
+/*
+Левый софт на ГЭ больше не будет менять своё значение в зависимости от состояния сетевого соединения
+*/
+
+05C3E35: D0 E0
+;------------------------- end -------------------------
+
