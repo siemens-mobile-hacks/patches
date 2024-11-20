@@ -56466,6 +56466,16 @@
 				"ru": "Отображать сообщение вместо запуска Java приложения когда Java машина отключена",
 				"en": "Display a message instead of starting a Java application if JAM is disabled"
 			}
+		},
+		"11011": {
+			"id": 11011,
+			"model": "S65v58",
+			"file": "S65v58/11011-change_netting_color.vkp",
+			"mtime": 1732126638000,
+			"title": {
+				"ru": "Изменить цвет сетки при прорисовке окошек",
+				"en": "Change the netting color while showing MsgBoxes"
+			}
 		}
 	},
 	"SL65v50": {
