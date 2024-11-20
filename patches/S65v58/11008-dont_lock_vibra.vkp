@@ -1,0 +1,16 @@
+;S65v58
+;Не блокировать вибрацию при подключении аксессуаров
+;Don't lock vibra when accessories are connected
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 11008
+;Details: https://patches.kibab.com/patches/details.php5?id=11008
+/*
+
+*/
+
+1297198: 1910A0E3 0000A0E3
+129719C: 40029FE5 1EFF2FE1
+;------------------------- end -------------------------
+

@@ -1,0 +1,16 @@
+;CX70v56
+;Не блокировать вибрацию при подключении аксессуаров
+;Don't lock vibra when accessories are connected
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 11009
+;Details: https://patches.kibab.com/patches/details.php5?id=11009
+/*
+
+*/
+
+11A4CA8: 1910A0E3 0000A0E3
+11A4CAC: 40029FE5 1EFF2FE1
+;------------------------- end -------------------------
+

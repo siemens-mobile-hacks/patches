@@ -5209,7 +5209,7 @@
 			"model": "EL71v45",
 			"file": "EL71v45/10988-custom_icons_addon_to_nmfp.vkp",
 			"additionalFile": "EL71v45/10988-custom_icons_addon_to_nmfp.zip",
-			"mtime": 1731178720000,
+			"mtime": 1732042806000,
 			"title": {
 				"ru": "Дополнение \"Нестандартные иконки\" для \"Пакет исправлений Native Menu\"",
 				"en": "Addon \"Custom icons\" to \"Native Menu Fix Pack\""
@@ -56446,6 +56446,16 @@
 				"ru": "Ускорение Меню",
 				"en": "Acceleration Menu"
 			}
+		},
+		"11008": {
+			"id": "11008",
+			"model": "S65v58",
+			"file": "S65v58/11008-dont_lock_vibra.vkp",
+			"mtime": 1732019344000,
+			"title": {
+				"ru": "Не блокировать вибрацию при подключении аксессуаров",
+				"en": "Don't lock vibra when accessories are connected"
+			}
 		}
 	},
 	"SL65v50": {
@@ -67535,6 +67545,16 @@
 			"title": {
 				"ru": "Ускоренное гашение подсветки",
 				"en": "Fade light off faster"
+			}
+		},
+		"11009": {
+			"id": "11009",
+			"model": "CX70v56",
+			"file": "CX70v56/11009-dont_lock_vibra.vkp",
+			"mtime": 1732019496000,
+			"title": {
+				"ru": "Не блокировать вибрацию при подключении аксессуаров",
+				"en": "Don't lock vibra when accessories are connected"
 			}
 		}
 	},
