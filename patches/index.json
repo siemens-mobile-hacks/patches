@@ -5234,6 +5234,16 @@
 				"ru": "Не менять левый софткей на ГЭ если нет сети",
 				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
+		},
+		"11014": {
+			"id": 11014,
+			"model": "EL71v45",
+			"file": "EL71v45/11014-enable_transparent_in_themes_v1_2.vkp",
+			"mtime": 1732185044000,
+			"title": {
+				"ru": "Включить полупрозрачность в темах",
+				"en": "Enable transparent in themes"
+			}
 		}
 	},
 	"S75v20": {
