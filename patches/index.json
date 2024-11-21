@@ -5214,6 +5214,26 @@
 				"ru": "Дополнение \"Нестандартные иконки\" для \"Пакет исправлений Native Menu\"",
 				"en": "Addon \"Custom icons\" to \"Native Menu Fix Pack\""
 			}
+		},
+		"11012": {
+			"id": "11012",
+			"model": "EL71v45",
+			"file": "EL71v45/11012-Info_network_search_El71_45.vkp",
+			"mtime": 1732132714000,
+			"title": {
+				"ru": "Расширенная информация вместо \"поиск сети\"",
+				"en": "Expanded information instead of 'network search'"
+			}
+		},
+		"11013": {
+			"id": "11013",
+			"model": "EL71v45",
+			"file": "EL71v45/11013-fix_leftsoft_on_idle.vkp",
+			"mtime": 1732134036000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"S75v20": {
@@ -56455,6 +56475,26 @@
 			"title": {
 				"ru": "Не блокировать вибрацию при подключении аксессуаров",
 				"en": "Don't lock vibra when accessories are connected"
+			}
+		},
+		"11010": {
+			"id": "11010",
+			"model": "S65v58",
+			"file": "S65v58/11010-disp_msg_instead_of_starting_java.vkp",
+			"mtime": 1732122476000,
+			"title": {
+				"ru": "Отображать сообщение вместо запуска Java приложения когда Java машина отключена",
+				"en": "Display a message instead of starting a Java application if JAM is disabled"
+			}
+		},
+		"11011": {
+			"id": "11011",
+			"model": "S65v58",
+			"file": "S65v58/11011-change_netting_color.vkp",
+			"mtime": 1732126638000,
+			"title": {
+				"ru": "Изменить цвет сетки при прорисовке окошек",
+				"en": "Change the netting color while showing MsgBoxes"
 			}
 		}
 	},

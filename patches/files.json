@@ -31538,5 +31538,17 @@
 	],
 	[
 		"CX70v56/11009-dont_lock_vibra.vkp"
+	],
+	[
+		"S65v58/11010-disp_msg_instead_of_starting_java.vkp"
+	],
+	[
+		"S65v58/11011-change_netting_color.vkp"
+	],
+	[
+		"EL71v45/11012-Info_network_search_El71_45.vkp"
+	],
+	[
+		"EL71v45/11013-fix_leftsoft_on_idle.vkp"
 	]
 ]

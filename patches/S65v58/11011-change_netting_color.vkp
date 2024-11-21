@@ -1,0 +1,15 @@
+;S65v58
+;Изменить цвет сетки при прорисовке окошек
+;Change the netting color while showing MsgBoxes
+;(c) FIL
+;Version: 
+;PatchID: 11011
+;Details: https://patches.kibab.com/patches/details.php5?id=11011
+/*
+
+*/
+
+092CB3C: 16 01 ; palette index
+
+;------------------------- end -------------------------
+
