@@ -5238,11 +5238,11 @@
 		"11014": {
 			"id": 11014,
 			"model": "EL71v45",
-			"file": "EL71v45/11014-enable_transparent_in_themes_v1_2.vkp",
+			"file": "EL71v45/11014-e_translucency_in_themes_v1_2.vkp",
 			"mtime": 1732185044000,
 			"title": {
 				"ru": "Включить полупрозрачность в темах",
-				"en": "Enable transparent in themes"
+				"en": "Enable translucency in themes"
 			}
 		},
 		"11016": {
