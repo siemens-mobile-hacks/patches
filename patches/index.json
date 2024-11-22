@@ -56995,7 +56995,7 @@
 			"mtime": 1732293936000,
 			"title": {
 				"ru": "Отображать сообщение вместо запуска Java приложения когда Java машина отключена",
-				"en": "Display a message instead of starting a Java application if JAM is disabled"
+				"en": "Display a message instead of starting a Java application if Java is disabled"
 			}
 		},
 		"11011": {

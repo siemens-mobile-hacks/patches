@@ -1,6 +1,6 @@
 ;S65v58
 ;Отображать сообщение вместо запуска Java приложения когда Java машина отключена
-;Display a message instead of starting a Java application if JAM is disabled
+;Display a message instead of starting a Java application if Java is disabled
 ;(c) FIL
 ;Version: 
 ;PatchID: 11010
