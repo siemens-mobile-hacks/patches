@@ -5244,6 +5244,16 @@
 				"ru": "Включить полупрозрачность в темах",
 				"en": "Enable transparent in themes"
 			}
+		},
+		"11016": {
+			"id": 11016,
+			"model": "EL71v45",
+			"file": "EL71v45/11016-neticon_offline.vkp",
+			"mtime": 1732298384000,
+			"title": {
+				"ru": "Своя иконка сети в оффлайн-режиме",
+				"en": "Custom network icon in offline mode"
+			}
 		}
 	},
 	"S75v20": {
