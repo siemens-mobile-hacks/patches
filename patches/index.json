@@ -56496,6 +56496,16 @@
 				"ru": "Изменить цвет сетки при прорисовке окошек",
 				"en": "Change the netting color while showing MsgBoxes"
 			}
+		},
+		"11015": {
+			"id": 11015,
+			"model": "S65v58",
+			"file": "S65v58/11015-message_if_browser_cound_t_start.vkp",
+			"mtime": 1732292340000,
+			"title": {
+				"ru": "Отображать сообщение об ошибке если не удалось запустить браузер",
+				"en": "Show an error message if browser couldn't start"
+			}
 		}
 	},
 	"SL65v50": {
