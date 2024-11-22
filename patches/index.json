@@ -5219,7 +5219,7 @@
 			"id": "11012",
 			"model": "EL71v45",
 			"file": "EL71v45/11012-Info_network_search_El71_45.vkp",
-			"mtime": 1732132714000,
+			"mtime": 1732178110000,
 			"title": {
 				"ru": "Расширенная информация вместо \"поиск сети\"",
 				"en": "Expanded information instead of 'network search'"
@@ -5233,6 +5233,16 @@
 			"title": {
 				"ru": "Не менять левый софткей на ГЭ если нет сети",
 				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
+		},
+		"11014": {
+			"id": "11014",
+			"model": "EL71v45",
+			"file": "EL71v45/11014-enable_transparent_in_themes_v1_2.vkp",
+			"mtime": 1732185044000,
+			"title": {
+				"ru": "Включить полупрозрачность в темах",
+				"en": "Enable transparent in themes"
 			}
 		}
 	},

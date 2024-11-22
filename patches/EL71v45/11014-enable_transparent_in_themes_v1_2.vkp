@@ -1,0 +1,25 @@
+;EL71v45
+;Включить полупрозрачность в темах
+;Enable transparent in themes
+;(c) FIL
+;(r) Виктор89
+;(p) Azq2
+;Version: 1.2
+;PatchID: 11014
+;Details: https://patches.kibab.com/patches/details.php5?id=11014
+/*
+Тема должна быть с полупрозрачностью и устанавливаться после патча
+*/
+
+; .PassThemeStructToHook
+074B940: 0010A0E3 0810A0E1
+
+; .HookThemeImageLoading_Jump
+074B948: A43616EB 84D82EEB
+
+#pragma enable old_equal_ff
+; .HookThemeImageLoading
+1301B60: 003091E570402DE90050A0E10400D3E554309FE50240A0E133FF2FE10420A0E148309FE50010A0E30060A0E10500A0E133FF2FE1004050E20900001A0F0056E30700008AB73CA0E33336A0E1010013E30300000A18309FE50510A0E30500A0E133FF2FE10400A0E17080BDE8B0B274A0E093CDA0147CCDA0
+#pragma disable old_equal_ff
+;------------------------- end -------------------------
+
