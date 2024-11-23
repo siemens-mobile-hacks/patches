@@ -56516,6 +56516,16 @@
 				"ru": "Отображать сообщение об ошибке если не удалось запустить браузер",
 				"en": "Show an error message if browser couldn't start"
 			}
+		},
+		"11018": {
+			"id": 11018,
+			"model": "S65v58",
+			"file": "S65v58/11018-MMS_CLIENT_CORE_PROCESS.vkp",
+			"mtime": 1732390122000,
+			"title": {
+				"ru": "Отключение загрузки ядра MMS клиента",
+				"en": "Kill MMS client core process"
+			}
 		}
 	},
 	"SL65v50": {
