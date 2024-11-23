@@ -53571,16 +53571,6 @@
 				"en": "Screen Illumination Auto Control"
 			}
 		},
-		"3311": {
-			"id": "3311",
-			"model": "S65v58",
-			"file": "S65v58/3311-Show_extensions.vkp",
-			"mtime": 1147200102000,
-			"title": {
-				"ru": "Показ Расширений Файлов в Card-Explorer'е",
-				"en": "Show File Extensions in Card-Explorer"
-			}
-		},
 		"3327": {
 			"id": "3327",
 			"model": "S65v58",
