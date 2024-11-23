@@ -67616,6 +67616,16 @@
 				"ru": "Не блокировать вибрацию при подключении аксессуаров",
 				"en": "Don't lock vibra when accessories are connected"
 			}
+		},
+		"11017": {
+			"id": 11017,
+			"model": "CX70v56",
+			"file": "CX70v56/11017-redisign_surf_and_fun_menu.vkp",
+			"mtime": 1732387286000,
+			"title": {
+				"ru": "Переработка меню 'Интерн./игр'",
+				"en": "Redesign 'Surf & fun' menu"
+			}
 		}
 	},
 	"C55v24": {
