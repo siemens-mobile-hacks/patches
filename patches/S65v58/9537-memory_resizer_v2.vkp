@@ -3,7 +3,7 @@
 ;Memory resizer
 ;(c) Zhek@, ~Jhellico, Zeus
 ;(r) Rst7
-;Version: 2.1
+;Version: 2
 ;PatchID: 9537
 ;Details: https://patches.kibab.com/patches/details.php5?id=9537
 ;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s65v58&f=Memory_resizer_s65.zip
@@ -17,7 +17,7 @@
 
 12C50FC: A009 E80A ; если пикофф нужно увеличить значение
 009ABE0: 0x177000 0x000000 ; нулевое значение использовать только с отключеной явой
-0B6F898: FEF75FFB C046C046 ; browser
+114EB32: BBF0E6ED C046C046 ; RAP_BEARER_0 (browser)
 114EB4A: BBF0DAED C046C046 ; RAP_BEARER_1 (java)
 12C510C: 0x00652000 0x006A2000
 
