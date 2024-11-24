@@ -27254,7 +27254,7 @@
 		"CX70v56/9536-memory_resizer_v2_cx70.zip"
 	],
 	[
-		"S65v58/9537-Memory_resizer_s65.vkp",
+		"S65v58/9537-memory_resizer_v2_1.vkp",
 		"S65v58/9537-Memory_resizer_s65.zip"
 	],
 	null,
@@ -31220,7 +31220,7 @@
 		"C72v22/10896-disable_wait_in_card_explorer.vkp"
 	],
 	[
-		"S65v58/10897-swilib_v171124.vkp"
+		"S65v58/10897-swilib_v231124.vkp"
 	],
 	[
 		"C75v24/10898-c75v24_remove_help_inbox_opt.vkp"
@@ -31505,7 +31505,7 @@
 		"S75v52/10998-MainMenuPosition.vkp"
 	],
 	[
-		"S65v58/10999-using_elfs_screensavers_v2_0.vkp"
+		"S65v58/10999-using_elfs_screensavers_v2_1.vkp"
 	],
 	[
 		"S75v52/11000-AccelerationMenu.vkp"
@@ -31538,7 +31538,7 @@
 		"CX70v56/11009-dont_lock_vibra.vkp"
 	],
 	[
-		"S65v58/11010-disp_msg_instead_of_starting_java.vkp"
+		"S65v58/11010-d_msg_instead_of_starting_java.vkp"
 	],
 	[
 		"S65v58/11011-change_netting_color.vkp"
@@ -31551,5 +31551,17 @@
 	],
 	[
 		"EL71v45/11014-enable_transparent_in_themes_v1_2.vkp"
+	],
+	[
+		"S65v58/11015-message_if_browser_cound_t_start.vkp"
+	],
+	[
+		"EL71v45/11016-neticon_offline.vkp"
+	],
+	[
+		"CX70v56/11017-redisign_surf_and_fun_menu.vkp"
+	],
+	[
+		"S65v58/11018-MMS_CLIENT_CORE_PROCESS.vkp"
 	]
 ]

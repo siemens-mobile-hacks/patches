@@ -1,0 +1,15 @@
+;S65v58
+;Отключение загрузки ядра MMS клиента
+;Kill MMS client core process
+;(c) PICAS
+;(p) Виктор89
+;Version: 
+;PatchID: 11018
+;Details: https://patches.kibab.com/patches/details.php5?id=11018
+/*
+Добавляет 120020 байт в permamem
+*/
+
+0B3582E: 03F7F4FA C046C046
+;------------------------- end -------------------------
+

@@ -5244,6 +5244,16 @@
 				"ru": "Включить полупрозрачность в темах",
 				"en": "Enable transparent in themes"
 			}
+		},
+		"11016": {
+			"id": "11016",
+			"model": "EL71v45",
+			"file": "EL71v45/11016-neticon_offline.vkp",
+			"mtime": 1732298384000,
+			"title": {
+				"ru": "Своя иконка сети в оффлайн-режиме",
+				"en": "Custom network icon in offline mode"
+			}
 		}
 	},
 	"S75v20": {
@@ -55509,9 +55519,9 @@
 		"9537": {
 			"id": "9537",
 			"model": "S65v58",
-			"file": "S65v58/9537-Memory_resizer_s65.vkp",
+			"file": "S65v58/9537-memory_resizer_v2_1.vkp",
 			"additionalFile": "S65v58/9537-Memory_resizer_s65.zip",
-			"mtime": 1251820618000,
+			"mtime": 1732387132000,
 			"title": {
 				"ru": "Memory resizer",
 				"en": "Memory resizer"
@@ -56150,8 +56160,8 @@
 		"10897": {
 			"id": "10897",
 			"model": "S65v58",
-			"file": "S65v58/10897-swilib_v171124.vkp",
-			"mtime": 1731852764000,
+			"file": "S65v58/10897-swilib_v231124.vkp",
+			"mtime": 1732368902000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -56420,8 +56430,8 @@
 		"10999": {
 			"id": "10999",
 			"model": "S65v58",
-			"file": "S65v58/10999-using_elfs_screensavers_v2_0.vkp",
-			"mtime": 1731862740000,
+			"file": "S65v58/10999-using_elfs_screensavers_v2_1.vkp",
+			"mtime": 1732364598000,
 			"title": {
 				"ru": "Использование эльфов-скринсейверов",
 				"en": "Using ELFs screensavers"
@@ -56480,8 +56490,8 @@
 		"11010": {
 			"id": "11010",
 			"model": "S65v58",
-			"file": "S65v58/11010-disp_msg_instead_of_starting_java.vkp",
-			"mtime": 1732122476000,
+			"file": "S65v58/11010-d_msg_instead_of_starting_java.vkp",
+			"mtime": 1732293936000,
 			"title": {
 				"ru": "Отображать сообщение вместо запуска Java приложения когда Java машина отключена",
 				"en": "Display a message instead of starting a Java application if JAM is disabled"
@@ -56495,6 +56505,26 @@
 			"title": {
 				"ru": "Изменить цвет сетки при прорисовке окошек",
 				"en": "Change the netting color while showing MsgBoxes"
+			}
+		},
+		"11015": {
+			"id": "11015",
+			"model": "S65v58",
+			"file": "S65v58/11015-message_if_browser_cound_t_start.vkp",
+			"mtime": 1732292340000,
+			"title": {
+				"ru": "Отображать сообщение об ошибке если не удалось запустить браузер",
+				"en": "Show an error message if browser couldn't start"
+			}
+		},
+		"11018": {
+			"id": "11018",
+			"model": "S65v58",
+			"file": "S65v58/11018-MMS_CLIENT_CORE_PROCESS.vkp",
+			"mtime": 1732390122000,
+			"title": {
+				"ru": "Отключение загрузки ядра MMS клиента",
+				"en": "Kill MMS client core process"
 			}
 		}
 	},
@@ -67595,6 +67625,16 @@
 			"title": {
 				"ru": "Не блокировать вибрацию при подключении аксессуаров",
 				"en": "Don't lock vibra when accessories are connected"
+			}
+		},
+		"11017": {
+			"id": "11017",
+			"model": "CX70v56",
+			"file": "CX70v56/11017-redisign_surf_and_fun_menu.vkp",
+			"mtime": 1732387286000,
+			"title": {
+				"ru": "Переработка меню 'Интерн./игр'",
+				"en": "Redesign 'Surf & fun' menu"
 			}
 		}
 	},
