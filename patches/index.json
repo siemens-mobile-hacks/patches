@@ -55519,9 +55519,9 @@
 		"9537": {
 			"id": "9537",
 			"model": "S65v58",
-			"file": "S65v58/9537-memory_resizer_v2_1.vkp",
+			"file": "S65v58/9537-memory_resizer_v2.vkp",
 			"additionalFile": "S65v58/9537-Memory_resizer_s65.zip",
-			"mtime": 1732387132000,
+			"mtime": 1732456590000,
 			"title": {
 				"ru": "Memory resizer",
 				"en": "Memory resizer"
