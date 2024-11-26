@@ -94027,10 +94027,10 @@
 		"10811": {
 			"id": "10811",
 			"model": "E71v45",
-			"file": "E71v45/10811-enable_transparent_in_themes_v1_2.vkp",
-			"mtime": 1714922924000,
+			"file": "E71v45/10811-enable_transparent_in_themes_v1_2_1.vkp",
+			"mtime": 1732542970000,
 			"title": {
-				"ru": "Включить прозрачность в темах",
+				"ru": "Включить полупрозрачность в темах",
 				"en": "Enable transparent in themes"
 			}
 		},
@@ -94098,8 +94098,8 @@
 		"10823": {
 			"id": "10823",
 			"model": "E71v45",
-			"file": "E71v45/10823-change_dirs_of_theme_res_v1_1.vkp",
-			"mtime": 1714250330000,
+			"file": "E71v45/10823-change_dirs_of_theme_res_v1_2_1.vkp",
+			"mtime": 1732542418000,
 			"title": {
 				"ru": "Задать директорию ресурсов темы",
 				"en": "Set directory of theme resources"
