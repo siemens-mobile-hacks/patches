@@ -1,0 +1,18 @@
+;E71v45
+;Задать CSM для Native Menu
+;Set CSM for Native Menu
+;(c) FIL
+;Version: 
+;PatchID: 11019
+;Details: https://patches.kibab.com/patches/details.php5?id=11019
+/*
+Можно переключаться через XTask.
+*/
+
+06EDD5E: 3BD0 C046
+06EDDD2: 0BF1 0021
+06EDDD4: C0E8FEBD 61F2CFFB
+06EDDD8: 0020 FEBD
+
+;------------------------- end -------------------------
+

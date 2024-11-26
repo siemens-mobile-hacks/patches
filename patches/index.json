@@ -94395,6 +94395,16 @@
 				"ru": "Ускорение Меню",
 				"en": "Acceleration Menu"
 			}
+		},
+		"11019": {
+			"id": 11019,
+			"model": "E71v45",
+			"file": "E71v45/11019-set_csm_for_nm.vkp",
+			"mtime": 1732623998000,
+			"title": {
+				"ru": "Задать CSM для Native Menu",
+				"en": "Set CSM for Native Menu"
+			}
 		}
 	},
 	"C81v51": {
