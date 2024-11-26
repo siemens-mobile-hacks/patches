@@ -73789,16 +73789,6 @@
 				"en": "Disable Aircraft Check"
 			}
 		},
-		"4382": {
-			"id": "4382",
-			"model": "C60v27",
-			"file": "C60v27/4382-Turning_off_of_the_prohibition_of_t.vkp",
-			"mtime": 1153254666000,
-			"title": {
-				"ru": "Отключение запрета редактирования расширения в Explorer",
-				"en": "Turning off of the prohibition of the editing of expansion in Explorer"
-			}
-		},
 		"5954": {
 			"id": "5954",
 			"model": "C60v27",
