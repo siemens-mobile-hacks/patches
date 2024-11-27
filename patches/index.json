@@ -94405,6 +94405,16 @@
 				"ru": "Задать CSM для Native Menu",
 				"en": "Set CSM for Native Menu"
 			}
+		},
+		"11020": {
+			"id": 11020,
+			"model": "E71v45",
+			"file": "E71v45/11020-fix_items_bg_in_nm.vkp",
+			"mtime": 1732733126000,
+			"title": {
+				"ru": "Исправить фон иконок в Native Menu",
+				"en": "Fix items background in Native Menu"
+			}
 		}
 	},
 	"C81v51": {
