@@ -94077,12 +94077,12 @@
 		"10822": {
 			"id": 10822,
 			"model": "E71v45",
-			"file": "E71v45/10822-custom_icons_addon_to_nmfp.vkp",
+			"file": "E71v45/10822-custom_icons_addon_to_nmfp_v1_1.vkp",
 			"additionalFile": "E71v45/10822-custom_icons_addon_to_nmfp.zip",
-			"mtime": 1713958250000,
+			"mtime": 1732733296000,
 			"title": {
-				"ru": "Дополнение \"Нестандартные иконки\" для \"Пакет исправлений Native Menu\"",
-				"en": "Addon \"Custom icons\" to \"Native Menu Fix Pack\""
+				"ru": "Дополнение 'Нестандартные иконки' для 'Пакет исправлений Native Menu'",
+				"en": "Addon 'Custom icons' to 'Native Menu Fix Pack'"
 			}
 		},
 		"10823": {
