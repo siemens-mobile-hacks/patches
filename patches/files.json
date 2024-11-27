@@ -27644,7 +27644,7 @@
 		"E71v45/9681-dis_wait_BT.vkp"
 	],
 	[
-		"E71v45/9682-NMFP_v3_3.vkp"
+		"E71v45/9682-NMFP_v3_4_1.vkp"
 	],
 	[
 		"E71v45/9683-Enable_RTSP.vkp"
@@ -30963,7 +30963,7 @@
 		"E71v45/10812-remove_icons_white_bg_in_nm_v2.vkp"
 	],
 	[
-		"E71v45/10813-add_icons_to_header_in_nm_v1_2.vkp"
+		"E71v45/10813-add_icons_to_header_in_nm_v1_2_1.vkp"
 	],
 	[
 		"E71v45/10814-default_icons_addon_to_nmfp.vkp"
@@ -31561,5 +31561,8 @@
 	],
 	[
 		"S65v58/11018-MMS_CLIENT_CORE_PROCESS.vkp"
+	],
+	[
+		"E71v45/11019-set_csm_for_nm.vkp"
 	]
 ]

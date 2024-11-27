@@ -92429,8 +92429,8 @@
 		"9682": {
 			"id": "9682",
 			"model": "E71v45",
-			"file": "E71v45/9682-NMFP_v3_3.vkp",
-			"mtime": 1728218028000,
+			"file": "E71v45/9682-NMFP_v3_4_1.vkp",
+			"mtime": 1732635122000,
 			"title": {
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
@@ -94037,8 +94037,8 @@
 		"10813": {
 			"id": "10813",
 			"model": "E71v45",
-			"file": "E71v45/10813-add_icons_to_header_in_nm_v1_2.vkp",
-			"mtime": 1728217994000,
+			"file": "E71v45/10813-add_icons_to_header_in_nm_v1_2_1.vkp",
+			"mtime": 1732635046000,
 			"title": {
 				"ru": "Добавить иконки в заголовок Native Menu",
 				"en": "Add icons to header in Native Menu"
@@ -94394,6 +94394,16 @@
 			"title": {
 				"ru": "Ускорение Меню",
 				"en": "Acceleration Menu"
+			}
+		},
+		"11019": {
+			"id": "11019",
+			"model": "E71v45",
+			"file": "E71v45/11019-set_csm_for_nm.vkp",
+			"mtime": 1732623998000,
+			"title": {
+				"ru": "Задать CSM для Native Menu",
+				"en": "Set CSM for Native Menu"
 			}
 		}
 	},
