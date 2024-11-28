@@ -94415,6 +94415,16 @@
 				"ru": "Исправить фон иконок в Native Menu",
 				"en": "Fix items background in Native Menu"
 			}
+		},
+		"11021": {
+			"id": 11021,
+			"model": "E71v45",
+			"file": "E71v45/11021-speed_up_opening_menu.vkp",
+			"mtime": 1732797180000,
+			"title": {
+				"ru": "Ускорить открытие меню",
+				"en": "Speed up opening menu"
+			}
 		}
 	},
 	"C81v51": {
