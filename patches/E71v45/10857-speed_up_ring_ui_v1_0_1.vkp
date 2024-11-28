@@ -2,7 +2,7 @@
 ;Ускорить Ring UI
 ;Speed up Ring UI
 ;(c) FIL
-;Version: 
+;Version: 1.0.1
 ;PatchID: 10857
 ;Details: https://patches.kibab.com/patches/details.php5?id=10857
 /*
@@ -10,7 +10,11 @@
 Патч затрагивает UI изменения громкости, уповещения входящего звонка, уповещения будильника.
 */
 
+; .text.GrubBGFromLCD_Jump
 0A21BA6: FEF7A3FA 14F085FE
+
+; .text.GrubBGFromLCD
 0A368B4: 6E6F7420656E6F75676874206D656D6F72792C20494D5053 10B5002804D00468002C01D1014CA04710BDC046F100A2A0
+
 ;------------------------- end -------------------------
 
