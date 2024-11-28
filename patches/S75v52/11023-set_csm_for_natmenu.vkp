@@ -1,0 +1,16 @@
+;S75v52
+;Задать CSM для Native Menu
+;Set CSM for Native Menu
+;(c) FIL
+;(p) Feyman
+;Version: 
+;PatchID: 11023
+;Details: https://patches.kibab.com/patches/details.php5?id=11023
+/*
+Можно переключаться через XTask.
+*/
+
+0333920: C3F6 02E0 
+033399A: B8F040EDFEBD0020FCE7 0021B8F0E2EEFEBD0000
+;------------------------- end -------------------------
+

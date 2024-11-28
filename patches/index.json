@@ -19384,6 +19384,16 @@
 				"ru": "Исправить фон иконок в Native Menu",
 				"en": "Fix items background in Native Menu"
 			}
+		},
+		"11023": {
+			"id": 11023,
+			"model": "S75v52",
+			"file": "S75v52/11023-set_csm_for_natmenu.vkp",
+			"mtime": 1732828462000,
+			"title": {
+				"ru": "Задать CSM для Native Menu",
+				"en": "Set CSM for Native Menu"
+			}
 		}
 	},
 	"SL75v31": {
