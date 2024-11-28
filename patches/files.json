@@ -30990,7 +30990,7 @@
 		"S75v52/10821-VolumeBar_fix.vkp"
 	],
 	[
-		"E71v45/10822-custom_icons_addon_to_nmfp.vkp",
+		"E71v45/10822-custom_icons_addon_to_nmfp_v1_1.vkp",
 		"E71v45/10822-custom_icons_addon_to_nmfp.zip"
 	],
 	[
@@ -31564,5 +31564,8 @@
 	],
 	[
 		"E71v45/11019-set_csm_for_nm.vkp"
+	],
+	[
+		"E71v45/11020-fix_items_bg_in_nm.vkp"
 	]
 ]
