@@ -19374,6 +19374,26 @@
 				"ru": "Ускорение Меню",
 				"en": "Acceleration Menu"
 			}
+		},
+		"11022": {
+			"id": "11022",
+			"model": "S75v52",
+			"file": "S75v52/11022-fix_items_bg_in_nm.vkp",
+			"mtime": 1732826182000,
+			"title": {
+				"ru": "Исправить фон иконок в Native Menu",
+				"en": "Fix items background in Native Menu"
+			}
+		},
+		"11023": {
+			"id": "11023",
+			"model": "S75v52",
+			"file": "S75v52/11023-set_csm_for_natmenu.vkp",
+			"mtime": 1732828462000,
+			"title": {
+				"ru": "Задать CSM для Native Menu",
+				"en": "Set CSM for Native Menu"
+			}
 		}
 	},
 	"SL75v31": {
@@ -94188,8 +94208,8 @@
 		"10834": {
 			"id": "10834",
 			"model": "E71v45",
-			"file": "E71v45/10834-UIFP_v1_1.vkp",
-			"mtime": 1720514082000,
+			"file": "E71v45/10834-UIFP_v1_2.vkp",
+			"mtime": 1732801362000,
 			"title": {
 				"ru": "Пакет исправлений пользовательского интерфейса",
 				"en": "UI Fix Pack"
@@ -94339,8 +94359,8 @@
 		"10857": {
 			"id": "10857",
 			"model": "E71v45",
-			"file": "E71v45/10857-speed_up_ring_ui.vkp",
-			"mtime": 1720513728000,
+			"file": "E71v45/10857-speed_up_ring_ui_v1_0_1.vkp",
+			"mtime": 1732798380000,
 			"title": {
 				"ru": "Ускорить Ring UI",
 				"en": "Speed up Ring UI"
@@ -94414,6 +94434,16 @@
 			"title": {
 				"ru": "Исправить фон иконок в Native Menu",
 				"en": "Fix items background in Native Menu"
+			}
+		},
+		"11021": {
+			"id": "11021",
+			"model": "E71v45",
+			"file": "E71v45/11021-speed_up_opening_menu.vkp",
+			"mtime": 1732797180000,
+			"title": {
+				"ru": "Ускорить открытие меню",
+				"en": "Speed up opening menu"
 			}
 		}
 	},
