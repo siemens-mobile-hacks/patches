@@ -3,7 +3,7 @@
 ;Fix init of scrollable headers
 ;(c) FIL
 ;(r) Azq2
-;Version: 
+;Version: 1.1
 ;PatchID: 10831
 ;Details: https://patches.kibab.com/patches/details.php5?id=10831
 /*
@@ -11,8 +11,11 @@
 Патч нужен для правильного отображения заголовков.
 */
 
-0A27916: 03F0C0FF FCF721F8
+; .SetScrollType
 0A2395C: 44726177696E67206120706C61796261636B206672616D652061742028202564 10B5044B040098470349044B2A222000984710BD9BB8A2A012020000CFB9A2A0
+
+; .SetScrollType_Jump
+0A27916: 03F0C0FF FCF721F8
 
 ;------------------------- end -------------------------
 
