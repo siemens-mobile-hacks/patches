@@ -94178,8 +94178,8 @@
 		"10831": {
 			"id": "10831",
 			"model": "E71v45",
-			"file": "E71v45/10831-fix_init_of_scollable_headers.vkp",
-			"mtime": 1716047054000,
+			"file": "E71v45/10831-fix_init_of_scollable_headers_v1_1.vkp",
+			"mtime": 1732895394000,
 			"title": {
 				"ru": "Исправить инициализацию прокручиваемых заголовков",
 				"en": "Fix init of scrollable headers"
@@ -94198,8 +94198,8 @@
 		"10833": {
 			"id": "10833",
 			"model": "E71v45",
-			"file": "E71v45/10833-speed_up_menu_scrolling.vkp",
-			"mtime": 1716215698000,
+			"file": "E71v45/10833-speed_up_menu_scrolling_v1_1.vkp",
+			"mtime": 1732885992000,
 			"title": {
 				"ru": "Ускорить прокручивание меню",
 				"en": "Speed up menu scrolling"
@@ -94208,8 +94208,8 @@
 		"10834": {
 			"id": "10834",
 			"model": "E71v45",
-			"file": "E71v45/10834-UIFP_v1_2.vkp",
-			"mtime": 1732801362000,
+			"file": "E71v45/10834-UIFP_v1_2_2.vkp",
+			"mtime": 1732895460000,
 			"title": {
 				"ru": "Пакет исправлений пользовательского интерфейса",
 				"en": "UI Fix Pack"
