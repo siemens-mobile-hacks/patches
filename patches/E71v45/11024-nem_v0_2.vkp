@@ -2,12 +2,14 @@
 ;Модификация Native Explorer
 ;Native Explorer Modification
 ;(c) FIL
-;Version: 0.1
+;Version: 0.2
 ;PatchID: 11024
 ;Details: https://patches.kibab.com/patches/details.php5?id=11024
 /*
 Модификация Native Explorer.
 1. Заменены большие списки на маленькие.
+2. Небольшие оптимизации.
+
 */
 
 ; .Replace_GetMultiLinesMenuGUI
@@ -45,6 +47,9 @@
 
 ; .FixPreviewHeight_2
 0718614: FF0000E2 1A00A0E3
+
+; .SkipFindChildren
+069445C: 79FFFFEB 0000A0E1
 
 ;------------------------- end -------------------------
 
