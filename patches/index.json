@@ -94445,6 +94445,16 @@
 				"ru": "Ускорить открытие меню",
 				"en": "Speed up opening menu"
 			}
+		},
+		"11024": {
+			"id": "11024",
+			"model": "E71v45",
+			"file": "E71v45/11024-nem_v0_1.vkp",
+			"mtime": 1733065942000,
+			"title": {
+				"ru": "Модификация Native Explorer",
+				"en": "Native Explorer Modification"
+			}
 		}
 	},
 	"C81v51": {
