@@ -25349,6 +25349,16 @@
 				"ru": "Голубое меню от M75 SW00",
 				"en": "Blue menu M75 SW00"
 			}
+		},
+		"11025": {
+			"id": 11025,
+			"model": "CF75v23",
+			"file": "CF75v23/11025-C72v22_cpu_208mhz_notlmb.vkp",
+			"mtime": 1733245452000,
+			"title": {
+				"ru": "Разгон процессора до 208 МГц",
+				"en": "CPU OverClock to 208 MHz"
+			}
 		}
 	},
 	"CX75v5": {
