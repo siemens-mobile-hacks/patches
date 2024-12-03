@@ -25359,6 +25359,16 @@
 				"ru": "Разгон процессора до 208 МГц",
 				"en": "CPU OverClock to 208 MHz"
 			}
+		},
+		"11026": {
+			"id": 11026,
+			"model": "CF75v23",
+			"file": "CF75v23/11026-change_scancode_of_internet_key.vkp",
+			"mtime": 1733253776000,
+			"title": {
+				"ru": "Изменить сканкод клавиши 'Интернет'",
+				"en": "Change scancode of 'Internet' key"
+			}
 		}
 	},
 	"CX75v5": {
