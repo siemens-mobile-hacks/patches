@@ -94485,6 +94485,16 @@
 				"ru": "Модификация Native Explorer",
 				"en": "Native Explorer Modification"
 			}
+		},
+		"11028": {
+			"id": 11028,
+			"model": "E71v45",
+			"file": "E71v45/11028-2line_cursor_inbox.vkp",
+			"mtime": 1733508728000,
+			"title": {
+				"ru": "Двухстрочный курсор во \"входящих\"",
+				"en": "Two-line cursor in inbox"
+			}
 		}
 	},
 	"C81v51": {
