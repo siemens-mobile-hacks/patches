@@ -1,0 +1,141 @@
+;E71v45
+;Модификация Native Explorer
+;Native Explorer Modification
+;(c) FIL
+;Version: 0.7
+;PatchID: 11024
+;Details: https://patches.kibab.com/patches/details.php5?id=11024
+/*
+Модификация Native Explorer:
+- Заменены большие списки на маленькие.
+- Включено отображение скрытых файлов.
+- Отключена сортировки избранных каталогов.
+- Исправлены вкладки.
+- Исправлены заголовки.
+- Возможность удаления файлов "Только для чтения".
+- Работа с системными директориями как с обычными.
+- Рекурсивное удаление каталогов.
+- Небольшие оптимизации.
+*/
+
+#pragma enable old_equal_ff
+; .rodata
+1380600: 313A5C00
+#pragma disable old_equal_ff
+
+; .Replace_GetMultiLinesMenuGUI
+0785F60: 444507FA 6F2807FA
+
+; .Replace_AllocMLMenuItem
+071E17C: C7E608FA 00D908FA
+
+; .FixMemoryLeak
+071E1D8: 000056E3 060056E1
+
+; .Replace_GetExtIconLarge_1
+071E5B4: CA90F7EB C390F7EB
+
+; .Replace_GetExtIconLarge_2
+071E570: DB90F7EB D490F7EB
+
+; .FixDirIcon_1
+0870A54: 09040000 C4030000
+
+; .FixDirIcon_2
+0870A5C: 24040000 DB030000
+
+; .FixUnkIcon
+0870340: 33040000 EA030000
+
+; .FixPreviewWidth_1
+0718D28: 2118A0E1 1A10A0E3
+
+; .FixPreviewHeight_1
+0718D20: 2228A0E1 1A20A0E3
+
+; .FixPreviewWidth_2
+0718604: FF0000E2 1A00A0E3
+
+; .FixPreviewHeight_2
+0718614: FF0000E2 1A00A0E3
+
+; .FixUnCheckedIcon
+0718E28: 1F040000 3C050000
+
+; .FixCheckedIcon
+0718E2C: 1E040000 3A050000
+
+#pragma enable old_equal_ff
+; .MergeIconsHook
+1380650: 70B50400230084331B780D001000002B03D0A720054BC00098472900044B083198472900034B2000984770BD9BCE94A0DDD094A0708A71A0
+#pragma disable old_equal_ff
+
+; .MergeIconsHook_AddParam
+0719BBC: 46CD08FA 0020A0E1
+
+; .MergeIconsHook_Jump
+0719BC8: A8FBFFEB A09A31FA
+
+#pragma enable old_equal_ff
+; .SetPreviewHook
+13806A0: 8430D0E5000053E31EFF2F1100309FE513FF2FE13C8E71A0
+#pragma disable old_equal_ff
+
+; .SetPreviewHook_Jump
+0719580: 2DFEFFEB 469C31EB
+
+; .ShowHiddenFiles_1
+0694024: 000050E3 FF0050E3
+
+; .ShowHiddenFiles_2
+069412C: 000050E3 FF0050E3
+
+; .DisableSortFavoritesDirsOnTop
+06935AC: 000050E3 000050E1
+
+; .FixTabs_1
+04E57BC: 050051E3 040051E3
+
+; .FixTabs_2
+069966C: 000050E3 FF0050E3
+
+; .FixTabs_3
+0699554: 0070A0E3 0270A0E3
+
+; .FixTabs_4
+0699674: 0060A0E3 0260A0E3
+
+#pragma enable old_equal_ff
+; .Set2ndTabPath
+1380700: 0100A0E104309FE504109FE513FF2FE14DEB93A0000638A1
+#pragma disable old_equal_ff
+
+; .Set2ndTabPath_Jump
+0699654: 0EA3F91B 299C331B
+
+; .FixMMCTabIcon
+0786044: 010054E3 030054E3
+
+; .ShowDrives
+0698B1C: 08402DE90D00A0E1 0100A0E31EFF2FE1
+
+; .FixDeleteROFiles_1
+05D0F00: 0100A013 0000A013
+
+; .FixDeleteROFiles_2
+0694F28: 0100000A 070000EA
+
+; .FixSystemDirs
+071CBD4: 4296F7EB 0000A0E3
+
+; .FixHeader_1
+071EF04: 000050E3 FF0050E3
+
+; .FixHeader_2
+071EF84: 000050E3 FF0050E3
+
+; .SkipFindChildren
+069445C: 79FFFFEB 0000A0E1
+
+;------------------------- end -------------------------
+
