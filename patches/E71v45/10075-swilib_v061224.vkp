@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 041224
+;Version: 061224
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -1017,8 +1017,8 @@
 0F4C: 0xA08CCC11 ; 3D3: __thumb int IllumFilterSet(int flags, int unk);
 0F50: 0xA0A0CB71 ; 3D4: __thumb void DrawCroppedIMGHDR(int x, int y, int offset_x, int offset_y, int w, int h, int flags, const IMGHDR *img);
 0F54: 0xA05D0534 ; 3D5: __arm int BuildPath(WSHDR *ws, const WSHDR *file_name, const WSHDR *dir);
-0F58: 0xA0053C00 ; 83D6: RECT *GetHeaderRECT();
-0F5C: 0xA0C27054 ; 83D7: RECT *GetOptionsHeaderRECT();
+0F58: 0xA088D7B8 ; 83D6: RECT *GetHeaderRECT();
+0F5C: 0xA0C60F78 ; 83D7: RECT *GetOptionsHeaderRECT();
 0F60: 0xA084C854 ; 83D8: RECT *GetMainAreaRECT();
 0F64: 0xA0A32284 ; 3D9: __arm int GetPITSize();
 
