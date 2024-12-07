@@ -1,0 +1,14 @@
+;E71v45
+;Двухстрочный курсор во "входящих"
+;Two-line cursor in inbox
+;(c) Feyman
+;Version: 
+;PatchID: 11028
+;Details: https://patches.kibab.com/patches/details.php5?id=11028
+/*
+
+*/
+
+082CF08: 02 01 ;  можно 00, будет  1linesMenu, но глючит
+;------------------------- end -------------------------
+

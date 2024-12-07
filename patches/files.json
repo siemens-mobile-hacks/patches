@@ -31578,12 +31578,18 @@
 		"S75v52/11023-set_csm_for_natmenu.vkp"
 	],
 	[
-		"E71v45/11024-nem_v0_2.vkp"
+		"E71v45/11024-nem_v0_7.vkp"
 	],
 	[
 		"CF75v23/11025-C72v22_cpu_208mhz_notlmb.vkp"
 	],
 	[
 		"CF75v23/11026-change_scancode_of_internet_key.vkp"
+	],
+	[
+		"S75v52/11027-2line_cursor_inbox.vkp"
+	],
+	[
+		"E71v45/11028-2line_cursor_inbox.vkp"
 	]
 ]

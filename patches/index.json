@@ -19394,6 +19394,16 @@
 				"ru": "Задать CSM для Native Menu",
 				"en": "Set CSM for Native Menu"
 			}
+		},
+		"11027": {
+			"id": "11027",
+			"model": "S75v52",
+			"file": "S75v52/11027-2line_cursor_inbox.vkp",
+			"mtime": 1733505888000,
+			"title": {
+				"ru": "Двухстрочный курсор во \"входящих\"",
+				"en": "Two-line cursor in inbox"
+			}
 		}
 	},
 	"SL75v31": {
@@ -94469,11 +94479,21 @@
 		"11024": {
 			"id": "11024",
 			"model": "E71v45",
-			"file": "E71v45/11024-nem_v0_2.vkp",
-			"mtime": 1733141500000,
+			"file": "E71v45/11024-nem_v0_7.vkp",
+			"mtime": 1733512808000,
 			"title": {
 				"ru": "Модификация Native Explorer",
 				"en": "Native Explorer Modification"
+			}
+		},
+		"11028": {
+			"id": "11028",
+			"model": "E71v45",
+			"file": "E71v45/11028-2line_cursor_inbox.vkp",
+			"mtime": 1733508728000,
+			"title": {
+				"ru": "Двухстрочный курсор во \"входящих\"",
+				"en": "Two-line cursor in inbox"
 			}
 		}
 	},

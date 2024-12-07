@@ -1,0 +1,15 @@
+;S75v52
+;Двухстрочный курсор во "входящих"
+;Two-line cursor in inbox
+;(c) Feyman
+;Version: 
+;PatchID: 11027
+;Details: https://patches.kibab.com/patches/details.php5?id=11027
+/*
+
+*/
+
+06664E8: 02 01 ; Можно 00, тогда будет- 1linesMenu, но глючит
+
+;------------------------- end -------------------------
+
