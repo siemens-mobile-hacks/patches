@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 061224
+;Version: 081224
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -1011,13 +1011,13 @@
 0F38: 0xA04FA84D ; 3CE: __thumb int wstrtolower(WSHDR *ws);
 0F3C: 0xA04FA929 ; 3CF: __thumb int wstrcapitalize(WSHDR *ws);
 
-0F40: 0xA05C4EDD ; 3D0: __thumb int ShowScreenSaverCodeProtection();
+;F40:            ; 3D0:
 0F44: 0xA069FD2C ; 3D1: __arm void MediaProc_LaunchLastPlayback();
 0F48: 0xA05C4ED5 ; 3D2: __thumb int GetScreenSaverType();
 0F4C: 0xA08CCC11 ; 3D3: __thumb int IllumFilterSet(int flags, int unk);
 0F50: 0xA0A0CB71 ; 3D4: __thumb void DrawCroppedIMGHDR(int x, int y, int offset_x, int offset_y, int w, int h, int flags, const IMGHDR *img);
 0F54: 0xA05D0534 ; 3D5: __arm int BuildPath(WSHDR *ws, const WSHDR *file_name, const WSHDR *dir);
-0F58: 0xA088D7B8 ; 83D6: RECT *GetHeaderRECT();
+0F58: 0xA0869898 ; 83D6: RECT *GetHeaderRECT();
 0F5C: 0xA0C60F78 ; 83D7: RECT *GetOptionsHeaderRECT();
 0F60: 0xA084C854 ; 83D8: RECT *GetMainAreaRECT();
 0F64: 0xA0A32284 ; 3D9: __arm int GetPITSize();
