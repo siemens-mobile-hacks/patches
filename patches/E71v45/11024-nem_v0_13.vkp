@@ -2,19 +2,25 @@
 ;Модификация Native Explorer
 ;Native Explorer Modification
 ;(c) FIL
-;Version: 0.7
+;Version: 0.13
 ;PatchID: 11024
 ;Details: https://patches.kibab.com/patches/details.php5?id=11024
 /*
 Модификация Native Explorer:
 - Заменены большие списки на маленькие.
+- Отображение всех дисков.
 - Включено отображение скрытых файлов.
-- Отключена сортировки избранных каталогов.
-- Исправлены вкладки.
+- Отключена сортировка избранных каталогов.
+- Отключены алиасы папок.
+- Исправлены табы.
 - Исправлены заголовки.
 - Возможность удаления файлов "Только для чтения".
 - Работа с системными директориями как с обычными.
 - Рекурсивное удаление каталогов.
+- Исправлено отображение информации о дисках.
+- Убрано сообщение "Пожалуйста подождите" при смене каталога.
+- Удален пункт "Drives" из меню 5461.
+- В меню заменен пункт "Help" на пункт "Settings", который запускает меню 5461.
 - Небольшие оптимизации.
 */
 
@@ -42,7 +48,7 @@
 0870A54: 09040000 C4030000
 
 ; .FixDirIcon_2
-0870A5C: 24040000 DB030000
+0870A5C: 24040000 C4030000
 
 ; .FixUnkIcon
 0870340: 33040000 EA030000
@@ -84,25 +90,31 @@
 ; .SetPreviewHook_Jump
 0719580: 2DFEFFEB 469C31EB
 
-; .ShowHiddenFiles_1
+; .ShowHiddenFiles_Part1
 0694024: 000050E3 FF0050E3
 
-; .ShowHiddenFiles_2
+; .ShowHiddenFiles_Part2
 069412C: 000050E3 FF0050E3
 
 ; .DisableSortFavoritesDirsOnTop
 06935AC: 000050E3 000050E1
 
-; .FixTabs_1
+; .DisableAliases_1
+071D264: 0D10A0E1 0D0000EA
+
+; .DisableAliases_2
+07135D0: 0D10A0E1 0D0000EA
+
+; .FixTabs_Part1
 04E57BC: 050051E3 040051E3
 
-; .FixTabs_2
+; .FixTabs_Part2
 069966C: 000050E3 FF0050E3
 
-; .FixTabs_3
+; .FixTabs_Part3
 0699554: 0070A0E3 0270A0E3
 
-; .FixTabs_4
+; .FixTabs_Part4
 0699674: 0060A0E3 0260A0E3
 
 #pragma enable old_equal_ff
@@ -119,23 +131,56 @@
 ; .ShowDrives
 0698B1C: 08402DE90D00A0E1 0100A0E31EFF2FE1
 
-; .FixDeleteROFiles_1
+; .FixDeleteROFiles_Part1
 05D0F00: 0100A013 0000A013
 
-; .FixDeleteROFiles_2
+; .FixDeleteROFiles_Part2
 0694F28: 0100000A 070000EA
 
-; .FixSystemDirs
-071CBD4: 4296F7EB 0000A0E3
-
-; .FixHeader_1
+; .FixHeader_Part1
 071EF04: 000050E3 FF0050E3
 
-; .FixHeader_2
+; .FixHeader_Part2
 071EF84: 000050E3 FF0050E3
+
+; .FixMenu4Dirs
+071CBD4: 4296F7EB 0000A0E3
+
+; .FixMenuItem_Copy
+071CCF0: ADF8FFEB 0000A0E3
+
+; .FixDriveInfo
+069B8EC: 000050E3 0A0000EA
+
+; .FixPopupMessage
+069AF04: 0400A0E1 160000EA
+
+; .FixPopupLgpID
+069B1DC: D71D0000 D41D0000
+
+; .DisablePleaseWait
+069A688: 14FAFFEB 0000A0E1
 
 ; .SkipFindChildren
 069445C: 79FFFFEB 0000A0E1
+
+; .ReplaceHelpMenuItem_Part1
+07168A8: 7509FEEB 2E08FEEB
+
+; .ReplaceHelpMenuItem_Part2
+08704F4: 570E0000 600B0000
+
+; .Fix5461MenuHeader
+084CB7C: 99130000 600B0000
+
+; .RemoveDrivesItemFrom5461Menu_Part1
+0698978: 0210A0E3 0110A0E3
+
+; .RemoveDrivesItemFrom5461Menu_Part2
+0698954: 0210A0E3 0110A0E3
+
+; .Remove5461Combination
+071DCC0: CE5208FB 0000A0E3
 
 ;------------------------- end -------------------------
 
