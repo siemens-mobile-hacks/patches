@@ -2,7 +2,7 @@
 ;Модификация Native Explorer
 ;Native Explorer Modification
 ;(c) FIL
-;Version: 0.13
+;Version: 1
 ;PatchID: 11024
 ;Details: https://patches.kibab.com/patches/details.php5?id=11024
 /*
@@ -13,10 +13,13 @@
 - Отключена сортировка избранных каталогов.
 - Отключены алиасы папок.
 - Исправлены табы.
+- Исправлена неприятная утечка памяти при переключении вкладок!
 - Исправлены заголовки.
 - Возможность удаления файлов "Только для чтения".
+- Отображение расширений файлов.
 - Работа с системными директориями как с обычными.
 - Рекурсивное удаление каталогов.
+- Работа с выделенными папками, как с обычными файлами.
 - Исправлено отображение информации о дисках.
 - Убрано сообщение "Пожалуйста подождите" при смене каталога.
 - Удален пункт "Drives" из меню 5461.
@@ -35,7 +38,7 @@
 ; .Replace_AllocMLMenuItem
 071E17C: C7E608FA 00D908FA
 
-; .FixMemoryLeak
+; .FixMemoryLeak_1
 071E1D8: 000056E3 060056E1
 
 ; .Replace_GetExtIconLarge_1
@@ -96,6 +99,9 @@
 ; .ShowHiddenFiles_Part2
 069412C: 000050E3 FF0050E3
 
+; .ShowExtensions
+071E9D8: 000050E3 000050E1
+
 ; .DisableSortFavoritesDirsOnTop
 06935AC: 000050E3 000050E1
 
@@ -137,6 +143,9 @@
 ; .FixDeleteROFiles_Part2
 0694F28: 0100000A 070000EA
 
+; .FixCopyMarkedDirs
+0715D60: 9D1E00EB 0000A0E1
+
 ; .FixHeader_Part1
 071EF04: 000050E3 FF0050E3
 
@@ -145,6 +154,12 @@
 
 ; .FixMenu4Dirs
 071CBD4: 4296F7EB 0000A0E3
+
+; .FixMenu4MarkedDirs_Part1
+071B5C0: F9F8FDEB 0000A0E3
+
+; .FixMenu4MarkedDirs_Part2
+071B5E4: 000095E5 680000EA
 
 ; .FixMenuItem_Copy
 071CCF0: ADF8FFEB 0000A0E3
@@ -160,6 +175,9 @@
 
 ; .DisablePleaseWait
 069A688: 14FAFFEB 0000A0E1
+
+; .FixMemoryLeak_2
+0786408: 0710A0E11F00A0E3DF48FCEB0610A0E10500A0E1D87C0AFB 0500A0E10610A0E1F8CF01EB1F00A0E30710A0E1DC48FCEB
 
 ; .SkipFindChildren
 069445C: 79FFFFEB 0000A0E1
