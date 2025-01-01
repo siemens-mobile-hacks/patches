@@ -2,7 +2,7 @@
 ;Модификация Native Explorer
 ;Native Explorer Modification
 ;(c) FIL
-;Version: 1
+;Version: 1.1.2
 ;PatchID: 11024
 ;Details: https://patches.kibab.com/patches/details.php5?id=11024
 /*
@@ -17,6 +17,8 @@
 - Исправлены заголовки.
 - Возможность удаления файлов "Только для чтения".
 - Отображение расширений файлов.
+- Переименовывание файлов с расширением.
+- Фикс переименовывания файлов только со сменой регистра.
 - Работа с системными директориями как с обычными.
 - Рекурсивное удаление каталогов.
 - Работа с выделенными папками, как с обычными файлами.
@@ -131,11 +133,34 @@
 ; .Set2ndTabPath_Jump
 0699654: 0EA3F91B 299C331B
 
+#pragma enable old_equal_ff
+; .FixInitTabHook
+13806D0: 0B68CF225B881340181C032B00D903200004000C7047
+#pragma disable old_equal_ff
+
+; .FixInitTab
+06993EC: F3DDFCEB000050E360708415 B79C33FAFF0050E360008415
+
 ; .FixMMCTabIcon
 0786044: 010054E3 030054E3
 
 ; .ShowDrives
 0698B1C: 08402DE90D00A0E1 0100A0E31EFF2FE1
+
+; .FixRenameFiles
+0715114: 1E95F7FB 167B22EB
+
+; .RenameWithExt_Part1
+0714F28: F3EDFAEB 0100A0E3
+
+; .RenameWithExt_Part2
+05D0988: 0400A0E1 2F0000EA
+
+; .FixCopyFiles
+0716470: D2E9FAEB 0100A0E3
+
+; .FixCopyMarkedDirs
+0715D60: 9D1E00EB 0000A0E3
 
 ; .FixDeleteROFiles_Part1
 05D0F00: 0100A013 0000A013
@@ -143,14 +168,8 @@
 ; .FixDeleteROFiles_Part2
 0694F28: 0100000A 070000EA
 
-; .FixCopyMarkedDirs
-0715D60: 9D1E00EB 0000A0E1
-
-; .FixHeader_Part1
-071EF04: 000050E3 FF0050E3
-
-; .FixHeader_Part2
-071EF84: 000050E3 FF0050E3
+; .FixHeader
+071EEE8: 0410A0E1 520000EA
 
 ; .FixMenu4Dirs
 071CBD4: 4296F7EB 0000A0E3
