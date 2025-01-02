@@ -94495,6 +94495,16 @@
 				"ru": "Двухстрочный курсор во \"входящих\"",
 				"en": "Two-line cursor in inbox"
 			}
+		},
+		"11029": {
+			"id": 11029,
+			"model": "E71v45",
+			"file": "E71v45/11029-battery_percentage_instead_of_icons.vkp",
+			"mtime": 1735823892000,
+			"title": {
+				"ru": "Процент заряда батареи вместо иконок",
+				"en": "Battery percentage instead of icons"
+			}
 		}
 	},
 	"C81v51": {
