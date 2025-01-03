@@ -94349,8 +94349,8 @@
 		"10853": {
 			"id": "10853",
 			"model": "E71v45",
-			"file": "E71v45/10853-turn_phone_while_off_charging_v2.vkp",
-			"mtime": 1718907782000,
+			"file": "E71v45/10853-turn_phone_while_off_charg_v2_0_1.vkp",
+			"mtime": 1735815554000,
 			"title": {
 				"ru": "Включить телефон при оффлайн зарядке",
 				"en": "Turn phone on while offline charging"
@@ -94494,6 +94494,16 @@
 			"title": {
 				"ru": "Двухстрочный курсор во \"входящих\"",
 				"en": "Two-line cursor in inbox"
+			}
+		},
+		"11029": {
+			"id": "11029",
+			"model": "E71v45",
+			"file": "E71v45/11029-battery_percentage_instead_of_icons.vkp",
+			"mtime": 1735823892000,
+			"title": {
+				"ru": "Процент заряда батареи вместо иконок",
+				"en": "Battery percentage instead of icons"
 			}
 		}
 	},

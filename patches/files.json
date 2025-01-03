@@ -31081,7 +31081,7 @@
 		"C81v51/10852-fade_light_off_faster.vkp"
 	],
 	[
-		"E71v45/10853-turn_phone_while_off_charging_v2.vkp"
+		"E71v45/10853-turn_phone_while_off_charg_v2_0_1.vkp"
 	],
 	[
 		"E71v45/10854-disable_message_data_received.vkp"
@@ -31591,5 +31591,8 @@
 	],
 	[
 		"E71v45/11028-2line_cursor_inbox.vkp"
+	],
+	[
+		"E71v45/11029-battery_percentage_instead_of_icons.vkp"
 	]
 ]
