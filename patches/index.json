@@ -94505,6 +94505,16 @@
 				"ru": "Процент заряда батареи вместо иконок",
 				"en": "Battery percentage instead of icons"
 			}
+		},
+		"11030": {
+			"id": 11030,
+			"model": "E71v45",
+			"file": "E71v45/11030-neh.vkp",
+			"mtime": 1736159058000,
+			"title": {
+				"ru": "Горячие клавиши Native Explorer",
+				"en": "Native Explorer Hotkeys"
+			}
 		}
 	},
 	"C81v51": {
