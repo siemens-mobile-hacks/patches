@@ -31578,7 +31578,7 @@
 		"S75v52/11023-set_csm_for_natmenu.vkp"
 	],
 	[
-		"E71v45/11024-nem_v1_2.vkp"
+		"E71v45/11024-nem_v1_3_1.vkp"
 	],
 	[
 		"CF75v23/11025-C72v22_cpu_208mhz_notlmb.vkp"
@@ -31594,5 +31594,8 @@
 	],
 	[
 		"E71v45/11029-battery_percentage_instead_of_icons.vkp"
+	],
+	[
+		"E71v45/11030-neh.vkp"
 	]
 ]

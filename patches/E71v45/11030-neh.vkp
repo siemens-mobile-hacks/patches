@@ -1,0 +1,32 @@
+;E71v45
+;Горячие клавиши Native Explorer
+;Native Explorer Hotkeys
+;(c) FIL
+;Version: 
+;PatchID: 11030
+;Details: https://patches.kibab.com/patches/details.php5?id=11030
+/*
+Патч описывает горячие клавиши для Native Explorer. Работает только в связке с Native Explorer Modification.
+Список команд:
+ 0x02 | Send file
+ 0x03 | Move file
+ 0x04 | Copy file
+ 0x05 | Paste file
+ 0x06 | Delete file
+ 0x08 | Mark file
+ 0x0B | New folder
+ 0x0C | Rename file
+ 0x0D | Show sort
+ 0x0E | Show attribute file
+ 0x0F | Show drive info
+ 0x1C | Show search
+ 0x1E | Show set as
+*/
+
+;05 - команда, 0B - сканкод и т.д.
+#pragma enable old_equal_ff
+1380850: 050B,0B31,0C32,0233,0434,0E35,0F36,0337,0D38,1C39,082A,1E30,0623
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+
