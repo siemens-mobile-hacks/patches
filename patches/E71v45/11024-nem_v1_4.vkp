@@ -2,7 +2,7 @@
 ;Модификация Native Explorer
 ;Native Explorer Modification
 ;(c) FIL
-;Version: 1.3.4
+;Version: 1.4
 ;PatchID: 11024
 ;Details: https://patches.kibab.com/patches/details.php5?id=11024
 /*
@@ -10,7 +10,7 @@
 Интерфейс:
 - Заменены большие списки на маленькие.
 - Заголовок:
--- Отображение полного пути до директори.
+-- Отображение полного пути до директории.
 -- Отображение атрибута выбранного файла.
 - Табы:
 -- Отображение всех дисков.
@@ -34,6 +34,7 @@
 - Рекурсивное удаление каталогов.
 - Работа с выделенными папками, как с обычными файлами.
 - Исправлен выбор вкладки при выборе файла из меню настроек.
+- Исправлены софт-кнопки в некоторых режимах.
 - Поддержка горячих клавиш. Должен быть установлен патч
 11030!
 - Небольшие оптимизации.
@@ -202,12 +203,20 @@
 088B784: FFFFFF7F 92C0FF7F
 
 #pragma enable old_equal_ff
-; .SetHeader
+; .SetHeaderExtra_Hook
 1380720: F0B5274ED7B01D005C9B00932B00B0470B2600236E4433705C98224B984700283CD0214B20009847204C802216A9876804A8A0471E4B04AA2900380098471D4B03AA310004A8984710220EA909A8A04731782D22CB0700D545322D23880700D53B332D204C0700D546302D24C90600D53734114901940090104C09A8A04709A90F48104B9847104B5C9898470F4C104B104A0B49A0470A480F4B984757B0F0BDAB1E09A0330F95A04F6595A05BB24FA0248C69A0F87E56A0040638A14DEB93A092C0FF7F68D495A03D4E95A0EB81A2A0932F09A0512F09A0FCD695A0
 #pragma disable old_equal_ff
 
-; .SetHeader_Jump
+; .SetHeaderExtra_Jump
 06987EC: ADE5E7FB CB9F33FA
+
+#pragma enable old_equal_ff
+; .FixSoftkeys_Hook
+1380950: 10B50E4BC6B00400C06A9847002810D080220B4B06A901A898470A4B01A920009847094BE06A01A998474342584146B010BD064B20009847F9E7C04653AC4FA05BB24FA0F09F69A07FAC4FA0849D69A0
+#pragma disable old_equal_ff
+
+; FixSoftkeys_Jump
+071DF1C: 98EFFDEB 8B8A31FA
 
 ; .FixMenu4Dirs
 071CBD4: 4296F7EB 0000A0E3
