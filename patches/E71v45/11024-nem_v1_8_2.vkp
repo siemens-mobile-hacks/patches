@@ -2,7 +2,7 @@
 ;Модификация Native Explorer
 ;Native Explorer Modification
 ;(c) FIL
-;Version: 1.7.1
+;Version: 1.8.2
 ;PatchID: 11024
 ;Details: https://patches.kibab.com/patches/details.php5?id=11024
 /*
@@ -22,6 +22,7 @@
 - Отключено сообщение "Пожалуйста подождите" при смене каталога.
 - Отключено сообщение "Choose destination folder with centre navigation key.".
 - Меню:
+-- Удалены пункты: "Manage licence", "Format card".
 -- Удален пункт "Drives" из меню 5461.
 -- Заменен пункт "Help" на пункт "Settings", который запускает меню 5461.
 Системное:
@@ -39,6 +40,7 @@
 - Исправлены софт-кнопки в некоторых режимах.
 - Поддержка горячих клавиш. Должен быть установлен патч
 11030!
+- Полностью отключен поиск файлов! Нативный поиск очень сырой, присутствует много багов. Фиксить не рационально. В будущем будет переписан на эльфе.
 - Небольшие оптимизации.
 */
 
@@ -169,6 +171,14 @@
 ; .RenameWithExt_Part2
 05D0988: 0400A0E1 2F0000EA
 
+#pragma enable old_equal_ff
+; .FixRenameFile_Hook
+13808B0: 70B5054B04000D009847002803D0034B29002000984770BD709969A038B669A0
+#pragma disable old_equal_ff
+
+; .FixRenameFile_Jump
+07169A0: 2413FEEB C2A731FA
+
 ; .FixCopyFiles
 0716470: D2E9FAEB 0100A0E3
 
@@ -181,11 +191,35 @@
 ; .FixCopyMarkedDirs_Part3
 0715D60: 9D1E00EB 0000A0E3
 
+#pragma enable old_equal_ff
+; .FixCopyFile_Hook
+13808DA: 000070B5054B04000D009847002803D0034B29002000984770BD709969A098B369A0
+#pragma disable old_equal_ff
+
+; .FixCopyFile_Jump
+0716960: 8C12FEEB DDA731FA
+
+#pragma enable old_equal_ff
+; .FixMoveFile_Hook
+1380620: 70B5054B04000D009847002803D0034B29002000984770BD709969A0BCB469A0
+#pragma disable old_equal_ff
+
+; .FixMoveFile_Jump
+0716950: D912FEEB 32A731FA
+
 ; .FixDeleteROFiles_Part1
 05D0F00: 0100A013 0000A013
 
 ; .FixDeleteROFiles_Part2
 0694F28: 0100000A 070000EA
+
+#pragma enable old_equal_ff
+; .FixDeleteFile_Hook
+1380B30: 70B5054B04000D009847002803D0034B29002000984770BD709969A0B8AD69A0
+#pragma disable old_equal_ff
+
+; .FixDeleteFile_Jump
+0716980: 0C11FEEB 6AA831FA
 
 ; .FixPaste_Part1
 069B508: B30802EB 010000EA
@@ -212,6 +246,22 @@
 
 ; .FixDisableItem_Jump
 071E42C: B2DFFFEB 668931FA
+
+#pragma enable old_equal_ff
+; .FixSendFile_Hook
+1380B8A: 000070B5054B04000D009847002803D0034B29002000984770BD709969A0D0AF69A0
+#pragma disable old_equal_ff
+
+; .FixSendFile_Jump
+0716940: A211FEEB 91A831FA
+
+#pragma enable old_equal_ff
+; .FixSetAsFile_Hook
+1380B5A: 000070B5054B04000D009847002803D0034B29002000984770BD709969A06CB869A0
+#pragma disable old_equal_ff
+
+; .FixSetAsFile_Jump
+0716A00: 9913FEEB 55A831FA
 
 ; .FixHeader
 071EEE8: 0410A0E1 520000EA
@@ -253,6 +303,23 @@
 ; .FixMenuItem_Copy_Part2
 071CC90: E0039DE5 040000EA
 
+; .HideMenuItems_Part1
+071CAB8: 1770A0E3 010000EA
+
+#pragma enable old_equal_ff
+; .HideMenuItems_Hook
+1380880: 02681621531C9B00C150C3180131596003320439996002607047
+#pragma disable old_equal_ff
+
+; .HideMenuItems_Jump1
+071CAC4: F81F8D0201008002E0038D05 3E0E8DE26C8F31FA090000EA
+
+; .HideMenuItems_Part2
+071B510: 1760A0E3 080000EA
+
+; .HideMenuItems_Jump2
+071B538: 000095150100801200008515 0400A0E1CF9431FA000000EA
+
 ; .FixDriveInfo
 069B8EC: 000050E3 0A0000EA
 
@@ -276,6 +343,9 @@
 
 ; .SkipApplicationError
 0698C70: 000050E3 020000EA
+
+; .DisableSearch
+069B950: 10402DE9 1EFF2FE1
 
 ; .ReplaceHelpMenuItem_Part1
 07168A8: 7509FEEB 2E08FEEB
@@ -314,6 +384,9 @@
 ; .KeyHook
 1380A80: F8B51E4B0D000400984783681A00853211780B292BD81A4ACA40D20727D56A6894205668FF30864221D1002924D184331B78013B59424B4112491B015B189768114A11E086420ED001310E78FF2EF9D151788F4207D10D4B2100984701204042F8BD1900F1E702321078FF28F9D1084B290020009847F3E7064BE0E74F6595A0010A0000500A38A1500838A1948769A0B86478A0700A38A1
 #pragma disable old_equal_ff
+
+; .Rename_SkipFindChildren
+0714FB8: DDEDFAEB 0000A0E3
 
 ;------------------------- end -------------------------
 
