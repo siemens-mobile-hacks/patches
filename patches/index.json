@@ -47024,6 +47024,16 @@
 				"ru": "Звонок как на CX75",
 				"en": "RingCX75"
 			}
+		},
+		"11031": {
+			"id": "11031",
+			"model": "C65v56",
+			"file": "C65v56/11031-C65_light_contrast_pic_SW56.vkp",
+			"mtime": 1737469348000,
+			"title": {
+				"ru": "Изображение в меню подсветки и контрастности",
+				"en": "Image in menu light and contrast"
+			}
 		}
 	},
 	"CX65v25": {
