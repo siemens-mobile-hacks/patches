@@ -99890,5 +99890,18 @@
 				"en": "Dictaphone and Sound recorder write to Data or memory card as option"
 			}
 		}
+	},
+	"CF62v24": {
+		"11033": {
+			"id": 11033,
+			"model": "CF62v24",
+			"file": "CF62v24/11033-New_menu_CF62_SW24_v3.vkp",
+			"additionalFile": "CF62v24/11033-New_menu_CF62_SW24_v3.zip",
+			"mtime": 1738583296000,
+			"title": {
+				"ru": "Меню в стиле x65",
+				"en": "Menu style x65"
+			}
+		}
 	}
 }
