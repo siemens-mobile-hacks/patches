@@ -19404,6 +19404,16 @@
 				"ru": "Двухстрочный курсор во \"входящих\"",
 				"en": "Two-line cursor in inbox"
 			}
+		},
+		"11034": {
+			"id": "11034",
+			"model": "S75v52",
+			"file": "S75v52/11034-smart_launch_of_opwv_core__75.vkp",
+			"mtime": 1738611528000,
+			"title": {
+				"ru": "Умный запуск ядра OpenWave",
+				"en": "Smart launch of OpenWave core"
+			}
 		}
 	},
 	"SL75v31": {
@@ -99888,6 +99898,19 @@
 			"title": {
 				"ru": "Диктофон и Запись звука пишут на диск Data или карту памяти по выбору",
 				"en": "Dictaphone and Sound recorder write to Data or memory card as option"
+			}
+		}
+	},
+	"CF62v24": {
+		"11033": {
+			"id": "11033",
+			"model": "CF62v24",
+			"file": "CF62v24/11033-New_menu_CF62_SW24_v3.vkp",
+			"additionalFile": "CF62v24/11033-New_menu_CF62_SW24_v3.zip",
+			"mtime": 1738583296000,
+			"title": {
+				"ru": "Меню в стиле x65",
+				"en": "Menu style x65"
 			}
 		}
 	}
