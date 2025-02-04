@@ -1,0 +1,16 @@
+;E71v45
+;Удалить дату и время с главного экрана
+;Disable date and time on MainScreen
+;(c) benj9
+;(p) Виктор89
+;Version: 
+;PatchID: 11035
+;Details: https://patches.kibab.com/patches/details.php5?id=11035
+/*
+
+*/
+
+05C3F3E: FFF7CCFF C046C046
+05C3F58: FFF7E2FF C046C046
+;------------------------- end -------------------------
+
