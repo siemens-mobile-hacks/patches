@@ -31611,9 +31611,7 @@
 	[
 		"S75v52/11034-smart_launch_of_opwv_core__75.vkp"
 	],
-	[
-		"E71v45/11035-Disable_DateTime.vkp"
-	],
+	null,
 	[
 		"E71v45/11036-disable_date_and_time_on_idle.vkp"
 	]
