@@ -1,0 +1,14 @@
+;E71v45
+;Удалить дату и время только с главного экрана
+;Disable date and time only on IDLE
+;(c) FIL
+;Version: 
+;PatchID: 11036
+;Details: https://patches.kibab.com/patches/details.php5?id=11036
+/*
+Патч не затрагивает UI набора номера.
+*/
+
+05C3004: 01F017F8 0020C046
+;------------------------- end -------------------------
+
