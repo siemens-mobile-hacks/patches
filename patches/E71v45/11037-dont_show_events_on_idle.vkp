@@ -1,0 +1,16 @@
+;E71v45
+;Не показывать события на главном экране
+;Don't show events on IDLE
+;(c) FIL
+;Version: 
+;PatchID: 11037
+;Details: https://patches.kibab.com/patches/details.php5?id=11037
+/*
+Полностью отключает отображение всех событий на ГЭ.
+
+*/
+
+05C18F0: FFB5 7047
+
+;------------------------- end -------------------------
+
