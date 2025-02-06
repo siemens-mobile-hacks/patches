@@ -94575,6 +94575,16 @@
 				"ru": "Не показывать события на главном экране",
 				"en": "Don't show events on IDLE"
 			}
+		},
+		"11038": {
+			"id": 11038,
+			"model": "E71v45",
+			"file": "E71v45/11038-dont_show_softkeys_on_idle.vkp",
+			"mtime": 1738869636000,
+			"title": {
+				"ru": "Не показывать софт-кнопки на главном экране",
+				"en": "Don't show softkeys on IDLE"
+			}
 		}
 	},
 	"C81v51": {
