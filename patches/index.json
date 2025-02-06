@@ -94545,6 +94545,26 @@
 				"ru": "Умный запуск ядра OpenWave",
 				"en": "Smart launch of OpenWave core"
 			}
+		},
+		"11035": {
+			"id": "11035",
+			"model": "E71v45",
+			"file": "E71v45/11035-Disable_DateTime.vkp",
+			"mtime": 1738684382000,
+			"title": {
+				"ru": "Удалить дату и время с главного экрана",
+				"en": "Disable date and time on MainScreen"
+			}
+		},
+		"11036": {
+			"id": "11036",
+			"model": "E71v45",
+			"file": "E71v45/11036-disable_date_and_time_on_idle.vkp",
+			"mtime": 1738685288000,
+			"title": {
+				"ru": "Удалить дату и время только с главного экрана",
+				"en": "Disable date and time only on IDLE"
+			}
 		}
 	},
 	"C81v51": {
