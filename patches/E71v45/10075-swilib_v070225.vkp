@@ -1011,7 +1011,7 @@
 0F38: 0xA04FA84D ; 3CE: __thumb int wstrtolower(WSHDR *ws);
 0F3C: 0xA04FA929 ; 3CF: __thumb int wstrcapitalize(WSHDR *ws);
 
-0F40: 0xA0668DBD ; 3D0: __thumb int RestartKeyLockTimer();
+0F40: 0xA05C3D7F ; 3D0: __thumb int RestartLockTimers();
 0F44: 0xA069FD2C ; 3D1: __arm void MediaProc_LaunchLastPlayback();
 0F48: 0xA05C4ED5 ; 3D2: __thumb int GetScreenSaverType();
 0F4C: 0xA08CCC11 ; 3D3: __thumb int IllumFilterSet(int flags, int unk);
