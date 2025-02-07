@@ -94565,6 +94565,26 @@
 				"ru": "Удалить дату и время только с главного экрана",
 				"en": "Disable date and time only on IDLE"
 			}
+		},
+		"11037": {
+			"id": "11037",
+			"model": "E71v45",
+			"file": "E71v45/11037-dont_show_events_on_idle.vkp",
+			"mtime": 1738868878000,
+			"title": {
+				"ru": "Не показывать события на главном экране",
+				"en": "Don't show events on IDLE"
+			}
+		},
+		"11038": {
+			"id": "11038",
+			"model": "E71v45",
+			"file": "E71v45/11038-dont_show_softkeys_on_idle.vkp",
+			"mtime": 1738869636000,
+			"title": {
+				"ru": "Не показывать софт-кнопки на главном экране",
+				"en": "Don't show softkeys on IDLE"
+			}
 		}
 	},
 	"C81v51": {
