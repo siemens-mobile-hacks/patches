@@ -94585,6 +94585,16 @@
 				"ru": "Не показывать софт-кнопки на главном экране",
 				"en": "Don't show softkeys on IDLE"
 			}
+		},
+		"11039": {
+			"id": 11039,
+			"model": "E71v45",
+			"file": "E71v45/11039-dont_display_cenral_nav_key_icon_v2.vkp",
+			"mtime": 1738997912000,
+			"title": {
+				"ru": "Не отображать иконки центральной навигационной клавиши",
+				"en": "Don't display central navigation key icon"
+			}
 		}
 	},
 	"C81v51": {
