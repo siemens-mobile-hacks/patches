@@ -2,7 +2,7 @@
 ;Модификация Native Explorer
 ;Native Explorer Modification
 ;(c) FIL
-;Version: 1.8.5
+;Version: 1.8.6
 ;PatchID: 11024
 ;Details: https://patches.kibab.com/patches/details.php5?id=11024
 /*
@@ -114,7 +114,7 @@
 0718E50: A80190E5 129E31FA
 
 ; .ShowHiddenFiles
-0698300: 02001003 0000A0E1
+06982FC: 040010E302001003 0100A0E31EFF2FE1
 
 ; .ShowExtensions
 071E9D8: 000050E3 000050E1
