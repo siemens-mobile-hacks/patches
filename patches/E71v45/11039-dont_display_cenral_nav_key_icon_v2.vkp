@@ -1,0 +1,15 @@
+;E71v45
+;Не отображать иконки центральной навигационной клавиши
+;Don't display central navigation key icon
+;(c) FIL
+;Version: 2
+;PatchID: 11039
+;Details: https://patches.kibab.com/patches/details.php5?id=11039
+/*
+Полностью отключает отображение иконок центральной навигационной клавиши.
+*/
+
+0A2ABF2: 01 FF
+
+;------------------------- end -------------------------
+

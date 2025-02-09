@@ -94499,8 +94499,8 @@
 		"11024": {
 			"id": "11024",
 			"model": "E71v45",
-			"file": "E71v45/11024-nem_v1_8_5.vkp",
-			"mtime": 1737303548000,
+			"file": "E71v45/11024-nem_v1_8_6.vkp",
+			"mtime": 1739035030000,
 			"title": {
 				"ru": "Модификация Native Explorer",
 				"en": "Native Explorer Modification"
@@ -94564,6 +94564,36 @@
 			"title": {
 				"ru": "Удалить дату и время только с главного экрана",
 				"en": "Disable date and time only on IDLE"
+			}
+		},
+		"11037": {
+			"id": "11037",
+			"model": "E71v45",
+			"file": "E71v45/11037-dont_show_events_on_idle.vkp",
+			"mtime": 1738868878000,
+			"title": {
+				"ru": "Не показывать события на главном экране",
+				"en": "Don't show events on IDLE"
+			}
+		},
+		"11038": {
+			"id": "11038",
+			"model": "E71v45",
+			"file": "E71v45/11038-dont_show_softkeys_on_idle.vkp",
+			"mtime": 1738869636000,
+			"title": {
+				"ru": "Не показывать софт-кнопки на главном экране",
+				"en": "Don't show softkeys on IDLE"
+			}
+		},
+		"11039": {
+			"id": "11039",
+			"model": "E71v45",
+			"file": "E71v45/11039-dont_display_cenral_nav_key_icon_v2.vkp",
+			"mtime": 1738997912000,
+			"title": {
+				"ru": "Не отображать иконки центральной навигационной клавиши",
+				"en": "Don't display central navigation key icon"
 			}
 		}
 	},
