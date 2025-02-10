@@ -1,0 +1,18 @@
+;E71v45
+;Пропустить меню 'Отправить...'
+;Skip 'Send...' menu
+;(c) FIL
+;Version: 
+;PatchID: 11042
+;Details: https://patches.kibab.com/patches/details.php5?id=11042
+/*
+Теперь вместо запуска бесполезного меню с пунктами: "Via MMS", "Via e-mail", "Via Bluetooth" сразу запускается меню отправки через bluetooth.
+*/
+
+0710A14: 01A0A0E1 0800A0E3
+0710A18: 0080B0E1 0010A0E3
+0710A1C: 0270A0E1 D405FEEB
+0710A20: 0040A0E3 0000A0E3
+0710A24: 2900000A F08DBDE8
+;------------------------- end -------------------------
+
