@@ -94595,16 +94595,6 @@
 				"ru": "Не отображать иконки центральной навигационной клавиши",
 				"en": "Don't display central navigation key icon"
 			}
-		},
-		"11041": {
-			"id": 11041,
-			"model": "E71v45",
-			"file": "E71v45/11041-disable_animation_mode_in_mp.vkp",
-			"mtime": 1739093362000,
-			"title": {
-				"ru": "Отключить режим анимации в медиаплеере",
-				"en": "Disable animation mode in mediaplayer"
-			}
 		}
 	},
 	"C81v51": {
