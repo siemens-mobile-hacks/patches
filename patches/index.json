@@ -94596,16 +94596,6 @@
 				"en": "Don't display central navigation key icon"
 			}
 		},
-		"11040": {
-			"id": 11040,
-			"model": "E71v45",
-			"file": "E71v45/11040-optimize_theme_cache.vkp",
-			"mtime": 1739084560000,
-			"title": {
-				"ru": "Оптимизировать кэш темы",
-				"en": "Optimize theme cache"
-			}
-		},
 		"11041": {
 			"id": 11041,
 			"model": "E71v45",
