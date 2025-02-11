@@ -1,0 +1,14 @@
+;E71v45
+;Убрать пункт 'Bookmark' из PersMenu
+;Remove 'Bookmark' item from PersMenu
+;(c) FIL
+;Version: 1.1
+;PatchID: 10836
+;Details: https://patches.kibab.com/patches/details.php5?id=10836
+/*
+
+*/
+
+07A52A8: 0260A0E1 0060A0E3
+;------------------------- end -------------------------
+
