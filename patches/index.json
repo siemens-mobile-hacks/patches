@@ -94536,6 +94536,16 @@
 				"en": "Native Explorer Hotkeys"
 			}
 		},
+		"11032": {
+			"id": 11032,
+			"model": "E71v45",
+			"file": "E71v45/11032-smart_launch_of_opwv_core_v1_1.vkp",
+			"mtime": 1739375348000,
+			"title": {
+				"ru": "Умный запуск ядра OpenWave",
+				"en": "Smart launch of OpenWave core"
+			}
+		},
 		"11035": {
 			"id": 11035,
 			"model": "E71v45",
