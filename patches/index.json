@@ -94625,6 +94625,16 @@
 				"ru": "Пропустить меню 'Отправить...'",
 				"en": "Skip 'Send...' menu"
 			}
+		},
+		"11043": {
+			"id": 11043,
+			"model": "E71v45",
+			"file": "E71v45/11043-offline_mode_in_red_button_menu.vkp",
+			"mtime": 1739364152000,
+			"title": {
+				"ru": "Режим оффлайн в меню красной кнопки",
+				"en": "Offline mode in red button menu"
+			}
 		}
 	},
 	"C81v51": {
