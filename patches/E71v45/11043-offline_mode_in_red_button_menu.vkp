@@ -1,0 +1,33 @@
+;E71v45
+;Режим оффлайн в меню красной кнопки
+;Offline mode in red button menu
+;(c) FIL
+;Version: 
+;PatchID: 11043
+;Details: https://patches.kibab.com/patches/details.php5?id=11043
+/*
+Патч заменяет пункт "Ringtones off" | "Ringtones on" на "Offline" | "Online".
+*/
+
+; .CheckNetworkState
+070242C: 97F652EC0028 3CF759FA0428
+
+; .ReplaceLgpID_1
+07025F0: B6200000 F10E0000
+
+; .ReplaceLgpID_2
+07025F4: 10220000 F00E0000
+
+; .SwitchOfflineMode
+0702494: 80B50120F6F068EDF6F098EF00280FD197F616EC002805D1012098F642EAFFF7EEFD80BD002098F63CEAFFF7DAFD80BDF7F092E8 084B10B51B78002B08D0074B012098473CF71DFA042802D1044B984710BD044BFBE7C046985EE3A897F594A0340978A04C0978A0
+
+; .ReplaceItemProc
+086DC88: 092470A0 A10D38A1
+
+#pragma enable old_equal_ff
+; .ItemProc
+1380DA0: 054B10B51A78002A04D1022902D1034C1300A04710BDC046985EE3A8CD0D95A0
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+

@@ -3,7 +3,7 @@
 ;Smart launch of OpenWave core
 ;(c) FIL
 ;(r) Azq2, Виктор89
-;Version: 
+;Version: 1.1
 ;PatchID: 11032
 ;Details: https://patches.kibab.com/patches/details.php5?id=11032
 /*
@@ -44,6 +44,9 @@
 
 ; .Jump_2
 05FB070: 0FF79AFA FAF754EA
+
+; .SkipStateCheck
+06E7C84: 22F690FC 0120C046
 
 ; .DisableErrorMessage
 05FB08E: DAF0F2F8 C046C046
