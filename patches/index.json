@@ -94539,8 +94539,8 @@
 		"11032": {
 			"id": "11032",
 			"model": "E71v45",
-			"file": "E71v45/11032-smart_launch_of_opwv_core_v1_1.vkp",
-			"mtime": 1739375348000,
+			"file": "E71v45/11032-smart_launch_of_opwv_core.vkp",
+			"mtime": 1737574360000,
 			"title": {
 				"ru": "Умный запуск ядра OpenWave",
 				"en": "Smart launch of OpenWave core"
@@ -94624,16 +94624,6 @@
 			"title": {
 				"ru": "Пропустить меню 'Отправить...'",
 				"en": "Skip 'Send...' menu"
-			}
-		},
-		"11043": {
-			"id": "11043",
-			"model": "E71v45",
-			"file": "E71v45/11043-offline_mode_in_red_button_menu.vkp",
-			"mtime": 1739364152000,
-			"title": {
-				"ru": "Режим оффлайн в меню красной кнопки",
-				"en": "Offline mode in red button menu"
 			}
 		}
 	},
