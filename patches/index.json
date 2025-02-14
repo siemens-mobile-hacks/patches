@@ -94655,6 +94655,16 @@
 				"ru": "Режим оффлайн в меню красной кнопки",
 				"en": "Offline mode in red button menu"
 			}
+		},
+		"11047": {
+			"id": 11047,
+			"model": "E71v45",
+			"file": "E71v45/11047-disable_message_profile_activated.vkp",
+			"mtime": 1739543190000,
+			"title": {
+				"ru": "Отключить сообщение 'Профиль активирован: *'",
+				"en": "Disable message 'Profile activated: *'"
+			}
 		}
 	},
 	"C81v51": {

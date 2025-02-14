@@ -1,0 +1,16 @@
+;E71v45
+;Отключить сообщение 'Профиль активирован: *'
+;Disable message 'Profile activated: *'
+;(c) FIL
+;Version: 
+;PatchID: 11047
+;Details: https://patches.kibab.com/patches/details.php5?id=11047
+/*
+
+*/
+
+06F260C: 6A461549 07F1C0E9
+06F2610: 201C EAE7
+
+;------------------------- end -------------------------
+
