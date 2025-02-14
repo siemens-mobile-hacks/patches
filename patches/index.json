@@ -94665,6 +94665,16 @@
 				"ru": "Отключить сообщение 'Профиль активирован: *'",
 				"en": "Disable message 'Profile activated: *'"
 			}
+		},
+		"11048": {
+			"id": 11048,
+			"model": "E71v45",
+			"file": "E71v45/11048-don_t_add_png_files_to_media_db_v2.vkp",
+			"mtime": 1739550568000,
+			"title": {
+				"ru": "Не добавлять png файлы в базу данных медиаплеера",
+				"en": "Don't add png files to media DB"
+			}
 		}
 	},
 	"C81v51": {
