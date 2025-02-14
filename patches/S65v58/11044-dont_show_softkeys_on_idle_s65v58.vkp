@@ -1,0 +1,17 @@
+;S65v58
+;Не показывать софт-кнопки на главном экране
+;Don't show softkeys on IDLE
+;(c) FIL
+;(p) dimonp25
+;Version: 
+;PatchID: 11044
+;Details: https://patches.kibab.com/patches/details.php5?id=11044
+/*
+
+*/
+
+0169f4f4: 0022 f8bd
+0169f4ee: 696a 0021
+
+;------------------------- end -------------------------
+

@@ -56596,6 +56596,16 @@
 				"ru": "Отключение загрузки ядра MMS клиента",
 				"en": "Kill MMS client core process"
 			}
+		},
+		"11044": {
+			"id": 11044,
+			"model": "S65v58",
+			"file": "S65v58/11044-dont_show_softkeys_on_idle_s65v58.vkp",
+			"mtime": 1739529868000,
+			"title": {
+				"ru": "Не показывать софт-кнопки на главном экране",
+				"en": "Don't show softkeys on IDLE"
+			}
 		}
 	},
 	"SL65v50": {
