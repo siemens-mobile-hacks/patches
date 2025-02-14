@@ -97478,6 +97478,16 @@
 				"ru": "Задать директорию ресурсов темы",
 				"en": "Set directory of theme resources"
 			}
+		},
+		"11046": {
+			"id": 11046,
+			"model": "C81v51",
+			"file": "C81v51/11046-disable_search_c81.vkp",
+			"mtime": 1739530162000,
+			"title": {
+				"ru": "Отключить поиск в Native Explorer",
+				"en": "DisableAllSearch"
+			}
 		}
 	},
 	"C81v38": {

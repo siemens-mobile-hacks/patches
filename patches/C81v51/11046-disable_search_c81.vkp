@@ -1,0 +1,19 @@
+;C81v51
+;Отключить поиск в Native Explorer
+;DisableAllSearch
+;(c) FIL
+;(p) dimonp25
+;Version: 
+;PatchID: 11046
+;Details: https://patches.kibab.com/patches/details.php5?id=11046
+/*
+
+*/
+
+; .DisableSearch
+054a8e4: 10b5 7047
+; .DisableFastSearch
+06a61c0: 92000140 92000040
+
+;------------------------- end -------------------------
+
