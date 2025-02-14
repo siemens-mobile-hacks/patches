@@ -1,13 +1,12 @@
 ;E71v45
 ;Не добавлять png файлы в базу данных медиаплеера
-;Don't add png files to media DB
+;Don't add png files to media db
 ;(c) FIL
 ;Version: 2
 ;PatchID: 11048
 ;Details: https://patches.kibab.com/patches/details.php5?id=11048
 /*
 В прошлой версии патча png файлы все равно добавлялись в базу данных при файловых операциях.
-
 */
 
 #pragma enable old_equal_ff
