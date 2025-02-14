@@ -3,9 +3,19 @@
 ;Functions Library
 ;(c) avkiev
 ;(p) dimonp25
-;Version: 231124
+;Version: 140225
 ;PatchID: 10897
 ;Details: https://patches.kibab.com/patches/details.php5?id=10897
+/*
+Добавил новые ф как в либе E71 от моего брата Фила
+*/
+
+;S65v58
+;Библиотека функций
+;Functions Library
+;(c) avkiev
+;(p) dimonp25
+
 /*
 
 */
@@ -959,22 +969,22 @@
 0ED8: 0xA0972764 ; 3B6: __arm int Obs_SetTransparent(HObj obs, unsigned int unk_3_4_5);
 0F00: 0xA11442D5 ; 3C0: __thumb int ShowWaitBox(int flags, int message);
 0F04: 0xA114430D ; 3C1: __thumb int ShowPleaseWaitBox(int flags);
-;F08:            ; 3C2: __thumb int ShowPBarBox(int flags, int message, PBAR_DESC *pbar_desc, int initial_value, WSHDR *initial_ws);
+;0F08:           ; 3C2: __thumb int ShowPBarBox(int flags, int message, PBAR_DESC *pbar_desc, int initial_value, WSHDR *initial_ws);
 ;F0C:            ; 3C3: __thumb int SetPBarValue(int gui_id, int value);
 ;F10:            ; 3C4: __thumb int SetPBarText(int gui_id, WSHDR *ws);
 ;F14:            ; 83C5: void *GetPBarProc3();
 0F18: 0xA115FB61 ; 3C6: __thumb void SetHeaderScrollText(void *header, const WSHDR *title, const void *malloc_fn, const void *mfree_fn);
 0F1C: 0xA115F7D9 ; 3C7: __thumb void SetHeaderExtraText(void *header, const WSHDR *ws, const void *malloc_fn, const void *mfree_fn);
 0F20: 0xA11431CF ; 3C8: __arm int GetMimeType(int uid, WSHDR *mime_type, int unk_0);
-;F24:            ; 3C9: __thumb int wstrncmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
-;F28:            ; 3CA: __thumb int wstricmp(const WSHDR *ws1, const WSHDR *ws2);
-;F2C:            ; 3CB: __thumb int wstrnicmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
+0F24: a0c3a263   ; 3C9: __thumb int wstrncmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
+0F28: a0c3a2af   ; 3CA: __thumb int wstricmp(const WSHDR *ws1, const WSHDR *ws2);
+0F2C: a04fa5cd   ; 3CB: __thumb int wstrnicmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
 ;F30:            ; 3CC: __arm int PersMenuCSM_Open(const WSHDR *file_name, const WSHDR *dir, int flag, int open_mode);
 0F34: 0xA0C3A4A3 ; 3CD: __thumb int wstrtoupper(WSHDR *ws);
 0F38: 0xA0C3A565 ; 3CE: __thumb int wstrtolower(WSHDR *ws);
 0F3C: 0xA0C3A641 ; 3CF: __thumb int wstrcapitalize(WSHDR *ws);
 
-;F40:            ; 3D0: __thumb int ShowScreenSaverCodeProtection();
+0F40: 0xA16a0341 ; 3D0: __thumb int RestartLockTimers();
 ;F44:            ; 3D1: __arm void MediaProc_LaunchLastPlayback();
 0F48: 0xA16A339B ; 3D2: __thumb int GetScreenSaverType();
 0F4C: 0xA0C34809 ; 3D3: __thumb int IllumFilterSet(int flags, int unk);
@@ -988,5 +998,6 @@
 #pragma disable old_equal_ff
 +0
 
+;------------------------- end -------------------------
 ;------------------------- end -------------------------
 
