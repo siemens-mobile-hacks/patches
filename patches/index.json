@@ -56606,6 +56606,16 @@
 				"ru": "Не показывать софт-кнопки на главном экране",
 				"en": "Don't show softkeys on IDLE"
 			}
+		},
+		"11045": {
+			"id": 11045,
+			"model": "S65v58",
+			"file": "S65v58/11045-dont_display_cenral_nav_key_icon_v2.vkp",
+			"mtime": 1739529988000,
+			"title": {
+				"ru": "Не отображать иконки центральной навигационной клавиши",
+				"en": "Don't display central navigation key icon"
+			}
 		}
 	},
 	"SL65v50": {
