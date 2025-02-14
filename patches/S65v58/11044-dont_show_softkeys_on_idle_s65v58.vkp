@@ -7,7 +7,7 @@
 ;PatchID: 11044
 ;Details: https://patches.kibab.com/patches/details.php5?id=11044
 /*
-
+Патч отключает отображение софт-кнопок на ГЭ. Функционал же остается рабочим!
 */
 
 0169f4f4: 0022 f8bd
