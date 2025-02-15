@@ -29,22 +29,6 @@ Please put "#pragma disable old_equal_ff" at the end of the patch.
 
 ```
 
-[C81v51/10951-BS_SM_White_C81sw51.vkp](https://patches.kibab.com/patches/details.php5?id=10951)
-
-Warning: Uncanceled offset +01D40204 at line 32 col 1
-Please put "+0" at the end of the patch.
-```
-    29 | 00000040: 06F8D9FC2CFBDFFF52AD
-    30 | 
-    31 | ; Картинка
->   32 | +01D40204
-       | ^
-    33 | 00000000: 00000000000000000000000000000000
-    34 | 00000010: 00000000000000000000000000000000
-    35 | 00000020: 00000000000000000000000000000000
-
-```
-
 
 ### Additional files are not found
 The patch has additional files, but it isn't accessible.
