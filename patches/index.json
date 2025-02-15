@@ -56231,7 +56231,7 @@
 			"id": "10897",
 			"model": "S65v58",
 			"file": "S65v58/10897-swilib_v231124.vkp",
-			"mtime": 1732368902000,
+			"mtime": 1739529706000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -56595,6 +56595,26 @@
 			"title": {
 				"ru": "Отключение загрузки ядра MMS клиента",
 				"en": "Kill MMS client core process"
+			}
+		},
+		"11044": {
+			"id": "11044",
+			"model": "S65v58",
+			"file": "S65v58/11044-dont_show_softkeys_on_idle_s65v58.vkp",
+			"mtime": 1739529868000,
+			"title": {
+				"ru": "Не показывать софт-кнопки на главном экране",
+				"en": "Don't show softkeys on IDLE"
+			}
+		},
+		"11045": {
+			"id": "11045",
+			"model": "S65v58",
+			"file": "S65v58/11045-dont_display_cenral_nav_key_icon_v2.vkp",
+			"mtime": 1739529988000,
+			"title": {
+				"ru": "Не отображать иконки центральной навигационной клавиши",
+				"en": "Don't display central navigation key icon"
 			}
 		}
 	},
@@ -94629,11 +94649,31 @@
 		"11043": {
 			"id": "11043",
 			"model": "E71v45",
-			"file": "E71v45/11043-offline_mode_in_red_button_menu.vkp",
-			"mtime": 1739364152000,
+			"file": "E71v45/11043-offline_in_red_button_menu_v1_1.vkp",
+			"mtime": 1739541898000,
 			"title": {
 				"ru": "Режим оффлайн в меню красной кнопки",
 				"en": "Offline mode in red button menu"
+			}
+		},
+		"11047": {
+			"id": "11047",
+			"model": "E71v45",
+			"file": "E71v45/11047-disable_message_profile_activated.vkp",
+			"mtime": 1739543190000,
+			"title": {
+				"ru": "Отключить сообщение 'Профиль активирован: *'",
+				"en": "Disable message 'Profile activated: *'"
+			}
+		},
+		"11048": {
+			"id": "11048",
+			"model": "E71v45",
+			"file": "E71v45/11048-don_t_add_png_files_to_media_db_v2.vkp",
+			"mtime": 1739550568000,
+			"title": {
+				"ru": "Не добавлять png файлы в базу данных медиаплеера",
+				"en": "Don't add png files to media DB"
 			}
 		}
 	},
@@ -97457,6 +97497,16 @@
 			"title": {
 				"ru": "Задать директорию ресурсов темы",
 				"en": "Set directory of theme resources"
+			}
+		},
+		"11046": {
+			"id": "11046",
+			"model": "C81v51",
+			"file": "C81v51/11046-disable_search_c81.vkp",
+			"mtime": 1739530162000,
+			"title": {
+				"ru": "Отключить поиск в Native Explorer",
+				"en": "DisableAllSearch"
 			}
 		}
 	},
