@@ -94685,6 +94685,16 @@
 				"ru": "Исправление интерфейса выбора плейлиста в медиаплеере",
 				"en": "Fix playlist selector interface in mediaplayer"
 			}
+		},
+		"11050": {
+			"id": 11050,
+			"model": "E71v45",
+			"file": "E71v45/11050-disable_wait_in_appointments_tasks.vkp",
+			"mtime": 1739711850000,
+			"title": {
+				"ru": "Отключить 'Подождите' в (Встречи,Задания)-Нов.запись",
+				"en": "Disable 'Please wait' in (Appointments,Tasks)-New entry"
+			}
 		}
 	},
 	"C81v51": {
