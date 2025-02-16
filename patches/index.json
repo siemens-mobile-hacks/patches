@@ -94675,6 +94675,16 @@
 				"ru": "Не добавлять png файлы в базу данных медиаплеера",
 				"en": "Don't add png files to media DB"
 			}
+		},
+		"11049": {
+			"id": 11049,
+			"model": "E71v45",
+			"file": "E71v45/11049-fix_playlist_selector_in_mp.vkp",
+			"mtime": 1739711206000,
+			"title": {
+				"ru": "Исправление интерфейса выбора плейлиста в медиаплеере",
+				"en": "Fix playlist selector interface in mediaplayer"
+			}
 		}
 	},
 	"C81v51": {
