@@ -2,7 +2,7 @@
 ;Модификация Native Explorer
 ;Native Explorer Modification
 ;(c) FIL
-;Version: 1.8.6
+;Version: 1.9
 ;PatchID: 11024
 ;Details: https://patches.kibab.com/patches/details.php5?id=11024
 /*
@@ -38,10 +38,14 @@
 - Исправлены все пункты меню.
 - Исправлен выбор вкладки при выборе файла из меню настроек.
 - Исправлены софт-кнопки в некоторых режимах.
-- Поддержка горячих клавиш. Должен быть установлен патч
-11030!
-- Полностью отключен поиск файлов! Нативный поиск очень сырой, присутствует много багов. Фиксить не рационально. В будущем будет переписан на эльфе.
+- Поддержка горячих клавиш. Должен быть установлен патч 11030!
+- Полностью отключен поиск файлов! Нативный поиск очень сырой, присутствует много багов. Фиксить не рационально. В будущем (в 2035-ом) будет переписан на эльфе.
 - Небольшие оптимизации.
+Java:
+- Открытие каталога Java-приложения, вместо запуска.
+- Отключена иконка.
+- Возможность передачи jar и jad файлов через bluetooth.
+- Запуск jar, jad файлов отовсюду.
 */
 
 #pragma enable old_equal_ff
@@ -93,17 +97,17 @@
 
 #pragma enable old_equal_ff
 ; .MergeIcons_Hook
-1380650: 70B5040010002200843212780D00002A08D0A720074BC00098472900064B0831984701E0032BF8D12900044B2000984770BDC0469BCE94A0DDD094A0708A71A0
+1380640: 70B5150002008432127804000E00002A15D0030085331B78002B0AD1A7200B4BC000984705003100094B08312800984707E00979074B98470028EFD0F3E7032BF1D13100044B2000984770BD9BCE94A0DDD094A0DCD771A0708A71A0
 #pragma disable old_equal_ff
 
 ; .MergeIcons_Jump1_AddParam
 0719BBC: 46CD08FA 0020A0E1
 
 ; .MergeIcons_Jump1
-0719BC8: A8FBFFEB A09A31FA
+0719BC8: A8FBFFEB 9C9A31FA
 
 ; .MergeIcons_Jump2
-0719DD4: 25FBFFEB 1D9A31FA
+0719DD4: 25FBFFEB 199A31FA
 
 #pragma enable old_equal_ff
 ; .IsAllowThumbnail
@@ -301,14 +305,20 @@
 ; .FixMenu4MarkedDirs_Part2
 071B5E4: 000095E5 680000EA
 
-; .FixMenuItem_Open
+; .FixMenuItem_Open_Part1
 071C5EC: 020050E3 000000EA
+
+; .FixMenuItem_Open_Part2
+071C6D4: 120055E3 FF0055E3
 
 ; .FixMenuItem_Copy_Part1
 071CCF0: ADF8FFEB 0000A0E3
 
 ; .FixMenuItem_Copy_Part2
 071CC90: E0039DE5 040000EA
+
+; .FixMenuItem_Send
+071CF08: E0039DE5 040000EA
 
 ; .HideMenuItems_Part1
 071CAB8: 1770A0E3 010000EA
@@ -329,6 +339,18 @@
 
 ; .HideMenuItems_Jump3
 071B874: 1710A0E3010080E2000084E5001184E7 0600A0E10410A0E1FD9331FB000000EA
+
+; .FixJavaDirs_Part1
+069AB04: 0EFDFFEB 0000A0E1
+
+; .FixJavaDirs_Part2
+071E554: 7AEEFDEB 0000A0E1
+
+; .FixJavaDirs_Part3
+0718F58: 000050E3 FF0050E3
+
+; .FixRunJava
+09EEC7E: 07D0 07E0
 
 ; .FixDriveInfo
 069B8EC: 000050E3 0A0000EA
