@@ -1,0 +1,14 @@
+;E71v45
+;Отключить 'Подождите' в (Встречи,Задания)-Нов.запись
+;Disable 'Please wait' in (Appointments,Tasks)-New entry
+;(c) Evgr
+;Version: 
+;PatchID: 11050
+;Details: https://patches.kibab.com/patches/details.php5?id=11050
+/*
+
+*/
+
+099D25E: B1F754FE C046C046
+;------------------------- end -------------------------
+

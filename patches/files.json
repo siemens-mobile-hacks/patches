@@ -31578,7 +31578,7 @@
 		"S75v52/11023-set_csm_for_natmenu.vkp"
 	],
 	[
-		"E71v45/11024-nem_v1_8_6.vkp"
+		"E71v45/11024-nem_v1_9.vkp"
 	],
 	[
 		"CF75v23/11025-C72v22_cpu_208mhz_notlmb.vkp"
@@ -31652,5 +31652,11 @@
 	],
 	[
 		"E71v45/11048-don_t_add_png_files_to_media_db_v2.vkp"
+	],
+	[
+		"E71v45/11049-fix_playlist_selector_in_mp.vkp"
+	],
+	[
+		"E71v45/11050-disable_wait_in_appointments_tasks.vkp"
 	]
 ]

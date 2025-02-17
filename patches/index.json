@@ -94519,8 +94519,8 @@
 		"11024": {
 			"id": "11024",
 			"model": "E71v45",
-			"file": "E71v45/11024-nem_v1_8_6.vkp",
-			"mtime": 1739035030000,
+			"file": "E71v45/11024-nem_v1_9.vkp",
+			"mtime": 1739698010000,
 			"title": {
 				"ru": "Модификация Native Explorer",
 				"en": "Native Explorer Modification"
@@ -94673,7 +94673,27 @@
 			"mtime": 1739550568000,
 			"title": {
 				"ru": "Не добавлять png файлы в базу данных медиаплеера",
-				"en": "Don't add png files to media db"
+				"en": "Don't add png files to media DB"
+			}
+		},
+		"11049": {
+			"id": "11049",
+			"model": "E71v45",
+			"file": "E71v45/11049-fix_playlist_selector_in_mp.vkp",
+			"mtime": 1739711206000,
+			"title": {
+				"ru": "Исправление интерфейса выбора плейлиста в медиаплеере",
+				"en": "Fix playlist selector interface in mediaplayer"
+			}
+		},
+		"11050": {
+			"id": "11050",
+			"model": "E71v45",
+			"file": "E71v45/11050-disable_wait_in_appointments_tasks.vkp",
+			"mtime": 1739711850000,
+			"title": {
+				"ru": "Отключить 'Подождите' в (Встречи,Задания)-Нов.запись",
+				"en": "Disable 'Please wait' in (Appointments,Tasks)-New entry"
 			}
 		}
 	},
