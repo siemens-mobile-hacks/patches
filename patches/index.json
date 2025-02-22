@@ -94695,6 +94695,16 @@
 				"ru": "Отключить 'Подождите' в (Встречи,Задания)-Нов.запись",
 				"en": "Disable 'Please wait' in (Appointments,Tasks)-New entry"
 			}
+		},
+		"11051": {
+			"id": 11051,
+			"model": "E71v45",
+			"file": "E71v45/11051-disable_draw_weeks_nums_in_calendar.vkp",
+			"mtime": 1740229000000,
+			"title": {
+				"ru": "Отключить отрисовку номеров недель в календаре",
+				"en": "Disable drawing weeks numbers in calendar"
+			}
 		}
 	},
 	"C81v51": {
