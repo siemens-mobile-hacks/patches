@@ -1,0 +1,25 @@
+;SK65v50
+;Использовать первый набор в Native Menu
+;Use first set of items in native menu
+;(c) Evgr
+;(r) Lesnoy, Marie
+;Version: 
+;PatchID: 11052
+;Details: https://patches.kibab.com/patches/details.php5?id=11052
+/*
+
+*/
+
+;SK65v50
+;Использовать первый набор в Native Menu
+;Use first set of items in native menu
+;(c) Evgr
+;(i) Lesnoy, Marie
+
+02BC67C: 0FD0 0FD1
+02BC5E2: 0AD0 0AD1
+
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

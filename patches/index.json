@@ -61748,6 +61748,16 @@
 				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
 				"en": "Disable 'Please wait' in Card-Explorer"
 			}
+		},
+		"11052": {
+			"id": 11052,
+			"model": "SK65v50",
+			"file": "SK65v50/11052-sk65v50_first_set_items_in_nm_122_v.vkp",
+			"mtime": 1740594352000,
+			"title": {
+				"ru": "Использовать первый набор в Native Menu",
+				"en": "Use first set of items in native menu"
+			}
 		}
 	},
 	"CX70v50": {
