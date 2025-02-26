@@ -61788,6 +61788,16 @@
 				"ru": "Исправить позицию иконок Native Menu 3x4",
 				"en": "Fix Position Native Menu Icons in lay 3x4"
 			}
+		},
+		"11056": {
+			"id": 11056,
+			"model": "SK65v50",
+			"file": "SK65v50/11056-sk65v50_change_items_nm_3x4.vkp",
+			"mtime": 1740594782000,
+			"title": {
+				"ru": "Изменить Native Menu в стиле NSG",
+				"en": "Change Native Menu NSG Style"
+			}
 		}
 	},
 	"CX70v50": {
