@@ -1,0 +1,27 @@
+;SK65v50
+;Исправить позицию иконок Native Menu 3x4
+;Fix Position Native Menu Icons in lay 3x4
+;(c) Marie
+;Version: 
+;PatchID: 11055
+;Details: https://patches.kibab.com/patches/details.php5?id=11055
+/*
+Если закомментировать вторую строчку получится меню 4x3
+*/
+
+;SK65v50
+;Fix Position Native Menu Icons in lay 3x4
+;Исправить позицию иконок Native Menu 3x4
+;(c) Marie
+
+/*
+Если закомментировать вторую строчку получится меню 4x3
+*/
+
+0456D6C: 0x0028001E 0x001E001E
+0456D78: 0x00010008 0x00080001 ; 3x4
+
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

@@ -61778,6 +61778,16 @@
 				"ru": "Включить 12 иконок в Native Menu",
 				"en": "Set 12 items in Native menu"
 			}
+		},
+		"11055": {
+			"id": 11055,
+			"model": "SK65v50",
+			"file": "SK65v50/11055-sk65v50_fix_icons_position_in_nm_3x.vkp",
+			"mtime": 1740594660000,
+			"title": {
+				"ru": "Исправить позицию иконок Native Menu 3x4",
+				"en": "Fix Position Native Menu Icons in lay 3x4"
+			}
 		}
 	},
 	"CX70v50": {
