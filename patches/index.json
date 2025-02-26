@@ -61768,6 +61768,16 @@
 				"ru": "Заменить \"Камера\" на \"Профили\" в Native Menu",
 				"en": "Replace \"Camera\" to \"Profiles\" in Native Menu"
 			}
+		},
+		"11054": {
+			"id": 11054,
+			"model": "SK65v50",
+			"file": "SK65v50/11054-sk65v50_3x4_in_native_menu.vkp",
+			"mtime": 1740594536000,
+			"title": {
+				"ru": "Включить 12 иконок в Native Menu",
+				"en": "Set 12 items in Native menu"
+			}
 		}
 	},
 	"CX70v50": {
