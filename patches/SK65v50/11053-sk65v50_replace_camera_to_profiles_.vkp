@@ -1,0 +1,26 @@
+;SK65v50
+;Заменить "Камера" на "Профили" в Native Menu
+;Replace "Camera" to "Profiles" in Native Menu
+;(c) Marie
+;Version: 
+;PatchID: 11053
+;Details: https://patches.kibab.com/patches/details.php5?id=11053
+/*
+
+*/
+
+;SK65v50
+;Заменить "Камера" на "Профили" в Native Menu
+;Replace "Camera" to "Profiles" in Native Menu
+;(c) Marie
+;(!) Addon to "Use first set of items in native menu" (c) Evgr
+
+0456C2C: 0xA0456F28 0xA0456F48 ; Unselect Icon
+0456C30: 0xA0456E64 0xA0456EE4 ; Select Icon
+0456C34: 0x00000E67 0x0000011C ; LGP String
+0456C38: 0xA02BC593 0xA02BC5C5 ; Entry
+
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

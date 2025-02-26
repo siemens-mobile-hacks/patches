@@ -61758,6 +61758,16 @@
 				"ru": "Использовать первый набор в Native Menu",
 				"en": "Use first set of items in native menu"
 			}
+		},
+		"11053": {
+			"id": 11053,
+			"model": "SK65v50",
+			"file": "SK65v50/11053-sk65v50_replace_camera_to_profiles_.vkp",
+			"mtime": 1740594438000,
+			"title": {
+				"ru": "Заменить \"Камера\" на \"Профили\" в Native Menu",
+				"en": "Replace \"Camera\" to \"Profiles\" in Native Menu"
+			}
 		}
 	},
 	"CX70v50": {
