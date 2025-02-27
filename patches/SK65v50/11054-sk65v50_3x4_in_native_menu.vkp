@@ -1,0 +1,25 @@
+;SK65v50
+;Включить 12 иконок в Native Menu
+;Set 12 items in Native menu
+;(c) Evgr
+;Version: 
+;PatchID: 11054
+;Details: https://patches.kibab.com/patches/details.php5?id=11054
+/*
+Патч имеет несколько дополнений, рекомендуется их установить...
+*/
+
+;SK65v50
+;Set 12 items in Native menu
+;Включить 12 иконок в Native Menu
+;(c) Evgr
+
+02BC6CE: 09 0C ; increase items number upto 12
+0456D20: 00 09
+0456D24: 01 0A
+0456D28: 02 0B
+
+
+;locale=Russian_Russia.1251
+;------------------------- end -------------------------
+

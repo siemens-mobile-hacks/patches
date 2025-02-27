@@ -61748,6 +61748,56 @@
 				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
 				"en": "Disable 'Please wait' in Card-Explorer"
 			}
+		},
+		"11052": {
+			"id": "11052",
+			"model": "SK65v50",
+			"file": "SK65v50/11052-sk65v50_first_set_items_in_nm_122_v.vkp",
+			"mtime": 1740594352000,
+			"title": {
+				"ru": "Использовать первый набор в Native Menu",
+				"en": "Use first set of items in native menu"
+			}
+		},
+		"11053": {
+			"id": "11053",
+			"model": "SK65v50",
+			"file": "SK65v50/11053-sk65v50_replace_camera_to_profiles_.vkp",
+			"mtime": 1740594438000,
+			"title": {
+				"ru": "Заменить \"Камера\" на \"Профили\" в Native Menu",
+				"en": "Replace \"Camera\" to \"Profiles\" in Native Menu"
+			}
+		},
+		"11054": {
+			"id": "11054",
+			"model": "SK65v50",
+			"file": "SK65v50/11054-sk65v50_3x4_in_native_menu.vkp",
+			"mtime": 1740594536000,
+			"title": {
+				"ru": "Включить 12 иконок в Native Menu",
+				"en": "Set 12 items in Native menu"
+			}
+		},
+		"11055": {
+			"id": "11055",
+			"model": "SK65v50",
+			"file": "SK65v50/11055-sk65v50_fix_icons_position_in_nm_3x.vkp",
+			"mtime": 1740594660000,
+			"title": {
+				"ru": "Исправить позицию иконок Native Menu 3x4",
+				"en": "Fix Position Native Menu Icons in lay 3x4"
+			}
+		},
+		"11056": {
+			"id": "11056",
+			"model": "SK65v50",
+			"file": "SK65v50/11056-sk65v50_change_items_nm_3x4.vkp",
+			"mtime": 1740594782000,
+			"title": {
+				"ru": "Изменить Native Menu в стиле NSG",
+				"en": "Change Native Menu NSG Style"
+			}
 		}
 	},
 	"CX70v50": {
@@ -94419,8 +94469,8 @@
 		"10856": {
 			"id": "10856",
 			"model": "E71v45",
-			"file": "E71v45/10856-activate_dyn_light.vkp",
-			"mtime": 1720381468000,
+			"file": "E71v45/10856-activate_dyn_light_v1_0_1.vkp",
+			"mtime": 1740418484000,
 			"title": {
 				"ru": "Активировать динамический свет",
 				"en": "Activate dynamic light"
@@ -94519,8 +94569,8 @@
 		"11024": {
 			"id": "11024",
 			"model": "E71v45",
-			"file": "E71v45/11024-nem_v1_9.vkp",
-			"mtime": 1739698010000,
+			"file": "E71v45/11024-nem_v1_11.vkp",
+			"mtime": 1740422198000,
 			"title": {
 				"ru": "Модификация Native Explorer",
 				"en": "Native Explorer Modification"
@@ -94694,6 +94744,16 @@
 			"title": {
 				"ru": "Отключить 'Подождите' в (Встречи,Задания)-Нов.запись",
 				"en": "Disable 'Please wait' in (Appointments,Tasks)-New entry"
+			}
+		},
+		"11051": {
+			"id": "11051",
+			"model": "E71v45",
+			"file": "E71v45/11051-disable_draw_weeks_nums_in_calendar.vkp",
+			"mtime": 1740229000000,
+			"title": {
+				"ru": "Отключить отрисовку номеров недель в календаре",
+				"en": "Disable drawing weeks numbers in calendar"
 			}
 		}
 	},

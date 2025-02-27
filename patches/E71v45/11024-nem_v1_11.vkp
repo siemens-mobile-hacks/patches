@@ -2,7 +2,8 @@
 ;Модификация Native Explorer
 ;Native Explorer Modification
 ;(c) FIL
-;Version: 1.9
+;(r) 1nvisible
+;Version: 1.11
 ;PatchID: 11024
 ;Details: https://patches.kibab.com/patches/details.php5?id=11024
 /*
@@ -34,6 +35,7 @@
 -- Фикс переименовывания когда меняется только регистр.
 - Работа с системными директориями как с обычными.
 - Рекурсивное удаление каталогов.
+- Фикс установки атрибутов папок при их копировании или перемещении.
 - Работа с выделенными папками, как с обычными файлами.
 - Исправлены все пункты меню.
 - Исправлен выбор вкладки при выборе файла из меню настроек.
@@ -43,7 +45,7 @@
 - Небольшие оптимизации.
 Java:
 - Открытие каталога Java-приложения, вместо запуска.
-- Отключена иконка.
+- Уникальная иконка для Java-приложения(ID: 1020), которая отличается от иконки jar файлов.
 - Возможность передачи jar и jad файлов через bluetooth.
 - Запуск jar, jad файлов отовсюду.
 */
@@ -62,11 +64,8 @@ Java:
 ; .FixMemoryLeak_1
 071E1D8: 000056E3 060056E1
 
-; .Replace_GetExtIconLarge_1
+; .Replace_GetExtIconLarge
 071E5B4: CA90F7EB C390F7EB
-
-; .Replace_GetExtIconLarge_2
-071E570: DB90F7EB D490F7EB
 
 ; .FixDirIcon_1
 0870A54: 09040000 C4030000
@@ -187,11 +186,25 @@ Java:
 ; .FixCopyMarkedDirs_Part3
 0715D60: 9D1E00EB 0000A0E3
 
+#pragma enable old_equal_ff
+; .FixCopyDirsAttributes_Hook
+1380C60: 70B50D4BC64600B583B0040098476B46DE1C01AA094B3100050040469847002804D03178064B01AA20009847280003B040BCB04670BDC046E8025DA0F87E56A0EC8156A0
+#pragma disable old_equal_ff
+
+; .FixCopyDirsAttributes_Jump
+0695800: B8EAFCEB 16AD33FA
+
+; .FixMoveSystemDirs
+0695F30: 040010E3 040000EA
+
 ; .FixDeleteROFiles_Part1
 05D0F00: 0100A013 0000A013
 
 ; .FixDeleteROFiles_Part2
 0694F28: 0100000A 070000EA
+
+; .FixDeleteSystemDirs
+06950EC: 040010E3 040000EA
 
 #pragma enable old_equal_ff
 ; .IsAllowPaste
@@ -344,10 +357,13 @@ Java:
 069AB04: 0EFDFFEB 0000A0E1
 
 ; .FixJavaDirs_Part2
-071E554: 7AEEFDEB 0000A0E1
-
-; .FixJavaDirs_Part3
 0718F58: 000050E3 FF0050E3
+
+; .FixJavaDirIcon_Part1
+071E56C: 1300A0E3DB90F7EB 48089FE5040080E2
+
+; .FixJavaDirIcon_Part2
+0870A60: 00000000 FC030000
 
 ; .FixRunJava
 09EEC7E: 07D0 07E0

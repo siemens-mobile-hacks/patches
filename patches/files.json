@@ -31090,7 +31090,7 @@
 		"E71v45/10855-dont_lock_vibra.vkp"
 	],
 	[
-		"E71v45/10856-activate_dyn_light.vkp"
+		"E71v45/10856-activate_dyn_light_v1_0_1.vkp"
 	],
 	[
 		"E71v45/10857-speed_up_ring_ui_v1_0_1.vkp"
@@ -31578,7 +31578,7 @@
 		"S75v52/11023-set_csm_for_natmenu.vkp"
 	],
 	[
-		"E71v45/11024-nem_v1_9.vkp"
+		"E71v45/11024-nem_v1_11.vkp"
 	],
 	[
 		"CF75v23/11025-C72v22_cpu_208mhz_notlmb.vkp"
@@ -31658,5 +31658,23 @@
 	],
 	[
 		"E71v45/11050-disable_wait_in_appointments_tasks.vkp"
+	],
+	[
+		"E71v45/11051-disable_draw_weeks_nums_in_calendar.vkp"
+	],
+	[
+		"SK65v50/11052-sk65v50_first_set_items_in_nm_122_v.vkp"
+	],
+	[
+		"SK65v50/11053-sk65v50_replace_camera_to_profiles_.vkp"
+	],
+	[
+		"SK65v50/11054-sk65v50_3x4_in_native_menu.vkp"
+	],
+	[
+		"SK65v50/11055-sk65v50_fix_icons_position_in_nm_3x.vkp"
+	],
+	[
+		"SK65v50/11056-sk65v50_change_items_nm_3x4.vkp"
 	]
 ]

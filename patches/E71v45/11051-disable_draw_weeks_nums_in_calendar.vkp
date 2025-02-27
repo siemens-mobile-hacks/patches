@@ -1,0 +1,28 @@
+;E71v45
+;Отключить отрисовку номеров недель в календаре
+;Disable drawing weeks numbers in calendar
+;(c) FIL
+;(r) Azq2
+;Version: 
+;PatchID: 11051
+;Details: https://patches.kibab.com/patches/details.php5?id=11051
+/*
+
+*/
+
+0A7C41C: 1E 00
+
+0A7C55A: 1C 0E
+
+0C6009C: 1E 0F
+0C6009D: 3C 2D
+0C6009E: 5A 4B
+0C6009F: 78 69
+0C600A0: 96 87
+0C600A1: B4 A5
+0C600A2: D2 C3
+
+0A7C736: FFF785FE C046C046
+
+;------------------------- end -------------------------
+
