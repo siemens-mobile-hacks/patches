@@ -94755,6 +94755,16 @@
 				"ru": "Отключить отрисовку номеров недель в календаре",
 				"en": "Disable drawing weeks numbers in calendar"
 			}
+		},
+		"11057": {
+			"id": "11057",
+			"model": "E71v45",
+			"file": "E71v45/11057-fam.vkp",
+			"mtime": 1741028706000,
+			"title": {
+				"ru": "Модификация File Attributes",
+				"en": "File Attributes Modification"
+			}
 		}
 	},
 	"C81v51": {
