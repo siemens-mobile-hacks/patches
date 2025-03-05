@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 070225
+;Version: 050325
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -1021,6 +1021,8 @@
 0F5C: 0xA0C60F78 ; 83D7: RECT *GetOptionsHeaderRECT();
 0F60: 0xA084C854 ; 83D8: RECT *GetMainAreaRECT();
 0F64: 0xA0A32284 ; 3D9: __arm int GetPITSize();
+0F68: 0xA04FB651 ; 3DA: __thumb int wstrwstr(const WSHDR *ws, const WSHDR *search, uint32_t start_pos);
+0F6C: 0xA04FB575 ; 3DB: __thumb void wstrreplace(WSHDR *dest, const WSHDR *src, uint32_t pos);
 
 #pragma disable old_equal_ff
 +0
