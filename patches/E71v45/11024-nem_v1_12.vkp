@@ -3,7 +3,7 @@
 ;Native Explorer Modification
 ;(c) FIL
 ;(r) 1nvisible
-;Version: 1.11
+;Version: 1.12
 ;PatchID: 11024
 ;Details: https://patches.kibab.com/patches/details.php5?id=11024
 /*
@@ -29,7 +29,7 @@
 Системное:
 - Отключена своебразная сортировка избранных каталогов.
 - Устранена неприятная утечка памяти при переключении вкладок.
-- Возможность удаления файлов "Только для чтения".
+- Запрет удаления файлов с атрибутами  "Read only", "System". Рекомендуется использовать совместно c патчем 11057.
 - Переименовывание файлов:
 -- Переименовывание с расширением.
 -- Фикс переименовывания когда меняется только регистр.
@@ -46,8 +46,7 @@
 Java:
 - Открытие каталога Java-приложения, вместо запуска.
 - Уникальная иконка для Java-приложения(ID: 1020), которая отличается от иконки jar файлов.
-- Возможность передачи jar и jad файлов через bluetooth.
-- Запуск jar, jad файлов отовсюду.
+- Возможность
 */
 
 #pragma enable old_equal_ff
@@ -197,15 +196,6 @@ Java:
 ; .FixMoveSystemDirs
 0695F30: 040010E3 040000EA
 
-; .FixDeleteROFiles_Part1
-05D0F00: 0100A013 0000A013
-
-; .FixDeleteROFiles_Part2
-0694F28: 0100000A 070000EA
-
-; .FixDeleteSystemDirs
-06950EC: 040010E3 040000EA
-
 #pragma enable old_equal_ff
 ; .IsAllowPaste
 1380910: 30B50F4BC7B004000D00802206A901A89847A46C002C01D101200EE022686168084B01A89847002801D1A468F2E7064B290001A898470028F7D147B030BDC0465BB24FA034055DA07FAC4FA0
@@ -324,6 +314,9 @@ Java:
 ; .FixMenuItem_Open_Part2
 071C6D4: 120055E3 FF0055E3
 
+; .FixMenuItem_Open_Part3
+071C6E8: 130055E3 FF0055E3
+
 ; .FixMenuItem_Copy_Part1
 071CCF0: ADF8FFEB 0000A0E3
 
@@ -338,20 +331,20 @@ Java:
 
 #pragma enable old_equal_ff
 ; .HideMenuItems_Hook
-138087A: 84300A680078531C002803D09B000220585013189A00132088508A18033050600233013090600B607047
+1380CB0: 0B68F0B5CBB000935E1C0300853301901B780C00002B0AD1030084331B78B700CF19002B0FD0009E022302363B60B3001322E250E31803325A60023601329A6026604BB0F0BD0C4B80220AA905A8984729000198094B05AA984702ABDD1D04AA074B290005A898472A7805231A42DED0009E03330236D9E75BB24FA0248C69A0F87E56A0
 #pragma disable old_equal_ff
 
 ; .HideMenuItems_Jump1
-071CAC4: F81F8D0201008002E0038D050700000A 0400A0E13E1E8DE2698F31FB080000EA
+071CAC4: F81F8D0201008002E0038D050700000A 0400A0E13E1E8DE2779031FA080000EA
 
 ; .HideMenuItems_Part2
 071B510: 1760A0E3 080000EA
 
 ; .HideMenuItems_Jump2
-071B538: 00009515010080120000851500618517 0600A0E10410A0E1CC9431FB0000A0E1
+071B538: 00009515010080120000851500618517 0600A0E10410A0E1DA9531FA0000A0E1
 
 ; .HideMenuItems_Jump3
-071B874: 1710A0E3010080E2000084E5001184E7 0600A0E10410A0E1FD9331FB000000EA
+071B874: 1710A0E3010080E2000084E5001184E7 0600A0E10410A0E10B9531FA0000A0E1
 
 ; .FixJavaDirs_Part1
 069AB04: 0EFDFFEB 0000A0E1
@@ -367,6 +360,9 @@ Java:
 
 ; .FixRunJava
 09EEC7E: 07D0 07E0
+
+; .FixJavaAttributes
+069B7D4: DAF9FFEB 0000A0E3
 
 ; .FixDriveInfo
 069B8EC: 000050E3 0A0000EA
