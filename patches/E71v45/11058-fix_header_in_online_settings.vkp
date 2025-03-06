@@ -1,0 +1,16 @@
+;E71v45
+;Исправить заголовок в 'Настр. онлайн'
+;Fix header in 'Online settings'
+;(c) FIL
+;Version: 
+;PatchID: 11058
+;Details: https://patches.kibab.com/patches/details.php5?id=11058
+/*
+
+*/
+
+0C4EFCC: 8C100100 0x11094
+0C4DCCC: 0100 0x11A
+
+;------------------------- end -------------------------
+
