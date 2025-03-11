@@ -1,0 +1,14 @@
+;E71v45
+;Отключить 'Подождите' в Заметки-Нов.запись
+;Disable 'Please wait' in Notes-New entry
+;(c) Evgr
+;Version: 
+;PatchID: 11059
+;Details: https://patches.kibab.com/patches/details.php5?id=11059
+/*
+
+*/
+
+0A7FC0E: CFF67CF9 C046C046
+;------------------------- end -------------------------
+

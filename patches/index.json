@@ -94775,6 +94775,16 @@
 				"ru": "Исправить заголовок в 'Настр. онлайн'",
 				"en": "Fix header in 'Online settings'"
 			}
+		},
+		"11059": {
+			"id": "11059",
+			"model": "E71v45",
+			"file": "E71v45/11059-disable_wait_in_notes_new_entry.vkp",
+			"mtime": 1741623890000,
+			"title": {
+				"ru": "Отключить 'Подождите' в Заметки-Нов.запись",
+				"en": "Disable 'Please wait' in Notes-New entry"
+			}
 		}
 	},
 	"C81v51": {
