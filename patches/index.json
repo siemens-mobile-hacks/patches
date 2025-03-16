@@ -30042,6 +30042,26 @@
 				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
 				"en": "Disable 'Please wait' in Card-Explorer"
 			}
+		},
+		"11060": {
+			"id": "11060",
+			"model": "CX75v13",
+			"file": "CX75v13/11060-change_scancode_of_internet_key.vkp",
+			"mtime": 1742069586000,
+			"title": {
+				"ru": "Изменить сканкод клавиши 'Интернет'",
+				"en": "Change scancode of 'Internet' key"
+			}
+		},
+		"11061": {
+			"id": "11061",
+			"model": "CX75v13",
+			"file": "CX75v13/11061-cx75v13_change_scancodes.vkp",
+			"mtime": 1742077014000,
+			"title": {
+				"ru": "Изменить сканкоды боковых кнопок",
+				"en": "Change Side Buttons Scancodes"
+			}
 		}
 	},
 	"CX75v23": {
