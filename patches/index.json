@@ -49798,16 +49798,6 @@
 				"en": "system_disk_cache"
 			}
 		},
-		"2909": {
-			"id": 2909,
-			"model": "M65v50",
-			"file": "M65v50/2909-toggle_prov2-MP.vkp",
-			"mtime": 1144695560000,
-			"title": {
-				"ru": "Переключение между патчами замены имени оператора",
-				"en": "Toggle provider string patches"
-			}
-		},
 		"2953": {
 			"id": 2953,
 			"model": "M65v50",
