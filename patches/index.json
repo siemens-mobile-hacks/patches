@@ -47887,16 +47887,6 @@
 				"en": "Functon Library"
 			}
 		},
-		"1124": {
-			"id": "1124",
-			"model": "CX65v50",
-			"file": "CX65v50/1124-bottom_date_v8-MP.vkp",
-			"mtime": 1133730000000,
-			"title": {
-				"ru": "Дата внизу (на главном экране) в виде \"Ср, 11 Май\"",
-				"en": "Date at the bottom of maincsreen as \"We, 11 May\""
-			}
-		},
 		"1153": {
 			"id": "1153",
 			"model": "CX65v50",
@@ -49806,26 +49796,6 @@
 			"title": {
 				"ru": "Перенос system на диск cache",
 				"en": "system_disk_cache"
-			}
-		},
-		"2893": {
-			"id": "2893",
-			"model": "M65v50",
-			"file": "M65v50/2893-Master-Patch_v3_RC2.vkp",
-			"mtime": 1147450762000,
-			"title": {
-				"ru": "Master-Patch v3 RC2",
-				"en": "Master-Patch v3 RC2"
-			}
-		},
-		"2909": {
-			"id": "2909",
-			"model": "M65v50",
-			"file": "M65v50/2909-toggle_prov2-MP.vkp",
-			"mtime": 1144695560000,
-			"title": {
-				"ru": "Переключение между патчами замены имени оператора",
-				"en": "Toggle provider string patches"
 			}
 		},
 		"2953": {
