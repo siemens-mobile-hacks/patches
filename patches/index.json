@@ -49798,16 +49798,6 @@
 				"en": "system_disk_cache"
 			}
 		},
-		"2893": {
-			"id": 2893,
-			"model": "M65v50",
-			"file": "M65v50/2893-Master-Patch_v3_RC2.vkp",
-			"mtime": 1147450762000,
-			"title": {
-				"ru": "Master-Patch v3 RC2",
-				"en": "Master-Patch v3 RC2"
-			}
-		},
 		"2909": {
 			"id": 2909,
 			"model": "M65v50",
