@@ -47887,16 +47887,6 @@
 				"en": "Functon Library"
 			}
 		},
-		"1124": {
-			"id": 1124,
-			"model": "CX65v50",
-			"file": "CX65v50/1124-bottom_date_v8-MP.vkp",
-			"mtime": 1133730000000,
-			"title": {
-				"ru": "Дата внизу (на главном экране) в виде \"Ср, 11 Май\"",
-				"en": "Date at the bottom of maincsreen as \"We, 11 May\""
-			}
-		},
 		"1153": {
 			"id": 1153,
 			"model": "CX65v50",
