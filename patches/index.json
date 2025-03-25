@@ -53621,16 +53621,6 @@
 				"en": "Change Calling Animation Pos"
 			}
 		},
-		"3302": {
-			"id": "3302",
-			"model": "S65v58",
-			"file": "S65v58/3302-Toggle_prov_string_patches_v2-MP.vkp",
-			"mtime": 1147112712000,
-			"title": {
-				"ru": "Переключение между патчами замены имени оператора",
-				"en": "Toggle provider string patches"
-			}
-		},
 		"3310": {
 			"id": "3310",
 			"model": "S65v58",
