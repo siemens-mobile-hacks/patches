@@ -1,0 +1,16 @@
+;E71Cv41
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle
+;(r) FIL
+;(p) Виктор89
+;Version: 3
+;PatchID: 11062
+;Details: https://patches.kibab.com/patches/details.php5?id=11062
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+
+0683EC2: 51F713FF 95F1AAEA
+;------------------------- end -------------------------
+

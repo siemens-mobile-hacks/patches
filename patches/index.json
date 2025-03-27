@@ -98111,6 +98111,16 @@
 				"ru": "Расширенные списки вызовов",
 				"en": "Extended \"Calls dialed\" list"
 			}
+		},
+		"11062": {
+			"id": "11062",
+			"model": "E71Cv41",
+			"file": "E71Cv41/11062-Work_without_SIM_card_final.vkp",
+			"mtime": 1743021612000,
+			"title": {
+				"ru": "Работа телефона без SIM карты",
+				"en": "Work without SIM card"
+			}
 		}
 	},
 	"M81v47": {
