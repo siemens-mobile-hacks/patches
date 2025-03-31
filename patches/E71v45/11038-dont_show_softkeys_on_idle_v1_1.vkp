@@ -2,7 +2,7 @@
 ;Не показывать софт-кнопки на главном экране
 ;Don't show softkeys on IDLE
 ;(c) FIL
-;Version: 
+;Version: 1.1
 ;PatchID: 11038
 ;Details: https://patches.kibab.com/patches/details.php5?id=11038
 /*
@@ -11,5 +11,7 @@
 
 05C2922: 0022 08E0
 05C293A: 796C 0021
+05C34D8: FFF736FA C046C046 ; hide missed events icons
+
 ;------------------------- end -------------------------
 
