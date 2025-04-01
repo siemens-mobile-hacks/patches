@@ -94619,8 +94619,8 @@
 		"11038": {
 			"id": "11038",
 			"model": "E71v45",
-			"file": "E71v45/11038-dont_show_softkeys_on_idle.vkp",
-			"mtime": 1738869636000,
+			"file": "E71v45/11038-dont_show_softkeys_on_idle_v1_1.vkp",
+			"mtime": 1743443916000,
 			"title": {
 				"ru": "Не показывать софт-кнопки на главном экране",
 				"en": "Don't show softkeys on IDLE"
