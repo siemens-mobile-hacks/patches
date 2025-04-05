@@ -94755,6 +94755,16 @@
 				"ru": "Отключить 'Подождите' в Заметки-Нов.запись",
 				"en": "Disable 'Please wait' in Notes-New entry"
 			}
+		},
+		"11063": {
+			"id": 11063,
+			"model": "E71v45",
+			"file": "E71v45/11063-disable_play_key_tone_on_longpress.vkp",
+			"mtime": 1743836050000,
+			"title": {
+				"ru": "Отключить сигнал нажатия клавиш при длинном нажатии",
+				"en": "Disable playing key tone on longpress"
+			}
 		}
 	},
 	"C81v51": {
