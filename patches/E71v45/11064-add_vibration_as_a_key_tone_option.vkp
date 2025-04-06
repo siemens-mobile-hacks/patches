@@ -1,0 +1,44 @@
+;E71v45
+;Добавить пункт "Вибросигнал" при выборе "Сиг. наж. клав"
+;Add vibration as a key tone option
+;(c) FIL
+;Version: 
+;PatchID: 11064
+;Details: https://patches.kibab.com/patches/details.php5?id=11064
+/*
+Рекомендую устанавливать совместно с патчем 11063.
+*/
+
+#pragma enable old_equal_ff
+; .MenuDesc
+1381500: DE0500000000000000000000B40B0000FFFFFF7F000000000000000001000000D2010000FFFFFF7F000000000000000002000000D4010000FFFFFF7F0000000000000000030000007B010000FFFFFF7F0000000000000000
+#pragma disable old_equal_ff
+
+; .ReplaceMenuDescAddr
+063FC28: 489184A0 F81438A1
+
+; .FixMenuHeader
+063FB9A: 0838 0830
+
+; .ChangeMenuItemsCount_Part1
+063FBB2: 0321 0421
+
+; .ChangeMenuItemsCount_Part2
+063FBDA: 0321 0421
+
+; .ChangeKeyTonesCount_Part1
+063FB3C: 0228 0328
+
+; .ChangeKeyTonesCount_Part2
+05AD382: 022C 032C
+
+#pragma enable old_equal_ff
+; .PlayKeySound_Hook
+13815A0: 10B5064B98470400032804D1044B0122052132209847200010BDC046084B5AA031F106A0
+#pragma disable old_equal_ff
+
+; .PlayKeySound_Jump
+05A285C: A90800EB 4F7B37FA
+
+;------------------------- end -------------------------
+
