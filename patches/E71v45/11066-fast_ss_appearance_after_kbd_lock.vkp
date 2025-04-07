@@ -1,0 +1,19 @@
+;E71v45
+;Моментальный запуск скринсейвера после блокировки клавиатуры
+;Fast ScreenSaver appearance after keyboard lock
+;(c) funMarkus, FIL
+;Version: 2
+;PatchID: 11066
+;Details: https://patches.kibab.com/patches/details.php5?id=11066
+/*
+В 2025-ом поправил баг, при котором были глюки, если скринсейвер выключен. В частности невозможно было разблокировать клавиатуру.
+*/
+
+; .ShowScreenSaver_Hook
+06FC0DC: 696D706C656D656E746174696F6E2F6170692F636164656661756C7477697265636F6E6E656374697669747968616E646C65722E F8B51F00084B04000D0016009847FF2806D120003B00054C32002900A047F8BD034B9847FBE7C046D54E5CA0C1E894A0830B67A0
+
+; .ShowScreenSaver_Jump
+0700350: F8F034EB FBF7C4FE
+
+;------------------------- end -------------------------
+
