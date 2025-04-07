@@ -94775,6 +94775,16 @@
 				"ru": "Добавить пункт \"Вибросигнал\" при выборе \"Сиг. наж. клав\"",
 				"en": "Add vibration as a key tone option"
 			}
+		},
+		"11065": {
+			"id": "11065",
+			"model": "E71v45",
+			"file": "E71v45/11065-lock_unlock_by_double_press_of_hash.vkp",
+			"mtime": 1743923986000,
+			"title": {
+				"ru": "Блокировка или разблокировка клавиатуры двойным нажатием клавиши '#'",
+				"en": "Lock or unlock keypad by double press of hash button"
+			}
 		}
 	},
 	"C81v51": {

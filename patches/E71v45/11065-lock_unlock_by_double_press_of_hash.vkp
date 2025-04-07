@@ -1,0 +1,47 @@
+;E71v45
+;Блокировка или разблокировка клавиатуры двойным нажатием клавиши '#'
+;Lock or unlock keypad by double press of hash button
+;(c) FIL
+;Version: 
+;PatchID: 11065
+;Details: https://patches.kibab.com/patches/details.php5?id=11065
+/*
+Блокировка/Разблокировка клавиатуры двойным нажатием на '#'.
+Дополнительно:
+ 1. Удалено сообщение с экрана блокировки "Press & hold '#' to release".
+ 2. Более красивое позиционирование элементов экрана блокировки.
+ 3. Полностью отключен ввод 112, 911.
+*/
+
+; .KbdLock_Hook
+0676E7C: 43616D41453A2043616D41455F47657450726F706572747948616E646C65723A2050726F706572747920726571756573 10B50378232B0AD14378232B07D10120044B9847044B98470120404210BD034B9847FBE797F594A073836EA001B022A1
+
+; .KbdLock_Jump
+0663852: 94F152EE 13F013FB
+
+; .KbdUnlock_Part1
+0670BB4: 08D00D2C 50D107E0
+
+; .KbdUnlock_Part2
+0702C8A: 07D16068 07D018E0
+
+; .KbdUnlock_Part3
+0669846: 9638 9438
+
+; .KeypadLock_DisableText
+0669AA0: 0021 20E0
+
+; .KeypadLock_FixIconPosition
+084AD20: 0A002D00 02004D00
+
+; .KeypadLock_FixTextPosition
+084AC68: 3C005000EF008F00 30009000EF00CF00
+
+; .KeypadLock_DisableInput_Part1
+06696B0: F0B5051C 01207047
+
+; .KeypadLock_DisableInput_Part2
+06699D4: 0221 0021
+
+;------------------------- end -------------------------
+
