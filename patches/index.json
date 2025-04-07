@@ -94779,8 +94779,8 @@
 		"11065": {
 			"id": 11065,
 			"model": "E71v45",
-			"file": "E71v45/11065-lock_unlock_by_double_press_of_hash.vkp",
-			"mtime": 1743923986000,
+			"file": "E71v45/11065-lock_unlock_by_dbl_press_of___v1_1.vkp",
+			"mtime": 1744039418000,
 			"title": {
 				"ru": "Блокировка или разблокировка клавиатуры двойным нажатием клавиши '#'",
 				"en": "Lock or unlock keypad by double press of hash button"
