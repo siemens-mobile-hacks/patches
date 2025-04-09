@@ -94769,8 +94769,8 @@
 		"11064": {
 			"id": "11064",
 			"model": "E71v45",
-			"file": "E71v45/11064-add_vibration_as_a_key_tone_option.vkp",
-			"mtime": 1743871174000,
+			"file": "E71v45/11064-add_vibration_key_tone_option_v1_2.vkp",
+			"mtime": 1744117742000,
 			"title": {
 				"ru": "Добавить пункт \"Вибросигнал\" при выборе \"Сиг. наж. клав\"",
 				"en": "Add vibration as a key tone option"
