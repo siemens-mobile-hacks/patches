@@ -87516,6 +87516,17 @@
 				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
 				"en": "Disable 'Please wait' in Card-Explorer"
 			}
+		},
+		"11068": {
+			"id": 11068,
+			"model": "C72v22",
+			"file": "C72v22/11068-x75_graphic.vkp",
+			"additionalFile": "C72v22/11068-x75_graphic.zip",
+			"mtime": 1744221750000,
+			"title": {
+				"ru": "Графика x75",
+				"en": "x75 graphpack"
+			}
 		}
 	},
 	"SXG75v22": {
