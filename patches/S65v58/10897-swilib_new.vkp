@@ -3,24 +3,13 @@
 ;Functions Library
 ;(c) avkiev
 ;(p) dimonp25
-;Version: 140225
+;Version: 080425
 ;PatchID: 10897
 ;Details: https://patches.kibab.com/patches/details.php5?id=10897
 /*
-Добавил новые ф как в либе E71 от моего брата Фила
++3DA,3DB
 */
 
-;S65v58
-;Библиотека функций
-;Functions Library
-;(c) avkiev
-;(p) dimonp25
-
-/*
-
-*/
-
-;Library 22.09.2024
 +0FD4000
 #pragma enable old_equal_ff
 000: 0xA0002070   ; 00: __arm void loopback0();
@@ -994,10 +983,11 @@
 0F5C: 0xA0C27054 ; 83D7: RECT *GetOptionsHeaderRECT();
 0F60: 0xA0A25E74 ; 83D8: RECT *GetMainAreaRECT();
 0F64: 0xA11599B3 ; 3D9: __thumb int GetPITSize();
+0F68: 0xA0c3114f ; 3DA: __thumb int wstrwstr(const WSHDR *ws, const WSHDR *search, uint32_t start_pos);
+0F6C: 0xA0c30f8d ; 3DB: __thumb void wstrreplace(WSHDR *dest, const WSHDR *src, uint32_t pos);
 
 #pragma disable old_equal_ff
 +0
 
-;------------------------- end -------------------------
 ;------------------------- end -------------------------
 
