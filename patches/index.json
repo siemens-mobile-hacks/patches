@@ -87516,6 +87516,17 @@
 				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
 				"en": "Disable 'Please wait' in Card-Explorer"
 			}
+		},
+		"11068": {
+			"id": "11068",
+			"model": "C72v22",
+			"file": "C72v22/11068-x75_graphic.vkp",
+			"additionalFile": "C72v22/11068-x75_graphic.zip",
+			"mtime": 1744221750000,
+			"title": {
+				"ru": "Графика x75",
+				"en": "x75 graphpack"
+			}
 		}
 	},
 	"SXG75v22": {
@@ -94795,6 +94806,16 @@
 				"ru": "Моментальный запуск скринсейвера после блокировки клавиатуры",
 				"en": "Fast ScreenSaver appearance after keyboard lock"
 			}
+		},
+		"11067": {
+			"id": "11067",
+			"model": "E71v45",
+			"file": "E71v45/11067-unlock_all_buttons_in_fak_editor.vkp",
+			"mtime": 1744223698000,
+			"title": {
+				"ru": "Разблокировать все кнопки в редакторе горячих клавиш",
+				"en": "Unlock all buttons in FAK editor"
+			}
 		}
 	},
 	"C81v51": {
@@ -100175,9 +100196,9 @@
 		"11033": {
 			"id": "11033",
 			"model": "CF62v24",
-			"file": "CF62v24/11033-New_menu_CF62_SW24_v3.vkp",
-			"additionalFile": "CF62v24/11033-New_menu_CF62_SW24_v3.zip",
-			"mtime": 1738583296000,
+			"file": "CF62v24/11033-New_menu_CF62_SW24_v4.vkp",
+			"additionalFile": "CF62v24/11033-New_menu_CF62_SW24_v4.zip",
+			"mtime": 1744242354000,
 			"title": {
 				"ru": "Меню в стиле x65",
 				"en": "Menu style x65"

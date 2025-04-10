@@ -31595,8 +31595,8 @@
 		"E71v45/11032-smart_launch_of_opwv_core_v1_1.vkp"
 	],
 	[
-		"CF62v24/11033-New_menu_CF62_SW24_v3.vkp",
-		"CF62v24/11033-New_menu_CF62_SW24_v3.zip"
+		"CF62v24/11033-New_menu_CF62_SW24_v4.vkp",
+		"CF62v24/11033-New_menu_CF62_SW24_v4.zip"
 	],
 	[
 		"S75v52/11034-smart_launch_of_opwv_core__75.vkp"
@@ -31696,5 +31696,12 @@
 	],
 	[
 		"E71v45/11066-fast_ss_appearance_after_kbd_lock.vkp"
+	],
+	[
+		"E71v45/11067-unlock_all_buttons_in_fak_editor.vkp"
+	],
+	[
+		"C72v22/11068-x75_graphic.vkp",
+		"C72v22/11068-x75_graphic.zip"
 	]
 ]
