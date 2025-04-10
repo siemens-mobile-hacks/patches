@@ -58,6 +58,7 @@ This is not always an error, some patches are too big.
 |---|---|---|
 | 2691 | A50v12 | [Relocation<br>Relocation](https://patches.kibab.com/patches/details.php5?id=2691) |
 | 226 | C55v24 | [Распакованная графика<br>Unpacked graph](https://patches.kibab.com/patches/details.php5?id=226) |
+| 11068 | C72v22 | [Графика x75<br>x75 graphpack](https://patches.kibab.com/patches/details.php5?id=11068) |
 | 3127 | SL45iv56 | [Изменить вид софтов без функции<br>Modify the picture of the softkey having no function](https://patches.kibab.com/patches/details.php5?id=3127) |
 | 5911 | SL45iv56 | [zLogReader<br>zLogReader](https://patches.kibab.com/patches/details.php5?id=5911) |
 | 6961 | SL65v53 | [ELFpack<br>ELFpack](https://patches.kibab.com/patches/details.php5?id=6961) |
