@@ -94810,8 +94810,8 @@
 		"11067": {
 			"id": "11067",
 			"model": "E71v45",
-			"file": "E71v45/11067-unlock_all_buttons_in_fak_editor.vkp",
-			"mtime": 1744223698000,
+			"file": "E71v45/11067-unlock_all_btns_in_fak_editor_v1_2.vkp",
+			"mtime": 1744564518000,
 			"title": {
 				"ru": "Разблокировать все кнопки в редакторе горячих клавиш",
 				"en": "Unlock all buttons in FAK editor"
