@@ -34322,6 +34322,16 @@
 				"ru": "Переработанное меню Еще в Native Menu",
 				"en": "Redesigned menu Extras in Native Menu"
 			}
+		},
+		"11070": {
+			"id": 11070,
+			"model": "CX75v25",
+			"file": "CX75v25/11070-fix_startup_animation_without_sim.vkp",
+			"mtime": 1745175916000,
+			"title": {
+				"ru": "Исправить анимацию при включении без SIM карты",
+				"en": "Fix a startup animation without SIM card"
+			}
 		}
 	},
 	"M75v5": {
