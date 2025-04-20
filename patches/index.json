@@ -34312,6 +34312,16 @@
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
 			}
+		},
+		"11069": {
+			"id": 11069,
+			"model": "CX75v25",
+			"file": "CX75v25/11069-Redesigned_Extras_Native_Menu.vkp",
+			"mtime": 1745173924000,
+			"title": {
+				"ru": "Переработанное меню Еще в Native Menu",
+				"en": "Redesigned menu Extras in Native Menu"
+			}
 		}
 	},
 	"M75v5": {
