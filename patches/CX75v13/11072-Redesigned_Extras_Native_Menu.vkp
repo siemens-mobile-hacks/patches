@@ -1,0 +1,88 @@
+;CX75v13
+;Переработанное меню Еще в Native Menu
+;Redesigned menu Extras in Native Menu
+;(c) romir0o
+;(r) Viktor89, Marry on me
+;Version: 
+;PatchID: 11072
+;Details: https://patches.kibab.com/patches/details.php5?id=11072
+/*
+Патч изменяет меню Еще в Native Menu, таким образом чтобы пункты выглядели как на Flex Menu
+
+Структура меню после патча:
+>PTT (Раскомментируйте если нужно)
+>SIM меню (Раскомментируйте чтобы скрыть)
+>Музык. плеер
+>Будильник
+>Запись звука
+>Калькулятор
+>Конв. величин
+>Секундомер
+>Таймер
+>Card-Explorer
+
+English:The patch changes the menu Extras in Native Menu, so that the items look like on Flex Menu
+
+Menu structure after the patch:
+>Push to talk (Uncomment if necessary)
+>SIM menu (Uncomment to hide)
+>Music player
+>Alarm clock
+>Sound recorder
+>Calculator
+>Unit converter
+>Stopwatch
+>Timer
+>File system
+*/
+
+4A8998: B7E62BA0 B7E62BA0; Push to talk -> Push to talk
+4A899C: 5BE62BA0 5BE62BA0; SIM-Menu -> SIM-Menu
+4A89A0: 65E62BA0 65E62BA0; ??? -> ???
+4A89A4: 51E62BA0 316732A0; Alarm clock -> Music player
+4A89A8: 6FE62BA0 51E62BA0; Calculator -> Alarm clock
+4A89AC: 77E62BA0 236732A0 ; Unit converter -> Sound recorder
+4A89B0: 7FE62BA0 6FE62BA0; Stopwatch -> Calculator
+4A89B4: 89E62BA0 77E62BA0; Countdown ->  Unit converter
+4A89B8: 93E62BA0 7FE62BA0; Camera -> Stopwatch
+4A89BC: A7E62BA0 89E62BA0; Remote sync -> Countdown
+4A89C0: AFE62BA0 B15F32A0 ; Device manag. -> File system
+
+;-==========TAGS IN THE MENU=============-
+4A89C8: D913 D913 ;Push to talk -> Push to talk
+4A89CC: DA13 DA13 ;Push to talk -> Push to talk (BIG)
+;4A89DC: 67 78; Отображать пункт
+;-======================================-
+4A89E4: 3927 3927 ; SIM-Menu -> SIM-Menu
+4A89E8: 3A27 3A27 ; SIM-Menu -> SIM-Menu (BIG)
+;4A89F8: 78 67; чтобы скрыть пункт SIM-Menu
+;-======================================-
+;4A8A00: 3E27 3E27 ; ??? -> ???
+;4A8A04: 3D27 3E27 ; ??? -> ???
+;4A8A14: 78 67; чтобы скрыть пункт ???
+;-======================================-
+4A8A1C: A901 D10C ;Alarm clock -> Music player
+4A8A20: AA01 D10C ;Alarm clock -> Music player (BIG)
+;-======================================-
+4A8A38: 7A19 A901 ;Calculator -> Alarm clock
+4A8A3C: 7701 AA01 ;Calculator -> Alarm clock (BIG)
+;-======================================-
+4A8A54: F90C 910B ;Unit converter -> Sound recorder
+4A8A58: FA0C 910B ;Unit converter -> Sound recorder (BIG)
+;-======================================-
+4A8A70: 4D04 7A19 ;Stopwatch -> Calculator
+4A8A74: 0F02 7701 ;Stopwatch -> Calculator (BIG)
+;-======================================-
+4A8A8C: 9005 F90C ;Countdown -> Unit converter
+4A8A90: 1002 FA0C ;Countdown -> Unit converter (BIG)
+;-======================================-
+4A8AA8: B80E 4D04 ;Camera -> Stopwatch
+4A8AAC: A507 0F02 ;Camera -> Stopwatch (BIG)
+;-======================================-
+4A8AC4: 6008 9005 ;Remote sync -> Countdown
+4A8AC8: B70E 1002 ;Remote sync -> Countdown (BIG)
+;-======================================-
+4A8AE0: DF11 3D03 ;Device manag. -> File system
+4A8AE4: DF11 3D03 ;Device manag. -> File system (BIG)
+;------------------------- end -------------------------
+

@@ -30062,6 +30062,16 @@
 				"ru": "Изменить сканкоды боковых кнопок",
 				"en": "Change Side Buttons Scancodes"
 			}
+		},
+		"11072": {
+			"id": 11072,
+			"model": "CX75v13",
+			"file": "CX75v13/11072-Redesigned_Extras_Native_Menu.vkp",
+			"mtime": 1745228770000,
+			"title": {
+				"ru": "Переработанное меню Еще в Native Menu",
+				"en": "Redesigned menu Extras in Native Menu"
+			}
 		}
 	},
 	"CX75v23": {
