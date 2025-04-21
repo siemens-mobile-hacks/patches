@@ -94866,6 +94866,16 @@
 				"ru": "Разблокировать все кнопки в редакторе горячих клавиш",
 				"en": "Unlock all buttons in FAK editor"
 			}
+		},
+		"11074": {
+			"id": 11074,
+			"model": "E71v45",
+			"file": "E71v45/11074-set_csm_for_nm_v2.vkp",
+			"mtime": 1745252604000,
+			"title": {
+				"ru": "Задать CSM для Native Menu",
+				"en": "Set CSM for Native Menu"
+			}
 		}
 	},
 	"C81v51": {
