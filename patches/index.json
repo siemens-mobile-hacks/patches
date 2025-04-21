@@ -45918,6 +45918,16 @@
 				"ru": "Убрать пункт \"Справка\" в меню опций во Входящих",
 				"en": "Remove opt. menu item \"Help\" in Inbox"
 			}
+		},
+		"11073": {
+			"id": 11073,
+			"model": "C75v24",
+			"file": "C75v24/11073-Redesigned_Extras_NativeMenu_C75v24.vkp",
+			"mtime": 1745231822000,
+			"title": {
+				"ru": "Переработанное меню Еще в Native Menu",
+				"en": "Redesigned menu Extras in Native Menu"
+			}
 		}
 	},
 	"C65v50": {
