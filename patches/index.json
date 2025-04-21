@@ -34312,6 +34312,26 @@
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
 			}
+		},
+		"11069": {
+			"id": "11069",
+			"model": "CX75v25",
+			"file": "CX75v25/11069-Redesigned_Extras_Native_Menu.vkp",
+			"mtime": 1745173924000,
+			"title": {
+				"ru": "Переработанное меню Еще в Native Menu",
+				"en": "Redesigned menu Extras in Native Menu"
+			}
+		},
+		"11070": {
+			"id": "11070",
+			"model": "CX75v25",
+			"file": "CX75v25/11070-fix_startup_animation_without_sim.vkp",
+			"mtime": 1745175916000,
+			"title": {
+				"ru": "Исправить анимацию при включении без SIM карты",
+				"en": "Fix a startup animation without SIM card"
+			}
 		}
 	},
 	"M75v5": {
