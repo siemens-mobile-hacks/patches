@@ -1,0 +1,22 @@
+;CX75v25
+;Убрать пункт «Справка» из меню опций в некоторых меню
+;Remove «Help» item from the options menu in some menus
+;(c) Marie aka marry_on_me, 1nvisible, Romir0o
+;Version: 
+;PatchID: 11075
+;Details: https://patches.kibab.com/patches/details.php5?id=11075
+/*
+Убирает последний пункт "Справка" из опций некоторых меню
+
+English:Removes the last item "Help" from the options of some menus
+*/
+
+4D8490: 05 04 ; Убрать справку в меню после снятия Фото/Видео
+4D91E8: 17 16 ; Убрать справку в Card-Explorer'e
+4D97E8: 14 13 ; Убрать справку при просмотре Фото/Видео
+4E3A8C: 09 08 ; Убрать справку в меню Диктофона
+4E5EC8: 78 67 ; Убрать справку в Музыкальном плеере
+4EA72C: 78 67 ; Убрать справку в меню Bluetooth
+6458B8: 04 03 ; Убрать справку во Входящих
+;------------------------- end -------------------------
+
