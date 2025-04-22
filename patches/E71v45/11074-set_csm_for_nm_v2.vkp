@@ -1,0 +1,29 @@
+;E71v45
+;Задать CSM для Native Menu
+;Set CSM for Native Menu
+;(c) FIL
+;Version: 2
+;PatchID: 11074
+;Details: https://patches.kibab.com/patches/details.php5?id=11074
+/*
+В новой версии патча воруем настоящий CSM у "Predial". "Predial" используется только в китайской прошивке.
+Вам остается поправить CSMlist.txt:
+A0869768 Main menu
+*/
+
+063B07C: B2F0C0FE B2F0FCFB ; ShowNativeMenu -> ShowPredial
+; Predial_OnMessage
+06ED8FA: 0B3B 1A45
+06ED8FC: 9A42 07D1
+06ED8FE: 02D1 036B
+06ED902: 8242 1A45
+06ED906: 0269 0300
+06ED908: 002A 0020
+06ED90A: 00D1 0338
+06ED90C: BEE7 1861
+; Predial_OnCreate
+06ED916: 92F085F8 00F073FA
+06ED91C: 0020 10BD
+
+;------------------------- end -------------------------
+

@@ -27634,7 +27634,7 @@
 		"E71v45/9681-dis_wait_BT.vkp"
 	],
 	[
-		"E71v45/9682-NMFP_v3_4_1.vkp"
+		"E71v45/9682-NMFP_v3_5.vkp"
 	],
 	[
 		"E71v45/9683-Enable_RTSP.vkp"
@@ -31709,5 +31709,17 @@
 	],
 	[
 		"CX75v25/11070-fix_startup_animation_without_sim.vkp"
+	],
+	[
+		"C75v22/11071-Redesigned_Extras_NativeMenu_C75v22.vkp"
+	],
+	[
+		"CX75v13/11072-Redesigned_Extras_Native_Menu.vkp"
+	],
+	[
+		"C75v24/11073-Redesigned_Extras_NativeMenu_C75v24.vkp"
+	],
+	[
+		"E71v45/11074-set_csm_for_nm_v2.vkp"
 	]
 ]

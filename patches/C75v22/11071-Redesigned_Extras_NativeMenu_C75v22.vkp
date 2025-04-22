@@ -1,0 +1,87 @@
+;C75v22
+;Переработанное меню Еще в Native Menu
+;Redesigned menu Extras in Native Menu
+;(c) romir0o
+;(r) Viktor89, Marry on me
+;Version: 
+;PatchID: 11071
+;Details: https://patches.kibab.com/patches/details.php5?id=11071
+/*
+Патч изменяет меню Еще в Native Menu, таким образом чтобы пункты выглядели как на Flex Menu
+
+Структура меню после патча:
+>PTT (Раскомментируйте если нужно)
+>SIM меню (Раскомментируйте чтобы скрыть)
+>Будильник
+>Запись звука
+>Калькулятор
+>Конв. величин
+>Секундомер
+>Таймер
+>Card-Explorer
+
+English:The patch changes the menu Extras in Native Menu, so that the items look like on Flex Menu
+
+Menu structure after the patch:
+>Push to talk (Uncomment if necessary)
+>SIM menu (Uncomment to hide)
+>Alarm clock
+>Sound recorder
+>Calculator
+>Unit converter
+>Stopwatch
+>Timer
+>File system
+*/
+
+498FAC: 171B2CA0 171B2CA0 ;Push to talk -> Push to talk
+498FB0: BB1A2CA0 BB1A2CA0 ;SIM-Menu -> SIM-Menu
+498FB4: C51A2CA0 C51A2CA0 ;??? -> ???
+498FB8: B11A2CA0 B11A2CA0 ;Alarm clock -> Alarm clock
+498FBC: CF1A2CA0 E19032A0 ;Calculator -> Sound recorder
+498FC0: D71A2CA0 CF1A2CA0 ;Unit converter -> Calculator
+498FC4: DF1A2CA0 D71A2CA0 ;Stopwatch -> Unit converter
+498FC8: E91A2CA0 DF1A2CA0 ;Countdown -> Stopwatch
+498FCC: F31A2CA0 E91A2CA0 ;Camera -> Countdown
+498FD0: 071B2CA0 618932A0 ;Remote sync -> File system
+498FD4: 0F1B2CA0 0F1B2CA0 ;Device manag. -> Device manag. (HIDE)
+
+;-==========TAGS IN THE MENU=============-
+498FDC: EA13 EA13 ;Push to talk -> Push to talk
+498FE0: EB13 EB13 ;Push to talk -> Push to talk (BIG)
+;498FF0: 67 78 ;Отображать пункт
+;-======================================-
+498FF8: 3927 3927 ;SIM-Menu -> SIM-Menu
+498FFC: 3A27 3A27 ;SIM-Menu -> SIM-Menu (BIG)
+;49900C: 78 67 ;Чтобы скрыть пункт SIM-Menu
+;-======================================-
+;499014: 3E27 3E27 ; ??? -> ???
+;499018: 3D27 3D27 ; ??? -> ???
+;499028: 78 67 ;Чтобы скрыть пункт ???
+;-======================================-
+;499030: AD01 AD01 ;Alarm clock -> Alarm clock
+;499034: AE01 AD01 ;Alarm clock -> Alarm clock (BIG)
+;-======================================-
+49904C: 9719 9E0B ;Calculator -> Sound recorder
+499050: 7B01 9E0B ;Calculator -> Sound recorder (BIG)
+;-======================================-
+499068: 070D 9719 ;Unit converter -> Calculator
+49906C: 080D 7B01 ;Unit converter -> Calculator (BIG)
+;-======================================-
+499084: 5204 070D ;Stopwatch -> Unit converter
+499088: 1402 080D ;Stopwatch -> Unit converter (BIG)
+;-======================================-
+4990A0: 9705 5204 ;Countdown -> Stopwatch
+4990A4: 1502 1402 ;Countdown -> Stopwatch (BIG)
+;-======================================-
+4990BC: C90E 9705 ;Camera -> Countdown
+4990C0: AD07 1502 ;Camera -> Countdown (BIG)
+;-======================================-
+4990D8: 6D08 4203 ;Remote sync -> File system
+4990DC: C80E 4203 ;Remote sync -> File system (BIG)
+;-======================================-
+4990F4: F011 F011 ;Device manag. -> Device manag.
+4990F8: F011 F011 ;Device manag. -> Device manag. (BIG)
+499108: 7805 6705 ;Чтобы скрыть лишний пункт
+;------------------------- end -------------------------
+

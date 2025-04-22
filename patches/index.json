@@ -30062,6 +30062,16 @@
 				"ru": "Изменить сканкоды боковых кнопок",
 				"en": "Change Side Buttons Scancodes"
 			}
+		},
+		"11072": {
+			"id": "11072",
+			"model": "CX75v13",
+			"file": "CX75v13/11072-Redesigned_Extras_Native_Menu.vkp",
+			"mtime": 1745228770000,
+			"title": {
+				"ru": "Переработанное меню Еще в Native Menu",
+				"en": "Redesigned menu Extras in Native Menu"
+			}
 		}
 	},
 	"CX75v23": {
@@ -44318,6 +44328,16 @@
 				"ru": "Убрать пункт «Справка» из меню опций в некоторых меню",
 				"en": "Remove «Help» item from the options menu in some menus"
 			}
+		},
+		"11071": {
+			"id": "11071",
+			"model": "C75v22",
+			"file": "C75v22/11071-Redesigned_Extras_NativeMenu_C75v22.vkp",
+			"mtime": 1745223950000,
+			"title": {
+				"ru": "Переработанное меню Еще в Native Menu",
+				"en": "Redesigned menu Extras in Native Menu"
+			}
 		}
 	},
 	"C75v13": {
@@ -45897,6 +45917,16 @@
 			"title": {
 				"ru": "Убрать пункт \"Справка\" в меню опций во Входящих",
 				"en": "Remove opt. menu item \"Help\" in Inbox"
+			}
+		},
+		"11073": {
+			"id": "11073",
+			"model": "C75v24",
+			"file": "C75v24/11073-Redesigned_Extras_NativeMenu_C75v24.vkp",
+			"mtime": 1745231822000,
+			"title": {
+				"ru": "Переработанное меню Еще в Native Menu",
+				"en": "Redesigned menu Extras in Native Menu"
 			}
 		}
 	},
@@ -92570,8 +92600,8 @@
 		"9682": {
 			"id": "9682",
 			"model": "E71v45",
-			"file": "E71v45/9682-NMFP_v3_4_1.vkp",
-			"mtime": 1732635122000,
+			"file": "E71v45/9682-NMFP_v3_5.vkp",
+			"mtime": 1745252688000,
 			"title": {
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
@@ -94835,6 +94865,16 @@
 			"title": {
 				"ru": "Разблокировать все кнопки в редакторе горячих клавиш",
 				"en": "Unlock all buttons in FAK editor"
+			}
+		},
+		"11074": {
+			"id": "11074",
+			"model": "E71v45",
+			"file": "E71v45/11074-set_csm_for_nm_v2.vkp",
+			"mtime": 1745252604000,
+			"title": {
+				"ru": "Задать CSM для Native Menu",
+				"en": "Set CSM for Native Menu"
 			}
 		}
 	},
