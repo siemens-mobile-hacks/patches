@@ -34352,6 +34352,16 @@
 				"ru": "Убрать пункт «Справка» из меню опций в некоторых меню",
 				"en": "Remove «Help» item from the options menu in some menus"
 			}
+		},
+		"11076": {
+			"id": 11076,
+			"model": "CX75v25",
+			"file": "CX75v25/11076-change_scancode_of_internet_key.vkp",
+			"mtime": 1745413814000,
+			"title": {
+				"ru": "Изменить сканкод клавиши 'Интернет'",
+				"en": "Change scancode of 'Internet' key"
+			}
 		}
 	},
 	"M75v5": {
