@@ -34342,6 +34342,16 @@
 				"ru": "Исправить анимацию при включении без SIM карты",
 				"en": "Fix a startup animation without SIM card"
 			}
+		},
+		"11075": {
+			"id": "11075",
+			"model": "CX75v25",
+			"file": "CX75v25/11075-Remove_item_Help_in_some_menus.vkp",
+			"mtime": 1745324244000,
+			"title": {
+				"ru": "Убрать пункт «Справка» из меню опций в некоторых меню",
+				"en": "Remove «Help» item from the options menu in some menus"
+			}
 		}
 	},
 	"M75v5": {
