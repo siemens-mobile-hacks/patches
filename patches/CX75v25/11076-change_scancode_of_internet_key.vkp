@@ -1,0 +1,18 @@
+;CX75v25
+;Изменить сканкод клавиши 'Интернет'
+;Change scancode of 'Internet' key
+;(c) FIL
+;(r) Marie, Feyman, Виктор89
+;(p) romir0o
+;Version: 
+;PatchID: 11076
+;Details: https://patches.kibab.com/patches/details.php5?id=11076
+/*
+Патч нужен для нормальной работы XTask3 на кнопке запуска браузера. Соотвественно браузер больше не будет запускаться по этой кнопке.
+
+English:The patch is needed for normal operation of XTask3 on the browser launch button. Accordingly, the browser will no longer be launched by this button.
+*/
+
+9762C: 11 69
+;------------------------- end -------------------------
+

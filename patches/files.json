@@ -30617,7 +30617,7 @@
 		"E71v45/10692-200_SMS_in_phone_memory_E71v45.vkp"
 	],
 	[
-		"C81v51/10693-ElfPack-01_07_2024-v3_2_3.vkp"
+		"C81v51/10693-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	null,
 	[
@@ -30714,67 +30714,67 @@
 		"S75v52/10730-SpeedUpOverlay_S75_52.vkp"
 	],
 	[
-		"CX75v25/10731-ElfPack-18_03_2024-v3_2_2.vkp"
+		"CX75v25/10731-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"E71v45/10732-ElfPack-01_07_2024-v3_2_3.vkp"
+		"E71v45/10732-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"EL71v45/10733-ElfPack-01_07_2024-v3_2_3.vkp"
+		"EL71v45/10733-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"C72v22/10734-ElfPack-18_03_2024-v3_2_2.vkp"
+		"C72v22/10734-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"C75v22/10735-ElfPack-18_03_2024-v3_2_2.vkp"
+		"C75v22/10735-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"C75v24/10736-ElfPack-18_03_2024-v3_2_2.vkp"
+		"C75v24/10736-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"CF75v23/10737-ElfPack-18_03_2024-v3_2_2.vkp"
+		"CF75v23/10737-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
 		"CL61v128/10738-ElfPack_3_2.vkp"
 	],
 	[
-		"CX70v56/10739-ElfPack-18_03_2024-v3_2_2.vkp"
+		"CX70v56/10739-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"CX75v13/10740-ElfPack-18_03_2024-v3_2_2.vkp"
+		"CX75v13/10740-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"M75v25/10741-ElfPack-18_03_2024-v3_2_2.vkp"
+		"M75v25/10741-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"S65v58/10742-ElfPack-18_03_2024-v3_2_2.vkp"
+		"S65v58/10742-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"S68v52/10743-ElfPack-01_07_2024-v3_2_3.vkp"
+		"S68v52/10743-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"S75v52/10744-ElfPack-01_07_2024-v3_2_3.vkp"
+		"S75v52/10744-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"SK65v50/10745-ElfPack-18_03_2024-v3_2_2.vkp"
+		"SK65v50/10745-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"SL65v53/10746-ElfPack-18_03_2024-v3_2_2.vkp"
+		"SL65v53/10746-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"SL75v47/10747-ElfPack-01_07_2024-v3_2_3.vkp"
+		"SL75v47/10747-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"SL75v52/10748-ElfPack-01_07_2024-v3_2_3.vkp"
+		"SL75v52/10748-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"S68v47/10749-ElfPack-01_07_2024-v3_2_3.vkp"
+		"S68v47/10749-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"S75v40/10750-ElfPack-01_07_2024-v3_2_3.vkp"
+		"S75v40/10750-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
-		"S75v47/10751-ElfPack-01_07_2024-v3_2_3.vkp"
+		"S75v47/10751-ElfPack-22_04_2025-v3_3_0.vkp"
 	],
 	[
 		"S75v52/10752-AircraftMode_S75_52.vkp"
@@ -31724,5 +31724,8 @@
 	],
 	[
 		"CX75v25/11075-Remove_item_Help_in_some_menus.vkp"
+	],
+	[
+		"CX75v25/11076-change_scancode_of_internet_key.vkp"
 	]
 ]
