@@ -1,0 +1,14 @@
+;E71v45
+;Не отображать иконку сети если сеть недоступна
+;Don't show network icon if network is unavailable
+;(c) FIL
+;Version: 
+;PatchID: 11077
+;Details: https://patches.kibab.com/patches/details.php5?id=11077
+/*
+Иконка больше не отобржается при поиске сети и в режиме оффлайн.
+*/
+
+05C0E2A: FFF7CDFE 0020C046
+;------------------------- end -------------------------
+
