@@ -94906,6 +94906,16 @@
 				"ru": "Не отображать иконку сети если сеть недоступна",
 				"en": "Don't show network icon if network is unavailable"
 			}
+		},
+		"11078": {
+			"id": 11078,
+			"model": "E71v45",
+			"file": "E71v45/11078-iconbar_modification.vkp",
+			"mtime": 1745776858000,
+			"title": {
+				"ru": "Модификация иконбара",
+				"en": "IconBar Modification"
+			}
 		}
 	},
 	"C81v51": {
