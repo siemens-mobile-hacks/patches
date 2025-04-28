@@ -94896,6 +94896,26 @@
 				"ru": "Задать CSM для Native Menu",
 				"en": "Set CSM for Native Menu"
 			}
+		},
+		"11077": {
+			"id": "11077",
+			"model": "E71v45",
+			"file": "E71v45/11077-don_t_show_network_icon.vkp",
+			"mtime": 1745768666000,
+			"title": {
+				"ru": "Не отображать иконку сети если сеть недоступна",
+				"en": "Don't show network icon if network is unavailable"
+			}
+		},
+		"11078": {
+			"id": "11078",
+			"model": "E71v45",
+			"file": "E71v45/11078-iconbar_modification.vkp",
+			"mtime": 1745776858000,
+			"title": {
+				"ru": "Модификация иконбара",
+				"en": "IconBar Modification"
+			}
 		}
 	},
 	"C81v51": {
