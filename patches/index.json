@@ -94710,8 +94710,8 @@
 		"11039": {
 			"id": 11039,
 			"model": "E71v45",
-			"file": "E71v45/11039-dont_display_cenral_nav_key_icon_v2.vkp",
-			"mtime": 1738997912000,
+			"file": "E71v45/11039-dont_display_nav_key_icon_v2_1.vkp",
+			"mtime": 1745927588000,
 			"title": {
 				"ru": "Не отображать иконки центральной навигационной клавиши",
 				"en": "Don't display central navigation key icon"
