@@ -30072,6 +30072,16 @@
 				"ru": "Переработанное меню Еще в Native Menu",
 				"en": "Redesigned menu Extras in Native Menu"
 			}
+		},
+		"11079": {
+			"id": 11079,
+			"model": "CX75v13",
+			"file": "CX75v13/11079-cx75v13_dont_stop_media_player_play.vkp",
+			"mtime": 1745957450000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
+			}
 		}
 	},
 	"CX75v23": {
