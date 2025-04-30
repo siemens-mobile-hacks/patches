@@ -94936,6 +94936,16 @@
 				"ru": "Модификация иконбара",
 				"en": "IconBar Modification"
 			}
+		},
+		"11082": {
+			"id": 11082,
+			"model": "E71v45",
+			"file": "E71v45/11082-disable_message_input_language_v2.vkp",
+			"mtime": 1746016026000,
+			"title": {
+				"ru": "Отключить сообщение 'Язык ввода: *' при выборе языка",
+				"en": "Disable message 'Input language: *' at a language choice"
+			}
 		}
 	},
 	"C81v51": {

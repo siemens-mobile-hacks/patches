@@ -1,0 +1,16 @@
+;E71v45
+;Отключить сообщение 'Язык ввода: *' при выборе языка
+;Disable message 'Input language: *' at a language choice
+;(c) Evgr
+;Version: 2
+;PatchID: 11082
+;Details: https://patches.kibab.com/patches/details.php5?id=11082
+/*
+
+*/
+
+094DF39: D1 D0
+;094E020: 00F073FF C046C046 ; disable "please wait"
+00B6AA6: FAB0 B0BD ; in SMS/MMS/E-mail/Browser
+;------------------------- end -------------------------
+
