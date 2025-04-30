@@ -1,0 +1,27 @@
+;E71v45
+;Модификация Startup Assistant
+;Startup Assistant Modification
+;(c) benj9, FIL
+;(r) Виктор89
+;Version: 
+;PatchID: 11083
+;Details: https://patches.kibab.com/patches/details.php5?id=11083
+/*
+1. Принудительный запуск помощника при перезагрузке.
+2. Скрытие GUI помощника.
+3. Отключение окошка "Пожалуйста, подождите".
+
+*/
+
+066B30E: 1FD1 C046
+066B316: 1BD0 C046
+07019F4: F7F096EA C046C046
+06BF2E8: 10B5 30B5
+06BF2EE: 39F16CEB C046C046
+06BF2F2: 6064 0025
+06BF2F8: 0020 E81E
+06BF308: 10BD 30BD
+
+
+;------------------------- end -------------------------
+
