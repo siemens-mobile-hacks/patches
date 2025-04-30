@@ -2,14 +2,15 @@
 ;Не отображать иконки центральной навигационной клавиши
 ;Don't display central navigation key icon
 ;(c) FIL
-;Version: 2
+;Version: 2.1
 ;PatchID: 11039
 ;Details: https://patches.kibab.com/patches/details.php5?id=11039
 /*
 Полностью отключает отображение иконок центральной навигационной клавиши.
 */
 
-0A2ABF2: 01 FF
+0A2ABF2: 01 FF ; Native UI
+094BABE: 78 00 ; Java
 
 ;------------------------- end -------------------------
 

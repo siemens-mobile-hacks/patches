@@ -1,0 +1,19 @@
+;CX75v13
+;Не останавливать воспроизведение медиаплеера после сворачивания
+;Don't stop media player playback when minimized
+;(c) FIL
+;(p) Marie
+;Version: 
+;PatchID: 11079
+;Details: https://patches.kibab.com/patches/details.php5?id=11079
+/*
+
+*/
+
+0360BD4: 0C0090E5 0000A0E3
+0360BD8: 1210A0E3 0000A0E3
+
+;Pattern
+;0C0090E51210A0E3=0000A0E30000A0E3 ; R65_x65, R65_x75 (~) Marie
+;------------------------- end -------------------------
+

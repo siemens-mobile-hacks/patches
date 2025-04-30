@@ -31614,7 +31614,7 @@
 		"E71v45/11038-dont_show_softkeys_on_idle_v1_1.vkp"
 	],
 	[
-		"E71v45/11039-dont_display_cenral_nav_key_icon_v2.vkp"
+		"E71v45/11039-dont_display_nav_key_icon_v2_1.vkp"
 	],
 	[
 		"E71v45/11040-optimize_theme_cache.vkp"
@@ -31733,5 +31733,11 @@
 	],
 	[
 		"E71v45/11078-iconbar_modification_v1_1.vkp"
+	],
+	[
+		"CX75v13/11079-cx75v13_dont_stop_media_player_play.vkp"
+	],
+	[
+		"CX75v25/11080-cx75v25_dont_stop_media_player_play.vkp"
 	]
 ]
