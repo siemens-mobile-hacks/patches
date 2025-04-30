@@ -94966,6 +94966,16 @@
 				"ru": "Дата вместо имени оператора в заставке",
 				"en": "Date instead of provider name in screensaver"
 			}
+		},
+		"11085": {
+			"id": 11085,
+			"model": "E71v45",
+			"file": "E71v45/11085-fix_startup_animation_on_reboot.vkp",
+			"mtime": 1746032150000,
+			"title": {
+				"ru": "Исправить анимацию включения при перезагрузке",
+				"en": "Fix startup animation on reboot"
+			}
 		}
 	},
 	"C81v51": {
