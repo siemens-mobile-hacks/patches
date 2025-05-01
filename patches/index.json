@@ -94700,8 +94700,8 @@
 		"11036": {
 			"id": "11036",
 			"model": "E71v45",
-			"file": "E71v45/11036-disable_date_and_time_on_idle.vkp",
-			"mtime": 1738685288000,
+			"file": "E71v45/11036-disable_date_and_time_on_idle_v1_1.vkp",
+			"mtime": 1746014806000,
 			"title": {
 				"ru": "Удалить дату и время только с главного экрана",
 				"en": "Disable date and time only on IDLE"
@@ -94730,8 +94730,8 @@
 		"11039": {
 			"id": "11039",
 			"model": "E71v45",
-			"file": "E71v45/11039-dont_display_nav_key_icon_v2_1.vkp",
-			"mtime": 1745927588000,
+			"file": "E71v45/11039-dont_display_nav_key_icon_v2_1_1.vkp",
+			"mtime": 1746013812000,
 			"title": {
 				"ru": "Не отображать иконки центральной навигационной клавиши",
 				"en": "Don't display central navigation key icon"
@@ -94935,6 +94935,46 @@
 			"title": {
 				"ru": "Модификация иконбара",
 				"en": "IconBar Modification"
+			}
+		},
+		"11082": {
+			"id": "11082",
+			"model": "E71v45",
+			"file": "E71v45/11082-disable_message_input_language_v2.vkp",
+			"mtime": 1746016026000,
+			"title": {
+				"ru": "Отключить сообщение 'Язык ввода: *' при выборе языка",
+				"en": "Disable message 'Input language: *' at a language choice"
+			}
+		},
+		"11083": {
+			"id": "11083",
+			"model": "E71v45",
+			"file": "E71v45/11083-sam.vkp",
+			"mtime": 1746026868000,
+			"title": {
+				"ru": "Модификация Startup Assistant",
+				"en": "Startup Assistant Modification"
+			}
+		},
+		"11084": {
+			"id": "11084",
+			"model": "E71v45",
+			"file": "E71v45/11084-date_instead_of_p_name_in_ss_v2.vkp",
+			"mtime": 1746027986000,
+			"title": {
+				"ru": "Дата вместо имени оператора в заставке",
+				"en": "Date instead of provider name in screensaver"
+			}
+		},
+		"11085": {
+			"id": "11085",
+			"model": "E71v45",
+			"file": "E71v45/11085-fix_startup_animation_on_reboot.vkp",
+			"mtime": 1746032150000,
+			"title": {
+				"ru": "Исправить анимацию включения при перезагрузке",
+				"en": "Fix startup animation on reboot"
 			}
 		}
 	},

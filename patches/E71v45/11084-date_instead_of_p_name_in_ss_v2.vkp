@@ -1,0 +1,17 @@
+;E71v45
+;Дата вместо имени оператора в заставке 
+;Date instead of provider name in screensaver
+;(c) FIL
+;(r) Evgr 
+;Version: 2
+;PatchID: 11084
+;Details: https://patches.kibab.com/patches/details.php5?id=11084
+/*
+
+*/
+
+0781D8A: 3A1C C046
+0781D8E: 46A1 C046
+0781D90: 76F02CED 42F6A3F8
+;------------------------- end -------------------------
+

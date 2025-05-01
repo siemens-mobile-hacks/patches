@@ -31605,7 +31605,7 @@
 		"E71v45/11035-Disable_DateTime.vkp"
 	],
 	[
-		"E71v45/11036-disable_date_and_time_on_idle.vkp"
+		"E71v45/11036-disable_date_and_time_on_idle_v1_1.vkp"
 	],
 	[
 		"E71v45/11037-dont_show_events_on_idle.vkp"
@@ -31614,7 +31614,7 @@
 		"E71v45/11038-dont_show_softkeys_on_idle_v1_1.vkp"
 	],
 	[
-		"E71v45/11039-dont_display_nav_key_icon_v2_1.vkp"
+		"E71v45/11039-dont_display_nav_key_icon_v2_1_1.vkp"
 	],
 	[
 		"E71v45/11040-optimize_theme_cache.vkp"
@@ -31739,5 +31739,18 @@
 	],
 	[
 		"CX75v25/11080-cx75v25_dont_stop_media_player_play.vkp"
+	],
+	null,
+	[
+		"E71v45/11082-disable_message_input_language_v2.vkp"
+	],
+	[
+		"E71v45/11083-sam.vkp"
+	],
+	[
+		"E71v45/11084-date_instead_of_p_name_in_ss_v2.vkp"
+	],
+	[
+		"E71v45/11085-fix_startup_animation_on_reboot.vkp"
 	]
 ]

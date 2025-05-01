@@ -2,7 +2,7 @@
 ;Удалить дату и время только с главного экрана
 ;Disable date and time only on IDLE
 ;(c) FIL
-;Version: 
+;Version: 1.1
 ;PatchID: 11036
 ;Details: https://patches.kibab.com/patches/details.php5?id=11036
 /*
@@ -10,5 +10,6 @@
 */
 
 05C3004: 01F017F8 0020C046
+05C1E14: 02F00FF9 0020C046
 ;------------------------- end -------------------------
 
