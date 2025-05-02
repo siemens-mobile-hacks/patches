@@ -1,0 +1,18 @@
+;C75v24
+;Сохранение списков при смене SIM карты
+;Call list saving when SIM is changed
+;(c) SiNgle
+;(p) Romir0o
+;Version: 
+;PatchID: 11088
+;Details: https://patches.kibab.com/patches/details.php5?id=11088
+/*
+Сохраняются списки при смене SIM карты.
+English:Lists are saved when changing the SIM card.
+
+
+*/
+
+2A70A6: E4F122EC 00200020
+;------------------------- end -------------------------
+

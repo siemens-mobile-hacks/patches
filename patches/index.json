@@ -45988,6 +45988,16 @@
 				"ru": "Native Menu вместо главного меню",
 				"en": "Native Menu instead of MainMenu"
 			}
+		},
+		"11088": {
+			"id": 11088,
+			"model": "C75v24",
+			"file": "C75v24/11088-Call_list_saving_when_SIM_changed.vkp",
+			"mtime": 1746201058000,
+			"title": {
+				"ru": "Сохранение списков при смене SIM карты",
+				"en": "Call list saving when SIM is changed"
+			}
 		}
 	},
 	"C65v50": {
