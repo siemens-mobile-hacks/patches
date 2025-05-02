@@ -34442,6 +34442,16 @@
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
 			}
+		},
+		"11095": {
+			"id": 11095,
+			"model": "CX75v25",
+			"file": "CX75v25/11095-cx75v1_reverse_audio_play_animation.vkp",
+			"mtime": 1746223458000,
+			"title": {
+				"ru": "Изменить направление кручения бобин при проигрывании аудио",
+				"en": "Reverse Audio play animation"
+			}
 		}
 	},
 	"M75v5": {
