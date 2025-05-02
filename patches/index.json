@@ -30092,6 +30092,16 @@
 				"ru": "Не менять левый софткей на ГЭ если нет сети",
 				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
+		},
+		"11092": {
+			"id": 11092,
+			"model": "CX75v13",
+			"file": "CX75v13/11092-cx75v13_smooth_scroll_of_long_heade.vkp",
+			"mtime": 1746219508000,
+			"title": {
+				"ru": "Плавная прокрутка длинных заголовков",
+				"en": "Smooth scrolling of long headers"
+			}
 		}
 	},
 	"CX75v23": {
