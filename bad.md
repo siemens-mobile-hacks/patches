@@ -51,6 +51,8 @@ The patch has additional files, but it isn't accessible.
 | 4059 | X75v100 | [Иконки плейлиста<br>Playlist icon](https://patches.kibab.com/patches/details.php5?id=4059) |
 | 4079 | X75v100 | [Иконки картинок<br>Pictures icons](https://patches.kibab.com/patches/details.php5?id=4079) |
 | 6777 | X75v100 | [Папки в экплорере<br>Folders in explorer](https://patches.kibab.com/patches/details.php5?id=6777) |
+
+
 ### The patch is in the archive instead of a patch body
 This is not always an error, some patches are too big.
 
@@ -62,6 +64,8 @@ This is not always an error, some patches are too big.
 | 3127 | SL45iv56 | [Изменить вид софтов без функции<br>Modify the picture of the softkey having no function](https://patches.kibab.com/patches/details.php5?id=3127) |
 | 5911 | SL45iv56 | [zLogReader<br>zLogReader](https://patches.kibab.com/patches/details.php5?id=5911) |
 | 6961 | SL65v53 | [ELFpack<br>ELFpack](https://patches.kibab.com/patches/details.php5?id=6961) |
+
+
 ### Empty patches
 This is not always an error, some patches contain commented lines.
 
@@ -89,9 +93,16 @@ This is not always an error, some patches contain commented lines.
 | 1892 | SL45iv56 | [DSSM. Перемещение строки даты/часов и коллекция перемещений<br>DSSM. Date/time string style & movement collection](https://patches.kibab.com/patches/details.php5?id=1892) |
 | 2076 | SL45iv56 | [MANM. Отключение микрофона во время работы автоответчика<br>MANM.](https://patches.kibab.com/patches/details.php5?id=2076) |
 | 9077 | SL65v53 | [Отключение некоторых иконок в иконбаре<br>Disable some icons in iconbar](https://patches.kibab.com/patches/details.php5?id=9077) |
+
+
 ### RTF patches
 This is not an error, but the RTF format is legacy and less portable.
 
 | ID | Model | PATCH |
 |---|---|---|
+| 2691 | A50v12 | [Relocation<br>Relocation](https://patches.kibab.com/patches/details.php5?id=2691) |
+| 2691 | A50v12 | [Relocation<br>Relocation](https://patches.kibab.com/patches/details.php5?id=2691) |
+| 2691 | A50v12 | [Relocation<br>Relocation](https://patches.kibab.com/patches/details.php5?id=2691) |
 | 3127 | SL45iv56 | [Изменить вид софтов без функции<br>Modify the picture of the softkey having no function](https://patches.kibab.com/patches/details.php5?id=3127) |
+
+

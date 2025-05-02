@@ -31752,5 +31752,35 @@
 	],
 	[
 		"E71v45/11085-fix_startup_animation_on_reboot.vkp"
+	],
+	[
+		"C75v24/11086-fix_startup_animation_without_sim.vkp"
+	],
+	[
+		"C75v24/11087-Native_Menu_instead_of_MainMenu_v23.vkp"
+	],
+	[
+		"C75v24/11088-Call_list_saving_when_SIM_changed.vkp"
+	],
+	[
+		"CX75v13/11089-cx75v13_fix_lsk_on_idle.vkp"
+	],
+	[
+		"CX75v25/11090-cx75v25_fix_lsk_on_idle.vkp"
+	],
+	[
+		"CX75v25/11091-redisign_surf_and_fun_menu.vkp"
+	],
+	[
+		"CX75v13/11092-cx75v13_smooth_scroll_of_long_heade.vkp"
+	],
+	[
+		"CX75v25/11093-cx75v25_smooth_scroll_of_long_heade.vkp"
+	],
+	[
+		"CX75v13/11094-cx75v1_reverse_audio_play_animation.vkp"
+	],
+	[
+		"CX75v25/11095-cx75v1_reverse_audio_play_animation.vkp"
 	]
 ]

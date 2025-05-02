@@ -1,16 +1,16 @@
-;CX75v25
+;C75v24
 ;Исправить анимацию при включении без SIM карты
 ;Fix a startup animation without SIM card
 ;(c) FIL
 ;(p) Romir0o
 ;Version: 
-;PatchID: 11070
-;Details: https://patches.kibab.com/patches/details.php5?id=11070
+;PatchID: 11086
+;Details: https://patches.kibab.com/patches/details.php5?id=11086
 /*
 Присутствует баг при котором не отображается анимация включения без СИМ карты, но сам GUI создается. Патч исправляет данный баг.
 */
 
-2CF00C: 00 02
-2CF00E: F9D1 F9D2
+2D1E6C: 00 02
+2D1E6E: F9D1 F9D2
 ;------------------------- end -------------------------
 
