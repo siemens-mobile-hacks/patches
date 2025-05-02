@@ -45968,6 +45968,16 @@
 				"ru": "Переработанное меню Еще в Native Menu",
 				"en": "Redesigned menu Extras in Native Menu"
 			}
+		},
+		"11086": {
+			"id": 11086,
+			"model": "C75v24",
+			"file": "C75v24/11086-fix_startup_animation_without_sim.vkp",
+			"mtime": 1746196002000,
+			"title": {
+				"ru": "Исправить анимацию при включении без SIM карты",
+				"en": "Fix a startup animation without SIM card"
+			}
 		}
 	},
 	"C65v50": {

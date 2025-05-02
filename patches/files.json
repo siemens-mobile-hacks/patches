@@ -31752,5 +31752,8 @@
 	],
 	[
 		"E71v45/11085-fix_startup_animation_on_reboot.vkp"
+	],
+	[
+		"C75v24/11086-fix_startup_animation_without_sim.vkp"
 	]
 ]
