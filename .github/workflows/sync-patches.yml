@@ -11,15 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-    - name: Install nodejs
-      uses: actions/setup-node@v4
-      with:
-        node-version: 21
-    - name: Install deps
-      run: sudo apt install unar
-    - name: Sync patches
-      run: tools/ci.sh
-      env:
-        KIBAB_TEST_USER: ${{ secrets.KIBAB_TEST_USER }}
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          registry-url: 'https://registry.npmjs.org'
+      - run: corepack enable pnpm
+      - run: npm install --global corepack@latest
+      - name: Install deps
+        run: sudo apt install unar
+      - name: Sync patches
+        run: tools/ci.sh
+        env:
+          KIBAB_TEST_USER: ${{ secrets.KIBAB_TEST_USER }}

@@ -1,18 +1,48 @@
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
 import yauzl from 'yauzl';
 import iconv from 'iconv-lite';
-import crypto from 'crypto';
-import yargs from 'yargs'
-import { hideBin } from 'yargs/helpers'
+import yargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
 import { globSync } from 'glob';
 import child_process from 'child_process';
 import { KibabAPI } from './KibabAPI.js';
+import { fileMD5, findZipStart, getChunks, readFiles, wget } from "./utils.js";
+
+// Define interfaces for the data structures
+interface PatchInfo {
+	id: number;
+	model: string;
+	file: string;
+	additionalFile?: string;
+	mtime: number;
+	title: {
+		ru: string;
+		en: string;
+	};
+}
+
+interface IndexData {
+	[model: string]: {
+		[patchId: number]: PatchInfo;
+	};
+}
+
+interface ZipPatchInfo {
+	fileName: string;
+	time: number;
+	data: Buffer;
+}
+
+interface BadPatch {
+	id: number;
+	error: string;
+}
 
 // patches.kibab.com timezone
 process.env.TZ = 'Europe/Moscow'; // thanks Viktor89
 
-const argv = yargs(hideBin(process.argv))
+const argv = await yargs(hideBin(process.argv))
 	.option('cookie', {
 		type: 'string',
 		description: 'Kibab cookie: login:password_hash',
@@ -31,11 +61,11 @@ const argv = yargs(hideBin(process.argv))
 	.option('patches', {
 		type: 'string',
 		description: 'Patches IDs for partial sync.',
-		default: false
+		default: undefined
 	})
 	.option('output', {
 		type: 'string',
-		 description: 'Output dir.',
+		description: 'Output dir.',
 		default: path.resolve(`${import.meta.dirname}/../patches/`)
 	})
 	.parse();
@@ -51,8 +81,8 @@ if (!argv.cookie) {
 	process.exit(1);
 }
 
-let [login, password] = argv.cookie.split(':');
-let api = new KibabAPI(login, password);
+const [login, password] = argv.cookie.split(':');
+const api = new KibabAPI(login, password);
 
 console.time("removeDeletedPatches");
 await removeDeletedPatches(api);
@@ -70,17 +100,17 @@ console.time("garbageCollector");
 garbageCollector();
 console.timeEnd("garbageCollector");
 
-async function removeDeletedPatches(api) {
+async function removeDeletedPatches(api: KibabAPI): Promise<void> {
 	let deletedCnt = 0;
 	let page = 0;
-	let indexData = loadIndex();
+	const indexData: IndexData = loadIndex();
 
 	do {
 		deletedCnt = 0;
 
-		let deletedPatches = await api.getDeletedPatches(page);
-		for (let p of deletedPatches) {
-			for (let file of globSync(`${OUT_DIR}/${p.model}/${p.id}-*`)) {
+		const deletedPatches = await api.getDeletedPatches(page);
+		for (const p of deletedPatches) {
+			for (const file of globSync(`${OUT_DIR}/${p.model}/${p.id}-*`)) {
 				if (fs.existsSync(file)) {
 					child_process.spawnSync("git", ["rm", file], { cwd: OUT_DIR });
 					deletedCnt++;
@@ -99,7 +129,7 @@ async function removeDeletedPatches(api) {
 	saveIndex(indexData);
 }
 
-async function syncPatches(api) {
+async function syncPatches(api: KibabAPI): Promise<void> {
 	if (argv["full-sync"]) {
 		console.log("-------------------------------------------------");
 		console.log(`Full sync mode!!!`);
@@ -107,14 +137,14 @@ async function syncPatches(api) {
 	}
 
 	if (argv["patches"]) {
-		let patchesToSync = argv["patches"].split(/\s*,\s*/);
+		const patchesToSync = argv["patches"].split(/\s*,\s*/).map((v) => parseInt(v));
 		await downloadPatches(api, patchesToSync, true);
 		return;
 	}
 
-	let allModels = await api.getAllModels();
 	let flag = false;
-	for (let model of allModels) {
+	const allModels = await api.getAllModels();
+	for (const model of allModels) {
 		console.log(`[${model.name}]`);
 		fs.mkdirSync(`${OUT_DIR}/${model.name}`, { recursive: true });
 
@@ -122,18 +152,17 @@ async function syncPatches(api) {
 			continue;
 		flag = true;
 
-		let allModelPatches = await api.getAllPatches(model.modelId, model.swId);
-		let allModelPatchesIds = allModelPatches.map((p) => p.id);
-
+		const allModelPatches = await api.getAllPatches(model.modelId, model.swId);
+		const allModelPatchesIds = allModelPatches.map((p) => p.id);
 		await downloadPatches(api, allModelPatchesIds, argv["full-sync"]);
 	}
 }
 
-function generateFilesList() {
-	let indexData = loadIndex();
-	let indexList = [];
-	for (let model in indexData) {
-		for (let patch of Object.values(indexData[model])) {
+function generateFilesList(): void {
+	const indexData: IndexData = loadIndex();
+	const indexList: { [id: number]: string[] } = [];
+	for (const model in indexData) {
+		for (const patch of Object.values(indexData[model])) {
 			indexList[patch.id] = [];
 			indexList[patch.id].push(patch.file);
 			if (patch.additionalFile)
@@ -143,18 +172,18 @@ function generateFilesList() {
 	fs.writeFileSync(`${OUT_DIR}/files.json`, JSON.stringify(indexList, null, '\t'));
 }
 
-function garbageCollector() {
-	let indexData = loadIndex();
-	let allUsedFiles = {};
-	for (let model in indexData) {
-		for (let patch of Object.values(indexData[model])) {
+function garbageCollector(): void {
+	const indexData: IndexData = loadIndex();
+	const allUsedFiles: { [file: string]: boolean } = {};
+	for (const model in indexData) {
+		for (const patch of Object.values(indexData[model])) {
 			allUsedFiles[patch.file] = true;
 			if (patch.additionalFile)
 				allUsedFiles[patch.additionalFile] = true;
 		}
 	}
 
-	for (let file of readFiles(OUT_DIR)) {
+	for (const file of readFiles(OUT_DIR)) {
 		if (file.indexOf('/') < 0)
 			continue;
 
@@ -165,39 +194,45 @@ function garbageCollector() {
 	}
 }
 
-async function downloadPatches(api, allPatchesIds, fullSync) {
+async function downloadPatches(api: KibabAPI, allPatchesIds: number[], fullSync: boolean): Promise<void> {
 	let chunkId = 0;
-	let unchnagedPatches = 0;
-	let indexData = loadIndex();
-	let badPatches = [];
+	let unchangedPatches = 0;
+	const indexData: IndexData = loadIndex();
+	const badPatches: BadPatch[] = [];
 
-	let chunks = getChunks(allPatchesIds, 10);
+	for (const model in indexData) {
+		for (const patch of Object.values(indexData[model])) {
+			patch.id = +patch.id;
+		}
+	}
+
+	const chunks = getChunks(allPatchesIds, 10);
 	if (!fullSync && chunks.length > 0 && chunks[0].length >= 5)
-		chunks.unshift([chunks[0].shift()]);
+		chunks.unshift([chunks[0].shift()!]);
 
 	while (chunks.length > 0) {
-		let chunk = chunks.shift();
+		const chunk = chunks.shift()!;
 
 		console.log(`chunk #${chunkId} [`, chunk.join(', '), `]`);
 
 		await api.clearCart();
-		let notAddedIds = await api.addToCart(chunk);
+		const notAddedIds = await api.addToCart(chunk);
 		if (notAddedIds.length > 0) {
-			for (let pid of notAddedIds.reverse())
+			for (const pid of notAddedIds.reverse())
 				chunks.unshift([pid]);
 		}
 
 		let blob = await api.downloadCart();
 
 		findBrokenFiles(blob);
-		let zipStartOffset = findZipStart(blob);
+		const zipStartOffset = findZipStart(blob);
 		if (zipStartOffset < 0) {
 			console.error(`NOT ZIP, see here: /tmp/invalid-patch.zip`);
 			fs.writeFileSync(`/tmp/invalid-patch.zip`, blob)
 			throw new Error(`Invalid ZIP:`);
 		}
 
-		blob = blob.slice(zipStartOffset);
+		blob = blob.subarray(zipStartOffset);
 
 		let patchesFromZip;
 		try {
@@ -209,24 +244,24 @@ async function downloadPatches(api, allPatchesIds, fullSync) {
 			throw e;
 		}
 
-		for (let member of patchesFromZip) {
-			let patchText = iconv.decode(member.data, 'win1251');
-			let patchId = patchText.match(/;PatchID: (\d+)/i)[1];
-			let lines = patchText.split(/\r\n/);
-			let model = lines[0].replace(/^;/, '').trim();
-			let titleRU = lines[1].replace(/^;/, '').trim();
-			let titleEN = lines[2].replace(/^;/, '').trim();
+		for (const member of patchesFromZip) {
+			const patchText = iconv.decode(member.data, 'win1251');
+			const patchId = parseInt(patchText.match(/;PatchID: (\d+)/i)?.[1] ?? "");
+			const lines = patchText.split(/\r\n/);
+			const model = lines[0].replace(/^;/, '').trim();
+			const titleRU = lines[1].replace(/^;/, '').trim();
+			const titleEN = lines[2].replace(/^;/, '').trim();
 
 			indexData[model] = indexData[model] || {};
 
-			let patchFile = `${model}/${patchId}-${path.basename(member.fileName)}`;
+			const patchFile = `${model}/${patchId}-${path.basename(member.fileName)}`;
 
 			console.log(`+ ${patchId}: ${patchFile}`);
 
 			let oldPatchHash;
-			let oldPatch = indexData[model][patchId];
+			let oldPatch: PatchInfo | undefined = indexData[model][patchId];
 			if (oldPatch && !fs.existsSync(`${OUT_DIR}/${oldPatch.file}`))
-				oldPatch = null;
+				oldPatch = undefined;
 
 			if (oldPatch) {
 				oldPatchHash = fileMD5(`${OUT_DIR}/${oldPatch.file}`);
@@ -239,18 +274,18 @@ async function downloadPatches(api, allPatchesIds, fullSync) {
 			}
 
 			let additionalFile;
-			let additionalFileLink = patchText.match(/^;!(?:к патчу прикреплён файл|There is a file attached to this patch), (.*?)\r\n$/im)?.[1];
+			const additionalFileLink = patchText.match(/^;!(?:к патчу прикреплён файл|There is a file attached to this patch), (.*?)\r\n$/im)?.[1];
 			let oldAdditionalFileHash;
 			let newAdditionalFileHash;
 
 			if (additionalFileLink) {
-				let parsedUrl = new URL(additionalFileLink);
-				additionalFile = `${model}/${patchId}-${path.basename(parsedUrl.searchParams.get('f'))}`;
+				const parsedUrl = new URL(additionalFileLink);
+				additionalFile = `${model}/${patchId}-${path.basename(parsedUrl.searchParams.get('f')!)}`;
 
 				console.log(`+ ${patchId}: ${additionalFile}`);
 
 				if (oldPatch && oldPatch.additionalFile && !fs.existsSync(`${OUT_DIR}/${oldPatch.additionalFile}`))
-					oldPatch.additionalFile = null;
+					oldPatch.additionalFile = undefined;
 
 				if (oldPatch && oldPatch.additionalFile) {
 					oldAdditionalFileHash = fileMD5(`${OUT_DIR}/${oldPatch.additionalFile}`);
@@ -262,7 +297,7 @@ async function downloadPatches(api, allPatchesIds, fullSync) {
 					}
 				}
 
-				let additionalData = await wget(additionalFileLink);
+				const additionalData = await wget(additionalFileLink);
 				if (additionalData.status == 404 || additionalData.status == 403) {
 					badPatches.push({
 						id:		patchId,
@@ -280,7 +315,7 @@ async function downloadPatches(api, allPatchesIds, fullSync) {
 					additionalFile = undefined;
 			}
 
-			let newPatch = {
+			const newPatch: PatchInfo = {
 				id:				patchId,
 				model:			model,
 				file:			patchFile,
@@ -293,25 +328,22 @@ async function downloadPatches(api, allPatchesIds, fullSync) {
 			};
 
 			fs.writeFileSync(`${OUT_DIR}/${patchFile}`, member.data);
-			let newPatchHash = fileMD5(`${OUT_DIR}/${patchFile}`);
+			const newPatchHash = fileMD5(`${OUT_DIR}/${patchFile}`);
 
-			let changed;
-			if (newPatchHash !== oldPatchHash || newAdditionalFileHash !== oldAdditionalFileHash) {
-				changed = true;
-			} else {
-				changed = JSON.stringify(oldPatch) != JSON.stringify(newPatch);
-			}
+			const changed = newPatchHash !== oldPatchHash ||
+				newAdditionalFileHash !== oldAdditionalFileHash ||
+				JSON.stringify(oldPatch) != JSON.stringify(newPatch);
 
 			if (changed) {
 				indexData[model][patchId] = newPatch;
-				unchnagedPatches = 0;
+				unchangedPatches = 0;
 			} else {
-				unchnagedPatches++;
+				unchangedPatches++;
 			}
 		}
 
-		if (unchnagedPatches >= 1 && !fullSync) {
-			// console.log(`STOP: unchnagedPatches=${unchnagedPatches}`);
+		if (unchangedPatches >= 1 && !fullSync) {
+			// console.log(`STOP: unchangedPatches=${unchangedPatches}`);
 			break;
 		}
 
@@ -321,48 +353,33 @@ async function downloadPatches(api, allPatchesIds, fullSync) {
 
 	if (badPatches.length) {
 		console.log(`ERRORS:`);
-		for (let err of badPatches) {
+		for (const err of badPatches) {
 			console.log(`#${err.id}: ${err.error}`);
 		}
 	}
 }
 
-function loadIndex() {
-	let indexData = {};
+function loadIndex(): IndexData {
+	const indexData: IndexData = {};
 	if (fs.existsSync(`${OUT_DIR}/index.json`))
-		indexData = JSON.parse(fs.readFileSync(`${OUT_DIR}/index.json`));
+		return JSON.parse(fs.readFileSync(`${OUT_DIR}/index.json`, 'utf-8'));
 	return indexData;
 }
 
-function saveIndex(indexData) {
+function saveIndex(indexData: IndexData): void {
 	fs.writeFileSync(`${OUT_DIR}/index.json`, JSON.stringify(indexData, null, '\t'));
 }
 
-function findBrokenFiles(blob) {
+function findBrokenFiles(blob: Buffer): void {
 	let m;
-	let RE_BROKEN_FILES = /fopen\((.*?)\):/gi;
+	const RE_BROKEN_FILES = /fopen\((.*?)\):/gi;
 	while ((m = RE_BROKEN_FILES.exec(blob.toString()))) {
 		console.error(`!!!! broken file:`, m[1]);
 	}
 }
 
-function findZipStart(blob) {
-	let foundZipStart = -1;
-	for (let i = 0; i < blob.length; i++) {
-		if (blob[i] == 0x50 && blob[i + 1] == 0x4b && blob[i + 2] == 0x03 && blob[i + 3] == 0x04) {
-			foundZipStart = i;
-			break;
-		}
-	}
-	return foundZipStart;
-}
-
-function fileMD5(file) {
-	return crypto.createHash('md5').update(fs.readFileSync(file)).digest("hex");
-}
-
-function getPatchesFromArchive(buffer) {
-	let patches = [];
+function getPatchesFromArchive(buffer: Buffer): Promise<ZipPatchInfo[]> {
+	const patches: ZipPatchInfo[] = [];
 
 	return new Promise((callback, error) => {
 		yauzl.fromBuffer(buffer, {lazyEntries: true}, function (err, zipfile) {
@@ -370,7 +387,7 @@ function getPatchesFromArchive(buffer) {
 				return error(err);
 			zipfile.readEntry();
 			zipfile.on("entry", (entry) => {
-				let buffers = [];
+				const buffers: Buffer[] = [];
 				zipfile.openReadStream(entry, (err, readStream) => {
 					if (err)
 						return error(err);
@@ -397,36 +414,4 @@ function getPatchesFromArchive(buffer) {
 			});
 		});
 	});
-}
-
-function getChunks(arr, size) {
-	let chunks = [];
-	while (arr.length > 0) {
-		let chunk = [];
-		while (chunk.length < size && arr.length > 0)
-			chunk.push(arr.shift());
-		chunks.push(chunk);
-	}
-	return chunks;
-}
-
-async function wget(url) {
-	let response = await fetch(url);
-	return {
-		status:	response.status,
-		body:	Buffer.from(await response.arrayBuffer())
-	};
-}
-
-function readFiles(dir, base, files) {
-	base = base || "";
-	files = files || [];
-	fs.readdirSync(dir, {withFileTypes: true}).forEach((entry) => {
-		if (entry.isDirectory()) {
-			readFiles(dir + "/" + entry.name, base + entry.name + "/", files);
-		} else {
-			files.push(base + entry.name);
-		}
-	});
-	return files;
 }

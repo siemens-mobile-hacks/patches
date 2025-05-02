@@ -2,12 +2,12 @@
 set -e
 set -x
 
-cd $(dirname $0)/../
+cd "$(dirname "$0")/../"
 
 # Run update
-npm install
-node . --cookie=$KIBAB_TEST_USER "$@"
-node src/get-bad-patches.js > bad.md
+pnpm install --frozen-lockfile
+npx tsx src/syncPatches.ts --cookie="$KIBAB_TEST_USER" "$@"
+npx tsx src/getBadPatches.ts > bad.md
 
 # Commit
 git config --local core.hooksPath /notexistent
