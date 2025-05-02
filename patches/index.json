@@ -34402,6 +34402,16 @@
 				"ru": "Не менять левый софткей на ГЭ если нет сети",
 				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
+		},
+		"11091": {
+			"id": 11091,
+			"model": "CX75v25",
+			"file": "CX75v25/11091-redisign_surf_and_fun_menu.vkp",
+			"mtime": 1746215436000,
+			"title": {
+				"ru": "Переработанное меню 'Интерн./игр' в Native Menu",
+				"en": "Redesign 'Surf & fun' menu"
+			}
 		}
 	},
 	"M75v5": {
