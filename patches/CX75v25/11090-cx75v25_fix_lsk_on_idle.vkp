@@ -1,0 +1,19 @@
+;CX75v25
+;Не менять левый софткей на ГЭ если нет сети
+;Don`t change the left softkey on IDLE if there is no network
+;(c) Feyman, FIL
+;(p) Marie
+;Version: 
+;PatchID: 11090
+;Details: https://patches.kibab.com/patches/details.php5?id=11090
+/*
+Левый софт на ГЭ больше не будет менять своё значение в зависимости от состояния сетевого соединения, остальные функции сохранены.
+*/
+
+02CC02E: 1420 C046
+
+;Pattern
+;E869002801D11420=E869002801D1C046 ; R65_x65, R65_x75 (~) Marie
+
+;------------------------- end -------------------------
+

@@ -34392,6 +34392,16 @@
 				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
 				"en": "Don't stop media player playback when minimized"
 			}
+		},
+		"11090": {
+			"id": 11090,
+			"model": "CX75v25",
+			"file": "CX75v25/11090-cx75v25_fix_lsk_on_idle.vkp",
+			"mtime": 1746211770000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"M75v5": {
