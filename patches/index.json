@@ -34422,6 +34422,16 @@
 				"ru": "Переработанное меню 'Интерн./игр' в Native Menu",
 				"en": "Redesign 'Surf & fun' menu"
 			}
+		},
+		"11093": {
+			"id": 11093,
+			"model": "CX75v25",
+			"file": "CX75v25/11093-cx75v25_smooth_scroll_of_long_heade.vkp",
+			"mtime": 1746219780000,
+			"title": {
+				"ru": "Плавная прокрутка длинных заголовков",
+				"en": "Smooth scrolling of long headers"
+			}
 		}
 	},
 	"M75v5": {
