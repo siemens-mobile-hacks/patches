@@ -87757,6 +87757,16 @@
 				"ru": "Графика x75",
 				"en": "x75 graphpack"
 			}
+		},
+		"11100": {
+			"id": 11100,
+			"model": "C72v22",
+			"file": "C72v22/11100-c72v22_reverse_audio_play_animation.vkp",
+			"mtime": 1746274734000,
+			"title": {
+				"ru": "Изменить направление кручения бобин при проигрывании аудио",
+				"en": "Reverse Audio play animation"
+			}
 		}
 	},
 	"SXG75v22": {
