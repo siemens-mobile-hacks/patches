@@ -47254,6 +47254,16 @@
 				"ru": "Изображение в меню подсветки и контрастности",
 				"en": "Image in menu light and contrast"
 			}
+		},
+		"11096": {
+			"id": 11096,
+			"model": "C65v56",
+			"file": "C65v56/11096-c65v56_reverse_audio_play_animation.vkp",
+			"mtime": 1746270002000,
+			"title": {
+				"ru": "Изменить направление кручения бобин при проигрывании аудио",
+				"en": "Reverse Audio play animation"
+			}
 		}
 	},
 	"CX65v25": {
