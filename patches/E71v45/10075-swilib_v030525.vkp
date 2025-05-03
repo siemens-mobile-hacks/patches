@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 290425
+;Version: 030525
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -1023,6 +1023,9 @@
 0F64: 0xA0A32284 ; 3D9: __arm int GetPITSize();
 0F68: 0xA04FB651 ; 3DA: __thumb int wstrwstr(const WSHDR *ws, const WSHDR *search, uint32_t start_pos);
 0F6C: 0xA04FB575 ; 3DB: __thumb void wstrreplace(WSHDR *dest, const WSHDR *src, uint32_t pos);
+0F70: 0xA094D9C3 ; 3DC: __thumb int GetUnicodeSymbolByDynIcon(int dyn_icon);
+0F74: 0xA09CC8FD ; 3DD: __thumb uint32_t ReadValueFromPDFile(uint32_t file_id, const char *key, char *value, uint32_t *size);
+0F78: 0xA09CCE0D ; 3DE: __thumb uint32_t WriteValueToPDFile(uint32_t file_id, const char *key, const char *value, size_t size);
 
 #pragma disable old_equal_ff
 +0
