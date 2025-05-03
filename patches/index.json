@@ -68016,6 +68016,16 @@
 				"ru": "Изменить направление кручения бобин при проигрывании аудио",
 				"en": "Reverse Audio play animation"
 			}
+		},
+		"11105": {
+			"id": 11105,
+			"model": "CX70v56",
+			"file": "CX70v56/11105-dont_display_cenral_nav_key_icon_v2.vkp",
+			"mtime": 1746296716000,
+			"title": {
+				"ru": "Не отображать иконки центральной навигационной клавиши",
+				"en": "Don't display central navigation key icon"
+			}
 		}
 	},
 	"C55v24": {
