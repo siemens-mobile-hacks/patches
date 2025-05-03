@@ -34472,6 +34472,16 @@
 				"ru": "Изменить направление кручения бобин при проигрывании аудио",
 				"en": "Reverse Audio play animation"
 			}
+		},
+		"11112": {
+			"id": 11112,
+			"model": "CX75v25",
+			"file": "CX75v25/11112-dont_display_cenral_nav_key_icon_v2.vkp",
+			"mtime": 1746297490000,
+			"title": {
+				"ru": "Не отображать иконки центральной навигационной клавиши",
+				"en": "Don't display central navigation key icon"
+			}
 		}
 	},
 	"M75v5": {
