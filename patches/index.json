@@ -60220,6 +60220,16 @@
 				"ru": "Не отображать иконки центральной навигационной клавиши",
 				"en": "Don't display central navigation key icon"
 			}
+		},
+		"11116": {
+			"id": 11116,
+			"model": "SL65v53",
+			"file": "SL65v53/11116-sl65v53_smooth_scroll_of_long_heade.vkp",
+			"mtime": 1746303058000,
+			"title": {
+				"ru": "Плавная прокрутка длинных заголовков",
+				"en": "Smooth scrolling of long headers"
+			}
 		}
 	},
 	"SK65v50": {
