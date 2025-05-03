@@ -44508,6 +44508,16 @@
 				"ru": "Не отображать иконки центральной навигационной клавиши",
 				"en": "Don't display central navigation key icon"
 			}
+		},
+		"11118": {
+			"id": 11118,
+			"model": "C75v22",
+			"file": "C75v22/11118-c75v22_smooth_scroll_of_long_header.vkp",
+			"mtime": 1746304004000,
+			"title": {
+				"ru": "Плавная прокрутка длинных заголовков",
+				"en": "Smooth scrolling of long headers"
+			}
 		}
 	},
 	"C75v13": {
