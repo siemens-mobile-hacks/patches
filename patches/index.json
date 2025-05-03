@@ -60140,6 +60140,16 @@
 				"ru": "Отключить вопрос о включении профиля \"В Самолете\"",
 				"en": "Disable Profile \"Aircraft\" Question"
 			}
+		},
+		"11107": {
+			"id": 11107,
+			"model": "SL65v53",
+			"file": "SL65v53/11107-dont_display_cenral_nav_key_icon_v2.vkp",
+			"mtime": 1746297044000,
+			"title": {
+				"ru": "Не отображать иконки центральной навигационной клавиши",
+				"en": "Don't display central navigation key icon"
+			}
 		}
 	},
 	"SK65v50": {
