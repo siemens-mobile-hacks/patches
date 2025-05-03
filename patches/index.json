@@ -44458,6 +44458,16 @@
 				"ru": "Переработанное меню Еще в Native Menu",
 				"en": "Redesigned menu Extras in Native Menu"
 			}
+		},
+		"11103": {
+			"id": 11103,
+			"model": "C75v22",
+			"file": "C75v22/11103-c75v22_reverse_audio_play_animation.vkp",
+			"mtime": 1746274980000,
+			"title": {
+				"ru": "Изменить направление кручения бобин при проигрывании аудио",
+				"en": "Reverse Audio play animation"
+			}
 		}
 	},
 	"C75v13": {
