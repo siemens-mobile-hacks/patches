@@ -62138,6 +62138,16 @@
 				"ru": "Не отображать иконки центральной навигационной клавиши",
 				"en": "Don't display central navigation key icon"
 			}
+		},
+		"11117": {
+			"id": 11117,
+			"model": "SK65v50",
+			"file": "SK65v50/11117-sk65v50_smooth_scroll_of_long_heade.vkp",
+			"mtime": 1746303464000,
+			"title": {
+				"ru": "Плавная прокрутка длинных заголовков",
+				"en": "Smooth scrolling of long headers"
+			}
 		}
 	},
 	"CX70v50": {

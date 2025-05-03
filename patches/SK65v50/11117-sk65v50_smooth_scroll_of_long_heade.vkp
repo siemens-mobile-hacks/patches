@@ -1,0 +1,33 @@
+;SK65v50
+;Плавная прокрутка длинных заголовков
+;Smooth scrolling of long headers
+;(c) FIL
+;(p) Marie
+;Version: 1.1
+;PatchID: 11117
+;Details: https://patches.kibab.com/patches/details.php5?id=11117
+/*
+
+*/
+
+; DEFAULT
+094C236: FF22 3A22 ; Speed
+094C238: 2D32 8421 ; Delay
+094C23A: 7D21 8900 ; Delay
+094C23C: 0901 0231 ; Delay
+
+; MEDIA PLAYER
+03B0644: C8 3A ; Speed
+03B0648: FA1F 311E ; Delay
+
+; EXTRA HEADER
+0456164: E803 1202 ; Delay
+0456168: F401 3A00 ; Speed
+
+;Pattern
+;FF222D327D210901E069=3A22842189000231 ; R65_x65, R65_x75 (~) Marie
+;C820A0E3FA1FA0E3=3A20A0E3311EA0E3
+;02000000E8030000F4010000=02000000120200003A000000
+
+;------------------------- end -------------------------
+
