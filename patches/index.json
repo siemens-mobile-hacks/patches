@@ -47294,6 +47294,16 @@
 				"ru": "Изменить направление кручения бобин при проигрывании аудио",
 				"en": "Reverse Audio play animation"
 			}
+		},
+		"11104": {
+			"id": 11104,
+			"model": "C65v56",
+			"file": "C65v56/11104-dont_display_cenral_nav_key_icon_v2.vkp",
+			"mtime": 1746296602000,
+			"title": {
+				"ru": "Не отображать иконки центральной навигационной клавиши",
+				"en": "Don't display central navigation key icon"
+			}
 		}
 	},
 	"CX65v25": {
