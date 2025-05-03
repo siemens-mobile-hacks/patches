@@ -46078,6 +46078,16 @@
 				"ru": "Сохранение списков при смене SIM карты",
 				"en": "Call list saving when SIM is changed"
 			}
+		},
+		"11102": {
+			"id": 11102,
+			"model": "C75v24",
+			"file": "C75v24/11102-c75v24_reverse_audio_play_animation.vkp",
+			"mtime": 1746274940000,
+			"title": {
+				"ru": "Изменить направление кручения бобин при проигрывании аудио",
+				"en": "Reverse Audio play animation"
+			}
 		}
 	},
 	"C65v50": {
