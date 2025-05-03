@@ -87967,6 +87967,16 @@
 				"ru": "Не отображать иконки центральной навигационной клавиши",
 				"en": "Don't display central navigation key icon"
 			}
+		},
+		"11120": {
+			"id": 11120,
+			"model": "C72v22",
+			"file": "C72v22/11120-c72v22_smooth_scroll_of_long_header.vkp",
+			"mtime": 1746305304000,
+			"title": {
+				"ru": "Плавная прокрутка длинных заголовков",
+				"en": "Smooth scrolling of long headers"
+			}
 		}
 	},
 	"SXG75v22": {
