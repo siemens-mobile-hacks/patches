@@ -100,9 +100,6 @@ This is not an error, but the RTF format is legacy and less portable.
 
 | ID | Model | PATCH |
 |---|---|---|
-| 2691 | A50v12 | [Relocation<br>Relocation](https://patches.kibab.com/patches/details.php5?id=2691) |
-| 2691 | A50v12 | [Relocation<br>Relocation](https://patches.kibab.com/patches/details.php5?id=2691) |
-| 2691 | A50v12 | [Relocation<br>Relocation](https://patches.kibab.com/patches/details.php5?id=2691) |
 | 3127 | SL45iv56 | [Изменить вид софтов без функции<br>Modify the picture of the softkey having no function](https://patches.kibab.com/patches/details.php5?id=3127) |
 
 
