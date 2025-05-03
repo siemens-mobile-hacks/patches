@@ -51562,6 +51562,16 @@
 				"ru": "Change java heap size",
 				"en": "Change java heap size"
 			}
+		},
+		"11097": {
+			"id": 11097,
+			"model": "M65v58",
+			"file": "M65v58/11097-m65v58_reverse_audio_play_animation.vkp",
+			"mtime": 1746270114000,
+			"title": {
+				"ru": "Изменить направление кручения бобин при проигрывании аудио",
+				"en": "Reverse Audio play animation"
+			}
 		}
 	},
 	"S65v50": {
