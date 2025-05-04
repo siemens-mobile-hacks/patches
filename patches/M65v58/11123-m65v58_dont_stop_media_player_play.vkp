@@ -1,0 +1,20 @@
+;M65v58
+;Не останавливать воспроизведение медиаплеера после сворачивания
+;Don't stop media player playback when minimized
+;(c) FIL
+;(p) Marie
+;Version: 
+;PatchID: 11123
+;Details: https://patches.kibab.com/patches/details.php5?id=11123
+/*
+
+*/
+
+096EC34: 0C0090E5 0000A0E3
+096EC38: 1210A0E3 0000A0E3
+
+;Pattern
+;0C0090E51210A0E3=0000A0E30000A0E3 ; R65_x65, R65_x75 (~) Marie
+
+;------------------------- end -------------------------
+
