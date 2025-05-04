@@ -88027,6 +88027,16 @@
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
 			}
+		},
+		"11126": {
+			"id": 11126,
+			"model": "C72v22",
+			"file": "C72v22/11126-c72v22_dont_stop_media_player_play.vkp",
+			"mtime": 1746351516000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
+			}
 		}
 	},
 	"SXG75v22": {
