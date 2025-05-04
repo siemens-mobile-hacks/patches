@@ -1,31 +1,31 @@
-;CX75v25
+;CF75v23
 ;Изменить направление кручения бобин при проигрывании аудио
 ;Reverse Audio play animation
 ;(c) Marie
 ;Version: 
-;PatchID: 11095
-;Details: https://patches.kibab.com/patches/details.php5?id=11095
+;PatchID: 11101
+;Details: https://patches.kibab.com/patches/details.php5?id=11101
 /*
 Немного красоты в юи) Так же в мастере теперь будут бобины в стиле x75. Оставила возможность оставить в мастере памяти старые бобины в стиле x65
 */
 
 ;Везде, кроме мастера памяти
-10C06C0: D00611A1 D41F11A1
-10C06C8: 240F11A1 701711A1
-10C06D0: 701711A1 240F11A1
-10C06D8: D41F11A1 D00611A1
+0F805F0: 5451FBA0 586AFBA0
+0F805F8: A859FBA0 F461FBA0
+0F80600: F461FBA0 A859FBA0
+0F80608: 586AFBA0 5451FBA0
 
 ;В мастере памяти стиль x75
-10C0A78: D0B614A1 D41F11A1
-10C0A80: 60C514A1 701711A1
-10C0A88: F8D314A1 240F11A1
-10C0A90: 64E214A1 D00611A1
+0F80A60: 5C7BFFA0 586AFBA0
+0F80A68: EC89FFA0 F461FBA0
+0F80A70: 8498FFA0 A859FBA0
+0F80A78: F0A6FFA0 5451FBA0
 
 ;В мастере памяти стиль x65
-;10C0A78: D0B614A1 64E214A1
-;10C0A80: 60C514A1 F8D314A1
-;10C0A88: F8D314A1 60C514A1
-;10C0A90: 64E214A1 D0B614A1
+;0F80A60: 5C7BFFA0 F0A6FFA0
+;0F80A68: EC89FFA0 8498FFA0
+;0F80A70: 8498FFA0 EC89FFA0
+;0F80A78: F0A6FFA0 5C7BFFA0
 
 ;------------------------- end -------------------------
 

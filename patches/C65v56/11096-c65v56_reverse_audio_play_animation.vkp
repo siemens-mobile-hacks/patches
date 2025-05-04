@@ -1,25 +1,25 @@
-;SL65v53
+;C65v56
 ;Изменить направление кручения бобин при проигрывании аудио
 ;Reverse Audio play animation
 ;(c) Marie
 ;Version: 
-;PatchID: 10933
-;Details: https://patches.kibab.com/patches/details.php5?id=10933
+;PatchID: 11096
+;Details: https://patches.kibab.com/patches/details.php5?id=11096
 /*
 Немного красоты в юи)
 */
 
 ;Везде, кроме мастера памяти
-0DA0590: CC10DEA0 603CDEA0
-0DA0598: 5C1FDEA0 F42DDEA0
-0DA05A0: F42DDEA0 5C1FDEA0
-0DA05A8: 603CDEA0 CC10DEA0
+0DA0590: E446DEA0 7872DEA0
+0DA0598: 7455DEA0 0C64DEA0
+0DA05A0: 0C64DEA0 7455DEA0
+0DA05A8: 7872DEA0 E446DEA0
 
 ;В мастере памяти
-0DA0880: 2483E1A0 B8AEE1A0
-0DA0888: B491E1A0 4CA0E1A0
-0DA0890: 4CA0E1A0 B491E1A0
-0DA0898: B8AEE1A0 2483E1A0
+0DA0880: 3CB9E1A0 D0E4E1A0
+0DA0888: CCC7E1A0 64D6E1A0
+0DA0890: 64D6E1A0 CCC7E1A0
+0DA0898: D0E4E1A0 3CB9E1A0
 
 ;------------------------- end -------------------------
 

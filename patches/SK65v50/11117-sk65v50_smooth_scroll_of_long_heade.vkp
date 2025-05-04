@@ -1,28 +1,28 @@
-;CX75v13
+;SK65v50
 ;Плавная прокрутка длинных заголовков
 ;Smooth scrolling of long headers
 ;(c) FIL
 ;(p) Marie
 ;Version: 1.1
-;PatchID: 11092
-;Details: https://patches.kibab.com/patches/details.php5?id=11092
+;PatchID: 11117
+;Details: https://patches.kibab.com/patches/details.php5?id=11117
 /*
 
 */
 
 ; DEFAULT
-0805B32: FF22 3A22 ; Speed
-0805B34: 2D32 8421 ; Delay
-0805B36: 7D21 8900 ; Delay
-0805B38: 0901 0231 ; Delay
+094C236: FF22 3A22 ; Speed
+094C238: 2D32 8421 ; Delay
+094C23A: 7D21 8900 ; Delay
+094C23C: 0901 0231 ; Delay
 
 ; MEDIA PLAYER
-03E04A4: C8 3A ; Speed
-03E04A8: FA1F 311E ; Delay
+03B0644: C8 3A ; Speed
+03B0648: FA1F 311E ; Delay
 
 ; EXTRA HEADER
-04A8068: E803 1202 ; Delay
-04A806C: F401 3A00 ; Speed
+0456164: E803 1202 ; Delay
+0456168: F401 3A00 ; Speed
 
 ;Pattern
 ;FF222D327D210901E069=3A22842189000231 ; R65_x65, R65_x75 (~) Marie

@@ -1,0 +1,19 @@
+;CF75v23
+;Не отображать иконки центральной навигационной клавиши
+;Don't display central navigation key icon
+;(c) FIL
+;(p) Marie
+;Version: 2
+;PatchID: 11114
+;Details: https://patches.kibab.com/patches/details.php5?id=11114
+/*
+
+*/
+
+07BFF18: 01 FF
+
+;Pattern
+01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
+
+;------------------------- end -------------------------
+

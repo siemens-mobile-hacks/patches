@@ -1,4 +1,49 @@
 ### Patches with errors
+[C72v22/11113-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11113)
+
+Error: Syntax error at line 16 col 1
+```
+  13 | 1136110: 01 FF
+  14 | 
+  15 | ;Pattern
+> 16 | 01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
+     | ^
+  17 | 
+  18 | ;------------------------- end -------------------------
+  19 | 
+
+```
+
+[C75v22/11109-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11109)
+
+Error: Syntax error at line 16 col 1
+```
+  13 | 07B8884: 01 FF
+  14 | 
+  15 | ;Pattern
+> 16 | 01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
+     | ^
+  17 | 
+  18 | ;------------------------- end -------------------------
+  19 | 
+
+```
+
+[C75v24/11110-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11110)
+
+Error: Syntax error at line 16 col 1
+```
+  13 | 07B8A08: 01 FF
+  14 | 
+  15 | ;Pattern
+> 16 | 01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
+     | ^
+  17 | 
+  18 | ;------------------------- end -------------------------
+  19 | 
+
+```
+
 [C81v51/10629-swilib_c81v51_vkp.vkp](https://patches.kibab.com/patches/details.php5?id=10629)
 
 Warning: Useless "#pragma enable old_equal_ff" has no effect at line 1057 col 1
@@ -26,6 +71,66 @@ Please put "#pragma disable old_equal_ff" at the end of the patch.
     15 | 
     16 | 0000: 0xA0002070   ;   0: void loopback0()
     17 | 0004: 0xA0002070   ;   1: void loopback1()
+
+```
+
+[CF75v23/11114-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11114)
+
+Error: Syntax error at line 16 col 1
+```
+  13 | 07BFF18: 01 FF
+  14 | 
+  15 | ;Pattern
+> 16 | 01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
+     | ^
+  17 | 
+  18 | ;------------------------- end -------------------------
+  19 | 
+
+```
+
+[CX75v13/11111-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11111)
+
+Error: Syntax error at line 16 col 1
+```
+  13 | 0807934: 01 FF
+  14 | 
+  15 | ;Pattern
+> 16 | 01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
+     | ^
+  17 | 
+  18 | ;------------------------- end -------------------------
+  19 | 
+
+```
+
+[CX75v25/11112-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11112)
+
+Error: Syntax error at line 16 col 1
+```
+  13 | 0809340: 01 FF
+  14 | 
+  15 | ;Pattern
+> 16 | 01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
+     | ^
+  17 | 
+  18 | ;------------------------- end -------------------------
+  19 | 
+
+```
+
+[SK65v50/11108-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11108)
+
+Error: Syntax error at line 16 col 1
+```
+  13 | 094E02C: 01 FF
+  14 | 
+  15 | ;Pattern
+> 16 | 01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
+     | ^
+  17 | 
+  18 | ;------------------------- end -------------------------
+  19 | 
 
 ```
 
