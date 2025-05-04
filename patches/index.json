@@ -46198,6 +46198,16 @@
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
 			}
+		},
+		"11129": {
+			"id": 11129,
+			"model": "C75v24",
+			"file": "C75v24/11129-c75v24_dont_stop_media_player_play.vkp",
+			"mtime": 1746351816000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
+			}
 		}
 	},
 	"C65v50": {
