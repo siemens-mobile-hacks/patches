@@ -47394,6 +47394,16 @@
 				"ru": "Не отображать иконки центральной навигационной клавиши",
 				"en": "Don't display central navigation key icon"
 			}
+		},
+		"11122": {
+			"id": 11122,
+			"model": "C65v56",
+			"file": "C65v56/11122-c65v56_dont_stop_media_player_play.vkp",
+			"mtime": 1746349992000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
+			}
 		}
 	},
 	"CX65v25": {
