@@ -60280,6 +60280,16 @@
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
 			}
+		},
+		"11125": {
+			"id": 11125,
+			"model": "SL65v53",
+			"file": "SL65v53/11125-cx75v13_dont_stop_media_player_play.vkp",
+			"mtime": 1746350410000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
+			}
 		}
 	},
 	"SK65v50": {
