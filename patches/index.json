@@ -62198,6 +62198,16 @@
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
 			}
+		},
+		"11124": {
+			"id": 11124,
+			"model": "SK65v50",
+			"file": "SK65v50/11124-sk65v50_dont_stop_media_player_play.vkp",
+			"mtime": 1746350326000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
+			}
 		}
 	},
 	"CX70v50": {
