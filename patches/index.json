@@ -44538,6 +44538,16 @@
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
 			}
+		},
+		"11128": {
+			"id": 11128,
+			"model": "C75v22",
+			"file": "C75v22/11128-c75v22_dont_stop_media_player_play.vkp",
+			"mtime": 1746351716000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
+			}
 		}
 	},
 	"C75v13": {
