@@ -25419,6 +25419,16 @@
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
 			}
+		},
+		"11127": {
+			"id": 11127,
+			"model": "CF75v23",
+			"file": "CF75v23/11127-cf75v23_dont_stop_media_player_play.vkp",
+			"mtime": 1746351612000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
+			}
 		}
 	},
 	"CX75v5": {
