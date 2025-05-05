@@ -4662,7 +4662,7 @@
 			}
 		},
 		"10076": {
-			"id": "10076",
+			"id": 10076,
 			"model": "EL71v45",
 			"file": "EL71v45/10076-library.vkp",
 			"mtime": 1292840336000,
@@ -10295,7 +10295,7 @@
 			}
 		},
 		"5624": {
-			"id": "5624",
+			"id": 5624,
 			"model": "S75v47",
 			"file": "S75v47/5624-S75sw47_Functions_Library_120812.vkp",
 			"additionalFile": "S75v47/5624-Functions_library_100410.zip",
@@ -15173,7 +15173,7 @@
 			}
 		},
 		"8285": {
-			"id": "8285",
+			"id": 8285,
 			"model": "S75v52",
 			"file": "S75v52/8285-swilib_v160624.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
@@ -21525,7 +21525,7 @@
 			}
 		},
 		"10522": {
-			"id": "10522",
+			"id": 10522,
 			"model": "SL75v47",
 			"file": "SL75v47/10522-Function_Library120603.vkp",
 			"additionalFile": "SL75v47/10522-Function_Library120603.rar",
@@ -21838,7 +21838,7 @@
 			}
 		},
 		"7634": {
-			"id": "7634",
+			"id": 7634,
 			"model": "SL75v52",
 			"file": "SL75v52/7634-Functions_library.vkp",
 			"mtime": 1200294382000,
@@ -25301,7 +25301,7 @@
 			}
 		},
 		"10542": {
-			"id": "10542",
+			"id": 10542,
 			"model": "CF75v23",
 			"file": "CF75v23/10542-SWILIB_141112.vkp",
 			"mtime": 1353342970000,
@@ -25418,6 +25418,16 @@
 			"title": {
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
+			}
+		},
+		"11127": {
+			"id": 11127,
+			"model": "CF75v23",
+			"file": "CF75v23/11127-cf75v23_dont_stop_media_player_play.vkp",
+			"mtime": 1746351612000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
 			}
 		}
 	},
@@ -29228,7 +29238,7 @@
 			}
 		},
 		"6285": {
-			"id": "6285",
+			"id": 6285,
 			"model": "CX75v13",
 			"file": "CX75v13/6285-swilib.vkp",
 			"additionalFile": "CX75v13/6285-swilib.zip",
@@ -32020,7 +32030,7 @@
 			}
 		},
 		"4736": {
-			"id": "4736",
+			"id": 4736,
 			"model": "CX75v25",
 			"file": "CX75v25/4736-fl_swi.vkp",
 			"additionalFile": "CX75v25/4736-fl_swi.rar",
@@ -39536,7 +39546,7 @@
 			}
 		},
 		"4673": {
-			"id": "4673",
+			"id": 4673,
 			"model": "M75v25",
 			"file": "M75v25/4673-BigFunctionLibrary.vkp",
 			"mtime": 1176023636000,
@@ -44400,7 +44410,7 @@
 			}
 		},
 		"10518": {
-			"id": "10518",
+			"id": 10518,
 			"model": "C75v22",
 			"file": "C75v22/10518-swilib_c75_22_120628.vkp",
 			"mtime": 1340924442000,
@@ -44527,6 +44537,16 @@
 			"title": {
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
+			}
+		},
+		"11128": {
+			"id": 11128,
+			"model": "C75v22",
+			"file": "C75v22/11128-c75v22_dont_stop_media_player_play.vkp",
+			"mtime": 1746351716000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
 			}
 		}
 	},
@@ -46030,7 +46050,7 @@
 			}
 		},
 		"10516": {
-			"id": "10516",
+			"id": 10516,
 			"model": "C75v24",
 			"file": "C75v24/10516-SWI_C75_24_120628.vkp",
 			"mtime": 1340923204000,
@@ -46177,6 +46197,16 @@
 			"title": {
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
+			}
+		},
+		"11129": {
+			"id": 11129,
+			"model": "C75v24",
+			"file": "C75v24/11129-c75v24_dont_stop_media_player_play.vkp",
+			"mtime": 1746351816000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
 			}
 		}
 	},
@@ -47393,6 +47423,16 @@
 			"title": {
 				"ru": "Не отображать иконки центральной навигационной клавиши",
 				"en": "Don't display central navigation key icon"
+			}
+		},
+		"11122": {
+			"id": 11122,
+			"model": "C65v56",
+			"file": "C65v56/11122-c65v56_dont_stop_media_player_play.vkp",
+			"mtime": 1746349992000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
 			}
 		}
 	},
@@ -51722,6 +51762,16 @@
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
 			}
+		},
+		"11123": {
+			"id": 11123,
+			"model": "M65v58",
+			"file": "M65v58/11123-m65v58_dont_stop_media_player_play.vkp",
+			"mtime": 1746350194000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
+			}
 		}
 	},
 	"S65v50": {
@@ -55286,7 +55336,7 @@
 			}
 		},
 		"7545": {
-			"id": "7545",
+			"id": 7545,
 			"model": "S65v58",
 			"file": "S65v58/7545-Library.vkp",
 			"mtime": 1179819080000,
@@ -60092,7 +60142,7 @@
 			}
 		},
 		"10131": {
-			"id": "10131",
+			"id": 10131,
 			"model": "SL65v53",
 			"file": "SL65v53/10131-swilib_16_01_2011.vkp",
 			"mtime": 1299855222000,
@@ -60259,6 +60309,16 @@
 			"title": {
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
+			}
+		},
+		"11125": {
+			"id": 11125,
+			"model": "SL65v53",
+			"file": "SL65v53/11125-cx75v13_dont_stop_media_player_play.vkp",
+			"mtime": 1746350410000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
 			}
 		}
 	},
@@ -61795,7 +61855,7 @@
 			}
 		},
 		"7546": {
-			"id": "7546",
+			"id": 7546,
 			"model": "SK65v50",
 			"file": "SK65v50/7546-library.vkp",
 			"additionalFile": "SK65v50/7546-library.zip",
@@ -62177,6 +62237,16 @@
 			"title": {
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
+			}
+		},
+		"11124": {
+			"id": 11124,
+			"model": "SK65v50",
+			"file": "SK65v50/11124-sk65v50_dont_stop_media_player_play.vkp",
+			"mtime": 1746350326000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
 			}
 		}
 	},
@@ -67847,7 +67917,7 @@
 			}
 		},
 		"10625": {
-			"id": "10625",
+			"id": 10625,
 			"model": "CX70v56",
 			"file": "CX70v56/10625-swilib_v241024.vkp",
 			"mtime": 1729764078000,
@@ -87237,7 +87307,7 @@
 			}
 		},
 		"6954": {
-			"id": "6954",
+			"id": 6954,
 			"model": "C72v22",
 			"file": "C72v22/6954-Big_Function_Library.vkp",
 			"additionalFile": "C72v22/6954-Big_Function_Library.rar",
@@ -87986,6 +88056,16 @@
 			"title": {
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
+			}
+		},
+		"11126": {
+			"id": 11126,
+			"model": "C72v22",
+			"file": "C72v22/11126-c72v22_dont_stop_media_player_play.vkp",
+			"mtime": 1746351516000,
+			"title": {
+				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
+				"en": "Don't stop media player playback when minimized"
 			}
 		}
 	},
@@ -93280,7 +93360,7 @@
 			}
 		},
 		"10075": {
-			"id": "10075",
+			"id": 10075,
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib_v030525.vkp",
 			"mtime": 1746279286000,
@@ -95345,6 +95425,16 @@
 			"title": {
 				"ru": "Исправить анимацию включения при перезагрузке",
 				"en": "Fix startup animation on reboot"
+			}
+		},
+		"11130": {
+			"id": 11130,
+			"model": "E71v45",
+			"file": "E71v45/11130-launch_elf_instead_of_alarm_editor.vkp",
+			"mtime": 1746372032000,
+			"title": {
+				"ru": "Запуск ELF вместо редактора будильника",
+				"en": "Launch ELF instead of alarm clock editor"
 			}
 		}
 	},
@@ -97900,7 +97990,7 @@
 			}
 		},
 		"10629": {
-			"id": "10629",
+			"id": 10629,
 			"model": "C81v51",
 			"file": "C81v51/10629-swilib_c81v51_vkp.vkp",
 			"mtime": 1718886492000,
@@ -99668,7 +99758,7 @@
 			}
 		},
 		"10839": {
-			"id": "10839",
+			"id": 10839,
 			"model": "S68v52",
 			"file": "S68v52/10839-swilib.vkp",
 			"mtime": 1717526596000,
@@ -99966,7 +100056,7 @@
 			}
 		},
 		"10395": {
-			"id": "10395",
+			"id": 10395,
 			"model": "CL61v128",
 			"file": "CL61v128/10395-swilib_cl61v00_db128.vkp",
 			"additionalFile": "CL61v128/10395-swilib_cl61v00_db128.zip",
