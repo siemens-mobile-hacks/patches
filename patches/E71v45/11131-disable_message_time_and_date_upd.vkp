@@ -1,0 +1,14 @@
+;E71v45
+;Отключить сообщение 'Время и дата актуализированы.'
+;Disable message 'Time and date updated.'
+;(c) FIL
+;Version: 
+;PatchID: 11131
+;Details: https://patches.kibab.com/patches/details.php5?id=11131
+/*
+
+*/
+
+077E76E: 7AF00EE9 C046C046
+;------------------------- end -------------------------
+

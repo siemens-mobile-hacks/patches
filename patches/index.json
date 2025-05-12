@@ -95436,6 +95436,16 @@
 				"ru": "Запуск ELF вместо редактора будильника",
 				"en": "Launch ELF instead of alarm clock editor"
 			}
+		},
+		"11131": {
+			"id": 11131,
+			"model": "E71v45",
+			"file": "E71v45/11131-disable_message_time_and_date_upd.vkp",
+			"mtime": 1747050664000,
+			"title": {
+				"ru": "Отключить сообщение 'Время и дата актуализированы.'",
+				"en": "Disable message 'Time and date updated.'"
+			}
 		}
 	},
 	"C81v51": {
