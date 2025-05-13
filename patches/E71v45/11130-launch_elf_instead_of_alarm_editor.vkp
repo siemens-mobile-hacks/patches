@@ -7,6 +7,7 @@
 ;Details: https://patches.kibab.com/patches/details.php5?id=11130
 /*
 Путь к эльфу можно указать любой в первой строке патча.
+Реализация эльфа:
 [url]https://github.com/siemens-mobile-hacks/sie_alarm[/url]
 */
 
