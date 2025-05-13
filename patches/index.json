@@ -95446,6 +95446,16 @@
 				"ru": "Отключить сообщение 'Время и дата актуализированы.'",
 				"en": "Disable message 'Time and date updated.'"
 			}
+		},
+		"11132": {
+			"id": 11132,
+			"model": "E71v45",
+			"file": "E71v45/11132-launch_elf_instead_time_zone_picker.vkp",
+			"mtime": 1747130860000,
+			"title": {
+				"ru": "Запуск ELF вместо селектора временных зон",
+				"en": "Launch ELF instead of time zone picker"
+			}
 		}
 	},
 	"C81v51": {
