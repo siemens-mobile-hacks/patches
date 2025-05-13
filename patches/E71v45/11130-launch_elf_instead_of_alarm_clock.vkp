@@ -1,6 +1,6 @@
 ;E71v45
-;Запуск ELF вместо редактора будильника
-;Launch ELF instead of alarm clock editor
+;Запуск ELF вместо 'Будильник'
+;Launch ELF instead of 'Alarm clock'
 ;(c) FIL
 ;Version: 
 ;PatchID: 11130
@@ -12,6 +12,7 @@
 */
 
 067217C: 636F6D2E7369656D656E732E6D702E6170702E616C61726D636C6F636B2E416C61726D436C6F636B00 "2:\\SieAlarm.elf"00
+
 06E81EA: 16F613FA C046C046
 05C5DF0: 9C309FE5 0000A0E1
 05C5E00: 00408DE5 0000A0E1
