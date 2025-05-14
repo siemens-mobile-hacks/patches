@@ -6,7 +6,8 @@
 ;PatchID: 11130
 ;Details: https://patches.kibab.com/patches/details.php5?id=11130
 /*
-
+Путь к эльфу можно указать любой в первой строке патча.
+[url]https://github.com/siemens-mobile-hacks/sie_alarm[/url]
 */
 
 067217C: 636F6D2E7369656D656E732E6D702E6170702E616C61726D636C6F636B2E416C61726D436C6F636B00 "2:\\SieAlarm.elf"00
