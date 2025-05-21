@@ -3,11 +3,11 @@
 ;Functions Library
 ;(c) avkiev
 ;(p) dimonp25
-;Version: 080425
+;Version: 210525
 ;PatchID: 10897
 ;Details: https://patches.kibab.com/patches/details.php5?id=10897
 /*
-+3DA,3DB
+
 */
 
 +0FD4000
@@ -985,7 +985,15 @@
 0F64: 0xA11599B3 ; 3D9: __thumb int GetPITSize();
 0F68: 0xA0c3114f ; 3DA: __thumb int wstrwstr(const WSHDR *ws, const WSHDR *search, uint32_t start_pos);
 0F6C: 0xA0c30f8d ; 3DB: __thumb void wstrreplace(WSHDR *dest, const WSHDR *src, uint32_t pos);
+0F70: 0xA1142b35 ; 3DC: __thumb int GetUnicodeSymbolByDynIcon(int dyn_icon);
+;0F74:  ; 3DD: __thumb uint32_t ReadValueFromPDFile(uint32_t file_id, const char *key, char *value, uint32_t *size);
+;0F78:  ; 3DE: __thumb uint32_t WriteValueToPDFile(uint32_t file_id, const char *key, const char *value, size_t size);
+;0F7C:  ; 83DF: TZ *RamTimeZones();
 
+0F80: 0xA0c36bab ; 3E0: int GetCurrentTimeZone();
+0F84: 0xA0c376e3 ; 3E1: int GetTimeZoneByGMT(const char *gmt);
+0F88: 0xA0c377ad ; 3E2: int IsSummerTime(int time_zone);
+0F8C: 0xA0c3781d ; 3E3: void SetTimeZone(int time_zone);
 #pragma disable old_equal_ff
 +0
 
