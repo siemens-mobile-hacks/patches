@@ -1,0 +1,20 @@
+;E71v45
+;Запуск ELF вместо калькулятора
+;Launch ELF instead of calculator
+;(c) FIL
+;Version: 
+;PatchID: 11133
+;Details: https://patches.kibab.com/patches/details.php5?id=11133
+/*
+Путь к эльфу можно указать любой в первой строке патча.
+Реализация эльфа:
+[url]https://github.com/siemens-mobile-hacks/scalka[/url]
+*/
+
+067221C: 636F6D2E7369656D656E732E6D702E6170702E63616C63756C61746F72636F6E7665727465722E43616C63756C61746F7200 "2:\\SCalka.elf"00
+05C5FA8: 1C311FE5 0000A0E1
+05C5FB8: 00408DE5 6FF3FCEB
+05C5FBC: 01A210FB 1F0000EA
+
+;------------------------- end -------------------------
+

@@ -95456,6 +95456,16 @@
 				"ru": "Запуск ELF вместо селектора временных зон",
 				"en": "Launch ELF instead of time zone picker"
 			}
+		},
+		"11133": {
+			"id": 11133,
+			"model": "E71v45",
+			"file": "E71v45/11133-launch_elf_instead_of_calculator.vkp",
+			"mtime": 1747997410000,
+			"title": {
+				"ru": "Запуск ELF вместо калькулятора",
+				"en": "Launch ELF instead of calculator"
+			}
 		}
 	},
 	"C81v51": {
