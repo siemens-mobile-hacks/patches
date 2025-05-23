@@ -95483,8 +95483,8 @@
 			"file": "E71v45/11133-launch_elf_instead_of_calculator.vkp",
 			"mtime": 1747997410000,
 			"title": {
-				"ru": "Запуск ELF вместо калькулятора",
-				"en": "Launch ELF instead of calculator"
+				"ru": "Запуск ELF вместо 'Калькулятор'",
+				"en": "Launch ELF instead of 'Calculator'"
 			}
 		},
 		"11135": {
