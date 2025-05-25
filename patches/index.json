@@ -25429,6 +25429,16 @@
 				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
 				"en": "Don't stop media player playback when minimized"
 			}
+		},
+		"11134": {
+			"id": 11134,
+			"model": "CF75v23",
+			"file": "CF75v23/11134-dont_lock_vibra.vkp",
+			"mtime": 1748184872000,
+			"title": {
+				"ru": "Не блокировать вибрацию при подключении аксессуаров",
+				"en": "Don't lock vibra when accessories are connected"
+			}
 		}
 	},
 	"CX75v5": {
