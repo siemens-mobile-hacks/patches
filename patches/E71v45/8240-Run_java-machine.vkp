@@ -11,6 +11,7 @@
 
 */
 
+0A075C0: 04 00
 0A076C4: F30C03EB 8DA0D9FA
 
 #pragma enable old_equal_ff
