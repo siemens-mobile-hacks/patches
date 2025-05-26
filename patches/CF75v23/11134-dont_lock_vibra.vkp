@@ -1,0 +1,16 @@
+;CF75v23
+;Не блокировать вибрацию при подключении аксессуаров
+;Don't lock vibra when accessories are connected
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 11134
+;Details: https://patches.kibab.com/patches/details.php5?id=11134
+/*
+
+*/
+
+088C33C: 1A10A0E3 0000A0E3
+088C340: 40029FE5 1EFF2FE1
+;------------------------- end -------------------------
+
