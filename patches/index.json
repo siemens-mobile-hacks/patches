@@ -95493,8 +95493,8 @@
 			"file": "E71v45/11135-launch_elf_instead_of_stopwatch.vkp",
 			"mtime": 1748721374000,
 			"title": {
-				"ru": "Запуск ELF вместо секундомера",
-				"en": "Launch ELF instead of stopwatch"
+				"ru": "Запуск ELF вместо 'Секундомер'",
+				"en": "Launch ELF instead of 'Stopwatch'"
 			}
 		}
 	},
