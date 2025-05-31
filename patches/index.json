@@ -25439,6 +25439,16 @@
 				"ru": "Не блокировать вибрацию при подключении аксессуаров",
 				"en": "Don't lock vibra when accessories are connected"
 			}
+		},
+		"11136": {
+			"id": 11136,
+			"model": "CF75v23",
+			"file": "CF75v23/11136-GP_fixes_CF75_SW23.vkp",
+			"mtime": 1748725260000,
+			"title": {
+				"ru": "Графические фиксы",
+				"en": "Graphics fixes"
+			}
 		}
 	},
 	"CX75v5": {
