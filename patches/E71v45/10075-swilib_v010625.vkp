@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 120525
+;Version: 010625
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -1031,7 +1031,8 @@
 0F80: 0xA08CF3EB ; 3E0: int GetCurrentTimeZone();
 0F84: 0xA08D055B ; 3E1: int GetTimeZoneByGMT(const char *gmt);
 0F88: 0xA08D05E3 ; 3E2: int IsSummerTime(int time_zone);
-0F8C: 0xA08D0655 ; 3E3: void SetTimeZone(int time_zone); 
+0F8C: 0xA08D0655 ; 3E3: void SetTimeZone(int time_zone);
+0F90: 0xA058A7B3 ; 3E4: void GetTimeFromMilliseconds(TTime *time, uint32_t milliseconds);
 
 #pragma disable old_equal_ff
 +0
