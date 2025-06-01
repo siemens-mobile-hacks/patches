@@ -1,0 +1,22 @@
+;E71v45
+;Запуск ELF вместо секундомера
+;Launch ELF instead of stopwatch
+;(c) FIL
+;Version: 
+;PatchID: 11135
+;Details: https://patches.kibab.com/patches/details.php5?id=11135
+/*
+Путь к эльфу можно указать любой в первой строке патча.
+Реализация эльфа:
+[url]https://github.com/siemens-mobile-hacks/nstopwatch2[/url]
+*/
+
+0672438: 636F6D2E7369656D656E732E6D702E6170702E73746F7077617463682E53746F7077617463680000 "2:\\NStopWatch2.elf"00
+
+05C6630: A4371FE5 0000A0E1
+05C6640: 00408DE5 0000A0E1
+05C6644: 5FA010FB CCF1FCEB
+05C6648: 000050E3 1E0000EA
+
+;------------------------- end -------------------------
+
