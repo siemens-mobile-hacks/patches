@@ -95496,6 +95496,16 @@
 				"ru": "Запуск ELF вместо 'Секундомер'",
 				"en": "Launch ELF instead of 'Stopwatch'"
 			}
+		},
+		"11137": {
+			"id": 11137,
+			"model": "E71v45",
+			"file": "E71v45/11137-launch_elf_instead_date_calculator.vkp",
+			"mtime": 1748894856000,
+			"title": {
+				"ru": "Запуск ELF вместо 'Расчет даты'",
+				"en": "Launch ELF instead of 'Date calculator'"
+			}
 		}
 	},
 	"C81v51": {
