@@ -1035,8 +1035,8 @@
 0F90: 0xA058A7B3 ; 3E4: void GetTimeFromMilliseconds(TTime *time, uint32_t milliseconds);
 0F94: 0xA0589D29 ; 3E5: void DateAddDays(TDate *date, int days);
 0F98: 0xA0589D5F ; 3E6: void DateAddMonths(TDate *date, int months);
-0FA0: 0xA0589DAF ; 3E7: void DateAddYears(TDate *date, int years);
-0FA4: 0xA0589B77 ; 3E8: int64_t GetDays(const TDate *date);
+0F9C: 0xA0589DAF ; 3E7: void DateAddYears(TDate *date, int years);
+0FA0: 0xA0589B77 ; 3E8: int64_t GetDays(const TDate *date);
 
 #pragma disable old_equal_ff
 +0
