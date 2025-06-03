@@ -25449,6 +25449,16 @@
 				"ru": "Графические фиксы",
 				"en": "Graphics fixes"
 			}
+		},
+		"11138": {
+			"id": 11138,
+			"model": "CF75v23",
+			"file": "CF75v23/11138-Revision_Native_Menu.vkp",
+			"mtime": 1748946416000,
+			"title": {
+				"ru": "Не вырубаться при NativeMenu-Списки выз.-Время\\стоимость",
+				"en": "Revision Native Menu"
+			}
 		}
 	},
 	"CX75v5": {

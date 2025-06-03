@@ -1,0 +1,15 @@
+;CF75v23
+;Не вырубаться при NativeMenu-Списки выз.-Время\стоимость
+;Revision Native Menu
+;(c) Bennie
+;(p) Виктор89
+;Version: 
+;PatchID: 11138
+;Details: https://patches.kibab.com/patches/details.php5?id=11138
+/*
+Теперь не вырубается при NativeMenu-Списки выз.-Время\стоимость
+*/
+
+049CF28: 6F2A2CA0 0xA032E78F
+;------------------------- end -------------------------
+
