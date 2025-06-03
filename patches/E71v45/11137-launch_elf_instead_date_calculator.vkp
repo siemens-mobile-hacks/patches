@@ -1,0 +1,22 @@
+;E71v45
+;Запуск ELF вместо 'Расчет даты'
+;Launch ELF instead of 'Date calculator'
+;(c) FIL
+;Version: 
+;PatchID: 11137
+;Details: https://patches.kibab.com/patches/details.php5?id=11137
+/*
+Путь к эльфу можно указать любой в первой строке патча.
+Реализация эльфа:
+[url]https://github.com/siemens-mobile-hacks/dcalc[/url]
+*/
+
+0672328: 636F6D2E7369656D656E732E6D702E6170702E6461746563616C632E4461746543616C63756C61746F720000 "2:\\DCalc.elf"00
+
+05C6248: BC331FE5 0000A0E1
+05C6258: 00408DE5 0000A0E1
+05C625C: 59A110FB C6F2FCEB
+05C6260: 000050E3 1E0000EA
+
+;------------------------- end -------------------------
+

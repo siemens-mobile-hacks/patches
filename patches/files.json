@@ -31886,13 +31886,13 @@
 		"C75v24/11129-c75v24_dont_stop_media_player_play.vkp"
 	],
 	[
-		"E71v45/11130-launch_elf_instead_of_alarm_editor.vkp"
+		"E71v45/11130-launch_elf_instead_of_alarm_clock.vkp"
 	],
 	[
 		"E71v45/11131-disable_message_time_and_date_upd.vkp"
 	],
 	[
-		"E71v45/11132-launch_elf_instead_time_zone_picker.vkp"
+		"E71v45/11132-launch_elf_instead_time_zones.vkp"
 	],
 	[
 		"E71v45/11133-launch_elf_instead_of_calculator.vkp"
@@ -31905,5 +31905,8 @@
 	],
 	[
 		"CF75v23/11136-GP_fixes_CF75_SW23.vkp"
+	],
+	[
+		"E71v45/11137-launch_elf_instead_date_calculator.vkp"
 	]
 ]
