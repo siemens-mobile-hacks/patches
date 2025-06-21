@@ -19215,16 +19215,6 @@
 				"en": "Disable background in Audio Setup UI"
 			}
 		},
-		"10821": {
-			"id": 10821,
-			"model": "S75v52",
-			"file": "S75v52/10821-VolumeBar_fix.vkp",
-			"mtime": 1713906636000,
-			"title": {
-				"ru": "Корректное отображение иконок экрана громкости",
-				"en": "Fix view icons volumebar"
-			}
-		},
 		"10844": {
 			"id": 10844,
 			"model": "S75v52",
