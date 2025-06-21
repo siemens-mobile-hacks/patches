@@ -19404,6 +19404,17 @@
 				"ru": "Умный запуск ядра OpenWave",
 				"en": "Smart launch of OpenWave core"
 			}
+		},
+		"11139": {
+			"id": 11139,
+			"model": "S75v52",
+			"file": "S75v52/11139-VolumeBar_fix_S75SW52.vkp",
+			"additionalFile": "S75v52/11139-VolumeBar_fix_S75SW52.zip",
+			"mtime": 1750517172000,
+			"title": {
+				"ru": "Корректное отображение иконок экрана громкости",
+				"en": "Fix view icons volumebar"
+			}
 		}
 	},
 	"SL75v31": {
