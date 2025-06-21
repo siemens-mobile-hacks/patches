@@ -98350,6 +98350,17 @@
 				"ru": "Отключить поиск в Native Explorer",
 				"en": "DisableAllSearch"
 			}
+		},
+		"11140": {
+			"id": 11140,
+			"model": "C81v51",
+			"file": "C81v51/11140-VolumeBar_fix_C81SW51.vkp",
+			"additionalFile": "C81v51/11140-VolumeBar_fix_C81SW51.zip",
+			"mtime": 1750517580000,
+			"title": {
+				"ru": "Корректное отображение иконок экрана громкости",
+				"en": "Fix view icons volumebar"
+			}
 		}
 	},
 	"C81v38": {
