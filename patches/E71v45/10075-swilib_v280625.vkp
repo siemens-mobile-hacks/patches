@@ -1049,7 +1049,7 @@
 0FC8: 0xA0671EDC ; 3F2: __arm int Countdown_IsEnabled();
 0FCC: 0xA0703E94 ; 3F3: __arm int Countdown_GetRamainingTime();
 0FD0: 0xA0782060 ; 3F4: __arm void Countdown_PlaySound(long tone_type);
-0FD4: 0xA8F04C14 ; 83F5: int *RamIsCountdownRingUIVisible();
+0FD4: 0xA8F04C14 ; 83F5: int *RamIsCountdownRingUIActive();
 
 #pragma disable old_equal_ff
 +0
