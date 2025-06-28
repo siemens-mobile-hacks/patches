@@ -1037,12 +1037,12 @@
 0F98: 0xA0589D5F ; 3E6: __thumb void DateAddMonths(TDate *date, int months);
 0F9C: 0xA0589DAF ; 3E7: __thumb void DateAddYears(TDate *date, int years);
 0FA0: 0xA0589B77 ; 3E8: __thumb int64_t GetDays(const TDate *date);
-0FA4: 0xA0A1C2BB ; 3E9: __thumb void *EDIT_GetGUI(malloc_func_t malloc_fn, mfree_func_t mfree_fn);
-0FA8: 0xA0A1C697 ; 3EA: __thumb void EDIT_SetGUIDefinition(void *gui, const INPUTDIA_DESC *input_desc);
+0FA4: 0xA0A1C2BB ; 3E9: __thumb void *EDIT_GetGUI(const void *malloc_fn, const void *mfree_fn);
+0FA8: 0xA0A1C697 ; 3EA: __thumb void EDIT_SetDefinition(void *gui, const INPUTDIA_DESC *input_desc);
 0FAC: 0xA0A1C5AD ; 3EB: __thumb void EDIT_SetEQueue(void *gui, const EDITQ *editq, int do_mfree, malloc_func_t malloc_fn);
 0FB0: 0xA0A1C9A1 ; 3EC: __thumb void EDIT_SetUserPointer(void *gui, void *user_pointer);
 0FB4: 0xA0956675 ; 3ED: __thumb void SetMenuRect(void *menu, int x, int y, int x2, int y2);
-0FB8: 0xA0A22909 ; 3EE: __thumb void AttachWidget(void *gui, void *widget, int id, malloc_func_t malloc_fn);
+0FB8: 0xA0A22909 ; 3EE: __thumb void AttachWidget(void *gui, void *widget, int id, const void *malloc_fn);
 
 0FC0: 0xA0671FB0 ; 3F0: __arm void Countdown_Start();
 0FC4: 0xA0672074 ; 3F1: __arm void Countdown_Stop();
