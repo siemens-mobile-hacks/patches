@@ -95517,6 +95517,16 @@
 				"ru": "Запуск ELF вместо 'Расчет даты'",
 				"en": "Launch ELF instead of 'Date calculator'"
 			}
+		},
+		"11141": {
+			"id": 11141,
+			"model": "E71v45",
+			"file": "E71v45/11141-launch_elf_instead_of_countdown.vkp",
+			"mtime": 1751296816000,
+			"title": {
+				"ru": "Запуск ELF вместо 'Таймер'",
+				"en": "Launch ELF instead of 'Countdown'"
+			}
 		}
 	},
 	"C81v51": {

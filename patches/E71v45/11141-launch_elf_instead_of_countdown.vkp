@@ -1,0 +1,23 @@
+;E71v45
+;Запуск ELF вместо 'Таймер'
+;Launch ELF instead of 'Countdown'
+;(c) FIL
+;Version: 
+;PatchID: 11141
+;Details: https://patches.kibab.com/patches/details.php5?id=11141
+/*
+Путь к эльфу можно указать любой в первой строке патча.
+Реализация эльфа:
+[url]https://github.com/siemens-mobile-hacks/sie_countdown[/url]
+*/
+
+06722D8: 636F6D2E7369656D656E732E6D702E6170702E636F756E74646F776E2E436F756E74646F776E00 "2:\\SieCountdown.elf"00
+
+05C615C: 000056E3 010000EA
+05C616C: E0321FE5 0000A0E1
+05C617C: 00408DE5 0000A0E1
+05C6180: 90A110FB FDF2FCEB
+05C6184: 000050E3 1E0000EA
+
+;------------------------- end -------------------------
+
