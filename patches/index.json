@@ -68277,6 +68277,16 @@
 				"ru": "Не отображать иконки центральной навигационной клавиши",
 				"en": "Don't display central navigation key icon"
 			}
+		},
+		"11142": {
+			"id": 11142,
+			"model": "CX70v56",
+			"file": "CX70v56/11142-fix_lsk_on_idle.vkp",
+			"mtime": 1751356730000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"C55v24": {
