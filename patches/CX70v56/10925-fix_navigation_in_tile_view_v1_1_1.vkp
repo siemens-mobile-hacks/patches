@@ -1,0 +1,42 @@
+;CX70v56
+;Исправить навигацию в плиточном режиме
+;Fix navigation in tile view
+;(c) Evgr, FIL
+;Version: 1.1.1
+;PatchID: 10925
+;Details: https://patches.kibab.com/patches/details.php5?id=10925
+/*
+Патч затрагивает Native Menu, плиточный режим в Card Explorer, может быть что-то еще. Полностью исправляет все баги навигации.
+*/
+
+; .FixNavigationInTileView_Part1
+0D25C76: E4DB 3EDB
+
+; .FixNavigationInTileView_Part2
+0D25D10: 72D1 C046
+
+; .FixNavigationInTileView_Part3
+0D25DB2: 21D1 C046
+
+; .FixNavigationInTileView_Part4
+0D25E46: 9CD0 B4D0
+
+#pragma enable old_equal_ff
+; .FixNavigationInCardExplorer_Hook
+0F22290: 3C3B3E3DF0B5D6460E0000B50021AC421ED057465146013F002D12D0012D0BD15646033EBD420ED08F1EBD4215D003398D4209D1012607E0022DF3D15646023EF0E73E00EEE700262100B44200DD3100034CA04780BCBA46F0BD0226F4E7C04614609DA0
+#pragma disable old_equal_ff
+
+; .FixNavigationInCardExplorer_Jump
+09911A0: 9B1301EB 3B4416FA
+
+; .FixLongPress_Hook
+0D4679C: 687474705F77726974655F646174615F6368756E6B656428293A206E6567617469766520726573706F6E73652066726F6D206170706C6963 10B54B882A3B1B041B0C032B09D8064A9421D2560548064BFF3198470120404210BD044B9847FBE79022F2A009420000047B82A0855BD2A0
+
+; .FixLongPress_Jump
+0D25ED2: FFF757FE 20F063FC
+
+; .FixCursorPosition
+0D2585C: 0021 FF21
+
+;------------------------- end -------------------------
+
