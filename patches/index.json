@@ -68297,6 +68297,17 @@
 				"ru": "Отключить сеть",
 				"en": "Disable network"
 			}
+		},
+		"11144": {
+			"id": 11144,
+			"model": "CX70v56",
+			"file": "CX70v56/11144-fix_network_icon.vkp",
+			"additionalFile": "CX70v56/11144-fix_network_icon.zip",
+			"mtime": 1751402354000,
+			"title": {
+				"ru": "Исправить иконку сети когда отключена сеть",
+				"en": "Fix network icon when network is disabled"
+			}
 		}
 	},
 	"C55v24": {
