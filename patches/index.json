@@ -95532,8 +95532,8 @@
 		"11084": {
 			"id": 11084,
 			"model": "E71v45",
-			"file": "E71v45/11084-date_instead_of_p_name_in_ss_v2.vkp",
-			"mtime": 1746027986000,
+			"file": "E71v45/11084-date_instead_of_p_name_in_ss_v2_1.vkp",
+			"mtime": 1751469118000,
 			"title": {
 				"ru": "Дата вместо имени оператора в заставке",
 				"en": "Date instead of provider name in screensaver"
