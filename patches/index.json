@@ -68348,6 +68348,16 @@
 				"ru": "Моментальный запуск скринсейвера после блокировки клавиатуры",
 				"en": "Fast ScreenSaver appearance after keyboard lock"
 			}
+		},
+		"11149": {
+			"id": 11149,
+			"model": "CX70v56",
+			"file": "CX70v56/11149-open_disk_sel_menu_in_ce_by_hotkey.vkp",
+			"mtime": 1751442456000,
+			"title": {
+				"ru": "Открыть меню выбора диска по горячей клавише в Card-Explorer",
+				"en": "Open disk selection menu in Card-Explorer by hotkey"
+			}
 		}
 	},
 	"C55v24": {
