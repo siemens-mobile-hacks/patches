@@ -68328,6 +68328,16 @@
 				"ru": "Отображать сообщение об ошибке если не удалось запустить браузер",
 				"en": "Show an error message if browser couldn't start"
 			}
+		},
+		"11147": {
+			"id": 11147,
+			"model": "CX70v56",
+			"file": "CX70v56/11147-ScreenSaver_after_KeyBoard_Lock.vkp",
+			"mtime": 1751435980000,
+			"title": {
+				"ru": "Моментальный запуск скринсейвера после блокировки клавиатуры",
+				"en": "Fast Screensaver Appearance after KeyBoard Lock"
+			}
 		}
 	},
 	"C55v24": {

@@ -1,0 +1,15 @@
+;CX70v56
+;Моментальный запуск скринсейвера после блокировки клавиатуры 
+;Fast Screensaver Appearance after KeyBoard Lock 
+;(c) Evgr, funMarkus
+;(p) Виктор89
+;Version: 
+;PatchID: 11147
+;Details: https://patches.kibab.com/patches/details.php5?id=11147
+/*
+
+*/
+
+171E2AA: 012014F034E9041CF4F753FC 0120,01F0C4FF,0120,01F0ACFF
+;------------------------- end -------------------------
+
