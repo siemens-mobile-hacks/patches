@@ -1,0 +1,21 @@
+;CX70v56
+;Моментальный запуск скринсейвера после блокировки клавиатуры
+;Fast ScreenSaver appearance after keyboard lock
+;(c) Evgr, funMarkus, FIL
+;Version: 2
+;PatchID: 11148
+;Details: https://patches.kibab.com/patches/details.php5?id=11148
+/*
+В 2025-ом поправлен баг, при котором скринсейвер всегда запускался, даже если был отключен.
+*/
+
+#pragma enable old_equal_ff
+; .ShowScreenSaver_Hook
+17E0920: F8B51F00084B04000D0016009847002806D120003B00054C32002900A047F8BD034B9847FBE7C046FD0272A17721C9A0F90372A1
+#pragma disable old_equal_ff
+
+; .ShowScreenSaver_Jump
+171E2AC: 14F034E9041CF4F7 C2F038FB002010BD
+
+;------------------------- end -------------------------
+
