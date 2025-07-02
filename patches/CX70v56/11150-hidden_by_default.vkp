@@ -1,0 +1,15 @@
+;CX70v56
+;Показывать Скрытые Файлы в Card-Explorer'е по умолчанию
+;Show Hidden Files In Card-Explorer By Default
+;(c) 1nvisible
+;Version: 
+;PatchID: 11150
+;Details: https://patches.kibab.com/patches/details.php5?id=11150
+/*
+
+*/
+
+08E3B64: 00 FF
+08E3C14: 00 FF
+;------------------------- end -------------------------
+

@@ -68358,6 +68358,16 @@
 				"ru": "Открыть меню выбора диска по горячей клавише в Card-Explorer",
 				"en": "Open disk selection menu in Card-Explorer by hotkey"
 			}
+		},
+		"11150": {
+			"id": 11150,
+			"model": "CX70v56",
+			"file": "CX70v56/11150-hidden_by_default.vkp",
+			"mtime": 1751443104000,
+			"title": {
+				"ru": "Показывать Скрытые Файлы в Card-Explorer'е по умолчанию",
+				"en": "Show Hidden Files In Card-Explorer By Default"
+			}
 		}
 	},
 	"C55v24": {
