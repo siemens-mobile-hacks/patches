@@ -31288,7 +31288,7 @@
 		"CX70v56/10924-remove_camera_from_extras.vkp"
 	],
 	[
-		"CX70v56/10925-fix_navigation_in_tile_view_v1_1.vkp"
+		"CX70v56/10925-fix_navigation_in_tile_view_v1_1_1.vkp"
 	],
 	[
 		"CX70v56/10926-alternate_scroll_by_default.vkp"
@@ -31297,7 +31297,7 @@
 		"CX70v56/10927-Change_Sizes_Popup_options_windows.vkp"
 	],
 	[
-		"CX70v56/10928-fix_cursor_in_tile_view.vkp"
+		"CX70v56/10928-fix_cursor_in_tile_view_v1_0_1.vkp"
 	],
 	[
 		"C81v51/10929-Run_Java_from_Everywhere_v3.vkp"
@@ -31346,7 +31346,7 @@
 	],
 	null,
 	[
-		"CX70v56/10945-NMFP_v3_3_1.vkp"
+		"CX70v56/10945-NMFP_v3_3_2.vkp"
 	],
 	[
 		"S75v52/10946-Enable_trans_themes_S75.vkp"
@@ -31920,5 +31920,15 @@
 	],
 	[
 		"E71v45/11141-launch_elf_instead_of_countdown.vkp"
+	],
+	[
+		"CX70v56/11142-fix_lsk_on_idle.vkp"
+	],
+	[
+		"CX70v56/11143-disable_network_v1_1.vkp"
+	],
+	[
+		"CX70v56/11144-fix_network_icon.vkp",
+		"CX70v56/11144-fix_network_icon.zip"
 	]
 ]

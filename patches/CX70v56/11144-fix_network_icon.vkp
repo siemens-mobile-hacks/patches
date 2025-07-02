@@ -1,0 +1,24 @@
+;CX70v56
+;Исправить иконку сети когда отключена сеть
+;Fix network icon when network is disabled
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 11144
+;Details: https://patches.kibab.com/patches/details.php5?id=11144
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cx70v56&f=fix_network_icon.zip
+
+/*
+
+*/
+
+#pragma enable old_equal_ff
+; .GetNetworkIcon
+17E0840: 054B10B51B78042B02D0044B984710BDC6208000FBE7C04626F368A81D5C71A1
+#pragma disable old_equal_ff
+
+; .GetNetworkIcon_Jump
+171567E: 00F0CDFA CBF0DFF8
+
+;------------------------- end -------------------------
+

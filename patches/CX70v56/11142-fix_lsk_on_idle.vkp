@@ -1,0 +1,15 @@
+;CX70v56
+;Не менять левый софткей на ГЭ если нет сети
+;Don`t change the left softkey on IDLE if there is no network
+;(c) Feyman, FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 11142
+;Details: https://patches.kibab.com/patches/details.php5?id=11142
+/*
+Левый софт на ГЭ больше не будет менять своё значение в зависимости от состояния сетевого соединения, остальные функции сохранены.
+*/
+
+171BE02: 1220 C046
+;------------------------- end -------------------------
+
