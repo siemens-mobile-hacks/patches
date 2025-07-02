@@ -68318,6 +68318,16 @@
 				"ru": "Отображать сообщение вместо запуска Java приложения когда Java машина отключена",
 				"en": "Display a message instead of starting a Java application if Java is disabled"
 			}
+		},
+		"11146": {
+			"id": 11146,
+			"model": "CX70v56",
+			"file": "CX70v56/11146-message_if_browser_cound_t_start.vkp",
+			"mtime": 1751435496000,
+			"title": {
+				"ru": "Отображать сообщение об ошибке если не удалось запустить браузер",
+				"en": "Show an error message if browser couldn't start"
+			}
 		}
 	},
 	"C55v24": {
