@@ -1,0 +1,21 @@
+;CX70v56
+;Открыть меню выбора диска по горячей клавише в Card-Explorer
+;Open disk selection menu in Card-Explorer by hotkey
+;(c) FIL
+;Version: 
+;PatchID: 11149
+;Details: https://patches.kibab.com/patches/details.php5?id=11149
+/*
+Меню открывается по зеленой кнопке.
+*/
+
+#pragma enable old_equal_ff
+; .OpenDisksMenu
+17E096A: 00004B6810B55B6804000B2B03D1436B9868024B9847024B2000984710BDF4A290A0657CC9A0
+#pragma disable old_equal_ff
+
+; .OpenDisksMenu_Jump
+0991384: 361A0CFA 783D39FA
+
+;------------------------- end -------------------------
+

@@ -1,0 +1,28 @@
+;CX70v56
+;Дата вместо имени оператора в заставке 
+;Date instead of provider name in screensaver
+;(c) FIL
+;(r) Виктор89
+;Version: 2.1
+;PatchID: 11151
+;Details: https://patches.kibab.com/patches/details.php5?id=11151
+/*
+
+*/
+
+#pragma enable old_equal_ff
+; .Insert_Hook
+17E09B0: 73B5094B05000C00684600211600984769462000054B0F22984732002800044B2100984773BDC0463B06B9A01B16B9A0BF90C9A0
+#pragma disable old_equal_ff
+
+; .Insert_Jump_1
+1725BF8: 0DF0CAEF BAF0DAFE
+
+; .Insert_Jump_2_Part_1
+1725BC8: 0022 03E0
+
+; .Insert_Jump_2_Part_2
+1725BD8: 0DF0DAEF BAF0EAFE
+
+;------------------------- end -------------------------
+

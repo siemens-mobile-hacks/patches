@@ -31624,7 +31624,7 @@
 		"E71v45/11042-skip_send_menu.vkp"
 	],
 	[
-		"E71v45/11043-offline_in_red_button_menu_v1_1.vkp"
+		"E71v45/11043-offline_in_red_button_menu_v1_2.vkp"
 	],
 	[
 		"S65v58/11044-dont_show_softkeys_on_idle_s65v58.vkp"
@@ -31746,7 +31746,7 @@
 		"E71v45/11083-sam.vkp"
 	],
 	[
-		"E71v45/11084-date_instead_of_p_name_in_ss_v2.vkp"
+		"E71v45/11084-date_instead_of_p_name_in_ss_v2_1.vkp"
 	],
 	[
 		"E71v45/11085-fix_startup_animation_on_reboot.vkp"
@@ -31930,5 +31930,26 @@
 	[
 		"CX70v56/11144-fix_network_icon.vkp",
 		"CX70v56/11144-fix_network_icon.zip"
+	],
+	[
+		"CX70v56/11145-d_msg_instead_of_starting_java.vkp"
+	],
+	[
+		"CX70v56/11146-message_if_browser_cound_t_start.vkp"
+	],
+	[
+		"CX70v56/11147-ScreenSaver_after_KeyBoard_Lock.vkp"
+	],
+	[
+		"CX70v56/11148-fast_ss_appearance_after_kbd_lock.vkp"
+	],
+	[
+		"CX70v56/11149-open_disk_sel_menu_in_ce_by_hotkey.vkp"
+	],
+	[
+		"CX70v56/11150-hidden_by_default.vkp"
+	],
+	[
+		"CX70v56/11151-date_instead_of_p_name_in_ss_v2_1.vkp"
 	]
 ]

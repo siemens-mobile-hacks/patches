@@ -1,0 +1,26 @@
+;CX70v56
+;Отображать сообщение об ошибке если не удалось запустить браузер
+;Show an error message if browser couldn't start
+;(c) FIL
+;Version: 
+;PatchID: 11146
+;Details: https://patches.kibab.com/patches/details.php5?id=11146
+/*
+Добавлены некоторые сообщения об ошибках, если не удалось запустить браузер:
+1. Браузер отключен - "Browser is disabled!"
+2. Браузер уже запущен - "Browser is already running!"
+*/
+
+; .SkipGetBrowserStateCheck
+08EF92E: 8BF2 06E0
+
+#pragma enable old_equal_ff
+; .GetBrowserState
+0F20100: 42726F777365722069732064697361626C6564210042726F7773657220697320616C72656164792072756E6E696E6721000000000A4B10B51C78002C05D10949094B01209847002405E0022C05D10749054B01209847200010BD032CF3D0FAE7FC5B6EA80001F2A02723C9A01501F2A0
+#pragma disable old_equal_ff
+
+; .GetBrowserState_Jump
+0B95C44: E5F75FF8 8AF376FA
+
+;------------------------- end -------------------------
+
