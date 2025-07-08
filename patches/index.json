@@ -95628,6 +95628,16 @@
 				"ru": "Запуск ELF вместо 'Таймер'",
 				"en": "Launch ELF instead of 'Countdown'"
 			}
+		},
+		"11152": {
+			"id": 11152,
+			"model": "E71v45",
+			"file": "E71v45/11152-mpm.vkp",
+			"mtime": 1751957318000,
+			"title": {
+				"ru": "Модификация медиаплеера",
+				"en": "Media player modification"
+			}
 		}
 	},
 	"C81v51": {
