@@ -95638,6 +95638,16 @@
 				"ru": "Модификация медиаплеера",
 				"en": "Media player modification"
 			}
+		},
+		"11153": {
+			"id": 11153,
+			"model": "E71v45",
+			"file": "E71v45/11153-Mediaplayer_changer_v101-MP.vkp",
+			"mtime": 1752403858000,
+			"title": {
+				"ru": "Управление элементами медиаплеера",
+				"en": "Mediaplayer changer"
+			}
 		}
 	},
 	"C81v51": {
