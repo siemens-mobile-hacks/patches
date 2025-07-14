@@ -1,0 +1,39 @@
+;E71v45
+;Управление элементами медиаплеера
+;Mediaplayer changer
+;(c) @ndreS/PRM
+;(r) -=(Kad)=- & SiNgle [Change progressbar]
+;(p) DDM
+;Version: 1.01-MP
+;PatchID: 11153
+;Details: https://patches.kibab.com/patches/details.php5?id=11153
+/*
+
+*/
+
+0070F3C: 0xFFFFFFFF 0xA0A0C193
+079E3F4: 100090E5 754AE3FA ; videobg color
+079E470: 46B709FB 4B4AE3FA ; videobg position
+079E51C: A00F80E0C000A0E1527080E2 0A60A0E36570A0E3F549E3FA ; animation 
+079E888: 0500A0E1 6349E3FB ; time with progressbar
+079E8CC: 0500A0E1 6349E3FB ; time
+079E8E4: 0700A0E1 6E49E3FB ; duration
+079E91C: F430A0E3 8049E3FA ; tags y2
+079E930: 0A00A0E1 6F49E3FA ; tags
+079E95C: 5630A0E3 90319FE5 ; number y2
+079E988: 0800A0E1 4E49E3FA ; number
+079EAF4: 1E 3F ; time/duration x2
+079EBB4: 4D050AFA 0000A0E1 ; remove canvas of number
+079EFF8: C110A0E1381081E2 3810A0E34447E3FB ; volume
+079F188: C000A0E1381080E20600A0E1 4400A0E33810A0E3E546E3FA ; playmode
+079F1E0: C110A0E1381081E2040086E2 6200A0E33810A0E3D446E3FB ; headset
+079F240: C110A0E1FC1081E20630A0E10A00A0E3 0A00A0E3FF10A0E3C246E3FA0630A0E1 ; status
+079F308: 2C0080E2 CB46E3FA ; time with progressbar canvas
+079F348: 300080E2 CC46E3FA ; time canvas
+079F890: 450000EA 5245E3FB ; show volume & headset in video
+07A05E4: 0300000A 0542E3FA ; disable mute status-icon
+07A0FB0: 002090E5 763FE3FB ; progressbar color
+07A30B0: 080084E5 2D37E3FB ; progressbar position
+07A3CBC: 080081E5 2F34E3FA ; progressbar position
+;------------------------- end -------------------------
+
