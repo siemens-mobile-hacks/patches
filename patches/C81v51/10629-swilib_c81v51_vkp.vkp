@@ -1054,7 +1054,7 @@
 ;F44:              ; 3D1: void MediaProc_LaunchLastPlayback()
 ;F48:              ; 3D2: int GetScreenSaverType()
 0F4C: 0xA090E36B   ; 3D3: void IllumFilterSet(int flags, int unk)
-#pragma enable old_equal_ff
+#pragma disable old_equal_ff
 +0
 
 ;------------------------- end -------------------------
