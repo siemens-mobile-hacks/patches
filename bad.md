@@ -44,71 +44,11 @@ Error: Syntax error at line 16 col 1
 
 ```
 
-[C81v51/10629-swilib_c81v51_vkp.vkp](https://patches.kibab.com/patches/details.php5?id=10629)
-
-Warning: Useless "#pragma enable old_equal_ff" has no effect at line 1057 col 1
-You can safely remove this line.
-```
-  1054 | ;F44:              ; 3D1: void MediaProc_LaunchLastPlayback()
-  1055 | ;F48:              ; 3D2: int GetScreenSaverType()
-  1056 | 0F4C: 0xA090E36B   ; 3D3: void IllumFilterSet(int flags, int unk)
-> 1057 | #pragma enable old_equal_ff
-       | ^
-  1058 | +0
-  1059 | 
-  1060 | ;------------------------- end -------------------------
-
-```
-
-Warning: Uncanceled pragma "old_equal_ff" at line 14 col 1
-Please put "#pragma disable old_equal_ff" at the end of the patch.
-```
-    11 | 
-    12 | ; C81v51
-    13 | +00074000
->   14 | #pragma enable old_equal_ff
-       | ^
-    15 | 
-    16 | 0000: 0xA0002070   ;   0: void loopback0()
-    17 | 0004: 0xA0002070   ;   1: void loopback1()
-
-```
-
 [CF75v23/11114-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11114)
 
 Error: Syntax error at line 16 col 1
 ```
   13 | 07BFF18: 01 FF
-  14 | 
-  15 | ;Pattern
-> 16 | 01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
-     | ^
-  17 | 
-  18 | ;------------------------- end -------------------------
-  19 | 
-
-```
-
-[CX75v13/11111-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11111)
-
-Error: Syntax error at line 16 col 1
-```
-  13 | 0807934: 01 FF
-  14 | 
-  15 | ;Pattern
-> 16 | 01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
-     | ^
-  17 | 
-  18 | ;------------------------- end -------------------------
-  19 | 
-
-```
-
-[CX75v25/11112-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11112)
-
-Error: Syntax error at line 16 col 1
-```
-  13 | 0809340: 01 FF
   14 | 
   15 | ;Pattern
 > 16 | 01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
