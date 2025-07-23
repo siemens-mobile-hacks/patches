@@ -95629,16 +95629,6 @@
 				"en": "Launch ELF instead of 'Countdown'"
 			}
 		},
-		"11152": {
-			"id": 11152,
-			"model": "E71v45",
-			"file": "E71v45/11152-mpm_v1_7_1.vkp",
-			"mtime": 1753218892000,
-			"title": {
-				"ru": "Модификация медиаплеера",
-				"en": "Media player modification"
-			}
-		},
 		"11153": {
 			"id": 11153,
 			"model": "E71v45",
