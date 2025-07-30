@@ -18,6 +18,8 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: corepack enable pnpm
       - run: npm install --global corepack@latest
+      - name: Update APT cache
+        run: sudo apt update
       - name: Install deps
         run: sudo apt install unar
       - name: Sync patches
