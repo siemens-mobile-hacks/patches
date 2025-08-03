@@ -95648,6 +95648,16 @@
 				"ru": "Управление элементами медиаплеера",
 				"en": "Mediaplayer changer"
 			}
+		},
+		"11155": {
+			"id": 11155,
+			"model": "E71v45",
+			"file": "E71v45/11155-fix_playlist_editor.vkp",
+			"mtime": 1754228596000,
+			"title": {
+				"ru": "Исправить редактор плейлистов",
+				"en": "Fix playlist editor"
+			}
 		}
 	},
 	"C81v51": {
