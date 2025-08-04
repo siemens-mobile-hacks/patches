@@ -19415,6 +19415,16 @@
 				"ru": "Корректное отображение иконок экрана громкости",
 				"en": "Fix view icons volumebar"
 			}
+		},
+		"11156": {
+			"id": 11156,
+			"model": "S75v52",
+			"file": "S75v52/11156-fix_playlist_editor_S75.vkp",
+			"mtime": 1754344940000,
+			"title": {
+				"ru": "Исправить редактор плейлистов",
+				"en": "Fix playlist editor"
+			}
 		}
 	},
 	"SL75v31": {
