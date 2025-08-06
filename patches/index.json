@@ -94860,8 +94860,8 @@
 		"10815": {
 			"id": 10815,
 			"model": "E71v45",
-			"file": "E71v45/10815-change_animation_frames_in_nm.vkp",
-			"mtime": 1713885650000,
+			"file": "E71v45/10815-change_animation_frames_in_nm_v1_1.vkp",
+			"mtime": 1754503974000,
 			"title": {
 				"ru": "Изменить кадры анимации в Native Menu",
 				"en": "Change animation frames in Native Menu"
