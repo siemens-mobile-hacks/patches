@@ -95668,6 +95668,16 @@
 				"ru": "Исправить редактор плейлистов",
 				"en": "Fix playlist editor"
 			}
+		},
+		"11157": {
+			"id": 11157,
+			"model": "E71v45",
+			"file": "E71v45/11157-add_radio_item_in_extras_menu.vkp",
+			"mtime": 1754508008000,
+			"title": {
+				"ru": "Добавить пункт 'Радио' в меню 'Друг. функции'",
+				"en": "Add 'Radio' item in 'Extras' menu"
+			}
 		}
 	},
 	"C81v51": {

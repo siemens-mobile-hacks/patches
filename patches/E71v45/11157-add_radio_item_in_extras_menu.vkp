@@ -1,0 +1,18 @@
+;E71v45
+;Добавить пункт 'Радио' в меню 'Друг. функции'
+;Add 'Radio' item in 'Extras' menu
+;(c) FIL
+;Version: 
+;PatchID: 11157
+;Details: https://patches.kibab.com/patches/details.php5?id=11157
+/*
+
+*/
+
+08833DC: 2DC0FF7F D3140100
+08833E0: 2CC0FF7F D3140100
+08833F0: 5D05 9205
+0883394: 074D77A0 0xA06E8FF7
+
+;------------------------- end -------------------------
+
