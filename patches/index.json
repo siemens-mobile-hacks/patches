@@ -94880,9 +94880,9 @@
 		"10822": {
 			"id": 10822,
 			"model": "E71v45",
-			"file": "E71v45/10822-custom_icons_addon_to_nmfp_v1_1.vkp",
-			"additionalFile": "E71v45/10822-custom_icons_addon_to_nmfp.zip",
-			"mtime": 1732733296000,
+			"file": "E71v45/10822-custom_icons_addon_to_nmfp_v1_2.vkp",
+			"additionalFile": "E71v45/10822-custom_icons_addon_to_nmfp_v1_2.zip",
+			"mtime": 1754505552000,
 			"title": {
 				"ru": "Дополнение 'Нестандартные иконки' для 'Пакет исправлений Native Menu'",
 				"en": "Addon 'Custom icons' to 'Native Menu Fix Pack'"
