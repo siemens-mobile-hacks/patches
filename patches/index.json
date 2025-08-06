@@ -95678,6 +95678,16 @@
 				"ru": "Добавить пункт 'Радио' в меню 'Друг. функции'",
 				"en": "Add 'Radio' item in 'Extras' menu"
 			}
+		},
+		"11158": {
+			"id": 11158,
+			"model": "E71v45",
+			"file": "E71v45/11158-remove_alarm_from_organiser_menu.vkp",
+			"mtime": 1754510036000,
+			"title": {
+				"ru": "Убрать пункт 'Будильник' из меню 'Органайзер'",
+				"en": "Remove 'Alarm clock' item from 'Organiser' menu"
+			}
 		}
 	},
 	"C81v51": {
