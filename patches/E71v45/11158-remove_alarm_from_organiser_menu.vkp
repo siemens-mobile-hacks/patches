@@ -1,0 +1,14 @@
+;E71v45
+;Убрать пункт 'Будильник' из меню 'Органайзер'
+;Remove 'Alarm clock' item from 'Organiser' menu
+;(c) FIL
+;Version: 
+;PatchID: 11158
+;Details: https://patches.kibab.com/patches/details.php5?id=11158
+/*
+
+*/
+
+088368C: 1F05 8C05
+;------------------------- end -------------------------
+
