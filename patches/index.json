@@ -95688,6 +95688,16 @@
 				"ru": "Убрать пункт 'Будильник' из меню 'Органайзер'",
 				"en": "Remove 'Alarm clock' item from 'Organiser' menu"
 			}
+		},
+		"11159": {
+			"id": 11159,
+			"model": "E71v45",
+			"file": "E71v45/11159-fix_options_header_in_durat_charges.vkp",
+			"mtime": 1754651364000,
+			"title": {
+				"ru": "Исправить заголовок опции в меню 'Время/стоим.'",
+				"en": "Fix options header in 'Durat./charges' menu"
+			}
 		}
 	},
 	"C81v51": {

@@ -1,0 +1,16 @@
+;E71v45
+;Исправить заголовок опции в меню 'Время/стоим.'
+;Fix options header in 'Durat./charges' menu
+;(c) FIL
+;Version: 
+;PatchID: 11159
+;Details: https://patches.kibab.com/patches/details.php5?id=11159
+/*
+Убирает лишний отступ в заголовке.
+*/
+
+078156E: 334E 0026
+0781576: 843E C046
+
+;------------------------- end -------------------------
+
