@@ -2,7 +2,7 @@
 ;Пакет исправлений Native Menu
 ;Native Menu Fix Pack
 ;(c) caine, Zhek@, Miha_r, BingK, SiNgle, Evgr, FIL
-;Version: 3.6
+;Version: 3.7
 ;PatchID: 9682
 ;Details: https://patches.kibab.com/patches/details.php5?id=9682
 /*
@@ -244,6 +244,14 @@
 ; Predial_OnCreate
 06ED916: 92F085F8 00F073FA
 06ED91C: 0020 10BD
+
+;№17
+;Исправить заголовок опции в меню 'Время/стоим.'
+;Fix options header in 'Durat./charges' menu
+;(c) FIL
+
+078156E: 334E 0026
+0781576: 843E C046
 
 ;------------------------- end -------------------------
 

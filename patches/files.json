@@ -27634,7 +27634,7 @@
 		"E71v45/9681-dis_wait_BT.vkp"
 	],
 	[
-		"E71v45/9682-NMFP_v3_6.vkp"
+		"E71v45/9682-NMFP_v3_7.vkp"
 	],
 	[
 		"E71v45/9683-Enable_RTSP.vkp"
@@ -30953,7 +30953,7 @@
 		"E71v45/10812-remove_icons_white_bg_in_nm_v2.vkp"
 	],
 	[
-		"E71v45/10813-add_icons_to_header_in_nm_v1_2_1.vkp"
+		"E71v45/10813-add_icons_to_header_in_nm_v1_3.vkp"
 	],
 	[
 		"E71v45/10814-default_icons_addon_to_nmfp.vkp"
@@ -31970,5 +31970,8 @@
 	],
 	[
 		"E71v45/11158-remove_alarm_from_organiser_menu.vkp"
+	],
+	[
+		"E71v45/11159-fix_options_header_in_durat_charges.vkp"
 	]
 ]
