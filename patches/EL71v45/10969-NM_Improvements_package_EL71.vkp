@@ -3,7 +3,7 @@
 ;Native Menu Fix Pack
 ;(c) FIL, BingK(binghelingxi), caine, 42Gzb, Zhek@, Evgr, SiNgle, Feyman
 ;(p) Azq2, Виктор89
-;Version: 3.3
+;Version: 3.4
 ;PatchID: 10969
 ;Details: https://patches.kibab.com/patches/details.php5?id=10969
 /*
@@ -23,6 +23,8 @@
 11. Исправление навигации;
 12. Изменение скорости анимации меню.
 */
+
+;EL71 SW45
 
 ;----1----
 ;Native Menu вместо главного меню
@@ -138,9 +140,11 @@
 ; Fix Internet (from v2)
 088CE70: 08 00
 
-; Fix Timer & SMS
-873C1C: 0xA06FB2F5 0xA06F5345
+; Fix Timer
 88CC1C: 0xA0788203 0xA06F599D
+; Fix SMS Archive
+0898A9C: 4DEB7BA0 3B566FA0
+
 
 ;----9----
 ;Исправление кнопок *,0,#,кнопка вызова в Native Menu
@@ -172,12 +176,21 @@
 08B2E50: FFAE7DA007AF7DA0 411606A0511606A0
 ;NMNU_SHOW_TIME_FIX_BODY
 #pragma enable old_equal_ff
-061640: F0B5071C064EB047381C064EB047F0BD
-061650: F0B50F1C044EB047391C044EB047F0BD
-061660: B9565CA043F76FA08B565CA057F76FA0
+0061640: F0B5071C064EB047381C064EB047F0BD
+0061650: F0B50F1C044EB047391C044EB047F0BD
+0061660: B9565CA043F76FA08B565CA057F76FA0
 #pragma disable old_equal_ff
 
 ;----11----
+;Изменить скорость анимации в Native Menu
+;Change animation speed in Native Menu
+;(c) FIL
+;(p) Виктор89
+
+0B02A6A: FF 2D
+0B02A6C: 2D 0i120 ; 00 -> faster, 80 -> optimal, 255 -> slower
+
+;----12----
 ;EL71v45
 ;Активировать "Синхронизация" в нативном меню
 ;Activate the "SyncML" in the native menu
@@ -186,20 +199,5 @@
 08053A8: A7 A3
 0805FAC: A3 A7
 0AB7FA2: 00207047 0F20ECE7
-
-;----12----
-;EL71v45
-;Изменить скорость анимации в Native Menu
-;Change animation speed in Native Menu
-;(c) FIL
-;(p) Виктор89
-;Version: 
-;PatchID: 10975
-;Details: https://patches.kibab.com/patches/details.php5?id=10975
-
-0B02A6A: FF 2D
-0B02A6C: 2D 0i120 ; 00 -> faster, 80 -> optimal, 255 -> slower
-
-
 ;------------------------- end -------------------------
 
