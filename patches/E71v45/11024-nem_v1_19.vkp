@@ -3,7 +3,7 @@
 ;Native Explorer Modification
 ;(c) FIL
 ;(r) 1nvisible
-;Version: 1.17
+;Version: 1.19
 ;PatchID: 11024
 ;Details: https://patches.kibab.com/patches/details.php5?id=11024
 /*
@@ -44,7 +44,7 @@
 - Небольшие оптимизации.
 Java:
 - Открытие каталога Java-приложения, вместо запуска.
-- Уникальная иконка для Java-приложения(ID: 1020), которая отличается от иконки jar файлов.
+- Уникальная иконка для Java-приложения(ID: 853), которая отличается от иконки jar файлов.
 - Возможность передачи jar, jad файлов через bluetooth.
 - Запуск jar, jad отовсюду.
 - Стандартные атрибуты файла для Java-приложения.
@@ -62,7 +62,7 @@ Java:
 
 #pragma enable old_equal_ff
 ; .rodata
-1380600: 5B25632563256325635D00313A5C00
+1380600: 5B25632563256325635D00313A5C0025743A202225772200
 #pragma disable old_equal_ff
 
 ; .Replace_GetMultiLinesMenuGUI
@@ -296,6 +296,9 @@ Java:
 ; .FixShowFileAttributes_Jump
 069B860: 1DDE01EB 069433FA
 
+; .FixShowSearch
+069B97C: 0D00A0E3 000000EA
+
 ; .FixHeader
 071EEE8: 0410A0E12800A0E31AC7FAEB000050E30500000A0500A0E11AFAFFEB 0400A0E124B813EB030050E30400A0115C10A013FF6B031B4C0000EA
 
@@ -365,14 +368,14 @@ Java:
 ; .HideMenuItems_Jump3
 071B874: 1710A0E3010080E2000084E5001184E7 0600A0E10410A0E10B9531FA0000A0E1
 
-; .FixJavaDirs_Part1
+; .FixJavaDirs
 069AB04: 0EFDFFEB 0000A0E1
 
 ; .FixJavaDirIcon_Part1
 071E56C: 1300A0E3DB90F7EB 48089FE5040080E2
 
 ; .FixJavaDirIcon_Part2
-0870A60: 00000000 FC030000
+0870A60: 00000000 55030000
 
 ; .FixRunJava
 09EEC7E: 07D0 07E0
@@ -461,6 +464,14 @@ Java:
 ; .Search_OnKey_Jump
 088B538: 285678A0 D10D38A1
 
+#pragma enable old_equal_ff
+; .Search_GHook_Hook
+1380F30: F7B5124B04000D0098470700022D18D1006E0F4B9847002813D00E4B802098470D4B0600200098473B6E0C490C4A0D4F01903000B84731000B4B0C4A01980C4EB04729000B4B20009847F7BD4F6595A053AC4FA011F693A03D4E95A00F0638A1AE0D00004DEB93A0932F09A0512F09A0B985A2A0985678A0
+#pragma disable old_equal_ff
+
+; .Search_GHook_Jump
+088B53C: 985678A0 310F38A1
+
 ; .Search_FixCSMState
 0711F90: 0670A0E3 0470A0E3
 
@@ -498,6 +509,12 @@ Java:
 
 ; .Search_FixJavaAttributes
 0711680: 0700A0E1 090000EA
+
+; .Search_FixGoTo_Part1
+071186C: 680094E5 060000EA
+
+; .Search_FixGoTo_Part2
+07118BC: 0400A0E1 070000EA
 
 ; .Search_Options_FixMenu
 088B66C: 08000000 09000000
