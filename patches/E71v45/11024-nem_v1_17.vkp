@@ -3,7 +3,7 @@
 ;Native Explorer Modification
 ;(c) FIL
 ;(r) 1nvisible
-;Version: 1.16.1
+;Version: 1.17
 ;PatchID: 11024
 ;Details: https://patches.kibab.com/patches/details.php5?id=11024
 /*
@@ -50,8 +50,12 @@ Java:
 - Стандартные атрибуты файла для Java-приложения.
 Поиск файлов:
 - Исправлены баги интерфейса за счет перевода некоторого функционала в синхронный режим.
+- Возможность поиска по скрытым дискам и директориям.
 - Изменен заголовок на более аккуратный.
+- Изменена иконка в заголовке.
+- Добавлены иконки файлов.
 - Меню:
+-- Исправлены все пункты.
 -- Добавлены недостающие оступы.
 -- Удалены пункты: "Manage licence", "Drive info", "Help".
 */
@@ -460,6 +464,9 @@ Java:
 ; .Search_FixCSMState
 0711F90: 0670A0E3 0470A0E3
 
+; .Search_FixHeaderIcon
+088B6CC: B7030000 5A030000
+
 ; .Search_ChangeHeader_Part1
 088B52C: 91C0FF7FFFFFFF7F AE0D000091C0FF7F
 
@@ -468,6 +475,29 @@ Java:
 
 ; .Search_ChangeHeader_Part3
 07857B0: 20209FE5 B228D5E1
+
+; .Search_Everywhere_Part1
+071245C: 0500D0E7B4BFF7EB 0000A0E10500A0E1
+
+; .Search_Everywhere_Part2
+071246C: 020055E3 050055E3
+
+; .Search_Everywhere_Part3
+0710EF4: 020054E3 050054E3
+
+; .Search_Everywhere_Part4
+0710CFC: 1200A0E3 FF00A0E3
+
+#pragma enable old_equal_ff
+; .Search_SetItemIcon_Hook
+1380EB0: F7B5114F01930400104B100000920D0098470F4E002812D00E4B0021984700280DD00068B847021E09D029002000B04729002000019B009A074CA047F7BD0748B8470200F1E7C0469BCE94A0F82650A0FB4495A0C82850A0973E95A0EA030000
+#pragma disable old_equal_ff
+
+; .Search_SetItemIcon_Jump
+0785770: C73907FB CEED2FFA
+
+; .Search_FixJavaAttributes
+0711680: 0700A0E1 090000EA
 
 ; .Search_Options_FixMenu
 088B66C: 08000000 09000000
@@ -487,6 +517,12 @@ Java:
 
 ; .Search_Options_HideItems_Jump
 0785E48: DFFEFFEB 08EC2FFA
+
+; .Search_Options_FixItemOpen_Part1
+0785BC0: 120055E3 FF0055E3
+
+; .Search_Options_FixItemOpen_Part2
+0785BD4: 130055E3 FF0055E3
 
 ;------------------------- end -------------------------
 
