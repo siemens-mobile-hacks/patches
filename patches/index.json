@@ -95698,6 +95698,16 @@
 				"ru": "Исправить заголовок опции в меню 'Время/стоим.'",
 				"en": "Fix options header in 'Durat./charges' menu"
 			}
+		},
+		"11160": {
+			"id": 11160,
+			"model": "E71v45",
+			"file": "E71v45/11160-fix_header_in_via_bt_menu.vkp",
+			"mtime": 1755192576000,
+			"title": {
+				"ru": "Исправить заголовок меню 'Через BT'",
+				"en": "Fix header in 'Via BT' menu"
+			}
 		}
 	},
 	"C81v51": {

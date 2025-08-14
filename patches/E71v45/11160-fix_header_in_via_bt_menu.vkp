@@ -1,0 +1,14 @@
+;E71v45
+;Исправить заголовок меню 'Через BT'
+;Fix header in 'Via BT' menu
+;(c) FIL
+;Version: 
+;PatchID: 11160
+;Details: https://patches.kibab.com/patches/details.php5?id=11160
+/*
+
+*/
+
+0CA51F0: 96010000 F6030000
+;------------------------- end -------------------------
+
