@@ -31566,7 +31566,7 @@
 		"S75v52/11023-set_csm_for_natmenu.vkp"
 	],
 	[
-		"E71v45/11024-nem_v1_19.vkp"
+		"E71v45/11024-nem_v1_19_4.vkp"
 	],
 	[
 		"CF75v23/11025-C72v22_cpu_208mhz_notlmb.vkp"
@@ -31973,5 +31973,8 @@
 	],
 	[
 		"E71v45/11159-fix_options_header_in_durat_charges.vkp"
+	],
+	[
+		"E71v45/11160-fix_header_in_via_bt_menu.vkp"
 	]
 ]
