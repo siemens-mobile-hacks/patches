@@ -95718,6 +95718,16 @@
 				"ru": "Отключить сообщение 'Закладка переименована' в Настр. онлайн",
 				"en": "Disable message 'Entry renamed' in Online settings"
 			}
+		},
+		"11162": {
+			"id": 11162,
+			"model": "E71v45",
+			"file": "E71v45/11162-fix_welcome_text_menu.vkp",
+			"mtime": 1755691196000,
+			"title": {
+				"ru": "Исправить меню 'Текст приветс.'",
+				"en": "Fix 'Wellcome text' menu"
+			}
 		}
 	},
 	"C81v51": {
