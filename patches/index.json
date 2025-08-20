@@ -95728,6 +95728,16 @@
 				"ru": "Исправить меню 'Текст приветс.'",
 				"en": "Fix 'Wellcome text' menu"
 			}
+		},
+		"11163": {
+			"id": 11163,
+			"model": "E71v45",
+			"file": "E71v45/11163-fix_online_settings.vkp",
+			"mtime": 1755692484000,
+			"title": {
+				"ru": "Исправить Настр. онлайн",
+				"en": "Fix Online settings"
+			}
 		}
 	},
 	"C81v51": {
