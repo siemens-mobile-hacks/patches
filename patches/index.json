@@ -19425,6 +19425,16 @@
 				"ru": "Исправить редактор плейлистов",
 				"en": "Fix playlist editor"
 			}
+		},
+		"11164": {
+			"id": 11164,
+			"model": "S75v52",
+			"file": "S75v52/11164-fix_online_settings75_52.vkp",
+			"mtime": 1755715462000,
+			"title": {
+				"ru": "Исправить Настройки онлайн",
+				"en": "Fix Online settings"
+			}
 		}
 	},
 	"SL75v31": {
