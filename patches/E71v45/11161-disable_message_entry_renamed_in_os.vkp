@@ -1,0 +1,15 @@
+;E71v45
+;Отключить сообщение 'Закладка переименована' в Настр. онлайн
+;Disable message 'Entry renamed' in Online settings
+;(c) FIL
+;Version: 
+;PatchID: 11161
+;Details: https://patches.kibab.com/patches/details.php5?id=11161
+/*
+
+*/
+
+07D9DE6: 1EF0D2ED 0020C046
+07B2C3C: 8A42 002A
+;------------------------- end -------------------------
+

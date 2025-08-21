@@ -2,7 +2,7 @@
 ;Блокировка или разблокировка клавиатуры двойным нажатием клавиши '#'
 ;Lock or unlock keypad by double press of hash button
 ;(c) FIL
-;Version: 1.1
+;Version: 1.2
 ;PatchID: 11065
 ;Details: https://patches.kibab.com/patches/details.php5?id=11065
 /*
@@ -23,12 +23,15 @@
 0670BB4: 08D00D2C 50D107E0
 
 ; .KbdUnlock_Part2
-0702C8A: 07D16068 07D018E0
+0702C74: C2F684F8 02E0C046
 
 ; .KbdUnlock_Part3
-0669846: 9638 9438
+0702C8A: 07D16068 07D018E0
 
 ; .KbdUnlock_Part4
+0669846: 9638 9438
+
+; .KbdUnlock_Part5
 05C2BAC: 14290BD1 23290BD0
 
 ; .KeypadLock_DisableText
