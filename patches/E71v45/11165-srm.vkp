@@ -1,0 +1,79 @@
+;E71v45
+;Модификация диктофона
+;Sound recorder modification
+;(c) FIL
+;Version: 
+;PatchID: 11165
+;Details: https://patches.kibab.com/patches/details.php5?id=11165
+/*
+- Добавлена порция исправлений для работы совместно с XTask3.
+- Принудительное сохранение записи при закрытии CSM.
+- Исправлено позиционирование элементов интерфейса.
+- Исправлена отрисовка интерфейса.
+- Отображение названия записываемого файла вместо надписи "New recording".
+- Увеличена скорость анимации.
+
+*/
+
+#pragma enable old_equal_ff
+; .List_OnClose_Hook
+1382050: 054B10B59847054B1B68002B02D0D868034B984710BDC04690A17AA06456F0A8756A94A0
+#pragma disable old_equal_ff
+
+; .List_OnClose_Jump
+088ED14: 90A17AA0 512038A1
+
+; .Recording_FixPBarPosition
+08AAC1C: 4100FA00AE001401 5A00FC0096000B01
+
+; .Recording_FixElapsedTimePosition
+08AABCC: 3E00 5200
+
+; .Recording_FixTotalTimePosition
+08AABE4: B100 9E00
+
+; .Recording_ChangeAnimationSpeed
+07EEBE4: FA10A0E3 8010A0E3
+
+#pragma enable old_equal_ff
+; .Recording_DrawWidgetWithBG
+1382080: F0B5040085B000281BD00F4B0220984725680223E95E02000023E85E0392002202920627EE5F0B00761A01960426AD5F383B2D1A0095054DA847636820001B68984705B0F0BDC046956AA2A071CBA0A0
+
+; .Recording_FixRedraw_Hook
+13820D0: F8B50E4B04000E4F984706212000B847092105002000B8470A2106002000B84704003000FFF7C4FF2800FFF7C1FF002C03D0636820001B689847F8BDF4197DA03928A2A0
+#pragma disable old_equal_ff
+
+; .Recording_FixRedraw_Jump
+07AAC14: 769B00EB 2D5D2FFA
+
+; .Recording_FixRedraw_Part2
+07AACAC: 689206FB 0000A0E1
+
+; .Recording_FixRedraw_Part3
+07FF288: 5B25A2A0 783BFBA0
+
+; .Recording_FixRedraw_Part4
+07AA5B4: 14050000 45010000
+
+; .Recording_FixRedraw_Part5
+07AACE0: E8030000 FA000000
+
+; .Recording_FixClose
+07AAF2C: 0400A003 0100A003
+
+; .Recording_SaveOnClose
+07AABFC: 4D9A00EB 3E9A00EB
+
+; .Recording_ChangeText_Part1
+07D18F8: 1400A0E3 8000A0E3
+
+#pragma enable old_equal_ff
+; .Recording_ChangeText_Hook
+1382120: 054B10B51B680400196C806B034B98470223236110BDC0466456F0A8FC1A7DA0
+#pragma disable old_equal_ff
+
+; .Recording_ChangeText_Jump
+07AA5A0: 0200A0E3100084E5 0400A0E1DD5E2FFA
+
+;------------------------- end -------------------------
+
