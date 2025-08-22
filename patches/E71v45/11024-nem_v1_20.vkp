@@ -3,7 +3,7 @@
 ;Native Explorer Modification
 ;(c) FIL
 ;(r) 1nvisible
-;Version: 1.19.4
+;Version: 1.20
 ;PatchID: 11024
 ;Details: https://patches.kibab.com/patches/details.php5?id=11024
 /*
@@ -54,6 +54,7 @@ Java:
 - Изменен заголовок на более аккуратный.
 - Изменена иконка в заголовке.
 - Добавлены иконки файлов.
+- Исправлен запуск Native Explorer(Go to...).
 - Меню:
 -- Исправлены все пункты.
 -- Добавлены недостающие оступы.
@@ -244,6 +245,9 @@ Java:
 ; .FixSendFile_Jump
 0716940: A211FEEB 91A831FA
 
+; .FixSendFile
+069B1B0: 10A084E5 0000A0E1
+
 #pragma enable old_equal_ff
 ; .FixSortFiles_Hook
 1380B5A: 000070B5054B04000D009847002803D0034B29002000984770BD709969A0D8B669A0
@@ -303,9 +307,6 @@ Java:
 
 ; .FixShowSearch
 069B97C: 0D00A0E3 000000EA
-
-; .FixSendFile
-069B1B0: 10A084E5 0000A0E1
 
 ; .FixHeader
 071EEE8: 0410A0E12800A0E31AC7FAEB000050E30500000A0500A0E11AFAFFEB 0400A0E124B813EB030050E30400A0115C10A013FF6B031B4C0000EA
@@ -523,6 +524,14 @@ Java:
 
 ; .Search_FixGoTo_Part2
 07118BC: 0400A0E1 070000EA
+
+#pragma enable old_equal_ff
+; .Search_FixGoTo_Hook
+1381080: 10B5044B68210400984726236360253B636110BD00FCFAA0
+#pragma disable old_equal_ff
+
+; .Search_FixGoTo_Jump
+07118A8: CE1DFEEB F4BD31FA
 
 ; .Search_Options_FixMenu
 088B66C: 08000000 09000000
