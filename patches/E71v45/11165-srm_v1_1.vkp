@@ -2,16 +2,18 @@
 ;Модификация диктофона
 ;Sound recorder modification
 ;(c) FIL
-;Version: 
+;Version: 1.1
 ;PatchID: 11165
 ;Details: https://patches.kibab.com/patches/details.php5?id=11165
 /*
-- Добавлена порция исправлений для работы совместно с XTask3.
+- Добавлена порция исправлений для работы совместно с XTask.
 - Принудительное сохранение записи при закрытии CSM.
 - Исправлено позиционирование элементов интерфейса.
 - Исправлена отрисовка интерфейса.
 - Отображение названия записываемого файла вместо надписи "New recording".
 - Увеличена скорость анимации.
+- Вывод сообщения об ошибке при невозможности открытия списка записей.
+- Пункт меню "Rename" заменен на "Go to…".
 
 */
 
@@ -22,6 +24,14 @@
 
 ; .List_OnClose_Jump
 088ED14: 90A17AA0 512038A1
+
+#pragma enable old_equal_ff
+; .List_GHook_Hook
+13821A0: 70B50B4B0C0098470A2C10D1094B0A4D1C68E06AA847002809D0806BA847002805D0B121054B890011209847A06370BD40037DA06456F0A8716994A089EA94A0
+#pragma disable old_equal_ff
+
+; .List_GHook_Jump
+08AA9EC: 40037DA0 A12138A1
 
 ; .Recording_FixPBarPosition
 08AAC1C: 4100FA00AE001401 5A00FC0096000B01
@@ -61,8 +71,11 @@
 ; .Recording_FixClose
 07AAF2C: 0400A003 0100A003
 
-; .Recording_SaveOnClose
+; .Recording_SaveOnClose_Part1
 07AABFC: 4D9A00EB 3E9A00EB
+
+; .Recording_SaveOnClose_Part2
+07AB45C: 359800EB 269800EB
 
 ; .Recording_ChangeText_Part1
 07D18F8: 1400A0E3 8000A0E3
@@ -74,6 +87,17 @@
 
 ; .Recording_ChangeText_Jump
 07AA5A0: 0200A0E3100084E5 0400A0E1DD5E2FFA
+
+#pragma enable old_equal_ff
+; .Options_GoTo
+1382150: 70B50C4B060068200D00984768210A4B0400984726236360253BE660A56063612000064B9847064B050020009847280070BDC046512F09A000FCFAA0249969A0932F09A0
+#pragma disable old_equal_ff
+
+; .Options_ReplaceRename_Part1
+07D09A8: A512FDEB E8C52EFA
+
+; .Options_ReplaceRename_Part2
+08AF6B8: 7101000071010000 1B0800001B080000
 
 ;------------------------- end -------------------------
 
