@@ -98602,6 +98602,16 @@
 				"ru": "Корректное отображение иконок экрана громкости",
 				"en": "Fix view icons volumebar"
 			}
+		},
+		"11166": {
+			"id": 11166,
+			"model": "C81v51",
+			"file": "C81v51/11166-change_animation_speed_in_nm.vkp",
+			"mtime": 1755957832000,
+			"title": {
+				"ru": "Изменить скорость анимации в Native Menu",
+				"en": "Change animation speed in Native Menu"
+			}
 		}
 	},
 	"C81v38": {
