@@ -1,0 +1,16 @@
+;C81v51
+;Изменить скорость анимации в Native Menu
+;Change animation speed in Native Menu
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 11166
+;Details: https://patches.kibab.com/patches/details.php5?id=11166
+/*
+
+*/
+
+0AE8AB2: FF 2D
+0AE8AB4: 2D 0i80 ; 00 -> faster, 80 -> optimal, 255 -> slower
+;------------------------- end -------------------------
+
