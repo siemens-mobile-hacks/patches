@@ -6,7 +6,7 @@
 ;PatchID: 11169
 ;Details: https://patches.kibab.com/patches/details.php5?id=11169
 /*
-
+Патч включает отображение LGP_ID вместо текста. Очень удобно для поиска нужных id.
 */
 
 #pragma enable old_equal_ff
