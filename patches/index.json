@@ -95758,6 +95758,16 @@
 				"ru": "Модификация диктофона",
 				"en": "Sound recorder modification"
 			}
+		},
+		"11170": {
+			"id": 11170,
+			"model": "E71v45",
+			"file": "E71v45/11170-locale_debug.vkp",
+			"mtime": 1756034640000,
+			"title": {
+				"ru": "Отладка локали-MP",
+				"en": "Locale debug-MP"
+			}
 		}
 	},
 	"C81v51": {

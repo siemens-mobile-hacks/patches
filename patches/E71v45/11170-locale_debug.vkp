@@ -1,0 +1,14 @@
+;E71v45
+;Отладка локали-MP
+;Locale debug-MP
+;(c) FIL
+;Version: 
+;PatchID: 11170
+;Details: https://patches.kibab.com/patches/details.php5?id=11170
+/*
+Патч включает отображение LGP_ID вместо текста. Очень удобно для поиска нужных id.
+*/
+
+08D5F3C: 24FCFFEB EF75DEFA
+;------------------------- end -------------------------
+
