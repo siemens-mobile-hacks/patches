@@ -101153,6 +101153,16 @@
 				"ru": "Диктофон и Запись звука пишут на диск Data или карту памяти по выбору",
 				"en": "Dictaphone and Sound recorder write to Data or memory card as option"
 			}
+		},
+		"11169": {
+			"id": 11169,
+			"model": "X85v100",
+			"file": "X85v100/11169-locale_debug_base.vkp",
+			"mtime": 1756034580000,
+			"title": {
+				"ru": "Отладка локали",
+				"en": "Locale debug"
+			}
 		}
 	},
 	"CF62v24": {
