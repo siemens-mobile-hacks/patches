@@ -1,0 +1,21 @@
+;X85v100
+;Отладка локали
+;Locale debug
+;(c) FIL
+;Version: 
+;PatchID: 11169
+;Details: https://patches.kibab.com/patches/details.php5?id=11169
+/*
+
+*/
+
+#pragma enable old_equal_ff
+0073730: 0xB1C2D3E4,0x00003331,0000000000000000,\
+"{p=`Locale debug` cp=`FIL` id=3331 ver=1}",00
+
+; .Hook
+0073700: 054B064810B5984703000120002B01D1034B984710BDC046010C06A031330000D44F8DA0
+#pragma disable old_equal_ff
+
+;------------------------- end -------------------------
+
