@@ -183,9 +183,9 @@
 0268: 0xA124986C   ; 9A: ;__arm int ChangeVolume(unsigned char Volume)
 026C: 0xA879DBFC   ; 9B: Audio params addr
 ;270: 0x   ; f156: 
-0274: 0xA0BF748D   ; 157: 9D: __thumb int GetMissedEventsPtr()
+0274: 0xA0BF748D   ; 9D: __thumb int GetMissedEventsPtr()
 ;278: 0x   ; f158: 
-27C: 0xA114F417   ;  9F: ;__thumb void DrawRectangle_2(int x,int y,int x2,int y2,int flags,int *pen,int *brush)
+027C: 0xA114F417   ;  9F: ;__thumb void DrawRectangle_2(int x,int y,int x2,int y2,int flags,int *pen,int *brush)
 
 ;
 280: 0xA0C3046F   ; f160: wsprintf
