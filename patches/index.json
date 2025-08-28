@@ -56731,8 +56731,8 @@
 		"10974": {
 			"id": 10974,
 			"model": "S65v58",
-			"file": "S65v58/10974-fix_navigation_in_tile_view_v1_1.vkp",
-			"mtime": 1730941552000,
+			"file": "S65v58/10974-fix_navigation_in_tile_view_v1_1_1.vkp",
+			"mtime": 1756405970000,
 			"title": {
 				"ru": "Исправить навигацию в плиточном режиме",
 				"en": "Fix navigation in tile view"
