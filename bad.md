@@ -59,21 +59,6 @@ Error: Syntax error at line 16 col 1
 
 ```
 
-[S65v58/11045-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11045)
-
-Error: Syntax error at line 16 col 1
-```
-  13 | 01161230: 01 FF
-  14 | 
-  15 | ;Pattern
-> 16 | 01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
-     | ^
-  17 | 
-  18 | ;------------------------- end -------------------------
-  19 | 
-
-```
-
 [SK65v50/11108-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11108)
 
 Error: Syntax error at line 16 col 1

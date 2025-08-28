@@ -3,7 +3,7 @@
 ;Functions Library
 ;(c) avkiev
 ;(p) dimonp25
-;Version: 210525
+;Version: 270825
 ;PatchID: 10897
 ;Details: https://patches.kibab.com/patches/details.php5?id=10897
 /*
@@ -975,7 +975,7 @@
 
 0F40: 0xA16a0341 ; 3D0: __thumb int RestartLockTimers();
 ;F44:            ; 3D1: __arm void MediaProc_LaunchLastPlayback();
-0F48: 0xA16A339B ; 3D2: __thumb int GetScreenSaverType();
+;F48:            ; 3D2: __thumb int IsIconBarDisabled();
 0F4C: 0xA0C34809 ; 3D3: __thumb int IllumFilterSet(int flags, int unk);
 0F50: 0xA1150D6B ; 3D4: __thumb void DrawCroppedIMGHDR(int x, int y, int offset_x, int offset_y, int w, int h, int flags, const IMGHDR *img);
 ;F54:            ; 3D5: __arm int BuildPath(WSHDR *ws, const WSHDR *file_name, const WSHDR *dir);
