@@ -57047,6 +57047,16 @@
 				"ru": "Не отображать иконки центральной навигационной клавиши",
 				"en": "Don't display central navigation key icon"
 			}
+		},
+		"11171": {
+			"id": 11171,
+			"model": "S65v58",
+			"file": "S65v58/11171-date_instead_of_p_name_in_ss_v2_1.vkp",
+			"mtime": 1756402548000,
+			"title": {
+				"ru": "Дата вместо имени оператора в заставке",
+				"en": "Date instead of provider name in screensaver"
+			}
 		}
 	},
 	"SL65v50": {
