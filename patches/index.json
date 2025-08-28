@@ -57057,6 +57057,16 @@
 				"ru": "Дата вместо имени оператора в заставке",
 				"en": "Date instead of provider name in screensaver"
 			}
+		},
+		"11172": {
+			"id": 11172,
+			"model": "S65v58",
+			"file": "S65v58/11172-fast_ss_appearance_after_kbd_lock.vkp",
+			"mtime": 1756403886000,
+			"title": {
+				"ru": "Моментальный запуск скринсейвера после блокировки клавиатуры",
+				"en": "Fast ScreenSaver appearance after keyboard lock"
+			}
 		}
 	},
 	"SL65v50": {
