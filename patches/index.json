@@ -95788,6 +95788,16 @@
 				"ru": "Отладка локали-MP",
 				"en": "Locale debug-MP"
 			}
+		},
+		"11173": {
+			"id": 11173,
+			"model": "E71v45",
+			"file": "E71v45/11173-move_vibra_and_light_folder.vkp",
+			"mtime": 1756467006000,
+			"title": {
+				"ru": "Перенос папки 'Vibra&Light'",
+				"en": "Move 'Vibra&Light' folder"
+			}
 		}
 	},
 	"C81v51": {
