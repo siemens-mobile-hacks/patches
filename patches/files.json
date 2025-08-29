@@ -31412,10 +31412,10 @@
 		"S65v58/10972-fix_menu_width.vkp"
 	],
 	[
-		"S65v58/10973-fix_cursor_in_tile_view.vkp"
+		"S65v58/10973-fix_cursor_in_tile_view_v1_0_1.vkp"
 	],
 	[
-		"S65v58/10974-fix_navigation_in_tile_view_v1_1.vkp"
+		"S65v58/10974-fix_navigation_in_tile_view_v1_1_1.vkp"
 	],
 	[
 		"EL71v45/10975-change_animation_speed_in_nm.vkp"
@@ -32002,5 +32002,11 @@
 	],
 	[
 		"E71v45/11170-locale_debug.vkp"
+	],
+	[
+		"S65v58/11171-date_instead_of_p_name_in_ss_v2_1.vkp"
+	],
+	[
+		"S65v58/11172-fast_ss_appearance_after_kbd_lock.vkp"
 	]
 ]
