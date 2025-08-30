@@ -3,7 +3,7 @@
 ;Media player modification
 ;(c) FIL
 ;(r) alfinant, Marie
-;Version: 1.8.1
+;Version: 1.9
 ;PatchID: 11152
 ;Details: https://patches.kibab.com/patches/details.php5?id=11152
 /*
@@ -12,6 +12,8 @@
 - Возможность изменять громкость при заблокированной клавиатуре.
 - Отключено сворачивание приложения при заблокированной клавиатуре. Устраняет зависание при сворачивании через XTask.
 - Отключено добавление png файлов в БД медиаплеера только из каталогов "X:\zbin\".
+- Исправлен выбор плейлиста.
+- Отключено сообщение "Add tracks to playlist.".
 - Отключены пункты меню "Помощь".
 Аудио режим:
 - Начальная поддержка обложек! Поддерживаются теги ID3v2.3, ID3v2.4 с кодировкой мета-данных ISO8859_1. Максимальный размер обложки 512 Кб.
@@ -74,6 +76,12 @@
 
 ; .DisableHideWhenKbdIsLocked
 072B31C: 40009FE5 060000EA
+
+; .FixSelectPlaylist
+07CDA58: 28108DE5 0000A0E1
+
+; .DisableMessage_AddTracksToPlaylist
+07EE598: 2E8105FB 0000A0E1
 
 #pragma enable old_equal_ff
 ; .PlayProc
