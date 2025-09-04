@@ -95798,6 +95798,16 @@
 				"ru": "Перенос папки 'Vibra&Light'",
 				"en": "Move 'Vibra&Light' folder"
 			}
+		},
+		"11174": {
+			"id": 11174,
+			"model": "E71v45",
+			"file": "E71v45/11174-dont_set_t_resources_when_t_applied.vkp",
+			"mtime": 1756981378000,
+			"title": {
+				"ru": "Не устанавливать определенные ресурсы темы при установке пользовательской темы",
+				"en": "Don't set certain resources when a user theme is applied"
+			}
 		}
 	},
 	"C81v51": {
