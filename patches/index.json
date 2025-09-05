@@ -95808,6 +95808,16 @@
 				"ru": "Не устанавливать определенные ресурсы темы при установке пользовательской темы",
 				"en": "Don't set certain resources when a user theme is applied"
 			}
+		},
+		"11175": {
+			"id": 11175,
+			"model": "E71v45",
+			"file": "E71v45/11175-extended_calls_list_v6.vkp",
+			"mtime": 1757093062000,
+			"title": {
+				"ru": "Расширенный список вызовов",
+				"en": "Extended calls list"
+			}
 		}
 	},
 	"C81v51": {
