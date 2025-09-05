@@ -2,7 +2,7 @@
 ;Пакет исправлений пользовательского интерфейса
 ;UI Fix Pack
 ;(c) FIL, Azq2, SiNgle
-;Version: 1.2.2
+;Version: 1.3
 ;PatchID: 10834
 ;Details: https://patches.kibab.com/patches/details.php5?id=10834
 /*
@@ -13,7 +13,6 @@
 ;Плавная прокрутка длинных названий имен
 ;Smooth scrolling of long names
 ;(c) SiNgle, FIL
-;Version: 1.1
 0C36418: D007 1202 ; delay before start
 0C3641C: 2C01 2A00 ; scrolling speed
 0C42790: D007 1202 ; delay before start
@@ -26,8 +25,8 @@
 ;№2
 ;Плавная прокрутка длинных заголовков
 ;Smooth scrolling of long headers
-;Version: 1.1
-;PatchID: 10828
+;(c) FIL
+;(r) Azq2
 ; HEADER
 ; DEFAULT
 0A27BFC: FF 2A ; speed
@@ -48,8 +47,6 @@
 ;Fix init of scrollable headers
 ;(c) FIL
 ;(r) Azq2
-;Version: 1.1
-;PatchID: 10831
 
 ; .SetScrollType
 0A2395C: 44726177696E67206120706C61796261636B206672616D652061742028202564 10B5044B040098470349044B2A222000984710BD9BB8A2A012020000CFB9A2A0
@@ -79,8 +76,6 @@
 ;Speed up menu scrolling
 ;(c) Azq2, FIL
 ;(r) Виктор89
-;Version: 1.1
-;PatchID: 10833
 
 ; .DrawMenuItemScrollText
 0A39604: 41504F3A20636F6E766572745776496457537472696E67536166652829204E554C4C2D706F696E7465722065 826D094B70B5002A03D102681269013201D0984770BD0400383425780822227098472570F6E7C04613B6A2A0
@@ -101,15 +96,12 @@
 ;Исправить обрезанный шрифт в DrawScrollString
 ;Fix clipped font in DrawScrollString
 ;(c) Azq2
-;Version: 1
 0A128C4: 013D 003D
 
 ;№8
 ;Ускорить Ring UI
 ;Speed up Ring UI
 ;(c) FIL
-;Version: 1.0.1
-;PatchID: 10857
 
 ; .text.GrubBGFromLCD_Jump
 0A21BA6: FEF7A3FA 14F085FE
@@ -121,9 +113,39 @@
 ;Ускорить открытие меню
 ;Speed up opening menu
 ;(c) FIL
-;PatchID: 11021
 
 095175A: CEF0C9FC C046C046
+
+;№10
+;Исправить меню 'Текст приветс.'
+;Fix 'Wellcome text' menu
+;(c) FIL
+
+084B01C: 00 01
+084B100: 00000000 8C60C3A0
+084B11C: 00000000 8C60C3A0
+
+;№11
+;Исправить заголовок в 'Настр. онлайн'
+;Fix header in 'Online settings'
+;(c) FIL
+
+0C4EFCC: 8C 94
+0C4DCCC: 0100 1A01
+
+;№12
+;Исправить заголовок меню 'Через BT'
+;Fix header in 'Via BT' menu
+;(c) FIL
+
+0CA51F0: 96010000 F6030000
+
+;№13
+;Исправить анимацию включения при перезагрузке
+;Fix startup animation on reboot
+;(c) FIL
+
+066B484: D8F61CEC 0020C046
 
 ;------------------------- end -------------------------
 

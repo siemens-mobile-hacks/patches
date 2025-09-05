@@ -31013,7 +31013,7 @@
 		"E71v45/10833-speed_up_menu_scrolling_v1_1.vkp"
 	],
 	[
-		"E71v45/10834-UIFP_v1_2_2.vkp"
+		"E71v45/10834-UIFP_v1_3.vkp"
 	],
 	null,
 	[
@@ -32011,5 +32011,8 @@
 	],
 	[
 		"E71v45/11173-move_vibra_and_light_folder.vkp"
+	],
+	[
+		"E71v45/11174-dont_set_t_resources_when_t_applied.vkp"
 	]
 ]
