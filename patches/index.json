@@ -19435,6 +19435,16 @@
 				"ru": "Исправить Настройки онлайн",
 				"en": "Fix Online settings"
 			}
+		},
+		"11176": {
+			"id": 11176,
+			"model": "S75v52",
+			"file": "S75v52/11176-extended_calls_list_v6.vkp",
+			"mtime": 1757105764000,
+			"title": {
+				"ru": "Расширенный список вызовов",
+				"en": "Extended calls list"
+			}
 		}
 	},
 	"SL75v31": {
