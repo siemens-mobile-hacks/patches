@@ -1,0 +1,23 @@
+;E71v45
+;Расширенный список вызовов
+;Extended calls list
+;(c) FIL
+;(r) DJ
+;Version: 6
+;PatchID: 11175
+;Details: https://patches.kibab.com/patches/details.php5?id=11175
+/*
+Переключение осуществляется клавишами влево, вправо.
+Исправлены баги предыдущих версий.
+*/
+
+#pragma enable old_equal_ff
+; .OnKey_Hook
+1382B00: 70B5174B0D000400984702216A5E8368282A14D1134A934205D100210800124B9847012070BD114A934202D100210220F5E70F4A9342F4D100210120EFE7272A09D1084A9342F7D0084A9342E5D0084A9342E6D1EAE7074B290020009847E1E73D4E95A0F8CFC7A00125A8A0E4CFC7A0D0CFC7A07D05B2A0
+#pragma disable old_equal_ff
+
+; .OnKey_Jump
+0C7D024: 7D05B2A0 012B38A1
+
+;------------------------- end -------------------------
+

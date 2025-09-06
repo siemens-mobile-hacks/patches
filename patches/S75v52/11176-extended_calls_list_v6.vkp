@@ -1,0 +1,28 @@
+;S75v52
+;Расширенный список вызовов
+;Extended calls list
+;(c) FIL
+;(r) DJ
+;(p) Feyman
+;Version: 6
+;PatchID: 11176
+;Details: https://patches.kibab.com/patches/details.php5?id=11176
+/*
+Переключение осуществляется клавишами влево, вправо.
+Теперь не ломается вкладка пропущенных во "входящих"
+*/
+
+#pragma enable  old_equal_ff
+0076E70:  70B5174B0D000400984702216A5E8368
+0076E80:  282A14D1134A934205D100210800124B
+0076E90:  9847012070BD114A934202D100210220
+0076EA0:  F5E70F4A9342F4D100210120EFE7272A
+0076EB0:  09D1084A9342F7D0084A9342E5D0084A
+0076EC0:  9342E6D1EAE7074B290020009847E1E7
+0076ED0:  EDDF97A06CC28DA0D9935EA058C28DA0
+0076EE0:  44C28DA0C97561A0 
+#pragma disable old_equal_ff
+
+08DC298: C97561A0 0xA0076E71
+;------------------------- end -------------------------
+
