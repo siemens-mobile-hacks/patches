@@ -19318,8 +19318,8 @@
 		"10946": {
 			"id": 10946,
 			"model": "S75v52",
-			"file": "S75v52/10946-Enable_trans_themes_S75.vkp",
-			"mtime": 1729772200000,
+			"file": "S75v52/10946-e_translucency_in_themes_v1_2_1.vkp",
+			"mtime": 1757954814000,
 			"title": {
 				"ru": "Включить полупрозрачность в темах",
 				"en": "Enable translucency in themes"
