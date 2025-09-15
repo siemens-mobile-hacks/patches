@@ -19228,8 +19228,8 @@
 		"10845": {
 			"id": 10845,
 			"model": "S75v52",
-			"file": "S75v52/10845-change_dirs_of_theme_res_v1_1.vkp",
-			"mtime": 1717946734000,
+			"file": "S75v52/10845-change_dirs_of_theme_res_v1_2_1.vkp",
+			"mtime": 1757952538000,
 			"title": {
 				"ru": "Задать директорию ресурсов темы",
 				"en": "Set directory of theme resources"
