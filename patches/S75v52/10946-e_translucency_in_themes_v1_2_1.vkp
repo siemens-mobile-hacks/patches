@@ -1,0 +1,24 @@
+;S75v52
+;Включить полупрозрачность в темах
+;Enable translucency in themes
+;(c) FIL
+;(r) Виктор89
+;(p) Feyman
+;Version: 1.2.1
+;PatchID: 10946
+;Details: https://patches.kibab.com/patches/details.php5?id=10946
+/*
+Тема должна быть с полупрозрачностью и устанавливаться после патча
+*/
+
+; .PassThemeStructToHook
+05B1918: 0021 391C
+
+; .HookThemeImageLoading_Jump
+05B191C: AEF098EC DEF0E2FA
+
+; .HookThemeImageLoading
+068FEE4: 50706841455F5265735F52656D6F7665496E7374616C6C426173654F7065726174696F6E5F496E6974287061636B6167652D3E547970652D3E5479706549643A2025642C 0B6870B5050098880B4B1400984722000A4B0021060028009847041E0AD10F2E08D8B7231B02F340DB0703D5044B052128009847200070BD65175BA01C49D0A08449D2A0
+
+;------------------------- end -------------------------
+

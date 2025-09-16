@@ -4662,7 +4662,7 @@
 			}
 		},
 		"10076": {
-			"id": "10076",
+			"id": 10076,
 			"model": "EL71v45",
 			"file": "EL71v45/10076-library.vkp",
 			"mtime": 1292840336000,
@@ -10295,7 +10295,7 @@
 			}
 		},
 		"5624": {
-			"id": "5624",
+			"id": 5624,
 			"model": "S75v47",
 			"file": "S75v47/5624-S75sw47_Functions_Library_120812.vkp",
 			"additionalFile": "S75v47/5624-Functions_library_100410.zip",
@@ -15173,7 +15173,7 @@
 			}
 		},
 		"8285": {
-			"id": "8285",
+			"id": 8285,
 			"model": "S75v52",
 			"file": "S75v52/8285-swilib_v160624.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
@@ -19228,8 +19228,8 @@
 		"10845": {
 			"id": 10845,
 			"model": "S75v52",
-			"file": "S75v52/10845-change_dirs_of_theme_res_v1_1.vkp",
-			"mtime": 1717946734000,
+			"file": "S75v52/10845-change_dirs_of_theme_res_v1_2_1.vkp",
+			"mtime": 1757952538000,
 			"title": {
 				"ru": "Задать директорию ресурсов темы",
 				"en": "Set directory of theme resources"
@@ -19318,8 +19318,8 @@
 		"10946": {
 			"id": 10946,
 			"model": "S75v52",
-			"file": "S75v52/10946-Enable_trans_themes_S75.vkp",
-			"mtime": 1729772200000,
+			"file": "S75v52/10946-e_translucency_in_themes_v1_2_1.vkp",
+			"mtime": 1757954814000,
 			"title": {
 				"ru": "Включить полупрозрачность в темах",
 				"en": "Enable translucency in themes"
@@ -19444,6 +19444,16 @@
 			"title": {
 				"ru": "Расширенный список вызовов",
 				"en": "Extended calls list"
+			}
+		},
+		"11179": {
+			"id": 11179,
+			"model": "S75v52",
+			"file": "S75v52/11179-move_vibra_and_light_folder.vkp",
+			"mtime": 1757955546000,
+			"title": {
+				"ru": "Перенос папки 'Vibra&Light'",
+				"en": "Move 'Vibra&Light' folder"
 			}
 		}
 	},
@@ -21556,7 +21566,7 @@
 			}
 		},
 		"10522": {
-			"id": "10522",
+			"id": 10522,
 			"model": "SL75v47",
 			"file": "SL75v47/10522-Function_Library120603.vkp",
 			"additionalFile": "SL75v47/10522-Function_Library120603.rar",
@@ -21869,7 +21879,7 @@
 			}
 		},
 		"7634": {
-			"id": "7634",
+			"id": 7634,
 			"model": "SL75v52",
 			"file": "SL75v52/7634-Functions_library.vkp",
 			"mtime": 1200294382000,
@@ -25332,7 +25342,7 @@
 			}
 		},
 		"10542": {
-			"id": "10542",
+			"id": 10542,
 			"model": "CF75v23",
 			"file": "CF75v23/10542-SWILIB_141112.vkp",
 			"mtime": 1353342970000,
@@ -29299,7 +29309,7 @@
 			}
 		},
 		"6285": {
-			"id": "6285",
+			"id": 6285,
 			"model": "CX75v13",
 			"file": "CX75v13/6285-swilib.vkp",
 			"additionalFile": "CX75v13/6285-swilib.zip",
@@ -32091,7 +32101,7 @@
 			}
 		},
 		"4736": {
-			"id": "4736",
+			"id": 4736,
 			"model": "CX75v25",
 			"file": "CX75v25/4736-fl_swi.vkp",
 			"additionalFile": "CX75v25/4736-fl_swi.rar",
@@ -39607,7 +39617,7 @@
 			}
 		},
 		"4673": {
-			"id": "4673",
+			"id": 4673,
 			"model": "M75v25",
 			"file": "M75v25/4673-BigFunctionLibrary.vkp",
 			"mtime": 1176023636000,
@@ -44471,7 +44481,7 @@
 			}
 		},
 		"10518": {
-			"id": "10518",
+			"id": 10518,
 			"model": "C75v22",
 			"file": "C75v22/10518-swilib_c75_22_120628.vkp",
 			"mtime": 1340924442000,
@@ -46111,7 +46121,7 @@
 			}
 		},
 		"10516": {
-			"id": "10516",
+			"id": 10516,
 			"model": "C75v24",
 			"file": "C75v24/10516-SWI_C75_24_120628.vkp",
 			"mtime": 1340923204000,
@@ -55397,7 +55407,7 @@
 			}
 		},
 		"7545": {
-			"id": "7545",
+			"id": 7545,
 			"model": "S65v58",
 			"file": "S65v58/7545-Library.vkp",
 			"mtime": 1179819080000,
@@ -60223,7 +60233,7 @@
 			}
 		},
 		"10131": {
-			"id": "10131",
+			"id": 10131,
 			"model": "SL65v53",
 			"file": "SL65v53/10131-swilib_16_01_2011.vkp",
 			"mtime": 1299855222000,
@@ -61936,7 +61946,7 @@
 			}
 		},
 		"7546": {
-			"id": "7546",
+			"id": 7546,
 			"model": "SK65v50",
 			"file": "SK65v50/7546-library.vkp",
 			"additionalFile": "SK65v50/7546-library.zip",
@@ -67998,7 +68008,7 @@
 			}
 		},
 		"10625": {
-			"id": "10625",
+			"id": 10625,
 			"model": "CX70v56",
 			"file": "CX70v56/10625-swilib_v241024.vkp",
 			"mtime": 1729764078000,
@@ -87489,7 +87499,7 @@
 			}
 		},
 		"6954": {
-			"id": "6954",
+			"id": 6954,
 			"model": "C72v22",
 			"file": "C72v22/6954-Big_Function_Library.vkp",
 			"additionalFile": "C72v22/6954-Big_Function_Library.rar",
@@ -93542,7 +93552,7 @@
 			}
 		},
 		"10075": {
-			"id": "10075",
+			"id": 10075,
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib_v090725.vkp",
 			"mtime": 1752082864000,
@@ -98382,7 +98392,7 @@
 			}
 		},
 		"10629": {
-			"id": "10629",
+			"id": 10629,
 			"model": "C81v51",
 			"file": "C81v51/10629-swilib_c81v51_vkp.vkp",
 			"mtime": 1718886492000,
@@ -98681,6 +98691,16 @@
 			"title": {
 				"ru": "Изменить скорость анимации в Native Menu",
 				"en": "Change animation speed in Native Menu"
+			}
+		},
+		"11180": {
+			"id": 11180,
+			"model": "C81v51",
+			"file": "C81v51/11180-e_translucency_in_themes_v1_2_1.vkp",
+			"mtime": 1757961754000,
+			"title": {
+				"ru": "Включить полупрозрачность в темах",
+				"en": "Enable translucency in themes"
 			}
 		}
 	},
@@ -100171,7 +100191,7 @@
 			}
 		},
 		"10839": {
-			"id": "10839",
+			"id": 10839,
 			"model": "S68v52",
 			"file": "S68v52/10839-swilib.vkp",
 			"mtime": 1717526596000,
@@ -100469,7 +100489,7 @@
 			}
 		},
 		"10395": {
-			"id": "10395",
+			"id": 10395,
 			"model": "CL61v128",
 			"file": "CL61v128/10395-swilib_cl61v00_db128.vkp",
 			"additionalFile": "CL61v128/10395-swilib_cl61v00_db128.zip",

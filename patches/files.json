@@ -31045,7 +31045,7 @@
 		"S75v52/10844-using_elfs_screensavers_v2_1_1.vkp"
 	],
 	[
-		"S75v52/10845-change_dirs_of_theme_res_v1_1.vkp"
+		"S75v52/10845-change_dirs_of_theme_res_v1_2_1.vkp"
 	],
 	[
 		"S68v52/10846-change_dirs_of_theme_res_v1_1.vkp"
@@ -31349,7 +31349,7 @@
 		"CX70v56/10945-NMFP_v3_3_2.vkp"
 	],
 	[
-		"S75v52/10946-Enable_trans_themes_S75.vkp"
+		"S75v52/10946-e_translucency_in_themes_v1_2_1.vkp"
 	],
 	[
 		"M81v51/10947-Change_HWID_M81.vkp"
@@ -32020,5 +32020,13 @@
 	],
 	[
 		"S75v52/11176-extended_calls_list_v6.vkp"
+	],
+	null,
+	null,
+	[
+		"S75v52/11179-move_vibra_and_light_folder.vkp"
+	],
+	[
+		"C81v51/11180-e_translucency_in_themes_v1_2_1.vkp"
 	]
 ]
