@@ -19455,6 +19455,16 @@
 				"ru": "Перенос папки 'Vibra&Light'",
 				"en": "Move 'Vibra&Light' folder"
 			}
+		},
+		"11181": {
+			"id": 11181,
+			"model": "S75v52",
+			"file": "S75v52/11181-dont_lock_vibra.vkp",
+			"mtime": 1758007032000,
+			"title": {
+				"ru": "Не блокировать вибрацию при подключении аксессуаров",
+				"en": "Don't lock vibra when accessories are connected"
+			}
 		}
 	},
 	"SL75v31": {

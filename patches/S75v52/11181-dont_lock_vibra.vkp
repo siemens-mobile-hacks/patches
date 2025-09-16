@@ -1,0 +1,17 @@
+;S75v52
+;Не блокировать вибрацию при подключении аксессуаров
+;Don't lock vibra when accessories are connected
+;(c) FIL
+;(p) Виктор89
+;Version: 
+;PatchID: 11181
+;Details: https://patches.kibab.com/patches/details.php5?id=11181
+/*
+
+*/
+
+022F640: 1A10A0E3 0000A0E3
+022F644: F0029FE5 1EFF2FE1
+
+;------------------------- end -------------------------
+
