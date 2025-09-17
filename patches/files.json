@@ -31597,7 +31597,7 @@
 		"CF62v24/11033-New_menu_CF62_SW24_v4.zip"
 	],
 	[
-		"S75v52/11034-smart_launch_of_opwv_core__75.vkp"
+		"S75v52/11034-smart_launch_of_opwv_core_v1_1.vkp"
 	],
 	[
 		"E71v45/11035-Disable_DateTime.vkp"
@@ -32028,5 +32028,8 @@
 	],
 	[
 		"C81v51/11180-e_translucency_in_themes_v1_2_1.vkp"
+	],
+	[
+		"S75v52/11181-dont_lock_vibra.vkp"
 	]
 ]
