@@ -5550,7 +5550,7 @@
 			}
 		},
 		"1941": {
-			"id": 1941,
+			"id": "1941",
 			"model": "S75v22",
 			"file": "S75v22/1941-Extended_AT_CGSN_command_v2.vkp",
 			"mtime": 1140987600000,
