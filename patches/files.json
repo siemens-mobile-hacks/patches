@@ -32038,5 +32038,8 @@
 	null,
 	[
 		"CF75v23/11184-fix_lsk_on_idle.vkp"
+	],
+	[
+		"CF75v23/11185-fix_startup_animation_without_sim.vkp"
 	]
 ]

@@ -25530,6 +25530,16 @@
 				"ru": "Не менять левый софткей на ГЭ если нет сети",
 				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
+		},
+		"11185": {
+			"id": 11185,
+			"model": "CF75v23",
+			"file": "CF75v23/11185-fix_startup_animation_without_sim.vkp",
+			"mtime": 1759081980000,
+			"title": {
+				"ru": "Исправить анимацию при включении без SIM",
+				"en": "Fix a startup animation without SIM"
+			}
 		}
 	},
 	"CX75v5": {
