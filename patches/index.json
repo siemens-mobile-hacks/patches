@@ -25520,6 +25520,16 @@
 				"ru": "Отключить сеть",
 				"en": "Disable network"
 			}
+		},
+		"11184": {
+			"id": 11184,
+			"model": "CF75v23",
+			"file": "CF75v23/11184-fix_lsk_on_idle.vkp",
+			"mtime": 1759081650000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"CX75v5": {
