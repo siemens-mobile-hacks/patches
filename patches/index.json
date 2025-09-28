@@ -25354,11 +25354,11 @@
 		"10542": {
 			"id": "10542",
 			"model": "CF75v23",
-			"file": "CF75v23/10542-SWILIB_141112.vkp",
+			"file": "CF75v23/10542-swilib_v141112.vkp",
 			"mtime": 1353342970000,
 			"title": {
-				"ru": "Библиотека функций (SWILIB)",
-				"en": "Function Library (SWILIB)"
+				"ru": "Библиотека функций",
+				"en": "Function Library"
 			}
 		},
 		"10630": {
