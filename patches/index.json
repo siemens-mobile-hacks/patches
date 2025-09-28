@@ -25510,6 +25510,16 @@
 				"ru": "Не вырубаться при NativeMenu-Списки выз.-Время\\стоимость",
 				"en": "Revision Native Menu"
 			}
+		},
+		"11182": {
+			"id": 11182,
+			"model": "CF75v23",
+			"file": "CF75v23/11182-disable_network_v1_1.vkp",
+			"mtime": 1759078458000,
+			"title": {
+				"ru": "Отключить сеть",
+				"en": "Disable network"
+			}
 		}
 	},
 	"CX75v5": {

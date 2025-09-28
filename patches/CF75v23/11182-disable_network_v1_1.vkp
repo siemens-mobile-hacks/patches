@@ -1,0 +1,31 @@
+;CF75v23
+;Отключить сеть
+;Disable network
+;(c) FIL
+;(r) Azq2, Feyman
+;Version: 1.1
+;PatchID: 11182
+;Details: https://patches.kibab.com/patches/details.php5?id=11182
+/*
+Патч отключает поиск сети, если телефон был загружен без сим-карты.
+0xA0F60300 ; DisableNetwork
+0xA0F60350 ; EnableNetwork
+
+*/
+
+#pragma enable old_equal_ff
+; .DisableNetwork
+0F60300: 0030A0E313402DE918009FE518409FE50320A0E10710A0E300308DE534FF2FE108D08DE21080BDE85840000070A720A0
+
+; .EnableNetwork
+0F60350: 0030A0E313402DE918009FE518409FE50320A0E10810A0E300308DE534FF2FE108D08DE21080BDE85840000070A720A0
+
+; .AutoDisableNetwork
+01E0800: 10B5044B9847002801D1034B9847034B984710BD659A2BA00003F6A0A0217FA0
+#pragma disable old_equal_ff
+
+; .AutoDisableNetwork_Jump
+02A89E2: E6F1C6EF 37F70DFF
+
+;------------------------- end -------------------------
+
