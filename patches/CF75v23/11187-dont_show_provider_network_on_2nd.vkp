@@ -1,0 +1,14 @@
+;CF75v23
+;Не показывать провайдер и поиск сети на дополнительном экране
+;Do not show provider and network search message on secondary screen
+;(c) FIL
+;Version: 
+;PatchID: 11187
+;Details: https://patches.kibab.com/patches/details.php5?id=11187
+/*
+
+*/
+
+03476A2: 02 FF
+;------------------------- end -------------------------
+

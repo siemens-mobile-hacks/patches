@@ -32043,5 +32043,9 @@
 	],
 	[
 		"CF75v23/11185-fix_startup_animation_without_sim.vkp"
+	],
+	null,
+	[
+		"CF75v23/11187-dont_show_provider_network_on_2nd.vkp"
 	]
 ]
