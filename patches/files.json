@@ -32031,5 +32031,21 @@
 	],
 	[
 		"S75v52/11181-dont_lock_vibra.vkp"
+	],
+	[
+		"CF75v23/11182-disable_network_v1_1.vkp"
+	],
+	[
+		"CF75v23/11183-fix_network_icon.vkp"
+	],
+	[
+		"CF75v23/11184-fix_lsk_on_idle.vkp"
+	],
+	[
+		"CF75v23/11185-fix_startup_animation_without_sim.vkp"
+	],
+	null,
+	[
+		"CF75v23/11187-dont_show_provider_network_on_2nd.vkp"
 	]
 ]

@@ -1,0 +1,31 @@
+;CF75v23
+;Исправить иконку сети когда отключена сеть
+;Fix network icon when network is disabled
+;(c) FIL
+;Version: 
+;PatchID: 11183
+;Details: https://patches.kibab.com/patches/details.php5?id=11183
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cf75v23&f=fix_network_icon.zip
+
+/*
+
+*/
+
+#pragma enable old_equal_ff
+; .GetNetworkIcon
+01E0840: 044B10B51B78042B02D0034B984710BD0248FCE7F2474CA8B19C2AA06B030000
+#pragma disable old_equal_ff
+
+; .GetNetworkIcon_Jump
+02A970C: 00F0D0FA 37F798F8
+
+#pragma enable old_equal_ff
+; .GetNetworkIcon_2
+01E0860: 044B10B51B78042B02D0034B984710BD0248FCE7F2474CA8FB642DA06B030000
+#pragma disable old_equal_ff
+
+; .GetNetworkIcon_2_Jump
+02D5F1E: 00F0ECFA 0AF79FFC
+
+;------------------------- end -------------------------
+
