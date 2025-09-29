@@ -87,6 +87,7 @@ The patch has additional files, but it isn't accessible.
 | 10434 | C81v51 | [Запись телефонных разговоров<br>Call Recorder](https://patches.kibab.com/patches/details.php5?id=10434) |
 | 7223 | C81v51 | [Библиотека функций<br>Functions Library](https://patches.kibab.com/patches/details.php5?id=7223) |
 | 10258 | CF75v23 | [Загрузчик эльфов 3.0 Z.Vova, Ganster<br>ELFLoader 3.0 Z.Vova, Ganster](https://patches.kibab.com/patches/details.php5?id=10258) |
+| 11183 | CF75v23 | [Исправить иконку сети когда отключена сеть<br>Fix network icon when network is disabled](https://patches.kibab.com/patches/details.php5?id=11183) |
 | 10396 | CL61v128 | [Elfloader 2.3 Official<br>Elfloader 2.3 Official](https://patches.kibab.com/patches/details.php5?id=10396) |
 | 3737 | CX65v43 | [ZIPViewer<br>ZIPViewer](https://patches.kibab.com/patches/details.php5?id=3737) |
 | 3059 | SL45iv56 | [DLDR. Загрузчик демонов (READRESSED)<br>DLDR. Daemon loader (READRESSED)](https://patches.kibab.com/patches/details.php5?id=3059) |
