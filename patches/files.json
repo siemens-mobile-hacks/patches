@@ -32047,5 +32047,8 @@
 	null,
 	[
 		"CF75v23/11187-dont_show_provider_network_on_2nd.vkp"
+	],
+	[
+		"CF75v23/11188-disable_network_search_animation.vkp"
 	]
 ]

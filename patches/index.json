@@ -25560,6 +25560,16 @@
 				"ru": "Не показывать провайдер и поиск сети на дополнительном экране",
 				"en": "Do not show provider and network search message on secondary screen"
 			}
+		},
+		"11188": {
+			"id": 11188,
+			"model": "CF75v23",
+			"file": "CF75v23/11188-disable_network_search_animation.vkp",
+			"mtime": 1759228712000,
+			"title": {
+				"ru": "Отключить анимацию поиска сети",
+				"en": "Disable network search animation"
+			}
 		}
 	},
 	"CX75v5": {
