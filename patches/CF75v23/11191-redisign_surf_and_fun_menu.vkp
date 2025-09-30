@@ -1,0 +1,22 @@
+;CF75v23
+;Переработка меню 'Интерн./игр'
+;Redesign 'Surf & fun' menu
+;(c) FIL
+;Version: 
+;PatchID: 11191
+;Details: https://patches.kibab.com/patches/details.php5?id=11191
+/*
+1. Изменен текст заголовка.
+2. Удален пункт "Games & more".
+3. Удален пункт "Applications".
+4. Переименован пункт "Internet".
+*/
+
+04AA654: 4A05 6705
+04AA670: 7805 6705
+04AA634: 7301 F001
+04AA6CC: 9A19 5D05
+049CF34: 7301 F001
+
+;------------------------- end -------------------------
+
