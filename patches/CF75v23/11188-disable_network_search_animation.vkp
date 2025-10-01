@@ -1,0 +1,15 @@
+;CF75v23
+;Отключить анимацию поиска сети
+;Disable network search animation
+;(c) FIL
+;Version: 
+;PatchID: 11188
+;Details: https://patches.kibab.com/patches/details.php5?id=11188
+/*
+
+*/
+
+02D557E: 80B5 0020
+02D5580: 0023 7047
+;------------------------- end -------------------------
+

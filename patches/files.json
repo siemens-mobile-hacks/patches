@@ -32047,5 +32047,15 @@
 	null,
 	[
 		"CF75v23/11187-dont_show_provider_network_on_2nd.vkp"
+	],
+	[
+		"CF75v23/11188-disable_network_search_animation.vkp"
+	],
+	null,
+	[
+		"CF75v23/11190-open_disk_sel_menu_in_ce_by_hotkey.vkp"
+	],
+	[
+		"CF75v23/11191-redisign_surf_and_fun_menu.vkp"
 	]
 ]

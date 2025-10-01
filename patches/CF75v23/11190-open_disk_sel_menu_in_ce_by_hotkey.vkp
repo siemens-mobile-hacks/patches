@@ -1,0 +1,21 @@
+;CF75v23
+;Открыть меню выбора диска по горячей клавише в Card-Explorer
+;Open disk selection menu in Card-Explorer by hotkey
+;(c) FIL
+;Version: 
+;PatchID: 11190
+;Details: https://patches.kibab.com/patches/details.php5?id=11190
+/*
+Меню открывается по зеленой кнопке.
+*/
+
+#pragma enable old_equal_ff
+; .OpenDisksMenu
+01E096A: 00004B6810B55B6804000B2B03D1436B9868024B9847024B2000984710BDA43B35A0253578A0
+#pragma disable old_equal_ff
+
+; .OpenDisksMenu_Jump
+03568F0: 0BB310FA 1D28FAFA
+
+;------------------------- end -------------------------
+
