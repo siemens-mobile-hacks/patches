@@ -25600,6 +25600,16 @@
 				"ru": "Исправить позицию активного элемента в Native Menu",
 				"en": "Fix the active item position in Native Menu"
 			}
+		},
+		"11194": {
+			"id": 11194,
+			"model": "CF75v23",
+			"file": "CF75v23/11194-add_icons_to_header_in_nm_v1_2_2.vkp",
+			"mtime": 1759776206000,
+			"title": {
+				"ru": "Добавить иконки в заголовок Native Menu",
+				"en": "Add icons to header in Native Menu"
+			}
 		}
 	},
 	"CX75v5": {
