@@ -1,0 +1,14 @@
+;CF75v23
+;Исправить позицию активного элемента в Native Menu 
+;Fix the active item position in Native Menu
+;(c) FIL
+;Version: 
+;PatchID: 11193
+;Details: https://patches.kibab.com/patches/details.php5?id=11193
+/*
+
+*/
+
+08EB9E4: 00 FF
+;------------------------- end -------------------------
+
