@@ -3,7 +3,7 @@
 ;Function Library
 ;(c) "Smelter" © avkiev
 ;(r) Dimadze, m.ksy, Виктор89
-;Version: 141112
+;Version: 071025
 ;PatchID: 10542
 ;Details: https://patches.kibab.com/patches/details.php5?id=10542
 /*
@@ -797,7 +797,7 @@
 ;B80:              ; 2E0: IMGHDR *GetIMGHDRFromThemeCache(int index)
 0B84: 0xA02A0C6C   ; 2E1: int GetExtUidByFileName_ws(WSHDR *path)
 0B88: 0xA077704F   ; 2E2: int wstrcmp(WSHDR *ws1, WSHDR *ws2)
-;B8C:              ; 2E3: int fexists(WSHDR* FileName)
+0B8C: 0xA02E9550   ; 2E3: int fexists(WSHDR* FileName)
 ;B90:              ; 2E4: int SettingsAE_Update_ws(WSHDR *,int set,char * entry,char *keyword)
 ;B94:              ; 2E5: int SettingsAE_Read_ws(WSHDR *,int set,char * entry,char *keyword)
 ;B98:              ; 2E6: int SettingsAE_SetFlag(int val,int set,char * entry,char *keyword)
@@ -959,7 +959,7 @@
 0E2C: 0xA84C0428   ; 38B:  char *RamLastStoreString();
 0E30: 0xA07B051F   ; 38C:  void SetPropTo_obj0x0F(DRWOBJ *obj, RECT *rect, int r2, int r3, int _sp, int _sp_4, int _sp_8);
 0E34: 0xA08E54CD   ; 38D:  void SetPropTo_obj0x15
-0E38: 0xA084615B   ; 38E:  void SetPropTo_obj0x13
+0E38: 0xA020ADB4   ; 38E: __arm void CreateICL(PGROUP *pg);
 
 #pragma disable old_equal_ff
 +0
