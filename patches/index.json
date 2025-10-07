@@ -25591,6 +25591,16 @@
 				"en": "Redesign 'Surf & fun' menu"
 			}
 		},
+		"11192": {
+			"id": 11192,
+			"model": "CF75v23",
+			"file": "CF75v23/11192-fix_icon_display_in_nm_v1_0_1.vkp",
+			"mtime": 1759867102000,
+			"title": {
+				"ru": "Исправить отображение иконок в Native Menu",
+				"en": "Fix icon display in Native Menu"
+			}
+		},
 		"11193": {
 			"id": 11193,
 			"model": "CF75v23",

@@ -1,0 +1,28 @@
+;CF75v23
+;Исправить отображение иконок в Native Menu
+;Fix icon display in Native Menu
+;(c) FIL
+;(r) green
+;Version: 1.0.1
+;PatchID: 11192
+;Details: https://patches.kibab.com/patches/details.php5?id=11192
+/*
+Патч исправляет позицию элементов в Native Menu и убирает белый фон у иконок.
+Считаю этот патч самым правильным на 2025-ый год :-)
+*/
+
+049D098: 7F 80
+
+049D09C: 17 1C
+049D09E: 1E 28
+049D0A0: 26 1C
+049D0A2: 34 28
+049D0A4: 01 01
+049D0A6: 01 00
+049D0A8: 01 05
+049D0AA: 08 00
+
+049D08C: 00 FF ; disable items bg
+
+;------------------------- end -------------------------
+
