@@ -25630,6 +25630,16 @@
 				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
 				"en": "Use extra header font only from 'Definition'"
 			}
+		},
+		"11196": {
+			"id": 11196,
+			"model": "CF75v23",
+			"file": "CF75v23/11196-change_animation_speed_in_nm.vkp",
+			"mtime": 1759867718000,
+			"title": {
+				"ru": "Изменить скорость анимации в Native Menu",
+				"en": "Change animation speed in Native Menu"
+			}
 		}
 	},
 	"CX75v5": {
