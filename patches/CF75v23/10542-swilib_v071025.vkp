@@ -136,8 +136,8 @@
 01C8: 0xA0511F1B   ;  72: __thumb SetCurrentSecondOfCall
 01CC: 0xA0A373C7   ;  73: __thumb int GetTypeOfCall(int type)
 01D0: 0xA032F767   ;  74: __thumb void* GetFunctionPointer(char * _shortcut)
-01D4: 0xA07B48D5   ;  75: __thumb void  StoreXYWHtoRECT_2(void *RECT,int x,int y,int w,int h)
-01D8: 0xA084A079   ;  76: __thumb SetWindowText
+01D4: 0xA02CE849   ;  75: int IsCanvasBufferSet(char CanvasID);
+01D8: 0xA02CE895   ;  76: IMGHDR *GetCanvasBufferPicPtr(char CanvasID);
 01DC: 0xA0847857   ;  77: __thumb set2color_byPaletteAdr
 01E0: 0xA07912C9   ;  78: __thumb GetTimeFormat
 01E4: 0xA07B3BFF   ;  79: __thumb void  DrawObject_2(DRWOBJ *)
