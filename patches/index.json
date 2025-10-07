@@ -25640,6 +25640,16 @@
 				"ru": "Изменить скорость анимации в Native Menu",
 				"en": "Change animation speed in Native Menu"
 			}
+		},
+		"11197": {
+			"id": 11197,
+			"model": "CF75v23",
+			"file": "CF75v23/11197-speed_up_overlay_load_on_startup.vkp",
+			"mtime": 1759874764000,
+			"title": {
+				"ru": "Ускорить загрузку overlay info при старте телефона",
+				"en": "Speed up overlay info load on startup"
+			}
 		}
 	},
 	"CX75v5": {
