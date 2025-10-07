@@ -25610,6 +25610,16 @@
 				"ru": "Добавить иконки в заголовок Native Menu",
 				"en": "Add icons to header in Native Menu"
 			}
+		},
+		"11195": {
+			"id": 11195,
+			"model": "CF75v23",
+			"file": "CF75v23/11195-use_e_header_font_from_definition.vkp",
+			"mtime": 1759858268000,
+			"title": {
+				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
+				"en": "Use extra header font only from 'Definition'"
+			}
 		}
 	},
 	"CX75v5": {

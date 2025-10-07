@@ -1,0 +1,15 @@
+;CF75v23
+;Использовать шрифт дополнительного заголовка только из 'Definition'
+;Use extra header font only from 'Definition'
+;(c) FIL
+;Version: 
+;PatchID: 11195
+;Details: https://patches.kibab.com/patches/details.php5?id=11195
+/*
+Патч нужен для более унифицированного интерфейса.
+*/
+
+07BE534: 80B5 7047
+
+;------------------------- end -------------------------
+
