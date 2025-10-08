@@ -25601,16 +25601,6 @@
 				"en": "Fix icon display in Native Menu"
 			}
 		},
-		"11193": {
-			"id": 11193,
-			"model": "CF75v23",
-			"file": "CF75v23/11193-fix_active_item_position_in_nm.vkp",
-			"mtime": 1759774164000,
-			"title": {
-				"ru": "Исправить позицию активного элемента в Native Menu",
-				"en": "Fix the active item position in Native Menu"
-			}
-		},
 		"11194": {
 			"id": 11194,
 			"model": "CF75v23",
