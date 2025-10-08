@@ -25661,6 +25661,16 @@
 				"en": "Set CSM for Native Menu"
 			}
 		},
+		"11200": {
+			"id": 11200,
+			"model": "CF75v23",
+			"file": "CF75v23/11200-fix_navigation_in_tile_view_v1_1_1.vkp",
+			"mtime": 1759919190000,
+			"title": {
+				"ru": "Исправить навигацию в плиточном режиме",
+				"en": "Fix navigation in tile view"
+			}
+		},
 		"11201": {
 			"id": 11201,
 			"model": "CF75v23",
