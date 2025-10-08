@@ -32057,5 +32057,23 @@
 	],
 	[
 		"CF75v23/11191-redisign_surf_and_fun_menu.vkp"
+	],
+	[
+		"CF75v23/11192-fix_icon_display_in_nm_v1_0_1.vkp"
+	],
+	[
+		"CF75v23/11193-fix_active_item_position_in_nm.vkp"
+	],
+	[
+		"CF75v23/11194-add_icons_to_header_in_nm_v1_2_2.vkp"
+	],
+	[
+		"CF75v23/11195-use_e_header_font_from_definition.vkp"
+	],
+	[
+		"CF75v23/11196-change_animation_speed_in_nm.vkp"
+	],
+	[
+		"CF75v23/11197-speed_up_overlay_load_on_startup.vkp"
 	]
 ]

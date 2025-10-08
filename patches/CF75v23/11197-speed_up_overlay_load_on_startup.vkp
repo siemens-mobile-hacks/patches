@@ -1,0 +1,15 @@
+;CF75v23
+;Ускорить загрузку overlay info при старте телефона
+;Speed up overlay info load on startup
+;(c) FIL
+;Version: 
+;PatchID: 11197
+;Details: https://patches.kibab.com/patches/details.php5?id=11197
+/*
+
+*/
+
+02A87C4: AB48 AA20
+
+;------------------------- end -------------------------
+
