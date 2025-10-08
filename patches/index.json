@@ -25650,6 +25650,16 @@
 				"ru": "Ускорить загрузку overlay info при старте телефона",
 				"en": "Speed up overlay info load on startup"
 			}
+		},
+		"11201": {
+			"id": 11201,
+			"model": "CF75v23",
+			"file": "CF75v23/11201-remove_camera_from_extras.vkp",
+			"mtime": 1759919696000,
+			"title": {
+				"ru": "Убрать пункт 'Камера' из меню 'Еще'",
+				"en": "Remove 'Camera' item from 'Extras' menu"
+			}
 		}
 	},
 	"CX75v5": {
