@@ -25700,6 +25700,16 @@
 				"ru": "Draw Hook",
 				"en": "Draw Hook"
 			}
+		},
+		"11204": {
+			"id": 11204,
+			"model": "CF75v23",
+			"file": "CF75v23/11204-change_animation_frames_in_nm.vkp",
+			"mtime": 1759922104000,
+			"title": {
+				"ru": "Изменить кадры анимации в Native Menu",
+				"en": "Change animation frames in Native Menu"
+			}
 		}
 	},
 	"CX75v5": {
