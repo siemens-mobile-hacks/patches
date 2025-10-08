@@ -25680,6 +25680,16 @@
 				"ru": "Убрать пункт 'Камера' из меню 'Еще'",
 				"en": "Remove 'Camera' item from 'Extras' menu"
 			}
+		},
+		"11202": {
+			"id": 11202,
+			"model": "CF75v23",
+			"file": "CF75v23/11202-NMFP_v3_4.vkp",
+			"mtime": 1759920992000,
+			"title": {
+				"ru": "Пакет исправлений Native Menu",
+				"en": "Native Menu Fix Pack"
+			}
 		}
 	},
 	"CX75v5": {

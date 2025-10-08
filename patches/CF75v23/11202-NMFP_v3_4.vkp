@@ -1,0 +1,102 @@
+;CF75v23
+;Пакет исправлений Native Menu
+;Native Menu Fix Pack
+;(c) FIL, SiNgle, Bennie
+;Version: 3.4
+;PatchID: 11202
+;Details: https://patches.kibab.com/patches/details.php5?id=11202
+/*
+
+*/
+
+;№1
+;Добавить иконки в заголовок Native Menu
+;Add icons to header in Native Menu
+;(c) FIL
+;Version: 1.2.2
+;PatchID: 11194
+;Details: https://patches.kibab.com/patches/details.php5?id=11194
+
+; .NativeMenu_OnCreate
+0811098: 5377756F746143705F5072765F43736D4C656176653A2046726565204D656D6F72792C2052656C656173652048616E64 70B5084B040008200D0016009847064B320029000360002343602061034B2000984770BD243C20A06F03000041A87BA0
+
+; .NativeMenu_OnCreate_Jump
+08EBA08: CEF61AFF 25F746FB
+
+; .NativeMenu_OnChange
+0756E2C: 53656443726561746553657373696F6E436F6E74616374733A20506F635F53657373696F6E5061727469636970616E744C6973744765745061727469636970616E744174282575293A20506F4320737461747573203D202569 0B4B70B5040098470A4BA2689A420ED1A26A094B2569D35C084A20009B182B60074B9847074C084B084A2900A04770BDC9B38EA074D049A0786E75A0BD020000AD2A78A0E3E67BA08C3C20A0243C20A0C0C6ECB8B2014541CA
+
+; .NativeMenu_OnChange_Jump
+08EB66A: FFF7ADFE 6BF6DFFB
+
+; .NativeMenu_OnClose
+081C218: 656E7465722053796E634D4C5F4163744663745F526573706F6E73655F46726F6D554928 70B5064B040000690D0098470023290023612000024B984770BDC0468C3C20A01B2E78A0
+
+; .NativeMenu_OnClose_Jump
+08EBA48: 97F6E7F9 30F7E6FB
+
+;№2
+;Native Menu вместо главного меню
+;Native Menu instead of MainMenu
+;(c) SiNgle
+;(r) Bennie
+;(p) bertgrin
+;Version: 2.2
+;PatchID: 10081
+;Details: https://patches.kibab.com/patches/details.php5?id=10081
+
+04A4E7C: 0xA032F1AB 0xA0339F7F ; CKLK_CK_MAIN_MNU: центр джойстика
+04A54FC: 0xA032F1AB 0xA0339F7F ; ELSE_MMENU_OPEN: для DSE
+
+02B87F8: 434B4C4B5F434B5F4D41494E4D4E55 434E43545F425553494E4553534344
+02B8808: 454C53455F4D4D454E555F4F50454E 434E43545F425553494E4553534344
+
+049CF28: 6F2A2CA0 0xA032E78F ; NativeMenu-Списки вызов.-Время\стоим.
+
+;№3
+;Убрать пункт 'Камера' из меню 'Еще'
+;Remove 'Camera' item from 'Extras' menu
+;(c) FIL
+;Version: 
+;PatchID: 11201
+;Details: https://patches.kibab.com/patches/details.php5?id=11201
+
+049CEC8: 7805 6705
+
+;№4
+;Задать CSM для Native Menu
+;Set CSM for Native Menu
+;(c) FIL
+;Version: 
+;PatchID: 11199
+;Details: https://patches.kibab.com/patches/details.php5?id=11199
+
+02C2B3C: 4FD0 C046
+02C2BD8: CDF1 0021
+02C2BDA: 62EBFEBD 33F3A2E8
+02C2BDE: 0020 FEBD
+02C2C04: E3F721F9 C046C046
+
+;№5
+;Исправить отображение иконок в Native Menu
+;Fix icon display in Native Menu
+;(c) FIL
+;(r) green
+;Version: 1.0.1
+;PatchID: 11192
+;Details: https://patches.kibab.com/patches/details.php5?id=11192
+
+049D098: 7F 80
+
+049D09C: 17 1C
+049D09E: 1E 28
+049D0A0: 26 1C
+049D0A2: 34 28
+049D0A4: 01 01
+049D0A6: 01 00
+049D0A8: 01 05
+049D0AA: 08 00
+
+049D08C: 00 FF ; disable items bg
+;------------------------- end -------------------------
+
