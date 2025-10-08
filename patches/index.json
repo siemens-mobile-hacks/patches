@@ -25651,6 +25651,16 @@
 				"en": "Speed up overlay info load on startup"
 			}
 		},
+		"11199": {
+			"id": 11199,
+			"model": "CF75v23",
+			"file": "CF75v23/11199-set_csm_for_nm.vkp",
+			"mtime": 1759917596000,
+			"title": {
+				"ru": "Задать CSM для Native Menu",
+				"en": "Set CSM for Native Menu"
+			}
+		},
 		"11201": {
 			"id": 11201,
 			"model": "CF75v23",
