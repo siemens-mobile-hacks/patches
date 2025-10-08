@@ -25641,6 +25641,16 @@
 				"en": "Speed up overlay info load on startup"
 			}
 		},
+		"11198": {
+			"id": 11198,
+			"model": "CF75v23",
+			"file": "CF75v23/11198-memory_resizer_v2.vkp",
+			"mtime": 1759916658000,
+			"title": {
+				"ru": "Memory resizer",
+				"en": "Memory resizer"
+			}
+		},
 		"11199": {
 			"id": 11199,
 			"model": "CF75v23",

@@ -32074,7 +32074,9 @@
 	[
 		"CF75v23/11197-speed_up_overlay_load_on_startup.vkp"
 	],
-	null,
+	[
+		"CF75v23/11198-memory_resizer_v2.vkp"
+	],
 	[
 		"CF75v23/11199-set_csm_for_nm.vkp"
 	],
