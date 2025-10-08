@@ -25690,6 +25690,16 @@
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
 			}
+		},
+		"11203": {
+			"id": 11203,
+			"model": "CF75v23",
+			"file": "CF75v23/11203-draw_hook_v1_9.vkp",
+			"mtime": 1759921762000,
+			"title": {
+				"ru": "Draw Hook",
+				"en": "Draw Hook"
+			}
 		}
 	},
 	"CX75v5": {
