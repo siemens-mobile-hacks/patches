@@ -25710,6 +25710,16 @@
 				"ru": "Изменить кадры анимации в Native Menu",
 				"en": "Change animation frames in Native Menu"
 			}
+		},
+		"11205": {
+			"id": 11205,
+			"model": "CF75v23",
+			"file": "CF75v23/11205-message_if_browser_cound_t_start.vkp",
+			"mtime": 1760021908000,
+			"title": {
+				"ru": "Отображать сообщение об ошибке если не удалось запустить браузер",
+				"en": "Show an error message if browser couldn't start"
+			}
 		}
 	},
 	"CX75v5": {
