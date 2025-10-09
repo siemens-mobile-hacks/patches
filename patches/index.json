@@ -4662,7 +4662,7 @@
 			}
 		},
 		"10076": {
-			"id": "10076",
+			"id": 10076,
 			"model": "EL71v45",
 			"file": "EL71v45/10076-library.vkp",
 			"mtime": 1292840336000,
@@ -10295,7 +10295,7 @@
 			}
 		},
 		"5624": {
-			"id": "5624",
+			"id": 5624,
 			"model": "S75v47",
 			"file": "S75v47/5624-S75sw47_Functions_Library_120812.vkp",
 			"additionalFile": "S75v47/5624-Functions_library_100410.zip",
@@ -15173,7 +15173,7 @@
 			}
 		},
 		"8285": {
-			"id": "8285",
+			"id": 8285,
 			"model": "S75v52",
 			"file": "S75v52/8285-swilib_v160624.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
@@ -21576,7 +21576,7 @@
 			}
 		},
 		"10522": {
-			"id": "10522",
+			"id": 10522,
 			"model": "SL75v47",
 			"file": "SL75v47/10522-Function_Library120603.vkp",
 			"additionalFile": "SL75v47/10522-Function_Library120603.rar",
@@ -21889,7 +21889,7 @@
 			}
 		},
 		"7634": {
-			"id": "7634",
+			"id": 7634,
 			"model": "SL75v52",
 			"file": "SL75v52/7634-Functions_library.vkp",
 			"mtime": 1200294382000,
@@ -24435,7 +24435,7 @@
 			"id": 4851,
 			"model": "CF75v23",
 			"file": "CF75v23/4851-Smooth_scrolling_of_long_names_.vkp",
-			"mtime": 1156694554000,
+			"mtime": 1759925048000,
 			"title": {
 				"ru": "Плавный скроллинг длинных названий и имен",
 				"en": "Smooth scrolling of long names"
@@ -25352,7 +25352,7 @@
 			}
 		},
 		"10542": {
-			"id": "10542",
+			"id": 10542,
 			"model": "CF75v23",
 			"file": "CF75v23/10542-swilib_v071025.vkp",
 			"mtime": 1759860710000,
@@ -25465,7 +25465,7 @@
 			"id": 11121,
 			"model": "CF75v23",
 			"file": "CF75v23/11121-cf75v23_smooth_scroll_of_long_heade.vkp",
-			"mtime": 1746305878000,
+			"mtime": 1759925032000,
 			"title": {
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
@@ -25639,6 +25639,56 @@
 			"title": {
 				"ru": "Ускорить загрузку overlay info при старте телефона",
 				"en": "Speed up overlay info load on startup"
+			}
+		},
+		"11198": {
+			"id": 11198,
+			"model": "CF75v23",
+			"file": "CF75v23/11198-memory_resizer_v2.vkp",
+			"mtime": 1759916658000,
+			"title": {
+				"ru": "Memory resizer",
+				"en": "Memory resizer"
+			}
+		},
+		"11200": {
+			"id": 11200,
+			"model": "CF75v23",
+			"file": "CF75v23/11200-fix_navigation_in_tile_view_v1_1_1.vkp",
+			"mtime": 1759919190000,
+			"title": {
+				"ru": "Исправить навигацию в плиточном режиме",
+				"en": "Fix navigation in tile view"
+			}
+		},
+		"11202": {
+			"id": 11202,
+			"model": "CF75v23",
+			"file": "CF75v23/11202-NMFP_v3_4.vkp",
+			"mtime": 1759920992000,
+			"title": {
+				"ru": "Пакет исправлений Native Menu",
+				"en": "Native Menu Fix Pack"
+			}
+		},
+		"11203": {
+			"id": 11203,
+			"model": "CF75v23",
+			"file": "CF75v23/11203-draw_hook_v1_9.vkp",
+			"mtime": 1759921762000,
+			"title": {
+				"ru": "Draw Hook",
+				"en": "Draw Hook"
+			}
+		},
+		"11204": {
+			"id": 11204,
+			"model": "CF75v23",
+			"file": "CF75v23/11204-change_animation_frames_in_nm.vkp",
+			"mtime": 1759922104000,
+			"title": {
+				"ru": "Изменить кадры анимации в Native Menu",
+				"en": "Change animation frames in Native Menu"
 			}
 		}
 	},
@@ -29449,7 +29499,7 @@
 			}
 		},
 		"6285": {
-			"id": "6285",
+			"id": 6285,
 			"model": "CX75v13",
 			"file": "CX75v13/6285-swilib.vkp",
 			"additionalFile": "CX75v13/6285-swilib.zip",
@@ -32241,7 +32291,7 @@
 			}
 		},
 		"4736": {
-			"id": "4736",
+			"id": 4736,
 			"model": "CX75v25",
 			"file": "CX75v25/4736-fl_swi.vkp",
 			"additionalFile": "CX75v25/4736-fl_swi.rar",
@@ -39757,7 +39807,7 @@
 			}
 		},
 		"4673": {
-			"id": "4673",
+			"id": 4673,
 			"model": "M75v25",
 			"file": "M75v25/4673-BigFunctionLibrary.vkp",
 			"mtime": 1176023636000,
@@ -44621,7 +44671,7 @@
 			}
 		},
 		"10518": {
-			"id": "10518",
+			"id": 10518,
 			"model": "C75v22",
 			"file": "C75v22/10518-swilib_c75_22_120628.vkp",
 			"mtime": 1340924442000,
@@ -46261,7 +46311,7 @@
 			}
 		},
 		"10516": {
-			"id": "10516",
+			"id": 10516,
 			"model": "C75v24",
 			"file": "C75v24/10516-SWI_C75_24_120628.vkp",
 			"mtime": 1340923204000,
@@ -55547,7 +55597,7 @@
 			}
 		},
 		"7545": {
-			"id": "7545",
+			"id": 7545,
 			"model": "S65v58",
 			"file": "S65v58/7545-Library.vkp",
 			"mtime": 1179819080000,
@@ -60373,7 +60423,7 @@
 			}
 		},
 		"10131": {
-			"id": "10131",
+			"id": 10131,
 			"model": "SL65v53",
 			"file": "SL65v53/10131-swilib_16_01_2011.vkp",
 			"mtime": 1299855222000,
@@ -62086,7 +62136,7 @@
 			}
 		},
 		"7546": {
-			"id": "7546",
+			"id": 7546,
 			"model": "SK65v50",
 			"file": "SK65v50/7546-library.vkp",
 			"additionalFile": "SK65v50/7546-library.zip",
@@ -68148,7 +68198,7 @@
 			}
 		},
 		"10625": {
-			"id": "10625",
+			"id": 10625,
 			"model": "CX70v56",
 			"file": "CX70v56/10625-swilib_v241024.vkp",
 			"mtime": 1729764078000,
@@ -87639,7 +87689,7 @@
 			}
 		},
 		"6954": {
-			"id": "6954",
+			"id": 6954,
 			"model": "C72v22",
 			"file": "C72v22/6954-Big_Function_Library.vkp",
 			"additionalFile": "C72v22/6954-Big_Function_Library.rar",
@@ -93692,7 +93742,7 @@
 			}
 		},
 		"10075": {
-			"id": "10075",
+			"id": 10075,
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib_v090725.vkp",
 			"mtime": 1752082864000,
@@ -98532,7 +98582,7 @@
 			}
 		},
 		"10629": {
-			"id": "10629",
+			"id": 10629,
 			"model": "C81v51",
 			"file": "C81v51/10629-swilib_c81v51_vkp.vkp",
 			"mtime": 1718886492000,
@@ -100331,7 +100381,7 @@
 			}
 		},
 		"10839": {
-			"id": "10839",
+			"id": 10839,
 			"model": "S68v52",
 			"file": "S68v52/10839-swilib.vkp",
 			"mtime": 1717526596000,
@@ -100629,7 +100679,7 @@
 			}
 		},
 		"10395": {
-			"id": "10395",
+			"id": 10395,
 			"model": "CL61v128",
 			"file": "CL61v128/10395-swilib_cl61v00_db128.vkp",
 			"additionalFile": "CL61v128/10395-swilib_cl61v00_db128.zip",

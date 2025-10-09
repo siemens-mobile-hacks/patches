@@ -10,6 +10,6 @@
 */
 
 049C0A8: D007 1202 ; delay before start
-049C0AC: 2C01 2A00 ; scrolling speed
+049C0AC: 2C01 6000 ; scrolling speed
 ;------------------------- end -------------------------
 

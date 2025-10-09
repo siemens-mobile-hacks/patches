@@ -32073,5 +32073,22 @@
 	],
 	[
 		"CF75v23/11197-speed_up_overlay_load_on_startup.vkp"
+	],
+	[
+		"CF75v23/11198-memory_resizer_v2.vkp"
+	],
+	null,
+	[
+		"CF75v23/11200-fix_navigation_in_tile_view_v1_1_1.vkp"
+	],
+	null,
+	[
+		"CF75v23/11202-NMFP_v3_4.vkp"
+	],
+	[
+		"CF75v23/11203-draw_hook_v1_9.vkp"
+	],
+	[
+		"CF75v23/11204-change_animation_frames_in_nm.vkp"
 	]
 ]

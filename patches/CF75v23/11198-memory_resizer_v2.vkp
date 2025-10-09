@@ -1,0 +1,22 @@
+;CF75v23
+;Memory resizer
+;Memory resizer
+;(c) Zhek@, ~Jhellico, Zeus
+;(r) Rst7
+;(p) Виктор89, FIL
+;Version: 2
+;PatchID: 11198
+;Details: https://patches.kibab.com/patches/details.php5?id=11198
+/*
+Патч увеличивает кол-во свободной оперативной памяти до ~3Мб.
+После установки ява работать не будет
+*/
+
+0903FBC: 4008 4D08 ; increase non-permanent 0xD0000
+0903FC4: E80A E20A ; cut 0x6000 from permanent
+009BDB0: 0x177000 0x000000 ; disable java heap
+07ACF70: 1DF2D2E9 C046C046 ; disable java
+07ACF58: 1DF2DEE9 C046C046; disable browser
+
+;------------------------- end -------------------------
+
