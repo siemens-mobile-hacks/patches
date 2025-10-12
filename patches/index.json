@@ -25720,6 +25720,16 @@
 				"ru": "Отображать сообщение об ошибке если не удалось запустить браузер",
 				"en": "Show an error message if browser couldn't start"
 			}
+		},
+		"11206": {
+			"id": 11206,
+			"model": "CF75v23",
+			"file": "CF75v23/11206-d_msg_instead_of_starting_java.vkp",
+			"mtime": 1760268188000,
+			"title": {
+				"ru": "Отображать сообщение вместо запуска Java приложения когда Java машина отключена",
+				"en": "Display a message instead of starting a Java application if Java is disabled"
+			}
 		}
 	},
 	"CX75v5": {
