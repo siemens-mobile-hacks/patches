@@ -25730,6 +25730,16 @@
 				"ru": "Отображать сообщение вместо запуска Java приложения когда Java машина отключена",
 				"en": "Display a message instead of starting a Java application if Java is disabled"
 			}
+		},
+		"11207": {
+			"id": 11207,
+			"model": "CF75v23",
+			"file": "CF75v23/11207-remove_pro_slide_from_setup_menu.vkp",
+			"mtime": 1760270736000,
+			"title": {
+				"ru": "Убрать пункт 'ProSlide' из меню 'Настройки'",
+				"en": "Remove 'ProSlide' item from 'Setup' menu"
+			}
 		}
 	},
 	"CX75v5": {
