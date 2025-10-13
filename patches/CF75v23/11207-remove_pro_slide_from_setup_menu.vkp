@@ -1,0 +1,14 @@
+;CF75v23
+;Убрать пункт 'ProSlide' из меню 'Настройки'
+;Remove 'ProSlide' item from 'Setup' menu
+;(c) FIL
+;Version: 
+;PatchID: 11207
+;Details: https://patches.kibab.com/patches/details.php5?id=11207
+/*
+
+*/
+
+04AA5BC: 7805 6705
+;------------------------- end -------------------------
+
