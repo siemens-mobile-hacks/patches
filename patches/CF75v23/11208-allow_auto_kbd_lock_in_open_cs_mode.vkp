@@ -1,0 +1,14 @@
+;CF75v23
+;Разрешить автоматическую блокировку клавиатуры в режиме открытой раскладушки
+;Allow automatic keyboard lock in open clamshell mode
+;(c) FIL
+;Version: 
+;PatchID: 11208
+;Details: https://patches.kibab.com/patches/details.php5?id=11208
+/*
+
+*/
+
+02D296E: BCF122EB 0120C046
+;------------------------- end -------------------------
+

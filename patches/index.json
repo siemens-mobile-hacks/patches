@@ -25740,6 +25740,16 @@
 				"ru": "Убрать пункт 'ProSlide' из меню 'Настройки'",
 				"en": "Remove 'ProSlide' item from 'Setup' menu"
 			}
+		},
+		"11208": {
+			"id": 11208,
+			"model": "CF75v23",
+			"file": "CF75v23/11208-allow_auto_kbd_lock_in_open_cs_mode.vkp",
+			"mtime": 1760595500000,
+			"title": {
+				"ru": "Разрешить автоматическую блокировку клавиатуры в режиме открытой раскладушки",
+				"en": "Allow automatic keyboard lock in open clamshell mode"
+			}
 		}
 	},
 	"CX75v5": {
