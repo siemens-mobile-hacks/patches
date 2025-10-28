@@ -101517,5 +101517,18 @@
 				"en": "Menu style x65"
 			}
 		}
+	},
+	"S46v64": {
+		"11209": {
+			"id": 11209,
+			"model": "S46v64",
+			"file": "S46v64/11209-disable_crc_check.vkp",
+			"additionalFile": "S46v64/11209-disable_crc_check.zip",
+			"mtime": 1761663912000,
+			"title": {
+				"ru": "Отключить проверку CRC",
+				"en": "Disable CRC Check"
+			}
+		}
 	}
 }
