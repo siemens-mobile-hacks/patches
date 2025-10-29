@@ -32102,5 +32102,9 @@
 	],
 	[
 		"CF75v23/11208-allow_auto_kbd_lock_in_open_cs_mode.vkp"
+	],
+	[
+		"S46v64/11209-disable_crc_check.vkp",
+		"S46v64/11209-disable_crc_check.zip"
 	]
 ]

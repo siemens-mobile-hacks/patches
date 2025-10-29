@@ -1,0 +1,24 @@
+;S46v64
+;Отключить проверку CRC
+;Disable CRC Check
+;(c) Коммьюнити
+;Version: 
+;PatchID: 11209
+;Details: https://patches.kibab.com/patches/details.php5?id=11209
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s46v64&f=disable_crc_check.zip
+
+/*
+К патчу приложен загрузчик для V_klay. Скопируйте его в каталог загрузчиков, выберите из списка S46 (Bootcore Bug) и обязательно сделайте фуллфлеш бекап! Не используйте другие загрузчики ни при каких обстоятельствах!
+*/
+
+;*** Отключить первую проверку CRC ***
+;Disable First CRC
+0C8830: 3D0A CC00
+0C883E: 3D03 CC00
+
+;*** Отключить вторую проверку CRC ***
+;Disable Second CRC
+0CF4A0: 2D 0D
+
+;------------------------- end -------------------------
+
