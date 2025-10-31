@@ -68698,6 +68698,16 @@
 				"ru": "Дата вместо имени оператора в заставке",
 				"en": "Date instead of provider name in screensaver"
 			}
+		},
+		"11211": {
+			"id": 11211,
+			"model": "CX70v56",
+			"file": "CX70v56/11211-temp_e_bl_on_lock_screen_by_any_key.vkp",
+			"mtime": 1761899544000,
+			"title": {
+				"ru": "Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши",
+				"en": "Temporary enable backlight on lock screen by any keypress"
+			}
 		}
 	},
 	"C55v24": {
