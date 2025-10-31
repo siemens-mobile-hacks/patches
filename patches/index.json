@@ -101599,6 +101599,16 @@
 				"ru": "Открыть скрытые блоки EEPROM",
 				"en": "Open Hidden EEPROM"
 			}
+		},
+		"11217": {
+			"id": 11217,
+			"model": "S46v64",
+			"file": "S46v64/11217-open_bfb.vkp",
+			"mtime": 1761922992000,
+			"title": {
+				"ru": "Открыть BFB",
+				"en": "Open BFB"
+			}
 		}
 	}
 }

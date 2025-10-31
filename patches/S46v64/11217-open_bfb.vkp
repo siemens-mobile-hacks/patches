@@ -1,0 +1,15 @@
+;S46v64
+;Открыть BFB
+;Open BFB
+;(c) Коммьюнити
+;Version: 
+;PatchID: 11217
+;Details: https://patches.kibab.com/patches/details.php5?id=11217
+/*
+
+*/
+
+090E8C: E2 CC
+
+;------------------------- end -------------------------
+
