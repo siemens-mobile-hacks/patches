@@ -101569,6 +101569,16 @@
 				"ru": "Отключить проверку CRC",
 				"en": "Disable CRC Check"
 			}
+		},
+		"11214": {
+			"id": 11214,
+			"model": "S46v64",
+			"file": "S46v64/11214-enable_developer_menu.vkp",
+			"mtime": 1761922642000,
+			"title": {
+				"ru": "Включить инженерное меню",
+				"en": "Enable Developer Menu"
+			}
 		}
 	}
 }

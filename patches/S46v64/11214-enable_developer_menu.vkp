@@ -1,0 +1,15 @@
+;S46v64
+;Включить инженерное меню
+;Enable Developer Menu
+;(c) Коммьюнити
+;Version: 
+;PatchID: 11214
+;Details: https://patches.kibab.com/patches/details.php5?id=11214
+/*
+Не требует кода на SIM-карте
+*/
+
+0B4F52: 2D 0D
+
+;------------------------- end -------------------------
+
