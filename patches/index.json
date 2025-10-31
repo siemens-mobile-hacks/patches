@@ -101579,6 +101579,16 @@
 				"ru": "Включить инженерное меню",
 				"en": "Enable Developer Menu"
 			}
+		},
+		"11215": {
+			"id": 11215,
+			"model": "S46v64",
+			"file": "S46v64/11215-disable_aircraft_check.vkp",
+			"mtime": 1761922814000,
+			"title": {
+				"ru": "Отключить проверку в самолете",
+				"en": "Diasable Aircraft Check"
+			}
 		}
 	}
 }
