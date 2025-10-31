@@ -25760,6 +25760,16 @@
 				"ru": "Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши",
 				"en": "Temporary enable backlight on lock screen by any keypress"
 			}
+		},
+		"11213": {
+			"id": 11213,
+			"model": "CF75v23",
+			"file": "CF75v23/11213-allow_full_d_bl_off_in_open_cs_mode.vkp",
+			"mtime": 1761901268000,
+			"title": {
+				"ru": "Разрешить полное отключение подсветки дисплея в режиме открытой раскладушки",
+				"en": "Allow full display backlight off in open clamshell mode"
+			}
 		}
 	},
 	"CX75v5": {
