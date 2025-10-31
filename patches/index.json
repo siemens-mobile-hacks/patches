@@ -101589,6 +101589,16 @@
 				"ru": "Отключить проверку в самолете",
 				"en": "Diasable Aircraft Check"
 			}
+		},
+		"11216": {
+			"id": 11216,
+			"model": "S46v64",
+			"file": "S46v64/11216-open_hidden_eeprom.vkp",
+			"mtime": 1761922922000,
+			"title": {
+				"ru": "Открыть скрытые блоки EEPROM",
+				"en": "Open Hidden EEPROM"
+			}
 		}
 	}
 }
