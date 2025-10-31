@@ -25750,6 +25750,16 @@
 				"ru": "Разрешить автоматическую блокировку клавиатуры в режиме открытой раскладушки",
 				"en": "Allow automatic keyboard lock in open clamshell mode"
 			}
+		},
+		"11210": {
+			"id": 11210,
+			"model": "CF75v23",
+			"file": "CF75v23/11210-temp_e_bl_on_lock_screen_by_any_key.vkp",
+			"mtime": 1761898472000,
+			"title": {
+				"ru": "Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши",
+				"en": "Temporary enable backlight on lock screen by any keypress"
+			}
 		}
 	},
 	"CX75v5": {

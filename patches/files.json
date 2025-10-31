@@ -32110,5 +32110,8 @@
 	[
 		"S46v64/11209-disable_crc_check.vkp",
 		"S46v64/11209-disable_crc_check.zip"
+	],
+	[
+		"CF75v23/11210-temp_e_bl_on_lock_screen_by_any_key.vkp"
 	]
 ]
