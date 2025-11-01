@@ -25770,6 +25770,16 @@
 				"ru": "Разрешить полное отключение подсветки дисплея в режиме открытой раскладушки",
 				"en": "Allow full display backlight off in open clamshell mode"
 			}
+		},
+		"11218": {
+			"id": 11218,
+			"model": "CF75v23",
+			"file": "CF75v23/11218-disable_messages_kl_sa.vkp",
+			"mtime": 1761983884000,
+			"title": {
+				"ru": "Отключить сообщения 'Блокировка клавиатуры включена', 'Заставка активна'",
+				"en": "Disable messages 'Keypad locked', 'Screensaver active'"
+			}
 		}
 	},
 	"CX75v5": {
