@@ -57021,8 +57021,8 @@
 		"10973": {
 			"id": 10973,
 			"model": "S65v58",
-			"file": "S65v58/10973-fix_cursor_in_tile_view_v1_0_1.vkp",
-			"mtime": 1756404546000,
+			"file": "S65v58/10973-fix_cursor_in_tile_view_v1_1.vkp",
+			"mtime": 1761992172000,
 			"title": {
 				"ru": "Исправить курсор в плиточном режиме",
 				"en": "Fix cursor in tile view"
