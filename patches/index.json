@@ -68501,8 +68501,8 @@
 		"10928": {
 			"id": 10928,
 			"model": "CX70v56",
-			"file": "CX70v56/10928-fix_cursor_in_tile_view_v1_0_1.vkp",
-			"mtime": 1751388498000,
+			"file": "CX70v56/10928-fix_cursor_in_tile_view_v1_1.vkp",
+			"mtime": 1761991606000,
 			"title": {
 				"ru": "Исправить курсор в плиточном режиме",
 				"en": "Fix cursor in tile view"
