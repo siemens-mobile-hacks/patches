@@ -1,0 +1,14 @@
+;CF75v23
+;Разрешить полное отключение подсветки дисплея в режиме открытой раскладушки
+;Allow full display backlight off in open clamshell mode
+;(c) FIL
+;Version: 
+;PatchID: 11213
+;Details: https://patches.kibab.com/patches/details.php5?id=11213
+/*
+Рекомендую устанавливать вместе с патчем 11210.
+*/
+
+080D0EE: AAF774FE 0120C046
+;------------------------- end -------------------------
+

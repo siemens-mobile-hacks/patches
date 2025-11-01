@@ -1,0 +1,14 @@
+;S46v64
+;Открыть скрытые блоки EEPROM
+;Open Hidden EEPROM
+;(c) Коммьюнити
+;Version: 
+;PatchID: 11216
+;Details: https://patches.kibab.com/patches/details.php5?id=11216
+/*
+
+*/
+
+27EF24: 01149013D513911302140314 000000000000000000000000
+;------------------------- end -------------------------
+
