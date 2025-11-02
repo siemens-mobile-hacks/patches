@@ -1,0 +1,16 @@
+;CF75v23
+;Отключить сообщения 'Блокировка клавиатуры включена', 'Заставка активна'
+;Disable messages 'Keypad locked', 'Screensaver active'
+;(c) FIL
+;Version: 
+;PatchID: 11218
+;Details: https://patches.kibab.com/patches/details.php5?id=11218
+/*
+Данные сообщения отображаются на 2-ом дисплее.
+*/
+
+02CC96A: 06F007FD 0020C046 ; "Screensaver active"
+02CC976: 06F0F9FC 0020C046 ; "Keypad locked"
+
+;------------------------- end -------------------------
+

@@ -31297,7 +31297,7 @@
 		"CX70v56/10927-Change_Sizes_Popup_options_windows.vkp"
 	],
 	[
-		"CX70v56/10928-fix_cursor_in_tile_view_v1_0_1.vkp"
+		"CX70v56/10928-fix_cursor_in_tile_view_v1_1.vkp"
 	],
 	[
 		"C81v51/10929-Run_Java_from_Everywhere_v3.vkp"
@@ -31412,7 +31412,7 @@
 		"S65v58/10972-fix_menu_width.vkp"
 	],
 	[
-		"S65v58/10973-fix_cursor_in_tile_view_v1_0_1.vkp"
+		"S65v58/10973-fix_cursor_in_tile_view_v1_1.vkp"
 	],
 	[
 		"S65v58/10974-fix_navigation_in_tile_view_v1_1_1.vkp"
@@ -32130,5 +32130,8 @@
 	],
 	[
 		"S46v64/11217-open_bfb.vkp"
+	],
+	[
+		"CF75v23/11218-disable_messages_kl_sa.vkp"
 	]
 ]

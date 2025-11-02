@@ -1,30 +1,32 @@
-;S65v58
+;CX70v56
 ;Исправить курсор в плиточном режиме
 ;Fix cursor in tile view
 ;(c) FIL
 ;(r) SiNgle
-;(p) Виктор89
-;Version: 1.0.1
-;PatchID: 10973
-;Details: https://patches.kibab.com/patches/details.php5?id=10973
+;Version: 1.1
+;PatchID: 10928
+;Details: https://patches.kibab.com/patches/details.php5?id=10928
 /*
 1. Убирает белый фон у иконок Native Menu.
 2. Исправляет цвет курсора в плиточном режиме Card Explorer.
 
 */
 
+; .FixArg
+0D25AC8: 0022 FF22
+
 ; .DrawRoundedFrame_Jump_Part1
-119E4D8: 0022 FF22
+0D25AD6: 041C 29E0
 
 ; .DrawRoundedFrame_Jump_Part2
-119E542: 061C 3E1C
+0D25B32: 061C 3E1C
 
 ; .DrawRoundedFrame_Jump_Part3
-119E57C: B0F7E5FF 83F552FE
+0D25B6C: 87F7E7FA FCF118FB
 
 #pragma enable old_equal_ff
 ; .DrawRoundedFrame_Hook
-0F22222: 0000F0B589B01E0007920D4B129A050006919A4213D00B4C7520A04707007420A047109B079A02930F9B069901930E9B064C00930397330004902800A04709B0F0BDC8D892A0191815A14BF514A1
+0F221A0: F0B58BB01E000992174B149A079008919A4226D0154D7620A847079C099A0899671C731C01320131114C049003901298029011980190109800903800A0477520A84707007420A847129B099A0293119B08990193109B03970093330004900798A0470BB0F0BDC0464C1C94A00DF4CAA03FD1CAA0
 #pragma disable old_equal_ff
 
 ;------------------------- end -------------------------
