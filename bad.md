@@ -1,19 +1,4 @@
 ### Patches with errors
-[C72v22/11113-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11113)
-
-Error: Syntax error at line 16 col 1
-```
-  13 | 1136110: 01 FF
-  14 | 
-  15 | ;Pattern
-> 16 | 01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
-     | ^
-  17 | 
-  18 | ;------------------------- end -------------------------
-  19 | 
-
-```
-
 [C75v22/11109-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11109)
 
 Error: Syntax error at line 16 col 1
