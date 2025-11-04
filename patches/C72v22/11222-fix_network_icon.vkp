@@ -1,0 +1,23 @@
+;C72v22
+;Исправить иконку сети когда отключена сеть
+;Fix network icon when network is disabled
+;(c) FIL
+;Version: 
+;PatchID: 11222
+;Details: https://patches.kibab.com/patches/details.php5?id=11222
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=c72v22&f=fix_network_icon.zip
+
+/*
+
+*/
+
+#pragma enable old_equal_ff
+; .GetNetworkIcon
+0800840: 054B10B51B78042B02D0044B984710BDBD208000FBE7C0464E5644A80D528CA0
+#pragma disable old_equal_ff
+
+; .GetNetworkIcon_Jump
+08C4C68: 00F0D0FA 3BF7EAFD
+
+;------------------------- end -------------------------
+

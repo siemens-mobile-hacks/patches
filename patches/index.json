@@ -88560,6 +88560,17 @@
 				"en": "Don't stop media player playback when minimized"
 			}
 		},
+		"11222": {
+			"id": 11222,
+			"model": "C72v22",
+			"file": "C72v22/11222-fix_network_icon.vkp",
+			"additionalFile": "C72v22/11222-fix_network_icon.zip",
+			"mtime": 1762262632000,
+			"title": {
+				"ru": "Исправить иконку сети когда отключена сеть",
+				"en": "Fix network icon when network is disabled"
+			}
+		},
 		"11223": {
 			"id": 11223,
 			"model": "C72v22",

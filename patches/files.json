@@ -32141,7 +32141,10 @@
 	null,
 	null,
 	null,
-	null,
+	[
+		"C72v22/11222-fix_network_icon.vkp",
+		"C72v22/11222-fix_network_icon.zip"
+	],
 	[
 		"C72v22/11223-fix_lsk_on_idle.vkp"
 	],
