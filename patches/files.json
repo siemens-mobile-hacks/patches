@@ -32142,7 +32142,9 @@
 	null,
 	null,
 	null,
-	null,
+	[
+		"C72v22/11223-fix_lsk_on_idle.vkp"
+	],
 	[
 		"C72v22/11224-fix_startup_animation_without_sim.vkp"
 	],

@@ -88560,6 +88560,16 @@
 				"en": "Don't stop media player playback when minimized"
 			}
 		},
+		"11223": {
+			"id": 11223,
+			"model": "C72v22",
+			"file": "C72v22/11223-fix_lsk_on_idle.vkp",
+			"mtime": 1762263074000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
+		},
 		"11224": {
 			"id": 11224,
 			"model": "C72v22",
