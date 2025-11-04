@@ -88560,6 +88560,16 @@
 				"en": "Don't stop media player playback when minimized"
 			}
 		},
+		"11225": {
+			"id": 11225,
+			"model": "C72v22",
+			"file": "C72v22/11225-disable_network_search_animation.vkp",
+			"mtime": 1762264822000,
+			"title": {
+				"ru": "Отключить анимацию поиска сети",
+				"en": "Disable network search animation"
+			}
+		},
 		"11226": {
 			"id": 11226,
 			"model": "C72v22",

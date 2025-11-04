@@ -1,0 +1,15 @@
+;C72v22
+;Отключить анимацию поиска сети
+;Disable network search animation
+;(c) FIL
+;Version: 
+;PatchID: 11225
+;Details: https://patches.kibab.com/patches/details.php5?id=11225
+/*
+
+*/
+
+08E0D72: 80B5 0020
+08E0D74: 0023 7047
+;------------------------- end -------------------------
+

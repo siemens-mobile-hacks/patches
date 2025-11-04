@@ -32144,7 +32144,9 @@
 	null,
 	null,
 	null,
-	null,
+	[
+		"C72v22/11225-disable_network_search_animation.vkp"
+	],
 	[
 		"C72v22/11226-dont_show_provider_network_on_ms.vkp"
 	],
