@@ -88560,6 +88560,16 @@
 				"en": "Don't stop media player playback when minimized"
 			}
 		},
+		"11226": {
+			"id": 11226,
+			"model": "C72v22",
+			"file": "C72v22/11226-dont_show_provider_network_on_ms.vkp",
+			"mtime": 1762265442000,
+			"title": {
+				"ru": "Не показывать провайдер и поиск сети на главном экране",
+				"en": "Do not show provider and network search message on main screen"
+			}
+		},
 		"11227": {
 			"id": 11227,
 			"model": "C72v22",

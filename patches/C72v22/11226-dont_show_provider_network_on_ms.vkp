@@ -1,0 +1,15 @@
+;C72v22
+;Не показывать провайдер и поиск сети на главном экране
+;Do not show provider and network search message on main screen
+;(c) ?
+;(p) FIL
+;Version: 
+;PatchID: 11226
+;Details: https://patches.kibab.com/patches/details.php5?id=11226
+/*
+
+*/
+
+0944330: 07 80
+;------------------------- end -------------------------
+
