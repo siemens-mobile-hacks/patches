@@ -88560,6 +88560,16 @@
 				"en": "Don't stop media player playback when minimized"
 			}
 		},
+		"11224": {
+			"id": 11224,
+			"model": "C72v22",
+			"file": "C72v22/11224-fix_startup_animation_without_sim.vkp",
+			"mtime": 1762263888000,
+			"title": {
+				"ru": "Исправить анимацию при включении без SIM",
+				"en": "Fix a startup animation without SIM"
+			}
+		},
 		"11225": {
 			"id": 11225,
 			"model": "C72v22",

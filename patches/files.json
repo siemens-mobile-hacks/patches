@@ -32143,7 +32143,9 @@
 	null,
 	null,
 	null,
-	null,
+	[
+		"C72v22/11224-fix_startup_animation_without_sim.vkp"
+	],
 	[
 		"C72v22/11225-disable_network_search_animation.vkp"
 	],
