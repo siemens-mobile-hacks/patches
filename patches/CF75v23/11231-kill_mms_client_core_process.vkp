@@ -1,0 +1,15 @@
+;CF75v23
+;Отключение загрузки ядра MMS клиента
+;Kill MMS client core process
+;(c) PICAS
+;(p) FIL
+;Version: 
+;PatchID: 11231
+;Details: https://patches.kibab.com/patches/details.php5?id=11231
+/*
+Добавляет 120020 байт в permamem
+*/
+
+04CD4FE: 22F1BEEF C046C046
+;------------------------- end -------------------------
+

@@ -25780,6 +25780,16 @@
 				"ru": "Отключить сообщения 'Блокировка клавиатуры включена', 'Заставка активна'",
 				"en": "Disable messages 'Keypad locked', 'Screensaver active'"
 			}
+		},
+		"11231": {
+			"id": 11231,
+			"model": "CF75v23",
+			"file": "CF75v23/11231-kill_mms_client_core_process.vkp",
+			"mtime": 1762334200000,
+			"title": {
+				"ru": "Отключение загрузки ядра MMS клиента",
+				"en": "Kill MMS client core process"
+			}
 		}
 	},
 	"CX75v5": {
