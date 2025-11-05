@@ -88729,6 +88729,16 @@
 				"ru": "Исправить навигацию в плиточном режиме",
 				"en": "Fix navigation in tile view"
 			}
+		},
+		"11240": {
+			"id": 11240,
+			"model": "C72v22",
+			"file": "C72v22/11240-NMFP_v3_5.vkp",
+			"mtime": 1762346766000,
+			"title": {
+				"ru": "Пакет исправлений Native Menu",
+				"en": "Native Menu Fix Pack"
+			}
 		}
 	},
 	"SXG75v22": {
