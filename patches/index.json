@@ -88670,6 +88670,16 @@
 				"en": "Native Menu instead of MainMenu"
 			}
 		},
+		"11235": {
+			"id": 11235,
+			"model": "C72v22",
+			"file": "C72v22/11235-fix_icon_display_in_nm_v1_0_1.vkp",
+			"mtime": 1762342516000,
+			"title": {
+				"ru": "Исправить отображение иконок в Native Menu",
+				"en": "Fix icon display in Native Menu"
+			}
+		},
 		"11236": {
 			"id": 11236,
 			"model": "C72v22",
