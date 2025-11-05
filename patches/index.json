@@ -67917,8 +67917,8 @@
 		"9206": {
 			"id": 9206,
 			"model": "CX70v56",
-			"file": "CX70v56/9206-Native_Menu_instead_of_MainMenu.vkp",
-			"mtime": 1234036742000,
+			"file": "CX70v56/9206-nm_instead_of_mm_v2_3.vkp",
+			"mtime": 1762331482000,
 			"title": {
 				"ru": "Native Menu вместо главного меню",
 				"en": "Native Menu instead of MainMenu"
