@@ -88560,6 +88560,16 @@
 				"en": "Don't stop media player playback when minimized"
 			}
 		},
+		"11229": {
+			"id": 11229,
+			"model": "C72v22",
+			"file": "C72v22/11229-show_hidden_files_in_ce_by_default.vkp",
+			"mtime": 1762328876000,
+			"title": {
+				"ru": "Показывать Скрытые Файлы в Card-Explorer'е по умолчанию",
+				"en": "Show Hidden Files In Card-Explorer By Default"
+			}
+		},
 		"11230": {
 			"id": 11230,
 			"model": "C72v22",

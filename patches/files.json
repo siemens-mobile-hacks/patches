@@ -32148,7 +32148,9 @@
 	null,
 	null,
 	null,
-	null,
+	[
+		"C72v22/11229-show_hidden_files_in_ce_by_default.vkp"
+	],
 	[
 		"C72v22/11230-open_disk_sel_menu_in_ce_by_hotkey.vkp"
 	],

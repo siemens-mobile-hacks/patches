@@ -1,0 +1,15 @@
+;C72v22
+;Показывать Скрытые Файлы в Card-Explorer'е по умолчанию
+;Show Hidden Files In Card-Explorer By Default
+;(c) 1nvisible
+;Version: 
+;PatchID: 11229
+;Details: https://patches.kibab.com/patches/details.php5?id=11229
+/*
+
+*/
+
+096343C: 00 FF
+09634EC: 00 FF
+;------------------------- end -------------------------
+
