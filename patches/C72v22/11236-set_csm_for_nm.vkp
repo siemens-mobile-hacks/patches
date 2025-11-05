@@ -1,0 +1,18 @@
+;C72v22
+;Задать CSM для Native Menu
+;Set CSM for Native Menu
+;(c) FIL
+;Version: 
+;PatchID: 11236
+;Details: https://patches.kibab.com/patches/details.php5?id=11236
+/*
+Можно переключаться через XTask.
+*/
+
+08D0C70: 4FD0 C046
+08D0D0C: 6BF0 0021
+08D0D0E: 26EAFEBD 6AF068ED
+08D0D12: 0020 FEBD
+08D0D38: F1F769F9 C046C046
+;------------------------- end -------------------------
+

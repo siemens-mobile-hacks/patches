@@ -88670,6 +88670,16 @@
 				"en": "Native Menu instead of MainMenu"
 			}
 		},
+		"11236": {
+			"id": 11236,
+			"model": "C72v22",
+			"file": "C72v22/11236-set_csm_for_nm.vkp",
+			"mtime": 1762343896000,
+			"title": {
+				"ru": "Задать CSM для Native Menu",
+				"en": "Set CSM for Native Menu"
+			}
+		},
 		"11237": {
 			"id": 11237,
 			"model": "C72v22",

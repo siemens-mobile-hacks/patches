@@ -32177,7 +32177,9 @@
 	null,
 	null,
 	null,
-	null,
+	[
+		"C72v22/11236-set_csm_for_nm.vkp"
+	],
 	[
 		"C72v22/11237-remove_camera_from_extras.vkp"
 	]
