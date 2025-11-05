@@ -88560,6 +88560,16 @@
 				"en": "Don't stop media player playback when minimized"
 			}
 		},
+		"11228": {
+			"id": 11228,
+			"model": "C72v22",
+			"file": "C72v22/11228-show_file_extensions_in_ce.vkp",
+			"mtime": 1762328476000,
+			"title": {
+				"ru": "Показ Расширений Файлов в Card-Explorer'е",
+				"en": "Show File Extensions in Card-Explorer"
+			}
+		},
 		"11229": {
 			"id": 11229,
 			"model": "C72v22",
