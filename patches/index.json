@@ -25284,8 +25284,8 @@
 		"10081": {
 			"id": 10081,
 			"model": "CF75v23",
-			"file": "CF75v23/10081-Native_Menu_instead_of_MainMenu.vkp",
-			"mtime": 1293534880000,
+			"file": "CF75v23/10081-nm_instead_of_mm_v2_3.vkp",
+			"mtime": 1762333364000,
 			"title": {
 				"ru": "Native Menu вместо главного меню",
 				"en": "Native Menu instead of MainMenu"
