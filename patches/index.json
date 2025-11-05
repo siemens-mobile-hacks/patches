@@ -88560,6 +88560,16 @@
 				"en": "Don't stop media player playback when minimized"
 			}
 		},
+		"11230": {
+			"id": 11230,
+			"model": "C72v22",
+			"file": "C72v22/11230-open_disk_sel_menu_in_ce_by_hotkey.vkp",
+			"mtime": 1762329838000,
+			"title": {
+				"ru": "Открыть меню выбора диска по горячей клавише в Card-Explorer",
+				"en": "Open disk selection menu in Card-Explorer by hotkey"
+			}
+		},
 		"11232": {
 			"id": 11232,
 			"model": "C72v22",

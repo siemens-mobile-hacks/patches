@@ -32149,7 +32149,9 @@
 	null,
 	null,
 	null,
-	null,
+	[
+		"C72v22/11230-open_disk_sel_menu_in_ce_by_hotkey.vkp"
+	],
 	null,
 	[
 		"C72v22/11232-nm_instead_of_mm_v2_3.vkp"
