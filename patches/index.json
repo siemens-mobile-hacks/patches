@@ -88669,6 +88669,16 @@
 				"ru": "Native Menu вместо главного меню",
 				"en": "Native Menu instead of MainMenu"
 			}
+		},
+		"11237": {
+			"id": 11237,
+			"model": "C72v22",
+			"file": "C72v22/11237-remove_camera_from_extras.vkp",
+			"mtime": 1762344200000,
+			"title": {
+				"ru": "Убрать пункт 'Камера' из меню 'Еще'",
+				"en": "Remove 'Camera' item from 'Extras' menu"
+			}
 		}
 	},
 	"SXG75v22": {

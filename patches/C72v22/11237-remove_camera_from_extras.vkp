@@ -1,0 +1,14 @@
+;C72v22
+;Убрать пункт 'Камера' из меню 'Еще'
+;Remove 'Camera' item from 'Extras' menu
+;(c) FIL
+;Version: 
+;PatchID: 11237
+;Details: https://patches.kibab.com/patches/details.php5?id=11237
+/*
+
+*/
+
+09424E8: 7805 6705
+;------------------------- end -------------------------
+
