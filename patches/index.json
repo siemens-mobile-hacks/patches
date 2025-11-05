@@ -88560,6 +88560,16 @@
 				"en": "Don't stop media player playback when minimized"
 			}
 		},
+		"11227": {
+			"id": 11227,
+			"model": "C72v22",
+			"file": "C72v22/11227-kill_mms_client_core_process.vkp",
+			"mtime": 1762327780000,
+			"title": {
+				"ru": "Отключение загрузки ядра MMS клиента",
+				"en": "Kill MMS client core process"
+			}
+		},
 		"11228": {
 			"id": 11228,
 			"model": "C72v22",

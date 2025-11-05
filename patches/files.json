@@ -32146,7 +32146,9 @@
 	null,
 	null,
 	null,
-	null,
+	[
+		"C72v22/11227-kill_mms_client_core_process.vkp"
+	],
 	[
 		"C72v22/11228-show_file_extensions_in_ce.vkp"
 	],
