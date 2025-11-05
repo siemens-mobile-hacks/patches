@@ -88739,6 +88739,16 @@
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
 			}
+		},
+		"11241": {
+			"id": 11241,
+			"model": "C72v22",
+			"file": "C72v22/11241-use_e_header_font_from_definition.vkp",
+			"mtime": 1762347028000,
+			"title": {
+				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
+				"en": "Use extra header font only from 'Definition'"
+			}
 		}
 	},
 	"SXG75v22": {
