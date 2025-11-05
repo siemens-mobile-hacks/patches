@@ -88559,6 +88559,16 @@
 				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
 				"en": "Don't stop media player playback when minimized"
 			}
+		},
+		"11232": {
+			"id": 11232,
+			"model": "C72v22",
+			"file": "C72v22/11232-nm_instead_of_mm_v2_3.vkp",
+			"mtime": 1762335204000,
+			"title": {
+				"ru": "Native Menu вместо главного меню",
+				"en": "Native Menu instead of MainMenu"
+			}
 		}
 	},
 	"SXG75v22": {
