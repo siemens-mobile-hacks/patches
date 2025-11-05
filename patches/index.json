@@ -87781,12 +87781,11 @@
 		"6954": {
 			"id": "6954",
 			"model": "C72v22",
-			"file": "C72v22/6954-Big_Function_Library.vkp",
-			"additionalFile": "C72v22/6954-Big_Function_Library.rar",
-			"mtime": 1711890148000,
+			"file": "C72v22/6954-swilib_v051125.vkp",
+			"mtime": 1762336910000,
 			"title": {
-				"ru": "Большая Библиотека Функций",
-				"en": "Big Function Library"
+				"ru": "Библиотека Функций",
+				"en": "Function Library"
 			}
 		},
 		"6962": {

@@ -1,14 +1,12 @@
 ;C72v22
-;Большая Библиотека Функций
-;Big Function Library
+;Библиотека Функций
+;Function Library
 ;(c) avkiev
 ;(r) Geka
 ;(p) Virusmater
 ;Version: 
 ;PatchID: 6954
 ;Details: https://patches.kibab.com/patches/details.php5?id=6954
-;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=c72v22&f=Big_Function_Library.rar
-
 /*
 Этот патч сам по себе ничего не делает. Он предназначен для облегчения создания и портирования других патчей.
 Требуется для многих патчей, написанных с использованием концепции "Мастер-Патч + Библиотека функций" (c) 1nvisible, avkiev
@@ -577,6 +575,22 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0834: 0xA11660A3   ; 20D: __thumb void EDIT_GetTime(void *gui,int n,TTime *tt);
 0838: 0xA0C9C141   ; 20E: __thumb int ConstructEditTime(EDITCONTROL *EditControl,TTime *time);
 083C: 0xA0C9C027   ; 20F: __thumb int ConstructEditDate(EDITCONTROL *EditControl,TDate *date);
+;840:              ; 210: int GetCurGuiID(void)
+;844:              ; 211: GBS_Cmd_4209_RefreshScreensaver
+;848:              ; 212: int CardExplGetCurItem(void *csm)
+;84C:              ; 213: void CardExplGetFName(void *csm, int cur_item, WSHDR *dest)
+;850:              ; 214: void wstrcpybypos(WSHDR *dest,WSHDR *src,int from,int len)
+;854:              ; 215: void wsRemoveChars(WSHDR *ws,int from,int to)
+;858:              ; 216: void wstrcatprintf(WSHDR *,const char *format,...)
+;85C:              ; 217: int CreateMultiLinesMenu(int dummy,int dummy2,const ML_MENU_DESC *,const HEADER_DESC *,int to_item,int n)
+;860:              ; 218: void SetMLMenuItemText(void *data,void *item,WSHDR *ws1,WSHDR *ws2,int n)
+;864:              ; 219: void *AllocMLMenuItem(void *data)
+;868:              ; 21A: int EDIT_SetTextInvert(void *gui,int cursor_pos,int len)
+;86C:              ; 21B: void EDIT_RemoveTextInvert(void *gui)
+;870:              ; 21C: int EDIT_IsBusy(void *gui)
+;874:              ; 21D: int GSMTXT_Decode(WSHDR *dest,void *pkt,int len,int encoding_type, void *(*malloc_adr)(int), void (*mfree_adr)(void))
+0878: 0xA0C9EC01   ; 21E: __thumb void FocusGUI(int id)
+087C: 0xA0C9EC1F   ; 21F: __thumb void UnfocusGUI(void)
 #pragma disable old_equal_ff
 +0
 ;------------------------- end -------------------------
