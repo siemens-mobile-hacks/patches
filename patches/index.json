@@ -88719,6 +88719,16 @@
 				"ru": "Исправить курсор в плиточном режиме",
 				"en": "Fix cursor in tile view"
 			}
+		},
+		"11239": {
+			"id": 11239,
+			"model": "C72v22",
+			"file": "C72v22/11239-fix_navigation_in_tile_view_v1_1_1.vkp",
+			"mtime": 1762346476000,
+			"title": {
+				"ru": "Исправить навигацию в плиточном режиме",
+				"en": "Fix navigation in tile view"
+			}
 		}
 	},
 	"SXG75v22": {
