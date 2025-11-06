@@ -88769,6 +88769,16 @@
 				"ru": "Ускорить загрузку overlay info при старте телефона",
 				"en": "Speed up overlay info load on startup"
 			}
+		},
+		"11244": {
+			"id": 11244,
+			"model": "C72v22",
+			"file": "C72v22/11244-fast_ss_appearance_after_kbd_lock.vkp",
+			"mtime": 1762414860000,
+			"title": {
+				"ru": "Моментальный запуск скринсейвера после блокировки клавиатуры",
+				"en": "Fast ScreenSaver appearance after keyboard lock"
+			}
 		}
 	},
 	"SXG75v22": {

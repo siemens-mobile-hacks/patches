@@ -32204,5 +32204,8 @@
 	],
 	[
 		"C72v22/11243-speed_up_overlay_load_on_startup.vkp"
+	],
+	[
+		"C72v22/11244-fast_ss_appearance_after_kbd_lock.vkp"
 	]
 ]
