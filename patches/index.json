@@ -88759,6 +88759,16 @@
 				"ru": "Переработка меню 'Интерн./игр'",
 				"en": "Redesign 'Surf & fun' menu"
 			}
+		},
+		"11243": {
+			"id": 11243,
+			"model": "C72v22",
+			"file": "C72v22/11243-speed_up_overlay_load_on_startup.vkp",
+			"mtime": 1762413274000,
+			"title": {
+				"ru": "Ускорить загрузку overlay info при старте телефона",
+				"en": "Speed up overlay info load on startup"
+			}
 		}
 	},
 	"SXG75v22": {

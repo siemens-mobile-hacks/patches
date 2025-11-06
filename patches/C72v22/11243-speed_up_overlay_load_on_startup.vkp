@@ -1,0 +1,14 @@
+;C72v22
+;Ускорить загрузку overlay info при старте телефона
+;Speed up overlay info load on startup
+;(c) FIL
+;Version: 
+;PatchID: 11243
+;Details: https://patches.kibab.com/patches/details.php5?id=11243
+/*
+
+*/
+
+08C44B0: 0A48 AA20
+;------------------------- end -------------------------
+
