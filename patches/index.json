@@ -87220,8 +87220,8 @@
 		"5837": {
 			"id": 5837,
 			"model": "C72v22",
-			"file": "C72v22/5837-Decrease_Keyboard_Long_Press_Delay.vkp",
-			"mtime": 1160062316000,
+			"file": "C72v22/5837-decrease_keyboard_long_press_delay.vkp",
+			"mtime": 1762411336000,
 			"title": {
 				"ru": "Уменьшить задержку для долгого нажатия клавиш",
 				"en": "Decrease Keyboard Long Press Delay"

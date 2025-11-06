@@ -3,6 +3,7 @@
 ;Decrease Keyboard Long Press Delay
 ;(c) 1nvisible
 ;(r) benj9
+;(p) FIL
 ;Version: 
 ;PatchID: 5837
 ;Details: https://patches.kibab.com/patches/details.php5?id=5837
@@ -10,6 +11,6 @@
 
 */
 
-125F1AA: 00 41
+0CC849A: 82 41
 ;------------------------- end -------------------------
 
