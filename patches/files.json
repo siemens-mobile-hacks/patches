@@ -16612,7 +16612,9 @@
 	[
 		"C72v22/5836-MainScreen_positioning_v2.vkp"
 	],
-	null,
+	[
+		"C72v22/5837-decrease_keyboard_long_press_delay.vkp"
+	],
 	[
 		"C72v22/5838-Disable_Retarget_Exit.vkp"
 	],
