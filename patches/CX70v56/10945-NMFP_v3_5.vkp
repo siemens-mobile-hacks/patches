@@ -2,7 +2,7 @@
 ;Пакет исправлений Native Menu
 ;Native Menu Fix Pack
 ;(c) FIL, SiNgle, Bennie
-;Version: 3.3.2
+;Version: 3.5
 ;PatchID: 10945
 ;Details: https://patches.kibab.com/patches/details.php5?id=10945
 /*
@@ -47,7 +47,7 @@
 ;Native Menu instead of MainMenu
 ;(c) SiNgle
 ;(p) Zeus
-;Version: 2.1
+;Version: 2.3
 ;PatchID: 9206
 ;Details: https://patches.kibab.com/patches/details.php5?id=9206
 
@@ -56,6 +56,10 @@
 
 08C6374: 434B4C4B5F434B5F4D41494E4D4E55 434E43545F425553494E4553534344
 08C6384: 454C53455F4D4D454E555F4F50454E 434E43545F425553494E4553534344
+
+1737C70: 4D4172A1 0xA08D0339 ; вместо Главного при разговоре
+
+0941B00: AF018DA0 EFF88EA0 ; не вырубаться Списки вызов.-Время\стоим.
 
 ;№3
 ;Убрать пункт 'Камера' из меню 'Еще'
@@ -67,17 +71,6 @@
 0941AA0: 7805 6705
 
 ;№4
-;Не вырубаться при NativeMenu-Списки выз.-Время\стоимость
-;Revision Native Menu
-;(c) Bennie
-;(p) DeviceMan
-;Version: 1
-;PatchID: 6190
-;Details: https://patches.kibab.com/patches/details.php5?id=6190
-
-0941B00: AF018DA0 EFF88EA0
-
-;№5
 ;Задать CSM для Native Menu
 ;Set CSM for Native Menu
 ;(c) FIL

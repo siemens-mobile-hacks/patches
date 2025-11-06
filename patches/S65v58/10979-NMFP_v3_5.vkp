@@ -2,7 +2,7 @@
 ;Пакет исправлений Native Menu
 ;Native Menu Fix Pack
 ;(c) FIL, SiNgle, Bennie
-;Version: 3.3.2
+;Version: 3.5
 ;PatchID: 10979
 ;Details: https://patches.kibab.com/patches/details.php5?id=10979
 /*
@@ -38,7 +38,7 @@
 ;Native Menu instead of MainMenu
 ;(c) SiNgle
 ;(p) Виктор89
-;Version: 2.1
+;Version: 2.3
 ;PatchID: 9006
 ;Details: https://patches.kibab.com/patches/details.php5?id=9006
 
@@ -47,6 +47,10 @@
 
 08C28BC: 434B4C4B5F434B5F4D41494E4D4E55 434E43545F425553494E4553534344
 08C28CC: 454C53455F4D4D454E555F4F50454E 434E43545F425553494E4553534344
+
+16BAC50: 4D716AA1 0xA08DF43B ; вместо Главного при разговоре
+
+092D77C: 0F8F8CA0 E79B8DA0; не вырубаться Списки вызов.-Время\стоим.
 
 ;№3
 ;Убрать пункт 'Камера' из меню 'Еще'
@@ -60,17 +64,6 @@
 092D71C: 7805 6705
 
 ;№4
-;Не вырубаться при NativeMenu-Списки выз.-Время\стоимость
-;Revision Native Menu
-;(c) Bennie
-;(p) MaX666
-;Version: 
-;PatchID: 7242
-;Details: https://patches.kibab.com/patches/details.php5?id=7242
-
-092D77C: 0F8F8CA0 E79B8DA0
-
-;№5
 ;Задать CSM для Native Menu
 ;Set CSM for Native Menu
 ;(c) FIL

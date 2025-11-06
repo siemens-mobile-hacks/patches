@@ -1,0 +1,93 @@
+;C72v22
+;Пакет исправлений Native Menu
+;Native Menu Fix Pack
+;(c) FIL, SiNgle, Bennie
+;Version: 3.5
+;PatchID: 11240
+;Details: https://patches.kibab.com/patches/details.php5?id=11240
+/*
+
+*/
+
+;№1
+;Добавить иконки в заголовок Native Menu
+;Add icons to header in Native Menu
+;(c) FIL
+;Version: 1.2.2
+;PatchID: 11234
+;Details: https://patches.kibab.com/patches/details.php5?id=11234
+
+; .NativeMenu_OnCreate
+0CD2070: 5377756F746143705F5072765F43736D4C656176653A2046726565204D656D6F72792C2052656C656173652048616E64 70B5084B040008200D0016009847064B320029000360002343602061034B2000984770BD9C0F82A0F902000015B0CCA0
+
+; .NativeMenu_OnCreate_Jump
+08EBA08: 50129FE5 E6F332FB
+
+; .NativeMenu_OnChange
+1227F90: 416464436F6E74726F6C546872656164202D20636F6D6D616E64207769746820706C6179657220617320736F7572636520697320756E6B6E6F776E2E2054686520676976656E20706C6179657220636F6D6D616E6420776173 0C4B70B5040098470B4BA2689A420FD1A26A0A4B2569D35C912292009B1820002B60074B9847074C074B084A2900A04770BDC04655701AA1942694A0DC7F22A1DDC812A1DB4813A1041082A09C0F82A0C5CBF1BCB5014642CF
+
+; .NativeMenu_OnChange_Jump
+11A72F6: FFF7ADFE 80F04BFE
+
+; .NativeMenu_OnClose
+11B6E80: 5253202D20556E737570706F7274656420736F7572636520694D656C6F64792073796E63 70B5064B040000690D0098470023290023612000024B984770BDC046041082A04BCC12A1
+
+; .NativeMenu_OnClose_Jump
+11A76D4: 85F7B9FA 0FF0D4FB
+
+;№2
+;Native Menu вместо главного меню
+;Native Menu instead of MainMenu
+;(c) SiNgle
+;(p) FIL
+;Version: 2.3
+;PatchID: 11232
+;Details: https://patches.kibab.com/patches/details.php5?id=11232
+
+094600C: 4B328FA0 0xA08F7723 ; CKLK_CK_MAIN_MNU: центр джойстика
+0946658: 4B328FA0 0xA08F7723 ; ELSE_MMENU_OPEN: для DSE
+
+08CA154: 434B4C4B5F434B5F4D41494E4D4E55 434E43545F425553494E4553534344
+08CA164: 454C53455F4D4D454E555F4F50454E 434E43545F425553494E4553534344
+
+094B53C: 394290A0 0xA08F7723 ; вместо Главного при разговоре
+
+0942548: A30B8DA0 4F288FA0 ; не вырубаться Списки вызов.-Время\стоим.
+
+;№3
+;Убрать пункт 'Камера' из меню 'Еще'
+;Remove 'Camera' item from 'Extras' menu
+;(c) FIL
+;Version: 
+;PatchID: 11237
+;Details: https://patches.kibab.com/patches/details.php5?id=11237
+
+09424E8: 7805 6705
+
+;№4
+;Задать CSM для Native Menu
+;Set CSM for Native Menu
+;(c) FIL
+;Version: 
+;PatchID: 11236
+;Details: https://patches.kibab.com/patches/details.php5?id=11236
+
+08D0C70: 4FD0 C046
+08D0D0C: 6BF0 0021
+08D0D0E: 26EAFEBD 6AF068ED
+08D0D12: 0020 FEBD
+08D0D38: F1F769F9 C046C046
+
+;№5
+;Исправить отображение иконок в Native Menu
+;Fix icon display in Native Menu
+;(c) FIL
+;(r) green
+;Version: 1.0.1
+;PatchID: 11235
+;Details: https://patches.kibab.com/patches/details.php5?id=11235
+
+09426BE: 1E 28
+09426CA: 08 01
+;------------------------- end -------------------------
+

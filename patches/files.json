@@ -25700,7 +25700,7 @@
 		"S7Cv47/9005-Disable_LightOff_When_Message_Incom.vkp"
 	],
 	[
-		"S65v58/9006-Native_Menu_instead_of_MainMenu.vkp"
+		"S65v58/9006-nm_instead_of_mm_v2_3.vkp"
 	],
 	[
 		"S65v58/9007-bt_options_enable.vkp"
@@ -26288,7 +26288,7 @@
 		"CX70v56/9205-Work_without_SIM_card_final.vkp"
 	],
 	[
-		"CX70v56/9206-Native_Menu_instead_of_MainMenu.vkp"
+		"CX70v56/9206-nm_instead_of_mm_v2_3.vkp"
 	],
 	null,
 	null,
@@ -31345,7 +31345,7 @@
 	],
 	null,
 	[
-		"CX70v56/10945-NMFP_v3_3_2.vkp"
+		"CX70v56/10945-NMFP_v3_5.vkp"
 	],
 	[
 		"S75v52/10946-e_translucency_in_themes_v1_2_1.vkp"
@@ -31429,7 +31429,7 @@
 		"S65v58/10978-set_csm_for_nm_v1_0_1.vkp"
 	],
 	[
-		"S65v58/10979-NMFP_v3_3_2.vkp"
+		"S65v58/10979-NMFP_v3_5.vkp"
 	],
 	[
 		"S65v58/10980-use_e_header_font_from_definition.vkp"
@@ -32082,7 +32082,7 @@
 	],
 	null,
 	[
-		"CF75v23/11202-NMFP_v3_4.vkp"
+		"CF75v23/11202-NMFP_v3_5.vkp"
 	],
 	[
 		"CF75v23/11203-draw_hook_v1_9.vkp"
@@ -32132,5 +32132,38 @@
 	],
 	[
 		"CF75v23/11218-disable_messages_kl_sa.vkp"
+	],
+	null,
+	null,
+	null,
+	null,
+	null,
+	null,
+	null,
+	null,
+	null,
+	null,
+	null,
+	null,
+	[
+		"CF75v23/11231-kill_mms_client_core_process.vkp"
+	],
+	null,
+	null,
+	null,
+	null,
+	null,
+	null,
+	[
+		"C72v22/11238-fix_cursor_in_tile_view_v1_1.vkp"
+	],
+	[
+		"C72v22/11239-fix_navigation_in_tile_view_v1_1_1.vkp"
+	],
+	[
+		"C72v22/11240-NMFP_v3_5.vkp"
+	],
+	[
+		"C72v22/11241-use_e_header_font_from_definition.vkp"
 	]
 ]
