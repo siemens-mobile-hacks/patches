@@ -88740,16 +88740,6 @@
 				"en": "Use extra header font only from 'Definition'"
 			}
 		},
-		"11245": {
-			"id": 11245,
-			"model": "C72v22",
-			"file": "C72v22/11245-date_instead_of_p_name_in_ss_v2_1.vkp",
-			"mtime": 1762415766000,
-			"title": {
-				"ru": "Дата вместо имени оператора в заставке",
-				"en": "Date instead of provider name in screensaver"
-			}
-		},
 		"11246": {
 			"id": 11246,
 			"model": "C72v22",
