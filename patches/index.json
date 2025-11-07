@@ -4662,7 +4662,7 @@
 			}
 		},
 		"10076": {
-			"id": "10076",
+			"id": 10076,
 			"model": "EL71v45",
 			"file": "EL71v45/10076-library.vkp",
 			"mtime": 1292840336000,
@@ -5550,7 +5550,7 @@
 			}
 		},
 		"1941": {
-			"id": "1941",
+			"id": 1941,
 			"model": "S75v22",
 			"file": "S75v22/1941-Extended_AT_CGSN_command_v2.vkp",
 			"mtime": 1140987600000,
@@ -10295,7 +10295,7 @@
 			}
 		},
 		"5624": {
-			"id": "5624",
+			"id": 5624,
 			"model": "S75v47",
 			"file": "S75v47/5624-S75sw47_Functions_Library_120812.vkp",
 			"additionalFile": "S75v47/5624-Functions_library_100410.zip",
@@ -15173,7 +15173,7 @@
 			}
 		},
 		"8285": {
-			"id": "8285",
+			"id": 8285,
 			"model": "S75v52",
 			"file": "S75v52/8285-swilib_v160624.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
@@ -21576,7 +21576,7 @@
 			}
 		},
 		"10522": {
-			"id": "10522",
+			"id": 10522,
 			"model": "SL75v47",
 			"file": "SL75v47/10522-Function_Library120603.vkp",
 			"additionalFile": "SL75v47/10522-Function_Library120603.rar",
@@ -21889,7 +21889,7 @@
 			}
 		},
 		"7634": {
-			"id": "7634",
+			"id": 7634,
 			"model": "SL75v52",
 			"file": "SL75v52/7634-Functions_library.vkp",
 			"mtime": 1200294382000,
@@ -25352,7 +25352,7 @@
 			}
 		},
 		"10542": {
-			"id": "10542",
+			"id": 10542,
 			"model": "CF75v23",
 			"file": "CF75v23/10542-swilib_v071025.vkp",
 			"mtime": 1759860710000,
@@ -29579,7 +29579,7 @@
 			}
 		},
 		"6285": {
-			"id": "6285",
+			"id": 6285,
 			"model": "CX75v13",
 			"file": "CX75v13/6285-swilib.vkp",
 			"additionalFile": "CX75v13/6285-swilib.zip",
@@ -32371,7 +32371,7 @@
 			}
 		},
 		"4736": {
-			"id": "4736",
+			"id": 4736,
 			"model": "CX75v25",
 			"file": "CX75v25/4736-fl_swi.vkp",
 			"additionalFile": "CX75v25/4736-fl_swi.rar",
@@ -39887,7 +39887,7 @@
 			}
 		},
 		"4673": {
-			"id": "4673",
+			"id": 4673,
 			"model": "M75v25",
 			"file": "M75v25/4673-BigFunctionLibrary.vkp",
 			"mtime": 1176023636000,
@@ -44751,7 +44751,7 @@
 			}
 		},
 		"10518": {
-			"id": "10518",
+			"id": 10518,
 			"model": "C75v22",
 			"file": "C75v22/10518-swilib_c75_22_120628.vkp",
 			"mtime": 1340924442000,
@@ -46391,7 +46391,7 @@
 			}
 		},
 		"10516": {
-			"id": "10516",
+			"id": 10516,
 			"model": "C75v24",
 			"file": "C75v24/10516-SWI_C75_24_120628.vkp",
 			"mtime": 1340923204000,
@@ -55677,7 +55677,7 @@
 			}
 		},
 		"7545": {
-			"id": "7545",
+			"id": 7545,
 			"model": "S65v58",
 			"file": "S65v58/7545-Library.vkp",
 			"mtime": 1179819080000,
@@ -60513,7 +60513,7 @@
 			}
 		},
 		"10131": {
-			"id": "10131",
+			"id": 10131,
 			"model": "SL65v53",
 			"file": "SL65v53/10131-swilib_16_01_2011.vkp",
 			"mtime": 1299855222000,
@@ -62226,7 +62226,7 @@
 			}
 		},
 		"7546": {
-			"id": "7546",
+			"id": 7546,
 			"model": "SK65v50",
 			"file": "SK65v50/7546-library.vkp",
 			"additionalFile": "SK65v50/7546-library.zip",
@@ -68288,7 +68288,7 @@
 			}
 		},
 		"10625": {
-			"id": "10625",
+			"id": 10625,
 			"model": "CX70v56",
 			"file": "CX70v56/10625-swilib_v241024.vkp",
 			"mtime": 1729764078000,
@@ -87131,7 +87131,7 @@
 			"id": 5830,
 			"model": "C72v22",
 			"file": "C72v22/5830-Smooth_scrolling_of_long_names.vkp",
-			"mtime": 1160061548000,
+			"mtime": 1762411682000,
 			"title": {
 				"ru": "Плавный скроллинг длинных названий и имен",
 				"en": "Smooth scrolling of long names"
@@ -87200,8 +87200,8 @@
 		"5837": {
 			"id": 5837,
 			"model": "C72v22",
-			"file": "C72v22/5837-Decrease_Keyboard_Long_Press_Delay.vkp",
-			"mtime": 1160062316000,
+			"file": "C72v22/5837-decrease_keyboard_long_press_delay.vkp",
+			"mtime": 1762411336000,
 			"title": {
 				"ru": "Уменьшить задержку для долгого нажатия клавиш",
 				"en": "Decrease Keyboard Long Press Delay"
@@ -87789,7 +87789,7 @@
 			}
 		},
 		"6954": {
-			"id": "6954",
+			"id": 6954,
 			"model": "C72v22",
 			"file": "C72v22/6954-swilib_v051125.vkp",
 			"mtime": 1762336910000,
@@ -88533,7 +88533,7 @@
 			"id": 11120,
 			"model": "C72v22",
 			"file": "C72v22/11120-c72v22_smooth_scroll_of_long_header.vkp",
-			"mtime": 1746305304000,
+			"mtime": 1762411734000,
 			"title": {
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
@@ -88587,6 +88587,56 @@
 			"title": {
 				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
 				"en": "Use extra header font only from 'Definition'"
+			}
+		},
+		"11242": {
+			"id": 11242,
+			"model": "C72v22",
+			"file": "C72v22/11242-redisign_surf_and_fun_menu.vkp",
+			"mtime": 1762412836000,
+			"title": {
+				"ru": "Переработка меню 'Интерн./игр'",
+				"en": "Redesign 'Surf & fun' menu"
+			}
+		},
+		"11243": {
+			"id": 11243,
+			"model": "C72v22",
+			"file": "C72v22/11243-speed_up_overlay_load_on_startup.vkp",
+			"mtime": 1762413274000,
+			"title": {
+				"ru": "Ускорить загрузку overlay info при старте телефона",
+				"en": "Speed up overlay info load on startup"
+			}
+		},
+		"11244": {
+			"id": 11244,
+			"model": "C72v22",
+			"file": "C72v22/11244-fast_ss_appearance_after_kbd_lock.vkp",
+			"mtime": 1762414860000,
+			"title": {
+				"ru": "Моментальный запуск скринсейвера после блокировки клавиатуры",
+				"en": "Fast ScreenSaver appearance after keyboard lock"
+			}
+		},
+		"11245": {
+			"id": 11245,
+			"model": "C72v22",
+			"file": "C72v22/11245-date_instead_of_p_name_in_ss_v2_1.vkp",
+			"mtime": 1762415766000,
+			"title": {
+				"ru": "Дата вместо имени оператора в заставке",
+				"en": "Date instead of provider name in screensaver"
+			}
+		},
+		"11246": {
+			"id": 11246,
+			"model": "C72v22",
+			"file": "C72v22/11246-temp_e_bl_on_lock_screen_by_any_key.vkp",
+			"mtime": 1762416714000,
+			"title": {
+				"ru": "Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши",
+				"en": "Temporary enable backlight on lock screen by any keypress"
 			}
 		}
 	},
@@ -93881,7 +93931,7 @@
 			}
 		},
 		"10075": {
-			"id": "10075",
+			"id": 10075,
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib_v090725.vkp",
 			"mtime": 1752082864000,
@@ -98721,7 +98771,7 @@
 			}
 		},
 		"10629": {
-			"id": "10629",
+			"id": 10629,
 			"model": "C81v51",
 			"file": "C81v51/10629-swilib_c81v51_vkp.vkp",
 			"mtime": 1718886492000,
@@ -100520,7 +100570,7 @@
 			}
 		},
 		"10839": {
-			"id": "10839",
+			"id": 10839,
 			"model": "S68v52",
 			"file": "S68v52/10839-swilib.vkp",
 			"mtime": 1717526596000,
@@ -100818,7 +100868,7 @@
 			}
 		},
 		"10395": {
-			"id": "10395",
+			"id": 10395,
 			"model": "CL61v128",
 			"file": "CL61v128/10395-swilib_cl61v00_db128.vkp",
 			"additionalFile": "CL61v128/10395-swilib_cl61v00_db128.zip",

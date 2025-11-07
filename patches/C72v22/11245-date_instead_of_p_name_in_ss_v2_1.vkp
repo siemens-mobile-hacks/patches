@@ -1,0 +1,26 @@
+;C72v22
+;Дата вместо имени оператора в заставке 
+;Date instead of provider name in screensaver
+;(c) FIL
+;(r) Виктор89
+;Version: 2.1
+;PatchID: 11245
+;Details: https://patches.kibab.com/patches/details.php5?id=11245
+/*
+
+*/
+
+; .Insert_Hook
+0932778: 46524F4D5F564F4943455F414C3A205245434F52445F5245515F48616E646C6572282920676F7420766F696365414C5F53746F70 73B5094B05000C00684600211600984769462000054B0F22984732002800044B2100984773BDC04673DAB9A053EAB9A0974ACAA0
+
+; .Insert_Jump_1
+0905D20: 37F0FCEA 2CF02AFD
+
+; .Insert_Jump_2_Part_1
+0905CF0: 0022 03E0
+
+; .Insert_Jump_2_Part_2
+0905D00: 37F00CEB 2CF03AFD
+
+;------------------------- end -------------------------
+

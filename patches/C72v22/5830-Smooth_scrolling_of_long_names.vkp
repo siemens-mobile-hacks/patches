@@ -10,6 +10,6 @@
 */
 
 09416F0: D007 1202 ; delay before start
-09416F4: 2C01 2A00 ; scrolling speed
+09416F4: 2C01 6000 ; scrolling speed
 ;------------------------- end -------------------------
 
