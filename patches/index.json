@@ -88740,16 +88740,6 @@
 				"en": "Use extra header font only from 'Definition'"
 			}
 		},
-		"11242": {
-			"id": 11242,
-			"model": "C72v22",
-			"file": "C72v22/11242-redisign_surf_and_fun_menu.vkp",
-			"mtime": 1762412836000,
-			"title": {
-				"ru": "Переработка меню 'Интерн./игр'",
-				"en": "Redesign 'Surf & fun' menu"
-			}
-		},
 		"11243": {
 			"id": 11243,
 			"model": "C72v22",
