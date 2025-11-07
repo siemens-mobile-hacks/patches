@@ -68768,6 +68768,16 @@
 				"ru": "Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши",
 				"en": "Temporary enable backlight on lock screen by any keypress"
 			}
+		},
+		"11250": {
+			"id": 11250,
+			"model": "CX70v56",
+			"file": "CX70v56/11250-Native_with_FlexibleMenu_CX70_SW56.vkp",
+			"mtime": 1762541310000,
+			"title": {
+				"ru": "Заменить Native Menu на Flexible Menu в Developer setup",
+				"en": "Replace Native Menu with Flexible Menu in Developer Setup"
+			}
 		}
 	},
 	"C55v24": {
