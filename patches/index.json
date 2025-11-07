@@ -88740,16 +88740,6 @@
 				"en": "Use extra header font only from 'Definition'"
 			}
 		},
-		"11243": {
-			"id": 11243,
-			"model": "C72v22",
-			"file": "C72v22/11243-speed_up_overlay_load_on_startup.vkp",
-			"mtime": 1762413274000,
-			"title": {
-				"ru": "Ускорить загрузку overlay info при старте телефона",
-				"en": "Speed up overlay info load on startup"
-			}
-		},
 		"11244": {
 			"id": 11244,
 			"model": "C72v22",
