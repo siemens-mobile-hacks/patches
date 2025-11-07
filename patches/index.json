@@ -88819,6 +88819,16 @@
 				"ru": "Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши",
 				"en": "Temporary enable backlight on lock screen by any keypress"
 			}
+		},
+		"11249": {
+			"id": 11249,
+			"model": "C72v22",
+			"file": "C72v22/11249-Native_with_FlexibleMenu_C72_SW22.vkp",
+			"mtime": 1762540792000,
+			"title": {
+				"ru": "Заменить Native Menu на Flexible Menu в Developer setup",
+				"en": "Replace Native Menu with Flexible Menu in Developer Setup"
+			}
 		}
 	},
 	"SXG75v22": {
