@@ -34873,6 +34873,16 @@
 				"ru": "Не отображать иконки центральной навигационной клавиши",
 				"en": "Don't display central navigation key icon"
 			}
+		},
+		"11248": {
+			"id": 11248,
+			"model": "CX75v25",
+			"file": "CX75v25/11248-Native_with_FlexibleMenu_CX75_SW25.vkp",
+			"mtime": 1762540558000,
+			"title": {
+				"ru": "Заменить Native Menu на Flexible Menu в Developer setup",
+				"en": "Replace Native Menu with Flexible Menu in Developer Setup"
+			}
 		}
 	},
 	"M75v5": {
