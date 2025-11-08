@@ -1,0 +1,18 @@
+;C72v22
+;Заменить Native Menu на Flexible Menu в Developer setup
+;Replace Native Menu with Flexible Menu in Developer Setup
+;(c) Romir0o
+;Version: 
+;PatchID: 11249
+;Details: https://patches.kibab.com/patches/details.php5?id=11249
+/*
+Патч заменяет Native Menu на Flexible Menu в Developer Setup
+Это может быть актуально для тех, кто использует NativeMenu вместо стандартного
+English:The patch replaces Native Menu with Flexible Menu in Developer Setup
+It might be relevant for those who use NativeMenu instead of the standard one
+*/
+
+94E54C: 4E6174697665204D656E7500 466C657869626C654D656E75
+949784: 23778FA0 4B328FA0
+;------------------------- end -------------------------
+

@@ -16613,7 +16613,7 @@
 		"C72v22/5836-MainScreen_positioning_v2.vkp"
 	],
 	[
-		"C72v22/5837-Decrease_Keyboard_Long_Press_Delay.vkp"
+		"C72v22/5837-decrease_keyboard_long_press_delay.vkp"
 	],
 	[
 		"C72v22/5838-Disable_Retarget_Exit.vkp"
@@ -32165,5 +32165,32 @@
 	],
 	[
 		"C72v22/11241-use_e_header_font_from_definition.vkp"
+	],
+	[
+		"C72v22/11242-redisign_surf_and_fun_menu.vkp"
+	],
+	[
+		"C72v22/11243-speed_up_overlay_load_on_startup.vkp"
+	],
+	[
+		"C72v22/11244-fast_ss_appearance_after_kbd_lock.vkp"
+	],
+	[
+		"C72v22/11245-date_instead_of_p_name_in_ss_v2_1.vkp"
+	],
+	[
+		"C72v22/11246-temp_e_bl_on_lock_screen_by_any_key.vkp"
+	],
+	[
+		"C75v24/11247-Native_with_FlexibleMenu_C75_SW24.vkp"
+	],
+	[
+		"CX75v25/11248-Native_with_FlexibleMenu_CX75_SW25.vkp"
+	],
+	[
+		"C72v22/11249-Native_with_FlexibleMenu_C72_SW22.vkp"
+	],
+	[
+		"CX70v56/11250-Native_with_FlexibleMenu_CX70_SW56.vkp"
 	]
 ]
