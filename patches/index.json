@@ -88869,6 +88869,16 @@
 				"ru": "Отображать сообщение об ошибке если не удалось запустить браузер",
 				"en": "Show an error message if browser couldn't start"
 			}
+		},
+		"11254": {
+			"id": 11254,
+			"model": "C72v22",
+			"file": "C72v22/11254-fix_keypad_lock_ui.vkp",
+			"mtime": 1762722394000,
+			"title": {
+				"ru": "Исправить интерфейс блокировки клавиатуры",
+				"en": "Fix Keypad Lock UI"
+			}
 		}
 	},
 	"SXG75v22": {
