@@ -1,0 +1,30 @@
+;C72v22
+;Отображать сообщение вместо запуска Java приложения когда Java машина отключена
+;Display a message instead of starting a Java application if Java is disabled
+;(c) FIL
+;Version: 
+;PatchID: 11252
+;Details: https://patches.kibab.com/patches/details.php5?id=11252
+/*
+Если Java машина отключена и попытаться запустить любое Java приложение, то создается "пустой" CSM и течет память при каждой попытке запуска.
+Теперь вместо этого отображается сообщение "Java is disabled!", память больше не течет!
+*/
+
+#pragma enable old_equal_ff
+; .ShowErrorMessage1
+17C0060: 4A6176612069732064697361626C65642100000070B5094B050009480E009847041E06D0074B3100280098470400200070BD0549054B01209847F8E7484182A0034400002C85CBA060007CA15FBF12A1
+#pragma disable old_equal_ff
+
+; .ShowErrorMessage1_Jump
+0CB8590: E5FFFFEB B71E2CFA
+
+#pragma enable old_equal_ff
+; .ShowErrorMessage2
+17C00B0: F8B50A4B05000A480E0017009847041E06D02800074B3A00310098470120F8BD0549064B012098472000F8E7484182A003440000E0F212A160007CA15FBF12A1
+#pragma disable old_equal_ff
+
+; .ShowErrorMessage2_Jump
+0C9AE00: 365112EB AA942CFA
+
+;------------------------- end -------------------------
+
