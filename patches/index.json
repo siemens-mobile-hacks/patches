@@ -88839,6 +88839,16 @@
 				"ru": "Заменить Native Menu на Flexible Menu в Developer setup",
 				"en": "Replace Native Menu with Flexible Menu in Developer Setup"
 			}
+		},
+		"11251": {
+			"id": 11251,
+			"model": "C72v22",
+			"file": "C72v22/11251-memory_resizer_v2.vkp",
+			"mtime": 1762713336000,
+			"title": {
+				"ru": "Memory resizer",
+				"en": "Memory resizer"
+			}
 		}
 	},
 	"SXG75v22": {
