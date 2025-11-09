@@ -591,9 +591,10 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 ;874:              ; 21D: int GSMTXT_Decode(WSHDR *dest,void *pkt,int len,int encoding_type, void *(*malloc_adr)(int), void (*mfree_adr)(void))
 0878: 0xA0C9EC01   ; 21E: __thumb void FocusGUI(int id)
 087C: 0xA0C9EC1F   ; 21F: __thumb void UnfocusGUI(void)
-
-
+0960: 0xA0CC9C65   ; 258: __thumb int CalcBitmapSize(short w,short h, char typy);
 0B8C: 0xA0966C8C   ; 2E3: __arm int fexists(WSHDR *FileName);
+0E14: 0xA0824148   ; 385: __arm GBSPROC *GetGBSProcAddress(short cepid);
+0E38: 0xA082812C   ; 38E: __arm void CreateICL(PGROUP *pg);
 #pragma disable old_equal_ff
 +0
 ;------------------------- end -------------------------
