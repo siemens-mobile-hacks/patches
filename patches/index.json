@@ -88879,6 +88879,16 @@
 				"ru": "Исправить интерфейс блокировки клавиатуры",
 				"en": "Fix Keypad Lock UI"
 			}
+		},
+		"11255": {
+			"id": 11255,
+			"model": "C72v22",
+			"file": "C72v22/11255-fade_light_off_faster.vkp",
+			"mtime": 1762722750000,
+			"title": {
+				"ru": "Ускоренное гашение подсветки",
+				"en": "Fade light off faster"
+			}
 		}
 	},
 	"SXG75v22": {
