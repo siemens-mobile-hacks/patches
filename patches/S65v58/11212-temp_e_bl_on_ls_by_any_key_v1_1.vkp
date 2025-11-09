@@ -2,7 +2,7 @@
 ;Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши
 ;Temporary enable backlight on lock screen by any keypress
 ;(c) FIL
-;Version: 
+;Version: 1.1
 ;PatchID: 11212
 ;Details: https://patches.kibab.com/patches/details.php5?id=11212
 /*
@@ -11,11 +11,11 @@
 
 #pragma enable old_equal_ff
 ; .Hook
-17E0A00: 10B50349034B03209847034B984710BDFF7F00006547C3A03D046AA1
+17E0A00: 10B504490400044B03209847034B2000984710BDFF7F00006547C3A0B90514A1
 #pragma disable old_equal_ff
 
 ; .Jump
-16A2AD2: FDF7B3FC 3DF195FF
+16A597E: 10F05AEA 3BF13FF8
 
 ;------------------------- end -------------------------
 
