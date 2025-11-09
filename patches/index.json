@@ -88859,6 +88859,16 @@
 				"ru": "Отображать сообщение вместо запуска Java приложения когда Java машина отключена",
 				"en": "Display a message instead of starting a Java application if Java is disabled"
 			}
+		},
+		"11253": {
+			"id": 11253,
+			"model": "C72v22",
+			"file": "C72v22/11253-message_if_browser_cound_t_start.vkp",
+			"mtime": 1762716576000,
+			"title": {
+				"ru": "Отображать сообщение об ошибке если не удалось запустить браузер",
+				"en": "Show an error message if browser couldn't start"
+			}
 		}
 	},
 	"SXG75v22": {
