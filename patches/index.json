@@ -88823,8 +88823,8 @@
 		"11246": {
 			"id": 11246,
 			"model": "C72v22",
-			"file": "C72v22/11246-temp_e_bl_on_lock_screen_by_any_key.vkp",
-			"mtime": 1762416714000,
+			"file": "C72v22/11246-temp_e_bl_on_ls_by_any_key_v1_1.vkp",
+			"mtime": 1762717988000,
 			"title": {
 				"ru": "Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши",
 				"en": "Temporary enable backlight on lock screen by any keypress"
