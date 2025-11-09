@@ -4,7 +4,7 @@
 ;(c) avkiev
 ;(r) Geka
 ;(p) Virusmater
-;Version: 051125
+;Version: 101125
 ;PatchID: 6954
 ;Details: https://patches.kibab.com/patches/details.php5?id=6954
 /*
@@ -591,6 +591,9 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 ;874:              ; 21D: int GSMTXT_Decode(WSHDR *dest,void *pkt,int len,int encoding_type, void *(*malloc_adr)(int), void (*mfree_adr)(void))
 0878: 0xA0C9EC01   ; 21E: __thumb void FocusGUI(int id)
 087C: 0xA0C9EC1F   ; 21F: __thumb void UnfocusGUI(void)
+
+
+0B8C: 0xA0966C8C   ; 2E3: __arm int fexists(WSHDR *FileName);
 #pragma disable old_equal_ff
 +0
 ;------------------------- end -------------------------
