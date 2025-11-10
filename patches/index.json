@@ -46589,6 +46589,16 @@
 				"ru": "Заменить Native Menu на Flexible Menu в Developer setup",
 				"en": "Replace Native Menu with Flexible Menu in Developer Setup"
 			}
+		},
+		"11256": {
+			"id": 11256,
+			"model": "C75v24",
+			"file": "C75v24/11256-set_csm_for_nm_C75v24.vkp",
+			"mtime": 1762795432000,
+			"title": {
+				"ru": "Задать CSM для Native Menu",
+				"en": "Set CSM for Native Menu"
+			}
 		}
 	},
 	"C65v50": {

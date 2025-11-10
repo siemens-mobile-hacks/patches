@@ -1,0 +1,20 @@
+;C75v24
+;Задать CSM для Native Menu
+;Set CSM for Native Menu
+;(c) FIL
+;(r) Виктор89, Marie, FIL
+;(p) Romir0o
+;Version: 
+;PatchID: 11256
+;Details: https://patches.kibab.com/patches/details.php5?id=11256
+/*
+Можно переключаться через XTask.
+*/
+
+2C1CB0: 4FD0 C046
+2C1D4C: CAF1 0021 
+2C1D4E: 84EAFEBD C9F1AEE9
+2C1D52: 0020 FEBD  
+2C1D78: E3F785FE C046C046  
+;------------------------- end -------------------------
+
