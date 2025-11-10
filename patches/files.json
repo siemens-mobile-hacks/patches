@@ -32107,13 +32107,13 @@
 		"S46v64/11209-disable_crc_check.zip"
 	],
 	[
-		"CF75v23/11210-temp_e_bl_on_lock_screen_by_any_key.vkp"
+		"CF75v23/11210-temp_e_bl_on_ls_by_any_key_v1_1.vkp"
 	],
 	[
-		"CX70v56/11211-temp_e_bl_on_lock_screen_by_any_key.vkp"
+		"CX70v56/11211-temp_e_bl_on_ls_by_any_key_v1_1.vkp"
 	],
 	[
-		"S65v58/11212-temp_e_bl_on_lock_screen_by_any_key.vkp"
+		"S65v58/11212-temp_e_bl_on_ls_by_any_key_v1_1.vkp"
 	],
 	[
 		"CF75v23/11213-allow_full_d_bl_off_in_open_cs_mode.vkp"
@@ -32179,7 +32179,7 @@
 		"C72v22/11245-date_instead_of_p_name_in_ss_v2_1.vkp"
 	],
 	[
-		"C72v22/11246-temp_e_bl_on_lock_screen_by_any_key.vkp"
+		"C72v22/11246-temp_e_bl_on_ls_by_any_key_v1_1.vkp"
 	],
 	[
 		"C75v24/11247-Native_with_FlexibleMenu_C75_SW24.vkp"
@@ -32192,5 +32192,20 @@
 	],
 	[
 		"CX70v56/11250-Native_with_FlexibleMenu_CX70_SW56.vkp"
+	],
+	[
+		"C72v22/11251-memory_resizer_v2.vkp"
+	],
+	[
+		"C72v22/11252-d_msg_instead_of_starting_java.vkp"
+	],
+	[
+		"C72v22/11253-message_if_browser_cound_t_start.vkp"
+	],
+	[
+		"C72v22/11254-fix_keypad_lock_ui.vkp"
+	],
+	[
+		"C72v22/11255-fade_light_off_faster.vkp"
 	]
 ]

@@ -1,0 +1,21 @@
+;C72v22
+;Memory resizer
+;Memory resizer
+;(c) Zhek@, ~Jhellico, Zeus
+;(r) Rst7
+;(p) FIL
+;Version: 2
+;PatchID: 11251
+;Details: https://patches.kibab.com/patches/details.php5?id=11251
+/*
+Патч увеличивает кол-во свободной оперативной памяти до ~3Мб.
+После установки Java и браузер работать не будут!
+*/
+
+11BF0F0: 4008 4608 ; increase non-permanent 0x60000
+11BF0F8: E80A E20A ; cut 0x6000 from permanent
+009BCE0: 0x177000 0x000000 ; disable java heap
+0CBE4A4: AAF7F4EB C046C046 ; disable java
+0CBE48C: AAF700EC C046C046 ; disable browser
+;------------------------- end -------------------------
+

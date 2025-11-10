@@ -1,19 +1,21 @@
-;C72v22
+;CX70v56
 ;Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши
 ;Temporary enable backlight on lock screen by any keypress
 ;(c) FIL
-;Version: 
-;PatchID: 11246
-;Details: https://patches.kibab.com/patches/details.php5?id=11246
+;Version: 1.1
+;PatchID: 11211
+;Details: https://patches.kibab.com/patches/details.php5?id=11211
 /*
 
 */
 
+#pragma enable old_equal_ff
 ; .Hook
-08CB3A0: 41746B4D656E755F43736D4F70656E20666F722053454C4543542049 10B50349034B03209847034B984710BDFF7F00000DB6B9A027EF8DA0
+17E0A00: 10B504490400044B03209847034B2000984710BDFF7F0000E5E1B8A029F4C8A0
+#pragma disable old_equal_ff
 
 ; .Jump
-08E17A4: FDF7BFFB E9F7FCFD
+172297E: 10F0A8EA BEF03FF8
 
 ;------------------------- end -------------------------
 

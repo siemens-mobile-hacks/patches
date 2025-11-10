@@ -1,0 +1,14 @@
+;C72v22
+;Ускоренное гашение подсветки
+;Fade light off faster
+;(c) FIL
+;Version: 
+;PatchID: 11255
+;Details: https://patches.kibab.com/patches/details.php5?id=11255
+/*
+
+*/
+
+0BEC858: 021C FF22
+;------------------------- end -------------------------
+
