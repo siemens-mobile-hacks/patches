@@ -57191,8 +57191,8 @@
 		"10989": {
 			"id": 10989,
 			"model": "S65v58",
-			"file": "S65v58/10989-battery_percentage_instead_of_icons.vkp",
-			"mtime": 1731217954000,
+			"file": "S65v58/10989-battery_perc_instead_of_icons_v1_1.vkp",
+			"mtime": 1763268316000,
 			"title": {
 				"ru": "Процент заряда батареи вместо иконок",
 				"en": "Battery percentage instead of icons"
