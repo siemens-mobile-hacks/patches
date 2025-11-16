@@ -95952,8 +95952,8 @@
 		"11029": {
 			"id": 11029,
 			"model": "E71v45",
-			"file": "E71v45/11029-battery_percentage_instead_of_icons.vkp",
-			"mtime": 1735823892000,
+			"file": "E71v45/11029-battery_perc_instead_of_icons_v1_1.vkp",
+			"mtime": 1763268274000,
 			"title": {
 				"ru": "Процент заряда батареи вместо иконок",
 				"en": "Battery percentage instead of icons"
