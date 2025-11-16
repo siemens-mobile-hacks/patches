@@ -88909,6 +88909,16 @@
 				"ru": "Ускоренное гашение подсветки",
 				"en": "Fade light off faster"
 			}
+		},
+		"11258": {
+			"id": 11258,
+			"model": "C72v22",
+			"file": "C72v22/11258-battery_perc_instead_of_icons_v1_1.vkp",
+			"mtime": 1763268364000,
+			"title": {
+				"ru": "Процент заряда батареи вместо иконок",
+				"en": "Battery percentage instead of icons"
+			}
 		}
 	},
 	"SXG75v22": {
