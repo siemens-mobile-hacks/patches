@@ -25800,6 +25800,16 @@
 				"ru": "Изменить цвет сетки при прорисовке окошек",
 				"en": "Change the netting color while showing MsgBoxes"
 			}
+		},
+		"11263": {
+			"id": 11263,
+			"model": "CF75v23",
+			"file": "CF75v23/11263-battery_perc_instead_of_icons_v1_1.vkp",
+			"mtime": 1763367724000,
+			"title": {
+				"ru": "Процент заряда батареи вместо иконок",
+				"en": "Battery percentage instead of icons"
+			}
 		}
 	},
 	"CX75v5": {
