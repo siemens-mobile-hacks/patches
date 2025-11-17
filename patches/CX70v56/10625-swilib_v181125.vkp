@@ -128,8 +128,8 @@
 01C8: 0xA0B9CE9B ; 072: GetCurrentSecondOfCall
 01CC: 0xA1259D6B ; 073: GetTypeOfCall
 01D0: 0xA08F0857 ; 074: void* GetFunctionPointer(char * _shortcut)
-01D4: 0xA0CB39E1 ; 075: void  StoreXYWHtoRECT_2(void *RECT,int x,int y,int w,int h)
-01D8: 0xA0CE6C55 ; 076: SetWindowText
+01D4: 0xA1718AB1 ; 075: IsCanvasBufferSet(char CanvasID)
+01D8: 0xA1718AFD ; 076: GetCanvasBufferPicPtr(char CanvasID)
 01DC: 0xA0CE4433 ; 077: SetWindowColor
 01E0: 0xA0B914B7 ; 078: GetTimeFormat
 01E4: 0xA0CB2DB5 ; 079: PushWindowBuffer
@@ -855,7 +855,7 @@
 0E2C: 0xA868AF98 ; 38B: char *RamLastStoreString()
 ;0E30:           ; 38C: int format(unsigned short drive, unsigned int *error);
 ;0E34:           ; 38D: int stat(int fhandler, FStat *fstat, unsigned int *error);
-;0E38:           ; 38E: __arm void CreateICL(PGROUP *pg);
+0E38: 0xA0828148 ; 38E: __arm void CreateICL(PGROUP *pg);
 ;0E3C:           ; 38F: PGroupProc *CreatePGroupRes(int mask, int unk_zero, TaskConfig *conf, int size);
 ;0E40:           ; 390: PGroupProc *PGroupCurrentTaskPointer();
 ;0E44:           ; 391: void *MemMBPAlloc(void *pool, int size);
