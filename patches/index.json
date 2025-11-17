@@ -68798,6 +68798,16 @@
 				"ru": "Заменить Native Menu на Flexible Menu в Developer setup",
 				"en": "Replace Native Menu with Flexible Menu in Developer Setup"
 			}
+		},
+		"11259": {
+			"id": 11259,
+			"model": "CX70v56",
+			"file": "CX70v56/11259-battery_perc_instead_of_icons_v1_1.vkp",
+			"mtime": 1763353132000,
+			"title": {
+				"ru": "Процент заряда батареи вместо иконок",
+				"en": "Battery percentage instead of icons"
+			}
 		}
 	},
 	"C55v24": {
