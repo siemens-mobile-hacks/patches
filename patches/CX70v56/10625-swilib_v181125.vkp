@@ -2,7 +2,7 @@
 ;Библиотека Функций
 ;Function Library
 ;(c) avkiev
-;Version: 241024
+;Version: 181125
 ;PatchID: 10625
 ;Details: https://patches.kibab.com/patches/details.php5?id=10625
 /*
@@ -695,7 +695,7 @@
 ;B80:            ; 2E0: IMGHDR *GetIMGHDRFromThemeCache(int index)
 0B84: 0xA095233C ; 2E1: int GetExtUidByFileName_ws(WSHDR *path)
 0B88: 0xA0C8CA47 ; 2E2: int wstrcmp(WSHDR *ws1, WSHDR *ws2)
-;B8C:            ; 2E3: int fexists(WSHDR* FileName)
+0B8C: 0xA08E7280 ; 2E3: int fexists(WSHDR* FileName)
 ;B90:            ; 2E4: int SettingsAE_Update_ws(WSHDR *,int set,char * entry,char *keyword)
 ;B94:            ; 2E5: int SettingsAE_Read_ws(WSHDR *,int set,char * entry,char *keyword)
 ;B98:            ; 2E6: int SettingsAE_SetFlag(int val,int set,char * entry,char *keyword)
