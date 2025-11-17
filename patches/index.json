@@ -88939,6 +88939,16 @@
 				"ru": "Процент заряда батареи вместо иконок",
 				"en": "Battery percentage instead of icons"
 			}
+		},
+		"11261": {
+			"id": 11261,
+			"model": "C72v22",
+			"file": "C72v22/11261-change_netting_color.vkp",
+			"mtime": 1763354696000,
+			"title": {
+				"ru": "Изменить цвет сетки при прорисовке окошек",
+				"en": "Change the netting color while showing MsgBoxes"
+			}
 		}
 	},
 	"SXG75v22": {
