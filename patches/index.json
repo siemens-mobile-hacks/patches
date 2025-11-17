@@ -25790,6 +25790,16 @@
 				"ru": "Отключение загрузки ядра MMS клиента",
 				"en": "Kill MMS client core process"
 			}
+		},
+		"11262": {
+			"id": 11262,
+			"model": "CF75v23",
+			"file": "CF75v23/11262-change_netting_color.vkp",
+			"mtime": 1763365136000,
+			"title": {
+				"ru": "Изменить цвет сетки при прорисовке окошек",
+				"en": "Change the netting color while showing MsgBoxes"
+			}
 		}
 	},
 	"CX75v5": {
