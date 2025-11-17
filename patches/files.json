@@ -31460,7 +31460,7 @@
 		"EL71v45/10988-custom_icons_addon_to_nmfp.zip"
 	],
 	[
-		"S65v58/10989-battery_percentage_instead_of_icons.vkp"
+		"S65v58/10989-battery_perc_instead_of_icons_v1_1.vkp"
 	],
 	[
 		"S65v58/10990-fix_network_icon.vkp"
@@ -31580,7 +31580,7 @@
 		"E71v45/11028-2line_cursor_inbox.vkp"
 	],
 	[
-		"E71v45/11029-battery_percentage_instead_of_icons.vkp"
+		"E71v45/11029-battery_perc_instead_of_icons_v1_1.vkp"
 	],
 	[
 		"E71v45/11030-neh.vkp"
@@ -32213,5 +32213,8 @@
 	],
 	[
 		"CX75v25/11257-set_csm_for_nm_CX75v25.vkp"
+	],
+	[
+		"C72v22/11258-battery_perc_instead_of_icons_v1_1.vkp"
 	]
 ]
