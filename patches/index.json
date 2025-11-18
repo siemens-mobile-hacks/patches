@@ -88669,6 +88669,16 @@
 				"en": "Don't stop media player playback when minimized"
 			}
 		},
+		"11220": {
+			"id": 11220,
+			"model": "C72v22",
+			"file": "C72v22/11220-disable_network_v1_2.vkp",
+			"mtime": 1763444342000,
+			"title": {
+				"ru": "Отключить сеть",
+				"en": "Disable network"
+			}
+		},
 		"11222": {
 			"id": 11222,
 			"model": "C72v22",
