@@ -4662,7 +4662,7 @@
 			}
 		},
 		"10076": {
-			"id": "10076",
+			"id": 10076,
 			"model": "EL71v45",
 			"file": "EL71v45/10076-library.vkp",
 			"mtime": 1292840336000,
@@ -10295,7 +10295,7 @@
 			}
 		},
 		"5624": {
-			"id": "5624",
+			"id": 5624,
 			"model": "S75v47",
 			"file": "S75v47/5624-S75sw47_Functions_Library_120812.vkp",
 			"additionalFile": "S75v47/5624-Functions_library_100410.zip",
@@ -15173,7 +15173,7 @@
 			}
 		},
 		"8285": {
-			"id": "8285",
+			"id": 8285,
 			"model": "S75v52",
 			"file": "S75v52/8285-swilib_v160624.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
@@ -21576,7 +21576,7 @@
 			}
 		},
 		"10522": {
-			"id": "10522",
+			"id": 10522,
 			"model": "SL75v47",
 			"file": "SL75v47/10522-Function_Library120603.vkp",
 			"additionalFile": "SL75v47/10522-Function_Library120603.rar",
@@ -21889,7 +21889,7 @@
 			}
 		},
 		"7634": {
-			"id": "7634",
+			"id": 7634,
 			"model": "SL75v52",
 			"file": "SL75v52/7634-Functions_library.vkp",
 			"mtime": 1200294382000,
@@ -25352,7 +25352,7 @@
 			}
 		},
 		"10542": {
-			"id": "10542",
+			"id": 10542,
 			"model": "CF75v23",
 			"file": "CF75v23/10542-swilib_v071025.vkp",
 			"mtime": 1759860710000,
@@ -25769,6 +25769,26 @@
 			"title": {
 				"ru": "Отключение загрузки ядра MMS клиента",
 				"en": "Kill MMS client core process"
+			}
+		},
+		"11262": {
+			"id": 11262,
+			"model": "CF75v23",
+			"file": "CF75v23/11262-change_netting_color.vkp",
+			"mtime": 1763365136000,
+			"title": {
+				"ru": "Изменить цвет сетки при прорисовке окошек",
+				"en": "Change the netting color while showing MsgBoxes"
+			}
+		},
+		"11263": {
+			"id": 11263,
+			"model": "CF75v23",
+			"file": "CF75v23/11263-battery_perc_instead_of_icons_v1_1.vkp",
+			"mtime": 1763367724000,
+			"title": {
+				"ru": "Процент заряда батареи вместо иконок",
+				"en": "Battery percentage instead of icons"
 			}
 		}
 	},
@@ -29579,7 +29599,7 @@
 			}
 		},
 		"6285": {
-			"id": "6285",
+			"id": 6285,
 			"model": "CX75v13",
 			"file": "CX75v13/6285-swilib.vkp",
 			"additionalFile": "CX75v13/6285-swilib.zip",
@@ -32371,7 +32391,7 @@
 			}
 		},
 		"4736": {
-			"id": "4736",
+			"id": 4736,
 			"model": "CX75v25",
 			"file": "CX75v25/4736-fl_swi.vkp",
 			"additionalFile": "CX75v25/4736-fl_swi.rar",
@@ -39907,7 +39927,7 @@
 			}
 		},
 		"4673": {
-			"id": "4673",
+			"id": 4673,
 			"model": "M75v25",
 			"file": "M75v25/4673-BigFunctionLibrary.vkp",
 			"mtime": 1176023636000,
@@ -44771,7 +44791,7 @@
 			}
 		},
 		"10518": {
-			"id": "10518",
+			"id": 10518,
 			"model": "C75v22",
 			"file": "C75v22/10518-swilib_c75_22_120628.vkp",
 			"mtime": 1340924442000,
@@ -46411,7 +46431,7 @@
 			}
 		},
 		"10516": {
-			"id": "10516",
+			"id": 10516,
 			"model": "C75v24",
 			"file": "C75v24/10516-SWI_C75_24_120628.vkp",
 			"mtime": 1340923204000,
@@ -55717,7 +55737,7 @@
 			}
 		},
 		"7545": {
-			"id": "7545",
+			"id": 7545,
 			"model": "S65v58",
 			"file": "S65v58/7545-Library.vkp",
 			"mtime": 1179819080000,
@@ -60553,7 +60573,7 @@
 			}
 		},
 		"10131": {
-			"id": "10131",
+			"id": 10131,
 			"model": "SL65v53",
 			"file": "SL65v53/10131-swilib_16_01_2011.vkp",
 			"mtime": 1299855222000,
@@ -62266,7 +62286,7 @@
 			}
 		},
 		"7546": {
-			"id": "7546",
+			"id": 7546,
 			"model": "SK65v50",
 			"file": "SK65v50/7546-library.vkp",
 			"additionalFile": "SK65v50/7546-library.zip",
@@ -68328,7 +68348,7 @@
 			}
 		},
 		"10625": {
-			"id": "10625",
+			"id": 10625,
 			"model": "CX70v56",
 			"file": "CX70v56/10625-swilib_v181125.vkp",
 			"mtime": 1763412890000,
@@ -68777,6 +68797,36 @@
 			"title": {
 				"ru": "Заменить Native Menu на Flexible Menu в Developer setup",
 				"en": "Replace Native Menu with Flexible Menu in Developer Setup"
+			}
+		},
+		"11259": {
+			"id": 11259,
+			"model": "CX70v56",
+			"file": "CX70v56/11259-battery_perc_instead_of_icons_v1_1.vkp",
+			"mtime": 1763353132000,
+			"title": {
+				"ru": "Процент заряда батареи вместо иконок",
+				"en": "Battery percentage instead of icons"
+			}
+		},
+		"11260": {
+			"id": 11260,
+			"model": "CX70v56",
+			"file": "CX70v56/11260-change_netting_color.vkp",
+			"mtime": 1763353650000,
+			"title": {
+				"ru": "Изменить цвет сетки при прорисовке окошек",
+				"en": "Change the netting color while showing MsgBoxes"
+			}
+		},
+		"11265": {
+			"id": 11265,
+			"model": "CX70v56",
+			"file": "CX70v56/11265-red_button_menu.vkp",
+			"mtime": 1763413368000,
+			"title": {
+				"ru": "Меню красной кнопки",
+				"en": "Red button menu"
 			}
 		}
 	},
@@ -87839,7 +87889,7 @@
 			}
 		},
 		"6954": {
-			"id": "6954",
+			"id": 6954,
 			"model": "C72v22",
 			"file": "C72v22/6954-swilib_v101125.vkp",
 			"mtime": 1762721718000,
@@ -88757,6 +88807,26 @@
 			"title": {
 				"ru": "Процент заряда батареи вместо иконок",
 				"en": "Battery percentage instead of icons"
+			}
+		},
+		"11261": {
+			"id": 11261,
+			"model": "C72v22",
+			"file": "C72v22/11261-change_netting_color.vkp",
+			"mtime": 1763354696000,
+			"title": {
+				"ru": "Изменить цвет сетки при прорисовке окошек",
+				"en": "Change the netting color while showing MsgBoxes"
+			}
+		},
+		"11264": {
+			"id": 11264,
+			"model": "C72v22",
+			"file": "C72v22/11264-red_button_menu.vkp",
+			"mtime": 1763409342000,
+			"title": {
+				"ru": "Меню красной кнопки",
+				"en": "Red button menu"
 			}
 		}
 	},
@@ -94051,7 +94121,7 @@
 			}
 		},
 		"10075": {
-			"id": "10075",
+			"id": 10075,
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib_v090725.vkp",
 			"mtime": 1752082864000,
@@ -98891,7 +98961,7 @@
 			}
 		},
 		"10629": {
-			"id": "10629",
+			"id": 10629,
 			"model": "C81v51",
 			"file": "C81v51/10629-swilib_c81v51_vkp.vkp",
 			"mtime": 1718886492000,
@@ -100690,7 +100760,7 @@
 			}
 		},
 		"10839": {
-			"id": "10839",
+			"id": 10839,
 			"model": "S68v52",
 			"file": "S68v52/10839-swilib.vkp",
 			"mtime": 1717526596000,
@@ -100988,7 +101058,7 @@
 			}
 		},
 		"10395": {
-			"id": "10395",
+			"id": 10395,
 			"model": "CL61v128",
 			"file": "CL61v128/10395-swilib_cl61v00_db128.vkp",
 			"additionalFile": "CL61v128/10395-swilib_cl61v00_db128.zip",
