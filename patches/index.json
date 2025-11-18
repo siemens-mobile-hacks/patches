@@ -25810,6 +25810,16 @@
 				"ru": "Процент заряда батареи вместо иконок",
 				"en": "Battery percentage instead of icons"
 			}
+		},
+		"11267": {
+			"id": 11267,
+			"model": "CF75v23",
+			"file": "CF75v23/11267-red_button_menu.vkp",
+			"mtime": 1763456742000,
+			"title": {
+				"ru": "Меню красной кнопки",
+				"en": "Red button menu"
+			}
 		}
 	},
 	"CX75v5": {
