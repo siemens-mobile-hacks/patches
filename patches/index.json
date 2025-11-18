@@ -57467,6 +57467,16 @@
 				"ru": "Меню красной кнопки",
 				"en": "Red button menu"
 			}
+		},
+		"11270": {
+			"id": 11270,
+			"model": "S65v58",
+			"file": "S65v58/11270-fix_startup_animation_on_reboot.vkp",
+			"mtime": 1763464132000,
+			"title": {
+				"ru": "Исправить анимацию включения при перезагрузке",
+				"en": "Fix startup animation on reboot"
+			}
 		}
 	},
 	"SL65v50": {
