@@ -25820,6 +25820,16 @@
 				"ru": "Меню красной кнопки",
 				"en": "Red button menu"
 			}
+		},
+		"11271": {
+			"id": 11271,
+			"model": "CF75v23",
+			"file": "CF75v23/11271-fix_startup_animation_on_reboot.vkp",
+			"mtime": 1763464382000,
+			"title": {
+				"ru": "Исправить анимацию включения при перезагрузке",
+				"en": "Fix startup animation on reboot"
+			}
 		}
 	},
 	"CX75v5": {
