@@ -57201,8 +57201,8 @@
 		"10985": {
 			"id": 10985,
 			"model": "S65v58",
-			"file": "S65v58/10985-disable_network_v1_1.vkp",
-			"mtime": 1756311206000,
+			"file": "S65v58/10985-disable_network_v1_2.vkp",
+			"mtime": 1763451148000,
 			"title": {
 				"ru": "Отключить сеть",
 				"en": "Disable network"
