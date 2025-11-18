@@ -57447,6 +57447,16 @@
 				"ru": "Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши",
 				"en": "Temporary enable backlight on lock screen by any keypress"
 			}
+		},
+		"11266": {
+			"id": 11266,
+			"model": "S65v58",
+			"file": "S65v58/11266-red_button_menu.vkp",
+			"mtime": 1763452010000,
+			"title": {
+				"ru": "Меню красной кнопки",
+				"en": "Red button menu"
+			}
 		}
 	},
 	"SL65v50": {
