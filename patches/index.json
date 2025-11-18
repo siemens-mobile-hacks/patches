@@ -25514,8 +25514,8 @@
 		"11182": {
 			"id": 11182,
 			"model": "CF75v23",
-			"file": "CF75v23/11182-disable_network_v1_1.vkp",
-			"mtime": 1759078458000,
+			"file": "CF75v23/11182-disable_network_v1_2.vkp",
+			"mtime": 1763455820000,
 			"title": {
 				"ru": "Отключить сеть",
 				"en": "Disable network"
