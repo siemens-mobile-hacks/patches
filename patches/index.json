@@ -89019,6 +89019,16 @@
 				"ru": "Меню красной кнопки",
 				"en": "Red button menu"
 			}
+		},
+		"11268": {
+			"id": 11268,
+			"model": "C72v22",
+			"file": "C72v22/11268-fix_startup_animation_on_reboot.vkp",
+			"mtime": 1763461994000,
+			"title": {
+				"ru": "Исправить анимацию включения при перезагрузке",
+				"en": "Fix startup animation on reboot"
+			}
 		}
 	},
 	"SXG75v22": {
