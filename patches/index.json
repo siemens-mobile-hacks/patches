@@ -68711,8 +68711,8 @@
 		"11143": {
 			"id": 11143,
 			"model": "CX70v56",
-			"file": "CX70v56/11143-disable_network_v1_1.vkp",
-			"mtime": 1751401906000,
+			"file": "CX70v56/11143-disable_network_v1_2.vkp",
+			"mtime": 1763443478000,
 			"title": {
 				"ru": "Отключить сеть",
 				"en": "Disable network"
