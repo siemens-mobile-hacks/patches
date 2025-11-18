@@ -68868,6 +68868,16 @@
 				"ru": "Меню красной кнопки",
 				"en": "Red button menu"
 			}
+		},
+		"11269": {
+			"id": 11269,
+			"model": "CX70v56",
+			"file": "CX70v56/11269-fix_startup_animation_on_reboot.vkp",
+			"mtime": 1763463750000,
+			"title": {
+				"ru": "Исправить анимацию включения при перезагрузке",
+				"en": "Fix startup animation on reboot"
+			}
 		}
 	},
 	"C55v24": {
