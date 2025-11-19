@@ -62809,6 +62809,16 @@
 				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
 				"en": "Don't stop media player playback when minimized"
 			}
+		},
+		"11279": {
+			"id": 11279,
+			"model": "SK65v50",
+			"file": "SK65v50/11279-use_e_header_font_from_definition.vkp",
+			"mtime": 1763567176000,
+			"title": {
+				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
+				"en": "Use extra header font only from 'Definition'"
+			}
 		}
 	},
 	"CX70v50": {
