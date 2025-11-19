@@ -32290,5 +32290,8 @@
 	],
 	[
 		"CF75v23/11271-fix_startup_animation_on_reboot.vkp"
+	],
+	[
+		"C75v24/11272-use_e_header_font_from_definition.vkp"
 	]
 ]
