@@ -44969,6 +44969,16 @@
 				"ru": "Не останавливать воспроизведение медиаплеера после сворачивания",
 				"en": "Don't stop media player playback when minimized"
 			}
+		},
+		"11273": {
+			"id": 11273,
+			"model": "C75v22",
+			"file": "C75v22/11273-use_e_header_font_from_definition.vkp",
+			"mtime": 1763565954000,
+			"title": {
+				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
+				"en": "Use extra header font only from 'Definition'"
+			}
 		}
 	},
 	"C75v13": {
