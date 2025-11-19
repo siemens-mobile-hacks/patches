@@ -31447,7 +31447,7 @@
 		"S65v58/10984-change_scancode_of_internet_key.vkp"
 	],
 	[
-		"S65v58/10985-disable_network_v1_1.vkp"
+		"S65v58/10985-disable_network_v1_2.vkp"
 	],
 	[
 		"C81v51/10986-change_dirs_of_theme_res_v1_1.vkp"
@@ -31924,7 +31924,7 @@
 		"CX70v56/11142-fix_lsk_on_idle.vkp"
 	],
 	[
-		"CX70v56/11143-disable_network_v1_1.vkp"
+		"CX70v56/11143-disable_network_v1_2.vkp"
 	],
 	[
 		"CX70v56/11144-fix_network_icon.vkp",
@@ -32032,7 +32032,7 @@
 		"S75v52/11181-dont_lock_vibra.vkp"
 	],
 	[
-		"CF75v23/11182-disable_network_v1_1.vkp"
+		"CF75v23/11182-disable_network_v1_2.vkp"
 	],
 	[
 		"CF75v23/11183-fix_network_icon.vkp"
@@ -32134,7 +32134,9 @@
 		"CF75v23/11218-disable_messages_kl_sa.vkp"
 	],
 	null,
-	null,
+	[
+		"C72v22/11220-disable_network_v1_2.vkp"
+	],
 	null,
 	null,
 	null,
@@ -32237,5 +32239,23 @@
 	],
 	[
 		"CX70v56/11265-red_button_menu.vkp"
+	],
+	[
+		"S65v58/11266-red_button_menu.vkp"
+	],
+	[
+		"CF75v23/11267-red_button_menu.vkp"
+	],
+	[
+		"C72v22/11268-fix_startup_animation_on_reboot.vkp"
+	],
+	[
+		"CX70v56/11269-fix_startup_animation_on_reboot.vkp"
+	],
+	[
+		"S65v58/11270-fix_startup_animation_on_reboot.vkp"
+	],
+	[
+		"CF75v23/11271-fix_startup_animation_on_reboot.vkp"
 	]
 ]
