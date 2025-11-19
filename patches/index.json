@@ -30563,6 +30563,16 @@
 				"ru": "Не отображать иконки центральной навигационной клавиши",
 				"en": "Don't display central navigation key icon"
 			}
+		},
+		"11275": {
+			"id": 11275,
+			"model": "CX75v13",
+			"file": "CX75v13/11275-use_e_header_font_from_definition.vkp",
+			"mtime": 1763566038000,
+			"title": {
+				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
+				"en": "Use extra header font only from 'Definition'"
+			}
 		}
 	},
 	"CX75v23": {
