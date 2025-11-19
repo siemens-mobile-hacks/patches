@@ -34933,6 +34933,16 @@
 				"ru": "Задать CSM для Native Menu",
 				"en": "Set CSM for Native Menu"
 			}
+		},
+		"11274": {
+			"id": 11274,
+			"model": "CX75v25",
+			"file": "CX75v25/11274-use_e_header_font_from_definition.vkp",
+			"mtime": 1763566000000,
+			"title": {
+				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
+				"en": "Use extra header font only from 'Definition'"
+			}
 		}
 	},
 	"M75v5": {

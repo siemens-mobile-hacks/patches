@@ -1,0 +1,19 @@
+;CX75v25
+;Использовать шрифт дополнительного заголовка только из 'Definition'
+;Use extra header font only from 'Definition'
+;(c) FIL
+;(p) Romir0o
+;Version: 
+;PatchID: 11274
+;Details: https://patches.kibab.com/patches/details.php5?id=11274
+/*
+Патч нужен для более унифицированного интерфейса.
+English:The patch is needed for a more unified interface.
+*/
+
+80795C: 80B5 7047
+
+;Pattern
+;80B58069002801D002F0=70478069002801D002F0 ; R65_x65, R65_x75 (~) Romir0o
+;------------------------- end -------------------------
+
