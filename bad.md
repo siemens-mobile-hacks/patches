@@ -1,16 +1,16 @@
 ### Patches with errors
-[C75v22/11109-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11109)
+[C65v56/11276-use_e_header_font_from_definition.vkp](https://patches.kibab.com/patches/details.php5?id=11276)
 
-Error: Syntax error at line 16 col 1
+Error: Syntax error at line 14 col 9
 ```
-  13 | 07B8884: 01 FF
-  14 | 
-  15 | ;Pattern
-> 16 | 01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
-     | ^
-  17 | 
-  18 | ;------------------------- end -------------------------
-  19 | 
+  11 | English:The patch is needed for a more unified interface.
+  12 | */
+  13 | 
+> 14 | C9D960: : 80B5 7047
+     |         ^
+  15 | 
+  16 | ;Pattern
+  17 | ;80B58069002801D002F0=70478069002801D002F0 ; R65_x65, R65_x75 (~) Romir0o
 
 ```
 
@@ -19,21 +19,6 @@ Error: Syntax error at line 16 col 1
 Error: Syntax error at line 16 col 1
 ```
   13 | 07BFF18: 01 FF
-  14 | 
-  15 | ;Pattern
-> 16 | 01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
-     | ^
-  17 | 
-  18 | ;------------------------- end -------------------------
-  19 | 
-
-```
-
-[SK65v50/11108-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11108)
-
-Error: Syntax error at line 16 col 1
-```
-  13 | 094E02C: 01 FF
   14 | 
   15 | ;Pattern
 > 16 | 01284BD0022822D1=FF284BD0022822D1 ; R65_x65, R65_x75 (~) Marie
