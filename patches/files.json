@@ -32320,5 +32320,8 @@
 	],
 	[
 		"C75v22/11281-fix_lsk_on_idle.vkp"
+	],
+	[
+		"C75v24/11282-fix_active_item_position_in_nm.vkp"
 	]
 ]

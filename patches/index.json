@@ -46709,6 +46709,16 @@
 				"ru": "Не менять левый софткей на ГЭ если нет сети",
 				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
+		},
+		"11282": {
+			"id": 11282,
+			"model": "C75v24",
+			"file": "C75v24/11282-fix_active_item_position_in_nm.vkp",
+			"mtime": 1763750816000,
+			"title": {
+				"ru": "Исправить позицию активного элемента в Native Menu",
+				"en": "Fix the active item position in Native Menu"
+			}
 		}
 	},
 	"C65v50": {
