@@ -46689,6 +46689,16 @@
 				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
 				"en": "Use extra header font only from 'Definition'"
 			}
+		},
+		"11280": {
+			"id": 11280,
+			"model": "C75v24",
+			"file": "C75v24/11280-fix_lsk_on_idle.vkp",
+			"mtime": 1763743360000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"C65v50": {
