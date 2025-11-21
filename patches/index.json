@@ -46719,6 +46719,16 @@
 				"ru": "Исправить позицию активного элемента в Native Menu",
 				"en": "Fix the active item position in Native Menu"
 			}
+		},
+		"11283": {
+			"id": 11283,
+			"model": "C75v24",
+			"file": "C75v24/11283-fix_cursor_in_tile_view_v1_1.vkp",
+			"mtime": 1763751880000,
+			"title": {
+				"ru": "Исправить курсор в плиточном режиме",
+				"en": "Fix cursor in tile view"
+			}
 		}
 	},
 	"C65v50": {
