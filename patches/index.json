@@ -46729,6 +46729,16 @@
 				"ru": "Исправить курсор в плиточном режиме",
 				"en": "Fix cursor in tile view"
 			}
+		},
+		"11284": {
+			"id": 11284,
+			"model": "C75v24",
+			"file": "C75v24/11284-Fix_active_element_animations_in_NM.vkp",
+			"mtime": 1763839706000,
+			"title": {
+				"ru": "Исправить анимацию активного элемента в Native Menu",
+				"en": "Fix active element animations in Native Menu"
+			}
 		}
 	},
 	"C65v50": {
