@@ -32281,5 +32281,17 @@
 	],
 	[
 		"SK65v50/11279-use_e_header_font_from_definition.vkp"
+	],
+	[
+		"C75v24/11280-fix_lsk_on_idle.vkp"
+	],
+	[
+		"C75v22/11281-fix_lsk_on_idle.vkp"
+	],
+	[
+		"C75v24/11282-fix_active_item_position_in_nm.vkp"
+	],
+	[
+		"C75v24/11283-fix_cursor_in_tile_view_v1_1.vkp"
 	]
 ]
