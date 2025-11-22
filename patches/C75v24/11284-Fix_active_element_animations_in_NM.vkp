@@ -7,7 +7,7 @@
 ;PatchID: 11284
 ;Details: https://patches.kibab.com/patches/details.php5?id=11284
 /*
-Патч исправляет анимацию активного пункта в Native menu. Как пример иконка настроек которая проигрывалась реверсивно
+Патч исправляет анимацию активного элемента в Native menu. Как пример иконка настроек которая проигрывалась реверсивно
 English:The patch fixes the animation of the active item in the Native menu. For example, the settings icon was playing in reverse.
 */
 
