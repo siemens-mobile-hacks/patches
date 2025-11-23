@@ -34953,6 +34953,16 @@
 				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
 				"en": "Use extra header font only from 'Definition'"
 			}
+		},
+		"11285": {
+			"id": 11285,
+			"model": "CX75v25",
+			"file": "CX75v25/11285-Fix_active_element_animations_in_NM.vkp",
+			"mtime": 1763890920000,
+			"title": {
+				"ru": "Исправить анимацию активного элемента в Native Menu",
+				"en": "Fix active element animations in Native Menu"
+			}
 		}
 	},
 	"M75v5": {
