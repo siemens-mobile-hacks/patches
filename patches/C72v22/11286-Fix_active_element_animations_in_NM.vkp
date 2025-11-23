@@ -1,0 +1,100 @@
+;C72v22
+;Исправить анимацию активного элемента в Native Menu
+;Fix active element animations in Native Menu
+;(c) Romir0o
+;(r) Marie
+;Version: 
+;PatchID: 11286
+;Details: https://patches.kibab.com/patches/details.php5?id=11286
+/*
+Патч исправляет анимацию активного элемента в Native menu. Как пример иконка настроек которая проигрывалась реверсивно
+English:The patch fixes the animation of the active item in the Native menu. For example, the settings icon was playing in reverse.
+*/
+
+; Fix icon 1
+942700: 83 83 ; Slide 1
+942704: 84 84 ; Slide 2
+942708: 85 85 ; Slide 3
+94270C: 86 86 ; Slide 4
+942710: 87 87 ; Slide 5
+942714: 88 88 ; Slide 6
+942718: 88 00 ; Slide 7
+94271C: 88 00 ; Slide 8
+
+; Fix icon 2
+942724: 91 91 ; Slide 1
+942728: 92 92 ; Slide 2
+94272C: 93 93 ; Slide 3
+942730: 94 94 ; Slide 4
+942734: 95 95 ; Slide 5
+942738: 96 96 ; Slide 6
+
+; Fix icon 3
+942740: AD AD ; Slide 1
+942744: AE AE ; Slide 2
+942748: AF AF ; Slide 3
+94274C: B0 B0 ; Slide 4
+942750: B1 B1 ; Slide 5
+942754: B2 B2 ; Slide 6
+
+; Fix icon 4
+9427B4: 2B 2B ; Slide 1
+9427B8: 2C 2C ; Slide 2
+9427BC: 2D 2D ; Slide 3
+9427C0: 2E 2E ; Slide 4
+9427C4: 2F 2F ; Slide 5
+9427C8: 30 30 ; Slide 6
+
+; Fix icon 5
+94277C: 63 61 ; Slide 1
+942780: 63 62 ; Slide 2
+942784: 64 63 ; Slide 3
+942788: 65 64 ; Slide 4
+94278C: 66 65 ; Slide 5
+942790: 66 66 ; Slide 6
+942794: 66 00 ; Slide 7
+942798: 63 00 ; Slide 8
+94279C: 62 00 ; Slide 9
+9427A0: 61 00 ; Slide 10
+9427A4: 61 00 ; Slide 11
+9427A8: 61 00 ; Slide 12
+9427AC: 62 00 ; Slide 13
+
+; Fix icon 6
+94275C: 75 75 ; Slide 1
+942760: 76 76 ; Slide 2
+942764: 77 77 ; Slide 3
+942768: 78 78 ; Slide 4
+94276C: 79 79 ; Slide 5
+942770: 79 7A ; Slide 6
+942774: 79 00 ; Slide 7
+
+; Fix icon 7
+9427D0: 4D 4D ; Slide 1
+9427D4: 4E 4E ; Slide 2
+9427D8: 4F 4F ; Slide 3
+9427DC: 50 50 ; Slide 4
+9427E0: 51 51 ; Slide 5
+9427E4: 52 52 ; Slide 6
+9427E8: 52 00 ; Slide 7
+9427EC: 52 00 ; Slide 8
+
+; Fix icon 8
+9427F4: 3F 3F ; Slide 1
+9427F8: 40 40 ; Slide 2
+9427FC: 41 41 ; Slide 3
+942800: 42 42 ; Slide 4
+942804: 43 43 ; Slide 5
+942808: 44 44 ; Slide 6
+94280C: 44 00 ; Slide 7
+942810: 44 00 ; Slide 8
+
+; Fix icon 9
+942818: A4 9F ; Slide 1
+94281C: A3 A0 ; Slide 2
+942820: A2 A1 ; Slide 3
+942824: A1 A2 ; Slide 4
+942828: A0 A3 ; Slide 5
+94282C: 9F A4 ; Slide 6
+;------------------------- end -------------------------
+

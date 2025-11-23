@@ -89199,6 +89199,16 @@
 				"ru": "Исправить анимацию включения при перезагрузке",
 				"en": "Fix startup animation on reboot"
 			}
+		},
+		"11286": {
+			"id": 11286,
+			"model": "C72v22",
+			"file": "C72v22/11286-Fix_active_element_animations_in_NM.vkp",
+			"mtime": 1763894102000,
+			"title": {
+				"ru": "Исправить анимацию активного элемента в Native Menu",
+				"en": "Fix active element animations in Native Menu"
+			}
 		}
 	},
 	"SXG75v22": {
