@@ -394,7 +394,7 @@
 057C: 0xA15754CB   ; 15F: png_get_rowbytes(png_structp png_ptr,png_infop info_ptr)
 0580: 0xA1576157   ; 160: png_read_row(png_structp png_ptr,png_bytep row,png_bytep dsp_row)
 0584: 0xA0000000   ; 161: png_init_io(png_structp png_ptr, int fp)
-0588: 0xA166B33C   ; 162: !!!setjmp(jmp_buf jmpbuf)
+0588: 0xA166B33C   ; 162: setjmp(jmp_buf jmpbuf)
 058C: 0xA11410DD   ; 163: AllocEQueue(void *malloc_a, void *mfree_a)
 0590: 0xA11405B9   ; 164: PrepareEditControl(EDITCONTROL *)
 0594: 0xA11408C7   ; 165: ConstructEditControl(EDITCONTROL *EditControl,int type,int flag,WSHDR *ws,int maxlen)
