@@ -1,0 +1,30 @@
+;CF75v23
+;Показывать сообщение при отключённом MMS-клиенте
+;Handle disabled MMS client by showing a message
+;(c) FIL
+;Version: 
+;PatchID: 11295
+;Details: https://patches.kibab.com/patches/details.php5?id=11295
+/*
+Если MMS-клиент отключен, то вместо вечного "Подождите" отображается сообщение "MMS client is disabled!".
+*/
+
+#pragma enable old_equal_ff
+; .rodata
+11D4D00: 4D4D5320636C69656E742069732064697361626C65642100
+
+; .CreateOrClose
+11D4D20: 70B5094B040009480D009847002802D02000A84770BD0649064B11209847E068054B9847F6E7C046D06D20A020420000004D1DA1CFD877A0AD9A77A0
+
+; .Hooks
+11D4D60: 10B50249FFF7DCFF10BDC046A1EB40A010B50249FFF7D4FF10BDC04635483AA0
+#pragma disable old_equal_ff
+
+; .Jump_1
+04BFD88: A1EB40A0 614D1DA1
+
+; .Jump_2
+04B15F0: 35483AA0 714D1DA1
+
+;------------------------- end -------------------------
+
