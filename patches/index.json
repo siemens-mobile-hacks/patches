@@ -69018,6 +69018,16 @@
 				"ru": "Исправить анимацию включения при перезагрузке",
 				"en": "Fix startup animation on reboot"
 			}
+		},
+		"11293": {
+			"id": 11293,
+			"model": "CX70v56",
+			"file": "CX70v56/11293-handle_disabled_mss_client.vkp",
+			"mtime": 1764254578000,
+			"title": {
+				"ru": "Показывать сообщение при отключённом MMS-клиенте",
+				"en": "Handle disabled MMS client by showing a message"
+			}
 		}
 	},
 	"C55v24": {
