@@ -89260,6 +89260,16 @@
 				"en": "Fix active element animations in Native Menu"
 			}
 		},
+		"11287": {
+			"id": 11287,
+			"model": "C72v22",
+			"file": "C72v22/11287-monitor89_v1_0_1.vkp",
+			"mtime": 1764265122000,
+			"title": {
+				"ru": "Monitor89",
+				"en": "Monitor89"
+			}
+		},
 		"11292": {
 			"id": 11292,
 			"model": "C72v22",
