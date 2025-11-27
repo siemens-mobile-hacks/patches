@@ -2,7 +2,7 @@
 ;Исправить ширину меню
 ;Fix menu width
 ;(c) FIL
-;Version: 
+;Version: 1.0.1
 ;PatchID: 10901
 ;Details: https://patches.kibab.com/patches/details.php5?id=10901
 /*
@@ -16,7 +16,6 @@
 
 113EB76: 00 01
 113EB78: 11D0 11D1
-113EBA0: 0028 0045
 
 ;------------------------- end -------------------------
 
