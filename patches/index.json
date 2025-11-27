@@ -19465,6 +19465,16 @@
 				"ru": "Не блокировать вибрацию при подключении аксессуаров",
 				"en": "Don't lock vibra when accessories are connected"
 			}
+		},
+		"11296": {
+			"id": 11296,
+			"model": "S75v52",
+			"file": "S75v52/11296-fix_icon_display_in_nm_v1_0_1.vkp",
+			"mtime": 1764274900000,
+			"title": {
+				"ru": "Исправить отображение иконок в Native Menu",
+				"en": "Fix icon display in Native Menu"
+			}
 		}
 	},
 	"SL75v31": {
