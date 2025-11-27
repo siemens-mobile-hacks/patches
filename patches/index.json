@@ -25830,6 +25830,16 @@
 				"ru": "Исправить анимацию включения при перезагрузке",
 				"en": "Fix startup animation on reboot"
 			}
+		},
+		"11295": {
+			"id": 11295,
+			"model": "CF75v23",
+			"file": "CF75v23/11295-handle_disabled_mss_client.vkp",
+			"mtime": 1764255962000,
+			"title": {
+				"ru": "Показывать сообщение при отключённом MMS-клиенте",
+				"en": "Handle disabled MMS client by showing a message"
+			}
 		}
 	},
 	"CX75v5": {
