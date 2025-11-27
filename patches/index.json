@@ -57618,6 +57618,16 @@
 				"en": "Fix startup animation on reboot"
 			}
 		},
+		"11289": {
+			"id": 11289,
+			"model": "S65v58",
+			"file": "S65v58/11289-monitor89_v1_0_1.vkp",
+			"mtime": 1764264844000,
+			"title": {
+				"ru": "Monitor89",
+				"en": "Monitor89"
+			}
+		},
 		"11294": {
 			"id": 11294,
 			"model": "S65v58",
