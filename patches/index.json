@@ -57607,6 +57607,16 @@
 				"ru": "Исправить анимацию включения при перезагрузке",
 				"en": "Fix startup animation on reboot"
 			}
+		},
+		"11294": {
+			"id": 11294,
+			"model": "S65v58",
+			"file": "S65v58/11294-handle_disabled_mss_client.vkp",
+			"mtime": 1764255356000,
+			"title": {
+				"ru": "Показывать сообщение при отключённом MMS-клиенте",
+				"en": "Handle disabled MMS client by showing a message"
+			}
 		}
 	},
 	"SL65v50": {
