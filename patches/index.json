@@ -19135,6 +19135,16 @@
 				"en": "Enable native menu items navigation by left/right navy key long press"
 			}
 		},
+		"10790": {
+			"id": 10790,
+			"model": "S75v52",
+			"file": "S75v52/10790-NMFP_v3_5.vkp",
+			"mtime": 1764275250000,
+			"title": {
+				"ru": "Пакет исправлений Native Menu",
+				"en": "Native Menu Fix Pack"
+			}
+		},
 		"10797": {
 			"id": 10797,
 			"model": "S75v52",
