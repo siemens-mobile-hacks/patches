@@ -89209,6 +89209,16 @@
 				"ru": "Исправить анимацию активного элемента в Native Menu",
 				"en": "Fix active element animations in Native Menu"
 			}
+		},
+		"11292": {
+			"id": 11292,
+			"model": "C72v22",
+			"file": "C72v22/11292-handle_disabled_mss_client.vkp",
+			"mtime": 1764253544000,
+			"title": {
+				"ru": "Показывать сообщение при отключённом MMS-клиенте",
+				"en": "Handle disabled MMS client by showing a message"
+			}
 		}
 	},
 	"SXG75v22": {
