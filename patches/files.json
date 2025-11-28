@@ -30889,7 +30889,7 @@
 		"S75v52/10789-S75v52_native_longpress_fix.vkp"
 	],
 	[
-		"S75v52/10790-NMFP_v3_3.vkp"
+		"S75v52/10790-NMFP_v3_5.vkp"
 	],
 	[
 		"E71v45/10791-disable_drawing_num_in_native_menu.vkp"
@@ -31215,7 +31215,7 @@
 	],
 	null,
 	[
-		"CX70v56/10901-fix_menu_width.vkp"
+		"CX70v56/10901-fix_menu_width_v1_0_1.vkp"
 	],
 	[
 		"CX70v56/10902-use_e_header_font_from_definition.vkp"
@@ -31408,7 +31408,7 @@
 		"S65v58/10971-nesto.vkp"
 	],
 	[
-		"S65v58/10972-fix_menu_width.vkp"
+		"S65v58/10972-fix_menu_width_v1_0_1.vkp"
 	],
 	[
 		"S65v58/10973-fix_cursor_in_tile_view_v1_1.vkp"
@@ -32302,5 +32302,30 @@
 	],
 	[
 		"C72v22/11286-Fix_active_element_animations_in_NM.vkp"
+	],
+	[
+		"C72v22/11287-monitor89_v1_0_1.vkp"
+	],
+	[
+		"CX70v56/11288-monitor89_v1_0_1.vkp"
+	],
+	[
+		"S65v58/11289-monitor89_v1_0_1.vkp"
+	],
+	[
+		"CF75v23/11290-monitor89_v1_0_1.vkp"
+	],
+	null,
+	[
+		"C72v22/11292-handle_disabled_mss_client.vkp"
+	],
+	[
+		"CX70v56/11293-handle_disabled_mss_client.vkp"
+	],
+	[
+		"S65v58/11294-handle_disabled_mss_client.vkp"
+	],
+	[
+		"CF75v23/11295-handle_disabled_mss_client.vkp"
 	]
 ]

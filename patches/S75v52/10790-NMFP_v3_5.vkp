@@ -1,8 +1,8 @@
 ;S75v52
 ;Пакет исправлений Native Menu
 ;Native Menu Fix Pack
-;(c) caine,Miha_r,BingK,Evgr,SiNgle,FIL,42Gzb,Zhek@
-;Version: 3.3
+;(c) caine, Miha_r, BingK, Evgr, SiNgle, FIL, 42Gzb, Zhek@
+;Version: 3.5
 ;PatchID: 10790
 ;Details: https://patches.kibab.com/patches/details.php5?id=10790
 /*
@@ -99,20 +99,22 @@
 #pragma disable old_equal_ff
 
 ;№8
-;Убрать белый фон у иконок в Native Menu
-;Remove Icons White Background in Native Menu
-;(c) FIL,SiNgle
-;(r) Виктор89, MAXIM
-;(p) Barakyda
-;Version: 2
+;Исправить фон иконок в Native Menu
+;Fix items background in Native Menu
+;(c) FIL
+;(r) SiNgle
+
+; .SkipDrawRectangle
 0A18374: FFF777FE C046C046
 
-0A1A21E: 00 FF
-0A1A27E: E8F7C4F8 83F227FB
-#pragma enable old_equal_ff
-0C9D8D0: F0B591B003930400144B02200D00160098470399033C0331F31CEA1E0091104E2100193D070005A8B0473B0005A907A80C4E0022B0473B0005A907A800940022094C0195A0470022110007A8074B9847074B07A8984711B0F0BDC04603C8A1A09B5D97A05F29A0A0852AA0A0A31997A0493C90A0
-#pragma disable old_equal_ff
-0A1A2C2: E8F7A2F8 00280028
+; .DrawIconBG_Jump
+0A182D4: FFF7C7FE 93F264F8
+
+; .DrawIconBG
+0CAB3A0: 4174206C65617374206F6E6520436F6E6669672F506F6C69637920706F6C6963792066696C6520696E207468652066696C6573797374656D2068617320612077726F6E67 30B50E4B85B00568022098470023EA5E0223E95E0B00163B03900020029006202C5E641A0134019404202C5E1000A41A01340094024CA04705B030BD03C8A1A0B52CA0A0
+
+; .SkipDrawIconBG
+0A1A216: 0028 FF28
 
 ;№9
 ;Отключить отрисовку номера текущего элемента в Native Menu
@@ -146,13 +148,13 @@
 ;(p) SimaFish
 043939C: 011134A0 9BE12CA0
 
-;#12
+;№12
 ;Исправить позицию текущего элемента в Native Menu 
 ;Fix the active item position in Native Menu
 ;(c) FIL
 0A19FA6: 00 FF
 
-;#13
+;№13
 ;Убрать пикофф при запуске календаря по центру джоя в органайзере в нативном меню с включенным оверлеем
 ;Remove pickoff in "Native menu"->"Organiser"->"Calendar" when pressing NAVI_CENTER with overlay info
 ;(c) Evgr
@@ -164,7 +166,7 @@
 0952E30: 10 11
 +0
 
-;#14
+;№14
 ;Добавить иконки в заголовок Native Menu
 ;Add icons to header in Native Menu
 ;(c) FIL
@@ -184,8 +186,17 @@
 0C9D9DA: 000070B5064B040000690D0098470023290023612000024B984770BDC046484909A087E497A0
 #pragma disable old_equal_ff
 
+;№15
+;Исправить отображение иконок в Native Menu
+;Fix icon display in Native Menu
+;(c) FIL
+;(r) green
+;Version: 1.0.1
 
-
+0437C30: 1A 1C
+0437C32: 25 28
+0437C36: 29 28
+0437C3C: 05 00
 
 ;------------------------- end -------------------------
 

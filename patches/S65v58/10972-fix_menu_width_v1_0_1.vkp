@@ -3,7 +3,7 @@
 ;Fix menu width
 ;(c) FIL
 ;(p) Виктор89
-;Version: 
+;Version: 1.0.1
 ;PatchID: 10972
 ;Details: https://patches.kibab.com/patches/details.php5?id=10972
 /*
@@ -17,6 +17,5 @@
 
 1160E3A: 00 01
 1160E3C: 11D0 11D1
-1160E64: 0028 0045
 ;------------------------- end -------------------------
 
