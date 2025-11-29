@@ -69059,16 +69059,6 @@
 				"en": "Fix startup animation on reboot"
 			}
 		},
-		"11288": {
-			"id": 11288,
-			"model": "CX70v56",
-			"file": "CX70v56/11288-monitor89_v1_0_1.vkp",
-			"mtime": 1764264386000,
-			"title": {
-				"ru": "Monitor89",
-				"en": "Monitor89"
-			}
-		},
 		"11293": {
 			"id": 11293,
 			"model": "CX70v56",
