@@ -25841,16 +25841,6 @@
 				"en": "Fix startup animation on reboot"
 			}
 		},
-		"11290": {
-			"id": 11290,
-			"model": "CF75v23",
-			"file": "CF75v23/11290-monitor89_v1_0_1.vkp",
-			"mtime": 1764265730000,
-			"title": {
-				"ru": "Monitor89",
-				"en": "Monitor89"
-			}
-		},
 		"11295": {
 			"id": 11295,
 			"model": "CF75v23",
