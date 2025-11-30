@@ -68688,16 +68688,6 @@
 				"en": "Disable 'Please wait' in Card-Explorer"
 			}
 		},
-		"10901": {
-			"id": 10901,
-			"model": "CX70v56",
-			"file": "CX70v56/10901-fix_menu_width_v1_0_1.vkp",
-			"mtime": 1764264124000,
-			"title": {
-				"ru": "Исправить ширину меню",
-				"en": "Fix menu width"
-			}
-		},
 		"10902": {
 			"id": 10902,
 			"model": "CX70v56",
