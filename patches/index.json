@@ -57228,16 +57228,6 @@
 				"en": "Font NESTO"
 			}
 		},
-		"10972": {
-			"id": 10972,
-			"model": "S65v58",
-			"file": "S65v58/10972-fix_menu_width_v1_0_1.vkp",
-			"mtime": 1764264142000,
-			"title": {
-				"ru": "Исправить ширину меню",
-				"en": "Fix menu width"
-			}
-		},
 		"10973": {
 			"id": 10973,
 			"model": "S65v58",
