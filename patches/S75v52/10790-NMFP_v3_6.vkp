@@ -2,7 +2,7 @@
 ;Пакет исправлений Native Menu
 ;Native Menu Fix Pack
 ;(c) caine, Miha_r, BingK, Evgr, SiNgle, FIL, 42Gzb, Zhek@
-;Version: 3.5
+;Version: 3.6
 ;PatchID: 10790
 ;Details: https://patches.kibab.com/patches/details.php5?id=10790
 /*
@@ -16,12 +16,12 @@
 ;(r) ThE TrIFoN
 ;(p) Belarus, Kibab, KIBER-DEMON
 ;CreateGUIWithDummyCSM call & other stuff
-033399A: B8F040ED 00210AE0
-03339AE: 00210020C5F6EBFA002802D0 BBF014E980BDB8F0D6EEFEBD
+;033399A: B8F040ED 00210AE0
+;03339AE: 00210020C5F6EBFA002802D0 BBF014E980BDB8F0D6EEFEBD
 ; Fix Internet (from v2)
 043F66C: 08 00
 ; Fix Taimer & SMS
-0437B80: 593833 07DD32
+;0437B80: 593833 07DD32
 043F418: 279C37 65E332
 
 ;№2
@@ -198,5 +198,24 @@
 0437C36: 29 28
 0437C3C: 05 00
 
+;№16
+;Задать CSM для Native Menu
+;Set CSM for Native Menu
+;(c) FIL
+;Version: 2
+
+02CE19C: 65F014FC 65F050F9 ; ShowNativeMenu -> ShowPredial
+; Predial_OnMessage
+03334C2: 0B3B 1A45
+03334C4: 9A42 07D1
+03334C6: 02D1 036B
+03334CA: 8242 1A45
+03334CE: 0269 0300
+03334D0: 002A 0020
+03334D2: 00D1 0338
+03334D4: BEE7 1861
+; Predial_OnCreate
+03334DE: 4DF047FF 00F073FA
+03334E4: 0020 10BD
 ;------------------------- end -------------------------
 
