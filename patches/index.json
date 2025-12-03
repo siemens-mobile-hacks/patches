@@ -15175,9 +15175,9 @@
 		"8285": {
 			"id": "8285",
 			"model": "S75v52",
-			"file": "S75v52/8285-swilib_v160624.vkp",
+			"file": "S75v52/8285-swilib_v031225.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
-			"mtime": 1718561856000,
+			"mtime": 1764771206000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
