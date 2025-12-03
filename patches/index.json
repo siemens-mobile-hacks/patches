@@ -19475,6 +19475,16 @@
 				"ru": "Исправить отображение иконок в Native Menu",
 				"en": "Fix icon display in Native Menu"
 			}
+		},
+		"11297": {
+			"id": 11297,
+			"model": "S75v52",
+			"file": "S75v52/11297-set_csm_for_nm_v2.vkp",
+			"mtime": 1764771616000,
+			"title": {
+				"ru": "Задать CSM для Native Menu",
+				"en": "Set CSM for Native Menu"
+			}
 		}
 	},
 	"SL75v31": {
