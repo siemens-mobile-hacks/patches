@@ -1,0 +1,20 @@
+;S75v52
+;Грохнуть InstantMessenger
+;Kill InstantMessenger
+;(c) Feyman, FIL
+;Version: 2.1
+;PatchID: 11298
+;Details: https://patches.kibab.com/patches/details.php5?id=11298
+/*
+IMPS нафиг не нужен, а более 100КБ оперативки всегда выжирает. Хватит это терпеть!
+Вторая версия полностью скрывает InstantMessenger.
+*/
+
+0961C6A: FF20 18E1
+
+04418EC: 9D 5F
+0444E80: 9D 5F
+069C120: 9D 5F
+
+;------------------------- end -------------------------
+

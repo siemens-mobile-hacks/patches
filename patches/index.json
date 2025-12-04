@@ -19485,6 +19485,16 @@
 				"ru": "Задать CSM для Native Menu",
 				"en": "Set CSM for Native Menu"
 			}
+		},
+		"11298": {
+			"id": 11298,
+			"model": "S75v52",
+			"file": "S75v52/11298-kill_imps_v2_1.vkp",
+			"mtime": 1764860502000,
+			"title": {
+				"ru": "Грохнуть InstantMessenger",
+				"en": "Kill InstantMessenger"
+			}
 		}
 	},
 	"SL75v31": {
