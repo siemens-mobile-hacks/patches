@@ -985,7 +985,7 @@
 ; 0E88:            ; 3A2
 ; 0E8C:            ; 3A3
 ; 0E90:            ; 3A4
-; 0E94:            ; 3A5
+0E94: 0xA0A02BDB   ; 3A5: __thumb void DrawIMGHDR(int x, int y, IMGHDR *img);
 ; 0E98:            ; 3A6
 0E9C: 0xA0975E5B   ; 3A7: __thumb int GUI_NewTimer(void *gui);
 0EA0: 0xA0975F9F   ; 3A8: __thumb int GUI_DeleteTimer(void *gui, int id);
