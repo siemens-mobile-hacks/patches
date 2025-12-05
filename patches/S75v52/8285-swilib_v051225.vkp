@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 031225
+;Version: 051225
 ;PatchID: 8285
 ;Details: https://patches.kibab.com/patches/details.php5?id=8285
 ;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v52&f=S75sw52_Functions_library_231017.zip
@@ -1038,7 +1038,7 @@
 0F44: 0xA052E243   ; 3D1: __thumb void MediaProc_LaunchLastPlayback();
 0F48: 0xA029F1BB   ; 3D2: __thumb int IsIconBarDisabled();
 0F4C: 0xA08FEC83   ; 3D3: __thumb int IllumFilterSet(int flags, int unk);
-;F50:              ; 3D4: __thumb void DrawCroppedIMGHDR(int x, int y, int offset_x, int offset_y, int w, int h, int flags, const IMGHDR *img);
+0F50: 0xA0A02CB5   ; 3D4: __thumb void DrawCroppedIMGHDR(int x, int y, int offset_x, int offset_y, int w, int h, int flags, const IMGHDR *img);
 ;F54:              ; 3D5: __arm int BuildPath(WSHDR *ws, const WSHDR *file_name, const WSHDR *dir);
 0F58: 0xA0437BF4 ; 83D6: RECT *GetHeaderRECT();
 0F5C: 0xA069B994 ; 83D7: RECT *GetOptionsHeaderRECT();
