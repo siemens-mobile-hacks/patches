@@ -1034,7 +1034,7 @@
 ;0F38:             ; 3CE: __thumb int wstrtolower(WSHDR *ws);
 ;0F3C:             ; 3CF: __thumb int wstrcapitalize(WSHDR *ws);
 
-;F40:              ; 3D0: __thumb int RestartLockTimers();
+0F40: 0xA029E0E3   ; 3D0: __thumb int RestartLockTimers();
 0F44: 0xA052E243   ; 3D1: __thumb void MediaProc_LaunchLastPlayback();
 0F48: 0xA029F1BB   ; 3D2: __thumb int IsIconBarDisabled();
 0F4C: 0xA08FEC83   ; 3D3: __thumb int IllumFilterSet(int flags, int unk);
