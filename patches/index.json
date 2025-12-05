@@ -19515,6 +19515,16 @@
 				"ru": "Модификация Startup Assistant",
 				"en": "Startup Assistant Modification"
 			}
+		},
+		"11301": {
+			"id": 11301,
+			"model": "S75v52",
+			"file": "S75v52/11301-dont_show_softkeys_on_idle_v1_1.vkp",
+			"mtime": 1764929112000,
+			"title": {
+				"ru": "Не показывать софт-кнопки на главном экране",
+				"en": "Don't show softkeys on IDLE"
+			}
 		}
 	},
 	"SL75v31": {

@@ -1,0 +1,16 @@
+;S75v52
+;Не показывать софт-кнопки на главном экране
+;Don't show softkeys on IDLE
+;(c) FIL
+;Version: 1.1
+;PatchID: 11301
+;Details: https://patches.kibab.com/patches/details.php5?id=11301
+/*
+Патч отключает отображение софт-кнопок на ГЭ. Функционал же остается рабочим!
+*/
+
+0301FEE: 0022 08E0
+0302006: 396C 0021
+0302AFC: FFF78AFA C046C046 ; hide missed events icons
+;------------------------- end -------------------------
+
