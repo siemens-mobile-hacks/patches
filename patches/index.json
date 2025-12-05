@@ -19505,6 +19505,16 @@
 				"ru": "Удалить дату и время только с главного экрана",
 				"en": "Disable date and time only on IDLE"
 			}
+		},
+		"11300": {
+			"id": 11300,
+			"model": "S75v52",
+			"file": "S75v52/11300-sam.vkp",
+			"mtime": 1764927702000,
+			"title": {
+				"ru": "Модификация Startup Assistant",
+				"en": "Startup Assistant Modification"
+			}
 		}
 	},
 	"SL75v31": {
