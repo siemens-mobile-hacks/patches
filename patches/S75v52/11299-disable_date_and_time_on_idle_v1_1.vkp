@@ -1,0 +1,15 @@
+;S75v52
+;Удалить дату и время только с главного экрана
+;Disable date and time only on IDLE
+;(c) FIL
+;Version: 1.1
+;PatchID: 11299
+;Details: https://patches.kibab.com/patches/details.php5?id=11299
+/*
+Патч не затрагивает UI набора номера.
+*/
+
+03026C4: 9BF75FFE 0020C046
+03014E8: 9CF74DFF 0020C046
+;------------------------- end -------------------------
+

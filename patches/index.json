@@ -19495,6 +19495,16 @@
 				"ru": "Грохнуть InstantMessenger",
 				"en": "Kill InstantMessenger"
 			}
+		},
+		"11299": {
+			"id": 11299,
+			"model": "S75v52",
+			"file": "S75v52/11299-disable_date_and_time_on_idle_v1_1.vkp",
+			"mtime": 1764903474000,
+			"title": {
+				"ru": "Удалить дату и время только с главного экрана",
+				"en": "Disable date and time only on IDLE"
+			}
 		}
 	},
 	"SL75v31": {
