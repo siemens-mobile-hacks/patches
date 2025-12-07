@@ -19615,6 +19615,16 @@
 				"ru": "Отключить сообщение 'Язык ввода: *' при выборе языка",
 				"en": "Disable message 'Input language: *' at a language choice"
 			}
+		},
+		"11313": {
+			"id": 11313,
+			"model": "S75v52",
+			"file": "S75v52/11313-dont_show_events_on_idle.vkp",
+			"mtime": 1765115484000,
+			"title": {
+				"ru": "Не показывать события на главном экране",
+				"en": "Don't show events on IDLE"
+			}
 		}
 	},
 	"SL75v31": {

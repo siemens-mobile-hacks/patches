@@ -1,0 +1,14 @@
+;S75v52
+;Не показывать события на главном экране
+;Don't show events on IDLE
+;(c) FIL
+;Version: 
+;PatchID: 11313
+;Details: https://patches.kibab.com/patches/details.php5?id=11313
+/*
+Полностью отключает отображение всех событий на ГЭ.
+*/
+
+0301028: FFB5 7047
+;------------------------- end -------------------------
+
