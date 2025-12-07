@@ -19625,6 +19625,16 @@
 				"ru": "Не показывать события на главном экране",
 				"en": "Don't show events on IDLE"
 			}
+		},
+		"11314": {
+			"id": 11314,
+			"model": "S75v52",
+			"file": "S75v52/11314-disable_message_data_received.vkp",
+			"mtime": 1765115850000,
+			"title": {
+				"ru": "Отключить сообщение 'Прием данных завершен'",
+				"en": "Disable message 'Data received'"
+			}
 		}
 	},
 	"SL75v31": {
