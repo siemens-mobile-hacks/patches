@@ -19555,6 +19555,16 @@
 				"ru": "Разблокировать все кнопки в редакторе горячих клавиш",
 				"en": "Unlock all buttons in FAK editor"
 			}
+		},
+		"11306": {
+			"id": 11306,
+			"model": "S75v52",
+			"file": "S75v52/11306-disable_msg_all_ringtones_on_off_v2.vkp",
+			"mtime": 1765101604000,
+			"title": {
+				"ru": "Убрать сообщение \"Все сигналы вкл/выкл\"",
+				"en": "Disable message \"All ringtones on/off\""
+			}
 		}
 	},
 	"SL75v31": {
