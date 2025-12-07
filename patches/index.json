@@ -19575,6 +19575,16 @@
 				"ru": "Изменить сетку при прорисовке окошек",
 				"en": "Change netting while showing MsgBoxes"
 			}
+		},
+		"11308": {
+			"id": 11308,
+			"model": "S75v52",
+			"file": "S75v52/11308-disable_message_time_and_date_upd.vkp",
+			"mtime": 1765102570000,
+			"title": {
+				"ru": "Отключить сообщение 'Время и дата актуализированы.'",
+				"en": "Disable message 'Time and date updated.'"
+			}
 		}
 	},
 	"SL75v31": {
