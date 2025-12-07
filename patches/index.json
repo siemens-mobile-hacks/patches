@@ -19585,6 +19585,16 @@
 				"ru": "Отключить сообщение 'Время и дата актуализированы.'",
 				"en": "Disable message 'Time and date updated.'"
 			}
+		},
+		"11309": {
+			"id": 11309,
+			"model": "S75v52",
+			"file": "S75v52/11309-offline_in_red_button_menu_v1_2.vkp",
+			"mtime": 1765111046000,
+			"title": {
+				"ru": "Режим оффлайн в меню красной кнопки",
+				"en": "Offline mode in red button menu"
+			}
 		}
 	},
 	"SL75v31": {
