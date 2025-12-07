@@ -1,0 +1,22 @@
+;S75v52
+;Изменить сетку при прорисовке окошек
+;Change netting while showing MsgBoxes
+;(c) FIL, 1nvisible
+;Version: 1.2
+;PatchID: 11307
+;Details: https://patches.kibab.com/patches/details.php5?id=11307
+/*
+
+*/
+
+;01 - BG COLOR INDEX
+0A16B46: 68 01
+0A16B47: F7FAFA 20C046
+0A16CFA: A661 C046
+
+0A16156: ECF7BEF8 C046C046
+0A13522: EEF7D8FE C046C046
+0A16D36: EBF7CEFA C046C046
+
+;------------------------- end -------------------------
+

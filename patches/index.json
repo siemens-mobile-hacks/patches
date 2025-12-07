@@ -19565,6 +19565,16 @@
 				"ru": "Убрать сообщение \"Все сигналы вкл/выкл\"",
 				"en": "Disable message \"All ringtones on/off\""
 			}
+		},
+		"11307": {
+			"id": 11307,
+			"model": "S75v52",
+			"file": "S75v52/11307-change_nett_while_show_boxes_v1_2.vkp",
+			"mtime": 1765102226000,
+			"title": {
+				"ru": "Изменить сетку при прорисовке окошек",
+				"en": "Change netting while showing MsgBoxes"
+			}
 		}
 	},
 	"SL75v31": {
