@@ -19525,6 +19525,16 @@
 				"ru": "Не показывать софт-кнопки на главном экране",
 				"en": "Don't show softkeys on IDLE"
 			}
+		},
+		"11302": {
+			"id": 11302,
+			"model": "S75v52",
+			"file": "S75v52/11302-battery_perc_instead_of_icons_v1_1.vkp",
+			"mtime": 1765090284000,
+			"title": {
+				"ru": "Процент заряда батареи вместо иконок",
+				"en": "Battery percentage instead of icons"
+			}
 		}
 	},
 	"SL75v31": {
