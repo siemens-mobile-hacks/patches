@@ -19605,6 +19605,16 @@
 				"ru": "Отключить сообщение \"Выбран русский язык\"",
 				"en": "Disable message \"Language is set to:\""
 			}
+		},
+		"11311": {
+			"id": 11311,
+			"model": "S75v52",
+			"file": "S75v52/11311-disable_message_input_language_v2.vkp",
+			"mtime": 1765112514000,
+			"title": {
+				"ru": "Отключить сообщение 'Язык ввода: *' при выборе языка",
+				"en": "Disable message 'Input language: *' at a language choice"
+			}
 		}
 	},
 	"SL75v31": {
