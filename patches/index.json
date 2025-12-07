@@ -19635,6 +19635,16 @@
 				"ru": "Отключить сообщение 'Прием данных завершен'",
 				"en": "Disable message 'Data received'"
 			}
+		},
+		"11315": {
+			"id": 11315,
+			"model": "S75v52",
+			"file": "S75v52/11315-disable_message_profile_activated.vkp",
+			"mtime": 1765116560000,
+			"title": {
+				"ru": "Отключить сообщение 'Профиль активирован: *'",
+				"en": "Disable message 'Profile activated: *'"
+			}
 		}
 	},
 	"SL75v31": {
