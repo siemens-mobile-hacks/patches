@@ -19535,6 +19535,16 @@
 				"ru": "Процент заряда батареи вместо иконок",
 				"en": "Battery percentage instead of icons"
 			}
+		},
+		"11303": {
+			"id": 11303,
+			"model": "S75v52",
+			"file": "S75v52/11303-lock_unlock_dbl_press_of_hash_v1_2.vkp",
+			"mtime": 1765097468000,
+			"title": {
+				"ru": "Блокировка или разблокировка клавиатуры двойным нажатием клавиши '#'",
+				"en": "Lock or unlock keypad by double press of hash button"
+			}
 		}
 	},
 	"SL75v31": {
