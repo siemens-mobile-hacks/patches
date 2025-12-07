@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 051225
+;Version: 071225
 ;PatchID: 8285
 ;Details: https://patches.kibab.com/patches/details.php5?id=8285
 ;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v52&f=S75sw52_Functions_library_231017.zip
@@ -1043,6 +1043,7 @@
 0F58: 0xA0437BF4 ; 83D6: RECT *GetHeaderRECT();
 0F5C: 0xA069B994 ; 83D7: RECT *GetOptionsHeaderRECT();
 0F60: 0xA0672BE4 ; 83D8: RECT *GetMainAreaRECT();
+0F64: 0xA0A280B0 ; 3D9: __arm int GetPITSize();
 
 #pragma disable old_equal_ff
 +0
