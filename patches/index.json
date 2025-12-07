@@ -19595,6 +19595,16 @@
 				"ru": "Режим оффлайн в меню красной кнопки",
 				"en": "Offline mode in red button menu"
 			}
+		},
+		"11310": {
+			"id": 11310,
+			"model": "S75v52",
+			"file": "S75v52/11310-disable_message_language_is_set_to.vkp",
+			"mtime": 1765111528000,
+			"title": {
+				"ru": "Отключить сообщение \"Выбран русский язык\"",
+				"en": "Disable message \"Language is set to:\""
+			}
 		}
 	},
 	"SL75v31": {
