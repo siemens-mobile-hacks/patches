@@ -19545,6 +19545,16 @@
 				"ru": "Блокировка или разблокировка клавиатуры двойным нажатием клавиши '#'",
 				"en": "Lock or unlock keypad by double press of hash button"
 			}
+		},
+		"11305": {
+			"id": 11305,
+			"model": "S75v52",
+			"file": "S75v52/11305-unlock_all_btns_in_fak_editor_v1_2.vkp",
+			"mtime": 1765100380000,
+			"title": {
+				"ru": "Разблокировать все кнопки в редакторе горячих клавиш",
+				"en": "Unlock all buttons in FAK editor"
+			}
 		}
 	},
 	"SL75v31": {
