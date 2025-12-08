@@ -3,7 +3,7 @@
 ;Speed up Ring UI
 ;(c) FIL
 ;(p) Feyman
-;Version: 
+;Version: 1.0.1
 ;PatchID: 10942
 ;Details: https://patches.kibab.com/patches/details.php5?id=10942
 /*
@@ -11,8 +11,11 @@
 Патч затрагивает UI изменения громкости, оповещения входящего звонка, оповещения будильника.
 */
 
-0A17A94: FEF7B0FA 57F17CFF
-0B6F988:  4144563A4A6176615F636F6D5F736965 4675636B2D49740010B5002804D00468
-0B6F998:  6D656E735F6D705F6D656469615F4E41 002C01D1014CA04710BD0000F95FA1A0
+; .GrubBGFromLCD_Hook
+0B3F1F8: 62616420696E64657820666F7220657863657074696F6E20 10B5002804D00468002C01D1014CA04710BDC046F95FA1A0
+
+; .GrubBGFromLCD_Jump
+0A17A94: FEF7B0FA 27F1B0FB
+
 ;------------------------- end -------------------------
 
