@@ -19735,6 +19735,16 @@
 				"ru": "Исправить заголовок меню 'Через BT'",
 				"en": "Fix header in 'Via BT' menu"
 			}
+		},
+		"11325": {
+			"id": 11325,
+			"model": "S75v52",
+			"file": "S75v52/11325-fix_startup_animation_on_reboot.vkp",
+			"mtime": 1765202598000,
+			"title": {
+				"ru": "Исправить анимацию включения при перезагрузке",
+				"en": "Fix startup animation on reboot"
+			}
 		}
 	},
 	"SL75v31": {

@@ -32443,5 +32443,8 @@
 	],
 	[
 		"S75v52/11324-fix_header_in_via_bt_menu.vkp"
+	],
+	[
+		"S75v52/11325-fix_startup_animation_on_reboot.vkp"
 	]
 ]
