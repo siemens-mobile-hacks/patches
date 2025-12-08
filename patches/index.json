@@ -19705,6 +19705,16 @@
 				"ru": "Ускорить открытие меню",
 				"en": "Speed up opening menu"
 			}
+		},
+		"11322": {
+			"id": 11322,
+			"model": "S75v52",
+			"file": "S75v52/11322-fix_welcome_text_menu.vkp",
+			"mtime": 1765201558000,
+			"title": {
+				"ru": "Исправить меню 'Текст приветс.'",
+				"en": "Fix 'Wellcome text' menu"
+			}
 		}
 	},
 	"SL75v31": {
