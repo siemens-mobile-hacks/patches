@@ -19675,6 +19675,16 @@
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
 			}
+		},
+		"11319": {
+			"id": 11319,
+			"model": "S75v52",
+			"file": "S75v52/11319-change_max_width_of_extra_header.vkp",
+			"mtime": 1765188956000,
+			"title": {
+				"ru": "Изменить максимальную ширину дополнительного заголовка",
+				"en": "Change maximum width of the extra header"
+			}
 		}
 	},
 	"SL75v31": {
