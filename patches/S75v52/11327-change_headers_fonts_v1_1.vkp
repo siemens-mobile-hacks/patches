@@ -1,0 +1,15 @@
+;S75v52
+;Изменение шрифтов заголовков 
+;Change headers fonts
+;(c) Evgr, FIL
+;Version: 1.1
+;PatchID: 11327
+;Details: https://patches.kibab.com/patches/details.php5?id=11327
+/*
+
+*/
+
+;0C0097C: 05 05 ; main
+0C009A4: 05 0C ; extra
+;------------------------- end -------------------------
+
