@@ -15145,11 +15145,11 @@
 		"8282": {
 			"id": 8282,
 			"model": "S75v52",
-			"file": "S75v52/8282-Smooth_Scrolling_Of_Long_Names.vkp",
-			"mtime": 1202567008000,
+			"file": "S75v52/8282-smooth_scroll_of_long_names_v1_1.vkp",
+			"mtime": 1765162310000,
 			"title": {
 				"ru": "Плавный скроллинг длинных названий и имен",
-				"en": "Smooth Scrolling Of Long Names"
+				"en": "Smooth scrolling of long names"
 			}
 		},
 		"8283": {

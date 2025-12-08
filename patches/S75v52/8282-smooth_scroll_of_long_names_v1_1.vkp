@@ -1,0 +1,25 @@
+;S75v52
+;Плавный скроллинг длинных названий и имен
+;Smooth scrolling of long names
+;(c) SiNgle, FIL
+;(p) KIBER-DEMON
+;Version: 1.1
+;PatchID: 8282
+;Details: https://patches.kibab.com/patches/details.php5?id=8282
+/*
+
+*/
+
+068C3BC: D007 1202 ; delay before start
+068C3C0: 2C01 2A00 ; scrolling speed
+0C00764: D007 1202 ; delay before start
+0C00768: 2C01 2A00 ; scrolling speed
+
+; MEDIAPLAYER INFO LINE
+05FEBCA: 64 3A ; speed
+; delay
+05FEBC6: 7D 84
+05FEBC8: C9 89
+
+;------------------------- end -------------------------
+
