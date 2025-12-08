@@ -19695,6 +19695,16 @@
 				"ru": "Альтернативный скроллинг по умолчанию",
 				"en": "Alternate scrolling by default"
 			}
+		},
+		"11321": {
+			"id": 11321,
+			"model": "S75v52",
+			"file": "S75v52/11321-speed_up_opening_menu.vkp",
+			"mtime": 1765200836000,
+			"title": {
+				"ru": "Ускорить открытие меню",
+				"en": "Speed up opening menu"
+			}
 		}
 	},
 	"SL75v31": {
