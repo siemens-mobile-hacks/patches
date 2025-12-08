@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 071225
+;Version: 081225
 ;PatchID: 8285
 ;Details: https://patches.kibab.com/patches/details.php5?id=8285
 ;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v52&f=S75sw52_Functions_library_231017.zip
@@ -1023,8 +1023,8 @@
 ;0F0C:             ; 3C3: __thumb int SetPBarValue(int gui_id, int value);
 ;0F10:             ; 3C4: __thumb int SetPBarText(int gui_id, WSHDR *ws);
 ;0F14:             ; 83C5: void *GetPBarProc3();
-;0F18:             ; 3C6: __thumb void SetHeaderScrollText(void *header, const WSHDR *title, const void *malloc_fn, const void *mfree_fn);
-;0F1C:             ; 3C7: __thumb void SetHeaderExtraText(void *header, const WSHDR *ws, const void *malloc_fn, const void *mfree_fn);
+0F18: 0xA0A1E321   ; 3C6: __thumb void SetHeaderScrollText(void *header, const WSHDR *title, const void *malloc_fn, const void *mfree_fn);
+0F1C: 0xA0A1DFAD   ; 3C7: __thumb void SetHeaderExtraText(void *header, const WSHDR *ws, const void *malloc_fn, const void *mfree_fn);
 ;0F20:             ; 3C8: __arm int GetMimeType(int uid, WSHDR *mime_type, int unk_0);
 ;0F24:             ; 3C9: __thumb int wstrncmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
 ;0F28:             ; 3CA: __thumb int wstricmp(const WSHDR *ws1, const WSHDR *ws2);
@@ -1040,10 +1040,10 @@
 0F4C: 0xA08FEC83   ; 3D3: __thumb int IllumFilterSet(int flags, int unk);
 0F50: 0xA0A02CB5   ; 3D4: __thumb void DrawCroppedIMGHDR(int x, int y, int offset_x, int offset_y, int w, int h, int flags, const IMGHDR *img);
 ;F54:              ; 3D5: __arm int BuildPath(WSHDR *ws, const WSHDR *file_name, const WSHDR *dir);
-0F58: 0xA0437BF4 ; 83D6: RECT *GetHeaderRECT();
-0F5C: 0xA069B994 ; 83D7: RECT *GetOptionsHeaderRECT();
-0F60: 0xA0672BE4 ; 83D8: RECT *GetMainAreaRECT();
-0F64: 0xA0A280B0 ; 3D9: __arm int GetPITSize();
+0F58: 0xA0437BF4   ; 83D6: RECT *GetHeaderRECT();
+0F5C: 0xA069B994   ; 83D7: RECT *GetOptionsHeaderRECT();
+0F60: 0xA0672BE4   ; 83D8: RECT *GetMainAreaRECT();
+0F64: 0xA0A280B0   ; 3D9: __arm int GetPITSize();
 
 #pragma disable old_equal_ff
 +0
