@@ -19645,6 +19645,16 @@
 				"ru": "Отключить сообщение 'Профиль активирован: *'",
 				"en": "Disable message 'Profile activated: *'"
 			}
+		},
+		"11316": {
+			"id": 11316,
+			"model": "S75v52",
+			"file": "S75v52/11316-disable_wait_in_appointments_tasks.vkp",
+			"mtime": 1765160696000,
+			"title": {
+				"ru": "Отключить 'Подождите' в (Встречи,Задания)-Нов.запись",
+				"en": "Disable 'Please wait' in (Appointments,Tasks)-New entry"
+			}
 		}
 	},
 	"SL75v31": {
