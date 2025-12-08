@@ -19665,6 +19665,16 @@
 				"ru": "Исправить инициализацию прокручиваемых заголовков",
 				"en": "Fix init of scrollable headers"
 			}
+		},
+		"11318": {
+			"id": 11318,
+			"model": "S75v52",
+			"file": "S75v52/11318-smooth_scroll_of_long_headers_v1_1.vkp",
+			"mtime": 1765188336000,
+			"title": {
+				"ru": "Плавная прокрутка длинных заголовков",
+				"en": "Smooth scrolling of long headers"
+			}
 		}
 	},
 	"SL75v31": {

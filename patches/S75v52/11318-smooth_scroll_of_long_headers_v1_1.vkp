@@ -1,0 +1,31 @@
+;S75v52
+;Плавная прокрутка длинных заголовков
+;Smooth scrolling of long headers
+;(c) FIL
+;(r) Azq2
+;Version: 1.1
+;PatchID: 11318
+;Details: https://patches.kibab.com/patches/details.php5?id=11318
+/*
+
+*/
+
+; HEADER
+; DEFAULT
+0A1D964: FF 2A ; speed
+; delay
+0A1D966: 2D32 8421
+0A1D968: 7D21 8900
+0A1D96A: 0901 0231
+; MEDIAPLAYER
+05FF178: 64 2A ; speed
+; delay
+05FF174: 7D 84
+05FF176: C9 89
+
+; EXTRA HEADER
+0C009BC: E803 1202 ; delay
+0C009C0: F401 2A00 ; speed
+
+;------------------------- end -------------------------
+
