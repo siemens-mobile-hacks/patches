@@ -19655,6 +19655,16 @@
 				"ru": "Отключить 'Подождите' в (Встречи,Задания)-Нов.запись",
 				"en": "Disable 'Please wait' in (Appointments,Tasks)-New entry"
 			}
+		},
+		"11317": {
+			"id": 11317,
+			"model": "S75v52",
+			"file": "S75v52/11317-fix_init_of_scollable_headers_v1_1.vkp",
+			"mtime": 1765187468000,
+			"title": {
+				"ru": "Исправить инициализацию прокручиваемых заголовков",
+				"en": "Fix init of scrollable headers"
+			}
 		}
 	},
 	"SL75v31": {
