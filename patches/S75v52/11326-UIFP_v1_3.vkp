@@ -1,0 +1,185 @@
+;S75v52
+;Пакет исправлений пользовательского интерфейса
+;UI Fix Pack
+;(c) FIL, Azq2, SiNgle
+;Version: 1.3
+;PatchID: 11326
+;Details: https://patches.kibab.com/patches/details.php5?id=11326
+/*
+В пакет вошли только те патчи, которые не подходят под другие категории.
+*/
+
+;№1
+;Плавный скроллинг длинных названий и имен
+;Smooth scrolling of long names
+;(c) SiNgle, FIL
+;(p) KIBER-DEMON
+;Version: 1.1
+;PatchID: 8282
+;Details: https://patches.kibab.com/patches/details.php5?id=8282
+
+068C3BC: D007 1202 ; delay before start
+068C3C0: 2C01 2A00 ; scrolling speed
+0C00764: D007 1202 ; delay before start
+0C00768: 2C01 2A00 ; scrolling speed
+
+; MEDIAPLAYER INFO LINE
+05FEBCA: 64 3A ; speed
+; delay
+05FEBC6: 7D 84
+05FEBC8: C9 89
+
+;№2
+;Плавная прокрутка длинных заголовков
+;Smooth scrolling of long headers
+;(c) FIL
+;(r) Azq2
+;Version: 1.1
+;PatchID: 11318
+;Details: https://patches.kibab.com/patches/details.php5?id=11318
+
+; HEADER
+; DEFAULT
+0A1D964: FF 2A ; speed
+; delay
+0A1D966: 2D32 8421
+0A1D968: 7D21 8900
+0A1D96A: 0901 0231
+; MEDIAPLAYER
+05FF178: 64 2A ; speed
+; delay
+05FF174: 7D 84
+05FF176: C9 89
+
+; EXTRA HEADER
+0C009BC: E803 1202 ; delay
+0C009C0: F401 2A00 ; speed
+
+;№3
+;Исправить инициализацию прокручиваемых заголовков
+;Fix init of scrollable headers
+;(c) FIL
+;(r) Azq2
+;Version: 1.1
+;PatchID: 11317
+;Details: https://patches.kibab.com/patches/details.php5?id=11317
+
+; .SetScrollType
+0B73234: 6E5265616C697A653A206A6E666E65745F436F6E6E6563742C20626C6F636B65 10B5044B040098470349044B2A222000984710BDB315A2A012020000DF16A2A0
+
+; .SetScrollType_Jump
+0A1D67E: 03F098FF 55F1D9FD
+
+;№4
+;Изменить максимальную ширину дополнительного заголовка
+;Change maximum width of the extra header
+;(c) FIL
+;PatchID: 11319
+;Details: https://patches.kibab.com/patches/details.php5?id=11319
+
+0A1D4AA: 23 0i42
+0A1D4AE: 23 0i42
+0A1D470: 23 0i42
+0A1D478: 23 0i42
+
+;№5
+;Альтернативный скроллинг по умолчанию
+;Alternate scrolling by default
+;(c) FIL
+;PatchID: 11320
+;Details: https://patches.kibab.com/patches/details.php5?id=11320
+
+0A1D67A: 02 01
+0A1EBC4: 297F 0121
+0C009B8: 02 01
+
+;№6
+;Ускорить прокручивание меню
+;Speed up menu scrolling
+;(c) Azq2, FIL
+;(r) Виктор89
+;(p) Feyman
+;Version: 1.1
+;PatchID: 10970
+;Details: https://patches.kibab.com/patches/details.php5?id=10970
+
+; .DrawMenuItemScrollText_Hook
+0B51D6C: 736F636B65743A3A6F70656E303A204C696E6B206572726F722E204E6F2077617920746F207265636F766572 426D094B70B5002A03D102681269013201D0984770BD0400343425780822227098472570F6E7C0463B13A2A0
+
+; .DrawMenuItemScrollText_Jump
+0A1E98C: 02F0D5FC 33F1EEF9
+
+; .FixR0
+0A21516: 1C30 201C
+
+; .GrabBGFromLCD_Hook
+08E8810: 496E7374616E636520616C7265616479207573656420666F7220616E6F74686572206170706C6963 10B504003434006824781C30082C02D0034CA04710BD1900024B9847FAE7C046F95FA1A0DB5FA1A0
+
+; .GrabBGFromLCD_Jump
+0A2151C: F4F76CFD C7F678F9
+
+;№7
+;Ускорить Ring UI
+;Speed up Ring UI
+;(c) FIL
+;(p) Feyman
+;Version: 1.0.1
+;PatchID: 10942
+;Details: https://patches.kibab.com/patches/details.php5?id=10942
+
+; .GrubBGFromLCD_Hook
+0B3F1F8: 62616420696E64657820666F7220657863657074696F6E20 10B5002804D00468002C01D1014CA04710BDC046F95FA1A0
+
+; .GrubBGFromLCD_Jump
+0A17A94: FEF7B0FA 27F1B0FB
+
+;№8
+;Ускорить открытие меню
+;Speed up opening menu
+;(c) FIL
+;PatchID: 11321
+;Details: https://patches.kibab.com/patches/details.php5?id=11321
+
+097A9AC: 9BF024FB C046C046
+
+;№9
+;Исправить меню 'Текст приветс.'
+;Fix 'Wellcome text' menu
+;(c) FIL
+;PatchID: 11322
+;Details: https://patches.kibab.com/patches/details.php5?id=11322
+
+042DEFC: 00 01
+042DFE0: 00000000 0403C0A0
+042DFFC: 00000000 0403C0A0
+
+;№10
+;Исправить заголовок в 'Настр. онлайн'
+;Fix header in 'Online settings'
+;(c) FIL
+;PatchID: 11323
+;Details: https://patches.kibab.com/patches/details.php5?id=11323
+
+0C113FC: 8C 94
+0C10118: 0100 4401
+
+;№11
+;Исправить заголовок меню 'Через BT'
+;Fix header in 'Via BT' menu
+;(c) FIL
+;PatchID: 11324
+;Details: https://patches.kibab.com/patches/details.php5?id=11324
+
+0CCE340: 96010000 F6030000
+
+;№12
+;Исправить анимацию включения при перезагрузке
+;Fix startup animation on reboot
+;(c) FIL
+;Version: 
+;PatchID: 11325
+;Details: https://patches.kibab.com/patches/details.php5?id=11325
+
+02FD3C2: 37F792EA 0020C046
+;------------------------- end -------------------------
+
