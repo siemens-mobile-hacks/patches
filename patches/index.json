@@ -19685,6 +19685,16 @@
 				"ru": "Изменить максимальную ширину дополнительного заголовка",
 				"en": "Change maximum width of the extra header"
 			}
+		},
+		"11320": {
+			"id": 11320,
+			"model": "S75v52",
+			"file": "S75v52/11320-alternate_scroll_by_default.vkp",
+			"mtime": 1765189408000,
+			"title": {
+				"ru": "Альтернативный скроллинг по умолчанию",
+				"en": "Alternate scrolling by default"
+			}
 		}
 	},
 	"SL75v31": {
