@@ -1,0 +1,14 @@
+;S75v52
+;Исправить заголовок меню 'Через BT'
+;Fix header in 'Via BT' menu
+;(c) FIL
+;Version: 
+;PatchID: 11324
+;Details: https://patches.kibab.com/patches/details.php5?id=11324
+/*
+
+*/
+
+0CCE340: 96010000 F6030000
+;------------------------- end -------------------------
+

@@ -19725,6 +19725,16 @@
 				"ru": "Исправить заголовок в 'Настр. онлайн'",
 				"en": "Fix header in 'Online settings'"
 			}
+		},
+		"11324": {
+			"id": 11324,
+			"model": "S75v52",
+			"file": "S75v52/11324-fix_header_in_via_bt_menu.vkp",
+			"mtime": 1765202436000,
+			"title": {
+				"ru": "Исправить заголовок меню 'Через BT'",
+				"en": "Fix header in 'Via BT' menu"
+			}
 		}
 	},
 	"SL75v31": {
