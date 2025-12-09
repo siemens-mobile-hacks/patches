@@ -19775,6 +19775,16 @@
 				"ru": "Пакет исправлений Audio Setup",
 				"en": "Audio Setup Fix Pack"
 			}
+		},
+		"11329": {
+			"id": 11329,
+			"model": "S75v52",
+			"file": "S75v52/11329-dont_set_t_resources_when_t_applied.vkp",
+			"mtime": 1765267772000,
+			"title": {
+				"ru": "Не устанавливать определенные ресурсы темы при установке пользовательской темы",
+				"en": "Don't set certain resources when a user theme is applied"
+			}
 		}
 	},
 	"SL75v31": {
