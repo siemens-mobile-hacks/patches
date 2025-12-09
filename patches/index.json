@@ -4662,7 +4662,7 @@
 			}
 		},
 		"10076": {
-			"id": "10076",
+			"id": 10076,
 			"model": "EL71v45",
 			"file": "EL71v45/10076-library.vkp",
 			"mtime": 1292840336000,
@@ -10295,7 +10295,7 @@
 			}
 		},
 		"5624": {
-			"id": "5624",
+			"id": 5624,
 			"model": "S75v47",
 			"file": "S75v47/5624-S75sw47_Functions_Library_120812.vkp",
 			"additionalFile": "S75v47/5624-Functions_library_100410.zip",
@@ -15145,11 +15145,11 @@
 		"8282": {
 			"id": 8282,
 			"model": "S75v52",
-			"file": "S75v52/8282-Smooth_Scrolling_Of_Long_Names.vkp",
-			"mtime": 1202567008000,
+			"file": "S75v52/8282-smooth_scroll_of_long_names_v1_1.vkp",
+			"mtime": 1765162310000,
 			"title": {
 				"ru": "Плавный скроллинг длинных названий и имен",
-				"en": "Smooth Scrolling Of Long Names"
+				"en": "Smooth scrolling of long names"
 			}
 		},
 		"8283": {
@@ -15173,7 +15173,7 @@
 			}
 		},
 		"8285": {
-			"id": "8285",
+			"id": 8285,
 			"model": "S75v52",
 			"file": "S75v52/8285-swilib_v081225.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
@@ -17923,11 +17923,11 @@
 		"9130": {
 			"id": 9130,
 			"model": "S75v52",
-			"file": "S75v52/9130-ScreenSaver_after_KeyBoard_Lock_v2.vkp",
-			"mtime": 1226607296000,
+			"file": "S75v52/9130-fast_ss_appearance_after_kbd_lock.vkp",
+			"mtime": 1764905374000,
 			"title": {
 				"ru": "Моментальный запуск скринсейвера после блокировки клавиатуры",
-				"en": "ScreenSaver after KeyBoard Lock"
+				"en": "Fast ScreenSaver appearance after keyboard lock"
 			}
 		},
 		"9158": {
@@ -19308,8 +19308,8 @@
 		"10942": {
 			"id": 10942,
 			"model": "S75v52",
-			"file": "S75v52/10942-SpeedUpRingUI_s75.vkp",
-			"mtime": 1729718234000,
+			"file": "S75v52/10942-speed_up_ring_ui_v1_0_1.vkp",
+			"mtime": 1765200622000,
 			"title": {
 				"ru": "Ускорить Ring UI",
 				"en": "Speed up Ring UI"
@@ -19338,8 +19338,8 @@
 		"10970": {
 			"id": 10970,
 			"model": "S75v52",
-			"file": "S75v52/10970-SpeedUpMenuScroll_s75.vkp",
-			"mtime": 1730665902000,
+			"file": "S75v52/10970-speed_up_menu_scrolling_v1_1.vkp",
+			"mtime": 1765199858000,
 			"title": {
 				"ru": "Ускорить прокручивание меню",
 				"en": "Speed up menu scrolling"
@@ -19474,6 +19474,286 @@
 			"title": {
 				"ru": "Грохнуть InstantMessenger",
 				"en": "Kill InstantMessenger"
+			}
+		},
+		"11299": {
+			"id": 11299,
+			"model": "S75v52",
+			"file": "S75v52/11299-disable_date_and_time_on_idle_v1_1.vkp",
+			"mtime": 1764903474000,
+			"title": {
+				"ru": "Удалить дату и время только с главного экрана",
+				"en": "Disable date and time only on IDLE"
+			}
+		},
+		"11300": {
+			"id": 11300,
+			"model": "S75v52",
+			"file": "S75v52/11300-sam.vkp",
+			"mtime": 1764927702000,
+			"title": {
+				"ru": "Модификация Startup Assistant",
+				"en": "Startup Assistant Modification"
+			}
+		},
+		"11301": {
+			"id": 11301,
+			"model": "S75v52",
+			"file": "S75v52/11301-dont_show_softkeys_on_idle_v1_1.vkp",
+			"mtime": 1764929112000,
+			"title": {
+				"ru": "Не показывать софт-кнопки на главном экране",
+				"en": "Don't show softkeys on IDLE"
+			}
+		},
+		"11302": {
+			"id": 11302,
+			"model": "S75v52",
+			"file": "S75v52/11302-battery_perc_instead_of_icons_v1_1.vkp",
+			"mtime": 1765090284000,
+			"title": {
+				"ru": "Процент заряда батареи вместо иконок",
+				"en": "Battery percentage instead of icons"
+			}
+		},
+		"11303": {
+			"id": 11303,
+			"model": "S75v52",
+			"file": "S75v52/11303-lock_unlock_dbl_press_of_hash_v1_2.vkp",
+			"mtime": 1765097468000,
+			"title": {
+				"ru": "Блокировка или разблокировка клавиатуры двойным нажатием клавиши '#'",
+				"en": "Lock or unlock keypad by double press of hash button"
+			}
+		},
+		"11305": {
+			"id": 11305,
+			"model": "S75v52",
+			"file": "S75v52/11305-unlock_all_btns_in_fak_editor_v1_2.vkp",
+			"mtime": 1765100380000,
+			"title": {
+				"ru": "Разблокировать все кнопки в редакторе горячих клавиш",
+				"en": "Unlock all buttons in FAK editor"
+			}
+		},
+		"11306": {
+			"id": 11306,
+			"model": "S75v52",
+			"file": "S75v52/11306-disable_msg_all_ringtones_on_off_v2.vkp",
+			"mtime": 1765101604000,
+			"title": {
+				"ru": "Убрать сообщение \"Все сигналы вкл/выкл\"",
+				"en": "Disable message \"All ringtones on/off\""
+			}
+		},
+		"11307": {
+			"id": 11307,
+			"model": "S75v52",
+			"file": "S75v52/11307-change_nett_while_show_boxes_v1_2.vkp",
+			"mtime": 1765102226000,
+			"title": {
+				"ru": "Изменить сетку при прорисовке окошек",
+				"en": "Change netting while showing MsgBoxes"
+			}
+		},
+		"11308": {
+			"id": 11308,
+			"model": "S75v52",
+			"file": "S75v52/11308-disable_message_time_and_date_upd.vkp",
+			"mtime": 1765102570000,
+			"title": {
+				"ru": "Отключить сообщение 'Время и дата актуализированы.'",
+				"en": "Disable message 'Time and date updated.'"
+			}
+		},
+		"11309": {
+			"id": 11309,
+			"model": "S75v52",
+			"file": "S75v52/11309-offline_in_red_button_menu_v1_2.vkp",
+			"mtime": 1765111046000,
+			"title": {
+				"ru": "Режим оффлайн в меню красной кнопки",
+				"en": "Offline mode in red button menu"
+			}
+		},
+		"11310": {
+			"id": 11310,
+			"model": "S75v52",
+			"file": "S75v52/11310-disable_message_language_is_set_to.vkp",
+			"mtime": 1765111528000,
+			"title": {
+				"ru": "Отключить сообщение \"Выбран русский язык\"",
+				"en": "Disable message \"Language is set to:\""
+			}
+		},
+		"11311": {
+			"id": 11311,
+			"model": "S75v52",
+			"file": "S75v52/11311-disable_message_input_language_v2.vkp",
+			"mtime": 1765112514000,
+			"title": {
+				"ru": "Отключить сообщение 'Язык ввода: *' при выборе языка",
+				"en": "Disable message 'Input language: *' at a language choice"
+			}
+		},
+		"11313": {
+			"id": 11313,
+			"model": "S75v52",
+			"file": "S75v52/11313-dont_show_events_on_idle.vkp",
+			"mtime": 1765115484000,
+			"title": {
+				"ru": "Не показывать события на главном экране",
+				"en": "Don't show events on IDLE"
+			}
+		},
+		"11314": {
+			"id": 11314,
+			"model": "S75v52",
+			"file": "S75v52/11314-disable_message_data_received.vkp",
+			"mtime": 1765115850000,
+			"title": {
+				"ru": "Отключить сообщение 'Прием данных завершен'",
+				"en": "Disable message 'Data received'"
+			}
+		},
+		"11315": {
+			"id": 11315,
+			"model": "S75v52",
+			"file": "S75v52/11315-disable_message_profile_activated.vkp",
+			"mtime": 1765116560000,
+			"title": {
+				"ru": "Отключить сообщение 'Профиль активирован: *'",
+				"en": "Disable message 'Profile activated: *'"
+			}
+		},
+		"11316": {
+			"id": 11316,
+			"model": "S75v52",
+			"file": "S75v52/11316-disable_wait_in_appointments_tasks.vkp",
+			"mtime": 1765160696000,
+			"title": {
+				"ru": "Отключить 'Подождите' в (Встречи,Задания)-Нов.запись",
+				"en": "Disable 'Please wait' in (Appointments,Tasks)-New entry"
+			}
+		},
+		"11317": {
+			"id": 11317,
+			"model": "S75v52",
+			"file": "S75v52/11317-fix_init_of_scollable_headers_v1_1.vkp",
+			"mtime": 1765187468000,
+			"title": {
+				"ru": "Исправить инициализацию прокручиваемых заголовков",
+				"en": "Fix init of scrollable headers"
+			}
+		},
+		"11318": {
+			"id": 11318,
+			"model": "S75v52",
+			"file": "S75v52/11318-smooth_scroll_of_long_headers_v1_1.vkp",
+			"mtime": 1765188336000,
+			"title": {
+				"ru": "Плавная прокрутка длинных заголовков",
+				"en": "Smooth scrolling of long headers"
+			}
+		},
+		"11319": {
+			"id": 11319,
+			"model": "S75v52",
+			"file": "S75v52/11319-change_max_width_of_extra_header.vkp",
+			"mtime": 1765188956000,
+			"title": {
+				"ru": "Изменить максимальную ширину дополнительного заголовка",
+				"en": "Change maximum width of the extra header"
+			}
+		},
+		"11320": {
+			"id": 11320,
+			"model": "S75v52",
+			"file": "S75v52/11320-alternate_scroll_by_default.vkp",
+			"mtime": 1765189408000,
+			"title": {
+				"ru": "Альтернативный скроллинг по умолчанию",
+				"en": "Alternate scrolling by default"
+			}
+		},
+		"11321": {
+			"id": 11321,
+			"model": "S75v52",
+			"file": "S75v52/11321-speed_up_opening_menu.vkp",
+			"mtime": 1765200836000,
+			"title": {
+				"ru": "Ускорить открытие меню",
+				"en": "Speed up opening menu"
+			}
+		},
+		"11322": {
+			"id": 11322,
+			"model": "S75v52",
+			"file": "S75v52/11322-fix_welcome_text_menu.vkp",
+			"mtime": 1765201558000,
+			"title": {
+				"ru": "Исправить меню 'Текст приветс.'",
+				"en": "Fix 'Wellcome text' menu"
+			}
+		},
+		"11323": {
+			"id": 11323,
+			"model": "S75v52",
+			"file": "S75v52/11323-fix_header_in_online_settings.vkp",
+			"mtime": 1765202096000,
+			"title": {
+				"ru": "Исправить заголовок в 'Настр. онлайн'",
+				"en": "Fix header in 'Online settings'"
+			}
+		},
+		"11324": {
+			"id": 11324,
+			"model": "S75v52",
+			"file": "S75v52/11324-fix_header_in_via_bt_menu.vkp",
+			"mtime": 1765202436000,
+			"title": {
+				"ru": "Исправить заголовок меню 'Через BT'",
+				"en": "Fix header in 'Via BT' menu"
+			}
+		},
+		"11325": {
+			"id": 11325,
+			"model": "S75v52",
+			"file": "S75v52/11325-fix_startup_animation_on_reboot.vkp",
+			"mtime": 1765202598000,
+			"title": {
+				"ru": "Исправить анимацию включения при перезагрузке",
+				"en": "Fix startup animation on reboot"
+			}
+		},
+		"11326": {
+			"id": 11326,
+			"model": "S75v52",
+			"file": "S75v52/11326-UIFP_v1_3.vkp",
+			"mtime": 1765203232000,
+			"title": {
+				"ru": "Пакет исправлений пользовательского интерфейса",
+				"en": "UI Fix Pack"
+			}
+		},
+		"11327": {
+			"id": 11327,
+			"model": "S75v52",
+			"file": "S75v52/11327-change_headers_fonts_v1_1.vkp",
+			"mtime": 1765204316000,
+			"title": {
+				"ru": "Изменение шрифтов заголовков",
+				"en": "Change headers fonts"
+			}
+		},
+		"11328": {
+			"id": 11328,
+			"model": "S75v52",
+			"file": "S75v52/11328-ASFP_v1_1.vkp",
+			"mtime": 1765204570000,
+			"title": {
+				"ru": "Пакет исправлений Audio Setup",
+				"en": "Audio Setup Fix Pack"
 			}
 		}
 	},
@@ -21586,7 +21866,7 @@
 			}
 		},
 		"10522": {
-			"id": "10522",
+			"id": 10522,
 			"model": "SL75v47",
 			"file": "SL75v47/10522-Function_Library120603.vkp",
 			"additionalFile": "SL75v47/10522-Function_Library120603.rar",
@@ -21899,7 +22179,7 @@
 			}
 		},
 		"7634": {
-			"id": "7634",
+			"id": 7634,
 			"model": "SL75v52",
 			"file": "SL75v52/7634-Functions_library.vkp",
 			"mtime": 1200294382000,
@@ -25362,7 +25642,7 @@
 			}
 		},
 		"10542": {
-			"id": "10542",
+			"id": 10542,
 			"model": "CF75v23",
 			"file": "CF75v23/10542-swilib_v071025.vkp",
 			"mtime": 1759860710000,
@@ -29649,7 +29929,7 @@
 			}
 		},
 		"6285": {
-			"id": "6285",
+			"id": 6285,
 			"model": "CX75v13",
 			"file": "CX75v13/6285-swilib.vkp",
 			"additionalFile": "CX75v13/6285-swilib.zip",
@@ -32451,7 +32731,7 @@
 			}
 		},
 		"4736": {
-			"id": "4736",
+			"id": 4736,
 			"model": "CX75v25",
 			"file": "CX75v25/4736-fl_swi.vkp",
 			"additionalFile": "CX75v25/4736-fl_swi.rar",
@@ -40007,7 +40287,7 @@
 			}
 		},
 		"4673": {
-			"id": "4673",
+			"id": 4673,
 			"model": "M75v25",
 			"file": "M75v25/4673-BigFunctionLibrary.vkp",
 			"mtime": 1176023636000,
@@ -44871,7 +45151,7 @@
 			}
 		},
 		"10518": {
-			"id": "10518",
+			"id": 10518,
 			"model": "C75v22",
 			"file": "C75v22/10518-swilib_c75_22_120628.vkp",
 			"mtime": 1340924442000,
@@ -46531,7 +46811,7 @@
 			}
 		},
 		"10516": {
-			"id": "10516",
+			"id": 10516,
 			"model": "C75v24",
 			"file": "C75v24/10516-SWI_C75_24_120628.vkp",
 			"mtime": 1340923204000,
@@ -55907,7 +56187,7 @@
 			}
 		},
 		"7545": {
-			"id": "7545",
+			"id": 7545,
 			"model": "S65v58",
 			"file": "S65v58/7545-Library.vkp",
 			"mtime": 1179819080000,
@@ -57179,7 +57459,7 @@
 			}
 		},
 		"10897": {
-			"id": "10897",
+			"id": 10897,
 			"model": "S65v58",
 			"file": "S65v58/10897-swilib_v270825.vkp",
 			"mtime": 1756311696000,
@@ -60783,7 +61063,7 @@
 			}
 		},
 		"10131": {
-			"id": "10131",
+			"id": 10131,
 			"model": "SL65v53",
 			"file": "SL65v53/10131-swilib_16_01_2011.vkp",
 			"mtime": 1299855222000,
@@ -62506,7 +62786,7 @@
 			}
 		},
 		"7546": {
-			"id": "7546",
+			"id": 7546,
 			"model": "SK65v50",
 			"file": "SK65v50/7546-library.vkp",
 			"additionalFile": "SK65v50/7546-library.zip",
@@ -68578,7 +68858,7 @@
 			}
 		},
 		"10625": {
-			"id": "10625",
+			"id": 10625,
 			"model": "CX70v56",
 			"file": "CX70v56/10625-swilib_v181125.vkp",
 			"mtime": 1763412890000,
@@ -88149,7 +88429,7 @@
 			}
 		},
 		"6954": {
-			"id": "6954",
+			"id": 6954,
 			"model": "C72v22",
 			"file": "C72v22/6954-swilib_v101125.vkp",
 			"mtime": 1762721718000,
@@ -94431,7 +94711,7 @@
 			}
 		},
 		"10075": {
-			"id": "10075",
+			"id": 10075,
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib_v090725.vkp",
 			"mtime": 1752082864000,
@@ -99271,7 +99551,7 @@
 			}
 		},
 		"10629": {
-			"id": "10629",
+			"id": 10629,
 			"model": "C81v51",
 			"file": "C81v51/10629-swilib_c81v51_vkp.vkp",
 			"mtime": 1718886492000,
@@ -101070,7 +101350,7 @@
 			}
 		},
 		"10839": {
-			"id": "10839",
+			"id": 10839,
 			"model": "S68v52",
 			"file": "S68v52/10839-swilib.vkp",
 			"mtime": 1717526596000,
@@ -101368,7 +101648,7 @@
 			}
 		},
 		"10395": {
-			"id": "10395",
+			"id": 10395,
 			"model": "CL61v128",
 			"file": "CL61v128/10395-swilib_cl61v00_db128.vkp",
 			"additionalFile": "CL61v128/10395-swilib_cl61v00_db128.zip",

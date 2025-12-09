@@ -1,0 +1,14 @@
+;S75v52
+;Отключить сообщение 'Время и дата актуализированы.'
+;Disable message 'Time and date updated.'
+;(c) FIL
+;Version: 
+;PatchID: 11308
+;Details: https://patches.kibab.com/patches/details.php5?id=11308
+/*
+
+*/
+
+037EA94: 6DF046EE C046C046
+;------------------------- end -------------------------
+

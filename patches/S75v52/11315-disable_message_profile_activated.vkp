@@ -1,0 +1,15 @@
+;S75v52
+;Отключить сообщение 'Профиль активирован: *'
+;Disable message 'Profile activated: *'
+;(c) FIL
+;Version: 
+;PatchID: 11315
+;Details: https://patches.kibab.com/patches/details.php5?id=11315
+/*
+
+*/
+
+0336444: 6A461549 B6F056ED
+0336448: 201C EAE7
+;------------------------- end -------------------------
+

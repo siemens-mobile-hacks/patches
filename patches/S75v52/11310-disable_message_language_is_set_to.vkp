@@ -1,0 +1,15 @@
+;S75v52
+;Отключить сообщение "Выбран русский язык"
+;Disable message "Language is set to:"
+;(c) unknow
+;(p) FIL
+;Version: 
+;PatchID: 11310
+;Details: https://patches.kibab.com/patches/details.php5?id=11310
+/*
+
+*/
+
+028A42A: 62F17CE9 C046C046
+;------------------------- end -------------------------
+

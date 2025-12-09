@@ -1,0 +1,19 @@
+;S75v52
+;Разблокировать все кнопки в редакторе горячих клавиш
+;Unlock all buttons in FAK editor
+;(c) FIL
+;Version: 1.2
+;PatchID: 11305
+;Details: https://patches.kibab.com/patches/details.php5?id=11305
+/*
+Теперь доступны для редактирования: "Down", "0", "1", "*", "#".
+*/
+
+037997C: 0DF788FF 0020C046
+0332AE6: 54F7D3FE 0020C046
+0288048: FFF799FD 0020C046
+02F55E8: 92F752F9 0020C046
+042865C: 4E41545F45585F50484F4E455F50494C4F540000 "NAT_INSERT_PLUS",0000000000 ; "NAT_EX_PHONE_PILOT" -> "NAT_INSERT_PLUS"
+042860C: 4E41545F44594E414D49435F4C49474854000000 "NAT_TONES_ON_OFF",00000000  ; "NAT_DYNAMIC_LIGHT" -> "NAT_TONES_ON_OFF"
+;------------------------- end -------------------------
+

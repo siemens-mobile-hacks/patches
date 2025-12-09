@@ -1,0 +1,15 @@
+;S75v52
+;Исправить заголовок в 'Настр. онлайн'
+;Fix header in 'Online settings'
+;(c) FIL
+;Version: 
+;PatchID: 11323
+;Details: https://patches.kibab.com/patches/details.php5?id=11323
+/*
+
+*/
+
+0C113FC: 8C 94
+0C10118: 0100 4401
+;------------------------- end -------------------------
+

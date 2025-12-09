@@ -1,0 +1,36 @@
+;S75v52
+;Пакет исправлений Audio Setup
+;Audio Setup Fix Pack
+;(c) FIL, Visad
+;Version: 1.1
+;PatchID: 11328
+;Details: https://patches.kibab.com/patches/details.php5?id=11328
+/*
+
+*/
+
+;№1
+;Убрать проигрывание музыки при изменении громкости
+;Disable playing music while changing volume
+;(c) Visad
+;(p) Виктор89
+;PatchID: 8881
+;Details: https://patches.kibab.com/patches/details.php5?id=8881
+
+02D19D2: A9F73AEE C046C046
+
+;№2
+;Отключить фон в интерфейсе настройки громкости
+;Disable background in Audio Setup UI
+;(c) FIL
+;(p) Виктор89
+;PatchID: 10817
+;Details: https://patches.kibab.com/patches/details.php5?id=10817
+
++43892C
+0: 64 17
+4: 65 17
++0
+
+;------------------------- end -------------------------
+

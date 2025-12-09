@@ -1,0 +1,15 @@
+;S75v52
+;Отключить сообщение 'Прием данных завершен'
+;Disable message 'Data received'
+;(c) FIL
+;Version: 
+;PatchID: 11314
+;Details: https://patches.kibab.com/patches/details.php5?id=11314
+/*
+Отключает сообщение после приема файла по БТ.
+*/
+
+059765C: C8F05AEE 0020C046
+
+;------------------------- end -------------------------
+

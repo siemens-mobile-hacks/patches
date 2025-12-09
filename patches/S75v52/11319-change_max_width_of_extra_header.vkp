@@ -1,0 +1,17 @@
+;S75v52
+;Изменить максимальную ширину дополнительного заголовка
+;Change maximum width of the extra header
+;(c) FIL
+;Version: 
+;PatchID: 11319
+;Details: https://patches.kibab.com/patches/details.php5?id=11319
+/*
+
+*/
+
+0A1D4AA: 23 0i42
+0A1D4AE: 23 0i42
+0A1D470: 23 0i42
+0A1D478: 23 0i42
+;------------------------- end -------------------------
+

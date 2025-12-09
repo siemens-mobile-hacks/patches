@@ -23612,7 +23612,7 @@
 		"S75v52/8281-Show_only_last_2_digits_of_year.vkp"
 	],
 	[
-		"S75v52/8282-Smooth_Scrolling_Of_Long_Names.vkp"
+		"S75v52/8282-smooth_scroll_of_long_names_v1_1.vkp"
 	],
 	[
 		"S75v52/8283-Remove_Comma_in_AddressBook.vkp"
@@ -26069,7 +26069,7 @@
 		"S75v47/9129-ScreenSaver_after_KeyBoard_Lock_v2.vkp"
 	],
 	[
-		"S75v52/9130-ScreenSaver_after_KeyBoard_Lock_v2.vkp"
+		"S75v52/9130-fast_ss_appearance_after_kbd_lock.vkp"
 	],
 	[
 		"C81v51/9131-ScreenSaver_after_KeyBoard_Lock_v2.vkp"
@@ -31338,7 +31338,7 @@
 		"CX70v56/10941-smooth_scroll_of_long_headers_v1_1.vkp"
 	],
 	[
-		"S75v52/10942-SpeedUpRingUI_s75.vkp"
+		"S75v52/10942-speed_up_ring_ui_v1_0_1.vkp"
 	],
 	[
 		"CX75v25/10943-scroll_new_cx75.vkp"
@@ -31402,7 +31402,7 @@
 		"EL71v45/10969-NM_Improvements_package_EL71.vkp"
 	],
 	[
-		"S75v52/10970-SpeedUpMenuScroll_s75.vkp"
+		"S75v52/10970-speed_up_menu_scrolling_v1_1.vkp"
 	],
 	[
 		"S65v58/10971-nesto.vkp"
@@ -32332,5 +32332,91 @@
 	null,
 	[
 		"S75v52/11298-kill_imps_v2_1.vkp"
+	],
+	[
+		"S75v52/11299-disable_date_and_time_on_idle_v1_1.vkp"
+	],
+	[
+		"S75v52/11300-sam.vkp"
+	],
+	[
+		"S75v52/11301-dont_show_softkeys_on_idle_v1_1.vkp"
+	],
+	[
+		"S75v52/11302-battery_perc_instead_of_icons_v1_1.vkp"
+	],
+	[
+		"S75v52/11303-lock_unlock_dbl_press_of_hash_v1_2.vkp"
+	],
+	null,
+	[
+		"S75v52/11305-unlock_all_btns_in_fak_editor_v1_2.vkp"
+	],
+	[
+		"S75v52/11306-disable_msg_all_ringtones_on_off_v2.vkp"
+	],
+	[
+		"S75v52/11307-change_nett_while_show_boxes_v1_2.vkp"
+	],
+	[
+		"S75v52/11308-disable_message_time_and_date_upd.vkp"
+	],
+	[
+		"S75v52/11309-offline_in_red_button_menu_v1_2.vkp"
+	],
+	[
+		"S75v52/11310-disable_message_language_is_set_to.vkp"
+	],
+	[
+		"S75v52/11311-disable_message_input_language_v2.vkp"
+	],
+	null,
+	[
+		"S75v52/11313-dont_show_events_on_idle.vkp"
+	],
+	[
+		"S75v52/11314-disable_message_data_received.vkp"
+	],
+	[
+		"S75v52/11315-disable_message_profile_activated.vkp"
+	],
+	[
+		"S75v52/11316-disable_wait_in_appointments_tasks.vkp"
+	],
+	[
+		"S75v52/11317-fix_init_of_scollable_headers_v1_1.vkp"
+	],
+	[
+		"S75v52/11318-smooth_scroll_of_long_headers_v1_1.vkp"
+	],
+	[
+		"S75v52/11319-change_max_width_of_extra_header.vkp"
+	],
+	[
+		"S75v52/11320-alternate_scroll_by_default.vkp"
+	],
+	[
+		"S75v52/11321-speed_up_opening_menu.vkp"
+	],
+	[
+		"S75v52/11322-fix_welcome_text_menu.vkp"
+	],
+	[
+		"S75v52/11323-fix_header_in_online_settings.vkp"
+	],
+	[
+		"S75v52/11324-fix_header_in_via_bt_menu.vkp"
+	],
+	[
+		"S75v52/11325-fix_startup_animation_on_reboot.vkp"
+	],
+	[
+		"S75v52/11326-UIFP_v1_3.vkp"
+	],
+	[
+		"S75v52/11327-change_headers_fonts_v1_1.vkp"
+	],
+	[
+		"S75v52/11328-ASFP_v1_1.vkp"
 	]
 ]
