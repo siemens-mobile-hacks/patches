@@ -19785,6 +19785,16 @@
 				"ru": "Не устанавливать определенные ресурсы темы при установке пользовательской темы",
 				"en": "Don't set certain resources when a user theme is applied"
 			}
+		},
+		"11330": {
+			"id": 11330,
+			"model": "S75v52",
+			"file": "S75v52/11330-date_instead_of_p_name_in_ss_v2_1.vkp",
+			"mtime": 1765269118000,
+			"title": {
+				"ru": "Дата вместо имени оператора в заставке",
+				"en": "Date instead of provider name in screensaver"
+			}
 		}
 	},
 	"SL75v31": {
