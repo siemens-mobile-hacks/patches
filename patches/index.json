@@ -19825,6 +19825,16 @@
 				"ru": "Отключить сообщение 'Закладка переименована' в Настр. онлайн",
 				"en": "Disable message 'Entry renamed' in Online settings"
 			}
+		},
+		"11334": {
+			"id": 11334,
+			"model": "S75v52",
+			"file": "S75v52/11334-srm_v1_1.vkp",
+			"mtime": 1765356892000,
+			"title": {
+				"ru": "Модификация диктофона",
+				"en": "Sound recorder modification"
+			}
 		}
 	},
 	"SL75v31": {
