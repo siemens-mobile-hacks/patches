@@ -1,0 +1,15 @@
+;S75v52
+;Отключить сообщение 'Закладка переименована' в Настр. онлайн
+;Disable message 'Entry renamed' in Online settings
+;(c) FIL
+;Version: 
+;PatchID: 11333
+;Details: https://patches.kibab.com/patches/details.php5?id=11333
+/*
+
+*/
+
+063576A: 28F0F2EE 0020C046
+060C8AC: 8A42 002A
+;------------------------- end -------------------------
+

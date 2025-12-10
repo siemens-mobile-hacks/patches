@@ -19815,6 +19815,16 @@
 				"ru": "Выход из PersMenu после выбора элемента",
 				"en": "Exit from PersMenu after select an item"
 			}
+		},
+		"11333": {
+			"id": 11333,
+			"model": "S75v52",
+			"file": "S75v52/11333-disable_message_entry_renamed_in_os.vkp",
+			"mtime": 1765342434000,
+			"title": {
+				"ru": "Отключить сообщение 'Закладка переименована' в Настр. онлайн",
+				"en": "Disable message 'Entry renamed' in Online settings"
+			}
 		}
 	},
 	"SL75v31": {
