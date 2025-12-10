@@ -1,0 +1,19 @@
+;S75v52
+;Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши
+;Temporary enable backlight on lock screen by any keypress
+;(c) FIL
+;Version: 1.1
+;PatchID: 11331
+;Details: https://patches.kibab.com/patches/details.php5?id=11331
+/*
+
+*/
+
+; .Hook
+03319A4: 41504D5F4E61746976654170705F4465726567697374657246726F6D44617461536F7572 10B5054B9847041E03D00449044B03209847200010BDC046DF3B30A0FF7F0000C9EB8FA0
+
+; .Jump
+0346372: BDF734FC EBF717FB
+
+;------------------------- end -------------------------
+

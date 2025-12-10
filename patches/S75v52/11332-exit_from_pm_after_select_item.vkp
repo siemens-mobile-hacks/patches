@@ -1,0 +1,14 @@
+;S75v52
+;Выход из PersMenu после выбора элемента
+;Exit from PersMenu after select an item
+;(c) FIL
+;Version: 
+;PatchID: 11332
+;Details: https://patches.kibab.com/patches/details.php5?id=11332
+/*
+
+*/
+
+0601800: 09E0 C046
+;------------------------- end -------------------------
+

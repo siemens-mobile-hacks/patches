@@ -1,0 +1,25 @@
+;S75v52
+;Не устанавливать определенные ресурсы темы при установке пользовательской темы
+;Don't set certain resources when a user theme is applied
+;(c) FIL
+;(r) Evgr
+;Version: 
+;PatchID: 11329
+;Details: https://patches.kibab.com/patches/details.php5?id=11329
+/*
+При установке темы не сбрасывается мелодия звонка и СМС. Так же не включается анимация при включении и выключении, если она была отключена.
+*/
+
+#pragma enable old_equal_ff
+; .Hook
+1482A00: F0B50400C7B00D001600C92813D0D52811D00300673B012B10D80B4B7F2206A901A898470121094F01AB6A4649422000B847002802D0002047B0F0BD044B3200290020009847F7E753761FA0D17653A0457C53A0
+#pragma disable old_equal_ff
+
+; .Trampoline
+05329B4: 52656769737472795F536574 04E02DE510403DFA04F09DE4
+
+; .Jump
+05328AE: 05F0C9F9 00F082E8
+
+;------------------------- end -------------------------
+

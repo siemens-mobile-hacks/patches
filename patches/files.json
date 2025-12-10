@@ -32418,5 +32418,17 @@
 	],
 	[
 		"S75v52/11328-ASFP_v1_1.vkp"
+	],
+	[
+		"S75v52/11329-dont_set_t_resources_when_t_applied.vkp"
+	],
+	[
+		"S75v52/11330-date_instead_of_p_name_in_ss_v2_1.vkp"
+	],
+	[
+		"S75v52/11331-temp_e_bl_on_ls_by_any_key_v1_1.vkp"
+	],
+	[
+		"S75v52/11332-exit_from_pm_after_select_item.vkp"
 	]
 ]
