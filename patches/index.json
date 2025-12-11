@@ -97238,6 +97238,16 @@
 				"ru": "Расширенный список вызовов",
 				"en": "Extended calls list"
 			}
+		},
+		"11335": {
+			"id": 11335,
+			"model": "E71v45",
+			"file": "E71v45/11335-temp_e_bl_on_ls_by_any_key_v1_2.vkp",
+			"mtime": 1765457612000,
+			"title": {
+				"ru": "Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши",
+				"en": "Temporary enable backlight on lock screen by any keypress"
+			}
 		}
 	},
 	"C81v51": {
