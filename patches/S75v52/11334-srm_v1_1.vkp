@@ -1,0 +1,107 @@
+;S75v52
+;Модификация диктофона
+;Sound recorder modification
+;(c) FIL
+;Version: 1.1
+;PatchID: 11334
+;Details: https://patches.kibab.com/patches/details.php5?id=11334
+/*
+- Добавлена порция исправлений для работы совместно с XTask.
+- Принудительное сохранение записи при закрытии CSM.
+- Исправлено позиционирование элементов интерфейса.
+- Исправлена отрисовка интерфейса.
+- Отображение названия записываемого файла вместо надписи "New recording".
+- Увеличена скорость анимации.
+- Вывод сообщения об ошибке при невозможности открытия списка записей.
+- Пункт меню "Rename" заменен на "Go to…".
+
+*/
+
+#pragma enable old_equal_ff
+; .List_OnClose_Hook
+1482050: 054B10B59847054B1B68002B02D0D868034B984710BDC046734460A04CECE3A8A7FF96A0
+#pragma disable old_equal_ff
+
+; .List_OnClose_Jump
+08CB81C: 734460A0 512048A1
+
+#pragma enable old_equal_ff
+; .List_GHook_Hook
+14821A0: 70B50B4B0C0098470A2C10D1094B0A4D1C68E06AA847002809D0806BA847002805D0B121054B890011209847A06370BD09C662A04CECE3A8B1FE96A02D7D97A0
+#pragma disable old_equal_ff
+
+; .List_GHook_Jump
+08DD894: 09C662A0 A12148A1
+
+; .Recording_FixPBarPosition
+08DDAC4: 2300850060009400 270087005D009000
+
+; .Recording_FixAnimationPosition
+0654C6C: 2A22 3422
+
+; .Recording_FixFinishedTextPosition
+08DDAA8: 0000380083004700 0000420083005100
+
+; .Recording_ChangeAnimationSpeed
+0654C98: FA21 5021
+
+#pragma enable old_equal_ff
+; .Recording_DrawWidgetWithBG
+1482080: 7FB5051E1CD00F4B022098472C680023E25E0223E15E0B00163B0390002002900626A05F401A01900420245E1000A41A01340094044CA0476B6828001B6898477FBDC04603C8A1A0B52CA0A0
+
+; .Recording_FixRedraw_Hook
+14820D0: F8B50E4B04000E4F984706212000B847092105002000B8470A2106002000B84704003000FFF7C4FF2800FFF7C1FF002C03D0636820001B689847F8BD77D462A04587A1A0
+#pragma disable old_equal_ff
+
+; .Recording_FixRedraw_Trampoline
+0604514: 53524C69737455495F63736D 04E02DE5ECF639FA04F09DE4
+
+; .Recording_FixRedraw_Jump
+0604BFE: 28F03AFC FFF78AEC
+
+; .Recording_FixRedraw_Part2
+0604C60: 5DF004E8 C046C046
+
+; .Recording_FixRedraw_Part3
+0654CA2: 0EF00CEE 0CF0E4EF
+
+; .Recording_FixRedraw_Part4
+0604D80: 14050000 30000000
+
+; .Recording_FixRedraw_Part5
+0604950: E8030000 10000000
+
+; .Recording_FixClose
+0604E0E: 0420 0120
+
+; .Recording_SaveOnClose_Part1
+0604BEA: 28F068FA 28F050FA
+
+; .Recording_SaveOnClose_Part2
+0604D02: 28F0DCF9 28F0C4F9
+
+; .Recording_ChangeText_Part1
+062D3DA: 1420 8020
+
+; .Recording_ChangeText_Hook
+0605230: 53525265636F7264696E6755495F63736D202D3E205265636F7264696E6720576964676574207374 10B5064B04009847054BA06B1B68196C044B98470223236110BDC0467B8897A04CECE3A807D562A0
+
+; .Recording_ChangeText_Jump
+06047B6: 5AF020E802202061 201C00F03AFDC046
+
+#pragma enable old_equal_ff
+; .Options_GoTo
+1482120: 70B50C4B060068200D00984768210A4B0400984726236360253BE660A56063612000064B9847064B050020009847280070BDC0465C4B09A06C49FCA0F7A552A0484909A0
+#pragma disable old_equal_ff
+
+; .Options_ReplaceRename_Part1_Trampoline
+0602290: 43534D20696E20636F727275 04E02DE5A1FF39FA04F09DE4
+
+; .Options_ReplaceRename_Part1_Jump
+062CA2E: 6EF7BCFB D5F730EC
+
+; .Options_ReplaceRename_Part2
+08E24B8: 7101000071010000 1B0800001B080000
+
+;------------------------- end -------------------------
+

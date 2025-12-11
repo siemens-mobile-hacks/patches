@@ -32426,9 +32426,15 @@
 		"S75v52/11330-date_instead_of_p_name_in_ss_v2_1.vkp"
 	],
 	[
-		"S75v52/11331-temp_e_bl_on_ls_by_any_key_v1_1.vkp"
+		"S75v52/11331-temp_e_bl_on_ls_by_any_key_v1_2.vkp"
 	],
 	[
 		"S75v52/11332-exit_from_pm_after_select_item.vkp"
+	],
+	[
+		"S75v52/11333-disable_message_entry_renamed_in_os.vkp"
+	],
+	[
+		"S75v52/11334-srm_v1_1.vkp"
 	]
 ]
