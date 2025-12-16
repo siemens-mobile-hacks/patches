@@ -97248,6 +97248,16 @@
 				"ru": "Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши",
 				"en": "Temporary enable backlight on lock screen by any keypress"
 			}
+		},
+		"11336": {
+			"id": 11336,
+			"model": "E71v45",
+			"file": "E71v45/11336-disable_msg_all_ringtones_on_off_v2.vkp",
+			"mtime": 1765872100000,
+			"title": {
+				"ru": "Убрать сообщение \"Все сигналы вкл/выкл\"",
+				"en": "Disable message \"All ringtones on/off\""
+			}
 		}
 	},
 	"C81v51": {
