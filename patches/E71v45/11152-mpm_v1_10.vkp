@@ -3,12 +3,13 @@
 ;Media player modification
 ;(c) FIL
 ;(r) alfinant, Marie
-;Version: 1.9
+;Version: 1.10
 ;PatchID: 11152
 ;Details: https://patches.kibab.com/patches/details.php5?id=11152
 /*
 - Ускорено переключение треков/изображений.
 - Отключена обработка отключения подсветки.
+- Принудительное обновление данных о треке в памяти. Требуется для корректной работы функций GetLastAudioTrackFilename, GetLastAudioTrackDir.
 - Возможность изменять громкость при заблокированной клавиатуре.
 - Отключено сворачивание приложения при заблокированной клавиатуре. Устраняет зависание при сворачивании через XTask.
 - Отключено добавление png файлов в БД медиаплеера только из каталогов "X:\zbin\".
@@ -49,6 +50,9 @@
 
 ; .DisableBacklightFadeHandler
 07A5010: 40CF45E2 FEC045E2
+
+; .StoreLastPlayMelodyOnChangeTrack
+0792A04: E8308FE200308DE50230A0E35320A0E318119FE5 DC07D4E1010050E30400A001990E000B010000EA
 
 ; .DisableAutoPlayInMenu_Part1
 079D584: FA6C011B 0000A011
