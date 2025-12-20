@@ -5388,7 +5388,7 @@
 			}
 		},
 		"1673": {
-			"id": 1673,
+			"id": "1673",
 			"model": "S75v20",
 			"file": "S75v20/1673-Disable_assistant_when_start.vkp",
 			"mtime": 1140642000000,
