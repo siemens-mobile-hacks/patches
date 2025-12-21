@@ -3,7 +3,7 @@
 ;Media player modification
 ;(c) FIL
 ;(r) alfinant, Marie
-;Version: 1.10
+;Version: 1.11
 ;PatchID: 11152
 ;Details: https://patches.kibab.com/patches/details.php5?id=11152
 /*
@@ -12,10 +12,13 @@
 - Принудительное обновление данных о треке в памяти. Требуется для корректной работы функций GetLastAudioTrackFilename, GetLastAudioTrackDir.
 - Возможность изменять громкость при заблокированной клавиатуре.
 - Отключено сворачивание приложения при заблокированной клавиатуре. Устраняет зависание при сворачивании через XTask.
-- Отключено добавление png файлов в БД медиаплеера только из каталогов "X:\zbin\".
 - Исправлен выбор плейлиста.
 - Отключено сообщение "Add tracks to playlist.".
 - Отключены пункты меню "Помощь".
+БД:
+- Отключено добавление png файлов только из каталогов "X:\zbin\".
+- Увеличено количество отображаемых элементов списка.
+- Уменьшен размер иконок и превью до 26x26.
 Аудио режим:
 - Начальная поддержка обложек! Поддерживаются теги ID3v2.3, ID3v2.4 с кодировкой мета-данных ISO8859_1. Максимальный размер обложки 512 Кб.
 - Медиаплеер всегда открывается в режиме анимации/обложки. Если открыть список воспроизведения, то плеер автоматически перейдет в режим анимации/обложки при неактивности в течении 5 секунд.
@@ -217,19 +220,33 @@
 ; .Zoom_DisableSoftKeys_Part_3
 08AF500: FC030000 FFFFFF7F
 
-#pragma enable old_equal_ff
-; .MediaDB_IsAllowFile
-1382750: 10B50F4B96B004001F2206A901A898470C4B0D491F2201A898470C4B20009847272804D00A4B2000984716B010BD094B032201A9200098470428F3D10538F4E75BB24FA0B08A56A0C01838A1F82650A0D05B72A051B64FA0
-#pragma disable old_equal_ff
-
-; .MediaDB_IsAllowFile_Jump
-0725C30: E6FFFFEB C67231FA
-
 ; .Menu_RemoveHelpItem_1
 08AF394: A2050000 5C050000
 
 ; .Menu_RemoveHelpItem_2
 08AA7C0: A2050000 5C050000
+
+#pragma enable old_equal_ff
+; .MDB_IsAllowFile
+1382750: 10B50F4B96B004001F2206A901A898470C4B0D491F2201A898470C4B20009847272804D00A4B2000984716B010BD094B032201A9200098470428F3D10538F4E75BB24FA0B08A56A0C01838A1F82650A0D05B72A051B64FA0
+#pragma disable old_equal_ff
+
+; .MDB_IsAllowFile_Jump
+0725C30: E6FFFFEB C67231FA
+
+#pragma enable old_equal_ff
+; .MDB_FixUI_Hook
+1382B90: 902310B58B61014B984710BDDB4095A0
+#pragma disable old_equal_ff
+
+; .MDB_FixUI_Jump
+079A930: DBF206FB 96A02FFA
+
+; .MDB_UseSmallIcons
+0730928: 0130A0E3 0030A0E3
+
+; .MDB_FixPreviewSize
+079A030: 0018A0E12118A0E1 1A10A0E31A20A0E3
 
 ;------------------------- end -------------------------
 
