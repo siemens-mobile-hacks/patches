@@ -97268,6 +97268,16 @@
 				"ru": "Грохнуть InstantMessenger",
 				"en": "Kill InstantMessenger"
 			}
+		},
+		"11338": {
+			"id": 11338,
+			"model": "E71v45",
+			"file": "E71v45/11338-htb.vkp",
+			"mtime": 1766321472000,
+			"title": {
+				"ru": "Скрыть панель вкладок",
+				"en": "Hide Tab Bar"
+			}
 		}
 	},
 	"C81v51": {
