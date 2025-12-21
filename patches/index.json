@@ -97258,6 +97258,16 @@
 				"ru": "Убрать сообщение \"Все сигналы вкл/выкл\"",
 				"en": "Disable message \"All ringtones on/off\""
 			}
+		},
+		"11337": {
+			"id": 11337,
+			"model": "E71v45",
+			"file": "E71v45/11337-kill_imps_v2_2.vkp",
+			"mtime": 1766309798000,
+			"title": {
+				"ru": "Грохнуть InstantMessenger",
+				"en": "Kill InstantMessenger"
+			}
 		}
 	},
 	"C81v51": {
