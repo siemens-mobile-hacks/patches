@@ -3,7 +3,7 @@
 ;Media player modification
 ;(c) FIL
 ;(r) alfinant, Marie
-;Version: 1.11
+;Version: 1.12
 ;PatchID: 11152
 ;Details: https://patches.kibab.com/patches/details.php5?id=11152
 /*
@@ -14,6 +14,7 @@
 - Отключено сворачивание приложения при заблокированной клавиатуре. Устраняет зависание при сворачивании через XTask.
 - Исправлен выбор плейлиста.
 - Отключено сообщение "Add tracks to playlist.".
+- Пункты меню "Attribures" заменены на "Go to...".
 - Отключены пункты меню "Помощь".
 БД:
 - Отключено добавление png файлов только из каталогов "X:\zbin\".
@@ -220,11 +221,19 @@
 ; .Zoom_DisableSoftKeys_Part_3
 08AF500: FC030000 FFFFFF7F
 
-; .Menu_RemoveHelpItem_1
-08AF394: A2050000 5C050000
+#pragma enable old_equal_ff
+; .Options_GoTo
+1382BB0: 70B50C4B050068200E00984768210A4B0400984726236360253BE660A56063612000064B9847064B050020009847280070BDC046512F09A000FCFAA0249969A0932F09A0
+#pragma disable old_equal_ff
 
-; .Menu_RemoveHelpItem_2
-08AA7C0: A2050000 5C050000
+; .Options_ReplaceAttributes_Part1
+08AF24C: 8F070000 1B080000
+
+; .Options_ReplaceAttributes_Part2
+07CC398: 511BFDEB 04DA2EFA
+
+; .Options_RemoveHelpItem
+08AF394: A2050000 5C050000
 
 #pragma enable old_equal_ff
 ; .MDB_IsAllowFile
@@ -247,6 +256,15 @@
 
 ; .MDB_FixPreviewSize
 079A030: 0018A0E12118A0E1 1A10A0E31A20A0E3
+
+; .MDB_Options_ReplaceAttributes_Part1
+08AA774: 8F070000 1B080000
+
+; .MDB_Options_ReplaceAttributes_Part2
+0799908: F5E5FDEB A8A42FFA
+
+; .MDB_Options_RemoveHelpItem
+08AA7C0: A2050000 5C050000
 
 ;------------------------- end -------------------------
 
