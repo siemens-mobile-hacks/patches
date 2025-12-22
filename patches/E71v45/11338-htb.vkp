@@ -1,0 +1,28 @@
+;E71v45
+;Скрыть панель вкладок
+;Hide Tab Bar
+;(c) FIL
+;Version: 
+;PatchID: 11338
+;Details: https://patches.kibab.com/patches/details.php5?id=11338
+/*
+Патч полностью скрывает отображение вкладок, за счет чего увеличивается полезное пространство на экране. Функционал остается полностью рабочим!
+*/
+
+; .HideTabs
+0AF7D6A: 00F0B5FB C046C046
+
+; .FixBodyBG
+0A25596: 0320 0220
+
+; .FixBodyPosition
+0A2514A: 31F793FA C046C046
+
+; .CallOnCreateHandlers_Hook
+0A4DAD4: 6572726F722072656164696E6720706172616D6574657220494D50535F4A414D5F4C697374656E65724D65737361676544617461 70B5099C0500064B98472800054B98472100054B054A064C0C31A04770BDC0468554A2A03D4E95A0932F09A0512F09A0F783A2A0
+
+; .CallOnCreateHandlers_Jump
+0A256CE: FFF7D9FE 28F001FA
+
+;------------------------- end -------------------------
+

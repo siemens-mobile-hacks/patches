@@ -31614,7 +31614,7 @@
 		"E71v45/11039-dont_display_nav_key_icon_v2_1_1.vkp"
 	],
 	[
-		"E71v45/11040-optimize_theme_cache.vkp"
+		"E71v45/11040-optimize_theme_cache_v1_0_1.vkp"
 	],
 	[
 		"E71v45/11041-disable_animation_mode_in_mp.vkp"
@@ -31952,7 +31952,7 @@
 		"CX70v56/11151-date_instead_of_p_name_in_ss_v2_1.vkp"
 	],
 	[
-		"E71v45/11152-mpm_v1_10.vkp"
+		"E71v45/11152-mpm_v1_11.vkp"
 	],
 	[
 		"E71v45/11153-Mediaplayer_changer_v101-MP.vkp"
@@ -31989,7 +31989,7 @@
 		"S75v52/11164-fix_online_settings75_52.vkp"
 	],
 	[
-		"E71v45/11165-srm_v1_1.vkp"
+		"E71v45/11165-srm_v1_1_1.vkp"
 	],
 	[
 		"C81v51/11166-change_animation_speed_in_nm.vkp"
@@ -32442,5 +32442,11 @@
 	],
 	[
 		"E71v45/11336-disable_msg_all_ringtones_on_off_v2.vkp"
+	],
+	[
+		"E71v45/11337-kill_imps_v2_2.vkp"
+	],
+	[
+		"E71v45/11338-htb.vkp"
 	]
 ]
