@@ -19835,6 +19835,16 @@
 				"ru": "Модификация диктофона",
 				"en": "Sound recorder modification"
 			}
+		},
+		"11339": {
+			"id": 11339,
+			"model": "S75v52",
+			"file": "S75v52/11339-Remove_space_menu_S75.vkp",
+			"mtime": 1766595084000,
+			"title": {
+				"ru": "Убрать пробел в меню",
+				"en": "Remove space from the menu"
+			}
 		}
 	},
 	"SL75v31": {
