@@ -3,7 +3,7 @@
 ;Media player modification
 ;(c) FIL
 ;(r) alfinant, Marie
-;Version: 1.12
+;Version: 1.13
 ;PatchID: 11152
 ;Details: https://patches.kibab.com/patches/details.php5?id=11152
 /*
@@ -20,6 +20,7 @@
 - Отключено добавление png файлов только из каталогов "X:\zbin\".
 - Увеличено количество отображаемых элементов списка.
 - Уменьшен размер иконок и превью до 26x26.
+- Добавлено сообщение о невозможности открытия.
 Аудио режим:
 - Начальная поддержка обложек! Поддерживаются теги ID3v2.3, ID3v2.4 с кодировкой мета-данных ISO8859_1. Максимальный размер обложки 512 Кб.
 - Медиаплеер всегда открывается в режиме анимации/обложки. Если открыть список воспроизведения, то плеер автоматически перейдет в режим анимации/обложки при неактивности в течении 5 секунд.
@@ -256,6 +257,25 @@
 
 ; .MDB_FixPreviewSize
 079A030: 0018A0E12118A0E1 1A10A0E31A20A0E3
+
+; .MDB_FixSetUserPointer
+079A8A4: 0510A0E1 0410A0E1
+
+#pragma enable old_equal_ff
+; .MDB_FixGetUserPointer_Hook
+1382C10: 10B5024B9847303010BDC0464F6595A0
+#pragma disable old_equal_ff
+
+; .MDB_FixGetUserPointer_Jump
+079AFD4: 5CED06FB 0D9F2FFA
+
+#pragma enable old_equal_ff
+; .MDB_GHook_Hook
+1382C40: 70B50A2916D10D4B9847DB239B000C4C0500C058A047002805D0B121094B89000120984770BDDA239B00E858A0470028F3D1F7E7044B9847F4E7C0464F6595A0716994A089EA94A0CCAF79A0
+#pragma disable old_equal_ff
+
+; .MDB_GHook_Jump
+088DCC4: CCAF79A0 412C38A1
 
 ; .MDB_Options_ReplaceAttributes_Part1
 08AA774: 8F070000 1B080000
