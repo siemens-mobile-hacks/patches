@@ -1,0 +1,115 @@
+;E71v45
+;Модификация списка вызовов
+;Calls list modification
+;(c) FIL
+;(r) 1nvisible
+;Version: 
+;PatchID: 11340
+;Details: https://patches.kibab.com/patches/details.php5?id=11340
+/*
+- Порция исправлений для работы совместно с XTask.
+- Запрет запуска нескольких копий, при открытий второй копий первая закрывается.
+- Полностью исправлено меню.
+- Отключено "Пожалуйста, подождите".
+- Отключены сообщения "All entries deleted", "Entry deleted.", "Cannot be deleted".
+*/
+
+#pragma enable old_equal_ff
+; .FindCSM
+1382D00: 70B50B4B05000E0098470A4B9B689C68002C03D1084B9847200070BD002D01D0AC4202D0A368B342F4D02468F0E7C046FF7609A0AC03E9A87B7709A0
+#pragma disable old_equal_ff
+
+; .CallRecords_Fix_Part1
+0B20BB0: 2561 C046
+
+; .CallRecords_Fix_Part2
+0B20B88: 2061 C046
+
+; .CallRecords_Delete_DisableMessage_AllEntriesDelete
+09A288A: ACF7EDF8 0020C046
+
+; .CallRecords_Delete_DisableMessage_EntryDeleted
+09A289A: ACF7E5F8 0020C046
+
+; .CallRecords_Delete_DisableMessage_CannotBeDeleted
+09A28AC: ACF7ECF8 0020C046
+
+; .CallRecords_Delete_FixClose
+09A27D4: A16B E16B
+
+#pragma enable old_equal_ff
+; .CallsList_OnCreate_Hook
+1382D60: 10B5064B0400984705492000FFF7C8FF002802D0C068034B984710BD7725A8A0F00BC6A0756A94A0
+#pragma disable old_equal_ff
+
+; .CallsList_OnCreate_Jump
+0C60BF4: 7725A8A0 612D38A1
+
+#pragma enable old_equal_ff
+; .CallsList_OnClose_Hook
+1382DC0: 10B50400006C002801D0054B9847606C002801D0024B9847024B2000984710BD756A94A0E325A8A0
+#pragma disable old_equal_ff
+
+; .CallsList_OnClose_Jump
+0C60C08: E325A8A0 C12D38A1
+
+#pragma enable old_equal_ff
+; .CallsList_GHook_Hook
+1382ED0: 70B505000C000A2910D10B490020FFF70FFF00280AD0406C084B9847002805D0B121074B89000120984770BD054B210028009847F9E7C046F00BC6A0716994A089EA94A0E905B2A0
+#pragma disable old_equal_ff
+
+; .CallsList_GHook_Jump
+0C7D028: E905B2A0 D12E38A1
+
+; .CallsList_DisablePleaseWait
+0A82D2E: 0120 10BD
+
+#pragma enable old_equal_ff
+; .CallsList_View_OnClose_Hook
+1382E10: 10B50400C06D002801D0034B9847034B2000984710BDC046756A94A085618FA0
+#pragma disable old_equal_ff
+
+; .CallsList_View_OnClose_Jump
+0C2C290: 85618FA0 112E38A1
+
+#pragma enable old_equal_ff
+; .CallsList_View_GHook_Hook
+1382F40: 70B505000C000A2910D10B490020FFF7D7FE00280AD0C06D084B9847002805D0B121074B89000120984770BD054B210028009847F9E7C04678C2C2A0716994A089EA94A011379AA0
+#pragma disable old_equal_ff
+
+; .CallsList_View_GHook_Jump
+0C42EB0: 11379AA0 412F38A1
+
+; .CallsList_View_FixClose
+08F6424: 0225 05E0
+
+#pragma enable old_equal_ff
+; .CallsList_Options_OnCreate_Hook
+1382E50: 10B5034B040098470023236510BDC0462D2B9AA0
+#pragma disable old_equal_ff
+
+; .CallsList_Options_OnCreate_Jump
+0C42D60: 2D2B9AA0 512E38A1
+
+#pragma enable old_equal_ff
+; .CallsList_Options_OnClose_Hook
+1382E80: 10B50400C06C002801D0054B9847206D002801D0024B9847024B2000984710BD756A94A0572B9AA0
+#pragma disable old_equal_ff
+
+; .CallsList_Options_OnClose_Jump
+0C42D74: 572B9AA0 812E38A1
+
+; .CallsList_Options_SendMsg_FixClose
+09A2C7E: FFF748FF C046C046
+
+; .CallsList_Options_FixIndents_Part1
+0C60C54: 18000000 19000000
+
+; .CallsList_Options_FixIndents_Part2
+0C60CB0: 00000000 8C60C3A0
+
+; .CallsList_Options_FixIndents_Part3
+0C60CCC: 00000000 8C60C3A0
+
+;------------------------- end -------------------------
+
