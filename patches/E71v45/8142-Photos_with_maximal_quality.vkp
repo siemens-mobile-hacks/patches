@@ -2,7 +2,7 @@
 ;Фотографии с максимальным качеством
 ;Photos with maximal quality
 ;(c) SiNgle
-;(p) Visad
+;(p) Виктор89
 ;Version: 
 ;PatchID: 8142
 ;Details: https://patches.kibab.com/patches/details.php5?id=8142
@@ -10,7 +10,7 @@
 
 */
 
-10BD2A4: 0000DDE5 0200A0E3
-3F00C2: 0000DD05 0200A0E3
+0540F00: 0000DDE5 0200A0E3
+047015A: 0000DD05 0200A0E3
 ;------------------------- end -------------------------
 
