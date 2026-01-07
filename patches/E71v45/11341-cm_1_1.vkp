@@ -3,7 +3,7 @@
 ;Camera modification
 ;(c) FIL
 ;(r) funMarkus, SiNgle, Evgr
-;Version: 
+;Version: 1.1
 ;PatchID: 11341
 ;Details: https://patches.kibab.com/patches/details.php5?id=11341
 /*
@@ -16,6 +16,13 @@
 - Отключены сообщения: "Saved to: *", "Self-timer set to *", "Microphone set to *".
 - Изменены имена файлов на "{YEAR}-{MONTH}-{DAY}_{HOUR}-{MINUTES}-{SECONDS}.{EXT}".
 - Удален пункт из настроек "Default * name".
+- Горячие клавиши:
+-- VOL_UP_BUTTON, UP_BUTTON - увеличить
+-- VOL_DOWN_BUTTON, DOWN_BUTTON - уменьшить
+-- '1' - Уменьшить яркость
+-- '3' - Увеличить яркость
+-- '*' - Переключить режим цвета
+-- '#' - Переключить баланс белого
 Опции:
  - Переименованы пункты "Other videos", "Pictures".
  - Удален пункт "Help".
@@ -99,6 +106,30 @@
 
 ; .DisableSelfTimer
 0784540: 2C0194E5 0000A0E3
+
+#pragma enable old_equal_ff
+; .OnKey_Hook
+1383510: F7B54A680E0053680221943BFF3B8B4304000193002B0DD1244B9568984707002A2D39D00BDC0E2D16D0232D20D026230D2D12D01E4B3100200098472BE0312D0DD0332DF6D163691A68002A0EDC0221786F184B98471CE025237380EAE763691A68052AF3DC01321A60F0E7013AFBE763695A680132022A00DD019A5A60786F0C4B08219847636908215A6838000A4B984701204042FEBD63699A680132052A00DD019A802149009A60D1E74F6595A0247D70A0EC3267A054AC70A0
+#pragma disable old_equal_ff
+
+; .OnKey_Jump
+086F230: 247D70A0 113538A1
+
+#pragma enable old_equal_ff
+; .GHook
+1383700: 10B50400022907D1084B0C209847084B0C216061984710BD0329FCD140690028F9D0044B984700236361F4E7512F09A000FCFAA0932F09A0
+#pragma disable old_equal_ff
+
+; .GHook_Jump
+086F234: 00000000 013738A1
+
+#pragma enable old_equal_ff
+; .Free_Hook
+1383740: 10B5094B04009847002809D02300E8331B68002B04D0997A426911609B799360024B2000984710BD18AE70A0C47570A0
+#pragma disable old_equal_ff
+
+; .Free_Jump
+0706278: D10400EB 30F531FA
 
 ; .DisableMessageSavedTo
 070818C: 170000EA B00000EA
