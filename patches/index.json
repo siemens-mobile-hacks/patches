@@ -97308,6 +97308,16 @@
 				"ru": "Модификация камеры",
 				"en": "Camera modification"
 			}
+		},
+		"11342": {
+			"id": 11342,
+			"model": "E71v45",
+			"file": "E71v45/11342-custom_jpg_quality_on_photo_capture.vkp",
+			"mtime": 1767771094000,
+			"title": {
+				"ru": "Выбор качества JPEG при съёмке фото",
+				"en": "Custom JPEG quality on photo capture"
+			}
 		}
 	},
 	"C81v51": {
