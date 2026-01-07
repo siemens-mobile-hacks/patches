@@ -3,17 +3,19 @@
 ;Camera modification
 ;(c) FIL
 ;(r) funMarkus, SiNgle, Evgr
-;Version: 1.1
+;Version: 1.2
 ;PatchID: 11341
 ;Details: https://patches.kibab.com/patches/details.php5?id=11341
 /*
 - Растянутый видоискатель с сохранением пропорций.
+- Увеличена скорость видоискателя.
 - Изменены разрешения фотографий на 240x320, 640x480, 1024x768, 1280x720 и 1280x1024.
 - Разрешение в пикселях вместо названий. В отличии от патча 10330 не редактирут ленгпак!
+- Качество JPEG установлено 95%.
 - Исправлен заголовок.
 - Индикатор зума и автоматический таймер перенесены в дополнительный заголовок.
 - Отключено отображение счетчика фотографий.
-- Отключены сообщения: "Saved to: *", "Self-timer set to *", "Microphone set to *".
+- Отключены сообщения: "Saved to: *", "Self-timer set to *", "Microphone set to *", "Insufficient memory available!".
 - Изменены имена файлов на "{YEAR}-{MONTH}-{DAY}_{HOUR}-{MINUTES}-{SECONDS}.{EXT}".
 - Удален пункт из настроек "Default * name".
 - Горячие клавиши:
@@ -73,6 +75,12 @@
 ; .ChangePhotoResolution_3
 084BFB4: 8002E001 0005D002
 
+; .ChangeJPEGQuality
+0D0C4B4: F010D7E1 5F10A0E3
+
+; .SpeedUpViewFinder
+0A05E1C: 1400A0E3 0000A0E3
+
 ; .FixHeaderText
 07086A8: 59070000 601C0000
 
@@ -124,15 +132,21 @@
 086F234: 00000000 013738A1
 
 #pragma enable old_equal_ff
-; .Free_Hook
-1383740: 10B5094B04009847002809D02300E8331B68002B04D0997A426911609B799360024B2000984710BD18AE70A0C47570A0
+; .SyncSettings
+1383740: 10B5094B04009847002809D02300E8331B68002B04D0997A426911609B799360024B2000984710BD18AE70A0C47570A070B5084B05000C0016009847002801D043695E60210432002800034B090C984770BDC04618AE70A054AC70A0
 #pragma disable old_equal_ff
 
-; .Free_Jump
+; .SetSettings_Jump
 0706278: D10400EB 30F531FA
+
+; .SetWhiteBalance_Jump
+0706C34: 102090E50400A0E1041000EB 1020D0E50400A0E1CBF231FA
 
 ; .DisableMessageSavedTo
 070818C: 170000EA B00000EA
+
+; .DisableMessageInsufficientMemoryAvailable
+0708180: 250000EA B30000EA
 
 #pragma enable old_equal_ff
 ; .ChangeFileName_Hook
