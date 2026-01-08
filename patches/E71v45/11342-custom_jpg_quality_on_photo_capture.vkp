@@ -1,0 +1,19 @@
+;E71v45
+;Выбор качества JPEG при съёмке фото
+;Custom JPEG quality on photo capture
+;(c) FIL
+;(r) SiNgle, Pentium02, Виктор89
+;Version: 
+;PatchID: 11342
+;Details: https://patches.kibab.com/patches/details.php5?id=11342
+/*
+В 2026-ом году оказалось что прошлая версия патча не работала.
+В патче качество установлено в 95%, можно изменить на любое.
+*/
+
+0D0C4B4: F0 5F ; 95% quality
+
+0D0C4B5: 10D7E1 10A0E3
+
+;------------------------- end -------------------------
+
