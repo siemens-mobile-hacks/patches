@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 090725
+;Version: 090126
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -683,6 +683,9 @@
 09D8: 0xA0CCD008 ; 276  __arm int Obs_SetOutput_File (HObj hObj, WSHDR *path);
 09DC: 0xA0CCFD34 ; 277  __arm int Obs_SetOutput_Uid(HObj hObj, int OutUID);
 09E0: 0xA0CC4EA4 ; 278  __arm int Obs_Sound_SetBitrate(HObj hobj, int bitRate);
+;9E4:            ; 279
+09E8: 0xA0CCCCE8 ; 27A: __arm int Obs_SetInput_Memory(HObj obs, int unk, char *buf, int len);
+
 
 0A04: 0xA8EBC5B8 ; 8281: __thumb char *RamIsRunJava();
 0A08: 0xA8EAAE54 ; 8282: __thumb char *RamIsRunCamera();***
