@@ -1046,6 +1046,7 @@
 0FB0: 0xA0A1C9A1 ; 3EC: __thumb void EDIT_SetUserPointer(void *gui, void *user_pointer);
 0FB4: 0xA0956675 ; 3ED: __thumb void SetWidgetRect(void *widget, int x, int y, int x2, int y2);
 0FB8: 0xA0A22909 ; 3EE: __thumb void AttachWidget(void *gui, const void *widget, int id, const void *malloc_fn);
+0FBC: 0xA094CD9F ; 3EF: __thumb int16_t GetLgpIcon(int lgp_id);
 
 0FC0: 0xA0671FB0 ; 3F0: __arm void Countdown_Start();
 0FC4: 0xA0672074 ; 3F1: __arm void Countdown_Stop();
