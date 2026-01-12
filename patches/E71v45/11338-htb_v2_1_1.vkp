@@ -2,17 +2,16 @@
 ;Скрыть панель вкладок
 ;Hide Tab Bar
 ;(c) FIL
-;Version: 2.1
+;Version: 2.1.1
 ;PatchID: 11338
 ;Details: https://patches.kibab.com/patches/details.php5?id=11338
 /*
 Патч полностью скрывает отображение вкладок, за счет чего увеличивается полезное пространство на экране. Функционал остается полностью рабочим!
 Для того чтобы активировать вкладки для определенного приложения нужно повесить флаг 0x10 на его Definition.
-В патче включено отображение вкладок для Native Explorer.
 */
 
 ; Enable tabs
-088B6E0: 08 18 ; Native Explorer
+;088B6E0: 08 18 ; Native Explorer
 ;088DCBC: 08 18 ; Media player
 ;etc...
 
