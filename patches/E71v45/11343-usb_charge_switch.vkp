@@ -1,0 +1,29 @@
+;E71v45
+;Переключатель USB-зарядки
+;USB сharge switch
+;(c) FIL
+;(r) Azq2, Виктор89
+;Version: 
+;PatchID: 11343
+;Details: https://patches.kibab.com/patches/details.php5?id=11343
+/*
+Отключение, либо включение USB-зарядки для всех кабелей в соответсвии с настройкой!
+
+*/
+
+#pragma enable old_equal_ff
+; .Accessories
+1381500: 0E0F10111222
+
+; .Hooks
+13815A0: F8B50C4B17001A6880239B03140005000E001C401A4205D0074B3A00310028009847F8BD0548064B062198470028F3D02000F6E74C42D9A8A4B74CA0001538A15CE953A00C4B10B598470C4B1A6880239B03110019401A420AD1012809D0022806D1074B07480621984743425841400010BD0800FCE7C046A14509A04C42D9A85CE953A0001538A1
+#pragma disable old_equal_ff
+
+; .Jump_1
+057C0EC: AC3DFDEB 2B1538FA
+
+; .Jump_2
+01AB7AC: 7BA3FBFA 8C5747FA
+
+;------------------------- end -------------------------
+

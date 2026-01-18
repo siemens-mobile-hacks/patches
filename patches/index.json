@@ -97318,6 +97318,16 @@
 				"ru": "Выбор качества JPEG при съёмке фото",
 				"en": "Custom JPEG quality on photo capture"
 			}
+		},
+		"11343": {
+			"id": 11343,
+			"model": "E71v45",
+			"file": "E71v45/11343-usb_charge_switch.vkp",
+			"mtime": 1768738856000,
+			"title": {
+				"ru": "Переключатель USB-зарядки",
+				"en": "USB сharge switch"
+			}
 		}
 	},
 	"C81v51": {
