@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 090126
+;Version: 230126
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -1057,6 +1057,7 @@
 0FD8: 0xA0A2A5C5 ; 3F6: __thumb WIDGET *CreateScrollbarWidget(const void *malloc_fn);
 0FDC: 0xA0A2A7CF ; 3F7: __thumb void Scrollbar_Configure(WIDGET *scrollbar, int limit, int unk1, int unk2);
 0FE0: 0xA0A2A7A1 ; 3F8: __thumb void Scrollbar_SetValue(WIDGET *scrollbar, int value);
+0FE4: 0xA053E95C ; 3F9: __arm int IsAnyOfAccessoriesConnected(const enum Accessory *accessory_ids, uint8_t count);
 
 #pragma disable old_equal_ff
 +0
