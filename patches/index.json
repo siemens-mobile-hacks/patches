@@ -93781,8 +93781,8 @@
 		"8658": {
 			"id": 8658,
 			"model": "E71v45",
-			"file": "E71v45/8658-Auto_Show_USSD.vkp",
-			"mtime": 1211795800000,
+			"file": "E71v45/8658-auto_show_ussd_v2.vkp",
+			"mtime": 1769517070000,
 			"title": {
 				"ru": "Автоматическое открытие USSD сообщений",
 				"en": "Auto Show USSD"
