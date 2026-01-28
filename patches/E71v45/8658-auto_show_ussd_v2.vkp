@@ -3,13 +3,14 @@
 ;Auto Show USSD
 ;(c) Evgr
 ;(r) VoVkA
-;Version: 0.1
+;Version: 2
 ;PatchID: 8658
 ;Details: https://patches.kibab.com/patches/details.php5?id=8658
 /*
 
 */
 
-05C2FBE: ACF086F9 A9F08FFC
+05C2FBE: ACF086F9 A9F08FFC ; с выключенным логотипом
+05C2F7E: ACF0A6F9 A9F0AFFC ; с включенным логотипом
 ;------------------------- end -------------------------
 
