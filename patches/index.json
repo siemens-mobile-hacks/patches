@@ -19845,6 +19845,16 @@
 				"ru": "Убрать пробел в меню",
 				"en": "Remove space from the menu"
 			}
+		},
+		"11344": {
+			"id": 11344,
+			"model": "S75v52",
+			"file": "S75v52/11344-turn_phone_while_off_charg_v2_0_2.vkp",
+			"mtime": 1770266470000,
+			"title": {
+				"ru": "Включить телефон при оффлайн зарядке",
+				"en": "Turn phone on while offline charging"
+			}
 		}
 	},
 	"SL75v31": {
