@@ -19509,8 +19509,8 @@
 		"11300": {
 			"id": 11300,
 			"model": "S75v52",
-			"file": "S75v52/11300-sam.vkp",
-			"mtime": 1764927702000,
+			"file": "S75v52/11300-sam_v1_1.vkp",
+			"mtime": 1770316520000,
 			"title": {
 				"ru": "Модификация Startup Assistant",
 				"en": "Startup Assistant Modification"
