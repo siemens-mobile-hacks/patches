@@ -19855,6 +19855,16 @@
 				"ru": "Включить телефон при оффлайн зарядке",
 				"en": "Turn phone on while offline charging"
 			}
+		},
+		"11345": {
+			"id": 11345,
+			"model": "S75v52",
+			"file": "S75v52/11345-fix_text_bg_in_vibration_demo_ui.vkp",
+			"mtime": 1770917076000,
+			"title": {
+				"ru": "Исправить фон текста в интерфейсе демонстрации вибросигнала",
+				"en": "Fix text background in vibration demo UI"
+			}
 		}
 	},
 	"SL75v31": {
