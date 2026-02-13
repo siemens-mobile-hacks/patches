@@ -4662,7 +4662,7 @@
 			}
 		},
 		"10076": {
-			"id": "10076",
+			"id": 10076,
 			"model": "EL71v45",
 			"file": "EL71v45/10076-library.vkp",
 			"mtime": 1292840336000,
@@ -10295,7 +10295,7 @@
 			}
 		},
 		"5624": {
-			"id": "5624",
+			"id": 5624,
 			"model": "S75v47",
 			"file": "S75v47/5624-S75sw47_Functions_Library_120812.vkp",
 			"additionalFile": "S75v47/5624-Functions_library_100410.zip",
@@ -15173,7 +15173,7 @@
 			}
 		},
 		"8285": {
-			"id": "8285",
+			"id": 8285,
 			"model": "S75v52",
 			"file": "S75v52/8285-swilib_v081225.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
@@ -19835,6 +19835,16 @@
 				"ru": "Включить телефон при оффлайн зарядке",
 				"en": "Turn phone on while offline charging"
 			}
+		},
+		"11345": {
+			"id": 11345,
+			"model": "S75v52",
+			"file": "S75v52/11345-fix_text_bg_in_vibration_demo_ui.vkp",
+			"mtime": 1770917076000,
+			"title": {
+				"ru": "Исправить фон текста в интерфейсе демонстрации вибросигнала",
+				"en": "Fix text background in vibration demo UI"
+			}
 		}
 	},
 	"SL75v31": {
@@ -21946,7 +21956,7 @@
 			}
 		},
 		"10522": {
-			"id": "10522",
+			"id": 10522,
 			"model": "SL75v47",
 			"file": "SL75v47/10522-Function_Library120603.vkp",
 			"additionalFile": "SL75v47/10522-Function_Library120603.rar",
@@ -22259,7 +22269,7 @@
 			}
 		},
 		"7634": {
-			"id": "7634",
+			"id": 7634,
 			"model": "SL75v52",
 			"file": "SL75v52/7634-Functions_library.vkp",
 			"mtime": 1200294382000,
@@ -25722,7 +25732,7 @@
 			}
 		},
 		"10542": {
-			"id": "10542",
+			"id": 10542,
 			"model": "CF75v23",
 			"file": "CF75v23/10542-swilib_v071025.vkp",
 			"mtime": 1759860710000,
@@ -30009,7 +30019,7 @@
 			}
 		},
 		"6285": {
-			"id": "6285",
+			"id": 6285,
 			"model": "CX75v13",
 			"file": "CX75v13/6285-swilib.vkp",
 			"additionalFile": "CX75v13/6285-swilib.zip",
@@ -32811,7 +32821,7 @@
 			}
 		},
 		"4736": {
-			"id": "4736",
+			"id": 4736,
 			"model": "CX75v25",
 			"file": "CX75v25/4736-fl_swi.vkp",
 			"additionalFile": "CX75v25/4736-fl_swi.rar",
@@ -40367,7 +40377,7 @@
 			}
 		},
 		"4673": {
-			"id": "4673",
+			"id": 4673,
 			"model": "M75v25",
 			"file": "M75v25/4673-BigFunctionLibrary.vkp",
 			"mtime": 1176023636000,
@@ -45231,7 +45241,7 @@
 			}
 		},
 		"10518": {
-			"id": "10518",
+			"id": 10518,
 			"model": "C75v22",
 			"file": "C75v22/10518-swilib_c75_22_120628.vkp",
 			"mtime": 1340924442000,
@@ -46891,7 +46901,7 @@
 			}
 		},
 		"10516": {
-			"id": "10516",
+			"id": 10516,
 			"model": "C75v24",
 			"file": "C75v24/10516-SWI_C75_24_120628.vkp",
 			"mtime": 1340923204000,
@@ -56267,7 +56277,7 @@
 			}
 		},
 		"7545": {
-			"id": "7545",
+			"id": 7545,
 			"model": "S65v58",
 			"file": "S65v58/7545-Library.vkp",
 			"mtime": 1179819080000,
@@ -57539,7 +57549,7 @@
 			}
 		},
 		"10897": {
-			"id": "10897",
+			"id": 10897,
 			"model": "S65v58",
 			"file": "S65v58/10897-swilib_v270825.vkp",
 			"mtime": 1756311696000,
@@ -61143,7 +61153,7 @@
 			}
 		},
 		"10131": {
-			"id": "10131",
+			"id": 10131,
 			"model": "SL65v53",
 			"file": "SL65v53/10131-swilib_16_01_2011.vkp",
 			"mtime": 1299855222000,
@@ -62866,7 +62876,7 @@
 			}
 		},
 		"7546": {
-			"id": "7546",
+			"id": 7546,
 			"model": "SK65v50",
 			"file": "SK65v50/7546-library.vkp",
 			"additionalFile": "SK65v50/7546-library.zip",
@@ -68938,7 +68948,7 @@
 			}
 		},
 		"10625": {
-			"id": "10625",
+			"id": 10625,
 			"model": "CX70v56",
 			"file": "CX70v56/10625-swilib_v181125.vkp",
 			"mtime": 1763412890000,
@@ -88509,7 +88519,7 @@
 			}
 		},
 		"6954": {
-			"id": "6954",
+			"id": 6954,
 			"model": "C72v22",
 			"file": "C72v22/6954-swilib_v101125.vkp",
 			"mtime": 1762721718000,
@@ -94791,7 +94801,7 @@
 			}
 		},
 		"10075": {
-			"id": "10075",
+			"id": 10075,
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib_v230126.vkp",
 			"mtime": 1769174436000,
@@ -99711,7 +99721,7 @@
 			}
 		},
 		"10629": {
-			"id": "10629",
+			"id": 10629,
 			"model": "C81v51",
 			"file": "C81v51/10629-swilib_c81v51_vkp.vkp",
 			"mtime": 1718886492000,
@@ -101510,7 +101520,7 @@
 			}
 		},
 		"10839": {
-			"id": "10839",
+			"id": 10839,
 			"model": "S68v52",
 			"file": "S68v52/10839-swilib.vkp",
 			"mtime": 1717526596000,
@@ -101808,7 +101818,7 @@
 			}
 		},
 		"10395": {
-			"id": "10395",
+			"id": 10395,
 			"model": "CL61v128",
 			"file": "CL61v128/10395-swilib_cl61v00_db128.vkp",
 			"additionalFile": "CL61v128/10395-swilib_cl61v00_db128.zip",
