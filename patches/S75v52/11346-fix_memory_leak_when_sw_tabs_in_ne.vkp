@@ -1,0 +1,19 @@
+;S75v52
+;Устранить утечку памяти при переключении вкладок в Native Explorer
+;Fix a memory leak when switching tabs in Native Explorer
+;(c) FIL
+;Version: 
+;PatchID: 11346
+;Details: https://patches.kibab.com/patches/details.php5?id=11346
+/*
+Утечка присутствует на всех NSG!
+*/
+
+059E688: 2020 281C
+059E68A: 0099 391C
+059E68C: 8BF799F9 C0F08AED
+059E690: 391C 2020
+059E692: 281C 0099
+059E694: C0F086ED 8BF795F9
+;------------------------- end -------------------------
+

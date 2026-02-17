@@ -19865,6 +19865,16 @@
 				"ru": "Исправить фон текста в интерфейсе демонстрации вибросигнала",
 				"en": "Fix text background in vibration demo UI"
 			}
+		},
+		"11346": {
+			"id": 11346,
+			"model": "S75v52",
+			"file": "S75v52/11346-fix_memory_leak_when_sw_tabs_in_ne.vkp",
+			"mtime": 1771321408000,
+			"title": {
+				"ru": "Устранить утечку памяти при переключении вкладок в Native Explorer",
+				"en": "Fix a memory leak when switching tabs in Native Explorer"
+			}
 		}
 	},
 	"SL75v31": {
