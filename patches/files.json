@@ -32469,5 +32469,8 @@
 	],
 	[
 		"S75v52/11345-fix_text_bg_in_vibration_demo_ui.vkp"
+	],
+	[
+		"S75v52/11346-fix_memory_leak_when_sw_tabs_in_ne.vkp"
 	]
 ]
