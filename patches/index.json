@@ -71688,6 +71688,16 @@
 				"ru": "Изменение раскладки клавиатуры",
 				"en": "Change english keylayout"
 			}
+		},
+		"11347": {
+			"id": 11347,
+			"model": "M55v10",
+			"file": "M55v10/11347-Please_Wait_Liza_Simpson.vkp",
+			"mtime": 1771628330000,
+			"title": {
+				"ru": "\"Пожалуйста Подождите\" - Лиза Симпсон",
+				"en": "\"Please wait\" - Liza Simpson"
+			}
 		}
 	},
 	"M55v11": {
