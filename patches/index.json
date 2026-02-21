@@ -71698,6 +71698,16 @@
 				"ru": "\"Пожалуйста Подождите\" - Лиза Симпсон",
 				"en": "\"Please wait\" - Liza Simpson"
 			}
+		},
+		"11348": {
+			"id": 11348,
+			"model": "M55v10",
+			"file": "M55v10/11348-Please_Wait_Homer_Simpson.vkp",
+			"mtime": 1792696846000,
+			"title": {
+				"ru": "\"Пожалуйста Подождите\" - Гомер Симпсон",
+				"en": "\"Please wait\" - Homer Simpson"
+			}
 		}
 	},
 	"M55v11": {
