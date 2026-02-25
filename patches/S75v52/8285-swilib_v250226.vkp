@@ -1044,6 +1044,7 @@
 0F5C: 0xA069B994   ; 83D7: RECT *GetOptionsHeaderRECT();
 0F60: 0xA0672BE4   ; 83D8: RECT *GetMainAreaRECT();
 0F64: 0xA0A280B0   ; 3D9: __arm int GetPITSize();
+0FE4: 0xA022F5B4   ; 3F9: __arm int IsAnyOfAccessoriesConnected(const enum Accessory *accessory_ids, uint8_t count);
 0FE8: 0xA08FECCF   ; 3FA: __thumb SetMaxIllumIntensity(int unk3, uint32_t level);
 
 #pragma disable old_equal_ff
