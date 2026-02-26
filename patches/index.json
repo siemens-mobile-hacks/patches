@@ -19885,6 +19885,16 @@
 				"ru": "Запрет временной активации подсветки при подключении/отключении IMS-700",
 				"en": "Disable temporary backlight activation on IMS-700 connect/disconnect"
 			}
+		},
+		"11351": {
+			"id": 11351,
+			"model": "S75v52",
+			"file": "S75v52/11351-invert_color_in_energy_saving_ss.vkp",
+			"mtime": 1772132308000,
+			"title": {
+				"ru": "Инвертировать цвета в заставке 'Экономия энергии'",
+				"en": "Invert colors in 'Energy saving' screensaver"
+			}
 		}
 	},
 	"SL75v31": {

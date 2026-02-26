@@ -1,0 +1,21 @@
+;S75v52
+;Инвертировать цвета в заставке 'Экономия энергии'
+;Invert colors in 'Energy saving' screensaver
+;(c) FIL
+;Version: 
+;PatchID: 11351
+;Details: https://patches.kibab.com/patches/details.php5?id=11351
+/*
+Если стоит патч 10844, то нужно закомментировать первые 2 строки!
+*/
+
+03461B8: 03 01 ; conflict with patch 10844
+0346200: 03 01 ; conflict with patch 10844
+; without missed events
+13AFC14: 01 00 ; text color
+13AFC18: 00 01 ; bg color
+; with missed events
+13AFC30: 01 00 ; text color
+13AFC34: 00 01 ; bg color
+;------------------------- end -------------------------
+
