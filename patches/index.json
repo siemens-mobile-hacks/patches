@@ -19875,6 +19875,16 @@
 				"ru": "Устранить утечку памяти при переключении вкладок в Native Explorer",
 				"en": "Fix a memory leak when switching tabs in Native Explorer"
 			}
+		},
+		"11349": {
+			"id": 11349,
+			"model": "S75v52",
+			"file": "S75v52/11349-disable_temp_backlight_ims_700.vkp",
+			"mtime": 1772124086000,
+			"title": {
+				"ru": "Запрет временной активации подсветки при подключении/отключении IMS-700",
+				"en": "Disable temporary backlight activation on IMS-700 connect/disconnect"
+			}
 		}
 	},
 	"SL75v31": {
