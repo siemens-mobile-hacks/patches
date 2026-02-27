@@ -603,7 +603,7 @@
 08AC: 0xA06417F9 ; 22B: CreateRadioButtonList(RadioButtonListDesc *, char num_of_radiobuttons, 0, 0, char prev_setting, void HandlerFunc(int), char flag);
 08B0: 0xA0640F1D ; 22C: pdcache_getval(char *return, int maxlen_of_return_str, char cachetype, char *pd_entry_identifier.class, char *pd_entry_identifier.sub);
 08B4: 0xA0641107 ; 22D: pdcache_setval(char *new_value, char cachetype, char *pd_entry_identifier.class, char *pd_entry_identifier.sub);
-08B8: 0xA06998F8 ; 22E: OpenExplorer(ExplOpenDesc *);
+08B8: 0xA0699924 ; 22E: __arm int OpenExplorer(NativeExplorerData *data);
 08BC: 0xA8DA8158 ; 22F: TDateTimeSettings *RamDateTimeSettings;
 
 08C0: 0xA08CF389 ; 230: int GetTimeZoneShift(int param1, int param2, int timeZone);
@@ -671,7 +671,7 @@
 09AC: 0xA0CBBCA0 ; 26B: __arm int Obs_Mam_SetPurpose (HObj hObj,int ms);
 09B0: 0xA0CC371C ; 26C: __arm int Obs_Sound_SetVolumeEx (HObj hObj, char vol, char delta);
 09B4: 0xA0CC5124 ; 26D: __arm int Obs_Sound_GetVolume (HObj hObj, char *vol);
-09B8: 0xA0CC4BEC ; 26E  __arm int Obs_Sound_SetAMRFrmPrBuf(HObj hobj, int nof_frames);
+09B8: 0xA0CC407C ; 26E  __arm int Obs_Sound_SetPurpose(HObj obs, int purpose);
 09BC: 0xA0CC4A70 ; 26F  __arm int Obs_Sound_SetAMRFormat(HObj hobj, int format);
 
 09C0: 0xA0CC4994 ; 270  __arm int Obs_Sound_SetAMRDTX(HObj hobj, int dtx);
@@ -685,6 +685,7 @@
 09E0: 0xA0CC4EA4 ; 278  __arm int Obs_Sound_SetBitrate(HObj hobj, int bitRate);
 ;9E4:            ; 279
 09E8: 0xA0CCCCE8 ; 27A: __arm int Obs_SetInput_Memory(HObj obs, int unk, char *buf, int len);
+09EC: 0xA0CB7DD0 ; 27B: __arm int Obs_SetUserPointer(HObj obs,void *user_pointer);
 
 
 0A04: 0xA8EBC5B8 ; 8281: __thumb char *RamIsRunJava();
