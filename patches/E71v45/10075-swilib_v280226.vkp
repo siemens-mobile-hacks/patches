@@ -137,7 +137,7 @@
 01D0: 0xA0635875 ; 074: __thumb void* GetFunctionPointer(char * _shortcut);
 01D4: 0xA05C4965 ; 075: IsCanvasBufferSet(char CanvasID);
 01D8: 0xA05C4915 ; 076: GetCanvasBufferPicPtr(char CanvasID);
-;01DC: 0x ; 077: set2color_byPaletteAdr
+01DC: 0xA09484E7 ; 077: __thumb void DrwObj_SetColor_2(DRWOBJ *drwobj, const char *pen, const char *brush);
 ;01E0: 0x ; 078: GetTimeFormat
 01E4: 0xA08D2D63 ; 079: DrawObject2Layer(LCD_Layer *, DRWOBJ *);
 01E8: 0xA094CA19 ; 07A: UpdateDisplayByLayerPtr(LCD_Layer *);
@@ -179,7 +179,7 @@
 0270: 0xA067109D ; 09C: CloseScreensaver
 0274: 0xA066CA43 ; 09D: GetMissedEventsPtr
 0278: 0xA006F2B1 ; 09E: int GetMissedEventCount(unsigned int Event);
-;027C: 0x ; 09F: DrawRect
+027C: 0xA0A0C193 ; 09F: __thumb void DrawRectangle_2(int x1, int y1, int x2, int y2, int flags, const char *pen, const char *brush);
 
 0280: 0xA093EB4D ; 0A0: wsprintf(WSHDR *,const char *format,...);
 0284: 0xA04FB3CB ; 0A1: wstrcpy
@@ -187,7 +187,7 @@
 028C: 0xA0568BA4 ; 0A3: __arm void ws_2str(WSHDR *ws, char *str, unsigned int size);
 0290: 0xA093F611 ; 0A4: AllocWS(int len);
 0294: 0xA04FAB85 ; 0A5: FreeWS_2(WSHDR *wshdr);
-;0298: 0x ; 0A6: void ResetGPRSTraffic()
+0298: 0xA092327B ; 0A6: void ResetGPRSTraffic();
 029C: 0xA0D2C34F ; 0A7: __thumb char IsGPRSEnabled();
 02A0: 0xA0CDA7AD ; 0A8: char IsGPRSConnected();
 02A4: 0xA08D447B ; 0A9: __thumb void KbdLock();
@@ -222,7 +222,7 @@
 0310: 0xA0060C01 ; 0C4: GetBuffer
 0314: 0xA066C9EB ; 0C5: IsIdleUiOnTop
 0318: 0xA01A6A50 ; 0C6: __arm char GetAkkuCapacity();
-031C: 0xA06236B0 ; 0C7: SetCpuClockTempHi(2)
+;31C: 0xA06236B0 ; 0C7:
 0320: 0xA8D8378C ;80C8: __arm unsigned short *RamCap();
 0324: 0xA8D837BE ; 0C9: RamLS
 0328: 0xA8EFA5F2 ;80CA: __arm RAMNET * RamNet();
@@ -244,7 +244,7 @@
 ;0364: 0x ; 0D9: RamShutdownMode
 0368: 0xA8E6A520 ; 80DA: RamIsShutdown
 036C: 0xA8F59D84 ; 0DB: RamNotOnMainscreen
-;0370: 0x ; 0DC: RamRandSeed
+0370: 0xA8EA3EDC ; 80DC: int *RamRandSeed();
 0374: 0xAD2B3D58 ; 0DD: RamCurrentTrack
 0378: 0xA8E35E98 ; 0DE: RamIsSimPresent
 037C: 0xA8DF3320 ; 0DF: RamPressedKey
@@ -573,7 +573,7 @@
 083C: 0xA0A15EAD ; 20F: __thumb int ConstructEditDate(EDITCONTROL *EditControl,TDate *date);
 
 0840: 0xA094F3F9 ; 210: int GetCurGuiID(void);
-0844: 0xA0006171 ; 211: GBS_Cmd_4209_RefreshScreensaver;
+0844: 0x00006171 ; 211: int GBS_Cmd_4209_RefreshScreensaver();
 ;0848: 0x ; 212: __unknown int CardExplGetCurItem(void *csm);
 ;084C: 0x ; 213: __unknown void CardExplGetFName(void *csm, int cur_item, WSHDR *dest);
 0850: 0xA04FB46D ; 214: __thumb void wstrcpybypos(WSHDR *dest,WSHDR *src,int from,int len);
