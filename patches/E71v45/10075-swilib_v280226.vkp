@@ -718,6 +718,8 @@
 0A6C: 0xA05BFBF9 ; 29B: GetTypeOfBTHeadset;
 0A70: 0xA8DA7D75 ; 829C: char *RamInputLanguage();
 0A74: 0xA8DF388C ; 829D: char *RamDisplayLanguage();
+0A78: 0xA8DA2484 ; 829E: char *RamIsBTConnected();
+0A7C: 0xA8DA2418 ; 829F: char *RamIsBTHeadsetConnected();
 
 
 0A80: 0xA05C56F8 ; 2A0: int GetAlarmclockState(int state); 
