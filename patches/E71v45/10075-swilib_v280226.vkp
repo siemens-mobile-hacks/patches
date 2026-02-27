@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 230126
+;Version: 280226
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -973,8 +973,8 @@
 0E9C: 0xA094CB67 ; 3A7: __thumb int GUI_NewTimer(void *gui);
 0EA0: 0xA094CCAB ; 3A8: __thumb int GUI_DeleteTimer(void *gui, int id);
 0EA4: 0xA094CBFB ; 3A9: __thumb void GUI_StartTimerProc(void *gui, int id, long timeout, GUI_TimerProc callback);
-;EA8:            ; 3AA
-;EAC:            ; 3AB
+0EA8: 0xA0FAF871 ; 3AA: __thumb void qsort(void *first, size_t nitems, size_t size, int (*comparator)(const void *, const void *));
+0EAC: 0xA0FAEB41 ; 3AB: __thumb void *bsearch(const void *key, const void *first, size_t nitems, size_t size, int (*comparator)(const void *, const void *));
 ;EB0:            ; 3AC
 ;EB4:            ; 3AD
 ;EB8:            ; 3AE
@@ -1051,13 +1051,14 @@
 0FC0: 0xA0671FB0 ; 3F0: __arm void Countdown_Start();
 0FC4: 0xA0672074 ; 3F1: __arm void Countdown_Stop();
 0FC8: 0xA0671EDC ; 3F2: __arm int Countdown_IsEnabled();
-0FCC: 0xA0703E94 ; 3F3: __arm int Countdown_GetRamainingTime();
+0FCC: 0xA0703E94 ; 3F3: __arm int Countdown_GetRemainingTime();
 0FD0: 0xA0782060 ; 3F4: __arm void Countdown_PlaySound(long tone_type);
 0FD4: 0xA8F04C14 ; 83F5: int *RamIsCountdownRingUIActive();
 0FD8: 0xA0A2A5C5 ; 3F6: __thumb WIDGET *CreateScrollbarWidget(const void *malloc_fn);
 0FDC: 0xA0A2A7CF ; 3F7: __thumb void Scrollbar_Configure(WIDGET *scrollbar, int limit, int unk1, int unk2);
 0FE0: 0xA0A2A7A1 ; 3F8: __thumb void Scrollbar_SetValue(WIDGET *scrollbar, int value);
 0FE4: 0xA053E95C ; 3F9: __arm int IsAnyOfAccessoriesConnected(const enum Accessory *accessory_ids, uint8_t count);
+0FE8: 0xA08CCC85 ; 3FA: __thumb void SetMaxIllumIntensity(int unk3, uint32_t level);
 
 #pragma disable old_equal_ff
 +0
