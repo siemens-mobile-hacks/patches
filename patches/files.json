@@ -31215,7 +31215,7 @@
 	],
 	null,
 	[
-		"CX70v56/10901-fix_menu_width_v1_0_4.vkp"
+		"CX70v56/10901-fix_menu_width_v1_1.vkp"
 	],
 	[
 		"CX70v56/10902-use_e_header_font_from_definition.vkp"
@@ -31408,7 +31408,7 @@
 		"S65v58/10971-nesto.vkp"
 	],
 	[
-		"S65v58/10972-fix_menu_width_v1_0_1.vkp"
+		"S65v58/10972-fix_menu_width_v1_1.vkp"
 	],
 	[
 		"S65v58/10973-fix_cursor_in_tile_view_v1_1.vkp"
@@ -32478,5 +32478,12 @@
 	],
 	[
 		"M55v10/11348-Please_Wait_Homer_Simpson.vkp"
+	],
+	[
+		"S75v52/11349-disable_temp_backlight_ims_700.vkp"
+	],
+	null,
+	[
+		"S75v52/11351-invert_color_in_energy_saving_ss.vkp"
 	]
 ]

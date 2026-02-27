@@ -1,0 +1,16 @@
+;S75v52
+;Запрет временной активации подсветки при подключении/отключении IMS-700
+;Disable temporary backlight activation on IMS-700 connect/disconnect
+;(c) FIL
+;Version: 
+;PatchID: 11349
+;Details: https://patches.kibab.com/patches/details.php5?id=11349
+/*
+
+*/
+
+02FC764: EFF0CCEE C046C046 ; connect
+02FC7A0: EFF0AEEE C046C046 ; disconnect
+
+;------------------------- end -------------------------
+
