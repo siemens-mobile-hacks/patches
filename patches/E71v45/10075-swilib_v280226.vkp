@@ -986,7 +986,7 @@
 0ECC: 0xA066FF69 ; 3B3: __thumb IMGHDR *GetIMGHDRFromCanvasCache(unsigned int CanvasID);
 0ED0: 0xA08D0ACF ; 3B4: __thumb GetDate_ws(WSHDR *ws, const TDate *date, unsigned int unk);
 0ED4: 0xA08D0951 ; 3B5: __thumb GetTime_ws(WSHDR *ws, const TTime *time, unsigned int unk);
-0ED8: 0xA0CCB470 ; 3B6: __arm int Obs_SetTransparent(HObj obs, unsigned int unk_3_4_5);
+;ED8:            ; 
 0EDC: 0xA0568090 ; 3B7: __arm int sys_mkdir_ws(const WSHDR *dirname, unsigned int *err);
 0EE0: 0xA056817C ; 3B8: __arm int sys_rmdir_ws(const WSHDR *path, unsigned int *err);
 0EE4: 0xA0568108 ; 3B9: __arm int sys_rename_ws(const WSHDR *old_name, const WSHDR *new_name, unsigned int *err);
@@ -1035,7 +1035,7 @@
 0F84: 0xA08D055B ; 3E1: __thumb int GetTimeZoneByGMT(const char *gmt);
 0F88: 0xA08D05E3 ; 3E2: __thumb int IsSummerTime(int time_zone);
 0F8C: 0xA08D0655 ; 3E3: __thumb void SetTimeZone(int time_zone);
-0F90: 0xA058A7B3 ; 3E4: __thumb void GetTimeFromMilliseconds(TTime *time, uint32_t milliseconds);
+0F90: 0xA058A7B3 ; 3E4: __thumb void void GetTimeFromMilliseconds(TTime *time, uint32_t milliseconds);
 0F94: 0xA0589D29 ; 3E5: __thumb void DateAddDays(TDate *date, int days);
 0F98: 0xA0589D5F ; 3E6: __thumb void DateAddMonths(TDate *date, int months);
 0F9C: 0xA0589DAF ; 3E7: __thumb void DateAddYears(TDate *date, int years);
