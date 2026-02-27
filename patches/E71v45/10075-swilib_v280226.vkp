@@ -709,7 +709,7 @@
 0A48: 0xA8F5B968 ; 8292: char *RamIsAlarmClockAutorepeatOn();
 0A4C: 0xA8F5B970 ; 8393: char *RamAlarmClockHours();
 0A50: 0xA8F5B971 ; 8294: char *RamAlarmClockMinutes();
-0A54: 0xA8F5B964 ; 8295: __swi __arm char *RamAlarmclockMinute();
+;A54:            ; 8295:
 0A58: 0xA05ADAD3 ; 296: __thumb void getProfileNameByN(int n, WSHDR *ws, int _0);
 0A5C: 0xA8F53DB4 ; 8297: char *RamIsSoundRecord();
 0A60: 0xA8F53E10 ; 8298: char *RamIsSoundRecordQuality();
@@ -1037,7 +1037,7 @@
 0F84: 0xA08D055B ; 3E1: __thumb int GetTimeZoneByGMT(const char *gmt);
 0F88: 0xA08D05E3 ; 3E2: __thumb int IsSummerTime(int time_zone);
 0F8C: 0xA08D0655 ; 3E3: __thumb void SetTimeZone(int time_zone);
-0F90: 0xA058A7B3 ; 3E4: __thumb void void GetTimeFromMilliseconds(TTime *time, uint32_t milliseconds);
+0F90: 0xA058A7B3 ; 3E4: __thumb void GetTimeFromMilliseconds(TTime *time, uint32_t milliseconds);
 0F94: 0xA0589D29 ; 3E5: __thumb void DateAddDays(TDate *date, int days);
 0F98: 0xA0589D5F ; 3E6: __thumb void DateAddMonths(TDate *date, int months);
 0F9C: 0xA0589DAF ; 3E7: __thumb void DateAddYears(TDate *date, int years);
