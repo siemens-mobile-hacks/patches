@@ -117,7 +117,7 @@
 0184: 0xA063B07B ; 061: ShowNativeMenu
 0188: 0xA05AEBD5 ; 062: SetVibraStatus
 018C: 0xA05C4441 ; 063: MMI_CanvasBuffer_FlushV(int CanvasID);
-0190: 0xA094F594 ; 064: TriggerUpdate
+0190: 0xA094F597 ; 064: __thumb void GeneralFuncF1_2(int cmd);
 ;0194: 0x ; 065: EndCall
 0198: 0xA09B648B ; 066: EndCallBusy
 019C: 0xA0668D19 ; 067: IsDirectCallActive
@@ -947,12 +947,12 @@
 
 0E40: 0xA0095F31 ; 390: __thumb void *GBS_GetCurrentTask();
 0E44: 0xA00930CB ; 391: __thumb void *MemMBPAlloc(void *pool, int size);
-;E48:            ; 392: void MemMBPFree(void *pool, void *ptr);
-;E4C:            ; 8393: void *MopiResourcePool();
+0E48: 0xA00932DF ; 392: __thumb void MemMBPFree(void *pool, void *ptr);
+0E4C: 0xA8DF4050 ; 8393: void *RamMopiResourcePool();
 ;E50:            ; 394
 ;E54:            ; 395
-;E58:            ; 396
-;E5C:            ; 397
+0E58: 0xA0F788DB ; 396: __thumb SSL_CTX *SSL_CTX_new(SSL_METHOD *meth);
+0E5C: 0xA0F77CD7 ; 397: __thumb void SSL_CTX_free(SSL_CTX *ctx);
 ;E60:            ; 398
 ;E64:            ; 399
 ;E68:            ; 39A
