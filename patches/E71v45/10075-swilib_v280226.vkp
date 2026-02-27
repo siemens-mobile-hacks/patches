@@ -706,9 +706,9 @@
 
 0A40: 0xA8EF6DF0 ; 8290: __thumb char *RamCallState();
 0A44: 0xA05C5ACC ; 291: int RefreshAlarmClock();
-0A48: 0xA05C5ACC ; 292: int RefreshAlarmClock();
-0A4C: 0xA8F5B968 ; 8293: __swi __arm char *RamIsAlarmAutorepeatOn();
-0A50: 0xA8F5B964 ; 8294: __swi __arm char *RamAlarmclockHour();
+0A48: 0xA8F5B968 ; 8292: char *RamIsAlarmClockAutorepeatOn();
+0A4C: 0xA8F5B970 ; 8393: char *RamAlarmClockHours();
+0A50: 0xA8F5B971 ; 8294: char *RamAlarmClockMinutes();
 0A54: 0xA8F5B964 ; 8295: __swi __arm char *RamAlarmclockMinute();
 0A58: 0xA05ADAD3 ; 296: __thumb void getProfileNameByN(int n, WSHDR *ws, int _0);
 0A5C: 0xA8F53DB4 ; 8297: char *RamIsSoundRecord();
