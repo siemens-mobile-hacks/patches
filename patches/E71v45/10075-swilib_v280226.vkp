@@ -945,8 +945,8 @@
 0E38: 0xA0092451 ; 38E: __thumb void CreateICL(PGROUP *pg);
 0E3C: 0xA009562D ; 38F: __thumb void *GBS_CreateProcessGroupResource(int mask, int unk_zero, PGROUP *pgroup, int size)
 
-;E40:            ; 390: PGroupProc *PGroupCurrentTaskPointer();
-;E44:            ; 391: void *MemMBPAlloc(void *pool, int size);
+0E40: 0xA0095F31 ; 390: __thumb void *GBS_GetCurrentTask();
+0E44: 0xA00930CB ; 391: __thumb void *MemMBPAlloc(void *pool, int size);
 ;E48:            ; 392: void MemMBPFree(void *pool, void *ptr);
 ;E4C:            ; 8393: void *MopiResourcePool();
 ;E50:            ; 394
