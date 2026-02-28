@@ -132,13 +132,13 @@
 
 01C0: 0xA09232A5 ; 070: __arm int *GetGPRSTrafficPointer();
 01C4: 0xA0A0C2C7 ; 071: DrawRoundRect
-;01C8: 0x ; 072: SetCurrentSecondOfCall
+01C8: 0xA08C9CA1 ; 072: __thumb int GetDurationFromCurrentCall(void);
 01CC: 0xA0CD9DEF ; 073: GetTypeOfCall
 01D0: 0xA0635875 ; 074: __thumb void* GetFunctionPointer(char * _shortcut);
 01D4: 0xA05C4965 ; 075: IsCanvasBufferSet(char CanvasID);
 01D8: 0xA05C4915 ; 076: GetCanvasBufferPicPtr(char CanvasID);
 01DC: 0xA09484E7 ; 077: __thumb void DrwObj_SetColor_2(DRWOBJ *drwobj, const char *pen, const char *brush);
-;01E0: 0x ; 078: GetTimeFormat
+01E0: 0xA08D0927 ; 078: __thumb int GetTimeFormat();
 01E4: 0xA08D2D63 ; 079: DrawObject2Layer(LCD_Layer *, DRWOBJ *);
 01E8: 0xA094CA19 ; 07A: UpdateDisplayByLayerPtr(LCD_Layer *);
 ;01EC: 0x ; 07B: GetProfileFilter
@@ -952,8 +952,8 @@
 0E44: 0xA00930CB ; 391: __thumb void *MemMBPAlloc(void *pool, int size);
 0E48: 0xA00932DF ; 392: __thumb void MemMBPFree(void *pool, void *ptr);
 0E4C: 0xA8DF4050 ; 8393: void *RamMopiResourcePool();
-;E50:            ; 394
-;E54:            ; 395
+0E50: 0xA1001E70 ; 8394: RAND_METHOD *RAND_get_rand_method(void);
+0E54: 0xA0F7729F ; 395: __thumb SSL_METHOD *TLSv1_client_method();
 0E58: 0xA0F788DB ; 396: __thumb SSL_CTX *SSL_CTX_new(SSL_METHOD *meth);
 0E5C: 0xA0F77CD7 ; 397: __thumb void SSL_CTX_free(SSL_CTX *ctx);
 ;E60:            ; 398
