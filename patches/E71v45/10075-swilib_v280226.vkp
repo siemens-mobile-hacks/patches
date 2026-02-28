@@ -956,7 +956,7 @@
 0E54: 0xA0F7729F ; 395: __thumb SSL_METHOD *TLSv1_client_method();
 0E58: 0xA0F788DB ; 396: __thumb SSL_CTX *SSL_CTX_new(SSL_METHOD *meth);
 0E5C: 0xA0F77CD7 ; 397: __thumb void SSL_CTX_free(SSL_CTX *ctx);
-;E60:            ; 398
+0E60: 0xA0F74DAF ; 398: __thumb long SSL_CTX_ctrl(SSL_CTX *ctx, int cmd, long larg, void *parg);
 ;E64:            ; 399
 ;E68:            ; 39A
 ;E6C:            ; 39B
