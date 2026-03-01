@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 280226
+;Version: 010326
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -957,11 +957,11 @@
 0E58: 0xA0F788DB ; 396: __thumb SSL_CTX *SSL_CTX_new(SSL_METHOD *meth);
 0E5C: 0xA0F77CD7 ; 397: __thumb void SSL_CTX_free(SSL_CTX *ctx);
 0E60: 0xA0F74DAF ; 398: __thumb long SSL_CTX_ctrl(SSL_CTX *ctx, int cmd, long larg, void *parg);
-;E64:            ; 399
-;E68:            ; 39A
-;E6C:            ; 39B
-;E70:            ; 39C
-;E74:            ; 39D
+0E64: 0xA0F77EA7 ; 399: __thumb SSL *SSL_new(SSL_CTX *ctx);
+0E68: 0xA0F780C7 ; 39A: __thumb int SSL_set_fd(SSL *s, int fd);
+0E6C: 0xA0F7826B ; 39B: __thumb int SSL_connect(SSL *ssl);
+0E70: 0xA0F78285 ; 39C: __thumb int SSL_shutdown(SSL *ssl);
+0E74: 0xA0F73BFF ; 39D: __thumb int SSL_read(SSL *ssl, void *buf, int num);
 ;E78:            ; 39E
 ;E7C:            ; 39F
 
