@@ -962,16 +962,16 @@
 0E6C: 0xA0F7826B ; 39B: __thumb int SSL_connect(SSL *ssl);
 0E70: 0xA0F78285 ; 39C: __thumb int SSL_shutdown(SSL *ssl);
 0E74: 0xA0F73BFF ; 39D: __thumb int SSL_read(SSL *ssl, void *buf, int num);
-;E78:            ; 39E
-;E7C:            ; 39F
+0E78: 0xA0F73C85 ; 39E: __thumb int SSL_peek(SSL *ssl, void *buf, int num);
+0E7C: 0xA0F73B61 ; 39F: __thumb int SSL_write(SSL *ssl, const void *buf, int num);
 
-;E80:            ; 3A0
-;E84:            ; 3A1
-;E88:            ; 3A2
+0E80: 0xA0F77FAD ; 3A0: __thumb void SSL_free(SSL *ssl);
+0E84: 0xA0F78CCB ; 3A1: __thumb int SSL_set_session(SSL *ssl, SSL_SESSION *session);
+0E88: 0xA0F72BA3 ; 3A2: __thumb void SSL_SESSION_free(SSL_SESSION *sess);
 0E8C: 0xA09544FB ; 3A3: __thumb void SetMenuItemIconIMGHDR(void *gui, void *item, IMGHDR *img);
 ;E90:            ; 3A4
 0E94: 0xA0A0CA97 ; 3A5: __thumb void DrawIMGHDR(int x, int y, IMGHDR *img);
-;E98:            ; 3A6
+0E98: 0xA08D2E81 ; 3A6: __thumb void DrwObj_GetWH(DRWOBJ *drwobj, int *w, int *h);
 0E9C: 0xA094CB67 ; 3A7: __thumb int GUI_NewTimer(void *gui);
 0EA0: 0xA094CCAB ; 3A8: __thumb int GUI_DeleteTimer(void *gui, int id);
 0EA4: 0xA094CBFB ; 3A9: __thumb void GUI_StartTimerProc(void *gui, int id, long timeout, GUI_TimerProc callback);
