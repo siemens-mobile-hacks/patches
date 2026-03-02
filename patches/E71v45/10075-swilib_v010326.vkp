@@ -1012,9 +1012,9 @@
 0F28: 0xA04FA597 ; 3CA: __thumb int wstricmp(const WSHDR *ws1, const WSHDR *ws2);
 0F2C: 0xA04FA5CD ; 3CB: __thumb int wstrnicmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
 0F30: 0xA07A529C ; 3CC: __arm int PersMenuCSM_Open(const WSHDR *file_name, const WSHDR *dir, int flag, int open_mode);
-0F34: 0xA04FA78B ; 3CD: __thumb int wstrtoupper(WSHDR *ws);
-0F38: 0xA04FA84D ; 3CE: __thumb int wstrtolower(WSHDR *ws);
-0F3C: 0xA04FA929 ; 3CF: __thumb int wstrcapitalize(WSHDR *ws);
+0F34: 0xA04FA78B ; 3CD: __thumb void wstrtoupper(WSHDR *ws);
+0F38: 0xA04FA84D ; 3CE: __thumb void wstrtolower(WSHDR *ws);
+0F3C: 0xA04FA929 ; 3CF: __thumb void wstrcapitalize(WSHDR *ws);
 
 0F40: 0xA05C3D7F ; 3D0: __thumb int RestartLockTimers();
 0F44: 0xA069FD2C ; 3D1: __arm void MediaProc_LaunchLastPlayback();
