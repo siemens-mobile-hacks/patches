@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 010326
+;Version: 040326
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -1061,6 +1061,9 @@
 0FE0: 0xA0A2A7A1 ; 3F8: __thumb void Scrollbar_SetValue(WIDGET *scrollbar, int value);
 0FE4: 0xA053E95C ; 3F9: __arm int IsAnyOfAccessoriesConnected(const enum Accessory *accessory_ids, uint8_t count);
 0FE8: 0xA08CCC85 ; 3FA: __thumb void SetMaxIllumIntensity(int unk3, uint32_t level);
+0FEC: 0xA056798C ; 3FB: __arm int sys_mount(uint16_t drive, uint32_t *err);
+0FF0: 0xA05679CC ; 3FC: __arm int sys_unmount(uint16_t drive, uint32_t *err);
+0FF4: 0xA056859C ; 3FD: __arm int setfiletime(int fd, uint16_t date, uint16_t time, uint32_t *err);
 
 #pragma disable old_equal_ff
 +0
