@@ -19895,6 +19895,17 @@
 				"ru": "Инвертировать цвета в заставке 'Экономия энергии'",
 				"en": "Invert colors in 'Energy saving' screensaver"
 			}
+		},
+		"11352": {
+			"id": 11352,
+			"model": "S75v52",
+			"file": "S75v52/11352-add_ims_700_icon_to_iconbar.vkp",
+			"additionalFile": "S75v52/11352-add_ims_700_icon_to_iconbar.zip",
+			"mtime": 1772649580000,
+			"title": {
+				"ru": "Добавить иконку IMS-700 в иконбар",
+				"en": "Add IMS-700 icon to IconBar"
+			}
 		}
 	},
 	"SL75v31": {
