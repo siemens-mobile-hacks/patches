@@ -943,7 +943,7 @@
 0E24: 0xA0A1181B ; 389: __thumb void SetDepthBufferOnLCDLAYER(LCDLAYER *, char depth);
 ;E28:            ; 38A: void *RamAudioHookProc();
 0E2C: 0xA8D94F48 ; 38B: char *RamLastStoreString();
-;E30:            ; 38C: int format(unsigned short drive, unsigned int *error);
+0E30: 0xA0567D90 ; 38C: int sys_format(uint16_t drive, uint32_t *err);
 0E34: 0xA0567E44 ; 38D: __arm int sys_fstat(int fd, FSTATS *stat, uint32_t *err);
 0E38: 0xA0092451 ; 38E: __thumb void CreateICL(PGROUP *pg);
 0E3C: 0xA009562D ; 38F: __thumb void *GBS_CreateProcessGroupResource(int mask, int unk_zero, PGROUP *pgroup, int size)
