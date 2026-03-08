@@ -1,19 +1,4 @@
 ### Patches with errors
-[C65v56/11276-use_e_header_font_from_definition.vkp](https://patches.kibab.com/patches/details.php5?id=11276)
-
-Error: Syntax error at line 14 col 9
-```
-  11 | English:The patch is needed for a more unified interface.
-  12 | */
-  13 | 
-> 14 | C9D960: : 80B5 7047
-     |         ^
-  15 | 
-  16 | ;Pattern
-  17 | ;80B58069002801D002F0=70478069002801D002F0 ; R65_x65, R65_x75 (~) Romir0o
-
-```
-
 [CF75v23/11114-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11114)
 
 Error: Syntax error at line 16 col 1
