@@ -1,0 +1,14 @@
+;E71v45
+;Отключить сообщения 'Bluetooth: Вкл./Выкл.'
+;Disable messages 'Bluetooth: On/Off'
+;(c) FIL
+;Version: 2
+;PatchID: 11354
+;Details: https://patches.kibab.com/patches/details.php5?id=11354
+/*
+Старый патч 10340 не рекомендую к установке!
+*/
+
+09ABDFE: 8847 C046
+;------------------------- end -------------------------
+

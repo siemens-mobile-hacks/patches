@@ -97760,6 +97760,16 @@
 				"ru": "Отключить проверку гарнитуры для FM-радио",
 				"en": "Disable headset check for FM radio"
 			}
+		},
+		"11354": {
+			"id": 11354,
+			"model": "E71v45",
+			"file": "E71v45/11354-disable_messages_bluetooth_on_off.vkp",
+			"mtime": 1773333676000,
+			"title": {
+				"ru": "Отключить сообщения 'Bluetooth: Вкл./Выкл.'",
+				"en": "Disable messages 'Bluetooth: On/Off'"
+			}
 		}
 	},
 	"C81v51": {
