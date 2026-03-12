@@ -1,0 +1,14 @@
+;E71v45
+;Отключить проверку гарнитуры для FM-радио
+;Disable headset check for FM radio
+;(c) FIL
+;Version: 
+;PatchID: 11353
+;Details: https://patches.kibab.com/patches/details.php5?id=11353
+/*
+
+*/
+
+0CF5BB8: 00 01
+;------------------------- end -------------------------
+

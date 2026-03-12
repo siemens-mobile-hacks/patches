@@ -97750,6 +97750,16 @@
 				"ru": "Переключатель USB-зарядки",
 				"en": "USB сharge switch"
 			}
+		},
+		"11353": {
+			"id": 11353,
+			"model": "E71v45",
+			"file": "E71v45/11353-disable_headset_check_for_fm_radio.vkp",
+			"mtime": 1773327200000,
+			"title": {
+				"ru": "Отключить проверку гарнитуры для FM-радио",
+				"en": "Disable headset check for FM radio"
+			}
 		}
 	},
 	"C81v51": {

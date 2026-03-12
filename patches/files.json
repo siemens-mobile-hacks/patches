@@ -32525,7 +32525,9 @@
 		"S75v52/11352-add_ims_700_icon_to_iconbar.vkp",
 		"S75v52/11352-add_ims_700_icon_to_iconbar.zip"
 	],
-	null,
+	[
+		"E71v45/11353-disable_headset_check_for_fm_radio.vkp"
+	],
 	null,
 	[
 		"C75v24/11355-disable_network_v1_2.vkp"
