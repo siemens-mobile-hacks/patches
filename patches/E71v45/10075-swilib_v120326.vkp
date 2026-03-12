@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 040326
+;Version: 120326
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -240,7 +240,7 @@
 0354: 0xA8DF3348 ; 0D5: RamIsLocked
 0358: 0xA8E6936C ; 0D6: RamNetOnline
 035C: 0xA8E6A484 ; 0D7: RamScreenBrightness
-0360: 0xA8DA7D39 ; 0D8: RamMenuAnywhere
+0360: 0xA8DA7D38 ; 0D8: RamMenuAnywhere
 ;0364: 0x ; 0D9: RamShutdownMode
 0368: 0xA8E6A520 ; 80DA: RamIsShutdown
 036C: 0xA8F59D84 ; 0DB: RamNotOnMainscreen
