@@ -41535,6 +41535,16 @@
 				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
 				"en": "Disable 'Please wait' in Card-Explorer"
 			}
+		},
+		"11363": {
+			"id": 11363,
+			"model": "M75v25",
+			"file": "M75v25/11363-fix_application_error_in_ce.vkp",
+			"mtime": 1773768196000,
+			"title": {
+				"ru": "Исправление ошибки 'Ошибка в файле профиля' в Card-Explorer",
+				"en": "Fix 'Application error' in Card-Explorer"
+			}
 		}
 	},
 	"ME75v22": {
