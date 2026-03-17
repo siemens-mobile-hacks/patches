@@ -45500,6 +45500,16 @@
 				"ru": "Не менять левый софткей на ГЭ если нет сети",
 				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
+		},
+		"11362": {
+			"id": 11362,
+			"model": "C75v22",
+			"file": "C75v22/11362-fix_application_error_in_ce.vkp",
+			"mtime": 1773768110000,
+			"title": {
+				"ru": "Исправление ошибки 'Ошибка в файле профиля' в Card-Explorer",
+				"en": "Fix 'Application error' in Card-Explorer"
+			}
 		}
 	},
 	"C75v13": {
