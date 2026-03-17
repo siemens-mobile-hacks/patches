@@ -35424,6 +35424,16 @@
 				"ru": "Исправить анимацию активного элемента в Native Menu",
 				"en": "Fix active element animations in Native Menu"
 			}
+		},
+		"11360": {
+			"id": 11360,
+			"model": "CX75v25",
+			"file": "CX75v25/11360-fix_application_error_in_ce.vkp",
+			"mtime": 1773767344000,
+			"title": {
+				"ru": "Исправление ошибки 'Ошибка в файле профиля' в Card-Explorer",
+				"en": "Fix 'Application error' in Card-Explorer"
+			}
 		}
 	},
 	"M75v5": {
