@@ -47220,6 +47220,17 @@
 				"ru": "Отключить сеть",
 				"en": "Disable network"
 			}
+		},
+		"11356": {
+			"id": 11356,
+			"model": "C75v24",
+			"file": "C75v24/11356-fix_network_icon.vkp",
+			"additionalFile": "C75v24/11356-fix_network_icon.zip",
+			"mtime": 1773756290000,
+			"title": {
+				"ru": "Исправить иконку сети когда отключена сеть",
+				"en": "Fix network icon when network is disabled"
+			}
 		}
 	},
 	"C65v50": {
