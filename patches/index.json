@@ -47210,6 +47210,16 @@
 				"ru": "Исправить анимацию активного элемента в Native Menu",
 				"en": "Fix active element animations in Native Menu"
 			}
+		},
+		"11355": {
+			"id": 11355,
+			"model": "C75v24",
+			"file": "C75v24/11355-disable_network_v1_2.vkp",
+			"mtime": 1773724636000,
+			"title": {
+				"ru": "Отключить сеть",
+				"en": "Disable network"
+			}
 		}
 	},
 	"C65v50": {
