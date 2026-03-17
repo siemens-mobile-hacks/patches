@@ -69560,6 +69560,16 @@
 				"ru": "Показывать сообщение при отключённом MMS-клиенте",
 				"en": "Handle disabled MMS client by showing a message"
 			}
+		},
+		"11357": {
+			"id": 11357,
+			"model": "CX70v56",
+			"file": "CX70v56/11357-Redesigned_Extras_NativeMenu.vkp",
+			"mtime": 1773759390000,
+			"title": {
+				"ru": "Переработанное меню Еще в Native Menu",
+				"en": "Redesigned menu Extras in Native Menu"
+			}
 		}
 	},
 	"C55v24": {
