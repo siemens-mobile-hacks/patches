@@ -89781,6 +89781,16 @@
 				"ru": "Показывать сообщение при отключённом MMS-клиенте",
 				"en": "Handle disabled MMS client by showing a message"
 			}
+		},
+		"11359": {
+			"id": 11359,
+			"model": "C72v22",
+			"file": "C72v22/11359-fix_application_error_in_ce.vkp",
+			"mtime": 1773766912000,
+			"title": {
+				"ru": "Исправление ошибки 'Ошибка в файле профиля' в Card-Explorer",
+				"en": "Fix 'Application error' in Card-Explorer"
+			}
 		}
 	},
 	"SXG75v22": {
