@@ -47231,6 +47231,16 @@
 				"ru": "Исправить иконку сети когда отключена сеть",
 				"en": "Fix network icon when network is disabled"
 			}
+		},
+		"11358": {
+			"id": 11358,
+			"model": "C75v24",
+			"file": "C75v24/11358-fix_application_error_in_ce.vkp",
+			"mtime": 1773766602000,
+			"title": {
+				"ru": "Исправление ошибки 'Ошибка в файле профиля' в Card-Explorer",
+				"en": "Fix 'Application error' in Card-Explorer"
+			}
 		}
 	},
 	"C65v50": {

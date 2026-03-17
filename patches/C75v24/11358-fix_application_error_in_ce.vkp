@@ -1,0 +1,14 @@
+;C75v24
+;Исправление ошибки 'Ошибка в файле профиля' в Card-Explorer
+;Fix 'Application error' in Card-Explorer
+;(c) FIL
+;Version: 
+;PatchID: 11358
+;Details: https://patches.kibab.com/patches/details.php5?id=11358
+/*
+
+*/
+
+0793A38: 0010D4E5 0010A0E3
+;------------------------- end -------------------------
+
