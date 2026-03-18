@@ -47331,6 +47331,16 @@
 				"ru": "Открыть меню выбора диска по горячей клавише в Card-Explorer",
 				"en": "Open disk selection menu in Card-Explorer by hotkey"
 			}
+		},
+		"11369": {
+			"id": 11369,
+			"model": "C75v24",
+			"file": "C75v24/11369-decrease_keyboard_long_press_delay.vkp",
+			"mtime": 1773807538000,
+			"title": {
+				"ru": "Уменьшить задержку для долгого нажатия клавиш",
+				"en": "Decrease Keyboard Long Press Delay"
+			}
 		}
 	},
 	"C65v50": {

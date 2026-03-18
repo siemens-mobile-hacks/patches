@@ -1,0 +1,14 @@
+;C75v24
+;Уменьшить задержку для долгого нажатия клавиш
+;Decrease Keyboard Long Press Delay
+;(c) 1nvisible
+;Version: 
+;PatchID: 11369
+;Details: https://patches.kibab.com/patches/details.php5?id=11369
+/*
+
+*/
+
+07AFA56: 82 41
+;------------------------- end -------------------------
+
