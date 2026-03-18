@@ -47431,6 +47431,16 @@
 				"ru": "Деактивация (ICQ AIM) встроенного WV-клиента",
 				"en": "Deactivation Built-In WV Client (ICQ AIM)"
 			}
+		},
+		"11379": {
+			"id": 11379,
+			"model": "C75v24",
+			"file": "C75v24/11379-remove_camera_from_extras.vkp",
+			"mtime": 1773860054000,
+			"title": {
+				"ru": "Убрать пункт 'Камера' из меню 'Еще'",
+				"en": "Remove 'Camera' item from 'Extras' menu"
+			}
 		}
 	},
 	"C65v50": {

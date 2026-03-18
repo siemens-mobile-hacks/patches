@@ -1,0 +1,14 @@
+;C75v24
+;Убрать пункт 'Камера' из меню 'Еще'
+;Remove 'Camera' item from 'Extras' menu
+;(c) FIL
+;Version: 
+;PatchID: 11379
+;Details: https://patches.kibab.com/patches/details.php5?id=11379
+/*
+
+*/
+
+0499120: 7805 6705
+;------------------------- end -------------------------
+
