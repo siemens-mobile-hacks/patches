@@ -47391,6 +47391,16 @@
 				"ru": "Плавное включение подсветки",
 				"en": "Smooth illumination turn-on"
 			}
+		},
+		"11375": {
+			"id": 11375,
+			"model": "C75v24",
+			"file": "C75v24/11375-red_button_menu.vkp",
+			"mtime": 1773834174000,
+			"title": {
+				"ru": "Меню красной кнопки",
+				"en": "Red button menu"
+			}
 		}
 	},
 	"C65v50": {
