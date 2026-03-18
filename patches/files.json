@@ -32487,5 +32487,35 @@
 	[
 		"S75v52/11352-add_ims_700_icon_to_iconbar.vkp",
 		"S75v52/11352-add_ims_700_icon_to_iconbar.zip"
+	],
+	null,
+	null,
+	[
+		"C75v24/11355-disable_network_v1_2.vkp"
+	],
+	[
+		"C75v24/11356-fix_network_icon.vkp",
+		"C75v24/11356-fix_network_icon.zip"
+	],
+	[
+		"CX70v56/11357-Redesigned_Extras_NativeMenu.vkp"
+	],
+	[
+		"C75v24/11358-fix_application_error_in_ce.vkp"
+	],
+	[
+		"C72v22/11359-fix_application_error_in_ce.vkp"
+	],
+	[
+		"CX75v25/11360-fix_application_error_in_ce.vkp"
+	],
+	[
+		"CF75v23/11361-fix_application_error_in_ce.vkp"
+	],
+	[
+		"C75v22/11362-fix_application_error_in_ce.vkp"
+	],
+	[
+		"M75v25/11363-fix_application_error_in_ce.vkp"
 	]
 ]
