@@ -47381,6 +47381,16 @@
 				"ru": "Ускоренное гашение подсветки",
 				"en": "Fade light off faster"
 			}
+		},
+		"11374": {
+			"id": 11374,
+			"model": "C75v24",
+			"file": "C75v24/11374-Smooth_illumination_turn-on.vkp",
+			"mtime": 1773832804000,
+			"title": {
+				"ru": "Плавное включение подсветки",
+				"en": "Smooth illumination turn-on"
+			}
 		}
 	},
 	"C65v50": {
