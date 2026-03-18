@@ -1,0 +1,16 @@
+;C75v24
+;Деактивация (ICQ AIM) встроенного WV-клиента
+;Deactivation Built-In WV Client (ICQ AIM)
+;(c) Romir0o
+;(r) Community
+;Version: 
+;PatchID: 11378
+;Details: https://patches.kibab.com/patches/details.php5?id=11378
+/*
+Патч скрывает "Inst. messages" в Сообщениях
+English:The patch hides "Inst. messages" in Messages.
+*/
+
+603EC0: 66 78
+;------------------------- end -------------------------
+

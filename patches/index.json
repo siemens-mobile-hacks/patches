@@ -47421,6 +47421,16 @@
 				"ru": "Исправить навигацию в плиточном режиме",
 				"en": "Fix navigation in tile view"
 			}
+		},
+		"11378": {
+			"id": 11378,
+			"model": "C75v24",
+			"file": "C75v24/11378-Deactivation_ICQ_AIM.vkp",
+			"mtime": 1773855212000,
+			"title": {
+				"ru": "Деактивация (ICQ AIM) встроенного WV-клиента",
+				"en": "Deactivation Built-In WV Client (ICQ AIM)"
+			}
 		}
 	},
 	"C65v50": {
