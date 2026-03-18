@@ -47311,6 +47311,16 @@
 				"ru": "Ускорить загрузку overlay info при старте телефона",
 				"en": "Speed up overlay info load on startup"
 			}
+		},
+		"11367": {
+			"id": 11367,
+			"model": "C75v24",
+			"file": "C75v24/11367-battery_perc_instead_of_icons_v1_1.vkp",
+			"mtime": 1773806364000,
+			"title": {
+				"ru": "Процент заряда батареи вместо иконок",
+				"en": "Battery percentage instead of icons"
+			}
 		}
 	},
 	"C65v50": {
