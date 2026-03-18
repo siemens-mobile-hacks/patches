@@ -32593,5 +32593,8 @@
 	],
 	[
 		"C75v24/11376-fix_startup_animation_on_reboot.vkp"
+	],
+	[
+		"C75v24/11377-fix_navigation_in_tile_view_v1_1_1.vkp"
 	]
 ]

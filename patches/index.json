@@ -47411,6 +47411,16 @@
 				"ru": "Исправить анимацию включения при перезагрузке",
 				"en": "Fix startup animation on reboot"
 			}
+		},
+		"11377": {
+			"id": 11377,
+			"model": "C75v24",
+			"file": "C75v24/11377-fix_navigation_in_tile_view_v1_1_1.vkp",
+			"mtime": 1773837430000,
+			"title": {
+				"ru": "Исправить навигацию в плиточном режиме",
+				"en": "Fix navigation in tile view"
+			}
 		}
 	},
 	"C65v50": {
