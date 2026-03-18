@@ -47341,6 +47341,16 @@
 				"ru": "Уменьшить задержку для долгого нажатия клавиш",
 				"en": "Decrease Keyboard Long Press Delay"
 			}
+		},
+		"11370": {
+			"id": 11370,
+			"model": "C75v24",
+			"file": "C75v24/11370-change_netting_color.vkp",
+			"mtime": 1773807788000,
+			"title": {
+				"ru": "Изменить цвет сетки при прорисовке окошек",
+				"en": "Change the netting color while showing MsgBoxes"
+			}
 		}
 	},
 	"C65v50": {
