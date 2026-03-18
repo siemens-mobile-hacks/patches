@@ -1,0 +1,16 @@
+;C75v24
+;Не показывать провайдер и поиск сети на главном экране
+;Do not show provider and network search message on main screen
+;(c) ?
+;(p) FIL
+;Version: 
+;PatchID: 11365
+;Details: https://patches.kibab.com/patches/details.php5?id=11365
+/*
+
+*/
+
+049AF70: 08 A5
+
+;------------------------- end -------------------------
+

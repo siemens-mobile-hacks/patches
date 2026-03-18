@@ -47291,6 +47291,16 @@
 				"ru": "Отключить анимацию поиска сети",
 				"en": "Disable network search animation"
 			}
+		},
+		"11365": {
+			"id": 11365,
+			"model": "C75v24",
+			"file": "C75v24/11365-dont_show_provider_network_on_ms.vkp",
+			"mtime": 1773805258000,
+			"title": {
+				"ru": "Не показывать провайдер и поиск сети на главном экране",
+				"en": "Do not show provider and network search message on main screen"
+			}
 		}
 	},
 	"C65v50": {
