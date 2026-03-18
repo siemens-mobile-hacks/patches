@@ -47451,6 +47451,16 @@
 				"ru": "Добавить иконки в заголовок Native Menu",
 				"en": "Add icons to header in Native Menu"
 			}
+		},
+		"11381": {
+			"id": 11381,
+			"model": "C75v24",
+			"file": "C75v24/11381-NMFP_v3_5.vkp",
+			"mtime": 1773862010000,
+			"title": {
+				"ru": "Пакет исправлений Native Menu",
+				"en": "Native Menu Fix Pack"
+			}
 		}
 	},
 	"C65v50": {

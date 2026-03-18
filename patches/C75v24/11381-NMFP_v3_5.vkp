@@ -1,0 +1,176 @@
+;C75v24
+;Пакет исправлений Native Menu
+;Native Menu Fix Pack
+;(c) FIL, SiNgle, Bennie, Romir0o
+;Version: 3.5
+;PatchID: 11381
+;Details: https://patches.kibab.com/patches/details.php5?id=11381
+/*
+
+*/
+
+;№1
+;Добавить иконки в заголовок Native Menu
+;Add icons to header in Native Menu
+;(c) FIL
+;Version: 1.2.2
+;PatchID: 11380
+;Details: https://patches.kibab.com/patches/details.php5?id=11380
+
+; .NativeMenu_OnCreate
+08080A0: 5377756F746143705F5072765F43736D4C656176653A2046726565204D656D6F72792C2052656C656173652048616E64 70B5084B040008200D0016009847064B320029000360002343602061034B2000984770BD243C20A03303000031337BA0
+
+; .NativeMenu_OnCreate_Jump
+08E53C4: CDF6B4FF 22F76CFE
+
+; .NativeMenu_OnChange
+0750F0C: 53656443726561746553657373696F6E436F6E74616374733A20506F635F53657373696F6E5061727469636970616E744C6973744765745061727469636970616E744174282575293A20506F4320737461747573203D202569 0B4B70B5040098470A4BA2689A420ED1A26A094B2569D35C084A20009B182B60074B9847074C084B084A2900A04770BD854D8EA0CC9249A0580F75A07A02000081CC77A0D3717BA08C3C20A0243C20A0C9CFF5C0B901433FD3
+
+; .NativeMenu_OnChange_Jump
+08E5026: FFF7ADFE 6BF671FF
+
+; .NativeMenu_OnClose
+0813220: 656E7465722053796E634D4C5F4163744663745F526573706F6E73655F46726F6D554928 70B5064B040000690D0098470023290023612000024B984770BDC0468C3C20A0EFCF77A0
+
+; .NativeMenu_OnClose_Jump
+08E5404: 97F6F3FD 2DF70CFF
+
+;№2
+;Native Menu вместо главного меню
+;Native Menu instead of MainMenu
+;(c) SiNgle
+;(r) Bennie, Виктор89
+;(p) Romir0o
+;Version: 2.3
+;PatchID: 11087
+;Details: https://patches.kibab.com/patches/details.php5?id=11087
+
+2B797C: 434B4C4B5F434B5F4D41494E4D4E55 434E43545F425553494E4553534344
+2B798C: 454C53455F4D4D454E555F4F50454E 434E43545F425553494E4553534344
+
+499180: E31B2CA0 0x3288AB ; Не вырубаться в Списки вызов.-> Время\стоимость
+4A1004: BD9232A0 0x3336A3 ; CKLK_CK_MAIN_MNU: Центр джойстика
+4A1684: BD9232A0 0x3336A3 ; ELSE_MMENU_OPEN: Если ставить на клавиши или в DSE 
+4A7CC4: C90634A0 0x3336A3 ; Вместо Главного меню при разговоре
+
+;№3
+;Убрать пункт 'Камера' из меню 'Еще'
+;Remove 'Camera' item from 'Extras' menu
+;(c) FIL
+;PatchID: 11379
+;Details: https://patches.kibab.com/patches/details.php5?id=11379
+
+0499120: 7805 6705
+
+;№4
+;Задать CSM для Native Menu
+;Set CSM for Native Menu
+;(c) FIL
+;(r) Виктор89, Marie, FIL
+;(p) Romir0o
+;PatchID: 11256
+;Details: https://patches.kibab.com/patches/details.php5?id=11256
+
+2C1CB0: 4FD0 C046
+2C1D4C: CAF1 0021 
+2C1D4E: 84EAFEBD C9F1AEE9
+2C1D52: 0020 FEBD  
+2C1D78: E3F785FE C046C046
+
+;№5
+;Исправить анимацию активного элемента в Native Menu
+;Fix active element animations in Native Menu
+;(c) Romir0o
+;(r) Marie
+;Version: 
+;PatchID: 11284
+;Details: https://patches.kibab.com/patches/details.php5?id=11284
+
+; Fix icon 1
+499338: 8B 8B ; Slide 1
+49933C: 8C 8C ; Slide 2
+499340: 8D 8D ; Slide 3
+499344: 8E 8E ; Slide 4
+499348: 8F 8F ; Slide 5
+49934C: 90 90 ; Slide 6
+499350: 90 00 ; Slide 7
+499354: 90 00 ; Slide 8
+
+; Fix icon 2
+49935C: 99 99 ; Slide 1
+499360: 9A 9A ; Slide 2
+499364: 9B 9B ; Slide 3
+499368: 9C 9C ; Slide 4
+49936C: 9D 9D ; Slide 5
+499370: 9E 9E ; Slide 6
+
+; Fix icon 3
+499378: BB BB ; Slide 1
+49937C: BC BC ; Slide 2
+499380: BD BD ; Slide 3
+499384: BE BE ; Slide 4
+499388: BF BF ; Slide 5
+49938C: C0 C0 ; Slide 6
+
+;Fix icon 4
+4993EC: 33 33 ; Slide 1
+4993F0: 34 34 ; Slide 2
+4993F4: 35 35 ; Slide 3
+4993F8: 36 36 ; Slide 4
+4993FC: 37 37 ; Slide 5
+499400: 38 38 ; Slide 6
+
+;Fix icon 5
+4993B4: 6B 69 ; Slide 1
+4993B8: 6B 6A ; Slide 2
+4993BC: 6C 6B ; Slide 3
+4993C0: 6D 6C ; Slide 4
+4993C4: 6E 6D ; Slide 5
+4993C8: 6E 6E ; Slide 6
+4993CC: 6E 00 ; Slide 7
+4993D0: 6B 00 ; Slide 8
+4993D4: 6A 00 ; Slide 9
+4993D8: 69 00 ; Slide 10
+4993DC: 69 00 ; Slide 11
+4993E0: 69 00 ; Slide 12
+4993E4: 6A 00 ; Slide 13
+
+; Fix icon 6
+499394: 7D 7D ; Slide 1
+499398: 7E 7E ; Slide 2
+49939C: 7F 7F ; Slide 3
+4993A0: 80 80 ; Slide 4
+4993A4: 81 81 ; Slide 5
+4993A8: 81 82 ; Slide 6
+4993AC: 81 00 ; Slide 7
+
+;Fix icon 7
+499408: 55 55 ; Slide 1
+49940C: 56 56 ; Slide 2
+499410: 57 57 ; Slide 3
+499414: 58 58 ; Slide 4
+499418: 59 59 ; Slide 5
+49941C: 5A 5A ; Slide 6
+499420: 5A 00 ; Slide 7
+499424: 5A 00 ; Slide 8
+
+;Fix icon 8
+49942C: 47 47 ; Slide 1
+499430: 48 48 ; Slide 2
+499434: 49 49 ; Slide 3
+499438: 4A 4A ; Slide 4
+49943C: 4B 4B ; Slide 5
+499440: 4C 4C ; Slide 6
+499444: 4C 00 ; Slide 7
+499448: 4C 00 ; Slide 8
+
+; Fix icon 9
+499450: B2 AD ; Slide 1
+499454: B1 AE ; Slide 2
+499458: B0 AF ; Slide 3
+49945C: AF B0 ; Slide 4
+499460: AE B1 ; Slide 5
+499464: AD B2 ; Slide 6
+
+;------------------------- end -------------------------
+
