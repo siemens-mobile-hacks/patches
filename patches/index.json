@@ -47441,6 +47441,16 @@
 				"ru": "Убрать пункт 'Камера' из меню 'Еще'",
 				"en": "Remove 'Camera' item from 'Extras' menu"
 			}
+		},
+		"11380": {
+			"id": 11380,
+			"model": "C75v24",
+			"file": "C75v24/11380-add_icons_to_header_in_nm_v1_2_2.vkp",
+			"mtime": 1773861288000,
+			"title": {
+				"ru": "Добавить иконки в заголовок Native Menu",
+				"en": "Add icons to header in Native Menu"
+			}
 		}
 	},
 	"C65v50": {
