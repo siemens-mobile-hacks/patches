@@ -47401,6 +47401,16 @@
 				"ru": "Меню красной кнопки",
 				"en": "Red button menu"
 			}
+		},
+		"11376": {
+			"id": 11376,
+			"model": "C75v24",
+			"file": "C75v24/11376-fix_startup_animation_on_reboot.vkp",
+			"mtime": 1773834454000,
+			"title": {
+				"ru": "Исправить анимацию включения при перезагрузке",
+				"en": "Fix startup animation on reboot"
+			}
 		}
 	},
 	"C65v50": {
