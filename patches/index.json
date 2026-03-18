@@ -47371,6 +47371,16 @@
 				"ru": "Дата вместо имени оператора в заставке",
 				"en": "Date instead of provider name in screensaver"
 			}
+		},
+		"11373": {
+			"id": 11373,
+			"model": "C75v24",
+			"file": "C75v24/11373-fade_light_off_faster.vkp",
+			"mtime": 1773832628000,
+			"title": {
+				"ru": "Ускоренное гашение подсветки",
+				"en": "Fade light off faster"
+			}
 		}
 	},
 	"C65v50": {
