@@ -32560,5 +32560,8 @@
 	],
 	[
 		"C75v24/11365-dont_show_provider_network_on_ms.vkp"
+	],
+	[
+		"C75v24/11366-speed_up_overlay_load_on_startup.vkp"
 	]
 ]

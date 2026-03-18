@@ -47301,6 +47301,16 @@
 				"ru": "Не показывать провайдер и поиск сети на главном экране",
 				"en": "Do not show provider and network search message on main screen"
 			}
+		},
+		"11366": {
+			"id": 11366,
+			"model": "C75v24",
+			"file": "C75v24/11366-speed_up_overlay_load_on_startup.vkp",
+			"mtime": 1773805702000,
+			"title": {
+				"ru": "Ускорить загрузку overlay info при старте телефона",
+				"en": "Speed up overlay info load on startup"
+			}
 		}
 	},
 	"C65v50": {

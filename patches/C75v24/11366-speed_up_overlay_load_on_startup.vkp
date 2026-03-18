@@ -1,0 +1,14 @@
+;C75v24
+;Ускорить загрузку overlay info при старте телефона
+;Speed up overlay info load on startup
+;(c) FIL
+;Version: 
+;PatchID: 11366
+;Details: https://patches.kibab.com/patches/details.php5?id=11366
+/*
+
+*/
+
+02A80DC: 0A48 AA20
+;------------------------- end -------------------------
+
