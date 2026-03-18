@@ -47281,6 +47281,16 @@
 				"ru": "Исправление ошибки 'Ошибка в файле профиля' в Card-Explorer",
 				"en": "Fix 'Application error' in Card-Explorer"
 			}
+		},
+		"11364": {
+			"id": 11364,
+			"model": "C75v24",
+			"file": "C75v24/11364-disable_network_search_animation.vkp",
+			"mtime": 1773804534000,
+			"title": {
+				"ru": "Отключить анимацию поиска сети",
+				"en": "Disable network search animation"
+			}
 		}
 	},
 	"C65v50": {

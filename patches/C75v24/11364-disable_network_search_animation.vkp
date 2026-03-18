@@ -1,0 +1,16 @@
+;C75v24
+;Отключить анимацию поиска сети
+;Disable network search animation
+;(c) FIL
+;Version: 
+;PatchID: 11364
+;Details: https://patches.kibab.com/patches/details.php5?id=11364
+/*
+
+*/
+
+02D1DDE: 80B5 0020
+02D1DE0: 0023 7047
+
+;------------------------- end -------------------------
+
