@@ -47321,6 +47321,16 @@
 				"ru": "Процент заряда батареи вместо иконок",
 				"en": "Battery percentage instead of icons"
 			}
+		},
+		"11368": {
+			"id": 11368,
+			"model": "C75v24",
+			"file": "C75v24/11368-open_disk_sel_menu_in_ce_by_hotkey.vkp",
+			"mtime": 1773807160000,
+			"title": {
+				"ru": "Открыть меню выбора диска по горячей клавише в Card-Explorer",
+				"en": "Open disk selection menu in Card-Explorer by hotkey"
+			}
 		}
 	},
 	"C65v50": {
