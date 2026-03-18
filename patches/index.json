@@ -47351,6 +47351,16 @@
 				"ru": "Изменить цвет сетки при прорисовке окошек",
 				"en": "Change the netting color while showing MsgBoxes"
 			}
+		},
+		"11371": {
+			"id": 11371,
+			"model": "C75v24",
+			"file": "C75v24/11371-fast_ss_appearance_after_kbd_lock.vkp",
+			"mtime": 1773808454000,
+			"title": {
+				"ru": "Моментальный запуск скринсейвера после блокировки клавиатуры",
+				"en": "Fast ScreenSaver appearance after keyboard lock"
+			}
 		}
 	},
 	"C65v50": {
