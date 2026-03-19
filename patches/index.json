@@ -47491,6 +47491,16 @@
 				"ru": "Memory resizer",
 				"en": "Memory resizer"
 			}
+		},
+		"11385": {
+			"id": 11385,
+			"model": "C75v24",
+			"file": "C75v24/11385-kill_mms_client_core_process.vkp",
+			"mtime": 1773912520000,
+			"title": {
+				"ru": "Отключение загрузки ядра MMS клиента",
+				"en": "Kill MMS client core process"
+			}
 		}
 	},
 	"C65v50": {
