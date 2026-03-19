@@ -47471,6 +47471,16 @@
 				"ru": "Переработка меню 'Интерн./игр'",
 				"en": "Redesign 'Surf & fun' menu"
 			}
+		},
+		"11383": {
+			"id": 11383,
+			"model": "C75v24",
+			"file": "C75v24/11383-temp_e_bl_on_ls_by_any_key_v1_1.vkp",
+			"mtime": 1773911716000,
+			"title": {
+				"ru": "Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши",
+				"en": "Temporary enable backlight on lock screen by any keypress"
+			}
 		}
 	},
 	"C65v50": {
