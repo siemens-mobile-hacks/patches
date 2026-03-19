@@ -47461,6 +47461,16 @@
 				"ru": "Пакет исправлений Native Menu",
 				"en": "Native Menu Fix Pack"
 			}
+		},
+		"11382": {
+			"id": 11382,
+			"model": "C75v24",
+			"file": "C75v24/11382-redisign_surf_and_fun_menu.vkp",
+			"mtime": 1773911108000,
+			"title": {
+				"ru": "Переработка меню 'Интерн./игр'",
+				"en": "Redesign 'Surf & fun' menu"
+			}
 		}
 	},
 	"C65v50": {
