@@ -1,0 +1,14 @@
+;C75v24
+;Ускоренное гашение подсветки
+;Fade light off faster
+;(c) FIL
+;Version: 
+;PatchID: 11373
+;Details: https://patches.kibab.com/patches/details.php5?id=11373
+/*
+
+*/
+
+080424C: 021C FF22
+;------------------------- end -------------------------
+

@@ -4662,7 +4662,7 @@
 			}
 		},
 		"10076": {
-			"id": "10076",
+			"id": 10076,
 			"model": "EL71v45",
 			"file": "EL71v45/10076-library.vkp",
 			"mtime": 1292840336000,
@@ -10295,7 +10295,7 @@
 			}
 		},
 		"5624": {
-			"id": "5624",
+			"id": 5624,
 			"model": "S75v47",
 			"file": "S75v47/5624-S75sw47_Functions_Library_120812.vkp",
 			"additionalFile": "S75v47/5624-Functions_library_100410.zip",
@@ -15173,7 +15173,7 @@
 			}
 		},
 		"8285": {
-			"id": "8285",
+			"id": 8285,
 			"model": "S75v52",
 			"file": "S75v52/8285-swilib_v250226.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
@@ -21997,7 +21997,7 @@
 			}
 		},
 		"10522": {
-			"id": "10522",
+			"id": 10522,
 			"model": "SL75v47",
 			"file": "SL75v47/10522-Function_Library120603.vkp",
 			"additionalFile": "SL75v47/10522-Function_Library120603.rar",
@@ -22310,7 +22310,7 @@
 			}
 		},
 		"7634": {
-			"id": "7634",
+			"id": 7634,
 			"model": "SL75v52",
 			"file": "SL75v52/7634-Functions_library.vkp",
 			"mtime": 1200294382000,
@@ -25773,7 +25773,7 @@
 			}
 		},
 		"10542": {
-			"id": "10542",
+			"id": 10542,
 			"model": "CF75v23",
 			"file": "CF75v23/10542-swilib_v071025.vkp",
 			"mtime": 1759860710000,
@@ -30070,7 +30070,7 @@
 			}
 		},
 		"6285": {
-			"id": "6285",
+			"id": 6285,
 			"model": "CX75v13",
 			"file": "CX75v13/6285-swilib.vkp",
 			"additionalFile": "CX75v13/6285-swilib.zip",
@@ -32872,7 +32872,7 @@
 			}
 		},
 		"4736": {
-			"id": "4736",
+			"id": 4736,
 			"model": "CX75v25",
 			"file": "CX75v25/4736-fl_swi.vkp",
 			"additionalFile": "CX75v25/4736-fl_swi.rar",
@@ -40438,7 +40438,7 @@
 			}
 		},
 		"4673": {
-			"id": "4673",
+			"id": 4673,
 			"model": "M75v25",
 			"file": "M75v25/4673-BigFunctionLibrary.vkp",
 			"mtime": 1176023636000,
@@ -45312,7 +45312,7 @@
 			}
 		},
 		"10518": {
-			"id": "10518",
+			"id": 10518,
 			"model": "C75v22",
 			"file": "C75v22/10518-swilib_c75_22_120628.vkp",
 			"mtime": 1340924442000,
@@ -46161,7 +46161,7 @@
 			"id": 2932,
 			"model": "C75v24",
 			"file": "C75v24/2932-Smooth_scrolling_of_long_names.vkp",
-			"mtime": 1144800196000,
+			"mtime": 1773832940000,
 			"title": {
 				"ru": "Плавный скроллинг длинных названий и имен",
 				"en": "Smooth scrolling of long names"
@@ -46982,7 +46982,7 @@
 			}
 		},
 		"10516": {
-			"id": "10516",
+			"id": 10516,
 			"model": "C75v24",
 			"file": "C75v24/10516-swilib_v280612.vkp",
 			"mtime": 1340923204000,
@@ -47125,7 +47125,7 @@
 			"id": 11119,
 			"model": "C75v24",
 			"file": "C75v24/11119-c75v24_smooth_scroll_of_long_header.vkp",
-			"mtime": 1746304526000,
+			"mtime": 1773833020000,
 			"title": {
 				"ru": "Плавная прокрутка длинных заголовков",
 				"en": "Smooth scrolling of long headers"
@@ -47240,6 +47240,186 @@
 			"title": {
 				"ru": "Исправление ошибки 'Ошибка в файле профиля' в Card-Explorer",
 				"en": "Fix 'Application error' in Card-Explorer"
+			}
+		},
+		"11364": {
+			"id": 11364,
+			"model": "C75v24",
+			"file": "C75v24/11364-disable_network_search_animation.vkp",
+			"mtime": 1773804534000,
+			"title": {
+				"ru": "Отключить анимацию поиска сети",
+				"en": "Disable network search animation"
+			}
+		},
+		"11365": {
+			"id": 11365,
+			"model": "C75v24",
+			"file": "C75v24/11365-dont_show_provider_network_on_ms.vkp",
+			"mtime": 1773805258000,
+			"title": {
+				"ru": "Не показывать провайдер и поиск сети на главном экране",
+				"en": "Do not show provider and network search message on main screen"
+			}
+		},
+		"11366": {
+			"id": 11366,
+			"model": "C75v24",
+			"file": "C75v24/11366-speed_up_overlay_load_on_startup.vkp",
+			"mtime": 1773805702000,
+			"title": {
+				"ru": "Ускорить загрузку overlay info при старте телефона",
+				"en": "Speed up overlay info load on startup"
+			}
+		},
+		"11367": {
+			"id": 11367,
+			"model": "C75v24",
+			"file": "C75v24/11367-battery_perc_instead_of_icons_v1_1.vkp",
+			"mtime": 1773806364000,
+			"title": {
+				"ru": "Процент заряда батареи вместо иконок",
+				"en": "Battery percentage instead of icons"
+			}
+		},
+		"11368": {
+			"id": 11368,
+			"model": "C75v24",
+			"file": "C75v24/11368-open_disk_sel_menu_in_ce_by_hotkey.vkp",
+			"mtime": 1773807160000,
+			"title": {
+				"ru": "Открыть меню выбора диска по горячей клавише в Card-Explorer",
+				"en": "Open disk selection menu in Card-Explorer by hotkey"
+			}
+		},
+		"11369": {
+			"id": 11369,
+			"model": "C75v24",
+			"file": "C75v24/11369-decrease_keyboard_long_press_delay.vkp",
+			"mtime": 1773807538000,
+			"title": {
+				"ru": "Уменьшить задержку для долгого нажатия клавиш",
+				"en": "Decrease Keyboard Long Press Delay"
+			}
+		},
+		"11370": {
+			"id": 11370,
+			"model": "C75v24",
+			"file": "C75v24/11370-change_netting_color.vkp",
+			"mtime": 1773807788000,
+			"title": {
+				"ru": "Изменить цвет сетки при прорисовке окошек",
+				"en": "Change the netting color while showing MsgBoxes"
+			}
+		},
+		"11371": {
+			"id": 11371,
+			"model": "C75v24",
+			"file": "C75v24/11371-fast_ss_appearance_after_kbd_lock.vkp",
+			"mtime": 1773808454000,
+			"title": {
+				"ru": "Моментальный запуск скринсейвера после блокировки клавиатуры",
+				"en": "Fast ScreenSaver appearance after keyboard lock"
+			}
+		},
+		"11372": {
+			"id": 11372,
+			"model": "C75v24",
+			"file": "C75v24/11372-date_instead_of_p_name_in_ss_v2_1.vkp",
+			"mtime": 1773809188000,
+			"title": {
+				"ru": "Дата вместо имени оператора в заставке",
+				"en": "Date instead of provider name in screensaver"
+			}
+		},
+		"11373": {
+			"id": 11373,
+			"model": "C75v24",
+			"file": "C75v24/11373-fade_light_off_faster.vkp",
+			"mtime": 1773832628000,
+			"title": {
+				"ru": "Ускоренное гашение подсветки",
+				"en": "Fade light off faster"
+			}
+		},
+		"11374": {
+			"id": 11374,
+			"model": "C75v24",
+			"file": "C75v24/11374-Smooth_illumination_turn-on.vkp",
+			"mtime": 1773832804000,
+			"title": {
+				"ru": "Плавное включение подсветки",
+				"en": "Smooth illumination turn-on"
+			}
+		},
+		"11375": {
+			"id": 11375,
+			"model": "C75v24",
+			"file": "C75v24/11375-red_button_menu.vkp",
+			"mtime": 1773834174000,
+			"title": {
+				"ru": "Меню красной кнопки",
+				"en": "Red button menu"
+			}
+		},
+		"11376": {
+			"id": 11376,
+			"model": "C75v24",
+			"file": "C75v24/11376-fix_startup_animation_on_reboot.vkp",
+			"mtime": 1773834454000,
+			"title": {
+				"ru": "Исправить анимацию включения при перезагрузке",
+				"en": "Fix startup animation on reboot"
+			}
+		},
+		"11377": {
+			"id": 11377,
+			"model": "C75v24",
+			"file": "C75v24/11377-fix_navigation_in_tile_view_v1_1_1.vkp",
+			"mtime": 1773837430000,
+			"title": {
+				"ru": "Исправить навигацию в плиточном режиме",
+				"en": "Fix navigation in tile view"
+			}
+		},
+		"11378": {
+			"id": 11378,
+			"model": "C75v24",
+			"file": "C75v24/11378-Deactivation_ICQ_AIM.vkp",
+			"mtime": 1773855212000,
+			"title": {
+				"ru": "Деактивация (ICQ AIM) встроенного WV-клиента",
+				"en": "Deactivation Built-In WV Client (ICQ AIM)"
+			}
+		},
+		"11379": {
+			"id": 11379,
+			"model": "C75v24",
+			"file": "C75v24/11379-remove_camera_from_extras.vkp",
+			"mtime": 1773860054000,
+			"title": {
+				"ru": "Убрать пункт 'Камера' из меню 'Еще'",
+				"en": "Remove 'Camera' item from 'Extras' menu"
+			}
+		},
+		"11380": {
+			"id": 11380,
+			"model": "C75v24",
+			"file": "C75v24/11380-add_icons_to_header_in_nm_v1_2_2.vkp",
+			"mtime": 1773861288000,
+			"title": {
+				"ru": "Добавить иконки в заголовок Native Menu",
+				"en": "Add icons to header in Native Menu"
+			}
+		},
+		"11381": {
+			"id": 11381,
+			"model": "C75v24",
+			"file": "C75v24/11381-NMFP_v3_5.vkp",
+			"mtime": 1773862010000,
+			"title": {
+				"ru": "Пакет исправлений Native Menu",
+				"en": "Native Menu Fix Pack"
 			}
 		}
 	},
@@ -56389,7 +56569,7 @@
 			}
 		},
 		"7545": {
-			"id": "7545",
+			"id": 7545,
 			"model": "S65v58",
 			"file": "S65v58/7545-Library.vkp",
 			"mtime": 1179819080000,
@@ -57661,7 +57841,7 @@
 			}
 		},
 		"10897": {
-			"id": "10897",
+			"id": 10897,
 			"model": "S65v58",
 			"file": "S65v58/10897-swilib_v270825.vkp",
 			"mtime": 1756311696000,
@@ -61265,7 +61445,7 @@
 			}
 		},
 		"10131": {
-			"id": "10131",
+			"id": 10131,
 			"model": "SL65v53",
 			"file": "SL65v53/10131-swilib_16_01_2011.vkp",
 			"mtime": 1299855222000,
@@ -62988,7 +63168,7 @@
 			}
 		},
 		"7546": {
-			"id": "7546",
+			"id": 7546,
 			"model": "SK65v50",
 			"file": "SK65v50/7546-library.vkp",
 			"additionalFile": "SK65v50/7546-library.zip",
@@ -69060,7 +69240,7 @@
 			}
 		},
 		"10625": {
-			"id": "10625",
+			"id": 10625,
 			"model": "CX70v56",
 			"file": "CX70v56/10625-swilib_v181125.vkp",
 			"mtime": 1763412890000,
@@ -88651,7 +88831,7 @@
 			}
 		},
 		"6954": {
-			"id": "6954",
+			"id": 6954,
 			"model": "C72v22",
 			"file": "C72v22/6954-swilib_v101125.vkp",
 			"mtime": 1762721718000,
@@ -94943,7 +95123,7 @@
 			}
 		},
 		"10075": {
-			"id": "10075",
+			"id": 10075,
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib_v120326.vkp",
 			"mtime": 1773338322000,
@@ -99863,7 +100043,7 @@
 			}
 		},
 		"10629": {
-			"id": "10629",
+			"id": 10629,
 			"model": "C81v51",
 			"file": "C81v51/10629-swilib_c81v51_vkp.vkp",
 			"mtime": 1718886492000,
@@ -101662,7 +101842,7 @@
 			}
 		},
 		"10839": {
-			"id": "10839",
+			"id": 10839,
 			"model": "S68v52",
 			"file": "S68v52/10839-swilib.vkp",
 			"mtime": 1717526596000,
@@ -101960,7 +102140,7 @@
 			}
 		},
 		"10395": {
-			"id": "10395",
+			"id": 10395,
 			"model": "CL61v128",
 			"file": "CL61v128/10395-swilib_cl61v00_db128.vkp",
 			"additionalFile": "CL61v128/10395-swilib_cl61v00_db128.zip",

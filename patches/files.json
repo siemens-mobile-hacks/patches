@@ -32517,5 +32517,59 @@
 	],
 	[
 		"M75v25/11363-fix_application_error_in_ce.vkp"
+	],
+	[
+		"C75v24/11364-disable_network_search_animation.vkp"
+	],
+	[
+		"C75v24/11365-dont_show_provider_network_on_ms.vkp"
+	],
+	[
+		"C75v24/11366-speed_up_overlay_load_on_startup.vkp"
+	],
+	[
+		"C75v24/11367-battery_perc_instead_of_icons_v1_1.vkp"
+	],
+	[
+		"C75v24/11368-open_disk_sel_menu_in_ce_by_hotkey.vkp"
+	],
+	[
+		"C75v24/11369-decrease_keyboard_long_press_delay.vkp"
+	],
+	[
+		"C75v24/11370-change_netting_color.vkp"
+	],
+	[
+		"C75v24/11371-fast_ss_appearance_after_kbd_lock.vkp"
+	],
+	[
+		"C75v24/11372-date_instead_of_p_name_in_ss_v2_1.vkp"
+	],
+	[
+		"C75v24/11373-fade_light_off_faster.vkp"
+	],
+	[
+		"C75v24/11374-Smooth_illumination_turn-on.vkp"
+	],
+	[
+		"C75v24/11375-red_button_menu.vkp"
+	],
+	[
+		"C75v24/11376-fix_startup_animation_on_reboot.vkp"
+	],
+	[
+		"C75v24/11377-fix_navigation_in_tile_view_v1_1_1.vkp"
+	],
+	[
+		"C75v24/11378-Deactivation_ICQ_AIM.vkp"
+	],
+	[
+		"C75v24/11379-remove_camera_from_extras.vkp"
+	],
+	[
+		"C75v24/11380-add_icons_to_header_in_nm_v1_2_2.vkp"
+	],
+	[
+		"C75v24/11381-NMFP_v3_5.vkp"
 	]
 ]

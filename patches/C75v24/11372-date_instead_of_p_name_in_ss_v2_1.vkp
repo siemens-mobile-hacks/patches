@@ -1,0 +1,26 @@
+;C75v24
+;Дата вместо имени оператора в заставке 
+;Date instead of provider name in screensaver
+;(c) FIL
+;(r) Виктор89
+;Version: 2.1
+;PatchID: 11372
+;Details: https://patches.kibab.com/patches/details.php5?id=11372
+/*
+
+*/
+
+; .Insert_Hook
+0420F78: 46524F4D5F564F4943455F414C3A205245434F52445F5245515F48616E646C6572282920676F7420766F696365414C5F53746F70 73B5094B05000C00684600211600984769462000054B0F22984732002800044B2100984773BDC0463B8F78A01B9F78A053C078A0
+
+; .Insert_Jump_1
+03421B0: 4CF112EA DEF0E2FE
+
+; .Insert_Jump_2_Part_1
+0342180: 0022 03E0
+
+; .Insert_Jump_2_Part_2
+0342190: 4CF122EA DEF0F2FE
+
+;------------------------- end -------------------------
+
