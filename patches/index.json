@@ -47521,6 +47521,16 @@
 				"ru": "Отображать сообщение об ошибке если не удалось запустить браузер",
 				"en": "Show an error message if browser couldn't start"
 			}
+		},
+		"11388": {
+			"id": 11388,
+			"model": "C75v24",
+			"file": "C75v24/11388-handle_disabled_mss_client.vkp",
+			"mtime": 1773913904000,
+			"title": {
+				"ru": "Показывать сообщение при отключённом MMS-клиенте",
+				"en": "Handle disabled MMS client by showing a message"
+			}
 		}
 	},
 	"C65v50": {
