@@ -47481,6 +47481,16 @@
 				"ru": "Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши",
 				"en": "Temporary enable backlight on lock screen by any keypress"
 			}
+		},
+		"11384": {
+			"id": 11384,
+			"model": "C75v24",
+			"file": "C75v24/11384-memory_resizer_v2.vkp",
+			"mtime": 1773912204000,
+			"title": {
+				"ru": "Memory resizer",
+				"en": "Memory resizer"
+			}
 		}
 	},
 	"C65v50": {

@@ -1,0 +1,21 @@
+;C75v24
+;Memory resizer
+;Memory resizer
+;(c) Zhek@, ~Jhellico, Zeus
+;(r) Rst7
+;(p) FIL
+;Version: 2
+;PatchID: 11384
+;Details: https://patches.kibab.com/patches/details.php5?id=11384
+/*
+Патч увеличивает кол-во свободной оперативной памяти до ~3Мб.
+После установки Java и браузер работать не будут!
+*/
+
+08FD978: 4008 4D08 ; increase non-permanent 0xD0000
+08FD980: E80A E20A ; cut 0x6000 from permanent
+009BDAC: 0x177000 0x000000 ; disable java heap
+07A5A60: 1EF20EED C046C046 ; disable java
+07A5A48: 1EF21AED C046C046 ; disable browser
+;------------------------- end -------------------------
+
