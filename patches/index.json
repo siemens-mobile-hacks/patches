@@ -47531,6 +47531,16 @@
 				"ru": "Показывать сообщение при отключённом MMS-клиенте",
 				"en": "Handle disabled MMS client by showing a message"
 			}
+		},
+		"11389": {
+			"id": 11389,
+			"model": "C75v24",
+			"file": "C75v24/11389-monitor89_v1_0_1.vkp",
+			"mtime": 1773915936000,
+			"title": {
+				"ru": "Monitor89",
+				"en": "Monitor89"
+			}
 		}
 	},
 	"C65v50": {
