@@ -1,0 +1,19 @@
+;C75v24
+;Временное включение подсветки при заблокированном телефоне при нажатии любой клавиши
+;Temporary enable backlight on lock screen by any keypress
+;(c) FIL
+;Version: 1.1
+;PatchID: 11383
+;Details: https://patches.kibab.com/patches/details.php5?id=11383
+/*
+
+*/
+
+; .Hook
+032AE38: 676F7420756E6B6E6F776E206669656C642066726F6D2061646472657373626F 10B504490400044B03209847034B2000984710BDFF7F0000D56A78A0DD4177A0
+
+; .Jump
+033EE1A: 4EF1E8E8 ECF70DF8
+
+;------------------------- end -------------------------
+
