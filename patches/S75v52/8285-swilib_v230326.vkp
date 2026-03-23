@@ -1044,6 +1044,7 @@
 0F74: 0xA09CAF9D   ; 3DD: __thumb uint32_t ReadValueFromPDFile(uint32_t file_id, const char *key, char *value, uint32_t *size);
 0F78: 0xA09CB4AD   ; 3DE: __thumb uint32_t WriteValueToPDFile(uint32_t file_id, const char *key, const char *value, size_t size);
 0F7C: 0xA8E99DA4   ; 3DF: TZ *RamTimeZones();
+0F80: 0xA0901053   ; 3E0: __thumb int GetCurrentTimeZone();
 0F84: 0xA0902171   ; 3E1: __thumb int GetTimeZoneByGMT(const char *gmt);
 0F88: 0xA09021F9   ; 3E2: __thumb int IsSummerTime(int time_zone);
 0F8C: 0xA090226B   ; 3E3: __thumb void SetTimeZone(int time_zone);
