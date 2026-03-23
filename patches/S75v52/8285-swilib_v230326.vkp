@@ -771,7 +771,7 @@
 0B14: 0xA8DAD284   ; 2C5: char *RAM_EMS_Admin()
 0B18: 0xA026F1FB   ; 2C6: int GetSecondsFromDateTime(int *result, TDate *t_date, TTime *time, TDate *s_date)
 0B1C: 0xA026F1FB   ; 2C7: int GetSecondsFromDateTimeSince1997(int *result, TDate *date, TTime *time)
-0B20: 0xA026F6D6   ; 2C8: int GetSecondsFromTime(TTime *time)
+0B20: 0xA026F6D7   ; 2C8: int GetSecondsFromTime(TTime *time)
 0B24: 0xA026F135   ; 2C9: int GetDateTimeFromSeconds(int *seconds, TDate *t_date, TTime *time, TDate *s_date)
 0B28: 0xA026F24D   ; 2CA: int GetDateTimeFromSecondsSince1997(int *seconds, TDate *date, TTime *time)
 0B2C: 0xA026F6E9   ; 2CB: void GetTimeFromSeconds(TTime *time, int seconds)
