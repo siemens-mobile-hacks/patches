@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 250226
+;Version: 230326
 ;PatchID: 8285
 ;Details: https://patches.kibab.com/patches/details.php5?id=8285
 ;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v52&f=S75sw52_Functions_library_231017.zip
@@ -990,10 +990,7 @@
 0E9C: 0xA0975E5B   ; 3A7: __thumb int GUI_NewTimer(void *gui);
 0EA0: 0xA0975F9F   ; 3A8: __thumb int GUI_DeleteTimer(void *gui, int id);
 0EA4: 0xA0975EEF   ; 3A9: __thumb void GUI_StartTimerProc(void *gui, int id, long timeout, GUI_TimerProc callback);
-; 0E9C:            ; 3A7
-; 0EA0:            ; 3A8
-; 0EA4:            ; 3A9
-; 0EA8:            ; 3AA
+0EA8: 0xA0FC45DD   ; 3AA: __thumb void qsort(void *first, size_t nitems, size_t size, int (*comparator)(const void *, const void *));
 ; 0EAC:            ; 3AB
 ; 0EB0:            ; 3AC
 ; 0EB4:            ; 3AD
