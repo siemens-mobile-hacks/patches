@@ -1041,6 +1041,10 @@
 0F5C: 0xA069B994   ; 83D7: RECT *GetOptionsHeaderRECT();
 0F60: 0xA0672BE4   ; 83D8: RECT *GetMainAreaRECT();
 0F64: 0xA0A280B0   ; 3D9: __arm int GetPITSize();
+0F74: 0xA09CAF9D   ; 3DD: __thumb uint32_t ReadValueFromPDFile(uint32_t file_id, const char *key, char *value, uint32_t *size);
+0F78: 0xA09CB4AD   ; 3DE: __thumb uint32_t WriteValueToPDFile(uint32_t file_id, const char *key, const char *value, size_t size);
+0F7C: 0xA8E99DA4   ; 3DF: TZ *RamTimeZones();
+0F84: 0xA0902171   ; 3E1: __thumb int GetTimeZoneByGMT(const char *gmt);
 0FE4: 0xA022F5B4   ; 3F9: __arm int IsAnyOfAccessoriesConnected(const enum Accessory *accessory_ids, uint8_t count);
 0FE8: 0xA08FECCF   ; 3FA: __thumb SetMaxIllumIntensity(int unk3, uint32_t level);
 
