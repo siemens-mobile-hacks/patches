@@ -19,7 +19,7 @@
 05C3676: 03D1 C046 ; disable SetCpuClockLow timer
 05C3678: 02 01 ; counter_id=1
 05C36FE: 02 01 ; counter_id=1
-; IDLE_SetCpuClockHigh
+;IDLE_SetCpuClockHigh
 05C36CE: 03D0 07D0 ; always do SetCpuClockHi
 05C36D6: 10BD 03E0 ; disable GetCPUClock
 05C36E0: 02 01 ; counter_id=1
