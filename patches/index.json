@@ -97770,6 +97770,16 @@
 				"ru": "Отключить сообщения 'Bluetooth: Вкл./Выкл.'",
 				"en": "Disable messages 'Bluetooth: On/Off'"
 			}
+		},
+		"11390": {
+			"id": 11390,
+			"model": "E71v45",
+			"file": "E71v45/11390-fix_cpu_freq_ctl_for_ui_msocpu.vkp",
+			"mtime": 1774723372000,
+			"title": {
+				"ru": "Исправить управление частотой CPU для UI&#8209;MSOCPU",
+				"en": "Fix CPU frequency control for UI&#8209;MSOCPU"
+			}
 		}
 	},
 	"C81v51": {
