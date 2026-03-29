@@ -97790,6 +97790,16 @@
 				"ru": "Исправить отображение загрузки CPU при переключении overlay info",
 				"en": "Fix CPU load display when toggling overlay info"
 			}
+		},
+		"11392": {
+			"id": 11392,
+			"model": "E71v45",
+			"file": "E71v45/11392-cpu_ctrl_on_keypress.vkp",
+			"mtime": 1774801638000,
+			"title": {
+				"ru": "Управление частотой CPU при нажатии клавиш",
+				"en": "CPU frequency control on keypress"
+			}
 		}
 	},
 	"C81v51": {
