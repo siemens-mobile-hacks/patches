@@ -32488,8 +32488,12 @@
 		"S75v52/11352-add_ims_700_icon_to_iconbar.vkp",
 		"S75v52/11352-add_ims_700_icon_to_iconbar.zip"
 	],
-	null,
-	null,
+	[
+		"E71v45/11353-disable_headset_check_for_fm_radio.vkp"
+	],
+	[
+		"E71v45/11354-disable_messages_bluetooth_on_off.vkp"
+	],
 	[
 		"C75v24/11355-disable_network_v1_2.vkp"
 	],
@@ -32595,5 +32599,8 @@
 	],
 	[
 		"C75v24/11389-monitor89_v1_0_1.vkp"
+	],
+	[
+		"E71v45/11390-fix_cpu_freq_ctl_for_ui_msocpu.vkp"
 	]
 ]
