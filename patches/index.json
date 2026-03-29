@@ -97780,6 +97780,16 @@
 				"ru": "Исправить управление частотой CPU для UI-MSOCPU",
 				"en": "Fix CPU frequency control for UI-MSOCPU"
 			}
+		},
+		"11391": {
+			"id": 11391,
+			"model": "E71v45",
+			"file": "E71v45/11391-fix_cpu_load_when_toggling_overlay.vkp",
+			"mtime": 1774760156000,
+			"title": {
+				"ru": "Исправить отображение загрузки CPU при переключении overlay info",
+				"en": "Fix CPU load display when toggling overlay info"
+			}
 		}
 	},
 	"C81v51": {
