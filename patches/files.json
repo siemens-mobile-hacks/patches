@@ -32602,5 +32602,11 @@
 	],
 	[
 		"E71v45/11390-fix_cpu_freq_ctl_for_ui_msocpu.vkp"
+	],
+	[
+		"E71v45/11391-fix_cpu_load_when_toggling_overlay.vkp"
+	],
+	[
+		"E71v45/11392-cpu_ctrl_on_keypress.vkp"
 	]
 ]
