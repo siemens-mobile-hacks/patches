@@ -97800,6 +97800,16 @@
 				"ru": "Управление частотой CPU при нажатии клавиш",
 				"en": "CPU frequency control on keypress"
 			}
+		},
+		"11393": {
+			"id": 11393,
+			"model": "E71v45",
+			"file": "E71v45/11393-lazy_opwv_memory_management.vkp",
+			"mtime": 1775332816000,
+			"title": {
+				"ru": "Управление памятью OPWV с отложенной инициализацией",
+				"en": "Lazy OPWV Memory Management"
+			}
 		}
 	},
 	"C81v51": {
