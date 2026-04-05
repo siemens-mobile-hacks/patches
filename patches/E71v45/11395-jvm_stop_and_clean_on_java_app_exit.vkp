@@ -1,0 +1,30 @@
+;E71v45
+;Остановка JVM и очистка памяти при выходе из последнего Java-приложения
+;JVM stop and clean up on last Java app exit
+;(c) FIL
+;Version: 
+;PatchID: 11395
+;Details: https://patches.kibab.com/patches/details.php5?id=11395
+/*
+При закрытии последнего Java-приложения JVM принудительно останавливается и освобождает занимаемую память.
+Рекомендуется использовать совместно с патчем 8240, чтобы JVM не стартовала при загрузке телефона, а запускалась только по требованию.
+*/
+
+#pragma enable old_equal_ff
+; .JVM_Stop_Hook
+1384350: 054B10B59847054B1B68002B03D10449044B0320984710BD0C72A0A0B8C5EBA802620000B16594A0
+#pragma disable old_equal_ff
+
+; .JVM_Stop_Jump
+0A082C0: D1FBFFEB 22F025FA
+
+#pragma enable old_equal_ff
+; .JVM_Free_Hook
+1384380: 70B5144B04009847134B626805009A421ED1124C2368002B0BD0A068002803D00F4B98470023A3600E4A00232360236113606368002B0BD0E068002803D0084B98470023E360084A0023636063611360280070BD48A9ACA002620000B82CF4A8932F09A0E09AF0A8DC9AF0A8
+#pragma disable old_equal_ff
+
+; .JVM_Free_Jump
+09FC2E0: 983903EB 262026FA
+
+;------------------------- end -------------------------
+

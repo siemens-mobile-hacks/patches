@@ -97810,6 +97810,16 @@
 				"ru": "Управление памятью OPWV с отложенной инициализацией",
 				"en": "Lazy OPWV Memory Management"
 			}
+		},
+		"11395": {
+			"id": 11395,
+			"model": "E71v45",
+			"file": "E71v45/11395-jvm_stop_and_clean_on_java_app_exit.vkp",
+			"mtime": 1775422458000,
+			"title": {
+				"ru": "Остановка JVM и очистка памяти при выходе из последнего Java-приложения",
+				"en": "JVM stop and clean up on last Java app exit"
+			}
 		}
 	},
 	"C81v51": {
