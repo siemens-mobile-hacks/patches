@@ -4,13 +4,14 @@
 ;(c) @ndreS/PRM
 ;(r) (idеa) Miha_r, DronSPB
 ;(p) DDM
-;Version: 
+;Version: 1.0.1
 ;PatchID: 8240
 ;Details: https://patches.kibab.com/patches/details.php5?id=8240
 /*
 
 */
 
+0A07534: 5CA6FFFB 0000A0E3
 0A075C0: 04 00
 0A076C4: F30C03EB 8DA0D9FA
 

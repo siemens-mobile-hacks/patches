@@ -93943,8 +93943,8 @@
 		"8240": {
 			"id": 8240,
 			"model": "E71v45",
-			"file": "E71v45/8240-Run_java-machine.vkp",
-			"mtime": 1748113718000,
+			"file": "E71v45/8240-run_jvm_with_start_1st_midlet.vkp",
+			"mtime": 1775462120000,
 			"title": {
 				"ru": "* Запуск ява-машины при старте 1го мидлета *",
 				"en": "* Run java-machine with start 1st midlet *"
