@@ -32611,5 +32611,9 @@
 	],
 	[
 		"E71v45/11393-lazy_opwv_memory_management.vkp"
+	],
+	null,
+	[
+		"E71v45/11395-jvm_stop_and_clean_on_java_app_exit.vkp"
 	]
 ]
