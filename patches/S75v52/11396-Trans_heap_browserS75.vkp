@@ -1,0 +1,26 @@
+;S75v52
+;Перенос HEAP браузера в неисползуемую RAM
+;Transferring the HEAP of browser to unused RAM
+;(c) Feyman
+;(r) FIL
+;Version: 
+;PatchID: 11396
+;Details: https://patches.kibab.com/patches/details.php5?id=11396
+/*
+В S75 крайне нерациональное использование RAM. 
+Данный патч вводит в пользование ранее потерянный кусок RAM, размещая в нём OpenwaveFramework_HEAP и BrowserDeviceLayer_HEAP и освобождая системную память. 
+FreeRAM +735кБ.
+*/
+
+054D152: 17D1 1CD1
+054D190: 4118 2949
+054D1A4: 11F190EE 7248C046;
+054D238: 01040A00 00300B00 ; увеличенный размер framework heap
+
+;054D23C: 00040600 00000700; можно установить размер OpenwaveBrowser_HEAP(кто знает зачем)
+
+054D296: 11F118EE C0463648
+054D360: 42726F777365724465766963654C6179 4F5056575F4C61796572484541500000
+054D370: 65725F4845415000 0000EBA80030F6A8; 
+;------------------------- end -------------------------
+

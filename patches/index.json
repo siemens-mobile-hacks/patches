@@ -19906,6 +19906,16 @@
 				"ru": "Добавить иконку IMS-700 в иконбар",
 				"en": "Add IMS-700 icon to IconBar"
 			}
+		},
+		"11396": {
+			"id": 11396,
+			"model": "S75v52",
+			"file": "S75v52/11396-Trans_heap_browserS75.vkp",
+			"mtime": 1775641586000,
+			"title": {
+				"ru": "Перенос HEAP браузера в неисползуемую RAM",
+				"en": "Transferring the HEAP of browser to unused RAM"
+			}
 		}
 	},
 	"SL75v31": {
