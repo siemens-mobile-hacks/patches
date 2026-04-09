@@ -32615,5 +32615,8 @@
 	null,
 	[
 		"E71v45/11395-jvm_stop_and_clean_on_java_app_exit.vkp"
+	],
+	[
+		"S75v52/11396-Trans_heap_browserS75.vkp"
 	]
 ]
