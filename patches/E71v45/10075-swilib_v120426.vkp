@@ -528,7 +528,7 @@
 0790: 0xA094D8BF ; 1E4: __thumb int GetPicNByUnicodeSymbol(int wchar);
 0794: 0xA0A1CA59 ; 1E5: __thumb int EDIT_OpenOptionMenuWithUserItems(void *gui, void (*itemhandler)(USR_MENU_ITEM *item), int zero, int to_add);
 0798: 0xA0953275 ; 1E6: __thumb void Menu_SetItemCountDyn(void *gui, int n);
-079C: 0xA13844A1 ; 1E7: __thumb char *GetLastJavaApplication();
+079C: 0xA1384401 ; 1E7: __thumb char *GetLastJavaApplication();
 07A0: 0xA0A07D8C ; 1E8: __unknown int IsNoJava();
 ;07A4: 0x ; 1E9: __arm IMGHDR *CreateIMGHDRFromPngFile(const char *fname, int type);
 07A8: 0xA094D567 ; 1EA: __unknown int GetMaxDynIcon(void);
