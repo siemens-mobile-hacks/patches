@@ -5254,6 +5254,16 @@
 				"ru": "Своя иконка сети в оффлайн-режиме",
 				"en": "Custom network icon in offline mode"
 			}
+		},
+		"11398": {
+			"id": 11398,
+			"model": "EL71v45",
+			"file": "EL71v45/11398-41_XFS_version_bypass.vkp",
+			"mtime": 1776182332000,
+			"title": {
+				"ru": "Возможность залить XFS от 41 прошивки",
+				"en": "41 firmware XFS version bypass"
+			}
 		}
 	},
 	"S75v20": {
