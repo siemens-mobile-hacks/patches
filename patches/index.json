@@ -97844,8 +97844,8 @@
 		"11397": {
 			"id": 11397,
 			"model": "E71v45",
-			"file": "E71v45/11397-get_last_java_application_addon.vkp",
-			"mtime": 1776016200000,
+			"file": "E71v45/11397-get_last_java_application_addon_v2.vkp",
+			"mtime": 1776432972000,
 			"title": {
 				"ru": "GetLastJavaApplication аддон",
 				"en": "GetLastJavaApplication addon"
