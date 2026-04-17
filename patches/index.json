@@ -97841,6 +97841,16 @@
 				"en": "JVM stop and clean up on last Java app exit"
 			}
 		},
+		"11397": {
+			"id": 11397,
+			"model": "E71v45",
+			"file": "E71v45/11397-get_last_java_application_addon_v2.vkp",
+			"mtime": 1776432972000,
+			"title": {
+				"ru": "GetLastJavaApplication аддон",
+				"en": "GetLastJavaApplication addon"
+			}
+		},
 		"11399": {
 			"id": 11399,
 			"model": "E71v45",
