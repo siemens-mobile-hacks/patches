@@ -1,0 +1,41 @@
+;E71v45
+;GetLastJavaApplication аддон
+;GetLastJavaApplication addon
+;(c) FIL
+;Version: 2
+;PatchID: 11397
+;Details: https://patches.kibab.com/patches/details.php5?id=11397
+/*
+Реализует функцию GetLastJavaApplication для XTask, которая есть только в X75.
+
+*/
+
+#pragma enable old_equal_ff
+; .GetLastJavaApplication
+1384400: C26A0023032A00D1836A18007047
+
+; .JVM_StartApplication_Hook
+1384430: F0B5184C85B023681500029003910193002B0BD1144F0420B847060020608020B8472368019A30601B681A700F4B039902982A0098472368061E18680FD0002D0DD0296800290AD0094B7F229847236800221B687F331A70300005B0F0BD00230370F9E76873E3A8512F09A00CB4ACA051B022A1
+#pragma disable old_equal_ff
+
+; .JVM_StartApplication_Jump
+0ACAD40: B10100EB BAE522FA
+
+#pragma enable old_equal_ff
+; .RB_OnCreate_Hook
+13844B0: C36A10B50400032B08D1064B80209847054B1B681968054BA0629847044B2000984710BD512F09A06873E3A805AF22A1D5CDA1A0
+#pragma disable old_equal_ff
+
+; .RB_OnCreate_Jump
+0C514E0: D5CDA1A0 B14438A1
+
+#pragma enable old_equal_ff
+; .RB_OnMessage_Hook
+13844F0: 70B5074B04009847E36A0500032B05D12369033302D1A06A024B9847280070BDC3CCA1A0932F09A0
+#pragma disable old_equal_ff
+
+; .RB_OnMessage_Jump
+0C514DC: C3CCA1A0 F14438A1
+
+;------------------------- end -------------------------
+
