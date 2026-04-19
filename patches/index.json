@@ -100921,6 +100921,16 @@
 				"ru": "Увеличение максимального размера пользовательских мелодий с 2561 до 3319 байт",
 				"en": "Increase user melodies' maximum size from 2561 to 3319 bytes"
 			}
+		},
+		"11400": {
+			"id": 11400,
+			"model": "A70v34",
+			"file": "A70v34/11400-Disable_Aircraft_Check.vkp",
+			"mtime": 1776614206000,
+			"title": {
+				"ru": "Отключить проверку в самолете",
+				"en": "Disable Aircraft Check"
+			}
 		}
 	},
 	"S7Cv47": {
