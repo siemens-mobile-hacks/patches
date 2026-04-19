@@ -100971,6 +100971,16 @@
 				"ru": "Убрать отступ слева от названия пунктов в Опциях шаблонов для SMS",
 				"en": "Remove the indentation to the left of the item names in Options to SMS Template"
 			}
+		},
+		"11405": {
+			"id": 11405,
+			"model": "A70v34",
+			"file": "A70v34/11405-Remove_the_indentation_in_Settings.vkp",
+			"mtime": 1776615342000,
+			"title": {
+				"ru": "Убрать отступ слева от названия пунктов в Настройках",
+				"en": "Remove the indentation from the left side of the item names in Settings"
+			}
 		}
 	},
 	"S7Cv47": {
