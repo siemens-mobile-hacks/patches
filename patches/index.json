@@ -100951,6 +100951,16 @@
 				"ru": "Добавить Иконки пунктам в Мои файлы",
 				"en": "Add Icons to Items in Own stuff"
 			}
+		},
+		"11403": {
+			"id": 11403,
+			"model": "A70v34",
+			"file": "A70v34/11403-Remove_the_indentation_in_Extras.vkp",
+			"mtime": 1776614624000,
+			"title": {
+				"ru": "Убрать отступ слева от названия пунктов в \"Др. функциях\"",
+				"en": "Remove the indentation from the left side of the item title in Extras"
+			}
 		}
 	},
 	"S7Cv47": {

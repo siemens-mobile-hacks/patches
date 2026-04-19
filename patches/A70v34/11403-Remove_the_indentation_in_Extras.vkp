@@ -1,0 +1,21 @@
+;A70v34
+;Убрать отступ слева от названия пунктов в "Др. функциях"
+;Remove the indentation from the left side of the item title in Extras
+;(c) Romir0o
+;Version: 
+;PatchID: 11403
+;Details: https://patches.kibab.com/patches/details.php5?id=11403
+/*
+
+*/
+
+57D2E: 6C066F02 32066F02 ; SIM  Menu
+57D40: 6C066F02 32066F02 ; SIM  Menu
+57D52: 6C066F02 32066F02 ; Калькулятор
+57D64: 6C066F02 32066F02 ; Игры
+;================================================
+58560: 6C066F02 32066F02 ; Stack Attack
+58572: 6C066F02 32066F02 ; Balloon Shoot
+58584: 6C066F02 32066F02 ; Настройки в пункте Игры
+;------------------------- end -------------------------
+
