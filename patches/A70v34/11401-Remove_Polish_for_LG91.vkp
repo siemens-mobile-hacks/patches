@@ -1,0 +1,15 @@
+;A70v34
+;Убрать польский из меню выбора языков ввода для lg91
+;Remove Polish from language selection menu for lg91
+;(c) AlexSid
+;(p) Romir0o
+;Version: 
+;PatchID: 11401
+;Details: https://patches.kibab.com/patches/details.php5?id=11401
+/*
+
+*/
+
+1D5E67: 00 01
+;------------------------- end -------------------------
+

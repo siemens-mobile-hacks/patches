@@ -100931,6 +100931,16 @@
 				"ru": "Отключить проверку в самолете",
 				"en": "Disable Aircraft Check"
 			}
+		},
+		"11401": {
+			"id": 11401,
+			"model": "A70v34",
+			"file": "A70v34/11401-Remove_Polish_for_LG91.vkp",
+			"mtime": 1776614288000,
+			"title": {
+				"ru": "Убрать польский из меню выбора языков ввода для lg91",
+				"en": "Remove Polish from language selection menu for lg91"
+			}
 		}
 	},
 	"S7Cv47": {
