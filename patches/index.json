@@ -100981,6 +100981,16 @@
 				"ru": "Убрать отступ слева от названия пунктов в Настройках",
 				"en": "Remove the indentation from the left side of the item names in Settings"
 			}
+		},
+		"11406": {
+			"id": 11406,
+			"model": "A70v34",
+			"file": "A70v34/11406-Replace_the_Calculator_with_Games.vkp",
+			"mtime": 1776615594000,
+			"title": {
+				"ru": "Заменить пункт \"Калькулятор\" на \"Игры\" в меню без SIM карты",
+				"en": "Replace the \"Calculator\" item with \"Games\" in the menu without a SIM card"
+			}
 		}
 	},
 	"S7Cv47": {
