@@ -100991,6 +100991,16 @@
 				"ru": "Заменить пункт \"Калькулятор\" на \"Игры\" в меню без SIM карты",
 				"en": "Replace the \"Calculator\" item with \"Games\" in the menu without a SIM card"
 			}
+		},
+		"11407": {
+			"id": 11407,
+			"model": "A70v34",
+			"file": "A70v34/11407-Add_Icons_to_add_image_to_contact.vkp",
+			"mtime": 1776618902000,
+			"title": {
+				"ru": "Добавить иконки пунктам при добавлении Изображения на контакт",
+				"en": "Add icons to items when adding an Image to a contact"
+			}
 		}
 	},
 	"S7Cv47": {
