@@ -1,0 +1,15 @@
+;A70v34
+;Заменить пункт "Калькулятор" на "Игры" в меню без SIM карты
+;Replace the "Calculator" item with "Games" in the menu without a SIM card
+;(c) Romir0o
+;Version: 
+;PatchID: 11406
+;Details: https://patches.kibab.com/patches/details.php5?id=11406
+/*
+
+*/
+
+585FC: CC04E000 CB04CB04
+58612: 5C868500 B27A8500
+;------------------------- end -------------------------
+

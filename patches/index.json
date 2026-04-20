@@ -4662,7 +4662,7 @@
 			}
 		},
 		"10076": {
-			"id": "10076",
+			"id": 10076,
 			"model": "EL71v45",
 			"file": "EL71v45/10076-library.vkp",
 			"mtime": 1292840336000,
@@ -10305,7 +10305,7 @@
 			}
 		},
 		"5624": {
-			"id": "5624",
+			"id": 5624,
 			"model": "S75v47",
 			"file": "S75v47/5624-S75sw47_Functions_Library_120812.vkp",
 			"additionalFile": "S75v47/5624-Functions_library_100410.zip",
@@ -15183,7 +15183,7 @@
 			}
 		},
 		"8285": {
-			"id": "8285",
+			"id": 8285,
 			"model": "S75v52",
 			"file": "S75v52/8285-swilib_v230326.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
@@ -22017,7 +22017,7 @@
 			}
 		},
 		"10522": {
-			"id": "10522",
+			"id": 10522,
 			"model": "SL75v47",
 			"file": "SL75v47/10522-Function_Library120603.vkp",
 			"additionalFile": "SL75v47/10522-Function_Library120603.rar",
@@ -22330,7 +22330,7 @@
 			}
 		},
 		"7634": {
-			"id": "7634",
+			"id": 7634,
 			"model": "SL75v52",
 			"file": "SL75v52/7634-Functions_library.vkp",
 			"mtime": 1200294382000,
@@ -25793,7 +25793,7 @@
 			}
 		},
 		"10542": {
-			"id": "10542",
+			"id": 10542,
 			"model": "CF75v23",
 			"file": "CF75v23/10542-swilib_v071025.vkp",
 			"mtime": 1759860710000,
@@ -30090,7 +30090,7 @@
 			}
 		},
 		"6285": {
-			"id": "6285",
+			"id": 6285,
 			"model": "CX75v13",
 			"file": "CX75v13/6285-swilib.vkp",
 			"additionalFile": "CX75v13/6285-swilib.zip",
@@ -32892,7 +32892,7 @@
 			}
 		},
 		"4736": {
-			"id": "4736",
+			"id": 4736,
 			"model": "CX75v25",
 			"file": "CX75v25/4736-fl_swi.vkp",
 			"additionalFile": "CX75v25/4736-fl_swi.rar",
@@ -40458,7 +40458,7 @@
 			}
 		},
 		"4673": {
-			"id": "4673",
+			"id": 4673,
 			"model": "M75v25",
 			"file": "M75v25/4673-BigFunctionLibrary.vkp",
 			"mtime": 1176023636000,
@@ -45332,7 +45332,7 @@
 			}
 		},
 		"10518": {
-			"id": "10518",
+			"id": 10518,
 			"model": "C75v22",
 			"file": "C75v22/10518-swilib_c75_22_120628.vkp",
 			"mtime": 1340924442000,
@@ -47002,7 +47002,7 @@
 			}
 		},
 		"10516": {
-			"id": "10516",
+			"id": 10516,
 			"model": "C75v24",
 			"file": "C75v24/10516-swilib_v280612.vkp",
 			"mtime": 1340923204000,
@@ -56669,7 +56669,7 @@
 			}
 		},
 		"7545": {
-			"id": "7545",
+			"id": 7545,
 			"model": "S65v58",
 			"file": "S65v58/7545-Library.vkp",
 			"mtime": 1179819080000,
@@ -57941,7 +57941,7 @@
 			}
 		},
 		"10897": {
-			"id": "10897",
+			"id": 10897,
 			"model": "S65v58",
 			"file": "S65v58/10897-swilib_v270825.vkp",
 			"mtime": 1756311696000,
@@ -61545,7 +61545,7 @@
 			}
 		},
 		"10131": {
-			"id": "10131",
+			"id": 10131,
 			"model": "SL65v53",
 			"file": "SL65v53/10131-swilib_16_01_2011.vkp",
 			"mtime": 1299855222000,
@@ -63268,7 +63268,7 @@
 			}
 		},
 		"7546": {
-			"id": "7546",
+			"id": 7546,
 			"model": "SK65v50",
 			"file": "SK65v50/7546-library.vkp",
 			"additionalFile": "SK65v50/7546-library.zip",
@@ -69340,7 +69340,7 @@
 			}
 		},
 		"10625": {
-			"id": "10625",
+			"id": 10625,
 			"model": "CX70v56",
 			"file": "CX70v56/10625-swilib_v181125.vkp",
 			"mtime": 1763412890000,
@@ -88931,7 +88931,7 @@
 			}
 		},
 		"6954": {
-			"id": "6954",
+			"id": 6954,
 			"model": "C72v22",
 			"file": "C72v22/6954-swilib_v101125.vkp",
 			"mtime": 1762721718000,
@@ -95223,7 +95223,7 @@
 			}
 		},
 		"10075": {
-			"id": "10075",
+			"id": 10075,
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib_v120426.vkp",
 			"mtime": 1775985088000,
@@ -100233,7 +100233,7 @@
 			}
 		},
 		"10629": {
-			"id": "10629",
+			"id": 10629,
 			"model": "C81v51",
 			"file": "C81v51/10629-swilib_c81v51_vkp.vkp",
 			"mtime": 1718886492000,
@@ -100739,6 +100739,86 @@
 			"title": {
 				"ru": "Увеличение максимального размера пользовательских мелодий с 2561 до 3319 байт",
 				"en": "Increase user melodies' maximum size from 2561 to 3319 bytes"
+			}
+		},
+		"11400": {
+			"id": 11400,
+			"model": "A70v34",
+			"file": "A70v34/11400-Disable_Aircraft_Check.vkp",
+			"mtime": 1776614206000,
+			"title": {
+				"ru": "Отключить проверку в самолете",
+				"en": "Disable Aircraft Check"
+			}
+		},
+		"11401": {
+			"id": 11401,
+			"model": "A70v34",
+			"file": "A70v34/11401-Remove_Polish_for_LG91.vkp",
+			"mtime": 1776614288000,
+			"title": {
+				"ru": "Убрать польский из меню выбора языков ввода для lg91",
+				"en": "Remove Polish from language selection menu for lg91"
+			}
+		},
+		"11402": {
+			"id": 11402,
+			"model": "A70v34",
+			"file": "A70v34/11402-Add_Icons_to_Items_in_Own_stuff.vkp",
+			"mtime": 1776614454000,
+			"title": {
+				"ru": "Добавить Иконки пунктам в Мои файлы",
+				"en": "Add Icons to Items in Own stuff"
+			}
+		},
+		"11403": {
+			"id": 11403,
+			"model": "A70v34",
+			"file": "A70v34/11403-Remove_the_indentation_in_Extras.vkp",
+			"mtime": 1776614624000,
+			"title": {
+				"ru": "Убрать отступ слева от названия пунктов в \"Др. функциях\"",
+				"en": "Remove the indentation from the left side of the item title in Extras"
+			}
+		},
+		"11404": {
+			"id": 11404,
+			"model": "A70v34",
+			"file": "A70v34/11404-Remove_the_indentation_in_Templ.vkp",
+			"mtime": 1776614876000,
+			"title": {
+				"ru": "Убрать отступ слева от названия пунктов в Опциях шаблонов для SMS",
+				"en": "Remove the indentation to the left of the item names in Options to SMS Template"
+			}
+		},
+		"11405": {
+			"id": 11405,
+			"model": "A70v34",
+			"file": "A70v34/11405-Remove_the_indentation_in_Settings.vkp",
+			"mtime": 1776615342000,
+			"title": {
+				"ru": "Убрать отступ слева от названия пунктов в Настройках",
+				"en": "Remove the indentation from the left side of the item names in Settings"
+			}
+		},
+		"11406": {
+			"id": 11406,
+			"model": "A70v34",
+			"file": "A70v34/11406-Replace_the_Calculator_with_Games.vkp",
+			"mtime": 1776615594000,
+			"title": {
+				"ru": "Заменить пункт \"Калькулятор\" на \"Игры\" в меню без SIM карты",
+				"en": "Replace the \"Calculator\" item with \"Games\" in the menu without a SIM card"
+			}
+		},
+		"11407": {
+			"id": 11407,
+			"model": "A70v34",
+			"file": "A70v34/11407-Add_Icons_to_add_image_to_contact.vkp",
+			"mtime": 1776618902000,
+			"title": {
+				"ru": "Добавить иконки пунктам при добавлении Изображения на контакт",
+				"en": "Add icons to items when adding an Image to a contact"
 			}
 		}
 	},
@@ -102032,7 +102112,7 @@
 			}
 		},
 		"10839": {
-			"id": "10839",
+			"id": 10839,
 			"model": "S68v52",
 			"file": "S68v52/10839-swilib.vkp",
 			"mtime": 1717526596000,
@@ -102330,7 +102410,7 @@
 			}
 		},
 		"10395": {
-			"id": "10395",
+			"id": 10395,
 			"model": "CL61v128",
 			"file": "CL61v128/10395-swilib_cl61v00_db128.vkp",
 			"additionalFile": "CL61v128/10395-swilib_cl61v00_db128.zip",

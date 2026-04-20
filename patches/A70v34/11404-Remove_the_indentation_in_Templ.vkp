@@ -1,0 +1,18 @@
+;A70v34
+;Убрать отступ слева от названия пунктов в Опциях шаблонов для SMS
+;Remove the indentation to the left of the item names in Options to SMS Template 
+;(c) Romir0o
+;Version: 
+;PatchID: 11404
+;Details: https://patches.kibab.com/patches/details.php5?id=11404
+/*
+
+*/
+
+7527E: 6C066F02 32066F02 ; Передать
+75290: 6C066F02 32066F02 ; Посмотреть
+752A2: 6C066F02 32066F02 ; Изменить
+752B4: 6C066F02 32066F02 ; Удалить
+752C6: 6C066F02 32066F02 ; Стереть все
+;------------------------- end -------------------------
+

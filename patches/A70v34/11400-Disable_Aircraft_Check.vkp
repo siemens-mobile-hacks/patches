@@ -1,0 +1,16 @@
+;A70v34
+;Отключить проверку в самолете
+;Disable Aircraft Check
+;(c) Community
+;(p) Romir0o
+;Version: 
+;PatchID: 11400
+;Details: https://patches.kibab.com/patches/details.php5?id=11400
+/*
+Отключает запрос при включении телефона
+English:Disable the prompt when turning on the phone
+*/
+
+90FD0: 3D 0D
+;------------------------- end -------------------------
+
