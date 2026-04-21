@@ -87702,6 +87702,16 @@
 				"ru": "Убрать запятую между фамилией и именем при входящем звонке",
 				"en": "Remove coma between first and last name on incoming call"
 			}
+		},
+		"11408": {
+			"id": 11408,
+			"model": "AX75v16",
+			"file": "AX75v16/11408-Add_Icons_to_Items_in_Own_stuff.vkp",
+			"mtime": 1776790506000,
+			"title": {
+				"ru": "Добавить Иконки пунктам в Мои файлы",
+				"en": "Add Icons to Items in Own stuff"
+			}
 		}
 	},
 	"A52v9": {
