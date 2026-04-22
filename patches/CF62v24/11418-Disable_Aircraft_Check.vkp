@@ -1,0 +1,16 @@
+;CF62v24
+;Отключить проверку в самолете
+;Disable Aircraft Check
+;(c) Community
+;(p) Romir0o
+;Version: 
+;PatchID: 11418
+;Details: https://patches.kibab.com/patches/details.php5?id=11418
+/*
+Отключает запрос при включении телефона
+English:Disable the prompt when turning on the phone
+*/
+
+2BE1BA: 3D 0D
+;------------------------- end -------------------------
+

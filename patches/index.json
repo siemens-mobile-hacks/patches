@@ -103398,6 +103398,16 @@
 				"ru": "Скрыть пункт AMR в меню при работе без SIM-карты",
 				"en": "Hide the AMR menu item when working without a SIM card"
 			}
+		},
+		"11418": {
+			"id": 11418,
+			"model": "CF62v24",
+			"file": "CF62v24/11418-Disable_Aircraft_Check.vkp",
+			"mtime": 1776861422000,
+			"title": {
+				"ru": "Отключить проверку в самолете",
+				"en": "Disable Aircraft Check"
+			}
 		}
 	},
 	"S46v64": {
