@@ -1,0 +1,15 @@
+;A31v9
+;Отключить сообщение "Блокировка клавиатуры включена"
+;remove msg-keyboard blocked
+;(c) avkiev
+;(p) Romir0o
+;Version: 
+;PatchID: 11424
+;Details: https://patches.kibab.com/patches/details.php5?id=11424
+/*
+
+*/
+
+2C6B34: DA2CCED3 CC00CC00
+;------------------------- end -------------------------
+
