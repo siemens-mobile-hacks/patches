@@ -103463,6 +103463,16 @@
 				"ru": "Убрать польский из меню выбора языков ввода для lg91",
 				"en": "Remove Polish from language selection menu for lg91"
 			}
+		},
+		"11413": {
+			"id": 11413,
+			"model": "A31v9",
+			"file": "A31v9/11413-Add_Icons_to_Items_in_Own_stuff.vkp",
+			"mtime": 1776860784000,
+			"title": {
+				"ru": "Добавить Иконки пунктам в Мои файлы",
+				"en": "Add Icons to Items in Own stuff"
+			}
 		}
 	},
 	"AX72v2": {
