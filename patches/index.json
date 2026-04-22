@@ -103485,6 +103485,16 @@
 				"ru": "Отключить проверку в самолете",
 				"en": "Disable Aircraft Check"
 			}
+		},
+		"11414": {
+			"id": 11414,
+			"model": "AX72v2",
+			"file": "AX72v2/11414-Disable_Java-classes_vertification.vkp",
+			"mtime": 1776860884000,
+			"title": {
+				"ru": "Отключить верификацию JAVA-классов",
+				"en": "Disable Java-classes vertification"
+			}
 		}
 	}
 }
