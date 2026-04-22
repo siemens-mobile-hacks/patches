@@ -1,0 +1,14 @@
+;A31v9
+;Скрыть пункт AMR в меню при работе без SIM-карты
+;Hide the AMR menu item when working without a SIM card
+;(c) Romir0o
+;Version: 
+;PatchID: 11421
+;Details: https://patches.kibab.com/patches/details.php5?id=11421
+/*
+
+*/
+
+2516D4: 63 28
+;------------------------- end -------------------------
+
