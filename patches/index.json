@@ -103453,6 +103453,16 @@
 				"ru": "Отключить верификацию JAVA-классов",
 				"en": "Disable Java-classes vertification"
 			}
+		},
+		"11412": {
+			"id": 11412,
+			"model": "A31v9",
+			"file": "A31v9/11412-Remove_Polish_for_LG91.vkp",
+			"mtime": 1776860672000,
+			"title": {
+				"ru": "Убрать польский из меню выбора языков ввода для lg91",
+				"en": "Remove Polish from language selection menu for lg91"
+			}
 		}
 	},
 	"AX72v2": {
