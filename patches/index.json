@@ -103408,6 +103408,16 @@
 				"ru": "Отключить проверку в самолете",
 				"en": "Disable Aircraft Check"
 			}
+		},
+		"11419": {
+			"id": 11419,
+			"model": "CF62v24",
+			"file": "CF62v24/11419-Disable_Java-classes_vertification.vkp",
+			"mtime": 1776861542000,
+			"title": {
+				"ru": "Отключить верификацию JAVA-классов",
+				"en": "Disable Java-classes vertification"
+			}
 		}
 	},
 	"S46v64": {
