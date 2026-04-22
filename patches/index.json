@@ -103378,6 +103378,16 @@
 				"ru": "Меню в стиле x65",
 				"en": "Menu style x65"
 			}
+		},
+		"11416": {
+			"id": 11416,
+			"model": "CF62v24",
+			"file": "CF62v24/11416-Replace_GPRS_to_Games.vkp",
+			"mtime": 1776861174000,
+			"title": {
+				"ru": "Заменить пункт GPRS на Игры и другое в меню при работе без SIM-карты",
+				"en": "Replace the GPRS item with Games and other in the menu when working without a SIM card"
+			}
 		}
 	},
 	"S46v64": {
