@@ -1,0 +1,15 @@
+;A31v9
+;Заменить пункт GPRS на Игры и другое в меню при работе без SIM-карты
+;Replace the GPRS item with Games and other in the menu when working without a SIM card
+;(c) Romir0o
+;Version: 
+;PatchID: 11420
+;Details: https://patches.kibab.com/patches/details.php5?id=11420
+/*
+
+*/
+
+2516B6: FD029803 3C053C05
+2516E6: A0172500 98032500
+;------------------------- end -------------------------
+
