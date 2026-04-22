@@ -103433,6 +103433,18 @@
 			}
 		}
 	},
+	"A31v9": {
+		"11410": {
+			"id": 11410,
+			"model": "A31v9",
+			"file": "A31v9/11410-Disable_Aircraft_Check.vkp",
+			"mtime": 1776860438000,
+			"title": {
+				"ru": "Отключить проверку в самолете",
+				"en": "Disable Aircraft Check"
+			}
+		}
+	},
 	"AX72v2": {
 		"11409": {
 			"id": 11409,
