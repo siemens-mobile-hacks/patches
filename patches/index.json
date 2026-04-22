@@ -103595,6 +103595,16 @@
 				"ru": "Скрыть пункт AMR в меню при работе без SIM-карты",
 				"en": "Hide the AMR menu item when working without a SIM card"
 			}
+		},
+		"11425": {
+			"id": 11425,
+			"model": "AX72v2",
+			"file": "AX72v2/11425-remove_msg-keyboard_blocked.vkp",
+			"mtime": 1776863654000,
+			"title": {
+				"ru": "Отключить сообщение \"Блокировка клавиатуры включена\"",
+				"en": "remove msg-keyboard blocked"
+			}
 		}
 	}
 }
