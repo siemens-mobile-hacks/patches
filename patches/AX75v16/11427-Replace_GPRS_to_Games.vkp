@@ -1,0 +1,15 @@
+;AX75v16
+;Заменить пункт GPRS на Игры и другое в меню при работе без SIM-карты
+;Replace the GPRS item with Games and other in the menu when working without a SIM card
+;(c) Romir0o
+;Version: 
+;PatchID: 11427
+;Details: https://patches.kibab.com/patches/details.php5?id=11427
+/*
+
+*/
+
+2515C0: E8028303 24052405
+2515F0: AA162500 6E012500
+;------------------------- end -------------------------
+
