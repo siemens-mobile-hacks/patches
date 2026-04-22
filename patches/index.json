@@ -103575,6 +103575,16 @@
 				"ru": "Заменить пункт GPRS на Игры и другое в меню при работе без SIM-карты",
 				"en": "Replace the GPRS item with Games and other in the menu when working without a SIM card"
 			}
+		},
+		"11423": {
+			"id": 11423,
+			"model": "AX72v2",
+			"file": "AX72v2/11423-Hide_the_AMR_menu.vkp",
+			"mtime": 1776861956000,
+			"title": {
+				"ru": "Скрыть пункт AMR в меню при работе без SIM-карты",
+				"en": "Hide the AMR menu item when working without a SIM card"
+			}
 		}
 	}
 }
