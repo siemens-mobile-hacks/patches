@@ -1,0 +1,16 @@
+;AX72v2
+;Отключить проверку в самолете
+;Disable Aircraft Check
+;(c) Community
+;(p) Romir0o
+;Version: 
+;PatchID: 11409
+;Details: https://patches.kibab.com/patches/details.php5?id=11409
+/*
+Отключает запрос при включении телефона
+English:Disable the prompt when turning on the phone
+*/
+
+2DA332: 3D 0D
+;------------------------- end -------------------------
+

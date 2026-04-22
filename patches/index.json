@@ -103432,5 +103432,17 @@
 				"en": "Open BFB"
 			}
 		}
+	},
+	"AX72v2": {
+		"11409": {
+			"id": 11409,
+			"model": "AX72v2",
+			"file": "AX72v2/11409-Disable_Aircraft_Check.vkp",
+			"mtime": 1776860360000,
+			"title": {
+				"ru": "Отключить проверку в самолете",
+				"en": "Disable Aircraft Check"
+			}
+		}
 	}
 }
