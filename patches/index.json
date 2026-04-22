@@ -103565,6 +103565,16 @@
 				"ru": "Добавить Иконки пунктам в Мои файлы",
 				"en": "Add Icons to Items in Own stuff"
 			}
+		},
+		"11422": {
+			"id": 11422,
+			"model": "AX72v2",
+			"file": "AX72v2/11422-Replace_GPRS_to_Games.vkp",
+			"mtime": 1776861926000,
+			"title": {
+				"ru": "Заменить пункт GPRS на Игры и другое в меню при работе без SIM-карты",
+				"en": "Replace the GPRS item with Games and other in the menu when working without a SIM card"
+			}
 		}
 	}
 }
