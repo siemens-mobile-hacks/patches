@@ -1,0 +1,14 @@
+;AX75v16
+;Скрыть пункт AMR в меню при работе без SIM-карты
+;Hide the AMR menu item when working without a SIM card
+;(c) Romir0o
+;Version: 
+;PatchID: 11426
+;Details: https://patches.kibab.com/patches/details.php5?id=11426
+/*
+
+*/
+
+2515DE: 63 28
+;------------------------- end -------------------------
+

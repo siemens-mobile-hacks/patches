@@ -87712,6 +87712,16 @@
 				"ru": "Добавить Иконки пунктам в Мои файлы",
 				"en": "Add Icons to Items in Own stuff"
 			}
+		},
+		"11426": {
+			"id": 11426,
+			"model": "AX75v16",
+			"file": "AX75v16/11426-Hide_the_AMR_menu.vkp",
+			"mtime": 1776883004000,
+			"title": {
+				"ru": "Скрыть пункт AMR в меню при работе без SIM-карты",
+				"en": "Hide the AMR menu item when working without a SIM card"
+			}
 		}
 	},
 	"A52v9": {
