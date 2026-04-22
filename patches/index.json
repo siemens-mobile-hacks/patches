@@ -103388,6 +103388,16 @@
 				"ru": "Заменить пункт GPRS на Игры и другое в меню при работе без SIM-карты",
 				"en": "Replace the GPRS item with Games and other in the menu when working without a SIM card"
 			}
+		},
+		"11417": {
+			"id": 11417,
+			"model": "CF62v24",
+			"file": "CF62v24/11417-Hide_the_AMR_menu.vkp",
+			"mtime": 1776861288000,
+			"title": {
+				"ru": "Скрыть пункт AMR в меню при работе без SIM-карты",
+				"en": "Hide the AMR menu item when working without a SIM card"
+			}
 		}
 	},
 	"S46v64": {
