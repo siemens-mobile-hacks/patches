@@ -87613,16 +87613,6 @@
 				"en": "Remove soft-keys from MainScreen"
 			}
 		},
-		"5855": {
-			"id": 5855,
-			"model": "AX75v16",
-			"file": "AX75v16/5855-Disable_SMS_Message.vkp",
-			"mtime": 1160116362000,
-			"title": {
-				"ru": "Отключить сообщение \"Получено новое SMS\"",
-				"en": "Disable \"New text message received\" message"
-			}
-		},
 		"5856": {
 			"id": 5856,
 			"model": "AX75v16",
