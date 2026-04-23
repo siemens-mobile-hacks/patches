@@ -1,0 +1,15 @@
+;AX75v16
+;Отключить сообщение "Получено новое SMS"
+;Disable "New text message received" message
+;(c) SiNgle
+;(p) Romir0o
+;Version: 
+;PatchID: 11428
+;Details: https://patches.kibab.com/patches/details.php5?id=11428
+/*
+
+*/
+
+2D918E: F0C6F0D7E6FE2900DA2D3EAE CC00CC00CC00CC00CC00CC00
+;------------------------- end -------------------------
+

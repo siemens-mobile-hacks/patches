@@ -87722,6 +87722,16 @@
 				"ru": "Заменить пункт GPRS на Игры и другое в меню при работе без SIM-карты",
 				"en": "Replace the GPRS item with Games and other in the menu when working without a SIM card"
 			}
+		},
+		"11428": {
+			"id": 11428,
+			"model": "AX75v16",
+			"file": "AX75v16/11428-Disable_SMS_Message.vkp",
+			"mtime": 1776943720000,
+			"title": {
+				"ru": "Отключить сообщение \"Получено новое SMS\"",
+				"en": "Disable \"New text message received\" message"
+			}
 		}
 	},
 	"A52v9": {
