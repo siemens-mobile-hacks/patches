@@ -1,0 +1,15 @@
+;AX72v2
+;Отключить сообщение "Блокировка клавиатуры включена"
+;remove msg-keyboard blocked
+;(c) avkiev
+;(p) Romir0o
+;Version: 
+;PatchID: 11425
+;Details: https://patches.kibab.com/patches/details.php5?id=11425
+/*
+
+*/
+
+2C44D2: DA2C66AD CC00CC00
+;------------------------- end -------------------------
+

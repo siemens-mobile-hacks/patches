@@ -1,0 +1,15 @@
+;CF62v24
+;Заменить пункт GPRS на Игры и другое в меню при работе без SIM-карты
+;Replace the GPRS item with Games and other in the menu when working without a SIM card
+;(c) Romir0o
+;Version: 
+;PatchID: 11416
+;Details: https://patches.kibab.com/patches/details.php5?id=11416
+/*
+
+*/
+
+55957A: F503F604 01080108
+5595AE: BCAA2400 8E9D2400
+;------------------------- end -------------------------
+

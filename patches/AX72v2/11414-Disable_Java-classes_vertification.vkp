@@ -1,0 +1,16 @@
+;AX72v2
+;Отключить верификацию JAVA-классов
+;Disable Java-classes vertification
+;(c) SiNgle, Chaos
+;(p) Romir0o
+;Version: 
+;PatchID: 11414
+;Details: https://patches.kibab.com/patches/details.php5?id=11414
+/*
+Ускоряет запуск мидлетов на 30-70%
+English:Speeds up MIDlet launches by 30-70%
+*/
+
+536538: 3D 0D
+;------------------------- end -------------------------
+

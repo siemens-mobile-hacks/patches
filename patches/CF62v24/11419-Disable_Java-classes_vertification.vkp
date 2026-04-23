@@ -1,0 +1,16 @@
+;CF62v24
+;Отключить верификацию JAVA-классов
+;Disable Java-classes vertification
+;(c) SiNgle, Chaos
+;(p) Romir0o
+;Version: 
+;PatchID: 11419
+;Details: https://patches.kibab.com/patches/details.php5?id=11419
+/*
+Ускоряет запуск мидлетов на 30-70%
+English:Speeds up MIDlet launches by 30-70%
+*/
+
+6C7D78: 3D 0D
+;------------------------- end -------------------------
+

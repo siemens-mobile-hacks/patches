@@ -1,0 +1,14 @@
+;CF62v24
+;Скрыть пункт AMR в меню при работе без SIM-карты
+;Hide the AMR menu item when working without a SIM card
+;(c) Romir0o
+;Version: 
+;PatchID: 11417
+;Details: https://patches.kibab.com/patches/details.php5?id=11417
+/*
+
+*/
+
+559598: 63 28
+;------------------------- end -------------------------
+
