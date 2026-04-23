@@ -103563,6 +103563,16 @@
 				"ru": "Отключить сообщение \"Блокировка клавиатуры включена\"",
 				"en": "remove msg-keyboard blocked"
 			}
+		},
+		"11430": {
+			"id": 11430,
+			"model": "A31v9",
+			"file": "A31v9/11430-Disable_SMS_Message.vkp",
+			"mtime": 1776944838000,
+			"title": {
+				"ru": "Отключить сообщение \"Получено новое SMS\"",
+				"en": "Disable \"New text message received\" message"
+			}
 		}
 	},
 	"AX72v2": {
