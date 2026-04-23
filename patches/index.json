@@ -101031,6 +101031,16 @@
 				"ru": "Добавить иконки пунктам при добавлении Изображения на контакт",
 				"en": "Add icons to items when adding an Image to a contact"
 			}
+		},
+		"11431": {
+			"id": 11431,
+			"model": "A70v34",
+			"file": "A70v34/11431-Disable_SMS_Message.vkp",
+			"mtime": 1776947814000,
+			"title": {
+				"ru": "Отключить сообщение \"Получено новое SMS\"",
+				"en": "Disable \"New text message received\" message"
+			}
 		}
 	},
 	"S7Cv47": {
