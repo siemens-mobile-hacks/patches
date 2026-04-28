@@ -97890,6 +97890,16 @@
 				"ru": "Возможность залить XFS от 42 прошивки",
 				"en": "42 firmware XFS version bypass"
 			}
+		},
+		"11432": {
+			"id": 11432,
+			"model": "E71v45",
+			"file": "E71v45/11432-launch_elf_instead_of_radio.vkp",
+			"mtime": 1777401904000,
+			"title": {
+				"ru": "Запуск ELF вместо 'Радио'",
+				"en": "Launch ELF instead of 'Radio'"
+			}
 		}
 	},
 	"C81v51": {

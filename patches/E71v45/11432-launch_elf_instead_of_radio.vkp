@@ -1,0 +1,22 @@
+;E71v45
+;Запуск ELF вместо 'Радио'
+;Launch ELF instead of 'Radio'
+;(c) FIL
+;Version: 
+;PatchID: 11432
+;Details: https://patches.kibab.com/patches/details.php5?id=11432
+/*
+Путь к эльфу можно указать любой в первой строке патча.
+Реализация эльфа:
+[url]https://github.com/siemens-mobile-hacks/native_tuner[/url]
+*/
+
+06721D0: 636F6D2E7369656D656E732E6D702E6170702E666D726164696F2E464D526164696F00 "2:\\NativeTuner.elf"00
+
+05C5ED0: 44301FE5 0000A0E1
+05C5EE0: 00408DE5 0000A0E1
+05C5EE4: 37A210FB A4F3FCEB
+05C5EE8: 000050E3 1E0000EA
+
+;------------------------- end -------------------------
+
