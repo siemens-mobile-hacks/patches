@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 230326
+;Version: 300426
 ;PatchID: 8285
 ;Details: https://patches.kibab.com/patches/details.php5?id=8285
 ;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=s75v52&f=S75sw52_Functions_library_231017.zip
@@ -714,10 +714,10 @@
 
 0A40: 0xA8E2B548   ; 290: char *RamCallState()
 0A44: 0xA029FDB0   ; 291: int RefreshAlarmClock()
-0A48: 0xA8E938A4   ; 292: char *RamIsAlarmAutorepeatOn()
-0A4C: 0xA8E938AC   ; 293: char *RamAlarmclockHour()
-0A50: 0xA8E938AD   ; 294: char *RamAlarmclockMinute()
-;0A54:             ; 294:
+0A48: 0xA8E938A4   ; 292: char *RamIsAlarmClockAutorepeatOn()
+0A4C: 0xA8E938AC   ; 293: char *RamAlarmClockHours()
+0A50: 0xA8E938AD   ; 294: char *RamAlarmClockMinutes()
+0A54: 0xA090405B   ; 295: __thumb void Get_WS_extent(WSHDR *ws, int text_flags, int flags, int font_id, int *w, int *h);
 0A58: 0xA028B235   ; 296: void getProfileNameByN(WSHDR *ws, int n, int _0)
 0A5C: 0xA8E8C548   ; 297: char *RamIsSoundRecord()
 0A60: 0xA8E8C5A4   ; 298: char *RamIsSoundRecordQuality()
@@ -986,7 +986,7 @@
 ; 0E8C:            ; 3A3
 ; 0E90:            ; 3A4
 0E94: 0xA0A02BDB   ; 3A5: __thumb void DrawIMGHDR(int x, int y, IMGHDR *img);
-; 0E98:            ; 3A6
+0E98: 0xA0903CFD   ; 3A6: __thumb void DrwObj_GetWH(DRWOBJ *drwobj,int *w,int *h);
 0E9C: 0xA0975E5B   ; 3A7: __thumb int GUI_NewTimer(void *gui);
 0EA0: 0xA0975F9F   ; 3A8: __thumb int GUI_DeleteTimer(void *gui, int id);
 0EA4: 0xA0975EEF   ; 3A9: __thumb void GUI_StartTimerProc(void *gui, int id, long timeout, GUI_TimerProc callback);
