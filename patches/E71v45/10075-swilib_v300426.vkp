@@ -686,7 +686,7 @@
 ;9E4:            ; 279
 09E8: 0xA0CCCCE8 ; 27A: __arm int Obs_SetInput_Memory(HObj obs, int unk, char *buf, int len);
 09EC: 0xA0CB7DD0 ; 27B: __arm int Obs_SetUserPointer(HObj obs,void *user_pointer);
-09F0: 0xA0CB7E04 ; 27C: __arm int Obs_GetUserPointer(HObj obs,void **p_user_pointer)
+09F0: 0xA0CB7E04 ; 27C: __arm int Obs_GetUserPointer(HObj obs,void **p_user_pointer);
 
 
 0A04: 0xA8EBC5B8 ; 8281: __thumb char *RamIsRunJava();
