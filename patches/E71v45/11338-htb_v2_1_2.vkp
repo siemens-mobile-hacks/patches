@@ -2,7 +2,7 @@
 ;Скрыть панель вкладок
 ;Hide Tab Bar
 ;(c) FIL
-;Version: 2.1.1
+;Version: 2.1.2
 ;PatchID: 11338
 ;Details: https://patches.kibab.com/patches/details.php5?id=11338
 /*
@@ -11,8 +11,10 @@
 */
 
 ; Enable tabs
-;088B6E0: 08 18 ; Native Explorer
+0CA4F28: 08 18 ; Contacts
+08A6DD0: 0B 1B ; Contact edit
 ;088DCBC: 08 18 ; Media player
+;088B6E0: 08 18 ; Native Explorer
 ;etc...
 
 ; .DrawTabs_Hook
