@@ -2,7 +2,7 @@
 ;Библиотека функций
 ;Functions Library
 ;(c) avkiev
-;Version: 300426
+;Version: 190526
 ;PatchID: 10075
 ;Details: https://patches.kibab.com/patches/details.php5?id=10075
 /*
@@ -268,8 +268,8 @@
 
 03C0: 0x00001200 ; 0F0: Pic_AccuGraph
 03C4: 0xA05C1801 ; 0F1: __arm void *BuildCanvas(void);
-;03C8: 0x ; 0F2: lpRAM_PIT
-;03CC: 0x ; 0F3: RAM_PIT_Cap
+03C8: 0xA06AED34 ; 0F2: __arm int Registry_RegClient(const REG_CLIENT *client);
+03CC: 0xA06AECA0 ; 0F3: __arm void Registry_UnregClient(int client_id);
 ;03D0: 0x ; 0F4:
 03D4: 0xA8DF32B8 ; 0F5: Ram_LCD_Overlay_Layer
 03D8: 0xA8E6AACC ; 0F6: Ram_Layer_Base_Ptr
@@ -722,10 +722,9 @@
 0A78: 0xA8DA2484 ; 829E: char *RamIsBTConnected();
 0A7C: 0xA8DA2418 ; 829F: char *RamIsBTHeadsetConnected();
 
-
 0A80: 0xA05C56F8 ; 2A0: int GetAlarmclockState(int state); 
-;0A84: 0x ; 2A1: 
-;0A88: 0x ; 2A2:
+0A84: 0xA0A1D719 ; 2A1: __thumb int RscMgr_CsSetColor(int id, const uint8_t *color);
+0A88: 0xA0A1D89B ; 2A2: __thumb void RscMgr_CsUpdate();
 0A8C: 0xA0953319 ; 2A3: __thumb void UpdateMenuCursorItem(void *gui, int n);
 0A90: 0xA0950125 ; 2A4: __thumb void *GetMenuGUI(void *malloc_adr, void *mfree_adr); 
 0A94: 0xA0957479 ; 2A5: __thumb void *GetMultiLinesMenuGUI(void *malloc_adr, void *mfree_adr); 
