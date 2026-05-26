@@ -97900,6 +97900,16 @@
 				"ru": "Запуск ELF вместо 'Радио'",
 				"en": "Launch ELF instead of 'Radio'"
 			}
+		},
+		"11433": {
+			"id": 11433,
+			"model": "E71v45",
+			"file": "E71v45/11433-89_theme_engine_addon.vkp",
+			"mtime": 1779822600000,
+			"title": {
+				"ru": "Дополнение для 89ThemeEngine",
+				"en": "89ThemeEngine addon"
+			}
 		}
 	},
 	"C81v51": {
