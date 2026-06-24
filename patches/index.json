@@ -47561,6 +47561,16 @@
 				"ru": "Monitor89",
 				"en": "Monitor89"
 			}
+		},
+		"11434": {
+			"id": 11434,
+			"model": "C75v24",
+			"file": "C75v24/11434-c75v24_pmic_audio_fix_v1.vkp",
+			"mtime": 1782333148000,
+			"title": {
+				"ru": "Исправление вывода звука для M65/СХ65/CX70",
+				"en": "Fixing sound output for CX/M 65/70"
+			}
 		}
 	},
 	"C65v50": {
