@@ -32768,7 +32768,9 @@
 	[
 		"C75v24/11434-c75v24_pmic_audio_fix_v1.vkp"
 	],
-	null,
+	[
+		"CX70v56/11435-cx70v56_extram_v1.vkp"
+	],
 	[
 		"CX70v56/11436-cx70v56_Cut_Heap_16RAM_v1.vkp"
 	],

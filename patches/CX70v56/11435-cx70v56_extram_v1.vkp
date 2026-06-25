@@ -1,0 +1,31 @@
+;CX70v56
+;Увеличение ОЗУ до 16МБ. ВНИМАНИЕ! Только после замены чипа ОЗУ!
+;Increase RAM to 16MB. WARNING! Only after replacing the RAM chip!
+;(c) DebriZ
+;(r) Feyman
+;(p) DenK
+;Version: 1
+;PatchID: 11435
+;Details: https://patches.kibab.com/patches/details.php5?id=11435
+/*
+Увеличение ОЗУ до 16МБ. ВНИМАНИЕ! Только после физической замены микросхемы ОЗУ!
+Подойдёт микросхема от SK65 (K4M28163PF, HY5S2B6DL) или подобная другого производителя с питанием 1.8v. Хип увеличен до 8МБ, остальные 8МБ отданы системе.
+
+Increase RAM to 16MB. WARNING! Only after physically replacing the RAM chip!
+A chip from an SK65 (K4M28163PF, HY5S2B6DL) or a similar one from another manufacturer with a 1.8V supply voltage will work.
+
+*/
+
+;Fix Heap Address
+11C5168: 0xA8000000 0xA8800000
+
+;Fix Heap Size (Change NonPermMem)
+11C516C: 0x00652000 0x00800000
+
+;Increase RAM Visible in MMU Table
+123DB48: 00100000 00108000
+
+;Fix Memory Attr
+123DB50: C0000000 F0000000
+;------------------------- end -------------------------
+

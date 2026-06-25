@@ -69931,6 +69931,16 @@
 				"en": "Redesigned menu Extras in Native Menu"
 			}
 		},
+		"11435": {
+			"id": 11435,
+			"model": "CX70v56",
+			"file": "CX70v56/11435-cx70v56_extram_v1.vkp",
+			"mtime": 1782370472000,
+			"title": {
+				"ru": "Увеличение ОЗУ до 16МБ. ВНИМАНИЕ! Только после замены чипа ОЗУ!",
+				"en": "Increase RAM to 16MB. WARNING! Only after replacing the RAM chip!"
+			}
+		},
 		"11436": {
 			"id": 11436,
 			"model": "CX70v56",
