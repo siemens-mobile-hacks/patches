@@ -1,0 +1,16 @@
+;C72v22
+;Патч для включения телефона С65/SL65
+;Power-Up for C65/SL65
+;(c) NIK
+;Version: 
+;PatchID: 11439
+;Details: https://patches.kibab.com/patches/details.php5?id=11439
+/*
+Убирает проверку HWID платы. Необходим для запуска прошивки С72 на C65/SL65 и подобных.
+*/
+
+11480F4: 0E 00; HWid
+1190590: 05 02; add_interpreter
+
+;------------------------- end -------------------------
+

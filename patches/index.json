@@ -90171,6 +90171,16 @@
 				"ru": "Исправление ошибки 'Ошибка в файле профиля' в Card-Explorer",
 				"en": "Fix 'Application error' in Card-Explorer"
 			}
+		},
+		"11439": {
+			"id": 11439,
+			"model": "C72v22",
+			"file": "C72v22/11439-c72v22_Power-UP.vkp",
+			"mtime": 1782370294000,
+			"title": {
+				"ru": "Патч для включения телефона С65/SL65",
+				"en": "Power-Up for C65/SL65"
+			}
 		}
 	},
 	"SXG75v22": {
