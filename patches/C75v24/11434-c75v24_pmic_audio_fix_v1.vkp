@@ -1,0 +1,21 @@
+;C75v24
+;Исправление вывода звука для M65/СХ65/CX70
+;Fixing sound output for CX/M 65/70
+;(c) Azq2, DenK
+;Version: 1
+;PatchID: 11434
+;Details: https://patches.kibab.com/patches/details.php5?id=11434
+/*
+Исправляет вывод звука при заливке фуллфэша С75 в M65/СХ65/CX70.
+*/
+
+;reg 0x4F  ASwitMux: 0x5 change to 0x3
+7E0894: 2510E2E5 AC231CEA 
+EE974C: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 050051E30310A0032510E2E54F10A0E351DCE3EA
+
+;reg 0x52  ADacCtrl: 0x10 change to 0x72
+7E0E14: 2800C1E5 51221CEA
+EE9760: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 100050E30100001A7200A0E32800C1E5A8DDE3EA
+
+;------------------------- end -------------------------
+
