@@ -69910,6 +69910,16 @@
 				"ru": "Переработанное меню Еще в Native Menu",
 				"en": "Redesigned menu Extras in Native Menu"
 			}
+		},
+		"11436": {
+			"id": 11436,
+			"model": "CX70v56",
+			"file": "CX70v56/11436-cx70v56_Cut_Heap_16RAM_v1.vkp",
+			"mtime": 1782368272000,
+			"title": {
+				"ru": "Подрезка кучи для 16МБ RAM",
+				"en": "Cut Heap for 16MB RAM"
+			}
 		}
 	},
 	"C55v24": {
