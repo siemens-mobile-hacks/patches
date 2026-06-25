@@ -47591,6 +47591,16 @@
 				"ru": "Увеличение ОЗУ до 16МБ. ВНИМАНИЕ! Только после замены чипа ОЗУ!",
 				"en": "Increase RAM to 16MB. WARNING! Only after replacing the RAM chip!"
 			}
+		},
+		"11440": {
+			"id": 11440,
+			"model": "C75v24",
+			"file": "C75v24/11440-c75v24_overclock_v1.vkp",
+			"mtime": 1782395638000,
+			"title": {
+				"ru": "Разгон CPU до 208 МГц",
+				"en": "CPU OverClock to 208 MHz"
+			}
 		}
 	},
 	"C65v50": {
