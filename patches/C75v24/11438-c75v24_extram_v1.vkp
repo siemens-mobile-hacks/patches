@@ -1,0 +1,33 @@
+;C75v24
+;Увеличение ОЗУ до 16МБ. ВНИМАНИЕ! Только после замены чипа ОЗУ!
+;Increase RAM to 16MB. WARNING! Only after replacing the RAM chip!
+;(c) DebriZ
+;(r) Feyman
+;(p) DenK
+;Version: 1
+;PatchID: 11438
+;Details: https://patches.kibab.com/patches/details.php5?id=11438
+/*
+Увеличение ОЗУ до 16МБ. ВНИМАНИЕ! Только после физической замены микросхемы ОЗУ!
+Подойдёт микросхема от SK65 (K4M28163PF, HY5S2B6DL) или подобная другого производителя с питанием 1.8v. Хип увеличен до 8МБ, остальные 8МБ отданы системе.
+
+Increase RAM to 16MB. WARNING! Only after physically replacing the RAM chip!
+A chip from an SK65 (K4M28163PF, HY5S2B6DL) or a similar one from another manufacturer with a 1.8V supply voltage will work.
+
+
+
+*/
+
+;Fix Heap Size (Change NonPermMem)
+8FD978: 4008A0E3 8008A0E3
+
+;Fix Heap Address
+8FD98C: 000000A8 000080A8
+
+;Increase RAM Visible in MMU Table
+A0E334: 00100000 00108000
+
+;Fix Memory Attr
+A0E33C: C0000000 F0000000
+;------------------------- end -------------------------
+

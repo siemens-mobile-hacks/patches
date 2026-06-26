@@ -32730,5 +32730,23 @@
 	],
 	[
 		"C75v24/11434-c75v24_pmic_audio_fix_v1.vkp"
+	],
+	[
+		"CX70v56/11435-cx70v56_extram_v1.vkp"
+	],
+	[
+		"CX70v56/11436-cx70v56_Cut_Heap_16RAM_v1.vkp"
+	],
+	[
+		"C75v24/11437-C75v24_Power-UP.vkp"
+	],
+	[
+		"C75v24/11438-c75v24_extram_v1.vkp"
+	],
+	[
+		"C72v22/11439-c72v22_Power-UP.vkp"
+	],
+	[
+		"C75v24/11440-c75v24_overclock_v1.vkp"
 	]
 ]

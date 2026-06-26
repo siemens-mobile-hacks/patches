@@ -4662,7 +4662,7 @@
 			}
 		},
 		"10076": {
-			"id": "10076",
+			"id": 10076,
 			"model": "EL71v45",
 			"file": "EL71v45/10076-library.vkp",
 			"mtime": 1292840336000,
@@ -10305,7 +10305,7 @@
 			}
 		},
 		"5624": {
-			"id": "5624",
+			"id": 5624,
 			"model": "S75v47",
 			"file": "S75v47/5624-S75sw47_Functions_Library_120812.vkp",
 			"additionalFile": "S75v47/5624-Functions_library_100410.zip",
@@ -15183,7 +15183,7 @@
 			}
 		},
 		"8285": {
-			"id": "8285",
+			"id": 8285,
 			"model": "S75v52",
 			"file": "S75v52/8285-swilib_v300426.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
@@ -22017,7 +22017,7 @@
 			}
 		},
 		"10522": {
-			"id": "10522",
+			"id": 10522,
 			"model": "SL75v47",
 			"file": "SL75v47/10522-Function_Library120603.vkp",
 			"additionalFile": "SL75v47/10522-Function_Library120603.rar",
@@ -22330,7 +22330,7 @@
 			}
 		},
 		"7634": {
-			"id": "7634",
+			"id": 7634,
 			"model": "SL75v52",
 			"file": "SL75v52/7634-Functions_library.vkp",
 			"mtime": 1200294382000,
@@ -25793,7 +25793,7 @@
 			}
 		},
 		"10542": {
-			"id": "10542",
+			"id": 10542,
 			"model": "CF75v23",
 			"file": "CF75v23/10542-swilib_v071025.vkp",
 			"mtime": 1759860710000,
@@ -30090,7 +30090,7 @@
 			}
 		},
 		"6285": {
-			"id": "6285",
+			"id": 6285,
 			"model": "CX75v13",
 			"file": "CX75v13/6285-swilib.vkp",
 			"additionalFile": "CX75v13/6285-swilib.zip",
@@ -32892,7 +32892,7 @@
 			}
 		},
 		"4736": {
-			"id": "4736",
+			"id": 4736,
 			"model": "CX75v25",
 			"file": "CX75v25/4736-fl_swi.vkp",
 			"additionalFile": "CX75v25/4736-fl_swi.rar",
@@ -40458,7 +40458,7 @@
 			}
 		},
 		"4673": {
-			"id": "4673",
+			"id": 4673,
 			"model": "M75v25",
 			"file": "M75v25/4673-BigFunctionLibrary.vkp",
 			"mtime": 1176023636000,
@@ -45332,7 +45332,7 @@
 			}
 		},
 		"10518": {
-			"id": "10518",
+			"id": 10518,
 			"model": "C75v22",
 			"file": "C75v22/10518-swilib_c75_22_120628.vkp",
 			"mtime": 1340924442000,
@@ -47002,7 +47002,7 @@
 			}
 		},
 		"10516": {
-			"id": "10516",
+			"id": 10516,
 			"model": "C75v24",
 			"file": "C75v24/10516-swilib_v280612.vkp",
 			"mtime": 1340923204000,
@@ -47530,6 +47530,36 @@
 			"title": {
 				"ru": "Исправление вывода звука для M65/СХ65/CX70",
 				"en": "Fixing sound output for CX/M 65/70"
+			}
+		},
+		"11437": {
+			"id": 11437,
+			"model": "C75v24",
+			"file": "C75v24/11437-C75v24_Power-UP.vkp",
+			"mtime": 1782368762000,
+			"title": {
+				"ru": "Патч для включения телефона М65/СХ65/СХ70",
+				"en": "Power-Up for М65/СХ65/СХ70"
+			}
+		},
+		"11438": {
+			"id": 11438,
+			"model": "C75v24",
+			"file": "C75v24/11438-c75v24_extram_v1.vkp",
+			"mtime": 1782370456000,
+			"title": {
+				"ru": "Увеличение ОЗУ до 16МБ. ВНИМАНИЕ! Только после замены чипа ОЗУ!",
+				"en": "Increase RAM to 16MB. WARNING! Only after replacing the RAM chip!"
+			}
+		},
+		"11440": {
+			"id": 11440,
+			"model": "C75v24",
+			"file": "C75v24/11440-c75v24_overclock_v1.vkp",
+			"mtime": 1782395638000,
+			"title": {
+				"ru": "Разгон CPU до 208 МГц",
+				"en": "CPU OverClock to 208 MHz"
 			}
 		}
 	},
@@ -56679,7 +56709,7 @@
 			}
 		},
 		"7545": {
-			"id": "7545",
+			"id": 7545,
 			"model": "S65v58",
 			"file": "S65v58/7545-Library.vkp",
 			"mtime": 1179819080000,
@@ -57951,7 +57981,7 @@
 			}
 		},
 		"10897": {
-			"id": "10897",
+			"id": 10897,
 			"model": "S65v58",
 			"file": "S65v58/10897-swilib_v270825.vkp",
 			"mtime": 1756311696000,
@@ -61555,7 +61585,7 @@
 			}
 		},
 		"10131": {
-			"id": "10131",
+			"id": 10131,
 			"model": "SL65v53",
 			"file": "SL65v53/10131-swilib_16_01_2011.vkp",
 			"mtime": 1299855222000,
@@ -63278,7 +63308,7 @@
 			}
 		},
 		"7546": {
-			"id": "7546",
+			"id": 7546,
 			"model": "SK65v50",
 			"file": "SK65v50/7546-library.vkp",
 			"additionalFile": "SK65v50/7546-library.zip",
@@ -69350,7 +69380,7 @@
 			}
 		},
 		"10625": {
-			"id": "10625",
+			"id": 10625,
 			"model": "CX70v56",
 			"file": "CX70v56/10625-swilib_v181125.vkp",
 			"mtime": 1763412890000,
@@ -69869,6 +69899,26 @@
 			"title": {
 				"ru": "Переработанное меню Еще в Native Menu",
 				"en": "Redesigned menu Extras in Native Menu"
+			}
+		},
+		"11435": {
+			"id": 11435,
+			"model": "CX70v56",
+			"file": "CX70v56/11435-cx70v56_extram_v1.vkp",
+			"mtime": 1782370472000,
+			"title": {
+				"ru": "Увеличение ОЗУ до 16МБ. ВНИМАНИЕ! Только после замены чипа ОЗУ!",
+				"en": "Increase RAM to 16MB. WARNING! Only after replacing the RAM chip!"
+			}
+		},
+		"11436": {
+			"id": 11436,
+			"model": "CX70v56",
+			"file": "CX70v56/11436-cx70v56_Cut_Heap_16RAM_v1.vkp",
+			"mtime": 1782368272000,
+			"title": {
+				"ru": "Подрезка кучи для 16МБ RAM",
+				"en": "Cut Heap for 16MB RAM"
 			}
 		}
 	},
@@ -88971,7 +89021,7 @@
 			}
 		},
 		"6954": {
-			"id": "6954",
+			"id": 6954,
 			"model": "C72v22",
 			"file": "C72v22/6954-swilib_v101125.vkp",
 			"mtime": 1762721718000,
@@ -89969,6 +90019,16 @@
 			"title": {
 				"ru": "Исправление ошибки 'Ошибка в файле профиля' в Card-Explorer",
 				"en": "Fix 'Application error' in Card-Explorer"
+			}
+		},
+		"11439": {
+			"id": 11439,
+			"model": "C72v22",
+			"file": "C72v22/11439-c72v22_Power-UP.vkp",
+			"mtime": 1782370294000,
+			"title": {
+				"ru": "Патч для включения телефона С65/SL65",
+				"en": "Power-Up for C65/SL65"
 			}
 		}
 	},
@@ -95263,7 +95323,7 @@
 			}
 		},
 		"10075": {
-			"id": "10075",
+			"id": 10075,
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib_v190526.vkp",
 			"mtime": 1779211408000,
@@ -100293,7 +100353,7 @@
 			}
 		},
 		"10629": {
-			"id": "10629",
+			"id": 10629,
 			"model": "C81v51",
 			"file": "C81v51/10629-swilib_c81v51_vkp.vkp",
 			"mtime": 1718886492000,
@@ -102182,7 +102242,7 @@
 			}
 		},
 		"10839": {
-			"id": "10839",
+			"id": 10839,
 			"model": "S68v52",
 			"file": "S68v52/10839-swilib.vkp",
 			"mtime": 1717526596000,
@@ -102480,7 +102540,7 @@
 			}
 		},
 		"10395": {
-			"id": "10395",
+			"id": 10395,
 			"model": "CL61v128",
 			"file": "CL61v128/10395-swilib_cl61v00_db128.vkp",
 			"additionalFile": "CL61v128/10395-swilib_cl61v00_db128.zip",
