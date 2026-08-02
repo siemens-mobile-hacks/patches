@@ -74477,6 +74477,16 @@
 				"ru": "Картинки цифр для Больших цифровых часов (семисегментные) + исправления",
 				"en": "Digits pictures for big digital clock + fixes"
 			}
+		},
+		"11441": {
+			"id": 11441,
+			"model": "M55v91",
+			"file": "M55v91/11441-fix_lsk_on_idle.vkp",
+			"mtime": 1785697762000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"S55v20": {
