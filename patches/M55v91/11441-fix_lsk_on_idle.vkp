@@ -1,0 +1,14 @@
+;M55v91
+;Не менять левый софткей на ГЭ если нет сети
+;Don`t change the left softkey on IDLE if there is no network
+;(c) Feyman, FIL
+;Version: 
+;PatchID: 11441
+;Details: https://patches.kibab.com/patches/details.php5?id=11441
+/*
+Левый софт на ГЭ больше не будет менять своё значение в зависимости от состояния сетевого соединения, остальные функции сохранены.
+*/
+
+D5774: 3D1B 3D16
+;------------------------- end -------------------------
+
