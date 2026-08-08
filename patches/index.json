@@ -74497,6 +74497,16 @@
 				"ru": "Разблокировка всех функций без SIM",
 				"en": "Unlock all features without SIM"
 			}
+		},
+		"11443": {
+			"id": 11443,
+			"model": "M55v91",
+			"file": "M55v91/11443-CGSN_patch.vkp",
+			"mtime": 1786182028000,
+			"title": {
+				"ru": "AT+CGSN для дебаггера",
+				"en": "AT+CGSN for debugger"
+			}
 		}
 	},
 	"S55v20": {
