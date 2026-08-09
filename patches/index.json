@@ -74517,6 +74517,16 @@
 				"ru": "Работа телефона без SIM карты",
 				"en": "Work without SIM card"
 			}
+		},
+		"11445": {
+			"id": 11445,
+			"model": "M55v91",
+			"file": "M55v91/11445-enable_developer_menu_v2.vkp",
+			"mtime": 1786282118000,
+			"title": {
+				"ru": "Включение инженерного меню",
+				"en": "Enable developer menu"
+			}
 		}
 	},
 	"S55v20": {

@@ -1,0 +1,17 @@
+;M55v91
+;Включение инженерного меню
+;Enable developer menu
+;(c) FIL
+;(p) avkiev, Romir0o
+;Version: 2
+;PatchID: 11445
+;Details: https://patches.kibab.com/patches/details.php5?id=11445
+/*
+Теперь работает и без SIM карты.
+*/
+
+801772: DAA0A218 E6F40100
+A49552: E05CDA95 DA957EFE
+A49556: 60F8 E054
+;------------------------- end -------------------------
+
