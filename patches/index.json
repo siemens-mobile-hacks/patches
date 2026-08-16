@@ -96341,9 +96341,9 @@
 			"id": 10352,
 			"model": "E71v45",
 			"file": "E71v45/10352-Disable_NetAnimation_and_OwnGreetin.vkp",
-			"mtime": 1326376900000,
+			"mtime": 1786879146000,
 			"title": {
-				"ru": "Отключить анимацию поиска сети и свое приветствие",
+				"ru": "Отключить анимацию поиска сети и приветствие",
 				"en": "Disable NetAnimation or OwnGreeting"
 			}
 		},
