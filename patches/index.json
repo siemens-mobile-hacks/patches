@@ -74547,6 +74547,16 @@
 				"ru": "Отключить анимацию поиска сети и приветствие",
 				"en": "Disable NetAnimation and OwnGreeting"
 			}
+		},
+		"11449": {
+			"id": 11449,
+			"model": "M55v91",
+			"file": "M55v91/11449-speed_up_overlay_load_on_startup.vkp",
+			"mtime": 1786885486000,
+			"title": {
+				"ru": "Ускорить загрузку overlay info при старте телефона",
+				"en": "Speed up overlay info load on startup"
+			}
 		}
 	},
 	"S55v20": {
