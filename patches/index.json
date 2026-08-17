@@ -87892,6 +87892,16 @@
 				"ru": "Работа телефона без SIM карты",
 				"en": "Work without SIM card"
 			}
+		},
+		"11457": {
+			"id": 11457,
+			"model": "AX75v16",
+			"file": "AX75v16/11457-fix_lsk_on_idle.vkp",
+			"mtime": 1786987704000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"A52v9": {
