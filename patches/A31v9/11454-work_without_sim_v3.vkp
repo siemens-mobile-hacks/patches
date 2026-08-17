@@ -1,0 +1,25 @@
+;A31v9
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle, FIL, Azq2
+;(r) FIL, Azq2
+;(p) Romir0o
+;Version: 3
+;PatchID: 11454
+;Details: https://patches.kibab.com/patches/details.php5?id=11454
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+
+2DCD04: 88908880 E6FC4C3A
+2DCD08: E6FC5A9A E6FD5100
+2DCD0C: E6FD E09E
+2DCD0E: 2400E6FE DA8F1EDA
+2DCD12: AA9AE6FF E6FC4C3A
+2DCD16: 2400DA5B E6FD5100
+2DCD1A: E8E1 E08E
+2DCD1C: DA67122D DA8F46D4
+2DCD20: E6FE E004
+2DCD22: 5439 DB00
+;------------------------- end -------------------------
+
