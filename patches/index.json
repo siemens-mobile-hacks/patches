@@ -103803,6 +103803,16 @@
 				"ru": "Работа телефона без SIM карты",
 				"en": "Work without SIM card"
 			}
+		},
+		"11458": {
+			"id": 11458,
+			"model": "A31v9",
+			"file": "A31v9/11458-fix_lsk_on_idle.vkp",
+			"mtime": 1786987758000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"AX72v2": {
