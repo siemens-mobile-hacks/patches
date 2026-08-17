@@ -70927,16 +70927,6 @@
 				"ru": "Разблокировка клавиатуры, дважды нажмите #",
 				"en": "Unlock keyboard by double press #"
 			}
-		},
-		"11450": {
-			"id": 11450,
-			"model": "C55v24",
-			"file": "C55v24/11450-enable_developer_menu_v2.vkp",
-			"mtime": 1786886888000,
-			"title": {
-				"ru": "Включение инженерного меню",
-				"en": "Enable developer menu"
-			}
 		}
 	},
 	"M55v10": {
