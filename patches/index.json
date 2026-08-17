@@ -74528,16 +74528,6 @@
 				"en": "Enable developer menu"
 			}
 		},
-		"11448": {
-			"id": 11448,
-			"model": "M55v91",
-			"file": "M55v91/11448-disable_net_animation_own_greeting.vkp",
-			"mtime": 1786880610000,
-			"title": {
-				"ru": "Отключить анимацию поиска сети и приветствие",
-				"en": "Disable NetAnimation and OwnGreeting"
-			}
-		},
 		"11449": {
 			"id": 11449,
 			"model": "M55v91",
