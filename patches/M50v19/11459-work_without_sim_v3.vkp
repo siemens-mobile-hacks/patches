@@ -1,0 +1,25 @@
+;M50v19
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle, FIL, Azq2
+;(r) FIL, Azq2
+;(p) Romir0o
+;Version: 3
+;PatchID: 11459
+;Details: https://patches.kibab.com/patches/details.php5?id=11459
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+
+557F1E: 88908880 E6FC7403
+557F22: E6FC9658 E6FD4300
+557F26: E6FD E09E
+557F28: ED00E6FE DACAA2AB
+557F2C: 4659E6FF E6FC7403
+557F30: ED00DAF6 E6FD4300
+557F34: 4ECB E08E
+557F36: DAA77696 DACAF2A5
+557F3A: E6FE E004
+557F3C: 4032 DB00
+;------------------------- end -------------------------
+
