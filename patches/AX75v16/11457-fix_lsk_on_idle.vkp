@@ -1,0 +1,15 @@
+;AX75v16
+;Не менять левый софткей на ГЭ если нет сети
+;Don`t change the left softkey on IDLE if there is no network
+;(c) Feyman, FIL
+;(p) Romir0o
+;Version: 
+;PatchID: 11457
+;Details: https://patches.kibab.com/patches/details.php5?id=11457
+/*
+Левый софт на ГЭ больше не будет менять своё значение в зависимости от состояния сетевого соединения, остальные функции сохранены.
+*/
+
+2C783A: 3D1B 3D16
+;------------------------- end -------------------------
+
