@@ -74567,6 +74567,16 @@
 				"ru": "Ускорить загрузку overlay info при старте телефона",
 				"en": "Speed up overlay info load on startup"
 			}
+		},
+		"11460": {
+			"id": 11460,
+			"model": "M55v91",
+			"file": "M55v91/11460-show_hidden_files_in_ce_by_default.vkp",
+			"mtime": 1787174924000,
+			"title": {
+				"ru": "Показывать Скрытые Файлы в Card-Explorer'е по умолчанию",
+				"en": "Show Hidden Files In Card-Explorer By Default"
+			}
 		}
 	},
 	"S55v20": {
