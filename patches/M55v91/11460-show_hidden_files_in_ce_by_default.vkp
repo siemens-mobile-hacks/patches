@@ -1,0 +1,15 @@
+;M55v91
+;Показывать Скрытые Файлы в Card-Explorer'е по умолчанию
+;Show Hidden Files In Card-Explorer By Default
+;(c) FIL
+;Version: 
+;PatchID: 11460
+;Details: https://patches.kibab.com/patches/details.php5?id=11460
+/*
+
+*/
+
+164822: D42CCC02 E6F29300 ; 0x93 - bit flags
+15B8C0: 23 FF ; disable '#' hotkey
+;------------------------- end -------------------------
+
