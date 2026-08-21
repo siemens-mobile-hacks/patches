@@ -1,0 +1,14 @@
+;M55v91
+;Показ Расширений Файлов в Card-Explorer'е
+;Show File Extensions in Card-Explorer
+;(c) FIL
+;Version: 
+;PatchID: 11461
+;Details: https://patches.kibab.com/patches/details.php5?id=11461
+/*
+
+*/
+
+15C750: DABFBEA9 E6F40000
+;------------------------- end -------------------------
+
