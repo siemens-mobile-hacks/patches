@@ -87942,6 +87942,16 @@
 				"ru": "Добавить Card Explorer вместо скрытого пункта Дист.управления в Еще",
 				"en": "Add Card Explorer instead of the hidden Remove sync in More"
 			}
+		},
+		"11467": {
+			"id": 11467,
+			"model": "AX75v16",
+			"file": "AX75v16/11467-show_hidden_files_in_ce_by_default.vkp",
+			"mtime": 1787405612000,
+			"title": {
+				"ru": "Показывать Скрытые Файлы в Card-Explorer'е по умолчанию",
+				"en": "Show Hidden Files In Card-Explorer By Default"
+			}
 		}
 	},
 	"A52v9": {
