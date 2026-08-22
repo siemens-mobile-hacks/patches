@@ -87932,6 +87932,16 @@
 				"ru": "Не менять левый софткей на ГЭ если нет сети",
 				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
+		},
+		"11466": {
+			"id": 11466,
+			"model": "AX75v16",
+			"file": "AX75v16/11466-Add_Card_Explorer_to_Extras.vkp",
+			"mtime": 1787405516000,
+			"title": {
+				"ru": "Добавить Card Explorer вместо скрытого пункта Дист.управления в Еще",
+				"en": "Add Card Explorer instead of the hidden Remove sync in More"
+			}
 		}
 	},
 	"A52v9": {
