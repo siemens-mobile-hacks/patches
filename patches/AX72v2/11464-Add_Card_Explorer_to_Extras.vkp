@@ -1,0 +1,19 @@
+;AX72v2
+;Добавить Card Explorer вместо скрытого пункта Дист.управления в Еще
+;Add Card Explorer instead of the hidden Remove sync in More
+;(c) Romir0o
+;Version: 
+;PatchID: 11464
+;Details: https://patches.kibab.com/patches/details.php5?id=11464
+/*
+Своебразный закос под SGold :)
+Card Explorer все такой же урезанный, просто отображает больше папок в файловой системе
+*/
+
+25041C: 46012500 20012500
+250420: 20012500 AEF23C00
+25050A: E105E105 7B057605
+250516: 28 63
+25051C: 7B057605 A702A802
+;------------------------- end -------------------------
+
