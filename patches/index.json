@@ -76800,6 +76800,16 @@
 				"ru": "Замена значка блокировки",
 				"en": "Replacement of the mark of the blocking"
 			}
+		},
+		"11468": {
+			"id": 11468,
+			"model": "MC60v13",
+			"file": "MC60v13/11468-Menu_items.vkp",
+			"mtime": 1787768896000,
+			"title": {
+				"ru": "Правильный порядок пунктов в Native Menu",
+				"en": "The correct order of items in Native Menu"
+			}
 		}
 	},
 	"SL45iv56": {
