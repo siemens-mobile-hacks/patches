@@ -32811,5 +32811,20 @@
 	null,
 	[
 		"M55v91/11463-show_hidden_drives_in_card_explorer.vkp"
+	],
+	[
+		"AX72v2/11464-Add_Card_Explorer_to_Extras.vkp"
+	],
+	[
+		"AX72v2/11465-show_hidden_files_in_ce_by_default.vkp"
+	],
+	[
+		"AX75v16/11466-Add_Card_Explorer_to_Extras.vkp"
+	],
+	[
+		"AX75v16/11467-show_hidden_files_in_ce_by_default.vkp"
+	],
+	[
+		"MC60v13/11468-Menu_items.vkp"
 	]
 ]
