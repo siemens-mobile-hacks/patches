@@ -74597,6 +74597,16 @@
 				"ru": "Показывать скрытые диски в Card-Explorer",
 				"en": "Show hidden drives in Card-Explorer"
 			}
+		},
+		"11474": {
+			"id": 11474,
+			"model": "M55v91",
+			"file": "M55v91/11474-keypad_acceleration.vkp",
+			"mtime": 1787594334000,
+			"title": {
+				"ru": "Скорость автоповтора клавиатуры",
+				"en": "Keypad Acceleration"
+			}
 		}
 	},
 	"S55v20": {

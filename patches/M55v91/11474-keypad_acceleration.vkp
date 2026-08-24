@@ -1,0 +1,15 @@
+;M55v91
+;Скорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(p) FIL
+;Version: 
+;PatchID: 11474
+;Details: https://patches.kibab.com/patches/details.php5?id=11474
+/*
+
+*/
+
+7887C8: 56 20
+;------------------------- end -------------------------
+
