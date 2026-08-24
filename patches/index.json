@@ -74607,6 +74607,16 @@
 				"ru": "Скорость автоповтора клавиатуры",
 				"en": "Keypad Acceleration"
 			}
+		},
+		"11475": {
+			"id": 11475,
+			"model": "M55v91",
+			"file": "M55v91/11475-long_press_acceleration.vkp",
+			"mtime": 1787595540000,
+			"title": {
+				"ru": "Ускорение длинного нажатия",
+				"en": "Long Press Acceleration"
+			}
 		}
 	},
 	"S55v20": {
