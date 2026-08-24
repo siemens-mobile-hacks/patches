@@ -32863,5 +32863,9 @@
 	],
 	[
 		"C60v27/11469-CGSN_patch.vkp"
+	],
+	null,
+	[
+		"C60v27/11471-fix_lsk_on_idle.vkp"
 	]
 ]
