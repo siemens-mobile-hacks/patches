@@ -32864,7 +32864,9 @@
 	[
 		"C60v27/11469-CGSN_patch.vkp"
 	],
-	null,
+	[
+		"C60v27/11470-work_without_sim_v3.vkp"
+	],
 	[
 		"C60v27/11471-fix_lsk_on_idle.vkp"
 	],
