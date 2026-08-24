@@ -76301,6 +76301,16 @@
 				"ru": "Не менять левый софткей на ГЭ если нет сети",
 				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
+		},
+		"11472": {
+			"id": 11472,
+			"model": "C60v27",
+			"file": "C60v27/11472-OpenBFB.vkp",
+			"mtime": 1787567284000,
+			"title": {
+				"ru": "OpenBFB",
+				"en": "OpenBFB"
+			}
 		}
 	},
 	"C60v26": {
