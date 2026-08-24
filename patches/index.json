@@ -76321,6 +76321,16 @@
 				"ru": "OpenBFB",
 				"en": "OpenBFB"
 			}
+		},
+		"11473": {
+			"id": 11473,
+			"model": "C60v27",
+			"file": "C60v27/11473-enable_developer_menu_v2.vkp",
+			"mtime": 1787592762000,
+			"title": {
+				"ru": "Включение инженерного меню",
+				"en": "Enable developer menu"
+			}
 		}
 	},
 	"C60v26": {

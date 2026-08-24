@@ -1,0 +1,18 @@
+;C60v27
+;Включение инженерного меню
+;Enable developer menu
+;(c) FIL
+;(r) avkiev, Romir0o
+;Version: 2
+;PatchID: 11473
+;Details: https://patches.kibab.com/patches/details.php5?id=11473
+/*
+Теперь работает и без SIM карты. Блок EEPROM не нужен!
+*/
+
+63D980: DA83C6DA E6F40100
+952FE2: E05CDA6E DA6EAE32
+952FE6: D62C E054
+
+;------------------------- end -------------------------
+
