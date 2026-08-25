@@ -1,0 +1,16 @@
+;C60v27
+;Не менять левый софткей на ГЭ если нет сети
+;Don`t change the left softkey on IDLE if there is no network
+;(c) Feyman, FIL
+;(p) Azq2
+;Version: 
+;PatchID: 11471
+;Details: https://patches.kibab.com/patches/details.php5?id=11471
+/*
+Левый софт на ГЭ больше не будет менять своё значение в зависимости от состояния сетевого соединения, остальные функции сохранены.
+*/
+
+2BA4D0: 3D0C 3D07
+
+;------------------------- end -------------------------
+

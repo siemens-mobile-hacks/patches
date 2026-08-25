@@ -2,22 +2,24 @@
 ;Работа телефона без SIM карты
 ;Work without SIM card
 ;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle, FIL, Azq2
-;Version: 3
+;Version: 3.0.1
 ;PatchID: 11444
 ;Details: https://patches.kibab.com/patches/details.php5?id=11444
 /*
 Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
 */
 
-EB518: 88908880 E6FC301B
-EB51C: E6FC0E3D E6FD1100
-EB520: E6FD E09E 
-EB522: 2500E6FE DAA05667
-EB526: 7C3DE6FF E6FC301B
-EB52A: 2500DA99 E6FD1100
-EB52E: 44CF E08E
-EB530: F084F095 DAA08061
-EB534: F0C8 E004
-EB536: F0D9 DB00
+EB51C: E6FC0E3D E6FC301B
+EB520: E6FD2500 E6FD1100
+EB524: E6FE E09E
+EB526: 7C3DE6FF DAA05667
+EB52A: 2500DA99 E6FC301B
+EB52E: 44CFF084 E6FD1100
+EB532: F095 E08E
+EB534: F0C8F0D9 DAA08061
+EB538: E6FE 9880
+EB53A: 3E18 9890
+EB53C: E6FF E004
+EB53E: 6101 DB00
 ;------------------------- end -------------------------
 

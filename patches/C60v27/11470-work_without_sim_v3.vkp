@@ -1,0 +1,26 @@
+;C60v27
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle, FIL, Azq2
+;(p) Azq2
+;Version: 3.0.1
+;PatchID: 11470
+;Details: https://patches.kibab.com/patches/details.php5?id=11470
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+
+2C9152: E6FC907D E6FC9237
+2C9156: E6FD4400 E6FD8C00
+2C915A: E6FE E09E
+2C915C: DE7DE6FF DA012EC8
+2C9160: 4400DA76 E6FC9237
+2C9164: CE62DAB5 E6FD8C00
+2C9168: 58BF E08E
+2C916A: E6FEB23E DA0158C2
+2C916E: E6FF 9880
+2C9170: 3101 9890
+2C9172: DA76 E004
+2C9174: AA68 DB00
+;------------------------- end -------------------------
+

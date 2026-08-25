@@ -4662,7 +4662,7 @@
 			}
 		},
 		"10076": {
-			"id": "10076",
+			"id": 10076,
 			"model": "EL71v45",
 			"file": "EL71v45/10076-library.vkp",
 			"mtime": 1292840336000,
@@ -10305,7 +10305,7 @@
 			}
 		},
 		"5624": {
-			"id": "5624",
+			"id": 5624,
 			"model": "S75v47",
 			"file": "S75v47/5624-S75sw47_Functions_Library_120812.vkp",
 			"additionalFile": "S75v47/5624-Functions_library_100410.zip",
@@ -15183,7 +15183,7 @@
 			}
 		},
 		"8285": {
-			"id": "8285",
+			"id": 8285,
 			"model": "S75v52",
 			"file": "S75v52/8285-swilib_v300426.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
@@ -22017,7 +22017,7 @@
 			}
 		},
 		"10522": {
-			"id": "10522",
+			"id": 10522,
 			"model": "SL75v47",
 			"file": "SL75v47/10522-Function_Library120603.vkp",
 			"additionalFile": "SL75v47/10522-Function_Library120603.rar",
@@ -22330,7 +22330,7 @@
 			}
 		},
 		"7634": {
-			"id": "7634",
+			"id": 7634,
 			"model": "SL75v52",
 			"file": "SL75v52/7634-Functions_library.vkp",
 			"mtime": 1200294382000,
@@ -25793,7 +25793,7 @@
 			}
 		},
 		"10542": {
-			"id": "10542",
+			"id": 10542,
 			"model": "CF75v23",
 			"file": "CF75v23/10542-swilib_v071025.vkp",
 			"mtime": 1759860710000,
@@ -30090,7 +30090,7 @@
 			}
 		},
 		"6285": {
-			"id": "6285",
+			"id": 6285,
 			"model": "CX75v13",
 			"file": "CX75v13/6285-swilib.vkp",
 			"additionalFile": "CX75v13/6285-swilib.zip",
@@ -32892,7 +32892,7 @@
 			}
 		},
 		"4736": {
-			"id": "4736",
+			"id": 4736,
 			"model": "CX75v25",
 			"file": "CX75v25/4736-fl_swi.vkp",
 			"additionalFile": "CX75v25/4736-fl_swi.rar",
@@ -40458,7 +40458,7 @@
 			}
 		},
 		"4673": {
-			"id": "4673",
+			"id": 4673,
 			"model": "M75v25",
 			"file": "M75v25/4673-BigFunctionLibrary.vkp",
 			"mtime": 1176023636000,
@@ -45332,7 +45332,7 @@
 			}
 		},
 		"10518": {
-			"id": "10518",
+			"id": 10518,
 			"model": "C75v22",
 			"file": "C75v22/10518-swilib_c75_22_120628.vkp",
 			"mtime": 1340924442000,
@@ -47002,7 +47002,7 @@
 			}
 		},
 		"10516": {
-			"id": "10516",
+			"id": 10516,
 			"model": "C75v24",
 			"file": "C75v24/10516-swilib_v280612.vkp",
 			"mtime": 1340923204000,
@@ -56709,7 +56709,7 @@
 			}
 		},
 		"7545": {
-			"id": "7545",
+			"id": 7545,
 			"model": "S65v58",
 			"file": "S65v58/7545-Library.vkp",
 			"mtime": 1179819080000,
@@ -57981,7 +57981,7 @@
 			}
 		},
 		"10897": {
-			"id": "10897",
+			"id": 10897,
 			"model": "S65v58",
 			"file": "S65v58/10897-swilib_v270825.vkp",
 			"mtime": 1756311696000,
@@ -61585,7 +61585,7 @@
 			}
 		},
 		"10131": {
-			"id": "10131",
+			"id": 10131,
 			"model": "SL65v53",
 			"file": "SL65v53/10131-swilib_16_01_2011.vkp",
 			"mtime": 1299855222000,
@@ -63308,7 +63308,7 @@
 			}
 		},
 		"7546": {
-			"id": "7546",
+			"id": 7546,
 			"model": "SK65v50",
 			"file": "SK65v50/7546-library.vkp",
 			"additionalFile": "SK65v50/7546-library.zip",
@@ -69380,7 +69380,7 @@
 			}
 		},
 		"10625": {
-			"id": "10625",
+			"id": 10625,
 			"model": "CX70v56",
 			"file": "CX70v56/10625-swilib_v181125.vkp",
 			"mtime": 1763412890000,
@@ -74491,8 +74491,8 @@
 		"11444": {
 			"id": 11444,
 			"model": "M55v91",
-			"file": "M55v91/11444-work_without_sim_v3.vkp",
-			"mtime": 1786213596000,
+			"file": "M55v91/11444-work_without_sim_v3_0_1.vkp",
+			"mtime": 1787590774000,
 			"title": {
 				"ru": "Работа телефона без SIM карты",
 				"en": "Work without SIM card"
@@ -74556,6 +74556,26 @@
 			"title": {
 				"ru": "Показывать скрытые диски в Card-Explorer",
 				"en": "Show hidden drives in Card-Explorer"
+			}
+		},
+		"11474": {
+			"id": 11474,
+			"model": "M55v91",
+			"file": "M55v91/11474-keypad_acceleration.vkp",
+			"mtime": 1787594334000,
+			"title": {
+				"ru": "Скорость автоповтора клавиатуры",
+				"en": "Keypad Acceleration"
+			}
+		},
+		"11475": {
+			"id": 11475,
+			"model": "M55v91",
+			"file": "M55v91/11475-long_press_acceleration.vkp",
+			"mtime": 1787595540000,
+			"title": {
+				"ru": "Ускорение длинного нажатия",
+				"en": "Long Press Acceleration"
 			}
 		}
 	},
@@ -76240,6 +76260,56 @@
 			"title": {
 				"ru": "Графика для патча \"Заряд в процентах,температура и уровень в Дб\"",
 				"en": "Pictures for patch \"Charge in the percentages, temperature and the level in dB\""
+			}
+		},
+		"11469": {
+			"id": 11469,
+			"model": "C60v27",
+			"file": "C60v27/11469-CGSN_patch.vkp",
+			"mtime": 1787562444000,
+			"title": {
+				"ru": "AT+CGSN для дебаггера",
+				"en": "AT+CGSN for debugger"
+			}
+		},
+		"11470": {
+			"id": 11470,
+			"model": "C60v27",
+			"file": "C60v27/11470-work_without_sim_v3.vkp",
+			"mtime": 1787590232000,
+			"title": {
+				"ru": "Работа телефона без SIM карты",
+				"en": "Work without SIM card"
+			}
+		},
+		"11471": {
+			"id": 11471,
+			"model": "C60v27",
+			"file": "C60v27/11471-fix_lsk_on_idle.vkp",
+			"mtime": 1787566610000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
+		},
+		"11472": {
+			"id": 11472,
+			"model": "C60v27",
+			"file": "C60v27/11472-OpenBFB.vkp",
+			"mtime": 1787567284000,
+			"title": {
+				"ru": "OpenBFB",
+				"en": "OpenBFB"
+			}
+		},
+		"11473": {
+			"id": 11473,
+			"model": "C60v27",
+			"file": "C60v27/11473-enable_developer_menu_v2.vkp",
+			"mtime": 1787592762000,
+			"title": {
+				"ru": "Включение инженерного меню",
+				"en": "Enable developer menu"
 			}
 		}
 	},
@@ -89190,7 +89260,7 @@
 			}
 		},
 		"6954": {
-			"id": "6954",
+			"id": 6954,
 			"model": "C72v22",
 			"file": "C72v22/6954-swilib_v101125.vkp",
 			"mtime": 1762721718000,
@@ -95492,7 +95562,7 @@
 			}
 		},
 		"10075": {
-			"id": "10075",
+			"id": 10075,
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib_v190526.vkp",
 			"mtime": 1779211408000,
@@ -100522,7 +100592,7 @@
 			}
 		},
 		"10629": {
-			"id": "10629",
+			"id": 10629,
 			"model": "C81v51",
 			"file": "C81v51/10629-swilib_c81v51_vkp.vkp",
 			"mtime": 1718886492000,
@@ -102421,7 +102491,7 @@
 			}
 		},
 		"10839": {
-			"id": "10839",
+			"id": 10839,
 			"model": "S68v52",
 			"file": "S68v52/10839-swilib.vkp",
 			"mtime": 1717526596000,
@@ -102719,7 +102789,7 @@
 			}
 		},
 		"10395": {
-			"id": "10395",
+			"id": 10395,
 			"model": "CL61v128",
 			"file": "CL61v128/10395-swilib_cl61v00_db128.vkp",
 			"additionalFile": "CL61v128/10395-swilib_cl61v00_db128.zip",
@@ -103768,7 +103838,7 @@
 			"id": 11452,
 			"model": "AX72v2",
 			"file": "AX72v2/11452-work_without_sim_v3.vkp",
-			"mtime": 1786981010000,
+			"mtime": 1787592474000,
 			"title": {
 				"ru": "Работа телефона без SIM карты",
 				"en": "Work without SIM card"
