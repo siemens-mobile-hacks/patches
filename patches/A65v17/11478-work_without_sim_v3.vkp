@@ -1,0 +1,27 @@
+;A65v17
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle, FIL, Azq2
+;(r) FIL, Azq2, MAXIM
+;(p) Romir0o
+;Version: 3.0.1
+;PatchID: 11478
+;Details: https://patches.kibab.com/patches/details.php5?id=11478
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+
+2C97C0: E6FC6C7E E6FC9237
+2C97C4: E6FD4400 E6FD8C00
+2C97C8: E6FE E09E
+2C97CA: BA7EE6FF DA8F70D0
+2C97CE: 4400DA76 E6FC9237
+2C97D2: 1266DAB7 E6FD8C00
+2C97D6: 1A0A E08E
+2C97D8: E6FE2005 DA8F6CCA
+2C97DC: E6FF 9880
+2C97DE: 3201 9890
+2C97E0: DA76 E004
+2C97E2: EE6B DB00
+;------------------------- end -------------------------
+
