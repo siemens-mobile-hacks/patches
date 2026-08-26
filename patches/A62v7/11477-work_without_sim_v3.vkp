@@ -1,0 +1,28 @@
+;A62v7
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle, FIL, Azq2
+;(r) FIL, Azq2, MAXIM
+;(p) Romir0o
+;Version: 3.0.1
+;PatchID: 11477
+;Details: https://patches.kibab.com/patches/details.php5?id=11477
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+
++600000
+D8FA0: E6FC5A61 E6FCDE2D
+D8FA4: E6FD8500 E6FD0D00
+D8FA8: E6FE E09E
+D8FAA: A861E6FF DA8F94D4
+D8FAE: 8500DAAA E6FCDE2D
+D8FB2: 429FDAC8 E6FD0D00
+D8FB6: 8E9B E08E
+D8FB8: E6FE003D DA8FBECE
+D8FBC: E6FF 9880
+D8FBE: 3502 9890
+D8FC0: DAAA E004
+D8FC2: 1EA5 DB00
+;------------------------- end -------------------------
+

@@ -101258,6 +101258,16 @@
 				"ru": "Графика от Win XP",
 				"en": "Siemens XP editon"
 			}
+		},
+		"11477": {
+			"id": 11477,
+			"model": "A62v7",
+			"file": "A62v7/11477-work_without_sim_v3.vkp",
+			"mtime": 1787768340000,
+			"title": {
+				"ru": "Работа телефона без SIM карты",
+				"en": "Work without SIM card"
+			}
 		}
 	},
 	"A70v34": {
