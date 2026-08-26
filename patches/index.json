@@ -74617,6 +74617,16 @@
 				"ru": "Ускорение длинного нажатия",
 				"en": "Long Press Acceleration"
 			}
+		},
+		"11476": {
+			"id": 11476,
+			"model": "M55v91",
+			"file": "M55v91/11476-disable_wait_in_card_explorer.vkp",
+			"mtime": 1787758096000,
+			"title": {
+				"ru": "Отключить 'Пожалуйста, подождите' в Card-Explorer",
+				"en": "Disable 'Please wait' in Card-Explorer"
+			}
 		}
 	},
 	"S55v20": {
