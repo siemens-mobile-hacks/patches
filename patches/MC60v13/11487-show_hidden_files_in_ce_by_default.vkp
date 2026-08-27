@@ -1,0 +1,18 @@
+;MC60v13
+;Показывать Скрытые Файлы в Card-Explorer'е по умолчанию
+;Show Hidden Files In Card-Explorer By Default
+;(c) FIL
+;(r) MAXIM
+;(p) Azq2
+;Version: 
+;PatchID: 11487
+;Details: https://patches.kibab.com/patches/details.php5?id=11487
+/*
+
+*/
+
+166B8A: D42CCC02 E6F29300
+15D6F0: 23 FF
+
+;------------------------- end -------------------------
+

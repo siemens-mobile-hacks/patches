@@ -32914,5 +32914,8 @@
 	],
 	[
 		"MC60v13/11486-show_file_extensions_in_ce.vkp"
+	],
+	[
+		"MC60v13/11487-show_hidden_files_in_ce_by_default.vkp"
 	]
 ]

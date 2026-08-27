@@ -76959,6 +76959,16 @@
 				"ru": "Показ Расширений Файлов в Card-Explorer'е",
 				"en": "Show File Extensions in Card-Explorer"
 			}
+		},
+		"11487": {
+			"id": 11487,
+			"model": "MC60v13",
+			"file": "MC60v13/11487-show_hidden_files_in_ce_by_default.vkp",
+			"mtime": 1787820566000,
+			"title": {
+				"ru": "Показывать Скрытые Файлы в Card-Explorer'е по умолчанию",
+				"en": "Show Hidden Files In Card-Explorer By Default"
+			}
 		}
 	},
 	"SL45iv56": {
