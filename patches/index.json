@@ -76949,6 +76949,16 @@
 				"ru": "Ускорение длинного нажатия",
 				"en": "Long Press Acceleration"
 			}
+		},
+		"11486": {
+			"id": 11486,
+			"model": "MC60v13",
+			"file": "MC60v13/11486-show_file_extensions_in_ce.vkp",
+			"mtime": 1787820428000,
+			"title": {
+				"ru": "Показ Расширений Файлов в Card-Explorer'е",
+				"en": "Show File Extensions in Card-Explorer"
+			}
 		}
 	},
 	"SL45iv56": {
