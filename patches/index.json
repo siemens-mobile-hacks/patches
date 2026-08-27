@@ -76900,6 +76900,16 @@
 				"en": "OpenBFB"
 			}
 		},
+		"11481": {
+			"id": 11481,
+			"model": "MC60v13",
+			"file": "MC60v13/11481-work_without_sim_v3_0_1.vkp",
+			"mtime": 1787820250000,
+			"title": {
+				"ru": "Работа телефона без SIM карты",
+				"en": "Work without SIM card"
+			}
+		},
 		"11483": {
 			"id": 11483,
 			"model": "MC60v13",
