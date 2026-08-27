@@ -1,0 +1,20 @@
+;M55v91
+;Отключить 'Пожалуйста, подождите' в Card-Explorer
+;Disable 'Please wait' in Card-Explorer
+;(c) FIL
+;Version: 
+;PatchID: 11476
+;Details: https://patches.kibab.com/patches/details.php5?id=11476
+/*
+
+*/
+
+; on opening
+164ECA: DA9940BB E6F40000
+165064: DA9940BB E6F40000
+; on directory navigation
+166550: DA9940BB E6F40000
+165B7E: DA9940BB E6F40000
+15D9B8: DA9940BB E6F40000
+;------------------------- end -------------------------
+
