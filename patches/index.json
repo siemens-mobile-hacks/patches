@@ -76890,6 +76890,16 @@
 				"en": "Disable Aircraft Check"
 			}
 		},
+		"11480": {
+			"id": 11480,
+			"model": "MC60v13",
+			"file": "MC60v13/11480-OpenBFB.vkp",
+			"mtime": 1787820242000,
+			"title": {
+				"ru": "OpenBFB",
+				"en": "OpenBFB"
+			}
+		},
 		"11483": {
 			"id": 11483,
 			"model": "MC60v13",
