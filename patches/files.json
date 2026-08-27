@@ -32900,7 +32900,9 @@
 	[
 		"MC60v13/11481-work_without_sim_v3_0_1.vkp"
 	],
-	null,
+	[
+		"MC60v13/11482-disable_net_animation_own_greeting.vkp"
+	],
 	[
 		"MC60v13/11483-fix_lsk_on_idle.vkp"
 	]

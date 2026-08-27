@@ -76910,6 +76910,16 @@
 				"en": "Work without SIM card"
 			}
 		},
+		"11482": {
+			"id": 11482,
+			"model": "MC60v13",
+			"file": "MC60v13/11482-disable_net_animation_own_greeting.vkp",
+			"mtime": 1787820256000,
+			"title": {
+				"ru": "Отключить анимацию поиска сети и приветствие",
+				"en": "Disable NetAnimation and OwnGreeting"
+			}
+		},
 		"11483": {
 			"id": 11483,
 			"model": "MC60v13",
