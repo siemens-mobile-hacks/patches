@@ -1,4 +1,20 @@
 ### Patches with errors
+[A62v7/11477-work_without_sim_v3.vkp](https://patches.kibab.com/patches/details.php5?id=11477)
+
+Warning: Uncanceled offset +600000 at line 14 col 1
+Please put "+0" at the end of the patch.
+```
+  11 | Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+  12 | */
+  13 | 
+> 14 | +600000
+     | ^
+  15 | D8FA0: E6FC5A61 E6FCDE2D
+  16 | D8FA4: E6FD8500 E6FD0D00
+  17 | D8FA8: E6FE E09E
+
+```
+
 [CF75v23/11114-dont_display_cenral_nav_key_icon_v2.vkp](https://patches.kibab.com/patches/details.php5?id=11114)
 
 Error: Syntax error at line 16 col 1
