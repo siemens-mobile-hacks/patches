@@ -76880,6 +76880,16 @@
 				"en": "The correct order of items in Native Menu"
 			}
 		},
+		"11479": {
+			"id": 11479,
+			"model": "MC60v13",
+			"file": "MC60v13/11479-Disable_Aircraft_Check.vkp",
+			"mtime": 1787820236000,
+			"title": {
+				"ru": "Убрать подтверждение самолёта",
+				"en": "Disable Aircraft Check"
+			}
+		},
 		"11483": {
 			"id": 11483,
 			"model": "MC60v13",

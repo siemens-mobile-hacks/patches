@@ -32891,7 +32891,9 @@
 	[
 		"A65v17/11478-work_without_sim_v3.vkp"
 	],
-	null,
+	[
+		"MC60v13/11479-Disable_Aircraft_Check.vkp"
+	],
 	null,
 	null,
 	null,
