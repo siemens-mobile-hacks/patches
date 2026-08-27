@@ -76969,6 +76969,16 @@
 				"ru": "Показывать Скрытые Файлы в Card-Explorer'е по умолчанию",
 				"en": "Show Hidden Files In Card-Explorer By Default"
 			}
+		},
+		"11488": {
+			"id": 11488,
+			"model": "MC60v13",
+			"file": "MC60v13/11488-speed_up_overlay_load_on_startup.vkp",
+			"mtime": 1787820686000,
+			"title": {
+				"ru": "Ускорить загрузку overlay info при старте телефона",
+				"en": "Speed up overlay info load on startup"
+			}
 		}
 	},
 	"SL45iv56": {

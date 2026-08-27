@@ -1,0 +1,17 @@
+;MC60v13
+;Ускорить загрузку overlay info при старте телефона
+;Speed up overlay info load on startup
+;(c) FIL
+;(r) MAXIM
+;(p) Azq2
+;Version: 
+;PatchID: 11488
+;Details: https://patches.kibab.com/patches/details.php5?id=11488
+/*
+Ускоряет загрузку overlay info при старте телефона.
+*/
+
+0ECFBC: B036 A000
+
+;------------------------- end -------------------------
+

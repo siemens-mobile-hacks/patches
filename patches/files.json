@@ -32917,5 +32917,8 @@
 	],
 	[
 		"MC60v13/11487-show_hidden_files_in_ce_by_default.vkp"
+	],
+	[
+		"MC60v13/11488-speed_up_overlay_load_on_startup.vkp"
 	]
 ]
