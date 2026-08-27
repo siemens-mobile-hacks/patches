@@ -76879,6 +76879,16 @@
 				"ru": "Правильный порядок пунктов в Native Menu",
 				"en": "The correct order of items in Native Menu"
 			}
+		},
+		"11483": {
+			"id": 11483,
+			"model": "MC60v13",
+			"file": "MC60v13/11483-fix_lsk_on_idle.vkp",
+			"mtime": 1787820220000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"SL45iv56": {
