@@ -1,0 +1,17 @@
+;MC60v13
+;Скорость автоповтора клавиатуры
+;Keypad Acceleration
+;(c) SiNgle
+;(r) MAXIM
+;(p) FIL, Azq2
+;Version: 
+;PatchID: 11484
+;Details: https://patches.kibab.com/patches/details.php5?id=11484
+/*
+
+*/
+
+74F074: 56 20
+
+;------------------------- end -------------------------
+

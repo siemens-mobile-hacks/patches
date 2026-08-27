@@ -76929,6 +76929,16 @@
 				"ru": "Не менять левый софткей на ГЭ если нет сети",
 				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
+		},
+		"11484": {
+			"id": 11484,
+			"model": "MC60v13",
+			"file": "MC60v13/11484-keypad_acceleration.vkp",
+			"mtime": 1787820338000,
+			"title": {
+				"ru": "Скорость автоповтора клавиатуры",
+				"en": "Keypad Acceleration"
+			}
 		}
 	},
 	"SL45iv56": {

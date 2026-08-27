@@ -32905,5 +32905,8 @@
 	],
 	[
 		"MC60v13/11483-fix_lsk_on_idle.vkp"
+	],
+	[
+		"MC60v13/11484-keypad_acceleration.vkp"
 	]
 ]
