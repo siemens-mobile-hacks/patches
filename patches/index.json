@@ -76939,6 +76939,16 @@
 				"ru": "Скорость автоповтора клавиатуры",
 				"en": "Keypad Acceleration"
 			}
+		},
+		"11485": {
+			"id": 11485,
+			"model": "MC60v13",
+			"file": "MC60v13/11485-long_press_acceleration.vkp",
+			"mtime": 1787820380000,
+			"title": {
+				"ru": "Ускорение длинного нажатия",
+				"en": "Long Press Acceleration"
+			}
 		}
 	},
 	"SL45iv56": {
