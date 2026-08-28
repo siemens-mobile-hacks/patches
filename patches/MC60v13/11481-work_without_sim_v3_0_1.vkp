@@ -1,0 +1,28 @@
+;MC60v13
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle, FIL, Azq2
+;(r) MAXIM
+;(p) Azq2
+;Version: 3.0.1
+;PatchID: 11481
+;Details: https://patches.kibab.com/patches/details.php5?id=11481
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+
+EA804: E6FC486D E6FC4C3A
+EA808: E6FD2500 E6FD4D00
+EA80C: E6FE E09E
+EA80E: B66DE6FF DA9D045E
+EA812: 2500DA96 E6FC4C3A
+EA816: 9080F084 E6FD4D00
+EA81A: F095 E08E
+EA81C: F0C8F0D9 DA9D2E58
+EA820: E6FE 9880
+EA822: A216 9890
+EA824: E6FF E004
+EA826: 5D01 DB00
+
+;------------------------- end -------------------------
+

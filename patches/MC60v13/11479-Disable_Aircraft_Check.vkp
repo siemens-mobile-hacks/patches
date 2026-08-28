@@ -1,0 +1,17 @@
+;MC60v13
+;Убрать подтверждение самолёта
+;Disable Aircraft Check
+;(c) ACiD[mrp]
+;(r) MAXIM
+;(p) Azq2
+;Version: 
+;PatchID: 11479
+;Details: https://patches.kibab.com/patches/details.php5?id=11479
+/*
+
+*/
+
+0EA358: 3D 0D
+
+;------------------------- end -------------------------
+

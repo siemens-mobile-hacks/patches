@@ -1,0 +1,17 @@
+;MC60v13
+;Показ Расширений Файлов в Card-Explorer'е
+;Show File Extensions in Card-Explorer
+;(c) FIL
+;(r) MAXIM
+;(p) Azq2
+;Version: 
+;PatchID: 11486
+;Details: https://patches.kibab.com/patches/details.php5?id=11486
+/*
+
+*/
+
+15DED2: DABFD0A9 E004E005
+
+;------------------------- end -------------------------
+

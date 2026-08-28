@@ -1,0 +1,17 @@
+;MC60v13
+;Ускорение длинного нажатия
+;Long Press Acceleration
+;(c) 1nvisible
+;(r) MAXIM
+;(p) FIL, Azq2
+;Version: 
+;PatchID: 11485
+;Details: https://patches.kibab.com/patches/details.php5?id=11485
+/*
+
+*/
+
+74EEE8: 82 41
+
+;------------------------- end -------------------------
+
