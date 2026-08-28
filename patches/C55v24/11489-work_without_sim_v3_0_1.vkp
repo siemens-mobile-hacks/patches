@@ -1,0 +1,25 @@
+;C55v24
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle, FIL, Azq2
+;Version: 3.0.1
+;PatchID: 11489
+;Details: https://patches.kibab.com/patches/details.php5?id=11489
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+
+5223A8: E6FCF48D E6FCF41F
+5223AC: E6FDCA00 E6FD0A00
+5223B0: E6FE E09E
+5223B2: AE8EE6FF DA927017
+5223B6: CA00DAD6 E6FCF41F
+5223BA: 4277F084 E6FD0A00
+5223BE: F095 E08E
+5223C0: F0C8F0D9 DA929A11
+5223C4: E6FE 9880
+5223C6: 720B 9890
+5223C8: E6FF E004
+5223CA: 4803 DB00
+;------------------------- end -------------------------
+
