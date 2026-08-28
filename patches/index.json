@@ -74591,8 +74591,8 @@
 		"11463": {
 			"id": 11463,
 			"model": "M55v91",
-			"file": "M55v91/11463-show_hidden_drives_in_card_explorer.vkp",
-			"mtime": 1787343974000,
+			"file": "M55v91/11463-show_hidden_drives_in_ce_v1_1.vkp",
+			"mtime": 1787931098000,
 			"title": {
 				"ru": "Показывать скрытые диски в Card-Explorer",
 				"en": "Show hidden drives in Card-Explorer"
