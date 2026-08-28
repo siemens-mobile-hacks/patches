@@ -70888,16 +70888,6 @@
 				"en": "Unlock keyboard by double press #"
 			}
 		},
-		"11447": {
-			"id": 11447,
-			"model": "C55v24",
-			"file": "C55v24/11447-work_without_sim_v3.vkp",
-			"mtime": 1786857038000,
-			"title": {
-				"ru": "Работа телефона без SIM карты",
-				"en": "Work without SIM card"
-			}
-		},
 		"11450": {
 			"id": 11450,
 			"model": "C55v24",
