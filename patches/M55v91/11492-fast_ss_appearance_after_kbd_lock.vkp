@@ -1,0 +1,18 @@
+;M55v91
+;Моментальный запуск скринсейвера после блокировки клавиатуры
+;Fast ScreenSaver appearance after keyboard lock
+;(c) Evgr, funMarkus, FIL
+;(r) Azq2
+;Version: 2
+;PatchID: 11492
+;Details: https://patches.kibab.com/patches/details.php5?id=11492
+/*
+
+*/
+
+-200000
+2D2D1C: DA2D0A99 DA2EFA74
+-0
+
+;------------------------- end -------------------------
+

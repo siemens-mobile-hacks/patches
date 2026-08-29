@@ -74637,6 +74637,16 @@
 				"ru": "Всегда отображать имя оператора",
 				"en": "Always show provider name"
 			}
+		},
+		"11492": {
+			"id": 11492,
+			"model": "M55v91",
+			"file": "M55v91/11492-fast_ss_appearance_after_kbd_lock.vkp",
+			"mtime": 1787995092000,
+			"title": {
+				"ru": "Моментальный запуск скринсейвера после блокировки клавиатуры",
+				"en": "Fast ScreenSaver appearance after keyboard lock"
+			}
 		}
 	},
 	"S55v20": {
