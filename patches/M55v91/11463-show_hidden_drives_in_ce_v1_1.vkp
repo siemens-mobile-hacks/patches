@@ -1,0 +1,50 @@
+;M55v91
+;Показывать скрытые диски в Card-Explorer
+;Show hidden drives in Card-Explorer
+;(c) FIL
+;Version: 1.1
+;PatchID: 11463
+;Details: https://patches.kibab.com/patches/details.php5?id=11463
+/*
+
+*/
+
+-200000
+; Show full path in header
+364BEE: 27 25
+364BE0: 2842 CC00
+; Fix initial directory path
+3638D2: E036 0D04
+3638DC: 9733 F0C8
+3638DE: E6FF F0D9
+3638E0: 6201 08C1
+3638E2: DABF DC4D
+3638E4: 5CA8 A9CC
+3638E6: 08024840 47FC3A00
+; Card-Explorer -> Filesystem
+259FF0: DA25240E E6F40100 ; Native Menu
+2D3B0A: DA25240E E6F40100 ; Hotkey
+2DFDE6: DA25240E E6F40100 ; My menu
+564814: 3E0B B103
+; Set filesystem items to 2
+25036F: 95 25
+564802: 09 02
+; Set 1st filesystem item to disk "A"
+2502C0: DA25EA00 DA257001
+56481B: 54 00
+564714: A03D7E01 FA3D7E01 ; change icon
+564718: FC07 3E0B
+56471A: FD07 3E0B
+; Set 2nd filesystem item to disk "B"
+2502D0: DA250401 DA257E01
+564827: 413A5C56 423A5C00
+564726: A03D7E01 FA3D7E01 ; change icon
+56472A: 400B 480B
+56472C: 3F0B 480B
+; Fix exit in disks root
+363943: 19 09
+36595C: DABF66A9 DABF1AA8
+365965: 40 43
+-0
+;------------------------- end -------------------------
+
