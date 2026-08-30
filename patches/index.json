@@ -70947,6 +70947,16 @@
 				"ru": "Работа телефона без SIM карты",
 				"en": "Work without SIM card"
 			}
+		},
+		"11496": {
+			"id": 11496,
+			"model": "C55v24",
+			"file": "C55v24/11496-fix_lsk_on_idle.vkp",
+			"mtime": 1788097478000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"M55v10": {
