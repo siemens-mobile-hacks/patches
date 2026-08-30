@@ -32884,5 +32884,12 @@
 	],
 	[
 		"C55v24/11489-work_without_sim_v3_0_1.vkp"
+	],
+	null,
+	[
+		"M55v91/11491-always_show_provider_name.vkp"
+	],
+	[
+		"M55v91/11492-fast_ss_appearance_after_kbd_lock.vkp"
 	]
 ]
