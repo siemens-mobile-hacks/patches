@@ -1,0 +1,17 @@
+;M55v91
+;Плавное включение подсветки
+;Smooth illumination turn-on
+;(c) SiNgle
+;(p) FIL
+;Version: 
+;PatchID: 11497
+;Details: https://patches.kibab.com/patches/details.php5?id=11497
+/*
+
+*/
+
+-200000
+A0D631: 0E FE
+-0
+;------------------------- end -------------------------
+

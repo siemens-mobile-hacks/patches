@@ -74677,6 +74677,16 @@
 				"ru": "Включить телефон при оффлайн зарядке",
 				"en": "Turn phone ON while offline charging"
 			}
+		},
+		"11497": {
+			"id": 11497,
+			"model": "M55v91",
+			"file": "M55v91/11497-smooth_illumination_turn_on.vkp",
+			"mtime": 1788102532000,
+			"title": {
+				"ru": "Плавное включение подсветки",
+				"en": "Smooth illumination turn-on"
+			}
 		}
 	},
 	"S55v20": {
