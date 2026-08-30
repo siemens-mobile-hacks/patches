@@ -101550,6 +101550,16 @@
 				"ru": "Работа телефона без SIM карты",
 				"en": "Work without SIM card"
 			}
+		},
+		"11495": {
+			"id": 11495,
+			"model": "A70v34",
+			"file": "A70v34/11495-fix_lsk_on_idle.vkp",
+			"mtime": 1788092784000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"S7Cv47": {
