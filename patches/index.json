@@ -74701,11 +74701,11 @@
 		"11499": {
 			"id": 11499,
 			"model": "M55v91",
-			"file": "M55v91/11499-change_name_in_06.vkp",
+			"file": "M55v91/11499-change_phone_model.vkp",
 			"mtime": 1788108780000,
 			"title": {
-				"ru": "Замена имени в *#06#",
-				"en": "Change name in *#06#"
+				"ru": "Изменение модели телефона",
+				"en": "Change phone model"
 			}
 		}
 	},
