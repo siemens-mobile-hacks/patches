@@ -74647,6 +74647,16 @@
 				"ru": "Моментальный запуск скринсейвера после блокировки клавиатуры",
 				"en": "Fast ScreenSaver appearance after keyboard lock"
 			}
+		},
+		"11493": {
+			"id": 11493,
+			"model": "M55v91",
+			"file": "M55v91/11493-reload_instead_of_dynamic_light.vkp",
+			"mtime": 1788087296000,
+			"title": {
+				"ru": "Перезагрузка вместо Динамического света",
+				"en": "Reload instead of Dynamic light"
+			}
 		}
 	},
 	"S55v20": {
