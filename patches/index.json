@@ -74687,6 +74687,16 @@
 				"ru": "Плавное включение подсветки",
 				"en": "Smooth illumination turn-on"
 			}
+		},
+		"11498": {
+			"id": 11498,
+			"model": "M55v91",
+			"file": "M55v91/11498-smooth_illumination_turn_off.vkp",
+			"mtime": 1788102646000,
+			"title": {
+				"ru": "Плавное выключение подсветки",
+				"en": "Smooth illumination turn-off"
+			}
 		}
 	},
 	"S55v20": {
