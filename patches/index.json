@@ -74657,6 +74657,16 @@
 				"ru": "Перезагрузка вместо Динамического света",
 				"en": "Reload instead of Dynamic light"
 			}
+		},
+		"11494": {
+			"id": 11494,
+			"model": "M55v91",
+			"file": "M55v91/11494-turn_phone_on_while_off_charging.vkp",
+			"mtime": 1788089150000,
+			"title": {
+				"ru": "Включить телефон при оффлайн зарядке",
+				"en": "Turn phone ON while offline charging"
+			}
 		}
 	},
 	"S55v20": {
