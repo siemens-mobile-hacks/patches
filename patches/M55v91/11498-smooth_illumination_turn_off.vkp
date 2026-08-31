@@ -1,0 +1,16 @@
+;M55v91
+;Плавное выключение подсветки
+;Smooth illumination turn-off
+;(c) FIL
+;Version: 
+;PatchID: 11498
+;Details: https://patches.kibab.com/patches/details.php5?id=11498
+/*
+
+*/
+
+-200000
+A0D676: F2FE0EFE E6FE0F00
+-0
+;------------------------- end -------------------------
+

@@ -4662,7 +4662,7 @@
 			}
 		},
 		"10076": {
-			"id": "10076",
+			"id": 10076,
 			"model": "EL71v45",
 			"file": "EL71v45/10076-library.vkp",
 			"mtime": 1292840336000,
@@ -10305,7 +10305,7 @@
 			}
 		},
 		"5624": {
-			"id": "5624",
+			"id": 5624,
 			"model": "S75v47",
 			"file": "S75v47/5624-S75sw47_Functions_Library_120812.vkp",
 			"additionalFile": "S75v47/5624-Functions_library_100410.zip",
@@ -15183,7 +15183,7 @@
 			}
 		},
 		"8285": {
-			"id": "8285",
+			"id": 8285,
 			"model": "S75v52",
 			"file": "S75v52/8285-swilib_v300426.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
@@ -22017,7 +22017,7 @@
 			}
 		},
 		"10522": {
-			"id": "10522",
+			"id": 10522,
 			"model": "SL75v47",
 			"file": "SL75v47/10522-Function_Library120603.vkp",
 			"additionalFile": "SL75v47/10522-Function_Library120603.rar",
@@ -22330,7 +22330,7 @@
 			}
 		},
 		"7634": {
-			"id": "7634",
+			"id": 7634,
 			"model": "SL75v52",
 			"file": "SL75v52/7634-Functions_library.vkp",
 			"mtime": 1200294382000,
@@ -25793,7 +25793,7 @@
 			}
 		},
 		"10542": {
-			"id": "10542",
+			"id": 10542,
 			"model": "CF75v23",
 			"file": "CF75v23/10542-swilib_v071025.vkp",
 			"mtime": 1759860710000,
@@ -30090,7 +30090,7 @@
 			}
 		},
 		"6285": {
-			"id": "6285",
+			"id": 6285,
 			"model": "CX75v13",
 			"file": "CX75v13/6285-swilib.vkp",
 			"additionalFile": "CX75v13/6285-swilib.zip",
@@ -32892,7 +32892,7 @@
 			}
 		},
 		"4736": {
-			"id": "4736",
+			"id": 4736,
 			"model": "CX75v25",
 			"file": "CX75v25/4736-fl_swi.vkp",
 			"additionalFile": "CX75v25/4736-fl_swi.rar",
@@ -40458,7 +40458,7 @@
 			}
 		},
 		"4673": {
-			"id": "4673",
+			"id": 4673,
 			"model": "M75v25",
 			"file": "M75v25/4673-BigFunctionLibrary.vkp",
 			"mtime": 1176023636000,
@@ -45332,7 +45332,7 @@
 			}
 		},
 		"10518": {
-			"id": "10518",
+			"id": 10518,
 			"model": "C75v22",
 			"file": "C75v22/10518-swilib_c75_22_120628.vkp",
 			"mtime": 1340924442000,
@@ -47002,7 +47002,7 @@
 			}
 		},
 		"10516": {
-			"id": "10516",
+			"id": 10516,
 			"model": "C75v24",
 			"file": "C75v24/10516-swilib_v280612.vkp",
 			"mtime": 1340923204000,
@@ -56709,7 +56709,7 @@
 			}
 		},
 		"7545": {
-			"id": "7545",
+			"id": 7545,
 			"model": "S65v58",
 			"file": "S65v58/7545-Library.vkp",
 			"mtime": 1179819080000,
@@ -57981,7 +57981,7 @@
 			}
 		},
 		"10897": {
-			"id": "10897",
+			"id": 10897,
 			"model": "S65v58",
 			"file": "S65v58/10897-swilib_v270825.vkp",
 			"mtime": 1756311696000,
@@ -61585,7 +61585,7 @@
 			}
 		},
 		"10131": {
-			"id": "10131",
+			"id": 10131,
 			"model": "SL65v53",
 			"file": "SL65v53/10131-swilib_16_01_2011.vkp",
 			"mtime": 1299855222000,
@@ -63308,7 +63308,7 @@
 			}
 		},
 		"7546": {
-			"id": "7546",
+			"id": 7546,
 			"model": "SK65v50",
 			"file": "SK65v50/7546-library.vkp",
 			"additionalFile": "SK65v50/7546-library.zip",
@@ -68658,7 +68658,7 @@
 			"id": 6849,
 			"model": "CX70v56",
 			"file": "CX70v56/6849-Turn_phone_ON_while_offline_chargin.vkp",
-			"mtime": 1169057134000,
+			"mtime": 1788089176000,
 			"title": {
 				"ru": "Включить телефон при оффлайн зарядке",
 				"en": "Turn phone ON while offline charging"
@@ -69380,7 +69380,7 @@
 			}
 		},
 		"10625": {
-			"id": "10625",
+			"id": 10625,
 			"model": "CX70v56",
 			"file": "CX70v56/10625-swilib_v181125.vkp",
 			"mtime": 1763412890000,
@@ -70906,6 +70906,16 @@
 			"title": {
 				"ru": "Работа телефона без SIM карты",
 				"en": "Work without SIM card"
+			}
+		},
+		"11496": {
+			"id": 11496,
+			"model": "C55v24",
+			"file": "C55v24/11496-fix_lsk_on_idle.vkp",
+			"mtime": 1788097478000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
 		}
 	},
@@ -74606,6 +74616,56 @@
 			"title": {
 				"ru": "Моментальный запуск скринсейвера после блокировки клавиатуры",
 				"en": "Fast ScreenSaver appearance after keyboard lock"
+			}
+		},
+		"11493": {
+			"id": 11493,
+			"model": "M55v91",
+			"file": "M55v91/11493-reload_instead_of_dynamic_light.vkp",
+			"mtime": 1788087296000,
+			"title": {
+				"ru": "Перезагрузка вместо Динамического света",
+				"en": "Reload instead of Dynamic light"
+			}
+		},
+		"11494": {
+			"id": 11494,
+			"model": "M55v91",
+			"file": "M55v91/11494-turn_phone_on_while_off_charging.vkp",
+			"mtime": 1788089150000,
+			"title": {
+				"ru": "Включить телефон при оффлайн зарядке",
+				"en": "Turn phone ON while offline charging"
+			}
+		},
+		"11497": {
+			"id": 11497,
+			"model": "M55v91",
+			"file": "M55v91/11497-smooth_illumination_turn_on.vkp",
+			"mtime": 1788102532000,
+			"title": {
+				"ru": "Плавное включение подсветки",
+				"en": "Smooth illumination turn-on"
+			}
+		},
+		"11498": {
+			"id": 11498,
+			"model": "M55v91",
+			"file": "M55v91/11498-smooth_illumination_turn_off.vkp",
+			"mtime": 1788102646000,
+			"title": {
+				"ru": "Плавное выключение подсветки",
+				"en": "Smooth illumination turn-off"
+			}
+		},
+		"11499": {
+			"id": 11499,
+			"model": "M55v91",
+			"file": "M55v91/11499-change_name_in_06.vkp",
+			"mtime": 1788108780000,
+			"title": {
+				"ru": "Замена имени в *#06#",
+				"en": "Change name in *#06#"
 			}
 		}
 	},
@@ -89400,7 +89460,7 @@
 			}
 		},
 		"6954": {
-			"id": "6954",
+			"id": 6954,
 			"model": "C72v22",
 			"file": "C72v22/6954-swilib_v101125.vkp",
 			"mtime": 1762721718000,
@@ -95702,7 +95762,7 @@
 			}
 		},
 		"10075": {
-			"id": "10075",
+			"id": 10075,
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib_v190526.vkp",
 			"mtime": 1779211408000,
@@ -100732,7 +100792,7 @@
 			}
 		},
 		"10629": {
-			"id": "10629",
+			"id": 10629,
 			"model": "C81v51",
 			"file": "C81v51/10629-swilib_c81v51_vkp.vkp",
 			"mtime": 1718886492000,
@@ -101348,6 +101408,16 @@
 			"title": {
 				"ru": "Работа телефона без SIM карты",
 				"en": "Work without SIM card"
+			}
+		},
+		"11495": {
+			"id": 11495,
+			"model": "A70v34",
+			"file": "A70v34/11495-fix_lsk_on_idle.vkp",
+			"mtime": 1788092784000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
 		}
 	},
@@ -102641,7 +102711,7 @@
 			}
 		},
 		"10839": {
-			"id": "10839",
+			"id": 10839,
 			"model": "S68v52",
 			"file": "S68v52/10839-swilib.vkp",
 			"mtime": 1717526596000,
@@ -102939,7 +103009,7 @@
 			}
 		},
 		"10395": {
-			"id": "10395",
+			"id": 10395,
 			"model": "CL61v128",
 			"file": "CL61v128/10395-swilib_cl61v00_db128.vkp",
 			"additionalFile": "CL61v128/10395-swilib_cl61v00_db128.zip",

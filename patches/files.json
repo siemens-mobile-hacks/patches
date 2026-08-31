@@ -32891,5 +32891,26 @@
 	],
 	[
 		"M55v91/11492-fast_ss_appearance_after_kbd_lock.vkp"
+	],
+	[
+		"M55v91/11493-reload_instead_of_dynamic_light.vkp"
+	],
+	[
+		"M55v91/11494-turn_phone_on_while_off_charging.vkp"
+	],
+	[
+		"A70v34/11495-fix_lsk_on_idle.vkp"
+	],
+	[
+		"C55v24/11496-fix_lsk_on_idle.vkp"
+	],
+	[
+		"M55v91/11497-smooth_illumination_turn_on.vkp"
+	],
+	[
+		"M55v91/11498-smooth_illumination_turn_off.vkp"
+	],
+	[
+		"M55v91/11499-change_name_in_06.vkp"
 	]
 ]

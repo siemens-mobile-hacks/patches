@@ -1,0 +1,17 @@
+;M55v91
+;Замена имени в *#06#
+;Change name in *#06#
+;(c) avkiev
+;(p) FIL
+;Version: 
+;PatchID: 11499
+;Details: https://patches.kibab.com/patches/details.php5?id=11499
+/*
+
+*/
+
+-200000
+87FF70: 4D353500000000000000000000000000 "M55H"00
+-0
+;------------------------- end -------------------------
+
