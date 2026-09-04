@@ -101600,6 +101600,16 @@
 				"ru": "Не менять левый софткей на ГЭ если нет сети",
 				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
+		},
+		"11500": {
+			"id": 11500,
+			"model": "A70v34",
+			"file": "A70v34/11500-Remove_indentation_in_Accessories.vkp",
+			"mtime": 1788543004000,
+			"title": {
+				"ru": "Убрать отступ слева от названия пунктов в \"Аксессуарах\"",
+				"en": "Remove the indentation from the left side of the item names in \"Accessories\""
+			}
 		}
 	},
 	"S7Cv47": {
