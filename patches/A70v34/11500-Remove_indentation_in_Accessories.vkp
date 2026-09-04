@@ -1,0 +1,15 @@
+;A70v34
+;Убрать отступ слева от названия пунктов в "Аксессуарах"
+;Remove the indentation from the left side of the item names in "Accessories"
+;(c) Romir0o
+;Version: 
+;PatchID: 11500
+;Details: https://patches.kibab.com/patches/details.php5?id=11500
+/*
+
+*/
+
+58C0E: 6C066F02 32066F02 ; Car Kit
+58C20: 6C066F02 32066F02 ; Гарнитура
+;------------------------- end -------------------------
+
