@@ -88625,6 +88625,16 @@
 				"ru": "Работа телефона без SIM карты",
 				"en": "Work without SIM card"
 			}
+		},
+		"11501": {
+			"id": 11501,
+			"model": "M50v19",
+			"file": "M50v19/11501-fix_lsk_on_idle.vkp",
+			"mtime": 1788606680000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"C72v22": {
