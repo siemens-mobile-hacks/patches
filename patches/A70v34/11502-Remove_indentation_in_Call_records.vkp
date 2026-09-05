@@ -1,0 +1,14 @@
+;A70v34
+;Убрать отступ слева от названия пунктов в меню "Списки вызовов"
+;Remove the indentation from the left side of the item names in "Call records"
+;(c) Romir0o
+;Version: 
+;PatchID: 11502
+;Details: https://patches.kibab.com/patches/details.php5?id=11502
+/*
+
+*/
+
+58356: E006 0000
+;------------------------- end -------------------------
+

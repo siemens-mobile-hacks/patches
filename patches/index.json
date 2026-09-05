@@ -101620,6 +101620,16 @@
 				"ru": "Убрать отступ слева от названия пунктов в \"Аксессуарах\"",
 				"en": "Remove the indentation from the left side of the item names in \"Accessories\""
 			}
+		},
+		"11502": {
+			"id": 11502,
+			"model": "A70v34",
+			"file": "A70v34/11502-Remove_indentation_in_Call_records.vkp",
+			"mtime": 1788629920000,
+			"title": {
+				"ru": "Убрать отступ слева от названия пунктов в меню \"Списки вызовов\"",
+				"en": "Remove the indentation from the left side of the item names in \"Call records\""
+			}
 		}
 	},
 	"S7Cv47": {
