@@ -101630,6 +101630,16 @@
 				"ru": "Убрать отступ слева от названия пунктов в меню \"Списки вызовов\"",
 				"en": "Remove the indentation from the left side of the item names in \"Call records\""
 			}
+		},
+		"11503": {
+			"id": 11503,
+			"model": "A70v34",
+			"file": "A70v34/11503-Reassignment_of_the_buttons_IDLE.vkp",
+			"mtime": 1788699336000,
+			"title": {
+				"ru": "Переназначение кнопок курсора",
+				"en": "Reassignment of the buttons of the cursor"
+			}
 		}
 	},
 	"S7Cv47": {
