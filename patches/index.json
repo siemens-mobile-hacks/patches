@@ -101640,6 +101640,16 @@
 				"ru": "Переназначение кнопок курсора",
 				"en": "Reassignment of the buttons of the cursor"
 			}
+		},
+		"11504": {
+			"id": 11504,
+			"model": "A70v34",
+			"file": "A70v34/11504-remove_msg-keyboard_blocked.vkp",
+			"mtime": 1788703134000,
+			"title": {
+				"ru": "Отключить сообщение \"Блокировка клавиатуры включена\"",
+				"en": "remove msg-keyboard blocked"
+			}
 		}
 	},
 	"S7Cv47": {

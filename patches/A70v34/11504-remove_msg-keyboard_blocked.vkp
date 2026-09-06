@@ -1,0 +1,15 @@
+;A70v34
+;Отключить сообщение "Блокировка клавиатуры включена"
+;remove msg-keyboard blocked
+;(c) avkiev
+;(p) Romir0o
+;Version: 
+;PatchID: 11504
+;Details: https://patches.kibab.com/patches/details.php5?id=11504
+/*
+
+*/
+
+80B0A: DA88C455 CC00CC00
+;------------------------- end -------------------------
+
