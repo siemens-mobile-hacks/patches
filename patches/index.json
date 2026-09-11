@@ -88553,6 +88553,16 @@
 				"ru": "Работа телефона без SIM карты",
 				"en": "Work without SIM card"
 			}
+		},
+		"11506": {
+			"id": 11506,
+			"model": "A52v9",
+			"file": "A52v9/11506-fix_lsk_on_idle.vkp",
+			"mtime": 1789154604000,
+			"title": {
+				"ru": "Не менять левый софткей на ГЭ если нет сети",
+				"en": "Don`t change the left softkey on IDLE if there is no network"
+			}
 		}
 	},
 	"M50v19": {
