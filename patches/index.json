@@ -88543,6 +88543,16 @@
 				"ru": "Увеличение максимального размера пользовательских мелодий с 2561 до 19597 байт",
 				"en": "Increase user melodies' maximum size from 2561 to 19597 bytes"
 			}
+		},
+		"11505": {
+			"id": 11505,
+			"model": "A52v9",
+			"file": "A52v9/11505-work_without_sim_v3.vkp",
+			"mtime": 1789154574000,
+			"title": {
+				"ru": "Работа телефона без SIM карты",
+				"en": "Work without SIM card"
+			}
 		}
 	},
 	"M50v19": {
