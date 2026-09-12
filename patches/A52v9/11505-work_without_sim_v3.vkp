@@ -1,0 +1,27 @@
+;A52v9
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle, FIL, Azq2
+;(r) FIL, Azq2
+;(p) Romir0o
+;Version: 3.0.1
+;PatchID: 11505
+;Details: https://patches.kibab.com/patches/details.php5?id=11505
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+
+205846: E6FC62FE E6FCCC37
+20584A: E6FD9B00 E6FD0A00
+20584E: E6FE E09E
+205850: E8FEE6FF DACA42DE 
+205854: 9B00DAA2 E6FCCC37
+205858: 6000DAA4 E6FD0A00
+20585C: BA21 E08E
+20585E: E6FE1205 DACA3ED8
+205862: E6FF 9880
+205864: 8102 9890
+205866: DAA2 E004
+205868: F205 DB00
+;------------------------- end -------------------------
+
