@@ -103469,6 +103469,16 @@
 				"ru": "Изменение модели телефона",
 				"en": "Change phone model"
 			}
+		},
+		"11509": {
+			"id": 11509,
+			"model": "CL61v128",
+			"file": "CL61v128/11509-disable_network_v1_2.vkp",
+			"mtime": 1789296066000,
+			"title": {
+				"ru": "Отключить сеть",
+				"en": "Disable network"
+			}
 		}
 	},
 	"EF81v58": {
