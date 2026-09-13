@@ -103459,6 +103459,16 @@
 				"ru": "Работа телефона без SIM карты",
 				"en": "Work without SIM card"
 			}
+		},
+		"11508": {
+			"id": 11508,
+			"model": "CL61v128",
+			"file": "CL61v128/11508-change_phone_model.vkp",
+			"mtime": 1789287526000,
+			"title": {
+				"ru": "Изменение модели телефона",
+				"en": "Change phone model"
+			}
 		}
 	},
 	"EF81v58": {
