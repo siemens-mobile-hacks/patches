@@ -103449,6 +103449,16 @@
 				"ru": "ElfPack",
 				"en": "ElfPack"
 			}
+		},
+		"11507": {
+			"id": 11507,
+			"model": "CL61v128",
+			"file": "CL61v128/11507-work_without_sim_card_final.vkp",
+			"mtime": 1789285716000,
+			"title": {
+				"ru": "Работа телефона без SIM карты",
+				"en": "Work without SIM card"
+			}
 		}
 	},
 	"EF81v58": {
