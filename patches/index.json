@@ -104375,5 +104375,17 @@
 				"en": "Show Hidden Files In Card-Explorer By Default"
 			}
 		}
+	},
+	"A75v41": {
+		"11510": {
+			"id": 11510,
+			"model": "A75v41",
+			"file": "A75v41/11510-Disable_Aircraft_Check.vkp",
+			"mtime": 1789395944000,
+			"title": {
+				"ru": "Отключить проверку в самолете",
+				"en": "Disable Aircraft Check"
+			}
+		}
 	}
 }
