@@ -1,0 +1,15 @@
+;CL61v128
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle
+;(p) FIL
+;Version: 3
+;PatchID: 11507
+;Details: https://patches.kibab.com/patches/details.php5?id=11507
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+
+04AA182: 4AF25EEC E3F72DF9
+;------------------------- end -------------------------
+

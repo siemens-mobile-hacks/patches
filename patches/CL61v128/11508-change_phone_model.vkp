@@ -1,0 +1,15 @@
+;CL61v128
+;Изменение модели телефона
+;Change phone model
+;(c) avkiev
+;(p) FIL
+;Version: 
+;PatchID: 11508
+;Details: https://patches.kibab.com/patches/details.php5?id=11508
+/*
+
+*/
+
+0081084: 434C3631003000300000000000000000 "Panda"00
+;------------------------- end -------------------------
+

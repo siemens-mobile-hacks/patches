@@ -32911,7 +32911,7 @@
 		"M55v91/11498-smooth_illumination_turn_off.vkp"
 	],
 	[
-		"M55v91/11499-change_name_in_06.vkp"
+		"M55v91/11499-change_phone_model.vkp"
 	],
 	[
 		"A70v34/11500-Remove_indentation_in_Accessories.vkp"
@@ -32933,5 +32933,14 @@
 	],
 	[
 		"A52v9/11506-fix_lsk_on_idle.vkp"
+	],
+	[
+		"CL61v128/11507-work_without_sim_card_final.vkp"
+	],
+	[
+		"CL61v128/11508-change_phone_model.vkp"
+	],
+	[
+		"CL61v128/11509-disable_network_v1_2.vkp"
 	]
 ]
