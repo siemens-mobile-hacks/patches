@@ -104377,16 +104377,6 @@
 		}
 	},
 	"A75v41": {
-		"11512": {
-			"id": 11512,
-			"model": "A75v41",
-			"file": "A75v41/11512-fix_lsk_on_idle.vkp",
-			"mtime": 1789396030000,
-			"title": {
-				"ru": "Не менять левый софткей на ГЭ если нет сети",
-				"en": "Don`t change the left softkey on IDLE if there is no network"
-			}
-		},
 		"11513": {
 			"id": 11513,
 			"model": "A75v41",
