@@ -104375,17 +104375,5 @@
 				"en": "Show Hidden Files In Card-Explorer By Default"
 			}
 		}
-	},
-	"A75v41": {
-		"11513": {
-			"id": 11513,
-			"model": "A75v41",
-			"file": "A75v41/11513-Add_Icons_to_Items_in_Own_stuff.vkp",
-			"mtime": 1789399664000,
-			"title": {
-				"ru": "Добавить Иконки пунктам в Мои файлы",
-				"en": "Add Icons to Items in Own stuff"
-			}
-		}
 	}
 }
