@@ -104377,16 +104377,6 @@
 		}
 	},
 	"A75v41": {
-		"11511": {
-			"id": 11511,
-			"model": "A75v41",
-			"file": "A75v41/11511-work_without_sim_v3.vkp",
-			"mtime": 1789395988000,
-			"title": {
-				"ru": "Работа телефона без SIM карты",
-				"en": "Work without SIM card"
-			}
-		},
 		"11512": {
 			"id": 11512,
 			"model": "A75v41",
