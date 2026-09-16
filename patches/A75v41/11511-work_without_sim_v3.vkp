@@ -1,0 +1,27 @@
+;A75v41
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle, FIL, Azq2
+;(r) FIL, Azq2
+;(p) Romir0o
+;Version: 3.0.1
+;PatchID: 11511
+;Details: https://patches.kibab.com/patches/details.php5?id=11511
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+
+D7B44: E6FC945E E6FCC21C
+D7B48: E6FD8500 E6FDBD00
+D7B4C: E6FE E09E
+D7B4E: E45EE6FF DA8FEAD4
+D7B52: 8500DAAA E6FCC21C
+D7B56: 9643DAB0 E6FDBD00
+D7B5A: 2C0A E08E
+D7B5C: E6FEA628 DA8FE4CE
+D7B60: E6FF 9880
+D7B62: 3502 9890
+D7B64: DAAA E004
+D7B66: 7449 DB00
+;------------------------- end -------------------------
+
