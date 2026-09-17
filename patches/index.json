@@ -104456,6 +104456,16 @@
 				"ru": "Добавить Иконки пунктам в Мои файлы",
 				"en": "Add Icons to Items in Own stuff"
 			}
+		},
+		"11518": {
+			"id": 11518,
+			"model": "A75v41",
+			"file": "A75v41/11518-Add_game_icons.vkp",
+			"mtime": 1789667870000,
+			"title": {
+				"ru": "Добавить Иконки играм в Интернет/Игры",
+				"en": "Add game icons to Surf & fun/Games"
+			}
 		}
 	}
 }
