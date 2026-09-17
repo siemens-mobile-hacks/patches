@@ -75986,6 +75986,16 @@
 				"ru": "Замена цифр заставки \"Цифровые часы\"",
 				"en": "Replace digits screensaver \"Digital Clock\""
 			}
+		},
+		"11514": {
+			"id": 11514,
+			"model": "A60v27",
+			"file": "A60v27/11514-Disable_Aircraft_Check.vkp",
+			"mtime": 1789666570000,
+			"title": {
+				"ru": "Отключить проверку в самолете",
+				"en": "Disable Aircraft Check"
+			}
 		}
 	},
 	"C60v27": {
