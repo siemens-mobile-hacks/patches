@@ -1,0 +1,27 @@
+;A60v27
+;Работа телефона без SIM карты
+;Work without SIM card
+;(c) BingK(binghelingxi), ThE TrIFoN, SiNgle, FIL, Azq2
+;(r) FIL, Azq2
+;(p) Romir0o
+;Version: 3.0.1
+;PatchID: 11515
+;Details: https://patches.kibab.com/patches/details.php5?id=11515
+/*
+Теперь не нужно ничего нажимать, телефон сразу грузится в IDLE
+*/
+
+6D97C0: E6FC1462 E6FC7403
+6D97C4: E6FD8500 E6FD1200
+6D97C8: E6FE E09E
+6D97CA: 6262E6FF DA8FC2D4 ;0x8FD4C2
+6D97CE: 8500DAB3 E6FC7403
+6D97D2: 108FDAD5 E6FD1200
+6D97D6: E460 E08E
+6D97D8: E6FE2005 DA8FBECE ;0x8FCEBE
+6D97DC: E6FF 9880
+6D97DE: 3602 9890
+6D97E0: DAB3 E004
+6D97E2: EC94 DB00
+;------------------------- end -------------------------
+
