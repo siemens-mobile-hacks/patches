@@ -75996,6 +75996,16 @@
 				"ru": "Отключить проверку в самолете",
 				"en": "Disable Aircraft Check"
 			}
+		},
+		"11515": {
+			"id": 11515,
+			"model": "A60v27",
+			"file": "A60v27/11515-work_without_sim_v3.vkp",
+			"mtime": 1789666604000,
+			"title": {
+				"ru": "Работа телефона без SIM карты",
+				"en": "Work without SIM card"
+			}
 		}
 	},
 	"C60v27": {
