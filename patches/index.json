@@ -75987,16 +75987,6 @@
 				"en": "Replace digits screensaver \"Digital Clock\""
 			}
 		},
-		"11515": {
-			"id": 11515,
-			"model": "A60v27",
-			"file": "A60v27/11515-work_without_sim_v3.vkp",
-			"mtime": 1789666604000,
-			"title": {
-				"ru": "Работа телефона без SIM карты",
-				"en": "Work without SIM card"
-			}
-		},
 		"11516": {
 			"id": 11516,
 			"model": "A60v27",
