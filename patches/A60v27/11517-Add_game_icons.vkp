@@ -1,0 +1,15 @@
+;A60v27
+;Добавить Иконки играм в Интернет/Игры
+;Add game icons to Surf & fun/Games
+;(c) Romir0o
+;Version: 
+;PatchID: 11517
+;Details: https://patches.kibab.com/patches/details.php5?id=11517
+/*
+
+*/
+
+65CE9A: 220CCF02 8C115B02
+65CEAC: 220CCF02 F62F7102
+;------------------------- end -------------------------
+
