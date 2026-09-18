@@ -75986,16 +75986,6 @@
 				"ru": "Замена цифр заставки \"Цифровые часы\"",
 				"en": "Replace digits screensaver \"Digital Clock\""
 			}
-		},
-		"11519": {
-			"id": 11519,
-			"model": "A60v27",
-			"file": "A60v27/11519-Add_Icons_to_Items_in_Own_stuff.vkp",
-			"mtime": 1789668426000,
-			"title": {
-				"ru": "Добавить Иконки пунктам в Мои файлы",
-				"en": "Add Icons to Items in Own stuff"
-			}
 		}
 	},
 	"C60v27": {
