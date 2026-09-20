@@ -101720,6 +101720,16 @@
 				"ru": "Отключить сообщение \"Блокировка клавиатуры включена\"",
 				"en": "remove msg-keyboard blocked"
 			}
+		},
+		"11520": {
+			"id": 11520,
+			"model": "A70v34",
+			"file": "A70v34/11520-Inversion_of_the_screen.vkp",
+			"mtime": 1789926606000,
+			"title": {
+				"ru": "Инверсия экрана",
+				"en": "Inversion of the screen"
+			}
 		}
 	},
 	"S7Cv47": {
