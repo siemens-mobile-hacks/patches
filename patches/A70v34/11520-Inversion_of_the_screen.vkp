@@ -1,0 +1,46 @@
+;A70v34
+;Инверсия экрана
+;Inversion of the screen
+;(c) exr & ACiD [mrp] & SiNgle
+;(p) Romir0o
+;Version: 
+;PatchID: 11520
+;Details: https://patches.kibab.com/patches/details.php5?id=11520
+/*
+
+*/
+
+1FE268: 4A 3A
+1FE26C: 4A 3A
+1FE270: 4A 3A
+1FE274: 4A 3A
+1FE278: 4A 3A
+1FE27C: 4A 3A
+1FE280: 4A 3A
+1FE284: 4A 3A
+1FE28C: 4A 3A
+1FE290: 4A 3A
+1FE294: 4A 3A
+1FE298: 4A 3A
+1FE29C: 4A 3A
+1FE2A0: 4A 3A
+1FE2A4: 4A 3A
+1FE2A8: 4A 3A
+1FE300: 4A 3A
+1FE304: 4A 3A
+1FE308: 4A 3A
+1FE30C: 4A 3A
+1FE310: 4A 3A
+1FE314: 4A 3A
+1FE318: 4A 3A
+1FE31C: 4A 3A
+1FE324: 4A 3A
+1FE328: 4A 3A
+1FE32C: 4A 3A
+1FE330: 4A 3A
+1FE334: 4A 3A
+1FE338: 4A 3A
+1FE33C: 4A 3A
+1FE340: 4A 3A
+;------------------------- end -------------------------
+
