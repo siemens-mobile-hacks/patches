@@ -90,7 +90,7 @@
 0110: 0xA08FEBC9   ;  44: TempLightOn
 0114: 0xA006F241   ;  45: int GetWavLen(char *filename)
 ;118:              ;  46: int HasNewSMS()
-011C: 0xA029b211   ;  47: HasFlashSMS
+011C: 0xA029C613   ;  47: int HasFlashSMS(void)
 ;120:              ;  48: ReadNewSMS
 ;124:              ;  49: ReadFlashSMS
 0128: 0xA027B648   ;  4A: short PlayFile(int flags, WSHDR *foldername, WSHDR *filename, int zero, int CepId, int Msg, const PLAYFILE_OPT *sfo)
@@ -124,7 +124,7 @@
 0190: 0xA0978823   ;  64: void GeneralFuncF1_2(int cmd)
 0194: 0xA09b7495   ;  65: EndCall
 0198: 0xA09b6423   ;  66: EndCallBusy
-019C: 0xA03457b9   ;  67: IsDirectCallActive
+019C: 0xA02FB54D   ;  67: int IsDirectCallActive(void)
 01A0: 0xA0303BB9   ;  68: GetScreenSaverRAM
 01A4: 0xA009B180   ;  69: void LockSched_2(void)
 01A8: 0xA009B26C   ;  6A: void UnlockSched_2(void)
@@ -148,7 +148,7 @@
 ;1EC:              ;  7B: GetProfileFilter
 01F0: 0xA01B0D5B   ;  7C: unsigned int SetVibration(unsigned int power)
 01F4: 0xA0D0C6D3   ;  7D: IsIncognitoCall
-01F8: 0xA0D0BD8D   ;  7E: int rand(void)
+01F8: 0xA0A9DCC0   ;  7E: __arm int rand(void)
 01FC: 0xA052D879   ;  7F: IsPlayerOn
 
 0200: 0xA05E93D9   ;  80: int ShowCallList(int list, int zero)
@@ -246,7 +246,7 @@
 035C: 0xA8DADCA8   ;  D7: RamScreenBrightness
 ;360:              ;  D8: RamMenuAnywhere
 ;364:              ;  D9:
-0368: 0xA8D6CD14   ;  DA: RamIsShutdown
+0368: 0xA8DADD44   ; 0DA: char *RamIsShutdown()
 ;36C:              ;  DB: int *RamIsNotOnMainscreen()
 0370: 0xA8DCCD34   ;  DC: int *RamRandSeed(void)
 0374: 0xA899F2BC   ;  DD: RamCurrentTrack
@@ -540,7 +540,7 @@
 07B0: 0xA097685B   ; 1EC: void FreeDynIcon(int picture)
 07B4: 0xA09769BB   ; 1ED: int IsDynIconBusy(int picture)
 ;7B8:              ; 1EE: ProgressCalculate(int current, int total)
-07BC: 0xA09768BD   ; 1EF: void SetDynIcon(int picture,IMGHDR *img,char *bitmap)
+07BC: 0xA09769B7   ; 1EF: void SetDynIcon(int picture, IMGHDR *img, char *bitmap)
 
 ;7C0:              ; 1F0: filecopy
 ;7C4:              ; 1F1: filecopy_op_announce
@@ -729,7 +729,7 @@
 0A78: 0xA8D23B40   ; 29E: char *RamIsBTConnected()
 0A7C: 0xA8D23AD4   ; 29F: char *RamIsBTHeadsetConnected()
 
-0A80: 0xA029F76C   ; 2A0: int GetAlarmclockState(int state)
+0A80: 0xA029F9DC   ; 2A0: int GetAlarmClockState(int state)
 ;A84:              ; 2A1:
 ;A88:              ; 2A2:
 0A8C: 0xA097C55D   ; 2A3: void UpdateMenuCursorItem(void *gui, int n)
@@ -770,10 +770,10 @@
 0B10: 0xA028AB63   ; 2C4: int GetPrfileVolumeSetting(int profile, int type)
 0B14: 0xA8DAD284   ; 2C5: char *RAM_EMS_Admin()
 0B18: 0xA026F1FB   ; 2C6: int GetSecondsFromDateTime(int *result, TDate *t_date, TTime *time, TDate *s_date)
-0B1C: 0xA026F1FB   ; 2C7: int GetSecondsFromDateTimeSince1997(int *result, TDate *date, TTime *time)
+0B1C: 0xA026F24D   ; 2C7: int GetSecondsFromDateTimeSince1997(int *seconds, const TDate *date, const TTime *time)
 0B20: 0xA026F6D7   ; 2C8: int GetSecondsFromTime(TTime *time)
 0B24: 0xA026F135   ; 2C9: int GetDateTimeFromSeconds(int *seconds, TDate *t_date, TTime *time, TDate *s_date)
-0B28: 0xA026F24D   ; 2CA: int GetDateTimeFromSecondsSince1997(int *seconds, TDate *date, TTime *time)
+0B28: 0xA026F26F   ; 2CA: int GetDateTimeFromSecondsSince1997(const int *seconds, TDate *date, TTime *time)
 0B2C: 0xA026F6E9   ; 2CB: void GetTimeFromSeconds(TTime *time, int seconds)
 0B30: 0xA026F020   ; 2CC: void InitDate(TDate *date, unsigned long year, unsigned char month, unsigned char day)
 0B34: 0xA026FA11   ; 2CD: void InitTime(TDate *time, unsigned char hour, unsigned char min, unsigned char sec, unsigned long millisec)
@@ -829,11 +829,11 @@
 0C20: 0xA00A3AA4   ; 308: __arm NU_Change_Priority
 0C24: 0xA00A3ABC   ; 309: __arm NU_Change_Preemption
 0C28: 0xA00A3AD8   ; 30A: __arm NU_Change_Time_Slice
-0C2C: 0xA00A3AF0   ; 30B: __arm NU_Check_Stack           // CHECK IT!
+0C2C: 0xA00A8260   ; 30B: __arm unsigned long NU_Check_Stack(void)
 0C30: 0xA00A2030   ; 30C: __arm NU_Current_Task_Pointer
-0C34: 0xA00A2CD0   ; 30D: __arm NU_Established_Tasks     // CHECK IT!
+0C34: 0xA00A6560   ; 30D: __arm unsigned long NU_Established_Tasks(void)
 0C38: 0xA00A6900   ; 30E: __arm NU_Task_Information
-0C3C: 0xA00A662C   ; 30F: __arm NU_Task_Pointers         // CHECK IT!
+0C3C: 0xA00A6588   ; 30F: __arm unsigned long NU_Task_Pointers(NU_TASK **pointer_list, unsigned long maximum_pointers)
 
 ;C40:              ; 310: __arm NU_Create_Mailbox
 ;C44:              ; 311: __arm NU_Delete_Mailbox
@@ -870,7 +870,7 @@
 ;CBC:              ; 32F: __arm NU_Reset_Semaphore
 
 0CC0: 0xA00A3A18   ; 330: __arm NU_Obtain_Semaphore
-0CC4: 0xA00A39F8   ; 331: __arm NU_Release_Semaphore      // CHECK IT!
+0CC4: 0xA00A3A68   ; 331: __arm int NU_Release_Semaphore(NU_SEMAPHORE *semaphore)
 ;CC8:              ; 332: __arm NU_Established_Semaphores
 ;CCC:              ; 333: __arm NU_Semaphore_Information
 ;CD0:              ; 334: __arm NU_Semaphore_Pointers
@@ -910,18 +910,18 @@
 0D50: 0xA00A24CC   ; 354: __arm NU_Create_HISR
 0D54: 0xA00A2578   ; 355: __arm NU_Delete_HISR
 0D58: 0xA00A2058   ; 356: __arm NU_Current_HISR_Pointer
-0D5C: 0xA00A2CD0   ; 357: __arm NU_Established_HISRs     // CHECK IT!
-0D60: 0xA00A2D88   ; 358: __arm NU_HISR_Information      // CHECK IT!
-0D64: 0xA00A3384   ; 359: __arm NU_HISR_Pointers         // CHECK IT!
-0D68: 0xA00A82BC   ; 35A: __arm NU_Protect              // CHECK IT!
+0D5C: 0xA00A6574   ; 357: __arm unsigned long NU_Established_HISRs(void)
+0D60: 0xA00A67EC   ; 358: __arm int NU_HISR_Information(NU_HISR *hisr, CHAR *name, unsigned long *scheduled_count, DATA_ELEMENT *priority, void **stack_base, unsigned long *stack_size, unsigned long *minimum_stack)
+0D64: 0xA00A662C   ; 359: __arm unsigned long NU_HISR_Pointers(NU_HISR **pointer_list, unsigned long maximum_pointers)
+0D68: 0xA00A8448   ; 35A: __arm void NU_Protect(NU_PROTECT *protect_struct)
 0D6C: 0xA00A84B0   ; 35B: __arm NU_Unprotect           // CHECK IT!
 0D70: 0xA00A4274   ; 35C: __arm NU_Create_Timer
 0D74: 0xA00A42E8   ; 35D: __arm NU_Delete_Timer
 0D78: 0xA00A4308   ; 35E: __arm NU_Reset_Timer
 0D7C: 0xA00A436C   ; 35F: __arm NU_Control_Timer
 
-0D80: 0xA00A4274   ; 360: __arm NU_Established_Timers  // CHECK IT!
-0D84: 0xA00A45CC   ; 361: __arm NU_Timer_Information   // CHECK IT!
+0D80: 0xA00A3FAC   ; 360: __arm unsigned long NU_Established_Timers(void)
+0D84: 0xA00A4064   ; 361: __arm int NU_Timer_Information(NU_TIMER *timer, CHAR *name, OPTION *enable, unsigned long *expirations, unsigned long *id, unsigned long *initial_time, unsigned long *reschedule_time)
 0D88: 0xA00A3FC0   ; 362: __arm NU_Timer_Pointers
 0D8C: 0xA00A8948   ; 363: __arm NU_Set_Clock
 0D90: 0xA00A8954   ; 364: __arm NU_Retrieve_Clock
@@ -952,7 +952,7 @@
 0E0C: 0xA0971A93   ; 383: int PushDRWOBJOnLAYER(DRWOBJ *, LCDLAYER *)
 0E10: 0xA0973793   ; 384: __swi __arm int LCDRedrawLAYER(LCDLAYER *)
 0E14: 0xA0098F70   ; 385: GBSPROC *GetGBSProcAddress(unsigned short cepid)
-0E18: 0xA00C7E8F   ; 386: void SetPropTo_obj0x17(DRWOBJ *, RECT *, int zero0, EIMGHDR *, int zero1, int zero2)
+0E18: 0xA0A08FE5   ; 386: void DrwObj_InitTiledImageEx(DRWOBJ *drwobj, const RECT *rect, int flags, const EIMGHDR *img, int offset_x, int offset_y)
 0E1C: 0xA096F551   ; 387: LCDLAYER *GetLCDLAYERByCurCepID()
 0E20: 0xA0A07869   ; 388: void SetDepthBuffer(char depth)
 0E24: 0xA0A0781D   ; 389: void SetDepthBufferOnLCDLAYER(LCDLAYER *, char depth)
