@@ -104,7 +104,7 @@
 ;0154: 0x ; 055: SwitchVibraOnOff
 0158: 0xA006F131 ; 056: void PlayVibra (char VibraPower, unsigned int VibraDuration, char VibraIfOff)
 015C: 0xA00978A5 ; 057: int IsTimerProc(GBSTMR *)
-0160: 0xA0FAFC48 ; 058: ClearMemory
+0160: 0xA0FAFC00 ; 058: void ClearMemory(void *ptr, int num)
 0164: 0xA0FAFCA4 ; 059: memcpy(void *dest,const void *source,int cnt);
 0168: 0xA08D3553 ; 05A: KeypressOn
 016C: 0xA08D3665 ; 05B: KeypressOff
@@ -144,7 +144,7 @@
 ;01EC: 0x ; 07B: GetProfileFilter
 01F0: 0xA04AD9CB ; 07C: __arm unsigned int SetVibration(unsigned int power);
 01F4: 0xA0CD8FAF ; 07D: IsIncognitoCall
-01F8: 0xA0CD864D ; 07E: Rand
+01F8: 0xA0AC172F ; 07E: int rand(void)
 01FC: 0xA069F7F8 ; 07F: IsPlayerOn
 
 0200: 0xA0A82501 ; 080: __thumb void int ShowCallList(int list, int zero);
@@ -221,7 +221,7 @@
 030C: 0xA006F091 ; 0C3: ProcessFiles
 0310: 0xA0060C01 ; 0C4: GetBuffer
 0314: 0xA066C9EB ; 0C5: IsIdleUiOnTop
-0318: 0xA01A6A50 ; 0C6: __arm char GetAkkuCapacity();
+0318: 0xA01A33E0 ; 0C6: char GetAkkuCapacity()
 ;31C: 0xA06236B0 ; 0C7:
 0320: 0xA8D8378C ;80C8: __arm unsigned short *RamCap();
 0324: 0xA8D837BE ; 0C9: RamLS
@@ -229,18 +229,18 @@
 032C: 0xA8E36D14 ; 0CB: RamRingtoneStatus
 0330: 0xA8EB59E4 ; 0CC: RamMissedCalls
 ;0334: 0x ; 0CD: RamMissedSMS
-0338: 0xA8D97460 ; 0CE: RamDateTime
+0338: 0xA8DA8108 ; 0CE: void *RamDateTime(void)
 033C: 0xA8F5B964 ; 0CF: RamAlarm
 
 0340: 0xA8E27140 ; 0D0: RamAccPoint
 0344: 0xA8EAADD8 ; 0D1: RamScreensaver
-0348: 0xA8D97488 ; 0D2: RamAutoTime
+0348: 0xA8DA815C ; 0D2: char *RamIsAutoTimeEnabled(void)
 034C: 0xA8A80000 ; 0D3: RamStby
 0350: 0xA8E37598 ; 0D4: RamMissedMes
 0354: 0xA8DF3348 ; 0D5: RamIsLocked
 0358: 0xA8E6936C ; 0D6: RamNetOnline
 035C: 0xA8E6A484 ; 0D7: RamScreenBrightness
-0360: 0xA8DA7D38 ; 0D8: RamMenuAnywhere
+0360: 0xA8DA7D39 ; 0D8: void *RamMenuAnywhere()
 ;0364: 0x ; 0D9: RamShutdownMode
 0368: 0xA8E6A520 ; 80DA: RamIsShutdown
 036C: 0xA8F59D84 ; 0DB: RamNotOnMainscreen
@@ -494,7 +494,7 @@
 0710: 0xA0950C99 ; 1C4: __thumb void SetCursorToMenuItem(void *gui,int n);
 0714: 0xA0A32378 ; 1C5: __arm int GetFontYSIZE(int font);
 0718: 0xA0A1C791 ; 1C6: __thumb void EDIT_ExtractFocusedControl(void *gui,EDITCONTROL *ec);
-071C: 0xA0A1C7CD ; 1C7: __thumb int EDIT_StoreControlToFocused(void *gui,EDITCONTROL *ec);
+071C: 0xA0A1C79D ; 1C7: __thumb int EDIT_StoreControlToFocused(void *gui, const EDITCONTROL *ec);
 0720: 0xA0A16C11 ; 1C8: __thumb EDITC_OPTIONS *PrepareEditCOptions(EDITC_OPTIONS *ec_options);
 0724: 0xA0A15C97 ; 1C9: __thumb void SetInvertToEditCOptions(EDITC_OPTIONS *ec_options, int invert);
 0728: 0xA0A15C8B ; 1CA: __thumb void SetFontToEditCOptions(EDITC_OPTIONS *ec_options, int font);
@@ -528,7 +528,7 @@
 0790: 0xA094D8BF ; 1E4: __thumb int GetPicNByUnicodeSymbol(int wchar);
 0794: 0xA0A1CA59 ; 1E5: __thumb int EDIT_OpenOptionMenuWithUserItems(void *gui, void (*itemhandler)(USR_MENU_ITEM *item), int zero, int to_add);
 0798: 0xA0953275 ; 1E6: __thumb void Menu_SetItemCountDyn(void *gui, int n);
-079C: 0xA1384401 ; 1E7: __thumb char *GetLastJavaApplication();
+079C: 0xA0AFD444 ; 1E7: __arm char *GetLastJavaApplication(void);
 07A0: 0xA0A07D8C ; 1E8: __unknown int IsNoJava();
 ;07A4: 0x ; 1E9: __arm IMGHDR *CreateIMGHDRFromPngFile(const char *fname, int type);
 07A8: 0xA094D567 ; 1EA: __unknown int GetMaxDynIcon(void);
@@ -536,20 +536,20 @@
 07B0: 0xA094D56B ; 1EC: __unknown void FreeDynIcon(int picture);
 07B4: 0xA094D6D1 ; 1ED: __unknown int IsDynIconBusy(int picture);
 07B8: 0xA069271C ; 1EE: __thumb ProgressCalculate(int current, int total);
-07BC: 0xA094D5CF ; 1EF: __unknown void SetDynIcon(int picture,IMGHDR *img,char *bitmap); 
+07BC: 0xA094D6CD ; 1EF: void SetDynIcon(int picture, IMGHDR *img, char *bitmap)
 
 07C0: 0xA0695538 ; 1F0: __thumb Filecopy
 07C4: 0xA0697BE0 ; 1F1: __thumb Filecopy_Op_Announce 
 07C8: 0xA04E1280 ; 1F2: Devmenu_Config_IsCheckboxOff 
 07CC: 0xA00A320C ; 1F3: __arm unsigned int GetSessionAge(void);
-07D0: 0xA8DA181C ; 81F4: char *RamServiceProviderName();
+07D0: 0xA8EA4768 ; 1F4: char *RamServiceProviderName(void)
 07D4: 0xA122AA09 ; 1F5: __thumb int sscanf(const char *, const char *, ...);
 07D8: 0xA094D71F ; 1F6: __thumb IMGHDR* GetPitAdrBy0xE200Symbol(int uni_symbol); 
 07DC: 0xA006F501 ; 1F7: long GetFileSize(char *Filename);
 07E0: 0xA069F6AC ; 1F8: __arm int GetPlayStatus(void);
 07E4: 0xA006F401 ; 1F9: SendMP_cmd(cmd,substract);
 07E8: 0xA8D86501 ; 1FA: char *RamVolumeStep();
-07EC: 0xA8D9E8B9 ; 1FB: char *RamMediaIsPlaying()
+07EC: 0xA8D9E8C9 ; 1FB: char *RamMediaIsPlaying(void)
 07F0: 0xA0946A75 ; 1FC: __thumb void CloseCSM(int id);
 07F4: 0xA0A0C177 ; 1FD: __thumb void SetProp2Square_v2(void);
 07F8: 0xA8D87354 ; 1FE: char *RamLighterPower()
@@ -585,11 +585,11 @@
 0868: 0xA0A1C9C5 ; 21A: int EDIT_SetTextInvert(void *gui,int cursor_pos,int len);
 086C: 0xA0A1C9D1 ; 21B: void EDIT_RemoveTextInvert(void *gui);
 0870: 0xA0A1CA0D ; 21C: __thumb int EDIT_IsBusy(void *gui);
-0874: 0xA0925355 ; 21D: int GSMTXT_Decode(WSHDR *dest,void *pkt,int len,int encoding_type);
+0874: 0xA09252A1 ; 21D: int GSMTXT_Decode(WSHDR *result, void *pkt, int len, int encoding_type, malloc_func_t malloc_fn, mfree_func_t mfree_fn)
 0878: 0xA094F62F ; 21E: __thumb void FocusGUI(int id);
 087C: 0xA094F63F ; 21F: __thumb void UnfocusGUI(void);
 
-0880: 0xA08D446C ; 220: IsSliderClosed;
+0880: 0xA08D446B ; 220: char IsSliderClosed()
 0884: 0xA06236C8 ; 221: __arm void SetCpuClockLow(2);
 0888: 0xA06236B0 ; 222: __arm void SetCpuClockTempHi(2);
 088C: 0xA069F64C ; 223: IsMediaPlayerInBackground;
@@ -695,8 +695,8 @@
 0A10: 0xA0D2C2C1 ; 284: __thumb int IsGPRS();
 0A14: 0xA0D2C2C7 ; 285: __thumb int IsEDGE();
 0A18: 0xA0D2343D ; 286: __thumb int GetSMSState();
-0A1C: 0xA064248F ; 287: __thumb int BT_GetLocVisibility();
-0A20: 0xA065F081 ; 288: __thumb int GetCurrAudioPath();
+0A1C: 0xA06420E9 ; 287: int BT_GetLocVisibility()
+0A20: 0xA065C679 ; 288: int Audio_GetCurrAudioPath()
 0A24: 0xA0D9A0D1 ; 289: __thumb int isDecryption();
 0A28: 0xA8E374EC ; 828A: __thumb char *RamIsFileCache();
 0A2C: 0xA8F09AE8 ; 828B: __thumb char *RamTotalHeapSize();
@@ -768,8 +768,8 @@
 0B24: 0xA058A1BD ; 2C9: int GetDateTimeFromSeconds(int *seconds, TDate *t_date, TTime *time, TDate *s_date);
 0B28: 0xA058A2F7 ; 2CA: int GetDateTimeFromSecondsSince1997(int *seconds, TDate *date, TTime *time);
 0B2C: 0xA058A771 ; 2CB: void GetTimeFromSeconds(TTime *time, int seconds);
-0B30: 0xA058A163 ; 2CC: void InitDate(TDate *date, unsigned long year, unsigned char month, unsigned char day);
-0B34: 0xA058AB83 ; 2CD: void InitTime(TDate *time, unsigned char hour, unsigned char min, unsigned char sec, unsigned long millisec);
+0B30: 0xA058A0A9 ; 2CC: void InitDate(TDate *date, unsigned long year, uint8_t month, uint8_t day)
+0B34: 0xA058AA99 ; 2CD: void InitTime(TTime *time, uint8_t hour, uint8_t min, uint8_t sec, unsigned long millisec)
 0B38: 0xA0589A8D ; 2CE: int CmpDates(TDate *date1, TDate *date2);
 0B3C: 0xA058A700 ; 2CF: int CmpTimes(TTime *time1, TTime *time2);
 
@@ -863,8 +863,8 @@
 ;CD0:            ; 334: __arm NU_Semaphore_Pointers
 0CD4: 0xA009D520 ; 335: __arm NU_Create_Event_Group
 0CD8: 0xA009D53C ; 336: __arm NU_Delete_Event_Group
-0CDC: 0xA0212740 ; 337: __arm NU_Set_Events
-0CE0: 0xA009D55C ; 338: __arm NU_Retrieve_Events
+0CDC: 0xA009D55C ; 337: int NU_Set_Events(NU_EVENT_GROUP *group, unsigned long events, OPTION operation)
+0CE0: 0xA009D590 ; 338: int NU_Retrieve_Events(NU_EVENT_GROUP *group, unsigned long requested_flags, OPTION operation, unsigned long *retrieved_flags, unsigned long suspend)
 ;CE4:            ; 339: __arm NU_Established_Event_Groups
 ;CE8:            ; 33A: __arm NU_Event_Group_Information
 ;CEC:            ; 33B: __arm NU_Event_Group_Pointers
@@ -893,15 +893,15 @@
 0D40: 0xA00A2954 ; 350: __arm NU_Restore_Interrupts
 ;D44:            ; 351: __arm NU_Setup_Vector
 0D48: 0xA009C920 ; 352: __arm NU_Register_LISR
-0D4C: 0xA009B2D8 ; 353: __arm NU_Activate_HISR
+0D4C: 0xA009CDAC ; 353: int NU_Activate_HISR(NU_HISR *hisr)
 0D50: 0xA009CAC0 ; 354: __arm NU_Create_HISR
-0D54: 0xA009CB30 ; 355: __arm NU_Delete_HISR
+0D54: 0xA009CB6C ; 355: int NU_Delete_HISR(NU_HISR *hisr)
 0D58: 0xA009C64C ; 356: __arm NU_Current_HISR_Pointer
 0D5C: 0xA00A0B68 ; 357: __arm NU_Established_HISRs
 0D60: 0xA00A0DE0 ; 358: __arm NU_HISR_Information
 0D64: 0xA00A0C20 ; 359: __arm NU_HISR_Pointers
-0D68: 0xA021A61C ; 35A: __arm NU_Protect
-0D6C: 0xA021A6A8 ; 35B: __arm NU_Unprotect
+0D68: 0xA00A2D00 ; 35A: void NU_Protect(NU_PROTECT *protect_struct)
+0D6C: 0xA00A2D68 ; 35B: void NU_Unprotect(void)
 0D70: 0xA009E868 ; 35C: __arm NU_Create_Timer
 0D74: 0xA009E8DC ; 35D: __arm NU_Delete_Timer
 0D78: 0xA009E8FC ; 35E: __arm NU_Reset_Timer
@@ -1067,6 +1067,5 @@
 
 #pragma disable old_equal_ff
 +0
-
 ;------------------------- end -------------------------
 
