@@ -651,7 +651,7 @@
 095C: 0xA0935578   ; 257: isSendReceiveFile();
 0960: 0xA096BB21   ; 258: int CalcBitmapSize(short w, short h, char type)
 0964: 0xA09A00D8   ; 259: HObj Obs_CreateObject(int uid_in, int uid_out, int prio, int msg_callback, int emb4, int sync,unsigned int *ErrorNumber);
-0968: 0xA0B95748   ; 25A: int Obs_DestroyObject(HObj hObj);
+0968: 0xA092D290   ; 25A: int Obs_DestroyObject(HObj obs)
 096C: 0xA099E0BC   ; 25B: int Obs_SetInput_File (HObj hObj, int unk_zero, WSHDR *path);
 0970: 0xA0A646D8   ; 25C: int Obs_GetInputImageSize (HObj hObj, short *w, short *h);
 0974: 0xA0A64854   ; 25D: int Obs_SetOutputImageSize (HObj hObj, short w, short h);
@@ -1055,5 +1055,6 @@
 0F4C: 0xA090E36B   ; 3D3: void IllumFilterSet(int flags, int unk)
 #pragma disable old_equal_ff
 +0
+
 ;------------------------- end -------------------------
 
