@@ -4665,7 +4665,7 @@
 			"id": "10076",
 			"model": "EL71v45",
 			"file": "EL71v45/10076-library.vkp",
-			"mtime": 1790714584000,
+			"mtime": 1790721020000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -15187,7 +15187,7 @@
 			"model": "S75v52",
 			"file": "S75v52/8285-swilib_v300426.vkp",
 			"additionalFile": "S75v52/8285-S75sw52_Functions_library_231017.zip",
-			"mtime": 1777573444000,
+			"mtime": 1790721130000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -22333,7 +22333,7 @@
 			"id": "7634",
 			"model": "SL75v52",
 			"file": "SL75v52/7634-Functions_library.vkp",
-			"mtime": 1200294382000,
+			"mtime": 1790721192000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"
@@ -95845,7 +95845,7 @@
 			"id": "10075",
 			"model": "E71v45",
 			"file": "E71v45/10075-swilib_v190526.vkp",
-			"mtime": 1779211408000,
+			"mtime": 1790721266000,
 			"title": {
 				"ru": "Библиотека функций",
 				"en": "Functions Library"

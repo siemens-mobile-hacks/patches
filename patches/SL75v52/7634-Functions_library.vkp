@@ -60,15 +60,15 @@
 0094: 0xA029CECB   ;  25: void DrawCanvas(void *data, int x1, int y1, int x2, int y2, int flag_one)
 0098: 0xA0A06519   ;  26: void DrawImgBW(unsigned int x, unsigned int y, unsigned int picture, char *pen, char *brush)
 009C: 0xA029D0F1   ;  27: AddIconToIconbar
-00A0: 0xA1000B00   ;  28: double fp_sint2fp(signed int i)
-;0A4:              ;  29: 
+00A0: 0xA01E6838   ; 028: uint32_t GetEELiteMaxID()
+00A4: 0xA01E59C4   ; 029: uint32_t GetEEFullMaxID()
 00A8: 0xA01E5DBC   ;  2A: int *GetEELiteBlockAddress(short blocknum)
-00AC: 0xA10009A0   ;  2B: signed int fp_fp2sint(double f)
+00AC: 0xA01E6748   ; 02B: int GetEELiteBlockSizeVersion(uint32_t block, int *size, char *version)
 00B0: 0xA01E5458   ;  2C: getEEFullBlockSizeVersion(int block, *buf1, *buf2) 1E5458
-00B4: 0xA0FFFD60   ;  2D: double fp_add(double addend1, double addend2)
-00B8: 0xA1000CC0   ;  2E: double fp_mul(double factor1, double factor2)
-00BC: 0xA1000374   ;  2F: double fp_div(double divisor, double divident)
-;0C0:              ;  30: 
+00B4: 0xA01E69BC   ; 02D: int StartWriteEELiteBlock(uint32_t block, uint32_t size, uint32_t version, int *null)
+00B8: 0xA01E6CB4   ; 02E: int FinishWriteEELiteBlock(uint32_t block, int *null)
+00BC: 0xA01E68A0   ; 02F: int DeleteEELiteBlock(uint32_t block, int *null)
+00C0: 0xA01E6B9C   ; 030: int WriteEELiteBlock(uint32_t block, void *buf, uint32_t offset, uint32_t size, int *null)
 00C4: 0xA0FD1961   ;  31: char *strrchr_2(const char *s,int c)
 00C8: 0xA0282D70   ;  32: void PlaySound(long param1, long param2, long param3, long tone, long param5)
 00CC: 0xA02796C8   ;  33: PlaySound2
@@ -250,7 +250,7 @@
 035C: 0xA8DADCB4   ;  D7: RamScreenBrightness
 ;360:              ;  D8: RamMenuAnywhere
 ;364:              ;  D9: 
-0368: 0xA8D6CD14   ;  DA: RamIsShutdown
+0368: 0xA8DADD50   ; 0DA: char *RamIsShutdown()
 036C: 0xA8E9206C   ;  DB: RamMainscreenAccuIcon
 0370: 0xA8DCCD40   ;  DC: int *RamRandSeed(void)
 0374: 0xA899F2BC   ;  DD: RamCurrentTrack
@@ -544,7 +544,7 @@
 07B0: 0xA097925B   ; 1EC: void FreeDynIcon(int picture)
 07B4: 0xA09793BB   ; 1ED: int IsDynIconBusy(int picture)
 ;7B8:              ; 1EE: ProgressCalculate(int current, int total)
-07BC: 0xA09792BD   ; 1EF: void SetDynIcon(int picture,IMGHDR *img,char *bitmap)
+07BC: 0xA09793B7   ; 1EF: void SetDynIcon(int picture, IMGHDR *img, char *bitmap)
 
 ;7C0:              ; 1F0: filecopy
 ;7C4:              ; 1F1: filecopy_op_announce
@@ -608,7 +608,7 @@
 08AC: 0xA02D2611   ; 22B: CreateRadioButtonList(RadioButtonListDesc *, char num_of_radiobuttons, 0, 0, char prev_setting, void HandlerFunc(int), char flag)
 08B0: 0xA02D1F03   ; 22C: pdcache_getval(char *return, int maxlen_of_return_str, char cachetype,0, *pd_entry_identifier)
 08B4: 0xA02D2001   ; 22D: pdcache_setval(char *new_value, char cachetype, 0, char *pd_entry_identifier)
-08B8: 0xA05315FB   ; 22E: OpenExplorer(ExplOpenDesc *)
+08B8: 0xA053161F   ; 22E: int OpenExplorer(NativeExplorerData *data)
 08BC: 0xA8D297D4   ; 22F: TDateTimeSettings *RamDateTimeSettings
 08C0: 0xA0902EA1   ; 230: int GetTimeZoneShift(int param1, int param2, int timeZone)
 08C4: 0xA8D2977C   ; 231: TAppointment *RamAppointment
