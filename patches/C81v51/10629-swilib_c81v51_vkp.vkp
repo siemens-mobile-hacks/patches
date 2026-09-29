@@ -9,15 +9,14 @@
 
 */
 
-; C81v51
 +00074000
 #pragma enable old_equal_ff
 
-0000: 0xA0002070   ;   0: void loopback0()
-0004: 0xA0002070   ;   1: void loopback1()
-0008: 0xA0002070   ;   2: void loopback2()
-000C: 0xA0002070   ;   3: void loopback3()
-0010: 0xA0002070   ;   4: void loopback4()
+0000: 0xA0090590   ; 000: void loopback0()
+0004: 0xA0090590   ; 001: void loopback1()
+0008: 0xA0090590   ; 002: void loopback2()
+000C: 0xA0090590   ; 003: void loopback3()
+0010: 0xA0090590   ; 004: void loopback4()
 0014: 0xA026EF19   ;   5: DecToHex
 0018: 0xA01ABF68   ;   6: int GetAkku(int param1,int param2)
 001C: 0xA006F061   ;   7: GetLP
@@ -55,14 +54,14 @@
 0094: 0xA029BE9B   ;  25: void DrawCanvas(void *data, int x1, int y1, int x2, int y2, int flag_one)
 0098: 0xA09FF981   ;  26: void DrawImgBW(unsigned int x, unsigned int y, unsigned int picture, char *pen, char *brush)
 009C: 0xA029C0C1   ;  27: AddIconToIconbar
-;0A0:              ;  28: uint32_t GetEELiteMaxID()
+00A0: 0xA01E5DE0   ; 028: uint32_t GetEELiteMaxID()
 00A4: 0xA01E4F6C   ;  29: getEEFullMaxID
 00A8: 0xA01E5364   ;  2A: int *GetEELiteBlockAddress(short blocknum)
-;0AC:              ;  2B: int GetEELiteBlockSizeVersion(uint32_t block, int *size, char *version)
+00AC: 0xA01E5CF0   ; 02B: int GetEELiteBlockSizeVersion(uint32_t block, int *size, char *version)
 00B0: 0xA01E4A00   ;  2C: getEEFullBlockSizeVersion(int block, *buf1, *buf2)
-;0B4:              ;  2D: int StartWriteEELiteBlock(uint32_t block, uint32_t size, uint32_t version, int *null)
-;0B8:              ;  2E: int FinishWriteEELiteBlock(uint32_t block, int *null)
-;0BC:              ;  2F: int DeleteEELiteBlock(uint32_t block, int *null)
+00B4: 0xA01E5F64   ; 02D: int StartWriteEELiteBlock(uint32_t block, uint32_t size, uint32_t version, int *null)
+00B8: 0xA01E625C   ; 02E: int FinishWriteEELiteBlock(uint32_t block, int *null)
+00BC: 0xA01E5E48   ; 02F: int DeleteEELiteBlock(uint32_t block, int *null)
 
 00C0: 0xA01E6144   ;  30: WriteEELiteBlock
 00C4: 0xA0FFA861   ;  31: char *strrchr_2(const char *s,int c)
@@ -157,7 +156,7 @@
 0214: 0xA026F241   ;  85: StrCmpNoCase
 0218: 0xA01E4820   ;  86: __arm void EEFullReadBlock(int block, void *buf, int offset, int size, int cepid,)
 021C: 0xA01E4AB0   ;  87: _arm void EEFullWriteBlock(int block, void *buf, int offset, int size, int cepid, int msg);
-0220: 0xA006EF00   ;  88: char GetAccessoryType(void) <api>
+;220:              ;  88: char GetAccessoryType(void)
 0224: 0xA0916470   ;  89: GetLangMesIntoWS
 0228: 0xA0251ED4   ;  8A: int GetFreeFlexSpace(int DriveNum, unsigned int *ErrorNumber)
 022C: 0xA0252788   ;  8B: int GetTotalFlexSpace(int DriveNum, unsigned int *ErrorNumber)
@@ -194,7 +193,7 @@
 02A0: 0xA0D29BDD   ;  A8: char IsGPRSConnected()
 02A4: 0xA0914983   ;  A9: void KbdLock()
 02A8: 0xA0A0FD8D   ;  AA: char *GetCurrentLocale()
-02AC: 0xA0002070   ;  AB: void loopback171()
+02AC: 0xA0090590   ; 0AB: void loopback171()
 ;2B0:              ;  AC: void DrawText(const WSHDR *text, int x, int y, int font, int w, int h, int align, const char *pen, const char *brush, int inversion)
 ;2B4:              ;  AD: void StrAnsi2Uni(const char *in, uint16_t *out)
 ;2B8:              ;  AE: void StrUni2Ansi(const uint16_t *in, char *out)
@@ -236,8 +235,8 @@
 
 0340: 0xA8DE90E4   ;  D0: RamAccPoint
 0344: 0xA8E52328   ;  D1: RamScreensaver
-0348: 0xA8D98560   ;  D2: char *RamAutoTime()
-034C: 0xA8A80000   ;  D3: RamStby
+0348: 0xA8DA8560   ; 0D2: char *RamIsAutoTimeEnabled(void)
+;34C:              ;  D3: char *RamIsStandby(void)
 0350: 0xA8E52114   ;  D4: RamMissedMes
 0354: 0xA8DB3CAC   ;  D5: RamIsLocked
 0358: 0xA8E2B950   ;  D6: RamNetOnline
@@ -538,7 +537,7 @@
 07B0: 0xA096C12F   ; 1EC: void FreeDynIcon(int picture)
 07B4: 0xA096C28F   ; 1ED: int IsDynIconBusy(int picture)
 ;7B8:              ; 1EE: int ProgressCalculate(int current, int total)
-07BC: 0xA096C191   ; 1EF: void SetDynIcon(int picture,IMGHDR *img,char *bitmap)
+07BC: 0xA096C28B   ; 1EF: void SetDynIcon(int picture, IMGHDR *img, char *bitmap)
 
 ;7C0:              ; 1F0: int ExplorerCopyFile(const WSHDR *from, const WSHDR *to, int overwrite, char transfer_id, uint32_t *errp)
 ;7C4:              ; 1F1: int ExplorerSetTransferState(char transfer_id, int state)
@@ -659,7 +658,7 @@
 0978: 0xA092C9A8   ; 25E: int Obs_Start(HObj hObj);
 097C: 0xA0A659CC   ; 25F: int Obs_Output_GetPictstruct(HObj hObj, IMGHDR **img);
 
-0980: 0xA0A6558C   ; 260: int Obs_Graphics_SetClipping(HObj hObj, short x, short y, short w, short h);
+0980: 0xA0A65590   ; 260: int Obs_Graphics_SetClipping(HObj obs, short x, short y, short w, short h)
 0984: 0xA0A64F9C   ; 261: int Obs_SetRotation(HObj hObj, int angle);
 0988: 0xA092C608   ; 262: int Obs_GetInfo (HObj hObj, int unk_0or1);
 098C: 0xA0A64D48   ; 263: int Obs_SetScaling (HObj hObj, int unk5);
@@ -722,7 +721,7 @@
 0A64: 0xA8DF83C4   ; 299: __swi __arm char *RamExtendedCameraState()
 0A68: 0xA0293C79   ; 29A: SwitchAudioToBTHeadset(TypeOfHeadset, unk_0xFFFE0001)
 0A6C: 0xA029AF31   ; 29B: GetTypeOfBTHeadset
-0A70: 0xA08FD857   ; 29C: __swi __arm char *RamInputLanguage()
+0A70: 0xA8DA8179   ; 29C: char *RamInputLanguage(void)
 0A74: 0xA8DB41F0   ; 29D: __swi __arm char *RamDisplayLanguage()
 0A78: 0xA8DA28C8   ; 29E: char *RamIsBTConnected()
 0A7C: 0xA8DA285C   ; 29F: char *RamIsBTHeadsetConnected()
@@ -771,7 +770,7 @@
 0B1C: 0xA026E5C5   ; 2C7: __swi __arm int GetSecondsFromDateTimeSince1997(int *result, TDate *date, TTime *time)
 0B20: 0xA026EA4E   ; 2C8: __swi __arm int GetSecondsFromTime(TTime *time)
 0B24: 0xA026E4AD   ; 2C9: __swi __arm int GetDateTimeFromSeconds(int *seconds, TDate *t_date, TTime *time, TDate *s_date)
-0B28: 0xA026E5C5   ; 2CA: __swi __arm int GetDateTimeFromSecondsSince1997(int *seconds, TDate *date, TTime *time)
+0B28: 0xA026E5E7   ; 2CA: int GetDateTimeFromSecondsSince1997(const int *seconds, TDate *date, TTime *time)
 0B2C: 0xA026EA61   ; 2CB: __swi __arm void GetTimeFromSeconds(TTime *time, int seconds)
 0B30: 0xA026E398   ; 2CC: __swi __arm void InitDate(TDate *date, unsigned long year, unsigned char month, unsigned char day)
 0B34: 0xA026ED89   ; 2CD: __swi __arm void InitTime(TDate *time, unsigned char hour, unsigned char min, unsigned char sec, unsigned long millisec)
@@ -971,7 +970,7 @@
 0E0C: 0xA0967367   ; 383: int PushDRWOBJOnLAYER(DRWOBJ *, LCDLAYER *)
 0E10: 0xA0969067   ; 384: __swi __arm int LCDRedrawLAYER(LCDLAYER *)
 0E14: 0xA0098F70   ; 385: GBSPROC *GetGBSProcAddress(unsigned short cepid)
-0E18: 0xA00C7E8F   ; 386: void SetPropTo_obj0x17(DRWOBJ *, RECT *, int zero0, EIMGHDR *, int zero1, int zero2)
+0E18: 0xA0A05FDD   ; 386: void DrwObj_InitTiledImageEx(DRWOBJ *drwobj, const RECT *rect, int flags, const EIMGHDR *img, int offset_x, int offset_y)
 0E1C: 0xA0964E25   ; 387: LCDLAYER *GetLCDLAYERByCurCepID()
 0E20: 0xA0A04861   ; 388: void SetDepthBuffer(char depth)
 0E24: 0xA0A04815   ; 389: void SetDepthBufferOnLCDLAYER(LCDLAYER *, char depth)
@@ -1003,7 +1002,7 @@
 0E84: 0xA0F87427   ; 3A1: int SSL_set_session(SSL *ssl, SSL_SESSION *session)
 0E88: 0xA0F812FF   ; 3A2: void SSL_SESSION_free(SSL_SESSION *sess)
 0E8C: 0xA0973013   ; 3A3: void SetMenuItemIconIMGHDR(void *gui, void *item, IMGHDR *icon)
-0E90: 0xA0A00515   ; 3A4: void LCDLAYER_Current_SetClipRegion(int x, int y, int x2, int y2)
+0E90: 0xA0A00515   ; 3A4: void LCD_SetDrawingRegion(int x, int y, int x2, int y2)
 0E94: 0xA09FFBD3   ; 3A5: void DrawIMGHDR(int x, int y, IMGHDR *img)
 0E98: 0xA09133E5   ; 3A6: void DrwObj_GetWH(DRWOBJ *drwobj, int *w, int *h)
 0E9C: 0xA096B72F   ; 3A7: int GUI_NewTimer(void *gui)
@@ -1056,6 +1055,5 @@
 0F4C: 0xA090E36B   ; 3D3: void IllumFilterSet(int flags, int unk)
 #pragma disable old_equal_ff
 +0
-
 ;------------------------- end -------------------------
 
