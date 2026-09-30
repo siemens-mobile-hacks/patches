@@ -87,7 +87,7 @@
 
 0100: 0xA028B7F5   ;  40: GetVibraStatus
 0104: 0xA08FE9F3   ;  41: GetProvider
-0108: 0xA0DF392B   ;  42: int IsScreenSaver()
+0108: 0xA0301DD3   ; 042: int IsScreenSaver(void)
 
 010C: 0xA0906963   ;  43: int IsUnlocked(void)
 0110: 0xA0900A71   ;  44: TempLightOn
@@ -110,7 +110,7 @@
 0150: 0xA02C1821   ;  54: StrToInt
 ;154:              ;  55: SwitchVibraOnOff
 0158: 0xA006F131   ;  56: PlayVibra
-;15C:              ;  57: IsCallAfterTimerStillRunning
+015C: 0xA0093388   ; 057: int IsTimerProc_2(GBSTMR *timer)
 0160: 0xA0FD0E34   ;  58: void zeromem_2(void *dest,int n)
 0164: 0xA0FD0ED8   ;  59: void *memcpy_2(void *dest,const void *source,int cnt)
 0168: 0xA0906221   ;  5A: KeypressOn(int key)
@@ -124,7 +124,7 @@
 0184: 0xA02CDEF3   ;  61: ShowNativeMenu
 0188: 0xA028B7BD   ;  62: SetVibraStatus
 018C: 0xA029E6E9   ;  63: void MMI_CanvasBuffer_FlushV(int CanvasID)
-;190:              ;  64: TriggerUpdate
+0190: 0xA097B223   ; 064: void GeneralFuncF1_2(int cmd)
 ;194:              ;  65: EndCall
 ;198:              ;  66: EndCallBusy
 ;19C:              ;  67: IsDirectCallActive
@@ -138,21 +138,20 @@
 01BC: 0xA0954B74   ;  6F: void RefreshGPRSTraffic()
 
 01C0: 0xA0954BA4   ;  70: int *GetGPRSTrafficPointer()
-;1C4:              ;  71: 
+01C4: 0xA0A05F9B   ; 071: void DrawRoundedFrame_2(int x1, int y1, int x2, int y2, int x_round, int y_round, int flags, const char *pen, const char *brush)
 ;1C8:              ;  72: SetCurrentSecondOfCall
 01CC: 0xA0D0FF2B   ;  73: int GetTypeOfCall(int type)
 01D0: 0xA02C90B5   ;  74: SHORTCUTREC *GetShortcutRecordByName(char *szShortcutName)
 01D4: 0xA029EC01   ;  75: IsCanvasBufferSet(char CanvasID)
 01D8: 0xA029EBB1   ;  76: GetCanvasBufferPicPtr(char CanvasID)
-;1DC:              ;  77: set2color_byPaletteAdr
+01DC: 0xA09743A3   ; 077: void DrwObj_SetColor_2(DRWOBJ *drwobj, const char *pen, const char *brush)
 01E0: 0xA090439D   ;  78: GetTimeFormat
 01E4: 0xA0905ACD   ;  79: DrawObject2Layer(LCD_Layer *, DRWOBJ *)
-;01E8: 0xA0978731     ;  7A: GBS_Cmd_4200_UpdateScreen
-01E8: 0x00006422   ;  7A: GBS_Cmd_4200_UpdateScreen
+01E8: 0xA0978731   ; 07A: void LCDLAYER_Flush(LCDLAYER *layer)
 ;1EC:              ;  7B: GetProfileFilter
 01F0: 0xA01B0D5B   ;  7C: unsigned int SetVibration(unsigned int power)
 01F4: 0xA0D0F0EB   ;  7D: IsIncognitoCall
-01F8: 0xA0D0E7A5   ;  7E: int rand(void)
+01F8: 0xA0AA4010   ; 07E: int rand(void)
 01FC: 0xA05348A1   ;  7F: IsPlayerOn
 
 0200: 0xA05EC475   ;  80: int ShowCallList(int list, int zero)
@@ -187,7 +186,7 @@
 0270: 0xA03023FB   ;  9C: CloseScreensaver
 0274: 0xA02FC613   ;  9D: GetMissedEventsPtr
 0278: 0xA006F2B1   ;  9E: int GetMissedEventCount(unsigned int Event)
-;27C:              ;  9F: DrawRect
+027C: 0xA0A05E67   ; 09F: void DrawRectangle_2(int x1, int y1, int x2, int y2, int flags, const char *pen, const char *brush)
 
 0280: 0xA096B811   ;  A0: int wsprintf_2(WSHDR *,const char *format,...)
 0284: 0xA01F77C3   ;  A1: WSHDR *wstrcpy_2(WSHDR *wshdr_d,WSHDR *wshdr_s)
@@ -251,7 +250,7 @@
 ;360:              ;  D8: RamMenuAnywhere
 ;364:              ;  D9: 
 0368: 0xA8DADD50   ; 0DA: char *RamIsShutdown()
-036C: 0xA8E9206C   ;  DB: RamMainscreenAccuIcon
+036C: 0xA8E9206C   ; 0DB: int *RamIsNotOnMainscreen()
 0370: 0xA8DCCD40   ;  DC: int *RamRandSeed(void)
 0374: 0xA899F2BC   ;  DD: RamCurrentTrack
 0378: 0xA8D77F78   ;  DE: RamIsSimPresent
@@ -581,7 +580,7 @@
 083C: 0xA0A0FA51   ; 20F: int ConstructEditDate(EDITCONTROL *EditControl,TDate *date)
 
 0840: 0xA097B081   ; 210: int GetCurGuiID(void)
-0844: 0xA00061E8   ; 211: GBS_Cmd_4209_RefreshScreensaver
+0844: 0x000061E8   ; 211: int GBS_Cmd_4209_RefreshScreensaver()
 0850: 0xA01F7865   ; 214: __thumb void wstrcpybypos(WSHDR *dest,WSHDR *src,int from,int len);         1F7865
 0854: 0xA01F78F5   ; 215: __thumb void wsRemoveChars(WSHDR *ws,int from,int to);   1F78F5
 0858: 0xA096B8AB   ; 216: __thumb void wstrcarprintf(WSHDR *,const char *format,...);  96B8AB
@@ -623,6 +622,7 @@
 08FC: 0xA0F44FD9   ; 23F: void MD5_Final(unsigned char *md, MD5_CTX *c)
 0900: 0xA0F45A61   ; 240: char *MD5_Hash(const unsigned char *data, unsigned long n, unsigned char *md)
 0904: 0xA09030BF   ; 241: void SetDateTime(TDate *, TTime *)
+0B48: 0xA050119D   ; 2D2: void StartNativeBrowserCore()
 #pragma disable old_equal_ff
 +0
 ;------------------------- end -------------------------
