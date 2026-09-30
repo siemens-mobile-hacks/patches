@@ -19,11 +19,11 @@
 
 +0074000
 #pragma enable  old_equal_ff
-0000: 0xA0002070   ;   0: void loopback0()
-0004: 0xA0002070   ;   1: void loopback1()
-0008: 0xA0002070   ;   2: void loopback2()
-000C: 0xA0002070   ;   3: void loopback3()
-0010: 0xA0002070   ;   4: void loopback4()
+0000: 0xA0090594   ; 000: void loopback0()
+0004: 0xA0090594   ; 001: void loopback1()
+0008: 0xA0090594   ; 002: void loopback2()
+000C: 0xA0090594   ; 003: void loopback3()
+0010: 0xA0090594   ; 004: void loopback4()
 0014: 0xA023A50D   ;   5: DecToHex
 0018: 0xA016DE88   ;   6: int GetAkku(int param1,int param2)
 001C: 0xA006F061   ;   7: (API) GetLP
@@ -126,7 +126,7 @@
 0188: 0xA02562A5   ;  62: SetVibraStatus
 018C: 0xA0268D11   ;  63: void MMI_CanvasBuffer_FlushV(int CanvasID)
 ;S75v52 has these-->
-;190:              ;  64: TriggerUpdate
+0190: 0xA07FE297   ;  64: void GeneralFuncF1_2(int cmd)
 ;194:              ;  65: EndCall
 ;198:              ;  66: EndCallBusy
 ;19C:              ;  67: IsDirectCallActive
@@ -150,16 +150,16 @@
 01DC: 0xA07F7417   ;  77: __thumb set2color_byPaletteAdr
 01E0: 0xA07A52BD   ;  78: GetTimeFormat
 01E4: 0xA07A69ED   ;  79: DrawObject2Layer(LCD_Layer *, DRWOBJ *)
-01E8: 0x00006422   ;  7A: GBS_Cmd_4200_UpdateScreen
+01E8: 0xA07FB7A5   ; 07A: void LCDLAYER_Flush(LCDLAYER *layer)
 ;1EC:              ;  7B: GetProfileFilter
 01F0: 0xA01717DB   ;  7C: unsigned int SetVibration(unsigned int power)
 01F4: 0xA0B324DB   ;  7D: IsIncognitoCall
-01F8: 0xA0B31B95   ;  7E: int rand(void)
+01F8: 0xA08FE9A8   ;  7E: __arm int rand(void)
 01FC: 0xA02EEA2D   ;  7F: IsPlayerOn
 
 0200: 0xA04CAB85   ;  80: int ShowCallList(int list, int zero)
 0204: 0xA0FC0B90   ;  81: HexToDec
-0208: 0xA02EEB49   ;  82: GetCurrentTrackFilename
+0208: 0xA02EEB49   ;  82: const WSHDR *GetLastAudioTrackFilename()
 ;20C:              ;  83: GetPathOfFoundFile
 0210: 0xA021D9A0   ;  84: int GetFileStats(const char *cFileName, void *StatBuffer, unsigned int *errornumber)
 0214: 0xA023A865   ;  85: int strcmpi(const char *s1, const char *s2)
@@ -202,7 +202,7 @@
 02A0: 0xA0B33CD9   ;  A8: char IsGPRSConnected()
 02A4: 0xA07A806B   ;  A9: void KbdLock()
 02A8: 0xA088BF89   ;  AA: char *GetCurrentLocale()
-02AC: 0xA0002070   ;  AB: void loopback171()
+02AC: 0xA0090594   ; 0AB: void loopback171()
 02B0: 0xA0FCF1B1   ;  AC: API DrawText
 02B4: 0xA0FCF0A1   ;  AD: API StrAnsi2Uni
 02B8: 0xA0FCF0C1   ;  AE: API StrUni2Ansi
@@ -239,12 +239,12 @@
 032C: 0xA8D73CB0   ;  CB: RamRingtoneStatus
 0330: 0xA8DE369C   ;  CC: char *RamMissedCalls()
 ;334:              ;  CD: char *RamMissedSMS()
-0338: 0xA8D181C4   ;  CE: char *RamDateTime()
+0338: 0xA8D28144   ;  CE: void *RamDateTime(void)
 033C: 0xA8E83244   ;  CF: char *RamAlarm()
 
 0340: 0xA8D64E8C   ;  D0: RamAccPoint
 ;344:              ;  D1: RamScreensaver
-0348: 0xA8D181EC   ;  D2: char *RamAutoTime()
+0348: 0xA8D28198   ; 0D2: char *RamIsAutoTimeEnabled(void)
 034C: 0xA8A80000   ;  D3: RamStby
 0350: 0xA8DCD390   ;  D4: char *RamMissedMes()
 0354: 0xA8D338E4   ;  D5: RamIsLocked
@@ -252,8 +252,8 @@
 035C: 0xA8DA79E8   ;  D7: RamScreenBrightness
 ;360:              ;  D8: RamMenuAnywhere
 ;364:              ;  D9: 
-0368: 0xA8D67844   ;  DA: RamIsShutdown
-036C: 0xA8E81ACC   ;  DB: RamMainscreenAccuIcon
+0368: 0xA8DA7A84   ; 0DA: char *RamIsShutdown()
+036C: 0xA8E81ACC   ;  DB: int *RamIsNotOnMainscreen()
 0370: 0xA8DC6A74   ;  DC: int *RamRandSeed(void)
 0374: 0xA899F2BC   ;  DD: RamCurrentTrack
 0378: 0xA8D7303C   ;  DE: RamIsSimPresent
@@ -459,7 +459,7 @@
 0668: 0xA0802B4F   ; 19A: void SetMenuItemText(void *gui,void *item,WSHDR *text,int item_n)
 066C: 0xA088B3E9   ; 19B: void EDIT_SetFocus(void *gui, int item)
 ;670:              ; 19C: void SEQKILLER(void *data, void(*next_in_seq)(void *), void *data_to_kill)
-0674: 0xA01942C8   ; 19D: long long getCpuUsedTime_if_ena(void)
+0674: 0xA01942DC   ; 19D: unsigned long long getCpuUsedTime_if_ena(void)
 0678: 0xA0194260   ; 19E: void StartCpuUsageCount(void)
 067C: 0xA012A819   ; 19F: int inflateInit2_(z_streamp strm, int windowBits,const char *version, int stream_size)
 
@@ -546,7 +546,7 @@
 07B0: 0xA07FC2CF   ; 1EC: void FreeDynIcon(int picture)
 07B4: 0xA07FC42F   ; 1ED: int IsDynIconBusy(int picture)
 ;7B8:              ; 1EE: ProgressCalculate(int current, int total)
-07BC: 0xA07FC331   ; 1EF: void SetDynIcon(int picture,IMGHDR *img,char *bitmap)
+07BC: 0xA07FC42B   ; 1EF: void SetDynIcon(int picture, IMGHDR *img, char *bitmap)
 
 ;7C0:              ; 1F0: filecopy
 ;7C4:              ; 1F1: filecopy_op_announce
@@ -558,7 +558,7 @@
 07DC: 0xA006F501   ; 1F7: (API) long GetFileSize(char *Filename)
 07E0: 0xA02EE9AB   ; 1F8: int GetPlayStatus(void)
 07E4: 0xA006F401   ; 1F9: (API) void SendMP_cmd(cmd,substract)
-07E8: 0xA8D075FD   ; 1FA: char *RamVolumeStep()
+07E8: 0xA8D075FD   ; 1FA: char *RamVolumeLevel()
 07EC: 0xA8D1F304   ; 1FB: char *RamMediaIsPlaying()
 07F0: 0xA07F5A1B   ; 1FC: void CloseCSM(int id)
 07F4: 0xA087B4AF   ; 1FD: SetProp2Square_v2
@@ -615,7 +615,7 @@
 08AC: 0xA02AA0F1   ; 22B: CreateRadioButtonList(RadioButtonListDesc *, char num_of_radiobuttons, 0, 0, char prev_setting, void HandlerFunc(int), char flag)
 08B0: 0xA02A99E3   ; 22C: pdcache_getval(char *return, int maxlen_of_return_str, char cachetype,0, *pd_entry_identifier)
 08B4: 0xA02A9AE1   ; 22D: pdcache_setval(char *new_value, char cachetype, 0, char *pd_entry_identifier)
-08B8: 0xA02EB8F7   ; 22E: OpenExplorer(ExplOpenDesc *)
+08B8: 0xA02EB91B   ; 22E: int OpenExplorer(NativeExplorerData *data)
 08BC: 0xA8D28194   ; 22F: TDateTimeSettings *RamDateTimeSettings
 
 08C0: 0xA07A3DC1   ; 230: int GetTimeZoneShift(int param1, int param2, int timeZone)
@@ -659,18 +659,18 @@
 094C: 0xA8DE3AC2   ; 253: char *RamLastCallNum()
 0950: 0xA02EB91B   ; 254: int StartNativeExplorer(NativeExplorerData* data)
 0954: 0xA0804ECB   ; 255: void MenuSetUserPointer(void *gui,void *user_pointer)
-0958: 0xA034F21B   ; 256: isSetupTheme()
+;958:              ; 256: const char *RamNameOfReceivedOrSentFile()
 095C: 0xA07D2801   ; 257: isSendReceiveFile()
 0960: 0xA07FBCC1   ; 258: int CalcBitmapSize(short w,short h, char typy)
 0964: 0xA0B2C740   ; 259: HObj Obs_CreateObject(int uid_in, int uid_out, int prio, int msg_callback, int emb4, int sync,unsigned int *ErrorNumber)
-0968: 0xA0C48A80   ; 25A: int Obs_DestroyObject(HObj hObj)
+0968: 0xA0B0E820   ; 25A: int Obs_DestroyObject(HObj obs)
 096C: 0xA0B2A724   ; 25B: int Obs_SetInput_File (HObj hObj, int unk_zero, WSHDR *path)
 0970: 0xA0B64D34   ; 25C: int Obs_GetInputImageSize (HObj hObj, short *w, short *h)
 0974: 0xA0B64EB0   ; 25D: int Obs_SetOutputImageSize (HObj hObj, short w, short h)
 0978: 0xA0B0DF38   ; 25E: int Obs_Start(HObj hObj)
 097C: 0xA0B66028   ; 25F: int Obs_Output_GetPictstruct(HObj hObj, IMGHDR *img)
 
-0980: 0xA0B65BE8   ; 260: int Obs_Graphics_SetClipping(HObj hObj, short x, short y, short w, short h)
+0980: 0xA0B65BEC   ; 260: int Obs_Graphics_SetClipping(HObj obs, short x, short y, short w, short h)
 0984: 0xA0B655F8   ; 261: int Obs_SetRotation(HObj hObj, int angle)
 0988: 0xA0B0DB98   ; 262: int Obs_GetInfo(HObj hObj, int unk_0or1)
 098C: 0xA0B653A4   ; 263: intObs_SetScaling(HObj hObj, int unk5)
@@ -726,8 +726,8 @@
 0A40: 0xA8E25418   ; 290: char *RamCallState()
 0A44: 0xA026A380   ; 291: int RefreshAlarmClock()
 0A48: 0xA8E83248   ; 292: char *RamIsAlarmAutorepeatOn()
-0A4C: 0xA8E83244   ; 293: char *RamAlarmclockHour()
-0A50: 0xA8E83244   ; 294: char *RamAlarmclockMinute()
+0A4C: 0xA8E83250   ; 293: char *RamAlarmClockHours()
+0A50: 0xA8E83251   ; 294: char *RamAlarmClockMinutes()
 ;0A54:             ; 295: 
 0A58: 0xA0255C15   ; 296: void getProfileNameByN(WSHDR *ws, int n, int _0)
 0A5C: 0xA8E7BF94   ; 297: char *RamIsSoundRecord()
@@ -785,7 +785,7 @@
 0B1C: 0xA0239BB9   ; 2C7: int GetSecondsFromDateTimeSince1997(int *result, TDate *date, TTime *time)
 0B20: 0xA023A042   ; 2C8: int GetSecondsFromTime(*TTime time)
 0B24: 0xA0239AA1   ; 2C9: int GetDateTimeFromSeconds(int *seconds, TDate *t_date, TTime *time, TDate *s_date)
-0B28: 0xA0239BB9   ; 2CA: int GetDateTimeFromSecondsSince1997(int *seconds, TDate *date, TTime *time)
+0B28: 0xA0239BDB   ; 2CA: int GetDateTimeFromSecondsSince1997(const int *seconds, TDate *date, TTime *time)
 0B2C: 0xA023A055   ; 2CB: void GetTimeFromSeconds(TTime *time, int seconds)
 0B30: 0xA023998C   ; 2CC: void InitDate(TDate *date, unsigned long year, unsigned char month, unsigned char day)
 0B34: 0xA023A37D   ; 2CD: void InitTime(TDate *time, unsigned char hour, unsigned char min, unsigned char sec, unsigned long millisec)
@@ -794,7 +794,7 @@
 
 0B40: 0xA02393C1   ; 2D0: int GetDaysFromMonth(TDate *date)
 0B44: 0xA02393A1   ; 2D1: int IsLeapYear(TDate *date)
-0B48: 0xA043fe75   ; 2D2: void StartBrowser
+0B48: 0xA043FE75   ; 2D2: void StartNativeBrowserCore()
 ;S75v52 has these-->
 ;0B4C:             ; 2D3: int GetFilledNAbDataCount(NativeAbData *nab)
 ;0B50:             ; 2D4: void *GetDataFromNAbData(NativeAbData *nab, int n)
@@ -826,10 +826,9 @@
 ;0BB0:             ; 2EC: int i2c_transfer(I2C_MSG *msg)
 ;0BB4:             ; 2ED: int i2c_receive(I2C_MSG *msg)
 
-0BC0: 0xA07F7507 ; 2F0: int PushDRWOBJOnLAYER(DRWOBJ*, LCDLAYER *);
-0BC4: 0xA07F9207 ; 2F1 int LCDRedrawLAYER(LCDLAYER *);
+;BC0:              ; 2F0: void *dlsym(int handle, const char *name)
+;BC4:              ; 2F1: int dlclose(int handle)
 #pragma disable old_equal_ff
 +0
-
 ;------------------------- end -------------------------
 
