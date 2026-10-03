@@ -88705,6 +88705,16 @@
 				"ru": "Не менять левый софткей на ГЭ если нет сети",
 				"en": "Don`t change the left softkey on IDLE if there is no network"
 			}
+		},
+		"11521": {
+			"id": 11521,
+			"model": "M50v19",
+			"file": "M50v19/11521-dev_menu_m50_v19.vkp",
+			"mtime": 1791010762000,
+			"title": {
+				"ru": "Включение инженерного меню",
+				"en": "Enable developer menu"
+			}
 		}
 	},
 	"C72v22": {
