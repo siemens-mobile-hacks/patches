@@ -1,0 +1,66 @@
+;M50v19
+;Увеличение флекс памяти до 340кб
+;Increase flex memory up to 340kb
+;(c) ufoshko
+;(r) Romir0o Коммьюнити
+;Version: 
+;PatchID: 11522
+;Details: https://patches.kibab.com/patches/details.php5?id=11522
+;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=m50v19&f=incr_flex_340kb_m50v19.zip
+
+/*
+Расширяет память до 340кб
+Инструкция:
+Сохранить нужное с памяти телефона - ПОСЛЕ УСТАНОВКИ ВСЕ БУДЕТ УТЕРЯНО!
+Залить патч.
+Не включая телефон залить приложеный патч m50v19_flex_wipe (стирает Flex Memory. Он заполняет FF все 8 сегментов, где она лежит: B1–B3 (0x110000–0x13FFFF) и B7–BB (0x170000–0x1BFFFF).Старая разметка Flex на 228 КБ остаётся на флеше)
+
+Включить телефон. При первом включении телефон будет тупить и даже с сим-картой на несколько секунд покажет "Вставте сим" так как идет форматирование.
+*/
+
+;AFTER APPLYING: apply m50v19_flex_wipe.vkp (erases Flex segments B1,B2,B3,B7,B8,B9,BA,BB)
+;  (0x110000-0x13FFFF and 0x170000-0x1BFFFF in 6MB file). ALL FLEX DATA WILL BE LOST - back it up!
+;  Phone formats Flex itself on next boot (MBR 718, BPB 717, spf 3, 678 clusters = 339KB).
+;Uses free segments B1,B2,B3 (must be FF) and free space 0xA00130-0xA00191.
+;RAM: map moved to 0x108200-0x1087A2, ram_B to 0x108100 (page 0x42, unused in stock).
+
+;LBA_FS descriptor: 8 sub-tables (B7,B8,B9,BA,BB,B1,B2,B3) + master entries, sub_count fix
+000130: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 0000B70040000000B80040000000B900
+000140: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 40000000BA0040000000BB0040000000
+000150: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF B1004000010030018002010036018002
+000160: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 01003C01800201004201800201004801
+000170: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 800201004E0180020100860180020100
+000180: FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 8C01800200000000B20040000000B300
+000190: FFFF 4000
+;LBA_FS sector count 5 -> 8
+0090CA: 05 08
+;descriptor ptr -> 0x0280:0x0154 (A00154), ram_B 0x0040:0x09CA -> 0x0042:0x0100
+0090D0: AC108202CA094000 5401800200014200
+;SUB R14,#0x01F0 -> #0x02D0 (LBA bounds)
+29AF56: F001 D002
+;map write CMP limit 496 -> 720
+29AFC8: F001 D002
+;map write EXTP page 0x40 -> 0x42
+29AFD0: 40 42
+;map write offset 0x0A24 -> 0x0200
+29AFD4: 240A 0002
+;map read CMP limit 496 -> 720
+29B002: F001 D002
+;map read EXTP page 0x40 -> 0x42
+29B00A: 40 42
+;map read offset 0x0A24 -> 0x0200
+29B00E: 240A 0002
+;map memclear offset 0x0A24 -> 0x0200
+29B038: 240A 0002
+;map memclear page 0x40 -> 0x42
+29B03C: 40 42
+;map memclear size 994 -> 1442
+29B042: E203 A205
+;GET_SECTOR_COUNT 496 -> 720 (main fix)
+29B04C: F001 D002
+;TRAP 0x7402 skip -> JMPA cc_UC,0xC9E1E8
+29E126: E64702749B60 EA00E8E1CC00
+;BPB total_sectors = 717
+349934: DAB4E65E26F6FFFF3870ED08D4C00200 E6F6CD02E6F70000CC00CC00E6FCCD02
+;------------------------- end -------------------------
+
