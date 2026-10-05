@@ -47,6 +47,7 @@ The patch has additional files, but it isn't accessible.
 | 11204 | CF75v23 | [Изменить кадры анимации в Native Menu<br>Change animation frames in Native Menu](https://patches.kibab.com/patches/details.php5?id=11204) |
 | 10396 | CL61v128 | [Elfloader 2.3 Official<br>Elfloader 2.3 Official](https://patches.kibab.com/patches/details.php5?id=10396) |
 | 3737 | CX65v43 | [ZIPViewer<br>ZIPViewer](https://patches.kibab.com/patches/details.php5?id=3737) |
+| 11522 | M50v19 | [Увеличение флекс памяти до 340кб<br>Increase flex memory up to 340kb](https://patches.kibab.com/patches/details.php5?id=11522) |
 | 3059 | SL45iv56 | [DLDR. Загрузчик демонов (READRESSED)<br>DLDR. Daemon loader (READRESSED)](https://patches.kibab.com/patches/details.php5?id=3059) |
 | 3403 | X75v100 | [Иконка вибры<br>Vibra Icon](https://patches.kibab.com/patches/details.php5?id=3403) |
 | 3404 | X75v100 | [Зеленый Калькулятор<br>Green Calculator](https://patches.kibab.com/patches/details.php5?id=3404) |
