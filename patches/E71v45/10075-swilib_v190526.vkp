@@ -574,8 +574,8 @@
 
 0840: 0xA094F3F9 ; 210: int GetCurGuiID(void);
 0844: 0x00006171 ; 211: int GBS_Cmd_4209_RefreshScreensaver();
-;0848: 0x ; 212: __unknown int CardExplGetCurItem(void *csm);
-;084C: 0x ; 213: __unknown void CardExplGetFName(void *csm, int cur_item, WSHDR *dest);
+0848: 0xA071D71C ; 212: int CardExplGetCurItem(void *csm)
+084C: 0xA0698C24 ; 213: void CardExplGetFName(void *csm, int index, WSHDR *filename)
 0850: 0xA04FB46D ; 214: __thumb void wstrcpybypos(WSHDR *dest,WSHDR *src,int from,int len);
 0854: 0xA04FB4FD ; 215: __thumb void wsRemoveChars(WSHDR *ws,int from,int to);
 0858: 0xA093EBE7 ; 216: __thumb void wstrcatprintf(WSHDR *,const char *format,...);
@@ -703,7 +703,7 @@
 0A30: 0xA8F09B58 ; 828C: __thumb char *RamTemporaryHeapSize();***
 0A34: 0xA8DA2634 ; 828D: __thumb char *RamBTNameDevice();
 0A38: 0xA8DA181C ; 828E: __thumb char *RamActiveGPRSProfileName();
-;0A3C: 0x  ; 828F: __thumb char *RamIsNumberTyping();
+0A3C: 0xA8DF330C ; 28F: char *RamIsNumberTyping(void)
 
 0A40: 0xA8EF6DF0 ; 8290: __thumb char *RamCallState();
 0A44: 0xA05C5ACC ; 291: int RefreshAlarmClock();
@@ -824,9 +824,9 @@
 
 0C40: 0xA009D684 ; 310: __arm NU_Create_Mailbox
 0C44: 0xA009D6B0 ; 311: __arm NU_Delete_Mailbox
-;C48:            ; 312: __arm NU_Reset_Mailbox
+0C48: 0xA009D79C ; 312: int NU_Reset_Mailbox(NU_MAILBOX *mailbox)
 0C4C: 0xA009D6D0 ; 313: __arm NU_Send_To_Mailbox
-;C50:            ; 314: __arm NU_Broadcast_To_Mailbox
+0C50: 0xA009D7BC ; 314: int NU_Broadcast_To_Mailbox(NU_MAILBOX *mailbox, void *message, unsigned long suspend)
 0C54: 0xA009D734 ; 315: __arm NU_Receive_From_Mailbox
 ;C58:            ; 316: __arm NU_Established_Mailboxes
 ;C5C:            ; 317: __arm NU_Mailbox_Information
@@ -854,13 +854,13 @@
 ;CB0:            ; 32C: __arm NU_Pipe_Pointers
 0CB4: 0xA009DFB4 ; 32D: __arm NU_Create_Semaphore
 0CB8: 0xA009DFEC ; 32E: __arm NU_Delete_Semaphore
-;CBC:            ; 32F: __arm NU_Reset_Semaphore
+0CBC: 0xA00A27E4 ; 32F: int NU_Reset_Semaphore(NU_SEMAPHORE *semaphore, unsigned long initial_count)
 
 0CC0: 0xA009E00C ; 330: __arm NU_Obtain_Semaphore
 0CC4: 0xA009E05C ; 331: __arm NU_Release_Semaphore
-;CC8:            ; 332: __arm NU_Established_Semaphores
-;CCC:            ; 333: __arm NU_Semaphore_Information
-;CD0:            ; 334: __arm NU_Semaphore_Pointers
+0CC8: 0xA00A2618 ; 332: unsigned long NU_Established_Semaphores(void)
+0CCC: 0xA00A26D0 ; 333: int NU_Semaphore_Information(NU_SEMAPHORE *semaphore, CHAR *name, unsigned long *current_count, OPTION *suspend_type, unsigned long *tasks_waiting, NU_TASK **first_task)
+0CD0: 0xA00A262C ; 334: unsigned long NU_Semaphore_Pointers(NU_SEMAPHORE **pointer_list, unsigned long maximum_pointers)
 0CD4: 0xA009D520 ; 335: __arm NU_Create_Event_Group
 0CD8: 0xA009D53C ; 336: __arm NU_Delete_Event_Group
 0CDC: 0xA009D55C ; 337: int NU_Set_Events(NU_EVENT_GROUP *group, unsigned long events, OPTION operation)
@@ -891,7 +891,7 @@
 0D3C: 0xA00A293C ; 34F: __arm NU_Local_Control_Interrupts
 
 0D40: 0xA00A2954 ; 350: __arm NU_Restore_Interrupts
-;D44:            ; 351: __arm NU_Setup_Vector
+0D44: 0xA009B814 ; 351: void *NU_Setup_Vector(INT vector, void *new_vector)
 0D48: 0xA009C920 ; 352: __arm NU_Register_LISR
 0D4C: 0xA009CDAC ; 353: int NU_Activate_HISR(NU_HISR *hisr)
 0D50: 0xA009CAC0 ; 354: __arm NU_Create_HISR
@@ -1064,9 +1064,12 @@
 0FEC: 0xA056798C ; 3FB: __arm int sys_mount(uint16_t drive, uint32_t *err);
 0FF0: 0xA05679CC ; 3FC: __arm int sys_unmount(uint16_t drive, uint32_t *err);
 0FF4: 0xA056859C ; 3FD: __arm int setfiletime(int fd, uint16_t date, uint16_t time, uint32_t *err);
+0FF8: 0xA122B3A9 ; 3FE: int vsprintf(char *s, const char *format, va_list args)
+0FFC: 0xA0FAEA45 ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 
 #pragma disable old_equal_ff
 +0
+
 
 ;------------------------- end -------------------------
 
