@@ -828,8 +828,13 @@
 
 ;BC0:              ; 2F0: void *dlsym(int handle, const char *name)
 ;BC4:              ; 2F1: int dlclose(int handle)
+0CBC: 0xA00A7880   ; 32F: int NU_Reset_Semaphore(NU_SEMAPHORE *semaphore, unsigned long initial_count)
+0CC8: 0xA00A7978   ; 332: unsigned long NU_Established_Semaphores(void)
+0CCC: 0xA00A7A30   ; 333: int NU_Semaphore_Information(NU_SEMAPHORE *semaphore, CHAR *name, unsigned long *current_count, OPTION *suspend_type, unsigned long *tasks_waiting, NU_TASK **first_task)
+0CD0: 0xA00A798C   ; 334: unsigned long NU_Semaphore_Pointers(NU_SEMAPHORE **pointer_list, unsigned long maximum_pointers)
 #pragma disable old_equal_ff
 +0
+
 
 ;------------------------- end -------------------------
 
