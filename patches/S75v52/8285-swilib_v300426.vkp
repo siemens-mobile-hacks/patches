@@ -29,7 +29,7 @@
 002C: 0xA02532E8   ;   B: int fread(int FileHandler, void *cBuffer, int iByteCount, unsigned int *ErrorNumber)
 0030: 0xA0253418   ;   C: unsigned int fwrite(int FileHandler, void const *cBuffer, int iByteCount, unsigned int *ErrorNumber)
 0034: 0xA025317C   ;   D: void fclose(int FileHandler, unsigned int *ErrorNumber)
-;038:              ;   E:
+0038: 0xA02531AC   ; 00E: int sys_fflush(int fd, uint32_t *err)
 003C: 0xA02531DC   ;   F: unsigned int lseek(int FileHandler, unsigned int offset, unsigned int origin, unsigned int *ErrorNumber, unsigned int *ErrorNumber2)
 
 0040: 0xA0252E20   ;  10: int mkdir(const char *cFileName, unsigned int *ErrorNumber)
@@ -542,8 +542,8 @@
 ;7B8:              ; 1EE: ProgressCalculate(int current, int total)
 07BC: 0xA09769B7   ; 1EF: void SetDynIcon(int picture, IMGHDR *img, char *bitmap)
 
-;7C0:              ; 1F0: filecopy
-;7C4:              ; 1F1: filecopy_op_announce
+07C0: 0xA0527933   ; 1F0: int ExplorerCopyFile(const WSHDR *from, const WSHDR *to, int overwrite, char transfer_id, uint32_t *errp)
+07C4: 0xA05291DB   ; 1F1: void ExplorerSetTransferState(char transfer_id, int state)
 07C8: 0xA01DF2A4   ; 1F2: devmenu_config_IsCheckboxOff
 07CC: 0xA00A8954   ; 1F3: unsigned int GetSessionAge()
 07D0: 0xA8DCD5C0   ; 1F4: char *RamServiceProviderName()
@@ -578,8 +578,8 @@
 
 0840: 0xA0978681   ; 210: int GetCurGuiID(void)
 0844: 0x000061E8   ; 211: GBS_Cmd_4209_RefreshScreensaver
-;848:              ; 212: int CardExplGetCurItem(void *csm)
-;84C:              ; 213: void CardExplGetFName(void *csm, int cur_item, WSHDR *dest)
+0848: 0xA05A0B11   ; 212: int CardExplGetCurItem(void *csm)
+084C: 0xA0529CF5   ; 213: void CardExplGetFName(void *csm, int index, WSHDR *filename)
 0850: 0xA01F7865   ; 214: void wstrcpybypos(WSHDR *dest,WSHDR *src,int from,int len)
 0854: 0xA01F78F5   ; 215: void wsRemoveChars(WSHDR *ws,int from,int to)
 0858: 0xA0968E0F   ; 216: void wstrcarprintf(WSHDR *,const char *format,...)
@@ -705,7 +705,7 @@
 0A1C: 0xA02D3193   ; 287: int BT_GetLocVisibility()
 0A20: 0xA02EDF5D   ; 288: int Audio_GetCurrAudioPath(void)
 0A24: 0xA0DB40D1   ; 289: int isDecryption()
-;0A28:             ; 28A: char *RamIsFileCache()
+0A28: 0xA8D7939C   ; 28A: void *RamIsFileCache(void)
 0A2C: 0xA8E43064   ; 28B: char *RamTotalHeapSize()
 0A30: 0xA8E430D4   ; 28C: char *RamTemporaryHeapSize()
 0A34: 0xA8D23CF0   ; 28D: char *RamBTNameDevice()
@@ -835,12 +835,12 @@
 0C38: 0xA00A6900   ; 30E: __arm NU_Task_Information
 0C3C: 0xA00A6588   ; 30F: __arm unsigned long NU_Task_Pointers(NU_TASK **pointer_list, unsigned long maximum_pointers)
 
-;C40:              ; 310: __arm NU_Create_Mailbox
-;C44:              ; 311: __arm NU_Delete_Mailbox
-;C48:              ; 312: __arm NU_Reset_Mailbox
-;C4C:              ; 313: __arm NU_Send_To_Mailbox
-;C50:              ; 314: __arm NU_Broadcast_To_Mailbox
-;C54:              ; 315: __arm NU_Receive_From_Mailbox
+0C40: 0xA00A3090   ; 310: int NU_Create_Mailbox(NU_MAILBOX *mailbox, CHAR *name, OPTION suspend_type)
+0C44: 0xA00A30BC   ; 311: int NU_Delete_Mailbox(NU_MAILBOX *mailbox)
+0C48: 0xA00A31A8   ; 312: int NU_Reset_Mailbox(NU_MAILBOX *mailbox)
+0C4C: 0xA00A30DC   ; 313: int NU_Send_To_Mailbox(NU_MAILBOX *mailbox, void *message, unsigned long suspend)
+0C50: 0xA00A31C8   ; 314: int NU_Broadcast_To_Mailbox(NU_MAILBOX *mailbox, void *message, unsigned long suspend)
+0C54: 0xA00A3140   ; 315: int NU_Receive_From_Mailbox(NU_MAILBOX *mailbox, void *message, unsigned long suspend)
 ;C58:              ; 316: __arm NU_Established_Mailboxes
 ;C5C:              ; 317: __arm NU_Mailbox_Information
 ;C60:              ; 318: __arm NU_Mailbox_Pointers
@@ -874,37 +874,37 @@
 ;CC8:              ; 332: __arm NU_Established_Semaphores
 ;CCC:              ; 333: __arm NU_Semaphore_Information
 ;CD0:              ; 334: __arm NU_Semaphore_Pointers
-;CD4:              ; 335: __arm NU_Create_Event_Group
-;CD8:              ; 336: __arm NU_Delete_Event_Group
-;CDC:              ; 337: __arm NU_Set_Events
-;CE0:              ; 338: __arm NU_Retrieve_Events
+0CD4: 0xA00A2F2C   ; 335: int NU_Create_Event_Group(NU_EVENT_GROUP *group, CHAR *name)
+0CD8: 0xA00A2F48   ; 336: int NU_Delete_Event_Group(NU_EVENT_GROUP *group)
+0CDC: 0xA00A2F68   ; 337: int NU_Set_Events(NU_EVENT_GROUP *group, unsigned long events, OPTION operation)
+0CE0: 0xA00A2F9C   ; 338: int NU_Retrieve_Events(NU_EVENT_GROUP *group, unsigned long requested_flags, OPTION operation, unsigned long *retrieved_flags, unsigned long suspend)
 ;CE4:              ; 339: __arm NU_Established_Event_Groups
 ;CE8:              ; 33A: __arm NU_Event_Group_Information
 ;CEC:              ; 33B: __arm NU_Event_Group_Pointers
-;CF0:              ; 33C: __arm NU_Control_Signals
-;CF4:              ; 33D: __arm NU_Receive_Signals
-;CF8:              ; 33E: __arm NU_Register_Signal_Handler
-;CFC:              ; 33F: __arm NU_Send_Signals
+0CF0: 0xA00A3AF0   ; 33C: unsigned long NU_Control_Signals(unsigned long signal_enable_mask)
+0CF4: 0xA00A3B10   ; 33D: unsigned long NU_Receive_Signals(void)
+0CF8: 0xA00A3B30   ; 33E: STATUS NU_Register_Signal_Handler(void (*signal_handler)(unsigned long))
+0CFC: 0xA00A3B5C   ; 33F: STATUS NU_Send_Signals(NU_TASK *task, unsigned long signals)
 
-;D00:              ; 340: __arm NU_Create_Partition_Pool
-;D04:              ; 341: __arm NU_Delete_Partition_Pool
-;D08:              ; 342: __arm NU_Allocate_Partition
-;D0C:              ; 343: __arm NU_Deallocate_Partition
-;D10:              ; 344: __arm NU_Established_Partition_Pools
-;D14:              ; 345: __arm NU_Partition_Pool_Information
-;D18:              ; 346: __arm NU_Partition_Pool_Pointers
-;D1C:              ; 347: __arm NU_Create_Memory_Pool
-;D20:              ; 348: __arm NU_Delete_Memory_Pool
-;D24:              ; 349: __arm NU_Allocate_Memory
-;D28:              ; 34A: __arm NU_Deallocate_Memory
-;D2C:              ; 34B: __arm NU_Established_Memory_Pools
-;D30:              ; 34C: __arm NU_Memory_Pool_Information
-;D34:              ; 34D: __arm NU_Memory_Pool_Pointers
+0D00: 0xA00A3230   ; 340: int NU_Create_Partition_Pool(NU_PARTITION_POOL *pool, CHAR *name, void *start_address, unsigned long pool_size, unsigned long partition_size, OPTION suspend_type)
+0D04: 0xA00A32B4   ; 341: int NU_Delete_Partition_Pool(NU_PARTITION_POOL *pool)
+0D08: 0xA00A32D4   ; 342: int NU_Allocate_Partition(NU_PARTITION_POOL *pool, void **return_pointer, unsigned long suspend)
+0D0C: 0xA00A3338   ; 343: int NU_Deallocate_Partition(void *partition)
+0D10: 0xA00A3370   ; 344: unsigned long NU_Established_Partition_Pools(void)
+0D14: 0xA00A3428   ; 345: int NU_Partition_Pool_Information(NU_PARTITION_POOL *pool, CHAR *name, void **start_address, unsigned long *pool_size, unsigned long *partition_size, unsigned long *available, unsigned long *allocated, OPTION *suspend_type, unsigned long *tasks_waiting, NU_TASK **first_task)
+0D18: 0xA00A3384   ; 346: unsigned long NU_Partition_Pool_Pointers(NU_PARTITION_POOL **pointer_list, unsigned long maximum_pointers)
+0D1C: 0xA00A2B5C   ; 347: int NU_Create_Memory_Pool(NU_MEMORY_POOL *pool, CHAR *name, void *start_address, unsigned long pool_size, unsigned long min_allocation, OPTION suspend_type)
+0D20: 0xA00A2BEC   ; 348: int NU_Delete_Memory_Pool(NU_MEMORY_POOL *pool)
+0D24: 0xA00A2C0C   ; 349: int NU_Allocate_Memory(NU_MEMORY_POOL *pool, void **return_pointer, unsigned long size, unsigned long suspend)
+0D28: 0xA00A2C98   ; 34A: int NU_Deallocate_Memory(void *memory)
+0D2C: 0xA00A2CD0   ; 34B: unsigned long NU_Established_Memory_Pools(void)
+0D30: 0xA00A2D88   ; 34C: int NU_Memory_Pool_Information(NU_MEMORY_POOL *pool, CHAR *name, void **start_address, unsigned long *pool_size, unsigned long *min_allocation, unsigned long *available, OPTION *suspend_type, unsigned long *tasks_waiting, NU_TASK **first_task)
+0D34: 0xA00A2CE4   ; 34D: unsigned long NU_Memory_Pool_Pointers(NU_MEMORY_POOL **pointer_list, unsigned long maximum_pointers)
 0D38: 0xA00A8058   ; 34E: __arm NU_Control_Interrupts
 0D3C: 0xA00A8084   ; 34F: __arm NU_Local_Control_Interrupts
 
 0D40: 0xA00A809C   ; 350: __arm NU_Restore_Interrupts
-;D44:              ; 351: __arm NU_Setup_Vector
+0D44: 0xA00A1220   ; 351: void *NU_Setup_Vector(INT vector, void *new_vector)
 0D48: 0xA00A232C   ; 352: __arm NU_Register_LISR
 0D4C: 0xA00A27B8   ; 353: __arm NU_Activate_HISR
 0D50: 0xA00A24CC   ; 354: __arm NU_Create_HISR
@@ -991,6 +991,7 @@
 0EA0: 0xA0975F9F   ; 3A8: __thumb int GUI_DeleteTimer(void *gui, int id);
 0EA4: 0xA0975EEF   ; 3A9: __thumb void GUI_StartTimerProc(void *gui, int id, long timeout, GUI_TimerProc callback);
 0EA8: 0xA0FC45DD   ; 3AA: __thumb void qsort(void *first, size_t nitems, size_t size, int (*comparator)(const void *, const void *));
+0EAC: 0xA0FC38C5   ; 3AB: void *bsearch(const void *key, const void *first, size_t nitems, size_t size, int (*comparator)(const void *, const void *))
 ; 0EAC:            ; 3AB
 ; 0EB0:            ; 3AC
 ; 0EB4:            ; 3AD
@@ -1004,15 +1005,15 @@
 0ED0: 0xA0902663   ; 3B4: __thumb GetDate_ws(WSHDR *ws, TDate *date, unsigned int unk);
 0ED4: 0xA0902511   ; 3B5: __thumb GetTime_ws(WSHDR *ws, TTime *time, unsigned int unk);
 ;0ED8:             ; 3B6: __arm int Obs_SetTransparent(HObj obs, unsigned int unk_3_4_5);
-;0EDC:             ; 3B7: __arm int sys_mkdir_ws(const WSHDR *dirname, unsigned int *err);
-;0EE0:             ; 3B8: __arm int sys_rmdir_ws(const WSHDR *path, unsigned int *err);
-;0EE4:             ; 3B9: __arm int sys_rename_ws(const WSHDR *old_name, const WSHDR *new_name, unsigned int *err);
-;0EE8:             ; 3BA: __arm int sys_unlink_ws(const WSHDR *path, unsigned int *err);
-;0EEC:             ; 3BB: __arm int sys_stat_ws(const WSHDR *path, FSTATS *stat, unsigned int *err);
-;0EF0:             ; 3BC: __arm int isdir_ws(const WSHDR *path, unsigned int *err);
-;0EF4:             ; 3BD: __arm int GetFileAttrib_ws(const WSHDR *path, uint8_t *attr, unsigned int *err);
-;0EF8:             ; 3BE: __arm int SetFileAttrib_ws(const WSHDR *path, uint8_t attr, unsigned int *err);
-;0EFC:             ; 3BF: __arm int FindFirstFile_ws(DIR_ENTRY *dir_entry, const WSHDR *mask, unsigned int *err);
+0EDC: 0xA0252E54   ; 3B7: int sys_mkdir_ws(const WSHDR *dirname, uint32_t *err)
+0EE0: 0xA0252F40   ; 3B8: int sys_rmdir_ws(const WSHDR *path, uint32_t *err)
+0EE4: 0xA0252ECC   ; 3B9: int sys_rename_ws(const WSHDR *old_name, const WSHDR *new_name, uint32_t *err)
+0EE8: 0xA0253098   ; 3BA: int sys_unlink_ws(const WSHDR *path, uint32_t *err)
+0EEC: 0xA0253028   ; 3BB: int sys_stat_ws(const WSHDR *path, FSTATS *stat, uint32_t *err)
+0EF0: 0xA0252DEC   ; 3BC: int isdir_ws(const WSHDR *path, uint32_t *err)
+0EF4: 0xA0252CBC   ; 3BD: int GetFileAttrib_ws(const WSHDR *path, uint8_t *attr, uint32_t *err)
+0EF8: 0xA0252FB0   ; 3BE: int SetFileAttrib_ws(const WSHDR *path, uint8_t attr, uint32_t *err)
+0EFC: 0xA0252D38   ; 3BF: int FindFirstFile_ws(DIR_ENTRY *dir_entry, const WSHDR *mask, uint32_t *err)
 
 ;0F00:             ; 3C0: __thumb int ShowWaitBox(int flags, int message);
 ;0F04:             ; 3C1: __thumb int ShowPleaseWaitBox(int flags);
@@ -1022,11 +1023,11 @@
 ;0F14:             ; 83C5: void *GetPBarProc3();
 0F18: 0xA0A1E321   ; 3C6: __thumb void SetHeaderScrollText(void *header, const WSHDR *title, const void *malloc_fn, const void *mfree_fn);
 0F1C: 0xA0A1DFAD   ; 3C7: __thumb void SetHeaderExtraText(void *header, const WSHDR *ws, const void *malloc_fn, const void *mfree_fn);
-;0F20:             ; 3C8: __arm int GetMimeType(int uid, WSHDR *mime_type, int unk_0);
+0F20: 0xA04D4109   ; 3C8: int GetMimeType(int uid, WSHDR *mime_type, int occurrence)
 ;0F24:             ; 3C9: __thumb int wstrncmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
 ;0F28:             ; 3CA: __thumb int wstricmp(const WSHDR *ws1, const WSHDR *ws2);
 ;0F2C:             ; 3CB: __thumb int wstrnicmp(const WSHDR *ws1, const WSHDR *ws2, size_t n);
-;0F30:             ; 3CC: __arm int PersMenuCSM_Open(const WSHDR *file_name, const WSHDR *dir, int flag, int open_mode);
+0F30: 0xA060112D   ; 3CC: int PersMenuCSM_Open(const WSHDR *file_name, const WSHDR *dir, int flag, int open_mode)
 ;0F34:             ; 3CD: __thumb int wstrtoupper(WSHDR *ws);
 ;0F38:             ; 3CE: __thumb int wstrtolower(WSHDR *ws);
 ;0F3C:             ; 3CF: __thumb int wstrcapitalize(WSHDR *ws);
@@ -1036,7 +1037,7 @@
 0F48: 0xA029F1BB   ; 3D2: __thumb int IsIconBarDisabled();
 0F4C: 0xA08FEC83   ; 3D3: __thumb int IllumFilterSet(int flags, int unk);
 0F50: 0xA0A02CB5   ; 3D4: __thumb void DrawCroppedIMGHDR(int x, int y, int offset_x, int offset_y, int w, int h, int flags, const IMGHDR *img);
-;F54:              ; 3D5: __arm int BuildPath(WSHDR *ws, const WSHDR *file_name, const WSHDR *dir);
+0F54: 0xA04D5E0F   ; 3D5: int BuildPath(WSHDR *path, const WSHDR *file_name, const WSHDR *dir)
 0F58: 0xA0437BF4   ; 83D6: RECT *GetHeaderRECT();
 0F5C: 0xA069B994   ; 83D7: RECT *GetOptionsHeaderRECT();
 0F60: 0xA0672BE4   ; 83D8: RECT *GetMainAreaRECT();
@@ -1048,13 +1049,25 @@
 0F84: 0xA0902171   ; 3E1: __thumb int GetTimeZoneByGMT(const char *gmt);
 0F88: 0xA09021F9   ; 3E2: __thumb int IsSummerTime(int time_zone);
 0F8C: 0xA090226B   ; 3E3: __thumb void SetTimeZone(int time_zone);
+0F90: 0xA026F72B   ; 3E4: void GetTimeFromMilliseconds(TTime *time, uint32_t milliseconds)
+0F94: 0xA026ECA1   ; 3E5: void DateAddDays(TDate *date, int days)
+0F98: 0xA026ECD7   ; 3E6: void DateAddMonths(TDate *date, int months)
+0F9C: 0xA026ED27   ; 3E7: void DateAddYears(TDate *date, int years)
+0FA0: 0xA026EAEF   ; 3E8: int GetDays(const TDate *date)
+0FA4: 0xA0A122C3   ; 3E9: void *EDIT_GetGUI(const void *malloc_fn, const void *mfree_fn)
+0FA8: 0xA0A1269F   ; 3EA: void EDIT_SetDefinition(void *gui, const INPUTDIA_DESC *input_desc)
+0FAC: 0xA0A125B5   ; 3EB: void EDIT_SetEQueue(void *gui, const EDITQ *eq, int do_mfree, const void *malloc_fn)
+0FB0: 0xA0A129A9   ; 3EC: void EDIT_SetUserPointer(void *gui, void *user_pointer)
 0FB4: 0xA097F559   ; 3ED: __thumb void SetWidgetRect(void *widget, int x, int y, int x2, int y2);
 0FB8: 0xA0A18815   ; 3EE: __thumb void AttachWidget(void *gui, const void *widget, int id, const void *malloc_fn);
 0FE4: 0xA022F5B4   ; 3F9: __arm int IsAnyOfAccessoriesConnected(const enum Accessory *accessory_ids, uint8_t count);
 0FE8: 0xA08FECCF   ; 3FA: __thumb SetMaxIllumIntensity(int unk3, uint32_t level);
+0FF8: 0xA0FC574D   ; 3FE: int vsprintf(char *s, const char *format, va_list args)
+0FFC: 0xA0FC37C9   ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 
 #pragma disable old_equal_ff
 +0
+
 
 ;------------------------- end -------------------------
 
