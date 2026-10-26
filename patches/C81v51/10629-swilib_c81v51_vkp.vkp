@@ -1017,7 +1017,7 @@
 
 ;EC0:              ; 3B0: void SettingsAE_RegisterListener(SettingsAE_ListenerProc proc, int set_id, const char *entry, const char *keyword)
 ;EC4:              ; 3B1: void SettingsAE_DeregisterListener(SettingsAE_ListenerProc proc, int set_id, const char *entry, const char *keyword)
-0EC8: 0xA054C6C1   ; 3B2: const WSHDR *GetLastAudioTrackDir()
+0EC8: 0xA054C6C1   ; 3B2: const WSHDR *MediaProc_GetLastAudioTrackDir()
 ;ECC:              ; 3B3: IMGHDR *GetIMGHDRFromCanvasCache(char canvas_id)
 ;ED0:              ; 3B4: void GetDate_ws(WSHDR *ws, const TDate *date, unsigned int unk)
 ;ED4:              ; 3B5: void GetTime_ws(WSHDR *ws, const TTime *time, unsigned int unk)
@@ -1055,5 +1055,6 @@
 0F4C: 0xA090E36B   ; 3D3: void IllumFilterSet(int flags, int unk)
 #pragma disable old_equal_ff
 +0
+
 ;------------------------- end -------------------------
 
