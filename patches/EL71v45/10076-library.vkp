@@ -133,7 +133,7 @@
 01D4: 0xA05C5FB9   ;   75: IsCanvasBufferSet
 01D8: 0xA05C5F69   ;   76: GetCanvasBufferPicPtr(char CanvasID)
 01DC: 0xA095226B   ; 077: void DrwObj_SetColor_2(DRWOBJ *drwobj, const char *pen, const char *brush)
-;1E0:              ;   78: GetTimeFormat
+01E0: 0xA08D9D4F   ;   78: int GetTimeFormat()
 01E4: 0xA08DC18B   ;   79: DrawObject2Layer
 01E8: 0xA095679D   ;   7A: UpdateDisplayByLayerPtr(LCD_Layer *)
 ;1EC:              ;   7B: GetProfileFilter
@@ -224,7 +224,7 @@
 0340: 0xA8E26FCC   ;  8D0: RamAccPoint
 0344: 0xA8EAAAD8   ;  8D1: RamScreensaver
 0348: 0xA8DA7FE8   ;   D2: char *RamIsAutoTimeEnabled(void)
-034C: 0xA8A80000   ;  8D3: RamStby
+;34C:              ;   D3: char *RamIsStandby()
 0350: 0xA8E37284   ; 0D4: char *RamMissedMessage()
 0354: 0xA8DF31D4   ;  8D5: RamIsLocked
 0358: 0xA8E69058   ;  8D6: RamNetOnline
@@ -234,7 +234,7 @@
 0368: 0xA8E6A20C   ;  8DA: RamIsShutdown
 036C: 0xA8F594DC   ;  8DB: RamNotOnMainscreen
 0370: 0xA8EA3BC8   ; 0DC: int *RamRandSeed()
-0374: 0xAD2B3D58   ;   DD: RamCurrentTrack
+;374:              ;   DD: void *RamCurrentTrack()
 0378: 0xA8E35D24   ;  8DE: RamIsSimPresent
 037C: 0xA8DF31AC   ;  8DF: RamPressedKey
 0380: 0xA8DA8080   ;  8E0: RamScreenBuffer
@@ -255,8 +255,8 @@
 03BC: 0x000005B0   ;   EF: Pic_Calendar
 ;3C0:              ;   F0: Pic_AccuGraph
 03C4: 0xA05C2E2D   ;   F1: void *BuildCanvas()
-;3C8:              ;   F2: lpRAM_PIT
-;3CC:              ;   F3: RAM_PIT_Cap
+03C8: 0xA06B43F4   ;   F2: int Registry_RegClient(const REG_CLIENT *client)
+03CC: 0xA06B4360   ;   F3: void Registry_UnregClient(int client_id)
 ;3D0:              ;   F4: 
 03D4: 0xA8DF3144   ;  8F5: Ram_LCD_Overlay_Layer 
 03D8: 0xA8E6A7B8   ;  8F6: Ram_Layer_Base_Ptr
@@ -507,7 +507,7 @@
 07AC: 0xA8EA408E   ; 81EB: char *RAM_IMSI(void)
 07B0: 0xA09572EF   ;  1EC: void FreeDynIcon(int picture)
 07B4: 0xA0957455   ;  1ED: int IsDynIconBusy(int picture)
-07B8: 0xA1400000   ;  1EE: ProgressCalculate(int current, int total)
+07B8: 0xA0694F9C   ;  1EE: int ProgressCalculate(int current, int total)
 07BC: 0xA0957451   ; 1EF: void SetDynIcon(int picture, IMGHDR *img, char *bitmap)
 07C0: 0xA0697DB8   ;  1F0: Filecopy
 07C4: 0xA069A460   ;  1F1: Filecopy_Op_Announce
@@ -606,13 +606,13 @@
 0938: 0xA0635360   ;  24E: void* GetPlayObjById(int handle)
 093C: 0xA0CC4378   ;  24F: int GetPlayObjPosition(void *playobj_3D0, int *pos_ms)
 0940: 0xA0CC40B8   ;  250: int GetPlayObjDuration(void *playobj_3D0, int *pos_ms)
-0944: 0xAD07CA84   ;  251: unsigned int *RamSizeOfPart()
-0948: 0xAD07CA0C   ;  252: unsigned int *RamSizeOfRecievedSendFile()
+;944:              ;  251: void *RamSizeOfPart()
+;948:              ;  252: int *RamSizeOfReceivedOrSentFile()
 094C: 0xA8EB5D7E   ; 8253: char *RamLastCallNum()
 0950: 0xA069C1A4   ;  254: int StartNativeExplorer (NativeExplorerData*data)
 0954: 0xA09602CF   ;  255: void MenuSetUserPointer(void *gui,void *user_pointer) 
-0958: 0xAD07CAF8   ;  256: char *RamNameOfRecievedSendFile()
-095C: 0xAD07C9E6   ;  257: char *RamIsSendReceiveBT()
+;958:              ;  256: const char *RamNameOfReceivedOrSentFile()
+;95C:              ;  257: int *RamIsSendingOrReceivingFileByBT()
 0960: 0xA0956CE1   ;  258: int CalcBitmapSize(short w,short h, char typy)
 0964: 0xA0CDC954   ;  259: HObj Obs_CreateObject(int uid, int unk2, int unk2, int unk3, int unk4, int unk6,int unk7)
 0968: 0xA0CC8238   ;  25A: Obs_DestroyObject(HObj hObj)
@@ -647,9 +647,9 @@
 09DC: 0xA0CDC4D8 ; 277  __arm int Obs_SetOutput_Uid(HObj hObj, int OutUID);
 09E0: 0xA0CD1648 ; 278  __arm int Obs_Sound_SetBitrate(HObj hobj, int bitRate);
 ;9E4:              ;  279:
-;9E8:              ;  27A:
-;9EC:              ;  27B:
-;9F0:              ;  27C:
+09E8: 0xA0CD948C   ;  27A: int Obs_SetInput_Memory(HObj obs, int unk, char *buf, int len)
+09EC: 0xA0CC4574   ;  27B: int Obs_SetUserPointer(HObj obs, void *user_pointer)
+09F0: 0xA0CC45A8   ;  27C: int Obs_GetUserPointer(HObj obs, void **p_user_pointer)
 ;9F4:              ;  27D:
 ;9F8:              ;  27E:
 ;9FC:              ;  27F:
@@ -686,8 +686,8 @@
 ;A78:              ;  29E:
 ;A7C:              ;  29F:
 0A80: 0xA05C6D4C   ;  2A0: int GetAlarmclockState(int state)
-;A84:              ;  2A1:
-;A88:              ;  2A2: 
+0A84: 0xA0A274C5   ;  2A1: int RscMgr_CsSetColor(int id, const uint8_t *color)
+0A88: 0xA0A27647   ;  2A2: void RscMgr_CsUpdate()
 0A8C: 0xA095D09D   ;  2A3: void UpdateMenuCursorItem(void *gui, int n)
 0A90: 0xA0959EA9   ;  2A4: void *GetMenuGUI(void *malloc_adr, void *mfree_adr)
 0A94: 0xA09611FD   ;  2A5: void *GetMultiLinesMenuGUI(void *malloc_adr, void *mfree_adr)
@@ -849,8 +849,19 @@
 0D98: 0xA00A0B1C   ;  366: char *NU_License_Information(void)
 0DD0: 0xA009B878   ;  374: void NU_USER_MODE_P(void *nu_svc_usr_var)
 0DD4: 0xA8D95BCC   ;  375: void *NU_SUPERV_USER_VARIABLES(void)
+0E30: 0xA056DFA0   ;  38C: int sys_format(uint16_t drive, uint32_t *err)
+0E38: 0xA0092451   ;  38E: void CreateICL(PGROUP *pgroup)
+0E3C: 0xA009562D   ;  38F: void *GBS_CreateProcessGroupResource(int mask, int unk_zero, PGROUP *pgroup, int size)
+0E40: 0xA0095F31   ;  390: void *GBS_GetCurrentTask()
+0E44: 0xA00930CB   ;  391: void *MemMBPAlloc(void *pool, int size)
+0E48: 0xA00932DF   ;  392: void MemMBPFree(void *pool, void *ptr)
+0E4C: 0xA8DF3EDC   ;  393: void *RamMopiResourcePool()
 0EA8: 0xA0FBC015   ;  3AA: void qsort(void *first, size_t nitems, size_t size, int (*comparator)(const void *, const void *))
 0EAC: 0xA0FBB2E5   ;  3AB: void *bsearch(const void *key, const void *first, size_t nitems, size_t size, int (*comparator)(const void *, const void *))
+0EC0: 0xA05ADE3B   ;  3B0: void SettingsAE_RegisterListener(SettingsAE_ListenerProc proc, int set_id, const char *entry, const char *keyword)
+0EC4: 0xA05ADE95   ;  3B1: void SettingsAE_DeregisterListener(SettingsAE_ListenerProc proc, int set_id, const char *entry, const char *keyword)
+0EC8: 0xA06A2298   ;  3B2: const WSHDR *MediaProc_GetLastAudioTrackDir()
+0ECC: 0xA0672699   ;  3B3: IMGHDR *GetIMGHDRFromCanvasCache(char canvas_id)
 0ED0: 0xA08D9EF7   ;  3B4: void GetDate_ws(WSHDR *ws, const TDate *date, unsigned int unk)
 0ED4: 0xA08D9D79   ;  3B5: void GetTime_ws(WSHDR *ws, const TTime *time, unsigned int unk)
 0EDC: 0xA056E2A0   ;  3B7: int sys_mkdir_ws(const WSHDR *dirname, uint32_t *err)
@@ -862,9 +873,35 @@
 0EF4: 0xA056E108   ;  3BD: int GetFileAttrib_ws(const WSHDR *path, uint8_t *attr, uint32_t *err)
 0EF8: 0xA056E3FC   ;  3BE: int SetFileAttrib_ws(const WSHDR *path, uint8_t attr, uint32_t *err)
 0EFC: 0xA056E184   ;  3BF: int FindFirstFile_ws(DIR_ENTRY *dir_entry, const WSHDR *mask, uint32_t *err)
+0F00: 0xA0958C57   ;  3C0: int ShowWaitBox(int flags, int message)
+0F04: 0xA0958C8F   ;  3C1: int ShowPleaseWaitBox(int flags)
+0F08: 0xA0958CF3   ;  3C2: int ShowPBarBox(int flags, int message, PBAR_DESC *pbar_desc, int initial_value, WSHDR *initial_ws)
+0F0C: 0xA0958D79   ;  3C3: int SetPBarValue(int gui_id, int value)
+0F10: 0xA0958D8F   ;  3C4: int SetPBarText(int gui_id, WSHDR *ws)
+0F14: 0xA0A304C5   ;  3C5: void *GetPBarProc3()
+0F18: 0xA0A32365   ;  3C6: void SetHeaderScrollText(void *header, const WSHDR *title, const void *malloc_fn, const void *mfree_fn)
+0F1C: 0xA0A31FF1   ;  3C7: void SetHeaderExtraText(void *header, const WSHDR *ws, const void *malloc_fn, const void *mfree_fn)
 0F20: 0xA0507960   ;  3C8: int GetMimeType(int uid, WSHDR *mime_type, int occurrence)
+0F24: 0xA04FFCF3   ;  3C9: int wstrncmp(const WSHDR *ws1, const WSHDR *ws2, size_t n)
+0F28: 0xA04FFD3F   ;  3CA: int wstricmp(const WSHDR *ws1, const WSHDR *ws2)
+0F2C: 0xA04FFD75   ;  3CB: int wstrnicmp(const WSHDR *ws1, const WSHDR *ws2, size_t n)
 0F30: 0xA06A3824   ;  3CC: int PersMenuCSM_Open(const WSHDR *file_name, const WSHDR *dir, int flag, int open_mode)
+0F34: 0xA04FFF33   ;  3CD: void wstrtoupper(WSHDR *ws)
+0F38: 0xA04FFFF5   ;  3CE: void wstrtolower(WSHDR *ws)
+0F3C: 0xA05000D1   ;  3CF: void wstrcapitalize(WSHDR *ws)
+0F40: 0xA05C53D3   ;  3D0: void RestartLockTimers()
+0F44: 0xA06A25AC   ;  3D1: void MediaProc_LaunchLastPlayback()
+0F48: 0xA096237B   ;  3D2: int IsIconBarDisabled()
+0F4C: 0xA08D6031   ;  3D3: void IllumFilterSet(int flags, int unk)
+0F50: 0xA0A1691D   ;  3D4: void DrawCroppedIMGHDR(int x, int y, int offset_x, int offset_y, int w, int h, int flags, const IMGHDR *img)
 0F54: 0xA05D1B88   ;  3D5: int BuildPath(WSHDR *path, const WSHDR *file_name, const WSHDR *dir)
+0F58: 0xA0873C90   ;  3D6: RECT *GetHeaderRECT(void)
+0F5C: 0xA0C6D4DC   ;  3D7: RECT *GetOptionsHeaderRECT(void)
+0F60: 0xA0855154   ;  3D8: RECT *GetMainAreaRECT(void)
+0F64: 0xA0A3C030   ;  3D9: int GetPITSize()
+0F68: 0xA0500DF9   ;  3DA: uint16_t wstriwstr(const WSHDR *ws, const WSHDR *search, uint32_t start_pos)
+0F6C: 0xA0500D1D   ;  3DB: void wstrreplace(WSHDR *dest, const WSHDR *src, uint32_t pos)
+0F70: 0xA0957747   ;  3DC: int GetUnicodeSymbolByDynIcon(int dyn_icon)
 0F7C: 0xA8F63390   ;  3DF: TZ *RamTimeZones(void)
 0F80: 0xA08D8813   ;  3E0: int GetCurrentTimeZone(void)
 0F84: 0xA08D9983   ;  3E1: int GetTimeZoneByGMT(const char *gmt)
@@ -879,11 +916,23 @@
 0FA8: 0xA0A26443   ;  3EA: void EDIT_SetDefinition(void *gui, const INPUTDIA_DESC *input_desc)
 0FAC: 0xA0A26359   ;  3EB: void EDIT_SetEQueue(void *gui, const EDITQ *eq, int do_mfree, const void *malloc_fn)
 0FB0: 0xA0A2674D   ;  3EC: void EDIT_SetUserPointer(void *gui, void *user_pointer)
+0FBC: 0xA0956B23   ;  3EF: int16_t GetLgpIcon(int lgp_id)
+0FC0: 0xA0674830   ;  3F0: void Countdown_Start()
+0FC4: 0xA06748F4   ;  3F1: void Countdown_Stop()
+0FC8: 0xA067475C   ;  3F2: int Countdown_IsEnabled()
+0FCC: 0xA07114D4   ;  3F3: int Countdown_GetRemainingTime()
+0FD0: 0xA07954FC   ;  3F4: void Countdown_PlaySound(long tone_type)
+0FD4: 0xA8F04BD0   ;  3F5: int *RamIsCountdownRingUIActive()
+0FD8: 0xA0A34371   ;  3F6: WIDGET *CreateScrollbarWidget(const void *malloc_fn)
+0FDC: 0xA0A3457B   ;  3F7: void Scrollbar_Configure(WIDGET *scrollbar, int limit, int unk1, int unk2)
+0FE0: 0xA0A3454D   ;  3F8: void Scrollbar_SetValue(WIDGET *scrollbar, int value)
+0FE4: 0xA0544BA4   ;  3F9: int IsAnyOfAccessoriesConnected(const enum Accessory *accessory_ids, uint8_t count)
 0FF8: 0xA0FBD1AD   ;  3FE: int vsprintf(char *s, const char *format, va_list args)
 0FFC: 0xA0FBB1E9   ;  3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 
 #pragma disable old_equal_ff
 +0
+
 
 ;------------------------- end -------------------------
 
