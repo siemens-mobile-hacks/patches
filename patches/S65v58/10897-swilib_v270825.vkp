@@ -682,7 +682,7 @@
 0A28: 0xA868c4e0 ; 828A: __thumb char *RamIsFileCache();
 0A2C: 0xA87e44f0 ; 828B: __thumb char *RamTotalHeapSize();
 ;0A30: 0xA8F09B58 ; 828C: __thumb char *RamTemporaryHeapSize();
-0A34: 0xA86DC6E8   ; 828D: char *RamBTNameDevice()
+0A34: 0xA86DC6E8   ; 828D: const char *RamBluetoothDeviceName(void)
 ;0A38: 0xA8DA181C ; 828E: __thumb char *RamActiveGPRSProfileName();
 ;0A3C: 0x  ; 828F: __thumb char *RamIsNumberTyping();
 ;0A40: 0xA8EF6DF0 ; 8290: __thumb char *RamCallState();
@@ -996,6 +996,7 @@
 0F8C: 0xA0c3781d ; 3E3: void SetTimeZone(int time_zone);
 #pragma disable old_equal_ff
 +0
+
 
 
 ;------------------------- end -------------------------
