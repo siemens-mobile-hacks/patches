@@ -300,7 +300,7 @@
 0440: 0xA0208AE5   ; 110: __thumb char *wstrcopy(char *dst, char *src)
 0444: 0xA02D1099   ; 111: __thumb char GetTypeUSSD()
 0448: 0xA02D10A9   ; 112: __thumb unsigned int SetUSSD(StructUSSDStr *)
-044C: 0xA0E5004D   ; 113: __thumb char * strpbrk (const char *s1,const char *s2)
+044C: 0xA0E5004D   ; 113: size_t strcspn(const char *str1, const char *str2)
 0450: 0xA0E500C9   ; 114: __thumb char * strncat (char *dest,const char *substr,int maxSubLen)
 0454: 0xA0E500F9   ; 115: __thumb int  strncmp (const char *s1,const char *s2,int n)
 0458: 0xA0E50149   ; 116: __thumb int  strncpy (char *dest,const char *source,int maxlen)
@@ -932,8 +932,8 @@
 0DC0: 0xFFFFFFFF   ; 370: __arm NU_Established_Drivers
 0DC4: 0xFFFFFFFF   ; 371: __arm NU_Driver_Pointers
 0DC8: 0xFFFFFFFF   ; 372: __arm NU_IS_SUPERVISOR_MODE
-0DCC: 0xA021A0A8   ; 373: __arm NU_SUPERVISOR_MODE
-0DD0: 0xA021A148   ; 374: __arm NU_USER_MODE
+0DCC: 0xA021A0A8   ; 373: void NU_SUPERVISOR_MODE_P(void *nu_svc_usr_var)
+0DD0: 0xA021A148   ; 374: void NU_USER_MODE_P(void *nu_svc_usr_var)
 0DD4: 0xA84F6844   ; 375: __arm NU_SUPERV_USER_VARIABLES
 
 
@@ -962,6 +962,7 @@
 ;120313: +38A,38B; *33C-33F
 ;120628: +26F-271,276; *353
 ;------------------------- end -------------------------
+
 
 ;------------------------- end -------------------------
 
