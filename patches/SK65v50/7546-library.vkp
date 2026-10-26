@@ -306,7 +306,7 @@
 0440: 0xA020859D ; 110: wstrcopy(char *dst, char *src)
 0444: 0xA02CB3FD ; 111: GetTypeUSSD()
 0448: 0xA02CB40D ; 112: SetUSSD(StructUSSDStr *)
-044C: 0xA0D1D995 ; 113: strpbrk(const char *s1,const char *s2)
+044C: 0xA0D1D995 ; 113: size_t strcspn(const char *str1, const char *str2)
 0450: 0xA0D1DA11 ; 114: strncat(char *dest,const char *substr,int maxSubLen)
 0454: 0xA0D1DA41 ; 115: strncmp(const char *s1,const char *s2,int n)
 0458: 0xA0D1DA91 ; 116: strncpy(char *dest,const char *source,int maxlen)
@@ -578,5 +578,6 @@
 0840: 0xA06EEB91 ; 210: __thumb int GetCurGuiID(void);
 #pragma disable old_equal_ff
 +0
+
 ;------------------------- end -------------------------
 
