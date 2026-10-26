@@ -690,7 +690,7 @@ English:Patch version is in "YMMDD" format. It indicates its update date.
 ;A28:              ; 28A: __unknown char *RamIsFileCache()
 ;A2C:              ; 28B: __unknown char *RamTotalHeapSize()
 ;A30:              ; 28C: __unknown char *RamTemporaryHeapSize();
-0A34: 0xA8528F44   ; 28D: __unknown GetBTNameDevice()
+0A34: 0xA8528F44   ; 28D: const char *RamBluetoothDeviceName(void)
 ;A38:              ; 28E: __unknown char *RamActiveGPRSProfileName()
 ;A3C:              ; 28F: __unknown int *RamIsNumberTyping()
 
@@ -775,6 +775,7 @@ English:Patch version is in "YMMDD" format. It indicates its update date.
 0B68: 0xA08053D1   ; 2DA: __thumb void *TViewGetUserPointer(void *gui)
 #pragma disable old_equal_ff
 +0
+
 
 
 ;------------------------- end -------------------------
