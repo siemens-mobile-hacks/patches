@@ -109,7 +109,7 @@
 0158: 0xA006F131   ;  56: PlayVibra
 015C: 0xA0093388   ;  57: int IsTimerProc_2(GBSTMR *timer)
 0160: 0xA0FC496C   ;  58: void zeromem_2(void *dest,int n)
-0164: 0xA0FC4A10   ;  59: void *memcpy_2(void *dest,const void *source,int cnt)
+0164: 0xA0FC456C   ;  59: void *memcpy_2(void *destination, const void *source, size_t num)
 0168: 0xA0904371   ;  5A: KeypressOn(int key)
 016C: 0xA0904483   ;  5B: KeypressOff(int key)
 0170: 0xA03327D1   ;  5C: unsigned char GetCPUClock()
@@ -213,7 +213,7 @@
 02E0: 0xA0FC4B84   ;  B8: int sdiv(int denom,int number)
 02E4: 0xA0904D7F   ;  B9: void KbdUnlock()
 02E8: 0xA0094B68   ;  BA: void *realloc(void *ptr, int size)
-02EC: 0xA0FC4B6C   ;  BB: void *memset(void *s, int c, int n)
+02EC: 0xA0FC4594   ;  BB: void *memset(void *ptr, int val, size_t num)
 02F0: 0xA0FC4C5C   ;  BC: int divide(int divisor, int dividend)
 02F4: 0xA0FC4D20   ;  BD: int DivBy10(int divident)
 02F8: 0xA0060C91   ;  BE: RunScaner
@@ -307,7 +307,7 @@
 0440: 0xA026FF79   ; 110: char *wstrcopy(unsigned short *dst, const unsigned short *src)
 0444: 0xA029C02D   ; 111: char GetTypeUSSD()
 0448: 0xA029C03D   ; 112: unsigned int SetUSSD(StructUSSDStr *)
-044C: 0xA0FC5321   ; 113: char *strpbrk(const char *s1,const char *s2)
+044C: 0xA0FC5321   ; 113: size_t strcspn(const char *str1, const char *str2)
 0450: 0xA0FC539D   ; 114: char *strncat(char *dest,const char *substr,int maxSubLen)
 0454: 0xA0FC53CD   ; 115: int strncmp(const char *s1,const char *s2,int n)
 0458: 0xA0FC541D   ; 116: int strncpy(char *dest,const char *source,int maxlen)
@@ -318,7 +318,7 @@
 046C: 0xA0FC3731   ; 11B: int snprintf(char *,int n,const char *format,...)
 0470: 0xA0FC4511   ; 11C: int memcmp(const void *m1, const void *m2, int n)
 0474: 0xA0FC496C   ; 11D: void zeromem(void *dest,int n)
-0478: 0xA0FC4A10   ; 11E: void *memcpy(void *dest,const void *source,int cnt)
+0478: 0xA0FC456C   ; 11E: void *memcpy(void *destination, const void *source, size_t num)
 047C: 0xA01F77C3   ; 11F: WSHDR *wstrcpy(WSHDR *wshdr_d,WSHDR *wshdr_s)
 
 0480: 0xA01F77E5   ; 120: WSHDR *wstrncpy(WSHDR *,WSHDR *,int)
@@ -340,7 +340,7 @@
 
 04C0: 0xA0971521   ; 130: void getRGBbyPaletteAdr(int *paletteAdr,void *dest)
 04C4: 0xA097153F   ; 131: void setColor(int a,int r,int g,int b,void *dest)
-04C8: 0xA0FC4AC8   ; 132: void *memmove(void *dest,const void *source,int cnt)
+04C8: 0xA0FC4580   ; 132: void *memmove(void *destination, const void *source, size_t num)
 04CC: 0xA0975D85   ; 133: void StoreXYWHtoRECT(void *RECT,int x,int y,int w,int h)
 04D0: 0xA0975D9B   ; 134: void StoreXYXYtoRECT(void *RECT,int x,int y,int x2,int y2)
 04D4: 0xA0978687   ; 135: int IsGuiOnTop(int id)
@@ -607,7 +607,7 @@
 08AC: 0xA02D28B9   ; 22B: CreateRadioButtonList(RadioButtonListDesc *, char num_of_radiobuttons, 0, 0, char prev_setting, void HandlerFunc(int), char flag)
 08B0: 0xA02D21AB   ; 22C: pdcache_getval(char *return, int maxlen_of_return_str, char cachetype,0, *pd_entry_identifier)
 08B4: 0xA02D22A9   ; 22D: pdcache_setval(char *new_value, char cachetype, 0, char *pd_entry_identifier)
-08B8: 0xA052A5F7   ; 22E: int OpenExplorer(NativeExplorerData *data)
+08B8: 0xA052A5D3   ; 22E: int OpenExplorer(NativeExplorerData *data)
 08BC: 0xA8D297D4   ; 22F: TDateTimeSettings *RamDateTimeSettings
 
 08C0: 0xA0900FF1   ; 230: int GetTimeZoneShift(int param1, int param2, int timeZone)
@@ -703,14 +703,14 @@
 0A14: 0xA0D4700F   ; 285: char IsEDGEAvailable()
 0A18: 0xA0D3E4BF   ; 286: int GetSMSState()
 0A1C: 0xA02D3193   ; 287: int BT_GetLocVisibility()
-0A20: 0xA02EDF5D   ; 288: int GetCurrAudioPath()
+0A20: 0xA02EDF5D   ; 288: int Audio_GetCurrAudioPath(void)
 0A24: 0xA0DB40D1   ; 289: int isDecryption()
 ;0A28:             ; 28A: char *RamIsFileCache()
 0A2C: 0xA8E43064   ; 28B: char *RamTotalHeapSize()
 0A30: 0xA8E430D4   ; 28C: char *RamTemporaryHeapSize()
 0A34: 0xA8D23CF0   ; 28D: char *RamBTNameDevice()
 0A38: 0xA8D22EE4   ; 28E: char *RamActiveGPRSProfileName()
-0A3C: 0xA8D35E3C   ; 28F: char *RamIsNumberTyping()
+0A3C: 0xA8D34EE8   ; 28F: char *RamIsNumberTyping(void)
 
 0A40: 0xA8E2B548   ; 290: char *RamCallState()
 0A44: 0xA029FDB0   ; 291: int RefreshAlarmClock()
@@ -941,7 +941,7 @@
 ;DC4:              ; 371: __arm NU_Driver_Pointers
 ;DC8:              ; 372: __arm NU_IS_SUPERVISOR_MODE
 ;DCC:              ; 373: __arm NU_SUPERVISOR_MODE
-0DD0: 0xA00A1284   ; 374: __arm NU_USER_MODE
+0DD0: 0xA00A1284   ; 374: void NU_USER_MODE_P(void *nu_svc_usr_var)
 0DD4: 0xA8D17F9C   ; 375: __arm NU_SUPERV_USER_VARIABLES
 
 ;<Reserved>
@@ -1055,6 +1055,5 @@
 
 #pragma disable old_equal_ff
 +0
-
 ;------------------------- end -------------------------
 
