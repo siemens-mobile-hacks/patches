@@ -2,6 +2,12 @@ on:
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
+    inputs:
+      patches:
+        description: 'Patches IDs for partial sync'
+        required: false
+
+concurrency: sync
 
 permissions:
   contents: write
@@ -30,6 +36,7 @@ jobs:
         run: sudo apt install unar
       - name: Sync patches
         working-directory: data
-        run: ../syncer/tools/ci.sh
+        run: ../syncer/tools/ci.sh ${PATCHES:+--patches="$PATCHES"}
         env:
           KIBAB_TEST_USER: ${{ secrets.KIBAB_TEST_USER }}
+          PATCHES: ${{ inputs.patches }}
