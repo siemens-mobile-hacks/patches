@@ -84,14 +84,14 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0094: 0xA02A9425   ; 025: void DrawCanvas(void *data, int x1, int y1, int x2, int y2, int flag_one)
 0098: 0xA07F8369   ; 026: void DrawImgBW(unsigned int x, unsigned int y, unsigned int picture, char *pen, char *brush)
 009C: 0xA02A8D0D   ; 027: void AddIconToIconBar(void *data, int pic, short *num)
-00A0: 0xA0F10CD8   ; 028: double fp_sint2fp(signed int i)
+00A0: 0xA081D66C   ; 028: uint32_t GetEELiteMaxID(void)
 ;0A4:              ; 029: 
 00A8: 0xA081D528   ; 02A: int *GetEELiteBlockAddress(short blocknum)
-00AC: 0xA0F10B78   ; 02B: signed int fp_fp2sint(double f)
+00AC: 0xA081D610   ; 02B: int GetEELiteBlockSizeVersion(uint32_t block, int *size, char *version)
 00B0: 0xA07CAB4C   ; 02C: int EEFullGetBlockInfo(unsigned int block,int *size,char *version)
-00B4: 0xA0F0FF38   ; 02D: double fp_add(double addend1, double addend2)
-00B8: 0xA0F10E98   ; 02E: double fp_mul(double factor1, double factor2)
-00BC: 0xA0F1054C   ; 02F: double fp_div(double divisor, double divident)
+00B4: 0xA081D6A0   ; 02D: int StartWriteEELiteBlock(uint32_t block, uint32_t size, uint32_t version, EELiteCallback callback)
+00B8: 0xA081D71C   ; 02E: int FinishWriteEELiteBlock(uint32_t block, EELiteCallback callback)
+00BC: 0xA081D678   ; 02F: int DeleteEELiteBlock(uint32_t block, EELiteCallback callback)
 
 ;0C0:              ; 030: 
 00C4: 0xA0EF5429   ; 031: char *strrchr_2(const char *s,int c)
@@ -136,7 +136,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0158: 0xA0FCF421   ; 056: void PlayVibra(char VibraPower, unsigned int VibraDuration, char VibraIfOff)
 015C: 0xA020B00C   ; 057: int IsTimerProc_2(GBSTMR *)
 0160: 0xA0EF4A1C   ; 058: void zeromem_2(void *dest,int n)
-0164: 0xA0EF4A64   ; 059: void *memcpy_2(void *dest,const void *source,int cnt)
+0164: 0xA0EF45F4   ; 059: void *memcpy_2(void *destination, const void *source, size_t num)
 0168: 0xA0800467   ; 05A: void KeypressOn(int key)
 016C: 0xA0800595   ; 05B: void KeypressOff(int key)
 0170: 0xA08EE8AC   ; 05C: unsigned char GetCPUClock()
@@ -171,11 +171,11 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 01DC: 0xA089A40B   ; 077: set2color_byPaletteAdr
 01E0: 0xA07DA6EB   ; 078: GetTimeFormat
 01E4: 0xA07FD027   ; 079: int DrawObject2Layer(LCD_Layer *, DRWOBJ *)
-01E8: 0x00000000   ; 07A: GBS_Cmd_4200_UpdateScreen
+01E8: 0xA07FDC91   ; 07A: void LCDLAYER_Flush(LCDLAYER *layer)
 01EC: 0xA02BFAF1   ; 07B: char GetProfileFilter(char profile_num)
 01F0: 0xA08257C0   ; 07C: unsigned int SetVibration(unsigned int power)
 01F4: 0xA0AAFC85   ; 07D: IsIncognitoCall
-01F8: 0xA0AEB155   ; 07E: int rand(void)
+01F8: 0xA0EF499D   ; 07E: int rand(void)
 ;1FC: ; 07F: IsPlayerOn
 
 0200: 0xA058B1F9   ; 080: int ShowCallList(int list, int zero)
@@ -227,7 +227,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 02B0: 0xA0FCF1B1   ; 0AC: DrawText
 02B4: 0xA0FCF0A1   ; 0AD: StrAnsi2Uni
 02B8: 0xA0FCF0C1   ; 0AE: StrUni2Ansi
-02BC: 0xA0FCF051   ; 0AF: Hex2Int
+02BC: 0xA02B764D   ; 0AF: uint32_t HexToInt(char *s, uint32_t fallback)
 
 02C0: 0xA0FCF351   ; 0B0: DrawPicWithCanvas
 02C4: 0xA0FCF371   ; 0B1: DrawColorPicWithCanvas
@@ -240,7 +240,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 02E0: 0xA0EF4BD8   ; 0B8: int sdiv(int denom,int number)
 02E4: 0xA0800E73   ; 0B9: void KbdUnlock()
 02E8: 0xA0203C30   ; 0BA: void *realloc(void *ptr, int size)
-02EC: 0xA0EF4BC0   ; 0BB: void *memset(void *s, int c, int n)
+02EC: 0xA0EF461C   ; 0BB: void *memset(void *ptr, int val, size_t num)
 02F0: 0xA0219FE8   ; 0BC: int divide(int divisor, int dividend)
 02F4: 0xA0EF4CB0   ; 0BD: int DivBy10(int divident)
 02F8: 0xA0FC0C91   ; 0BE: RunScaner //MPv14
@@ -274,7 +274,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0360: 0xA84D106D   ; 0D8: RamMenuAnywhere
 0364: 0xA8517350   ; 0D9: RamShutdownMode
 0368: 0xA8559938   ; 0DA: RamIsShutdown
-036C: 0xA84CB538   ; 0DB: RamMainscreenAccuIcon
+;36C:              ; 0DB: int *RamIsNotOnMainscreen()
 0370: 0xA85BF250   ; 0DC: int *RamRandSeed(void)
 ;374: ; 0DD: RamCurrentTrack
 0378: 0xA85187D1   ; 0DE: RamIsSimPresent
@@ -301,7 +301,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 03C4: 0xA02CCC01   ; 0F1: void *BuildCanvas()
 ;3C8: ; 0F2: lpRAM_PIT
 ;3CC: ; 0F3: RAM_PIT_Cap
-03D0: 0xA0EF8DE9   ; 0F4: size_t strcspn(const char *s1, const char *s2)
+;3D0:              ; 0F4: int PIT_Pic_Lani()
 03D4: 0xA84E8C00   ; 0F5: Ram_LCD_Overlay_Layer
 03D8: 0xA84D201C   ; 0F6: RAM_LCD_Layer_Base_Ptr
 ;3DC: ; 0F7:
@@ -344,7 +344,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 046C: 0xA0EF3845   ; 11B: int snprintf(char *,int n,const char *format,...)
 0470: 0xA0EF4599   ; 11C: int memcmp(void *m1,void *m2,int n)
 0474: 0xA0EF4A1C   ; 11D: void zeromem(void *dest,int n)
-0478: 0xA0EF4A64   ; 11E: void *memcpy(void *dest,const void *source,int cnt)
+0478: 0xA0EF45F4   ; 11E: void *memcpy(void *destination, const void *source, size_t num)
 047C: 0xA07BD623   ; 11F: WSHDR *wstrcpy(WSHDR *wshdr_d,WSHDR *wshdr_s)
 0480: 0xA07BD645   ; 120: WSHDR *wstrncpy(WSHDR *,WSHDR *,int)
 0484: 0xA07BD669   ; 121: WSHDR *wstrcat(WSHDR *wshdr_d,WSHDR *wshdr_s)
@@ -367,7 +367,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 04BC: 0xA07F90B5   ; 12F: void getRGBcolor(int ColorIndex,void *dest)
 04C0: 0xA07F90C5   ; 130: void getRGBbyPaletteAdr(int *paletteAdr,void *dest)
 04C4: 0xA07F90E3   ; 131: void setColor(int a,int r,int g,int b,void *dest)
-04C8: 0xA0EF4B1C   ; 132: void *memmove(void *dest,const void *source,int cnt)
+04C8: 0xA0EF4608   ; 132: void *memmove(void *destination, const void *source, size_t num)
 04CC: 0xA07FDCFD   ; 133: void StoreXYWHtoRECT(void *RECT,int x,int y,int w,int h)
 04D0: 0xA07FDD13   ; 134: void StoreXYXYtoRECT(void *RECT,int x,int y,int x2,int y2)
 04D4: 0xA07C3FF7   ; 135: int IsGuiOnTop(int id)
@@ -496,7 +496,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 06A8: 0xA0E6CBC7   ; 1AA: void png_read_update_info(png_structp png_ptr,void *info_ptr)
 06AC: 0xA0E6D637   ; 1AB: void png_set_palette_to_rgb(png_structp png_ptr)
 06B0: 0xA0E6BF61   ; 1AC: png_uint_32 png_get_valid(png_structp png_ptr,png_infop info_ptr, png_uint_32 flag)
-06B4: 0xA0E6D653   ; 1AD: void png_set_tRNS_to_alpha(png_structp png_ptr)
+06B4: 0xA0E6D637   ; 1AD: void png_set_tRNS_to_alpha(png_structp png_ptr)
 06B8: 0xA0E6E3A9   ; 1AE: void png_set_filler(png_structp png_ptr,png_uint_32 filler, int flags)
 06BC: 0xA0E6D60D   ; 1AF: void png_set_strip_16(png_structp png_ptr)
 06C0: 0xA0E6E33F   ; 1B0: void png_set_packing(png_structp png_ptr)
@@ -540,7 +540,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 074C: 0xA08A2B69   ; 1D3: int EDIT_GetCursorPos(void *gui)
 0750: 0xA08A2B73   ; 1D4: void EDIT_SetCursorPos(void *gui, int pos)
 0754: 0xA0832EAC   ; 1D5: char *Get_Phone_Info(int InfoIndex)
-0758: 0xA0E6D645   ; 1D6: void png_set_gray_1_2_4_to_8(png_structp png_ptr)
+0758: 0xA0E6D637   ; 1D6: void png_set_gray_1_2_4_to_8(png_structp png_ptr)
 075C: 0xA0E6E40B   ; 1D7: void png_set_invert_mono(png_structp png_ptr)
 0760: 0xA08A2BB9   ; 1D8: int EDIT_IsMarkModeActive(void *gui)
 0764: 0xA08A2BCD   ; 1D9: int EDIT_GetMarkedText(void *gui,WSHDR *dest)
@@ -726,7 +726,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 ;A28: ; 28A:
 ;A2C: ; 28B:
 ;A30: ; 28C:
-0A34: 0xA8528F8C   ; 28D: char *RamBTNameDevice()
+0A34: 0xA8528F8C   ; 28D: const char *RamBluetoothDeviceName(void)
 ;A38: ; 28E:
 ;A3C: ; 28F:
 ;A40: ; 290:
@@ -789,8 +789,8 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0B24: 0xA020E121   ; 2C9: int GetDateTimeFromSeconds(int *seconds, TDate *t_date, TTime *time, TDate *s_date)
 0B28: 0xA020E25B   ; 2CA: int GetDateTimeFromSecondsSince1997(int *seconds, TDate *date, TTime *time)
 0B2C: 0xA020E749   ; 2CB: void GetTimeFromSeconds(TTime *time, int seconds)
-0B30: 0xA02087D7   ; 2CC: void InitDate(TDate *date, unsigned long year, unsigned char month, unsigned char day)
-0B34: 0xA020891B   ; 2CD: void InitTime(TDate *time, unsigned char hour, unsigned char min, unsigned char sec, unsigned long millisec)
+0B30: 0xA020871D   ; 2CC: void InitDate(TDate *date, unsigned long year, uint8_t month, uint8_t day)
+0B34: 0xA0208831   ; 2CD: void InitTime(TTime *time, uint8_t hour, uint8_t min, uint8_t sec, unsigned long millisec)
 0B38: 0xA02082FD   ; 2CE: int CmpDates(TDate *date1, TDate *date2)
 0B3C: 0xA020E6D9   ; 2CF: int CmpTimes(TTime *time1, TTime *time2)
 0B40: 0xA020834D   ; 2D0: int GetDaysFromMonth(TDate *date)
@@ -823,13 +823,14 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 ;BAC: ; 2EB: int SettingsAE_RemoveEntry(int set,char *entry,int flag)
 0BB0: 0xA0A96438   ; 2EC: int i2c_transfer(I2C_MSG *msg)
 0BB4: 0xA0A96484   ; 2ED: int i2c_receive(I2C_MSG *msg)
-0BB8: 0xA02072DC   ; 2EE: unsigned int GetMemUsedByCepID(short cepid)
-0BBC: 0xA0203D1C   ; 2EF: unsigned int GetFreePermMemory(void)
-0BC0: 0xA089A4E9   ; 2F0: int PushDRWOBJOnLAYER(DRWOBJ*, LCDLAYER *)
-0BC4: 0xA089C14F   ; 2F1: int LCDRedrawLAYER(LCDLAYER *)
-0BC8: 0xA0206DD0   ; 2F2: GBSPROC *GetGBSProcAddress(short cepid)
+;BB8:              ; 2EE: int elfclose(void *ex)
+;BBC:              ; 2EF: int dlopen(const char *name)
+;BC0:              ; 2F0: void *dlsym(int handle, const char *name)
+;BC4:              ; 2F1: int dlclose(int handle)
+;BC8:              ; 2F2: int setenv(const char *name, const char *value, int replace)
 #pragma disable old_equal_ff
 +0
+
 
 ;------------------------- end -------------------------
 
