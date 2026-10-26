@@ -235,7 +235,7 @@
 0340: 0xA8E27140 ; 0D0: RamAccPoint
 0344: 0xA8EAADD8 ; 0D1: RamScreensaver
 0348: 0xA8DA815C ; 0D2: char *RamIsAutoTimeEnabled(void)
-034C: 0xA8A80000 ; 0D3: RamStby
+;034C: 0x ; 0D3: char *RamIsStandby()
 0350: 0xA8E37598 ; 0D4: RamMissedMes
 0354: 0xA8DF3348 ; 0D5: RamIsLocked
 0358: 0xA8E6936C ; 0D6: RamNetOnline
@@ -245,7 +245,7 @@
 0368: 0xA8E6A520 ; 80DA: RamIsShutdown
 036C: 0xA8F59D84 ; 0DB: RamNotOnMainscreen
 0370: 0xA8EA3EDC ; 80DC: int *RamRandSeed();
-0374: 0xAD2B3D58 ; 0DD: RamCurrentTrack
+;0374: 0x ; 0DD: void *RamCurrentTrack()
 0378: 0xA8E35E98 ; 0DE: RamIsSimPresent
 037C: 0xA8DF3320 ; 0DF: RamPressedKey
 
@@ -641,13 +641,13 @@
 093C: 0xA0CB7BD4 ; 24F: __arm int GetPlayObjPosition(void *playobj_3D0, int *pos_ms);
 
 0940: 0xA0CB7914 ; 250: __arm int GetPlayObjDuration(void *playobj_3D0, int *pos_ms);
-0944: 0xAD07CA84 ; 8251: unsigned int *RamSizeOfPart();
-0948: 0xAD07CA0C ; 8252: unsigned int *RamSizeOfRecievedSendFile();
+;0944: 0x ; 251: void *RamSizeOfPart()
+;0948: 0x ; 252: int *RamSizeOfReceivedOrSentFile()
 ;094C: 0x ; 253: char *RamLastCallNum();
 0950: 0xA0699924 ; 254: __arm int StartNativeExplorer(NativeExplorerData* data);
 0954: 0xA095654B ; 255: __arm void MenuSetUserPointer(void *gui,void *user_pointer);
-0958: 0xAD07CAF8 ; 8256: char *RamNameOfRecievedSendFile();
-095C: 0xAD07C9E6 ; 8257: char *RamIsSendReceiveBT();
+;0958: 0x ; 256: const char *RamNameOfReceivedOrSentFile()
+;095C: 0x ; 257: int *RamIsSendingOrReceivingFileByBT()
 0960: 0xA094CF5D ; 258: __thumb int CalcBitmapSize(short w,short h, char typy);
 0964: 0xA0CD01B0 ; 259: __arm HObj Obs_CreateObject(int uid, int unk1, int unk2, int unk3, int unk4, int unk6,unsigned int *ErrorNumber);
 0968: 0xA0CBBA94 ; 25A: __arm Obs_DestroyObject(HObj hObj);
@@ -771,7 +771,7 @@
 0B30: 0xA058A0A9 ; 2CC: void InitDate(TDate *date, unsigned long year, uint8_t month, uint8_t day)
 0B34: 0xA058AA99 ; 2CD: void InitTime(TTime *time, uint8_t hour, uint8_t min, uint8_t sec, unsigned long millisec)
 0B38: 0xA0589A8D ; 2CE: int CmpDates(TDate *date1, TDate *date2);
-0B3C: 0xA058A700 ; 2CF: int CmpTimes(TTime *time1, TTime *time2);
+0B3C: 0xA058A701 ; 2CF: int CmpTimes(const TTime *time1, const TTime *time2)
 
 0B40: 0xA0589ADD ; 2D0: int GetDaysFromMonth(TDate *date);
 0B44: 0xA0589ABD ; 2D1: int IsLeapYear(TDate *date);
@@ -1069,6 +1069,7 @@
 
 #pragma disable old_equal_ff
 +0
+
 
 
 ;------------------------- end -------------------------
