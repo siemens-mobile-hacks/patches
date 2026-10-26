@@ -159,7 +159,7 @@
 
 0200: 0xA04CAB85   ;  80: int ShowCallList(int list, int zero)
 0204: 0xA0FC0B90   ;  81: HexToDec
-0208: 0xA02EEB49   ;  82: const WSHDR *GetLastAudioTrackFilename()
+0208: 0xA02EEB49   ;  82: const WSHDR *MediaProc_GetLastAudioTrackFilename()
 ;20C:              ;  83: GetPathOfFoundFile
 0210: 0xA021D9A0   ;  84: int GetFileStats(const char *cFileName, void *StatBuffer, unsigned int *errornumber)
 0214: 0xA023A865   ;  85: int strcmpi(const char *s1, const char *s2)
@@ -830,5 +830,6 @@
 ;BC4:              ; 2F1: int dlclose(int handle)
 #pragma disable old_equal_ff
 +0
+
 ;------------------------- end -------------------------
 
