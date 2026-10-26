@@ -311,7 +311,7 @@
 0440: 0xA0825E59   ; 110: wstrcopy(char *dst, char *src)
 0444: 0xA164B515   ; 111: GetTypeUSSD()
 0448: 0xA164B525   ; 112: SetUSSD(StructUSSDStr *)
-044C: 0xA154AA7D   ; 113: __thumb char * strpbrk (const char *s1,const char *s2)
+044C: 0xA154AA7D   ; 113: size_t strcspn(const char *str1, const char *str2)
 0450: 0xA154AAF9   ; 114: __thumb char * strncat (char *dest,const char *substr,int maxSubLen)
 0454: 0xA154AB29   ; 115: __thumb int  strncmp (const char *s1,const char *s2,int n)
 0458: 0xA154AB79   ; 116: __thumb int  strncpy (char *dest,const char *source,int maxlen)
@@ -788,5 +788,6 @@
 +0
 
 ;locale=Russian_Russia.1251
+
 ;------------------------- end -------------------------
 
