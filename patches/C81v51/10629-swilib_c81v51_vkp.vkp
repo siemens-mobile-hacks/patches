@@ -539,8 +539,8 @@
 ;7B8:              ; 1EE: int ProgressCalculate(int current, int total)
 07BC: 0xA096C28B   ; 1EF: void SetDynIcon(int picture, IMGHDR *img, char *bitmap)
 
-;7C0:              ; 1F0: int ExplorerCopyFile(const WSHDR *from, const WSHDR *to, int overwrite, char transfer_id, uint32_t *errp)
-;7C4:              ; 1F1: int ExplorerSetTransferState(char transfer_id, int state)
+07C0: 0xA0317347   ; 1F0: int ExplorerCopyFile(const WSHDR *from, const WSHDR *to, int overwrite, char transfer_id, uint32_t *errp)
+07C4: 0xA0318BEF   ; 1F1: void ExplorerSetTransferState(char transfer_id, int state)
 07C8: 0xA01DE84C   ; 1F2: devmenu_config_IsCheckboxOff
 07CC: 0xA00A8954   ; 1F3: unsigned int GetSessionAge()
 07D0: 0xA8E4C344   ; 1F4: char *RamServiceProviderName(void)
@@ -707,7 +707,7 @@
 0A30: 0xA8EC1DA0   ; 28C: __swi __arm char *RamTemporaryHeapSize()
 0A34: 0xA8DA2A78   ; 28D: __swi __arm char *RamBTNameDevice()
 0A38: 0xA8DA1C6C   ; 28E: __swi __arm char *RamActiveGPRSProfileName()
-;A3C:              ; 28F: char *RamIsNumberTyping()
+0A3C: 0xA8DB3C70   ; 28F: char *RamIsNumberTyping(void)
 
 0A40: 0xA8EAA230   ; 290: __swi __arm char *RamCallState()
 0A44: 0xA029ED28   ; 291: __swi __arm int RefreshAlarmClock()
@@ -847,9 +847,9 @@
 
 0C40: 0xA00A3090   ; 310: __arm NU_Create_Mailbox
 0C44: 0xA00A30BC   ; 311: __arm NU_Delete_Mailbox
-;C48:              ; 312: int NU_Reset_Mailbox(NU_MAILBOX *mailbox)
+0C48: 0xA00A31A8   ; 312: int NU_Reset_Mailbox(NU_MAILBOX *mailbox)
 0C4C: 0xA00A30DC   ; 313: __arm NU_Send_To_Mailbox
-;C50:              ; 314: int NU_Broadcast_To_Mailbox(NU_MAILBOX *mailbox, void *message, unsigned long suspend)
+0C50: 0xA00A31C8   ; 314: int NU_Broadcast_To_Mailbox(NU_MAILBOX *mailbox, void *message, unsigned long suspend)
 0C54: 0xA00A3140   ; 315: __arm NU_Receive_From_Mailbox
 ;C58:              ; 316: unsigned long NU_Established_Mailboxes(void)
 ;C5C:              ; 317: int NU_Mailbox_Information(NU_MAILBOX *mailbox, CHAR *name, OPTION *suspend_type, OPTION *message_present, unsigned long *tasks_waiting, NU_TASK **first_task)
@@ -914,7 +914,7 @@
 0D3C: 0xA00A8084   ; 34F: __arm NU_Local_Control_Interrupts
 
 0D40: 0xA00A809C   ; 350: __arm NU_Restore_Interrupts
-;D44:              ; 351: void *NU_Setup_Vector(INT vector, void *new_vector)
+0D44: 0xA00A1220   ; 351: void *NU_Setup_Vector(INT vector, void *new_vector)
 0D48: 0xA00A232C   ; 352: __arm NU_Register_LISR
 0D4C: 0xA00A27B8   ; 353: __arm NU_Activate_HISR
 0D50: 0xA00A24CC   ; 354: __arm NU_Create_HISR
@@ -1019,18 +1019,18 @@
 ;EC4:              ; 3B1: void SettingsAE_DeregisterListener(SettingsAE_ListenerProc proc, int set_id, const char *entry, const char *keyword)
 0EC8: 0xA054C6C1   ; 3B2: const WSHDR *MediaProc_GetLastAudioTrackDir()
 ;ECC:              ; 3B3: IMGHDR *GetIMGHDRFromCanvasCache(char canvas_id)
-;ED0:              ; 3B4: void GetDate_ws(WSHDR *ws, const TDate *date, unsigned int unk)
-;ED4:              ; 3B5: void GetTime_ws(WSHDR *ws, const TTime *time, unsigned int unk)
+0ED0: 0xA0911D4B   ; 3B4: void GetDate_ws(WSHDR *ws, const TDate *date, unsigned int unk)
+0ED4: 0xA0911BF9   ; 3B5: void GetTime_ws(WSHDR *ws, const TTime *time, unsigned int unk)
 ;ED8:              ; 3B6:
-;EDC:              ; 3B7: int sys_mkdir_ws(const WSHDR *dirname, uint32_t *err)
-;EE0:              ; 3B8:
-;EE4:              ; 3B9: int sys_rename_ws(const WSHDR *old_name, const WSHDR *new_name, uint32_t *err)
-;EE8:              ; 3BA:
-;EEC:              ; 3BB:
-;EF0:              ; 3BC: int isdir_ws(const WSHDR *path, uint32_t *err)
-;EF4:              ; 3BD:
-;EF8:              ; 3BE:
-;EFC:              ; 3BF:
+0EDC: 0xA0252158   ; 3B7: int sys_mkdir_ws(const WSHDR *dirname, uint32_t *err)
+0EE0: 0xA0252244   ; 3B8: int sys_rmdir_ws(const WSHDR *path, uint32_t *err)
+0EE4: 0xA02521D0   ; 3B9: int sys_rename_ws(const WSHDR *old_name, const WSHDR *new_name, uint32_t *err)
+0EE8: 0xA025239C   ; 3BA: int sys_unlink_ws(const WSHDR *path, uint32_t *err)
+0EEC: 0xA025232C   ; 3BB: int sys_stat_ws(const WSHDR *path, FSTATS *stat, uint32_t *err)
+0EF0: 0xA02520F0   ; 3BC: int isdir_ws(const WSHDR *path, uint32_t *err)
+0EF4: 0xA0251FC0   ; 3BD: int GetFileAttrib_ws(const WSHDR *path, uint8_t *attr, uint32_t *err)
+0EF8: 0xA02522B4   ; 3BE: int SetFileAttrib_ws(const WSHDR *path, uint8_t attr, uint32_t *err)
+0EFC: 0xA025203C   ; 3BF: int FindFirstFile_ws(DIR_ENTRY *dir_entry, const WSHDR *mask, uint32_t *err)
 
 ;F00:              ; 3C0: int ShowWaitBox(int flags, int message)
 ;F04:              ; 3C1:
@@ -1040,11 +1040,11 @@
 ;F14:              ; 3C5: void *GetPBarProc3()
 ;F18:              ; 3C6: void SetHeaderScrollText(void *header, const WSHDR *title, const void *malloc_fn, const void *mfree_fn)
 ;F1C:              ; 3C7: void SetHeaderExtraText(void *header, const WSHDR *ws, const void *malloc_fn, const void *mfree_fn)
-;F20:              ; 3C8: int GetMimeType(int uid, WSHDR *mime_type, int unk_0)
+0F20: 0xA04E6989   ; 3C8: int GetMimeType(int uid, WSHDR *mime_type, int occurrence)
 ;F24:              ; 3C9: int wstrncmp(const WSHDR *ws1, const WSHDR *ws2, size_t n)
 ;F28:              ; 3CA:
 ;F2C:              ; 3CB:
-;F30:              ; 3CC: int PersMenuCSM_Open(const WSHDR *file_name, const WSHDR *dir, int flag, int open_mode)
+0F30: 0xA0615AF5   ; 3CC: int PersMenuCSM_Open(const WSHDR *file_name, const WSHDR *dir, int flag, int open_mode)
 ;F34:              ; 3CD:
 ;F38:              ; 3CE:
 ;F3C:              ; 3CF:
@@ -1053,8 +1053,26 @@
 ;F44:              ; 3D1: void MediaProc_LaunchLastPlayback()
 ;F48:              ; 3D2: int GetScreenSaverType()
 0F4C: 0xA090E36B   ; 3D3: void IllumFilterSet(int flags, int unk)
+0F54: 0xA02A514B   ; 3D5: int BuildPath(WSHDR *path, const WSHDR *file_name, const WSHDR *dir)
+0F7C: 0xA8F189A4   ; 3DF: TZ *RamTimeZones(void)
+0F80: 0xA091073B   ; 3E0: int GetCurrentTimeZone(void)
+0F84: 0xA0911859   ; 3E1: int GetTimeZoneByGMT(const char *gmt)
+0F88: 0xA09118E1   ; 3E2: int IsSummerTime(int time_zone)
+0F8C: 0xA0911953   ; 3E3: void SetTimeZone(int time_zone)
+0F90: 0xA026EAA3   ; 3E4: void GetTimeFromMilliseconds(TTime *time, uint32_t milliseconds)
+0F94: 0xA026E019   ; 3E5: void DateAddDays(TDate *date, int days)
+0F98: 0xA026E04F   ; 3E6: void DateAddMonths(TDate *date, int months)
+0F9C: 0xA026E09F   ; 3E7: void DateAddYears(TDate *date, int years)
+0FA0: 0xA026DE67   ; 3E8: int GetDays(const TDate *date)
+0FA4: 0xA0A0F2BB   ; 3E9: void *EDIT_GetGUI(const void *malloc_fn, const void *mfree_fn)
+0FA8: 0xA0A0F697   ; 3EA: void EDIT_SetDefinition(void *gui, const INPUTDIA_DESC *input_desc)
+0FAC: 0xA0A0F5AD   ; 3EB: void EDIT_SetEQueue(void *gui, const EDITQ *eq, int do_mfree, const void *malloc_fn)
+0FB0: 0xA0A0F9A1   ; 3EC: void EDIT_SetUserPointer(void *gui, void *user_pointer)
+0FF8: 0xA0FFAB15   ; 3FE: int vsprintf(char *s, const char *format, va_list args)
+0FFC: 0xA0FF8B91   ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 #pragma disable old_equal_ff
 +0
+
 
 ;------------------------- end -------------------------
 
