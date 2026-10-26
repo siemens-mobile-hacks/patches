@@ -285,7 +285,7 @@
 0440: 0xA0825E59 ; 110: char *wstrcopy(char *dst, char *src)
 0444: 0xA171E301 ; 111: char GetTypeUSSD()
 0448: 0xA171E311 ; 112: unsigned int SetUSSD(StructUSSDStr *)
-044C: 0xA16EF4A9 ; 113: char * strpbrk (const char *s1,const char *s2)
+044C: 0xA16EF4A9 ; 113: size_t strcspn(const char *str1, const char *str2)
 0450: 0xA16EF525 ; 114: char * strncat (char *dest,const char *substr,int maxSubLen)
 0454: 0xA16EF555 ; 115: int strncmp (const char *s1,const char *s2,int n)
 0458: 0xA16EF5A5 ; 116: int strncpy (char *dest,const char *source,int maxlen)
@@ -834,8 +834,8 @@
 ;DC0:            ; 370:  NU_Established_Drivers
 ;DC4:            ; 371:  NU_Driver_Pointers
 ;DC8:            ; 372:  NU_IS_SUPERVISOR_MODE
-0DCC: 0xA08370D8 ; 373:  NU_SUPERVISOR_MODE
-0DD0: 0xA0837178 ; 374:  NU_USER_MODE
+0DCC: 0xA08370D8 ; 373:  void NU_SUPERVISOR_MODE_P(void *nu_svc_usr_var)
+0DD0: 0xA0837178 ; 374:  void NU_USER_MODE_P(void *nu_svc_usr_var)
 0DD4: 0xA86CDA3C ; 375:  NU_SUPERV_USER_VARIABLES
 
 ;<Reserved>
@@ -922,6 +922,7 @@
 ;0F54:           ; 3D5: __arm int BuildPath(WSHDR *ws, const WSHDR *file_name, const WSHDR *dir);
 #pragma disable old_equal_ff
 +0
+
 
 ;------------------------- end -------------------------
 
