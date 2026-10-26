@@ -181,7 +181,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 0228: 0xA07CB68C   ; 08A: __arm int GetFreeFlexSpace(int DriveNum, unsigned int *ErrorNumber)
 022C: 0xA07CBC50   ; 08B: __arm int GetTotalFlexSpace(int DriveNum, unsigned int *ErrorNumber)
 ;
-0230: 0xA02A1014 ; 08С: __thumb void RegExplorerExt(REGEXPLEXT *);
+0230: 0xA02A1014 ; 08C: void RegExplorerExt(const REGEXPLEXT *ext)
 ;0234: 0x   ; 08D: GetProfileName
 0238: 0xA07CB850   ; 08E: __arm int fmove(char *SourceFileName, char * DestFileName, unsigned int *ErrorNumber);
 023C: 0xA07CB888   ; 08F: __arm int rmdir(char *cDirectory, unsigned int *ErrorNumber);
@@ -330,7 +330,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 0440: 0xA0208AE5   ; 110: __thumb char *wstrcopy(char *dst, char *src);
 0444: 0xA02CE27D   ; 111: __thumb char GetTypeUSSD();
 0448: 0xA02CE28D   ; 112: __thumb unsigned int SetUSSD(StructUSSDStr *);
-044C: 0xA0EF356D   ; 113: __thumb char * strpbrk (const char *s1,const char *s2);
+044C: 0xA0EF356D   ; 113: size_t strcspn(const char *str1, const char *str2)
 0450: 0xA0EF35E9   ; 114: __thumb char * strncat (char *dest,const char *substr,int maxSubLen);
 0454: 0xA0EF3619   ; 115: __thumb int  strncmp (const char *s1,const char *s2,int n);
 0458: 0xA0EF3669   ; 116: __thumb int  strncpy (char *dest,const char *source,int maxlen);
@@ -578,6 +578,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 0800: 0xA0FC7301 ; Run ScreenShooter on function 200: ScreenShoot()
 #pragma disable old_equal_ff
 +0
+
 
 ;------------------------- end -------------------------
 
