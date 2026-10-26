@@ -309,7 +309,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0440: 0xA0825E5D   ; 110:  __thumb char *wstrcopy(char *dst, char *src)
 0444: 0xA08E0029   ; 111: GetTypeUSSD()
 0448: 0xA08E0039   ; 112:  __thumb unsigned int SetUSSD(StructUSSDStr *)
-044C: 0xA170D931   ; 113: strpbrk(const char *s1,const char *s2)
+044C: 0xA170D931   ; 113: size_t strcspn(const char *str1, const char *str2)
 0450: 0xA170D9AD   ; 114: strncat(char *dest,const char *substr,int maxSubLen)
 0454: 0xA170D9DD   ; 115: strncmp(const char *s1,const char *s2,int n)
 0458: 0xA170DA2D   ; 116: strncpy(char *dest,const char *source,int maxlen)
@@ -597,5 +597,6 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0E38: 0xA082812C   ; 38E: __arm void CreateICL(PGROUP *pg);
 #pragma disable old_equal_ff
 +0
+
 ;------------------------- end -------------------------
 
