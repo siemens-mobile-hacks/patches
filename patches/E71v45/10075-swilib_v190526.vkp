@@ -149,7 +149,7 @@
 
 0200: 0xA0A82501 ; 080: __thumb void int ShowCallList(int list, int zero);
 0204: 0xA0FAFFF8 ; 081: HexToDec
-0208: 0xA069FA9C ; 082: GetLastAudioTrackFilename
+0208: 0xA069FA9C ; 082: const WSHDR *MediaProc_GetLastAudioTrackFilename()
 ;020C: 0x ; 083: GetPathOfFoundFile
 0210: 0xA0568228 ; 084: __arm int GetFileStats(const char *cFileName, void * StatBuffer, unsigned int *errornumber);
 0214: 0xA058AF51 ; 085: StrCmpNoCase
@@ -984,7 +984,7 @@
 
 0EC0: 0xA05ACECB ; 3B0: __thumb void SettingsAE_RegisterListener(SettingsAE_ListenerProc proc, int set, const char *entry, const char *keyword);
 0EC4: 0xA05ACF25 ; 3B1: __thumb void SettingsAE_DeregisterListener(SettingsAE_ListenerProc proc, int set, const char *entry, const char *keyword);
-0EC8: 0xA069FA18 ; 3B2: __arm WSHDR *GetLastAudioTrackDir();
+0EC8: 0xA069FA18 ; 3B2: const WSHDR *MediaProc_GetLastAudioTrackDir()
 0ECC: 0xA066FF69 ; 3B3: __thumb IMGHDR *GetIMGHDRFromCanvasCache(unsigned int CanvasID);
 0ED0: 0xA08D0ACF ; 3B4: __thumb GetDate_ws(WSHDR *ws, const TDate *date, unsigned int unk);
 0ED4: 0xA08D0951 ; 3B5: __thumb GetTime_ws(WSHDR *ws, const TTime *time, unsigned int unk);
@@ -1067,5 +1067,6 @@
 
 #pragma disable old_equal_ff
 +0
+
 ;------------------------- end -------------------------
 
