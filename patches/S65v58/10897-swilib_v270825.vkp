@@ -314,7 +314,7 @@
 0440: 0xA0825E59   ; 110: wstrcopy(char *dst, char *src)
 0444: 0xA16A1451   ; 111: GetTypeUSSD()
 0448: 0xA16A1461   ; 112: SetUSSD(StructUSSDStr *)
-044C: 0xA166AE51   ; 113: strpbrk(const char *s1,const char *s2)
+044C: 0xA166AE51   ; 113: size_t strcspn(const char *str1, const char *str2)
 0450: 0xA166AECD   ; 114: strncat(char *dest,const char *substr,int maxSubLen)
 0454: 0xA166AEFD   ; 115: strncmp(const char *s1,const char *s2,int n)
 0458: 0xA166AF4D   ; 116: strncpy(char *dest,const char *source,int maxlen)
@@ -895,8 +895,8 @@
 ;DC0:              ; 370:  __arm NU_Established_Drivers
 ;DC4:              ; 371:  __arm NU_Driver_Pointers
 ;DC8:              ; 372:  __arm NU_IS_SUPERVISOR_MODE
-0DCC: 0xA08370D8   ; 373:  __arm NU_SUPERVISOR_MODE
-0DD0: 0xA0837178   ; 374:  __arm NU_USER_MODE
+0DCC: 0xA08370D8   ; 373:  void NU_SUPERVISOR_MODE_P(void *nu_svc_usr_var)
+0DD0: 0xA0837178   ; 374:  void NU_USER_MODE_P(void *nu_svc_usr_var)
 0DD4: 0xA86CF6EC   ; 8375:  __arm NU_SUPERV_USER_VARIABLES
 
 0E00: 0xA11811eb ; 380: __thumb WSHDR *GetClipBoard();
@@ -996,6 +996,7 @@
 0F8C: 0xA0c3781d ; 3E3: void SetTimeZone(int time_zone);
 #pragma disable old_equal_ff
 +0
+
 
 ;------------------------- end -------------------------
 
