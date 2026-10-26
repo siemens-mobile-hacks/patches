@@ -333,7 +333,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0440: 0xA0208AE5   ; 110: char *wstrcopy(char *dst, char *src)
 0444: 0xA02CE279   ; 111: char GetTypeUSSD()
 0448: 0xA02CE289   ; 112: unsigned int SetUSSD(StructUSSDStr *)
-044C: 0xA0EF52B1   ; 113: char *strpbrk(const char *s1,const char *s2)
+044C: 0xA0EF52B1   ; 113: size_t strcspn(const char *str1, const char *str2)
 0450: 0xA0EF532D   ; 114: char *strncat(char *dest,const char *substr,int maxSubLen)
 0454: 0xA0EF535D   ; 115: int strncmp(const char *s1,const char *s2,int n)
 0458: 0xA0EF53AD   ; 116: int strncpy(char *dest,const char *source,int maxlen)
@@ -830,5 +830,6 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0BC8: 0xA0206DD0   ; 2F2: GBSPROC *GetGBSProcAddress(short cepid)
 #pragma disable old_equal_ff
 +0
+
 ;------------------------- end -------------------------
 
