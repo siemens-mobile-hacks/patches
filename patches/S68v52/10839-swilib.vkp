@@ -95,7 +95,7 @@
 0114: 0xA006F241   ;  45: (API) int GetWavLen(char *filename)
 ;118:              ;  46: int HasNewSMS()
 011C: 0xA0266813   ;  47: __thumb int HasFlashSMS()
-0120: 0xA0B7E297   ;  48: __thumb int ReadNewSMS(void)
+;120:              ;  48: void ReadNewSMS(void)
 ;124:              ;  49: ReadFlashSMS
 0128: 0xA0246028   ;  4A: short PlayFile(int flags, WSHDR *foldername, WSHDR *filename, int zero, int CepId, int Msg, const PLAYFILE_OPT *sfo)
 012C: 0xA09090D8   ;  4B: StartMidlet
@@ -113,7 +113,7 @@
 0158: 0xA006F131   ;  56: (API) PlayVibra
 015C: 0xA00932F8   ;  57: __arm int IsCallAfterTimerStillRunning()
 0160: 0xA0FC0798   ;  58: void zeromem_2(void *dest,int n)
-0164: 0xA0FC083C   ;  59: void *memcpy_2(void *dest,const void *source,int cnt)
+0164: 0xA0FC0380   ;  59: void *memcpy_2(void *destination, const void *source, size_t num)
 0168: 0xA07A7141   ;  5A: KeypressOn(int key)
 016C: 0xA07A7253   ;  5B: KeypressOff(int key)
 0170: 0xA031AB45   ;  5C: unsigned char GetCPUClock()
@@ -219,7 +219,7 @@
 02E0: 0xA0FC09B0   ;  B8: int sdiv(int denom,int number)
 02E4: 0xA07A7B4F   ;  B9: void KbdUnlock()
 02E8: 0xA0094090   ;  BA: void *realloc(void *ptr, int size)
-02EC: 0xA0FC0998   ;  BB: void *memset(void *s, int c, int n)
+02EC: 0xA0FC03A8   ;  BB: void *memset(void *ptr, int val, size_t num)
 02F0: 0xA0FC0A88   ;  BC: int divide(int divisor, int dividend)
 02F4: 0xA0FC0B4C   ;  BD: int DivBy10(int divident)
 02F8: 0xA0060C91   ;  BE: (MP) RunScaner
@@ -313,7 +313,7 @@
 0440: 0xA023A915   ; 110: char *wstrcopy(unsigned short *dst, const unsigned short *src)
 0444: 0xA026622D   ; 111: char GetTypeUSSD()
 0448: 0xA026623D   ; 112: unsigned int SetUSSD(StructUSSDStr *)
-044C: 0xA0FC114D   ; 113: char *strpbrk(const char *s1,const char *s2)
+044C: 0xA0FC114D   ; 113: size_t strcspn(const char *str1, const char *str2)
 0450: 0xA0FC11C9   ; 114: char *strncat(char *dest,const char *substr,int maxSubLen)
 0454: 0xA0FC11F9   ; 115: int strncmp(const char *s1,const char *s2,int n)
 0458: 0xA0FC1249   ; 116: int strncpy(char *dest,const char *source,int maxlen)
@@ -324,7 +324,7 @@
 046C: 0xA0FBF5F9   ; 11B: int snprintf(char *,int n,const char *format,...)
 0470: 0xA0FC0325   ; 11C: int memcmp(const void *m1, const void *m2, int n)
 0474: 0xA0FC0798   ; 11D: void zeromem(void *dest,int n)
-0478: 0xA0FC083C   ; 11E: void *memcpy(void *dest,const void *source,int cnt)
+0478: 0xA0FC0380   ; 11E: void *memcpy(void *destination, const void *source, size_t num)
 047C: 0xA01BA06F   ; 11F: WSHDR *wstrcpy(WSHDR *wshdr_d,WSHDR *wshdr_s)
 
 0480: 0xA01BA091   ; 120: WSHDR *wstrncpy(WSHDR *,WSHDR *,int)
@@ -346,7 +346,7 @@
 
 04C0: 0xA07F6F95   ; 130: void getRGBbyPaletteAdr(int *paletteAdr,void *dest)
 04C4: 0xA07F6FB3   ; 131: void setColor(int a,int r,int g,int b,void *dest)
-04C8: 0xA0FC08F4   ; 132: void *memmove(void *dest,const void *source,int cnt)
+04C8: 0xA0FC0394   ; 132: void *memmove(void *destination, const void *source, size_t num)
 04CC: 0xA07FB7F9   ; 133: void StoreXYWHtoRECT(void *RECT,int x,int y,int w,int h)
 04D0: 0xA07FB80F   ; 134: void StoreXYXYtoRECT(void *RECT,int x,int y,int x2,int y2)
 04D4: 0xA07FE0FB   ; 135: int IsGuiOnTop(int id)
@@ -615,7 +615,7 @@
 08AC: 0xA02AA0F1   ; 22B: CreateRadioButtonList(RadioButtonListDesc *, char num_of_radiobuttons, 0, 0, char prev_setting, void HandlerFunc(int), char flag)
 08B0: 0xA02A99E3   ; 22C: pdcache_getval(char *return, int maxlen_of_return_str, char cachetype,0, *pd_entry_identifier)
 08B4: 0xA02A9AE1   ; 22D: pdcache_setval(char *new_value, char cachetype, 0, char *pd_entry_identifier)
-08B8: 0xA02EB91B   ; 22E: int OpenExplorer(NativeExplorerData *data)
+08B8: 0xA02EB8F7   ; 22E: int OpenExplorer(NativeExplorerData *data)
 08BC: 0xA8D28194   ; 22F: TDateTimeSettings *RamDateTimeSettings
 
 08C0: 0xA07A3DC1   ; 230: int GetTimeZoneShift(int param1, int param2, int timeZone)
