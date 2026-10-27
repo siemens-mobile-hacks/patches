@@ -118,7 +118,7 @@
 0188: 0xA05AEBD5 ; 062: SetVibraStatus
 018C: 0xA05C4441 ; 063: MMI_CanvasBuffer_FlushV(int CanvasID);
 0190: 0xA094F597 ; 064: __thumb void GeneralFuncF1_2(int cmd);
-;0194: 0x ; 065: EndCall
+0194: 0xA09B77C7 ; 065: void EndCall(void)
 0198: 0xA09B648B ; 066: EndCallBusy
 019C: 0xA0668D19 ; 067: IsDirectCallActive
 01A0: 0xA0670B49 ; 068: GetScreenSaverRAM
@@ -643,7 +643,7 @@
 0940: 0xA0CB7914 ; 250: __arm int GetPlayObjDuration(void *playobj_3D0, int *pos_ms);
 ;0944: 0x ; 251: void *RamSizeOfPart()
 ;0948: 0x ; 252: int *RamSizeOfReceivedOrSentFile()
-;094C: 0x ; 253: char *RamLastCallNum();
+094C: 0xA8EB5E0A ; 253: char *RamLastCallNum()
 0950: 0xA0699924 ; 254: __arm int StartNativeExplorer(NativeExplorerData* data);
 0954: 0xA095654B ; 255: __arm void MenuSetUserPointer(void *gui,void *user_pointer);
 ;0958: 0x ; 256: const char *RamNameOfReceivedOrSentFile()
@@ -775,7 +775,7 @@
 
 0B40: 0xA0589ADD ; 2D0: int GetDaysFromMonth(TDate *date);
 0B44: 0xA0589ABD ; 2D1: int IsLeapYear(TDate *date);
-;0B48: 0x;  2D2: __thumb StartNativeBrowserCore();
+0B48: 0xA05FABE7 ; 2D2: void StartNativeBrowserCore()
 0B4C: 0xA05FF477 ; 2D3: int GetFilledNAbDataCount(NativeAbData *nab);
 0B50: 0xA05FEE21 ; 2D4: void *GetDataFromNAbData(NativeAbData *nab, int n);
 0B54: 0xA092DBFF ; 2D5: void UnpackNumPkt(PKT_NUM *pkt, char *buf, int maxlen);
@@ -969,7 +969,7 @@
 0E84: 0xA0F78CCB ; 3A1: __thumb int SSL_set_session(SSL *ssl, SSL_SESSION *session);
 0E88: 0xA0F72BA3 ; 3A2: __thumb void SSL_SESSION_free(SSL_SESSION *sess);
 0E8C: 0xA09544FB ; 3A3: __thumb void SetMenuItemIconIMGHDR(void *gui, void *item, IMGHDR *img);
-;E90:            ; 3A4
+0E90: 0xA0A0D3D5 ; 3A4: void LCD_SetDrawingRegion(int x, int y, int x2, int y2)
 0E94: 0xA0A0CA97 ; 3A5: __thumb void DrawIMGHDR(int x, int y, IMGHDR *img);
 0E98: 0xA08D2E81 ; 3A6: __thumb void DrwObj_GetWH(DRWOBJ *drwobj, int *w, int *h);
 0E9C: 0xA094CB67 ; 3A7: __thumb int GUI_NewTimer(void *gui);
@@ -1061,14 +1061,15 @@
 0FE0: 0xA0A2A7A1 ; 3F8: __thumb void Scrollbar_SetValue(WIDGET *scrollbar, int value);
 0FE4: 0xA053E95C ; 3F9: __arm int IsAnyOfAccessoriesConnected(const enum Accessory *accessory_ids, uint8_t count);
 0FE8: 0xA08CCC85 ; 3FA: __thumb void SetMaxIllumIntensity(int unk3, uint32_t level);
-0FEC: 0xA056798C ; 3FB: __arm int sys_mount(uint16_t drive, uint32_t *err);
-0FF0: 0xA05679CC ; 3FC: __arm int sys_unmount(uint16_t drive, uint32_t *err);
+0FEC: 0xA0568308 ; 3FB: int sys_mount(uint16_t drive, uint32_t *err)
+0FF0: 0xA0568340 ; 3FC: int sys_unmount(uint16_t drive, uint32_t *err)
 0FF4: 0xA056859C ; 3FD: __arm int setfiletime(int fd, uint16_t date, uint16_t time, uint32_t *err);
 0FF8: 0xA122B3A9 ; 3FE: int vsprintf(char *s, const char *format, va_list args)
 0FFC: 0xA0FAEA45 ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 
 #pragma disable old_equal_ff
 +0
+
 
 
 
