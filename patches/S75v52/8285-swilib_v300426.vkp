@@ -70,7 +70,7 @@
 00C4: 0xA0FC5499   ;  31: char *strrchr_2(const char *s,int c)
 00C8: 0xA0282E78   ;  32: void PlaySound(long param1, long param2, long param3, long tone, long param5)
 00CC: 0xA02797D0   ;  33: PlaySound2
-00D0: 0xA0B37A80   ;  34: void PlaySoundLoop(int _0x2F, int param2, int duration)
+;0D0:              ;  34: void PlaySoundLoop(int _0x2F, int param2, int duration)
 ;0D4:              ;  35: AlarmClockRing
 ;0D8:              ;  36: void SLI_SetState(unsigned char state)
 00DC: 0xA027CC50   ;  37: void Ringtones_SetState(unsigned char state)
@@ -296,7 +296,7 @@
 0418: 0xA8DB9948   ; 106: CSMROOT *CSM_root()
 041C: 0xA096FE9F   ; 107: int CreateCSM(const CSM_DESC *,void *,int)
 0420: 0xA096FEB1   ; 108: CSM_RAM *FindCSMbyID(int id)
-0424: 0xA096FF6D   ; 109: void DoIDLE(void)
+0424: 0xA096FF7F   ; 109: void DoIDLE(void)
 ;428:              ; 10A: void *GetConfig(unsigned int id)
 ;42C:              ; 10B: void *GetMinAdrScan()
 ;430:              ; 10C: void *GetMaxAdrScan()
@@ -647,7 +647,7 @@
 0940: 0xA0CF8904   ; 250: int GetPlayObjDuration(void *playobj_3D0, int *pos_ms)
 ;944:              ; 251: void *RamSizeOfPart()
 ;948:              ; 252: int *RamSizeOfReceivedOrSentFile()
-094C: 0xA8DE4E76   ; 253: char *RamLastCallNum();
+094C: 0xA8DE9B6E   ; 253: char *RamLastCallNum();
 0950: 0xA052A5F7   ; 254: int StartNativeExplorer(NativeExplorerData* data)
 0954: 0xA097F42F   ; 255: void MenuSetUserPointer(void *gui,void *user_pointer)
 ;958:              ; 256: const char *RamNameOfReceivedOrSentFile()
@@ -1100,6 +1100,7 @@
 
 #pragma disable old_equal_ff
 +0
+
 
 
 
