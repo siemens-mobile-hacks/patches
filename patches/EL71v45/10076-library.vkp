@@ -114,7 +114,7 @@
 0188: 0xA05AFB45   ;   62: SetVibraStatus
 018C: 0xA05C5A95   ;   63: MMI_CanvasBuffer_FlushV(int CanvasID)
 0190: 0xA095931B   ;   64: TriggerUpdate
-;194:              ;   65: EndCall
+0194: 0xA09C154B   ;   65: void EndCall(void)
 0198: 0xA09C020F   ;   66: EndCallBusy
 019C: 0xA066AC95   ;   67: IsDirectCallActive
 01A0: 0xA0673279   ;   68: GetScreenSaverRAM
@@ -127,7 +127,7 @@
 01BC: 0xA092D015   ;   6F: void RefreshGPRSTraffic()
 01C0: 0xA092D029   ;   70: int *GetGPRSTrafficPointer()
 01C4: 0xA0A16073   ;   71: DrawRoundRect
-;1C8:              ;   72: SetCurrentSecondOfCall
+01C8: 0xA08D30C1   ;   72: int GetDurationFromCurrentCall(void)
 01CC: 0xA0CE6593   ;   73: GetTypeOfCall
 01D0: 0xA06374A5   ;   74: SHORTCUTREC *GetShortcutRecordByName(char *szShortcutName)
 01D4: 0xA05C5FB9   ;   75: IsCanvasBufferSet
@@ -683,7 +683,7 @@
 0A6C: 0xA05C1225   ;  29B: GetTypeOfBTHeadset
 0A70: 0xA8DA7C01   ; 829C: char *RamInputLanguage()
 0A74: 0xA8DF3718   ; 829D: char *RamDisplayLanguage()
-;A78:              ;  29E:
+0A78: 0xA8DA2310   ;  29E: char *RamIsBTConnected()
 ;A7C:              ;  29F:
 0A80: 0xA05C6D4C   ;  2A0: int GetAlarmclockState(int state)
 0A84: 0xA0A274C5   ;  2A1: int RscMgr_CsSetColor(int id, const uint8_t *color)
@@ -735,7 +735,7 @@
 0B3C: 0xA058B671   ;  2CF: int CmpTimes(TTime *time1, TTime *time2)
 0B40: 0xA058AA4D   ;  2D0: int GetDaysFromMonth(TDate *date)
 0B44: 0xA058AA2D   ;  2D1: int IsLeapYear(TDate *date)
-;B48:              ;  2D2:
+0B48: 0xA05FC273   ;  2D2: void StartNativeBrowserCore()
 0B4C: 0xA0601463   ;  2D3: int GetFilledNAbDataCount(NativeAbData *nab)
 0B50: 0xA0600E0D   ;  2D4: void *GetDataFromNAbData(NativeAbData *nab, int n)
 0B54: 0xA0937983   ;  2D5: void UnpackNumPkt(PKT_NUM *pkt, char *buf, int maxlen)
@@ -849,13 +849,47 @@
 0D98: 0xA00A0B1C   ;  366: char *NU_License_Information(void)
 0DD0: 0xA009B878   ;  374: void NU_USER_MODE_P(void *nu_svc_usr_var)
 0DD4: 0xA8D95BCC   ;  375: void *NU_SUPERV_USER_VARIABLES(void)
+0E00: 0xA0959171   ;  380: WSHDR *GetClipBoard(void)
+0E04: 0xA0959109   ;  381: void CopyTextToClipboard(const WSHDR *text, int pos, int len)
+0E08: 0xA09590F1   ;  382: void ClearClipboard(char unk)
+0E0C: 0xA095235B   ;  383: int PushDRWOBJOnLAYER(DRWOBJ *drwobj, LCDLAYER *layer)
+0E10: 0xA0954061   ;  384: void LCDLAYER_Redraw(LCDLAYER *layer)
+0E14: 0xA0095FDD   ;  385: void* GetGBSProcAddress(short cepid)
+0E18: 0xA0A1CD69   ;  386: void DrwObj_InitTiledImageEx(DRWOBJ *drwobj, const RECT *rect, int flags, const EIMGHDR *img, int offset_x, int offset_y)
+0E1C: 0xA094FC3B   ;  387: LCDLAYER *LCD_GetCurrentLayer()
+0E20: 0xA0A1B619   ;  388: void LCD_SetBufferDepth(char depth)
+0E24: 0xA0A1B5C7   ;  389: void LCDLAYER_SetBufferDepth(LCDLAYER *layer, char depth)
+0E2C: 0xA8D94F44   ;  38B: const char *RamLastStoreString()
 0E30: 0xA056DFA0   ;  38C: int sys_format(uint16_t drive, uint32_t *err)
+0E34: 0xA056E054   ;  38D: int sys_fstat(int fd, FSTATS *stat, uint32_t *err)
 0E38: 0xA0092451   ;  38E: void CreateICL(PGROUP *pgroup)
 0E3C: 0xA009562D   ;  38F: void *GBS_CreateProcessGroupResource(int mask, int unk_zero, PGROUP *pgroup, int size)
 0E40: 0xA0095F31   ;  390: void *GBS_GetCurrentTask()
 0E44: 0xA00930CB   ;  391: void *MemMBPAlloc(void *pool, int size)
 0E48: 0xA00932DF   ;  392: void MemMBPFree(void *pool, void *ptr)
 0E4C: 0xA8DF3EDC   ;  393: void *RamMopiResourcePool()
+0E50: 0xA1012E54   ;  394: RAND_METHOD *RAND_get_rand_method(void)
+0E54: 0xA0F83A43   ;  395: SSL_METHOD *TLSv1_client_method()
+0E58: 0xA0F8507F   ;  396: SSL_CTX *SSL_CTX_new(SSL_METHOD *meth)
+0E5C: 0xA0F8447B   ;  397: void SSL_CTX_free(SSL_CTX *ctx)
+0E60: 0xA0F81553   ;  398: long SSL_CTX_ctrl(SSL_CTX *ctx, int cmd, long larg, void *parg)
+0E64: 0xA0F8464B   ;  399: SSL *SSL_new(SSL_CTX *ctx)
+0E68: 0xA0F8486B   ;  39A: int SSL_set_fd(SSL *s, int fd)
+0E6C: 0xA0F84A0F   ;  39B: int SSL_connect(SSL *ssl)
+0E70: 0xA0F84A29   ;  39C: int SSL_shutdown(SSL *ssl)
+0E74: 0xA0F803A3   ;  39D: int SSL_read(SSL *ssl, void *buf, int num)
+0E78: 0xA0F80429   ;  39E: int SSL_peek(SSL *ssl, void *buf, int num)
+0E7C: 0xA0F80305   ;  39F: int SSL_write(SSL *ssl, const void *buf, int num)
+0E80: 0xA0F84751   ;  3A0: void SSL_free(SSL *ssl)
+0E84: 0xA0F8546F   ;  3A1: int SSL_set_session(SSL *ssl, SSL_SESSION *session)
+0E88: 0xA0F7F347   ;  3A2: void SSL_SESSION_free(SSL_SESSION *sess)
+0E8C: 0xA095E27F   ;  3A3: void SetMenuItemIconIMGHDR(void *gui, void *item, IMGHDR *icon)
+0E90: 0xA0A17181   ;  3A4: void LCD_SetDrawingRegion(int x, int y, int x2, int y2)
+0E94: 0xA0A16843   ;  3A5: void DrawIMGHDR(int x, int y, const IMGHDR *img)
+0E98: 0xA08DC2A9   ;  3A6: void DrwObj_GetWH(DRWOBJ *drwobj, int *w, int *h)
+0E9C: 0xA09568EB   ;  3A7: int GUI_NewTimer(void *gui)
+0EA0: 0xA0956A2F   ;  3A8: int GUI_DeleteTimer(void *gui, int id)
+0EA4: 0xA095697F   ;  3A9: void GUI_StartTimerProc(void *gui, int id, long timeout, GUI_TimerProc callback)
 0EA8: 0xA0FBC015   ;  3AA: void qsort(void *first, size_t nitems, size_t size, int (*comparator)(const void *, const void *))
 0EAC: 0xA0FBB2E5   ;  3AB: void *bsearch(const void *key, const void *first, size_t nitems, size_t size, int (*comparator)(const void *, const void *))
 0EC0: 0xA05ADE3B   ;  3B0: void SettingsAE_RegisterListener(SettingsAE_ListenerProc proc, int set_id, const char *entry, const char *keyword)
@@ -902,6 +936,8 @@
 0F68: 0xA0500DF9   ;  3DA: uint16_t wstriwstr(const WSHDR *ws, const WSHDR *search, uint32_t start_pos)
 0F6C: 0xA0500D1D   ;  3DB: void wstrreplace(WSHDR *dest, const WSHDR *src, uint32_t pos)
 0F70: 0xA0957747   ;  3DC: int GetUnicodeSymbolByDynIcon(int dyn_icon)
+0F74: 0xA09D6681   ;  3DD: uint32_t ReadValueFromPDFile(uint32_t file_id, const char *key, char *value, uint32_t *size)
+0F78: 0xA09D6B91   ;  3DE: uint32_t WriteValueToPDFile(uint32_t file_id, const char *key, const char *value, size_t size)
 0F7C: 0xA8F63390   ;  3DF: TZ *RamTimeZones(void)
 0F80: 0xA08D8813   ;  3E0: int GetCurrentTimeZone(void)
 0F84: 0xA08D9983   ;  3E1: int GetTimeZoneByGMT(const char *gmt)
@@ -916,6 +952,8 @@
 0FA8: 0xA0A26443   ;  3EA: void EDIT_SetDefinition(void *gui, const INPUTDIA_DESC *input_desc)
 0FAC: 0xA0A26359   ;  3EB: void EDIT_SetEQueue(void *gui, const EDITQ *eq, int do_mfree, const void *malloc_fn)
 0FB0: 0xA0A2674D   ;  3EC: void EDIT_SetUserPointer(void *gui, void *user_pointer)
+0FB4: 0xA09603F9   ;  3ED: void SetWidgetRect(void *widget, int x, int y, int x2, int y2)
+0FB8: 0xA0A2C6B5   ;  3EE: void AttachWidget(void *gui, const void *widget, int id, const void *malloc_fn)
 0FBC: 0xA0956B23   ;  3EF: int16_t GetLgpIcon(int lgp_id)
 0FC0: 0xA0674830   ;  3F0: void Countdown_Start()
 0FC4: 0xA06748F4   ;  3F1: void Countdown_Stop()
@@ -927,11 +965,16 @@
 0FDC: 0xA0A3457B   ;  3F7: void Scrollbar_Configure(WIDGET *scrollbar, int limit, int unk1, int unk2)
 0FE0: 0xA0A3454D   ;  3F8: void Scrollbar_SetValue(WIDGET *scrollbar, int value)
 0FE4: 0xA0544BA4   ;  3F9: int IsAnyOfAccessoriesConnected(const enum Accessory *accessory_ids, uint8_t count)
+0FE8: 0xA08D60A5   ;  3FA: void SetMaxIllumIntensity(int unk3, uint32_t level)
+0FEC: 0xA056E518   ;  3FB: int sys_mount(uint16_t drive, uint32_t *err)
+0FF0: 0xA056E550   ;  3FC: int sys_unmount(uint16_t drive, uint32_t *err)
+0FF4: 0xA056E7AC   ;  3FD: int setfiletime(int fd, uint16_t date, uint16_t time, uint32_t *err)
 0FF8: 0xA0FBD1AD   ;  3FE: int vsprintf(char *s, const char *format, va_list args)
 0FFC: 0xA0FBB1E9   ;  3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 
 #pragma disable old_equal_ff
 +0
+
 
 
 ;------------------------- end -------------------------
