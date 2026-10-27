@@ -144,7 +144,7 @@
 01DC: 0xA09719A3   ;  77: void DrwObj_SetColor_2(DRWOBJ *drwobj, const char *pen, const char *brush)
 01E0: 0xA09024ED   ;  78: GetTimeFormat
 01E4: 0xA0903C1D   ;  79: DrawObject2Layer(LCD_Layer *, DRWOBJ *)
-;1E8:              ;  7A: void LCDLAYER_Flush(LCDLAYER *layer)
+01E8: 0xA0975D31   ; 07A: void LCDLAYER_Flush(LCDLAYER *layer)
 ;1EC:              ;  7B: GetProfileFilter
 01F0: 0xA01B0D5B   ;  7C: unsigned int SetVibration(unsigned int power)
 01F4: 0xA0D0C6D3   ;  7D: IsIncognitoCall
@@ -247,7 +247,7 @@
 ;360:              ;  D8: RamMenuAnywhere
 ;364:              ;  D9:
 0368: 0xA8DADD44   ; 0DA: char *RamIsShutdown()
-;36C:              ;  DB: int *RamIsNotOnMainscreen()
+036C: 0xA8E920EC   ; 0DB: int *RamIsNotOnMainscreen()
 0370: 0xA8DCCD34   ;  DC: int *RamRandSeed(void)
 ;374:              ; 0DD: void *RamCurrentTrack()
 0378: 0xA8D77F78   ;  DE: RamIsSimPresent
@@ -782,7 +782,7 @@
 
 0B40: 0xA026EA55   ; 2D0: int GetDaysFromMonth(TDate *date)
 0B44: 0xA026EA35   ; 2D1: int IsLeapYear(TDate *date)
-;B48:              ; 2D2: StartNativeBrowserCore()
+0B48: 0xA04FBA75   ; 2D2: void StartNativeBrowserCore()
 0B4C: 0xA0515094   ; 2D3: int GetFilledNAbDataCount(NativeAbData *nab)
 0B50: 0xA051463C   ; 2D4: void *GetDataFromNAbData(NativeAbData *nab, int n)
 0B54: 0xA095C5C3   ; 2D5: void UnpackNumPkt(PKT_NUM *pkt, char *buf, int maxlen)
@@ -959,7 +959,7 @@
 ;E28:              ; 38A: void *RamAudioHookProc()
 0E2C: 0xA8D16E08   ; 38B: char *RamLastStoreString()
 0E30: 0xA0252B54   ; 38C: int sys_format(uint16_t drive, uint32_t *err)
-;E34:              ; 38D: int  stat(int fhandler, FStat *fstat, unsigned int *error)
+0E34: 0xA0252C08   ; 38D: int sys_fstat(int fd, FSTATS *stat, uint32_t *err)
 0E38: 0xA0093124   ; 38E: void CreateICL(PGROUP *pg)
 0E3C: 0xA0098224   ; 38F: PGroupProc *CreatePGroupRes(int mask, int unk_zero, TaskConfig *conf, int size)
 
@@ -967,6 +967,23 @@
 0E44: 0xA0093AB4   ; 391: void *MemMBPAlloc(void *pool, int size)
 0E48: 0xA00947A8   ; 392: void MemMBPFree(void *pool, void *ptr)
 0E4C: 0xA8D35C74   ; 8393: void *MopiResourcePool(); ; RAM ;
+0E50: 0xA1053088   ; 394: RAND_METHOD *RAND_get_rand_method(void)
+0E54: 0xA0F8C023   ; 395: SSL_METHOD *TLSv1_client_method()
+0E58: 0xA0F8D65F   ; 396: SSL_CTX *SSL_CTX_new(SSL_METHOD *meth)
+0E5C: 0xA0F8CA5B   ; 397: void SSL_CTX_free(SSL_CTX *ctx)
+0E60: 0xA0F89B33   ; 398: long SSL_CTX_ctrl(SSL_CTX *ctx, int cmd, long larg, void *parg)
+0E64: 0xA0F8CC2B   ; 399: SSL *SSL_new(SSL_CTX *ctx)
+0E68: 0xA0F8CE4B   ; 39A: int SSL_set_fd(SSL *s, int fd)
+0E6C: 0xA0F8CFEF   ; 39B: int SSL_connect(SSL *ssl)
+0E70: 0xA0F8D009   ; 39C: int SSL_shutdown(SSL *ssl)
+0E74: 0xA0F88983   ; 39D: int SSL_read(SSL *ssl, void *buf, int num)
+0E78: 0xA0F88A09   ; 39E: int SSL_peek(SSL *ssl, void *buf, int num)
+0E7C: 0xA0F888E5   ; 39F: int SSL_write(SSL *ssl, const void *buf, int num)
+0E80: 0xA0F8CD31   ; 3A0: void SSL_free(SSL *ssl)
+0E84: 0xA0F8DA4F   ; 3A1: int SSL_set_session(SSL *ssl, SSL_SESSION *session)
+0E88: 0xA0F87927   ; 3A2: void SSL_SESSION_free(SSL_SESSION *sess)
+0E8C: 0xA097D73F   ; 3A3: void SetMenuItemIconIMGHDR(void *gui, void *item, IMGHDR *icon)
+0E90: 0xA0A0351D   ; 3A4: void LCD_SetDrawingRegion(int x, int y, int x2, int y2)
 ; 0E50:            ; 394
 ; 0E54:            ; 395
 ; 0E58:            ; 396
@@ -1075,11 +1092,15 @@
 0FE0: 0xA0A204C7   ; 3F8: void Scrollbar_SetValue(WIDGET *scrollbar, int value)
 0FE4: 0xA022F5B4   ; 3F9: __arm int IsAnyOfAccessoriesConnected(const enum Accessory *accessory_ids, uint8_t count);
 0FE8: 0xA08FECCF   ; 3FA: __thumb SetMaxIllumIntensity(int unk3, uint32_t level);
+0FEC: 0xA02530CC   ; 3FB: int sys_mount(uint16_t drive, uint32_t *err)
+0FF0: 0xA0253104   ; 3FC: int sys_unmount(uint16_t drive, uint32_t *err)
+0FF4: 0xA0253360   ; 3FD: int setfiletime(int fd, uint16_t date, uint16_t time, uint32_t *err)
 0FF8: 0xA0FC574D   ; 3FE: int vsprintf(char *s, const char *format, va_list args)
 0FFC: 0xA0FC37C9   ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 
 #pragma disable old_equal_ff
 +0
+
 
 
 
