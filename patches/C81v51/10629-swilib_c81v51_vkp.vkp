@@ -779,7 +779,7 @@
 
 0B40: 0xA026DDCD   ; 2D0: __swi __arm int GetDaysFromMonth(TDate *date)
 0B44: 0xA026DDAD   ; 2D1: __swi __arm int IsLeapYear(TDate *date)
-;B48:              ; 2D2: void StartNativeBrowserCore()
+0B48: 0xA050C3C1   ; 2D2: void StartNativeBrowserCore()
 0B4C: 0xA05259E0   ; 2D3: __swi __arm int GetFilledNAbDataCount(NativeAbData *nab)
 0B50: 0xA0524F88   ; 2D4: __swi __arm void *GetDataFromNAbData(NativeAbData *nab, int n)
 0B54: 0xA0951F33   ; 2D5: __swi __arm void UnpackNumPkt(PKT_NUM *pkt, char *buf, int maxlen)
@@ -1062,6 +1062,8 @@
 0F68: 0xA01F6FF1   ; 3DA: uint16_t wstriwstr(const WSHDR *ws, const WSHDR *search, uint32_t start_pos)
 0F6C: 0xA01F6F15   ; 3DB: void wstrreplace(WSHDR *dest, const WSHDR *src, uint32_t pos)
 0F70: 0xA096C57B   ; 3DC: int GetUnicodeSymbolByDynIcon(int dyn_icon)
+0F74: 0xA09C7F95   ; 3DD: uint32_t ReadValueFromPDFile(uint32_t file_id, const char *key, char *value, uint32_t *size)
+0F78: 0xA09C84A5   ; 3DE: uint32_t WriteValueToPDFile(uint32_t file_id, const char *key, const char *value, size_t size)
 0F7C: 0xA8F189A4   ; 3DF: TZ *RamTimeZones(void)
 0F80: 0xA091073B   ; 3E0: int GetCurrentTimeZone(void)
 0F84: 0xA0911859   ; 3E1: int GetTimeZoneByGMT(const char *gmt)
@@ -1076,6 +1078,8 @@
 0FA8: 0xA0A0F697   ; 3EA: void EDIT_SetDefinition(void *gui, const INPUTDIA_DESC *input_desc)
 0FAC: 0xA0A0F5AD   ; 3EB: void EDIT_SetEQueue(void *gui, const EDITQ *eq, int do_mfree, const void *malloc_fn)
 0FB0: 0xA0A0F9A1   ; 3EC: void EDIT_SetUserPointer(void *gui, void *user_pointer)
+0FB4: 0xA0974E2D   ; 3ED: void SetWidgetRect(void *widget, int x, int y, int x2, int y2)
+0FB8: 0xA0A1580D   ; 3EE: void AttachWidget(void *gui, const void *widget, int id, const void *malloc_fn)
 0FBC: 0xA096B965   ; 3EF: int16_t GetLgpIcon(int lgp_id)
 0FC0: 0xA0305A7C   ; 3F0: void Countdown_Start()
 0FC4: 0xA0305B40   ; 3F1: void Countdown_Stop()
@@ -1087,10 +1091,15 @@
 0FDC: 0xA0A1D4ED   ; 3F7: void Scrollbar_Configure(WIDGET *scrollbar, int limit, int unk1, int unk2)
 0FE0: 0xA0A1D4BF   ; 3F8: void Scrollbar_SetValue(WIDGET *scrollbar, int value)
 0FE4: 0xA022E86C   ; 3F9: int IsAnyOfAccessoriesConnected(const enum Accessory *accessory_ids, uint8_t count)
+0FE8: 0xA090E3B7   ; 3FA: void SetMaxIllumIntensity(int unk3, uint32_t level)
+0FEC: 0xA02523D0   ; 3FB: int sys_mount(uint16_t drive, uint32_t *err)
+0FF0: 0xA0252408   ; 3FC: int sys_unmount(uint16_t drive, uint32_t *err)
+0FF4: 0xA0252664   ; 3FD: int setfiletime(int fd, uint16_t date, uint16_t time, uint32_t *err)
 0FF8: 0xA0FFAB15   ; 3FE: int vsprintf(char *s, const char *format, va_list args)
 0FFC: 0xA0FF8B91   ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 #pragma disable old_equal_ff
 +0
+
 
 
 
