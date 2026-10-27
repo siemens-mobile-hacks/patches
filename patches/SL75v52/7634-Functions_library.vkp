@@ -72,7 +72,7 @@
 00C4: 0xA0FD1961   ;  31: char *strrchr_2(const char *s,int c)
 00C8: 0xA0282D70   ;  32: void PlaySound(long param1, long param2, long param3, long tone, long param5)
 00CC: 0xA02796C8   ;  33: PlaySound2
-00D0: 0xA0B3EF00   ;  34: PlaySoundLoop
+;0D0:              ;  34: PlaySoundLoop
 ;0D4:              ;  35: AlarmClockRing
 ;0D8:              ;  36: 
 00DC: 0xA027CB48   ;  37: void Ringtones_SetState(unsigned char state)
@@ -299,7 +299,7 @@
 0418: 0xA8DB9954   ; 106: CSMROOT *CSM_root()
 041C: 0xA097289F   ; 107: int CreateCSM(const CSM_DESC *,void *,int)
 0420: 0xA09728B1   ; 108: CSM_RAM *FindCSMbyID(int id)
-0424: 0xA097296D   ; 109: void DoIDLE(void)
+0424: 0xA097297F   ; 109: void DoIDLE(void)
 ;428:              ; 10A: void *GetConfig(unsigned int id)
 ;42C:              ; 10B: void *GetMinAdrScan()
 ;430:              ; 10C: void *GetMaxAdrScan()
@@ -636,6 +636,7 @@
 0938: 0xA02C7260   ; 24E: void *GetPlayObjById(int handle)
 093C: 0xA091C2E4   ; 24F: int GetPlayObjPosition(void *obj, int *position)
 0940: 0xA091C07C   ; 250: int GetPlayObjDuration(void *obj, int *duration)
+094C: 0xA8DE9B7E   ; 253: char *RamLastCallNum()
 0950: 0xA053161F   ; 254: int StartNativeExplorer(NativeExplorerData *data)
 0954: 0xA0981E2F   ; 255: void GUI_SetUserPointer(void *gui, void *user_pointer)
 0960: 0xA0978C4D   ; 258: int CalcBitmapSize(short w, short h, char type)
@@ -985,6 +986,7 @@
 0FFC: 0xA0FCFC91   ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 #pragma disable old_equal_ff
 +0
+
 
 
 
