@@ -74,7 +74,7 @@
 00C4: 0xA0FC12C5   ;  31: char *strrchr_2(const char *s,int c)
 00C8: 0xA024D858   ;  32: void PlaySound(long param1, long param2, long param3, long tone, long param5)
 00CC: 0xA02441B0   ;  33: PlaySound2
-00D0: 0xA0981CEC   ;  34: void PlaySoundLoop(int _0x2F, int param2, int duration)
+;0D0:              ;  34: void PlaySoundLoop(int _0x2F, int param2, int duration)
 ;0D4:              ;  35: AlarmClockRing
 00D8: 0xA017A498   ; 036: void SLI_SetState(uint8_t state)
 00DC: 0xA0247630   ;  37: void Ringtones_SetState(unsigned char state)
@@ -302,7 +302,7 @@
 0418: 0xA8DB3688   ; 106: CSMROOT *CSM_root()
 041C: 0xA07F5913   ; 107: int CreateCSM(const CSM_DESC *,void *,int)
 0420: 0xA07F5925   ; 108: CSM_RAM *FindCSMbyID(int id)
-0424: 0xA07F59E1   ; 109: void DoIDLE(void)
+0424: 0xA07F59F3   ; 109: void DoIDLE(void)
 ;428:              ; 10A: void *GetConfig(unsigned int id)
 ;42C:              ; 10B: void *GetMinAdrScan()
 ;430:              ; 10C: void *GetMaxAdrScan()
@@ -707,7 +707,7 @@
 
 ;0A00:             ; 280:
 0A04: 0xA8DEA230   ; 281: char *RamIsRunJava()
-0A08: 0xA8DCD67C   ; 282: char *RamIsRunCamera()
+;A08:              ; 282: char *RamIsRunCamera()
 0A0C: 0xA02DB3C9   ; 283: int runMidletLinkablely(const char *midlet_name, WSHDR *filename)
 0A10: 0xA0B87853   ; 284: int IsGPRS()
 0A14: 0xA0B8785B   ; 285: int IsEDGE()
@@ -1037,6 +1037,7 @@
 0FFC: 0xA0FBF691   ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 #pragma disable old_equal_ff
 +0
+
 
 
 
