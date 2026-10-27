@@ -67,7 +67,7 @@
 00C4: 0xA0FFA861   ;  31: char *strrchr_2(const char *s,int c)
 00C8: 0xA02821F0   ;  32: void PlaySound(long param1, long param2, long param3, long tone, long param5)
 00CC: 0xA0278B48   ;  33: PlaySound2
-00D0: 0xA0B5C1CC   ;  34: PlaySoundLoop
+;0D0:              ;  34: PlaySoundLoop
 ;0D4:              ;  35: void AlarmClockRing()
 ;0D8:              ;  36: void SLI_SetState(uint8_t state)
 00DC: 0xA027BFC8   ;  37: void Ringtones_SetState(unsigned char state)
@@ -293,7 +293,7 @@
 0418: 0xA8E386CC   ; 106: CSMROOT *CSM_root()
 041C: 0xA0965773   ; 107: int CreateCSM(const CSM_DESC *,void *,int)
 0420: 0xA0965785   ; 108: CSM_RAM *FindCSMbyID(int id)
-0424: 0xA0965841   ; 109: void DoIDLE(void)
+0424: 0xA0965853   ; 109: void DoIDLE(void)
 ;428:              ; 10A: void *GetConfig(uint32_t id)
 ;42C:              ; 10B: void *GetMinAdrScan()
 ;430:              ; 10C: void *GetMaxAdrScan()
@@ -1099,6 +1099,7 @@
 0FFC: 0xA0FF8B91   ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 #pragma disable old_equal_ff
 +0
+
 
 
 
