@@ -127,9 +127,9 @@
 018C: 0xA0268D11   ;  63: void MMI_CanvasBuffer_FlushV(int CanvasID)
 ;S75v52 has these-->
 0190: 0xA07FE297   ;  64: void GeneralFuncF1_2(int cmd)
-;194:              ;  65: EndCall
-;198:              ;  66: EndCallBusy
-;19C:              ;  67: IsDirectCallActive
+0194: 0xA0830689   ; 065: void EndCall(void)
+0198: 0xA082F617   ; 066: void EndCallBusy(int param1, int param2)
+019C: 0xA02CC5B9   ; 067: int IsDirectCallActive(void)
 01A0: 0xA02D7871   ;  68: SS_RAM *GetScreenSaverRAM(void)
 01A4: 0xA009A9EC   ;  69: void LockSched_2(void)
 01A8: 0xA009AAD8   ;  6A: void UnlockSched_2(void)
@@ -142,7 +142,7 @@
 01C0: 0xA07D7C18   ;  70: int *GetGPRSTrafficPointer()
 01C4: 0xA087B5FF   ;  71: __thumb DrawRoundRect
 ;S75v52 has these-->
-;1C8:              ;  72: SetCurrentSecondOfCall
+01C8: 0xA079F6C5   ; 072: int GetDurationFromCurrentCall(void)
 01CC: 0xA0B3331B   ;  73: int GetTypeOfCall(int type)
 01D0: 0xA02A0B95   ;  74: SHORTCUTREC *GetShortcutRecordByName(char *szShortcutName)
 01D4: 0xA0269229   ;  75: IsCanvasBufferSet(char CanvasID)
@@ -604,8 +604,8 @@
 0884: 0xA029221C   ; 221: void SetCpuClockLow
 0888: 0xA0292204   ; 222: void SetCpuClockTempHi
 ;S75v52 has these--> S68 has no media player?
-;88C:              ; 223: IsMediaPlayerInBackground
-;890:              ; 224: CloseMediaPlayer
+088C: 0xA02EE989   ; 223: int IsMediaPlayerInBackground()
+0890: 0xA02EF17B   ; 224: void CloseMediaPlayer()
 0894: 0xA0246944   ; 225: int PlayMelody_ChangeVolume(int handle,int volume)
 0898: 0xA02473F4   ; 226: int PlayMelody_StopPlayback(int handle)
 089C: 0xA0247494   ; 227: int PlayMelody_PausePlayback(int handle)
@@ -738,7 +738,7 @@
 0A6C: 0xA0266145   ; 29B: GetTypeOfBTHeadset
 0A70: 0xA8D27DB1   ; 29C: char *RamInputLanguage()
 0A74: 0xA8D33E28   ; 29D: char *RamDisplayLanguage()
-;0A78:             ; 29E: char *RamIsBTConnected()
+0A78: 0xA8D22554   ; 29E: char *RamIsBTConnected()
 ;0A7C:             ; 29F: char *RamIsBTHeadsetConnected()
 
 0A80: 0xA0269FAC   ; 2A0: int GetAlarmclockState(int state)
@@ -799,11 +799,11 @@
 0B4C: 0xA0456C48   ; 2D3: int GetFilledNAbDataCount(NativeAbData *data)
 0B50: 0xA04561F0   ; 2D4: PKT_NUM *GetDataFromNAbData(NativeAbData *data, int index)
 0B54: 0xA07E20D3   ; 2D5: void UnpackNumPkt(const PKT_NUM *pkt, char *buf, int maxlen)
-;0B58:             ; 2D6: void *TViewGetGUI(void *malloc_adr, void *mfree_adr)
-;0B5C:             ; 2D7: void TViewSetDefinition(void *gui, const TVIEW_DESC *)
-;0B60:             ; 2D8: void TViewSetText(void *gui, WSHDR *text, void *malloc_adr, void *mfree_adr)
-;0B64:             ; 2D9: void TViewSetUserPointer(void *gui,void *user_pointer)
-;0B68:             ; 2DA: void *TViewGetUserPointer(void *gui)
+0B58: 0xA08066BF   ; 2D6: void *TViewGetGUI(const void *malloc_fn, const void *mfree_fn)
+0B5C: 0xA0806CB1   ; 2D7: void TViewSetDefinition(void *gui, const TVIEW_DESC *tv)
+0B60: 0xA0806C3B   ; 2D8: void TViewSetText(void *gui, const WSHDR *text, const void *malloc_fn, const void *mfree_fn)
+0B64: 0xA0806CDF   ; 2D9: void TViewSetUserPointer(void *gui, void *user_pointer)
+0B68: 0xA0806CE5   ; 2DA: void *TViewGetUserPointer(void *gui)
 0B6C: 0xA039e055   ; 2DB: void MediaSendCSM_Open(WSHDR *file, WSHDR *path)
 0B70: 0xA07a1b09   ; 2DC: __thumb void SaveMaxIllumination(int level);
 0B74: 0xA07a1b1d   ; 2DD: __thumb void SetIlluminationoffTimeout(int time_sec);
@@ -814,17 +814,17 @@
 ;S75v52 has these-->
 0B84: 0xA026F095   ; 2E1: int GetExtUidByFileName_ws(const WSHDR *file)
 0B88: 0xA01B9923   ; 2E2: int wstrcmp(const WSHDR *str1, const WSHDR *str2)
-;0B8C:             ; 2E3: int fexists(WSHDR* FileName)
-;0B90:             ; 2E4: int SettingsAE_Update_ws(WSHDR *,int set,char *entry,char *keyword)
-;0B94:             ; 2E5: int SettingsAE_Read_ws(WSHDR *,int set,char *entry,char *keyword)
-;0B98:             ; 2E6: int SettingsAE_SetFlag(int val,int set,char *entry,char *keyword)
-;0B9C:             ; 2E7: int SettingsAE_GetFlag(int *res,int set,char *entry,char *keyword)
-;0BA0:             ; 2E8: int SettingsAE_Update(int val,int set,char *entry,char *keyword)
-;0BA4:             ; 2E9: int SettingsAE_Read(int *res,int set,char *entry,char *keyword)
-;0BA8:             ; 2EA: void* SettingsAE_GetEntryList(int set);
-;0BAC:             ; 2EB: int SettingsAE_RemoveEntry(int set,char *entry,int flag)
-;0BB0:             ; 2EC: int i2c_transfer(I2C_MSG *msg)
-;0BB4:             ; 2ED: int i2c_receive(I2C_MSG *msg)
+0B8C: 0xA0271039   ; 2E3: int fexists(WSHDR *path)
+0B90: 0xA025519B   ; 2E4: int SettingsAE_Update_ws(WSHDR *value, int set_id, char *entry, char *keyword)
+0B94: 0xA0255159   ; 2E5: int SettingsAE_Read_ws(WSHDR *value, int set_id, char *entry, char *keyword)
+0B98: 0xA02550F3   ; 2E6: int SettingsAE_SetFlag(int value, int set_id, char *entry, char *keyword)
+0B9C: 0xA02550BD   ; 2E7: int SettingsAE_GetFlag(int *value, int set_id, char *entry, char *keyword)
+0BA0: 0xA0255139   ; 2E8: int SettingsAE_Update(int value, int set_id, char *entry, char *keyword)
+0BA4: 0xA0255105   ; 2E9: int SettingsAE_Read(int *value, int set_id, char *entry, char *keyword)
+0BA8: 0xA02A9CB9   ; 2EA: char **SettingsAE_GetEntryList(int set_id)
+0BAC: 0xA02A9DBF   ; 2EB: int SettingsAE_RemoveEntry(int set_id, char *entry, int flag)
+0BB0: 0xA01B3F24   ; 2EC: int i2c_transfer(I2C_MSG *msg)
+0BB4: 0xA01B3F78   ; 2ED: int i2c_receive(I2C_MSG *msg)
 
 ;BC0:              ; 2F0: void *dlsym(int handle, const char *name)
 ;BC4:              ; 2F1: int dlclose(int handle)
@@ -914,13 +914,47 @@
 0D98: 0xA00A5D84   ; 366: char *NU_License_Information(void)
 0DD0: 0xA00A0AE0   ; 374: void NU_USER_MODE_P(void *nu_svc_usr_var)
 0DD4: 0xA8D169B0   ; 375: void *NU_SUPERV_USER_VARIABLES(void)
+0E00: 0xA07FE0E9   ; 380: WSHDR *GetClipBoard(void)
+0E04: 0xA07FE081   ; 381: void CopyTextToClipboard(const WSHDR *text, int pos, int len)
+0E08: 0xA07FE069   ; 382: void ClearClipboard(char unk)
+0E0C: 0xA07F7507   ; 383: int PushDRWOBJOnLAYER(DRWOBJ *drwobj, LCDLAYER *layer)
+0E10: 0xA07F9207   ; 384: void LCDLAYER_Redraw(LCDLAYER *layer)
+0E14: 0xA00987DC   ; 385: void* GetGBSProcAddress(short cepid)
+0E18: 0xA08821D9   ; 386: void DrwObj_InitTiledImageEx(DRWOBJ *drwobj, const RECT *rect, int flags, const EIMGHDR *img, int offset_x, int offset_y)
+0E1C: 0xA07F4FC5   ; 387: LCDLAYER *LCD_GetCurrentLayer()
+0E20: 0xA0880A5D   ; 388: void LCD_SetBufferDepth(char depth)
+0E24: 0xA0880A11   ; 389: void LCDLAYER_SetBufferDepth(LCDLAYER *layer, char depth)
+0E2C: 0xA8D15AE8   ; 38B: const char *RamLastStoreString()
 0E30: 0xA021D508   ; 38C: int sys_format(uint16_t drive, uint32_t *err)
+0E34: 0xA021D5BC   ; 38D: int sys_fstat(int fd, FSTATS *stat, uint32_t *err)
 0E38: 0xA0093094   ; 38E: void CreateICL(PGROUP *pgroup)
 0E3C: 0xA0097A90   ; 38F: void *GBS_CreateProcessGroupResource(int mask, int unk_zero, PGROUP *pgroup, int size)
 0E40: 0xA00986A8   ; 390: void *GBS_GetCurrentTask()
 0E44: 0xA00942DC   ; 391: void *MemMBPAlloc(void *pool, int size)
 0E48: 0xA0094704   ; 392: void MemMBPFree(void *pool, void *ptr)
 0E4C: 0xA8D345EC   ; 393: void *RamMopiResourcePool()
+0E50: 0xA100C610   ; 394: RAND_METHOD *RAND_get_rand_method(void)
+0E54: 0xA0F86413   ; 395: SSL_METHOD *TLSv1_client_method()
+0E58: 0xA0F87A4F   ; 396: SSL_CTX *SSL_CTX_new(SSL_METHOD *meth)
+0E5C: 0xA0F86E4B   ; 397: void SSL_CTX_free(SSL_CTX *ctx)
+0E60: 0xA0F83F23   ; 398: long SSL_CTX_ctrl(SSL_CTX *ctx, int cmd, long larg, void *parg)
+0E64: 0xA0F8701B   ; 399: SSL *SSL_new(SSL_CTX *ctx)
+0E68: 0xA0F8723B   ; 39A: int SSL_set_fd(SSL *s, int fd)
+0E6C: 0xA0F873DF   ; 39B: int SSL_connect(SSL *ssl)
+0E70: 0xA0F873F9   ; 39C: int SSL_shutdown(SSL *ssl)
+0E74: 0xA0F82D73   ; 39D: int SSL_read(SSL *ssl, void *buf, int num)
+0E78: 0xA0F82DF9   ; 39E: int SSL_peek(SSL *ssl, void *buf, int num)
+0E7C: 0xA0F82CD5   ; 39F: int SSL_write(SSL *ssl, const void *buf, int num)
+0E80: 0xA0F87121   ; 3A0: void SSL_free(SSL *ssl)
+0E84: 0xA0F87E3F   ; 3A1: int SSL_set_session(SSL *ssl, SSL_SESSION *session)
+0E88: 0xA0F81D17   ; 3A2: void SSL_SESSION_free(SSL_SESSION *sess)
+0E8C: 0xA08031B3   ; 3A3: void SetMenuItemIconIMGHDR(void *gui, void *item, IMGHDR *icon)
+0E90: 0xA087C711   ; 3A4: void LCD_SetDrawingRegion(int x, int y, int x2, int y2)
+0E94: 0xA087BDCF   ; 3A5: void DrawIMGHDR(int x, int y, const IMGHDR *img)
+0E98: 0xA07A6ACD   ; 3A6: void DrwObj_GetWH(DRWOBJ *drwobj, int *w, int *h)
+0E9C: 0xA07FB8CF   ; 3A7: int GUI_NewTimer(void *gui)
+0EA0: 0xA07FBA13   ; 3A8: int GUI_DeleteTimer(void *gui, int id)
+0EA4: 0xA07FB963   ; 3A9: void GUI_StartTimerProc(void *gui, int id, long timeout, GUI_TimerProc callback)
 0EA8: 0xA0FC0409   ; 3AA: void qsort(void *first, size_t nitems, size_t size, int (*comparator)(const void *, const void *))
 0EAC: 0xA0FBF78D   ; 3AB: void *bsearch(const void *key, const void *first, size_t nitems, size_t size, int (*comparator)(const void *, const void *))
 0EC0: 0xA0255039   ; 3B0: void SettingsAE_RegisterListener(SettingsAE_ListenerProc proc, int set_id, const char *entry, const char *keyword)
@@ -966,6 +1000,8 @@
 0F68: 0xA01BA2F5   ; 3DA: uint16_t wstriwstr(const WSHDR *ws, const WSHDR *search, uint32_t start_pos)
 0F6C: 0xA01BA219   ; 3DB: void wstrreplace(WSHDR *dest, const WSHDR *src, uint32_t pos)
 0F70: 0xA07FC71B   ; 3DC: int GetUnicodeSymbolByDynIcon(int dyn_icon)
+0F74: 0xA0844191   ; 3DD: uint32_t ReadValueFromPDFile(uint32_t file_id, const char *key, char *value, uint32_t *size)
+0F78: 0xA08446A1   ; 3DE: uint32_t WriteValueToPDFile(uint32_t file_id, const char *key, const char *value, size_t size)
 0F7C: 0xA8E89494   ; 3DF: TZ *RamTimeZones(void)
 0F80: 0xA07A3E23   ; 3E0: int GetCurrentTimeZone(void)
 0F84: 0xA07A4F41   ; 3E1: int GetTimeZoneByGMT(const char *gmt)
@@ -980,6 +1016,8 @@
 0FA8: 0xA088B893   ; 3EA: void EDIT_SetDefinition(void *gui, const INPUTDIA_DESC *input_desc)
 0FAC: 0xA088B7A9   ; 3EB: void EDIT_SetEQueue(void *gui, const EDITQ *eq, int do_mfree, const void *malloc_fn)
 0FB0: 0xA088BB9D   ; 3EC: void EDIT_SetUserPointer(void *gui, void *user_pointer)
+0FB4: 0xA0804FF5   ; 3ED: void SetWidgetRect(void *widget, int x, int y, int x2, int y2)
+0FB8: 0xA0891A09   ; 3EE: void AttachWidget(void *gui, const void *widget, int id, const void *malloc_fn)
 0FBC: 0xA07FBB05   ; 3EF: int16_t GetLgpIcon(int lgp_id)
 0FC0: 0xA02D8BD8   ; 3F0: void Countdown_Start()
 0FC4: 0xA02D8C9C   ; 3F1: void Countdown_Stop()
@@ -991,10 +1029,15 @@
 0FDC: 0xA08996E9   ; 3F7: void Scrollbar_Configure(WIDGET *scrollbar, int limit, int unk1, int unk2)
 0FE0: 0xA08996BB   ; 3F8: void Scrollbar_SetValue(WIDGET *scrollbar, int value)
 0FE4: 0xA01F7690   ; 3F9: int IsAnyOfAccessoriesConnected(const enum Accessory *accessory_ids, uint8_t count)
+0FE8: 0xA07A1A9F   ; 3FA: void SetMaxIllumIntensity(int unk3, uint32_t level)
+0FEC: 0xA021DA80   ; 3FB: int sys_mount(uint16_t drive, uint32_t *err)
+0FF0: 0xA021DAB8   ; 3FC: int sys_unmount(uint16_t drive, uint32_t *err)
+0FF4: 0xA021DD14   ; 3FD: int setfiletime(int fd, uint16_t date, uint16_t time, uint32_t *err)
 0FF8: 0xA0FC1579   ; 3FE: int vsprintf(char *s, const char *format, va_list args)
 0FFC: 0xA0FBF691   ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 #pragma disable old_equal_ff
 +0
+
 
 
 
