@@ -179,7 +179,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 ;1FC: ; 07F: IsPlayerOn
 
 0200: 0xA058B1F9   ; 080: int ShowCallList(int list, int zero)
-0204: 0xA0EF4CF4   ; 081: HexToDec
+0204: 0xA0227B91   ; 081: int HexCharToInt(char c)
 ;208: ; 082: GetCurrentTrackFilename
 020C: 0xA02DD144   ; 083: GetPathOfFoundFile
 0210: 0xA07CC464   ; 084: int GetFileStats(const char *cFileName, FSTATS * StatBuffer, unsigned int *errornumber)
@@ -264,7 +264,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 033C: 0xA852662C   ; 0CF: char *RamAlarm()
 
 0340: 0xA85594E4   ; 0D0: char *RamAccPoint()
-0344: 0xA84CB508   ; 0D1: RamScreensaver
+0344: 0xA84CB504   ; 0D1: RamScreensaver
 0348: 0xA84D12E8   ; 0D2: char *RamAutoTime()
 034C: 0xA84CB50C   ; 0D3: char *RamStby()
 0350: 0xA841175C   ; 0D4: char *RamMissedMes()
@@ -830,6 +830,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 ;BC8:              ; 2F2: int setenv(const char *name, const char *value, int replace)
 #pragma disable old_equal_ff
 +0
+
 
 
 ;------------------------- end -------------------------
