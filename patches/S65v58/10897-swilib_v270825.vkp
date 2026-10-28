@@ -93,7 +93,7 @@
 0118: 0xA16A279D ; 046: HasNewSMS
 011C: 0xA16A195D ; 047: HasFlashSMS
 0120: 0xA0A49FB7 ; 048: ReadNewSMS
-0124: 0xA169E64E ; 049: ReadFlashSMS
+0124: 0xA169E64F ; 049: ReadFlashSMS
 0128: 0xA096137C ; 04A: __arm void PlayFile(int _C,WSHDR* folder,WSHDR* filename,int cepid, int _167);
 012C: 0xA0C7E9F4 ; 04B: StartMidlet
 0130: 0xA0B8DE75 ; 04C: GetMissedCallsCount
@@ -153,7 +153,7 @@
 ;1FC: 0x         ; 07F: IsPlayerOn
 
 0200: 0xA0AA76D5 ; 080: ShowCallList(int list, int zero);
-0204: 0xA166AC1C ; 081: HexToDec
+0204: 0xA0844B8D ; 081: int HexCharToInt(char c)
 ;208: 0x         ; 082: GetCurrentTrackFilename
 020C: 0xA094A914 ; 083: GetPathOfFoundFile
 0210: 0xA122EB64 ; 084: int GetFileStats(const char *cFileName, void * StatBuffer, unsigned int *errornumber);
@@ -996,6 +996,7 @@
 0F8C: 0xA0c3781d ; 3E3: void SetTimeZone(int time_zone);
 #pragma disable old_equal_ff
 +0
+
 
 
 
