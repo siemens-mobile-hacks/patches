@@ -149,7 +149,7 @@
 01FC: 0xA054C629   ;  7F: IsPlayerOn
 
 0200: 0xA05FE779   ;  80: int ShowCallList(int list, int zero)
-0204: 0xA0FFA12C   ;  81: HexToDec
+0204: 0xA00AE4B1   ;  81: int HexCharToInt(char c)
 0208: 0xA054C70B   ;  82: GetCurrentTrackFilename
 ;20C:              ;  83: void *GetPathOfFoundFile()
 0210: 0xA02522F0   ;  84: int GetFileStats(const char *cFileName, void *StatBuffer, unsigned int *errornumber)
@@ -243,7 +243,7 @@
 035C: 0xA8E2CA2C   ;  D7: RamScreenBrightness
 ;360:              ;  D8: void *RamMenuAnywhere()
 ;364:              ;  D9: void *RamShutdownMode()
-0368: 0xA8E2CAC8   ;  DA: RamIsShutdown
+0368: 0xA8DEBA9C   ;  DA: RamIsShutdown
 036C: 0xA8F10D0C   ;  DB: int *RamIsNotOnMainscreen()
 0370: 0xA8E4BAB8   ;  DC: int *RamRandSeed()
 ;374:              ; 0DD: void *RamCurrentTrack()
@@ -590,7 +590,7 @@
 0878: 0xA096E18F   ; 21E: __thumb void FocusGUI(int id);
 087C: 0xA096E19F   ; 21F: __thumb void UnfocusGUI(void);
 
-0880: 0xA0521C4F   ; 220: int IsSliderClosed(void)
+0880: 0xA0914973   ; 220: int IsSliderClosed(void)
 0884: 0xA01D0928   ; 221: SetCpuClockLow(2)
 0888: 0xA01D0910   ; 222: SetCpuClockTempHi(2)
 088C: 0xA054C573   ; 223: int IsMediaPlayerInBackground()
@@ -1099,6 +1099,7 @@
 0FFC: 0xA0FF8B91   ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 #pragma disable old_equal_ff
 +0
+
 
 
 
