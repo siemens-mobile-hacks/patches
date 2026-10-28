@@ -155,7 +155,7 @@
 01FC: 0xA0002070   ; 7F: IsPlayerOn
 
 0200: 0xA0A8975D   ; 80: ShowCallList(int list, int zero)
-0204: 0xA154A848   ; 81: HexToDec
+0204: 0xA08449B1   ; 81: int HexCharToInt(char c)
 0208: 0xA0002070   ; 82: GetCurrentTrackFilename
 020C: 0xA093B018   ; 83: GetPathOfFoundFile
 0210: 0xA121C310   ; 84: GetFileStats(const char *cFileName, void * StatBuffer, unsigned int *errornumber)
@@ -788,6 +788,7 @@
 +0
 
 ;locale=Russian_Russia.1251
+
 
 ;------------------------- end -------------------------
 
