@@ -140,7 +140,7 @@
 01F8: 0xA1278961 ; 07E: Rand
 01FC: 0xA0D53DD0 ; 07F: IsPlayerOn
 0200: 0xA0ACCD69 ; 080: int ShowCallList(int list, int zero)
-0204: 0xA16EEEEC ; 081: HexToDec
+0204: 0xA084498D ; 081: int HexCharToInt(char c)
 ;0208: 0x ; 082: GetCurrentTrackFilename
 020C: 0xA08E37E4 ; 083: GetPathOfFoundFile
 0210: 0xA113B1D8 ; 084: int GetFileStats(const char *cFileName, void * StatBuffer, unsigned int *errornumber)
@@ -219,7 +219,7 @@
 0338: 0xA87BA000 ; 0CE: RamDateTime
 033C: 0xA86E457C ; 0CF: RamAlarm
 0340: 0xA87124E4 ; 0D0: RamAccPoint
-0344: 0xA863A728 ; 0D1: RamScreensaver
+0344: 0xA868C728 ; 0D1: RamScreensaver
 ;0348: 0x ; 0D2: RamAutoTime
 034C: 0xA868C730 ; 0D3: RamStby
 0350: 0xA8451444 ; 0D4: RamMissedMes
@@ -922,6 +922,7 @@
 ;0F54:           ; 3D5: __arm int BuildPath(WSHDR *ws, const WSHDR *file_name, const WSHDR *dir);
 #pragma disable old_equal_ff
 +0
+
 
 
 ;------------------------- end -------------------------
