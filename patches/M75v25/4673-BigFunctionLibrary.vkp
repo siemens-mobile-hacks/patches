@@ -106,8 +106,8 @@ It is auxiliary patch. It consists of 255 most useable function.
 ;
 0118: 0xA02CF64D   ; 046: HasNewSMS
 011C: 0xA02CE789   ; 047: HasFlashSMS
-0120: 0xA02CB167   ; 048: ReadNewSMS
-0124: 0xA051097B   ; 049: ReadFlashSMS
+0120: 0xA051097B   ; 048: ReadNewSMS
+0124: 0xA02CB167   ; 049: ReadFlashSMS
 0128: 0xA02F49B8   ; 04A: __arm void PlayFile(int _C,WSHDR* folder,WSHDR* filename,int cepid, int _167);
 012C: 0xA088E318   ; 04B: StartMidlet
 0130: 0xA0558375   ; 04C: __thumb GetMissedCallsCount
@@ -168,7 +168,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 01F8: 0xA0AEA801   ; 07E: Rand
 ;01FC: 0x   ; 07F: IsPlayerOn
 0200: 0xA058B0C1   ; 080: __thumb void int ShowCallList(int list, int zero)
-0204: 0xA0EF2FB0   ; 081: HexToDec
+0204: 0xA0227B91   ; 081: int HexCharToInt(char c)
 ;
 ;0208: 0x   ; 082: GetCurrentTrackFilename
 020C: 0xA02DD148   ; 083: GetPathOfFoundFile
@@ -578,6 +578,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 0800: 0xA0FC7301 ; Run ScreenShooter on function 200: ScreenShoot()
 #pragma disable old_equal_ff
 +0
+
 
 
 ;------------------------- end -------------------------
