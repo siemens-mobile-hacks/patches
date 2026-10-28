@@ -142,7 +142,7 @@
 01F8: 0xA0ACDDAF   ; 07E: int rand(void)
 01FC: 0xA06A2078   ;   7F: IsPlayerOn
 0200: 0xA0A8C2AD   ;   80: ShowCallList(int list, int zero)
-0204: 0xA0FBC79C   ;   81: HexToDec
+0204: 0xA00A967D   ;   81: int HexCharToInt(char c)
 0208: 0xA06A231C   ;   82: GetCurrentTrackFilename
 ;20C:              ;   83: GetPathOfFoundFile
 0210: 0xA056E438   ;   84: int GetFileStats(const char *cFileName, void *StatBuffer, unsigned int *errornumber)
@@ -231,7 +231,7 @@
 035C: 0xA8E6A170   ;  8D7: RamScreenBrightness
 0360: 0xA8DA7BC5   ;  8D8: RamMenuAnywhere
 ;364:              ;   D9: RamShutdownMode
-0368: 0xA8E6A20C   ;  8DA: RamIsShutdown
+0368: 0xA8E29994   ;  8DA: RamIsShutdown
 036C: 0xA8F594DC   ;  8DB: RamNotOnMainscreen
 0370: 0xA8EA3BC8   ; 0DC: int *RamRandSeed()
 ;374:              ;   DD: void *RamCurrentTrack()
@@ -974,6 +974,7 @@
 
 #pragma disable old_equal_ff
 +0
+
 
 
 
