@@ -158,7 +158,7 @@
 01FC: 0xA02EEA2D   ;  7F: IsPlayerOn
 
 0200: 0xA04CAB85   ;  80: int ShowCallList(int list, int zero)
-0204: 0xA0FC0B90   ;  81: HexToDec
+0204: 0xA00ADF59   ;  81: int HexCharToInt(char c)
 0208: 0xA02EEB49   ;  82: const WSHDR *MediaProc_GetLastAudioTrackFilename()
 ;20C:              ;  83: GetPathOfFoundFile
 0210: 0xA021D9A0   ;  84: int GetFileStats(const char *cFileName, void *StatBuffer, unsigned int *errornumber)
@@ -252,7 +252,7 @@
 035C: 0xA8DA79E8   ;  D7: RamScreenBrightness
 ;360:              ;  D8: RamMenuAnywhere
 ;364:              ;  D9: 
-0368: 0xA8DA7A84   ; 0DA: char *RamIsShutdown()
+0368: 0xA8D67844   ; 0DA: char *RamIsShutdown()
 036C: 0xA8E81ACC   ;  DB: int *RamIsNotOnMainscreen()
 0370: 0xA8DC6A74   ;  DC: int *RamRandSeed(void)
 ;374:              ; 0DD: void *RamCurrentTrack()
@@ -265,7 +265,7 @@
 ;38C:              ;  E3: RamProfileNum
 0390: 0xA8D80010   ;  E4: void *FreeRAM()
 0394: 0x0000123D   ;  E5: LP_MonthsShort
-0398: 0x00000260   ;  E6: Pic_Big0
+0398: 0x00000262   ;  E6: Pic_Big0
 039C: 0x00000830   ;  E7: Pic_Little0
 03A0: 0x00000800   ;  E8: Pic_Extra
 03A4: 0x00000810   ;  E9: Pic_Profiles
@@ -277,7 +277,7 @@
 03BC: 0x000005B0   ;  EF: Pic_Calendar
 
 03C0: 0x00001200   ;  F0: Pic_AccuGraph
-03C4: 0xA02CFBD9   ;  F1: void *BuildCanvas()
+03C4: 0xA02D47D5   ;  F1: void *BuildCanvas()
 03C8: 0xA02F6EB5   ; 0F2: int Registry_RegClient(const REG_CLIENT *client)
 03CC: 0xA02F6E93   ; 0F3: void Registry_UnregClient(int client_id)
 ;3D0:              ;  F4: Pic_LANI
@@ -600,7 +600,7 @@
 0878: 0xA07FE32F   ; 21E: void FocusGUI(int id)
 087C: 0xA07FE33F   ; 21F: void UnfocusGUI(void)
 
-;880:              ; 220: IsSliderClosed
+0880: 0xA07A805B   ; 220: char IsSliderClosed()
 0884: 0xA029221C   ; 221: void SetCpuClockLow
 0888: 0xA0292204   ; 222: void SetCpuClockTempHi
 ;S75v52 has these--> S68 has no media player?
@@ -1037,6 +1037,7 @@
 0FFC: 0xA0FBF691   ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 #pragma disable old_equal_ff
 +0
+
 
 
 
