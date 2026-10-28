@@ -93,8 +93,8 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0114: 0xA099C5B4   ;  45: GetWavLen
 0118: 0xA08E143D   ;  46: __thumb int HasNewSMS()
 011C: 0xA08E0535   ;  47: __thumb int HasFlashSMS()
-0120: 0xA08DCF13   ;  48: ReadNewSMS
-0124: 0xA0A7D79B   ;  49: __thumb int ReadFlashSMS(void)
+0120: 0xA0A7D79B   ;  48: ReadNewSMS
+0124: 0xA08DCF13   ;  49: __thumb int ReadFlashSMS(void)
 0128: 0xA097474C   ;  4a: PlayFile
 012C: 0xA0CF2B34   ;  4B: StartMidlet
 0130: 0xA0BC0929   ;  4C: GetMissedCallsCount
@@ -155,7 +155,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 ;1FC:              ;  7F: IsPlayerOn;
 
 0200: 0xA0AC9AB1   ;  80: ShowCallList(int list, int zero)
-0204: 0xA16235F4   ;  81: HexToDec
+0204: 0xA0844DA1   ;  81: int HexCharToInt(char c)
 ;208:              ;  82: GetCurrentTrackFilename;
 020C: 0xA09630BC   ;  83: GetPathOfFoundFile
 0210: 0xA112FCF4   ;  84: int GetFileStats(const char *cFileName, void * StatBuffer, unsigned int *errornumber)
@@ -597,6 +597,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0E38: 0xA082812C   ; 38E: __arm void CreateICL(PGROUP *pg);
 #pragma disable old_equal_ff
 +0
+
 
 ;------------------------- end -------------------------
 
