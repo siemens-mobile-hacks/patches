@@ -89,8 +89,8 @@
 0114: 0xA0348504   ;  45: __arm GetWavLen
 0118: 0xA02D24D9   ;  46: __thumb int HasNewSMS()
 011C: 0xA02D15A5   ;  47: __thumb int HasFlashSMS()
-0120: 0xA02CDF9F   ;  48: __thumb int ReadNewSMS(void)
-0124: 0xA04E0827   ;  49: __thumb int ReadFlashSMS(void)
+0120: 0xA04E0827   ;  48: __thumb int ReadNewSMS(void)
+0124: 0xA02CDF9F   ;  49: __thumb int ReadFlashSMS(void)
 0128: 0xA02F72C4   ;  4A: __arm void PlayFile(int _C,WSHDR* folder,WSHDR* filename,int cepid, int _167)
 012C: 0xA08335C0   ;  4B: __arm void StartMidlet(char *midlet)
 0130: 0xA0512005   ;  4C: __thumb GetMissedCallsCount
@@ -150,7 +150,7 @@
 01FC: 0xA0002070   ;  7F: ;API IsPlayerOn
 
 0200: 0xA054F9B9   ;  80: __thumb void int ShowCallList(int list, int zero)
-0204: 0xA0E4FA90   ;  81: __arm int HexToDec(int hex)
+0204: 0xA0227A11   ;  81: int HexCharToInt(char c)
 0208: 0xA0002070   ;  82: ;__unknown GetCurrentTrackFilename
 020C: 0xA02DFFC8   ;  83: __arm GetPathOfFoundFile
 0210: 0xA07805C0   ;  84: __arm int GetFileStats(const char *cFileName, void * StatBuffer, unsigned int *errornumber)
@@ -962,6 +962,7 @@
 ;120313: +38A,38B; *33C-33F
 ;120628: +26F-271,276; *353
 ;------------------------- end -------------------------
+
 
 
 ;------------------------- end -------------------------
