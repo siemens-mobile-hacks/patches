@@ -148,7 +148,7 @@
 01FC: 0xA069F7F8 ; 07F: IsPlayerOn
 
 0200: 0xA0A82501 ; 080: __thumb void int ShowCallList(int list, int zero);
-0204: 0xA0FAFFF8 ; 081: HexToDec
+0204: 0xA00A967D ; 081: int HexCharToInt(char c)
 0208: 0xA069FA9C ; 082: const WSHDR *MediaProc_GetLastAudioTrackFilename()
 ;020C: 0x ; 083: GetPathOfFoundFile
 0210: 0xA0568228 ; 084: __arm int GetFileStats(const char *cFileName, void * StatBuffer, unsigned int *errornumber);
@@ -242,7 +242,7 @@
 035C: 0xA8E6A484 ; 0D7: RamScreenBrightness
 0360: 0xA8DA7D39 ; 0D8: void *RamMenuAnywhere()
 ;0364: 0x ; 0D9: RamShutdownMode
-0368: 0xA8E6A520 ; 80DA: RamIsShutdown
+0368: 0xA8E29B08 ; 80DA: RamIsShutdown
 036C: 0xA8F59D84 ; 0DB: RamNotOnMainscreen
 0370: 0xA8EA3EDC ; 80DC: int *RamRandSeed();
 ;0374: 0x ; 0DD: void *RamCurrentTrack()
@@ -1069,6 +1069,7 @@
 
 #pragma disable old_equal_ff
 +0
+
 
 
 
