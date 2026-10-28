@@ -151,7 +151,7 @@
 ;01FC: 0x   ; 7F: IsPlayerOn
 
 0200: 0xA04F46CD ; 80: __thumb void int ShowCallList(int list, int zero);
-0204: 0xA0D1D760 ; 81: HexToDec
+0204: 0xA02279A5 ; 81: int HexCharToInt(char c)
 ;0208: 0x   ; 82: GetCurrentTrackFilename
 020C: 0xA02DA1EC ; 83: GetPathOfFoundFile
 0210: 0xA09458D4 ; 84: __arm int GetFileStats(const char *cFileName, FSTATS * StatBuffer, unsigned int *errornumber);
@@ -578,6 +578,7 @@
 0840: 0xA06EEB91 ; 210: __thumb int GetCurGuiID(void);
 #pragma disable old_equal_ff
 +0
+
 
 ;------------------------- end -------------------------
 
