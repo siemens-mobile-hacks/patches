@@ -25986,7 +25986,8 @@
 			"id": 11183,
 			"model": "CF75v23",
 			"file": "CF75v23/11183-fix_network_icon.vkp",
-			"mtime": 1759083230000,
+			"additionalFile": "CF75v23/11183-fix_network_icon.zip",
+			"mtime": 1793350976000,
 			"title": {
 				"ru": "Исправить иконку сети когда отключена сеть",
 				"en": "Fix network icon when network is disabled"
