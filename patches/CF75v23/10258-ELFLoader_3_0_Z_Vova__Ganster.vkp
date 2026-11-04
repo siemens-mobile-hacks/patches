@@ -6,8 +6,6 @@
 ;! доступна новая версия патча, https://patches.kibab.com/patches/details.php5?id=10737
 ;PatchID: 10258
 ;Details: https://patches.kibab.com/patches/details.php5?id=10258
-;!к патчу прикреплён файл, https://patches.kibab.com/cnt.php5?d=cf75v23&f=ELFLoader_3_0_Z_Vova__Ganster.zip
-
 /*
 Bзменен elf loader, подробности тут
 http://team-sc.ru/viewtopic.php?t=7252&postdays=0&postorder=asc&start=0
