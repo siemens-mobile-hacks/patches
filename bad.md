@@ -22,7 +22,6 @@ The patch has additional files, but it isn't accessible.
 |---|---|---|
 | 9067 | A52v9 | [Увеличение максимального размера мелодий с 3400 до 5350-16380 байт<br>Increase melodies maximum size from 3400 to 5300-16380 bytes](https://patches.kibab.com/patches/details.php5?id=9067) |
 | 2058 | C75v22 | [Смайлы<br>Smail's](https://patches.kibab.com/patches/details.php5?id=2058) |
-| 10215 | C81v51 | [ELFPack 3.0 by Z.Vova & Ganster<br>ELFPack 3.0 by Z.Vova & Ganster](https://patches.kibab.com/patches/details.php5?id=10215) |
 | 10421 | C81v51 | [Переключение оконного/полноэкранного видео на лету<br>Switch video fullscreen and normal mode on the fly](https://patches.kibab.com/patches/details.php5?id=10421) |
 | 10434 | C81v51 | [Запись телефонных разговоров<br>Call Recorder](https://patches.kibab.com/patches/details.php5?id=10434) |
 | 7223 | C81v51 | [Библиотека функций<br>Functions Library](https://patches.kibab.com/patches/details.php5?id=7223) |
