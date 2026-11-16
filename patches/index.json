@@ -63774,6 +63774,16 @@
 				"en": "Use extra header font only from 'Definition'"
 			}
 		},
+		"11524": {
+			"id": 11524,
+			"model": "SK65v50",
+			"file": "SK65v50/11524-pcma_sk65sw58.vkp",
+			"mtime": 1794844772000,
+			"title": {
+				"ru": "PCM ALL",
+				"en": "PCM ALL"
+			}
+		},
 		"11525": {
 			"id": 11525,
 			"model": "SK65v50",
