@@ -63752,6 +63752,16 @@
 				"ru": "Использовать шрифт дополнительного заголовка только из 'Definition'",
 				"en": "Use extra header font only from 'Definition'"
 			}
+		},
+		"11525": {
+			"id": 11525,
+			"model": "SK65v50",
+			"file": "SK65v50/11525-s65_mp3_v2.vkp",
+			"mtime": 1794844856000,
+			"title": {
+				"ru": "MP3 в нативном плеере",
+				"en": "MP3 playback in native player"
+			}
 		}
 	},
 	"CX70v50": {
