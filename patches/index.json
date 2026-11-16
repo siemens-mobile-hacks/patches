@@ -58480,6 +58480,16 @@
 				"ru": "Показывать сообщение при отключённом MMS-клиенте",
 				"en": "Handle disabled MMS client by showing a message"
 			}
+		},
+		"11523": {
+			"id": 11523,
+			"model": "S65v58",
+			"file": "S65v58/11523-s65_mp3_v2.vkp",
+			"mtime": 1794857776000,
+			"title": {
+				"ru": "MP3 в нативном плеере",
+				"en": "MP3 playback in native player"
+			}
 		}
 	},
 	"SL65v50": {
