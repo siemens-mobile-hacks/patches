@@ -5264,6 +5264,17 @@
 				"ru": "Возможность залить XFS от 41 прошивки",
 				"en": "41 firmware XFS version bypass"
 			}
+		},
+		"11526": {
+			"id": 11526,
+			"model": "EL71v45",
+			"file": "EL71v45/11526-bt-internet-fw.vkp",
+			"additionalFile": "EL71v45/11526-bt-internet-fw.zip",
+			"mtime": 1795258614000,
+			"title": {
+				"ru": "Интернет через блютуз",
+				"en": "Internet over Bluetooth"
+			}
 		}
 	},
 	"S75v20": {
