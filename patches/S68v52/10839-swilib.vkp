@@ -251,7 +251,7 @@
 0358: 0xA8DA690C   ;  D6: RamNetOnline
 035C: 0xA8DA79E8   ;  D7: RamScreenBrightness
 ;360:              ;  D8: RamMenuAnywhere
-;364:              ;  D9: 
+0364: 0xA8D27DA0   ;  D9: void *RamShutdownMode()
 0368: 0xA8DA7A84   ; 0DA: char *RamIsShutdown()
 036C: 0xA8E81ACC   ;  DB: int *RamIsNotOnMainscreen()
 0370: 0xA8DC6A74   ;  DC: int *RamRandSeed(void)
@@ -283,7 +283,7 @@
 03D0: 0x00000840   ;  F4: int PIT_Pic_Lani()
 03D4: 0xA8D28224   ;  F5: Ram_LCD_Overlay_Layer
 03D8: 0xA8DA802C   ;  F6: RAM_LCD_Layer_Base_Ptr
-;3DC:              ;  F7: 
+03DC: 0xA8DA8068   ;  F7: RAP_LCDLAYER_LIST *RamLcdRapLayersList()
 ;3E0:              ;  F8: Additional_PIT_address
 ;3E4:              ;  F9: Additional_PIT_start
 ;3E8:              ;  FA: Additional_PIT_end
@@ -957,6 +957,7 @@
 0EA4: 0xA07FB963   ; 3A9: void GUI_StartTimerProc(void *gui, int id, long timeout, GUI_TimerProc callback)
 0EA8: 0xA0FC0409   ; 3AA: void qsort(void *first, size_t nitems, size_t size, int (*comparator)(const void *, const void *))
 0EAC: 0xA0FBF78D   ; 3AB: void *bsearch(const void *key, const void *first, size_t nitems, size_t size, int (*comparator)(const void *, const void *))
+0EB0: 0xA0EC7521   ; 3AC: int EVP_add_cipher(EVP_CIPHER *c)
 0EC0: 0xA0255039   ; 3B0: void SettingsAE_RegisterListener(SettingsAE_ListenerProc proc, int set_id, const char *entry, const char *keyword)
 0EC4: 0xA0255093   ; 3B1: void SettingsAE_DeregisterListener(SettingsAE_ListenerProc proc, int set_id, const char *entry, const char *keyword)
 0EC8: 0xA02EEAC7   ; 3B2: const WSHDR *MediaProc_GetLastAudioTrackDir()
@@ -1037,6 +1038,7 @@
 0FFC: 0xA0FBF691   ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 #pragma disable old_equal_ff
 +0
+
 
 
 
