@@ -606,7 +606,7 @@
 ;S75v52 has these--> S68 has no media player?
 088C: 0xA02EE989   ; 223: int IsMediaPlayerInBackground()
 0890: 0xA02EF17B   ; 224: void CloseMediaPlayer()
-0894: 0xA0246944   ; 225: int PlayMelody_ChangeVolume(int handle,int volume)
+0894: 0xA0246944   ; 225: int PlayMelody_ChangeVolume(int handle, PLAY_VOLUME volume)
 0898: 0xA02473F4   ; 226: int PlayMelody_StopPlayback(int handle)
 089C: 0xA0247494   ; 227: int PlayMelody_PausePlayback(int handle)
 08A0: 0xA02474C4   ; 228: int PlayMelody_ResumePlayBack(int handle)
@@ -1038,6 +1038,7 @@
 0FFC: 0xA0FBF691   ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 #pragma disable old_equal_ff
 +0
+
 
 
 
