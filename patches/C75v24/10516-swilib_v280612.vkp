@@ -67,7 +67,7 @@
 ;0C0: 0xA07CC66C   ;  30: __arm WriteEELiteBlock
 00C4: 0xA0E501C5   ;  31: __thumb char *strrchr_2(const char *s,int c)
 00C8: 0xA02FEA8C   ;  32: __arm void PlaySound(long param1, long param2, long param3, long tone, long param5)
-00CC: 0xA02F47C0   ;  33: __arm PlaySound2
+00CC: 0xA02F45B0   ;  33: short SoundAE_PlayFileAsEvent(int event_id, int cepid, int msg_id, const WSHDR *folder, const WSHDR *file)
 00D0: 0xA02B440C   ;  34: __arm PlaySoundLoop
 00D4: 0xA054F149   ;  35: __thumb void AlarmClockRing(void)
 00D8: 0xA04CCA45   ;  36: __thumb GetATCmdString
@@ -89,8 +89,8 @@
 0114: 0xA0348504   ;  45: __arm GetWavLen
 0118: 0xA02D24D9   ;  46: __thumb int HasNewSMS()
 011C: 0xA02D15A5   ;  47: __thumb int HasFlashSMS()
-0120: 0xA04E0827   ;  48: __thumb int ReadNewSMS(void)
-0124: 0xA02CDF9F   ;  49: __thumb int ReadFlashSMS(void)
+0120: 0xA04E0827   ;  48: void ReadNewSMS(void)
+0124: 0xA02CDF9F   ;  49: int ReadFlashSMS(int ack)
 0128: 0xA02F72C4   ;  4A: __arm void PlayFile(int _C,WSHDR* folder,WSHDR* filename,int cepid, int _167)
 012C: 0xA08335C0   ;  4B: __arm void StartMidlet(char *midlet)
 0130: 0xA0512005   ;  4C: __thumb GetMissedCallsCount
@@ -235,7 +235,7 @@
 033C: 0xA850D2F4   ;  CF: RamAlarm
 
 0340: 0xA853BC44   ;  D0: RamAccPoint
-0344: 0xA84BFF2C   ;  D1: RamScreensaver
+0344: 0xA84BFF28   ;  D1: CSM_RAM **RamScreenSaverCSM(void)
 0348: 0xA84C41D4   ;  D2: RamAutoTime
 034C: 0xA84BFF1C   ;  D3: RamStby
 0350: 0xA8397430   ;  D4: RamMissedMes
@@ -248,7 +248,7 @@
 036C: 0xA84BFF5C   ;  DB: RamMainscreenAccuIcon
 0370: 0xA85A8CFC   ;  DC: RamRandSeed
 ;374:              ;  DD: ;RamCurrentTrack
-0378: 0xA84F3ECD   ;  DE: RamIsSimPresent
+0378: 0xA84F3EEC   ;  DE: char *RamIsSimPresent()
 037C: 0xA84DBBF0   ;  DF: RamPressedKey
 
 0380: 0xA84D0618   ;  E0: __arm void * RamScreenBuffer()
@@ -962,6 +962,7 @@
 ;120313: +38A,38B; *33C-33F
 ;120628: +26F-271,276; *353
 ;------------------------- end -------------------------
+
 
 
 
