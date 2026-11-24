@@ -960,6 +960,7 @@
 0E30: 0xA07B051F   ; 38C:  void SetPropTo_obj0x0F(DRWOBJ *obj, RECT *rect, int r2, int r3, int _sp, int _sp_4, int _sp_8);
 0E34: 0xA08E54CD   ; 38D:  void SetPropTo_obj0x15
 0E38: 0xA020ADB4   ; 38E: __arm void CreateICL(PGROUP *pg);
+0EB0: 0xA0D3B9A5   ; 3AC: int EVP_add_cipher(EVP_CIPHER *c)
 
 #pragma disable old_equal_ff
 +0
@@ -969,6 +970,7 @@
 ;        * 11,56,a1,ac-b1,b3,c3,c6,1fb,26c,26d (m.ksy)
 ;141112: + F7,26F-271,276,2EC,2ED,300-375,380-38E (m.ksy)
 ;        * 79,FF,25B (m.ksy)
+
 
 
 
