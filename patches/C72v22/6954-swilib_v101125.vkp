@@ -71,7 +71,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 00C0: 0xA1149D38   ;  30: WriteEELiteBlock
 00C4: 0xA170DAA9   ;  31: StrChrRev
 00C8: 0xA097BF14   ;  32: PlaySound(long param1, long param2, long param3, long tone, long param5)
-00CC: 0xA0971DD4   ;  33: PlaySound2
+00CC: 0xA0971BC4   ;  33: short SoundAE_PlayFileAsEvent(int event_id, int cepid, int msg_id, const WSHDR *folder, const WSHDR *file)
 00D0: 0xA095F39C   ;  34: PlaySoundLoop
 00D4: 0xA0AC9253   ;  35: AlarmClockRing
 00D8: 0xA0B8684D   ;  36: GetATCmdString
@@ -93,8 +93,8 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0114: 0xA099C5B4   ;  45: GetWavLen
 0118: 0xA08E143D   ;  46: __thumb int HasNewSMS()
 011C: 0xA08E0535   ;  47: __thumb int HasFlashSMS()
-0120: 0xA0A7D79B   ;  48: ReadNewSMS
-0124: 0xA08DCF13   ;  49: __thumb int ReadFlashSMS(void)
+0120: 0xA0A7D79B   ;  48: void ReadNewSMS(void)
+0124: 0xA08DCF13   ;  49: int ReadFlashSMS(int ack)
 0128: 0xA097474C   ;  4a: PlayFile
 012C: 0xA0CF2B34   ;  4B: StartMidlet
 0130: 0xA0BC0929   ;  4C: GetMissedCallsCount
@@ -252,7 +252,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 036C: 0xA8442A70   ;  db:  RamMainscreenAccuIcon
 ;370:              ;  DC:  RamRandSeed;
 ;374:              ;  DD:  RamCurrentTrack
-0378: 0xA84706F1   ;  DE:  RamIsSimPresent
+0378: 0xA8470710   ;  DE:  char *RamIsSimPresent()
 037C: 0xA8458414   ;  DF:  RamPressedKey
 
 0380: 0xA844FFB4   ;  E0:  RamScreenBuffer
@@ -597,6 +597,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0E38: 0xA082812C   ; 38E: __arm void CreateICL(PGROUP *pg);
 #pragma disable old_equal_ff
 +0
+
 
 
 ;------------------------- end -------------------------
