@@ -600,7 +600,7 @@
 0888: 0xA01D1368   ; 222: void SetCpuClockTempHi
 088C: 0xA05347EB   ; 223: int IsMediaPlayerInBackground()
 0890: 0xA05350D3   ; 224: void CloseMediaPlayer()
-0894: 0xA027BE5C   ; 225: int PlayMelody_ChangeVolume(int handle,int volume)
+0894: 0xA027BE5C   ; 225: int PlayMelody_ChangeVolume(int handle, PLAY_VOLUME volume)
 0898: 0xA027C90C   ; 226: int PlayMelody_StopPlayback(int handle)
 089C: 0xA027C9AC   ; 227: int PlayMelody_PausePlayback(int handle)
 08A0: 0xA027C9DC   ; 228: int PlayMelody_ResumePlayBack(int handle)
@@ -987,6 +987,7 @@
 0FFC: 0xA0FCFC91   ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 #pragma disable old_equal_ff
 +0
+
 
 
 
