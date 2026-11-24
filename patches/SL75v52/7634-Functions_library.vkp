@@ -71,7 +71,7 @@
 00C0: 0xA01E6B9C   ; 030: int WriteEELiteBlock(uint32_t block, void *buf, uint32_t offset, uint32_t size, int *null)
 00C4: 0xA0FD1961   ;  31: char *strrchr_2(const char *s,int c)
 00C8: 0xA0282D70   ;  32: void PlaySound(long param1, long param2, long param3, long tone, long param5)
-00CC: 0xA02796C8   ;  33: PlaySound2
+00CC: 0xA0279538   ;  33: short SoundAE_PlayFileAsEvent(int event_id, int cepid, int msg_id, const WSHDR *folder, const WSHDR *file)
 ;0D0:              ;  34: PlaySoundLoop
 ;0D4:              ;  35: AlarmClockRing
 ;0D8:              ;  36: 
@@ -236,7 +236,7 @@
 032C: 0xA8D78BEC   ;  CB: RamRingtoneStatus
 0330: 0xA8DE9758   ;  CC: char *RamMissedCalls()
 ;334:              ;  CD: char *RamMissedSMS()
-0338: 0xA8D29784   ;  CE: RamDateTime
+0338: 0xA8D297B0   ;  CE: RAM_DATETIME *RamDateTime()
 033C: 0xA8E93820   ;  CF: char *RamAlarm()
 
 0340: 0xA8D6A35C   ;  D0: RamAccPoint
@@ -249,7 +249,7 @@
 035C: 0xA8DADCB4   ;  D7: RamScreenBrightness
 ;360:              ;  D8: RamMenuAnywhere
 ;364:              ;  D9: 
-0368: 0xA8D6CD14   ; 0DA: char *RamIsShutdown()
+0368: 0xA8DADD50   ; 0DA: char *RamIsShutdown()
 036C: 0xA8E9206C   ; 0DB: int *RamIsNotOnMainscreen()
 0370: 0xA8DCCD40   ;  DC: int *RamRandSeed(void)
 ;374:              ; 0DD: void *RamCurrentTrack()
@@ -267,7 +267,7 @@
 03A0: 0x00000800   ;  E8: Pic_Extra
 03A4: 0x00000810   ;  E9: Pic_Profiles
 03A8: 0x00000818   ;  EA: Pic_Vibra
-;3AC:              ;  EB: Pic_Call
+03AC: 0x0000081A   ;  EB: int PIT_Pic_Call()
 03B0: 0x00000800   ;  EC: Pic_AdvNet
 03B4: 0x00001137   ;  ED: LP_MonthsLong
 03B8: 0x000003EB   ;  EE: LP_Weekdays
@@ -277,7 +277,7 @@
 03C4: 0xA02FF111   ;  F1: void *BuildCanvas()
 03C8: 0xA053CCBD   ; 0F2: int Registry_RegClient(const REG_CLIENT *client)
 03CC: 0xA053CC9B   ; 0F3: void Registry_UnregClient(int client_id)
-;3D0:              ;  F4: Pic_LANI
+03D0: 0x00000840   ;  F4: int PIT_Pic_Lani()
 03D4: 0xA8D29864   ;  F5: Ram_LCD_Overlay_Layer
 03D8: 0xA8DAE2F8   ;  F6: RAM_LCD_Layer_Base_Ptr
 ;3DC:              ;  F7: 
@@ -986,6 +986,7 @@
 0FFC: 0xA0FCFC91   ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 #pragma disable old_equal_ff
 +0
+
 
 
 
