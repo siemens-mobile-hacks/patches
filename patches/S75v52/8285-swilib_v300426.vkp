@@ -598,7 +598,7 @@
 0888: 0xA01D1368   ; 222: void SetCpuClockTempHi
 088C: 0xA052D7C3   ; 223: IsMediaPlayerInBackground
 0890: 0xA052E0AB   ; 224: CloseMediaPlayer
-0894: 0xA027BF64   ; 225: int PlayMelody_ChangeVolume(int handle,int volume)
+0894: 0xA027BF64   ; 225: int PlayMelody_ChangeVolume(int handle, PLAY_VOLUME volume)
 0898: 0xA027CA14   ; 226: int PlayMelody_StopPlayback(int handle)
 089C: 0xA027CAB4   ; 227: int PlayMelody_PausePlayback(int handle)
 08A0: 0xA027CAE4   ; 228: int PlayMelody_ResumePlayBack(int handle)
@@ -1100,6 +1100,7 @@
 
 #pragma disable old_equal_ff
 +0
+
 
 
 
