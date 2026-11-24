@@ -595,8 +595,10 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0B8C: 0xA0966C8C   ; 2E3: __arm int fexists(WSHDR *FileName);
 0E14: 0xA0824148   ; 385: __arm GBSPROC *GetGBSProcAddress(short cepid);
 0E38: 0xA082812C   ; 38E: __arm void CreateICL(PGROUP *pg);
+0EB0: 0xA15A9D8D   ; 3AC: int EVP_add_cipher(EVP_CIPHER *c)
 #pragma disable old_equal_ff
 +0
+
 
 
 
