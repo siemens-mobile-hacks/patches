@@ -69,7 +69,7 @@
 0C4: 0xA166AFC9   ; 049: strrchr
 ;
 00C8: 0xA0968D20  ; 32: PlaySound(long param1, long param2, long param3, long tone, long param5)
-0CC: 0xA095EF04   ; 051: PlaySound2
+0CC: 0xA095ECF4   ; 051: short SoundAE_PlayFileAsEvent(int event_id, int cepid, int msg_id, const WSHDR *folder, const WSHDR *file)
 0D0: 0xA0946400   ; 052: PlaySoundLoop
 0D4: 0xA0BB359F   ; 053: AlarmClockRing
 0D8: 0xA0B365E5   ; 054: GetATCmdString ;
@@ -93,7 +93,7 @@
 0118: 0xA16A279D ; 046: HasNewSMS
 011C: 0xA16A195D ; 047: HasFlashSMS
 0120: 0xA0A49FB7 ; 048: ReadNewSMS
-0124: 0xA169E64F ; 049: ReadFlashSMS
+0124: 0xA169E64F ; 049: int ReadFlashSMS(int ack)
 0128: 0xA096137C ; 04A: __arm void PlayFile(int _C,WSHDR* folder,WSHDR* filename,int cepid, int _167);
 012C: 0xA0C7E9F4 ; 04B: StartMidlet
 0130: 0xA0B8DE75 ; 04C: GetMissedCallsCount
@@ -257,7 +257,7 @@
 ;
 370: 0xA8773684   ; f220: RamRandSeed
 ;374: 0xA80A3EA0  ; f221: RamCurrentTrack
-0378: 0xA85187CD   ; DE: RamIsSimPresent
+0378: 0xA86CCDA8   ; DE: char *RamIsSimPresent()
 37C: 0xA86A98E0    ; f223: RamPressedKey
 380: 0xA869E320   ; f224: RamScreenBuffer
 ;384: 0x   ; f225: 
@@ -996,6 +996,7 @@
 0F8C: 0xA0c3781d ; 3E3: void SetTimeZone(int time_zone);
 #pragma disable old_equal_ff
 +0
+
 
 
 
