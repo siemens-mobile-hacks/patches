@@ -952,6 +952,7 @@
 0E24: 0xA0773D95   ; 389: void SetDepthBufferOnLCDLAYER(LCDLAYER *, char depth); 
 0E28: 0xA874CD3C   ; 38A: PCM_WAV_STRUCT *RamPCMWAVStruct()
 0E2C: 0xA84BE78C   ; 38B: char *RamLastStoreString();
+0EB0: 0xA0D30CED   ; 3AC: int EVP_add_cipher(EVP_CIPHER *c)
 
 #pragma disable old_equal_ff
 +0
@@ -962,6 +963,7 @@
 ;120313: +38A,38B; *33C-33F
 ;120628: +26F-271,276; *353
 ;------------------------- end -------------------------
+
 
 
 
