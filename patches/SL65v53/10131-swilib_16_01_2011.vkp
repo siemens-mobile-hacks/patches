@@ -72,7 +72,7 @@
 00C0: 0xA122EC8C   ; 30: WriteEELiteBlock
 00C4: 0xA154ABF5   ; 31: strrchr
 00C8: 0xA095221C   ; 32: PlaySound(long param1, long param2, long param3, long tone, long param5)
-00CC: 0xA0948400   ; 33: PlaySound2
+00CC: 0xA09481F0   ; 33: short SoundAE_PlayFileAsEvent(int event_id, int cepid, int msg_id, const WSHDR *folder, const WSHDR *file)
 00D0: 0xA0937920   ; 34: PlaySoundLoop
 00D4: 0xA0B75AB3   ; 35: AlarmClockRing
 00D8: 0xA0B106CD   ; 36: GetATCmdString
@@ -238,10 +238,10 @@
 0330: 0xA86D4214   ; CC: RamMissedCalls * lg3
 0334: 0xA86D9E2C   ; CD: RamMissedSMS * lg3
 
-0338: 0x00000000   ; CE: RamDateTime
+0338: 0xA869060C   ; CE: RAM_DATETIME *RamDateTime()
 033C: 0xA86D2020   ; CF: RamAlarm
 0340: 0xA86FFE14   ; D0: RamAccPoint
-0344: 0xA868C39C   ; D1: RamScreensaver
+0344: 0xA868C388   ; D1: CSM_RAM **RamScreenSaverCSM(void)
 0348: 0x00000000   ; D2: RamAutoTime
 034C: 0xA868C390   ; D3: RamStby
 0350: 0xA83D4430   ; D4: RamMissedMes * lg3
@@ -788,6 +788,7 @@
 +0
 
 ;locale=Russian_Russia.1251
+
 
 
 ;------------------------- end -------------------------
