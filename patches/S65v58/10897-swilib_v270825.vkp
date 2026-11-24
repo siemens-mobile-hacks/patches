@@ -946,7 +946,7 @@
 0EA4: 0xA1158A25 ; 3A9: __thumb void GUI_StartTimerProc(void *gui, int id, long timeout, GUI_TimerProc callback);
 ;EA8:            ; 3AA
 ;EAC:            ; 3AB
-;EB0:            ; 3AC
+0EB0: 0xA1455FD5 ; 3AC: int EVP_add_cipher(EVP_CIPHER *c)
 ;EB4:            ; 3AD
 ;EB8:            ; 3AE
 ;EBC:            ; 3AF
@@ -996,6 +996,7 @@
 0F8C: 0xA0c3781d ; 3E3: void SetTimeZone(int time_zone);
 #pragma disable old_equal_ff
 +0
+
 
 
 
