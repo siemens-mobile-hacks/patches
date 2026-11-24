@@ -62,7 +62,7 @@
 00C0: 0xA115220C ; 030: WriteEELiteBlock
 00C4: 0xA16EF621 ; 031: char *strrchr_2(const char *s,int c)
 00C8: 0xA096E590 ; 032: void PlaySound(long param1, long param2, long param3, long tone, long param5)
-00CC: 0xA0964774 ; 033: PlaySound2
+00CC: 0xA0964564 ; 033: short SoundAE_PlayFileAsEvent(int event_id, int cepid, int msg_id, const WSHDR *folder, const WSHDR *file)
 00D0: 0xA0959C24 ; 034: PlaySoundLoop
 00D4: 0xA0ACC4F9 ; 035: void AlarmClockRing()
 00D8: 0xA0B78D51 ; 036: GetATCmdString
@@ -216,10 +216,10 @@
 032C: 0xA86DBDC8 ; 0CB: RamRingtoneStatus
 0330: 0xA8451460 ; 0CC: RamMissedCalls
 0334: 0xA8451454 ; 0CD: RamMissedSMS
-0338: 0xA87BA000 ; 0CE: RamDateTime
+0338: 0xA8690998 ; 0CE: RAM_DATETIME *RamDateTime()
 033C: 0xA86E457C ; 0CF: RamAlarm
 0340: 0xA87124E4 ; 0D0: RamAccPoint
-0344: 0xA868C728 ; 0D1: RamScreensaver
+0344: 0xA868C728 ; 0D1: CSM_RAM **RamScreenSaverCSM(void)
 ;0348: 0x ; 0D2: RamAutoTime
 034C: 0xA868C730 ; 0D3: RamStby
 0350: 0xA8451444 ; 0D4: RamMissedMes
@@ -232,7 +232,7 @@
 036C: 0xA868C75C ; 0DB: RamMainscreenAccuIcon
 0370: 0xA8774AC4 ; 0DC: RamRandSeed
 0374: 0xA899F2BC ; 0DD: RamCurrentTrack
-0378: 0xA86CB0D9 ; 0DE: RamIsSimPresent
+0378: 0xA86CB0F8 ; 0DE: char *RamIsSimPresent()
 037C: 0xA86A8024 ; 0DF: RamPressedKey
 0380: 0xA869CA6C ; 0E0: RamScreenBuffer
 ;0384: 0x ; 0E1: RamMPlayer_CtrlCode
@@ -922,6 +922,7 @@
 ;0F54:           ; 3D5: __arm int BuildPath(WSHDR *ws, const WSHDR *file_name, const WSHDR *dir);
 #pragma disable old_equal_ff
 +0
+
 
 
 
