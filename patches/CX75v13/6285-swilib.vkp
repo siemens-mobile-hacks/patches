@@ -75,7 +75,7 @@ English:Patch version is in "YMMDD" format. It indicates its update date.
 00C0: 0xA081BCCC   ;  30: __arm WriteEELiteBlock
 00C4: 0xA0EF2D3D   ;  31: __thumb char *strrchr_2(const char *s,int c)
 00C8: 0xA02FC2FC   ;  32: __arm void PlaySound(long param1, long param2, long param3, long tone, long param5)
-00CC: 0xA02F1BF4   ;  33: __arm PlaySound2
+00CC: 0xA02F19E4   ;  33: short SoundAE_PlayFileAsEvent(int event_id, int cepid, int msg_id, const WSHDR *folder, const WSHDR *file)
 00D0: 0xA02B49BC   ;  34: __arm PlaySoundLoop
 00D4: 0xA0589813   ;  35: __thumb void AlarmClockRing(void)
 00D8: 0xA04F2049   ;  36: __thumb GetATCmdString
@@ -97,8 +97,8 @@ English:Patch version is in "YMMDD" format. It indicates its update date.
 0114: 0xA0351658   ;  45: __arm GetWavLen
 0118: 0xA02CF4C9   ;  46: __thumb int HasNewSMS()
 011C: 0xA02CE605   ;  47: __thumb int HasFlashSMS()
-0120: 0xA050FB27   ;  48: __thumb int ReadNewSMS(void)
-0124: 0xA02CB04F   ;  49: __thumb int ReadFlashSMS(void)
+0120: 0xA050FB27   ;  48: void ReadNewSMS(void)
+0124: 0xA02CB04F   ;  49: int ReadFlashSMS(int ack)
 0128: 0xA02F46F8   ;  4A: __arm void PlayFile(int _C,WSHDR* folder,WSHDR* filename,int cepid, int _167)
 012C: 0xA088D214   ;  4B: __arm void StartMidlet(char *midlet)
 0130: 0xA05573B1   ;  4C: __thumb GetMissedCallsCount
@@ -256,7 +256,7 @@ English:Patch version is in "YMMDD" format. It indicates its update date.
 036C: 0xA84CB534   ;  DB: RamMainscreenAccuIcon
 0370: 0xA85BF0D4   ;  DC: RamRandSeed
 ;374:              ;  DD: RamCurrentTrack
-0378: 0xA85187CD   ;  DE: RamIsSimPresent
+0378: 0xA85187EC   ;  DE: char *RamIsSimPresent()
 037C: 0xA84FF800   ;  DF: RamPressedKey
 
 0380: 0xA84E8CA8   ;  E0: __arm void * RamScreenBuffer()
@@ -775,6 +775,7 @@ English:Patch version is in "YMMDD" format. It indicates its update date.
 0B68: 0xA08053D1   ; 2DA: __thumb void *TViewGetUserPointer(void *gui)
 #pragma disable old_equal_ff
 +0
+
 
 
 
