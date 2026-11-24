@@ -576,8 +576,10 @@
 083C: 0xA06EB657 ; 20F: __thumb int ConstructEditDate(EDITCONTROL *EditControl,TDate *date);
 
 0840: 0xA06EEB91 ; 210: __thumb int GetCurGuiID(void);
+0EB0: 0xA0C10201 ; 3AC: int EVP_add_cipher(EVP_CIPHER *c)
 #pragma disable old_equal_ff
 +0
+
 
 
 
