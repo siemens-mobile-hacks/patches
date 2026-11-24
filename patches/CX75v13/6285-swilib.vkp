@@ -773,8 +773,10 @@ English:Patch version is in "YMMDD" format. It indicates its update date.
 0B60: 0xA080532F   ; 2D8: __thumb void TViewSetText(void *gui, WSHDR *text, void *malloc_adr, void *mfree_adr)
 0B64: 0xA08053CD   ; 2D9: __thumb void TViewSetUserPointer(void *gui,void *user_pointer)
 0B68: 0xA08053D1   ; 2DA: __thumb void *TViewGetUserPointer(void *gui)
+0EB0: 0xA0DD08A1   ; 3AC: int EVP_add_cipher(EVP_CIPHER *c)
 #pragma disable old_equal_ff
 +0
+
 
 
 
