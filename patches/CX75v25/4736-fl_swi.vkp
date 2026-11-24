@@ -828,8 +828,10 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 ;BC0:              ; 2F0: void *dlsym(int handle, const char *name)
 ;BC4:              ; 2F1: int dlclose(int handle)
 ;BC8:              ; 2F2: int setenv(const char *name, const char *value, int replace)
+0EB0: 0xA0DD2F8D   ; 3AC: int EVP_add_cipher(EVP_CIPHER *c)
 #pragma disable old_equal_ff
 +0
+
 
 
 
