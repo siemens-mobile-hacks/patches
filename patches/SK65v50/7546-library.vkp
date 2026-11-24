@@ -68,7 +68,7 @@
 ;00C0: 0x ; 30: 
 00C4: 0xA0D1DB0D ; 31: StrChrRev
 00C8: 0xA02F8600 ; 32: __arm void PlaySound(long param1, long param2, long param3, long tone, long param5);
-00CC: 0xA02EE7E4 ; 33: PlaySound2
+00CC: 0xA02EE5D4 ; 33: short SoundAE_PlayFileAsEvent(int event_id, int cepid, int msg_id, const WSHDR *folder, const WSHDR *file)
 00D0: 0xA02B2BAC ; 34: PlaySoundLoop
 00D4: 0xA04F3E6F ; 35: AlarmClockRing
 ;00D8: 0x ; 36: 
@@ -236,7 +236,7 @@
 033C: 0xA8E881DC ; CF: RamAlarm
 
 0340: 0xA8EB8B64 ; D0: RamAccPoint
-0344: 0xA8E3A610 ; D1: RamScreensaver
+0344: 0xA8E3A5FC ; D1: CSM_RAM **RamScreenSaverCSM(void)
 0348: 0xA8E403D4 ; D2: RamAutoTime
 034C: 0xA8E3A604 ; D3: RamStby
 0350: 0xA865D148 ; D4: RamMissedMes
@@ -249,7 +249,7 @@
 036C: 0xA8E3A644 ; DB: RamMainscreenAccuIcon
 0370: 0xA8F1C3F8 ; DC: RamRandSeed
 ;0374: 0x   ; DD: RamCurrentTrack
-0378: 0xA8E7AC1D ; DE: RamIsSimPresent
+0378: 0xA8E7AC3C ; DE: char *RamIsSimPresent()
 037C: 0xA8E57A34 ; DF: RamPressedKey
 
 0380: 0xA8E4C474 ; 80E0: __arm void* RamScreenBuffer();
@@ -578,6 +578,7 @@
 0840: 0xA06EEB91 ; 210: __thumb int GetCurGuiID(void);
 #pragma disable old_equal_ff
 +0
+
 
 
 ;------------------------- end -------------------------
