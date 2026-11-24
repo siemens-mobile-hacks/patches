@@ -66,7 +66,7 @@
 00C0: 0xA01E6144   ;  30: WriteEELiteBlock
 00C4: 0xA0FFA861   ;  31: char *strrchr_2(const char *s,int c)
 00C8: 0xA02821F0   ;  32: void PlaySound(long param1, long param2, long param3, long tone, long param5)
-00CC: 0xA0278B48   ;  33: PlaySound2
+00CC: 0xA02789B8   ;  33: short SoundAE_PlayFileAsEvent(int event_id, int cepid, int msg_id, const WSHDR *folder, const WSHDR *file)
 ;0D0:              ;  34: PlaySoundLoop
 ;0D4:              ;  35: void AlarmClockRing()
 ;0D8:              ;  36: void SLI_SetState(uint8_t state)
@@ -230,7 +230,7 @@
 032C: 0xA8DF7974   ;  CB: RamRingtoneStatus
 0330: 0xA8E684B4   ;  CC: RamMissedCalls
 ;334:              ;  CD: char *RamMissedSMS()
-0338: 0xA8DA850C   ;  CE: RamDateTime
+0338: 0xA8DA8538   ;  CE: RAM_DATETIME *RamDateTime()
 033C: 0xA8F124C0   ;  CF: RamAlarm
 
 0340: 0xA8DE90E4   ;  D0: RamAccPoint
@@ -243,7 +243,7 @@
 035C: 0xA8E2CA2C   ;  D7: RamScreenBrightness
 ;360:              ;  D8: void *RamMenuAnywhere()
 ;364:              ;  D9: void *RamShutdownMode()
-0368: 0xA8DEBA9C   ;  DA: RamIsShutdown
+0368: 0xA8E2CAC8   ;  DA: char *RamIsShutdown()
 036C: 0xA8F10D0C   ;  DB: int *RamIsNotOnMainscreen()
 0370: 0xA8E4BAB8   ;  DC: int *RamRandSeed()
 ;374:              ; 0DD: void *RamCurrentTrack()
@@ -261,7 +261,7 @@
 03A0: 0x00000800   ;  E8: Pic_Extra
 03A4: 0x00000810   ;  E9: Pic_Profiles
 03A8: 0x00000818   ;  EA: Pic_Vibra
-;3AC:              ;  EB: int PIT_Pic_Call()
+03AC: 0x0000081A   ;  EB: int PIT_Pic_Call()
 03B0: 0x00000800   ;  EC: Pic_AdvNet
 03B4: 0x00001137   ;  ED: LP_MonthsLong
 03B8: 0x000003EB   ;  EE: LP_Weekdays
@@ -271,7 +271,7 @@
 03C4: 0xA0301A9D   ;  F1: void *BuildCanvas()
 03C8: 0xA0554A45   ; 0F2: int Registry_RegClient(const REG_CLIENT *client)
 03CC: 0xA0554A23   ; 0F3: void Registry_UnregClient(int client_id)
-;3D0:              ;  F4: int PIT_Pic_Lani()
+03D0: 0x00000840   ;  F4: int PIT_Pic_Lani()
 03D4: 0xA8DA85EC   ;  F5: Ram_LCD_Overlay_Layer
 03D8: 0xA8E2D070   ;  F6: RAM_LCD_Layer_Base_Ptr
 ;3DC:              ;  F7: RAP_LCDLAYER_LIST *RamLcdRapLayersList()
@@ -590,7 +590,7 @@
 0878: 0xA096E18F   ; 21E: __thumb void FocusGUI(int id);
 087C: 0xA096E19F   ; 21F: __thumb void UnfocusGUI(void);
 
-0880: 0xA0914973   ; 220: int IsSliderClosed(void)
+0880: 0xA0914973   ; 220: char IsSliderClosed()
 0884: 0xA01D0928   ; 221: SetCpuClockLow(2)
 0888: 0xA01D0910   ; 222: SetCpuClockTempHi(2)
 088C: 0xA054C573   ; 223: int IsMediaPlayerInBackground()
@@ -1099,6 +1099,7 @@
 0FFC: 0xA0FF8B91   ; 3FF: int vsnprintf(char *s, size_t n, const char *format, va_list args)
 #pragma disable old_equal_ff
 +0
+
 
 
 
