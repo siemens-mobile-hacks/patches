@@ -66,7 +66,7 @@
 00C0: 0xA07D3B98   ;  30: ;__arm WriteEELiteBlock
 00C4: 0xA0E5AE7D   ;  31: __thumb char *strrchr_2(const char *s,int c)
 00C8: 0xA03044B8   ;  32: __arm void PlaySound(long param1, long param2, long param3, long tone, long param5)
-00CC: 0xA02FA1EC   ;  33: __arm PlaySound2
+00CC: 0xA02F9FDC   ;  33: short SoundAE_PlayFileAsEvent(int event_id, int cepid, int msg_id, const WSHDR *folder, const WSHDR *file)
 00D0: 0xA02B5288   ;  34: __arm PlaySoundLoop
 00D4: 0xA04F2459   ;  35: __thumb void AlarmClockRing(void)
 00D8: 0xA04D100D   ;  36: ;__thumb GetATCmdString
@@ -88,8 +88,8 @@
 0114: 0xA0352D4C   ;  45: __arm GetWavLen
 0118: 0xA0348A81   ;  46: __thumb int HasNewSMS()
 011C: 0xA02D4A2D   ;  47: __thumb int HasFlashSMS()
-0120: 0xA04E3697   ;  48: __thumb int ReadNewSMS(void)
-0124: 0xA02D10DF   ;  49: __thumb int ReadFlashSMS(void)
+0120: 0xA04E3697   ;  48: void ReadNewSMS(void)
+0124: 0xA02D10DF   ;  49: int ReadFlashSMS(int ack)
 0128: 0xA02FCCF0   ;  4A: __arm void PlayFile(int _C,WSHDR* folder,WSHDR* filename,int cepid, int _167)
 012C: 0xA083C5B8   ;  4B: __arm void StartMidlet(char *midlet)
 0130: 0xA0515D61   ;  4C: __thumb GetMissedCallsCount
@@ -234,7 +234,7 @@
 033C: 0xA850B090   ;  CF: RamAlarm
 
 0340: 0xA85398CC   ;  D0: RamAccPoint
-0344: 0xA84C1BD0   ;  D1: RamScreensaver
+0344: 0xA84C1BCC   ;  D1: CSM_RAM **RamScreenSaverCSM(void)
 0348: 0xA84C5E8C   ;  D2: RamAutoTime
 034C: 0xA84C1BD4   ;  D3: RamStby
 0350: 0xA8397430   ;  D4: RamMissedMes
@@ -247,11 +247,11 @@
 036C: 0xA84C1C14   ;  DB: RamMainscreenAccuIcon
 0370: 0xA85A6984   ;  DC: RamRandSeed
 ;374:              ;  DD: RamCurrentTrack
-0378: 0xA84F3085   ;  DE: RamIsSimPresent
+0378: 0xA84F30A4   ;  DE: char *RamIsSimPresent()
 037C: 0xA84DADA8   ;  DF: RamPressedKey
 
 0380: 0xA84D0D50   ;  E0: __arm void * RamScreenBuffer()
-0384: 0x00000000   ;  E1: ;unsigned int RamMPlayer_CtrlCode()
+;384:              ;  E1: uint32_t *RamMPlayer_CtrlCode()
 0388: 0xA84DCA28   ;  E2: RamKeyBuffer
 038C: 0xA8500C24   ;  E3: RamProfileNum
 0390: 0xA8780000   ;  E4: FreeRAM
@@ -969,6 +969,7 @@
 ;        * 11,56,a1,ac-b1,b3,c3,c6,1fb,26c,26d (m.ksy)
 ;141112: + F7,26F-271,276,2EC,2ED,300-375,380-38E (m.ksy)
 ;        * 79,FF,25B (m.ksy)
+
 
 
 
