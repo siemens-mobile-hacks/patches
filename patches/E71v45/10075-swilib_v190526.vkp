@@ -65,7 +65,7 @@
 00C0: 0xA04E896C ; 030: WriteEELiteBlock
 00C4: 0xA122B0CD ; 031: char *strrchr(const char *s,int c);
 00C8: 0xA05A2C64 ; 032: __arm void PlaySound(long param1, long param2, long param3, long tone, long param5);
-00CC: 0xA0595668 ; 033: PlaySound2
+00CC: 0xA0595434 ; 033: short SoundAE_PlayFileAsEvent(int event_id, int cepid, int msg_id, const WSHDR *folder, const WSHDR *file)
 ;0D0:              ; 034: PlaySoundLoop
 ;00D4: 0x ; 035: AlarmClockRing
 00D8: 0xA04B77D4 ; 036: void SLI_SetState(unsigned char state);
@@ -229,7 +229,7 @@
 032C: 0xA8E36D14 ; 0CB: RamRingtoneStatus
 0330: 0xA8EB59E4 ; 0CC: RamMissedCalls
 ;0334: 0x ; 0CD: RamMissedSMS
-0338: 0xA8DA8108 ; 0CE: void *RamDateTime(void)
+0338: 0xA8DA8134 ; 0CE: RAM_DATETIME *RamDateTime()
 033C: 0xA8F5B964 ; 0CF: RamAlarm
 
 0340: 0xA8E27140 ; 0D0: RamAccPoint
@@ -242,7 +242,7 @@
 035C: 0xA8E6A484 ; 0D7: RamScreenBrightness
 0360: 0xA8DA7D39 ; 0D8: void *RamMenuAnywhere()
 ;0364: 0x ; 0D9: RamShutdownMode
-0368: 0xA8E29B08 ; 80DA: RamIsShutdown
+0368: 0xA8E6A520 ; 80DA: char *RamIsShutdown()
 036C: 0xA8F59D84 ; 0DB: RamNotOnMainscreen
 0370: 0xA8EA3EDC ; 80DC: int *RamRandSeed();
 ;0374: 0x ; 0DD: void *RamCurrentTrack()
@@ -260,7 +260,7 @@
 03A0: 0x00000800 ; 0E8: Pic_Extra
 03A4: 0x00000810 ; 0E9: Pic_Profiles
 03A8: 0x00000818 ; 0EA: Pic_Vibra
-;03AC: 0x ; 0EB: Pic_Call
+03AC: 0x0000081A ; 0EB: int PIT_Pic_Call()
 03B0: 0x00000800 ; 0EC: Pic_AdvNet
 03B4: 0x00001137 ; 0ED: LP_MonthsLong
 03B8: 0x000003EB ; 0EE: LP_Weekdays
@@ -270,7 +270,7 @@
 03C4: 0xA05C1801 ; 0F1: __arm void *BuildCanvas(void);
 03C8: 0xA06AED34 ; 0F2: __arm int Registry_RegClient(const REG_CLIENT *client);
 03CC: 0xA06AECA0 ; 0F3: __arm void Registry_UnregClient(int client_id);
-;03D0: 0x ; 0F4:
+03D0: 0x00000840 ; 0F4: int PIT_Pic_Lani()
 03D4: 0xA8DF31FC ; 0F5: Ram_LCD_Overlay_Layer
 03D8: 0xA8E6AACC ; 0F6: Ram_Layer_Base_Ptr
 ;03DC: 0x ; 0F7:
@@ -1069,6 +1069,7 @@
 
 #pragma disable old_equal_ff
 +0
+
 
 
 
