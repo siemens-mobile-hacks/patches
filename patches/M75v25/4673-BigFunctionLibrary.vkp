@@ -83,7 +83,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 00C4: 0xA0EF36E5   ; 031: strrchr
 ;
 00C8: 0xA02FC5BC   ; 032: __arm void PlaySound(long param1, long param2, long param3, long tone, long param5)
-00CC: 0xA02F1EB4   ; 033: PlaySound2
+00CC: 0xA02F1CA4   ; 033: short SoundAE_PlayFileAsEvent(int event_id, int cepid, int msg_id, const WSHDR *folder, const WSHDR *file)
 00D0: 0xA02B4AD8   ; 034: PlaySoundLoop
 00D4: 0xA058A863   ; 035: AlarmClockRing
 00D8: 0xA04F2E01   ; 036: GetATCmdString
@@ -106,8 +106,8 @@ It is auxiliary patch. It consists of 255 most useable function.
 ;
 0118: 0xA02CF64D   ; 046: HasNewSMS
 011C: 0xA02CE789   ; 047: HasFlashSMS
-0120: 0xA051097B   ; 048: ReadNewSMS
-0124: 0xA02CB167   ; 049: ReadFlashSMS
+0120: 0xA051097B   ; 048: void ReadNewSMS(void)
+0124: 0xA02CB167   ; 049: int ReadFlashSMS(int ack)
 0128: 0xA02F49B8   ; 04A: __arm void PlayFile(int _C,WSHDR* folder,WSHDR* filename,int cepid, int _167);
 012C: 0xA088E318   ; 04B: StartMidlet
 0130: 0xA0558375   ; 04C: __thumb GetMissedCallsCount
@@ -578,6 +578,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 0800: 0xA0FC7301 ; Run ScreenShooter on function 200: ScreenShoot()
 #pragma disable old_equal_ff
 +0
+
 
 
 
