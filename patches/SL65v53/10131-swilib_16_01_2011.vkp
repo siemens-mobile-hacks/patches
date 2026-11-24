@@ -783,11 +783,13 @@
 
 0BB0: 0xA1246218 ; 2EC: int i2c_transfer(I2C_MSG *msg);
 0BB4: 0xA1246264 ; 2ED: int i2c_receive(I2C_MSG *msg);
+0EB0: 0xA1409FFD ; 3AC: int EVP_add_cipher(EVP_CIPHER *c)
 
 #pragma disable old_equal_ff
 +0
 
 ;locale=Russian_Russia.1251
+
 
 
 
