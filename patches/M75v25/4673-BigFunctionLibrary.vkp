@@ -576,8 +576,10 @@ It is auxiliary patch. It consists of 255 most useable function.
 
 07EC: 0xA8517648 ; 1FB: __arm char *RamMediaIsPlaying();
 0800: 0xA0FC7301 ; Run ScreenShooter on function 200: ScreenShoot()
+0EB0: 0xA0DD1249 ; 3AC: int EVP_add_cipher(EVP_CIPHER *c)
 #pragma disable old_equal_ff
 +0
+
 
 
 
