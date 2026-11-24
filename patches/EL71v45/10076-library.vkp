@@ -64,7 +64,7 @@
 00C0: 0xA04EED34   ; 030: int WriteEELiteBlock(uint32_t block, void *buf, uint32_t offset, uint32_t size, int *null)
 00C4: 0xA0FBCED1   ;   31: char *strrchr_2(const char *s,int c)
 00C8: 0xA05A3BD4   ;   32: PlaySound(long param1, long param2, long param3, long tone, long param5)
-00CC: 0xA05965D8   ;   33: PlaySound2
+00CC: 0xA05963A4   ;   33: short SoundAE_PlayFileAsEvent(int event_id, int cepid, int msg_id, const WSHDR *folder, const WSHDR *file)
 ;0D0:              ;   34: PlaySoundLoop
 ;0D4:              ;   35: AlarmClockRing
 00D8: 0xA04BDB9C   ;   36: void SLI_SetState(unsigned char state)
@@ -219,7 +219,7 @@
 032C: 0xA8E369F0   ;  8CB: RamRingtoneStatus
 0330: 0xA8EB5958   ;  8CC: RamMissedCalls
 ;334:              ;   CD: RamMissedSMS
-0338: 0xA8DA7F94   ;  CE: void *RamDateTime(void)
+0338: 0xA8DA7FC0   ;  CE: RAM_DATETIME *RamDateTime()
 033C: 0xA8F5B0BC   ;  8CF: RamAlarm
 0340: 0xA8E26FCC   ;  8D0: RamAccPoint
 0344: 0xA8EAAAD8   ;  8D1: RamScreensaver
@@ -231,7 +231,7 @@
 035C: 0xA8E6A170   ;  8D7: RamScreenBrightness
 0360: 0xA8DA7BC5   ;  8D8: RamMenuAnywhere
 ;364:              ;   D9: RamShutdownMode
-0368: 0xA8E29994   ;  8DA: RamIsShutdown
+0368: 0xA8E6A20C   ;  8DA: char *RamIsShutdown()
 036C: 0xA8F594DC   ;  8DB: RamNotOnMainscreen
 0370: 0xA8EA3BC8   ; 0DC: int *RamRandSeed()
 ;374:              ;   DD: void *RamCurrentTrack()
@@ -248,7 +248,7 @@
 03A0: 0x00000800   ;   E8: Pic_Extra
 03A4: 0x00000810   ;   E9: Pic_Profiles
 03A8: 0x00000818   ;   EA: Pic_Vibra
-;3AC:              ;   EB: Pic_Call
+03AC: 0x0000081A   ;   EB: int PIT_Pic_Call()
 03B0: 0x00000800   ;   EC: Pic_AdvNet
 03B4: 0x00001137   ;   ED: LP_MonthsLong
 03B8: 0x000003EB   ;   EE: LP_Weekdays
@@ -257,7 +257,7 @@
 03C4: 0xA05C2E2D   ;   F1: void *BuildCanvas()
 03C8: 0xA06B43F4   ;   F2: int Registry_RegClient(const REG_CLIENT *client)
 03CC: 0xA06B4360   ;   F3: void Registry_UnregClient(int client_id)
-;3D0:              ;   F4: 
+03D0: 0x00000840   ;   F4: int PIT_Pic_Lani()
 03D4: 0xA8DF3088   ;  8F5: Ram_LCD_Overlay_Layer 
 03D8: 0xA8E6A7B8   ;  8F6: Ram_Layer_Base_Ptr
 ;3DC:              ;   F7: 
@@ -974,6 +974,7 @@
 
 #pragma disable old_equal_ff
 +0
+
 
 
 
