@@ -25,7 +25,6 @@ The patch has additional files, but it isn't accessible.
 | 10421 | C81v51 | [Переключение оконного/полноэкранного видео на лету<br>Switch video fullscreen and normal mode on the fly](https://patches.kibab.com/patches/details.php5?id=10421) |
 | 10434 | C81v51 | [Запись телефонных разговоров<br>Call Recorder](https://patches.kibab.com/patches/details.php5?id=10434) |
 | 7223 | C81v51 | [Библиотека функций<br>Functions Library](https://patches.kibab.com/patches/details.php5?id=7223) |
-| 10258 | CF75v23 | [Загрузчик эльфов 3.0 Z.Vova, Ganster<br>ELFLoader 3.0 Z.Vova, Ganster](https://patches.kibab.com/patches/details.php5?id=10258) |
 | 11204 | CF75v23 | [Изменить кадры анимации в Native Menu<br>Change animation frames in Native Menu](https://patches.kibab.com/patches/details.php5?id=11204) |
 | 10396 | CL61v128 | [Elfloader 2.3 Official<br>Elfloader 2.3 Official](https://patches.kibab.com/patches/details.php5?id=10396) |
 | 3737 | CX65v43 | [ZIPViewer<br>ZIPViewer](https://patches.kibab.com/patches/details.php5?id=3737) |
