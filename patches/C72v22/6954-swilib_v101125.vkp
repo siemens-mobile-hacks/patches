@@ -51,7 +51,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0078: 0xA0CC9B85   ;  1E: GetPITaddr
 007C: 0xA08DEBA1   ;  1F: DrawMainScreen
 
-0080: 0xA14F0B2B   ;  20: DrawScreenSaver
+0080: 0xA08E182D   ;  20: void DrawScreenSaver()
 0084: 0xA0CC9CCB   ;  21: GetImgHeight
 0088: 0xA0CC9CDB   ;  22: GetImgWidth
 008C: 0xA08C5299   ;  23: DrawImg(unsigned char x, unsigned char y, short picture)
@@ -75,7 +75,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 00D0: 0xA095F39C   ;  34: PlaySoundLoop
 00D4: 0xA0AC9253   ;  35: AlarmClockRing
 00D8: 0xA0B8684D   ;  36: GetATCmdString
-00DC: 0xA0BFBCE3   ;  37: OriginalATCGSN
+00DC: 0xA0974FC8   ;  37: void Ringtones_SetState(uint8_t state)
 00E0: 0xA0B861E9   ;  38: PostAtCommand
 00E4: 0xA0B8791F   ;  39: SendATAnswerStr
 00E8: 0xA0BC3CF5   ;  3A: __thumb mfree_high
@@ -89,7 +89,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0104: 0xA0BC4617   ;  41: GetProvider
 0108: 0xA08E1F49   ;  42: IsScreenSaver
 010C: 0xA0CC8D0F   ;  43: IsUnlocked(KMZ)
-0110: 0xA0BEC819   ;  44: TempLigntOn
+0110: 0xA0B9B60D   ;  44: void TempLightOn(int flags, int unk)
 0114: 0xA099C5B4   ;  45: GetWavLen
 0118: 0xA08E143D   ;  46: __thumb int HasNewSMS()
 011C: 0xA08E0535   ;  47: __thumb int HasFlashSMS()
@@ -112,7 +112,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0158: 0xA0FCF421   ;  56: PlayVibra
 015C: 0xA0828384   ;  57: IsCallAfterTimerStillRunning
 0160: 0xA162331C   ;  58: __arm void  zeromem_2(void *dest,int n)
-0164: 0xA1623364   ;  59:  memcpy
+0164: 0xA1622EF4   ;  59: void *memcpy_2(void *destination, const void *source, size_t num)
 0168: 0xA0CC8573   ;  5A:  KeypressOn
 016C: 0xA0CC86A1   ;  5B:  KeypressOff
 0170: 0xA119E030   ;  5C: __arm unsigned char GetCPUClock()
@@ -123,7 +123,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0180: 0xA08F324B   ;  60: ShowMainMenu
 0184: 0xA08F7723   ;  61: ShowNativeMenu
 ;188:              ;  62: SetVibraStatus;
-018C: 0xA08DB143   ;  63: MS_Wallpaper_Flush
+018C: 0xA08DA84B   ;  63: void MMI_CanvasBuffer_FlushV(char canvas_id)
 0190: 0xA0C9EAA9   ;  64: __thumb TriggerUpdate
 0194: 0xA0BC2085   ;  65: EndCall
 0198: 0xA0B90897   ;  66: EndCallBusy
@@ -151,7 +151,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 01EC: 0xA08D1DDD   ;  7B: GetProfileFilter
 01F0: 0xA1151E20   ;  7C: SetVibration(unsigned int power)
 01F4: 0xA12539E5   ;  7D: IsIncognitoCall
-01F8: 0xA127451D   ;  7E: Rand
+01F8: 0xA162329D   ;  7E: int rand(void)
 ;1FC:              ;  7F: IsPlayerOn;
 
 0200: 0xA0AC9AB1   ;  80: ShowCallList(int list, int zero)
@@ -189,7 +189,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 027C: 0xA0CBED97   ;  9F: DrawRect
 
 0280: 0xA0C98C37   ;  A0: wsprintf
-0284: 0xA0825E5D   ;  A1: wstrcpy
+0284: 0xA0C99567   ;  A1: WSHDR *wstrcpy_2(WSHDR *destination, WSHDR *source)
 0288: 0xA0C991C7   ;  A2: Unicode_GetCharByPosition
 028C: 0xA112F2E0   ;  A3: ws2str(WSHDR *ws, char *str, unsigned int size)
 0290: 0xA0C99447   ;  A4: wsAlloc
@@ -216,7 +216,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 02E0: 0xA16234D8   ;  B8: dwMODdw
 02E4: 0xA0CC8F97   ;  B9: KbdUnlock
 02E8: 0xA0820FA8   ;  BA: __arm void *realloc(void *ptr, int size)
-02EC: 0xA16234C0   ;  BB: __arm void *memset(void *s, int c, int n)
+02EC: 0xA1622F1C   ;  BB: void *memset(void *ptr, int val, size_t num)
 02F0: 0xA0837360   ;  BC: __arm int divide(int divisor, int dividend)
 02F4: 0xA16235B0   ;  BD: __arm int DivBy10(int divident)
 02F8: 0xA0FC0C91   ;  BE:  RunScaner
@@ -233,7 +233,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0320: 0xA8465EE4   ;  C8:  RamCap
 0324: 0xA8465EE6   ;  C9:  RamLS
 0328: 0xA84728F4   ;  CA:  RamNet
-032C: 0xA84728FA   ;  CB:  RamNetRX
+032C: 0xA84756A0   ;  CB: char *RamRingtoneStatus()
 0330: 0xA839744C   ;  cc:  RamMissedCalls
 0334: 0xA8397440   ;  cd:  RamMissedSMS
 0338: 0xA8446CC0   ;  ce:  RamDateTime
@@ -242,7 +242,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0344: 0xA8442A3C   ;  d1:  RamScreensaver
 0348: 0xA8446CE8   ;  d2:  RamAutoTime
 034C: 0xA8442A3C   ;  D3:  RamStby
-0350: 0xA8397430   ;  d4:  RamMissedMes
+0350: 0xA8474178   ;  d4: char *RamMissedMessage()
 0354: 0xA8458504   ;  D5:  RamIsLocked
 0358: 0xA8445664   ;  d6:  RamNetOnline
 035C: 0xA848896A   ;  d7:  RamScreenBrightness
@@ -320,7 +320,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 046C: 0xA1622145   ; 11B: snprintf(char *,int n,const char *format,...)
 0470: 0xA1622E99   ; 11C:  __thumb int  memcmp (void *m1,void *m2,int n)
 0474: 0xA162331C   ; 11D:  __arm void  zeromem (void *dest,int n)
-0478: 0xA1623364   ; 11E: memcpy_2(void *dest,const void *source,int cnt)
+0478: 0xA1622EF4   ; 11E: void *memcpy(void *destination, const void *source, size_t num)
 047C: 0xA0C99567   ; 11F: wstrcpy_2(WSHDR *wshdr_d,WSHDR *wshdr_s)
 
 0480: 0xA0C99589   ; 120: wstrncpy(WSHDR *,WSHDR *,int)
@@ -342,7 +342,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 
 04C0: 0xA0CC11D1   ; 130: getRGBbyPaletteAdr(int *paletteAdr,void *dest)
 04C4: 0xA0CC11EF   ; 131: setColor(int a,int r,int g,int b,void *dest)
-04C8: 0xA162341C   ; 132: __arm void *memmove(void *dest,const void *source,int cnt)
+04C8: 0xA1622F08   ; 132: void *memmove(void *destination, const void *source, size_t num)
 04CC: 0xA0CC5E09   ; 133: StoreXYWHtoRECT_2(void *RECT,int x,int y,int w,int h)
 04D0: 0xA0CC5E1F   ; 134: StoreXYXYtoRECT(void *RECT,int x,int y,int x2,int y2)
 04D4: 0xA0C9E83B   ; 135: IsGuiOnTop(int id)
@@ -472,7 +472,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 06A8: 0xA1600DEF   ; 1AA: void png_read_update_info(png_structp png_ptr,void *info_ptr)
 06AC: 0xA160185F   ; 1AB: void png_set_palette_to_rgb(png_structp png_ptr)
 06B0: 0xA1600189   ; 1AC: png_uint_32 png_get_valid(png_structp png_ptr,png_infop info_ptr, png_uint_32 flag)
-06B4: 0xA160187B   ; 1AD: void png_set_tRNS_to_alpha(png_structp png_ptr)
+06B4: 0xA160185F   ; 1AD: void png_set_tRNS_to_alpha(png_structp png_ptr)
 06B8: 0xA16025D1   ; 1AE: void png_set_filler(png_structp png_ptr,png_uint_32 filler, int flags)
 06BC: 0xA1601835   ; 1AF: void png_set_strip_16(png_structp png_ptr)
 
@@ -515,7 +515,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 074C: 0xA1165FD1   ; 1D3: __thumb int EDIT_GetCursorPos(void *gui);
 0750: 0xA1165FDB   ; 1D4: __thumb void EDIT_SetCursorPos(void *gui, int pos);
 0754: 0xA115B558   ; 1D5: __arm char *Get_Phone_Info(int InfoIndex); 
-0758: 0xA160186D   ; 1D6: __thumb void png_set_gray_1_2_4_to_8(png_structp png_ptr)
+0758: 0xA160185F   ; 1D6: void png_set_gray_1_2_4_to_8(png_structp png_ptr)
 075C: 0xA1602633   ; 1D7: __thumb void png_set_invert_mono(png_structp png_ptr)
 0760: 0xA1166021   ; 1D8: __thumb int EDIT_IsMarkModeActive(void *gui);
 0764: 0xA1166035   ; 1D9: __thumb int EDIT_GetMarkedText(void *gui,WSHDR *dest);
@@ -543,8 +543,8 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 ;7B8:              ; 1EE: --__unknown ProgressCalculate(int current, int total)
 07BC: 0xA0CCA1C3   ; 1EF: __thumb void SetDynIcon(int picture,IMGHDR *img,char *bitmap)
 
-07C0: 0xA09645E1   ; 1F0: __thumb filecopy
-07C4: 0xA09664CD   ; 1F1: __thumb filecopy_op_announce
+07C0: 0xA09645E0   ; 1F0: int ExplorerCopyFile(const char *from, const char *to, int overwrite, char transfer_id, uint32_t *errp)
+07C4: 0xA09664CC   ; 1F1: void ExplorerSetTransferState(char transfer_id, int state)
 07C8: 0xA115B22C   ; 1F2: __arm int devmenu_config_IsCheckboxOff
 07CC: 0xA0837FB0   ; 1F3: __arm GetSessionAge
 07D0: 0xA8442154   ; 1F4: char *RamServiceProviderName() 
@@ -730,6 +730,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 13A4: 0xA846AF74   ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
