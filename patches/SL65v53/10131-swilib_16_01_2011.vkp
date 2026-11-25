@@ -247,7 +247,7 @@
 0350: 0xA86C834C   ; D4: char *RamMissedMessage()
 0354: 0xA86A1A98   ; D5: RamIsLocked
 0358: 0xA868EFB0   ; D6: RamNetOnline
-035C: 0xA86DC584   ; D7: RamScreenBrightness
+035C: 0xA86DC56E   ; D7: LIGHT_PARAM *RamScreenBrightness(void)
 0360: 0xA86903B9   ; D8: RamMenuAnywhere
 0364: 0xA86C38D4   ; D9: void *RamShutdownMode()
 0368: 0xA86FFE8C   ; DA: RamIsShutdown
@@ -255,7 +255,7 @@
 0370: 0xA87623F4   ; DC: RamRandSeed
 0374: 0xA899F2BC   ; DD: RamCurrentTrack
 0378: 0xA86C4A7C   ; DE: RamIsSimPresent
-037C: 0xA86A1998   ; DF: RamPressedKey
+037C: 0xA86A19B0   ; DF: char *RamPressedKey()
 
 0380: 0xA8699568   ; E0: RamScreenBuffer
 ;384:              ; E1: 
@@ -921,6 +921,7 @@
 +0
 
 ;locale=Russian_Russia.1251
+
 
 
 
