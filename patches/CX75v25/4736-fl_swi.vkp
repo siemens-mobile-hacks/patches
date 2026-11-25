@@ -258,7 +258,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0324: 0xA850D36A   ; 0C9: unsigned short *RamLS()
 0328: 0xA851A9D4   ; 0CA: RAMNET *RamNet()
 032C: 0xA851DE78   ; 0CB: char *RamRingtoneStatus()
-0330: 0xA8411778   ; 0CC: char *RamMissedCalls()
+0330: 0xA852A7E8   ; 0CC: char *RamMissedCalls()
 0334: 0xA841176C   ; 0CD: char *RamMissedSMS()
 0338: 0xA84D12C0   ; 0CE: RamDateTime
 033C: 0xA852662C   ; 0CF: char *RamAlarm()
@@ -573,7 +573,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 07C4: 0xA02E0554   ; 1F1: filecopy_op_announce
 07C8: 0xA0832B80   ; 1F2: int devmenu_config_IsCheckboxOff(int CheckboxID)
 07CC: 0xA021AC38   ; 1F3: unsigned int GetSessionAge()
-07D0: 0xA84CAC10   ; 1F4: char *RamServiceProviderName()
+07D0: 0xA84CAC11   ; 1F4: char *RamServiceProviderName(void)
 07D4: 0xA0EF4D65   ; 1F5: int sscanf(const char *, const char *, ...)
 07D8: 0xA0802167   ; 1F6: IMGHDR* GetPitAdrBy0xE200Symbol(int uni_symbol)
 07DC: 0xA0FCF2A1   ; 1F7: long GetFileSize(char *Filename)
@@ -982,6 +982,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 13A4: 0xA8512CF0   ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
