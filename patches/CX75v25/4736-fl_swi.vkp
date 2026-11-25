@@ -114,7 +114,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0104: 0xA08377DB   ; 041: int GetProvider(WSHDR* ws, int zero)
 0108: 0xA02D0155   ; 042: int IsScreenSaver()
 010C: 0xA0800BEB   ; 043: int IsUnlocked(void)
-0110: 0xA085C009   ; 044: TempLigntOn
+0110: 0xA07D7409   ; 044: void TempLightOn(int flags, int unk)
 0114: 0xA0351900   ; 045: int GetWavLen(TWavLen *wl)
 0118: 0xA02CF649   ; 046: int HasNewSMS()
 011C: 0xA02CE785   ; 047: int HasFlashSMS()
@@ -147,7 +147,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0180: 0xA0326BA7   ; 060: void ShowMainMenu()
 0184: 0xA032B0CF   ; 061: void ShowNativeMenu()
 ;188: ; 062: SetVibraStatus
-018C: 0xA02C93EB   ; 063: MS_Wallpaper_Flush
+018C: 0xA02C8AF3   ; 063: void MMI_CanvasBuffer_FlushV(char canvas_id)
 0190: 0xA07C4265   ; 064: TriggerUpdate
 0194: 0xA0835249   ; 065: void EndCall(void)
 0198: 0xA07CD62B   ; 066: void EndCallBusy(int param1, int param2)
@@ -267,7 +267,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0344: 0xA84CB504   ; 0D1: CSM_RAM **RamScreenSaverCSM(void)
 0348: 0xA84D12E8   ; 0D2: char *RamAutoTime()
 034C: 0xA84CB50C   ; 0D3: char *RamStby()
-0350: 0xA841175C   ; 0D4: char *RamMissedMes()
+0350: 0xA851C288   ; 0D4: char *RamMissedMessage()
 0354: 0xA84FF8EC   ; 0D5: char *RamIsLocked()
 0358: 0xA84CFC64   ; 0D6: char *RamNetOnline()
 035C: 0xA8533136   ; 0D7: char *RamScreenBrightness()
@@ -982,6 +982,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 13A4: 0xA8512CF0   ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
