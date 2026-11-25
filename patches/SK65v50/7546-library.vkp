@@ -96,7 +96,7 @@
 012C: 0xA07BB8A8 ; 4B: StartMidlet
 0130: 0xA075C101 ; 4C: GetMissedCallsCount
 0134: 0xA020A9D8 ; 4D: __arm void GBS_StartTimerProc(void *htimer, long ms, void ptr());
-0138: 0xA06EE397 ; 4E: __thumb int MsgBoxError(int flag, int LgpId);
+0138: 0xA06EE3A7 ; 4E: int MsgBoxError(int flags, int message)
 013C: 0xA06EE405 ; 4F: __thumb int MsgBoxYesNo(int flag, int LgpID, void CallBackProc(int));
 
 0140: 0xA06EE40F ; 50: int MsgBoxOkCancel(int flags, int message, void (*callback)(int canceled))
@@ -362,7 +362,7 @@
 0514: 0xA0206B00 ; 145: GBS_GetCurCepid(void)
 0518: 0xA020BBE0 ; 146: LockSched(void)
 051C: 0xA020BC68 ; 147: UnlockSched(void)
-0520: 0xA06EE379 ; 148: ShowMSG(int flag, int lgp_id)
+0520: 0xA06EE397 ; 148: int ShowMSG(int flags, int message)
 0524: 0xA07C8D8D ; 149: SetPropTo_Obj1(DRWOBJ *drwobj,void *rect,int rect_flag,WSHDR *wshdr,int font,int text_flag) !!!=SetWindowText
 0528: 0xA07C6601 ; 14A: FreeDrawObject_subobj(DRWOBJ *drwobj)
 052C: 0xA07C656B ; 14B: SetColor(DRWOBJ *drwobj, int *color1, int *color2)
@@ -545,7 +545,7 @@
 07C4: 0xA02DD5FC ; 1F1: filecopy_op_announce
 07C8: 0xA09723DC ; 1F2: devmenu_config_IsCheckboxOff
 07CC: 0xA021A3AC ; 1F3: GetSessionAge
-07D0: 0xA8E39D18 ; 81F4: char *RAM_SPN();
+07D0: 0xA8E39D19 ; 81F4: char *RamServiceProviderName(void)
 07D4: 0xA0D1D825 ; 1F5: __thumb int sscanf(const char *, const char *, ...);
 07D8: 0xA0739927 ; 1F6: __thumb IMGHDR* GetPitAdrBy0xE200Symbol(int uni_symbol);
 ;07DC: 0x ; 1F7: long GetFileSize(char *Filename)
@@ -730,6 +730,7 @@
 13A4: 0xA8E75440 ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
