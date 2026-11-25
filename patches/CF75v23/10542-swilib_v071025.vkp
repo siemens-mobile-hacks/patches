@@ -693,7 +693,7 @@
 ;9FC:              ; 27F: 
 
 ;A00:              ; 280: 
-0A04: 0xA85013E8   ; 281: char *RamIsRunJava()
+0A04: 0xA8516E48   ; 281: int8_t *RamIsRunJava()
 ;A08:              ; 282: char *RamIsRunCamera()
 0A0C: 0xA02F595C   ; 283: int runMidletLinkablely(const char *midlet_name, WSHDR *filename)
 0A10: 0xA0A5C751   ; 284: int IsGPRS()
@@ -1102,6 +1102,7 @@
 ;        * 11,56,a1,ac-b1,b3,c3,c6,1fb,26c,26d (m.ksy)
 ;141112: + F7,26F-271,276,2EC,2ED,300-375,380-38E (m.ksy)
 ;        * 79,FF,25B (m.ksy)
+
 
 
 
