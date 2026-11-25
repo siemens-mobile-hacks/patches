@@ -302,7 +302,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0428: 0x00000000   ; 10A: void *GetConfig(unsigned int id)
 042C: 0x00000000   ; 10B: void *GetMinAdrScan()
 0430: 0x00000000   ; 10C: void *GetMaxAdrScan()
-0434: 0x00000000   ; 10D: unsigned short *GetCI()
+0434: 0xA84728F6   ; 10D: uint16_t *GetCI()
 0438: 0x00000000   ; 10E: void Vibration(unsigned int power, unsigned int duration)
 043C: 0xA08DFFED   ; 10F:  __thumb void freeUSSD()
 
