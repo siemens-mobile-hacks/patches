@@ -242,7 +242,7 @@
 033C: 0xA86D2020   ; CF: RamAlarm
 0340: 0xA86FFE14   ; D0: RamAccPoint
 0344: 0xA868C388   ; D1: CSM_RAM **RamScreenSaverCSM(void)
-0348: 0x00000000   ; D2: RamAutoTime
+0348: 0xA8690634   ; D2: char *RamIsAutoTimeEnabled(void)
 034C: 0xA868C390   ; D3: RamStby
 0350: 0xA86C834C   ; D4: char *RamMissedMessage()
 0354: 0xA86A1A98   ; D5: RamIsLocked
@@ -304,7 +304,7 @@
 0428: 0x00000000   ; 10A: GetConfig(unsigned int id)
 042C: 0x00000000   ; 810B: GetMinAdrScan()
 0430: 0x00000000   ; 810C: GetMaxAdrScan()
-0434: 0x00000000   ; 810D: GetCI()
+0434: 0xA86C6C5A   ; 810D: uint16_t *GetCI()
 0438: 0x00000000   ; 10E: Vibration(unsigned int power, unsigned int duration)
 043C: 0xA164B4D9   ; 10F: freeUSSD()
 
