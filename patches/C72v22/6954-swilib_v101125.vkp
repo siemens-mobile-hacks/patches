@@ -17,11 +17,11 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 
 +0FD4000
 #pragma enable old_equal_ff
-0000: 0xA00204BC   ;   0: __arm void loopback0()
-0004: 0xA00204BC   ;   1: __arm void loopback1()
-0008: 0xA00204BC   ;   2: __arm void loopback2()
-000C: 0xA00204BC   ;   3: __arm void loopback3()
-0010: 0xA00204BC   ;   4: __arm void loopback4()
+0000: 0xA11569F8   ;   0: void loopback0(void)
+0004: 0xA11569F8   ;   1: void loopback1(void)
+0008: 0xA11569F8   ;   2: void loopback2(void)
+000C: 0xA11569F8   ;   3: void loopback3(void)
+0010: 0xA11569F8   ;   4: void loopback4(void)
 0014: 0xA082BF11   ;   5: DecToHex
 0018: 0xA1147C14   ;   6: GetAkku
 001C: 0xA15676F1   ;   7: GetLP
@@ -199,7 +199,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 02A0: 0xA127684D   ;  A8: IsGPRSConnected
 02A4: 0xA0CC9333   ;  A9: KbdLock
 02A8: 0xA0CC95C5   ;  AA: __thumb char *GetCurrentLocale()
-02AC: 0xA00204BC   ;  AB: __arm void loopback171()
+02AC: 0xA11569F8   ;  AB: void loopback171(void)
 02B0: 0xA0FCF1B1   ;  AC:  DrawText
 02B4: 0xA0FCF0A1   ;  AD:  StrAnsi2Uni
 02B8: 0xA0FCF0C1   ;  AE:  StrUni2Ansi
@@ -730,6 +730,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 13A4: 0xA846AF74   ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
