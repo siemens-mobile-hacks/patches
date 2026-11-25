@@ -229,7 +229,7 @@
 0324: 0xA84E96C2   ;  C9: RamLS
 0328: 0xA84F60DC   ;  CA: __arm RAMNET * RamNet()
 032C: 0xA8504B40   ;  CB: RamRingtoneStatus
-0330: 0xA839744C   ;  CC: RamMissedCalls
+0330: 0xA850FA88   ;  CC: char *RamMissedCalls()
 0334: 0xA8397440   ;  CD: RamMissedSMS
 0338: 0xA84C41AC   ;  CE: RamDateTime
 033C: 0xA850D2F4   ;  CF: RamAlarm
@@ -237,7 +237,7 @@
 0340: 0xA853BC44   ;  D0: RamAccPoint
 0344: 0xA84BFF28   ;  D1: CSM_RAM **RamScreenSaverCSM(void)
 0348: 0xA84C41D4   ;  D2: RamAutoTime
-034C: 0xA84BFF1C   ;  D3: RamStby
+034C: 0xA84BFF30   ;  D3: char *RamIsStandby()
 0350: 0xA8503614   ;  D4: char *RamMissedMessage()
 0354: 0xA84DBCD8   ;  D5: RamIsLocked
 0358: 0xA84C2B50   ;  D6: RamNetOnline
@@ -356,7 +356,7 @@
 0514: 0xA0207048   ; 145: __arm int GBS_GetCurCepid (void)
 0518: 0xA020C108   ; 146: __arm void LockSched(void)
 051C: 0xA020C190   ; 147: __arm void UnlockSched(void)
-0520: 0xA0777A75   ; 148: __thumb int ShowMSG(int flag, int lgp_id)
+0520: 0xA0777A93   ; 148: int ShowMSG(int flags, int message)
 0524: 0xA0841081   ; 149: __thumb void SetPropTo_Obj1(DRWOBJ *drwobj,void *rect,int rect_flag,WSHDR *wshdr,int font,int text_flag)
 0528: 0xA083E8F5   ; 14A: __thumb void FreeDrawObject_subobj(DRWOBJ *drwobj)
 052C: 0xA083E85F   ; 14B: __thumb void SetColor(DRWOBJ *drwobj, int *color1, int *color2)
@@ -539,7 +539,7 @@
 07C4: 0xA02E33D8   ; 1F1: __arm filecopy_op_announce
 07C8: 0xA07DDB7C   ; 1F2: __arm int devmenu_config_IsCheckboxOff(int chbox_id)
 07CC: 0xA021AC38   ; 1F3: __arm GetSessionAge
-07D0: 0xA84BF634   ; 1F4: __arm char *RamServiceProviderName()
+07D0: 0xA84BF635   ; 1F4: char *RamServiceProviderName(void)
 07D4: 0xA0E4FB01   ; 1F5: __thumb int sscanf(const char *, const char *, ...)
 07D8: 0xA07B182F   ; 1F6: __thumb IMGHDR* GetPitAdrBy0xE200Symbol(int uni_symbol)
 07DC: 0xA10DF2A1   ; 1F7: API __unknown long GetFileSize(char *Filename)
@@ -586,7 +586,7 @@
 0878: 0xA0778665   ; 21E: __thumb void FocusGUI(int id)
 087C: 0xA0778683   ; 21F: __thumb void UnfocusGUI(void)
 
-0880: 0xA0053F2B   ; 220: __thumb int IsSliderClosed(void)
+0880: 0xA07B08CB   ; 220: char IsSliderClosed()
 0884: 0xA0884094   ; 221: __arm void SetCpuClockLow(2)
 0888: 0xA088407C   ; 222: __arm void SetCpuClockTempHi(2)
 ;88C:              ; 223: ;__unknown IsMediaPlayerInBackground
@@ -1095,6 +1095,7 @@
 ;120313: +38A,38B; *33C-33F
 ;120628: +26F-271,276; *353
 ;------------------------- end -------------------------
+
 
 
 
