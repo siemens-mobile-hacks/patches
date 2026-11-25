@@ -112,7 +112,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 012C: 0xA088E318   ; 04B: StartMidlet
 0130: 0xA0558375   ; 04C: __thumb GetMissedCallsCount
 0134: 0xA020AF00   ; 04D: __arm void GBS_StartTimerProc(void *htimer, long ms, void ptr())
-0138: 0xA07C2C77   ; 04E: __thumb int MsgBoxError(int flag, int LgpId);
+0138: 0xA07C2C87   ; 04E: int MsgBoxError(int flags, int message)
 013C: 0xA07C2CE5   ; 04F: int MsgBoxYesNo(int flags, int message, void (*callback)(int canceled))
 ;
 0140: 0xA07C2CEF   ; 050: int MsgBoxOkCancel(int flags, int message, void (*callback)(int canceled))
@@ -252,7 +252,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 0324: 0xA850D2C2   ; 0C9: RamLS
 0328: 0xA851A92C   ; 80CA: __arm RAMNET * RamNet();
 032C: 0xA851DDD0   ; 0CB: RamRingtoneStatus
-0330: 0xA8411778   ; 0CC: RamMissedCalls
+0330: 0xA852A740   ; 0CC: char *RamMissedCalls()
 0334: 0xA841176C   ; 0CD: RamMissedSMS
 0338: 0xA84D1218   ; 0CE: RamDateTime
 033C: 0xA8526584   ; 0CF: RamAlarm
@@ -298,8 +298,8 @@ It is auxiliary patch. It consists of 255 most useable function.
 ;03CC: 0x   ; 0F3: RAM_PIT_Cap
 03D0: 0xA0EF70A4   ; 0F4: size_t strcspn(const char *s1, const char *s2)
 ;03D4: 0x   ; 0F5:
-03D8: 0xA850D858   ; 0F6: RAMIllumination
-03DC: 0xA850D8F0   ; 0F7: RAMKeyIllumination
+03D8: 0xA84D1F74   ; 0F6: LCDLAYER_LIST *RamLcdMainLayersList()
+03DC: 0xA84D1FB0   ; 0F7: RAP_LCDLAYER_LIST *RamLcdRapLayersList()
 03E0: 0xA0FD0050   ; 0F8: Additional_PIT_address
 03E4: 0x00000542   ; 0F9: Additional_PIT_start
 ;
@@ -388,7 +388,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 0514: 0xA0207048   ; 145: __arm int GBS_GetCurCepid (void);
 0518: 0xA020C108   ; 146: __arm void LockSched(void);
 051C: 0xA020C190   ; 147: __arm void UnlockSched(void);
-0520: 0xA07C2C59   ; 148: __thumb int ShowMSG(int flag, int lgp_id);
+0520: 0xA07C2C77   ; 148: int ShowMSG(int flags, int message)
 0524: 0xA089BB0D   ; 149: __thumb void SetPropTo_Obj1(DRWOBJ *drwobj,void *rect,int rect_flag,WSHDR *wshdr,int font,int text_flag);
 0528: 0xA0899381   ; 14A: __thumb void FreeDrawObject_subobj(DRWOBJ *drwobj);
 052C: 0xA08992EB   ; 14B: __thumb void SetColor(DRWOBJ *drwobj, int *color1, int *color2);
@@ -730,6 +730,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 13A4: 0xA8512C48   ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
