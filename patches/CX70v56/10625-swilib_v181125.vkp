@@ -214,7 +214,7 @@
 0324: 0xA86C0D32 ; 0C9: RamLS
 0328: 0xA86CD2D4 ; 80CA: RAMNET * RamNet()
 032C: 0xA86DBDC8 ; 0CB: RamRingtoneStatus
-0330: 0xA8451460 ; 0CC: RamMissedCalls
+0330: 0xA86E6848 ; 0CC: char *RamMissedCalls()
 0334: 0xA8451454 ; 0CD: RamMissedSMS
 0338: 0xA8690998 ; 0CE: RAM_DATETIME *RamDateTime()
 033C: 0xA86E457C ; 0CF: RamAlarm
@@ -338,7 +338,7 @@
 0514: 0xA08243BC ; 145: int GBS_GetCurCepid (void)
 0518: 0xA082949C ; 146: void LockSched(void)
 051C: 0xA0829524 ; 147: void UnlockSched(void)
-0520: 0xA0C922F9 ; 148: int ShowMSG(int flag, int lgp_id)
+0520: 0xA0C92317 ; 148: int ShowMSG(int flags, int message)
 0524: 0xA0CE6C55 ; 149: void SetPropTo_Obj1(DRWOBJ *drwobj,void *rect,int rect_flag,WSHDR *wshdr,int font,int text_flag)
 0528: 0xA0CE44C9 ; 14A: void FreeDrawObject_subobj(DRWOBJ *drwobj)
 052C: 0xA0CE4433 ; 14B: void SetColor(DRWOBJ *drwobj, int *color1, int *color2)
@@ -514,7 +514,7 @@
 07C4: 0xA08E6BF4 ; 1F1: filecopy_op_announce
 07C8: 0xA1162B04 ; 1F2: devmenu_config_IsCheckboxOff
 07CC: 0xA0837C68 ; 1F3: GetSessionAge
-07D0: 0xA868BE3C ; 1F4: char *RamServiceProviderName()
+07D0: 0xA868BE3D ; 1F4: char *RamServiceProviderName(void)
 07D4: 0xA16EEF5D ; 1F5: int sscanf(const char *, const char *, ...)
 07D8: 0xA0CB7C9B ; 1F6: IMGHDR* GetPitAdrBy0xE200Symbol(int uni_symbol)
 07DC: 0xA006F501   ; 1F7: long GetFileSize(char *Filename)
@@ -1054,6 +1054,7 @@
 13A4: 0xA86C598C ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
