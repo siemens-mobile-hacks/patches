@@ -235,7 +235,7 @@
 0338: 0xA8E403AC ; CE: RamDateTime
 033C: 0xA8E881DC ; CF: RamAlarm
 
-0340: 0xA8EB8B64 ; D0: RamAccPoint
+0340: 0xA8EB8B5C ; D0: void *RamAccPoint(void)
 0344: 0xA8E3A5FC ; D1: CSM_RAM **RamScreenSaverCSM(void)
 0348: 0xA8E403D4 ; D2: RamAutoTime
 034C: 0xA8E3A604 ; D3: RamStby
@@ -730,6 +730,7 @@
 13A4: 0xA8E75440 ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
