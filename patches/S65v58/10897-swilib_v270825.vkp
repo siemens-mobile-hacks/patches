@@ -12,11 +12,11 @@
 
 +0FD4000
 #pragma enable old_equal_ff
-000: 0xA0002070   ; 00: __arm void loopback0();
-004: 0xA0002070   ; 01: __arm void loopback1();
-008: 0xA0002070   ; 02: __arm void loopback2();
-00C: 0xA0002070   ; 03: __arm void loopback3();
-010: 0xA0002070   ; 04: __arm void loopback4();
+000: 0xA124CBAC   ; 00: void loopback0(void)
+004: 0xA124CBAC   ; 01: void loopback1(void)
+008: 0xA124CBAC   ; 02: void loopback2(void)
+00C: 0xA124CBAC   ; 03: void loopback3(void)
+010: 0xA124CBAC   ; 04: void loopback4(void)
 014: 0xA082BE21   ; 005: DecToHex
 0018: 0xA123FF08  ; 06: __arm int GetAkku(int param1,int param2);
 01C: 0xA1405D5D   ; 007: GetLP
@@ -200,7 +200,7 @@
 2A4: 0xA1159191   ; f169: KbdLock
 ;
 2A8: 0xA0FCF001   ; f170: OpenWriteCloseFile
-2AC: 0xA0002070   ; f171: SWI_AB
+2AC: 0xA124CBAC   ; f171: void loopback171(void)
 2B0: 0xA0FCF1B1   ; f172: DrawText
 2B4: 0xA0FCF0A1   ; f173: StrAnsi2Uni
 2B8: 0xA0FCF0C1   ; f174: StrUni2Ansi
@@ -1147,6 +1147,7 @@
 13A4: 0xA86C72D4   ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
