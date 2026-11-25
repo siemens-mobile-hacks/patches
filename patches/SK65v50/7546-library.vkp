@@ -86,7 +86,7 @@
 0104: 0xA075FDC3 ; 41: GetProvider
 0108: 0xA02CD3C1 ; 42: IsScreenSaver
 010C: 0xA0738407 ; 43: __arm int IsUnlocked(void);
-0110: 0xA078F499 ; 44: TempLightOn
+0110: 0xA07158FD ; 44: void TempLightOn(int flags, int unk)
 0114: 0xA0338618 ; 45: GetWavLen
 0118: 0xA02CC885 ; 46: HasNewSMS
 011C: 0xA02CB909 ; 47: HasFlashSMS
@@ -99,7 +99,7 @@
 0138: 0xA06EE397 ; 4E: __thumb int MsgBoxError(int flag, int LgpId);
 013C: 0xA06EE405 ; 4F: __thumb int MsgBoxYesNo(int flag, int LgpID, void CallBackProc(int));
 
-0140: 0xA06EE44F ; 50: __thumb int MsgBoxOkCancel(int flag, int LgpID, void CallBackProc(int));
+0140: 0xA06EE40F ; 50: int MsgBoxOkCancel(int flags, int message, void (*callback)(int canceled))
 0144: 0xA0A55FF1 ; 51: GetNetMode
 0148: 0xA0961118 ; 52: GetIlluminationDataTable
 014C: 0xA0D1D005 ; 53: memcmp
@@ -108,7 +108,7 @@
 0158: 0xA0FCF421 ; 56: PlayVibra
 015C: 0xA020AAE4 ; 57: IsCallAfterTimerStillRunning
 0160: 0xA0D1D488 ; 58: __arm void zeromem_2(void *dest,int n);
-0164: 0xA0D1D4D0 ; 59: __arm void *memcpy_2(void *dest,const void *source,int cnt);
+0164: 0xA0D1D060 ; 59: void *memcpy_2(void *destination, const void *source, size_t num)
 0168: 0xA0737D33 ; 5A: KeypressOn
 016C: 0xA0737DF1 ; 5B: KeypressOff
 0170: 0xA09D6C90 ; 5C: __arm unsigned char GetCPUClock();
@@ -119,7 +119,7 @@
 0180: 0xA0319289 ; 60: ShowMainMenu
 0184: 0xA031E0F3 ; 61: ShowNativeMenu
 ;0188: 0x   ; 62: SetVibraStatus
-018C: 0xA02C6447 ; 63: Screen_Wallpaper_Flush
+018C: 0xA02C5B4F ; 63: void MMI_CanvasBuffer_FlushV(char canvas_id)
 0190: 0xA06EECF1 ; 64: TriggerUpdate
 0194: 0xA075D829 ; 65: EndCall
 0198: 0xA070A0B7 ; 66: EndCallBusy
@@ -147,7 +147,7 @@
 01EC: 0xA02BD7A5 ; 7B: GetProfileFilter
 01F0: 0xA0968E08 ; 7C: __arm unsigned int SetVibration(unsigned int power);
 01F4: 0xA0994A6D ; 7D: IsIncognitoCall
-01F8: 0xA09FD175 ; 7E: Rand
+01F8: 0xA0D1D409 ; 7E: int rand(void)
 ;01FC: 0x   ; 7F: IsPlayerOn
 
 0200: 0xA04F46CD ; 80: __thumb void int ShowCallList(int list, int zero);
@@ -191,7 +191,7 @@
 0290: 0xA06E8FC7 ; A4: wsAlloc
 0294: 0xA06E8911 ; A5: wsFree
 0298: 0xA02C6CB5 ; A6: ResetGPRSTraffic
-029C: 0xA09FFDBB ; A7: IsGPRSEnabled
+029C: 0xA02C6B01 ; A7: char IsGPRSEnabled(void)
 02A0: 0xA09FF4A9 ; A8: IsGPRSConnected
 02A4: 0xA0738A11 ; A9: __thumb void KbdLock();
 02A8: 0xA0738CA5 ; AA: __thumb char *GetCurrentLocale();
@@ -212,7 +212,7 @@
 02E0: 0xA0D1D644 ; B8: dwMODdw
 02E4: 0xA0738687 ; B9: __thumb void KbdUnlock();
 02E8: 0xA02036E8 ; BA: __arm void *realloc(void *ptr, int size);
-02EC: 0xA0D1D62C ; BB: __arm void *memset(void *s, int c, int n);
+02EC: 0xA0D1D088 ; BB: void *memset(void *ptr, int val, size_t num)
 02F0: 0xA021975C ; BC: __arm int divide(int divisor, int dividend);
 02F4: 0xA0D1D71C ; BD: __arm int DivBy10(int divident);
 02F8: 0xA0FC0C91 ; BE: RunScaner
@@ -239,7 +239,7 @@
 0344: 0xA8E3A5FC ; D1: CSM_RAM **RamScreenSaverCSM(void)
 0348: 0xA8E403D4 ; D2: RamAutoTime
 034C: 0xA8E3A604 ; D3: RamStby
-0350: 0xA865D148 ; D4: RamMissedMes
+0350: 0xA8E7E508 ; D4: char *RamMissedMessage()
 0354: 0xA8E57B1C ; D5: RamIsLocked
 0358: 0xA8E3ED50 ; D6: RamNetOnline
 035C: 0xA8E945EA ; D7: RamScreenBrightness
@@ -317,7 +317,7 @@
 046C: 0xA0D1C589 ; 11B: snprintf(char *,int n,const char *format,...)
 0470: 0xA0D1D005 ; 11C: memcmp(void *m1,void *m2,int n)
 0474: 0xA0D1D488 ; 11D: zeromem(void *dest,int n)
-0478: 0xA0D1D4D0 ; 11E: memcpy(void *dest,const void *source,int cnt)
+0478: 0xA0D1D060 ; 11E: void *memcpy(void *destination, const void *source, size_t num)
 047C: 0xA06E90E7 ; 11F: wstrcpy(WSHDR *wshdr_d,WSHDR *wshdr_s)
 
 0480: 0xA06E9109 ; 120: wstrncpy(WSHDR *,WSHDR *,int)
@@ -339,7 +339,7 @@
 
 04C0: 0xA07310CD ; 130: getRGBbyPaletteAdr(int *paletteAdr,void *dest)
 04C4: 0xA07310EB ; 131: setColor(int a,int r,int g,int b,void *dest)
-04C8: 0xA0D1D588 ; 132: void *memmove(void *dest,const void *source,int cnt);
+04C8: 0xA0D1D074 ; 132: void *memmove(void *destination, const void *source, size_t num)
 04CC: 0xA073566D ; 133: StoreXYWHtoRECT(void *RECT,int x,int y,int w,int h)
 04D0: 0xA0735683 ; 134: StoreXYXYtoRECT(void *RECT,int x,int y,int x2,int y2)
 04D4: 0xA06EEB97 ; 135: IsGuiOnTop(int id)
@@ -469,7 +469,7 @@
 06A8: 0xA0C9B567 ; 1AA: __thumb void png_read_update_info(png_structp png_ptr,void *info_ptr);
 06AC: 0xA0C9BFD7 ; 1AB: __thumb void png_set_palette_to_rgb(png_structp png_ptr);
 06B0: 0xA0C9A901 ; 1AC: __thumb png_uint_32 png_get_valid(png_structp png_ptr,png_infop info_ptr, png_uint_32 flag);
-06B4: 0xA0C9BFF3 ; 1AD: __thumb void png_set_tRNS_to_alpha(png_structp png_ptr);
+06B4: 0xA0C9BFD7 ; 1AD: void png_set_tRNS_to_alpha(png_structp png_ptr)
 06B8: 0xA0C9CD49 ; 1AE: __thumb void png_set_filler(png_structp png_ptr,png_uint_32 filler, int flags);
 06BC: 0xA0C9BFAD ; 1AF: __thumb void png_set_strip_16(png_structp png_ptr);
 
@@ -513,7 +513,7 @@
 074C: 0xA099A15D ; 1D3: __thumb int EDIT_GetCursorPos(void *gui);
 0750: 0xA099A167 ; 1D4: __thumb void EDIT_SetCursorPos(void *gui, int pos);
 0754: 0xA09726F0 ; 1D5: __arm char *Get_Phone_Info(int InfoIndex);
-0758: 0xA0C9BFE5 ; 1D6: __thumb void png_set_gray_1_2_4_to_8(png_structp png_ptr);
+0758: 0xA0C9BFD7 ; 1D6: void png_set_gray_1_2_4_to_8(png_structp png_ptr)
 075C: 0xA0C9CDAB ; 1D7: __thumb void png_set_invert_mono(png_structp png_ptr);
 0760: 0xA099A1A3 ; 1D8: __thumb int EDIT_IsMarkModeActive(void *gui);
 0764: 0xA099A1B7 ; 1D9: __thumb int EDIT_GetMarkedText(void *gui,WSHDR *dest);
@@ -730,6 +730,7 @@
 13A4: 0xA8E75440 ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
