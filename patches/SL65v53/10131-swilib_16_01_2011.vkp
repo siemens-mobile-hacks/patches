@@ -249,7 +249,7 @@
 0358: 0xA868EFB0   ; D6: RamNetOnline
 035C: 0xA86DC584   ; D7: RamScreenBrightness
 0360: 0xA86903B9   ; D8: RamMenuAnywhere
-0364: 0xA86FFE8C   ; D9: RamShutdownMode
+0364: 0xA86C38D4   ; D9: void *RamShutdownMode()
 0368: 0xA86FFE8C   ; DA: RamIsShutdown
 036C: 0xA868C3D0   ; DB: RamMainscreenAccuIcon
 0370: 0xA87623F4   ; DC: RamRandSeed
@@ -367,7 +367,7 @@
 0514: 0xA08243BC   ; 145: GBS_GetCurCepid(void)
 0518: 0xA082949C   ; 146: LockSched_2(void)
 051C: 0xA0829524   ; 147: UnlockSched_2(void)
-0520: 0xA113BCD9   ; 148: ShowMSG(int flag, int lgp_id)
+0520: 0xA113BCF7   ; 148: int ShowMSG(int flags, int message)
 0524: 0xA1168635   ; 149: SetPropTo_Obj1(DRWOBJ *drwobj,void *rect,int rect_flag,WSHDR *wshdr,int font,int text_flag)
 0528: 0xA1165EA9   ; 14A: FreeDrawObject_subobj(DRWOBJ *drwobj)
 052C: 0xA1165E13   ; 14B: SetColor(DRWOBJ *drwobj, int *color1, int *color2)
@@ -921,6 +921,7 @@
 +0
 
 ;locale=Russian_Russia.1251
+
 
 
 
