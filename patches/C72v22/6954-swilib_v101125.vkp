@@ -238,7 +238,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0334: 0xA8397440   ;  cd:  RamMissedSMS
 0338: 0xA8446CC0   ;  ce:  RamDateTime
 033C: 0xA847DE54   ;  CF:  RamAlarm
-0340: 0xA84AC680   ;  d0:  RamAccPoint
+0340: 0xA84AC678   ;  d0: void *RamAccPoint(void)
 0344: 0xA8442A3C   ;  d1:  RamScreensaver
 0348: 0xA8446CE8   ;  d2:  RamAutoTime
 034C: 0xA8442A44   ;  D3: char *RamIsStandby()
@@ -730,6 +730,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 13A4: 0xA846AF74   ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
