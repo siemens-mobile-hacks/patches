@@ -323,7 +323,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 0428: 0x00000000 ; 10A: __unknown void *GetConfig(unsigned int id); //BoBaPack
 042C: 0x00000000 ; 10B: __unknown void *GetMinAdrScan(); //BoBaPack
 0430: 0x00000000 ; 10C: __unknown void *GetMaxAdrScan(); //BoBaPack
-0434: 0x00000000 ; 10D: __unknown unsigned short *GetCI();
+0434: 0xA851A92E ; 10D: uint16_t *GetCI()
 0438: 0x00000000 ; 10E: __unknown void Vibration(unsigned int power, unsigned int duration); //BoBaPack
 
 043C: 0xA02CE241   ; 10F: __thumb void freeUSSD();
