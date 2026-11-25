@@ -233,7 +233,7 @@
 0370: 0xA8774AC4 ; 0DC: RamRandSeed
 0374: 0xA899F2BC ; 0DD: RamCurrentTrack
 0378: 0xA86CB0F8 ; 0DE: char *RamIsSimPresent()
-037C: 0xA86A8024 ; 0DF: RamPressedKey
+037C: 0xA86A802C ; 0DF: char *RamPressedKey()
 0380: 0xA869CA6C ; 0E0: RamScreenBuffer
 ;0384: 0x ; 0E1: RamMPlayer_CtrlCode
 0388: 0xA86B51F8 ; 0E2: RamKeyBuffer
@@ -622,7 +622,7 @@
 ;9AC:            ; 26B: int Obs_Mam_SetPurpose(HObj hObj,int ms)
 ;9B0:            ; 26C: int Obs_Sound_SetVolumeEx(HObj hObj, char vol, char delta)
 09B4: 0xA099F608 ; 26D: int Obs_Sound_GetVolume(HObj obs, char *volume)
-0A04: 0xA86DA9E8 ; 281: char *RamIsRunJava()
+0A04: 0xA86EFD88 ; 281: int8_t *RamIsRunJava()
 ;A08:            ; 282: char *RamIsRunCamera()
 0A0C: 0xA095FF34 ; 283: int runMidletLinkablely(const char *midlet_name, WSHDR *filename)
 0A10: 0xA127B525 ; 284: char IsGPRSAvailable(void)
@@ -1054,6 +1054,7 @@
 13A4: 0xA86C598C ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
