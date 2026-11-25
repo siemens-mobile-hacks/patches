@@ -308,7 +308,7 @@
 0428: 0x00000000   ; 10A: GetConfig(unsigned int id)
 042C: 0x00000000   ; 10B: GetMinAdrScan()
 0430: 0x00000000   ; 10C: GetMaxAdrScan()
-0434: 0x00000000   ; 10D: GetCI()
+0434: 0xA86CEF86   ; 10D: uint16_t *GetCI()
 0438: 0x00000000   ; 10E: Vibration(unsigned int power, unsigned int duration)
 043C: 0xA16A1415   ; 10F: freeUSSD()
 0440: 0xA0825E59   ; 110: wstrcopy(char *dst, char *src)
@@ -1147,6 +1147,7 @@
 13A4: 0xA86C72D4   ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
