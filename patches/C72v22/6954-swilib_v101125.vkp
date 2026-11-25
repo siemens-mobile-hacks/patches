@@ -234,14 +234,14 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0324: 0xA8465EE6   ;  C9:  RamLS
 0328: 0xA84728F4   ;  CA:  RamNet
 032C: 0xA84756A0   ;  CB: char *RamRingtoneStatus()
-0330: 0xA839744C   ;  cc:  RamMissedCalls
+0330: 0xA84805FC   ;  cc: char *RamMissedCalls()
 0334: 0xA8397440   ;  cd:  RamMissedSMS
 0338: 0xA8446CC0   ;  ce:  RamDateTime
 033C: 0xA847DE54   ;  CF:  RamAlarm
 0340: 0xA84AC680   ;  d0:  RamAccPoint
 0344: 0xA8442A3C   ;  d1:  RamScreensaver
 0348: 0xA8446CE8   ;  d2:  RamAutoTime
-034C: 0xA8442A3C   ;  D3:  RamStby
+034C: 0xA8442A44   ;  D3: char *RamIsStandby()
 0350: 0xA8474178   ;  d4: char *RamMissedMessage()
 0354: 0xA8458504   ;  D5:  RamIsLocked
 0358: 0xA8445664   ;  d6:  RamNetOnline
@@ -365,7 +365,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 0514: 0xA08243C0   ; 145: GBS_GetCurCepid(void)
 0518: 0xA0829480   ; 146: LockSched_2(void)
 051C: 0xA0829508   ; 147: UnlockSched_2(void)
-0520: 0xA112BF31   ; 148: ShowMSG(int flag, int lgp_id)
+0520: 0xA112BF4F   ; 148: int ShowMSG(int flags, int message)
 0524: 0xA0D00325   ; 149: SetPropTo_Obj1(DRWOBJ *drwobj,void *rect,int rect_flag,WSHDR *wshdr,int font,int text_flag)
 0528: 0xA0CFDB99   ; 14A: FreeDrawObject_subobj(DRWOBJ *drwobj)
 052C: 0xA0CFDB03   ; 14B: SetColor(DRWOBJ *drwobj, int *color1, int *color2)
@@ -547,7 +547,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 07C4: 0xA09664CC   ; 1F1: void ExplorerSetTransferState(char transfer_id, int state)
 07C8: 0xA115B22C   ; 1F2: __arm int devmenu_config_IsCheckboxOff
 07CC: 0xA0837FB0   ; 1F3: __arm GetSessionAge
-07D0: 0xA8442154   ; 1F4: char *RamServiceProviderName() 
+07D0: 0xA8442155   ; 1F4: char *RamServiceProviderName(void)
 07D4: 0xA1623665   ; 1F5: __thumb int sscanf(const char *, const char *, ...)
 07D8: 0xA0CCA28B   ; 1F6: __thumb IMGHDR* GetPitAdrBy0xE200Symbol(int uni_symbol)
 ;7DC:              ; 1F7: long GetFileSize(char *Filename)
@@ -730,6 +730,7 @@ It is needed for many other patches, whitch are written using "Master-Patch+Func
 13A4: 0xA846AF74   ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
