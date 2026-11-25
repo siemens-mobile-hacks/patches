@@ -87,7 +87,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 00D0: 0xA02B4AD8   ; 034: PlaySoundLoop
 00D4: 0xA058A863   ; 035: AlarmClockRing
 00D8: 0xA04F2E01   ; 036: GetATCmdString
-00DC: 0xA0594BD3   ; 037: OriginalATCGSN
+00DC: 0xA02F5484   ; 037: void Ringtones_SetState(uint8_t state)
 00E0: 0xA04F279D   ; 038: PostAtCommand
 00E4: 0xA04F3EEF   ; 039: SendATAnswerStr
 00E8: 0xA08FCC6D   ; 03A: mfree_high
@@ -101,7 +101,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 0104: 0xA08366BB   ; 041: GetProvider
 0108: 0xA02D0159   ; 042: IsScreenSaver
 010C: 0xA0800077   ; 043: __arm int IsUnlocked(void)
-0110: 0xA085AEE9   ; 044: TempLigntOn
+0110: 0xA07D6895   ; 044: void TempLightOn(int flags, int unk)
 0114: 0xA0351904   ; 045: GetWavLen
 ;
 0118: 0xA02CF64D   ; 046: HasNewSMS
@@ -113,9 +113,9 @@ It is auxiliary patch. It consists of 255 most useable function.
 0130: 0xA0558375   ; 04C: __thumb GetMissedCallsCount
 0134: 0xA020AF00   ; 04D: __arm void GBS_StartTimerProc(void *htimer, long ms, void ptr())
 0138: 0xA07C2C77   ; 04E: __thumb int MsgBoxError(int flag, int LgpId);
-013C: 0xA07C2C87   ; 04F: __thumb int MsgBoxYesNo(int flag, int LgpID, void CallBackProc(int));
+013C: 0xA07C2CE5   ; 04F: int MsgBoxYesNo(int flags, int message, void (*callback)(int canceled))
 ;
-0140: 0xA07C2D2F   ; 050: __thumb int MsgBoxOkCancel(int flag, int LgpID, void CallBackProc(int));
+0140: 0xA07C2CEF   ; 050: int MsgBoxOkCancel(int flags, int message, void (*callback)(int canceled))
 0144: 0xA0B417B1   ; 051: GetNetAccessMode
 0148: 0xA081BF80   ; 052: char *GetIlluminationDataTable()
 014C: 0xA0EF2855   ; 053: memcmp
@@ -123,8 +123,8 @@ It is auxiliary patch. It consists of 255 most useable function.
 0154: 0xA03269A1   ; 055: SwitchVibraOnOff
 0158: 0xA0FCF421   ; 056: PlayVibra
 015C: 0xA020B00C   ; 057: IsCallAfterTimerStillRunning
-0160: 0xA0219F1C   ; 058: ClearMemory
-0164: 0xA0EF2D20   ; 059: memcpy
+0160: 0xA0EF2CD8   ; 058: void ClearMemory(void *ptr, int num)
+0164: 0xA0EF28B0   ; 059: void *memcpy_2(void *destination, const void *source, size_t num)
 ;
 0168: 0xA07FF8F3   ; 05A: KeypressOn
 016C: 0xA07FFA21   ; 05B: KeypressOff
@@ -135,7 +135,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 0180: 0xA0326BAB   ; 060: ShowMainMenu
 0184: 0xA032B0D3   ; 061: ShowNativeMenu
 ;0188: 0x   ; 062: SetVibraStatus
-018C: 0xA02C93EF   ; 063: MS_Wallpaper_Flush
+018C: 0xA02C8AF7   ; 063: void MMI_CanvasBuffer_FlushV(char canvas_id)
 ;
 0190: 0xA07C36F1   ; 064: TriggerUpdate 
 0194: 0xA0834129   ; 065: EndCall
@@ -155,17 +155,17 @@ It is auxiliary patch. It consists of 255 most useable function.
 01C8: 0xA055452F   ; 072: SetCurrentSecondOfCall
 01CC: 0xA0AAFC3F   ; 073: GetTypeOfCall
 01D0: 0xA0327167   ; 074: __thumb void* GetFunctionPointer(char * _shortcut);
-01D4: 0xA07FD189   ; 075: StoreXYWHtoRECT
-01D8: 0xA089BB0D   ; 076: SetWindowText
+01D4: 0xA02C897D   ; 075: int IsCanvasBufferSet(char canvas_id)
+01D8: 0xA02C89C9   ; 076: IMGHDR *GetCanvasBufferPicPtr(char canvas_id)
 01DC: 0xA08992EB   ; 077: set2color_byPaletteAdr
 ;
-01E0: 0xA07D9B79   ; 078: GetTimeFormat
-01E4: 0xA07FC4DF   ; 079: DrawObject
-01E8: 0xA0899381   ; 07A: ClearWindowBuffer
+01E0: 0xA07D9B77   ; 078: int GetTimeFormat()
+01E4: 0xA07FC4B3   ; 079: void DrawObject2Layer(LCDLAYER *layer, DRWOBJ *drwobj)
+01E8: 0xA07FD11D   ; 07A: void LCDLAYER_Flush(LCDLAYER *layer)
 01EC: 0xA02BFAF5   ; 07B: GetProfileFilter
 01F0: 0xA0A88828   ; 07C: __arm unsigned int SetVibration(unsigned int power)
 01F4: 0xA0AAEE41   ; 07D: IsIncognitoCall
-01F8: 0xA0AEA801   ; 07E: Rand
+01F8: 0xA0EF2C59   ; 07E: int rand(void)
 ;01FC: 0x   ; 07F: IsPlayerOn
 0200: 0xA058B0C1   ; 080: __thumb void int ShowCallList(int list, int zero)
 0204: 0xA0227B91   ; 081: int HexCharToInt(char c)
@@ -204,11 +204,11 @@ It is auxiliary patch. It consists of 255 most useable function.
 027C: 0xA07F6117  ; 09F: DrawRect
 ;
 0280: 0xA07BC17F   ; 0A0: wsprintf
-0284: 0xA0208AE5   ; 0A1: wstrcpy
+0284: 0xA07BCAAF   ; 0A1: WSHDR *wstrcpy_2(WSHDR *destination, WSHDR *source)
 0288: 0xA07BC70F   ; 0A2: Unicode_GetCharByPosition
 028C: 0xA07CAEDC   ; 0A3: __arm void ws_2str(WSHDR *ws, char *str, unsigned int size)
 0290: 0xA07BC98F   ; 0A4: wsAlloc
-0294: 0xA07BC9CB   ; 0A5: wsFree
+0294: 0xA07BC2C1   ; 0A5: void FreeWS_2(WSHDR *str)
 0298: 0xA02C9C5D   ; 0A6: ResetGPRSTraffic
 029C: 0xA02C9AA9   ; 0A7: __thumb char IsGPRSEnabled();
 02A0: 0xA0AECB35   ; 0A8: char IsGPRSConnected();
@@ -232,7 +232,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 02E0: 0xA0EF2E94   ; 0B8: __arm int dwMODdw(int denom,int number);
 02E4: 0xA08002FF   ; 0B9: __thumb void KbdUnlock();
 02E8: 0xA0203C30   ; 0BA: __arm void *realloc(void *ptr, int size);
-02EC: 0xA0EF2E7C   ; 0BB: __arm void *memset(void *s, int c, int n);
+02EC: 0xA0EF28D8   ; 0BB: void *memset(void *ptr, int val, size_t num)
 02F0: 0xA0219FE8   ; 0BC: __arm int divide(int divisor, int dividend);
 02F4: 0xA0EF2F6C   ; 0BD: __arm  int DivBy10(int divident);
 ;
@@ -261,8 +261,8 @@ It is auxiliary patch. It consists of 255 most useable function.
 ;
 0348: 0xA84D1240   ; 0D2: RamAutoTime
 034C: 0xA84CB464   ; 0D3: RamStby
-0350: 0xA841175C   ; 0D4: RamMissedMes
-0354: 0xA84FF84C   ; 0D5: RamIsLocked
+0350: 0xA851C1E0   ; 0D4: char *RamMissedMessage()
+0354: 0xA84FF844   ; 0D5: int *RamIsLocked(void)
 0358: 0xA84CFBBC   ; 0D6: RamNetOnline
 035C: 0xA853308E   ; 0D7: RamScreenBrightness
 0360: 0xA84D0FC5   ; 0D8: RamMenuAnywhere
@@ -341,7 +341,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 046C: 0xA0EF1B01   ; 11B: __thumb int snprintf (char *,int n,const char *format,...);
 0470: 0xA0EF2855   ; 11C: __thumb int  memcmp (void *m1,void *m2,int n);
 0474: 0xA0EF2CD8   ; 11D: __arm void  zeromem (void *dest,int n);
-0478: 0xA0EF2D20   ; 11E: __arm void * memcpy (void *dest,const void *source,int cnt);
+0478: 0xA0EF28B0   ; 11E: void *memcpy(void *destination, const void *source, size_t num)
 047C: 0xA07BCAAF   ; 11F: __thumb WSHDR * wstrcpy (WSHDR *wshdr_d,WSHDR *wshdr_s);
 0480: 0xA07BCAD1   ; 120: __thumb WSHDR * wstrncpy (WSHDR *,WSHDR *,int);
 0484: 0xA07BCAF5   ; 121: __thumb WSHDR * wstrcat (WSHDR *wshdr_d,WSHDR *wshdr_s);
@@ -363,7 +363,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 04BC: 0xA07F8541   ; 12F: __thumb void  getRGBcolor (int ColorIndex,void *dest);
 04C0: 0xA07F8551   ; 130: __thumb void  getRGBbyPaletteAdr (int *paletteAdr,void *dest);
 04C4: 0xA07F856F   ; 131: __thumb void  setColor (int a,int r,int g,int b,void *dest);
-04C8: 0xA0EF2DD8   ; 132: __arm void *memmove(void *dest,const void *source,int cnt);
+04C8: 0xA0EF28C4   ; 132: void *memmove(void *destination, const void *source, size_t num)
 04CC: 0xA07FD189   ; 133: __thumb void  StoreXYWHtoRECT (void *RECT,int x,int y,int w,int h);
 04D0: 0xA07FD19F   ; 134: __thumb void  StoreXYXYtoRECT (void *RECT,int x,int y,int x2,int y2);
 04D4: 0xA07C3483   ; 135: __thumb int  IsGuiOnTop (int id);
@@ -507,7 +507,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 06A8: 0xA0E6AE83 ;1AA: __thumb void png_read_update_info(png_structp png_ptr,void *info_ptr);
 06AC: 0xA0E6B8F3 ;1AB: __thumb void png_set_palette_to_rgb(png_structp png_ptr);
 06B0: 0xA0E6A21D ;1AC: __thumb png_uint_32 png_get_valid(png_structp png_ptr,png_infop info_ptr, png_uint_32 flag);
-06B4: 0xA0E6B90F ;1AD: __thumb void png_set_tRNS_to_alpha(png_structp png_ptr);
+06B4: 0xA0E6B8F3 ;1AD: void png_set_tRNS_to_alpha(png_structp png_ptr)
 ;
 06B8: 0xA0E6C665 ;1AE: __thumb void png_set_filler(png_structp png_ptr,png_uint_32 filler, int flags);
 06BC: 0xA0E6B8C9 ;1AF: __thumb void png_set_strip_16(png_structp png_ptr);
@@ -555,7 +555,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 074C: 0xA08A1A49 ; 1D3: __thumb int EDIT_GetCursorPos(void *gui)
 0750: 0xA08A1A53 ; 1D4: __thumb void EDIT_SetCursorPos(void *gui, int pos)
 0754: 0xA0831D8C ; 1D5: __arm char *Get_Phone_Info(int InfoIndex);
-0758: 0xA0E6B901 ; 1D6: __thumb void png_set_gray_1_2_4_to_8(png_structp png_ptr);
+0758: 0xA0E6B8F3 ; 1D6: void png_set_gray_1_2_4_to_8(png_structp png_ptr)
 075C: 0xA0E6C6C7 ; 1D7: __thumb void png_set_invert_mono(png_structp png_ptr);
 0760: 0xA08A1A99 ; 1D8: __thumb int EDIT_IsMarkModeActive(void *gui);
 0764: 0xA08A1AAD ; 1D9: __thumb int EDIT_GetMarkedText(void *gui,WSHDR *dest);
@@ -730,6 +730,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 13A4: 0xA8512C48   ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
