@@ -146,7 +146,7 @@
 01E0: 0xA0C37A37 ; 078: GetTimeFormat
 01E4: 0xA1155195 ; 079: void DrawObject2Layer(LCDLAYER *layer, DRWOBJ *drwobj)
 01E8: 0xA1155DA1 ; 07A: void LCDLAYER_Flush(LCDLAYER *layer)
-01EC: 0xA084F979 ; 07B: GetProfileFilter
+01EC: 0xA08CA149 ; 07B: int GetProfileFilter(int profile_id)
 01F0: 0xA1249178 ; 07C: SetVibration(unsigned int power);
 01F4: 0xA132EC85 ; 07D: IsIncognitoCall
 01F8: 0xA166A8C5 ; 07E: int rand(void)
@@ -237,7 +237,7 @@
 324: 0xA86C267A   ; f201: RamLS
 0328: 0xA86CEF84   ; CA: RamNet
 032C: 0xA86d1b88   ;  203: RamRingtoneStatus
-330: 0xA8451658   ; f204: RamMissedCalls
+330: 0xA86DDF44   ; f204: char *RamMissedCalls()
 334: 0xA845164C   ; f205: RamMissedSMS
 338: 0xA869224C   ; f206: RamDateTime
 33C: 0xA86DA33C   ; f207: RamAlarm
@@ -262,7 +262,7 @@
 380: 0xA869E320   ; f224: RamScreenBuffer
 ;384: 0x   ; f225: 
 388: 0xA86B6B08   ; f226: RamKeyBuffer
-38C: 0xA86D015C   ; f227: RamProfileNum
+38C: 0xA86D0080   ; f227: char *RamProfileNum(void)
 390: 0xA8770000   ; f228: FreeRAM
 394: 0x00001297   ; f229: LP_MonthsShort
 ;
@@ -368,7 +368,7 @@
 0514: 0xA08243BC   ; 145: GBS_GetCurCepid(void)
 0518: 0xA082949C   ; 146: LockSched_2(void)
 051C: 0xA0829524   ; 147: UnlockSched_2(void)
-0520: 0xA1143E51   ; 148: ShowMSG(int flag, int lgp_id)
+0520: 0xA1143E6F   ; 148: int ShowMSG(int flags, int message)
 0524: 0xA117369D   ; 149: SetPropTo_Obj1(DRWOBJ *drwobj,void *rect,int rect_flag,WSHDR *wshdr,int font,int text_flag)
 0528: 0xA1170F11   ; 14A: FreeDrawObject_subobj(DRWOBJ *drwobj)
 052C: 0xA1170E7B   ; 14B: SetColor(DRWOBJ *drwobj, int *color1, int *color2)
@@ -1147,6 +1147,7 @@
 13A4: 0xA86C72D4   ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
