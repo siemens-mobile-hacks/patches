@@ -14,11 +14,11 @@
 
 +0FD4000
 #pragma enable old_equal_ff
-0000: 0xA0002070 ; 00: SWI0
-0004: 0xA0002070 ; 01: SWI1
-0008: 0xA0002070 ; 02: SWI2
-000C: 0xA0002070 ; 03: SWI3
-0010: 0xA0002070 ; 04: SWI4
+0000: 0xA096DC10 ; 00: void loopback0(void)
+0004: 0xA096DC10 ; 01: void loopback1(void)
+0008: 0xA096DC10 ; 02: void loopback2(void)
+000C: 0xA096DC10 ; 03: void loopback3(void)
+0010: 0xA096DC10 ; 04: void loopback4(void)
 0014: 0xA020E565 ; 05: DecToHex
 0018: 0xA095FBD8 ; 06: __arm int GetAkku(int param1,int param2);
 001C: 0xA0BA549D ; 07: GetLP
@@ -195,7 +195,7 @@
 02A0: 0xA09FF4A9 ; A8: IsGPRSConnected
 02A4: 0xA0738A11 ; A9: __thumb void KbdLock();
 02A8: 0xA0738CA5 ; AA: __thumb char *GetCurrentLocale();
-02AC: 0xA0002070 ; AB: SWI_AB
+02AC: 0xA096DC10 ; AB: void loopback171(void)
 02B0: 0xA0FCF1B1 ; AC: DrawText
 02B4: 0xA0FCF0A1 ; AD: StrAnsi2Uni
 02B8: 0xA0FCF0C1 ; AE: StrUni2Ansi
@@ -730,6 +730,7 @@
 13A4: 0xA8E75440 ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
