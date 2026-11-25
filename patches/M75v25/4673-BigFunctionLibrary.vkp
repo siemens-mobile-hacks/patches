@@ -256,7 +256,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 0334: 0xA841176C   ; 0CD: RamMissedSMS
 0338: 0xA84D1218   ; 0CE: RamDateTime
 033C: 0xA8526584   ; 0CF: RamAlarm
-0340: 0xA8559444   ; 0D0: RamAccPoint
+0340: 0xA855943C   ; 0D0: void *RamAccPoint(void)
 0344: 0xA84CB45C   ; 0D1: RamScreensaver
 ;
 0348: 0xA84D1240   ; 0D2: RamAutoTime
@@ -730,6 +730,7 @@ It is auxiliary patch. It consists of 255 most useable function.
 13A4: 0xA8512C48   ; 4E9: FS_DRIVE *RamFsDrives(void)
 #pragma disable old_equal_ff
 +0
+
 
 
 
